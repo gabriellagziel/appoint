@@ -1,0 +1,9 @@
+# Flutter & Dart
+.dart_tool/
+build/
+.pub/
+.packages
+
+# Flutter SDK artifact
+flutter/
+flutter.tar.xz
