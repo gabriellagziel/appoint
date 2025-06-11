@@ -22,6 +22,8 @@ import 'features/calendar/calendar_sync_screen.dart';
 import 'features/calendar/calendar_view_screen.dart';
 import 'features/notifications/notification_settings_screen.dart';
 import 'features/notifications/notification_list_screen.dart';
+import 'features/payments/payment_screen.dart';
+import 'features/payments/payment_confirmation_screen.dart';
 import 'providers/notification_provider.dart';
 import 'services/notification_service.dart';
 
@@ -31,7 +33,8 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   final container = ProviderContainer();
-  await container.read(notificationServiceProvider).initialize(onMessage: (msg) {
+  await container.read(notificationServiceProvider).initialize(
+      onMessage: (msg) {
     final notifier = container.read(notificationsProvider.notifier);
     notifier.state = [...notifier.state, msg];
   });
@@ -72,6 +75,8 @@ class App extends StatelessWidget {
         '/notifications/settings': (context) =>
             const NotificationSettingsScreen(),
         '/notifications/list': (context) => const NotificationListScreen(),
+        '/payment': (context) => const PaymentScreen(),
+        '/payment/confirmation': (context) => const PaymentConfirmationScreen(),
       },
     );
   }
