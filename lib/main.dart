@@ -6,6 +6,9 @@ import 'firebase_options.dart';
 import 'features/auth/auth_wrapper.dart';
 import 'features/booking/booking_request_screen.dart';
 import 'features/booking/booking_confirm_screen.dart';
+import 'features/invite/invite_request_screen.dart';
+import 'features/invite/invite_list_screen.dart';
+import 'features/invite/invite_detail_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,6 +29,9 @@ class App extends StatelessWidget {
         '/': (context) => const AuthWrapper(),
         '/booking/request': (context) => const BookingRequestScreen(),
         '/booking/confirm': (context) => const BookingConfirmScreen(),
+        '/invite/request': (context) => const InviteRequestScreen(),
+        '/invite/list': (context) => const InviteListScreen(),
+        '/invite/detail': (context) => const InviteDetailScreen(),
       },
     );
   }
