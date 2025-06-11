@@ -1,6 +1,7 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 admin.initializeApp();
+const stripe = require('stripe')(functions.config().stripe.secret);
 
 exports.onInviteCreated = functions.firestore
   .document('invites/{inviteId}')
@@ -26,4 +27,13 @@ exports.sendNotification = functions.https.onCall(async (data, context) => {
     data: data.data,
   };
   return admin.messaging().sendToDevice(token, payload);
+});
+
+exports.createPaymentIntent = functions.https.onCall(async (data) => {
+  const { amount } = data;
+  const paymentIntent = await stripe.paymentIntents.create({
+    amount: Math.round(amount * 100),
+    currency: 'usd',
+  });
+  return { clientSecret: paymentIntent.client_secret };
 });
