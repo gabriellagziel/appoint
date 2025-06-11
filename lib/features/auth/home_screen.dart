@@ -38,6 +38,13 @@ class HomeScreen extends ConsumerWidget {
             ),
             const SizedBox(height: 16),
             ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/profile');
+              },
+              child: const Text('My Profile'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
               onPressed: () async {
                 await ref.read(authServiceProvider).signOut();
                 ref.refresh(authStateProvider);

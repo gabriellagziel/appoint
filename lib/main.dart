@@ -9,6 +9,7 @@ import 'features/booking/booking_confirm_screen.dart';
 import 'features/invite/invite_request_screen.dart';
 import 'features/invite/invite_list_screen.dart';
 import 'features/invite/invite_detail_screen.dart';
+import 'features/profile/user_profile_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,6 +33,7 @@ class App extends StatelessWidget {
         '/invite/request': (context) => const InviteRequestScreen(),
         '/invite/list': (context) => const InviteListScreen(),
         '/invite/detail': (context) => const InviteDetailScreen(),
+        '/profile': (context) => const UserProfileScreen(),
       },
     );
   }
