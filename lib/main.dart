@@ -14,6 +14,8 @@ import 'features/dashboard/dashboard_screen.dart';
 import 'features/admin/admin_dashboard_screen.dart';
 import 'features/admin/admin_users_screen.dart';
 import 'features/admin/admin_orgs_screen.dart';
+import 'features/studio/studio_booking_screen.dart';
+import 'features/studio/studio_confirm_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,6 +44,8 @@ class App extends StatelessWidget {
         '/admin/dashboard': (context) => const AdminDashboardScreen(),
         '/admin/users': (context) => const AdminUsersScreen(),
         '/admin/orgs': (context) => const AdminOrgsScreen(),
+        '/studio/booking': (context) => const StudioBookingScreen(),
+        '/studio/confirm': (context) => const StudioConfirmScreen(),
       },
     );
   }
