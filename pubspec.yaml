@@ -7,10 +7,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-    flutter_riverpod: ^2.3.6
-    firebase_core: any
-    cloud_firestore: any
-    firebase_auth: any
+  flutter_riverpod: ^2.3.6
+  firebase_core: any
+  cloud_firestore: any
+  firebase_auth: any
+  flutterfire_cli: ^1.2.0
 
 dev_dependencies:
   flutter_lints: ^2.0.1
