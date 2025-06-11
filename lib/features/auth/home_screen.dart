@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../providers/auth_provider.dart';
 import '../../providers/appointment_provider.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -12,6 +13,7 @@ class HomeScreen extends ConsumerWidget {
     final appointments = ref.watch(appointmentsStreamProvider);
     return Scaffold(
       appBar: AppBar(title: const Text('Home')),
+      drawer: const _HomeDrawer(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -60,6 +62,67 @@ class HomeScreen extends ConsumerWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _HomeDrawer extends ConsumerWidget {
+  const _HomeDrawer({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Drawer(
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          const DrawerHeader(child: Text('Menu')),
+          ListTile(
+            title: const Text('Home'),
+            onTap: () => Navigator.pop(context),
+          ),
+          ListTile(
+            title: const Text('Dashboard'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, '/dashboard');
+            },
+          ),
+          ListTile(
+            title: const Text('Profile'),
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.pushNamed(context, '/profile');
+            },
+          ),
+          FutureBuilder<bool>(
+            future: FirebaseAuth.instance
+                .currentUser
+                ?.getIdTokenResult(true)
+                .then((r) => r.claims?['admin'] == true) ??
+                Future.value(false),
+            builder: (context, snapshot) {
+              if (snapshot.data == true) {
+                return ListTile(
+                  title: const Text('Admin'),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/admin/dashboard');
+                  },
+                );
+              }
+              return const SizedBox.shrink();
+            },
+          ),
+          ListTile(
+            title: const Text('Sign Out'),
+            onTap: () async {
+              Navigator.pop(context);
+              await ref.read(authServiceProvider).signOut();
+              ref.refresh(authStateProvider);
+            },
+          ),
+        ],
       ),
     );
   }
