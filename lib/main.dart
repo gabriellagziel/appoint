@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'firebase_options.dart';
 
 import 'features/auth/auth_wrapper.dart';
@@ -18,13 +20,30 @@ import 'features/studio/studio_booking_screen.dart';
 import 'features/studio/studio_confirm_screen.dart';
 import 'features/calendar/calendar_sync_screen.dart';
 import 'features/calendar/calendar_view_screen.dart';
+import 'features/notifications/notification_settings_screen.dart';
+import 'features/notifications/notification_list_screen.dart';
+import 'providers/notification_provider.dart';
+import 'services/notification_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(const ProviderScope(child: App()));
+  final container = ProviderContainer();
+  await container.read(notificationServiceProvider).initialize(onMessage: (msg) {
+    final notifier = container.read(notificationsProvider.notifier);
+    notifier.state = [...notifier.state, msg];
+  });
+  final token = await container.read(notificationServiceProvider).getToken();
+  final user = FirebaseAuth.instance.currentUser;
+  if (user != null && token != null) {
+    await FirebaseFirestore.instance
+        .collection('users')
+        .doc(user.uid)
+        .set({'fcmToken': token}, SetOptions(merge: true));
+  }
+  runApp(UncontrolledProviderScope(container: container, child: const App()));
 }
 
 class App extends StatelessWidget {
@@ -50,6 +69,9 @@ class App extends StatelessWidget {
         '/studio/confirm': (context) => const StudioConfirmScreen(),
         '/calendar/sync': (context) => const CalendarSyncScreen(),
         '/calendar/view': (context) => const CalendarViewScreen(),
+        '/notifications/settings': (context) =>
+            const NotificationSettingsScreen(),
+        '/notifications/list': (context) => const NotificationListScreen(),
       },
     );
   }

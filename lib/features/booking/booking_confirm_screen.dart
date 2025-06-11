@@ -5,6 +5,8 @@ import '../../providers/appointment_provider.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/calendar_provider.dart';
 import '../../models/appointment.dart';
+import '../../providers/notification_provider.dart';
+import '../../services/notification_service.dart';
 import 'booking_request_screen.dart';
 
 class BookingConfirmScreen extends StatefulWidget {
@@ -74,6 +76,12 @@ class _BookingConfirmScreenState extends State<BookingConfirmScreen> {
                   if (_syncOutlook) {
                     await ref.read(calendarServiceProvider).syncToOutlook(appt);
                   }
+                  await ref
+                      .read(notificationServiceProvider)
+                      .sendNotificationToUser(
+                          args.inviteeId,
+                          'Booking Confirmed',
+                          'You have a new booking request');
                   Navigator.popUntil(context, ModalRoute.withName('/'));
                 },
                 child: const Text('Confirm'),
