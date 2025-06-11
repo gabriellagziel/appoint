@@ -18,3 +18,12 @@ exports.onInviteCreated = functions.firestore
     }
     return null;
   });
+
+exports.sendNotification = functions.https.onCall(async (data, context) => {
+  const token = data.token;
+  const payload = {
+    notification: { title: data.title, body: data.body },
+    data: data.data,
+  };
+  return admin.messaging().sendToDevice(token, payload);
+});

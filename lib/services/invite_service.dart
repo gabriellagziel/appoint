@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import '../models/contact.dart';
 import '../models/invite.dart';
+import 'notification_service.dart';
 
 class InviteService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -20,6 +21,8 @@ class InviteService {
       requiresInstallFallback: requiresInstallFallback,
     );
     await doc.set(invite.toMap());
+    await NotificationService().sendNotificationToUser(
+        invitee.id, 'New Invite', 'You have a new invite');
   }
 
   Future<void> respondToInvite(
