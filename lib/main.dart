@@ -16,6 +16,8 @@ import 'features/admin/admin_users_screen.dart';
 import 'features/admin/admin_orgs_screen.dart';
 import 'features/studio/studio_booking_screen.dart';
 import 'features/studio/studio_confirm_screen.dart';
+import 'features/calendar/calendar_sync_screen.dart';
+import 'features/calendar/calendar_view_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -46,6 +48,8 @@ class App extends StatelessWidget {
         '/admin/orgs': (context) => const AdminOrgsScreen(),
         '/studio/booking': (context) => const StudioBookingScreen(),
         '/studio/confirm': (context) => const StudioConfirmScreen(),
+        '/calendar/sync': (context) => const CalendarSyncScreen(),
+        '/calendar/view': (context) => const CalendarViewScreen(),
       },
     );
   }
