@@ -11,6 +11,9 @@ import 'features/invite/invite_list_screen.dart';
 import 'features/invite/invite_detail_screen.dart';
 import 'features/profile/user_profile_screen.dart';
 import 'features/dashboard/dashboard_screen.dart';
+import 'features/admin/admin_dashboard_screen.dart';
+import 'features/admin/admin_users_screen.dart';
+import 'features/admin/admin_orgs_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,6 +39,9 @@ class App extends StatelessWidget {
         '/invite/detail': (context) => const InviteDetailScreen(),
         '/profile': (context) => const UserProfileScreen(),
         '/dashboard': (context) => const DashboardScreen(),
+        '/admin/dashboard': (context) => const AdminDashboardScreen(),
+        '/admin/users': (context) => const AdminUsersScreen(),
+        '/admin/orgs': (context) => const AdminOrgsScreen(),
       },
     );
   }
