@@ -1,12 +1,12 @@
 import 'package:cloud_functions/cloud_functions.dart';
-import 'package:stripe_sdk/stripe_sdk.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 
 class PaymentService {
-  final _stripe = Stripe("pk_test_…");
   final FirebaseFunctions _functions = FirebaseFunctions.instance;
 
   Future<void> init() async {
-    await _stripe.applySettings();
+    Stripe.publishableKey = "pk_test_…";
+    await Stripe.instance.applySettings();
   }
 
   Future<Map<String, dynamic>> createPaymentIntent(double amount) async {
@@ -16,6 +16,9 @@ class PaymentService {
   }
 
   Future<void> handlePayment(String clientSecret) async {
-    await Stripe.instance.confirmPayment(clientSecret);
+    await Stripe.instance.confirmPayment(
+      clientSecret,
+      PaymentMethodParams.card(paymentMethodData: const PaymentMethodData()),
+    );
   }
 }
