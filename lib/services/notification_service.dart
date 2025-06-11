@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:firebase_functions/firebase_functions.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 
 import '../models/notification_payload.dart';
 
@@ -52,8 +52,12 @@ class NotificationService {
     }
   }
 
-  Future<void> sendTestNotification(
-      String token, String title, String body) async {
-    await sendNotification(token, title, body);
+  Future<void> sendTestNotification(String token, String title, String body) async {
+    final callable = FirebaseFunctions.instance.httpsCallable('sendNotification');
+    await callable.call({
+      'token': token,
+      'title': title,
+      'body': body,
+    });
   }
 }
