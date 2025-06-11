@@ -4,6 +4,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 import 'features/auth/auth_wrapper.dart';
+import 'features/booking/booking_request_screen.dart';
+import 'features/booking/booking_confirm_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,8 +20,13 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: AuthWrapper(),
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const AuthWrapper(),
+        '/booking/request': (context) => const BookingRequestScreen(),
+        '/booking/confirm': (context) => const BookingConfirmScreen(),
+      },
     );
   }
 }
