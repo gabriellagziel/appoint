@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../models/appointment.dart';
+import 'notification_service.dart';
 
 class AppointmentService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -19,6 +20,8 @@ class AppointmentService {
       type: AppointmentType.scheduled,
     );
     await doc.set(appointment.toMap());
+    await NotificationService().sendNotificationToUser(
+        inviteeId, 'New Appointment', 'You have a new booking');
     return appointment;
   }
 
@@ -37,7 +40,8 @@ class AppointmentService {
       callRequestId: callRequestId,
     );
     await doc.set(appointment.toMap());
-    // TODO: send notification to invitee
+    await NotificationService().sendNotificationToUser(
+        inviteeId, 'New Call Request', 'You have a new call request');
     return appointment;
   }
 
