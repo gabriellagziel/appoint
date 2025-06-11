@@ -1,4 +1,4 @@
-import 'package:firebase_functions/firebase_functions.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:stripe_sdk/stripe_sdk.dart';
 
 class PaymentService {
@@ -9,15 +9,13 @@ class PaymentService {
     await _stripe.applySettings();
   }
 
-  Future<IntentClientSecret> createPaymentIntent(double amount) async {
-    final result = await _functions
-        .httpsCallable('createPaymentIntent')
-        .call({'amount': amount});
-    final clientSecret = result.data['clientSecret'] as String;
-    return IntentClientSecret(null, clientSecret);
+  Future<Map<String, dynamic>> createPaymentIntent(double amount) async {
+    final callable = FirebaseFunctions.instance.httpsCallable('createPaymentIntent');
+    final result = await callable.call({'amount': amount});
+    return Map<String, dynamic>.from(result.data);
   }
 
   Future<void> handlePayment(String clientSecret) async {
-    await _stripe.api.confirmPaymentIntent(clientSecret);
+    await Stripe.instance.confirmPayment(clientSecret);
   }
 }
