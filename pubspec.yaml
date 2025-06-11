@@ -11,6 +11,8 @@ dependencies:
   firebase_core: any
   cloud_firestore: any
   firebase_auth: any
+  firebase_messaging: any
+  cloud_functions: any
   freezed_annotation: ^2.4.1
   json_annotation: ^4.8.1
   flutterfire_cli: ^1.2.0
