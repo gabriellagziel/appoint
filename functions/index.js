@@ -1,39 +1,4 @@
 const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-admin.initializeApp();
-const stripe = require('stripe')(functions.config().stripe.secret);
-
-exports.onInviteCreated = functions.firestore
-  .document('invites/{inviteId}')
-  .onCreate(async (snap, context) => {
-    const invite = snap.data();
-    if (!invite) return null;
-    const payload = {
-      notification: {
-        title: 'New Invite',
-        body: `You have a new invite from ${invite.inviteeContact?.displayName ?? ''}`,
-      },
-    };
-    if (invite.inviteeId) {
-      return admin.messaging().sendToTopic(invite.inviteeId, payload);
-    }
-    return null;
-  });
-
-exports.sendNotification = functions.https.onCall(async (data, context) => {
-  const token = data.token;
-  const payload = {
-    notification: { title: data.title, body: data.body },
-    data: data.data,
-  };
-  return admin.messaging().sendToDevice(token, payload);
-});
-
-exports.createPaymentIntent = functions.https.onCall(async (data) => {
-  const { amount } = data;
-  const paymentIntent = await stripe.paymentIntents.create({
-    amount: Math.round(amount * 100),
-    currency: 'usd',
-  });
-  return { clientSecret: paymentIntent.client_secret };
-});
+exports.helloWorld = functions.https.onRequest((request, response) => {
+  response.send("Hello from Appoint Functions!");
+}); 
