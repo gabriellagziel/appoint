@@ -16,9 +16,12 @@ class PaymentService {
   }
 
   Future<void> handlePayment(String clientSecret) async {
+    // Use flutter_stripe’s confirmPayment with PaymentMethodParams
     await Stripe.instance.confirmPayment(
-      clientSecret,
-      PaymentMethodParams.card(paymentMethodData: const PaymentMethodData()),
+      paymentIntentClientSecret: clientSecret,
+      data: PaymentMethodParams.card(
+        paymentMethodData: const PaymentMethodData(),
+      ),
     );
   }
 }

@@ -36,9 +36,9 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
             ElevatedButton(
               onPressed: () async {
                 final amount = double.tryParse(_amountController.text) ?? 0;
-                final service = ref.read(paymentServiceProvider);
-                final intent = await service.createPaymentIntent(amount);
-                await service.handlePayment(intent.clientSecret);
+                final data = await ref.read(paymentServiceProvider).createPaymentIntent(amount);
+                final secret = data['clientSecret'] as String;
+                await ref.read(paymentServiceProvider).handlePayment(secret);
                 if (context.mounted) {
                   Navigator.pushNamed(context, '/payment/confirmation',
                       arguments: true);
