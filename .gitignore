@@ -7,3 +7,6 @@ build/
 # Flutter SDK artifact
 flutter/
 flutter.tar.xz
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
