@@ -7,6 +7,13 @@
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/cloud_firestore-5.6.9" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/firebase_core-3.14.0" />
       <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/firebase_auth-5.6.0" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/stripe_ios-11.5.0" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/cloud_functions-5.5.2" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/cloud_functions_web-4.11.2" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/firebase_messaging-15.2.7" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/flutter_stripe-11.5.0" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/firebase_messaging_web-3.10.7" />
+      <root url="file://$USER_HOME$/.pub-cache/hosted/pub.dev/stripe_android-11.5.0" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
