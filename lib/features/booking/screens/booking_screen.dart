@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import '../models/booking.dart';
 import '../services/booking_service.dart';
@@ -100,9 +101,58 @@ class _BookingScreenState extends State<BookingScreen> {
               onPressed: _submitBooking,
               child: const Text('Book Now'),
             ),
+            const SizedBox(height: 24),
+            const Expanded(child: BookingListView()),
           ],
         ),
       ),
+    );
+  }
+}
+
+class BookingListView extends StatelessWidget {
+  const BookingListView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder<QuerySnapshot>(
+      stream: FirebaseFirestore.instance
+          .collection('bookings')
+          .orderBy('dateTime')
+          .snapshots(),
+      builder: (context, snapshot) {
+        if (snapshot.hasError) {
+          return const Text('Error loading bookings');
+        }
+        if (!snapshot.hasData) {
+          return const CircularProgressIndicator();
+        }
+
+        final bookings = snapshot.data!.docs;
+
+        if (bookings.isEmpty) {
+          return const Text('No bookings found');
+        }
+
+        return ListView.builder(
+          shrinkWrap: true,
+          itemCount: bookings.length,
+          itemBuilder: (context, index) {
+            final data = bookings[index].data() as Map<String, dynamic>;
+            final dateTime =
+                DateTime.tryParse(data['dateTime'] ?? '') ?? DateTime.now();
+            final notes = data['notes'] ?? '';
+
+            return Card(
+              margin: const EdgeInsets.symmetric(vertical: 8),
+              child: ListTile(
+                title: Text('\uD83D\uDCC5 ${dateTime.toLocal()}'),
+                subtitle: Text(notes),
+              ),
+            );
+          },
+        );
+      },
     );
   }
 }
