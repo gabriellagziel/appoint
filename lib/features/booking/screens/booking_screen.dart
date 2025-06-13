@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../models/booking.dart';
+import '../services/booking_service.dart';
 
 class BookingScreen extends StatefulWidget {
   const BookingScreen({super.key});
@@ -38,7 +40,7 @@ class _BookingScreenState extends State<BookingScreen> {
     }
   }
 
-  void _submitBooking() {
+  Future<void> _submitBooking() async {
     if (selectedDate != null && selectedTime != null) {
       final DateTime bookingDateTime = DateTime(
         selectedDate!.year,
@@ -50,8 +52,9 @@ class _BookingScreenState extends State<BookingScreen> {
 
       final String notes = notesController.text.trim();
 
-      // TODO: Connect to Firestore or backend logic
-      debugPrint('Booking submitted for $bookingDateTime with notes: $notes');
+      final booking = Booking(dateTime: bookingDateTime, notes: notes);
+      final service = BookingService();
+      await service.submitBooking(booking);
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Booking submitted')),
       );
