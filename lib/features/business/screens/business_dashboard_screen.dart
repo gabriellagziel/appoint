@@ -12,24 +12,28 @@ class BusinessDashboardScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
-              'Welcome, Business Owner!',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 20),
-            const Text('\uD83D\uDCC5 Bookings'),
-            const SizedBox(height: 10),
-            const BookingTableWidget(),
-            const Divider(),
-            const Text('\uD83E\uDDD1 Staff Availability'),
-            const Divider(),
-            const Text('\uD83D\uDCCA Stats & Analytics'),
-            const Divider(),
-            const Text('\u2699\uFE0F Settings'),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Welcome, Business Owner!',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 20),
+              const Text('📅 Bookings'),
+              const SizedBox(height: 10),
+              const BookingTableWidget(),
+              const Divider(),
+              const Text('🧑 Staff Availability'),
+              const SizedBox(height: 10),
+              const StaffAvailabilityViewer(),
+              const Divider(),
+              const Text('📊 Stats & Analytics'),
+              const Divider(),
+              const Text('⚙️ Settings'),
+            ],
+          ),
         ),
       ),
     );
@@ -51,7 +55,6 @@ class BookingTableWidget extends StatelessWidget {
         if (!snapshot.hasData) return const CircularProgressIndicator();
 
         final bookings = snapshot.data!.docs;
-
         if (bookings.isEmpty) return const Text('No bookings yet');
 
         return DataTable(
@@ -69,6 +72,43 @@ class BookingTableWidget extends StatelessWidget {
               DataCell(Text(notes)),
             ]);
           }).toList(),
+        );
+      },
+    );
+  }
+}
+
+class StaffAvailabilityViewer extends StatelessWidget {
+  const StaffAvailabilityViewer({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder<QuerySnapshot>(
+      stream: FirebaseFirestore.instance
+          .collection('staff_availability')
+          .orderBy('time')
+          .snapshots(),
+      builder: (context, snapshot) {
+        if (snapshot.hasError) return const Text('Error loading staff data');
+        if (!snapshot.hasData) return const CircularProgressIndicator();
+
+        final slots = snapshot.data!.docs;
+
+        if (slots.isEmpty) return const Text('No staff availability found');
+
+        return ListView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          itemCount: slots.length,
+          itemBuilder: (context, index) {
+            final data = slots[index].data() as Map<String, dynamic>;
+            final staffName = data['staffName'] ?? 'Unknown';
+            final time = data['time'] ?? 'Unavailable';
+            return ListTile(
+              leading: const Icon(Icons.access_time),
+              title: Text('$staffName - $time'),
+            );
+          },
         );
       },
     );
