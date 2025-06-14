@@ -2,7 +2,6 @@ import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 
 class PaymentService {
-  final FirebaseFunctions _functions = FirebaseFunctions.instance;
 
   Future<void> init() async {
     Stripe.publishableKey = "pk_test_…";
