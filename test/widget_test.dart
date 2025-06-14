@@ -1,9 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter/material.dart';
 import 'package:appoint/main.dart';
 
 void main() {
-  testWidgets('App starts without errors', (WidgetTester tester) async {
+  testWidgets('App smoke test', (WidgetTester tester) async {
     await tester.pumpWidget(const App());
-    expect(find.byType(App), findsOneWidget);
+    expect(find.text('Business Dashboard'), findsOneWidget);
   });
 }
