@@ -14,6 +14,8 @@ class AdminUsersScreen extends ConsumerWidget {
         .collection('users')
         .doc(user.uid)
         .update({'role': newRole});
+    // Trigger provider refresh and ignore the returned value.
+    // ignore: unused_result
     ref.refresh(allUsersProvider);
   }
 
