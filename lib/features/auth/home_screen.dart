@@ -56,6 +56,8 @@ class HomeScreen extends ConsumerWidget {
             ElevatedButton(
               onPressed: () async {
                 await ref.read(authServiceProvider).signOut();
+                // Trigger provider refresh and ignore the value.
+                // ignore: unused_result
                 ref.refresh(authStateProvider);
               },
               child: const Text('Sign Out'),
@@ -119,6 +121,8 @@ class _HomeDrawer extends ConsumerWidget {
             onTap: () async {
               Navigator.pop(context);
               await ref.read(authServiceProvider).signOut();
+              // Trigger provider refresh and ignore the value.
+              // ignore: unused_result
               ref.refresh(authStateProvider);
             },
           ),
