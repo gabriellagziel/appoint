@@ -19,7 +19,6 @@ class AuthWrapper extends ConsumerWidget {
       case UserRole.admin:
         return const Scaffold(body: Center(child: Text('Admin screen TBD')));
       case UserRole.client:
-      default:
         return const Scaffold(body: Center(child: Text('Client screen TBD')));
     }
   }
