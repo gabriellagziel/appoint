@@ -3,6 +3,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 
 import 'time_of_day_converter.dart';
 
+// ignore_for_file: invalid_annotation_target
+
 part 'staff_availability.freezed.dart';
 part 'staff_availability.g.dart';
 
