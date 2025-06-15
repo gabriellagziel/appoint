@@ -16,3 +16,4 @@
   "postCreateCommand": "git pull origin main && flutter doctor && dart pub get && flutter pub get",
   "remoteUser": "root"
 }
+
