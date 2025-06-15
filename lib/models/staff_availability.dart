@@ -1,5 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import '../utils/datetime_converter.dart';
+import 'time_of_day_converter.dart';
+import 'package:flutter/material.dart';
 
 part 'staff_availability.freezed.dart';
 part 'staff_availability.g.dart';
@@ -14,11 +16,11 @@ class StaffAvailability with _$StaffAvailability {
 
     @DateTimeConverter()
     required DateTime availableTo,
+
+    @TimeOfDayConverter()
+    required List<TimeOfDay> availableSlots,
   }) = _StaffAvailability;
 
   factory StaffAvailability.fromJson(Map<String, dynamic> json) =>
       _$StaffAvailabilityFromJson(json);
-
-  // TODO: Replace dynamic with actual slot type
-  List<dynamic> get availableSlots => [];
 }
