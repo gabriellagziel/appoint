@@ -13,7 +13,6 @@
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-  "postCreateCommand": "git pull origin main && flutter doctor && dart pub get && flutter pub get",
+  "postCreateCommand": "flutter doctor && dart pub get && flutter pub get",
   "remoteUser": "root"
-}
-
+} 
