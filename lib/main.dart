@@ -11,7 +11,16 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(const ProviderScope(child: MyApp()));
+  runApp(const AppointApp());
+}
+
+class AppointApp extends StatelessWidget {
+  const AppointApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const ProviderScope(child: MyApp());
+  }
 }
 
 class MyApp extends StatelessWidget {
