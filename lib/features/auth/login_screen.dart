@@ -45,7 +45,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       _emailController.text,
                       _passwordController.text,
                     );
-                ref.refresh(authStateProvider);
+                  // Trigger provider refresh and ignore the returned value.
+                  // ignore: unused_result
+                  ref.refresh(authStateProvider);
               },
               child: const Text('Sign In'),
             ),
