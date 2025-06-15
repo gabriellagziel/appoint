@@ -21,11 +21,10 @@ StaffAvailability _$StaffAvailabilityFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$StaffAvailability {
   String get staffId => throw _privateConstructorUsedError;
-  @JsonKey(fromJson: DateTime.parse, toJson: _dateToIso)
-  DateTime get date =>
-      throw _privateConstructorUsedError; // TODO: Re-add TimeOfDayConverter once generator issues are resolved
-  @TimeOfDayConverter()
-  List<TimeOfDay> get availableSlots => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get availableFrom => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime get availableTo => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -41,8 +40,8 @@ abstract class $StaffAvailabilityCopyWith<$Res> {
   @useResult
   $Res call(
       {String staffId,
-      @JsonKey(fromJson: DateTime.parse, toJson: _dateToIso) DateTime date,
-      @TimeOfDayConverter() List<TimeOfDay> availableSlots});
+      @DateTimeConverter() DateTime availableFrom,
+      @DateTimeConverter() DateTime availableTo});
 }
 
 /// @nodoc
@@ -59,22 +58,22 @@ class _$StaffAvailabilityCopyWithImpl<$Res, $Val extends StaffAvailability>
   @override
   $Res call({
     Object? staffId = null,
-    Object? date = null,
-    Object? availableSlots = null,
+    Object? availableFrom = null,
+    Object? availableTo = null,
   }) {
     return _then(_value.copyWith(
       staffId: null == staffId
           ? _value.staffId
           : staffId // ignore: cast_nullable_to_non_nullable
               as String,
-      date: null == date
-          ? _value.date
-          : date // ignore: cast_nullable_to_non_nullable
+      availableFrom: null == availableFrom
+          ? _value.availableFrom
+          : availableFrom // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      availableSlots: null == availableSlots
-          ? _value.availableSlots
-          : availableSlots // ignore: cast_nullable_to_non_nullable
-              as List<TimeOfDay>,
+      availableTo: null == availableTo
+          ? _value.availableTo
+          : availableTo // ignore: cast_nullable_to_non_nullable
+              as DateTime,
     ) as $Val);
   }
 }
@@ -89,8 +88,8 @@ abstract class _$$StaffAvailabilityImplCopyWith<$Res>
   @useResult
   $Res call(
       {String staffId,
-      @JsonKey(fromJson: DateTime.parse, toJson: _dateToIso) DateTime date,
-      @TimeOfDayConverter() List<TimeOfDay> availableSlots});
+      @DateTimeConverter() DateTime availableFrom,
+      @DateTimeConverter() DateTime availableTo});
 }
 
 /// @nodoc
@@ -105,22 +104,22 @@ class __$$REDACTED_TOKEN<$Res>
   @override
   $Res call({
     Object? staffId = null,
-    Object? date = null,
-    Object? availableSlots = null,
+    Object? availableFrom = null,
+    Object? availableTo = null,
   }) {
     return _then(_$StaffAvailabilityImpl(
       staffId: null == staffId
           ? _value.staffId
           : staffId // ignore: cast_nullable_to_non_nullable
               as String,
-      date: null == date
-          ? _value.date
-          : date // ignore: cast_nullable_to_non_nullable
+      availableFrom: null == availableFrom
+          ? _value.availableFrom
+          : availableFrom // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      availableSlots: null == availableSlots
-          ? _value._availableSlots
-          : availableSlots // ignore: cast_nullable_to_non_nullable
-              as List<TimeOfDay>,
+      availableTo: null == availableTo
+          ? _value.availableTo
+          : availableTo // ignore: cast_nullable_to_non_nullable
+              as DateTime,
     ));
   }
 }
@@ -130,9 +129,8 @@ class __$$REDACTED_TOKEN<$Res>
 class _$StaffAvailabilityImpl implements _StaffAvailability {
   const _$StaffAvailabilityImpl(
       {required this.staffId,
-      @JsonKey(fromJson: DateTime.parse, toJson: _dateToIso) required this.date,
-      @TimeOfDayConverter() required final List<TimeOfDay> availableSlots})
-      : _availableSlots = availableSlots;
+      @DateTimeConverter() required this.availableFrom,
+      @DateTimeConverter() required this.availableTo});
 
   factory _$StaffAvailabilityImpl.fromJson(Map<String, dynamic> json) =>
       _$$StaffAvailabilityImplFromJson(json);
@@ -140,22 +138,15 @@ class _$StaffAvailabilityImpl implements _StaffAvailability {
   @override
   final String staffId;
   @override
-  @JsonKey(fromJson: DateTime.parse, toJson: _dateToIso)
-  final DateTime date;
-// TODO: Re-add TimeOfDayConverter once generator issues are resolved
-  final List<TimeOfDay> _availableSlots;
-// TODO: Re-add TimeOfDayConverter once generator issues are resolved
+  @DateTimeConverter()
+  final DateTime availableFrom;
   @override
-  @TimeOfDayConverter()
-  List<TimeOfDay> get availableSlots {
-    if (_availableSlots is EqualUnmodifiableListView) return _availableSlots;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_availableSlots);
-  }
+  @DateTimeConverter()
+  final DateTime availableTo;
 
   @override
   String toString() {
-    return 'StaffAvailability(staffId: $staffId, date: $date, availableSlots: $availableSlots)';
+    return 'StaffAvailability(staffId: $staffId, availableFrom: $availableFrom, availableTo: $availableTo)';
   }
 
   @override
@@ -164,15 +155,16 @@ class _$StaffAvailabilityImpl implements _StaffAvailability {
         (other.runtimeType == runtimeType &&
             other is _$StaffAvailabilityImpl &&
             (identical(other.staffId, staffId) || other.staffId == staffId) &&
-            (identical(other.date, date) || other.date == date) &&
-            const DeepCollectionEquality()
-                .equals(other._availableSlots, _availableSlots));
+            (identical(other.availableFrom, availableFrom) ||
+                other.availableFrom == availableFrom) &&
+            (identical(other.availableTo, availableTo) ||
+                other.availableTo == availableTo));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, staffId, date,
-      const DeepCollectionEquality().hash(_availableSlots));
+  int get hashCode =>
+      Object.hash(runtimeType, staffId, availableFrom, availableTo);
 
   @JsonKey(ignore: true)
   @override
@@ -191,11 +183,10 @@ class _$StaffAvailabilityImpl implements _StaffAvailability {
 
 abstract class _StaffAvailability implements StaffAvailability {
   const factory _StaffAvailability(
-      {required final String staffId,
-      @JsonKey(fromJson: DateTime.parse, toJson: _dateToIso)
-      required final DateTime date,
-      @TimeOfDayConverter()
-      required final List<TimeOfDay> availableSlots}) = _$StaffAvailabilityImpl;
+          {required final String staffId,
+          @DateTimeConverter() required final DateTime availableFrom,
+          @DateTimeConverter() required final DateTime availableTo}) =
+      _$StaffAvailabilityImpl;
 
   factory _StaffAvailability.fromJson(Map<String, dynamic> json) =
       _$StaffAvailabilityImpl.fromJson;
@@ -203,11 +194,11 @@ abstract class _StaffAvailability implements StaffAvailability {
   @override
   String get staffId;
   @override
-  @JsonKey(fromJson: DateTime.parse, toJson: _dateToIso)
-  DateTime get date;
-  @override // TODO: Re-add TimeOfDayConverter once generator issues are resolved
-  @TimeOfDayConverter()
-  List<TimeOfDay> get availableSlots;
+  @DateTimeConverter()
+  DateTime get availableFrom;
+  @override
+  @DateTimeConverter()
+  DateTime get availableTo;
   @override
   @JsonKey(ignore: true)
   _$$StaffAvailabilityImplCopyWith<_$StaffAvailabilityImpl> get copyWith =>
