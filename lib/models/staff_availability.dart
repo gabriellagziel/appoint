@@ -18,4 +18,7 @@ class StaffAvailability with _$StaffAvailability {
 
   factory StaffAvailability.fromJson(Map<String, dynamic> json) =>
       _$StaffAvailabilityFromJson(json);
+
+  // TODO: Replace dynamic with actual slot type
+  List<dynamic> get availableSlots => [];
 }
