@@ -18,7 +18,7 @@ class StaffAvailability with _$StaffAvailability {
     required DateTime availableTo,
 
     @TimeOfDayConverter()
-    required List<TimeOfDay> availableSlots,
+    List<TimeOfDay>? availableSlots,
   }) = _StaffAvailability;
 
   factory StaffAvailability.fromJson(Map<String, dynamic> json) =>
