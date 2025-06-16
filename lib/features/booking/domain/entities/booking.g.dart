@@ -9,13 +9,14 @@ part of 'booking.dart';
 _$BookingImpl _$$BookingImplFromJson(Map<String, dynamic> json) =>
     _$BookingImpl(
       id: json['id'] as String,
-      startTime: DateTime.parse(json['startTime'] as String),
-      endTime: DateTime.parse(json['endTime'] as String),
+      startTime:
+          const DateTimeConverter().fromJson(json['startTime'] as String),
+      endTime: const DateTimeConverter().fromJson(json['endTime'] as String),
     );
 
 Map<String, dynamic> _$$BookingImplToJson(_$BookingImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
-      'startTime': instance.startTime.toIso8601String(),
-      'endTime': instance.endTime.toIso8601String(),
+      'startTime': const DateTimeConverter().toJson(instance.startTime),
+      'endTime': const DateTimeConverter().toJson(instance.endTime),
     };

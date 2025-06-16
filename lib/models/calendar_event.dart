@@ -1,8 +1,15 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:json_annotation/json_annotation.dart';
+import '../utils/datetime_converter.dart';
+
+part 'calendar_event.g.dart';
+
+@JsonSerializable()
 class CalendarEvent {
   final String id;
   final String title;
+  @DateTimeConverter()
   final DateTime start;
+  @DateTimeConverter()
   final DateTime end;
   final String description;
   final String provider; // 'google' or 'outlook'
@@ -16,35 +23,8 @@ class CalendarEvent {
     required this.provider,
   });
 
-  factory CalendarEvent.fromMap(Map<String, dynamic> map, String id) {
-    DateTime parseDate(dynamic v) {
-      if (v is DateTime) return v;
-      if (v is String) return DateTime.parse(v);
-      try {
-        // Firestore Timestamp
-        return (v as Timestamp).toDate();
-      } catch (_) {
-        return DateTime.now();
-      }
-    }
+  factory CalendarEvent.fromJson(Map<String, dynamic> json) =>
+      _$CalendarEventFromJson(json);
 
-    return CalendarEvent(
-      id: id,
-      title: map['title'] as String? ?? '',
-      start: parseDate(map['start']),
-      end: parseDate(map['end']),
-      description: map['description'] as String? ?? '',
-      provider: map['provider'] as String? ?? '',
-    );
-  }
-
-  Map<String, dynamic> toMap() {
-    return {
-      'title': title,
-      'start': start,
-      'end': end,
-      'description': description,
-      'provider': provider,
-    };
-  }
+  Map<String, dynamic> toJson() => _$CalendarEventToJson(this);
 }
