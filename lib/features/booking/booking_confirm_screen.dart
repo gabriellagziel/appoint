@@ -7,6 +7,8 @@ import '../../providers/auth_provider.dart';
 import '../../providers/calendar_provider.dart';
 import '../../models/appointment.dart';
 import '../../providers/notification_provider.dart';
+import '../../providers/user_subscription_provider.dart';
+import '../../services/ad_service.dart';
 import 'models/booking_request_args.dart';
 
 class BookingConfirmScreen extends StatefulWidget {
@@ -51,6 +53,10 @@ class _BookingConfirmScreenState extends State<BookingConfirmScreen> {
               const Spacer(),
               ElevatedButton(
                 onPressed: () async {
+                  final isPremium = await ref.read(userSubscriptionProvider.future);
+                  if (!isPremium) {
+                    await AdService.showInterstitialAd();
+                  }
                   final user =
                       await ref.read(authServiceProvider).currentUser();
                   if (user == null) return;
