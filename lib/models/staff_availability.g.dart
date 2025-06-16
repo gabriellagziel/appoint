@@ -14,8 +14,8 @@ _$StaffAvailabilityImpl _$$StaffAvailabilityImplFromJson(
           const DateTimeConverter().fromJson(json['availableFrom'] as String),
       availableTo:
           const DateTimeConverter().fromJson(json['availableTo'] as String),
-      availableSlots: (json['availableSlots'] as List<dynamic>)
-          .map((e) => const TimeOfDayConverter().fromJson(e as String))
+      availableSlots: (json['availableSlots'] as List<dynamic>?)
+          ?.map((e) => const TimeOfDayConverter().fromJson(e as String))
           .toList(),
     );
 
@@ -26,6 +26,6 @@ Map<String, dynamic> _$$StaffAvailabilityImplToJson(
       'availableFrom': const DateTimeConverter().toJson(instance.availableFrom),
       'availableTo': const DateTimeConverter().toJson(instance.availableTo),
       'availableSlots': instance.availableSlots
-          .map(const TimeOfDayConverter().toJson)
+          ?.map(const TimeOfDayConverter().toJson)
           .toList(),
     };
