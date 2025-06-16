@@ -95,12 +95,13 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
             if (availability != null)
               availability.when(
                 data: (avail) {
-                  if (avail.availableSlots.isEmpty) {
+                  final slots = avail.availableSlots;
+                  if (slots == null || slots.isEmpty) {
                     return const Text('No slots');
                   }
                   return Wrap(
                     spacing: 8,
-                    children: avail.availableSlots.map((slot) {
+                    children: slots.map((slot) {
                       final selected = _selectedSlot == slot;
                       return ChoiceChip(
                         label: Text(slot.format(context)),
