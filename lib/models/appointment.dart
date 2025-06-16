@@ -1,14 +1,19 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:json_annotation/json_annotation.dart';
 
 import 'contact.dart';
 import 'invite.dart';
+import '../utils/datetime_converter.dart';
+
+part 'appointment.g.dart';
 
 enum AppointmentType { scheduled, openCall }
 
+@JsonSerializable()
 class Appointment {
   final String id;
   final String creatorId;
   final String inviteeId;
+  @DateTimeConverter()
   final DateTime scheduledAt;
   final AppointmentType type;
   final String? callRequestId;
@@ -26,32 +31,8 @@ class Appointment {
     this.status = InviteStatus.pending,
   });
 
-  factory Appointment.fromMap(Map<String, dynamic> map, String id) {
-    return Appointment(
-      id: id,
-      creatorId: map['creatorId'] as String,
-      inviteeId: map['inviteeId'] as String,
-      scheduledAt: (map['scheduledAt'] as Timestamp).toDate(),
-      type: AppointmentType.values.byName(map['type'] as String),
-      callRequestId: map['callRequestId'] as String?,
-      inviteeContact: map['inviteeContact'] != null
-          ? Contact.fromMap(Map<String, dynamic>.from(map['inviteeContact']))
-          : null,
-      status: map['status'] != null
-          ? InviteStatus.values.byName(map['status'] as String)
-          : InviteStatus.pending,
-    );
-  }
+  factory Appointment.fromJson(Map<String, dynamic> json) =>
+      _$AppointmentFromJson(json);
 
-  Map<String, dynamic> toMap() {
-    return {
-      'creatorId': creatorId,
-      'inviteeId': inviteeId,
-      'scheduledAt': Timestamp.fromDate(scheduledAt),
-      'type': type.name,
-      'callRequestId': callRequestId,
-      'inviteeContact': inviteeContact?.toMap(),
-      'status': status.name,
-    };
-  }
+  Map<String, dynamic> toJson() => _$AppointmentToJson(this);
 }
