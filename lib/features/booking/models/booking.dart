@@ -1,4 +1,11 @@
+import 'package:json_annotation/json_annotation.dart';
+import '../../../utils/datetime_converter.dart';
+
+part 'booking_model.g.dart';
+
+@JsonSerializable()
 class Booking {
+  @DateTimeConverter()
   final DateTime dateTime;
   final String notes;
 
@@ -7,10 +14,8 @@ class Booking {
     required this.notes,
   });
 
-  Map<String, dynamic> toJson() {
-    return {
-      'dateTime': dateTime.toIso8601String(),
-      'notes': notes,
-    };
-  }
+  factory Booking.fromJson(Map<String, dynamic> json) =>
+      _$BookingFromJson(json);
+
+  Map<String, dynamic> toJson() => _$BookingToJson(this);
 }

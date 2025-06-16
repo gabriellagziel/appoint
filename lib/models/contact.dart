@@ -1,3 +1,8 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'contact.g.dart';
+
+@JsonSerializable()
 class Contact {
   final String id;
   final String displayName;
@@ -11,21 +16,7 @@ class Contact {
     this.photoUrl,
   });
 
-  factory Contact.fromMap(Map<String, dynamic> map) {
-    return Contact(
-      id: map['id'] as String? ?? '',
-      displayName: map['displayName'] as String? ?? '',
-      phone: map['phone'] as String? ?? '',
-      photoUrl: map['photoUrl'] as String?,
-    );
-  }
+  factory Contact.fromJson(Map<String, dynamic> json) => _$ContactFromJson(json);
 
-  Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'displayName': displayName,
-      'phone': phone,
-      'photoUrl': photoUrl,
-    };
-  }
+  Map<String, dynamic> toJson() => _$ContactToJson(this);
 }
