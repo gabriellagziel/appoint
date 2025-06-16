@@ -16,4 +16,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get bookMeeting => 'Book a Meeting';
+
+  @override
+  String get selectStaff => 'Select Staff';
+
+  @override
+  String get pickDate => 'Pick Date';
+
+  @override
+  String get noSlots => 'No slots available';
+
+  @override
+  String get next => 'Next';
 }

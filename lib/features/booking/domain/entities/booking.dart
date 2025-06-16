@@ -1,3 +1,4 @@
+import 'dart:core';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import '../../../../utils/datetime_converter.dart';
 
@@ -12,5 +13,6 @@ class Booking with _$Booking {
     @DateTimeConverter() required DateTime endTime,
   }) = _Booking;
 
-  factory Booking.fromJson(Map<String, dynamic> json) => _$BookingFromJson(json);
+  factory Booking.fromJson(Map<String, dynamic> json) =>
+      _$BookingFromJson(json);
 }

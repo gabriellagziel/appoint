@@ -7,3 +7,7 @@ final authServiceProvider = Provider<AuthService>((ref) => AuthService());
 final authStateProvider = FutureProvider<User?>(
   (ref) => ref.read(authServiceProvider).currentUser(),
 );
+
+final authProvider = Provider<FirebaseAuth>((ref) {
+  return FirebaseAuth.instance;
+});

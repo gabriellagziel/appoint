@@ -1,8 +1,9 @@
+import 'dart:core';
 import 'package:json_annotation/json_annotation.dart';
+import 'package:appoint/utils/datetime_converter.dart';
 
-import 'contact.dart';
+import 'package:appoint/models/contact.dart';
 import 'invite.dart';
-import '../utils/datetime_converter.dart';
 
 part 'appointment.g.dart';
 

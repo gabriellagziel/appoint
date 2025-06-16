@@ -1,3 +1,4 @@
+import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -17,18 +18,18 @@ class CalendarViewScreen extends ConsumerWidget {
           return outlookAsync.when(
             data: (oEvents) {
               final events = [...gEvents, ...oEvents];
-              events.sort((a, b) => a.start.compareTo(b.start));
+              events.sort((a, b) => a.startTime.compareTo(b.startTime));
               if (events.isEmpty) {
                 return const Center(child: Text('No events'));
               }
               return ListView.builder(
                 itemCount: events.length,
                 itemBuilder: (context, index) {
-                  final e = events[index];
+                  final event = events[index];
                   return ListTile(
-                    title: Text(e.title),
-                    subtitle: Text(
-                        '${e.start} - ${e.end} (${e.provider})'),
+                    title: Text(event.title),
+                    subtitle: Text('${event.startTime} - ${event.endTime}'),
+                    trailing: Text(event.location ?? ''),
                   );
                 },
               );

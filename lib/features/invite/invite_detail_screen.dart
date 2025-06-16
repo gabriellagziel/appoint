@@ -19,7 +19,7 @@ class InviteDetailScreen extends ConsumerWidget {
           children: [
             Text('Appointment: ${invite.appointmentId}'),
             Text('From: ${invite.inviteeContact.displayName}'),
-            Text('Phone: ${invite.inviteeContact.phone}'),
+            Text('Phone: ${invite.inviteeContact.phoneNumber}'),
             Text('Status: ${invite.status.name}'),
             const Spacer(),
             Row(
@@ -28,7 +28,9 @@ class InviteDetailScreen extends ConsumerWidget {
                   child: ElevatedButton(
                     onPressed: invite.status == InviteStatus.pending
                         ? () async {
-                            await ref.read(inviteServiceProvider).respondToInvite(
+                            await ref
+                                .read(inviteServiceProvider)
+                                .respondToInvite(
                                   invite.appointmentId,
                                   invite.inviteeId,
                                   InviteStatus.accepted,
@@ -46,7 +48,9 @@ class InviteDetailScreen extends ConsumerWidget {
                   child: ElevatedButton(
                     onPressed: invite.status == InviteStatus.pending
                         ? () async {
-                            await ref.read(inviteServiceProvider).respondToInvite(
+                            await ref
+                                .read(inviteServiceProvider)
+                                .respondToInvite(
                                   invite.appointmentId,
                                   invite.inviteeId,
                                   InviteStatus.declined,

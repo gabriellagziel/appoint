@@ -1,3 +1,4 @@
+import 'dart:core';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -7,6 +8,7 @@ import '../models/calendar_event.dart';
 class CalendarService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  final String _collection = 'calendar_events';
 
   Future<String?> _getToken(String uid, String provider) async {
     final doc = await _firestore
@@ -24,8 +26,8 @@ class CalendarService {
     final event = CalendarEvent(
       id: appt.id,
       title: 'Appointment with ${appt.inviteeId}',
-      start: appt.scheduledAt,
-      end: appt.scheduledAt.add(const Duration(hours: 1)),
+      startTime: appt.scheduledAt,
+      endTime: appt.scheduledAt.add(const Duration(hours: 1)),
       description: 'Synced from Appoint',
       provider: 'google',
     );
@@ -34,7 +36,7 @@ class CalendarService {
         .doc(appt.creatorId)
         .collection('calendarEvents')
         .doc(event.id)
-        .set(event.toMap());
+        .set(event.toJson());
   }
 
   Future<void> syncToOutlook(Appointment appt) async {
@@ -42,8 +44,8 @@ class CalendarService {
     final event = CalendarEvent(
       id: appt.id,
       title: 'Appointment with ${appt.inviteeId}',
-      start: appt.scheduledAt,
-      end: appt.scheduledAt.add(const Duration(hours: 1)),
+      startTime: appt.scheduledAt,
+      endTime: appt.scheduledAt.add(const Duration(hours: 1)),
       description: 'Synced from Appoint',
       provider: 'outlook',
     );
@@ -52,7 +54,7 @@ class CalendarService {
         .doc(appt.creatorId)
         .collection('calendarEvents')
         .doc(event.id)
-        .set(event.toMap());
+        .set(event.toJson());
   }
 
   Future<List<CalendarEvent>> fetchGoogleEvents(
@@ -67,9 +69,7 @@ class CalendarService {
         .where('start', isGreaterThanOrEqualTo: Timestamp.fromDate(from))
         .where('start', isLessThanOrEqualTo: Timestamp.fromDate(to))
         .get();
-    return query.docs
-        .map((d) => CalendarEvent.fromMap(d.data(), d.id))
-        .toList();
+    return query.docs.map((d) => CalendarEvent.fromJson(d.data())).toList();
   }
 
   Future<List<CalendarEvent>> fetchOutlookEvents(
@@ -84,12 +84,11 @@ class CalendarService {
         .where('start', isGreaterThanOrEqualTo: Timestamp.fromDate(from))
         .where('start', isLessThanOrEqualTo: Timestamp.fromDate(to))
         .get();
-    return query.docs
-        .map((d) => CalendarEvent.fromMap(d.data(), d.id))
-        .toList();
+    return query.docs.map((d) => CalendarEvent.fromJson(d.data())).toList();
   }
 
-  Stream<List<CalendarEvent>> watchEvents(String uid, {required String provider}) {
+  Stream<List<CalendarEvent>> watchEvents(String uid,
+      {required String provider}) {
     return _firestore
         .collection('users')
         .doc(uid)
@@ -97,7 +96,42 @@ class CalendarService {
         .where('provider', isEqualTo: provider)
         .snapshots()
         .map((snapshot) => snapshot.docs
-            .map((doc) => CalendarEvent.fromMap(doc.data(), doc.id))
+            .map((doc) => CalendarEvent.fromJson(doc.data()))
             .toList());
+  }
+
+  Future<void> addEvent(CalendarEvent event) async {
+    await _firestore.collection(_collection).doc(event.id).set(event.toJson());
+  }
+
+  Future<void> updateEvent(CalendarEvent event) async {
+    await _firestore
+        .collection(_collection)
+        .doc(event.id)
+        .update(event.toJson());
+  }
+
+  Future<void> deleteEvent(String eventId) async {
+    await _firestore.collection(_collection).doc(eventId).delete();
+  }
+
+  Stream<List<CalendarEvent>> getEvents() {
+    return _firestore.collection(_collection).snapshots().map((snapshot) =>
+        snapshot.docs
+            .map((doc) => CalendarEvent.fromJson(doc.data()))
+            .toList());
+  }
+
+  Future<List<CalendarEvent>> getEventsByDateRange(
+      DateTime start, DateTime end) async {
+    final snapshot = await _firestore
+        .collection(_collection)
+        .where('startTime', isGreaterThanOrEqualTo: start)
+        .where('endTime', isLessThanOrEqualTo: end)
+        .get();
+
+    return snapshot.docs
+        .map((doc) => CalendarEvent.fromJson(doc.data()))
+        .toList();
   }
 }

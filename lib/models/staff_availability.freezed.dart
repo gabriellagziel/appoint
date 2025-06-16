@@ -22,14 +22,15 @@ StaffAvailability _$StaffAvailabilityFromJson(Map<String, dynamic> json) {
 mixin _$StaffAvailability {
   String get staffId => throw _privateConstructorUsedError;
   @DateTimeConverter()
-  DateTime get availableFrom => throw _privateConstructorUsedError;
-  @DateTimeConverter()
-  DateTime get availableTo => throw _privateConstructorUsedError;
-  @TimeOfDayConverter()
-  List<TimeOfDay>? get availableSlots => throw _privateConstructorUsedError;
+  DateTime get date => throw _privateConstructorUsedError;
+  List<String>? get availableSlots => throw _privateConstructorUsedError;
 
+  /// Serializes this StaffAvailability to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of StaffAvailability
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $StaffAvailabilityCopyWith<StaffAvailability> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -42,9 +43,8 @@ abstract class $StaffAvailabilityCopyWith<$Res> {
   @useResult
   $Res call(
       {String staffId,
-      @DateTimeConverter() DateTime availableFrom,
-      @DateTimeConverter() DateTime availableTo,
-      @TimeOfDayConverter() List<TimeOfDay>? availableSlots});
+      @DateTimeConverter() DateTime date,
+      List<String>? availableSlots});
 }
 
 /// @nodoc
@@ -57,12 +57,13 @@ class _$StaffAvailabilityCopyWithImpl<$Res, $Val extends StaffAvailability>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of StaffAvailability
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? staffId = null,
-    Object? availableFrom = null,
-    Object? availableTo = null,
+    Object? date = null,
     Object? availableSlots = freezed,
   }) {
     return _then(_value.copyWith(
@@ -70,18 +71,14 @@ class _$StaffAvailabilityCopyWithImpl<$Res, $Val extends StaffAvailability>
           ? _value.staffId
           : staffId // ignore: cast_nullable_to_non_nullable
               as String,
-      availableFrom: null == availableFrom
-          ? _value.availableFrom
-          : availableFrom // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      availableTo: null == availableTo
-          ? _value.availableTo
-          : availableTo // ignore: cast_nullable_to_non_nullable
+      date: null == date
+          ? _value.date
+          : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
       availableSlots: freezed == availableSlots
           ? _value.availableSlots
           : availableSlots // ignore: cast_nullable_to_non_nullable
-              as List<TimeOfDay>?,
+              as List<String>?,
     ) as $Val);
   }
 }
@@ -96,9 +93,8 @@ abstract class _$$StaffAvailabilityImplCopyWith<$Res>
   @useResult
   $Res call(
       {String staffId,
-      @DateTimeConverter() DateTime availableFrom,
-      @DateTimeConverter() DateTime availableTo,
-      @TimeOfDayConverter() List<TimeOfDay>? availableSlots});
+      @DateTimeConverter() DateTime date,
+      List<String>? availableSlots});
 }
 
 /// @nodoc
@@ -109,12 +105,13 @@ class __$$REDACTED_TOKEN<$Res>
       $Res Function(_$StaffAvailabilityImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of StaffAvailability
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? staffId = null,
-    Object? availableFrom = null,
-    Object? availableTo = null,
+    Object? date = null,
     Object? availableSlots = freezed,
   }) {
     return _then(_$StaffAvailabilityImpl(
@@ -122,18 +119,14 @@ class __$$REDACTED_TOKEN<$Res>
           ? _value.staffId
           : staffId // ignore: cast_nullable_to_non_nullable
               as String,
-      availableFrom: null == availableFrom
-          ? _value.availableFrom
-          : availableFrom // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      availableTo: null == availableTo
-          ? _value.availableTo
-          : availableTo // ignore: cast_nullable_to_non_nullable
+      date: null == date
+          ? _value.date
+          : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
       availableSlots: freezed == availableSlots
           ? _value._availableSlots
           : availableSlots // ignore: cast_nullable_to_non_nullable
-              as List<TimeOfDay>?,
+              as List<String>?,
     ));
   }
 }
@@ -143,9 +136,8 @@ class __$$REDACTED_TOKEN<$Res>
 class _$StaffAvailabilityImpl implements _StaffAvailability {
   const _$StaffAvailabilityImpl(
       {required this.staffId,
-      @DateTimeConverter() required this.availableFrom,
-      @DateTimeConverter() required this.availableTo,
-      @TimeOfDayConverter() final List<TimeOfDay>? availableSlots})
+      @DateTimeConverter() required this.date,
+      final List<String>? availableSlots})
       : _availableSlots = availableSlots;
 
   factory _$StaffAvailabilityImpl.fromJson(Map<String, dynamic> json) =>
@@ -155,14 +147,10 @@ class _$StaffAvailabilityImpl implements _StaffAvailability {
   final String staffId;
   @override
   @DateTimeConverter()
-  final DateTime availableFrom;
+  final DateTime date;
+  final List<String>? _availableSlots;
   @override
-  @DateTimeConverter()
-  final DateTime availableTo;
-  final List<TimeOfDay>? _availableSlots;
-  @override
-  @TimeOfDayConverter()
-  List<TimeOfDay>? get availableSlots {
+  List<String>? get availableSlots {
     final value = _availableSlots;
     if (value == null) return null;
     if (_availableSlots is EqualUnmodifiableListView) return _availableSlots;
@@ -172,7 +160,7 @@ class _$StaffAvailabilityImpl implements _StaffAvailability {
 
   @override
   String toString() {
-    return 'StaffAvailability(staffId: $staffId, availableFrom: $availableFrom, availableTo: $availableTo, availableSlots: $availableSlots)';
+    return 'StaffAvailability(staffId: $staffId, date: $date, availableSlots: $availableSlots)';
   }
 
   @override
@@ -181,20 +169,19 @@ class _$StaffAvailabilityImpl implements _StaffAvailability {
         (other.runtimeType == runtimeType &&
             other is _$StaffAvailabilityImpl &&
             (identical(other.staffId, staffId) || other.staffId == staffId) &&
-            (identical(other.availableFrom, availableFrom) ||
-                other.availableFrom == availableFrom) &&
-            (identical(other.availableTo, availableTo) ||
-                other.availableTo == availableTo) &&
+            (identical(other.date, date) || other.date == date) &&
             const DeepCollectionEquality()
                 .equals(other._availableSlots, _availableSlots));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, staffId, availableFrom,
-      availableTo, const DeepCollectionEquality().hash(_availableSlots));
+  int get hashCode => Object.hash(runtimeType, staffId, date,
+      const DeepCollectionEquality().hash(_availableSlots));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of StaffAvailability
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$StaffAvailabilityImplCopyWith<_$StaffAvailabilityImpl> get copyWith =>
@@ -211,11 +198,9 @@ class _$StaffAvailabilityImpl implements _StaffAvailability {
 
 abstract class _StaffAvailability implements StaffAvailability {
   const factory _StaffAvailability(
-          {required final String staffId,
-          @DateTimeConverter() required final DateTime availableFrom,
-          @DateTimeConverter() required final DateTime availableTo,
-          @TimeOfDayConverter() final List<TimeOfDay>? availableSlots}) =
-      _$StaffAvailabilityImpl;
+      {required final String staffId,
+      @DateTimeConverter() required final DateTime date,
+      final List<String>? availableSlots}) = _$StaffAvailabilityImpl;
 
   factory _StaffAvailability.fromJson(Map<String, dynamic> json) =
       _$StaffAvailabilityImpl.fromJson;
@@ -224,15 +209,14 @@ abstract class _StaffAvailability implements StaffAvailability {
   String get staffId;
   @override
   @DateTimeConverter()
-  DateTime get availableFrom;
+  DateTime get date;
   @override
-  @DateTimeConverter()
-  DateTime get availableTo;
+  List<String>? get availableSlots;
+
+  /// Create a copy of StaffAvailability
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @TimeOfDayConverter()
-  List<TimeOfDay>? get availableSlots;
-  @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$StaffAvailabilityImplCopyWith<_$StaffAvailabilityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

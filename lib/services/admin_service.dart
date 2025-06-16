@@ -9,21 +9,17 @@ class AdminService {
 
   Future<List<AdminUser>> fetchAllUsers() async {
     final snap = await _firestore.collection('users').get();
-    return snap.docs
-        .map((doc) => AdminUser.fromMap(doc.data(), doc.id))
-        .toList();
+    return snap.docs.map((doc) => AdminUser.fromJson(doc.data())).toList();
   }
 
   Future<List<Organization>> fetchOrganizations() async {
     final snap = await _firestore.collection('organizations').get();
-    return snap.docs
-        .map((doc) => Organization.fromMap(doc.data(), doc.id))
-        .toList();
+    return snap.docs.map((doc) => Organization.fromJson(doc.data())).toList();
   }
 
   Future<Analytics> fetchAnalytics() async {
     final doc = await _firestore.collection('analytics').doc('summary').get();
-    return Analytics.fromMap(doc.data() ?? {});
+    return Analytics.fromJson(doc.data() ?? {});
   }
 
   Future<void> updateUserRole(String uid, String role) async {

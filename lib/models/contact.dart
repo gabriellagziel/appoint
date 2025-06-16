@@ -1,22 +1,22 @@
-import 'package:json_annotation/json_annotation.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
+part 'contact.freezed.dart';
 part 'contact.g.dart';
 
-@JsonSerializable()
-class Contact {
-  final String id;
-  final String displayName;
-  final String phone;
-  final String? photoUrl;
+@freezed
+class Contact with _$Contact {
+  const factory Contact({
+    required String id,
+    required String displayName,
+    String? phoneNumber,
+    String? email,
+  }) = _Contact;
 
-  Contact({
-    required this.id,
-    required this.displayName,
-    required this.phone,
-    this.photoUrl,
-  });
+  factory Contact.fromJson(Map<String, dynamic> json) =>
+      _$ContactFromJson(json);
+}
 
-  factory Contact.fromJson(Map<String, dynamic> json) => _$ContactFromJson(json);
-
-  Map<String, dynamic> toJson() => _$ContactToJson(this);
+extension ContactComputed on Contact {
+  String get displayName => displayName;
+  String? get phoneNumber => phoneNumber;
 }
