@@ -1,3 +1,8 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'organization.g.dart';
+
+@JsonSerializable()
 class Organization {
   final String id;
   final String name;
@@ -9,18 +14,8 @@ class Organization {
     required this.memberIds,
   });
 
-  factory Organization.fromMap(Map<String, dynamic> map, String id) {
-    return Organization(
-      id: id,
-      name: map['name'] as String? ?? '',
-      memberIds: (map['memberIds'] as List<dynamic>? ?? []).cast<String>(),
-    );
-  }
+  factory Organization.fromJson(Map<String, dynamic> json) =>
+      _$OrganizationFromJson(json);
 
-  Map<String, dynamic> toMap() {
-    return {
-      'name': name,
-      'memberIds': memberIds,
-    };
-  }
+  Map<String, dynamic> toJson() => _$OrganizationToJson(this);
 }

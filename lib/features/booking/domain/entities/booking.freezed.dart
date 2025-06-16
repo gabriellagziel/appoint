@@ -21,11 +21,17 @@ Booking _$BookingFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Booking {
   String get id => throw _privateConstructorUsedError;
+  @DateTimeConverter()
   DateTime get startTime => throw _privateConstructorUsedError;
+  @DateTimeConverter()
   DateTime get endTime => throw _privateConstructorUsedError;
 
+  /// Serializes this Booking to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Booking
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BookingCopyWith<Booking> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -34,7 +40,10 @@ abstract class $BookingCopyWith<$Res> {
   factory $BookingCopyWith(Booking value, $Res Function(Booking) then) =
       _$BookingCopyWithImpl<$Res, Booking>;
   @useResult
-  $Res call({String id, DateTime startTime, DateTime endTime});
+  $Res call(
+      {String id,
+      @DateTimeConverter() DateTime startTime,
+      @DateTimeConverter() DateTime endTime});
 }
 
 /// @nodoc
@@ -47,6 +56,8 @@ class _$BookingCopyWithImpl<$Res, $Val extends Booking>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Booking
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -78,7 +89,10 @@ abstract class _$$BookingImplCopyWith<$Res> implements $BookingCopyWith<$Res> {
       __$$BookingImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String id, DateTime startTime, DateTime endTime});
+  $Res call(
+      {String id,
+      @DateTimeConverter() DateTime startTime,
+      @DateTimeConverter() DateTime endTime});
 }
 
 /// @nodoc
@@ -89,6 +103,8 @@ class __$$BookingImplCopyWithImpl<$Res>
       _$BookingImpl _value, $Res Function(_$BookingImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Booking
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -117,7 +133,9 @@ class __$$BookingImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$BookingImpl implements _Booking {
   const _$BookingImpl(
-      {required this.id, required this.startTime, required this.endTime});
+      {required this.id,
+      @DateTimeConverter() required this.startTime,
+      @DateTimeConverter() required this.endTime});
 
   factory _$BookingImpl.fromJson(Map<String, dynamic> json) =>
       _$$BookingImplFromJson(json);
@@ -125,8 +143,10 @@ class _$BookingImpl implements _Booking {
   @override
   final String id;
   @override
+  @DateTimeConverter()
   final DateTime startTime;
   @override
+  @DateTimeConverter()
   final DateTime endTime;
 
   @override
@@ -145,11 +165,13 @@ class _$BookingImpl implements _Booking {
             (identical(other.endTime, endTime) || other.endTime == endTime));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, id, startTime, endTime);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Booking
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BookingImplCopyWith<_$BookingImpl> get copyWith =>
@@ -166,19 +188,24 @@ class _$BookingImpl implements _Booking {
 abstract class _Booking implements Booking {
   const factory _Booking(
       {required final String id,
-      required final DateTime startTime,
-      required final DateTime endTime}) = _$BookingImpl;
+      @DateTimeConverter() required final DateTime startTime,
+      @DateTimeConverter() required final DateTime endTime}) = _$BookingImpl;
 
   factory _Booking.fromJson(Map<String, dynamic> json) = _$BookingImpl.fromJson;
 
   @override
   String get id;
   @override
+  @DateTimeConverter()
   DateTime get startTime;
   @override
+  @DateTimeConverter()
   DateTime get endTime;
+
+  /// Create a copy of Booking
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BookingImplCopyWith<_$BookingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

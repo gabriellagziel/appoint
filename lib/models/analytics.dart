@@ -1,3 +1,8 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'analytics.g.dart';
+
+@JsonSerializable()
 class Analytics {
   final int totalUsers;
   final int totalOrgs;
@@ -9,19 +14,8 @@ class Analytics {
     required this.activeAppointments,
   });
 
-  factory Analytics.fromMap(Map<String, dynamic> map) {
-    return Analytics(
-      totalUsers: (map['totalUsers'] as num?)?.toInt() ?? 0,
-      totalOrgs: (map['totalOrgs'] as num?)?.toInt() ?? 0,
-      activeAppointments: (map['activeAppointments'] as num?)?.toInt() ?? 0,
-    );
-  }
+  factory Analytics.fromJson(Map<String, dynamic> json) =>
+      _$AnalyticsFromJson(json);
 
-  Map<String, dynamic> toMap() {
-    return {
-      'totalUsers': totalUsers,
-      'totalOrgs': totalOrgs,
-      'activeAppointments': activeAppointments,
-    };
-  }
+  Map<String, dynamic> toJson() => _$AnalyticsToJson(this);
 }

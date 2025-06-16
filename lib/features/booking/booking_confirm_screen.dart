@@ -1,3 +1,4 @@
+import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -6,7 +7,7 @@ import '../../providers/auth_provider.dart';
 import '../../providers/calendar_provider.dart';
 import '../../models/appointment.dart';
 import '../../providers/notification_provider.dart';
-import 'booking_request_screen.dart';
+import 'models/booking_request_args.dart';
 
 class BookingConfirmScreen extends StatefulWidget {
   const BookingConfirmScreen({Key? key}) : super(key: key);
@@ -50,7 +51,8 @@ class _BookingConfirmScreenState extends State<BookingConfirmScreen> {
               const Spacer(),
               ElevatedButton(
                 onPressed: () async {
-                  final user = await ref.read(authServiceProvider).currentUser();
+                  final user =
+                      await ref.read(authServiceProvider).currentUser();
                   if (user == null) return;
                   late final Appointment appt;
                   if (args.openCall) {

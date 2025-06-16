@@ -1,12 +1,13 @@
+import 'dart:core';
 import 'package:json_annotation/json_annotation.dart';
 
-/// A custom converter to handle DateTime serialization in @JsonKey.
+@JsonSerializable()
 class DateTimeConverter implements JsonConverter<DateTime, String> {
   const DateTimeConverter();
 
   @override
-  DateTime fromJson(String json) => DateTime.parse(json).toUtc();
+  DateTime fromJson(String json) => DateTime.parse(json);
 
   @override
-  String toJson(DateTime object) => object.toUtc().toIso8601String();
+  String toJson(DateTime dateTime) => dateTime.toIso8601String();
 }

@@ -1,3 +1,8 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'user_profile.g.dart';
+
+@JsonSerializable()
 class UserProfile {
   final String uid;
   final String displayName;
@@ -11,20 +16,8 @@ class UserProfile {
     required this.photoUrl,
   });
 
-  factory UserProfile.fromMap(Map<String, dynamic> map, String uid) {
-    return UserProfile(
-      uid: uid,
-      displayName: map['displayName'] as String? ?? '',
-      email: map['email'] as String? ?? '',
-      photoUrl: map['photoUrl'] as String? ?? '',
-    );
-  }
+  factory UserProfile.fromJson(Map<String, dynamic> json) =>
+      _$UserProfileFromJson(json);
 
-  Map<String, dynamic> toMap() {
-    return {
-      'displayName': displayName,
-      'email': email,
-      'photoUrl': photoUrl,
-    };
-  }
+  Map<String, dynamic> toJson() => _$UserProfileToJson(this);
 }

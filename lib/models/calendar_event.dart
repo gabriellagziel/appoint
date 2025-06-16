@@ -1,30 +1,21 @@
-import 'package:json_annotation/json_annotation.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 import '../utils/datetime_converter.dart';
 
+part 'calendar_event.freezed.dart';
 part 'calendar_event.g.dart';
 
-@JsonSerializable()
-class CalendarEvent {
-  final String id;
-  final String title;
-  @DateTimeConverter()
-  final DateTime start;
-  @DateTimeConverter()
-  final DateTime end;
-  final String description;
-  final String provider; // 'google' or 'outlook'
-
-  CalendarEvent({
-    required this.id,
-    required this.title,
-    required this.start,
-    required this.end,
-    required this.description,
-    required this.provider,
-  });
+@freezed
+class CalendarEvent with _$CalendarEvent {
+  const factory CalendarEvent({
+    required String id,
+    required String title,
+    @DateTimeConverter() required DateTime startTime,
+    @DateTimeConverter() required DateTime endTime,
+    String? description,
+    String? provider,
+    String? location,
+  }) = _CalendarEvent;
 
   factory CalendarEvent.fromJson(Map<String, dynamic> json) =>
       _$CalendarEventFromJson(json);
-
-  Map<String, dynamic> toJson() => _$CalendarEventToJson(this);
 }
