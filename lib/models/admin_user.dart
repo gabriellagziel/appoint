@@ -1,3 +1,8 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'admin_user.g.dart';
+
+@JsonSerializable()
 class AdminUser {
   final String uid;
   final String email;
@@ -11,20 +16,8 @@ class AdminUser {
     required this.role,
   });
 
-  factory AdminUser.fromMap(Map<String, dynamic> map, String uid) {
-    return AdminUser(
-      uid: uid,
-      email: map['email'] as String? ?? '',
-      displayName: map['displayName'] as String? ?? '',
-      role: map['role'] as String? ?? '',
-    );
-  }
+  factory AdminUser.fromJson(Map<String, dynamic> json) =>
+      _$AdminUserFromJson(json);
 
-  Map<String, dynamic> toMap() {
-    return {
-      'email': email,
-      'displayName': displayName,
-      'role': role,
-    };
-  }
+  Map<String, dynamic> toJson() => _$AdminUserToJson(this);
 }

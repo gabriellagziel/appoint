@@ -1,7 +1,11 @@
+import 'package:json_annotation/json_annotation.dart';
 import 'contact.dart';
+
+part 'invite.g.dart';
 
 enum InviteStatus { pending, accepted, declined }
 
+@JsonSerializable()
 class Invite {
   final String id;
   final String appointmentId;
@@ -19,25 +23,7 @@ class Invite {
     required this.requiresInstallFallback,
   });
 
-  factory Invite.fromMap(Map<String, dynamic> map, String id) {
-    return Invite(
-      id: id,
-      appointmentId: map['appointmentId'] as String,
-      inviteeId: map['inviteeId'] as String,
-      inviteeContact:
-          Contact.fromMap(Map<String, dynamic>.from(map['inviteeContact'] as Map)),
-      status: InviteStatus.values.byName(map['status'] as String),
-      requiresInstallFallback: map['requiresInstallFallback'] as bool? ?? false,
-    );
-  }
+  factory Invite.fromJson(Map<String, dynamic> json) => _$InviteFromJson(json);
 
-  Map<String, dynamic> toMap() {
-    return {
-      'appointmentId': appointmentId,
-      'inviteeId': inviteeId,
-      'inviteeContact': inviteeContact.toMap(),
-      'status': status.name,
-      'requiresInstallFallback': requiresInstallFallback,
-    };
-  }
+  Map<String, dynamic> toJson() => _$InviteToJson(this);
 }

@@ -21,13 +21,26 @@ Booking _$BookingFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Booking {
   String get id => throw _privateConstructorUsedError;
-  @JsonKey(fromJson: _fromJson, toJson: _toJson)
-  DateTime get startTime => throw _privateConstructorUsedError;
-  @JsonKey(fromJson: _fromJson, toJson: _toJson)
-  DateTime get endTime => throw _privateConstructorUsedError;
+  String get userId => throw _privateConstructorUsedError;
+  String get staffId => throw _privateConstructorUsedError;
+  String get serviceId => throw _privateConstructorUsedError;
+  String get serviceName => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  @JsonKey(name: 'dateTime')
+  DateTime get dateTime => throw _privateConstructorUsedError;
+  @JsonKey(name: 'duration')
+  Duration get duration => throw _privateConstructorUsedError;
+  String? get notes => throw _privateConstructorUsedError;
+  bool get isConfirmed => throw _privateConstructorUsedError;
+  @DateTimeConverter()
+  DateTime? get createdAt => throw _privateConstructorUsedError;
 
+  /// Serializes this Booking to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Booking
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BookingCopyWith<Booking> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -38,8 +51,15 @@ abstract class $BookingCopyWith<$Res> {
   @useResult
   $Res call(
       {String id,
-      @JsonKey(fromJson: _fromJson, toJson: _toJson) DateTime startTime,
-      @JsonKey(fromJson: _fromJson, toJson: _toJson) DateTime endTime});
+      String userId,
+      String staffId,
+      String serviceId,
+      String serviceName,
+      @DateTimeConverter() @JsonKey(name: 'dateTime') DateTime dateTime,
+      @JsonKey(name: 'duration') Duration duration,
+      String? notes,
+      bool isConfirmed,
+      @DateTimeConverter() DateTime? createdAt});
 }
 
 /// @nodoc
@@ -52,26 +72,63 @@ class _$BookingCopyWithImpl<$Res, $Val extends Booking>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Booking
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? id = null,
-    Object? startTime = null,
-    Object? endTime = null,
+    Object? userId = null,
+    Object? staffId = null,
+    Object? serviceId = null,
+    Object? serviceName = null,
+    Object? dateTime = null,
+    Object? duration = null,
+    Object? notes = freezed,
+    Object? isConfirmed = null,
+    Object? createdAt = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      startTime: null == startTime
-          ? _value.startTime
-          : startTime // ignore: cast_nullable_to_non_nullable
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      staffId: null == staffId
+          ? _value.staffId
+          : staffId // ignore: cast_nullable_to_non_nullable
+              as String,
+      serviceId: null == serviceId
+          ? _value.serviceId
+          : serviceId // ignore: cast_nullable_to_non_nullable
+              as String,
+      serviceName: null == serviceName
+          ? _value.serviceName
+          : serviceName // ignore: cast_nullable_to_non_nullable
+              as String,
+      dateTime: null == dateTime
+          ? _value.dateTime
+          : dateTime // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      endTime: null == endTime
-          ? _value.endTime
-          : endTime // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+      duration: null == duration
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as Duration,
+      notes: freezed == notes
+          ? _value.notes
+          : notes // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isConfirmed: null == isConfirmed
+          ? _value.isConfirmed
+          : isConfirmed // ignore: cast_nullable_to_non_nullable
+              as bool,
+      createdAt: freezed == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
     ) as $Val);
   }
 }
@@ -85,8 +142,15 @@ abstract class _$$BookingImplCopyWith<$Res> implements $BookingCopyWith<$Res> {
   @useResult
   $Res call(
       {String id,
-      @JsonKey(fromJson: _fromJson, toJson: _toJson) DateTime startTime,
-      @JsonKey(fromJson: _fromJson, toJson: _toJson) DateTime endTime});
+      String userId,
+      String staffId,
+      String serviceId,
+      String serviceName,
+      @DateTimeConverter() @JsonKey(name: 'dateTime') DateTime dateTime,
+      @JsonKey(name: 'duration') Duration duration,
+      String? notes,
+      bool isConfirmed,
+      @DateTimeConverter() DateTime? createdAt});
 }
 
 /// @nodoc
@@ -97,37 +161,82 @@ class __$$BookingImplCopyWithImpl<$Res>
       _$BookingImpl _value, $Res Function(_$BookingImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Booking
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? id = null,
-    Object? startTime = null,
-    Object? endTime = null,
+    Object? userId = null,
+    Object? staffId = null,
+    Object? serviceId = null,
+    Object? serviceName = null,
+    Object? dateTime = null,
+    Object? duration = null,
+    Object? notes = freezed,
+    Object? isConfirmed = null,
+    Object? createdAt = freezed,
   }) {
     return _then(_$BookingImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      startTime: null == startTime
-          ? _value.startTime
-          : startTime // ignore: cast_nullable_to_non_nullable
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      staffId: null == staffId
+          ? _value.staffId
+          : staffId // ignore: cast_nullable_to_non_nullable
+              as String,
+      serviceId: null == serviceId
+          ? _value.serviceId
+          : serviceId // ignore: cast_nullable_to_non_nullable
+              as String,
+      serviceName: null == serviceName
+          ? _value.serviceName
+          : serviceName // ignore: cast_nullable_to_non_nullable
+              as String,
+      dateTime: null == dateTime
+          ? _value.dateTime
+          : dateTime // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      endTime: null == endTime
-          ? _value.endTime
-          : endTime // ignore: cast_nullable_to_non_nullable
-              as DateTime,
+      duration: null == duration
+          ? _value.duration
+          : duration // ignore: cast_nullable_to_non_nullable
+              as Duration,
+      notes: freezed == notes
+          ? _value.notes
+          : notes // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isConfirmed: null == isConfirmed
+          ? _value.isConfirmed
+          : isConfirmed // ignore: cast_nullable_to_non_nullable
+              as bool,
+      createdAt: freezed == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
     ));
   }
 }
 
 /// @nodoc
-@JsonSerializable()
+
+@JsonSerializable(explicitToJson: true)
 class _$BookingImpl implements _Booking {
-  _$BookingImpl(
+  const _$BookingImpl(
       {required this.id,
-      @JsonKey(fromJson: _fromJson, toJson: _toJson) required this.startTime,
-      @JsonKey(fromJson: _fromJson, toJson: _toJson) required this.endTime});
+      required this.userId,
+      required this.staffId,
+      required this.serviceId,
+      required this.serviceName,
+      @DateTimeConverter() @JsonKey(name: 'dateTime') required this.dateTime,
+      @JsonKey(name: 'duration') required this.duration,
+      this.notes,
+      this.isConfirmed = false,
+      @DateTimeConverter() this.createdAt});
 
   factory _$BookingImpl.fromJson(Map<String, dynamic> json) =>
       _$$BookingImplFromJson(json);
@@ -135,15 +244,32 @@ class _$BookingImpl implements _Booking {
   @override
   final String id;
   @override
-  @JsonKey(fromJson: _fromJson, toJson: _toJson)
-  final DateTime startTime;
+  final String userId;
   @override
-  @JsonKey(fromJson: _fromJson, toJson: _toJson)
-  final DateTime endTime;
+  final String staffId;
+  @override
+  final String serviceId;
+  @override
+  final String serviceName;
+  @override
+  @DateTimeConverter()
+  @JsonKey(name: 'dateTime')
+  final DateTime dateTime;
+  @override
+  @JsonKey(name: 'duration')
+  final Duration duration;
+  @override
+  final String? notes;
+  @override
+  @JsonKey()
+  final bool isConfirmed;
+  @override
+  @DateTimeConverter()
+  final DateTime? createdAt;
 
   @override
   String toString() {
-    return 'Booking(id: $id, startTime: $startTime, endTime: $endTime)';
+    return 'Booking(id: $id, userId: $userId, staffId: $staffId, serviceId: $serviceId, serviceName: $serviceName, dateTime: $dateTime, duration: $duration, notes: $notes, isConfirmed: $isConfirmed, createdAt: $createdAt)';
   }
 
   @override
@@ -152,16 +278,31 @@ class _$BookingImpl implements _Booking {
         (other.runtimeType == runtimeType &&
             other is _$BookingImpl &&
             (identical(other.id, id) || other.id == id) &&
-            (identical(other.startTime, startTime) ||
-                other.startTime == startTime) &&
-            (identical(other.endTime, endTime) || other.endTime == endTime));
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.staffId, staffId) || other.staffId == staffId) &&
+            (identical(other.serviceId, serviceId) ||
+                other.serviceId == serviceId) &&
+            (identical(other.serviceName, serviceName) ||
+                other.serviceName == serviceName) &&
+            (identical(other.dateTime, dateTime) ||
+                other.dateTime == dateTime) &&
+            (identical(other.duration, duration) ||
+                other.duration == duration) &&
+            (identical(other.notes, notes) || other.notes == notes) &&
+            (identical(other.isConfirmed, isConfirmed) ||
+                other.isConfirmed == isConfirmed) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, startTime, endTime);
+  int get hashCode => Object.hash(runtimeType, id, userId, staffId, serviceId,
+      serviceName, dateTime, duration, notes, isConfirmed, createdAt);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Booking
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BookingImplCopyWith<_$BookingImpl> get copyWith =>
@@ -176,25 +317,51 @@ class _$BookingImpl implements _Booking {
 }
 
 abstract class _Booking implements Booking {
-  factory _Booking(
+  const factory _Booking(
       {required final String id,
-      @JsonKey(fromJson: _fromJson, toJson: _toJson)
-      required final DateTime startTime,
-      @JsonKey(fromJson: _fromJson, toJson: _toJson)
-      required final DateTime endTime}) = _$BookingImpl;
+      required final String userId,
+      required final String staffId,
+      required final String serviceId,
+      required final String serviceName,
+      @DateTimeConverter()
+      @JsonKey(name: 'dateTime')
+      required final DateTime dateTime,
+      @JsonKey(name: 'duration') required final Duration duration,
+      final String? notes,
+      final bool isConfirmed,
+      @DateTimeConverter() final DateTime? createdAt}) = _$BookingImpl;
 
   factory _Booking.fromJson(Map<String, dynamic> json) = _$BookingImpl.fromJson;
 
   @override
   String get id;
   @override
-  @JsonKey(fromJson: _fromJson, toJson: _toJson)
-  DateTime get startTime;
+  String get userId;
   @override
-  @JsonKey(fromJson: _fromJson, toJson: _toJson)
-  DateTime get endTime;
+  String get staffId;
   @override
-  @JsonKey(ignore: true)
+  String get serviceId;
+  @override
+  String get serviceName;
+  @override
+  @DateTimeConverter()
+  @JsonKey(name: 'dateTime')
+  DateTime get dateTime;
+  @override
+  @JsonKey(name: 'duration')
+  Duration get duration;
+  @override
+  String? get notes;
+  @override
+  bool get isConfirmed;
+  @override
+  @DateTimeConverter()
+  DateTime? get createdAt;
+
+  /// Create a copy of Booking
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BookingImplCopyWith<_$BookingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

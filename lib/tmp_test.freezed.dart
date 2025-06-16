@@ -21,10 +21,15 @@ Tmp _$TmpFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$Tmp {
   String get id => throw _privateConstructorUsedError;
+  @DateTimeConverter()
   DateTime get time => throw _privateConstructorUsedError;
 
+  /// Serializes this Tmp to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Tmp
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TmpCopyWith<Tmp> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -33,7 +38,7 @@ abstract class $TmpCopyWith<$Res> {
   factory $TmpCopyWith(Tmp value, $Res Function(Tmp) then) =
       _$TmpCopyWithImpl<$Res, Tmp>;
   @useResult
-  $Res call({String id, DateTime time});
+  $Res call({String id, @DateTimeConverter() DateTime time});
 }
 
 /// @nodoc
@@ -45,18 +50,20 @@ class _$TmpCopyWithImpl<$Res, $Val extends Tmp> implements $TmpCopyWith<$Res> {
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Tmp
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? id = null,
-    Object? time = null,
+    Object? time = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      time: null == time
+      time: freezed == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as DateTime,
@@ -70,7 +77,7 @@ abstract class _$$TmpImplCopyWith<$Res> implements $TmpCopyWith<$Res> {
       __$$TmpImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String id, DateTime time});
+  $Res call({String id, @DateTimeConverter() DateTime time});
 }
 
 /// @nodoc
@@ -79,18 +86,20 @@ class __$$TmpImplCopyWithImpl<$Res> extends _$TmpCopyWithImpl<$Res, _$TmpImpl>
   __$$TmpImplCopyWithImpl(_$TmpImpl _value, $Res Function(_$TmpImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Tmp
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? id = null,
-    Object? time = null,
+    Object? time = freezed,
   }) {
     return _then(_$TmpImpl(
       id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      time: null == time
+      time: freezed == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as DateTime,
@@ -101,7 +110,7 @@ class __$$TmpImplCopyWithImpl<$Res> extends _$TmpCopyWithImpl<$Res, _$TmpImpl>
 /// @nodoc
 @JsonSerializable()
 class _$TmpImpl implements _Tmp {
-  const _$TmpImpl({required this.id, required this.time});
+  _$TmpImpl({required this.id, @DateTimeConverter() required this.time});
 
   factory _$TmpImpl.fromJson(Map<String, dynamic> json) =>
       _$$TmpImplFromJson(json);
@@ -109,6 +118,7 @@ class _$TmpImpl implements _Tmp {
   @override
   final String id;
   @override
+  @DateTimeConverter()
   final DateTime time;
 
   @override
@@ -122,14 +132,17 @@ class _$TmpImpl implements _Tmp {
         (other.runtimeType == runtimeType &&
             other is _$TmpImpl &&
             (identical(other.id, id) || other.id == id) &&
-            (identical(other.time, time) || other.time == time));
+            const DeepCollectionEquality().equals(other.time, time));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(runtimeType, id, time);
+  int get hashCode =>
+      Object.hash(runtimeType, id, const DeepCollectionEquality().hash(time));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Tmp
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TmpImplCopyWith<_$TmpImpl> get copyWith =>
@@ -144,17 +157,22 @@ class _$TmpImpl implements _Tmp {
 }
 
 abstract class _Tmp implements Tmp {
-  const factory _Tmp({required final String id, required final DateTime time}) =
-      _$TmpImpl;
+  factory _Tmp(
+      {required final String id,
+      @DateTimeConverter() required final DateTime time}) = _$TmpImpl;
 
   factory _Tmp.fromJson(Map<String, dynamic> json) = _$TmpImpl.fromJson;
 
   @override
   String get id;
   @override
+  @DateTimeConverter()
   DateTime get time;
+
+  /// Create a copy of Tmp
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TmpImplCopyWith<_$TmpImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

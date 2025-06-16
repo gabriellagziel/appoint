@@ -1,3 +1,4 @@
+import 'dart:core';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../models/appointment.dart';
@@ -19,7 +20,7 @@ class AppointmentService {
       scheduledAt: scheduledAt,
       type: AppointmentType.scheduled,
     );
-    await doc.set(appointment.toMap());
+    await doc.set(appointment.toJson());
     await NotificationService().sendNotificationToUser(
         inviteeId, 'New Appointment', 'You have a new booking');
     return appointment;
@@ -39,7 +40,7 @@ class AppointmentService {
       type: AppointmentType.openCall,
       callRequestId: callRequestId,
     );
-    await doc.set(appointment.toMap());
+    await doc.set(appointment.toJson());
     await NotificationService().sendNotificationToUser(
         inviteeId, 'New Call Request', 'You have a new call request');
     return appointment;
@@ -51,7 +52,7 @@ class AppointmentService {
         .where('creatorId', isEqualTo: userId)
         .snapshots()
         .map((snapshot) => snapshot.docs
-            .map((doc) => Appointment.fromMap(doc.data(), doc.id))
+            .map((doc) => Appointment.fromJson(doc.data()))
             .toList());
   }
 }

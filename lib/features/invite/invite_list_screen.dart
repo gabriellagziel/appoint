@@ -1,3 +1,4 @@
+import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -22,7 +23,10 @@ class InviteListScreen extends ConsumerWidget {
               final invite = list[index];
               return ListTile(
                 title: Text(invite.inviteeContact.displayName),
-                subtitle: Text(invite.status.name),
+                subtitle: Text(invite.inviteeContact.phoneNumber ?? ''),
+                trailing: invite.inviteeContact.email != null
+                    ? Text(invite.inviteeContact.email!)
+                    : null,
                 onTap: () {
                   Navigator.pushNamed(context, '/invite/detail',
                       arguments: invite);

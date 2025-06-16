@@ -21,13 +21,22 @@ class StudioBookingScreen extends ConsumerStatefulWidget {
   const StudioBookingScreen({Key? key}) : super(key: key);
 
   @override
-  ConsumerState<StudioBookingScreen> createState() => _StudioBookingScreenState();
+  ConsumerState<StudioBookingScreen> createState() =>
+      _StudioBookingScreenState();
 }
 
 class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   StaffMember? _selectedStaff;
   DateTime? _selectedDate;
   TimeOfDay? _selectedSlot;
+
+  TimeOfDay _parseTimeSlot(String slot) {
+    final parts = slot.split(':');
+    return TimeOfDay(
+      hour: int.parse(parts[0]),
+      minute: int.parse(parts[1]),
+    );
+  }
 
   Future<void> _pickDate() async {
     final date = await showDatePicker(
@@ -102,13 +111,14 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                   return Wrap(
                     spacing: 8,
                     children: slots.map((slot) {
-                      final selected = _selectedSlot == slot;
+                      final timeSlot = _parseTimeSlot(slot);
+                      final selected = _selectedSlot == timeSlot;
                       return ChoiceChip(
-                        label: Text(slot.format(context)),
+                        label: Text(slot),
                         selected: selected,
                         onSelected: (_) {
                           setState(() {
-                            _selectedSlot = slot;
+                            _selectedSlot = timeSlot;
                           });
                         },
                       );

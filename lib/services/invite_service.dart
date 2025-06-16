@@ -20,7 +20,7 @@ class InviteService {
       status: InviteStatus.pending,
       requiresInstallFallback: requiresInstallFallback,
     );
-    await doc.set(invite.toMap());
+    await doc.set(invite.toJson());
     await NotificationService().sendNotificationToUser(
         invitee.id, 'New Invite', 'You have a new invite');
   }
@@ -46,8 +46,7 @@ class InviteService {
         .collection('invites')
         .where('inviteeId', isEqualTo: user.uid)
         .snapshots()
-        .map((snapshot) => snapshot.docs
-            .map((doc) => Invite.fromMap(doc.data(), doc.id))
-            .toList());
+        .map((snapshot) =>
+            snapshot.docs.map((doc) => Invite.fromJson(doc.data())).toList());
   }
 }

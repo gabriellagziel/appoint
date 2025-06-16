@@ -1,6 +1,25 @@
 {
   "@@locale": "en",
   "appTitle": "Appoint",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
   "welcome": "Welcome",
-  "bookMeeting": "Book a Meeting"
+  "bookMeeting": "Book a Meeting",
+  "selectStaff": "Select Staff",
+  "@selectStaff": {
+    "description": "Label for staff selection dropdown"
+  },
+  "pickDate": "Pick Date",
+  "@pickDate": {
+    "description": "Label for date picker"
+  },
+  "noSlots": "No slots available",
+  "@noSlots": {
+    "description": "Message shown when no time slots are available"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Label for the next button"
+  }
 }

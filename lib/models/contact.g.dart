@@ -2,16 +2,22 @@
 
 part of 'contact.dart';
 
-Contact _$ContactFromJson(Map<String, dynamic> json) => Contact(
-      id: json['id'] as String? ?? '',
-      displayName: json['displayName'] as String? ?? '',
-      phone: json['phone'] as String? ?? '',
-      photoUrl: json['photoUrl'] as String?,
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+_$ContactImpl _$$ContactImplFromJson(Map<String, dynamic> json) =>
+    _$ContactImpl(
+      id: json['id'] as String,
+      displayName: json['displayName'] as String,
+      phoneNumber: json['phoneNumber'] as String?,
+      email: json['email'] as String?,
     );
 
-Map<String, dynamic> _$ContactToJson(Contact instance) => <String, dynamic>{
+Map<String, dynamic> _$$ContactImplToJson(_$ContactImpl instance) =>
+    <String, dynamic>{
       'id': instance.id,
       'displayName': instance.displayName,
-      'phone': instance.phone,
-      'photoUrl': instance.photoUrl,
+      'phoneNumber': instance.phoneNumber,
+      'email': instance.email,
     };
