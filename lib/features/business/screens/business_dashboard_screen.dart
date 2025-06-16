@@ -7,12 +7,8 @@ class BusinessDashboardScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Business Dashboard'),
-      ),
-      body: const Center(
-        child: Text('Welcome to Business Dashboard'),
-      ),
+      appBar: AppBar(title: const Text('Business Dashboard')),
+      body: const Center(child: Text('Welcome to Business Dashboard')),
     );
   }
 }
