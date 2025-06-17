@@ -25,7 +25,7 @@ dependencies:
   flutter_riverpod: ^2.0.0
 ```
 
-2. Run code generation (if using Freezed or similar):
+1. Run code generation (if using Freezed or similar):
 
 ```bash
 dart run build_runner build --delete-conflicting-outputs
@@ -33,7 +33,7 @@ dart run build_runner build --delete-conflicting-outputs
 
 ## File Structure
 
-```
+```text
 lib/
 ├── providers/
 │   └── booking_draft_provider.dart
@@ -229,4 +229,4 @@ Potential improvements for the chat booking feature:
 
 ---
 
-_End of documentation._ 
+_End of documentation._
