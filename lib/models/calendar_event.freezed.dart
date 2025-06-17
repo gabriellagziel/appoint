@@ -30,12 +30,8 @@ mixin _$CalendarEvent {
   String? get provider => throw _privateConstructorUsedError;
   String? get location => throw _privateConstructorUsedError;
 
-  /// Serializes this CalendarEvent to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of CalendarEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $CalendarEventCopyWith<CalendarEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -66,8 +62,6 @@ class _$CalendarEventCopyWithImpl<$Res, $Val extends CalendarEvent>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of CalendarEvent
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -138,8 +132,6 @@ class __$$CalendarEventImplCopyWithImpl<$Res>
       _$CalendarEventImpl _value, $Res Function(_$CalendarEventImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of CalendarEvent
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -239,14 +231,12 @@ class _$CalendarEventImpl implements _CalendarEvent {
                 other.location == location));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, id, title, startTime, endTime,
       description, provider, location);
 
-  /// Create a copy of CalendarEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$CalendarEventImplCopyWith<_$CalendarEventImpl> get copyWith =>
@@ -289,11 +279,8 @@ abstract class _CalendarEvent implements CalendarEvent {
   String? get provider;
   @override
   String? get location;
-
-  /// Create a copy of CalendarEvent
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$CalendarEventImplCopyWith<_$CalendarEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
