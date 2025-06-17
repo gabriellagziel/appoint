@@ -63,7 +63,7 @@ import 'app_localizations_he.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -86,16 +86,16 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
-    Locale('he'),
+    Locale('he')
   ];
 
   /// The title of the application
@@ -139,6 +139,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Next'**
   String get next;
+
+  /// Label for WhatsApp share button
+  ///
+  /// In en, this message translates to:
+  /// **'Share on WhatsApp'**
+  String get shareOnWhatsApp;
+
+  /// Title for meeting invitation sharing section
+  ///
+  /// In en, this message translates to:
+  /// **'Share your meeting invitation:'**
+  String get shareMeetingInvitation;
+
+  /// Message shown in WhatsApp share dialog
+  ///
+  /// In en, this message translates to:
+  /// **'The meeting is ready! Would you like to send it to your group?'**
+  String get meetingReadyMessage;
+
+  /// Hint text for message customization
+  ///
+  /// In en, this message translates to:
+  /// **'Customize your message...'**
+  String get customizeMessage;
+
+  /// Label for group recognition checkbox
+  ///
+  /// In en, this message translates to:
+  /// **'Save group for future recognition'**
+  String get saveGroupForRecognition;
+
+  /// Label for group name input field
+  ///
+  /// In en, this message translates to:
+  /// **'Group Name (optional)'**
+  String get groupNameOptional;
+
+  /// Hint text for group name input
+  ///
+  /// In en, this message translates to:
+  /// **'Enter group name for recognition'**
+  String get enterGroupName;
+
+  /// Message shown when a known group is detected
+  ///
+  /// In en, this message translates to:
+  /// **'Known group detected'**
+  String get knownGroupDetected;
+
+  /// Success message when meeting is shared
+  ///
+  /// In en, this message translates to:
+  /// **'Meeting shared successfully!'**
+  String get meetingSharedSuccessfully;
+
+  /// Message shown after booking confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Booking confirmed! You can now share the invitation.'**
+  String get bookingConfirmedShare;
+
+  /// Default message for WhatsApp sharing
+  ///
+  /// In en, this message translates to:
+  /// **'Hey! I\'ve scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:'**
+  String get defaultShareMessage;
 }
 
 class _AppLocalizationsDelegate
@@ -168,9 +234,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }
