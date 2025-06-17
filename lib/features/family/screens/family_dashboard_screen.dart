@@ -5,7 +5,6 @@ import '../../../providers/auth_provider.dart';
 import '../../../providers/user_profile_provider.dart';
 import '../../../models/family_link.dart';
 import '../../../models/privacy_request.dart';
-import '../../../services/family_service.dart';
 
 class FamilyDashboardScreen extends ConsumerWidget {
   const FamilyDashboardScreen({Key? key}) : super(key: key);
