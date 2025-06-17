@@ -80,6 +80,13 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            // Chat Booking Button
+            ElevatedButton.icon(
+              onPressed: () => Navigator.pushNamed(context, '/chat-booking'),
+              icon: const Icon(Icons.chat_bubble_outline),
+              label: const Text('Book via Chat'),
+            ),
+            const SizedBox(height: 16),
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
