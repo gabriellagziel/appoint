@@ -1,5 +1,6 @@
 // Replace with the real file & widget name for your app's entrypoint
 import 'package:appoint/main.dart';
+import 'package:appoint/services/custom_deep_link_service.dart';
 
 // Flutter widgets & material controls
 import 'package:flutter/material.dart';
@@ -7,8 +8,11 @@ import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('OTP flow: send and verify code', (tester) async {
+    // Create a mock deep link service for testing
+    final deepLinkService = CustomDeepLinkService();
+
     // Replace `MyApp` with your actual root widget class:
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(MyApp(deepLinkService: deepLinkService));
 
     // Navigate to OTP screen
     await tester.tap(find.text('Select Minor'));
