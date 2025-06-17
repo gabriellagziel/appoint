@@ -138,7 +138,7 @@ void main() {
       container = ProviderContainer(
         overrides: [
           familyServiceProvider.overrideWithValue(mockFamilyService),
-          authStateProvider.overrideWithProvider(fakeAuthStateProvider),
+          authStateProvider.overrideWith((ref) async => fakeAuthUser),
         ],
       );
     });
@@ -213,8 +213,8 @@ void main() {
       final notifier =
           container.read(familyLinksProvider('test-parent-id').notifier);
 
-      // Wait for the initial load
-      await Future.delayed(const Duration(milliseconds: 100));
+      // Trigger a load using the notifier
+      await notifier.loadLinks();
 
       final state = container.read(familyLinksProvider('test-parent-id'));
 
