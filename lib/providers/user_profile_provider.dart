@@ -20,3 +20,8 @@ final currentUserProfileProvider = StreamProvider<UserProfile?>((ref) {
     error: (_, __) => const Stream.empty(),
   );
 });
+
+final userProfileProvider =
+    FutureProvider.family<UserProfile?, String>((ref, uid) {
+  return ref.read(userProfileServiceProvider).getProfile(uid);
+});
