@@ -4,6 +4,7 @@ import '../../models/booking.dart';
 import 'services/booking_service.dart';
 import '../../providers/auth_provider.dart';
 import '../selection/providers/selection_provider.dart';
+import '../../providers/minor_parent_provider.dart';
 
 class BookingRequestScreen extends ConsumerStatefulWidget {
   const BookingRequestScreen({super.key});
@@ -69,6 +70,12 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final verified = ref.watch(minorParentProvider)?.isVerified ?? false;
+    if (!verified) {
+      Future.microtask(() =>
+          Navigator.pushNamed(context, '/select-minor'));
+      return const SizedBox.shrink();
+    }
     final staffId = ref.watch(staffSelectionProvider);
     final serviceId = ref.watch(serviceSelectionProvider);
     final dateTime = ref.watch(selectedSlotProvider);
