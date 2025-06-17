@@ -24,12 +24,8 @@ mixin _$Tmp {
   @JsonKey(fromJson: _fromJson, toJson: _toJson)
   DateTime get time => throw _privateConstructorUsedError;
 
-  /// Serializes this Tmp to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Tmp
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $TmpCopyWith<Tmp> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -52,8 +48,6 @@ class _$TmpCopyWithImpl<$Res, $Val extends Tmp> implements $TmpCopyWith<$Res> {
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Tmp
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -90,8 +84,6 @@ class __$$TmpImplCopyWithImpl<$Res> extends _$TmpCopyWithImpl<$Res, _$TmpImpl>
   __$$TmpImplCopyWithImpl(_$TmpImpl _value, $Res Function(_$TmpImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Tmp
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -141,13 +133,11 @@ class _$TmpImpl implements _Tmp {
             (identical(other.time, time) || other.time == time));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, id, time);
 
-  /// Create a copy of Tmp
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$TmpImplCopyWith<_$TmpImpl> get copyWith =>
@@ -174,11 +164,8 @@ abstract class _Tmp implements Tmp {
   @override
   @JsonKey(fromJson: _fromJson, toJson: _toJson)
   DateTime get time;
-
-  /// Create a copy of Tmp
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$TmpImplCopyWith<_$TmpImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

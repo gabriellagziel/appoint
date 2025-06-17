@@ -27,12 +27,8 @@ mixin _$BookingModel {
   DateTime get startTime => throw _privateConstructorUsedError;
   DateTime get endTime => throw _privateConstructorUsedError;
 
-  /// Serializes this BookingModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of BookingModel
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $BookingModelCopyWith<BookingModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -62,8 +58,6 @@ class _$BookingModelCopyWithImpl<$Res, $Val extends BookingModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of BookingModel
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -128,8 +122,6 @@ class __$$BookingModelImplCopyWithImpl<$Res>
       _$BookingModelImpl _value, $Res Function(_$BookingModelImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of BookingModel
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -216,14 +208,12 @@ class _$BookingModelImpl implements _BookingModel {
             (identical(other.endTime, endTime) || other.endTime == endTime));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType, id, userId, staffId, serviceId, startTime, endTime);
 
-  /// Create a copy of BookingModel
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$BookingModelImplCopyWith<_$BookingModelImpl> get copyWith =>
@@ -261,11 +251,8 @@ abstract class _BookingModel implements BookingModel {
   DateTime get startTime;
   @override
   DateTime get endTime;
-
-  /// Create a copy of BookingModel
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$BookingModelImplCopyWith<_$BookingModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

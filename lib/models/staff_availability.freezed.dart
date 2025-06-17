@@ -25,12 +25,8 @@ mixin _$StaffAvailability {
   DateTime get date => throw _privateConstructorUsedError;
   List<String>? get availableSlots => throw _privateConstructorUsedError;
 
-  /// Serializes this StaffAvailability to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of StaffAvailability
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $StaffAvailabilityCopyWith<StaffAvailability> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -57,8 +53,6 @@ class _$StaffAvailabilityCopyWithImpl<$Res, $Val extends StaffAvailability>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of StaffAvailability
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -105,8 +99,6 @@ class __$$StaffAvailabilityImplCopyWithImpl<$Res>
       $Res Function(_$StaffAvailabilityImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of StaffAvailability
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -174,14 +166,12 @@ class _$StaffAvailabilityImpl implements _StaffAvailability {
                 .equals(other._availableSlots, _availableSlots));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, staffId, date,
       const DeepCollectionEquality().hash(_availableSlots));
 
-  /// Create a copy of StaffAvailability
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$StaffAvailabilityImplCopyWith<_$StaffAvailabilityImpl> get copyWith =>
@@ -212,11 +202,8 @@ abstract class _StaffAvailability implements StaffAvailability {
   DateTime get date;
   @override
   List<String>? get availableSlots;
-
-  /// Create a copy of StaffAvailability
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$StaffAvailabilityImplCopyWith<_$StaffAvailabilityImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
