@@ -35,12 +35,8 @@ mixin _$Booking {
   @DateTimeConverter()
   DateTime? get createdAt => throw _privateConstructorUsedError;
 
-  /// Serializes this Booking to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-
-  /// Create a copy of Booking
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   $BookingCopyWith<Booking> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -72,8 +68,6 @@ class _$BookingCopyWithImpl<$Res, $Val extends Booking>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Booking
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -161,8 +155,6 @@ class __$$BookingImplCopyWithImpl<$Res>
       _$BookingImpl _value, $Res Function(_$BookingImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Booking
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -295,14 +287,12 @@ class _$BookingImpl implements _Booking {
                 other.createdAt == createdAt));
   }
 
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, id, userId, staffId, serviceId,
       serviceName, dateTime, duration, notes, isConfirmed, createdAt);
 
-  /// Create a copy of Booking
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$BookingImplCopyWith<_$BookingImpl> get copyWith =>
@@ -357,11 +347,8 @@ abstract class _Booking implements Booking {
   @override
   @DateTimeConverter()
   DateTime? get createdAt;
-
-  /// Create a copy of Booking
-  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @JsonKey(ignore: true)
   _$$BookingImplCopyWith<_$BookingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
