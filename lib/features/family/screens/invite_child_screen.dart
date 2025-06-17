@@ -2,14 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../providers/otp_provider.dart';
 import '../../../providers/family_provider.dart';
+import '../../../providers/auth_provider.dart';
 import '../widgets/otp_entry_modal.dart';
-
-// TODO: Replace with your actual auth provider
-final authProvider = Provider((ref) => _FakeAuth());
-
-class _FakeAuth {
-  String get userId => 'parentId';
-}
 
 class InviteChildScreen extends ConsumerStatefulWidget {
   const InviteChildScreen({Key? key}) : super(key: key);
@@ -28,9 +22,14 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
   }
 
   Future<void> _onSendInvite() async {
-    final parentId = ref.read(authProvider).userId;
+    final authState = ref.read(authStateProvider);
+    final user = await authState.maybeWhen(
+      data: (user) => user,
+      orElse: () => null,
+    );
+    final parentId = user?.uid;
     final contact = _contactController.text.trim();
-    if (contact.isEmpty) {
+    if (contact.isEmpty || parentId == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Please enter a valid email or phone')),
       );
@@ -49,12 +48,10 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final otpState = ref.watch(otpProvider);
-
     return Scaffold(
-      appBar: AppBar(title: const Text('Invite a Child')),
+      appBar: AppBar(title: const Text('Invite Child')),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
             TextField(
@@ -62,14 +59,11 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
               decoration:
                   const InputDecoration(labelText: 'Child Email or Phone'),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 16),
             ElevatedButton(
-                onPressed: _onSendInvite, child: const Text('Send Invite')),
-            if (otpState == OtpState.error) ...[
-              const SizedBox(height: 12),
-              const Text('Something went wrong. Please try again.',
-                  style: TextStyle(color: Colors.red)),
-            ]
+              onPressed: _onSendInvite,
+              child: const Text('Send Invite'),
+            ),
           ],
         ),
       ),
