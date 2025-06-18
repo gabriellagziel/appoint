@@ -249,7 +249,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
     return Chip(
       label: Text(text),
-      backgroundColor: color.withValues(alpha: 0.2),
+      backgroundColor: color.withOpacity(0.2),
       labelStyle: TextStyle(color: color),
     );
   }

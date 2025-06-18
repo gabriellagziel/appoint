@@ -12,7 +12,7 @@ late MockFirebaseAuth mockAuth;
 void main() {
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    registerFirebaseMock();
+    await registerFirebaseMock();
     mockAuth = MockFirebaseAuth();
   });
 

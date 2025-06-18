@@ -13,7 +13,7 @@ class MockCollectionReference extends Mock
 void main() {
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    registerFirebaseMock();
+    await registerFirebaseMock();
   });
 
   group('BookingService', () {
