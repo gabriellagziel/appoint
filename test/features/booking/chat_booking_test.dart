@@ -15,7 +15,7 @@ late MockFirebaseFirestore mockFirestore;
 void main() {
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    registerFirebaseMock();
+    await registerFirebaseMock();
     mockFirestore = MockFirebaseFirestore();
     bookingService = BookingService(firestore: mockFirestore);
   });
