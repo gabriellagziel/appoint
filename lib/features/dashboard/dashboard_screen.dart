@@ -1,82 +1,54 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import '../../providers/dashboard_provider.dart';
+import '../../l10n/app_localizations.dart';
 
 class DashboardScreen extends ConsumerWidget {
-  const DashboardScreen({Key? key}) : super(key: key);
+  const DashboardScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context)!;
     final statsAsync = ref.watch(dashboardStatsProvider);
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Dashboard')),
+      appBar: AppBar(title: Text(l10n.dashboard)),
       body: statsAsync.when(
         data: (stats) {
-          final cards = [
-            _StatCard(
-              title: 'Total Appointments',
-              value: stats.totalAppointments.toString(),
+          return Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              children: [
+                Card(
+                  child: ListTile(
+                    title: Text('Total Appointments'),
+                    subtitle: Text('${stats.totalAppointments}'),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    title: Text('Completed Appointments'),
+                    subtitle: Text('${stats.completedAppointments}'),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    title: Text('Pending Invites'),
+                    subtitle: Text('${stats.pendingInvites}'),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    title: Text('Revenue'),
+                    subtitle: Text('\$${stats.revenue.toStringAsFixed(2)}'),
+                  ),
+                ),
+              ],
             ),
-            _StatCard(
-              title: 'Completed Appointments',
-              value: stats.completedAppointments.toString(),
-            ),
-            _StatCard(
-              title: 'Pending Invites',
-              value: stats.pendingInvites.toString(),
-            ),
-            _StatCard(
-              title: 'Revenue',
-              value: '\$${stats.revenue.toStringAsFixed(2)}',
-            ),
-          ];
-          return LayoutBuilder(
-            builder: (context, constraints) {
-              final crossAxisCount = constraints.maxWidth > 600 ? 4 : 2;
-              return GridView.count(
-                padding: const EdgeInsets.all(16),
-                crossAxisCount: crossAxisCount,
-                crossAxisSpacing: 16,
-                mainAxisSpacing: 16,
-                children: cards,
-              );
-            },
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, __) => const Center(child: Text('Error loading stats')),
-      ),
-    );
-  }
-}
-
-class _StatCard extends StatelessWidget {
-  final String title;
-  final String value;
-  const _StatCard({required this.title, required this.value});
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: Center(
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                value,
-                style: Theme.of(context).textTheme.headlineSmall,
-              ),
-              const SizedBox(height: 8),
-              Text(
-                title,
-                textAlign: TextAlign.center,
-              ),
-            ],
-          ),
-        ),
+        error: (_, __) => Center(child: Text('Error loading stats')),
       ),
     );
   }

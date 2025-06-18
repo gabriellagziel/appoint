@@ -4,10 +4,16 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/family_link.dart';
 import '../models/permission.dart';
 import '../models/privacy_request.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class FamilyService {
-  final _base = 'https://api.yourapp.com/api/v1/family';
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final String _base = 'https://api.yourapp.com/api/v1/family';
+  final FirebaseFirestore _firestore;
+  final FirebaseAuth _auth;
+
+  FamilyService({FirebaseFirestore? firestore, FirebaseAuth? auth})
+      : _firestore = firestore ?? FirebaseFirestore.instance,
+        _auth = auth ?? FirebaseAuth.instance;
 
   Future<FamilyLink> inviteChild(String parentId, String childEmail) async {
     final resp = await http.post(

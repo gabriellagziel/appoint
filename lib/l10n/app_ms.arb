@@ -1,0 +1,948 @@
+{
+  "@@locale": "ms",
+  "appTitle": "TODO: Appoint",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "welcome": "TODO: Welcome",
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "home": "TODO: Home",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "menu": "TODO: Menu",
+  "@menu": {
+    "description": "Menu navigation label"
+  },
+  "profile": "TODO: Profile",
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "signOut": "TODO: Sign Out",
+  "@signOut": {
+    "description": "Sign out button label"
+  },
+  "login": "TODO: Login",
+  "@login": {
+    "description": "Login button label"
+  },
+  "email": "TODO: Email",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "TODO: Password",
+  "@password": {
+    "description": "Password field label"
+  },
+  "signIn": "TODO: Sign In",
+  "@signIn": {
+    "description": "Sign in button label"
+  },
+  "bookMeeting": "TODO: Book a Meeting",
+  "@bookMeeting": {
+    "description": "Book meeting button label"
+  },
+  "bookAppointment": "TODO: Book Appointment",
+  "@bookAppointment": {
+    "description": "Book appointment button label"
+  },
+  "bookingRequest": "TODO: Booking Request",
+  "@bookingRequest": {
+    "description": "Booking request label"
+  },
+  "confirmBooking": "TODO: Confirm Booking",
+  "@confirmBooking": {
+    "description": "Confirm booking button label"
+  },
+  "chatBooking": "TODO: Chat Booking",
+  "@chatBooking": {
+    "description": "Chat booking label"
+  },
+  "bookViaChat": "TODO: Book via Chat",
+  "@bookViaChat": {
+    "description": "Book via chat button label"
+  },
+  "submitBooking": "TODO: Submit Booking",
+  "@submitBooking": {
+    "description": "Submit booking button label"
+  },
+  "next": "TODO: Next",
+  "@next": {
+    "description": "Label for the next button"
+  },
+  "selectStaff": "TODO: Select Staff",
+  "@selectStaff": {
+    "description": "Label for staff selection dropdown"
+  },
+  "pickDate": "TODO: Pick Date",
+  "@pickDate": {
+    "description": "Label for date picker"
+  },
+  "staff": "TODO: Staff",
+  "@staff": {
+    "description": "Staff label"
+  },
+  "service": "TODO: Service",
+  "@service": {
+    "description": "Service label"
+  },
+  "dateTime": "TODO: Date & Time",
+  "@dateTime": {
+    "description": "Date and time label"
+  },
+  "duration": "TODO: Duration: {duration} minutes",
+  "@duration": {
+    "description": "Duration label with parameter",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "notSelected": "TODO: Not Selected",
+  "@notSelected": {
+    "description": "Not selected state"
+  },
+  "noSlots": "TODO: No slots available",
+  "@noSlots": {
+    "description": "Message shown when no time slots are available"
+  },
+  "bookingConfirmed": "TODO: Booking Confirmed",
+  "@bookingConfirmed": {
+    "description": "Booking confirmed message"
+  },
+  "failedToConfirmBooking": "TODO: Failed to confirm booking",
+  "@failedToConfirmBooking": {
+    "description": "Failed to confirm booking message"
+  },
+  "noBookingsFound": "TODO: No bookings found",
+  "@noBookingsFound": {
+    "description": "No bookings found message"
+  },
+  "errorLoadingBookings": "TODO: Error loading bookings: {error}",
+  "@errorLoadingBookings": {
+    "description": "Error loading bookings message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "shareOnWhatsApp": "TODO: Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Label for WhatsApp share button"
+  },
+  "shareMeetingInvitation": "TODO: Share your meeting invitation:",
+  "@shareMeetingInvitation": {
+    "description": "Title for meeting invitation sharing section"
+  },
+  "meetingReadyMessage": "TODO: The meeting is ready! Would you like to send it to your group?",
+  "@meetingReadyMessage": {
+    "description": "Message shown in WhatsApp share dialog"
+  },
+  "customizeMessage": "TODO: Customize your message...",
+  "@customizeMessage": {
+    "description": "Hint text for message customization"
+  },
+  "saveGroupForRecognition": "TODO: Save group for future recognition",
+  "@saveGroupForRecognition": {
+    "description": "Label for group recognition checkbox"
+  },
+  "groupNameOptional": "TODO: Group Name (optional)",
+  "@groupNameOptional": {
+    "description": "Label for group name input field"
+  },
+  "enterGroupName": "TODO: Enter group name for recognition",
+  "@enterGroupName": {
+    "description": "Hint text for group name input"
+  },
+  "knownGroupDetected": "TODO: Known group detected",
+  "@knownGroupDetected": {
+    "description": "Message shown when a known group is detected"
+  },
+  "meetingSharedSuccessfully": "TODO: Meeting shared successfully!",
+  "@meetingSharedSuccessfully": {
+    "description": "Success message when meeting is shared"
+  },
+  "bookingConfirmedShare": "TODO: Booking confirmed! You can now share the invitation.",
+  "@bookingConfirmedShare": {
+    "description": "Message shown after booking confirmation"
+  },
+  "defaultShareMessage": "TODO: Hey! I've scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:",
+  "@defaultShareMessage": {
+    "description": "Default message for WhatsApp sharing"
+  },
+  "dashboard": "TODO: Dashboard",
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "businessDashboard": "TODO: Business Dashboard",
+  "@businessDashboard": {
+    "description": "Business dashboard label"
+  },
+  "myProfile": "TODO: My Profile",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "noProfileFound": "TODO: No profile found",
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "errorLoadingProfile": "TODO: Error loading profile",
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "myInvites": "TODO: My Invites",
+  "@myInvites": {
+    "description": "My invites label"
+  },
+  "inviteDetail": "TODO: Invite Detail",
+  "@inviteDetail": {
+    "description": "Invite detail label"
+  },
+  "inviteContact": "TODO: Invite Contact",
+  "@inviteContact": {
+    "description": "Invite contact label"
+  },
+  "noInvites": "TODO: No invites",
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "errorLoadingInvites": "TODO: Error loading invites",
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "accept": "TODO: Accept",
+  "@accept": {
+    "description": "Accept button label"
+  },
+  "decline": "TODO: Decline",
+  "@decline": {
+    "description": "Decline button label"
+  },
+  "sendInvite": "TODO: Send Invite",
+  "@sendInvite": {
+    "description": "Send invite button label"
+  },
+  "name": "TODO: Name",
+  "@name": {
+    "description": "Name field label"
+  },
+  "phoneNumber": "TODO: Phone Number",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "emailOptional": "TODO: Email (optional)",
+  "@emailOptional": {
+    "description": "Optional email field label"
+  },
+  "requiresInstallFallback": "TODO: Requires installation",
+  "@requiresInstallFallback": {
+    "description": "Requires installation fallback message"
+  },
+  "notifications": "TODO: Notifications",
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "notificationSettings": "TODO: Notification Settings",
+  "@notificationSettings": {
+    "description": "Notification settings label"
+  },
+  "enableNotifications": "TODO: Enable Notifications",
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "errorFetchingToken": "TODO: Error fetching token",
+  "@errorFetchingToken": {
+    "description": "Error fetching token message"
+  },
+  "fcmToken": "TODO: FCM Token: {token}",
+  "@fcmToken": {
+    "description": "FCM token display",
+    "placeholders": {
+      "token": {
+        "type": "String"
+      }
+    }
+  },
+  "familyDashboard": "TODO: Family Dashboard",
+  "@familyDashboard": {
+    "description": "Family dashboard label"
+  },
+  "pleaseLoginForFamilyFeatures": "TODO: Please login to access family features",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "familyMembers": "TODO: Family Members",
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "invite": "TODO: Invite",
+  "@invite": {
+    "description": "Invite button label"
+  },
+  "pendingInvites": "TODO: Pending Invites",
+  "@pendingInvites": {
+    "description": "Pending invites label"
+  },
+  "connectedChildren": "TODO: Connected Children",
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "noFamilyMembersYet": "TODO: No family members yet. Invite someone to get started!",
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "errorLoadingFamilyLinks": "TODO: Error loading family links: {error}",
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteChild": "TODO: Invite Child",
+  "@inviteChild": {
+    "description": "Invite child button label"
+  },
+  "managePermissions": "TODO: Manage Permissions",
+  "@managePermissions": {
+    "description": "Manage permissions label"
+  },
+  "removeChild": "TODO: Remove Child",
+  "@removeChild": {
+    "description": "Remove child button label"
+  },
+  "loading": "TODO: Loading...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "childEmail": "TODO: Child Email",
+  "@childEmail": {
+    "description": "Child email field label"
+  },
+  "childEmailOrPhone": "TODO: Child Email or Phone",
+  "@childEmailOrPhone": {
+    "description": "Child email or phone field label"
+  },
+  "enterChildEmail": "TODO: Enter child email",
+  "@enterChildEmail": {
+    "description": "Enter child email hint"
+  },
+  "otpCode": "TODO: OTP Code",
+  "@otpCode": {
+    "description": "OTP code field label"
+  },
+  "enterOtp": "TODO: Enter OTP",
+  "@enterOtp": {
+    "description": "Enter OTP hint"
+  },
+  "verify": "TODO: Verify",
+  "@verify": {
+    "description": "Verify button label"
+  },
+  "otpResentSuccessfully": "TODO: OTP resent successfully!",
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "failedToResendOtp": "TODO: Failed to resend OTP: {error}",
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "childLinkedSuccessfully": "TODO: Child linked successfully!",
+  "@childLinkedSuccessfully": {
+    "description": "Child linked successfully message"
+  },
+  "invitationSentSuccessfully": "TODO: Invitation sent successfully!",
+  "@invitationSentSuccessfully": {
+    "description": "Invitation sent successfully message"
+  },
+  "failedToSendInvitation": "TODO: Failed to send invitation: {error}",
+  "@failedToSendInvitation": {
+    "description": "Failed to send invitation message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "pleaseEnterValidEmail": "TODO: Please enter a valid email",
+  "@pleaseEnterValidEmail": {
+    "description": "Please enter valid email message"
+  },
+  "pleaseEnterValidEmailOrPhone": "TODO: Please enter a valid email or phone",
+  "@pleaseEnterValidEmailOrPhone": {
+    "description": "Please enter valid email or phone message"
+  },
+  "invalidCode": "TODO: Invalid code, please try again",
+  "@invalidCode": {
+    "description": "Invalid code message"
+  },
+  "cancelInvite": "TODO: Cancel Invite",
+  "@cancelInvite": {
+    "description": "Cancel invite button label"
+  },
+  "cancelInviteConfirmation": "TODO: Are you sure you want to cancel this invite?",
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "no": "TODO: No",
+  "@no": {
+    "description": "No button label"
+  },
+  "yesCancel": "TODO: Yes, Cancel",
+  "@yesCancel": {
+    "description": "Yes cancel button label"
+  },
+  "inviteCancelledSuccessfully": "TODO: Invite cancelled successfully!",
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "failedToCancelInvite": "TODO: Failed to cancel invite: {error}",
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "revokeAccess": "TODO: Revoke Access",
+  "@revokeAccess": {
+    "description": "Revoke access button label"
+  },
+  "revokeAccessConfirmation": "TODO: Are you sure you want to revoke access for this child? This action cannot be undone.",
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "revoke": "TODO: Revoke",
+  "@revoke": {
+    "description": "Revoke button label"
+  },
+  "accessRevokedSuccessfully": "TODO: Access revoked successfully!",
+  "@accessRevokedSuccessfully": {
+    "description": "Access revoked successfully message"
+  },
+  "failedToRevokeAccess": "TODO: Failed to revoke access: {error}",
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "grantConsent": "TODO: Grant Consent",
+  "@grantConsent": {
+    "description": "Grant consent button label"
+  },
+  "revokeConsent": "TODO: Revoke Consent",
+  "@revokeConsent": {
+    "description": "Revoke consent button label"
+  },
+  "consentGrantedSuccessfully": "TODO: Consent granted successfully!",
+  "@consentGrantedSuccessfully": {
+    "description": "Consent granted successfully message"
+  },
+  "consentRevokedSuccessfully": "TODO: Consent revoked successfully!",
+  "@consentRevokedSuccessfully": {
+    "description": "Consent revoked successfully message"
+  },
+  "failedToUpdateConsent": "TODO: Failed to update consent: {error}",
+  "@failedToUpdateConsent": {
+    "description": "Failed to update consent message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "checkingPermissions": "TODO: Checking permissions...",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "cancel": "TODO: Cancel",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "close": "TODO: Close",
+  "@close": {
+    "description": "Close button label"
+  },
+  "save": "TODO: Save",
+  "@save": {
+    "description": "Save button label"
+  },
+  "sendNow": "TODO: Send Now",
+  "@sendNow": {
+    "description": "Send now button label"
+  },
+  "details": "TODO: Details",
+  "@details": {
+    "description": "Details button label"
+  },
+  "noBroadcastMessages": "TODO: No broadcast messages yet",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "errorCheckingPermissions": "TODO: Error checking permissions: {error}",
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mediaOptional": "TODO: Media (Optional)",
+  "@mediaOptional": {
+    "description": "Media optional section title"
+  },
+  "pickImage": "TODO: Pick Image",
+  "@pickImage": {
+    "description": "Pick image button label"
+  },
+  "pickVideo": "TODO: Pick Video",
+  "@pickVideo": {
+    "description": "Pick video button label"
+  },
+  "pollOptions": "TODO: Poll Options:",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "targetingFilters": "TODO: Targeting Filters",
+  "@targetingFilters": {
+    "description": "Targeting filters section title"
+  },
+  "scheduling": "TODO: Scheduling",
+  "@scheduling": {
+    "description": "Scheduling section title"
+  },
+  "scheduleForLater": "TODO: Schedule for later",
+  "@scheduleForLater": {
+    "description": "Schedule for later option"
+  },
+  "errorEstimatingRecipients": "TODO: Error estimating recipients: {error}",
+  "@errorEstimatingRecipients": {
+    "description": "Error estimating recipients message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingImage": "TODO: Error picking image: {error}",
+  "@errorPickingImage": {
+    "description": "Error picking image message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingVideo": "TODO: Error picking video: {error}",
+  "@errorPickingVideo": {
+    "description": "Error picking video message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noPermissionForBroadcast": "TODO: You do not have permission to create broadcast messages.",
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "messageSavedSuccessfully": "TODO: Message saved successfully",
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "errorSavingMessage": "TODO: Error saving message: {error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "messageSentSuccessfully": "TODO: Message sent successfully",
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "errorSendingMessage": "TODO: Error sending message: {error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "content": "TODO: Content: {content}",
+  "@content": {
+    "description": "Content display",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "type": "TODO: Type: {type}",
+  "@type": {
+    "description": "Type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "link": "TODO: Link: {link}",
+  "@link": {
+    "description": "Link display",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "status": "TODO: Status: {status}",
+  "@status": {
+    "description": "Status display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "recipients": "TODO: Recipients: {count}",
+  "@recipients": {
+    "description": "Recipients display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "opened": "TODO: Opened: {count}",
+  "@opened": {
+    "description": "Opened count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "clicked": "TODO: Clicked: {count}",
+  "@clicked": {
+    "description": "Clicked count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "created": "TODO: Created: {date}",
+  "@created": {
+    "description": "Created date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduled": "TODO: Scheduled: {date}",
+  "@scheduled": {
+    "description": "Scheduled date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "organizations": "TODO: Organizations",
+  "@organizations": {
+    "description": "Organizations screen title"
+  },
+  "noOrganizations": "TODO: No organizations",
+  "@noOrganizations": {
+    "description": "No organizations message"
+  },
+  "errorLoadingOrganizations": "TODO: Error loading organizations",
+  "@errorLoadingOrganizations": {
+    "description": "Error loading organizations message"
+  },
+  "members": "TODO: {count} members",
+  "@members": {
+    "description": "Members count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "users": "TODO: Users",
+  "@users": {
+    "description": "Users screen title"
+  },
+  "noUsers": "TODO: No users",
+  "@noUsers": {
+    "description": "No users message"
+  },
+  "errorLoadingUsers": "TODO: Error loading users",
+  "@errorLoadingUsers": {
+    "description": "Error loading users message"
+  },
+  "changeRole": "TODO: Change Role",
+  "@changeRole": {
+    "description": "Change role button label"
+  },
+  "totalAppointments": "TODO: Total Appointments",
+  "@totalAppointments": {
+    "description": "Total appointments label"
+  },
+  "completedAppointments": "TODO: Completed Appointments",
+  "@completedAppointments": {
+    "description": "Completed appointments label"
+  },
+  "revenue": "TODO: Revenue",
+  "@revenue": {
+    "description": "Revenue label"
+  },
+  "errorLoadingStats": "TODO: Error loading stats",
+  "@errorLoadingStats": {
+    "description": "Error loading stats message"
+  },
+  "appointment": "TODO: Appointment: {id}",
+  "@appointment": {
+    "description": "Appointment display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "from": "TODO: From: {name}",
+  "@from": {
+    "description": "From display",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "phone": "TODO: Phone: {number}",
+  "@phone": {
+    "description": "Phone display",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "noRouteDefined": "TODO: No route defined for {route}",
+  "@noRouteDefined": {
+    "description": "No route defined message",
+    "placeholders": {
+      "route": {
+        "type": "String"
+      }
+    }
+  },
+  "meetingDetails": "TODO: Meeting Details",
+  "@meetingDetails": {
+    "description": "Meeting details title"
+  },
+  "meetingId": "TODO: Meeting ID: {id}",
+  "@meetingId": {
+    "description": "Meeting ID display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "creator": "TODO: Creator: {id}",
+  "@creator": {
+    "description": "Creator display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "context": "TODO: Context: {id}",
+  "@context": {
+    "description": "Context display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "group": "TODO: Group: {id}",
+  "@group": {
+    "description": "Group display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "requestPrivateSession": "TODO: Request Private Session",
+  "@requestPrivateSession": {
+    "description": "Request private session button label"
+  },
+  "privacyRequestSent": "TODO: Privacy request sent to your parents!",
+  "@privacyRequestSent": {
+    "description": "Privacy request sent message"
+  },
+  "failedToSendPrivacyRequest": "TODO: Failed to send privacy request: {error}",
+  "@failedToSendPrivacyRequest": {
+    "description": "Failed to send privacy request message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPrivacyRequests": "TODO: Error loading privacy requests: {error}",
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "requestType": "TODO: {type} Request",
+  "@requestType": {
+    "description": "Request type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "statusColon": "TODO: Status: {status}",
+  "@statusColon": {
+    "description": "Status with colon display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToActionPrivacyRequest": "TODO: Failed to {action} privacy request: {error}",
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message",
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "yes": "TODO: Yes",
+  "@yes": {
+    "description": "Yes button label"
+  },
+  "send": "TODO: Send",
+  "@send": {
+    "description": "Send button label"
+  },
+  "permissions": "TODO: Permissions",
+  "@permissions": {
+    "description": "Permissions label"
+  },
+  "permissionsFor": "TODO: Permissions - {childId}",
+  "@permissionsFor": {
+    "description": "Permissions for child label",
+    "placeholders": {
+      "childId": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPermissions": "TODO: Error loading permissions: {error}",
+  "@errorLoadingPermissions": {
+    "description": "Error loading permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "none": "TODO: None",
+  "@none": {
+    "description": "None option"
+  },
+  "readOnly": "TODO: Read Only",
+  "@readOnly": {
+    "description": "Read only option"
+  },
+  "readWrite": "TODO: Read & Write",
+  "@readWrite": {
+    "description": "Read and write option"
+  },
+  "permissionUpdated": "TODO: Permission {category} updated to {newValue}",
+  "@permissionUpdated": {
+    "description": "Permission updated message",
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "newValue": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdatePermission": "TODO: Failed to update permission: {error}",
+  "@failedToUpdatePermission": {
+    "description": "Failed to update permission message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "invited": "TODO: Invited: {date}",
+  "@invited": {
+    "description": "Invited date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adminBroadcast": "TODO: Admin Broadcast",
+  "@adminBroadcast": {
+    "description": "Admin broadcast screen title"
+  },
+  "composeBroadcastMessage": "TODO: Compose Broadcast Message",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message dialog title"
+  },
+  "adminScreenTBD": "TODO: Admin Screen - To Be Developed",
+  "@adminScreenTBD": {
+    "description": "Admin screen placeholder"
+  },
+  "staffScreenTBD": "TODO: Staff Screen - To Be Developed",
+  "@staffScreenTBD": {
+    "description": "Staff screen placeholder"
+  },
+  "clientScreenTBD": "TODO: Client Screen - To Be Developed",
+  "@clientScreenTBD": {
+    "description": "Client screen placeholder"
+  }
+}
