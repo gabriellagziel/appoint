@@ -1,13 +1,62 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/services/whatsapp_share_service.dart';
 import 'package:appoint/models/smart_share_link.dart';
+import './test_setup.dart';
+import 'package:mockito/mockito.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+
+class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
+
+class MockFirebaseAnalytics extends Mock implements FirebaseAnalytics {}
+
+class MockCollectionReference extends Mock
+    implements CollectionReference<Map<String, dynamic>> {}
 
 void main() {
+  setUpAll(() async {
+    TestWidgetsFlutterBinding.ensureInitialized();
+    registerFirebaseMock();
+  });
+
   group('WhatsApp Share Service Tests', () {
     late WhatsAppShareService service;
+    late MockFirebaseFirestore mockFirestore;
+    late MockFirebaseAnalytics mockAnalytics;
 
     setUp(() {
-      service = WhatsAppShareService();
+      mockFirestore = MockFirebaseFirestore();
+      mockAnalytics = MockFirebaseAnalytics();
+      when(mockFirestore.collection('appointments'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('users'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('admin_broadcasts'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('share_analytics'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('group_recognition'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('invites'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('payments'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('organizations'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('analytics'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('family_links'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('family_analytics'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('privacy_requests'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('calendar_events'))
+          .thenReturn(MockCollectionReference());
+      when(mockFirestore.collection('callRequests'))
+          .thenReturn(MockCollectionReference());
+      service = WhatsAppShareService(
+          firestore: mockFirestore, analytics: mockAnalytics);
     });
 
     test('should instantiate WhatsAppShareService', () {

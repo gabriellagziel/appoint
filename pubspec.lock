@@ -273,6 +273,46 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.1"
+  file_picker:
+    dependency: "direct main"
+    description:
+      name: file_picker
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.2.1"
+  file_selector_linux:
+    dependency: transitive
+    description:
+      name: file_selector_linux
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.9.3+2"
+  file_selector_macos:
+    dependency: transitive
+    description:
+      name: file_selector_macos
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.9.4+3"
+  REDACTED_TOKEN:
+    dependency: transitive
+    description:
+      name: REDACTED_TOKEN
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.6.2"
+  file_selector_windows:
+    dependency: transitive
+    description:
+      name: file_selector_windows
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.9.3+4"
   firebase_analytics:
     dependency: "direct main"
     description:
@@ -369,6 +409,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.8.7"
+  firebase_storage:
+    dependency: "direct main"
+    description:
+      name: firebase_storage
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "11.7.7"
+  REDACTED_TOKEN:
+    dependency: transitive
+    description:
+      name: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.1.22"
+  firebase_storage_web:
+    dependency: transitive
+    description:
+      name: firebase_storage_web
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.9.7"
   fixnum:
     dependency: transitive
     description:
@@ -395,6 +459,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  REDACTED_TOKEN:
+    dependency: transitive
+    description:
+      name: REDACTED_TOKEN
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.28"
   flutter_riverpod:
     dependency: "direct main"
     description:
@@ -493,6 +565,70 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.2"
+  image_picker:
+    dependency: "direct main"
+    description:
+      name: image_picker
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.2"
+  image_picker_android:
+    dependency: transitive
+    description:
+      name: image_picker_android
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.8.12+23"
+  image_picker_for_web:
+    dependency: transitive
+    description:
+      name: image_picker_for_web
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.6"
+  image_picker_ios:
+    dependency: transitive
+    description:
+      name: image_picker_ios
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.8.12+2"
+  image_picker_linux:
+    dependency: transitive
+    description:
+      name: image_picker_linux
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.1+2"
+  image_picker_macos:
+    dependency: transitive
+    description:
+      name: image_picker_macos
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.1+2"
+  image_picker_platform_interface:
+    dependency: transitive
+    description:
+      name: image_picker_platform_interface
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.10.1"
+  image_picker_windows:
+    dependency: transitive
+    description:
+      name: image_picker_windows
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.1+1"
   intl:
     dependency: "direct main"
     description:
@@ -597,6 +733,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
+  mockito:
+    dependency: "direct dev"
+    description:
+      name: mockito
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.4.4"
+  mocktail:
+    dependency: "direct dev"
+    description:
+      name: mocktail
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.4"
   nested:
     dependency: transitive
     description:
