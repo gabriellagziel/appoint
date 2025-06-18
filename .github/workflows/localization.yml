@@ -1,0 +1,93 @@
+name: Localization CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  localization_validation:
+    name: Localization Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.3.0'
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install cspell
+        run: npm install -g cspell
+      
+      - name: Get Flutter dependencies
+        run: flutter pub get
+      
+      - name: Validate ARB files structure
+        run: |
+          echo "Checking ARB files structure..."
+          for file in lib/l10n/app_*.arb; do
+            if [ ! -f "$file" ]; then
+              echo "❌ Missing ARB file: $file"
+              exit 1
+            fi
+            echo "✅ Found: $file"
+          done
+          
+          # Check that all ARB files have the same number of keys
+          en_keys=$(grep -c '^  "' lib/l10n/app_en.arb)
+          echo "English ARB has $en_keys keys"
+          
+          for file in lib/l10n/app_*.arb; do
+            if [ "$file" != "lib/l10n/app_en.arb" ]; then
+              key_count=$(grep -c '^  "' "$file")
+              if [ "$key_count" -ne "$en_keys" ]; then
+                echo "❌ $file has $key_count keys, expected $en_keys"
+                exit 1
+              fi
+              echo "✅ $file has correct key count: $key_count"
+            fi
+          done
+      
+      - name: Generate localizations
+        run: flutter gen-l10n
+      
+      - name: Verify generated files
+        run: |
+          echo "Checking generated localization files..."
+          expected_count=32
+          actual_count=$(ls lib/l10n/app_localizations_*.dart | wc -l)
+          
+          if [ "$actual_count" -ne "$expected_count" ]; then
+            echo "❌ Expected $expected_count generated files, found $actual_count"
+            exit 1
+          fi
+          echo "✅ Generated $actual_count localization files"
+      
+      - name: Flutter analyze
+        run: flutter analyze
+      
+      - name: Spell check ARB files
+        run: |
+          echo "Running spell check on ARB files..."
+          npx cspell "lib/l10n/app_*.arb" --no-progress
+      
+      - name: Generate TODO list
+        run: |
+          echo "Generating TODO list for translations..."
+          grep -R "TODO:" lib/l10n/app_*.arb > todo_list.txt
+          echo "Found $(wc -l < todo_list.txt) TODO items"
+          cat todo_list.txt
+      
+      - name: Upload TODO list as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: translation-todos
+          path: todo_list.txt 
