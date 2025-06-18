@@ -5,7 +5,10 @@ import '../models/organization.dart';
 import '../models/analytics.dart';
 
 class AdminService {
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
+
+  AdminService({FirebaseFirestore? firestore})
+      : _firestore = firestore ?? FirebaseFirestore.instance;
 
   Future<List<AdminUser>> fetchAllUsers() async {
     final snap = await _firestore.collection('users').get();

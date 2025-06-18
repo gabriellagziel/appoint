@@ -5,6 +5,7 @@ import '../../../providers/auth_provider.dart';
 import '../../../providers/user_profile_provider.dart';
 import '../../../models/family_link.dart';
 import '../../../models/privacy_request.dart';
+import '../../../l10n/app_localizations.dart';
 
 class FamilyDashboardScreen extends ConsumerWidget {
   const FamilyDashboardScreen({Key? key}) : super(key: key);
@@ -12,13 +13,13 @@ class FamilyDashboardScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final authState = ref.watch(authStateProvider);
+    final l10n = AppLocalizations.of(context)!;
 
     return authState.when(
       data: (user) {
         if (user == null) {
-          return const Scaffold(
-            body:
-                Center(child: Text('Please log in to access family features')),
+          return Scaffold(
+            body: Center(child: Text(l10n.pleaseLoginForFamilyFeatures)),
           );
         }
 
@@ -27,7 +28,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
         return Scaffold(
           appBar: AppBar(
-            title: const Text('Family Dashboard'),
+            title: Text(l10n.familyDashboard),
             actions: [
               IconButton(
                 icon: const Icon(Icons.person_add),
@@ -69,6 +70,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
     FamilyLinksState familyLinksState,
     String parentId,
   ) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -78,9 +81,9 @@ class FamilyDashboardScreen extends ConsumerWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text(
-                  'Family Members',
-                  style: TextStyle(
+                Text(
+                  l10n.familyMembers,
+                  style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
@@ -89,7 +92,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
                   onPressed: () =>
                       Navigator.of(context).pushNamed('/family/invite'),
                   icon: const Icon(Icons.add),
-                  label: const Text('Invite'),
+                  label: Text(l10n.invite),
                 ),
               ],
             ),
@@ -99,33 +102,33 @@ class FamilyDashboardScreen extends ConsumerWidget {
             else if (familyLinksState.error != null)
               Center(
                 child: Text(
-                  'Error loading family links: ${familyLinksState.error}',
+                  l10n.errorLoadingFamilyLinks(familyLinksState.error!),
                   style: const TextStyle(color: Colors.red),
                 ),
               )
             else ...[
               if (familyLinksState.pendingInvites.isNotEmpty) ...[
-                _buildSectionHeader('Pending Invites'),
+                _buildSectionHeader(l10n.pendingInvites),
                 const SizedBox(height: 8),
                 ...familyLinksState.pendingInvites
                     .map((link) => _buildPendingInviteCard(context, ref, link)),
                 const SizedBox(height: 16),
               ],
               if (familyLinksState.connectedChildren.isNotEmpty) ...[
-                _buildSectionHeader('Connected Children'),
+                _buildSectionHeader(l10n.connectedChildren),
                 const SizedBox(height: 8),
                 ...familyLinksState.connectedChildren.map(
                     (link) => _buildConnectedChildCard(context, ref, link)),
               ],
               if (familyLinksState.pendingInvites.isEmpty &&
                   familyLinksState.connectedChildren.isEmpty)
-                const Center(
+                Center(
                   child: Padding(
-                    padding: EdgeInsets.all(32),
+                    padding: const EdgeInsets.all(32),
                     child: Text(
-                      'No family members yet. Invite someone to get started!',
+                      l10n.noFamilyMembersYet,
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.grey),
+                      style: const TextStyle(color: Colors.grey),
                     ),
                   ),
                 ),
@@ -152,6 +155,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
     WidgetRef ref,
     FamilyLink link,
   ) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Card(
       margin: const EdgeInsets.only(bottom: 8),
       color: Colors.orange.shade50,
@@ -160,8 +165,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
           backgroundColor: Colors.orange.shade200,
           child: const Icon(Icons.pending, color: Colors.orange),
         ),
-        title: _buildChildNameWidget(ref, link),
-        subtitle: Text('Invited: ${_formatDate(link.invitedAt)}'),
+        title: _buildChildNameWidget(context, ref, link),
+        subtitle: Text(l10n.invited(_formatDate(link.invitedAt))),
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -186,6 +191,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
     WidgetRef ref,
     FamilyLink link,
   ) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Card(
       margin: const EdgeInsets.only(bottom: 8),
       color: Colors.green.shade50,
@@ -194,20 +201,20 @@ class FamilyDashboardScreen extends ConsumerWidget {
           backgroundColor: Colors.green.shade200,
           child: const Icon(Icons.check, color: Colors.green),
         ),
-        title: _buildChildNameWidget(ref, link),
+        title: _buildChildNameWidget(context, ref, link),
         subtitle: Text(
             'Connected: ${_formatDate(link.consentedAt.isNotEmpty ? link.consentedAt.last : link.invitedAt)}'),
         trailing: PopupMenuButton<String>(
           onSelected: (value) =>
               _handleConnectedChildAction(context, ref, link, value),
           itemBuilder: (context) => [
-            const PopupMenuItem(
+            PopupMenuItem(
               value: 'permissions',
-              child: Text('Manage Permissions'),
+              child: Text(l10n.managePermissions),
             ),
-            const PopupMenuItem(
+            PopupMenuItem(
               value: 'revoke',
-              child: Text('Remove Child'),
+              child: Text(l10n.removeChild),
             ),
           ],
         ),
@@ -215,7 +222,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildChildNameWidget(WidgetRef ref, FamilyLink link) {
+  Widget _buildChildNameWidget(
+      BuildContext context, WidgetRef ref, FamilyLink link) {
     final childProfileAsync = ref.watch(userProfileProvider(link.childId));
 
     return childProfileAsync.when(
@@ -231,7 +239,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
         }
         return Text(link.childId);
       },
-      loading: () => const Text('Loading...'),
+      loading: () => Text(AppLocalizations.of(context)!.loading),
       error: (_, __) {
         // Fallback to email or ID if profile loading fails
         if (link.childId.contains('@')) {
@@ -253,19 +261,21 @@ class FamilyDashboardScreen extends ConsumerWidget {
     WidgetRef ref,
     FamilyLink link,
   ) async {
+    final l10n = AppLocalizations.of(context)!;
+
     try {
       await ref
           .read(familyLinksProvider(link.parentId).notifier)
           .resendInvite(link);
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('OTP resent successfully!')),
+          SnackBar(content: Text(l10n.otpResentSuccessfully)),
         );
       }
     } catch (e) {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to resend OTP: $e')),
+          SnackBar(content: Text(l10n.failedToResendOtp(e.toString()))),
         );
       }
     }
@@ -276,15 +286,17 @@ class FamilyDashboardScreen extends ConsumerWidget {
     WidgetRef ref,
     FamilyLink link,
   ) {
+    final l10n = AppLocalizations.of(context)!;
+
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Cancel Invite'),
-        content: const Text('Are you sure you want to cancel this invite?'),
+        title: Text(l10n.cancelInvite),
+        content: Text(l10n.cancelInviteConfirmation),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('No'),
+            child: Text(l10n.no),
           ),
           TextButton(
             onPressed: () async {
@@ -295,19 +307,19 @@ class FamilyDashboardScreen extends ConsumerWidget {
                     .cancelInvite(link);
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                        content: Text('Invite cancelled successfully!')),
+                    SnackBar(content: Text(l10n.inviteCancelledSuccessfully)),
                   );
                 }
               } catch (e) {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Failed to cancel invite: $e')),
+                    SnackBar(
+                        content: Text(l10n.failedToCancelInvite(e.toString()))),
                   );
                 }
               }
             },
-            child: const Text('Yes, Cancel'),
+            child: Text(l10n.yesCancel),
           ),
         ],
       ),
@@ -338,15 +350,17 @@ class FamilyDashboardScreen extends ConsumerWidget {
     WidgetRef ref,
     AsyncValue<List<PrivacyRequest>> privacyRequestsAsync,
   ) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
+            Text(
               'Privacy Requests',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
@@ -372,7 +386,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
                     ),
               loading: () => const Center(child: CircularProgressIndicator()),
               error: (error, stack) => Center(
-                child: Text('Error loading privacy requests: $error'),
+                child: Text(l10n.errorLoadingPrivacyRequests(error.toString())),
               ),
             ),
           ],
@@ -383,12 +397,14 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
   Widget _buildPrivacyRequestCard(
       BuildContext context, WidgetRef ref, PrivacyRequest request) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Card(
       margin: const EdgeInsets.only(bottom: 8),
       child: ListTile(
         leading: const Icon(Icons.privacy_tip),
-        title: Text('${request.type} Request'),
-        subtitle: Text('Status: ${request.status}'),
+        title: Text(l10n.requestType(request.type)),
+        subtitle: Text(l10n.statusColon(request.status)),
         trailing: request.status == 'pending'
             ? Row(
                 mainAxisSize: MainAxisSize.min,
@@ -412,6 +428,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
   void _handlePrivacyRequestAction(BuildContext context, WidgetRef ref,
       PrivacyRequest request, String action) async {
+    final l10n = AppLocalizations.of(context)!;
+
     try {
       // Get the family service and handle the privacy request
       final familyService = ref.read(familyServiceProvider);
@@ -433,7 +451,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to ${action} privacy request: $e'),
+            content:
+                Text(l10n.failedToActionPrivacyRequest(action, e.toString())),
             backgroundColor: Colors.red,
           ),
         );
@@ -443,16 +462,17 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
   void _showRevokeConfirmation(
       BuildContext context, WidgetRef ref, FamilyLink link) {
+    final l10n = AppLocalizations.of(context)!;
+
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Revoke Access'),
-        content: const Text(
-            'Are you sure you want to revoke access for this family member?'),
+        title: Text(l10n.revokeAccess),
+        content: Text(l10n.revokeAccessConfirmation),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
+            child: Text(l10n.cancel),
           ),
           TextButton(
             onPressed: () async {
@@ -464,8 +484,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Access revoked successfully!'),
+                    SnackBar(
+                      content: Text(l10n.accessRevokedSuccessfully),
                       backgroundColor: Colors.green,
                     ),
                   );
@@ -479,14 +499,14 @@ class FamilyDashboardScreen extends ConsumerWidget {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text('Failed to revoke access: $e'),
+                      content: Text(l10n.failedToRevokeAccess(e.toString())),
                       backgroundColor: Colors.red,
                     ),
                   );
                 }
               }
             },
-            child: const Text('Revoke'),
+            child: Text(l10n.revoke),
           ),
         ],
       ),

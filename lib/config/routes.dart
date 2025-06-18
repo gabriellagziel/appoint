@@ -9,6 +9,8 @@ import '../features/family/screens/invite_child_screen.dart';
 import '../features/family/screens/permissions_screen.dart';
 import '../features/invite/invite_detail_screen.dart';
 import '../features/booking/booking_confirm_screen.dart';
+import '../features/admin/admin_broadcast_screen.dart';
+import '../models/invite.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -49,6 +51,11 @@ class AppRouter {
           builder: (_) => PermissionsScreen(familyLink: familyLink),
           settings: settings,
         );
+      case '/admin/broadcast':
+        return MaterialPageRoute(
+          builder: (_) => const AdminBroadcastScreen(),
+          settings: settings,
+        );
       // Deep link routes for WhatsApp Smart Share
       case '/meeting/details':
         final args = settings.arguments as Map<String, dynamic>? ?? {};
@@ -62,13 +69,14 @@ class AppRouter {
           settings: settings,
         );
       case '/invite/details':
+        final invite = settings.arguments as Invite;
         return MaterialPageRoute(
-          builder: (_) => InviteDetailScreen(),
+          builder: (_) => InviteDetailScreen(invite: invite),
           settings: settings,
         );
       case '/booking/details':
         return MaterialPageRoute(
-          builder: (_) => BookingConfirmScreen(),
+          builder: (_) => const BookingConfirmScreen(),
           settings: settings,
         );
       default:
