@@ -1,42 +1,36 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import '../../providers/user_profile_provider.dart';
+import '../../l10n/app_localizations.dart';
 
 class UserProfileScreen extends ConsumerWidget {
-  const UserProfileScreen({Key? key}) : super(key: key);
+  const UserProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context)!;
     final profileAsync = ref.watch(currentUserProfileProvider);
+
     return Scaffold(
-      appBar: AppBar(title: const Text('My Profile')),
+      appBar: AppBar(title: Text(l10n.myProfile)),
       body: profileAsync.when(
         data: (profile) {
           if (profile == null) {
-            return const Center(child: Text('No profile found'));
+            return Center(child: Text(l10n.noProfileFound));
           }
           return Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                if (profile.photoUrl.isNotEmpty)
-                  CircleAvatar(
-                    radius: 40,
-                    backgroundImage: NetworkImage(profile.photoUrl),
-                  ),
-                const SizedBox(height: 16),
-                Text(
-                  profile.displayName,
-                  style: Theme.of(context).textTheme.headlineSmall,
-                ),
-                Text(profile.email),
+                Text('Name: ${profile.displayName}'),
+                Text('Email: ${profile.email}'),
               ],
             ),
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, __) => const Center(child: Text('Error loading profile')),
+        error: (_, __) => Center(child: Text(l10n.errorLoadingProfile)),
       ),
     );
   }

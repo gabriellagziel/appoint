@@ -3,15 +3,19 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../models/invite.dart';
 import '../../providers/invite_provider.dart';
+import '../../l10n/app_localizations.dart';
 
 class InviteDetailScreen extends ConsumerWidget {
-  const InviteDetailScreen({Key? key}) : super(key: key);
+  final Invite invite;
+
+  const InviteDetailScreen({super.key, required this.invite});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final invite = ModalRoute.of(context)!.settings.arguments as Invite;
+    final l10n = AppLocalizations.of(context)!;
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Invite Detail')),
+      appBar: AppBar(title: Text(l10n.inviteDetail)),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -21,7 +25,7 @@ class InviteDetailScreen extends ConsumerWidget {
             Text('From: ${invite.inviteeContact.displayName}'),
             Text('Phone: ${invite.inviteeContact.phoneNumber}'),
             Text('Status: ${invite.status.name}'),
-            const Spacer(),
+            const SizedBox(height: 16),
             Row(
               children: [
                 Expanded(
@@ -40,12 +44,12 @@ class InviteDetailScreen extends ConsumerWidget {
                             }
                           }
                         : null,
-                    child: const Text('Accept'),
+                    child: Text(l10n.accept),
                   ),
                 ),
                 const SizedBox(width: 16),
                 Expanded(
-                  child: ElevatedButton(
+                  child: OutlinedButton(
                     onPressed: invite.status == InviteStatus.pending
                         ? () async {
                             await ref
@@ -60,13 +64,11 @@ class InviteDetailScreen extends ConsumerWidget {
                             }
                           }
                         : null,
-                    style:
-                        ElevatedButton.styleFrom(backgroundColor: Colors.red),
-                    child: const Text('Decline'),
+                    child: Text(l10n.decline),
                   ),
                 ),
               ],
-            )
+            ),
           ],
         ),
       ),

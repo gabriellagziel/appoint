@@ -7,6 +7,9 @@ import 'package:appoint/services/family_service.dart';
 import 'package:appoint/providers/family_provider.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../test_setup.dart';
+import 'package:mockito/mockito.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FakeUser implements User {
   @override
@@ -20,8 +23,14 @@ final fakeAuthUser = FakeUser('test-parent-id');
 final fakeAuthStateProvider =
     FutureProvider<User?>((ref) async => fakeAuthUser);
 
+class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
+
 // Mock FamilyService for testing
 class MockFamilyService implements FamilyService {
+  final FirebaseFirestore firestore;
+
+  MockFamilyService({required this.firestore});
+
   @override
   Future<FamilyLink> inviteChild(String parentId, String childEmail) async {
     return FamilyLink(
@@ -129,12 +138,21 @@ class MockFamilyService implements FamilyService {
 }
 
 void main() {
+  setUpAll(() async {
+    TestWidgetsFlutterBinding.ensureInitialized();
+    registerFirebaseMock();
+  });
+
   group('Family Management System Tests', () {
     late ProviderContainer container;
     late MockFamilyService mockFamilyService;
+    late FamilyService familyService;
+    late MockFirebaseFirestore mockFirestore;
 
     setUp(() {
-      mockFamilyService = MockFamilyService();
+      mockFirestore = MockFirebaseFirestore();
+      familyService = FamilyService(firestore: mockFirestore);
+      mockFamilyService = MockFamilyService(firestore: mockFirestore);
       container = ProviderContainer(
         overrides: [
           familyServiceProvider.overrideWithValue(mockFamilyService),

@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'l10n/app_localizations.dart';
 import 'config/routes.dart';
 import 'config/theme.dart';
 import 'firebase_options.dart';
 import 'services/custom_deep_link_service.dart';
 
-void main() async {
+Future<void> appMain() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize Firebase
@@ -27,6 +29,10 @@ void main() async {
       child: MyApp(deepLinkService: deepLinkService),
     ),
   );
+}
+
+void main() {
+  appMain();
 }
 
 class MyApp extends StatefulWidget {
@@ -65,6 +71,47 @@ class _MyAppState extends State<MyApp> {
       onGenerateRoute: AppRouter.onGenerateRoute,
       navigatorObservers: [
         FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance),
+      ],
+      // Localization support
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('ar'), // Arabic
+        Locale('bg'), // Bulgarian
+        Locale('cs'), // Czech
+        Locale('da'), // Danish
+        Locale('de'), // German
+        Locale('en'), // English
+        Locale('es'), // Spanish
+        Locale('fi'), // Finnish
+        Locale('fr'), // French
+        Locale('he'), // Hebrew
+        Locale('hu'), // Hungarian
+        Locale('id'), // Indonesian
+        Locale('it'), // Italian
+        Locale('ja'), // Japanese
+        Locale('ko'), // Korean
+        Locale('lt'), // Lithuanian
+        Locale('ms'), // Malay
+        Locale('nl'), // Dutch
+        Locale('no'), // Norwegian
+        Locale('pl'), // Polish
+        Locale('pt'), // Portuguese
+        Locale('ro'), // Romanian
+        Locale('ru'), // Russian
+        Locale('sk'), // Slovak
+        Locale('sl'), // Slovenian
+        Locale('sr'), // Serbian
+        Locale('sv'), // Swedish
+        Locale('th'), // Thai
+        Locale('tr'), // Turkish
+        Locale('uk'), // Ukrainian
+        Locale('vi'), // Vietnamese
+        Locale('zh'), // Chinese
       ],
     );
   }

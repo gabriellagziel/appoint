@@ -8,8 +8,11 @@ final bookingServiceProvider = Provider<BookingService>((ref) {
 });
 
 class BookingService {
-  final _firestore = FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
   final _bookingsCollection = 'appointments';
+
+  BookingService({FirebaseFirestore? firestore})
+      : _firestore = firestore ?? FirebaseFirestore.instance;
 
   /// Creates a new booking in Firestore
   Future<void> createBooking(Booking booking) async {

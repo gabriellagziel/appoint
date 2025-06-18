@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../l10n/app_localizations.dart';
 import '../providers/whatsapp_share_provider.dart';
 import '../models/appointment.dart';
 
@@ -86,7 +87,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
   void initState() {
     super.initState();
     _messageController.text = widget.customMessage ??
-        "Hey! I've scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:";
+        AppLocalizations.of(context)!.defaultShareMessage;
   }
 
   @override
@@ -99,13 +100,14 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
   @override
   Widget build(BuildContext context) {
     final shareState = ref.watch(shareDialogProvider);
+    final l10n = AppLocalizations.of(context)!;
 
     return AlertDialog(
       title: Row(
         children: [
           const Icon(Icons.share, color: Color(0xFF25D366)),
           const SizedBox(width: 8),
-          const Text('Share on WhatsApp'),
+          Text(l10n.shareOnWhatsApp),
         ],
       ),
       content: SingleChildScrollView(
@@ -113,18 +115,18 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'The meeting is ready! Would you like to send it to your group?',
-              style: TextStyle(fontSize: 16),
+            Text(
+              l10n.meetingReadyMessage,
+              style: const TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16),
             TextField(
               controller: _messageController,
               maxLines: 3,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Message',
-                border: OutlineInputBorder(),
-                hintText: 'Customize your message...',
+                border: const OutlineInputBorder(),
+                hintText: l10n.customizeMessage,
               ),
             ),
             const SizedBox(height: 16),
@@ -135,7 +137,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
               ),
               const SizedBox(height: 8),
               CheckboxListTile(
-                title: const Text('Save group for future recognition'),
+                title: Text(l10n.saveGroupForRecognition),
                 value: _saveGroupForRecognition,
                 onChanged: (value) {
                   setState(() {
@@ -149,10 +151,10 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
                 const SizedBox(height: 8),
                 TextField(
                   controller: _groupNameController,
-                  decoration: const InputDecoration(
-                    labelText: 'Group Name (optional)',
-                    border: OutlineInputBorder(),
-                    hintText: 'Enter group name for recognition',
+                  decoration: InputDecoration(
+                    labelText: l10n.groupNameOptional,
+                    border: const OutlineInputBorder(),
+                    hintText: l10n.enterGroupName,
                   ),
                 ),
               ],
@@ -168,9 +170,9 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
                   children: [
                     const Icon(Icons.group, color: Colors.green),
                     const SizedBox(width: 8),
-                    const Text(
-                      'Known group detected',
-                      style: TextStyle(
+                    Text(
+                      l10n.knownGroupDetected,
+                      style: const TextStyle(
                         color: Colors.green,
                         fontWeight: FontWeight.bold,
                       ),
@@ -208,7 +210,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: const Text('Cancel'),
+          child: Text(l10n.cancel),
         ),
         ElevatedButton.icon(
           onPressed: shareState.isLoading ? null : () => _shareToWhatsApp(),
@@ -231,6 +233,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
 
   Future<void> _shareToWhatsApp() async {
     final notifier = ref.read(shareDialogProvider.notifier);
+    final l10n = AppLocalizations.of(context)!;
 
     await notifier.shareToWhatsApp(
       meetingId: widget.appointment.id,
@@ -255,9 +258,9 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
       widget.onShared?.call();
 
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Meeting shared successfully!'),
-          backgroundColor: Color(0xFF25D366),
+        SnackBar(
+          content: Text(l10n.meetingSharedSuccessfully),
+          backgroundColor: const Color(0xFF25D366),
         ),
       );
     }
