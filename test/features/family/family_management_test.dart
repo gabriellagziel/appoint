@@ -140,7 +140,7 @@ class MockFamilyService implements FamilyService {
 void main() {
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    registerFirebaseMock();
+    await registerFirebaseMock();
   });
 
   group('Family Management System Tests', () {
