@@ -30,34 +30,6 @@ void main() {
       mockAuth = MockFirebaseAuth();
       mockAnalytics = MockFirebaseAnalytics();
       mockWhatsAppShareService = MockWhatsAppShareService();
-      when(mockFirestore.collection('appointments'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('users'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('admin_broadcasts'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('share_analytics'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('group_recognition'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('invites'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('payments'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('organizations'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('analytics'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('family_links'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('family_analytics'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('privacy_requests'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('calendar_events'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('callRequests'))
-          .thenReturn(MockCollectionReference());
       familyService = FamilyService(firestore: mockFirestore, auth: mockAuth);
       mockService = MockFamilyService();
       container = ProviderContainer(
