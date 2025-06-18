@@ -5,7 +5,11 @@ import 'package:flutter/material.dart';
 import 'whatsapp_share_service.dart';
 
 class CustomDeepLinkService {
-  final WhatsAppShareService _whatsappService = WhatsAppShareService();
+  late final WhatsAppShareService _whatsappService;
+  CustomDeepLinkService({WhatsAppShareService? whatsappShareService}) {
+    _whatsappService =
+        whatsappShareService ?? WhatsAppShareService(deepLinkService: this);
+  }
   StreamSubscription? _linkSubscription;
   StreamSubscription? _initialLinkSubscription;
   GlobalKey<NavigatorState>? _navigatorKey;

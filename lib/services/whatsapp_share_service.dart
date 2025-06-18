@@ -9,14 +9,20 @@ import 'custom_deep_link_service.dart';
 class WhatsAppShareService {
   final FirebaseFirestore _firestore;
   final FirebaseAnalytics _analytics;
-  final CustomDeepLinkService _deepLinkService = CustomDeepLinkService();
+  late final CustomDeepLinkService _deepLinkService;
 
   static const String _baseUrl = 'https://app-oint-core.web.app';
   static const String _whatsappBaseUrl = 'https://wa.me/?text=';
 
-  WhatsAppShareService({FirebaseFirestore? firestore, FirebaseAnalytics? analytics})
-      : _firestore = firestore ?? FirebaseFirestore.instance,
-        _analytics = analytics ?? FirebaseAnalytics.instance;
+  WhatsAppShareService({
+    FirebaseFirestore? firestore,
+    FirebaseAnalytics? analytics,
+    CustomDeepLinkService? deepLinkService,
+  })  : _firestore = firestore ?? FirebaseFirestore.instance,
+        _analytics = analytics ?? FirebaseAnalytics.instance {
+    _deepLinkService =
+        deepLinkService ?? CustomDeepLinkService(whatsappShareService: this);
+  }
 
   /// Generate a smart share link for a meeting
   Future<String> generateSmartShareLink({
