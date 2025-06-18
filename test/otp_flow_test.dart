@@ -10,7 +10,7 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    registerFirebaseMock();
+    await registerFirebaseMock();
   });
 
   testWidgets('OTP flow: send and verify code', (tester) async {
