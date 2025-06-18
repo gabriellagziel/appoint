@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/services.dart';
+import 'package:REDACTED_TOKEN/test.dart';
 
 // Common test utilities
 class TestUtils {
@@ -18,45 +19,8 @@ Future<void> setupTestEnvironment() async {
 }
 
 // Centralized Firebase mock setup for all tests
-void registerFirebaseMock() {
-  const MethodChannel firebaseCoreChannel =
-      MethodChannel('plugins.flutter.io/firebase_core');
-  REDACTED_TOKEN.instance.defaultBinaryMessenger
-      .setMockMethodCallHandler(
-    firebaseCoreChannel,
-    (MethodCall methodCall) async {
-      print(
-          '[Mock] firebaseCoreChannel: method=[33m[1m[4m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m[0m');
-      print(
-          '[Mock] firebaseCoreChannel: method=[33m[1m[4m[0m[0m[0m[0m[0m[0m[0m');
-      print('[Mock] firebaseCoreChannel: method=[33m');
-      print(
-          '[Mock] firebaseCoreChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
-      if (methodCall.method == 'Firebase#initializeCore') {
-        return {
-          'app': {
-            'name': '[DEFAULT]',
-            'options': {
-              'apiKey': 'fake',
-              'appId': 'fake',
-              'messagingSenderId': 'fake',
-              'projectId': 'fake',
-            },
-            'pluginConstants': {},
-          },
-          'pluginConstants': {},
-        };
-      }
-      if (methodCall.method == 'Firebase#initializeApp') {
-        return {
-          'name': methodCall.arguments['appName'] ?? '[DEFAULT]',
-          'options': methodCall.arguments['options'] ?? {},
-          'pluginConstants': {},
-        };
-      }
-      return null;
-    },
-  );
+Future<void> registerFirebaseMock() async {
+  setupFirebaseCoreMocks();
   // Add other Firebase channels to mock as needed
 
   // Mock Firebase Auth
@@ -161,60 +125,6 @@ void registerFirebaseMock() {
     return null;
   });
 
-  // Further improved mock for FirebaseCore Pigeon HostApi (required for latest firebase_core)
-  const MethodChannel firebaseCoreHostApiChannel =
-      MethodChannel('dev.flutter.pigeon.FirebaseCoreHostApi');
-  REDACTED_TOKEN.instance.defaultBinaryMessenger
-      .setMockMethodCallHandler(firebaseCoreHostApiChannel,
-          (MethodCall methodCall) async {
-    print(
-        '[Mock] firebaseCoreHostApiChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
-    switch (methodCall.method) {
-      case 'initializeCore':
-        return [
-          {
-            'name': '[DEFAULT]',
-            'options': {
-              'apiKey': 'fake',
-              'appId': 'fake',
-              'messagingSenderId': 'fake',
-              'projectId': 'fake',
-            },
-            'pluginConstants': {},
-          }
-        ];
-      case 'initializeApp':
-        return {
-          'name': methodCall.arguments['appName'] ?? '[DEFAULT]',
-          'options': methodCall.arguments['options'] ?? {},
-          'pluginConstants': {},
-        };
-      case 'optionsFromResource':
-        return {
-          'apiKey': 'fake',
-          'appId': 'fake',
-          'messagingSenderId': 'fake',
-          'projectId': 'fake',
-        };
-      case 'getAllApps':
-        return [
-          {
-            'name': '[DEFAULT]',
-            'options': {
-              'apiKey': 'fake',
-              'appId': 'fake',
-              'messagingSenderId': 'fake',
-              'projectId': 'fake',
-            },
-            'pluginConstants': {},
-          }
-        ];
-      case 'deleteApp':
-        return null;
-      default:
-        return null;
-    }
-  });
 
   // Mock file_picker plugin to suppress platform warnings in tests
   const MethodChannel filePickerChannel =
@@ -227,4 +137,5 @@ void registerFirebaseMock() {
     // Return mock responses for file_picker methods as needed
     return null;
   });
+  await Firebase.initializeApp();
 }

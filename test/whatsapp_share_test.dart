@@ -16,7 +16,7 @@ class MockCollectionReference extends Mock
 void main() {
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    registerFirebaseMock();
+    await registerFirebaseMock();
   });
 
   group('WhatsApp Share Service Tests', () {

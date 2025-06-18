@@ -11,7 +11,7 @@ class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 void main() {
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    registerFirebaseMock();
+    await registerFirebaseMock();
   });
 
   testWidgets('Business Dashboard shows welcome text',

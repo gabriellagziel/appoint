@@ -13,7 +13,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 void main() {
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    registerFirebaseMock();
+    await registerFirebaseMock();
   });
 
   group('OTP Flow', () {

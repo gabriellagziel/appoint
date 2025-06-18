@@ -7,7 +7,7 @@ import 'package:appoint/features/auth/login_screen.dart';
 void main() {
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
-    registerFirebaseMock();
+    await registerFirebaseMock();
   });
 
   group('LoginScreen', () {
