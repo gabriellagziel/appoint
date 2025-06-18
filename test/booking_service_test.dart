@@ -9,6 +9,24 @@ class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
 class MockCollectionReference extends Mock
     implements CollectionReference<Map<String, dynamic>> {}
+class MockDocumentReference extends Mock
+    implements DocumentReference<Map<String, dynamic>> {}
+class FakeCollectionReference extends Fake
+    implements CollectionReference<Map<String, dynamic>> {
+  @override
+  Future<DocumentReference<Map<String, dynamic>>> add(
+          Map<String, dynamic> data) async => FakeDocumentReference();
+}
+
+class FakeDocumentReference extends Fake
+    implements DocumentReference<Map<String, dynamic>> {}
+
+class FakeFirebaseFirestore extends Fake implements FirebaseFirestore {
+  @override
+  CollectionReference<Map<String, dynamic>> collection(String path) {
+    return FakeCollectionReference();
+  }
+}
 
 void main() {
   setUpAll(() async {
@@ -18,39 +36,11 @@ void main() {
 
   group('BookingService', () {
     late BookingService bookingService;
-    late MockFirebaseFirestore mockFirestore;
+    late FirebaseFirestore firestore;
 
     setUp(() {
-      mockFirestore = MockFirebaseFirestore();
-      when(mockFirestore.collection('appointments'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('users'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('admin_broadcasts'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('share_analytics'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('group_recognition'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('invites'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('payments'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('organizations'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('analytics'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('family_links'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('family_analytics'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('privacy_requests'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('calendar_events'))
-          .thenReturn(MockCollectionReference());
-      when(mockFirestore.collection('callRequests'))
-          .thenReturn(MockCollectionReference());
-      bookingService = BookingService(firestore: mockFirestore);
+      firestore = FakeFirebaseFirestore();
+      bookingService = BookingService(firestore: firestore);
     });
 
     test('should be instantiated correctly', () {
