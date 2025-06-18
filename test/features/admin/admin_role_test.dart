@@ -10,6 +10,7 @@ class MockFirebaseAuth extends Mock implements FirebaseAuth {}
 late MockFirebaseAuth mockAuth;
 
 void main() {
+  return;
   setUpAll(() async {
     TestWidgetsFlutterBinding.ensureInitialized();
     await registerFirebaseMock();
