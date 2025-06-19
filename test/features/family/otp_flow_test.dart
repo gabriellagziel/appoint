@@ -101,5 +101,3 @@ class MockWhatsAppShareService extends Mock implements WhatsAppShareService {}
 
 class MockFirebaseAuth extends Mock implements FirebaseAuth {}
 
-class MockCollectionReference extends Mock
-    implements CollectionReference<Map<String, dynamic>> {}
