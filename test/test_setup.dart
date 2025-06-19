@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:appoint/firebase_options.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core_platform_interface/test.dart';
 
-final TestWidgetsFlutterBinding _binding = TestWidgetsFlutterBinding.ensureInitialized();
 
 // Common test utilities
 class TestUtils {
@@ -17,7 +17,7 @@ class TestUtils {
 }
 
 Future<void> setupTestEnvironment() async {
-  await Firebase.initializeApp();
+  // Firebase app initialization skipped for tests
 }
 
 // Centralized Firebase mock setup for all tests
@@ -140,5 +140,8 @@ Future<void> registerFirebaseMock() async {
     // Return mock responses for file_picker methods as needed
     return null;
   });
-  await Firebase.initializeApp();
+  if (Firebase.apps.isEmpty) {
+    await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform);
+  }
 }

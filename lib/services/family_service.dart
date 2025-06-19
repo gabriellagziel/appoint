@@ -9,6 +9,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 class FamilyService {
   final String _base = 'https://api.yourapp.com/api/v1/family';
   final FirebaseFirestore _firestore;
+  // ignore: unused_field
   final FirebaseAuth _auth;
 
   FamilyService({FirebaseFirestore? firestore, FirebaseAuth? auth})
