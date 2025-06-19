@@ -16,6 +16,7 @@ class NotificationService {
     await _messaging.requestPermission();
     FirebaseMessaging.onMessage.listen(_handleMessage);
     FirebaseMessaging.onBackgroundMessage(_backgroundHandler);
+    FirebaseMessaging.onMessageOpenedApp.listen(_handleMessage);
   }
 
   void _handleMessage(RemoteMessage message) {
@@ -35,6 +36,16 @@ class NotificationService {
   }
 
   Future<String?> getToken() => _messaging.getToken();
+
+  Future<void> saveTokenForUser(String uid) async {
+    final token = await _messaging.getToken();
+    if (token != null) {
+      await _firestore
+          .collection('users')
+          .doc(uid)
+          .set({'fcmToken': token}, SetOptions(merge: true));
+    }
+  }
 
   Future<void> sendNotification(String token, String title, String body,
       {Map<String, dynamic>? data}) async {
