@@ -3,6 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/services.dart';
 import 'package:REDACTED_TOKEN/test.dart';
 
+final TestWidgetsFlutterBinding _binding = TestWidgetsFlutterBinding.ensureInitialized();
+
 // Common test utilities
 class TestUtils {
   static const testEmail = 'test@example.com';
@@ -20,6 +22,7 @@ Future<void> setupTestEnvironment() async {
 
 // Centralized Firebase mock setup for all tests
 Future<void> registerFirebaseMock() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
   setupFirebaseCoreMocks();
   // Add other Firebase channels to mock as needed
 
