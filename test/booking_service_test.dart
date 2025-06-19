@@ -2,7 +2,7 @@ import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:appoint/models/booking.dart';
 import 'package:flutter_test/flutter_test.dart';
 import './test_setup.dart';
-import './fake_firebase_firestore.dart';
+import '../lib/test/fake_firebase_firestore.dart';
 
 void main() {
   setUpAll(() async {
