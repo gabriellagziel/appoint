@@ -20,16 +20,17 @@ linter:
   # `// ignore_for_file: name_of_lint` syntax on the line or in the file
   # producing the lint.
   rules:
-    REDACTED_TOKEN: warning
+    REDACTED_TOKEN: error
     unused_import: warning
-    unused_field: warning
-    deprecated_member_use: warning
+    unused_field: error
+    deprecated_member_use: error
 
 analyzer:
   errors:
     unused_import: warning
-    unused_field: warning
-    deprecated_member_use: warning
+    REDACTED_TOKEN: error
+    unused_field: error
+    deprecated_member_use: error
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
