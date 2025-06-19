@@ -11,7 +11,7 @@ final notificationSettingsProvider =
     FutureProvider<NotificationSettings>((ref) async {
   final uid = FirebaseAuth.instance.currentUser?.uid;
   if (uid == null) {
-    return NotificationSettings(push: false, email: false);
+    return NotificationSettings(push: false);
   }
   return ref.read(userSettingsServiceProvider).fetchSettings(uid);
 });

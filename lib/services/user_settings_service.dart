@@ -13,7 +13,7 @@ class UserSettingsService {
         .doc('notifications')
         .get();
     if (!doc.exists) {
-      return NotificationSettings(push: false, email: false);
+      return NotificationSettings(push: false);
     }
     return NotificationSettings.fromJson(doc.data()!);
   }

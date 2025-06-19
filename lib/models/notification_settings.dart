@@ -1,18 +1,14 @@
 class NotificationSettings {
   final bool push;
-  final bool email;
 
-  NotificationSettings({required this.push, required this.email});
+  NotificationSettings({required this.push});
 
-  factory NotificationSettings.fromJson(Map<String, dynamic> json) {
-    return NotificationSettings(
-      push: json['push'] ?? false,
-      email: json['email'] ?? false,
-    );
-  }
+  factory NotificationSettings.fromJson(Map<String, dynamic> json) =>
+      NotificationSettings(
+        push: json['push'] ?? false,
+      );
 
   Map<String, dynamic> toJson() => {
         'push': push,
-        'email': email,
       };
 }
