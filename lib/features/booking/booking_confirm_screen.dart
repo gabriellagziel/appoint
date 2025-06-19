@@ -11,6 +11,8 @@ import '../../providers/user_subscription_provider.dart';
 import '../../services/ad_service.dart';
 import '../../widgets/whatsapp_share_button.dart';
 import 'models/booking_request_args.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import '../../services/maps_service.dart';
 
 class BookingConfirmScreen extends ConsumerStatefulWidget {
   const BookingConfirmScreen({Key? key}) : super(key: key);
@@ -25,6 +27,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
   bool _syncOutlook = false;
   bool _isLoadingAd = false;
   Appointment? _createdAppointment;
+  late GoogleMapController _mapController;
 
   Future<void> _maybeShowAd() async {
     final isPremium = ref.read(userSubscriptionProvider).maybeWhen(
@@ -61,6 +64,15 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                   const Text('Type: Open Call')
                 else
                   Text('Scheduled at: ${args.scheduledAt}'),
+                const SizedBox(height: 12),
+                SizedBox(
+                  height: 200,
+                  child: GoogleMap(
+                    initialCameraPosition: MapsService.initialPosition,
+                    onMapCreated: (c) => _mapController = c,
+                    myLocationEnabled: true,
+                  ),
+                ),
                 SwitchListTile(
                   title: const Text('Sync to Google'),
                   value: _syncGoogle,

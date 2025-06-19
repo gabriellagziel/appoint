@@ -50,6 +50,12 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                           _emailController.text,
                           _passwordController.text,
                         );
+                        final uid = ref.read(authProvider).currentUser?.uid;
+                        if (uid != null) {
+                          await ref
+                              .read(notificationServiceProvider)
+                              .saveTokenForUser(uid);
+                        }
                         if (!mounted) return;
                         // ignore: unused_result
                         ref.refresh(authStateProvider);
