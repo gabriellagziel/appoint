@@ -2,31 +2,7 @@ import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:appoint/models/booking.dart';
 import 'package:flutter_test/flutter_test.dart';
 import './test_setup.dart';
-import 'package:mockito/mockito.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-
-class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
-
-class MockCollectionReference extends Mock
-    implements CollectionReference<Map<String, dynamic>> {}
-class MockDocumentReference extends Mock
-    implements DocumentReference<Map<String, dynamic>> {}
-class FakeCollectionReference extends Fake
-    implements CollectionReference<Map<String, dynamic>> {
-  @override
-  Future<DocumentReference<Map<String, dynamic>>> add(
-          Map<String, dynamic> data) async => FakeDocumentReference();
-}
-
-class FakeDocumentReference extends Fake
-    implements DocumentReference<Map<String, dynamic>> {}
-
-class FakeFirebaseFirestore extends Fake implements FirebaseFirestore {
-  @override
-  CollectionReference<Map<String, dynamic>> collection(String path) {
-    return FakeCollectionReference();
-  }
-}
 
 void main() {
   setUpAll(() async {
@@ -39,7 +15,7 @@ void main() {
     late FirebaseFirestore firestore;
 
     setUp(() {
-      firestore = FakeFirebaseFirestore();
+      firestore = FirebaseFirestore.instance;
       bookingService = BookingService(firestore: firestore);
     });
 
