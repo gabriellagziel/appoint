@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'dart:io';
+import '../../utils/color_extensions.dart';
 import '../../models/admin_broadcast_message.dart';
 import '../../services/broadcast_service.dart';
 import '../../providers/admin_provider.dart';
@@ -249,7 +250,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
     return Chip(
       label: Text(text),
-      backgroundColor: color.withOpacity(0.2),
+      backgroundColor: color.withValues(alpha: 0.2),
       labelStyle: TextStyle(color: color),
     );
   }
