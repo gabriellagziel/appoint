@@ -3,14 +3,17 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'l10n/app_localizations.dart';
 import 'config/routes.dart';
 import 'config/theme.dart';
 import 'firebase_options.dart';
 import 'services/custom_deep_link_service.dart';
+import 'services/notification_service.dart';
 
 Future<void> appMain() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: '.env');
 
   // Initialize Firebase
   await Firebase.initializeApp(
@@ -23,6 +26,10 @@ Future<void> appMain() async {
   // Initialize custom deep link service (replaces Firebase Dynamic Links)
   final deepLinkService = CustomDeepLinkService();
   await deepLinkService.initialize();
+
+  // Initialize notifications
+  final notificationService = NotificationService();
+  await notificationService.initialize();
 
   runApp(
     ProviderScope(
