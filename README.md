@@ -1,5 +1,6 @@
 # Appoint
 
+Appointment scheduling app built with Flutter.
 
 ## Setup
 
@@ -11,7 +12,7 @@
 ```bash
    flutter pub get
    ./tool/codegen.sh
-   
+
 ```
 
 3. **Run & Test**
@@ -19,9 +20,13 @@
    
 ```bash
    flutter run
-   flutter test --coverage
-   
+   flutter test
 ```
+
+## Contribution Guidelines
+
+1. Run `flutter pub get` before development.
+2. Execute `flutter analyze` and `flutter test` before submitting a PR.
 
 
 ## CI
