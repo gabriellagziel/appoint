@@ -1,0 +1,6 @@
+{
+  "name": "Appoint",
+  "short_name": "Appoint",
+  "start_url": "/",
+  "display": "standalone"
+}
