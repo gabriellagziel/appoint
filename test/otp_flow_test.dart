@@ -1,11 +1,10 @@
-@Skip("Firebase issues")
-import "package:test/test.dart";
+@Skip('Pending Firebase setup conflicts')
+import 'package:flutter_test/flutter_test.dart';
 
 // Replace with the real file & widget name for your app's entrypoint
 import './test_setup.dart';
 
 // Flutter widgets & material controls
-import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   setUpAll(() async {
