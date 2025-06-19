@@ -2,20 +2,19 @@ import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:appoint/models/booking.dart';
 import 'package:flutter_test/flutter_test.dart';
 import './test_setup.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import './fake_firebase_firestore.dart';
 
 void main() {
   setUpAll(() async {
-    TestWidgetsFlutterBinding.ensureInitialized();
     await registerFirebaseMock();
   });
 
   group('BookingService', () {
     late BookingService bookingService;
-    late FirebaseFirestore firestore;
+    late FakeFirebaseFirestore firestore;
 
     setUp(() {
-      firestore = FirebaseFirestore.instance;
+      firestore = FakeFirebaseFirestore();
       bookingService = BookingService(firestore: firestore);
     });
 

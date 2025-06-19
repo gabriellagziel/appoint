@@ -121,10 +121,10 @@ UI component tests verify the user interface behavior. They test:
 ```dart
 testWidgets('should allow entering email and password', (WidgetTester tester) async {
   await tester.pumpWidget(/* ... */);
-  
+
   final emailField = find.byType(TextField).first;
   await tester.enterText(emailField, 'test@example.com');
-  
+
   expect(find.text('test@example.com'), findsOneWidget);
 });
 ```
