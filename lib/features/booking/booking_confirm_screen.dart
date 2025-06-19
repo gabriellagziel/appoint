@@ -27,7 +27,6 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
   bool _syncOutlook = false;
   bool _isLoadingAd = false;
   Appointment? _createdAppointment;
-  late GoogleMapController _mapController;
 
   Future<void> _maybeShowAd() async {
     final isPremium = ref.read(userSubscriptionProvider).maybeWhen(
@@ -69,7 +68,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                   height: 200,
                   child: GoogleMap(
                     initialCameraPosition: MapsService.initialPosition,
-                    onMapCreated: (c) => _mapController = c,
+                    onMapCreated: (_) {},
                     myLocationEnabled: true,
                   ),
                 ),
