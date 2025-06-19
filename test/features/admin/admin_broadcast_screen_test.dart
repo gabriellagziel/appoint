@@ -20,35 +20,6 @@ void main() {
     await registerFirebaseMock();
     mockFirestore = MockFirebaseFirestore();
     broadcastService = BroadcastService(firestore: mockFirestore);
-    // Stub Firestore methods
-    when(mockFirestore.collection('appointments'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('users'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('admin_broadcasts'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('share_analytics'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('group_recognition'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('invites'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('payments'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('organizations'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('analytics'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('family_links'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('family_analytics'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('privacy_requests'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('calendar_events'))
-        .thenReturn(MockCollectionReference());
-    when(mockFirestore.collection('callRequests'))
-        .thenReturn(MockCollectionReference());
     // Stub FirebaseAnalytics if used
     // when(FirebaseAnalytics.instance).thenReturn(MockFirebaseAnalytics());
   });
@@ -260,5 +231,3 @@ void main() {
   }, skip: true);
 }
 
-class MockCollectionReference extends Mock
-    implements CollectionReference<Map<String, dynamic>> {}
