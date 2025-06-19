@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../providers/auth_provider.dart';
+import '../../providers/facebook_auth_provider.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -50,6 +51,15 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   ref.refresh(authStateProvider);
               },
               child: const Text('Sign In'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () async {
+                await ref.read(facebookAuthProvider).login();
+                // ignore: unused_result
+                ref.refresh(authStateProvider);
+              },
+              child: const Text('Login with Facebook'),
             ),
           ],
         ),
