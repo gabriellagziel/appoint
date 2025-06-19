@@ -32,45 +32,23 @@ class NotificationSettingsScreen extends ConsumerWidget {
                       onChanged: (v) async {
                         final uid = ref.read(authProvider).currentUser?.uid;
                         if (uid == null) return;
-                        final newSettings =
-                            NotificationSettings(push: v, email: settings.email);
+                        final newSettings = NotificationSettings(push: v);
                         await ref
                             .read(userSettingsServiceProvider)
                             .updateSettings(uid, newSettings);
-                        if (v) {
-                          await ref
-                              .read(notificationServiceProvider)
-                              .saveTokenForUser(uid);
-                        }
-                        ref.invalidate(notificationSettingsProvider);
                       },
                     ),
-                    SwitchListTile(
-                      title: Text('Email Notifications'),
-                      value: settings.email,
-                      onChanged: (v) async {
-                        final uid = ref.read(authProvider).currentUser?.uid;
-                        if (uid == null) return;
-                        final newSettings =
-                            NotificationSettings(push: settings.push, email: v);
-                        await ref
-                            .read(userSettingsServiceProvider)
-                            .updateSettings(uid, newSettings);
-                        ref.invalidate(notificationSettingsProvider);
-                      },
-                    ),
-                    const SizedBox(height: 8),
-                    SelectableText(l10n.fcmToken(token ?? 'unavailable')),
+                    if (token != null) SelectableText(l10n.fcmToken(token)),
                   ],
                 ),
               );
             },
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (_, __) => Center(child: Text(l10n.errorFetchingToken)),
+            error: (e, _) => Center(child: Text('Error: $e')),
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, __) => const Center(child: Text('Error')), 
+        error: (e, _) => Center(child: Text('Error: $e')),
       ),
     );
   }
