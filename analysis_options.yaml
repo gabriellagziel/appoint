@@ -25,5 +25,11 @@ linter:
     unused_field: warning
     deprecated_member_use: warning
 
+analyzer:
+  errors:
+    unused_import: warning
+    unused_field: warning
+    deprecated_member_use: warning
+
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
