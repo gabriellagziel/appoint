@@ -4,6 +4,8 @@ import '../../models/booking.dart';
 import 'services/booking_service.dart';
 import '../../providers/auth_provider.dart';
 import '../selection/providers/selection_provider.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import '../../services/maps_service.dart';
 
 class BookingRequestScreen extends ConsumerStatefulWidget {
   const BookingRequestScreen({super.key});
@@ -15,6 +17,7 @@ class BookingRequestScreen extends ConsumerStatefulWidget {
 
 class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
   bool _isSubmitting = false;
+  late GoogleMapController _mapController;
 
   Future<void> _submitBooking() async {
     setState(() => _isSubmitting = true);
@@ -75,44 +78,13 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
     final duration = ref.watch(serviceDurationProvider);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Booking Request')),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text('Staff: ${staffId ?? "Not selected"}'),
-                    const SizedBox(height: 8),
-                    Text('Service: ${serviceId ?? "Not selected"}'),
-                    const SizedBox(height: 8),
-                    Text(
-                        'Date & Time: ${dateTime?.toLocal() ?? "Not selected"}'),
-                    const SizedBox(height: 8),
-                    Text('Duration: ${duration?.inMinutes ?? 0} minutes'),
-                  ],
-                ),
-              ),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: (staffId != null &&
-                      serviceId != null &&
-                      dateTime != null &&
-                      duration != null)
-                  ? (_isSubmitting ? null : _submitBooking)
-                  : null,
-              child: _isSubmitting
-                  ? const CircularProgressIndicator()
-                  : const Text('Submit Booking'),
-            ),
-          ],
-        ),
+      appBar: AppBar(title: const Text('Select Location')),
+      body: GoogleMap(
+        initialCameraPosition: MapsService.initialPosition,
+        onMapCreated: (controller) {
+          _mapController = controller;
+        },
+        myLocationEnabled: true,
       ),
     );
   }
