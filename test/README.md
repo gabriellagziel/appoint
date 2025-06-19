@@ -4,7 +4,7 @@ This directory contains comprehensive unit tests for the APP-OINT Flutter projec
 
 ## Test Structure
 
-```
+```text
 test/
 ├── models/                          # Model unit tests
 │   ├── user_profile_test.dart       # UserProfile model tests
@@ -132,21 +132,25 @@ testWidgets('should allow entering email and password', (WidgetTester tester) as
 ## Test Best Practices
 
 ### 1. Test Organization
+
 - Use descriptive test names that explain what is being tested
 - Group related tests using `group()` blocks
 - Follow the Arrange-Act-Assert pattern
 
 ### 2. Test Data
+
 - Use realistic test data that represents actual usage
 - Test edge cases and boundary conditions
 - Avoid hardcoded values when possible
 
 ### 3. Mocking
+
 - Mock external dependencies (Firebase, APIs) in service tests
 - Use `ProviderScope` for testing widgets that use Riverpod
 - Keep mocks simple and focused
 
 ### 4. Assertions
+
 - Use specific assertions that test the exact behavior
 - Avoid testing implementation details
 - Test both positive and negative scenarios
@@ -198,6 +202,7 @@ When adding new features, follow these steps:
 4. **Update this README** with new test information
 
 ### Test File Naming Convention
+
 - Model tests: `{model_name}_test.dart`
 - Service tests: `{service_name}_test.dart`
 - UI tests: `{screen_name}_test.dart`
@@ -220,4 +225,4 @@ When adding new features, follow these steps:
 1. **Integration Tests**: Add end-to-end tests for critical user flows
 2. **Golden Tests**: Add visual regression tests for UI components
 3. **Performance Tests**: Add tests for app performance under load
-4. **Accessibility Tests**: Ensure UI components meet accessibility standards 
+4. **Accessibility Tests**: Ensure UI components meet accessibility standards
