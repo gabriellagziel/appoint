@@ -13,7 +13,6 @@ class MockFirebaseAnalytics extends Mock implements FirebaseAnalytics {}
 
 void main() {
   setUpAll(() async {
-    TestWidgetsFlutterBinding.ensureInitialized();
     await registerFirebaseMock();
   });
 
