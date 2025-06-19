@@ -8,5 +8,6 @@ build/
 flutter/
 flutter.tar.xz
 .flutter-plugins
+.env
 .flutter-plugins-dependencies
 pubspec.lock
