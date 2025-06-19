@@ -16,7 +16,6 @@ late MockFirebaseFirestore mockFirestore;
 void main() {
   return;
   setUpAll(() async {
-    TestWidgetsFlutterBinding.ensureInitialized();
     await registerFirebaseMock();
     mockFirestore = MockFirebaseFirestore();
     broadcastService = BroadcastService(firestore: mockFirestore);
