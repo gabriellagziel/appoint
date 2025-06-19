@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../providers/auth_provider.dart';
-import '../../providers/facebook_auth_provider.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -14,6 +13,7 @@ class LoginScreen extends ConsumerStatefulWidget {
 class _LoginScreenState extends ConsumerState<LoginScreen> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  bool _isLoading = false;
 
   @override
   void dispose() {
@@ -40,27 +40,31 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               obscureText: true,
             ),
             const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () async {
-                await ref.read(authServiceProvider).signIn(
-                      _emailController.text,
-                      _passwordController.text,
-                    );
-                  // Trigger provider refresh and ignore the returned value.
-                  // ignore: unused_result
-                  ref.refresh(authStateProvider);
-              },
-              child: const Text('Sign In'),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () async {
-                await ref.read(facebookAuthProvider).login();
-                // ignore: unused_result
-                ref.refresh(authStateProvider);
-              },
-              child: const Text('Login with Facebook'),
-            ),
+            _isLoading
+                ? const CircularProgressIndicator()
+                : ElevatedButton(
+                    onPressed: () async {
+                      setState(() => _isLoading = true);
+                      try {
+                        await ref.read(authServiceProvider).signIn(
+                          _emailController.text,
+                          _passwordController.text,
+                        );
+                        if (!mounted) return;
+                        // ignore: unused_result
+                        ref.refresh(authStateProvider);
+                      } catch (e) {
+                        if (mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(content: Text('Login failed: $e')),
+                          );
+                        }
+                      } finally {
+                        if (mounted) setState(() => _isLoading = false);
+                      }
+                    },
+                    child: const Text('Sign In'),
+                  ),
           ],
         ),
       ),

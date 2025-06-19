@@ -1,3 +1,4 @@
+// ignore_for_file: subtype_of_sealed_class
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -53,6 +54,7 @@ class _FakeCollectionReference
   @override
   Stream<QuerySnapshot<Map<String, dynamic>>> snapshots({
     bool includeMetadataChanges = false,
+    ListenSource source = ListenSource.defaultSource,
   }) async* {
     yield await get();
   }
@@ -111,15 +113,16 @@ class _FakeDocumentReference
   }
 
   @override
-  Future<void> update(Map<String, dynamic> data) async {
+  Future<void> update(Map<Object, Object?> data) async {
     final current = _data ?? <String, dynamic>{};
-    current.addAll(data);
+    current.addAll(Map<String, dynamic>.from(data));
     _data = current;
   }
 
   @override
   Stream<DocumentSnapshot<Map<String, dynamic>>> snapshots({
     bool includeMetadataChanges = false,
+    ListenSource source = ListenSource.defaultSource,
   }) async* {
     yield await get();
   }
@@ -172,5 +175,5 @@ class _FakeQueryDocumentSnapshot extends _FakeDocumentSnapshot
       : super(id, data);
 
   @override
-  Map<String, dynamic> get data => Map.from(super.data()!);
+  Map<String, dynamic> data() => Map.from(super.data()!);
 }
