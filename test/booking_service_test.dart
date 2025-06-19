@@ -1,9 +1,8 @@
-@Skip("Firebase issues")
-import "package:test/test.dart";
+@Skip('Pending Firebase setup conflicts')
+import 'package:flutter_test/flutter_test.dart';
 
 import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:appoint/models/booking.dart';
-import 'package:flutter_test/flutter_test.dart';
 import './test_setup.dart';
 import './fake_firebase_firestore.dart';
 

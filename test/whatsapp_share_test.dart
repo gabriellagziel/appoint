@@ -1,4 +1,4 @@
-@Skip("Firebase issues")
+@Skip('Pending Firebase setup conflicts')
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/services/whatsapp_share_service.dart';
