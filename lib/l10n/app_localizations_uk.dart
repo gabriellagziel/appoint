@@ -651,4 +651,65 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Посол';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Станьте Послом';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Допоможіть розвивати наше співтовариство вашою мовою та регіоном.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Почати Зараз';
+
+  @override
+  String get ambassadorDashboardTitle => 'Панель Посла';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Огляд вашої статистики та активності';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Запрошені Користувачі Цього Тижня';
+
+  @override
+  String get ambassadorDashboardRemainingSlots => 'Залишилися Місця Послів';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Країна та Мова';
+
+  @override
+  String get ambassadorQuotaFull => 'Квота послів заповнена у вашому регіоні.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Місця послів доступні!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Ви активний посол.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Ви не маєте права на статус посла.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Очікування доступності місця...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Ваш статус посла було скасовано.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Тільки дорослі облікові записи можуть стати послами.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Квота послів для вашої країни та мови досягнута.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Посольство надається автоматично кваліфікованим користувачам.';
 }

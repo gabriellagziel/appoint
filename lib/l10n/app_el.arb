@@ -1,0 +1,966 @@
+{
+  "@@locale": "el",
+  "ambassadorTitle": "Πρέσβης",
+  "ambassadorOnboardingTitle": "Γίνετε Πρέσβης",
+  "ambassadorOnboardingSubtitle": "Βοηθήστε να αναπτύξουμε την κοινότητά μας στη γλώσσα και την περιοχή σας.",
+  "ambassadorOnboardingButton": "Ξεκινήστε Τώρα",
+  "ambassadorDashboardTitle": "Πίνακας Ελέγχου Πρέσβη",
+  "ambassadorDashboardSubtitle": "Επισκόπηση των στατιστικών και δραστηριοτήτων σας",
+  "ambassadorDashboardChartLabel": "Προσκληθέντες Χρήστες Αυτή την Εβδομάδα",
+  "ambassadorDashboardRemainingSlots": "Εναπομείναντες Θέσεις Πρέσβη",
+  "ambassadorDashboardCountryLanguage": "Χώρα και Γλώσσα",
+  "ambassadorQuotaFull": "Η ποσόστωση πρέσβη είναι πλήρης στην περιοχή σας.",
+  "ambassadorQuotaAvailable": "Θέσεις πρέσβη διαθέσιμες!",
+  "ambassadorStatusAssigned": "Είστε ενεργός πρέσβης.",
+  "ambassadorStatusNotEligible": "Δεν είστε επιλέξιμος για το καθεστώς πρέσβη.",
+  "ambassadorStatusWaiting": "Αναμονή για διαθεσιμότητα θέσης...",
+  "ambassadorStatusRevoked": "Το καθεστώς πρέσβη σας έχει ανακληθεί.",
+  "ambassadorNoticeAdultOnly": "Μόνο λογαριασμοί ενηλίκων μπορούν να γίνουν πρέσβεις.",
+  "ambassadorNoticeQuotaReached": "Η ποσόστωση πρέσβη για τη χώρα και γλώσσα σας έχει εξαντληθεί.",
+  "ambassadorNoticeAutoAssign": "Η πρεσβεία χορηγείται αυτόματα σε επιλέξιμους χρήστες.",
+  "appTitle": "Appoint",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "welcome": "Καλώς ήρθατε",
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "home": "Αρχική",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "menu": "Μενού",
+  "@menu": {
+    "description": "Menu navigation label"
+  },
+  "profile": "Προφίλ",
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "signOut": "Αποσύνδεση",
+  "@signOut": {
+    "description": "Sign out button label"
+  },
+  "login": "Σύνδεση",
+  "@login": {
+    "description": "Login button label"
+  },
+  "email": "Ηλεκτρονικό ταχυδρομείο",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "Κωδικός πρόσβασης",
+  "@password": {
+    "description": "Password field label"
+  },
+  "signIn": "Είσοδος",
+  "@signIn": {
+    "description": "Sign in button label"
+  },
+  "bookMeeting": "Κλείσιμο συνάντησης",
+  "@bookMeeting": {
+    "description": "Book meeting button label"
+  },
+  "bookAppointment": "Κλείσιμο ραντεβού",
+  "@bookAppointment": {
+    "description": "Book appointment button label"
+  },
+  "bookingRequest": "Αίτημα κράτησης",
+  "@bookingRequest": {
+    "description": "Booking request label"
+  },
+  "confirmBooking": "Επιβεβαίωση κράτησης",
+  "@confirmBooking": {
+    "description": "Confirm booking button label"
+  },
+  "chatBooking": "Κράτηση μέσω συνομιλίας",
+  "@chatBooking": {
+    "description": "Chat booking label"
+  },
+  "bookViaChat": "Κλείσιμο μέσω συνομιλίας",
+  "@bookViaChat": {
+    "description": "Book via chat button label"
+  },
+  "submitBooking": "Υποβολή κράτησης",
+  "@submitBooking": {
+    "description": "Submit booking button label"
+  },
+  "next": "Επόμενο",
+  "@next": {
+    "description": "Label for the next button"
+  },
+  "selectStaff": "Επιλογή προσωπικού",
+  "@selectStaff": {
+    "description": "Label for staff selection dropdown"
+  },
+  "pickDate": "Επιλέξτε ημερομηνία",
+  "@pickDate": {
+    "description": "Label for date picker"
+  },
+  "staff": "Προσωπικό",
+  "@staff": {
+    "description": "Staff label"
+  },
+  "service": "Υπηρεσία",
+  "@service": {
+    "description": "Service label"
+  },
+  "dateTime": "Ημερομηνία και ώρα",
+  "@dateTime": {
+    "description": "Date and time label"
+  },
+  "duration": "Διάρκεια: {duration} λεπτά",
+  "@duration": {
+    "description": "Duration label with parameter",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "notSelected": "Δεν έχει επιλεγεί",
+  "@notSelected": {
+    "description": "Not selected state"
+  },
+  "noSlots": "Δεν υπάρχουν διαθέσιμα ραντεβού",
+  "@noSlots": {
+    "description": "Message shown when no time slots are available"
+  },
+  "bookingConfirmed": "Η κράτηση επιβεβαιώθηκε",
+  "@bookingConfirmed": {
+    "description": "Booking confirmed message"
+  },
+  "failedToConfirmBooking": "Αποτυχία επιβεβαίωσης κράτησης",
+  "@failedToConfirmBooking": {
+    "description": "Failed to confirm booking message"
+  },
+  "noBookingsFound": "Δεν βρέθηκαν κρατήσεις",
+  "@noBookingsFound": {
+    "description": "No bookings found message"
+  },
+  "errorLoadingBookings": "Σφάλμα φόρτωσης κρατήσεων: {error}",
+  "@errorLoadingBookings": {
+    "description": "Error loading bookings message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "shareOnWhatsApp": "Κοινοποίηση στο WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Label for WhatsApp share button"
+  },
+  "shareMeetingInvitation": "Κοινοποιήστε την πρόσκληση συνάντησης:",
+  "@shareMeetingInvitation": {
+    "description": "Title for meeting invitation sharing section"
+  },
+  "meetingReadyMessage": "Η συνάντηση είναι έτοιμη! Θέλετε να την στείλετε στην ομάδα σας;",
+  "@meetingReadyMessage": {
+    "description": "Message shown in WhatsApp share dialog"
+  },
+  "customizeMessage": "Προσαρμόστε το μήνυμά σας...",
+  "@customizeMessage": {
+    "description": "Hint text for message customization"
+  },
+  "saveGroupForRecognition": "Αποθήκευση ομάδας για αναγνώριση στο μέλλον",
+  "@saveGroupForRecognition": {
+    "description": "Label for group recognition checkbox"
+  },
+  "groupNameOptional": "Όνομα ομάδας (προαιρετικό)",
+  "@groupNameOptional": {
+    "description": "Label for group name input field"
+  },
+  "enterGroupName": "Εισάγετε όνομα ομάδας για αναγνώριση",
+  "@enterGroupName": {
+    "description": "Hint text for group name input"
+  },
+  "knownGroupDetected": "Ανιχνεύθηκε γνωστή ομάδα",
+  "@knownGroupDetected": {
+    "description": "Message shown when a known group is detected"
+  },
+  "meetingSharedSuccessfully": "Η συνάντηση κοινοποιήθηκε επιτυχώς!",
+  "@meetingSharedSuccessfully": {
+    "description": "Success message when meeting is shared"
+  },
+  "bookingConfirmedShare": "Η κράτηση επιβεβαιώθηκε! Μπορείτε τώρα να κοινοποιήσετε την πρόσκληση.",
+  "@bookingConfirmedShare": {
+    "description": "Message shown after booking confirmation"
+  },
+  "defaultShareMessage": "Γεια! Προγραμματίσαμε μια συνάντηση μέσω APP‑OINT. Κάντε κλικ εδώ για επιβεβαίωση ή πρόταση άλλης ώρας:",
+  "@defaultShareMessage": {
+    "description": "Default message for WhatsApp sharing"
+  },
+  "dashboard": "Πίνακας ελέγχου",
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "businessDashboard": "Επιχειρηματικός πίνακας",
+  "@businessDashboard": {
+    "description": "Business dashboard label"
+  },
+  "myProfile": "Το προφίλ μου",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "noProfileFound": "Δεν βρέθηκε προφίλ",
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "errorLoadingProfile": "Σφάλμα φόρτωσης προφίλ",
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "myInvites": "Οι προσκλήσεις μου",
+  "@myInvites": {
+    "description": "My invites label"
+  },
+  "inviteDetail": "Λεπτομέρειες πρόσκλησης",
+  "@inviteDetail": {
+    "description": "Invite detail label"
+  },
+  "inviteContact": "Επαφή πρόσκλησης",
+  "@inviteContact": {
+    "description": "Invite contact label"
+  },
+  "noInvites": "Δεν υπάρχουν προσκλήσεις",
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "errorLoadingInvites": "Σφάλμα φόρτωσης προσκλήσεων",
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "accept": "Αποδοχή",
+  "@accept": {
+    "description": "Accept button label"
+  },
+  "decline": "Απόρριψη",
+  "@decline": {
+    "description": "Decline button label"
+  },
+  "sendInvite": "Αποστολή πρόσκλησης",
+  "@sendInvite": {
+    "description": "Send invite button label"
+  },
+  "name": "Όνομα",
+  "@name": {
+    "description": "Name field label"
+  },
+  "phoneNumber": "Τηλέφωνο",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "emailOptional": "Ηλεκτρονικό ταχυδρομείο (προαιρετικό)",
+  "@emailOptional": {
+    "description": "Optional email field label"
+  },
+  "requiresInstallFallback": "Απαιτεί εγκατάσταση",
+  "@requiresInstallFallback": {
+    "description": "Requires installation fallback message"
+  },
+  "notifications": "Ειδοποιήσεις",
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "notificationSettings": "Ρυθμίσεις ειδοποιήσεων",
+  "@notificationSettings": {
+    "description": "Notification settings label"
+  },
+  "enableNotifications": "Ενεργοποίηση ειδοποιήσεων",
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "errorFetchingToken": "Σφάλμα λήψης κλειδιού",
+  "@errorFetchingToken": {
+    "description": "Error fetching token message"
+  },
+  "fcmToken": "FCM Token: {token}",
+  "@fcmToken": {
+    "description": "FCM token display",
+    "placeholders": {
+      "token": {
+        "type": "String"
+      }
+    }
+  },
+  "familyDashboard": "Οικογενειακός πίνακας",
+  "@familyDashboard": {
+    "description": "Family dashboard label"
+  },
+  "pleaseLoginForFamilyFeatures": "Συνδεθείτε για πρόσβαση σε οικογενειακές λειτουργίες",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "familyMembers": "Μέλη οικογένειας",
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "invite": "Πρόσκληση",
+  "@invite": {
+    "description": "Invite button label"
+  },
+  "pendingInvites": "Εκκρεμείς προσκλήσεις",
+  "@pendingInvites": {
+    "description": "Pending invites label"
+  },
+  "connectedChildren": "Συνδεδεμένα παιδιά",
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "noFamilyMembersYet": "Δεν υπάρχουν ακόμα μέλη οικογένειας. Στείλτε μια πρόσκληση για να ξεκινήσετε!",
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "errorLoadingFamilyLinks": "Σφάλμα φόρτωσης οικογενειακών συνδέσεων: {error}",
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteChild": "Πρόσκληση παιδιού",
+  "@inviteChild": {
+    "description": "Invite child button label"
+  },
+  "managePermissions": "Διαχείριση δικαιωμάτων",
+  "@managePermissions": {
+    "description": "Manage permissions label"
+  },
+  "removeChild": "Αφαίρεση παιδιού",
+  "@removeChild": {
+    "description": "Remove child button label"
+  },
+  "loading": "Φόρτωση...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "childEmail": "Email παιδιού",
+  "@childEmail": {
+    "description": "Child email field label"
+  },
+  "childEmailOrPhone": "Email ή τηλέφωνο παιδιού",
+  "@childEmailOrPhone": {
+    "description": "Child email or phone field label"
+  },
+  "enterChildEmail": "Εισάγετε email παιδιού",
+  "@enterChildEmail": {
+    "description": "Enter child email hint"
+  },
+  "otpCode": "Κωδικός OTP",
+  "@otpCode": {
+    "description": "OTP code field label"
+  },
+  "enterOtp": "Εισάγετε OTP",
+  "@enterOtp": {
+    "description": "Enter OTP hint"
+  },
+  "verify": "Επαλήθευση",
+  "@verify": {
+    "description": "Verify button label"
+  },
+  "otpResentSuccessfully": "Ο κωδικός OTP στάλθηκε ξανά με επιτυχία!",
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "failedToResendOtp": "Αποτυχία επανυποβολής OTP: {error}",
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "childLinkedSuccessfully": "Το παιδί συνδέθηκε με επιτυχία!",
+  "@childLinkedSuccessfully": {
+    "description": "Child linked successfully message"
+  },
+  "invitationSentSuccessfully": "Η πρόσκληση στάλθηκε επιτυχώς!",
+  "@invitationSentSuccessfully": {
+    "description": "Invitation sent successfully message"
+  },
+  "failedToSendInvitation": "Αποτυχία αποστολής πρόσκλησης: {error}",
+  "@failedToSendInvitation": {
+    "description": "Failed to send invitation message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "pleaseEnterValidEmail": "Παρακαλώ εισάγετε έγκυρο email",
+  "@pleaseEnterValidEmail": {
+    "description": "Please enter valid email message"
+  },
+  "pleaseEnterValidEmailOrPhone": "Παρακαλώ εισάγετε έγκυρο email ή τηλέφωνο",
+  "@pleaseEnterValidEmailOrPhone": {
+    "description": "Please enter valid email or phone message"
+  },
+  "invalidCode": "Μη έγκυρος κωδικός, δοκιμάστε ξανά",
+  "@invalidCode": {
+    "description": "Invalid code message"
+  },
+  "cancelInvite": "Ακύρωση πρόσκλησης",
+  "@cancelInvite": {
+    "description": "Cancel invite button label"
+  },
+  "cancelInviteConfirmation": "Είστε σίγουρος ότι θέλετε να ακυρώσετε αυτή την πρόσκληση;",
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "no": "Όχι",
+  "@no": {
+    "description": "No button label"
+  },
+  "yesCancel": "Ναι, ακύρωση",
+  "@yesCancel": {
+    "description": "Yes cancel button label"
+  },
+  "inviteCancelledSuccessfully": "Η πρόσκληση ακυρώθηκε επιτυχώς!",
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "failedToCancelInvite": "Αποτυχία ακύρωσης πρόσκλησης: {error}",
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "revokeAccess": "Ανάκληση πρόσβασης",
+  "@revokeAccess": {
+    "description": "Revoke access button label"
+  },
+  "revokeAccessConfirmation": "Είστε σίγουρος ότι θέλετε να ανακαλέσετε την πρόσβαση για αυτό το παιδί; Αυτή η ενέργεια δεν αναιρείται.",
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "revoke": "Ανακαλέστε",
+  "@revoke": {
+    "description": "Revoke button label"
+  },
+  "accessRevokedSuccessfully": "Η πρόσβαση ανακλήθηκε επιτυχώς!",
+  "@accessRevokedSuccessfully": {
+    "description": "Access revoked successfully message"
+  },
+  "failedToRevokeAccess": "Αποτυχία ανάκλησης πρόσβασης: {error}",
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "grantConsent": "Παροχή συγκατάθεσης",
+  "@grantConsent": {
+    "description": "Grant consent button label"
+  },
+  "revokeConsent": "Ανάκληση συγκατάθεσης",
+  "@revokeConsent": {
+    "description": "Revoke consent button label"
+  },
+  "consentGrantedSuccessfully": "Η συγκατάθεση δόθηκε επιτυχώς!",
+  "@consentGrantedSuccessfully": {
+    "description": "Consent granted successfully message"
+  },
+  "consentRevokedSuccessfully": "Η συγκατάθεση ανακλήθηκε επιτυχώς!",
+  "@consentRevokedSuccessfully": {
+    "description": "Consent revoked successfully message"
+  },
+  "failedToUpdateConsent": "Αποτυχία ενημέρωσης συγκατάθεσης: {error}",
+  "@failedToUpdateConsent": {
+    "description": "Failed to update consent message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "checkingPermissions": "Έλεγχος δικαιωμάτων...",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "cancel": "Ακύρωση",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "close": "Κλείσιμο",
+  "@close": {
+    "description": "Close button label"
+  },
+  "save": "Αποθήκευση",
+  "@save": {
+    "description": "Save button label"
+  },
+  "sendNow": "Αποστολή τώρα",
+  "@sendNow": {
+    "description": "Send now button label"
+  },
+  "details": "Λεπτομέρειες",
+  "@details": {
+    "description": "Details button label"
+  },
+  "noBroadcastMessages": "Δεν υπάρχουν ακόμα μηνύματα broadcast",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "errorCheckingPermissions": "Σφάλμα ελέγχου δικαιωμάτων: {error}",
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mediaOptional": "Μέσα (προαιρετικά)",
+  "@mediaOptional": {
+    "description": "Media optional section title"
+  },
+  "pickImage": "Επιλογή εικόνας",
+  "@pickImage": {
+    "description": "Pick image button label"
+  },
+  "pickVideo": "Επιλογή βίντεο",
+  "@pickVideo": {
+    "description": "Pick video button label"
+  },
+  "pollOptions": "Επιλογές ψηφοφορίας:",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "targetingFilters": "Φίλτρα στόχευσης",
+  "@targetingFilters": {
+    "description": "Targeting filters section title"
+  },
+  "scheduling": "Προγραμματισμός",
+  "@scheduling": {
+    "description": "Scheduling section title"
+  },
+  "scheduleForLater": "Προγραμματισμός για αργότερα",
+  "@scheduleForLater": {
+    "description": "Schedule for later option"
+  },
+  "errorEstimatingRecipients": "Σφάλμα εκτίμησης παραληπτών: {error}",
+  "@errorEstimatingRecipients": {
+    "description": "Error estimating recipients message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingImage": "Σφάλμα επιλογής εικόνας: {error}",
+  "@errorPickingImage": {
+    "description": "Error picking image message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingVideo": "Σφάλμα επιλογής βίντεο: {error}",
+  "@errorPickingVideo": {
+    "description": "Error picking video message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noPermissionForBroadcast": "Δεν έχετε άδεια για δημιουργία μηνυμάτων broadcast.",
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "messageSavedSuccessfully": "Το μήνυμα αποθηκεύτηκε με επιτυχία",
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "errorSavingMessage": "Σφάλμα αποθήκευσης μηνύματος: {error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "messageSentSuccessfully": "Το μήνυμα στάλθηκε με επιτυχία",
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "errorSendingMessage": "Σφάλμα αποστολής μηνύματος: {error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "content": "Περιεχόμενο: {content}",
+  "@content": {
+    "description": "Content display",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "type": "Τύπος: {type}",
+  "@type": {
+    "description": "Type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "link": "Σύνδεσμος: {link}",
+  "@link": {
+    "description": "Link display",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "status": "Κατάσταση: {status}",
+  "@status": {
+    "description": "Status display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "recipients": "Παραλήπτες: {count}",
+  "@recipients": {
+    "description": "Recipients display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "opened": "Ανοίχθηκε: {count}",
+  "@opened": {
+    "description": "Opened count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "clicked": "Κλικ: {count}",
+  "@clicked": {
+    "description": "Clicked count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "created": "Δημιουργήθηκε: {date}",
+  "@created": {
+    "description": "Created date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduled": "Προγραμματίστηκε: {date}",
+  "@scheduled": {
+    "description": "Scheduled date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "organizations": "Οργανισμοί",
+  "@organizations": {
+    "description": "Organizations screen title"
+  },
+  "noOrganizations": "Δεν υπάρχουν οργανισμοί",
+  "@noOrganizations": {
+    "description": "No organizations message"
+  },
+  "errorLoadingOrganizations": "Σφάλμα φόρτωσης οργανισμών",
+  "@errorLoadingOrganizations": {
+    "description": "Error loading organizations message"
+  },
+  "members": "{count} μέλη",
+  "@members": {
+    "description": "Members count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "users": "Χρήστες",
+  "@users": {
+    "description": "Users screen title"
+  },
+  "noUsers": "Δεν υπάρχουν χρήστες",
+  "@noUsers": {
+    "description": "No users message"
+  },
+  "errorLoadingUsers": "Σφάλμα φόρτωσης χρηστών",
+  "@errorLoadingUsers": {
+    "description": "Error loading users message"
+  },
+  "changeRole": "Αλλαγή ρόλου",
+  "@changeRole": {
+    "description": "Change role button label"
+  },
+  "totalAppointments": "Συνολικά ραντεβού",
+  "@totalAppointments": {
+    "description": "Total appointments label"
+  },
+  "completedAppointments": "Ολοκληρωμένα ραντεβού",
+  "@completedAppointments": {
+    "description": "Completed appointments label"
+  },
+  "revenue": "Έσοδα",
+  "@revenue": {
+    "description": "Revenue label"
+  },
+  "errorLoadingStats": "Σφάλμα φόρτωσης στατιστικών",
+  "@errorLoadingStats": {
+    "description": "Error loading stats message"
+  },
+  "appointment": "Ραντεβού: {id}",
+  "@appointment": {
+    "description": "Appointment display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "from": "Από: {name}",
+  "@from": {
+    "description": "From display",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "phone": "Τηλέφωνο: {number}",
+  "@phone": {
+    "description": "Phone display",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "noRouteDefined": "Δεν έχει οριστεί διαδρομή για {route}",
+  "@noRouteDefined": {
+    "description": "No route defined message",
+    "placeholders": {
+      "route": {
+        "type": "String"
+      }
+    }
+  },
+  "meetingDetails": "Λεπτομέρειες συνάντησης",
+  "@meetingDetails": {
+    "description": "Meeting details title"
+  },
+  "meetingId": "Αναγνωριστικό συνάντησης: {id}",
+  "@meetingId": {
+    "description": "Meeting ID display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "creator": "Δημιουργός: {id}",
+  "@creator": {
+    "description": "Creator display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "context": "Συμφραζόμενα: {id}",
+  "@context": {
+    "description": "Context display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "group": "Ομάδα: {id}",
+  "@group": {
+    "description": "Group display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "requestPrivateSession": "Αίτηση για ιδιωτική συνεδρία",
+  "@requestPrivateSession": {
+    "description": "Request private session button label"
+  },
+  "privacyRequestSent": "Αίτηση ιδιωτικότητας στάλθηκε στους γονείς!",
+  "@privacyRequestSent": {
+    "description": "Privacy request sent message"
+  },
+  "failedToSendPrivacyRequest": "Αποτυχία αποστολής αίτησης ιδιωτικότητας: {error}",
+  "@failedToSendPrivacyRequest": {
+    "description": "Failed to send privacy request message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPrivacyRequests": "Σφάλμα φόρτωσης αιτημάτων ιδιωτικότητας: {error}",
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "requestType": "Αίτημα {type}",
+  "@requestType": {
+    "description": "Request type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "statusColon": "Κατάσταση: {status}",
+  "@statusColon": {
+    "description": "Status with colon display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToActionPrivacyRequest": "Αποτυχία {action} αιτήματος ιδιωτικότητας: {error}",
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message",
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "yes": "Ναι",
+  "@yes": {
+    "description": "Yes button label"
+  },
+  "send": "Αποστολή",
+  "@send": {
+    "description": "Send button label"
+  },
+  "permissions": "Δικαιώματα",
+  "@permissions": {
+    "description": "Permissions label"
+  },
+  "permissionsFor": "Δικαιώματα – {childId}",
+  "@permissionsFor": {
+    "description": "Permissions for child label",
+    "placeholders": {
+      "childId": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPermissions": "Σφάλμα φόρτωσης δικαιωμάτων: {error}",
+  "@errorLoadingPermissions": {
+    "description": "Error loading permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "none": "Κανένα",
+  "@none": {
+    "description": "None option"
+  },
+  "readOnly": "Μόνο ανάγνωση",
+  "@readOnly": {
+    "description": "Read only option"
+  },
+  "readWrite": "Ανάγνωση και εγγραφή",
+  "@readWrite": {
+    "description": "Read and write option"
+  },
+  "permissionUpdated": "Το δικαίωμα {category} ενημερώθηκε σε {newValue}",
+  "@permissionUpdated": {
+    "description": "Permission updated message",
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "newValue": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdatePermission": "Αποτυχία ενημέρωσης δικαιώματος: {error}",
+  "@failedToUpdatePermission": {
+    "description": "Failed to update permission message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "invited": "Προσκληθεί: {date}",
+  "@invited": {
+    "description": "Invited date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adminBroadcast": "Broadcast διαχειριστή",
+  "@adminBroadcast": {
+    "description": "Admin broadcast screen title"
+  },
+  "composeBroadcastMessage": "Σύνθεση μηνύματος broadcast",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message dialog title"
+  },
+  "adminScreenTBD": "Οθόνη διαχειριστή – Σε εξέλιξη",
+  "@adminScreenTBD": {
+    "description": "Admin screen placeholder"
+  },
+  "staffScreenTBD": "Οθόνη προσωπικού – Σε εξέλιξη",
+  "@staffScreenTBD": {
+    "description": "Staff screen placeholder"
+  },
+  "clientScreenTBD": "Οθόνη πελάτη – Σε εξέλιξη",
+  "@clientScreenTBD": {
+    "description": "Client screen placeholder"
+  }
+}

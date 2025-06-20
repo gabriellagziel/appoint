@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Duta",
+  "ambassadorOnboardingTitle": "Jadi Duta",
+  "ambassadorOnboardingSubtitle": "Bantu kami berkembang dalam bahasa dan rantau anda.",
+  "ambassadorOnboardingButton": "Mula Sekarang",
+  "ambassadorDashboardTitle": "Papan Pemuka Duta",
+  "ambassadorDashboardSubtitle": "Gambaran keseluruhan statistik dan aktiviti anda",
+  "ambassadorDashboardChartLabel": "Pengguna Diundang Minggu Ini",
+  "ambassadorDashboardRemainingSlots": "Slot Duta Yang Tinggal",
+  "ambassadorDashboardCountryLanguage": "Negara & Bahasa",
+  "ambassadorQuotaFull": "Kuota duta penuh di rantau anda.",
+  "ambassadorQuotaAvailable": "Slot duta tersedia!",
+  "ambassadorStatusAssigned": "Anda adalah duta aktif.",
+  "ambassadorStatusNotEligible": "Anda tidak layak untuk status duta.",
+  "ambassadorStatusWaiting": "Menunggu ketersediaan slot...",
+  "ambassadorStatusRevoked": "Status duta anda telah dibatalkan.",
+  "ambassadorNoticeAdultOnly": "Hanya akaun dewasa boleh menjadi duta.",
+  "ambassadorNoticeQuotaReached": "Kuota duta untuk negara dan bahasa anda telah dicapai.",
+  "ambassadorNoticeAutoAssign": "Dutawasiat diberikan secara automatik kepada pengguna yang layak."
 }

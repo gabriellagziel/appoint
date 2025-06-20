@@ -5,38 +5,56 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'app_localizations_am.dart';
 import 'app_localizations_ar.dart';
 import 'app_localizations_bg.dart';
+import 'app_localizations_bn.dart';
 import 'app_localizations_cs.dart';
 import 'app_localizations_da.dart';
 import 'app_localizations_de.dart';
+import 'app_localizations_el.dart';
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
+import 'app_localizations_fa.dart';
 import 'app_localizations_fi.dart';
 import 'app_localizations_fr.dart';
+import 'app_localizations_gu.dart';
+import 'app_localizations_ha.dart';
 import 'app_localizations_he.dart';
+import 'app_localizations_hi.dart';
+import 'app_localizations_hr.dart';
 import 'app_localizations_hu.dart';
 import 'app_localizations_id.dart';
 import 'app_localizations_it.dart';
 import 'app_localizations_ja.dart';
+import 'app_localizations_kn.dart';
 import 'app_localizations_ko.dart';
 import 'app_localizations_lt.dart';
+import 'app_localizations_lv.dart';
+import 'app_localizations_mr.dart';
 import 'app_localizations_ms.dart';
+import 'app_localizations_ne.dart';
 import 'app_localizations_nl.dart';
 import 'app_localizations_no.dart';
 import 'app_localizations_pl.dart';
 import 'app_localizations_pt.dart';
 import 'app_localizations_ro.dart';
 import 'app_localizations_ru.dart';
+import 'app_localizations_si.dart';
 import 'app_localizations_sk.dart';
 import 'app_localizations_sl.dart';
 import 'app_localizations_sr.dart';
 import 'app_localizations_sv.dart';
+import 'app_localizations_sw.dart';
+import 'app_localizations_ta.dart';
 import 'app_localizations_th.dart';
+import 'app_localizations_tl.dart';
 import 'app_localizations_tr.dart';
 import 'app_localizations_uk.dart';
+import 'app_localizations_ur.dart';
 import 'app_localizations_vi.dart';
 import 'app_localizations_zh.dart';
+import 'app_localizations_zu.dart';
 
 // ignore_for_file: type=lint
 
@@ -124,38 +142,57 @@ abstract class AppLocalizations {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
+    Locale('am'),
     Locale('ar'),
     Locale('bg'),
+    Locale('bn'),
     Locale('cs'),
     Locale('da'),
     Locale('de'),
+    Locale('el'),
     Locale('en'),
     Locale('es'),
+    Locale('fa'),
     Locale('fi'),
     Locale('fr'),
+    Locale('gu'),
+    Locale('ha'),
     Locale('he'),
+    Locale('hi'),
+    Locale('hr'),
     Locale('hu'),
     Locale('id'),
     Locale('it'),
     Locale('ja'),
+    Locale('kn'),
     Locale('ko'),
     Locale('lt'),
+    Locale('lv'),
+    Locale('mr'),
     Locale('ms'),
+    Locale('ne'),
     Locale('nl'),
     Locale('no'),
     Locale('pl'),
     Locale('pt'),
     Locale('ro'),
     Locale('ru'),
+    Locale('si'),
     Locale('sk'),
     Locale('sl'),
     Locale('sr'),
     Locale('sv'),
+    Locale('sw'),
+    Locale('ta'),
     Locale('th'),
+    Locale('tl'),
     Locale('tr'),
     Locale('uk'),
+    Locale('ur'),
     Locale('vi'),
-    Locale('zh')
+    Locale('zh'),
+    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'),
+    Locale('zu')
   ];
 
   /// The title of the application
@@ -1243,6 +1280,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Client Screen - To Be Developed'**
   String get clientScreenTBD;
+
+  /// No description provided for @ambassadorTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Global Ambassador'**
+  String get ambassadorTitle;
+
+  /// No description provided for @ambassadorOnboardingTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Become a Voice for Your Country'**
+  String get ambassadorOnboardingTitle;
+
+  /// No description provided for @ambassadorOnboardingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Represent your language and help us grow'**
+  String get ambassadorOnboardingSubtitle;
+
+  /// No description provided for @ambassadorOnboardingButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Now'**
+  String get ambassadorOnboardingButton;
+
+  /// No description provided for @ambassadorDashboardTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Ambassador Dashboard'**
+  String get ambassadorDashboardTitle;
+
+  /// No description provided for @ambassadorDashboardSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your community impact at a glance'**
+  String get ambassadorDashboardSubtitle;
+
+  /// No description provided for @ambassadorDashboardChartLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Users joined via your language'**
+  String get ambassadorDashboardChartLabel;
+
+  /// No description provided for @ambassadorDashboardRemainingSlots.
+  ///
+  /// In en, this message translates to:
+  /// **'Remaining Slots'**
+  String get ambassadorDashboardRemainingSlots;
+
+  /// No description provided for @ambassadorDashboardCountryLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Country / Language'**
+  String get ambassadorDashboardCountryLanguage;
+
+  /// No description provided for @ambassadorQuotaFull.
+  ///
+  /// In en, this message translates to:
+  /// **'All ambassador slots are currently filled.'**
+  String get ambassadorQuotaFull;
+
+  /// No description provided for @ambassadorQuotaAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Slots Available'**
+  String get ambassadorQuotaAvailable;
+
+  /// No description provided for @ambassadorStatusAssigned.
+  ///
+  /// In en, this message translates to:
+  /// **'You are an official ambassador!'**
+  String get ambassadorStatusAssigned;
+
+  /// No description provided for @ambassadorStatusNotEligible.
+  ///
+  /// In en, this message translates to:
+  /// **'You are not eligible for ambassador status.'**
+  String get ambassadorStatusNotEligible;
+
+  /// No description provided for @ambassadorStatusWaiting.
+  ///
+  /// In en, this message translates to:
+  /// **'Waiting for assignment...'**
+  String get ambassadorStatusWaiting;
+
+  /// No description provided for @ambassadorStatusRevoked.
+  ///
+  /// In en, this message translates to:
+  /// **'Your ambassador status was revoked.'**
+  String get ambassadorStatusRevoked;
+
+  /// No description provided for @ambassadorNoticeAdultOnly.
+  ///
+  /// In en, this message translates to:
+  /// **'Only adults can become ambassadors.'**
+  String get ambassadorNoticeAdultOnly;
+
+  /// No description provided for @ambassadorNoticeQuotaReached.
+  ///
+  /// In en, this message translates to:
+  /// **'Ambassador quota for your region is full.'**
+  String get ambassadorNoticeQuotaReached;
+
+  /// No description provided for @ambassadorNoticeAutoAssign.
+  ///
+  /// In en, this message translates to:
+  /// **'Ambassadorship is automatically assigned by the system.'**
+  String get ambassadorNoticeAutoAssign;
 }
 
 class _AppLocalizationsDelegate
@@ -1256,38 +1401,56 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
+        'am',
         'ar',
         'bg',
+        'bn',
         'cs',
         'da',
         'de',
+        'el',
         'en',
         'es',
+        'fa',
         'fi',
         'fr',
+        'gu',
+        'ha',
         'he',
+        'hi',
+        'hr',
         'hu',
         'id',
         'it',
         'ja',
+        'kn',
         'ko',
         'lt',
+        'lv',
+        'mr',
         'ms',
+        'ne',
         'nl',
         'no',
         'pl',
         'pt',
         'ro',
         'ru',
+        'si',
         'sk',
         'sl',
         'sr',
         'sv',
+        'sw',
+        'ta',
         'th',
+        'tl',
         'tr',
         'uk',
+        'ur',
         'vi',
-        'zh'
+        'zh',
+        'zu'
       ].contains(locale.languageCode);
 
   @override
@@ -1295,28 +1458,56 @@ class _AppLocalizationsDelegate
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
+  // Lookup logic when language+script codes are specified.
+  switch (locale.languageCode) {
+    case 'zh':
+      {
+        switch (locale.scriptCode) {
+          case 'Hant':
+            return AppLocalizationsZhHant();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'am':
+      return AppLocalizationsAm();
     case 'ar':
       return AppLocalizationsAr();
     case 'bg':
       return AppLocalizationsBg();
+    case 'bn':
+      return AppLocalizationsBn();
     case 'cs':
       return AppLocalizationsCs();
     case 'da':
       return AppLocalizationsDa();
     case 'de':
       return AppLocalizationsDe();
+    case 'el':
+      return AppLocalizationsEl();
     case 'en':
       return AppLocalizationsEn();
     case 'es':
       return AppLocalizationsEs();
+    case 'fa':
+      return AppLocalizationsFa();
     case 'fi':
       return AppLocalizationsFi();
     case 'fr':
       return AppLocalizationsFr();
+    case 'gu':
+      return AppLocalizationsGu();
+    case 'ha':
+      return AppLocalizationsHa();
     case 'he':
       return AppLocalizationsHe();
+    case 'hi':
+      return AppLocalizationsHi();
+    case 'hr':
+      return AppLocalizationsHr();
     case 'hu':
       return AppLocalizationsHu();
     case 'id':
@@ -1325,12 +1516,20 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsIt();
     case 'ja':
       return AppLocalizationsJa();
+    case 'kn':
+      return AppLocalizationsKn();
     case 'ko':
       return AppLocalizationsKo();
     case 'lt':
       return AppLocalizationsLt();
+    case 'lv':
+      return AppLocalizationsLv();
+    case 'mr':
+      return AppLocalizationsMr();
     case 'ms':
       return AppLocalizationsMs();
+    case 'ne':
+      return AppLocalizationsNe();
     case 'nl':
       return AppLocalizationsNl();
     case 'no':
@@ -1343,6 +1542,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsRo();
     case 'ru':
       return AppLocalizationsRu();
+    case 'si':
+      return AppLocalizationsSi();
     case 'sk':
       return AppLocalizationsSk();
     case 'sl':
@@ -1351,16 +1552,26 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsSr();
     case 'sv':
       return AppLocalizationsSv();
+    case 'sw':
+      return AppLocalizationsSw();
+    case 'ta':
+      return AppLocalizationsTa();
     case 'th':
       return AppLocalizationsTh();
+    case 'tl':
+      return AppLocalizationsTl();
     case 'tr':
       return AppLocalizationsTr();
     case 'uk':
       return AppLocalizationsUk();
+    case 'ur':
+      return AppLocalizationsUr();
     case 'vi':
       return AppLocalizationsVi();
     case 'zh':
       return AppLocalizationsZh();
+    case 'zu':
+      return AppLocalizationsZu();
   }
 
   throw FlutterError(

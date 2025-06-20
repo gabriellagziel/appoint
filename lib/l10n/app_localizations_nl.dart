@@ -651,4 +651,67 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Ambassadeur';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Word Ambassadeur';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Help onze gemeenschap te laten groeien in jouw taal en regio.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Nu Beginnen';
+
+  @override
+  String get ambassadorDashboardTitle => 'Ambassadeur Dashboard';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Overzicht van je statistieken en activiteiten';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Uitgenodigde Gebruikers Deze Week';
+
+  @override
+  String get ambassadorDashboardRemainingSlots =>
+      'Resterende Ambassadeur Plaatsen';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Land & Taal';
+
+  @override
+  String get ambassadorQuotaFull => 'Ambassadeur quotum is vol in jouw regio.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Ambassadeur plaatsen beschikbaar!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Je bent een actieve ambassadeur.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Je bent niet in aanmerking voor ambassadeur status.';
+
+  @override
+  String get ambassadorStatusWaiting =>
+      'Wachten op beschikbaarheid van plaats...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Je ambassadeur status is ingetrokken.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Alleen volwassen accounts kunnen ambassadeur worden.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Het ambassadeur quotum voor jouw land en taal is bereikt.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Ambassadeurschap wordt automatisch toegekend aan gekwalificeerde gebruikers.';
 }

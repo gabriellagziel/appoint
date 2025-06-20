@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "שגריר",
+  "ambassadorOnboardingTitle": "הפוך לשגריר",
+  "ambassadorOnboardingSubtitle": "עזור לנו לגדול בשפה ובאזור שלך.",
+  "ambassadorOnboardingButton": "התחל עכשיו",
+  "ambassadorDashboardTitle": "לוח בקרה של שגריר",
+  "ambassadorDashboardSubtitle": "סקירה של הסטטיסטיקות והפעילות שלך",
+  "ambassadorDashboardChartLabel": "משתמשים שהוזמנו השבוע",
+  "ambassadorDashboardRemainingSlots": "משרות שגריר שנותרו",
+  "ambassadorDashboardCountryLanguage": "מדינה ושפה",
+  "ambassadorQuotaFull": "מכסת השגרירים מלאה באזור שלך.",
+  "ambassadorQuotaAvailable": "משרות שגריר זמינות!",
+  "ambassadorStatusAssigned": "אתה שגריר פעיל.",
+  "ambassadorStatusNotEligible": "אתה לא זכאי למעמד שגריר.",
+  "ambassadorStatusWaiting": "ממתין לזמינות משרה...",
+  "ambassadorStatusRevoked": "מעמד השגריר שלך בוטל.",
+  "ambassadorNoticeAdultOnly": "רק חשבונות של מבוגרים יכולים להפוך לשגרירים.",
+  "ambassadorNoticeQuotaReached": "מכסת השגרירים למדינה ולשפה שלך הושגה.",
+  "ambassadorNoticeAutoAssign": "שגרירות מוענקת אוטומטית למשתמשים מוסמכים."
 }

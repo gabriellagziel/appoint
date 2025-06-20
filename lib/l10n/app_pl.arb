@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Ambasador",
+  "ambassadorOnboardingTitle": "Zostań Ambasadorem",
+  "ambassadorOnboardingSubtitle": "Pomóż rozwijać naszą społeczność w swoim języku i regionie.",
+  "ambassadorOnboardingButton": "Zacznij Teraz",
+  "ambassadorDashboardTitle": "Panel Ambasadora",
+  "ambassadorDashboardSubtitle": "Przegląd Twoich statystyk i aktywności",
+  "ambassadorDashboardChartLabel": "Zaproszeni Użytkownicy w Tym Tygodniu",
+  "ambassadorDashboardRemainingSlots": "Pozostałe Miejsca Ambasadorów",
+  "ambassadorDashboardCountryLanguage": "Kraj i Język",
+  "ambassadorQuotaFull": "Kontyngent ambasadorów jest pełny w Twoim regionie.",
+  "ambassadorQuotaAvailable": "Miejsca ambasadorów dostępne!",
+  "ambassadorStatusAssigned": "Jesteś aktywnym ambasadorem.",
+  "ambassadorStatusNotEligible": "Nie jesteś uprawniony do statusu ambasadora.",
+  "ambassadorStatusWaiting": "Oczekiwanie na dostępność miejsca...",
+  "ambassadorStatusRevoked": "Twój status ambasadora został cofnięty.",
+  "ambassadorNoticeAdultOnly": "Tylko konta dorosłych mogą zostać ambasadorami.",
+  "ambassadorNoticeQuotaReached": "Kontyngent ambasadorów dla Twojego kraju i języka został osiągnięty.",
+  "ambassadorNoticeAutoAssign": "Ambasadorstwo jest przyznawane automatycznie kwalifikowanym użytkownikom."
 }

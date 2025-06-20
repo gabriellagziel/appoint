@@ -651,4 +651,66 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Đại sứ';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Trở thành Đại sứ';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Giúp phát triển cộng đồng của chúng tôi bằng ngôn ngữ và khu vực của bạn.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Bắt đầu Ngay';
+
+  @override
+  String get ambassadorDashboardTitle => 'Bảng điều khiển Đại sứ';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Tổng quan thống kê và hoạt động của bạn';
+
+  @override
+  String get ambassadorDashboardChartLabel => 'Người dùng được mời tuần này';
+
+  @override
+  String get ambassadorDashboardRemainingSlots => 'Vị trí Đại sứ còn lại';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Quốc gia & Ngôn ngữ';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'Hạn ngạch đại sứ đã đầy trong khu vực của bạn.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Vị trí đại sứ có sẵn!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Bạn là một đại sứ tích cực.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Bạn không đủ điều kiện cho trạng thái đại sứ.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Đang chờ vị trí có sẵn...';
+
+  @override
+  String get ambassadorStatusRevoked =>
+      'Trạng thái đại sứ của bạn đã bị thu hồi.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Chỉ tài khoản người lớn mới có thể trở thành đại sứ.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Hạn ngạch đại sứ cho quốc gia và ngôn ngữ của bạn đã đạt.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Đại sứ được cấp tự động cho người dùng đủ điều kiện.';
 }

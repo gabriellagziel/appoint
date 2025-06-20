@@ -651,4 +651,67 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Ambasador';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Devino Ambasador';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Ajută-ne să creștem comunitatea în limba și regiunea ta.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Începe Acum';
+
+  @override
+  String get ambassadorDashboardTitle => 'Panou Ambasador';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Prezentarea generală a statisticilor și activităților tale';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Utilizatori Invitați Această Săptămână';
+
+  @override
+  String get ambassadorDashboardRemainingSlots => 'Locuri Ambasador Rămase';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Țară și Limbă';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'Cota de ambasadori este completă în regiunea ta.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Locuri ambasador disponibile!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Ești un ambasador activ.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Nu ești eligibil pentru statutul de ambasador.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Așteptând disponibilitatea locului...';
+
+  @override
+  String get ambassadorStatusRevoked =>
+      'Statutul tău de ambasador a fost revocat.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Doar conturile adulte pot deveni ambasadori.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Cota de ambasadori pentru țara și limba ta a fost atinsă.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Ambasadoratul este acordat automat utilizatorilor calificați.';
 }

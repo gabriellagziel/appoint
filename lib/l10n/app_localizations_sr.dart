@@ -651,4 +651,65 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Амбасадор';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Постаните Амбасадор';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Помозите нам да растемо на вашем језику и региону.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Започните Сада';
+
+  @override
+  String get ambassadorDashboardTitle => 'Амбасадор Контролна Табла';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Преглед ваших статистика и активности';
+
+  @override
+  String get ambassadorDashboardChartLabel => 'Позвани Корисници Ове Недеље';
+
+  @override
+  String get ambassadorDashboardRemainingSlots =>
+      'Преостала Амбасадорска Места';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Држава и Језик';
+
+  @override
+  String get ambassadorQuotaFull => 'Квота амбасадора је пуна у вашем региону.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Амбасадорска места доступна!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Ви сте активан амбасадор.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Нисте подобни за статус амбасадора.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Чекање доступности места...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Ваш статус амбасадора је опозван.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Само одрасли налози могу постати амбасадори.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Квота амбасадора за вашу земљу и језик је достигнута.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Амбасадорство се аутоматски додељује квалификованим корисницима.';
 }

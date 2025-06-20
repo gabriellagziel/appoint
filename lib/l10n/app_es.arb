@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Embajador",
+  "ambassadorOnboardingTitle": "Conviértete en Embajador",
+  "ambassadorOnboardingSubtitle": "Ayuda a hacer crecer nuestra comunidad en tu idioma y región.",
+  "ambassadorOnboardingButton": "Comenzar Ahora",
+  "ambassadorDashboardTitle": "Panel de Embajador",
+  "ambassadorDashboardSubtitle": "Resumen de tus estadísticas y actividad",
+  "ambassadorDashboardChartLabel": "Usuarios Invitados Esta Semana",
+  "ambassadorDashboardRemainingSlots": "Plazas de Embajador Restantes",
+  "ambassadorDashboardCountryLanguage": "País e Idioma",
+  "ambassadorQuotaFull": "La cuota de embajadores está completa en tu región.",
+  "ambassadorQuotaAvailable": "¡Plazas de embajador disponibles!",
+  "ambassadorStatusAssigned": "Eres un embajador activo.",
+  "ambassadorStatusNotEligible": "No eres elegible para el estatus de embajador.",
+  "ambassadorStatusWaiting": "Esperando disponibilidad de plaza...",
+  "ambassadorStatusRevoked": "Tu estatus de embajador ha sido revocado.",
+  "ambassadorNoticeAdultOnly": "Solo las cuentas de adultos pueden convertirse en embajadores.",
+  "ambassadorNoticeQuotaReached": "La cuota de embajadores para tu país e idioma ha sido alcanzada.",
+  "ambassadorNoticeAutoAssign": "El embajadurismo se otorga automáticamente a usuarios calificados."
 }

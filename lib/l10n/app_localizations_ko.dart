@@ -651,4 +651,59 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => '대사';
+
+  @override
+  String get ambassadorOnboardingTitle => '대사가 되기';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      '당신의 언어와 지역에서 우리 커뮤니티를 성장시키는 데 도움을 주세요.';
+
+  @override
+  String get ambassadorOnboardingButton => '지금 시작하기';
+
+  @override
+  String get ambassadorDashboardTitle => '대사 대시보드';
+
+  @override
+  String get ambassadorDashboardSubtitle => '당신의 통계 및 활동 개요';
+
+  @override
+  String get ambassadorDashboardChartLabel => '이번 주 초대된 사용자';
+
+  @override
+  String get ambassadorDashboardRemainingSlots => '남은 대사 자리';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => '국가 및 언어';
+
+  @override
+  String get ambassadorQuotaFull => '당신 지역의 대사 할당량이 가득 찼습니다.';
+
+  @override
+  String get ambassadorQuotaAvailable => '대사 자리가 사용 가능합니다!';
+
+  @override
+  String get ambassadorStatusAssigned => '당신은 활성 대사입니다.';
+
+  @override
+  String get ambassadorStatusNotEligible => '당신은 대사 자격이 없습니다.';
+
+  @override
+  String get ambassadorStatusWaiting => '자리 가용성을 기다리는 중...';
+
+  @override
+  String get ambassadorStatusRevoked => '당신의 대사 자격이 취소되었습니다.';
+
+  @override
+  String get ambassadorNoticeAdultOnly => '성인 계정만 대사가 될 수 있습니다.';
+
+  @override
+  String get ambassadorNoticeQuotaReached => '당신의 국가와 언어에 대한 대사 할당량에 도달했습니다.';
+
+  @override
+  String get ambassadorNoticeAutoAssign => '대사 자격은 자격을 갖춘 사용자에게 자동으로 부여됩니다.';
 }

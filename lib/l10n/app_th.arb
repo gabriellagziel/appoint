@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "ทูต",
+  "ambassadorOnboardingTitle": "เป็นทูต",
+  "ambassadorOnboardingSubtitle": "ช่วยให้ชุมชนของเราเติบโตในภาษาและภูมิภาคของคุณ",
+  "ambassadorOnboardingButton": "เริ่มต้นตอนนี้",
+  "ambassadorDashboardTitle": "แดชบอร์ดทูต",
+  "ambassadorDashboardSubtitle": "ภาพรวมสถิติและกิจกรรมของคุณ",
+  "ambassadorDashboardChartLabel": "ผู้ใช้ที่ได้รับเชิญในสัปดาห์นี้",
+  "ambassadorDashboardRemainingSlots": "ตำแหน่งทูตที่เหลือ",
+  "ambassadorDashboardCountryLanguage": "ประเทศและภาษา",
+  "ambassadorQuotaFull": "โควต้าการเป็นทูตเต็มแล้วในภูมิภาคของคุณ",
+  "ambassadorQuotaAvailable": "ตำแหน่งทูตมีให้บริการ!",
+  "ambassadorStatusAssigned": "คุณเป็นทูตที่ใช้งานอยู่",
+  "ambassadorStatusNotEligible": "คุณไม่มีสิทธิ์สำหรับสถานะทูต",
+  "ambassadorStatusWaiting": "รอตำแหน่งว่าง...",
+  "ambassadorStatusRevoked": "สถานะทูตของคุณถูกเพิกถอนแล้ว",
+  "ambassadorNoticeAdultOnly": "เฉพาะบัญชีผู้ใหญ่เท่านั้นที่สามารถเป็นทูตได้",
+  "ambassadorNoticeQuotaReached": "โควต้าการเป็นทูตสำหรับประเทศและภาษาของคุณเต็มแล้ว",
+  "ambassadorNoticeAutoAssign": "การเป็นทูตจะได้รับมอบหมายโดยอัตโนมัติให้กับผู้ใช้ที่มีคุณสมบัติ"
 }
