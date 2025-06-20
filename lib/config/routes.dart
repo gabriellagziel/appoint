@@ -11,6 +11,8 @@ import '../features/invite/invite_detail_screen.dart';
 import '../features/booking/booking_confirm_screen.dart';
 import '../features/admin/admin_broadcast_screen.dart';
 import '../features/calendar/google_integration_screen.dart';
+import '../features/ambassador_dashboard_screen.dart';
+import '../features/ambassador_onboarding_screen.dart';
 import '../models/invite.dart';
 
 class AppRouter {
@@ -60,6 +62,16 @@ class AppRouter {
       case '/google/calendar':
         return MaterialPageRoute(
           builder: (_) => const GoogleIntegrationScreen(),
+          settings: settings,
+        );
+      case '/ambassador-dashboard':
+        return MaterialPageRoute(
+          builder: (_) => const AmbassadorDashboardScreen(),
+          settings: settings,
+        );
+      case '/ambassador-onboarding':
+        return MaterialPageRoute(
+          builder: (_) => const AmbassadorOnboardingScreen(),
           settings: settings,
         );
       // Deep link routes for WhatsApp Smart Share
