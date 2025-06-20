@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Velvyslanec",
+  "ambassadorOnboardingTitle": "Staňte se Velvyslancem",
+  "ambassadorOnboardingSubtitle": "Pomozte rozvíjet naši komunitu ve vašem jazyce a regionu.",
+  "ambassadorOnboardingButton": "Začít Nyní",
+  "ambassadorDashboardTitle": "Dashboard Velvyslance",
+  "ambassadorDashboardSubtitle": "Přehled vašich statistik a aktivit",
+  "ambassadorDashboardChartLabel": "Pozvaní Uživatelé Tento Týden",
+  "ambassadorDashboardRemainingSlots": "Zbývající Místa Velvyslanců",
+  "ambassadorDashboardCountryLanguage": "Země a Jazyk",
+  "ambassadorQuotaFull": "Kvóta velvyslanců je ve vašem regionu plná.",
+  "ambassadorQuotaAvailable": "Místa velvyslanců dostupná!",
+  "ambassadorStatusAssigned": "Jste aktivní velvyslanec.",
+  "ambassadorStatusNotEligible": "Nejste způsobilí pro status velvyslance.",
+  "ambassadorStatusWaiting": "Čekání na dostupnost místa...",
+  "ambassadorStatusRevoked": "Váš status velvyslance byl odvolán.",
+  "ambassadorNoticeAdultOnly": "Pouze dospělé účty se mohou stát velvyslanci.",
+  "ambassadorNoticeQuotaReached": "Kvóta velvyslanců pro vaši zemi a jazyk byla dosažena.",
+  "ambassadorNoticeAutoAssign": "Velvyslanectví je automaticky uděleno kvalifikovaným uživatelům."
 }

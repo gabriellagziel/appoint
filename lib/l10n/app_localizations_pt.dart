@@ -651,4 +651,67 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Embaixador';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Torne-se um Embaixador';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Ajude a fazer crescer nossa comunidade em seu idioma e região.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Começar Agora';
+
+  @override
+  String get ambassadorDashboardTitle => 'Painel do Embaixador';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Visão geral das suas estatísticas e atividades';
+
+  @override
+  String get ambassadorDashboardChartLabel => 'Usuários Convidados Esta Semana';
+
+  @override
+  String get ambassadorDashboardRemainingSlots =>
+      'Vagas de Embaixador Restantes';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'País e Idioma';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'A cota de embaixadores está completa em sua região.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Vagas de embaixador disponíveis!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Você é um embaixador ativo.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Você não é elegível para o status de embaixador.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Aguardando disponibilidade de vaga...';
+
+  @override
+  String get ambassadorStatusRevoked =>
+      'Seu status de embaixador foi revogado.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Apenas contas de adultos podem se tornar embaixadores.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'A cota de embaixadores para seu país e idioma foi atingida.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'O embaixadorado é concedido automaticamente a usuários qualificados.';
 }

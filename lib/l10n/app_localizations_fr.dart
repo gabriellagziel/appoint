@@ -651,4 +651,69 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Ambassadeur';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Devenez Ambassadeur';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Aidez à développer notre communauté dans votre langue et région.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Commencer Maintenant';
+
+  @override
+  String get ambassadorDashboardTitle => 'Tableau de Bord Ambassadeur';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Aperçu de vos statistiques et activités';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Utilisateurs Invités Cette Semaine';
+
+  @override
+  String get ambassadorDashboardRemainingSlots =>
+      'Places d\'Ambassadeur Restantes';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Pays et Langue';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'Le quota d\'ambassadeurs est complet dans votre région.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Places d\'ambassadeur disponibles !';
+
+  @override
+  String get ambassadorStatusAssigned => 'Vous êtes un ambassadeur actif.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Vous n\'êtes pas éligible au statut d\'ambassadeur.';
+
+  @override
+  String get ambassadorStatusWaiting =>
+      'En attente de disponibilité de place...';
+
+  @override
+  String get ambassadorStatusRevoked =>
+      'Votre statut d\'ambassadeur a été révoqué.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Seuls les comptes adultes peuvent devenir ambassadeurs.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Le quota d\'ambassadeurs pour votre pays et langue a été atteint.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'L\'ambassaduriat est accordé automatiquement aux utilisateurs qualifiés.';
 }

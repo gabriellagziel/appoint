@@ -651,4 +651,66 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Büyükelçi';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Büyükelçi Olun';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Dilinizde ve bölgenizde topluluğumuzun büyümesine yardım edin.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Şimdi Başlayın';
+
+  @override
+  String get ambassadorDashboardTitle => 'Büyükelçi Paneli';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'İstatistiklerinizin ve etkinliklerinizin genel bakışı';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Bu Hafta Davet Edilen Kullanıcılar';
+
+  @override
+  String get ambassadorDashboardRemainingSlots =>
+      'Kalan Büyükelçi Pozisyonları';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Ülke ve Dil';
+
+  @override
+  String get ambassadorQuotaFull => 'Bölgenizde büyükelçi kotası dolu.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Büyükelçi pozisyonları mevcut!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Aktif bir büyükelçisiniz.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Büyükelçi statüsü için uygun değilsiniz.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Pozisyon müsaitliği bekleniyor...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Büyükelçi statünüz iptal edildi.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Sadece yetişkin hesapları büyükelçi olabilir.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Ülkeniz ve diliniz için büyükelçi kotasına ulaşıldı.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Büyükelçilik uygun kullanıcılara otomatik olarak verilir.';
 }

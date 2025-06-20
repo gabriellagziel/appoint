@@ -651,4 +651,66 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Посланик';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Станете Посланик';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Помогнете да разрастнем общността ни на вашия език и регион.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Започнете Сега';
+
+  @override
+  String get ambassadorDashboardTitle => 'Табло на Посланика';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Преглед на вашите статистики и дейности';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Поканени Потребители Тази Седмица';
+
+  @override
+  String get ambassadorDashboardRemainingSlots => 'Оставащи Места за Посланици';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Държава и Език';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'Квотата за посланици е пълна във вашия регион.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Места за посланици налични!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Вие сте активен посланик.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Не сте подходящ за статус посланик.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Изчакване за наличност на място...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Статусът ви като посланик е отменен.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Само възрастни акаунти могат да станат посланици.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Квотата за посланици за вашата държава и език е достигната.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Посланничеството се дава автоматично на квалифицирани потребители.';
 }

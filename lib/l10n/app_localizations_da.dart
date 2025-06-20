@@ -651,4 +651,66 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Ambassadør';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Bliv Ambassadør';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Hjælp os med at vokse på dit sprog og i din region.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Start Nu';
+
+  @override
+  String get ambassadorDashboardTitle => 'Ambassadør Dashboard';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Din statistik og aktivitetsoversigt';
+
+  @override
+  String get ambassadorDashboardChartLabel => 'Inviterede Brugere Denne Uge';
+
+  @override
+  String get ambassadorDashboardRemainingSlots =>
+      'Resterende Ambassadørpladser';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Land & Sprog';
+
+  @override
+  String get ambassadorQuotaFull => 'Ambassadørkvoten er fuld i din region.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Ambassadørpladser tilgængelige!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Du er en aktiv ambassadør.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Du er ikke berettiget til ambassadørstatus.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Venter på pladsens tilgængelighed...';
+
+  @override
+  String get ambassadorStatusRevoked =>
+      'Din ambassadørstatus er blevet tilbagekaldt.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Kun voksne konti kan blive ambassadører.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Ambassadørkvoten for dit land og sprog er nået.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Ambassadørskab tildeles automatisk til kvalificerede brugere.';
 }

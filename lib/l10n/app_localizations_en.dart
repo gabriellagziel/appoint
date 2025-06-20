@@ -645,4 +645,63 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Global Ambassador';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Become a Voice for Your Country';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Represent your language and help us grow';
+
+  @override
+  String get ambassadorOnboardingButton => 'Start Now';
+
+  @override
+  String get ambassadorDashboardTitle => 'Ambassador Dashboard';
+
+  @override
+  String get ambassadorDashboardSubtitle => 'Your community impact at a glance';
+
+  @override
+  String get ambassadorDashboardChartLabel => 'Users joined via your language';
+
+  @override
+  String get ambassadorDashboardRemainingSlots => 'Remaining Slots';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Country / Language';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'All ambassador slots are currently filled.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Slots Available';
+
+  @override
+  String get ambassadorStatusAssigned => 'You are an official ambassador!';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'You are not eligible for ambassador status.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Waiting for assignment...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Your ambassador status was revoked.';
+
+  @override
+  String get ambassadorNoticeAdultOnly => 'Only adults can become ambassadors.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Ambassador quota for your region is full.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Ambassadorship is automatically assigned by the system.';
 }

@@ -1,0 +1,966 @@
+{
+  "@@locale": "ur",
+  "ambassadorTitle": "سفیر",
+  "ambassadorOnboardingTitle": "سفیر بنیں",
+  "ambassadorOnboardingSubtitle": "اپنی زبان اور علاقے میں ہماری کمیونٹی کو بڑھانے میں مدد کریں۔",
+  "ambassadorOnboardingButton": "ابھی شروع کریں",
+  "ambassadorDashboardTitle": "سفیر ڈیش بورڈ",
+  "ambassadorDashboardSubtitle": "آپ کی اعدادوشمار اور سرگرمیوں کا جائزہ",
+  "ambassadorDashboardChartLabel": "اس ہفتے مدعو کیے گئے صارفین",
+  "ambassadorDashboardRemainingSlots": "باقی سفیر کی جگہیں",
+  "ambassadorDashboardCountryLanguage": "ملک اور زبان",
+  "ambassadorQuotaFull": "آپ کے علاقے میں سفیر کی کوٹہ پوری ہے۔",
+  "ambassadorQuotaAvailable": "سفیر کی جگہیں دستیاب ہیں!",
+  "ambassadorStatusAssigned": "آپ ایک فعال سفیر ہیں۔",
+  "ambassadorStatusNotEligible": "آپ سفیر کی حیثیت کے لیے اہل نہیں ہیں۔",
+  "ambassadorStatusWaiting": "جگہ کی دستیابی کا انتظار...",
+  "ambassadorStatusRevoked": "آپ کی سفیر کی حیثیت منسوخ کر دی گئی ہے۔",
+  "ambassadorNoticeAdultOnly": "صرف بالغ اکاؤنٹس ہی سفیر بن سکتے ہیں۔",
+  "ambassadorNoticeQuotaReached": "آپ کے ملک اور زبان کے لیے سفیر کی کوٹہ پوری ہو گئی ہے۔",
+  "ambassadorNoticeAutoAssign": "سفارت کاری خودکار طور پر اہل صارفین کو دی جاتی ہے۔",
+  "appTitle": "Appoint",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "welcome": "خوش آمدید",
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "home": "ہوم",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "menu": "مینو",
+  "@menu": {
+    "description": "Menu navigation label"
+  },
+  "profile": "پروفائل",
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "signOut": "سائن آؤٹ",
+  "@signOut": {
+    "description": "Sign out button label"
+  },
+  "login": "لاگ ان",
+  "@login": {
+    "description": "Login button label"
+  },
+  "email": "ای میل",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "پاس ورڈ",
+  "@password": {
+    "description": "Password field label"
+  },
+  "signIn": "سائن ان کریں",
+  "@signIn": {
+    "description": "Sign in button label"
+  },
+  "bookMeeting": "ملاقات بُک کریں",
+  "@bookMeeting": {
+    "description": "Book meeting button label"
+  },
+  "bookAppointment": "وقت بُک کریں",
+  "@bookAppointment": {
+    "description": "Book appointment button label"
+  },
+  "bookingRequest": "بُکنگ کی درخواست",
+  "@bookingRequest": {
+    "description": "Booking request label"
+  },
+  "confirmBooking": "بُکنگ کی تصدیق کریں",
+  "@confirmBooking": {
+    "description": "Confirm booking button label"
+  },
+  "chatBooking": "چیٹ بُکنگ",
+  "@chatBooking": {
+    "description": "Chat booking label"
+  },
+  "bookViaChat": "چیٹ کے ذریعے بُک کریں",
+  "@bookViaChat": {
+    "description": "Book via chat button label"
+  },
+  "submitBooking": "بُکنگ جمع کروائیں",
+  "@submitBooking": {
+    "description": "Submit booking button label"
+  },
+  "next": "اگلا",
+  "@next": {
+    "description": "Label for the next button"
+  },
+  "selectStaff": "اسٹاف منتخب کریں",
+  "@selectStaff": {
+    "description": "Label for staff selection dropdown"
+  },
+  "pickDate": "تاریخ منتخب کریں",
+  "@pickDate": {
+    "description": "Label for date picker"
+  },
+  "staff": "اسٹاف",
+  "@staff": {
+    "description": "Staff label"
+  },
+  "service": "سروس",
+  "@service": {
+    "description": "Service label"
+  },
+  "dateTime": "تاریخ اور وقت",
+  "@dateTime": {
+    "description": "Date and time label"
+  },
+  "duration": "دورانیہ: {duration} منٹ",
+  "@duration": {
+    "description": "Duration label with parameter",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "notSelected": "منتخب نہیں ہوا",
+  "@notSelected": {
+    "description": "Not selected state"
+  },
+  "noSlots": "کوئی دستیاب وقت نہیں",
+  "@noSlots": {
+    "description": "Message shown when no time slots are available"
+  },
+  "bookingConfirmed": "بُکنگ کی تصدیق ہو گئی ہے",
+  "@bookingConfirmed": {
+    "description": "Booking confirmed message"
+  },
+  "failedToConfirmBooking": "بُکنگ کی تصدیق ناکام رہی",
+  "@failedToConfirmBooking": {
+    "description": "Failed to confirm booking message"
+  },
+  "noBookingsFound": "کوئی بُکنگ نہیں ملی",
+  "@noBookingsFound": {
+    "description": "No bookings found message"
+  },
+  "errorLoadingBookings": "بُکنگ لوڈ کرنے میں خرابی: {error}",
+  "@errorLoadingBookings": {
+    "description": "Error loading bookings message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "shareOnWhatsApp": "واٹس ایپ پر شیئر کریں",
+  "@shareOnWhatsApp": {
+    "description": "Label for WhatsApp share button"
+  },
+  "shareMeetingInvitation": "اپنی ملاقات کی دعوت شیئر کریں:",
+  "@shareMeetingInvitation": {
+    "description": "Title for meeting invitation sharing section"
+  },
+  "meetingReadyMessage": "ملاقات تیار ہے! کیا آپ اسے اپنے گروپ کو بھیجنا چاہتے ہیں؟",
+  "@meetingReadyMessage": {
+    "description": "Message shown in WhatsApp share dialog"
+  },
+  "customizeMessage": "اپنا پیغام حسبِ ضرورت بنائیں...",
+  "@customizeMessage": {
+    "description": "Hint text for message customization"
+  },
+  "saveGroupForRecognition": "گروپ کو شناخت کے لیے محفوظ کریں",
+  "@saveGroupForRecognition": {
+    "description": "Label for group recognition checkbox"
+  },
+  "groupNameOptional": "گروپ کا نام (اختیاری)",
+  "@groupNameOptional": {
+    "description": "Label for group name input field"
+  },
+  "enterGroupName": "شناخت کے لیے گروپ کا نام درج کریں",
+  "@enterGroupName": {
+    "description": "Hint text for group name input"
+  },
+  "knownGroupDetected": "معروف گروپ شناخت ہو گیا",
+  "@knownGroupDetected": {
+    "description": "Message shown when a known group is detected"
+  },
+  "meetingSharedSuccessfully": "ملاقات کامیابی سے شیئر کی گئی!",
+  "@meetingSharedSuccessfully": {
+    "description": "Success message when meeting is shared"
+  },
+  "bookingConfirmedShare": "بُکنگ کی تصدیق ہو گئی! اب آپ دعوت شیئر کر سکتے ہیں۔",
+  "@bookingConfirmedShare": {
+    "description": "Message shown after booking confirmation"
+  },
+  "defaultShareMessage": "ہیلو! میں نے APP-OINT کے ذریعے آپ کے ساتھ ملاقات شیڈول کی ہے۔ تصدیق کرنے یا دوسرا وقت تجویز کرنے کے لیے یہاں کلک کریں:",
+  "@defaultShareMessage": {
+    "description": "Default message for WhatsApp sharing"
+  },
+  "dashboard": "ڈیش بورڈ",
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "businessDashboard": "کاروباری ڈیش بورڈ",
+  "@businessDashboard": {
+    "description": "Business dashboard label"
+  },
+  "myProfile": "میری پروفائل",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "noProfileFound": "کوئی پروفائل نہیں ملی",
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "errorLoadingProfile": "پروفائل لوڈ کرنے میں خرابی",
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "myInvites": "میرے دعوت نامے",
+  "@myInvites": {
+    "description": "My invites label"
+  },
+  "inviteDetail": "دعوت کی تفصیل",
+  "@inviteDetail": {
+    "description": "Invite detail label"
+  },
+  "inviteContact": "رابطہ دعوت دیں",
+  "@inviteContact": {
+    "description": "Invite contact label"
+  },
+  "noInvites": "کوئی دعوت نہیں",
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "errorLoadingInvites": "دعوت نامے لوڈ کرنے میں خرابی",
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "accept": "قبول کریں",
+  "@accept": {
+    "description": "Accept button label"
+  },
+  "decline": "مسترد کریں",
+  "@decline": {
+    "description": "Decline button label"
+  },
+  "sendInvite": "دعوت بھیجیں",
+  "@sendInvite": {
+    "description": "Send invite button label"
+  },
+  "name": "نام",
+  "@name": {
+    "description": "Name field label"
+  },
+  "phoneNumber": "فون نمبر",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "emailOptional": "ای میل (اختیاری)",
+  "@emailOptional": {
+    "description": "Optional email field label"
+  },
+  "requiresInstallFallback": "انسٹالیشن درکار ہے",
+  "@requiresInstallFallback": {
+    "description": "Requires installation fallback message"
+  },
+  "notifications": "اطلاعات",
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "notificationSettings": "اطلاع کی ترتیبات",
+  "@notificationSettings": {
+    "description": "Notification settings label"
+  },
+  "enableNotifications": "اطلاعات فعال کریں",
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "errorFetchingToken": "ٹوکن حاصل کرنے میں خرابی",
+  "@errorFetchingToken": {
+    "description": "Error fetching token message"
+  },
+  "fcmToken": "ایف سی ایم ٹوکن: {token}",
+  "@fcmToken": {
+    "description": "FCM token display",
+    "placeholders": {
+      "token": {
+        "type": "String"
+      }
+    }
+  },
+  "familyDashboard": "فیملی ڈیش بورڈ",
+  "@familyDashboard": {
+    "description": "Family dashboard label"
+  },
+  "pleaseLoginForFamilyFeatures": "خاندانی خصوصیات کے لیے براہ کرم لاگ ان کریں",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "familyMembers": "خاندان کے افراد",
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "invite": "دعوت دیں",
+  "@invite": {
+    "description": "Invite button label"
+  },
+  "pendingInvites": "زیر التواء دعوتیں",
+  "@pendingInvites": {
+    "description": "Pending invites label"
+  },
+  "connectedChildren": "منسلک بچے",
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "noFamilyMembersYet": "ابھی تک کوئی خاندانی رکن نہیں۔ شروع کرنے کے لیے کسی کو مدعو کریں!",
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "errorLoadingFamilyLinks": "خاندانی روابط لوڈ کرنے میں خرابی: {error}",
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteChild": "بچے کو دعوت دیں",
+  "@inviteChild": {
+    "description": "Invite child button label"
+  },
+  "managePermissions": "اجازتوں کا نظم کریں",
+  "@managePermissions": {
+    "description": "Manage permissions label"
+  },
+  "removeChild": "بچے کو ہٹائیں",
+  "@removeChild": {
+    "description": "Remove child button label"
+  },
+  "loading": "لوڈ ہو رہا ہے...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "childEmail": "بچے کا ای میل",
+  "@childEmail": {
+    "description": "Child email field label"
+  },
+  "childEmailOrPhone": "بچے کا ای میل یا فون",
+  "@childEmailOrPhone": {
+    "description": "Child email or phone field label"
+  },
+  "enterChildEmail": "بچے کا ای میل درج کریں",
+  "@enterChildEmail": {
+    "description": "Enter child email hint"
+  },
+  "otpCode": "او ٹی پی کوڈ",
+  "@otpCode": {
+    "description": "OTP code field label"
+  },
+  "enterOtp": "او ٹی پی درج کریں",
+  "@enterOtp": {
+    "description": "Enter OTP hint"
+  },
+  "verify": "تصدیق کریں",
+  "@verify": {
+    "description": "Verify button label"
+  },
+  "otpResentSuccessfully": "او ٹی پی کامیابی سے دوبارہ بھیجا گیا!",
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "failedToResendOtp": "او ٹی پی دوبارہ بھیجنے میں ناکامی: {error}",
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "childLinkedSuccessfully": "بچہ کامیابی سے منسلک ہو گیا!",
+  "@childLinkedSuccessfully": {
+    "description": "Child linked successfully message"
+  },
+  "invitationSentSuccessfully": "دعوت کامیابی سے بھیج دی گئی!",
+  "@invitationSentSuccessfully": {
+    "description": "Invitation sent successfully message"
+  },
+  "failedToSendInvitation": "دعوت بھیجنے میں ناکامی: {error}",
+  "@failedToSendInvitation": {
+    "description": "Failed to send invitation message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "pleaseEnterValidEmail": "براہ کرم درست ای میل درج کریں",
+  "@pleaseEnterValidEmail": {
+    "description": "Please enter valid email message"
+  },
+  "pleaseEnterValidEmailOrPhone": "براہ کرم درست ای میل یا فون نمبر درج کریں",
+  "@pleaseEnterValidEmailOrPhone": {
+    "description": "Please enter valid email or phone message"
+  },
+  "invalidCode": "غلط کوڈ، دوبارہ کوشش کریں",
+  "@invalidCode": {
+    "description": "Invalid code message"
+  },
+  "cancelInvite": "دعوت منسوخ کریں",
+  "@cancelInvite": {
+    "description": "Cancel invite button label"
+  },
+  "cancelInviteConfirmation": "کیا آپ واقعی اس دعوت کو منسوخ کرنا چاہتے ہیں؟",
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "no": "نہیں",
+  "@no": {
+    "description": "No button label"
+  },
+  "yesCancel": "ہاں، منسوخ کریں",
+  "@yesCancel": {
+    "description": "Yes cancel button label"
+  },
+  "inviteCancelledSuccessfully": "دعوت کامیابی سے منسوخ ہو گئی!",
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "failedToCancelInvite": "دعوت منسوخ کرنے میں ناکامی: {error}",
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "revokeAccess": "رسائی منسوخ کریں",
+  "@revokeAccess": {
+    "description": "Revoke access button label"
+  },
+  "revokeAccessConfirmation": "کیا آپ واقعی اس بچے کی رسائی منسوخ کرنا چاہتے ہیں؟ یہ عمل ناقابل واپسی ہے۔",
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "revoke": "منسوخ کریں",
+  "@revoke": {
+    "description": "Revoke button label"
+  },
+  "accessRevokedSuccessfully": "رسائی کامیابی سے منسوخ ہو گئی!",
+  "@accessRevokedSuccessfully": {
+    "description": "Access revoked successfully message"
+  },
+  "failedToRevokeAccess": "رسائی منسوخ کرنے میں ناکامی: {error}",
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "grantConsent": "اجازت دیں",
+  "@grantConsent": {
+    "description": "Grant consent button label"
+  },
+  "revokeConsent": "اجازت واپس لیں",
+  "@revokeConsent": {
+    "description": "Revoke consent button label"
+  },
+  "consentGrantedSuccessfully": "اجازت کامیابی سے دی گئی!",
+  "@consentGrantedSuccessfully": {
+    "description": "Consent granted successfully message"
+  },
+  "consentRevokedSuccessfully": "اجازت کامیابی سے واپس لے لی گئی!",
+  "@consentRevokedSuccessfully": {
+    "description": "Consent revoked successfully message"
+  },
+  "failedToUpdateConsent": "اجازت کو اپ ڈیٹ کرنے میں ناکامی: {error}",
+  "@failedToUpdateConsent": {
+    "description": "Failed to update consent message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "checkingPermissions": "اجازتیں چیک کی جا رہی ہیں...",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "cancel": "منسوخ کریں",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "close": "بند کریں",
+  "@close": {
+    "description": "Close button label"
+  },
+  "save": "محفوظ کریں",
+  "@save": {
+    "description": "Save button label"
+  },
+  "sendNow": "ابھی بھیجیں",
+  "@sendNow": {
+    "description": "Send now button label"
+  },
+  "details": "تفصیلات",
+  "@details": {
+    "description": "Details button label"
+  },
+  "noBroadcastMessages": "ابھی تک کوئی نشریاتی پیغام نہیں",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "errorCheckingPermissions": "اجازتیں چیک کرنے میں خرابی: {error}",
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mediaOptional": "میڈیا (اختیاری)",
+  "@mediaOptional": {
+    "description": "Media optional section title"
+  },
+  "pickImage": "تصویر منتخب کریں",
+  "@pickImage": {
+    "description": "Pick image button label"
+  },
+  "pickVideo": "ویڈیو منتخب کریں",
+  "@pickVideo": {
+    "description": "Pick video button label"
+  },
+  "pollOptions": "پول آپشنز:",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "targetingFilters": "ہدف سازی کے فلٹرز",
+  "@targetingFilters": {
+    "description": "Targeting filters section title"
+  },
+  "scheduling": "شیڈولنگ",
+  "@scheduling": {
+    "description": "Scheduling section title"
+  },
+  "scheduleForLater": "بعد میں شیڈول کریں",
+  "@scheduleForLater": {
+    "description": "Schedule for later option"
+  },
+  "errorEstimatingRecipients": "وصول کنندگان کا اندازہ لگانے میں خرابی: {error}",
+  "@errorEstimatingRecipients": {
+    "description": "Error estimating recipients message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingImage": "تصویر منتخب کرنے میں خرابی: {error}",
+  "@errorPickingImage": {
+    "description": "Error picking image message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingVideo": "ویڈیو منتخب کرنے میں خرابی: {error}",
+  "@errorPickingVideo": {
+    "description": "Error picking video message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noPermissionForBroadcast": "آپ کو نشریاتی پیغامات بنانے کی اجازت نہیں ہے۔",
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "messageSavedSuccessfully": "پیغام کامیابی سے محفوظ ہو گیا",
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "errorSavingMessage": "پیغام محفوظ کرنے میں خرابی: {error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "messageSentSuccessfully": "پیغام کامیابی سے بھیجا گیا",
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "errorSendingMessage": "پیغام بھیجنے میں خرابی: {error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "content": "مواد: {content}",
+  "@content": {
+    "description": "Content display",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "type": "قسم: {type}",
+  "@type": {
+    "description": "Type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "link": "لنک: {link}",
+  "@link": {
+    "description": "Link display",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "status": "حیثیت: {status}",
+  "@status": {
+    "description": "Status display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "recipients": "وصول کنندگان: {count}",
+  "@recipients": {
+    "description": "Recipients display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "opened": "کھولا گیا: {count}",
+  "@opened": {
+    "description": "Opened count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "clicked": "کلک کیا گیا: {count}",
+  "@clicked": {
+    "description": "Clicked count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "created": "بنایا گیا: {date}",
+  "@created": {
+    "description": "Created date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduled": "شیڈول: {date}",
+  "@scheduled": {
+    "description": "Scheduled date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "organizations": "تنظیمیں",
+  "@organizations": {
+    "description": "Organizations screen title"
+  },
+  "noOrganizations": "کوئی تنظیم نہیں",
+  "@noOrganizations": {
+    "description": "No organizations message"
+  },
+  "errorLoadingOrganizations": "تنظیمیں لوڈ کرنے میں خرابی",
+  "@errorLoadingOrganizations": {
+    "description": "Error loading organizations message"
+  },
+  "members": "{count} اراکین",
+  "@members": {
+    "description": "Members count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "users": "صارفین",
+  "@users": {
+    "description": "Users screen title"
+  },
+  "noUsers": "کوئی صارف نہیں",
+  "@noUsers": {
+    "description": "No users message"
+  },
+  "errorLoadingUsers": "صارفین لوڈ کرنے میں خرابی",
+  "@errorLoadingUsers": {
+    "description": "Error loading users message"
+  },
+  "changeRole": "کردار تبدیل کریں",
+  "@changeRole": {
+    "description": "Change role button label"
+  },
+  "totalAppointments": "کل ملاقاتیں",
+  "@totalAppointments": {
+    "description": "Total appointments label"
+  },
+  "completedAppointments": "مکمل ملاقاتیں",
+  "@completedAppointments": {
+    "description": "Completed appointments label"
+  },
+  "revenue": "آمدنی",
+  "@revenue": {
+    "description": "Revenue label"
+  },
+  "errorLoadingStats": "اعدادوشمار لوڈ کرنے میں خرابی",
+  "@errorLoadingStats": {
+    "description": "Error loading stats message"
+  },
+  "appointment": "ملاقات: {id}",
+  "@appointment": {
+    "description": "Appointment display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "from": "سے: {name}",
+  "@from": {
+    "description": "From display",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "phone": "فون: {number}",
+  "@phone": {
+    "description": "Phone display",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "noRouteDefined": "{route} کے لیے کوئی راستہ متعین نہیں",
+  "@noRouteDefined": {
+    "description": "No route defined message",
+    "placeholders": {
+      "route": {
+        "type": "String"
+      }
+    }
+  },
+  "meetingDetails": "ملاقات کی تفصیلات",
+  "@meetingDetails": {
+    "description": "Meeting details title"
+  },
+  "meetingId": "ملاقات کی شناخت: {id}",
+  "@meetingId": {
+    "description": "Meeting ID display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "creator": "تخلیق کار: {id}",
+  "@creator": {
+    "description": "Creator display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "context": "سیاق و سباق: {id}",
+  "@context": {
+    "description": "Context display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "group": "گروپ: {id}",
+  "@group": {
+    "description": "Group display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "requestPrivateSession": "نجی سیشن کی درخواست کریں",
+  "@requestPrivateSession": {
+    "description": "Request private session button label"
+  },
+  "privacyRequestSent": "نجی سیشن کی درخواست والدین کو بھیج دی گئی!",
+  "@privacyRequestSent": {
+    "description": "Privacy request sent message"
+  },
+  "failedToSendPrivacyRequest": "نجی درخواست بھیجنے میں ناکامی: {error}",
+  "@failedToSendPrivacyRequest": {
+    "description": "Failed to send privacy request message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPrivacyRequests": "پرائیویسی درخواستیں لوڈ کرنے میں خرابی: {error}",
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "requestType": "{type} درخواست",
+  "@requestType": {
+    "description": "Request type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "statusColon": "حیثیت: {status}",
+  "@statusColon": {
+    "description": "Status with colon display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToActionPrivacyRequest": "{action} پرائیویسی درخواست پر عملدرآمد میں ناکامی: {error}",
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message",
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "yes": "جی ہاں",
+  "@yes": {
+    "description": "Yes button label"
+  },
+  "send": "بھیجیں",
+  "@send": {
+    "description": "Send button label"
+  },
+  "permissions": "اجازتیں",
+  "@permissions": {
+    "description": "Permissions label"
+  },
+  "permissionsFor": "اجازتیں - {childId}",
+  "@permissionsFor": {
+    "description": "Permissions for child label",
+    "placeholders": {
+      "childId": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPermissions": "اجازتیں لوڈ کرنے میں خرابی: {error}",
+  "@errorLoadingPermissions": {
+    "description": "Error loading permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "none": "کوئی نہیں",
+  "@none": {
+    "description": "None option"
+  },
+  "readOnly": "صرف پڑھنے کے لیے",
+  "@readOnly": {
+    "description": "Read only option"
+  },
+  "readWrite": "پڑھنے اور لکھنے کی اجازت",
+  "@readWrite": {
+    "description": "Read and write option"
+  },
+  "permissionUpdated": "اجازت {category} کو {newValue} پر اپ ڈیٹ کیا گیا",
+  "@permissionUpdated": {
+    "description": "Permission updated message",
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "newValue": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdatePermission": "اجازت کو اپ ڈیٹ کرنے میں ناکامی: {error}",
+  "@failedToUpdatePermission": {
+    "description": "Failed to update permission message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "invited": "مدعو: {date}",
+  "@invited": {
+    "description": "Invited date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adminBroadcast": "ایڈمن نشریات",
+  "@adminBroadcast": {
+    "description": "Admin broadcast screen title"
+  },
+  "composeBroadcastMessage": "نشریاتی پیغام لکھیں",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message dialog title"
+  },
+  "adminScreenTBD": "ایڈمن اسکرین - تیار ہونا باقی ہے",
+  "@adminScreenTBD": {
+    "description": "Admin screen placeholder"
+  },
+  "staffScreenTBD": "اسٹاف اسکرین - تیار ہونا باقی ہے",
+  "@staffScreenTBD": {
+    "description": "Staff screen placeholder"
+  },
+  "clientScreenTBD": "کلائنٹ اسکرین - تیار ہونا باقی ہے",
+  "@clientScreenTBD": {
+    "description": "Client screen placeholder"
+  }
+}

@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Ambassadør",
+  "ambassadorOnboardingTitle": "Bliv Ambassadør",
+  "ambassadorOnboardingSubtitle": "Hjælp os med at vokse på dit sprog og i din region.",
+  "ambassadorOnboardingButton": "Start Nu",
+  "ambassadorDashboardTitle": "Ambassadør Dashboard",
+  "ambassadorDashboardSubtitle": "Din statistik og aktivitetsoversigt",
+  "ambassadorDashboardChartLabel": "Inviterede Brugere Denne Uge",
+  "ambassadorDashboardRemainingSlots": "Resterende Ambassadørpladser",
+  "ambassadorDashboardCountryLanguage": "Land & Sprog",
+  "ambassadorQuotaFull": "Ambassadørkvoten er fuld i din region.",
+  "ambassadorQuotaAvailable": "Ambassadørpladser tilgængelige!",
+  "ambassadorStatusAssigned": "Du er en aktiv ambassadør.",
+  "ambassadorStatusNotEligible": "Du er ikke berettiget til ambassadørstatus.",
+  "ambassadorStatusWaiting": "Venter på pladsens tilgængelighed...",
+  "ambassadorStatusRevoked": "Din ambassadørstatus er blevet tilbagekaldt.",
+  "ambassadorNoticeAdultOnly": "Kun voksne konti kan blive ambassadører.",
+  "ambassadorNoticeQuotaReached": "Ambassadørkvoten for dit land og sprog er nået.",
+  "ambassadorNoticeAutoAssign": "Ambassadørskab tildeles automatisk til kvalificerede brugere."
 }

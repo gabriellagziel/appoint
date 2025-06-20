@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Посол",
+  "ambassadorOnboardingTitle": "Станьте Послом",
+  "ambassadorOnboardingSubtitle": "Допоможіть розвивати наше співтовариство вашою мовою та регіоном.",
+  "ambassadorOnboardingButton": "Почати Зараз",
+  "ambassadorDashboardTitle": "Панель Посла",
+  "ambassadorDashboardSubtitle": "Огляд вашої статистики та активності",
+  "ambassadorDashboardChartLabel": "Запрошені Користувачі Цього Тижня",
+  "ambassadorDashboardRemainingSlots": "Залишилися Місця Послів",
+  "ambassadorDashboardCountryLanguage": "Країна та Мова",
+  "ambassadorQuotaFull": "Квота послів заповнена у вашому регіоні.",
+  "ambassadorQuotaAvailable": "Місця послів доступні!",
+  "ambassadorStatusAssigned": "Ви активний посол.",
+  "ambassadorStatusNotEligible": "Ви не маєте права на статус посла.",
+  "ambassadorStatusWaiting": "Очікування доступності місця...",
+  "ambassadorStatusRevoked": "Ваш статус посла було скасовано.",
+  "ambassadorNoticeAdultOnly": "Тільки дорослі облікові записи можуть стати послами.",
+  "ambassadorNoticeQuotaReached": "Квота послів для вашої країни та мови досягнута.",
+  "ambassadorNoticeAutoAssign": "Посольство надається автоматично кваліфікованим користувачам."
 }

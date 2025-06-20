@@ -651,4 +651,67 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Nagykövet';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Legyen Nagykövet';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Segítsen növekedni közösségünknek az Ön nyelvén és régiójában.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Kezdje Most';
+
+  @override
+  String get ambassadorDashboardTitle => 'Nagykövet Irányítópult';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Statisztikái és tevékenységeinek áttekintése';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Meghívott Felhasználók Ezen a Héten';
+
+  @override
+  String get ambassadorDashboardRemainingSlots =>
+      'Fennmaradó Nagyköveti Helyek';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Ország és Nyelv';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'A nagyköveti kvóta tele van az Ön régiójában.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Nagyköveti helyek elérhetők!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Ön aktív nagykövet.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Ön nem jogosult nagyköveti státusra.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Hely elérhetőségére vár...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Nagyköveti státusát visszavonták.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Csak felnőtt fiókok válhatnak nagykövetté.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Az Ön országához és nyelvéhez tartozó nagyköveti kvóta elérte a maximumot.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'A nagykövetséget automatikusan kapják a minősített felhasználók.';
 }

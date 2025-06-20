@@ -1,0 +1,966 @@
+{
+  "@@locale": "bn",
+  "ambassadorTitle": "রাষ্ট্রদূত",
+  "ambassadorOnboardingTitle": "রাষ্ট্রদূত হন",
+  "ambassadorOnboardingSubtitle": "আপনার ভাষা এবং অঞ্চলে আমাদের সম্প্রদায়কে বাড়াতে সাহায্য করুন।",
+  "ambassadorOnboardingButton": "এখনই শুরু করুন",
+  "ambassadorDashboardTitle": "রাষ্ট্রদূত ড্যাশবোর্ড",
+  "ambassadorDashboardSubtitle": "আপনার পরিসংখ্যান এবং কার্যকলাপের সংক্ষিপ্ত বিবরণ",
+  "ambassadorDashboardChartLabel": "এই সপ্তাহে আমন্ত্রিত ব্যবহারকারীরা",
+  "ambassadorDashboardRemainingSlots": "অবশিষ্ট রাষ্ট্রদূত পদ",
+  "ambassadorDashboardCountryLanguage": "দেশ এবং ভাষা",
+  "ambassadorQuotaFull": "আপনার অঞ্চলে রাষ্ট্রদূত কোটা পূর্ণ।",
+  "ambassadorQuotaAvailable": "রাষ্ট্রদূত পদ উপলব্ধ!",
+  "ambassadorStatusAssigned": "আপনি একজন সক্রিয় রাষ্ট্রদূত।",
+  "ambassadorStatusNotEligible": "আপনি রাষ্ট্রদূত পদমর্যাদার জন্য যোগ্য নন।",
+  "ambassadorStatusWaiting": "পদের উপলব্ধতার জন্য অপেক্ষা করছে...",
+  "ambassadorStatusRevoked": "আপনার রাষ্ট্রদূত পদমর্যাদা বাতিল করা হয়েছে।",
+  "ambassadorNoticeAdultOnly": "শুধুমাত্র প্রাপ্তবয়স্ক অ্যাকাউন্টগুলি রাষ্ট্রদূত হতে পারে।",
+  "ambassadorNoticeQuotaReached": "আপনার দেশ এবং ভাষার জন্য রাষ্ট্রদূত কোটা পূর্ণ হয়েছে।",
+  "ambassadorNoticeAutoAssign": "রাষ্ট্রদূতত্ব স্বয়ংক্রিয়ভাবে যোগ্য ব্যবহারকারীদের দেওয়া হয়।",
+  "appTitle": "Appoint",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "welcome": "স্বাগতম",
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "home": "বাড়ি",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "menu": "মেনু",
+  "@menu": {
+    "description": "Menu navigation label"
+  },
+  "profile": "প্রোফাইল",
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "signOut": "সাইন আউট",
+  "@signOut": {
+    "description": "Sign out button label"
+  },
+  "login": "লগইন",
+  "@login": {
+    "description": "Login button label"
+  },
+  "email": "ইমেইল",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "পাসওয়ার্ড",
+  "@password": {
+    "description": "Password field label"
+  },
+  "signIn": "সাইন ইন",
+  "@signIn": {
+    "description": "Sign in button label"
+  },
+  "bookMeeting": "মিটিং বুক করুন",
+  "@bookMeeting": {
+    "description": "Book meeting button label"
+  },
+  "bookAppointment": "অ্যাপয়েন্টমেন্ট বুক করুন",
+  "@bookAppointment": {
+    "description": "Book appointment button label"
+  },
+  "bookingRequest": "বুকিং অনুরোধ",
+  "@bookingRequest": {
+    "description": "Booking request label"
+  },
+  "confirmBooking": "বুকিং নিশ্চিত করুন",
+  "@confirmBooking": {
+    "description": "Confirm booking button label"
+  },
+  "chatBooking": "চ্যাট বুকিং",
+  "@chatBooking": {
+    "description": "Chat booking label"
+  },
+  "bookViaChat": "চ্যাটের মাধ্যমে বুক করুন",
+  "@bookViaChat": {
+    "description": "Book via chat button label"
+  },
+  "submitBooking": "বুকিং জমা দিন",
+  "@submitBooking": {
+    "description": "Submit booking button label"
+  },
+  "next": "পরবর্তী",
+  "@next": {
+    "description": "Label for the next button"
+  },
+  "selectStaff": "স্টাফ নির্বাচন করুন",
+  "@selectStaff": {
+    "description": "Label for staff selection dropdown"
+  },
+  "pickDate": "তারিখ বেছে নিন",
+  "@pickDate": {
+    "description": "Label for date picker"
+  },
+  "staff": "স্টাফ",
+  "@staff": {
+    "description": "Staff label"
+  },
+  "service": "সেবা",
+  "@service": {
+    "description": "Service label"
+  },
+  "dateTime": "তারিখ ও সময়",
+  "@dateTime": {
+    "description": "Date and time label"
+  },
+  "duration": "স্থিতিকাল: {duration} মিনিট",
+  "@duration": {
+    "description": "Duration label with parameter",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "notSelected": "নির্বাচিত নয়",
+  "@notSelected": {
+    "description": "Not selected state"
+  },
+  "noSlots": "কোনো স্লট উপলব্ধ নেই",
+  "@noSlots": {
+    "description": "Message shown when no time slots are available"
+  },
+  "bookingConfirmed": "বুকিং নিশ্চিত হয়েছে",
+  "@bookingConfirmed": {
+    "description": "Booking confirmed message"
+  },
+  "failedToConfirmBooking": "বুকিং নিশ্চিত করতে ব্যর্থ হয়েছে",
+  "@failedToConfirmBooking": {
+    "description": "Failed to confirm booking message"
+  },
+  "noBookingsFound": "কোনো বুকিং পাওয়া যায়নি",
+  "@noBookingsFound": {
+    "description": "No bookings found message"
+  },
+  "errorLoadingBookings": "বুকিং লোড করতে ত্রুটি: {error}",
+  "@errorLoadingBookings": {
+    "description": "Error loading bookings message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "shareOnWhatsApp": "হোয়াটসঅ্যাপে শেয়ার করুন",
+  "@shareOnWhatsApp": {
+    "description": "Label for WhatsApp share button"
+  },
+  "shareMeetingInvitation": "আপনার মিটিং আমন্ত্রণ শেয়ার করুন:",
+  "@shareMeetingInvitation": {
+    "description": "Title for meeting invitation sharing section"
+  },
+  "meetingReadyMessage": "মিটিং প্রস্তুত! আপনি কি এটি আপনার গ্রুপে পাঠাতে চান?",
+  "@meetingReadyMessage": {
+    "description": "Message shown in WhatsApp share dialog"
+  },
+  "customizeMessage": "আপনার বার্তা কাস্টমাইজ করুন...",
+  "@customizeMessage": {
+    "description": "Hint text for message customization"
+  },
+  "saveGroupForRecognition": "পরিচয়ের জন্য গ্রুপ সংরক্ষণ করুন",
+  "@saveGroupForRecognition": {
+    "description": "Label for group recognition checkbox"
+  },
+  "groupNameOptional": "গ্রুপের নাম (ঐচ্ছিক)",
+  "@groupNameOptional": {
+    "description": "Label for group name input field"
+  },
+  "enterGroupName": "পরিচয়ের জন্য গ্রুপের নাম লিখুন",
+  "@enterGroupName": {
+    "description": "Hint text for group name input"
+  },
+  "knownGroupDetected": "পরিচিত গ্রুপ সনাক্ত হয়েছে",
+  "@knownGroupDetected": {
+    "description": "Message shown when a known group is detected"
+  },
+  "meetingSharedSuccessfully": "মিটিং সফলভাবে শেয়ার করা হয়েছে!",
+  "@meetingSharedSuccessfully": {
+    "description": "Success message when meeting is shared"
+  },
+  "bookingConfirmedShare": "বুকিং নিশ্চিত হয়েছে! এখন আপনি আমন্ত্রণ শেয়ার করতে পারেন।",
+  "@bookingConfirmedShare": {
+    "description": "Message shown after booking confirmation"
+  },
+  "defaultShareMessage": "হাই! আমি APP-OINT এর মাধ্যমে আপনার সাথে একটি মিটিং নির্ধারণ করেছি। নিশ্চিত করতে বা অন্য সময় প্রস্তাব করতে এখানে ক্লিক করুন:",
+  "@defaultShareMessage": {
+    "description": "Default message for WhatsApp sharing"
+  },
+  "dashboard": "ড্যাশবোর্ড",
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "businessDashboard": "ব্যবসা ড্যাশবোর্ড",
+  "@businessDashboard": {
+    "description": "Business dashboard label"
+  },
+  "myProfile": "আমার প্রোফাইল",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "noProfileFound": "কোনো প্রোফাইল পাওয়া যায়নি",
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "errorLoadingProfile": "প্রোফাইল লোড করতে ত্রুটি",
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "myInvites": "আমার আমন্ত্রণ",
+  "@myInvites": {
+    "description": "My invites label"
+  },
+  "inviteDetail": "আমন্ত্রণের বিস্তারিত",
+  "@inviteDetail": {
+    "description": "Invite detail label"
+  },
+  "inviteContact": "যোগাযোগ আমন্ত্রণ",
+  "@inviteContact": {
+    "description": "Invite contact label"
+  },
+  "noInvites": "কোনো আমন্ত্রণ নেই",
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "errorLoadingInvites": "আমন্ত্রণ লোড করতে ত্রুটি",
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "accept": "গ্রহণ করুন",
+  "@accept": {
+    "description": "Accept button label"
+  },
+  "decline": "প্রত্যাখ্যান করুন",
+  "@decline": {
+    "description": "Decline button label"
+  },
+  "sendInvite": "আমন্ত্রণ পাঠান",
+  "@sendInvite": {
+    "description": "Send invite button label"
+  },
+  "name": "নাম",
+  "@name": {
+    "description": "Name field label"
+  },
+  "phoneNumber": "ফোন নম্বর",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "emailOptional": "ইমেইল (ঐচ্ছিক)",
+  "@emailOptional": {
+    "description": "Optional email field label"
+  },
+  "requiresInstallFallback": "ইনস্টলেশন প্রয়োজন",
+  "@requiresInstallFallback": {
+    "description": "Requires installation fallback message"
+  },
+  "notifications": "বিজ্ঞপ্তি",
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "notificationSettings": "বিজ্ঞপ্তির সেটিংস",
+  "@notificationSettings": {
+    "description": "Notification settings label"
+  },
+  "enableNotifications": "বিজ্ঞপ্তি চালু করুন",
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "errorFetchingToken": "টোকেন আনতে ত্রুটি",
+  "@errorFetchingToken": {
+    "description": "Error fetching token message"
+  },
+  "fcmToken": "FCM টোকেন: {token}",
+  "@fcmToken": {
+    "description": "FCM token display",
+    "placeholders": {
+      "token": {
+        "type": "String"
+      }
+    }
+  },
+  "familyDashboard": "পরিবার ড্যাশবোর্ড",
+  "@familyDashboard": {
+    "description": "Family dashboard label"
+  },
+  "pleaseLoginForFamilyFeatures": "পরিবার ফিচার অ্যাক্সেস করতে দয়া করে লগইন করুন",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "familyMembers": "পরিবারের সদস্য",
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "invite": "আমন্ত্রণ",
+  "@invite": {
+    "description": "Invite button label"
+  },
+  "pendingInvites": "অপেক্ষমাণ আমন্ত্রণ",
+  "@pendingInvites": {
+    "description": "Pending invites label"
+  },
+  "connectedChildren": "সংযুক্ত শিশু",
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "noFamilyMembersYet": "এখনও কোনো পরিবার সদস্য নেই। শুরু করতে কাউকে আমন্ত্রণ জানান!",
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "errorLoadingFamilyLinks": "পরিবার লিঙ্ক লোড করতে ত্রুটি: {error}",
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteChild": "শিশুকে আমন্ত্রণ জানান",
+  "@inviteChild": {
+    "description": "Invite child button label"
+  },
+  "managePermissions": "অনুমতি পরিচালনা করুন",
+  "@managePermissions": {
+    "description": "Manage permissions label"
+  },
+  "removeChild": "শিশু সরান",
+  "@removeChild": {
+    "description": "Remove child button label"
+  },
+  "loading": "লোড হচ্ছে...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "childEmail": "শিশুর ইমেইল",
+  "@childEmail": {
+    "description": "Child email field label"
+  },
+  "childEmailOrPhone": "শিশুর ইমেইল অথবা ফোন",
+  "@childEmailOrPhone": {
+    "description": "Child email or phone field label"
+  },
+  "enterChildEmail": "শিশুর ইমেইল লিখুন",
+  "@enterChildEmail": {
+    "description": "Enter child email hint"
+  },
+  "otpCode": "OTP কোড",
+  "@otpCode": {
+    "description": "OTP code field label"
+  },
+  "enterOtp": "OTP লিখুন",
+  "@enterOtp": {
+    "description": "Enter OTP hint"
+  },
+  "verify": "যাচাই করুন",
+  "@verify": {
+    "description": "Verify button label"
+  },
+  "otpResentSuccessfully": "OTP সফলভাবে পুনরায় পাঠানো হয়েছে!",
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "failedToResendOtp": "OTP পুনরায় পাঠাতে ব্যর্থ: {error}",
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "childLinkedSuccessfully": "শিশু সফলভাবে সংযুক্ত হয়েছে!",
+  "@childLinkedSuccessfully": {
+    "description": "Child linked successfully message"
+  },
+  "invitationSentSuccessfully": "আমন্ত্রণ সফলভাবে পাঠানো হয়েছে!",
+  "@invitationSentSuccessfully": {
+    "description": "Invitation sent successfully message"
+  },
+  "failedToSendInvitation": "আমন্ত্রণ পাঠাতে ব্যর্থ: {error}",
+  "@failedToSendInvitation": {
+    "description": "Failed to send invitation message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "pleaseEnterValidEmail": "একটি বৈধ ইমেইল লিখুন",
+  "@pleaseEnterValidEmail": {
+    "description": "Please enter valid email message"
+  },
+  "pleaseEnterValidEmailOrPhone": "একটি বৈধ ইমেইল বা ফোন লিখুন",
+  "@pleaseEnterValidEmailOrPhone": {
+    "description": "Please enter valid email or phone message"
+  },
+  "invalidCode": "ভুল কোড, দয়া করে আবার চেষ্টা করুন",
+  "@invalidCode": {
+    "description": "Invalid code message"
+  },
+  "cancelInvite": "আমন্ত্রণ বাতিল করুন",
+  "@cancelInvite": {
+    "description": "Cancel invite button label"
+  },
+  "cancelInviteConfirmation": "আপনি কি নিশ্চিত যে আপনি এই আমন্ত্রণ বাতিল করতে চান?",
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "no": "না",
+  "@no": {
+    "description": "No button label"
+  },
+  "yesCancel": "হ্যাঁ, বাতিল করুন",
+  "@yesCancel": {
+    "description": "Yes cancel button label"
+  },
+  "inviteCancelledSuccessfully": "আমন্ত্রণ সফলভাবে বাতিল হয়েছে!",
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "failedToCancelInvite": "আমন্ত্রণ বাতিল করতে ব্যর্থ: {error}",
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "revokeAccess": "অ্যাক্সেস বাতিল করুন",
+  "@revokeAccess": {
+    "description": "Revoke access button label"
+  },
+  "revokeAccessConfirmation": "আপনি কি নিশ্চিত যে আপনি এই শিশুর অ্যাক্সেস বাতিল করতে চান? এটি পূর্বাবস্থায় ফেরানো যাবে না।",
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "revoke": "বাতিল করুন",
+  "@revoke": {
+    "description": "Revoke button label"
+  },
+  "accessRevokedSuccessfully": "অ্যাক্সেস সফলভাবে বাতিল হয়েছে!",
+  "@accessRevokedSuccessfully": {
+    "description": "Access revoked successfully message"
+  },
+  "failedToRevokeAccess": "অ্যাক্সেস বাতিল করতে ব্যর্থ: {error}",
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "grantConsent": "অনুমতি দিন",
+  "@grantConsent": {
+    "description": "Grant consent button label"
+  },
+  "revokeConsent": "অনুমতি প্রত্যাহার করুন",
+  "@revokeConsent": {
+    "description": "Revoke consent button label"
+  },
+  "consentGrantedSuccessfully": "অনুমতি সফলভাবে প্রদান করা হয়েছে!",
+  "@consentGrantedSuccessfully": {
+    "description": "Consent granted successfully message"
+  },
+  "consentRevokedSuccessfully": "অনুমতি সফলভাবে প্রত্যাহার করা হয়েছে!",
+  "@consentRevokedSuccessfully": {
+    "description": "Consent revoked successfully message"
+  },
+  "failedToUpdateConsent": "অনুমতি আপডেট করতে ব্যর্থ: {error}",
+  "@failedToUpdateConsent": {
+    "description": "Failed to update consent message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "checkingPermissions": "অনুমতি যাচাই করা হচ্ছে...",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "cancel": "বাতিল করুন",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "close": "বন্ধ করুন",
+  "@close": {
+    "description": "Close button label"
+  },
+  "save": "সংরক্ষণ করুন",
+  "@save": {
+    "description": "Save button label"
+  },
+  "sendNow": "এখনই পাঠান",
+  "@sendNow": {
+    "description": "Send now button label"
+  },
+  "details": "বিস্তারিত",
+  "@details": {
+    "description": "Details button label"
+  },
+  "noBroadcastMessages": "এখনও কোনো সম্প্রচার বার্তা নেই",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "errorCheckingPermissions": "অনুমতি যাচাই করতে ত্রুটি: {error}",
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mediaOptional": "মিডিয়া (ঐচ্ছিক)",
+  "@mediaOptional": {
+    "description": "Media optional section title"
+  },
+  "pickImage": "ছবি নির্বাচন করুন",
+  "@pickImage": {
+    "description": "Pick image button label"
+  },
+  "pickVideo": "ভিডিও নির্বাচন করুন",
+  "@pickVideo": {
+    "description": "Pick video button label"
+  },
+  "pollOptions": "ভোটের বিকল্পসমূহ:",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "targetingFilters": "টার্গেটিং ফিল্টার",
+  "@targetingFilters": {
+    "description": "Targeting filters section title"
+  },
+  "scheduling": "সময় নির্ধারণ",
+  "@scheduling": {
+    "description": "Scheduling section title"
+  },
+  "scheduleForLater": "পরে নির্ধারণ করুন",
+  "@scheduleForLater": {
+    "description": "Schedule for later option"
+  },
+  "errorEstimatingRecipients": "গ্রাহক সংখ্যা অনুমান করতে ত্রুটি: {error}",
+  "@errorEstimatingRecipients": {
+    "description": "Error estimating recipients message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingImage": "ছবি বাছাই করতে ত্রুটি: {error}",
+  "@errorPickingImage": {
+    "description": "Error picking image message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingVideo": "ভিডিও বাছাই করতে ত্রুটি: {error}",
+  "@errorPickingVideo": {
+    "description": "Error picking video message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noPermissionForBroadcast": "আপনার সম্প্রচার বার্তা তৈরি করার অনুমতি নেই।",
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "messageSavedSuccessfully": "বার্তা সফলভাবে সংরক্ষিত হয়েছে",
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "errorSavingMessage": "বার্তা সংরক্ষণ করতে ত্রুটি: {error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "messageSentSuccessfully": "বার্তা সফলভাবে পাঠানো হয়েছে",
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "errorSendingMessage": "বার্তা পাঠাতে ত্রুটি: {error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "content": "বিষয়বস্তু: {content}",
+  "@content": {
+    "description": "Content display",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "type": "ধরণ: {type}",
+  "@type": {
+    "description": "Type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "link": "লিংক: {link}",
+  "@link": {
+    "description": "Link display",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "status": "স্ট্যাটাস: {status}",
+  "@status": {
+    "description": "Status display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "recipients": "গ্রাহক: {count}",
+  "@recipients": {
+    "description": "Recipients display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "opened": "খোলা হয়েছে: {count}",
+  "@opened": {
+    "description": "Opened count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "clicked": "ক্লিক হয়েছে: {count}",
+  "@clicked": {
+    "description": "Clicked count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "created": "তৈরি হয়েছে: {date}",
+  "@created": {
+    "description": "Created date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduled": "নির্ধারিত হয়েছে: {date}",
+  "@scheduled": {
+    "description": "Scheduled date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "organizations": "সংগঠনসমূহ",
+  "@organizations": {
+    "description": "Organizations screen title"
+  },
+  "noOrganizations": "কোনো সংগঠন নেই",
+  "@noOrganizations": {
+    "description": "No organizations message"
+  },
+  "errorLoadingOrganizations": "সংগঠন লোড করতে ত্রুটি",
+  "@errorLoadingOrganizations": {
+    "description": "Error loading organizations message"
+  },
+  "members": "{count} জন সদস্য",
+  "@members": {
+    "description": "Members count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "users": "ব্যবহারকারী",
+  "@users": {
+    "description": "Users screen title"
+  },
+  "noUsers": "কোনো ব্যবহারকারী নেই",
+  "@noUsers": {
+    "description": "No users message"
+  },
+  "errorLoadingUsers": "ব্যবহারকারী লোড করতে ত্রুটি",
+  "@errorLoadingUsers": {
+    "description": "Error loading users message"
+  },
+  "changeRole": "ভূমিকা পরিবর্তন করুন",
+  "@changeRole": {
+    "description": "Change role button label"
+  },
+  "totalAppointments": "মোট অ্যাপয়েন্টমেন্ট",
+  "@totalAppointments": {
+    "description": "Total appointments label"
+  },
+  "completedAppointments": "সম্পন্ন অ্যাপয়েন্টমেন্ট",
+  "@completedAppointments": {
+    "description": "Completed appointments label"
+  },
+  "revenue": "আয়",
+  "@revenue": {
+    "description": "Revenue label"
+  },
+  "errorLoadingStats": "পরিসংখ্যান লোড করতে ত্রুটি",
+  "@errorLoadingStats": {
+    "description": "Error loading stats message"
+  },
+  "appointment": "অ্যাপয়েন্টমেন্ট: {id}",
+  "@appointment": {
+    "description": "Appointment display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "from": "থেকে: {name}",
+  "@from": {
+    "description": "From display",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "phone": "ফোন: {number}",
+  "@phone": {
+    "description": "Phone display",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "noRouteDefined": "{route} এর জন্য কোনো রুট নির্ধারিত নেই",
+  "@noRouteDefined": {
+    "description": "No route defined message",
+    "placeholders": {
+      "route": {
+        "type": "String"
+      }
+    }
+  },
+  "meetingDetails": "মিটিং এর বিবরণ",
+  "@meetingDetails": {
+    "description": "Meeting details title"
+  },
+  "meetingId": "মিটিং আইডি: {id}",
+  "@meetingId": {
+    "description": "Meeting ID display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "creator": "স্রষ্টা: {id}",
+  "@creator": {
+    "description": "Creator display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "context": "প্রসঙ্গ: {id}",
+  "@context": {
+    "description": "Context display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "group": "গ্রুপ: {id}",
+  "@group": {
+    "description": "Group display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "requestPrivateSession": "ব্যক্তিগত সেশনের অনুরোধ",
+  "@requestPrivateSession": {
+    "description": "Request private session button label"
+  },
+  "privacyRequestSent": "আপনার অভিভাবকদের কাছে গোপনীয়তা অনুরোধ পাঠানো হয়েছে!",
+  "@privacyRequestSent": {
+    "description": "Privacy request sent message"
+  },
+  "failedToSendPrivacyRequest": "গোপনীয়তা অনুরোধ পাঠাতে ব্যর্থ: {error}",
+  "@failedToSendPrivacyRequest": {
+    "description": "Failed to send privacy request message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPrivacyRequests": "গোপনীয়তা অনুরোধ লোড করতে ত্রুটি: {error}",
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "requestType": "{type} অনুরোধ",
+  "@requestType": {
+    "description": "Request type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "statusColon": "স্ট্যাটাস: {status}",
+  "@statusColon": {
+    "description": "Status with colon display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToActionPrivacyRequest": "গোপনীয়তা অনুরোধ {action} করতে ব্যর্থ: {error}",
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message",
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "yes": "হ্যাঁ",
+  "@yes": {
+    "description": "Yes button label"
+  },
+  "send": "পাঠান",
+  "@send": {
+    "description": "Send button label"
+  },
+  "permissions": "অনুমতি",
+  "@permissions": {
+    "description": "Permissions label"
+  },
+  "permissionsFor": "অনুমতি - {childId}",
+  "@permissionsFor": {
+    "description": "Permissions for child label",
+    "placeholders": {
+      "childId": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPermissions": "অনুমতি লোড করতে ত্রুটি: {error}",
+  "@errorLoadingPermissions": {
+    "description": "Error loading permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "none": "কোনোটি নয়",
+  "@none": {
+    "description": "None option"
+  },
+  "readOnly": "শুধুমাত্র পড়ার জন্য",
+  "@readOnly": {
+    "description": "Read only option"
+  },
+  "readWrite": "পড়া ও লেখা",
+  "@readWrite": {
+    "description": "Read and write option"
+  },
+  "permissionUpdated": "অনুমতি {category} আপডেট করা হয়েছে {newValue} এ",
+  "@permissionUpdated": {
+    "description": "Permission updated message",
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "newValue": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdatePermission": "অনুমতি আপডেট করতে ব্যর্থ: {error}",
+  "@failedToUpdatePermission": {
+    "description": "Failed to update permission message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "invited": "আমন্ত্রণ জানানো হয়েছে: {date}",
+  "@invited": {
+    "description": "Invited date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adminBroadcast": "অ্যাডমিন সম্প্রচার",
+  "@adminBroadcast": {
+    "description": "Admin broadcast screen title"
+  },
+  "composeBroadcastMessage": "সম্প্রচার বার্তা লিখুন",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message dialog title"
+  },
+  "adminScreenTBD": "অ্যাডমিন স্ক্রীন - পরে তৈরি করা হবে",
+  "@adminScreenTBD": {
+    "description": "Admin screen placeholder"
+  },
+  "staffScreenTBD": "স্টাফ স্ক্রীন - পরে তৈরি করা হবে",
+  "@staffScreenTBD": {
+    "description": "Staff screen placeholder"
+  },
+  "clientScreenTBD": "ক্লায়েন্ট স্ক্রীন - পরে তৈরি করা হবে",
+  "@clientScreenTBD": {
+    "description": "Client screen placeholder"
+  }
+}

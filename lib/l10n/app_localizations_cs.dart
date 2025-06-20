@@ -651,4 +651,65 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Velvyslanec';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Staňte se Velvyslancem';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Pomozte rozvíjet naši komunitu ve vašem jazyce a regionu.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Začít Nyní';
+
+  @override
+  String get ambassadorDashboardTitle => 'Dashboard Velvyslance';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Přehled vašich statistik a aktivit';
+
+  @override
+  String get ambassadorDashboardChartLabel => 'Pozvaní Uživatelé Tento Týden';
+
+  @override
+  String get ambassadorDashboardRemainingSlots => 'Zbývající Místa Velvyslanců';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Země a Jazyk';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'Kvóta velvyslanců je ve vašem regionu plná.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Místa velvyslanců dostupná!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Jste aktivní velvyslanec.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Nejste způsobilí pro status velvyslance.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Čekání na dostupnost místa...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Váš status velvyslance byl odvolán.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Pouze dospělé účty se mohou stát velvyslanci.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Kvóta velvyslanců pro vaši zemi a jazyk byla dosažena.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Velvyslanectví je automaticky uděleno kvalifikovaným uživatelům.';
 }

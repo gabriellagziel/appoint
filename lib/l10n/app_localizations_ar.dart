@@ -651,4 +651,62 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'سفير';
+
+  @override
+  String get ambassadorOnboardingTitle => 'كن سفيراً';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'ساعد في نمو مجتمعنا بلغتك ومنطقتك.';
+
+  @override
+  String get ambassadorOnboardingButton => 'ابدأ الآن';
+
+  @override
+  String get ambassadorDashboardTitle => 'لوحة تحكم السفير';
+
+  @override
+  String get ambassadorDashboardSubtitle => 'نظرة عامة على إحصائياتك وأنشطتك';
+
+  @override
+  String get ambassadorDashboardChartLabel => 'المستخدمون المدعوون هذا الأسبوع';
+
+  @override
+  String get ambassadorDashboardRemainingSlots => 'الوظائف المتبقية للسفراء';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'البلد واللغة';
+
+  @override
+  String get ambassadorQuotaFull => 'حصة السفراء ممتلئة في منطقتك.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'وظائف السفراء متاحة!';
+
+  @override
+  String get ambassadorStatusAssigned => 'أنت سفير نشط.';
+
+  @override
+  String get ambassadorStatusNotEligible => 'أنت غير مؤهل لحالة السفير.';
+
+  @override
+  String get ambassadorStatusWaiting => 'في انتظار توفر الوظيفة...';
+
+  @override
+  String get ambassadorStatusRevoked => 'تم إلغاء حالة السفير الخاصة بك.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'يمكن لحسابات البالغين فقط أن تصبح سفراء.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'تم الوصول إلى حصة السفراء لبلدك ولغتك.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'يتم منح السفارة تلقائياً للمستخدمين المؤهلين.';
 }

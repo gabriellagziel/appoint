@@ -651,4 +651,68 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Suurlähettiläs';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Tule Suurlähettilääksi';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Auta meitä kasvamaan kielelläsi ja alueellasi.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Aloita Nyt';
+
+  @override
+  String get ambassadorDashboardTitle => 'Suurlähettilään Ohjauspaneeli';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Tilastojesi ja toimintasi yleiskatsaus';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Kutsutut Käyttäjät Tällä Viikolla';
+
+  @override
+  String get ambassadorDashboardRemainingSlots =>
+      'Jäljellä Olevat Suurlähettilään Paikat';
+
+  @override
+  String get ambassadorDashboardCountryLanguage => 'Maa ja Kieli';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'Suurlähettilään kiintiö on täynnä alueellasi.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Suurlähettilään paikkoja saatavilla!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Olet aktiivinen suurlähettiläs.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Et ole oikeutettu suurlähettilään statukseen.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Odotetaan paikan saatavuutta...';
+
+  @override
+  String get ambassadorStatusRevoked =>
+      'Suurlähettilään statuksesi on peruttu.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Vain aikuisten tilit voivat tulla suurlähettiläiksi.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Suurlähettilään kiintiö maallesi ja kielellesi on saavutettu.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Suurlähettiläisyys myönnetään automaattisesti päteville käyttäjille.';
 }
