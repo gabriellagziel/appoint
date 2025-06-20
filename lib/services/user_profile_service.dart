@@ -10,7 +10,10 @@ class UserProfileService {
   Future<UserProfile?> getProfile(String uid) async {
     final doc = await _firestore.collection('users').doc(uid).get();
     if (!doc.exists) return null;
-    return UserProfile.fromJson(doc.data()!);
+    return UserProfile.fromJson({
+      'id': doc.id,
+      ...(doc.data() as Map<String, dynamic>),
+    });
   }
 
   Future<UserProfile?> currentUserProfile() async {
@@ -22,11 +25,14 @@ class UserProfileService {
   Stream<UserProfile?> watchProfile(String uid) {
     return _firestore.collection('users').doc(uid).snapshots().map((doc) {
       if (!doc.exists) return null;
-      return UserProfile.fromJson(doc.data() as Map<String, dynamic>);
+      return UserProfile.fromJson({
+        'id': doc.id,
+        ...(doc.data() as Map<String, dynamic>),
+      });
     });
   }
 
   Future<void> updateProfile(UserProfile profile) async {
-    await _firestore.collection('users').doc(profile.uid).set(profile.toJson());
+    await _firestore.collection('users').doc(profile.id).set(profile.toJson());
   }
 }

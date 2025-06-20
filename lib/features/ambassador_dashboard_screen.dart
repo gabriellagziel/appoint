@@ -3,6 +3,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
 import '../providers/ambassador_data_provider.dart';
 import '../models/ambassador_stats.dart';
+import '../models/branch.dart';
+import '../services/branch_service.dart';
+import '../services/notification_service.dart';
+import 'ambassador_quota_dashboard_screen.dart';
 
 class AmbassadorDashboardScreen extends ConsumerStatefulWidget {
   const AmbassadorDashboardScreen({Key? key}) : super(key: key);
@@ -17,6 +21,61 @@ class _AmbassadorDashboardScreenState
   String? selectedCountry;
   String? selectedLanguage;
   DateTimeRange? selectedDateRange;
+  late NotificationService _notificationService;
+  late BranchService _branchService;
+  List<Branch> _branches = [];
+  bool _isLoadingBranches = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _notificationService = NotificationService();
+    _branchService = BranchService();
+    _loadBranches();
+    _initializeNotifications();
+  }
+
+  Future<void> _loadBranches() async {
+    setState(() {
+      _isLoadingBranches = true;
+    });
+    try {
+      final branches = await _branchService.fetchBranches();
+      setState(() {
+        _branches = branches;
+        _isLoadingBranches = false;
+      });
+    } catch (e) {
+      setState(() {
+        _isLoadingBranches = false;
+      });
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error loading branches: $e')),
+        );
+      }
+    }
+  }
+
+  Future<void> _initializeNotifications() async {
+    await _notificationService.initialize(
+      onMessage: (payload) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('New notification: ${payload.title}'),
+              action: SnackBarAction(
+                label: 'View',
+                onPressed: () {
+                  // Handle notification tap
+                },
+              ),
+            ),
+          );
+        }
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +85,28 @@ class _AmbassadorDashboardScreenState
       appBar: AppBar(
         title: const Text('Ambassador Dashboard'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.analytics),
+            tooltip: 'Quota Dashboard',
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const AmbassadorQuotaDashboardScreen(),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.refresh),
+            tooltip: 'Refresh Data',
+            onPressed: () {
+              ref.read(ambassadorDataProvider.notifier).clearFilters();
+              _loadBranches();
+            },
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
@@ -33,6 +114,8 @@ class _AmbassadorDashboardScreenState
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _buildFilters(),
+            const SizedBox(height: 24),
+            _buildBranchStats(),
             const SizedBox(height: 24),
             ambassadorDataAsync.when(
               loading: () => const Center(child: CircularProgressIndicator()),
@@ -42,16 +125,25 @@ class _AmbassadorDashboardScreenState
                     const Icon(Icons.error, size: 48, color: Colors.red),
                     const SizedBox(height: 16),
                     Text('Error: $error'),
+                    const SizedBox(height: 16),
+                    ElevatedButton(
+                      onPressed: () {
+                        ref
+                            .read(ambassadorDataProvider.notifier)
+                            .clearFilters();
+                      },
+                      child: const Text('Retry'),
+                    ),
                   ],
                 ),
               ),
               data: (data) => Column(
                 children: [
-                  _buildStatsCards(data),
+                  _buildStatsCards(_getFilteredData(data)),
                   const SizedBox(height: 24),
-                  _buildChart(data),
+                  _buildChart(_getFilteredData(data)),
                   const SizedBox(height: 24),
-                  _buildDataTable(data),
+                  _buildDataTable(_getFilteredData(data)),
                 ],
               ),
             ),
@@ -69,16 +161,22 @@ class _AmbassadorDashboardScreenState
           builder: (context, constraints) {
             if (constraints.maxWidth > 600) {
               // Horizontal layout for larger screens
-              return Row(
-                children: [
-                  Expanded(child: _buildCountryFilter()),
-                  const SizedBox(width: 16),
-                  Expanded(child: _buildLanguageFilter()),
-                  const SizedBox(width: 16),
-                  Expanded(child: _buildDateRangeFilter()),
-                  const SizedBox(width: 16),
-                  _buildClearButton(),
-                ],
+              return SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Container(
+                  width: MediaQuery.of(context).size.width * 1.5,
+                  child: Row(
+                    children: [
+                      Expanded(child: _buildCountryFilter()),
+                      const SizedBox(width: 16),
+                      Expanded(child: _buildLanguageFilter()),
+                      const SizedBox(width: 16),
+                      _buildDateRangeFilter(),
+                      const SizedBox(width: 16),
+                      _buildClearButton(),
+                    ],
+                  ),
+                ),
               );
             } else {
               // Vertical layout for smaller screens
@@ -101,75 +199,79 @@ class _AmbassadorDashboardScreenState
   }
 
   Widget _buildCountryFilter() {
-    return DropdownButtonFormField<String>(
-      decoration: const InputDecoration(
-        labelText: 'Country',
-        border: OutlineInputBorder(),
-        prefixIcon: Icon(Icons.location_on),
-      ),
-      value: selectedCountry,
-      items: [
-        const DropdownMenuItem<String>(
-          value: null,
-          child: Text('All Countries'),
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 200),
+      child: DropdownButtonFormField<String>(
+        decoration: const InputDecoration(
+          labelText: 'Country',
+          border: OutlineInputBorder(),
         ),
-        ...[
-          'United States',
-          'Spain',
-          'Germany',
-          'France',
-          'Italy',
-          'United Kingdom'
-        ]
-            .map((country) => DropdownMenuItem<String>(
-                  value: country,
-                  child: Text(country),
-                ))
-            .toList(),
-      ],
-      onChanged: (value) {
-        setState(() {
-          selectedCountry = value;
-        });
-        ref.read(ambassadorDataProvider.notifier).updateFilters(
-              country: value,
-              language: selectedLanguage,
-              dateRange: selectedDateRange,
-            );
-      },
+        value: selectedCountry,
+        items: [
+          const DropdownMenuItem<String>(
+            value: null,
+            child: Text('All Countries'),
+          ),
+          ...[
+            'United States',
+            'Spain',
+            'Germany',
+            'France',
+            'Italy',
+            'United Kingdom'
+          ]
+              .map((country) => DropdownMenuItem<String>(
+                    value: country,
+                    child: Text(country),
+                  ))
+              .toList(),
+        ],
+        onChanged: (value) {
+          setState(() {
+            selectedCountry = value;
+          });
+          ref.read(ambassadorDataProvider.notifier).updateFilters(
+                country: value,
+                language: selectedLanguage,
+                dateRange: selectedDateRange,
+              );
+        },
+      ),
     );
   }
 
   Widget _buildLanguageFilter() {
-    return DropdownButtonFormField<String>(
-      decoration: const InputDecoration(
-        labelText: 'Language',
-        border: OutlineInputBorder(),
-        prefixIcon: Icon(Icons.language),
-      ),
-      value: selectedLanguage,
-      items: [
-        const DropdownMenuItem<String>(
-          value: null,
-          child: Text('All Languages'),
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 200),
+      child: DropdownButtonFormField<String>(
+        decoration: const InputDecoration(
+          labelText: 'Language',
+          border: OutlineInputBorder(),
         ),
-        ...['English', 'Spanish', 'German', 'French', 'Italian', 'Portuguese']
-            .map((language) => DropdownMenuItem<String>(
-                  value: language,
-                  child: Text(language),
-                ))
-            .toList(),
-      ],
-      onChanged: (value) {
-        setState(() {
-          selectedLanguage = value;
-        });
-        ref.read(ambassadorDataProvider.notifier).updateFilters(
-              country: selectedCountry,
-              language: value,
-              dateRange: selectedDateRange,
-            );
-      },
+        value: selectedLanguage,
+        items: [
+          const DropdownMenuItem<String>(
+            value: null,
+            child: Text('All Languages'),
+          ),
+          ...['English', 'Spanish', 'German', 'French', 'Italian', 'Portuguese']
+              .map((language) => DropdownMenuItem<String>(
+                    value: language,
+                    child: Text(language),
+                  ))
+              .toList(),
+        ],
+        onChanged: (value) {
+          setState(() {
+            selectedLanguage = value;
+          });
+          ref.read(ambassadorDataProvider.notifier).updateFilters(
+                country: selectedCountry,
+                language: value,
+                dateRange: selectedDateRange,
+              );
+        },
+      ),
     );
   }
 
@@ -211,6 +313,95 @@ class _AmbassadorDashboardScreenState
         ref.read(ambassadorDataProvider.notifier).clearFilters();
       },
       child: const Text('Clear Filters'),
+    );
+  }
+
+  Widget _buildBranchStats() {
+    if (_isLoadingBranches) {
+      return const Card(
+        child: Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Center(child: CircularProgressIndicator()),
+        ),
+      );
+    }
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                const Icon(Icons.business, size: 24),
+                const SizedBox(width: 8),
+                const Text(
+                  'Branch Statistics',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                const Spacer(),
+                Text('${_branches.length} branches'),
+              ],
+            ),
+            const SizedBox(height: 16),
+            if (_branches.isNotEmpty)
+              SizedBox(
+                height: 100,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: _branches.length,
+                  itemBuilder: (context, index) {
+                    final branch = _branches[index];
+                    return Container(
+                      width: 200,
+                      margin: const EdgeInsets.only(right: 16),
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.grey.shade300),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            branch.name,
+                            style: const TextStyle(fontWeight: FontWeight.bold),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            branch.location,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey.shade600,
+                            ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            'Status: ${branch.isActive ? "Active" : "Inactive"}',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color:
+                                  branch.isActive ? Colors.green : Colors.red,
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                ),
+              )
+            else
+              const Center(
+                child: Text('No branches available'),
+              ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -419,5 +610,25 @@ class _AmbassadorDashboardScreenState
     final maxValue =
         chartData.map((e) => e.value).reduce((a, b) => a > b ? a : b);
     return maxValue;
+  }
+
+  AmbassadorData _getFilteredData(AmbassadorData data) {
+    // Apply country/language filters
+    final filteredStats = data.stats.where((s) {
+      if (selectedCountry != null && s.country != selectedCountry) return false;
+      if (selectedLanguage != null && s.language != selectedLanguage)
+        return false;
+      return true;
+    }).toList();
+
+    // Recalculate chart data based on filtered stats
+    final filteredChartData = data.chartData.where((point) {
+      return filteredStats.any((stat) => stat.country == point.label);
+    }).toList();
+
+    return AmbassadorData(
+      stats: filteredStats,
+      chartData: filteredChartData,
+    );
   }
 }

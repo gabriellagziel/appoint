@@ -47,11 +47,11 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   Widget build(BuildContext context) {
     final isAdmin = ref.watch(isAdminProvider);
     final broadcastMessages = ref.watch(broadcastMessagesProvider);
-    final l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(l10n.adminBroadcast),
+        title: Text(l10n?.adminBroadcast ?? 'Admin Broadcast'),
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
@@ -176,33 +176,33 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  message.content,
+                  l10n.content(message.content),
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.type(message.type.name),
+                  l10n.type(message.type.toString()),
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.actualRecipients != null)
                   Text(
-                    l10n.recipients(message.actualRecipients.toString()),
+                    l10n.recipients(message.actualRecipients!),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 if (message.openedCount != null)
                   Text(
-                    l10n.opened(message.openedCount.toString()),
+                    l10n.opened(message.openedCount!),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.created(_formatDate(message.createdAt)),
+                  l10n.created(message.createdAt),
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.scheduledFor != null)
                   Text(
-                    l10n.scheduled(_formatDate(message.scheduledFor!)),
+                    l10n.scheduled(message.scheduledFor!),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
@@ -303,7 +303,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       error: (error, stack) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(l10n.errorCheckingPermissions(error.toString())),
+            content: Text(l10n.errorCheckingPermissions(error)),
             backgroundColor: Colors.red,
           ),
         );
@@ -812,7 +812,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.errorSavingMessage(e.toString()))),
+        SnackBar(content: Text(l10n.errorSavingMessage(e))),
       );
     }
   }
@@ -828,7 +828,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.errorSendingMessage(e.toString()))),
+        SnackBar(content: Text(l10n.errorSendingMessage(e))),
       );
     }
   }
@@ -847,7 +847,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             children: [
               Text(l10n.content(message.content)),
               const SizedBox(height: 8),
-              Text(l10n.type(message.type.name)),
+              Text(l10n.type(message.type.toString())),
               if (message.imageUrl != null) ...[
                 const SizedBox(height: 8),
                 const Text('Image:',
@@ -900,17 +900,17 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                 ...message.pollOptions!.map((option) => Text('• $option')),
               ],
               const SizedBox(height: 8),
-              Text(l10n.status(message.status.name)),
+              Text(l10n.status(message.status.toString())),
               if (message.actualRecipients != null)
-                Text(l10n.recipients(message.actualRecipients.toString())),
+                Text(l10n.recipients(message.actualRecipients!)),
               if (message.openedCount != null)
-                Text(l10n.opened(message.openedCount.toString())),
+                Text(l10n.opened(message.openedCount!)),
               if (message.clickedCount != null)
-                Text(l10n.clicked(message.clickedCount.toString())),
+                Text(l10n.clicked(message.clickedCount!)),
               const SizedBox(height: 8),
-              Text(l10n.created(_formatDate(message.createdAt))),
+              Text(l10n.created(message.createdAt)),
               if (message.scheduledFor != null)
-                Text(l10n.scheduled(_formatDate(message.scheduledFor!))),
+                Text(l10n.scheduled(message.scheduledFor!)),
             ],
           ),
         ),
@@ -922,9 +922,5 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         ],
       ),
     );
-  }
-
-  String _formatDate(DateTime date) {
-    return '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute.toString().padLeft(2, '0')}';
   }
 }

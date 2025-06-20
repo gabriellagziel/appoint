@@ -46,7 +46,7 @@ class BroadcastService {
       if (doc.exists) {
         return AdminBroadcastMessage.fromJson({
           'id': doc.id,
-          ...doc.data()!,
+          ...(doc.data() as Map<String, dynamic>),
         });
       }
       return null;
@@ -175,7 +175,7 @@ class BroadcastService {
       final snapshot = await query.get();
       return snapshot.docs
           .map((doc) => UserProfile.fromJson({
-                'uid': doc.id,
+                'id': doc.id,
                 ...(doc.data() as Map<String, dynamic>),
               }))
           .toList();
@@ -189,7 +189,7 @@ class BroadcastService {
       UserProfile user, AdminBroadcastMessage message) async {
     try {
       // Get user's FCM token
-      final userDoc = await _usersCollection.doc(user.uid).get();
+      final userDoc = await _usersCollection.doc(user.id).get();
       final fcmToken = userDoc.data()?['fcmToken'] as String?;
 
       if (fcmToken == null) {
@@ -216,9 +216,9 @@ class BroadcastService {
 
       // Send via Firebase Functions (you'll need to implement this)
       // For now, we'll just log it
-      print('Sending FCM notification to ${user.uid}: $payload');
+      print('Sending FCM notification to ${user.id}: $payload');
     } catch (e) {
-      print('Failed to send FCM notification to ${user.uid}: $e');
+      print('Failed to send FCM notification to ${user.id}: $e');
       rethrow;
     }
   }
@@ -264,11 +264,4 @@ class BroadcastService {
 // Provider
 final broadcastServiceProvider = Provider<BroadcastService>((ref) {
   return BroadcastService();
-});
-
-// Provider for broadcast messages
-final broadcastMessagesProvider =
-    StreamProvider<List<AdminBroadcastMessage>>((ref) {
-  final service = ref.watch(broadcastServiceProvider);
-  return service.getBroadcastMessages();
 });

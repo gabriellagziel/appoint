@@ -33,7 +33,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
           data: (isPremium) => isPremium,
           orElse: () => false,
         );
-    if (isPremium) return;
+    if (isPremium) return; // isPremium now includes isAdminFreeAccess
     setState(() => _isLoadingAd = true);
     try {
       await AdService.showInterstitialAd();

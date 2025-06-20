@@ -23,7 +23,7 @@ class UserProfileScreen extends ConsumerWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Name: ${profile.displayName}'),
+                Text('Name: ${profile.name}'),
                 Text('Email: ${profile.email}'),
               ],
             ),
