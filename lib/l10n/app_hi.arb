@@ -1,966 +1,663 @@
 {
-  "@@locale": "hi",
-  "ambassadorTitle": "राजदूत",
-  "ambassadorOnboardingTitle": "राजदूत बनें",
-  "ambassadorOnboardingSubtitle": "अपनी भाषा और क्षेत्र में हमारे समुदाय को बढ़ाने में मदद करें।",
-  "ambassadorOnboardingButton": "अभी शुरू करें",
-  "ambassadorDashboardTitle": "राजदूत डैशबोर्ड",
-  "ambassadorDashboardSubtitle": "आपके आंकड़ों और गतिविधियों का अवलोकन",
-  "ambassadorDashboardChartLabel": "इस सप्ताह आमंत्रित किए गए उपयोगकर्ता",
-  "ambassadorDashboardRemainingSlots": "शेष राजदूत स्थान",
-  "ambassadorDashboardCountryLanguage": "देश और भाषा",
-  "ambassadorQuotaFull": "आपके क्षेत्र में राजदूत कोटा भरा हुआ है।",
-  "ambassadorQuotaAvailable": "राजदूत स्थान उपलब्ध हैं!",
-  "ambassadorStatusAssigned": "आप एक सक्रिय राजदूत हैं।",
-  "ambassadorStatusNotEligible": "आप राजदूत स्थिति के लिए पात्र नहीं हैं।",
-  "ambassadorStatusWaiting": "स्थान उपलब्धता की प्रतीक्षा में...",
-  "ambassadorStatusRevoked": "आपकी राजदूत स्थिति रद्द कर दी गई है।",
-  "ambassadorNoticeAdultOnly": "केवल वयस्क खाते ही राजदूत बन सकते हैं।",
-  "ambassadorNoticeQuotaReached": "आपके देश और भाषा के लिए राजदूत कोटा पूरा हो गया है।",
-  "ambassadorNoticeAutoAssign": "राजदूतत्व स्वचालित रूप से योग्य उपयोगकर्ताओं को प्रदान किया जाता है।",
-  "appTitle": "Appoint",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
-  "welcome": "स्वागत है",
-  "@welcome": {
-    "description": "Welcome message"
+  "refresh": "Refresh",
+  "@refresh": {
+    "description": "Refresh button text"
   },
   "home": "होम",
   "@home": {
     "description": "Home navigation label"
   },
-  "menu": "मेनू",
-  "@menu": {
-    "description": "Menu navigation label"
+  "noSessionsYet": "No sessions yet",
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
   },
-  "profile": "प्रोफ़ाइल",
-  "@profile": {
-    "description": "Profile navigation label"
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button text"
   },
-  "signOut": "साइन आउट",
-  "@signOut": {
-    "description": "Sign out button label"
+  "playtimeLandingChooseMode": "Choose your play mode:",
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "signUp": "Sign Up",
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "scheduleMessage": "Schedule Message",
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "decline": "अस्वीकार करें",
+  "@decline": {
+    "description": "Decline button"
+  },
+  "adminBroadcast": "व्यवस्थापक प्रसारण",
+  "@adminBroadcast": {
+    "description": "Admin broadcast title"
   },
   "login": "लॉगिन",
   "@login": {
-    "description": "Login button label"
+    "description": "Login button text"
   },
-  "email": "ईमेल",
-  "@email": {
-    "description": "Email field label"
-  },
-  "password": "पासवर्ड",
-  "@password": {
-    "description": "Password field label"
-  },
-  "signIn": "साइन इन",
-  "@signIn": {
-    "description": "Sign in button label"
-  },
-  "bookMeeting": "मीटिंग बुक करें",
-  "@bookMeeting": {
-    "description": "Book meeting button label"
-  },
-  "bookAppointment": "अपॉइंटमेंट बुक करें",
-  "@bookAppointment": {
-    "description": "Book appointment button label"
-  },
-  "bookingRequest": "बुकिंग अनुरोध",
-  "@bookingRequest": {
-    "description": "Booking request label"
-  },
-  "confirmBooking": "बुकिंग की पुष्टि करें",
-  "@confirmBooking": {
-    "description": "Confirm booking button label"
-  },
-  "chatBooking": "चैट बुकिंग",
-  "@chatBooking": {
-    "description": "Chat booking label"
-  },
-  "bookViaChat": "चैट के माध्यम से बुक करें",
-  "@bookViaChat": {
-    "description": "Book via chat button label"
-  },
-  "submitBooking": "बुकिंग सबमिट करें",
-  "@submitBooking": {
-    "description": "Submit booking button label"
-  },
-  "next": "अगला",
-  "@next": {
-    "description": "Label for the next button"
-  },
-  "selectStaff": "स्टाफ चुनें",
-  "@selectStaff": {
-    "description": "Label for staff selection dropdown"
-  },
-  "pickDate": "तारीख चुनें",
-  "@pickDate": {
-    "description": "Label for date picker"
-  },
-  "staff": "स्टाफ",
-  "@staff": {
-    "description": "Staff label"
-  },
-  "service": "सेवा",
-  "@service": {
-    "description": "Service label"
-  },
-  "dateTime": "दिनांक और समय",
-  "@dateTime": {
-    "description": "Date and time label"
-  },
-  "duration": "अवधि: {duration} मिनट",
-  "@duration": {
-    "description": "Duration label with parameter",
-    "placeholders": {
-      "duration": {
-        "type": "String"
-      }
-    }
-  },
-  "notSelected": "चयन नहीं किया गया",
-  "@notSelected": {
-    "description": "Not selected state"
-  },
-  "noSlots": "कोई स्लॉट उपलब्ध नहीं",
-  "@noSlots": {
-    "description": "Message shown when no time slots are available"
-  },
-  "bookingConfirmed": "बुकिंग की पुष्टि हो गई",
-  "@bookingConfirmed": {
-    "description": "Booking confirmed message"
-  },
-  "failedToConfirmBooking": "बुकिंग की पुष्टि विफल रही",
-  "@failedToConfirmBooking": {
-    "description": "Failed to confirm booking message"
-  },
-  "noBookingsFound": "कोई बुकिंग नहीं मिली",
-  "@noBookingsFound": {
-    "description": "No bookings found message"
-  },
-  "errorLoadingBookings": "बुकिंग लोड करने में त्रुटि: {error}",
-  "@errorLoadingBookings": {
-    "description": "Error loading bookings message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "shareOnWhatsApp": "व्हाट्सएप पर साझा करें",
-  "@shareOnWhatsApp": {
-    "description": "Label for WhatsApp share button"
-  },
-  "shareMeetingInvitation": "अपनी मीटिंग निमंत्रण साझा करें:",
-  "@shareMeetingInvitation": {
-    "description": "Title for meeting invitation sharing section"
-  },
-  "meetingReadyMessage": "मीटिंग तैयार है! क्या आप इसे अपने समूह को भेजना चाहते हैं?",
-  "@meetingReadyMessage": {
-    "description": "Message shown in WhatsApp share dialog"
-  },
-  "customizeMessage": "अपना संदेश अनुकूलित करें...",
-  "@customizeMessage": {
-    "description": "Hint text for message customization"
-  },
-  "saveGroupForRecognition": "भविष्य की पहचान के लिए समूह सहेजें",
-  "@saveGroupForRecognition": {
-    "description": "Label for group recognition checkbox"
-  },
-  "groupNameOptional": "समूह का नाम (वैकल्पिक)",
-  "@groupNameOptional": {
-    "description": "Label for group name input field"
-  },
-  "enterGroupName": "पहचान के लिए समूह का नाम दर्ज करें",
-  "@enterGroupName": {
-    "description": "Hint text for group name input"
-  },
-  "knownGroupDetected": "ज्ञात समूह पाया गया",
-  "@knownGroupDetected": {
-    "description": "Message shown when a known group is detected"
-  },
-  "meetingSharedSuccessfully": "मीटिंग सफलतापूर्वक साझा की गई!",
-  "@meetingSharedSuccessfully": {
-    "description": "Success message when meeting is shared"
-  },
-  "bookingConfirmedShare": "बुकिंग की पुष्टि हो गई! अब आप निमंत्रण साझा कर सकते हैं।",
-  "@bookingConfirmedShare": {
-    "description": "Message shown after booking confirmation"
-  },
-  "defaultShareMessage": "हाय! मैंने APP-OINT के माध्यम से आपके साथ एक मीटिंग शेड्यूल की है। पुष्टि करने या अन्य समय सुझाने के लिए यहां क्लिक करें:",
-  "@defaultShareMessage": {
-    "description": "Default message for WhatsApp sharing"
-  },
-  "dashboard": "डैशबोर्ड",
-  "@dashboard": {
-    "description": "Dashboard label"
-  },
-  "businessDashboard": "व्यापार डैशबोर्ड",
-  "@businessDashboard": {
-    "description": "Business dashboard label"
-  },
-  "myProfile": "मेरी प्रोफ़ाइल",
-  "@myProfile": {
-    "description": "My profile label"
-  },
-  "noProfileFound": "कोई प्रोफ़ाइल नहीं मिली",
-  "@noProfileFound": {
-    "description": "No profile found message"
-  },
-  "errorLoadingProfile": "प्रोफ़ाइल लोड करने में त्रुटि",
-  "@errorLoadingProfile": {
-    "description": "Error loading profile message"
-  },
-  "myInvites": "मेरे निमंत्रण",
-  "@myInvites": {
-    "description": "My invites label"
-  },
-  "inviteDetail": "निमंत्रण विवरण",
-  "@inviteDetail": {
-    "description": "Invite detail label"
-  },
-  "inviteContact": "संपर्क को आमंत्रित करें",
-  "@inviteContact": {
-    "description": "Invite contact label"
+  "playtimeChooseFriends": "Choose friends to invite",
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
   },
   "noInvites": "कोई निमंत्रण नहीं",
   "@noInvites": {
     "description": "No invites message"
   },
-  "errorLoadingInvites": "निमंत्रण लोड करने में त्रुटि",
-  "@errorLoadingInvites": {
-    "description": "Error loading invites message"
-  },
-  "accept": "स्वीकार करें",
-  "@accept": {
-    "description": "Accept button label"
-  },
-  "decline": "अस्वीकार करें",
-  "@decline": {
-    "description": "Decline button label"
-  },
-  "sendInvite": "निमंत्रण भेजें",
-  "@sendInvite": {
-    "description": "Send invite button label"
-  },
-  "name": "नाम",
-  "@name": {
-    "description": "Name field label"
-  },
-  "phoneNumber": "फ़ोन नंबर",
-  "@phoneNumber": {
-    "description": "Phone number field label"
-  },
-  "emailOptional": "ईमेल (वैकल्पिक)",
-  "@emailOptional": {
-    "description": "Optional email field label"
-  },
-  "requiresInstallFallback": "स्थापना की आवश्यकता है",
-  "@requiresInstallFallback": {
-    "description": "Requires installation fallback message"
-  },
-  "notifications": "सूचनाएं",
-  "@notifications": {
-    "description": "Notifications label"
-  },
-  "notificationSettings": "अधिसूचना सेटिंग्स",
-  "@notificationSettings": {
-    "description": "Notification settings label"
-  },
-  "enableNotifications": "सूचनाएं सक्षम करें",
-  "@enableNotifications": {
-    "description": "Enable notifications label"
-  },
-  "errorFetchingToken": "टोकन प्राप्त करने में त्रुटि",
-  "@errorFetchingToken": {
-    "description": "Error fetching token message"
-  },
-  "fcmToken": "FCM टोकन: {token}",
-  "@fcmToken": {
-    "description": "FCM token display",
-    "placeholders": {
-      "token": {
-        "type": "String"
-      }
-    }
-  },
-  "familyDashboard": "पारिवारिक डैशबोर्ड",
-  "@familyDashboard": {
-    "description": "Family dashboard label"
-  },
-  "pleaseLoginForFamilyFeatures": "पारिवारिक सुविधाओं के लिए कृपया लॉगिन करें",
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Please login for family features message"
-  },
-  "familyMembers": "परिवार के सदस्य",
-  "@familyMembers": {
-    "description": "Family members label"
-  },
-  "invite": "आमंत्रित करें",
-  "@invite": {
-    "description": "Invite button label"
-  },
-  "pendingInvites": "लंबित निमंत्रण",
-  "@pendingInvites": {
-    "description": "Pending invites label"
-  },
-  "connectedChildren": "जुड़े हुए बच्चे",
-  "@connectedChildren": {
-    "description": "Connected children label"
-  },
-  "noFamilyMembersYet": "अभी तक कोई परिवार सदस्य नहीं है। शुरू करने के लिए किसी को आमंत्रित करें!",
-  "@noFamilyMembersYet": {
-    "description": "No family members yet message"
-  },
-  "errorLoadingFamilyLinks": "पारिवारिक लिंक लोड करने में त्रुटि: {error}",
-  "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "inviteChild": "बच्चे को आमंत्रित करें",
-  "@inviteChild": {
-    "description": "Invite child button label"
-  },
-  "managePermissions": "अनुमतियाँ प्रबंधित करें",
-  "@managePermissions": {
-    "description": "Manage permissions label"
-  },
-  "removeChild": "बच्चे को हटाएं",
-  "@removeChild": {
-    "description": "Remove child button label"
-  },
-  "loading": "लोड हो रहा है...",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "childEmail": "बच्चे का ईमेल",
-  "@childEmail": {
-    "description": "Child email field label"
-  },
-  "childEmailOrPhone": "बच्चे का ईमेल या फ़ोन",
-  "@childEmailOrPhone": {
-    "description": "Child email or phone field label"
-  },
-  "enterChildEmail": "बच्चे का ईमेल दर्ज करें",
-  "@enterChildEmail": {
-    "description": "Enter child email hint"
-  },
-  "otpCode": "ओटीपी कोड",
-  "@otpCode": {
-    "description": "OTP code field label"
-  },
-  "enterOtp": "ओटीपी दर्ज करें",
-  "@enterOtp": {
-    "description": "Enter OTP hint"
-  },
-  "verify": "सत्यापित करें",
-  "@verify": {
-    "description": "Verify button label"
-  },
-  "otpResentSuccessfully": "ओटीपी सफलतापूर्वक पुनः भेजा गया!",
-  "@otpResentSuccessfully": {
-    "description": "OTP resent successfully message"
-  },
-  "failedToResendOtp": "ओटीपी पुनः भेजने में विफल: {error}",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "childLinkedSuccessfully": "बच्चा सफलतापूर्वक लिंक हो गया!",
-  "@childLinkedSuccessfully": {
-    "description": "Child linked successfully message"
-  },
-  "invitationSentSuccessfully": "निमंत्रण सफलतापूर्वक भेजा गया!",
-  "@invitationSentSuccessfully": {
-    "description": "Invitation sent successfully message"
-  },
-  "failedToSendInvitation": "निमंत्रण भेजने में विफल: {error}",
-  "@failedToSendInvitation": {
-    "description": "Failed to send invitation message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "pleaseEnterValidEmail": "कृपया मान्य ईमेल दर्ज करें",
-  "@pleaseEnterValidEmail": {
-    "description": "Please enter valid email message"
-  },
-  "pleaseEnterValidEmailOrPhone": "कृपया मान्य ईमेल या फ़ोन दर्ज करें",
-  "@pleaseEnterValidEmailOrPhone": {
-    "description": "Please enter valid email or phone message"
-  },
-  "invalidCode": "अमान्य कोड, कृपया पुनः प्रयास करें",
-  "@invalidCode": {
-    "description": "Invalid code message"
-  },
-  "cancelInvite": "निमंत्रण रद्द करें",
-  "@cancelInvite": {
-    "description": "Cancel invite button label"
-  },
-  "cancelInviteConfirmation": "क्या आप वाकई इस निमंत्रण को रद्द करना चाहते हैं?",
-  "@cancelInviteConfirmation": {
-    "description": "Cancel invite confirmation message"
-  },
-  "no": "नहीं",
-  "@no": {
-    "description": "No button label"
-  },
-  "yesCancel": "हाँ, रद्द करें",
-  "@yesCancel": {
-    "description": "Yes cancel button label"
-  },
-  "inviteCancelledSuccessfully": "निमंत्रण सफलतापूर्वक रद्द किया गया!",
-  "@inviteCancelledSuccessfully": {
-    "description": "Invite cancelled successfully message"
-  },
-  "failedToCancelInvite": "निमंत्रण रद्द करने में विफल: {error}",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "revokeAccess": "पहुंच रद्द करें",
-  "@revokeAccess": {
-    "description": "Revoke access button label"
-  },
-  "revokeAccessConfirmation": "क्या आप वाकई इस बच्चे की पहुंच रद्द करना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।",
-  "@revokeAccessConfirmation": {
-    "description": "Revoke access confirmation message"
-  },
-  "revoke": "रद्द करें",
-  "@revoke": {
-    "description": "Revoke button label"
-  },
-  "accessRevokedSuccessfully": "पहुंच सफलतापूर्वक रद्द की गई!",
-  "@accessRevokedSuccessfully": {
-    "description": "Access revoked successfully message"
-  },
-  "failedToRevokeAccess": "पहुंच रद्द करने में विफल: {error}",
-  "@failedToRevokeAccess": {
-    "description": "Failed to revoke access message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "grantConsent": "सहमति दें",
-  "@grantConsent": {
-    "description": "Grant consent button label"
-  },
-  "revokeConsent": "सहमति रद्द करें",
-  "@revokeConsent": {
-    "description": "Revoke consent button label"
-  },
-  "consentGrantedSuccessfully": "सहमति सफलतापूर्वक दी गई!",
-  "@consentGrantedSuccessfully": {
-    "description": "Consent granted successfully message"
-  },
-  "consentRevokedSuccessfully": "सहमति सफलतापूर्वक रद्द की गई!",
-  "@consentRevokedSuccessfully": {
-    "description": "Consent revoked successfully message"
-  },
-  "failedToUpdateConsent": "सहमति अपडेट करने में विफल: {error}",
-  "@failedToUpdateConsent": {
-    "description": "Failed to update consent message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "checkingPermissions": "अनुमतियाँ जांची जा रही हैं...",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "cancel": "रद्द करें",
-  "@cancel": {
-    "description": "Cancel button label"
-  },
-  "close": "बंद करें",
-  "@close": {
-    "description": "Close button label"
-  },
-  "save": "सहेजें",
-  "@save": {
-    "description": "Save button label"
-  },
-  "sendNow": "अभी भेजें",
-  "@sendNow": {
-    "description": "Send now button label"
-  },
-  "details": "विवरण",
-  "@details": {
-    "description": "Details button label"
-  },
-  "noBroadcastMessages": "अभी तक कोई प्रसारण संदेश नहीं हैं",
-  "@noBroadcastMessages": {
-    "description": "No broadcast messages message"
-  },
-  "errorCheckingPermissions": "अनुमतियाँ जांचने में त्रुटि: {error}",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "mediaOptional": "मीडिया (वैकल्पिक)",
-  "@mediaOptional": {
-    "description": "Media optional section title"
-  },
-  "pickImage": "छवि चुनें",
-  "@pickImage": {
-    "description": "Pick image button label"
-  },
-  "pickVideo": "वीडियो चुनें",
-  "@pickVideo": {
-    "description": "Pick video button label"
-  },
-  "pollOptions": "मतदान विकल्प:",
-  "@pollOptions": {
-    "description": "Poll options label"
-  },
-  "targetingFilters": "लक्षित फ़िल्टर",
-  "@targetingFilters": {
-    "description": "Targeting filters section title"
-  },
-  "scheduling": "अनुसूची",
-  "@scheduling": {
-    "description": "Scheduling section title"
-  },
-  "scheduleForLater": "बाद के लिए शेड्यूल करें",
-  "@scheduleForLater": {
-    "description": "Schedule for later option"
-  },
-  "errorEstimatingRecipients": "प्राप्तकर्ताओं का अनुमान लगाने में त्रुटि: {error}",
-  "@errorEstimatingRecipients": {
-    "description": "Error estimating recipients message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "errorPickingImage": "छवि चुनने में त्रुटि: {error}",
-  "@errorPickingImage": {
-    "description": "Error picking image message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "errorPickingVideo": "वीडियो चुनने में त्रुटि: {error}",
-  "@errorPickingVideo": {
-    "description": "Error picking video message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "noPermissionForBroadcast": "आपके पास प्रसारण संदेश बनाने की अनुमति नहीं है।",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "messageSavedSuccessfully": "संदेश सफलतापूर्वक सहेजा गया",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully message"
-  },
-  "errorSavingMessage": "संदेश सहेजने में त्रुटि: {error}",
-  "@errorSavingMessage": {
-    "description": "Error saving message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
+  "playtimeChooseTime": "Choose a time",
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "success": "Success",
+  "@success": {
+    "description": "Success message"
+  },
+  "undo": "Undo",
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "opened": "खोला गया: {count}",
+  "@opened": {
+    "description": "Opened status"
+  },
+  "createVirtualSession": "Create Virtual Session",
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
   },
   "messageSentSuccessfully": "संदेश सफलतापूर्वक भेजा गया",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "errorSendingMessage": "संदेश भेजने में त्रुटि: {error}",
-  "@errorSendingMessage": {
-    "description": "Error sending message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
+  "redo": "Redo",
+  "@redo": {
+    "description": "Redo button text"
   },
-  "content": "सामग्री: {content}",
-  "@content": {
-    "description": "Content display",
-    "placeholders": {
-      "content": {
-        "type": "String"
-      }
-    }
+  "next": "अगला",
+  "@next": {
+    "description": "Next button text"
   },
-  "type": "प्रकार: {type}",
-  "@type": {
-    "description": "Type display",
-    "placeholders": {
-      "type": {
-        "type": "String"
-      }
-    }
+  "search": "Search",
+  "@search": {
+    "description": "Search placeholder text"
   },
-  "link": "लिंक: {link}",
-  "@link": {
-    "description": "Link display",
-    "placeholders": {
-      "link": {
-        "type": "String"
-      }
-    }
-  },
-  "status": "स्थिति: {status}",
-  "@status": {
-    "description": "Status display",
-    "placeholders": {
-      "status": {
-        "type": "String"
-      }
-    }
-  },
-  "recipients": "प्राप्तकर्ता: {count}",
-  "@recipients": {
-    "description": "Recipients display",
-    "placeholders": {
-      "count": {
-        "type": "String"
-      }
-    }
-  },
-  "opened": "खोला गया: {count}",
-  "@opened": {
-    "description": "Opened count display",
-    "placeholders": {
-      "count": {
-        "type": "String"
-      }
-    }
-  },
-  "clicked": "क्लिक किया गया: {count}",
-  "@clicked": {
-    "description": "Clicked count display",
-    "placeholders": {
-      "count": {
-        "type": "String"
-      }
-    }
+  "cancelInviteConfirmation": "क्या आप वाकई इस निमंत्रण को रद्द करना चाहते हैं?",
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
   },
   "created": "बनाया गया: {date}",
   "@created": {
-    "description": "Created date display",
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
+    "description": "Created status"
   },
-  "scheduled": "अनुसूचित: {date}",
-  "@scheduled": {
-    "description": "Scheduled date display",
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
+  "revokeAccess": "पहुंच रद्द करें",
+  "@revokeAccess": {
+    "description": "Revoke access button"
   },
-  "organizations": "संगठन",
-  "@organizations": {
-    "description": "Organizations screen title"
+  "saveGroupForRecognition": "भविष्य की पहचान के लिए समूह सहेजें",
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
   },
-  "noOrganizations": "कोई संगठन नहीं",
-  "@noOrganizations": {
-    "description": "No organizations message"
+  "playtimeLiveScheduled": "Live playtime scheduled!",
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
   },
-  "errorLoadingOrganizations": "संगठन लोड करने में त्रुटि",
-  "@errorLoadingOrganizations": {
-    "description": "Error loading organizations message"
+  "revokeAccessConfirmation": "क्या आप वाकई इस बच्चे की पहुंच रद्द करना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।",
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
   },
-  "members": "{count} सदस्य",
-  "@members": {
-    "description": "Members count display",
-    "placeholders": {
-      "count": {
-        "type": "String"
-      }
-    }
+  "download": "Download",
+  "@download": {
+    "description": "Download button text"
   },
-  "users": "उपयोगकर्ता",
-  "@users": {
-    "description": "Users screen title"
+  "password": "पासवर्ड",
+  "@password": {
+    "description": "Password field label"
   },
-  "noUsers": "कोई उपयोगकर्ता नहीं",
-  "@noUsers": {
-    "description": "No users message"
+  "errorLoadingFamilyLinks": "पारिवारिक लिंक लोड करने में त्रुटि: {error}",
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message"
   },
-  "errorLoadingUsers": "उपयोगकर्ता लोड करने में त्रुटि",
-  "@errorLoadingUsers": {
-    "description": "Error loading users message"
+  "cancel": "रद्द करें",
+  "@cancel": {
+    "description": "Cancel button text"
   },
-  "changeRole": "भूमिका बदलें",
-  "@changeRole": {
-    "description": "Change role button label"
-  },
-  "totalAppointments": "कुल अपॉइंटमेंट",
-  "@totalAppointments": {
-    "description": "Total appointments label"
-  },
-  "completedAppointments": "पूर्ण अपॉइंटमेंट",
-  "@completedAppointments": {
-    "description": "Completed appointments label"
-  },
-  "revenue": "राजस्व",
-  "@revenue": {
-    "description": "Revenue label"
-  },
-  "errorLoadingStats": "आंकड़े लोड करने में त्रुटि",
-  "@errorLoadingStats": {
-    "description": "Error loading stats message"
-  },
-  "appointment": "अपॉइंटमेंट: {id}",
-  "@appointment": {
-    "description": "Appointment display",
-    "placeholders": {
-      "id": {
-        "type": "String"
-      }
-    }
-  },
-  "from": "से: {name}",
-  "@from": {
-    "description": "From display",
-    "placeholders": {
-      "name": {
-        "type": "String"
-      }
-    }
-  },
-  "phone": "फोन: {number}",
-  "@phone": {
-    "description": "Phone display",
-    "placeholders": {
-      "number": {
-        "type": "String"
-      }
-    }
-  },
-  "noRouteDefined": "{route} के लिए कोई रूट परिभाषित नहीं है",
-  "@noRouteDefined": {
-    "description": "No route defined message",
-    "placeholders": {
-      "route": {
-        "type": "String"
-      }
-    }
-  },
-  "meetingDetails": "मीटिंग विवरण",
-  "@meetingDetails": {
-    "description": "Meeting details title"
-  },
-  "meetingId": "मीटिंग आईडी: {id}",
-  "@meetingId": {
-    "description": "Meeting ID display",
-    "placeholders": {
-      "id": {
-        "type": "String"
-      }
-    }
-  },
-  "creator": "निर्माता: {id}",
-  "@creator": {
-    "description": "Creator display",
-    "placeholders": {
-      "id": {
-        "type": "String"
-      }
-    }
-  },
-  "context": "संदर्भ: {id}",
-  "@context": {
-    "description": "Context display",
-    "placeholders": {
-      "id": {
-        "type": "String"
-      }
-    }
-  },
-  "group": "समूह: {id}",
-  "@group": {
-    "description": "Group display",
-    "placeholders": {
-      "id": {
-        "type": "String"
-      }
-    }
-  },
-  "requestPrivateSession": "निजी सत्र का अनुरोध करें",
-  "@requestPrivateSession": {
-    "description": "Request private session button label"
-  },
-  "privacyRequestSent": "आपकी गोपनीयता का अनुरोध आपके माता-पिता को भेजा गया है!",
-  "@privacyRequestSent": {
-    "description": "Privacy request sent message"
-  },
-  "failedToSendPrivacyRequest": "गोपनीयता अनुरोध भेजने में विफल: {error}",
-  "@failedToSendPrivacyRequest": {
-    "description": "Failed to send privacy request message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "errorLoadingPrivacyRequests": "गोपनीयता अनुरोध लोड करने में त्रुटि: {error}",
-  "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
-  },
-  "requestType": "{type} अनुरोध",
-  "@requestType": {
-    "description": "Request type display",
-    "placeholders": {
-      "type": {
-        "type": "String"
-      }
-    }
-  },
-  "statusColon": "स्थिति: {status}",
-  "@statusColon": {
-    "description": "Status with colon display",
-    "placeholders": {
-      "status": {
-        "type": "String"
-      }
-    }
+  "playtimeCreate": "Create",
+  "@playtimeCreate": {
+    "description": "Create button"
   },
   "failedToActionPrivacyRequest": "गोपनीयता अनुरोध {action} करने में विफल: {error}",
   "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message",
-    "placeholders": {
-      "action": {
-        "type": "String"
-      },
-      "error": {
-        "type": "String"
-      }
-    }
+    "description": "Failed to action privacy request message"
+  },
+  "appTitle": "Appoint",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "accept": "स्वीकार करें",
+  "@accept": {
+    "description": "Accept button"
+  },
+  "playtimeModeVirtual": "Virtual Play",
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
+  "playtimeDescription": "Enjoy live or virtual games with your friends!",
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "playtimeVirtualStarted": "Virtual playtime started!",
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
+  "createYourFirstGame": "Create your first game",
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "participants": "Participants",
+  "@participants": {
+    "description": "Participants label"
+  },
+  "recipients": "प्राप्तकर्ता: {count}",
+  "@recipients": {
+    "description": "Recipients label"
+  },
+  "noResults": "No results found",
+  "@noResults": {
+    "description": "No search results message"
   },
   "yes": "हाँ",
   "@yes": {
-    "description": "Yes button label"
+    "description": "Yes button text"
   },
-  "send": "भेजें",
-  "@send": {
-    "description": "Send button label"
+  "invite": "आमंत्रित करें",
+  "@invite": {
+    "description": "Invite button"
   },
-  "permissions": "अनुमतियाँ",
-  "@permissions": {
-    "description": "Permissions label"
+  "playtimeModeLive": "Live Play",
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
   },
-  "permissionsFor": "अनुमतियाँ - {childId}",
-  "@permissionsFor": {
-    "description": "Permissions for child label",
-    "placeholders": {
-      "childId": {
-        "type": "String"
-      }
-    }
+  "done": "Done",
+  "@done": {
+    "description": "Done button text"
   },
-  "errorLoadingPermissions": "अनुमतियाँ लोड करने में त्रुटि: {error}",
-  "@errorLoadingPermissions": {
-    "description": "Error loading permissions message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
+  "defaultShareMessage": "हाय! मैंने APP-OINT के माध्यम से आपके साथ एक मीटिंग शेड्यूल की है। पुष्टि करने या अन्य समय सुझाने के लिए यहां क्लिक करें:",
+  "@defaultShareMessage": {
+    "description": "Default share message"
   },
-  "none": "कोई नहीं",
-  "@none": {
-    "description": "None option"
+  "no": "नहीं",
+  "@no": {
+    "description": "No button text"
   },
-  "readOnly": "केवल पढ़ने के लिए",
-  "@readOnly": {
-    "description": "Read only option"
+  "playtimeHub": "Playtime Hub",
+  "@playtimeHub": {
+    "description": "Playtime hub title"
   },
-  "readWrite": "पढ़ें और लिखें",
-  "@readWrite": {
-    "description": "Read and write option"
+  "error": "Error",
+  "@error": {
+    "description": "Error message"
   },
-  "permissionUpdated": "अनुमति {category} को {newValue} में अपडेट किया गया",
-  "@permissionUpdated": {
-    "description": "Permission updated message",
-    "placeholders": {
-      "category": {
-        "type": "String"
-      },
-      "newValue": {
-        "type": "String"
-      }
-    }
+  "createLiveSession": "Create Live Session",
+  "@createLiveSession": {
+    "description": "Create live session button"
   },
-  "failedToUpdatePermission": "अनुमति अपडेट करने में विफल: {error}",
-  "@failedToUpdatePermission": {
-    "description": "Failed to update permission message",
-    "placeholders": {
-      "error": {
-        "type": "String"
-      }
-    }
+  "enableNotifications": "सूचनाएं सक्षम करें",
+  "@enableNotifications": {
+    "description": "Enable notifications label"
   },
   "invited": "आमंत्रित किया गया: {date}",
   "@invited": {
-    "description": "Invited date display",
-    "placeholders": {
-      "date": {
-        "type": "String"
-      }
-    }
+    "description": "Invited status"
   },
-  "adminBroadcast": "व्यवस्थापक प्रसारण",
-  "@adminBroadcast": {
-    "description": "Admin broadcast screen title"
+  "content": "सामग्री: {content}",
+  "@content": {
+    "description": "Content label"
   },
-  "composeBroadcastMessage": "प्रसारण संदेश लिखें",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message dialog title"
+  "meetingSharedSuccessfully": "मीटिंग सफलतापूर्वक साझा की गई!",
+  "@meetingSharedSuccessfully": {
+    "description": "Meeting shared successfully message"
   },
-  "adminScreenTBD": "व्यवस्थापक स्क्रीन - विकासाधीन",
-  "@adminScreenTBD": {
-    "description": "Admin screen placeholder"
+  "welcomeToPlaytime": "Welcome to Playtime",
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "viewAll": "View All",
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "playtimeVirtual": "Virtual Play",
+  "@playtimeVirtual": {
+    "description": "Virtual play label"
   },
   "staffScreenTBD": "स्टाफ स्क्रीन - विकासाधीन",
   "@staffScreenTBD": {
-    "description": "Staff screen placeholder"
+    "description": "Staff screen TBD message"
+  },
+  "cut": "Cut",
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "inviteCancelledSuccessfully": "निमंत्रण सफलतापूर्वक रद्द किया गया!",
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "composeBroadcastMessage": "प्रसारण संदेश लिखें",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message title"
+  },
+  "sendNow": "अभी भेजें",
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "noGamesYet": "No games yet",
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "select": "Select",
+  "@select": {
+    "description": "Select button text"
+  },
+  "about": "About",
+  "@about": {
+    "description": "About navigation label"
+  },
+  "choose": "Choose",
+  "@choose": {
+    "description": "Choose button text"
+  },
+  "profile": "प्रोफ़ाइल",
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "removeChild": "बच्चे को हटाएं",
+  "@removeChild": {
+    "description": "Remove child button"
+  },
+  "status": "स्थिति: {status}",
+  "@status": {
+    "description": "Status label"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "paste": "Paste",
+  "@paste": {
+    "description": "Paste button text"
+  },
+  "welcome": "स्वागत है",
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "playtimeCreateSession": "Create a Playtime Session",
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "familyMembers": "परिवार के सदस्य",
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "upload": "Upload",
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "upcomingSessions": "Upcoming Sessions",
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "enterGroupName": "पहचान के लिए समूह का नाम दर्ज करें",
+  "@enterGroupName": {
+    "description": "Enter group name placeholder"
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "playtimeLive": "Live Play",
+  "@playtimeLive": {
+    "description": "Live play label"
+  },
+  "errorLoadingInvites": "निमंत्रण लोड करने में त्रुटि",
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "targetingFilters": "लक्षित फ़िल्टर",
+  "@targetingFilters": {
+    "description": "Targeting filters label"
+  },
+  "pickVideo": "वीडियो चुनें",
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "playtimeGameDeleted": "Game deleted",
+  "@playtimeGameDeleted": {
+    "description": "Game deleted message"
+  },
+  "scheduleForLater": "बाद के लिए शेड्यूल करें",
+  "@scheduleForLater": {
+    "description": "Schedule for later button"
+  },
+  "accessRevokedSuccessfully": "पहुंच सफलतापूर्वक रद्द की गई!",
+  "@accessRevokedSuccessfully": {
+    "description": "Access revoked successfully message"
+  },
+  "type": "प्रकार: {type}",
+  "@type": {
+    "description": "Type label"
+  },
+  "checkingPermissions": "अनुमतियाँ जांची जा रही हैं...",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "copy": "Copy",
+  "@copy": {
+    "description": "Copy button text"
+  },
+  "yesCancel": "हाँ, रद्द करें",
+  "@yesCancel": {
+    "description": "Yes cancel button"
+  },
+  "email": "ईमेल",
+  "@email": {
+    "description": "Email field label"
+  },
+  "shareOnWhatsApp": "व्हाट्सएप पर साझा करें",
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "notificationSettings": "अधिसूचना सेटिंग्स",
+  "@notificationSettings": {
+    "description": "Notification settings title"
+  },
+  "myProfile": "मेरी प्रोफ़ाइल",
+  "@myProfile": {
+    "description": "My profile title"
+  },
+  "revoke": "रद्द करें",
+  "@revoke": {
+    "description": "Revoke button"
+  },
+  "noBroadcastMessages": "अभी तक कोई प्रसारण संदेश नहीं हैं",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "requestType": "{type} अनुरोध",
+  "@requestType": {
+    "description": "Request type label"
+  },
+  "notifications": "सूचनाएं",
+  "@notifications": {
+    "description": "Notifications title"
+  },
+  "details": "विवरण",
+  "@details": {
+    "description": "Details label"
+  },
+  "cancelInvite": "निमंत्रण रद्द करें",
+  "@cancelInvite": {
+    "description": "Cancel invite button"
+  },
+  "createNew": "Create New",
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "playtimeReject": "Reject",
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "errorLoadingProfile": "प्रोफ़ाइल लोड करने में त्रुटि",
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "add": "Add",
+  "@add": {
+    "description": "Add button text"
+  },
+  "playtimeGameApproved": "Game approved",
+  "@playtimeGameApproved": {
+    "description": "Game approved message"
+  },
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": {
+    "description": "Forgot password link text"
+  },
+  "familyDashboard": "पारिवारिक डैशबोर्ड",
+  "@familyDashboard": {
+    "description": "Family dashboard title"
+  },
+  "loading": "लोड हो रहा है...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "quickActions": "Quick Actions",
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "playtimeTitle": "Playtime",
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "otpResentSuccessfully": "ओटीपी सफलतापूर्वक पुनः भेजा गया!",
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "errorCheckingPermissions": "अनुमतियाँ जांचने में त्रुटि: {error}",
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message"
   },
   "clientScreenTBD": "क्लाइंट स्क्रीन - विकासाधीन",
   "@clientScreenTBD": {
-    "description": "Client screen placeholder"
-  }
+    "description": "Client screen TBD message"
+  },
+  "fcmToken": "FCM टोकन: {token}",
+  "@fcmToken": {
+    "description": "FCM token label"
+  },
+  "pickImage": "छवि चुनें",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "previous": "Previous",
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "noProfileFound": "कोई प्रोफ़ाइल नहीं मिली",
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "noFamilyMembersYet": "अभी तक कोई परिवार सदस्य नहीं है। शुरू करने के लिए किसी को आमंत्रित करें!",
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "mediaOptional": "मीडिया (वैकल्पिक)",
+  "@mediaOptional": {
+    "description": "Media optional label"
+  },
+  "messageSavedSuccessfully": "संदेश सफलतापूर्वक सहेजा गया",
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "scheduledFor": "Scheduled for",
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "dashboard": "डैशबोर्ड",
+  "@dashboard": {
+    "description": "Dashboard title"
+  },
+  "noPermissionForBroadcast": "आपके पास प्रसारण संदेश बनाने की अनुमति नहीं है।",
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "inviteDetail": "निमंत्रण विवरण",
+  "@inviteDetail": {
+    "description": "Invite detail title"
+  },
+  "scheduled": "अनुसूचित: {date}",
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "failedToResendOtp": "ओटीपी पुनः भेजने में विफल: {error}",
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
+  "scheduling": "अनुसूची",
+  "@scheduling": {
+    "description": "Scheduling label"
+  },
+  "errorSavingMessage": "संदेश सहेजने में त्रुटि: {error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message message"
+  },
+  "save": "सहेजें",
+  "@save": {
+    "description": "Save button text"
+  },
+  "playtimeApprove": "Approve",
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "createYourFirstSession": "Create your first session",
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "playtimeGameRejected": "Game rejected",
+  "@playtimeGameRejected": {
+    "description": "Game rejected message"
+  },
+  "failedToRevokeAccess": "पहुंच रद्द करने में विफल: {error}",
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message"
+  },
+  "recentGames": "Recent Games",
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "customizeMessage": "अपना संदेश अनुकूलित करें...",
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "failedToCancelInvite": "निमंत्रण रद्द करने में विफल: {error}",
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "errorSendingMessage": "संदेश भेजने में त्रुटि: {error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message message"
+  },
+  "confirmPassword": "Confirm Password",
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "errorLoadingPrivacyRequests": "गोपनीयता अनुरोध लोड करने में त्रुटि: {error}",
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message"
+  },
+  "connectedChildren": "जुड़े हुए बच्चे",
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "share": "Share",
+  "@share": {
+    "description": "Share button text"
+  },
+  "playtimeEnterGameName": "Enter game name",
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "pleaseLoginForFamilyFeatures": "पारिवारिक सुविधाओं के लिए कृपया लॉगिन करें",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "myInvites": "मेरे निमंत्रण",
+  "@myInvites": {
+    "description": "My invites title"
+  },
+  "createGame": "Create Game",
+  "@createGame": {
+    "description": "Create game button"
+  },
+  "groupNameOptional": "समूह का नाम (वैकल्पिक)",
+  "@groupNameOptional": {
+    "description": "Group name optional label"
+  },
+  "playtimeNoSessions": "No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "No playtime sessions message"
+  },
+  "adminScreenTBD": "व्यवस्थापक स्क्रीन - विकासाधीन",
+  "@adminScreenTBD": {
+    "description": "Admin screen TBD message"
+  },
+  "playtimeParentDashboardTitle": "Playtime Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Playtime parent dashboard title"
+  },
+  "close": "बंद करें",
+  "@close": {
+    "description": "Close button text"
+  },
+  "knownGroupDetected": "ज्ञात समूह पाया गया",
+  "@knownGroupDetected": {
+    "description": "Known group detected message"
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Back button text"
+  },
+  "playtimeChooseGame": "Choose a game",
+  "@playtimeChooseGame": {
+    "description": "Choose game label"
+  },
+  "managePermissions": "अनुमतियाँ प्रबंधित करें",
+  "@managePermissions": {
+    "description": "Manage permissions button"
+  },
+  "pollOptions": "मतदान विकल्प:",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "clicked": "क्लिक किया गया: {count}",
+  "@clicked": {
+    "description": "Clicked status"
+  },
+  "link": "लिंक: {link}",
+  "@link": {
+    "description": "Link label"
+  },
+  "meetingReadyMessage": "मीटिंग तैयार है! क्या आप इसे अपने समूह को भेजना चाहते हैं?",
+  "@meetingReadyMessage": {
+    "description": "Meeting ready message"
+  },
+  "pendingInvites": "लंबित निमंत्रण",
+  "@pendingInvites": {
+    "description": "Pending invites label"
+  },
+  "statusColon": "स्थिति: {status}",
+  "@statusColon": {
+    "description": "Status colon label"
+  },
+  "@@locale": "hi"
 }

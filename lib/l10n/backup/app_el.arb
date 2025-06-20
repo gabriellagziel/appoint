@@ -1,0 +1,776 @@
+{
+  "@@locale": "el",
+  "@status": {
+    "description": "Status display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
+  },
+  "refresh": "Refresh",
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  "home": "Αρχική",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "noSessionsYet": "No sessions yet",
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button text"
+  },
+  "playtimeLandingChooseMode": "Choose your play mode:",
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "@statusColon": {
+    "description": "Status with colon display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "signUp": "Sign Up",
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "scheduleMessage": "Schedule Message",
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "decline": "Απόρριψη",
+  "@decline": {
+    "description": "Decline button label"
+  },
+  "@type": {
+    "description": "Type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "adminBroadcast": "Broadcast διαχειριστή",
+  "@adminBroadcast": {
+    "description": "Admin broadcast screen title"
+  },
+  "login": "Σύνδεση",
+  "@login": {
+    "description": "Login button label"
+  },
+  "@choose": {
+    "description": "Choose button text"
+  },
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "@accessRevokedSuccessfully": {
+    "description": "Access revoked successfully message"
+  },
+  "playtimeChooseFriends": "Choose friends to invite",
+  "noInvites": "Δεν υπάρχουν προσκλήσεις",
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "playtimeChooseTime": "Choose a time",
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "success": "Success",
+  "@success": {
+    "description": "Success message"
+  },
+  "undo": "Undo",
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "opened": "Ανοίχθηκε: {count}",
+  "@opened": {
+    "description": "Opened count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "createVirtualSession": "Create Virtual Session",
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
+  },
+  "@errorSavingMessage": {
+    "description": "Error saving message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "messageSentSuccessfully": "Το μήνυμα στάλθηκε με επιτυχία",
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "redo": "Redo",
+  "@redo": {
+    "description": "Redo button text"
+  },
+  "next": "Επόμενο",
+  "@next": {
+    "description": "Label for the next button"
+  },
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "search": "Search",
+  "@yes": {
+    "description": "Yes button label"
+  },
+  "cancelInviteConfirmation": "Είστε σίγουρος ότι θέλετε να ακυρώσετε αυτή την πρόσκληση;",
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "created": "Δημιουργήθηκε: {date}",
+  "@created": {
+    "description": "Created date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "revokeAccess": "Ανάκληση πρόσβασης",
+  "@revokeAccess": {
+    "description": "Revoke access button label"
+  },
+  "saveGroupForRecognition": "Αποθήκευση ομάδας για αναγνώριση στο μέλλον",
+  "@saveGroupForRecognition": {
+    "description": "Label for group recognition checkbox"
+  },
+  "@clicked": {
+    "description": "Clicked count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@cancelInvite": {
+    "description": "Cancel invite button label"
+  },
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "playtimeLiveScheduled": "Live playtime scheduled!",
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
+  },
+  "revokeAccessConfirmation": "Είστε σίγουρος ότι θέλετε να ανακαλέσετε την πρόσβαση για αυτό το παιδί; Αυτή η ενέργεια δεν αναιρείται.",
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "@copy": {
+    "description": "Copy button text"
+  },
+  "download": "Download",
+  "@download": {
+    "description": "Download button text"
+  },
+  "@pendingInvites": {
+    "description": "Pending invites label"
+  },
+  "password": "Κωδικός πρόσβασης",
+  "@password": {
+    "description": "Password field label"
+  },
+  "@about": {
+    "description": "About navigation label"
+  },
+  "@playtimeVirtual": {
+    "description": "Virtual play label"
+  },
+  "errorLoadingFamilyLinks": "Σφάλμα φόρτωσης οικογενειακών συνδέσεων: {error}",
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "@playtimeChooseGame": {
+    "description": "Choose game label"
+  },
+  "cancel": "Ακύρωση",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "playtimeCreate": "Create",
+  "@playtimeCreate": {
+    "description": "Create button"
+  },
+  "failedToActionPrivacyRequest": "Αποτυχία {action} αιτήματος ιδιωτικότητας: {error}",
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message",
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "appTitle": "Appoint",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "accept": "Αποδοχή",
+  "@accept": {
+    "description": "Accept button label"
+  },
+  "playtimeModeVirtual": "Virtual Play",
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
+  "@back": {
+    "description": "Back button text"
+  },
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "playtimeDescription": "Enjoy live or virtual games with your friends!",
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "delete": "Delete",
+  "playtimeVirtualStarted": "Virtual playtime started!",
+  "createYourFirstGame": "Create your first game",
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "participants": "Participants",
+  "@participants": {
+    "description": "Participants label"
+  },
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "recipients": "Παραλήπτες: {count}",
+  "@recipients": {
+    "description": "Recipients display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@mediaOptional": {
+    "description": "Media optional section title"
+  },
+  "noResults": "No results found",
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "yes": "Ναι",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "@add": {
+    "description": "Add button text"
+  },
+  "invite": "Πρόσκληση",
+  "@invite": {
+    "description": "Invite button label"
+  },
+  "@forgotPassword": {
+    "description": "Forgot password link text"
+  },
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "@playtimeParentDashboardTitle": {
+    "description": "Playtime parent dashboard title"
+  },
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "@playtimeHub": {
+    "description": "Playtime hub title"
+  },
+  "playtimeModeLive": "Live Play",
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
+  },
+  "done": "Done",
+  "@done": {
+    "description": "Done button text"
+  },
+  "defaultShareMessage": "Γεια! Προγραμματίσαμε μια συνάντηση μέσω APP‑OINT. Κάντε κλικ εδώ για επιβεβαίωση ή πρόταση άλλης ώρας:",
+  "@defaultShareMessage": {
+    "description": "Default message for WhatsApp sharing"
+  },
+  "no": "Όχι",
+  "@no": {
+    "description": "No button label"
+  },
+  "playtimeHub": "Playtime Hub",
+  "error": "Error",
+  "@error": {
+    "description": "Error message"
+  },
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "@errorSendingMessage": {
+    "description": "Error sending message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "createLiveSession": "Create Live Session",
+  "@createLiveSession": {
+    "description": "Create live session button"
+  },
+  "enableNotifications": "Ενεργοποίηση ειδοποιήσεων",
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "invited": "Προσκληθεί: {date}",
+  "@invited": {
+    "description": "Invited date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "@removeChild": {
+    "description": "Remove child button label"
+  },
+  "content": "Περιεχόμενο: {content}",
+  "@content": {
+    "description": "Content display",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "@sendNow": {
+    "description": "Send now button label"
+  },
+  "@familyDashboard": {
+    "description": "Family dashboard label"
+  },
+  "meetingSharedSuccessfully": "Η συνάντηση κοινοποιήθηκε επιτυχώς!",
+  "@meetingSharedSuccessfully": {
+    "description": "Success message when meeting is shared"
+  },
+  "welcomeToPlaytime": "Welcome to Playtime",
+  "viewAll": "View All",
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "playtimeVirtual": "Virtual Play",
+  "@clientScreenTBD": {
+    "description": "Client screen placeholder"
+  },
+  "staffScreenTBD": "Οθόνη προσωπικού – Σε εξέλιξη",
+  "@staffScreenTBD": {
+    "description": "Staff screen placeholder"
+  },
+  "cut": "Cut",
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "inviteCancelledSuccessfully": "Η πρόσκληση ακυρώθηκε επιτυχώς!",
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "composeBroadcastMessage": "Σύνθεση μηνύματος broadcast",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message dialog title"
+  },
+  "sendNow": "Αποστολή τώρα",
+  "noGamesYet": "No games yet",
+  "select": "Select",
+  "@select": {
+    "description": "Select button text"
+  },
+  "about": "About",
+  "choose": "Choose",
+  "profile": "Προφίλ",
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "removeChild": "Αφαίρεση παιδιού",
+  "status": "Κατάσταση: {status}",
+  "@inviteDetail": {
+    "description": "Invite detail label"
+  },
+  "@enterGroupName": {
+    "description": "Hint text for group name input"
+  },
+  "logout": "Logout",
+  "paste": "Paste",
+  "@paste": {
+    "description": "Paste button text"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "welcome": "Καλώς ήρθατε",
+  "@createGame": {
+    "description": "Create game button"
+  },
+  "playtimeCreateSession": "Create a Playtime Session",
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "familyMembers": "Μέλη οικογένειας",
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "@playtimeGameApproved": {
+    "description": "Game approved message"
+  },
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "@playtimeLive": {
+    "description": "Live play label"
+  },
+  "upload": "Upload",
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "@email": {
+    "description": "Email field label"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Label for WhatsApp share button"
+  },
+  "upcomingSessions": "Upcoming Sessions",
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "enterGroupName": "Εισάγετε όνομα ομάδας για αναγνώριση",
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "playtimeLive": "Live Play",
+  "errorLoadingInvites": "Σφάλμα φόρτωσης προσκλήσεων",
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "targetingFilters": "Φίλτρα στόχευσης",
+  "@targetingFilters": {
+    "description": "Targeting filters section title"
+  },
+  "pickVideo": "Επιλογή βίντεο",
+  "@pickVideo": {
+    "description": "Pick video button label"
+  },
+  "playtimeGameDeleted": "Game deleted",
+  "@playtimeGameDeleted": {
+    "description": "Game deleted message"
+  },
+  "scheduleForLater": "Προγραμματισμός για αργότερα",
+  "@scheduleForLater": {
+    "description": "Schedule for later option"
+  },
+  "accessRevokedSuccessfully": "Η πρόσβαση ανακλήθηκε επιτυχώς!",
+  "type": "Τύπος: {type}",
+  "checkingPermissions": "Έλεγχος δικαιωμάτων...",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "copy": "Copy",
+  "yesCancel": "Ναι, ακύρωση",
+  "@yesCancel": {
+    "description": "Yes cancel button label"
+  },
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "email": "Ηλεκτρονικό ταχυδρομείο",
+  "shareOnWhatsApp": "Κοινοποίηση στο WhatsApp",
+  "notificationSettings": "Ρυθμίσεις ειδοποιήσεων",
+  "@notificationSettings": {
+    "description": "Notification settings label"
+  },
+  "@playtimeGameRejected": {
+    "description": "Game rejected message"
+  },
+  "myProfile": "Το προφίλ μου",
+  "revoke": "Ανακαλέστε",
+  "@revoke": {
+    "description": "Revoke button label"
+  },
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "noBroadcastMessages": "Δεν υπάρχουν ακόμα μηνύματα broadcast",
+  "requestType": "Αίτημα {type}",
+  "@requestType": {
+    "description": "Request type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "notifications": "Ειδοποιήσεις",
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "details": "Λεπτομέρειες",
+  "@details": {
+    "description": "Details button label"
+  },
+  "cancelInvite": "Ακύρωση πρόσκλησης",
+  "createNew": "Create New",
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "settings": "Settings",
+  "playtimeReject": "Reject",
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "@groupNameOptional": {
+    "description": "Label for group name input field"
+  },
+  "errorLoadingProfile": "Σφάλμα φόρτωσης προφίλ",
+  "edit": "Edit",
+  "add": "Add",
+  "playtimeGameApproved": "Game approved",
+  "@link": {
+    "description": "Link display",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "forgotPassword": "Forgot Password?",
+  "familyDashboard": "Οικογενειακός πίνακας",
+  "loading": "Φόρτωση...",
+  "@meetingReadyMessage": {
+    "description": "Message shown in WhatsApp share dialog"
+  },
+  "@knownGroupDetected": {
+    "description": "Message shown when a known group is detected"
+  },
+  "quickActions": "Quick Actions",
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "@pickImage": {
+    "description": "Pick image button label"
+  },
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "playtimeTitle": "Playtime",
+  "otpResentSuccessfully": "Ο κωδικός OTP στάλθηκε ξανά με επιτυχία!",
+  "errorCheckingPermissions": "Σφάλμα ελέγχου δικαιωμάτων: {error}",
+  "clientScreenTBD": "Οθόνη πελάτη – Σε εξέλιξη",
+  "fcmToken": "FCM Token: {token}",
+  "@fcmToken": {
+    "description": "FCM token display",
+    "placeholders": {
+      "token": {
+        "type": "String"
+      }
+    }
+  },
+  "pickImage": "Επιλογή εικόνας",
+  "@scheduling": {
+    "description": "Scheduling section title"
+  },
+  "previous": "Previous",
+  "noProfileFound": "Δεν βρέθηκε προφίλ",
+  "noFamilyMembersYet": "Δεν υπάρχουν ακόμα μέλη οικογένειας. Στείλτε μια πρόσκληση για να ξεκινήσετε!",
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "mediaOptional": "Μέσα (προαιρετικά)",
+  "messageSavedSuccessfully": "Το μήνυμα αποθηκεύτηκε με επιτυχία",
+  "scheduledFor": "Scheduled for",
+  "dashboard": "Πίνακας ελέγχου",
+  "@managePermissions": {
+    "description": "Manage permissions label"
+  },
+  "noPermissionForBroadcast": "Δεν έχετε άδεια για δημιουργία μηνυμάτων broadcast.",
+  "@close": {
+    "description": "Close button label"
+  },
+  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "inviteDetail": "Λεπτομέρειες πρόσκλησης",
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "scheduled": "Προγραμματίστηκε: {date}",
+  "@scheduled": {
+    "description": "Scheduled date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToResendOtp": "Αποτυχία επανυποβολής OTP: {error}",
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "@save": {
+    "description": "Save button label"
+  },
+  "scheduling": "Προγραμματισμός",
+  "errorSavingMessage": "Σφάλμα αποθήκευσης μηνύματος: {error}",
+  "@customizeMessage": {
+    "description": "Hint text for message customization"
+  },
+  "save": "Αποθήκευση",
+  "playtimeApprove": "Approve",
+  "createYourFirstSession": "Create your first session",
+  "playtimeGameRejected": "Game rejected",
+  "failedToRevokeAccess": "Αποτυχία ανάκλησης πρόσβασης: {error}",
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "recentGames": "Recent Games",
+  "@playtimeNoSessions": {
+    "description": "No playtime sessions message"
+  },
+  "customizeMessage": "Προσαρμόστε το μήνυμά σας...",
+  "failedToCancelInvite": "Αποτυχία ακύρωσης πρόσκλησης: {error}",
+  "errorSendingMessage": "Σφάλμα αποστολής μηνύματος: {error}",
+  "confirmPassword": "Confirm Password",
+  "errorLoadingPrivacyRequests": "Σφάλμα φόρτωσης αιτημάτων ιδιωτικότητας: {error}",
+  "@myInvites": {
+    "description": "My invites label"
+  },
+  "connectedChildren": "Συνδεδεμένα παιδιά",
+  "share": "Share",
+  "@share": {
+    "description": "Share button text"
+  },
+  "playtimeEnterGameName": "Enter game name",
+  "pleaseLoginForFamilyFeatures": "Συνδεθείτε για πρόσβαση σε οικογενειακές λειτουργίες",
+  "myInvites": "Οι προσκλήσεις μου",
+  "createGame": "Create Game",
+  "groupNameOptional": "Όνομα ομάδας (προαιρετικό)",
+  "playtimeNoSessions": "No playtime sessions found.",
+  "adminScreenTBD": "Οθόνη διαχειριστή – Σε εξέλιξη",
+  "@adminScreenTBD": {
+    "description": "Admin screen placeholder"
+  },
+  "playtimeParentDashboardTitle": "Playtime Dashboard",
+  "close": "Κλείσιμο",
+  "knownGroupDetected": "Ανιχνεύθηκε γνωστή ομάδα",
+  "back": "Back",
+  "playtimeChooseGame": "Choose a game",
+  "managePermissions": "Διαχείριση δικαιωμάτων",
+  "pollOptions": "Επιλογές ψηφοφορίας:",
+  "clicked": "Κλικ: {count}",
+  "link": "Σύνδεσμος: {link}",
+  "meetingReadyMessage": "Η συνάντηση είναι έτοιμη! Θέλετε να την στείλετε στην ομάδα σας;",
+  "pendingInvites": "Εκκρεμείς προσκλήσεις",
+  "statusColon": "Κατάσταση: {status}"
+}

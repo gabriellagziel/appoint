@@ -9,699 +9,545 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'Appoint';
-
-  @override
-  String get welcome => 'Welcome';
+  String get refresh => 'Refresh';
 
   @override
   String get home => 'Home';
 
   @override
-  String get menu => 'Menu';
+  String get noSessionsYet => 'No sessions yet';
 
   @override
-  String get profile => 'Profile';
+  String get ok => 'OK';
 
   @override
-  String get signOut => 'Sign Out';
+  String get playtimeLandingChooseMode => 'Choose your play mode:';
 
   @override
-  String get login => 'Login';
+  String get signUp => 'Sign Up';
 
   @override
-  String get email => 'Email';
-
-  @override
-  String get password => 'Password';
-
-  @override
-  String get signIn => 'Sign In';
-
-  @override
-  String get bookMeeting => 'Book a Meeting';
-
-  @override
-  String get bookAppointment => 'Book Appointment';
-
-  @override
-  String get bookingRequest => 'Booking Request';
-
-  @override
-  String get confirmBooking => 'Confirm Booking';
-
-  @override
-  String get chatBooking => 'Chat Booking';
-
-  @override
-  String get bookViaChat => 'Book via Chat';
-
-  @override
-  String get submitBooking => 'Submit Booking';
-
-  @override
-  String get next => 'Next';
-
-  @override
-  String get selectStaff => 'Select Staff';
-
-  @override
-  String get pickDate => 'Pick Date';
-
-  @override
-  String get staff => 'Staff';
-
-  @override
-  String get service => 'Service';
-
-  @override
-  String get dateTime => 'Date & Time';
-
-  @override
-  String duration(String duration) {
-    return 'Duration: $duration minutes';
-  }
-
-  @override
-  String get notSelected => 'Not Selected';
-
-  @override
-  String get noSlots => 'No slots available';
-
-  @override
-  String get bookingConfirmed => 'Booking Confirmed';
-
-  @override
-  String get failedToConfirmBooking => 'Failed to confirm booking';
-
-  @override
-  String get noBookingsFound => 'No bookings found';
-
-  @override
-  String errorLoadingBookings(String error) {
-    return 'Error loading bookings: $error';
-  }
-
-  @override
-  String get shareOnWhatsApp => 'Share on WhatsApp';
-
-  @override
-  String get shareMeetingInvitation => 'Share your meeting invitation:';
-
-  @override
-  String get meetingReadyMessage =>
-      'The meeting is ready! Would you like to send it to your group?';
-
-  @override
-  String get customizeMessage => 'Customize your message...';
-
-  @override
-  String get saveGroupForRecognition => 'Save group for future recognition';
-
-  @override
-  String get groupNameOptional => 'Group Name (optional)';
-
-  @override
-  String get enterGroupName => 'Enter group name for recognition';
-
-  @override
-  String get knownGroupDetected => 'Known group detected';
-
-  @override
-  String get meetingSharedSuccessfully => 'Meeting shared successfully!';
-
-  @override
-  String get bookingConfirmedShare =>
-      'Booking confirmed! You can now share the invitation.';
-
-  @override
-  String get defaultShareMessage =>
-      'Hey! I\'ve scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:';
-
-  @override
-  String get dashboard => 'Dashboard';
-
-  @override
-  String get businessDashboard => 'Business Dashboard';
-
-  @override
-  String get myProfile => 'My Profile';
-
-  @override
-  String get noProfileFound => 'No profile found';
-
-  @override
-  String get errorLoadingProfile => 'Error loading profile';
-
-  @override
-  String get myInvites => 'My Invites';
-
-  @override
-  String get inviteDetail => 'Invite Detail';
-
-  @override
-  String get inviteContact => 'Invite Contact';
-
-  @override
-  String get noInvites => 'No invites';
-
-  @override
-  String get errorLoadingInvites => 'Error loading invites';
-
-  @override
-  String get accept => 'Accept';
+  String get scheduleMessage => 'Schedule Message';
 
   @override
   String get decline => 'Decline';
 
   @override
-  String get sendInvite => 'Send Invite';
+  String get adminBroadcast => 'Admin Broadcast';
 
   @override
-  String get name => 'Name';
+  String get login => 'Login';
 
   @override
-  String get phoneNumber => 'Phone Number';
+  String get playtimeChooseFriends => 'Choose friends to invite';
 
   @override
-  String get emailOptional => 'Email (optional)';
+  String get noInvites => 'No invites';
 
   @override
-  String get requiresInstallFallback => 'Requires installation';
+  String get playtimeChooseTime => 'Choose a time';
 
   @override
-  String get notifications => 'Notifications';
+  String get success => 'Success';
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get undo => 'Undo';
 
   @override
-  String get enableNotifications => 'Enable Notifications';
-
-  @override
-  String get errorFetchingToken => 'Error fetching token';
-
-  @override
-  String fcmToken(String token) {
-    return 'FCM Token: $token';
+  String opened(Object count) {
+    return 'Opened';
   }
 
   @override
-  String get familyDashboard => 'Family Dashboard';
+  String get createVirtualSession => 'Create Virtual Session';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+  String get messageSentSuccessfully => 'Message sent successfully';
 
   @override
-  String get familyMembers => 'Family Members';
+  String get redo => 'Redo';
 
   @override
-  String get invite => 'Invite';
+  String get next => 'Next';
 
   @override
-  String get pendingInvites => 'Pending Invites';
-
-  @override
-  String get connectedChildren => 'Connected Children';
-
-  @override
-  String get noFamilyMembersYet =>
-      'No family members yet. Invite someone to get started!';
-
-  @override
-  String errorLoadingFamilyLinks(String error) {
-    return 'Error loading family links: $error';
-  }
-
-  @override
-  String get inviteChild => 'Invite Child';
-
-  @override
-  String get managePermissions => 'Manage Permissions';
-
-  @override
-  String get removeChild => 'Remove Child';
-
-  @override
-  String get loading => 'Loading...';
-
-  @override
-  String get childEmail => 'Child Email';
-
-  @override
-  String get childEmailOrPhone => 'Child Email or Phone';
-
-  @override
-  String get enterChildEmail => 'Enter child email';
-
-  @override
-  String get otpCode => 'OTP Code';
-
-  @override
-  String get enterOtp => 'Enter OTP';
-
-  @override
-  String get verify => 'Verify';
-
-  @override
-  String get otpResentSuccessfully => 'OTP resent successfully!';
-
-  @override
-  String failedToResendOtp(String error) {
-    return 'Failed to resend OTP: $error';
-  }
-
-  @override
-  String get childLinkedSuccessfully => 'Child linked successfully!';
-
-  @override
-  String get invitationSentSuccessfully => 'Invitation sent successfully!';
-
-  @override
-  String failedToSendInvitation(String error) {
-    return 'Failed to send invitation: $error';
-  }
-
-  @override
-  String get pleaseEnterValidEmail => 'Please enter a valid email';
-
-  @override
-  String get pleaseEnterValidEmailOrPhone =>
-      'Please enter a valid email or phone';
-
-  @override
-  String get invalidCode => 'Invalid code, please try again';
-
-  @override
-  String get cancelInvite => 'Cancel Invite';
+  String get search => 'Search';
 
   @override
   String get cancelInviteConfirmation =>
       'Are you sure you want to cancel this invite?';
 
   @override
-  String get no => 'No';
-
-  @override
-  String get yesCancel => 'Yes, Cancel';
-
-  @override
-  String get inviteCancelledSuccessfully => 'Invite cancelled successfully!';
-
-  @override
-  String failedToCancelInvite(String error) {
-    return 'Failed to cancel invite: $error';
+  String created(Object date) {
+    return 'Created';
   }
 
   @override
   String get revokeAccess => 'Revoke Access';
 
   @override
+  String get saveGroupForRecognition => 'Save Group for Recognition';
+
+  @override
+  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+
+  @override
   String get revokeAccessConfirmation =>
-      'Are you sure you want to revoke access for this child? This action cannot be undone.';
+      'Are you sure you want to revoke access?';
 
   @override
-  String get revoke => 'Revoke';
+  String get download => 'Download';
 
   @override
-  String get accessRevokedSuccessfully => 'Access revoked successfully!';
+  String get password => 'Password';
 
   @override
-  String failedToRevokeAccess(String error) {
-    return 'Failed to revoke access: $error';
+  String errorLoadingFamilyLinks(Object error) {
+    return 'Error loading family links';
   }
 
   @override
-  String get grantConsent => 'Grant Consent';
+  String get cancel => 'Cancel';
 
   @override
-  String get revokeConsent => 'Revoke Consent';
+  String get playtimeCreate => 'Create';
 
   @override
-  String get consentGrantedSuccessfully => 'Consent granted successfully!';
+  String failedToActionPrivacyRequest(Object action, Object error) {
+    return 'Failed to action privacy request';
+  }
 
   @override
-  String get consentRevokedSuccessfully => 'Consent revoked successfully!';
+  String get appTitle => 'APP-OINT';
 
   @override
-  String failedToUpdateConsent(String error) {
-    return 'Failed to update consent: $error';
+  String get accept => 'Accept';
+
+  @override
+  String get playtimeModeVirtual => 'Virtual Play';
+
+  @override
+  String get playtimeDescription =>
+      'Enjoy live or virtual games with your friends!';
+
+  @override
+  String get delete => 'Delete';
+
+  @override
+  String get playtimeVirtualStarted => 'Virtual playtime started!';
+
+  @override
+  String get createYourFirstGame => 'Create your first game';
+
+  @override
+  String get participants => 'Participants';
+
+  @override
+  String recipients(Object count) {
+    return 'Recipients';
+  }
+
+  @override
+  String get noResults => 'No results found';
+
+  @override
+  String get yes => 'Yes';
+
+  @override
+  String get invite => 'Invite';
+
+  @override
+  String get playtimeModeLive => 'Live Play';
+
+  @override
+  String get done => 'Done';
+
+  @override
+  String get defaultShareMessage => 'Let\'s meet via Appoint!';
+
+  @override
+  String get no => 'No';
+
+  @override
+  String get playtimeHub => 'Playtime Hub';
+
+  @override
+  String get error => 'Error';
+
+  @override
+  String get createLiveSession => 'Create Live Session';
+
+  @override
+  String get enableNotifications => 'Enable Notifications';
+
+  @override
+  String invited(Object date) {
+    return 'Invited';
+  }
+
+  @override
+  String content(Object content) {
+    return 'Content';
+  }
+
+  @override
+  String get meetingSharedSuccessfully => 'Meeting shared successfully';
+
+  @override
+  String get welcomeToPlaytime => 'Welcome to Playtime';
+
+  @override
+  String get viewAll => 'View All';
+
+  @override
+  String get playtimeVirtual => 'Virtual Play';
+
+  @override
+  String get staffScreenTBD => 'Staff screen coming soon';
+
+  @override
+  String get cut => 'Cut';
+
+  @override
+  String get inviteCancelledSuccessfully => 'Invite cancelled successfully';
+
+  @override
+  String get retry => 'Retry';
+
+  @override
+  String get composeBroadcastMessage => 'Compose Broadcast Message';
+
+  @override
+  String get sendNow => 'Send Now';
+
+  @override
+  String get noGamesYet => 'No games yet';
+
+  @override
+  String get select => 'Select';
+
+  @override
+  String get about => 'About';
+
+  @override
+  String get choose => 'Choose';
+
+  @override
+  String get profile => 'Profile';
+
+  @override
+  String get removeChild => 'Remove Child';
+
+  @override
+  String status(Object status) {
+    return 'Status';
+  }
+
+  @override
+  String get logout => 'Logout';
+
+  @override
+  String get paste => 'Paste';
+
+  @override
+  String get welcome => 'Welcome';
+
+  @override
+  String get playtimeCreateSession => 'Create a Playtime Session';
+
+  @override
+  String get familyMembers => 'Family Members';
+
+  @override
+  String get upload => 'Upload';
+
+  @override
+  String get upcomingSessions => 'Upcoming Sessions';
+
+  @override
+  String get enterGroupName => 'Enter group name';
+
+  @override
+  String get confirm => 'Confirm';
+
+  @override
+  String get playtimeLive => 'Live Play';
+
+  @override
+  String get errorLoadingInvites => 'Error loading invites';
+
+  @override
+  String get targetingFilters => 'Targeting Filters';
+
+  @override
+  String get pickVideo => 'Pick Video';
+
+  @override
+  String get playtimeGameDeleted => 'Game deleted';
+
+  @override
+  String get scheduleForLater => 'Schedule for Later';
+
+  @override
+  String get accessRevokedSuccessfully => 'Access revoked successfully';
+
+  @override
+  String type(Object type) {
+    return 'Type';
   }
 
   @override
   String get checkingPermissions => 'Checking permissions...';
 
   @override
-  String get cancel => 'Cancel';
+  String get copy => 'Copy';
 
   @override
-  String get close => 'Close';
+  String get yesCancel => 'Yes, Cancel';
 
   @override
-  String get save => 'Save';
+  String get email => 'Email';
 
   @override
-  String get sendNow => 'Send Now';
+  String get shareOnWhatsApp => 'Share on WhatsApp';
+
+  @override
+  String get notificationSettings => 'Notification Settings';
+
+  @override
+  String get myProfile => 'My Profile';
+
+  @override
+  String get revoke => 'Revoke';
+
+  @override
+  String get noBroadcastMessages => 'No messages yet';
+
+  @override
+  String requestType(Object type) {
+    return 'Request Type';
+  }
+
+  @override
+  String get notifications => 'Notifications';
 
   @override
   String get details => 'Details';
 
   @override
-  String get noBroadcastMessages => 'No broadcast messages yet';
+  String get cancelInvite => 'Cancel Invite';
 
   @override
-  String errorCheckingPermissions(String error) {
-    return 'Error checking permissions: $error';
+  String get createNew => 'Create New';
+
+  @override
+  String get settings => 'Settings';
+
+  @override
+  String get playtimeReject => 'Reject';
+
+  @override
+  String get errorLoadingProfile => 'Error loading profile';
+
+  @override
+  String get edit => 'Edit';
+
+  @override
+  String get add => 'Add';
+
+  @override
+  String get playtimeGameApproved => 'Game approved';
+
+  @override
+  String get forgotPassword => 'Forgot Password?';
+
+  @override
+  String get familyDashboard => 'Family Dashboard';
+
+  @override
+  String get loading => 'Loading...';
+
+  @override
+  String get quickActions => 'Quick Actions';
+
+  @override
+  String get playtimeTitle => 'Playtime';
+
+  @override
+  String get otpResentSuccessfully => 'OTP resent successfully';
+
+  @override
+  String errorCheckingPermissions(Object error) {
+    return 'Error checking permissions';
   }
 
   @override
-  String get mediaOptional => 'Media (Optional)';
+  String get clientScreenTBD => 'Client screen coming soon';
+
+  @override
+  String fcmToken(Object token) {
+    return 'FCM Token';
+  }
 
   @override
   String get pickImage => 'Pick Image';
 
   @override
-  String get pickVideo => 'Pick Video';
+  String get previous => 'Previous';
 
   @override
-  String get pollOptions => 'Poll Options:';
+  String get noProfileFound => 'No profile found';
 
   @override
-  String get targetingFilters => 'Targeting Filters';
+  String get noFamilyMembersYet => 'No family members yet';
 
   @override
-  String get scheduling => 'Scheduling';
-
-  @override
-  String get scheduleForLater => 'Schedule for later';
-
-  @override
-  String errorEstimatingRecipients(String error) {
-    return 'Error estimating recipients: $error';
-  }
-
-  @override
-  String errorPickingImage(String error) {
-    return 'Error picking image: $error';
-  }
-
-  @override
-  String errorPickingVideo(String error) {
-    return 'Error picking video: $error';
-  }
-
-  @override
-  String get noPermissionForBroadcast =>
-      'You do not have permission to create broadcast messages.';
+  String get mediaOptional => 'Media (Optional)';
 
   @override
   String get messageSavedSuccessfully => 'Message saved successfully';
 
   @override
-  String errorSavingMessage(String error) {
-    return 'Error saving message: $error';
+  String get scheduledFor => 'Scheduled for';
+
+  @override
+  String get dashboard => 'Dashboard';
+
+  @override
+  String get noPermissionForBroadcast => 'No permission for broadcast';
+
+  @override
+  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+
+  @override
+  String get inviteDetail => 'Invite Details';
+
+  @override
+  String scheduled(Object date) {
+    return 'Scheduled';
   }
 
   @override
-  String get messageSentSuccessfully => 'Message sent successfully';
-
-  @override
-  String errorSendingMessage(String error) {
-    return 'Error sending message: $error';
+  String failedToResendOtp(Object error) {
+    return 'Failed to resend OTP';
   }
 
   @override
-  String content(String content) {
-    return 'Content: $content';
+  String get scheduling => 'Scheduling';
+
+  @override
+  String errorSavingMessage(Object error) {
+    return 'Error saving message';
   }
 
   @override
-  String type(String type) {
-    return 'Type: $type';
+  String get save => 'Save';
+
+  @override
+  String get playtimeApprove => 'Approve';
+
+  @override
+  String get createYourFirstSession => 'Create your first session';
+
+  @override
+  String get playtimeGameRejected => 'Game rejected';
+
+  @override
+  String failedToRevokeAccess(Object error) {
+    return 'Failed to revoke access';
   }
 
   @override
-  String link(String link) {
-    return 'Link: $link';
+  String get recentGames => 'Recent Games';
+
+  @override
+  String get customizeMessage => 'Customize Message';
+
+  @override
+  String failedToCancelInvite(Object error) {
+    return 'Failed to cancel invite';
   }
 
   @override
-  String status(String status) {
-    return 'Status: $status';
+  String errorSendingMessage(Object error) {
+    return 'Error sending message';
   }
 
   @override
-  String recipients(String count) {
-    return 'Recipients: $count';
+  String get confirmPassword => 'Confirm Password';
+
+  @override
+  String errorLoadingPrivacyRequests(Object error) {
+    return 'Error loading privacy requests';
   }
 
   @override
-  String opened(String count) {
-    return 'Opened: $count';
+  String get connectedChildren => 'Connected Children';
+
+  @override
+  String get share => 'Share';
+
+  @override
+  String get playtimeEnterGameName => 'Enter game name';
+
+  @override
+  String get pleaseLoginForFamilyFeatures =>
+      'Please login to access family features';
+
+  @override
+  String get myInvites => 'My Invites';
+
+  @override
+  String get createGame => 'Create Game';
+
+  @override
+  String get groupNameOptional => 'Group Name (Optional)';
+
+  @override
+  String get playtimeNoSessions => 'No playtime sessions found.';
+
+  @override
+  String get adminScreenTBD => 'Admin screen coming soon';
+
+  @override
+  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+
+  @override
+  String get close => 'Close';
+
+  @override
+  String get knownGroupDetected => 'Known group detected';
+
+  @override
+  String get back => 'Back';
+
+  @override
+  String get playtimeChooseGame => 'Choose a game';
+
+  @override
+  String get managePermissions => 'Manage Permissions';
+
+  @override
+  String get pollOptions => 'Poll Options';
+
+  @override
+  String clicked(Object count) {
+    return 'Clicked';
   }
 
   @override
-  String clicked(String count) {
-    return 'Clicked: $count';
+  String link(Object link) {
+    return 'Link';
   }
 
   @override
-  String created(String date) {
-    return 'Created: $date';
+  String get meetingReadyMessage => 'Your meeting is ready! Join now';
+
+  @override
+  String get pendingInvites => 'Pending Invites';
+
+  @override
+  String statusColon(Object status) {
+    return 'Status:';
   }
-
-  @override
-  String scheduled(String date) {
-    return 'Scheduled: $date';
-  }
-
-  @override
-  String get organizations => 'Organizations';
-
-  @override
-  String get noOrganizations => 'No organizations';
-
-  @override
-  String get errorLoadingOrganizations => 'Error loading organizations';
-
-  @override
-  String members(String count) {
-    return '$count members';
-  }
-
-  @override
-  String get users => 'Users';
-
-  @override
-  String get noUsers => 'No users';
-
-  @override
-  String get errorLoadingUsers => 'Error loading users';
-
-  @override
-  String get changeRole => 'Change Role';
-
-  @override
-  String get totalAppointments => 'Total Appointments';
-
-  @override
-  String get completedAppointments => 'Completed Appointments';
-
-  @override
-  String get revenue => 'Revenue';
-
-  @override
-  String get errorLoadingStats => 'Error loading stats';
-
-  @override
-  String appointment(String id) {
-    return 'Appointment: $id';
-  }
-
-  @override
-  String from(String name) {
-    return 'From: $name';
-  }
-
-  @override
-  String phone(String number) {
-    return 'Phone: $number';
-  }
-
-  @override
-  String noRouteDefined(String route) {
-    return 'No route defined for $route';
-  }
-
-  @override
-  String get meetingDetails => 'Meeting Details';
-
-  @override
-  String meetingId(String id) {
-    return 'Meeting ID: $id';
-  }
-
-  @override
-  String creator(String id) {
-    return 'Creator: $id';
-  }
-
-  @override
-  String context(String id) {
-    return 'Context: $id';
-  }
-
-  @override
-  String group(String id) {
-    return 'Group: $id';
-  }
-
-  @override
-  String get requestPrivateSession => 'Request Private Session';
-
-  @override
-  String get privacyRequestSent => 'Privacy request sent to your parents!';
-
-  @override
-  String failedToSendPrivacyRequest(String error) {
-    return 'Failed to send privacy request: $error';
-  }
-
-  @override
-  String errorLoadingPrivacyRequests(String error) {
-    return 'Error loading privacy requests: $error';
-  }
-
-  @override
-  String requestType(String type) {
-    return '$type Request';
-  }
-
-  @override
-  String statusColon(String status) {
-    return 'Status: $status';
-  }
-
-  @override
-  String failedToActionPrivacyRequest(String action, String error) {
-    return 'Failed to $action privacy request: $error';
-  }
-
-  @override
-  String get yes => 'Yes';
-
-  @override
-  String get send => 'Send';
-
-  @override
-  String get permissions => 'Permissions';
-
-  @override
-  String permissionsFor(String childId) {
-    return 'Permissions - $childId';
-  }
-
-  @override
-  String errorLoadingPermissions(String error) {
-    return 'Error loading permissions: $error';
-  }
-
-  @override
-  String get none => 'None';
-
-  @override
-  String get readOnly => 'Read Only';
-
-  @override
-  String get readWrite => 'Read & Write';
-
-  @override
-  String permissionUpdated(String category, String newValue) {
-    return 'Permission $category updated to $newValue';
-  }
-
-  @override
-  String failedToUpdatePermission(String error) {
-    return 'Failed to update permission: $error';
-  }
-
-  @override
-  String invited(String date) {
-    return 'Invited: $date';
-  }
-
-  @override
-  String get adminBroadcast => 'Admin Broadcast';
-
-  @override
-  String get composeBroadcastMessage => 'Compose Broadcast Message';
-
-  @override
-  String get adminScreenTBD => 'Admin Screen - To Be Developed';
-
-  @override
-  String get staffScreenTBD => 'Staff Screen - To Be Developed';
-
-  @override
-  String get clientScreenTBD => 'Client Screen - To Be Developed';
-
-  @override
-  String get ambassadorTitle => 'Global Ambassador';
-
-  @override
-  String get ambassadorOnboardingTitle => 'Become a Voice for Your Country';
-
-  @override
-  String get ambassadorOnboardingSubtitle =>
-      'Represent your language and help us grow';
-
-  @override
-  String get ambassadorOnboardingButton => 'Start Now';
-
-  @override
-  String get ambassadorDashboardTitle => 'Ambassador Dashboard';
-
-  @override
-  String get ambassadorDashboardSubtitle => 'Your community impact at a glance';
-
-  @override
-  String get ambassadorDashboardChartLabel => 'Users joined via your language';
-
-  @override
-  String get ambassadorDashboardRemainingSlots => 'Remaining Slots';
-
-  @override
-  String get ambassadorDashboardCountryLanguage => 'Country / Language';
-
-  @override
-  String get ambassadorQuotaFull =>
-      'All ambassador slots are currently filled.';
-
-  @override
-  String get ambassadorQuotaAvailable => 'Slots Available';
-
-  @override
-  String get ambassadorStatusAssigned => 'You are an official ambassador!';
-
-  @override
-  String get ambassadorStatusNotEligible =>
-      'You are not eligible for ambassador status.';
-
-  @override
-  String get ambassadorStatusWaiting => 'Waiting for assignment...';
-
-  @override
-  String get ambassadorStatusRevoked => 'Your ambassador status was revoked.';
-
-  @override
-  String get ambassadorNoticeAdultOnly => 'Only adults can become ambassadors.';
-
-  @override
-  String get ambassadorNoticeQuotaReached =>
-      'Ambassador quota for your region is full.';
-
-  @override
-  String get ambassadorNoticeAutoAssign =>
-      'Ambassadorship is automatically assigned by the system.';
 }

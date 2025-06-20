@@ -10,10 +10,13 @@ import '../features/family/screens/permissions_screen.dart';
 import '../features/invite/invite_detail_screen.dart';
 import '../features/booking/booking_confirm_screen.dart';
 import '../features/admin/admin_broadcast_screen.dart';
+import '../features/admin/admin_demo_panel_screen.dart';
 import '../features/calendar/google_integration_screen.dart';
 import '../features/ambassador_dashboard_screen.dart';
 import '../features/ambassador_onboarding_screen.dart';
 import '../models/invite.dart';
+import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
+import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -59,6 +62,11 @@ class AppRouter {
           builder: (_) => const AdminBroadcastScreen(),
           settings: settings,
         );
+      case '/admin/demo-panel':
+        return MaterialPageRoute(
+          builder: (_) => const AdminDemoPanelScreen(),
+          settings: settings,
+        );
       case '/google/calendar':
         return MaterialPageRoute(
           builder: (_) => const GoogleIntegrationScreen(),
@@ -95,6 +103,16 @@ class AppRouter {
       case '/booking/details':
         return MaterialPageRoute(
           builder: (_) => const BookingConfirmScreen(),
+          settings: settings,
+        );
+      case '/business/dashboard':
+        return MaterialPageRoute(
+          builder: (_) => const BusinessDashboardScreen(),
+          settings: settings,
+        );
+      case '/business/profile':
+        return MaterialPageRoute(
+          builder: (_) => const BusinessProfileScreen(),
           settings: settings,
         );
       default:
@@ -155,3 +173,9 @@ class MeetingDetailsScreen extends StatelessWidget {
     );
   }
 }
+
+final Map<String, WidgetBuilder> appRoutes = {
+  // ... existing code ...
+  '/business/dashboard': (context) => const BusinessDashboardScreen(),
+  // ... existing code ...
+};

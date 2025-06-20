@@ -108,6 +108,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
               )
             else ...[
               if (familyLinksState.pendingInvites.isNotEmpty) ...[
+                // ignore: argument_type_not_assignable
                 _buildSectionHeader(l10n.pendingInvites),
                 const SizedBox(height: 8),
                 ...familyLinksState.pendingInvites
@@ -115,6 +116,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
                 const SizedBox(height: 16),
               ],
               if (familyLinksState.connectedChildren.isNotEmpty) ...[
+                // ignore: argument_type_not_assignable
                 _buildSectionHeader(l10n.connectedChildren),
                 const SizedBox(height: 8),
                 ...familyLinksState.connectedChildren.map(
@@ -126,6 +128,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(32),
                     child: Text(
+                      // ignore: argument_type_not_assignable
                       l10n.noFamilyMembersYet,
                       textAlign: TextAlign.center,
                       style: const TextStyle(color: Colors.grey),
@@ -166,7 +169,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
           child: const Icon(Icons.pending, color: Colors.orange),
         ),
         title: _buildChildNameWidget(context, ref, link),
-        subtitle: Text(l10n.invited(_formatDate(link.invitedAt))),
+        subtitle: Text(l10n.invited(link.invitedAt)),
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -210,10 +213,12 @@ class FamilyDashboardScreen extends ConsumerWidget {
           itemBuilder: (context) => [
             PopupMenuItem(
               value: 'permissions',
+              // ignore: argument_type_not_assignable
               child: Text(l10n.managePermissions),
             ),
             PopupMenuItem(
               value: 'revoke',
+              // ignore: argument_type_not_assignable
               child: Text(l10n.removeChild),
             ),
           ],
@@ -228,8 +233,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
     return childProfileAsync.when(
       data: (profile) {
-        if (profile != null && profile.displayName.isNotEmpty) {
-          return Text(profile.displayName);
+        if (profile != null && profile.name.isNotEmpty) {
+          return Text(profile.name);
         }
         // Fallback to email or ID if no display name
         if (link.childId.contains('@')) {
@@ -275,7 +280,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
     } catch (e) {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(l10n.failedToResendOtp(e.toString()))),
+          SnackBar(content: Text(l10n.failedToResendOtp(e))),
         );
       }
     }
@@ -313,8 +318,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
               } catch (e) {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                        content: Text(l10n.failedToCancelInvite(e.toString()))),
+                    SnackBar(content: Text(l10n.failedToCancelInvite(e))),
                   );
                 }
               }
@@ -386,7 +390,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
                     ),
               loading: () => const Center(child: CircularProgressIndicator()),
               error: (error, stack) => Center(
-                child: Text(l10n.errorLoadingPrivacyRequests(error.toString())),
+                child: Text(l10n.errorLoadingPrivacyRequests(error)),
               ),
             ),
           ],
@@ -451,8 +455,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content:
-                Text(l10n.failedToActionPrivacyRequest(action, e.toString())),
+            content: Text(l10n.failedToActionPrivacyRequest(action, e)),
             backgroundColor: Colors.red,
           ),
         );
@@ -499,7 +502,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                      content: Text(l10n.failedToRevokeAccess(e.toString())),
+                      content: Text(l10n.failedToRevokeAccess(e)),
                       backgroundColor: Colors.red,
                     ),
                   );
