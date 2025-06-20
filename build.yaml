@@ -6,6 +6,7 @@ targets:
           include:
             - lib/models/**.dart
             - lib/features/**/domain/entities/**.dart
+            - lib/features/**/models/**.dart
         options:
           explicit_to_json: true
       json_serializable:

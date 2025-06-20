@@ -4,7 +4,6 @@ import 'package:appoint/firebase_options.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core_platform_interface/test.dart';
 
-
 // Common test utilities
 class TestUtils {
   static const testEmail = 'test@example.com';
@@ -17,7 +16,8 @@ class TestUtils {
 }
 
 Future<void> setupTestEnvironment() async {
-  // Firebase app initialization skipped for tests
+  // Initialize Firebase for tests
+  await registerFirebaseMock();
 }
 
 // Centralized Firebase mock setup for all tests
@@ -75,6 +75,8 @@ Future<void> registerFirebaseMock() async {
         return null;
       case 'Query#get':
         return {'documents': []};
+      case 'Query#count':
+        return {'count': 0};
       default:
         return null;
     }
@@ -128,7 +130,6 @@ Future<void> registerFirebaseMock() async {
     return null;
   });
 
-
   // Mock file_picker plugin to suppress platform warnings in tests
   const MethodChannel filePickerChannel =
       MethodChannel('plugins.flutter.io/file_picker');
@@ -140,8 +141,17 @@ Future<void> registerFirebaseMock() async {
     // Return mock responses for file_picker methods as needed
     return null;
   });
-  if (Firebase.apps.isEmpty) {
-    await Firebase.initializeApp(
-        options: DefaultFirebaseOptions.currentPlatform);
+
+  // Initialize Firebase app if not already initialized
+  try {
+    if (Firebase.apps.isEmpty) {
+      await Firebase.initializeApp(
+          options: DefaultFirebaseOptions.currentPlatform);
+    }
+  } catch (e) {
+    // Ignore duplicate app errors
+    if (!e.toString().contains('duplicate-app')) {
+      rethrow;
+    }
   }
 }
