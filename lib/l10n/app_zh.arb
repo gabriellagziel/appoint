@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "大使",
+  "ambassadorOnboardingTitle": "成为大使",
+  "ambassadorOnboardingSubtitle": "帮助我们在您的语言和地区发展社区。",
+  "ambassadorOnboardingButton": "立即开始",
+  "ambassadorDashboardTitle": "大使仪表板",
+  "ambassadorDashboardSubtitle": "您的统计数据和活动概览",
+  "ambassadorDashboardChartLabel": "本周邀请的用户",
+  "REDACTED_TOKEN": "剩余大使名额",
+  "REDACTED_TOKEN": "国家和语言",
+  "ambassadorQuotaFull": "您所在地区的大使配额已满。",
+  "ambassadorQuotaAvailable": "大使名额可用！",
+  "ambassadorStatusAssigned": "您是一位活跃的大使。",
+  "ambassadorStatusNotEligible": "您不符合大使身份资格。",
+  "ambassadorStatusWaiting": "等待名额可用...",
+  "ambassadorStatusRevoked": "您的大使身份已被撤销。",
+  "ambassadorNoticeAdultOnly": "只有成人账户才能成为大使。",
+  "ambassadorNoticeQuotaReached": "您所在国家和语言的大使配额已达到。",
+  "ambassadorNoticeAutoAssign": "大使身份会自动授予给符合条件的用户。"
 }

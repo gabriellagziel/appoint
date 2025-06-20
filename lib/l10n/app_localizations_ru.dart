@@ -651,4 +651,65 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Посол';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Станьте Послом';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Помогите развивать наше сообщество на вашем языке и в вашем регионе.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Начать Сейчас';
+
+  @override
+  String get ambassadorDashboardTitle => 'Панель Посла';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Обзор вашей статистики и активности';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Приглашенные Пользователи На Этой Неделе';
+
+  @override
+  String get REDACTED_TOKEN => 'Оставшиеся Места Послов';
+
+  @override
+  String get REDACTED_TOKEN => 'Страна и Язык';
+
+  @override
+  String get ambassadorQuotaFull => 'Квота послов заполнена в вашем регионе.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Места послов доступны!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Вы активный посол.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Вы не имеете права на статус посла.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Ожидание доступности места...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Ваш статус посла был отозван.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Только взрослые аккаунты могут стать послами.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Квота послов для вашей страны и языка достигнута.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Посольство предоставляется автоматически квалифицированным пользователям.';
 }

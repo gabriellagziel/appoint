@@ -651,4 +651,68 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Ambasador';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Zostań Ambasadorem';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Pomóż rozwijać naszą społeczność w swoim języku i regionie.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Zacznij Teraz';
+
+  @override
+  String get ambassadorDashboardTitle => 'Panel Ambasadora';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Przegląd Twoich statystyk i aktywności';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Zaproszeni Użytkownicy w Tym Tygodniu';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Pozostałe Miejsca Ambasadorów';
+
+  @override
+  String get REDACTED_TOKEN => 'Kraj i Język';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'Kontyngent ambasadorów jest pełny w Twoim regionie.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Miejsca ambasadorów dostępne!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Jesteś aktywnym ambasadorem.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Nie jesteś uprawniony do statusu ambasadora.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Oczekiwanie na dostępność miejsca...';
+
+  @override
+  String get ambassadorStatusRevoked =>
+      'Twój status ambasadora został cofnięty.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Tylko konta dorosłych mogą zostać ambasadorami.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Kontyngent ambasadorów dla Twojego kraju i języka został osiągnięty.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Ambasadorstwo jest przyznawane automatycznie kwalifikowanym użytkownikom.';
 }

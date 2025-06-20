@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "ambassadorTitle (TRANSLATE)",
+  "ambassadorOnboardingTitle": "ambassadorOnboardingTitle (TRANSLATE)",
+  "ambassadorOnboardingSubtitle": "ambassadorOnboardingSubtitle (TRANSLATE)",
+  "ambassadorOnboardingButton": "ambassadorOnboardingButton (TRANSLATE)",
+  "ambassadorDashboardTitle": "ambassadorDashboardTitle (TRANSLATE)",
+  "ambassadorDashboardSubtitle": "ambassadorDashboardSubtitle (TRANSLATE)",
+  "ambassadorDashboardChartLabel": "ambassadorDashboardChartLabel (TRANSLATE)",
+  "REDACTED_TOKEN": "REDACTED_TOKEN (TRANSLATE)",
+  "REDACTED_TOKEN": "REDACTED_TOKEN (TRANSLATE)",
+  "ambassadorQuotaFull": "ambassadorQuotaFull (TRANSLATE)",
+  "ambassadorQuotaAvailable": "ambassadorQuotaAvailable (TRANSLATE)",
+  "ambassadorStatusAssigned": "ambassadorStatusAssigned (TRANSLATE)",
+  "ambassadorStatusNotEligible": "ambassadorStatusNotEligible (TRANSLATE)",
+  "ambassadorStatusWaiting": "ambassadorStatusWaiting (TRANSLATE)",
+  "ambassadorStatusRevoked": "ambassadorStatusRevoked (TRANSLATE)",
+  "ambassadorNoticeAdultOnly": "ambassadorNoticeAdultOnly (TRANSLATE)",
+  "ambassadorNoticeQuotaReached": "ambassadorNoticeQuotaReached (TRANSLATE)",
+  "ambassadorNoticeAutoAssign": "ambassadorNoticeAutoAssign (TRANSLATE)"
 }

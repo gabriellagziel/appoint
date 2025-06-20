@@ -651,4 +651,67 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Ambasadorius';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Tapti Ambasadoriumi';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Padėkite mums augti jūsų kalba ir regione.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Pradėti Dabar';
+
+  @override
+  String get ambassadorDashboardTitle => 'Ambasadoriaus Valdymo Skydelis';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Jūsų statistikos ir veiklos apžvalga';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Pakviesti Vartotojai Šią Savaitę';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Likusios Ambasadoriaus Vietos';
+
+  @override
+  String get REDACTED_TOKEN => 'Šalis ir Kalba';
+
+  @override
+  String get ambassadorQuotaFull => 'Ambasadorių kvota jūsų regione pilna.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Ambasadoriaus vietos prieinamos!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Jūs esate aktyvus ambasadorius.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Jūs neturite teisės į ambasadoriaus statusą.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Laukiama vietos prieinamumo...';
+
+  @override
+  String get ambassadorStatusRevoked =>
+      'Jūsų ambasadoriaus statusas atšauktas.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Tik suaugusių paskyros gali tapti ambasadoriais.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Ambasadorių kvota jūsų šaliai ir kalbai pasiekta.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Ambasadorystė automatiškai suteikiama kvalifikuotiems vartotojams.';
 }

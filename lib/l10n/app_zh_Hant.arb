@@ -1,0 +1,966 @@
+{
+  "@@locale": "zh_Hant",
+  "ambassadorTitle": "大使",
+  "ambassadorOnboardingTitle": "成為大使",
+  "ambassadorOnboardingSubtitle": "幫助我們在您的語言和地區發展社區。",
+  "ambassadorOnboardingButton": "立即開始",
+  "ambassadorDashboardTitle": "大使儀表板",
+  "ambassadorDashboardSubtitle": "您的統計數據和活動概覽",
+  "ambassadorDashboardChartLabel": "本週邀請的用戶",
+  "REDACTED_TOKEN": "剩餘大使名額",
+  "REDACTED_TOKEN": "國家和語言",
+  "ambassadorQuotaFull": "您地區的大使配額已滿。",
+  "ambassadorQuotaAvailable": "大使名額可用！",
+  "ambassadorStatusAssigned": "您是一位活躍的大使。",
+  "ambassadorStatusNotEligible": "您不符合大使身份資格。",
+  "ambassadorStatusWaiting": "等待名額可用性...",
+  "ambassadorStatusRevoked": "您的大使身份已被撤銷。",
+  "ambassadorNoticeAdultOnly": "只有成人帳戶才能成為大使。",
+  "ambassadorNoticeQuotaReached": "您國家和語言的大使配額已達到上限。",
+  "ambassadorNoticeAutoAssign": "大使身份會自動授予給合格的用戶。",
+  "appTitle": "Appoint",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "welcome": "歡迎",
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "home": "主頁",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "menu": "選單",
+  "@menu": {
+    "description": "Menu navigation label"
+  },
+  "profile": "個人資料",
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "signOut": "登出",
+  "@signOut": {
+    "description": "Sign out button label"
+  },
+  "login": "登入",
+  "@login": {
+    "description": "Login button label"
+  },
+  "email": "電子郵件",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "密碼",
+  "@password": {
+    "description": "Password field label"
+  },
+  "signIn": "登入",
+  "@signIn": {
+    "description": "Sign in button label"
+  },
+  "bookMeeting": "預約會議",
+  "@bookMeeting": {
+    "description": "Book meeting button label"
+  },
+  "bookAppointment": "預約服務",
+  "@bookAppointment": {
+    "description": "Book appointment button label"
+  },
+  "bookingRequest": "預約請求",
+  "@bookingRequest": {
+    "description": "Booking request label"
+  },
+  "confirmBooking": "確認預約",
+  "@confirmBooking": {
+    "description": "Confirm booking button label"
+  },
+  "chatBooking": "聊天預約",
+  "@chatBooking": {
+    "description": "Chat booking label"
+  },
+  "bookViaChat": "透過聊天預約",
+  "@bookViaChat": {
+    "description": "Book via chat button label"
+  },
+  "submitBooking": "提交預約",
+  "@submitBooking": {
+    "description": "Submit booking button label"
+  },
+  "next": "下一步",
+  "@next": {
+    "description": "Label for the next button"
+  },
+  "selectStaff": "選擇工作人員",
+  "@selectStaff": {
+    "description": "Label for staff selection dropdown"
+  },
+  "pickDate": "選擇日期",
+  "@pickDate": {
+    "description": "Label for date picker"
+  },
+  "staff": "工作人員",
+  "@staff": {
+    "description": "Staff label"
+  },
+  "service": "服務",
+  "@service": {
+    "description": "Service label"
+  },
+  "dateTime": "日期與時間",
+  "@dateTime": {
+    "description": "Date and time label"
+  },
+  "duration": "時長：{duration} 分鐘",
+  "@duration": {
+    "description": "Duration label with parameter",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "notSelected": "尚未選擇",
+  "@notSelected": {
+    "description": "Not selected state"
+  },
+  "noSlots": "無可預約時段",
+  "@noSlots": {
+    "description": "Message shown when no time slots are available"
+  },
+  "bookingConfirmed": "預約已確認",
+  "@bookingConfirmed": {
+    "description": "Booking confirmed message"
+  },
+  "failedToConfirmBooking": "無法確認預約",
+  "@failedToConfirmBooking": {
+    "description": "Failed to confirm booking message"
+  },
+  "noBookingsFound": "找不到預約",
+  "@noBookingsFound": {
+    "description": "No bookings found message"
+  },
+  "errorLoadingBookings": "讀取預約錯誤：{error}",
+  "@errorLoadingBookings": {
+    "description": "Error loading bookings message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "shareOnWhatsApp": "分享到 WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Label for WhatsApp share button"
+  },
+  "shareMeetingInvitation": "分享您的會議邀請：",
+  "@shareMeetingInvitation": {
+    "description": "Title for meeting invitation sharing section"
+  },
+  "meetingReadyMessage": "會議已就緒！是否要發送給您的群組？",
+  "@meetingReadyMessage": {
+    "description": "Message shown in WhatsApp share dialog"
+  },
+  "customizeMessage": "自訂您的訊息...",
+  "@customizeMessage": {
+    "description": "Hint text for message customization"
+  },
+  "saveGroupForRecognition": "儲存群組以供未來辨識",
+  "@saveGroupForRecognition": {
+    "description": "Label for group recognition checkbox"
+  },
+  "groupNameOptional": "群組名稱（選填）",
+  "@groupNameOptional": {
+    "description": "Label for group name input field"
+  },
+  "enterGroupName": "輸入群組名稱以便辨識",
+  "@enterGroupName": {
+    "description": "Hint text for group name input"
+  },
+  "knownGroupDetected": "偵測到已知群組",
+  "@knownGroupDetected": {
+    "description": "Message shown when a known group is detected"
+  },
+  "meetingSharedSuccessfully": "會議已成功分享！",
+  "@meetingSharedSuccessfully": {
+    "description": "Success message when meeting is shared"
+  },
+  "bookingConfirmedShare": "預約已確認！您現在可以分享邀請。",
+  "@bookingConfirmedShare": {
+    "description": "Message shown after booking confirmation"
+  },
+  "defaultShareMessage": "嗨！我透過 APP‑OINT 安排了一次會議。點此確認或提出其他時間：",
+  "@defaultShareMessage": {
+    "description": "Default message for WhatsApp sharing"
+  },
+  "dashboard": "儀表板",
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "businessDashboard": "商業儀表板",
+  "@businessDashboard": {
+    "description": "Business dashboard label"
+  },
+  "myProfile": "我的個人資料",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "noProfileFound": "找不到個人資料",
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "errorLoadingProfile": "讀取個人資料錯誤",
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "myInvites": "我的邀請",
+  "@myInvites": {
+    "description": "My invites label"
+  },
+  "inviteDetail": "邀請詳情",
+  "@inviteDetail": {
+    "description": "Invite detail label"
+  },
+  "inviteContact": "邀請聯絡人",
+  "@inviteContact": {
+    "description": "Invite contact label"
+  },
+  "noInvites": "無邀請",
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "errorLoadingInvites": "讀取邀請錯誤",
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "accept": "接受",
+  "@accept": {
+    "description": "Accept button label"
+  },
+  "decline": "拒絕",
+  "@decline": {
+    "description": "Decline button label"
+  },
+  "sendInvite": "發送邀請",
+  "@sendInvite": {
+    "description": "Send invite button label"
+  },
+  "name": "姓名",
+  "@name": {
+    "description": "Name field label"
+  },
+  "phoneNumber": "電話號碼",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "emailOptional": "電子郵件（選填）",
+  "@emailOptional": {
+    "description": "Optional email field label"
+  },
+  "requiresInstallFallback": "需要安裝",
+  "@requiresInstallFallback": {
+    "description": "Requires installation fallback message"
+  },
+  "notifications": "通知",
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "notificationSettings": "通知設定",
+  "@notificationSettings": {
+    "description": "Notification settings label"
+  },
+  "enableNotifications": "啟用通知",
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "errorFetchingToken": "無法取得令牌",
+  "@errorFetchingToken": {
+    "description": "Error fetching token message"
+  },
+  "fcmToken": "FCM 令牌：{token}",
+  "@fcmToken": {
+    "description": "FCM token display",
+    "placeholders": {
+      "token": {
+        "type": "String"
+      }
+    }
+  },
+  "familyDashboard": "家庭儀表板",
+  "@familyDashboard": {
+    "description": "Family dashboard label"
+  },
+  "pleaseLoginForFamilyFeatures": "請登入以存取家庭功能",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "familyMembers": "家庭成員",
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "invite": "邀請",
+  "@invite": {
+    "description": "Invite button label"
+  },
+  "pendingInvites": "待處理邀請",
+  "@pendingInvites": {
+    "description": "Pending invites label"
+  },
+  "connectedChildren": "已連結子女",
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "noFamilyMembersYet": "尚無家庭成員。邀請多人開始使用吧！",
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "errorLoadingFamilyLinks": "讀取家庭連結錯誤：{error}",
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteChild": "邀請孩童",
+  "@inviteChild": {
+    "description": "Invite child button label"
+  },
+  "managePermissions": "管理權限",
+  "@managePermissions": {
+    "description": "Manage permissions label"
+  },
+  "removeChild": "移除孩童",
+  "@removeChild": {
+    "description": "Remove child button label"
+  },
+  "loading": "載入中...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "childEmail": "孩童電子郵件",
+  "@childEmail": {
+    "description": "Child email field label"
+  },
+  "childEmailOrPhone": "孩童郵件或電話",
+  "@childEmailOrPhone": {
+    "description": "Child email or phone field label"
+  },
+  "enterChildEmail": "輸入孩童電子郵件",
+  "@enterChildEmail": {
+    "description": "Enter child email hint"
+  },
+  "otpCode": "OTP 驗證碼",
+  "@otpCode": {
+    "description": "OTP code field label"
+  },
+  "enterOtp": "輸入 OTP",
+  "@enterOtp": {
+    "description": "Enter OTP hint"
+  },
+  "verify": "驗證",
+  "@verify": {
+    "description": "Verify button label"
+  },
+  "otpResentSuccessfully": "OTP 已重新發送成功！",
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "failedToResendOtp": "重新發送 OTP 失敗：{error}",
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "childLinkedSuccessfully": "孩童已成功連結！",
+  "@childLinkedSuccessfully": {
+    "description": "Child linked successfully message"
+  },
+  "invitationSentSuccessfully": "邀請已發送成功！",
+  "@invitationSentSuccessfully": {
+    "description": "Invitation sent successfully message"
+  },
+  "failedToSendInvitation": "發送邀請失敗：{error}",
+  "@failedToSendInvitation": {
+    "description": "Failed to send invitation message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "pleaseEnterValidEmail": "請輸入有效電子郵件",
+  "@pleaseEnterValidEmail": {
+    "description": "Please enter valid email message"
+  },
+  "pleaseEnterValidEmailOrPhone": "請輸入有效電子郵件或電話",
+  "@pleaseEnterValidEmailOrPhone": {
+    "description": "Please enter valid email or phone message"
+  },
+  "invalidCode": "無效的代碼，請再試一次",
+  "@invalidCode": {
+    "description": "Invalid code message"
+  },
+  "cancelInvite": "取消邀請",
+  "@cancelInvite": {
+    "description": "Cancel invite button label"
+  },
+  "cancelInviteConfirmation": "您確定要取消此邀請嗎？",
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "no": "否",
+  "@no": {
+    "description": "No button label"
+  },
+  "yesCancel": "是，取消",
+  "@yesCancel": {
+    "description": "Yes cancel button label"
+  },
+  "inviteCancelledSuccessfully": "邀請已成功取消！",
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "failedToCancelInvite": "取消邀請失敗：{error}",
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "revokeAccess": "撤銷存取權",
+  "@revokeAccess": {
+    "description": "Revoke access button label"
+  },
+  "revokeAccessConfirmation": "您確定要撤銷此孩童的存取權嗎？此操作無法還原。",
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "revoke": "撤銷",
+  "@revoke": {
+    "description": "Revoke button label"
+  },
+  "accessRevokedSuccessfully": "存取權已撤銷成功！",
+  "@accessRevokedSuccessfully": {
+    "description": "Access revoked successfully message"
+  },
+  "failedToRevokeAccess": "撤銷存取權失敗：{error}",
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "grantConsent": "授予同意",
+  "@grantConsent": {
+    "description": "Grant consent button label"
+  },
+  "revokeConsent": "撤銷同意",
+  "@revokeConsent": {
+    "description": "Revoke consent button label"
+  },
+  "consentGrantedSuccessfully": "同意已成功授予！",
+  "@consentGrantedSuccessfully": {
+    "description": "Consent granted successfully message"
+  },
+  "consentRevokedSuccessfully": "同意已成功撤銷！",
+  "@consentRevokedSuccessfully": {
+    "description": "Consent revoked successfully message"
+  },
+  "failedToUpdateConsent": "更新同意失敗：{error}",
+  "@failedToUpdateConsent": {
+    "description": "Failed to update consent message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "checkingPermissions": "正在檢查權限...",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "cancel": "取消",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "close": "關閉",
+  "@close": {
+    "description": "Close button label"
+  },
+  "save": "儲存",
+  "@save": {
+    "description": "Save button label"
+  },
+  "sendNow": "立即發送",
+  "@sendNow": {
+    "description": "Send now button label"
+  },
+  "details": "詳細資訊",
+  "@details": {
+    "description": "Details button label"
+  },
+  "noBroadcastMessages": "尚無廣播訊息",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "errorCheckingPermissions": "檢查權限錯誤：{error}",
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mediaOptional": "媒體（選填）",
+  "@mediaOptional": {
+    "description": "Media optional section title"
+  },
+  "pickImage": "選擇圖片",
+  "@pickImage": {
+    "description": "Pick image button label"
+  },
+  "pickVideo": "選擇影片",
+  "@pickVideo": {
+    "description": "Pick video button label"
+  },
+  "pollOptions": "投票選項：",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "targetingFilters": "目標篩選",
+  "@targetingFilters": {
+    "description": "Targeting filters section title"
+  },
+  "scheduling": "排程",
+  "@scheduling": {
+    "description": "Scheduling section title"
+  },
+  "scheduleForLater": "稍後安排",
+  "@scheduleForLater": {
+    "description": "Schedule for later option"
+  },
+  "errorEstimatingRecipients": "預估收件人失敗：{error}",
+  "@errorEstimatingRecipients": {
+    "description": "Error estimating recipients message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingImage": "選擇圖片錯誤：{error}",
+  "@errorPickingImage": {
+    "description": "Error picking image message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingVideo": "選擇影片錯誤：{error}",
+  "@errorPickingVideo": {
+    "description": "Error picking video message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noPermissionForBroadcast": "您無權建立廣播訊息。",
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "messageSavedSuccessfully": "訊息已成功儲存",
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "errorSavingMessage": "儲存訊息失敗：{error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "messageSentSuccessfully": "訊息已成功發送",
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "errorSendingMessage": "發送訊息失敗：{error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "content": "內容：{content}",
+  "@content": {
+    "description": "Content display",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "type": "類型：{type}",
+  "@type": {
+    "description": "Type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "link": "連結：{link}",
+  "@link": {
+    "description": "Link display",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "status": "狀態：{status}",
+  "@status": {
+    "description": "Status display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "recipients": "收件人：{count}",
+  "@recipients": {
+    "description": "Recipients display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "opened": "已開啟：{count}",
+  "@opened": {
+    "description": "Opened count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "clicked": "已點擊：{count}",
+  "@clicked": {
+    "description": "Clicked count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "created": "建立於：{date}",
+  "@created": {
+    "description": "Created date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduled": "已排程：{date}",
+  "@scheduled": {
+    "description": "Scheduled date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "organizations": "組織",
+  "@organizations": {
+    "description": "Organizations screen title"
+  },
+  "noOrganizations": "無組織",
+  "@noOrganizations": {
+    "description": "No organizations message"
+  },
+  "errorLoadingOrganizations": "讀取組織錯誤",
+  "@errorLoadingOrganizations": {
+    "description": "Error loading organizations message"
+  },
+  "members": "{count} 名成員",
+  "@members": {
+    "description": "Members count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "users": "使用者",
+  "@users": {
+    "description": "Users screen title"
+  },
+  "noUsers": "無使用者",
+  "@noUsers": {
+    "description": "No users message"
+  },
+  "errorLoadingUsers": "讀取使用者錯誤",
+  "@errorLoadingUsers": {
+    "description": "Error loading users message"
+  },
+  "changeRole": "更改角色",
+  "@changeRole": {
+    "description": "Change role button label"
+  },
+  "totalAppointments": "預約總數",
+  "@totalAppointments": {
+    "description": "Total appointments label"
+  },
+  "completedAppointments": "完成的預約",
+  "@completedAppointments": {
+    "description": "Completed appointments label"
+  },
+  "revenue": "收入",
+  "@revenue": {
+    "description": "Revenue label"
+  },
+  "errorLoadingStats": "載入統計資料錯誤",
+  "@errorLoadingStats": {
+    "description": "Error loading stats message"
+  },
+  "appointment": "預約：{id}",
+  "@appointment": {
+    "description": "Appointment display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "from": "來自：{name}",
+  "@from": {
+    "description": "From display",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "phone": "電話：{number}",
+  "@phone": {
+    "description": "Phone display",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "noRouteDefined": "未為 {route} 定義路由",
+  "@noRouteDefined": {
+    "description": "No route defined message",
+    "placeholders": {
+      "route": {
+        "type": "String"
+      }
+    }
+  },
+  "meetingDetails": "會議詳情",
+  "@meetingDetails": {
+    "description": "Meeting details title"
+  },
+  "meetingId": "會議 ID：{id}",
+  "@meetingId": {
+    "description": "Meeting ID display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "creator": "建立者：{id}",
+  "@creator": {
+    "description": "Creator display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "context": "上下文：{id}",
+  "@context": {
+    "description": "Context display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "group": "群組：{id}",
+  "@group": {
+    "description": "Group display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "requestPrivateSession": "請求私人會議",
+  "@requestPrivateSession": {
+    "description": "Request private session button label"
+  },
+  "privacyRequestSent": "隱私請求已發送給您的家長！",
+  "@privacyRequestSent": {
+    "description": "Privacy request sent message"
+  },
+  "failedToSendPrivacyRequest": "發送隱私請求失敗：{error}",
+  "@failedToSendPrivacyRequest": {
+    "description": "Failed to send privacy request message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPrivacyRequests": "讀取隱私請求錯誤：{error}",
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "requestType": "{type} 請求",
+  "@requestType": {
+    "description": "Request type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "statusColon": "狀態：{status}",
+  "@statusColon": {
+    "description": "Status with colon display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToActionPrivacyRequest": "{action} 隱私請求失敗：{error}",
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message",
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "yes": "是",
+  "@yes": {
+    "description": "Yes button label"
+  },
+  "send": "發送",
+  "@send": {
+    "description": "Send button label"
+  },
+  "permissions": "權限",
+  "@permissions": {
+    "description": "Permissions label"
+  },
+  "permissionsFor": "{childId} 的權限",
+  "@permissionsFor": {
+    "description": "Permissions for child label",
+    "placeholders": {
+      "childId": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPermissions": "讀取權限錯誤：{error}",
+  "@errorLoadingPermissions": {
+    "description": "Error loading permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "none": "無",
+  "@none": {
+    "description": "None option"
+  },
+  "readOnly": "僅讀",
+  "@readOnly": {
+    "description": "Read only option"
+  },
+  "readWrite": "可讀寫",
+  "@readWrite": {
+    "description": "Read and write option"
+  },
+  "permissionUpdated": "權限 {category} 已更新為 {newValue}",
+  "@permissionUpdated": {
+    "description": "Permission updated message",
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "newValue": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdatePermission": "更新權限失敗：{error}",
+  "@failedToUpdatePermission": {
+    "description": "Failed to update permission message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "invited": "已邀請：{date}",
+  "@invited": {
+    "description": "Invited date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adminBroadcast": "管理員廣播",
+  "@adminBroadcast": {
+    "description": "Admin broadcast screen title"
+  },
+  "composeBroadcastMessage": "撰寫廣播訊息",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message dialog title"
+  },
+  "adminScreenTBD": "管理員畫面 – 開發中",
+  "@adminScreenTBD": {
+    "description": "Admin screen placeholder"
+  },
+  "staffScreenTBD": "員工畫面 – 開發中",
+  "@staffScreenTBD": {
+    "description": "Staff screen placeholder"
+  },
+  "clientScreenTBD": "客戶畫面 – 開發中",
+  "@clientScreenTBD": {
+    "description": "Client screen placeholder"
+  }
+}

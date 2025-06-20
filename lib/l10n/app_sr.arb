@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Амбасадор",
+  "ambassadorOnboardingTitle": "Постаните Амбасадор",
+  "ambassadorOnboardingSubtitle": "Помозите нам да растемо на вашем језику и региону.",
+  "ambassadorOnboardingButton": "Започните Сада",
+  "ambassadorDashboardTitle": "Амбасадор Контролна Табла",
+  "ambassadorDashboardSubtitle": "Преглед ваших статистика и активности",
+  "ambassadorDashboardChartLabel": "Позвани Корисници Ове Недеље",
+  "REDACTED_TOKEN": "Преостала Амбасадорска Места",
+  "REDACTED_TOKEN": "Држава и Језик",
+  "ambassadorQuotaFull": "Квота амбасадора је пуна у вашем региону.",
+  "ambassadorQuotaAvailable": "Амбасадорска места доступна!",
+  "ambassadorStatusAssigned": "Ви сте активан амбасадор.",
+  "ambassadorStatusNotEligible": "Нисте подобни за статус амбасадора.",
+  "ambassadorStatusWaiting": "Чекање доступности места...",
+  "ambassadorStatusRevoked": "Ваш статус амбасадора је опозван.",
+  "ambassadorNoticeAdultOnly": "Само одрасли налози могу постати амбасадори.",
+  "ambassadorNoticeQuotaReached": "Квота амбасадора за вашу земљу и језик је достигнута.",
+  "ambassadorNoticeAutoAssign": "Амбасадорство се аутоматски додељује квалификованим корисницима."
 }

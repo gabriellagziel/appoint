@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "سفير",
+  "ambassadorOnboardingTitle": "كن سفيراً",
+  "ambassadorOnboardingSubtitle": "ساعد في نمو مجتمعنا بلغتك ومنطقتك.",
+  "ambassadorOnboardingButton": "ابدأ الآن",
+  "ambassadorDashboardTitle": "لوحة تحكم السفير",
+  "ambassadorDashboardSubtitle": "نظرة عامة على إحصائياتك وأنشطتك",
+  "ambassadorDashboardChartLabel": "المستخدمون المدعوون هذا الأسبوع",
+  "REDACTED_TOKEN": "الوظائف المتبقية للسفراء",
+  "REDACTED_TOKEN": "البلد واللغة",
+  "ambassadorQuotaFull": "حصة السفراء ممتلئة في منطقتك.",
+  "ambassadorQuotaAvailable": "وظائف السفراء متاحة!",
+  "ambassadorStatusAssigned": "أنت سفير نشط.",
+  "ambassadorStatusNotEligible": "أنت غير مؤهل لحالة السفير.",
+  "ambassadorStatusWaiting": "في انتظار توفر الوظيفة...",
+  "ambassadorStatusRevoked": "تم إلغاء حالة السفير الخاصة بك.",
+  "ambassadorNoticeAdultOnly": "يمكن لحسابات البالغين فقط أن تصبح سفراء.",
+  "ambassadorNoticeQuotaReached": "تم الوصول إلى حصة السفراء لبلدك ولغتك.",
+  "ambassadorNoticeAutoAssign": "يتم منح السفارة تلقائياً للمستخدمين المؤهلين."
 }

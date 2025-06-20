@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "アンバサダー",
+  "ambassadorOnboardingTitle": "アンバサダーになる",
+  "ambassadorOnboardingSubtitle": "あなたの言語と地域でコミュニティを成長させるお手伝いをしてください。",
+  "ambassadorOnboardingButton": "今すぐ始める",
+  "ambassadorDashboardTitle": "アンバサダーダッシュボード",
+  "ambassadorDashboardSubtitle": "あなたの統計とアクティビティの概要",
+  "ambassadorDashboardChartLabel": "今週招待されたユーザー",
+  "REDACTED_TOKEN": "残りのアンバサダー枠",
+  "REDACTED_TOKEN": "国と言語",
+  "ambassadorQuotaFull": "あなたの地域のアンバサダー枠は満員です。",
+  "ambassadorQuotaAvailable": "アンバサダー枠が利用可能です！",
+  "ambassadorStatusAssigned": "あなたはアクティブなアンバサダーです。",
+  "ambassadorStatusNotEligible": "あなたはアンバサダー資格の対象外です。",
+  "ambassadorStatusWaiting": "枠の空きを待っています...",
+  "ambassadorStatusRevoked": "あなたのアンバサダー資格は取り消されました。",
+  "ambassadorNoticeAdultOnly": "成人アカウントのみがアンバサダーになることができます。",
+  "ambassadorNoticeQuotaReached": "あなたの国と言語のアンバサダー枠に達しました。",
+  "ambassadorNoticeAutoAssign": "アンバサダーシップは適格なユーザーに自動的に付与されます。"
 }

@@ -87,38 +87,57 @@ class _MyAppState extends State<MyApp> {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: const [
+        Locale('am'), // Amharic
         Locale('ar'), // Arabic
         Locale('bg'), // Bulgarian
+        Locale('bn'), // Bengali
         Locale('cs'), // Czech
         Locale('da'), // Danish
         Locale('de'), // German
+        Locale('el'), // Greek
         Locale('en'), // English
         Locale('es'), // Spanish
+        Locale('fa'), // Persian
         Locale('fi'), // Finnish
         Locale('fr'), // French
+        Locale('gu'), // Gujarati
+        Locale('ha'), // Hausa
         Locale('he'), // Hebrew
+        Locale('hi'), // Hindi
+        Locale('hr'), // Croatian
         Locale('hu'), // Hungarian
         Locale('id'), // Indonesian
         Locale('it'), // Italian
         Locale('ja'), // Japanese
+        Locale('kn'), // Kannada
         Locale('ko'), // Korean
         Locale('lt'), // Lithuanian
+        Locale('lv'), // Latvian
+        Locale('mr'), // Marathi
         Locale('ms'), // Malay
+        Locale('ne'), // Nepali
         Locale('nl'), // Dutch
         Locale('no'), // Norwegian
         Locale('pl'), // Polish
         Locale('pt'), // Portuguese
         Locale('ro'), // Romanian
         Locale('ru'), // Russian
+        Locale('si'), // Sinhala
         Locale('sk'), // Slovak
         Locale('sl'), // Slovenian
         Locale('sr'), // Serbian
         Locale('sv'), // Swedish
+        Locale('sw'), // Swahili
+        Locale('ta'), // Tamil
         Locale('th'), // Thai
+        Locale('tl'), // Tagalog
         Locale('tr'), // Turkish
         Locale('uk'), // Ukrainian
+        Locale('ur'), // Urdu
         Locale('vi'), // Vietnamese
-        Locale('zh'), // Chinese
+        Locale('zh'), // Chinese (Simplified)
+        Locale('zh', 'Hant'), // Chinese (Traditional)
+        Locale('zu'), // Zulu
       ],
     );
   }

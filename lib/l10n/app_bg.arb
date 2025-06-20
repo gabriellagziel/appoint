@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Посланик",
+  "ambassadorOnboardingTitle": "Станете Посланик",
+  "ambassadorOnboardingSubtitle": "Помогнете да разрастнем общността ни на вашия език и регион.",
+  "ambassadorOnboardingButton": "Започнете Сега",
+  "ambassadorDashboardTitle": "Табло на Посланика",
+  "ambassadorDashboardSubtitle": "Преглед на вашите статистики и дейности",
+  "ambassadorDashboardChartLabel": "Поканени Потребители Тази Седмица",
+  "REDACTED_TOKEN": "Оставащи Места за Посланици",
+  "REDACTED_TOKEN": "Държава и Език",
+  "ambassadorQuotaFull": "Квотата за посланици е пълна във вашия регион.",
+  "ambassadorQuotaAvailable": "Места за посланици налични!",
+  "ambassadorStatusAssigned": "Вие сте активен посланик.",
+  "ambassadorStatusNotEligible": "Не сте подходящ за статус посланик.",
+  "ambassadorStatusWaiting": "Изчакване за наличност на място...",
+  "ambassadorStatusRevoked": "Статусът ви като посланик е отменен.",
+  "ambassadorNoticeAdultOnly": "Само възрастни акаунти могат да станат посланици.",
+  "ambassadorNoticeQuotaReached": "Квотата за посланици за вашата държава и език е достигната.",
+  "ambassadorNoticeAutoAssign": "Посланничеството се дава автоматично на квалифицирани потребители."
 }

@@ -651,4 +651,69 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'ambassadorTitle (TRANSLATE)';
+
+  @override
+  String get ambassadorOnboardingTitle =>
+      'ambassadorOnboardingTitle (TRANSLATE)';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'ambassadorOnboardingSubtitle (TRANSLATE)';
+
+  @override
+  String get ambassadorOnboardingButton =>
+      'ambassadorOnboardingButton (TRANSLATE)';
+
+  @override
+  String get ambassadorDashboardTitle => 'ambassadorDashboardTitle (TRANSLATE)';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'ambassadorDashboardSubtitle (TRANSLATE)';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'ambassadorDashboardChartLabel (TRANSLATE)';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'REDACTED_TOKEN (TRANSLATE)';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'REDACTED_TOKEN (TRANSLATE)';
+
+  @override
+  String get ambassadorQuotaFull => 'ambassadorQuotaFull (TRANSLATE)';
+
+  @override
+  String get ambassadorQuotaAvailable => 'ambassadorQuotaAvailable (TRANSLATE)';
+
+  @override
+  String get ambassadorStatusAssigned => 'ambassadorStatusAssigned (TRANSLATE)';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'ambassadorStatusNotEligible (TRANSLATE)';
+
+  @override
+  String get ambassadorStatusWaiting => 'ambassadorStatusWaiting (TRANSLATE)';
+
+  @override
+  String get ambassadorStatusRevoked => 'ambassadorStatusRevoked (TRANSLATE)';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'ambassadorNoticeAdultOnly (TRANSLATE)';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'ambassadorNoticeQuotaReached (TRANSLATE)';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'ambassadorNoticeAutoAssign (TRANSLATE)';
 }

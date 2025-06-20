@@ -651,4 +651,61 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'שגריר';
+
+  @override
+  String get ambassadorOnboardingTitle => 'הפוך לשגריר';
+
+  @override
+  String get ambassadorOnboardingSubtitle => 'עזור לנו לגדול בשפה ובאזור שלך.';
+
+  @override
+  String get ambassadorOnboardingButton => 'התחל עכשיו';
+
+  @override
+  String get ambassadorDashboardTitle => 'לוח בקרה של שגריר';
+
+  @override
+  String get ambassadorDashboardSubtitle => 'סקירה של הסטטיסטיקות והפעילות שלך';
+
+  @override
+  String get ambassadorDashboardChartLabel => 'משתמשים שהוזמנו השבוע';
+
+  @override
+  String get REDACTED_TOKEN => 'משרות שגריר שנותרו';
+
+  @override
+  String get REDACTED_TOKEN => 'מדינה ושפה';
+
+  @override
+  String get ambassadorQuotaFull => 'מכסת השגרירים מלאה באזור שלך.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'משרות שגריר זמינות!';
+
+  @override
+  String get ambassadorStatusAssigned => 'אתה שגריר פעיל.';
+
+  @override
+  String get ambassadorStatusNotEligible => 'אתה לא זכאי למעמד שגריר.';
+
+  @override
+  String get ambassadorStatusWaiting => 'ממתין לזמינות משרה...';
+
+  @override
+  String get ambassadorStatusRevoked => 'מעמד השגריר שלך בוטל.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'רק חשבונות של מבוגרים יכולים להפוך לשגרירים.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'מכסת השגרירים למדינה ולשפה שלך הושגה.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'שגרירות מוענקת אוטומטית למשתמשים מוסמכים.';
 }

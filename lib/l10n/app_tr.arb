@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Büyükelçi",
+  "ambassadorOnboardingTitle": "Büyükelçi Olun",
+  "ambassadorOnboardingSubtitle": "Dilinizde ve bölgenizde topluluğumuzun büyümesine yardım edin.",
+  "ambassadorOnboardingButton": "Şimdi Başlayın",
+  "ambassadorDashboardTitle": "Büyükelçi Paneli",
+  "ambassadorDashboardSubtitle": "İstatistiklerinizin ve etkinliklerinizin genel bakışı",
+  "ambassadorDashboardChartLabel": "Bu Hafta Davet Edilen Kullanıcılar",
+  "REDACTED_TOKEN": "Kalan Büyükelçi Pozisyonları",
+  "REDACTED_TOKEN": "Ülke ve Dil",
+  "ambassadorQuotaFull": "Bölgenizde büyükelçi kotası dolu.",
+  "ambassadorQuotaAvailable": "Büyükelçi pozisyonları mevcut!",
+  "ambassadorStatusAssigned": "Aktif bir büyükelçisiniz.",
+  "ambassadorStatusNotEligible": "Büyükelçi statüsü için uygun değilsiniz.",
+  "ambassadorStatusWaiting": "Pozisyon müsaitliği bekleniyor...",
+  "ambassadorStatusRevoked": "Büyükelçi statünüz iptal edildi.",
+  "ambassadorNoticeAdultOnly": "Sadece yetişkin hesapları büyükelçi olabilir.",
+  "ambassadorNoticeQuotaReached": "Ülkeniz ve diliniz için büyükelçi kotasına ulaşıldı.",
+  "ambassadorNoticeAutoAssign": "Büyükelçilik uygun kullanıcılara otomatik olarak verilir."
 }

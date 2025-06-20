@@ -651,4 +651,59 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'アンバサダー';
+
+  @override
+  String get ambassadorOnboardingTitle => 'アンバサダーになる';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'あなたの言語と地域でコミュニティを成長させるお手伝いをしてください。';
+
+  @override
+  String get ambassadorOnboardingButton => '今すぐ始める';
+
+  @override
+  String get ambassadorDashboardTitle => 'アンバサダーダッシュボード';
+
+  @override
+  String get ambassadorDashboardSubtitle => 'あなたの統計とアクティビティの概要';
+
+  @override
+  String get ambassadorDashboardChartLabel => '今週招待されたユーザー';
+
+  @override
+  String get REDACTED_TOKEN => '残りのアンバサダー枠';
+
+  @override
+  String get REDACTED_TOKEN => '国と言語';
+
+  @override
+  String get ambassadorQuotaFull => 'あなたの地域のアンバサダー枠は満員です。';
+
+  @override
+  String get ambassadorQuotaAvailable => 'アンバサダー枠が利用可能です！';
+
+  @override
+  String get ambassadorStatusAssigned => 'あなたはアクティブなアンバサダーです。';
+
+  @override
+  String get ambassadorStatusNotEligible => 'あなたはアンバサダー資格の対象外です。';
+
+  @override
+  String get ambassadorStatusWaiting => '枠の空きを待っています...';
+
+  @override
+  String get ambassadorStatusRevoked => 'あなたのアンバサダー資格は取り消されました。';
+
+  @override
+  String get ambassadorNoticeAdultOnly => '成人アカウントのみがアンバサダーになることができます。';
+
+  @override
+  String get ambassadorNoticeQuotaReached => 'あなたの国と言語のアンバサダー枠に達しました。';
+
+  @override
+  String get ambassadorNoticeAutoAssign => 'アンバサダーシップは適格なユーザーに自動的に付与されます。';
 }

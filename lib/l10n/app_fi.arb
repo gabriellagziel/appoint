@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Suurlähettiläs",
+  "ambassadorOnboardingTitle": "Tule Suurlähettilääksi",
+  "ambassadorOnboardingSubtitle": "Auta meitä kasvamaan kielelläsi ja alueellasi.",
+  "ambassadorOnboardingButton": "Aloita Nyt",
+  "ambassadorDashboardTitle": "Suurlähettilään Ohjauspaneeli",
+  "ambassadorDashboardSubtitle": "Tilastojesi ja toimintasi yleiskatsaus",
+  "ambassadorDashboardChartLabel": "Kutsutut Käyttäjät Tällä Viikolla",
+  "REDACTED_TOKEN": "Jäljellä Olevat Suurlähettilään Paikat",
+  "REDACTED_TOKEN": "Maa ja Kieli",
+  "ambassadorQuotaFull": "Suurlähettilään kiintiö on täynnä alueellasi.",
+  "ambassadorQuotaAvailable": "Suurlähettilään paikkoja saatavilla!",
+  "ambassadorStatusAssigned": "Olet aktiivinen suurlähettiläs.",
+  "ambassadorStatusNotEligible": "Et ole oikeutettu suurlähettilään statukseen.",
+  "ambassadorStatusWaiting": "Odotetaan paikan saatavuutta...",
+  "ambassadorStatusRevoked": "Suurlähettilään statuksesi on peruttu.",
+  "ambassadorNoticeAdultOnly": "Vain aikuisten tilit voivat tulla suurlähettiläiksi.",
+  "ambassadorNoticeQuotaReached": "Suurlähettilään kiintiö maallesi ja kielellesi on saavutettu.",
+  "ambassadorNoticeAutoAssign": "Suurlähettiläisyys myönnetään automaattisesti päteville käyttäjille."
 }

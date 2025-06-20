@@ -651,4 +651,68 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Botschafter';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Werden Sie Botschafter';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Helfen Sie dabei, unsere Community in Ihrer Sprache und Region zu vergrößern.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Jetzt Starten';
+
+  @override
+  String get ambassadorDashboardTitle => 'Botschafter-Dashboard';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Überblick über Ihre Statistiken und Aktivitäten';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Eingeladene Benutzer Diese Woche';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Verbleibende Botschafter-Plätze';
+
+  @override
+  String get REDACTED_TOKEN => 'Land & Sprache';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'Das Botschafter-Kontingent ist in Ihrer Region voll.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Botschafter-Plätze verfügbar!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Sie sind ein aktiver Botschafter.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Sie sind nicht für den Botschafter-Status berechtigt.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Warten auf Platzverfügbarkeit...';
+
+  @override
+  String get ambassadorStatusRevoked =>
+      'Ihr Botschafter-Status wurde widerrufen.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Nur Erwachsenen-Konten können Botschafter werden.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Das Botschafter-Kontingent für Ihr Land und Ihre Sprache wurde erreicht.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Die Botschafter-Schaft wird automatisch an qualifizierte Benutzer vergeben.';
 }

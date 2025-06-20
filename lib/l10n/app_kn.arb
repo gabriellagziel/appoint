@@ -1,0 +1,966 @@
+{
+  "@@locale": "kn",
+  "appTitle": "TRANSLATE_ME",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "welcome": "TRANSLATE_ME",
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "home": "TRANSLATE_ME",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "menu": "TRANSLATE_ME",
+  "@menu": {
+    "description": "Menu navigation label"
+  },
+  "profile": "TRANSLATE_ME",
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "signOut": "TRANSLATE_ME",
+  "@signOut": {
+    "description": "Sign out button label"
+  },
+  "login": "TRANSLATE_ME",
+  "@login": {
+    "description": "Login button label"
+  },
+  "email": "TRANSLATE_ME",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "TRANSLATE_ME",
+  "@password": {
+    "description": "Password field label"
+  },
+  "signIn": "TRANSLATE_ME",
+  "@signIn": {
+    "description": "Sign in button label"
+  },
+  "bookMeeting": "TRANSLATE_ME",
+  "@bookMeeting": {
+    "description": "Book meeting button label"
+  },
+  "bookAppointment": "TRANSLATE_ME",
+  "@bookAppointment": {
+    "description": "Book appointment button label"
+  },
+  "bookingRequest": "TRANSLATE_ME",
+  "@bookingRequest": {
+    "description": "Booking request label"
+  },
+  "confirmBooking": "TRANSLATE_ME",
+  "@confirmBooking": {
+    "description": "Confirm booking button label"
+  },
+  "chatBooking": "TRANSLATE_ME",
+  "@chatBooking": {
+    "description": "Chat booking label"
+  },
+  "bookViaChat": "TRANSLATE_ME",
+  "@bookViaChat": {
+    "description": "Book via chat button label"
+  },
+  "submitBooking": "TRANSLATE_ME",
+  "@submitBooking": {
+    "description": "Submit booking button label"
+  },
+  "next": "TRANSLATE_ME",
+  "@next": {
+    "description": "Label for the next button"
+  },
+  "selectStaff": "TRANSLATE_ME",
+  "@selectStaff": {
+    "description": "Label for staff selection dropdown"
+  },
+  "pickDate": "TRANSLATE_ME",
+  "@pickDate": {
+    "description": "Label for date picker"
+  },
+  "staff": "TRANSLATE_ME",
+  "@staff": {
+    "description": "Staff label"
+  },
+  "service": "TRANSLATE_ME",
+  "@service": {
+    "description": "Service label"
+  },
+  "dateTime": "TRANSLATE_ME",
+  "@dateTime": {
+    "description": "Date and time label"
+  },
+  "duration": "TRANSLATE_ME",
+  "@duration": {
+    "description": "Duration label with parameter",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "notSelected": "TRANSLATE_ME",
+  "@notSelected": {
+    "description": "Not selected state"
+  },
+  "noSlots": "TRANSLATE_ME",
+  "@noSlots": {
+    "description": "Message shown when no time slots are available"
+  },
+  "bookingConfirmed": "TRANSLATE_ME",
+  "@bookingConfirmed": {
+    "description": "Booking confirmed message"
+  },
+  "failedToConfirmBooking": "TRANSLATE_ME",
+  "@failedToConfirmBooking": {
+    "description": "Failed to confirm booking message"
+  },
+  "noBookingsFound": "TRANSLATE_ME",
+  "@noBookingsFound": {
+    "description": "No bookings found message"
+  },
+  "errorLoadingBookings": "TRANSLATE_ME",
+  "@errorLoadingBookings": {
+    "description": "Error loading bookings message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "shareOnWhatsApp": "TRANSLATE_ME",
+  "@shareOnWhatsApp": {
+    "description": "Label for WhatsApp share button"
+  },
+  "shareMeetingInvitation": "TRANSLATE_ME",
+  "@shareMeetingInvitation": {
+    "description": "Title for meeting invitation sharing section"
+  },
+  "meetingReadyMessage": "TRANSLATE_ME",
+  "@meetingReadyMessage": {
+    "description": "Message shown in WhatsApp share dialog"
+  },
+  "customizeMessage": "TRANSLATE_ME",
+  "@customizeMessage": {
+    "description": "Hint text for message customization"
+  },
+  "saveGroupForRecognition": "TRANSLATE_ME",
+  "@saveGroupForRecognition": {
+    "description": "Label for group recognition checkbox"
+  },
+  "groupNameOptional": "TRANSLATE_ME",
+  "@groupNameOptional": {
+    "description": "Label for group name input field"
+  },
+  "enterGroupName": "TRANSLATE_ME",
+  "@enterGroupName": {
+    "description": "Hint text for group name input"
+  },
+  "knownGroupDetected": "TRANSLATE_ME",
+  "@knownGroupDetected": {
+    "description": "Message shown when a known group is detected"
+  },
+  "meetingSharedSuccessfully": "TRANSLATE_ME",
+  "@meetingSharedSuccessfully": {
+    "description": "Success message when meeting is shared"
+  },
+  "bookingConfirmedShare": "TRANSLATE_ME",
+  "@bookingConfirmedShare": {
+    "description": "Message shown after booking confirmation"
+  },
+  "defaultShareMessage": "TRANSLATE_ME",
+  "@defaultShareMessage": {
+    "description": "Default message for WhatsApp sharing"
+  },
+  "dashboard": "TRANSLATE_ME",
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "businessDashboard": "TRANSLATE_ME",
+  "@businessDashboard": {
+    "description": "Business dashboard label"
+  },
+  "myProfile": "TRANSLATE_ME",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "noProfileFound": "TRANSLATE_ME",
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "errorLoadingProfile": "TRANSLATE_ME",
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "myInvites": "TRANSLATE_ME",
+  "@myInvites": {
+    "description": "My invites label"
+  },
+  "inviteDetail": "TRANSLATE_ME",
+  "@inviteDetail": {
+    "description": "Invite detail label"
+  },
+  "inviteContact": "TRANSLATE_ME",
+  "@inviteContact": {
+    "description": "Invite contact label"
+  },
+  "noInvites": "TRANSLATE_ME",
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "errorLoadingInvites": "TRANSLATE_ME",
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "accept": "TRANSLATE_ME",
+  "@accept": {
+    "description": "Accept button label"
+  },
+  "decline": "TRANSLATE_ME",
+  "@decline": {
+    "description": "Decline button label"
+  },
+  "sendInvite": "TRANSLATE_ME",
+  "@sendInvite": {
+    "description": "Send invite button label"
+  },
+  "name": "TRANSLATE_ME",
+  "@name": {
+    "description": "Name field label"
+  },
+  "phoneNumber": "TRANSLATE_ME",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "emailOptional": "TRANSLATE_ME",
+  "@emailOptional": {
+    "description": "Optional email field label"
+  },
+  "requiresInstallFallback": "TRANSLATE_ME",
+  "@requiresInstallFallback": {
+    "description": "Requires installation fallback message"
+  },
+  "notifications": "TRANSLATE_ME",
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "notificationSettings": "TRANSLATE_ME",
+  "@notificationSettings": {
+    "description": "Notification settings label"
+  },
+  "enableNotifications": "TRANSLATE_ME",
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "errorFetchingToken": "TRANSLATE_ME",
+  "@errorFetchingToken": {
+    "description": "Error fetching token message"
+  },
+  "fcmToken": "TRANSLATE_ME",
+  "@fcmToken": {
+    "description": "FCM token display",
+    "placeholders": {
+      "token": {
+        "type": "String"
+      }
+    }
+  },
+  "familyDashboard": "TRANSLATE_ME",
+  "@familyDashboard": {
+    "description": "Family dashboard label"
+  },
+  "pleaseLoginForFamilyFeatures": "TRANSLATE_ME",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "familyMembers": "TRANSLATE_ME",
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "invite": "TRANSLATE_ME",
+  "@invite": {
+    "description": "Invite button label"
+  },
+  "pendingInvites": "TRANSLATE_ME",
+  "@pendingInvites": {
+    "description": "Pending invites label"
+  },
+  "connectedChildren": "TRANSLATE_ME",
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "noFamilyMembersYet": "TRANSLATE_ME",
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "errorLoadingFamilyLinks": "TRANSLATE_ME",
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteChild": "TRANSLATE_ME",
+  "@inviteChild": {
+    "description": "Invite child button label"
+  },
+  "managePermissions": "TRANSLATE_ME",
+  "@managePermissions": {
+    "description": "Manage permissions label"
+  },
+  "removeChild": "TRANSLATE_ME",
+  "@removeChild": {
+    "description": "Remove child button label"
+  },
+  "loading": "TRANSLATE_ME",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "childEmail": "TRANSLATE_ME",
+  "@childEmail": {
+    "description": "Child email field label"
+  },
+  "childEmailOrPhone": "TRANSLATE_ME",
+  "@childEmailOrPhone": {
+    "description": "Child email or phone field label"
+  },
+  "enterChildEmail": "TRANSLATE_ME",
+  "@enterChildEmail": {
+    "description": "Enter child email hint"
+  },
+  "otpCode": "TRANSLATE_ME",
+  "@otpCode": {
+    "description": "OTP code field label"
+  },
+  "enterOtp": "TRANSLATE_ME",
+  "@enterOtp": {
+    "description": "Enter OTP hint"
+  },
+  "verify": "TRANSLATE_ME",
+  "@verify": {
+    "description": "Verify button label"
+  },
+  "otpResentSuccessfully": "TRANSLATE_ME",
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "failedToResendOtp": "TRANSLATE_ME",
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "childLinkedSuccessfully": "TRANSLATE_ME",
+  "@childLinkedSuccessfully": {
+    "description": "Child linked successfully message"
+  },
+  "invitationSentSuccessfully": "TRANSLATE_ME",
+  "@invitationSentSuccessfully": {
+    "description": "Invitation sent successfully message"
+  },
+  "failedToSendInvitation": "TRANSLATE_ME",
+  "@failedToSendInvitation": {
+    "description": "Failed to send invitation message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "pleaseEnterValidEmail": "TRANSLATE_ME",
+  "@pleaseEnterValidEmail": {
+    "description": "Please enter valid email message"
+  },
+  "pleaseEnterValidEmailOrPhone": "TRANSLATE_ME",
+  "@pleaseEnterValidEmailOrPhone": {
+    "description": "Please enter valid email or phone message"
+  },
+  "invalidCode": "TRANSLATE_ME",
+  "@invalidCode": {
+    "description": "Invalid code message"
+  },
+  "cancelInvite": "TRANSLATE_ME",
+  "@cancelInvite": {
+    "description": "Cancel invite button label"
+  },
+  "cancelInviteConfirmation": "TRANSLATE_ME",
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "no": "TRANSLATE_ME",
+  "@no": {
+    "description": "No button label"
+  },
+  "yesCancel": "TRANSLATE_ME",
+  "@yesCancel": {
+    "description": "Yes cancel button label"
+  },
+  "inviteCancelledSuccessfully": "TRANSLATE_ME",
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "failedToCancelInvite": "TRANSLATE_ME",
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "revokeAccess": "TRANSLATE_ME",
+  "@revokeAccess": {
+    "description": "Revoke access button label"
+  },
+  "revokeAccessConfirmation": "TRANSLATE_ME",
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "revoke": "TRANSLATE_ME",
+  "@revoke": {
+    "description": "Revoke button label"
+  },
+  "accessRevokedSuccessfully": "TRANSLATE_ME",
+  "@accessRevokedSuccessfully": {
+    "description": "Access revoked successfully message"
+  },
+  "failedToRevokeAccess": "TRANSLATE_ME",
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "grantConsent": "TRANSLATE_ME",
+  "@grantConsent": {
+    "description": "Grant consent button label"
+  },
+  "revokeConsent": "TRANSLATE_ME",
+  "@revokeConsent": {
+    "description": "Revoke consent button label"
+  },
+  "consentGrantedSuccessfully": "TRANSLATE_ME",
+  "@consentGrantedSuccessfully": {
+    "description": "Consent granted successfully message"
+  },
+  "consentRevokedSuccessfully": "TRANSLATE_ME",
+  "@consentRevokedSuccessfully": {
+    "description": "Consent revoked successfully message"
+  },
+  "failedToUpdateConsent": "TRANSLATE_ME",
+  "@failedToUpdateConsent": {
+    "description": "Failed to update consent message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "checkingPermissions": "TRANSLATE_ME",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "cancel": "TRANSLATE_ME",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "close": "TRANSLATE_ME",
+  "@close": {
+    "description": "Close button label"
+  },
+  "save": "TRANSLATE_ME",
+  "@save": {
+    "description": "Save button label"
+  },
+  "sendNow": "TRANSLATE_ME",
+  "@sendNow": {
+    "description": "Send now button label"
+  },
+  "details": "TRANSLATE_ME",
+  "@details": {
+    "description": "Details button label"
+  },
+  "noBroadcastMessages": "TRANSLATE_ME",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "errorCheckingPermissions": "TRANSLATE_ME",
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mediaOptional": "TRANSLATE_ME",
+  "@mediaOptional": {
+    "description": "Media optional section title"
+  },
+  "pickImage": "TRANSLATE_ME",
+  "@pickImage": {
+    "description": "Pick image button label"
+  },
+  "pickVideo": "TRANSLATE_ME",
+  "@pickVideo": {
+    "description": "Pick video button label"
+  },
+  "pollOptions": "TRANSLATE_ME",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "targetingFilters": "TRANSLATE_ME",
+  "@targetingFilters": {
+    "description": "Targeting filters section title"
+  },
+  "scheduling": "TRANSLATE_ME",
+  "@scheduling": {
+    "description": "Scheduling section title"
+  },
+  "scheduleForLater": "TRANSLATE_ME",
+  "@scheduleForLater": {
+    "description": "Schedule for later option"
+  },
+  "errorEstimatingRecipients": "TRANSLATE_ME",
+  "@errorEstimatingRecipients": {
+    "description": "Error estimating recipients message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingImage": "TRANSLATE_ME",
+  "@errorPickingImage": {
+    "description": "Error picking image message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingVideo": "TRANSLATE_ME",
+  "@errorPickingVideo": {
+    "description": "Error picking video message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noPermissionForBroadcast": "TRANSLATE_ME",
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "messageSavedSuccessfully": "TRANSLATE_ME",
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "errorSavingMessage": "TRANSLATE_ME",
+  "@errorSavingMessage": {
+    "description": "Error saving message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "messageSentSuccessfully": "TRANSLATE_ME",
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "errorSendingMessage": "TRANSLATE_ME",
+  "@errorSendingMessage": {
+    "description": "Error sending message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "content": "TRANSLATE_ME",
+  "@content": {
+    "description": "Content display",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "type": "TRANSLATE_ME",
+  "@type": {
+    "description": "Type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "link": "TRANSLATE_ME",
+  "@link": {
+    "description": "Link display",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "status": "TRANSLATE_ME",
+  "@status": {
+    "description": "Status display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "recipients": "TRANSLATE_ME",
+  "@recipients": {
+    "description": "Recipients display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "opened": "TRANSLATE_ME",
+  "@opened": {
+    "description": "Opened count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "clicked": "TRANSLATE_ME",
+  "@clicked": {
+    "description": "Clicked count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "created": "TRANSLATE_ME",
+  "@created": {
+    "description": "Created date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduled": "TRANSLATE_ME",
+  "@scheduled": {
+    "description": "Scheduled date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "organizations": "TRANSLATE_ME",
+  "@organizations": {
+    "description": "Organizations screen title"
+  },
+  "noOrganizations": "TRANSLATE_ME",
+  "@noOrganizations": {
+    "description": "No organizations message"
+  },
+  "errorLoadingOrganizations": "TRANSLATE_ME",
+  "@errorLoadingOrganizations": {
+    "description": "Error loading organizations message"
+  },
+  "members": "TRANSLATE_ME",
+  "@members": {
+    "description": "Members count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "users": "TRANSLATE_ME",
+  "@users": {
+    "description": "Users screen title"
+  },
+  "noUsers": "TRANSLATE_ME",
+  "@noUsers": {
+    "description": "No users message"
+  },
+  "errorLoadingUsers": "TRANSLATE_ME",
+  "@errorLoadingUsers": {
+    "description": "Error loading users message"
+  },
+  "changeRole": "TRANSLATE_ME",
+  "@changeRole": {
+    "description": "Change role button label"
+  },
+  "totalAppointments": "TRANSLATE_ME",
+  "@totalAppointments": {
+    "description": "Total appointments label"
+  },
+  "completedAppointments": "TRANSLATE_ME",
+  "@completedAppointments": {
+    "description": "Completed appointments label"
+  },
+  "revenue": "TRANSLATE_ME",
+  "@revenue": {
+    "description": "Revenue label"
+  },
+  "errorLoadingStats": "TRANSLATE_ME",
+  "@errorLoadingStats": {
+    "description": "Error loading stats message"
+  },
+  "appointment": "TRANSLATE_ME",
+  "@appointment": {
+    "description": "Appointment display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "from": "TRANSLATE_ME",
+  "@from": {
+    "description": "From display",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "phone": "TRANSLATE_ME",
+  "@phone": {
+    "description": "Phone display",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "noRouteDefined": "TRANSLATE_ME",
+  "@noRouteDefined": {
+    "description": "No route defined message",
+    "placeholders": {
+      "route": {
+        "type": "String"
+      }
+    }
+  },
+  "meetingDetails": "TRANSLATE_ME",
+  "@meetingDetails": {
+    "description": "Meeting details title"
+  },
+  "meetingId": "TRANSLATE_ME",
+  "@meetingId": {
+    "description": "Meeting ID display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "creator": "TRANSLATE_ME",
+  "@creator": {
+    "description": "Creator display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "context": "TRANSLATE_ME",
+  "@context": {
+    "description": "Context display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "group": "TRANSLATE_ME",
+  "@group": {
+    "description": "Group display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "requestPrivateSession": "TRANSLATE_ME",
+  "@requestPrivateSession": {
+    "description": "Request private session button label"
+  },
+  "privacyRequestSent": "TRANSLATE_ME",
+  "@privacyRequestSent": {
+    "description": "Privacy request sent message"
+  },
+  "failedToSendPrivacyRequest": "TRANSLATE_ME",
+  "@failedToSendPrivacyRequest": {
+    "description": "Failed to send privacy request message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPrivacyRequests": "TRANSLATE_ME",
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "requestType": "TRANSLATE_ME",
+  "@requestType": {
+    "description": "Request type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "statusColon": "TRANSLATE_ME",
+  "@statusColon": {
+    "description": "Status with colon display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToActionPrivacyRequest": "TRANSLATE_ME",
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message",
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "yes": "TRANSLATE_ME",
+  "@yes": {
+    "description": "Yes button label"
+  },
+  "send": "TRANSLATE_ME",
+  "@send": {
+    "description": "Send button label"
+  },
+  "permissions": "TRANSLATE_ME",
+  "@permissions": {
+    "description": "Permissions label"
+  },
+  "permissionsFor": "TRANSLATE_ME",
+  "@permissionsFor": {
+    "description": "Permissions for child label",
+    "placeholders": {
+      "childId": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPermissions": "TRANSLATE_ME",
+  "@errorLoadingPermissions": {
+    "description": "Error loading permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "none": "TRANSLATE_ME",
+  "@none": {
+    "description": "None option"
+  },
+  "readOnly": "TRANSLATE_ME",
+  "@readOnly": {
+    "description": "Read only option"
+  },
+  "readWrite": "TRANSLATE_ME",
+  "@readWrite": {
+    "description": "Read and write option"
+  },
+  "permissionUpdated": "TRANSLATE_ME",
+  "@permissionUpdated": {
+    "description": "Permission updated message",
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "newValue": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdatePermission": "TRANSLATE_ME",
+  "@failedToUpdatePermission": {
+    "description": "Failed to update permission message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "invited": "TRANSLATE_ME",
+  "@invited": {
+    "description": "Invited date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adminBroadcast": "TRANSLATE_ME",
+  "@adminBroadcast": {
+    "description": "Admin broadcast screen title"
+  },
+  "composeBroadcastMessage": "TRANSLATE_ME",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message dialog title"
+  },
+  "adminScreenTBD": "TRANSLATE_ME",
+  "@adminScreenTBD": {
+    "description": "Admin screen placeholder"
+  },
+  "staffScreenTBD": "TRANSLATE_ME",
+  "@staffScreenTBD": {
+    "description": "Staff screen placeholder"
+  },
+  "clientScreenTBD": "TRANSLATE_ME",
+  "@clientScreenTBD": {
+    "description": "Client screen placeholder"
+  },
+  "ambassadorTitle": "ರಾಯಭಾರಿ",
+  "ambassadorOnboardingTitle": "ರಾಯಭಾರಿಯಾಗಿ ಆಗಿ",
+  "ambassadorOnboardingSubtitle": "ನಿಮ್ಮ ಭಾಷೆ ಮತ್ತು ಪ್ರದೇಶದಲ್ಲಿ ನಮ್ಮ ಸಮುದಾಯವನ್ನು ಬೆಳೆಯಲು ಸಹಾಯ ಮಾಡಿ.",
+  "ambassadorOnboardingButton": "ಈಗ ಪ್ರಾರಂಭಿಸಿ",
+  "ambassadorDashboardTitle": "ರಾಯಭಾರಿ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+  "ambassadorDashboardSubtitle": "ನಿಮ್ಮ ಅಂಕಿಅಂಶಗಳು ಮತ್ತು ಚಟುವಟಿಕೆಯ ಅವಲೋಕನ",
+  "ambassadorDashboardChartLabel": "ಈ ವಾರ ಆಮಂತ್ರಿಸಲಾದ ಬಳಕೆದಾರರು",
+  "REDACTED_TOKEN": "ಉಳಿದ ರಾಯಭಾರಿ ಸ್ಥಾನಗಳು",
+  "REDACTED_TOKEN": "ದೇಶ ಮತ್ತು ಭಾಷೆ",
+  "ambassadorQuotaFull": "ನಿಮ್ಮ ಪ್ರದೇಶದಲ್ಲಿ ರಾಯಭಾರಿ ಕೋಟಾ ತುಂಬಿದೆ.",
+  "ambassadorQuotaAvailable": "ರಾಯಭಾರಿ ಸ್ಥಾನಗಳು ಲಭ್ಯವಿವೆ!",
+  "ambassadorStatusAssigned": "ನೀವು ಸಕ್ರಿಯ ರಾಯಭಾರಿ.",
+  "ambassadorStatusNotEligible": "ರಾಯಭಾರಿ ಸ್ಥಾನಕ್ಕೆ ನೀವು ಅರ್ಹರಲ್ಲ.",
+  "ambassadorStatusWaiting": "ಸ್ಥಾನ ಲಭ್ಯತೆಗಾಗಿ ಕಾಯುತ್ತಿದೆ...",
+  "ambassadorStatusRevoked": "ನಿಮ್ಮ ರಾಯಭಾರಿ ಸ್ಥಾನವನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ.",
+  "ambassadorNoticeAdultOnly": "ಪ್ರಾಯದ ಖಾತೆಗಳು ಮಾತ್ರ ರಾಯಭಾರಿಗಳಾಗಬಹುದು.",
+  "ambassadorNoticeQuotaReached": "ನಿಮ್ಮ ದೇಶ ಮತ್ತು ಭಾಷೆಗಾಗಿ ರಾಯಭಾರಿ ಕೋಟಾ ತಲುಪಿದೆ.",
+  "ambassadorNoticeAutoAssign": "ರಾಯಭಾರಿತ್ವವನ್ನು ಅರ್ಹ ಬಳಕೆದಾರರಿಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನೀಡಲಾಗುತ್ತದೆ."
+}

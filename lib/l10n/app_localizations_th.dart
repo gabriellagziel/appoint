@@ -651,4 +651,62 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'ทูต';
+
+  @override
+  String get ambassadorOnboardingTitle => 'เป็นทูต';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'ช่วยให้ชุมชนของเราเติบโตในภาษาและภูมิภาคของคุณ';
+
+  @override
+  String get ambassadorOnboardingButton => 'เริ่มต้นตอนนี้';
+
+  @override
+  String get ambassadorDashboardTitle => 'แดชบอร์ดทูต';
+
+  @override
+  String get ambassadorDashboardSubtitle => 'ภาพรวมสถิติและกิจกรรมของคุณ';
+
+  @override
+  String get ambassadorDashboardChartLabel => 'ผู้ใช้ที่ได้รับเชิญในสัปดาห์นี้';
+
+  @override
+  String get REDACTED_TOKEN => 'ตำแหน่งทูตที่เหลือ';
+
+  @override
+  String get REDACTED_TOKEN => 'ประเทศและภาษา';
+
+  @override
+  String get ambassadorQuotaFull => 'โควต้าการเป็นทูตเต็มแล้วในภูมิภาคของคุณ';
+
+  @override
+  String get ambassadorQuotaAvailable => 'ตำแหน่งทูตมีให้บริการ!';
+
+  @override
+  String get ambassadorStatusAssigned => 'คุณเป็นทูตที่ใช้งานอยู่';
+
+  @override
+  String get ambassadorStatusNotEligible => 'คุณไม่มีสิทธิ์สำหรับสถานะทูต';
+
+  @override
+  String get ambassadorStatusWaiting => 'รอตำแหน่งว่าง...';
+
+  @override
+  String get ambassadorStatusRevoked => 'สถานะทูตของคุณถูกเพิกถอนแล้ว';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'เฉพาะบัญชีผู้ใหญ่เท่านั้นที่สามารถเป็นทูตได้';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'โควต้าการเป็นทูตสำหรับประเทศและภาษาของคุณเต็มแล้ว';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'การเป็นทูตจะได้รับมอบหมายโดยอัตโนมัติให้กับผู้ใช้ที่มีคุณสมบัติ';
 }

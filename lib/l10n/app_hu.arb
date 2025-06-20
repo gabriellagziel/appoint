@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Nagykövet",
+  "ambassadorOnboardingTitle": "Legyen Nagykövet",
+  "ambassadorOnboardingSubtitle": "Segítsen növekedni közösségünknek az Ön nyelvén és régiójában.",
+  "ambassadorOnboardingButton": "Kezdje Most",
+  "ambassadorDashboardTitle": "Nagykövet Irányítópult",
+  "ambassadorDashboardSubtitle": "Statisztikái és tevékenységeinek áttekintése",
+  "ambassadorDashboardChartLabel": "Meghívott Felhasználók Ezen a Héten",
+  "REDACTED_TOKEN": "Fennmaradó Nagyköveti Helyek",
+  "REDACTED_TOKEN": "Ország és Nyelv",
+  "ambassadorQuotaFull": "A nagyköveti kvóta tele van az Ön régiójában.",
+  "ambassadorQuotaAvailable": "Nagyköveti helyek elérhetők!",
+  "ambassadorStatusAssigned": "Ön aktív nagykövet.",
+  "ambassadorStatusNotEligible": "Ön nem jogosult nagyköveti státusra.",
+  "ambassadorStatusWaiting": "Hely elérhetőségére vár...",
+  "ambassadorStatusRevoked": "Nagyköveti státusát visszavonták.",
+  "ambassadorNoticeAdultOnly": "Csak felnőtt fiókok válhatnak nagykövetté.",
+  "ambassadorNoticeQuotaReached": "Az Ön országához és nyelvéhez tartozó nagyköveti kvóta elérte a maximumot.",
+  "ambassadorNoticeAutoAssign": "A nagykövetséget automatikusan kapják a minősített felhasználók."
 }

@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Botschafter",
+  "ambassadorOnboardingTitle": "Werden Sie Botschafter",
+  "ambassadorOnboardingSubtitle": "Helfen Sie dabei, unsere Community in Ihrer Sprache und Region zu vergrößern.",
+  "ambassadorOnboardingButton": "Jetzt Starten",
+  "ambassadorDashboardTitle": "Botschafter-Dashboard",
+  "ambassadorDashboardSubtitle": "Überblick über Ihre Statistiken und Aktivitäten",
+  "ambassadorDashboardChartLabel": "Eingeladene Benutzer Diese Woche",
+  "REDACTED_TOKEN": "Verbleibende Botschafter-Plätze",
+  "REDACTED_TOKEN": "Land & Sprache",
+  "ambassadorQuotaFull": "Das Botschafter-Kontingent ist in Ihrer Region voll.",
+  "ambassadorQuotaAvailable": "Botschafter-Plätze verfügbar!",
+  "ambassadorStatusAssigned": "Sie sind ein aktiver Botschafter.",
+  "ambassadorStatusNotEligible": "Sie sind nicht für den Botschafter-Status berechtigt.",
+  "ambassadorStatusWaiting": "Warten auf Platzverfügbarkeit...",
+  "ambassadorStatusRevoked": "Ihr Botschafter-Status wurde widerrufen.",
+  "ambassadorNoticeAdultOnly": "Nur Erwachsenen-Konten können Botschafter werden.",
+  "ambassadorNoticeQuotaReached": "Das Botschafter-Kontingent für Ihr Land und Ihre Sprache wurde erreicht.",
+  "ambassadorNoticeAutoAssign": "Die Botschafter-Schaft wird automatisch an qualifizierte Benutzer vergeben."
 }

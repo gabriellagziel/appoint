@@ -945,4 +945,23 @@
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
   }
+  ,
+  "ambassadorTitle": "Global Ambassador",
+  "ambassadorOnboardingTitle": "Become a Voice for Your Country",
+  "ambassadorOnboardingSubtitle": "Represent your language and help us grow",
+  "ambassadorOnboardingButton": "Start Now",
+  "ambassadorDashboardTitle": "Ambassador Dashboard",
+  "ambassadorDashboardSubtitle": "Your community impact at a glance",
+  "ambassadorDashboardChartLabel": "Users joined via your language",
+  "REDACTED_TOKEN": "Remaining Slots",
+  "REDACTED_TOKEN": "Country / Language",
+  "ambassadorQuotaFull": "All ambassador slots are currently filled.",
+  "ambassadorQuotaAvailable": "Slots Available",
+  "ambassadorStatusAssigned": "You are an official ambassador!",
+  "ambassadorStatusNotEligible": "You are not eligible for ambassador status.",
+  "ambassadorStatusWaiting": "Waiting for assignment...",
+  "ambassadorStatusRevoked": "Your ambassador status was revoked.",
+  "ambassadorNoticeAdultOnly": "Only adults can become ambassadors.",
+  "ambassadorNoticeQuotaReached": "Ambassador quota for your region is full.",
+  "ambassadorNoticeAutoAssign": "Ambassadorship is automatically assigned by the system."
 }

@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Ambassadeur",
+  "ambassadorOnboardingTitle": "Word Ambassadeur",
+  "ambassadorOnboardingSubtitle": "Help onze gemeenschap te laten groeien in jouw taal en regio.",
+  "ambassadorOnboardingButton": "Nu Beginnen",
+  "ambassadorDashboardTitle": "Ambassadeur Dashboard",
+  "ambassadorDashboardSubtitle": "Overzicht van je statistieken en activiteiten",
+  "ambassadorDashboardChartLabel": "Uitgenodigde Gebruikers Deze Week",
+  "REDACTED_TOKEN": "Resterende Ambassadeur Plaatsen",
+  "REDACTED_TOKEN": "Land & Taal",
+  "ambassadorQuotaFull": "Ambassadeur quotum is vol in jouw regio.",
+  "ambassadorQuotaAvailable": "Ambassadeur plaatsen beschikbaar!",
+  "ambassadorStatusAssigned": "Je bent een actieve ambassadeur.",
+  "ambassadorStatusNotEligible": "Je bent niet in aanmerking voor ambassadeur status.",
+  "ambassadorStatusWaiting": "Wachten op beschikbaarheid van plaats...",
+  "ambassadorStatusRevoked": "Je ambassadeur status is ingetrokken.",
+  "ambassadorNoticeAdultOnly": "Alleen volwassen accounts kunnen ambassadeur worden.",
+  "ambassadorNoticeQuotaReached": "Het ambassadeur quotum voor jouw land en taal is bereikt.",
+  "ambassadorNoticeAutoAssign": "Ambassadeurschap wordt automatisch toegekend aan gekwalificeerde gebruikers."
 }

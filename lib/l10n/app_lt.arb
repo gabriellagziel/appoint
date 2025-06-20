@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Ambasadorius",
+  "ambassadorOnboardingTitle": "Tapti Ambasadoriumi",
+  "ambassadorOnboardingSubtitle": "Padėkite mums augti jūsų kalba ir regione.",
+  "ambassadorOnboardingButton": "Pradėti Dabar",
+  "ambassadorDashboardTitle": "Ambasadoriaus Valdymo Skydelis",
+  "ambassadorDashboardSubtitle": "Jūsų statistikos ir veiklos apžvalga",
+  "ambassadorDashboardChartLabel": "Pakviesti Vartotojai Šią Savaitę",
+  "REDACTED_TOKEN": "Likusios Ambasadoriaus Vietos",
+  "REDACTED_TOKEN": "Šalis ir Kalba",
+  "ambassadorQuotaFull": "Ambasadorių kvota jūsų regione pilna.",
+  "ambassadorQuotaAvailable": "Ambasadoriaus vietos prieinamos!",
+  "ambassadorStatusAssigned": "Jūs esate aktyvus ambasadorius.",
+  "ambassadorStatusNotEligible": "Jūs neturite teisės į ambasadoriaus statusą.",
+  "ambassadorStatusWaiting": "Laukiama vietos prieinamumo...",
+  "ambassadorStatusRevoked": "Jūsų ambasadoriaus statusas atšauktas.",
+  "ambassadorNoticeAdultOnly": "Tik suaugusių paskyros gali tapti ambasadoriais.",
+  "ambassadorNoticeQuotaReached": "Ambasadorių kvota jūsų šaliai ir kalbai pasiekta.",
+  "ambassadorNoticeAutoAssign": "Ambasadorystė automatiškai suteikiama kvalifikuotiems vartotojams."
 }

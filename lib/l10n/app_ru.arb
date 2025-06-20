@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Посол",
+  "ambassadorOnboardingTitle": "Станьте Послом",
+  "ambassadorOnboardingSubtitle": "Помогите развивать наше сообщество на вашем языке и в вашем регионе.",
+  "ambassadorOnboardingButton": "Начать Сейчас",
+  "ambassadorDashboardTitle": "Панель Посла",
+  "ambassadorDashboardSubtitle": "Обзор вашей статистики и активности",
+  "ambassadorDashboardChartLabel": "Приглашенные Пользователи На Этой Неделе",
+  "REDACTED_TOKEN": "Оставшиеся Места Послов",
+  "REDACTED_TOKEN": "Страна и Язык",
+  "ambassadorQuotaFull": "Квота послов заполнена в вашем регионе.",
+  "ambassadorQuotaAvailable": "Места послов доступны!",
+  "ambassadorStatusAssigned": "Вы активный посол.",
+  "ambassadorStatusNotEligible": "Вы не имеете права на статус посла.",
+  "ambassadorStatusWaiting": "Ожидание доступности места...",
+  "ambassadorStatusRevoked": "Ваш статус посла был отозван.",
+  "ambassadorNoticeAdultOnly": "Только взрослые аккаунты могут стать послами.",
+  "ambassadorNoticeQuotaReached": "Квота послов для вашей страны и языка достигнута.",
+  "ambassadorNoticeAutoAssign": "Посольство предоставляется автоматически квалифицированным пользователям."
 }

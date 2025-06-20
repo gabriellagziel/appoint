@@ -651,4 +651,65 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Duta';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Jadilah Duta';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Bantu mengembangkan komunitas kami dalam bahasa dan wilayah Anda.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Mulai Sekarang';
+
+  @override
+  String get ambassadorDashboardTitle => 'Dasbor Duta';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Ringkasan statistik dan aktivitas Anda';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Pengguna yang Diundang Minggu Ini';
+
+  @override
+  String get REDACTED_TOKEN => 'Slot Duta yang Tersisa';
+
+  @override
+  String get REDACTED_TOKEN => 'Negara & Bahasa';
+
+  @override
+  String get ambassadorQuotaFull => 'Kuota duta penuh di wilayah Anda.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Slot duta tersedia!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Anda adalah duta aktif.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Anda tidak memenuhi syarat untuk status duta.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Menunggu ketersediaan slot...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Status duta Anda telah dicabut.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Hanya akun dewasa yang dapat menjadi duta.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Kuota duta untuk negara dan bahasa Anda telah tercapai.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Kedutaan diberikan secara otomatis kepada pengguna yang memenuhi syarat.';
 }

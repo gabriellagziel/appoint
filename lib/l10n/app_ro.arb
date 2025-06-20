@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Ambasador",
+  "ambassadorOnboardingTitle": "Devino Ambasador",
+  "ambassadorOnboardingSubtitle": "Ajută-ne să creștem comunitatea în limba și regiunea ta.",
+  "ambassadorOnboardingButton": "Începe Acum",
+  "ambassadorDashboardTitle": "Panou Ambasador",
+  "ambassadorDashboardSubtitle": "Prezentarea generală a statisticilor și activităților tale",
+  "ambassadorDashboardChartLabel": "Utilizatori Invitați Această Săptămână",
+  "REDACTED_TOKEN": "Locuri Ambasador Rămase",
+  "REDACTED_TOKEN": "Țară și Limbă",
+  "ambassadorQuotaFull": "Cota de ambasadori este completă în regiunea ta.",
+  "ambassadorQuotaAvailable": "Locuri ambasador disponibile!",
+  "ambassadorStatusAssigned": "Ești un ambasador activ.",
+  "ambassadorStatusNotEligible": "Nu ești eligibil pentru statutul de ambasador.",
+  "ambassadorStatusWaiting": "Așteptând disponibilitatea locului...",
+  "ambassadorStatusRevoked": "Statutul tău de ambasador a fost revocat.",
+  "ambassadorNoticeAdultOnly": "Doar conturile adulte pot deveni ambasadori.",
+  "ambassadorNoticeQuotaReached": "Cota de ambasadori pentru țara și limba ta a fost atinsă.",
+  "ambassadorNoticeAutoAssign": "Ambasadoratul este acordat automat utilizatorilor calificați."
 }

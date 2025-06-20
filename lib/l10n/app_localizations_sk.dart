@@ -651,4 +651,67 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+
+  @override
+  String get ambassadorTitle => 'Veľvyslanec';
+
+  @override
+  String get ambassadorOnboardingTitle => 'Stať sa Veľvyslancom';
+
+  @override
+  String get ambassadorOnboardingSubtitle =>
+      'Pomôžte nám rásť vo vašom jazyku a regióne.';
+
+  @override
+  String get ambassadorOnboardingButton => 'Začať Teraz';
+
+  @override
+  String get ambassadorDashboardTitle => 'Veľvyslanec Dashboard';
+
+  @override
+  String get ambassadorDashboardSubtitle =>
+      'Prehľad vašich štatistík a aktivít';
+
+  @override
+  String get ambassadorDashboardChartLabel =>
+      'Pozvaní Používatelia Tento Týždeň';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Zostávajúce Miesta Veľvyslancov';
+
+  @override
+  String get REDACTED_TOKEN => 'Krajina a Jazyk';
+
+  @override
+  String get ambassadorQuotaFull =>
+      'Kvóta veľvyslancov je plná vo vašom regióne.';
+
+  @override
+  String get ambassadorQuotaAvailable => 'Miesta veľvyslancov dostupné!';
+
+  @override
+  String get ambassadorStatusAssigned => 'Ste aktívny veľvyslanec.';
+
+  @override
+  String get ambassadorStatusNotEligible =>
+      'Nie ste oprávnený na status veľvyslanca.';
+
+  @override
+  String get ambassadorStatusWaiting => 'Čakanie na dostupnosť miesta...';
+
+  @override
+  String get ambassadorStatusRevoked => 'Váš status veľvyslanca bol odvolaný.';
+
+  @override
+  String get ambassadorNoticeAdultOnly =>
+      'Iba dospelé účty môžu stať veľvyslancami.';
+
+  @override
+  String get ambassadorNoticeQuotaReached =>
+      'Kvóta veľvyslancov pre vašu krajinu a jazyk bola dosiahnutá.';
+
+  @override
+  String get ambassadorNoticeAutoAssign =>
+      'Veľvyslanectvo sa automaticky prideľuje kvalifikovaným používateľom.';
 }

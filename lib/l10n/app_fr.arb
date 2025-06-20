@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Ambassadeur",
+  "ambassadorOnboardingTitle": "Devenez Ambassadeur",
+  "ambassadorOnboardingSubtitle": "Aidez à développer notre communauté dans votre langue et région.",
+  "ambassadorOnboardingButton": "Commencer Maintenant",
+  "ambassadorDashboardTitle": "Tableau de Bord Ambassadeur",
+  "ambassadorDashboardSubtitle": "Aperçu de vos statistiques et activités",
+  "ambassadorDashboardChartLabel": "Utilisateurs Invités Cette Semaine",
+  "REDACTED_TOKEN": "Places d'Ambassadeur Restantes",
+  "REDACTED_TOKEN": "Pays et Langue",
+  "ambassadorQuotaFull": "Le quota d'ambassadeurs est complet dans votre région.",
+  "ambassadorQuotaAvailable": "Places d'ambassadeur disponibles !",
+  "ambassadorStatusAssigned": "Vous êtes un ambassadeur actif.",
+  "ambassadorStatusNotEligible": "Vous n'êtes pas éligible au statut d'ambassadeur.",
+  "ambassadorStatusWaiting": "En attente de disponibilité de place...",
+  "ambassadorStatusRevoked": "Votre statut d'ambassadeur a été révoqué.",
+  "ambassadorNoticeAdultOnly": "Seuls les comptes adultes peuvent devenir ambassadeurs.",
+  "ambassadorNoticeQuotaReached": "Le quota d'ambassadeurs pour votre pays et langue a été atteint.",
+  "ambassadorNoticeAutoAssign": "L'ambassaduriat est accordé automatiquement aux utilisateurs qualifiés."
 }

@@ -944,5 +944,23 @@
   "clientScreenTBD": "TODO: Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
-  }
+  },
+  "ambassadorTitle": "Veľvyslanec",
+  "ambassadorOnboardingTitle": "Stať sa Veľvyslancom",
+  "ambassadorOnboardingSubtitle": "Pomôžte nám rásť vo vašom jazyku a regióne.",
+  "ambassadorOnboardingButton": "Začať Teraz",
+  "ambassadorDashboardTitle": "Veľvyslanec Dashboard",
+  "ambassadorDashboardSubtitle": "Prehľad vašich štatistík a aktivít",
+  "ambassadorDashboardChartLabel": "Pozvaní Používatelia Tento Týždeň",
+  "REDACTED_TOKEN": "Zostávajúce Miesta Veľvyslancov",
+  "REDACTED_TOKEN": "Krajina a Jazyk",
+  "ambassadorQuotaFull": "Kvóta veľvyslancov je plná vo vašom regióne.",
+  "ambassadorQuotaAvailable": "Miesta veľvyslancov dostupné!",
+  "ambassadorStatusAssigned": "Ste aktívny veľvyslanec.",
+  "ambassadorStatusNotEligible": "Nie ste oprávnený na status veľvyslanca.",
+  "ambassadorStatusWaiting": "Čakanie na dostupnosť miesta...",
+  "ambassadorStatusRevoked": "Váš status veľvyslanca bol odvolaný.",
+  "ambassadorNoticeAdultOnly": "Iba dospelé účty môžu stať veľvyslancami.",
+  "ambassadorNoticeQuotaReached": "Kvóta veľvyslancov pre vašu krajinu a jazyk bola dosiahnutá.",
+  "ambassadorNoticeAutoAssign": "Veľvyslanectvo sa automaticky prideľuje kvalifikovaným používateľom."
 }
