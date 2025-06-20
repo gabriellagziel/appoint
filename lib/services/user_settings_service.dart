@@ -15,7 +15,7 @@ class UserSettingsService {
     if (!doc.exists) {
       return NotificationSettings(push: false);
     }
-    return NotificationSettings.fromJson(doc.data()!);
+    return NotificationSettings.fromJson(doc.data() as Map<String, dynamic>);
   }
 
   Future<void> updateSettings(String uid, NotificationSettings settings) async {

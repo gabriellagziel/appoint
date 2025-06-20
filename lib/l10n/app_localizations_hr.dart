@@ -9,301 +9,75 @@ class AppLocalizationsHr extends AppLocalizations {
   AppLocalizationsHr([String locale = 'hr']) : super(locale);
 
   @override
-  String get appTitle => 'TRANSLATE_ME';
-
-  @override
-  String get welcome => 'TRANSLATE_ME';
+  String get refresh => 'Refresh';
 
   @override
   String get home => 'TRANSLATE_ME';
 
   @override
-  String get menu => 'TRANSLATE_ME';
+  String get noSessionsYet => 'No sessions yet';
 
   @override
-  String get profile => 'TRANSLATE_ME';
+  String get ok => 'OK';
 
   @override
-  String get signOut => 'TRANSLATE_ME';
+  String get playtimeLandingChooseMode => 'Choose your play mode:';
 
   @override
-  String get login => 'TRANSLATE_ME';
+  String get signUp => 'Sign Up';
 
   @override
-  String get email => 'TRANSLATE_ME';
-
-  @override
-  String get password => 'TRANSLATE_ME';
-
-  @override
-  String get signIn => 'TRANSLATE_ME';
-
-  @override
-  String get bookMeeting => 'TRANSLATE_ME';
-
-  @override
-  String get bookAppointment => 'TRANSLATE_ME';
-
-  @override
-  String get bookingRequest => 'TRANSLATE_ME';
-
-  @override
-  String get confirmBooking => 'TRANSLATE_ME';
-
-  @override
-  String get chatBooking => 'TRANSLATE_ME';
-
-  @override
-  String get bookViaChat => 'TRANSLATE_ME';
-
-  @override
-  String get submitBooking => 'TRANSLATE_ME';
-
-  @override
-  String get next => 'TRANSLATE_ME';
-
-  @override
-  String get selectStaff => 'TRANSLATE_ME';
-
-  @override
-  String get pickDate => 'TRANSLATE_ME';
-
-  @override
-  String get staff => 'TRANSLATE_ME';
-
-  @override
-  String get service => 'TRANSLATE_ME';
-
-  @override
-  String get dateTime => 'TRANSLATE_ME';
-
-  @override
-  String duration(String duration) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get notSelected => 'TRANSLATE_ME';
-
-  @override
-  String get noSlots => 'TRANSLATE_ME';
-
-  @override
-  String get bookingConfirmed => 'TRANSLATE_ME';
-
-  @override
-  String get failedToConfirmBooking => 'TRANSLATE_ME';
-
-  @override
-  String get noBookingsFound => 'TRANSLATE_ME';
-
-  @override
-  String errorLoadingBookings(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get shareOnWhatsApp => 'TRANSLATE_ME';
-
-  @override
-  String get shareMeetingInvitation => 'TRANSLATE_ME';
-
-  @override
-  String get meetingReadyMessage => 'TRANSLATE_ME';
-
-  @override
-  String get customizeMessage => 'TRANSLATE_ME';
-
-  @override
-  String get saveGroupForRecognition => 'TRANSLATE_ME';
-
-  @override
-  String get groupNameOptional => 'TRANSLATE_ME';
-
-  @override
-  String get enterGroupName => 'TRANSLATE_ME';
-
-  @override
-  String get knownGroupDetected => 'TRANSLATE_ME';
-
-  @override
-  String get meetingSharedSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String get bookingConfirmedShare => 'TRANSLATE_ME';
-
-  @override
-  String get defaultShareMessage => 'TRANSLATE_ME';
-
-  @override
-  String get dashboard => 'TRANSLATE_ME';
-
-  @override
-  String get businessDashboard => 'TRANSLATE_ME';
-
-  @override
-  String get myProfile => 'TRANSLATE_ME';
-
-  @override
-  String get noProfileFound => 'TRANSLATE_ME';
-
-  @override
-  String get errorLoadingProfile => 'TRANSLATE_ME';
-
-  @override
-  String get myInvites => 'TRANSLATE_ME';
-
-  @override
-  String get inviteDetail => 'TRANSLATE_ME';
-
-  @override
-  String get inviteContact => 'TRANSLATE_ME';
-
-  @override
-  String get noInvites => 'TRANSLATE_ME';
-
-  @override
-  String get errorLoadingInvites => 'TRANSLATE_ME';
-
-  @override
-  String get accept => 'TRANSLATE_ME';
+  String get scheduleMessage => 'Schedule Message';
 
   @override
   String get decline => 'TRANSLATE_ME';
 
   @override
-  String get sendInvite => 'TRANSLATE_ME';
+  String get adminBroadcast => 'TRANSLATE_ME';
 
   @override
-  String get name => 'TRANSLATE_ME';
+  String get login => 'TRANSLATE_ME';
 
   @override
-  String get phoneNumber => 'TRANSLATE_ME';
+  String get playtimeChooseFriends => 'Choose friends to invite';
 
   @override
-  String get emailOptional => 'TRANSLATE_ME';
+  String get noInvites => 'TRANSLATE_ME';
 
   @override
-  String get requiresInstallFallback => 'TRANSLATE_ME';
+  String get playtimeChooseTime => 'Choose a time';
 
   @override
-  String get notifications => 'TRANSLATE_ME';
+  String get success => 'Success';
 
   @override
-  String get notificationSettings => 'TRANSLATE_ME';
+  String get undo => 'Undo';
 
   @override
-  String get enableNotifications => 'TRANSLATE_ME';
-
-  @override
-  String get errorFetchingToken => 'TRANSLATE_ME';
-
-  @override
-  String fcmToken(String token) {
+  String opened(Object count) {
     return 'TRANSLATE_ME';
   }
 
   @override
-  String get familyDashboard => 'TRANSLATE_ME';
+  String get createVirtualSession => 'Create Virtual Session';
 
   @override
-  String get pleaseLoginForFamilyFeatures => 'TRANSLATE_ME';
+  String get messageSentSuccessfully => 'TRANSLATE_ME';
 
   @override
-  String get familyMembers => 'TRANSLATE_ME';
+  String get redo => 'Redo';
 
   @override
-  String get invite => 'TRANSLATE_ME';
+  String get next => 'TRANSLATE_ME';
 
   @override
-  String get pendingInvites => 'TRANSLATE_ME';
-
-  @override
-  String get connectedChildren => 'TRANSLATE_ME';
-
-  @override
-  String get noFamilyMembersYet => 'TRANSLATE_ME';
-
-  @override
-  String errorLoadingFamilyLinks(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get inviteChild => 'TRANSLATE_ME';
-
-  @override
-  String get managePermissions => 'TRANSLATE_ME';
-
-  @override
-  String get removeChild => 'TRANSLATE_ME';
-
-  @override
-  String get loading => 'TRANSLATE_ME';
-
-  @override
-  String get childEmail => 'TRANSLATE_ME';
-
-  @override
-  String get childEmailOrPhone => 'TRANSLATE_ME';
-
-  @override
-  String get enterChildEmail => 'TRANSLATE_ME';
-
-  @override
-  String get otpCode => 'TRANSLATE_ME';
-
-  @override
-  String get enterOtp => 'TRANSLATE_ME';
-
-  @override
-  String get verify => 'TRANSLATE_ME';
-
-  @override
-  String get otpResentSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String failedToResendOtp(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get childLinkedSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String get invitationSentSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String failedToSendInvitation(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get pleaseEnterValidEmail => 'TRANSLATE_ME';
-
-  @override
-  String get pleaseEnterValidEmailOrPhone => 'TRANSLATE_ME';
-
-  @override
-  String get invalidCode => 'TRANSLATE_ME';
-
-  @override
-  String get cancelInvite => 'TRANSLATE_ME';
+  String get search => 'Search';
 
   @override
   String get cancelInviteConfirmation => 'TRANSLATE_ME';
 
   @override
-  String get no => 'TRANSLATE_ME';
-
-  @override
-  String get yesCancel => 'TRANSLATE_ME';
-
-  @override
-  String get inviteCancelledSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String failedToCancelInvite(String error) {
+  String created(Object date) {
     return 'TRANSLATE_ME';
   }
 
@@ -311,33 +85,212 @@ class AppLocalizationsHr extends AppLocalizations {
   String get revokeAccess => 'TRANSLATE_ME';
 
   @override
+  String get saveGroupForRecognition => 'TRANSLATE_ME';
+
+  @override
+  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+
+  @override
   String get revokeAccessConfirmation => 'TRANSLATE_ME';
 
   @override
-  String get revoke => 'TRANSLATE_ME';
+  String get download => 'Download';
+
+  @override
+  String get password => 'TRANSLATE_ME';
+
+  @override
+  String errorLoadingFamilyLinks(Object error) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String get cancel => 'TRANSLATE_ME';
+
+  @override
+  String get playtimeCreate => 'Create';
+
+  @override
+  String failedToActionPrivacyRequest(Object action, Object error) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String get appTitle => 'TRANSLATE_ME';
+
+  @override
+  String get accept => 'TRANSLATE_ME';
+
+  @override
+  String get playtimeModeVirtual => 'Virtual Play';
+
+  @override
+  String get playtimeDescription =>
+      'Enjoy live or virtual games with your friends!';
+
+  @override
+  String get delete => 'Delete';
+
+  @override
+  String get playtimeVirtualStarted => 'Virtual playtime started!';
+
+  @override
+  String get createYourFirstGame => 'Create your first game';
+
+  @override
+  String get participants => 'Participants';
+
+  @override
+  String recipients(Object count) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String get noResults => 'No results found';
+
+  @override
+  String get yes => 'TRANSLATE_ME';
+
+  @override
+  String get invite => 'TRANSLATE_ME';
+
+  @override
+  String get playtimeModeLive => 'Live Play';
+
+  @override
+  String get done => 'Done';
+
+  @override
+  String get defaultShareMessage => 'TRANSLATE_ME';
+
+  @override
+  String get no => 'TRANSLATE_ME';
+
+  @override
+  String get playtimeHub => 'Playtime Hub';
+
+  @override
+  String get error => 'Error';
+
+  @override
+  String get createLiveSession => 'Create Live Session';
+
+  @override
+  String get enableNotifications => 'TRANSLATE_ME';
+
+  @override
+  String invited(Object date) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String content(Object content) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String get meetingSharedSuccessfully => 'TRANSLATE_ME';
+
+  @override
+  String get welcomeToPlaytime => 'Welcome to Playtime';
+
+  @override
+  String get viewAll => 'View All';
+
+  @override
+  String get playtimeVirtual => 'Virtual Play';
+
+  @override
+  String get staffScreenTBD => 'TRANSLATE_ME';
+
+  @override
+  String get cut => 'Cut';
+
+  @override
+  String get inviteCancelledSuccessfully => 'TRANSLATE_ME';
+
+  @override
+  String get retry => 'Retry';
+
+  @override
+  String get composeBroadcastMessage => 'TRANSLATE_ME';
+
+  @override
+  String get sendNow => 'TRANSLATE_ME';
+
+  @override
+  String get noGamesYet => 'No games yet';
+
+  @override
+  String get select => 'Select';
+
+  @override
+  String get about => 'About';
+
+  @override
+  String get choose => 'Choose';
+
+  @override
+  String get profile => 'TRANSLATE_ME';
+
+  @override
+  String get removeChild => 'TRANSLATE_ME';
+
+  @override
+  String status(Object status) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String get logout => 'Logout';
+
+  @override
+  String get paste => 'Paste';
+
+  @override
+  String get welcome => 'TRANSLATE_ME';
+
+  @override
+  String get playtimeCreateSession => 'Create a Playtime Session';
+
+  @override
+  String get familyMembers => 'TRANSLATE_ME';
+
+  @override
+  String get upload => 'Upload';
+
+  @override
+  String get upcomingSessions => 'Upcoming Sessions';
+
+  @override
+  String get enterGroupName => 'TRANSLATE_ME';
+
+  @override
+  String get confirm => 'Confirm';
+
+  @override
+  String get playtimeLive => 'Live Play';
+
+  @override
+  String get errorLoadingInvites => 'TRANSLATE_ME';
+
+  @override
+  String get targetingFilters => 'TRANSLATE_ME';
+
+  @override
+  String get pickVideo => 'TRANSLATE_ME';
+
+  @override
+  String get playtimeGameDeleted => 'Game deleted';
+
+  @override
+  String get scheduleForLater => 'TRANSLATE_ME';
 
   @override
   String get accessRevokedSuccessfully => 'TRANSLATE_ME';
 
   @override
-  String failedToRevokeAccess(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get grantConsent => 'TRANSLATE_ME';
-
-  @override
-  String get revokeConsent => 'TRANSLATE_ME';
-
-  @override
-  String get consentGrantedSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String get consentRevokedSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String failedToUpdateConsent(String error) {
+  String type(Object type) {
     return 'TRANSLATE_ME';
   }
 
@@ -345,357 +298,253 @@ class AppLocalizationsHr extends AppLocalizations {
   String get checkingPermissions => 'TRANSLATE_ME';
 
   @override
-  String get cancel => 'TRANSLATE_ME';
+  String get copy => 'Copy';
 
   @override
-  String get close => 'TRANSLATE_ME';
+  String get yesCancel => 'TRANSLATE_ME';
 
   @override
-  String get save => 'TRANSLATE_ME';
+  String get email => 'TRANSLATE_ME';
 
   @override
-  String get sendNow => 'TRANSLATE_ME';
+  String get shareOnWhatsApp => 'TRANSLATE_ME';
 
   @override
-  String get details => 'TRANSLATE_ME';
+  String get notificationSettings => 'TRANSLATE_ME';
+
+  @override
+  String get myProfile => 'TRANSLATE_ME';
+
+  @override
+  String get revoke => 'TRANSLATE_ME';
 
   @override
   String get noBroadcastMessages => 'TRANSLATE_ME';
 
   @override
-  String errorCheckingPermissions(String error) {
+  String requestType(Object type) {
     return 'TRANSLATE_ME';
   }
 
   @override
-  String get mediaOptional => 'TRANSLATE_ME';
+  String get notifications => 'TRANSLATE_ME';
 
   @override
-  String get pickImage => 'TRANSLATE_ME';
+  String get details => 'TRANSLATE_ME';
 
   @override
-  String get pickVideo => 'TRANSLATE_ME';
+  String get cancelInvite => 'TRANSLATE_ME';
 
   @override
-  String get pollOptions => 'TRANSLATE_ME';
+  String get createNew => 'Create New';
 
   @override
-  String get targetingFilters => 'TRANSLATE_ME';
+  String get settings => 'Settings';
 
   @override
-  String get scheduling => 'TRANSLATE_ME';
+  String get playtimeReject => 'Reject';
 
   @override
-  String get scheduleForLater => 'TRANSLATE_ME';
+  String get errorLoadingProfile => 'TRANSLATE_ME';
 
   @override
-  String errorEstimatingRecipients(String error) {
+  String get edit => 'Edit';
+
+  @override
+  String get add => 'Add';
+
+  @override
+  String get playtimeGameApproved => 'Game approved';
+
+  @override
+  String get forgotPassword => 'Forgot Password?';
+
+  @override
+  String get familyDashboard => 'TRANSLATE_ME';
+
+  @override
+  String get loading => 'TRANSLATE_ME';
+
+  @override
+  String get quickActions => 'Quick Actions';
+
+  @override
+  String get playtimeTitle => 'Playtime';
+
+  @override
+  String get otpResentSuccessfully => 'TRANSLATE_ME';
+
+  @override
+  String errorCheckingPermissions(Object error) {
     return 'TRANSLATE_ME';
   }
-
-  @override
-  String errorPickingImage(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String errorPickingVideo(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get noPermissionForBroadcast => 'TRANSLATE_ME';
-
-  @override
-  String get messageSavedSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String errorSavingMessage(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get messageSentSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String errorSendingMessage(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String content(String content) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String type(String type) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String link(String link) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String status(String status) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String recipients(String count) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String opened(String count) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String clicked(String count) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String created(String date) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String scheduled(String date) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get organizations => 'TRANSLATE_ME';
-
-  @override
-  String get noOrganizations => 'TRANSLATE_ME';
-
-  @override
-  String get errorLoadingOrganizations => 'TRANSLATE_ME';
-
-  @override
-  String members(String count) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get users => 'TRANSLATE_ME';
-
-  @override
-  String get noUsers => 'TRANSLATE_ME';
-
-  @override
-  String get errorLoadingUsers => 'TRANSLATE_ME';
-
-  @override
-  String get changeRole => 'TRANSLATE_ME';
-
-  @override
-  String get totalAppointments => 'TRANSLATE_ME';
-
-  @override
-  String get completedAppointments => 'TRANSLATE_ME';
-
-  @override
-  String get revenue => 'TRANSLATE_ME';
-
-  @override
-  String get errorLoadingStats => 'TRANSLATE_ME';
-
-  @override
-  String appointment(String id) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String from(String name) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String phone(String number) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String noRouteDefined(String route) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get meetingDetails => 'TRANSLATE_ME';
-
-  @override
-  String meetingId(String id) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String creator(String id) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String context(String id) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String group(String id) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get requestPrivateSession => 'TRANSLATE_ME';
-
-  @override
-  String get privacyRequestSent => 'TRANSLATE_ME';
-
-  @override
-  String failedToSendPrivacyRequest(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String errorLoadingPrivacyRequests(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String requestType(String type) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String statusColon(String status) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String failedToActionPrivacyRequest(String action, String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get yes => 'TRANSLATE_ME';
-
-  @override
-  String get send => 'TRANSLATE_ME';
-
-  @override
-  String get permissions => 'TRANSLATE_ME';
-
-  @override
-  String permissionsFor(String childId) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String errorLoadingPermissions(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get none => 'TRANSLATE_ME';
-
-  @override
-  String get readOnly => 'TRANSLATE_ME';
-
-  @override
-  String get readWrite => 'TRANSLATE_ME';
-
-  @override
-  String permissionUpdated(String category, String newValue) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String failedToUpdatePermission(String error) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String invited(String date) {
-    return 'TRANSLATE_ME';
-  }
-
-  @override
-  String get adminBroadcast => 'TRANSLATE_ME';
-
-  @override
-  String get composeBroadcastMessage => 'TRANSLATE_ME';
-
-  @override
-  String get adminScreenTBD => 'TRANSLATE_ME';
-
-  @override
-  String get staffScreenTBD => 'TRANSLATE_ME';
 
   @override
   String get clientScreenTBD => 'TRANSLATE_ME';
 
   @override
-  String get ambassadorTitle => 'Veleposlanik';
+  String fcmToken(Object token) {
+    return 'TRANSLATE_ME';
+  }
 
   @override
-  String get ambassadorOnboardingTitle => 'Postanite Veleposlanik';
+  String get pickImage => 'TRANSLATE_ME';
 
   @override
-  String get ambassadorOnboardingSubtitle =>
-      'Pomozite nam da rastemo u vašem jeziku i regiji.';
+  String get previous => 'Previous';
 
   @override
-  String get ambassadorOnboardingButton => 'Započnite Sada';
+  String get noProfileFound => 'TRANSLATE_ME';
 
   @override
-  String get ambassadorDashboardTitle => 'Veleposlanik Dashboard';
+  String get noFamilyMembersYet => 'TRANSLATE_ME';
 
   @override
-  String get ambassadorDashboardSubtitle =>
-      'Pregled vaših statistika i aktivnosti';
+  String get mediaOptional => 'TRANSLATE_ME';
 
   @override
-  String get ambassadorDashboardChartLabel => 'Pozvani Korisnici Ovaj Tjedan';
+  String get messageSavedSuccessfully => 'TRANSLATE_ME';
 
   @override
-  String get REDACTED_TOKEN =>
-      'Preostala Mjesta Veleposlanika';
+  String get scheduledFor => 'Scheduled for';
 
   @override
-  String get REDACTED_TOKEN => 'Država i Jezik';
+  String get dashboard => 'TRANSLATE_ME';
 
   @override
-  String get ambassadorQuotaFull =>
-      'Kvota veleposlanika je puna u vašoj regiji.';
+  String get noPermissionForBroadcast => 'TRANSLATE_ME';
 
   @override
-  String get ambassadorQuotaAvailable => 'Mjesta veleposlanika dostupna!';
+  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
 
   @override
-  String get ambassadorStatusAssigned => 'Vi ste aktivan veleposlanik.';
+  String get inviteDetail => 'TRANSLATE_ME';
 
   @override
-  String get ambassadorStatusNotEligible =>
-      'Niste podobni za status veleposlanika.';
+  String scheduled(Object date) {
+    return 'TRANSLATE_ME';
+  }
 
   @override
-  String get ambassadorStatusWaiting => 'Čekanje dostupnosti mjesta...';
+  String failedToResendOtp(Object error) {
+    return 'TRANSLATE_ME';
+  }
 
   @override
-  String get ambassadorStatusRevoked => 'Vaš status veleposlanika je opozvan.';
+  String get scheduling => 'TRANSLATE_ME';
 
   @override
-  String get ambassadorNoticeAdultOnly =>
-      'Samo odrasli računi mogu postati veleposlanici.';
+  String errorSavingMessage(Object error) {
+    return 'TRANSLATE_ME';
+  }
 
   @override
-  String get ambassadorNoticeQuotaReached =>
-      'Kvota veleposlanika za vašu državu i jezik je dosegnuta.';
+  String get save => 'TRANSLATE_ME';
 
   @override
-  String get ambassadorNoticeAutoAssign =>
-      'Veleposlanstvo se automatski dodjeljuje kvalificiranim korisnicima.';
+  String get playtimeApprove => 'Approve';
+
+  @override
+  String get createYourFirstSession => 'Create your first session';
+
+  @override
+  String get playtimeGameRejected => 'Game rejected';
+
+  @override
+  String failedToRevokeAccess(Object error) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String get recentGames => 'Recent Games';
+
+  @override
+  String get customizeMessage => 'TRANSLATE_ME';
+
+  @override
+  String failedToCancelInvite(Object error) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String errorSendingMessage(Object error) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String get confirmPassword => 'Confirm Password';
+
+  @override
+  String errorLoadingPrivacyRequests(Object error) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String get connectedChildren => 'TRANSLATE_ME';
+
+  @override
+  String get share => 'Share';
+
+  @override
+  String get playtimeEnterGameName => 'Enter game name';
+
+  @override
+  String get pleaseLoginForFamilyFeatures => 'TRANSLATE_ME';
+
+  @override
+  String get myInvites => 'TRANSLATE_ME';
+
+  @override
+  String get createGame => 'Create Game';
+
+  @override
+  String get groupNameOptional => 'TRANSLATE_ME';
+
+  @override
+  String get playtimeNoSessions => 'No playtime sessions found.';
+
+  @override
+  String get adminScreenTBD => 'TRANSLATE_ME';
+
+  @override
+  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+
+  @override
+  String get close => 'TRANSLATE_ME';
+
+  @override
+  String get knownGroupDetected => 'TRANSLATE_ME';
+
+  @override
+  String get back => 'Back';
+
+  @override
+  String get playtimeChooseGame => 'Choose a game';
+
+  @override
+  String get managePermissions => 'TRANSLATE_ME';
+
+  @override
+  String get pollOptions => 'TRANSLATE_ME';
+
+  @override
+  String clicked(Object count) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String link(Object link) {
+    return 'TRANSLATE_ME';
+  }
+
+  @override
+  String get meetingReadyMessage => 'TRANSLATE_ME';
+
+  @override
+  String get pendingInvites => 'TRANSLATE_ME';
+
+  @override
+  String statusColon(Object status) {
+    return 'TRANSLATE_ME';
+  }
 }

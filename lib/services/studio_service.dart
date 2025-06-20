@@ -11,11 +11,12 @@ class StudioService {
     return snap.docs.map((d) => StaffMember.fromJson(d.data())).toList();
   }
 
-  Future<StaffAvailability> fetchAvailability(String staffId, DateTime date) async {
+  Future<StaffAvailability> fetchAvailability(
+      String staffId, DateTime date) async {
     final doc = await _firestore
         .collection('availability/$staffId/dates')
         .doc(date.toIso8601String())
         .get();
-    return StaffAvailability.fromJson(doc.data()!);
+    return StaffAvailability.fromJson(doc.data() as Map<String, dynamic>);
   }
 }

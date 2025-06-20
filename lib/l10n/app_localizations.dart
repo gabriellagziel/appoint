@@ -9,52 +9,51 @@ import 'app_localizations_am.dart';
 import 'app_localizations_ar.dart';
 import 'app_localizations_bg.dart';
 import 'app_localizations_bn.dart';
+import 'app_localizations_bs.dart';
+import 'app_localizations_ca.dart';
 import 'app_localizations_cs.dart';
+import 'app_localizations_cy.dart';
 import 'app_localizations_da.dart';
 import 'app_localizations_de.dart';
-import 'app_localizations_el.dart';
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
+import 'app_localizations_et.dart';
+import 'app_localizations_eu.dart';
 import 'app_localizations_fa.dart';
 import 'app_localizations_fi.dart';
+import 'app_localizations_fo.dart';
 import 'app_localizations_fr.dart';
-import 'app_localizations_gu.dart';
-import 'app_localizations_ha.dart';
-import 'app_localizations_he.dart';
+import 'app_localizations_ga.dart';
+import 'app_localizations_gl.dart';
 import 'app_localizations_hi.dart';
 import 'app_localizations_hr.dart';
 import 'app_localizations_hu.dart';
 import 'app_localizations_id.dart';
+import 'app_localizations_is.dart';
 import 'app_localizations_it.dart';
 import 'app_localizations_ja.dart';
-import 'app_localizations_kn.dart';
 import 'app_localizations_ko.dart';
 import 'app_localizations_lt.dart';
 import 'app_localizations_lv.dart';
-import 'app_localizations_mr.dart';
+import 'app_localizations_mk.dart';
 import 'app_localizations_ms.dart';
-import 'app_localizations_ne.dart';
+import 'app_localizations_mt.dart';
 import 'app_localizations_nl.dart';
 import 'app_localizations_no.dart';
 import 'app_localizations_pl.dart';
 import 'app_localizations_pt.dart';
 import 'app_localizations_ro.dart';
 import 'app_localizations_ru.dart';
-import 'app_localizations_si.dart';
 import 'app_localizations_sk.dart';
 import 'app_localizations_sl.dart';
+import 'app_localizations_sq.dart';
 import 'app_localizations_sr.dart';
 import 'app_localizations_sv.dart';
-import 'app_localizations_sw.dart';
-import 'app_localizations_ta.dart';
 import 'app_localizations_th.dart';
-import 'app_localizations_tl.dart';
 import 'app_localizations_tr.dart';
-import 'app_localizations_uk.dart';
 import 'app_localizations_ur.dart';
 import 'app_localizations_vi.dart';
 import 'app_localizations_zh.dart';
-import 'app_localizations_zu.dart';
 
 // ignore_for_file: type=lint
 
@@ -146,66 +145,58 @@ abstract class AppLocalizations {
     Locale('ar'),
     Locale('bg'),
     Locale('bn'),
+    Locale('bs'),
+    Locale('ca'),
     Locale('cs'),
+    Locale('cy'),
     Locale('da'),
     Locale('de'),
-    Locale('el'),
     Locale('en'),
     Locale('es'),
+    Locale('et'),
+    Locale('eu'),
     Locale('fa'),
     Locale('fi'),
+    Locale('fo'),
     Locale('fr'),
-    Locale('gu'),
-    Locale('ha'),
-    Locale('he'),
+    Locale('ga'),
+    Locale('gl'),
     Locale('hi'),
     Locale('hr'),
     Locale('hu'),
     Locale('id'),
+    Locale('is'),
     Locale('it'),
     Locale('ja'),
-    Locale('kn'),
     Locale('ko'),
     Locale('lt'),
     Locale('lv'),
-    Locale('mr'),
+    Locale('mk'),
     Locale('ms'),
-    Locale('ne'),
+    Locale('mt'),
     Locale('nl'),
     Locale('no'),
     Locale('pl'),
     Locale('pt'),
     Locale('ro'),
     Locale('ru'),
-    Locale('si'),
     Locale('sk'),
     Locale('sl'),
+    Locale('sq'),
     Locale('sr'),
     Locale('sv'),
-    Locale('sw'),
-    Locale('ta'),
     Locale('th'),
-    Locale('tl'),
     Locale('tr'),
-    Locale('uk'),
     Locale('ur'),
     Locale('vi'),
-    Locale('zh'),
-    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'),
-    Locale('zu')
+    Locale('zh')
   ];
 
-  /// The title of the application
+  /// Refresh button text
   ///
   /// In en, this message translates to:
-  /// **'Appoint'**
-  String get appTitle;
-
-  /// Welcome message
-  ///
-  /// In en, this message translates to:
-  /// **'Welcome'**
-  String get welcome;
+  /// **'Refresh'**
+  String get refresh;
 
   /// Home navigation label
   ///
@@ -213,281 +204,59 @@ abstract class AppLocalizations {
   /// **'Home'**
   String get home;
 
-  /// Menu navigation label
+  /// No sessions yet message
   ///
   /// In en, this message translates to:
-  /// **'Menu'**
-  String get menu;
+  /// **'No sessions yet'**
+  String get noSessionsYet;
 
-  /// Profile navigation label
+  /// OK button text
   ///
   /// In en, this message translates to:
-  /// **'Profile'**
-  String get profile;
+  /// **'OK'**
+  String get ok;
 
-  /// Sign out button label
+  /// Playtime landing choose mode message
   ///
   /// In en, this message translates to:
-  /// **'Sign Out'**
-  String get signOut;
+  /// **'Choose your play mode:'**
+  String get playtimeLandingChooseMode;
 
-  /// Login button label
+  /// Sign up button text
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Up'**
+  String get signUp;
+
+  /// Schedule message button
+  ///
+  /// In en, this message translates to:
+  /// **'Schedule Message'**
+  String get scheduleMessage;
+
+  /// Decline button
+  ///
+  /// In en, this message translates to:
+  /// **'Decline'**
+  String get decline;
+
+  /// Admin broadcast title
+  ///
+  /// In en, this message translates to:
+  /// **'Admin Broadcast'**
+  String get adminBroadcast;
+
+  /// Login button text
   ///
   /// In en, this message translates to:
   /// **'Login'**
   String get login;
 
-  /// Email field label
+  /// Choose friends label
   ///
   /// In en, this message translates to:
-  /// **'Email'**
-  String get email;
-
-  /// Password field label
-  ///
-  /// In en, this message translates to:
-  /// **'Password'**
-  String get password;
-
-  /// Sign in button label
-  ///
-  /// In en, this message translates to:
-  /// **'Sign In'**
-  String get signIn;
-
-  /// Book meeting button label
-  ///
-  /// In en, this message translates to:
-  /// **'Book a Meeting'**
-  String get bookMeeting;
-
-  /// Book appointment button label
-  ///
-  /// In en, this message translates to:
-  /// **'Book Appointment'**
-  String get bookAppointment;
-
-  /// Booking request label
-  ///
-  /// In en, this message translates to:
-  /// **'Booking Request'**
-  String get bookingRequest;
-
-  /// Confirm booking button label
-  ///
-  /// In en, this message translates to:
-  /// **'Confirm Booking'**
-  String get confirmBooking;
-
-  /// Chat booking label
-  ///
-  /// In en, this message translates to:
-  /// **'Chat Booking'**
-  String get chatBooking;
-
-  /// Book via chat button label
-  ///
-  /// In en, this message translates to:
-  /// **'Book via Chat'**
-  String get bookViaChat;
-
-  /// Submit booking button label
-  ///
-  /// In en, this message translates to:
-  /// **'Submit Booking'**
-  String get submitBooking;
-
-  /// Label for the next button
-  ///
-  /// In en, this message translates to:
-  /// **'Next'**
-  String get next;
-
-  /// Label for staff selection dropdown
-  ///
-  /// In en, this message translates to:
-  /// **'Select Staff'**
-  String get selectStaff;
-
-  /// Label for date picker
-  ///
-  /// In en, this message translates to:
-  /// **'Pick Date'**
-  String get pickDate;
-
-  /// Staff label
-  ///
-  /// In en, this message translates to:
-  /// **'Staff'**
-  String get staff;
-
-  /// Service label
-  ///
-  /// In en, this message translates to:
-  /// **'Service'**
-  String get service;
-
-  /// Date and time label
-  ///
-  /// In en, this message translates to:
-  /// **'Date & Time'**
-  String get dateTime;
-
-  /// Duration label with parameter
-  ///
-  /// In en, this message translates to:
-  /// **'Duration: {duration} minutes'**
-  String duration(String duration);
-
-  /// Not selected state
-  ///
-  /// In en, this message translates to:
-  /// **'Not Selected'**
-  String get notSelected;
-
-  /// Message shown when no time slots are available
-  ///
-  /// In en, this message translates to:
-  /// **'No slots available'**
-  String get noSlots;
-
-  /// Booking confirmed message
-  ///
-  /// In en, this message translates to:
-  /// **'Booking Confirmed'**
-  String get bookingConfirmed;
-
-  /// Failed to confirm booking message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to confirm booking'**
-  String get failedToConfirmBooking;
-
-  /// No bookings found message
-  ///
-  /// In en, this message translates to:
-  /// **'No bookings found'**
-  String get noBookingsFound;
-
-  /// Error loading bookings message
-  ///
-  /// In en, this message translates to:
-  /// **'Error loading bookings: {error}'**
-  String errorLoadingBookings(String error);
-
-  /// Label for WhatsApp share button
-  ///
-  /// In en, this message translates to:
-  /// **'Share on WhatsApp'**
-  String get shareOnWhatsApp;
-
-  /// Title for meeting invitation sharing section
-  ///
-  /// In en, this message translates to:
-  /// **'Share your meeting invitation:'**
-  String get shareMeetingInvitation;
-
-  /// Message shown in WhatsApp share dialog
-  ///
-  /// In en, this message translates to:
-  /// **'The meeting is ready! Would you like to send it to your group?'**
-  String get meetingReadyMessage;
-
-  /// Hint text for message customization
-  ///
-  /// In en, this message translates to:
-  /// **'Customize your message...'**
-  String get customizeMessage;
-
-  /// Label for group recognition checkbox
-  ///
-  /// In en, this message translates to:
-  /// **'Save group for future recognition'**
-  String get saveGroupForRecognition;
-
-  /// Label for group name input field
-  ///
-  /// In en, this message translates to:
-  /// **'Group Name (optional)'**
-  String get groupNameOptional;
-
-  /// Hint text for group name input
-  ///
-  /// In en, this message translates to:
-  /// **'Enter group name for recognition'**
-  String get enterGroupName;
-
-  /// Message shown when a known group is detected
-  ///
-  /// In en, this message translates to:
-  /// **'Known group detected'**
-  String get knownGroupDetected;
-
-  /// Success message when meeting is shared
-  ///
-  /// In en, this message translates to:
-  /// **'Meeting shared successfully!'**
-  String get meetingSharedSuccessfully;
-
-  /// Message shown after booking confirmation
-  ///
-  /// In en, this message translates to:
-  /// **'Booking confirmed! You can now share the invitation.'**
-  String get bookingConfirmedShare;
-
-  /// Default message for WhatsApp sharing
-  ///
-  /// In en, this message translates to:
-  /// **'Hey! I\'ve scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:'**
-  String get defaultShareMessage;
-
-  /// Dashboard label
-  ///
-  /// In en, this message translates to:
-  /// **'Dashboard'**
-  String get dashboard;
-
-  /// Business dashboard label
-  ///
-  /// In en, this message translates to:
-  /// **'Business Dashboard'**
-  String get businessDashboard;
-
-  /// My profile label
-  ///
-  /// In en, this message translates to:
-  /// **'My Profile'**
-  String get myProfile;
-
-  /// No profile found message
-  ///
-  /// In en, this message translates to:
-  /// **'No profile found'**
-  String get noProfileFound;
-
-  /// Error loading profile message
-  ///
-  /// In en, this message translates to:
-  /// **'Error loading profile'**
-  String get errorLoadingProfile;
-
-  /// My invites label
-  ///
-  /// In en, this message translates to:
-  /// **'My Invites'**
-  String get myInvites;
-
-  /// Invite detail label
-  ///
-  /// In en, this message translates to:
-  /// **'Invite Detail'**
-  String get inviteDetail;
-
-  /// Invite contact label
-  ///
-  /// In en, this message translates to:
-  /// **'Invite Contact'**
-  String get inviteContact;
+  /// **'Choose friends to invite'**
+  String get playtimeChooseFriends;
 
   /// No invites message
   ///
@@ -495,461 +264,35 @@ abstract class AppLocalizations {
   /// **'No invites'**
   String get noInvites;
 
-  /// Error loading invites message
+  /// Choose time label
   ///
   /// In en, this message translates to:
-  /// **'Error loading invites'**
-  String get errorLoadingInvites;
+  /// **'Choose a time'**
+  String get playtimeChooseTime;
 
-  /// Accept button label
+  /// Success message
   ///
   /// In en, this message translates to:
-  /// **'Accept'**
-  String get accept;
+  /// **'Success'**
+  String get success;
 
-  /// Decline button label
+  /// Undo button text
   ///
   /// In en, this message translates to:
-  /// **'Decline'**
-  String get decline;
+  /// **'Undo'**
+  String get undo;
 
-  /// Send invite button label
+  /// Opened status
   ///
   /// In en, this message translates to:
-  /// **'Send Invite'**
-  String get sendInvite;
+  /// **'Opened'**
+  String opened(Object count);
 
-  /// Name field label
+  /// Create virtual session button
   ///
   /// In en, this message translates to:
-  /// **'Name'**
-  String get name;
-
-  /// Phone number field label
-  ///
-  /// In en, this message translates to:
-  /// **'Phone Number'**
-  String get phoneNumber;
-
-  /// Optional email field label
-  ///
-  /// In en, this message translates to:
-  /// **'Email (optional)'**
-  String get emailOptional;
-
-  /// Requires installation fallback message
-  ///
-  /// In en, this message translates to:
-  /// **'Requires installation'**
-  String get requiresInstallFallback;
-
-  /// Notifications label
-  ///
-  /// In en, this message translates to:
-  /// **'Notifications'**
-  String get notifications;
-
-  /// Notification settings label
-  ///
-  /// In en, this message translates to:
-  /// **'Notification Settings'**
-  String get notificationSettings;
-
-  /// Enable notifications label
-  ///
-  /// In en, this message translates to:
-  /// **'Enable Notifications'**
-  String get enableNotifications;
-
-  /// Error fetching token message
-  ///
-  /// In en, this message translates to:
-  /// **'Error fetching token'**
-  String get errorFetchingToken;
-
-  /// FCM token display
-  ///
-  /// In en, this message translates to:
-  /// **'FCM Token: {token}'**
-  String fcmToken(String token);
-
-  /// Family dashboard label
-  ///
-  /// In en, this message translates to:
-  /// **'Family Dashboard'**
-  String get familyDashboard;
-
-  /// Please login for family features message
-  ///
-  /// In en, this message translates to:
-  /// **'Please login to access family features'**
-  String get pleaseLoginForFamilyFeatures;
-
-  /// Family members label
-  ///
-  /// In en, this message translates to:
-  /// **'Family Members'**
-  String get familyMembers;
-
-  /// Invite button label
-  ///
-  /// In en, this message translates to:
-  /// **'Invite'**
-  String get invite;
-
-  /// Pending invites label
-  ///
-  /// In en, this message translates to:
-  /// **'Pending Invites'**
-  String get pendingInvites;
-
-  /// Connected children label
-  ///
-  /// In en, this message translates to:
-  /// **'Connected Children'**
-  String get connectedChildren;
-
-  /// No family members yet message
-  ///
-  /// In en, this message translates to:
-  /// **'No family members yet. Invite someone to get started!'**
-  String get noFamilyMembersYet;
-
-  /// Error loading family links message
-  ///
-  /// In en, this message translates to:
-  /// **'Error loading family links: {error}'**
-  String errorLoadingFamilyLinks(String error);
-
-  /// Invite child button label
-  ///
-  /// In en, this message translates to:
-  /// **'Invite Child'**
-  String get inviteChild;
-
-  /// Manage permissions label
-  ///
-  /// In en, this message translates to:
-  /// **'Manage Permissions'**
-  String get managePermissions;
-
-  /// Remove child button label
-  ///
-  /// In en, this message translates to:
-  /// **'Remove Child'**
-  String get removeChild;
-
-  /// Loading message
-  ///
-  /// In en, this message translates to:
-  /// **'Loading...'**
-  String get loading;
-
-  /// Child email field label
-  ///
-  /// In en, this message translates to:
-  /// **'Child Email'**
-  String get childEmail;
-
-  /// Child email or phone field label
-  ///
-  /// In en, this message translates to:
-  /// **'Child Email or Phone'**
-  String get childEmailOrPhone;
-
-  /// Enter child email hint
-  ///
-  /// In en, this message translates to:
-  /// **'Enter child email'**
-  String get enterChildEmail;
-
-  /// OTP code field label
-  ///
-  /// In en, this message translates to:
-  /// **'OTP Code'**
-  String get otpCode;
-
-  /// Enter OTP hint
-  ///
-  /// In en, this message translates to:
-  /// **'Enter OTP'**
-  String get enterOtp;
-
-  /// Verify button label
-  ///
-  /// In en, this message translates to:
-  /// **'Verify'**
-  String get verify;
-
-  /// OTP resent successfully message
-  ///
-  /// In en, this message translates to:
-  /// **'OTP resent successfully!'**
-  String get otpResentSuccessfully;
-
-  /// Failed to resend OTP message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to resend OTP: {error}'**
-  String failedToResendOtp(String error);
-
-  /// Child linked successfully message
-  ///
-  /// In en, this message translates to:
-  /// **'Child linked successfully!'**
-  String get childLinkedSuccessfully;
-
-  /// Invitation sent successfully message
-  ///
-  /// In en, this message translates to:
-  /// **'Invitation sent successfully!'**
-  String get invitationSentSuccessfully;
-
-  /// Failed to send invitation message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to send invitation: {error}'**
-  String failedToSendInvitation(String error);
-
-  /// Please enter valid email message
-  ///
-  /// In en, this message translates to:
-  /// **'Please enter a valid email'**
-  String get pleaseEnterValidEmail;
-
-  /// Please enter valid email or phone message
-  ///
-  /// In en, this message translates to:
-  /// **'Please enter a valid email or phone'**
-  String get pleaseEnterValidEmailOrPhone;
-
-  /// Invalid code message
-  ///
-  /// In en, this message translates to:
-  /// **'Invalid code, please try again'**
-  String get invalidCode;
-
-  /// Cancel invite button label
-  ///
-  /// In en, this message translates to:
-  /// **'Cancel Invite'**
-  String get cancelInvite;
-
-  /// Cancel invite confirmation message
-  ///
-  /// In en, this message translates to:
-  /// **'Are you sure you want to cancel this invite?'**
-  String get cancelInviteConfirmation;
-
-  /// No button label
-  ///
-  /// In en, this message translates to:
-  /// **'No'**
-  String get no;
-
-  /// Yes cancel button label
-  ///
-  /// In en, this message translates to:
-  /// **'Yes, Cancel'**
-  String get yesCancel;
-
-  /// Invite cancelled successfully message
-  ///
-  /// In en, this message translates to:
-  /// **'Invite cancelled successfully!'**
-  String get inviteCancelledSuccessfully;
-
-  /// Failed to cancel invite message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to cancel invite: {error}'**
-  String failedToCancelInvite(String error);
-
-  /// Revoke access button label
-  ///
-  /// In en, this message translates to:
-  /// **'Revoke Access'**
-  String get revokeAccess;
-
-  /// Revoke access confirmation message
-  ///
-  /// In en, this message translates to:
-  /// **'Are you sure you want to revoke access for this child? This action cannot be undone.'**
-  String get revokeAccessConfirmation;
-
-  /// Revoke button label
-  ///
-  /// In en, this message translates to:
-  /// **'Revoke'**
-  String get revoke;
-
-  /// Access revoked successfully message
-  ///
-  /// In en, this message translates to:
-  /// **'Access revoked successfully!'**
-  String get accessRevokedSuccessfully;
-
-  /// Failed to revoke access message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to revoke access: {error}'**
-  String failedToRevokeAccess(String error);
-
-  /// Grant consent button label
-  ///
-  /// In en, this message translates to:
-  /// **'Grant Consent'**
-  String get grantConsent;
-
-  /// Revoke consent button label
-  ///
-  /// In en, this message translates to:
-  /// **'Revoke Consent'**
-  String get revokeConsent;
-
-  /// Consent granted successfully message
-  ///
-  /// In en, this message translates to:
-  /// **'Consent granted successfully!'**
-  String get consentGrantedSuccessfully;
-
-  /// Consent revoked successfully message
-  ///
-  /// In en, this message translates to:
-  /// **'Consent revoked successfully!'**
-  String get consentRevokedSuccessfully;
-
-  /// Failed to update consent message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to update consent: {error}'**
-  String failedToUpdateConsent(String error);
-
-  /// Checking permissions message
-  ///
-  /// In en, this message translates to:
-  /// **'Checking permissions...'**
-  String get checkingPermissions;
-
-  /// Cancel button label
-  ///
-  /// In en, this message translates to:
-  /// **'Cancel'**
-  String get cancel;
-
-  /// Close button label
-  ///
-  /// In en, this message translates to:
-  /// **'Close'**
-  String get close;
-
-  /// Save button label
-  ///
-  /// In en, this message translates to:
-  /// **'Save'**
-  String get save;
-
-  /// Send now button label
-  ///
-  /// In en, this message translates to:
-  /// **'Send Now'**
-  String get sendNow;
-
-  /// Details button label
-  ///
-  /// In en, this message translates to:
-  /// **'Details'**
-  String get details;
-
-  /// No broadcast messages message
-  ///
-  /// In en, this message translates to:
-  /// **'No broadcast messages yet'**
-  String get noBroadcastMessages;
-
-  /// Error checking permissions message
-  ///
-  /// In en, this message translates to:
-  /// **'Error checking permissions: {error}'**
-  String errorCheckingPermissions(String error);
-
-  /// Media optional section title
-  ///
-  /// In en, this message translates to:
-  /// **'Media (Optional)'**
-  String get mediaOptional;
-
-  /// Pick image button label
-  ///
-  /// In en, this message translates to:
-  /// **'Pick Image'**
-  String get pickImage;
-
-  /// Pick video button label
-  ///
-  /// In en, this message translates to:
-  /// **'Pick Video'**
-  String get pickVideo;
-
-  /// Poll options label
-  ///
-  /// In en, this message translates to:
-  /// **'Poll Options:'**
-  String get pollOptions;
-
-  /// Targeting filters section title
-  ///
-  /// In en, this message translates to:
-  /// **'Targeting Filters'**
-  String get targetingFilters;
-
-  /// Scheduling section title
-  ///
-  /// In en, this message translates to:
-  /// **'Scheduling'**
-  String get scheduling;
-
-  /// Schedule for later option
-  ///
-  /// In en, this message translates to:
-  /// **'Schedule for later'**
-  String get scheduleForLater;
-
-  /// Error estimating recipients message
-  ///
-  /// In en, this message translates to:
-  /// **'Error estimating recipients: {error}'**
-  String errorEstimatingRecipients(String error);
-
-  /// Error picking image message
-  ///
-  /// In en, this message translates to:
-  /// **'Error picking image: {error}'**
-  String errorPickingImage(String error);
-
-  /// Error picking video message
-  ///
-  /// In en, this message translates to:
-  /// **'Error picking video: {error}'**
-  String errorPickingVideo(String error);
-
-  /// No permission for broadcast message
-  ///
-  /// In en, this message translates to:
-  /// **'You do not have permission to create broadcast messages.'**
-  String get noPermissionForBroadcast;
-
-  /// Message saved successfully message
-  ///
-  /// In en, this message translates to:
-  /// **'Message saved successfully'**
-  String get messageSavedSuccessfully;
-
-  /// Error saving message
-  ///
-  /// In en, this message translates to:
-  /// **'Error saving message: {error}'**
-  String errorSavingMessage(String error);
+  /// **'Create Virtual Session'**
+  String get createVirtualSession;
 
   /// Message sent successfully message
   ///
@@ -957,437 +300,887 @@ abstract class AppLocalizations {
   /// **'Message sent successfully'**
   String get messageSentSuccessfully;
 
-  /// Error sending message
+  /// Redo button text
   ///
   /// In en, this message translates to:
-  /// **'Error sending message: {error}'**
-  String errorSendingMessage(String error);
+  /// **'Redo'**
+  String get redo;
 
-  /// Content display
+  /// Next button text
   ///
   /// In en, this message translates to:
-  /// **'Content: {content}'**
-  String content(String content);
+  /// **'Next'**
+  String get next;
 
-  /// Type display
+  /// Search placeholder text
   ///
   /// In en, this message translates to:
-  /// **'Type: {type}'**
-  String type(String type);
+  /// **'Search'**
+  String get search;
 
-  /// Link display
+  /// Cancel invite confirmation message
   ///
   /// In en, this message translates to:
-  /// **'Link: {link}'**
-  String link(String link);
+  /// **'Are you sure you want to cancel this invite?'**
+  String get cancelInviteConfirmation;
 
-  /// Status display
+  /// Created status
   ///
   /// In en, this message translates to:
-  /// **'Status: {status}'**
-  String status(String status);
+  /// **'Created'**
+  String created(Object date);
 
-  /// Recipients display
+  /// Revoke access button
   ///
   /// In en, this message translates to:
-  /// **'Recipients: {count}'**
-  String recipients(String count);
+  /// **'Revoke Access'**
+  String get revokeAccess;
 
-  /// Opened count display
+  /// Save group for recognition label
   ///
   /// In en, this message translates to:
-  /// **'Opened: {count}'**
-  String opened(String count);
+  /// **'Save Group for Recognition'**
+  String get saveGroupForRecognition;
 
-  /// Clicked count display
+  /// Live playtime scheduled message
   ///
   /// In en, this message translates to:
-  /// **'Clicked: {count}'**
-  String clicked(String count);
+  /// **'Live playtime scheduled!'**
+  String get playtimeLiveScheduled;
 
-  /// Created date display
+  /// Revoke access confirmation message
   ///
   /// In en, this message translates to:
-  /// **'Created: {date}'**
-  String created(String date);
+  /// **'Are you sure you want to revoke access?'**
+  String get revokeAccessConfirmation;
 
-  /// Scheduled date display
+  /// Download button text
   ///
   /// In en, this message translates to:
-  /// **'Scheduled: {date}'**
-  String scheduled(String date);
+  /// **'Download'**
+  String get download;
 
-  /// Organizations screen title
+  /// Password field label
   ///
   /// In en, this message translates to:
-  /// **'Organizations'**
-  String get organizations;
+  /// **'Password'**
+  String get password;
 
-  /// No organizations message
+  /// Error loading family links message
   ///
   /// In en, this message translates to:
-  /// **'No organizations'**
-  String get noOrganizations;
+  /// **'Error loading family links'**
+  String errorLoadingFamilyLinks(Object error);
 
-  /// Error loading organizations message
+  /// Cancel button text
   ///
   /// In en, this message translates to:
-  /// **'Error loading organizations'**
-  String get errorLoadingOrganizations;
+  /// **'Cancel'**
+  String get cancel;
 
-  /// Members count display
+  /// Create button
   ///
   /// In en, this message translates to:
-  /// **'{count} members'**
-  String members(String count);
-
-  /// Users screen title
-  ///
-  /// In en, this message translates to:
-  /// **'Users'**
-  String get users;
-
-  /// No users message
-  ///
-  /// In en, this message translates to:
-  /// **'No users'**
-  String get noUsers;
-
-  /// Error loading users message
-  ///
-  /// In en, this message translates to:
-  /// **'Error loading users'**
-  String get errorLoadingUsers;
-
-  /// Change role button label
-  ///
-  /// In en, this message translates to:
-  /// **'Change Role'**
-  String get changeRole;
-
-  /// Total appointments label
-  ///
-  /// In en, this message translates to:
-  /// **'Total Appointments'**
-  String get totalAppointments;
-
-  /// Completed appointments label
-  ///
-  /// In en, this message translates to:
-  /// **'Completed Appointments'**
-  String get completedAppointments;
-
-  /// Revenue label
-  ///
-  /// In en, this message translates to:
-  /// **'Revenue'**
-  String get revenue;
-
-  /// Error loading stats message
-  ///
-  /// In en, this message translates to:
-  /// **'Error loading stats'**
-  String get errorLoadingStats;
-
-  /// Appointment display
-  ///
-  /// In en, this message translates to:
-  /// **'Appointment: {id}'**
-  String appointment(String id);
-
-  /// From display
-  ///
-  /// In en, this message translates to:
-  /// **'From: {name}'**
-  String from(String name);
-
-  /// Phone display
-  ///
-  /// In en, this message translates to:
-  /// **'Phone: {number}'**
-  String phone(String number);
-
-  /// No route defined message
-  ///
-  /// In en, this message translates to:
-  /// **'No route defined for {route}'**
-  String noRouteDefined(String route);
-
-  /// Meeting details title
-  ///
-  /// In en, this message translates to:
-  /// **'Meeting Details'**
-  String get meetingDetails;
-
-  /// Meeting ID display
-  ///
-  /// In en, this message translates to:
-  /// **'Meeting ID: {id}'**
-  String meetingId(String id);
-
-  /// Creator display
-  ///
-  /// In en, this message translates to:
-  /// **'Creator: {id}'**
-  String creator(String id);
-
-  /// Context display
-  ///
-  /// In en, this message translates to:
-  /// **'Context: {id}'**
-  String context(String id);
-
-  /// Group display
-  ///
-  /// In en, this message translates to:
-  /// **'Group: {id}'**
-  String group(String id);
-
-  /// Request private session button label
-  ///
-  /// In en, this message translates to:
-  /// **'Request Private Session'**
-  String get requestPrivateSession;
-
-  /// Privacy request sent message
-  ///
-  /// In en, this message translates to:
-  /// **'Privacy request sent to your parents!'**
-  String get privacyRequestSent;
-
-  /// Failed to send privacy request message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to send privacy request: {error}'**
-  String failedToSendPrivacyRequest(String error);
-
-  /// Error loading privacy requests message
-  ///
-  /// In en, this message translates to:
-  /// **'Error loading privacy requests: {error}'**
-  String errorLoadingPrivacyRequests(String error);
-
-  /// Request type display
-  ///
-  /// In en, this message translates to:
-  /// **'{type} Request'**
-  String requestType(String type);
-
-  /// Status with colon display
-  ///
-  /// In en, this message translates to:
-  /// **'Status: {status}'**
-  String statusColon(String status);
+  /// **'Create'**
+  String get playtimeCreate;
 
   /// Failed to action privacy request message
   ///
   /// In en, this message translates to:
-  /// **'Failed to {action} privacy request: {error}'**
-  String failedToActionPrivacyRequest(String action, String error);
+  /// **'Failed to action privacy request'**
+  String failedToActionPrivacyRequest(Object action, Object error);
 
-  /// Yes button label
+  /// The title of the application
+  ///
+  /// In en, this message translates to:
+  /// **'APP-OINT'**
+  String get appTitle;
+
+  /// Accept button
+  ///
+  /// In en, this message translates to:
+  /// **'Accept'**
+  String get accept;
+
+  /// Virtual play mode label
+  ///
+  /// In en, this message translates to:
+  /// **'Virtual Play'**
+  String get playtimeModeVirtual;
+
+  /// Playtime description
+  ///
+  /// In en, this message translates to:
+  /// **'Enjoy live or virtual games with your friends!'**
+  String get playtimeDescription;
+
+  /// Delete button text
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get delete;
+
+  /// Virtual playtime started message
+  ///
+  /// In en, this message translates to:
+  /// **'Virtual playtime started!'**
+  String get playtimeVirtualStarted;
+
+  /// Create your first game message
+  ///
+  /// In en, this message translates to:
+  /// **'Create your first game'**
+  String get createYourFirstGame;
+
+  /// Participants label
+  ///
+  /// In en, this message translates to:
+  /// **'Participants'**
+  String get participants;
+
+  /// Recipients label
+  ///
+  /// In en, this message translates to:
+  /// **'Recipients'**
+  String recipients(Object count);
+
+  /// No search results message
+  ///
+  /// In en, this message translates to:
+  /// **'No results found'**
+  String get noResults;
+
+  /// Yes button text
   ///
   /// In en, this message translates to:
   /// **'Yes'**
   String get yes;
 
-  /// Send button label
+  /// Invite button
   ///
   /// In en, this message translates to:
-  /// **'Send'**
-  String get send;
+  /// **'Invite'**
+  String get invite;
 
-  /// Permissions label
+  /// Live play mode label
   ///
   /// In en, this message translates to:
-  /// **'Permissions'**
-  String get permissions;
+  /// **'Live Play'**
+  String get playtimeModeLive;
 
-  /// Permissions for child label
+  /// Done button text
   ///
   /// In en, this message translates to:
-  /// **'Permissions - {childId}'**
-  String permissionsFor(String childId);
+  /// **'Done'**
+  String get done;
 
-  /// Error loading permissions message
+  /// Default share message
   ///
   /// In en, this message translates to:
-  /// **'Error loading permissions: {error}'**
-  String errorLoadingPermissions(String error);
+  /// **'Let\'s meet via Appoint!'**
+  String get defaultShareMessage;
 
-  /// None option
+  /// No button text
   ///
   /// In en, this message translates to:
-  /// **'None'**
-  String get none;
+  /// **'No'**
+  String get no;
 
-  /// Read only option
+  /// Playtime hub title
   ///
   /// In en, this message translates to:
-  /// **'Read Only'**
-  String get readOnly;
+  /// **'Playtime Hub'**
+  String get playtimeHub;
 
-  /// Read and write option
+  /// Error message
   ///
   /// In en, this message translates to:
-  /// **'Read & Write'**
-  String get readWrite;
+  /// **'Error'**
+  String get error;
 
-  /// Permission updated message
+  /// Create live session button
   ///
   /// In en, this message translates to:
-  /// **'Permission {category} updated to {newValue}'**
-  String permissionUpdated(String category, String newValue);
+  /// **'Create Live Session'**
+  String get createLiveSession;
 
-  /// Failed to update permission message
+  /// Enable notifications label
   ///
   /// In en, this message translates to:
-  /// **'Failed to update permission: {error}'**
-  String failedToUpdatePermission(String error);
+  /// **'Enable Notifications'**
+  String get enableNotifications;
 
-  /// Invited date display
+  /// Invited status
   ///
   /// In en, this message translates to:
-  /// **'Invited: {date}'**
-  String invited(String date);
+  /// **'Invited'**
+  String invited(Object date);
 
-  /// Admin broadcast screen title
+  /// Content label
   ///
   /// In en, this message translates to:
-  /// **'Admin Broadcast'**
-  String get adminBroadcast;
+  /// **'Content'**
+  String content(Object content);
 
-  /// Compose broadcast message dialog title
+  /// Meeting shared successfully message
+  ///
+  /// In en, this message translates to:
+  /// **'Meeting shared successfully'**
+  String get meetingSharedSuccessfully;
+
+  /// Welcome to playtime message
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to Playtime'**
+  String get welcomeToPlaytime;
+
+  /// View all button
+  ///
+  /// In en, this message translates to:
+  /// **'View All'**
+  String get viewAll;
+
+  /// Virtual play label
+  ///
+  /// In en, this message translates to:
+  /// **'Virtual Play'**
+  String get playtimeVirtual;
+
+  /// Staff screen TBD message
+  ///
+  /// In en, this message translates to:
+  /// **'Staff screen coming soon'**
+  String get staffScreenTBD;
+
+  /// Cut button text
+  ///
+  /// In en, this message translates to:
+  /// **'Cut'**
+  String get cut;
+
+  /// Invite cancelled successfully message
+  ///
+  /// In en, this message translates to:
+  /// **'Invite cancelled successfully'**
+  String get inviteCancelledSuccessfully;
+
+  /// Retry button text
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get retry;
+
+  /// Compose broadcast message title
   ///
   /// In en, this message translates to:
   /// **'Compose Broadcast Message'**
   String get composeBroadcastMessage;
 
-  /// Admin screen placeholder
+  /// Send now button
   ///
   /// In en, this message translates to:
-  /// **'Admin Screen - To Be Developed'**
-  String get adminScreenTBD;
+  /// **'Send Now'**
+  String get sendNow;
 
-  /// Staff screen placeholder
+  /// No games yet message
   ///
   /// In en, this message translates to:
-  /// **'Staff Screen - To Be Developed'**
-  String get staffScreenTBD;
+  /// **'No games yet'**
+  String get noGamesYet;
 
-  /// Client screen placeholder
+  /// Select button text
   ///
   /// In en, this message translates to:
-  /// **'Client Screen - To Be Developed'**
+  /// **'Select'**
+  String get select;
+
+  /// About navigation label
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get about;
+
+  /// Choose button text
+  ///
+  /// In en, this message translates to:
+  /// **'Choose'**
+  String get choose;
+
+  /// Profile navigation label
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get profile;
+
+  /// Remove child button
+  ///
+  /// In en, this message translates to:
+  /// **'Remove Child'**
+  String get removeChild;
+
+  /// Status label
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String status(Object status);
+
+  /// Logout button text
+  ///
+  /// In en, this message translates to:
+  /// **'Logout'**
+  String get logout;
+
+  /// Paste button text
+  ///
+  /// In en, this message translates to:
+  /// **'Paste'**
+  String get paste;
+
+  /// Welcome message
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome'**
+  String get welcome;
+
+  /// Create playtime session button
+  ///
+  /// In en, this message translates to:
+  /// **'Create a Playtime Session'**
+  String get playtimeCreateSession;
+
+  /// Family members label
+  ///
+  /// In en, this message translates to:
+  /// **'Family Members'**
+  String get familyMembers;
+
+  /// Upload button text
+  ///
+  /// In en, this message translates to:
+  /// **'Upload'**
+  String get upload;
+
+  /// Upcoming sessions label
+  ///
+  /// In en, this message translates to:
+  /// **'Upcoming Sessions'**
+  String get upcomingSessions;
+
+  /// Enter group name placeholder
+  ///
+  /// In en, this message translates to:
+  /// **'Enter group name'**
+  String get enterGroupName;
+
+  /// Confirm button text
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm'**
+  String get confirm;
+
+  /// Live play label
+  ///
+  /// In en, this message translates to:
+  /// **'Live Play'**
+  String get playtimeLive;
+
+  /// Error loading invites message
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading invites'**
+  String get errorLoadingInvites;
+
+  /// Targeting filters label
+  ///
+  /// In en, this message translates to:
+  /// **'Targeting Filters'**
+  String get targetingFilters;
+
+  /// Pick video button
+  ///
+  /// In en, this message translates to:
+  /// **'Pick Video'**
+  String get pickVideo;
+
+  /// Game deleted message
+  ///
+  /// In en, this message translates to:
+  /// **'Game deleted'**
+  String get playtimeGameDeleted;
+
+  /// Schedule for later button
+  ///
+  /// In en, this message translates to:
+  /// **'Schedule for Later'**
+  String get scheduleForLater;
+
+  /// Access revoked successfully message
+  ///
+  /// In en, this message translates to:
+  /// **'Access revoked successfully'**
+  String get accessRevokedSuccessfully;
+
+  /// Type label
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String type(Object type);
+
+  /// Checking permissions message
+  ///
+  /// In en, this message translates to:
+  /// **'Checking permissions...'**
+  String get checkingPermissions;
+
+  /// Copy button text
+  ///
+  /// In en, this message translates to:
+  /// **'Copy'**
+  String get copy;
+
+  /// Yes cancel button
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, Cancel'**
+  String get yesCancel;
+
+  /// Email field label
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get email;
+
+  /// Share on WhatsApp button
+  ///
+  /// In en, this message translates to:
+  /// **'Share on WhatsApp'**
+  String get shareOnWhatsApp;
+
+  /// Notification settings title
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Settings'**
+  String get notificationSettings;
+
+  /// My profile title
+  ///
+  /// In en, this message translates to:
+  /// **'My Profile'**
+  String get myProfile;
+
+  /// Revoke button
+  ///
+  /// In en, this message translates to:
+  /// **'Revoke'**
+  String get revoke;
+
+  /// No broadcast messages message
+  ///
+  /// In en, this message translates to:
+  /// **'No messages yet'**
+  String get noBroadcastMessages;
+
+  /// Request type label
+  ///
+  /// In en, this message translates to:
+  /// **'Request Type'**
+  String requestType(Object type);
+
+  /// Notifications title
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications'**
+  String get notifications;
+
+  /// Details label
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get details;
+
+  /// Cancel invite button
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel Invite'**
+  String get cancelInvite;
+
+  /// Create new button
+  ///
+  /// In en, this message translates to:
+  /// **'Create New'**
+  String get createNew;
+
+  /// Settings navigation label
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// Playtime reject button
+  ///
+  /// In en, this message translates to:
+  /// **'Reject'**
+  String get playtimeReject;
+
+  /// Error loading profile message
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading profile'**
+  String get errorLoadingProfile;
+
+  /// Edit button text
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get edit;
+
+  /// Add button text
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get add;
+
+  /// Game approved message
+  ///
+  /// In en, this message translates to:
+  /// **'Game approved'**
+  String get playtimeGameApproved;
+
+  /// Forgot password link text
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot Password?'**
+  String get forgotPassword;
+
+  /// Family dashboard title
+  ///
+  /// In en, this message translates to:
+  /// **'Family Dashboard'**
+  String get familyDashboard;
+
+  /// Loading message
+  ///
+  /// In en, this message translates to:
+  /// **'Loading...'**
+  String get loading;
+
+  /// Quick actions label
+  ///
+  /// In en, this message translates to:
+  /// **'Quick Actions'**
+  String get quickActions;
+
+  /// Playtime title
+  ///
+  /// In en, this message translates to:
+  /// **'Playtime'**
+  String get playtimeTitle;
+
+  /// OTP resent successfully message
+  ///
+  /// In en, this message translates to:
+  /// **'OTP resent successfully'**
+  String get otpResentSuccessfully;
+
+  /// Error checking permissions message
+  ///
+  /// In en, this message translates to:
+  /// **'Error checking permissions'**
+  String errorCheckingPermissions(Object error);
+
+  /// Client screen TBD message
+  ///
+  /// In en, this message translates to:
+  /// **'Client screen coming soon'**
   String get clientScreenTBD;
 
-  /// No description provided for @ambassadorTitle.
+  /// FCM token label
   ///
   /// In en, this message translates to:
-  /// **'Global Ambassador'**
-  String get ambassadorTitle;
+  /// **'FCM Token'**
+  String fcmToken(Object token);
 
-  /// No description provided for @ambassadorOnboardingTitle.
+  /// Pick image button
   ///
   /// In en, this message translates to:
-  /// **'Become a Voice for Your Country'**
-  String get ambassadorOnboardingTitle;
+  /// **'Pick Image'**
+  String get pickImage;
 
-  /// No description provided for @ambassadorOnboardingSubtitle.
+  /// Previous button text
   ///
   /// In en, this message translates to:
-  /// **'Represent your language and help us grow'**
-  String get ambassadorOnboardingSubtitle;
+  /// **'Previous'**
+  String get previous;
 
-  /// No description provided for @ambassadorOnboardingButton.
+  /// No profile found message
   ///
   /// In en, this message translates to:
-  /// **'Start Now'**
-  String get ambassadorOnboardingButton;
+  /// **'No profile found'**
+  String get noProfileFound;
 
-  /// No description provided for @ambassadorDashboardTitle.
+  /// No family members yet message
   ///
   /// In en, this message translates to:
-  /// **'Ambassador Dashboard'**
-  String get ambassadorDashboardTitle;
+  /// **'No family members yet'**
+  String get noFamilyMembersYet;
 
-  /// No description provided for @ambassadorDashboardSubtitle.
+  /// Media optional label
   ///
   /// In en, this message translates to:
-  /// **'Your community impact at a glance'**
-  String get ambassadorDashboardSubtitle;
+  /// **'Media (Optional)'**
+  String get mediaOptional;
 
-  /// No description provided for @ambassadorDashboardChartLabel.
+  /// Message saved successfully message
   ///
   /// In en, this message translates to:
-  /// **'Users joined via your language'**
-  String get ambassadorDashboardChartLabel;
+  /// **'Message saved successfully'**
+  String get messageSavedSuccessfully;
 
-  /// No description provided for @REDACTED_TOKEN.
+  /// Scheduled for label
   ///
   /// In en, this message translates to:
-  /// **'Remaining Slots'**
-  String get REDACTED_TOKEN;
+  /// **'Scheduled for'**
+  String get scheduledFor;
 
-  /// No description provided for @REDACTED_TOKEN.
+  /// Dashboard title
   ///
   /// In en, this message translates to:
-  /// **'Country / Language'**
-  String get REDACTED_TOKEN;
+  /// **'Dashboard'**
+  String get dashboard;
 
-  /// No description provided for @ambassadorQuotaFull.
+  /// No permission for broadcast message
   ///
   /// In en, this message translates to:
-  /// **'All ambassador slots are currently filled.'**
-  String get ambassadorQuotaFull;
+  /// **'No permission for broadcast'**
+  String get noPermissionForBroadcast;
 
-  /// No description provided for @ambassadorQuotaAvailable.
+  /// Playtime admin panel title
   ///
   /// In en, this message translates to:
-  /// **'Slots Available'**
-  String get ambassadorQuotaAvailable;
+  /// **'Playtime Games – Admin'**
+  String get playtimeAdminPanelTitle;
 
-  /// No description provided for @ambassadorStatusAssigned.
+  /// Invite detail title
   ///
   /// In en, this message translates to:
-  /// **'You are an official ambassador!'**
-  String get ambassadorStatusAssigned;
+  /// **'Invite Details'**
+  String get inviteDetail;
 
-  /// No description provided for @ambassadorStatusNotEligible.
+  /// Scheduled status
   ///
   /// In en, this message translates to:
-  /// **'You are not eligible for ambassador status.'**
-  String get ambassadorStatusNotEligible;
+  /// **'Scheduled'**
+  String scheduled(Object date);
 
-  /// No description provided for @ambassadorStatusWaiting.
+  /// Failed to resend OTP message
   ///
   /// In en, this message translates to:
-  /// **'Waiting for assignment...'**
-  String get ambassadorStatusWaiting;
+  /// **'Failed to resend OTP'**
+  String failedToResendOtp(Object error);
 
-  /// No description provided for @ambassadorStatusRevoked.
+  /// Scheduling label
   ///
   /// In en, this message translates to:
-  /// **'Your ambassador status was revoked.'**
-  String get ambassadorStatusRevoked;
+  /// **'Scheduling'**
+  String get scheduling;
 
-  /// No description provided for @ambassadorNoticeAdultOnly.
+  /// Error saving message message
   ///
   /// In en, this message translates to:
-  /// **'Only adults can become ambassadors.'**
-  String get ambassadorNoticeAdultOnly;
+  /// **'Error saving message'**
+  String errorSavingMessage(Object error);
 
-  /// No description provided for @ambassadorNoticeQuotaReached.
+  /// Save button text
   ///
   /// In en, this message translates to:
-  /// **'Ambassador quota for your region is full.'**
-  String get ambassadorNoticeQuotaReached;
+  /// **'Save'**
+  String get save;
 
-  /// No description provided for @ambassadorNoticeAutoAssign.
+  /// Playtime approve button
   ///
   /// In en, this message translates to:
-  /// **'Ambassadorship is automatically assigned by the system.'**
-  String get ambassadorNoticeAutoAssign;
+  /// **'Approve'**
+  String get playtimeApprove;
+
+  /// Create your first session message
+  ///
+  /// In en, this message translates to:
+  /// **'Create your first session'**
+  String get createYourFirstSession;
+
+  /// Game rejected message
+  ///
+  /// In en, this message translates to:
+  /// **'Game rejected'**
+  String get playtimeGameRejected;
+
+  /// Failed to revoke access message
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to revoke access'**
+  String failedToRevokeAccess(Object error);
+
+  /// Recent games label
+  ///
+  /// In en, this message translates to:
+  /// **'Recent Games'**
+  String get recentGames;
+
+  /// Customize message button
+  ///
+  /// In en, this message translates to:
+  /// **'Customize Message'**
+  String get customizeMessage;
+
+  /// Failed to cancel invite message
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to cancel invite'**
+  String failedToCancelInvite(Object error);
+
+  /// Error sending message message
+  ///
+  /// In en, this message translates to:
+  /// **'Error sending message'**
+  String errorSendingMessage(Object error);
+
+  /// Confirm password field label
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm Password'**
+  String get confirmPassword;
+
+  /// Error loading privacy requests message
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading privacy requests'**
+  String errorLoadingPrivacyRequests(Object error);
+
+  /// Connected children label
+  ///
+  /// In en, this message translates to:
+  /// **'Connected Children'**
+  String get connectedChildren;
+
+  /// Share button text
+  ///
+  /// In en, this message translates to:
+  /// **'Share'**
+  String get share;
+
+  /// Enter game name label
+  ///
+  /// In en, this message translates to:
+  /// **'Enter game name'**
+  String get playtimeEnterGameName;
+
+  /// Please login for family features message
+  ///
+  /// In en, this message translates to:
+  /// **'Please login to access family features'**
+  String get pleaseLoginForFamilyFeatures;
+
+  /// My invites title
+  ///
+  /// In en, this message translates to:
+  /// **'My Invites'**
+  String get myInvites;
+
+  /// Create game button
+  ///
+  /// In en, this message translates to:
+  /// **'Create Game'**
+  String get createGame;
+
+  /// Group name optional label
+  ///
+  /// In en, this message translates to:
+  /// **'Group Name (Optional)'**
+  String get groupNameOptional;
+
+  /// No playtime sessions message
+  ///
+  /// In en, this message translates to:
+  /// **'No playtime sessions found.'**
+  String get playtimeNoSessions;
+
+  /// Admin screen TBD message
+  ///
+  /// In en, this message translates to:
+  /// **'Admin screen coming soon'**
+  String get adminScreenTBD;
+
+  /// Playtime parent dashboard title
+  ///
+  /// In en, this message translates to:
+  /// **'Playtime Dashboard'**
+  String get playtimeParentDashboardTitle;
+
+  /// Close button text
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get close;
+
+  /// Known group detected message
+  ///
+  /// In en, this message translates to:
+  /// **'Known group detected'**
+  String get knownGroupDetected;
+
+  /// Back button text
+  ///
+  /// In en, this message translates to:
+  /// **'Back'**
+  String get back;
+
+  /// Choose game label
+  ///
+  /// In en, this message translates to:
+  /// **'Choose a game'**
+  String get playtimeChooseGame;
+
+  /// Manage permissions button
+  ///
+  /// In en, this message translates to:
+  /// **'Manage Permissions'**
+  String get managePermissions;
+
+  /// Poll options label
+  ///
+  /// In en, this message translates to:
+  /// **'Poll Options'**
+  String get pollOptions;
+
+  /// Clicked status
+  ///
+  /// In en, this message translates to:
+  /// **'Clicked'**
+  String clicked(Object count);
+
+  /// Link label
+  ///
+  /// In en, this message translates to:
+  /// **'Link'**
+  String link(Object link);
+
+  /// Meeting ready message
+  ///
+  /// In en, this message translates to:
+  /// **'Your meeting is ready! Join now'**
+  String get meetingReadyMessage;
+
+  /// Pending invites label
+  ///
+  /// In en, this message translates to:
+  /// **'Pending Invites'**
+  String get pendingInvites;
+
+  /// Status colon label
+  ///
+  /// In en, this message translates to:
+  /// **'Status:'**
+  String statusColon(Object status);
 }
 
 class _AppLocalizationsDelegate
@@ -1405,52 +1198,51 @@ class _AppLocalizationsDelegate
         'ar',
         'bg',
         'bn',
+        'bs',
+        'ca',
         'cs',
+        'cy',
         'da',
         'de',
-        'el',
         'en',
         'es',
+        'et',
+        'eu',
         'fa',
         'fi',
+        'fo',
         'fr',
-        'gu',
-        'ha',
-        'he',
+        'ga',
+        'gl',
         'hi',
         'hr',
         'hu',
         'id',
+        'is',
         'it',
         'ja',
-        'kn',
         'ko',
         'lt',
         'lv',
-        'mr',
+        'mk',
         'ms',
-        'ne',
+        'mt',
         'nl',
         'no',
         'pl',
         'pt',
         'ro',
         'ru',
-        'si',
         'sk',
         'sl',
+        'sq',
         'sr',
         'sv',
-        'sw',
-        'ta',
         'th',
-        'tl',
         'tr',
-        'uk',
         'ur',
         'vi',
-        'zh',
-        'zu'
+        'zh'
       ].contains(locale.languageCode);
 
   @override
@@ -1458,18 +1250,6 @@ class _AppLocalizationsDelegate
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
-  // Lookup logic when language+script codes are specified.
-  switch (locale.languageCode) {
-    case 'zh':
-      {
-        switch (locale.scriptCode) {
-          case 'Hant':
-            return AppLocalizationsZhHant();
-        }
-        break;
-      }
-  }
-
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
     case 'am':
@@ -1480,30 +1260,38 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsBg();
     case 'bn':
       return AppLocalizationsBn();
+    case 'bs':
+      return AppLocalizationsBs();
+    case 'ca':
+      return AppLocalizationsCa();
     case 'cs':
       return AppLocalizationsCs();
+    case 'cy':
+      return AppLocalizationsCy();
     case 'da':
       return AppLocalizationsDa();
     case 'de':
       return AppLocalizationsDe();
-    case 'el':
-      return AppLocalizationsEl();
     case 'en':
       return AppLocalizationsEn();
     case 'es':
       return AppLocalizationsEs();
+    case 'et':
+      return AppLocalizationsEt();
+    case 'eu':
+      return AppLocalizationsEu();
     case 'fa':
       return AppLocalizationsFa();
     case 'fi':
       return AppLocalizationsFi();
+    case 'fo':
+      return AppLocalizationsFo();
     case 'fr':
       return AppLocalizationsFr();
-    case 'gu':
-      return AppLocalizationsGu();
-    case 'ha':
-      return AppLocalizationsHa();
-    case 'he':
-      return AppLocalizationsHe();
+    case 'ga':
+      return AppLocalizationsGa();
+    case 'gl':
+      return AppLocalizationsGl();
     case 'hi':
       return AppLocalizationsHi();
     case 'hr':
@@ -1512,24 +1300,24 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsHu();
     case 'id':
       return AppLocalizationsId();
+    case 'is':
+      return AppLocalizationsIs();
     case 'it':
       return AppLocalizationsIt();
     case 'ja':
       return AppLocalizationsJa();
-    case 'kn':
-      return AppLocalizationsKn();
     case 'ko':
       return AppLocalizationsKo();
     case 'lt':
       return AppLocalizationsLt();
     case 'lv':
       return AppLocalizationsLv();
-    case 'mr':
-      return AppLocalizationsMr();
+    case 'mk':
+      return AppLocalizationsMk();
     case 'ms':
       return AppLocalizationsMs();
-    case 'ne':
-      return AppLocalizationsNe();
+    case 'mt':
+      return AppLocalizationsMt();
     case 'nl':
       return AppLocalizationsNl();
     case 'no':
@@ -1542,36 +1330,26 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsRo();
     case 'ru':
       return AppLocalizationsRu();
-    case 'si':
-      return AppLocalizationsSi();
     case 'sk':
       return AppLocalizationsSk();
     case 'sl':
       return AppLocalizationsSl();
+    case 'sq':
+      return AppLocalizationsSq();
     case 'sr':
       return AppLocalizationsSr();
     case 'sv':
       return AppLocalizationsSv();
-    case 'sw':
-      return AppLocalizationsSw();
-    case 'ta':
-      return AppLocalizationsTa();
     case 'th':
       return AppLocalizationsTh();
-    case 'tl':
-      return AppLocalizationsTl();
     case 'tr':
       return AppLocalizationsTr();
-    case 'uk':
-      return AppLocalizationsUk();
     case 'ur':
       return AppLocalizationsUr();
     case 'vi':
       return AppLocalizationsVi();
     case 'zh':
       return AppLocalizationsZh();
-    case 'zu':
-      return AppLocalizationsZu();
   }
 
   throw FlutterError(
