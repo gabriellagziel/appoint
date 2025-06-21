@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 
 extension ColorValues on Color {
+  /// Returns a copy of this [Color] with the provided channel values replaced.
+  ///
+  /// Each parameter expects a value in the range `0.0`–`1.0`. When a parameter
+  /// is omitted the current channel value is used.
   Color withValues({double? alpha, double? red, double? green, double? blue}) {
-    final a = ((alpha ?? this.a) * 255).round() & 0xff;
-    final r = ((red ?? this.r) * 255).round() & 0xff;
-    final g = ((green ?? this.g) * 255).round() & 0xff;
-    final b = ((blue ?? this.b) * 255).round() & 0xff;
+    int toInt(double value) => (value.clamp(0.0, 1.0) * 255).round();
 
-    return Color.fromARGB(a, r, g, b);
+    return Color.fromARGB(
+      toInt(alpha ?? this.alpha / 255),
+      toInt(red ?? this.red / 255),
+      toInt(green ?? this.green / 255),
+      toInt(blue ?? this.blue / 255),
+    );
   }
+}
+
+extension BuildContextColorTheme on BuildContext {
+  /// Shorthand access to the current [ColorScheme].
+  ColorScheme get colorTheme => Theme.of(this).colorScheme;
 }
