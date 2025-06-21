@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io';
 
 import '../models/playtime_game.dart';
@@ -136,6 +137,9 @@ class PlaytimeService {
     String category,
     List<String> tags,
   ) async {
+    if (kIsWeb) {
+      throw UnsupportedError('createBackground is not supported on the web');
+    }
     try {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');

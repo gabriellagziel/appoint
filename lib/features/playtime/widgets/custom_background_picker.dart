@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -651,6 +652,9 @@ class _UploadBackgroundDialogState
   }
 
   Future<void> _pickImage() async {
+    if (kIsWeb) {
+      return;
+    }
     final ImagePicker picker = ImagePicker();
     final XFile? image = await picker.pickImage(
       source: ImageSource.gallery,
@@ -672,6 +676,9 @@ class _UploadBackgroundDialogState
   }
 
   Future<void> _uploadBackground() async {
+    if (kIsWeb) {
+      return;
+    }
     if (!_canUpload()) return;
 
     setState(() {
