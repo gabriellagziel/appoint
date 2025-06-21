@@ -90,7 +90,7 @@ class _NavTile extends StatelessWidget {
       child: Ink(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          color: Theme.of(context).colorScheme.surfaceContainerHighest,
+          color: Theme.of(context).colorScheme.surface,
         ),
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 24),
         child: Column(
