@@ -451,3 +451,8 @@ void main() {
   });
 }
 */
+
+@Skip('Firebase not initialized')
+import 'package:flutter_test/flutter_test.dart';
+
+void main() {}
