@@ -1,0 +1,948 @@
+{
+  "@@locale": "en",
+  "appTitle": "Appoint",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "welcome": "Welcome",
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "menu": "Menu",
+  "@menu": {
+    "description": "Menu navigation label"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "signOut": "Sign Out",
+  "@signOut": {
+    "description": "Sign out button label"
+  },
+  "login": "Login",
+  "@login": {
+    "description": "Login button label"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email field label"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password field label"
+  },
+  "signIn": "Sign In",
+  "@signIn": {
+    "description": "Sign in button label"
+  },
+  "bookMeeting": "Book a Meeting",
+  "@bookMeeting": {
+    "description": "Book meeting button label"
+  },
+  "bookAppointment": "Book Appointment",
+  "@bookAppointment": {
+    "description": "Book appointment button label"
+  },
+  "bookingRequest": "Booking Request",
+  "@bookingRequest": {
+    "description": "Booking request label"
+  },
+  "confirmBooking": "Confirm Booking",
+  "@confirmBooking": {
+    "description": "Confirm booking button label"
+  },
+  "chatBooking": "Chat Booking",
+  "@chatBooking": {
+    "description": "Chat booking label"
+  },
+  "bookViaChat": "Book via Chat",
+  "@bookViaChat": {
+    "description": "Book via chat button label"
+  },
+  "submitBooking": "Submit Booking",
+  "@submitBooking": {
+    "description": "Submit booking button label"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Label for the next button"
+  },
+  "selectStaff": "Select Staff",
+  "@selectStaff": {
+    "description": "Label for staff selection dropdown"
+  },
+  "pickDate": "Pick Date",
+  "@pickDate": {
+    "description": "Label for date picker"
+  },
+  "staff": "Staff",
+  "@staff": {
+    "description": "Staff label"
+  },
+  "service": "Service",
+  "@service": {
+    "description": "Service label"
+  },
+  "dateTime": "Date & Time",
+  "@dateTime": {
+    "description": "Date and time label"
+  },
+  "duration": "Duration: {duration} minutes",
+  "@duration": {
+    "description": "Duration label with parameter",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "notSelected": "Not Selected",
+  "@notSelected": {
+    "description": "Not selected state"
+  },
+  "noSlots": "No slots available",
+  "@noSlots": {
+    "description": "Message shown when no time slots are available"
+  },
+  "bookingConfirmed": "Booking Confirmed",
+  "@bookingConfirmed": {
+    "description": "Booking confirmed message"
+  },
+  "failedToConfirmBooking": "Failed to confirm booking",
+  "@failedToConfirmBooking": {
+    "description": "Failed to confirm booking message"
+  },
+  "noBookingsFound": "No bookings found",
+  "@noBookingsFound": {
+    "description": "No bookings found message"
+  },
+  "errorLoadingBookings": "Error loading bookings: {error}",
+  "@errorLoadingBookings": {
+    "description": "Error loading bookings message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "shareOnWhatsApp": "Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Label for WhatsApp share button"
+  },
+  "shareMeetingInvitation": "Share your meeting invitation:",
+  "@shareMeetingInvitation": {
+    "description": "Title for meeting invitation sharing section"
+  },
+  "meetingReadyMessage": "The meeting is ready! Would you like to send it to your group?",
+  "@meetingReadyMessage": {
+    "description": "Message shown in WhatsApp share dialog"
+  },
+  "customizeMessage": "Customize your message...",
+  "@customizeMessage": {
+    "description": "Hint text for message customization"
+  },
+  "saveGroupForRecognition": "Save group for future recognition",
+  "@saveGroupForRecognition": {
+    "description": "Label for group recognition checkbox"
+  },
+  "groupNameOptional": "Group Name (optional)",
+  "@groupNameOptional": {
+    "description": "Label for group name input field"
+  },
+  "enterGroupName": "Enter group name for recognition",
+  "@enterGroupName": {
+    "description": "Hint text for group name input"
+  },
+  "knownGroupDetected": "Known group detected",
+  "@knownGroupDetected": {
+    "description": "Message shown when a known group is detected"
+  },
+  "meetingSharedSuccessfully": "Meeting shared successfully!",
+  "@meetingSharedSuccessfully": {
+    "description": "Success message when meeting is shared"
+  },
+  "bookingConfirmedShare": "Booking confirmed! You can now share the invitation.",
+  "@bookingConfirmedShare": {
+    "description": "Message shown after booking confirmation"
+  },
+  "defaultShareMessage": "Hey! I've scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:",
+  "@defaultShareMessage": {
+    "description": "Default message for WhatsApp sharing"
+  },
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "businessDashboard": "Business Dashboard",
+  "@businessDashboard": {
+    "description": "Business dashboard label"
+  },
+  "myProfile": "My Profile",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "noProfileFound": "No profile found",
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "errorLoadingProfile": "Error loading profile",
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "myInvites": "My Invites",
+  "@myInvites": {
+    "description": "My invites label"
+  },
+  "inviteDetail": "Invite Detail",
+  "@inviteDetail": {
+    "description": "Invite detail label"
+  },
+  "inviteContact": "Invite Contact",
+  "@inviteContact": {
+    "description": "Invite contact label"
+  },
+  "noInvites": "No invites",
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "errorLoadingInvites": "Error loading invites",
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "accept": "Accept",
+  "@accept": {
+    "description": "Accept button label"
+  },
+  "decline": "Decline",
+  "@decline": {
+    "description": "Decline button label"
+  },
+  "sendInvite": "Send Invite",
+  "@sendInvite": {
+    "description": "Send invite button label"
+  },
+  "name": "Name",
+  "@name": {
+    "description": "Name field label"
+  },
+  "phoneNumber": "Phone Number",
+  "@phoneNumber": {
+    "description": "Phone number field label"
+  },
+  "emailOptional": "Email (optional)",
+  "@emailOptional": {
+    "description": "Optional email field label"
+  },
+  "requiresInstallFallback": "Requires installation",
+  "@requiresInstallFallback": {
+    "description": "Requires installation fallback message"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "notificationSettings": "Notification Settings",
+  "@notificationSettings": {
+    "description": "Notification settings label"
+  },
+  "enableNotifications": "Enable Notifications",
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "errorFetchingToken": "Error fetching token",
+  "@errorFetchingToken": {
+    "description": "Error fetching token message"
+  },
+  "fcmToken": "FCM Token: {token}",
+  "@fcmToken": {
+    "description": "FCM token display",
+    "placeholders": {
+      "token": {
+        "type": "String"
+      }
+    }
+  },
+  "familyDashboard": "Family Dashboard",
+  "@familyDashboard": {
+    "description": "Family dashboard label"
+  },
+  "pleaseLoginForFamilyFeatures": "Please login to access family features",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "familyMembers": "Family Members",
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "invite": "Invite",
+  "@invite": {
+    "description": "Invite button label"
+  },
+  "pendingInvites": "Pending Invites",
+  "@pendingInvites": {
+    "description": "Pending invites label"
+  },
+  "connectedChildren": "Connected Children",
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "noFamilyMembersYet": "No family members yet. Invite someone to get started!",
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "errorLoadingFamilyLinks": "Error loading family links: {error}",
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteChild": "Invite Child",
+  "@inviteChild": {
+    "description": "Invite child button label"
+  },
+  "managePermissions": "Manage Permissions",
+  "@managePermissions": {
+    "description": "Manage permissions label"
+  },
+  "removeChild": "Remove Child",
+  "@removeChild": {
+    "description": "Remove child button label"
+  },
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "childEmail": "Child Email",
+  "@childEmail": {
+    "description": "Child email field label"
+  },
+  "childEmailOrPhone": "Child Email or Phone",
+  "@childEmailOrPhone": {
+    "description": "Child email or phone field label"
+  },
+  "enterChildEmail": "Enter child email",
+  "@enterChildEmail": {
+    "description": "Enter child email hint"
+  },
+  "otpCode": "OTP Code",
+  "@otpCode": {
+    "description": "OTP code field label"
+  },
+  "enterOtp": "Enter OTP",
+  "@enterOtp": {
+    "description": "Enter OTP hint"
+  },
+  "verify": "Verify",
+  "@verify": {
+    "description": "Verify button label"
+  },
+  "otpResentSuccessfully": "OTP resent successfully!",
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "failedToResendOtp": "Failed to resend OTP: {error}",
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "childLinkedSuccessfully": "Child linked successfully!",
+  "@childLinkedSuccessfully": {
+    "description": "Child linked successfully message"
+  },
+  "invitationSentSuccessfully": "Invitation sent successfully!",
+  "@invitationSentSuccessfully": {
+    "description": "Invitation sent successfully message"
+  },
+  "failedToSendInvitation": "Failed to send invitation: {error}",
+  "@failedToSendInvitation": {
+    "description": "Failed to send invitation message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "pleaseEnterValidEmail": "Please enter a valid email",
+  "@pleaseEnterValidEmail": {
+    "description": "Please enter valid email message"
+  },
+  "pleaseEnterValidEmailOrPhone": "Please enter a valid email or phone",
+  "@pleaseEnterValidEmailOrPhone": {
+    "description": "Please enter valid email or phone message"
+  },
+  "invalidCode": "Invalid code, please try again",
+  "@invalidCode": {
+    "description": "Invalid code message"
+  },
+  "cancelInvite": "Cancel Invite",
+  "@cancelInvite": {
+    "description": "Cancel invite button label"
+  },
+  "cancelInviteConfirmation": "Are you sure you want to cancel this invite?",
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "no": "No",
+  "@no": {
+    "description": "No button label"
+  },
+  "yesCancel": "Yes, Cancel",
+  "@yesCancel": {
+    "description": "Yes cancel button label"
+  },
+  "inviteCancelledSuccessfully": "Invite cancelled successfully!",
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "failedToCancelInvite": "Failed to cancel invite: {error}",
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "revokeAccess": "Revoke Access",
+  "@revokeAccess": {
+    "description": "Revoke access button label"
+  },
+  "revokeAccessConfirmation": "Are you sure you want to revoke access for this child? This action cannot be undone.",
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "revoke": "Revoke",
+  "@revoke": {
+    "description": "Revoke button label"
+  },
+  "accessRevokedSuccessfully": "Access revoked successfully!",
+  "@accessRevokedSuccessfully": {
+    "description": "Access revoked successfully message"
+  },
+  "failedToRevokeAccess": "Failed to revoke access: {error}",
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "grantConsent": "Grant Consent",
+  "@grantConsent": {
+    "description": "Grant consent button label"
+  },
+  "revokeConsent": "Revoke Consent",
+  "@revokeConsent": {
+    "description": "Revoke consent button label"
+  },
+  "consentGrantedSuccessfully": "Consent granted successfully!",
+  "@consentGrantedSuccessfully": {
+    "description": "Consent granted successfully message"
+  },
+  "consentRevokedSuccessfully": "Consent revoked successfully!",
+  "@consentRevokedSuccessfully": {
+    "description": "Consent revoked successfully message"
+  },
+  "failedToUpdateConsent": "Failed to update consent: {error}",
+  "@failedToUpdateConsent": {
+    "description": "Failed to update consent message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "checkingPermissions": "Checking permissions...",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "close": "Close",
+  "@close": {
+    "description": "Close button label"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save button label"
+  },
+  "sendNow": "Send Now",
+  "@sendNow": {
+    "description": "Send now button label"
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Details button label"
+  },
+  "noBroadcastMessages": "No broadcast messages yet",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "errorCheckingPermissions": "Error checking permissions: {error}",
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "mediaOptional": "Media (Optional)",
+  "@mediaOptional": {
+    "description": "Media optional section title"
+  },
+  "pickImage": "Pick Image",
+  "@pickImage": {
+    "description": "Pick image button label"
+  },
+  "pickVideo": "Pick Video",
+  "@pickVideo": {
+    "description": "Pick video button label"
+  },
+  "pollOptions": "Poll Options:",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "targetingFilters": "Targeting Filters",
+  "@targetingFilters": {
+    "description": "Targeting filters section title"
+  },
+  "scheduling": "Scheduling",
+  "@scheduling": {
+    "description": "Scheduling section title"
+  },
+  "scheduleForLater": "Schedule for later",
+  "@scheduleForLater": {
+    "description": "Schedule for later option"
+  },
+  "errorEstimatingRecipients": "Error estimating recipients: {error}",
+  "@errorEstimatingRecipients": {
+    "description": "Error estimating recipients message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingImage": "Error picking image: {error}",
+  "@errorPickingImage": {
+    "description": "Error picking image message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorPickingVideo": "Error picking video: {error}",
+  "@errorPickingVideo": {
+    "description": "Error picking video message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "noPermissionForBroadcast": "You do not have permission to create broadcast messages.",
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "messageSavedSuccessfully": "Message saved successfully",
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "errorSavingMessage": "Error saving message: {error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "messageSentSuccessfully": "Message sent successfully",
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "errorSendingMessage": "Error sending message: {error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "content": "Content: {content}",
+  "@content": {
+    "description": "Content display",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "type": "Type: {type}",
+  "@type": {
+    "description": "Type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "link": "Link: {link}",
+  "@link": {
+    "description": "Link display",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "status": "Status: {status}",
+  "@status": {
+    "description": "Status display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "recipients": "Recipients: {count}",
+  "@recipients": {
+    "description": "Recipients display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "opened": "Opened: {count}",
+  "@opened": {
+    "description": "Opened count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "clicked": "Clicked: {count}",
+  "@clicked": {
+    "description": "Clicked count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "created": "Created: {date}",
+  "@created": {
+    "description": "Created date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduled": "Scheduled: {date}",
+  "@scheduled": {
+    "description": "Scheduled date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "organizations": "Organizations",
+  "@organizations": {
+    "description": "Organizations screen title"
+  },
+  "noOrganizations": "No organizations",
+  "@noOrganizations": {
+    "description": "No organizations message"
+  },
+  "errorLoadingOrganizations": "Error loading organizations",
+  "@errorLoadingOrganizations": {
+    "description": "Error loading organizations message"
+  },
+  "members": "{count} members",
+  "@members": {
+    "description": "Members count display",
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "users": "Users",
+  "@users": {
+    "description": "Users screen title"
+  },
+  "noUsers": "No users",
+  "@noUsers": {
+    "description": "No users message"
+  },
+  "errorLoadingUsers": "Error loading users",
+  "@errorLoadingUsers": {
+    "description": "Error loading users message"
+  },
+  "changeRole": "Change Role",
+  "@changeRole": {
+    "description": "Change role button label"
+  },
+  "totalAppointments": "Total Appointments",
+  "@totalAppointments": {
+    "description": "Total appointments label"
+  },
+  "completedAppointments": "Completed Appointments",
+  "@completedAppointments": {
+    "description": "Completed appointments label"
+  },
+  "revenue": "Revenue",
+  "@revenue": {
+    "description": "Revenue label"
+  },
+  "errorLoadingStats": "Error loading stats",
+  "@errorLoadingStats": {
+    "description": "Error loading stats message"
+  },
+  "appointment": "Appointment: {id}",
+  "@appointment": {
+    "description": "Appointment display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "from": "From: {name}",
+  "@from": {
+    "description": "From display",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "phone": "Phone: {number}",
+  "@phone": {
+    "description": "Phone display",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "noRouteDefined": "No route defined for {route}",
+  "@noRouteDefined": {
+    "description": "No route defined message",
+    "placeholders": {
+      "route": {
+        "type": "String"
+      }
+    }
+  },
+  "meetingDetails": "Meeting Details",
+  "@meetingDetails": {
+    "description": "Meeting details title"
+  },
+  "meetingId": "Meeting ID: {id}",
+  "@meetingId": {
+    "description": "Meeting ID display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "creator": "Creator: {id}",
+  "@creator": {
+    "description": "Creator display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "context": "Context: {id}",
+  "@context": {
+    "description": "Context display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "group": "Group: {id}",
+  "@group": {
+    "description": "Group display",
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "requestPrivateSession": "Request Private Session",
+  "@requestPrivateSession": {
+    "description": "Request private session button label"
+  },
+  "privacyRequestSent": "Privacy request sent to your parents!",
+  "@privacyRequestSent": {
+    "description": "Privacy request sent message"
+  },
+  "failedToSendPrivacyRequest": "Failed to send privacy request: {error}",
+  "@failedToSendPrivacyRequest": {
+    "description": "Failed to send privacy request message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPrivacyRequests": "Error loading privacy requests: {error}",
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "requestType": "{type} Request",
+  "@requestType": {
+    "description": "Request type display",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "statusColon": "Status: {status}",
+  "@statusColon": {
+    "description": "Status with colon display",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToActionPrivacyRequest": "Failed to {action} privacy request: {error}",
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message",
+    "placeholders": {
+      "action": {
+        "type": "String"
+      },
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "yes": "Yes",
+  "@yes": {
+    "description": "Yes button label"
+  },
+  "send": "Send",
+  "@send": {
+    "description": "Send button label"
+  },
+  "permissions": "Permissions",
+  "@permissions": {
+    "description": "Permissions label"
+  },
+  "permissionsFor": "Permissions - {childId}",
+  "@permissionsFor": {
+    "description": "Permissions for child label",
+    "placeholders": {
+      "childId": {
+        "type": "String"
+      }
+    }
+  },
+  "errorLoadingPermissions": "Error loading permissions: {error}",
+  "@errorLoadingPermissions": {
+    "description": "Error loading permissions message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "none": "None",
+  "@none": {
+    "description": "None option"
+  },
+  "readOnly": "Read Only",
+  "@readOnly": {
+    "description": "Read only option"
+  },
+  "readWrite": "Read & Write",
+  "@readWrite": {
+    "description": "Read and write option"
+  },
+  "permissionUpdated": "Permission {category} updated to {newValue}",
+  "@permissionUpdated": {
+    "description": "Permission updated message",
+    "placeholders": {
+      "category": {
+        "type": "String"
+      },
+      "newValue": {
+        "type": "String"
+      }
+    }
+  },
+  "failedToUpdatePermission": "Failed to update permission: {error}",
+  "@failedToUpdatePermission": {
+    "description": "Failed to update permission message",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "invited": "Invited: {date}",
+  "@invited": {
+    "description": "Invited date display",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "adminBroadcast": "Admin Broadcast",
+  "@adminBroadcast": {
+    "description": "Admin broadcast screen title"
+  },
+  "composeBroadcastMessage": "Compose Broadcast Message",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message dialog title"
+  },
+  "adminScreenTBD": "Admin Screen - To Be Developed",
+  "@adminScreenTBD": {
+    "description": "Admin screen placeholder"
+  },
+  "staffScreenTBD": "Staff Screen - To Be Developed",
+  "@staffScreenTBD": {
+    "description": "Staff screen placeholder"
+  },
+  "clientScreenTBD": "Client Screen - To Be Developed",
+  "@clientScreenTBD": {
+    "description": "Client screen placeholder"
+  }
+}
