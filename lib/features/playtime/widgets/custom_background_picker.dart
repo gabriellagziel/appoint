@@ -8,6 +8,7 @@ import '../../../l10n/app_localizations.dart';
 import '../../../config/theme.dart';
 import '../../../providers/playtime_provider.dart';
 import '../../../models/playtime_background.dart';
+import '../../../utils/color_extensions.dart';
 
 class CustomBackgroundPicker extends ConsumerStatefulWidget {
   final String? selectedBackgroundId;
