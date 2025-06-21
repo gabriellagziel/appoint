@@ -1,0 +1,9 @@
+Analyzing APP-OINT...                                           
+
+warning • The declaration '_formatDate' isn't referenced • lib/features/admin/admin_broadcast_screen.dart:922:10 • unused_element
+warning • The value of the local variable 'l10n' isn't used • lib/features/admin/admin_playtime_games_screen.dart:17:11 • unused_local_variable
+warning • The value of the local variable 'l10n' isn't used • lib/features/admin/admin_playtime_games_screen.dart:646:11 • unused_local_variable
+warning • The declaration '_getStatusColor' isn't referenced • lib/features/playtime/screens/parent_dashboard_screen.dart:623:9 • unused_element
+warning • The value of the local variable 'mockFirebaseAuth' isn't used • test/features/admin/admin_panel_integration_test.dart:30:27 • unused_local_variable
+warning • The value of the local variable 'mockFirestore' isn't used • test/features/admin/admin_panel_integration_test.dart:31:32 • unused_local_variable
+

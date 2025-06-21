@@ -6,14 +6,13 @@ extension ColorValues on Color {
   /// Each parameter expects a value in the range `0.0`–`1.0`. When a parameter
   /// is omitted the current channel value is used.
   Color withValues({double? alpha, double? red, double? green, double? blue}) {
-    int toInt(double value) =>
-        (value.clamp(0.0, 1.0) * 255.0).round() & 0xff;
+    int toInt(double value) => (value.clamp(0.0, 1.0) * 255.0).round() & 0xff;
 
     return Color.fromARGB(
-      toInt(alpha ?? opacity),
-      toInt(red ?? this.red / 255),
-      toInt(green ?? this.green / 255),
-      toInt(blue ?? this.blue / 255),
+      toInt(alpha ?? (a / 255)),
+      toInt(red ?? (r / 255)),
+      toInt(green ?? (g / 255)),
+      toInt(blue ?? (b / 255)),
     );
   }
 }
