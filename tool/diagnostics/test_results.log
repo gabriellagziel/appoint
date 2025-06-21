@@ -1,0 +1,186 @@
+00:00 +0: loading /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart
+00:00 +0: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: (setUpAll)
+00:00 +0: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially
+00:00 +0 -1: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially
+00:00 +0 -1: /Users/a/Documents/APP-OINT/test/playtime/playtime_provider_test.dart: (setUpAll) [E]
+  PlatformException(channel-error, Unable to establish connection on channel., null, null)
+  package:REDACTED_TOKEN/src/pigeon/messages.pigeon.dart 210:7  FirebaseCoreHostApi.initializeCore
+  
+00:00 +0 -1: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially
+00:00 +0 -1: /Users/a/Documents/APP-OINT/test/integration/full_flow_test.dart: (suite)
+  Skip: Integration test not yet implemented
+00:00 +0 ~1 -1: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially
+00:02 +0 ~1 -2: loading /Users/a/Documents/APP-OINT/test/features/playtime/playtime_service_test.dart [E]
+  Failed to load "/Users/a/Documents/APP-OINT/test/features/playtime/playtime_service_test.dart":
+  Compilation failed for testPath=/Users/a/Documents/APP-OINT/test/features/playtime/playtime_service_test.dart: /var/folders/n0/9g50fmnj0lz5tmjch2zlf6l80000gn/T/flutter_tools.QQOEv9/flutter_test_listener.CGbuiG/listener.dart:21:21: Error: Undefined name 'main'.
+    await Future(test.main);
+                      ^^^^
+  .
+00:02 +0 ~1 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:02 +0 ~2 -2: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially
+00:02 +0 ~2 -2: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:02 +0 ~3 -2: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially
+00:02 +0 ~3 -2: /Users/a/Documents/APP-OINT/test/features/business/business_dashboard_screen_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:02 +0 ~4 -2: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially
+00:02 +0 ~4 -2: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:02 +0 ~5 -2: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially
+00:02 +0 ~5 -2: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:02 +0 ~6 -2: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display loading state initially
+00:02 +0 ~6 -3: loading /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart [E]
+  Error: the Dart compiler exited unexpectedly.
+  package:flutter_tools/src/base/common.dart 34:3  throwToolExit
+  package:flutter_tools/src/compile.dart 907:11    DefaultResidentCompiler._compile.<fn>
+  dart:async/zone.dart 1538:47                     _rootRunUnary
+  dart:async/zone.dart 1429:19                     _CustomZone.runUnary
+  dart:async/future_impl.dart 951:45               Future._propagateToListeners.handleValueCallback
+  dart:async/future_impl.dart 980:13               Future._propagateToListeners
+  dart:async/future_impl.dart 865:9                Future._propagateToListeners
+  dart:async/future_impl.dart 723:5                Future._completeWithValue
+  dart:async/future_impl.dart 807:7                Future._asyncCompleteWithValue.<fn>
+  dart:async/zone.dart 1525:13                     _rootRun
+  dart:async/zone.dart 1422:19                     _CustomZone.run
+  dart:async/zone.dart 1321:7                      _CustomZone.runGuarded
+  dart:async/zone.dart 1362:23                     _CustomZone.bindCallbackGuarded.<fn>
+  dart:async/schedule_microtask.dart 40:21         _microtaskLoop
+  dart:async/schedule_microtask.dart 49:5          _startMicrotaskLoop
+  dart:isolate-patch/isolate_patch.dart 127:13     _runPendingImmediateCallback
+  dart:isolate-patch/isolate_patch.dart 194:5      _RawReceivePort._handleMessage
+  
+00:02 +1 ~6 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display data table with ambassador stats
+00:03 +2 ~6 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by country
+00:04 +3 ~6 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should filter data by language
+00:05 +4 ~6 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should clear filters when clear button is pressed
+
+Warning: A call to tap() with finder "Found 1 widget with text "Clear Filters": [
+  Text("Clear Filters", dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery]),
+]" derived an Offset (Offset(1120.3, 120.0)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+Indeed, Offset(1120.3, 120.0) is outside the bounds of the root of the render tree, Size(800.0, 600.0).
+The finder corresponds to this RenderBox: RenderParagraph#be8c4 relayoutBoundary=up43
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#9d244(_ReusableRenderView#196ca), HitTestEntry<HitTestTarget>#35052(<REDACTED_TOKEN>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2077:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1861:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1041:7)
+#3      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart:276:20)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+00:05 +5 ~6 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display chart when data is available
+00:06 +6 ~6 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Dashboard Tests should display error state when service fails
+00:06 +7 ~6 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Data Provider Tests should load data successfully
+00:06 +8 ~6 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Data Provider Tests should update filters and reload data
+00:06 +9 ~6 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: Ambassador Data Provider Tests should clear filters and reload data
+00:06 +10 ~6 -3: /Users/a/Documents/APP-OINT/test/ambassador_dashboard_test.dart: (tearDownAll)
+00:08 +10 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +11 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +12 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +13 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +14 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +15 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +16 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +17 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +18 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +19 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +20 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:09 +20 ~6 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:09 +20 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControlDemoScreen can be instantiated
+00:10 +21 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests BroadcastSystemDemoScreen can be instantiated
+00:11 +22 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests ErrorLogsDemoScreen can be instantiated
+00:11 +23 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests Admin Demo Panel renders all demo screens correctly
+00:11 +24 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests MonetizationControl provider works correctly
+00:11 +25 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests BroadcastMessage provider works correctly
+00:11 +26 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_demo_screens_test.dart: Admin Demo Screens Tests ErrorLog provider works correctly
+00:14 +27 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: (setUpAll)
+00:14 +27 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Dashboard loads with stats
+00:18 +28 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Dashboard loads with stats
+00:18 +29 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Dashboard loads with stats
+00:18 +30 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Broadcast System Demo Screen renders correctly
+00:19 +31 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Broadcast System Demo Screen renders correctly
+00:19 +32 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: Admin Panel Integration Tests Admin Monetization screen loads
+00:19 +33 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Error Logs Demo Screen renders correctly
+00:19 +34 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Error Logs Demo Screen renders correctly
+00:19 +35 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Error Logs Demo Screen renders correctly
+00:19 +36 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_integration_test.dart: (tearDownAll)
+00:19 +36 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works
+00:20 +36 ~7 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:20 +36 ~8 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works
+00:20 +36 ~8 -3: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:20 +36 ~9 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works
+00:20 +36 ~9 -3: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:20 +36 ~10 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works
+00:20 +36 ~10 -3: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:20 +36 ~11 -3: /Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart: Admin Panel System Audit Navigation from Admin Demo Panel to individual screens works
+
+Warning: A call to tap() with finder "Found 1 widget with text "Error & Activity Logs": [
+  Text("Error & Activity Logs", inherit: true, size: 16.0, weight: 700, textAlign: center, dependencies: [DefaultSelectionStyle, DefaultTextStyle, MediaQuery, _ScrollableScope]),
+]" derived an Offset (Offset(204.0, 614.5)) that would not hit test on the specified widget.
+Maybe the widget is actually off-screen, or another widget is obscuring it, or the widget cannot receive pointer events.
+Indeed, Offset(204.0, 614.5) is outside the bounds of the root of the render tree, Size(800.0, 600.0).
+The finder corresponds to this RenderBox: RenderParagraph#35aa5 relayoutBoundary=up1
+The hit test result at that offset is: HitTestResult(HitTestEntry<HitTestTarget>#2978c(_ReusableRenderView#8fae3), HitTestEntry<HitTestTarget>#7189a(<REDACTED_TOKEN>))
+#0      WidgetController._getElementPoint (package:flutter_test/src/controller.dart:2077:25)
+#1      WidgetController.getCenter (package:flutter_test/src/controller.dart:1861:12)
+#2      WidgetController.tap (package:flutter_test/src/controller.dart:1041:7)
+#3      main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/admin/admin_panel_audit_test.dart:134:20)
+<asynchronous suspension>
+#4      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
+<asynchronous suspension>
+#5      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
+<asynchronous suspension>
+#6      StackZoneSpecification._registerCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:114:42)
+<asynchronous suspension>
+To silence this warning, pass "warnIfMissed: false" to "tap()".
+To make this warning fatal, set WidgetController.hitTestWarningShouldBeFatal to true.
+
+00:23 +37 ~11 -3: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test
+00:23 +38 ~11 -3: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test
+00:23 +39 ~11 -3: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test
+00:23 +40 ~11 -3: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test
+00:23 +41 ~11 -3: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test
+00:23 +42 ~11 -3: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test
+00:23 +42 ~11 -3: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:23 +42 ~12 -3: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test
+00:26 +43 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: (setUpAll)
+00:26 +43 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should return correct quota for valid country-language combination
+00:26 +44 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should return 0 for invalid country-language combination
+00:26 +45 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have correct total global quota
+00:26 +46 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should include all major regions
+00:26 +47 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have reasonable quota distribution
+00:26 +48 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should handle edge cases in quota calculations
+00:26 +49 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have correct quota for specific countries
+00:26 +50 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have exactly 50 country-language combinations
+00:26 +51 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have no duplicate keys
+00:26 +52 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have all quotas as positive integers
+00:26 +53 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should have correct key format (country_language)
+00:26 +54 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: AmbassadorQuotaService Tests should match exact quota requirements from specification
+00:26 +55 ~12 -3: /Users/a/Documents/APP-OINT/test/ambassador_quota_service_test.dart: (tearDownAll)
+00:26 +55 ~12 -3: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:26 +55 ~13 -3: /Users/a/Documents/APP-OINT/test/booking_service_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:26 +55 ~14 -3: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:26 +55 ~15 -3: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (suite)
+  Skip: Pending Firebase setup conflicts
+00:27 +55 ~16 -3: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink model should serialize correctly
+00:27 +56 ~16 -3: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink should categorize status correctly
+00:27 +57 ~16 -3: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink should handle different statuses
+00:27 +58 ~16 -3: Some tests failed.
