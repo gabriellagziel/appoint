@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io';
 
 import '../services/playtime_service.dart';
@@ -255,7 +256,9 @@ class PlaytimeBackgroundNotifier extends StateNotifier<AsyncValue<void>> {
   ) async {
     state = const AsyncValue.loading();
     try {
-      // Convert string path to File
+      if (kIsWeb) {
+        throw UnsupportedError('createBackground is not supported on the web');
+      }
       final imageFile = File(imagePath);
       await _service.createBackground(
           name, description, imageFile, category, tags);
