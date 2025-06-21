@@ -8,6 +8,7 @@ import '../../../config/theme.dart';
 import '../../../providers/playtime_provider.dart';
 import '../../../models/playtime_game.dart';
 import '../../../models/playtime_session.dart';
+import '../../../utils/color_extensions.dart';
 
 class PlaytimeLiveScreen extends ConsumerStatefulWidget {
   final PlaytimeGame? game;
