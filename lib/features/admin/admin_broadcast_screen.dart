@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io';
 import '../../utils/color_extensions.dart';
 import '../../models/admin_broadcast_message.dart';
@@ -665,6 +666,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
   // Image and Video Picker Methods
   Future<void> _pickImage() async {
+    if (kIsWeb) {
+      return;
+    }
     try {
       final pickedFile = await ImagePicker().pickImage(
         source: ImageSource.gallery,
@@ -687,6 +691,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Future<void> _pickVideo() async {
+    if (kIsWeb) {
+      return;
+    }
     try {
       final pickedFile = await ImagePicker().pickVideo(
         source: ImageSource.gallery,
@@ -707,6 +714,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Future<String?> _uploadFile(File file, String path) async {
+    if (kIsWeb) {
+      throw UnsupportedError('File upload is not supported on the web');
+    }
     try {
       final ref = FirebaseStorage.instance.ref().child(path);
       final uploadTask = ref.putFile(file);
