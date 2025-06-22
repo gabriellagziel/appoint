@@ -547,4 +547,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String statusColon(Object status) {
     return 'TRANSLATE_ME';
   }
+
+  @override
+  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
 }
