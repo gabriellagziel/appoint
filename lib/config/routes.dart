@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
+import '../features/auth/home_screen.dart';
 import '../features/studio/studio_booking_screen.dart';
 import '../features/studio/studio_booking_confirm_screen.dart';
 import '../features/booking/screens/chat_booking_screen.dart';
+import '../features/booking/booking_request_screen.dart';
+import '../features/dashboard/dashboard_screen.dart';
+import '../features/profile/user_profile_screen.dart';
+import '../features/admin/admin_dashboard_screen.dart';
 import '../features/family/widgets/invitation_modal.dart';
 import '../features/family/screens/family_dashboard_screen.dart';
 import '../features/family/screens/invite_child_screen.dart';
@@ -17,10 +22,16 @@ import '../features/ambassador_onboarding_screen.dart';
 import '../models/invite.dart';
 import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
+import '../features/invite/invite_list_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     switch (settings.name) {
+      case '/':
+        return MaterialPageRoute(
+          builder: (_) => const HomeScreen(),
+          settings: settings,
+        );
       case '/studio/booking':
         return MaterialPageRoute(
           builder: (_) => const StudioBookingScreen(),
@@ -34,6 +45,26 @@ class AppRouter {
       case '/chat-booking':
         return MaterialPageRoute(
           builder: (_) => const ChatBookingScreen(),
+          settings: settings,
+        );
+      case '/booking/request':
+        return MaterialPageRoute(
+          builder: (_) => const BookingRequestScreen(),
+          settings: settings,
+        );
+      case '/dashboard':
+        return MaterialPageRoute(
+          builder: (_) => const DashboardScreen(),
+          settings: settings,
+        );
+      case '/profile':
+        return MaterialPageRoute(
+          builder: (_) => const UserProfileScreen(),
+          settings: settings,
+        );
+      case '/admin/dashboard':
+        return MaterialPageRoute(
+          builder: (_) => const AdminDashboardScreen(),
           settings: settings,
         );
       case '/family/invite':
@@ -113,6 +144,11 @@ class AppRouter {
       case '/business/profile':
         return MaterialPageRoute(
           builder: (_) => const BusinessProfileScreen(),
+          settings: settings,
+        );
+      case '/invite/list':
+        return MaterialPageRoute(
+          builder: (_) => const InviteListScreen(),
           settings: settings,
         );
       default:

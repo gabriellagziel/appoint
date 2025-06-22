@@ -5,6 +5,8 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../../services/maps_service.dart';
 import '../../services/location_service.dart';
 import '../../providers/branch_provider.dart';
+import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class BookingRequestScreen extends ConsumerStatefulWidget {
   const BookingRequestScreen({super.key});
@@ -15,32 +17,40 @@ class BookingRequestScreen extends ConsumerStatefulWidget {
 }
 
 class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
-  late GoogleMapController _mapController;
+  GoogleMapController? _mapController;
   final LocationService _locationService = LocationService();
   Set<Marker> _markers = {};
 
   @override
   void initState() {
     super.initState();
-    _loadInitialData();
+    if (!kIsWeb) {
+      _loadInitialData();
+    }
   }
 
   Future<void> _loadInitialData() async {
-    final branches = await ref.read(branchesProvider.future);
-    setState(() {
-      _markers = branches
-          .map((b) => Marker(
-                markerId: MarkerId(b.id),
-                position: LatLng(b.latitude, b.longitude),
-                infoWindow: InfoWindow(title: b.name),
-              ))
-          .toSet();
-    });
+    try {
+      final branches = await ref.read(branchesProvider.future);
+      setState(() {
+        _markers = branches
+            .map((b) => Marker(
+                  markerId: MarkerId(b.id),
+                  position: LatLng(b.latitude, b.longitude),
+                  infoWindow: InfoWindow(title: b.name),
+                ))
+            .toSet();
+      });
 
-    final position = await _locationService.getCurrentLocation();
-    if (position != null) {
-      _mapController.moveCamera(CameraUpdate.newLatLng(
-          LatLng(position.latitude, position.longitude)));
+      if (!kIsWeb) {
+        final position = await _locationService.getCurrentLocation();
+        if (position != null && _mapController != null) {
+          _mapController!.moveCamera(CameraUpdate.newLatLng(
+              LatLng(position.latitude, position.longitude)));
+        }
+      }
+    } catch (e) {
+      print('Error loading initial data: $e');
     }
   }
 
@@ -53,13 +63,43 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Select Location')),
-      body: GoogleMap(
-        initialCameraPosition: MapsService.initialPosition,
-        markers: _markers,
-        onMapCreated: (controller) {
-          _mapController = controller;
-        },
-        myLocationEnabled: true,
+      body: kIsWeb ? _buildWebFallback() : _buildMap(),
+    );
+  }
+
+  Widget _buildMap() {
+    return GoogleMap(
+      initialCameraPosition: MapsService.initialPosition,
+      markers: _markers,
+      onMapCreated: (controller) {
+        _mapController = controller;
+      },
+      myLocationEnabled: true,
+    );
+  }
+
+  Widget _buildWebFallback() {
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Icon(Icons.map, size: 64, color: Colors.grey),
+          const SizedBox(height: 16),
+          const Text(
+            'Map selection is not available on web',
+            style: TextStyle(fontSize: 18),
+          ),
+          const SizedBox(height: 16),
+          const Text(
+            'Please use the mobile app for location selection',
+            style: TextStyle(fontSize: 14, color: Colors.grey),
+          ),
+          const SizedBox(height: 24),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Go Back'),
+          ),
+        ],
       ),
     );
   }

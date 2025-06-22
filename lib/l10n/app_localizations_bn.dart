@@ -554,4 +554,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String statusColon(Object status) {
     return 'স্ট্যাটাস: $status';
   }
+
+  @override
+  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
 }

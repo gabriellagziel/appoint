@@ -1181,6 +1181,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Status:'**
   String statusColon(Object status);
+
+  /// No description provided for @pleaseLoginToViewProfile.
+  ///
+  /// In en, this message translates to:
+  /// **'Please log in to view your profile.'**
+  String get pleaseLoginToViewProfile;
 }
 
 class _AppLocalizationsDelegate

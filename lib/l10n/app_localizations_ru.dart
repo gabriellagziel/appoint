@@ -556,4 +556,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String statusColon(Object status) {
     return 'TODO: Status: $status';
   }
+
+  @override
+  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
 }
