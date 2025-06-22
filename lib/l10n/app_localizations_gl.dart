@@ -550,4 +550,7 @@ class AppLocalizationsGl extends AppLocalizations {
   String statusColon(Object status) {
     return 'Status:';
   }
+
+  @override
+  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
 }
