@@ -54,6 +54,41 @@ Appointment scheduling app built with Flutter with advanced features including A
    flutter test
 ```
 
+5. **Web & Firebase Tools Setup**
+
+   Install Chrome or Chromium for Flutter web support and set the `CHROME_EXECUTABLE` path. Then install the Firebase CLI for emulators.
+
+   ```bash
+   # macOS Chrome install
+   brew install --cask google-chrome
+
+   # Linux Chromium install
+   sudo snap install chromium
+
+   # Set CHROME_EXECUTABLE for Flutter
+   echo 'export CHROME_EXECUTABLE="$(which chromium-browser || which google-chrome)"' >> ~/.zshrc
+   source ~/.zshrc
+
+   # Firebase CLI
+   npm install -g firebase-tools
+   ```
+
+   Verify the setup:
+
+   ```bash
+   which chromium-browser || which google-chrome
+   firebase --version
+   ```
+
+   If network restrictions block access to Google services, allow the following endpoints:
+
+   - `storage.googleapis.com`
+   - `firebase.tools`
+   - `accounts.google.com`
+   - `firebase.googleapis.com`
+   - `firebaseinstallations.googleapis.com`
+   - Metadata endpoints: `metadata.google.internal`, `169.254.169.254`
+
 ## Ambassador Features
 
 ### Onboarding Flow
