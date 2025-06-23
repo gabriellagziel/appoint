@@ -17,4 +17,11 @@ class AuthService {
   Future<void> signOut() async {
     await _firebaseAuth.signOut();
   }
+
+  /// Sign in using Google identity services popup on web
+  Future<UserCredential> signInWithGooglePopup() async {
+    final googleProvider = GoogleAuthProvider();
+    googleProvider.setCustomParameters({'redirect_uri': redirectUri});
+    return _firebaseAuth.signInWithPopup(googleProvider);
+  }
 }
