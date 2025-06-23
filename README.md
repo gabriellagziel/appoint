@@ -57,48 +57,42 @@ Appointment scheduling app built with Flutter with advanced features including A
 
 ## Environment Setup & Testing
 
-### Chrome/Chromium
+1. **Chrome/Chromium Installation**  
+   - macOS:  
+     ```bash
+     brew install --cask google-chrome
+     ```  
+   - Linux:  
+     ```bash
+     sudo snap install chromium
+     ```  
+   - Verify path:  
+     ```bash
+     which google-chrome || which chromium-browser
+     ```  
+   - Set `CHROME_EXECUTABLE` in your shell rc:  
+     ```bash
+     echo 'export CHROME_EXECUTABLE="$(which google-chrome || which chromium-browser)"' >> ~/.zshrc
+     source ~/.zshrc
+     ```
 
-Install Chrome or Chromium for Flutter web builds.
+2. **Firebase CLI Installation**  
+   - Homebrew:  
+     ```bash
+     brew tap firebase/tools
+     brew install firebase-cli
+     ```  
+   - Or npm:  
+     ```bash
+     npm install -g firebase-tools
+     ```  
+   - Verify:  
+     ```bash
+     firebase --version
+     ```
 
-```bash
-brew install --cask google-chrome    # macOS
-sudo snap install chromium          # Linux
-```
-
-Verify the installation:
-
-```bash
-which google-chrome || which chromium-browser
-```
-
-Set `CHROME_EXECUTABLE` in `~/.zshrc`:
-
-```bash
-echo 'export CHROME_EXECUTABLE=$(which google-chrome || which chromium-browser)' >> ~/.zshrc
-source ~/.zshrc
-```
-
-### Firebase CLI
-
-Install the Firebase CLI:
-
-```bash
-brew tap firebase/tools            # macOS
-brew install firebase-cli
-
-npm install -g firebase-tools      # alternative via npm
-```
-
-Verify:
-
-```bash
-firebase --version
-```
-
-### Network Endpoint Allowances
-
-Ensure the following domains are reachable through your proxy/firewall:
+3. **Network Endpoint Allowances**  
+   Ensure your proxy/firewall allows outgoing requests to:
 
 ```
 storage.googleapis.com
@@ -110,18 +104,24 @@ metadata.google.internal
 169.254.169.254
 ```
 
-### Testing Commands
-
+4. **Common Testing & Emulators Commands**  
 ```bash
+# Web server
 flutter run -d web-server --web-port=8080 --release --no-dds
+
+# Chrome
 flutter run -d chrome --web-port=8080
+
+# Analyze
 flutter analyze
+
+# Tests
 flutter test --coverage
+
+# Firebase emulators
+# (Download emulator JAR manually if 403, place under ~/.config/firebase/emulators/)
 firebase emulators:start --only auth,firestore
 ```
-
-If the emulator JAR download fails with a 403 error, manually download the file
-from the Firebase console and place it under `~/.cache/firebase/emulators/`.
 
 
 ## Ambassador Features
