@@ -472,7 +472,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "0.66.2"
+    version: "0.60.0"
   flutter:
     dependency: "direct main"
     description: flutter
