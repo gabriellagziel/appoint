@@ -10,6 +10,7 @@ import 'config/theme.dart';
 import 'firebase_options.dart';
 import 'services/custom_deep_link_service.dart';
 import 'services/notification_service.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 Future<void> appMain() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +26,9 @@ Future<void> appMain() async {
 
   // Initialize custom deep link service (replaces Firebase Dynamic Links)
   final deepLinkService = CustomDeepLinkService();
-  await deepLinkService.initialize();
+  if (!kIsWeb) {
+    await deepLinkService.initialize();
+  }
 
   // Initialize notifications
   final notificationService = NotificationService();
