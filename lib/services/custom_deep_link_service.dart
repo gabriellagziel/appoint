@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:uni_links/uni_links.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 import 'whatsapp_share_service.dart';
 
@@ -21,6 +22,10 @@ class CustomDeepLinkService {
 
   /// Initialize deep link handling
   Future<void> initialize() async {
+    if (kIsWeb) {
+      // Deep linking is not supported on web
+      return;
+    }
     try {
       // Handle initial link if app was opened from a link
       final initialUri = await getInitialUri();

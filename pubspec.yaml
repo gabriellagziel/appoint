@@ -67,5 +67,9 @@ flutter:
       ios:
         pluginClass: FilePickerPlugin
 
+  assets:
+    - web/assets/.env
+    - web/assets/FontManifest.json
+
 dependency_overrides:
   intl: ^0.20.2
