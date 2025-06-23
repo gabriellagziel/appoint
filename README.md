@@ -176,6 +176,8 @@ Our GitHub Actions pipeline (`.github/workflows/flutter.yml`) runs on every push
 * `flutter analyze`
 * `flutter test --coverage`
 * Uploads coverage to Codecov
+<!-- Docker setup for CI is defined in `.devcontainer/devcontainer.json` -->
+
 
 ## Recent Updates
 
