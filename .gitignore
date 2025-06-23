@@ -9,5 +9,6 @@ flutter/
 flutter.tar.xz
 .flutter-plugins
 .env
+!web/assets/.env
 .flutter-plugins-dependencies
 pubspec.lock

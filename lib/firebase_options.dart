@@ -50,12 +50,12 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBArWmfe8kSNXX_BXlBoltXFfrE08ujPdI',
-    appId: '1:944776470711:web:6f3c833ef110bca6c66d32',
-    messagingSenderId: '944776470711',
-    projectId: 'app-oint-core',
+    apiKey: 'AIzaSyAEQoB1lR2y6oJQm6Fp19d11i2Y9US8k8',
     authDomain: 'app-oint-core.firebaseapp.com',
+    projectId: 'app-oint-core',
     storageBucket: 'app-oint-core.firebasestorage.app',
+    messagingSenderId: '944776470711',
+    appId: '1:944776470711:web:6f3c833ef110bca6c66d32',
     measurementId: 'G-HHH7T7JFHS',
   );
 

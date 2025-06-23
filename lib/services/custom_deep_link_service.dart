@@ -63,6 +63,11 @@ class CustomDeepLinkService {
 
   /// Handle incoming deep links
   Future<void> _handleDeepLink(Uri uri) async {
+    // Deep link handling is disabled on web. The implementation has been
+    // commented out to prevent runtime errors when links are triggered.
+    // If deep linking support is required, restore the code below and
+    // ensure proper configuration for each platform.
+    /*
     try {
       print('Handling deep link: $uri');
 
@@ -106,6 +111,7 @@ class CustomDeepLinkService {
     } catch (e) {
       print('Error handling deep link: $e');
     }
+    */
   }
 
   /// Navigate to meeting details screen
