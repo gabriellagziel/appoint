@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthService {
+  static const redirectUri = 'http://localhost:8080/__/auth/handler';
+
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 
   Future<User?> currentUser() async {
@@ -8,7 +10,8 @@ class AuthService {
   }
 
   Future<void> signIn(String email, String password) async {
-    await _firebaseAuth.signInWithEmailAndPassword(email: email, password: password);
+    await _firebaseAuth.signInWithEmailAndPassword(
+        email: email, password: password);
   }
 
   Future<void> signOut() async {
