@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <title>Appoint</title>
   <link rel="manifest" href="manifest.json">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
   <script src="flutter.js" defer></script>
+  <script src="main.dart.js" type="application/javascript"></script>
   <script>
+    google.accounts.id.initialize({
+      client_id:
+        '944776470711-dj9rkp1ejlj72q64piqspeb056f4fkge.apps.googleusercontent.com',
+    });
     window.addEventListener('load', function(ev) {
-      _flutter.loader.loadEntrypoint();
+      _flutter.loader.load();
     });
   </script>
 </body>
