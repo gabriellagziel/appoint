@@ -53,7 +53,7 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyAEQoB1lR2y6oJQm6Fp19d11i2Y9US8k8',
     authDomain: 'app-oint-core.firebaseapp.com',
     projectId: 'app-oint-core',
-    storageBucket: 'app-oint-core.firebasestorage.app',
+    storageBucket: 'app-oint-core.appspot.com',
     messagingSenderId: '944776470711',
     appId: '1:944776470711:web:6f3c833ef110bca6c66d32',
     measurementId: 'G-HHH7T7JFHS',
@@ -64,6 +64,6 @@ class DefaultFirebaseOptions {
     appId: '1:944776470711:android:18eda6eda7b13730c66d32',
     messagingSenderId: '944776470711',
     projectId: 'app-oint-core',
-    storageBucket: 'app-oint-core.firebasestorage.app',
+    storageBucket: 'app-oint-core.appspot.com',
   );
 }
