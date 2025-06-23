@@ -48,46 +48,77 @@ Appointment scheduling app built with Flutter with advanced features including A
 
 4. **Run & Test**
 
-   
+
 ```bash
    flutter run
    flutter test
 ```
 
-5. **Web & Firebase Tools Setup**
 
-   Install Chrome or Chromium for Flutter web support and set the `CHROME_EXECUTABLE` path. Then install the Firebase CLI for emulators.
+## Environment Setup & Testing
 
-   ```bash
-   # macOS Chrome install
-   brew install --cask google-chrome
+### Chrome/Chromium
 
-   # Linux Chromium install
-   sudo snap install chromium
+Install Chrome or Chromium for Flutter web builds.
 
-   # Set CHROME_EXECUTABLE for Flutter
-   echo 'export CHROME_EXECUTABLE="$(which chromium-browser || which google-chrome)"' >> ~/.zshrc
-   source ~/.zshrc
+```bash
+brew install --cask google-chrome    # macOS
+sudo snap install chromium          # Linux
+```
 
-   # Firebase CLI
-   npm install -g firebase-tools
-   ```
+Verify the installation:
 
-   Verify the setup:
+```bash
+which google-chrome || which chromium-browser
+```
 
-   ```bash
-   which chromium-browser || which google-chrome
-   firebase --version
-   ```
+Set `CHROME_EXECUTABLE` in `~/.zshrc`:
 
-   If network restrictions block access to Google services, allow the following endpoints:
+```bash
+echo 'export CHROME_EXECUTABLE=$(which google-chrome || which chromium-browser)' >> ~/.zshrc
+source ~/.zshrc
+```
 
-   - `storage.googleapis.com`
-   - `firebase.tools`
-   - `accounts.google.com`
-   - `firebase.googleapis.com`
-   - `firebaseinstallations.googleapis.com`
-   - Metadata endpoints: `metadata.google.internal`, `169.254.169.254`
+### Firebase CLI
+
+Install the Firebase CLI:
+
+```bash
+brew tap firebase/tools            # macOS
+brew install firebase-cli
+
+npm install -g firebase-tools      # alternative via npm
+```
+
+Verify:
+
+```bash
+firebase --version
+```
+
+### Network Endpoint Allowances
+
+Ensure the following domains are reachable through your proxy/firewall:
+
+```
+storage.googleapis.com
+firebase.tools
+accounts.google.com
+firebase.googleapis.com
+firebaseinstallations.googleapis.com
+metadata.google.internal
+169.254.169.254
+```
+
+### Testing Commands
+
+```bash
+flutter run -d web-server --web-port=8080 --release --no-dds
+flutter run -d chrome --web-port=8080
+flutter test --coverage
+firebase emulators:start --only auth,firestore
+```
+
 
 ## Ambassador Features
 
