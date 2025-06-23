@@ -115,9 +115,13 @@ metadata.google.internal
 ```bash
 flutter run -d web-server --web-port=8080 --release --no-dds
 flutter run -d chrome --web-port=8080
+flutter analyze
 flutter test --coverage
 firebase emulators:start --only auth,firestore
 ```
+
+If the emulator JAR download fails with a 403 error, manually download the file
+from the Firebase console and place it under `~/.cache/firebase/emulators/`.
 
 
 ## Ambassador Features
