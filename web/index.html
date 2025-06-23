@@ -30,6 +30,7 @@
   <script>
     google.accounts.id.initialize({
       client_id: "944776470711-dj9rkp1ejlj72q64piqspeb056f4fkge.apps.googleusercontent.com",
+      redirect_uri: "http://localhost:8080/__/auth/handler",
     });
     window.addEventListener('load', function(ev) {
       _flutter.loader.load();
