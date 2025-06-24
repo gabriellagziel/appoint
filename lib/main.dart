@@ -26,9 +26,9 @@ Future<void> appMain() async {
 
   // Initialize custom deep link service (replaces Firebase Dynamic Links)
   final deepLinkService = CustomDeepLinkService();
-  if (!kIsWeb) {
-    await deepLinkService.initialize();
-  }
+  // Deep link initialization is disabled to avoid unsupported web URL errors
+  // during tests and web builds.
+  // await deepLinkService.initialize();
 
   // Initialize notifications
   final notificationService = NotificationService();
