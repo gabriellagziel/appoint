@@ -27,11 +27,12 @@
     firebase.analytics();
   }
 </script>
-<script src="config/google_origins.json" type="application/json" id="region-origins"></script>
-<script>
-  const data = JSON.parse(document.getElementById('region-origins').textContent);
-  data.origins.forEach(origin => google.accounts.id.revoke({ origin }));
-</script>
+  <!-- Load allowed origins before initializing Google Sign-In -->
+  <script src="config/google_origins.json" type="application/json" id="region-origins"></script>
+  <script>
+    const data = JSON.parse(document.getElementById('region-origins').textContent);
+    data.origins.forEach(origin => google.accounts.id.revoke({ origin }));
+  </script>
 <script>
   google.accounts.id.initialize({
       client_id: "944776470711-dj9rkp1ejlj72q64piqspeb056f4fkge.apps.googleusercontent.com",
