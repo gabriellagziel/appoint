@@ -50,8 +50,11 @@ Appointment scheduling app built with Flutter with advanced features including A
 
 
 ```bash
+   flutter pub get
+   flutter analyze
+   flutter test --coverage
+   dart test --coverage
    flutter run
-   flutter test
 ```
 
 
@@ -115,12 +118,13 @@ flutter run -d chrome --web-port=8080
 # Analyze
 flutter analyze
 
-# Tests
-flutter test --coverage
+  # Tests
+  flutter test --coverage
+  dart test --coverage
 
-# Firebase emulators
-# (Download emulator JAR manually if 403, place under ~/.config/firebase/emulators/)
-firebase emulators:start --only auth,firestore
+  # Firebase emulators
+  # (Download emulator JAR manually if 403, place under ~/.config/firebase/emulators/)
+  firebase emulators:start --only auth,firestore
 ```
 
 
