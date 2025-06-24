@@ -75,7 +75,7 @@ Appointment scheduling app built with Flutter with advanced features including A
      ```
    - Set `CHROME_EXECUTABLE` in your shell rc:
      ```bash
-     echo 'export CHROME_EXECUTABLE="$(which google-chrome || which chromium-browser)"' >> ~/.zshrc
+     echo 'export CHROME_EXECUTABLE="$(which google-chrome || which chromium-browser || which chromium)"' >> ~/.zshrc
      source ~/.zshrc
      ```
    - Enable Flutter web and fallback to Chromium:
@@ -120,6 +120,11 @@ export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
 
 4. **Common Testing & Emulators Commands**  
 ```bash
+# Final clean, build & test workflow
+cd ~/Documents/APP-OINT
+flutter clean
+flutter pub get
+
 # Web server
 flutter run -d web-server --web-port=8080 --release --no-dds
 
@@ -129,13 +134,13 @@ flutter run -d chrome --web-port=8080
 # Analyze
 flutter analyze
 
-  # Tests
-  flutter test --coverage
-  dart test --coverage
+# Tests
+flutter test --coverage=coverage
+dart test --coverage
 
-  # Firebase emulators
-  # (Download emulator JAR manually if 403, place under ~/.config/firebase/emulators/)
-  firebase emulators:start --only auth,firestore
+# Firebase emulators
+# (Download emulator JAR manually if 403, place under ~/.config/firebase/emulators/)
+firebase emulators:start --only auth,firestore
 ```
 
 
