@@ -69,14 +69,19 @@ Appointment scheduling app built with Flutter with advanced features including A
      ```bash
      sudo snap install chromium
      ```  
-   - Verify path:  
+   - Verify path:
      ```bash
      which google-chrome || which chromium-browser
-     ```  
-   - Set `CHROME_EXECUTABLE` in your shell rc:  
+     ```
+   - Set `CHROME_EXECUTABLE` in your shell rc:
      ```bash
      echo 'export CHROME_EXECUTABLE="$(which google-chrome || which chromium-browser)"' >> ~/.zshrc
      source ~/.zshrc
+     ```
+   - Enable Flutter web and fallback to Chromium:
+     ```bash
+     flutter config --enable-web
+     export CHROME_EXECUTABLE="$(which google-chrome || which chromium-browser)"
      ```
 
 2. **Firebase CLI Installation**  
@@ -105,6 +110,12 @@ firebase.googleapis.com
 firebaseinstallations.googleapis.com
 metadata.google.internal
 169.254.169.254
+```
+
+If these domains are blocked, configure pub mirrors:
+```bash
+export PUB_HOSTED_URL="https://pub.flutter-io.cn"
+export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
 ```
 
 4. **Common Testing & Emulators Commands**  
