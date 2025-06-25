@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:uni_links/uni_links.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 import 'whatsapp_share_service.dart';
 
@@ -21,6 +22,10 @@ class CustomDeepLinkService {
 
   /// Initialize deep link handling
   Future<void> initialize() async {
+    if (kIsWeb) {
+      // Deep linking is not supported on web
+      return;
+    }
     try {
       // Handle initial link if app was opened from a link
       final initialUri = await getInitialUri();
@@ -58,6 +63,11 @@ class CustomDeepLinkService {
 
   /// Handle incoming deep links
   Future<void> _handleDeepLink(Uri uri) async {
+    // Deep link handling is disabled on web. The implementation has been
+    // commented out to prevent runtime errors when links are triggered.
+    // If deep linking support is required, restore the code below and
+    // ensure proper configuration for each platform.
+    /*
     try {
       print('Handling deep link: $uri');
 
@@ -101,6 +111,7 @@ class CustomDeepLinkService {
     } catch (e) {
       print('Error handling deep link: $e');
     }
+    */
   }
 
   /// Navigate to meeting details screen

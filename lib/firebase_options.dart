@@ -51,11 +51,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'REDACTED_TOKEN',
-    appId: '1:944776470711:web:6f3c833ef110bca6c66d32',
-    messagingSenderId: '944776470711',
-    projectId: 'app-oint-core',
     authDomain: 'app-oint-core.firebaseapp.com',
+    projectId: 'app-oint-core',
     storageBucket: 'app-oint-core.firebasestorage.app',
+    messagingSenderId: '944776470711',
+    appId: '1:944776470711:web:6f3c833ef110bca6c66d32',
     measurementId: 'G-HHH7T7JFHS',
   );
 
