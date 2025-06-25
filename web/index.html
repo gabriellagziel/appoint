@@ -1,59 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details, see:
-    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
-
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="appoint">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>appoint</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = null;
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
+  <title>Appoint</title>
   <script src="flutter.js" defer></script>
+  <script src="main.dart.js" type="application/javascript"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js" defer></script>
 </head>
 <body>
   <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAEQoB1lR2y6oJQm6Fp19d11i2Y9US8k8",
+      authDomain: "app-oint-core.firebaseapp.com",
+      projectId: "app-oint-core",
+      storageBucket: "app-oint-core.firebasestorage.app",
+      messagingSenderId: "944776470711",
+      appId: "1:944776470711:web:6f3c833ef110bca6c66d32",
+      measurementId: "G-HHH7T7JFHS"
+    };
+    firebase.initializeApp(firebaseConfig);
+    if (typeof firebase.analytics === 'function') {
+      firebase.analytics();
+    }
+  </script>
+  <script>
+    google.accounts.id.initialize({
+      client_id:
+        '944776470711-dj9rkp1ejlj72q64piqspeb056f4fkge.apps.googleusercontent.com',
+    });
     window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
-            appRunner.runApp();
-          });
-        }
-      });
+      _flutter.loader.load();
     });
   </script>
 </body>
