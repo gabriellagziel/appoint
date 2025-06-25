@@ -1,8 +1,10 @@
 # Flutter & Dart
 .dart_tool/
-build/
-.pub/
 .packages
+build/
+.firebase/
+tool/diagnostics/
+*.log
 
 # Flutter SDK artifact
 flutter/
