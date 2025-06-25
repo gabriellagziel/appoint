@@ -48,11 +48,101 @@ Appointment scheduling app built with Flutter with advanced features including A
 
 4. **Run & Test**
 
-   
+
 ```bash
+   flutter pub get
+   flutter analyze
+   flutter test --coverage
+   dart test --coverage
    flutter run
-   flutter test
 ```
+
+
+## Environment Setup & Testing
+
+1. **Chrome/Chromium Installation**  
+   - macOS:  
+     ```bash
+     brew install --cask google-chrome
+     ```  
+   - Linux:  
+     ```bash
+     sudo snap install chromium
+     ```  
+   - Verify path:
+     ```bash
+     which google-chrome || which chromium-browser
+     ```
+   - Set `CHROME_EXECUTABLE` in your shell rc:
+     ```bash
+     echo 'export CHROME_EXECUTABLE="$(which google-chrome || which chromium-browser || which chromium)"' >> ~/.zshrc
+     source ~/.zshrc
+     ```
+   - Enable Flutter web and fallback to Chromium:
+     ```bash
+     flutter config --enable-web
+     export CHROME_EXECUTABLE="$(which google-chrome || which chromium-browser)"
+     ```
+
+2. **Firebase CLI Installation**  
+   - Homebrew:  
+     ```bash
+     brew tap firebase/tools
+     brew install firebase-cli
+     ```  
+   - Or npm:  
+     ```bash
+     npm install -g firebase-tools
+     ```  
+   - Verify:  
+     ```bash
+     firebase --version
+     ```
+
+3. **Network Endpoint Allowances**  
+   Ensure your proxy/firewall allows outgoing requests to:
+
+```
+storage.googleapis.com
+firebase.tools
+accounts.google.com
+firebase.googleapis.com
+firebaseinstallations.googleapis.com
+metadata.google.internal
+169.254.169.254
+```
+
+If these domains are blocked, configure pub mirrors:
+```bash
+export PUB_HOSTED_URL="https://pub.flutter-io.cn"
+export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
+```
+
+4. **Common Testing & Emulators Commands**  
+```bash
+# Final clean, build & test workflow
+cd ~/Documents/APP-OINT
+flutter clean
+flutter pub get
+
+# Web server
+flutter run -d web-server --web-port=8080 --release --no-dds
+
+# Chrome
+flutter run -d chrome --web-port=8080
+
+# Analyze
+flutter analyze
+
+# Tests
+flutter test --coverage=coverage
+dart test --coverage
+
+# Firebase emulators
+# (Download emulator JAR manually if 403, place under ~/.config/firebase/emulators/)
+firebase emulators:start --only auth,firestore
+```
+
 
 ## Ambassador Features
 
@@ -106,6 +196,8 @@ Our GitHub Actions pipeline (`.github/workflows/flutter.yml`) runs on every push
 * `flutter analyze`
 * `flutter test --coverage`
 * Uploads coverage to Codecov
+<!-- Docker setup for CI is defined in `.devcontainer/devcontainer.json` -->
+
 
 ## Recent Updates
 
