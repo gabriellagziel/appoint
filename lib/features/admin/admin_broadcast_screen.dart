@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io';
 import 'package:appoint/utils/color_extension.dart';
@@ -714,18 +713,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     }
   }
 
+  // TODO: Implement media upload without Firebase Storage
   Future<String?> _uploadFile(File file, String path) async {
-    if (kIsWeb) {
-      throw UnsupportedError('File upload is not supported on the web');
-    }
-    try {
-      final ref = FirebaseStorage.instance.ref().child(path);
-      final uploadTask = ref.putFile(file);
-      final snapshot = await uploadTask;
-      return await snapshot.ref.getDownloadURL();
-    } catch (e) {
-      throw Exception('Failed to upload file: $e');
-    }
+    throw UnimplementedError('File upload not implemented');
   }
 
   void _clearMedia() {
@@ -765,6 +755,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (_selectedImage != null) {
         final timestamp = DateTime.now().millisecondsSinceEpoch;
+        // TODO: Upload image
         imageUrl = await _uploadFile(
           _selectedImage!,
           'broadcasts/images/${user.uid}_${timestamp}.jpg',
@@ -773,6 +764,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (_selectedVideo != null) {
         final timestamp = DateTime.now().millisecondsSinceEpoch;
+        // TODO: Upload video
         videoUrl = await _uploadFile(
           _selectedVideo!,
           'broadcasts/videos/${user.uid}_${timestamp}.mp4',

@@ -54,18 +54,19 @@ dev_dependencies:
   build_runner: ^2.4.9
   freezed: ^2.5.2
   json_serializable: ^6.8.0
-  analyzer: ^6.4.1
+  analyzer: ^7.0.0
   mockito: ^5.4.4
   mocktail: ^1.0.4
   test: ^1.24.0
+  custom_lint: ^0.7.3
+  riverpod_lint: ^2.6.5
+  riverpod_generator: ^2.6.5
 
 flutter:
   uses-material-design: true
   generate: true
 
   assets:
-    - .env
-    - web/assets/.env
     - web/assets/FontManifest.json
 
   plugin:
