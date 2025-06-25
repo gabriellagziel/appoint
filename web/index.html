@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <base href="/" />
   <script src="flutter.js" defer></script>
   <script src="main.dart.js" type="application/javascript"></script>
   <script src="https://accounts.google.com/gsi/client" async defer></script>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Appoint</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js" defer></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js" defer></script>
-</head>
-<body>
-  <script>
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js';
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js';
+    
     const firebaseConfig = {
       apiKey: "AIzaSyAEQoB1lR2y6oJQm6Fp19d11i2Y9US8k8",
       authDomain: "app-oint-core.firebaseapp.com",
@@ -22,23 +23,31 @@
       appId: "1:944776470711:web:6f3c833ef110bca6c66d32",
       measurementId: "G-HHH7T7JFHS"
     };
-  firebase.initializeApp(firebaseConfig);
-  if (typeof firebase.analytics === 'function') {
-    firebase.analytics();
-  }
-</script>
-  <!-- Load allowed origins before initializing Google Sign-In -->
-  <script src="config/google_origins.json" type="application/json" id="region-origins"></script>
-  <script>
-    const data = JSON.parse(document.getElementById('region-origins').textContent);
-    data.origins.forEach(origin => google.accounts.id.revoke({ origin }));
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    
+    // Make Firebase available globally for compatibility
+    window.firebase = {
+      analytics: () => analytics,
+      initializeApp: () => app
+    };
   </script>
-<script>
-  google.accounts.id.initialize({
-      client_id: "944776470711-dj9rkp1ejlj72q64piqspeb056f4fkge.apps.googleusercontent.com",
-      redirect_uri: "http://localhost:8080/__/auth/handler",
-    });
+</head>
+<body>
+  <script>
+    // Wait for Google Identity script to load before initializing
     window.addEventListener('load', function(ev) {
+      // Initialize Google Identity after the script has loaded
+      if (typeof google !== 'undefined' && google.accounts && google.accounts.id) {
+        google.accounts.id.initialize({
+          client_id: "944776470711-dj9rkp1ejlj72q64piqspeb056f4fkge.apps.googleusercontent.com",
+          redirect_uri: "http://localhost:8080/__/auth/handler",
+        });
+      }
+      
+      // Load Flutter
       _flutter.loader.load();
     });
   </script>
