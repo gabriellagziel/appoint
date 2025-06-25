@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 import 'l10n/app_localizations.dart';
 import 'config/routes.dart';
 import 'config/theme.dart';
@@ -42,6 +43,7 @@ Future<void> appMain() async {
 }
 
 void main() {
+  setUrlStrategy(const HashUrlStrategy());
   appMain();
 }
 
