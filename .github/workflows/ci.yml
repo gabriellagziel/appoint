@@ -9,31 +9,43 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    services:
+      firebase:
+        image: cdrx/fake-firebase-emulator:latest
+        ports:
+          - 8080:8080   # Firestore
+          - 5001:5001   # Functions
     env:
       FIREBASE_PROJECT: app-oint-core
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: Install dependencies
+        run: flutter pub get
 
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
       - name: Start Firebase emulators
         run: |
-          firebase emulators:start \
-            --only firestore,functions \
-            --project "$FIREBASE_PROJECT" &
-          EMULATOR_PID=$!
-          sleep 5
+          firebase emulators:start --only firestore,functions &
+          echo "$!" > emulator.pid
 
       - name: Run unit tests
         run: flutter test test/services
 
-      - name: Run integration test
+      - name: Run integration tests
         run: flutter test integration_test/app_test.dart
 
       - name: Stop emulators
         if: always()
-        run: kill $EMULATOR_PID
+        run: |
+          kill $(cat emulator.pid)
 
   deploy-functions:
     needs: build-and-test
