@@ -34,7 +34,7 @@ jobs:
       - name: Start Firebase emulators
         run: |
           firebase emulators:start --only firestore,functions &
-          echo "$!" > emulator.pid
+          echo $! > emulator.pid
 
       - name: Run unit tests
         run: flutter test test/services
