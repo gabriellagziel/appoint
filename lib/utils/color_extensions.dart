@@ -9,10 +9,10 @@ extension ColorValues on Color {
     int toInt(double value) => (value.clamp(0.0, 1.0) * 255.0).round() & 0xff;
 
     return Color.fromARGB(
-      toInt(alpha ?? (a / 255)),
-      toInt(red ?? (r / 255)),
-      toInt(green ?? (g / 255)),
-      toInt(blue ?? (b / 255)),
+      toInt(alpha ?? (this.alpha / 255)),
+      toInt(red ?? (this.red / 255)),
+      toInt(green ?? (this.green / 255)),
+      toInt(blue ?? (this.blue / 255)),
     );
   }
 }
