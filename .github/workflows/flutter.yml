@@ -22,12 +22,13 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.7.0'
+          flutter-version: "3.7.0"
 
       - run: flutter pub get
-      - run: tool/codegen.sh
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: flutter test --coverage
+      - run: flutter build web
       - uses: codecov/codecov-action@v3
         with:
           files: coverage/lcov.info
