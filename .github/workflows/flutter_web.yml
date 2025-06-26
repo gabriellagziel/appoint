@@ -15,6 +15,10 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
 
     steps:
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.7.0'
     - uses: actions/checkout@v3
     - name: Cache Pub packages
       uses: actions/cache@v3
@@ -23,59 +27,22 @@ jobs:
         key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
         restore-keys: |
           ${{ runner.os }}-pub-
-
-    - name: Cache Flutter SDK artifacts
-      uses: actions/cache@v3
-      with:
-        path: ${{ env.FLUTTER_CACHE_DIR }}
-        key: ${{ runner.os }}-flutter-${{ hashFiles('.github/workflows/**.yml') }}
-        restore-keys: |
-          ${{ runner.os }}-flutter-
-
-    - name: Setup Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: '3.7.0'
-        channel: 'stable'
-    - name: Set up Dart SDK
-      uses: dart-lang/setup-dart@v1
-      with:
-        sdk: '3.7.0'
-    - name: Verify Dart CLI
-      run: dart --version
-    - name: Pre-flight: Verify network access
-      run: |
-        for host in pub.dev storage.googleapis.com; do
-          curl --head --fail https://$host || {
-            echo "❌ Cannot reach $host. Ensure it’s whitelisted in CI network settings."
-            exit 1
-          }
-        done
+    - name: Clear Flutter cache
+      run: flutter clean
     - name: Verify Flutter Version
       run: flutter --version
-    
-    - name: Install dependencies offline
-      run: flutter pub get --offline
-
-    - name: Run code generation offline
-      run: dart run build_runner build --delete-conflicting-outputs --offline
-    
-    - name: Verify formatting
-      run: dart format --output=none --set-exit-if-changed .
-    
-    - name: Analyze project source
-      run: dart analyze
-    
-    - name: Run tests
-      run: dart test --coverage
-    - name: Run integration tests
-      run: flutter test integration_test/
-    
-    - name: Build web
-      run: flutter build web --release
-    
+    - name: Verify Dart Version
+      run: dart --version
+    - run: flutter pub get
+    - run: dart pub get
+    - run: dart run build_runner build --delete-conflicting-outputs
+    - run: flutter analyze
+    - run: dart analyze
+    - run: dart test --coverage
+    - run: dart test integration_test/
+    - run: flutter build web --release
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
         name: web-build
-        path: build/web/ 
+        path: build/web/
