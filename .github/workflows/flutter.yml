@@ -10,17 +10,37 @@ jobs:
   analyze_and_test:
     name: Analyze & Test
     runs-on: ubuntu-latest
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      FLUTTER_CACHE_DIR: ~/.flutter
     steps:
-      - uses: actions/checkout@v3
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.3.0'
-
+          flutter-version: '3.7.0'
+      - uses: actions/checkout@v3
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
+      - name: Clear Flutter cache
+        run: flutter clean
+      - name: Verify Flutter Version
+        run: flutter --version
+      - name: Verify Dart Version
+        run: dart --version
       - run: flutter pub get
-      - run: tool/codegen.sh
+      - run: dart pub get
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
-      - run: flutter test --coverage
+      - run: dart analyze
+      - run: dart test --coverage
+      - run: dart test integration_test/
+      - run: flutter build web
       - uses: codecov/codecov-action@v3
         with:
           files: coverage/lcov.info
