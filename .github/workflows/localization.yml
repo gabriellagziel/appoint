@@ -19,7 +19,9 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.7.0"
+          flutter-version: '3.7.0'
+      - name: Verify Flutter Version
+        run: flutter --version
       
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -32,6 +34,16 @@ jobs:
       
       - name: Get Flutter dependencies
         run: flutter pub get
+      - name: Build runner
+        run: dart run build_runner build --delete-conflicting-outputs
+      - name: Flutter analyze
+        run: flutter analyze
+      - name: Flutter tests
+        run: flutter test --coverage
+      - name: Flutter integration tests
+        run: flutter test integration_test/
+      - name: Flutter build web
+        run: flutter build web
       
       - name: Validate ARB files structure
         run: |

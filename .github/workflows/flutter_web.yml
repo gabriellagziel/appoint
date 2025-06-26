@@ -19,8 +19,10 @@ jobs:
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: "3.7.0"
+        flutter-version: '3.7.0'
         channel: 'stable'
+    - name: Verify Flutter Version
+      run: flutter --version
     
     - name: Install dependencies
       run: flutter pub get
@@ -36,6 +38,8 @@ jobs:
     
     - name: Run tests
       run: flutter test --coverage
+    - name: Run integration tests
+      run: flutter test integration_test/
     
     - name: Build web
       run: flutter build web --release
