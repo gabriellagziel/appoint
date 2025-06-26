@@ -659,5 +659,6 @@
   "@statusColon": {
     "description": "Status colon label"
   },
-  "@@locale": "lv"
+  "@@locale": "lv",
+  "pleaseLoginToViewProfile": "Please log in to view your profile."
 }

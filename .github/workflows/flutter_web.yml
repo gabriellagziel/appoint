@@ -9,33 +9,40 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      FLUTTER_CACHE_DIR: ~/.flutter
 
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup Flutter
+    - name: Set up Flutter
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.19.0'
-        channel: 'stable'
-    
-    - name: Install dependencies
-      run: flutter pub get
-    
-    - name: Verify formatting
-      run: dart format --output=none --set-exit-if-changed .
-    
-    - name: Analyze project source
-      run: flutter analyze
-    
-    - name: Run tests
-      run: flutter test
-    
-    - name: Build web
-      run: flutter build web --release
-    
+        flutter-version: '3.7.0'
+    - uses: actions/checkout@v3
+    - name: Cache Pub packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.pub-cache
+        key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pub-
+    - name: Clear Flutter cache
+      run: flutter clean
+    - name: Verify Flutter Version
+      run: flutter --version
+    - name: Verify Dart Version
+      run: dart --version
+    - run: flutter pub get
+    - run: dart pub get
+    - run: dart run build_runner build --delete-conflicting-outputs
+    - run: flutter analyze
+    - run: dart analyze
+    - run: dart test --coverage
+    - run: dart test integration_test/
+    - run: flutter build web --release
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
         name: web-build
-        path: build/web/ 
+        path: build/web/
