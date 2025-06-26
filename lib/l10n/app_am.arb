@@ -1,664 +1,664 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "ዳግም ያዘምኑ",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "TRANSLATE_ME",
+  "home": "ቤት",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "እስካሁን ስብሰባዎች የሉም",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "እሺ",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "ሁኔታ ይምረጡ",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "ተመዝግብ",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "መልዕክት ይሰርዝ",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "TRANSLATE_ME",
+  "decline": "ይተው",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "TRANSLATE_ME",
+  "adminBroadcast": "የአስተዳደር ስርጭት",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "TRANSLATE_ME",
+  "login": "ግባ",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "ጓደኞች ይምረጡ",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "TRANSLATE_ME",
+  "noInvites": "ግብዣዎች የሉም",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "ሰዓት ይምረጡ",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "ተሳካ",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "ለውጡን ይቀልሱ",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "TRANSLATE_ME",
+  "opened": "ተከፈተ",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "ብልጽግናዊ ትዕይንት ይፍጠሩ",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "TRANSLATE_ME",
+  "messageSentSuccessfully": "መልዕክት በትክክል ተልኳል",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "እንደገና ሠርተው ይደርሱ",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "TRANSLATE_ME",
+  "next": "ቀጣይ",
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "ፈልግ",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "TRANSLATE_ME",
+  "cancelInviteConfirmation": "የግብዣ እውቀት ሰርዝ",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "TRANSLATE_ME",
+  "created": "ተፈጠረ",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "TRANSLATE_ME",
+  "revokeAccess": "መዳረሻ ይሰርዝ",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "TRANSLATE_ME",
+  "saveGroupForRecognition": "ቡድን ለመታወቂያ ያስቀምጡ",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "በቀጥታ ስብሰባ ተዘጋጅቷል",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "TRANSLATE_ME",
+  "revokeAccessConfirmation": "የመዳረሻ ሰረዝ እውቀት",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "ያውርዱ",
   "@download": {
     "description": "Download button text"
   },
-  "password": "TRANSLATE_ME",
+  "password": "የይለፍ ቃል",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "TRANSLATE_ME",
+  "errorLoadingFamilyLinks": "የቤተሰብ አገናኝ ማስጫን ስህተት",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "TRANSLATE_ME",
+  "cancel": "ሰርዝ",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "Playtime ይፍጠሩ",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "TRANSLATE_ME",
+  "failedToActionPrivacyRequest": "የግላዊነት ጥያቄ ማከናወን አልተሳካም",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "TRANSLATE_ME",
+  "appTitle": "የመተግበሪያ ርዕስ",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "TRANSLATE_ME",
+  "accept": "ተቀበል",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "ብልጽግናዊ ሁኔታ",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "የPlaytime መግለጫ",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "ሰርዝ",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "ብልጽግናዊ ትዕይንት ተጀምሯል",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "የመጀመሪያዎቹን ጨዋታ ይፍጠሩ",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "ተሳታፊዎች",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "TRANSLATE_ME",
+  "recipients": "ተቀባዮች",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "ውጤቶች የሉም",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "TRANSLATE_ME",
+  "yes": "አዎን",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "TRANSLATE_ME",
+  "invite": "ጋብቻ",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "በቀጥታ ሁኔታ",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "ተጠናቋል",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "TRANSLATE_ME",
+  "defaultShareMessage": "የአካፋይ መልእክት",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "TRANSLATE_ME",
+  "no": "አይ",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "የPlaytime ማዕከል",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "ስህተት",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "በቀጥታ ትዕይንት ይፍጠሩ",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "TRANSLATE_ME",
+  "enableNotifications": "ማሳወቂያዎችን አብቅት",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "TRANSLATE_ME",
+  "invited": "ተጋብቷል",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "TRANSLATE_ME",
+  "content": "ይዘት",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "TRANSLATE_ME",
+  "meetingSharedSuccessfully": "ስብሰባ በትክክል ተካፋፈለ",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "ወደ Playtime እንኳን ደህና መጣችሁ",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "ሁሉንም እይ",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "ብልጽግናዊ Playtime",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "TRANSLATE_ME",
+  "staffScreenTBD": "የሰራተኞች ማያ ሊታወቀው ይጠበቃል",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "ቁረጥ",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "TRANSLATE_ME",
+  "inviteCancelledSuccessfully": "ግብዣ በትክክል ተሰርዟል",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "ድገም",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "TRANSLATE_ME",
+  "composeBroadcastMessage": "የስርጭት መልዕክት ይፍጠሩ",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
-  "sendNow": "TRANSLATE_ME",
+  "sendNow": "አሁን ይላኩ",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "እስካሁን ጨዋታዎች የሉም",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "ይምረጡ",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "ስለ",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "ይምረጡ",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "TRANSLATE_ME",
+  "profile": "መገለጫ",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "TRANSLATE_ME",
+  "removeChild": "ልጅ አስወግድ",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "TRANSLATE_ME",
+  "status": "ሁኔታ",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "ውጣ",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "ቅጥ",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "TRANSLATE_ME",
+  "welcome": "እንኳን ደህና መጣዎት",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "ትዕይንት ይፍጠሩ",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "TRANSLATE_ME",
+  "familyMembers": "የቤተሰብ አባላት",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "ያስገቡ",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "ቀጣይ ስብሰባዎች",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "TRANSLATE_ME",
+  "enterGroupName": "የቡድን ስም ያስገቡ",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "አረጋግጥ",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "በቀጥታ Playtime",
   "@playtimeLive": {
     "description": "Live play label"
   },
-  "errorLoadingInvites": "TRANSLATE_ME",
+  "errorLoadingInvites": "የግብዣዎች ማስጫን ስህተት",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "TRANSLATE_ME",
+  "targetingFilters": "የመድረሻ ቅርጸ-ቁልፍ",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "TRANSLATE_ME",
+  "pickVideo": "ቪዲዮ ይምረጡ",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "ጨዋታ ተሰርዟል",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "TRANSLATE_ME",
+  "scheduleForLater": "ወደ ቀጣይ ይጠቅሙ",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "TRANSLATE_ME",
+  "accessRevokedSuccessfully": "መዳረሻ በትክክል ተሰርዟል",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "TRANSLATE_ME",
+  "type": "ዓይነት",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "TRANSLATE_ME",
+  "checkingPermissions": "መብቶች በማረጋገጥ",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "ቅጂ",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "TRANSLATE_ME",
+  "yesCancel": "አዎን, ሰርዝ",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "TRANSLATE_ME",
+  "email": "ኢሜይል",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "TRANSLATE_ME",
+  "shareOnWhatsApp": "[AM] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "TRANSLATE_ME",
+  "notificationSettings": "የማሳወቂያ ቅንብሮች",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
-  "myProfile": "TRANSLATE_ME",
+  "myProfile": "መገለጫዬ",
   "@myProfile": {
     "description": "My profile title"
   },
-  "revoke": "TRANSLATE_ME",
+  "revoke": "እንደገና ሰርዝ",
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "TRANSLATE_ME",
+  "noBroadcastMessages": "የስርጭት መልዕክቶች የሉም",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "TRANSLATE_ME",
+  "requestType": "የጥያቄ ዓይነት",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "TRANSLATE_ME",
+  "notifications": "ማሳወቂያዎች",
   "@notifications": {
     "description": "Notifications title"
   },
-  "details": "TRANSLATE_ME",
+  "details": "ዝርዝሮች",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "TRANSLATE_ME",
+  "cancelInvite": "ግብዣ ሰርዝ",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "አዲስ ይፍጠሩ",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "ቅንብሮች",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "Playtime አትቀበሉ",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "TRANSLATE_ME",
+  "errorLoadingProfile": "የመገለጫ ማስጫን ስህተት",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "አርትዕ",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "ያክሉ",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "ጨዋታ ተፈቅዷል",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "የይለፍ ቃል ረሳሁት?",
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
-  "familyDashboard": "TRANSLATE_ME",
+  "familyDashboard": "የቤተሰብ ዳሽቦርድ",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "TRANSLATE_ME",
+  "loading": "በመስበክ ላይ",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "ፈጣን እርምጃዎች",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "የPlaytime ርዕስ",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "TRANSLATE_ME",
+  "otpResentSuccessfully": "OTP በትክክል ተልኳል",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "TRANSLATE_ME",
+  "errorCheckingPermissions": "የመብት ማረጋገጫ ስህተት",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "TRANSLATE_ME",
+  "clientScreenTBD": "የደንበኛ ማያ ሊታወቀው ይጠበቃል",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "TRANSLATE_ME",
+  "fcmToken": "የFCM ቶኬን",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "TRANSLATE_ME",
+  "pickImage": "ምስል ይምረጡ",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "ያለፈው",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "TRANSLATE_ME",
+  "noProfileFound": "መገለጫ አልተገኘም",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "TRANSLATE_ME",
+  "noFamilyMembersYet": "እስካሁን የቤተሰብ አባላት የሉም",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "TRANSLATE_ME",
+  "mediaOptional": "ሚዲያ (አማራጭ)",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "TRANSLATE_ME",
+  "messageSavedSuccessfully": "መልዕክት በትክክል ተቀመጠ",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "ወደ… ተያዘ",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "TRANSLATE_ME",
+  "dashboard": "ዳሽቦርድ",
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "TRANSLATE_ME",
+  "noPermissionForBroadcast": "ስርጭት መፈቀድ የለም",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "የPlaytime አስተዳደር መአዛውን ርዕስ",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "TRANSLATE_ME",
+  "inviteDetail": "ዝርዝር ግብዣ",
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "TRANSLATE_ME",
+  "scheduled": "ተዘጋጅቷል",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "TRANSLATE_ME",
+  "failedToResendOtp": "OTP እንደገና ማልክት አልተሳካም",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "TRANSLATE_ME",
+  "scheduling": "በማዘጋጀት ላይ",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "TRANSLATE_ME",
+  "errorSavingMessage": "መልዕክት ማስቀመጥ ስህተት",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
-  "save": "TRANSLATE_ME",
+  "save": "አስቀምጥ",
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "Playtime ይቀበሉ",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "የመጀመሪያዎቹን ትዕይንት ይፍጠሩ",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "ጨዋታ ተከስቷል",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "TRANSLATE_ME",
+  "failedToRevokeAccess": "መዳረሻ መሰረዝ አልተሳካም",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "የቅርብ ጊዜ ጨዋታዎች",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "TRANSLATE_ME",
+  "customizeMessage": "መልዕክት ያስተካክሉ",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "TRANSLATE_ME",
+  "failedToCancelInvite": "ግብዣ ማስወገድ አልተሳካም",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "TRANSLATE_ME",
+  "errorSendingMessage": "መልዕክት ማልክት ስህተት",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "የይለፍ ቃል አረጋግጥ",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "TRANSLATE_ME",
+  "errorLoadingPrivacyRequests": "የግላዊነት ጥያቄዎች ማስጫን ስህተት",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "TRANSLATE_ME",
+  "connectedChildren": "የተገናኙ ልጆች",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "አካፍል",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "የጨዋታውን ስም ያስገቡ",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "TRANSLATE_ME",
+  "pleaseLoginForFamilyFeatures": "ለቤተሰብ ባለስልጣናት እባክዎ ይግቡ",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "TRANSLATE_ME",
+  "myInvites": "ግብዣዎቼ",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "ጨዋታ ይፍጠሩ",
   "@createGame": {
     "description": "Create game button"
   },
-  "groupNameOptional": "TRANSLATE_ME",
+  "groupNameOptional": "የቡድን ስም (አማራጭ)",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "Playtime ስብሰባዎች የሉም",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "TRANSLATE_ME",
+  "adminScreenTBD": "የአስተዳደር ማያ ሊታወቀው ይጠበቃል",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "የPlaytime የወላጆች ዳሽቦርድ ርዕስ",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "close": "TRANSLATE_ME",
+  "close": "ዝጋ",
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "TRANSLATE_ME",
+  "knownGroupDetected": "ታዋቂ ቡድን ተገኝቷል",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "ወደፊት",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "ጨዋታ ይምረጡ",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "TRANSLATE_ME",
+  "managePermissions": "መብቶች ያስተዳድሩ",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "TRANSLATE_ME",
+  "pollOptions": "የምርጫ አማራጮች",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "TRANSLATE_ME",
+  "clicked": "ተጫነ",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "TRANSLATE_ME",
+  "link": "አገናኝ",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "TRANSLATE_ME",
+  "meetingReadyMessage": "ስብሰባው ዝግጅት ተጠናቋል",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "TRANSLATE_ME",
+  "pendingInvites": "የበረሰ ግብዣዎች",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "TRANSLATE_ME",
+  "statusColon": "ሁኔታ:",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "am",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginToViewProfile": "መገለጫ ለማየት እባክዎ ይግቡ"
 }

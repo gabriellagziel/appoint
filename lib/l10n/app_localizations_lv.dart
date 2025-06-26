@@ -9,545 +9,552 @@ class AppLocalizationsLv extends AppLocalizations {
   AppLocalizationsLv([String locale = 'lv']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'Atjaunot';
 
   @override
-  String get home => 'TRANSLATE_ME';
+  String get home => 'Sākums';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'Vēl nav sesiju';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'Labi';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'Izvēlieties spēles režīmu:';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'Reģistrēties';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'Ieplānot ziņojumu';
 
   @override
-  String get decline => 'TRANSLATE_ME';
+  String get decline => 'Noraidīt';
 
   @override
-  String get adminBroadcast => 'TRANSLATE_ME';
+  String get adminBroadcast => 'Administratora pārraide';
 
   @override
-  String get login => 'TRANSLATE_ME';
+  String get login => 'Ielogoties';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'Izvēlieties draugus uzaicināšanai';
 
   @override
-  String get noInvites => 'TRANSLATE_ME';
+  String get noInvites => 'Nav uzaicinājumu';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'Izvēlieties laiku';
 
   @override
-  String get success => 'Success';
+  String get success => 'Veiksmīgi';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'Atsaukt';
 
   @override
-  String opened(Object count) {
-    return 'TRANSLATE_ME';
-  }
+  String get opened => 'Atvērts';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'Izveidot virtuālo sesiju';
 
   @override
-  String get messageSentSuccessfully => 'TRANSLATE_ME';
+  String get messageSentSuccessfully => 'Ziņojums veiksmīgi nosūtīts';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'Atkārtot';
 
   @override
-  String get next => 'TRANSLATE_ME';
+  String get next => 'Tālāk';
 
   @override
-  String get search => 'Search';
+  String get search => 'Meklēt';
 
   @override
-  String get cancelInviteConfirmation => 'TRANSLATE_ME';
+  String get cancelInviteConfirmation =>
+      'Vai tiešām vēlaties atcelt šo uzaicinājumu?';
 
   @override
   String created(Object date) {
-    return 'TRANSLATE_ME';
+    return 'Izveidots: $date';
   }
 
   @override
-  String get revokeAccess => 'TRANSLATE_ME';
+  String get revokeAccess => 'Atņemt piekļuvi';
 
   @override
-  String get saveGroupForRecognition => 'TRANSLATE_ME';
+  String get saveGroupForRecognition => 'Saglabāt grupu atpazīšanai';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'Tiešraides spēles laiks ieplānots!';
 
   @override
-  String get revokeAccessConfirmation => 'TRANSLATE_ME';
+  String get revokeAccessConfirmation =>
+      'Vai tiešām vēlaties atņemt šim bērnam piekļuvi? To nevarēs atjaunot.';
 
   @override
-  String get download => 'Download';
+  String get download => 'Lejupielādēt';
 
   @override
-  String get password => 'TRANSLATE_ME';
+  String get password => 'Parole';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'TRANSLATE_ME';
+    return 'Kļūda ielādējot ģimenes saites: $error';
   }
 
   @override
-  String get cancel => 'TRANSLATE_ME';
+  String get cancel => 'Atcelt';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Izveidot';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'TRANSLATE_ME';
+    return 'Neizdevās apstrādāt privātuma pieprasījumu $action: $error';
   }
 
   @override
-  String get appTitle => 'TRANSLATE_ME';
+  String get appTitle => 'Appoint';
 
   @override
-  String get accept => 'TRANSLATE_ME';
+  String get accept => 'Pieņemt';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'Virtuālā spēle';
 
   @override
   String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+      'Izbaudiet tiešraides vai virtuālas spēles ar draugiem!';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Dzēst';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Virtuālā spēles laiks sākts!';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'Izveidojiet savu pirmo spēli';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'Dalībnieki';
 
   @override
   String recipients(Object count) {
-    return 'TRANSLATE_ME';
+    return 'Saņēmēji: $count';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'Rezultāti nav atrasti';
 
   @override
-  String get yes => 'TRANSLATE_ME';
+  String get yes => 'Jā';
 
   @override
-  String get invite => 'TRANSLATE_ME';
+  String get invite => 'Uzaicināt';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'Tiešraides spēle';
 
   @override
-  String get done => 'Done';
+  String get done => 'Gatavs';
 
   @override
-  String get defaultShareMessage => 'TRANSLATE_ME';
+  String get defaultShareMessage =>
+      'Sveiki! Esmu ieplānojis tikšanos ar jums caur APP-OINT. Noklikšķiniet šeit, lai apstiprinātu vai ieteiktu citu laiku:';
 
   @override
-  String get no => 'TRANSLATE_ME';
+  String get no => 'Nē';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Spēles laika centrs';
 
   @override
-  String get error => 'Error';
+  String get error => 'Kļūda';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'Izveidot tiešraides sesiju';
 
   @override
-  String get enableNotifications => 'TRANSLATE_ME';
+  String get enableNotifications => 'Iespējot paziņojumus';
 
   @override
   String invited(Object date) {
-    return 'TRANSLATE_ME';
+    return 'Uzaicināts: $date';
   }
 
   @override
   String content(Object content) {
-    return 'TRANSLATE_ME';
+    return 'Saturs: $content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'TRANSLATE_ME';
+  String get meetingSharedSuccessfully => 'Tikšanās veiksmīgi kopīgota!';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Laipni lūdzam spēles laikā';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'Skatīt visus';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Virtuālā spēle';
 
   @override
-  String get staffScreenTBD => 'TRANSLATE_ME';
+  String get staffScreenTBD => 'Personāla ekrāns - drīzumā';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'Izgriezt';
 
   @override
-  String get inviteCancelledSuccessfully => 'TRANSLATE_ME';
+  String get inviteCancelledSuccessfully => 'Uzaicinājums veiksmīgi atcelts!';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'Mēģināt vēlreiz';
 
   @override
-  String get composeBroadcastMessage => 'TRANSLATE_ME';
+  String get composeBroadcastMessage => 'Sastādīt pārraides ziņojumu';
 
   @override
-  String get sendNow => 'TRANSLATE_ME';
+  String get sendNow => 'Sūtīt tagad';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'Vēl nav spēļu';
 
   @override
-  String get select => 'Select';
+  String get select => 'Izvēlēties';
 
   @override
-  String get about => 'About';
+  String get about => 'Par';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'Izvēlēties';
 
   @override
-  String get profile => 'TRANSLATE_ME';
+  String get profile => 'Profils';
 
   @override
-  String get removeChild => 'TRANSLATE_ME';
+  String get removeChild => 'Noņemt bērnu';
 
   @override
   String status(Object status) {
-    return 'TRANSLATE_ME';
+    return 'Statuss';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'Izrakstīties';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'Ielīmēt';
 
   @override
-  String get welcome => 'TRANSLATE_ME';
+  String get welcome => 'Laipni lūdzam';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'Izveidot spēles laika sesiju';
 
   @override
-  String get familyMembers => 'TRANSLATE_ME';
+  String get familyMembers => 'Ģimenes locekļi';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'Augšupielādēt';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'Gaidāmās sesijas';
 
   @override
-  String get enterGroupName => 'TRANSLATE_ME';
+  String get enterGroupName => 'Ievadiet grupas nosaukumu';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Apstiprināt';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Tiešraides spēle';
 
   @override
-  String get errorLoadingInvites => 'TRANSLATE_ME';
-
-  @override
-  String get targetingFilters => 'TRANSLATE_ME';
-
-  @override
-  String get pickVideo => 'TRANSLATE_ME';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'TRANSLATE_ME';
-
-  @override
-  String get accessRevokedSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String type(Object type) {
-    return 'TRANSLATE_ME';
+  String errorLoadingInvites(Object error) {
+    return 'Kļūda ielādējot uzaicinājumus: $error';
   }
 
   @override
-  String get checkingPermissions => 'TRANSLATE_ME';
+  String get targetingFilters => 'Mērķauditorijas filtri';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'Izvēlēties video';
 
   @override
-  String get yesCancel => 'TRANSLATE_ME';
+  String get playtimeGameDeleted => 'Spēle dzēsta';
 
   @override
-  String get email => 'TRANSLATE_ME';
+  String get scheduleForLater => 'Ieplānot vēlāk';
 
   @override
-  String get shareOnWhatsApp => 'TRANSLATE_ME';
+  String get accessRevokedSuccessfully => 'Piekļuve veiksmīgi atņemta!';
 
   @override
-  String get notificationSettings => 'TRANSLATE_ME';
+  String get type => 'Tips';
 
   @override
-  String get myProfile => 'TRANSLATE_ME';
+  String get checkingPermissions => 'Pārbauda atļaujas';
 
   @override
-  String get revoke => 'TRANSLATE_ME';
+  String get copy => 'Kopēt';
 
   @override
-  String get noBroadcastMessages => 'TRANSLATE_ME';
+  String get yesCancel => 'Jā, atcelt';
+
+  @override
+  String get email => 'E-pasts';
+
+  @override
+  String get shareOnWhatsApp => 'Kopīgot WhatsApp';
+
+  @override
+  String get notificationSettings => 'Paziņojumu iestatījumi';
+
+  @override
+  String get myProfile => 'Mans profils';
+
+  @override
+  String get revoke => 'Atņemt';
+
+  @override
+  String get noBroadcastMessages => 'Nav pārraides ziņojumu';
 
   @override
   String requestType(Object type) {
-    return 'TRANSLATE_ME';
+    return 'Pieprasījuma veids';
   }
 
   @override
-  String get notifications => 'TRANSLATE_ME';
+  String get notifications => 'Paziņojumi';
 
   @override
-  String get details => 'TRANSLATE_ME';
+  String get details => 'Detaļas';
 
   @override
-  String get cancelInvite => 'TRANSLATE_ME';
+  String get cancelInvite => 'Atcelt uzaicinājumu';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'Izveidot jaunu';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Iestatījumi';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Noraidīt';
 
   @override
-  String get errorLoadingProfile => 'TRANSLATE_ME';
+  String errorLoadingProfile(Object error) {
+    return 'Kļūda ielādējot profilu: $error';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Rediģēt';
 
   @override
-  String get add => 'Add';
+  String get add => 'Pievienot';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'Spēle apstiprināta';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'Aizmirsi paroli?';
 
   @override
-  String get familyDashboard => 'TRANSLATE_ME';
+  String get familyDashboard => 'Ģimenes informācijas panelis';
 
   @override
-  String get loading => 'TRANSLATE_ME';
+  String get loading => 'Ielādē';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'Ātrās darbības';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'Spēles laiks';
 
   @override
-  String get otpResentSuccessfully => 'TRANSLATE_ME';
+  String get otpResentSuccessfully => 'OTP veiksmīgi pārsūtīts!';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'TRANSLATE_ME';
+    return 'Kļūda pārbaudot atļaujas: $error';
   }
 
   @override
-  String get clientScreenTBD => 'TRANSLATE_ME';
+  String get clientScreenTBD => 'Klienta ekrāns - drīzumā';
 
   @override
   String fcmToken(Object token) {
-    return 'TRANSLATE_ME';
+    return 'FCM tokens';
   }
 
   @override
-  String get pickImage => 'TRANSLATE_ME';
+  String get pickImage => 'Izvēlēties attēlu';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'Iepriekšējais';
 
   @override
-  String get noProfileFound => 'TRANSLATE_ME';
+  String get noProfileFound => 'Profils nav atrasts';
 
   @override
-  String get noFamilyMembersYet => 'TRANSLATE_ME';
+  String get noFamilyMembersYet => 'Vēl nav ģimenes locekļu';
 
   @override
-  String get mediaOptional => 'TRANSLATE_ME';
+  String get mediaOptional => 'Mediji (nav obligāti)';
 
   @override
-  String get messageSavedSuccessfully => 'TRANSLATE_ME';
+  String get messageSavedSuccessfully => 'Ziņojums veiksmīgi saglabāts!';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'Ieplānots uz';
 
   @override
-  String get dashboard => 'TRANSLATE_ME';
+  String get dashboard => 'Informācijas panelis';
 
   @override
-  String get noPermissionForBroadcast => 'TRANSLATE_ME';
+  String get noPermissionForBroadcast => 'Nav atļaujas pārraidē';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Spēles laika spēles - Administrators';
 
   @override
-  String get inviteDetail => 'TRANSLATE_ME';
+  String get inviteDetail => 'Uzaicinājuma detaļas';
 
   @override
   String scheduled(Object date) {
-    return 'TRANSLATE_ME';
+    return 'Ieplānots';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'TRANSLATE_ME';
+    return 'Neizdevās pārsūtīt OTP: $error';
   }
 
   @override
-  String get scheduling => 'TRANSLATE_ME';
+  String get scheduling => 'Ieplāno';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'TRANSLATE_ME';
+    return 'Kļūda saglabājot ziņojumu: $error';
   }
 
   @override
-  String get save => 'TRANSLATE_ME';
+  String get save => 'Saglabāt';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Apstiprināt';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'Izveidojiet savu pirmo sesiju';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'Spēle noraidīta';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'TRANSLATE_ME';
+    return 'Neizdevās atņemt piekļuvi: $error';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'Nesenās spēles';
 
   @override
-  String get customizeMessage => 'TRANSLATE_ME';
+  String get customizeMessage => 'Pielāgot ziņojumu';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'TRANSLATE_ME';
+    return 'Neizdevās atcelt uzaicinājumu: $error';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'TRANSLATE_ME';
+    return 'Kļūda sūtot ziņojumu: $error';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'Apstiprināt paroli';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'TRANSLATE_ME';
+    return 'Kļūda ielādējot privātuma pieprasījumus: $error';
   }
 
   @override
-  String get connectedChildren => 'TRANSLATE_ME';
+  String get connectedChildren => 'Savienotie bērni';
 
   @override
-  String get share => 'Share';
+  String get share => 'Kopīgot';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'Ievadiet spēles nosaukumu';
 
   @override
-  String get pleaseLoginForFamilyFeatures => 'TRANSLATE_ME';
+  String get pleaseLoginForFamilyFeatures =>
+      'Lūdzu, ielogojieties, lai piekļūtu ģimenes funkcijām';
 
   @override
-  String get myInvites => 'TRANSLATE_ME';
+  String get myInvites => 'Mani uzaicinājumi';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'Izveidot spēli';
 
   @override
-  String get groupNameOptional => 'TRANSLATE_ME';
+  String get groupNameOptional => 'Grupas nosaukums (nav obligāts)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Spēles laika sesijas nav atrastas.';
 
   @override
-  String get adminScreenTBD => 'TRANSLATE_ME';
+  String get adminScreenTBD => 'Administratora ekrāns drīzumā';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle =>
+      'Spēles laika informācijas panelis';
 
   @override
-  String get close => 'TRANSLATE_ME';
+  String get close => 'Aizvērt';
 
   @override
-  String get knownGroupDetected => 'TRANSLATE_ME';
+  String get knownGroupDetected => 'Atpazīta zināma grupa';
 
   @override
-  String get back => 'Back';
+  String get back => 'Atpakaļ';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'Izvēlēties spēli';
 
   @override
-  String get managePermissions => 'TRANSLATE_ME';
+  String get managePermissions => 'Pārvaldīt atļaujas';
 
   @override
-  String get pollOptions => 'TRANSLATE_ME';
+  String get pollOptions => 'Aptaujas opcijas';
 
   @override
   String clicked(Object count) {
-    return 'TRANSLATE_ME';
+    return 'Noklikšķināts';
   }
 
   @override
   String link(Object link) {
-    return 'TRANSLATE_ME';
+    return 'Saite';
   }
 
   @override
-  String get meetingReadyMessage => 'TRANSLATE_ME';
+  String get meetingReadyMessage =>
+      'Jūsu tikšanās ir gatava! Pievienojieties tagad';
 
   @override
-  String get pendingInvites => 'TRANSLATE_ME';
+  String get pendingInvites => 'Gaidošie uzaicinājumi';
 
   @override
   String statusColon(Object status) {
-    return 'TRANSLATE_ME';
+    return 'Statuss:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      'Lūdzu, ielogojieties, lai apskatītu savu profilu';
 }

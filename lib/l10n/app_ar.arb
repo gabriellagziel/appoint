@@ -1,664 +1,664 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "تحديث",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "TODO_TRANSLATE: Home",
+  "home": "الرئيسية",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "لا توجد جلسات بعد",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "حسناً",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "اختر وضعاً",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "سجّل",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "جدولة رسالة",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "TODO_TRANSLATE: Decline",
+  "decline": "رفض",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "TODO_TRANSLATE: Admin Broadcast",
+  "adminBroadcast": "بث الإدارة",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "TODO_TRANSLATE: Login",
+  "login": "تسجيل الدخول",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "اختر الأصدقاء",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "TODO_TRANSLATE: No invites",
+  "noInvites": "لا توجد دعوات",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "اختر الوقت",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "تم بنجاح",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "تراجع",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "TODO_TRANSLATE: Opened",
+  "opened": "مفتوح",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "إنشاء جلسة افتراضية",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "TODO_TRANSLATE: Message sent successfully",
+  "messageSentSuccessfully": "تم إرسال الرسالة بنجاح",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "إعادة",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "TODO_TRANSLATE: Next",
+  "next": "التالي",
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "بحث",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "TODO_TRANSLATE: Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "إلغاء تأكيد الدعوة",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "TODO_TRANSLATE: Created",
+  "created": "تم الإنشاء",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "TODO_TRANSLATE: Revoke Access",
+  "revokeAccess": "سحب الوصول",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "TODO_TRANSLATE: Save Group for Recognition",
+  "saveGroupForRecognition": "احفظ المجموعة للتعرف",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "تم جدول البث المباشر",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "TODO_TRANSLATE: Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "تأكيد سحب الوصول",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "تنزيل",
   "@download": {
     "description": "Download button text"
   },
-  "password": "TODO_TRANSLATE: Password",
+  "password": "كلمة المرور",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "TODO_TRANSLATE: Error loading family links",
+  "errorLoadingFamilyLinks": "خطأ في تحميل روابط العائلة",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "TODO_TRANSLATE: Cancel",
+  "cancel": "إلغاء",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "إنشاء Playtime",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "TODO_TRANSLATE: Failed to action privacy request",
+  "failedToActionPrivacyRequest": "فشل في تنفيذ طلب الخصوصية",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "TODO_TRANSLATE: APP-OINT",
+  "appTitle": "عنوان التطبيق",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "TODO_TRANSLATE: Accept",
+  "accept": "قبول",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "الوضع الافتراضي",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "وصف Playtime",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "حذف",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "بدأت الجلسة الافتراضية",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "أنشئ لعبتك الأولى",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "المشاركون",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "TODO_TRANSLATE: Recipients",
+  "recipients": "المستلمون",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "لا توجد نتائج",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "TODO_TRANSLATE: Yes",
+  "yes": "نعم",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "TODO_TRANSLATE: Invite",
+  "invite": "دعوة",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "وضع مباشر",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "تم",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "TODO_TRANSLATE: Let's meet via Appoint!",
+  "defaultShareMessage": "رسالة المشاركة الافتراضية",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "TODO_TRANSLATE: No",
+  "no": "لا",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "مركز Playtime",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "خطأ",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "إنشاء جلسة مباشرة",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "TODO_TRANSLATE: Enable Notifications",
+  "enableNotifications": "تفعيل الإشعارات",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "TODO_TRANSLATE: Invited",
+  "invited": "مدعو",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "TODO_TRANSLATE: Content",
+  "content": "المحتوى",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "TODO_TRANSLATE: Meeting shared successfully",
+  "meetingSharedSuccessfully": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "مرحباً بك في Playtime",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "عرض الكل",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "Playtime افتراضي",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "TODO_TRANSLATE: Staff screen coming soon",
+  "staffScreenTBD": "شاشة الموظفين قيد التحديد",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "قص",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "TODO_TRANSLATE: Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "تم إلغاء الدعوة بنجاح",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "أعد المحاولة",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "TODO_TRANSLATE: Compose Broadcast Message",
+  "composeBroadcastMessage": "إنشاء رسالة البث",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
-  "sendNow": "TODO_TRANSLATE: Send Now",
+  "sendNow": "أرسل الآن",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "لا توجد ألعاب بعد",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "اختر",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "حول",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "اختر",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "TODO_TRANSLATE: Profile",
+  "profile": "الملف الشخصي",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "TODO_TRANSLATE: Remove Child",
+  "removeChild": "إزالة طفل",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "TODO_TRANSLATE: Status",
+  "status": "الحالة",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "تسجيل الخروج",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "لصق",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "TODO_TRANSLATE: Welcome",
+  "welcome": "مرحباً",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "إنشاء جلسة",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "TODO_TRANSLATE: Family Members",
+  "familyMembers": "أفراد العائلة",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "تحميل",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "الجلسات القادمة",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "TODO_TRANSLATE: Enter group name",
+  "enterGroupName": "أدخل اسم المجموعة",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "تأكيد",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "Playtime مباشر",
   "@playtimeLive": {
     "description": "Live play label"
   },
-  "errorLoadingInvites": "TODO_TRANSLATE: Error loading invites",
+  "errorLoadingInvites": "خطأ في تحميل الدعوات",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "TODO_TRANSLATE: Targeting Filters",
+  "targetingFilters": "فلاتر الاستهداف",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "TODO_TRANSLATE: Pick Video",
+  "pickVideo": "اختر فيديو",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "تم حذف اللعبة",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "TODO_TRANSLATE: Schedule for Later",
+  "scheduleForLater": "جدولة لاحقاً",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "TODO_TRANSLATE: Access revoked successfully",
+  "accessRevokedSuccessfully": "تم سحب الوصول بنجاح",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "TODO_TRANSLATE: Type",
+  "type": "النوع",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "TODO_TRANSLATE: Checking permissions...",
+  "checkingPermissions": "جاري التحقق من الأذونات",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "نسخ",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "TODO_TRANSLATE: Yes, Cancel",
+  "yesCancel": "نعم، إلغاء",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "TODO_TRANSLATE: Email",
+  "email": "البريد الإلكتروني",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "TODO_TRANSLATE: Share on WhatsApp",
+  "shareOnWhatsApp": "[AR] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "TODO_TRANSLATE: Notification Settings",
+  "notificationSettings": "إعدادات الإشعارات",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
-  "myProfile": "TODO_TRANSLATE: My Profile",
+  "myProfile": "ملفي الشخصي",
   "@myProfile": {
     "description": "My profile title"
   },
-  "revoke": "TODO_TRANSLATE: Revoke",
+  "revoke": "سحب",
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "TODO_TRANSLATE: No messages yet",
+  "noBroadcastMessages": "لا توجد رسائل بث",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "TODO_TRANSLATE: Request Type",
+  "requestType": "نوع الطلب",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "TODO_TRANSLATE: Notifications",
+  "notifications": "الإشعارات",
   "@notifications": {
     "description": "Notifications title"
   },
-  "details": "TODO_TRANSLATE: Details",
+  "details": "التفاصيل",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "TODO_TRANSLATE: Cancel Invite",
+  "cancelInvite": "إلغاء الدعوة",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "إنشاء جديد",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "الإعدادات",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "رفض Playtime",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "TODO_TRANSLATE: Error loading profile",
+  "errorLoadingProfile": "خطأ في تحميل الملف الشخصي",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "تعديل",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "إضافة",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "تم الموافقة على اللعبة",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "هل نسيت كلمة المرور؟",
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
-  "familyDashboard": "TODO_TRANSLATE: Family Dashboard",
+  "familyDashboard": "لوحة تحكم العائلة",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "TODO_TRANSLATE: Loading...",
+  "loading": "جارٍ التحميل",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "إجراءات سريعة",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "عنوان Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "TODO_TRANSLATE: OTP resent successfully",
+  "otpResentSuccessfully": "تم إعادة إرسال رمز التحقق",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "TODO_TRANSLATE: Error checking permissions",
+  "errorCheckingPermissions": "خطأ في التحقق من الأذونات",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "TODO_TRANSLATE: Client screen coming soon",
+  "clientScreenTBD": "شاشة العميل قيد التحديد",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "TODO_TRANSLATE: FCM Token",
+  "fcmToken": "رمز FCM",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "TODO_TRANSLATE: Pick Image",
+  "pickImage": "اختر صورة",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "السابق",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "TODO_TRANSLATE: No profile found",
+  "noProfileFound": "لم يتم العثور على ملف شخصي",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "TODO_TRANSLATE: No family members yet",
+  "noFamilyMembersYet": "لا يوجد أعضاء عائلة بعد",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "TODO_TRANSLATE: Media (Optional)",
+  "mediaOptional": "وسائط (اختياري)",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "TODO_TRANSLATE: Message saved successfully",
+  "messageSavedSuccessfully": "تم حفظ الرسالة بنجاح",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "مجدول لـ",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "TODO_TRANSLATE: Dashboard",
+  "dashboard": "لوحة القيادة",
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "TODO_TRANSLATE: No permission for broadcast",
+  "noPermissionForBroadcast": "لا يوجد إذن للبث",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "عنوان لوحة إدارة Playtime",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "TODO_TRANSLATE: Invite Details",
+  "inviteDetail": "تفاصيل الدعوة",
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "TODO_TRANSLATE: Scheduled",
+  "scheduled": "مجدول",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "TODO_TRANSLATE: Failed to resend OTP",
+  "failedToResendOtp": "فشل في إعادة إرسال رمز التحقق",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "TODO_TRANSLATE: Scheduling",
+  "scheduling": "جارٍ الجدولة",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "TODO_TRANSLATE: Error saving message",
+  "errorSavingMessage": "خطأ في حفظ الرسالة",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
-  "save": "TODO_TRANSLATE: Save",
+  "save": "حفظ",
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "قبول Playtime",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "أنشئ جلستك الأولى",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "تم رفض اللعبة",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "TODO_TRANSLATE: Failed to revoke access",
+  "failedToRevokeAccess": "فشل في سحب الوصول",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "الألعاب الأخيرة",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "TODO_TRANSLATE: Customize Message",
+  "customizeMessage": "تخصيص الرسالة",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "TODO_TRANSLATE: Failed to cancel invite",
+  "failedToCancelInvite": "فشل في إلغاء الدعوة",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "TODO_TRANSLATE: Error sending message",
+  "errorSendingMessage": "خطأ في إرسال الرسالة",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "تأكيد كلمة المرور",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "TODO_TRANSLATE: Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "خطأ في تحميل طلبات الخصوصية",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "TODO_TRANSLATE: Connected Children",
+  "connectedChildren": "الأطفال المتصلون",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "مشاركة",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "أدخل اسم اللعبة",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "TODO_TRANSLATE: Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "يرجى تسجيل الدخول لميزات العائلة",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "TODO_TRANSLATE: My Invites",
+  "myInvites": "دعواتي",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "إنشاء لعبة",
   "@createGame": {
     "description": "Create game button"
   },
-  "groupNameOptional": "TODO_TRANSLATE: Group Name (Optional)",
+  "groupNameOptional": "اسم المجموعة (اختياري)",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "لا توجد جلسات Playtime",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "TODO_TRANSLATE: Admin screen coming soon",
+  "adminScreenTBD": "شاشة الإدارة قيد التحديد",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "عنوان لوحة الآباء في Playtime",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "close": "TODO_TRANSLATE: Close",
+  "close": "إغلاق",
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "TODO_TRANSLATE: Known group detected",
+  "knownGroupDetected": "تم الكشف عن مجموعة معروفة",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "عودة",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "اختر لعبة",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "TODO_TRANSLATE: Manage Permissions",
+  "managePermissions": "إدارة الأذونات",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "TODO_TRANSLATE: Poll Options",
+  "pollOptions": "خيارات الاستطلاع",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "TODO_TRANSLATE: Clicked",
+  "clicked": "تم النقر",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "TODO_TRANSLATE: Link",
+  "link": "رابط",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "TODO_TRANSLATE: Your meeting is ready! Join now",
+  "meetingReadyMessage": "الاجتماع جاهز",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "TODO_TRANSLATE: Pending Invites",
+  "pendingInvites": "الدعوات المعلقة",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "TODO_TRANSLATE: Status:",
+  "statusColon": "الحالة:",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "ar",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginToViewProfile": "يرجى تسجيل الدخول لعرض الملف الشخصي"
 }

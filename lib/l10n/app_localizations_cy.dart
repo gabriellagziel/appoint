@@ -9,548 +9,549 @@ class AppLocalizationsCy extends AppLocalizations {
   AppLocalizationsCy([String locale = 'cy']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'Adnewyddu';
 
   @override
-  String get home => 'Home';
+  String get home => 'Hafan';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'Dim sesiynau eto';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'Iawn';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'Dewiswch fodd';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'Cofrestru';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'Atodwch neges';
 
   @override
-  String get decline => 'Decline';
+  String get decline => 'Gwrthod';
 
   @override
-  String get adminBroadcast => 'Admin Broadcast';
+  String get adminBroadcast => 'Darlledu gweinyddol';
 
   @override
-  String get login => 'Login';
+  String get login => 'Mewngofnodi';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'Dewiswch ffrindiau';
 
   @override
-  String get noInvites => 'No invites';
+  String get noInvites => 'Dim gwahoddiadau';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'Dewiswch amser';
 
   @override
-  String get success => 'Success';
+  String get success => 'Llwyddiant';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'Dadhadlu';
 
   @override
-  String opened(Object count) {
-    return 'Opened';
-  }
+  String get opened => 'Agorwyd';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'Creu sesiwn rhithwir';
 
   @override
-  String get messageSentSuccessfully => 'Message sent successfully';
+  String get messageSentSuccessfully => 'Neges wedi ei hanfon yn llwyddiannus';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'Ailadrodd';
 
   @override
-  String get next => 'Next';
+  String get next => 'Nesaf';
 
   @override
-  String get search => 'Search';
+  String get search => 'Chwilio';
 
   @override
-  String get cancelInviteConfirmation =>
-      'Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => 'Diddymu cadarnhad gwahoddiad';
 
   @override
   String created(Object date) {
-    return 'Created';
+    return 'Wedi creu';
   }
 
   @override
-  String get revokeAccess => 'Revoke Access';
+  String get revokeAccess => 'Canslo mynediad';
 
   @override
-  String get saveGroupForRecognition => 'Save Group for Recognition';
+  String get saveGroupForRecognition => 'Cadw grŵp ar gyfer adnabod';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'Sesiwn byw wedi ei drefnu';
 
   @override
-  String get revokeAccessConfirmation =>
-      'Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => 'Cadarnhad canslo mynediad';
 
   @override
-  String get download => 'Download';
+  String get download => 'Lawrlwytho';
 
   @override
-  String get password => 'Password';
+  String get password => 'Cyfrinair';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Error loading family links';
+    return 'Gwall wrth lwytho dolenni teuluol';
   }
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'Canslo';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Creu Playtime';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Failed to action privacy request';
+    return 'Methwyd gweithredu cais preifatrwydd';
   }
 
   @override
-  String get appTitle => 'APP-OINT';
+  String get appTitle => 'Teitl y cais';
 
   @override
-  String get accept => 'Accept';
+  String get accept => 'Derbyn';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'Modd rhithwir';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Disgrifiad Playtime';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Dileu';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Sesiwn rhithwir wedi cychwyn';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'Creu eich gêm gyntaf';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'Cyfranogwyr';
 
   @override
   String recipients(Object count) {
-    return 'Recipients';
+    return 'Derbynwyr';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'Dim canlyniadau';
 
   @override
-  String get yes => 'Yes';
+  String get yes => 'Ie';
 
   @override
-  String get invite => 'Invite';
+  String get invite => 'Gwahodd';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'Modd byw';
 
   @override
-  String get done => 'Done';
+  String get done => 'Wedi gorffen';
 
   @override
-  String get defaultShareMessage => 'Let\'s meet via Appoint!';
+  String get defaultShareMessage => 'Neges rhannu ddiofyn';
 
   @override
-  String get no => 'No';
+  String get no => 'Na';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Canolfan Playtime';
 
   @override
-  String get error => 'Error';
+  String get error => 'Gwall';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'Creu sesiwn byw';
 
   @override
-  String get enableNotifications => 'Enable Notifications';
+  String get enableNotifications => 'Galluogi hysbysiadau';
 
   @override
   String invited(Object date) {
-    return 'Invited';
+    return 'Wedi gwahodd';
   }
 
   @override
   String content(Object content) {
-    return 'Content';
+    return 'Cynnwys';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Meeting shared successfully';
+  String get meetingSharedSuccessfully =>
+      'Cyfarfod wedi ei rannu yn llwyddiannus';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Croeso i Playtime';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'Gweld popeth';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Playtime rhithwir';
 
   @override
-  String get staffScreenTBD => 'Staff screen coming soon';
+  String get staffScreenTBD => 'Sgrîn staff i\'w diffinio';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'Torrwch';
 
   @override
-  String get inviteCancelledSuccessfully => 'Invite cancelled successfully';
+  String get inviteCancelledSuccessfully =>
+      'Gwahoddiad wedi ei ganslo\'n llwyddiannus';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'Ceisio eto';
 
   @override
-  String get composeBroadcastMessage => 'Compose Broadcast Message';
+  String get composeBroadcastMessage => 'Cyfansoddi neges darlledu';
 
   @override
-  String get sendNow => 'Send Now';
+  String get sendNow => 'Anfon nawr';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'Dim gemau eto';
 
   @override
-  String get select => 'Select';
+  String get select => 'Dewis';
 
   @override
-  String get about => 'About';
+  String get about => 'Am';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'Dewiswch';
 
   @override
-  String get profile => 'Profile';
+  String get profile => 'Proffil';
 
   @override
-  String get removeChild => 'Remove Child';
+  String get removeChild => 'Tynnu plentyn';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return 'Statws';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'Allgofnodi';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'Gludo';
 
   @override
-  String get welcome => 'Welcome';
+  String get welcome => 'Croeso';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'Creu sesiwn';
 
   @override
-  String get familyMembers => 'Family Members';
+  String get familyMembers => 'Aelodau teulu';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'Llwytho i fyny';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'Sesiynau sydd i ddod';
 
   @override
-  String get enterGroupName => 'Enter group name';
+  String get enterGroupName => 'Nodwch enw\'r grŵp';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Cadarnhau';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Playtime byw';
 
   @override
-  String get errorLoadingInvites => 'Error loading invites';
-
-  @override
-  String get targetingFilters => 'Targeting Filters';
-
-  @override
-  String get pickVideo => 'Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'Schedule for Later';
-
-  @override
-  String get accessRevokedSuccessfully => 'Access revoked successfully';
-
-  @override
-  String type(Object type) {
-    return 'Type';
+  String errorLoadingInvites(Object error) {
+    return 'Gwall wrth lwytho gwahoddiadau';
   }
 
   @override
-  String get checkingPermissions => 'Checking permissions...';
+  String get targetingFilters => 'Hidlyddion targedu';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'Dewiswch fideo';
 
   @override
-  String get yesCancel => 'Yes, Cancel';
+  String get playtimeGameDeleted => 'Gêm wedi ei ddileu';
 
   @override
-  String get email => 'Email';
+  String get scheduleForLater => 'Trefnu ar gyfer yn nes ymlaen';
 
   @override
-  String get shareOnWhatsApp => 'Share on WhatsApp';
+  String get accessRevokedSuccessfully =>
+      'Mynediad wedi ei ganslo\'n llwyddiannus';
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get type => 'Math';
 
   @override
-  String get myProfile => 'My Profile';
+  String get checkingPermissions => 'Gwirio caniatâd';
 
   @override
-  String get revoke => 'Revoke';
+  String get copy => 'Copïo';
 
   @override
-  String get noBroadcastMessages => 'No messages yet';
+  String get yesCancel => 'Ie, canslo';
+
+  @override
+  String get email => 'E-bost';
+
+  @override
+  String get shareOnWhatsApp => 'Rhannu ar WhatsApp';
+
+  @override
+  String get notificationSettings => 'Gosodiadau hysbysiadau';
+
+  @override
+  String get myProfile => 'Fy mhroffil';
+
+  @override
+  String get revoke => 'Canslo';
+
+  @override
+  String get noBroadcastMessages => 'Dim negeseuon darlledu';
 
   @override
   String requestType(Object type) {
-    return 'Request Type';
+    return 'Math cais';
   }
 
   @override
-  String get notifications => 'Notifications';
+  String get notifications => 'Hysbysiadau';
 
   @override
-  String get details => 'Details';
+  String get details => 'Manylion';
 
   @override
-  String get cancelInvite => 'Cancel Invite';
+  String get cancelInvite => 'Canslo gwahoddiad';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'Creu newydd';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Gosodiadau';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Gwrthod Playtime';
 
   @override
-  String get errorLoadingProfile => 'Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'Gwall wrth lwytho proffil';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Golygwch';
 
   @override
-  String get add => 'Add';
+  String get add => 'Ychwanegu';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'Gêm wedi ei gymeradwyo';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'Wedi anghofio cyfrinair?';
 
   @override
-  String get familyDashboard => 'Family Dashboard';
+  String get familyDashboard => 'Dangosfwrdd teulu';
 
   @override
-  String get loading => 'Loading...';
+  String get loading => 'Wrthi\'n llwytho';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'Gweithredoedd cyflym';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'Teitl Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP resent successfully';
+  String get otpResentSuccessfully => 'OTP wedi ei ail-anfon yn llwyddiannus';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Error checking permissions';
+    return 'Gwall wrth wirio caniatâd';
   }
 
   @override
-  String get clientScreenTBD => 'Client screen coming soon';
+  String get clientScreenTBD => 'Sgrîn cleient i\'w diffinio';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM Token';
+    return 'Tocyn FCM';
   }
 
   @override
-  String get pickImage => 'Pick Image';
+  String get pickImage => 'Dewiswch ddelwedd';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'Blaenorol';
 
   @override
-  String get noProfileFound => 'No profile found';
+  String get noProfileFound => 'Proffil heb ei ganfod';
 
   @override
-  String get noFamilyMembersYet => 'No family members yet';
+  String get noFamilyMembersYet => 'Dim aelodau teulu eto';
 
   @override
-  String get mediaOptional => 'Media (Optional)';
+  String get mediaOptional => 'Cyfryngau (dewisol)';
 
   @override
-  String get messageSavedSuccessfully => 'Message saved successfully';
+  String get messageSavedSuccessfully => 'Neges wedi ei gadw\'n llwyddiannus';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'Wedi\'i drefnu ar gyfer';
 
   @override
-  String get dashboard => 'Dashboard';
+  String get dashboard => 'Dangosfwrdd';
 
   @override
-  String get noPermissionForBroadcast => 'No permission for broadcast';
+  String get noPermissionForBroadcast => 'Dim caniatâd ar gyfer darlledu';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Teitl panel gweinyddu Playtime';
 
   @override
-  String get inviteDetail => 'Invite Details';
+  String get inviteDetail => 'Manylion gwahoddiad';
 
   @override
   String scheduled(Object date) {
-    return 'Scheduled';
+    return 'Wedi\'i drefnu';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Failed to resend OTP';
+    return 'Methu ail-anfon OTP';
   }
 
   @override
-  String get scheduling => 'Scheduling';
+  String get scheduling => 'Wrthi\'n trefnu';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Error saving message';
+    return 'Gwall wrth arbed neges';
   }
 
   @override
-  String get save => 'Save';
+  String get save => 'Cadw';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Cymeradwywch Playtime';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'Creu eich sesiwn gyntaf';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'Gêm wedi ei wrthod';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Failed to revoke access';
+    return 'Methu canslo mynediad';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'Gemau diweddar';
 
   @override
-  String get customizeMessage => 'Customize Message';
+  String get customizeMessage => 'Personoli neges';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Failed to cancel invite';
+    return 'Methu canslo gwahoddiad';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Error sending message';
+    return 'Gwall wrth anfon neges';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'Cadarnhau cyfrinair';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Error loading privacy requests';
+    return 'Gwall wrth lwytho ceisiadau preifatrwydd';
   }
 
   @override
-  String get connectedChildren => 'Connected Children';
+  String get connectedChildren => 'Plant cysylltiedig';
 
   @override
-  String get share => 'Share';
+  String get share => 'Rhannu';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'Nodwch enw\'r gêm';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+      'Mewngofnodwch ar gyfer nodweddion teulu';
 
   @override
-  String get myInvites => 'My Invites';
+  String get myInvites => 'Fy nghwahoddiadau';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'Creu gêm';
 
   @override
-  String get groupNameOptional => 'Group Name (Optional)';
+  String get groupNameOptional => 'Enw\'r grŵp (dewisol)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Dim sesiynau Playtime';
 
   @override
-  String get adminScreenTBD => 'Admin screen coming soon';
+  String get adminScreenTBD => 'Sgrîn gweinyddu i\'w diffinio';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle =>
+      'Teitl dangosfwrdd rhiant Playtime';
 
   @override
-  String get close => 'Close';
+  String get close => 'Cau';
 
   @override
-  String get knownGroupDetected => 'Known group detected';
+  String get knownGroupDetected => 'Grŵp cyfarwydd wedi\'i ganfod';
 
   @override
-  String get back => 'Back';
+  String get back => 'Yn ôl';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'Dewiswch gêm';
 
   @override
-  String get managePermissions => 'Manage Permissions';
+  String get managePermissions => 'Rheoli caniatâd';
 
   @override
-  String get pollOptions => 'Poll Options';
+  String get pollOptions => 'Opsiynau arolwg';
 
   @override
   String clicked(Object count) {
-    return 'Clicked';
+    return 'Wedi clicio';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return 'Cysylltiad';
   }
 
   @override
-  String get meetingReadyMessage => 'Your meeting is ready! Join now';
+  String get meetingReadyMessage => 'Cyfarfod yn barod';
 
   @override
-  String get pendingInvites => 'Pending Invites';
+  String get pendingInvites => 'Gwahoddiadau sy\'n aros';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return 'Statws:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => 'Mewngofnodwch i weld proffil';
 }

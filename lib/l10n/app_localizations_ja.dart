@@ -9,554 +9,544 @@ class AppLocalizationsJa extends AppLocalizations {
   AppLocalizationsJa([String locale = 'ja']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => '更新';
 
   @override
-  String get home => 'TODO: Home';
+  String get home => 'ホーム';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'まだセッションがありません';
 
   @override
   String get ok => 'OK';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'プレイモードを選択してください:';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'サインアップ';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'メッセージをスケジュール';
 
   @override
-  String get decline => 'TODO: Decline';
+  String get decline => '拒否';
 
   @override
-  String get adminBroadcast => 'TODO: Admin Broadcast';
+  String get adminBroadcast => '管理者ブロードキャスト';
 
   @override
-  String get login => 'TODO: Login';
+  String get login => 'ログイン';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => '友達を選択';
 
   @override
-  String get noInvites => 'TODO: No invites';
+  String get noInvites => '招待なし';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => '時間を選択';
 
   @override
-  String get success => 'Success';
+  String get success => '成功';
 
   @override
-  String get undo => 'Undo';
+  String get undo => '元に戻す';
 
   @override
-  String opened(Object count) {
-    return 'TODO: Opened: $count';
-  }
+  String get opened => '開きました';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'バーチャルセッションを作成';
 
   @override
-  String get messageSentSuccessfully => 'TODO: Message sent successfully';
+  String get messageSentSuccessfully => 'メッセージが正常に送信されました';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'やり直す';
 
   @override
-  String get next => 'TODO: Next';
+  String get next => '次へ';
 
   @override
-  String get search => 'Search';
+  String get search => '検索';
 
   @override
-  String get cancelInviteConfirmation =>
-      'TODO: Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '招待の確認をキャンセル';
 
   @override
   String created(Object date) {
-    return 'TODO: Created: $date';
+    return '作成しました';
   }
 
   @override
-  String get revokeAccess => 'TODO: Revoke Access';
+  String get revokeAccess => 'アクセスを取り消す';
 
   @override
-  String get saveGroupForRecognition =>
-      'TODO: Save group for future recognition';
+  String get saveGroupForRecognition => 'グループを認識用に保存';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'ライブセッションがスケジュールされました';
 
   @override
-  String get revokeAccessConfirmation =>
-      'TODO: Are you sure you want to revoke access for this child? This action cannot be undone.';
+  String get revokeAccessConfirmation => 'アクセス取り消しの確認';
 
   @override
-  String get download => 'Download';
+  String get download => 'ダウンロード';
 
   @override
-  String get password => 'TODO: Password';
+  String get password => 'パスワード';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'TODO: Error loading family links: $error';
+    return '家族リンクの読み込みエラー';
   }
 
   @override
-  String get cancel => 'TODO: Cancel';
+  String get cancel => 'キャンセル';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Playtimeを作成';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'TODO: Failed to $action privacy request: $error';
+    return 'プライバシーリクエストの処理に失敗しました';
   }
 
   @override
-  String get appTitle => 'TODO: Appoint';
+  String get appTitle => 'アプリのタイトル';
 
   @override
-  String get accept => 'TODO: Accept';
+  String get accept => '承認';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'バーチャルモード';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Playtimeの説明';
 
   @override
-  String get delete => 'Delete';
+  String get delete => '削除';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'バーチャルセッションが開始されました';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => '最初のゲームを作成';
 
   @override
-  String get participants => 'Participants';
+  String get participants => '参加者';
 
   @override
   String recipients(Object count) {
-    return 'TODO: Recipients: $count';
+    return '受信者';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => '結果なし';
 
   @override
-  String get yes => 'TODO: Yes';
+  String get yes => 'はい';
 
   @override
-  String get invite => 'TODO: Invite';
+  String get invite => '招待';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'ライブモード';
 
   @override
-  String get done => 'Done';
+  String get done => '完了';
 
   @override
-  String get defaultShareMessage =>
-      'TODO: Hey! I\'ve scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:';
+  String get defaultShareMessage => 'デフォルトの共有メッセージ';
 
   @override
-  String get no => 'TODO: No';
+  String get no => 'いいえ';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Playtimeハブ';
 
   @override
-  String get error => 'Error';
+  String get error => 'エラー';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'ライブセッションを作成';
 
   @override
-  String get enableNotifications => 'TODO: Enable Notifications';
+  String get enableNotifications => '通知を有効にする';
 
   @override
   String invited(Object date) {
-    return 'TODO: Invited: $date';
+    return '招待済み';
   }
 
   @override
   String content(Object content) {
-    return 'TODO: Content: $content';
+    return 'コンテンツ';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'TODO: Meeting shared successfully!';
+  String get meetingSharedSuccessfully => 'ミーティングが正常に共有されました';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Playtimeへようこそ';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'すべて表示';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'バーチャルPlaytime';
 
   @override
-  String get staffScreenTBD => 'TODO: Staff Screen - To Be Developed';
+  String get staffScreenTBD => 'スタッフ画面は後日設定';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'カット';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      'TODO: Invite cancelled successfully!';
+  String get inviteCancelledSuccessfully => '招待が正常にキャンセルされました';
 
   @override
-  String get retry => 'Retry';
+  String get retry => '再試行';
 
   @override
-  String get composeBroadcastMessage => 'TODO: Compose Broadcast Message';
+  String get composeBroadcastMessage => '放送メッセージを作成';
 
   @override
-  String get sendNow => 'TODO: Send Now';
+  String get sendNow => '今すぐ送信';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'まだゲームはありません';
 
   @override
-  String get select => 'Select';
+  String get select => '選択';
 
   @override
-  String get about => 'About';
+  String get about => '約';
 
   @override
-  String get choose => 'Choose';
+  String get choose => '選択';
 
   @override
-  String get profile => 'TODO: Profile';
+  String get profile => 'プロフィール';
 
   @override
-  String get removeChild => 'TODO: Remove Child';
+  String get removeChild => '子供を削除';
 
   @override
   String status(Object status) {
-    return 'TODO: Status: $status';
+    return 'ステータス';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'ログアウト';
 
   @override
-  String get paste => 'Paste';
+  String get paste => '貼り付け';
 
   @override
-  String get welcome => 'TODO: Welcome';
+  String get welcome => 'ようこそ';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'セッションを作成';
 
   @override
-  String get familyMembers => 'TODO: Family Members';
+  String get familyMembers => '家族メンバー';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'アップロード';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => '今後のセッション';
 
   @override
-  String get enterGroupName => 'TODO: Enter group name for recognition';
+  String get enterGroupName => 'グループ名を入力';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => '確認';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'ライブPlaytime';
 
   @override
-  String get errorLoadingInvites => 'TODO: Error loading invites';
-
-  @override
-  String get targetingFilters => 'TODO: Targeting Filters';
-
-  @override
-  String get pickVideo => 'TODO: Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'TODO: Schedule for later';
-
-  @override
-  String get accessRevokedSuccessfully => 'TODO: Access revoked successfully!';
-
-  @override
-  String type(Object type) {
-    return 'TODO: Type: $type';
+  String errorLoadingInvites(Object error) {
+    return '招待の読み込みエラー';
   }
 
   @override
-  String get checkingPermissions => 'TODO: Checking permissions...';
+  String get targetingFilters => 'ターゲティングフィルター';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'ビデオを選択';
 
   @override
-  String get yesCancel => 'TODO: Yes, Cancel';
+  String get playtimeGameDeleted => 'ゲームが削除されました';
 
   @override
-  String get email => 'TODO: Email';
+  String get scheduleForLater => '後でスケジュール';
 
   @override
-  String get shareOnWhatsApp => 'TODO: Share on WhatsApp';
+  String get accessRevokedSuccessfully => 'アクセスが正常に取り消されました';
 
   @override
-  String get notificationSettings => 'TODO: Notification Settings';
+  String get type => 'タイプ';
 
   @override
-  String get myProfile => 'TODO: My Profile';
+  String get checkingPermissions => '権限を確認中';
 
   @override
-  String get revoke => 'TODO: Revoke';
+  String get copy => 'コピー';
 
   @override
-  String get noBroadcastMessages => 'TODO: No broadcast messages yet';
+  String get yesCancel => 'はい、キャンセル';
+
+  @override
+  String get email => 'メール';
+
+  @override
+  String get shareOnWhatsApp => 'WhatsAppで共有';
+
+  @override
+  String get notificationSettings => '通知設定';
+
+  @override
+  String get myProfile => 'マイプロフィール';
+
+  @override
+  String get revoke => '取り消す';
+
+  @override
+  String get noBroadcastMessages => '放送メッセージなし';
 
   @override
   String requestType(Object type) {
-    return 'TODO: $type Request';
+    return 'リクエストタイプ';
   }
 
   @override
-  String get notifications => 'TODO: Notifications';
+  String get notifications => '通知';
 
   @override
-  String get details => 'TODO: Details';
+  String get details => '詳細';
 
   @override
-  String get cancelInvite => 'TODO: Cancel Invite';
+  String get cancelInvite => '招待をキャンセル';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => '新規作成';
 
   @override
-  String get settings => 'Settings';
+  String get settings => '設定';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Playtimeを拒否';
 
   @override
-  String get errorLoadingProfile => 'TODO: Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'プロフィール読み込みエラー';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => '編集';
 
   @override
-  String get add => 'Add';
+  String get add => '追加';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'ゲームが承認されました';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'パスワードをお忘れですか？';
 
   @override
-  String get familyDashboard => 'TODO: Family Dashboard';
+  String get familyDashboard => 'ファミリーダッシュボード';
 
   @override
-  String get loading => 'TODO: Loading...';
+  String get loading => '読み込み中';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'クイックアクション';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'Playtimeタイトル';
 
   @override
-  String get otpResentSuccessfully => 'TODO: OTP resent successfully!';
+  String get otpResentSuccessfully => 'OTPが正常に再送信されました';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'TODO: Error checking permissions: $error';
+    return '権限の確認エラー';
   }
 
   @override
-  String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+  String get clientScreenTBD => 'クライアント画面は後日設定';
 
   @override
   String fcmToken(Object token) {
-    return 'TODO: FCM Token: $token';
+    return 'FCMトークン';
   }
 
   @override
-  String get pickImage => 'TODO: Pick Image';
+  String get pickImage => '画像を選択';
 
   @override
-  String get previous => 'Previous';
+  String get previous => '前へ';
 
   @override
-  String get noProfileFound => 'TODO: No profile found';
+  String get noProfileFound => 'プロフィールが見つかりません';
 
   @override
-  String get noFamilyMembersYet =>
-      'TODO: No family members yet. Invite someone to get started!';
+  String get noFamilyMembersYet => 'まだ家族メンバーがいません';
 
   @override
-  String get mediaOptional => 'TODO: Media (Optional)';
+  String get mediaOptional => 'メディア（オプション）';
 
   @override
-  String get messageSavedSuccessfully => 'TODO: Message saved successfully';
+  String get messageSavedSuccessfully => 'メッセージが正常に保存されました';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => '次の日時にスケジュール済み';
 
   @override
-  String get dashboard => 'TODO: Dashboard';
+  String get dashboard => 'ダッシュボード';
 
   @override
-  String get noPermissionForBroadcast =>
-      'TODO: You do not have permission to create broadcast messages.';
+  String get noPermissionForBroadcast => '放送権限がありません';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Playtime管理パネルタイトル';
 
   @override
-  String get inviteDetail => 'TODO: Invite Detail';
+  String get inviteDetail => '招待の詳細';
 
   @override
   String scheduled(Object date) {
-    return 'TODO: Scheduled: $date';
+    return 'スケジュール済み';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'TODO: Failed to resend OTP: $error';
+    return 'OTPの再送信に失敗しました';
   }
 
   @override
-  String get scheduling => 'TODO: Scheduling';
+  String get scheduling => 'スケジュール中';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'TODO: Error saving message: $error';
+    return 'メッセージ保存エラー';
   }
 
   @override
-  String get save => 'TODO: Save';
+  String get save => '保存';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Playtimeを承認';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => '最初のセッションを作成';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'ゲームが拒否されました';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'TODO: Failed to revoke access: $error';
+    return 'アクセスの取り消しに失敗しました';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => '最近のゲーム';
 
   @override
-  String get customizeMessage => 'TODO: Customize your message...';
+  String get customizeMessage => 'メッセージをカスタマイズ';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'TODO: Failed to cancel invite: $error';
+    return '招待キャンセルに失敗しました';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'TODO: Error sending message: $error';
+    return 'メッセージ送信エラー';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'パスワードを確認';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'TODO: Error loading privacy requests: $error';
+    return 'プライバシーリクエスト読み込みエラー';
   }
 
   @override
-  String get connectedChildren => 'TODO: Connected Children';
+  String get connectedChildren => '接続された子供';
 
   @override
-  String get share => 'Share';
+  String get share => '共有';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'ゲーム名を入力';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      'TODO: Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '家族機能にアクセスするにはログインしてください';
 
   @override
-  String get myInvites => 'TODO: My Invites';
+  String get myInvites => 'マイ招待';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'ゲームを作成';
 
   @override
-  String get groupNameOptional => 'TODO: Group Name (optional)';
+  String get groupNameOptional => 'グループ名（オプション）';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'プレイタイムセッションが見つかりません。';
 
   @override
-  String get adminScreenTBD => 'TODO: Admin Screen - To Be Developed';
+  String get adminScreenTBD => '管理者画面は近日公開予定';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => 'プレイタイムダッシュボード';
 
   @override
-  String get close => 'TODO: Close';
+  String get close => '閉じる';
 
   @override
-  String get knownGroupDetected => 'TODO: Known group detected';
+  String get knownGroupDetected => '既知のグループが検出されました';
 
   @override
-  String get back => 'Back';
+  String get back => '戻る';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'ゲームを選択';
 
   @override
-  String get managePermissions => 'TODO: Manage Permissions';
+  String get managePermissions => '権限を管理';
 
   @override
-  String get pollOptions => 'TODO: Poll Options:';
+  String get pollOptions => '投票オプション';
 
   @override
   String clicked(Object count) {
-    return 'TODO: Clicked: $count';
+    return 'クリック済み';
   }
 
   @override
   String link(Object link) {
-    return 'TODO: Link: $link';
+    return 'リンク';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'TODO: The meeting is ready! Would you like to send it to your group?';
+  String get meetingReadyMessage => 'ミーティングの準備ができました！今すぐ参加してください';
 
   @override
-  String get pendingInvites => 'TODO: Pending Invites';
+  String get pendingInvites => '保留中の招待';
 
   @override
   String statusColon(Object status) {
-    return 'TODO: Status: $status';
+    return 'ステータス：';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => 'プロフィールを表示するにはログインしてください';
 }

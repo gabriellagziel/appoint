@@ -9,545 +9,544 @@ class AppLocalizationsAm extends AppLocalizations {
   AppLocalizationsAm([String locale = 'am']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'ዳግም ያዘምኑ';
 
   @override
-  String get home => 'TRANSLATE_ME';
+  String get home => 'ቤት';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'እስካሁን ስብሰባዎች የሉም';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'እሺ';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'ሁኔታ ይምረጡ';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'ተመዝግብ';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'መልዕክት ይሰርዝ';
 
   @override
-  String get decline => 'TRANSLATE_ME';
+  String get decline => 'ይተው';
 
   @override
-  String get adminBroadcast => 'TRANSLATE_ME';
+  String get adminBroadcast => 'የአስተዳደር ስርጭት';
 
   @override
-  String get login => 'TRANSLATE_ME';
+  String get login => 'ግባ';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'ጓደኞች ይምረጡ';
 
   @override
-  String get noInvites => 'TRANSLATE_ME';
+  String get noInvites => 'ግብዣዎች የሉም';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'ሰዓት ይምረጡ';
 
   @override
-  String get success => 'Success';
+  String get success => 'ተሳካ';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'ለውጡን ይቀልሱ';
 
   @override
-  String opened(Object count) {
-    return 'TRANSLATE_ME';
-  }
+  String get opened => 'ተከፈተ';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'ብልጽግናዊ ትዕይንት ይፍጠሩ';
 
   @override
-  String get messageSentSuccessfully => 'TRANSLATE_ME';
+  String get messageSentSuccessfully => 'መልዕክት በትክክል ተልኳል';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'እንደገና ሠርተው ይደርሱ';
 
   @override
-  String get next => 'TRANSLATE_ME';
+  String get next => 'ቀጣይ';
 
   @override
-  String get search => 'Search';
+  String get search => 'ፈልግ';
 
   @override
-  String get cancelInviteConfirmation => 'TRANSLATE_ME';
+  String get cancelInviteConfirmation => 'የግብዣ እውቀት ሰርዝ';
 
   @override
   String created(Object date) {
-    return 'TRANSLATE_ME';
+    return 'ተፈጠረ';
   }
 
   @override
-  String get revokeAccess => 'TRANSLATE_ME';
+  String get revokeAccess => 'መዳረሻ ይሰርዝ';
 
   @override
-  String get saveGroupForRecognition => 'TRANSLATE_ME';
+  String get saveGroupForRecognition => 'ቡድን ለመታወቂያ ያስቀምጡ';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'በቀጥታ ስብሰባ ተዘጋጅቷል';
 
   @override
-  String get revokeAccessConfirmation => 'TRANSLATE_ME';
+  String get revokeAccessConfirmation => 'የመዳረሻ ሰረዝ እውቀት';
 
   @override
-  String get download => 'Download';
+  String get download => 'ያውርዱ';
 
   @override
-  String get password => 'TRANSLATE_ME';
+  String get password => 'የይለፍ ቃል';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'TRANSLATE_ME';
+    return 'የቤተሰብ አገናኝ ማስጫን ስህተት';
   }
 
   @override
-  String get cancel => 'TRANSLATE_ME';
+  String get cancel => 'ሰርዝ';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Playtime ይፍጠሩ';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'TRANSLATE_ME';
+    return 'የግላዊነት ጥያቄ ማከናወን አልተሳካም';
   }
 
   @override
-  String get appTitle => 'TRANSLATE_ME';
+  String get appTitle => 'የመተግበሪያ ርዕስ';
 
   @override
-  String get accept => 'TRANSLATE_ME';
+  String get accept => 'ተቀበል';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'ብልጽግናዊ ሁኔታ';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'የPlaytime መግለጫ';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'ሰርዝ';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'ብልጽግናዊ ትዕይንት ተጀምሯል';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'የመጀመሪያዎቹን ጨዋታ ይፍጠሩ';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'ተሳታፊዎች';
 
   @override
   String recipients(Object count) {
-    return 'TRANSLATE_ME';
+    return 'ተቀባዮች';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'ውጤቶች የሉም';
 
   @override
-  String get yes => 'TRANSLATE_ME';
+  String get yes => 'አዎን';
 
   @override
-  String get invite => 'TRANSLATE_ME';
+  String get invite => 'ጋብቻ';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'በቀጥታ ሁኔታ';
 
   @override
-  String get done => 'Done';
+  String get done => 'ተጠናቋል';
 
   @override
-  String get defaultShareMessage => 'TRANSLATE_ME';
+  String get defaultShareMessage => 'የአካፋይ መልእክት';
 
   @override
-  String get no => 'TRANSLATE_ME';
+  String get no => 'አይ';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'የPlaytime ማዕከል';
 
   @override
-  String get error => 'Error';
+  String get error => 'ስህተት';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'በቀጥታ ትዕይንት ይፍጠሩ';
 
   @override
-  String get enableNotifications => 'TRANSLATE_ME';
+  String get enableNotifications => 'ማሳወቂያዎችን አብቅት';
 
   @override
   String invited(Object date) {
-    return 'TRANSLATE_ME';
+    return 'ተጋብቷል';
   }
 
   @override
   String content(Object content) {
-    return 'TRANSLATE_ME';
+    return 'ይዘት';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'TRANSLATE_ME';
+  String get meetingSharedSuccessfully => 'ስብሰባ በትክክል ተካፋፈለ';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'ወደ Playtime እንኳን ደህና መጣችሁ';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'ሁሉንም እይ';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'ብልጽግናዊ Playtime';
 
   @override
-  String get staffScreenTBD => 'TRANSLATE_ME';
+  String get staffScreenTBD => 'የሰራተኞች ማያ ሊታወቀው ይጠበቃል';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'ቁረጥ';
 
   @override
-  String get inviteCancelledSuccessfully => 'TRANSLATE_ME';
+  String get inviteCancelledSuccessfully => 'ግብዣ በትክክል ተሰርዟል';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'ድገም';
 
   @override
-  String get composeBroadcastMessage => 'TRANSLATE_ME';
+  String get composeBroadcastMessage => 'የስርጭት መልዕክት ይፍጠሩ';
 
   @override
-  String get sendNow => 'TRANSLATE_ME';
+  String get sendNow => 'አሁን ይላኩ';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'እስካሁን ጨዋታዎች የሉም';
 
   @override
-  String get select => 'Select';
+  String get select => 'ይምረጡ';
 
   @override
-  String get about => 'About';
+  String get about => 'ስለ';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'ይምረጡ';
 
   @override
-  String get profile => 'TRANSLATE_ME';
+  String get profile => 'መገለጫ';
 
   @override
-  String get removeChild => 'TRANSLATE_ME';
+  String get removeChild => 'ልጅ አስወግድ';
 
   @override
   String status(Object status) {
-    return 'TRANSLATE_ME';
+    return 'ሁኔታ';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'ውጣ';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'ቅጥ';
 
   @override
-  String get welcome => 'TRANSLATE_ME';
+  String get welcome => 'እንኳን ደህና መጣዎት';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'ትዕይንት ይፍጠሩ';
 
   @override
-  String get familyMembers => 'TRANSLATE_ME';
+  String get familyMembers => 'የቤተሰብ አባላት';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'ያስገቡ';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'ቀጣይ ስብሰባዎች';
 
   @override
-  String get enterGroupName => 'TRANSLATE_ME';
+  String get enterGroupName => 'የቡድን ስም ያስገቡ';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'አረጋግጥ';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'በቀጥታ Playtime';
 
   @override
-  String get errorLoadingInvites => 'TRANSLATE_ME';
-
-  @override
-  String get targetingFilters => 'TRANSLATE_ME';
-
-  @override
-  String get pickVideo => 'TRANSLATE_ME';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'TRANSLATE_ME';
-
-  @override
-  String get accessRevokedSuccessfully => 'TRANSLATE_ME';
-
-  @override
-  String type(Object type) {
-    return 'TRANSLATE_ME';
+  String errorLoadingInvites(Object error) {
+    return 'የግብዣዎች ማስጫን ስህተት';
   }
 
   @override
-  String get checkingPermissions => 'TRANSLATE_ME';
+  String get targetingFilters => 'የመድረሻ ቅርጸ-ቁልፍ';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'ቪዲዮ ይምረጡ';
 
   @override
-  String get yesCancel => 'TRANSLATE_ME';
+  String get playtimeGameDeleted => 'ጨዋታ ተሰርዟል';
 
   @override
-  String get email => 'TRANSLATE_ME';
+  String get scheduleForLater => 'ወደ ቀጣይ ይጠቅሙ';
 
   @override
-  String get shareOnWhatsApp => 'TRANSLATE_ME';
+  String get accessRevokedSuccessfully => 'መዳረሻ በትክክል ተሰርዟል';
 
   @override
-  String get notificationSettings => 'TRANSLATE_ME';
+  String get type => 'ዓይነት';
 
   @override
-  String get myProfile => 'TRANSLATE_ME';
+  String get checkingPermissions => 'መብቶች በማረጋገጥ';
 
   @override
-  String get revoke => 'TRANSLATE_ME';
+  String get copy => 'ቅጂ';
 
   @override
-  String get noBroadcastMessages => 'TRANSLATE_ME';
+  String get yesCancel => 'አዎን, ሰርዝ';
+
+  @override
+  String get email => 'ኢሜይል';
+
+  @override
+  String get shareOnWhatsApp => 'በWhatsApp ያካፍሉ';
+
+  @override
+  String get notificationSettings => 'የማሳወቂያ ቅንብሮች';
+
+  @override
+  String get myProfile => 'መገለጫዬ';
+
+  @override
+  String get revoke => 'እንደገና ሰርዝ';
+
+  @override
+  String get noBroadcastMessages => 'የስርጭት መልዕክቶች የሉም';
 
   @override
   String requestType(Object type) {
-    return 'TRANSLATE_ME';
+    return 'የጥያቄ ዓይነት';
   }
 
   @override
-  String get notifications => 'TRANSLATE_ME';
+  String get notifications => 'ማሳወቂያዎች';
 
   @override
-  String get details => 'TRANSLATE_ME';
+  String get details => 'ዝርዝሮች';
 
   @override
-  String get cancelInvite => 'TRANSLATE_ME';
+  String get cancelInvite => 'ግብዣ ሰርዝ';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'አዲስ ይፍጠሩ';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'ቅንብሮች';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Playtime አትቀበሉ';
 
   @override
-  String get errorLoadingProfile => 'TRANSLATE_ME';
+  String errorLoadingProfile(Object error) {
+    return 'የመገለጫ ማስጫን ስህተት';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'አርትዕ';
 
   @override
-  String get add => 'Add';
+  String get add => 'ያክሉ';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'ጨዋታ ተፈቅዷል';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'የይለፍ ቃል ረሳሁት?';
 
   @override
-  String get familyDashboard => 'TRANSLATE_ME';
+  String get familyDashboard => 'የቤተሰብ ዳሽቦርድ';
 
   @override
-  String get loading => 'TRANSLATE_ME';
+  String get loading => 'በመስበክ ላይ';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'ፈጣን እርምጃዎች';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'የPlaytime ርዕስ';
 
   @override
-  String get otpResentSuccessfully => 'TRANSLATE_ME';
+  String get otpResentSuccessfully => 'OTP በትክክል ተልኳል';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'TRANSLATE_ME';
+    return 'የመብት ማረጋገጫ ስህተት';
   }
 
   @override
-  String get clientScreenTBD => 'TRANSLATE_ME';
+  String get clientScreenTBD => 'የደንበኛ ማያ ሊታወቀው ይጠበቃል';
 
   @override
   String fcmToken(Object token) {
-    return 'TRANSLATE_ME';
+    return 'የFCM ቶኬን';
   }
 
   @override
-  String get pickImage => 'TRANSLATE_ME';
+  String get pickImage => 'ምስል ይምረጡ';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'ያለፈው';
 
   @override
-  String get noProfileFound => 'TRANSLATE_ME';
+  String get noProfileFound => 'መገለጫ አልተገኘም';
 
   @override
-  String get noFamilyMembersYet => 'TRANSLATE_ME';
+  String get noFamilyMembersYet => 'እስካሁን የቤተሰብ አባላት የሉም';
 
   @override
-  String get mediaOptional => 'TRANSLATE_ME';
+  String get mediaOptional => 'ሚዲያ (አማራጭ)';
 
   @override
-  String get messageSavedSuccessfully => 'TRANSLATE_ME';
+  String get messageSavedSuccessfully => 'መልዕክት በትክክል ተቀመጠ';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'ወደ… ተያዘ';
 
   @override
-  String get dashboard => 'TRANSLATE_ME';
+  String get dashboard => 'ዳሽቦርድ';
 
   @override
-  String get noPermissionForBroadcast => 'TRANSLATE_ME';
+  String get noPermissionForBroadcast => 'ስርጭት መፈቀድ የለም';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'የPlaytime አስተዳደር መአዛውን ርዕስ';
 
   @override
-  String get inviteDetail => 'TRANSLATE_ME';
+  String get inviteDetail => 'ዝርዝር ግብዣ';
 
   @override
   String scheduled(Object date) {
-    return 'TRANSLATE_ME';
+    return 'ተዘጋጅቷል';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'TRANSLATE_ME';
+    return 'OTP እንደገና ማልክት አልተሳካም';
   }
 
   @override
-  String get scheduling => 'TRANSLATE_ME';
+  String get scheduling => 'በማዘጋጀት ላይ';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'TRANSLATE_ME';
+    return 'መልዕክት ማስቀመጥ ስህተት';
   }
 
   @override
-  String get save => 'TRANSLATE_ME';
+  String get save => 'አስቀምጥ';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Playtime ይቀበሉ';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'የመጀመሪያዎቹን ትዕይንት ይፍጠሩ';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'ጨዋታ ተከስቷል';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'TRANSLATE_ME';
+    return 'መዳረሻ መሰረዝ አልተሳካም';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'የቅርብ ጊዜ ጨዋታዎች';
 
   @override
-  String get customizeMessage => 'TRANSLATE_ME';
+  String get customizeMessage => 'መልዕክት ያስተካክሉ';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'TRANSLATE_ME';
+    return 'ግብዣ ማስወገድ አልተሳካም';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'TRANSLATE_ME';
+    return 'መልዕክት ማልክት ስህተት';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'የይለፍ ቃል አረጋግጥ';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'TRANSLATE_ME';
+    return 'የግላዊነት ጥያቄዎች ማስጫን ስህተት';
   }
 
   @override
-  String get connectedChildren => 'TRANSLATE_ME';
+  String get connectedChildren => 'የተገናኙ ልጆች';
 
   @override
-  String get share => 'Share';
+  String get share => 'አካፍል';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'የጨዋታውን ስም ያስገቡ';
 
   @override
-  String get pleaseLoginForFamilyFeatures => 'TRANSLATE_ME';
+  String get pleaseLoginForFamilyFeatures => 'ለቤተሰብ ባለስልጣናት እባክዎ ይግቡ';
 
   @override
-  String get myInvites => 'TRANSLATE_ME';
+  String get myInvites => 'ግብዣዎቼ';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'ጨዋታ ይፍጠሩ';
 
   @override
-  String get groupNameOptional => 'TRANSLATE_ME';
+  String get groupNameOptional => 'የቡድን ስም (አማራጭ)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Playtime ስብሰባዎች የሉም';
 
   @override
-  String get adminScreenTBD => 'TRANSLATE_ME';
+  String get adminScreenTBD => 'የአስተዳደር ማያ ሊታወቀው ይጠበቃል';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => 'የPlaytime የወላጆች ዳሽቦርድ ርዕስ';
 
   @override
-  String get close => 'TRANSLATE_ME';
+  String get close => 'ዝጋ';
 
   @override
-  String get knownGroupDetected => 'TRANSLATE_ME';
+  String get knownGroupDetected => 'ታዋቂ ቡድን ተገኝቷል';
 
   @override
-  String get back => 'Back';
+  String get back => 'ወደፊት';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'ጨዋታ ይምረጡ';
 
   @override
-  String get managePermissions => 'TRANSLATE_ME';
+  String get managePermissions => 'መብቶች ያስተዳድሩ';
 
   @override
-  String get pollOptions => 'TRANSLATE_ME';
+  String get pollOptions => 'የምርጫ አማራጮች';
 
   @override
   String clicked(Object count) {
-    return 'TRANSLATE_ME';
+    return 'ተጫነ';
   }
 
   @override
   String link(Object link) {
-    return 'TRANSLATE_ME';
+    return 'አገናኝ';
   }
 
   @override
-  String get meetingReadyMessage => 'TRANSLATE_ME';
+  String get meetingReadyMessage => 'ስብሰባው ዝግጅት ተጠናቋል';
 
   @override
-  String get pendingInvites => 'TRANSLATE_ME';
+  String get pendingInvites => 'የበረሰ ግብዣዎች';
 
   @override
   String statusColon(Object status) {
-    return 'TRANSLATE_ME';
+    return 'ሁኔታ:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => 'መገለጫ ለማየት እባክዎ ይግቡ';
 }

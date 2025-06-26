@@ -1,664 +1,664 @@
 {
-  "refresh": "Làm mới",
+  "@@locale": "es_419",
+  "refresh": "[ES_419] Refresh",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "Trang chủ",
+  "home": "[ES_419] Home",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "Chưa có phiên",
+  "noSessionsYet": "[ES_419] No sessions yet",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "OK",
+  "ok": "[ES_419] OK",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "Chọn chế độ",
+  "playtimeLandingChooseMode": "[ES_419] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "Đăng ký",
+  "signUp": "[ES_419] Sign Up",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "[VI] Schedule Message",
+  "scheduleMessage": "[ES_419] Schedule Message",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "Từ chối",
+  "decline": "[ES_419] Decline",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "Phát sóng quản trị",
+  "adminBroadcast": "[ES_419] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "Đăng nhập",
+  "login": "[ES_419] Login",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "Chọn bạn bè",
+  "playtimeChooseFriends": "[ES_419] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "Chưa có lời mời",
+  "noInvites": "[ES_419] No invites",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "Chọn thời gian",
+  "playtimeChooseTime": "[ES_419] Choose a time",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "Thành công",
+  "success": "[ES_419] Success",
   "@success": {
     "description": "Success message"
   },
-  "undo": "Hoàn tác",
+  "undo": "[ES_419] Undo",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "Đã mở",
+  "opened": "[ES_419] Opened",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "Tạo phiên ảo",
+  "createVirtualSession": "[ES_419] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "[VI] Message sent successfully",
+  "messageSentSuccessfully": "[ES_419] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "Làm lại",
+  "redo": "[ES_419] Redo",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "[VI] Next",
+  "next": "[ES_419] Next",
   "@next": {
     "description": "Next button text"
   },
-  "search": "Tìm kiếm",
+  "search": "[ES_419] Search",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "Hủy xác nhận lời mời",
+  "cancelInviteConfirmation": "[ES_419] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "Đã tạo",
+  "created": "[ES_419] Created",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "Thu hồi quyền truy cập",
+  "revokeAccess": "[ES_419] Revoke Access",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "Lưu nhóm để nhận dạng",
+  "saveGroupForRecognition": "[ES_419] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "Phiên trực tiếp đã được lên lịch",
+  "playtimeLiveScheduled": "[ES_419] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "Xác nhận thu hồi quyền truy cập",
+  "revokeAccessConfirmation": "[ES_419] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "Tải xuống",
+  "download": "[ES_419] Download",
   "@download": {
     "description": "Download button text"
   },
-  "password": "Mật khẩu",
+  "password": "[ES_419] Password",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "Lỗi tải liên kết gia đình",
+  "errorLoadingFamilyLinks": "[ES_419] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "Hủy",
+  "cancel": "[ES_419] Cancel",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "Tạo Playtime",
+  "playtimeCreate": "[ES_419] Create",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "Không thể xử lý yêu cầu riêng tư",
+  "failedToActionPrivacyRequest": "[ES_419] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "Tiêu đề ứng dụng",
+  "appTitle": "[ES_419] APP-OINT",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "Chấp nhận",
+  "accept": "[ES_419] Accept",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "Chế độ ảo",
+  "playtimeModeVirtual": "[ES_419] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "Mô tả Playtime",
+  "playtimeDescription": "[ES_419] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "Xóa",
+  "delete": "[ES_419] Delete",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "Phiên ảo đã bắt đầu",
+  "playtimeVirtualStarted": "[ES_419] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "Tạo trò chơi đầu tiên của bạn",
+  "createYourFirstGame": "[ES_419] Create your first game",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "Người tham gia",
+  "participants": "[ES_419] Participants",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "Người nhận",
+  "recipients": "[ES_419] Recipients",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "Không có kết quả",
+  "noResults": "[ES_419] No results found",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "Có",
+  "yes": "[ES_419] Yes",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "Mời",
+  "invite": "[ES_419] Invite",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "Chế độ trực tiếp",
+  "playtimeModeLive": "[ES_419] Live Play",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "[VI] Done",
+  "done": "[ES_419] Done",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "[VI] Let's meet via Appoint!",
+  "defaultShareMessage": "[ES_419] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "Không",
+  "no": "[ES_419] No",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "Trung tâm Playtime",
+  "playtimeHub": "[ES_419] Playtime Hub",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "Lỗi",
+  "error": "[ES_419] Error",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "Tạo phiên trực tiếp",
+  "createLiveSession": "[ES_419] Create Live Session",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "Bật thông báo",
+  "enableNotifications": "[ES_419] Enable Notifications",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "Đã mời",
+  "invited": "[ES_419] Invited",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "Nội dung",
+  "content": "[ES_419] Content",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "Chia sẻ cuộc họp thành công",
+  "meetingSharedSuccessfully": "[ES_419] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "Chào mừng đến với Playtime",
+  "welcomeToPlaytime": "[ES_419] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "Xem tất cả",
+  "viewAll": "[ES_419] View All",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "Playtime ảo",
+  "playtimeVirtual": "[ES_419] Virtual Play",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "Màn hình nhân viên sẽ được xác định",
+  "staffScreenTBD": "[ES_419] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "Cắt",
+  "cut": "[ES_419] Cut",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "Hủy lời mời thành công",
+  "inviteCancelledSuccessfully": "[ES_419] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "Thử lại",
+  "retry": "[ES_419] Retry",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "[VI] Compose Broadcast Message",
+  "composeBroadcastMessage": "[ES_419] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
-  "sendNow": "Gửi ngay",
+  "sendNow": "[ES_419] Send Now",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "Chưa có trò chơi",
+  "noGamesYet": "[ES_419] No games yet",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "Chọn",
+  "select": "[ES_419] Select",
   "@select": {
     "description": "Select button text"
   },
-  "about": "Về",
+  "about": "[ES_419] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Chọn",
+  "choose": "[ES_419] Choose",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "Hồ sơ",
+  "profile": "[ES_419] Profile",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "Xóa trẻ em",
+  "removeChild": "[ES_419] Remove Child",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "Trạng thái",
+  "status": "[ES_419] Status",
   "@status": {
     "description": "Status label"
   },
-  "logout": "Đăng xuất",
+  "logout": "[ES_419] Logout",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "Dán",
+  "paste": "[ES_419] Paste",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "Chào mừng",
+  "welcome": "[ES_419] Welcome",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "Tạo phiên",
+  "playtimeCreateSession": "[ES_419] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "Thành viên gia đình",
+  "familyMembers": "[ES_419] Family Members",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "Tải lên",
+  "upload": "[ES_419] Upload",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "Phiên sắp tới",
+  "upcomingSessions": "[ES_419] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "Nhập tên nhóm",
+  "enterGroupName": "[ES_419] Enter group name",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "Xác nhận",
+  "confirm": "[ES_419] Confirm",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "Playtime trực tiếp",
+  "playtimeLive": "[ES_419] Live Play",
   "@playtimeLive": {
     "description": "Live play label"
   },
-  "errorLoadingInvites": "Lỗi tải lời mời",
+  "errorLoadingInvites": "[ES_419] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "Bộ lọc mục tiêu",
+  "targetingFilters": "[ES_419] Targeting Filters",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "Chọn video",
+  "pickVideo": "[ES_419] Pick Video",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "Trò chơi đã bị xóa",
+  "playtimeGameDeleted": "[ES_419] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "Lên lịch sau",
+  "scheduleForLater": "[ES_419] Schedule for Later",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "Thu hồi quyền truy cập thành công",
+  "accessRevokedSuccessfully": "[ES_419] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "Loại",
+  "type": "[ES_419] Type",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "Kiểm tra quyền",
+  "checkingPermissions": "[ES_419] Checking permissions...",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "Sao chép",
+  "copy": "[ES_419] Copy",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "Có, hủy",
+  "yesCancel": "[ES_419] Yes, Cancel",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "Email",
+  "email": "[ES_419] Email",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "[VI] Share on WhatsApp",
+  "shareOnWhatsApp": "[ES_419] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "Cài đặt thông báo",
+  "notificationSettings": "[ES_419] Notification Settings",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
-  "myProfile": "Hồ sơ của tôi",
+  "myProfile": "[ES_419] My Profile",
   "@myProfile": {
     "description": "My profile title"
   },
-  "revoke": "Thu hồi",
+  "revoke": "[ES_419] Revoke",
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "[VI] No messages yet",
+  "noBroadcastMessages": "[ES_419] No messages yet",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "Loại yêu cầu",
+  "requestType": "[ES_419] Request Type",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "Thông báo",
+  "notifications": "[ES_419] Notifications",
   "@notifications": {
     "description": "Notifications title"
   },
-  "details": "Chi tiết",
+  "details": "[ES_419] Details",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "Hủy lời mời",
+  "cancelInvite": "[ES_419] Cancel Invite",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "Tạo mới",
+  "createNew": "[ES_419] Create New",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "Cài đặt",
+  "settings": "[ES_419] Settings",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "Từ chối Playtime",
+  "playtimeReject": "[ES_419] Reject",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "Lỗi tải hồ sơ",
+  "errorLoadingProfile": "[ES_419] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "Chỉnh sửa",
+  "edit": "[ES_419] Edit",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "Thêm",
+  "add": "[ES_419] Add",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "Trò chơi đã được phê duyệt",
+  "playtimeGameApproved": "[ES_419] Game approved",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "Quên mật khẩu?",
+  "forgotPassword": "[ES_419] Forgot Password?",
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
-  "familyDashboard": "Bảng điều khiển gia đình",
+  "familyDashboard": "[ES_419] Family Dashboard",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "Đang tải",
+  "loading": "[ES_419] Loading...",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "Hành động nhanh",
+  "quickActions": "[ES_419] Quick Actions",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "Tiêu đề Playtime",
+  "playtimeTitle": "[ES_419] Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "Gửi lại OTP thành công",
+  "otpResentSuccessfully": "[ES_419] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "Lỗi kiểm tra quyền",
+  "errorCheckingPermissions": "[ES_419] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "Màn hình khách hàng sẽ xác định",
+  "clientScreenTBD": "[ES_419] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "Mã thông báo FCM",
+  "fcmToken": "[ES_419] FCM Token",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "Chọn hình ảnh",
+  "pickImage": "[ES_419] Pick Image",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "Trước",
+  "previous": "[ES_419] Previous",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "Không tìm thấy hồ sơ",
+  "noProfileFound": "[ES_419] No profile found",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "Chưa có thành viên gia đình",
+  "noFamilyMembersYet": "[ES_419] No family members yet",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "Phương tiện (tùy chọn)",
+  "mediaOptional": "[ES_419] Media (Optional)",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "[VI] Message saved successfully",
+  "messageSavedSuccessfully": "[ES_419] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "Đã lên lịch cho",
+  "scheduledFor": "[ES_419] Scheduled for",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "Bảng điều khiển",
+  "dashboard": "[ES_419] Dashboard",
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "Không có quyền phát sóng",
+  "noPermissionForBroadcast": "[ES_419] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "Tiêu đề bảng quản trị Playtime",
+  "playtimeAdminPanelTitle": "[ES_419] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "Chi tiết lời mời",
+  "inviteDetail": "[ES_419] Invite Details",
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "Đã lên lịch",
+  "scheduled": "[ES_419] Scheduled",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "Không thể gửi lại OTP",
+  "failedToResendOtp": "[ES_419] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "Đang lên lịch",
+  "scheduling": "[ES_419] Scheduling",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "[VI] Error saving message",
+  "errorSavingMessage": "[ES_419] Error saving message",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
-  "save": "Lưu",
+  "save": "[ES_419] Save",
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "Phê duyệt Playtime",
+  "playtimeApprove": "[ES_419] Approve",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "Tạo phiên đầu tiên của bạn",
+  "createYourFirstSession": "[ES_419] Create your first session",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "Trò chơi bị từ chối",
+  "playtimeGameRejected": "[ES_419] Game rejected",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "[VI] Failed to revoke access",
+  "failedToRevokeAccess": "[ES_419] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "Trò chơi gần đây",
+  "recentGames": "[ES_419] Recent Games",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "[VI] Customize Message",
+  "customizeMessage": "[ES_419] Customize Message",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "Không thể huỷ lời mời",
+  "failedToCancelInvite": "[ES_419] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "[VI] Error sending message",
+  "errorSendingMessage": "[ES_419] Error sending message",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "Xác nhận mật khẩu",
+  "confirmPassword": "[ES_419] Confirm Password",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "Lỗi tải yêu cầu riêng tư",
+  "errorLoadingPrivacyRequests": "[ES_419] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "Trẻ kết nối",
+  "connectedChildren": "[ES_419] Connected Children",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "Chia sẻ",
+  "share": "[ES_419] Share",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "Nhập tên trò chơi",
+  "playtimeEnterGameName": "[ES_419] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "[VI] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[ES_419] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "[VI] My Invites",
+  "myInvites": "[ES_419] My Invites",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "[VI] Create Game",
+  "createGame": "[ES_419] Create Game",
   "@createGame": {
     "description": "Create game button"
   },
-  "groupNameOptional": "[VI] Group Name (Optional)",
+  "groupNameOptional": "[ES_419] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "[VI] No playtime sessions found.",
+  "playtimeNoSessions": "[ES_419] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "[VI] Admin screen coming soon",
+  "adminScreenTBD": "[ES_419] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "[VI] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[ES_419] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "close": "[VI] Close",
+  "close": "[ES_419] Close",
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "[VI] Known group detected",
+  "knownGroupDetected": "[ES_419] Known group detected",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "[VI] Back",
+  "back": "[ES_419] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "[VI] Choose a game",
+  "playtimeChooseGame": "[ES_419] Choose a game",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "[VI] Manage Permissions",
+  "managePermissions": "[ES_419] Manage Permissions",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "[VI] Poll Options",
+  "pollOptions": "[ES_419] Poll Options",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "[VI] Clicked",
+  "clicked": "[ES_419] Clicked",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "[VI] Link",
+  "link": "[ES_419] Link",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "[VI] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[ES_419] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "[VI] Pending Invites",
+  "pendingInvites": "[ES_419] Pending Invites",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "[VI] Status:",
+  "statusColon": "[ES_419] Status:",
   "@statusColon": {
     "description": "Status colon label"
   },
-  "@@locale": "vi",
-  "pleaseLoginToViewProfile": "[VI] Please log in to view your profile."
+  "pleaseLoginToViewProfile": "[ES_419] Please log in to view your profile."
 }

@@ -1,5 +1,5 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "रिफ्रेश करें",
   "@refresh": {
     "description": "Refresh button text"
   },
@@ -7,23 +7,23 @@
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "अभी तक कोई सत्र नहीं",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "ठीक है",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "मोड चुनें",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "साइन अप",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "संदेश निर्धारित करें",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
@@ -35,11 +35,11 @@
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "लॉगिन",
+  "login": "लॉग इन करें",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "मित्र चुनें",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
@@ -47,23 +47,23 @@
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "समय चुनें",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "सफलता",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "पूर्ववत करें",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "खोला गया: {count}",
+  "opened": "खुला",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "वर्चुअल सत्र बनाएं",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
@@ -71,7 +71,7 @@
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "दोहराएं",
   "@redo": {
     "description": "Redo button text"
   },
@@ -79,35 +79,35 @@
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "खोजें",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "क्या आप वाकई इस निमंत्रण को रद्द करना चाहते हैं?",
+  "cancelInviteConfirmation": "निमंत्रण रद्द की पुष्टि करें",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "बनाया गया: {date}",
+  "created": "बनाया गया",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "पहुंच रद्द करें",
+  "revokeAccess": "पहुँच रद्द करें",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "भविष्य की पहचान के लिए समूह सहेजें",
+  "saveGroupForRecognition": "पहचान के लिए समूह सहेजें",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "लाइव सत्र निर्धारित किया गया",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "क्या आप वाकई इस बच्चे की पहुंच रद्द करना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।",
+  "revokeAccessConfirmation": "पहुँच रद्द करने की पुष्टि",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "डाउनलोड",
   "@download": {
     "description": "Download button text"
   },
@@ -115,7 +115,7 @@
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "पारिवारिक लिंक लोड करने में त्रुटि: {error}",
+  "errorLoadingFamilyLinks": "पारिवारिक लिंक लोड करने में त्रुटि",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
@@ -123,51 +123,51 @@
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "Playtime बनाएं",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "गोपनीयता अनुरोध {action} करने में विफल: {error}",
+  "failedToActionPrivacyRequest": "गोपनीयता अनुरोध निष्पादित करने में विफल",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "Appoint",
+  "appTitle": "एप्लिकेशन शीर्षक",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "स्वीकार करें",
+  "accept": "स्वीकृत करें",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "वर्चुअल मोड",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "Playtime विवरण",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "हटाएं",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "वर्चुअल सत्र प्रारंभ हुआ",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "अपना पहला गेम बनाएं",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "प्रतिभागी",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "प्राप्तकर्ता: {count}",
+  "recipients": "प्राप्तकर्ता",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "कोई परिणाम नहीं",
   "@noResults": {
     "description": "No search results message"
   },
@@ -175,19 +175,19 @@
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "आमंत्रित करें",
+  "invite": "निमंत्रण",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "लाइव मोड",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "पूर्ण",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "हाय! मैंने APP-OINT के माध्यम से आपके साथ एक मीटिंग शेड्यूल की है। पुष्टि करने या अन्य समय सुझाने के लिए यहां क्लिक करें:",
+  "defaultShareMessage": "डिफ़ॉल्ट शेयर संदेश",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
@@ -195,15 +195,15 @@
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "Playtime केंद्र",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "त्रुटि",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "लाइव सत्र बनाएं",
   "@createLiveSession": {
     "description": "Create live session button"
   },
@@ -211,67 +211,67 @@
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "आमंत्रित किया गया: {date}",
+  "invited": "निमंत्रित",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "सामग्री: {content}",
+  "content": "सामग्री",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "मीटिंग सफलतापूर्वक साझा की गई!",
+  "meetingSharedSuccessfully": "मीटिंग सफलतापूर्वक साझा की गई",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "Playtime में आपका स्वागत है",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "सभी देखें",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "वर्चुअल Playtime",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "स्टाफ स्क्रीन - विकासाधीन",
+  "staffScreenTBD": "स्टाफ स्क्रीन बाद में निर्धारित की जाएगी",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "कट",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "निमंत्रण सफलतापूर्वक रद्द किया गया!",
+  "inviteCancelledSuccessfully": "निमंत्रण सफलतापूर्वक रद्द किया गया",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "पुनः प्रयास करें",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "प्रसारण संदेश लिखें",
+  "composeBroadcastMessage": "ब्रॉडकास्ट संदेश बनाएं",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
-  "sendNow": "अभी भेजें",
+  "sendNow": "अब भेजें",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "अभी तक कोई गेम नहीं",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "चुनें",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "के बारे में",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "चुनें",
   "@choose": {
     "description": "Choose button text"
   },
@@ -283,15 +283,15 @@
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "स्थिति: {status}",
+  "status": "स्थिति",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "लॉग आउट",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "पेस्ट करें",
   "@paste": {
     "description": "Paste button text"
   },
@@ -299,7 +299,7 @@
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "सत्र बनाएं",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
@@ -307,23 +307,23 @@
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "अपलोड करें",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "आगामी सत्र",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "पहचान के लिए समूह का नाम दर्ज करें",
+  "enterGroupName": "समूह नाम दर्ज करें",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "पुष्टि करें",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "लाइव Playtime",
   "@playtimeLive": {
     "description": "Live play label"
   },
@@ -339,27 +339,27 @@
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "गेम हटा दिया गया",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "बाद के लिए शेड्यूल करें",
+  "scheduleForLater": "बाद में निर्धारित करें",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "पहुंच सफलतापूर्वक रद्द की गई!",
+  "accessRevokedSuccessfully": "पहुँच सफलतापूर्वक रद्द की गई",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "प्रकार: {type}",
+  "type": "प्रकार",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "अनुमतियाँ जांची जा रही हैं...",
+  "checkingPermissions": "अनुमतियाँ जांच रहा है",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "प्रतिलिपि बनाएँ",
   "@copy": {
     "description": "Copy button text"
   },
@@ -371,11 +371,11 @@
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "व्हाट्सएप पर साझा करें",
+  "shareOnWhatsApp": "[HI] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "अधिसूचना सेटिंग्स",
+  "notificationSettings": "सूचना सेटिंग्स",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
@@ -387,11 +387,11 @@
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "अभी तक कोई प्रसारण संदेश नहीं हैं",
+  "noBroadcastMessages": "कोई ब्रॉडकास्ट संदेश नहीं",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "{type} अनुरोध",
+  "requestType": "अनुरोध प्रकार",
   "@requestType": {
     "description": "Request type label"
   },
@@ -407,15 +407,15 @@
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "नया बनाएं",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "सेटिंग्स",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "अस्वीकार करें",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
@@ -423,19 +423,19 @@
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "संपादित करें",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "जोड़ें",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "गेम स्वीकृत किया गया",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "पासवर्ड भूल गया?",
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
@@ -447,11 +447,11 @@
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "त्वरित क्रियाएं",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
@@ -459,7 +459,7 @@
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "अनुमतियाँ जांचने में त्रुटि: {error}",
+  "errorCheckingPermissions": "[HI] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
@@ -467,7 +467,7 @@
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "FCM टोकन: {token}",
+  "fcmToken": "[HI] FCM Token",
   "@fcmToken": {
     "description": "FCM token label"
   },
@@ -475,7 +475,7 @@
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "पिछला",
   "@previous": {
     "description": "Previous button text"
   },
@@ -495,7 +495,7 @@
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "संयोजित किया गया",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
@@ -507,7 +507,7 @@
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[HI] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
@@ -515,11 +515,11 @@
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "अनुसूचित: {date}",
+  "scheduled": "[HI] Scheduled",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "ओटीपी पुनः भेजने में विफल: {error}",
+  "failedToResendOtp": "[HI] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
@@ -527,7 +527,7 @@
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "संदेश सहेजने में त्रुटि: {error}",
+  "errorSavingMessage": "[HI] Error saving message",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
@@ -535,23 +535,23 @@
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "स्वीकृत करें",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "अपना पहला सत्र बनाएं",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "गेम अस्वीकृत किया गया",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "पहुंच रद्द करने में विफल: {error}",
+  "failedToRevokeAccess": "[HI] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "हाल के गेम",
   "@recentGames": {
     "description": "Recent games label"
   },
@@ -559,19 +559,19 @@
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "निमंत्रण रद्द करने में विफल: {error}",
+  "failedToCancelInvite": "[HI] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "संदेश भेजने में त्रुटि: {error}",
+  "errorSendingMessage": "[HI] Error sending message",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "पासवर्ड सुष्ट करें",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "गोपनीयता अनुरोध लोड करने में त्रुटि: {error}",
+  "errorLoadingPrivacyRequests": "[HI] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
@@ -579,11 +579,11 @@
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "साझा करें",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "गेम का नाम दर्ज करें",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
@@ -595,7 +595,7 @@
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "गेम बनाएं",
   "@createGame": {
     "description": "Create game button"
   },
@@ -603,7 +603,7 @@
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "अभी तक कोई सत्र नहीं मिला",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
@@ -611,7 +611,7 @@
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
@@ -623,11 +623,11 @@
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "पिछला",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "एक गेम चुनें",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
@@ -643,7 +643,7 @@
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "लिंक: {link}",
+  "link": "[HI] Link",
   "@link": {
     "description": "Link label"
   },
@@ -655,10 +655,10 @@
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "स्थिति: {status}",
+  "statusColon": "[HI] Status:",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "hi",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginToViewProfile": "कृपया लॉगिन करें और अपनी प्रोफ़ाइल देखें."
 }

@@ -1,664 +1,664 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "[LV] Refresh",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "TRANSLATE_ME",
+  "home": "Sākums",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "[LV] No sessions yet",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "[LV] OK",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "[LV] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "[LV] Sign Up",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "[LV] Schedule Message",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "TRANSLATE_ME",
+  "decline": "[LV] Decline",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "TRANSLATE_ME",
+  "adminBroadcast": "[LV] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "TRANSLATE_ME",
+  "login": "Ielogoties",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "[LV] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "TRANSLATE_ME",
+  "noInvites": "[LV] No invites",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "[LV] Choose a time",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "[LV] Success",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "[LV] Undo",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "TRANSLATE_ME",
+  "opened": "[LV] Opened",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "[LV] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "TRANSLATE_ME",
+  "messageSentSuccessfully": "Ziņojums veiksmīgi nosūtīts",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "[LV] Redo",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "TRANSLATE_ME",
+  "next": "Tālāk",
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "[LV] Search",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "TRANSLATE_ME",
+  "cancelInviteConfirmation": "[LV] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "TRANSLATE_ME",
+  "created": "[LV] Created",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "TRANSLATE_ME",
+  "revokeAccess": "[LV] Revoke Access",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "TRANSLATE_ME",
+  "saveGroupForRecognition": "[LV] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "[LV] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "TRANSLATE_ME",
+  "revokeAccessConfirmation": "[LV] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "[LV] Download",
   "@download": {
     "description": "Download button text"
   },
-  "password": "TRANSLATE_ME",
+  "password": "Parole",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "TRANSLATE_ME",
+  "errorLoadingFamilyLinks": "[LV] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "TRANSLATE_ME",
+  "cancel": "[LV] Cancel",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "[LV] Create",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "TRANSLATE_ME",
+  "failedToActionPrivacyRequest": "[LV] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "TRANSLATE_ME",
+  "appTitle": "[LV] APP-OINT",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "TRANSLATE_ME",
+  "accept": "Pieņemt",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "[LV] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "[LV] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "[LV] Delete",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "[LV] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "[LV] Create your first game",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "[LV] Participants",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "TRANSLATE_ME",
+  "recipients": "Saņēmēji: {count}",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "[LV] No results found",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "TRANSLATE_ME",
+  "yes": "Jā",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "TRANSLATE_ME",
+  "invite": "[LV] Invite",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "[LV] Live Play",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "[LV] Done",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "TRANSLATE_ME",
+  "defaultShareMessage": "[LV] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "TRANSLATE_ME",
+  "no": "Nē",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "[LV] Playtime Hub",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "[LV] Error",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "[LV] Create Live Session",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "TRANSLATE_ME",
+  "enableNotifications": "Iespējot paziņojumus",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "TRANSLATE_ME",
+  "invited": "[LV] Invited",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "TRANSLATE_ME",
+  "content": "[LV] Content",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "TRANSLATE_ME",
+  "meetingSharedSuccessfully": "Tikšanās veiksmīgi kopīgota!",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "[LV] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "[LV] View All",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "[LV] Virtual Play",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "TRANSLATE_ME",
+  "staffScreenTBD": "[LV] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "[LV] Cut",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "TRANSLATE_ME",
+  "inviteCancelledSuccessfully": "[LV] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "[LV] Retry",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "TRANSLATE_ME",
+  "composeBroadcastMessage": "Sastādīt pārraides ziņojumu",
   "@composeBroadcastMessage": {
-    "description": "Compose broadcast message title"
+    "description": "Compose broadcast message button"
   },
-  "sendNow": "TRANSLATE_ME",
+  "sendNow": "Sūtīt tagad",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "[LV] No games yet",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "[LV] Select",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "[LV] About",
   "@about": {
-    "description": "About navigation label"
+    "description": "About button text"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "[LV] Choose",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "TRANSLATE_ME",
+  "profile": "[LV] Profile",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "TRANSLATE_ME",
+  "removeChild": "Noņemt bērnu",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "TRANSLATE_ME",
+  "status": "[LV] Status",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "[LV] Logout",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "[LV] Paste",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "TRANSLATE_ME",
+  "welcome": "Laipni lūdzam",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "[LV] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "TRANSLATE_ME",
+  "familyMembers": "Ģimenes locekļi",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "[LV] Upload",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "[LV] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "TRANSLATE_ME",
+  "enterGroupName": "Ievadiet grupas nosaukumu",
   "@enterGroupName": {
-    "description": "Enter group name placeholder"
+    "description": "Enter group name label"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "[LV] Confirm",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "[LV] Live Play",
   "@playtimeLive": {
-    "description": "Live play label"
+    "description": "Live playtime label"
   },
-  "errorLoadingInvites": "TRANSLATE_ME",
+  "errorLoadingInvites": "[LV] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "TRANSLATE_ME",
+  "targetingFilters": "[LV] Targeting Filters",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "TRANSLATE_ME",
+  "pickVideo": "Izvēlēties video",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "[LV] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "TRANSLATE_ME",
+  "scheduleForLater": "Ieplānot vēlāk",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "TRANSLATE_ME",
+  "accessRevokedSuccessfully": "[LV] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "TRANSLATE_ME",
+  "type": "Tips",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "TRANSLATE_ME",
+  "checkingPermissions": "[LV] Checking permissions...",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "[LV] Copy",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "TRANSLATE_ME",
+  "yesCancel": "[LV] Yes, Cancel",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "TRANSLATE_ME",
+  "email": "E-pasts",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "TRANSLATE_ME",
+  "shareOnWhatsApp": "[LV] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "TRANSLATE_ME",
+  "notificationSettings": "[LV] Notification Settings",
   "@notificationSettings": {
-    "description": "Notification settings title"
+    "description": "Notification settings label"
   },
-  "myProfile": "TRANSLATE_ME",
+  "myProfile": "[LV] My Profile",
   "@myProfile": {
-    "description": "My profile title"
+    "description": "My profile label"
   },
-  "revoke": "TRANSLATE_ME",
+  "revoke": "[LV] Revoke",
   "@revoke": {
-    "description": "Revoke button"
+    "description": "Revoke button text"
   },
-  "noBroadcastMessages": "TRANSLATE_ME",
+  "noBroadcastMessages": "Nav pārraides ziņojumu",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "TRANSLATE_ME",
+  "requestType": "Pieprasījuma veids",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "TRANSLATE_ME",
+  "notifications": "Paziņojumi",
   "@notifications": {
-    "description": "Notifications title"
+    "description": "Notifications label"
   },
-  "details": "TRANSLATE_ME",
+  "details": "Detaļas",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "TRANSLATE_ME",
+  "cancelInvite": "[LV] Cancel Invite",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "[LV] Create New",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "[LV] Settings",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "[LV] Reject",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "TRANSLATE_ME",
+  "errorLoadingProfile": "[LV] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "[LV] Edit",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "[LV] Add",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "[LV] Game approved",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "[LV] Forgot Password?",
   "@forgotPassword": {
-    "description": "Forgot password link text"
+    "description": "Forgot password link"
   },
-  "familyDashboard": "TRANSLATE_ME",
+  "familyDashboard": "[LV] Family Dashboard",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "TRANSLATE_ME",
+  "loading": "Ielādē",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "[LV] Quick Actions",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "[LV] Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "TRANSLATE_ME",
+  "otpResentSuccessfully": "OTP veiksmīgi pārsūtīts!",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "TRANSLATE_ME",
+  "errorCheckingPermissions": "[LV] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "TRANSLATE_ME",
+  "clientScreenTBD": "Klienta ekrāns - drīzumā",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "TRANSLATE_ME",
+  "fcmToken": "[LV] FCM Token",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "TRANSLATE_ME",
+  "pickImage": "[LV] Pick Image",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "[LV] Previous",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "TRANSLATE_ME",
+  "noProfileFound": "[LV] No profile found",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "TRANSLATE_ME",
+  "noFamilyMembersYet": "Vēl nav ģimenes locekļu",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "TRANSLATE_ME",
+  "mediaOptional": "Mediji (nav obligāti)",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "TRANSLATE_ME",
+  "messageSavedSuccessfully": "Ziņojums veiksmīgi saglabāts!",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "[LV] Scheduled for",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "TRANSLATE_ME",
+  "dashboard": "[LV] Dashboard",
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "TRANSLATE_ME",
+  "noPermissionForBroadcast": "[LV] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[LV] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "TRANSLATE_ME",
+  "inviteDetail": "[LV] Invite Details",
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "TRANSLATE_ME",
+  "scheduled": "Ieplānots",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "TRANSLATE_ME",
+  "failedToResendOtp": "[LV] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "TRANSLATE_ME",
+  "scheduling": "Ieplāno",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "TRANSLATE_ME",
+  "errorSavingMessage": "[LV] Error saving message",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
-  "save": "TRANSLATE_ME",
+  "save": "Saglabāt",
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "[LV] Approve",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "[LV] Create your first session",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "[LV] Game rejected",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "TRANSLATE_ME",
+  "failedToRevokeAccess": "[LV] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "[LV] Recent Games",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "TRANSLATE_ME",
+  "customizeMessage": "Pielāgot ziņojumu",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "TRANSLATE_ME",
+  "failedToCancelInvite": "[LV] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "TRANSLATE_ME",
+  "errorSendingMessage": "[LV] Error sending message",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "[LV] Confirm Password",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "TRANSLATE_ME",
+  "errorLoadingPrivacyRequests": "[LV] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "TRANSLATE_ME",
+  "connectedChildren": "Savienotie bērni",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "[LV] Share",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "[LV] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "TRANSLATE_ME",
+  "pleaseLoginForFamilyFeatures": "Lūdzu, ielogojieties, lai piekļūtu ģimenes funkcijām",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "TRANSLATE_ME",
+  "myInvites": "[LV] My Invites",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "[LV] Create Game",
   "@createGame": {
     "description": "Create game button"
   },
-  "groupNameOptional": "TRANSLATE_ME",
+  "groupNameOptional": "Grupas nosaukums (nav obligāts)",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "[LV] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "TRANSLATE_ME",
+  "adminScreenTBD": "[LV] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[LV] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "close": "TRANSLATE_ME",
+  "close": "Aizvērt",
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "TRANSLATE_ME",
+  "knownGroupDetected": "[LV] Known group detected",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "[LV] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "[LV] Choose a game",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "TRANSLATE_ME",
+  "managePermissions": "[LV] Manage Permissions",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "TRANSLATE_ME",
+  "pollOptions": "Aptaujas opcijas",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "TRANSLATE_ME",
+  "clicked": "[LV] Clicked",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "TRANSLATE_ME",
+  "link": "Saite",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "TRANSLATE_ME",
+  "meetingReadyMessage": "[LV] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "TRANSLATE_ME",
+  "pendingInvites": "[LV] Pending Invites",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "TRANSLATE_ME",
+  "statusColon": "[LV] Status:",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "lv",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginToViewProfile": "[LV] Please log in to view your profile."
 }

@@ -9,548 +9,550 @@ class AppLocalizationsMk extends AppLocalizations {
   AppLocalizationsMk([String locale = 'mk']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'Освежи';
 
   @override
-  String get home => 'Home';
+  String get home => 'Дома';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'Сè уште нема сесии';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'Во ред';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'Изберете го вашиот режим на игра:';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'Регистрирај се';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'Закажи порака';
 
   @override
-  String get decline => 'Decline';
+  String get decline => 'Одбиј';
 
   @override
-  String get adminBroadcast => 'Admin Broadcast';
+  String get adminBroadcast => 'Админ емитување';
 
   @override
-  String get login => 'Login';
+  String get login => 'Најави се';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'Изберете пријатели за покана';
 
   @override
-  String get noInvites => 'No invites';
+  String get noInvites => 'Нема покани';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'Изберете време';
 
   @override
-  String get success => 'Success';
+  String get success => 'Успех';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'Врати';
 
   @override
-  String opened(Object count) {
-    return 'Opened';
-  }
+  String get opened => 'Отворено';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'Создај виртуелна сесија';
 
   @override
-  String get messageSentSuccessfully => 'Message sent successfully';
+  String get messageSentSuccessfully => 'Пораката е успешно испратена';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'Повтори';
 
   @override
-  String get next => 'Next';
+  String get next => 'Следно';
 
   @override
-  String get search => 'Search';
+  String get search => 'Пребарај';
 
   @override
   String get cancelInviteConfirmation =>
-      'Are you sure you want to cancel this invite?';
+      'Дали сте сигурни дека сакате да ја откажете оваа покана?';
 
   @override
   String created(Object date) {
-    return 'Created';
+    return 'Создадено';
   }
 
   @override
-  String get revokeAccess => 'Revoke Access';
+  String get revokeAccess => 'Отповикај пристап';
 
   @override
-  String get saveGroupForRecognition => 'Save Group for Recognition';
+  String get saveGroupForRecognition => 'Зачувај група за препознавање';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'Жив playtime е закажан!';
 
   @override
   String get revokeAccessConfirmation =>
-      'Are you sure you want to revoke access?';
+      'Дали сте сигурни дека сакате да го отповикате пристапот?';
 
   @override
-  String get download => 'Download';
+  String get download => 'Преземи';
 
   @override
-  String get password => 'Password';
+  String get password => 'Лозинка';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Error loading family links';
+    return 'Грешка при вчитување на семејни врски';
   }
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'Откажи';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Создај';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Failed to action privacy request';
+    return 'Неуспешно дејствување на барање за приватност';
   }
 
   @override
   String get appTitle => 'APP-OINT';
 
   @override
-  String get accept => 'Accept';
+  String get accept => 'Прифати';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'Виртуелна игра';
 
   @override
   String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+      'Уживајте во живи или виртуелни игри со вашите пријатели!';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Избриши';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Виртуелниот playtime е започнат!';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'Создајте ја вашата прва игра';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'Учесници';
 
   @override
   String recipients(Object count) {
-    return 'Recipients';
+    return 'Приматели';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'Нема пронајдени резултати';
 
   @override
-  String get yes => 'Yes';
+  String get yes => 'Да';
 
   @override
-  String get invite => 'Invite';
+  String get invite => 'Покани';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'Жива игра';
 
   @override
-  String get done => 'Done';
+  String get done => 'Готово';
 
   @override
-  String get defaultShareMessage => 'Let\'s meet via Appoint!';
+  String get defaultShareMessage => 'Да се запознаеме преку Appoint!';
 
   @override
-  String get no => 'No';
+  String get no => 'Не';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Playtime центар';
 
   @override
-  String get error => 'Error';
+  String get error => 'Грешка';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'Создај жива сесија';
 
   @override
-  String get enableNotifications => 'Enable Notifications';
+  String get enableNotifications => 'Овозможи известувања';
 
   @override
   String invited(Object date) {
-    return 'Invited';
+    return 'Поканет';
   }
 
   @override
   String content(Object content) {
-    return 'Content';
+    return 'Содржина';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Meeting shared successfully';
+  String get meetingSharedSuccessfully => 'Средбата е успешно споделена';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Добредојдовте во Playtime';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'Види ги сите';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Виртуелна игра';
 
   @override
-  String get staffScreenTBD => 'Staff screen coming soon';
+  String get staffScreenTBD => 'Персонал екран наскоро';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'Исечи';
 
   @override
-  String get inviteCancelledSuccessfully => 'Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => 'Поканата е успешно откажана';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'Обиди се повторно';
 
   @override
-  String get composeBroadcastMessage => 'Compose Broadcast Message';
+  String get composeBroadcastMessage => 'Состави емитувана порака';
 
   @override
-  String get sendNow => 'Send Now';
+  String get sendNow => 'Испрати сега';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'Сè уште нема игри';
 
   @override
-  String get select => 'Select';
+  String get select => 'Избери';
 
   @override
-  String get about => 'About';
+  String get about => 'За';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'Избери';
 
   @override
-  String get profile => 'Profile';
+  String get profile => 'Профил';
 
   @override
-  String get removeChild => 'Remove Child';
+  String get removeChild => 'Отстрани дете';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return 'Статус';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'Одјави се';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'Залепи';
 
   @override
-  String get welcome => 'Welcome';
+  String get welcome => 'Добредојдовте';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'Создај Playtime сесија';
 
   @override
-  String get familyMembers => 'Family Members';
+  String get familyMembers => 'Членови на семејството';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'Постави';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'Претстојни сесии';
 
   @override
-  String get enterGroupName => 'Enter group name';
+  String get enterGroupName => 'Внесете име на група';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Потврди';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Жива игра';
 
   @override
-  String get errorLoadingInvites => 'Error loading invites';
-
-  @override
-  String get targetingFilters => 'Targeting Filters';
-
-  @override
-  String get pickVideo => 'Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'Schedule for Later';
-
-  @override
-  String get accessRevokedSuccessfully => 'Access revoked successfully';
-
-  @override
-  String type(Object type) {
-    return 'Type';
+  String errorLoadingInvites(Object error) {
+    return 'Грешка при вчитување на покани';
   }
 
   @override
-  String get checkingPermissions => 'Checking permissions...';
+  String get targetingFilters => 'Филтри за насочување';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'Избери видео';
 
   @override
-  String get yesCancel => 'Yes, Cancel';
+  String get playtimeGameDeleted => 'Играта е избришана';
 
   @override
-  String get email => 'Email';
+  String get scheduleForLater => 'Закажи за подоцна';
 
   @override
-  String get shareOnWhatsApp => 'Share on WhatsApp';
+  String get accessRevokedSuccessfully => 'Пристапот е успешно отповикан';
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get type => 'Тип';
 
   @override
-  String get myProfile => 'My Profile';
+  String get checkingPermissions => 'Проверка на дозволи...';
 
   @override
-  String get revoke => 'Revoke';
+  String get copy => 'Копирај';
 
   @override
-  String get noBroadcastMessages => 'No messages yet';
+  String get yesCancel => 'Да, откажи';
+
+  @override
+  String get email => 'Е-пошта';
+
+  @override
+  String get shareOnWhatsApp => 'Сподели на WhatsApp';
+
+  @override
+  String get notificationSettings => 'Поставки за известувања';
+
+  @override
+  String get myProfile => 'Мој профил';
+
+  @override
+  String get revoke => 'Отповикај';
+
+  @override
+  String get noBroadcastMessages => 'Сè уште нема пораки';
 
   @override
   String requestType(Object type) {
-    return 'Request Type';
+    return 'Тип на барање';
   }
 
   @override
-  String get notifications => 'Notifications';
+  String get notifications => 'Известувања';
 
   @override
-  String get details => 'Details';
+  String get details => 'Детали';
 
   @override
-  String get cancelInvite => 'Cancel Invite';
+  String get cancelInvite => 'Откажи покана';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'Создај ново';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Поставки';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Одбиј';
 
   @override
-  String get errorLoadingProfile => 'Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'Грешка при вчитување на профил';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Уреди';
 
   @override
-  String get add => 'Add';
+  String get add => 'Додај';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'Играта е одобрена';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'Заборавивте лозинка?';
 
   @override
-  String get familyDashboard => 'Family Dashboard';
+  String get familyDashboard => 'Семејна контролна табла';
 
   @override
-  String get loading => 'Loading...';
+  String get loading => 'Вчитување...';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'Брзи дејства';
 
   @override
   String get playtimeTitle => 'Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP resent successfully';
+  String get otpResentSuccessfully => 'OTP е успешно повторно испратен';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Error checking permissions';
+    return 'Грешка при проверка на дозволи';
   }
 
   @override
-  String get clientScreenTBD => 'Client screen coming soon';
+  String get clientScreenTBD => 'Клиент екран наскоро';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM Token';
+    return 'FCM токен';
   }
 
   @override
-  String get pickImage => 'Pick Image';
+  String get pickImage => 'Избери слика';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'Претходно';
 
   @override
-  String get noProfileFound => 'No profile found';
+  String get noProfileFound => 'Профилот не е пронајден';
 
   @override
-  String get noFamilyMembersYet => 'No family members yet';
+  String get noFamilyMembersYet => 'Сè уште нема членови на семејството';
 
   @override
-  String get mediaOptional => 'Media (Optional)';
+  String get mediaOptional => 'Медија (опционално)';
 
   @override
-  String get messageSavedSuccessfully => 'Message saved successfully';
+  String get messageSavedSuccessfully => 'Пораката е успешно зачувана';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'Закажано за';
 
   @override
-  String get dashboard => 'Dashboard';
+  String get dashboard => 'Контролна табла';
 
   @override
-  String get noPermissionForBroadcast => 'No permission for broadcast';
+  String get noPermissionForBroadcast => 'Нема дозвола за емитување';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Playtime игри – Админ';
 
   @override
-  String get inviteDetail => 'Invite Details';
+  String get inviteDetail => 'Детали на покана';
 
   @override
   String scheduled(Object date) {
-    return 'Scheduled';
+    return 'Закажано';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Failed to resend OTP';
+    return 'Неуспешно повторно испраќање на OTP';
   }
 
   @override
-  String get scheduling => 'Scheduling';
+  String get scheduling => 'Закажување';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Error saving message';
+    return 'Грешка при зачувување на порака';
   }
 
   @override
-  String get save => 'Save';
+  String get save => 'Зачувај';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Одобри';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'Создајте ја вашата прва сесија';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'Играта е одбиена';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Failed to revoke access';
+    return 'Неуспешно отповикување на пристап';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'Неодамнешни игри';
 
   @override
-  String get customizeMessage => 'Customize Message';
+  String get customizeMessage => 'Прилагоди порака';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Failed to cancel invite';
+    return 'Неуспешно откажување на покана';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Error sending message';
+    return 'Грешка при испраќање на порака';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'Потврди лозинка';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Error loading privacy requests';
+    return 'Грешка при вчитување на барања за приватност';
   }
 
   @override
-  String get connectedChildren => 'Connected Children';
+  String get connectedChildren => 'Поврзани деца';
 
   @override
-  String get share => 'Share';
+  String get share => 'Сподели';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'Внесете име на игра';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+      'Ве молиме најавете се за пристап до семејни функции';
 
   @override
-  String get myInvites => 'My Invites';
+  String get myInvites => 'Мои покани';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'Создај игра';
 
   @override
-  String get groupNameOptional => 'Group Name (Optional)';
+  String get groupNameOptional => 'Име на група (опционално)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Нема пронајдени playtime сесии.';
 
   @override
-  String get adminScreenTBD => 'Admin screen coming soon';
+  String get adminScreenTBD => 'Админ екран наскоро';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => 'Playtime контролна табла';
 
   @override
-  String get close => 'Close';
+  String get close => 'Затвори';
 
   @override
-  String get knownGroupDetected => 'Known group detected';
+  String get knownGroupDetected => 'Откриена позната група';
 
   @override
-  String get back => 'Back';
+  String get back => 'Назад';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'Избери игра';
 
   @override
-  String get managePermissions => 'Manage Permissions';
+  String get managePermissions => 'Управувај со дозволи';
 
   @override
-  String get pollOptions => 'Poll Options';
+  String get pollOptions => 'Опции за анкета';
 
   @override
   String clicked(Object count) {
-    return 'Clicked';
+    return 'Кликнато';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return 'Врска';
   }
 
   @override
-  String get meetingReadyMessage => 'Your meeting is ready! Join now';
+  String get meetingReadyMessage =>
+      'Вашата средба е подготвена! Приклучете се сега';
 
   @override
-  String get pendingInvites => 'Pending Invites';
+  String get pendingInvites => 'Чекаат покани';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return 'Статус:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      'Ве молиме најавете се за да го видите вашиот профил.';
 }

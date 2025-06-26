@@ -9,554 +9,547 @@ class AppLocalizationsRo extends AppLocalizations {
   AppLocalizationsRo([String locale = 'ro']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'Reîmprospătează';
 
   @override
-  String get home => 'TODO: Home';
+  String get home => 'Acasă';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'Încă nu există sesiuni';
 
   @override
   String get ok => 'OK';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'Alege modul';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'Înregistrează-te';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'Programează mesaj';
 
   @override
-  String get decline => 'TODO: Decline';
+  String get decline => 'Respinge';
 
   @override
-  String get adminBroadcast => 'TODO: Admin Broadcast';
+  String get adminBroadcast => 'Transmitere administrator';
 
   @override
-  String get login => 'TODO: Login';
+  String get login => 'Autentificare';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'Alege prieteni';
 
   @override
-  String get noInvites => 'TODO: No invites';
+  String get noInvites => 'Fără invitații';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'Alege ora';
 
   @override
-  String get success => 'Success';
+  String get success => 'Succes';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'Anulează';
 
   @override
-  String opened(Object count) {
-    return 'TODO: Opened: $count';
-  }
+  String get opened => 'Deschis';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'Creează sesiune virtuală';
 
   @override
-  String get messageSentSuccessfully => 'TODO: Message sent successfully';
+  String get messageSentSuccessfully => 'Mesaj trimis cu succes';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'Repetă';
 
   @override
-  String get next => 'TODO: Next';
+  String get next => 'Următorul';
 
   @override
-  String get search => 'Search';
+  String get search => 'Caută';
 
   @override
-  String get cancelInviteConfirmation =>
-      'TODO: Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => 'Anulează confirmarea invitației';
 
   @override
   String created(Object date) {
-    return 'TODO: Created: $date';
+    return 'Creat';
   }
 
   @override
-  String get revokeAccess => 'TODO: Revoke Access';
+  String get revokeAccess => 'Revocă acces';
 
   @override
-  String get saveGroupForRecognition =>
-      'TODO: Save group for future recognition';
+  String get saveGroupForRecognition => 'Salvează grup pentru recunoaștere';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'Sesiune live programată';
 
   @override
-  String get revokeAccessConfirmation =>
-      'TODO: Are you sure you want to revoke access for this child? This action cannot be undone.';
+  String get revokeAccessConfirmation => 'Confirmare revocare acces';
 
   @override
-  String get download => 'Download';
+  String get download => 'Descarcă';
 
   @override
-  String get password => 'TODO: Password';
+  String get password => 'Parolă';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'TODO: Error loading family links: $error';
+    return 'Eroare la încărcarea legăturilor de familie';
   }
 
   @override
-  String get cancel => 'TODO: Cancel';
+  String get cancel => 'Anulează';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Creează Playtime';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'TODO: Failed to $action privacy request: $error';
+    return 'Nu s-a putut procesa cererea de confidențialitate';
   }
 
   @override
-  String get appTitle => 'TODO: Appoint';
+  String get appTitle => 'Titlul aplicației';
 
   @override
-  String get accept => 'TODO: Accept';
+  String get accept => 'Acceptă';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'Mod virtual';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Descriere Playtime';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Șterge';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Sesiune virtuală începută';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'Creează primul tău joc';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'Participanți';
 
   @override
   String recipients(Object count) {
-    return 'TODO: Recipients: $count';
+    return 'Destinatari';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'Fără rezultate';
 
   @override
-  String get yes => 'TODO: Yes';
+  String get yes => 'Da';
 
   @override
-  String get invite => 'TODO: Invite';
+  String get invite => 'Invită';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'Mod live';
 
   @override
-  String get done => 'Done';
+  String get done => 'Gata';
 
   @override
-  String get defaultShareMessage =>
-      'TODO: Hey! I\'ve scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:';
+  String get defaultShareMessage => 'Mesaj implicit pentru distribuire';
 
   @override
-  String get no => 'TODO: No';
+  String get no => 'Nu';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Centrul Playtime';
 
   @override
-  String get error => 'Error';
+  String get error => 'Eroare';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'Creează sesiune live';
 
   @override
-  String get enableNotifications => 'TODO: Enable Notifications';
+  String get enableNotifications => 'Activează notificări';
 
   @override
   String invited(Object date) {
-    return 'TODO: Invited: $date';
+    return 'Invitat';
   }
 
   @override
   String content(Object content) {
-    return 'TODO: Content: $content';
+    return 'Conținut';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'TODO: Meeting shared successfully!';
+  String get meetingSharedSuccessfully => 'Întâlnire partajată cu succes';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Bine ai venit la Playtime';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'Vezi tot';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Playtime virtual';
 
   @override
-  String get staffScreenTBD => 'TODO: Staff Screen - To Be Developed';
+  String get staffScreenTBD => 'Ecran personal de definit';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'Decupează';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      'TODO: Invite cancelled successfully!';
+  String get inviteCancelledSuccessfully => 'Invitație anulată cu succes';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'Reîncearcă';
 
   @override
-  String get composeBroadcastMessage => 'TODO: Compose Broadcast Message';
+  String get composeBroadcastMessage => 'Compune mesaj broadcast';
 
   @override
-  String get sendNow => 'TODO: Send Now';
+  String get sendNow => 'Trimite acum';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'Încă nu există jocuri';
 
   @override
-  String get select => 'Select';
+  String get select => 'Selectează';
 
   @override
-  String get about => 'About';
+  String get about => 'Despre';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'Alege';
 
   @override
-  String get profile => 'TODO: Profile';
+  String get profile => 'Profil';
 
   @override
-  String get removeChild => 'TODO: Remove Child';
+  String get removeChild => 'Elimină copil';
 
   @override
   String status(Object status) {
-    return 'TODO: Status: $status';
+    return 'Stare';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'Deconectare';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'Lipește';
 
   @override
-  String get welcome => 'TODO: Welcome';
+  String get welcome => 'Bine ai venit';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'Creează sesiune';
 
   @override
-  String get familyMembers => 'TODO: Family Members';
+  String get familyMembers => 'Membri familie';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'Încarcă';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'Sesiuni viitoare';
 
   @override
-  String get enterGroupName => 'TODO: Enter group name for recognition';
+  String get enterGroupName => 'Introdu numele grupului';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Confirmă';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Playtime live';
 
   @override
-  String get errorLoadingInvites => 'TODO: Error loading invites';
-
-  @override
-  String get targetingFilters => 'TODO: Targeting Filters';
-
-  @override
-  String get pickVideo => 'TODO: Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'TODO: Schedule for later';
-
-  @override
-  String get accessRevokedSuccessfully => 'TODO: Access revoked successfully!';
-
-  @override
-  String type(Object type) {
-    return 'TODO: Type: $type';
+  String errorLoadingInvites(Object error) {
+    return 'Eroare la încărcarea invitațiilor';
   }
 
   @override
-  String get checkingPermissions => 'TODO: Checking permissions...';
+  String get targetingFilters => 'Filtre țintă';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'Alege video';
 
   @override
-  String get yesCancel => 'TODO: Yes, Cancel';
+  String get playtimeGameDeleted => 'Joc șters';
 
   @override
-  String get email => 'TODO: Email';
+  String get scheduleForLater => 'Programează pentru mai târziu';
 
   @override
-  String get shareOnWhatsApp => 'TODO: Share on WhatsApp';
+  String get accessRevokedSuccessfully => 'Acces revocat cu succes';
 
   @override
-  String get notificationSettings => 'TODO: Notification Settings';
+  String get type => 'Tip';
 
   @override
-  String get myProfile => 'TODO: My Profile';
+  String get checkingPermissions => 'Verificare permisiuni';
 
   @override
-  String get revoke => 'TODO: Revoke';
+  String get copy => 'Copiază';
 
   @override
-  String get noBroadcastMessages => 'TODO: No broadcast messages yet';
+  String get yesCancel => 'Da, anulează';
+
+  @override
+  String get email => 'Email';
+
+  @override
+  String get shareOnWhatsApp => 'Partajează pe WhatsApp';
+
+  @override
+  String get notificationSettings => 'Setări notificări';
+
+  @override
+  String get myProfile => 'Profilul meu';
+
+  @override
+  String get revoke => 'Revocă';
+
+  @override
+  String get noBroadcastMessages => 'Fără mesaje broadcast';
 
   @override
   String requestType(Object type) {
-    return 'TODO: $type Request';
+    return 'Tip cerere';
   }
 
   @override
-  String get notifications => 'TODO: Notifications';
+  String get notifications => 'Notificări';
 
   @override
-  String get details => 'TODO: Details';
+  String get details => 'Detalii';
 
   @override
-  String get cancelInvite => 'TODO: Cancel Invite';
+  String get cancelInvite => 'Anulează invitația';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'Creează nou';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Setări';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Respinge Playtime';
 
   @override
-  String get errorLoadingProfile => 'TODO: Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'Eroare la încărcarea profilului';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Editează';
 
   @override
-  String get add => 'Add';
+  String get add => 'Adaugă';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'Joc aprobat';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'Ai uitat parola?';
 
   @override
-  String get familyDashboard => 'TODO: Family Dashboard';
+  String get familyDashboard => 'Panou familie';
 
   @override
-  String get loading => 'TODO: Loading...';
+  String get loading => 'Se încarcă';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'Acțiuni rapide';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'Titlu Playtime';
 
   @override
-  String get otpResentSuccessfully => 'TODO: OTP resent successfully!';
+  String get otpResentSuccessfully => 'OTP retrimis cu succes';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'TODO: Error checking permissions: $error';
+    return 'Eroare la verificarea permisiunilor';
   }
 
   @override
-  String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+  String get clientScreenTBD => 'Ecran client de definit';
 
   @override
   String fcmToken(Object token) {
-    return 'TODO: FCM Token: $token';
+    return 'Token FCM';
   }
 
   @override
-  String get pickImage => 'TODO: Pick Image';
+  String get pickImage => 'Alege imagine';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'Anterior';
 
   @override
-  String get noProfileFound => 'TODO: No profile found';
+  String get noProfileFound => 'Profil neidentificat';
 
   @override
-  String get noFamilyMembersYet =>
-      'TODO: No family members yet. Invite someone to get started!';
+  String get noFamilyMembersYet => 'Fără membri de familie';
 
   @override
-  String get mediaOptional => 'TODO: Media (Optional)';
+  String get mediaOptional => 'Media (opțional)';
 
   @override
-  String get messageSavedSuccessfully => 'TODO: Message saved successfully';
+  String get messageSavedSuccessfully => 'Mesaj salvat cu succes';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'Programat pentru';
 
   @override
-  String get dashboard => 'TODO: Dashboard';
+  String get dashboard => 'Tablou de bord';
 
   @override
-  String get noPermissionForBroadcast =>
-      'TODO: You do not have permission to create broadcast messages.';
+  String get noPermissionForBroadcast => 'Fără permisiune pentru broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Titlu panou admin Playtime';
 
   @override
-  String get inviteDetail => 'TODO: Invite Detail';
+  String get inviteDetail => 'Detaliu invitație';
 
   @override
   String scheduled(Object date) {
-    return 'TODO: Scheduled: $date';
+    return 'Programat';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'TODO: Failed to resend OTP: $error';
+    return 'Nu s-a putut retrimite OTP';
   }
 
   @override
-  String get scheduling => 'TODO: Scheduling';
+  String get scheduling => 'Se programează';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'TODO: Error saving message: $error';
+    return 'Eroare la salvarea mesajului';
   }
 
   @override
-  String get save => 'TODO: Save';
+  String get save => 'Salvează';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Aprobă Playtime';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'Creează prima sesiune';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'Joc respins';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'TODO: Failed to revoke access: $error';
+    return 'Nu s-a putut revoca accesul';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'Jocuri recente';
 
   @override
-  String get customizeMessage => 'TODO: Customize your message...';
+  String get customizeMessage => 'Personalizează mesaj';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'TODO: Failed to cancel invite: $error';
+    return 'Nu s-a putut anula invitația';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'TODO: Error sending message: $error';
+    return 'Eroare la trimiterea mesajului';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'Confirmă parola';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'TODO: Error loading privacy requests: $error';
+    return 'Eroare la încărcarea cererilor de confidențialitate';
   }
 
   @override
-  String get connectedChildren => 'TODO: Connected Children';
+  String get connectedChildren => 'Copii conectați';
 
   @override
-  String get share => 'Share';
+  String get share => 'Partajează';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'Introdu numele jocului';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'TODO: Please login to access family features';
+      'Autentifică-te pentru a accesa funcțiile de familie';
 
   @override
-  String get myInvites => 'TODO: My Invites';
+  String get myInvites => 'Invitațiile mele';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'Creează joc';
 
   @override
-  String get groupNameOptional => 'TODO: Group Name (optional)';
+  String get groupNameOptional => 'Numele grupului (opțional)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Nu s-au găsit sesiuni playtime.';
 
   @override
-  String get adminScreenTBD => 'TODO: Admin Screen - To Be Developed';
+  String get adminScreenTBD =>
+      'Ecranul administratorului va fi disponibil în curând';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => 'Tabloul de bord Playtime';
 
   @override
-  String get close => 'TODO: Close';
+  String get close => 'Închide';
 
   @override
-  String get knownGroupDetected => 'TODO: Known group detected';
+  String get knownGroupDetected => 'Grup cunoscut detectat';
 
   @override
-  String get back => 'Back';
+  String get back => 'Înapoi';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'Alege un joc';
 
   @override
-  String get managePermissions => 'TODO: Manage Permissions';
+  String get managePermissions => 'Gestionează permisiunile';
 
   @override
-  String get pollOptions => 'TODO: Poll Options:';
+  String get pollOptions => 'Opțiuni sondaj';
 
   @override
   String clicked(Object count) {
-    return 'TODO: Clicked: $count';
+    return 'Apăsat';
   }
 
   @override
   String link(Object link) {
-    return 'TODO: Link: $link';
+    return 'Link';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'TODO: The meeting is ready! Would you like to send it to your group?';
+  String get meetingReadyMessage => 'Întâlnirea ta este gata! Alătură-te acum';
 
   @override
-  String get pendingInvites => 'TODO: Pending Invites';
+  String get pendingInvites => 'Invitații în așteptare';
 
   @override
   String statusColon(Object status) {
-    return 'TODO: Status: $status';
+    return 'Stare:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      'Autentifică-te pentru a vedea profilul';
 }

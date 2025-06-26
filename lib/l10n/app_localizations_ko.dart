@@ -9,554 +9,544 @@ class AppLocalizationsKo extends AppLocalizations {
   AppLocalizationsKo([String locale = 'ko']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => '새로고침';
 
   @override
-  String get home => 'TODO: Home';
+  String get home => '홈';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => '아직 세션이 없습니다';
 
   @override
-  String get ok => 'OK';
+  String get ok => '확인';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => '플레이 모드를 선택하세요:';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => '가입하기';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => '메시지 예약';
 
   @override
-  String get decline => 'TODO: Decline';
+  String get decline => '거부';
 
   @override
-  String get adminBroadcast => 'TODO: Admin Broadcast';
+  String get adminBroadcast => '관리자 브로드캐스트';
 
   @override
-  String get login => 'TODO: Login';
+  String get login => '로그인';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => '초대할 친구 선택';
 
   @override
-  String get noInvites => 'TODO: No invites';
+  String get noInvites => '초대가 없습니다';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => '시간 선택';
 
   @override
-  String get success => 'Success';
+  String get success => '성공';
 
   @override
-  String get undo => 'Undo';
+  String get undo => '실행 취소';
 
   @override
-  String opened(Object count) {
-    return 'TODO: Opened: $count';
-  }
+  String get opened => '열림';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => '가상 세션 생성';
 
   @override
-  String get messageSentSuccessfully => 'TODO: Message sent successfully';
+  String get messageSentSuccessfully => '메시지가 성공적으로 전송되었습니다';
 
   @override
-  String get redo => 'Redo';
+  String get redo => '다시 실행';
 
   @override
-  String get next => 'TODO: Next';
+  String get next => '다음';
 
   @override
-  String get search => 'Search';
+  String get search => '검색';
 
   @override
-  String get cancelInviteConfirmation =>
-      'TODO: Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '초대 확인 취소';
 
   @override
   String created(Object date) {
-    return 'TODO: Created: $date';
+    return '생성됨';
   }
 
   @override
-  String get revokeAccess => 'TODO: Revoke Access';
+  String get revokeAccess => '접근 권한 취소';
 
   @override
-  String get saveGroupForRecognition =>
-      'TODO: Save group for future recognition';
+  String get saveGroupForRecognition => '인식을 위해 그룹 저장';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => '라이브 세션 예약됨';
 
   @override
-  String get revokeAccessConfirmation =>
-      'TODO: Are you sure you want to revoke access for this child? This action cannot be undone.';
+  String get revokeAccessConfirmation => '접근 권한 취소 확인';
 
   @override
-  String get download => 'Download';
+  String get download => '다운로드';
 
   @override
-  String get password => 'TODO: Password';
+  String get password => '비밀번호';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'TODO: Error loading family links: $error';
+    return '가족 링크 로드 오류';
   }
 
   @override
-  String get cancel => 'TODO: Cancel';
+  String get cancel => '취소';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Playtime 생성';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'TODO: Failed to $action privacy request: $error';
+    return '개인정보 요청 실행 실패';
   }
 
   @override
-  String get appTitle => 'TODO: Appoint';
+  String get appTitle => '앱 제목';
 
   @override
-  String get accept => 'TODO: Accept';
+  String get accept => '수락';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => '가상 모드';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Playtime 설명';
 
   @override
-  String get delete => 'Delete';
+  String get delete => '삭제';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => '가상 세션 시작됨';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => '첫 게임 만들기';
 
   @override
-  String get participants => 'Participants';
+  String get participants => '참가자';
 
   @override
   String recipients(Object count) {
-    return 'TODO: Recipients: $count';
+    return '수신자';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => '결과 없음';
 
   @override
-  String get yes => 'TODO: Yes';
+  String get yes => '예';
 
   @override
-  String get invite => 'TODO: Invite';
+  String get invite => '초대';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => '라이브 모드';
 
   @override
-  String get done => 'Done';
+  String get done => '완료';
 
   @override
-  String get defaultShareMessage =>
-      'TODO: Hey! I\'ve scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:';
+  String get defaultShareMessage => '기본 공유 메시지';
 
   @override
-  String get no => 'TODO: No';
+  String get no => '아니요';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Playtime 허브';
 
   @override
-  String get error => 'Error';
+  String get error => '오류';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => '라이브 세션 만들기';
 
   @override
-  String get enableNotifications => 'TODO: Enable Notifications';
+  String get enableNotifications => '알림 켜기';
 
   @override
   String invited(Object date) {
-    return 'TODO: Invited: $date';
+    return '초대됨';
   }
 
   @override
   String content(Object content) {
-    return 'TODO: Content: $content';
+    return '콘텐츠';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'TODO: Meeting shared successfully!';
+  String get meetingSharedSuccessfully => '미팅이 성공적으로 공유되었습니다';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Playtime에 오신 것을 환영합니다';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => '전체 보기';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => '가상 Playtime';
 
   @override
-  String get staffScreenTBD => 'TODO: Staff Screen - To Be Developed';
+  String get staffScreenTBD => '직원 화면 추후 결정';
 
   @override
-  String get cut => 'Cut';
+  String get cut => '잘라내기';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      'TODO: Invite cancelled successfully!';
+  String get inviteCancelledSuccessfully => '초대가 성공적으로 취소되었습니다';
 
   @override
-  String get retry => 'Retry';
+  String get retry => '다시 시도';
 
   @override
-  String get composeBroadcastMessage => 'TODO: Compose Broadcast Message';
+  String get composeBroadcastMessage => '브로드캐스트 메시지 작성';
 
   @override
-  String get sendNow => 'TODO: Send Now';
+  String get sendNow => '지금 보내기';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => '아직 게임이 없습니다';
 
   @override
-  String get select => 'Select';
+  String get select => '선택';
 
   @override
-  String get about => 'About';
+  String get about => '정보';
 
   @override
-  String get choose => 'Choose';
+  String get choose => '선택';
 
   @override
-  String get profile => 'TODO: Profile';
+  String get profile => '프로필';
 
   @override
-  String get removeChild => 'TODO: Remove Child';
+  String get removeChild => '자녀 제거';
 
   @override
   String status(Object status) {
-    return 'TODO: Status: $status';
+    return '상태';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => '로그아웃';
 
   @override
-  String get paste => 'Paste';
+  String get paste => '붙여넣기';
 
   @override
-  String get welcome => 'TODO: Welcome';
+  String get welcome => '환영합니다';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => '플레이타임 세션 생성';
 
   @override
-  String get familyMembers => 'TODO: Family Members';
+  String get familyMembers => '가족 구성원';
 
   @override
-  String get upload => 'Upload';
+  String get upload => '업로드';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => '예정된 세션';
 
   @override
-  String get enterGroupName => 'TODO: Enter group name for recognition';
+  String get enterGroupName => '그룹 이름 입력';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => '확인';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => '라이브 플레이';
 
   @override
-  String get errorLoadingInvites => 'TODO: Error loading invites';
-
-  @override
-  String get targetingFilters => 'TODO: Targeting Filters';
-
-  @override
-  String get pickVideo => 'TODO: Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'TODO: Schedule for later';
-
-  @override
-  String get accessRevokedSuccessfully => 'TODO: Access revoked successfully!';
-
-  @override
-  String type(Object type) {
-    return 'TODO: Type: $type';
+  String errorLoadingInvites(Object error) {
+    return '초대 로딩 오류';
   }
 
   @override
-  String get checkingPermissions => 'TODO: Checking permissions...';
+  String get targetingFilters => '타겟팅 필터';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => '비디오 선택';
 
   @override
-  String get yesCancel => 'TODO: Yes, Cancel';
+  String get playtimeGameDeleted => '게임이 삭제되었습니다';
 
   @override
-  String get email => 'TODO: Email';
+  String get scheduleForLater => '나중에 예약';
 
   @override
-  String get shareOnWhatsApp => 'TODO: Share on WhatsApp';
+  String get accessRevokedSuccessfully => '접근이 성공적으로 취소되었습니다';
 
   @override
-  String get notificationSettings => 'TODO: Notification Settings';
+  String get type => '유형';
 
   @override
-  String get myProfile => 'TODO: My Profile';
+  String get checkingPermissions => '권한 확인 중...';
 
   @override
-  String get revoke => 'TODO: Revoke';
+  String get copy => '복사';
 
   @override
-  String get noBroadcastMessages => 'TODO: No broadcast messages yet';
+  String get yesCancel => '예, 취소';
+
+  @override
+  String get email => '이메일';
+
+  @override
+  String get shareOnWhatsApp => 'WhatsApp에서 공유';
+
+  @override
+  String get notificationSettings => '알림 설정';
+
+  @override
+  String get myProfile => '내 프로필';
+
+  @override
+  String get revoke => '취소';
+
+  @override
+  String get noBroadcastMessages => '아직 메시지가 없습니다';
 
   @override
   String requestType(Object type) {
-    return 'TODO: $type Request';
+    return '요청 유형';
   }
 
   @override
-  String get notifications => 'TODO: Notifications';
+  String get notifications => '알림';
 
   @override
-  String get details => 'TODO: Details';
+  String get details => '세부사항';
 
   @override
-  String get cancelInvite => 'TODO: Cancel Invite';
+  String get cancelInvite => '초대 취소';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => '새로 만들기';
 
   @override
-  String get settings => 'Settings';
+  String get settings => '설정';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => '거부';
 
   @override
-  String get errorLoadingProfile => 'TODO: Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return '프로필 로딩 오류';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => '편집';
 
   @override
-  String get add => 'Add';
+  String get add => '추가';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => '게임 승인됨';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => '비밀번호를 잊으셨나요?';
 
   @override
-  String get familyDashboard => 'TODO: Family Dashboard';
+  String get familyDashboard => '가족 대시보드';
 
   @override
-  String get loading => 'TODO: Loading...';
+  String get loading => '로딩 중...';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => '빠른 작업';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => '플레이타임';
 
   @override
-  String get otpResentSuccessfully => 'TODO: OTP resent successfully!';
+  String get otpResentSuccessfully => 'OTP가 성공적으로 재전송되었습니다';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'TODO: Error checking permissions: $error';
+    return '권한 확인 오류';
   }
 
   @override
-  String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+  String get clientScreenTBD => '클라이언트 화면 곧 출시';
 
   @override
   String fcmToken(Object token) {
-    return 'TODO: FCM Token: $token';
+    return 'FCM 토큰';
   }
 
   @override
-  String get pickImage => 'TODO: Pick Image';
+  String get pickImage => '이미지 선택';
 
   @override
-  String get previous => 'Previous';
+  String get previous => '이전';
 
   @override
-  String get noProfileFound => 'TODO: No profile found';
+  String get noProfileFound => '프로필을 찾을 수 없습니다';
 
   @override
-  String get noFamilyMembersYet =>
-      'TODO: No family members yet. Invite someone to get started!';
+  String get noFamilyMembersYet => '아직 가족 구성원이 없습니다';
 
   @override
-  String get mediaOptional => 'TODO: Media (Optional)';
+  String get mediaOptional => '미디어 (선택사항)';
 
   @override
-  String get messageSavedSuccessfully => 'TODO: Message saved successfully';
+  String get messageSavedSuccessfully => '메시지가 성공적으로 저장되었습니다';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => '예약됨';
 
   @override
-  String get dashboard => 'TODO: Dashboard';
+  String get dashboard => '대시보드';
 
   @override
-  String get noPermissionForBroadcast =>
-      'TODO: You do not have permission to create broadcast messages.';
+  String get noPermissionForBroadcast => '브로드캐스트 권한 없음';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => '플레이타임 게임 – 관리자';
 
   @override
-  String get inviteDetail => 'TODO: Invite Detail';
+  String get inviteDetail => '초대 세부사항';
 
   @override
   String scheduled(Object date) {
-    return 'TODO: Scheduled: $date';
+    return '예약됨';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'TODO: Failed to resend OTP: $error';
+    return 'OTP 재전송 실패';
   }
 
   @override
-  String get scheduling => 'TODO: Scheduling';
+  String get scheduling => '예약';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'TODO: Error saving message: $error';
+    return '메시지 저장 오류';
   }
 
   @override
-  String get save => 'TODO: Save';
+  String get save => '저장';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => '승인';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => '첫 번째 세션을 만드세요';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => '게임 거부됨';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'TODO: Failed to revoke access: $error';
+    return '접근 취소 실패';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => '최근 게임';
 
   @override
-  String get customizeMessage => 'TODO: Customize your message...';
+  String get customizeMessage => '메시지 맞춤 설정';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'TODO: Failed to cancel invite: $error';
+    return '초대 취소 실패';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'TODO: Error sending message: $error';
+    return '메시지 전송 오류';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => '비밀번호 확인';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'TODO: Error loading privacy requests: $error';
+    return '개인정보 요청 로딩 오류';
   }
 
   @override
-  String get connectedChildren => 'TODO: Connected Children';
+  String get connectedChildren => '연결된 자녀';
 
   @override
-  String get share => 'Share';
+  String get share => '공유';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => '게임 이름 입력';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      'TODO: Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '가족 기능에 접근하려면 로그인하세요';
 
   @override
-  String get myInvites => 'TODO: My Invites';
+  String get myInvites => '내 초대';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => '게임 생성';
 
   @override
-  String get groupNameOptional => 'TODO: Group Name (optional)';
+  String get groupNameOptional => '그룹 이름 (선택사항)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => '플레이타임 세션을 찾을 수 없습니다.';
 
   @override
-  String get adminScreenTBD => 'TODO: Admin Screen - To Be Developed';
+  String get adminScreenTBD => '관리자 화면 곧 출시';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => '플레이타임 대시보드';
 
   @override
-  String get close => 'TODO: Close';
+  String get close => '닫기';
 
   @override
-  String get knownGroupDetected => 'TODO: Known group detected';
+  String get knownGroupDetected => '알려진 그룹 감지됨';
 
   @override
-  String get back => 'Back';
+  String get back => '뒤로';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => '게임 선택';
 
   @override
-  String get managePermissions => 'TODO: Manage Permissions';
+  String get managePermissions => '권한 관리';
 
   @override
-  String get pollOptions => 'TODO: Poll Options:';
+  String get pollOptions => '투표 옵션';
 
   @override
   String clicked(Object count) {
-    return 'TODO: Clicked: $count';
+    return '클릭됨';
   }
 
   @override
   String link(Object link) {
-    return 'TODO: Link: $link';
+    return '링크';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'TODO: The meeting is ready! Would you like to send it to your group?';
+  String get meetingReadyMessage => '회의가 준비되었습니다! 지금 참여하세요';
 
   @override
-  String get pendingInvites => 'TODO: Pending Invites';
+  String get pendingInvites => '대기 중인 초대';
 
   @override
   String statusColon(Object status) {
-    return 'TODO: Status: $status';
+    return '상태:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '프로필을 보려면 로그인하세요.';
 }

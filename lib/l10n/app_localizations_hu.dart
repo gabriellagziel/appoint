@@ -9,554 +9,549 @@ class AppLocalizationsHu extends AppLocalizations {
   AppLocalizationsHu([String locale = 'hu']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'Frissítés';
 
   @override
-  String get home => 'TODO: Home';
+  String get home => 'Kezdőlap';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'Még nincs ülés';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'Rendben';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'Válassz módot';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'Regisztráció';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'Üzenet ütemezése';
 
   @override
-  String get decline => 'TODO: Decline';
+  String get decline => 'Elutasítás';
 
   @override
-  String get adminBroadcast => 'TODO: Admin Broadcast';
+  String get adminBroadcast => 'Admin sugárzás';
 
   @override
-  String get login => 'TODO: Login';
+  String get login => 'Bejelentkezés';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'Barátok kiválasztása';
 
   @override
-  String get noInvites => 'TODO: No invites';
+  String get noInvites => 'Nincs meghívó';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'Idő kiválasztása';
 
   @override
-  String get success => 'Success';
+  String get success => 'Siker';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'Visszavonás';
 
   @override
-  String opened(Object count) {
-    return 'TODO: Opened: $count';
-  }
+  String get opened => 'Megnyitva';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'Virtuális munkamenet létrehozása';
 
   @override
-  String get messageSentSuccessfully => 'TODO: Message sent successfully';
+  String get messageSentSuccessfully => 'Üzenet sikeresen elküldve';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'Újra';
 
   @override
-  String get next => 'TODO: Next';
+  String get next => 'Következő';
 
   @override
-  String get search => 'Search';
+  String get search => 'Keresés';
 
   @override
   String get cancelInviteConfirmation =>
-      'TODO: Are you sure you want to cancel this invite?';
+      'Meghívás visszavonásának megerősítése';
 
   @override
   String created(Object date) {
-    return 'TODO: Created: $date';
+    return 'Létrehozva';
   }
 
   @override
-  String get revokeAccess => 'TODO: Revoke Access';
+  String get revokeAccess => 'Hozzáférés visszavonása';
 
   @override
-  String get saveGroupForRecognition =>
-      'TODO: Save group for future recognition';
+  String get saveGroupForRecognition => 'Csoport mentése felismeréshez';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'Élő munkamenet ütemezve';
 
   @override
   String get revokeAccessConfirmation =>
-      'TODO: Are you sure you want to revoke access for this child? This action cannot be undone.';
+      'Hozzáférés visszavonásának megerősítése';
 
   @override
-  String get download => 'Download';
+  String get download => 'Letöltés';
 
   @override
-  String get password => 'TODO: Password';
+  String get password => 'Jelszó';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'TODO: Error loading family links: $error';
+    return 'Hiba a családi kapcsolatok betöltésekor';
   }
 
   @override
-  String get cancel => 'TODO: Cancel';
+  String get cancel => 'Mégse';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Playtime létrehozása';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'TODO: Failed to $action privacy request: $error';
+    return 'A adatvédelmi kérés sikertelen';
   }
 
   @override
-  String get appTitle => 'TODO: Appoint';
+  String get appTitle => 'Alkalmazás címe';
 
   @override
-  String get accept => 'TODO: Accept';
+  String get accept => 'Elfogadás';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'Virtuális mód';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Playtime leírás';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Törlés';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Virtuális munkamenet elindult';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'Hozd létre az első játékodat';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'Résztvevők';
 
   @override
   String recipients(Object count) {
-    return 'TODO: Recipients: $count';
+    return 'Címzettek';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'Nincs találat';
 
   @override
-  String get yes => 'TODO: Yes';
+  String get yes => 'Igen';
 
   @override
-  String get invite => 'TODO: Invite';
+  String get invite => 'Meghívás';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'Élő mód';
 
   @override
-  String get done => 'Done';
+  String get done => 'Kész';
 
   @override
-  String get defaultShareMessage =>
-      'TODO: Hey! I\'ve scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:';
+  String get defaultShareMessage => 'Alapértelmezett megosztási üzenet';
 
   @override
-  String get no => 'TODO: No';
+  String get no => 'Nem';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Playtime központ';
 
   @override
-  String get error => 'Error';
+  String get error => 'Hiba';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'Élő munkamenet létrehozása';
 
   @override
-  String get enableNotifications => 'TODO: Enable Notifications';
+  String get enableNotifications => 'Értesítések engedélyezése';
 
   @override
   String invited(Object date) {
-    return 'TODO: Invited: $date';
+    return 'Meghívva';
   }
 
   @override
   String content(Object content) {
-    return 'TODO: Content: $content';
+    return 'Tartalom';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'TODO: Meeting shared successfully!';
+  String get meetingSharedSuccessfully => 'Találkozó sikeresen megosztva';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Üdv a Playtime-on';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'Összes megtekintése';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Virtuális Playtime';
 
   @override
-  String get staffScreenTBD => 'TODO: Staff Screen - To Be Developed';
+  String get staffScreenTBD => 'Munkatársi képernyő később';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'Kivágás';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      'TODO: Invite cancelled successfully!';
+  String get inviteCancelledSuccessfully => 'Meghívás sikeresen visszavonva';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'Újrapróbálkozás';
 
   @override
-  String get composeBroadcastMessage => 'TODO: Compose Broadcast Message';
+  String get composeBroadcastMessage => 'Sugárzott üzenet szerkesztése';
 
   @override
-  String get sendNow => 'TODO: Send Now';
+  String get sendNow => 'Küldés most';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'Még nincs játék';
 
   @override
-  String get select => 'Select';
+  String get select => 'Kiválasztás';
 
   @override
-  String get about => 'About';
+  String get about => 'Névjegy';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'Válassz';
 
   @override
-  String get profile => 'TODO: Profile';
+  String get profile => 'Profil';
 
   @override
-  String get removeChild => 'TODO: Remove Child';
+  String get removeChild => 'Gyermek eltávolítása';
 
   @override
   String status(Object status) {
-    return 'TODO: Status: $status';
+    return 'Állapot';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'Kijelentkezés';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'Beillesztés';
 
   @override
-  String get welcome => 'TODO: Welcome';
+  String get welcome => 'Üdvözlünk';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'Munkamenet létrehozása';
 
   @override
-  String get familyMembers => 'TODO: Family Members';
+  String get familyMembers => 'Családtagok';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'Feltöltés';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'Közelgő munkamenetek';
 
   @override
-  String get enterGroupName => 'TODO: Enter group name for recognition';
+  String get enterGroupName => 'Csoportnév megadása';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Megerősítés';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Élő Playtime';
 
   @override
-  String get errorLoadingInvites => 'TODO: Error loading invites';
-
-  @override
-  String get targetingFilters => 'TODO: Targeting Filters';
-
-  @override
-  String get pickVideo => 'TODO: Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'TODO: Schedule for later';
-
-  @override
-  String get accessRevokedSuccessfully => 'TODO: Access revoked successfully!';
-
-  @override
-  String type(Object type) {
-    return 'TODO: Type: $type';
+  String errorLoadingInvites(Object error) {
+    return 'Hiba a meghívók betöltésekor';
   }
 
   @override
-  String get checkingPermissions => 'TODO: Checking permissions...';
+  String get targetingFilters => 'Célzási szűrők';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'Videó kiválasztása';
 
   @override
-  String get yesCancel => 'TODO: Yes, Cancel';
+  String get playtimeGameDeleted => 'Játék törölve';
 
   @override
-  String get email => 'TODO: Email';
+  String get scheduleForLater => 'Ütemezés későbbre';
 
   @override
-  String get shareOnWhatsApp => 'TODO: Share on WhatsApp';
+  String get accessRevokedSuccessfully => 'Hozzáférés sikeresen visszavonva';
 
   @override
-  String get notificationSettings => 'TODO: Notification Settings';
+  String get type => 'Típus';
 
   @override
-  String get myProfile => 'TODO: My Profile';
+  String get checkingPermissions => 'Engedélyek ellenőrzése';
 
   @override
-  String get revoke => 'TODO: Revoke';
+  String get copy => 'Másolás';
 
   @override
-  String get noBroadcastMessages => 'TODO: No broadcast messages yet';
+  String get yesCancel => 'Igen, mégse';
+
+  @override
+  String get email => 'Email';
+
+  @override
+  String get shareOnWhatsApp => 'Megosztás WhatsApp-on';
+
+  @override
+  String get notificationSettings => 'Értesítési beállítások';
+
+  @override
+  String get myProfile => 'Profilom';
+
+  @override
+  String get revoke => 'Visszavonás';
+
+  @override
+  String get noBroadcastMessages => 'Nincsenek sugárzott üzenetek';
 
   @override
   String requestType(Object type) {
-    return 'TODO: $type Request';
+    return 'Kérés típusa';
   }
 
   @override
-  String get notifications => 'TODO: Notifications';
+  String get notifications => 'Értesítések';
 
   @override
-  String get details => 'TODO: Details';
+  String get details => 'Részletek';
 
   @override
-  String get cancelInvite => 'TODO: Cancel Invite';
+  String get cancelInvite => 'Meghívás visszavonása';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'Új létrehozása';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Beállítások';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Playtime elutasítása';
 
   @override
-  String get errorLoadingProfile => 'TODO: Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'Hiba a profil betöltésekor';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Szerkesztés';
 
   @override
-  String get add => 'Add';
+  String get add => 'Hozzáadás';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'Játék jóváhagyva';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'Elfelejtetted a jelszót?';
 
   @override
-  String get familyDashboard => 'TODO: Family Dashboard';
+  String get familyDashboard => 'Családi irányítópult';
 
   @override
-  String get loading => 'TODO: Loading...';
+  String get loading => 'Betöltés';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'Gyors műveletek';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'Playtime címe';
 
   @override
-  String get otpResentSuccessfully => 'TODO: OTP resent successfully!';
+  String get otpResentSuccessfully => 'OTP sikeresen újraküldve';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'TODO: Error checking permissions: $error';
+    return 'Hiba az engedélyek ellenőrzésekor';
   }
 
   @override
-  String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+  String get clientScreenTBD => 'Ügyfélképernyő később';
 
   @override
   String fcmToken(Object token) {
-    return 'TODO: FCM Token: $token';
+    return 'FCM token';
   }
 
   @override
-  String get pickImage => 'TODO: Pick Image';
+  String get pickImage => 'Kép kiválasztása';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'Előző';
 
   @override
-  String get noProfileFound => 'TODO: No profile found';
+  String get noProfileFound => 'Profil nem található';
 
   @override
-  String get noFamilyMembersYet =>
-      'TODO: No family members yet. Invite someone to get started!';
+  String get noFamilyMembersYet => 'Még nincs családtag';
 
   @override
-  String get mediaOptional => 'TODO: Media (Optional)';
+  String get mediaOptional => 'Média (opcionális)';
 
   @override
-  String get messageSavedSuccessfully => 'TODO: Message saved successfully';
+  String get messageSavedSuccessfully => 'Üzenet sikeresen mentve';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'Ütemezve erre';
 
   @override
-  String get dashboard => 'TODO: Dashboard';
+  String get dashboard => 'Irányítópult';
 
   @override
-  String get noPermissionForBroadcast =>
-      'TODO: You do not have permission to create broadcast messages.';
+  String get noPermissionForBroadcast => 'Nincs jogosultság sugárzáshoz';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Playtime admin panel címe';
 
   @override
-  String get inviteDetail => 'TODO: Invite Detail';
+  String get inviteDetail => 'Meghívás részletei';
 
   @override
   String scheduled(Object date) {
-    return 'TODO: Scheduled: $date';
+    return 'Ütemezve';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'TODO: Failed to resend OTP: $error';
+    return 'OTP újraküldése sikertelen';
   }
 
   @override
-  String get scheduling => 'TODO: Scheduling';
+  String get scheduling => 'Ütemezés';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'TODO: Error saving message: $error';
+    return 'Hiba az üzenet mentésekor';
   }
 
   @override
-  String get save => 'TODO: Save';
+  String get save => 'Mentés';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Playtime jóváhagyása';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'Hozd létre az első munkameneted';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'Játék elutasítva';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'TODO: Failed to revoke access: $error';
+    return 'Hozzáférés visszavonása sikertelen';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'Friss játékok';
 
   @override
-  String get customizeMessage => 'TODO: Customize your message...';
+  String get customizeMessage => 'Üzenet testreszabása';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'TODO: Failed to cancel invite: $error';
+    return 'Meghívás visszavonása sikertelen';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'TODO: Error sending message: $error';
+    return 'Hiba üzenet küldésekor';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'Jelszó megerősítése';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'TODO: Error loading privacy requests: $error';
+    return 'Hiba a adatvédelmi kérések betöltésekor';
   }
 
   @override
-  String get connectedChildren => 'TODO: Connected Children';
+  String get connectedChildren => 'Kapcsolódó gyerekek';
 
   @override
-  String get share => 'Share';
+  String get share => 'Megosztás';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'Add meg a játék nevét';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'TODO: Please login to access family features';
+      'Kérjük jelentkezz be családi funkciókhoz';
 
   @override
-  String get myInvites => 'TODO: My Invites';
+  String get myInvites => 'Meghívásaim';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'Játék létrehozása';
 
   @override
-  String get groupNameOptional => 'TODO: Group Name (optional)';
+  String get groupNameOptional => 'Csoportnév (opcionális)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Nincs Playtime ülés';
 
   @override
-  String get adminScreenTBD => 'TODO: Admin Screen - To Be Developed';
+  String get adminScreenTBD => 'Admin képernyő később';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle =>
+      'Playtime szülői irányítópult címe';
 
   @override
-  String get close => 'TODO: Close';
+  String get close => 'Bezárás';
 
   @override
-  String get knownGroupDetected => 'TODO: Known group detected';
+  String get knownGroupDetected => 'Ismert csoport észlelve';
 
   @override
-  String get back => 'Back';
+  String get back => 'Vissza';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'Válassz játékot';
 
   @override
-  String get managePermissions => 'TODO: Manage Permissions';
+  String get managePermissions => 'Engedélyek kezelése';
 
   @override
-  String get pollOptions => 'TODO: Poll Options:';
+  String get pollOptions => 'Szavazási lehetőségek';
 
   @override
   String clicked(Object count) {
-    return 'TODO: Clicked: $count';
+    return 'Kattintva';
   }
 
   @override
   String link(Object link) {
-    return 'TODO: Link: $link';
+    return 'Link';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'TODO: The meeting is ready! Would you like to send it to your group?';
+  String get meetingReadyMessage => 'Találkozó készen áll';
 
   @override
-  String get pendingInvites => 'TODO: Pending Invites';
+  String get pendingInvites => 'Függőben lévő meghívók';
 
   @override
   String statusColon(Object status) {
-    return 'TODO: Status: $status';
+    return 'Állapot:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      'Kérjük jelentkezz be a profil megtekintéséhez';
 }
