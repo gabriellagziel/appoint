@@ -9,10 +9,9 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    network:
-      allowed-hosts: |
-        storage.googleapis.com
-        pub.dev
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     services:
       firebase:
         image: cdrx/fake-firebase-emulator:latest
@@ -21,8 +20,6 @@ jobs:
           - 5001:5001   # Functions
       env:
         FIREBASE_PROJECT: app-oint-core
-        PUB_HOSTED_URL: https://pub.dev
-        FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     steps:
       - uses: actions/checkout@v4
 
@@ -57,12 +54,8 @@ jobs:
   deploy-functions:
     needs: build-and-test
     runs-on: ubuntu-latest
-    network:
-      allowed-hosts: |
-        storage.googleapis.com
-        pub.dev
     if: github.ref == 'refs/heads/main'
-    
+
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -97,12 +90,8 @@ jobs:
   deploy-hosting:
     needs: build-and-test
     runs-on: ubuntu-latest
-    network:
-      allowed-hosts: |
-        storage.googleapis.com
-        pub.dev
     if: github.ref == 'refs/heads/main'
-    
+
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -132,12 +121,8 @@ jobs:
   smoke-test:
     needs: [deploy-functions, deploy-hosting]
     runs-on: ubuntu-latest
-    network:
-      allowed-hosts: |
-        storage.googleapis.com
-        pub.dev
     if: github.ref == 'refs/heads/main'
-    
+
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -165,12 +150,8 @@ jobs:
 
   security-scan:
     runs-on: ubuntu-latest
-    network:
-      allowed-hosts: |
-        storage.googleapis.com
-        pub.dev
     if: github.ref == 'refs/heads/main'
-    
+
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -189,12 +170,8 @@ jobs:
   notify:
     needs: [build-and-test, deploy-functions, deploy-hosting, smoke-test]
     runs-on: ubuntu-latest
-    network:
-      allowed-hosts: |
-        storage.googleapis.com
-        pub.dev
     if: always()
-    
+
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
