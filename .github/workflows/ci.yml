@@ -49,8 +49,12 @@ jobs:
         run: dart pub get
       - name: Build runner
         run: dart run build_runner build --delete-conflicting-outputs
-      - name: Flutter analyze
-        run: flutter analyze
+      - name: Dart analyze
+        run: dart analyze
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
       - name: Start Firebase emulators
@@ -59,8 +63,8 @@ jobs:
           echo $! > emulator.pid
       - name: Flutter tests
         run: dart test --coverage
-      - name: Flutter integration tests
-        run: flutter test integration_test/
+      - name: Integration tests
+        run: dart test integration_test/
       - name: Flutter build web
         run: flutter build web
       - name: Stop emulators
@@ -81,12 +85,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          cache: 'npm'
-          cache-dependency-path: functions/package-lock.json
+          node-version: '16.x'
 
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
@@ -141,12 +143,16 @@ jobs:
         run: dart pub get
       - name: Build runner
         run: dart run build_runner build --delete-conflicting-outputs
-      - name: Flutter analyze
-        run: flutter analyze
+      - name: Dart analyze
+        run: dart analyze
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
       - name: Flutter tests
         run: dart test --coverage
-      - name: Flutter integration tests
-        run: flutter test integration_test/
+      - name: Integration tests
+        run: dart test integration_test/
       - name: Build Web App
         run: flutter build web --release
       - name: Install Firebase CLI
@@ -191,12 +197,12 @@ jobs:
         run: dart pub get
       - name: Build runner
         run: dart run build_runner build --delete-conflicting-outputs
-      - name: Flutter analyze
-        run: flutter analyze
+      - name: Dart analyze
+        run: dart analyze
       - name: Flutter tests
         run: dart test --coverage
-      - name: Flutter integration tests
-        run: flutter test integration_test/
+      - name: Integration tests
+        run: dart test integration_test/
       - name: Flutter build web
         run: flutter build web
       - name: Run Smoke Tests
@@ -242,12 +248,12 @@ jobs:
         run: dart pub get
       - name: Build runner
         run: dart run build_runner build --delete-conflicting-outputs
-      - name: Flutter analyze
-        run: flutter analyze
+      - name: Dart analyze
+        run: dart analyze
       - name: Flutter tests
         run: dart test --coverage
-      - name: Flutter integration tests
-        run: flutter test integration_test/
+      - name: Integration tests
+        run: dart test integration_test/
       - name: Flutter build web
         run: flutter build web
       - name: Run Security Scan
@@ -292,12 +298,12 @@ jobs:
         run: dart pub get
       - name: Build runner
         run: dart run build_runner build --delete-conflicting-outputs
-      - name: Flutter analyze
-        run: flutter analyze
+      - name: Dart analyze
+        run: dart analyze
       - name: Flutter tests
         run: dart test --coverage
-      - name: Flutter integration tests
-        run: flutter test integration_test/
+      - name: Integration tests
+        run: dart test integration_test/
       - name: Flutter build web
         run: flutter build web
       - name: Notify on Success
