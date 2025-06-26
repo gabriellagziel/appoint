@@ -9,25 +9,25 @@ class AppLocalizationsHi extends AppLocalizations {
   AppLocalizationsHi([String locale = 'hi']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'रिफ्रेश करें';
 
   @override
   String get home => 'होम';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'अभी तक कोई सत्र नहीं';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'ठीक है';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'मोड चुनें';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'साइन अप';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'संदेश निर्धारित करें';
 
   @override
   String get decline => 'अस्वीकार करें';
@@ -36,203 +36,197 @@ class AppLocalizationsHi extends AppLocalizations {
   String get adminBroadcast => 'व्यवस्थापक प्रसारण';
 
   @override
-  String get login => 'लॉगिन';
+  String get login => 'लॉग इन करें';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'मित्र चुनें';
 
   @override
   String get noInvites => 'कोई निमंत्रण नहीं';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'समय चुनें';
 
   @override
-  String get success => 'Success';
+  String get success => 'सफलता';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'पूर्ववत करें';
 
   @override
-  String opened(Object count) {
-    return 'खोला गया: $count';
-  }
+  String get opened => 'खुला';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'वर्चुअल सत्र बनाएं';
 
   @override
   String get messageSentSuccessfully => 'संदेश सफलतापूर्वक भेजा गया';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'दोहराएं';
 
   @override
   String get next => 'अगला';
 
   @override
-  String get search => 'Search';
+  String get search => 'खोजें';
 
   @override
-  String get cancelInviteConfirmation =>
-      'क्या आप वाकई इस निमंत्रण को रद्द करना चाहते हैं?';
+  String get cancelInviteConfirmation => 'निमंत्रण रद्द की पुष्टि करें';
 
   @override
   String created(Object date) {
-    return 'बनाया गया: $date';
+    return 'बनाया गया';
   }
 
   @override
-  String get revokeAccess => 'पहुंच रद्द करें';
+  String get revokeAccess => 'पहुँच रद्द करें';
 
   @override
-  String get saveGroupForRecognition => 'भविष्य की पहचान के लिए समूह सहेजें';
+  String get saveGroupForRecognition => 'पहचान के लिए समूह सहेजें';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'लाइव सत्र निर्धारित किया गया';
 
   @override
-  String get revokeAccessConfirmation =>
-      'क्या आप वाकई इस बच्चे की पहुंच रद्द करना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।';
+  String get revokeAccessConfirmation => 'पहुँच रद्द करने की पुष्टि';
 
   @override
-  String get download => 'Download';
+  String get download => 'डाउनलोड';
 
   @override
   String get password => 'पासवर्ड';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'पारिवारिक लिंक लोड करने में त्रुटि: $error';
+    return 'पारिवारिक लिंक लोड करने में त्रुटि';
   }
 
   @override
   String get cancel => 'रद्द करें';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Playtime बनाएं';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'गोपनीयता अनुरोध $action करने में विफल: $error';
+    return 'गोपनीयता अनुरोध निष्पादित करने में विफल';
   }
 
   @override
-  String get appTitle => 'Appoint';
+  String get appTitle => 'एप्लिकेशन शीर्षक';
 
   @override
-  String get accept => 'स्वीकार करें';
+  String get accept => 'स्वीकृत करें';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'वर्चुअल मोड';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Playtime विवरण';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'हटाएं';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'वर्चुअल सत्र प्रारंभ हुआ';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'अपना पहला गेम बनाएं';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'प्रतिभागी';
 
   @override
   String recipients(Object count) {
-    return 'प्राप्तकर्ता: $count';
+    return 'प्राप्तकर्ता';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'कोई परिणाम नहीं';
 
   @override
   String get yes => 'हाँ';
 
   @override
-  String get invite => 'आमंत्रित करें';
+  String get invite => 'निमंत्रण';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'लाइव मोड';
 
   @override
-  String get done => 'Done';
+  String get done => 'पूर्ण';
 
   @override
-  String get defaultShareMessage =>
-      'हाय! मैंने APP-OINT के माध्यम से आपके साथ एक मीटिंग शेड्यूल की है। पुष्टि करने या अन्य समय सुझाने के लिए यहां क्लिक करें:';
+  String get defaultShareMessage => 'डिफ़ॉल्ट शेयर संदेश';
 
   @override
   String get no => 'नहीं';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Playtime केंद्र';
 
   @override
-  String get error => 'Error';
+  String get error => 'त्रुटि';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'लाइव सत्र बनाएं';
 
   @override
   String get enableNotifications => 'सूचनाएं सक्षम करें';
 
   @override
   String invited(Object date) {
-    return 'आमंत्रित किया गया: $date';
+    return 'निमंत्रित';
   }
 
   @override
   String content(Object content) {
-    return 'सामग्री: $content';
+    return 'सामग्री';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'मीटिंग सफलतापूर्वक साझा की गई!';
+  String get meetingSharedSuccessfully => 'मीटिंग सफलतापूर्वक साझा की गई';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Playtime में आपका स्वागत है';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'सभी देखें';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'वर्चुअल Playtime';
 
   @override
-  String get staffScreenTBD => 'स्टाफ स्क्रीन - विकासाधीन';
+  String get staffScreenTBD => 'स्टाफ स्क्रीन बाद में निर्धारित की जाएगी';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'कट';
 
   @override
   String get inviteCancelledSuccessfully =>
-      'निमंत्रण सफलतापूर्वक रद्द किया गया!';
+      'निमंत्रण सफलतापूर्वक रद्द किया गया';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'पुनः प्रयास करें';
 
   @override
-  String get composeBroadcastMessage => 'प्रसारण संदेश लिखें';
+  String get composeBroadcastMessage => 'ब्रॉडकास्ट संदेश बनाएं';
 
   @override
-  String get sendNow => 'अभी भेजें';
+  String get sendNow => 'अब भेजें';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'अभी तक कोई गेम नहीं';
 
   @override
-  String get select => 'Select';
+  String get select => 'चुनें';
 
   @override
-  String get about => 'About';
+  String get about => 'के बारे में';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'चुनें';
 
   @override
   String get profile => 'प्रोफ़ाइल';
@@ -242,41 +236,43 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String status(Object status) {
-    return 'स्थिति: $status';
+    return 'स्थिति';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'लॉग आउट';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'पेस्ट करें';
 
   @override
   String get welcome => 'स्वागत है';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'सत्र बनाएं';
 
   @override
   String get familyMembers => 'परिवार के सदस्य';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'अपलोड करें';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'आगामी सत्र';
 
   @override
-  String get enterGroupName => 'पहचान के लिए समूह का नाम दर्ज करें';
+  String get enterGroupName => 'समूह नाम दर्ज करें';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'पुष्टि करें';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'लाइव Playtime';
 
   @override
-  String get errorLoadingInvites => 'निमंत्रण लोड करने में त्रुटि';
+  String errorLoadingInvites(Object error) {
+    return 'निमंत्रण लोड करने में त्रुटि';
+  }
 
   @override
   String get targetingFilters => 'लक्षित फ़िल्टर';
@@ -285,24 +281,22 @@ class AppLocalizationsHi extends AppLocalizations {
   String get pickVideo => 'वीडियो चुनें';
 
   @override
-  String get playtimeGameDeleted => 'Game deleted';
+  String get playtimeGameDeleted => 'गेम हटा दिया गया';
 
   @override
-  String get scheduleForLater => 'बाद के लिए शेड्यूल करें';
+  String get scheduleForLater => 'बाद में निर्धारित करें';
 
   @override
-  String get accessRevokedSuccessfully => 'पहुंच सफलतापूर्वक रद्द की गई!';
+  String get accessRevokedSuccessfully => 'पहुँच सफलतापूर्वक रद्द की गई';
 
   @override
-  String type(Object type) {
-    return 'प्रकार: $type';
-  }
+  String get type => 'प्रकार';
 
   @override
-  String get checkingPermissions => 'अनुमतियाँ जांची जा रही हैं...';
+  String get checkingPermissions => 'अनुमतियाँ जांच रहा है';
 
   @override
-  String get copy => 'Copy';
+  String get copy => 'प्रतिलिपि बनाएँ';
 
   @override
   String get yesCancel => 'हाँ, रद्द करें';
@@ -311,10 +305,10 @@ class AppLocalizationsHi extends AppLocalizations {
   String get email => 'ईमेल';
 
   @override
-  String get shareOnWhatsApp => 'व्हाट्सएप पर साझा करें';
+  String get shareOnWhatsApp => 'WhatsApp पर साझा करें';
 
   @override
-  String get notificationSettings => 'अधिसूचना सेटिंग्स';
+  String get notificationSettings => 'सूचना सेटिंग्स';
 
   @override
   String get myProfile => 'मेरी प्रोफ़ाइल';
@@ -323,11 +317,11 @@ class AppLocalizationsHi extends AppLocalizations {
   String get revoke => 'रद्द करें';
 
   @override
-  String get noBroadcastMessages => 'अभी तक कोई प्रसारण संदेश नहीं हैं';
+  String get noBroadcastMessages => 'कोई ब्रॉडकास्ट संदेश नहीं';
 
   @override
   String requestType(Object type) {
-    return '$type अनुरोध';
+    return 'अनुरोध प्रकार';
   }
 
   @override
@@ -340,28 +334,30 @@ class AppLocalizationsHi extends AppLocalizations {
   String get cancelInvite => 'निमंत्रण रद्द करें';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'नया बनाएं';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'सेटिंग्स';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'अस्वीकार करें';
 
   @override
-  String get errorLoadingProfile => 'प्रोफ़ाइल लोड करने में त्रुटि';
+  String errorLoadingProfile(Object error) {
+    return 'प्रोफ़ाइल लोड करने में त्रुटि';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'संपादित करें';
 
   @override
-  String get add => 'Add';
+  String get add => 'जोड़ें';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'गेम स्वीकृत किया गया';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'पासवर्ड भूल गया?';
 
   @override
   String get familyDashboard => 'पारिवारिक डैशबोर्ड';
@@ -370,7 +366,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get loading => 'लोड हो रहा है...';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'त्वरित क्रियाएं';
 
   @override
   String get playtimeTitle => 'Playtime';
@@ -395,7 +391,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get pickImage => 'छवि चुनें';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'पिछला';
 
   @override
   String get noProfileFound => 'कोई प्रोफ़ाइल नहीं मिली';
@@ -411,7 +407,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get messageSavedSuccessfully => 'संदेश सफलतापूर्वक सहेजा गया';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'संयोजित किया गया';
 
   @override
   String get dashboard => 'डैशबोर्ड';
@@ -448,13 +444,13 @@ class AppLocalizationsHi extends AppLocalizations {
   String get save => 'सहेजें';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'स्वीकृत करें';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'अपना पहला सत्र बनाएं';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'गेम अस्वीकृत किया गया';
 
   @override
   String failedToRevokeAccess(Object error) {
@@ -462,7 +458,7 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'हाल के गेम';
 
   @override
   String get customizeMessage => 'अपना संदेश अनुकूलित करें...';
@@ -478,7 +474,7 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'पासवर्ड सुष्ट करें';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
@@ -489,10 +485,10 @@ class AppLocalizationsHi extends AppLocalizations {
   String get connectedChildren => 'जुड़े हुए बच्चे';
 
   @override
-  String get share => 'Share';
+  String get share => 'साझा करें';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'गेम का नाम दर्ज करें';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
@@ -502,13 +498,13 @@ class AppLocalizationsHi extends AppLocalizations {
   String get myInvites => 'मेरे निमंत्रण';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'गेम बनाएं';
 
   @override
   String get groupNameOptional => 'समूह का नाम (वैकल्पिक)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'अभी तक कोई सत्र नहीं मिला';
 
   @override
   String get adminScreenTBD => 'व्यवस्थापक स्क्रीन - विकासाधीन';
@@ -523,10 +519,10 @@ class AppLocalizationsHi extends AppLocalizations {
   String get knownGroupDetected => 'ज्ञात समूह पाया गया';
 
   @override
-  String get back => 'Back';
+  String get back => 'पिछला';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'एक गेम चुनें';
 
   @override
   String get managePermissions => 'अनुमतियाँ प्रबंधित करें';
@@ -557,5 +553,6 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      'कृपया लॉगिन करें और अपनी प्रोफ़ाइल देखें.';
 }

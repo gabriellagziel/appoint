@@ -9,548 +9,546 @@ class AppLocalizationsEu extends AppLocalizations {
   AppLocalizationsEu([String locale = 'eu']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'Eguneratu';
 
   @override
-  String get home => 'Home';
+  String get home => 'Hasiera';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'Oraindik ez da saiorik';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'Ados';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'Hautatu modua';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'Erregistratu';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'Mezua programatu';
 
   @override
-  String get decline => 'Decline';
+  String get decline => 'Ukatu';
 
   @override
-  String get adminBroadcast => 'Admin Broadcast';
+  String get adminBroadcast => 'Administratzailearen emisioa';
 
   @override
-  String get login => 'Login';
+  String get login => 'Saioa hasi';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'Lagunak hautatu';
 
   @override
-  String get noInvites => 'No invites';
+  String get noInvites => 'Ez dago gonbidapenik';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'Ordua hautatu';
 
   @override
-  String get success => 'Success';
+  String get success => 'Arrakasta';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'Desegin';
 
   @override
-  String opened(Object count) {
-    return 'Opened';
-  }
+  String get opened => 'Ireki da';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'Saio birtuala sortu';
 
   @override
-  String get messageSentSuccessfully => 'Message sent successfully';
+  String get messageSentSuccessfully => 'Mezua ondo bidali da';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'Berriro egin';
 
   @override
-  String get next => 'Next';
+  String get next => 'Hurrengoa';
 
   @override
-  String get search => 'Search';
+  String get search => 'Bilatu';
 
   @override
-  String get cancelInviteConfirmation =>
-      'Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => 'Gonbidapenaren berrespena ezeztatu';
 
   @override
   String created(Object date) {
-    return 'Created';
+    return 'Sortu da';
   }
 
   @override
-  String get revokeAccess => 'Revoke Access';
+  String get revokeAccess => 'Sarbidea kentzea';
 
   @override
-  String get saveGroupForRecognition => 'Save Group for Recognition';
+  String get saveGroupForRecognition => 'Taldea gordetu ezagutzeko';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'Zuzeneko saioa programatu da';
 
   @override
-  String get revokeAccessConfirmation =>
-      'Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => 'Sarbide-ezgaitzearen berrespena';
 
   @override
-  String get download => 'Download';
+  String get download => 'Deskargatu';
 
   @override
-  String get password => 'Password';
+  String get password => 'Pasahitza';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Error loading family links';
+    return 'Error familia-estekak kargatzean';
   }
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'Ezeztatu';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Playtime sortu';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Failed to action privacy request';
+    return 'Pribatutasun-eskabidea ezin izan da betearazi';
   }
 
   @override
-  String get appTitle => 'APP-OINT';
+  String get appTitle => 'Aplikazioaren izenburua';
 
   @override
-  String get accept => 'Accept';
+  String get accept => 'Onartu';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'Modu birtuala';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Playtime deskribapena';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Ezabatu';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Saio birtuala hasi da';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'Sortu zure lehenengo jokoa';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'Parte-hartzaileak';
 
   @override
   String recipients(Object count) {
-    return 'Recipients';
+    return 'Hartzaileak';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'Emaitzarik ez';
 
   @override
-  String get yes => 'Yes';
+  String get yes => 'Bai';
 
   @override
-  String get invite => 'Invite';
+  String get invite => 'Gonbidatu';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'Modu zuzenean';
 
   @override
-  String get done => 'Done';
+  String get done => 'Eginda';
 
   @override
-  String get defaultShareMessage => 'Let\'s meet via Appoint!';
+  String get defaultShareMessage => 'Partekatzeko mezua lehenetsia';
 
   @override
-  String get no => 'No';
+  String get no => 'Ez';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Playtime zentroa';
 
   @override
-  String get error => 'Error';
+  String get error => 'Errorea';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'Saio zuzena sortu';
 
   @override
-  String get enableNotifications => 'Enable Notifications';
+  String get enableNotifications => 'Jakinarazpenak gaituta';
 
   @override
   String invited(Object date) {
-    return 'Invited';
+    return 'Gonbidatua';
   }
 
   @override
   String content(Object content) {
-    return 'Content';
+    return 'Eduki';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Meeting shared successfully';
+  String get meetingSharedSuccessfully => 'Bilera ondo partekatu da';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Ongi etorri Playtimera';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'Denak ikusi';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Playtime birtuala';
 
   @override
-  String get staffScreenTBD => 'Staff screen coming soon';
+  String get staffScreenTBD => 'Langile-pantaila zehaztu gabe';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'Ebaki';
 
   @override
-  String get inviteCancelledSuccessfully => 'Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => 'Gonbidapena ondo ezeztatu da';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'Saiatu berriro';
 
   @override
-  String get composeBroadcastMessage => 'Compose Broadcast Message';
+  String get composeBroadcastMessage => 'Iragarki-mezua sortu';
 
   @override
-  String get sendNow => 'Send Now';
+  String get sendNow => 'Bidali orain';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'Oraindik ez da jokoik';
 
   @override
-  String get select => 'Select';
+  String get select => 'Hautatu';
 
   @override
-  String get about => 'About';
+  String get about => 'Honi buruz';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'Hautatu';
 
   @override
-  String get profile => 'Profile';
+  String get profile => 'Profila';
 
   @override
-  String get removeChild => 'Remove Child';
+  String get removeChild => 'Haurraren kentzea';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return 'Egoera';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'Saioa itxi';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'Itsatsi';
 
   @override
-  String get welcome => 'Welcome';
+  String get welcome => 'Ongi etorri';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'Saio sortu';
 
   @override
-  String get familyMembers => 'Family Members';
+  String get familyMembers => 'Senideak';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'Igotu';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'Etorkizuneko saioak';
 
   @override
-  String get enterGroupName => 'Enter group name';
+  String get enterGroupName => 'Talde-izena sartu';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Berretsi';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Playtime zuzenean';
 
   @override
-  String get errorLoadingInvites => 'Error loading invites';
-
-  @override
-  String get targetingFilters => 'Targeting Filters';
-
-  @override
-  String get pickVideo => 'Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'Schedule for Later';
-
-  @override
-  String get accessRevokedSuccessfully => 'Access revoked successfully';
-
-  @override
-  String type(Object type) {
-    return 'Type';
+  String errorLoadingInvites(Object error) {
+    return 'Gonbidapenak kargatzean errorea';
   }
 
   @override
-  String get checkingPermissions => 'Checking permissions...';
+  String get targetingFilters => 'Helburu-iragazkiak';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'Bideoa hautatu';
 
   @override
-  String get yesCancel => 'Yes, Cancel';
+  String get playtimeGameDeleted => 'Jokoa ezabatu da';
 
   @override
-  String get email => 'Email';
+  String get scheduleForLater => 'Beranduago programatu';
 
   @override
-  String get shareOnWhatsApp => 'Share on WhatsApp';
+  String get accessRevokedSuccessfully => 'Sarbidea ondo kendu da';
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get type => 'Mota';
 
   @override
-  String get myProfile => 'My Profile';
+  String get checkingPermissions => 'Baimenen egiaztapena';
 
   @override
-  String get revoke => 'Revoke';
+  String get copy => 'Kopiatu';
 
   @override
-  String get noBroadcastMessages => 'No messages yet';
+  String get yesCancel => 'Bai, ezeztatu';
+
+  @override
+  String get email => 'Posta elektronikoa';
+
+  @override
+  String get shareOnWhatsApp => 'Partekatu WhatsApp-en';
+
+  @override
+  String get notificationSettings => 'Jakinarazpenen ezarpenak';
+
+  @override
+  String get myProfile => 'Nire profila';
+
+  @override
+  String get revoke => 'Ezeztatu';
+
+  @override
+  String get noBroadcastMessages => 'Ez dago mezu-emisioik';
 
   @override
   String requestType(Object type) {
-    return 'Request Type';
+    return 'Eskari-mota';
   }
 
   @override
-  String get notifications => 'Notifications';
+  String get notifications => 'Jakinarazpenak';
 
   @override
-  String get details => 'Details';
+  String get details => 'Xehetasunak';
 
   @override
-  String get cancelInvite => 'Cancel Invite';
+  String get cancelInvite => 'Gonbidapena ezeztatu';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'Sortu berria';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Ezarpenak';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Playtime ukatu';
 
   @override
-  String get errorLoadingProfile => 'Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'Profila kargatzean errorea';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Editatu';
 
   @override
-  String get add => 'Add';
+  String get add => 'Gehitu';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'Jokoa onartu da';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'Pasahitza ahaztu duzu?';
 
   @override
-  String get familyDashboard => 'Family Dashboard';
+  String get familyDashboard => 'Senide-kontrol panela';
 
   @override
-  String get loading => 'Loading...';
+  String get loading => 'Kargatzen';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'Ekintza azkarrak';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'Playtime izenburua';
 
   @override
-  String get otpResentSuccessfully => 'OTP resent successfully';
+  String get otpResentSuccessfully => 'OTP berriro bidali da';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Error checking permissions';
+    return 'Baimenen egiaztapenean errorea';
   }
 
   @override
-  String get clientScreenTBD => 'Client screen coming soon';
+  String get clientScreenTBD => 'Bezero-pantaila zehaztu gabe';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM Token';
+    return 'FCM tokena';
   }
 
   @override
-  String get pickImage => 'Pick Image';
+  String get pickImage => 'Irudia hautatu';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'Aurrekoa';
 
   @override
-  String get noProfileFound => 'No profile found';
+  String get noProfileFound => 'Ez da profilik aurkitu';
 
   @override
-  String get noFamilyMembersYet => 'No family members yet';
+  String get noFamilyMembersYet => 'Oraindik ez da seniderik';
 
   @override
-  String get mediaOptional => 'Media (Optional)';
+  String get mediaOptional => 'Hedabideak (boluntarioa)';
 
   @override
-  String get messageSavedSuccessfully => 'Message saved successfully';
+  String get messageSavedSuccessfully => 'Mezua ondo gorde da';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'Programatua';
 
   @override
-  String get dashboard => 'Dashboard';
+  String get dashboard => 'Kontrol panela';
 
   @override
-  String get noPermissionForBroadcast => 'No permission for broadcast';
+  String get noPermissionForBroadcast => 'Ez dago baimenik emisiorako';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Playtime administrazio panela';
 
   @override
-  String get inviteDetail => 'Invite Details';
+  String get inviteDetail => 'Gonbidapenaren xehetasunak';
 
   @override
   String scheduled(Object date) {
-    return 'Scheduled';
+    return 'Programatua';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Failed to resend OTP';
+    return 'OTP berriro bidaltzean errorea';
   }
 
   @override
-  String get scheduling => 'Scheduling';
+  String get scheduling => 'Programatzen';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Error saving message';
+    return 'Mezua gordetzean errorea';
   }
 
   @override
-  String get save => 'Save';
+  String get save => 'Gorde';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Playtime onartu';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'Sortu zure lehenengo saioa';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'Jokoa ukatu da';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Failed to revoke access';
+    return 'Sarbidea kentzean errorea';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'Azken jokoak';
 
   @override
-  String get customizeMessage => 'Customize Message';
+  String get customizeMessage => 'Mezua pertsonalizatu';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Failed to cancel invite';
+    return 'Gonbidapena ezeztatzean errorea';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Error sending message';
+    return 'Mezua bidaltzean errorea';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'Pasahitza berretsi';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Error loading privacy requests';
+    return 'Pribatutasun eskabideak kargatzean errorea';
   }
 
   @override
-  String get connectedChildren => 'Connected Children';
+  String get connectedChildren => 'Haurrak konektatuta';
 
   @override
-  String get share => 'Share';
+  String get share => 'Partekatu';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'Jokoaren izena sartu';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+      'Saioa hasi familiako funtzioetarako';
 
   @override
-  String get myInvites => 'My Invites';
+  String get myInvites => 'Nire gonbidapenak';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'Jokoa sortu';
 
   @override
-  String get groupNameOptional => 'Group Name (Optional)';
+  String get groupNameOptional => 'Talde-izena (boluntarioa)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Ez dago Playtime saiorik';
 
   @override
-  String get adminScreenTBD => 'Admin screen coming soon';
+  String get adminScreenTBD => 'Admin-pantaila zehaztu gabe';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle =>
+      'Playtime guraso-kontrol panela izenburua';
 
   @override
-  String get close => 'Close';
+  String get close => 'Itxi';
 
   @override
-  String get knownGroupDetected => 'Known group detected';
+  String get knownGroupDetected => 'Ezagutzen den taldea aurkitu da';
 
   @override
-  String get back => 'Back';
+  String get back => 'Atzera';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'Jokoa hautatu';
 
   @override
-  String get managePermissions => 'Manage Permissions';
+  String get managePermissions => 'Baimenak kudeatu';
 
   @override
-  String get pollOptions => 'Poll Options';
+  String get pollOptions => 'Inkesta aukerak';
 
   @override
   String clicked(Object count) {
-    return 'Clicked';
+    return 'Klik egin da';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return 'Esteka';
   }
 
   @override
-  String get meetingReadyMessage => 'Your meeting is ready! Join now';
+  String get meetingReadyMessage => 'Bilera prest dago';
 
   @override
-  String get pendingInvites => 'Pending Invites';
+  String get pendingInvites => 'Zain dauden gonbidapenak';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return 'Egoera:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => 'Saioa hasi profilarekin ikusteko';
 }

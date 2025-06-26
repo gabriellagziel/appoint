@@ -1,5 +1,5 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "[UR] Refresh",
   "@refresh": {
     "description": "Refresh button text"
   },
@@ -7,27 +7,27 @@
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "[UR] No sessions yet",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "[UR] OK",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "[UR] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "[UR] Sign Up",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "[UR] Schedule Message",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "مسترد کریں",
+  "decline": "نامنظور کریں",
   "@decline": {
     "description": "Decline button"
   },
@@ -39,31 +39,31 @@
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "[UR] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "کوئی دعوت نہیں",
+  "noInvites": "کوئی دعوت نامے نہیں",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "[UR] Choose a time",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "[UR] Success",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "[UR] Undo",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "کھولا گیا: {count}",
+  "opened": "کھول دیا گیا",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "[UR] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
@@ -71,7 +71,7 @@
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "[UR] Redo",
   "@redo": {
     "description": "Redo button text"
   },
@@ -79,15 +79,15 @@
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "[UR] Search",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "کیا آپ واقعی اس دعوت کو منسوخ کرنا چاہتے ہیں؟",
+  "cancelInviteConfirmation": "دعوت کی تصدیق منسوخ کریں",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "بنایا گیا: {date}",
+  "created": "تخلیق کیا گیا",
   "@created": {
     "description": "Created status"
   },
@@ -95,19 +95,19 @@
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "گروپ کو شناخت کے لیے محفوظ کریں",
+  "saveGroupForRecognition": "شناخت کے لیے گروپ محفوظ کریں",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "[UR] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "کیا آپ واقعی اس بچے کی رسائی منسوخ کرنا چاہتے ہیں؟ یہ عمل ناقابل واپسی ہے۔",
+  "revokeAccessConfirmation": "رسائی منسوخ کرنے کی تصدیق",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "[UR] Download",
   "@download": {
     "description": "Download button text"
   },
@@ -115,7 +115,7 @@
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "خاندانی روابط لوڈ کرنے میں خرابی: {error}",
+  "errorLoadingFamilyLinks": "خاندانی لنکس لوڈ کرنے میں خرابی",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
@@ -123,15 +123,15 @@
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "[UR] Create",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "{action} پرائیویسی درخواست پر عملدرآمد میں ناکامی: {error}",
+  "failedToActionPrivacyRequest": "پرائیویسی درخواست مکمل نہ ہوسکی",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "Appoint",
+  "appTitle": "ایپ کا عنوان",
   "@appTitle": {
     "description": "The title of the application"
   },
@@ -139,55 +139,55 @@
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "[UR] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "[UR] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "[UR] Delete",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "[UR] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "[UR] Create your first game",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "[UR] Participants",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "وصول کنندگان: {count}",
+  "recipients": "وصول کنندگان",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "[UR] No results found",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "جی ہاں",
+  "yes": "ہاں",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "دعوت دیں",
+  "invite": "مدعو کریں",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "[UR] Live Play",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "[UR] Done",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "ہیلو! میں نے APP-OINT کے ذریعے آپ کے ساتھ ملاقات شیڈول کی ہے۔ تصدیق کرنے یا دوسرا وقت تجویز کرنے کے لیے یہاں کلک کریں:",
+  "defaultShareMessage": "ڈیفالٹ شیئر میسج",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
@@ -195,15 +195,15 @@
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "[UR] Playtime Hub",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "[UR] Error",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "[UR] Create Live Session",
   "@createLiveSession": {
     "description": "Create live session button"
   },
@@ -211,43 +211,43 @@
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "مدعو: {date}",
+  "invited": "مدعو کیا گیا",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "مواد: {content}",
+  "content": "مواد",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "ملاقات کامیابی سے شیئر کی گئی!",
+  "meetingSharedSuccessfully": "میٹنگ کامیابی سے شیئر ہوئی",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "[UR] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "[UR] View All",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "[UR] Virtual Play",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "اسٹاف اسکرین - تیار ہونا باقی ہے",
+  "staffScreenTBD": "سٹاف اسکرین بعد میں طے ہوگی",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "[UR] Cut",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "دعوت کامیابی سے منسوخ ہو گئی!",
+  "inviteCancelledSuccessfully": "دعوت کامیابی سے منسوخ ہو گئی",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "[UR] Retry",
   "@retry": {
     "description": "Retry button text"
   },
@@ -259,19 +259,19 @@
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "[UR] No games yet",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "[UR] Select",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "[UR] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "[UR] Choose",
   "@choose": {
     "description": "Choose button text"
   },
@@ -279,19 +279,19 @@
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "بچے کو ہٹائیں",
+  "removeChild": "بچہ ہٹائیں",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "حیثیت: {status}",
+  "status": "حیثیت",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "[UR] Logout",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "[UR] Paste",
   "@paste": {
     "description": "Paste button text"
   },
@@ -299,31 +299,31 @@
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "[UR] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "خاندان کے افراد",
+  "familyMembers": "خاندانی ممبر",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "[UR] Upload",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "[UR] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "شناخت کے لیے گروپ کا نام درج کریں",
+  "enterGroupName": "گروپ کا نام درج کریں",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "[UR] Confirm",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "[UR] Live Play",
   "@playtimeLive": {
     "description": "Live play label"
   },
@@ -331,7 +331,7 @@
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "ہدف سازی کے فلٹرز",
+  "targetingFilters": "ہدف فلٹر",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
@@ -339,27 +339,27 @@
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "[UR] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "بعد میں شیڈول کریں",
+  "scheduleForLater": "بعد میں طے کریں",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "رسائی کامیابی سے منسوخ ہو گئی!",
+  "accessRevokedSuccessfully": "رسائی کامیابی سے منسوخ",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "قسم: {type}",
+  "type": "قسم",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "اجازتیں چیک کی جا رہی ہیں...",
+  "checkingPermissions": "اجازتوں کی جانچ ہو رہی ہے",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "[UR] Copy",
   "@copy": {
     "description": "Copy button text"
   },
@@ -371,15 +371,15 @@
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "واٹس ایپ پر شیئر کریں",
+  "shareOnWhatsApp": "[UR] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "اطلاع کی ترتیبات",
+  "notificationSettings": "اطلاعات کی ترتیبات",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
-  "myProfile": "میری پروفائل",
+  "myProfile": "میرا پروفائل",
   "@myProfile": {
     "description": "My profile title"
   },
@@ -387,11 +387,11 @@
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "ابھی تک کوئی نشریاتی پیغام نہیں",
+  "noBroadcastMessages": "کوئی نشریاتی پیغامات نہیں",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "{type} درخواست",
+  "requestType": "درخواست کی قسم",
   "@requestType": {
     "description": "Request type label"
   },
@@ -407,15 +407,15 @@
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "[UR] Create New",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "[UR] Settings",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "[UR] Reject",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
@@ -423,51 +423,51 @@
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "[UR] Edit",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "[UR] Add",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "[UR] Game approved",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "[UR] Forgot Password?",
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
-  "familyDashboard": "فیملی ڈیش بورڈ",
+  "familyDashboard": "خاندانی ڈیش بورڈ",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "لوڈ ہو رہا ہے...",
+  "loading": "لوڈ ہو رہا ہے",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "[UR] Quick Actions",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "[UR] Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "او ٹی پی کامیابی سے دوبارہ بھیجا گیا!",
+  "otpResentSuccessfully": "OTP کامیابی کے ساتھ دوبارہ بھیجا گیا",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "اجازتیں چیک کرنے میں خرابی: {error}",
+  "errorCheckingPermissions": "اجازتوں کی جانچ میں خرابی",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "کلائنٹ اسکرین - تیار ہونا باقی ہے",
+  "clientScreenTBD": "کلائنٹ اسکرین بعد میں طے ہوگی",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "ایف سی ایم ٹوکن: {token}",
+  "fcmToken": "FCM ٹوکن",
   "@fcmToken": {
     "description": "FCM token label"
   },
@@ -475,15 +475,15 @@
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "[UR] Previous",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "کوئی پروفائل نہیں ملی",
+  "noProfileFound": "کوئی پروفائل نہیں ملا",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "ابھی تک کوئی خاندانی رکن نہیں۔ شروع کرنے کے لیے کسی کو مدعو کریں!",
+  "noFamilyMembersYet": "ابھی تک کوئی خاندانی ممبر نہیں",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
@@ -491,11 +491,11 @@
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "پیغام کامیابی سے محفوظ ہو گیا",
+  "messageSavedSuccessfully": "پیغام کامیابی سے محفوظ ہوا",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "[UR] Scheduled for",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
@@ -503,11 +503,11 @@
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "آپ کو نشریاتی پیغامات بنانے کی اجازت نہیں ہے۔",
+  "noPermissionForBroadcast": "نشریات کی اجازت نہیں",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[UR] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
@@ -515,11 +515,15 @@
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "شیڈول: {date}",
+  "scheduled": "شیڈول کیا گیا",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "او ٹی پی دوبارہ بھیجنے میں ناکامی: {error}",
+  "failedToCancelInvite": "دعوت منسوخ کرنے میں ناکامی",
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "failedToResendOtp": "OTP کو دوبارہ بھیجنے میں ناکامی",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
@@ -527,7 +531,7 @@
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "پیغام محفوظ کرنے میں خرابی: {error}",
+  "errorSavingMessage": "پیغام محفوظ کرنے میں خرابی",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
@@ -535,67 +539,59 @@
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "[UR] Approve",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "[UR] Create your first session",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "[UR] Game rejected",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "رسائی منسوخ کرنے میں ناکامی: {error}",
-  "@failedToRevokeAccess": {
-    "description": "Failed to revoke access message"
-  },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "[UR] Recent Games",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "اپنا پیغام حسبِ ضرورت بنائیں...",
+  "customizeMessage": "پیغام حسب ضرورت بنائیں",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "دعوت منسوخ کرنے میں ناکامی: {error}",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
-  },
-  "errorSendingMessage": "پیغام بھیجنے میں خرابی: {error}",
+  "errorSendingMessage": "پیغام بھیجنے میں خرابی",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "[UR] Confirm Password",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "پرائیویسی درخواستیں لوڈ کرنے میں خرابی: {error}",
+  "errorLoadingPrivacyRequests": "پرائیویسی درخواستیں لوڈ کرنے میں خرابی",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "منسلک بچے",
+  "connectedChildren": "جڑے ہوئے بچے",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "[UR] Share",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "[UR] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "خاندانی خصوصیات کے لیے براہ کرم لاگ ان کریں",
+  "pleaseLoginForFamilyFeatures": "خاندانی خصوصیات تک رسائی کے لیے لاگ ان کریں",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "میرے دعوت نامے",
+  "myInvites": "میری دعوتیں",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "[UR] Create Game",
   "@createGame": {
     "description": "Create game button"
   },
@@ -603,15 +599,15 @@
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "[UR] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "ایڈمن اسکرین - تیار ہونا باقی ہے",
+  "adminScreenTBD": "ایڈمن اسکرین جلد دستیاب ہوگا",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[UR] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
@@ -619,46 +615,50 @@
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "معروف گروپ شناخت ہو گیا",
+  "knownGroupDetected": "معلوم گروپ کا پتہ چلا",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "[UR] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "[UR] Choose a game",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "اجازتوں کا نظم کریں",
+  "managePermissions": "اجازتوں کا انتظام کریں",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "پول آپشنز:",
+  "pollOptions": "پول کے اختیارات",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "کلک کیا گیا: {count}",
+  "clicked": "کلک کیا گیا",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "لنک: {link}",
+  "link": "لنک",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "ملاقات تیار ہے! کیا آپ اسے اپنے گروپ کو بھیجنا چاہتے ہیں؟",
+  "meetingReadyMessage": "آپ کی میٹنگ تیار ہے! اب شامل ہوں",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "زیر التواء دعوتیں",
+  "pendingInvites": "زیر التوا دعوتیں",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "حیثیت: {status}",
+  "statusColon": "حیثیت:",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "ur",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginToViewProfile": "[UR] Please log in to view your profile.",
+  "failedToRevokeAccess": "[UR] Failed to revoke access",
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "تازه‌سازی",
   "@refresh": {
     "description": "Refresh button text"
   },
@@ -7,23 +7,23 @@
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "هنوز جلسه‌ای برگزار نشده",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "باشه",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "یک حالت را انتخاب کنید",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "ثبت‌نام",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "برنامه‌ریزی پیام",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
@@ -39,31 +39,31 @@
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "انتخاب دوستان",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "دعوتی موجود نیست",
+  "noInvites": "هیچ دعوتی نیست",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "انتخاب زمان",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "موفقیت",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "واگرد",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "باز شده: {count}",
+  "opened": "باز شد",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "ایجاد جلسه مجازی",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
@@ -71,7 +71,7 @@
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "تکرار",
   "@redo": {
     "description": "Redo button text"
   },
@@ -79,35 +79,35 @@
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "جستجو",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "آیا مطمئن هستید که می‌خواهید این دعوت را لغو کنید؟",
+  "cancelInviteConfirmation": "لغو تأیید دعوت",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "ایجاد شده: {date}",
+  "created": "ایجاد شد",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "لغو دسترسی",
+  "revokeAccess": "ابطال دسترسی",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "ذخیره گروه برای شناسایی در آینده",
+  "saveGroupForRecognition": "ذخیره گروه برای شناسایی",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "جلسه زنده برنامه‌ریزی شد",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "آیا مطمئن هستید که می‌خواهید دسترسی این کودک را لغو کنید؟ این عمل قابل بازگشت نیست.",
+  "revokeAccessConfirmation": "تأیید ابطال دسترسی",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "دانلود",
   "@download": {
     "description": "Download button text"
   },
@@ -115,7 +115,7 @@
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "خطا در بارگذاری ارتباطات خانوادگی: {error}",
+  "errorLoadingFamilyLinks": "خطا در بارگذاری پیوندهای خانوادگی",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
@@ -123,51 +123,51 @@
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "ایجاد Playtime",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "انجام {action} درخواست حریم خصوصی با شکست مواجه شد: {error}",
+  "failedToActionPrivacyRequest": "درخواست حریم خصوصی ناموفق بود",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "Appoint",
+  "appTitle": "عنوان برنامه",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "پذیرش",
+  "accept": "تأیید",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "حالت مجازی",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "توضیحات Playtime",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "حذف",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "جلسه مجازی آغاز شد",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "اولین بازی خود را بسازید",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "شرکت‌کنندگان",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "گیرندگان: {count}",
+  "recipients": "گیرندگان",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "بدون نتیجه",
   "@noResults": {
     "description": "No search results message"
   },
@@ -179,15 +179,15 @@
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "حالت زنده",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "انجام شد",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "سلام! من یک جلسه با شما از طریق APP-OINT برنامه‌ریزی کرده‌ام. برای تأیید یا پیشنهاد زمان دیگر کلیک کنید:",
+  "defaultShareMessage": "پیام پیش‌فرض برای اشتراک‌گذاری",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
@@ -195,63 +195,63 @@
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "مرکز Playtime",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "خطا",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "ایجاد جلسه زنده",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "فعال‌سازی اعلان‌ها",
+  "enableNotifications": "فعال کردن اعلان‌ها",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "دعوت‌شده: {date}",
+  "invited": "دعوت شد",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "محتوا: {content}",
+  "content": "محتوا",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "جلسه با موفقیت به اشتراک گذاشته شد!",
+  "meetingSharedSuccessfully": "جلسه با موفقیت به اشتراک گذاشته شد",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "به Playtime خوش آمدید",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "نمایش همه",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "Playtime مجازی",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "صفحه کارکنان - در حال توسعه",
+  "staffScreenTBD": "صفحه کارکنان تعریف نشده",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "برش",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "دعوت با موفقیت لغو شد!",
+  "inviteCancelledSuccessfully": "دعوت با موفقیت لغو شد",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "تلاش مجدد",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "نگارش پیام پخش",
+  "composeBroadcastMessage": "نوشتن پیام پخش",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
@@ -259,19 +259,19 @@
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "هنوز هیچ بازی نیست",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "انتخاب کنید",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "درباره",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "انتخاب",
   "@choose": {
     "description": "Choose button text"
   },
@@ -283,15 +283,15 @@
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "وضعیت: {status}",
+  "status": "وضعیت",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "خروج",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "چسباندن",
   "@paste": {
     "description": "Paste button text"
   },
@@ -299,7 +299,7 @@
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "ایجاد جلسه",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
@@ -307,23 +307,23 @@
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "بارگذاری",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "جلسات آینده",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "نام گروه را وارد کنید برای شناسایی",
+  "enterGroupName": "نام گروه را وارد کنید",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "تأیید",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "Playtime زنده",
   "@playtimeLive": {
     "description": "Live play label"
   },
@@ -331,15 +331,15 @@
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "فیلترهای هدف‌گذاری",
+  "targetingFilters": "فیلترهای هدف",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "انتخاب ویدئو",
+  "pickVideo": "انتخاب ویدیو",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "بازی حذف شد",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
@@ -347,23 +347,23 @@
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "دسترسی با موفقیت لغو شد!",
+  "accessRevokedSuccessfully": "دسترسی با موفقیت باطل شد",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "نوع: {type}",
+  "type": "نوع",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "در حال بررسی مجوزها...",
+  "checkingPermissions": "در حال بررسی دسترسی‌ها",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "کپی",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "بله، لغو",
+  "yesCancel": "بله، لغو شود",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
@@ -383,15 +383,15 @@
   "@myProfile": {
     "description": "My profile title"
   },
-  "revoke": "لغو",
+  "revoke": "ابطال",
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "هنوز پیامی برای پخش وجود ندارد",
+  "noBroadcastMessages": "هیچ پیغام پخشی نیست",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "درخواست {type}",
+  "requestType": "نوع درخواست",
   "@requestType": {
     "description": "Request type label"
   },
@@ -407,15 +407,15 @@
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "ایجاد جدید",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "تنظیمات",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "رد Playtime",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
@@ -423,19 +423,19 @@
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "ویرایش",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "افزودن",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "بازی تأیید شد",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "رمز عبور را فراموش کرده‌اید؟",
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
@@ -443,31 +443,31 @@
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "در حال بارگذاری...",
+  "loading": "در حال بارگذاری",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "اقدامات سریع",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "عنوان Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "کد OTP با موفقیت دوباره ارسال شد!",
+  "otpResentSuccessfully": "کد مجدداً ارسال شد",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "خطا در بررسی دسترسی‌ها: {error}",
+  "errorCheckingPermissions": "خطا در بررسی دسترسی‌ها",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "صفحه مشتری - در حال توسعه",
+  "clientScreenTBD": "صفحه مشتری تعریف نشده",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "توکن FCM: {token}",
+  "fcmToken": "توکن FCM",
   "@fcmToken": {
     "description": "FCM token label"
   },
@@ -475,7 +475,7 @@
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "قبلی",
   "@previous": {
     "description": "Previous button text"
   },
@@ -483,7 +483,7 @@
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "هنوز هیچ عضو خانواده‌ای اضافه نشده است. برای شروع کسی را دعوت کنید!",
+  "noFamilyMembersYet": "هنوز عضو خانواده‌ای نیست",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
@@ -495,7 +495,7 @@
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "زمان‌بندی شده برای",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
@@ -503,11 +503,11 @@
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "شما مجاز به ایجاد پیام‌های پخش نیستید.",
+  "noPermissionForBroadcast": "مجوز انتشار وجود ندارد",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "عنوان پنل مدیریت Playtime",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
@@ -515,19 +515,19 @@
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "زمان‌بندی شده: {date}",
+  "scheduled": "زمان‌بندی شده",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "ارسال مجدد OTP با شکست مواجه شد: {error}",
+  "failedToResendOtp": "ارسال مجدد کد ناموفق بود",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "زمان‌بندی",
+  "scheduling": "در حال زمان‌بندی",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "خطا در ذخیره پیام: {error}",
+  "errorSavingMessage": "خطا در ذخیره پیام",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
@@ -535,67 +535,67 @@
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "تأیید Playtime",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "اولین جلسه خود را بسازید",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "بازی رد شد",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "لغو دسترسی با شکست مواجه شد: {error}",
+  "failedToRevokeAccess": "خطا در لغو دسترسی",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "بازی‌های اخیر",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "پیام خود را سفارشی کنید...",
+  "customizeMessage": "شخصی‌سازی پیام",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "لغو دعوت با شکست مواجه شد: {error}",
+  "failedToCancelInvite": "لغو دعوت ناموفق بود",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "خطا در ارسال پیام: {error}",
+  "errorSendingMessage": "خطا در ارسال پیام",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "تأیید رمز عبور",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "خطا در بارگذاری درخواست‌های حریم خصوصی: {error}",
+  "errorLoadingPrivacyRequests": "خطا در بارگذاری درخواست‌های حریم خصوصی",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "کودکان متصل شده",
+  "connectedChildren": "کودکان متصل",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "اشتراک‌گذاری",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "نام بازی را وارد کنید",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "برای استفاده از قابلیت‌های خانوادگی وارد شوید",
+  "pleaseLoginForFamilyFeatures": "لطفاً برای ویژگی‌های خانوادگی وارد شوید",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "دعوت‌نامه‌های من",
+  "myInvites": "دعوت‌های من",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "ایجاد بازی",
   "@createGame": {
     "description": "Create game button"
   },
@@ -603,15 +603,15 @@
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "هیچ جلسه Playtime نیست",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "صفحه مدیر - در حال توسعه",
+  "adminScreenTBD": "صفحه ادمین تعریف نشده",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "داشبورد والدین Playtime",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
@@ -619,46 +619,46 @@
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "گروه شناخته‌شده شناسایی شد",
+  "knownGroupDetected": "گروه شناخته شده شناسایی شد",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "بازگشت",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "بازی را انتخاب کنید",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "مدیریت دسترسی‌ها",
+  "managePermissions": "مدیریت مجوزها",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "گزینه‌های نظرسنجی:",
+  "pollOptions": "گزینه‌های نظرسنجی",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "کلیک شده: {count}",
+  "clicked": "کلیک شده",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "لینک: {link}",
+  "link": "لینک",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "جلسه آماده است! می‌خواهید آن را برای گروه ارسال کنید؟",
+  "meetingReadyMessage": "جلسه شما آماده است! اکنون بپیوندید",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "دعوت‌های در انتظار",
+  "pendingInvites": "دعوت‌نامه‌های در انتظار",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "وضعیت: {status}",
+  "statusColon": "وضعیت:",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "fa",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginToViewProfile": "لطفاً برای مشاهده پروفایل خود وارد شوید."
 }

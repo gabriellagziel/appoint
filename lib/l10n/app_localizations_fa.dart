@@ -9,25 +9,25 @@ class AppLocalizationsFa extends AppLocalizations {
   AppLocalizationsFa([String locale = 'fa']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'تازه‌سازی';
 
   @override
   String get home => 'خانه';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'هنوز جلسه‌ای برگزار نشده';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'باشه';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'یک حالت را انتخاب کنید';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'ثبت‌نام';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'برنامه‌ریزی پیام';
 
   @override
   String get decline => 'رد کردن';
@@ -39,116 +39,111 @@ class AppLocalizationsFa extends AppLocalizations {
   String get login => 'ورود';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'انتخاب دوستان';
 
   @override
-  String get noInvites => 'دعوتی موجود نیست';
+  String get noInvites => 'هیچ دعوتی نیست';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'انتخاب زمان';
 
   @override
-  String get success => 'Success';
+  String get success => 'موفقیت';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'واگرد';
 
   @override
-  String opened(Object count) {
-    return 'باز شده: $count';
-  }
+  String get opened => 'باز شد';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'ایجاد جلسه مجازی';
 
   @override
   String get messageSentSuccessfully => 'پیام با موفقیت ارسال شد';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'تکرار';
 
   @override
   String get next => 'بعدی';
 
   @override
-  String get search => 'Search';
+  String get search => 'جستجو';
 
   @override
-  String get cancelInviteConfirmation =>
-      'آیا مطمئن هستید که می‌خواهید این دعوت را لغو کنید؟';
+  String get cancelInviteConfirmation => 'لغو تأیید دعوت';
 
   @override
   String created(Object date) {
-    return 'ایجاد شده: $date';
+    return 'ایجاد شد';
   }
 
   @override
-  String get revokeAccess => 'لغو دسترسی';
+  String get revokeAccess => 'ابطال دسترسی';
 
   @override
-  String get saveGroupForRecognition => 'ذخیره گروه برای شناسایی در آینده';
+  String get saveGroupForRecognition => 'ذخیره گروه برای شناسایی';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'جلسه زنده برنامه‌ریزی شد';
 
   @override
-  String get revokeAccessConfirmation =>
-      'آیا مطمئن هستید که می‌خواهید دسترسی این کودک را لغو کنید؟ این عمل قابل بازگشت نیست.';
+  String get revokeAccessConfirmation => 'تأیید ابطال دسترسی';
 
   @override
-  String get download => 'Download';
+  String get download => 'دانلود';
 
   @override
   String get password => 'رمز عبور';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'خطا در بارگذاری ارتباطات خانوادگی: $error';
+    return 'خطا در بارگذاری پیوندهای خانوادگی';
   }
 
   @override
   String get cancel => 'لغو';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'ایجاد Playtime';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'انجام $action درخواست حریم خصوصی با شکست مواجه شد: $error';
+    return 'درخواست حریم خصوصی ناموفق بود';
   }
 
   @override
-  String get appTitle => 'Appoint';
+  String get appTitle => 'عنوان برنامه';
 
   @override
-  String get accept => 'پذیرش';
+  String get accept => 'تأیید';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'حالت مجازی';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'توضیحات Playtime';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'حذف';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'جلسه مجازی آغاز شد';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'اولین بازی خود را بسازید';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'شرکت‌کنندگان';
 
   @override
   String recipients(Object count) {
-    return 'گیرندگان: $count';
+    return 'گیرندگان';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'بدون نتیجه';
 
   @override
   String get yes => 'بله';
@@ -157,81 +152,80 @@ class AppLocalizationsFa extends AppLocalizations {
   String get invite => 'دعوت';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'حالت زنده';
 
   @override
-  String get done => 'Done';
+  String get done => 'انجام شد';
 
   @override
-  String get defaultShareMessage =>
-      'سلام! من یک جلسه با شما از طریق APP-OINT برنامه‌ریزی کرده‌ام. برای تأیید یا پیشنهاد زمان دیگر کلیک کنید:';
+  String get defaultShareMessage => 'پیام پیش‌فرض برای اشتراک‌گذاری';
 
   @override
   String get no => 'خیر';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'مرکز Playtime';
 
   @override
-  String get error => 'Error';
+  String get error => 'خطا';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'ایجاد جلسه زنده';
 
   @override
-  String get enableNotifications => 'فعال‌سازی اعلان‌ها';
+  String get enableNotifications => 'فعال کردن اعلان‌ها';
 
   @override
   String invited(Object date) {
-    return 'دعوت‌شده: $date';
+    return 'دعوت شد';
   }
 
   @override
   String content(Object content) {
-    return 'محتوا: $content';
+    return 'محتوا';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'جلسه با موفقیت به اشتراک گذاشته شد!';
+  String get meetingSharedSuccessfully => 'جلسه با موفقیت به اشتراک گذاشته شد';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'به Playtime خوش آمدید';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'نمایش همه';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Playtime مجازی';
 
   @override
-  String get staffScreenTBD => 'صفحه کارکنان - در حال توسعه';
+  String get staffScreenTBD => 'صفحه کارکنان تعریف نشده';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'برش';
 
   @override
-  String get inviteCancelledSuccessfully => 'دعوت با موفقیت لغو شد!';
+  String get inviteCancelledSuccessfully => 'دعوت با موفقیت لغو شد';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'تلاش مجدد';
 
   @override
-  String get composeBroadcastMessage => 'نگارش پیام پخش';
+  String get composeBroadcastMessage => 'نوشتن پیام پخش';
 
   @override
   String get sendNow => 'ارسال اکنون';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'هنوز هیچ بازی نیست';
 
   @override
-  String get select => 'Select';
+  String get select => 'انتخاب کنید';
 
   @override
-  String get about => 'About';
+  String get about => 'درباره';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'انتخاب';
 
   @override
   String get profile => 'پروفایل';
@@ -241,70 +235,70 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String status(Object status) {
-    return 'وضعیت: $status';
+    return 'وضعیت';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'خروج';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'چسباندن';
 
   @override
   String get welcome => 'خوش آمدید';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'ایجاد جلسه';
 
   @override
   String get familyMembers => 'اعضای خانواده';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'بارگذاری';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'جلسات آینده';
 
   @override
-  String get enterGroupName => 'نام گروه را وارد کنید برای شناسایی';
+  String get enterGroupName => 'نام گروه را وارد کنید';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'تأیید';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Playtime زنده';
 
   @override
-  String get errorLoadingInvites => 'خطا در بارگذاری دعوت‌ها';
+  String errorLoadingInvites(Object error) {
+    return 'خطا در بارگذاری دعوت‌ها';
+  }
 
   @override
-  String get targetingFilters => 'فیلترهای هدف‌گذاری';
+  String get targetingFilters => 'فیلترهای هدف';
 
   @override
-  String get pickVideo => 'انتخاب ویدئو';
+  String get pickVideo => 'انتخاب ویدیو';
 
   @override
-  String get playtimeGameDeleted => 'Game deleted';
+  String get playtimeGameDeleted => 'بازی حذف شد';
 
   @override
   String get scheduleForLater => 'برنامه‌ریزی برای بعد';
 
   @override
-  String get accessRevokedSuccessfully => 'دسترسی با موفقیت لغو شد!';
+  String get accessRevokedSuccessfully => 'دسترسی با موفقیت باطل شد';
 
   @override
-  String type(Object type) {
-    return 'نوع: $type';
-  }
+  String get type => 'نوع';
 
   @override
-  String get checkingPermissions => 'در حال بررسی مجوزها...';
+  String get checkingPermissions => 'در حال بررسی دسترسی‌ها';
 
   @override
-  String get copy => 'Copy';
+  String get copy => 'کپی';
 
   @override
-  String get yesCancel => 'بله، لغو';
+  String get yesCancel => 'بله، لغو شود';
 
   @override
   String get email => 'ایمیل';
@@ -319,14 +313,14 @@ class AppLocalizationsFa extends AppLocalizations {
   String get myProfile => 'پروفایل من';
 
   @override
-  String get revoke => 'لغو';
+  String get revoke => 'ابطال';
 
   @override
-  String get noBroadcastMessages => 'هنوز پیامی برای پخش وجود ندارد';
+  String get noBroadcastMessages => 'هیچ پیغام پخشی نیست';
 
   @override
   String requestType(Object type) {
-    return 'درخواست $type';
+    return 'نوع درخواست';
   }
 
   @override
@@ -339,69 +333,70 @@ class AppLocalizationsFa extends AppLocalizations {
   String get cancelInvite => 'لغو دعوت';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'ایجاد جدید';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'تنظیمات';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'رد Playtime';
 
   @override
-  String get errorLoadingProfile => 'خطا در بارگذاری پروفایل';
+  String errorLoadingProfile(Object error) {
+    return 'خطا در بارگذاری پروفایل';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'ویرایش';
 
   @override
-  String get add => 'Add';
+  String get add => 'افزودن';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'بازی تأیید شد';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'رمز عبور را فراموش کرده‌اید؟';
 
   @override
   String get familyDashboard => 'داشبورد خانواده';
 
   @override
-  String get loading => 'در حال بارگذاری...';
+  String get loading => 'در حال بارگذاری';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'اقدامات سریع';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'عنوان Playtime';
 
   @override
-  String get otpResentSuccessfully => 'کد OTP با موفقیت دوباره ارسال شد!';
+  String get otpResentSuccessfully => 'کد مجدداً ارسال شد';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'خطا در بررسی دسترسی‌ها: $error';
+    return 'خطا در بررسی دسترسی‌ها';
   }
 
   @override
-  String get clientScreenTBD => 'صفحه مشتری - در حال توسعه';
+  String get clientScreenTBD => 'صفحه مشتری تعریف نشده';
 
   @override
   String fcmToken(Object token) {
-    return 'توکن FCM: $token';
+    return 'توکن FCM';
   }
 
   @override
   String get pickImage => 'انتخاب تصویر';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'قبلی';
 
   @override
   String get noProfileFound => 'پروفایلی یافت نشد';
 
   @override
-  String get noFamilyMembersYet =>
-      'هنوز هیچ عضو خانواده‌ای اضافه نشده است. برای شروع کسی را دعوت کنید!';
+  String get noFamilyMembersYet => 'هنوز عضو خانواده‌ای نیست';
 
   @override
   String get mediaOptional => 'رسانه (اختیاری)';
@@ -410,151 +405,150 @@ class AppLocalizationsFa extends AppLocalizations {
   String get messageSavedSuccessfully => 'پیام با موفقیت ذخیره شد';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'زمان‌بندی شده برای';
 
   @override
   String get dashboard => 'داشبورد';
 
   @override
-  String get noPermissionForBroadcast =>
-      'شما مجاز به ایجاد پیام‌های پخش نیستید.';
+  String get noPermissionForBroadcast => 'مجوز انتشار وجود ندارد';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'عنوان پنل مدیریت Playtime';
 
   @override
   String get inviteDetail => 'جزئیات دعوت';
 
   @override
   String scheduled(Object date) {
-    return 'زمان‌بندی شده: $date';
+    return 'زمان‌بندی شده';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'ارسال مجدد OTP با شکست مواجه شد: $error';
+    return 'ارسال مجدد کد ناموفق بود';
   }
 
   @override
-  String get scheduling => 'زمان‌بندی';
+  String get scheduling => 'در حال زمان‌بندی';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'خطا در ذخیره پیام: $error';
+    return 'خطا در ذخیره پیام';
   }
 
   @override
   String get save => 'ذخیره';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'تأیید Playtime';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'اولین جلسه خود را بسازید';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'بازی رد شد';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'لغو دسترسی با شکست مواجه شد: $error';
+    return 'خطا در لغو دسترسی';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'بازی‌های اخیر';
 
   @override
-  String get customizeMessage => 'پیام خود را سفارشی کنید...';
+  String get customizeMessage => 'شخصی‌سازی پیام';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'لغو دعوت با شکست مواجه شد: $error';
+    return 'لغو دعوت ناموفق بود';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'خطا در ارسال پیام: $error';
+    return 'خطا در ارسال پیام';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'تأیید رمز عبور';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'خطا در بارگذاری درخواست‌های حریم خصوصی: $error';
+    return 'خطا در بارگذاری درخواست‌های حریم خصوصی';
   }
 
   @override
-  String get connectedChildren => 'کودکان متصل شده';
+  String get connectedChildren => 'کودکان متصل';
 
   @override
-  String get share => 'Share';
+  String get share => 'اشتراک‌گذاری';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'نام بازی را وارد کنید';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'برای استفاده از قابلیت‌های خانوادگی وارد شوید';
+      'لطفاً برای ویژگی‌های خانوادگی وارد شوید';
 
   @override
-  String get myInvites => 'دعوت‌نامه‌های من';
+  String get myInvites => 'دعوت‌های من';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'ایجاد بازی';
 
   @override
   String get groupNameOptional => 'نام گروه (اختیاری)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'هیچ جلسه Playtime نیست';
 
   @override
-  String get adminScreenTBD => 'صفحه مدیر - در حال توسعه';
+  String get adminScreenTBD => 'صفحه ادمین تعریف نشده';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => 'داشبورد والدین Playtime';
 
   @override
   String get close => 'بستن';
 
   @override
-  String get knownGroupDetected => 'گروه شناخته‌شده شناسایی شد';
+  String get knownGroupDetected => 'گروه شناخته شده شناسایی شد';
 
   @override
-  String get back => 'Back';
+  String get back => 'بازگشت';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'بازی را انتخاب کنید';
 
   @override
-  String get managePermissions => 'مدیریت دسترسی‌ها';
+  String get managePermissions => 'مدیریت مجوزها';
 
   @override
-  String get pollOptions => 'گزینه‌های نظرسنجی:';
+  String get pollOptions => 'گزینه‌های نظرسنجی';
 
   @override
   String clicked(Object count) {
-    return 'کلیک شده: $count';
+    return 'کلیک شده';
   }
 
   @override
   String link(Object link) {
-    return 'لینک: $link';
+    return 'لینک';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'جلسه آماده است! می‌خواهید آن را برای گروه ارسال کنید؟';
+  String get meetingReadyMessage => 'جلسه شما آماده است! اکنون بپیوندید';
 
   @override
-  String get pendingInvites => 'دعوت‌های در انتظار';
+  String get pendingInvites => 'دعوت‌نامه‌های در انتظار';
 
   @override
   String statusColon(Object status) {
-    return 'وضعیت: $status';
+    return 'وضعیت:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      'لطفاً برای مشاهده پروفایل خود وارد شوید.';
 }

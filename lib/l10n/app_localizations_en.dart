@@ -54,9 +54,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get undo => 'Undo';
 
   @override
-  String opened(Object count) {
-    return 'Opened';
-  }
+  String get opened => 'Opened';
 
   @override
   String get createVirtualSession => 'Create Virtual Session';
@@ -274,7 +272,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get playtimeLive => 'Live Play';
 
   @override
-  String get errorLoadingInvites => 'Error loading invites';
+  String errorLoadingInvites(Object error) {
+    return 'Error loading invites';
+  }
 
   @override
   String get targetingFilters => 'Targeting Filters';
@@ -292,9 +292,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get accessRevokedSuccessfully => 'Access revoked successfully';
 
   @override
-  String type(Object type) {
-    return 'Type';
-  }
+  String get type => 'Type';
 
   @override
   String get checkingPermissions => 'Checking permissions...';
@@ -347,7 +345,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get playtimeReject => 'Reject';
 
   @override
-  String get errorLoadingProfile => 'Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'Error loading profile';
+  }
 
   @override
   String get edit => 'Edit';
