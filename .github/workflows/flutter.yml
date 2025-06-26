@@ -19,6 +19,12 @@ jobs:
           uses: subosito/flutter-action@v2
           with:
             flutter-version: '3.7.0'
+        - name: Set up Dart SDK
+          uses: dart-lang/setup-dart@v1
+          with:
+            sdk: '3.7.0'
+        - name: Verify Dart CLI
+          run: dart --version
         - name: Pre-flight: Verify network access
           run: |
             for host in pub.dev storage.googleapis.com; do
@@ -29,10 +35,10 @@ jobs:
             done
         - name: Verify Flutter Version
           run: flutter --version
-        - run: flutter pub get
+        - run: dart pub get
         - run: dart run build_runner build --delete-conflicting-outputs
         - run: flutter analyze
-        - run: flutter test --coverage
+        - run: dart test --coverage
         - run: flutter test integration_test/
         - run: flutter build web
         - uses: codecov/codecov-action@v3
