@@ -7,59 +7,41 @@ on:
     branches: [ main ]
 
 jobs:
-    analyze_and_test:
-      name: Analyze & Test
-      runs-on: ubuntu-latest
-      env:
-        PUB_HOSTED_URL: https://pub.dev
-        FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
-        FLUTTER_CACHE_DIR: ~/.flutter
-      steps:
-        - uses: actions/checkout@v3
-        - name: Cache Pub packages
-          uses: actions/cache@v3
-          with:
-            path: ~/.pub-cache
-            key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-            restore-keys: |
-              ${{ runner.os }}-pub-
-
-        - name: Cache Flutter SDK artifacts
-          uses: actions/cache@v3
-          with:
-            path: ${{ env.FLUTTER_CACHE_DIR }}
-            key: ${{ runner.os }}-flutter-${{ hashFiles('.github/workflows/**.yml') }}
-            restore-keys: |
-              ${{ runner.os }}-flutter-
-        - name: Set up Flutter
-          uses: subosito/flutter-action@v2
-          with:
-            flutter-version: '3.7.0'
-        - name: Set up Dart SDK
-          uses: dart-lang/setup-dart@v1
-          with:
-            sdk: '3.7.0'
-        - name: Verify Dart CLI
-          run: dart --version
-        - name: Pre-flight: Verify network access
-          run: |
-            for host in pub.dev storage.googleapis.com; do
-              curl --head --fail https://$host || {
-                echo "❌ Cannot reach $host. Ensure it’s whitelisted in CI network settings."
-                exit 1
-              }
-            done
-        - name: Verify Flutter Version
-          run: flutter --version
-        - name: Install dependencies offline
-          run: flutter pub get --offline
-        - name: Run code generation offline
-          run: dart run build_runner build --delete-conflicting-outputs --offline
-        - run: dart analyze
-        - run: dart test --coverage
-        - run: flutter test integration_test/
-        - run: flutter build web
-        - uses: codecov/codecov-action@v3
-          with:
-            files: coverage/lcov.info
-            fail_ci_if_error: true
+  analyze_and_test:
+    name: Analyze & Test
+    runs-on: ubuntu-latest
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      FLUTTER_CACHE_DIR: ~/.flutter
+    steps:
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.7.0'
+      - uses: actions/checkout@v3
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
+      - name: Clear Flutter cache
+        run: flutter clean
+      - name: Verify Flutter Version
+        run: flutter --version
+      - name: Verify Dart Version
+        run: dart --version
+      - run: flutter pub get
+      - run: dart pub get
+      - run: dart run build_runner build --delete-conflicting-outputs
+      - run: flutter analyze
+      - run: dart analyze
+      - run: dart test --coverage
+      - run: dart test integration_test/
+      - run: flutter build web
+      - uses: codecov/codecov-action@v3
+        with:
+          files: coverage/lcov.info
+          fail_ci_if_error: true
