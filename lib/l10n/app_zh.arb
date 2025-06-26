@@ -1,664 +1,667 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "刷新",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "TODO_TRANSLATE: Home",
+  "home": "首页",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "暂无会话",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "确定",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "选择模式",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "注册",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "安排消息",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "TODO_TRANSLATE: Decline",
+  "decline": "拒绝",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "TODO_TRANSLATE: Admin Broadcast",
+  "adminBroadcast": "管理员广播",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "TODO_TRANSLATE: Login",
+  "login": "登录",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "选择好友",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "TODO_TRANSLATE: No invites",
+  "noInvites": "暂无邀请",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "选择时间",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "成功",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "撤销",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "TODO_TRANSLATE: Opened",
+  "opened": "已打开",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "创建虚拟会话",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "TODO_TRANSLATE: Message sent successfully",
+  "messageSentSuccessfully": "消息发送成功",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "重做",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "TODO_TRANSLATE: Next",
+  "next": "下一步",
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "搜索",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "TODO_TRANSLATE: Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "取消邀请确认",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "TODO_TRANSLATE: Created",
+  "created": "已创建",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "TODO_TRANSLATE: Revoke Access",
+  "revokeAccess": "撤销访问",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "TODO_TRANSLATE: Save Group for Recognition",
+  "saveGroupForRecognition": "保存组以便识别",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "直播已安排",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "TODO_TRANSLATE: Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "撤销访问确认",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "下载",
   "@download": {
     "description": "Download button text"
   },
-  "password": "TODO_TRANSLATE: Password",
+  "password": "密码",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "TODO_TRANSLATE: Error loading family links",
+  "errorLoadingFamilyLinks": "加载家庭链接出错",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "TODO_TRANSLATE: Cancel",
+  "cancel": "取消",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "创建 Playtime",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "TODO_TRANSLATE: Failed to action privacy request",
+  "failedToActionPrivacyRequest": "处理隐私请求失败",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "TODO_TRANSLATE: APP-OINT",
+  "appTitle": "应用标题",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "TODO_TRANSLATE: Accept",
+  "accept": "接受",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "虚拟模式",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "Playtime 描述",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "删除",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "虚拟会话已开始",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "创建你的第一个游戏",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "参与者",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "TODO_TRANSLATE: Recipients",
+  "recipients": "接收者",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "暂无结果",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "TODO_TRANSLATE: Yes",
+  "yes": "是",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "TODO_TRANSLATE: Invite",
+  "invite": "邀请",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "直播模式",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "完成",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "TODO_TRANSLATE: Let's meet via Appoint!",
+  "defaultShareMessage": "默认分享消息",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "TODO_TRANSLATE: No",
+  "no": "否",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "Playtime 中心",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "错误",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "创建直播会话",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "TODO_TRANSLATE: Enable Notifications",
+  "enableNotifications": "启用通知",
   "@enableNotifications": {
-    "description": "Enable notifications label"
+    "description": "Enable notifications button"
   },
-  "invited": "TODO_TRANSLATE: Invited",
+  "invited": "已邀请",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "TODO_TRANSLATE: Content",
+  "content": "内容",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "TODO_TRANSLATE: Meeting shared successfully",
+  "meetingSharedSuccessfully": "会议分享成功",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "欢迎来到 Playtime",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "查看全部",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "虚拟 Playtime",
   "@playtimeVirtual": {
-    "description": "Virtual play label"
+    "description": "Virtual playtime label"
   },
-  "staffScreenTBD": "TODO_TRANSLATE: Staff screen coming soon",
+  "staffScreenTBD": "工作人员界面待定",
   "@staffScreenTBD": {
-    "description": "Staff screen TBD message"
+    "description": "Staff screen coming soon"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "剪切",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "TODO_TRANSLATE: Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "邀请取消成功",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "重试",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "TODO_TRANSLATE: Compose Broadcast Message",
+  "composeBroadcastMessage": "撰写广播消息",
   "@composeBroadcastMessage": {
-    "description": "Compose broadcast message title"
+    "description": "Compose broadcast message button"
   },
-  "sendNow": "TODO_TRANSLATE: Send Now",
+  "sendNow": "立即发送",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "暂无游戏",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "选择",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "关于",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "选择",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "TODO_TRANSLATE: Profile",
+  "profile": "个人资料",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "TODO_TRANSLATE: Remove Child",
+  "removeChild": "移除子账户",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "TODO_TRANSLATE: Status",
+  "status": "状态",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "退出登录",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "粘贴",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "TODO_TRANSLATE: Welcome",
+  "welcome": "欢迎",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "创建会话",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "TODO_TRANSLATE: Family Members",
+  "familyMembers": "家庭成员",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "上传",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "即将到来的会话",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "TODO_TRANSLATE: Enter group name",
+  "enterGroupName": "输入组名",
   "@enterGroupName": {
-    "description": "Enter group name placeholder"
+    "description": "Enter group name label"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "确认",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "直播 Playtime",
   "@playtimeLive": {
-    "description": "Live play label"
+    "description": "Live playtime label"
   },
-  "errorLoadingInvites": "TODO_TRANSLATE: Error loading invites",
+  "errorLoadingInvites": "加载邀请出错",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "TODO_TRANSLATE: Targeting Filters",
+  "targetingFilters": "目标过滤",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "TODO_TRANSLATE: Pick Video",
+  "pickVideo": "选择视频",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "游戏已删除",
   "@playtimeGameDeleted": {
-    "description": "Game deleted message"
+    "description": "Playtime game deleted message"
   },
-  "scheduleForLater": "TODO_TRANSLATE: Schedule for Later",
+  "scheduleForLater": "稍后安排",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "TODO_TRANSLATE: Access revoked successfully",
+  "accessRevokedSuccessfully": "访问撤销成功",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "TODO_TRANSLATE: Type",
+  "type": "类型",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "TODO_TRANSLATE: Checking permissions...",
+  "checkingPermissions": "检查权限中",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "复制",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "TODO_TRANSLATE: Yes, Cancel",
+  "yesCancel": "是，取消",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "TODO_TRANSLATE: Email",
+  "email": "邮箱",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "TODO_TRANSLATE: Share on WhatsApp",
+  "shareOnWhatsApp": "[ZH] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "TODO_TRANSLATE: Notification Settings",
+  "notificationSettings": "通知设置",
   "@notificationSettings": {
-    "description": "Notification settings title"
+    "description": "Notification settings label"
   },
-  "myProfile": "TODO_TRANSLATE: My Profile",
+  "myProfile": "我的资料",
   "@myProfile": {
-    "description": "My profile title"
+    "description": "My profile label"
   },
-  "revoke": "TODO_TRANSLATE: Revoke",
+  "revoke": "撤销",
   "@revoke": {
-    "description": "Revoke button"
+    "description": "Revoke button text"
   },
-  "noBroadcastMessages": "TODO_TRANSLATE: No messages yet",
+  "noBroadcastMessages": "暂无广播消息",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "TODO_TRANSLATE: Request Type",
+  "requestType": "请求类型",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "TODO_TRANSLATE: Notifications",
+  "notifications": "通知",
   "@notifications": {
-    "description": "Notifications title"
+    "description": "Notifications label"
   },
-  "details": "TODO_TRANSLATE: Details",
+  "details": "详细信息",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "TODO_TRANSLATE: Cancel Invite",
+  "cancelInvite": "取消邀请",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "新建",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "设置",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "拒绝 Playtime",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "TODO_TRANSLATE: Error loading profile",
+  "errorLoadingProfile": "加载资料出错",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "编辑",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "添加",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "游戏已批准",
   "@playtimeGameApproved": {
-    "description": "Game approved message"
+    "description": "Playtime game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "忘记密码？",
   "@forgotPassword": {
-    "description": "Forgot password link text"
+    "description": "Forgot password link"
   },
-  "familyDashboard": "TODO_TRANSLATE: Family Dashboard",
+  "familyDashboard": "家庭仪表板",
   "@familyDashboard": {
-    "description": "Family dashboard title"
+    "description": "Family dashboard label"
   },
-  "loading": "TODO_TRANSLATE: Loading...",
+  "loading": "加载中",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "快速操作",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "Playtime 标题",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "TODO_TRANSLATE: OTP resent successfully",
+  "otpResentSuccessfully": "OTP 重发成功",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "TODO_TRANSLATE: Error checking permissions",
+  "errorCheckingPermissions": "检查权限出错",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "TODO_TRANSLATE: Client screen coming soon",
+  "clientScreenTBD": "客户端界面待定",
   "@clientScreenTBD": {
-    "description": "Client screen TBD message"
+    "description": "Client screen coming soon"
   },
-  "fcmToken": "TODO_TRANSLATE: FCM Token",
+  "fcmToken": "FCM 令牌",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "TODO_TRANSLATE: Pick Image",
+  "pickImage": "选择图片",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "上一步",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "TODO_TRANSLATE: No profile found",
+  "noProfileFound": "未找到资料",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "TODO_TRANSLATE: No family members yet",
+  "noFamilyMembersYet": "暂无家庭成员",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "TODO_TRANSLATE: Media (Optional)",
+  "mediaOptional": "媒体（可选）",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "TODO_TRANSLATE: Message saved successfully",
+  "messageSavedSuccessfully": "消息保存成功",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "安排于",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "TODO_TRANSLATE: Dashboard",
+  "dashboard": "仪表板",
   "@dashboard": {
-    "description": "Dashboard title"
+    "description": "Dashboard label"
   },
-  "noPermissionForBroadcast": "TODO_TRANSLATE: No permission for broadcast",
+  "noPermissionForBroadcast": "无广播权限",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "Playtime 管理面板标题",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "TODO_TRANSLATE: Invite Details",
+  "inviteDetail": "邀请详情",
   "@inviteDetail": {
-    "description": "Invite detail title"
+    "description": "Invite detail label"
   },
-  "scheduled": "TODO_TRANSLATE: Scheduled",
+  "scheduled": "已安排",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "TODO_TRANSLATE: Failed to resend OTP",
+  "failedToResendOtp": "OTP 重发失败",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "TODO_TRANSLATE: Scheduling",
+  "scheduling": "安排中",
   "@scheduling": {
-    "description": "Scheduling label"
+    "description": "Scheduling status"
   },
-  "errorSavingMessage": "TODO_TRANSLATE: Error saving message",
+  "errorSavingMessage": "保存消息出错",
   "@errorSavingMessage": {
-    "description": "Error saving message message"
+    "description": "Error saving message"
   },
-  "save": "TODO_TRANSLATE: Save",
+  "save": "保存",
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "批准 Playtime",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "创建你的第一个会话",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "游戏已拒绝",
   "@playtimeGameRejected": {
-    "description": "Game rejected message"
+    "description": "Playtime game rejected message"
   },
-  "failedToRevokeAccess": "TODO_TRANSLATE: Failed to revoke access",
+  "failedToRevokeAccess": "撤销访问失败",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "最近游戏",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "TODO_TRANSLATE: Customize Message",
+  "customizeMessage": "自定义消息",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "TODO_TRANSLATE: Failed to cancel invite",
+  "failedToCancelInvite": "取消邀请失败",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "TODO_TRANSLATE: Error sending message",
+  "errorSendingMessage": "发送消息出错",
   "@errorSendingMessage": {
-    "description": "Error sending message message"
+    "description": "Error sending message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "确认密码",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "TODO_TRANSLATE: Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "加载隐私请求出错",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "TODO_TRANSLATE: Connected Children",
+  "connectedChildren": "关联子账户",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "分享",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "输入游戏名称",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "TODO_TRANSLATE: Please login to access family features",
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Please login for family features message"
+  "pleaseLoginToViewProfile": "请登录以查看资料",
+  "@pleaseLoginToViewProfile": {
+    "description": "Please login to view your profile."
   },
-  "myInvites": "TODO_TRANSLATE: My Invites",
+  "myInvites": "我的邀请",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "创建游戏",
   "@createGame": {
     "description": "Create game button"
   },
-  "groupNameOptional": "TODO_TRANSLATE: Group Name (Optional)",
+  "groupNameOptional": "组名（可选）",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "暂无 Playtime 会话",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "TODO_TRANSLATE: Admin screen coming soon",
+  "adminScreenTBD": "管理员界面待定",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "Playtime 仪表板",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "close": "TODO_TRANSLATE: Close",
+  "close": "关闭",
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "TODO_TRANSLATE: Known group detected",
+  "knownGroupDetected": "已知组已检测",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "返回",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "选择游戏",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "TODO_TRANSLATE: Manage Permissions",
+  "managePermissions": "管理权限",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "TODO_TRANSLATE: Poll Options",
+  "pollOptions": "投票选项",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "TODO_TRANSLATE: Clicked",
+  "clicked": "已点击",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "TODO_TRANSLATE: Link",
+  "link": "链接",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "TODO_TRANSLATE: Your meeting is ready! Join now",
+  "meetingReadyMessage": "您的会议已准备就绪！立即加入",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "TODO_TRANSLATE: Pending Invites",
+  "pendingInvites": "待处理的邀请",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "TODO_TRANSLATE: Status:",
+  "statusColon": "状态：",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "zh",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginForFamilyFeatures": "[ZH] Please login to access family features",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  }
 }

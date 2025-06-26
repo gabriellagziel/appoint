@@ -25,6 +25,7 @@ import 'app_localizations_fo.dart';
 import 'app_localizations_fr.dart';
 import 'app_localizations_ga.dart';
 import 'app_localizations_gl.dart';
+import 'app_localizations_he.dart';
 import 'app_localizations_hi.dart';
 import 'app_localizations_hr.dart';
 import 'app_localizations_hu.dart';
@@ -51,6 +52,7 @@ import 'app_localizations_sr.dart';
 import 'app_localizations_sv.dart';
 import 'app_localizations_th.dart';
 import 'app_localizations_tr.dart';
+import 'app_localizations_uk.dart';
 import 'app_localizations_ur.dart';
 import 'app_localizations_vi.dart';
 import 'app_localizations_zh.dart';
@@ -145,6 +147,7 @@ abstract class AppLocalizations {
     Locale('ar'),
     Locale('bg'),
     Locale('bn'),
+    Locale('bn', 'BD'),
     Locale('bs'),
     Locale('ca'),
     Locale('cs'),
@@ -153,6 +156,7 @@ abstract class AppLocalizations {
     Locale('de'),
     Locale('en'),
     Locale('es'),
+    Locale('es', '419'),
     Locale('et'),
     Locale('eu'),
     Locale('fa'),
@@ -161,6 +165,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('ga'),
     Locale('gl'),
+    Locale('he'),
     Locale('hi'),
     Locale('hr'),
     Locale('hu'),
@@ -178,6 +183,7 @@ abstract class AppLocalizations {
     Locale('no'),
     Locale('pl'),
     Locale('pt'),
+    Locale('pt', 'BR'),
     Locale('ro'),
     Locale('ru'),
     Locale('sk'),
@@ -187,6 +193,7 @@ abstract class AppLocalizations {
     Locale('sv'),
     Locale('th'),
     Locale('tr'),
+    Locale('uk'),
     Locale('ur'),
     Locale('vi'),
     Locale('zh')
@@ -286,7 +293,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Opened'**
-  String opened(Object count);
+  String get opened;
 
   /// Create virtual session button
   ///
@@ -688,7 +695,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error loading invites'**
-  String get errorLoadingInvites;
+  String errorLoadingInvites(Object error);
 
   /// Targeting filters label
   ///
@@ -724,7 +731,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Type'**
-  String type(Object type);
+  String get type;
 
   /// Checking permissions message
   ///
@@ -826,7 +833,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error loading profile'**
-  String get errorLoadingProfile;
+  String errorLoadingProfile(Object error);
 
   /// Edit button text
   ///
@@ -1220,6 +1227,7 @@ class _AppLocalizationsDelegate
         'fr',
         'ga',
         'gl',
+        'he',
         'hi',
         'hr',
         'hu',
@@ -1246,6 +1254,7 @@ class _AppLocalizationsDelegate
         'sv',
         'th',
         'tr',
+        'uk',
         'ur',
         'vi',
         'zh'
@@ -1256,6 +1265,34 @@ class _AppLocalizationsDelegate
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
+  // Lookup logic when language+country codes are specified.
+  switch (locale.languageCode) {
+    case 'bn':
+      {
+        switch (locale.countryCode) {
+          case 'BD':
+            return AppLocalizationsBnBd();
+        }
+        break;
+      }
+    case 'es':
+      {
+        switch (locale.countryCode) {
+          case '419':
+            return AppLocalizationsEs419();
+        }
+        break;
+      }
+    case 'pt':
+      {
+        switch (locale.countryCode) {
+          case 'BR':
+            return AppLocalizationsPtBr();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
     case 'am':
@@ -1298,6 +1335,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsGa();
     case 'gl':
       return AppLocalizationsGl();
+    case 'he':
+      return AppLocalizationsHe();
     case 'hi':
       return AppLocalizationsHi();
     case 'hr':
@@ -1350,6 +1389,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsTh();
     case 'tr':
       return AppLocalizationsTr();
+    case 'uk':
+      return AppLocalizationsUk();
     case 'ur':
       return AppLocalizationsUr();
     case 'vi':

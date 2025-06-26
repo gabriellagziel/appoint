@@ -1,664 +1,664 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "Osvježi",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "TRANSLATE_ME",
+  "home": "Početna",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "Još nema sesija",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "U redu",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "[HR] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "Prijavi se",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "[HR] Schedule Message",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "TRANSLATE_ME",
+  "decline": "Odbij",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "TRANSLATE_ME",
+  "adminBroadcast": "[HR] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "TRANSLATE_ME",
+  "login": "Prijava",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "[HR] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "TRANSLATE_ME",
+  "noInvites": "Nema pozivnica",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "Odaberite vrijeme",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "Uspjeh",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "[HR] Undo",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "TRANSLATE_ME",
+  "opened": "[HR] Opened",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "Kreiraj virtualnu sesiju",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "TRANSLATE_ME",
+  "messageSentSuccessfully": "[HR] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "[HR] Redo",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "TRANSLATE_ME",
+  "next": "Sljedeće",
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "Pretraži",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "TRANSLATE_ME",
+  "cancelInviteConfirmation": "Otkaži potvrdu pozivnice",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "TRANSLATE_ME",
+  "created": "[HR] Created",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "TRANSLATE_ME",
+  "revokeAccess": "[HR] Revoke Access",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "TRANSLATE_ME",
+  "saveGroupForRecognition": "Spremi grupu za prepoznavanje",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "Živa sesija zakazana",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "TRANSLATE_ME",
+  "revokeAccessConfirmation": "[HR] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "Preuzmi",
   "@download": {
     "description": "Download button text"
   },
-  "password": "TRANSLATE_ME",
+  "password": "[HR] Password",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "TRANSLATE_ME",
+  "errorLoadingFamilyLinks": "Pogreška pri učitavanju obiteljskih veza",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "TRANSLATE_ME",
+  "cancel": "Otkaži",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "Kreiraj Playtime",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "TRANSLATE_ME",
+  "failedToActionPrivacyRequest": "[HR] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "TRANSLATE_ME",
+  "appTitle": "Naslov aplikacije",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "TRANSLATE_ME",
+  "accept": "[HR] Accept",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "[HR] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "Opis Playtime",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "Obriši",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "Virtualna sesija je započela",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "Kreiraj svoju prvu igru",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "[HR] Participants",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "TRANSLATE_ME",
+  "recipients": "[HR] Recipients",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "[HR] No results found",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "TRANSLATE_ME",
+  "yes": "Da",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "TRANSLATE_ME",
+  "invite": "Pozovi",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "[HR] Live Play",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "[HR] Done",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "TRANSLATE_ME",
+  "defaultShareMessage": "[HR] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "TRANSLATE_ME",
+  "no": "Ne",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "Playtime centar",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "Greška",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "Kreiraj live sesiju",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "TRANSLATE_ME",
+  "enableNotifications": "Omogući obavijesti",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "TRANSLATE_ME",
+  "invited": "Pozvan",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "TRANSLATE_ME",
+  "content": "Sadržaj",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "TRANSLATE_ME",
+  "meetingSharedSuccessfully": "Sastanak je uspješno podijeljen",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "Dobrodošli u Playtime",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "Prikaži sve",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "Virtualni Playtime",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "TRANSLATE_ME",
+  "staffScreenTBD": "[HR] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "Izreži",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "TRANSLATE_ME",
+  "inviteCancelledSuccessfully": "Poziv je uspješno otkazan",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "[HR] Retry",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "TRANSLATE_ME",
+  "composeBroadcastMessage": "[HR] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
-  "sendNow": "TRANSLATE_ME",
+  "sendNow": "Pošalji sada",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "Još nema igara",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "Odaberi",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "O nama",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "Odaberi",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "TRANSLATE_ME",
+  "profile": "[HR] Profile",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "TRANSLATE_ME",
+  "removeChild": "[HR] Remove Child",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "TRANSLATE_ME",
+  "status": "[HR] Status",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "Odjava",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "Zalijepi",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "TRANSLATE_ME",
+  "welcome": "Dobrodošli",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "Kreiraj sesiju",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "TRANSLATE_ME",
+  "familyMembers": "Članovi obitelji",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "Prenesi",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "Nadolazeće sesije",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "TRANSLATE_ME",
+  "enterGroupName": "Unesite naziv grupe",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "Potvrdi",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "Playtime uživo",
   "@playtimeLive": {
     "description": "Live play label"
   },
-  "errorLoadingInvites": "TRANSLATE_ME",
+  "errorLoadingInvites": "Greška pri učitavanju pozivnica",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "TRANSLATE_ME",
+  "targetingFilters": "Filtri cilja",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "TRANSLATE_ME",
+  "pickVideo": "Odaberi video",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "Igra je obrisana",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "TRANSLATE_ME",
+  "scheduleForLater": "Zakaži za kasnije",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "TRANSLATE_ME",
+  "accessRevokedSuccessfully": "[HR] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "TRANSLATE_ME",
+  "type": "Vrsta",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "TRANSLATE_ME",
+  "checkingPermissions": "Provjera dozvola",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "Kopiraj",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "TRANSLATE_ME",
+  "yesCancel": "Da, otkaži",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "TRANSLATE_ME",
+  "email": "Email",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "TRANSLATE_ME",
+  "shareOnWhatsApp": "[HR] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "TRANSLATE_ME",
+  "notificationSettings": "Postavke obavijesti",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
-  "myProfile": "TRANSLATE_ME",
+  "myProfile": "[HR] My Profile",
   "@myProfile": {
     "description": "My profile title"
   },
-  "revoke": "TRANSLATE_ME",
+  "revoke": "[HR] Revoke",
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "TRANSLATE_ME",
+  "noBroadcastMessages": "[HR] No messages yet",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "TRANSLATE_ME",
+  "requestType": "Vrsta zahtjeva",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "TRANSLATE_ME",
+  "notifications": "Obavijesti",
   "@notifications": {
     "description": "Notifications title"
   },
-  "details": "TRANSLATE_ME",
+  "details": "Detalji",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "TRANSLATE_ME",
+  "cancelInvite": "Otkaži poziv",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "Kreiraj novo",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "Postavke",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "Odbaci Playtime",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "TRANSLATE_ME",
+  "errorLoadingProfile": "[HR] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "Uredi",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "Dodaj",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "Igra je odobrena",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "[HR] Forgot Password?",
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
-  "familyDashboard": "TRANSLATE_ME",
+  "familyDashboard": "[HR] Family Dashboard",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "TRANSLATE_ME",
+  "loading": "Učitavanje",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "Brze radnje",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "Naslov Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "TRANSLATE_ME",
+  "otpResentSuccessfully": "[HR] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "TRANSLATE_ME",
+  "errorCheckingPermissions": "Greška pri provjeri dozvola",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "TRANSLATE_ME",
+  "clientScreenTBD": "[HR] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "TRANSLATE_ME",
+  "fcmToken": "[HR] FCM Token",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "TRANSLATE_ME",
+  "pickImage": "Odaberi sliku",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "Prethodno",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "TRANSLATE_ME",
+  "noProfileFound": "[HR] No profile found",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "TRANSLATE_ME",
+  "noFamilyMembersYet": "Još nema članova obitelji",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "TRANSLATE_ME",
+  "mediaOptional": "[HR] Media (Optional)",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "TRANSLATE_ME",
+  "messageSavedSuccessfully": "[HR] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "Zakaženo za",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "TRANSLATE_ME",
+  "dashboard": "[HR] Dashboard",
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "TRANSLATE_ME",
+  "noPermissionForBroadcast": "Nema dozvole za emitiranje",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[HR] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "TRANSLATE_ME",
+  "inviteDetail": "Detalji poziva",
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "TRANSLATE_ME",
+  "scheduled": "Zakaženo",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "TRANSLATE_ME",
+  "failedToResendOtp": "[HR] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "TRANSLATE_ME",
+  "scheduling": "Zakaživanje",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "TRANSLATE_ME",
+  "errorSavingMessage": "[HR] Error saving message",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
-  "save": "TRANSLATE_ME",
+  "save": "Spremi",
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "Odobri Playtime",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "Kreiraj svoju prvu sesiju",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "Igra je odbijena",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "TRANSLATE_ME",
+  "failedToRevokeAccess": "Neuspjelo opozivanje pristupa",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "Nedavne igre",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "TRANSLATE_ME",
+  "customizeMessage": "[HR] Customize Message",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "TRANSLATE_ME",
+  "failedToCancelInvite": "Neuspjelo otkazivanje poziva",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "TRANSLATE_ME",
+  "errorSendingMessage": "[HR] Error sending message",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "[HR] Confirm Password",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "TRANSLATE_ME",
+  "errorLoadingPrivacyRequests": "[HR] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "TRANSLATE_ME",
+  "connectedChildren": "Povezana djeca",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "Podijeli",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "Unesite naziv igre",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "TRANSLATE_ME",
+  "pleaseLoginForFamilyFeatures": "Prijavite se za obiteljske značajke",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "TRANSLATE_ME",
+  "myInvites": "Moje pozivnice",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "Kreiraj igru",
   "@createGame": {
     "description": "Create game button"
   },
-  "groupNameOptional": "TRANSLATE_ME",
+  "groupNameOptional": "[HR] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "Nema Playtime sesija",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "TRANSLATE_ME",
+  "adminScreenTBD": "[HR] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[HR] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "close": "TRANSLATE_ME",
+  "close": "[HR] Close",
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "TRANSLATE_ME",
+  "knownGroupDetected": "[HR] Known group detected",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "[HR] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "Odaberi igru",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "TRANSLATE_ME",
+  "managePermissions": "Upravljanje dozvolama",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "TRANSLATE_ME",
+  "pollOptions": "Opcije ankete",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "TRANSLATE_ME",
+  "clicked": "[HR] Clicked",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "TRANSLATE_ME",
+  "link": "Poveznica",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "TRANSLATE_ME",
+  "meetingReadyMessage": "Sastanak spreman",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "TRANSLATE_ME",
+  "pendingInvites": "Nadolazeće pozivnice",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "TRANSLATE_ME",
+  "statusColon": "[HR] Status:",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "hr",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginToViewProfile": "[HR] Please log in to view your profile."
 }

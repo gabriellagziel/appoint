@@ -9,530 +9,527 @@ class AppLocalizationsFo extends AppLocalizations {
   AppLocalizationsFo([String locale = 'fo']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'Uppgera';
 
   @override
-  String get home => 'Home';
+  String get home => 'Heim';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'Einki fundir enn';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'Í lagi';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'Vel ein hátt';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'Viðskriva teg';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'Set boðskapan upp';
 
   @override
-  String get decline => 'Decline';
+  String get decline => 'Avvís';
 
   @override
-  String get adminBroadcast => 'Admin Broadcast';
+  String get adminBroadcast => 'Stýrisending';
 
   @override
-  String get login => 'Login';
+  String get login => 'Rita teg inn';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'Vel vinir';
 
   @override
-  String get noInvites => 'No invites';
+  String get noInvites => 'Einki boð';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'Vel tíð';
 
   @override
-  String get success => 'Success';
+  String get success => 'Sekkjað';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'Ógilda';
 
   @override
-  String opened(Object count) {
-    return 'Opened';
-  }
+  String get opened => 'Opnað';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'Búgva upp røktarfund';
 
   @override
-  String get messageSentSuccessfully => 'Message sent successfully';
+  String get messageSentSuccessfully => 'Boðskapi sent við eydnu';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'Ger aftur';
 
   @override
-  String get next => 'Next';
+  String get next => 'Næsta';
 
   @override
-  String get search => 'Search';
+  String get search => 'Leita';
 
   @override
-  String get cancelInviteConfirmation =>
-      'Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => 'Strika váttan av boði';
 
   @override
   String created(Object date) {
-    return 'Created';
+    return 'Skapt';
   }
 
   @override
-  String get revokeAccess => 'Revoke Access';
+  String get revokeAccess => 'Strika atgongd';
 
   @override
-  String get saveGroupForRecognition => 'Save Group for Recognition';
+  String get saveGroupForRecognition => 'Goyma bólk til eyðkenningar';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'Livifundur settur upp';
 
   @override
-  String get revokeAccessConfirmation =>
-      'Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => 'Váttan av strikaðari atgongd';
 
   @override
-  String get download => 'Download';
+  String get download => 'Heinta niður';
 
   @override
-  String get password => 'Password';
+  String get password => 'Loyniorð';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Error loading family links';
+    return 'Mistøk við at innlesa familjusambond';
   }
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'Strika';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Búgva Playtime upp';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Failed to action privacy request';
+    return 'Privatlivsbiðing mistókst';
   }
 
   @override
-  String get appTitle => 'APP-OINT';
+  String get appTitle => 'Forritsheiti';
 
   @override
-  String get accept => 'Accept';
+  String get accept => 'Váttað';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'Røktarháttur';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Playtime lýsing';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Strika';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Røktarfundur byrjaður';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'Búg til tín fyrsta spæl';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'Luttakarar';
 
   @override
   String recipients(Object count) {
-    return 'Recipients';
+    return 'Móttakarar';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'Einki funnið';
 
   @override
-  String get yes => 'Yes';
+  String get yes => 'Ja';
 
   @override
-  String get invite => 'Invite';
+  String get invite => 'Boð';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'Liviháttur';
 
   @override
-  String get done => 'Done';
+  String get done => 'Gjørdur';
 
   @override
-  String get defaultShareMessage => 'Let\'s meet via Appoint!';
+  String get defaultShareMessage => 'Sjálvvalda boð';
 
   @override
-  String get no => 'No';
+  String get no => 'Nei';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Playtime miðdepil';
 
   @override
-  String get error => 'Error';
+  String get error => 'Mistøk';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'Búg livifund upp';
 
   @override
-  String get enableNotifications => 'Enable Notifications';
+  String get enableNotifications => 'Virkja boð';
 
   @override
   String invited(Object date) {
-    return 'Invited';
+    return 'Gonvdaður';
   }
 
   @override
   String content(Object content) {
-    return 'Content';
+    return 'Innihald';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Meeting shared successfully';
+  String get meetingSharedSuccessfully => 'Fundur deildur eydnulega';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Vælkomin til Playtime';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'Sí alt';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Røktar Playtime';
 
   @override
-  String get staffScreenTBD => 'Staff screen coming soon';
+  String get staffScreenTBD => 'Starvsfólkasjón atgrein seinni';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'Skera';
 
   @override
-  String get inviteCancelledSuccessfully => 'Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => 'Boð eydnulega strokað';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'Royna aftur';
 
   @override
-  String get composeBroadcastMessage => 'Compose Broadcast Message';
+  String get composeBroadcastMessage => 'Set boðskapi saman';
 
   @override
-  String get sendNow => 'Send Now';
+  String get sendNow => 'Senda nú';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'Einki spøl enn';
 
   @override
-  String get select => 'Select';
+  String get select => 'Vel';
 
   @override
-  String get about => 'About';
+  String get about => 'Um';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'Vel';
 
   @override
-  String get profile => 'Profile';
+  String get profile => 'Profyl';
 
   @override
-  String get removeChild => 'Remove Child';
+  String get removeChild => 'Strika barn';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return 'Støða';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'Rita teg út';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'Líma inn';
 
   @override
-  String get welcome => 'Welcome';
+  String get welcome => 'Vælkomin';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'Búg fund upp';
 
   @override
-  String get familyMembers => 'Family Members';
+  String get familyMembers => 'Familjulimir';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'Farmeta upp';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'Kominir fundir';
 
   @override
-  String get enterGroupName => 'Enter group name';
+  String get enterGroupName => 'Skriva bólkanavn';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Váttað';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Livifundur';
 
   @override
-  String get errorLoadingInvites => 'Error loading invites';
-
-  @override
-  String get targetingFilters => 'Targeting Filters';
-
-  @override
-  String get pickVideo => 'Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'Schedule for Later';
-
-  @override
-  String get accessRevokedSuccessfully => 'Access revoked successfully';
-
-  @override
-  String type(Object type) {
-    return 'Type';
+  String errorLoadingInvites(Object error) {
+    return 'Mistøk við at innlesa boð';
   }
 
   @override
-  String get checkingPermissions => 'Checking permissions...';
+  String get targetingFilters => 'Málseting síl';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'Vel vídjó';
 
   @override
-  String get yesCancel => 'Yes, Cancel';
+  String get playtimeGameDeleted => 'Spæl strikað';
 
   @override
-  String get email => 'Email';
+  String get scheduleForLater => 'Skip til seinni';
 
   @override
-  String get shareOnWhatsApp => 'Share on WhatsApp';
+  String get accessRevokedSuccessfully => 'Atgongd strokað eydnulega';
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get type => 'Slag';
 
   @override
-  String get myProfile => 'My Profile';
+  String get checkingPermissions => 'Kann ræðisrættir';
 
   @override
-  String get revoke => 'Revoke';
+  String get copy => 'Kopiera';
 
   @override
-  String get noBroadcastMessages => 'No messages yet';
+  String get yesCancel => 'Ja, strika';
+
+  @override
+  String get email => 'Teldupostur';
+
+  @override
+  String get shareOnWhatsApp => 'Deil á WhatsApp';
+
+  @override
+  String get notificationSettings => 'Boðuppsetingar';
+
+  @override
+  String get myProfile => 'Mín profyl';
+
+  @override
+  String get revoke => 'Strika';
+
+  @override
+  String get noBroadcastMessages => 'Einki send boð';
 
   @override
   String requestType(Object type) {
-    return 'Request Type';
+    return 'Biðja slag';
   }
 
   @override
-  String get notifications => 'Notifications';
+  String get notifications => 'Boð';
 
   @override
-  String get details => 'Details';
+  String get details => 'Sert';
 
   @override
-  String get cancelInvite => 'Cancel Invite';
+  String get cancelInvite => 'Strika boð';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'Búg nýtt upp';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Uppsetingar';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Avvís Playtime';
 
   @override
-  String get errorLoadingProfile => 'Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'Mistøk við at innlesa profyl';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Broyt';
 
   @override
-  String get add => 'Add';
+  String get add => 'Legg aftrat';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'Spæl góðkent';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'Gloymt loyniorðið?';
 
   @override
-  String get familyDashboard => 'Family Dashboard';
+  String get familyDashboard => 'Familjustýrismynd';
 
   @override
-  String get loading => 'Loading...';
+  String get loading => 'Loysa';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'Skjótar gerðir';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'Playtime heiti';
 
   @override
-  String get otpResentSuccessfully => 'OTP resent successfully';
+  String get otpResentSuccessfully => 'OTP aftur sent';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Error checking permissions';
+    return 'Mistøk við at kanna loyvi';
   }
 
   @override
-  String get clientScreenTBD => 'Client screen coming soon';
+  String get clientScreenTBD => 'Klientpant播放界面undefined';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM Token';
+    return 'FCM token';
   }
 
   @override
-  String get pickImage => 'Pick Image';
+  String get pickImage => 'Vel mynd';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'Áðra';
 
   @override
-  String get noProfileFound => 'No profile found';
+  String get noProfileFound => 'Einki profyl funnið';
 
   @override
-  String get noFamilyMembersYet => 'No family members yet';
+  String get noFamilyMembersYet => 'Einki familjulimir enn';
 
   @override
-  String get mediaOptional => 'Media (Optional)';
+  String get mediaOptional => 'Midlar (valfrítt)';
 
   @override
-  String get messageSavedSuccessfully => 'Message saved successfully';
+  String get messageSavedSuccessfully => 'Boð fyriskipa eydnulega';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'Planlagt fyri';
 
   @override
-  String get dashboard => 'Dashboard';
+  String get dashboard => 'Stýripanel';
 
   @override
-  String get noPermissionForBroadcast => 'No permission for broadcast';
+  String get noPermissionForBroadcast => 'Einki loyvi til stýring';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Playtime stýrisloyvi heiti';
 
   @override
-  String get inviteDetail => 'Invite Details';
+  String get inviteDetail => 'Boð smálýsing';
 
   @override
   String scheduled(Object date) {
-    return 'Scheduled';
+    return 'Planlagt';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Failed to resend OTP';
+    return 'Mistókst at senda OTP aftur';
   }
 
   @override
-  String get scheduling => 'Scheduling';
+  String get scheduling => 'Plánlegging';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Error saving message';
+    return 'Mistøk við at goyma boð';
   }
 
   @override
-  String get save => 'Save';
+  String get save => 'Goyma';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Váttað Playtime';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'List teg fyrstu røktarsamtalu';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'Spæl avvíst';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Failed to revoke access';
+    return 'Mistókst at strika atgongd';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'Nýggjastu spøl';
 
   @override
-  String get customizeMessage => 'Customize Message';
+  String get customizeMessage => 'Sérsnið boð';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Failed to cancel invite';
+    return 'Mistókst a strika boð';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Error sending message';
+    return 'Mistøk við at senda boð';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'Staðfesta loyniorð';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Error loading privacy requests';
+    return 'Mistøk við at innlesa privatlivsbiðingar';
   }
 
   @override
-  String get connectedChildren => 'Connected Children';
+  String get connectedChildren => 'Samband børn';
 
   @override
-  String get share => 'Share';
+  String get share => 'Deil';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'Skriva spælini navn';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+      'Vinarliga logga teg inn fyri familjufall';
 
   @override
-  String get myInvites => 'My Invites';
+  String get myInvites => 'Mín boð';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'Búg spæl upp';
 
   @override
-  String get groupNameOptional => 'Group Name (Optional)';
+  String get groupNameOptional => 'Bólkanavn (valfrítt)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Einki Playtime fundir';
 
   @override
-  String get adminScreenTBD => 'Admin screen coming soon';
+  String get adminScreenTBD => 'Adminpant播放界面ættað seinni';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => 'Playtime foreldrapanel heiti';
 
   @override
-  String get close => 'Close';
+  String get close => 'Lat aftur';
 
   @override
-  String get knownGroupDetected => 'Known group detected';
+  String get knownGroupDetected => 'Kendi bólkur funnin';
 
   @override
-  String get back => 'Back';
+  String get back => 'Tilbaka';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'Vel spæl';
 
   @override
-  String get managePermissions => 'Manage Permissions';
+  String get managePermissions => 'Stýra loyvum';
 
   @override
-  String get pollOptions => 'Poll Options';
+  String get pollOptions => 'Val av kanning';
 
   @override
   String clicked(Object count) {
-    return 'Clicked';
+    return 'Klikkað';
   }
 
   @override
@@ -541,16 +538,16 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get meetingReadyMessage => 'Your meeting is ready! Join now';
+  String get meetingReadyMessage => 'Fundur klárur';
 
   @override
-  String get pendingInvites => 'Pending Invites';
+  String get pendingInvites => 'Boð bíða';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return 'Støða:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => 'Logga teg inn fyri profyl';
 }

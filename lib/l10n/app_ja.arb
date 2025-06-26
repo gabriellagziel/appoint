@@ -1,664 +1,664 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "更新",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "TODO_TRANSLATE: Home",
+  "home": "ホーム",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "まだセッションがありません",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "OK",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "プレイモードを選択してください:",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "サインアップ",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "メッセージをスケジュール",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "TODO_TRANSLATE: Decline",
+  "decline": "拒否",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "TODO_TRANSLATE: Admin Broadcast",
+  "adminBroadcast": "管理者ブロードキャスト",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "TODO_TRANSLATE: Login",
+  "login": "ログイン",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "友達を選択",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "TODO_TRANSLATE: No invites",
+  "noInvites": "招待なし",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "時間を選択",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "成功",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "元に戻す",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "TODO_TRANSLATE: Opened",
+  "opened": "開きました",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "バーチャルセッションを作成",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "TODO_TRANSLATE: Message sent successfully",
+  "messageSentSuccessfully": "メッセージが正常に送信されました",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "やり直す",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "TODO_TRANSLATE: Next",
+  "next": "次へ",
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "検索",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "TODO_TRANSLATE: Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "招待の確認をキャンセル",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "TODO_TRANSLATE: Created",
+  "created": "作成しました",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "TODO_TRANSLATE: Revoke Access",
+  "revokeAccess": "アクセスを取り消す",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "TODO_TRANSLATE: Save Group for Recognition",
+  "saveGroupForRecognition": "グループを認識用に保存",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "ライブセッションがスケジュールされました",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "TODO_TRANSLATE: Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "アクセス取り消しの確認",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "ダウンロード",
   "@download": {
     "description": "Download button text"
   },
-  "password": "TODO_TRANSLATE: Password",
+  "password": "パスワード",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "TODO_TRANSLATE: Error loading family links",
+  "errorLoadingFamilyLinks": "家族リンクの読み込みエラー",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "TODO_TRANSLATE: Cancel",
+  "cancel": "キャンセル",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "Playtimeを作成",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "TODO_TRANSLATE: Failed to action privacy request",
+  "failedToActionPrivacyRequest": "プライバシーリクエストの処理に失敗しました",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "TODO_TRANSLATE: APP-OINT",
+  "appTitle": "アプリのタイトル",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "TODO_TRANSLATE: Accept",
+  "accept": "承認",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "バーチャルモード",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "Playtimeの説明",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "削除",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "バーチャルセッションが開始されました",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "最初のゲームを作成",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "参加者",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "TODO_TRANSLATE: Recipients",
+  "recipients": "受信者",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "結果なし",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "TODO_TRANSLATE: Yes",
+  "yes": "はい",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "TODO_TRANSLATE: Invite",
+  "invite": "招待",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "ライブモード",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "完了",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "TODO_TRANSLATE: Let's meet via Appoint!",
+  "defaultShareMessage": "デフォルトの共有メッセージ",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "TODO_TRANSLATE: No",
+  "no": "いいえ",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "Playtimeハブ",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "エラー",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "ライブセッションを作成",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "TODO_TRANSLATE: Enable Notifications",
+  "enableNotifications": "通知を有効にする",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "TODO_TRANSLATE: Invited",
+  "invited": "招待済み",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "TODO_TRANSLATE: Content",
+  "content": "コンテンツ",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "TODO_TRANSLATE: Meeting shared successfully",
+  "meetingSharedSuccessfully": "ミーティングが正常に共有されました",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "Playtimeへようこそ",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "すべて表示",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "バーチャルPlaytime",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "TODO_TRANSLATE: Staff screen coming soon",
+  "staffScreenTBD": "スタッフ画面は後日設定",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "カット",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "TODO_TRANSLATE: Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "招待が正常にキャンセルされました",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "再試行",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "TODO_TRANSLATE: Compose Broadcast Message",
+  "composeBroadcastMessage": "放送メッセージを作成",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
-  "sendNow": "TODO_TRANSLATE: Send Now",
+  "sendNow": "今すぐ送信",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "まだゲームはありません",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "選択",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "約",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "選択",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "TODO_TRANSLATE: Profile",
+  "profile": "プロフィール",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "TODO_TRANSLATE: Remove Child",
+  "removeChild": "子供を削除",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "TODO_TRANSLATE: Status",
+  "status": "ステータス",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "ログアウト",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "貼り付け",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "TODO_TRANSLATE: Welcome",
+  "welcome": "ようこそ",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "セッションを作成",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "TODO_TRANSLATE: Family Members",
+  "familyMembers": "家族メンバー",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "アップロード",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "今後のセッション",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "TODO_TRANSLATE: Enter group name",
+  "enterGroupName": "グループ名を入力",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "確認",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "ライブPlaytime",
   "@playtimeLive": {
     "description": "Live play label"
   },
-  "errorLoadingInvites": "TODO_TRANSLATE: Error loading invites",
+  "errorLoadingInvites": "招待の読み込みエラー",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "TODO_TRANSLATE: Targeting Filters",
+  "targetingFilters": "ターゲティングフィルター",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "TODO_TRANSLATE: Pick Video",
+  "pickVideo": "ビデオを選択",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "ゲームが削除されました",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "TODO_TRANSLATE: Schedule for Later",
+  "scheduleForLater": "後でスケジュール",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "TODO_TRANSLATE: Access revoked successfully",
+  "accessRevokedSuccessfully": "アクセスが正常に取り消されました",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "TODO_TRANSLATE: Type",
+  "type": "タイプ",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "TODO_TRANSLATE: Checking permissions...",
+  "checkingPermissions": "権限を確認中",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "コピー",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "TODO_TRANSLATE: Yes, Cancel",
+  "yesCancel": "はい、キャンセル",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "TODO_TRANSLATE: Email",
+  "email": "メール",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "TODO_TRANSLATE: Share on WhatsApp",
+  "shareOnWhatsApp": "[JA] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "TODO_TRANSLATE: Notification Settings",
+  "notificationSettings": "通知設定",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
-  "myProfile": "TODO_TRANSLATE: My Profile",
+  "myProfile": "マイプロフィール",
   "@myProfile": {
     "description": "My profile title"
   },
-  "revoke": "TODO_TRANSLATE: Revoke",
+  "revoke": "取り消す",
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "TODO_TRANSLATE: No messages yet",
+  "noBroadcastMessages": "放送メッセージなし",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "TODO_TRANSLATE: Request Type",
+  "requestType": "リクエストタイプ",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "TODO_TRANSLATE: Notifications",
+  "notifications": "通知",
   "@notifications": {
     "description": "Notifications title"
   },
-  "details": "TODO_TRANSLATE: Details",
+  "details": "詳細",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "TODO_TRANSLATE: Cancel Invite",
+  "cancelInvite": "招待をキャンセル",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "新規作成",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "設定",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "Playtimeを拒否",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "TODO_TRANSLATE: Error loading profile",
+  "errorLoadingProfile": "プロフィール読み込みエラー",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "編集",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "追加",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "ゲームが承認されました",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "パスワードをお忘れですか？",
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
-  "familyDashboard": "TODO_TRANSLATE: Family Dashboard",
+  "familyDashboard": "ファミリーダッシュボード",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "TODO_TRANSLATE: Loading...",
+  "loading": "読み込み中",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "クイックアクション",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "Playtimeタイトル",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "TODO_TRANSLATE: OTP resent successfully",
+  "otpResentSuccessfully": "OTPが正常に再送信されました",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "TODO_TRANSLATE: Error checking permissions",
+  "errorCheckingPermissions": "権限の確認エラー",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "TODO_TRANSLATE: Client screen coming soon",
+  "clientScreenTBD": "クライアント画面は後日設定",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "TODO_TRANSLATE: FCM Token",
+  "fcmToken": "FCMトークン",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "TODO_TRANSLATE: Pick Image",
+  "pickImage": "画像を選択",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "前へ",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "TODO_TRANSLATE: No profile found",
+  "noProfileFound": "プロフィールが見つかりません",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "TODO_TRANSLATE: No family members yet",
+  "noFamilyMembersYet": "まだ家族メンバーがいません",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "TODO_TRANSLATE: Media (Optional)",
+  "mediaOptional": "メディア（オプション）",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "TODO_TRANSLATE: Message saved successfully",
+  "messageSavedSuccessfully": "メッセージが正常に保存されました",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "次の日時にスケジュール済み",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "TODO_TRANSLATE: Dashboard",
+  "dashboard": "ダッシュボード",
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "TODO_TRANSLATE: No permission for broadcast",
+  "noPermissionForBroadcast": "放送権限がありません",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "Playtime管理パネルタイトル",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "TODO_TRANSLATE: Invite Details",
+  "inviteDetail": "招待の詳細",
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "TODO_TRANSLATE: Scheduled",
+  "scheduled": "スケジュール済み",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "TODO_TRANSLATE: Failed to resend OTP",
+  "failedToResendOtp": "OTPの再送信に失敗しました",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "TODO_TRANSLATE: Scheduling",
+  "scheduling": "スケジュール中",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "TODO_TRANSLATE: Error saving message",
+  "errorSavingMessage": "メッセージ保存エラー",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
-  "save": "TODO_TRANSLATE: Save",
+  "save": "保存",
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "Playtimeを承認",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "最初のセッションを作成",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "ゲームが拒否されました",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "TODO_TRANSLATE: Failed to revoke access",
+  "failedToRevokeAccess": "[JA] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "最近のゲーム",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "TODO_TRANSLATE: Customize Message",
+  "customizeMessage": "メッセージをカスタマイズ",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "TODO_TRANSLATE: Failed to cancel invite",
+  "failedToCancelInvite": "招待キャンセルに失敗しました",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "TODO_TRANSLATE: Error sending message",
+  "errorSendingMessage": "メッセージ送信エラー",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "パスワードを確認",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "TODO_TRANSLATE: Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "プライバシーリクエスト読み込みエラー",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "TODO_TRANSLATE: Connected Children",
+  "connectedChildren": "接続された子供",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "共有",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "ゲーム名を入力",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "TODO_TRANSLATE: Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[JA] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "TODO_TRANSLATE: My Invites",
+  "myInvites": "[JA] My Invites",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "[JA] Create Game",
   "@createGame": {
     "description": "Create game button"
   },
-  "groupNameOptional": "TODO_TRANSLATE: Group Name (Optional)",
+  "groupNameOptional": "[JA] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "[JA] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "TODO_TRANSLATE: Admin screen coming soon",
+  "adminScreenTBD": "[JA] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[JA] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "close": "TODO_TRANSLATE: Close",
+  "close": "[JA] Close",
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "TODO_TRANSLATE: Known group detected",
+  "knownGroupDetected": "[JA] Known group detected",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "[JA] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "[JA] Choose a game",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "TODO_TRANSLATE: Manage Permissions",
+  "managePermissions": "[JA] Manage Permissions",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "TODO_TRANSLATE: Poll Options",
+  "pollOptions": "[JA] Poll Options",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "TODO_TRANSLATE: Clicked",
+  "clicked": "[JA] Clicked",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "TODO_TRANSLATE: Link",
+  "link": "[JA] Link",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "TODO_TRANSLATE: Your meeting is ready! Join now",
+  "meetingReadyMessage": "[JA] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "TODO_TRANSLATE: Pending Invites",
+  "pendingInvites": "[JA] Pending Invites",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "TODO_TRANSLATE: Status:",
+  "statusColon": "[JA] Status:",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "ja",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginToViewProfile": "プロフィールを表示するにはログインしてください"
 }

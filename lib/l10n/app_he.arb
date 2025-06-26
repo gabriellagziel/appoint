@@ -1,664 +1,667 @@
 {
-  "refresh": "Làm mới",
+  "refresh": "רענן",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "Trang chủ",
+  "home": "בית",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "Chưa có phiên",
+  "noSessionsYet": "טרם התקיימו מפגשים",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "OK",
+  "ok": "אישור",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "Chọn chế độ",
+  "playtimeLandingChooseMode": "בחר מצב",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "Đăng ký",
+  "signUp": "הרשמה",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "[VI] Schedule Message",
+  "scheduleMessage": "תזמן הודעה",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "Từ chối",
+  "decline": "דחה",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "Phát sóng quản trị",
+  "adminBroadcast": "שידור מנהל",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "Đăng nhập",
+  "login": "התחברות",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "Chọn bạn bè",
+  "playtimeChooseFriends": "בחר חברים",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "Chưa có lời mời",
+  "noInvites": "אין הזמנות",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "Chọn thời gian",
+  "playtimeChooseTime": "בחר זמן",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "Thành công",
+  "success": "הצלחה",
   "@success": {
     "description": "Success message"
   },
-  "undo": "Hoàn tác",
+  "undo": "בטל",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "Đã mở",
+  "opened": "נפתח",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "Tạo phiên ảo",
+  "createVirtualSession": "צור מפגש וירטואלי",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "[VI] Message sent successfully",
+  "messageSentSuccessfully": "ההודעה נשלחה בהצלחה",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "Làm lại",
+  "redo": "בצע שוב",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "[VI] Next",
+  "next": "הבא",
   "@next": {
     "description": "Next button text"
   },
-  "search": "Tìm kiếm",
+  "search": "חיפוש",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "Hủy xác nhận lời mời",
+  "cancelInviteConfirmation": "בטל אישור הזמנה",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "Đã tạo",
+  "created": "נוצר",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "Thu hồi quyền truy cập",
+  "revokeAccess": "ביטול גישה",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "Lưu nhóm để nhận dạng",
+  "saveGroupForRecognition": "שמור קבוצה לזיהוי",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "Phiên trực tiếp đã được lên lịch",
+  "playtimeLiveScheduled": "מפגש חי מתוזמן",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "Xác nhận thu hồi quyền truy cập",
+  "revokeAccessConfirmation": "אישור ביטול גישה",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "Tải xuống",
+  "download": "הורדה",
   "@download": {
     "description": "Download button text"
   },
-  "password": "Mật khẩu",
+  "password": "סיסמה",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "Lỗi tải liên kết gia đình",
+  "errorLoadingFamilyLinks": "שגיאה בטעינת קישורי משפחה",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "Hủy",
+  "cancel": "בטל",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "Tạo Playtime",
+  "playtimeCreate": "צור Playtime",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "Không thể xử lý yêu cầu riêng tư",
+  "failedToActionPrivacyRequest": "נכשל בביצוע בקשת פרטיות",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "Tiêu đề ứng dụng",
+  "appTitle": "כותרת האפליקציה",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "Chấp nhận",
+  "accept": "קבל",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "Chế độ ảo",
+  "playtimeModeVirtual": "מצב וירטואלי",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "Mô tả Playtime",
+  "playtimeDescription": "תיאור Playtime",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "Xóa",
+  "delete": "מחק",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "Phiên ảo đã bắt đầu",
+  "playtimeVirtualStarted": "מפגש וירטואלי התחיל",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "Tạo trò chơi đầu tiên của bạn",
+  "createYourFirstGame": "צור את המשחק הראשון שלך",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "Người tham gia",
+  "participants": "משתתפים",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "Người nhận",
+  "recipients": "נמענים",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "Không có kết quả",
+  "noResults": "אין תוצאות",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "Có",
+  "yes": "כן",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "Mời",
+  "invite": "הזמן",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "Chế độ trực tiếp",
+  "playtimeModeLive": "מצב חי",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "[VI] Done",
+  "done": "בוצע",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "[VI] Let's meet via Appoint!",
+  "defaultShareMessage": "הודעת שיתוף ברירת מחדל",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "Không",
+  "no": "לא",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "Trung tâm Playtime",
+  "playtimeHub": "מרכז Playtime",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "Lỗi",
+  "error": "שגיאה",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "Tạo phiên trực tiếp",
+  "createLiveSession": "צור מפגש חי",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "Bật thông báo",
+  "enableNotifications": "הפעל התראות",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "Đã mời",
+  "invited": "הוזמן",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "Nội dung",
+  "content": "תוכן",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "Chia sẻ cuộc họp thành công",
+  "meetingSharedSuccessfully": "מפגש שותף בהצלחה",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "Chào mừng đến với Playtime",
+  "welcomeToPlaytime": "ברוכים הבאים ל-Playtime",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "Xem tất cả",
+  "viewAll": "הצג הכל",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "Playtime ảo",
+  "playtimeVirtual": "Playtime וירטואלי",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "Màn hình nhân viên sẽ được xác định",
+  "staffScreenTBD": "מסך צוות ייקבע מאוחר יותר",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "Cắt",
+  "cut": "גזור",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "Hủy lời mời thành công",
+  "inviteCancelledSuccessfully": "הזמנה בוטלה בהצלחה",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "Thử lại",
+  "retry": "נסה שוב",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "[VI] Compose Broadcast Message",
+  "composeBroadcastMessage": "כתוב הודעת שידור",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
-  "sendNow": "Gửi ngay",
+  "sendNow": "שלח כעת",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "Chưa có trò chơi",
+  "noGamesYet": "טרם קיימו משחקים",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "Chọn",
+  "select": "בחר",
   "@select": {
     "description": "Select button text"
   },
-  "about": "Về",
+  "about": "אודות",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Chọn",
+  "choose": "בחר",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "Hồ sơ",
+  "profile": "פרופיל",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "Xóa trẻ em",
+  "removeChild": "הסר ילד",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "Trạng thái",
+  "status": "סטטוס",
   "@status": {
     "description": "Status label"
   },
-  "logout": "Đăng xuất",
+  "logout": "התנתק",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "Dán",
+  "paste": "הדבק",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "Chào mừng",
+  "welcome": "ברוך הבא",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "Tạo phiên",
+  "playtimeCreateSession": "צור מפגש",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "Thành viên gia đình",
+  "familyMembers": "חברי המשפחה",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "Tải lên",
+  "upload": "העלה",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "Phiên sắp tới",
+  "upcomingSessions": "מפגשים קרובים",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "Nhập tên nhóm",
+  "enterGroupName": "הכנס שם קבוצה",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "Xác nhận",
+  "confirm": "אשר",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "Playtime trực tiếp",
+  "playtimeLive": "Playtime חי",
   "@playtimeLive": {
     "description": "Live play label"
   },
-  "errorLoadingInvites": "Lỗi tải lời mời",
+  "errorLoadingInvites": "שגיאה בטעינת הזמנות",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "Bộ lọc mục tiêu",
+  "targetingFilters": "מסנני מיקוד",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "Chọn video",
+  "pickVideo": "בחר וידאו",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "Trò chơi đã bị xóa",
+  "playtimeGameDeleted": "המשחק נמחק",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "Lên lịch sau",
+  "scheduleForLater": "תזמן למועד מאוחר יותר",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "Thu hồi quyền truy cập thành công",
+  "accessRevokedSuccessfully": "הגישה בוטלה בהצלחה",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "Loại",
+  "type": "סוג",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "Kiểm tra quyền",
+  "checkingPermissions": "בודק הרשאות",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "Sao chép",
+  "copy": "העתק",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "Có, hủy",
+  "yesCancel": "כן, בטל",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "Email",
+  "email": "דוא״ל",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "[VI] Share on WhatsApp",
+  "shareOnWhatsApp": "[HE] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "Cài đặt thông báo",
+  "notificationSettings": "הגדרות התראות",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
-  "myProfile": "Hồ sơ của tôi",
+  "myProfile": "הפרופיל שלי",
   "@myProfile": {
     "description": "My profile title"
   },
-  "revoke": "Thu hồi",
+  "revoke": "בטל",
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "[VI] No messages yet",
+  "noBroadcastMessages": "אין הודעות שידור",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "Loại yêu cầu",
+  "requestType": "סוג בקשה",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "Thông báo",
+  "notifications": "התראות",
   "@notifications": {
     "description": "Notifications title"
   },
-  "details": "Chi tiết",
+  "details": "פרטים",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "Hủy lời mời",
+  "cancelInvite": "בטל הזמנה",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "Tạo mới",
+  "createNew": "צור חדש",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "Cài đặt",
+  "settings": "הגדרות",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "Từ chối Playtime",
+  "playtimeReject": "סרב Playtime",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "Lỗi tải hồ sơ",
+  "errorLoadingProfile": "שגיאה בטעינת הפרופיל",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "Chỉnh sửa",
+  "edit": "ערוך",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "Thêm",
+  "add": "הוסף",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "Trò chơi đã được phê duyệt",
+  "playtimeGameApproved": "המשחק אושר",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "Quên mật khẩu?",
+  "forgotPassword": "שכחת סיסמה?",
   "@forgotPassword": {
-    "description": "Forgot password link text"
+    "description": "Forgot password link"
   },
-  "familyDashboard": "Bảng điều khiển gia đình",
+  "familyDashboard": "לוח מנהל המשפחה",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "Đang tải",
+  "loading": "טוען",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "Hành động nhanh",
+  "quickActions": "פעולות מהירות",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "Tiêu đề Playtime",
+  "playtimeTitle": "כותרת Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "Gửi lại OTP thành công",
+  "otpResentSuccessfully": "OTP נשלח מחדש בהצלחה",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "Lỗi kiểm tra quyền",
+  "errorCheckingPermissions": "שגיאה בבדיקת הרשאות",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "Màn hình khách hàng sẽ xác định",
+  "clientScreenTBD": "מסך לקוח ייקבע מאוחר יותר",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "Mã thông báo FCM",
+  "fcmToken": "אסימון FCM",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "Chọn hình ảnh",
+  "pickImage": "בחר תמונה",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "Trước",
+  "previous": "הקודם",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "Không tìm thấy hồ sơ",
+  "noProfileFound": "לא נמצא פרופיל",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "Chưa có thành viên gia đình",
+  "noFamilyMembersYet": "אין עדיין חברי משפחה",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "Phương tiện (tùy chọn)",
+  "mediaOptional": "מדיה (אופציונלי)",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "[VI] Message saved successfully",
+  "messageSavedSuccessfully": "ההודעה נשמרה בהצלחה",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "Đã lên lịch cho",
+  "scheduledFor": "מתוזמן עבור",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "Bảng điều khiển",
+  "dashboard": "לוח מחוונים",
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "Không có quyền phát sóng",
+  "noPermissionForBroadcast": "אין הרשאה לשידור",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "Tiêu đề bảng quản trị Playtime",
+  "playtimeAdminPanelTitle": "כותרת לוח ניהול Playtime",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "Chi tiết lời mời",
+  "inviteDetail": "פרטי הזמנה",
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "Đã lên lịch",
+  "scheduled": "מתוזמן",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "Không thể gửi lại OTP",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
-  },
-  "scheduling": "Đang lên lịch",
-  "@scheduling": {
-    "description": "Scheduling label"
-  },
-  "errorSavingMessage": "[VI] Error saving message",
-  "@errorSavingMessage": {
-    "description": "Error saving message message"
-  },
-  "save": "Lưu",
-  "@save": {
-    "description": "Save button text"
-  },
-  "playtimeApprove": "Phê duyệt Playtime",
-  "@playtimeApprove": {
-    "description": "Playtime approve button"
-  },
-  "createYourFirstSession": "Tạo phiên đầu tiên của bạn",
-  "@createYourFirstSession": {
-    "description": "Create your first session message"
-  },
-  "playtimeGameRejected": "Trò chơi bị từ chối",
-  "@playtimeGameRejected": {
-    "description": "Game rejected message"
-  },
-  "failedToRevokeAccess": "[VI] Failed to revoke access",
-  "@failedToRevokeAccess": {
-    "description": "Failed to revoke access message"
-  },
-  "recentGames": "Trò chơi gần đây",
-  "@recentGames": {
-    "description": "Recent games label"
-  },
-  "customizeMessage": "[VI] Customize Message",
-  "@customizeMessage": {
-    "description": "Customize message button"
-  },
-  "failedToCancelInvite": "Không thể huỷ lời mời",
+  "failedToCancelInvite": "נכשל בביטול הזמנה",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "[VI] Error sending message",
+  "failedToResendOtp": "נכשל בשליחת OTP מחדש",
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
+  "scheduling": "מתוזמן",
+  "@scheduling": {
+    "description": "Scheduling label"
+  },
+  "errorSavingMessage": "שגיאה בשמירת ההודעה",
+  "@errorSavingMessage": {
+    "description": "Error saving message message"
+  },
+  "save": "שמור",
+  "@save": {
+    "description": "Save button text"
+  },
+  "playtimeApprove": "אשר Playtime",
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "createYourFirstSession": "צור את המפגש הראשון שלך",
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "playtimeGameRejected": "המשחק נדחה",
+  "@playtimeGameRejected": {
+    "description": "Game rejected message"
+  },
+  "recentGames": "משחקים אחרונים",
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "customizeMessage": "התאם אישית הודעה",
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "errorSendingMessage": "שגיאה בשליחת הודעה",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "Xác nhận mật khẩu",
+  "confirmPassword": "אשר סיסמה",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "Lỗi tải yêu cầu riêng tư",
+  "errorLoadingPrivacyRequests": "שגיאה בטעינת בקשות פרטיות",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "Trẻ kết nối",
+  "connectedChildren": "ילדים מחוברים",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "Chia sẻ",
+  "share": "שתף",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "Nhập tên trò chơi",
+  "playtimeEnterGameName": "הכנס שם משחק",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "[VI] Please login to access family features",
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Please login for family features message"
+  "pleaseLoginToViewProfile": "אנא התחבר כדי לצפות בפרופיל",
+  "@pleaseLoginToViewProfile": {
+    "description": "Please login to view profile message"
   },
-  "myInvites": "[VI] My Invites",
-  "@myInvites": {
-    "description": "My invites title"
-  },
-  "createGame": "[VI] Create Game",
-  "@createGame": {
-    "description": "Create game button"
-  },
-  "groupNameOptional": "[VI] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Group name optional label"
-  },
-  "playtimeNoSessions": "[VI] No playtime sessions found.",
-  "@playtimeNoSessions": {
-    "description": "No playtime sessions message"
-  },
-  "adminScreenTBD": "[VI] Admin screen coming soon",
+  "@@locale": "he",
+  "adminScreenTBD": "[HE] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "[VI] Playtime Dashboard",
-  "@playtimeParentDashboardTitle": {
-    "description": "Playtime parent dashboard title"
-  },
-  "close": "[VI] Close",
-  "@close": {
-    "description": "Close button text"
-  },
-  "knownGroupDetected": "[VI] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Known group detected message"
-  },
-  "back": "[VI] Back",
+  "back": "[HE] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "[VI] Choose a game",
-  "@playtimeChooseGame": {
-    "description": "Choose game label"
-  },
-  "managePermissions": "[VI] Manage Permissions",
-  "@managePermissions": {
-    "description": "Manage permissions button"
-  },
-  "pollOptions": "[VI] Poll Options",
-  "@pollOptions": {
-    "description": "Poll options label"
-  },
-  "clicked": "[VI] Clicked",
+  "clicked": "[HE] Clicked",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "[VI] Link",
+  "close": "[HE] Close",
+  "@close": {
+    "description": "Close button text"
+  },
+  "createGame": "[HE] Create Game",
+  "@createGame": {
+    "description": "Create game button"
+  },
+  "failedToRevokeAccess": "[HE] Failed to revoke access",
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message"
+  },
+  "groupNameOptional": "[HE] Group Name (Optional)",
+  "@groupNameOptional": {
+    "description": "Group name optional label"
+  },
+  "knownGroupDetected": "[HE] Known group detected",
+  "@knownGroupDetected": {
+    "description": "Known group detected message"
+  },
+  "link": "[HE] Link",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "[VI] Your meeting is ready! Join now",
+  "managePermissions": "[HE] Manage Permissions",
+  "@managePermissions": {
+    "description": "Manage permissions button"
+  },
+  "meetingReadyMessage": "[HE] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "[VI] Pending Invites",
+  "myInvites": "[HE] My Invites",
+  "@myInvites": {
+    "description": "My invites title"
+  },
+  "pendingInvites": "[HE] Pending Invites",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "[VI] Status:",
+  "playtimeChooseGame": "[HE] Choose a game",
+  "@playtimeChooseGame": {
+    "description": "Choose game label"
+  },
+  "playtimeNoSessions": "[HE] No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "No playtime sessions message"
+  },
+  "playtimeParentDashboardTitle": "[HE] Playtime Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Playtime parent dashboard title"
+  },
+  "pleaseLoginForFamilyFeatures": "[HE] Please login to access family features",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "pollOptions": "[HE] Poll Options",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "statusColon": "[HE] Status:",
   "@statusColon": {
     "description": "Status colon label"
-  },
-  "@@locale": "vi",
-  "pleaseLoginToViewProfile": "[VI] Please log in to view your profile."
+  }
 }

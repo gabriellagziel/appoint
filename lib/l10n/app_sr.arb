@@ -1,664 +1,664 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "[SR] Refresh",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "TODO_TRANSLATE: Home",
+  "home": "[SR] Home",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "[SR] No sessions yet",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "[SR] OK",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "[SR] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "[SR] Sign Up",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "[SR] Schedule Message",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "TODO_TRANSLATE: Decline",
+  "decline": "[SR] Decline",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "TODO_TRANSLATE: Admin Broadcast",
+  "adminBroadcast": "[SR] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "TODO_TRANSLATE: Login",
+  "login": "[SR] Login",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "[SR] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "TODO_TRANSLATE: No invites",
+  "noInvites": "[SR] No invites",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "[SR] Choose a time",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "[SR] Success",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "[SR] Undo",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "TODO_TRANSLATE: Opened",
+  "opened": "[SR] Opened",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "[SR] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "TODO_TRANSLATE: Message sent successfully",
+  "messageSentSuccessfully": "[SR] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "[SR] Redo",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "TODO_TRANSLATE: Next",
+  "next": "[SR] Next",
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "[SR] Search",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "TODO_TRANSLATE: Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[SR] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "TODO_TRANSLATE: Created",
+  "created": "[SR] Created",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "TODO_TRANSLATE: Revoke Access",
+  "revokeAccess": "[SR] Revoke Access",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "TODO_TRANSLATE: Save Group for Recognition",
+  "saveGroupForRecognition": "[SR] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "[SR] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "TODO_TRANSLATE: Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[SR] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "[SR] Download",
   "@download": {
     "description": "Download button text"
   },
-  "password": "TODO_TRANSLATE: Password",
+  "password": "[SR] Password",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "TODO_TRANSLATE: Error loading family links",
+  "errorLoadingFamilyLinks": "[SR] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "TODO_TRANSLATE: Cancel",
+  "cancel": "[SR] Cancel",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "[SR] Create",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "TODO_TRANSLATE: Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[SR] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "TODO_TRANSLATE: APP-OINT",
+  "appTitle": "[SR] APP-OINT",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "TODO_TRANSLATE: Accept",
+  "accept": "[SR] Accept",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "[SR] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "[SR] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "[SR] Delete",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "[SR] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "[SR] Create your first game",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "[SR] Participants",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "TODO_TRANSLATE: Recipients",
+  "recipients": "[SR] Recipients",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "[SR] No results found",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "TODO_TRANSLATE: Yes",
+  "yes": "[SR] Yes",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "TODO_TRANSLATE: Invite",
+  "invite": "[SR] Invite",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "[SR] Live Play",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "[SR] Done",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "TODO_TRANSLATE: Let's meet via Appoint!",
+  "defaultShareMessage": "[SR] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "TODO_TRANSLATE: No",
+  "no": "[SR] No",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "[SR] Playtime Hub",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "[SR] Error",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "[SR] Create Live Session",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "TODO_TRANSLATE: Enable Notifications",
+  "enableNotifications": "[SR] Enable Notifications",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "TODO_TRANSLATE: Invited",
+  "invited": "[SR] Invited",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "TODO_TRANSLATE: Content",
+  "content": "[SR] Content",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "TODO_TRANSLATE: Meeting shared successfully",
+  "meetingSharedSuccessfully": "[SR] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "[SR] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "[SR] View All",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "[SR] Virtual Play",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "TODO_TRANSLATE: Staff screen coming soon",
+  "staffScreenTBD": "[SR] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "[SR] Cut",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "TODO_TRANSLATE: Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[SR] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "[SR] Retry",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "TODO_TRANSLATE: Compose Broadcast Message",
+  "composeBroadcastMessage": "[SR] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
-  "sendNow": "TODO_TRANSLATE: Send Now",
+  "sendNow": "[SR] Send Now",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "[SR] No games yet",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "[SR] Select",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "[SR] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "[SR] Choose",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "TODO_TRANSLATE: Profile",
+  "profile": "[SR] Profile",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "TODO_TRANSLATE: Remove Child",
+  "removeChild": "[SR] Remove Child",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "TODO_TRANSLATE: Status",
+  "status": "[SR] Status",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "[SR] Logout",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "[SR] Paste",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "TODO_TRANSLATE: Welcome",
+  "welcome": "[SR] Welcome",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "[SR] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "TODO_TRANSLATE: Family Members",
+  "familyMembers": "[SR] Family Members",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "[SR] Upload",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "[SR] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "TODO_TRANSLATE: Enter group name",
+  "enterGroupName": "[SR] Enter group name",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "[SR] Confirm",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "[SR] Live Play",
   "@playtimeLive": {
     "description": "Live play label"
   },
-  "errorLoadingInvites": "TODO_TRANSLATE: Error loading invites",
+  "errorLoadingInvites": "[SR] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "TODO_TRANSLATE: Targeting Filters",
+  "targetingFilters": "[SR] Targeting Filters",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "TODO_TRANSLATE: Pick Video",
+  "pickVideo": "[SR] Pick Video",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "[SR] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "TODO_TRANSLATE: Schedule for Later",
+  "scheduleForLater": "[SR] Schedule for Later",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "TODO_TRANSLATE: Access revoked successfully",
+  "accessRevokedSuccessfully": "[SR] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "TODO_TRANSLATE: Type",
+  "type": "[SR] Type",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "TODO_TRANSLATE: Checking permissions...",
+  "checkingPermissions": "[SR] Checking permissions...",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "[SR] Copy",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "TODO_TRANSLATE: Yes, Cancel",
+  "yesCancel": "[SR] Yes, Cancel",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "TODO_TRANSLATE: Email",
+  "email": "[SR] Email",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "TODO_TRANSLATE: Share on WhatsApp",
+  "shareOnWhatsApp": "[SR] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "TODO_TRANSLATE: Notification Settings",
+  "notificationSettings": "[SR] Notification Settings",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
-  "myProfile": "TODO_TRANSLATE: My Profile",
+  "myProfile": "[SR] My Profile",
   "@myProfile": {
     "description": "My profile title"
   },
-  "revoke": "TODO_TRANSLATE: Revoke",
+  "revoke": "[SR] Revoke",
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "TODO_TRANSLATE: No messages yet",
+  "noBroadcastMessages": "[SR] No messages yet",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "TODO_TRANSLATE: Request Type",
+  "requestType": "[SR] Request Type",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "TODO_TRANSLATE: Notifications",
+  "notifications": "[SR] Notifications",
   "@notifications": {
     "description": "Notifications title"
   },
-  "details": "TODO_TRANSLATE: Details",
+  "details": "[SR] Details",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "TODO_TRANSLATE: Cancel Invite",
+  "cancelInvite": "[SR] Cancel Invite",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "[SR] Create New",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "[SR] Settings",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "[SR] Reject",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "TODO_TRANSLATE: Error loading profile",
+  "errorLoadingProfile": "[SR] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "[SR] Edit",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "[SR] Add",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "[SR] Game approved",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "[SR] Forgot Password?",
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
-  "familyDashboard": "TODO_TRANSLATE: Family Dashboard",
+  "familyDashboard": "[SR] Family Dashboard",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "TODO_TRANSLATE: Loading...",
+  "loading": "[SR] Loading...",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "[SR] Quick Actions",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "[SR] Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "TODO_TRANSLATE: OTP resent successfully",
+  "otpResentSuccessfully": "[SR] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "TODO_TRANSLATE: Error checking permissions",
+  "errorCheckingPermissions": "[SR] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "TODO_TRANSLATE: Client screen coming soon",
+  "clientScreenTBD": "[SR] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "TODO_TRANSLATE: FCM Token",
+  "fcmToken": "[SR] FCM Token",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "TODO_TRANSLATE: Pick Image",
+  "pickImage": "[SR] Pick Image",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "[SR] Previous",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "TODO_TRANSLATE: No profile found",
+  "noProfileFound": "[SR] No profile found",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "TODO_TRANSLATE: No family members yet",
+  "noFamilyMembersYet": "[SR] No family members yet",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "TODO_TRANSLATE: Media (Optional)",
+  "mediaOptional": "[SR] Media (Optional)",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "TODO_TRANSLATE: Message saved successfully",
+  "messageSavedSuccessfully": "[SR] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "[SR] Scheduled for",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "TODO_TRANSLATE: Dashboard",
+  "dashboard": "[SR] Dashboard",
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "TODO_TRANSLATE: No permission for broadcast",
+  "noPermissionForBroadcast": "[SR] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[SR] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "TODO_TRANSLATE: Invite Details",
+  "inviteDetail": "[SR] Invite Details",
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "TODO_TRANSLATE: Scheduled",
+  "scheduled": "[SR] Scheduled",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "TODO_TRANSLATE: Failed to resend OTP",
+  "failedToResendOtp": "[SR] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "TODO_TRANSLATE: Scheduling",
+  "scheduling": "[SR] Scheduling",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "TODO_TRANSLATE: Error saving message",
+  "errorSavingMessage": "[SR] Error saving message",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
-  "save": "TODO_TRANSLATE: Save",
+  "save": "[SR] Save",
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "[SR] Approve",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "[SR] Create your first session",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "[SR] Game rejected",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "TODO_TRANSLATE: Failed to revoke access",
+  "failedToRevokeAccess": "[SR] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "[SR] Recent Games",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "TODO_TRANSLATE: Customize Message",
+  "customizeMessage": "[SR] Customize Message",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "TODO_TRANSLATE: Failed to cancel invite",
+  "failedToCancelInvite": "[SR] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "TODO_TRANSLATE: Error sending message",
+  "errorSendingMessage": "[SR] Error sending message",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "[SR] Confirm Password",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "TODO_TRANSLATE: Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[SR] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "TODO_TRANSLATE: Connected Children",
+  "connectedChildren": "[SR] Connected Children",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "[SR] Share",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "[SR] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "TODO_TRANSLATE: Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[SR] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "TODO_TRANSLATE: My Invites",
+  "myInvites": "[SR] My Invites",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "[SR] Create Game",
   "@createGame": {
     "description": "Create game button"
   },
-  "groupNameOptional": "TODO_TRANSLATE: Group Name (Optional)",
+  "groupNameOptional": "[SR] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "[SR] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "TODO_TRANSLATE: Admin screen coming soon",
+  "adminScreenTBD": "[SR] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[SR] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "close": "TODO_TRANSLATE: Close",
+  "close": "[SR] Close",
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "TODO_TRANSLATE: Known group detected",
+  "knownGroupDetected": "[SR] Known group detected",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "[SR] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "[SR] Choose a game",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "TODO_TRANSLATE: Manage Permissions",
+  "managePermissions": "[SR] Manage Permissions",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "TODO_TRANSLATE: Poll Options",
+  "pollOptions": "[SR] Poll Options",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "TODO_TRANSLATE: Clicked",
+  "clicked": "[SR] Clicked",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "TODO_TRANSLATE: Link",
+  "link": "[SR] Link",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "TODO_TRANSLATE: Your meeting is ready! Join now",
+  "meetingReadyMessage": "[SR] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "TODO_TRANSLATE: Pending Invites",
+  "pendingInvites": "[SR] Pending Invites",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "TODO_TRANSLATE: Status:",
+  "statusColon": "[SR] Status:",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "sr",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginToViewProfile": "[SR] Please log in to view your profile."
 }

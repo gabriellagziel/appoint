@@ -9,554 +9,549 @@ class AppLocalizationsLt extends AppLocalizations {
   AppLocalizationsLt([String locale = 'lt']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'Atnaujinti';
 
   @override
-  String get home => 'TODO: Home';
+  String get home => 'Pradžia';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'Dar nėra sesijų';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'Gerai';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'Pasirinkite žaidimo režimą:';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'Registruotis';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'Suplanuoti pranešimą';
 
   @override
-  String get decline => 'TODO: Decline';
+  String get decline => 'Atmesti';
 
   @override
-  String get adminBroadcast => 'TODO: Admin Broadcast';
+  String get adminBroadcast => 'Administratoriaus transliacija';
 
   @override
-  String get login => 'TODO: Login';
+  String get login => 'Prisijungti';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'Pasirinkite draugus pakviesti';
 
   @override
-  String get noInvites => 'TODO: No invites';
+  String get noInvites => 'Nėra pakvietimų';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'Pasirinkite laiką';
 
   @override
-  String get success => 'Success';
+  String get success => 'Sėkmė';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'Atšaukti';
 
   @override
-  String opened(Object count) {
-    return 'TODO: Opened: $count';
-  }
+  String get opened => 'Atidaryta';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'Sukurti virtualią sesiją';
 
   @override
-  String get messageSentSuccessfully => 'TODO: Message sent successfully';
+  String get messageSentSuccessfully => 'Pranešimas sėkmingai išsiųstas';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'Pakartoti';
 
   @override
-  String get next => 'TODO: Next';
+  String get next => 'Kitas';
 
   @override
-  String get search => 'Search';
+  String get search => 'Ieškoti';
 
   @override
   String get cancelInviteConfirmation =>
-      'TODO: Are you sure you want to cancel this invite?';
+      'Ar tikrai norite atšaukti šį pakvietimą?';
 
   @override
   String created(Object date) {
-    return 'TODO: Created: $date';
+    return 'Sukurta';
   }
 
   @override
-  String get revokeAccess => 'TODO: Revoke Access';
+  String get revokeAccess => 'Atšaukti prieigą';
 
   @override
-  String get saveGroupForRecognition =>
-      'TODO: Save group for future recognition';
+  String get saveGroupForRecognition => 'Išsaugoti grupę atpažinimui';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'Tiesioginis playtime suplanuotas!';
 
   @override
-  String get revokeAccessConfirmation =>
-      'TODO: Are you sure you want to revoke access for this child? This action cannot be undone.';
+  String get revokeAccessConfirmation => 'Ar tikrai norite atšaukti prieigą?';
 
   @override
-  String get download => 'Download';
+  String get download => 'Atsisiųsti';
 
   @override
-  String get password => 'TODO: Password';
+  String get password => 'Slaptažodis';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'TODO: Error loading family links: $error';
+    return 'Klaida įkeliant šeimos nuorodas';
   }
 
   @override
-  String get cancel => 'TODO: Cancel';
+  String get cancel => 'Atšaukti';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Sukurti';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'TODO: Failed to $action privacy request: $error';
+    return 'Nepavyko apdoroti privatumo užklausos';
   }
 
   @override
-  String get appTitle => 'TODO: Appoint';
+  String get appTitle => 'APP-OINT';
 
   @override
-  String get accept => 'TODO: Accept';
+  String get accept => 'Priimti';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'Virtualus žaidimas';
 
   @override
   String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+      'Mėgaukitės tiesioginiais ar virtualiais žaidimais su draugais!';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Ištrinti';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Virtualus playtime pradėtas!';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'Sukurkite savo pirmąjį žaidimą';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'Dalyviai';
 
   @override
   String recipients(Object count) {
-    return 'TODO: Recipients: $count';
+    return 'Gavėjai';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'Rezultatų nerasta';
 
   @override
-  String get yes => 'TODO: Yes';
+  String get yes => 'Taip';
 
   @override
-  String get invite => 'TODO: Invite';
+  String get invite => 'Pakviesti';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'Tiesioginis žaidimas';
 
   @override
-  String get done => 'Done';
+  String get done => 'Atlikta';
 
   @override
-  String get defaultShareMessage =>
-      'TODO: Hey! I\'ve scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:';
+  String get defaultShareMessage => 'Susipažinkime per Appoint!';
 
   @override
-  String get no => 'TODO: No';
+  String get no => 'Ne';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Playtime centras';
 
   @override
-  String get error => 'Error';
+  String get error => 'Klaida';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'Sukurti tiesioginę sesiją';
 
   @override
-  String get enableNotifications => 'TODO: Enable Notifications';
+  String get enableNotifications => 'Įjungti pranešimus';
 
   @override
   String invited(Object date) {
-    return 'TODO: Invited: $date';
+    return 'Pakviestas';
   }
 
   @override
   String content(Object content) {
-    return 'TODO: Content: $content';
+    return 'Turinys';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'TODO: Meeting shared successfully!';
+  String get meetingSharedSuccessfully => 'Susirinkimas sėkmingai pasidalintas';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Sveiki atvykę į Playtime';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'Peržiūrėti visus';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Virtualus žaidimas';
 
   @override
-  String get staffScreenTBD => 'TODO: Staff Screen - To Be Developed';
+  String get staffScreenTBD => 'Darbuotojų ekranas netrukus';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'Iškirpti';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      'TODO: Invite cancelled successfully!';
+  String get inviteCancelledSuccessfully => 'Pakvietimas sėkmingai atšauktas';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'Bandyti iš naujo';
 
   @override
-  String get composeBroadcastMessage => 'TODO: Compose Broadcast Message';
+  String get composeBroadcastMessage => 'Sukurti transliacijos pranešimą';
 
   @override
-  String get sendNow => 'TODO: Send Now';
+  String get sendNow => 'Siųsti dabar';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'Dar nėra žaidimų';
 
   @override
-  String get select => 'Select';
+  String get select => 'Pasirinkti';
 
   @override
-  String get about => 'About';
+  String get about => 'Apie';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'Pasirinkti';
 
   @override
-  String get profile => 'TODO: Profile';
+  String get profile => 'Profilis';
 
   @override
-  String get removeChild => 'TODO: Remove Child';
+  String get removeChild => 'Pašalinti vaiką';
 
   @override
   String status(Object status) {
-    return 'TODO: Status: $status';
+    return 'Būsena';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'Atsijungti';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'Įklijuoti';
 
   @override
-  String get welcome => 'TODO: Welcome';
+  String get welcome => 'Sveiki atvykę';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'Sukurti Playtime sesiją';
 
   @override
-  String get familyMembers => 'TODO: Family Members';
+  String get familyMembers => 'Šeimos nariai';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'Įkelti';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'Artimiausios sesijos';
 
   @override
-  String get enterGroupName => 'TODO: Enter group name for recognition';
+  String get enterGroupName => 'Įveskite grupės pavadinimą';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Patvirtinti';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Tiesioginis žaidimas';
 
   @override
-  String get errorLoadingInvites => 'TODO: Error loading invites';
-
-  @override
-  String get targetingFilters => 'TODO: Targeting Filters';
-
-  @override
-  String get pickVideo => 'TODO: Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'TODO: Schedule for later';
-
-  @override
-  String get accessRevokedSuccessfully => 'TODO: Access revoked successfully!';
-
-  @override
-  String type(Object type) {
-    return 'TODO: Type: $type';
+  String errorLoadingInvites(Object error) {
+    return 'Klaida įkeliant pakvietimus';
   }
 
   @override
-  String get checkingPermissions => 'TODO: Checking permissions...';
+  String get targetingFilters => 'Tikslinimo filtrai';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'Pasirinkti vaizdo įrašą';
 
   @override
-  String get yesCancel => 'TODO: Yes, Cancel';
+  String get playtimeGameDeleted => 'Žaidimas ištrintas';
 
   @override
-  String get email => 'TODO: Email';
+  String get scheduleForLater => 'Suplanuoti vėliau';
 
   @override
-  String get shareOnWhatsApp => 'TODO: Share on WhatsApp';
+  String get accessRevokedSuccessfully => 'Prieiga sėkmingai atšaukta';
 
   @override
-  String get notificationSettings => 'TODO: Notification Settings';
+  String get type => 'Tipas';
 
   @override
-  String get myProfile => 'TODO: My Profile';
+  String get checkingPermissions => 'Tikrinami leidimai...';
 
   @override
-  String get revoke => 'TODO: Revoke';
+  String get copy => 'Kopijuoti';
 
   @override
-  String get noBroadcastMessages => 'TODO: No broadcast messages yet';
+  String get yesCancel => 'Taip, atšaukti';
+
+  @override
+  String get email => 'El. paštas';
+
+  @override
+  String get shareOnWhatsApp => 'Pasidalinti WhatsApp';
+
+  @override
+  String get notificationSettings => 'Pranešimų nustatymai';
+
+  @override
+  String get myProfile => 'Mano profilis';
+
+  @override
+  String get revoke => 'Atšaukti';
+
+  @override
+  String get noBroadcastMessages => 'Dar nėra pranešimų';
 
   @override
   String requestType(Object type) {
-    return 'TODO: $type Request';
+    return 'Užklausos tipas';
   }
 
   @override
-  String get notifications => 'TODO: Notifications';
+  String get notifications => 'Pranešimai';
 
   @override
-  String get details => 'TODO: Details';
+  String get details => 'Išsami informacija';
 
   @override
-  String get cancelInvite => 'TODO: Cancel Invite';
+  String get cancelInvite => 'Atšaukti pakvietimą';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'Sukurti naują';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Nustatymai';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Atmesti';
 
   @override
-  String get errorLoadingProfile => 'TODO: Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'Klaida įkeliant profilį';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Redaguoti';
 
   @override
-  String get add => 'Add';
+  String get add => 'Pridėti';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'Žaidimas patvirtintas';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'Pamiršote slaptažodį?';
 
   @override
-  String get familyDashboard => 'TODO: Family Dashboard';
+  String get familyDashboard => 'Šeimos valdymo skydelis';
 
   @override
-  String get loading => 'TODO: Loading...';
+  String get loading => 'Įkeliama...';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'Greitosios veiksmai';
 
   @override
   String get playtimeTitle => 'Playtime';
 
   @override
-  String get otpResentSuccessfully => 'TODO: OTP resent successfully!';
+  String get otpResentSuccessfully => 'OTP sėkmingai išsiųstas iš naujo';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'TODO: Error checking permissions: $error';
+    return 'Klaida tikrinant leidimus';
   }
 
   @override
-  String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+  String get clientScreenTBD => 'Kliento ekranas netrukus';
 
   @override
   String fcmToken(Object token) {
-    return 'TODO: FCM Token: $token';
+    return 'FCM žetonas';
   }
 
   @override
-  String get pickImage => 'TODO: Pick Image';
+  String get pickImage => 'Pasirinkti paveikslėlį';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'Ankstesnis';
 
   @override
-  String get noProfileFound => 'TODO: No profile found';
+  String get noProfileFound => 'Profilis nerastas';
 
   @override
-  String get noFamilyMembersYet =>
-      'TODO: No family members yet. Invite someone to get started!';
+  String get noFamilyMembersYet => 'Dar nėra šeimos narių';
 
   @override
-  String get mediaOptional => 'TODO: Media (Optional)';
+  String get mediaOptional => 'Medija (neprivaloma)';
 
   @override
-  String get messageSavedSuccessfully => 'TODO: Message saved successfully';
+  String get messageSavedSuccessfully => 'Pranešimas sėkmingai išsaugotas';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'Suplanuota';
 
   @override
-  String get dashboard => 'TODO: Dashboard';
+  String get dashboard => 'Valdymo skydelis';
 
   @override
-  String get noPermissionForBroadcast =>
-      'TODO: You do not have permission to create broadcast messages.';
+  String get noPermissionForBroadcast => 'Nėra leidimo transliuoti';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Playtime žaidimai – Administratorius';
 
   @override
-  String get inviteDetail => 'TODO: Invite Detail';
+  String get inviteDetail => 'Pakvietimo informacija';
 
   @override
   String scheduled(Object date) {
-    return 'TODO: Scheduled: $date';
+    return 'Suplanuota';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'TODO: Failed to resend OTP: $error';
+    return 'Nepavyko išsiųsti OTP iš naujo';
   }
 
   @override
-  String get scheduling => 'TODO: Scheduling';
+  String get scheduling => 'Planavimas';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'TODO: Error saving message: $error';
+    return 'Klaida išsaugant pranešimą';
   }
 
   @override
-  String get save => 'TODO: Save';
+  String get save => 'Išsaugoti';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Patvirtinti';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'Sukurkite savo pirmąją sesiją';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'Žaidimas atmestas';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'TODO: Failed to revoke access: $error';
+    return 'Nepavyko atšaukti prieigos';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'Naujausi žaidimai';
 
   @override
-  String get customizeMessage => 'TODO: Customize your message...';
+  String get customizeMessage => 'Pritaikyti pranešimą';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'TODO: Failed to cancel invite: $error';
+    return 'Nepavyko atšaukti pakvietimo';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'TODO: Error sending message: $error';
+    return 'Klaida siunčiant pranešimą';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'Patvirtinti slaptažodį';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'TODO: Error loading privacy requests: $error';
+    return 'Klaida įkeliant privatumo užklausas';
   }
 
   @override
-  String get connectedChildren => 'TODO: Connected Children';
+  String get connectedChildren => 'Prijungti vaikai';
 
   @override
-  String get share => 'Share';
+  String get share => 'Pasidalinti';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'Įveskite žaidimo pavadinimą';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'TODO: Please login to access family features';
+      'Prašome prisijungti, kad galėtumėte naudotis šeimos funkcijomis';
 
   @override
-  String get myInvites => 'TODO: My Invites';
+  String get myInvites => 'Mano pakvietimai';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'Sukurti žaidimą';
 
   @override
-  String get groupNameOptional => 'TODO: Group Name (optional)';
+  String get groupNameOptional => 'Grupės pavadinimas (neprivalomas)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Playtime sesijų nerasta.';
 
   @override
-  String get adminScreenTBD => 'TODO: Admin Screen - To Be Developed';
+  String get adminScreenTBD => 'Administratoriaus ekranas netrukus';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => 'Playtime valdymo skydelis';
 
   @override
-  String get close => 'TODO: Close';
+  String get close => 'Uždaryti';
 
   @override
-  String get knownGroupDetected => 'TODO: Known group detected';
+  String get knownGroupDetected => 'Aptikta žinoma grupė';
 
   @override
-  String get back => 'Back';
+  String get back => 'Atgal';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'Pasirinkti žaidimą';
 
   @override
-  String get managePermissions => 'TODO: Manage Permissions';
+  String get managePermissions => 'Valdyti leidimus';
 
   @override
-  String get pollOptions => 'TODO: Poll Options:';
+  String get pollOptions => 'Apklausos parinktys';
 
   @override
   String clicked(Object count) {
-    return 'TODO: Clicked: $count';
+    return 'Spustelėta';
   }
 
   @override
   String link(Object link) {
-    return 'TODO: Link: $link';
+    return 'Nuoroda';
   }
 
   @override
   String get meetingReadyMessage =>
-      'TODO: The meeting is ready! Would you like to send it to your group?';
+      'Jūsų susirinkimas paruoštas! Prisijunkite dabar';
 
   @override
-  String get pendingInvites => 'TODO: Pending Invites';
+  String get pendingInvites => 'Laukiami pakvietimai';
 
   @override
   String statusColon(Object status) {
-    return 'TODO: Status: $status';
+    return 'Būsena:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      'Prašome prisijungti, kad galėtumėte peržiūrėti savo profilį.';
 }

@@ -9,554 +9,546 @@ class AppLocalizationsSk extends AppLocalizations {
   AppLocalizationsSk([String locale = 'sk']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'Obnoviť';
 
   @override
-  String get home => 'TODO: Home';
+  String get home => 'Domov';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'Žiadne relácie';
 
   @override
   String get ok => 'OK';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'Vyberte režim';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'Zaregistrovať sa';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'Plánovať správu';
 
   @override
-  String get decline => 'TODO: Decline';
+  String get decline => 'Odmietnuť';
 
   @override
-  String get adminBroadcast => 'TODO: Admin Broadcast';
+  String get adminBroadcast => 'Administrátorské vysielanie';
 
   @override
-  String get login => 'TODO: Login';
+  String get login => 'Prihlásiť sa';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'Vyberte priateľov';
 
   @override
-  String get noInvites => 'TODO: No invites';
+  String get noInvites => 'Žiadne pozvánky';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'Vyberte čas';
 
   @override
-  String get success => 'Success';
+  String get success => 'Úspech';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'Späť';
 
   @override
-  String opened(Object count) {
-    return 'TODO: Opened: $count';
-  }
+  String get opened => 'Otvorené';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'Vytvoriť virtuálnu reláciu';
 
   @override
-  String get messageSentSuccessfully => 'TODO: Message sent successfully';
+  String get messageSentSuccessfully => 'Správa bola úspešne odoslaná';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'Znova';
 
   @override
-  String get next => 'TODO: Next';
+  String get next => 'Ďalej';
 
   @override
-  String get search => 'Search';
+  String get search => 'Vyhľadať';
 
   @override
-  String get cancelInviteConfirmation =>
-      'TODO: Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => 'Zrušiť potvrdenie pozvánky';
 
   @override
   String created(Object date) {
-    return 'TODO: Created: $date';
+    return 'Vytvorené';
   }
 
   @override
-  String get revokeAccess => 'TODO: Revoke Access';
+  String get revokeAccess => 'Odvolať prístup';
 
   @override
-  String get saveGroupForRecognition =>
-      'TODO: Save group for future recognition';
+  String get saveGroupForRecognition => 'Uložiť skupinu na rozpoznanie';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'Živá relácia naplánovaná';
 
   @override
-  String get revokeAccessConfirmation =>
-      'TODO: Are you sure you want to revoke access for this child? This action cannot be undone.';
+  String get revokeAccessConfirmation => 'Potvrdenie odvolania prístupu';
 
   @override
-  String get download => 'Download';
+  String get download => 'Stiahnuť';
 
   @override
-  String get password => 'TODO: Password';
+  String get password => 'Heslo';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'TODO: Error loading family links: $error';
+    return 'Chyba pri načítaní rodinných odkazov';
   }
 
   @override
-  String get cancel => 'TODO: Cancel';
+  String get cancel => 'Zrušiť';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Vytvoriť Playtime';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'TODO: Failed to $action privacy request: $error';
+    return 'Nepodarilo sa spracovať žiadosť o súkromie';
   }
 
   @override
-  String get appTitle => 'TODO: Appoint';
+  String get appTitle => 'Názov aplikácie';
 
   @override
-  String get accept => 'TODO: Accept';
+  String get accept => 'Prijať';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'Virtuálny režim';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Popis Playtime';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Vymazať';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Virtuálna relácia spustená';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'Vytvorte svoju prvú hru';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'Účastníci';
 
   @override
   String recipients(Object count) {
-    return 'TODO: Recipients: $count';
+    return 'Príjemcovia';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'Žiadne výsledky';
 
   @override
-  String get yes => 'TODO: Yes';
+  String get yes => 'Áno';
 
   @override
-  String get invite => 'TODO: Invite';
+  String get invite => 'Pozvať';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'Živý režim';
 
   @override
-  String get done => 'Done';
+  String get done => 'Hotovo';
 
   @override
-  String get defaultShareMessage =>
-      'TODO: Hey! I\'ve scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:';
+  String get defaultShareMessage => 'Predvolená správa na zdieľanie';
 
   @override
-  String get no => 'TODO: No';
+  String get no => 'Nie';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Playtime centrum';
 
   @override
-  String get error => 'Error';
+  String get error => 'Chyba';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'Vytvoriť živú reláciu';
 
   @override
-  String get enableNotifications => 'TODO: Enable Notifications';
+  String get enableNotifications => 'Povoliť upozornenia';
 
   @override
   String invited(Object date) {
-    return 'TODO: Invited: $date';
+    return 'Pozvaní';
   }
 
   @override
   String content(Object content) {
-    return 'TODO: Content: $content';
+    return 'Obsah';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'TODO: Meeting shared successfully!';
+  String get meetingSharedSuccessfully => 'Stretnutie úspešne zdieľané';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Vitajte v Playtime';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'Zobraziť všetko';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Virtuálny Playtime';
 
   @override
-  String get staffScreenTBD => 'TODO: Staff Screen - To Be Developed';
+  String get staffScreenTBD => 'Obrazovka personálu bude určená';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'Vystrihnúť';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      'TODO: Invite cancelled successfully!';
+  String get inviteCancelledSuccessfully => 'Pozvánka úspešne zrušená';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'Skúsiť znova';
 
   @override
-  String get composeBroadcastMessage => 'TODO: Compose Broadcast Message';
+  String get composeBroadcastMessage => 'Vytvoriť vysielaciu správu';
 
   @override
-  String get sendNow => 'TODO: Send Now';
+  String get sendNow => 'Odoslať teraz';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'Žiadne hry';
 
   @override
-  String get select => 'Select';
+  String get select => 'Vybrať';
 
   @override
-  String get about => 'About';
+  String get about => 'O aplikácii';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'Vybrať';
 
   @override
-  String get profile => 'TODO: Profile';
+  String get profile => 'Profil';
 
   @override
-  String get removeChild => 'TODO: Remove Child';
+  String get removeChild => 'Odstrániť dieťa';
 
   @override
   String status(Object status) {
-    return 'TODO: Status: $status';
+    return 'Stav';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'Odhlásiť sa';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'Prilepiť';
 
   @override
-  String get welcome => 'TODO: Welcome';
+  String get welcome => 'Vitajte';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'Vytvoriť reláciu';
 
   @override
-  String get familyMembers => 'TODO: Family Members';
+  String get familyMembers => 'Členovia rodiny';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'Nahrať';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'Nadchádzajúce relácie';
 
   @override
-  String get enterGroupName => 'TODO: Enter group name for recognition';
+  String get enterGroupName => 'Zadajte názov skupiny';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Potvrdiť';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Živý Playtime';
 
   @override
-  String get errorLoadingInvites => 'TODO: Error loading invites';
-
-  @override
-  String get targetingFilters => 'TODO: Targeting Filters';
-
-  @override
-  String get pickVideo => 'TODO: Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'TODO: Schedule for later';
-
-  @override
-  String get accessRevokedSuccessfully => 'TODO: Access revoked successfully!';
-
-  @override
-  String type(Object type) {
-    return 'TODO: Type: $type';
+  String errorLoadingInvites(Object error) {
+    return 'Chyba pri načítaní pozvánok';
   }
 
   @override
-  String get checkingPermissions => 'TODO: Checking permissions...';
+  String get targetingFilters => 'Cieľové filtre';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'Vybrať video';
 
   @override
-  String get yesCancel => 'TODO: Yes, Cancel';
+  String get playtimeGameDeleted => 'Hra zmazaná';
 
   @override
-  String get email => 'TODO: Email';
+  String get scheduleForLater => 'Naplánovať na neskôr';
 
   @override
-  String get shareOnWhatsApp => 'TODO: Share on WhatsApp';
+  String get accessRevokedSuccessfully => 'Prístup úspešne odvolaný';
 
   @override
-  String get notificationSettings => 'TODO: Notification Settings';
+  String get type => 'Typ';
 
   @override
-  String get myProfile => 'TODO: My Profile';
+  String get checkingPermissions => 'Kontrola oprávnení';
 
   @override
-  String get revoke => 'TODO: Revoke';
+  String get copy => 'Kopírovať';
 
   @override
-  String get noBroadcastMessages => 'TODO: No broadcast messages yet';
+  String get yesCancel => 'Áno, zrušiť';
+
+  @override
+  String get email => 'Email';
+
+  @override
+  String get shareOnWhatsApp => 'Zdieľať na WhatsApp';
+
+  @override
+  String get notificationSettings => 'Nastavenia upozornení';
+
+  @override
+  String get myProfile => 'Môj profil';
+
+  @override
+  String get revoke => 'Odvolať';
+
+  @override
+  String get noBroadcastMessages => 'Žiadne vysielacie správy';
 
   @override
   String requestType(Object type) {
-    return 'TODO: $type Request';
+    return 'Typ požiadavky';
   }
 
   @override
-  String get notifications => 'TODO: Notifications';
+  String get notifications => 'Upozornenia';
 
   @override
-  String get details => 'TODO: Details';
+  String get details => 'Podrobnosti';
 
   @override
-  String get cancelInvite => 'TODO: Cancel Invite';
+  String get cancelInvite => 'Zrušiť pozvánku';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'Vytvoriť nové';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Nastavenia';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Odmietnuť Playtime';
 
   @override
-  String get errorLoadingProfile => 'TODO: Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'Chyba pri načítaní profilu';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Upraviť';
 
   @override
-  String get add => 'Add';
+  String get add => 'Pridať';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'Hra schválená';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'Zabudli ste heslo?';
 
   @override
-  String get familyDashboard => 'TODO: Family Dashboard';
+  String get familyDashboard => 'Panel rodiny';
 
   @override
-  String get loading => 'TODO: Loading...';
+  String get loading => 'Načítava sa';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'Rýchle akcie';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'Názov Playtime';
 
   @override
-  String get otpResentSuccessfully => 'TODO: OTP resent successfully!';
+  String get otpResentSuccessfully => 'OTP úspešne odoslané znova';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'TODO: Error checking permissions: $error';
+    return 'Chyba pri kontrole oprávnení';
   }
 
   @override
-  String get clientScreenTBD => 'TODO: Client Screen - To Be Developed';
+  String get clientScreenTBD => 'Obrazovka klienta bude určená';
 
   @override
   String fcmToken(Object token) {
-    return 'TODO: FCM Token: $token';
+    return 'FCM token';
   }
 
   @override
-  String get pickImage => 'TODO: Pick Image';
+  String get pickImage => 'Vybrať obrázok';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'Predchádzajúci';
 
   @override
-  String get noProfileFound => 'TODO: No profile found';
+  String get noProfileFound => 'Profil nenájdený';
 
   @override
-  String get noFamilyMembersYet =>
-      'TODO: No family members yet. Invite someone to get started!';
+  String get noFamilyMembersYet => 'Žiadni členovia rodiny';
 
   @override
-  String get mediaOptional => 'TODO: Media (Optional)';
+  String get mediaOptional => 'Médiá (voliteľné)';
 
   @override
-  String get messageSavedSuccessfully => 'TODO: Message saved successfully';
+  String get messageSavedSuccessfully => 'Správa úspešne uložená';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'Naplánované na';
 
   @override
-  String get dashboard => 'TODO: Dashboard';
+  String get dashboard => 'Ovládací panel';
 
   @override
-  String get noPermissionForBroadcast =>
-      'TODO: You do not have permission to create broadcast messages.';
+  String get noPermissionForBroadcast => 'Žiadne oprávnenie na vysielanie';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Názov admin panela Playtime';
 
   @override
-  String get inviteDetail => 'TODO: Invite Detail';
+  String get inviteDetail => 'Podrobnosti pozvánky';
 
   @override
   String scheduled(Object date) {
-    return 'TODO: Scheduled: $date';
+    return 'Naplánované';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'TODO: Failed to resend OTP: $error';
+    return 'Nepodarilo sa odoslať OTP znova';
   }
 
   @override
-  String get scheduling => 'TODO: Scheduling';
+  String get scheduling => 'Plánovanie';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'TODO: Error saving message: $error';
+    return 'Chyba pri ukladaní správy';
   }
 
   @override
-  String get save => 'TODO: Save';
+  String get save => 'Uložiť';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Schváliť Playtime';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'Vytvorte svoju prvú reláciu';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'Hra odmietnutá';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'TODO: Failed to revoke access: $error';
+    return 'Nepodarilo sa odvolať prístup';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'Nedávne hry';
 
   @override
-  String get customizeMessage => 'TODO: Customize your message...';
+  String get customizeMessage => 'Prispôsobiť správu';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'TODO: Failed to cancel invite: $error';
+    return 'Nepodarilo sa zrušiť pozvánku';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'TODO: Error sending message: $error';
+    return 'Chyba pri odosielaní správy';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'Potvrďte heslo';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'TODO: Error loading privacy requests: $error';
+    return 'Chyba pri načítaní žiadostí o súkromie';
   }
 
   @override
-  String get connectedChildren => 'TODO: Connected Children';
+  String get connectedChildren => 'Pripojené deti';
 
   @override
-  String get share => 'Share';
+  String get share => 'Zdieľať';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'Zadajte názov hry';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'TODO: Please login to access family features';
+      'Prihláste sa pre prístup k rodinným funkciám';
 
   @override
-  String get myInvites => 'TODO: My Invites';
+  String get myInvites => 'Moje pozvánky';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'Vytvoriť hru';
 
   @override
-  String get groupNameOptional => 'TODO: Group Name (optional)';
+  String get groupNameOptional => 'Názov skupiny (voliteľné)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Nenašli sa žiadne Playtime relácie.';
 
   @override
-  String get adminScreenTBD => 'TODO: Admin Screen - To Be Developed';
+  String get adminScreenTBD => 'Obrazovka administrátora bude čoskoro dostupná';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => 'Playtime ovládací panel';
 
   @override
-  String get close => 'TODO: Close';
+  String get close => 'Zatvoriť';
 
   @override
-  String get knownGroupDetected => 'TODO: Known group detected';
+  String get knownGroupDetected => 'Zistená známa skupina';
 
   @override
-  String get back => 'Back';
+  String get back => 'Späť';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'Vyberte hru';
 
   @override
-  String get managePermissions => 'TODO: Manage Permissions';
+  String get managePermissions => 'Spravovať oprávnenia';
 
   @override
-  String get pollOptions => 'TODO: Poll Options:';
+  String get pollOptions => 'Možnosti hlasovania';
 
   @override
   String clicked(Object count) {
-    return 'TODO: Clicked: $count';
+    return 'Kliknuté';
   }
 
   @override
   String link(Object link) {
-    return 'TODO: Link: $link';
+    return 'Odkaz';
   }
 
   @override
   String get meetingReadyMessage =>
-      'TODO: The meeting is ready! Would you like to send it to your group?';
+      'Vaše stretnutie je pripravené! Pridajte sa teraz';
 
   @override
-  String get pendingInvites => 'TODO: Pending Invites';
+  String get pendingInvites => 'Čakajúce pozvánky';
 
   @override
   String statusColon(Object status) {
-    return 'TODO: Status: $status';
+    return 'Stav:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => 'Prihláste sa na zobrazenie profilu';
 }

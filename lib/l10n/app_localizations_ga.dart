@@ -9,548 +9,547 @@ class AppLocalizationsGa extends AppLocalizations {
   AppLocalizationsGa([String locale = 'ga']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => 'Athnuachan';
 
   @override
-  String get home => 'Home';
+  String get home => 'Baile';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => 'Níl seisiún ann fós';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'Ceart go leor';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => 'Roghnaigh mód';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => 'Cláraigh';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => 'Clárigh teachtaireacht';
 
   @override
-  String get decline => 'Decline';
+  String get decline => 'Diúltú';
 
   @override
-  String get adminBroadcast => 'Admin Broadcast';
+  String get adminBroadcast => 'Craoladh riarthóra';
 
   @override
-  String get login => 'Login';
+  String get login => 'Logáil isteach';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => 'Roghnaigh cairde';
 
   @override
-  String get noInvites => 'No invites';
+  String get noInvites => 'Níl aon cuireadh';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => 'Roghnaigh am';
 
   @override
-  String get success => 'Success';
+  String get success => 'Rath';
 
   @override
-  String get undo => 'Undo';
+  String get undo => 'Cealaigh';
 
   @override
-  String opened(Object count) {
-    return 'Opened';
-  }
+  String get opened => 'Oscailte';
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => 'Cruthaigh seisiún fíorúil';
 
   @override
-  String get messageSentSuccessfully => 'Message sent successfully';
+  String get messageSentSuccessfully => 'Teachtaireacht seolta go rathúil';
 
   @override
-  String get redo => 'Redo';
+  String get redo => 'Déan arís';
 
   @override
-  String get next => 'Next';
+  String get next => 'Ar Aghaidh';
 
   @override
-  String get search => 'Search';
+  String get search => 'Cuardaigh';
 
   @override
-  String get cancelInviteConfirmation =>
-      'Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => 'Cealaigh dearbhú cuireadh';
 
   @override
   String created(Object date) {
-    return 'Created';
+    return 'Cruthaithe';
   }
 
   @override
-  String get revokeAccess => 'Revoke Access';
+  String get revokeAccess => 'Cealaigh rochtain';
 
   @override
-  String get saveGroupForRecognition => 'Save Group for Recognition';
+  String get saveGroupForRecognition => 'Sábháil an grúpa le haitheantas';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => 'Seisiún beo cláraithe';
 
   @override
-  String get revokeAccessConfirmation =>
-      'Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => 'Dearbhú cealaithe rochtana';
 
   @override
-  String get download => 'Download';
+  String get download => 'Íoslódáil';
 
   @override
-  String get password => 'Password';
+  String get password => 'Focal faire';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Error loading family links';
+    return 'Earráid ag luchtú na nasc teaghlach';
   }
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'Cealaigh';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => 'Cruthaigh Playtime';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Failed to action privacy request';
+    return 'Theip ar iarratas príobháideachta';
   }
 
   @override
-  String get appTitle => 'APP-OINT';
+  String get appTitle => 'Teideal an aip';
 
   @override
-  String get accept => 'Accept';
+  String get accept => 'Glac';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => 'Mód fíorúil';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Cur síos Playtime';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Scrios';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Seisiún fíorúil tosaithe';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => 'Cruthaigh do chéad chluiche';
 
   @override
-  String get participants => 'Participants';
+  String get participants => 'Rannpháirtithe';
 
   @override
   String recipients(Object count) {
-    return 'Recipients';
+    return 'Faighteoirí';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => 'Gan torthaí';
 
   @override
-  String get yes => 'Yes';
+  String get yes => 'Tá';
 
   @override
-  String get invite => 'Invite';
+  String get invite => 'Cuireadh';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => 'Mód beo';
 
   @override
-  String get done => 'Done';
+  String get done => 'Déanta';
 
   @override
-  String get defaultShareMessage => 'Let\'s meet via Appoint!';
+  String get defaultShareMessage => 'Teachtaireacht réamhshocraithe le roinnt';
 
   @override
-  String get no => 'No';
+  String get no => 'Níl';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => 'Ionad Playtime';
 
   @override
-  String get error => 'Error';
+  String get error => 'Earráid';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => 'Cruthaigh seisiún beo';
 
   @override
-  String get enableNotifications => 'Enable Notifications';
+  String get enableNotifications => 'Cumasaigh fógraí';
 
   @override
   String invited(Object date) {
-    return 'Invited';
+    return 'Cuireadh seolta';
   }
 
   @override
   String content(Object content) {
-    return 'Content';
+    return 'Ábhar';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Meeting shared successfully';
+  String get meetingSharedSuccessfully => 'Cruinniú roinnte go rathúil';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => 'Fáilte chuig Playtime';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => 'Féach ar uile';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => 'Playtime fíorúil';
 
   @override
-  String get staffScreenTBD => 'Staff screen coming soon';
+  String get staffScreenTBD => 'Scáileán foirne le socrú';
 
   @override
-  String get cut => 'Cut';
+  String get cut => 'Gearr';
 
   @override
-  String get inviteCancelledSuccessfully => 'Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => 'Cuireadh cealaithe go rathúil';
 
   @override
-  String get retry => 'Retry';
+  String get retry => 'Féach arís';
 
   @override
-  String get composeBroadcastMessage => 'Compose Broadcast Message';
+  String get composeBroadcastMessage => 'Cum seoladh craolta';
 
   @override
-  String get sendNow => 'Send Now';
+  String get sendNow => 'Seol anois';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => 'Níl cluichí fós';
 
   @override
-  String get select => 'Select';
+  String get select => 'Roghnaigh';
 
   @override
-  String get about => 'About';
+  String get about => 'Maidir le';
 
   @override
-  String get choose => 'Choose';
+  String get choose => 'Roghnaigh';
 
   @override
-  String get profile => 'Profile';
+  String get profile => 'Próifíl';
 
   @override
-  String get removeChild => 'Remove Child';
+  String get removeChild => 'Bain páiste';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return 'Stádas';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => 'Logáil amach';
 
   @override
-  String get paste => 'Paste';
+  String get paste => 'Greamaigh';
 
   @override
-  String get welcome => 'Welcome';
+  String get welcome => 'Fáilte';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => 'Cruthaigh seisiún';
 
   @override
-  String get familyMembers => 'Family Members';
+  String get familyMembers => 'Baill teaghlaigh';
 
   @override
-  String get upload => 'Upload';
+  String get upload => 'Uaslódáil';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => 'Seisiúin atá le teacht';
 
   @override
-  String get enterGroupName => 'Enter group name';
+  String get enterGroupName => 'Iontráil ainm an ghrúpa';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => 'Deimhnigh';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => 'Playtime beo';
 
   @override
-  String get errorLoadingInvites => 'Error loading invites';
-
-  @override
-  String get targetingFilters => 'Targeting Filters';
-
-  @override
-  String get pickVideo => 'Pick Video';
-
-  @override
-  String get playtimeGameDeleted => 'Game deleted';
-
-  @override
-  String get scheduleForLater => 'Schedule for Later';
-
-  @override
-  String get accessRevokedSuccessfully => 'Access revoked successfully';
-
-  @override
-  String type(Object type) {
-    return 'Type';
+  String errorLoadingInvites(Object error) {
+    return 'Earráid ag luchtú cuireadh';
   }
 
   @override
-  String get checkingPermissions => 'Checking permissions...';
+  String get targetingFilters => 'Scagairí dírithe';
 
   @override
-  String get copy => 'Copy';
+  String get pickVideo => 'Roghnaigh físeán';
 
   @override
-  String get yesCancel => 'Yes, Cancel';
+  String get playtimeGameDeleted => 'Cluiche scriosta';
 
   @override
-  String get email => 'Email';
+  String get scheduleForLater => 'Cláraigh le haghaidh níos déanaí';
 
   @override
-  String get shareOnWhatsApp => 'Share on WhatsApp';
+  String get accessRevokedSuccessfully => 'Rochtain cealaithe go rathúil';
 
   @override
-  String get notificationSettings => 'Notification Settings';
+  String get type => 'Cineál';
 
   @override
-  String get myProfile => 'My Profile';
+  String get checkingPermissions => 'Ag seiceáil ceadanna';
 
   @override
-  String get revoke => 'Revoke';
+  String get copy => 'Cóipeáil';
 
   @override
-  String get noBroadcastMessages => 'No messages yet';
+  String get yesCancel => 'Sea, cealaigh';
+
+  @override
+  String get email => 'Ríomhphost';
+
+  @override
+  String get shareOnWhatsApp => 'Roinn ar WhatsApp';
+
+  @override
+  String get notificationSettings => 'Socruithe fógraí';
+
+  @override
+  String get myProfile => 'Mo phróifíl';
+
+  @override
+  String get revoke => 'Cealaigh';
+
+  @override
+  String get noBroadcastMessages => 'Gan teachtaireachtaí craolta';
 
   @override
   String requestType(Object type) {
-    return 'Request Type';
+    return 'Cineál iarratais';
   }
 
   @override
-  String get notifications => 'Notifications';
+  String get notifications => 'Fógraí';
 
   @override
-  String get details => 'Details';
+  String get details => 'Sonraí';
 
   @override
-  String get cancelInvite => 'Cancel Invite';
+  String get cancelInvite => 'Cealaigh cuireadh';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => 'Cruthaigh nua';
 
   @override
-  String get settings => 'Settings';
+  String get settings => 'Socruithe';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => 'Diúltú Playtime';
 
   @override
-  String get errorLoadingProfile => 'Error loading profile';
+  String errorLoadingProfile(Object error) {
+    return 'Earráid ag luchtú próifíle';
+  }
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Cuir in eagar';
 
   @override
-  String get add => 'Add';
+  String get add => 'Cuir leis';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => 'Cluiche faofa';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => 'Ar chaill tú d\'fhocal faire?';
 
   @override
-  String get familyDashboard => 'Family Dashboard';
+  String get familyDashboard => 'Painéal teaghlaigh';
 
   @override
-  String get loading => 'Loading...';
+  String get loading => 'Ag luchtú';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => 'Gníomhartha tapa';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => 'Teideal Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP resent successfully';
+  String get otpResentSuccessfully => 'OTP athsheoladh go rathúil';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Error checking permissions';
+    return 'Earráid ag seiceáil ceadanna';
   }
 
   @override
-  String get clientScreenTBD => 'Client screen coming soon';
+  String get clientScreenTBD => 'Scáileán cliant le socrú';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM Token';
+    return 'Token FCM';
   }
 
   @override
-  String get pickImage => 'Pick Image';
+  String get pickImage => 'Roghnaigh íomhá';
 
   @override
-  String get previous => 'Previous';
+  String get previous => 'Roimhe seo';
 
   @override
-  String get noProfileFound => 'No profile found';
+  String get noProfileFound => 'Gan próifíl aimsithe';
 
   @override
-  String get noFamilyMembersYet => 'No family members yet';
+  String get noFamilyMembersYet => 'Níl baill teaghlaigh fós';
 
   @override
-  String get mediaOptional => 'Media (Optional)';
+  String get mediaOptional => 'Meán (roghnach)';
 
   @override
-  String get messageSavedSuccessfully => 'Message saved successfully';
+  String get messageSavedSuccessfully => 'Teachtaireacht sábháilte go rathúil';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => 'Cláraithe do';
 
   @override
-  String get dashboard => 'Dashboard';
+  String get dashboard => 'Painéal';
 
   @override
-  String get noPermissionForBroadcast => 'No permission for broadcast';
+  String get noPermissionForBroadcast => 'Gan cead le craoladh';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Teideal painéal riarthóra Playtime';
 
   @override
-  String get inviteDetail => 'Invite Details';
+  String get inviteDetail => 'Sonraí cuireadh';
 
   @override
   String scheduled(Object date) {
-    return 'Scheduled';
+    return 'Cláraithe';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Failed to resend OTP';
+    return 'Theip ar athsheoladh OTP';
   }
 
   @override
-  String get scheduling => 'Scheduling';
+  String get scheduling => 'Ag clárú';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Error saving message';
+    return 'Earráid ag sábháil teachtaireachta';
   }
 
   @override
-  String get save => 'Save';
+  String get save => 'Sábháil';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => 'Faofa Playtime';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => 'Cruthaigh do chéad seisiún';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => 'Cluiche diúltaithe';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Failed to revoke access';
+    return 'Theip ar chealú rochtana';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => 'Cluichí is déanaí';
 
   @override
-  String get customizeMessage => 'Customize Message';
+  String get customizeMessage => 'Pearlisiú teachtaireachta';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Failed to cancel invite';
+    return 'Theip ar chealú cuireadh';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Error sending message';
+    return 'Earráid ag seoladh teachtaireachta';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => 'Deimhnigh focal faire';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Error loading privacy requests';
+    return 'Earráid ag luchtú iarratais príobháideachta';
   }
 
   @override
-  String get connectedChildren => 'Connected Children';
+  String get connectedChildren => 'Páistí nasctha';
 
   @override
-  String get share => 'Share';
+  String get share => 'Roinn';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => 'Iontráil ainm an chluiche';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+      'Logáil isteach le haghaidh gnéithe teaghlaigh';
 
   @override
-  String get myInvites => 'My Invites';
+  String get myInvites => 'Mo cuireadh';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => 'Cruthaigh cluiche';
 
   @override
-  String get groupNameOptional => 'Group Name (Optional)';
+  String get groupNameOptional => 'Ainm grúpa (roghnach)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => 'Níl seisiúin Playtime ann';
 
   @override
-  String get adminScreenTBD => 'Admin screen coming soon';
+  String get adminScreenTBD => 'Scáileán riarthóra le socrú';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle =>
+      'Teideal painéal tuismitheoirí Playtime';
 
   @override
-  String get close => 'Close';
+  String get close => 'Dún';
 
   @override
-  String get knownGroupDetected => 'Known group detected';
+  String get knownGroupDetected => 'Grúpa aitheanta aimsithe';
 
   @override
-  String get back => 'Back';
+  String get back => 'Ar ais';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => 'Roghnaigh cluiche';
 
   @override
-  String get managePermissions => 'Manage Permissions';
+  String get managePermissions => 'Bainistigh ceadanna';
 
   @override
-  String get pollOptions => 'Poll Options';
+  String get pollOptions => 'Roghanna suirbhé';
 
   @override
   String clicked(Object count) {
-    return 'Clicked';
+    return 'Cliceáilte';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return 'Nasc';
   }
 
   @override
-  String get meetingReadyMessage => 'Your meeting is ready! Join now';
+  String get meetingReadyMessage => 'Cruinniú réidh';
 
   @override
-  String get pendingInvites => 'Pending Invites';
+  String get pendingInvites => 'Cuireadh i bhfeitheamh';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return 'Stádas:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      'Logáil isteach chun próifíl a fheiceáil';
 }

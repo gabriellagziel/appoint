@@ -1,664 +1,664 @@
 {
-  "refresh": "TODO_TRANSLATE: Refresh",
+  "refresh": "รีเฟรช",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "TODO_TRANSLATE: Home",
+  "home": "หน้าแรก",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "TODO_TRANSLATE: No sessions yet",
+  "noSessionsYet": "ยังไม่มีเซสชัน",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "TODO_TRANSLATE: OK",
+  "ok": "ตกลง",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "TODO_TRANSLATE: Choose your play mode:",
+  "playtimeLandingChooseMode": "เลือกโหมด",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "TODO_TRANSLATE: Sign Up",
+  "signUp": "สมัครสมาชิก",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "TODO_TRANSLATE: Schedule Message",
+  "scheduleMessage": "กำหนดการข้อความ",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "TODO_TRANSLATE: Decline",
+  "decline": "ปฏิเสธ",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "TODO_TRANSLATE: Admin Broadcast",
+  "adminBroadcast": "ออกอากาศผู้ดูแลระบบ",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "TODO_TRANSLATE: Login",
+  "login": "เข้าสู่ระบบ",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "TODO_TRANSLATE: Choose friends to invite",
+  "playtimeChooseFriends": "เลือกเพื่อน",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "TODO_TRANSLATE: No invites",
+  "noInvites": "ไม่มีคำเชิญ",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "TODO_TRANSLATE: Choose a time",
+  "playtimeChooseTime": "เลือกเวลา",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "TODO_TRANSLATE: Success",
+  "success": "สำเร็จ",
   "@success": {
     "description": "Success message"
   },
-  "undo": "TODO_TRANSLATE: Undo",
+  "undo": "เลิกทำ",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "TODO_TRANSLATE: Opened",
+  "opened": "เปิดแล้ว",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "TODO_TRANSLATE: Create Virtual Session",
+  "createVirtualSession": "สร้างเซสชันเสมือน",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "TODO_TRANSLATE: Message sent successfully",
+  "messageSentSuccessfully": "ส่งข้อความสำเร็จ",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "TODO_TRANSLATE: Redo",
+  "redo": "ทำซ้ำ",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "TODO_TRANSLATE: Next",
+  "next": "ถัดไป",
   "@next": {
     "description": "Next button text"
   },
-  "search": "TODO_TRANSLATE: Search",
+  "search": "ค้นหา",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "TODO_TRANSLATE: Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "ยกเลิกการยืนยันคำเชิญ",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "TODO_TRANSLATE: Created",
+  "created": "สร้างแล้ว",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "TODO_TRANSLATE: Revoke Access",
+  "revokeAccess": "เพิกถอนสิทธิ์",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "TODO_TRANSLATE: Save Group for Recognition",
+  "saveGroupForRecognition": "บันทึกกลุ่มเพื่อการจดจำ",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "TODO_TRANSLATE: Live playtime scheduled!",
+  "playtimeLiveScheduled": "เซสชันสดถูกกำหนดแล้ว",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "TODO_TRANSLATE: Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "ยืนยันการเพิกถอนสิทธิ์",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "TODO_TRANSLATE: Download",
+  "download": "ดาวน์โหลด",
   "@download": {
     "description": "Download button text"
   },
-  "password": "TODO_TRANSLATE: Password",
+  "password": "รหัสผ่าน",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "TODO_TRANSLATE: Error loading family links",
+  "errorLoadingFamilyLinks": "ข้อผิดพลาดในการโหลดลิงก์ครอบครัว",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "TODO_TRANSLATE: Cancel",
+  "cancel": "ยกเลิก",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "TODO_TRANSLATE: Create",
+  "playtimeCreate": "สร้าง Playtime",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "TODO_TRANSLATE: Failed to action privacy request",
+  "failedToActionPrivacyRequest": "ไม่สามารถประมวลผลคำขอความเป็นส่วนตัว",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "TODO_TRANSLATE: APP-OINT",
+  "appTitle": "ชื่อแอป",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "TODO_TRANSLATE: Accept",
+  "accept": "ยอมรับ",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeModeVirtual": "โหมดเสมือน",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "TODO_TRANSLATE: Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "รายละเอียด Playtime",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "TODO_TRANSLATE: Delete",
+  "delete": "ลบ",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "TODO_TRANSLATE: Virtual playtime started!",
+  "playtimeVirtualStarted": "เซสชันเสมือนเริ่มแล้ว",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "TODO_TRANSLATE: Create your first game",
+  "createYourFirstGame": "สร้างเกมแรกของคุณ",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "TODO_TRANSLATE: Participants",
+  "participants": "ผู้เข้าร่วม",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "TODO_TRANSLATE: Recipients",
+  "recipients": "ผู้รับ",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "TODO_TRANSLATE: No results found",
+  "noResults": "ไม่มีผลลัพธ์",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "TODO_TRANSLATE: Yes",
+  "yes": "ใช่",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "TODO_TRANSLATE: Invite",
+  "invite": "เชิญ",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeModeLive": "โหมดสด",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "TODO_TRANSLATE: Done",
+  "done": "เสร็จสิ้น",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "TODO_TRANSLATE: Let's meet via Appoint!",
+  "defaultShareMessage": "ข้อความแชร์เริ่มต้น",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "TODO_TRANSLATE: No",
+  "no": "ไม่",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "TODO_TRANSLATE: Playtime Hub",
+  "playtimeHub": "ศูนย์กลาง Playtime",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "TODO_TRANSLATE: Error",
+  "error": "ข้อผิดพลาด",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "TODO_TRANSLATE: Create Live Session",
+  "createLiveSession": "สร้างเซสชันสด",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "TODO_TRANSLATE: Enable Notifications",
+  "enableNotifications": "เปิดใช้งานการแจ้งเตือน",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "TODO_TRANSLATE: Invited",
+  "invited": "เชิญแล้ว",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "TODO_TRANSLATE: Content",
+  "content": "เนื้อหา",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "TODO_TRANSLATE: Meeting shared successfully",
+  "meetingSharedSuccessfully": "แชร์การประชุมสำเร็จ",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "TODO_TRANSLATE: Welcome to Playtime",
+  "welcomeToPlaytime": "ยินดีต้อนรับสู่ Playtime",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "TODO_TRANSLATE: View All",
+  "viewAll": "ดูทั้งหมด",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "TODO_TRANSLATE: Virtual Play",
+  "playtimeVirtual": "Playtime เสมือน",
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "TODO_TRANSLATE: Staff screen coming soon",
+  "staffScreenTBD": "หน้าจอพนักงานยังไม่ได้กำหนด",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
-  "cut": "TODO_TRANSLATE: Cut",
+  "cut": "ตัด",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "TODO_TRANSLATE: Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "ยกเลิกคำเชิญสำเร็จ",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "TODO_TRANSLATE: Retry",
+  "retry": "ลองใหม่",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "TODO_TRANSLATE: Compose Broadcast Message",
+  "composeBroadcastMessage": "เขียนข้อความออกอากาศ",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
-  "sendNow": "TODO_TRANSLATE: Send Now",
+  "sendNow": "ส่งตอนนี้",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "TODO_TRANSLATE: No games yet",
+  "noGamesYet": "ยังไม่มีเกม",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "TODO_TRANSLATE: Select",
+  "select": "เลือก",
   "@select": {
     "description": "Select button text"
   },
-  "about": "TODO_TRANSLATE: About",
+  "about": "เกี่ยวกับ",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "TODO_TRANSLATE: Choose",
+  "choose": "เลือก",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "TODO_TRANSLATE: Profile",
+  "profile": "โปรไฟล์",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "TODO_TRANSLATE: Remove Child",
+  "removeChild": "ลบลูก",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "TODO_TRANSLATE: Status",
+  "status": "สถานะ",
   "@status": {
     "description": "Status label"
   },
-  "logout": "TODO_TRANSLATE: Logout",
+  "logout": "ออกจากระบบ",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "TODO_TRANSLATE: Paste",
+  "paste": "วาง",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "TODO_TRANSLATE: Welcome",
+  "welcome": "ยินดีต้อนรับ",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "TODO_TRANSLATE: Create a Playtime Session",
+  "playtimeCreateSession": "สร้างเซสชัน",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "TODO_TRANSLATE: Family Members",
+  "familyMembers": "สมาชิกในครอบครัว",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "TODO_TRANSLATE: Upload",
+  "upload": "อัปโหลด",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "TODO_TRANSLATE: Upcoming Sessions",
+  "upcomingSessions": "เซสชันที่กำลังจะมาถึง",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "TODO_TRANSLATE: Enter group name",
+  "enterGroupName": "ป้อนชื่อกลุ่ม",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
-  "confirm": "TODO_TRANSLATE: Confirm",
+  "confirm": "ยืนยัน",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "TODO_TRANSLATE: Live Play",
+  "playtimeLive": "Playtime สด",
   "@playtimeLive": {
     "description": "Live play label"
   },
-  "errorLoadingInvites": "TODO_TRANSLATE: Error loading invites",
+  "errorLoadingInvites": "ข้อผิดพลาดในการโหลดคำเชิญ",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "TODO_TRANSLATE: Targeting Filters",
+  "targetingFilters": "ตัวกรองเป้าหมาย",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "TODO_TRANSLATE: Pick Video",
+  "pickVideo": "เลือกวิดีโอ",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "TODO_TRANSLATE: Game deleted",
+  "playtimeGameDeleted": "เกมถูกลบ",
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "TODO_TRANSLATE: Schedule for Later",
+  "scheduleForLater": "กำหนดสำหรับภายหลัง",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "TODO_TRANSLATE: Access revoked successfully",
+  "accessRevokedSuccessfully": "เพิกถอนสิทธิ์สำเร็จ",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "TODO_TRANSLATE: Type",
+  "type": "ประเภท",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "TODO_TRANSLATE: Checking permissions...",
+  "checkingPermissions": "กำลังตรวจสอบสิทธิ์",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "TODO_TRANSLATE: Copy",
+  "copy": "คัดลอก",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "TODO_TRANSLATE: Yes, Cancel",
+  "yesCancel": "ใช่ ยกเลิก",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "TODO_TRANSLATE: Email",
+  "email": "อีเมล",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "TODO_TRANSLATE: Share on WhatsApp",
+  "shareOnWhatsApp": "[TH] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "TODO_TRANSLATE: Notification Settings",
+  "notificationSettings": "การตั้งค่าการแจ้งเตือน",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
-  "myProfile": "TODO_TRANSLATE: My Profile",
+  "myProfile": "โปรไฟล์ของฉัน",
   "@myProfile": {
     "description": "My profile title"
   },
-  "revoke": "TODO_TRANSLATE: Revoke",
+  "revoke": "เพิกถอน",
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "TODO_TRANSLATE: No messages yet",
+  "noBroadcastMessages": "ไม่มีข้อความออกอากาศ",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "TODO_TRANSLATE: Request Type",
+  "requestType": "ประเภทคำขอ",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "TODO_TRANSLATE: Notifications",
+  "notifications": "การแจ้งเตือน",
   "@notifications": {
     "description": "Notifications title"
   },
-  "details": "TODO_TRANSLATE: Details",
+  "details": "รายละเอียด",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "TODO_TRANSLATE: Cancel Invite",
+  "cancelInvite": "ยกเลิกคำเชิญ",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "TODO_TRANSLATE: Create New",
+  "createNew": "สร้างใหม่",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "TODO_TRANSLATE: Settings",
+  "settings": "การตั้งค่า",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "TODO_TRANSLATE: Reject",
+  "playtimeReject": "ปฏิเสธ Playtime",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "TODO_TRANSLATE: Error loading profile",
+  "errorLoadingProfile": "ข้อผิดพลาดในการโหลดโปรไฟล์",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "TODO_TRANSLATE: Edit",
+  "edit": "แก้ไข",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "TODO_TRANSLATE: Add",
+  "add": "เพิ่ม",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "TODO_TRANSLATE: Game approved",
+  "playtimeGameApproved": "เกมได้รับการอนุมัติ",
   "@playtimeGameApproved": {
     "description": "Game approved message"
   },
-  "forgotPassword": "TODO_TRANSLATE: Forgot Password?",
+  "forgotPassword": "ลืมรหัสผ่าน?",
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
-  "familyDashboard": "TODO_TRANSLATE: Family Dashboard",
+  "familyDashboard": "แดชบอร์ดครอบครัว",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "TODO_TRANSLATE: Loading...",
+  "loading": "กำลังโหลด",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "TODO_TRANSLATE: Quick Actions",
+  "quickActions": "การดำเนินการด่วน",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "TODO_TRANSLATE: Playtime",
+  "playtimeTitle": "ชื่อ Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "TODO_TRANSLATE: OTP resent successfully",
+  "otpResentSuccessfully": "ส่ง OTP ใหม่สำเร็จ",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "TODO_TRANSLATE: Error checking permissions",
+  "errorCheckingPermissions": "ข้อผิดพลาดในการตรวจสอบสิทธิ์",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "TODO_TRANSLATE: Client screen coming soon",
+  "clientScreenTBD": "หน้าจอไคลเอนต์ยังไม่ได้กำหนด",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "TODO_TRANSLATE: FCM Token",
+  "fcmToken": "โทเค็น FCM",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "TODO_TRANSLATE: Pick Image",
+  "pickImage": "เลือกรูปภาพ",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "TODO_TRANSLATE: Previous",
+  "previous": "ก่อนหน้า",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "TODO_TRANSLATE: No profile found",
+  "noProfileFound": "ไม่พบโปรไฟล์",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "TODO_TRANSLATE: No family members yet",
+  "noFamilyMembersYet": "ยังไม่มีสมาชิกในครอบครัว",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "TODO_TRANSLATE: Media (Optional)",
+  "mediaOptional": "สื่อ (ไม่บังคับ)",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "TODO_TRANSLATE: Message saved successfully",
+  "messageSavedSuccessfully": "บันทึกข้อความสำเร็จ",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "TODO_TRANSLATE: Scheduled for",
+  "scheduledFor": "กำหนดสำหรับ",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "TODO_TRANSLATE: Dashboard",
+  "dashboard": "แดชบอร์ด",
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "TODO_TRANSLATE: No permission for broadcast",
+  "noPermissionForBroadcast": "ไม่มีสิทธิ์ออกอากาศ",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "TODO_TRANSLATE: Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "ชื่อแผงผู้ดูแล Playtime",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "TODO_TRANSLATE: Invite Details",
+  "inviteDetail": "รายละเอียดคำเชิญ",
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "TODO_TRANSLATE: Scheduled",
+  "scheduled": "กำหนดเวลาแล้ว",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "TODO_TRANSLATE: Failed to resend OTP",
+  "failedToResendOtp": "ไม่สามารถส่ง OTP ใหม่ได้",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "TODO_TRANSLATE: Scheduling",
+  "scheduling": "กำลังกำหนดเวลา",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "TODO_TRANSLATE: Error saving message",
+  "errorSavingMessage": "ข้อผิดพลาดในการบันทึกข้อความ",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
-  "save": "TODO_TRANSLATE: Save",
+  "save": "บันทึก",
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "TODO_TRANSLATE: Approve",
+  "playtimeApprove": "อนุมัติ Playtime",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "TODO_TRANSLATE: Create your first session",
+  "createYourFirstSession": "สร้างเซสชันแรกของคุณ",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "TODO_TRANSLATE: Game rejected",
+  "playtimeGameRejected": "เกมถูกปฏิเสธ",
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "TODO_TRANSLATE: Failed to revoke access",
+  "failedToRevokeAccess": "[TH] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "recentGames": "TODO_TRANSLATE: Recent Games",
+  "recentGames": "เกมล่าสุด",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "TODO_TRANSLATE: Customize Message",
+  "customizeMessage": "ปรับแต่งข้อความ",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "TODO_TRANSLATE: Failed to cancel invite",
+  "failedToCancelInvite": "ไม่สามารถยกเลิกคำเชิญได้",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "TODO_TRANSLATE: Error sending message",
+  "errorSendingMessage": "ข้อผิดพลาดในการส่งข้อความ",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
-  "confirmPassword": "TODO_TRANSLATE: Confirm Password",
+  "confirmPassword": "ยืนยันรหัสผ่าน",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "TODO_TRANSLATE: Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "ข้อผิดพลาดในการโหลดคำขอความเป็นส่วนตัว",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "TODO_TRANSLATE: Connected Children",
+  "connectedChildren": "เด็กที่เชื่อมต่อ",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "TODO_TRANSLATE: Share",
+  "share": "แชร์",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "TODO_TRANSLATE: Enter game name",
+  "playtimeEnterGameName": "ป้อนชื่อเกม",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "TODO_TRANSLATE: Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[TH] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "TODO_TRANSLATE: My Invites",
+  "myInvites": "[TH] My Invites",
   "@myInvites": {
     "description": "My invites title"
   },
-  "createGame": "TODO_TRANSLATE: Create Game",
+  "createGame": "[TH] Create Game",
   "@createGame": {
     "description": "Create game button"
   },
-  "groupNameOptional": "TODO_TRANSLATE: Group Name (Optional)",
+  "groupNameOptional": "[TH] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "playtimeNoSessions": "TODO_TRANSLATE: No playtime sessions found.",
+  "playtimeNoSessions": "[TH] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "TODO_TRANSLATE: Admin screen coming soon",
+  "adminScreenTBD": "[TH] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "TODO_TRANSLATE: Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[TH] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "close": "TODO_TRANSLATE: Close",
+  "close": "[TH] Close",
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "TODO_TRANSLATE: Known group detected",
+  "knownGroupDetected": "[TH] Known group detected",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "back": "TODO_TRANSLATE: Back",
+  "back": "[TH] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "TODO_TRANSLATE: Choose a game",
+  "playtimeChooseGame": "[TH] Choose a game",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "TODO_TRANSLATE: Manage Permissions",
+  "managePermissions": "[TH] Manage Permissions",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "TODO_TRANSLATE: Poll Options",
+  "pollOptions": "[TH] Poll Options",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "TODO_TRANSLATE: Clicked",
+  "clicked": "[TH] Clicked",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "TODO_TRANSLATE: Link",
+  "link": "[TH] Link",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "TODO_TRANSLATE: Your meeting is ready! Join now",
+  "meetingReadyMessage": "[TH] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "TODO_TRANSLATE: Pending Invites",
+  "pendingInvites": "[TH] Pending Invites",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "TODO_TRANSLATE: Status:",
+  "statusColon": "[TH] Status:",
   "@statusColon": {
     "description": "Status colon label"
   },
   "@@locale": "th",
-  "pleaseLoginToViewProfile": "TODO_TRANSLATE: Please log in to view your profile."
+  "pleaseLoginToViewProfile": "กรุณาเข้าสู่ระบบเพื่อดูโปรไฟล์"
 }

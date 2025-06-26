@@ -1,662 +1,663 @@
 {
-  "refresh": "Yenile",
+  "@@locale": "uk",
+  "refresh": "Оновити",
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "Ana Sayfa",
+  "home": "Головна",
   "@home": {
     "description": "Home navigation label"
   },
-  "noSessionsYet": "Henüz oturum yok",
+  "noSessionsYet": "Сесій поки що немає",
   "@noSessionsYet": {
     "description": "No sessions yet message"
   },
-  "ok": "Tamam",
+  "ok": "Гаразд",
   "@ok": {
     "description": "OK button text"
   },
-  "playtimeLandingChooseMode": "[TR] Choose your play mode:",
+  "playtimeLandingChooseMode": "Оберіть режим",
   "@playtimeLandingChooseMode": {
     "description": "Playtime landing choose mode message"
   },
-  "signUp": "Kayıt Ol",
+  "signUp": "Зареєструватися",
   "@signUp": {
     "description": "Sign up button text"
   },
-  "scheduleMessage": "Mesaj planla",
+  "scheduleMessage": "Запланувати повідомлення",
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "Reddet",
+  "decline": "Відхилити",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "Yönetici yayın",
+  "adminBroadcast": "Трансляція адміністратора",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "Giriş Yap",
+  "login": "Увійти",
   "@login": {
     "description": "Login button text"
   },
-  "playtimeChooseFriends": "[TR] Choose friends to invite",
+  "playtimeChooseFriends": "Оберіть друзів",
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "Davet yok",
+  "noInvites": "Немає запрошень",
   "@noInvites": {
     "description": "No invites message"
   },
-  "playtimeChooseTime": "[TR] Choose a time",
+  "playtimeChooseTime": "Оберіть час",
   "@playtimeChooseTime": {
     "description": "Choose time label"
   },
-  "success": "Başarılı",
+  "success": "Успіх",
   "@success": {
     "description": "Success message"
   },
-  "undo": "Geri Al",
+  "undo": "Скасувати",
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "Açıldı",
+  "opened": "Відкрито",
   "@opened": {
     "description": "Opened status"
   },
-  "createVirtualSession": "Sanal oturum oluştur",
+  "createVirtualSession": "Створити віртуальну сесію",
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "Mesaj başarıyla gönderildi",
+  "messageSentSuccessfully": "Повідомлення успішно надіслано",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
-  "redo": "[TR] Redo",
+  "redo": "Повторити",
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "[TR] Next",
+  "next": "Далі",
   "@next": {
     "description": "Next button text"
   },
-  "search": "Ara",
+  "search": "Пошук",
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "[TR] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "Скасувати підтвердження запрошення",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "Oluşturuldu",
+  "created": "Створено",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "Erişimi geri al",
+  "revokeAccess": "Скасувати доступ",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "[TR] Save Group for Recognition",
+  "saveGroupForRecognition": "Зберегти групу для розпізнавання",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
-  "playtimeLiveScheduled": "[TR] Live playtime scheduled!",
+  "playtimeLiveScheduled": "Жива сесія запланована",
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "[TR] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "Підтвердження скасування доступу",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
-  "download": "İndir",
+  "download": "Завантажити",
   "@download": {
     "description": "Download button text"
   },
-  "password": "Şifre",
+  "password": "Пароль",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "[TR] Error loading family links",
+  "errorLoadingFamilyLinks": "Помилка завантаження сімейних посилань",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "İptal",
+  "cancel": "Скасувати",
   "@cancel": {
     "description": "Cancel button text"
   },
-  "playtimeCreate": "Playtime oluştur",
+  "playtimeCreate": "Створити Playtime",
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "Gizlilik isteği gerçekleştirilemedi",
+  "failedToActionPrivacyRequest": "Не вдалося обробити запит приватності",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "Uygulama Başlığı",
+  "appTitle": "Назва додатка",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "Kabul Et",
+  "accept": "Прийняти",
   "@accept": {
     "description": "Accept button"
   },
-  "playtimeModeVirtual": "Sanal mod",
+  "playtimeModeVirtual": "Віртуальний режим",
   "@playtimeModeVirtual": {
     "description": "Virtual play mode label"
   },
-  "playtimeDescription": "Playtime açıklaması",
+  "playtimeDescription": "Опис Playtime",
   "@playtimeDescription": {
     "description": "Playtime description"
   },
-  "delete": "Sil",
+  "delete": "Видалити",
   "@delete": {
     "description": "Delete button text"
   },
-  "playtimeVirtualStarted": "Sanal oturum başladı",
+  "playtimeVirtualStarted": "Віртуальна сесія розпочалася",
   "@playtimeVirtualStarted": {
     "description": "Virtual playtime started message"
   },
-  "createYourFirstGame": "İlk oyununuzu oluşturun",
+  "createYourFirstGame": "Створіть свою першу гру",
   "@createYourFirstGame": {
     "description": "Create your first game message"
   },
-  "participants": "[TR] Participants",
+  "participants": "Учасники",
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "Alıcılar",
+  "recipients": "Одержувачі",
   "@recipients": {
     "description": "Recipients label"
   },
-  "noResults": "[TR] No results found",
+  "noResults": "Немає результатів",
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "Evet",
+  "yes": "Так",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "Davet Et",
+  "invite": "Запросити",
   "@invite": {
     "description": "Invite button"
   },
-  "playtimeModeLive": "Canlı mod",
+  "playtimeModeLive": "Живий режим",
   "@playtimeModeLive": {
     "description": "Live play mode label"
   },
-  "done": "[TR] Done",
+  "done": "Готово",
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "Varsayılan paylaşım mesajı",
+  "defaultShareMessage": "За замовчуванням повідомлення для спільного доступу",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "Hayır",
+  "no": "Ні",
   "@no": {
     "description": "No button text"
   },
-  "playtimeHub": "Playtime Merkezi",
+  "playtimeHub": "Центр Playtime",
   "@playtimeHub": {
     "description": "Playtime hub title"
   },
-  "error": "[TR] Error",
+  "error": "Помилка",
   "@error": {
     "description": "Error message"
   },
-  "createLiveSession": "Canlı oturum oluştur",
+  "createLiveSession": "Створити живу сесію",
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "[TR] Enable Notifications",
+  "enableNotifications": "Увімкнути сповіщення",
   "@enableNotifications": {
     "description": "Enable notifications button"
   },
-  "invited": "Davet edildi",
+  "invited": "Запрошено",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "İçerik",
+  "content": "Зміст",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "[TR] Meeting shared successfully",
+  "meetingSharedSuccessfully": "Зустріч успішно поділена",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
-  "welcomeToPlaytime": "[TR] Welcome to Playtime",
+  "welcomeToPlaytime": "Ласкаво просимо до Playtime",
   "@welcomeToPlaytime": {
     "description": "Welcome to playtime message"
   },
-  "viewAll": "[TR] View All",
+  "viewAll": "Переглянути все",
   "@viewAll": {
     "description": "View all button"
   },
-  "playtimeVirtual": "Sanal Playtime",
+  "playtimeVirtual": "Віртуальний Playtime",
   "@playtimeVirtual": {
     "description": "Virtual playtime label"
   },
-  "staffScreenTBD": "[TR] Staff screen coming soon",
+  "staffScreenTBD": "Екран персоналу буде визначено пізніше",
   "@staffScreenTBD": {
     "description": "Staff screen coming soon"
   },
-  "cut": "Kes",
+  "cut": "Вирізати",
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "Davet başarıyla iptal edildi",
+  "inviteCancelledSuccessfully": "Запрошення успішно скасовано",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
-  "retry": "Tekrar dene",
+  "retry": "Спробувати знову",
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "Yayın mesajı oluştur",
+  "composeBroadcastMessage": "Скласти трансляційне повідомлення",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message button"
   },
-  "sendNow": "Şimdi Gönder",
+  "sendNow": "Надіслати зараз",
   "@sendNow": {
     "description": "Send now button"
   },
-  "noGamesYet": "Henüz oyun yok",
+  "noGamesYet": "Ігор поки що немає",
   "@noGamesYet": {
     "description": "No games yet message"
   },
-  "select": "Seç",
+  "select": "Оберіть",
   "@select": {
     "description": "Select button text"
   },
-  "about": "Hakkında",
+  "about": "Про додаток",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Seç",
+  "choose": "Оберіть",
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "[TR] Profile",
+  "profile": "Профіль",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "Çocuğu kaldır",
+  "removeChild": "Вилучити дитину",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "Durum",
+  "status": "Статус",
   "@status": {
     "description": "Status label"
   },
-  "logout": "Çıkış Yap",
+  "logout": "Вийти",
   "@logout": {
     "description": "Logout button text"
   },
-  "paste": "Yapıştır",
+  "paste": "Вставити",
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "[TR] Welcome",
+  "welcome": "Ласкаво просимо",
   "@welcome": {
     "description": "Welcome message"
   },
-  "playtimeCreateSession": "Oturum oluştur",
+  "playtimeCreateSession": "Створити сесію",
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "Aile üyeleri",
+  "familyMembers": "Члени родини",
   "@familyMembers": {
     "description": "Family members label"
   },
-  "upload": "Yükle",
+  "upload": "Завантажити",
   "@upload": {
     "description": "Upload button text"
   },
-  "upcomingSessions": "Gelecek oturumlar",
+  "upcomingSessions": "Найближчі сесії",
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "[TR] Enter group name",
+  "enterGroupName": "Введіть назву групи",
   "@enterGroupName": {
     "description": "Enter group name label"
   },
-  "confirm": "[TR] Confirm",
+  "confirm": "Підтвердити",
   "@confirm": {
     "description": "Confirm button text"
   },
-  "playtimeLive": "Canlı Playtime",
+  "playtimeLive": "Живий Playtime",
   "@playtimeLive": {
     "description": "Live playtime label"
   },
-  "errorLoadingInvites": "[TR] Error loading invites",
+  "errorLoadingInvites": "Помилка завантаження запрошень",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "Hedefleme filtreleri",
+  "targetingFilters": "Фільтри таргетингу",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "Video seç",
+  "pickVideo": "Вибрати відео",
   "@pickVideo": {
     "description": "Pick video button"
   },
-  "playtimeGameDeleted": "[TR] Game deleted",
+  "playtimeGameDeleted": "Гру видалено",
   "@playtimeGameDeleted": {
     "description": "Playtime game deleted message"
   },
-  "scheduleForLater": "[TR] Schedule for Later",
+  "scheduleForLater": "Запланувати на потім",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "Erişim başarıyla iptal edildi",
+  "accessRevokedSuccessfully": "Доступ успішно скасовано",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "Tür",
+  "type": "Тип",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "[TR] Checking permissions...",
+  "checkingPermissions": "Перевірка дозволів",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
-  "copy": "Kopyala",
+  "copy": "Копіювати",
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "Evet, iptal et",
+  "yesCancel": "Так, скасувати",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "E-posta",
+  "email": "Електронна пошта",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "[TR] Share on WhatsApp",
+  "shareOnWhatsApp": "[UK] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "Bildirim ayarları",
+  "notificationSettings": "Налаштування сповіщень",
   "@notificationSettings": {
     "description": "Notification settings label"
   },
-  "myProfile": "[TR] My Profile",
+  "myProfile": "Мій профіль",
   "@myProfile": {
     "description": "My profile label"
   },
-  "revoke": "Geri al",
+  "revoke": "Скасувати",
   "@revoke": {
     "description": "Revoke button text"
   },
-  "noBroadcastMessages": "Yayın mesajı yok",
+  "noBroadcastMessages": "Немає трансляційних повідомлень",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "İstek türü",
+  "requestType": "Тип запиту",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "Bildirimler",
+  "notifications": "Сповіщення",
   "@notifications": {
     "description": "Notifications label"
   },
-  "details": "Detaylar",
+  "details": "Деталі",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "Daveti iptal et",
+  "cancelInvite": "Скасувати запрошення",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
-  "createNew": "Yeni oluştur",
+  "createNew": "Створити нове",
   "@createNew": {
     "description": "Create new button"
   },
-  "settings": "Ayarlar",
+  "settings": "Налаштування",
   "@settings": {
     "description": "Settings navigation label"
   },
-  "playtimeReject": "Playtime reddet",
+  "playtimeReject": "Відхилити Playtime",
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "[TR] Error loading profile",
+  "errorLoadingProfile": "Помилка завантаження профілю",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
-  "edit": "Düzenle",
+  "edit": "Редагувати",
   "@edit": {
     "description": "Edit button text"
   },
-  "add": "Ekle",
+  "add": "Додати",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "[TR] Game approved",
+  "playtimeGameApproved": "Гра схвалена",
   "@playtimeGameApproved": {
     "description": "Playtime game approved message"
   },
-  "forgotPassword": "Şifrenizi unuttunuz mu?",
+  "forgotPassword": "Забули пароль?",
   "@forgotPassword": {
     "description": "Forgot password link"
   },
-  "familyDashboard": "Aile panosu",
+  "familyDashboard": "Панель родини",
   "@familyDashboard": {
     "description": "Family dashboard label"
   },
-  "loading": "[TR] Loading...",
+  "loading": "Завантаження",
   "@loading": {
     "description": "Loading message"
   },
-  "quickActions": "Hızlı işlemler",
+  "quickActions": "Швидкі дії",
   "@quickActions": {
     "description": "Quick actions label"
   },
-  "playtimeTitle": "Playtime başlığı",
+  "playtimeTitle": "Заголовок Playtime",
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "OTP başarıyla yeniden gönderildi",
+  "otpResentSuccessfully": "OTP успішно надіслано повторно",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "[TR] Error checking permissions",
+  "errorCheckingPermissions": "Помилка перевірки дозволів",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "[TR] Client screen coming soon",
+  "clientScreenTBD": "Екран клієнта буде визначено пізніше",
   "@clientScreenTBD": {
     "description": "Client screen coming soon"
   },
-  "fcmToken": "FCM belirteci",
+  "fcmToken": "FCM токен",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "Resim seç",
+  "pickImage": "Вибрати зображення",
   "@pickImage": {
     "description": "Pick image button"
   },
-  "previous": "Önceki",
+  "previous": "Попередній",
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "[TR] No profile found",
+  "noProfileFound": "Профіль не знайдено",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "Henüz aile üyesi yok",
+  "noFamilyMembersYet": "Немає членів родини",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "Medya (isteğe bağlı)",
+  "mediaOptional": "Медіа (необов'язково)",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "Mesaj başarıyla kaydedildi",
+  "messageSavedSuccessfully": "Повідомлення успішно збережено",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
-  "scheduledFor": "[TR] Scheduled for",
+  "scheduledFor": "Заплановано на",
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "Pano",
+  "dashboard": "Панель керування",
   "@dashboard": {
     "description": "Dashboard label"
   },
-  "noPermissionForBroadcast": "Yayın izni yok",
+  "noPermissionForBroadcast": "Немає дозволу на трансляцію",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
-  "playtimeAdminPanelTitle": "Playtime yönetici paneli başlığı",
+  "playtimeAdminPanelTitle": "Заголовок панелі адміністратора Playtime",
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "Davet detayları",
+  "inviteDetail": "Деталі запрошення",
   "@inviteDetail": {
     "description": "Invite detail label"
   },
-  "scheduled": "[TR] Scheduled",
+  "scheduled": "Заплановано",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToCancelInvite": "Davet iptali yapılamadı",
+  "failedToCancelInvite": "Не вдалося скасувати запрошення",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "failedToResendOtp": "OTP yeniden gönderilemedi",
+  "failedToResendOtp": "Не вдалося повторно надіслати OTP",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "[TR] Scheduling",
+  "scheduling": "Планування",
   "@scheduling": {
     "description": "Scheduling status"
   },
-  "errorSavingMessage": "[TR] Error saving message",
+  "errorSavingMessage": "Помилка збереження повідомлення",
   "@errorSavingMessage": {
     "description": "Error saving message"
   },
-  "save": "Kaydet",
+  "save": "Зберегти",
   "@save": {
     "description": "Save button text"
   },
-  "playtimeApprove": "[TR] Approve",
+  "playtimeApprove": "Підтвердити Playtime",
   "@playtimeApprove": {
     "description": "Playtime approve button"
   },
-  "createYourFirstSession": "İlk oturumunuzu oluşturun",
+  "createYourFirstSession": "Створіть свою першу сесію",
   "@createYourFirstSession": {
     "description": "Create your first session message"
   },
-  "playtimeGameRejected": "Oyun reddedildi",
+  "playtimeGameRejected": "Гра відхилена",
   "@playtimeGameRejected": {
     "description": "Playtime game rejected message"
   },
-  "recentGames": "[TR] Recent Games",
+  "recentGames": "Останні ігри",
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "Mesajı özelleştir",
+  "customizeMessage": "Налаштувати повідомлення",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "errorSendingMessage": "[TR] Error sending message",
+  "errorSendingMessage": "Помилка надсилання повідомлення",
   "@errorSendingMessage": {
     "description": "Error sending message"
   },
-  "confirmPassword": "[TR] Confirm Password",
+  "confirmPassword": "Підтвердьте пароль",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "[TR] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "Помилка завантаження запитів приватності",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "Bağlı çocuklar",
+  "connectedChildren": "Підключені діти",
   "@connectedChildren": {
     "description": "Connected children label"
   },
-  "share": "Paylaş",
+  "share": "Поділитися",
   "@share": {
     "description": "Share button text"
   },
-  "playtimeEnterGameName": "[TR] Enter game name",
+  "playtimeEnterGameName": "Введіть назву гри",
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginToViewProfile": "[TR] Please log in to view your profile.",
-  "adminScreenTBD": "[TR] Admin screen coming soon",
+  "pleaseLoginToViewProfile": "Увійдіть, щоб переглянути профіль",
+  "adminScreenTBD": "[UK] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "back": "[TR] Back",
+  "back": "[UK] Back",
   "@back": {
     "description": "Back button text"
   },
-  "clicked": "[TR] Clicked",
+  "clicked": "[UK] Clicked",
   "@clicked": {
     "description": "Clicked status"
   },
-  "close": "[TR] Close",
+  "close": "[UK] Close",
   "@close": {
     "description": "Close button text"
   },
-  "createGame": "[TR] Create Game",
+  "createGame": "[UK] Create Game",
   "@createGame": {
     "description": "Create game button"
   },
-  "failedToRevokeAccess": "[TR] Failed to revoke access",
+  "failedToRevokeAccess": "[UK] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "groupNameOptional": "[TR] Group Name (Optional)",
+  "groupNameOptional": "[UK] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "knownGroupDetected": "[TR] Known group detected",
+  "knownGroupDetected": "[UK] Known group detected",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "link": "[TR] Link",
+  "link": "[UK] Link",
   "@link": {
     "description": "Link label"
   },
-  "managePermissions": "[TR] Manage Permissions",
+  "managePermissions": "[UK] Manage Permissions",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "meetingReadyMessage": "[TR] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[UK] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "myInvites": "[TR] My Invites",
+  "myInvites": "[UK] My Invites",
   "@myInvites": {
     "description": "My invites title"
   },
-  "pendingInvites": "[TR] Pending Invites",
+  "pendingInvites": "[UK] Pending Invites",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "playtimeChooseGame": "[TR] Choose a game",
+  "playtimeChooseGame": "[UK] Choose a game",
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "playtimeNoSessions": "[TR] No playtime sessions found.",
+  "playtimeNoSessions": "[UK] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "playtimeParentDashboardTitle": "[TR] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[UK] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "pleaseLoginForFamilyFeatures": "[TR] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[UK] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "pollOptions": "[TR] Poll Options",
+  "pollOptions": "[UK] Poll Options",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "statusColon": "[TR] Status:",
+  "statusColon": "[UK] Status:",
   "@statusColon": {
     "description": "Status colon label"
   }
