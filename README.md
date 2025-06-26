@@ -57,6 +57,20 @@ Appointment scheduling app built with Flutter with advanced features including A
    flutter run
 ```
 
+## CI Network Access Requirements
+
+The CI environment must allow outbound HTTPS to:
+- `storage.googleapis.com`
+- `pub.dev`
+
+### GitHub Actions (Enterprise)
+Go to **Settings → Actions → General**, and under "Network access," add those domains to the allowlist.
+
+### Self-Hosted Runners
+Update your firewall/proxy settings on the runner machines to permit connections to the above hosts.
+
+Without these, `flutter pub get`, `dart run build_runner`, and `flutter test` will fail.
+
 
 ## Environment Setup & Testing
 
