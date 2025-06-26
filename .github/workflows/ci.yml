@@ -29,6 +29,14 @@ jobs:
         with:
           flutter-version: '3.7.0'
           channel: stable
+      - name: Pre-flight: Verify network access
+        run: |
+          for host in pub.dev storage.googleapis.com; do
+            curl --head --fail https://$host || {
+              echo "❌ Cannot reach $host. Ensure it’s whitelisted in CI network settings."
+              exit 1
+            }
+          done
       - name: Verify Flutter Version
         run: flutter --version
       - name: Install dependencies
@@ -107,6 +115,14 @@ jobs:
         with:
           flutter-version: '3.7.0'
           channel: stable
+      - name: Pre-flight: Verify network access
+        run: |
+          for host in pub.dev storage.googleapis.com; do
+            curl --head --fail https://$host || {
+              echo "❌ Cannot reach $host. Ensure it’s whitelisted in CI network settings."
+              exit 1
+            }
+          done
       - name: Verify Flutter Version
         run: flutter --version
       - name: Install dependencies
@@ -143,6 +159,14 @@ jobs:
         with:
           flutter-version: '3.7.0'
           channel: stable
+      - name: Pre-flight: Verify network access
+        run: |
+          for host in pub.dev storage.googleapis.com; do
+            curl --head --fail https://$host || {
+              echo "❌ Cannot reach $host. Ensure it’s whitelisted in CI network settings."
+              exit 1
+            }
+          done
       - name: Verify Flutter Version
         run: flutter --version
       - name: Install dependencies
@@ -180,6 +204,14 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.7.0'
+      - name: Pre-flight: Verify network access
+        run: |
+          for host in pub.dev storage.googleapis.com; do
+            curl --head --fail https://$host || {
+              echo "❌ Cannot reach $host. Ensure it’s whitelisted in CI network settings."
+              exit 1
+            }
+          done
       - name: Verify Flutter Version
         run: flutter --version
       - name: Install dependencies
@@ -216,6 +248,14 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.7.0'
+      - name: Pre-flight: Verify network access
+        run: |
+          for host in pub.dev storage.googleapis.com; do
+            curl --head --fail https://$host || {
+              echo "❌ Cannot reach $host. Ensure it’s whitelisted in CI network settings."
+              exit 1
+            }
+          done
       - name: Verify Flutter Version
         run: flutter --version
       - name: Install dependencies
