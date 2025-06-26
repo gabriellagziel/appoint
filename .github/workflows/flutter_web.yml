@@ -12,10 +12,26 @@ jobs:
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      FLUTTER_CACHE_DIR: ~/.flutter
 
     steps:
     - uses: actions/checkout@v3
-    
+    - name: Cache Pub packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.pub-cache
+        key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pub-
+
+    - name: Cache Flutter SDK artifacts
+      uses: actions/cache@v3
+      with:
+        path: ${{ env.FLUTTER_CACHE_DIR }}
+        key: ${{ runner.os }}-flutter-${{ hashFiles('.github/workflows/**.yml') }}
+        restore-keys: |
+          ${{ runner.os }}-flutter-
+
     - name: Setup Flutter
       uses: subosito/flutter-action@v2
       with:
@@ -38,11 +54,11 @@ jobs:
     - name: Verify Flutter Version
       run: flutter --version
     
-    - name: Install dependencies
-      run: dart pub get
+    - name: Install dependencies offline
+      run: flutter pub get --offline
 
-    - name: Build runner
-      run: dart run build_runner build --delete-conflicting-outputs
+    - name: Run code generation offline
+      run: dart run build_runner build --delete-conflicting-outputs --offline
     
     - name: Verify formatting
       run: dart format --output=none --set-exit-if-changed .
@@ -53,7 +69,7 @@ jobs:
     - name: Run tests
       run: dart test --coverage
     - name: Run integration tests
-      run: dart test integration_test/
+      run: flutter test integration_test/
     
     - name: Build web
       run: flutter build web --release
