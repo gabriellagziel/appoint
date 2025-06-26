@@ -3,7 +3,7 @@
   "@refresh": {
     "description": "Refresh button text"
   },
-  "home": "TODO: Home",
+  "home": "Home",
   "@home": {
     "description": "Home navigation label"
   },
@@ -27,15 +27,15 @@
   "@scheduleMessage": {
     "description": "Schedule message button"
   },
-  "decline": "TODO: Decline",
+  "decline": "Decline",
   "@decline": {
     "description": "Decline button"
   },
-  "adminBroadcast": "TODO: Admin Broadcast",
+  "adminBroadcast": "Admin Broadcast",
   "@adminBroadcast": {
     "description": "Admin broadcast title"
   },
-  "login": "TODO: Login",
+  "login": "Login",
   "@login": {
     "description": "Login button text"
   },
@@ -43,7 +43,7 @@
   "@playtimeChooseFriends": {
     "description": "Choose friends label"
   },
-  "noInvites": "TODO: No invites",
+  "noInvites": "No invites",
   "@noInvites": {
     "description": "No invites message"
   },
@@ -59,7 +59,7 @@
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "TODO: Opened: {count}",
+  "opened": "Opened",
   "@opened": {
     "description": "Opened status"
   },
@@ -67,7 +67,7 @@
   "@createVirtualSession": {
     "description": "Create virtual session button"
   },
-  "messageSentSuccessfully": "TODO: Message sent successfully",
+  "messageSentSuccessfully": "Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "Message sent successfully message"
   },
@@ -75,7 +75,7 @@
   "@redo": {
     "description": "Redo button text"
   },
-  "next": "TODO: Next",
+  "next": "Next",
   "@next": {
     "description": "Next button text"
   },
@@ -83,19 +83,19 @@
   "@search": {
     "description": "Search placeholder text"
   },
-  "cancelInviteConfirmation": "TODO: Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "TODO: Created: {date}",
+  "created": "Created",
   "@created": {
     "description": "Created status"
   },
-  "revokeAccess": "TODO: Revoke Access",
+  "revokeAccess": "Revoke Access",
   "@revokeAccess": {
     "description": "Revoke access button"
   },
-  "saveGroupForRecognition": "TODO: Save group for future recognition",
+  "saveGroupForRecognition": "Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Save group for recognition label"
   },
@@ -103,7 +103,7 @@
   "@playtimeLiveScheduled": {
     "description": "Live playtime scheduled message"
   },
-  "revokeAccessConfirmation": "TODO: Are you sure you want to revoke access for this child? This action cannot be undone.",
+  "revokeAccessConfirmation": "Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Revoke access confirmation message"
   },
@@ -111,15 +111,15 @@
   "@download": {
     "description": "Download button text"
   },
-  "password": "TODO: Password",
+  "password": "Password",
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "TODO: Error loading family links: {error}",
+  "errorLoadingFamilyLinks": "Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Error loading family links message"
   },
-  "cancel": "TODO: Cancel",
+  "cancel": "Cancel",
   "@cancel": {
     "description": "Cancel button text"
   },
@@ -127,15 +127,15 @@
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "TODO: Failed to {action} privacy request: {error}",
+  "failedToActionPrivacyRequest": "Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "Failed to action privacy request message"
   },
-  "appTitle": "TODO: Appoint",
+  "appTitle": "APP-OINT",
   "@appTitle": {
     "description": "The title of the application"
   },
-  "accept": "TODO: Accept",
+  "accept": "Accept",
   "@accept": {
     "description": "Accept button"
   },
@@ -163,7 +163,7 @@
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "TODO: Recipients: {count}",
+  "recipients": "Recipients",
   "@recipients": {
     "description": "Recipients label"
   },
@@ -171,11 +171,11 @@
   "@noResults": {
     "description": "No search results message"
   },
-  "yes": "TODO: Yes",
+  "yes": "Yes",
   "@yes": {
     "description": "Yes button text"
   },
-  "invite": "TODO: Invite",
+  "invite": "Invite",
   "@invite": {
     "description": "Invite button"
   },
@@ -187,11 +187,11 @@
   "@done": {
     "description": "Done button text"
   },
-  "defaultShareMessage": "TODO: Hey! I've scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:",
+  "defaultShareMessage": "Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Default share message"
   },
-  "no": "TODO: No",
+  "no": "No",
   "@no": {
     "description": "No button text"
   },
@@ -207,19 +207,19 @@
   "@createLiveSession": {
     "description": "Create live session button"
   },
-  "enableNotifications": "TODO: Enable Notifications",
+  "enableNotifications": "Enable Notifications",
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "TODO: Invited: {date}",
+  "invited": "Invited",
   "@invited": {
     "description": "Invited status"
   },
-  "content": "TODO: Content: {content}",
+  "content": "Content",
   "@content": {
     "description": "Content label"
   },
-  "meetingSharedSuccessfully": "TODO: Meeting shared successfully!",
+  "meetingSharedSuccessfully": "Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Meeting shared successfully message"
   },
@@ -235,7 +235,7 @@
   "@playtimeVirtual": {
     "description": "Virtual play label"
   },
-  "staffScreenTBD": "TODO: Staff Screen - To Be Developed",
+  "staffScreenTBD": "Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Staff screen TBD message"
   },
@@ -243,7 +243,7 @@
   "@cut": {
     "description": "Cut button text"
   },
-  "inviteCancelledSuccessfully": "TODO: Invite cancelled successfully!",
+  "inviteCancelledSuccessfully": "Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Invite cancelled successfully message"
   },
@@ -251,11 +251,11 @@
   "@retry": {
     "description": "Retry button text"
   },
-  "composeBroadcastMessage": "TODO: Compose Broadcast Message",
+  "composeBroadcastMessage": "Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "Compose broadcast message title"
   },
-  "sendNow": "TODO: Send Now",
+  "sendNow": "Send Now",
   "@sendNow": {
     "description": "Send now button"
   },
@@ -275,15 +275,15 @@
   "@choose": {
     "description": "Choose button text"
   },
-  "profile": "TODO: Profile",
+  "profile": "Profile",
   "@profile": {
     "description": "Profile navigation label"
   },
-  "removeChild": "TODO: Remove Child",
+  "removeChild": "Remove Child",
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "TODO: Status: {status}",
+  "status": "Status",
   "@status": {
     "description": "Status label"
   },
@@ -295,7 +295,7 @@
   "@paste": {
     "description": "Paste button text"
   },
-  "welcome": "TODO: Welcome",
+  "welcome": "Welcome",
   "@welcome": {
     "description": "Welcome message"
   },
@@ -303,7 +303,7 @@
   "@playtimeCreateSession": {
     "description": "Create playtime session button"
   },
-  "familyMembers": "TODO: Family Members",
+  "familyMembers": "Family Members",
   "@familyMembers": {
     "description": "Family members label"
   },
@@ -315,7 +315,7 @@
   "@upcomingSessions": {
     "description": "Upcoming sessions label"
   },
-  "enterGroupName": "TODO: Enter group name for recognition",
+  "enterGroupName": "Enter group name",
   "@enterGroupName": {
     "description": "Enter group name placeholder"
   },
@@ -327,15 +327,15 @@
   "@playtimeLive": {
     "description": "Live play label"
   },
-  "errorLoadingInvites": "TODO: Error loading invites",
+  "errorLoadingInvites": "Error loading invites",
   "@errorLoadingInvites": {
     "description": "Error loading invites message"
   },
-  "targetingFilters": "TODO: Targeting Filters",
+  "targetingFilters": "Targeting Filters",
   "@targetingFilters": {
     "description": "Targeting filters label"
   },
-  "pickVideo": "TODO: Pick Video",
+  "pickVideo": "Pick Video",
   "@pickVideo": {
     "description": "Pick video button"
   },
@@ -343,19 +343,19 @@
   "@playtimeGameDeleted": {
     "description": "Game deleted message"
   },
-  "scheduleForLater": "TODO: Schedule for later",
+  "scheduleForLater": "Schedule for Later",
   "@scheduleForLater": {
     "description": "Schedule for later button"
   },
-  "accessRevokedSuccessfully": "TODO: Access revoked successfully!",
+  "accessRevokedSuccessfully": "Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "TODO: Type: {type}",
+  "type": "Type",
   "@type": {
     "description": "Type label"
   },
-  "checkingPermissions": "TODO: Checking permissions...",
+  "checkingPermissions": "Checking permissions...",
   "@checkingPermissions": {
     "description": "Checking permissions message"
   },
@@ -363,47 +363,47 @@
   "@copy": {
     "description": "Copy button text"
   },
-  "yesCancel": "TODO: Yes, Cancel",
+  "yesCancel": "Yes, Cancel",
   "@yesCancel": {
     "description": "Yes cancel button"
   },
-  "email": "TODO: Email",
+  "email": "Email",
   "@email": {
     "description": "Email field label"
   },
-  "shareOnWhatsApp": "TODO: Share on WhatsApp",
+  "shareOnWhatsApp": "Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Share on WhatsApp button"
   },
-  "notificationSettings": "TODO: Notification Settings",
+  "notificationSettings": "Notification Settings",
   "@notificationSettings": {
     "description": "Notification settings title"
   },
-  "myProfile": "TODO: My Profile",
+  "myProfile": "My Profile",
   "@myProfile": {
     "description": "My profile title"
   },
-  "revoke": "TODO: Revoke",
+  "revoke": "Revoke",
   "@revoke": {
     "description": "Revoke button"
   },
-  "noBroadcastMessages": "TODO: No broadcast messages yet",
+  "noBroadcastMessages": "No messages yet",
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "TODO: {type} Request",
+  "requestType": "Request Type",
   "@requestType": {
     "description": "Request type label"
   },
-  "notifications": "TODO: Notifications",
+  "notifications": "Notifications",
   "@notifications": {
     "description": "Notifications title"
   },
-  "details": "TODO: Details",
+  "details": "Details",
   "@details": {
     "description": "Details label"
   },
-  "cancelInvite": "TODO: Cancel Invite",
+  "cancelInvite": "Cancel Invite",
   "@cancelInvite": {
     "description": "Cancel invite button"
   },
@@ -419,7 +419,7 @@
   "@playtimeReject": {
     "description": "Playtime reject button"
   },
-  "errorLoadingProfile": "TODO: Error loading profile",
+  "errorLoadingProfile": "Error loading profile",
   "@errorLoadingProfile": {
     "description": "Error loading profile message"
   },
@@ -439,11 +439,11 @@
   "@forgotPassword": {
     "description": "Forgot password link text"
   },
-  "familyDashboard": "TODO: Family Dashboard",
+  "familyDashboard": "Family Dashboard",
   "@familyDashboard": {
     "description": "Family dashboard title"
   },
-  "loading": "TODO: Loading...",
+  "loading": "Loading...",
   "@loading": {
     "description": "Loading message"
   },
@@ -455,23 +455,23 @@
   "@playtimeTitle": {
     "description": "Playtime title"
   },
-  "otpResentSuccessfully": "TODO: OTP resent successfully!",
+  "otpResentSuccessfully": "OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "TODO: Error checking permissions: {error}",
+  "errorCheckingPermissions": "Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "Error checking permissions message"
   },
-  "clientScreenTBD": "TODO: Client Screen - To Be Developed",
+  "clientScreenTBD": "Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "TODO: FCM Token: {token}",
+  "fcmToken": "FCM Token",
   "@fcmToken": {
     "description": "FCM token label"
   },
-  "pickImage": "TODO: Pick Image",
+  "pickImage": "Pick Image",
   "@pickImage": {
     "description": "Pick image button"
   },
@@ -479,19 +479,19 @@
   "@previous": {
     "description": "Previous button text"
   },
-  "noProfileFound": "TODO: No profile found",
+  "noProfileFound": "No profile found",
   "@noProfileFound": {
     "description": "No profile found message"
   },
-  "noFamilyMembersYet": "TODO: No family members yet. Invite someone to get started!",
+  "noFamilyMembersYet": "No family members yet",
   "@noFamilyMembersYet": {
     "description": "No family members yet message"
   },
-  "mediaOptional": "TODO: Media (Optional)",
+  "mediaOptional": "Media (Optional)",
   "@mediaOptional": {
     "description": "Media optional label"
   },
-  "messageSavedSuccessfully": "TODO: Message saved successfully",
+  "messageSavedSuccessfully": "Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "Message saved successfully message"
   },
@@ -499,11 +499,11 @@
   "@scheduledFor": {
     "description": "Scheduled for label"
   },
-  "dashboard": "TODO: Dashboard",
+  "dashboard": "Dashboard",
   "@dashboard": {
     "description": "Dashboard title"
   },
-  "noPermissionForBroadcast": "TODO: You do not have permission to create broadcast messages.",
+  "noPermissionForBroadcast": "No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "No permission for broadcast message"
   },
@@ -511,27 +511,27 @@
   "@playtimeAdminPanelTitle": {
     "description": "Playtime admin panel title"
   },
-  "inviteDetail": "TODO: Invite Detail",
+  "inviteDetail": "Invite Details",
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "TODO: Scheduled: {date}",
+  "scheduled": "Scheduled",
   "@scheduled": {
     "description": "Scheduled status"
   },
-  "failedToResendOtp": "TODO: Failed to resend OTP: {error}",
+  "failedToResendOtp": "Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Failed to resend OTP message"
   },
-  "scheduling": "TODO: Scheduling",
+  "scheduling": "Scheduling",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "TODO: Error saving message: {error}",
+  "errorSavingMessage": "Error saving message",
   "@errorSavingMessage": {
     "description": "Error saving message message"
   },
-  "save": "TODO: Save",
+  "save": "Save",
   "@save": {
     "description": "Save button text"
   },
@@ -547,7 +547,7 @@
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "TODO: Failed to revoke access: {error}",
+  "failedToRevokeAccess": "Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
@@ -555,15 +555,15 @@
   "@recentGames": {
     "description": "Recent games label"
   },
-  "customizeMessage": "TODO: Customize your message...",
+  "customizeMessage": "Customize Message",
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "TODO: Failed to cancel invite: {error}",
+  "failedToCancelInvite": "Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "TODO: Error sending message: {error}",
+  "errorSendingMessage": "Error sending message",
   "@errorSendingMessage": {
     "description": "Error sending message message"
   },
@@ -571,11 +571,11 @@
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "TODO: Error loading privacy requests: {error}",
+  "errorLoadingPrivacyRequests": "Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "Error loading privacy requests message"
   },
-  "connectedChildren": "TODO: Connected Children",
+  "connectedChildren": "Connected Children",
   "@connectedChildren": {
     "description": "Connected children label"
   },
@@ -587,11 +587,11 @@
   "@playtimeEnterGameName": {
     "description": "Enter game name label"
   },
-  "pleaseLoginForFamilyFeatures": "TODO: Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "myInvites": "TODO: My Invites",
+  "myInvites": "My Invites",
   "@myInvites": {
     "description": "My invites title"
   },
@@ -599,7 +599,7 @@
   "@createGame": {
     "description": "Create game button"
   },
-  "groupNameOptional": "TODO: Group Name (optional)",
+  "groupNameOptional": "Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
@@ -607,7 +607,7 @@
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "adminScreenTBD": "TODO: Admin Screen - To Be Developed",
+  "adminScreenTBD": "Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
@@ -615,11 +615,11 @@
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "close": "TODO: Close",
+  "close": "Close",
   "@close": {
     "description": "Close button text"
   },
-  "knownGroupDetected": "TODO: Known group detected",
+  "knownGroupDetected": "Known group detected",
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
@@ -631,33 +631,34 @@
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "managePermissions": "TODO: Manage Permissions",
+  "managePermissions": "Manage Permissions",
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "pollOptions": "TODO: Poll Options:",
+  "pollOptions": "Poll Options",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "TODO: Clicked: {count}",
+  "clicked": "Clicked",
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "TODO: Link: {link}",
+  "link": "Link",
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "TODO: The meeting is ready! Would you like to send it to your group?",
+  "meetingReadyMessage": "Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "TODO: Pending Invites",
+  "pendingInvites": "Pending Invites",
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "TODO: Status: {status}",
+  "statusColon": "Status:",
   "@statusColon": {
     "description": "Status colon label"
   },
-  "@@locale": "nl"
+  "@@locale": "nl",
+  "pleaseLoginToViewProfile": "Please log in to view your profile."
 }

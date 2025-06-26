@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io';
 
@@ -12,7 +11,8 @@ import '../models/playtime_chat.dart';
 class PlaytimeService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  final FirebaseStorage _storage = FirebaseStorage.instance;
+  // TODO: Integrate a storage solution for non-web platforms
+  // final FirebaseStorage _storage = FirebaseStorage.instance;
 
   // Collections
   static const String _gamesCollection = 'playtime_games';
@@ -144,12 +144,8 @@ class PlaytimeService {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');
 
-      // Upload image to Firebase Storage
-      final fileName =
-          'backgrounds/${DateTime.now().millisecondsSinceEpoch}_${imageFile.path.split('/').last}';
-      final ref = _storage.ref().child(fileName);
-      await ref.putFile(imageFile);
-      final imageUrl = await ref.getDownloadURL();
+      // TODO: Upload image to a storage service
+      final imageUrl = 'TODO: image url';
 
       final docRef = await _firestore.collection(_backgroundsCollection).add({
         'imageUrl': imageUrl,
