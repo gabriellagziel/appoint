@@ -48,12 +48,12 @@ jobs:
       run: dart format --output=none --set-exit-if-changed .
     
     - name: Analyze project source
-      run: flutter analyze
+      run: dart analyze
     
     - name: Run tests
       run: dart test --coverage
     - name: Run integration tests
-      run: flutter test integration_test/
+      run: dart test integration_test/
     
     - name: Build web
       run: flutter build web --release
