@@ -13,8 +13,24 @@ jobs:
       env:
         PUB_HOSTED_URL: https://pub.dev
         FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+        FLUTTER_CACHE_DIR: ~/.flutter
       steps:
         - uses: actions/checkout@v3
+        - name: Cache Pub packages
+          uses: actions/cache@v3
+          with:
+            path: ~/.pub-cache
+            key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+            restore-keys: |
+              ${{ runner.os }}-pub-
+
+        - name: Cache Flutter SDK artifacts
+          uses: actions/cache@v3
+          with:
+            path: ${{ env.FLUTTER_CACHE_DIR }}
+            key: ${{ runner.os }}-flutter-${{ hashFiles('.github/workflows/**.yml') }}
+            restore-keys: |
+              ${{ runner.os }}-flutter-
         - name: Set up Flutter
           uses: subosito/flutter-action@v2
           with:
@@ -35,11 +51,13 @@ jobs:
             done
         - name: Verify Flutter Version
           run: flutter --version
-        - run: dart pub get
-        - run: dart run build_runner build --delete-conflicting-outputs
+        - name: Install dependencies offline
+          run: flutter pub get --offline
+        - name: Run code generation offline
+          run: dart run build_runner build --delete-conflicting-outputs --offline
         - run: dart analyze
         - run: dart test --coverage
-        - run: dart test integration_test/
+        - run: flutter test integration_test/
         - run: flutter build web
         - uses: codecov/codecov-action@v3
           with:
