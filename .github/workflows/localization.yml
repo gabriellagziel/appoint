@@ -40,7 +40,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '16.x'
           cache: 'npm'
       
       - name: Install cspell
@@ -50,12 +50,12 @@ jobs:
         run: dart pub get
       - name: Build runner
         run: dart run build_runner build --delete-conflicting-outputs
-      - name: Flutter analyze
-        run: flutter analyze
+      - name: Dart analyze
+        run: dart analyze
       - name: Flutter tests
         run: dart test --coverage
-      - name: Flutter integration tests
-        run: flutter test integration_test/
+      - name: Integration tests
+        run: dart test integration_test/
       - name: Flutter build web
         run: flutter build web
       
@@ -100,8 +100,8 @@ jobs:
           fi
           echo "✅ Generated $actual_count localization files"
       
-      - name: Flutter analyze
-        run: flutter analyze
+      - name: Dart analyze
+        run: dart analyze
       
       - name: Spell check ARB files
         run: |
