@@ -15,7 +15,6 @@ import 'package:appoint/models/admin_dashboard_stats.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import '../../fake_firebase_setup.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 
 // Generate mocks
 @GenerateMocks([AdminService, FirebaseAuth, FirebaseFirestore])
