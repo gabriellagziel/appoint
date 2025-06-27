@@ -28,7 +28,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -76,6 +76,7 @@ jobs:
         run: |
           (firebase emulators:start --only firestore,auth || sleep 5 && firebase emulators:start --only firestore,auth) &
           echo $! > emulator.pid
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
       - run: dart test integration_test/
       - run: flutter build web
@@ -95,7 +96,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -135,6 +136,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage test/features/studio/content_library_screen_test.dart
 
   deploy-functions:
@@ -150,7 +152,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -203,7 +205,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -243,6 +245,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
       - run: dart test integration_test/
       - name: Build Web App
@@ -265,7 +268,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -305,6 +308,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
       - run: dart test integration_test/
       - run: flutter build web
@@ -326,7 +330,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -366,6 +370,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
       - run: dart test integration_test/
       - run: flutter build web
@@ -387,7 +392,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -423,6 +428,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
       - run: dart test integration_test/
       - run: flutter build web
