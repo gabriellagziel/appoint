@@ -12,3 +12,4 @@ flutter.tar.xz
 !web/assets/.env
 .flutter-plugins-dependencies
 pubspec.lock
+third_party/pub_cache/
