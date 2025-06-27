@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 
 /// TODO: Implement detailed content view
 class ContentDetailScreen extends StatelessWidget {
-  const ContentDetailScreen({super.key});
+  final String contentId;
+
+  const ContentDetailScreen({super.key, required this.contentId});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+      appBar: AppBar(title: const Text('Content Detail')),
       body: Center(
-        child: Text('Content Detail'),
+        child: Text('Content ID: $contentId'),
       ),
     );
   }
