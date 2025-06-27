@@ -28,7 +28,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -78,7 +78,9 @@ jobs:
         run: |
           firebase emulators:start --only auth,firestore &
           echo $! > emulator.pid
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Stop emulators
@@ -97,7 +99,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -137,6 +139,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage test/features/studio/content_library_screen_test.dart
 
   deploy-functions:
@@ -152,7 +155,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -205,7 +208,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -245,7 +248,9 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
       - name: Build Web App
         run: flutter build web --release
@@ -267,7 +272,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -307,7 +312,9 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Run Smoke Tests
@@ -328,7 +335,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -368,7 +375,9 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Run Security Scan
@@ -389,7 +398,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -425,7 +434,9 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter pub downgrade || true
       - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Notify on Success
