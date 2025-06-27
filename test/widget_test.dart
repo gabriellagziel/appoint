@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:appoint/extensions/fl_chart_color_shim.dart';
+import 'fake_firebase_setup.dart';
 
-// Minimal smoke test that does not require Firebase initialization.
+// Minimal smoke test for the app.
 
-void main() {
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
+
   testWidgets('App smoke test', (WidgetTester tester) async {
     await tester.pumpWidget(
       const MaterialApp(
