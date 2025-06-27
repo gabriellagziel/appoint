@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+// TODO: Implement according to spec §2.1
+
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
@@ -24,7 +26,7 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () => Navigator.pushNamed(context, '/profile/edit'),
-              child: const Text('Edit'),
+              child: const Text('Edit Profile'),
             ),
           ],
         ),
