@@ -6,7 +6,6 @@ import 'package:appoint/features/admin/REDACTED_TOKEN.dart';
 import 'package:appoint/features/admin/REDACTED_TOKEN.dart';
 import 'package:appoint/features/admin/admin_error_logs_demo_screen.dart';
 import 'package:appoint/features/admin/admin_demo_panel_screen.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import '../../fake_firebase_setup.dart';
 
 Future<void> main() async {

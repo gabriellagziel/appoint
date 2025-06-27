@@ -3,7 +3,6 @@ import 'package:flutter_test/flutter_test.dart';
 // ignore_for_file: unused_local_variable, undefined_identifier, REDACTED_TOKEN
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../fake_firebase_setup.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import 'package:appoint/services/family_service.dart';
 import 'package:appoint/providers/otp_provider.dart';
 import 'package:appoint/providers/family_provider.dart';
