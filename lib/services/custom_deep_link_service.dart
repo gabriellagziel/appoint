@@ -13,6 +13,8 @@ class CustomDeepLinkService {
   }
   StreamSubscription? _linkSubscription;
   StreamSubscription? _initialLinkSubscription;
+  // GlobalKey is kept for future navigation features.
+  // ignore: unused_field
   GlobalKey<NavigatorState>? _navigatorKey;
 
   /// Set the navigator key for navigation
@@ -114,7 +116,9 @@ class CustomDeepLinkService {
     */
   }
 
-  /// Navigate to meeting details screen
+  // Navigate helper methods are kept for potential future use. They are
+  // commented out to silence analysis warnings.
+  /*
   Future<void> _navigateToMeeting(
     String meetingId,
     String? creatorId,
@@ -132,11 +136,10 @@ class CustomDeepLinkService {
         },
       );
     } else {
-      print('Navigator key not set, cannot navigate to meeting: $meetingId');
+      print('Navigator key not set, cannot navigate to meeting: \$meetingId');
     }
   }
 
-  /// Navigate to invite details screen
   Future<void> _navigateToInvite(String inviteId) async {
     if (_navigatorKey?.currentState != null) {
       _navigatorKey!.currentState!.pushNamed(
@@ -144,11 +147,10 @@ class CustomDeepLinkService {
         arguments: {'inviteId': inviteId},
       );
     } else {
-      print('Navigator key not set, cannot navigate to invite: $inviteId');
+      print('Navigator key not set, cannot navigate to invite: \$inviteId');
     }
   }
 
-  /// Navigate to booking details screen
   Future<void> _navigateToBooking(String bookingId) async {
     if (_navigatorKey?.currentState != null) {
       _navigatorKey!.currentState!.pushNamed(
@@ -156,9 +158,10 @@ class CustomDeepLinkService {
         arguments: {'bookingId': bookingId},
       );
     } else {
-      print('Navigator key not set, cannot navigate to booking: $bookingId');
+      print('Navigator key not set, cannot navigate to booking: \$bookingId');
     }
   }
+  */
 
   /// Create a deep link for a meeting using custom URL scheme
   Future<String> createMeetingLink({
