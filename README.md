@@ -64,7 +64,13 @@ The CI environment must allow outbound HTTPS to:
 - `pub.dev`
 
 ### GitHub Actions (Enterprise)
-Go to **Settings → Actions → General**, and under "Network access," add those domains to the allowlist.
+Go to **Settings → Actions → General**, and under "Network access," add those domains to the allowlist. Alternatively run:
+
+```bash
+scripts/update_network_allowlist.sh <enterprise> <token>
+```
+
+Where `<token>` has `admin:enterprise` scope.
 
 ### Self-Hosted Runners
 Update your firewall/proxy settings on the runner machines to permit connections to the above hosts.
