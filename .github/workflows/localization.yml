@@ -20,6 +20,8 @@ jobs:
         uses: flutter-actions/setup-flutter@v2
         with:
           flutter-version: '3.20.0'
+      - name: Ensure flutter in PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -56,9 +58,14 @@ jobs:
         run: flutter pub get --offline
       - run: flutter analyze
       - run: dart analyze
-      - run: dart test --coverage
+      - run: flutter test --coverage test/
       - run: dart test integration_test/
       - run: flutter build web
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
       - name: Validate ARB files structure
         run: |
           echo "Checking ARB files structure..."
