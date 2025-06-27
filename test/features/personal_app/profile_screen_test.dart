@@ -11,7 +11,7 @@ Future<void> main() async {
       expect(find.byType(CircleAvatar), findsOneWidget);
       expect(find.text('Username'), findsOneWidget);
       expect(find.text('Bio'), findsOneWidget);
-      expect(find.text('Edit'), findsOneWidget);
+      expect(find.text('Edit Profile'), findsOneWidget);
     });
   });
 }
