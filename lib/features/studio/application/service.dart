@@ -1,1 +1,3 @@
-class StudioService { /* TODO: implement per spec §4.2 */ }
+class StudioService {
+  // Placeholder service for studio-related features
+}
