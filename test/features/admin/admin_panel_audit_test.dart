@@ -6,8 +6,12 @@ import 'package:appoint/features/admin/admin_demo_panel_screen.dart';
 import 'package:appoint/features/admin/admin_monetization_control_demo_screen.dart';
 import 'package:appoint/features/admin/admin_broadcast_system_demo_screen.dart';
 import 'package:appoint/features/admin/admin_error_logs_demo_screen.dart';
+import 'package:appoint/extensions/fl_chart_color_shim.dart';
+import '../../fake_firebase_setup.dart';
 
-void main() {
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
   group('Admin Panel System Audit', () {
     testWidgets('Admin Demo Panel renders all navigation tiles correctly',
         (tester) async {

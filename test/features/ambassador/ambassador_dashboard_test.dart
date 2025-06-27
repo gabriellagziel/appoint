@@ -1,8 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../../lib/models/ambassador_stats.dart';
+import 'package:appoint/extensions/fl_chart_color_shim.dart';
+import '../../fake_firebase_setup.dart';
 
-void main() {
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
   group('Ambassador Dashboard Logic Tests', () {
     test('filters chart data based on country filter', () {
       final data = AmbassadorData(
