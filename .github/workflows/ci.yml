@@ -71,12 +71,10 @@ jobs:
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
       - name: Download Firebase emulators
-        run: |
-          firebase setup:emulators:firestore
-          firebase setup:emulators:auth
+        run: firebase setup:emulators:download --only firestore,auth
       - name: Start Firebase emulators
         run: |
-          firebase emulators:start --only auth,firestore &
+          (firebase emulators:start --only firestore,auth || sleep 5 && firebase emulators:start --only firestore,auth) &
           echo $! > emulator.pid
       - run: flutter test --coverage
       - run: dart test integration_test/
