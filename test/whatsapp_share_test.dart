@@ -2,7 +2,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/services/whatsapp_share_service.dart';
 import 'package:appoint/models/smart_share_link.dart';
 import './fake_firebase_setup.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import 'package:mockito/mockito.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';

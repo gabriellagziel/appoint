@@ -3,7 +3,6 @@ import 'package:appoint/models/appointment.dart';
 import 'package:appoint/models/contact.dart';
 import 'package:appoint/models/invite.dart';
 import '../fake_firebase_setup.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
