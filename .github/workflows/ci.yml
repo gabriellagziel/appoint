@@ -50,6 +50,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter test --coverage
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -60,6 +61,7 @@ jobs:
         run: |
           firebase emulators:start --only firestore,functions &
           echo $! > emulator.pid
+      - run: flutter test --coverage
       - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
@@ -192,6 +194,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter test --coverage
       - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
@@ -235,6 +238,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter test --coverage
       - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
@@ -278,6 +282,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter test --coverage
       - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
