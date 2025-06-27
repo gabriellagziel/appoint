@@ -15,11 +15,9 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
 
     steps:
-    - name: Set up Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: '3.7.0'
     - uses: actions/checkout@v3
+    - name: Use bundled Flutter SDK
+      run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
     - name: Cache Pub packages
       uses: actions/cache@v3
       with:
@@ -33,6 +31,11 @@ jobs:
       run: flutter --version
     - name: Verify Dart Version
       run: dart --version
+    - name: "Pre-flight: Verify network access"
+      run: |
+        for host in pub.dev storage.googleapis.com; do
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
+        done
     - run: flutter pub get
     - run: dart pub get
     - run: dart run build_runner build --delete-conflicting-outputs
