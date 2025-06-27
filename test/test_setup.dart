@@ -55,6 +55,15 @@ Future<void> registerFirebaseMock() async {
     }
   });
 
+  // Handle new Pigeon API channel for Firebase Auth
+  const MethodChannel firebaseAuthApiChannel =
+      MethodChannel('dev.flutter.pigeon.REDACTED_TOKEN.FirebaseAuthHostApi');
+  REDACTED_TOKEN.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(firebaseAuthApiChannel, (MethodCall methodCall) async {
+    print('[Mock] firebaseAuthApiChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    return null;
+  });
+
   // Mock Cloud Firestore
   const MethodChannel cloudFirestoreChannel =
       MethodChannel('plugins.flutter.io/cloud_firestore');
@@ -80,6 +89,15 @@ Future<void> registerFirebaseMock() async {
       default:
         return null;
     }
+  });
+
+  // Handle new Pigeon API channel for Cloud Firestore
+  const MethodChannel cloudFirestoreApiChannel =
+      MethodChannel('dev.flutter.pigeon.cloud_firestore.FirebaseFirestoreHostApi');
+  REDACTED_TOKEN.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(cloudFirestoreApiChannel, (MethodCall methodCall) async {
+    print('[Mock] cloudFirestoreApiChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    return null;
   });
 
   // Mock Firebase Storage
