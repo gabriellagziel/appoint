@@ -1,9 +1,8 @@
-@Skip('Pending Firebase setup conflicts')
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../test_setup.dart';
+import '../../fake_firebase_setup.dart';
 import 'package:appoint/features/admin/admin_broadcast_screen.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:mockito/mockito.dart';
@@ -17,7 +16,7 @@ late MockFirebaseFirestore mockFirestore;
 
 void main() {
   setUpAll(() async {
-    await registerFirebaseMock();
+    await initializeTestFirebase();
     mockFirestore = MockFirebaseFirestore();
     broadcastService = BroadcastService(firestore: mockFirestore);
     // Stub FirebaseAnalytics if used

@@ -1,14 +1,12 @@
-@Skip('Pending Firebase setup conflicts')
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/services/admin_service.dart';
-import '../test_setup.dart';
+import '../fake_firebase_setup.dart';
 import 'package:mockito/mockito.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() {
   setUpAll(() async {
-    await registerFirebaseMock();
+    await initializeTestFirebase();
   });
 
   group('AdminService', () {
