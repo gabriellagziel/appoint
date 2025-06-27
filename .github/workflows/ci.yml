@@ -84,6 +84,55 @@ jobs:
         if: always()
         run: kill $(cat emulator.pid)
 
+  content-library-test:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    env:
+      PUB_HOSTED_URL: http://localhost:4873
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      FLUTTER_CACHE_DIR: ~/.flutter
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
+      - name: Clear Flutter cache
+        run: flutter clean
+      - name: Verify Flutter Version
+        run: flutter --version
+      - name: Pre-flight: Verify network access & Dart
+        run: |
+          dart --version
+          for host in pub.dev storage.googleapis.com; do
+            curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
+          done
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      - name: Install Verdaccio
+        run: npm install -g verdaccio
+      - name: Start Verdaccio
+        run: verdaccio --config verdaccio.yaml & sleep 5
+      - name: Configure Pub Cache
+        run: |
+          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - run: flutter pub get
+      - run: dart pub get
+      - run: dart run build_runner build --delete-conflicting-outputs
+      - run: flutter analyze
+      - run: dart analyze
+      - run: flutter test --coverage test/features/studio/content_library_screen_test.dart
+
   deploy-functions:
     needs: build-and-test
     runs-on: ubuntu-latest
