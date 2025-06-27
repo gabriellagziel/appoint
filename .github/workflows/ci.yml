@@ -44,13 +44,19 @@ jobs:
           for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
+      - name: Install Verdaccio
+        run: npm install -g verdaccio
+      - name: Start Verdaccio
+        run: |
+          verdaccio --config ./verdaccio.yaml &
+          sleep 5
+      - name: Configure Pub to use local proxy
+        run: |
+          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Set PUB_CACHE for offline
-        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Fetch dependencies offline
-        run: flutter pub get --offline
       - run: flutter analyze
       - run: dart analyze
       - run: flutter test --coverage
@@ -147,13 +153,19 @@ jobs:
           for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
+      - name: Install Verdaccio
+        run: npm install -g verdaccio
+      - name: Start Verdaccio
+        run: |
+          verdaccio --config ./verdaccio.yaml &
+          sleep 5
+      - name: Configure Pub to use local proxy
+        run: |
+          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Set PUB_CACHE for offline
-        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Fetch dependencies offline
-        run: flutter pub get --offline
       - run: flutter analyze
       - run: dart analyze
       - name: Set up Node.js
@@ -198,13 +210,19 @@ jobs:
           for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
+      - name: Install Verdaccio
+        run: npm install -g verdaccio
+      - name: Start Verdaccio
+        run: |
+          verdaccio --config ./verdaccio.yaml &
+          sleep 5
+      - name: Configure Pub to use local proxy
+        run: |
+          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Set PUB_CACHE for offline
-        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Fetch dependencies offline
-        run: flutter pub get --offline
       - run: flutter analyze
       - run: dart analyze
       - run: flutter test --coverage
@@ -245,13 +263,19 @@ jobs:
           for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
+      - name: Install Verdaccio
+        run: npm install -g verdaccio
+      - name: Start Verdaccio
+        run: |
+          verdaccio --config ./verdaccio.yaml &
+          sleep 5
+      - name: Configure Pub to use local proxy
+        run: |
+          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Set PUB_CACHE for offline
-        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Fetch dependencies offline
-        run: flutter pub get --offline
       - run: flutter analyze
       - run: dart analyze
       - run: flutter test --coverage
@@ -292,13 +316,19 @@ jobs:
           for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
+      - name: Install Verdaccio
+        run: npm install -g verdaccio
+      - name: Start Verdaccio
+        run: |
+          verdaccio --config ./verdaccio.yaml &
+          sleep 5
+      - name: Configure Pub to use local proxy
+        run: |
+          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Set PUB_CACHE for offline
-        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Fetch dependencies offline
-        run: flutter pub get --offline
       - run: flutter analyze
       - run: dart analyze
       - run: flutter test --coverage
