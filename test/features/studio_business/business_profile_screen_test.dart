@@ -3,7 +3,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import '../../fake_firebase_setup.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
