@@ -24,6 +24,7 @@ import '../models/invite.dart';
 import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import '../features/invite/invite_list_screen.dart';
+import '../features/personal_app/ui/content_detail_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -135,6 +136,13 @@ class AppRouter {
         final invite = settings.arguments as Invite;
         return MaterialPageRoute(
           builder: (_) => InviteDetailScreen(invite: invite),
+          settings: settings,
+        );
+      case '/content/:id':
+        final args = settings.arguments as Map<String, dynamic>? ?? {};
+        final id = args['id'] as String? ?? '';
+        return MaterialPageRoute(
+          builder: (_) => ContentDetailScreen(id: id),
           settings: settings,
         );
       case '/booking/details':
