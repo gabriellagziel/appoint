@@ -1,18 +1,16 @@
-@Skip('Firebase not initialized')
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 import '../../lib/providers/playtime_provider.dart';
 import '../../lib/models/playtime_game.dart';
 import '../../lib/models/playtime_session.dart';
 import '../../lib/models/playtime_background.dart';
 import '../../lib/services/playtime_service.dart';
+import '../fake_firebase_setup.dart';
 
 void main() {
   setUpAll(() async {
-    TestWidgetsFlutterBinding.ensureInitialized();
-    await Firebase.initializeApp();
+    await initializeTestFirebase();
   });
 
   group('Playtime Provider Tests', () {

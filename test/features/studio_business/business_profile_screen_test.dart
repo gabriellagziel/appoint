@@ -1,10 +1,13 @@
-@Skip('Firebase not initialized')
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
+import '../../fake_firebase_setup.dart';
 
 void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
   group('BusinessProfileScreen', () {
     testWidgets('renders correctly', (WidgetTester tester) async {
       await tester.pumpWidget(
