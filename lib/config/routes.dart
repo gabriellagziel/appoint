@@ -26,6 +26,7 @@ import 'package:appoint/features/studio_business/screens/business_dashboard_scre
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import '../features/invite/invite_list_screen.dart';
 import '../features/personal_app/ui/search_screen.dart';
+import '../features/personal_app/ui/notifications_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -164,6 +165,11 @@ class AppRouter {
           builder: (_) => const InviteListScreen(),
           settings: settings,
         );
+      case '/notifications':
+        return MaterialPageRoute(
+          builder: (_) => const NotificationsScreen(),
+          settings: settings,
+        );
       case '/search':
         return MaterialPageRoute(
           builder: (_) => const SearchScreen(),
@@ -231,5 +237,6 @@ class MeetingDetailsScreen extends StatelessWidget {
 final Map<String, WidgetBuilder> appRoutes = {
   // ... existing code ...
   '/business/dashboard': (context) => const BusinessDashboardScreen(),
+  '/notifications': (context) => const NotificationsScreen(),
   // ... existing code ...
 };
