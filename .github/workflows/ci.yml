@@ -78,6 +78,7 @@ jobs:
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Stop emulators
@@ -247,6 +248,7 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
       - name: Build Web App
         run: flutter build web --release
@@ -310,6 +312,7 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Run Smoke Tests
@@ -372,6 +375,7 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Run Security Scan
@@ -430,6 +434,7 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Notify on Success
