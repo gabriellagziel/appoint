@@ -47,7 +47,7 @@ jobs:
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Set PUB_CACHE for offline
+      - name: Configure offline pub cache
         run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Fetch dependencies offline
         run: flutter pub get --offline
@@ -150,7 +150,7 @@ jobs:
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Set PUB_CACHE for offline
+      - name: Configure offline pub cache
         run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Fetch dependencies offline
         run: flutter pub get --offline
@@ -201,7 +201,7 @@ jobs:
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Set PUB_CACHE for offline
+      - name: Configure offline pub cache
         run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Fetch dependencies offline
         run: flutter pub get --offline
@@ -248,7 +248,7 @@ jobs:
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Set PUB_CACHE for offline
+      - name: Configure offline pub cache
         run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Fetch dependencies offline
         run: flutter pub get --offline
@@ -295,7 +295,7 @@ jobs:
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Set PUB_CACHE for offline
+      - name: Configure offline pub cache
         run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Fetch dependencies offline
         run: flutter pub get --offline
