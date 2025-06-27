@@ -10,7 +10,7 @@ class ContentLibraryScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Content Library'),
       ),
-      body: const ListView(
+      body: ListView(
         children: [
           Center(
             child: Padding(
