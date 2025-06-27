@@ -11,7 +11,7 @@ import '../features/dashboard/dashboard_screen.dart';
 import '../features/personal_app/ui/profile_screen.dart';
 import '../features/personal_app/ui/edit_profile_screen.dart';
 import '../features/personal_app/ui/settings_screen.dart';
-import '../features/admin/admin_dashboard_screen.dart';
+import '../features/admin/ui/admin_dashboard_screen.dart';
 import '../features/family/widgets/invitation_modal.dart';
 import '../features/family/screens/family_dashboard_screen.dart';
 import '../features/family/screens/invite_child_screen.dart';
