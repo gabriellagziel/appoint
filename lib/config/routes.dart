@@ -27,6 +27,7 @@ import 'package:appoint/features/studio_business/screens/business_profile_screen
 import '../features/invite/invite_list_screen.dart';
 import '../features/personal_app/ui/search_screen.dart';
 import '../features/personal_app/ui/content_detail_screen.dart';
+import '../features/personal_app/ui/notifications_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -168,6 +169,11 @@ class AppRouter {
       case '/content/:id':
         return MaterialPageRoute(
           builder: (_) => const ContentDetailScreen(),
+          settings: settings,
+        );
+      case '/notifications':
+        return MaterialPageRoute(
+          builder: (_) => const NotificationsScreen(),
           settings: settings,
         );
       case '/search':
