@@ -7,7 +7,8 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
   group('CommentsScreen', () {
-    testWidgets('shows input field and send button', (WidgetTester tester) async {
+    testWidgets('shows input field and send button',
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: CommentsScreen(),
