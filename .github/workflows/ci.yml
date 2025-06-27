@@ -48,7 +48,7 @@ jobs:
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -115,7 +115,7 @@ jobs:
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -170,7 +170,7 @@ jobs:
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -223,7 +223,7 @@ jobs:
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -285,7 +285,7 @@ jobs:
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -346,7 +346,7 @@ jobs:
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -407,7 +407,7 @@ jobs:
       - name: Pre-flight: Verify network access & Dart
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Install Verdaccio
