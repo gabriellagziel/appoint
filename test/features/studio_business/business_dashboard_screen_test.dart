@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import '../../fake_firebase_setup.dart';
 
 Future<void> main() async {

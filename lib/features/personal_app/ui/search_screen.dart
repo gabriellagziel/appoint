@@ -16,9 +16,10 @@ class SearchScreen extends StatelessWidget {
             padding: EdgeInsets.all(16),
             child: TextField(),
           ),
-          const Expanded(
-            child: ListView(
-              children: [],
+          Expanded(
+            child: ListView.builder(
+              itemCount: 0,
+              itemBuilder: (context, index) => const SizedBox.shrink(),
             ),
           ),
         ],
