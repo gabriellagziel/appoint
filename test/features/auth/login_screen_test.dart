@@ -1,13 +1,12 @@
-@Skip('Pending Firebase setup conflicts')
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../test_setup.dart';
+import '../../fake_firebase_setup.dart';
 import 'package:appoint/features/auth/login_screen.dart';
 
 void main() {
   setUpAll(() async {
-    await registerFirebaseMock();
+    await initializeTestFirebase();
   });
 
   group('LoginScreen', () {
