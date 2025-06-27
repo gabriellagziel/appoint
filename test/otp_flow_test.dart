@@ -1,14 +1,12 @@
 import 'package:flutter_test/flutter_test.dart';
-
-// Replace with the real file & widget name for your app's entrypoint
+import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import './fake_firebase_setup.dart';
 
 // Flutter widgets & material controls
 
-void main() {
-  setUpAll(() async {
-    await initializeTestFirebase();
-  });
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
 
   testWidgets('OTP flow: send and verify code', (tester) async {}, skip: true);
 }
