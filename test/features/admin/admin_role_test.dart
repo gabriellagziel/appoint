@@ -1,8 +1,7 @@
-@Skip('Pending Firebase setup conflicts')
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/providers/admin_provider.dart';
-import '../../test_setup.dart';
+import '../../fake_firebase_setup.dart';
 import 'package:mockito/mockito.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -12,7 +11,7 @@ late MockFirebaseAuth mockAuth;
 
 void main() {
   setUpAll(() async {
-    await registerFirebaseMock();
+    await initializeTestFirebase();
     mockAuth = MockFirebaseAuth();
   });
 
