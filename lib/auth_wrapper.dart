@@ -17,12 +17,8 @@ class AuthWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isLoggedIn = false;
-    if (isLoggedIn) {
-      Navigator.pushNamed(context, '/home');
-    } else {
-      Navigator.pushNamed(context, '/login');
-    }
+    // TODO: replace with real auth logic
+    Navigator.pushNamed(context, '/login');
     return const SizedBox.shrink();
   }
 }
