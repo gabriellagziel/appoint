@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
-import '../../extensions/fl_chart_color_shim.dart';
 import '../../widgets/admin_guard.dart';
 import '../../providers/admin_provider.dart';
 import '../../models/admin_dashboard_stats.dart';

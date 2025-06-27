@@ -10,7 +10,6 @@ import 'config/theme.dart';
 import 'firebase_options.dart';
 import 'services/custom_deep_link_service.dart';
 import 'services/notification_service.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 
 Future<void> appMain() async {
   WidgetsFlutterBinding.ensureInitialized();
