@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../fake_firebase_setup.dart';
+import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import 'package:appoint/features/admin/admin_broadcast_screen.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:mockito/mockito.dart';
@@ -14,14 +15,13 @@ class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 late BroadcastService broadcastService;
 late MockFirebaseFirestore mockFirestore;
 
-void main() {
-  setUpAll(() async {
-    await initializeTestFirebase();
-    mockFirestore = MockFirebaseFirestore();
-    broadcastService = BroadcastService(firestore: mockFirestore);
-    // Stub FirebaseAnalytics if used
-    // when(FirebaseAnalytics.instance).thenReturn(MockFirebaseAnalytics());
-  });
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
+  mockFirestore = MockFirebaseFirestore();
+  broadcastService = BroadcastService(firestore: mockFirestore);
+  // Stub FirebaseAnalytics if used
+  // when(FirebaseAnalytics.instance).thenReturn(MockFirebaseAnalytics());
 
   group('AdminBroadcastScreen', () {
     Widget createTestWidget(Widget child) {
