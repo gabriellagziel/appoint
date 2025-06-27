@@ -1,9 +1,8 @@
-@Skip('Pending Firebase setup conflicts')
 import 'package:flutter_test/flutter_test.dart';
 
 // ignore_for_file: unused_local_variable, undefined_identifier, definitely_unassigned_late_local_variable
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../test_setup.dart';
+import '../../fake_firebase_setup.dart';
 import 'package:appoint/services/family_service.dart';
 import 'package:appoint/providers/otp_provider.dart';
 import 'package:appoint/providers/family_provider.dart';
@@ -13,7 +12,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 void main() {
   setUpAll(() async {
-    await registerFirebaseMock();
+    await initializeTestFirebase();
   });
 
   group('OTP Flow', () {
