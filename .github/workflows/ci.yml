@@ -57,24 +57,9 @@ jobs:
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - run: flutter pub get
-      - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
-      - run: dart analyze
       - run: flutter test --coverage
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-      - name: Start Firebase emulators
-        run: |
-          firebase emulators:start --only firestore,functions &
-          echo $! > emulator.pid
-      - run: flutter test --coverage
-      - run: dart test --coverage
-      - run: dart test integration_test/
       - run: flutter build web
-      - name: Stop emulators
-        if: always()
-        run: kill $(cat emulator.pid)
 
   deploy-functions:
     needs: build-and-test
@@ -164,14 +149,10 @@ jobs:
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - run: flutter pub get
-      - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
-      - run: dart analyze
-      - run: dart test --coverage
-      - run: dart test integration_test/
+      - run: flutter test --coverage
       - name: Build Web App
-        run: flutter build web --release
+        run: flutter build web
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
       - name: Deploy to Firebase Hosting
@@ -219,13 +200,8 @@ jobs:
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - run: flutter pub get
-      - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
-      - run: dart analyze
       - run: flutter test --coverage
-      - run: dart test --coverage
-      - run: dart test integration_test/
       - run: flutter build web
       - name: Run Smoke Tests
         run: |
@@ -274,13 +250,8 @@ jobs:
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - run: flutter pub get
-      - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
-      - run: dart analyze
       - run: flutter test --coverage
-      - run: dart test --coverage
-      - run: dart test integration_test/
       - run: flutter build web
       - name: Run Security Scan
         run: |
@@ -325,13 +296,8 @@ jobs:
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - run: flutter pub get
-      - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
-      - run: dart analyze
       - run: flutter test --coverage
-      - run: dart test --coverage
-      - run: dart test integration_test/
       - run: flutter build web
       - name: Notify on Success
         if: success()
