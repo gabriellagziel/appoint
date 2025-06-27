@@ -7,7 +7,6 @@ import '../../lib/models/playtime_session.dart';
 import '../../lib/models/playtime_background.dart';
 import '../../lib/services/playtime_service.dart';
 import '../fake_firebase_setup.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();

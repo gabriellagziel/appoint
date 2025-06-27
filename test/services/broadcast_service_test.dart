@@ -2,7 +2,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/services/broadcast_service.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import '../fake_firebase_setup.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import 'package:mockito/mockito.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 

@@ -2,7 +2,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/providers/admin_provider.dart';
 import '../../fake_firebase_setup.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import 'package:mockito/mockito.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
