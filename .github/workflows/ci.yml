@@ -24,11 +24,9 @@ jobs:
           PUB_HOSTED_URL: https://pub.dev
           FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     steps:
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.7.0'
       - uses: actions/checkout@v4
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -78,11 +76,9 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.7.0'
       - uses: actions/checkout@v4
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -122,11 +118,9 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.7.0'
       - uses: actions/checkout@v4
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -172,11 +166,9 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.7.0'
       - uses: actions/checkout@v4
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -217,11 +209,9 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.7.0'
       - uses: actions/checkout@v4
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -262,11 +252,9 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.7.0'
       - uses: actions/checkout@v4
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
