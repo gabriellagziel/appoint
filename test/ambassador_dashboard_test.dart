@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:appoint/features/ambassador_dashboard_screen.dart';
+import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import 'package:appoint/providers/ambassador_data_provider.dart';
 import 'package:appoint/services/ambassador_service.dart';
 import 'package:appoint/models/ambassador_stats.dart';
@@ -11,10 +12,9 @@ import 'fake_firebase_setup.dart';
 
 class MockAmbassadorService extends Mock implements AmbassadorService {}
 
-void main() {
-  setUpAll(() async {
-    await initializeTestFirebase();
-  });
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
 
   late MockAmbassadorService mockService;
   late ProviderContainer container;
