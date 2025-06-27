@@ -17,7 +17,8 @@ class AuthWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isLoggedIn = false;
+    bool isLoggedIn = false;
+    // ignore: dead_code
     if (isLoggedIn) {
       Navigator.pushNamed(context, '/home');
     } else {
