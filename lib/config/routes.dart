@@ -24,6 +24,7 @@ import '../models/invite.dart';
 import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import '../features/invite/invite_list_screen.dart';
+import '../features/personal_app/ui/search_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -155,6 +156,11 @@ class AppRouter {
       case '/invite/list':
         return MaterialPageRoute(
           builder: (_) => const InviteListScreen(),
+          settings: settings,
+        );
+      case '/search':
+        return MaterialPageRoute(
+          builder: (_) => const SearchScreen(),
           settings: settings,
         );
       default:
