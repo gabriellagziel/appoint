@@ -7,7 +7,8 @@ import '../features/studio/ui/content_library_screen.dart';
 import '../features/booking/screens/chat_booking_screen.dart';
 import '../features/booking/booking_request_screen.dart';
 import '../features/dashboard/dashboard_screen.dart';
-import '../features/profile/user_profile_screen.dart';
+import '../features/personal_app/ui/profile_screen.dart';
+import '../features/personal_app/ui/edit_profile_screen.dart';
 import '../features/admin/admin_dashboard_screen.dart';
 import '../features/family/widgets/invitation_modal.dart';
 import '../features/family/screens/family_dashboard_screen.dart';
@@ -65,7 +66,12 @@ class AppRouter {
         );
       case '/profile':
         return MaterialPageRoute(
-          builder: (_) => const UserProfileScreen(),
+          builder: (_) => const ProfileScreen(),
+          settings: settings,
+        );
+      case '/profile/edit':
+        return MaterialPageRoute(
+          builder: (_) => const EditProfileScreen(),
           settings: settings,
         );
       case '/admin/dashboard':
