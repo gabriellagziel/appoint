@@ -1,1 +1,3 @@
-class StudioModel { /* TODO: implement per spec §4.2 */ }
+class StudioModel {
+  // Placeholder model representing a studio entity
+}
