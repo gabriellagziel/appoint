@@ -1,11 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/services/ambassador_quota_service.dart';
-import 'test_setup.dart';
+import 'fake_firebase_setup.dart';
 
 void main() {
-  TestWidgetsFlutterBinding.ensureInitialized();
   setUpAll(() async {
-    await setupTestEnvironment();
+    await initializeTestFirebase();
   });
 
   group('AmbassadorQuotaService Tests', () {
