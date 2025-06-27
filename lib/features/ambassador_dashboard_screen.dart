@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
-import '../extensions/fl_chart_color_shim.dart';
 import '../providers/ambassador_data_provider.dart';
 import '../models/ambassador_stats.dart';
 import '../models/branch.dart';
