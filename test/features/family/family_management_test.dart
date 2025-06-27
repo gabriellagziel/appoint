@@ -10,6 +10,7 @@ import 'package:appoint/providers/family_provider.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../fake_firebase_setup.dart';
+import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import 'package:mockito/mockito.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -139,10 +140,9 @@ class MockFamilyService implements FamilyService {
   }
 }
 
-void main() {
-  setUpAll(() async {
-    await initializeTestFirebase();
-  });
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
 
   group('Family Management System Tests', () {
     late ProviderContainer container;
