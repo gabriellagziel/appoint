@@ -3,6 +3,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:appoint/firebase_options.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core_platform_interface/test.dart';
+import 'package:cloud_firestore_platform_interface/src/method_channel/utils/firestore_message_codec.dart';
+import 'package:cloud_firestore_platform_interface/src/pigeon/messages.pigeon.dart';
 
 // Common test utilities
 class TestUtils {
@@ -77,9 +79,31 @@ Future<void> registerFirebaseMock() async {
         return {'documents': []};
       case 'Query#count':
         return {'count': 0};
+      case 'FirebaseFirestore#addSnapshotListener':
+        return '0';
+      case 'Query#addSnapshotListener':
+        return '0';
+      case 'DocumentReference#addSnapshotListener':
+        return '0';
       default:
         return null;
     }
+  });
+
+  const String querySnapshotChannel =
+      'dev.flutter.pigeon.cloud_firestore_platform_interface.FirebaseFirestoreHostApi.querySnapshot';
+  const String documentSnapshotChannel =
+      'dev.flutter.pigeon.cloud_firestore_platform_interface.FirebaseFirestoreHostApi.documentReferenceSnapshot';
+  const MessageCodec<Object?> firestoreCodec = FirebaseFirestoreHostApi.codec;
+
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMessageHandler(querySnapshotChannel, (ByteData? message) async {
+    return firestoreCodec.encodeMessage(<Object?>['0']);
+  });
+
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMessageHandler(documentSnapshotChannel, (ByteData? message) async {
+    return firestoreCodec.encodeMessage(<Object?>['0']);
   });
 
   // Mock Firebase Storage
