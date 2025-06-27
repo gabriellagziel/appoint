@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/business/screens/business_dashboard_screen.dart';
 import '../../fake_firebase_setup.dart';
-import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import 'package:mockito/mockito.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
