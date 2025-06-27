@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
+import 'package:appoint/extensions/fl_chart_color_shim.dart';
+import '../../fake_firebase_setup.dart';
 
-void main() {
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
   group('BusinessDashboardScreen', () {
     testWidgets('renders correctly', (WidgetTester tester) async {
       await tester.pumpWidget(
