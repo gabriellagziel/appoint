@@ -16,7 +16,13 @@ Future<void> main() async {
     late ProviderContainer container;
 
     setUp(() {
-      container = ProviderContainer();
+      container = ProviderContainer(overrides: [
+        allGamesProvider.overrideWith((ref) => Stream.value(<PlaytimeGame>[])),
+        allSessionsProvider.overrideWith(
+            (ref) => Stream.value(<PlaytimeSession>[])),
+        allBackgroundsProvider.overrideWith(
+            (ref) => Stream.value(<PlaytimeBackground>[])),
+      ]);
     });
 
     tearDown(() {
