@@ -1,5 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:fl_chart/fl_chart.dart';
+
+/// Minimal replacement for the old [ChartColor] class that was removed from
+/// `fl_chart`. It simply wraps a [Color] so tests depending on the type still
+/// compile.
+class ChartColor {
+  final Color color;
+  const ChartColor(this.color);
+}
+
+/// Flutter 3.19 removed the `a`, `r`, `g`, and `b` getters from [Color] that
+/// older versions of `fl_chart` rely on. Add shims so the package continues to
+/// compile without modification.
+extension ColorChannelShims on Color {
+  double get a => alpha / 255.0;
+  double get r => red / 255.0;
+  double get g => green / 255.0;
+  double get b => blue / 255.0;
+
+  Color withValues({double? alpha, double? red, double? green, double? blue}) {
+    return Color.fromARGB(
+      (255 * (alpha ?? a)).round(),
+      (255 * (red ?? r)).round(),
+      (255 * (green ?? g)).round(),
+      (255 * (blue ?? b)).round(),
+    );
+  }
+}
 
 /// Adds missing color getters used by tests.
 ///
