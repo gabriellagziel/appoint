@@ -166,8 +166,9 @@ class AppRouter {
           settings: settings,
         );
       case '/content/:id':
+        final id = settings.arguments as String? ?? '';
         return MaterialPageRoute(
-          builder: (_) => const ContentDetailScreen(),
+          builder: (_) => ContentDetailScreen(contentId: id),
           settings: settings,
         );
       case '/search':
