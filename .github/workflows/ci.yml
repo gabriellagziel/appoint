@@ -25,6 +25,8 @@ jobs:
           FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch tags
+        run: git fetch --tags
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
         with:
@@ -68,9 +70,13 @@ jobs:
       - run: dart analyze
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
+      - name: Download Firebase emulators
+        run: |
+          firebase setup:emulators:firestore
+          firebase setup:emulators:auth
       - name: Start Firebase emulators
         run: |
-          firebase emulators:start --only firestore,functions &
+          firebase emulators:start --only auth,firestore &
           echo $! > emulator.pid
       - run: flutter test --coverage
       - run: dart test integration_test/
@@ -88,6 +94,8 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch tags
+        run: git fetch --tags
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
         with:
@@ -141,6 +149,8 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch tags
+        run: git fetch --tags
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
         with:
@@ -192,6 +202,8 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch tags
+        run: git fetch --tags
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
         with:
@@ -252,6 +264,8 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch tags
+        run: git fetch --tags
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
         with:
@@ -311,6 +325,8 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch tags
+        run: git fetch --tags
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
         with:
@@ -370,6 +386,8 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch tags
+        run: git fetch --tags
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
         with:
