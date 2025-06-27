@@ -29,16 +29,19 @@ jobs:
       run: flutter clean
     - name: Verify Flutter Version
       run: flutter --version
-    - name: Verify Dart Version
-      run: dart --version
-    - name: "Pre-flight: Verify network access"
+    - name: "Pre-flight: Verify network & Dart"
       run: |
+        dart --version
         for host in pub.dev storage.googleapis.com; do
           curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
         done
     - run: flutter pub get
     - run: dart pub get
     - run: dart run build_runner build --delete-conflicting-outputs
+    - name: Configure offline pub cache
+      run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+    - name: Fetch dependencies offline
+      run: flutter pub get --offline
     - run: flutter analyze
     - run: dart analyze
     - run: dart test --coverage
