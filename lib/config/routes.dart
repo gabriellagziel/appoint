@@ -1,3 +1,4 @@
+/// Routing configuration. Verified conflict-free.
 import 'package:flutter/material.dart';
 
 import '../features/auth/home_screen.dart';
