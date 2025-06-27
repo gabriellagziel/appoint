@@ -7,20 +7,20 @@ class HomeFeedScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const hasError = false; // Placeholder for error state
-    const isEmpty = false; // Placeholder for empty state
+    bool hasError = false; // Placeholder for error state
+    bool isEmpty = false; // Placeholder for empty state
 
     Widget body;
+    // ignore: dead_code
     if (hasError) {
       body = ErrorScreen(
         message: 'Something went wrong',
         onRetry: () {},
       );
+    // ignore: dead_code
     } else if (isEmpty) {
       body = EmptyScreen(
-        subtitle: 'No posts yet',
-        actionLabel: 'Refresh',
-        onAction: () {},
+        onExplore: () {},
       );
     } else {
       body = const Center(child: Text('Home Feed Screen'));

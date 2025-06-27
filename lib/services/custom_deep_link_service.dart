@@ -115,6 +115,7 @@ class CustomDeepLinkService {
   }
 
   /// Navigate to meeting details screen
+  // ignore: unused_element
   Future<void> _navigateToMeeting(
     String meetingId,
     String? creatorId,
@@ -137,6 +138,7 @@ class CustomDeepLinkService {
   }
 
   /// Navigate to invite details screen
+  // ignore: unused_element
   Future<void> _navigateToInvite(String inviteId) async {
     if (_navigatorKey?.currentState != null) {
       _navigatorKey!.currentState!.pushNamed(
@@ -149,6 +151,7 @@ class CustomDeepLinkService {
   }
 
   /// Navigate to booking details screen
+  // ignore: unused_element
   Future<void> _navigateToBooking(String bookingId) async {
     if (_navigatorKey?.currentState != null) {
       _navigatorKey!.currentState!.pushNamed(
