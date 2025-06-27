@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:appoint/extensions/fl_chart_color_shim.dart';
 import 'package:appoint/features/personal_app/ui/comments_screen.dart';
+import '../../fake_firebase_setup.dart';
 
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
   group('CommentsScreen', () {
     testWidgets('shows input field and send button', (WidgetTester tester) async {
       await tester.pumpWidget(
