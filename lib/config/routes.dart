@@ -5,6 +5,7 @@ import '../features/auth/home_screen.dart';
 import '../features/studio/studio_booking_screen.dart';
 import '../features/studio/studio_booking_confirm_screen.dart';
 import '../features/studio/ui/content_library_screen.dart';
+import '../features/studio/ui/studio_dashboard_screen.dart';
 import '../features/booking/screens/chat_booking_screen.dart';
 import '../features/booking/booking_request_screen.dart';
 import '../features/dashboard/dashboard_screen.dart';
@@ -47,6 +48,11 @@ class AppRouter {
       case '/studio/confirm':
         return MaterialPageRoute(
           builder: (_) => const StudioBookingConfirmScreen(),
+          settings: settings,
+        );
+      case '/studio/dashboard':
+        return MaterialPageRoute(
+          builder: (_) => const StudioDashboardScreen(),
           settings: settings,
         );
       case '/studio/library':
