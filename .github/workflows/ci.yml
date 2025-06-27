@@ -28,7 +28,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -95,7 +95,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -150,7 +150,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -203,7 +203,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -265,7 +265,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -326,7 +326,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
@@ -387,7 +387,7 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
       - name: Cache Pub packages
