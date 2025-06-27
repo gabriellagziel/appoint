@@ -1,7 +1,11 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/models/family_link.dart';
+import 'package:appoint/extensions/fl_chart_color_shim.dart';
+import 'fake_firebase_setup.dart';
 
-void main() {
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
   group('Family Integration Tests', () {
     test('FamilyLink model should serialize correctly', () {
       final link = FamilyLink(
