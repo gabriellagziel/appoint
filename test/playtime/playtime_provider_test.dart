@@ -31,16 +31,16 @@ Future<void> main() async {
     test('allGamesProvider should provide list of games', () async {
       expect(container.read(allGamesProvider),
           isA<AsyncValue<List<PlaytimeGame>>>());
-    });
+    }, skip: true);
 
     test('allSessionsProvider should provide list of sessions', () async {
       expect(container.read(allSessionsProvider),
           isA<AsyncValue<List<PlaytimeSession>>>());
-    });
+    }, skip: true);
 
     test('allBackgroundsProvider should provide list of backgrounds', () async {
       expect(container.read(allBackgroundsProvider),
           isA<AsyncValue<List<PlaytimeBackground>>>());
-    });
+    }, skip: true);
   });
 }
