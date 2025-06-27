@@ -5,7 +5,6 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../../services/maps_service.dart';
 import '../../services/location_service.dart';
 import '../../providers/branch_provider.dart';
-import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 class BookingRequestScreen extends ConsumerStatefulWidget {
