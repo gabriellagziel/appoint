@@ -7,6 +7,10 @@ import 'package:firebase_crashlytics_platform_interface/firebase_crashlytics_pla
 import 'package:file_picker/file_picker.dart';
 import 'package:firebase_core_platform_interface/test.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+import 'mocks/service_mocks.mocks.dart';
+import '../lib/infra/firestore_service.dart';
+import '../lib/core/auth_service.dart';
+import '../lib/infra/firebase_storage_service.dart';
 
 import '../lib/generated/pigeon_auth_api.dart';
 import '../lib/generated/pigeon_firestore_api.dart';
@@ -27,6 +31,10 @@ class MockFilePicker extends Mock
 class MockAuthHostApi extends Mock implements AuthHostApi {}
 class MockFirestoreHostApi extends Mock implements FirestoreHostApi {}
 
+late MockFirestoreService mockFirestoreService;
+late MockAuthService mockAuthService;
+late MockFirebaseStorageService mockStorageService;
+
 void setupFirebaseMocks() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -42,5 +50,9 @@ void setupFirebaseMocks() {
 
     AuthHostApi.setup(MockAuthHostApi());
     FirestoreHostApi.setup(MockFirestoreHostApi());
+
+    mockFirestoreService = MockFirestoreService();
+    mockAuthService = MockAuthService();
+    mockStorageService = MockFirebaseStorageService();
   });
 }
