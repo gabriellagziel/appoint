@@ -11,11 +11,13 @@
   },
   "postCreateCommand": [
     "which flutter && flutter --version",
-    "which dart    && dart --version"
+    "which dart    && dart --version",
+    "bash -c \"ls /workspace/sdk_archives && which flutter && which dart\""
   ],
   "mounts": [
     // Mount host pub cache for offline packages
-    "source=${localEnv:HOME}/.pub-cache,target=/home/vscode/.pub-cache,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/.pub-cache,target=/home/vscode/.pub-cache,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/sdk_archives,target=/workspace/sdk_archives,type=bind,consistency=cached"
   ],
   "containerEnv": {
     "PUB_CACHE": "/home/vscode/.pub-cache"
