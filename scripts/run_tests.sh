@@ -13,7 +13,7 @@ case "$MODE" in
     ;;
   integration)
     export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
-    npx firebase emulators:start --only firestore,functions,storage --project "$FIREBASE_PROJECT" --import=./emulator_data &
+    firebase emulators:start --only firestore,functions,storage --project "$FIREBASE_PROJECT" --import=./emulator_data &
     EMULATOR_PID=$!
     sleep 5
     if command -v dart >/dev/null 2>&1; then
@@ -25,7 +25,7 @@ case "$MODE" in
     ;;
   all|*)
     export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
-    npx firebase emulators:start --only firestore,functions,storage --project "$FIREBASE_PROJECT" --import=./emulator_data &
+    firebase emulators:start --only firestore,functions,storage --project "$FIREBASE_PROJECT" --import=./emulator_data &
     EMULATOR_PID=$!
     sleep 5
     if command -v dart >/dev/null 2>&1; then
