@@ -9,7 +9,10 @@
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
-  "postCreateCommand": "bash -c \"which flutter && flutter --version && which dart && dart --version\"",
+  "postCreateCommand": [
+    "which flutter && flutter --version",
+    "which dart    && dart --version"
+  ],
   "mounts": [
     // Mount host pub cache for offline packages
     "source=${localEnv:HOME}/.pub-cache,target=/home/vscode/.pub-cache,type=bind,consistency=cached"
