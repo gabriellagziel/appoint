@@ -1,55 +1,67 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 
-// TODO: Implement according to spec §2.1
+import '../../../providers/user_profile_provider.dart';
+import '../../../providers/user_subscription_provider.dart';
 
-class ProfileScreen extends StatefulWidget {
+/// Displays the current user's profile information.
+class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
 
   @override
-  State<ProfileScreen> createState() => _ProfileScreenState();
-}
+  Widget build(BuildContext context, WidgetRef ref) {
+    final profileAsync = ref.watch(currentUserProfileProvider);
+    final subscriptionAsync = ref.watch(userSubscriptionProvider);
 
-class _ProfileScreenState extends State<ProfileScreen> {
-  String _name = 'Username';
-  String _bio = 'Bio';
-  String _location = '';
-
-  @override
-  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Profile')),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const CircleAvatar(
-              radius: 40,
-              child: Icon(Icons.person, size: 40),
+      body: profileAsync.when(
+        data: (profile) {
+          if (profile == null) {
+            return const Center(child: Text('No profile found'));
+          }
+          return Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const CircleAvatar(
+                  radius: 40,
+                  child: Icon(Icons.person, size: 40),
+                ),
+                const SizedBox(height: 16),
+                Text(
+                  profile.name,
+                  style: Theme.of(context).textTheme.headlineSmall,
+                ),
+                if (profile.email != null) ...[
+                  const SizedBox(height: 8),
+                  Text(profile.email!),
+                ],
+                const SizedBox(height: 8),
+                subscriptionAsync.when(
+                  data: (isSub) => Text(
+                    isSub ? 'Premium Subscriber' : 'Free User',
+                  ),
+                  loading: () => const Text('Checking subscription...'),
+                  error: (_, __) => const Text('Subscription unavailable'),
+                ),
+                const SizedBox(height: 16),
+                ElevatedButton(
+                  onPressed: () async {
+                    FirebaseAnalytics.instance
+                        .logEvent(name: 'edit_profile_tap');
+                    await Navigator.pushNamed(context, '/profile/edit');
+                  },
+                  child: const Text('Edit Profile'),
+                ),
+              ],
             ),
-            const SizedBox(height: 16),
-            Text(_name),
-            const SizedBox(height: 8),
-            Text(_bio),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () async {
-                FirebaseAnalytics.instance.logEvent(name: 'edit_profile_tap');
-                final result = await Navigator.pushNamed(context, '/profile/edit');
-                if (result is Map) {
-                  setState(() {
-                    _name = result['name'] as String? ?? _name;
-                    _bio = result['bio'] as String? ?? _bio;
-                    _location = result['location'] as String? ?? _location;
-                  });
-                }
-              },
-              child: const Text('Edit Profile'),
-            ),
-          ],
-        ),
+          );
+        },
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error: (_, __) => const Center(child: Text('Error loading profile')),
       ),
     );
   }
