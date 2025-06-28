@@ -29,6 +29,9 @@ ENV DART_HOME=/usr/lib/dart
 ENV PATH="$FLUTTER_HOME/bin:$FLUTTER_HOME/bin/cache/dart-sdk/bin:$DART_HOME/bin:${PATH}"
 RUN ln -s $FLUTTER_HOME/bin/flutter /usr/local/bin/flutter \
     && ln -s $DART_HOME/bin/dart      /usr/local/bin/dart
+# Persist SDK paths for all shells
+RUN printf 'PATH="/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:/usr/local/bin:${PATH}"\n' \
+     >> /etc/environment
 
 # Verify installations at build time
 RUN which flutter && flutter --version && which dart && dart --version
