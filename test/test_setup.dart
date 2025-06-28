@@ -1,4 +1,5 @@
-// Centralized utilities for initializing and mocking Firebase during tests.
+// Test utilities for initializing Firebase and mocking plugins.
+// Call [registerFirebaseMock] in your tests to prevent platform channel errors.
 import 'package:flutter_test/flutter_test.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:appoint/firebase_options.dart';
