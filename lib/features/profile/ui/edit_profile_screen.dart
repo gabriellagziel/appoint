@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 
 class EditProfileScreen extends StatefulWidget {
   const EditProfileScreen({super.key});
@@ -12,6 +13,12 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _bioController = TextEditingController();
   final TextEditingController _locationController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    FirebaseAnalytics.instance.logEvent(name: 'edit_profile_view');
+  }
 
   @override
   void dispose() {
@@ -64,7 +71,15 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             ),
             const SizedBox(height: 16),
             ElevatedButton(
-              onPressed: null,
+              onPressed: () {
+                FirebaseAnalytics.instance
+                    .logEvent(name: 'profile_saved');
+                Navigator.pop(context, {
+                  'name': _nameController.text,
+                  'bio': _bioController.text,
+                  'location': _locationController.text,
+                });
+              },
               child: const Text('Save Changes'),
             ),
           ],
