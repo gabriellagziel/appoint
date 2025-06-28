@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../models/comment.dart';
 import '../../../services/comment_service.dart';
+import 'comment_item.dart';
 
 /// Simple comments UI showing a list of comments with an input box.
 class CommentsScreen extends StatefulWidget {
@@ -56,7 +57,7 @@ class _CommentsScreenState extends State<CommentsScreen> {
               itemCount: _comments.length,
               itemBuilder: (context, index) {
                 final comment = _comments[index];
-                return CommentCard(comment: comment);
+                return CommentItem(comment: comment);
               },
             ),
           ),
@@ -81,21 +82,6 @@ class _CommentsScreenState extends State<CommentsScreen> {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class CommentCard extends StatelessWidget {
-  final Comment comment;
-
-  const CommentCard({super.key, required this.comment});
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: ListTile(
-        title: Text(comment.text),
       ),
     );
   }
