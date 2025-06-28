@@ -1,5 +1,5 @@
 ## Analyzer Summary
-- Errors: 0 (analysis failed due to incompatible Dart SDK)
+- Errors: 10886
 
 ## Test Summary
 - Tests run: 0
@@ -8,8 +8,8 @@
 - Skipped: 0
 
 ## Unresolved TODOs / Firebase Issues
-- Numerous TODO comments remain (e.g. implement storage without Firebase Storage, replace Firebase user detection, replace user claims or profile data). Grep found approximately 6069 TODO markers overall.
-- firebase-debug.log contains errors about missing `runtime` field for functions and unexpected errors when running Firebase emulators.
+- grep found approximately 6071 TODO markers across the codebase.
+- firebase-debug.log shows errors about missing `runtime` in firebase.json and unexpected EIO errors from the emulator.
 
 ## Coverage
 - `coverage/lcov.info` exists.
