@@ -5,6 +5,9 @@ import 'test_setup.dart';
 /// Initializes Firebase mocks for widget tests.
 Future<FirebaseApp> initializeTestFirebase() async {
   TestWidgetsFlutterBinding.ensureInitialized();
-  await registerFirebaseMock();
+  setupFirebaseMocks();
+  if (Firebase.apps.isEmpty) {
+    await Firebase.initializeApp();
+  }
   return Firebase.app();
 }
