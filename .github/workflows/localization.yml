@@ -17,11 +17,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.20.0'
-      - name: Ensure flutter in PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+          flutter-version: '3.32.0'
+      - name: Setup Dart SDK
+        uses: actions/setup-dart@v3
+        with:
+          dart-version: '3.4.0'
+      - name: Ensure Flutter & Dart in PATH
+        run: |
+          echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+          echo "$HOME/.dart-sdk/bin" >> $GITHUB_PATH
+          echo "$HOME/.flutter/bin/cache/dart-sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
