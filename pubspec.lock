@@ -409,6 +409,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.5.7+7"
+  firebase_app_check:
+    dependency: "direct main"
+    description:
+      name: firebase_app_check
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.2+7"
+  REDACTED_TOKEN:
+    dependency: transitive
+    description:
+      name: REDACTED_TOKEN
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.0+29"
+  firebase_app_check_web:
+    dependency: transitive
+    description:
+      name: firebase_app_check_web
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.2+7"
   firebase_auth:
     dependency: "direct main"
     description:
@@ -532,11 +556,10 @@ packages:
   fl_chart:
     dependency: "direct main"
     description:
-      name: fl_chart
-      sha256: REDACTED_TOKEN
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.71.0"
+      path: "packages/fl_chart_stub"
+      relative: true
+    source: path
+    version: "0.0.1"
   flutter:
     dependency: "direct main"
     description: flutter
