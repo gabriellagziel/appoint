@@ -18,6 +18,7 @@
     "source=${localEnv:HOME}/.pub-cache,target=/home/vscode/.pub-cache,type=bind,consistency=cached"
   ],
   "containerEnv": {
+    "PATH": "/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:/usr/local/bin:${containerEnv:PATH}",
     "PUB_CACHE": "/home/vscode/.pub-cache"
   }
 }
