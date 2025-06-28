@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
+import '../theme/typography.dart';
 
 class AppTheme {
   // Color constants centralized in [AppColors]
@@ -18,6 +19,7 @@ class AppTheme {
       background: AppColors.background,
       error: AppColors.error,
     ),
+    textTheme: AppTypography.textTheme,
   );
 
   static final ThemeData darkTheme = ThemeData(
@@ -28,5 +30,6 @@ class AppTheme {
       background: AppColors.background,
       error: AppColors.error,
     ),
+    textTheme: AppTypography.textTheme,
   );
 }
