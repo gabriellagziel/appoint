@@ -33,5 +33,6 @@ The app uses `onGenerateRoute` in `lib/config/routes.dart` to map named routes t
 | `/content/:id` | `ContentDetailScreen` (expects content ID argument) |
 | `/notifications` | `NotificationsScreen` |
 | `/search` | `SearchScreen` |
+| `/error` | `ErrorScreen` |
 
 Unrecognized routes fall back to a simple screen explaining that no matching route was found. Ensure `onGenerateRoute` stays conflict-free and that each screen imports correctly.
