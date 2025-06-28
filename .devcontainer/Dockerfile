@@ -1,6 +1,9 @@
 # Use an official lightweight base image
 FROM ubuntu:22.04
 
+# Copy pre-downloaded SDK archives into the container
+COPY sdk_archives /tmp/sdk_archives
+
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     curl \
@@ -10,18 +13,10 @@ RUN apt-get update && apt-get install -y \
     zip \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Flutter 3.32.0
-RUN curl -fsSL https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.32.0-stable.tar.xz \
-    -o flutter.tar.xz \
-  && tar xf flutter.tar.xz -C /usr/local \
-  && rm flutter.tar.xz
-
-# Install Dart 3.4.0
-RUN curl -fsSL https://storage.googleapis.com/dart-archive/channels/stable/release/3.4.0/sdk/dartsdk-linux-x64-release.zip \
-    -o dartsdk.zip \
-  && unzip -q dartsdk.zip -d /usr/lib \
-  && mv /usr/lib/dart-sdk /usr/lib/dart \
-  && rm dartsdk.zip
+# Install Flutter 3.32.0 and Dart 3.4.0 from local archives
+RUN tar xf /tmp/sdk_archives/flutter_linux_3.32.0-stable.tar.xz -C /usr/local \
+    && unzip /tmp/sdk_archives/dartsdk-linux-x64-release.zip -d /usr/lib/dart \
+    && rm -rf /tmp/sdk_archives
 
 # Expose environment variables for both build and runtime
 ENV FLUTTER_HOME=/usr/local/flutter
