@@ -42,6 +42,15 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
@@ -78,8 +87,20 @@ jobs:
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test --coverage
-      - run: dart test integration_test/
+      - name: Dart tests
+        run: |
+          if which dart; then
+            dart test --coverage
+          else
+            flutter test --coverage
+          fi
+      - name: Integration tests
+        run: |
+          if which dart; then
+            dart test integration_test/
+          else
+            flutter test integration_test/
+          fi
       - run: flutter build web
       - name: Stop emulators
         if: always()
@@ -111,6 +132,15 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
@@ -167,6 +197,15 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
@@ -220,6 +259,15 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
@@ -248,8 +296,20 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test --coverage
-      - run: dart test integration_test/
+      - name: Dart tests
+        run: |
+          if which dart; then
+            dart test --coverage
+          else
+            flutter test --coverage
+          fi
+      - name: Integration tests
+        run: |
+          if which dart; then
+            dart test integration_test/
+          else
+            flutter test integration_test/
+          fi
       - name: Build Web App
         run: flutter build web --release
       - name: Install Firebase CLI
@@ -284,6 +344,15 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
@@ -312,8 +381,20 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test --coverage
-      - run: dart test integration_test/
+      - name: Dart tests
+        run: |
+          if which dart; then
+            dart test --coverage
+          else
+            flutter test --coverage
+          fi
+      - name: Integration tests
+        run: |
+          if which dart; then
+            dart test integration_test/
+          else
+            flutter test integration_test/
+          fi
       - run: flutter build web
       - name: Run Smoke Tests
         run: |
@@ -347,6 +428,15 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
@@ -375,8 +465,20 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test --coverage
-      - run: dart test integration_test/
+      - name: Dart tests
+        run: |
+          if which dart; then
+            dart test --coverage
+          else
+            flutter test --coverage
+          fi
+      - name: Integration tests
+        run: |
+          if which dart; then
+            dart test integration_test/
+          else
+            flutter test integration_test/
+          fi
       - run: flutter build web
       - name: Run Security Scan
         run: |
@@ -410,6 +512,15 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
+      - name: Ensure Dart CLI
+        run: |
+          which dart || {
+            echo "dart not found; adding Flutter bin to PATH";
+            echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+            export PATH="$HOME/.flutter/bin:$PATH"
+          }
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
@@ -434,8 +545,20 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test --coverage
-      - run: dart test integration_test/
+      - name: Dart tests
+        run: |
+          if which dart; then
+            dart test --coverage
+          else
+            flutter test --coverage
+          fi
+      - name: Integration tests
+        run: |
+          if which dart; then
+            dart test integration_test/
+          else
+            flutter test integration_test/
+          fi
       - run: flutter build web
       - name: Notify on Success
         if: success()
