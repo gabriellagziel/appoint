@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -62,6 +63,11 @@ jobs:
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
+      - name: Debug SDK in Container
+        run: |
+          echo "CI PATH: $PATH"
+          which flutter || echo "flutter not found"
+          which dart    || echo "dart not found"
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -130,6 +136,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -224,6 +231,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: https://pub.dev
@@ -289,6 +297,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: http://localhost:4873
@@ -391,6 +400,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: http://localhost:4873
@@ -591,6 +601,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     if: always()
     env:
       PUB_HOSTED_URL: http://localhost:4873
