@@ -11,6 +11,7 @@ import '../features/booking/booking_request_screen.dart';
 import '../features/dashboard/dashboard_screen.dart';
 import '../features/personal_app/ui/profile_screen.dart';
 import '../features/personal_app/ui/edit_profile_screen.dart';
+import '../features/profile/ui/edit_profile_screen.dart' as profile_edit;
 import '../features/personal_app/ui/settings_screen.dart';
 import '../features/admin/ui/admin_dashboard_screen.dart';
 import '../features/family/widgets/invitation_modal.dart';
@@ -84,6 +85,11 @@ class AppRouter {
       case '/profile/edit':
         return MaterialPageRoute(
           builder: (_) => const EditProfileScreen(),
+          settings: settings,
+        );
+      case '/edit-profile':
+        return MaterialPageRoute(
+          builder: (_) => const profile_edit.EditProfileScreen(),
           settings: settings,
         );
       case '/settings':
