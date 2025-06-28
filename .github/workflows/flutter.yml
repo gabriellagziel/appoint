@@ -17,10 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Check required network access
-        run: |
-          for host in storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
-          done
+        run: node scripts/check-network-allowlist.js
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
         with:
@@ -69,13 +66,18 @@ jobs:
             flutter test --coverage
           fi
       - run: dart test integration_test/
+      - name: Check coverage report
+        if: success() && hashFiles('coverage/lcov.info') != ''
+        run: |
+          echo "Coverage file found. Ready to upload."
+      - name: Upload coverage
+        if: success() && hashFiles('coverage/lcov.info') != ''
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
       - run: flutter build web
       - uses: codecov/codecov-action@v3
         with:
           files: coverage/lcov.info
           fail_ci_if_error: true
-      - name: Upload coverage artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: coverage/lcov.info
