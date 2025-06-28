@@ -21,7 +21,7 @@ Future<void> main() async {
       expect(find.byIcon(Icons.error_outline), findsOneWidget);
       expect(find.text('Oops'), findsOneWidget);
       expect(find.text('Try Again'), findsOneWidget);
-      expect(find.byType(ElevatedButton), findsOneWidget);
+      expect(find.byType(IconButton), findsOneWidget);
     });
   });
 }
