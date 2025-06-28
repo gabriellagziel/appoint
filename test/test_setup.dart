@@ -19,21 +19,32 @@ import '../lib/generated/pigeon_firestore_api.dart';
 class MockFirebaseAuthPlatform extends Mock
     with MockPlatformInterfaceMixin
     implements FirebaseAuthPlatform {}
+
 class MockFirebaseFirestorePlatform extends Mock
     with MockPlatformInterfaceMixin
     implements FirebaseFirestorePlatform {}
+
 class MockFirebaseCrashlyticsPlatform extends Mock
     with MockPlatformInterfaceMixin
     implements FirebaseCrashlyticsPlatform {}
+
 class MockFilePicker extends Mock
     with MockPlatformInterfaceMixin
     implements FilePicker {}
+
 class MockAuthHostApi extends Mock implements AuthHostApi {}
+
 class MockFirestoreHostApi extends Mock implements FirestoreHostApi {}
 
 late MockFirestoreService mockFirestoreService;
 late MockAuthService mockAuthService;
 late MockFirebaseStorageService mockStorageService;
+
+void registerServiceMocks() {
+  mockFirestoreService = MockFirestoreService();
+  mockAuthService = MockAuthService();
+  mockStorageService = MockFirebaseStorageService();
+}
 
 void setupFirebaseMocks() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -51,8 +62,6 @@ void setupFirebaseMocks() {
     AuthHostApi.setup(MockAuthHostApi());
     FirestoreHostApi.setup(MockFirestoreHostApi());
 
-    mockFirestoreService = MockFirestoreService();
-    mockAuthService = MockAuthService();
-    mockStorageService = MockFirebaseStorageService();
+    registerServiceMocks();
   });
 }
