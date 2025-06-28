@@ -32,6 +32,7 @@ import '../features/invite/invite_list_screen.dart';
 import '../features/personal_app/ui/search_screen.dart';
 import '../features/personal_app/ui/content_detail_screen.dart';
 import '../features/personal_app/ui/notifications_screen.dart';
+import '../features/common/ui/error_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -199,6 +200,15 @@ class AppRouter {
       case '/search':
         return MaterialPageRoute(
           builder: (_) => const SearchScreen(),
+          settings: settings,
+        );
+      case '/error':
+        final args = settings.arguments as Map<String, dynamic>? ?? {};
+        return MaterialPageRoute(
+          builder: (_) => ErrorScreen(
+            message: args['message'] as String? ?? 'An error occurred',
+            onTryAgain: args['onTryAgain'] as VoidCallback? ?? () {},
+          ),
           settings: settings,
         );
       default:
