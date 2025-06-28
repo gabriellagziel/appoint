@@ -18,6 +18,10 @@ RUN tar xf /tmp/sdk_archives/flutter_linux_3.32.0-stable.tar.xz -C /usr/local \
     && unzip /tmp/sdk_archives/dartsdk-linux-x64-release.zip -d /usr/lib/dart \
     && rm -rf /tmp/sdk_archives
 
+# Symlink flutter and dart into /usr/local/bin for easy access
+RUN ln -s /usr/local/flutter/bin/flutter /usr/local/bin/flutter \
+ && ln -s /usr/local/flutter/bin/cache/dart-sdk/bin/dart /usr/local/bin/dart
+
 # Expose environment variables for both build and runtime
 ENV FLUTTER_HOME=/usr/local/flutter
 ENV DART_HOME=/usr/lib/dart
