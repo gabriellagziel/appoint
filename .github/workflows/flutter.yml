@@ -16,6 +16,11 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v3
+      - name: Check required network access
+        run: |
+          for host in storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
+            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
+          done
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
         with:
