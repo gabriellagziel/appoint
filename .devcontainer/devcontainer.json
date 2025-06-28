@@ -1,7 +1,7 @@
 {
   "name": "Flutter App",
-  "image": "ghcr.io/cirruslabs/flutter:stable",
-  "postCreateCommand": "flutter pub get",
+  "image": "dart:3.4",
+  "postCreateCommand": "dart pub get",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -10,5 +10,8 @@
       ]
     }
   },
-  "features": {}
+  "features": {},
+  "mounts": [
+    "source=${localEnv:HOME}/.pub-cache,target=/root/.pub-cache,type=bind"
+  ]
 }

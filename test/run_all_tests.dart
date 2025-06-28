@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'fake_firebase_setup.dart';
 
 // Import all test files
 import 'models/user_profile_test.dart' as user_profile_test;
@@ -11,7 +12,9 @@ import 'features/admin/admin_broadcast_screen_test.dart'
     as admin_broadcast_screen_test;
 import 'features/auth/login_screen_test.dart' as login_screen_test;
 
-void main() {
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
   group('All Tests', () {
     group('Model Tests', () {
       user_profile_test.main();

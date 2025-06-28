@@ -1,18 +1,15 @@
-@Skip('Pending Firebase setup conflicts')
-
 import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/services/broadcast_service.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
-import '../test_setup.dart';
+import '../fake_firebase_setup.dart';
 import 'package:mockito/mockito.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
-void main() {
-  setUpAll(() async {
-    await registerFirebaseMock();
-  });
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
 
   group('BroadcastService', () {
       // ignore: unused_local_variable

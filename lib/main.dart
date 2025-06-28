@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'dart:async';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'l10n/app_localizations.dart';
@@ -11,7 +13,8 @@ import 'config/theme.dart';
 import 'firebase_options.dart';
 import 'services/custom_deep_link_service.dart';
 import 'services/notification_service.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
+
+final FirebaseAnalytics analytics = FirebaseAnalytics.instance;
 
 Future<void> appMain() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,8 +25,20 @@ Future<void> appMain() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
+  // Enable Crashlytics collection
+  await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
+
+  // Forward Flutter errors to Crashlytics
+  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
+
+  // Forward Dart errors to Crashlytics
+  PlatformDispatcher.instance.onError = (error, stack) {
+    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+    return true;
+  };
+
   // Initialize Firebase Analytics
-  await FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
+  await analytics.setAnalyticsCollectionEnabled(true);
 
   // Initialize custom deep link service (replaces Firebase Dynamic Links)
   final deepLinkService = CustomDeepLinkService();
@@ -35,10 +50,16 @@ Future<void> appMain() async {
   final notificationService = NotificationService();
   await notificationService.initialize();
 
-  runApp(
-    ProviderScope(
-      child: MyApp(deepLinkService: deepLinkService),
-    ),
+  runZonedGuarded(
+    () {
+      runApp(
+        ProviderScope(
+          child: MyApp(deepLinkService: deepLinkService),
+        ),
+      );
+    },
+    (error, stack) =>
+        FirebaseCrashlytics.instance.recordError(error, stack, fatal: true),
   );
 }
 
@@ -82,7 +103,7 @@ class _MyAppState extends State<MyApp> {
       navigatorKey: _navigatorKey,
       onGenerateRoute: AppRouter.onGenerateRoute,
       navigatorObservers: [
-        FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance),
+        FirebaseAnalyticsObserver(analytics: analytics),
       ],
       // Localization support
       localizationsDelegates: [

@@ -1,8 +1,7 @@
-@Skip('Pending Firebase setup conflicts')
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import '../../test_setup.dart';
+import '../../fake_firebase_setup.dart';
 import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
 import 'package:mockito/mockito.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -13,12 +12,11 @@ class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 late BookingService bookingService;
 late MockFirebaseFirestore mockFirestore;
 
-void main() {
-  setUpAll(() async {
-    await registerFirebaseMock();
-    mockFirestore = MockFirebaseFirestore();
-    bookingService = BookingService(firestore: mockFirestore);
-  });
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
+  mockFirestore = MockFirebaseFirestore();
+  bookingService = BookingService(firestore: mockFirestore);
 
   group('ChatBookingScreen', () {
     testWidgets('should display chat interface', (WidgetTester tester) async {
