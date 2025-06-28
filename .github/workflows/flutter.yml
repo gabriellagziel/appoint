@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Check required network access
         run: |
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
+          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
             for i in 1 2 3; do
               curl --head --fail https://$host && break || sleep 5
             done
@@ -50,7 +50,7 @@ jobs:
         run: |
           which dart
           dart --version
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
+          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
             curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
           done
       - name: Get dependencies with retry
