@@ -31,6 +31,8 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -47,6 +49,7 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
+    which dart
           dart --version
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
@@ -80,6 +83,11 @@ jobs:
       - run: flutter test --coverage
       - run: dart test --coverage
       - run: dart test integration_test/
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
       - run: flutter build web
       - name: Stop emulators
         if: always()
@@ -100,6 +108,8 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -116,6 +126,7 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
+    which dart
           dart --version
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
@@ -139,6 +150,11 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage test/features/studio/content_library_screen_test.dart
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
 
   deploy-functions:
     needs: build-and-test
@@ -156,6 +172,8 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -172,6 +190,7 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
+    which dart
           dart --version
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
@@ -209,6 +228,8 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -225,6 +246,7 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
+    which dart
           dart --version
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
@@ -250,6 +272,11 @@ jobs:
       - run: flutter test --coverage
       - run: dart test --coverage
       - run: dart test integration_test/
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
       - name: Build Web App
         run: flutter build web --release
       - name: Install Firebase CLI
@@ -273,6 +300,8 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -289,6 +318,7 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
+    which dart
           dart --version
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
@@ -314,6 +344,11 @@ jobs:
       - run: flutter test --coverage
       - run: dart test --coverage
       - run: dart test integration_test/
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
       - run: flutter build web
       - name: Run Smoke Tests
         run: |
@@ -336,6 +371,8 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -352,6 +389,7 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
+    which dart
           dart --version
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
@@ -377,6 +415,11 @@ jobs:
       - run: flutter test --coverage
       - run: dart test --coverage
       - run: dart test integration_test/
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
       - run: flutter build web
       - name: Run Security Scan
         run: |
@@ -399,6 +442,8 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -415,6 +460,7 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
+    which dart
           dart --version
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
@@ -436,6 +482,11 @@ jobs:
       - run: flutter test --coverage
       - run: dart test --coverage
       - run: dart test integration_test/
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
       - run: flutter build web
       - name: Notify on Success
         if: success()
