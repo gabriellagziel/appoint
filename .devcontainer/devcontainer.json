@@ -11,4 +11,7 @@
     }
   },
   "features": {}
+  ,"mounts": [
+    "source=${localEnv:HOME}/.pub-cache,target=/root/.pub-cache,type=bind"
+  ]
 }
