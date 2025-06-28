@@ -48,7 +48,7 @@ jobs:
         run: flutter --version
       - name: "Pre-flight: Verify network & Dart"
         run: |
-    which dart
+          which dart
           dart --version
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
             curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
@@ -62,14 +62,10 @@ jobs:
       - name: Verify firebase_app_check resolution
         run: grep firebase_app_check pubspec.lock
       - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Configure offline pub cache
-        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Fetch dependencies offline
-        run: flutter pub get --offline
       - run: flutter analyze
       - run: dart analyze
       - name: Run tests with coverage
-          run: flutter test --coverage
+        run: flutter test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - uses: codecov/codecov-action@v3
