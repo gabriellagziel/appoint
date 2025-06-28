@@ -9,12 +9,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Download and install Dart SDK
 RUN wget -O /tmp/dart-sdk.zip https://storage.googleapis.com/dart-archive/channels/stable/release/${DART_VERSION}/sdk/dartsdk-linux-x64-release.zip && \
-    unzip /tmp/dart-sdk.zip -d /usr/local && \
-    mv /usr/local/dart-sdk /usr/local/dart && \
+    unzip /tmp/dart-sdk.zip -d /usr/lib && \
+    mv /usr/lib/dart-sdk /usr/lib/dart && \
     rm /tmp/dart-sdk.zip
 
 # Set PATH for Dart
-ENV PATH="/usr/local/dart/bin:${PATH}"
+ENV PATH="/usr/lib/dart/bin:${PATH}"
 
 # Verify installation
 RUN dart --version
