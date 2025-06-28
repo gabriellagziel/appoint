@@ -16,6 +16,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Check network access
+      run: |
+        curl --fail https://storage.googleapis.com
+        curl --fail https://dart.dev
+        curl --fail https://pub.dev
+        curl --fail https://firebase-public.firebaseio.com
     - name: Check required network access
       run: |
         for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
