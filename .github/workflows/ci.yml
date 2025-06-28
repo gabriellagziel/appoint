@@ -71,6 +71,12 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
@@ -171,6 +177,12 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
@@ -311,6 +323,12 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
@@ -397,6 +415,12 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
@@ -482,6 +506,12 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
@@ -563,6 +593,12 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
