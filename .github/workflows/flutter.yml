@@ -41,7 +41,7 @@ jobs:
       - name: "Pre-flight: Verify network & Dart"
         run: |
           dart --version
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
           done
       - run: flutter pub get
