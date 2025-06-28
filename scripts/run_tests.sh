@@ -4,6 +4,7 @@ MODE="$1"
 
 case "$MODE" in
   unit)
+    export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
     if command -v dart >/dev/null 2>&1; then
       dart test --coverage
     else
@@ -11,7 +12,8 @@ case "$MODE" in
     fi
     ;;
   integration)
-    npx firebase emulators:start --only firestore,functions --project "$FIREBASE_PROJECT" --import=./emulator_data &
+    export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
+    npx firebase emulators:start --only firestore,functions,storage --project "$FIREBASE_PROJECT" --import=./emulator_data &
     EMULATOR_PID=$!
     sleep 5
     if command -v dart >/dev/null 2>&1; then
@@ -22,7 +24,8 @@ case "$MODE" in
     kill $EMULATOR_PID
     ;;
   all|*)
-    npx firebase emulators:start --only firestore,functions --project "$FIREBASE_PROJECT" --import=./emulator_data &
+    export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
+    npx firebase emulators:start --only firestore,functions,storage --project "$FIREBASE_PROJECT" --import=./emulator_data &
     EMULATOR_PID=$!
     sleep 5
     if command -v dart >/dev/null 2>&1; then
