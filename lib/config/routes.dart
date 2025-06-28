@@ -27,6 +27,8 @@ import '../features/admin/admin_demo_panel_screen.dart';
 import '../features/calendar/google_integration_screen.dart';
 import '../features/ambassador_dashboard_screen.dart';
 import '../features/ambassador_onboarding_screen.dart';
+import '../features/studio_profile/studio_profile_screen.dart';
+import '../features/studio_business/entry/business_entry_screen.dart';
 import '../models/invite.dart';
 import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
@@ -37,6 +39,7 @@ import '../features/personal_app/ui/notifications_screen.dart';
 import '../features/common/ui/error_screen.dart';
 import '../features/referral/referral_screen.dart';
 import '../features/rewards/rewards_screen.dart';
+import '../features/common/ui/unsupported_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -116,6 +119,11 @@ class AppRouter {
           builder: (_) => const FamilyDashboardScreen(),
           settings: settings,
         );
+      case '/child/dashboard':
+        return MaterialPageRoute(
+          builder: (_) => const FamilyDashboardScreen(),
+          settings: settings,
+        );
       case '/family/invite-child':
         return MaterialPageRoute(
           builder: (_) => const InviteChildScreen(),
@@ -190,9 +198,20 @@ class AppRouter {
           builder: (_) => const BusinessDashboardScreen(),
           settings: settings,
         );
+      case '/business':
+        return MaterialPageRoute(
+          builder: (_) => const BusinessEntryScreen(),
+          settings: settings,
+        );
       case '/business/profile':
         return MaterialPageRoute(
           builder: (_) => const BusinessProfileScreen(),
+          settings: settings,
+        );
+      case '/studio/profile':
+        final studioId = settings.arguments as String? ?? '';
+        return MaterialPageRoute(
+          builder: (_) => StudioProfileScreen(studioId: studioId),
           settings: settings,
         );
       case '/invite/list':
@@ -233,6 +252,11 @@ class AppRouter {
             message: args['message'] as String? ?? 'An error occurred',
             onTryAgain: args['onTryAgain'] as VoidCallback? ?? () {},
           ),
+          settings: settings,
+        );
+      case '/unsupported':
+        return MaterialPageRoute(
+          builder: (_) => const UnsupportedScreen(),
           settings: settings,
         );
       default:
