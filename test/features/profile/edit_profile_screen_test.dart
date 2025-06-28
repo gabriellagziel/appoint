@@ -11,7 +11,8 @@ Future<void> main() async {
       await tester.pumpWidget(const MaterialApp(home: EditProfileScreen()));
 
       expect(find.text('Edit Profile'), findsOneWidget);
-      expect(find.byType(TextField), findsNWidgets(3));
+      expect(find.byType(TextField), findsNWidgets(2));
+      expect(find.byType(TextFormField), findsOneWidget);
       expect(find.text('Name'), findsOneWidget);
       expect(find.text('Bio'), findsOneWidget);
       expect(find.text('Location'), findsOneWidget);
