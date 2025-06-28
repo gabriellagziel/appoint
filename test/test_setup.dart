@@ -38,6 +38,12 @@ late MockFirestoreService mockFirestoreService;
 late MockAuthService mockAuthService;
 late MockFirebaseStorageService mockStorageService;
 
+void registerServiceMocks() {
+  mockFirestoreService = MockFirestoreService();
+  mockAuthService = MockAuthService();
+  mockStorageService = MockFirebaseStorageService();
+}
+
 void setupFirebaseMocks() {
   setupTestConfig();
 
@@ -52,8 +58,6 @@ void setupFirebaseMocks() {
     AuthHostApi.setup(MockAuthHostApi());
     FirestoreHostApi.setup(MockFirestoreHostApi());
 
-    mockFirestoreService = MockFirestoreService();
-    mockAuthService = MockAuthService();
-    mockStorageService = MockFirebaseStorageService();
+    registerServiceMocks();
   });
 }
