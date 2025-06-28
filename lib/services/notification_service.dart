@@ -63,12 +63,38 @@ class NotificationService {
     }
   }
 
-  Future<void> sendTestNotification(String token, String title, String body) async {
-    final callable = FirebaseFunctions.instance.httpsCallable('sendNotification');
+  Future<void> sendTestNotification(
+      String token, String title, String body) async {
+    final callable =
+        FirebaseFunctions.instance.httpsCallable('sendNotification');
     await callable.call({
       'token': token,
       'title': title,
       'body': body,
     });
+  }
+
+  /// Fetch notifications for the given user.
+  ///
+  /// This currently returns a mocked list until the backend is available.
+  Future<List<NotificationPayload>> fetchNotifications(String uid) async {
+    await Future.delayed(const Duration(milliseconds: 300));
+    return [
+      NotificationPayload(
+        id: '1',
+        title: 'Welcome',
+        body: 'Thanks for joining us, $uid!',
+      ),
+      NotificationPayload(
+        id: '2',
+        title: 'Reminder',
+        body: 'Don\'t miss your upcoming appointment.',
+      ),
+      NotificationPayload(
+        id: '3',
+        title: 'Promo',
+        body: 'Check out our latest features today.',
+      ),
+    ];
   }
 }
