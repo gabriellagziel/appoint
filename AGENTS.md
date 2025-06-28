@@ -12,8 +12,9 @@ flutter run -d chrome      # Web
 ## Testing
 
 ```bash
-# Start Firebase emulators for Auth & Firestore
-firebase emulators:start --only auth,firestore
+# Start Firebase emulators for Auth, Firestore & Storage
+export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
+firebase emulators:start --only auth,firestore,storage
 
 # From project root:
 dart test --coverage
