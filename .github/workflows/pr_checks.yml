@@ -20,12 +20,7 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     steps:
       - uses: actions/checkout@v4
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
+      # network checks removed for offline usage
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.20.0'
@@ -33,23 +28,11 @@ jobs:
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
-      - name: Pre-flight: Verify network & Dart
+      - name: Pre-flight: Verify Dart
         run: |
           which dart
           dart --version
-          curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
-            curl --head --fail https://$host || { echo "u274c Cannot reach $host" >&2; exit 1; }
-          done
-      - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
+      # network checks removed for offline usage
       - run: flutter pub get --offline
       - run: dart pub get
       - name: Check Dart formatting
