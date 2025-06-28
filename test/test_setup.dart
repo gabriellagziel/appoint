@@ -9,9 +9,6 @@ import 'package:REDACTED_TOKEN/test.dart';
 import 'test_config.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'mocks/service_mocks.mocks.dart';
-import '../lib/infra/firestore_service.dart';
-import '../lib/core/auth_service.dart';
-import '../lib/infra/firebase_storage_service.dart';
 
 import '../lib/generated/pigeon_auth_api.dart';
 import '../lib/generated/pigeon_firestore_api.dart';
