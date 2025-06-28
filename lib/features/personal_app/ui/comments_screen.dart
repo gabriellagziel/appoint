@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../models/comment.dart';
 import '../../../services/comment_service.dart';
+import '../../../utils/localized_date_formatter.dart';
 
 /// Simple comments UI showing a list of comments with an input box.
 class CommentsScreen extends StatefulWidget {
@@ -93,9 +94,16 @@ class CommentCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final locale = Localizations.localeOf(context).toLanguageTag();
     return Card(
       child: ListTile(
         title: Text(comment.text),
+        subtitle: Text(
+          LocalizedDateFormatter.formatRelativeTime(
+            comment.createdAt,
+            locale: locale,
+          ),
+        ),
       ),
     );
   }
