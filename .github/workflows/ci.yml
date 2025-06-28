@@ -63,6 +63,8 @@ jobs:
         run: |
     which dart
           dart --version
+          curl --fail https://firebase-public.firebaseio.com
+          curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
@@ -88,7 +90,7 @@ jobs:
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
+      - run: dart run build_runner build --delete-conflicting-outputs --offline
       - run: flutter analyze
       - run: dart analyze
       - name: Install Firebase CLI
@@ -176,6 +178,8 @@ jobs:
         run: |
     which dart
           dart --version
+          curl --fail https://firebase-public.firebaseio.com
+          curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
@@ -201,7 +205,7 @@ jobs:
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
+      - run: dart run build_runner build --delete-conflicting-outputs --offline
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -268,6 +272,8 @@ jobs:
         run: |
     which dart
           dart --version
+          curl --fail https://firebase-public.firebaseio.com
+          curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
@@ -336,6 +342,8 @@ jobs:
         run: |
     which dart
           dart --version
+          curl --fail https://firebase-public.firebaseio.com
+          curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
@@ -361,7 +369,7 @@ jobs:
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
+      - run: dart run build_runner build --delete-conflicting-outputs --offline
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -435,6 +443,8 @@ jobs:
         run: |
     which dart
           dart --version
+          curl --fail https://firebase-public.firebaseio.com
+          curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
@@ -460,7 +470,7 @@ jobs:
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
+      - run: dart run build_runner build --delete-conflicting-outputs --offline
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -533,6 +543,8 @@ jobs:
         run: |
     which dart
           dart --version
+          curl --fail https://firebase-public.firebaseio.com
+          curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
@@ -558,7 +570,7 @@ jobs:
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
+      - run: dart run build_runner build --delete-conflicting-outputs --offline
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -631,6 +643,8 @@ jobs:
         run: |
     which dart
           dart --version
+          curl --fail https://firebase-public.firebaseio.com
+          curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
@@ -652,7 +666,7 @@ jobs:
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
+      - run: dart run build_runner build --delete-conflicting-outputs --offline
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
