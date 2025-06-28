@@ -166,7 +166,8 @@ dart test --coverage
 
 # Firebase emulators
 # (Download emulator JAR manually if 403, place under ~/.config/firebase/emulators/)
-firebase emulators:start --only auth,firestore
+export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
+firebase emulators:start --only auth,firestore,storage
 ```
 
 

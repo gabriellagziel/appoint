@@ -92,7 +92,8 @@ jobs:
           fi
       - name: Start Firebase emulators
         run: |
-          (firebase emulators:start --only firestore,auth || sleep 5 && firebase emulators:start --only firestore,auth) &
+          export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
+          (firebase emulators:start --only firestore,auth,storage || sleep 5 && firebase emulators:start --only firestore,auth,storage) &
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
       - name: Run tests with coverage
