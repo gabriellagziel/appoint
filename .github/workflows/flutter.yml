@@ -28,6 +28,10 @@ jobs:
         with:
           flutter-version: '3.32.0'
           cache: true
+      - name: Setup Dart SDK
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: '3.4.0'
       - name: Ensure Flutter & Dart in PATH
         run: |
           echo "$HOME/.flutter/bin" >> $GITHUB_PATH
