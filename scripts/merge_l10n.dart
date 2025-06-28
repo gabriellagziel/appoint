@@ -1,5 +1,5 @@
-import 'dart:io';
 import 'dart:convert';
+import 'dart:io';
 
 void main() async {
   final l10nDir = Directory('lib/l10n');
@@ -10,14 +10,20 @@ void main() async {
   }
   final enMap = jsonDecode(await enFile.readAsString()) as Map<String, dynamic>;
   final encoder = const JsonEncoder.withIndent('  ');
+  final missing = <String, List<String>>{};
 
   await for (final entity in l10nDir.list()) {
     if (entity is File && entity.path.endsWith('.arb') && entity.path != enFile.path) {
       final map = jsonDecode(await entity.readAsString()) as Map<String, dynamic>;
       bool updated = false;
+      final locale = entity.uri.pathSegments.last
+          .replaceFirst('app_', '')
+          .replaceFirst('.arb', '');
+      final missingKeys = <String>[];
 
       for (final key in enMap.keys) {
         if (!map.containsKey(key)) {
+          missingKeys.add(key);
           map[key] = enMap[key];
           updated = true;
           stdout.writeln('${entity.path}: added missing key $key');
@@ -35,6 +41,22 @@ void main() async {
       if (updated) {
         await entity.writeAsString(encoder.convert(map));
       }
+
+      if (missingKeys.isNotEmpty) {
+        missing[locale] = missingKeys;
+      }
     }
   }
+
+  final buffer = StringBuffer()
+    ..writeln('const Map<String, List<String>> missingTranslations = {');
+  missing.forEach((locale, keys) {
+    final joined = keys.map((k) => "'$k'").join(', ');
+    buffer.writeln("  '$locale': [$joined],");
+  });
+  buffer.writeln('};');
+
+  final outputFile = File('${l10nDir.path}/l10n_contribution.dart');
+  await outputFile.writeAsString(buffer.toString());
+  stdout.writeln('Generated ${outputFile.path}');
 }
