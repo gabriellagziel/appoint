@@ -15,13 +15,16 @@ RUN apt-get update && apt-get install -y \
 
 # Install Flutter 3.32.0 and Dart 3.4.0 from local archives
 RUN tar xf /tmp/sdk_archives/flutter_linux_3.32.0-stable.tar.xz -C /usr/local \
-    && unzip /tmp/sdk_archives/dartsdk-linux-x64-release.zip -d /usr/lib/dart \
+    && unzip -q /tmp/sdk_archives/dartsdk-linux-x64-release.zip -d /usr/lib \
+    && mv /usr/lib/dart-sdk /usr/lib/dart \
     && rm -rf /tmp/sdk_archives
 
 # Expose environment variables for both build and runtime
 ENV FLUTTER_HOME=/usr/local/flutter
 ENV DART_HOME=/usr/lib/dart
 ENV PATH="$FLUTTER_HOME/bin:$FLUTTER_HOME/bin/cache/dart-sdk/bin:$DART_HOME/bin:${PATH}"
+RUN ln -s $FLUTTER_HOME/bin/flutter /usr/local/bin/flutter \
+    && ln -s $DART_HOME/bin/dart      /usr/local/bin/dart
 
 # Verify installations at build time
 RUN which flutter && flutter --version && which dart && dart --version
