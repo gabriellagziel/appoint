@@ -12,7 +12,7 @@ if [[ -z "$ENTERPRISE" || -z "$TOKEN" ]]; then
   exit 1
 fi
 
-BODY='{"domains":["storage.googleapis.com","firebase-public.firebaseio.com","metadata.google.internal","169.254.169.254","pub.dev"]}'
+BODY='{"domains":["storage.googleapis.com","firebase-public.firebaseio.com","metadata.google.internal","169.254.169.254","raw.githubusercontent.com","pub.dev"]}'
 
 curl -sSL -X PUT \
   -H "Authorization: Bearer ${TOKEN}" \
