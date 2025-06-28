@@ -5,6 +5,9 @@
     "context": ".."
   },
   "postCreateCommand": "dart --version && dart pub get",
+  "containerEnv": {
+    "ALLOWED_HOSTS": "storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio.com"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
