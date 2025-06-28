@@ -30,9 +30,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check network access
         run: |
-          curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
+          curl --fail https://storage.googleapis.com
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -89,7 +88,7 @@ jobs:
             ${{ runner.os }}-pub-
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+      - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs --offline
       - run: flutter analyze
@@ -112,16 +111,10 @@ jobs:
           (firebase emulators:start --only firestore,auth,storage || sleep 5 && firebase emulators:start --only firestore,auth,storage) &
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
-      - name: Run tests with coverage
-        run: |
-          if which dart >/dev/null 2>&1; then
-            echo "Using Dart at $(which dart)"
-            dart test --coverage
-          else
-            echo "::warning::dart CLI not found; using flutter" >&2
-            flutter test --coverage
-          fi
-      - run: flutter test integration_test
+      - name: Run Dart tests
+        run: dart test --coverage=coverage
+      - name: Run Flutter integration tests
+        run: flutter test integration_test --reporter=compact
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
