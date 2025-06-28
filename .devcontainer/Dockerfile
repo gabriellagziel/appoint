@@ -23,6 +23,10 @@ RUN curl -fsSL https://storage.googleapis.com/dart-archive/channels/stable/relea
   && mv /usr/lib/dart-sdk /usr/lib/dart \
   && rm dartsdk.zip
 
+# Symlink flutter and dart into /usr/local/bin for easy access
+RUN ln -s /usr/local/flutter/bin/flutter /usr/local/bin/flutter \
+ && ln -s /usr/local/flutter/bin/cache/dart-sdk/bin/dart /usr/local/bin/dart
+
 # Expose environment variables for both build and runtime
 ENV FLUTTER_HOME=/usr/local/flutter
 ENV DART_HOME=/usr/lib/dart
