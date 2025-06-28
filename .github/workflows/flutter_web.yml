@@ -38,6 +38,7 @@ jobs:
         scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
     - name: "Pre-flight: Verify network & Dart"
       run: |
+    which dart
         dart --version
         for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
           curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
