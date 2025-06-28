@@ -1,10 +1,11 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:REDACTED_TOKEN/REDACTED_TOKEN.dart';
 import 'test_setup.dart';
 
 void main() {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  test('setup loads without error', () async {
-    await registerFirebaseMock();
-    expect(true, isTrue);
+  setupFirebaseMocks();
+
+  test('setup loads without error', () {
+    expect(() => FirebaseAuthPlatform.instance, returnsNormally);
   });
 }
