@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'dart:async';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'l10n/app_localizations.dart';
 import 'config/routes.dart';
@@ -22,6 +24,18 @@ Future<void> appMain() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
+  // Enable Crashlytics collection
+  await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
+
+  // Forward Flutter errors to Crashlytics
+  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
+
+  // Forward Dart errors to Crashlytics
+  PlatformDispatcher.instance.onError = (error, stack) {
+    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+    return true;
+  };
+
   // Initialize Firebase Analytics
   await analytics.setAnalyticsCollectionEnabled(true);
 
@@ -35,10 +49,16 @@ Future<void> appMain() async {
   final notificationService = NotificationService();
   await notificationService.initialize();
 
-  runApp(
-    ProviderScope(
-      child: MyApp(deepLinkService: deepLinkService),
-    ),
+  runZonedGuarded(
+    () {
+      runApp(
+        ProviderScope(
+          child: MyApp(deepLinkService: deepLinkService),
+        ),
+      );
+    },
+    (error, stack) =>
+        FirebaseCrashlytics.instance.recordError(error, stack, fatal: true),
   );
 }
 
