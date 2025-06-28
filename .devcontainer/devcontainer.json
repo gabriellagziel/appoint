@@ -1,36 +1,20 @@
 {
-  "name": "Flutter App",
+  "name": "App-Oint Dev Container",
   "build": {
     "dockerfile": "Dockerfile",
-    "context": ".."
+    "context": "."
   },
-  "postCreateCommand": "curl --fail https://firebase-public.firebaseio.com && curl --fail https://storage.googleapis.com && scripts/devcontainer-init.sh",
-  "containerEnv": {
-    "ALLOWED_HOSTS": "storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio.com",
-    "REDACTED_TOKEN": "storage.googleapis.com,dart.dev,pub.dev,firebase-public.firebaseio.com",
-    "PUB_CACHE": "/home/vscode/.pub-cache"
+  "remoteUser": "vscode",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
   },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "dart-code.dart-code",
-        "dart-code.flutter"
-      ]
-    },
-    "codespaces": {
-      "security": {
-        "allowedDomains": [
-          "storage.googleapis.com",
-          "dart.dev",
-          "pub.dev",
-          "firebase-public.firebaseio.com"
-        ]
-      }
-    }
-  },
-  "features": {},
+  "postCreateCommand": "bash -c \"which flutter && flutter --version && which dart && dart --version\"",
   "mounts": [
-    "source=${localEnv:HOME}/.pub-cache,target=/home/vscode/.pub-cache,type=bind"
+    // Mount host pub cache for offline packages
+    "source=${localEnv:HOME}/.pub-cache,target=/home/vscode/.pub-cache,type=bind,consistency=cached"
   ],
-  "postStartCommand": "curl --fail https://storage.googleapis.com && curl --fail https://dart.dev && curl --fail https://pub.dev && curl --fail https://firebase-public.firebaseio.com"
+  "containerEnv": {
+    "PUB_CACHE": "/home/vscode/.pub-cache"
+  }
 }
