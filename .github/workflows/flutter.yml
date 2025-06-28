@@ -10,6 +10,8 @@ jobs:
   analyze_and_test:
     name: Analyze & Test
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -29,15 +31,6 @@ jobs:
               curl --head --fail https://$host && break || sleep 5
             done
           done
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.32.0'
-          cache: true
-      - name: Ensure Flutter & Dart in PATH
-        run: |
-          echo "$HOME/.flutter/bin" >> $GITHUB_PATH
-          echo "$HOME/.flutter/bin/cache/dart-sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
