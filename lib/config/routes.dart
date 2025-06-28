@@ -35,6 +35,7 @@ import '../features/personal_app/ui/search_screen.dart';
 import '../features/personal_app/ui/content_detail_screen.dart';
 import '../features/personal_app/ui/notifications_screen.dart';
 import '../features/common/ui/error_screen.dart';
+import '../features/referral/referral_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -196,6 +197,11 @@ class AppRouter {
       case '/invite/list':
         return MaterialPageRoute(
           builder: (_) => const InviteListScreen(),
+          settings: settings,
+        );
+      case '/referral':
+        return MaterialPageRoute(
+          builder: (_) => const ReferralScreen(),
           settings: settings,
         );
       case '/content/:id':
