@@ -19,6 +19,7 @@ import '../features/family/screens/family_dashboard_screen.dart';
 import '../features/family/screens/invite_child_screen.dart';
 import '../features/family/screens/permissions_screen.dart';
 import '../features/family/ui/parental_consent_prompt.dart';
+import '../features/family/ui/parental_settings_screen.dart';
 import '../features/invite/invite_detail_screen.dart';
 import '../features/booking/booking_confirm_screen.dart';
 import '../features/admin/admin_broadcast_screen.dart';
@@ -121,6 +122,11 @@ class AppRouter {
       case '/parental-consent':
         return MaterialPageRoute(
           builder: (_) => const ParentalConsentPrompt(),
+          settings: settings,
+        );
+      case '/parental-settings':
+        return MaterialPageRoute(
+          builder: (_) => const ParentalSettingsScreen(),
           settings: settings,
         );
       case '/family/permissions':
