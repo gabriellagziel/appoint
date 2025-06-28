@@ -15,11 +15,19 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
 
     steps:
-    - name: Set up Flutter
+    - uses: actions/checkout@v3
+    - name: Check required network access
+      run: |
+        for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
+        done
+    - name: Setup Flutter SDK
       uses: subosito/flutter-action@v2
       with:
-        flutter-version: '3.7.0'
-    - uses: actions/checkout@v3
+        flutter-version: '3.32.0'
+        cache: true
+    - name: Ensure flutter in PATH
+      run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
     - name: Cache Pub packages
       uses: actions/cache@v3
       with:
@@ -31,16 +39,33 @@ jobs:
       run: flutter clean
     - name: Verify Flutter Version
       run: flutter --version
-    - name: Verify Dart Version
-      run: dart --version
+    - name: Configure Network Allowlist
+      run: |
+        scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
+    - name: "Pre-flight: Verify network & Dart"
+      run: |
+    which dart
+        dart --version
+        for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
+        done
     - run: flutter pub get
     - run: dart pub get
     - run: dart run build_runner build --delete-conflicting-outputs
+    - name: Configure offline pub cache
+      run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+    - name: Fetch dependencies offline
+      run: flutter pub get --offline
     - run: flutter analyze
     - run: dart analyze
-    - run: dart test --coverage
+    - run: flutter test --coverage test/
     - run: dart test integration_test/
     - run: flutter build web --release
+    - name: Upload coverage artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: coverage/lcov.info
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
