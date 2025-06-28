@@ -52,6 +52,8 @@ jobs:
       run: |
     which dart
         dart --version
+        curl --fail https://firebase-public.firebaseio.com
+        curl --fail https://storage.googleapis.com
         for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
           curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
         done
@@ -63,9 +65,9 @@ jobs:
         curl --fail https://dart.dev
         curl --fail https://pub.dev
         curl --fail https://firebase-public.firebaseio.com
-    - run: flutter pub get
+    - run: flutter pub get --offline
     - run: dart pub get
-    - run: dart run build_runner build --delete-conflicting-outputs
+    - run: dart run build_runner build --delete-conflicting-outputs --offline
     - name: Configure offline pub cache
       run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
     - name: Check storage connectivity

@@ -4,7 +4,7 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-  "postCreateCommand": "scripts/devcontainer-init.sh",
+  "postCreateCommand": "curl --fail https://firebase-public.firebaseio.com && curl --fail https://storage.googleapis.com && scripts/devcontainer-init.sh",
   "containerEnv": {
     "ALLOWED_HOSTS": "storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio.com",
     "GITHUB_CODESPACES_PORTS_HTTPS_PROXY_ALLOWED_HOSTS": "storage.googleapis.com,dart.dev,pub.dev,firebase-public.firebaseio.com",
