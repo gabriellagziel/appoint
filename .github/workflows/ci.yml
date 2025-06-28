@@ -9,6 +9,8 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -45,12 +47,6 @@ jobs:
           done
       - name: Fetch tags
         run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -139,6 +135,8 @@ jobs:
   content-library-test:
     needs: build-and-test
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -165,12 +163,6 @@ jobs:
           done
       - name: Fetch tags
         run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -237,6 +229,8 @@ jobs:
   deploy-functions:
     needs: build-and-test
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: https://pub.dev
@@ -264,12 +258,6 @@ jobs:
           done
       - name: Fetch tags
         run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -306,6 +294,8 @@ jobs:
   deploy-hosting:
     needs: build-and-test
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: http://localhost:4873
@@ -333,12 +323,6 @@ jobs:
           done
       - name: Fetch tags
         run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -412,6 +396,8 @@ jobs:
   smoke-test:
     needs: [deploy-functions, deploy-hosting]
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: http://localhost:4873
@@ -439,12 +425,6 @@ jobs:
           done
       - name: Fetch tags
         run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -544,12 +524,6 @@ jobs:
           done
       - name: Fetch tags
         run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -622,6 +596,8 @@ jobs:
   notify:
     needs: [build-and-test, deploy-functions, deploy-hosting, smoke-test]
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
     if: always()
     env:
       PUB_HOSTED_URL: http://localhost:4873
@@ -649,12 +625,6 @@ jobs:
           done
       - name: Fetch tags
         run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
