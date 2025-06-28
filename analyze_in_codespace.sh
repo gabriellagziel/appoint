@@ -2,9 +2,7 @@
 echo "🧼 Cleaning..."
 flutter clean
 
-echo "📦 Getting packages..."
-dart pub get
-flutter pub get
+echo "📦 Packages preloaded via Docker cache"
 
 echo "🛠️ Running build_runner..."
 flutter pub run build_runner build --delete-conflicting-outputs

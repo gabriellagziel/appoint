@@ -39,10 +39,15 @@ RUN which flutter && flutter --version && which dart && dart --version
 # Stage 1 – Cache Dependencies
 WORKDIR /workspace
 COPY pubspec.yaml pubspec.lock ./
-RUN flutter pub get && dart pub get
+RUN flutter pub get && dart pub get \
+    && tar czf /tmp/pub_cache.tar.gz ~/.pub-cache
 
 # Copy app sources after caching dependencies
 COPY . .
+
+# Restore cached dependencies for subsequent steps
+RUN mkdir -p ~/.pub-cache \
+    && tar xzf /tmp/pub_cache.tar.gz -C ~
 
 # Set up working directory
 WORKDIR /workspace
