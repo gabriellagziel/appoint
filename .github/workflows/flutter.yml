@@ -18,17 +18,7 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v3
-      - name: Check network access
-        run: |
-          curl --fail https://pub.dev
-          curl --fail https://storage.googleapis.com
-      - name: Check required network access
-        run: |
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
-            for i in 1 2 3; do
-              curl --head --fail https://$host && break || sleep 5
-            done
-          done
+      # network checks removed for offline usage
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -43,23 +33,11 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: "Pre-flight: Verify network & Dart"
+      - name: "Pre-flight: Verify Dart"
         run: |
           which dart
           dart --version
-          curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
-          done
-      - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
+      # network checks removed for offline usage
       - name: Get dependencies
         run: flutter pub get
       - run: dart pub get
@@ -68,8 +46,6 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs --offline
       - run: flutter analyze
       - run: dart analyze
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
       - name: Start Firebase emulators
         run: |
           echo "FIREBASE_AUTH_EMULATOR_HOST=localhost:9099" >> $GITHUB_ENV
