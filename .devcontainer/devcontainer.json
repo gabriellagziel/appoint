@@ -12,7 +12,8 @@
   "postCreateCommand": [
     "which flutter && flutter --version",
     "which dart    && dart --version",
-    "bash -c \"ls /workspace/sdk_archives && which flutter && which dart\""
+    "which firebase && firebase --version",
+    "bash -c \"ls /workspace/sdk_archives && which flutter && which dart && which firebase\""
   ],
   "mounts": [
     // Mount host pub cache for offline packages
@@ -20,10 +21,10 @@
     "source=${localWorkspaceFolder}/sdk_archives,target=/workspace/sdk_archives,type=bind,consistency=cached"
   ],
   "containerEnv": {
-    "PATH": "/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:/usr/local/bin:${containerEnv:PATH}",
+    "PATH": "/usr/local/bin:/usr/lib/dart/bin:${containerEnv:PATH}",
     "PUB_CACHE": "/home/vscode/.pub-cache"
   },
   "remoteEnv": {
-    "PATH": "/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:/usr/local/bin:${containerEnv:PATH}"
+    "PATH": "/usr/local/bin:/usr/lib/dart/bin:${containerEnv:PATH}"
   }
 }
