@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -130,6 +131,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -224,6 +226,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: https://pub.dev
@@ -289,6 +292,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: http://localhost:4873
@@ -391,6 +395,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: http://localhost:4873
@@ -591,6 +596,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     if: always()
     env:
       PUB_HOSTED_URL: http://localhost:4873
