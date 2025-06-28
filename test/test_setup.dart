@@ -6,6 +6,7 @@ import 'package:REDACTED_TOKEN/REDACTED_TOKEN.dart';
 import 'package:REDACTED_TOKEN/REDACTED_TOKEN.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:REDACTED_TOKEN/test.dart';
+import 'test_config.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'mocks/service_mocks.mocks.dart';
 import '../lib/infra/firestore_service.dart';
@@ -19,16 +20,21 @@ import '../lib/generated/pigeon_firestore_api.dart';
 class MockFirebaseAuthPlatform extends Mock
     with MockPlatformInterfaceMixin
     implements FirebaseAuthPlatform {}
+
 class MockFirebaseFirestorePlatform extends Mock
     with MockPlatformInterfaceMixin
     implements FirebaseFirestorePlatform {}
+
 class MockFirebaseCrashlyticsPlatform extends Mock
     with MockPlatformInterfaceMixin
     implements FirebaseCrashlyticsPlatform {}
+
 class MockFilePicker extends Mock
     with MockPlatformInterfaceMixin
     implements FilePicker {}
+
 class MockAuthHostApi extends Mock implements AuthHostApi {}
+
 class MockFirestoreHostApi extends Mock implements FirestoreHostApi {}
 
 late MockFirestoreService mockFirestoreService;
@@ -36,9 +42,7 @@ late MockAuthService mockAuthService;
 late MockFirebaseStorageService mockStorageService;
 
 void setupFirebaseMocks() {
-  TestWidgetsFlutterBinding.ensureInitialized();
-
-  setupFirebaseCoreMocks();
+  setupTestConfig();
 
   setUpAll(() async {
     await Firebase.initializeApp();
