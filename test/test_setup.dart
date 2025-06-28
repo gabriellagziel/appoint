@@ -1,34 +1,43 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:firebase_app_check/firebase_app_check.dart';
+import 'package:firebase_auth_platform_interface/firebase_auth_platform_interface.dart';
+import 'package:cloud_firestore_platform_interface/cloud_firestore_platform_interface.dart';
+import 'package:firebase_crashlytics_platform_interface/firebase_crashlytics_platform_interface.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:firebase_core_platform_interface/test.dart';
+import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import '../lib/generated/pigeon_auth_api.dart';
 import '../lib/generated/pigeon_firestore_api.dart';
 
 // Mocks
-class MockFirebaseAuth extends Mock implements FirebaseAuth {}
-class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
-class MockFirebaseCrashlytics extends Mock implements FirebaseCrashlytics {}
-class MockFirebaseAppCheck extends Mock implements FirebaseAppCheck {}
-class MockFilePicker extends Mock implements FilePicker {}
+class MockFirebaseAuthPlatform extends Mock
+    with MockPlatformInterfaceMixin
+    implements FirebaseAuthPlatform {}
+class MockFirebaseFirestorePlatform extends Mock
+    with MockPlatformInterfaceMixin
+    implements FirebaseFirestorePlatform {}
+class MockFirebaseCrashlyticsPlatform extends Mock
+    with MockPlatformInterfaceMixin
+    implements FirebaseCrashlyticsPlatform {}
+class MockFilePicker extends Mock
+    with MockPlatformInterfaceMixin
+    implements FilePicker {}
 class MockAuthHostApi extends Mock implements AuthHostApi {}
 class MockFirestoreHostApi extends Mock implements FirestoreHostApi {}
 
-void setupFirebaseTestMocks() {
+void setupFirebaseMocks() {
   TestWidgetsFlutterBinding.ensureInitialized();
+
+  setupFirebaseCoreMocks();
 
   setUpAll(() async {
     await Firebase.initializeApp();
 
-    FirebaseAuth.instanceFor = ({required FirebaseApp app}) => MockFirebaseAuth();
-    FirebaseFirestore.instanceFor = ({required FirebaseApp app}) => MockFirebaseFirestore();
-    FirebaseCrashlytics.instance = MockFirebaseCrashlytics();
-    FirebaseAppCheck.instance = MockFirebaseAppCheck();
+    FirebaseAuthPlatform.instance = MockFirebaseAuthPlatform();
+    FirebaseFirestorePlatform.instance = MockFirebaseFirestorePlatform();
+    FirebaseCrashlyticsPlatform.instance = MockFirebaseCrashlyticsPlatform();
     FilePicker.platform = MockFilePicker();
 
     AuthHostApi.setup(MockAuthHostApi());
