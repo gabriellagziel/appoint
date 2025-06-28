@@ -20,6 +20,7 @@
     "source=${localWorkspaceFolder}/sdk_archives,target=/workspace/sdk_archives,type=bind,consistency=cached"
   ],
   "containerEnv": {
+    "PATH": "/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:/usr/local/bin:${containerEnv:PATH}",
     "PUB_CACHE": "/home/vscode/.pub-cache"
   }
 }
