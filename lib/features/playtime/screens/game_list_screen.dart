@@ -6,7 +6,6 @@ import '../../../l10n/app_localizations.dart';
 import '../../../providers/playtime_provider.dart';
 import '../../../config/theme.dart';
 import '../../../models/playtime_game.dart';
-import '../../../utils/color_extensions.dart';
 
 class GameListScreen extends ConsumerStatefulWidget {
   const GameListScreen({super.key});
