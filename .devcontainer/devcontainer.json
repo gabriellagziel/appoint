@@ -1,7 +1,8 @@
 {
   "name": "Flutter App",
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "context": ".."
   },
   "postCreateCommand": "dart --version && dart pub get",
   "customizations": {
