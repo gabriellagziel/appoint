@@ -61,10 +61,20 @@ Appointment scheduling app built with Flutter with advanced features including A
 
 The CI environment must allow outbound HTTPS to:
 - `storage.googleapis.com`
+- `firebase-public.firebaseio.com`
+- `metadata.google.internal`
+- `169.254.169.254`
+- `raw.githubusercontent.com`
 - `pub.dev`
 
 ### GitHub Actions (Enterprise)
-Go to **Settings → Actions → General**, and under "Network access," add those domains to the allowlist.
+Go to **Settings → Actions → General**, and under "Network access," add those domains to the allowlist. Alternatively run:
+
+```bash
+scripts/update_network_allowlist.sh <enterprise> <token>
+```
+
+Where `<token>` has `admin:enterprise` scope.
 
 ### Self-Hosted Runners
 Update your firewall/proxy settings on the runner machines to permit connections to the above hosts.
@@ -124,6 +134,8 @@ firebase.googleapis.com
 firebaseinstallations.googleapis.com
 metadata.google.internal
 169.254.169.254
+firebase-public.firebaseio.com
+raw.githubusercontent.com
 ```
 
 If these domains are blocked, configure pub mirrors:

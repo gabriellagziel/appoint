@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:ui' show Offset;
-import 'package:flutter/painting.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -9,7 +7,6 @@ import '../../../config/theme.dart';
 import '../../../providers/playtime_provider.dart';
 import '../../../models/playtime_session.dart';
 import '../../../models/playtime_background.dart';
-import '../../../utils/color_extensions.dart';
 
 class ParentDashboardScreen extends ConsumerWidget {
   const ParentDashboardScreen({super.key});

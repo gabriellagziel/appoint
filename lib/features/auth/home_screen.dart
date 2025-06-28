@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../providers/auth_provider.dart';
 import '../../providers/appointment_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../theme/app_colors.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -12,6 +13,7 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final appointments = ref.watch(appointmentsStreamProvider);
     return Scaffold(
+      backgroundColor: AppColors.primary,
       appBar: AppBar(title: const Text('Home')),
       drawer: const _HomeDrawer(),
       body: Center(
@@ -98,10 +100,9 @@ class _HomeDrawer extends ConsumerWidget {
             },
           ),
           FutureBuilder<bool>(
-            future: FirebaseAuth.instance
-                .currentUser
-                ?.getIdTokenResult(true)
-                .then((r) => r.claims?['admin'] == true) ??
+            future: FirebaseAuth.instance.currentUser
+                    ?.getIdTokenResult(true)
+                    .then((r) => r.claims?['admin'] == true) ??
                 Future.value(false),
             builder: (context, snapshot) {
               if (snapshot.data == true) {

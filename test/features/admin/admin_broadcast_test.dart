@@ -1,7 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
+import '../../fake_firebase_setup.dart';
 
-void main() {
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
   group('Admin Broadcast System Tests', () {
     group('BroadcastMessage Model Tests', () {
       test('should create broadcast message with all required fields', () {
