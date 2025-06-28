@@ -15,11 +15,13 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.7.0'
       - uses: actions/checkout@v3
+      - name: Setup Flutter SDK
+        uses: flutter-actions/setup-flutter@v2
+        with:
+          flutter-version: '3.20.0'
+      - name: Ensure flutter in PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -31,8 +33,16 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: Verify Dart Version
-        run: dart --version
+      - name: Configure Network Allowlist
+        run: |
+          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
+      - name: "Pre-flight: Verify network & Dart"
+        run: |
+    which dart
+          dart --version
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
+            curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
+          done
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -43,11 +53,28 @@ jobs:
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
+      - name: Configure offline pub cache
+        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Fetch dependencies offline
+        run: flutter pub get --offline
       - run: flutter analyze
       - run: dart analyze
-      - run: dart test --coverage
+      - name: Run tests with coverage
+        run: |
+          if which dart >/dev/null 2>&1; then
+            echo "Using Dart at $(which dart)"
+            dart test --coverage test/
+          else
+            echo "::warning::dart CLI not found; using flutter" >&2
+            flutter test --coverage test/
+          fi
       - run: dart test integration_test/
       - run: flutter build web
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
       - name: Validate ARB files structure
         run: |
           echo "Checking ARB files structure..."
@@ -73,6 +100,8 @@ jobs:
               echo "✅ $file has correct key count: $key_count"
             fi
           done
+      - name: Merge missing l10n keys
+        run: dart scripts/merge_l10n.dart
       - name: Generate localizations
         run: flutter gen-l10n
       - name: Verify generated files

@@ -1,12 +1,10 @@
-@Skip('Pending Firebase setup conflicts')
 import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
-import '../test_setup.dart';
+import '../fake_firebase_setup.dart';
 
-void main() {
-  setUpAll(() async {
-    await registerFirebaseMock();
-  });
+Future<void> main() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  await initializeTestFirebase();
 
   group('AdminBroadcastMessage Model', () {
     test('should correctly create a text broadcast message', () {
