@@ -19,7 +19,9 @@ jobs:
       - name: Check required network access
         run: |
           for host in storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
+            for i in 1 2 3; do
+              curl --head --fail https://$host && break || sleep 5
+            done
           done
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
@@ -50,8 +52,14 @@ jobs:
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
           done
-      - run: flutter pub get
+      - name: Get dependencies with retry
+        run: |
+          for i in 1 2 3; do
+            flutter pub get && break || sleep 5
+          done
       - run: dart pub get
+      - name: Verify firebase_app_check resolution
+        run: grep firebase_app_check pubspec.lock
       - run: dart run build_runner build --delete-conflicting-outputs
       - name: Configure offline pub cache
         run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
