@@ -29,9 +29,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -45,13 +51,6 @@ jobs:
           flutter-version: '3.20.0'
       - name: Add Flutter to PATH
         run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -83,9 +82,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
@@ -144,9 +149,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -160,13 +171,6 @@ jobs:
           flutter-version: '3.20.0'
       - name: Add Flutter to PATH
         run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -198,9 +202,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
@@ -238,9 +248,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -254,13 +270,6 @@ jobs:
           flutter-version: '3.20.0'
       - name: Add Flutter to PATH
         run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -308,9 +317,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -324,13 +339,6 @@ jobs:
           flutter-version: '3.20.0'
       - name: Add Flutter to PATH
         run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -362,9 +370,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
@@ -409,9 +423,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -425,13 +445,6 @@ jobs:
           flutter-version: '3.20.0'
       - name: Add Flutter to PATH
         run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -463,9 +476,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
@@ -509,9 +528,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -525,13 +550,6 @@ jobs:
           flutter-version: '3.20.0'
       - name: Add Flutter to PATH
         run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -563,9 +581,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
@@ -609,9 +633,15 @@ jobs:
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -625,13 +655,6 @@ jobs:
           flutter-version: '3.20.0'
       - name: Add Flutter to PATH
         run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
