@@ -5,7 +5,6 @@ import 'package:firebase_auth_platform_interface/firebase_auth_platform_interfac
 import 'package:cloud_firestore_platform_interface/cloud_firestore_platform_interface.dart';
 import 'package:firebase_crashlytics_platform_interface/firebase_crashlytics_platform_interface.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:firebase_core_platform_interface/test.dart';
 import 'test_config.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'mocks/service_mocks.mocks.dart';
