@@ -6,6 +6,9 @@ import '../features/studio/studio_booking_screen.dart';
 import '../features/studio/studio_booking_confirm_screen.dart';
 import '../features/studio/ui/content_library_screen.dart';
 import '../features/studio/ui/studio_dashboard_screen.dart';
+import '../features/studio/ui/appointments_screen.dart';
+import '../features/studio/ui/staff_screen.dart';
+import '../features/studio/ui/providers_screen.dart';
 import '../features/booking/screens/chat_booking_screen.dart';
 import '../features/booking/booking_request_screen.dart';
 import '../features/dashboard/dashboard_screen.dart';
@@ -67,6 +70,22 @@ class AppRouter {
       case '/studio/library':
         return MaterialPageRoute(
           builder: (_) => const ContentLibraryScreen(),
+          settings: settings,
+        );
+      case '/studio/appointments':
+        return MaterialPageRoute(
+          builder: (_) => const AppointmentsScreen(),
+          settings: settings,
+        );
+      case '/studio/staff':
+        final staffId = settings.arguments as String? ?? 'default';
+        return MaterialPageRoute(
+          builder: (_) => StaffScreen(staffId: staffId),
+          settings: settings,
+        );
+      case '/studio/providers':
+        return MaterialPageRoute(
+          builder: (_) => const ProvidersScreen(),
           settings: settings,
         );
       case '/chat-booking':
