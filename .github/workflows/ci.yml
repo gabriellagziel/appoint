@@ -105,7 +105,7 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage
           fi
-      - run: dart test integration_test/
+      - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -328,7 +328,7 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage
           fi
-      - run: dart test integration_test/
+      - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -414,7 +414,7 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage
           fi
-      - run: dart test integration_test/
+      - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -499,7 +499,7 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage
           fi
-      - run: dart test integration_test/
+      - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -580,7 +580,7 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage
           fi
-      - run: dart test integration_test/
+      - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
