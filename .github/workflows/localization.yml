@@ -52,6 +52,12 @@ jobs:
         run: npm install -g cspell
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
@@ -59,6 +65,12 @@ jobs:
         run: curl --fail https://storage.googleapis.com
       - name: Configure offline pub cache
         run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Fetch dependencies offline
         run: flutter pub get --offline
       - run: flutter analyze
