@@ -7,7 +7,6 @@ import '../../../config/theme.dart';
 import '../../../providers/playtime_provider.dart';
 import '../../../models/playtime_session.dart';
 import '../../../models/playtime_background.dart';
-import '../../../utils/color_extensions.dart';
 
 class ParentDashboardScreen extends ConsumerWidget {
   const ParentDashboardScreen({super.key});
