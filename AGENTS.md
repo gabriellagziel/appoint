@@ -9,6 +9,12 @@ dart run                  # CLI
 flutter run -d chrome      # Web
 ```
 
+## Dev Container
+
+The dev container (`.devcontainer/Dockerfile`) installs Flutter 3.32.0 and Dart
+3.4.0 from pre-downloaded archives. Before building, place the required SDK
+archives under `.devcontainer/sdk_archives` so no network download is needed.
+
 ## Testing
 
 ```bash
