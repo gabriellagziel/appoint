@@ -17,11 +17,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.20.0'
+          flutter-version: '3.32.0'
+          cache: true
       - name: Ensure flutter in PATH
         run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+      - uses: dart-lang/setup-dart
+        with:
+          sdk: 3.4.0
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -40,7 +44,7 @@ jobs:
         run: |
     which dart
           dart --version
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
+          for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
             curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js

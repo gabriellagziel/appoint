@@ -18,19 +18,23 @@ jobs:
       - uses: actions/checkout@v3
       - name: Check required network access
         run: |
-          for host in storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
+          for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
             for i in 1 2 3; do
               curl --head --fail https://$host && break || sleep 5
             done
           done
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.20.0'
+          flutter-version: '3.32.0'
+          cache: true
       - name: Ensure Flutter & Dart in PATH
         run: |
           echo "$HOME/.flutter/bin" >> $GITHUB_PATH
           echo "$HOME/.flutter/bin/cache/dart-sdk/bin" >> $GITHUB_PATH
+      - uses: dart-lang/setup-dart
+        with:
+          sdk: 3.4.0
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
