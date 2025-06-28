@@ -13,9 +13,10 @@ RUN wget -O /tmp/dart-sdk.zip https://storage.googleapis.com/dart-archive/channe
     mv /usr/lib/dart-sdk /usr/lib/dart && \
     rm /tmp/dart-sdk.zip
 
-# Set PATH for Dart
-ENV PATH="/usr/lib/dart/bin:${PATH}"
+# Set up Dart environment
+ENV DART_HOME=/usr/lib/dart
+ENV PATH="${DART_HOME}/bin:${PATH}"
 
-# Verify installation
-RUN dart --version
+# Verify installation at build time
+RUN which dart && dart --version
 
