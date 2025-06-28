@@ -71,6 +71,8 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
@@ -168,6 +170,8 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
@@ -306,6 +310,8 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
@@ -390,6 +396,8 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
@@ -473,6 +481,8 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
@@ -552,6 +562,8 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
       - run: flutter pub get --offline
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
