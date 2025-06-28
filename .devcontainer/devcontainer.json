@@ -4,7 +4,7 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-  "postCreateCommand": "dart --version && dart pub get",
+  "postCreateCommand": "flutter --version && dart --version && which flutter && which dart && dart pub get",
   "containerEnv": {
     "ALLOWED_HOSTS": "storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio.com"
   },
