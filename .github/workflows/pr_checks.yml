@@ -52,6 +52,10 @@ jobs:
           curl --fail https://firebase-public.firebaseio.com
       - run: flutter pub get --offline
       - run: dart pub get
+      - name: Check Dart formatting
+        run: dart format --output=none --set-exit-if-changed .
+      - name: Analyze code
+        run: flutter analyze --no-fatal-infos
       - run: dart run build_runner build --delete-conflicting-outputs --offline
       - run: dart test --coverage
       - name: Calculate coverage
