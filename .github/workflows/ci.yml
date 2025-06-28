@@ -13,6 +13,7 @@ jobs:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
+      PUB_CACHE: ~/.pub-cache
     services:
       firebase:
         image: cdrx/fake-firebase-emulator:latest
@@ -135,6 +136,7 @@ jobs:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
+      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
       - name: Check network access
@@ -226,6 +228,7 @@ jobs:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
+      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
       - name: Check network access
@@ -293,6 +296,7 @@ jobs:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
+      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
       - name: Check network access
@@ -391,6 +395,7 @@ jobs:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
+      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
       - name: Check network access
@@ -488,6 +493,7 @@ jobs:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
+      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
       - name: Check network access
@@ -585,6 +591,7 @@ jobs:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
+      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
       - name: Check network access
