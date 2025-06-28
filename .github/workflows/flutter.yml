@@ -55,6 +55,12 @@ jobs:
           done
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Get dependencies with retry
         run: |
           for i in 1 2 3; do
