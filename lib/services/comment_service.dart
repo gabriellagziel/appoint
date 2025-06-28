@@ -6,8 +6,16 @@ import '../models/comment.dart';
 class CommentService {
   Future<List<Comment>> fetchComments() async {
     return [
-      Comment(id: '1', text: 'First!', createdAt: DateTime.now()),
-      Comment(id: '2', text: 'Nice post', createdAt: DateTime.now()),
+      Comment(
+          id: '1',
+          username: 'Alice',
+          text: 'First!',
+          createdAt: DateTime.now()),
+      Comment(
+          id: '2',
+          username: 'Bob',
+          text: 'Nice post',
+          createdAt: DateTime.now()),
     ];
   }
 
