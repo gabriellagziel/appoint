@@ -50,9 +50,13 @@ jobs:
           cache: 'npm'
       - name: Install cspell
         run: npm install -g cspell
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
       - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
       - name: Configure offline pub cache
         run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Fetch dependencies offline
