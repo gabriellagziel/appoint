@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
+import '../models/app_user.dart';
+
 class AuthService {
   static const redirectUri = 'http://localhost:8080/__/auth/handler';
 
@@ -9,19 +11,37 @@ class AuthService {
     return _firebaseAuth.currentUser;
   }
 
+  Stream<AppUser?> authStateChanges() {
+    return _firebaseAuth.authStateChanges().asyncMap((user) async {
+      if (user == null) return null;
+      final token = await user.getIdTokenResult(true);
+      final claims = token.claims ?? <String, dynamic>{};
+      final role = claims['role'] as String? ?? 'personal';
+      return AppUser(
+        uid: user.uid,
+        email: user.email,
+        role: role,
+        studioId: claims['studioId'] as String?,
+        businessProfileId: claims['businessProfileId'] as String?,
+      );
+    });
+  }
+
   Future<void> signIn(String email, String password) async {
     await _firebaseAuth.signInWithEmailAndPassword(
-        email: email, password: password);
+      email: email,
+      password: password,
+    );
   }
 
   Future<void> signOut() async {
     await _firebaseAuth.signOut();
   }
 
-  /// Sign in using Google identity services popup on web
   Future<UserCredential> signInWithGooglePopup() async {
     final googleProvider = GoogleAuthProvider();
     googleProvider.setCustomParameters({'redirectUri': redirectUri});
     return _firebaseAuth.signInWithPopup(googleProvider);
   }
 }
+
