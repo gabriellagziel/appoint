@@ -17,6 +17,8 @@ import '../features/admin/ui/admin_dashboard_screen.dart';
 import '../features/family/widgets/invitation_modal.dart';
 import '../features/family/screens/family_dashboard_screen.dart';
 import '../features/family/screens/invite_child_screen.dart';
+import '../features/child/ui/child_dashboard_screen.dart';
+import '../features/child/ui/parental_control_screen.dart';
 import '../features/family/screens/permissions_screen.dart';
 import '../features/family/ui/parental_consent_prompt.dart';
 import '../features/family/ui/parental_settings_screen.dart';
@@ -121,7 +123,12 @@ class AppRouter {
         );
       case '/child/dashboard':
         return MaterialPageRoute(
-          builder: (_) => const FamilyDashboardScreen(),
+          builder: (_) => const ChildDashboardScreen(),
+          settings: settings,
+        );
+      case '/child/controls':
+        return MaterialPageRoute(
+          builder: (_) => const ParentalControlScreen(),
           settings: settings,
         );
       case '/family/invite-child':
