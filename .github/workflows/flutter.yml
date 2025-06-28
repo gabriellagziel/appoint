@@ -53,6 +53,8 @@ jobs:
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
             curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
           done
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
       - name: Get dependencies with retry
         run: |
           for i in 1 2 3; do
