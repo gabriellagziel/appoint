@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'l10n/app_localizations.dart';
@@ -22,6 +23,14 @@ Future<void> appMain() async {
 
   // Initialize Firebase Analytics
   await FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
+
+  // Initialize Firebase Remote Config
+  final remoteConfig = FirebaseRemoteConfig.instance;
+  await remoteConfig.setDefaults(const {
+    'welcome_message': 'Hello from Remote Config',
+    'show_ads': false,
+  });
+  await remoteConfig.fetchAndActivate();
 
   // Initialize custom deep link service (replaces Firebase Dynamic Links)
   final deepLinkService = CustomDeepLinkService();
