@@ -1,10 +1,7 @@
 # Use an official lightweight base image
 FROM ubuntu:22.04
 
-# Copy pre-downloaded SDK archives into the container
-COPY sdk_archives /tmp/sdk_archives
-
-# Install dependencies and set up Dart APT repo
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     apt-transport-https \
     gnupg \
@@ -13,15 +10,21 @@ RUN apt-get update && apt-get install -y \
     git \
     xz-utils \
     zip \
-  && curl -fsSL https://dl-ssl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /usr/share/keyrings/dart-archive-keyring.gpg \
-  && printf "deb [signed-by=/usr/share/keyrings/dart-archive-keyring.gpg] https://storage.googleapis.com/dart-archive/channels/stable/release/3.4.0/sdk/ stable main" > /etc/apt/sources.list.d/dart_stable.list \
-  && apt-get update \
-  && apt-get install -y dart=3.4.0-1 \
   && rm -rf /var/lib/apt/lists/*
 
-# Install Flutter 3.32.0 from local archive
-RUN tar xf /tmp/sdk_archives/flutter_linux_3.32.0-stable.tar.xz -C /usr/local \
-    && rm -rf /tmp/sdk_archives
+# Copy pre-downloaded SDK archives
+COPY .devcontainer/sdk_archives/flutter_linux_3.32.0-stable.tar.xz /tmp/
+COPY .devcontainer/sdk_archives/dartsdk-linux-x64-release.zip  /tmp/
+
+# Unpack Flutter
+RUN tar xf /tmp/flutter_linux_3.32.0-stable.tar.xz -C /usr/local \
+    && rm /tmp/flutter_linux_3.32.0-stable.tar.xz
+
+# Unpack Dart
+RUN unzip -q /tmp/dartsdk-linux-x64-release.zip -d /usr/lib \
+    && mv /usr/lib/dart-sdk /usr/lib/dart \
+    && rm /tmp/dartsdk-linux-x64-release.zip
+
 
 # Install Firebase CLI
 RUN curl -fsSL https://firebase.tools/bin/linux/v17/firebase-linux.zip -o firebase.zip \
