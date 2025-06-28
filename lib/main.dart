@@ -11,6 +11,8 @@ import 'firebase_options.dart';
 import 'services/custom_deep_link_service.dart';
 import 'services/notification_service.dart';
 
+final FirebaseAnalytics analytics = FirebaseAnalytics.instance;
+
 Future<void> appMain() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: '.env');
@@ -21,7 +23,7 @@ Future<void> appMain() async {
   );
 
   // Initialize Firebase Analytics
-  await FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
+  await analytics.setAnalyticsCollectionEnabled(true);
 
   // Initialize custom deep link service (replaces Firebase Dynamic Links)
   final deepLinkService = CustomDeepLinkService();
@@ -79,7 +81,7 @@ class _MyAppState extends State<MyApp> {
       navigatorKey: _navigatorKey,
       onGenerateRoute: AppRouter.onGenerateRoute,
       navigatorObservers: [
-        FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance),
+        FirebaseAnalyticsObserver(analytics: analytics),
       ],
       // Localization support
       localizationsDelegates: [
