@@ -88,8 +88,15 @@ jobs:
           (firebase emulators:start --only firestore,auth || sleep 5 && firebase emulators:start --only firestore,auth) &
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
-      - run: flutter test --coverage
-      - run: dart test --coverage
+      - name: Run tests with coverage
+        run: |
+          if which dart >/dev/null 2>&1; then
+            echo "Using Dart at $(which dart)"
+            dart test --coverage
+          else
+            echo "::warning::dart CLI not found; using flutter" >&2
+            flutter test --coverage
+          fi
       - run: dart test integration_test/
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -157,7 +164,15 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
-      - run: flutter test --coverage test/features/studio/content_library_screen_test.dart
+      - name: Run content library test with coverage
+        run: |
+          if which dart >/dev/null 2>&1; then
+            echo "Using Dart at $(which dart)"
+            dart test --coverage test/features/studio/content_library_screen_test.dart
+          else
+            echo "::warning::dart CLI not found; using flutter" >&2
+            flutter test --coverage test/features/studio/content_library_screen_test.dart
+          fi
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -277,8 +292,15 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
-      - run: flutter test --coverage
-      - run: dart test --coverage
+      - name: Run tests with coverage
+        run: |
+          if which dart >/dev/null 2>&1; then
+            echo "Using Dart at $(which dart)"
+            dart test --coverage
+          else
+            echo "::warning::dart CLI not found; using flutter" >&2
+            flutter test --coverage
+          fi
       - run: dart test integration_test/
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -349,8 +371,15 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
-      - run: flutter test --coverage
-      - run: dart test --coverage
+      - name: Run tests with coverage
+        run: |
+          if which dart >/dev/null 2>&1; then
+            echo "Using Dart at $(which dart)"
+            dart test --coverage
+          else
+            echo "::warning::dart CLI not found; using flutter" >&2
+            flutter test --coverage
+          fi
       - run: dart test integration_test/
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -420,8 +449,15 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
-      - run: flutter test --coverage
-      - run: dart test --coverage
+      - name: Run tests with coverage
+        run: |
+          if which dart >/dev/null 2>&1; then
+            echo "Using Dart at $(which dart)"
+            dart test --coverage
+          else
+            echo "::warning::dart CLI not found; using flutter" >&2
+            flutter test --coverage
+          fi
       - run: dart test integration_test/
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -487,8 +523,15 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
-      - run: flutter test --coverage
-      - run: dart test --coverage
+      - name: Run tests with coverage
+        run: |
+          if which dart >/dev/null 2>&1; then
+            echo "Using Dart at $(which dart)"
+            dart test --coverage
+          else
+            echo "::warning::dart CLI not found; using flutter" >&2
+            flutter test --coverage
+          fi
       - run: dart test integration_test/
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3

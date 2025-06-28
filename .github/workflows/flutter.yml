@@ -57,6 +57,7 @@ jobs:
       - name: Run tests with coverage
         run: |
           if command -v dart >/dev/null 2>&1; then
+            echo "Using Dart at $(which dart)"
             dart test --coverage
           else
             echo "::warning::dart CLI not found; using flutter" >&2
