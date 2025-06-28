@@ -72,7 +72,7 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage test/
           fi
-      - run: dart test integration_test/
+      - run: flutter test integration_test
       - run: flutter build web
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
