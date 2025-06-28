@@ -28,4 +28,33 @@ void main() {
     expect(find.text('John Doe'), findsOneWidget);
     expect(find.text('Hello'), findsOneWidget);
   });
+
+  testWidgets('referral copy flow', (tester) async {
+    await app.appMain();
+    await tester.pumpAndSettle();
+
+    // Login screen should appear
+    expect(find.text('Login'), findsOneWidget);
+
+    await tester.enterText(
+        find.widgetWithText(TextField, 'Email'), 'test@example.com');
+    await tester.enterText(
+        find.widgetWithText(TextField, 'Password'), 'password');
+    await tester.tap(find.text('Sign In'));
+    await tester.pumpAndSettle();
+
+    // Navigate directly to onboarding
+    final navigator = tester.state<NavigatorState>(find.byType(Navigator));
+    navigator.pushNamed('/ambassador-onboarding');
+    await tester.pumpAndSettle();
+
+    expect(find.text('Ambassador Onboarding'), findsOneWidget);
+
+    // Verify referral elements
+    expect(find.text('Copy Link'), findsOneWidget);
+    await tester.tap(find.text('Copy Link'));
+    await tester.pump();
+
+    expect(find.text('Link copied to clipboard!'), findsOneWidget);
+  });
 }
