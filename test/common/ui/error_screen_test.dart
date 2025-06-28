@@ -20,8 +20,8 @@ Future<void> main() async {
 
       expect(find.byIcon(Icons.error), findsOneWidget);
       expect(find.text('Failed'), findsOneWidget);
-      expect(find.text('Retry'), findsOneWidget);
-      expect(find.byType(ElevatedButton), findsOneWidget);
+      expect(find.text('Try Again'), findsOneWidget);
+      expect(find.byType(IconButton), findsOneWidget);
     });
   });
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:appoint/components/common/retry_button.dart';
 
 /// Simple error screen with retry action.
 class ErrorScreen extends StatelessWidget {
@@ -29,10 +30,7 @@ class ErrorScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 24),
-            ElevatedButton(
-              onPressed: onTryAgain,
-              child: const Text('Try Again'),
-            ),
+            RetryButton(onPressed: onTryAgain),
           ],
         ),
       ),
