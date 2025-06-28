@@ -33,6 +33,14 @@ RUN ln -s $FLUTTER_HOME/bin/flutter /usr/local/bin/flutter \
 # Verify installations at build time
 RUN which flutter && flutter --version && which dart && dart --version
 
+# Stage 1 – Cache Dependencies
+WORKDIR /workspace
+COPY pubspec.yaml pubspec.lock ./
+RUN flutter pub get && dart pub get
+
+# Copy app sources after caching dependencies
+COPY . .
+
 # Set up working directory
 WORKDIR /workspace
 
