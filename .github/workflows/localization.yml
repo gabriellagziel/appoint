@@ -100,6 +100,8 @@ jobs:
               echo "✅ $file has correct key count: $key_count"
             fi
           done
+      - name: Merge missing l10n keys
+        run: dart scripts/merge_l10n.dart
       - name: Generate localizations
         run: flutter gen-l10n
       - name: Verify generated files
