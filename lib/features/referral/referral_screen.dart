@@ -15,27 +15,36 @@ class ReferralScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Referral Code')),
       body: Center(
         child: codeAsync.when(
-          data: (code) => Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text('Your referral code:'),
-              const SizedBox(height: 12),
-              SelectableText(
-                code,
-                style: Theme.of(context).textTheme.headlineMedium,
+          data: (code) => Card(
+            margin: const EdgeInsets.all(16),
+            child: Padding(
+              padding: const EdgeInsets.all(24),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text(
+                    'Your Invite Code',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 12),
+                  SelectableText(
+                    code,
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
+                  const SizedBox(height: 16),
+                  ElevatedButton.icon(
+                    icon: const Icon(Icons.copy),
+                    label: const Text('Copy'),
+                    onPressed: () {
+                      Clipboard.setData(ClipboardData(text: code));
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(content: Text('Copied to clipboard')),
+                      );
+                    },
+                  ),
+                ],
               ),
-              const SizedBox(height: 16),
-              ElevatedButton.icon(
-                icon: const Icon(Icons.copy),
-                label: const Text('Copy'),
-                onPressed: () {
-                  Clipboard.setData(ClipboardData(text: code));
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Copied to clipboard')),
-                  );
-                },
-              ),
-            ],
+            ),
           ),
           loading: () => const CircularProgressIndicator(),
           error: (e, _) => const Text('Error loading referral code'),
