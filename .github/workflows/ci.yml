@@ -13,16 +13,7 @@ jobs:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
-    services:
-      firebase:
-        image: cdrx/fake-firebase-emulator:latest
-        ports:
-          - 8080:8080   # Firestore
-          - 5001:5001   # Functions
-        env:
-          FIREBASE_PROJECT: app-oint-core
-          PUB_HOSTED_URL: https://pub.dev
-          FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      FIREBASE_EMULATORS_PATH: ~/.cache/firebase
     steps:
       - uses: actions/checkout@v4
       - name: Check required network access
@@ -45,6 +36,12 @@ jobs:
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pub-
+      - name: Cache Firebase emulators
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/firebase
+          key: ${{ runner.os }}-firebase-emulators
+          restore-keys: ${{ runner.os }}-firebase-
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -81,16 +78,16 @@ jobs:
       - name: Download Firebase emulators
         run: |
           set +e
-          firebase setup:emulators:download --only firestore,auth
+          firebase setup:emulators:download --only auth,firestore,storage
           status=$?
           if [ $status -ne 0 ]; then
-            echo "Retrying emulator download after allowlist update..."
+            echo "Retrying emulator download from cache..."
             sleep 5
-            firebase setup:emulators:download --only firestore,auth
+            firebase setup:emulators:download --only auth,firestore,storage
           fi
       - name: Start Firebase emulators
         run: |
-          (firebase emulators:start --only firestore,auth || sleep 5 && firebase emulators:start --only firestore,auth) &
+          (firebase emulators:start --only auth,firestore,storage || sleep 5 && firebase emulators:start --only auth,firestore,storage) &
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
       - name: Run tests with coverage
