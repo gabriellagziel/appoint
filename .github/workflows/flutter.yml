@@ -55,13 +55,9 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - name: Run tests with coverage
-        run: |
-          if command -v dart >/dev/null 2>&1; then
-            dart test --coverage
-          else
-            echo "::warning::dart CLI not found; using flutter" >&2
-            flutter test --coverage
-          fi
+        run: flutter test --coverage
+      - name: Verify coverage file
+        run: test -f coverage/lcov.info
       - run: dart test integration_test/
       - run: flutter build web
       - uses: codecov/codecov-action@v3

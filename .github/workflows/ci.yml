@@ -89,7 +89,8 @@ jobs:
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test --coverage
+      - name: Verify coverage file
+        run: test -f coverage/lcov.info
       - run: dart test integration_test/
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -278,7 +279,8 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test --coverage
+      - name: Verify coverage file
+        run: test -f coverage/lcov.info
       - run: dart test integration_test/
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -350,7 +352,8 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test --coverage
+      - name: Verify coverage file
+        run: test -f coverage/lcov.info
       - run: dart test integration_test/
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -421,7 +424,8 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test --coverage
+      - name: Verify coverage file
+        run: test -f coverage/lcov.info
       - run: dart test integration_test/
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -488,7 +492,8 @@ jobs:
       - run: dart analyze
       - run: flutter pub downgrade || true
       - run: flutter test --coverage
-      - run: dart test --coverage
+      - name: Verify coverage file
+        run: test -f coverage/lcov.info
       - run: dart test integration_test/
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3

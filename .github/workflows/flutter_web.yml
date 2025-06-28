@@ -53,6 +53,8 @@ jobs:
     - run: flutter analyze
     - run: dart analyze
     - run: flutter test --coverage test/
+    - name: Verify coverage file
+      run: test -f coverage/lcov.info
     - run: dart test integration_test/
     - run: flutter build web --release
     - name: Upload coverage artifact
