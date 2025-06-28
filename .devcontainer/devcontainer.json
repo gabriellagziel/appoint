@@ -22,5 +22,8 @@
   "containerEnv": {
     "PATH": "/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:/usr/local/bin:${containerEnv:PATH}",
     "PUB_CACHE": "/home/vscode/.pub-cache"
+  },
+  "remoteEnv": {
+    "PATH": "/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:/usr/local/bin:${containerEnv:PATH}"
   }
 }
