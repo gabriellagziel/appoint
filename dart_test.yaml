@@ -1,2 +1,2 @@
 test:
-  pre_test: test/test_config.dart
+  pre_test: test/test_setup_init.dart
