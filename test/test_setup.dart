@@ -1,4 +1,6 @@
 // Centralized utilities for initializing and mocking Firebase during tests.
+// Provides shared Firebase channel mocks so tests can import this file without
+// additional setup.
 import 'package:flutter_test/flutter_test.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:appoint/firebase_options.dart';
