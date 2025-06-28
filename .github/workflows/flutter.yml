@@ -29,13 +29,13 @@ jobs:
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pub-
+      - name: Configure Network Allowlist
+        run: |
+          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: Configure Network Allowlist
-        run: |
-          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: "Pre-flight: Verify network & Dart"
         run: |
           dart --version
