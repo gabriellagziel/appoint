@@ -11,20 +11,12 @@ class ReferralService {
       : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
 
-  Future<String> generateReferralCode() async {
-    final user = _auth.currentUser;
-    if (user == null) {
-      throw Exception('User not logged in');
-    }
-
-    // Return existing code if already generated
-    final existing = await _firestore
-        .collection('referral_codes')
-        .where('userId', isEqualTo: user.uid)
-        .limit(1)
-        .get();
-    if (existing.docs.isNotEmpty) {
-      return existing.docs.first.data()['code'] as String;
+  Future<String> generateReferralCode(String userId) async {
+    final docRef = _firestore.collection('referrals').doc(userId);
+    final existing = await docRef.get();
+    final data = existing.data();
+    if (data != null && data['code'] is String) {
+      return data['code'] as String;
     }
 
     String code;
@@ -33,21 +25,29 @@ class ReferralService {
     const chars = 'REDACTED_TOKEN';
     do {
       code =
-          List.generate(6, (_) => chars[random.nextInt(chars.length)]).join();
+          List.generate(8, (_) => chars[random.nextInt(chars.length)]).join();
       final query = await _firestore
-          .collection('referral_codes')
+          .collection('referrals')
           .where('code', isEqualTo: code)
           .limit(1)
           .get();
       exists = query.docs.isNotEmpty;
     } while (exists);
 
-    await _firestore.collection('referral_codes').add({
-      'userId': user.uid,
+    await docRef.set({
+      'userId': userId,
       'code': code,
       'createdAt': FieldValue.serverTimestamp(),
     });
 
     return code;
+  }
+
+  Future<String> REDACTED_TOKEN() async {
+    final user = _auth.currentUser;
+    if (user == null) {
+      throw Exception('User not logged in');
+    }
+    return generateReferralCode(user.uid);
   }
 }
