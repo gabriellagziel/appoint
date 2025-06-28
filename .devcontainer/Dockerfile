@@ -19,7 +19,8 @@ RUN curl -fsSL https://storage.googleapis.com/flutter_infra_release/releases/sta
 # Install Dart 3.4.0
 RUN curl -fsSL https://storage.googleapis.com/dart-archive/channels/stable/release/3.4.0/sdk/dartsdk-linux-x64-release.zip \
     -o dartsdk.zip \
-  && unzip dartsdk.zip -d /usr/lib \
+  && unzip -q dartsdk.zip -d /usr/lib \
+  && mv /usr/lib/dart-sdk /usr/lib/dart \
   && rm dartsdk.zip
 
 # Expose environment variables for both build and runtime
@@ -28,8 +29,7 @@ ENV DART_HOME=/usr/lib/dart
 ENV PATH="$FLUTTER_HOME/bin:$FLUTTER_HOME/bin/cache/dart-sdk/bin:$DART_HOME/bin:${PATH}"
 
 # Verify installations at build time
-RUN which flutter && flutter --version \
- && which dart    && dart --version
+RUN which flutter && flutter --version && which dart && dart --version
 
 # Set up working directory
 WORKDIR /workspace
