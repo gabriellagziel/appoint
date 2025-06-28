@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -52,6 +53,11 @@ jobs:
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
             curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
           done
+      - name: Debug SDK in Container
+        run: |
+          echo "CI PATH: $PATH"
+          which flutter || echo "flutter not found"
+          which dart || echo "dart not found"
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
       - name: Check network access
