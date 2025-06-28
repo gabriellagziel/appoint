@@ -10,6 +10,16 @@
         "dart-code.dart-code",
         "dart-code.flutter"
       ]
+    },
+    "codespaces": {
+      "security": {
+        "allowedDomains": [
+          "storage.googleapis.com",
+          "dart.dev",
+          "pub.dev",
+          "firebase-public.firebaseio.com"
+        ]
+      }
     }
   },
   "features": {},
