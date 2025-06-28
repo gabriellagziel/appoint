@@ -61,6 +61,10 @@ Appointment scheduling app built with Flutter with advanced features including A
 
 The CI environment must allow outbound HTTPS to:
 - `storage.googleapis.com`
+- `firebase-public.firebaseio.com`
+- `metadata.google.internal`
+- `169.254.169.254`
+- `raw.githubusercontent.com`
 - `pub.dev`
 
 ### GitHub Actions (Enterprise)
