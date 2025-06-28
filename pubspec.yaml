@@ -6,7 +6,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.4.0 <4.0.0"
+  sdk: ">=3.3.0 <4.0.0"
   flutter: ">=3.19.0"
 
 dependencies:
@@ -61,7 +61,8 @@ dev_dependencies:
   fake_cloud_firestore: ^2.4.0
   firebase_auth_mocks: ^0.13.0
   mockito: ^5.4.2
-  test: ^1.31.0
+  test: ^1.24.9
+  integration_test: ^1.0.0
 
 flutter:
   uses-material-design: true
@@ -82,3 +83,5 @@ dependency_overrides:
   intl: ^0.20.2
   fl_chart:
     path: packages/fl_chart_stub
+  integration_test:
+    path: ../flutter_sdk/packages/integration_test

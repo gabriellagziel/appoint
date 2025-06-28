@@ -19,7 +19,7 @@ case "$MODE" in
     if command -v dart >/dev/null 2>&1; then
       dart test integration_test/app_test.dart
     else
-      flutter test integration_test/app_test.dart
+      flutter test integration_test
     fi
     kill $EMULATOR_PID
     ;;
@@ -33,7 +33,7 @@ case "$MODE" in
       dart test integration_test/app_test.dart
     else
       flutter test --coverage
-      flutter test integration_test/app_test.dart
+      flutter test integration_test
     fi
     kill $EMULATOR_PID
     ;;
