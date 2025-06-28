@@ -24,7 +24,11 @@
     }
   },
   "features": {},
+  "containerEnv": {
+    "REDACTED_TOKEN": "storage.googleapis.com,dart.dev,pub.dev,firebase-public.firebaseio.com"
+  },
   "mounts": [
     "source=${localEnv:HOME}/.pub-cache,target=/root/.pub-cache,type=bind"
-  ]
+  ],
+  "postStartCommand": "curl --fail https://storage.googleapis.com && curl --fail https://dart.dev && curl --fail https://pub.dev && curl --fail https://firebase-public.firebaseio.com"
 }
