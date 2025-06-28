@@ -1,9 +1,11 @@
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+
 class CrashlyticsService {
   Future<void> log(String message) async {
-    // Replace with FirebaseCrashlytics.instance.log(message);
+    await FirebaseCrashlytics.instance.log(message);
   }
 
   Future<void> recordError(dynamic error, StackTrace? stack) async {
-    // Replace with FirebaseCrashlytics.instance.recordError(...);
+    await FirebaseCrashlytics.instance.recordError(error, stack, fatal: false);
   }
 }
