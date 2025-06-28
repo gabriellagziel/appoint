@@ -25,6 +25,12 @@ jobs:
           FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     steps:
       - uses: actions/checkout@v4
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -131,6 +137,12 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -216,6 +228,12 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -277,6 +295,12 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -369,6 +393,12 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -460,6 +490,12 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
@@ -551,6 +587,12 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
