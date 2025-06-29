@@ -54,7 +54,9 @@ Appointment scheduling app built with Flutter with advanced features including A
    flutter analyze
    flutter test --coverage
    dart test --coverage
-   flutter run
+   flutter run                 # Android or desktop
+   flutter run -d chrome       # Web
+   dart run                    # CLI
 ```
 
 ## CI Network Access Requirements
@@ -242,6 +244,9 @@ Our GitHub Actions pipeline (`.github/workflows/flutter.yml`) runs on every push
 
 - **Flutter/Dart Versions**: Flutter 3.32.0 with Dart 3.4.0 is required.
 - **Initial Script**: Run `./setup.sh` once after cloning to install dependencies.
+- **Dev Container**: Place the pre-downloaded Flutter and Dart SDK archives under
+  `.devcontainer/sdk_archives` before building the container so it can install
+  them without network access.
 - **CI Network Allowlist**: Ensure your CI runners can access `storage.googleapis.com`, `firebase-public.firebaseio.com`, `metadata.google.internal`, `169.254.169.254`, `raw.githubusercontent.com`, and `pub.dev`.
 - **Code Generation**: Use `./tool/codegen.sh` to run build_runner when models or localization files change.
 - **Running Tests**:
