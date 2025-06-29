@@ -4,6 +4,8 @@ import '../../../models/booking.dart';
 import '../services/booking_service.dart';
 import '../../../providers/auth_provider.dart';
 import '../../selection/providers/selection_provider.dart';
+import '../../../widgets/bottom_sheet_manager.dart';
+import '../../../widgets/booking_confirmation_sheet.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
   const BookingScreen({super.key});
@@ -111,7 +113,24 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                       serviceId != null &&
                       dateTime != null &&
                       duration != null)
-                  ? (_isSubmitting ? null : _submitBooking)
+                  ? (_isSubmitting
+                      ? null
+                      : () {
+                          final summary =
+                              'You are about to book a ${duration!.inMinutes} minute appointment on '
+                              '${dateTime!.toLocal()}.';
+                          BottomSheetManager.show(
+                            context: context,
+                            child: BookingConfirmationSheet(
+                              summaryText: summary,
+                              onCancel: () => Navigator.of(context).pop(),
+                              onConfirm: () {
+                                Navigator.of(context).pop();
+                                _submitBooking();
+                              },
+                            ),
+                          );
+                        })
                   : null,
               child: _isSubmitting
                   ? const CircularProgressIndicator()
