@@ -9,7 +9,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'l10n/app_localizations.dart';
 import 'config/routes.dart';
-import 'config/theme.dart';
+import 'theme/app_theme.dart';
 import 'firebase_options.dart';
 import 'services/custom_deep_link_service.dart';
 import 'services/notification_service.dart';

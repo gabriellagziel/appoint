@@ -166,7 +166,8 @@ dart test --coverage
 
 # Firebase emulators
 # (Download emulator JAR manually if 403, place under ~/.config/firebase/emulators/)
-firebase emulators:start --only auth,firestore
+export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
+firebase emulators:start --only auth,firestore,storage
 ```
 
 
@@ -236,3 +237,16 @@ Our GitHub Actions pipeline (`.github/workflows/flutter.yml`) runs on every push
 - ⚠️ iOS setup requires manual configuration (bundle ID, GoogleService-Info.plist)
 
 **Note**: Localization and language files were excluded from this update round as requested.
+
+## Development Setup
+
+- **Flutter/Dart Versions**: Flutter 3.32.0 with Dart 3.4.0 is required.
+- **Initial Script**: Run `./setup.sh` once after cloning to install dependencies.
+- **CI Network Allowlist**: Ensure your CI runners can access `storage.googleapis.com`, `firebase-public.firebaseio.com`, `metadata.google.internal`, `169.254.169.254`, `raw.githubusercontent.com`, and `pub.dev`.
+- **Code Generation**: Use `./tool/codegen.sh` to run build_runner when models or localization files change.
+- **Running Tests**:
+  ```bash
+  firebase emulators:start --only auth,firestore
+  dart test --coverage
+  flutter test --coverage
+  ```
