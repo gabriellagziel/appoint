@@ -63,6 +63,9 @@ COPY . .
 RUN mkdir -p ~/.pub-cache \
     && tar xzf /tmp/pub_cache.tar.gz -C ~
 
+# Force every shell to pick up the SDK path
+COPY devcontainer/bashrc_append.sh /etc/bash.bashrc.d/99-sdk-path.sh
+
 # Set up working directory
 WORKDIR /workspace
 
