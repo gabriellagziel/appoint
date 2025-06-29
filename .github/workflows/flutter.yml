@@ -10,28 +10,16 @@ jobs:
   analyze_and_test:
     name: Analyze & Test
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v3
-      - name: Check required network access
-        run: |
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
-            for i in 1 2 3; do
-              curl --head --fail https://$host && break || sleep 5
-            done
-          done
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.32.0'
-          cache: true
-      - name: Ensure Flutter & Dart in PATH
-        run: |
-          echo "$HOME/.flutter/bin" >> $GITHUB_PATH
-          echo "$HOME/.flutter/bin/cache/dart-sdk/bin" >> $GITHUB_PATH
+      # network checks removed for offline usage
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -46,31 +34,30 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: "Pre-flight: Verify network & Dart"
+      - name: "Pre-flight: Verify Dart"
         run: |
-    which dart
+          which dart
           dart --version
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
-          done
-      - name: Get dependencies with retry
-        run: |
-          for i in 1 2 3; do
-            flutter pub get && break || sleep 5
-          done
+      # network checks removed for offline usage
+      - name: Get dependencies
+        run: flutter pub get
       - run: dart pub get
       - name: Verify firebase_app_check resolution
         run: grep firebase_app_check pubspec.lock
-      - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Configure offline pub cache
-        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Fetch dependencies offline
-        run: flutter pub get --offline
+      - run: dart run build_runner build --delete-conflicting-outputs --offline
       - run: flutter analyze
       - run: dart analyze
-      - name: Run tests with coverage
-          run: flutter test --coverage
-      - run: dart test integration_test/
+      - name: Start Firebase emulators
+        run: |
+          echo "FIREBASE_AUTH_EMULATOR_HOST=localhost:9099" >> $GITHUB_ENV
+          echo "FIRESTORE_EMULATOR_HOST=localhost:8080" >> $GITHUB_ENV
+          echo "FIREBASE_STORAGE_EMULATOR_HOST=localhost:9199" >> $GITHUB_ENV
+          firebase emulators:start --only auth,firestore,storage --project app-oint-core &
+          sleep 5
+      - name: Run Dart tests
+        run: dart test --coverage=coverage
+      - name: Run Flutter integration tests
+        run: flutter test integration_test --reporter=compact
       - run: flutter build web
       - uses: codecov/codecov-action@v3
         with:

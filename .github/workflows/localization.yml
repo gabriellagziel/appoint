@@ -10,12 +10,21 @@ jobs:
   localization_validation:
     name: Localization Validation
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v3
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Setup Flutter SDK
         uses: flutter-actions/setup-flutter@v2
         with:
@@ -40,7 +49,9 @@ jobs:
         run: |
     which dart
           dart --version
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
+          curl --fail https://firebase-public.firebaseio.com
+          curl --fail https://storage.googleapis.com
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
             curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -50,11 +61,27 @@ jobs:
           cache: 'npm'
       - name: Install cspell
         run: npm install -g cspell
-      - run: flutter pub get
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
+      - run: flutter pub get --offline
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
+      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - name: Check storage connectivity
+        run: curl --fail https://storage.googleapis.com
       - name: Configure offline pub cache
         run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Check network access
+        run: |
+          curl --fail https://storage.googleapis.com
+          curl --fail https://dart.dev
+          curl --fail https://pub.dev
+          curl --fail https://firebase-public.firebaseio.com
       - name: Fetch dependencies offline
         run: flutter pub get --offline
       - run: flutter analyze
@@ -68,7 +95,7 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage test/
           fi
-      - run: dart test integration_test/
+      - run: flutter test integration_test
       - run: flutter build web
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
