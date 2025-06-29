@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import '../../../models/studio_appointment.dart';
 import '../../../providers/studio_appointments_provider.dart';
+import '../../../widgets/app_scaffold.dart';
+import '../../../widgets/loading_state.dart';
+import '../../../widgets/error_state.dart';
+import '../../../widgets/empty_state.dart';
+import '../../../theme/app_spacing.dart';
 
 class AppointmentsScreen extends ConsumerWidget {
   const AppointmentsScreen({super.key});
@@ -106,20 +112,23 @@ class AppointmentsScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final apptsAsync = ref.watch(studioAppointmentsProvider);
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Appointments'),
-      ),
+    return AppScaffold(
+      title: 'Appointments',
       floatingActionButton: FloatingActionButton(
         onPressed: () => _openEditor(context, ref),
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.add, semanticLabel: 'add appointment'),
       ),
       body: apptsAsync.when(
         data: (appts) {
           if (appts.isEmpty) {
-            return const Center(child: Text('No appointments'));
+            return const EmptyState(
+              title: 'No Appointments',
+              description: 'Create your first appointment',
+              icon: Icons.event_busy,
+            );
           }
           return ListView.builder(
+            padding: const EdgeInsets.all(AppSpacing.md),
             itemCount: appts.length,
             itemBuilder: (context, index) {
               final appt = appts[index];
@@ -133,11 +142,11 @@ class AppointmentsScreen extends ConsumerWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     IconButton(
-                      icon: const Icon(Icons.edit),
+                      icon: const Icon(Icons.edit, semanticLabel: 'edit'),
                       onPressed: () => _openEditor(context, ref, appt: appt),
                     ),
                     IconButton(
-                      icon: const Icon(Icons.delete),
+                      icon: const Icon(Icons.delete, semanticLabel: 'delete'),
                       onPressed: () => ref
                           .read(studioAppointmentsProvider.notifier)
                           .delete(appt.id),
@@ -148,8 +157,11 @@ class AppointmentsScreen extends ConsumerWidget {
             },
           );
         },
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        loading: () => const LoadingState(),
+        error: (e, _) => ErrorState(
+          title: 'Error',
+          description: 'Error: $e',
+        ),
       ),
     );
   }
