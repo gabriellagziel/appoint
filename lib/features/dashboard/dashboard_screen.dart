@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import '../../providers/dashboard_provider.dart';
 import '../../l10n/app_localizations.dart';
+import '../../widgets/app_scaffold.dart';
+import '../../widgets/loading_state.dart';
+import '../../widgets/error_state.dart';
+import '../../theme/app_spacing.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
@@ -11,12 +16,12 @@ class DashboardScreen extends ConsumerWidget {
     final l10n = AppLocalizations.of(context)!;
     final statsAsync = ref.watch(dashboardStatsProvider);
 
-    return Scaffold(
-      appBar: AppBar(title: Text(l10n.dashboard)),
+    return AppScaffold(
+      title: l10n.dashboard,
       body: statsAsync.when(
         data: (stats) {
           return Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(AppSpacing.md),
             child: Column(
               children: [
                 Card(
@@ -47,8 +52,11 @@ class DashboardScreen extends ConsumerWidget {
             ),
           );
         },
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, __) => Center(child: Text('Error loading stats')),
+        loading: () => const LoadingState(),
+        error: (_, __) => const ErrorState(
+          title: 'Error',
+          description: 'Error loading stats',
+        ),
       ),
     );
   }
