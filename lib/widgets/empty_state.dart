@@ -1,34 +1,53 @@
 import 'package:flutter/material.dart';
 
-/// Simple empty-state widget used when a list has no content.
+import '../theme/app_spacing.dart';
+import '../theme/app_text_styles.dart';
+
+/// Themed empty state with optional call to action.
 class EmptyState extends StatelessWidget {
   const EmptyState({
     super.key,
-    required this.message,
-    this.icon = Icons.chat_bubble_outline,
+    required this.title,
+    required this.description,
+    this.icon = Icons.inbox,
+    this.onPressed,
+    this.buttonLabel,
   });
 
-  final String message;
   final IconData icon;
+  final String title;
+  final String description;
+  final String? buttonLabel;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(icon, size: 48, color: Colors.grey[400]),
-          const SizedBox(height: 8),
-          Text(
-            message,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 16,
-              color: Colors.grey[600],
-              fontWeight: FontWeight.w500,
+    return AnimatedOpacity(
+      opacity: 1,
+      duration: const Duration(milliseconds: 300),
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(icon, size: 64, color: Theme.of(context).colorScheme.primary),
+            const SizedBox(height: AppSpacing.sm),
+            Text(title,
+                style: AppTextStyles.heading, textAlign: TextAlign.center),
+            const SizedBox(height: AppSpacing.xs),
+            Text(
+              description,
+              style: AppTextStyles.body,
+              textAlign: TextAlign.center,
             ),
-          ),
-        ],
+            if (onPressed != null && buttonLabel != null) ...[
+              const SizedBox(height: AppSpacing.md),
+              ElevatedButton(
+                onPressed: onPressed,
+                child: Text(buttonLabel!, style: AppTextStyles.button),
+              ),
+            ],
+          ],
+        ),
       ),
     );
   }

@@ -7,7 +7,6 @@ version: 1.0.0+1
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
-  flutter: ">=3.32.0"
 
 dependencies:
   flutter:
@@ -23,6 +22,7 @@ dependencies:
   firebase_analytics: ^10.4.0
   firebase_storage: ^11.5.1
   firebase_crashlytics: ^3.5.7
+  firebase_remote_config: ^4.4.7
   firebase_app_check: ^0.2.1+8
   flutter_stripe: ^11.5.0
   flutter_riverpod: 2.6.1
@@ -52,14 +52,7 @@ dependencies:
   syncfusion_flutter_charts: 28.2.6
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  build_runner: ^2.4.7
-  freezed: ^2.5.2
-  json_serializable: ^6.7.1
-  fake_cloud_firestore: ^2.4.0
-  firebase_auth_mocks: ^0.13.0
-  mockito: ^5.4.2
+  integration_test: ^1.0.0
 
 flutter:
   uses-material-design: true
@@ -80,3 +73,5 @@ dependency_overrides:
   intl: ^0.20.2
   fl_chart:
     path: packages/fl_chart_stub
+  integration_test:
+    path: ../flutter_sdk/packages/integration_test

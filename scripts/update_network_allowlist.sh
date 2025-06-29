@@ -19,6 +19,7 @@ DOMAINS=(
   169.254.169.254
   raw.githubusercontent.com
   pub.dev
+  dart.dev
 )
 
 DOMAINS_JSON=$(printf '"%s",' "${DOMAINS[@]}" | sed 's/,$//')

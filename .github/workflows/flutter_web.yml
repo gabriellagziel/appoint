@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
@@ -16,9 +19,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Check network access
+      run: |
+        curl --fail https://storage.googleapis.com
+        curl --fail https://dart.dev
+        curl --fail https://pub.dev
+        curl --fail https://firebase-public.firebaseio.com
     - name: Check required network access
       run: |
-        for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
+        for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
           curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
         done
     - name: Setup Flutter SDK
@@ -46,20 +55,38 @@ jobs:
       run: |
     which dart
         dart --version
-        for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
+        curl --fail https://firebase-public.firebaseio.com
+        curl --fail https://storage.googleapis.com
+        for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
           curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
         done
-    - run: flutter pub get
+    - name: Check storage connectivity
+      run: curl --fail https://storage.googleapis.com
+    - name: Check network access
+      run: |
+        curl --fail https://storage.googleapis.com
+        curl --fail https://dart.dev
+        curl --fail https://pub.dev
+        curl --fail https://firebase-public.firebaseio.com
+    - run: flutter pub get --offline
     - run: dart pub get
-    - run: dart run build_runner build --delete-conflicting-outputs
+    - run: dart run build_runner build --delete-conflicting-outputs --offline
     - name: Configure offline pub cache
       run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+    - name: Check storage connectivity
+      run: curl --fail https://storage.googleapis.com
+    - name: Check network access
+      run: |
+        curl --fail https://storage.googleapis.com
+        curl --fail https://dart.dev
+        curl --fail https://pub.dev
+        curl --fail https://firebase-public.firebaseio.com
     - name: Fetch dependencies offline
       run: flutter pub get --offline
     - run: flutter analyze
     - run: dart analyze
     - run: flutter test --coverage test/
-    - run: dart test integration_test/
+    - run: flutter test integration_test
     - run: flutter build web --release
     - name: Upload coverage artifact
       uses: actions/upload-artifact@v3

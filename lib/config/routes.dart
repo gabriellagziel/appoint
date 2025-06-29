@@ -6,6 +6,9 @@ import '../features/studio/studio_booking_screen.dart';
 import '../features/studio/studio_booking_confirm_screen.dart';
 import '../features/studio/ui/content_library_screen.dart';
 import '../features/studio/ui/studio_dashboard_screen.dart';
+import '../features/studio/ui/appointments_screen.dart';
+import '../features/studio/ui/staff_screen.dart';
+import '../features/studio/ui/providers_screen.dart';
 import '../features/booking/screens/chat_booking_screen.dart';
 import '../features/booking/booking_request_screen.dart';
 import '../features/dashboard/dashboard_screen.dart';
@@ -17,6 +20,8 @@ import '../features/admin/ui/admin_dashboard_screen.dart';
 import '../features/family/widgets/invitation_modal.dart';
 import '../features/family/screens/family_dashboard_screen.dart';
 import '../features/family/screens/invite_child_screen.dart';
+import '../features/child/ui/child_dashboard_screen.dart';
+import '../features/child/ui/parental_control_screen.dart';
 import '../features/family/screens/permissions_screen.dart';
 import '../features/family/ui/parental_consent_prompt.dart';
 import '../features/family/ui/parental_settings_screen.dart';
@@ -27,6 +32,8 @@ import '../features/admin/admin_demo_panel_screen.dart';
 import '../features/calendar/google_integration_screen.dart';
 import '../features/ambassador_dashboard_screen.dart';
 import '../features/ambassador_onboarding_screen.dart';
+import '../features/studio_profile/studio_profile_screen.dart';
+import '../features/studio_business/entry/business_entry_screen.dart';
 import '../models/invite.dart';
 import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
@@ -35,6 +42,9 @@ import '../features/personal_app/ui/search_screen.dart';
 import '../features/personal_app/ui/content_detail_screen.dart';
 import '../features/personal_app/ui/notifications_screen.dart';
 import '../features/common/ui/error_screen.dart';
+import '../features/referral/referral_screen.dart';
+import '../features/rewards/rewards_screen.dart';
+import '../features/common/ui/unsupported_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
@@ -62,6 +72,22 @@ class AppRouter {
       case '/studio/library':
         return MaterialPageRoute(
           builder: (_) => const ContentLibraryScreen(),
+          settings: settings,
+        );
+      case '/studio/appointments':
+        return MaterialPageRoute(
+          builder: (_) => const AppointmentsScreen(),
+          settings: settings,
+        );
+      case '/studio/staff':
+        final staffId = settings.arguments as String? ?? 'default';
+        return MaterialPageRoute(
+          builder: (_) => StaffScreen(staffId: staffId),
+          settings: settings,
+        );
+      case '/studio/providers':
+        return MaterialPageRoute(
+          builder: (_) => const ProvidersScreen(),
           settings: settings,
         );
       case '/chat-booking':
@@ -112,6 +138,16 @@ class AppRouter {
       case '/dashboard/family':
         return MaterialPageRoute(
           builder: (_) => const FamilyDashboardScreen(),
+          settings: settings,
+        );
+      case '/child/dashboard':
+        return MaterialPageRoute(
+          builder: (_) => const ChildDashboardScreen(),
+          settings: settings,
+        );
+      case '/child/controls':
+        return MaterialPageRoute(
+          builder: (_) => const ParentalControlScreen(),
           settings: settings,
         );
       case '/family/invite-child':
@@ -188,14 +224,35 @@ class AppRouter {
           builder: (_) => const BusinessDashboardScreen(),
           settings: settings,
         );
+      case '/business':
+        return MaterialPageRoute(
+          builder: (_) => const BusinessEntryScreen(),
+          settings: settings,
+        );
       case '/business/profile':
         return MaterialPageRoute(
           builder: (_) => const BusinessProfileScreen(),
           settings: settings,
         );
+      case '/studio/profile':
+        final studioId = settings.arguments as String? ?? '';
+        return MaterialPageRoute(
+          builder: (_) => StudioProfileScreen(studioId: studioId),
+          settings: settings,
+        );
       case '/invite/list':
         return MaterialPageRoute(
           builder: (_) => const InviteListScreen(),
+          settings: settings,
+        );
+      case '/referral':
+        return MaterialPageRoute(
+          builder: (_) => const ReferralScreen(),
+          settings: settings,
+        );
+      case '/rewards':
+        return MaterialPageRoute(
+          builder: (_) => const RewardsScreen(),
           settings: settings,
         );
       case '/content/:id':
@@ -221,6 +278,11 @@ class AppRouter {
             message: args['message'] as String? ?? 'An error occurred',
             onTryAgain: args['onTryAgain'] as VoidCallback? ?? () {},
           ),
+          settings: settings,
+        );
+      case '/unsupported':
+        return MaterialPageRoute(
+          builder: (_) => const UnsupportedScreen(),
           settings: settings,
         );
       default:
