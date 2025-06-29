@@ -7,6 +7,7 @@ import '../../providers/playtime_provider.dart';
 import '../../config/theme.dart';
 import '../../models/playtime_game.dart';
 import '../../models/playtime_session.dart';
+import '../../widgets/bottom_sheet_manager.dart';
 
 class PlaytimeHubScreen extends ConsumerWidget {
   const PlaytimeHubScreen({super.key});
@@ -475,12 +476,9 @@ class PlaytimeHubScreen extends ConsumerWidget {
   }
 
   void _showCreateOptions(BuildContext context, AppLocalizations l10n) {
-    showModalBottomSheet(
+    BottomSheetManager.show(
       context: context,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) => Container(
+      child: Container(
         padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisSize: MainAxisSize.min,

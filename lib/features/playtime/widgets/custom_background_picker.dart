@@ -4,6 +4,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../../../widgets/bottom_sheet_manager.dart';
 
 import '../../../l10n/app_localizations.dart';
 import '../../../config/theme.dart';
@@ -290,13 +291,9 @@ class _CustomBackgroundPickerState
   }
 
   void _showUploadDialog() {
-    showModalBottomSheet(
+    BottomSheetManager.show(
       context: context,
-      isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) => _UploadBackgroundDialog(
+      child: _UploadBackgroundDialog(
         onBackgroundUploaded: (backgroundId) {
           setState(() {
             _selectedBackgroundId = backgroundId;
