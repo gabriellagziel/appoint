@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../theme/app_breakpoints.dart';
+import '../theme/app_spacing.dart';
 
 /// Simple scaffold that renders different layouts based on width breakpoints.
 class ResponsiveScaffold extends StatelessWidget {
@@ -18,18 +20,28 @@ class ResponsiveScaffold extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final width = constraints.maxWidth;
-        if (width >= 1024 && desktop != null) {
+        if (width >= AppBreakpoints.desktop && desktop != null) {
           return SafeArea(
-              child:
-                  Padding(padding: const EdgeInsets.all(16), child: desktop!));
+            child: Padding(
+              padding: const EdgeInsets.all(AppSpacing.md),
+              child: desktop!,
+            ),
+          );
         }
-        if (width >= 600 && tablet != null) {
+        if (width >= AppBreakpoints.tablet && tablet != null) {
           return SafeArea(
-              child:
-                  Padding(padding: const EdgeInsets.all(16), child: tablet!));
+            child: Padding(
+              padding: const EdgeInsets.all(AppSpacing.md),
+              child: tablet!,
+            ),
+          );
         }
         return SafeArea(
-            child: Padding(padding: const EdgeInsets.all(16), child: mobile));
+          child: Padding(
+            padding: const EdgeInsets.all(AppSpacing.md),
+            child: mobile,
+          ),
+        );
       },
     );
   }
