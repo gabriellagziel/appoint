@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
+
 import '../../../models/booking.dart';
 import '../services/booking_service.dart';
 import '../../../providers/auth_provider.dart';
 import '../../selection/providers/selection_provider.dart';
+import '../../../widgets/bottom_sheet_manager.dart';
+import '../../../widgets/booking_confirmation_sheet.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
   const BookingScreen({super.key});
@@ -66,6 +70,31 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
     }
   }
 
+  Future<void> _showConfirmationSheet() async {
+    final staffId = ref.read(staffSelectionProvider);
+    final serviceName = ref.read(serviceNameProvider);
+    final dateTime = ref.read(selectedSlotProvider);
+    final duration = ref.read(serviceDurationProvider);
+
+    if (staffId == null || dateTime == null || duration == null) return;
+
+    final summaryText =
+        'You are about to book a ${duration.inMinutes}-minute ${serviceName ?? 'meeting'} on '
+        '${DateFormat.yMMMd().format(dateTime)} at ${DateFormat.jm().format(dateTime)} with $staffId.';
+
+    await BottomSheetManager.show(
+      context: context,
+      child: BookingConfirmationSheet(
+        summaryText: summaryText,
+        onCancel: () => Navigator.of(context).pop(),
+        onConfirm: () {
+          Navigator.of(context).pop();
+          _submitBooking();
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final staffId = ref.watch(staffSelectionProvider);
@@ -111,7 +140,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                       serviceId != null &&
                       dateTime != null &&
                       duration != null)
-                  ? (_isSubmitting ? null : _submitBooking)
+                  ? (_isSubmitting ? null : _showConfirmationSheet)
                   : null,
               child: _isSubmitting
                   ? const CircularProgressIndicator()
