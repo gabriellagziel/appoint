@@ -3,22 +3,18 @@ import 'package:flutter/material.dart';
 import '../theme/app_spacing.dart';
 import '../theme/app_text_styles.dart';
 
-/// Themed empty state with optional call to action.
-class EmptyState extends StatelessWidget {
-  const EmptyState({
+/// Standard error state with optional retry action.
+class ErrorState extends StatelessWidget {
+  const ErrorState({
     super.key,
     required this.title,
     required this.description,
-    this.icon = Icons.inbox,
-    this.onPressed,
-    this.buttonLabel,
+    this.onRetry,
   });
 
-  final IconData icon;
   final String title;
   final String description;
-  final String? buttonLabel;
-  final VoidCallback? onPressed;
+  final VoidCallback? onRetry;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +25,8 @@ class EmptyState extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, size: 64, color: Theme.of(context).colorScheme.primary),
+            Icon(Icons.error_outline,
+                size: 64, color: Theme.of(context).colorScheme.error),
             const SizedBox(height: AppSpacing.sm),
             Text(title,
                 style: AppTextStyles.heading, textAlign: TextAlign.center),
@@ -39,13 +36,13 @@ class EmptyState extends StatelessWidget {
               style: AppTextStyles.body,
               textAlign: TextAlign.center,
             ),
-            if (onPressed != null && buttonLabel != null) ...[
+            if (onRetry != null) ...[
               const SizedBox(height: AppSpacing.md),
               ElevatedButton(
-                onPressed: onPressed,
-                child: Text(buttonLabel!, style: AppTextStyles.button),
+                onPressed: onRetry,
+                child: Text('Try Again', style: AppTextStyles.button),
               ),
-            ],
+            ]
           ],
         ),
       ),
