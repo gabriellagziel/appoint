@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
+import '../../../widgets/bottom_sheet_manager.dart';
+import '../../../widgets/booking_confirmation_sheet.dart';
 import '../../../models/booking.dart';
 import '../services/booking_service.dart';
 import '../../../providers/auth_provider.dart';
@@ -66,6 +69,31 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
     }
   }
 
+  void _showConfirmationSheet() {
+    final staffId = ref.read(staffSelectionProvider);
+    final serviceName = ref.read(serviceNameProvider) ?? 'Service';
+    final dateTime = ref.read(selectedSlotProvider);
+    final duration = ref.read(serviceDurationProvider);
+    if (staffId == null || dateTime == null || duration == null) return;
+
+    final summary =
+        'You are about to book $serviceName with $staffId on ' +
+            DateFormat.yMMMEd().add_jm().format(dateTime) +
+            ' for ${duration.inMinutes} minutes.';
+
+    BottomSheetManager.show(
+      context: context,
+      child: BookingConfirmationSheet(
+        summaryText: summary,
+        onCancel: () => Navigator.of(context).pop(),
+        onConfirm: () {
+          Navigator.of(context).pop();
+          _submitBooking();
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final staffId = ref.watch(staffSelectionProvider);
@@ -111,7 +139,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                       serviceId != null &&
                       dateTime != null &&
                       duration != null)
-                  ? (_isSubmitting ? null : _submitBooking)
+                  ? (_isSubmitting ? null : _showConfirmationSheet)
                   : null,
               child: _isSubmitting
                   ? const CircularProgressIndicator()
