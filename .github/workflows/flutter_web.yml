@@ -67,8 +67,14 @@ jobs:
         scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
     - name: "Pre-flight: Verify network & Dart"
       run: |
-    which dart
-        dart --version
+        which dart
+        version_line=$(dart --version 2>&1)
+        echo "$version_line"
+        sdk=$(echo "$version_line" | awk '{print $4}')
+        required=3.4.0
+        if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+          echo "Dart SDK $sdk is below required $required" && exit 1
+        fi
         curl --fail https://firebase-public.firebaseio.com
         curl --fail https://storage.googleapis.com
         for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
@@ -82,9 +88,9 @@ jobs:
         curl --fail https://dart.dev
         curl --fail https://pub.dev
         curl --fail https://firebase-public.firebaseio.com
-    - run: flutter pub get --offline
+    - run: flutter pub get
     - run: dart pub get
-    - run: dart run build_runner build --delete-conflicting-outputs --offline
+    - run: dart run build_runner build --delete-conflicting-outputs
     - name: Configure offline pub cache
       run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
     - name: Check storage connectivity
@@ -96,10 +102,10 @@ jobs:
         curl --fail https://pub.dev
         curl --fail https://firebase-public.firebaseio.com
     - name: Fetch dependencies offline
-      run: flutter pub get --offline
+      run: flutter pub get
     - run: flutter analyze
     - run: dart analyze
-    - run: flutter test --coverage test/
+    - run: dart test --coverage
     - run: flutter test integration_test
     - name: Generate localizations
       run: flutter gen-l10n
