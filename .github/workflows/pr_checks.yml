@@ -60,6 +60,8 @@ jobs:
       - name: Analyze code
         run: flutter analyze
       - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - name: Generate localizations
+        run: flutter gen-l10n
       - run: flutter test --coverage
       - name: Calculate coverage
         id: cov
