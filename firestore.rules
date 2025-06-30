@@ -21,27 +21,35 @@ service cloud.firestore {
       allow read: if isSignedIn() && (
         resource.data.userId == request.auth.uid ||
         resource.data.businessId == request.auth.uid ||
-        resource.data.ambassadorId == request.auth.uid
+        resource.data.ambassadorId == request.auth.uid ||
+        isAdmin()
       );
-      allow create: if isSignedIn() && request.auth.uid == resource.data.userId;
+      allow create: if isSignedIn() &&
+        request.auth.uid == request.resource.data.userId;
       allow update: if isSignedIn() && (
         request.auth.uid == resource.data.userId ||
         request.auth.uid == resource.data.businessId ||
-        request.auth.uid == resource.data.ambassadorId
+        request.auth.uid == resource.data.ambassadorId ||
+        isAdmin()
       );
-      allow delete: if isSignedIn() && request.auth.uid == resource.data.userId;
+      allow delete: if isSignedIn() && (
+        request.auth.uid == resource.data.userId ||
+        isAdmin()
+      );
     }
 
     // Businesses
     match /businesses/{businessId} {
       allow read: if isSignedIn();
-      allow write: if isSignedIn() && request.auth.uid == businessId;
+      allow write: if isSignedIn() &&
+        (request.auth.uid == businessId || isAdmin());
     }
 
     // Ambassadors
     match /ambassadors/{ambassadorId} {
       allow read: if isSignedIn();
-      allow write: if isSignedIn() && request.auth.uid == ambassadorId;
+      allow write: if isSignedIn() &&
+        (request.auth.uid == ambassadorId || isAdmin());
     }
 
     // Admin broadcasts
@@ -64,19 +72,23 @@ service cloud.firestore {
 
     // Playtime Games - Simple rules
     match /playtime_games/{docId} {
-      allow read: if true;
+      allow read: if isSignedIn();
       allow write: if isAdmin();
     }
 
     // Playtime Sessions - Simple rules
     match /playtime_sessions/{docId} {
-      allow read, write: if isSignedIn() &&
-        (request.auth.uid == resource.data.creatorId || isAdmin());
+      allow read: if isSignedIn() &&
+        (resource.data.creatorId == request.auth.uid || isAdmin());
+      allow create: if isSignedIn() &&
+        (request.resource.data.creatorId == request.auth.uid || isAdmin());
+      allow update, delete: if isSignedIn() &&
+        (resource.data.creatorId == request.auth.uid || isAdmin());
     }
 
     // Playtime Backgrounds - Simple rules
     match /playtime_backgrounds/{docId} {
-      allow read: if true;
+      allow read: if isSignedIn();
       allow write: if isAdmin();
     }
 
@@ -84,34 +96,59 @@ service cloud.firestore {
     match /families/{familyId} {
       allow read: if isSignedIn() && (
         request.auth.uid == resource.data.parentId ||
-        request.auth.uid in resource.data.children
+        request.auth.uid in resource.data.children ||
+        isAdmin()
       );
-      allow write: if isSignedIn() && request.auth.uid == resource.data.parentId;
+      allow create: if isSignedIn() && (
+        request.auth.uid == request.resource.data.parentId ||
+        isAdmin()
+      );
+      allow update, delete: if isSignedIn() && (
+        request.auth.uid == resource.data.parentId ||
+        isAdmin()
+      );
     }
 
     // Family invitations
     match /family_invitations/{invitationId} {
       allow read: if isSignedIn() && (
         request.auth.uid == resource.data.parentId ||
-        request.auth.uid == resource.data.childId
+        request.auth.uid == resource.data.childId ||
+        isAdmin()
       );
-      allow write: if isSignedIn() && (
+      allow create: if isSignedIn() && (
+        request.auth.uid == request.resource.data.parentId ||
+        request.auth.uid == request.resource.data.childId ||
+        isAdmin()
+      );
+      allow update, delete: if isSignedIn() && (
         request.auth.uid == resource.data.parentId ||
-        request.auth.uid == resource.data.childId
+        request.auth.uid == resource.data.childId ||
+        isAdmin()
       );
     }
 
     // Notifications
     match /notifications/{notificationId} {
-      allow read: if isSignedIn() && request.auth.uid == resource.data.userId;
-      allow write: if isSignedIn() && request.auth.uid == resource.data.userId;
+      allow read: if isSignedIn() && (
+        request.auth.uid == resource.data.userId || isAdmin()
+      );
+      allow write: if isSignedIn() && (
+        request.auth.uid == request.resource.data.userId || isAdmin()
+      );
     }
 
     // Payments
     match /payments/{paymentId} {
-      allow read: if isSignedIn() && request.auth.uid == resource.data.userId;
-      allow create: if isSignedIn() && request.auth.uid == resource.data.userId;
-      allow update: if isSignedIn() && request.auth.uid == resource.data.userId;
+      allow read: if isSignedIn() && (
+        request.auth.uid == resource.data.userId || isAdmin()
+      );
+      allow create: if isSignedIn() && (
+        request.auth.uid == request.resource.data.userId || isAdmin()
+      );
+      allow update: if isSignedIn() && (
+        request.auth.uid == resource.data.userId || isAdmin()
+      );
     }
 
     // Admin panel data
