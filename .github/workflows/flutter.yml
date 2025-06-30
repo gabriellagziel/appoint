@@ -75,11 +75,19 @@ jobs:
           firebase emulators:start --only auth,firestore,storage --project app-oint-core &
           sleep 5
       - name: Run Flutter tests with coverage
-        run: dart test --coverage
-      - name: Run Flutter integration tests
-        run: flutter test integration_test --reporter=compact
+        run: |
+          dart test --coverage
+          dart pub global run coverage:format_coverage \
+            --lcov --in=coverage --out=coverage/lcov.unit.info \
+            --packages=.dart_tool/package_config.json --report-on=lib
+      - name: Run Flutter integration tests with coverage
+        run: flutter test --coverage integration_test
+      - name: Combine coverage results
+        run: cat coverage/lcov.unit.info >> coverage/lcov.info
       - name: Generate localizations
         run: flutter gen-l10n
+      - name: Check for undefined localization getters
+        run: dart scripts/check_l10n_getters.dart
       - run: flutter build web
       - uses: codecov/codecov-action@v3
         with:
