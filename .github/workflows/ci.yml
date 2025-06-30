@@ -43,9 +43,9 @@ jobs:
         run: |
           echo "/usr/local/flutter/bin" >> $GITHUB_PATH
           echo "/usr/lib/dart/bin" >> $GITHUB_PATH
-      - name: Cache Flutter SDK
-        uses: actions/cache@v3
-        with:
+          - name: Cache Flutter SDK
+          uses: actions/cache@v3
+            with:
           path: ~/.flutter
           key: ${{ runner.os }}-flutter-${{ hashFiles('.github/workflows/**') }}
           restore-keys: |
@@ -54,9 +54,9 @@ jobs:
         run: |
           curl --fail https://pub.dev
           curl --fail https://storage.googleapis.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
+          - name: Cache Pub packages
+          uses: actions/cache@v3
+            with:
           path: ~/.pub-cache
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
@@ -64,10 +64,10 @@ jobs:
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
           done
-      - name: Fetch tags
-        run: git fetch --tags
+          - name: Fetch tags
+            run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -75,9 +75,9 @@ jobs:
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
-      - name: Pre-flight: Verify network access & Dart
+      - name: "Pre-flight: Verify network access & Dart"
         run: |
-    which dart
+          which dart
           dart --version
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
@@ -96,9 +96,9 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
+          - name: Check network access
+          run: |
+            curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
       - name: Cache Pub packages
@@ -120,16 +120,16 @@ jobs:
           export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
           (firebase emulators:start --only firestore,auth,storage || sleep 5 && firebase emulators:start --only firestore,auth,storage) &
           echo $! > emulator.pid
-      - run: flutter pub downgrade || true
-      - name: Activate coverage tooling
+          - run: flutter pub downgrade || true
+            - name: Activate coverage tooling
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
           dart test --coverage=coverage
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
-            --packages=.dart_tool/package_config.json --report-on=lib
-      - name: Run Flutter integration tests
+          --lcov --in=coverage --out=coverage/lcov.info \
+          --packages=.dart_tool/package_config.json --report-on=lib
+            - name: Run Flutter integration tests
         run: flutter test integration_test --reporter=compact
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -163,8 +163,8 @@ jobs:
           curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
+          - name: Cache Pub packages
+            uses: actions/cache@v3
         with:
           path: ~/.pub-cache
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
@@ -173,10 +173,10 @@ jobs:
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
           done
-      - name: Fetch tags
-        run: git fetch --tags
+          - name: Fetch tags
+            run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -184,9 +184,9 @@ jobs:
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
-      - name: Pre-flight: Verify network access & Dart
+      - name: "Pre-flight: Verify network access & Dart"
         run: |
-    which dart
+          which dart
           dart --version
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
@@ -205,9 +205,9 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
+          - name: Check network access
+          run: |
+            curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
       - name: Cache Pub packages
@@ -231,9 +231,9 @@ jobs:
         run: |
           dart test --coverage=coverage test/features/studio/content_library_screen_test.dart
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
-            --packages=.dart_tool/package_config.json --report-on=lib
-      - name: Upload coverage artifact
+          --lcov --in=coverage --out=coverage/lcov.info \
+          --packages=.dart_tool/package_config.json --report-on=lib
+            - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
           name: coverage-report
@@ -259,8 +259,8 @@ jobs:
           curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
+          - name: Cache Pub packages
+            uses: actions/cache@v3
         with:
           path: ~/.pub-cache
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
@@ -269,10 +269,10 @@ jobs:
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
           done
-      - name: Fetch tags
-        run: git fetch --tags
+          - name: Fetch tags
+            run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -280,9 +280,9 @@ jobs:
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
-      - name: Pre-flight: Verify network access & Dart
+      - name: "Pre-flight: Verify network access & Dart"
         run: |
-    which dart
+          which dart
           dart --version
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
@@ -297,9 +297,9 @@ jobs:
         run: |
           cd functions
           npm ci
-      - name: Lint Functions
-        run: |
-          cd functions
+          - name: Lint Functions
+          run: |
+            cd functions
           npm run lint
       - name: Deploy Functions
         run: firebase deploy --only functions --token "${{ secrets.FIREBASE_TOKEN }}"
@@ -324,8 +324,8 @@ jobs:
           curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
+          - name: Cache Pub packages
+            uses: actions/cache@v3
         with:
           path: ~/.pub-cache
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
@@ -334,10 +334,10 @@ jobs:
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
           done
-      - name: Fetch tags
-        run: git fetch --tags
+          - name: Fetch tags
+            run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -345,9 +345,9 @@ jobs:
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
-      - name: Pre-flight: Verify network access & Dart
+      - name: "Pre-flight: Verify network access & Dart"
         run: |
-    which dart
+          which dart
           dart --version
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
@@ -366,9 +366,9 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
+          - name: Check network access
+          run: |
+            curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
       - name: Cache Pub packages
@@ -392,9 +392,9 @@ jobs:
         run: |
           dart test --coverage=coverage
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
-            --packages=.dart_tool/package_config.json --report-on=lib
-      - run: flutter test integration_test
+          --lcov --in=coverage --out=coverage/lcov.info \
+          --packages=.dart_tool/package_config.json --report-on=lib
+            - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -427,8 +427,8 @@ jobs:
           curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
+          - name: Cache Pub packages
+            uses: actions/cache@v3
         with:
           path: ~/.pub-cache
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
@@ -437,10 +437,10 @@ jobs:
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
           done
-      - name: Fetch tags
-        run: git fetch --tags
+          - name: Fetch tags
+            run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -448,9 +448,9 @@ jobs:
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
-      - name: Pre-flight: Verify network access & Dart
+      - name: "Pre-flight: Verify network access & Dart"
         run: |
-    which dart
+          which dart
           dart --version
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
@@ -469,9 +469,9 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
+          - name: Check network access
+          run: |
+            curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
       - name: Cache Pub packages
@@ -495,9 +495,9 @@ jobs:
         run: |
           dart test --coverage=coverage
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
-            --packages=.dart_tool/package_config.json --report-on=lib
-      - run: flutter test integration_test
+          --lcov --in=coverage --out=coverage/lcov.info \
+          --packages=.dart_tool/package_config.json --report-on=lib
+            - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -511,8 +511,8 @@ jobs:
           echo "Running smoke tests against production..."
           curl -f https://app-oint-core.web.app || exit 1
           echo "Smoke tests passed!"
-
-  security-scan:
+          
+            security-scan:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     env:
@@ -528,8 +528,8 @@ jobs:
           curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
+          - name: Cache Pub packages
+            uses: actions/cache@v3
         with:
           path: ~/.pub-cache
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
@@ -538,10 +538,10 @@ jobs:
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
           done
-      - name: Fetch tags
-        run: git fetch --tags
+          - name: Fetch tags
+            run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -549,9 +549,9 @@ jobs:
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
-      - name: Pre-flight: Verify network access & Dart
+      - name: "Pre-flight: Verify network access & Dart"
         run: |
-    which dart
+          which dart
           dart --version
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
@@ -570,9 +570,9 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
+          - name: Check network access
+          run: |
+            curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
       - name: Cache Pub packages
@@ -596,9 +596,9 @@ jobs:
         run: |
           dart test --coverage=coverage
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
-            --packages=.dart_tool/package_config.json --report-on=lib
-      - run: flutter test integration_test
+          --lcov --in=coverage --out=coverage/lcov.info \
+          --packages=.dart_tool/package_config.json --report-on=lib
+            - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -611,9 +611,9 @@ jobs:
         run: |
           echo "Running security scan..."
           echo "Security scan completed"
-
-  notify:
-    needs: [build-and-test, deploy-functions, deploy-hosting, smoke-test]
+          
+          notify:
+            needs: [build-and-test, deploy-functions, deploy-hosting, smoke-test]
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/your-org/app-oint-dev:latest
@@ -632,8 +632,8 @@ jobs:
           curl --fail https://storage.googleapis.com
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
+          - name: Cache Pub packages
+            uses: actions/cache@v3
         with:
           path: ~/.pub-cache
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
@@ -642,10 +642,10 @@ jobs:
       - name: Check required network access
         run: |
           for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
+          curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
           done
-      - name: Fetch tags
-        run: git fetch --tags
+          - name: Fetch tags
+            run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -653,9 +653,9 @@ jobs:
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
-      - name: Pre-flight: Verify network access & Dart
+      - name: "Pre-flight: Verify network access & Dart"
         run: |
-    which dart
+          which dart
           dart --version
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
@@ -670,9 +670,9 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
+          - name: Check network access
+          run: |
+            curl --fail https://storage.googleapis.com
           curl --fail https://dart.dev
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
@@ -690,9 +690,9 @@ jobs:
         run: |
           dart test --coverage=coverage
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
-            --packages=.dart_tool/package_config.json --report-on=lib
-      - run: flutter test integration_test
+          --lcov --in=coverage --out=coverage/lcov.info \
+          --packages=.dart_tool/package_config.json --report-on=lib
+            - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -707,8 +707,8 @@ jobs:
           echo "✅ All CI/CD steps completed successfully!"
           echo "🚀 App deployed to: https://app-oint-core.web.app"
           echo "🔧 Functions deployed to: https://us-central1-app-oint-core.cloudfunctions.net"
-      - name: Notify on Failure
-        if: failure()
+          - name: Notify on Failure
+            if: failure()
         run: |
           echo "❌ CI/CD pipeline failed!"
           echo "Please check the logs for details."
