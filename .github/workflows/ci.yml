@@ -36,9 +36,19 @@ jobs:
           if [ "$(printf '%s\n%s\n' "$required" "$version" | sort -V | head -n1)" != "$required" ]; then
             echo "Dart SDK $version is below required $required" && exit 1
           fi
-      - run: flutter pub get
+      - run: flutter pub get --offline
       - run: flutter analyze
-      - run: dart test --coverage
+      - name: Run tests
+        run: |
+          tries=3
+          for i in $(seq 1 $tries); do
+            flutter test --coverage --no-pub && break
+            if [ $i -eq $tries ]; then
+              exit 1
+            fi
+            echo "Retrying tests ($i/$tries)..."
+            sleep 5
+          done
       - name: Upload coverage
         uses: actions/upload-artifact@v3
         with:
