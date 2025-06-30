@@ -12,7 +12,6 @@ jobs:
     env:
       PUB_HOSTED_URL: https://pub.flutter-io.cn
       FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
-      HTTPS_PROXY: ${{ env.HTTPS_PROXY }}
     steps:
       - uses: actions/checkout@v4
       - name: Install Flutter
@@ -36,7 +35,7 @@ jobs:
           if [ "$(printf '%s\n%s\n' "$required" "$version" | sort -V | head -n1)" != "$required" ]; then
             echo "Dart SDK $version is below required $required" && exit 1
           fi
-      - run: flutter pub get --offline
+      - run: flutter pub get
       - run: flutter analyze
       - name: Run tests
         run: |
