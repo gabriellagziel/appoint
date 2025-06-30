@@ -9,6 +9,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'l10n/app_localizations.dart';
 import 'config/routes.dart';
 import 'theme/app_theme.dart';
+import 'providers/theme_provider.dart';
 import 'firebase_options.dart';
 import 'services/custom_deep_link_service.dart';
 import 'services/notification_service.dart';
@@ -66,16 +67,16 @@ void main() {
   appMain();
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends ConsumerStatefulWidget {
   final CustomDeepLinkService deepLinkService;
 
   const MyApp({Key? key, required this.deepLinkService}) : super(key: key);
 
   @override
-  State<MyApp> createState() => _MyAppState();
+  ConsumerState<MyApp> createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MyAppState extends ConsumerState<MyApp> {
   final GlobalKey<NavigatorState> _navigatorKey = GlobalKey<NavigatorState>();
 
   @override
@@ -93,11 +94,15 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    final lightTheme = ref.watch(lightThemeProvider);
+    final darkTheme = ref.watch(darkThemeProvider);
+    final themeMode = ref.watch(themeModeProvider);
+
     return MaterialApp(
       title: 'APP-OINT',
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.system,
+      theme: lightTheme,
+      darkTheme: darkTheme,
+      themeMode: themeMode,
       navigatorKey: _navigatorKey,
       onGenerateRoute: AppRouter.onGenerateRoute,
       navigatorObservers: [
