@@ -165,4 +165,11 @@ class GoogleCalendarService {
     final encrypted = await _encryptData(jsonData);
     await _storage.write(key: _credentialKey, value: encrypted);
   }
+
+  Future<void> signOut() async {
+    await _storage.delete(key: _credentialKey);
+    await _storage.delete(key: _encryptionKeyKey);
+    _client?.close();
+    _client = null;
+  }
 }
