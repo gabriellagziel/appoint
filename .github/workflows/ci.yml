@@ -133,10 +133,13 @@ jobs:
         run: |
           dart test --coverage
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
+            --lcov --in=coverage --out=coverage/lcov.unit.info \
             --packages=.dart_tool/package_config.json --report-on=lib
-      - name: Run Flutter integration tests
-        run: flutter test integration_test --reporter=compact
+      - name: Run Flutter integration tests with coverage
+        run: flutter test --coverage integration_test
+      - name: Combine coverage results
+        run: |
+          cat coverage/lcov.unit.info >> coverage/lcov.info
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -416,9 +419,11 @@ jobs:
         run: |
           dart test --coverage
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
+            --lcov --in=coverage --out=coverage/lcov.unit.info \
             --packages=.dart_tool/package_config.json --report-on=lib
-      - run: flutter test integration_test
+      - run: flutter test --coverage integration_test
+      - name: Combine coverage results
+        run: cat coverage/lcov.unit.info >> coverage/lcov.info
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -525,9 +530,11 @@ jobs:
         run: |
           dart test --coverage
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
+            --lcov --in=coverage --out=coverage/lcov.unit.info \
             --packages=.dart_tool/package_config.json --report-on=lib
-      - run: flutter test integration_test
+      - run: flutter test --coverage integration_test
+      - name: Combine coverage results
+        run: cat coverage/lcov.unit.info >> coverage/lcov.info
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -632,9 +639,11 @@ jobs:
         run: |
           dart test --coverage
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
+            --lcov --in=coverage --out=coverage/lcov.unit.info \
             --packages=.dart_tool/package_config.json --report-on=lib
-      - run: flutter test integration_test
+      - run: flutter test --coverage integration_test
+      - name: Combine coverage results
+        run: cat coverage/lcov.unit.info >> coverage/lcov.info
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -732,9 +741,11 @@ jobs:
         run: |
           dart test --coverage
           dart pub global run coverage:format_coverage \
-            --lcov --in=coverage --out=coverage/lcov.info \
+            --lcov --in=coverage --out=coverage/lcov.unit.info \
             --packages=.dart_tool/package_config.json --report-on=lib
-      - run: flutter test integration_test
+      - run: flutter test --coverage integration_test
+      - name: Combine coverage results
+        run: cat coverage/lcov.unit.info >> coverage/lcov.info
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
