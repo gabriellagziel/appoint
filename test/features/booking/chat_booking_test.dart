@@ -4,10 +4,8 @@ import 'package:flutter_test/flutter_test.dart';
 import '../../fake_firebase_setup.dart';
 import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
 import 'package:mockito/mockito.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../mocks/firebase_mocks.dart';
 import 'package:appoint/features/booking/services/booking_service.dart';
-
-class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
 late BookingService bookingService;
 late MockFirebaseFirestore mockFirestore;
