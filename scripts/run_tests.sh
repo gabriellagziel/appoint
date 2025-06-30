@@ -1,10 +1,16 @@
 #!/bin/bash
 set -e
+# Ensure required Dart SDK or bypass constraints
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PUB_FLAGS="$($SCRIPT_DIR/ensure_dart_sdk.sh)"
+
 MODE="$1"
 
 case "$MODE" in
   unit)
     export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
+    flutter pub get $PUB_FLAGS
+    dart pub get $PUB_FLAGS
     if command -v dart >/dev/null 2>&1; then
       dart test --coverage
     else
@@ -13,6 +19,8 @@ case "$MODE" in
     ;;
   integration)
     export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
+    flutter pub get $PUB_FLAGS
+    dart pub get $PUB_FLAGS
     firebase emulators:start --only firestore,functions,storage --project "$FIREBASE_PROJECT" --import=./emulator_data &
     EMULATOR_PID=$!
     sleep 5
@@ -25,6 +33,8 @@ case "$MODE" in
     ;;
   all|*)
     export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
+    flutter pub get $PUB_FLAGS
+    dart pub get $PUB_FLAGS
     firebase emulators:start --only firestore,functions,storage --project "$FIREBASE_PROJECT" --import=./emulator_data &
     EMULATOR_PID=$!
     sleep 5
