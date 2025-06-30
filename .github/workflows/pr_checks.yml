@@ -56,19 +56,25 @@ jobs:
       - name: Pre-flight: Verify Dart
         run: |
           which dart
-          dart --version
+          version_line=$(dart --version 2>&1)
+          echo "$version_line"
+          sdk=$(echo "$version_line" | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $sdk is below required $required" && exit 1
+          fi
       # network checks removed for offline usage
       - run: flutter pub get
       - name: Check Dart formatting
         run: dart format --output=none --set-exit-if-changed .
       - name: Analyze code
         run: flutter analyze
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs
       - name: Generate localizations
         run: flutter gen-l10n
       - name: Check for undefined localization getters
         run: dart scripts/check_l10n_getters.dart
-      - run: flutter test --coverage
+      - run: dart test --coverage
       - name: Calculate coverage
         id: cov
         run: |
