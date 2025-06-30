@@ -11,6 +11,7 @@ import '../features/studio/ui/staff_screen.dart';
 import '../features/studio/ui/providers_screen.dart';
 import '../features/booking/screens/chat_booking_screen.dart';
 import '../features/booking/booking_request_screen.dart';
+import '../widgets/animations/fade_slide_page_route.dart';
 import '../features/dashboard/dashboard_screen.dart';
 import '../features/personal_app/ui/profile_screen.dart';
 import '../features/personal_app/ui/edit_profile_screen.dart';
@@ -96,9 +97,10 @@ class AppRouter {
           settings: settings,
         );
       case '/booking/request':
-        return MaterialPageRoute(
-          builder: (_) => const BookingRequestScreen(),
+        return FadeSlidePageRoute(
+          page: const BookingRequestScreen(),
           settings: settings,
+          direction: AxisDirection.up,
         );
       case '/dashboard':
         return MaterialPageRoute(
