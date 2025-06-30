@@ -29,6 +29,23 @@ class GoogleCalendarService {
     return key;
   }
 
+  Future<String> _encryptData(String plainText) async {
+    final key = await _getEncryptionKey();
+    final iv = encrypt.IV.fromSecureRandom(16);
+    final encrypter = encrypt.Encrypter(encrypt.AES(key));
+    final encrypted = encrypter.encrypt(plainText, iv: iv);
+    return jsonEncode({'iv': iv.base64, 'data': encrypted.base64});
+  }
+
+  Future<String> _decryptData(String payload) async {
+    final key = await _getEncryptionKey();
+    final map = jsonDecode(payload) as Map<String, dynamic>;
+    final iv = encrypt.IV.fromBase64(map['iv'] as String);
+    final data = map['data'] as String;
+    final encrypter = encrypt.Encrypter(encrypt.AES(key));
+    return encrypter.decrypt64(data, iv: iv);
+  }
+
   Future<void> signInWithGoogleCalendar() async {
     // If credentials already stored, just load them.
     final creds = await _loadCredentials();
@@ -135,10 +152,7 @@ class GoogleCalendarService {
     final encrypted = await _storage.read(key: _credentialKey);
     if (encrypted == null) return null;
     try {
-      final key = await _getEncryptionKey();
-      final iv = encrypt.IV.fromLength(16);
-      final encrypter = encrypt.Encrypter(encrypt.AES(key));
-      final decrypted = encrypter.decrypt64(encrypted, iv: iv);
+      final decrypted = await _decryptData(encrypted);
       final data = jsonDecode(decrypted) as Map<String, dynamic>;
       return AccessCredentials.fromJson(data);
     } catch (_) {
@@ -147,11 +161,8 @@ class GoogleCalendarService {
   }
 
   Future<void> _saveCredentials(AccessCredentials credentials) async {
-    final key = await _getEncryptionKey();
-    final iv = encrypt.IV.fromLength(16);
-    final encrypter = encrypt.Encrypter(encrypt.AES(key));
     final jsonData = jsonEncode(credentials.toJson());
-    final encrypted = encrypter.encrypt(jsonData, iv: iv);
-    await _storage.write(key: _credentialKey, value: encrypted.base64);
+    final encrypted = await _encryptData(jsonData);
+    await _storage.write(key: _credentialKey, value: encrypted);
   }
 }
