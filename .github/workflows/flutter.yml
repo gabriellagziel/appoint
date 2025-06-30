@@ -51,14 +51,20 @@ jobs:
       - name: "Pre-flight: Verify Dart"
         run: |
           which dart
-          dart --version
+          version_line=$(dart --version 2>&1)
+          echo "$version_line"
+          sdk=$(echo "$version_line" | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $sdk is below required $required" && exit 1
+          fi
       # network checks removed for offline usage
       - name: Get dependencies
         run: flutter pub get
       - run: dart pub get
       - name: Verify firebase_app_check resolution
         run: grep firebase_app_check pubspec.lock
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
       - name: Start Firebase emulators
@@ -69,7 +75,7 @@ jobs:
           firebase emulators:start --only auth,firestore,storage --project app-oint-core &
           sleep 5
       - name: Run Flutter tests with coverage
-        run: flutter test --coverage
+        run: dart test --coverage
       - name: Run Flutter integration tests
         run: flutter test integration_test --reporter=compact
       - name: Generate localizations
