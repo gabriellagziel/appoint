@@ -26,8 +26,8 @@ jobs:
           - 5001:5001   # Functions
         env:
           FIREBASE_PROJECT: app-oint-core
-          PUB_HOSTED_URL: https://pub.dev
-          FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+          PUB_HOSTED_URL: https://pub.flutter-io.cn
+          FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
     steps:
       - uses: actions/checkout@v4
       # Install Flutter and cache the SDK so flutter and dart commands are available
@@ -100,7 +100,7 @@ jobs:
         run: verdaccio --config verdaccio.yaml & sleep 5
       - name: Configure Pub Cache
         run: |
-          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Check network access
         run: |
@@ -118,7 +118,7 @@ jobs:
         run: curl --fail https://storage.googleapis.com
       - run: flutter pub get
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs 
       - run: flutter analyze
       - run: dart analyze
       - name: Start Firebase emulators
@@ -158,8 +158,8 @@ jobs:
       image: ghcr.io/your-org/app-oint-dev:latest
       options: --pull
     env:
-      PUB_HOSTED_URL: http://localhost:4873
-      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      PUB_HOSTED_URL: https://pub.flutter-io.cn
+      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
     steps:
@@ -215,7 +215,7 @@ jobs:
         run: verdaccio --config verdaccio.yaml & sleep 5
       - name: Configure Pub Cache
         run: |
-          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Check network access
         run: |
@@ -231,9 +231,9 @@ jobs:
             ${{ runner.os }}-pub-
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+      - run: flutter pub get 
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs 
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -259,8 +259,8 @@ jobs:
       options: --pull
     if: github.ref == 'refs/heads/main'
     env:
-      PUB_HOSTED_URL: https://pub.dev
-      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      PUB_HOSTED_URL: https://pub.flutter-io.cn
+      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
@@ -330,8 +330,8 @@ jobs:
       options: --pull
     if: github.ref == 'refs/heads/main'
     env:
-      PUB_HOSTED_URL: http://localhost:4873
-      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      PUB_HOSTED_URL: https://pub.flutter-io.cn
+      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
@@ -388,7 +388,7 @@ jobs:
         run: verdaccio --config verdaccio.yaml & sleep 5
       - name: Configure Pub Cache
         run: |
-          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Check network access
         run: |
@@ -404,9 +404,9 @@ jobs:
             ${{ runner.os }}-pub-
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+      - run: flutter pub get 
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs 
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -439,8 +439,8 @@ jobs:
       options: --pull
     if: github.ref == 'refs/heads/main'
     env:
-      PUB_HOSTED_URL: http://localhost:4873
-      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      PUB_HOSTED_URL: https://pub.flutter-io.cn
+      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
@@ -497,7 +497,7 @@ jobs:
         run: verdaccio --config verdaccio.yaml & sleep 5
       - name: Configure Pub Cache
         run: |
-          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Check network access
         run: |
@@ -513,9 +513,9 @@ jobs:
             ${{ runner.os }}-pub-
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+      - run: flutter pub get 
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs 
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -546,8 +546,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     env:
-      PUB_HOSTED_URL: http://localhost:4873
-      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      PUB_HOSTED_URL: https://pub.flutter-io.cn
+      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
@@ -604,7 +604,7 @@ jobs:
         run: verdaccio --config verdaccio.yaml & sleep 5
       - name: Configure Pub Cache
         run: |
-          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Check network access
         run: |
@@ -620,9 +620,9 @@ jobs:
             ${{ runner.os }}-pub-
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+      - run: flutter pub get 
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs 
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -656,8 +656,8 @@ jobs:
       options: --pull
     if: always()
     env:
-      PUB_HOSTED_URL: http://localhost:4873
-      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      PUB_HOSTED_URL: https://pub.flutter-io.cn
+      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
@@ -710,7 +710,7 @@ jobs:
         run: verdaccio --config verdaccio.yaml & sleep 5
       - name: Configure Pub Cache
         run: |
-          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
+          echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Check network access
         run: |
@@ -720,9 +720,9 @@ jobs:
           curl --fail https://firebase-public.firebaseio.com
       - name: Check storage connectivity
         run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+      - run: flutter pub get 
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs 
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
