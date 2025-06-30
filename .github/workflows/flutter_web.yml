@@ -16,8 +16,7 @@ jobs:
       PUB_HOSTED_URL: https://pub.flutter-io.cn
       FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
-      http_proxy: http://proxy.example.com:3128
-      https_proxy: http://proxy.example.com:3128
+      PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
 
     steps:
     - uses: actions/checkout@v3
