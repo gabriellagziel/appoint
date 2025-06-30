@@ -26,11 +26,23 @@ jobs:
           curl --fail https://pub.dev
           curl --fail https://firebase-public.firebaseio.com
       - name: Setup Flutter SDK
-        uses: flutter-actions/setup-flutter@v2
+        uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.20.0'
+          flutter-version: '3.32.0'
+          cache: true
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: '3.4.0'
       - name: Ensure flutter in PATH
         run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+      - name: Cache Flutter SDK
+        uses: actions/cache@v3
+        with:
+          path: ~/.flutter
+          key: ${{ runner.os }}-flutter-${{ hashFiles('.github/workflows/localization.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-flutter-
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -86,15 +98,8 @@ jobs:
         run: flutter pub get --offline
       - run: flutter analyze
       - run: dart analyze
-      - name: Run tests with coverage
-        run: |
-          if which dart >/dev/null 2>&1; then
-            echo "Using Dart at $(which dart)"
-            dart test --coverage test/
-          else
-            echo "::warning::dart CLI not found; using flutter" >&2
-            flutter test --coverage test/
-          fi
+      - name: Run Flutter tests with coverage
+        run: flutter test --coverage
       - run: flutter test integration_test
       - run: flutter build web
       - name: Upload coverage artifact
