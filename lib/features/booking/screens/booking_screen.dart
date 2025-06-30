@@ -5,7 +5,8 @@ import '../../../widgets/bottom_sheet_manager.dart';
 import '../../../widgets/booking_confirmation_sheet.dart';
 import '../../../models/booking.dart';
 import '../services/booking_service.dart';
-import '../../../providers/auth_provider.dart';
+import '../booking_helper.dart';
+import '../../../utils/snackbar_extensions.dart';
 import '../../selection/providers/selection_provider.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
@@ -21,52 +22,22 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
   Future<void> _submitBooking() async {
     setState(() => _isSubmitting = true);
 
-    try {
-      final user = ref.read(authProvider).currentUser;
-      final userId = user?.uid ?? '';
-      if (userId.isEmpty) throw Exception('User not logged in');
-
-      final staffId = ref.read(staffSelectionProvider);
-      final serviceId = ref.read(serviceSelectionProvider);
-      final serviceName = ref.read(serviceNameProvider);
-      final dateTime = ref.read(selectedSlotProvider);
-      final duration = ref.read(serviceDurationProvider);
-
-      if (staffId == null ||
-          serviceId == null ||
-          dateTime == null ||
-          duration == null) {
-        throw Exception('Missing required booking information');
-      }
-
-      final booking = Booking(
-        id: '', // Will be set by Firestore
-        userId: userId,
-        staffId: staffId,
-        serviceId: serviceId,
-        serviceName: serviceName ?? 'Unknown Service',
-        dateTime: dateTime,
-        duration: duration,
-        notes: null,
-        createdAt: DateTime.now(),
-      );
-
-      await ref.read(bookingServiceProvider).submitBooking(booking);
-
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Booking confirmed')),
-      );
-      Navigator.pop(context);
-    } catch (e, st) {
-      debugPrint('Error during booking: $e\n$st');
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Failed to confirm booking')),
-      );
-    } finally {
-      if (mounted) setState(() => _isSubmitting = false);
-    }
+    BookingHelper(ref)
+        .submitBooking()
+        .then((_) {
+          if (!mounted) return;
+          context.showSnackBar('Booking confirmed');
+          Navigator.pop(context);
+        })
+        .catchError((e, st) {
+          debugPrint('Error during booking: $e\n$st');
+          if (!mounted) return;
+          context.showSnackBar('Failed to confirm booking',
+              backgroundColor: Colors.red);
+        })
+        .whenComplete(() {
+          if (mounted) setState(() => _isSubmitting = false);
+        });
   }
 
   void _showConfirmationSheet() {
