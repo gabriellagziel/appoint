@@ -29,6 +29,20 @@ jobs:
           FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     steps:
       - uses: actions/checkout@v4
+      # Install Flutter and cache the SDK so flutter and dart commands are available
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.0'
+          cache: true
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+      - name: Cache Flutter SDK
+        uses: actions/cache@v3
+        with:
+          path: ~/.flutter
+          key: ${{ runner.os }}-flutter-${{ hashFiles('.github/workflows/**') }}
+          restore-keys: |
+            ${{ runner.os }}-flutter-
       - name: Check network access
         run: |
           curl --fail https://pub.dev
@@ -100,8 +114,8 @@ jobs:
           (firebase emulators:start --only firestore,auth,storage || sleep 5 && firebase emulators:start --only firestore,auth,storage) &
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
-      - name: Run Dart tests
-        run: dart test --coverage=coverage
+      - name: Run Flutter tests with coverage
+        run: flutter test --coverage
       - name: Run Flutter integration tests
         run: flutter test integration_test --reporter=compact
       - name: Upload coverage artifact
