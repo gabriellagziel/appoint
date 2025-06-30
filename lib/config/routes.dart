@@ -26,6 +26,8 @@ import '../features/child/ui/parental_control_screen.dart';
 import '../features/family/screens/permissions_screen.dart';
 import '../features/family/ui/parental_consent_prompt.dart';
 import '../features/family/ui/parental_settings_screen.dart';
+import '../features/family_support/screens/family_support_screen.dart';
+import '../features/personal_scheduler/screens/personal_scheduler_screen.dart';
 import '../features/invite/invite_detail_screen.dart';
 import '../features/booking/booking_confirm_screen.dart';
 import '../features/admin/admin_broadcast_screen.dart';
@@ -171,6 +173,16 @@ class AppRouter {
         final familyLink = settings.arguments as dynamic;
         return MaterialPageRoute(
           builder: (_) => PermissionsScreen(familyLink: familyLink),
+          settings: settings,
+        );
+      case '/family/support':
+        return MaterialPageRoute(
+          builder: (_) => const FamilySupportScreen(),
+          settings: settings,
+        );
+      case '/personal/scheduler':
+        return MaterialPageRoute(
+          builder: (_) => const PersonalSchedulerScreen(),
           settings: settings,
         );
       case '/admin/broadcast':
