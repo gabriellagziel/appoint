@@ -30,11 +30,22 @@ jobs:
         for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
           curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
         done
+    - name: Cache Flutter SDK
+      uses: actions/cache@v3
+      with:
+        path: ~/.flutter
+        key: ${{ runner.os }}-flutter-${{ hashFiles('.github/workflows/flutter_web.yml') }}
+        restore-keys: |
+          ${{ runner.os }}-flutter-
     - name: Setup Flutter SDK
       uses: subosito/flutter-action@v2
       with:
         flutter-version: '3.32.0'
         cache: true
+    - name: Setup Dart
+      uses: dart-lang/setup-dart@v1
+      with:
+        sdk: '3.4.0'
     - name: Ensure flutter in PATH
       run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
     - name: Cache Pub packages
