@@ -51,6 +51,12 @@ jobs:
         run: |
           echo "/usr/local/flutter/bin" >> $GITHUB_PATH
           echo "/usr/lib/dart/bin" >> $GITHUB_PATH
+      - name: Verify Binaries
+        run: |
+          which flutter
+          flutter --version
+          which dart
+          dart --version
       - name: Configure Network Allowlist
         run: |
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
@@ -67,7 +73,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs --offline
       - name: Generate localizations
         run: flutter gen-l10n
-      - run: flutter test --coverage
+      - run: dart test --coverage
       - name: Calculate coverage
         id: cov
         run: |

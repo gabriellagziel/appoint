@@ -23,9 +23,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Check network access
         run: |
-          curl --fail https://storage.googleapis.com
+          curl --fail $FLUTTER_STORAGE_BASE_URL
           curl --fail https://dart.dev
-          curl --fail https://pub.dev
+          curl --fail $PUB_HOSTED_URL
           curl --fail https://firebase-public.firebaseio.com
       - name: Setup Flutter SDK
         uses: subosito/flutter-action@v2
@@ -40,6 +40,12 @@ jobs:
         run: |
           echo "/usr/local/flutter/bin" >> $GITHUB_PATH
           echo "/usr/lib/dart/bin" >> $GITHUB_PATH
+      - name: Verify Binaries
+        run: |
+          which flutter
+          flutter --version
+          which dart
+          dart --version
       - name: Cache Flutter SDK
         uses: actions/cache@v3
         with:
@@ -66,8 +72,8 @@ jobs:
     which dart
           dart --version
           curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
+          curl --fail $FLUTTER_STORAGE_BASE_URL
+          for host in $(echo $PUB_HOSTED_URL | cut -d/ -f3) $(echo $FLUTTER_STORAGE_BASE_URL | cut -d/ -f3) firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
             curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -78,32 +84,32 @@ jobs:
       - name: Install cspell
         run: npm install -g cspell
       - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
+        run: curl --fail $FLUTTER_STORAGE_BASE_URL
       - name: Check network access
         run: |
-          curl --fail https://storage.googleapis.com
+          curl --fail $FLUTTER_STORAGE_BASE_URL
           curl --fail https://dart.dev
-          curl --fail https://pub.dev
+          curl --fail $PUB_HOSTED_URL
           curl --fail https://firebase-public.firebaseio.com
       - run: flutter pub get --offline
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs --offline
       - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
+        run: curl --fail $FLUTTER_STORAGE_BASE_URL
       - name: Configure offline pub cache
         run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
       - name: Check network access
         run: |
-          curl --fail https://storage.googleapis.com
+          curl --fail $FLUTTER_STORAGE_BASE_URL
           curl --fail https://dart.dev
-          curl --fail https://pub.dev
+          curl --fail $PUB_HOSTED_URL
           curl --fail https://firebase-public.firebaseio.com
       - name: Fetch dependencies offline
         run: flutter pub get --offline
       - run: flutter analyze
       - run: dart analyze
       - name: Run Flutter tests with coverage
-        run: flutter test --coverage
+        run: dart test --coverage
       - run: flutter test integration_test
       - run: flutter build web
       - name: Upload coverage artifact

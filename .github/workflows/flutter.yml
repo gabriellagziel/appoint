@@ -34,6 +34,12 @@ jobs:
         run: |
           echo "/usr/local/flutter/bin" >> $GITHUB_PATH
           echo "/usr/lib/dart/bin" >> $GITHUB_PATH
+      - name: Verify Binaries
+        run: |
+          which flutter
+          flutter --version
+          which dart
+          dart --version
       # network checks removed for offline usage
       - name: Cache Pub packages
         uses: actions/cache@v3
@@ -70,7 +76,7 @@ jobs:
           firebase emulators:start --only auth,firestore,storage --project app-oint-core &
           sleep 5
       - name: Run Flutter tests with coverage
-        run: flutter test --coverage
+        run: dart test --coverage
       - name: Run Flutter integration tests
         run: flutter test integration_test --reporter=compact
       - name: Generate localizations
