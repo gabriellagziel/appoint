@@ -7,8 +7,7 @@ import 'package:appoint/services/family_service.dart';
 import 'package:appoint/providers/otp_provider.dart';
 import 'package:appoint/providers/family_provider.dart';
 import 'package:mockito/mockito.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import '../../mocks/firebase_mocks.dart';
 
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -85,9 +84,5 @@ class MockFamilyService extends FamilyService {
   }
 }
 
-class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
-
-
-class MockFirebaseAuth extends Mock implements FirebaseAuth {}
 
