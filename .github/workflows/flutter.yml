@@ -77,9 +77,11 @@ jobs:
       - name: Run Flutter tests with coverage
         run: dart test --coverage
       - name: Run Flutter integration tests
-        run: flutter test integration_test --reporter=compact
+        run: flutter test integration_test --coverage --reporter=compact
       - name: Generate localizations
         run: flutter gen-l10n
+      - name: Check for undefined localization getters
+        run: dart scripts/check_l10n_getters.dart
       - run: flutter build web
       - uses: codecov/codecov-action@v3
         with:
