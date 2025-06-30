@@ -105,10 +105,18 @@ jobs:
       run: flutter pub get
     - run: flutter analyze
     - run: dart analyze
-    - run: dart test --coverage
-    - run: flutter test integration_test
+    - run: |
+        dart test --coverage
+        dart pub global run coverage:format_coverage \
+          --lcov --in=coverage --out=coverage/lcov.unit.info \
+          --packages=.dart_tool/package_config.json --report-on=lib
+    - run: flutter test --coverage integration_test
+    - name: Combine coverage results
+      run: cat coverage/lcov.unit.info >> coverage/lcov.info
     - name: Generate localizations
       run: flutter gen-l10n
+    - name: Check for undefined localization getters
+      run: dart scripts/check_l10n_getters.dart
     - run: flutter build web --release
     - name: Upload coverage artifact
       uses: actions/upload-artifact@v3
