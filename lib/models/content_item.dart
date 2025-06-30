@@ -1,3 +1,4 @@
+// Model representing a stored content record in Firestore.
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// Represents a piece of content in the library.
