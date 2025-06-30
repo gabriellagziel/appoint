@@ -13,7 +13,11 @@ service cloud.firestore {
     // User profiles
     match /users/{userId} {
       allow read: if isSignedIn() && request.auth.uid == userId;
-      allow write: if isSignedIn() && request.auth.uid == userId;
+      allow create: if isSignedIn() && request.auth.uid == userId;
+      allow update: if isSignedIn() &&
+        request.auth.uid == userId &&
+        (!('role' in request.resource.data) ||
+          request.resource.data.role == resource.data.role);
     }
 
     // Bookings
@@ -23,12 +27,16 @@ service cloud.firestore {
         resource.data.businessId == request.auth.uid ||
         resource.data.ambassadorId == request.auth.uid
       );
-      allow create: if isSignedIn() && request.auth.uid == resource.data.userId;
+      allow create: if isSignedIn() &&
+        request.auth.uid == request.resource.data.userId;
       allow update: if isSignedIn() && (
         request.auth.uid == resource.data.userId ||
         request.auth.uid == resource.data.businessId ||
         request.auth.uid == resource.data.ambassadorId
-      );
+      ) &&
+        request.resource.data.userId == resource.data.userId &&
+        request.resource.data.businessId == resource.data.businessId &&
+        request.resource.data.ambassadorId == resource.data.ambassadorId;
       allow delete: if isSignedIn() && request.auth.uid == resource.data.userId;
     }
 
@@ -64,7 +72,7 @@ service cloud.firestore {
 
     // Playtime Games - Simple rules
     match /playtime_games/{docId} {
-      allow read: if true;
+      allow read: if isSignedIn();
       allow write: if isAdmin();
     }
 
@@ -76,7 +84,7 @@ service cloud.firestore {
 
     // Playtime Backgrounds - Simple rules
     match /playtime_backgrounds/{docId} {
-      allow read: if true;
+      allow read: if isSignedIn();
       allow write: if isAdmin();
     }
 
