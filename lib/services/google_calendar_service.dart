@@ -132,13 +132,15 @@ class GoogleCalendarService {
   }
 
   Future<AccessCredentials?> _loadCredentials() async {
-    final encrypted = await _storage.read(key: _credentialKey);
-    if (encrypted == null) return null;
+    final stored = await _storage.read(key: _credentialKey);
+    if (stored == null) return null;
     try {
       final key = await _getEncryptionKey();
-      final iv = encrypt.IV.fromLength(16);
+      final wrapper = jsonDecode(stored) as Map<String, dynamic>;
+      final iv = encrypt.IV.fromBase64(wrapper['iv'] as String);
+      final encryptedData = wrapper['data'] as String;
       final encrypter = encrypt.Encrypter(encrypt.AES(key));
-      final decrypted = encrypter.decrypt64(encrypted, iv: iv);
+      final decrypted = encrypter.decrypt64(encryptedData, iv: iv);
       final data = jsonDecode(decrypted) as Map<String, dynamic>;
       return AccessCredentials.fromJson(data);
     } catch (_) {
@@ -148,10 +150,11 @@ class GoogleCalendarService {
 
   Future<void> _saveCredentials(AccessCredentials credentials) async {
     final key = await _getEncryptionKey();
-    final iv = encrypt.IV.fromLength(16);
+    final iv = encrypt.IV.fromSecureRandom(16);
     final encrypter = encrypt.Encrypter(encrypt.AES(key));
     final jsonData = jsonEncode(credentials.toJson());
     final encrypted = encrypter.encrypt(jsonData, iv: iv);
-    await _storage.write(key: _credentialKey, value: encrypted.base64);
+    final wrapper = jsonEncode({'iv': iv.base64, 'data': encrypted.base64});
+    await _storage.write(key: _credentialKey, value: wrapper);
   }
 }
