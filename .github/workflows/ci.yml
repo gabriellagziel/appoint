@@ -39,7 +39,7 @@ jobs:
       - name: Setup Dart
         uses: dart-lang/setup-dart@v1
         with:
-          sdk: '3.4.0'
+          sdk: '3.4.x'
       - name: Ensure Flutter & Dart in PATH
         run: |
           echo "/usr/local/flutter/bin" >> $GITHUB_PATH
@@ -122,8 +122,14 @@ jobs:
           (firebase emulators:start --only firestore,auth,storage || sleep 5 && firebase emulators:start --only firestore,auth,storage) &
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
+      - name: Activate coverage tooling
+        run: dart pub global activate coverage
       - name: Run Dart tests with coverage
-        run: dart test --coverage
+        run: |
+          dart test --coverage=coverage
+          dart pub global run coverage:format_coverage \
+            --lcov --in=coverage --out=coverage/lcov.info \
+            --packages=.dart_tool/package_config.json --report-on=lib
       - name: Run Flutter integration tests
         run: flutter test integration_test --reporter=compact
       - name: Upload coverage artifact
@@ -220,8 +226,14 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
+      - name: Activate coverage tooling
+        run: dart pub global activate coverage
       - name: Run Dart tests with coverage
-        run: dart test --coverage test/features/studio/content_library_screen_test.dart
+        run: |
+          dart test --coverage=coverage test/features/studio/content_library_screen_test.dart
+          dart pub global run coverage:format_coverage \
+            --lcov --in=coverage --out=coverage/lcov.info \
+            --packages=.dart_tool/package_config.json --report-on=lib
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -373,8 +385,14 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
+      - name: Activate coverage tooling
+        run: dart pub global activate coverage
       - name: Run Dart tests with coverage
-        run: dart test --coverage
+        run: |
+          dart test --coverage=coverage
+          dart pub global run coverage:format_coverage \
+            --lcov --in=coverage --out=coverage/lcov.info \
+            --packages=.dart_tool/package_config.json --report-on=lib
       - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -469,8 +487,14 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
+      - name: Activate coverage tooling
+        run: dart pub global activate coverage
       - name: Run Dart tests with coverage
-        run: dart test --coverage
+        run: |
+          dart test --coverage=coverage
+          dart pub global run coverage:format_coverage \
+            --lcov --in=coverage --out=coverage/lcov.info \
+            --packages=.dart_tool/package_config.json --report-on=lib
       - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -563,8 +587,14 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
+      - name: Activate coverage tooling
+        run: dart pub global activate coverage
       - name: Run Dart tests with coverage
-        run: dart test --coverage
+        run: |
+          dart test --coverage=coverage
+          dart pub global run coverage:format_coverage \
+            --lcov --in=coverage --out=coverage/lcov.info \
+            --packages=.dart_tool/package_config.json --report-on=lib
       - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -650,8 +680,14 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
+      - name: Activate coverage tooling
+        run: dart pub global activate coverage
       - name: Run Dart tests with coverage
-        run: dart test --coverage
+        run: |
+          dart test --coverage=coverage
+          dart pub global run coverage:format_coverage \
+            --lcov --in=coverage --out=coverage/lcov.info \
+            --packages=.dart_tool/package_config.json --report-on=lib
       - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
