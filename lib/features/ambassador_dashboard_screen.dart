@@ -143,6 +143,8 @@ class _AmbassadorDashboardScreenState
                   const SizedBox(height: 24),
                   _buildChart(_getFilteredData(data)),
                   const SizedBox(height: 24),
+                  _buildLanguagePieChart(_getFilteredData(data)),
+                  const SizedBox(height: 24),
                   _buildDataTable(_getFilteredData(data)),
                 ],
               ),
@@ -554,6 +556,51 @@ class _AmbassadorDashboardScreenState
                           width: 20,
                         ),
                       ],
+                    );
+                  }).toList(),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildLanguagePieChart(AmbassadorData data) {
+    if (data.stats.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
+    final counts = <String, int>{};
+    for (final stat in data.stats) {
+      counts.update(stat.language, (v) => v + stat.ambassadors,
+          ifAbsent: () => stat.ambassadors);
+    }
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Ambassadors by Language',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 16),
+            SizedBox(
+              height: 200,
+              child: PieChart(
+                PieChartData(
+                  centerSpaceRadius: 40,
+                  sections: counts.entries.toList().asMap().entries.map((entry) {
+                    final index = entry.key;
+                    final item = entry.value;
+                    return PieChartSectionData(
+                      value: item.value.toDouble(),
+                      title: item.key,
+                      color: Colors.primaries[index % Colors.primaries.length],
                     );
                   }).toList(),
                 ),
