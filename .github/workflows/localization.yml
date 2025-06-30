@@ -109,7 +109,7 @@ jobs:
       - run: dart analyze
       - name: Run Flutter tests with coverage
         run: dart test --coverage
-      - run: flutter test integration_test
+      - run: flutter test integration_test --coverage
       - run: flutter build web
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -145,6 +145,8 @@ jobs:
         run: dart scripts/merge_l10n.dart
       - name: Generate localizations
         run: flutter gen-l10n
+      - name: Check for undefined localization getters
+        run: dart scripts/check_l10n_getters.dart
       - name: Verify generated files
         run: |
           echo "Checking generated localization files..."
