@@ -62,6 +62,8 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs --offline
       - name: Generate localizations
         run: flutter gen-l10n
+      - name: Check for undefined localization getters
+        run: dart scripts/check_l10n_getters.dart
       - run: flutter test --coverage
       - name: Calculate coverage
         id: cov
