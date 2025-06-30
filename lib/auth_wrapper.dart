@@ -11,6 +11,10 @@ import 'features/personal_app/onboarding_screen.dart';
 import 'features/personal_app/home_feed_screen.dart';
 // ignore: unused_import
 import 'features/scheduler/scheduler_screen.dart';
+// ignore: unused_import
+import 'features/family_support/screens/family_support_screen.dart';
+// ignore: unused_import
+import 'features/personal_scheduler/screens/personal_scheduler_screen.dart';
 
 class AuthWrapper extends StatelessWidget {
   const AuthWrapper({super.key});
