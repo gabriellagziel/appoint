@@ -123,6 +123,8 @@ jobs:
         with:
           name: coverage-report
           path: coverage/lcov.info
+      - name: Generate localizations
+        run: flutter gen-l10n
       - run: flutter build web
       - name: Stop emulators
         if: always()
@@ -383,6 +385,8 @@ jobs:
         with:
           name: coverage-report
           path: coverage/lcov.info
+      - name: Generate localizations
+        run: flutter gen-l10n
       - name: Build Web App
         run: flutter build web --release
       - name: Deploy to Firebase Hosting
@@ -484,6 +488,8 @@ jobs:
         with:
           name: coverage-report
           path: coverage/lcov.info
+      - name: Generate localizations
+        run: flutter gen-l10n
       - run: flutter build web
       - name: Run Smoke Tests
         run: |
@@ -583,6 +589,8 @@ jobs:
         with:
           name: coverage-report
           path: coverage/lcov.info
+      - name: Generate localizations
+        run: flutter gen-l10n
       - run: flutter build web
       - name: Run Security Scan
         run: |
@@ -675,6 +683,8 @@ jobs:
         with:
           name: coverage-report
           path: coverage/lcov.info
+      - name: Generate localizations
+        run: flutter gen-l10n
       - run: flutter build web
       - name: Notify on Success
         if: success()

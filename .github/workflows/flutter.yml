@@ -58,6 +58,8 @@ jobs:
         run: dart test --coverage=coverage
       - name: Run Flutter integration tests
         run: flutter test integration_test --reporter=compact
+      - name: Generate localizations
+        run: flutter gen-l10n
       - run: flutter build web
       - uses: codecov/codecov-action@v3
         with:
