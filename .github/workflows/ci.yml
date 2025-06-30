@@ -77,8 +77,14 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
-          dart --version
+          which dart
+          version_line=$(dart --version 2>&1)
+          echo "$version_line"
+          sdk=$(echo "$version_line" | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $sdk is below required $required" && exit 1
+          fi
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
@@ -125,7 +131,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage=coverage
+          dart test --coverage
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
@@ -186,8 +192,14 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
-          dart --version
+          which dart
+          version_line=$(dart --version 2>&1)
+          echo "$version_line"
+          sdk=$(echo "$version_line" | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $sdk is below required $required" && exit 1
+          fi
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
@@ -229,7 +241,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage=coverage test/features/studio/content_library_screen_test.dart
+          dart test --coverage test/features/studio/content_library_screen_test.dart
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
@@ -282,8 +294,14 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
-          dart --version
+          which dart
+          version_line=$(dart --version 2>&1)
+          echo "$version_line"
+          sdk=$(echo "$version_line" | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $sdk is below required $required" && exit 1
+          fi
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
@@ -347,8 +365,14 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
-          dart --version
+          which dart
+          version_line=$(dart --version 2>&1)
+          echo "$version_line"
+          sdk=$(echo "$version_line" | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $sdk is below required $required" && exit 1
+          fi
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
@@ -390,7 +414,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage=coverage
+          dart test --coverage
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
@@ -450,8 +474,14 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
-          dart --version
+          which dart
+          version_line=$(dart --version 2>&1)
+          echo "$version_line"
+          sdk=$(echo "$version_line" | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $sdk is below required $required" && exit 1
+          fi
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
@@ -493,7 +523,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage=coverage
+          dart test --coverage
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
@@ -551,8 +581,14 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
-          dart --version
+          which dart
+          version_line=$(dart --version 2>&1)
+          echo "$version_line"
+          sdk=$(echo "$version_line" | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $sdk is below required $required" && exit 1
+          fi
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
@@ -594,7 +630,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage=coverage
+          dart test --coverage
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
@@ -655,8 +691,14 @@ jobs:
           scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
-          dart --version
+          which dart
+          version_line=$(dart --version 2>&1)
+          echo "$version_line"
+          sdk=$(echo "$version_line" | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $sdk is below required $required" && exit 1
+          fi
           curl --fail https://firebase-public.firebaseio.com
           curl --fail https://storage.googleapis.com
           for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
@@ -688,7 +730,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage=coverage
+          dart test --coverage
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
