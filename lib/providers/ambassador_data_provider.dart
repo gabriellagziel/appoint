@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/ambassador_stats.dart';
 import '../services/ambassador_service.dart';
+import '../models/business_analytics.dart';
 
 final ambassadorServiceProvider =
     Provider<AmbassadorService>((ref) => AmbassadorService());
@@ -91,3 +92,15 @@ final ambassadorFiltersProvider =
 final selectedCountryProvider = StateProvider<String?>((ref) => null);
 final selectedLanguageProvider = StateProvider<String?>((ref) => null);
 final selectedDateRangeProvider = StateProvider<DateTimeRange?>((ref) => null);
+
+final ambassadorReferralTrendProvider =
+    FutureProvider<List<TimeSeriesPoint>>((ref) {
+  final country = ref.watch(selectedCountryProvider);
+  final language = ref.watch(selectedLanguageProvider);
+  final range = ref.watch(selectedDateRangeProvider);
+  return ref.read(ambassadorServiceProvider).fetchReferralTrend(
+        country: country,
+        language: language,
+        dateRange: range,
+      );
+});
