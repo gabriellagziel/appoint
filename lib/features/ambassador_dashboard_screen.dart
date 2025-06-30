@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
 import '../providers/ambassador_data_provider.dart';
 import '../models/ambassador_stats.dart';
+import '../models/business_analytics.dart';
 import '../models/branch.dart';
 import '../services/branch_service.dart';
 import '../services/notification_service.dart';
@@ -80,6 +81,7 @@ class _AmbassadorDashboardScreenState
   @override
   Widget build(BuildContext context) {
     final ambassadorDataAsync = ref.watch(ambassadorDataProvider);
+    final referralTrendAsync = ref.watch(ambassadorReferralTrendProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -142,6 +144,12 @@ class _AmbassadorDashboardScreenState
                   _buildStatsCards(_getFilteredData(data)),
                   const SizedBox(height: 24),
                   _buildChart(_getFilteredData(data)),
+                  const SizedBox(height: 24),
+                  referralTrendAsync.when(
+                    data: _buildReferralTrendChart,
+                    loading: () => const Center(child: CircularProgressIndicator()),
+                    error: (e, _) => Text('Error: $e'),
+                  ),
                   const SizedBox(height: 24),
                   _buildLanguagePieChart(_getFilteredData(data)),
                   const SizedBox(height: 24),
@@ -558,6 +566,52 @@ class _AmbassadorDashboardScreenState
                       ],
                     );
                   }).toList(),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildReferralTrendChart(List<TimeSeriesPoint> points) {
+    if (points.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
+    final spots = points
+        .map((e) => FlSpot(e.date.millisecondsSinceEpoch.toDouble(), e.count.toDouble()))
+        .toList()
+      ..sort((a, b) => a.x.compareTo(b.x));
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Referrals Over Time',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 16),
+            SizedBox(
+              height: 200,
+              child: LineChart(
+                LineChartData(
+                  gridData: const FlGridData(show: true),
+                  titlesData: const FlTitlesData(show: false),
+                  borderData: FlBorderData(show: false),
+                  lineBarsData: [
+                    LineChartBarData(
+                      spots: spots,
+                      isCurved: true,
+                      color: Theme.of(context).primaryColor,
+                      barWidth: 3,
+                      dotData: const FlDotData(show: false),
+                    ),
+                  ],
                 ),
               ),
             ),
