@@ -33,7 +33,7 @@ Appointment scheduling app built with Flutter with advanced features including A
    
 ```bash
    flutter pub get
-   ./tool/codegen.sh
+   ./tool/codegen.sh    # runs flutter gen-l10n and build_runner
 
 ```
 
@@ -248,7 +248,7 @@ Our GitHub Actions pipeline (`.github/workflows/flutter.yml`) runs on every push
   `.devcontainer/sdk_archives` before building the container so it can install
   them without network access.
 - **CI Network Allowlist**: Ensure your CI runners can access `storage.googleapis.com`, `firebase-public.firebaseio.com`, `metadata.google.internal`, `169.254.169.254`, `raw.githubusercontent.com`, and `pub.dev`.
-- **Code Generation**: Use `./tool/codegen.sh` to run build_runner when models or localization files change.
+- **Code Generation**: Use `./tool/codegen.sh` to regenerate localizations and run build_runner whenever models or translations change.
 - **Running Tests**:
   ```bash
   firebase emulators:start --only auth,firestore
