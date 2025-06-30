@@ -118,8 +118,8 @@ jobs:
           (firebase emulators:start --only firestore,auth,storage || sleep 5 && firebase emulators:start --only firestore,auth,storage) &
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
-      - name: Run Flutter tests with coverage
-        run: flutter test --coverage
+      - name: Run Dart tests with coverage
+        run: dart test --coverage
       - name: Run Flutter integration tests
         run: flutter test integration_test --reporter=compact
       - name: Upload coverage artifact
@@ -214,8 +214,8 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
-      - name: Run Flutter tests with coverage
-        run: flutter test --coverage test/features/studio/content_library_screen_test.dart
+      - name: Run Dart tests with coverage
+        run: dart test --coverage test/features/studio/content_library_screen_test.dart
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -367,8 +367,8 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
-      - name: Run Flutter tests with coverage
-        run: flutter test --coverage
+      - name: Run Dart tests with coverage
+        run: dart test --coverage
       - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -463,8 +463,8 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
-      - name: Run Flutter tests with coverage
-        run: flutter test --coverage
+      - name: Run Dart tests with coverage
+        run: dart test --coverage
       - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -557,8 +557,8 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
-      - name: Run Flutter tests with coverage
-        run: flutter test --coverage
+      - name: Run Dart tests with coverage
+        run: dart test --coverage
       - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
@@ -644,8 +644,8 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
-      - name: Run Flutter tests with coverage
-        run: flutter test --coverage
+      - name: Run Dart tests with coverage
+        run: dart test --coverage
       - run: flutter test integration_test
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
