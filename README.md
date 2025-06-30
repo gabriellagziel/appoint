@@ -83,6 +83,27 @@ Update your firewall/proxy settings on the runner machines to permit connections
 
 Without these, `flutter pub get`, `dart run build_runner`, and `flutter test` will fail.
 
+### Mirrors or Proxy Setup
+If access to `storage.googleapis.com` is blocked, point Flutter and pub at a mirror or use your corporate proxy so dependency downloads work:
+
+```bash
+export PUB_HOSTED_URL="https://pub.flutter-io.cn"
+export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
+# or set your proxy
+export HTTP_PROXY="http://proxy.mycorp.com:8080"
+export HTTPS_PROXY="http://proxy.mycorp.com:8080"
+```
+
+In GitHub Actions workflows you can inject these variables at the job level:
+
+```yaml
+env:
+  PUB_HOSTED_URL: https://pub.flutter-io.cn
+  FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
+  HTTP_PROXY: http://proxy.mycorp.com:8080
+  HTTPS_PROXY: http://proxy.mycorp.com:8080
+```
+
 
 ## Environment Setup & Testing
 
