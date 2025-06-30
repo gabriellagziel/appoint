@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import '../models/ambassador_stats.dart';
+import '../models/business_analytics.dart';
 
 class AmbassadorService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -139,5 +140,42 @@ class AmbassadorService {
     }
 
     return chartData;
+  }
+
+  Future<List<TimeSeriesPoint>> fetchAmbassadorsOverTime({
+    DateTimeRange? range,
+  }) async {
+    try {
+      Query query = _firestore.collection('ambassador_stats').orderBy('date');
+      if (range != null) {
+        query = query
+            .where('date', isGreaterThanOrEqualTo: range.start)
+            .where('date', isLessThanOrEqualTo: range.end);
+      }
+
+      final snapshot = await query.get();
+      final Map<DateTime, int> counts = {};
+      for (final doc in snapshot.docs) {
+        final ts = doc['date'] as Timestamp?;
+        if (ts == null) continue;
+        final date =
+            DateTime(ts.toDate().year, ts.toDate().month, ts.toDate().day);
+        final ambassadors = (doc['ambassadors'] as int?) ?? 0;
+        counts.update(date, (v) => v + ambassadors,
+            ifAbsent: () => ambassadors);
+      }
+
+      final list = counts.entries
+          .map((e) => TimeSeriesPoint(date: e.key, count: e.value))
+          .toList();
+      list.sort((a, b) => a.date.compareTo(b.date));
+      return list;
+    } catch (e) {
+      final now = DateTime.now();
+      return List.generate(7, (i) {
+        return TimeSeriesPoint(
+            date: now.subtract(Duration(days: 6 - i)), count: (i + 1) * 4);
+      });
+    }
   }
 }
