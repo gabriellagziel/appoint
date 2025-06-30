@@ -5,17 +5,29 @@ import 'package:flutter_web_auth_2/flutter_web_auth_2.dart';
 import 'package:googleapis/calendar/v3.dart';
 import 'package:googleapis_auth/googleapis_auth.dart';
 import 'package:http/http.dart' as http;
+import 'package:encrypt/encrypt.dart' as encrypt;
 
 import '../config/google_config.dart';
 
 class GoogleCalendarService {
   static const _credentialKey = 'google_calendar_credentials';
+  static const _encryptionKeyKey = 'google_calendar_encryption_key';
 
   final FlutterSecureStorage _storage;
   AutoRefreshingAuthClient? _client;
 
   GoogleCalendarService({FlutterSecureStorage? storage})
       : _storage = storage ?? const FlutterSecureStorage();
+
+  Future<encrypt.Key> _getEncryptionKey() async {
+    final existing = await _storage.read(key: _encryptionKeyKey);
+    if (existing != null) {
+      return encrypt.Key.fromBase64(existing);
+    }
+    final key = encrypt.Key.fromSecureRandom(32);
+    await _storage.write(key: _encryptionKeyKey, value: key.base64);
+    return key;
+  }
 
   Future<void> signInWithGoogleCalendar() async {
     // If credentials already stored, just load them.
@@ -120,10 +132,14 @@ class GoogleCalendarService {
   }
 
   Future<AccessCredentials?> _loadCredentials() async {
-    final jsonStr = await _storage.read(key: _credentialKey);
-    if (jsonStr == null) return null;
+    final encrypted = await _storage.read(key: _credentialKey);
+    if (encrypted == null) return null;
     try {
-      final data = jsonDecode(jsonStr) as Map<String, dynamic>;
+      final key = await _getEncryptionKey();
+      final iv = encrypt.IV.fromLength(16);
+      final encrypter = encrypt.Encrypter(encrypt.AES(key));
+      final decrypted = encrypter.decrypt64(encrypted, iv: iv);
+      final data = jsonDecode(decrypted) as Map<String, dynamic>;
       return AccessCredentials.fromJson(data);
     } catch (_) {
       return null;
@@ -131,9 +147,11 @@ class GoogleCalendarService {
   }
 
   Future<void> _saveCredentials(AccessCredentials credentials) async {
-    await _storage.write(
-      key: _credentialKey,
-      value: jsonEncode(credentials.toJson()),
-    );
+    final key = await _getEncryptionKey();
+    final iv = encrypt.IV.fromLength(16);
+    final encrypter = encrypt.Encrypter(encrypt.AES(key));
+    final jsonData = jsonEncode(credentials.toJson());
+    final encrypted = encrypter.encrypt(jsonData, iv: iv);
+    await _storage.write(key: _credentialKey, value: encrypted.base64);
   }
 }
