@@ -1,278 +1,300 @@
-# Appoint
+# APP-OINT
 
-Appointment scheduling app built with Flutter with advanced features including Ambassador program, real-time analytics, and responsive design.
+A comprehensive appointment booking and management application built with Flutter, featuring real-time chat, business management, and multi-platform support.
 
-## Features
+## 🚀 Features
 
-### Core Functionality
-- Appointment scheduling and management
-- Real-time notifications
-- Multi-language support
-- Family account management
-- Business dashboard with analytics
+### Core Features
+- **Appointment Booking**: Easy-to-use booking system with real-time availability
+- **Business Management**: Complete studio and business management tools
+- **Real-time Chat**: Integrated chat system for customer support
+- **Multi-platform**: iOS, Android, and Web support
+- **Admin Panel**: Comprehensive admin dashboard with analytics
+- **Ambassador Program**: Referral and ambassador management system
 
-### Ambassador Program
-- **Ambassador Onboarding**: Complete registration flow with form validation and Firestore integration
-- **Ambassador Dashboard**: Real-time analytics with interactive charts using `fl_chart`
-- **Referral Tracking**: Monitor referrals and earnings with live data
-- **Share Integration**: WhatsApp sharing and link copying functionality
+### Technical Features
+- **State Management**: Riverpod for reactive state management
+- **Authentication**: Firebase Auth with multiple providers
+- **Database**: Cloud Firestore for real-time data
+- **Payments**: Stripe integration for secure payments
+- **Notifications**: Push notifications with Firebase Cloud Messaging
+- **Analytics**: Firebase Analytics and custom performance monitoring
+- **Localization**: Support for 100+ languages
+- **Deep Linking**: Comprehensive deep linking support
 
-### Technical Highlights
-- **Responsive Design**: Filter rows wrap or become horizontally scrollable on small screens
-- **Real-time Data**: Live Firestore integration with fallback to mock data
-- **Interactive Charts**: Beautiful bar charts for ambassador statistics
-- **State Management**: Riverpod providers for efficient data flow
-- **Form Validation**: Comprehensive validation with user-friendly error messages
+## 📱 Screenshots
 
-## Setup
+*Screenshots will be added here*
 
-1. **Flutter version**  
-   Ensure you have Flutter 3.3+ installed.
+## 🛠️ Tech Stack
 
-2. **Dependencies & Codegen**  
-   
+### Frontend
+- **Framework**: Flutter 3.32.0+
+- **Language**: Dart 3.4.0+
+- **State Management**: Riverpod 2.6.1
+- **Navigation**: Go Router 13.2.0
+- **UI Components**: Material Design 3
+
+### Backend
+- **Database**: Firebase Firestore
+- **Authentication**: Firebase Auth
+- **Storage**: Firebase Storage
+- **Functions**: Firebase Cloud Functions
+- **Analytics**: Firebase Analytics
+- **Messaging**: Firebase Cloud Messaging
+
+### Third-party Services
+- **Payments**: Stripe
+- **Maps**: Google Maps
+- **Ads**: Google Mobile Ads
+- **Charts**: FL Chart, Syncfusion Charts
+
+## 📋 Prerequisites
+
+- Flutter 3.32.0 or higher
+- Dart 3.4.0 or higher
+- Android Studio / Xcode (for mobile development)
+- Firebase project setup
+- Stripe account (for payments)
+
+## 🚀 Quick Start
+
+### 1. Clone the Repository
 ```bash
-   flutter pub get
-   ./tool/codegen.sh    # runs flutter gen-l10n and build_runner
-
+git clone https://github.com/your-username/APP-OINT.git
+cd APP-OINT
 ```
 
-3. **iOS Setup** (if building for iOS)
-   
+### 2. Setup Dependencies
 ```bash
-   cd ios
-   pod install
-   ```
-   
-   **Note**: Enable "Enable Modules (C and Objective-C)" in Xcode Build Settings to resolve `@import` errors.
+# Run the setup script
+./scripts/setup_dependencies.sh
 
-4. **Run & Test**
-
-
-```bash
-   flutter pub get
-   flutter analyze
-   flutter test --coverage
-   dart test --coverage
-   flutter run                 # Android or desktop
-   flutter run -d chrome       # Web
-   dart run                    # CLI
-```
-
-## CI Network Access Requirements
-
-The CI environment must allow outbound HTTPS to:
-- `storage.googleapis.com`
-- `firebase-public.firebaseio.com`
-- `metadata.google.internal`
-- `169.254.169.254`
-- `raw.githubusercontent.com`
-- `pub.dev`
-
-### GitHub Actions (Enterprise)
-Go to **Settings → Actions → General**, and under "Network access," add those domains to the allowlist. Alternatively run:
-
-```bash
-scripts/update_network_allowlist.sh <enterprise> <token>
-```
-
-Where `<token>` has `admin:enterprise` scope.
-
-### Self-Hosted Runners
-Update your firewall/proxy settings on the runner machines to permit connections to the above hosts.
-
-Without these, `flutter pub get`, `dart run build_runner`, and `flutter test` will fail.
-
-### Mirrors or Proxy Setup
-If access to `storage.googleapis.com` is blocked, point Flutter and pub at a mirror or use your corporate proxy so dependency downloads work:
-
-```bash
-export PUB_HOSTED_URL="https://pub.flutter-io.cn"
-export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
-# or set your proxy
-export HTTP_PROXY="http://proxy.mycorp.com:8080"
-export HTTPS_PROXY="http://proxy.mycorp.com:8080"
-```
-
-In GitHub Actions workflows you can inject these variables at the job level:
-
-```yaml
-env:
-  PUB_HOSTED_URL: https://pub.flutter-io.cn
-  FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
-  HTTP_PROXY: http://proxy.mycorp.com:8080
-  HTTPS_PROXY: http://proxy.mycorp.com:8080
-```
-
-
-## Environment Setup & Testing
-
-1. **Chrome/Chromium Installation**  
-   - macOS:  
-     ```bash
-     brew install --cask google-chrome
-     ```  
-   - Linux:  
-     ```bash
-     sudo snap install chromium
-     ```  
-   - Verify path:
-     ```bash
-     which google-chrome || which chromium-browser
-     ```
-   - Set `CHROME_EXECUTABLE` in your shell rc:
-     ```bash
-     echo 'export CHROME_EXECUTABLE="$(which google-chrome || which chromium-browser || which chromium)"' >> ~/.zshrc
-     source ~/.zshrc
-     ```
-   - Enable Flutter web and fallback to Chromium:
-     ```bash
-     flutter config --enable-web
-     export CHROME_EXECUTABLE="$(which google-chrome || which chromium-browser)"
-     ```
-
-2. **Firebase CLI Installation**  
-   - Homebrew:  
-     ```bash
-     brew tap firebase/tools
-     brew install firebase-cli
-     ```  
-   - Or npm:  
-     ```bash
-     npm install -g firebase-tools
-     ```  
-   - Verify:  
-     ```bash
-     firebase --version
-     ```
-
-3. **Network Endpoint Allowances**  
-   Ensure your proxy/firewall allows outgoing requests to:
-
-```
-storage.googleapis.com
-firebase.tools
-accounts.google.com
-firebase.googleapis.com
-firebaseinstallations.googleapis.com
-metadata.google.internal
-169.254.169.254
-firebase-public.firebaseio.com
-raw.githubusercontent.com
-```
-
-If these domains are blocked, configure pub mirrors:
-```bash
-export PUB_HOSTED_URL="https://pub.flutter-io.cn"
-export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
-```
-
-4. **Common Testing & Emulators Commands**  
-```bash
-# Final clean, build & test workflow
-cd ~/Documents/APP-OINT
-flutter clean
+# Or manually
 flutter pub get
-
-# Web server
-flutter run -d web-server --web-port=8080 --release --no-dds
-
-# Chrome
-flutter run -d chrome --web-port=8080
-
-# Analyze
-flutter analyze
-
-# Tests
-flutter test --coverage=coverage
-dart test --coverage
-
-# Firebase emulators
-# (Download emulator JAR manually if 403, place under ~/.config/firebase/emulators/)
-export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
-firebase emulators:start --only auth,firestore,storage
+dart run build_runner build --delete-conflicting-outputs
+flutter gen-l10n
 ```
 
+### 3. Configure Firebase
+1. Create a Firebase project
+2. Download configuration files:
+   - `google-services.json` for Android
+   - `GoogleService-Info.plist` for iOS
+   - Web configuration for web platform
+3. Place files in appropriate directories
 
-## Ambassador Features
+### 4. Configure Environment Variables
+Create a `.env` file in the root directory:
+```env
+STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+STRIPE_SECRET_KEY=your_stripe_secret_key
+FIREBASE_PROJECT_ID=your_firebase_project_id
+```
 
-### Onboarding Flow
-The Ambassador onboarding screen (`lib/features/ambassador_onboarding_screen.dart`) provides:
-- Multi-step registration form with validation
-- Country and language selection dropdowns
-- Bio and personal information collection
-- Real-time Firestore integration
-- Success screen with shareable ambassador ID and link
+### 5. Run the Application
+```bash
+# For development
+flutter run
 
-### Dashboard Analytics
-The Ambassador dashboard (`lib/features/ambassador_dashboard_screen.dart`) features:
-- **Interactive Charts**: Bar charts powered by `fl_chart` showing referral trends
-- **Real-time Data**: Live statistics from Firestore with mock data fallback
-- **Filtering**: Country and language filters that update both table and chart
-- **Responsive Layout**: Adaptive design that works on all screen sizes
+# For specific platforms
+flutter run -d chrome  # Web
+flutter run -d android # Android
+flutter run -d ios     # iOS
+```
 
-### Data Integration
-- **AmbassadorService**: Handles Firestore operations and data fetching
-- **AmbassadorDataNotifier**: Riverpod provider managing state and filtering
-- **AmbassadorStats Model**: Structured data model with Freezed code generation
+## 🏗️ Project Structure
 
-## UI/UX Improvements
+```
+APP-OINT/
+├── lib/
+│   ├── features/           # Feature modules
+│   │   ├── admin/         # Admin panel
+│   │   ├── auth/          # Authentication
+│   │   ├── booking/       # Booking system
+│   │   ├── business/      # Business management
+│   │   └── studio/        # Studio features
+│   ├── core/              # Core functionality
+│   ├── shared/            # Shared components
+│   ├── services/          # Business logic services
+│   └── providers/         # State management
+├── test/                  # Test files
+├── integration_test/      # Integration tests
+├── docs/                  # Documentation
+├── scripts/               # Build and utility scripts
+└── config/                # Configuration files
+```
 
-### Responsive Design
-- Filter rows automatically wrap on small screens
-- Horizontal scrolling for filter components when needed
-- LayoutBuilder implementation for adaptive layouts
-- No more RenderFlex overflow errors
+## 🧪 Testing
 
-### Chart Integration
-- `fl_chart` dependency added for beautiful, interactive charts
-- Bar charts showing referral statistics over time
-- Responsive chart sizing and touch interactions
-- Color-coded data visualization
+### Run Tests
+```bash
+# Unit and widget tests
+flutter test
 
-## Contribution Guidelines
+# Integration tests
+flutter test integration_test/
 
-1. Run `flutter pub get` before development.
-2. Execute `flutter analyze` and `flutter test` before submitting a PR.
-3. Follow the existing code structure and patterns.
-4. Ensure responsive design works on all screen sizes.
+# Test with coverage
+flutter test --coverage
+```
 
-## CI
+### Test Structure
+- **Unit Tests**: `test/` directory
+- **Widget Tests**: `test/` directory
+- **Integration Tests**: `integration_test/` directory
+- **Performance Tests**: `integration_test/` directory
 
-Our GitHub Actions pipeline (`.github/workflows/flutter.yml`) runs on every push/PR to `main`:
+## 🔧 Configuration
 
-* `flutter pub get`
-* `tool/codegen.sh`
-* `flutter analyze`
-* `flutter test --coverage`
-* Uploads coverage to Codecov
-<!-- Docker setup for CI is defined in `.devcontainer/devcontainer.json` -->
+### Environment Setup
+The app supports multiple environments:
+- **Development**: `flutter run --flavor dev`
+- **Staging**: `flutter run --flavor staging`
+- **Production**: `flutter run --flavor prod`
 
+### Platform-specific Configuration
+- **Android**: `android/app/build.gradle.kts`
+- **iOS**: `ios/Runner/Info.plist`
+- **Web**: `web/index.html`
 
-## Recent Updates
+## 🌐 Localization
 
-### Ambassador Feature Finalization
-- ✅ Complete ambassador registration flow with backend integration
-- ✅ Real-time dashboard with interactive charts
-- ✅ Responsive UI/UX improvements
-- ✅ Comprehensive unit tests
-- ✅ Route integration and navigation
-- ⚠️ iOS setup requires manual configuration (bundle ID, GoogleService-Info.plist)
+The app supports 100+ languages. To add a new language:
 
-**Note**: Localization and language files were excluded from this update round as requested.
+1. Create a new ARB file in `lib/l10n/`
+2. Add the language to `lib/constants/languages.dart`
+3. Run `flutter gen-l10n`
 
-## Development Setup
+## 🔒 Security
 
-- **Flutter/Dart Versions**: Flutter 3.32.0 with Dart 3.4.0 is required.
-- **Initial Script**: Run `./setup.sh` once after cloning to install dependencies.
-- **Dev Container**: Place the pre-downloaded Flutter and Dart SDK archives under
-  `.devcontainer/sdk_archives` before building the container so it can install
-  them without network access.
-- **CI Network Allowlist**: Ensure your CI runners can access `storage.googleapis.com`, `firebase-public.firebaseio.com`, `metadata.google.internal`, `169.254.169.254`, `raw.githubusercontent.com`, and `pub.dev`.
-- **Code Generation**: Use `./tool/codegen.sh` to regenerate localizations and run build_runner whenever models or translations change.
-- **Running Tests**:
-  ```bash
-  firebase emulators:start --only auth,firestore
-  dart test --coverage
-  flutter test --coverage
-  ```
+### Security Features
+- Firebase App Check for API protection
+- Secure storage for sensitive data
+- Input validation and sanitization
+- HTTPS enforcement
+- Certificate pinning
+
+### Security Audit
+Run the security audit script:
+```bash
+./scripts/security_audit.sh
+```
+
+## 📊 Performance
+
+### Performance Monitoring
+The app includes comprehensive performance monitoring:
+- Custom performance traces
+- Memory usage tracking
+- Network request monitoring
+- Error rate tracking
+
+### Performance Optimization
+- Lazy loading of images and data
+- Efficient state management
+- Optimized build configurations
+- Code splitting for web
+
+## 🚀 Deployment
+
+### Web Deployment
+```bash
+# Build for production
+flutter build web --release
+
+# Deploy to Firebase Hosting
+firebase deploy --only hosting
+```
+
+### Mobile Deployment
+```bash
+# Android
+flutter build appbundle --release
+
+# iOS
+flutter build ios --release
+```
+
+### CI/CD Pipeline
+The project includes GitHub Actions workflows for:
+- Automated testing
+- Code quality checks
+- Security scanning
+- Automated deployment
+
+## 📚 Documentation
+
+### Architecture
+- [Architecture Overview](docs/architecture.md)
+- [Feature Documentation](docs/features/)
+- [API Documentation](docs/api.md)
+
+### Development
+- [Development Setup](docs/development.md)
+- [Testing Guide](docs/testing.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
+
+### Deployment
+- [CI/CD Setup](docs/ci_setup.md)
+- [Deployment Guide](docs/deployment.md)
+- [Monitoring Guide](docs/monitoring.md)
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+### Development Workflow
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests
+5. Submit a pull request
+
+### Code Style
+- Follow Dart/Flutter conventions
+- Use meaningful variable names
+- Add comments for complex logic
+- Write comprehensive tests
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+### Getting Help
+- [Documentation](docs/)
+- [Issues](https://github.com/your-username/APP-OINT/issues)
+- [Discussions](https://github.com/your-username/APP-OINT/discussions)
+
+### Reporting Bugs
+Please use the [issue template](.github/ISSUE_TEMPLATE/bug_report.md) when reporting bugs.
+
+### Feature Requests
+Please use the [feature request template](.github/ISSUE_TEMPLATE/feature_request.md) for new features.
+
+## 🙏 Acknowledgments
+
+- Flutter team for the amazing framework
+- Firebase team for the backend services
+- All contributors and community members
+
+## 📈 Roadmap
+
+### Upcoming Features
+- [ ] Advanced analytics dashboard
+- [ ] Multi-location support
+- [ ] Automated reporting
+- [ ] AI-powered recommendations
+- [ ] Video calling integration
+
+### Performance Improvements
+- [ ] Offline support
+- [ ] Advanced caching
+- [ ] Performance optimizations
+- [ ] Accessibility improvements
+
+---
+
+**Made with ❤️ by the APP-OINT team**

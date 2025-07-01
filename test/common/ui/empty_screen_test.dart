@@ -8,7 +8,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('EmptyScreen', () {
-    testWidgets('shows subtitle and action button', (tester) async {
+    testWidgets('shows subtitle and action button', (final tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: EmptyScreen(

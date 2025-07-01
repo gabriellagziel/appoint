@@ -22,7 +22,7 @@ void main() async {
     }
   }
 
-  final missing = keys.where((k) => !arbMap.containsKey(k) && k != 'localeName');
+  final missing = keys.where((final k) => !arbMap.containsKey(k) && k != 'localeName');
   if (missing.isNotEmpty) {
     stderr.writeln('Missing localization keys:');
     for (final k in missing) {

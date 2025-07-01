@@ -8,7 +8,7 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
 
-  testWidgets('App smoke test', (WidgetTester tester) async {
+  testWidgets('App smoke test', (final WidgetTester tester) async {
     await tester.pumpWidget(
       const MaterialApp(
         home: Text('Business Dashboard'),
