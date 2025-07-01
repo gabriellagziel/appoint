@@ -5,12 +5,22 @@ import 'app_text_styles.dart';
 
 /// Application theme built with Material 3 color schemes.
 class AppTheme {
-  static ThemeData get lightTheme => _buildTheme(Brightness.light);
-  static ThemeData get darkTheme => _buildTheme(Brightness.dark);
+  static ThemeData lightTheme(Color seedColor) =>
+      _buildTheme(seedColor: seedColor, brightness: Brightness.light);
 
-  static ThemeData _buildTheme(Brightness brightness) {
+  static ThemeData darkTheme(Color seedColor) =>
+      _buildTheme(seedColor: seedColor, brightness: Brightness.dark);
+
+  static ThemeData fromSeed(Color seedColor,
+          {Brightness brightness = Brightness.light}) =>
+      _buildTheme(seedColor: seedColor, brightness: brightness);
+
+  static ThemeData _buildTheme({
+    required Color seedColor,
+    required Brightness brightness,
+  }) {
     final colorScheme = ColorScheme.fromSeed(
-      seedColor: AppColors.seed,
+      seedColor: seedColor,
       brightness: brightness,
     );
 

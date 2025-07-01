@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/ambassador_stats.dart';
+import '../models/business_analytics.dart';
 import '../services/ambassador_service.dart';
 
 final ambassadorServiceProvider =
@@ -82,6 +83,11 @@ final ambassadorChartDataProvider =
     loading: () => const AsyncValue.loading(),
     error: (error, stackTrace) => AsyncValue.error(error, stackTrace),
   );
+});
+
+final ambassadorsOverTimeProvider =
+    FutureProvider<List<TimeSeriesPoint>>((ref) {
+  return ref.read(ambassadorServiceProvider).fetchAmbassadorsOverTime();
 });
 
 // Filter state providers

@@ -5,17 +5,46 @@ import 'package:flutter_web_auth_2/flutter_web_auth_2.dart';
 import 'package:googleapis/calendar/v3.dart';
 import 'package:googleapis_auth/googleapis_auth.dart';
 import 'package:http/http.dart' as http;
+import 'package:encrypt/encrypt.dart' as encrypt;
 
 import '../config/google_config.dart';
 
 class GoogleCalendarService {
   static const _credentialKey = 'google_calendar_credentials';
+  static const _encryptionKeyKey = 'google_calendar_encryption_key';
 
   final FlutterSecureStorage _storage;
   AutoRefreshingAuthClient? _client;
 
   GoogleCalendarService({FlutterSecureStorage? storage})
       : _storage = storage ?? const FlutterSecureStorage();
+
+  Future<encrypt.Key> _getEncryptionKey() async {
+    final existing = await _storage.read(key: _encryptionKeyKey);
+    if (existing != null) {
+      return encrypt.Key.fromBase64(existing);
+    }
+    final key = encrypt.Key.fromSecureRandom(32);
+    await _storage.write(key: _encryptionKeyKey, value: key.base64);
+    return key;
+  }
+
+  Future<String> _encryptData(String plainText) async {
+    final key = await _getEncryptionKey();
+    final iv = encrypt.IV.fromSecureRandom(16);
+    final encrypter = encrypt.Encrypter(encrypt.AES(key));
+    final encrypted = encrypter.encrypt(plainText, iv: iv);
+    return jsonEncode({'iv': iv.base64, 'data': encrypted.base64});
+  }
+
+  Future<String> _decryptData(String payload) async {
+    final key = await _getEncryptionKey();
+    final map = jsonDecode(payload) as Map<String, dynamic>;
+    final iv = encrypt.IV.fromBase64(map['iv'] as String);
+    final data = map['data'] as String;
+    final encrypter = encrypt.Encrypter(encrypt.AES(key));
+    return encrypter.decrypt64(data, iv: iv);
+  }
 
   Future<void> signInWithGoogleCalendar() async {
     // If credentials already stored, just load them.
@@ -120,10 +149,11 @@ class GoogleCalendarService {
   }
 
   Future<AccessCredentials?> _loadCredentials() async {
-    final jsonStr = await _storage.read(key: _credentialKey);
-    if (jsonStr == null) return null;
+    final encrypted = await _storage.read(key: _credentialKey);
+    if (encrypted == null) return null;
     try {
-      final data = jsonDecode(jsonStr) as Map<String, dynamic>;
+      final decrypted = await _decryptData(encrypted);
+      final data = jsonDecode(decrypted) as Map<String, dynamic>;
       return AccessCredentials.fromJson(data);
     } catch (_) {
       return null;
@@ -131,9 +161,15 @@ class GoogleCalendarService {
   }
 
   Future<void> _saveCredentials(AccessCredentials credentials) async {
-    await _storage.write(
-      key: _credentialKey,
-      value: jsonEncode(credentials.toJson()),
-    );
+    final jsonData = jsonEncode(credentials.toJson());
+    final encrypted = await _encryptData(jsonData);
+    await _storage.write(key: _credentialKey, value: encrypted);
+  }
+
+  Future<void> signOut() async {
+    await _storage.delete(key: _credentialKey);
+    await _storage.delete(key: _encryptionKeyKey);
+    _client?.close();
+    _client = null;
   }
 }
