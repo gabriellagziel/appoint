@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
 import '../providers/ambassador_data_provider.dart';
 import '../models/ambassador_stats.dart';
+import '../models/business_analytics.dart';
 import '../models/branch.dart';
 import '../services/branch_service.dart';
 import '../services/notification_service.dart';
@@ -80,6 +81,7 @@ class _AmbassadorDashboardScreenState
   @override
   Widget build(BuildContext context) {
     final ambassadorDataAsync = ref.watch(ambassadorDataProvider);
+    final ambassadorsOverTimeAsync = ref.watch(ambassadorsOverTimeProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -141,7 +143,16 @@ class _AmbassadorDashboardScreenState
                 children: [
                   _buildStatsCards(_getFilteredData(data)),
                   const SizedBox(height: 24),
+                  ambassadorsOverTimeAsync.when(
+                    data: _buildAmbassadorsOverTimeChart,
+                    loading: () =>
+                        const Center(child: CircularProgressIndicator()),
+                    error: (e, _) => Text('Error: $e'),
+                  ),
+                  const SizedBox(height: 24),
                   _buildChart(_getFilteredData(data)),
+                  const SizedBox(height: 24),
+                  _buildLanguagePieChart(_getFilteredData(data)),
                   const SizedBox(height: 24),
                   _buildDataTable(_getFilteredData(data)),
                 ],
@@ -554,6 +565,102 @@ class _AmbassadorDashboardScreenState
                           width: 20,
                         ),
                       ],
+                    );
+                  }).toList(),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildAmbassadorsOverTimeChart(List<TimeSeriesPoint> data) {
+    if (data.isEmpty) {
+      return const Card(
+        child: Padding(
+          padding: EdgeInsets.all(32.0),
+          child: Center(child: Text('No time series data available')),
+        ),
+      );
+    }
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Ambassadors Over Time',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 16),
+            SizedBox(
+              height: 200,
+              child: LineChart(
+                LineChartData(
+                  gridData: const FlGridData(show: true),
+                  titlesData: const FlTitlesData(show: true),
+                  borderData: FlBorderData(show: false),
+                  lineBarsData: [
+                    LineChartBarData(
+                      spots: data
+                          .map((e) => FlSpot(
+                              e.date.millisecondsSinceEpoch.toDouble(),
+                              e.count.toDouble()))
+                          .toList(),
+                      isCurved: true,
+                      color: Theme.of(context).primaryColor,
+                      barWidth: 3,
+                      dotData: const FlDotData(show: false),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildLanguagePieChart(AmbassadorData data) {
+    if (data.stats.isEmpty) {
+      return const SizedBox.shrink();
+    }
+
+    final counts = <String, int>{};
+    for (final stat in data.stats) {
+      counts.update(stat.language, (v) => v + stat.ambassadors,
+          ifAbsent: () => stat.ambassadors);
+    }
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Ambassadors by Language',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 16),
+            SizedBox(
+              height: 200,
+              child: PieChart(
+                PieChartData(
+                  centerSpaceRadius: 40,
+                  sections:
+                      counts.entries.toList().asMap().entries.map((entry) {
+                    final index = entry.key;
+                    final item = entry.value;
+                    return PieChartSectionData(
+                      value: item.value.toDouble(),
+                      title: item.key,
+                      color: Colors.primaries[index % Colors.primaries.length],
                     );
                   }).toList(),
                 ),

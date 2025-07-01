@@ -1,22 +1,14 @@
 import 'package:flutter/material.dart';
 
-/// Color tokens used throughout the app with light and dark variants.
+/// Centralized color constants for the application theme.
 class AppColors {
   AppColors._();
 
-  static const Color seed = Color(0xFF6750A4);
+  static const Color primary = Color(0xFF0066FF);
+  static const Color secondary = Color(0xFFFF6600);
+  static const Color background = Color(0xFFF5F5F5);
+  static const Color error = Color(0xFFD32F2F);
 
-  // Light scheme colors
-  static const Color primaryLight = Color(0xFF6750A4);
-  static const Color secondaryLight = Color(0xFF625B71);
-  static const Color backgroundLight = Color(0xFFF8F7FA);
-  static const Color surfaceLight = Colors.white;
-  static const Color errorLight = Color(0xFFB3261E);
-
-  // Dark scheme colors
-  static const Color primaryDark = Color(0xFFD0BCFF);
-  static const Color secondaryDark = Color(0xFFCCC2DC);
-  static const Color backgroundDark = Color(0xFF1C1B1F);
-  static const Color surfaceDark = Color(0xFF1C1B1F);
-  static const Color errorDark = Color(0xFFF2B8B5);
+  /// Default seed color used when no custom palette is selected.
+  static const Color defaultSeed = Color(0xFF0066FF);
 }

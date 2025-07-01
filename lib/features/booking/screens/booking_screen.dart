@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
+import '../../../widgets/bottom_sheet_manager.dart';
+import '../../../widgets/booking_confirmation_sheet.dart';
 import '../../../models/booking.dart';
 import '../services/booking_service.dart';
-import '../../../providers/auth_provider.dart';
+import '../booking_helper.dart';
+import '../../../utils/snackbar_extensions.dart';
 import '../../selection/providers/selection_provider.dart';
+import '../../../widgets/animations/tap_scale_feedback.dart';
+import '../../../widgets/animations/fade_slide_in.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
   const BookingScreen({super.key});
@@ -18,52 +24,46 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
   Future<void> _submitBooking() async {
     setState(() => _isSubmitting = true);
 
-    try {
-      final user = ref.read(authProvider).currentUser;
-      final userId = user?.uid ?? '';
-      if (userId.isEmpty) throw Exception('User not logged in');
+    BookingHelper(ref)
+        .submitBooking()
+        .then((_) {
+          if (!mounted) return;
+          context.showSnackBar('Booking confirmed');
+          Navigator.pop(context);
+        })
+        .catchError((e, st) {
+          debugPrint('Error during booking: $e\n$st');
+          if (!mounted) return;
+          context.showSnackBar('Failed to confirm booking',
+              backgroundColor: Colors.red);
+        })
+        .whenComplete(() {
+          if (mounted) setState(() => _isSubmitting = false);
+        });
+  }
 
-      final staffId = ref.read(staffSelectionProvider);
-      final serviceId = ref.read(serviceSelectionProvider);
-      final serviceName = ref.read(serviceNameProvider);
-      final dateTime = ref.read(selectedSlotProvider);
-      final duration = ref.read(serviceDurationProvider);
+  void _showConfirmationSheet() {
+    final staffId = ref.read(staffSelectionProvider);
+    final serviceName = ref.read(serviceNameProvider) ?? 'Service';
+    final dateTime = ref.read(selectedSlotProvider);
+    final duration = ref.read(serviceDurationProvider);
+    if (staffId == null || dateTime == null || duration == null) return;
 
-      if (staffId == null ||
-          serviceId == null ||
-          dateTime == null ||
-          duration == null) {
-        throw Exception('Missing required booking information');
-      }
+    final summary = 'You are about to book $serviceName with $staffId on ' +
+        DateFormat.yMMMEd().add_jm().format(dateTime) +
+        ' for ${duration.inMinutes} minutes.';
 
-      final booking = Booking(
-        id: '', // Will be set by Firestore
-        userId: userId,
-        staffId: staffId,
-        serviceId: serviceId,
-        serviceName: serviceName ?? 'Unknown Service',
-        dateTime: dateTime,
-        duration: duration,
-        notes: null,
-        createdAt: DateTime.now(),
-      );
-
-      await ref.read(bookingServiceProvider).submitBooking(booking);
-
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Booking confirmed')),
-      );
-      Navigator.pop(context);
-    } catch (e, st) {
-      debugPrint('Error during booking: $e\n$st');
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Failed to confirm booking')),
-      );
-    } finally {
-      if (mounted) setState(() => _isSubmitting = false);
-    }
+    BottomSheetManager.show(
+      context: context,
+      child: BookingConfirmationSheet(
+        summaryText: summary,
+        onCancel: () => Navigator.of(context).pop(),
+        onConfirm: () {
+          Navigator.of(context).pop();
+          _submitBooking();
+        },
+      ),
+    );
   }
 
   @override
@@ -80,11 +80,13 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Chat Booking Button
-            ElevatedButton.icon(
-              onPressed: () => Navigator.pushNamed(context, '/chat-booking'),
-              icon: const Icon(Icons.chat_bubble_outline),
-              label: const Text('Book via Chat'),
+            // Chat Booking Button with tap feedback
+            TapScaleFeedback(
+              child: ElevatedButton.icon(
+                onPressed: () => Navigator.pushNamed(context, '/chat-booking'),
+                icon: const Icon(Icons.chat_bubble_outline),
+                label: const Text('Book via Chat'),
+              ),
             ),
             const SizedBox(height: 16),
             Card(
@@ -106,16 +108,18 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
               ),
             ),
             const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: (staffId != null &&
-                      serviceId != null &&
-                      dateTime != null &&
-                      duration != null)
-                  ? (_isSubmitting ? null : _submitBooking)
-                  : null,
-              child: _isSubmitting
-                  ? const CircularProgressIndicator()
-                  : const Text('Submit Booking'),
+            TapScaleFeedback(
+              child: ElevatedButton(
+                onPressed: (staffId != null &&
+                        serviceId != null &&
+                        dateTime != null &&
+                        duration != null)
+                    ? (_isSubmitting ? null : _showConfirmationSheet)
+                    : null,
+                child: _isSubmitting
+                    ? const CircularProgressIndicator()
+                    : const Text('Submit Booking'),
+              ),
             ),
             const SizedBox(height: 24),
             const Expanded(
@@ -158,16 +162,19 @@ class BookingListView extends ConsumerWidget {
           itemCount: bookingsList.length,
           itemBuilder: (context, index) {
             final booking = bookingsList[index];
-            return Card(
-              margin: const EdgeInsets.symmetric(vertical: 8),
-              child: ListTile(
-                title: Text('\uD83D\uDCC5 ${booking.dateTime.toLocal()}'),
-                subtitle: Text(booking.notes ?? ''),
-                trailing: IconButton(
-                  icon: const Icon(Icons.delete),
-                  onPressed: () => ref
-                      .read(bookingServiceProvider)
-                      .cancelBooking(booking.id),
+            return FadeSlideIn(
+              delay: Duration(milliseconds: 50 * index),
+              child: Card(
+                margin: const EdgeInsets.symmetric(vertical: 8),
+                child: ListTile(
+                  title: Text('\uD83D\uDCC5 ${booking.dateTime.toLocal()}'),
+                  subtitle: Text(booking.notes ?? ''),
+                  trailing: IconButton(
+                    icon: const Icon(Icons.delete),
+                    onPressed: () => ref
+                        .read(bookingServiceProvider)
+                        .cancelBooking(booking.id),
+                  ),
                 ),
               ),
             );
