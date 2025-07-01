@@ -5,11 +5,10 @@ import 'package:integration_test/integration_test.dart';
 import 'package:appoint/main.dart' as app;
 
 void main() {
-  final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized()
-      as IntegrationTestWidgetsFlutterBinding;
+  final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   group('Load & Stress Tests', () {
-    testWidgets('booking chat load test', (tester) async {
+    testWidgets('booking chat load test', (final tester) async {
       await binding.watchPerformance(() async {
         await app.appMain();
         await tester.pumpAndSettle();
@@ -50,7 +49,7 @@ void main() {
       expect(report['90th_percentile_frame_build_time_millis'] < 16.0, isTrue);
     });
 
-    testWidgets('dashboard stress navigation', (tester) async {
+    testWidgets('dashboard stress navigation', (final tester) async {
       await binding.watchPerformance(() async {
         await app.appMain();
         await tester.pumpAndSettle();

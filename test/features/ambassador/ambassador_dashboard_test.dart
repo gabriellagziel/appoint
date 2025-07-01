@@ -43,7 +43,7 @@ Future<void> main() async {
 
       // Test filtering logic
       final filteredStats =
-          data.stats.where((s) => s.country == 'United States').toList();
+          data.stats.where((final s) => s.country == 'United States').toList();
       expect(filteredStats.length, equals(1));
       expect(filteredStats.first.country, equals('United States'));
     });
@@ -83,7 +83,7 @@ Future<void> main() async {
       );
 
       final filteredStats =
-          data.stats.where((s) => s.language == 'English').toList();
+          data.stats.where((final s) => s.language == 'English').toList();
       expect(filteredStats.length, equals(1));
       expect(filteredStats.first.language, equals('English'));
     });
@@ -109,7 +109,7 @@ Future<void> main() async {
       ];
 
       final totalAmbassadors =
-          stats.fold<int>(0, (sum, stat) => sum + stat.ambassadors);
+          stats.fold<int>(0, (final sum, final stat) => sum + stat.ambassadors);
       expect(totalAmbassadors, equals(15));
     });
 
@@ -134,7 +134,7 @@ Future<void> main() async {
       ];
 
       final totalReferrals =
-          stats.fold<int>(0, (sum, stat) => sum + stat.referrals);
+          stats.fold<int>(0, (final sum, final stat) => sum + stat.referrals);
       expect(totalReferrals, equals(40));
     });
 
@@ -159,7 +159,7 @@ Future<void> main() async {
       ];
 
       final averageScore =
-          stats.fold<double>(0, (sum, stat) => sum + stat.surveyScore) /
+          stats.fold<double>(0, (final sum, final stat) => sum + stat.surveyScore) /
               stats.length;
       expect(averageScore, equals(4.35));
     });
@@ -184,7 +184,7 @@ Future<void> main() async {
       ];
 
       final maxValue =
-          chartData.map((e) => e.value).reduce((a, b) => a > b ? a : b);
+          chartData.map((final e) => e.value).reduce((final a, final b) => a > b ? a : b);
       expect(maxValue, equals(30.0));
     });
   });

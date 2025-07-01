@@ -8,7 +8,7 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
   group('BusinessProfileScreen', () {
-    testWidgets('renders correctly', (WidgetTester tester) async {
+    testWidgets('renders correctly', (final WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(
@@ -30,7 +30,7 @@ Future<void> main() async {
     });
 
     testWidgets('shows loading indicator when profile is null',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(

@@ -43,7 +43,7 @@ group('Admin Panel Integration Tests', () {
     });
 
     testWidgets('Admin Dashboard loads with stats',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       // Mock admin dashboard stats
       final mockStats = AdminDashboardStats(
         totalUsers: 1000,
@@ -73,8 +73,8 @@ group('Admin Panel Integration Tests', () {
       // Create a new container with the mock data
       final testContainer = ProviderContainer(
         overrides: [
-          adminDashboardStatsProvider.overrideWith((ref) => mockStats),
-          isAdminProvider.overrideWith((ref) => true),
+          adminDashboardStatsProvider.overrideWith((final ref) => mockStats),
+          isAdminProvider.overrideWith((final ref) => true),
         ],
       );
 
@@ -82,11 +82,11 @@ group('Admin Panel Integration Tests', () {
       await tester.pumpWidget(
         UncontrolledProviderScope(
           container: testContainer,
-          child: MaterialApp(
+          child: const MaterialApp(
             localizationsDelegates: AppLocalizations.localizationsDelegates,
             supportedLocales: AppLocalizations.supportedLocales,
-            locale: const Locale('en', ''),
-            home: const AdminDashboardScreen(),
+            locale: Locale('en', ''),
+            home: AdminDashboardScreen(),
           ),
         ),
       );
@@ -106,7 +106,7 @@ group('Admin Panel Integration Tests', () {
       testContainer.dispose();
     });
 
-    testWidgets('Admin Broadcast screen loads', (WidgetTester tester) async {
+    testWidgets('Admin Broadcast screen loads', (final WidgetTester tester) async {
       // Mock broadcast messages
       final mockMessages = [
         AdminBroadcastMessage(
@@ -125,8 +125,8 @@ group('Admin Panel Integration Tests', () {
       // Create a new container with the mock data
       final testContainer = ProviderContainer(
         overrides: [
-          broadcastMessagesProvider.overrideWith((ref) => mockMessages),
-          isAdminProvider.overrideWith((ref) => true),
+          broadcastMessagesProvider.overrideWith((final ref) => mockMessages),
+          isAdminProvider.overrideWith((final ref) => true),
         ],
       );
 
@@ -134,11 +134,11 @@ group('Admin Panel Integration Tests', () {
       await tester.pumpWidget(
         UncontrolledProviderScope(
           container: testContainer,
-          child: MaterialApp(
+          child: const MaterialApp(
             localizationsDelegates: AppLocalizations.localizationsDelegates,
             supportedLocales: AppLocalizations.supportedLocales,
-            locale: const Locale('en', ''),
-            home: const AdminBroadcastScreen(),
+            locale: Locale('en', ''),
+            home: AdminBroadcastScreen(),
           ),
         ),
       );
@@ -154,7 +154,7 @@ group('Admin Panel Integration Tests', () {
       testContainer.dispose();
     });
 
-    testWidgets('Admin Monetization screen loads', (WidgetTester tester) async {
+    testWidgets('Admin Monetization screen loads', (final WidgetTester tester) async {
       // Mock monetization settings
       final mockSettings = MonetizationSettings(
         adsEnabledForFreeUsers: true,
@@ -171,17 +171,17 @@ group('Admin Panel Integration Tests', () {
       );
 
       when(mockAdminService.fetchMonetizationSettings())
-          .thenAnswer((_) async => mockSettings);
+          .thenAnswer((final _) async => mockSettings);
 
       // Build the monetization screen with proper localization
       await tester.pumpWidget(
         UncontrolledProviderScope(
           container: container,
-          child: MaterialApp(
+          child: const MaterialApp(
             localizationsDelegates: AppLocalizations.localizationsDelegates,
             supportedLocales: AppLocalizations.supportedLocales,
-            locale: const Locale('en', ''),
-            home: const AdminMonetizationScreen(),
+            locale: Locale('en', ''),
+            home: AdminMonetizationScreen(),
           ),
         ),
       );
@@ -221,7 +221,7 @@ group('Admin Panel Integration Tests', () {
       );
 
       when(mockAdminService.fetchAdminDashboardStats())
-          .thenAnswer((_) async => mockStats);
+          .thenAnswer((final _) async => mockStats);
 
       final result = await mockAdminService.fetchAdminDashboardStats();
       expect(result.totalUsers, equals(100));
@@ -259,7 +259,7 @@ group('Admin Panel Integration Tests', () {
       );
 
       when(mockAdminService.fetchAdminDashboardStats())
-          .thenAnswer((_) async => mockStats);
+          .thenAnswer((final _) async => mockStats);
 
       final stats = await container.read(adminDashboardStatsProvider.future);
       expect(stats.totalUsers, equals(100));

@@ -7,7 +7,7 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
   group('EditProfileScreen', () {
-    testWidgets('shows app bar and form fields', (tester) async {
+    testWidgets('shows app bar and form fields', (final tester) async {
       await tester.pumpWidget(const MaterialApp(home: EditProfileScreen()));
 
       expect(find.text('Edit Profile'), findsOneWidget);

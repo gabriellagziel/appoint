@@ -8,7 +8,7 @@ Future<void> main() async {
 
   group('UserProfile Model', () {
     test('should correctly create a user profile', () {
-      final user = UserProfile(
+      const user = UserProfile(
         id: '123',
         name: 'John Doe',
         email: 'john.doe@example.com',
@@ -22,7 +22,7 @@ Future<void> main() async {
     });
 
     test('should be able to convert to JSON and back', () {
-      final user = UserProfile(
+      const user = UserProfile(
         id: '123',
         name: 'John Doe',
         email: 'john.doe@example.com',
@@ -39,7 +39,7 @@ Future<void> main() async {
     });
 
     test('should handle empty photoUrl', () {
-      final user = UserProfile(
+      const user = UserProfile(
         id: '123',
         name: 'John Doe',
         email: 'john.doe@example.com',
@@ -50,7 +50,7 @@ Future<void> main() async {
     });
 
     test('should handle special characters in name', () {
-      final user = UserProfile(
+      const user = UserProfile(
         id: '123',
         name: 'José María García-López',
         email: 'jose@example.com',
@@ -61,7 +61,7 @@ Future<void> main() async {
     });
 
     test('should handle complex email addresses', () {
-      final user = UserProfile(
+      const user = UserProfile(
         id: '123',
         name: 'Test User',
         email: 'test.user+tag@example.co.uk',

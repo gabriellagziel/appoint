@@ -10,9 +10,9 @@ Future<void> main() async {
 
   group('LoginScreen', () {
     testWidgets('should display the title in app bar',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -23,9 +23,9 @@ Future<void> main() async {
     });
 
     testWidgets('should have email and password text fields',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -37,9 +37,9 @@ Future<void> main() async {
       expect(find.text('Password'), findsOneWidget);
     });
 
-    testWidgets('should have sign in button', (WidgetTester tester) async {
+    testWidgets('should have sign in button', (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -51,9 +51,9 @@ Future<void> main() async {
     });
 
     testWidgets('should allow entering email and password',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -77,9 +77,9 @@ Future<void> main() async {
       expect(find.text('password123'), findsOneWidget);
     });
 
-    testWidgets('should have proper form layout', (WidgetTester tester) async {
+    testWidgets('should have proper form layout', (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -93,9 +93,9 @@ Future<void> main() async {
     });
 
     testWidgets('should have proper spacing between elements',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -108,9 +108,9 @@ Future<void> main() async {
     });
 
     testWidgets('should handle empty form submission',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -127,9 +127,9 @@ Future<void> main() async {
     });
 
     testWidgets('should handle form with credentials',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -153,9 +153,9 @@ Future<void> main() async {
     });
 
     testWidgets('should have proper input decorations',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -175,9 +175,9 @@ Future<void> main() async {
     });
 
     testWidgets('should have password field with obscure text',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -193,9 +193,9 @@ Future<void> main() async {
     });
 
     testWidgets('should have email field without obscure text',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -211,9 +211,9 @@ Future<void> main() async {
     });
 
     testWidgets('should handle special characters in email',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),
@@ -229,9 +229,9 @@ Future<void> main() async {
       expect(find.text('test.user+tag@example.co.uk'), findsOneWidget);
     });
 
-    testWidgets('should handle long password', (WidgetTester tester) async {
+    testWidgets('should handle long password', (final WidgetTester tester) async {
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
             home: LoginScreen(),
           ),

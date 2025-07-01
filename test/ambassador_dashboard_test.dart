@@ -32,9 +32,9 @@ Future<void> main() async {
   });
 
   group('Ambassador Dashboard Tests', () {
-    testWidgets('should display loading state initially', (tester) async {
+    testWidgets('should display loading state initially', (final tester) async {
       when(() => mockService.fetchAmbassadorStats()).thenAnswer(
-        (_) async => Future.delayed(const Duration(seconds: 1)),
+        (final _) async => Future.delayed(const Duration(seconds: 1)),
       );
 
       await tester.pumpWidget(
@@ -50,7 +50,7 @@ Future<void> main() async {
     });
 
     testWidgets('should display data table with ambassador stats',
-        (tester) async {
+        (final tester) async {
       final mockStats = [
         AmbassadorStats(
           country: 'United States',
@@ -71,11 +71,11 @@ Future<void> main() async {
       ];
 
       when(() => mockService.fetchAmbassadorStats())
-          .thenAnswer((_) async => mockStats);
+          .thenAnswer((final _) async => mockStats);
       when(() => mockService.generateChartData(any())).thenReturn([
-        ChartDataPoint(
+        const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
-        ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
+        const ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
       ]);
 
       await tester.pumpWidget(
@@ -96,7 +96,7 @@ Future<void> main() async {
       expect(find.text('32').first, findsOneWidget);
     });
 
-    testWidgets('should filter data by country', (tester) async {
+    testWidgets('should filter data by country', (final tester) async {
       final allStats = [
         AmbassadorStats(
           country: 'United States',
@@ -128,13 +128,13 @@ Future<void> main() async {
       ];
 
       when(() => mockService.fetchAmbassadorStats())
-          .thenAnswer((_) async => allStats);
+          .thenAnswer((final _) async => allStats);
       when(() => mockService.fetchAmbassadorStats(country: 'United States'))
-          .thenAnswer((_) async => filteredStats);
+          .thenAnswer((final _) async => filteredStats);
       when(() => mockService.generateChartData(any())).thenReturn([
-        ChartDataPoint(
+        const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
-        ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
+        const ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
       ]);
 
       await tester.pumpWidget(
@@ -163,7 +163,7 @@ Future<void> main() async {
       expect(find.text('Spain'), findsNothing);
     });
 
-    testWidgets('should filter data by language', (tester) async {
+    testWidgets('should filter data by language', (final tester) async {
       final allStats = [
         AmbassadorStats(
           country: 'United States',
@@ -195,13 +195,13 @@ Future<void> main() async {
       ];
 
       when(() => mockService.fetchAmbassadorStats())
-          .thenAnswer((_) async => allStats);
+          .thenAnswer((final _) async => allStats);
       when(() => mockService.fetchAmbassadorStats(language: 'Spanish'))
-          .thenAnswer((_) async => filteredStats);
+          .thenAnswer((final _) async => filteredStats);
       when(() => mockService.generateChartData(any())).thenReturn([
-        ChartDataPoint(
+        const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
-        ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
+        const ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
       ]);
 
       await tester.pumpWidget(
@@ -231,7 +231,7 @@ Future<void> main() async {
     });
 
     testWidgets('should clear filters when clear button is pressed',
-        (tester) async {
+        (final tester) async {
       final allStats = [
         AmbassadorStats(
           country: 'United States',
@@ -252,11 +252,11 @@ Future<void> main() async {
       ];
 
       when(() => mockService.fetchAmbassadorStats())
-          .thenAnswer((_) async => allStats);
+          .thenAnswer((final _) async => allStats);
       when(() => mockService.generateChartData(any())).thenReturn([
-        ChartDataPoint(
+        const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
-        ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
+        const ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
       ]);
 
       await tester.pumpWidget(
@@ -279,7 +279,7 @@ Future<void> main() async {
       expect(find.text('Spain'), findsWidgets);
     });
 
-    testWidgets('should display chart when data is available', (tester) async {
+    testWidgets('should display chart when data is available', (final tester) async {
       final mockStats = [
         AmbassadorStats(
           country: 'United States',
@@ -300,11 +300,11 @@ Future<void> main() async {
       ];
 
       when(() => mockService.fetchAmbassadorStats())
-          .thenAnswer((_) async => mockStats);
+          .thenAnswer((final _) async => mockStats);
       when(() => mockService.generateChartData(any())).thenReturn([
-        ChartDataPoint(
+        const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
-        ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
+        const ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
       ]);
 
       await tester.pumpWidget(
@@ -323,7 +323,7 @@ Future<void> main() async {
     }, skip: true);
 
     testWidgets('should display error state when service fails',
-        (tester) async {
+        (final tester) async {
       when(() => mockService.fetchAmbassadorStats())
           .thenThrow(Exception('Service error'));
 
@@ -357,9 +357,9 @@ Future<void> main() async {
       ];
 
       when(() => mockService.fetchAmbassadorStats())
-          .thenAnswer((_) async => mockStats);
+          .thenAnswer((final _) async => mockStats);
       when(() => mockService.generateChartData(any())).thenReturn([
-        ChartDataPoint(
+        const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
       ]);
 
@@ -388,11 +388,11 @@ Future<void> main() async {
       ];
 
       when(() => mockService.fetchAmbassadorStats())
-          .thenAnswer((_) async => mockStats);
+          .thenAnswer((final _) async => mockStats);
       when(() => mockService.fetchAmbassadorStats(country: 'United States'))
-          .thenAnswer((_) async => mockStats);
+          .thenAnswer((final _) async => mockStats);
       when(() => mockService.generateChartData(any())).thenReturn([
-        ChartDataPoint(
+        const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
       ]);
 
@@ -420,9 +420,9 @@ Future<void> main() async {
       ];
 
       when(() => mockService.fetchAmbassadorStats())
-          .thenAnswer((_) async => mockStats);
+          .thenAnswer((final _) async => mockStats);
       when(() => mockService.generateChartData(any())).thenReturn([
-        ChartDataPoint(
+        const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
       ]);
 

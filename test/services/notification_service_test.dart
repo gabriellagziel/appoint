@@ -8,7 +8,7 @@ Future<void> main() async {
       // TODO: Set up NotificationService tests
     });
 
-    testWidgets('initializes correctly', (tester) async {
+    testWidgets('initializes correctly', (final tester) async {
       // TODO: implement service test
     });
   });

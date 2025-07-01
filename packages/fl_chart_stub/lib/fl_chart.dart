@@ -5,7 +5,7 @@ class LineChart extends StatelessWidget {
   const LineChart(this.data, {super.key});
 
   @override
-  Widget build(BuildContext context) => const SizedBox.shrink();
+  Widget build(final BuildContext context) => const SizedBox.shrink();
 }
 
 class LineChartData {
@@ -77,7 +77,7 @@ class PieChart extends StatelessWidget {
   const PieChart(this.data, {super.key});
 
   @override
-  Widget build(BuildContext context) => const SizedBox.shrink();
+  Widget build(final BuildContext context) => const SizedBox.shrink();
 }
 
 class PieChartData {
@@ -107,7 +107,7 @@ class BarChart extends StatelessWidget {
   const BarChart(this.data, {super.key});
 
   @override
-  Widget build(BuildContext context) => const SizedBox.shrink();
+  Widget build(final BuildContext context) => const SizedBox.shrink();
 }
 
 class BarChartData {
