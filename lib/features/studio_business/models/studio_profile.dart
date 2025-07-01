@@ -40,28 +40,28 @@ class StudioProfile {
     required this.updatedAt,
   });
 
-  factory StudioProfile.fromJson(Map<String, dynamic> json) =>
+  factory StudioProfile.fromJson(final Map<String, dynamic> json) =>
       _$StudioProfileFromJson(json);
 
   Map<String, dynamic> toJson() => _$StudioProfileToJson(this);
 
   StudioProfile copyWith({
-    String? id,
-    String? name,
-    String? description,
-    String? address,
-    String? phone,
-    String? email,
-    String? website,
-    List<String>? services,
-    List<String>? equipment,
-    Map<String, dynamic>? studioHours,
-    String? logoUrl,
-    String? coverImageUrl,
-    List<String>? photos,
-    bool? isActive,
-    DateTime? createdAt,
-    DateTime? updatedAt,
+    final String? id,
+    final String? name,
+    final String? description,
+    final String? address,
+    final String? phone,
+    final String? email,
+    final String? website,
+    final List<String>? services,
+    final List<String>? equipment,
+    final Map<String, dynamic>? studioHours,
+    final String? logoUrl,
+    final String? coverImageUrl,
+    final List<String>? photos,
+    final bool? isActive,
+    final DateTime? createdAt,
+    final DateTime? updatedAt,
   }) {
     return StudioProfile(
       id: id ?? this.id,

@@ -6,31 +6,31 @@ part 'ambassador_stats.g.dart';
 @freezed
 class AmbassadorStats with _$AmbassadorStats {
   const factory AmbassadorStats({
-    required String country,
-    required String language,
-    required int ambassadors,
-    required int referrals,
-    required double surveyScore,
-    required DateTime date,
+    required final String country,
+    required final String language,
+    required final int ambassadors,
+    required final int referrals,
+    required final double surveyScore,
+    required final DateTime date,
   }) = _AmbassadorStats;
 
-  factory AmbassadorStats.fromJson(Map<String, dynamic> json) =>
+  factory AmbassadorStats.fromJson(final Map<String, dynamic> json) =>
       _$AmbassadorStatsFromJson(json);
 }
 
 @freezed
 class AmbassadorData with _$AmbassadorData {
   const factory AmbassadorData({
-    required List<AmbassadorStats> stats,
-    required List<ChartDataPoint> chartData,
+    required final List<AmbassadorStats> stats,
+    required final List<ChartDataPoint> chartData,
   }) = _AmbassadorData;
 }
 
 @freezed
 class ChartDataPoint with _$ChartDataPoint {
   const factory ChartDataPoint({
-    required String label,
-    required double value,
-    required String category,
+    required final String label,
+    required final double value,
+    required final String category,
   }) = _ChartDataPoint;
 } 

@@ -29,17 +29,17 @@ class PressFeedback extends StatefulWidget {
 class _PressFeedbackState extends State<PressFeedback> {
   bool _pressed = false;
 
-  void _setPressed(bool value) {
+  void _setPressed(final bool value) {
     if (_pressed != value) {
       setState(() => _pressed = value);
     }
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return GestureDetector(
-      onTapDown: (_) => _setPressed(true),
-      onTapUp: (_) => _setPressed(false),
+      onTapDown: (final _) => _setPressed(true),
+      onTapUp: (final _) => _setPressed(false),
       onTapCancel: () => _setPressed(false),
       onTap: widget.onTap,
       child: AnimatedScale(

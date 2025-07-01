@@ -4,12 +4,12 @@ import 'package:image_picker/image_picker.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io';
 import 'package:firebase_auth/firebase_auth.dart';
-import '../../../widgets/bottom_sheet_manager.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
 
-import '../../../l10n/app_localizations.dart';
-import '../../../config/theme.dart';
-import '../../../providers/playtime_provider.dart';
-import '../../../models/playtime_background.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:appoint/models/playtime_background.dart';
 
 class CustomBackgroundPicker extends ConsumerStatefulWidget {
   final String? selectedBackgroundId;
@@ -31,7 +31,7 @@ class CustomBackgroundPicker extends ConsumerStatefulWidget {
 class _CustomBackgroundPickerState
     extends ConsumerState<CustomBackgroundPicker> {
   String? _selectedBackgroundId;
-  bool _isUploading = false;
+  final bool _isUploading = false;
 
   @override
   void initState() {
@@ -40,7 +40,7 @@ class _CustomBackgroundPickerState
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
 
     return Column(
@@ -58,11 +58,11 @@ class _CustomBackgroundPickerState
 
         // Background Grid
         Consumer(
-          builder: (context, ref, child) {
+          builder: (final context, final ref, final child) {
             final backgroundsAsync = ref.watch(allBackgroundsProvider);
 
             return backgroundsAsync.when(
-              data: (backgrounds) {
+              data: (final backgrounds) {
                 if (backgrounds.isEmpty) {
                   return _buildEmptyState(l10n);
                 }
@@ -79,7 +79,7 @@ class _CustomBackgroundPickerState
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (error, stack) => Text('Error: $error'),
+              error: (final error, final stack) => Text('Error: $error'),
             );
           },
         ),
@@ -93,8 +93,8 @@ class _CustomBackgroundPickerState
     );
   }
 
-  Widget _buildBackgroundSection(String title,
-      List<PlaytimeBackground> backgrounds, AppLocalizations l10n) {
+  Widget _buildBackgroundSection(final String title,
+      final List<PlaytimeBackground> backgrounds, final AppLocalizations l10n) {
     if (backgrounds.isEmpty) return const SizedBox.shrink();
 
     return Column(
@@ -114,7 +114,7 @@ class _CustomBackgroundPickerState
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: backgrounds.length,
-            itemBuilder: (context, index) {
+            itemBuilder: (final context, final index) {
               final background = backgrounds[index];
               return _buildBackgroundCard(background);
             },
@@ -124,7 +124,7 @@ class _CustomBackgroundPickerState
     );
   }
 
-  Widget _buildBackgroundCard(PlaytimeBackground background) {
+  Widget _buildBackgroundCard(final PlaytimeBackground background) {
     final isSelected = _selectedBackgroundId == background.id;
 
     return Container(
@@ -142,7 +142,7 @@ class _CustomBackgroundPickerState
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
             side: isSelected
-                ? BorderSide(color: AppTheme.primaryColor, width: 2)
+                ? const BorderSide(color: AppTheme.primaryColor, width: 2)
                 : BorderSide.none,
           ),
           child: Stack(
@@ -155,7 +155,7 @@ class _CustomBackgroundPickerState
                   width: double.infinity,
                   height: double.infinity,
                   fit: BoxFit.cover,
-                  errorBuilder: (context, error, stackTrace) {
+                  errorBuilder: (final context, final error, final stackTrace) {
                     return Container(
                       color: Colors.grey[200],
                       child: const Icon(
@@ -175,7 +175,7 @@ class _CustomBackgroundPickerState
                   right: 8,
                   child: Container(
                     padding: const EdgeInsets.all(4),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: AppTheme.primaryColor,
                       shape: BoxShape.circle,
                     ),
@@ -215,7 +215,7 @@ class _CustomBackgroundPickerState
     );
   }
 
-  Widget _buildEmptyState(AppLocalizations l10n) {
+  Widget _buildEmptyState(final AppLocalizations l10n) {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
@@ -252,9 +252,9 @@ class _CustomBackgroundPickerState
     );
   }
 
-  Widget _buildUploadButton(AppLocalizations l10n) {
+  Widget _buildUploadButton(final AppLocalizations l10n) {
     return Consumer(
-      builder: (context, ref, child) {
+      builder: (final context, final ref, final child) {
         final uploadState = ref.watch(playtimeBackgroundNotifierProvider);
 
         return SizedBox(
@@ -294,7 +294,7 @@ class _CustomBackgroundPickerState
     BottomSheetManager.show(
       context: context,
       child: _UploadBackgroundDialog(
-        onBackgroundUploaded: (backgroundId) {
+        onBackgroundUploaded: (final backgroundId) {
           setState(() {
             _selectedBackgroundId = backgroundId;
           });
@@ -322,7 +322,7 @@ class _UploadBackgroundDialogState
   final _descriptionController = TextEditingController();
   File? _selectedImage;
   String _selectedCategory = 'Nature';
-  List<String> _selectedTags = [];
+  final List<String> _selectedTags = [];
   bool _isUploading = false;
 
   final List<String> _categories = [
@@ -360,7 +360,7 @@ class _UploadBackgroundDialogState
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(20),
       child: Column(
@@ -499,7 +499,7 @@ class _UploadBackgroundDialogState
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          validator: (value) {
+          validator: (final value) {
             if (value == null || value.isEmpty) {
               return 'Please enter a name';
             }
@@ -517,7 +517,7 @@ class _UploadBackgroundDialogState
             ),
           ),
           maxLines: 3,
-          validator: (value) {
+          validator: (final value) {
             if (value == null || value.isEmpty) {
               return 'Please enter a description';
             }
@@ -548,13 +548,13 @@ class _UploadBackgroundDialogState
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          items: _categories.map((category) {
+          items: _categories.map((final category) {
             return DropdownMenuItem(
               value: category,
               child: Text(category),
             );
           }).toList(),
-          onChanged: (value) {
+          onChanged: (final value) {
             setState(() {
               _selectedCategory = value!;
             });
@@ -580,12 +580,12 @@ class _UploadBackgroundDialogState
         Wrap(
           spacing: 8,
           runSpacing: 8,
-          children: _availableTags.map((tag) {
+          children: _availableTags.map((final tag) {
             final isSelected = _selectedTags.contains(tag);
             return FilterChip(
               label: Text(tag),
               selected: isSelected,
-              onSelected: (selected) {
+              onSelected: (final selected) {
                 setState(() {
                   if (selected) {
                     _selectedTags.add(tag);

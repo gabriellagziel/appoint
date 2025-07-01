@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/admin_broadcast_message.dart';
-import '../models/user_profile.dart';
+import 'package:appoint/models/admin_broadcast_message.dart';
+import 'package:appoint/models/user_profile.dart';
 
 class BroadcastService {
   final FirebaseFirestore _firestore;
 
-  BroadcastService({FirebaseFirestore? firestore})
+  BroadcastService({final FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
 
   // Collection references
@@ -17,7 +17,8 @@ class BroadcastService {
       _firestore.collection('users');
 
   // Create a new broadcast message
-  Future<String> createBroadcastMessage(AdminBroadcastMessage message) async {
+  Future<String> createBroadcastMessage(
+      final AdminBroadcastMessage message) async {
     try {
       final docRef = await _broadcastsCollection.add(message.toJson());
       return docRef.id;
@@ -31,8 +32,8 @@ class BroadcastService {
     return _broadcastsCollection
         .orderBy('createdAt', descending: true)
         .snapshots()
-        .map((snapshot) => snapshot.docs
-            .map((doc) => AdminBroadcastMessage.fromJson({
+        .map((final snapshot) => snapshot.docs
+            .map((final doc) => AdminBroadcastMessage.fromJson({
                   'id': doc.id,
                   ...doc.data(),
                 }))
@@ -40,7 +41,7 @@ class BroadcastService {
   }
 
   // Get broadcast message by ID
-  Future<AdminBroadcastMessage?> getBroadcastMessage(String id) async {
+  Future<AdminBroadcastMessage?> getBroadcastMessage(final String id) async {
     try {
       final doc = await _broadcastsCollection.doc(id).get();
       if (doc.exists) {
@@ -56,7 +57,8 @@ class BroadcastService {
   }
 
   // Estimate target audience size
-  Future<int> estimateTargetAudience(BroadcastTargetingFilters filters) async {
+  Future<int> estimateTargetAudience(
+      final BroadcastTargetingFilters filters) async {
     try {
       Query query = _usersCollection;
 
@@ -102,7 +104,7 @@ class BroadcastService {
   }
 
   // Send broadcast message
-  Future<void> sendBroadcastMessage(String messageId) async {
+  Future<void> sendBroadcastMessage(final String messageId) async {
     try {
       final message = await getBroadcastMessage(messageId);
       if (message == null) {
@@ -134,7 +136,7 @@ class BroadcastService {
 
   // Get target users based on filters
   Future<List<UserProfile>> _getTargetUsers(
-      BroadcastTargetingFilters filters) async {
+      final BroadcastTargetingFilters filters) async {
     try {
       Query query = _usersCollection;
 
@@ -174,7 +176,7 @@ class BroadcastService {
 
       final snapshot = await query.get();
       return snapshot.docs
-          .map((doc) => UserProfile.fromJson({
+          .map((final doc) => UserProfile.fromJson({
                 'id': doc.id,
                 ...(doc.data() as Map<String, dynamic>),
               }))
@@ -186,7 +188,7 @@ class BroadcastService {
 
   // Send FCM notification to a user
   Future<void> _sendFCMNotification(
-      UserProfile user, AdminBroadcastMessage message) async {
+      final UserProfile user, final AdminBroadcastMessage message) async {
     try {
       // Get user's FCM token
       final userDoc = await _usersCollection.doc(user.id).get();
@@ -197,38 +199,21 @@ class BroadcastService {
       }
 
       // Prepare notification payload
-      final payload = {
-        'notification': {
-          'title': message.title,
-          'body': message.content,
-        },
-        'data': {
-          'type': 'admin_broadcast',
-          'messageId': message.id,
-          'messageType': message.type.name,
-          'imageUrl': message.imageUrl ?? '',
-          'videoUrl': message.videoUrl ?? '',
-          'externalLink': message.externalLink ?? '',
-          'pollOptions': message.pollOptions?.join(',') ?? '',
-        },
-        'token': fcmToken,
-      };
-
-      // Send via Firebase Functions (you'll need to implement this)
+      // TODO: Implement FCM notification sending via Firebase Functions
       // For now, we'll just log it
-      print('Sending FCM notification to ${user.id}: $payload');
+      // Removed debug print: print('Sending FCM notification to ${user.id}');
     } catch (e) {
-      print('Failed to send FCM notification to ${user.id}: $e');
+      // Removed debug print: print('Failed to send FCM notification to ${user.id}: $e');
       rethrow;
     }
   }
 
   // Update message analytics
   Future<void> updateMessageAnalytics(
-    String messageId, {
-    int? openedCount,
-    int? clickedCount,
-    Map<String, int>? pollResponses,
+    final String messageId, {
+    final int? openedCount,
+    final int? clickedCount,
+    final Map<String, int>? pollResponses,
   }) async {
     try {
       final updates = <String, dynamic>{};
@@ -252,7 +237,7 @@ class BroadcastService {
   }
 
   // Delete broadcast message
-  Future<void> deleteBroadcastMessage(String id) async {
+  Future<void> deleteBroadcastMessage(final String id) async {
     try {
       await _broadcastsCollection.doc(id).delete();
     } catch (e) {
@@ -262,6 +247,6 @@ class BroadcastService {
 }
 
 // Provider
-final broadcastServiceProvider = Provider<BroadcastService>((ref) {
+final broadcastServiceProvider = Provider<BroadcastService>((final ref) {
   return BroadcastService();
 });

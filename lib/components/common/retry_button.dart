@@ -8,7 +8,7 @@ class RetryButton extends StatelessWidget {
   const RetryButton({super.key, required this.onPressed});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [

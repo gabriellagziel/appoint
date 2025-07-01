@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../config/theme.dart';
+import 'package:appoint/config/theme.dart';
 
 class EmptyState extends StatelessWidget {
   final String title;
@@ -7,14 +7,14 @@ class EmptyState extends StatelessWidget {
   final String? description;
 
   const EmptyState({
-    Key? key,
+    final Key? key,
     required this.title,
     this.icon = Icons.inbox,
     this.description,
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,

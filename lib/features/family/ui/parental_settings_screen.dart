@@ -12,7 +12,7 @@ class _ParentalSettingsScreenState extends State<ParentalSettingsScreen> {
   bool _restrictMatureContent = false;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Parental Settings'),
@@ -25,7 +25,7 @@ class _ParentalSettingsScreenState extends State<ParentalSettingsScreen> {
             SwitchListTile(
               title: const Text('Restrict mature content'),
               value: _restrictMatureContent,
-              onChanged: (value) {
+              onChanged: (final value) {
                 setState(() {
                   _restrictMatureContent = value;
                 });

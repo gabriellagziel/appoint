@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/family_link.dart';
+import 'package:appoint/models/family_link.dart';
 
 class FamilyBackgroundService {
   static final FamilyBackgroundService _instance =
@@ -20,7 +20,7 @@ class FamilyBackgroundService {
     _scheduleDailyCheck();
 
     if (kDebugMode) {
-      print('FamilyBackgroundService started');
+      // Removed debug print: print('FamilyBackgroundService started');
     }
   }
 
@@ -30,7 +30,7 @@ class FamilyBackgroundService {
     _dailyTimer = null;
 
     if (kDebugMode) {
-      print('FamilyBackgroundService stopped');
+      // Removed debug print: print('FamilyBackgroundService stopped');
     }
   }
 
@@ -43,7 +43,7 @@ class FamilyBackgroundService {
     _dailyTimer = Timer(timeUntilMidnight, () {
       _performDailyCheck();
       // Schedule next check for 24 hours later
-      _dailyTimer = Timer.periodic(const Duration(days: 1), (_) {
+      _dailyTimer = Timer.periodic(const Duration(days: 1), (final _) {
         _performDailyCheck();
       });
     });
@@ -54,7 +54,7 @@ class FamilyBackgroundService {
 
     try {
       if (kDebugMode) {
-        print('Performing daily family relationship check...');
+        // Removed debug print: print('Performing daily family relationship check...');
       }
 
       await _checkAgeTransitions();
@@ -62,18 +62,18 @@ class FamilyBackgroundService {
       await _validateFamilyLinks();
 
       if (kDebugMode) {
-        print('Daily family relationship check completed');
+        // Removed debug print: print('Daily family relationship check completed');
       }
     } catch (e) {
       if (kDebugMode) {
-        print('Error during daily family relationship check: $e');
+        // Removed debug print: print('Error during daily family relationship check: $e');
       }
     }
   }
 
   Future<void> _checkAgeTransitions() async {
     if (kDebugMode) {
-      print('Checking age transitions...');
+      // Removed debug print: print('Checking age transitions...');
     }
 
     try {
@@ -111,12 +111,12 @@ class FamilyBackgroundService {
       }
     } catch (e) {
       if (kDebugMode) {
-        print('Error checking age transitions: $e');
+        // Removed debug print: print('Error checking age transitions: $e');
       }
     }
   }
 
-  Future<void> _updatePermissionsForAdult(String familyLinkId) async {
+  Future<void> _updatePermissionsForAdult(final String familyLinkId) async {
     try {
       // Get current permissions for this family link
       final permissionsSnapshot = await _firestore
@@ -157,16 +157,16 @@ class FamilyBackgroundService {
       });
 
       if (kDebugMode) {
-        print('Updated permissions for adult child in link: $familyLinkId');
+        // Removed debug print: print('Updated permissions for adult child in link: $familyLinkId');
       }
     } catch (e) {
       if (kDebugMode) {
-        print('Error updating permissions for adult: $e');
+        // Removed debug print: print('Error updating permissions for adult: $e');
       }
     }
   }
 
-  Future<void> _updatePermissionsForTeenager(String familyLinkId) async {
+  Future<void> _updatePermissionsForTeenager(final String familyLinkId) async {
     try {
       // Get current permissions for this family link
       final permissionsSnapshot = await _firestore
@@ -211,16 +211,16 @@ class FamilyBackgroundService {
       });
 
       if (kDebugMode) {
-        print('Updated permissions for teenager in link: $familyLinkId');
+        // Removed debug print: print('Updated permissions for teenager in link: $familyLinkId');
       }
     } catch (e) {
       if (kDebugMode) {
-        print('Error updating permissions for teenager: $e');
+        // Removed debug print: print('Error updating permissions for teenager: $e');
       }
     }
   }
 
-  Future<void> _updatePermissionsForCOPPA(String familyLinkId) async {
+  Future<void> _updatePermissionsForCOPPA(final String familyLinkId) async {
     try {
       // For COPPA compliance, ensure proper consent tracking
       await _firestore.collection('family_links').doc(familyLinkId).update({
@@ -237,18 +237,18 @@ class FamilyBackgroundService {
       });
 
       if (kDebugMode) {
-        print('Updated COPPA compliance for link: $familyLinkId');
+        // Removed debug print: print('Updated COPPA compliance for link: $familyLinkId');
       }
     } catch (e) {
       if (kDebugMode) {
-        print('Error updating COPPA compliance: $e');
+        // Removed debug print: print('Error updating COPPA compliance: $e');
       }
     }
   }
 
   Future<void> _cleanupExpiredRequests() async {
     if (kDebugMode) {
-      print('Cleaning up expired privacy requests...');
+      // Removed debug print: print('Cleaning up expired privacy requests...');
     }
 
     try {
@@ -274,17 +274,17 @@ class FamilyBackgroundService {
         await _sendExpiredRequestNotification(requestData['childId']);
 
         if (kDebugMode) {
-          print('Expired privacy request: ${doc.id}');
+          // Removed debug print: print('Expired privacy request: ${doc.id}');
         }
       }
     } catch (e) {
       if (kDebugMode) {
-        print('Error cleaning up expired requests: $e');
+        // Removed debug print: print('Error cleaning up expired requests: $e');
       }
     }
   }
 
-  Future<void> _sendExpiredRequestNotification(String childId) async {
+  Future<void> _sendExpiredRequestNotification(final String childId) async {
     try {
       // Get child's notification token
       final childDoc = await _firestore.collection('users').doc(childId).get();
@@ -306,19 +306,19 @@ class FamilyBackgroundService {
         });
 
         if (kDebugMode) {
-          print('Sent expired request notification to child: $childId');
+          // Removed debug print: print('Sent expired request notification to child: $childId');
         }
       }
     } catch (e) {
       if (kDebugMode) {
-        print('Error sending expired request notification: $e');
+        // Removed debug print: print('Error sending expired request notification: $e');
       }
     }
   }
 
   Future<void> _validateFamilyLinks() async {
     if (kDebugMode) {
-      print('Validating family links...');
+      // Removed debug print: print('Validating family links...');
     }
 
     try {
@@ -342,7 +342,7 @@ class FamilyBackgroundService {
           });
 
           if (kDebugMode) {
-            print('Invalidated family link: ${doc.id}');
+            // Removed debug print: print('Invalidated family link: ${doc.id}');
           }
         }
 
@@ -358,14 +358,14 @@ class FamilyBackgroundService {
             });
 
             if (kDebugMode) {
-              print('Family link needs consent renewal: ${doc.id}');
+              // Removed debug print: print('Family link needs consent renewal: ${doc.id}');
             }
           }
         }
       }
     } catch (e) {
       if (kDebugMode) {
-        print('Error validating family links: $e');
+        // Removed debug print: print('Error validating family links: $e');
       }
     }
   }
@@ -373,7 +373,7 @@ class FamilyBackgroundService {
   // Method to manually trigger a check (useful for testing)
   Future<void> triggerManualCheck() async {
     if (kDebugMode) {
-      print('Manual family relationship check triggered');
+      // Removed debug print: print('Manual family relationship check triggered');
     }
     await _performDailyCheck();
   }

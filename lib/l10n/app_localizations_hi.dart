@@ -54,7 +54,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get undo => 'पूर्ववत करें';
 
   @override
-  String get opened => 'खुला';
+  String opened(Object count) {
+    return 'खुला';
+  }
 
   @override
   String get createVirtualSession => 'वर्चुअल सत्र बनाएं';
@@ -270,9 +272,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get playtimeLive => 'लाइव Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'निमंत्रण लोड करने में त्रुटि';
-  }
+  String get errorLoadingInvites => 'निमंत्रण लोड करने में त्रुटि';
 
   @override
   String get targetingFilters => 'लक्षित फ़िल्टर';
@@ -290,7 +290,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get accessRevokedSuccessfully => 'पहुँच सफलतापूर्वक रद्द की गई';
 
   @override
-  String get type => 'प्रकार';
+  String type(Object type) {
+    return 'प्रकार';
+  }
 
   @override
   String get checkingPermissions => 'अनुमतियाँ जांच रहा है';
@@ -305,7 +307,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get email => 'ईमेल';
 
   @override
-  String get shareOnWhatsApp => 'WhatsApp पर साझा करें';
+  String get shareOnWhatsApp => '[HI] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'सूचना सेटिंग्स';
@@ -343,9 +345,7 @@ class AppLocalizationsHi extends AppLocalizations {
   String get playtimeReject => 'अस्वीकार करें';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'प्रोफ़ाइल लोड करने में त्रुटि';
-  }
+  String get errorLoadingProfile => 'प्रोफ़ाइल लोड करने में त्रुटि';
 
   @override
   String get edit => 'संपादित करें';
@@ -376,7 +376,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'अनुमतियाँ जांचने में त्रुटि: $error';
+    return '[HI] Error checking permissions';
   }
 
   @override
@@ -384,7 +384,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'FCM टोकन: $token';
+    return '[HI] FCM Token';
   }
 
   @override
@@ -417,19 +417,19 @@ class AppLocalizationsHi extends AppLocalizations {
       'आपके पास प्रसारण संदेश बनाने की अनुमति नहीं है।';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => '[HI] Playtime Games – Admin';
 
   @override
   String get inviteDetail => 'निमंत्रण विवरण';
 
   @override
   String scheduled(Object date) {
-    return 'अनुसूचित: $date';
+    return '[HI] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'ओटीपी पुनः भेजने में विफल: $error';
+    return '[HI] Failed to resend OTP';
   }
 
   @override
@@ -437,7 +437,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String errorSavingMessage(Object error) {
-    return 'संदेश सहेजने में त्रुटि: $error';
+    return '[HI] Error saving message';
   }
 
   @override
@@ -454,7 +454,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'पहुंच रद्द करने में विफल: $error';
+    return '[HI] Failed to revoke access';
   }
 
   @override
@@ -465,12 +465,12 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'निमंत्रण रद्द करने में विफल: $error';
+    return '[HI] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'संदेश भेजने में त्रुटि: $error';
+    return '[HI] Error sending message';
   }
 
   @override
@@ -478,7 +478,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'गोपनीयता अनुरोध लोड करने में त्रुटि: $error';
+    return '[HI] Error loading privacy requests';
   }
 
   @override
@@ -537,7 +537,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String link(Object link) {
-    return 'लिंक: $link';
+    return '[HI] Link';
   }
 
   @override
@@ -549,10 +549,28 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String statusColon(Object status) {
-    return 'स्थिति: $status';
+    return '[HI] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
       'कृपया लॉगिन करें और अपनी प्रोफ़ाइल देखें.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

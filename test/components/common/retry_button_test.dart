@@ -8,7 +8,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('RetryButton', () {
-    testWidgets('renders and triggers tap', (tester) async {
+    testWidgets('renders and triggers tap', (final tester) async {
       var tapped = false;
       await tester.pumpWidget(
         MaterialApp(

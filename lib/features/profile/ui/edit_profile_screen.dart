@@ -29,7 +29,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Edit Profile'),
@@ -51,7 +51,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   inputFormatters: [
                     LengthLimitingTextInputFormatter(150),
                   ],
-                  onChanged: (_) => setState(() {}),
+                  onChanged: (final _) => setState(() {}),
                   decoration: const InputDecoration(labelText: 'Bio'),
                 ),
                 const SizedBox(height: 4),

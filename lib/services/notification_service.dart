@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 
-import '../models/notification_payload.dart';
+import 'package:appoint/models/notification_payload.dart';
 
 class NotificationService {
   final FirebaseMessaging _messaging = FirebaseMessaging.instance;
@@ -11,7 +11,7 @@ class NotificationService {
 
   Function(NotificationPayload)? _onMessage;
 
-  Future<void> initialize({Function(NotificationPayload)? onMessage}) async {
+  Future<void> initialize({final Function(NotificationPayload)? onMessage}) async {
     _onMessage = onMessage;
     await _messaging.requestPermission();
     FirebaseMessaging.onMessage.listen(_handleMessage);
@@ -19,7 +19,7 @@ class NotificationService {
     FirebaseMessaging.onMessageOpenedApp.listen(_handleMessage);
   }
 
-  void _handleMessage(RemoteMessage message) {
+  void _handleMessage(final RemoteMessage message) {
     final payload = NotificationPayload(
       id: message.messageId ?? '',
       title: message.notification?.title ?? '',
@@ -29,15 +29,15 @@ class NotificationService {
     _onMessage?.call(payload);
   }
 
-  static Future<void> _backgroundHandler(RemoteMessage message) async {
+  static Future<void> _backgroundHandler(final RemoteMessage message) async {
     // In a real app, display a system notification here
     // ignore: avoid_print
-    print('BG message: ${message.messageId}');
+    // Removed debug print: print('BG message: ${message.messageId}');
   }
 
   Future<String?> getToken() => _messaging.getToken();
 
-  Future<void> saveTokenForUser(String uid) async {
+  Future<void> saveTokenForUser(final String uid) async {
     final token = await _messaging.getToken();
     if (token != null) {
       await _firestore
@@ -47,15 +47,15 @@ class NotificationService {
     }
   }
 
-  Future<void> sendNotification(String token, String title, String body,
-      {Map<String, dynamic>? data}) async {
+  Future<void> sendNotification(final String token, final String title, final String body,
+      {final Map<String, dynamic>? data}) async {
     await _functions
         .httpsCallable('sendNotification')
         .call({'token': token, 'title': title, 'body': body, 'data': data});
   }
 
   Future<void> sendNotificationToUser(
-      String uid, String title, String body) async {
+      final String uid, final String title, final String body) async {
     final doc = await _firestore.collection('users').doc(uid).get();
     final token = doc.data()?['fcmToken'] as String?;
     if (token != null) {
@@ -64,7 +64,7 @@ class NotificationService {
   }
 
   Future<void> sendTestNotification(
-      String token, String title, String body) async {
+      final String token, final String title, final String body) async {
     final callable =
         FirebaseFunctions.instance.httpsCallable('sendNotification');
     await callable.call({
@@ -76,25 +76,9 @@ class NotificationService {
 
   /// Fetch notifications for the given user.
   ///
-  /// This currently returns a mocked list until the backend is available.
-  Future<List<NotificationPayload>> fetchNotifications(String uid) async {
-    await Future.delayed(const Duration(milliseconds: 300));
-    return [
-      NotificationPayload(
-        id: '1',
-        title: 'Welcome',
-        body: 'Thanks for joining us, $uid!',
-      ),
-      NotificationPayload(
-        id: '2',
-        title: 'Reminder',
-        body: 'Don\'t miss your upcoming appointment.',
-      ),
-      NotificationPayload(
-        id: '3',
-        title: 'Promo',
-        body: 'Check out our latest features today.',
-      ),
-    ];
+  /// TODO: Implement real notification fetching from Firestore
+  Future<List<NotificationPayload>> fetchNotifications(final String uid) async {
+    // TODO: Replace with real Firestore query for user notifications
+    return [];
   }
 }

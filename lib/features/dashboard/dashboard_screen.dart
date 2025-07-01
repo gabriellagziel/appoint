@@ -1,27 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../providers/dashboard_provider.dart';
-import '../../l10n/app_localizations.dart';
-import '../../widgets/app_scaffold.dart';
-import '../../widgets/loading_state.dart';
-import '../../widgets/error_state.dart';
-import '../../widgets/responsive_scaffold.dart';
-import '../../theme/app_spacing.dart';
-import '../../theme/app_breakpoints.dart';
+import 'package:appoint/providers/dashboard_provider.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/widgets/app_scaffold.dart';
+import 'package:appoint/widgets/loading_state.dart';
+import 'package:appoint/widgets/error_state.dart';
+import 'package:appoint/widgets/responsive_scaffold.dart';
+import 'package:appoint/theme/app_spacing.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
     final statsAsync = ref.watch(dashboardStatsProvider);
 
     return AppScaffold(
       title: l10n.dashboard,
       body: statsAsync.when(
-        data: (stats) {
+        data: (final stats) {
           final cards = [
             _StatsCard(
                 title: 'Total Appointments',
@@ -55,7 +54,7 @@ class DashboardScreen extends ConsumerWidget {
           );
         },
         loading: () => const LoadingState(),
-        error: (_, __) => const ErrorState(
+        error: (final _, final __) => const ErrorState(
           title: 'Error',
           description: 'Error loading stats',
         ),
@@ -71,7 +70,7 @@ class _StatsCard extends StatelessWidget {
   final String value;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Card(
       child: ListTile(
         title: Text(title),

@@ -47,7 +47,7 @@ class _ListItemEntryState extends State<ListItemEntry>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return FadeTransition(
       opacity: _controller,
       child: SlideTransition(

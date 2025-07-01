@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/ambassador_stats.dart';
-import '../models/business_analytics.dart';
-import '../services/ambassador_service.dart';
+import 'package:appoint/models/ambassador_stats.dart';
+import 'package:appoint/models/business_analytics.dart';
+import 'package:appoint/services/ambassador_service.dart';
 
 final ambassadorServiceProvider =
-    Provider<AmbassadorService>((ref) => AmbassadorService());
+    Provider<AmbassadorService>((final ref) => AmbassadorService());
 
 class AmbassadorDataNotifier extends StateNotifier<AsyncValue<AmbassadorData>> {
   final AmbassadorService _service;
@@ -41,9 +41,9 @@ class AmbassadorDataNotifier extends StateNotifier<AsyncValue<AmbassadorData>> {
   }
 
   void updateFilters({
-    String? country,
-    String? language,
-    DateTimeRange? dateRange,
+    final String? country,
+    final String? language,
+    final DateTimeRange? dateRange,
   }) {
     _selectedCountry = country;
     _selectedLanguage = language;
@@ -61,39 +61,39 @@ class AmbassadorDataNotifier extends StateNotifier<AsyncValue<AmbassadorData>> {
 
 final ambassadorDataProvider =
     StateNotifierProvider<AmbassadorDataNotifier, AsyncValue<AmbassadorData>>(
-  (ref) => AmbassadorDataNotifier(ref.read(ambassadorServiceProvider)),
+  (final ref) => AmbassadorDataNotifier(ref.read(ambassadorServiceProvider)),
 );
 
 // Convenience providers for filtered data
 final ambassadorStatsProvider =
-    Provider<AsyncValue<List<AmbassadorStats>>>((ref) {
+    Provider<AsyncValue<List<AmbassadorStats>>>((final ref) {
   final dataAsync = ref.watch(ambassadorDataProvider);
   return dataAsync.when(
-    data: (data) => AsyncValue.data(data.stats),
+    data: (final data) => AsyncValue.data(data.stats),
     loading: () => const AsyncValue.loading(),
-    error: (error, stackTrace) => AsyncValue.error(error, stackTrace),
+    error: (final error, final stackTrace) => AsyncValue.error(error, stackTrace),
   );
 });
 
 final ambassadorChartDataProvider =
-    Provider<AsyncValue<List<ChartDataPoint>>>((ref) {
+    Provider<AsyncValue<List<ChartDataPoint>>>((final ref) {
   final dataAsync = ref.watch(ambassadorDataProvider);
   return dataAsync.when(
-    data: (data) => AsyncValue.data(data.chartData),
+    data: (final data) => AsyncValue.data(data.chartData),
     loading: () => const AsyncValue.loading(),
-    error: (error, stackTrace) => AsyncValue.error(error, stackTrace),
+    error: (final error, final stackTrace) => AsyncValue.error(error, stackTrace),
   );
 });
 
 final ambassadorsOverTimeProvider =
-    FutureProvider<List<TimeSeriesPoint>>((ref) {
+    FutureProvider<List<TimeSeriesPoint>>((final ref) {
   return ref.read(ambassadorServiceProvider).fetchAmbassadorsOverTime();
 });
 
 // Filter state providers
 final ambassadorFiltersProvider =
-    StateProvider<Map<String, dynamic>>((ref) => {});
+    StateProvider<Map<String, dynamic>>((final ref) => {});
 
-final selectedCountryProvider = StateProvider<String?>((ref) => null);
-final selectedLanguageProvider = StateProvider<String?>((ref) => null);
-final selectedDateRangeProvider = StateProvider<DateTimeRange?>((ref) => null);
+final selectedCountryProvider = StateProvider<String?>((final ref) => null);
+final selectedLanguageProvider = StateProvider<String?>((final ref) => null);
+final selectedDateRangeProvider = StateProvider<DateTimeRange?>((final ref) => null);

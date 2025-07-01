@@ -8,7 +8,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('AppScaffold', () {
-    testWidgets('renders with title', (tester) async {
+    testWidgets('renders with title', (final tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: AppScaffold(
@@ -23,7 +23,7 @@ Future<void> main() async {
       expect(find.byType(SafeArea), findsOneWidget);
     });
 
-    testWidgets('renders without title', (tester) async {
+    testWidgets('renders without title', (final tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: AppScaffold(child: Text('content')),

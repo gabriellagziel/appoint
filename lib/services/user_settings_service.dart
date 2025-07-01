@@ -1,11 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '../models/notification_settings.dart';
+import 'package:appoint/models/notification_settings.dart';
 
 class UserSettingsService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
-  Future<NotificationSettings> fetchSettings(String uid) async {
+  Future<NotificationSettings> fetchSettings(final String uid) async {
     final doc = await _firestore
         .collection('users')
         .doc(uid)
@@ -18,7 +18,7 @@ class UserSettingsService {
     return NotificationSettings.fromJson(doc.data() as Map<String, dynamic>);
   }
 
-  Future<void> updateSettings(String uid, NotificationSettings settings) async {
+  Future<void> updateSettings(final String uid, final NotificationSettings settings) async {
     await _firestore
         .collection('users')
         .doc(uid)

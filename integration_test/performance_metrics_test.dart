@@ -20,11 +20,10 @@ Future<int> _heapUsage() async {
 }
 
 void main() {
-  final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized()
-      as IntegrationTestWidgetsFlutterBinding;
+  final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   group('Performance Metrics', () {
-    testWidgets('booking chat metrics', (tester) async {
+    testWidgets('booking chat metrics', (final tester) async {
       final before = await _heapUsage();
       final sw = Stopwatch()..start();
 
@@ -51,7 +50,7 @@ void main() {
       expect(report['90th_percentile_frame_build_time_millis'] < 16.0, isTrue);
     });
 
-    testWidgets('dashboard flow metrics', (tester) async {
+    testWidgets('dashboard flow metrics', (final tester) async {
       final before = await _heapUsage();
       final sw = Stopwatch()..start();
 

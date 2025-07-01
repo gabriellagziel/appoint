@@ -1,667 +1,667 @@
 {
-  "refresh": "রিফ্রেশ",
-  "@refresh": {
-    "description": "Refresh button text"
-  },
-  "home": "হোম",
-  "@home": {
-    "description": "Home navigation label"
-  },
-  "noSessionsYet": "এখনও কোনও সেশন নেই",
-  "@noSessionsYet": {
-    "description": "No sessions yet message"
-  },
-  "ok": "ঠিক আছে",
-  "@ok": {
-    "description": "OK button text"
-  },
-  "playtimeLandingChooseMode": "মোড নির্বাচন করুন",
-  "@playtimeLandingChooseMode": {
-    "description": "Playtime landing choose mode message"
-  },
-  "signUp": "সাইন আপ করুন",
-  "@signUp": {
-    "description": "Sign up button text"
-  },
-  "scheduleMessage": "বার্তা নির্ধারণ করুন",
-  "@scheduleMessage": {
-    "description": "Schedule message button"
-  },
-  "decline": "প্রত্যাখ্যান",
-  "@decline": {
-    "description": "Decline button"
-  },
-  "adminBroadcast": "প্রশাসক সম্প্রচার",
-  "@adminBroadcast": {
-    "description": "Admin broadcast title"
-  },
-  "login": "লগইন",
-  "@login": {
-    "description": "Login button text"
-  },
-  "playtimeChooseFriends": "বন্ধু নির্বাচন করুন",
-  "@playtimeChooseFriends": {
-    "description": "Choose friends label"
-  },
-  "noInvites": "কোনও আমন্ত্রণ নেই",
-  "@noInvites": {
-    "description": "No invites message"
-  },
-  "playtimeChooseTime": "সময় নির্বাচন করুন",
-  "@playtimeChooseTime": {
-    "description": "Choose time label"
-  },
-  "success": "সফল",
-  "@success": {
-    "description": "Success message"
-  },
-  "undo": "পূর্বাবস্থা",
-  "@undo": {
-    "description": "Undo button text"
-  },
-  "opened": "খোলা হয়েছে",
-  "@opened": {
-    "description": "Opened status"
-  },
-  "createVirtualSession": "ভার্চুয়াল সেশন তৈরি করুন",
-  "@createVirtualSession": {
-    "description": "Create virtual session button"
-  },
-  "messageSentSuccessfully": "বার্তাটি সফলভাবে পাঠানো হয়েছে",
-  "@messageSentSuccessfully": {
-    "description": "Message sent successfully message"
-  },
-  "redo": "পুনরায় করুন",
-  "@redo": {
-    "description": "Redo button text"
-  },
-  "next": "পরবর্তী",
-  "@next": {
-    "description": "Next button text"
-  },
-  "search": "অনুসন্ধান",
-  "@search": {
-    "description": "Search placeholder text"
-  },
-  "cancelInviteConfirmation": "আমন্ত্রণ রদ নিশ্চিত করুন",
-  "@cancelInviteConfirmation": {
-    "description": "Cancel invite confirmation message"
-  },
-  "created": "তৈরি হয়েছে",
-  "@created": {
-    "description": "Created status"
-  },
-  "revokeAccess": "অ্যাক্সেস প্রত্যাহার করুন",
-  "@revokeAccess": {
-    "description": "Revoke access button"
-  },
-  "saveGroupForRecognition": "স্বীকৃতির জন্য গ্রুপ সংরক্ষণ করুন",
-  "@saveGroupForRecognition": {
-    "description": "Save group for recognition label"
-  },
-  "playtimeLiveScheduled": "লাইভ সেশন নির্ধারিত হয়েছে",
-  "@playtimeLiveScheduled": {
-    "description": "Live playtime scheduled message"
-  },
-  "revokeAccessConfirmation": "অ্যাক্সেস প্রত্যাহারের নিশ্চিতকরণ",
-  "@revokeAccessConfirmation": {
-    "description": "Revoke access confirmation message"
-  },
-  "download": "ডাউনলোড",
-  "@download": {
-    "description": "Download button text"
-  },
-  "password": "পাসওয়ার্ড",
-  "@password": {
-    "description": "Password field label"
-  },
-  "errorLoadingFamilyLinks": "পারিবারিক লিঙ্ক লোড করতে ত্রুটি",
-  "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message"
-  },
-  "cancel": "বাতিল করুন",
-  "@cancel": {
-    "description": "Cancel button text"
-  },
-  "playtimeCreate": "Playtime তৈরি করুন",
-  "@playtimeCreate": {
-    "description": "Create button"
-  },
-  "failedToActionPrivacyRequest": "গোপনীয়তা অনুরোধ সফল হয়নি",
-  "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message"
-  },
-  "appTitle": "অ্যাপ শিরোনাম",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
-  "accept": "গ্রহণ করুন",
-  "@accept": {
-    "description": "Accept button"
-  },
-  "playtimeModeVirtual": "ভার্চুয়াল মোড",
-  "@playtimeModeVirtual": {
-    "description": "Virtual play mode label"
-  },
-  "playtimeDescription": "Playtime বর্ণনা",
-  "@playtimeDescription": {
-    "description": "Playtime description"
-  },
-  "delete": "মুছে দিন",
-  "@delete": {
-    "description": "Delete button text"
-  },
-  "playtimeVirtualStarted": "ভার্চুয়াল সেশন শুরু হয়েছে",
-  "@playtimeVirtualStarted": {
-    "description": "Virtual playtime started message"
-  },
-  "createYourFirstGame": "আপনার প্রথম গেম তৈরি করুন",
-  "@createYourFirstGame": {
-    "description": "Create your first game message"
-  },
-  "participants": "অংশগ্রহণকারী",
-  "@participants": {
-    "description": "Participants label"
-  },
-  "recipients": "প্রাপকেরা",
-  "@recipients": {
-    "description": "Recipients label"
-  },
-  "noResults": "কোনও ফলাফল নেই",
-  "@noResults": {
-    "description": "No search results message"
-  },
-  "yes": "হ্যাঁ",
-  "@yes": {
-    "description": "Yes button text"
-  },
-  "invite": "আমন্ত্রণ করুন",
-  "@invite": {
-    "description": "Invite button"
-  },
-  "playtimeModeLive": "লাইভ মোড",
-  "@playtimeModeLive": {
-    "description": "Live play mode label"
-  },
-  "done": "সম্পন্ন",
-  "@done": {
-    "description": "Done button text"
-  },
-  "defaultShareMessage": "ডিফল্ট শেয়ার বার্তা",
-  "@defaultShareMessage": {
-    "description": "Default share message"
-  },
-  "no": "না",
-  "@no": {
-    "description": "No button text"
-  },
-  "playtimeHub": "Playtime হাব",
-  "@playtimeHub": {
-    "description": "Playtime hub title"
-  },
-  "error": "ত্রুটি",
-  "@error": {
-    "description": "Error message"
-  },
-  "createLiveSession": "লাইভ সেশন তৈরি করুন",
-  "@createLiveSession": {
-    "description": "Create live session button"
-  },
-  "enableNotifications": "নোটিফিকেশন সক্রিয় করুন",
-  "@enableNotifications": {
-    "description": "Enable notifications label"
-  },
-  "invited": "আমন্ত্রিত",
-  "@invited": {
-    "description": "Invited status"
-  },
-  "content": "কন্টেন্ট",
-  "@content": {
-    "description": "Content label"
-  },
-  "meetingSharedSuccessfully": "মিটিং সফলভাবে শেয়ার করা হয়েছে",
-  "@meetingSharedSuccessfully": {
-    "description": "Meeting shared successfully message"
-  },
-  "welcomeToPlaytime": "Playtime এ স্বাগতম",
-  "@welcomeToPlaytime": {
-    "description": "Welcome to playtime message"
-  },
-  "viewAll": "সব দেখুন",
-  "@viewAll": {
-    "description": "View all button"
-  },
-  "playtimeVirtual": "ভার্চুয়াল Playtime",
-  "@playtimeVirtual": {
-    "description": "Virtual play label"
-  },
-  "staffScreenTBD": "কর্মী স্ক্রিন পরে নিশ্চিত করা হবে",
-  "@staffScreenTBD": {
-    "description": "Staff screen TBD message"
-  },
-  "cut": "কাটুন",
-  "@cut": {
-    "description": "Cut button text"
-  },
-  "inviteCancelledSuccessfully": "আমন্ত্রণ সফলভাবে বাতিল করা হয়েছে",
-  "@inviteCancelledSuccessfully": {
-    "description": "Invite cancelled successfully message"
-  },
-  "retry": "আবার চেষ্টা করুন",
-  "@retry": {
-    "description": "Retry button text"
-  },
-  "composeBroadcastMessage": "ব্রডকাস্ট বার্তা তৈরি করুন",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message title"
-  },
-  "sendNow": "এখন পাঠান",
-  "@sendNow": {
-    "description": "Send now button"
-  },
-  "noGamesYet": "এখনও কোনও গেম নেই",
-  "@noGamesYet": {
-    "description": "No games yet message"
-  },
-  "select": "চয়ন করুন",
-  "@select": {
-    "description": "Select button text"
-  },
-  "about": "সম্পর্কে",
+  "@@locale": "bn_BD",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "নির্বাচন করুন",
-  "@choose": {
-    "description": "Choose button text"
+  "@accept": {
+    "description": "Accept button"
   },
-  "profile": "প্রোফাইল",
-  "@profile": {
-    "description": "Profile navigation label"
-  },
-  "removeChild": "শিশু অপসারণ করুন",
-  "@removeChild": {
-    "description": "Remove child button"
-  },
-  "status": "অবস্থা",
-  "@status": {
-    "description": "Status label"
-  },
-  "logout": "প্রস্থান করুন",
-  "@logout": {
-    "description": "Logout button text"
-  },
-  "paste": "পেস্ট করুন",
-  "@paste": {
-    "description": "Paste button text"
-  },
-  "welcome": "স্বাগতম",
-  "@welcome": {
-    "description": "Welcome message"
-  },
-  "playtimeCreateSession": "সেশন তৈরি করুন",
-  "@playtimeCreateSession": {
-    "description": "Create playtime session button"
-  },
-  "familyMembers": "পরিবারের সদস্যরা",
-  "@familyMembers": {
-    "description": "Family members label"
-  },
-  "upload": "আপলোড করুন",
-  "@upload": {
-    "description": "Upload button text"
-  },
-  "upcomingSessions": "আসন্ন সেশন",
-  "@upcomingSessions": {
-    "description": "Upcoming sessions label"
-  },
-  "enterGroupName": "গোষ্ঠী নাম লিখুন",
-  "@enterGroupName": {
-    "description": "Enter group name placeholder"
-  },
-  "confirm": "নিশ্চিত করুন",
-  "@confirm": {
-    "description": "Confirm button text"
-  },
-  "playtimeLive": "লাইভ Playtime",
-  "@playtimeLive": {
-    "description": "Live play label"
-  },
-  "errorLoadingInvites": "আমন্ত্রণ লোড করতে ত্রুটি",
-  "@errorLoadingInvites": {
-    "description": "Error loading invites message"
-  },
-  "targetingFilters": "টার্গেটিং ফিল্টার",
-  "@targetingFilters": {
-    "description": "Targeting filters label"
-  },
-  "pickVideo": "ভিডিও নির্বাচন করুন",
-  "@pickVideo": {
-    "description": "Pick video button"
-  },
-  "playtimeGameDeleted": "গেম মুছে ফেলা হয়েছে",
-  "@playtimeGameDeleted": {
-    "description": "Game deleted message"
-  },
-  "scheduleForLater": "পরে শিডিউল করুন",
-  "@scheduleForLater": {
-    "description": "Schedule for later button"
-  },
-  "accessRevokedSuccessfully": "অ্যাক্সেস সফলভাবে প্রত্যাহার করা হয়েছে",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "পরামিতি",
-  "@type": {
-    "description": "Type label"
-  },
-  "checkingPermissions": "অনুমতি যাচাই করা হচ্ছে",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "copy": "কপি করুন",
-  "@copy": {
-    "description": "Copy button text"
-  },
-  "yesCancel": "হ্যাঁ, বাতিল করুন",
-  "@yesCancel": {
-    "description": "Yes cancel button"
-  },
-  "email": "ইমেল",
-  "@email": {
-    "description": "Email field label"
-  },
-  "shareOnWhatsApp": "[BN_BD] Share on WhatsApp",
-  "@shareOnWhatsApp": {
-    "description": "Share on WhatsApp button"
-  },
-  "notificationSettings": "নোটিফিকেশন সেটিংস",
-  "@notificationSettings": {
-    "description": "Notification settings title"
-  },
-  "myProfile": "আমার প্রোফাইল",
-  "@myProfile": {
-    "description": "My profile title"
-  },
-  "revoke": "প্রত্যাহার করুন",
-  "@revoke": {
-    "description": "Revoke button"
-  },
-  "noBroadcastMessages": "কোনও সম্প্রচার বার্তা নেই",
-  "@noBroadcastMessages": {
-    "description": "No broadcast messages message"
-  },
-  "requestType": "অনুরোধের ধরন",
-  "@requestType": {
-    "description": "Request type label"
-  },
-  "notifications": "বিজ্ঞপ্তি",
-  "@notifications": {
-    "description": "Notifications title"
-  },
-  "details": "বিবরণ",
-  "@details": {
-    "description": "Details label"
-  },
-  "cancelInvite": "আমন্ত্রণ বাতিল করুন",
-  "@cancelInvite": {
-    "description": "Cancel invite button"
-  },
-  "createNew": "নতুন তৈরি করুন",
-  "@createNew": {
-    "description": "Create new button"
-  },
-  "settings": "সেটিংস",
-  "@settings": {
-    "description": "Settings navigation label"
-  },
-  "playtimeReject": "Playtime প্রত্যাখ্যান করুন",
-  "@playtimeReject": {
-    "description": "Playtime reject button"
-  },
-  "errorLoadingProfile": "প্রোফাইল লোড করতে ত্রুটি",
-  "@errorLoadingProfile": {
-    "description": "Error loading profile message"
-  },
-  "edit": "সম্পাদনা করুন",
-  "@edit": {
-    "description": "Edit button text"
-  },
-  "add": "যোগ করুন",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "গেম অনুমোদিত হয়েছে",
-  "@playtimeGameApproved": {
-    "description": "Game approved message"
+  "@adminBroadcast": {
+    "description": "Admin broadcast title"
   },
-  "forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?",
-  "@forgotPassword": {
-    "description": "Forgot password link"
-  },
-  "familyDashboard": "পরিবারের ড্যাশবোর্ড",
-  "@familyDashboard": {
-    "description": "Family dashboard title"
-  },
-  "loading": "লোড হচ্ছে",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "quickActions": "দ্রুত ক্রিয়াকলাপ",
-  "@quickActions": {
-    "description": "Quick actions label"
-  },
-  "playtimeTitle": "Playtime শিরোনাম",
-  "@playtimeTitle": {
-    "description": "Playtime title"
-  },
-  "otpResentSuccessfully": "OTP সফলভাবে পুনরায় পাঠানো হয়েছে",
-  "@otpResentSuccessfully": {
-    "description": "OTP resent successfully message"
-  },
-  "errorCheckingPermissions": "অনুমতি যাচাই করতে ত্রুটি",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message"
-  },
-  "clientScreenTBD": "ক্লায়েন্ট স্ক্রিন পরে নিশ্চিত করা হবে",
-  "@clientScreenTBD": {
-    "description": "Client screen TBD message"
-  },
-  "fcmToken": "FCM টোকেন",
-  "@fcmToken": {
-    "description": "FCM token label"
-  },
-  "pickImage": "ছবি নির্বাচন করুন",
-  "@pickImage": {
-    "description": "Pick image button"
-  },
-  "previous": "পূর্ববর্তী",
-  "@previous": {
-    "description": "Previous button text"
-  },
-  "noProfileFound": "কোনও প্রোফাইল পাওয়া যায়নি",
-  "@noProfileFound": {
-    "description": "No profile found message"
-  },
-  "noFamilyMembersYet": "পরিবারের কোনও সদস্য নেই",
-  "@noFamilyMembersYet": {
-    "description": "No family members yet message"
-  },
-  "mediaOptional": "মিডিয়া (ঐচ্ছিক)",
-  "@mediaOptional": {
-    "description": "Media optional label"
-  },
-  "messageSavedSuccessfully": "বার্তা সফলভাবে সংরক্ষণ করা হয়েছে",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully message"
-  },
-  "scheduledFor": "নির্ধারিত",
-  "@scheduledFor": {
-    "description": "Scheduled for label"
-  },
-  "dashboard": "ড্যাশবোর্ড",
-  "@dashboard": {
-    "description": "Dashboard title"
-  },
-  "noPermissionForBroadcast": "সম্প্রচারের অনুমতি নেই",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "playtimeAdminPanelTitle": "Playtime অ্যাডমিন প্যানেল শিরোনাম",
-  "@playtimeAdminPanelTitle": {
-    "description": "Playtime admin panel title"
-  },
-  "inviteDetail": "আমন্ত্রণের বিস্তারিত",
-  "@inviteDetail": {
-    "description": "Invite detail title"
-  },
-  "scheduled": "নির্ধারিত",
-  "@scheduled": {
-    "description": "Scheduled status"
-  },
-  "failedToCancelInvite": "আমন্ত্রণ বাতিল করা যায়নি",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
-  },
-  "failedToResendOtp": "OTP পুনরায় পাঠানো যায়নি",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
-  },
-  "scheduling": "নির্ধারণ করা হচ্ছে",
-  "@scheduling": {
-    "description": "Scheduling label"
-  },
-  "errorSavingMessage": "বার্তা সংরক্ষণ করতে ত্রুটি",
-  "@errorSavingMessage": {
-    "description": "Error saving message message"
-  },
-  "save": "সংরক্ষণ করুন",
-  "@save": {
-    "description": "Save button text"
-  },
-  "playtimeApprove": "Playtime অনুমোদন করুন",
-  "@playtimeApprove": {
-    "description": "Playtime approve button"
-  },
-  "createYourFirstSession": "আপনার প্রথম সেশন তৈরি করুন",
-  "@createYourFirstSession": {
-    "description": "Create your first session message"
-  },
-  "playtimeGameRejected": "গেম প্রত্যাখ্যান করা হয়েছে",
-  "@playtimeGameRejected": {
-    "description": "Game rejected message"
-  },
-  "recentGames": "সাম্প্রতিক গেম",
-  "@recentGames": {
-    "description": "Recent games label"
-  },
-  "customizeMessage": "বার্তা কাস্টমাইজ করুন",
-  "@customizeMessage": {
-    "description": "Customize message button"
-  },
-  "errorSendingMessage": "বার্তা পাঠাতে ত্রুটি",
-  "@errorSendingMessage": {
-    "description": "Error sending message message"
-  },
-  "confirmPassword": "পাসওয়ার্ড নিশ্চিত করুন",
-  "@confirmPassword": {
-    "description": "Confirm password field label"
-  },
-  "errorLoadingPrivacyRequests": "গোপনীয়তা অনুরোধ লোড করতে ত্রুটি",
-  "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message"
-  },
-  "connectedChildren": "সংযুক্ত শিশু",
-  "@connectedChildren": {
-    "description": "Connected children label"
-  },
-  "share": "শেয়ার করুন",
-  "@share": {
-    "description": "Share button text"
-  },
-  "playtimeEnterGameName": "গেমের নাম লিখুন",
-  "@playtimeEnterGameName": {
-    "description": "Enter game name label"
-  },
-  "pleaseLoginToViewProfile": "প্রোফাইল দেখতে অনুগ্রহ করে লগইন করুন",
-  "@pleaseLoginToViewProfile": {
-    "description": "Please login to view profile message"
-  },
-  "@@locale": "bn_BD",
-  "adminScreenTBD": "[BN_BD] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "back": "[BN_BD] Back",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
   "@back": {
     "description": "Back button text"
   },
-  "clicked": "[BN_BD] Clicked",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "@cancelInvite": {
+    "description": "Cancel invite button"
+  },
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "@choose": {
+    "description": "Choose button text"
+  },
   "@clicked": {
     "description": "Clicked status"
   },
-  "close": "[BN_BD] Close",
+  "@clientScreenTBD": {
+    "description": "Client screen TBD message"
+  },
   "@close": {
     "description": "Close button text"
   },
-  "createGame": "[BN_BD] Create Game",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message title"
+  },
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "@content": {
+    "description": "Content label"
+  },
+  "@copy": {
+    "description": "Copy button text"
+  },
   "@createGame": {
     "description": "Create game button"
   },
-  "failedToRevokeAccess": "[BN_BD] Failed to revoke access",
+  "@createLiveSession": {
+    "description": "Create live session button"
+  },
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
+  },
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "@created": {
+    "description": "Created status"
+  },
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "@dashboard": {
+    "description": "Dashboard title"
+  },
+  "@decline": {
+    "description": "Decline button"
+  },
+  "@defaultShareMessage": {
+    "description": "Default share message"
+  },
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "@details": {
+    "description": "Details label"
+  },
+  "@done": {
+    "description": "Done button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "@email": {
+    "description": "Email field label"
+  },
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "@enterGroupName": {
+    "description": "Enter group name placeholder"
+  },
+  "@error": {
+    "description": "Error message"
+  },
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message"
+  },
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message"
+  },
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "@errorSavingMessage": {
+    "description": "Error saving message message"
+  },
+  "@errorSendingMessage": {
+    "description": "Error sending message message"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message"
+  },
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "groupNameOptional": "[BN_BD] Group Name (Optional)",
+  "@familyDashboard": {
+    "description": "Family dashboard title"
+  },
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "@fcmToken": {
+    "description": "FCM token label"
+  },
+  "@forgotPassword": {
+    "description": "Forgot password link"
+  },
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "knownGroupDetected": "[BN_BD] Known group detected",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "@invite": {
+    "description": "Invite button"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "@inviteDetail": {
+    "description": "Invite detail title"
+  },
+  "@invited": {
+    "description": "Invited status"
+  },
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "link": "[BN_BD] Link",
   "@link": {
     "description": "Link label"
   },
-  "managePermissions": "[BN_BD] Manage Permissions",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@login": {
+    "description": "Login button text"
+  },
+  "@logout": {
+    "description": "Logout button text"
+  },
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "meetingReadyMessage": "[BN_BD] Your meeting is ready! Join now",
+  "@mediaOptional": {
+    "description": "Media optional label"
+  },
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "myInvites": "[BN_BD] My Invites",
+  "@meetingSharedSuccessfully": {
+    "description": "Meeting shared successfully message"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
   "@myInvites": {
     "description": "My invites title"
   },
-  "pendingInvites": "[BN_BD] Pending Invites",
+  "@myProfile": {
+    "description": "My profile title"
+  },
+  "@next": {
+    "description": "Next button text"
+  },
+  "@no": {
+    "description": "No button text"
+  },
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
+  },
+  "@notificationSettings": {
+    "description": "Notification settings title"
+  },
+  "@notifications": {
+    "description": "Notifications title"
+  },
+  "@ok": {
+    "description": "OK button text"
+  },
+  "@opened": {
+    "description": "Opened status"
+  },
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "@participants": {
+    "description": "Participants label"
+  },
+  "@password": {
+    "description": "Password field label"
+  },
+  "@paste": {
+    "description": "Paste button text"
+  },
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "playtimeChooseGame": "[BN_BD] Choose a game",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
+  },
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "playtimeNoSessions": "[BN_BD] No playtime sessions found.",
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "@playtimeCreate": {
+    "description": "Create button"
+  },
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "@playtimeGameApproved": {
+    "description": "Game approved message"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Game deleted message"
+  },
+  "@playtimeGameRejected": {
+    "description": "Game rejected message"
+  },
+  "@playtimeHub": {
+    "description": "Playtime hub title"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "@playtimeLive": {
+    "description": "Live play label"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
+  },
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "playtimeParentDashboardTitle": "[BN_BD] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "pleaseLoginForFamilyFeatures": "[BN_BD] Please login to access family features",
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "@playtimeVirtual": {
+    "description": "Virtual play label"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "pollOptions": "[BN_BD] Poll Options",
+  "@pleaseLoginToViewProfile": {
+    "description": "Please login to view profile message"
+  },
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "statusColon": "[BN_BD] Status:",
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "@recipients": {
+    "description": "Recipients label"
+  },
+  "@redo": {
+    "description": "Redo button text"
+  },
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  "@removeChild": {
+    "description": "Remove child button"
+  },
+  "@requestType": {
+    "description": "Request type label"
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@revoke": {
+    "description": "Revoke button"
+  },
+  "@revokeAccess": {
+    "description": "Revoke access button"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "@save": {
+    "description": "Save button text"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
+  },
+  "@scheduleForLater": {
+    "description": "Schedule for later button"
+  },
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "@scheduling": {
+    "description": "Scheduling label"
+  },
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "@select": {
+    "description": "Select button text"
+  },
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "@share": {
+    "description": "Share button text"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "@staffScreenTBD": {
+    "description": "Staff screen TBD message"
+  },
+  "@status": {
+    "description": "Status label"
+  },
   "@statusColon": {
     "description": "Status colon label"
-  }
+  },
+  "@success": {
+    "description": "Success message"
+  },
+  "@targetingFilters": {
+    "description": "Targeting filters label"
+  },
+  "@type": {
+    "description": "Type label"
+  },
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "@yes": {
+    "description": "Yes button text"
+  },
+  "@yesCancel": {
+    "description": "Yes cancel button"
+  },
+  "about": "সম্পর্কে",
+  "accept": "গ্রহণ করুন",
+  "accessRevokedSuccessfully": "অ্যাক্সেস সফলভাবে প্রত্যাহার করা হয়েছে",
+  "add": "যোগ করুন",
+  "adminBroadcast": "প্রশাসক সম্প্রচার",
+  "adminScreenTBD": "[BN_BD] Admin screen coming soon",
+  "appTitle": "অ্যাপ শিরোনাম",
+  "back": "[BN_BD] Back",
+  "cancel": "বাতিল করুন",
+  "cancelInvite": "আমন্ত্রণ বাতিল করুন",
+  "cancelInviteConfirmation": "আমন্ত্রণ রদ নিশ্চিত করুন",
+  "checkingPermissions": "অনুমতি যাচাই করা হচ্ছে",
+  "choose": "নির্বাচন করুন",
+  "clicked": "[BN_BD] Clicked",
+  "clientScreenTBD": "ক্লায়েন্ট স্ক্রিন পরে নিশ্চিত করা হবে",
+  "close": "[BN_BD] Close",
+  "composeBroadcastMessage": "ব্রডকাস্ট বার্তা তৈরি করুন",
+  "confirm": "নিশ্চিত করুন",
+  "confirmPassword": "পাসওয়ার্ড নিশ্চিত করুন",
+  "connectedChildren": "সংযুক্ত শিশু",
+  "content": "কন্টেন্ট",
+  "copy": "কপি করুন",
+  "createGame": "[BN_BD] Create Game",
+  "createLiveSession": "লাইভ সেশন তৈরি করুন",
+  "createNew": "নতুন তৈরি করুন",
+  "createVirtualSession": "ভার্চুয়াল সেশন তৈরি করুন",
+  "createYourFirstGame": "আপনার প্রথম গেম তৈরি করুন",
+  "createYourFirstSession": "আপনার প্রথম সেশন তৈরি করুন",
+  "created": "তৈরি হয়েছে",
+  "customizeMessage": "বার্তা কাস্টমাইজ করুন",
+  "cut": "কাটুন",
+  "dashboard": "ড্যাশবোর্ড",
+  "decline": "প্রত্যাখ্যান",
+  "defaultShareMessage": "ডিফল্ট শেয়ার বার্তা",
+  "delete": "মুছে দিন",
+  "details": "বিবরণ",
+  "done": "সম্পন্ন",
+  "download": "ডাউনলোড",
+  "edit": "সম্পাদনা করুন",
+  "email": "ইমেল",
+  "enableNotifications": "নোটিফিকেশন সক্রিয় করুন",
+  "enterGroupName": "গোষ্ঠী নাম লিখুন",
+  "error": "ত্রুটি",
+  "errorCheckingPermissions": "অনুমতি যাচাই করতে ত্রুটি",
+  "errorLoadingFamilyLinks": "পারিবারিক লিঙ্ক লোড করতে ত্রুটি",
+  "errorLoadingInvites": "আমন্ত্রণ লোড করতে ত্রুটি",
+  "errorLoadingPrivacyRequests": "গোপনীয়তা অনুরোধ লোড করতে ত্রুটি",
+  "errorLoadingProfile": "প্রোফাইল লোড করতে ত্রুটি",
+  "errorSavingMessage": "বার্তা সংরক্ষণ করতে ত্রুটি",
+  "errorSendingMessage": "বার্তা পাঠাতে ত্রুটি",
+  "failedToActionPrivacyRequest": "গোপনীয়তা অনুরোধ সফল হয়নি",
+  "failedToCancelInvite": "আমন্ত্রণ বাতিল করা যায়নি",
+  "failedToResendOtp": "OTP পুনরায় পাঠানো যায়নি",
+  "failedToRevokeAccess": "[BN_BD] Failed to revoke access",
+  "familyDashboard": "পরিবারের ড্যাশবোর্ড",
+  "familyMembers": "পরিবারের সদস্যরা",
+  "fcmToken": "FCM টোকেন",
+  "forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?",
+  "groupNameOptional": "[BN_BD] Group Name (Optional)",
+  "home": "হোম",
+  "invite": "আমন্ত্রণ করুন",
+  "inviteCancelledSuccessfully": "আমন্ত্রণ সফলভাবে বাতিল করা হয়েছে",
+  "inviteDetail": "আমন্ত্রণের বিস্তারিত",
+  "invited": "আমন্ত্রিত",
+  "knownGroupDetected": "[BN_BD] Known group detected",
+  "link": "[BN_BD] Link",
+  "loading": "লোড হচ্ছে",
+  "login": "লগইন",
+  "logout": "প্রস্থান করুন",
+  "managePermissions": "[BN_BD] Manage Permissions",
+  "mediaOptional": "মিডিয়া (ঐচ্ছিক)",
+  "meetingReadyMessage": "[BN_BD] Your meeting is ready! Join now",
+  "meetingSharedSuccessfully": "মিটিং সফলভাবে শেয়ার করা হয়েছে",
+  "messageSavedSuccessfully": "বার্তা সফলভাবে সংরক্ষণ করা হয়েছে",
+  "messageSentSuccessfully": "বার্তাটি সফলভাবে পাঠানো হয়েছে",
+  "myInvites": "[BN_BD] My Invites",
+  "myProfile": "আমার প্রোফাইল",
+  "next": "পরবর্তী",
+  "no": "না",
+  "noBroadcastMessages": "কোনও সম্প্রচার বার্তা নেই",
+  "noFamilyMembersYet": "পরিবারের কোনও সদস্য নেই",
+  "noGamesYet": "এখনও কোনও গেম নেই",
+  "noInvites": "কোনও আমন্ত্রণ নেই",
+  "noPermissionForBroadcast": "সম্প্রচারের অনুমতি নেই",
+  "noProfileFound": "কোনও প্রোফাইল পাওয়া যায়নি",
+  "noResults": "কোনও ফলাফল নেই",
+  "noSessionsYet": "এখনও কোনও সেশন নেই",
+  "notificationSettings": "নোটিফিকেশন সেটিংস",
+  "notifications": "বিজ্ঞপ্তি",
+  "ok": "ঠিক আছে",
+  "opened": "খোলা হয়েছে",
+  "otpResentSuccessfully": "OTP সফলভাবে পুনরায় পাঠানো হয়েছে",
+  "participants": "অংশগ্রহণকারী",
+  "password": "পাসওয়ার্ড",
+  "paste": "পেস্ট করুন",
+  "pendingInvites": "[BN_BD] Pending Invites",
+  "pickImage": "ছবি নির্বাচন করুন",
+  "pickVideo": "ভিডিও নির্বাচন করুন",
+  "playtimeAdminPanelTitle": "Playtime অ্যাডমিন প্যানেল শিরোনাম",
+  "playtimeApprove": "Playtime অনুমোদন করুন",
+  "playtimeChooseFriends": "বন্ধু নির্বাচন করুন",
+  "playtimeChooseGame": "[BN_BD] Choose a game",
+  "playtimeChooseTime": "সময় নির্বাচন করুন",
+  "playtimeCreate": "Playtime তৈরি করুন",
+  "playtimeCreateSession": "সেশন তৈরি করুন",
+  "playtimeDescription": "Playtime বর্ণনা",
+  "playtimeEnterGameName": "গেমের নাম লিখুন",
+  "playtimeGameApproved": "গেম অনুমোদিত হয়েছে",
+  "playtimeGameDeleted": "গেম মুছে ফেলা হয়েছে",
+  "playtimeGameRejected": "গেম প্রত্যাখ্যান করা হয়েছে",
+  "playtimeHub": "Playtime হাব",
+  "playtimeLandingChooseMode": "মোড নির্বাচন করুন",
+  "playtimeLive": "লাইভ Playtime",
+  "playtimeLiveScheduled": "লাইভ সেশন নির্ধারিত হয়েছে",
+  "playtimeModeLive": "লাইভ মোড",
+  "playtimeModeVirtual": "ভার্চুয়াল মোড",
+  "playtimeNoSessions": "[BN_BD] No playtime sessions found.",
+  "playtimeParentDashboardTitle": "[BN_BD] Playtime Dashboard",
+  "playtimeReject": "Playtime প্রত্যাখ্যান করুন",
+  "playtimeTitle": "Playtime শিরোনাম",
+  "playtimeVirtual": "ভার্চুয়াল Playtime",
+  "playtimeVirtualStarted": "ভার্চুয়াল সেশন শুরু হয়েছে",
+  "pleaseLoginForFamilyFeatures": "[BN_BD] Please login to access family features",
+  "pleaseLoginToViewProfile": "প্রোফাইল দেখতে অনুগ্রহ করে লগইন করুন",
+  "pollOptions": "[BN_BD] Poll Options",
+  "previous": "পূর্ববর্তী",
+  "profile": "প্রোফাইল",
+  "quickActions": "দ্রুত ক্রিয়াকলাপ",
+  "recentGames": "সাম্প্রতিক গেম",
+  "recipients": "প্রাপকেরা",
+  "redo": "পুনরায় করুন",
+  "refresh": "রিফ্রেশ",
+  "removeChild": "শিশু অপসারণ করুন",
+  "requestType": "অনুরোধের ধরন",
+  "retry": "আবার চেষ্টা করুন",
+  "revoke": "প্রত্যাহার করুন",
+  "revokeAccess": "অ্যাক্সেস প্রত্যাহার করুন",
+  "revokeAccessConfirmation": "অ্যাক্সেস প্রত্যাহারের নিশ্চিতকরণ",
+  "save": "সংরক্ষণ করুন",
+  "saveGroupForRecognition": "স্বীকৃতির জন্য গ্রুপ সংরক্ষণ করুন",
+  "scheduleForLater": "পরে শিডিউল করুন",
+  "scheduleMessage": "বার্তা নির্ধারণ করুন",
+  "scheduled": "নির্ধারিত",
+  "scheduledFor": "নির্ধারিত",
+  "scheduling": "নির্ধারণ করা হচ্ছে",
+  "search": "অনুসন্ধান",
+  "select": "চয়ন করুন",
+  "sendNow": "এখন পাঠান",
+  "settings": "সেটিংস",
+  "share": "শেয়ার করুন",
+  "shareOnWhatsApp": "[BN_BD] Share on WhatsApp",
+  "signUp": "সাইন আপ করুন",
+  "staffScreenTBD": "কর্মী স্ক্রিন পরে নিশ্চিত করা হবে",
+  "status": "অবস্থা",
+  "statusColon": "[BN_BD] Status:",
+  "success": "সফল",
+  "targetingFilters": "টার্গেটিং ফিল্টার",
+  "type": "পরামিতি",
+  "undo": "পূর্বাবস্থা",
+  "upcomingSessions": "আসন্ন সেশন",
+  "upload": "আপলোড করুন",
+  "viewAll": "সব দেখুন",
+  "welcome": "স্বাগতম",
+  "welcomeToPlaytime": "Playtime এ স্বাগতম",
+  "yes": "হ্যাঁ",
+  "yesCancel": "হ্যাঁ, বাতিল করুন"
 }

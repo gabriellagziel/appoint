@@ -17,7 +17,7 @@ Future<void> main() async {
     });
 
     test('addReferralSignupPoints increments points', () async {
-      final userId = 'user1';
+      const userId = 'user1';
       var points = await service.getPoints(userId);
       expect(points, 0);
 
@@ -27,7 +27,7 @@ Future<void> main() async {
     });
 
     test('multiple increments accumulate', () async {
-      final userId = 'user2';
+      const userId = 'user2';
       await service.addReferralSignupPoints(userId);
       await service.addReferralSignupPoints(userId);
 

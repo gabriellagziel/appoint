@@ -7,11 +7,11 @@ class ReferralService {
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
 
-  ReferralService({FirebaseFirestore? firestore, FirebaseAuth? auth})
+  ReferralService({final FirebaseFirestore? firestore, final FirebaseAuth? auth})
       : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
 
-  Future<String> generateReferralCode(String userId) async {
+  Future<String> generateReferralCode(final String userId) async {
     final docRef = _firestore.collection('referrals').doc(userId);
     final existing = await docRef.get();
     final data = existing.data();
@@ -25,7 +25,7 @@ class ReferralService {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     do {
       code =
-          List.generate(8, (_) => chars[random.nextInt(chars.length)]).join();
+          List.generate(8, (final _) => chars[random.nextInt(chars.length)]).join();
       final query = await _firestore
           .collection('referrals')
           .where('code', isEqualTo: code)

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import '../models/comment.dart';
+import 'package:appoint/models/comment.dart';
 
 /// Simple comment service used for the comments UI widget tests.
 class CommentService {
@@ -11,7 +11,7 @@ class CommentService {
     ];
   }
 
-  Future<void> postComment(String text) async {
+  Future<void> postComment(final String text) async {
     // Stubbed network call
     await Future<void>.delayed(const Duration(milliseconds: 100));
   }

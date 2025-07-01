@@ -7,7 +7,7 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
   group('ContentLibraryScreen', () {
-    testWidgets('shows placeholder text', (WidgetTester tester) async {
+    testWidgets('shows placeholder text', (final WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: ContentLibraryScreen(),

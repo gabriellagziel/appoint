@@ -9,7 +9,7 @@ void main() async {
     exit(1);
   }
   final enMap = jsonDecode(await enFile.readAsString()) as Map<String, dynamic>;
-  final encoder = const JsonEncoder.withIndent('  ');
+  const encoder = JsonEncoder.withIndent('  ');
   final missing = <String, List<String>>{};
 
   await for (final entity in l10nDir.list()) {
@@ -50,8 +50,8 @@ void main() async {
 
   final buffer = StringBuffer()
     ..writeln('const Map<String, List<String>> missingTranslations = {');
-  missing.forEach((locale, keys) {
-    final joined = keys.map((k) => "'$k'").join(', ');
+  missing.forEach((final locale, final keys) {
+    final joined = keys.map((final k) => "'$k'").join(', ');
     buffer.writeln("  '$locale': [$joined],");
   });
   buffer.writeln('};');

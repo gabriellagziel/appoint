@@ -2,7 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-final userSubscriptionProvider = FutureProvider<bool>((ref) async {
+final userSubscriptionProvider = FutureProvider<bool>((final ref) async {
   final uid = FirebaseAuth.instance.currentUser?.uid;
   if (uid == null) return false;
   final doc =

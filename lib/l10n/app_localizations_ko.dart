@@ -54,7 +54,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get undo => '실행 취소';
 
   @override
-  String get opened => '열림';
+  String opened(Object count) {
+    return '열림';
+  }
 
   @override
   String get createVirtualSession => '가상 세션 생성';
@@ -269,9 +271,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get playtimeLive => '라이브 플레이';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return '초대 로딩 오류';
-  }
+  String get errorLoadingInvites => '초대 로딩 오류';
 
   @override
   String get targetingFilters => '타겟팅 필터';
@@ -289,7 +289,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get accessRevokedSuccessfully => '접근이 성공적으로 취소되었습니다';
 
   @override
-  String get type => '유형';
+  String type(Object type) {
+    return '유형';
+  }
 
   @override
   String get checkingPermissions => '권한 확인 중...';
@@ -304,7 +306,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get email => '이메일';
 
   @override
-  String get shareOnWhatsApp => 'WhatsApp에서 공유';
+  String get shareOnWhatsApp => '[KO] Share on WhatsApp';
 
   @override
   String get notificationSettings => '알림 설정';
@@ -327,226 +329,244 @@ class AppLocalizationsKo extends AppLocalizations {
   String get notifications => '알림';
 
   @override
-  String get details => '세부사항';
+  String get details => '[KO] Details';
 
   @override
-  String get cancelInvite => '초대 취소';
+  String get cancelInvite => '[KO] Cancel Invite';
 
   @override
-  String get createNew => '새로 만들기';
+  String get createNew => '[KO] Create New';
 
   @override
-  String get settings => '설정';
+  String get settings => '[KO] Settings';
 
   @override
-  String get playtimeReject => '거부';
+  String get playtimeReject => '[KO] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return '프로필 로딩 오류';
-  }
+  String get errorLoadingProfile => '[KO] Error loading profile';
 
   @override
-  String get edit => '편집';
+  String get edit => '[KO] Edit';
 
   @override
-  String get add => '추가';
+  String get add => '[KO] Add';
 
   @override
-  String get playtimeGameApproved => '게임 승인됨';
+  String get playtimeGameApproved => '[KO] Game approved';
 
   @override
-  String get forgotPassword => '비밀번호를 잊으셨나요?';
+  String get forgotPassword => '[KO] Forgot Password?';
 
   @override
-  String get familyDashboard => '가족 대시보드';
+  String get familyDashboard => '[KO] Family Dashboard';
 
   @override
-  String get loading => '로딩 중...';
+  String get loading => '[KO] Loading...';
 
   @override
-  String get quickActions => '빠른 작업';
+  String get quickActions => '[KO] Quick Actions';
 
   @override
-  String get playtimeTitle => '플레이타임';
+  String get playtimeTitle => '[KO] Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP가 성공적으로 재전송되었습니다';
+  String get otpResentSuccessfully => '[KO] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return '권한 확인 오류';
+    return '[KO] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => '클라이언트 화면 곧 출시';
+  String get clientScreenTBD => '[KO] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM 토큰';
+    return '[KO] FCM Token';
   }
 
   @override
-  String get pickImage => '이미지 선택';
+  String get pickImage => '[KO] Pick Image';
 
   @override
-  String get previous => '이전';
+  String get previous => '[KO] Previous';
 
   @override
-  String get noProfileFound => '프로필을 찾을 수 없습니다';
+  String get noProfileFound => '[KO] No profile found';
 
   @override
-  String get noFamilyMembersYet => '아직 가족 구성원이 없습니다';
+  String get noFamilyMembersYet => '[KO] No family members yet';
 
   @override
-  String get mediaOptional => '미디어 (선택사항)';
+  String get mediaOptional => '[KO] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => '메시지가 성공적으로 저장되었습니다';
+  String get messageSavedSuccessfully => '[KO] Message saved successfully';
 
   @override
-  String get scheduledFor => '예약됨';
+  String get scheduledFor => '[KO] Scheduled for';
 
   @override
-  String get dashboard => '대시보드';
+  String get dashboard => '[KO] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => '브로드캐스트 권한 없음';
+  String get noPermissionForBroadcast => '[KO] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => '플레이타임 게임 – 관리자';
+  String get playtimeAdminPanelTitle => '[KO] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => '초대 세부사항';
+  String get inviteDetail => '[KO] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return '예약됨';
+    return '[KO] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'OTP 재전송 실패';
+    return '[KO] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => '예약';
+  String get scheduling => '[KO] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return '메시지 저장 오류';
+    return '[KO] Error saving message';
   }
 
   @override
-  String get save => '저장';
+  String get save => '[KO] Save';
 
   @override
-  String get playtimeApprove => '승인';
+  String get playtimeApprove => '[KO] Approve';
 
   @override
-  String get createYourFirstSession => '첫 번째 세션을 만드세요';
+  String get createYourFirstSession => '[KO] Create your first session';
 
   @override
-  String get playtimeGameRejected => '게임 거부됨';
+  String get playtimeGameRejected => '[KO] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return '접근 취소 실패';
+    return '[KO] Failed to revoke access';
   }
 
   @override
-  String get recentGames => '최근 게임';
+  String get recentGames => '[KO] Recent Games';
 
   @override
-  String get customizeMessage => '메시지 맞춤 설정';
+  String get customizeMessage => '[KO] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return '초대 취소 실패';
+    return '[KO] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return '메시지 전송 오류';
+    return '[KO] Error sending message';
   }
 
   @override
-  String get confirmPassword => '비밀번호 확인';
+  String get confirmPassword => '[KO] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return '개인정보 요청 로딩 오류';
+    return '[KO] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => '연결된 자녀';
+  String get connectedChildren => '[KO] Connected Children';
 
   @override
-  String get share => '공유';
+  String get share => '[KO] Share';
 
   @override
-  String get playtimeEnterGameName => '게임 이름 입력';
+  String get playtimeEnterGameName => '[KO] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '가족 기능에 접근하려면 로그인하세요';
+  String get pleaseLoginForFamilyFeatures =>
+      '[KO] Please login to access family features';
 
   @override
-  String get myInvites => '내 초대';
+  String get myInvites => '[KO] My Invites';
 
   @override
-  String get createGame => '게임 생성';
+  String get createGame => '[KO] Create Game';
 
   @override
-  String get groupNameOptional => '그룹 이름 (선택사항)';
+  String get groupNameOptional => '[KO] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => '플레이타임 세션을 찾을 수 없습니다.';
+  String get playtimeNoSessions => '[KO] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => '관리자 화면 곧 출시';
+  String get adminScreenTBD => '[KO] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => '플레이타임 대시보드';
+  String get playtimeParentDashboardTitle => '[KO] Playtime Dashboard';
 
   @override
-  String get close => '닫기';
+  String get close => '[KO] Close';
 
   @override
-  String get knownGroupDetected => '알려진 그룹 감지됨';
+  String get knownGroupDetected => '[KO] Known group detected';
 
   @override
-  String get back => '뒤로';
+  String get back => '[KO] Back';
 
   @override
-  String get playtimeChooseGame => '게임 선택';
+  String get playtimeChooseGame => '[KO] Choose a game';
 
   @override
-  String get managePermissions => '권한 관리';
+  String get managePermissions => '[KO] Manage Permissions';
 
   @override
-  String get pollOptions => '투표 옵션';
+  String get pollOptions => '[KO] Poll Options';
 
   @override
   String clicked(Object count) {
-    return '클릭됨';
+    return '[KO] Clicked';
   }
 
   @override
   String link(Object link) {
-    return '링크';
+    return '[KO] Link';
   }
 
   @override
-  String get meetingReadyMessage => '회의가 준비되었습니다! 지금 참여하세요';
+  String get meetingReadyMessage => '[KO] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => '대기 중인 초대';
+  String get pendingInvites => '[KO] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return '상태:';
+    return '[KO] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => '프로필을 보려면 로그인하세요.';
+  String get pleaseLoginToViewProfile =>
+      '[KO] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

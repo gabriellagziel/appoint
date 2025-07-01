@@ -9,19 +9,19 @@ class AppLocalizationsDa extends AppLocalizations {
   AppLocalizationsDa([String locale = 'da']) : super(locale);
 
   @override
-  String get refresh => 'Opdater';
+  String get refresh => '[DA] Refresh';
 
   @override
   String get home => 'Hjem';
 
   @override
-  String get noSessionsYet => 'Ingen sessioner endnu';
+  String get noSessionsYet => '[DA] No sessions yet';
 
   @override
   String get ok => 'OK';
 
   @override
-  String get playtimeLandingChooseMode => 'Vælg en tilstand';
+  String get playtimeLandingChooseMode => '[DA] Choose your play mode:';
 
   @override
   String get signUp => 'Tilmeld dig';
@@ -33,16 +33,16 @@ class AppLocalizationsDa extends AppLocalizations {
   String get decline => 'Afvis';
 
   @override
-  String get adminBroadcast => 'Administrator-udsendelse';
+  String get adminBroadcast => '[DA] Admin Broadcast';
 
   @override
-  String get login => 'Log ind';
+  String get login => '[DA] Login';
 
   @override
   String get playtimeChooseFriends => 'Vælg venner';
 
   @override
-  String get noInvites => 'Ingen invitationer';
+  String get noInvites => '[DA] No invites';
 
   @override
   String get playtimeChooseTime => 'Vælg tidspunkt';
@@ -51,13 +51,15 @@ class AppLocalizationsDa extends AppLocalizations {
   String get success => 'Succes';
 
   @override
-  String get undo => 'Fortryd';
+  String get undo => '[DA] Undo';
 
   @override
-  String get opened => 'Åbnet';
+  String opened(Object count) {
+    return 'Åbnet';
+  }
 
   @override
-  String get createVirtualSession => 'Opret virtuel session';
+  String get createVirtualSession => '[DA] Create Virtual Session';
 
   @override
   String get messageSentSuccessfully => 'Besked sendt med succes';
@@ -86,7 +88,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get saveGroupForRecognition => 'Gem gruppe til genkendelse';
 
   @override
-  String get playtimeLiveScheduled => 'Live-session planlagt';
+  String get playtimeLiveScheduled => '[DA] Live playtime scheduled!';
 
   @override
   String get revokeAccessConfirmation => 'Bekræft tilbagekaldelse';
@@ -99,7 +101,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Fejl ved indlæsning af familie-links';
+    return '[DA] Error loading family links';
   }
 
   @override
@@ -110,7 +112,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Kunne ikke behandle privatlivsanmodning';
+    return '[DA] Failed to action privacy request';
   }
 
   @override
@@ -120,7 +122,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get accept => 'Accepter';
 
   @override
-  String get playtimeModeVirtual => 'Virtuel tilstand';
+  String get playtimeModeVirtual => '[DA] Virtual Play';
 
   @override
   String get playtimeDescription => 'Playtime-beskrivelse';
@@ -129,7 +131,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get delete => 'Slet';
 
   @override
-  String get playtimeVirtualStarted => 'Virtuel session startet';
+  String get playtimeVirtualStarted => '[DA] Virtual playtime started!';
 
   @override
   String get createYourFirstGame => 'Opret dit første spil';
@@ -143,22 +145,22 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String get noResults => 'Ingen resultater';
+  String get noResults => '[DA] No results found';
 
   @override
   String get yes => 'Ja';
 
   @override
-  String get invite => 'Inviter';
+  String get invite => '[DA] Invite';
 
   @override
-  String get playtimeModeLive => 'Live-tilstand';
+  String get playtimeModeLive => '[DA] Live Play';
 
   @override
   String get done => 'Færdig';
 
   @override
-  String get defaultShareMessage => 'Standard delingsbesked';
+  String get defaultShareMessage => '[DA] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Nej';
@@ -170,19 +172,19 @@ class AppLocalizationsDa extends AppLocalizations {
   String get error => 'Fejl';
 
   @override
-  String get createLiveSession => 'Opret live session';
+  String get createLiveSession => '[DA] Create Live Session';
 
   @override
-  String get enableNotifications => 'Aktivér underretninger';
+  String get enableNotifications => '[DA] Enable Notifications';
 
   @override
   String invited(Object date) {
-    return 'Inviteret';
+    return '[DA] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'Indhold';
+    return '[DA] Content';
   }
 
   @override
@@ -198,13 +200,14 @@ class AppLocalizationsDa extends AppLocalizations {
   String get playtimeVirtual => 'Virtuel Playtime';
 
   @override
-  String get staffScreenTBD => 'Personalets skærm ikke fastlagt';
+  String get staffScreenTBD => '[DA] Staff screen coming soon';
 
   @override
   String get cut => 'Klip';
 
   @override
-  String get inviteCancelledSuccessfully => 'Invitation annulleret med succes';
+  String get inviteCancelledSuccessfully =>
+      '[DA] Invite cancelled successfully';
 
   @override
   String get retry => 'Prøv igen';
@@ -216,7 +219,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get sendNow => 'Send nu';
 
   @override
-  String get noGamesYet => 'Ingen spil endnu';
+  String get noGamesYet => '[DA] No games yet';
 
   @override
   String get select => 'Vælg';
@@ -228,27 +231,27 @@ class AppLocalizationsDa extends AppLocalizations {
   String get choose => 'Vælg';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[DA] Profile';
 
   @override
   String get removeChild => 'Fjern barn';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return '[DA] Status';
   }
 
   @override
   String get logout => 'Log ud';
 
   @override
-  String get paste => 'Sæt ind';
+  String get paste => '[DA] Paste';
 
   @override
   String get welcome => 'Velkommen';
 
   @override
-  String get playtimeCreateSession => 'Opret session';
+  String get playtimeCreateSession => '[DA] Create a Playtime Session';
 
   @override
   String get familyMembers => 'Familie-medlemmer';
@@ -257,10 +260,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String get upload => 'Upload';
 
   @override
-  String get upcomingSessions => 'Kommende sessioner';
+  String get upcomingSessions => '[DA] Upcoming Sessions';
 
   @override
-  String get enterGroupName => 'Indtast gruppenavn';
+  String get enterGroupName => '[DA] Enter group name';
 
   @override
   String get confirm => 'Bekræft';
@@ -269,12 +272,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String get playtimeLive => 'Live Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Fejl ved indlæsning af invitationer';
-  }
+  String get errorLoadingInvites => '[DA] Error loading invites';
 
   @override
-  String get targetingFilters => 'Målretningsfiltre';
+  String get targetingFilters => '[DA] Targeting Filters';
 
   @override
   String get pickVideo => 'Vælg video';
@@ -289,7 +290,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get accessRevokedSuccessfully => 'Adgang tilbagekaldt med succes';
 
   @override
-  String get type => 'Type';
+  String type(Object type) {
+    return 'Type';
+  }
 
   @override
   String get checkingPermissions => 'Tjekker rettigheder';
@@ -304,47 +307,45 @@ class AppLocalizationsDa extends AppLocalizations {
   String get email => 'Email';
 
   @override
-  String get shareOnWhatsApp => 'Del på WhatsApp';
+  String get shareOnWhatsApp => '[DA] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Underretningsindstillinger';
+  String get notificationSettings => '[DA] Notification Settings';
 
   @override
-  String get myProfile => 'Min profil';
+  String get myProfile => '[DA] My Profile';
 
   @override
   String get revoke => 'Tilbagekald';
 
   @override
-  String get noBroadcastMessages => 'Ingen udsendelsesbeskeder';
+  String get noBroadcastMessages => '[DA] No messages yet';
 
   @override
   String requestType(Object type) {
-    return 'Anmodningstype';
+    return '[DA] Request Type';
   }
 
   @override
-  String get notifications => 'Underretninger';
+  String get notifications => '[DA] Notifications';
 
   @override
   String get details => 'Detaljer';
 
   @override
-  String get cancelInvite => 'Annuller invitation';
+  String get cancelInvite => '[DA] Cancel Invite';
 
   @override
   String get createNew => 'Opret ny';
 
   @override
-  String get settings => 'Indstillinger';
+  String get settings => '[DA] Settings';
 
   @override
   String get playtimeReject => 'Afvis Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Fejl ved indlæsning af profil';
-  }
+  String get errorLoadingProfile => '[DA] Error loading profile';
 
   @override
   String get edit => 'Redigér';
@@ -362,10 +363,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String get familyDashboard => 'Familie-oversigt';
 
   @override
-  String get loading => 'Indlæser';
+  String get loading => '[DA] Loading...';
 
   @override
-  String get quickActions => 'Hurtige handlinger';
+  String get quickActions => '[DA] Quick Actions';
 
   @override
   String get playtimeTitle => 'Playtime-titel';
@@ -383,20 +384,20 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'FCM-token';
+    return '[DA] FCM Token';
   }
 
   @override
   String get pickImage => 'Vælg billede';
 
   @override
-  String get previous => 'Forrige';
+  String get previous => '[DA] Previous';
 
   @override
-  String get noProfileFound => 'Ingen profil fundet';
+  String get noProfileFound => '[DA] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Ingen familie-medlemmer endnu';
+  String get noFamilyMembersYet => '[DA] No family members yet';
 
   @override
   String get mediaOptional => 'Medier (valgfri)';
@@ -411,13 +412,13 @@ class AppLocalizationsDa extends AppLocalizations {
   String get dashboard => 'Oversigt';
 
   @override
-  String get noPermissionForBroadcast => 'Ingen tilladelse til udsendelse';
+  String get noPermissionForBroadcast => '[DA] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime-adminpanel titel';
+  String get playtimeAdminPanelTitle => '[DA] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Invitation detaljer';
+  String get inviteDetail => '[DA] Invite Details';
 
   @override
   String scheduled(Object date) {
@@ -444,7 +445,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get playtimeApprove => 'Godkend Playtime';
 
   @override
-  String get createYourFirstSession => 'Opret din første session';
+  String get createYourFirstSession => '[DA] Create your first session';
 
   @override
   String get playtimeGameRejected => 'Spil afvist';
@@ -462,7 +463,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Kunne ikke annullere invitation';
+    return '[DA] Failed to cancel invite';
   }
 
   @override
@@ -475,23 +476,24 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Fejl ved indlæsning af privatlivsanmodninger';
+    return '[DA] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Forbundne børn';
+  String get connectedChildren => '[DA] Connected Children';
 
   @override
   String get share => 'Del';
 
   @override
-  String get playtimeEnterGameName => 'Indtast spilnavn';
+  String get playtimeEnterGameName => '[DA] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => 'Log ind for familie-funktioner';
+  String get pleaseLoginForFamilyFeatures =>
+      '[DA] Please login to access family features';
 
   @override
-  String get myInvites => 'Mine invitationer';
+  String get myInvites => '[DA] My Invites';
 
   @override
   String get createGame => 'Opret spil';
@@ -500,13 +502,13 @@ class AppLocalizationsDa extends AppLocalizations {
   String get groupNameOptional => 'Gruppenavn (valgfri)';
 
   @override
-  String get playtimeNoSessions => 'Ingen Playtime sessioner';
+  String get playtimeNoSessions => '[DA] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Admin-skærm ikke fastlagt';
+  String get adminScreenTBD => '[DA] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Forældre-oversigtstitel Playtime';
+  String get playtimeParentDashboardTitle => '[DA] Playtime Dashboard';
 
   @override
   String get close => 'Luk';
@@ -521,10 +523,10 @@ class AppLocalizationsDa extends AppLocalizations {
   String get playtimeChooseGame => 'Vælg spil';
 
   @override
-  String get managePermissions => 'Administrer rettigheder';
+  String get managePermissions => '[DA] Manage Permissions';
 
   @override
-  String get pollOptions => 'Afstemningsmuligheder';
+  String get pollOptions => '[DA] Poll Options';
 
   @override
   String clicked(Object count) {
@@ -533,20 +535,39 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[DA] Link';
   }
 
   @override
   String get meetingReadyMessage => 'Møde er klar';
 
   @override
-  String get pendingInvites => 'Ventende invitationer';
+  String get pendingInvites => '[DA] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[DA] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Log ind for at se profil';
+  String get pleaseLoginToViewProfile =>
+      '[DA] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

@@ -3,7 +3,7 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:appoint/utils/datetime_converter.dart';
 
 import 'package:appoint/models/contact.dart';
-import 'invite.dart';
+import 'package:appoint/models/invite.dart';
 
 part 'appointment.g.dart';
 
@@ -32,8 +32,13 @@ class Appointment {
     this.status = InviteStatus.pending,
   });
 
-  factory Appointment.fromJson(Map<String, dynamic> json) =>
+  factory Appointment.fromJson(final Map<String, dynamic> json) =>
       _$AppointmentFromJson(json);
 
   Map<String, dynamic> toJson() => _$AppointmentToJson(this);
+}
+
+extension AppointmentExtension on Appointment {
+  String get title => 'Appointment ${id.substring(0, 8)}';
+  DateTime get dateTime => scheduledAt;
 }

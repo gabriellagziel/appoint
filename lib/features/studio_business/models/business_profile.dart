@@ -43,29 +43,29 @@ class BusinessProfile {
     this.isAdminFreeAccess,
   });
 
-  factory BusinessProfile.fromJson(Map<String, dynamic> json) =>
+  factory BusinessProfile.fromJson(final Map<String, dynamic> json) =>
       _$BusinessProfileFromJson(json);
 
   Map<String, dynamic> toJson() => _$BusinessProfileToJson(this);
 
   BusinessProfile copyWith({
-    String? id,
-    String? name,
-    String? description,
-    String? address,
-    String? phone,
-    String? email,
-    String? website,
-    List<String>? services,
-    Map<String, dynamic>? businessHours,
-    String? logoUrl,
-    String? coverImageUrl,
-    bool? isActive,
-    DateTime? createdAt,
-    DateTime? updatedAt,
-    String? ownerId,
-    String? imageUrl,
-    bool? isAdminFreeAccess,
+    final String? id,
+    final String? name,
+    final String? description,
+    final String? address,
+    final String? phone,
+    final String? email,
+    final String? website,
+    final List<String>? services,
+    final Map<String, dynamic>? businessHours,
+    final String? logoUrl,
+    final String? coverImageUrl,
+    final bool? isActive,
+    final DateTime? createdAt,
+    final DateTime? updatedAt,
+    final String? ownerId,
+    final String? imageUrl,
+    final bool? isAdminFreeAccess,
   }) {
     return BusinessProfile(
       id: id ?? this.id,

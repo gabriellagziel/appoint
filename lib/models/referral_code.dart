@@ -11,7 +11,7 @@ class ReferralCode {
     required this.createdAt,
   });
 
-  factory ReferralCode.fromMap(Map<String, dynamic> map) {
+  factory ReferralCode.fromMap(final Map<String, dynamic> map) {
     return ReferralCode(
       userId: map['userId'] as String,
       code: map['code'] as String,

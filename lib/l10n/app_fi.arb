@@ -1,664 +1,664 @@
 {
-  "refresh": "Päivitä",
-  "@refresh": {
-    "description": "Refresh button text"
-  },
-  "home": "Koti",
-  "@home": {
-    "description": "Home navigation label"
-  },
-  "noSessionsYet": "[FI] No sessions yet",
-  "@noSessionsYet": {
-    "description": "No sessions yet message"
-  },
-  "ok": "OK",
-  "@ok": {
-    "description": "OK button text"
-  },
-  "playtimeLandingChooseMode": "Valitse tila",
-  "@playtimeLandingChooseMode": {
-    "description": "Playtime landing choose mode message"
-  },
-  "signUp": "Rekisteröidy",
-  "@signUp": {
-    "description": "Sign up button text"
-  },
-  "scheduleMessage": "Ajoita viesti",
-  "@scheduleMessage": {
-    "description": "Schedule message button"
-  },
-  "decline": "Hylkää",
-  "@decline": {
-    "description": "Decline button"
-  },
-  "adminBroadcast": "Järjestelmän lähetys",
-  "@adminBroadcast": {
-    "description": "Admin broadcast title"
-  },
-  "login": "Kirjaudu sisään",
-  "@login": {
-    "description": "Login button text"
-  },
-  "playtimeChooseFriends": "Valitse ystävät",
-  "@playtimeChooseFriends": {
-    "description": "Choose friends label"
-  },
-  "noInvites": "Ei kutsuja",
-  "@noInvites": {
-    "description": "No invites message"
-  },
-  "playtimeChooseTime": "Valitse aika",
-  "@playtimeChooseTime": {
-    "description": "Choose time label"
-  },
-  "success": "[FI] Success",
-  "@success": {
-    "description": "Success message"
-  },
-  "undo": "Kumoa",
-  "@undo": {
-    "description": "Undo button text"
-  },
-  "opened": "[FI] Opened",
-  "@opened": {
-    "description": "Opened status"
-  },
-  "createVirtualSession": "Luo virtuaalisessio",
-  "@createVirtualSession": {
-    "description": "Create virtual session button"
-  },
-  "messageSentSuccessfully": "[FI] Message sent successfully",
-  "@messageSentSuccessfully": {
-    "description": "Message sent successfully message"
-  },
-  "redo": "Tee uudelleen",
-  "@redo": {
-    "description": "Redo button text"
-  },
-  "next": "Seuraava",
-  "@next": {
-    "description": "Next button text"
-  },
-  "search": "Etsi",
-  "@search": {
-    "description": "Search placeholder text"
-  },
-  "cancelInviteConfirmation": "Peru kutsun vahvistus",
-  "@cancelInviteConfirmation": {
-    "description": "Cancel invite confirmation message"
-  },
-  "created": "Luotu",
-  "@created": {
-    "description": "Created status"
-  },
-  "revokeAccess": "Kumoa oikeudet",
-  "@revokeAccess": {
-    "description": "Revoke access button"
-  },
-  "saveGroupForRecognition": "Tallenna ryhmä tunnistusta varten",
-  "@saveGroupForRecognition": {
-    "description": "Save group for recognition label"
-  },
-  "playtimeLiveScheduled": "[FI] Live playtime scheduled!",
-  "@playtimeLiveScheduled": {
-    "description": "Live playtime scheduled message"
-  },
-  "revokeAccessConfirmation": "Oikeuksien peruuttamisen vahvistus",
-  "@revokeAccessConfirmation": {
-    "description": "Revoke access confirmation message"
-  },
-  "download": "[FI] Download",
-  "@download": {
-    "description": "Download button text"
-  },
-  "password": "Salasana",
-  "@password": {
-    "description": "Password field label"
-  },
-  "errorLoadingFamilyLinks": "[FI] Error loading family links",
-  "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message"
-  },
-  "cancel": "Peruuta",
-  "@cancel": {
-    "description": "Cancel button text"
-  },
-  "playtimeCreate": "Luo Playtime",
-  "@playtimeCreate": {
-    "description": "Create button"
-  },
-  "failedToActionPrivacyRequest": "[FI] Failed to action privacy request",
-  "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message"
-  },
-  "appTitle": "Sovelluksen otsikko",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
-  "accept": "Hyväksy",
-  "@accept": {
-    "description": "Accept button"
-  },
-  "playtimeModeVirtual": "Virtuaalitila",
-  "@playtimeModeVirtual": {
-    "description": "Virtual play mode label"
-  },
-  "playtimeDescription": "Playtime-kuvaus",
-  "@playtimeDescription": {
-    "description": "Playtime description"
-  },
-  "delete": "Poista",
-  "@delete": {
-    "description": "Delete button text"
-  },
-  "playtimeVirtualStarted": "Virtuaalisessio aloitettu",
-  "@playtimeVirtualStarted": {
-    "description": "Virtual playtime started message"
-  },
-  "createYourFirstGame": "[FI] Create your first game",
-  "@createYourFirstGame": {
-    "description": "Create your first game message"
-  },
-  "participants": "[FI] Participants",
-  "@participants": {
-    "description": "Participants label"
-  },
-  "recipients": "[FI] Recipients",
-  "@recipients": {
-    "description": "Recipients label"
-  },
-  "noResults": "Ei tuloksia",
-  "@noResults": {
-    "description": "No search results message"
-  },
-  "yes": "Kyllä",
-  "@yes": {
-    "description": "Yes button text"
-  },
-  "invite": "Kutsu",
-  "@invite": {
-    "description": "Invite button"
-  },
-  "playtimeModeLive": "Live-tila",
-  "@playtimeModeLive": {
-    "description": "Live play mode label"
-  },
-  "done": "Valmis",
-  "@done": {
-    "description": "Done button text"
-  },
-  "defaultShareMessage": "Oletusjakoviesti",
-  "@defaultShareMessage": {
-    "description": "Default share message"
-  },
-  "no": "Ei",
-  "@no": {
-    "description": "No button text"
-  },
-  "playtimeHub": "Playtime-keskus",
-  "@playtimeHub": {
-    "description": "Playtime hub title"
-  },
-  "error": "Virhe",
-  "@error": {
-    "description": "Error message"
-  },
-  "createLiveSession": "[FI] Create Live Session",
-  "@createLiveSession": {
-    "description": "Create live session button"
-  },
-  "enableNotifications": "Ota ilmoitukset käyttöön",
-  "@enableNotifications": {
-    "description": "Enable notifications label"
-  },
-  "invited": "Kutsuttu",
-  "@invited": {
-    "description": "Invited status"
-  },
-  "content": "Sisältö",
-  "@content": {
-    "description": "Content label"
-  },
-  "meetingSharedSuccessfully": "[FI] Meeting shared successfully",
-  "@meetingSharedSuccessfully": {
-    "description": "Meeting shared successfully message"
-  },
-  "welcomeToPlaytime": "Tervetuloa Playtimeen",
-  "@welcomeToPlaytime": {
-    "description": "Welcome to playtime message"
-  },
-  "viewAll": "Näytä kaikki",
-  "@viewAll": {
-    "description": "View all button"
-  },
-  "playtimeVirtual": "[FI] Virtual Play",
-  "@playtimeVirtual": {
-    "description": "Virtual play label"
-  },
-  "staffScreenTBD": "Henkilökunnan näkymä määriteltävä",
-  "@staffScreenTBD": {
-    "description": "Staff screen TBD message"
-  },
-  "cut": "Leikkaa",
-  "@cut": {
-    "description": "Cut button text"
-  },
-  "inviteCancelledSuccessfully": "[FI] Invite cancelled successfully",
-  "@inviteCancelledSuccessfully": {
-    "description": "Invite cancelled successfully message"
-  },
-  "retry": "Yritä uudelleen",
-  "@retry": {
-    "description": "Retry button text"
-  },
-  "composeBroadcastMessage": "Laadi lähetysviesti",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message title"
-  },
-  "sendNow": "Lähetä nyt",
-  "@sendNow": {
-    "description": "Send now button"
-  },
-  "noGamesYet": "Pelejä ei ole vielä",
-  "@noGamesYet": {
-    "description": "No games yet message"
-  },
-  "select": "Valitse",
-  "@select": {
-    "description": "Select button text"
-  },
-  "about": "[FI] About",
+  "@@locale": "fi",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Valitse",
-  "@choose": {
-    "description": "Choose button text"
+  "@accept": {
+    "description": "Accept button"
   },
-  "profile": "[FI] Profile",
-  "@profile": {
-    "description": "Profile navigation label"
-  },
-  "removeChild": "Poista lapsi",
-  "@removeChild": {
-    "description": "Remove child button"
-  },
-  "status": "Tila",
-  "@status": {
-    "description": "Status label"
-  },
-  "logout": "Kirjaudu ulos",
-  "@logout": {
-    "description": "Logout button text"
-  },
-  "paste": "Liitä",
-  "@paste": {
-    "description": "Paste button text"
-  },
-  "welcome": "Tervetuloa",
-  "@welcome": {
-    "description": "Welcome message"
-  },
-  "playtimeCreateSession": "[FI] Create a Playtime Session",
-  "@playtimeCreateSession": {
-    "description": "Create playtime session button"
-  },
-  "familyMembers": "Perheenjäsenet",
-  "@familyMembers": {
-    "description": "Family members label"
-  },
-  "upload": "[FI] Upload",
-  "@upload": {
-    "description": "Upload button text"
-  },
-  "upcomingSessions": "[FI] Upcoming Sessions",
-  "@upcomingSessions": {
-    "description": "Upcoming sessions label"
-  },
-  "enterGroupName": "Anna ryhmän nimi",
-  "@enterGroupName": {
-    "description": "Enter group name placeholder"
-  },
-  "confirm": "Vahvista",
-  "@confirm": {
-    "description": "Confirm button text"
-  },
-  "playtimeLive": "Live Playtime",
-  "@playtimeLive": {
-    "description": "Live play label"
-  },
-  "errorLoadingInvites": "[FI] Error loading invites",
-  "@errorLoadingInvites": {
-    "description": "Error loading invites message"
-  },
-  "targetingFilters": "[FI] Targeting Filters",
-  "@targetingFilters": {
-    "description": "Targeting filters label"
-  },
-  "pickVideo": "Valitse video",
-  "@pickVideo": {
-    "description": "Pick video button"
-  },
-  "playtimeGameDeleted": "Peli poistettu",
-  "@playtimeGameDeleted": {
-    "description": "Game deleted message"
-  },
-  "scheduleForLater": "Ajoita myöhemmäksi",
-  "@scheduleForLater": {
-    "description": "Schedule for later button"
-  },
-  "accessRevokedSuccessfully": "[FI] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "Tyyppi",
-  "@type": {
-    "description": "Type label"
-  },
-  "checkingPermissions": "Tarkistetaan oikeuksia",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "copy": "Kopioi",
-  "@copy": {
-    "description": "Copy button text"
-  },
-  "yesCancel": "Kyllä, peruuta",
-  "@yesCancel": {
-    "description": "Yes cancel button"
-  },
-  "email": "Sähköposti",
-  "@email": {
-    "description": "Email field label"
-  },
-  "shareOnWhatsApp": "[FI] Share on WhatsApp",
-  "@shareOnWhatsApp": {
-    "description": "Share on WhatsApp button"
-  },
-  "notificationSettings": "Ilmoitusasetukset",
-  "@notificationSettings": {
-    "description": "Notification settings title"
-  },
-  "myProfile": "[FI] My Profile",
-  "@myProfile": {
-    "description": "My profile title"
-  },
-  "revoke": "Kumoa",
-  "@revoke": {
-    "description": "Revoke button"
-  },
-  "noBroadcastMessages": "Ei lähetettyjä viestejä",
-  "@noBroadcastMessages": {
-    "description": "No broadcast messages message"
-  },
-  "requestType": "Pyyntötyyppi",
-  "@requestType": {
-    "description": "Request type label"
-  },
-  "notifications": "Ilmoitukset",
-  "@notifications": {
-    "description": "Notifications title"
-  },
-  "details": "Tiedot",
-  "@details": {
-    "description": "Details label"
-  },
-  "cancelInvite": "Peru kutsu",
-  "@cancelInvite": {
-    "description": "Cancel invite button"
-  },
-  "createNew": "Luo uusi",
-  "@createNew": {
-    "description": "Create new button"
-  },
-  "settings": "Asetukset",
-  "@settings": {
-    "description": "Settings navigation label"
-  },
-  "playtimeReject": "Hylkää Playtime",
-  "@playtimeReject": {
-    "description": "Playtime reject button"
-  },
-  "errorLoadingProfile": "[FI] Error loading profile",
-  "@errorLoadingProfile": {
-    "description": "Error loading profile message"
-  },
-  "edit": "Muokkaa",
-  "@edit": {
-    "description": "Edit button text"
-  },
-  "add": "Lisää",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "Peli hyväksytty",
-  "@playtimeGameApproved": {
-    "description": "Game approved message"
+  "@adminBroadcast": {
+    "description": "Admin broadcast title"
   },
-  "forgotPassword": "Unohditko salasanan?",
-  "@forgotPassword": {
-    "description": "Forgot password link text"
-  },
-  "familyDashboard": "[FI] Family Dashboard",
-  "@familyDashboard": {
-    "description": "Family dashboard title"
-  },
-  "loading": "[FI] Loading...",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "quickActions": "[FI] Quick Actions",
-  "@quickActions": {
-    "description": "Quick actions label"
-  },
-  "playtimeTitle": "Playtime-otsikko",
-  "@playtimeTitle": {
-    "description": "Playtime title"
-  },
-  "otpResentSuccessfully": "[FI] OTP resent successfully",
-  "@otpResentSuccessfully": {
-    "description": "OTP resent successfully message"
-  },
-  "errorCheckingPermissions": "Virhe oikeuksien tarkistuksessa",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message"
-  },
-  "clientScreenTBD": "Asiakasnäyttö määriteltävä",
-  "@clientScreenTBD": {
-    "description": "Client screen TBD message"
-  },
-  "fcmToken": "FCM-tunnus",
-  "@fcmToken": {
-    "description": "FCM token label"
-  },
-  "pickImage": "Valitse kuva",
-  "@pickImage": {
-    "description": "Pick image button"
-  },
-  "previous": "[FI] Previous",
-  "@previous": {
-    "description": "Previous button text"
-  },
-  "noProfileFound": "[FI] No profile found",
-  "@noProfileFound": {
-    "description": "No profile found message"
-  },
-  "noFamilyMembersYet": "Ei perheenjäseniä",
-  "@noFamilyMembersYet": {
-    "description": "No family members yet message"
-  },
-  "mediaOptional": "[FI] Media (Optional)",
-  "@mediaOptional": {
-    "description": "Media optional label"
-  },
-  "messageSavedSuccessfully": "[FI] Message saved successfully",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully message"
-  },
-  "scheduledFor": "Ajoitettu",
-  "@scheduledFor": {
-    "description": "Scheduled for label"
-  },
-  "dashboard": "[FI] Dashboard",
-  "@dashboard": {
-    "description": "Dashboard title"
-  },
-  "noPermissionForBroadcast": "Ei lupaa lähetykseen",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "playtimeAdminPanelTitle": "[FI] Playtime Games – Admin",
-  "@playtimeAdminPanelTitle": {
-    "description": "Playtime admin panel title"
-  },
-  "inviteDetail": "Kutsun tiedot",
-  "@inviteDetail": {
-    "description": "Invite detail title"
-  },
-  "scheduled": "Ajoitettu",
-  "@scheduled": {
-    "description": "Scheduled status"
-  },
-  "failedToResendOtp": "[FI] Failed to resend OTP",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
-  },
-  "scheduling": "Ajoitetaan",
-  "@scheduling": {
-    "description": "Scheduling label"
-  },
-  "errorSavingMessage": "[FI] Error saving message",
-  "@errorSavingMessage": {
-    "description": "Error saving message message"
-  },
-  "save": "Tallenna",
-  "@save": {
-    "description": "Save button text"
-  },
-  "playtimeApprove": "Hyväksy Playtime",
-  "@playtimeApprove": {
-    "description": "Playtime approve button"
-  },
-  "createYourFirstSession": "[FI] Create your first session",
-  "@createYourFirstSession": {
-    "description": "Create your first session message"
-  },
-  "playtimeGameRejected": "Peli hylätty",
-  "@playtimeGameRejected": {
-    "description": "Game rejected message"
-  },
-  "failedToRevokeAccess": "[FI] Failed to revoke access",
-  "@failedToRevokeAccess": {
-    "description": "Failed to revoke access message"
-  },
-  "recentGames": "Viimeisimmät pelit",
-  "@recentGames": {
-    "description": "Recent games label"
-  },
-  "customizeMessage": "Mukauta viestiä",
-  "@customizeMessage": {
-    "description": "Customize message button"
-  },
-  "failedToCancelInvite": "[FI] Failed to cancel invite",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
-  },
-  "errorSendingMessage": "[FI] Error sending message",
-  "@errorSendingMessage": {
-    "description": "Error sending message message"
-  },
-  "confirmPassword": "Vahvista salasana",
-  "@confirmPassword": {
-    "description": "Confirm password field label"
-  },
-  "errorLoadingPrivacyRequests": "[FI] Error loading privacy requests",
-  "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message"
-  },
-  "connectedChildren": "Yhdistetyt lapset",
-  "@connectedChildren": {
-    "description": "Connected children label"
-  },
-  "share": "Jaa",
-  "@share": {
-    "description": "Share button text"
-  },
-  "playtimeEnterGameName": "[FI] Enter game name",
-  "@playtimeEnterGameName": {
-    "description": "Enter game name label"
-  },
-  "pleaseLoginForFamilyFeatures": "[FI] Please login to access family features",
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Please login for family features message"
-  },
-  "myInvites": "Kutsuni",
-  "@myInvites": {
-    "description": "My invites title"
-  },
-  "createGame": "Luo peli",
-  "@createGame": {
-    "description": "Create game button"
-  },
-  "groupNameOptional": "[FI] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Group name optional label"
-  },
-  "playtimeNoSessions": "[FI] No playtime sessions found.",
-  "@playtimeNoSessions": {
-    "description": "No playtime sessions message"
-  },
-  "adminScreenTBD": "[FI] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "[FI] Playtime Dashboard",
-  "@playtimeParentDashboardTitle": {
-    "description": "Playtime parent dashboard title"
+  "@appTitle": {
+    "description": "The title of the application"
   },
-  "close": "Sulje",
-  "@close": {
-    "description": "Close button text"
-  },
-  "knownGroupDetected": "Tunnistettu tunnettu ryhmä",
-  "@knownGroupDetected": {
-    "description": "Known group detected message"
-  },
-  "back": "[FI] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "Valitse peli",
-  "@playtimeChooseGame": {
-    "description": "Choose game label"
+  "@cancel": {
+    "description": "Cancel button text"
   },
-  "managePermissions": "[FI] Manage Permissions",
-  "@managePermissions": {
-    "description": "Manage permissions button"
+  "@cancelInvite": {
+    "description": "Cancel invite button"
   },
-  "pollOptions": "[FI] Poll Options",
-  "@pollOptions": {
-    "description": "Poll options label"
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
   },
-  "clicked": "[FI] Clicked",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "@choose": {
+    "description": "Choose button text"
+  },
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "[FI] Link",
+  "@clientScreenTBD": {
+    "description": "Client screen TBD message"
+  },
+  "@close": {
+    "description": "Close button text"
+  },
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message title"
+  },
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "@content": {
+    "description": "Content label"
+  },
+  "@copy": {
+    "description": "Copy button text"
+  },
+  "@createGame": {
+    "description": "Create game button"
+  },
+  "@createLiveSession": {
+    "description": "Create live session button"
+  },
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
+  },
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "@created": {
+    "description": "Created status"
+  },
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "@dashboard": {
+    "description": "Dashboard title"
+  },
+  "@decline": {
+    "description": "Decline button"
+  },
+  "@defaultShareMessage": {
+    "description": "Default share message"
+  },
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "@details": {
+    "description": "Details label"
+  },
+  "@done": {
+    "description": "Done button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "@email": {
+    "description": "Email field label"
+  },
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "@enterGroupName": {
+    "description": "Enter group name placeholder"
+  },
+  "@error": {
+    "description": "Error message"
+  },
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message"
+  },
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message"
+  },
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "@errorSavingMessage": {
+    "description": "Error saving message message"
+  },
+  "@errorSendingMessage": {
+    "description": "Error sending message message"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message"
+  },
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message"
+  },
+  "@familyDashboard": {
+    "description": "Family dashboard title"
+  },
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "@fcmToken": {
+    "description": "FCM token label"
+  },
+  "@forgotPassword": {
+    "description": "Forgot password link text"
+  },
+  "@groupNameOptional": {
+    "description": "Group name optional label"
+  },
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "@invite": {
+    "description": "Invite button"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "@inviteDetail": {
+    "description": "Invite detail title"
+  },
+  "@invited": {
+    "description": "Invited status"
+  },
+  "@knownGroupDetected": {
+    "description": "Known group detected message"
+  },
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "Kokous valmis",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@login": {
+    "description": "Login button text"
+  },
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "@managePermissions": {
+    "description": "Manage permissions button"
+  },
+  "@mediaOptional": {
+    "description": "Media optional label"
+  },
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "Odotetut kutsut",
+  "@meetingSharedSuccessfully": {
+    "description": "Meeting shared successfully message"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "@myInvites": {
+    "description": "My invites title"
+  },
+  "@myProfile": {
+    "description": "My profile title"
+  },
+  "@next": {
+    "description": "Next button text"
+  },
+  "@no": {
+    "description": "No button text"
+  },
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
+  },
+  "@notificationSettings": {
+    "description": "Notification settings title"
+  },
+  "@notifications": {
+    "description": "Notifications title"
+  },
+  "@ok": {
+    "description": "OK button text"
+  },
+  "@opened": {
+    "description": "Opened status"
+  },
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "@participants": {
+    "description": "Participants label"
+  },
+  "@password": {
+    "description": "Password field label"
+  },
+  "@paste": {
+    "description": "Paste button text"
+  },
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "Tila:",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
+  },
+  "@playtimeChooseGame": {
+    "description": "Choose game label"
+  },
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "@playtimeCreate": {
+    "description": "Create button"
+  },
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "@playtimeGameApproved": {
+    "description": "Game approved message"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Game deleted message"
+  },
+  "@playtimeGameRejected": {
+    "description": "Game rejected message"
+  },
+  "@playtimeHub": {
+    "description": "Playtime hub title"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "@playtimeLive": {
+    "description": "Live play label"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
+  },
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
+  "@playtimeNoSessions": {
+    "description": "No playtime sessions message"
+  },
+  "@playtimeParentDashboardTitle": {
+    "description": "Playtime parent dashboard title"
+  },
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "@playtimeVirtual": {
+    "description": "Virtual play label"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "@recipients": {
+    "description": "Recipients label"
+  },
+  "@redo": {
+    "description": "Redo button text"
+  },
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  "@removeChild": {
+    "description": "Remove child button"
+  },
+  "@requestType": {
+    "description": "Request type label"
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@revoke": {
+    "description": "Revoke button"
+  },
+  "@revokeAccess": {
+    "description": "Revoke access button"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "@save": {
+    "description": "Save button text"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
+  },
+  "@scheduleForLater": {
+    "description": "Schedule for later button"
+  },
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "@scheduling": {
+    "description": "Scheduling label"
+  },
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "@select": {
+    "description": "Select button text"
+  },
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "@share": {
+    "description": "Share button text"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "@staffScreenTBD": {
+    "description": "Staff screen TBD message"
+  },
+  "@status": {
+    "description": "Status label"
+  },
   "@statusColon": {
     "description": "Status colon label"
   },
-  "@@locale": "fi",
-  "pleaseLoginToViewProfile": "[FI] Please log in to view your profile."
+  "@success": {
+    "description": "Success message"
+  },
+  "@targetingFilters": {
+    "description": "Targeting filters label"
+  },
+  "@type": {
+    "description": "Type label"
+  },
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "@yes": {
+    "description": "Yes button text"
+  },
+  "@yesCancel": {
+    "description": "Yes cancel button"
+  },
+  "about": "[FI] About",
+  "accept": "Hyväksy",
+  "accessRevokedSuccessfully": "[FI] Access revoked successfully",
+  "add": "Lisää",
+  "adminBroadcast": "Järjestelmän lähetys",
+  "adminScreenTBD": "[FI] Admin screen coming soon",
+  "appTitle": "Sovelluksen otsikko",
+  "back": "[FI] Back",
+  "cancel": "Peruuta",
+  "cancelInvite": "Peru kutsu",
+  "cancelInviteConfirmation": "Peru kutsun vahvistus",
+  "checkingPermissions": "Tarkistetaan oikeuksia",
+  "choose": "Valitse",
+  "clicked": "[FI] Clicked",
+  "clientScreenTBD": "Asiakasnäyttö määriteltävä",
+  "close": "Sulje",
+  "composeBroadcastMessage": "Laadi lähetysviesti",
+  "confirm": "Vahvista",
+  "confirmPassword": "Vahvista salasana",
+  "connectedChildren": "Yhdistetyt lapset",
+  "content": "Sisältö",
+  "copy": "Kopioi",
+  "createGame": "Luo peli",
+  "createLiveSession": "[FI] Create Live Session",
+  "createNew": "Luo uusi",
+  "createVirtualSession": "Luo virtuaalisessio",
+  "createYourFirstGame": "[FI] Create your first game",
+  "createYourFirstSession": "[FI] Create your first session",
+  "created": "Luotu",
+  "customizeMessage": "Mukauta viestiä",
+  "cut": "Leikkaa",
+  "dashboard": "[FI] Dashboard",
+  "decline": "Hylkää",
+  "defaultShareMessage": "Oletusjakoviesti",
+  "delete": "Poista",
+  "details": "Tiedot",
+  "done": "Valmis",
+  "download": "[FI] Download",
+  "edit": "Muokkaa",
+  "email": "Sähköposti",
+  "enableNotifications": "Ota ilmoitukset käyttöön",
+  "enterGroupName": "Anna ryhmän nimi",
+  "error": "Virhe",
+  "errorCheckingPermissions": "Virhe oikeuksien tarkistuksessa",
+  "errorLoadingFamilyLinks": "[FI] Error loading family links",
+  "errorLoadingInvites": "[FI] Error loading invites",
+  "errorLoadingPrivacyRequests": "[FI] Error loading privacy requests",
+  "errorLoadingProfile": "[FI] Error loading profile",
+  "errorSavingMessage": "[FI] Error saving message",
+  "errorSendingMessage": "[FI] Error sending message",
+  "failedToActionPrivacyRequest": "[FI] Failed to action privacy request",
+  "failedToCancelInvite": "[FI] Failed to cancel invite",
+  "failedToResendOtp": "[FI] Failed to resend OTP",
+  "failedToRevokeAccess": "[FI] Failed to revoke access",
+  "familyDashboard": "[FI] Family Dashboard",
+  "familyMembers": "Perheenjäsenet",
+  "fcmToken": "FCM-tunnus",
+  "forgotPassword": "Unohditko salasanan?",
+  "groupNameOptional": "[FI] Group Name (Optional)",
+  "home": "Koti",
+  "invite": "Kutsu",
+  "inviteCancelledSuccessfully": "[FI] Invite cancelled successfully",
+  "inviteDetail": "Kutsun tiedot",
+  "invited": "Kutsuttu",
+  "knownGroupDetected": "Tunnistettu tunnettu ryhmä",
+  "link": "[FI] Link",
+  "loading": "[FI] Loading...",
+  "login": "Kirjaudu sisään",
+  "logout": "Kirjaudu ulos",
+  "managePermissions": "[FI] Manage Permissions",
+  "mediaOptional": "[FI] Media (Optional)",
+  "meetingReadyMessage": "Kokous valmis",
+  "meetingSharedSuccessfully": "[FI] Meeting shared successfully",
+  "messageSavedSuccessfully": "[FI] Message saved successfully",
+  "messageSentSuccessfully": "[FI] Message sent successfully",
+  "myInvites": "Kutsuni",
+  "myProfile": "[FI] My Profile",
+  "next": "Seuraava",
+  "no": "Ei",
+  "noBroadcastMessages": "Ei lähetettyjä viestejä",
+  "noFamilyMembersYet": "Ei perheenjäseniä",
+  "noGamesYet": "Pelejä ei ole vielä",
+  "noInvites": "Ei kutsuja",
+  "noPermissionForBroadcast": "Ei lupaa lähetykseen",
+  "noProfileFound": "[FI] No profile found",
+  "noResults": "Ei tuloksia",
+  "noSessionsYet": "[FI] No sessions yet",
+  "notificationSettings": "Ilmoitusasetukset",
+  "notifications": "Ilmoitukset",
+  "ok": "OK",
+  "opened": "[FI] Opened",
+  "otpResentSuccessfully": "[FI] OTP resent successfully",
+  "participants": "[FI] Participants",
+  "password": "Salasana",
+  "paste": "Liitä",
+  "pendingInvites": "Odotetut kutsut",
+  "pickImage": "Valitse kuva",
+  "pickVideo": "Valitse video",
+  "playtimeAdminPanelTitle": "[FI] Playtime Games – Admin",
+  "playtimeApprove": "Hyväksy Playtime",
+  "playtimeChooseFriends": "Valitse ystävät",
+  "playtimeChooseGame": "Valitse peli",
+  "playtimeChooseTime": "Valitse aika",
+  "playtimeCreate": "Luo Playtime",
+  "playtimeCreateSession": "[FI] Create a Playtime Session",
+  "playtimeDescription": "Playtime-kuvaus",
+  "playtimeEnterGameName": "[FI] Enter game name",
+  "playtimeGameApproved": "Peli hyväksytty",
+  "playtimeGameDeleted": "Peli poistettu",
+  "playtimeGameRejected": "Peli hylätty",
+  "playtimeHub": "Playtime-keskus",
+  "playtimeLandingChooseMode": "Valitse tila",
+  "playtimeLive": "Live Playtime",
+  "playtimeLiveScheduled": "[FI] Live playtime scheduled!",
+  "playtimeModeLive": "Live-tila",
+  "playtimeModeVirtual": "Virtuaalitila",
+  "playtimeNoSessions": "[FI] No playtime sessions found.",
+  "playtimeParentDashboardTitle": "[FI] Playtime Dashboard",
+  "playtimeReject": "Hylkää Playtime",
+  "playtimeTitle": "Playtime-otsikko",
+  "playtimeVirtual": "[FI] Virtual Play",
+  "playtimeVirtualStarted": "Virtuaalisessio aloitettu",
+  "pleaseLoginForFamilyFeatures": "[FI] Please login to access family features",
+  "pleaseLoginToViewProfile": "[FI] Please log in to view your profile.",
+  "pollOptions": "[FI] Poll Options",
+  "previous": "[FI] Previous",
+  "profile": "[FI] Profile",
+  "quickActions": "[FI] Quick Actions",
+  "recentGames": "Viimeisimmät pelit",
+  "recipients": "[FI] Recipients",
+  "redo": "Tee uudelleen",
+  "refresh": "Päivitä",
+  "removeChild": "Poista lapsi",
+  "requestType": "Pyyntötyyppi",
+  "retry": "Yritä uudelleen",
+  "revoke": "Kumoa",
+  "revokeAccess": "Kumoa oikeudet",
+  "revokeAccessConfirmation": "Oikeuksien peruuttamisen vahvistus",
+  "save": "Tallenna",
+  "saveGroupForRecognition": "Tallenna ryhmä tunnistusta varten",
+  "scheduleForLater": "Ajoita myöhemmäksi",
+  "scheduleMessage": "Ajoita viesti",
+  "scheduled": "Ajoitettu",
+  "scheduledFor": "Ajoitettu",
+  "scheduling": "Ajoitetaan",
+  "search": "Etsi",
+  "select": "Valitse",
+  "sendNow": "Lähetä nyt",
+  "settings": "Asetukset",
+  "share": "Jaa",
+  "shareOnWhatsApp": "[FI] Share on WhatsApp",
+  "signUp": "Rekisteröidy",
+  "staffScreenTBD": "Henkilökunnan näkymä määriteltävä",
+  "status": "Tila",
+  "statusColon": "Tila:",
+  "success": "[FI] Success",
+  "targetingFilters": "[FI] Targeting Filters",
+  "type": "Tyyppi",
+  "undo": "Kumoa",
+  "upcomingSessions": "[FI] Upcoming Sessions",
+  "upload": "[FI] Upload",
+  "viewAll": "Näytä kaikki",
+  "welcome": "Tervetuloa",
+  "welcomeToPlaytime": "Tervetuloa Playtimeen",
+  "yes": "Kyllä",
+  "yesCancel": "Kyllä, peruuta"
 }

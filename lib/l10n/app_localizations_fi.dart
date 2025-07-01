@@ -15,7 +15,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get home => 'Koti';
 
   @override
-  String get noSessionsYet => 'Istuntoja ei ole vielä';
+  String get noSessionsYet => '[FI] No sessions yet';
 
   @override
   String get ok => 'OK';
@@ -48,19 +48,21 @@ class AppLocalizationsFi extends AppLocalizations {
   String get playtimeChooseTime => 'Valitse aika';
 
   @override
-  String get success => 'Onnistui';
+  String get success => '[FI] Success';
 
   @override
   String get undo => 'Kumoa';
 
   @override
-  String get opened => 'Avoinna';
+  String opened(Object count) {
+    return '[FI] Opened';
+  }
 
   @override
   String get createVirtualSession => 'Luo virtuaalisessio';
 
   @override
-  String get messageSentSuccessfully => 'Viesti lähetetty onnistuneesti';
+  String get messageSentSuccessfully => '[FI] Message sent successfully';
 
   @override
   String get redo => 'Tee uudelleen';
@@ -86,20 +88,20 @@ class AppLocalizationsFi extends AppLocalizations {
   String get saveGroupForRecognition => 'Tallenna ryhmä tunnistusta varten';
 
   @override
-  String get playtimeLiveScheduled => 'Live-istunto ajoitettu';
+  String get playtimeLiveScheduled => '[FI] Live playtime scheduled!';
 
   @override
   String get revokeAccessConfirmation => 'Oikeuksien peruuttamisen vahvistus';
 
   @override
-  String get download => 'Lataa';
+  String get download => '[FI] Download';
 
   @override
   String get password => 'Salasana';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Virhe perhesuhteiden lataamisessa';
+    return '[FI] Error loading family links';
   }
 
   @override
@@ -110,7 +112,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Tietosuopyyntö epäonnistui';
+    return '[FI] Failed to action privacy request';
   }
 
   @override
@@ -132,14 +134,14 @@ class AppLocalizationsFi extends AppLocalizations {
   String get playtimeVirtualStarted => 'Virtuaalisessio aloitettu';
 
   @override
-  String get createYourFirstGame => 'Luo ensimmäinen pelisi';
+  String get createYourFirstGame => '[FI] Create your first game';
 
   @override
-  String get participants => 'Osallistujat';
+  String get participants => '[FI] Participants';
 
   @override
   String recipients(Object count) {
-    return 'Vastaanottajat';
+    return '[FI] Recipients';
   }
 
   @override
@@ -170,7 +172,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get error => 'Virhe';
 
   @override
-  String get createLiveSession => 'Luo live-istunto';
+  String get createLiveSession => '[FI] Create Live Session';
 
   @override
   String get enableNotifications => 'Ota ilmoitukset käyttöön';
@@ -186,7 +188,7 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Kokous jaettu onnistuneesti';
+  String get meetingSharedSuccessfully => '[FI] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => 'Tervetuloa Playtimeen';
@@ -195,7 +197,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get viewAll => 'Näytä kaikki';
 
   @override
-  String get playtimeVirtual => 'Virtuaalinen Playtime';
+  String get playtimeVirtual => '[FI] Virtual Play';
 
   @override
   String get staffScreenTBD => 'Henkilökunnan näkymä määriteltävä';
@@ -204,7 +206,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get cut => 'Leikkaa';
 
   @override
-  String get inviteCancelledSuccessfully => 'Kutsu peruttu onnistuneesti';
+  String get inviteCancelledSuccessfully =>
+      '[FI] Invite cancelled successfully';
 
   @override
   String get retry => 'Yritä uudelleen';
@@ -222,13 +225,13 @@ class AppLocalizationsFi extends AppLocalizations {
   String get select => 'Valitse';
 
   @override
-  String get about => 'Tietoja';
+  String get about => '[FI] About';
 
   @override
   String get choose => 'Valitse';
 
   @override
-  String get profile => 'Profiili';
+  String get profile => '[FI] Profile';
 
   @override
   String get removeChild => 'Poista lapsi';
@@ -248,16 +251,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get welcome => 'Tervetuloa';
 
   @override
-  String get playtimeCreateSession => 'Luo istunto';
+  String get playtimeCreateSession => '[FI] Create a Playtime Session';
 
   @override
   String get familyMembers => 'Perheenjäsenet';
 
   @override
-  String get upload => 'Lataa tiedosto';
+  String get upload => '[FI] Upload';
 
   @override
-  String get upcomingSessions => 'Tulevat istunnot';
+  String get upcomingSessions => '[FI] Upcoming Sessions';
 
   @override
   String get enterGroupName => 'Anna ryhmän nimi';
@@ -269,12 +272,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get playtimeLive => 'Live Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Virhe kutsujen lataamisessa';
-  }
+  String get errorLoadingInvites => '[FI] Error loading invites';
 
   @override
-  String get targetingFilters => 'Kohdistussuodattimet';
+  String get targetingFilters => '[FI] Targeting Filters';
 
   @override
   String get pickVideo => 'Valitse video';
@@ -286,10 +287,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get scheduleForLater => 'Ajoita myöhemmäksi';
 
   @override
-  String get accessRevokedSuccessfully => 'Oikeudet peruutettu onnistuneesti';
+  String get accessRevokedSuccessfully => '[FI] Access revoked successfully';
 
   @override
-  String get type => 'Tyyppi';
+  String type(Object type) {
+    return 'Tyyppi';
+  }
 
   @override
   String get checkingPermissions => 'Tarkistetaan oikeuksia';
@@ -304,13 +307,13 @@ class AppLocalizationsFi extends AppLocalizations {
   String get email => 'Sähköposti';
 
   @override
-  String get shareOnWhatsApp => 'Jaa WhatsAppissa';
+  String get shareOnWhatsApp => '[FI] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Ilmoitusasetukset';
 
   @override
-  String get myProfile => 'Profiilini';
+  String get myProfile => '[FI] My Profile';
 
   @override
   String get revoke => 'Kumoa';
@@ -342,9 +345,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get playtimeReject => 'Hylkää Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Virhe profiilin lataamisessa';
-  }
+  String get errorLoadingProfile => '[FI] Error loading profile';
 
   @override
   String get edit => 'Muokkaa';
@@ -359,19 +360,19 @@ class AppLocalizationsFi extends AppLocalizations {
   String get forgotPassword => 'Unohditko salasanan?';
 
   @override
-  String get familyDashboard => 'Perhekonsoli';
+  String get familyDashboard => '[FI] Family Dashboard';
 
   @override
-  String get loading => 'Ladataan';
+  String get loading => '[FI] Loading...';
 
   @override
-  String get quickActions => 'Pikatoiminnot';
+  String get quickActions => '[FI] Quick Actions';
 
   @override
   String get playtimeTitle => 'Playtime-otsikko';
 
   @override
-  String get otpResentSuccessfully => 'OTP lähetetty uudelleen onnistuneesti';
+  String get otpResentSuccessfully => '[FI] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
@@ -390,31 +391,31 @@ class AppLocalizationsFi extends AppLocalizations {
   String get pickImage => 'Valitse kuva';
 
   @override
-  String get previous => 'Edellinen';
+  String get previous => '[FI] Previous';
 
   @override
-  String get noProfileFound => 'Profiilia ei löytynyt';
+  String get noProfileFound => '[FI] No profile found';
 
   @override
   String get noFamilyMembersYet => 'Ei perheenjäseniä';
 
   @override
-  String get mediaOptional => 'Media (valinnainen)';
+  String get mediaOptional => '[FI] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => 'Viesti tallennettu onnistuneesti';
+  String get messageSavedSuccessfully => '[FI] Message saved successfully';
 
   @override
   String get scheduledFor => 'Ajoitettu';
 
   @override
-  String get dashboard => 'Koontinäyttö';
+  String get dashboard => '[FI] Dashboard';
 
   @override
   String get noPermissionForBroadcast => 'Ei lupaa lähetykseen';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime-hallintapaneelin otsikko';
+  String get playtimeAdminPanelTitle => '[FI] Playtime Games – Admin';
 
   @override
   String get inviteDetail => 'Kutsun tiedot';
@@ -426,7 +427,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String failedToResendOtp(Object error) {
-    return 'OTP:n uudelleenlähetys epäonnistui';
+    return '[FI] Failed to resend OTP';
   }
 
   @override
@@ -434,7 +435,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Virhe viestin tallennuksessa';
+    return '[FI] Error saving message';
   }
 
   @override
@@ -444,14 +445,14 @@ class AppLocalizationsFi extends AppLocalizations {
   String get playtimeApprove => 'Hyväksy Playtime';
 
   @override
-  String get createYourFirstSession => 'Luo ensimmäinen istuntosi';
+  String get createYourFirstSession => '[FI] Create your first session';
 
   @override
   String get playtimeGameRejected => 'Peli hylätty';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Oikeuksien peruuttaminen epäonnistui';
+    return '[FI] Failed to revoke access';
   }
 
   @override
@@ -462,12 +463,12 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Kutsun peruutus epäonnistui';
+    return '[FI] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Virhe viestin lähetyksessä';
+    return '[FI] Error sending message';
   }
 
   @override
@@ -475,7 +476,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Virhe yksityisyyspyyntöjen lataamisessa';
+    return '[FI] Error loading privacy requests';
   }
 
   @override
@@ -485,11 +486,11 @@ class AppLocalizationsFi extends AppLocalizations {
   String get share => 'Jaa';
 
   @override
-  String get playtimeEnterGameName => 'Anna pelin nimi';
+  String get playtimeEnterGameName => '[FI] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Kirjaudu sisään perheominaisuuksia varten';
+      '[FI] Please login to access family features';
 
   @override
   String get myInvites => 'Kutsuni';
@@ -498,17 +499,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get createGame => 'Luo peli';
 
   @override
-  String get groupNameOptional => 'Ryhmä nimi (valinnainen)';
+  String get groupNameOptional => '[FI] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Ei Playtime-istuntoja';
+  String get playtimeNoSessions => '[FI] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Admin-skärmi määriteltävä';
+  String get adminScreenTBD => '[FI] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      'Playtime-vanhempien koontinäytön otsikko';
+  String get playtimeParentDashboardTitle => '[FI] Playtime Dashboard';
 
   @override
   String get close => 'Sulje';
@@ -517,25 +517,25 @@ class AppLocalizationsFi extends AppLocalizations {
   String get knownGroupDetected => 'Tunnistettu tunnettu ryhmä';
 
   @override
-  String get back => 'Takaisin';
+  String get back => '[FI] Back';
 
   @override
   String get playtimeChooseGame => 'Valitse peli';
 
   @override
-  String get managePermissions => 'Hallinnoi oikeuksia';
+  String get managePermissions => '[FI] Manage Permissions';
 
   @override
-  String get pollOptions => 'Kyselyvaihtoehdot';
+  String get pollOptions => '[FI] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Klikattu';
+    return '[FI] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Linkki';
+    return '[FI] Link';
   }
 
   @override
@@ -550,5 +550,24 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Kirjaudu nähdäksesi profiilin';
+  String get pleaseLoginToViewProfile =>
+      '[FI] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

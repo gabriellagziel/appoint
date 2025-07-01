@@ -1,9 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/studio_appointment.dart';
-import '../services/studio_appointment_service.dart';
+import 'package:appoint/models/studio_appointment.dart';
+import 'package:appoint/services/studio_appointment_service.dart';
 
 final studioAppointmentServiceProvider =
-    Provider<StudioAppointmentService>((ref) => StudioAppointmentService());
+    Provider<StudioAppointmentService>((final ref) => StudioAppointmentService());
 
 class StudioAppointmentsNotifier
     extends StateNotifier<AsyncValue<List<StudioAppointment>>> {
@@ -22,17 +22,17 @@ class StudioAppointmentsNotifier
     }
   }
 
-  Future<void> add(StudioAppointment appt) async {
+  Future<void> add(final StudioAppointment appt) async {
     await _service.addAppointment(appt);
     await load();
   }
 
-  Future<void> update(StudioAppointment appt) async {
+  Future<void> update(final StudioAppointment appt) async {
     await _service.updateAppointment(appt);
     await load();
   }
 
-  Future<void> delete(String id) async {
+  Future<void> delete(final String id) async {
     await _service.deleteAppointment(id);
     await load();
   }
@@ -40,6 +40,6 @@ class StudioAppointmentsNotifier
 
 final studioAppointmentsProvider = StateNotifierProvider<
     StudioAppointmentsNotifier, AsyncValue<List<StudioAppointment>>>(
-  (ref) =>
+  (final ref) =>
       StudioAppointmentsNotifier(ref.read(studioAppointmentServiceProvider)),
 );

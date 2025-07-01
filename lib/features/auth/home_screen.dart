@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../providers/auth_provider.dart';
-import '../../providers/appointment_provider.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/providers/appointment_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import '../../theme/app_colors.dart';
+import 'package:appoint/theme/app_colors.dart';
 
 class HomeScreen extends ConsumerWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({final Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final appointments = ref.watch(appointmentsStreamProvider);
     return Scaffold(
       backgroundColor: AppColors.primary,
@@ -22,9 +22,9 @@ class HomeScreen extends ConsumerWidget {
           children: [
             const Text('Welcome'),
             appointments.when(
-              data: (list) => Text('Appointments: ${list.length}'),
+              data: (final list) => Text('Appointments: ${list.length}'),
               loading: () => const CircularProgressIndicator(),
-              error: (_, __) => const Text('Error loading appointments'),
+              error: (final _, final __) => const Text('Error loading appointments'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
@@ -72,10 +72,10 @@ class HomeScreen extends ConsumerWidget {
 }
 
 class _HomeDrawer extends ConsumerWidget {
-  const _HomeDrawer({Key? key}) : super(key: key);
+  const _HomeDrawer({final Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
@@ -102,9 +102,9 @@ class _HomeDrawer extends ConsumerWidget {
           FutureBuilder<bool>(
             future: FirebaseAuth.instance.currentUser
                     ?.getIdTokenResult(true)
-                    .then((r) => r.claims?['admin'] == true) ??
+                    .then((final r) => r.claims?['admin'] == true) ??
                 Future.value(false),
-            builder: (context, snapshot) {
+            builder: (final context, final snapshot) {
               if (snapshot.data == true) {
                 return ListTile(
                   title: const Text('Admin'),

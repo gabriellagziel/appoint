@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../../models/comment.dart';
-import '../../../services/comment_service.dart';
-import '../../../utils/localized_date_formatter.dart';
-import '../../../widgets/app_scaffold.dart';
-import '../../../widgets/empty_state.dart';
-import '../../../l10n/app_localizations.dart';
+import 'package:appoint/models/comment.dart';
+import 'package:appoint/services/comment_service.dart';
+import 'package:appoint/utils/localized_date_formatter.dart';
+import 'package:appoint/widgets/app_scaffold.dart';
+import 'package:appoint/widgets/empty_state.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 
 /// Displays a list of comments.
 class CommentsScreen extends StatefulWidget {
@@ -30,17 +30,20 @@ class _CommentsScreenState extends State<CommentsScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final formatter =
         LocalizedDateFormatter.fromL10n(AppLocalizations.of(context)!);
 
     Widget body;
     if (_comments.isEmpty) {
-      body = const EmptyState(message: 'No comments yet');
+      body = const EmptyState(
+        title: 'No comments yet',
+        description: 'Be the first to leave a comment!',
+      );
     } else {
       body = ListView.builder(
         itemCount: _comments.length,
-        itemBuilder: (context, index) {
+        itemBuilder: (final context, final index) {
           final c = _comments[index];
           return Card(
             margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
@@ -65,7 +68,7 @@ class _CommentsScreenState extends State<CommentsScreen> {
     }
 
     return AppScaffold(
-      appBar: AppBar(title: const Text('Comments')),
+      title: 'Comments',
       body: body,
     );
   }

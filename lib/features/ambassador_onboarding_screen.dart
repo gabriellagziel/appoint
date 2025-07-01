@@ -5,7 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:share_plus/share_plus.dart';
 
 class AmbassadorOnboardingScreen extends ConsumerStatefulWidget {
-  const AmbassadorOnboardingScreen({Key? key}) : super(key: key);
+  const AmbassadorOnboardingScreen({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<AmbassadorOnboardingScreen> createState() =>
@@ -69,7 +69,7 @@ class _AmbassadorOnboardingScreenState
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Ambassador Onboarding'),
@@ -87,21 +87,21 @@ class _AmbassadorOnboardingScreenState
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Card(
+            const Card(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
+                    Text(
                       'Welcome, Ambassador!',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(height: 16),
-                    const Text(
+                    SizedBox(height: 16),
+                    Text(
                       """You're among the first users speaking your language in your country. As our pioneer, enjoy full premium access for free while you serve.
 
 • How it works:
@@ -141,7 +141,7 @@ Ready to lead the revolution?""",
                         border: OutlineInputBorder(),
                         prefixIcon: Icon(Icons.person),
                       ),
-                      validator: (value) {
+                      validator: (final value) {
                         if (value == null || value.trim().isEmpty) {
                           return 'Please enter your full name';
                         }
@@ -160,7 +160,7 @@ Ready to lead the revolution?""",
                         prefixIcon: Icon(Icons.email),
                       ),
                       keyboardType: TextInputType.emailAddress,
-                      validator: (value) {
+                      validator: (final value) {
                         if (value == null || value.trim().isEmpty) {
                           return 'Please enter your email address';
                         }
@@ -209,18 +209,18 @@ Ready to lead the revolution?""",
                       value: _countryController.text.isEmpty
                           ? null
                           : _countryController.text,
-                      items: _countries.map((String country) {
+                      items: _countries.map((final String country) {
                         return DropdownMenuItem<String>(
                           value: country,
                           child: Text(country),
                         );
                       }).toList(),
-                      onChanged: (String? newValue) {
+                      onChanged: (final String? newValue) {
                         setState(() {
                           _countryController.text = newValue ?? '';
                         });
                       },
-                      validator: (value) {
+                      validator: (final value) {
                         if (value == null || value.isEmpty) {
                           return 'Please select your country';
                         }
@@ -237,18 +237,18 @@ Ready to lead the revolution?""",
                       value: _languageController.text.isEmpty
                           ? null
                           : _languageController.text,
-                      items: _languages.map((String language) {
+                      items: _languages.map((final String language) {
                         return DropdownMenuItem<String>(
                           value: language,
                           child: Text(language),
                         );
                       }).toList(),
-                      onChanged: (String? newValue) {
+                      onChanged: (final String? newValue) {
                         setState(() {
                           _languageController.text = newValue ?? '';
                         });
                       },
-                      validator: (value) {
+                      validator: (final value) {
                         if (value == null || value.isEmpty) {
                           return 'Please select your primary language';
                         }

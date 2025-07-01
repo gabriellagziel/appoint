@@ -6,7 +6,6 @@ import '../../fake_firebase_setup.dart';
 import 'package:appoint/services/family_service.dart';
 import 'package:appoint/providers/otp_provider.dart';
 import 'package:appoint/providers/family_provider.dart';
-import 'package:mockito/mockito.dart';
 import '../../mocks/firebase_mocks.dart';
 
 Future<void> main() async {
@@ -69,14 +68,14 @@ class MockFamilyService extends FamilyService {
   bool verifyCalled = false;
 
   @override
-  Future<void> sendOtp(String parentContact, String childId) async {
+  Future<void> sendOtp(final String parentContact, final String childId) async {
     sendCalled = true;
     await Future.delayed(const Duration(milliseconds: 10));
     if (parentContact == 'fail') throw Exception('Send failed');
   }
 
   @override
-  Future<bool> verifyOtp(String parentContact, String code) async {
+  Future<bool> verifyOtp(final String parentContact, final String code) async {
     verifyCalled = true;
     await Future.delayed(const Duration(milliseconds: 10));
     if (code == '123456') return true;

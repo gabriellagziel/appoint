@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
 
-import '../../../models/business_analytics.dart';
-import '../../../providers/business_analytics_provider.dart';
+import 'package:appoint/models/business_analytics.dart';
+import 'package:appoint/providers/business_analytics_provider.dart';
 
 class BusinessDashboardScreen extends ConsumerWidget {
   const BusinessDashboardScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final bookingsAsync = ref.watch(bookingsOverTimeProvider);
     final servicesAsync = ref.watch(serviceDistributionProvider);
     final revenueAsync = ref.watch(revenueByStaffProvider);
@@ -21,21 +21,21 @@ class BusinessDashboardScreen extends ConsumerWidget {
         child: Column(
           children: [
             bookingsAsync.when(
-              data: _buildBookingsChart,
+              data: (final data) => _buildBookingsChart(context, data),
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (e, _) => Text('Error: $e'),
+              error: (final e, final _) => Text('Error: $e'),
             ),
             const SizedBox(height: 24),
             servicesAsync.when(
               data: _buildServiceDistributionChart,
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (e, _) => Text('Error: $e'),
+              error: (final e, final _) => Text('Error: $e'),
             ),
             const SizedBox(height: 24),
             revenueAsync.when(
-              data: _buildRevenueByStaffChart,
+              data: (final data) => _buildRevenueByStaffChart(context, data),
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (e, _) => Text('Error: $e'),
+              error: (final e, final _) => Text('Error: $e'),
             ),
           ],
         ),
@@ -43,7 +43,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildBookingsChart(List<TimeSeriesPoint> data) {
+  Widget _buildBookingsChart(final BuildContext context, final List<TimeSeriesPoint> data) {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -65,7 +65,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
                   lineBarsData: [
                     LineChartBarData(
                       spots: data
-                          .map((e) => FlSpot(
+                          .map((final e) => FlSpot(
                               e.date.millisecondsSinceEpoch.toDouble(),
                               e.count.toDouble()))
                           .toList(),
@@ -84,7 +84,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildServiceDistributionChart(List<ServiceDistribution> data) {
+  Widget _buildServiceDistributionChart(final List<ServiceDistribution> data) {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -101,7 +101,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
               child: PieChart(
                 PieChartData(
                   centerSpaceRadius: 40,
-                  sections: data.asMap().entries.map((entry) {
+                  sections: data.asMap().entries.map((final entry) {
                     final index = entry.key;
                     final item = entry.value;
                     return PieChartSectionData(
@@ -119,7 +119,8 @@ class BusinessDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildRevenueByStaffChart(List<RevenueByStaff> data) {
+  Widget _buildRevenueByStaffChart(
+      final BuildContext context, final List<RevenueByStaff> data) {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -136,9 +137,9 @@ class BusinessDashboardScreen extends ConsumerWidget {
               child: BarChart(
                 BarChartData(
                   alignment: BarChartAlignment.spaceAround,
-                  titlesData: FlTitlesData(show: false),
+                  titlesData: const FlTitlesData(show: false),
                   borderData: FlBorderData(show: false),
-                  barGroups: data.asMap().entries.map((entry) {
+                  barGroups: data.asMap().entries.map((final entry) {
                     return BarChartGroupData(
                       x: entry.key,
                       barRods: [

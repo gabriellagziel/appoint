@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../models/staff_member.dart';
-import '../../models/staff_availability.dart';
-import '../../providers/studio_provider.dart';
+import 'package:appoint/models/staff_member.dart';
+import 'package:appoint/models/staff_availability.dart';
+import 'package:appoint/providers/studio_provider.dart';
 
 class StudioBookingSelection {
   final StaffMember staff;
@@ -18,7 +18,7 @@ class StudioBookingSelection {
 }
 
 class StudioBookingScreen extends ConsumerStatefulWidget {
-  const StudioBookingScreen({Key? key}) : super(key: key);
+  const StudioBookingScreen({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<StudioBookingScreen> createState() =>
@@ -30,7 +30,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   DateTime? _selectedDate;
   TimeOfDay? _selectedSlot;
 
-  TimeOfDay _parseTimeSlot(String slot) {
+  TimeOfDay _parseTimeSlot(final String slot) {
     final parts = slot.split(':');
     return TimeOfDay(
       hour: int.parse(parts[0]),
@@ -54,7 +54,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final studioId = ModalRoute.of(context)!.settings.arguments as String;
     final staffListAsync = ref.watch(staffListProvider(studioId));
     AsyncValue<StaffAvailability>? availability;
@@ -73,24 +73,24 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             staffListAsync.when(
-              data: (staff) => DropdownButton<StaffMember>(
+              data: (final staff) => DropdownButton<StaffMember>(
                 value: _selectedStaff,
                 hint: const Text('Select Staff'),
-                onChanged: (value) {
+                onChanged: (final value) {
                   setState(() {
                     _selectedStaff = value;
                     _selectedSlot = null;
                   });
                 },
                 items: staff
-                    .map((s) => DropdownMenuItem(
+                    .map((final s) => DropdownMenuItem(
                           value: s,
                           child: Text(s.displayName),
                         ))
                     .toList(),
               ),
               loading: () => const CircularProgressIndicator(),
-              error: (_, __) => const Text('Error loading staff'),
+              error: (final _, final __) => const Text('Error loading staff'),
             ),
             const SizedBox(height: 16),
             ListTile(
@@ -103,20 +103,20 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
             const SizedBox(height: 16),
             if (availability != null)
               availability.when(
-                data: (avail) {
+                data: (final avail) {
                   final slots = avail.availableSlots;
                   if (slots == null || slots.isEmpty) {
                     return const Text('No slots');
                   }
                   return Wrap(
                     spacing: 8,
-                    children: slots.map((slot) {
+                    children: slots.map((final slot) {
                       final timeSlot = _parseTimeSlot(slot);
                       final selected = _selectedSlot == timeSlot;
                       return ChoiceChip(
                         label: Text(slot),
                         selected: selected,
-                        onSelected: (_) {
+                        onSelected: (final _) {
                           setState(() {
                             _selectedSlot = timeSlot;
                           });
@@ -126,7 +126,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                   );
                 },
                 loading: () => const CircularProgressIndicator(),
-                error: (_, __) => const Text('Error loading slots'),
+                error: (final _, final __) => const Text('Error loading slots'),
               ),
             const Spacer(),
             ElevatedButton(

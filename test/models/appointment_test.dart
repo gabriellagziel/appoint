@@ -67,7 +67,7 @@ Future<void> main() async {
     });
 
     test('should handle appointment with contact information', () {
-      final contact = Contact(
+      const contact = Contact(
         id: 'contact-123',
         displayName: 'John Doe',
         email: 'john@example.com',

@@ -54,7 +54,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get undo => 'تراجع';
 
   @override
-  String get opened => 'مفتوح';
+  String opened(Object count) {
+    return 'مفتوح';
+  }
 
   @override
   String get createVirtualSession => 'إنشاء جلسة افتراضية';
@@ -269,9 +271,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get playtimeLive => 'Playtime مباشر';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'خطأ في تحميل الدعوات';
-  }
+  String get errorLoadingInvites => 'خطأ في تحميل الدعوات';
 
   @override
   String get targetingFilters => 'فلاتر الاستهداف';
@@ -289,7 +289,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get accessRevokedSuccessfully => 'تم سحب الوصول بنجاح';
 
   @override
-  String get type => 'النوع';
+  String type(Object type) {
+    return 'النوع';
+  }
 
   @override
   String get checkingPermissions => 'جاري التحقق من الأذونات';
@@ -304,7 +306,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get email => 'البريد الإلكتروني';
 
   @override
-  String get shareOnWhatsApp => 'مشاركة على WhatsApp';
+  String get shareOnWhatsApp => '[AR] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'إعدادات الإشعارات';
@@ -342,9 +344,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get playtimeReject => 'رفض Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'خطأ في تحميل الملف الشخصي';
-  }
+  String get errorLoadingProfile => 'خطأ في تحميل الملف الشخصي';
 
   @override
   String get edit => 'تعديل';
@@ -549,4 +549,22 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get pleaseLoginToViewProfile => 'يرجى تسجيل الدخول لعرض الملف الشخصي';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/business_availability.dart';
+import 'package:appoint/features/studio_business/models/business_availability.dart';
 import 'package:flutter/material.dart';
 
 class BusinessAvailabilityNotifier
@@ -15,14 +15,14 @@ class BusinessAvailabilityNotifier
             ),
         ]);
 
-  void toggleOpen(int weekday, bool isOpen) {
+  void toggleOpen(final int weekday, final bool isOpen) {
     state = [
       for (final avail in state)
         if (avail.weekday == weekday) avail.copyWith(isOpen: isOpen) else avail
     ];
   }
 
-  void setHours(int weekday, TimeOfDay start, TimeOfDay end) {
+  void setHours(final int weekday, final TimeOfDay start, final TimeOfDay end) {
     state = [
       for (final avail in state)
         if (avail.weekday == weekday)
@@ -31,9 +31,18 @@ class BusinessAvailabilityNotifier
           avail
     ];
   }
+
+  void loadConfiguration() {
+    // TODO: Implement loading configuration from backend
+  }
+
+  void updateDay(final int weekday,
+      {final bool? isOpen, final TimeOfDay? start, final TimeOfDay? end}) {
+    // TODO: Implement updating a single day's availability
+  }
 }
 
 final businessAvailabilityProvider = StateNotifierProvider<
     BusinessAvailabilityNotifier, List<BusinessAvailability>>(
-  (ref) => BusinessAvailabilityNotifier(),
+  (final ref) => BusinessAvailabilityNotifier(),
 );

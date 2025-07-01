@@ -1,664 +1,664 @@
 {
-  "refresh": "更新",
-  "@refresh": {
-    "description": "Refresh button text"
-  },
-  "home": "ホーム",
-  "@home": {
-    "description": "Home navigation label"
-  },
-  "noSessionsYet": "まだセッションがありません",
-  "@noSessionsYet": {
-    "description": "No sessions yet message"
-  },
-  "ok": "OK",
-  "@ok": {
-    "description": "OK button text"
-  },
-  "playtimeLandingChooseMode": "プレイモードを選択してください:",
-  "@playtimeLandingChooseMode": {
-    "description": "Playtime landing choose mode message"
-  },
-  "signUp": "サインアップ",
-  "@signUp": {
-    "description": "Sign up button text"
-  },
-  "scheduleMessage": "メッセージをスケジュール",
-  "@scheduleMessage": {
-    "description": "Schedule message button"
-  },
-  "decline": "拒否",
-  "@decline": {
-    "description": "Decline button"
-  },
-  "adminBroadcast": "管理者ブロードキャスト",
-  "@adminBroadcast": {
-    "description": "Admin broadcast title"
-  },
-  "login": "ログイン",
-  "@login": {
-    "description": "Login button text"
-  },
-  "playtimeChooseFriends": "友達を選択",
-  "@playtimeChooseFriends": {
-    "description": "Choose friends label"
-  },
-  "noInvites": "招待なし",
-  "@noInvites": {
-    "description": "No invites message"
-  },
-  "playtimeChooseTime": "時間を選択",
-  "@playtimeChooseTime": {
-    "description": "Choose time label"
-  },
-  "success": "成功",
-  "@success": {
-    "description": "Success message"
-  },
-  "undo": "元に戻す",
-  "@undo": {
-    "description": "Undo button text"
-  },
-  "opened": "開きました",
-  "@opened": {
-    "description": "Opened status"
-  },
-  "createVirtualSession": "バーチャルセッションを作成",
-  "@createVirtualSession": {
-    "description": "Create virtual session button"
-  },
-  "messageSentSuccessfully": "メッセージが正常に送信されました",
-  "@messageSentSuccessfully": {
-    "description": "Message sent successfully message"
-  },
-  "redo": "やり直す",
-  "@redo": {
-    "description": "Redo button text"
-  },
-  "next": "次へ",
-  "@next": {
-    "description": "Next button text"
-  },
-  "search": "検索",
-  "@search": {
-    "description": "Search placeholder text"
-  },
-  "cancelInviteConfirmation": "招待の確認をキャンセル",
-  "@cancelInviteConfirmation": {
-    "description": "Cancel invite confirmation message"
-  },
-  "created": "作成しました",
-  "@created": {
-    "description": "Created status"
-  },
-  "revokeAccess": "アクセスを取り消す",
-  "@revokeAccess": {
-    "description": "Revoke access button"
-  },
-  "saveGroupForRecognition": "グループを認識用に保存",
-  "@saveGroupForRecognition": {
-    "description": "Save group for recognition label"
-  },
-  "playtimeLiveScheduled": "ライブセッションがスケジュールされました",
-  "@playtimeLiveScheduled": {
-    "description": "Live playtime scheduled message"
-  },
-  "revokeAccessConfirmation": "アクセス取り消しの確認",
-  "@revokeAccessConfirmation": {
-    "description": "Revoke access confirmation message"
-  },
-  "download": "ダウンロード",
-  "@download": {
-    "description": "Download button text"
-  },
-  "password": "パスワード",
-  "@password": {
-    "description": "Password field label"
-  },
-  "errorLoadingFamilyLinks": "家族リンクの読み込みエラー",
-  "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message"
-  },
-  "cancel": "キャンセル",
-  "@cancel": {
-    "description": "Cancel button text"
-  },
-  "playtimeCreate": "Playtimeを作成",
-  "@playtimeCreate": {
-    "description": "Create button"
-  },
-  "failedToActionPrivacyRequest": "プライバシーリクエストの処理に失敗しました",
-  "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message"
-  },
-  "appTitle": "アプリのタイトル",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
-  "accept": "承認",
-  "@accept": {
-    "description": "Accept button"
-  },
-  "playtimeModeVirtual": "バーチャルモード",
-  "@playtimeModeVirtual": {
-    "description": "Virtual play mode label"
-  },
-  "playtimeDescription": "Playtimeの説明",
-  "@playtimeDescription": {
-    "description": "Playtime description"
-  },
-  "delete": "削除",
-  "@delete": {
-    "description": "Delete button text"
-  },
-  "playtimeVirtualStarted": "バーチャルセッションが開始されました",
-  "@playtimeVirtualStarted": {
-    "description": "Virtual playtime started message"
-  },
-  "createYourFirstGame": "最初のゲームを作成",
-  "@createYourFirstGame": {
-    "description": "Create your first game message"
-  },
-  "participants": "参加者",
-  "@participants": {
-    "description": "Participants label"
-  },
-  "recipients": "受信者",
-  "@recipients": {
-    "description": "Recipients label"
-  },
-  "noResults": "結果なし",
-  "@noResults": {
-    "description": "No search results message"
-  },
-  "yes": "はい",
-  "@yes": {
-    "description": "Yes button text"
-  },
-  "invite": "招待",
-  "@invite": {
-    "description": "Invite button"
-  },
-  "playtimeModeLive": "ライブモード",
-  "@playtimeModeLive": {
-    "description": "Live play mode label"
-  },
-  "done": "完了",
-  "@done": {
-    "description": "Done button text"
-  },
-  "defaultShareMessage": "デフォルトの共有メッセージ",
-  "@defaultShareMessage": {
-    "description": "Default share message"
-  },
-  "no": "いいえ",
-  "@no": {
-    "description": "No button text"
-  },
-  "playtimeHub": "Playtimeハブ",
-  "@playtimeHub": {
-    "description": "Playtime hub title"
-  },
-  "error": "エラー",
-  "@error": {
-    "description": "Error message"
-  },
-  "createLiveSession": "ライブセッションを作成",
-  "@createLiveSession": {
-    "description": "Create live session button"
-  },
-  "enableNotifications": "通知を有効にする",
-  "@enableNotifications": {
-    "description": "Enable notifications label"
-  },
-  "invited": "招待済み",
-  "@invited": {
-    "description": "Invited status"
-  },
-  "content": "コンテンツ",
-  "@content": {
-    "description": "Content label"
-  },
-  "meetingSharedSuccessfully": "ミーティングが正常に共有されました",
-  "@meetingSharedSuccessfully": {
-    "description": "Meeting shared successfully message"
-  },
-  "welcomeToPlaytime": "Playtimeへようこそ",
-  "@welcomeToPlaytime": {
-    "description": "Welcome to playtime message"
-  },
-  "viewAll": "すべて表示",
-  "@viewAll": {
-    "description": "View all button"
-  },
-  "playtimeVirtual": "バーチャルPlaytime",
-  "@playtimeVirtual": {
-    "description": "Virtual play label"
-  },
-  "staffScreenTBD": "スタッフ画面は後日設定",
-  "@staffScreenTBD": {
-    "description": "Staff screen TBD message"
-  },
-  "cut": "カット",
-  "@cut": {
-    "description": "Cut button text"
-  },
-  "inviteCancelledSuccessfully": "招待が正常にキャンセルされました",
-  "@inviteCancelledSuccessfully": {
-    "description": "Invite cancelled successfully message"
-  },
-  "retry": "再試行",
-  "@retry": {
-    "description": "Retry button text"
-  },
-  "composeBroadcastMessage": "放送メッセージを作成",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message title"
-  },
-  "sendNow": "今すぐ送信",
-  "@sendNow": {
-    "description": "Send now button"
-  },
-  "noGamesYet": "まだゲームはありません",
-  "@noGamesYet": {
-    "description": "No games yet message"
-  },
-  "select": "選択",
-  "@select": {
-    "description": "Select button text"
-  },
-  "about": "約",
+  "@@locale": "ja",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "選択",
-  "@choose": {
-    "description": "Choose button text"
+  "@accept": {
+    "description": "Accept button"
   },
-  "profile": "プロフィール",
-  "@profile": {
-    "description": "Profile navigation label"
-  },
-  "removeChild": "子供を削除",
-  "@removeChild": {
-    "description": "Remove child button"
-  },
-  "status": "ステータス",
-  "@status": {
-    "description": "Status label"
-  },
-  "logout": "ログアウト",
-  "@logout": {
-    "description": "Logout button text"
-  },
-  "paste": "貼り付け",
-  "@paste": {
-    "description": "Paste button text"
-  },
-  "welcome": "ようこそ",
-  "@welcome": {
-    "description": "Welcome message"
-  },
-  "playtimeCreateSession": "セッションを作成",
-  "@playtimeCreateSession": {
-    "description": "Create playtime session button"
-  },
-  "familyMembers": "家族メンバー",
-  "@familyMembers": {
-    "description": "Family members label"
-  },
-  "upload": "アップロード",
-  "@upload": {
-    "description": "Upload button text"
-  },
-  "upcomingSessions": "今後のセッション",
-  "@upcomingSessions": {
-    "description": "Upcoming sessions label"
-  },
-  "enterGroupName": "グループ名を入力",
-  "@enterGroupName": {
-    "description": "Enter group name placeholder"
-  },
-  "confirm": "確認",
-  "@confirm": {
-    "description": "Confirm button text"
-  },
-  "playtimeLive": "ライブPlaytime",
-  "@playtimeLive": {
-    "description": "Live play label"
-  },
-  "errorLoadingInvites": "招待の読み込みエラー",
-  "@errorLoadingInvites": {
-    "description": "Error loading invites message"
-  },
-  "targetingFilters": "ターゲティングフィルター",
-  "@targetingFilters": {
-    "description": "Targeting filters label"
-  },
-  "pickVideo": "ビデオを選択",
-  "@pickVideo": {
-    "description": "Pick video button"
-  },
-  "playtimeGameDeleted": "ゲームが削除されました",
-  "@playtimeGameDeleted": {
-    "description": "Game deleted message"
-  },
-  "scheduleForLater": "後でスケジュール",
-  "@scheduleForLater": {
-    "description": "Schedule for later button"
-  },
-  "accessRevokedSuccessfully": "アクセスが正常に取り消されました",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "タイプ",
-  "@type": {
-    "description": "Type label"
-  },
-  "checkingPermissions": "権限を確認中",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "copy": "コピー",
-  "@copy": {
-    "description": "Copy button text"
-  },
-  "yesCancel": "はい、キャンセル",
-  "@yesCancel": {
-    "description": "Yes cancel button"
-  },
-  "email": "メール",
-  "@email": {
-    "description": "Email field label"
-  },
-  "shareOnWhatsApp": "[JA] Share on WhatsApp",
-  "@shareOnWhatsApp": {
-    "description": "Share on WhatsApp button"
-  },
-  "notificationSettings": "通知設定",
-  "@notificationSettings": {
-    "description": "Notification settings title"
-  },
-  "myProfile": "マイプロフィール",
-  "@myProfile": {
-    "description": "My profile title"
-  },
-  "revoke": "取り消す",
-  "@revoke": {
-    "description": "Revoke button"
-  },
-  "noBroadcastMessages": "放送メッセージなし",
-  "@noBroadcastMessages": {
-    "description": "No broadcast messages message"
-  },
-  "requestType": "リクエストタイプ",
-  "@requestType": {
-    "description": "Request type label"
-  },
-  "notifications": "通知",
-  "@notifications": {
-    "description": "Notifications title"
-  },
-  "details": "詳細",
-  "@details": {
-    "description": "Details label"
-  },
-  "cancelInvite": "招待をキャンセル",
-  "@cancelInvite": {
-    "description": "Cancel invite button"
-  },
-  "createNew": "新規作成",
-  "@createNew": {
-    "description": "Create new button"
-  },
-  "settings": "設定",
-  "@settings": {
-    "description": "Settings navigation label"
-  },
-  "playtimeReject": "Playtimeを拒否",
-  "@playtimeReject": {
-    "description": "Playtime reject button"
-  },
-  "errorLoadingProfile": "プロフィール読み込みエラー",
-  "@errorLoadingProfile": {
-    "description": "Error loading profile message"
-  },
-  "edit": "編集",
-  "@edit": {
-    "description": "Edit button text"
-  },
-  "add": "追加",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "ゲームが承認されました",
-  "@playtimeGameApproved": {
-    "description": "Game approved message"
+  "@adminBroadcast": {
+    "description": "Admin broadcast title"
   },
-  "forgotPassword": "パスワードをお忘れですか？",
-  "@forgotPassword": {
-    "description": "Forgot password link text"
-  },
-  "familyDashboard": "ファミリーダッシュボード",
-  "@familyDashboard": {
-    "description": "Family dashboard title"
-  },
-  "loading": "読み込み中",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "quickActions": "クイックアクション",
-  "@quickActions": {
-    "description": "Quick actions label"
-  },
-  "playtimeTitle": "Playtimeタイトル",
-  "@playtimeTitle": {
-    "description": "Playtime title"
-  },
-  "otpResentSuccessfully": "OTPが正常に再送信されました",
-  "@otpResentSuccessfully": {
-    "description": "OTP resent successfully message"
-  },
-  "errorCheckingPermissions": "権限の確認エラー",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message"
-  },
-  "clientScreenTBD": "クライアント画面は後日設定",
-  "@clientScreenTBD": {
-    "description": "Client screen TBD message"
-  },
-  "fcmToken": "FCMトークン",
-  "@fcmToken": {
-    "description": "FCM token label"
-  },
-  "pickImage": "画像を選択",
-  "@pickImage": {
-    "description": "Pick image button"
-  },
-  "previous": "前へ",
-  "@previous": {
-    "description": "Previous button text"
-  },
-  "noProfileFound": "プロフィールが見つかりません",
-  "@noProfileFound": {
-    "description": "No profile found message"
-  },
-  "noFamilyMembersYet": "まだ家族メンバーがいません",
-  "@noFamilyMembersYet": {
-    "description": "No family members yet message"
-  },
-  "mediaOptional": "メディア（オプション）",
-  "@mediaOptional": {
-    "description": "Media optional label"
-  },
-  "messageSavedSuccessfully": "メッセージが正常に保存されました",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully message"
-  },
-  "scheduledFor": "次の日時にスケジュール済み",
-  "@scheduledFor": {
-    "description": "Scheduled for label"
-  },
-  "dashboard": "ダッシュボード",
-  "@dashboard": {
-    "description": "Dashboard title"
-  },
-  "noPermissionForBroadcast": "放送権限がありません",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "playtimeAdminPanelTitle": "Playtime管理パネルタイトル",
-  "@playtimeAdminPanelTitle": {
-    "description": "Playtime admin panel title"
-  },
-  "inviteDetail": "招待の詳細",
-  "@inviteDetail": {
-    "description": "Invite detail title"
-  },
-  "scheduled": "スケジュール済み",
-  "@scheduled": {
-    "description": "Scheduled status"
-  },
-  "failedToResendOtp": "OTPの再送信に失敗しました",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
-  },
-  "scheduling": "スケジュール中",
-  "@scheduling": {
-    "description": "Scheduling label"
-  },
-  "errorSavingMessage": "メッセージ保存エラー",
-  "@errorSavingMessage": {
-    "description": "Error saving message message"
-  },
-  "save": "保存",
-  "@save": {
-    "description": "Save button text"
-  },
-  "playtimeApprove": "Playtimeを承認",
-  "@playtimeApprove": {
-    "description": "Playtime approve button"
-  },
-  "createYourFirstSession": "最初のセッションを作成",
-  "@createYourFirstSession": {
-    "description": "Create your first session message"
-  },
-  "playtimeGameRejected": "ゲームが拒否されました",
-  "@playtimeGameRejected": {
-    "description": "Game rejected message"
-  },
-  "failedToRevokeAccess": "[JA] Failed to revoke access",
-  "@failedToRevokeAccess": {
-    "description": "Failed to revoke access message"
-  },
-  "recentGames": "最近のゲーム",
-  "@recentGames": {
-    "description": "Recent games label"
-  },
-  "customizeMessage": "メッセージをカスタマイズ",
-  "@customizeMessage": {
-    "description": "Customize message button"
-  },
-  "failedToCancelInvite": "招待キャンセルに失敗しました",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
-  },
-  "errorSendingMessage": "メッセージ送信エラー",
-  "@errorSendingMessage": {
-    "description": "Error sending message message"
-  },
-  "confirmPassword": "パスワードを確認",
-  "@confirmPassword": {
-    "description": "Confirm password field label"
-  },
-  "errorLoadingPrivacyRequests": "プライバシーリクエスト読み込みエラー",
-  "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message"
-  },
-  "connectedChildren": "接続された子供",
-  "@connectedChildren": {
-    "description": "Connected children label"
-  },
-  "share": "共有",
-  "@share": {
-    "description": "Share button text"
-  },
-  "playtimeEnterGameName": "ゲーム名を入力",
-  "@playtimeEnterGameName": {
-    "description": "Enter game name label"
-  },
-  "pleaseLoginForFamilyFeatures": "[JA] Please login to access family features",
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Please login for family features message"
-  },
-  "myInvites": "[JA] My Invites",
-  "@myInvites": {
-    "description": "My invites title"
-  },
-  "createGame": "[JA] Create Game",
-  "@createGame": {
-    "description": "Create game button"
-  },
-  "groupNameOptional": "[JA] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Group name optional label"
-  },
-  "playtimeNoSessions": "[JA] No playtime sessions found.",
-  "@playtimeNoSessions": {
-    "description": "No playtime sessions message"
-  },
-  "adminScreenTBD": "[JA] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "[JA] Playtime Dashboard",
-  "@playtimeParentDashboardTitle": {
-    "description": "Playtime parent dashboard title"
+  "@appTitle": {
+    "description": "The title of the application"
   },
-  "close": "[JA] Close",
-  "@close": {
-    "description": "Close button text"
-  },
-  "knownGroupDetected": "[JA] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Known group detected message"
-  },
-  "back": "[JA] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "[JA] Choose a game",
-  "@playtimeChooseGame": {
-    "description": "Choose game label"
+  "@cancel": {
+    "description": "Cancel button text"
   },
-  "managePermissions": "[JA] Manage Permissions",
-  "@managePermissions": {
-    "description": "Manage permissions button"
+  "@cancelInvite": {
+    "description": "Cancel invite button"
   },
-  "pollOptions": "[JA] Poll Options",
-  "@pollOptions": {
-    "description": "Poll options label"
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
   },
-  "clicked": "[JA] Clicked",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "@choose": {
+    "description": "Choose button text"
+  },
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "[JA] Link",
+  "@clientScreenTBD": {
+    "description": "Client screen TBD message"
+  },
+  "@close": {
+    "description": "Close button text"
+  },
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message title"
+  },
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "@content": {
+    "description": "Content label"
+  },
+  "@copy": {
+    "description": "Copy button text"
+  },
+  "@createGame": {
+    "description": "Create game button"
+  },
+  "@createLiveSession": {
+    "description": "Create live session button"
+  },
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
+  },
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "@created": {
+    "description": "Created status"
+  },
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "@dashboard": {
+    "description": "Dashboard title"
+  },
+  "@decline": {
+    "description": "Decline button"
+  },
+  "@defaultShareMessage": {
+    "description": "Default share message"
+  },
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "@details": {
+    "description": "Details label"
+  },
+  "@done": {
+    "description": "Done button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "@email": {
+    "description": "Email field label"
+  },
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "@enterGroupName": {
+    "description": "Enter group name placeholder"
+  },
+  "@error": {
+    "description": "Error message"
+  },
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message"
+  },
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message"
+  },
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "@errorSavingMessage": {
+    "description": "Error saving message message"
+  },
+  "@errorSendingMessage": {
+    "description": "Error sending message message"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message"
+  },
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message"
+  },
+  "@familyDashboard": {
+    "description": "Family dashboard title"
+  },
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "@fcmToken": {
+    "description": "FCM token label"
+  },
+  "@forgotPassword": {
+    "description": "Forgot password link text"
+  },
+  "@groupNameOptional": {
+    "description": "Group name optional label"
+  },
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "@invite": {
+    "description": "Invite button"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "@inviteDetail": {
+    "description": "Invite detail title"
+  },
+  "@invited": {
+    "description": "Invited status"
+  },
+  "@knownGroupDetected": {
+    "description": "Known group detected message"
+  },
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "[JA] Your meeting is ready! Join now",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@login": {
+    "description": "Login button text"
+  },
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "@managePermissions": {
+    "description": "Manage permissions button"
+  },
+  "@mediaOptional": {
+    "description": "Media optional label"
+  },
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "[JA] Pending Invites",
+  "@meetingSharedSuccessfully": {
+    "description": "Meeting shared successfully message"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "@myInvites": {
+    "description": "My invites title"
+  },
+  "@myProfile": {
+    "description": "My profile title"
+  },
+  "@next": {
+    "description": "Next button text"
+  },
+  "@no": {
+    "description": "No button text"
+  },
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
+  },
+  "@notificationSettings": {
+    "description": "Notification settings title"
+  },
+  "@notifications": {
+    "description": "Notifications title"
+  },
+  "@ok": {
+    "description": "OK button text"
+  },
+  "@opened": {
+    "description": "Opened status"
+  },
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "@participants": {
+    "description": "Participants label"
+  },
+  "@password": {
+    "description": "Password field label"
+  },
+  "@paste": {
+    "description": "Paste button text"
+  },
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "[JA] Status:",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
+  },
+  "@playtimeChooseGame": {
+    "description": "Choose game label"
+  },
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "@playtimeCreate": {
+    "description": "Create button"
+  },
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "@playtimeGameApproved": {
+    "description": "Game approved message"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Game deleted message"
+  },
+  "@playtimeGameRejected": {
+    "description": "Game rejected message"
+  },
+  "@playtimeHub": {
+    "description": "Playtime hub title"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "@playtimeLive": {
+    "description": "Live play label"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
+  },
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
+  "@playtimeNoSessions": {
+    "description": "No playtime sessions message"
+  },
+  "@playtimeParentDashboardTitle": {
+    "description": "Playtime parent dashboard title"
+  },
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "@playtimeVirtual": {
+    "description": "Virtual play label"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "@recipients": {
+    "description": "Recipients label"
+  },
+  "@redo": {
+    "description": "Redo button text"
+  },
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  "@removeChild": {
+    "description": "Remove child button"
+  },
+  "@requestType": {
+    "description": "Request type label"
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@revoke": {
+    "description": "Revoke button"
+  },
+  "@revokeAccess": {
+    "description": "Revoke access button"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "@save": {
+    "description": "Save button text"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
+  },
+  "@scheduleForLater": {
+    "description": "Schedule for later button"
+  },
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "@scheduling": {
+    "description": "Scheduling label"
+  },
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "@select": {
+    "description": "Select button text"
+  },
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "@share": {
+    "description": "Share button text"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "@staffScreenTBD": {
+    "description": "Staff screen TBD message"
+  },
+  "@status": {
+    "description": "Status label"
+  },
   "@statusColon": {
     "description": "Status colon label"
   },
-  "@@locale": "ja",
-  "pleaseLoginToViewProfile": "プロフィールを表示するにはログインしてください"
+  "@success": {
+    "description": "Success message"
+  },
+  "@targetingFilters": {
+    "description": "Targeting filters label"
+  },
+  "@type": {
+    "description": "Type label"
+  },
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "@yes": {
+    "description": "Yes button text"
+  },
+  "@yesCancel": {
+    "description": "Yes cancel button"
+  },
+  "about": "約",
+  "accept": "承認",
+  "accessRevokedSuccessfully": "アクセスが正常に取り消されました",
+  "add": "追加",
+  "adminBroadcast": "管理者ブロードキャスト",
+  "adminScreenTBD": "[JA] Admin screen coming soon",
+  "appTitle": "アプリのタイトル",
+  "back": "[JA] Back",
+  "cancel": "キャンセル",
+  "cancelInvite": "招待をキャンセル",
+  "cancelInviteConfirmation": "招待の確認をキャンセル",
+  "checkingPermissions": "権限を確認中",
+  "choose": "選択",
+  "clicked": "[JA] Clicked",
+  "clientScreenTBD": "クライアント画面は後日設定",
+  "close": "[JA] Close",
+  "composeBroadcastMessage": "放送メッセージを作成",
+  "confirm": "確認",
+  "confirmPassword": "パスワードを確認",
+  "connectedChildren": "接続された子供",
+  "content": "コンテンツ",
+  "copy": "コピー",
+  "createGame": "[JA] Create Game",
+  "createLiveSession": "ライブセッションを作成",
+  "createNew": "新規作成",
+  "createVirtualSession": "バーチャルセッションを作成",
+  "createYourFirstGame": "最初のゲームを作成",
+  "createYourFirstSession": "最初のセッションを作成",
+  "created": "作成しました",
+  "customizeMessage": "メッセージをカスタマイズ",
+  "cut": "カット",
+  "dashboard": "ダッシュボード",
+  "decline": "拒否",
+  "defaultShareMessage": "デフォルトの共有メッセージ",
+  "delete": "削除",
+  "details": "詳細",
+  "done": "完了",
+  "download": "ダウンロード",
+  "edit": "編集",
+  "email": "メール",
+  "enableNotifications": "通知を有効にする",
+  "enterGroupName": "グループ名を入力",
+  "error": "エラー",
+  "errorCheckingPermissions": "権限の確認エラー",
+  "errorLoadingFamilyLinks": "家族リンクの読み込みエラー",
+  "errorLoadingInvites": "招待の読み込みエラー",
+  "errorLoadingPrivacyRequests": "プライバシーリクエスト読み込みエラー",
+  "errorLoadingProfile": "プロフィール読み込みエラー",
+  "errorSavingMessage": "メッセージ保存エラー",
+  "errorSendingMessage": "メッセージ送信エラー",
+  "failedToActionPrivacyRequest": "プライバシーリクエストの処理に失敗しました",
+  "failedToCancelInvite": "招待キャンセルに失敗しました",
+  "failedToResendOtp": "OTPの再送信に失敗しました",
+  "failedToRevokeAccess": "[JA] Failed to revoke access",
+  "familyDashboard": "ファミリーダッシュボード",
+  "familyMembers": "家族メンバー",
+  "fcmToken": "FCMトークン",
+  "forgotPassword": "パスワードをお忘れですか？",
+  "groupNameOptional": "[JA] Group Name (Optional)",
+  "home": "ホーム",
+  "invite": "招待",
+  "inviteCancelledSuccessfully": "招待が正常にキャンセルされました",
+  "inviteDetail": "招待の詳細",
+  "invited": "招待済み",
+  "knownGroupDetected": "[JA] Known group detected",
+  "link": "[JA] Link",
+  "loading": "読み込み中",
+  "login": "ログイン",
+  "logout": "ログアウト",
+  "managePermissions": "[JA] Manage Permissions",
+  "mediaOptional": "メディア（オプション）",
+  "meetingReadyMessage": "[JA] Your meeting is ready! Join now",
+  "meetingSharedSuccessfully": "ミーティングが正常に共有されました",
+  "messageSavedSuccessfully": "メッセージが正常に保存されました",
+  "messageSentSuccessfully": "メッセージが正常に送信されました",
+  "myInvites": "[JA] My Invites",
+  "myProfile": "マイプロフィール",
+  "next": "次へ",
+  "no": "いいえ",
+  "noBroadcastMessages": "放送メッセージなし",
+  "noFamilyMembersYet": "まだ家族メンバーがいません",
+  "noGamesYet": "まだゲームはありません",
+  "noInvites": "招待なし",
+  "noPermissionForBroadcast": "放送権限がありません",
+  "noProfileFound": "プロフィールが見つかりません",
+  "noResults": "結果なし",
+  "noSessionsYet": "まだセッションがありません",
+  "notificationSettings": "通知設定",
+  "notifications": "通知",
+  "ok": "OK",
+  "opened": "開きました",
+  "otpResentSuccessfully": "OTPが正常に再送信されました",
+  "participants": "参加者",
+  "password": "パスワード",
+  "paste": "貼り付け",
+  "pendingInvites": "[JA] Pending Invites",
+  "pickImage": "画像を選択",
+  "pickVideo": "ビデオを選択",
+  "playtimeAdminPanelTitle": "Playtime管理パネルタイトル",
+  "playtimeApprove": "Playtimeを承認",
+  "playtimeChooseFriends": "友達を選択",
+  "playtimeChooseGame": "[JA] Choose a game",
+  "playtimeChooseTime": "時間を選択",
+  "playtimeCreate": "Playtimeを作成",
+  "playtimeCreateSession": "セッションを作成",
+  "playtimeDescription": "Playtimeの説明",
+  "playtimeEnterGameName": "ゲーム名を入力",
+  "playtimeGameApproved": "ゲームが承認されました",
+  "playtimeGameDeleted": "ゲームが削除されました",
+  "playtimeGameRejected": "ゲームが拒否されました",
+  "playtimeHub": "Playtimeハブ",
+  "playtimeLandingChooseMode": "プレイモードを選択してください:",
+  "playtimeLive": "ライブPlaytime",
+  "playtimeLiveScheduled": "ライブセッションがスケジュールされました",
+  "playtimeModeLive": "ライブモード",
+  "playtimeModeVirtual": "バーチャルモード",
+  "playtimeNoSessions": "[JA] No playtime sessions found.",
+  "playtimeParentDashboardTitle": "[JA] Playtime Dashboard",
+  "playtimeReject": "Playtimeを拒否",
+  "playtimeTitle": "Playtimeタイトル",
+  "playtimeVirtual": "バーチャルPlaytime",
+  "playtimeVirtualStarted": "バーチャルセッションが開始されました",
+  "pleaseLoginForFamilyFeatures": "[JA] Please login to access family features",
+  "pleaseLoginToViewProfile": "プロフィールを表示するにはログインしてください",
+  "pollOptions": "[JA] Poll Options",
+  "previous": "前へ",
+  "profile": "プロフィール",
+  "quickActions": "クイックアクション",
+  "recentGames": "最近のゲーム",
+  "recipients": "受信者",
+  "redo": "やり直す",
+  "refresh": "更新",
+  "removeChild": "子供を削除",
+  "requestType": "リクエストタイプ",
+  "retry": "再試行",
+  "revoke": "取り消す",
+  "revokeAccess": "アクセスを取り消す",
+  "revokeAccessConfirmation": "アクセス取り消しの確認",
+  "save": "保存",
+  "saveGroupForRecognition": "グループを認識用に保存",
+  "scheduleForLater": "後でスケジュール",
+  "scheduleMessage": "メッセージをスケジュール",
+  "scheduled": "スケジュール済み",
+  "scheduledFor": "次の日時にスケジュール済み",
+  "scheduling": "スケジュール中",
+  "search": "検索",
+  "select": "選択",
+  "sendNow": "今すぐ送信",
+  "settings": "設定",
+  "share": "共有",
+  "shareOnWhatsApp": "[JA] Share on WhatsApp",
+  "signUp": "サインアップ",
+  "staffScreenTBD": "スタッフ画面は後日設定",
+  "status": "ステータス",
+  "statusColon": "[JA] Status:",
+  "success": "成功",
+  "targetingFilters": "ターゲティングフィルター",
+  "type": "タイプ",
+  "undo": "元に戻す",
+  "upcomingSessions": "今後のセッション",
+  "upload": "アップロード",
+  "viewAll": "すべて表示",
+  "welcome": "ようこそ",
+  "welcomeToPlaytime": "Playtimeへようこそ",
+  "yes": "はい",
+  "yesCancel": "はい、キャンセル"
 }

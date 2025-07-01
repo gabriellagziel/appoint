@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import '../../widgets/bottom_sheet_manager.dart';
-import '../../widgets/booking_confirmation_sheet.dart';
-import 'studio_booking_screen.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
+import 'package:appoint/widgets/booking_confirmation_sheet.dart';
+import 'package:appoint/features/studio/studio_booking_screen.dart';
 
 class StudioBookingConfirmScreen extends ConsumerWidget {
-  const StudioBookingConfirmScreen({Key? key}) : super(key: key);
+  const StudioBookingConfirmScreen({final Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final args =
         ModalRoute.of(context)!.settings.arguments as StudioBookingSelection;
     return Scaffold(

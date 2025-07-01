@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '../models/branch.dart';
+import 'package:appoint/models/branch.dart';
 
 class BranchService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -8,7 +8,7 @@ class BranchService {
   Future<List<Branch>> fetchBranches() async {
     final snapshot = await _firestore.collection('branches').get();
     return snapshot.docs
-        .map((doc) => Branch.fromJson(doc.data(), doc.id))
+        .map((final doc) => Branch.fromJson(doc.data(), doc.id))
         .toList();
   }
 }

@@ -12,7 +12,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   testWidgets('Business Dashboard shows welcome text',
-      (WidgetTester tester) async {
+      (final WidgetTester tester) async {
     final firestore = MockFirebaseFirestore();
 
     await tester.pumpWidget(const ProviderScope(

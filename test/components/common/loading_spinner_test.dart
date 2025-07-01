@@ -8,7 +8,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('LoadingSpinner', () {
-    testWidgets('shows default text', (tester) async {
+    testWidgets('shows default text', (final tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: LoadingSpinner(),
@@ -19,7 +19,7 @@ Future<void> main() async {
       expect(find.text('Loading...'), findsOneWidget);
     });
 
-    testWidgets('shows custom text', (tester) async {
+    testWidgets('shows custom text', (final tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: LoadingSpinner(text: 'Please wait'),

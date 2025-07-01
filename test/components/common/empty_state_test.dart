@@ -8,7 +8,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('EmptyState', () {
-    testWidgets('renders with default icon', (tester) async {
+    testWidgets('renders with default icon', (final tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: EmptyState(title: 'No items'),
@@ -19,7 +19,7 @@ Future<void> main() async {
       expect(find.byIcon(Icons.inbox), findsOneWidget);
     });
 
-    testWidgets('renders with custom icon', (tester) async {
+    testWidgets('renders with custom icon', (final tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: EmptyState(title: 'Empty', icon: Icons.error),

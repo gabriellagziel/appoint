@@ -1,26 +1,26 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../models/user_type.dart';
+import 'package:appoint/models/user_type.dart';
 
 // Provider to manage the current business mode
-final businessModeProvider = StateProvider<UserType>((ref) {
+final businessModeProvider = StateProvider<UserType>((final ref) {
   // Default to personal mode
   return UserType.personal;
 });
 
 // Provider to check if user is in business mode
-final isBusinessModeProvider = Provider<bool>((ref) {
+final isBusinessModeProvider = Provider<bool>((final ref) {
   final mode = ref.watch(businessModeProvider);
   return mode == UserType.business;
 });
 
 // Provider to check if user is in studio mode
-final isStudioModeProvider = Provider<bool>((ref) {
+final isStudioModeProvider = Provider<bool>((final ref) {
   final mode = ref.watch(businessModeProvider);
   return mode == UserType.studio;
 });
 
 // Provider to get the current mode as a string for display
-final businessModeStringProvider = Provider<String>((ref) {
+final businessModeStringProvider = Provider<String>((final ref) {
   final mode = ref.watch(businessModeProvider);
   switch (mode) {
     case UserType.business:

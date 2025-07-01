@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../models/studio_appointment.dart';
-import '../../../providers/studio_appointments_provider.dart';
-import '../../../widgets/app_scaffold.dart';
-import '../../../widgets/loading_state.dart';
-import '../../../widgets/error_state.dart';
-import '../../../widgets/empty_state.dart';
-import '../../../theme/app_spacing.dart';
+import 'package:appoint/models/studio_appointment.dart';
+import 'package:appoint/providers/studio_appointments_provider.dart';
+import 'package:appoint/widgets/app_scaffold.dart';
+import 'package:appoint/widgets/loading_state.dart';
+import 'package:appoint/widgets/error_state.dart';
+import 'package:appoint/widgets/empty_state.dart';
+import 'package:appoint/theme/app_spacing.dart';
 
 class AppointmentsScreen extends ConsumerWidget {
   const AppointmentsScreen({super.key});
 
-  Future<void> _openEditor(BuildContext context, WidgetRef ref,
-      {StudioAppointment? appt}) async {
+  Future<void> _openEditor(final BuildContext context, final WidgetRef ref,
+      {final StudioAppointment? appt}) async {
     final titleController = TextEditingController(text: appt?.title ?? '');
     final clientController = TextEditingController(text: appt?.client ?? '');
     final notesController = TextEditingController(text: appt?.notes ?? '');
@@ -21,11 +21,11 @@ class AppointmentsScreen extends ConsumerWidget {
 
     await showDialog(
       context: context,
-      builder: (context) {
+      builder: (final context) {
         return AlertDialog(
           title: Text(appt == null ? 'New Appointment' : 'Edit Appointment'),
           content: StatefulBuilder(
-            builder: (context, setState) {
+            builder: (final context, final setState) {
               return SingleChildScrollView(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -47,7 +47,7 @@ class AppointmentsScreen extends ConsumerWidget {
                       children: [
                         Text(time == null
                             ? 'No time'
-                            : '${time.toLocal()}'.split('.').first),
+                            : '${time?.toLocal()}'.split('.').first),
                         const Spacer(),
                         TextButton(
                           onPressed: () async {
@@ -110,7 +110,7 @@ class AppointmentsScreen extends ConsumerWidget {
   }
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final apptsAsync = ref.watch(studioAppointmentsProvider);
     return AppScaffold(
       title: 'Appointments',
@@ -119,7 +119,7 @@ class AppointmentsScreen extends ConsumerWidget {
         child: const Icon(Icons.add, semanticLabel: 'add appointment'),
       ),
       body: apptsAsync.when(
-        data: (appts) {
+        data: (final appts) {
           if (appts.isEmpty) {
             return const EmptyState(
               title: 'No Appointments',
@@ -130,7 +130,7 @@ class AppointmentsScreen extends ConsumerWidget {
           return ListView.builder(
             padding: const EdgeInsets.all(AppSpacing.md),
             itemCount: appts.length,
-            itemBuilder: (context, index) {
+            itemBuilder: (final context, final index) {
               final appt = appts[index];
               return ListTile(
                 title: Text(appt.title),
@@ -158,7 +158,7 @@ class AppointmentsScreen extends ConsumerWidget {
           );
         },
         loading: () => const LoadingState(),
-        error: (e, _) => ErrorState(
+        error: (final e, final _) => ErrorState(
           title: 'Error',
           description: 'Error: $e',
         ),

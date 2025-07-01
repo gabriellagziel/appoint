@@ -1,3 +1,3 @@
 class FirestoreHostApi {
-  static void setup(FirestoreHostApi api) {}
+  static void setup(final FirestoreHostApi api) {}
 }

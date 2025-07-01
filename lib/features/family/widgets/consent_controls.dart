@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../models/family_link.dart';
-import '../../../providers/family_provider.dart';
+import 'package:appoint/models/family_link.dart';
+import 'package:appoint/providers/family_provider.dart';
 
 class ConsentControls extends ConsumerStatefulWidget {
   final FamilyLink familyLink;
   final VoidCallback? onConsentChanged;
 
   const ConsentControls({
-    Key? key,
+    final Key? key,
     required this.familyLink,
     this.onConsentChanged,
   }) : super(key: key);
@@ -32,7 +32,7 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
     _hasConsented = widget.familyLink.consentedAt.isNotEmpty;
   }
 
-  Future<void> _updateConsent(bool grant) async {
+  Future<void> _updateConsent(final bool grant) async {
     setState(() {
       _isLoading = true;
     });
@@ -74,7 +74,7 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),

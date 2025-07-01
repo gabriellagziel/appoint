@@ -8,7 +8,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('ParentalConsentPrompt', () {
-    testWidgets('shows both consent buttons', (tester) async {
+    testWidgets('shows both consent buttons', (final tester) async {
       await tester.pumpWidget(const MaterialApp(home: ParentalConsentPrompt()));
 
       expect(find.text('I Consent'), findsOneWidget);

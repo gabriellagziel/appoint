@@ -6,6 +6,6 @@ const List<String> supportedLanguages = [
   'sq', 'mk', 'sr', 'bs'
 ];
 
-bool isSupportedLanguage(String code) {
+bool isSupportedLanguage(final String code) {
   return supportedLanguages.contains(code.toLowerCase());
 }

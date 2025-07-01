@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import '../screens/business_calendar_screen.dart';
-import '../screens/business_availability_screen.dart';
+import 'package:appoint/features/studio_business/screens/business_calendar_screen.dart';
+import 'package:appoint/features/studio_business/screens/business_availability_screen.dart';
 
 class BusinessEntryScreen extends StatelessWidget {
-  const BusinessEntryScreen({Key? key}) : super(key: key);
+  const BusinessEntryScreen({final Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Business Dashboard'),
@@ -15,7 +15,7 @@ class BusinessEntryScreen extends StatelessWidget {
       ),
       body: Center(
         child: LayoutBuilder(
-          builder: (context, constraints) {
+          builder: (final context, final constraints) {
             final isWide = constraints.maxWidth > 600;
             return isWide
                 ? Row(
@@ -27,7 +27,7 @@ class BusinessEntryScreen extends StatelessWidget {
                         onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (_) => const BusinessCalendarScreen()),
+                              builder: (final _) => const BusinessCalendarScreen()),
                         ),
                       ),
                       const SizedBox(width: 32),
@@ -37,7 +37,7 @@ class BusinessEntryScreen extends StatelessWidget {
                         onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (_) =>
+                              builder: (final _) =>
                                   const BusinessAvailabilityScreen()),
                         ),
                       ),
@@ -52,7 +52,7 @@ class BusinessEntryScreen extends StatelessWidget {
                         onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (_) => const BusinessCalendarScreen()),
+                              builder: (final _) => const BusinessCalendarScreen()),
                         ),
                       ),
                       const SizedBox(height: 24),
@@ -62,7 +62,7 @@ class BusinessEntryScreen extends StatelessWidget {
                         onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (_) =>
+                              builder: (final _) =>
                                   const BusinessAvailabilityScreen()),
                         ),
                       ),
@@ -83,7 +83,7 @@ class _NavTile extends StatelessWidget {
       {required this.icon, required this.label, required this.onTap});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(16),
       onTap: onTap,

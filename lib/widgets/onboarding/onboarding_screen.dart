@@ -38,7 +38,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -46,7 +46,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             Expanded(
               child: PageView(
                 controller: _controller,
-                onPageChanged: (i) => setState(() => _index = i),
+                onPageChanged: (final i) => setState(() => _index = i),
                 children: _pages,
               ),
             ),
@@ -62,7 +62,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   Row(
                     children: List.generate(
                       _pages.length,
-                      (i) => Container(
+                      (final i) => Container(
                         width: 8,
                         height: 8,
                         margin: const EdgeInsets.all(4),
@@ -95,7 +95,7 @@ class _OnboardingPage extends StatelessWidget {
   final String description;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(32),
       child: Column(

@@ -1,0 +1,1705 @@
+=== am ===
+None
+
+=== ar ===
+None
+
+=== bg ===
+None
+
+=== bn ===
+confirmPassword: Confirm Password
+createGame: Create Game
+createYourFirstSession: Create your first session
+cut: Cut
+delete: Delete
+error: Error
+participants: Participants
+paste: Paste
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseGame: Choose a game
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+recentGames: Recent Games
+scheduledFor: Scheduled for
+share: Share
+upcomingSessions: Upcoming Sessions
+
+=== bn_BD ===
+None
+
+=== bs ===
+about: About
+accept: Accept
+accessRevokedSuccessfully: Access revoked successfully
+add: Add
+adminBroadcast: Admin Broadcast
+adminScreenTBD: Admin screen coming soon
+appTitle: APP-OINT
+back: Back
+cancel: Cancel
+cancelInvite: Cancel Invite
+cancelInviteConfirmation: Are you sure you want to cancel this invite?
+checkingPermissions: Checking permissions...
+choose: Choose
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+composeBroadcastMessage: Compose Broadcast Message
+confirm: Confirm
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+content: Content
+copy: Copy
+createGame: Create Game
+createLiveSession: Create Live Session
+createNew: Create New
+createVirtualSession: Create Virtual Session
+createYourFirstGame: Create your first game
+createYourFirstSession: Create your first session
+created: Created
+customizeMessage: Customize Message
+cut: Cut
+dashboard: Dashboard
+decline: Decline
+defaultShareMessage: Let's meet via Appoint!
+delete: Delete
+details: Details
+done: Done
+download: Download
+edit: Edit
+email: Email
+enableNotifications: Enable Notifications
+enterGroupName: Enter group name
+error: Error
+errorCheckingPermissions: Error checking permissions
+errorLoadingFamilyLinks: Error loading family links
+errorLoadingInvites: Error loading invites
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToActionPrivacyRequest: Failed to action privacy request
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+familyMembers: Family Members
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+home: Home
+invite: Invite
+inviteCancelledSuccessfully: Invite cancelled successfully
+inviteDetail: Invite Details
+invited: Invited
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+login: Login
+logout: Logout
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+meetingSharedSuccessfully: Meeting shared successfully
+messageSavedSuccessfully: Message saved successfully
+messageSentSuccessfully: Message sent successfully
+myInvites: My Invites
+myProfile: My Profile
+next: Next
+no: No
+noBroadcastMessages: No messages yet
+noFamilyMembersYet: No family members yet
+noGamesYet: No games yet
+noInvites: No invites
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+noResults: No results found
+noSessionsYet: No sessions yet
+notificationSettings: Notification Settings
+notifications: Notifications
+ok: OK
+opened: Opened
+otpResentSuccessfully: OTP resent successfully
+participants: Participants
+password: Password
+paste: Paste
+pendingInvites: Pending Invites
+pickImage: Pick Image
+pickVideo: Pick Video
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseFriends: Choose friends to invite
+playtimeChooseGame: Choose a game
+playtimeChooseTime: Choose a time
+playtimeCreate: Create
+playtimeCreateSession: Create a Playtime Session
+playtimeDescription: Enjoy live or virtual games with your friends!
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeHub: Playtime Hub
+playtimeLandingChooseMode: Choose your play mode:
+playtimeLive: Live Play
+playtimeLiveScheduled: Live playtime scheduled!
+playtimeModeLive: Live Play
+playtimeModeVirtual: Virtual Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+playtimeVirtual: Virtual Play
+playtimeVirtualStarted: Virtual playtime started!
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+profile: Profile
+quickActions: Quick Actions
+recentGames: Recent Games
+recipients: Recipients
+redo: Redo
+refresh: Refresh
+removeChild: Remove Child
+requestType: Request Type
+retry: Retry
+revoke: Revoke
+revokeAccess: Revoke Access
+revokeAccessConfirmation: Are you sure you want to revoke access?
+save: Save
+saveGroupForRecognition: Save Group for Recognition
+scheduleForLater: Schedule for Later
+scheduleMessage: Schedule Message
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+search: Search
+select: Select
+sendNow: Send Now
+settings: Settings
+share: Share
+shareOnWhatsApp: Share on WhatsApp
+signUp: Sign Up
+staffScreenTBD: Staff screen coming soon
+status: Status
+statusColon: Status:
+success: Success
+targetingFilters: Targeting Filters
+type: Type
+undo: Undo
+upcomingSessions: Upcoming Sessions
+upload: Upload
+viewAll: View All
+welcome: Welcome
+welcomeToPlaytime: Welcome to Playtime
+yes: Yes
+yesCancel: Yes, Cancel
+
+=== ca ===
+None
+
+=== cs ===
+None
+
+=== cy ===
+None
+
+=== da ===
+None
+
+=== de ===
+about: About
+accessRevokedSuccessfully: Access revoked successfully
+add: Add
+adminScreenTBD: Admin screen coming soon
+back: Back
+cancelInvite: Cancel Invite
+checkingPermissions: Checking permissions...
+choose: Choose
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+composeBroadcastMessage: Compose Broadcast Message
+confirm: Confirm
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+copy: Copy
+createGame: Create Game
+createNew: Create New
+createYourFirstSession: Create your first session
+customizeMessage: Customize Message
+dashboard: Dashboard
+details: Details
+edit: Edit
+email: Email
+enterGroupName: Enter group name
+errorCheckingPermissions: Error checking permissions
+errorLoadingInvites: Error loading invites
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+familyMembers: Family Members
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+inviteDetail: Invite Details
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+logout: Logout
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+messageSavedSuccessfully: Message saved successfully
+myInvites: My Invites
+myProfile: My Profile
+noBroadcastMessages: No messages yet
+noFamilyMembersYet: No family members yet
+noGamesYet: No games yet
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+notificationSettings: Notification Settings
+notifications: Notifications
+otpResentSuccessfully: OTP resent successfully
+paste: Paste
+pendingInvites: Pending Invites
+pickImage: Pick Image
+pickVideo: Pick Video
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseGame: Choose a game
+playtimeCreateSession: Create a Playtime Session
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeLive: Live Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+profile: Profile
+quickActions: Quick Actions
+recentGames: Recent Games
+removeChild: Remove Child
+requestType: Request Type
+revoke: Revoke
+save: Save
+scheduleForLater: Schedule for Later
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+select: Select
+sendNow: Send Now
+settings: Settings
+share: Share
+shareOnWhatsApp: Share on WhatsApp
+status: Status
+statusColon: Status:
+targetingFilters: Targeting Filters
+type: Type
+upcomingSessions: Upcoming Sessions
+upload: Upload
+welcome: Welcome
+yesCancel: Yes, Cancel
+
+=== en ===
+None
+
+=== es ===
+about: About
+accessRevokedSuccessfully: Access revoked successfully
+add: Add
+adminScreenTBD: Admin screen coming soon
+back: Back
+cancelInvite: Cancel Invite
+checkingPermissions: Checking permissions...
+choose: Choose
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+composeBroadcastMessage: Compose Broadcast Message
+confirm: Confirm
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+copy: Copy
+createGame: Create Game
+createNew: Create New
+createYourFirstSession: Create your first session
+customizeMessage: Customize Message
+dashboard: Dashboard
+details: Details
+edit: Edit
+email: Email
+enterGroupName: Enter group name
+errorCheckingPermissions: Error checking permissions
+errorLoadingInvites: Error loading invites
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+familyMembers: Family Members
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+inviteDetail: Invite Details
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+logout: Logout
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+messageSavedSuccessfully: Message saved successfully
+myInvites: My Invites
+myProfile: My Profile
+noBroadcastMessages: No messages yet
+noFamilyMembersYet: No family members yet
+noGamesYet: No games yet
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+notificationSettings: Notification Settings
+notifications: Notifications
+otpResentSuccessfully: OTP resent successfully
+paste: Paste
+pendingInvites: Pending Invites
+pickImage: Pick Image
+pickVideo: Pick Video
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseGame: Choose a game
+playtimeCreateSession: Create a Playtime Session
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeLive: Live Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+profile: Profile
+quickActions: Quick Actions
+recentGames: Recent Games
+removeChild: Remove Child
+requestType: Request Type
+revoke: Revoke
+save: Save
+scheduleForLater: Schedule for Later
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+select: Select
+sendNow: Send Now
+settings: Settings
+share: Share
+shareOnWhatsApp: Share on WhatsApp
+status: Status
+statusColon: Status:
+targetingFilters: Targeting Filters
+type: Type
+upcomingSessions: Upcoming Sessions
+upload: Upload
+welcome: Welcome
+yesCancel: Yes, Cancel
+
+=== et ===
+None
+
+=== eu ===
+None
+
+=== fa ===
+None
+
+=== fi ===
+None
+
+=== fo ===
+None
+
+=== fr ===
+about: About
+accessRevokedSuccessfully: Access revoked successfully
+add: Add
+adminScreenTBD: Admin screen coming soon
+back: Back
+cancelInvite: Cancel Invite
+checkingPermissions: Checking permissions...
+choose: Choose
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+composeBroadcastMessage: Compose Broadcast Message
+confirm: Confirm
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+copy: Copy
+createGame: Create Game
+createNew: Create New
+createYourFirstSession: Create your first session
+customizeMessage: Customize Message
+dashboard: Dashboard
+details: Details
+edit: Edit
+email: Email
+enterGroupName: Enter group name
+errorCheckingPermissions: Error checking permissions
+errorLoadingInvites: Error loading invites
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+familyMembers: Family Members
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+inviteDetail: Invite Details
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+logout: Logout
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+messageSavedSuccessfully: Message saved successfully
+myInvites: My Invites
+myProfile: My Profile
+noBroadcastMessages: No messages yet
+noFamilyMembersYet: No family members yet
+noGamesYet: No games yet
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+notificationSettings: Notification Settings
+notifications: Notifications
+otpResentSuccessfully: OTP resent successfully
+paste: Paste
+pendingInvites: Pending Invites
+pickImage: Pick Image
+pickVideo: Pick Video
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseGame: Choose a game
+playtimeCreateSession: Create a Playtime Session
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeLive: Live Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+profile: Profile
+quickActions: Quick Actions
+recentGames: Recent Games
+removeChild: Remove Child
+requestType: Request Type
+revoke: Revoke
+save: Save
+scheduleForLater: Schedule for Later
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+select: Select
+sendNow: Send Now
+settings: Settings
+share: Share
+shareOnWhatsApp: Share on WhatsApp
+status: Status
+statusColon: Status:
+targetingFilters: Targeting Filters
+type: Type
+upcomingSessions: Upcoming Sessions
+upload: Upload
+welcome: Welcome
+yesCancel: Yes, Cancel
+
+=== ga ===
+None
+
+=== gl ===
+about: About
+accept: Accept
+accessRevokedSuccessfully: Access revoked successfully
+add: Add
+adminBroadcast: Admin Broadcast
+adminScreenTBD: Admin screen coming soon
+appTitle: APP-OINT
+back: Back
+cancel: Cancel
+cancelInvite: Cancel Invite
+cancelInviteConfirmation: Are you sure you want to cancel this invite?
+checkingPermissions: Checking permissions...
+choose: Choose
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+composeBroadcastMessage: Compose Broadcast Message
+confirm: Confirm
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+content: Content
+copy: Copy
+createGame: Create Game
+createLiveSession: Create Live Session
+createNew: Create New
+createVirtualSession: Create Virtual Session
+createYourFirstGame: Create your first game
+createYourFirstSession: Create your first session
+created: Created
+customizeMessage: Customize Message
+cut: Cut
+dashboard: Dashboard
+decline: Decline
+defaultShareMessage: Let's meet via Appoint!
+delete: Delete
+details: Details
+done: Done
+download: Download
+edit: Edit
+email: Email
+enableNotifications: Enable Notifications
+enterGroupName: Enter group name
+error: Error
+errorCheckingPermissions: Error checking permissions
+errorLoadingFamilyLinks: Error loading family links
+errorLoadingInvites: Error loading invites
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToActionPrivacyRequest: Failed to action privacy request
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+familyMembers: Family Members
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+home: Home
+invite: Invite
+inviteCancelledSuccessfully: Invite cancelled successfully
+inviteDetail: Invite Details
+invited: Invited
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+login: Login
+logout: Logout
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+meetingSharedSuccessfully: Meeting shared successfully
+messageSavedSuccessfully: Message saved successfully
+messageSentSuccessfully: Message sent successfully
+myInvites: My Invites
+myProfile: My Profile
+next: Next
+no: No
+noBroadcastMessages: No messages yet
+noFamilyMembersYet: No family members yet
+noGamesYet: No games yet
+noInvites: No invites
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+noResults: No results found
+noSessionsYet: No sessions yet
+notificationSettings: Notification Settings
+notifications: Notifications
+ok: OK
+opened: Opened
+otpResentSuccessfully: OTP resent successfully
+participants: Participants
+password: Password
+paste: Paste
+pendingInvites: Pending Invites
+pickImage: Pick Image
+pickVideo: Pick Video
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseFriends: Choose friends to invite
+playtimeChooseGame: Choose a game
+playtimeChooseTime: Choose a time
+playtimeCreate: Create
+playtimeCreateSession: Create a Playtime Session
+playtimeDescription: Enjoy live or virtual games with your friends!
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeHub: Playtime Hub
+playtimeLandingChooseMode: Choose your play mode:
+playtimeLive: Live Play
+playtimeLiveScheduled: Live playtime scheduled!
+playtimeModeLive: Live Play
+playtimeModeVirtual: Virtual Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+playtimeVirtual: Virtual Play
+playtimeVirtualStarted: Virtual playtime started!
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+profile: Profile
+quickActions: Quick Actions
+recentGames: Recent Games
+recipients: Recipients
+redo: Redo
+refresh: Refresh
+removeChild: Remove Child
+requestType: Request Type
+retry: Retry
+revoke: Revoke
+revokeAccess: Revoke Access
+revokeAccessConfirmation: Are you sure you want to revoke access?
+save: Save
+saveGroupForRecognition: Save Group for Recognition
+scheduleForLater: Schedule for Later
+scheduleMessage: Schedule Message
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+search: Search
+select: Select
+sendNow: Send Now
+settings: Settings
+share: Share
+shareOnWhatsApp: Share on WhatsApp
+signUp: Sign Up
+staffScreenTBD: Staff screen coming soon
+status: Status
+statusColon: Status:
+success: Success
+targetingFilters: Targeting Filters
+type: Type
+undo: Undo
+upcomingSessions: Upcoming Sessions
+upload: Upload
+viewAll: View All
+welcome: Welcome
+welcomeToPlaytime: Welcome to Playtime
+yes: Yes
+yesCancel: Yes, Cancel
+
+=== he ===
+None
+
+=== hi ===
+None
+
+=== hr ===
+None
+
+=== hu ===
+None
+
+=== id ===
+None
+
+=== is ===
+None
+
+=== it ===
+about: About
+accessRevokedSuccessfully: Access revoked successfully
+add: Add
+adminScreenTBD: Admin screen coming soon
+back: Back
+cancelInvite: Cancel Invite
+checkingPermissions: Checking permissions...
+choose: Choose
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+composeBroadcastMessage: Compose Broadcast Message
+confirm: Confirm
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+copy: Copy
+createGame: Create Game
+createNew: Create New
+createYourFirstSession: Create your first session
+customizeMessage: Customize Message
+dashboard: Dashboard
+details: Details
+edit: Edit
+email: Email
+enterGroupName: Enter group name
+errorCheckingPermissions: Error checking permissions
+errorLoadingInvites: Error loading invites
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+familyMembers: Family Members
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+inviteDetail: Invite Details
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+logout: Logout
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+messageSavedSuccessfully: Message saved successfully
+myInvites: My Invites
+myProfile: My Profile
+noBroadcastMessages: No messages yet
+noFamilyMembersYet: No family members yet
+noGamesYet: No games yet
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+notificationSettings: Notification Settings
+notifications: Notifications
+otpResentSuccessfully: OTP resent successfully
+paste: Paste
+pendingInvites: Pending Invites
+pickImage: Pick Image
+pickVideo: Pick Video
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseGame: Choose a game
+playtimeCreateSession: Create a Playtime Session
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeLive: Live Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+profile: Profile
+quickActions: Quick Actions
+recentGames: Recent Games
+removeChild: Remove Child
+requestType: Request Type
+revoke: Revoke
+save: Save
+scheduleForLater: Schedule for Later
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+select: Select
+sendNow: Send Now
+settings: Settings
+share: Share
+shareOnWhatsApp: Share on WhatsApp
+status: Status
+statusColon: Status:
+targetingFilters: Targeting Filters
+type: Type
+upcomingSessions: Upcoming Sessions
+upload: Upload
+welcome: Welcome
+yesCancel: Yes, Cancel
+
+=== ja ===
+adminScreenTBD: Admin screen coming soon
+back: Back
+clicked: Clicked
+close: Close
+createGame: Create Game
+failedToRevokeAccess: Failed to revoke access
+groupNameOptional: Group Name (Optional)
+knownGroupDetected: Known group detected
+link: Link
+managePermissions: Manage Permissions
+meetingReadyMessage: Your meeting is ready! Join now
+myInvites: My Invites
+pendingInvites: Pending Invites
+playtimeChooseGame: Choose a game
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+pleaseLoginForFamilyFeatures: Please login to access family features
+pollOptions: Poll Options
+statusColon: Status:
+
+=== ko ===
+add: Add
+adminScreenTBD: Admin screen coming soon
+back: Back
+cancelInvite: Cancel Invite
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+createGame: Create Game
+createNew: Create New
+createYourFirstSession: Create your first session
+customizeMessage: Customize Message
+dashboard: Dashboard
+details: Details
+edit: Edit
+errorCheckingPermissions: Error checking permissions
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+inviteDetail: Invite Details
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+messageSavedSuccessfully: Message saved successfully
+myInvites: My Invites
+noFamilyMembersYet: No family members yet
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+otpResentSuccessfully: OTP resent successfully
+pendingInvites: Pending Invites
+pickImage: Pick Image
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseGame: Choose a game
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameRejected: Game rejected
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+quickActions: Quick Actions
+recentGames: Recent Games
+save: Save
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+settings: Settings
+share: Share
+statusColon: Status:
+
+=== lt ===
+about: About
+accept: Accept
+accessRevokedSuccessfully: Access revoked successfully
+add: Add
+adminBroadcast: Admin Broadcast
+adminScreenTBD: Admin screen coming soon
+appTitle: APP-OINT
+back: Back
+cancel: Cancel
+cancelInvite: Cancel Invite
+cancelInviteConfirmation: Are you sure you want to cancel this invite?
+checkingPermissions: Checking permissions...
+choose: Choose
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+composeBroadcastMessage: Compose Broadcast Message
+confirm: Confirm
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+content: Content
+copy: Copy
+createGame: Create Game
+createLiveSession: Create Live Session
+createNew: Create New
+createVirtualSession: Create Virtual Session
+createYourFirstGame: Create your first game
+createYourFirstSession: Create your first session
+created: Created
+customizeMessage: Customize Message
+cut: Cut
+dashboard: Dashboard
+decline: Decline
+defaultShareMessage: Let's meet via Appoint!
+delete: Delete
+details: Details
+done: Done
+download: Download
+edit: Edit
+email: Email
+enableNotifications: Enable Notifications
+enterGroupName: Enter group name
+error: Error
+errorCheckingPermissions: Error checking permissions
+errorLoadingFamilyLinks: Error loading family links
+errorLoadingInvites: Error loading invites
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToActionPrivacyRequest: Failed to action privacy request
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+familyMembers: Family Members
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+home: Home
+invite: Invite
+inviteCancelledSuccessfully: Invite cancelled successfully
+inviteDetail: Invite Details
+invited: Invited
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+login: Login
+logout: Logout
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+meetingSharedSuccessfully: Meeting shared successfully
+messageSavedSuccessfully: Message saved successfully
+messageSentSuccessfully: Message sent successfully
+myInvites: My Invites
+myProfile: My Profile
+next: Next
+no: No
+noBroadcastMessages: No messages yet
+noFamilyMembersYet: No family members yet
+noGamesYet: No games yet
+noInvites: No invites
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+noResults: No results found
+noSessionsYet: No sessions yet
+notificationSettings: Notification Settings
+notifications: Notifications
+ok: OK
+opened: Opened
+otpResentSuccessfully: OTP resent successfully
+participants: Participants
+password: Password
+paste: Paste
+pendingInvites: Pending Invites
+pickImage: Pick Image
+pickVideo: Pick Video
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseFriends: Choose friends to invite
+playtimeChooseGame: Choose a game
+playtimeChooseTime: Choose a time
+playtimeCreate: Create
+playtimeCreateSession: Create a Playtime Session
+playtimeDescription: Enjoy live or virtual games with your friends!
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeHub: Playtime Hub
+playtimeLandingChooseMode: Choose your play mode:
+playtimeLive: Live Play
+playtimeLiveScheduled: Live playtime scheduled!
+playtimeModeLive: Live Play
+playtimeModeVirtual: Virtual Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+playtimeVirtual: Virtual Play
+playtimeVirtualStarted: Virtual playtime started!
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+profile: Profile
+quickActions: Quick Actions
+recentGames: Recent Games
+recipients: Recipients
+redo: Redo
+refresh: Refresh
+removeChild: Remove Child
+requestType: Request Type
+retry: Retry
+revoke: Revoke
+revokeAccess: Revoke Access
+revokeAccessConfirmation: Are you sure you want to revoke access?
+save: Save
+saveGroupForRecognition: Save Group for Recognition
+scheduleForLater: Schedule for Later
+scheduleMessage: Schedule Message
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+search: Search
+select: Select
+sendNow: Send Now
+settings: Settings
+share: Share
+shareOnWhatsApp: Share on WhatsApp
+signUp: Sign Up
+staffScreenTBD: Staff screen coming soon
+status: Status
+statusColon: Status:
+success: Success
+targetingFilters: Targeting Filters
+type: Type
+undo: Undo
+upcomingSessions: Upcoming Sessions
+upload: Upload
+viewAll: View All
+welcome: Welcome
+welcomeToPlaytime: Welcome to Playtime
+yes: Yes
+yesCancel: Yes, Cancel
+
+=== lv ===
+about: About
+add: Add
+back: Back
+choose: Choose
+confirm: Confirm
+confirmPassword: Confirm Password
+copy: Copy
+createGame: Create Game
+createLiveSession: Create Live Session
+createNew: Create New
+createVirtualSession: Create Virtual Session
+createYourFirstGame: Create your first game
+createYourFirstSession: Create your first session
+cut: Cut
+delete: Delete
+done: Done
+download: Download
+edit: Edit
+error: Error
+forgotPassword: Forgot Password?
+logout: Logout
+noGamesYet: No games yet
+noResults: No results found
+noSessionsYet: No sessions yet
+ok: OK
+participants: Participants
+paste: Paste
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseFriends: Choose friends to invite
+playtimeChooseGame: Choose a game
+playtimeChooseTime: Choose a time
+playtimeCreate: Create
+playtimeCreateSession: Create a Playtime Session
+playtimeDescription: Enjoy live or virtual games with your friends!
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeHub: Playtime Hub
+playtimeLandingChooseMode: Choose your play mode:
+playtimeLive: Live Play
+playtimeLiveScheduled: Live playtime scheduled!
+playtimeModeLive: Live Play
+playtimeModeVirtual: Virtual Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+playtimeVirtual: Virtual Play
+playtimeVirtualStarted: Virtual playtime started!
+pleaseLoginToViewProfile: Please log in to view your profile.
+previous: Previous
+quickActions: Quick Actions
+recentGames: Recent Games
+redo: Redo
+refresh: Refresh
+retry: Retry
+scheduleMessage: Schedule Message
+scheduledFor: Scheduled for
+search: Search
+select: Select
+settings: Settings
+share: Share
+signUp: Sign Up
+success: Success
+undo: Undo
+upcomingSessions: Upcoming Sessions
+upload: Upload
+viewAll: View All
+welcomeToPlaytime: Welcome to Playtime
+
+=== mk ===
+about: About
+accept: Accept
+accessRevokedSuccessfully: Access revoked successfully
+add: Add
+adminBroadcast: Admin Broadcast
+adminScreenTBD: Admin screen coming soon
+appTitle: APP-OINT
+back: Back
+cancel: Cancel
+cancelInvite: Cancel Invite
+cancelInviteConfirmation: Are you sure you want to cancel this invite?
+checkingPermissions: Checking permissions...
+choose: Choose
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+composeBroadcastMessage: Compose Broadcast Message
+confirm: Confirm
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+content: Content
+copy: Copy
+createGame: Create Game
+createLiveSession: Create Live Session
+createNew: Create New
+createVirtualSession: Create Virtual Session
+createYourFirstGame: Create your first game
+createYourFirstSession: Create your first session
+created: Created
+customizeMessage: Customize Message
+cut: Cut
+dashboard: Dashboard
+decline: Decline
+defaultShareMessage: Let's meet via Appoint!
+delete: Delete
+details: Details
+done: Done
+download: Download
+edit: Edit
+email: Email
+enableNotifications: Enable Notifications
+enterGroupName: Enter group name
+error: Error
+errorCheckingPermissions: Error checking permissions
+errorLoadingFamilyLinks: Error loading family links
+errorLoadingInvites: Error loading invites
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToActionPrivacyRequest: Failed to action privacy request
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+familyMembers: Family Members
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+home: Home
+invite: Invite
+inviteCancelledSuccessfully: Invite cancelled successfully
+inviteDetail: Invite Details
+invited: Invited
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+login: Login
+logout: Logout
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+meetingSharedSuccessfully: Meeting shared successfully
+messageSavedSuccessfully: Message saved successfully
+messageSentSuccessfully: Message sent successfully
+myInvites: My Invites
+myProfile: My Profile
+next: Next
+no: No
+noBroadcastMessages: No messages yet
+noFamilyMembersYet: No family members yet
+noGamesYet: No games yet
+noInvites: No invites
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+noResults: No results found
+noSessionsYet: No sessions yet
+notificationSettings: Notification Settings
+notifications: Notifications
+ok: OK
+opened: Opened
+otpResentSuccessfully: OTP resent successfully
+participants: Participants
+password: Password
+paste: Paste
+pendingInvites: Pending Invites
+pickImage: Pick Image
+pickVideo: Pick Video
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseFriends: Choose friends to invite
+playtimeChooseGame: Choose a game
+playtimeChooseTime: Choose a time
+playtimeCreate: Create
+playtimeCreateSession: Create a Playtime Session
+playtimeDescription: Enjoy live or virtual games with your friends!
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeHub: Playtime Hub
+playtimeLandingChooseMode: Choose your play mode:
+playtimeLive: Live Play
+playtimeLiveScheduled: Live playtime scheduled!
+playtimeModeLive: Live Play
+playtimeModeVirtual: Virtual Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+playtimeVirtual: Virtual Play
+playtimeVirtualStarted: Virtual playtime started!
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+profile: Profile
+quickActions: Quick Actions
+recentGames: Recent Games
+recipients: Recipients
+redo: Redo
+refresh: Refresh
+removeChild: Remove Child
+requestType: Request Type
+retry: Retry
+revoke: Revoke
+revokeAccess: Revoke Access
+revokeAccessConfirmation: Are you sure you want to revoke access?
+save: Save
+saveGroupForRecognition: Save Group for Recognition
+scheduleForLater: Schedule for Later
+scheduleMessage: Schedule Message
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+search: Search
+select: Select
+sendNow: Send Now
+settings: Settings
+share: Share
+shareOnWhatsApp: Share on WhatsApp
+signUp: Sign Up
+staffScreenTBD: Staff screen coming soon
+status: Status
+statusColon: Status:
+success: Success
+targetingFilters: Targeting Filters
+type: Type
+undo: Undo
+upcomingSessions: Upcoming Sessions
+upload: Upload
+viewAll: View All
+welcome: Welcome
+welcomeToPlaytime: Welcome to Playtime
+yes: Yes
+yesCancel: Yes, Cancel
+
+=== ms ===
+adminScreenTBD: Admin screen coming soon
+back: Back
+clicked: Clicked
+close: Close
+createGame: Create Game
+failedToRevokeAccess: Failed to revoke access
+groupNameOptional: Group Name (Optional)
+knownGroupDetected: Known group detected
+link: Link
+managePermissions: Manage Permissions
+meetingReadyMessage: Your meeting is ready! Join now
+myInvites: My Invites
+pendingInvites: Pending Invites
+playtimeChooseGame: Choose a game
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+pleaseLoginForFamilyFeatures: Please login to access family features
+pollOptions: Poll Options
+statusColon: Status:
+
+=== mt ===
+about: About
+accept: Accept
+accessRevokedSuccessfully: Access revoked successfully
+add: Add
+adminBroadcast: Admin Broadcast
+adminScreenTBD: Admin screen coming soon
+appTitle: APP-OINT
+back: Back
+cancel: Cancel
+cancelInvite: Cancel Invite
+cancelInviteConfirmation: Are you sure you want to cancel this invite?
+checkingPermissions: Checking permissions...
+choose: Choose
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+composeBroadcastMessage: Compose Broadcast Message
+confirm: Confirm
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+content: Content
+copy: Copy
+createGame: Create Game
+createLiveSession: Create Live Session
+createNew: Create New
+createVirtualSession: Create Virtual Session
+createYourFirstGame: Create your first game
+createYourFirstSession: Create your first session
+created: Created
+customizeMessage: Customize Message
+cut: Cut
+dashboard: Dashboard
+decline: Decline
+defaultShareMessage: Let's meet via Appoint!
+delete: Delete
+details: Details
+done: Done
+download: Download
+edit: Edit
+email: Email
+enableNotifications: Enable Notifications
+enterGroupName: Enter group name
+error: Error
+errorCheckingPermissions: Error checking permissions
+errorLoadingFamilyLinks: Error loading family links
+errorLoadingInvites: Error loading invites
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToActionPrivacyRequest: Failed to action privacy request
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+familyMembers: Family Members
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+home: Home
+invite: Invite
+inviteCancelledSuccessfully: Invite cancelled successfully
+inviteDetail: Invite Details
+invited: Invited
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+login: Login
+logout: Logout
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+meetingSharedSuccessfully: Meeting shared successfully
+messageSavedSuccessfully: Message saved successfully
+messageSentSuccessfully: Message sent successfully
+myInvites: My Invites
+myProfile: My Profile
+next: Next
+no: No
+noBroadcastMessages: No messages yet
+noFamilyMembersYet: No family members yet
+noGamesYet: No games yet
+noInvites: No invites
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+noResults: No results found
+noSessionsYet: No sessions yet
+notificationSettings: Notification Settings
+notifications: Notifications
+ok: OK
+opened: Opened
+otpResentSuccessfully: OTP resent successfully
+participants: Participants
+password: Password
+paste: Paste
+pendingInvites: Pending Invites
+pickImage: Pick Image
+pickVideo: Pick Video
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseFriends: Choose friends to invite
+playtimeChooseGame: Choose a game
+playtimeChooseTime: Choose a time
+playtimeCreate: Create
+playtimeCreateSession: Create a Playtime Session
+playtimeDescription: Enjoy live or virtual games with your friends!
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeHub: Playtime Hub
+playtimeLandingChooseMode: Choose your play mode:
+playtimeLive: Live Play
+playtimeLiveScheduled: Live playtime scheduled!
+playtimeModeLive: Live Play
+playtimeModeVirtual: Virtual Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+playtimeVirtual: Virtual Play
+playtimeVirtualStarted: Virtual playtime started!
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+profile: Profile
+quickActions: Quick Actions
+recentGames: Recent Games
+recipients: Recipients
+redo: Redo
+refresh: Refresh
+removeChild: Remove Child
+requestType: Request Type
+retry: Retry
+revoke: Revoke
+revokeAccess: Revoke Access
+revokeAccessConfirmation: Are you sure you want to revoke access?
+save: Save
+saveGroupForRecognition: Save Group for Recognition
+scheduleForLater: Schedule for Later
+scheduleMessage: Schedule Message
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+search: Search
+select: Select
+sendNow: Send Now
+settings: Settings
+share: Share
+shareOnWhatsApp: Share on WhatsApp
+signUp: Sign Up
+staffScreenTBD: Staff screen coming soon
+status: Status
+statusColon: Status:
+success: Success
+targetingFilters: Targeting Filters
+type: Type
+undo: Undo
+upcomingSessions: Upcoming Sessions
+upload: Upload
+viewAll: View All
+welcome: Welcome
+welcomeToPlaytime: Welcome to Playtime
+yes: Yes
+yesCancel: Yes, Cancel
+
+=== nl ===
+None
+
+=== no ===
+None
+
+=== pl ===
+None
+
+=== pt ===
+about: About
+accessRevokedSuccessfully: Access revoked successfully
+add: Add
+adminScreenTBD: Admin screen coming soon
+back: Back
+cancelInvite: Cancel Invite
+checkingPermissions: Checking permissions...
+choose: Choose
+clicked: Clicked
+clientScreenTBD: Client screen coming soon
+close: Close
+composeBroadcastMessage: Compose Broadcast Message
+confirm: Confirm
+confirmPassword: Confirm Password
+connectedChildren: Connected Children
+copy: Copy
+createGame: Create Game
+createNew: Create New
+createYourFirstSession: Create your first session
+customizeMessage: Customize Message
+dashboard: Dashboard
+details: Details
+edit: Edit
+email: Email
+enterGroupName: Enter group name
+errorCheckingPermissions: Error checking permissions
+errorLoadingInvites: Error loading invites
+errorLoadingPrivacyRequests: Error loading privacy requests
+errorLoadingProfile: Error loading profile
+errorSavingMessage: Error saving message
+errorSendingMessage: Error sending message
+failedToCancelInvite: Failed to cancel invite
+failedToResendOtp: Failed to resend OTP
+failedToRevokeAccess: Failed to revoke access
+familyDashboard: Family Dashboard
+familyMembers: Family Members
+fcmToken: FCM Token
+forgotPassword: Forgot Password?
+groupNameOptional: Group Name (Optional)
+inviteDetail: Invite Details
+knownGroupDetected: Known group detected
+link: Link
+loading: Loading...
+logout: Logout
+managePermissions: Manage Permissions
+mediaOptional: Media (Optional)
+meetingReadyMessage: Your meeting is ready! Join now
+messageSavedSuccessfully: Message saved successfully
+myInvites: My Invites
+myProfile: My Profile
+noBroadcastMessages: No messages yet
+noFamilyMembersYet: No family members yet
+noGamesYet: No games yet
+noPermissionForBroadcast: No permission for broadcast
+noProfileFound: No profile found
+notificationSettings: Notification Settings
+notifications: Notifications
+otpResentSuccessfully: OTP resent successfully
+paste: Paste
+pendingInvites: Pending Invites
+pickImage: Pick Image
+pickVideo: Pick Video
+playtimeAdminPanelTitle: Playtime Games – Admin
+playtimeApprove: Approve
+playtimeChooseGame: Choose a game
+playtimeCreateSession: Create a Playtime Session
+playtimeEnterGameName: Enter game name
+playtimeGameApproved: Game approved
+playtimeGameDeleted: Game deleted
+playtimeGameRejected: Game rejected
+playtimeLive: Live Play
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+playtimeReject: Reject
+playtimeTitle: Playtime
+pleaseLoginForFamilyFeatures: Please login to access family features
+pleaseLoginToViewProfile: Please log in to view your profile.
+pollOptions: Poll Options
+previous: Previous
+profile: Profile
+quickActions: Quick Actions
+recentGames: Recent Games
+removeChild: Remove Child
+requestType: Request Type
+revoke: Revoke
+save: Save
+scheduleForLater: Schedule for Later
+scheduled: Scheduled
+scheduledFor: Scheduled for
+scheduling: Scheduling
+select: Select
+sendNow: Send Now
+settings: Settings
+share: Share
+shareOnWhatsApp: Share on WhatsApp
+status: Status
+statusColon: Status:
+targetingFilters: Targeting Filters
+type: Type
+upcomingSessions: Upcoming Sessions
+upload: Upload
+welcome: Welcome
+yesCancel: Yes, Cancel
+
+=== pt_BR ===
+None
+
+=== ro ===
+None
+
+=== ru ===
+None
+
+=== sk ===
+None
+
+=== sl ===
+None
+
+=== sq ===
+None
+
+=== sr ===
+None
+
+=== sv ===
+adminScreenTBD: Admin screen coming soon
+back: Back
+clicked: Clicked
+close: Close
+createGame: Create Game
+failedToRevokeAccess: Failed to revoke access
+groupNameOptional: Group Name (Optional)
+knownGroupDetected: Known group detected
+link: Link
+managePermissions: Manage Permissions
+meetingReadyMessage: Your meeting is ready! Join now
+myInvites: My Invites
+pendingInvites: Pending Invites
+playtimeChooseGame: Choose a game
+playtimeNoSessions: No playtime sessions found.
+playtimeParentDashboardTitle: Playtime Dashboard
+pleaseLoginForFamilyFeatures: Please login to access family features
+pollOptions: Poll Options
+statusColon: Status:
+
+=== th ===
+None
+
+=== tr ===
+None
+
+=== uk ===
+None
+
+=== ur ===
+None
+
+=== vi ===
+None
+
+=== zh ===
+None
+

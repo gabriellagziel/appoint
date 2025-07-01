@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../providers/otp_provider.dart';
+import 'package:appoint/providers/otp_provider.dart';
 
 class OtpEntryModal extends ConsumerStatefulWidget {
   final String parentId;
   final String childContact;
   const OtpEntryModal(
-      {Key? key, required this.parentId, required this.childContact})
+      {final Key? key, required this.parentId, required this.childContact})
       : super(key: key);
 
   @override
@@ -35,7 +35,7 @@ class _OtpEntryModalState extends ConsumerState<OtpEntryModal> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final state = ref.watch(otpProvider);
 
     return AlertDialog(

@@ -6,17 +6,18 @@ part 'contact.g.dart';
 @freezed
 class Contact with _$Contact {
   const factory Contact({
-    required String id,
-    required String displayName,
-    String? phoneNumber,
-    String? email,
+    required final String id,
+    required final String displayName,
+    final String? phoneNumber,
+    final String? email,
   }) = _Contact;
 
-  factory Contact.fromJson(Map<String, dynamic> json) =>
+  factory Contact.fromJson(final Map<String, dynamic> json) =>
       _$ContactFromJson(json);
 }
 
 extension ContactComputed on Contact {
   String get displayName => displayName;
   String? get phoneNumber => phoneNumber;
+  String get name => displayName;
 }

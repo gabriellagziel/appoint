@@ -15,7 +15,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get home => 'Hafan';
 
   @override
-  String get noSessionsYet => 'Dim sesiynau eto';
+  String get noSessionsYet => '[CY] No sessions yet';
 
   @override
   String get ok => 'Iawn';
@@ -24,22 +24,22 @@ class AppLocalizationsCy extends AppLocalizations {
   String get playtimeLandingChooseMode => 'Dewiswch fodd';
 
   @override
-  String get signUp => 'Cofrestru';
+  String get signUp => '[CY] Sign Up';
 
   @override
-  String get scheduleMessage => 'Atodwch neges';
+  String get scheduleMessage => '[CY] Schedule Message';
 
   @override
   String get decline => 'Gwrthod';
 
   @override
-  String get adminBroadcast => 'Darlledu gweinyddol';
+  String get adminBroadcast => '[CY] Admin Broadcast';
 
   @override
-  String get login => 'Mewngofnodi';
+  String get login => '[CY] Login';
 
   @override
-  String get playtimeChooseFriends => 'Dewiswch ffrindiau';
+  String get playtimeChooseFriends => '[CY] Choose friends to invite';
 
   @override
   String get noInvites => 'Dim gwahoddiadau';
@@ -54,13 +54,15 @@ class AppLocalizationsCy extends AppLocalizations {
   String get undo => 'Dadhadlu';
 
   @override
-  String get opened => 'Agorwyd';
+  String opened(Object count) {
+    return '[CY] Opened';
+  }
 
   @override
   String get createVirtualSession => 'Creu sesiwn rhithwir';
 
   @override
-  String get messageSentSuccessfully => 'Neges wedi ei hanfon yn llwyddiannus';
+  String get messageSentSuccessfully => '[CY] Message sent successfully';
 
   @override
   String get redo => 'Ailadrodd';
@@ -86,7 +88,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get saveGroupForRecognition => 'Cadw grŵp ar gyfer adnabod';
 
   @override
-  String get playtimeLiveScheduled => 'Sesiwn byw wedi ei drefnu';
+  String get playtimeLiveScheduled => '[CY] Live playtime scheduled!';
 
   @override
   String get revokeAccessConfirmation => 'Cadarnhad canslo mynediad';
@@ -95,7 +97,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get download => 'Lawrlwytho';
 
   @override
-  String get password => 'Cyfrinair';
+  String get password => '[CY] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
@@ -110,14 +112,14 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Methwyd gweithredu cais preifatrwydd';
+    return '[CY] Failed to action privacy request';
   }
 
   @override
   String get appTitle => 'Teitl y cais';
 
   @override
-  String get accept => 'Derbyn';
+  String get accept => '[CY] Accept';
 
   @override
   String get playtimeModeVirtual => 'Modd rhithwir';
@@ -139,7 +141,7 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String recipients(Object count) {
-    return 'Derbynwyr';
+    return '[CY] Recipients';
   }
 
   @override
@@ -152,13 +154,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get invite => 'Gwahodd';
 
   @override
-  String get playtimeModeLive => 'Modd byw';
+  String get playtimeModeLive => '[CY] Live Play';
 
   @override
-  String get done => 'Wedi gorffen';
+  String get done => '[CY] Done';
 
   @override
-  String get defaultShareMessage => 'Neges rhannu ddiofyn';
+  String get defaultShareMessage => '[CY] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Na';
@@ -170,10 +172,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get error => 'Gwall';
 
   @override
-  String get createLiveSession => 'Creu sesiwn byw';
+  String get createLiveSession => '[CY] Create Live Session';
 
   @override
-  String get enableNotifications => 'Galluogi hysbysiadau';
+  String get enableNotifications => '[CY] Enable Notifications';
 
   @override
   String invited(Object date) {
@@ -199,26 +201,26 @@ class AppLocalizationsCy extends AppLocalizations {
   String get playtimeVirtual => 'Playtime rhithwir';
 
   @override
-  String get staffScreenTBD => 'Sgrîn staff i\'w diffinio';
+  String get staffScreenTBD => '[CY] Staff screen coming soon';
 
   @override
-  String get cut => 'Torrwch';
+  String get cut => '[CY] Cut';
 
   @override
   String get inviteCancelledSuccessfully =>
       'Gwahoddiad wedi ei ganslo\'n llwyddiannus';
 
   @override
-  String get retry => 'Ceisio eto';
+  String get retry => '[CY] Retry';
 
   @override
   String get composeBroadcastMessage => 'Cyfansoddi neges darlledu';
 
   @override
-  String get sendNow => 'Anfon nawr';
+  String get sendNow => '[CY] Send Now';
 
   @override
-  String get noGamesYet => 'Dim gemau eto';
+  String get noGamesYet => '[CY] No games yet';
 
   @override
   String get select => 'Dewis';
@@ -230,18 +232,18 @@ class AppLocalizationsCy extends AppLocalizations {
   String get choose => 'Dewiswch';
 
   @override
-  String get profile => 'Proffil';
+  String get profile => '[CY] Profile';
 
   @override
   String get removeChild => 'Tynnu plentyn';
 
   @override
   String status(Object status) {
-    return 'Statws';
+    return '[CY] Status';
   }
 
   @override
-  String get logout => 'Allgofnodi';
+  String get logout => '[CY] Logout';
 
   @override
   String get paste => 'Gludo';
@@ -268,15 +270,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get confirm => 'Cadarnhau';
 
   @override
-  String get playtimeLive => 'Playtime byw';
+  String get playtimeLive => '[CY] Live Play';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Gwall wrth lwytho gwahoddiadau';
-  }
+  String get errorLoadingInvites => 'Gwall wrth lwytho gwahoddiadau';
 
   @override
-  String get targetingFilters => 'Hidlyddion targedu';
+  String get targetingFilters => '[CY] Targeting Filters';
 
   @override
   String get pickVideo => 'Dewiswch fideo';
@@ -292,10 +292,12 @@ class AppLocalizationsCy extends AppLocalizations {
       'Mynediad wedi ei ganslo\'n llwyddiannus';
 
   @override
-  String get type => 'Math';
+  String type(Object type) {
+    return '[CY] Type';
+  }
 
   @override
-  String get checkingPermissions => 'Gwirio caniatâd';
+  String get checkingPermissions => '[CY] Checking permissions...';
 
   @override
   String get copy => 'Copïo';
@@ -307,30 +309,30 @@ class AppLocalizationsCy extends AppLocalizations {
   String get email => 'E-bost';
 
   @override
-  String get shareOnWhatsApp => 'Rhannu ar WhatsApp';
+  String get shareOnWhatsApp => '[CY] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Gosodiadau hysbysiadau';
+  String get notificationSettings => '[CY] Notification Settings';
 
   @override
-  String get myProfile => 'Fy mhroffil';
+  String get myProfile => '[CY] My Profile';
 
   @override
   String get revoke => 'Canslo';
 
   @override
-  String get noBroadcastMessages => 'Dim negeseuon darlledu';
+  String get noBroadcastMessages => '[CY] No messages yet';
 
   @override
   String requestType(Object type) {
-    return 'Math cais';
+    return '[CY] Request Type';
   }
 
   @override
-  String get notifications => 'Hysbysiadau';
+  String get notifications => '[CY] Notifications';
 
   @override
-  String get details => 'Manylion';
+  String get details => '[CY] Details';
 
   @override
   String get cancelInvite => 'Canslo gwahoddiad';
@@ -345,9 +347,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get playtimeReject => 'Gwrthod Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Gwall wrth lwytho proffil';
-  }
+  String get errorLoadingProfile => '[CY] Error loading profile';
 
   @override
   String get edit => 'Golygwch';
@@ -359,7 +359,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get playtimeGameApproved => 'Gêm wedi ei gymeradwyo';
 
   @override
-  String get forgotPassword => 'Wedi anghofio cyfrinair?';
+  String get forgotPassword => '[CY] Forgot Password?';
 
   @override
   String get familyDashboard => 'Dangosfwrdd teulu';
@@ -374,32 +374,32 @@ class AppLocalizationsCy extends AppLocalizations {
   String get playtimeTitle => 'Teitl Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP wedi ei ail-anfon yn llwyddiannus';
+  String get otpResentSuccessfully => '[CY] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Gwall wrth wirio caniatâd';
+    return '[CY] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Sgrîn cleient i\'w diffinio';
+  String get clientScreenTBD => '[CY] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'Tocyn FCM';
+    return '[CY] FCM Token';
   }
 
   @override
   String get pickImage => 'Dewiswch ddelwedd';
 
   @override
-  String get previous => 'Blaenorol';
+  String get previous => '[CY] Previous';
 
   @override
-  String get noProfileFound => 'Proffil heb ei ganfod';
+  String get noProfileFound => '[CY] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Dim aelodau teulu eto';
+  String get noFamilyMembersYet => '[CY] No family members yet';
 
   @override
   String get mediaOptional => 'Cyfryngau (dewisol)';
@@ -414,13 +414,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get dashboard => 'Dangosfwrdd';
 
   @override
-  String get noPermissionForBroadcast => 'Dim caniatâd ar gyfer darlledu';
+  String get noPermissionForBroadcast => '[CY] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Teitl panel gweinyddu Playtime';
+  String get playtimeAdminPanelTitle => '[CY] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Manylion gwahoddiad';
+  String get inviteDetail => '[CY] Invite Details';
 
   @override
   String scheduled(Object date) {
@@ -429,7 +429,7 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Methu ail-anfon OTP';
+    return '[CY] Failed to resend OTP';
   }
 
   @override
@@ -461,7 +461,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get recentGames => 'Gemau diweddar';
 
   @override
-  String get customizeMessage => 'Personoli neges';
+  String get customizeMessage => '[CY] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
@@ -470,15 +470,15 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Gwall wrth anfon neges';
+    return '[CY] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Cadarnhau cyfrinair';
+  String get confirmPassword => '[CY] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Gwall wrth lwytho ceisiadau preifatrwydd';
+    return '[CY] Error loading privacy requests';
   }
 
   @override
@@ -492,7 +492,7 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Mewngofnodwch ar gyfer nodweddion teulu';
+      '[CY] Please login to access family features';
 
   @override
   String get myInvites => 'Fy nghwahoddiadau';
@@ -507,7 +507,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get playtimeNoSessions => 'Dim sesiynau Playtime';
 
   @override
-  String get adminScreenTBD => 'Sgrîn gweinyddu i\'w diffinio';
+  String get adminScreenTBD => '[CY] Admin screen coming soon';
 
   @override
   String get playtimeParentDashboardTitle =>
@@ -526,7 +526,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get playtimeChooseGame => 'Dewiswch gêm';
 
   @override
-  String get managePermissions => 'Rheoli caniatâd';
+  String get managePermissions => '[CY] Manage Permissions';
 
   @override
   String get pollOptions => 'Opsiynau arolwg';
@@ -549,9 +549,28 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String statusColon(Object status) {
-    return 'Statws:';
+    return '[CY] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Mewngofnodwch i weld proffil';
+  String get pleaseLoginToViewProfile =>
+      '[CY] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

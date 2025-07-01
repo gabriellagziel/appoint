@@ -15,13 +15,13 @@ class AppLocalizationsFo extends AppLocalizations {
   String get home => 'Heim';
 
   @override
-  String get noSessionsYet => 'Einki fundir enn';
+  String get noSessionsYet => '[FO] No sessions yet';
 
   @override
   String get ok => 'Í lagi';
 
   @override
-  String get playtimeLandingChooseMode => 'Vel ein hátt';
+  String get playtimeLandingChooseMode => '[FO] Choose your play mode:';
 
   @override
   String get signUp => 'Viðskriva teg';
@@ -33,16 +33,16 @@ class AppLocalizationsFo extends AppLocalizations {
   String get decline => 'Avvís';
 
   @override
-  String get adminBroadcast => 'Stýrisending';
+  String get adminBroadcast => '[FO] Admin Broadcast';
 
   @override
-  String get login => 'Rita teg inn';
+  String get login => '[FO] Login';
 
   @override
-  String get playtimeChooseFriends => 'Vel vinir';
+  String get playtimeChooseFriends => '[FO] Choose friends to invite';
 
   @override
-  String get noInvites => 'Einki boð';
+  String get noInvites => '[FO] No invites';
 
   @override
   String get playtimeChooseTime => 'Vel tíð';
@@ -54,7 +54,9 @@ class AppLocalizationsFo extends AppLocalizations {
   String get undo => 'Ógilda';
 
   @override
-  String get opened => 'Opnað';
+  String opened(Object count) {
+    return 'Opnað';
+  }
 
   @override
   String get createVirtualSession => 'Búgva upp røktarfund';
@@ -80,26 +82,27 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get revokeAccess => 'Strika atgongd';
+  String get revokeAccess => '[FO] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => 'Goyma bólk til eyðkenningar';
+  String get saveGroupForRecognition => '[FO] Save Group for Recognition';
 
   @override
   String get playtimeLiveScheduled => 'Livifundur settur upp';
 
   @override
-  String get revokeAccessConfirmation => 'Váttan av strikaðari atgongd';
+  String get revokeAccessConfirmation =>
+      '[FO] Are you sure you want to revoke access?';
 
   @override
-  String get download => 'Heinta niður';
+  String get download => '[FO] Download';
 
   @override
-  String get password => 'Loyniorð';
+  String get password => '[FO] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Mistøk við at innlesa familjusambond';
+    return '[FO] Error loading family links';
   }
 
   @override
@@ -110,11 +113,11 @@ class AppLocalizationsFo extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Privatlivsbiðing mistókst';
+    return '[FO] Failed to action privacy request';
   }
 
   @override
-  String get appTitle => 'Forritsheiti';
+  String get appTitle => '[FO] APP-OINT';
 
   @override
   String get accept => 'Váttað';
@@ -123,13 +126,14 @@ class AppLocalizationsFo extends AppLocalizations {
   String get playtimeModeVirtual => 'Røktarháttur';
 
   @override
-  String get playtimeDescription => 'Playtime lýsing';
+  String get playtimeDescription =>
+      '[FO] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => 'Strika';
 
   @override
-  String get playtimeVirtualStarted => 'Røktarfundur byrjaður';
+  String get playtimeVirtualStarted => '[FO] Virtual playtime started!';
 
   @override
   String get createYourFirstGame => 'Búg til tín fyrsta spæl';
@@ -143,7 +147,7 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get noResults => 'Einki funnið';
+  String get noResults => '[FO] No results found';
 
   @override
   String get yes => 'Ja';
@@ -177,19 +181,19 @@ class AppLocalizationsFo extends AppLocalizations {
 
   @override
   String invited(Object date) {
-    return 'Gonvdaður';
+    return '[FO] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'Innihald';
+    return '[FO] Content';
   }
 
   @override
   String get meetingSharedSuccessfully => 'Fundur deildur eydnulega';
 
   @override
-  String get welcomeToPlaytime => 'Vælkomin til Playtime';
+  String get welcomeToPlaytime => '[FO] Welcome to Playtime';
 
   @override
   String get viewAll => 'Sí alt';
@@ -198,7 +202,7 @@ class AppLocalizationsFo extends AppLocalizations {
   String get playtimeVirtual => 'Røktar Playtime';
 
   @override
-  String get staffScreenTBD => 'Starvsfólkasjón atgrein seinni';
+  String get staffScreenTBD => '[FO] Staff screen coming soon';
 
   @override
   String get cut => 'Skera';
@@ -216,7 +220,7 @@ class AppLocalizationsFo extends AppLocalizations {
   String get sendNow => 'Senda nú';
 
   @override
-  String get noGamesYet => 'Einki spøl enn';
+  String get noGamesYet => '[FO] No games yet';
 
   @override
   String get select => 'Vel';
@@ -228,7 +232,7 @@ class AppLocalizationsFo extends AppLocalizations {
   String get choose => 'Vel';
 
   @override
-  String get profile => 'Profyl';
+  String get profile => '[FO] Profile';
 
   @override
   String get removeChild => 'Strika barn';
@@ -242,10 +246,10 @@ class AppLocalizationsFo extends AppLocalizations {
   String get logout => 'Rita teg út';
 
   @override
-  String get paste => 'Líma inn';
+  String get paste => '[FO] Paste';
 
   @override
-  String get welcome => 'Vælkomin';
+  String get welcome => '[FO] Welcome';
 
   @override
   String get playtimeCreateSession => 'Búg fund upp';
@@ -257,7 +261,7 @@ class AppLocalizationsFo extends AppLocalizations {
   String get upload => 'Farmeta upp';
 
   @override
-  String get upcomingSessions => 'Kominir fundir';
+  String get upcomingSessions => '[FO] Upcoming Sessions';
 
   @override
   String get enterGroupName => 'Skriva bólkanavn';
@@ -269,12 +273,10 @@ class AppLocalizationsFo extends AppLocalizations {
   String get playtimeLive => 'Livifundur';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Mistøk við at innlesa boð';
-  }
+  String get errorLoadingInvites => '[FO] Error loading invites';
 
   @override
-  String get targetingFilters => 'Málseting síl';
+  String get targetingFilters => '[FO] Targeting Filters';
 
   @override
   String get pickVideo => 'Vel vídjó';
@@ -283,13 +285,15 @@ class AppLocalizationsFo extends AppLocalizations {
   String get playtimeGameDeleted => 'Spæl strikað';
 
   @override
-  String get scheduleForLater => 'Skip til seinni';
+  String get scheduleForLater => '[FO] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully => 'Atgongd strokað eydnulega';
+  String get accessRevokedSuccessfully => '[FO] Access revoked successfully';
 
   @override
-  String get type => 'Slag';
+  String type(Object type) {
+    return 'Slag';
+  }
 
   @override
   String get checkingPermissions => 'Kann ræðisrættir';
@@ -304,19 +308,19 @@ class AppLocalizationsFo extends AppLocalizations {
   String get email => 'Teldupostur';
 
   @override
-  String get shareOnWhatsApp => 'Deil á WhatsApp';
+  String get shareOnWhatsApp => '[FO] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Boðuppsetingar';
+  String get notificationSettings => '[FO] Notification Settings';
 
   @override
-  String get myProfile => 'Mín profyl';
+  String get myProfile => '[FO] My Profile';
 
   @override
   String get revoke => 'Strika';
 
   @override
-  String get noBroadcastMessages => 'Einki send boð';
+  String get noBroadcastMessages => '[FO] No messages yet';
 
   @override
   String requestType(Object type) {
@@ -336,27 +340,25 @@ class AppLocalizationsFo extends AppLocalizations {
   String get createNew => 'Búg nýtt upp';
 
   @override
-  String get settings => 'Uppsetingar';
+  String get settings => '[FO] Settings';
 
   @override
   String get playtimeReject => 'Avvís Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Mistøk við at innlesa profyl';
-  }
+  String get errorLoadingProfile => '[FO] Error loading profile';
 
   @override
   String get edit => 'Broyt';
 
   @override
-  String get add => 'Legg aftrat';
+  String get add => '[FO] Add';
 
   @override
   String get playtimeGameApproved => 'Spæl góðkent';
 
   @override
-  String get forgotPassword => 'Gloymt loyniorðið?';
+  String get forgotPassword => '[FO] Forgot Password?';
 
   @override
   String get familyDashboard => 'Familjustýrismynd';
@@ -375,15 +377,15 @@ class AppLocalizationsFo extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Mistøk við at kanna loyvi';
+    return '[FO] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Klientpant播放界面undefined';
+  String get clientScreenTBD => '[FO] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM token';
+    return '[FO] FCM Token';
   }
 
   @override
@@ -393,10 +395,10 @@ class AppLocalizationsFo extends AppLocalizations {
   String get previous => 'Áðra';
 
   @override
-  String get noProfileFound => 'Einki profyl funnið';
+  String get noProfileFound => '[FO] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Einki familjulimir enn';
+  String get noFamilyMembersYet => '[FO] No family members yet';
 
   @override
   String get mediaOptional => 'Midlar (valfrítt)';
@@ -411,13 +413,13 @@ class AppLocalizationsFo extends AppLocalizations {
   String get dashboard => 'Stýripanel';
 
   @override
-  String get noPermissionForBroadcast => 'Einki loyvi til stýring';
+  String get noPermissionForBroadcast => '[FO] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => 'Playtime stýrisloyvi heiti';
 
   @override
-  String get inviteDetail => 'Boð smálýsing';
+  String get inviteDetail => '[FO] Invite Details';
 
   @override
   String scheduled(Object date) {
@@ -426,15 +428,15 @@ class AppLocalizationsFo extends AppLocalizations {
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Mistókst at senda OTP aftur';
+    return '[FO] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => 'Plánlegging';
+  String get scheduling => '[FO] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Mistøk við at goyma boð';
+    return '[FO] Error saving message';
   }
 
   @override
@@ -451,7 +453,7 @@ class AppLocalizationsFo extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Mistókst at strika atgongd';
+    return '[FO] Failed to revoke access';
   }
 
   @override
@@ -467,29 +469,29 @@ class AppLocalizationsFo extends AppLocalizations {
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Mistøk við at senda boð';
+    return '[FO] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Staðfesta loyniorð';
+  String get confirmPassword => '[FO] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Mistøk við at innlesa privatlivsbiðingar';
+    return '[FO] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Samband børn';
+  String get connectedChildren => '[FO] Connected Children';
 
   @override
   String get share => 'Deil';
 
   @override
-  String get playtimeEnterGameName => 'Skriva spælini navn';
+  String get playtimeEnterGameName => '[FO] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Vinarliga logga teg inn fyri familjufall';
+      '[FO] Please login to access family features';
 
   @override
   String get myInvites => 'Mín boð';
@@ -501,19 +503,19 @@ class AppLocalizationsFo extends AppLocalizations {
   String get groupNameOptional => 'Bólkanavn (valfrítt)';
 
   @override
-  String get playtimeNoSessions => 'Einki Playtime fundir';
+  String get playtimeNoSessions => '[FO] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Adminpant播放界面ættað seinni';
+  String get adminScreenTBD => '[FO] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime foreldrapanel heiti';
+  String get playtimeParentDashboardTitle => '[FO] Playtime Dashboard';
 
   @override
-  String get close => 'Lat aftur';
+  String get close => '[FO] Close';
 
   @override
-  String get knownGroupDetected => 'Kendi bólkur funnin';
+  String get knownGroupDetected => '[FO] Known group detected';
 
   @override
   String get back => 'Tilbaka';
@@ -525,7 +527,7 @@ class AppLocalizationsFo extends AppLocalizations {
   String get managePermissions => 'Stýra loyvum';
 
   @override
-  String get pollOptions => 'Val av kanning';
+  String get pollOptions => '[FO] Poll Options';
 
   @override
   String clicked(Object count) {
@@ -534,7 +536,7 @@ class AppLocalizationsFo extends AppLocalizations {
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[FO] Link';
   }
 
   @override
@@ -549,5 +551,24 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Logga teg inn fyri profyl';
+  String get pleaseLoginToViewProfile =>
+      '[FO] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class StudioEntryScreen extends StatelessWidget {
-  const StudioEntryScreen({Key? key}) : super(key: key);
+  const StudioEntryScreen({final Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Studio Dashboard'),
@@ -37,10 +37,9 @@ class StudioEntryScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 32),
-            // TODO: Calendar view
-            // TODO: Booking overview
-            // TODO: Availability editor
-            // TODO: Quick access to common actions
+            // TODO: Implement this featurendar view
+            // TODO: Implement this featureng overview
+            // TODO: Implement this featuren actions
           ],
         ),
       ),

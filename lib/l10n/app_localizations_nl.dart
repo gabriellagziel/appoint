@@ -33,16 +33,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String get decline => 'Weigeren';
 
   @override
-  String get adminBroadcast => 'Beheerdersuitzending';
+  String get adminBroadcast => '[NL] Admin Broadcast';
 
   @override
-  String get login => 'Inloggen';
+  String get login => '[NL] Login';
 
   @override
   String get playtimeChooseFriends => 'Kies vrienden';
 
   @override
-  String get noInvites => 'Geen uitnodigingen';
+  String get noInvites => '[NL] No invites';
 
   @override
   String get playtimeChooseTime => 'Kies tijd';
@@ -51,16 +51,18 @@ class AppLocalizationsNl extends AppLocalizations {
   String get success => 'Succes';
 
   @override
-  String get undo => 'Ongedaan maken';
+  String get undo => '[NL] Undo';
 
   @override
-  String get opened => 'Geopend';
+  String opened(Object count) {
+    return 'Geopend';
+  }
 
   @override
   String get createVirtualSession => 'Virtuele sessie maken';
 
   @override
-  String get messageSentSuccessfully => 'Bericht succesvol verzonden';
+  String get messageSentSuccessfully => '[NL] Message sent successfully';
 
   @override
   String get redo => 'Opnieuw doen';
@@ -72,7 +74,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get search => 'Zoeken';
 
   @override
-  String get cancelInviteConfirmation => 'Bevestiging uitnodiging annuleren';
+  String get cancelInviteConfirmation =>
+      '[NL] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -80,26 +83,27 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get revokeAccess => 'Toegang intrekken';
+  String get revokeAccess => '[NL] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => 'Groep opslaan voor herkenning';
+  String get saveGroupForRecognition => '[NL] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Live sessie gepland';
+  String get playtimeLiveScheduled => '[NL] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Bevestiging intrekken toegang';
+  String get revokeAccessConfirmation =>
+      '[NL] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Downloaden';
 
   @override
-  String get password => 'Wachtwoord';
+  String get password => '[NL] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Fout bij laden familiekoppelingen';
+    return '[NL] Error loading family links';
   }
 
   @override
@@ -114,7 +118,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get appTitle => 'Applicatietitel';
+  String get appTitle => '[NL] APP-OINT';
 
   @override
   String get accept => 'Accepteren';
@@ -123,7 +127,8 @@ class AppLocalizationsNl extends AppLocalizations {
   String get playtimeModeVirtual => 'Virtuele modus';
 
   @override
-  String get playtimeDescription => 'Playtime beschrijving';
+  String get playtimeDescription =>
+      '[NL] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => 'Verwijderen';
@@ -139,11 +144,11 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String recipients(Object count) {
-    return 'Ontvangers';
+    return '[NL] Recipients';
   }
 
   @override
-  String get noResults => 'Geen resultaten';
+  String get noResults => '[NL] No results found';
 
   @override
   String get yes => 'Ja';
@@ -158,7 +163,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get done => 'Klaar';
 
   @override
-  String get defaultShareMessage => 'Standaard deelbericht';
+  String get defaultShareMessage => '[NL] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Nee';
@@ -173,7 +178,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get createLiveSession => 'Live sessie maken';
 
   @override
-  String get enableNotifications => 'Meldingen inschakelen';
+  String get enableNotifications => '[NL] Enable Notifications';
 
   @override
   String invited(Object date) {
@@ -182,11 +187,11 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String content(Object content) {
-    return 'Inhoud';
+    return '[NL] Content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Vergadering succesvol gedeeld';
+  String get meetingSharedSuccessfully => '[NL] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => 'Welkom bij Playtime';
@@ -198,13 +203,14 @@ class AppLocalizationsNl extends AppLocalizations {
   String get playtimeVirtual => 'Virtuele Playtime';
 
   @override
-  String get staffScreenTBD => 'Personeelsscherm volgt later';
+  String get staffScreenTBD => '[NL] Staff screen coming soon';
 
   @override
   String get cut => 'Knippen';
 
   @override
-  String get inviteCancelledSuccessfully => 'Uitnodiging succesvol geannuleerd';
+  String get inviteCancelledSuccessfully =>
+      '[NL] Invite cancelled successfully';
 
   @override
   String get retry => 'Opnieuw proberen';
@@ -228,14 +234,14 @@ class AppLocalizationsNl extends AppLocalizations {
   String get choose => 'Kies';
 
   @override
-  String get profile => 'Profiel';
+  String get profile => '[NL] Profile';
 
   @override
-  String get removeChild => 'Kind verwijderen';
+  String get removeChild => '[NL] Remove Child';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return '[NL] Status';
   }
 
   @override
@@ -251,7 +257,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get playtimeCreateSession => 'Sessie maken';
 
   @override
-  String get familyMembers => 'Gezinsleden';
+  String get familyMembers => '[NL] Family Members';
 
   @override
   String get upload => 'Uploaden';
@@ -260,7 +266,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get upcomingSessions => 'Aankomende sessies';
 
   @override
-  String get enterGroupName => 'Voer groepsnaam in';
+  String get enterGroupName => '[NL] Enter group name';
 
   @override
   String get confirm => 'Bevestigen';
@@ -269,12 +275,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get playtimeLive => 'Live Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Fout bij laden uitnodigingen';
-  }
+  String get errorLoadingInvites => '[NL] Error loading invites';
 
   @override
-  String get targetingFilters => 'Targetingfilters';
+  String get targetingFilters => '[NL] Targeting Filters';
 
   @override
   String get pickVideo => 'Video kiezen';
@@ -283,16 +287,18 @@ class AppLocalizationsNl extends AppLocalizations {
   String get playtimeGameDeleted => 'Spel verwijderd';
 
   @override
-  String get scheduleForLater => 'Plannen voor later';
+  String get scheduleForLater => '[NL] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully => 'Toegang succesvol ingetrokken';
+  String get accessRevokedSuccessfully => '[NL] Access revoked successfully';
 
   @override
-  String get type => 'Type';
+  String type(Object type) {
+    return 'Type';
+  }
 
   @override
-  String get checkingPermissions => 'Machtigingen controleren';
+  String get checkingPermissions => '[NL] Checking permissions...';
 
   @override
   String get copy => 'Kopiëren';
@@ -304,16 +310,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String get email => 'E-mail';
 
   @override
-  String get shareOnWhatsApp => 'Delen op WhatsApp';
+  String get shareOnWhatsApp => '[NL] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Meldingsinstellingen';
+  String get notificationSettings => '[NL] Notification Settings';
 
   @override
-  String get myProfile => 'Mijn profiel';
+  String get myProfile => '[NL] My Profile';
 
   @override
-  String get revoke => 'Intrekken';
+  String get revoke => '[NL] Revoke';
 
   @override
   String get noBroadcastMessages => 'Geen uitzendberichten';
@@ -324,42 +330,40 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get notifications => 'Meldingen';
+  String get notifications => '[NL] Notifications';
 
   @override
   String get details => 'Details';
 
   @override
-  String get cancelInvite => 'Uitnodiging annuleren';
+  String get cancelInvite => '[NL] Cancel Invite';
 
   @override
   String get createNew => 'Nieuw maken';
 
   @override
-  String get settings => 'Instellingen';
+  String get settings => '[NL] Settings';
 
   @override
   String get playtimeReject => 'Playtime weigeren';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Fout bij laden profiel';
-  }
+  String get errorLoadingProfile => '[NL] Error loading profile';
 
   @override
   String get edit => 'Bewerken';
 
   @override
-  String get add => 'Toevoegen';
+  String get add => '[NL] Add';
 
   @override
   String get playtimeGameApproved => 'Spel goedgekeurd';
 
   @override
-  String get forgotPassword => 'Wachtwoord vergeten?';
+  String get forgotPassword => '[NL] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Gezinsdashboard';
+  String get familyDashboard => '[NL] Family Dashboard';
 
   @override
   String get loading => 'Laden';
@@ -371,57 +375,57 @@ class AppLocalizationsNl extends AppLocalizations {
   String get playtimeTitle => 'Playtime titel';
 
   @override
-  String get otpResentSuccessfully => 'OTP succesvol opnieuw verzonden';
+  String get otpResentSuccessfully => '[NL] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Fout bij controleren machtigingen';
+    return '[NL] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Cliëntscherm volgt later';
+  String get clientScreenTBD => '[NL] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM-token';
+    return '[NL] FCM Token';
   }
 
   @override
-  String get pickImage => 'Afbeelding kiezen';
+  String get pickImage => '[NL] Pick Image';
 
   @override
-  String get previous => 'Vorige';
+  String get previous => '[NL] Previous';
 
   @override
-  String get noProfileFound => 'Geen profiel gevonden';
+  String get noProfileFound => '[NL] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Nog geen gezinsleden';
+  String get noFamilyMembersYet => '[NL] No family members yet';
 
   @override
-  String get mediaOptional => 'Media (optioneel)';
+  String get mediaOptional => '[NL] Media (Optional)';
 
   @override
   String get messageSavedSuccessfully => 'Bericht succesvol opgeslagen';
 
   @override
-  String get scheduledFor => 'Gepland voor';
+  String get scheduledFor => '[NL] Scheduled for';
 
   @override
   String get dashboard => 'Dashboard';
 
   @override
-  String get noPermissionForBroadcast => 'Geen toestemming voor uitzending';
+  String get noPermissionForBroadcast => '[NL] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => 'Playtime beheerderspaneel titel';
 
   @override
-  String get inviteDetail => 'Uitnodigingsdetails';
+  String get inviteDetail => '[NL] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return 'Gepland';
+    return '[NL] Scheduled';
   }
 
   @override
@@ -451,7 +455,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Toegang intrekken mislukt';
+    return '[NL] Failed to revoke access';
   }
 
   @override
@@ -462,7 +466,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Uitnodiging annuleren mislukt';
+    return '[NL] Failed to cancel invite';
   }
 
   @override
@@ -471,7 +475,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get confirmPassword => 'Bevestig wachtwoord';
+  String get confirmPassword => '[NL] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
@@ -479,75 +483,94 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get connectedChildren => 'Verbonden kinderen';
+  String get connectedChildren => '[NL] Connected Children';
 
   @override
   String get share => 'Delen';
 
   @override
-  String get playtimeEnterGameName => 'Voer spelnaam in';
+  String get playtimeEnterGameName => '[NL] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Log in om toegang te krijgen tot gezinsfuncties';
+      '[NL] Please login to access family features';
 
   @override
-  String get myInvites => 'Mijn uitnodigingen';
+  String get myInvites => '[NL] My Invites';
 
   @override
-  String get createGame => 'Spel maken';
+  String get createGame => '[NL] Create Game';
 
   @override
-  String get groupNameOptional => 'Groepsnaam (optioneel)';
+  String get groupNameOptional => '[NL] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Geen playtime sessies gevonden.';
+  String get playtimeNoSessions => '[NL] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Beheerdersscherm volgt later';
+  String get adminScreenTBD => '[NL] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => '[NL] Playtime Dashboard';
 
   @override
-  String get close => 'Sluiten';
+  String get close => '[NL] Close';
 
   @override
-  String get knownGroupDetected => 'Bekende groep gedetecteerd';
+  String get knownGroupDetected => '[NL] Known group detected';
 
   @override
-  String get back => 'Terug';
+  String get back => '[NL] Back';
 
   @override
-  String get playtimeChooseGame => 'Kies een spel';
+  String get playtimeChooseGame => '[NL] Choose a game';
 
   @override
-  String get managePermissions => 'Machtigingen beheren';
+  String get managePermissions => '[NL] Manage Permissions';
 
   @override
-  String get pollOptions => 'Poll-opties';
+  String get pollOptions => '[NL] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Geklikt';
+    return '[NL] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[NL] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Je vergadering is klaar! Doe nu mee';
+  String get meetingReadyMessage => '[NL] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Wachtende uitnodigingen';
+  String get pendingInvites => '[NL] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[NL] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Log in om profiel te bekijken';
+  String get pleaseLoginToViewProfile =>
+      '[NL] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

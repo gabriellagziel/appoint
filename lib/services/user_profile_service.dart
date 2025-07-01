@@ -1,13 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-import '../models/user_profile.dart';
+import 'package:appoint/models/user_profile.dart';
 
 class UserProfileService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  Future<UserProfile?> getProfile(String uid) async {
+  Future<UserProfile?> getProfile(final String uid) async {
     final doc = await _firestore.collection('users').doc(uid).get();
     if (!doc.exists) return null;
     return UserProfile.fromJson({
@@ -22,8 +22,8 @@ class UserProfileService {
     return getProfile(user.uid);
   }
 
-  Stream<UserProfile?> watchProfile(String uid) {
-    return _firestore.collection('users').doc(uid).snapshots().map((doc) {
+  Stream<UserProfile?> watchProfile(final String uid) {
+    return _firestore.collection('users').doc(uid).snapshots().map((final doc) {
       if (!doc.exists) return null;
       return UserProfile.fromJson({
         'id': doc.id,
@@ -32,7 +32,7 @@ class UserProfileService {
     });
   }
 
-  Future<void> updateProfile(UserProfile profile) async {
+  Future<void> updateProfile(final UserProfile profile) async {
     await _firestore.collection('users').doc(profile.id).set(profile.toJson());
   }
 }

@@ -5,11 +5,11 @@ part 'staff_member.g.dart';
 @freezed
 class StaffMember with _$StaffMember {
   const factory StaffMember({
-    required String id,
-    required String displayName,
-    String? photoUrl,
+    required final String id,
+    required final String displayName,
+    final String? photoUrl,
   }) = _StaffMember;
 
-  factory StaffMember.fromJson(Map<String, dynamic> json) =>
+  factory StaffMember.fromJson(final Map<String, dynamic> json) =>
       _$StaffMemberFromJson(json);
 }

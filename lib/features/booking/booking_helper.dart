@@ -1,10 +1,9 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../models/booking.dart';
-import '../providers/selection_provider.dart';
-import '../services/booking_service.dart';
-import '../../providers/auth_provider.dart';
+import 'package:appoint/models/booking.dart';
+import 'package:appoint/features/providers/selection_provider.dart';
+import 'package:appoint/features/services/booking_service.dart';
+import 'package:appoint/providers/auth_provider.dart';
 
 class BookingHelper {
   final WidgetRef ref;

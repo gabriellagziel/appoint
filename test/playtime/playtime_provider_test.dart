@@ -17,11 +17,11 @@ Future<void> main() async {
 
     setUp(() {
       container = ProviderContainer(overrides: [
-        allGamesProvider.overrideWith((ref) => Stream.value(<PlaytimeGame>[])),
+        allGamesProvider.overrideWith((final ref) => Stream.value(<PlaytimeGame>[])),
         allSessionsProvider.overrideWith(
-            (ref) => Stream.value(<PlaytimeSession>[])),
+            (final ref) => Stream.value(<PlaytimeSession>[])),
         allBackgroundsProvider.overrideWith(
-            (ref) => Stream.value(<PlaytimeBackground>[])),
+            (final ref) => Stream.value(<PlaytimeBackground>[])),
       ]);
     });
 

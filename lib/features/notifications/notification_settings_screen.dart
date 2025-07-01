@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../l10n/app_localizations.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 
-import '../../providers/notification_provider.dart';
-import '../../providers/user_settings_provider.dart';
-import '../../providers/auth_provider.dart';
-import '../../models/notification_settings.dart';
+import 'package:appoint/providers/notification_provider.dart';
+import 'package:appoint/providers/user_settings_provider.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/models/notification_settings.dart';
 
 class NotificationSettingsScreen extends ConsumerWidget {
   const NotificationSettingsScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
     final tokenAsync = ref.watch(fcmTokenProvider);
     final settingsAsync = ref.watch(notificationSettingsProvider);
     return Scaffold(
       appBar: AppBar(title: Text(l10n.notificationSettings)),
       body: settingsAsync.when(
-        data: (settings) {
+        data: (final settings) {
           return tokenAsync.when(
-            data: (token) {
+            data: (final token) {
               return Padding(
                 padding: const EdgeInsets.all(16),
                 child: Column(
@@ -29,7 +29,7 @@ class NotificationSettingsScreen extends ConsumerWidget {
                     SwitchListTile(
                       title: Text(l10n.enableNotifications),
                       value: settings.push,
-                      onChanged: (v) async {
+                      onChanged: (final v) async {
                         final uid = ref.read(authProvider).currentUser?.uid;
                         if (uid == null) return;
                         final newSettings = NotificationSettings(push: v);
@@ -44,11 +44,11 @@ class NotificationSettingsScreen extends ConsumerWidget {
               );
             },
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (e, _) => Center(child: Text('Error: $e')),
+            error: (final e, final _) => Center(child: Text('Error: $e')),
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (final e, final _) => Center(child: Text('Error: $e')),
       ),
     );
   }

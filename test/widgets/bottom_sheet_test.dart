@@ -8,7 +8,7 @@ Future<void> main() async {
       // TODO: Prepare bottom sheet widget tests
     });
 
-    testWidgets('opens and closes correctly', (tester) async {
+    testWidgets('opens and closes correctly', (final tester) async {
       // TODO: implement bottom sheet widget test
     });
   });

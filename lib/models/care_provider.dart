@@ -11,7 +11,7 @@ class CareProvider {
     required this.contactInfo,
   });
 
-  factory CareProvider.fromJson(Map<String, dynamic> json) {
+  factory CareProvider.fromJson(final Map<String, dynamic> json) {
     return CareProvider(
       id: json['id'] as String,
       name: json['name'] as String,
@@ -28,10 +28,10 @@ class CareProvider {
       };
 
   CareProvider copyWith({
-    String? id,
-    String? name,
-    String? specialty,
-    String? contactInfo,
+    final String? id,
+    final String? name,
+    final String? specialty,
+    final String? contactInfo,
   }) {
     return CareProvider(
       id: id ?? this.id,

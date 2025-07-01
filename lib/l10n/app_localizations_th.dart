@@ -54,7 +54,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get undo => 'เลิกทำ';
 
   @override
-  String get opened => 'เปิดแล้ว';
+  String opened(Object count) {
+    return 'เปิดแล้ว';
+  }
 
   @override
   String get createVirtualSession => 'สร้างเซสชันเสมือน';
@@ -269,9 +271,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get playtimeLive => 'Playtime สด';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'ข้อผิดพลาดในการโหลดคำเชิญ';
-  }
+  String get errorLoadingInvites => 'ข้อผิดพลาดในการโหลดคำเชิญ';
 
   @override
   String get targetingFilters => 'ตัวกรองเป้าหมาย';
@@ -289,7 +289,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get accessRevokedSuccessfully => 'เพิกถอนสิทธิ์สำเร็จ';
 
   @override
-  String get type => 'ประเภท';
+  String type(Object type) {
+    return 'ประเภท';
+  }
 
   @override
   String get checkingPermissions => 'กำลังตรวจสอบสิทธิ์';
@@ -304,7 +306,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get email => 'อีเมล';
 
   @override
-  String get shareOnWhatsApp => 'แชร์ใน WhatsApp';
+  String get shareOnWhatsApp => '[TH] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'การตั้งค่าการแจ้งเตือน';
@@ -342,9 +344,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get playtimeReject => 'ปฏิเสธ Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'ข้อผิดพลาดในการโหลดโปรไฟล์';
-  }
+  String get errorLoadingProfile => 'ข้อผิดพลาดในการโหลดโปรไฟล์';
 
   @override
   String get edit => 'แก้ไข';
@@ -451,7 +451,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'ไม่สามารถเพิกถอนสิทธิ์ได้';
+    return '[TH] Failed to revoke access';
   }
 
   @override
@@ -489,65 +489,83 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'กรุณาเข้าสู่ระบบเพื่อเข้าถึงฟีเจอร์ครอบครัว';
+      '[TH] Please login to access family features';
 
   @override
-  String get myInvites => 'คำเชิญของฉัน';
+  String get myInvites => '[TH] My Invites';
 
   @override
-  String get createGame => 'สร้างเกม';
+  String get createGame => '[TH] Create Game';
 
   @override
-  String get groupNameOptional => 'ชื่อกลุ่ม (ไม่บังคับ)';
+  String get groupNameOptional => '[TH] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'ไม่พบเซสชัน Playtime';
+  String get playtimeNoSessions => '[TH] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'หน้าจอผู้ดูแลจะมาเร็วๆ นี้';
+  String get adminScreenTBD => '[TH] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'แดชบอร์ด Playtime';
+  String get playtimeParentDashboardTitle => '[TH] Playtime Dashboard';
 
   @override
-  String get close => 'ปิด';
+  String get close => '[TH] Close';
 
   @override
-  String get knownGroupDetected => 'ตรวจพบกลุ่มที่รู้จัก';
+  String get knownGroupDetected => '[TH] Known group detected';
 
   @override
-  String get back => 'กลับ';
+  String get back => '[TH] Back';
 
   @override
-  String get playtimeChooseGame => 'เลือกเกม';
+  String get playtimeChooseGame => '[TH] Choose a game';
 
   @override
-  String get managePermissions => 'จัดการสิทธิ์';
+  String get managePermissions => '[TH] Manage Permissions';
 
   @override
-  String get pollOptions => 'ตัวเลือกการโหวต';
+  String get pollOptions => '[TH] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'คลิกแล้ว';
+    return '[TH] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'ลิงก์';
+    return '[TH] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'การประชุมของคุณพร้อมแล้ว! เข้าร่วมตอนนี้';
+  String get meetingReadyMessage => '[TH] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'คำเชิญที่รอดำเนินการ';
+  String get pendingInvites => '[TH] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'สถานะ:';
+    return '[TH] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile => 'กรุณาเข้าสู่ระบบเพื่อดูโปรไฟล์';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

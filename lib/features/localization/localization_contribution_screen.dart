@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../l10n/l10n_contribution.dart';
+import 'package:appoint/l10n/l10n_contribution.dart';
 
 /// Simple UI allowing ambassadors to submit missing translations.
 class LocalizationContributionScreen extends StatefulWidget {
@@ -15,7 +15,7 @@ class _LocalizationContributionScreenState
   String? _selectedLocale;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final locales = missingTranslations.keys.toList()..sort();
     _selectedLocale ??= locales.isNotEmpty ? locales.first : null;
 
@@ -31,7 +31,7 @@ class _LocalizationContributionScreenState
                   padding: const EdgeInsets.all(16),
                   child: DropdownButton<String>(
                     value: _selectedLocale,
-                    onChanged: (val) => setState(() => _selectedLocale = val),
+                    onChanged: (final val) => setState(() => _selectedLocale = val),
                     items: [
                       for (final locale in locales)
                         DropdownMenuItem(
@@ -58,7 +58,7 @@ class _LocalizationContributionScreenState
                       const SizedBox(height: 16),
                       ElevatedButton(
                         onPressed: () {
-                          // TODO: send translations to backend
+                          // TODO: Implement this featurend translations to backend
                         },
                         child: const Text('Submit'),
                       ),

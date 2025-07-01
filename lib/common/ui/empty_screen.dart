@@ -14,7 +14,7 @@ class EmptyScreen extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,

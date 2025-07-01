@@ -30,7 +30,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get scheduleMessage => 'Jadualkan mesej';
 
   @override
-  String get decline => 'Tolak';
+  String get decline => '[MS] Decline';
 
   @override
   String get adminBroadcast => 'Siarkan pentadbir';
@@ -51,13 +51,15 @@ class AppLocalizationsMs extends AppLocalizations {
   String get success => 'Berjaya';
 
   @override
-  String get undo => 'Batal';
+  String get undo => '[MS] Undo';
 
   @override
-  String get opened => 'Dibuka';
+  String opened(Object count) {
+    return 'Dibuka';
+  }
 
   @override
-  String get createVirtualSession => 'Buat sesi maya';
+  String get createVirtualSession => '[MS] Create Virtual Session';
 
   @override
   String get messageSentSuccessfully => 'Mesej berjaya dihantar';
@@ -72,7 +74,8 @@ class AppLocalizationsMs extends AppLocalizations {
   String get search => 'Cari';
 
   @override
-  String get cancelInviteConfirmation => 'Batal pengesahan jemputan';
+  String get cancelInviteConfirmation =>
+      '[MS] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -80,7 +83,7 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
-  String get revokeAccess => 'Batalkan akses';
+  String get revokeAccess => '[MS] Revoke Access';
 
   @override
   String get saveGroupForRecognition => 'Simpan kumpulan untuk pengecaman';
@@ -89,28 +92,29 @@ class AppLocalizationsMs extends AppLocalizations {
   String get playtimeLiveScheduled => 'Sesi langsung dijadualkan';
 
   @override
-  String get revokeAccessConfirmation => 'Pengesahan batal akses';
+  String get revokeAccessConfirmation =>
+      '[MS] Are you sure you want to revoke access?';
 
   @override
-  String get download => 'Muat turun';
+  String get download => '[MS] Download';
 
   @override
-  String get password => 'Kata laluan';
+  String get password => '[MS] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Ralat memuat pautan keluarga';
+    return '[MS] Error loading family links';
   }
 
   @override
-  String get cancel => 'Batal';
+  String get cancel => '[MS] Cancel';
 
   @override
-  String get playtimeCreate => 'Buat Playtime';
+  String get playtimeCreate => '[MS] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Gagal laksanakan permintaan privasi';
+    return '[MS] Failed to action privacy request';
   }
 
   @override
@@ -132,7 +136,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get playtimeVirtualStarted => 'Sesi maya bermula';
 
   @override
-  String get createYourFirstGame => 'Buat permainan pertama anda';
+  String get createYourFirstGame => '[MS] Create your first game';
 
   @override
   String get participants => 'Peserta';
@@ -158,19 +162,19 @@ class AppLocalizationsMs extends AppLocalizations {
   String get done => 'Selesai';
 
   @override
-  String get defaultShareMessage => 'Mesej kongsi lalai';
+  String get defaultShareMessage => '[MS] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Tidak';
 
   @override
-  String get playtimeHub => 'Pusat Playtime';
+  String get playtimeHub => '[MS] Playtime Hub';
 
   @override
-  String get error => 'Ralat';
+  String get error => '[MS] Error';
 
   @override
-  String get createLiveSession => 'Buat sesi langsung';
+  String get createLiveSession => '[MS] Create Live Session';
 
   @override
   String get enableNotifications => 'Dayakan pemberitahuan';
@@ -182,29 +186,30 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String content(Object content) {
-    return 'Kandungan';
+    return '[MS] Content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Mesyuarat berjaya dikongsi';
+  String get meetingSharedSuccessfully => '[MS] Meeting shared successfully';
 
   @override
-  String get welcomeToPlaytime => 'Selamat datang ke Playtime';
+  String get welcomeToPlaytime => '[MS] Welcome to Playtime';
 
   @override
-  String get viewAll => 'Lihat semua';
+  String get viewAll => '[MS] View All';
 
   @override
   String get playtimeVirtual => 'Playtime maya';
 
   @override
-  String get staffScreenTBD => 'Skrin kakitangan akan ditetapkan';
+  String get staffScreenTBD => '[MS] Staff screen coming soon';
 
   @override
-  String get cut => 'Potong';
+  String get cut => '[MS] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => 'Jemputan dibatalkan berjaya';
+  String get inviteCancelledSuccessfully =>
+      '[MS] Invite cancelled successfully';
 
   @override
   String get retry => 'Cuba lagi';
@@ -216,7 +221,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get sendNow => 'Hantar sekarang';
 
   @override
-  String get noGamesYet => 'Tiada permainan lagi';
+  String get noGamesYet => '[MS] No games yet';
 
   @override
   String get select => 'Pilih';
@@ -228,14 +233,14 @@ class AppLocalizationsMs extends AppLocalizations {
   String get choose => 'Pilih';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[MS] Profile';
 
   @override
   String get removeChild => 'Keluarkan anak';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return '[MS] Status';
   }
 
   @override
@@ -245,19 +250,19 @@ class AppLocalizationsMs extends AppLocalizations {
   String get paste => 'Tampal';
 
   @override
-  String get welcome => 'Selamat datang';
+  String get welcome => '[MS] Welcome';
 
   @override
-  String get playtimeCreateSession => 'Buat sesi';
+  String get playtimeCreateSession => '[MS] Create a Playtime Session';
 
   @override
   String get familyMembers => 'Ahli keluarga';
 
   @override
-  String get upload => 'Muat naik';
+  String get upload => '[MS] Upload';
 
   @override
-  String get upcomingSessions => 'Sesi akan datang';
+  String get upcomingSessions => '[MS] Upcoming Sessions';
 
   @override
   String get enterGroupName => 'Masukkan nama kumpulan';
@@ -269,9 +274,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get playtimeLive => 'Playtime langsung';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Ralat memuat jemputan';
-  }
+  String get errorLoadingInvites => '[MS] Error loading invites';
 
   @override
   String get targetingFilters => 'Penuras penargetan';
@@ -280,71 +283,71 @@ class AppLocalizationsMs extends AppLocalizations {
   String get pickVideo => 'Pilih video';
 
   @override
-  String get playtimeGameDeleted => 'Permainan dipadam';
+  String get playtimeGameDeleted => '[MS] Game deleted';
 
   @override
   String get scheduleForLater => 'Jadualkan kemudian';
 
   @override
-  String get accessRevokedSuccessfully => 'Akses dibatalkan berjaya';
+  String get accessRevokedSuccessfully => '[MS] Access revoked successfully';
 
   @override
-  String get type => 'Jenis';
+  String type(Object type) {
+    return 'Jenis';
+  }
 
   @override
   String get checkingPermissions => 'Memeriksa kebenaran';
 
   @override
-  String get copy => 'Salin';
+  String get copy => '[MS] Copy';
 
   @override
-  String get yesCancel => 'Ya, batal';
+  String get yesCancel => '[MS] Yes, Cancel';
 
   @override
   String get email => 'Emel';
 
   @override
-  String get shareOnWhatsApp => 'Kongsi di WhatsApp';
+  String get shareOnWhatsApp => '[MS] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Tetapan pemberitahuan';
 
   @override
-  String get myProfile => 'Profil saya';
+  String get myProfile => '[MS] My Profile';
 
   @override
-  String get revoke => 'Batal';
+  String get revoke => '[MS] Revoke';
 
   @override
   String get noBroadcastMessages => 'Tiada mesej siaran';
 
   @override
   String requestType(Object type) {
-    return 'Jenis permintaan';
+    return '[MS] Request Type';
   }
 
   @override
   String get notifications => 'Pemberitahuan';
 
   @override
-  String get details => 'Butiran';
+  String get details => '[MS] Details';
 
   @override
-  String get cancelInvite => 'Batal jemputan';
+  String get cancelInvite => '[MS] Cancel Invite';
 
   @override
-  String get createNew => 'Buat baru';
+  String get createNew => '[MS] Create New';
 
   @override
   String get settings => 'Tetapan';
 
   @override
-  String get playtimeReject => 'Tolak Playtime';
+  String get playtimeReject => '[MS] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Ralat memuat profil';
-  }
+  String get errorLoadingProfile => '[MS] Error loading profile';
 
   @override
   String get edit => 'Edit';
@@ -353,19 +356,19 @@ class AppLocalizationsMs extends AppLocalizations {
   String get add => 'Tambah';
 
   @override
-  String get playtimeGameApproved => 'Permainan diluluskan';
+  String get playtimeGameApproved => '[MS] Game approved';
 
   @override
-  String get forgotPassword => 'Lupa kata laluan?';
+  String get forgotPassword => '[MS] Forgot Password?';
 
   @override
   String get familyDashboard => 'Papan pemuka keluarga';
 
   @override
-  String get loading => 'Memuatkan';
+  String get loading => '[MS] Loading...';
 
   @override
-  String get quickActions => 'Tindakan pantas';
+  String get quickActions => '[MS] Quick Actions';
 
   @override
   String get playtimeTitle => 'Tajuk Playtime';
@@ -375,15 +378,15 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Ralat memeriksa kebenaran';
+    return '[MS] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Skrin pelanggan akan ditetapkan';
+  String get clientScreenTBD => '[MS] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'Token FCM';
+    return '[MS] FCM Token';
   }
 
   @override
@@ -393,7 +396,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String get previous => 'Sebelumnya';
 
   @override
-  String get noProfileFound => 'Tiada profil dijumpai';
+  String get noProfileFound => '[MS] No profile found';
 
   @override
   String get noFamilyMembersYet => 'Tiada ahli keluarga lagi';
@@ -414,10 +417,10 @@ class AppLocalizationsMs extends AppLocalizations {
   String get noPermissionForBroadcast => 'Tiada kebenaran siaran';
 
   @override
-  String get playtimeAdminPanelTitle => 'Tajuk panel admin Playtime';
+  String get playtimeAdminPanelTitle => '[MS] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Butiran jemputan';
+  String get inviteDetail => '[MS] Invite Details';
 
   @override
   String scheduled(Object date) {
@@ -434,7 +437,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Ralat menyimpan mesej';
+    return '[MS] Error saving message';
   }
 
   @override
@@ -444,111 +447,129 @@ class AppLocalizationsMs extends AppLocalizations {
   String get playtimeApprove => 'Setujui Playtime';
 
   @override
-  String get createYourFirstSession => 'Buat sesi pertama anda';
+  String get createYourFirstSession => '[MS] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'Permainan ditolak';
+  String get playtimeGameRejected => '[MS] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Gagal membatalkan akses';
+    return '[MS] Failed to revoke access';
   }
 
   @override
-  String get recentGames => 'Permainan terkini';
+  String get recentGames => '[MS] Recent Games';
 
   @override
   String get customizeMessage => 'Sesuaikan mesej';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Gagal batalkan jemputan';
+    return '[MS] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Ralat menghantar mesej';
+    return '[MS] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Sahkan kata laluan';
+  String get confirmPassword => '[MS] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Ralat memuat permintaan privasi';
+    return '[MS] Error loading privacy requests';
   }
 
   @override
   String get connectedChildren => 'Anak bersambung';
 
   @override
-  String get share => 'Kongsi';
+  String get share => '[MS] Share';
 
   @override
-  String get playtimeEnterGameName => 'Masukkan nama permainan';
+  String get playtimeEnterGameName => '[MS] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Sila log masuk untuk mengakses ciri keluarga';
+      '[MS] Please login to access family features';
 
   @override
-  String get myInvites => 'Jemputan Saya';
+  String get myInvites => '[MS] My Invites';
 
   @override
-  String get createGame => 'Cipta Permainan';
+  String get createGame => '[MS] Create Game';
 
   @override
-  String get groupNameOptional => 'Nama Kumpulan (Pilihan)';
+  String get groupNameOptional => '[MS] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Tiada sesi playtime dijumpai.';
+  String get playtimeNoSessions => '[MS] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Skrin admin akan datang';
+  String get adminScreenTBD => '[MS] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Papan Pemuka Playtime';
+  String get playtimeParentDashboardTitle => '[MS] Playtime Dashboard';
 
   @override
-  String get close => 'Tutup';
+  String get close => '[MS] Close';
 
   @override
-  String get knownGroupDetected => 'Kumpulan yang diketahui dikesan';
+  String get knownGroupDetected => '[MS] Known group detected';
 
   @override
-  String get back => 'Kembali';
+  String get back => '[MS] Back';
 
   @override
-  String get playtimeChooseGame => 'Pilih permainan';
+  String get playtimeChooseGame => '[MS] Choose a game';
 
   @override
-  String get managePermissions => 'Urus Kebenaran';
+  String get managePermissions => '[MS] Manage Permissions';
 
   @override
-  String get pollOptions => 'Pilihan Undian';
+  String get pollOptions => '[MS] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Diklik';
+    return '[MS] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Pautan';
+    return '[MS] Link';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'Mesyuarat anda sudah siap! Sertai sekarang';
+  String get meetingReadyMessage => '[MS] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Jemputan Tertunggak';
+  String get pendingInvites => '[MS] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[MS] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Sila log masuk untuk melihat profil';
+  String get pleaseLoginToViewProfile =>
+      '[MS] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

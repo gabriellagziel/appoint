@@ -27,7 +27,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get signUp => 'Đăng ký';
 
   @override
-  String get scheduleMessage => 'Lên lịch tin nhắn';
+  String get scheduleMessage => '[VI] Schedule Message';
 
   @override
   String get decline => 'Từ chối';
@@ -54,19 +54,21 @@ class AppLocalizationsVi extends AppLocalizations {
   String get undo => 'Hoàn tác';
 
   @override
-  String get opened => 'Đã mở';
+  String opened(Object count) {
+    return 'Đã mở';
+  }
 
   @override
   String get createVirtualSession => 'Tạo phiên ảo';
 
   @override
-  String get messageSentSuccessfully => 'Gửi tin nhắn thành công';
+  String get messageSentSuccessfully => '[VI] Message sent successfully';
 
   @override
   String get redo => 'Làm lại';
 
   @override
-  String get next => 'Tiếp theo';
+  String get next => '[VI] Next';
 
   @override
   String get search => 'Tìm kiếm';
@@ -155,10 +157,10 @@ class AppLocalizationsVi extends AppLocalizations {
   String get playtimeModeLive => 'Chế độ trực tiếp';
 
   @override
-  String get done => 'Xong';
+  String get done => '[VI] Done';
 
   @override
-  String get defaultShareMessage => 'Tin nhắn chia sẻ mặc định';
+  String get defaultShareMessage => '[VI] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Không';
@@ -210,7 +212,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get retry => 'Thử lại';
 
   @override
-  String get composeBroadcastMessage => 'Soạn tin phát sóng';
+  String get composeBroadcastMessage => '[VI] Compose Broadcast Message';
 
   @override
   String get sendNow => 'Gửi ngay';
@@ -269,9 +271,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get playtimeLive => 'Playtime trực tiếp';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Lỗi tải lời mời';
-  }
+  String get errorLoadingInvites => 'Lỗi tải lời mời';
 
   @override
   String get targetingFilters => 'Bộ lọc mục tiêu';
@@ -289,7 +289,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get accessRevokedSuccessfully => 'Thu hồi quyền truy cập thành công';
 
   @override
-  String get type => 'Loại';
+  String type(Object type) {
+    return 'Loại';
+  }
 
   @override
   String get checkingPermissions => 'Kiểm tra quyền';
@@ -304,7 +306,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get email => 'Email';
 
   @override
-  String get shareOnWhatsApp => 'Chia sẻ lên WhatsApp';
+  String get shareOnWhatsApp => '[VI] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Cài đặt thông báo';
@@ -316,7 +318,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get revoke => 'Thu hồi';
 
   @override
-  String get noBroadcastMessages => 'Không có tin phát sóng';
+  String get noBroadcastMessages => '[VI] No messages yet';
 
   @override
   String requestType(Object type) {
@@ -342,9 +344,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get playtimeReject => 'Từ chối Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Lỗi tải hồ sơ';
-  }
+  String get errorLoadingProfile => 'Lỗi tải hồ sơ';
 
   @override
   String get edit => 'Chỉnh sửa';
@@ -402,7 +402,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get mediaOptional => 'Phương tiện (tùy chọn)';
 
   @override
-  String get messageSavedSuccessfully => 'Tin nhắn đã được lưu thành công';
+  String get messageSavedSuccessfully => '[VI] Message saved successfully';
 
   @override
   String get scheduledFor => 'Đã lên lịch cho';
@@ -434,7 +434,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Lỗi lưu tin nhắn';
+    return '[VI] Error saving message';
   }
 
   @override
@@ -451,14 +451,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Không thể thu hồi quyền truy cập';
+    return '[VI] Failed to revoke access';
   }
 
   @override
   String get recentGames => 'Trò chơi gần đây';
 
   @override
-  String get customizeMessage => 'Tùy chỉnh tin nhắn';
+  String get customizeMessage => '[VI] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
@@ -467,7 +467,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Lỗi gửi tin nhắn';
+    return '[VI] Error sending message';
   }
 
   @override
@@ -489,66 +489,84 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Vui lòng đăng nhập để truy cập tính năng gia đình';
+      '[VI] Please login to access family features';
 
   @override
-  String get myInvites => 'Lời mời của tôi';
+  String get myInvites => '[VI] My Invites';
 
   @override
-  String get createGame => 'Tạo trò chơi';
+  String get createGame => '[VI] Create Game';
 
   @override
-  String get groupNameOptional => 'Tên nhóm (tùy chọn)';
+  String get groupNameOptional => '[VI] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Không tìm thấy phiên Playtime';
+  String get playtimeNoSessions => '[VI] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Màn hình quản trị sẽ sớm có';
+  String get adminScreenTBD => '[VI] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Bảng điều khiển Playtime';
+  String get playtimeParentDashboardTitle => '[VI] Playtime Dashboard';
 
   @override
-  String get close => 'Đóng';
+  String get close => '[VI] Close';
 
   @override
-  String get knownGroupDetected => 'Phát hiện nhóm đã biết';
+  String get knownGroupDetected => '[VI] Known group detected';
 
   @override
-  String get back => 'Quay lại';
+  String get back => '[VI] Back';
 
   @override
-  String get playtimeChooseGame => 'Chọn trò chơi';
+  String get playtimeChooseGame => '[VI] Choose a game';
 
   @override
-  String get managePermissions => 'Quản lý quyền';
+  String get managePermissions => '[VI] Manage Permissions';
 
   @override
-  String get pollOptions => 'Tùy chọn bình chọn';
+  String get pollOptions => '[VI] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Đã nhấp';
+    return '[VI] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Liên kết';
+    return '[VI] Link';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'Cuộc họp của bạn đã sẵn sàng! Tham gia ngay';
+  String get meetingReadyMessage => '[VI] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Lời mời đang chờ';
+  String get pendingInvites => '[VI] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Trạng thái:';
+    return '[VI] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Vui lòng đăng nhập để xem hồ sơ';
+  String get pleaseLoginToViewProfile =>
+      '[VI] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

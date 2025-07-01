@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../providers/family_provider.dart';
-import '../../../providers/auth_provider.dart';
-import '../../../providers/user_profile_provider.dart';
-import '../../../models/family_link.dart';
-import '../../../models/privacy_request.dart';
-import '../../../l10n/app_localizations.dart';
+import 'package:appoint/providers/family_provider.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/providers/user_profile_provider.dart';
+import 'package:appoint/models/family_link.dart';
+import 'package:appoint/models/privacy_request.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 
 class FamilyDashboardScreen extends ConsumerWidget {
-  const FamilyDashboardScreen({Key? key}) : super(key: key);
+  const FamilyDashboardScreen({final Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final authState = ref.watch(authStateProvider);
     final l10n = AppLocalizations.of(context)!;
 
     return authState.when(
-      data: (user) {
+      data: (final user) {
         if (user == null) {
           return Scaffold(
             body: Center(child: Text(l10n.pleaseLoginForFamilyFeatures)),
@@ -58,17 +58,17 @@ class FamilyDashboardScreen extends ConsumerWidget {
       loading: () => const Scaffold(
         body: Center(child: CircularProgressIndicator()),
       ),
-      error: (error, stack) => Scaffold(
+      error: (final error, final stack) => Scaffold(
         body: Center(child: Text('Error: $error')),
       ),
     );
   }
 
   Widget _buildFamilyLinksSection(
-    BuildContext context,
-    WidgetRef ref,
-    FamilyLinksState familyLinksState,
-    String parentId,
+    final BuildContext context,
+    final WidgetRef ref,
+    final FamilyLinksState familyLinksState,
+    final String parentId,
   ) {
     final l10n = AppLocalizations.of(context)!;
 
@@ -112,7 +112,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
                 _buildSectionHeader(l10n.pendingInvites),
                 const SizedBox(height: 8),
                 ...familyLinksState.pendingInvites
-                    .map((link) => _buildPendingInviteCard(context, ref, link)),
+                    .map((final link) => _buildPendingInviteCard(context, ref, link)),
                 const SizedBox(height: 16),
               ],
               if (familyLinksState.connectedChildren.isNotEmpty) ...[
@@ -120,7 +120,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
                 _buildSectionHeader(l10n.connectedChildren),
                 const SizedBox(height: 8),
                 ...familyLinksState.connectedChildren.map(
-                    (link) => _buildConnectedChildCard(context, ref, link)),
+                    (final link) => _buildConnectedChildCard(context, ref, link)),
               ],
               if (familyLinksState.pendingInvites.isEmpty &&
                   familyLinksState.connectedChildren.isEmpty)
@@ -142,7 +142,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildSectionHeader(String title) {
+  Widget _buildSectionHeader(final String title) {
     return Text(
       title,
       style: const TextStyle(
@@ -154,9 +154,9 @@ class FamilyDashboardScreen extends ConsumerWidget {
   }
 
   Widget _buildPendingInviteCard(
-    BuildContext context,
-    WidgetRef ref,
-    FamilyLink link,
+    final BuildContext context,
+    final WidgetRef ref,
+    final FamilyLink link,
   ) {
     final l10n = AppLocalizations.of(context)!;
 
@@ -190,9 +190,9 @@ class FamilyDashboardScreen extends ConsumerWidget {
   }
 
   Widget _buildConnectedChildCard(
-    BuildContext context,
-    WidgetRef ref,
-    FamilyLink link,
+    final BuildContext context,
+    final WidgetRef ref,
+    final FamilyLink link,
   ) {
     final l10n = AppLocalizations.of(context)!;
 
@@ -208,9 +208,9 @@ class FamilyDashboardScreen extends ConsumerWidget {
         subtitle: Text(
             'Connected: ${_formatDate(link.consentedAt.isNotEmpty ? link.consentedAt.last : link.invitedAt)}'),
         trailing: PopupMenuButton<String>(
-          onSelected: (value) =>
+          onSelected: (final value) =>
               _handleConnectedChildAction(context, ref, link, value),
-          itemBuilder: (context) => [
+          itemBuilder: (final context) => [
             PopupMenuItem(
               value: 'permissions',
               // ignore: argument_type_not_assignable
@@ -228,11 +228,11 @@ class FamilyDashboardScreen extends ConsumerWidget {
   }
 
   Widget _buildChildNameWidget(
-      BuildContext context, WidgetRef ref, FamilyLink link) {
+      final BuildContext context, final WidgetRef ref, final FamilyLink link) {
     final childProfileAsync = ref.watch(userProfileProvider(link.childId));
 
     return childProfileAsync.when(
-      data: (profile) {
+      data: (final profile) {
         if (profile != null && profile.name.isNotEmpty) {
           return Text(profile.name);
         }
@@ -245,7 +245,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
         return Text(link.childId);
       },
       loading: () => Text(AppLocalizations.of(context)!.loading),
-      error: (_, __) {
+      error: (final _, final __) {
         // Fallback to email or ID if profile loading fails
         if (link.childId.contains('@')) {
           return Text(link.childId.split('@')[0]);
@@ -257,14 +257,14 @@ class FamilyDashboardScreen extends ConsumerWidget {
     );
   }
 
-  String _formatDate(DateTime date) {
+  String _formatDate(final DateTime date) {
     return '${date.day}/${date.month}/${date.year}';
   }
 
   void _handleResendOtp(
-    BuildContext context,
-    WidgetRef ref,
-    FamilyLink link,
+    final BuildContext context,
+    final WidgetRef ref,
+    final FamilyLink link,
   ) async {
     final l10n = AppLocalizations.of(context)!;
 
@@ -287,15 +287,15 @@ class FamilyDashboardScreen extends ConsumerWidget {
   }
 
   void _showCancelConfirmation(
-    BuildContext context,
-    WidgetRef ref,
-    FamilyLink link,
+    final BuildContext context,
+    final WidgetRef ref,
+    final FamilyLink link,
   ) {
     final l10n = AppLocalizations.of(context)!;
 
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (final context) => AlertDialog(
         title: Text(l10n.cancelInvite),
         content: Text(l10n.cancelInviteConfirmation),
         actions: [
@@ -331,10 +331,10 @@ class FamilyDashboardScreen extends ConsumerWidget {
   }
 
   void _handleConnectedChildAction(
-    BuildContext context,
-    WidgetRef ref,
-    FamilyLink link,
-    String action,
+    final BuildContext context,
+    final WidgetRef ref,
+    final FamilyLink link,
+    final String action,
   ) {
     switch (action) {
       case 'permissions':
@@ -350,9 +350,9 @@ class FamilyDashboardScreen extends ConsumerWidget {
   }
 
   Widget _buildPrivacyRequestsSection(
-    BuildContext context,
-    WidgetRef ref,
-    AsyncValue<List<PrivacyRequest>> privacyRequestsAsync,
+    final BuildContext context,
+    final WidgetRef ref,
+    final AsyncValue<List<PrivacyRequest>> privacyRequestsAsync,
   ) {
     final l10n = AppLocalizations.of(context)!;
 
@@ -362,16 +362,16 @@ class FamilyDashboardScreen extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Privacy Requests',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 16),
             privacyRequestsAsync.when(
-              data: (requests) => requests.isEmpty
+              data: (final requests) => requests.isEmpty
                   ? const Center(
                       child: Padding(
                         padding: EdgeInsets.all(32),
@@ -384,12 +384,12 @@ class FamilyDashboardScreen extends ConsumerWidget {
                     )
                   : Column(
                       children: requests
-                          .map((request) =>
+                          .map((final request) =>
                               _buildPrivacyRequestCard(context, ref, request))
                           .toList(),
                     ),
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (error, stack) => Center(
+              error: (final error, final stack) => Center(
                 child: Text(l10n.errorLoadingPrivacyRequests(error)),
               ),
             ),
@@ -400,7 +400,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
   }
 
   Widget _buildPrivacyRequestCard(
-      BuildContext context, WidgetRef ref, PrivacyRequest request) {
+      final BuildContext context, final WidgetRef ref, final PrivacyRequest request) {
     final l10n = AppLocalizations.of(context)!;
 
     return Card(
@@ -430,8 +430,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
     );
   }
 
-  void _handlePrivacyRequestAction(BuildContext context, WidgetRef ref,
-      PrivacyRequest request, String action) async {
+  void _handlePrivacyRequestAction(final BuildContext context, final WidgetRef ref,
+      final PrivacyRequest request, final String action) async {
     final l10n = AppLocalizations.of(context)!;
 
     try {
@@ -464,12 +464,12 @@ class FamilyDashboardScreen extends ConsumerWidget {
   }
 
   void _showRevokeConfirmation(
-      BuildContext context, WidgetRef ref, FamilyLink link) {
+      final BuildContext context, final WidgetRef ref, final FamilyLink link) {
     final l10n = AppLocalizations.of(context)!;
 
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (final context) => AlertDialog(
         title: Text(l10n.revokeAccess),
         content: Text(l10n.revokeAccessConfirmation),
         actions: [

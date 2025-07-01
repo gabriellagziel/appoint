@@ -1,664 +1,664 @@
 {
-  "refresh": "[NO] Refresh",
-  "@refresh": {
-    "description": "Refresh button text"
-  },
-  "home": "Hjem",
-  "@home": {
-    "description": "Home navigation label"
-  },
-  "noSessionsYet": "[NO] No sessions yet",
-  "@noSessionsYet": {
-    "description": "No sessions yet message"
-  },
-  "ok": "OK",
-  "@ok": {
-    "description": "OK button text"
-  },
-  "playtimeLandingChooseMode": "Velg modus",
-  "@playtimeLandingChooseMode": {
-    "description": "Playtime landing choose mode message"
-  },
-  "signUp": "Registrer deg",
-  "@signUp": {
-    "description": "Sign up button text"
-  },
-  "scheduleMessage": "[NO] Schedule Message",
-  "@scheduleMessage": {
-    "description": "Schedule message button"
-  },
-  "decline": "Avslå",
-  "@decline": {
-    "description": "Decline button"
-  },
-  "adminBroadcast": "[NO] Admin Broadcast",
-  "@adminBroadcast": {
-    "description": "Admin broadcast title"
-  },
-  "login": "[NO] Login",
-  "@login": {
-    "description": "Login button text"
-  },
-  "playtimeChooseFriends": "Velg venner",
-  "@playtimeChooseFriends": {
-    "description": "Choose friends label"
-  },
-  "noInvites": "[NO] No invites",
-  "@noInvites": {
-    "description": "No invites message"
-  },
-  "playtimeChooseTime": "Velg tid",
-  "@playtimeChooseTime": {
-    "description": "Choose time label"
-  },
-  "success": "Suksess",
-  "@success": {
-    "description": "Success message"
-  },
-  "undo": "Angre",
-  "@undo": {
-    "description": "Undo button text"
-  },
-  "opened": "Åpnet",
-  "@opened": {
-    "description": "Opened status"
-  },
-  "createVirtualSession": "Opprett virtuell økt",
-  "@createVirtualSession": {
-    "description": "Create virtual session button"
-  },
-  "messageSentSuccessfully": "[NO] Message sent successfully",
-  "@messageSentSuccessfully": {
-    "description": "Message sent successfully message"
-  },
-  "redo": "Gjør på nytt",
-  "@redo": {
-    "description": "Redo button text"
-  },
-  "next": "Neste",
-  "@next": {
-    "description": "Next button text"
-  },
-  "search": "Søk",
-  "@search": {
-    "description": "Search placeholder text"
-  },
-  "cancelInviteConfirmation": "[NO] Are you sure you want to cancel this invite?",
-  "@cancelInviteConfirmation": {
-    "description": "Cancel invite confirmation message"
-  },
-  "created": "Opprettet",
-  "@created": {
-    "description": "Created status"
-  },
-  "revokeAccess": "Tilgang tilbakekalt",
-  "@revokeAccess": {
-    "description": "Revoke access button"
-  },
-  "saveGroupForRecognition": "[NO] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Save group for recognition label"
-  },
-  "playtimeLiveScheduled": "Direktesendt økt planlagt",
-  "@playtimeLiveScheduled": {
-    "description": "Live playtime scheduled message"
-  },
-  "revokeAccessConfirmation": "[NO] Are you sure you want to revoke access?",
-  "@revokeAccessConfirmation": {
-    "description": "Revoke access confirmation message"
-  },
-  "download": "Last ned",
-  "@download": {
-    "description": "Download button text"
-  },
-  "password": "[NO] Password",
-  "@password": {
-    "description": "Password field label"
-  },
-  "errorLoadingFamilyLinks": "[NO] Error loading family links",
-  "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message"
-  },
-  "cancel": "Avbryt",
-  "@cancel": {
-    "description": "Cancel button text"
-  },
-  "playtimeCreate": "Opprett Playtime",
-  "@playtimeCreate": {
-    "description": "Create button"
-  },
-  "failedToActionPrivacyRequest": "[NO] Failed to action privacy request",
-  "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message"
-  },
-  "appTitle": "App-tittel",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
-  "accept": "Godta",
-  "@accept": {
-    "description": "Accept button"
-  },
-  "playtimeModeVirtual": "Virtuell modus",
-  "@playtimeModeVirtual": {
-    "description": "Virtual play mode label"
-  },
-  "playtimeDescription": "Playtime beskrivelse",
-  "@playtimeDescription": {
-    "description": "Playtime description"
-  },
-  "delete": "Slett",
-  "@delete": {
-    "description": "Delete button text"
-  },
-  "playtimeVirtualStarted": "Virtuell økt startet",
-  "@playtimeVirtualStarted": {
-    "description": "Virtual playtime started message"
-  },
-  "createYourFirstGame": "Opprett ditt første spill",
-  "@createYourFirstGame": {
-    "description": "Create your first game message"
-  },
-  "participants": "Deltakere",
-  "@participants": {
-    "description": "Participants label"
-  },
-  "recipients": "Mottakere",
-  "@recipients": {
-    "description": "Recipients label"
-  },
-  "noResults": "[NO] No results found",
-  "@noResults": {
-    "description": "No search results message"
-  },
-  "yes": "Ja",
-  "@yes": {
-    "description": "Yes button text"
-  },
-  "invite": "[NO] Invite",
-  "@invite": {
-    "description": "Invite button"
-  },
-  "playtimeModeLive": "Direktesendt modus",
-  "@playtimeModeLive": {
-    "description": "Live play mode label"
-  },
-  "done": "Ferdig",
-  "@done": {
-    "description": "Done button text"
-  },
-  "defaultShareMessage": "[NO] Let's meet via Appoint!",
-  "@defaultShareMessage": {
-    "description": "Default share message"
-  },
-  "no": "Nei",
-  "@no": {
-    "description": "No button text"
-  },
-  "playtimeHub": "Playtime-hub",
-  "@playtimeHub": {
-    "description": "Playtime hub title"
-  },
-  "error": "Feil",
-  "@error": {
-    "description": "Error message"
-  },
-  "createLiveSession": "Opprett direktesendt økt",
-  "@createLiveSession": {
-    "description": "Create live session button"
-  },
-  "enableNotifications": "Aktiver varsler",
-  "@enableNotifications": {
-    "description": "Enable notifications label"
-  },
-  "invited": "[NO] Invited",
-  "@invited": {
-    "description": "Invited status"
-  },
-  "content": "[NO] Content",
-  "@content": {
-    "description": "Content label"
-  },
-  "meetingSharedSuccessfully": "Møte delt vellykket",
-  "@meetingSharedSuccessfully": {
-    "description": "Meeting shared successfully message"
-  },
-  "welcomeToPlaytime": "Velkommen til Playtime",
-  "@welcomeToPlaytime": {
-    "description": "Welcome to playtime message"
-  },
-  "viewAll": "Se alle",
-  "@viewAll": {
-    "description": "View all button"
-  },
-  "playtimeVirtual": "Virtuell Playtime",
-  "@playtimeVirtual": {
-    "description": "Virtual play label"
-  },
-  "staffScreenTBD": "[NO] Staff screen coming soon",
-  "@staffScreenTBD": {
-    "description": "Staff screen TBD message"
-  },
-  "cut": "Klipp",
-  "@cut": {
-    "description": "Cut button text"
-  },
-  "inviteCancelledSuccessfully": "[NO] Invite cancelled successfully",
-  "@inviteCancelledSuccessfully": {
-    "description": "Invite cancelled successfully message"
-  },
-  "retry": "Prøv igjen",
-  "@retry": {
-    "description": "Retry button text"
-  },
-  "composeBroadcastMessage": "[NO] Compose Broadcast Message",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message title"
-  },
-  "sendNow": "Send nå",
-  "@sendNow": {
-    "description": "Send now button"
-  },
-  "noGamesYet": "[NO] No games yet",
-  "@noGamesYet": {
-    "description": "No games yet message"
-  },
-  "select": "Velg",
-  "@select": {
-    "description": "Select button text"
-  },
-  "about": "Om",
+  "@@locale": "no",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Velg",
-  "@choose": {
-    "description": "Choose button text"
+  "@accept": {
+    "description": "Accept button"
   },
-  "profile": "[NO] Profile",
-  "@profile": {
-    "description": "Profile navigation label"
-  },
-  "removeChild": "Fjern barn",
-  "@removeChild": {
-    "description": "Remove child button"
-  },
-  "status": "[NO] Status",
-  "@status": {
-    "description": "Status label"
-  },
-  "logout": "Logg ut",
-  "@logout": {
-    "description": "Logout button text"
-  },
-  "paste": "[NO] Paste",
-  "@paste": {
-    "description": "Paste button text"
-  },
-  "welcome": "Velkommen",
-  "@welcome": {
-    "description": "Welcome message"
-  },
-  "playtimeCreateSession": "Opprett økt",
-  "@playtimeCreateSession": {
-    "description": "Create playtime session button"
-  },
-  "familyMembers": "Familiemedlemmer",
-  "@familyMembers": {
-    "description": "Family members label"
-  },
-  "upload": "Last opp",
-  "@upload": {
-    "description": "Upload button text"
-  },
-  "upcomingSessions": "Kommende økter",
-  "@upcomingSessions": {
-    "description": "Upcoming sessions label"
-  },
-  "enterGroupName": "Angi gruppenavn",
-  "@enterGroupName": {
-    "description": "Enter group name placeholder"
-  },
-  "confirm": "Bekreft",
-  "@confirm": {
-    "description": "Confirm button text"
-  },
-  "playtimeLive": "Direktesendt Playtime",
-  "@playtimeLive": {
-    "description": "Live play label"
-  },
-  "errorLoadingInvites": "[NO] Error loading invites",
-  "@errorLoadingInvites": {
-    "description": "Error loading invites message"
-  },
-  "targetingFilters": "[NO] Targeting Filters",
-  "@targetingFilters": {
-    "description": "Targeting filters label"
-  },
-  "pickVideo": "Velg video",
-  "@pickVideo": {
-    "description": "Pick video button"
-  },
-  "playtimeGameDeleted": "Spill slettet",
-  "@playtimeGameDeleted": {
-    "description": "Game deleted message"
-  },
-  "scheduleForLater": "Planlegg senere",
-  "@scheduleForLater": {
-    "description": "Schedule for later button"
-  },
-  "accessRevokedSuccessfully": "Tilgang tilbakekalt vellykket",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "Type",
-  "@type": {
-    "description": "Type label"
-  },
-  "checkingPermissions": "[NO] Checking permissions...",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "copy": "Kopier",
-  "@copy": {
-    "description": "Copy button text"
-  },
-  "yesCancel": "Ja, avbryt",
-  "@yesCancel": {
-    "description": "Yes cancel button"
-  },
-  "email": "E-post",
-  "@email": {
-    "description": "Email field label"
-  },
-  "shareOnWhatsApp": "[NO] Share on WhatsApp",
-  "@shareOnWhatsApp": {
-    "description": "Share on WhatsApp button"
-  },
-  "notificationSettings": "[NO] Notification Settings",
-  "@notificationSettings": {
-    "description": "Notification settings title"
-  },
-  "myProfile": "[NO] My Profile",
-  "@myProfile": {
-    "description": "My profile title"
-  },
-  "revoke": "Tilbakekall",
-  "@revoke": {
-    "description": "Revoke button"
-  },
-  "noBroadcastMessages": "[NO] No messages yet",
-  "@noBroadcastMessages": {
-    "description": "No broadcast messages message"
-  },
-  "requestType": "[NO] Request Type",
-  "@requestType": {
-    "description": "Request type label"
-  },
-  "notifications": "Varsler",
-  "@notifications": {
-    "description": "Notifications title"
-  },
-  "details": "Detaljer",
-  "@details": {
-    "description": "Details label"
-  },
-  "cancelInvite": "[NO] Cancel Invite",
-  "@cancelInvite": {
-    "description": "Cancel invite button"
-  },
-  "createNew": "Opprett ny",
-  "@createNew": {
-    "description": "Create new button"
-  },
-  "settings": "[NO] Settings",
-  "@settings": {
-    "description": "Settings navigation label"
-  },
-  "playtimeReject": "Avslå Playtime",
-  "@playtimeReject": {
-    "description": "Playtime reject button"
-  },
-  "errorLoadingProfile": "[NO] Error loading profile",
-  "@errorLoadingProfile": {
-    "description": "Error loading profile message"
-  },
-  "edit": "Rediger",
-  "@edit": {
-    "description": "Edit button text"
-  },
-  "add": "Legg til",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "Spill godkjent",
-  "@playtimeGameApproved": {
-    "description": "Game approved message"
+  "@adminBroadcast": {
+    "description": "Admin broadcast title"
   },
-  "forgotPassword": "[NO] Forgot Password?",
-  "@forgotPassword": {
-    "description": "Forgot password link text"
-  },
-  "familyDashboard": "[NO] Family Dashboard",
-  "@familyDashboard": {
-    "description": "Family dashboard title"
-  },
-  "loading": "Laster",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "quickActions": "[NO] Quick Actions",
-  "@quickActions": {
-    "description": "Quick actions label"
-  },
-  "playtimeTitle": "Playtime-tittel",
-  "@playtimeTitle": {
-    "description": "Playtime title"
-  },
-  "otpResentSuccessfully": "OTP sendt på nytt vellykket",
-  "@otpResentSuccessfully": {
-    "description": "OTP resent successfully message"
-  },
-  "errorCheckingPermissions": "[NO] Error checking permissions",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message"
-  },
-  "clientScreenTBD": "Klientskjerm kommer snart",
-  "@clientScreenTBD": {
-    "description": "Client screen TBD message"
-  },
-  "fcmToken": "[NO] FCM Token",
-  "@fcmToken": {
-    "description": "FCM token label"
-  },
-  "pickImage": "Velg bilde",
-  "@pickImage": {
-    "description": "Pick image button"
-  },
-  "previous": "[NO] Previous",
-  "@previous": {
-    "description": "Previous button text"
-  },
-  "noProfileFound": "[NO] No profile found",
-  "@noProfileFound": {
-    "description": "No profile found message"
-  },
-  "noFamilyMembersYet": "[NO] No family members yet",
-  "@noFamilyMembersYet": {
-    "description": "No family members yet message"
-  },
-  "mediaOptional": "Media (valgfritt)",
-  "@mediaOptional": {
-    "description": "Media optional label"
-  },
-  "messageSavedSuccessfully": "[NO] Message saved successfully",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully message"
-  },
-  "scheduledFor": "[NO] Scheduled for",
-  "@scheduledFor": {
-    "description": "Scheduled for label"
-  },
-  "dashboard": "[NO] Dashboard",
-  "@dashboard": {
-    "description": "Dashboard title"
-  },
-  "noPermissionForBroadcast": "[NO] No permission for broadcast",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "playtimeAdminPanelTitle": "[NO] Playtime Games – Admin",
-  "@playtimeAdminPanelTitle": {
-    "description": "Playtime admin panel title"
-  },
-  "inviteDetail": "[NO] Invite Details",
-  "@inviteDetail": {
-    "description": "Invite detail title"
-  },
-  "scheduled": "Planlagt",
-  "@scheduled": {
-    "description": "Scheduled status"
-  },
-  "failedToResendOtp": "Kunne ikke sende OTP på nytt",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
-  },
-  "scheduling": "Planlegger",
-  "@scheduling": {
-    "description": "Scheduling label"
-  },
-  "errorSavingMessage": "[NO] Error saving message",
-  "@errorSavingMessage": {
-    "description": "Error saving message message"
-  },
-  "save": "Lagre",
-  "@save": {
-    "description": "Save button text"
-  },
-  "playtimeApprove": "Godkjenn Playtime",
-  "@playtimeApprove": {
-    "description": "Playtime approve button"
-  },
-  "createYourFirstSession": "[NO] Create your first session",
-  "@createYourFirstSession": {
-    "description": "Create your first session message"
-  },
-  "playtimeGameRejected": "Spill avvist",
-  "@playtimeGameRejected": {
-    "description": "Game rejected message"
-  },
-  "failedToRevokeAccess": "[NO] Failed to revoke access",
-  "@failedToRevokeAccess": {
-    "description": "Failed to revoke access message"
-  },
-  "recentGames": "Siste spill",
-  "@recentGames": {
-    "description": "Recent games label"
-  },
-  "customizeMessage": "[NO] Customize Message",
-  "@customizeMessage": {
-    "description": "Customize message button"
-  },
-  "failedToCancelInvite": "[NO] Failed to cancel invite",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
-  },
-  "errorSendingMessage": "[NO] Error sending message",
-  "@errorSendingMessage": {
-    "description": "Error sending message message"
-  },
-  "confirmPassword": "[NO] Confirm Password",
-  "@confirmPassword": {
-    "description": "Confirm password field label"
-  },
-  "errorLoadingPrivacyRequests": "[NO] Error loading privacy requests",
-  "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message"
-  },
-  "connectedChildren": "Tilknyttede barn",
-  "@connectedChildren": {
-    "description": "Connected children label"
-  },
-  "share": "Del",
-  "@share": {
-    "description": "Share button text"
-  },
-  "playtimeEnterGameName": "[NO] Enter game name",
-  "@playtimeEnterGameName": {
-    "description": "Enter game name label"
-  },
-  "pleaseLoginForFamilyFeatures": "[NO] Please login to access family features",
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Please login for family features message"
-  },
-  "myInvites": "[NO] My Invites",
-  "@myInvites": {
-    "description": "My invites title"
-  },
-  "createGame": "[NO] Create Game",
-  "@createGame": {
-    "description": "Create game button"
-  },
-  "groupNameOptional": "[NO] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Group name optional label"
-  },
-  "playtimeNoSessions": "[NO] No playtime sessions found.",
-  "@playtimeNoSessions": {
-    "description": "No playtime sessions message"
-  },
-  "adminScreenTBD": "[NO] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "[NO] Playtime Dashboard",
-  "@playtimeParentDashboardTitle": {
-    "description": "Playtime parent dashboard title"
+  "@appTitle": {
+    "description": "The title of the application"
   },
-  "close": "[NO] Close",
-  "@close": {
-    "description": "Close button text"
-  },
-  "knownGroupDetected": "[NO] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Known group detected message"
-  },
-  "back": "[NO] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "[NO] Choose a game",
-  "@playtimeChooseGame": {
-    "description": "Choose game label"
+  "@cancel": {
+    "description": "Cancel button text"
   },
-  "managePermissions": "[NO] Manage Permissions",
-  "@managePermissions": {
-    "description": "Manage permissions button"
+  "@cancelInvite": {
+    "description": "Cancel invite button"
   },
-  "pollOptions": "[NO] Poll Options",
-  "@pollOptions": {
-    "description": "Poll options label"
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
   },
-  "clicked": "[NO] Clicked",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "@choose": {
+    "description": "Choose button text"
+  },
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "[NO] Link",
+  "@clientScreenTBD": {
+    "description": "Client screen TBD message"
+  },
+  "@close": {
+    "description": "Close button text"
+  },
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message title"
+  },
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "@content": {
+    "description": "Content label"
+  },
+  "@copy": {
+    "description": "Copy button text"
+  },
+  "@createGame": {
+    "description": "Create game button"
+  },
+  "@createLiveSession": {
+    "description": "Create live session button"
+  },
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
+  },
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "@created": {
+    "description": "Created status"
+  },
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "@dashboard": {
+    "description": "Dashboard title"
+  },
+  "@decline": {
+    "description": "Decline button"
+  },
+  "@defaultShareMessage": {
+    "description": "Default share message"
+  },
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "@details": {
+    "description": "Details label"
+  },
+  "@done": {
+    "description": "Done button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "@email": {
+    "description": "Email field label"
+  },
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "@enterGroupName": {
+    "description": "Enter group name placeholder"
+  },
+  "@error": {
+    "description": "Error message"
+  },
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message"
+  },
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message"
+  },
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "@errorSavingMessage": {
+    "description": "Error saving message message"
+  },
+  "@errorSendingMessage": {
+    "description": "Error sending message message"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message"
+  },
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message"
+  },
+  "@familyDashboard": {
+    "description": "Family dashboard title"
+  },
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "@fcmToken": {
+    "description": "FCM token label"
+  },
+  "@forgotPassword": {
+    "description": "Forgot password link text"
+  },
+  "@groupNameOptional": {
+    "description": "Group name optional label"
+  },
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "@invite": {
+    "description": "Invite button"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "@inviteDetail": {
+    "description": "Invite detail title"
+  },
+  "@invited": {
+    "description": "Invited status"
+  },
+  "@knownGroupDetected": {
+    "description": "Known group detected message"
+  },
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "[NO] Your meeting is ready! Join now",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@login": {
+    "description": "Login button text"
+  },
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "@managePermissions": {
+    "description": "Manage permissions button"
+  },
+  "@mediaOptional": {
+    "description": "Media optional label"
+  },
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "[NO] Pending Invites",
+  "@meetingSharedSuccessfully": {
+    "description": "Meeting shared successfully message"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "@myInvites": {
+    "description": "My invites title"
+  },
+  "@myProfile": {
+    "description": "My profile title"
+  },
+  "@next": {
+    "description": "Next button text"
+  },
+  "@no": {
+    "description": "No button text"
+  },
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
+  },
+  "@notificationSettings": {
+    "description": "Notification settings title"
+  },
+  "@notifications": {
+    "description": "Notifications title"
+  },
+  "@ok": {
+    "description": "OK button text"
+  },
+  "@opened": {
+    "description": "Opened status"
+  },
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "@participants": {
+    "description": "Participants label"
+  },
+  "@password": {
+    "description": "Password field label"
+  },
+  "@paste": {
+    "description": "Paste button text"
+  },
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "[NO] Status:",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
+  },
+  "@playtimeChooseGame": {
+    "description": "Choose game label"
+  },
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "@playtimeCreate": {
+    "description": "Create button"
+  },
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "@playtimeGameApproved": {
+    "description": "Game approved message"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Game deleted message"
+  },
+  "@playtimeGameRejected": {
+    "description": "Game rejected message"
+  },
+  "@playtimeHub": {
+    "description": "Playtime hub title"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "@playtimeLive": {
+    "description": "Live play label"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
+  },
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
+  "@playtimeNoSessions": {
+    "description": "No playtime sessions message"
+  },
+  "@playtimeParentDashboardTitle": {
+    "description": "Playtime parent dashboard title"
+  },
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "@playtimeVirtual": {
+    "description": "Virtual play label"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "@recipients": {
+    "description": "Recipients label"
+  },
+  "@redo": {
+    "description": "Redo button text"
+  },
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  "@removeChild": {
+    "description": "Remove child button"
+  },
+  "@requestType": {
+    "description": "Request type label"
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@revoke": {
+    "description": "Revoke button"
+  },
+  "@revokeAccess": {
+    "description": "Revoke access button"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "@save": {
+    "description": "Save button text"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
+  },
+  "@scheduleForLater": {
+    "description": "Schedule for later button"
+  },
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "@scheduling": {
+    "description": "Scheduling label"
+  },
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "@select": {
+    "description": "Select button text"
+  },
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "@share": {
+    "description": "Share button text"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "@staffScreenTBD": {
+    "description": "Staff screen TBD message"
+  },
+  "@status": {
+    "description": "Status label"
+  },
   "@statusColon": {
     "description": "Status colon label"
   },
-  "@@locale": "no",
-  "pleaseLoginToViewProfile": "[NO] Please log in to view your profile."
+  "@success": {
+    "description": "Success message"
+  },
+  "@targetingFilters": {
+    "description": "Targeting filters label"
+  },
+  "@type": {
+    "description": "Type label"
+  },
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "@yes": {
+    "description": "Yes button text"
+  },
+  "@yesCancel": {
+    "description": "Yes cancel button"
+  },
+  "about": "Om",
+  "accept": "Godta",
+  "accessRevokedSuccessfully": "Tilgang tilbakekalt vellykket",
+  "add": "Legg til",
+  "adminBroadcast": "[NO] Admin Broadcast",
+  "adminScreenTBD": "[NO] Admin screen coming soon",
+  "appTitle": "App-tittel",
+  "back": "[NO] Back",
+  "cancel": "Avbryt",
+  "cancelInvite": "[NO] Cancel Invite",
+  "cancelInviteConfirmation": "[NO] Are you sure you want to cancel this invite?",
+  "checkingPermissions": "[NO] Checking permissions...",
+  "choose": "Velg",
+  "clicked": "[NO] Clicked",
+  "clientScreenTBD": "Klientskjerm kommer snart",
+  "close": "[NO] Close",
+  "composeBroadcastMessage": "[NO] Compose Broadcast Message",
+  "confirm": "Bekreft",
+  "confirmPassword": "[NO] Confirm Password",
+  "connectedChildren": "Tilknyttede barn",
+  "content": "[NO] Content",
+  "copy": "Kopier",
+  "createGame": "[NO] Create Game",
+  "createLiveSession": "Opprett direktesendt økt",
+  "createNew": "Opprett ny",
+  "createVirtualSession": "Opprett virtuell økt",
+  "createYourFirstGame": "Opprett ditt første spill",
+  "createYourFirstSession": "[NO] Create your first session",
+  "created": "Opprettet",
+  "customizeMessage": "[NO] Customize Message",
+  "cut": "Klipp",
+  "dashboard": "[NO] Dashboard",
+  "decline": "Avslå",
+  "defaultShareMessage": "[NO] Let's meet via Appoint!",
+  "delete": "Slett",
+  "details": "Detaljer",
+  "done": "Ferdig",
+  "download": "Last ned",
+  "edit": "Rediger",
+  "email": "E-post",
+  "enableNotifications": "Aktiver varsler",
+  "enterGroupName": "Angi gruppenavn",
+  "error": "Feil",
+  "errorCheckingPermissions": "[NO] Error checking permissions",
+  "errorLoadingFamilyLinks": "[NO] Error loading family links",
+  "errorLoadingInvites": "[NO] Error loading invites",
+  "errorLoadingPrivacyRequests": "[NO] Error loading privacy requests",
+  "errorLoadingProfile": "[NO] Error loading profile",
+  "errorSavingMessage": "[NO] Error saving message",
+  "errorSendingMessage": "[NO] Error sending message",
+  "failedToActionPrivacyRequest": "[NO] Failed to action privacy request",
+  "failedToCancelInvite": "[NO] Failed to cancel invite",
+  "failedToResendOtp": "Kunne ikke sende OTP på nytt",
+  "failedToRevokeAccess": "[NO] Failed to revoke access",
+  "familyDashboard": "[NO] Family Dashboard",
+  "familyMembers": "Familiemedlemmer",
+  "fcmToken": "[NO] FCM Token",
+  "forgotPassword": "[NO] Forgot Password?",
+  "groupNameOptional": "[NO] Group Name (Optional)",
+  "home": "Hjem",
+  "invite": "[NO] Invite",
+  "inviteCancelledSuccessfully": "[NO] Invite cancelled successfully",
+  "inviteDetail": "[NO] Invite Details",
+  "invited": "[NO] Invited",
+  "knownGroupDetected": "[NO] Known group detected",
+  "link": "[NO] Link",
+  "loading": "Laster",
+  "login": "[NO] Login",
+  "logout": "Logg ut",
+  "managePermissions": "[NO] Manage Permissions",
+  "mediaOptional": "Media (valgfritt)",
+  "meetingReadyMessage": "[NO] Your meeting is ready! Join now",
+  "meetingSharedSuccessfully": "Møte delt vellykket",
+  "messageSavedSuccessfully": "[NO] Message saved successfully",
+  "messageSentSuccessfully": "[NO] Message sent successfully",
+  "myInvites": "[NO] My Invites",
+  "myProfile": "[NO] My Profile",
+  "next": "Neste",
+  "no": "Nei",
+  "noBroadcastMessages": "[NO] No messages yet",
+  "noFamilyMembersYet": "[NO] No family members yet",
+  "noGamesYet": "[NO] No games yet",
+  "noInvites": "[NO] No invites",
+  "noPermissionForBroadcast": "[NO] No permission for broadcast",
+  "noProfileFound": "[NO] No profile found",
+  "noResults": "[NO] No results found",
+  "noSessionsYet": "[NO] No sessions yet",
+  "notificationSettings": "[NO] Notification Settings",
+  "notifications": "Varsler",
+  "ok": "OK",
+  "opened": "Åpnet",
+  "otpResentSuccessfully": "OTP sendt på nytt vellykket",
+  "participants": "Deltakere",
+  "password": "[NO] Password",
+  "paste": "[NO] Paste",
+  "pendingInvites": "[NO] Pending Invites",
+  "pickImage": "Velg bilde",
+  "pickVideo": "Velg video",
+  "playtimeAdminPanelTitle": "[NO] Playtime Games – Admin",
+  "playtimeApprove": "Godkjenn Playtime",
+  "playtimeChooseFriends": "Velg venner",
+  "playtimeChooseGame": "[NO] Choose a game",
+  "playtimeChooseTime": "Velg tid",
+  "playtimeCreate": "Opprett Playtime",
+  "playtimeCreateSession": "Opprett økt",
+  "playtimeDescription": "Playtime beskrivelse",
+  "playtimeEnterGameName": "[NO] Enter game name",
+  "playtimeGameApproved": "Spill godkjent",
+  "playtimeGameDeleted": "Spill slettet",
+  "playtimeGameRejected": "Spill avvist",
+  "playtimeHub": "Playtime-hub",
+  "playtimeLandingChooseMode": "Velg modus",
+  "playtimeLive": "Direktesendt Playtime",
+  "playtimeLiveScheduled": "Direktesendt økt planlagt",
+  "playtimeModeLive": "Direktesendt modus",
+  "playtimeModeVirtual": "Virtuell modus",
+  "playtimeNoSessions": "[NO] No playtime sessions found.",
+  "playtimeParentDashboardTitle": "[NO] Playtime Dashboard",
+  "playtimeReject": "Avslå Playtime",
+  "playtimeTitle": "Playtime-tittel",
+  "playtimeVirtual": "Virtuell Playtime",
+  "playtimeVirtualStarted": "Virtuell økt startet",
+  "pleaseLoginForFamilyFeatures": "[NO] Please login to access family features",
+  "pleaseLoginToViewProfile": "[NO] Please log in to view your profile.",
+  "pollOptions": "[NO] Poll Options",
+  "previous": "[NO] Previous",
+  "profile": "[NO] Profile",
+  "quickActions": "[NO] Quick Actions",
+  "recentGames": "Siste spill",
+  "recipients": "Mottakere",
+  "redo": "Gjør på nytt",
+  "refresh": "[NO] Refresh",
+  "removeChild": "Fjern barn",
+  "requestType": "[NO] Request Type",
+  "retry": "Prøv igjen",
+  "revoke": "Tilbakekall",
+  "revokeAccess": "Tilgang tilbakekalt",
+  "revokeAccessConfirmation": "[NO] Are you sure you want to revoke access?",
+  "save": "Lagre",
+  "saveGroupForRecognition": "[NO] Save Group for Recognition",
+  "scheduleForLater": "Planlegg senere",
+  "scheduleMessage": "[NO] Schedule Message",
+  "scheduled": "Planlagt",
+  "scheduledFor": "[NO] Scheduled for",
+  "scheduling": "Planlegger",
+  "search": "Søk",
+  "select": "Velg",
+  "sendNow": "Send nå",
+  "settings": "[NO] Settings",
+  "share": "Del",
+  "shareOnWhatsApp": "[NO] Share on WhatsApp",
+  "signUp": "Registrer deg",
+  "staffScreenTBD": "[NO] Staff screen coming soon",
+  "status": "[NO] Status",
+  "statusColon": "[NO] Status:",
+  "success": "Suksess",
+  "targetingFilters": "[NO] Targeting Filters",
+  "type": "Type",
+  "undo": "Angre",
+  "upcomingSessions": "Kommende økter",
+  "upload": "Last opp",
+  "viewAll": "Se alle",
+  "welcome": "Velkommen",
+  "welcomeToPlaytime": "Velkommen til Playtime",
+  "yes": "Ja",
+  "yesCancel": "Ja, avbryt"
 }

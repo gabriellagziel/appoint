@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../providers/ambassador_quota_provider.dart';
+import 'package:appoint/providers/ambassador_quota_provider.dart';
 
 class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
-  const AmbassadorQuotaDashboardScreen({Key? key}) : super(key: key);
+  const AmbassadorQuotaDashboardScreen({final Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final globalStatsAsync = ref.watch(globalQuotaStatisticsProvider);
 
     return Scaffold(
@@ -15,16 +15,16 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: globalStatsAsync.when(
-        data: (globalStats) => _buildDashboard(context, globalStats),
+        data: (final globalStats) => _buildDashboard(context, globalStats),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, stack) => Center(
+        error: (final error, final stack) => Center(
           child: Text('Error: $error'),
         ),
       ),
     );
   }
 
-  Widget _buildDashboard(BuildContext context, Map<String, dynamic> globalStats) {
+  Widget _buildDashboard(final BuildContext context, final Map<String, dynamic> globalStats) {
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16.0),
       child: Column(
@@ -41,7 +41,7 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildStatsGrid(Map<String, dynamic> globalStats) {
+  Widget _buildStatsGrid(final Map<String, dynamic> globalStats) {
     return GridView.count(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
@@ -79,7 +79,7 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
   }
 
   Widget _buildStatCard(
-      String title, String value, IconData icon, Color color) {
+      final String title, final String value, final IconData icon, final Color color) {
     return Card(
       elevation: 4,
       child: Padding(

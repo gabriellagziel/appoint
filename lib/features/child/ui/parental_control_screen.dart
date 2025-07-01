@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../providers/child_providers.dart';
+import 'package:appoint/features/child/providers/child_providers.dart';
 
 /// Screen that allows parents to manage basic controls for their child.
 class ParentalControlScreen extends ConsumerWidget {
   const ParentalControlScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final settings = ref.watch(childSettingsProvider);
     final notifier = ref.read(childSettingsProvider.notifier);
 

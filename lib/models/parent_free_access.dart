@@ -12,19 +12,19 @@ enum FreeAccessStatus {
 @freezed
 class ParentFreeAccess with _$ParentFreeAccess {
   const factory ParentFreeAccess({
-    required String id,
-    required String parentPhoneNumber,
-    required FreeAccessStatus status,
-    required DateTime startDate,
-    required DateTime endDate,
-    required String grantedByAdminId,
-    required String grantedByAdminName,
-    required DateTime grantedAt,
-    String? notes,
-    DateTime? lastAccessedAt,
-    int? totalAccessCount,
+    required final String id,
+    required final String parentPhoneNumber,
+    required final FreeAccessStatus status,
+    required final DateTime startDate,
+    required final DateTime endDate,
+    required final String grantedByAdminId,
+    required final String grantedByAdminName,
+    required final DateTime grantedAt,
+    final String? notes,
+    final DateTime? lastAccessedAt,
+    final int? totalAccessCount,
   }) = _ParentFreeAccess;
 
-  factory ParentFreeAccess.fromJson(Map<String, dynamic> json) =>
+  factory ParentFreeAccess.fromJson(final Map<String, dynamic> json) =>
       _$ParentFreeAccessFromJson(json);
 }
