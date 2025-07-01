@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../theme/app_colors.dart';
-import '../theme/typography.dart';
+import 'package:appoint/theme/app_colors.dart';
+import 'package:appoint/theme/typography.dart';
 
 class AppTheme {
   // Color constants centralized in [AppColors]
@@ -16,7 +16,7 @@ class AppTheme {
     colorScheme: const ColorScheme.light(
       primary: AppColors.primary,
       secondary: AppColors.secondary,
-      background: AppColors.background,
+      surface: AppColors.background,
       error: AppColors.error,
     ),
     textTheme: AppTypography.textTheme,
@@ -27,7 +27,7 @@ class AppTheme {
     colorScheme: const ColorScheme.dark(
       primary: AppColors.primary,
       secondary: AppColors.secondary,
-      background: AppColors.background,
+      surface: AppColors.background,
       error: AppColors.error,
     ),
     textTheme: AppTypography.textTheme,

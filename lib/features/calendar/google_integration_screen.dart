@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:googleapis/calendar/v3.dart';
 
-import '../../providers/google_calendar_provider.dart';
+import 'package:appoint/providers/google_calendar_provider.dart';
 
 class GoogleIntegrationScreen extends ConsumerStatefulWidget {
-  const GoogleIntegrationScreen({Key? key}) : super(key: key);
+  const GoogleIntegrationScreen({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<GoogleIntegrationScreen> createState() =>
@@ -23,7 +23,7 @@ class _GoogleIntegrationScreenState
     setState(() => _calendars = cals);
   }
 
-  Future<void> _addEvent(String calendarId) async {
+  Future<void> _addEvent(final String calendarId) async {
     final service = ref.read(googleCalendarServiceProvider);
     await service.createEvent(
       calendarId,
@@ -39,7 +39,7 @@ class _GoogleIntegrationScreenState
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Google Calendar')),
       body: Padding(
@@ -55,7 +55,7 @@ class _GoogleIntegrationScreenState
             Expanded(
               child: ListView.builder(
                 itemCount: _calendars.length,
-                itemBuilder: (context, index) {
+                itemBuilder: (final context, final index) {
                   final cal = _calendars[index];
                   return ListTile(
                     title: Text(cal.summary ?? ''),

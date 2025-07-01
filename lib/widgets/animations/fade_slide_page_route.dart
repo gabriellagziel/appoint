@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 /// A [PageRoute] that fades and slides the new page in from a direction.
 class FadeSlidePageRoute<T> extends PageRouteBuilder<T> {
   FadeSlidePageRoute({
-    required Widget page,
+    required final Widget page,
     this.direction = AxisDirection.right,
     super.settings,
-    Duration duration = const Duration(milliseconds: 300),
+    final Duration duration = const Duration(milliseconds: 300),
   }) : super(
-          pageBuilder: (_, __, ___) => page,
+          pageBuilder: (final _, final __, final ___) => page,
           transitionDuration: duration,
-          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+          transitionsBuilder: (final context, final animation, final secondaryAnimation, final child) {
             final offsetAnimation = Tween<Offset>(
               begin: _offsetForDirection(direction),
               end: Offset.zero,
@@ -29,7 +29,7 @@ class FadeSlidePageRoute<T> extends PageRouteBuilder<T> {
 
   final AxisDirection direction;
 
-  static Offset _offsetForDirection(AxisDirection direction) {
+  static Offset _offsetForDirection(final AxisDirection direction) {
     switch (direction) {
       case AxisDirection.up:
         return const Offset(0, 0.1);

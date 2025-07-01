@@ -1,15 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import '../models/ambassador_stats.dart';
-import '../models/business_analytics.dart';
+import 'package:appoint/models/ambassador_stats.dart';
+import 'package:appoint/models/business_analytics.dart';
 
 class AmbassadorService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<List<AmbassadorStats>> fetchAmbassadorStats({
-    String? country,
-    String? language,
-    DateTimeRange? dateRange,
+    final String? country,
+    final String? language,
+    final DateTimeRange? dateRange,
   }) async {
     try {
       Query query = _firestore.collection('ambassador_stats');
@@ -30,78 +30,16 @@ class AmbassadorService {
 
       final snapshot = await query.get();
       return snapshot.docs
-          .map((doc) =>
+          .map((final doc) =>
               AmbassadorStats.fromJson(doc.data() as Map<String, dynamic>))
           .toList();
     } catch (e) {
-      // Return mock data for development
-      return _getMockAmbassadorStats();
+      // TODO: Implement proper error handling and fallback data
+      return [];
     }
   }
 
-  List<AmbassadorStats> _getMockAmbassadorStats() {
-    final now = DateTime.now();
-    return [
-      AmbassadorStats(
-        country: 'United States',
-        language: 'English',
-        ambassadors: 45,
-        referrals: 128,
-        surveyScore: 4.2,
-        date: now.subtract(const Duration(days: 30)),
-      ),
-      AmbassadorStats(
-        country: 'Spain',
-        language: 'Spanish',
-        ambassadors: 32,
-        referrals: 89,
-        surveyScore: 4.5,
-        date: now.subtract(const Duration(days: 25)),
-      ),
-      AmbassadorStats(
-        country: 'Germany',
-        language: 'German',
-        ambassadors: 28,
-        referrals: 76,
-        surveyScore: 4.1,
-        date: now.subtract(const Duration(days: 20)),
-      ),
-      AmbassadorStats(
-        country: 'France',
-        language: 'French',
-        ambassadors: 35,
-        referrals: 94,
-        surveyScore: 4.3,
-        date: now.subtract(const Duration(days: 15)),
-      ),
-      AmbassadorStats(
-        country: 'Italy',
-        language: 'Italian',
-        ambassadors: 22,
-        referrals: 67,
-        surveyScore: 4.0,
-        date: now.subtract(const Duration(days: 10)),
-      ),
-      AmbassadorStats(
-        country: 'United Kingdom',
-        language: 'English',
-        ambassadors: 38,
-        referrals: 112,
-        surveyScore: 4.4,
-        date: now.subtract(const Duration(days: 5)),
-      ),
-      AmbassadorStats(
-        country: 'Canada',
-        language: 'English',
-        ambassadors: 25,
-        referrals: 73,
-        surveyScore: 4.1,
-        date: now.subtract(const Duration(days: 2)),
-      ),
-    ];
-  }
-
-  List<ChartDataPoint> generateChartData(List<AmbassadorStats> stats) {
+  List<ChartDataPoint> generateChartData(final List<AmbassadorStats> stats) {
     final chartData = <ChartDataPoint>[];
 
     // Group by country for chart
@@ -113,11 +51,11 @@ class AmbassadorService {
     for (final entry in countryGroups.entries) {
       final countryStats = entry.value;
       final totalAmbassadors =
-          countryStats.fold<int>(0, (sum, stat) => sum + stat.ambassadors);
+          countryStats.fold<int>(0, (final sum, final stat) => sum + stat.ambassadors);
       final totalReferrals =
-          countryStats.fold<int>(0, (sum, stat) => sum + stat.referrals);
+          countryStats.fold<int>(0, (final sum, final stat) => sum + stat.referrals);
       final avgSurveyScore =
-          countryStats.fold<double>(0, (sum, stat) => sum + stat.surveyScore) /
+          countryStats.fold<double>(0, (final sum, final stat) => sum + stat.surveyScore) /
               countryStats.length;
 
       chartData.addAll([
@@ -143,7 +81,7 @@ class AmbassadorService {
   }
 
   Future<List<TimeSeriesPoint>> fetchAmbassadorsOverTime({
-    DateTimeRange? range,
+    final DateTimeRange? range,
   }) async {
     try {
       Query query = _firestore.collection('ambassador_stats').orderBy('date');
@@ -161,18 +99,18 @@ class AmbassadorService {
         final date =
             DateTime(ts.toDate().year, ts.toDate().month, ts.toDate().day);
         final ambassadors = (doc['ambassadors'] as int?) ?? 0;
-        counts.update(date, (v) => v + ambassadors,
+        counts.update(date, (final v) => v + ambassadors,
             ifAbsent: () => ambassadors);
       }
 
       final list = counts.entries
-          .map((e) => TimeSeriesPoint(date: e.key, count: e.value))
+          .map((final e) => TimeSeriesPoint(date: e.key, count: e.value))
           .toList();
-      list.sort((a, b) => a.date.compareTo(b.date));
+      list.sort((final a, final b) => a.date.compareTo(b.date));
       return list;
     } catch (e) {
       final now = DateTime.now();
-      return List.generate(7, (i) {
+      return List.generate(7, (final i) {
         return TimeSeriesPoint(
             date: now.subtract(Duration(days: 6 - i)), count: (i + 1) * 4);
       });

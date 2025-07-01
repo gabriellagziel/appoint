@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/family_link.dart';
-import '../models/permission.dart';
-import '../models/privacy_request.dart';
+import 'package:appoint/models/family_link.dart';
+import 'package:appoint/models/permission.dart';
+import 'package:appoint/models/privacy_request.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class FamilyService {
@@ -12,11 +12,11 @@ class FamilyService {
   // ignore: unused_field
   final FirebaseAuth _auth;
 
-  FamilyService({FirebaseFirestore? firestore, FirebaseAuth? auth})
+  FamilyService({final FirebaseFirestore? firestore, final FirebaseAuth? auth})
       : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
 
-  Future<FamilyLink> inviteChild(String parentId, String childEmail) async {
+  Future<FamilyLink> inviteChild(final String parentId, final String childEmail) async {
     final resp = await http.post(
       Uri.parse('$_base/invite'),
       body: jsonEncode({'parentId': parentId, 'childEmail': childEmail}),
@@ -33,7 +33,7 @@ class FamilyService {
     return link;
   }
 
-  Future<List<FamilyLink>> fetchFamilyLinks(String parentId) async {
+  Future<List<FamilyLink>> fetchFamilyLinks(final String parentId) async {
     final resp = await http.get(
       Uri.parse('$_base/links?parentId=$parentId'),
       headers: {'Content-Type': 'application/json'},
@@ -41,13 +41,13 @@ class FamilyService {
 
     if (resp.statusCode == 200) {
       final List<dynamic> data = jsonDecode(resp.body);
-      return data.map((json) => FamilyLink.fromJson(json)).toList();
+      return data.map((final json) => FamilyLink.fromJson(json)).toList();
     } else {
       throw Exception('Failed to fetch family links: ${resp.body}');
     }
   }
 
-  Future<void> cancelInvite(String parentId, String childId) async {
+  Future<void> cancelInvite(final String parentId, final String childId) async {
     final resp = await http.delete(
       Uri.parse('$_base/invite'),
       body: jsonEncode({'parentId': parentId, 'childId': childId}),
@@ -63,7 +63,7 @@ class FamilyService {
     });
   }
 
-  Future<void> resendOtp(String parentId, String childId) async {
+  Future<void> resendOtp(final String parentId, final String childId) async {
     final resp = await http.post(
       Uri.parse('$_base/resend-otp'),
       body: jsonEncode({'parentId': parentId, 'childId': childId}),
@@ -80,7 +80,7 @@ class FamilyService {
   }
 
   Future<void> _logFamilyEvent(
-      String eventType, String parentId, Map<String, dynamic> data) async {
+      final String eventType, final String parentId, final Map<String, dynamic> data) async {
     try {
       await _firestore.collection('family_analytics').add({
         'eventType': eventType,
@@ -90,11 +90,11 @@ class FamilyService {
       });
     } catch (e) {
       // Don't throw on analytics failures
-      print('Failed to log family event: $e');
+      // Removed debug print: print('Failed to log family event: $e');
     }
   }
 
-  Future<void> updateConsent(String linkId, bool grant) async {
+  Future<void> updateConsent(final String linkId, final bool grant) async {
     await http.post(
       Uri.parse('$_base/consent-update'),
       body: jsonEncode({'linkId': linkId, 'grant': grant}),
@@ -102,33 +102,33 @@ class FamilyService {
     );
   }
 
-  Future<List<Permission>> fetchPermissions(String linkId) async {
+  Future<List<Permission>> fetchPermissions(final String linkId) async {
     final resp = await http.get(Uri.parse('$_base/permissions?linkId=$linkId'));
     return (jsonDecode(resp.body) as List)
-        .map((j) => Permission.fromJson(j))
+        .map((final j) => Permission.fromJson(j))
         .toList();
   }
 
-  Future<void> updatePermissions(String linkId, List<Permission> perms) async {
+  Future<void> updatePermissions(final String linkId, final List<Permission> perms) async {
     await http.post(
       Uri.parse('$_base/permissions-update'),
       body: jsonEncode({
         'linkId': linkId,
-        'permissions': perms.map((p) => p.toJson()).toList()
+        'permissions': perms.map((final p) => p.toJson()).toList()
       }),
       headers: {'Content-Type': 'application/json'},
     );
   }
 
-  Future<List<PrivacyRequest>> fetchPrivacyRequests(String parentId) async {
+  Future<List<PrivacyRequest>> fetchPrivacyRequests(final String parentId) async {
     final resp =
         await http.get(Uri.parse('$_base/privacy-requests?parentId=$parentId'));
     return (jsonDecode(resp.body) as List)
-        .map((j) => PrivacyRequest.fromJson(j))
+        .map((final j) => PrivacyRequest.fromJson(j))
         .toList();
   }
 
-  Future<void> sendPrivacyRequest(String childId) async {
+  Future<void> sendPrivacyRequest(final String childId) async {
     await http.post(
       Uri.parse('$_base/privacy-request'),
       body: jsonEncode({'childId': childId, 'type': 'private_session'}),
@@ -136,7 +136,7 @@ class FamilyService {
     );
   }
 
-  Future<void> sendOtp(String parentContact, String childId) async {
+  Future<void> sendOtp(final String parentContact, final String childId) async {
     final resp = await http.post(
       Uri.parse('$_base/send-otp'),
       body: jsonEncode({'parentContact': parentContact, 'childId': childId}),
@@ -148,7 +148,7 @@ class FamilyService {
     }
   }
 
-  Future<bool> verifyOtp(String parentContact, String code) async {
+  Future<bool> verifyOtp(final String parentContact, final String code) async {
     final resp = await http.post(
       Uri.parse('$_base/verify-otp'),
       body: jsonEncode({'parentContact': parentContact, 'code': code}),
@@ -171,7 +171,7 @@ class FamilyService {
     }
   }
 
-  Future<void> handlePrivacyRequest(String requestId, String action) async {
+  Future<void> handlePrivacyRequest(final String requestId, final String action) async {
     final resp = await http.post(
       Uri.parse('$_base/privacy-request/$requestId/$action'),
       headers: {'Content-Type': 'application/json'},
@@ -187,7 +187,7 @@ class FamilyService {
     });
   }
 
-  Future<void> revokeAccess(String linkId) async {
+  Future<void> revokeAccess(final String linkId) async {
     final resp = await http.delete(
       Uri.parse('$_base/revoke-access/$linkId'),
       headers: {'Content-Type': 'application/json'},

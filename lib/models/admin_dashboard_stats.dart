@@ -6,54 +6,54 @@ part 'admin_dashboard_stats.g.dart';
 @freezed
 class AdminDashboardStats with _$AdminDashboardStats {
   const factory AdminDashboardStats({
-    required int totalUsers,
-    required int activeUsers,
-    required int totalBookings,
-    required int completedBookings,
-    required int pendingBookings,
-    required double totalRevenue,
-    required double adRevenue,
-    required double subscriptionRevenue,
-    required int totalOrganizations,
-    required int activeOrganizations,
-    required int totalAmbassadors,
-    required int activeAmbassadors,
-    required int totalErrors,
-    required int criticalErrors,
-    required Map<String, int> userGrowthByMonth,
-    required Map<String, double> revenueByMonth,
-    required Map<String, int> bookingsByMonth,
-    required Map<String, int> topCountries,
-    required Map<String, int> topCities,
-    required Map<String, int> userTypes,
-    required Map<String, int> subscriptionTiers,
-    required DateTime lastUpdated,
+    required final int totalUsers,
+    required final int activeUsers,
+    required final int totalBookings,
+    required final int completedBookings,
+    required final int pendingBookings,
+    required final double totalRevenue,
+    required final double adRevenue,
+    required final double subscriptionRevenue,
+    required final int totalOrganizations,
+    required final int activeOrganizations,
+    required final int totalAmbassadors,
+    required final int activeAmbassadors,
+    required final int totalErrors,
+    required final int criticalErrors,
+    required final Map<String, int> userGrowthByMonth,
+    required final Map<String, double> revenueByMonth,
+    required final Map<String, int> bookingsByMonth,
+    required final Map<String, int> topCountries,
+    required final Map<String, int> topCities,
+    required final Map<String, int> userTypes,
+    required final Map<String, int> subscriptionTiers,
+    required final DateTime lastUpdated,
   }) = _AdminDashboardStats;
 
-  factory AdminDashboardStats.fromJson(Map<String, dynamic> json) =>
+  factory AdminDashboardStats.fromJson(final Map<String, dynamic> json) =>
       _$AdminDashboardStatsFromJson(json);
 }
 
 @freezed
 class AdminErrorLog with _$AdminErrorLog {
   const factory AdminErrorLog({
-    required String id,
-    required String errorType,
-    required String errorMessage,
-    required String stackTrace,
-    required String userId,
-    required String userEmail,
-    required DateTime timestamp,
-    required ErrorSeverity severity,
-    required String? deviceInfo,
-    required String? appVersion,
-    required bool isResolved,
-    String? resolvedBy,
-    DateTime? resolvedAt,
-    String? resolutionNotes,
+    required final String id,
+    required final String errorType,
+    required final String errorMessage,
+    required final String stackTrace,
+    required final String userId,
+    required final String userEmail,
+    required final DateTime timestamp,
+    required final ErrorSeverity severity,
+    required final String? deviceInfo,
+    required final String? appVersion,
+    required final bool isResolved,
+    final String? resolvedBy,
+    final DateTime? resolvedAt,
+    final String? resolutionNotes,
   }) = _AdminErrorLog;
 
-  factory AdminErrorLog.fromJson(Map<String, dynamic> json) =>
+  factory AdminErrorLog.fromJson(final Map<String, dynamic> json) =>
       _$AdminErrorLogFromJson(json);
 }
 
@@ -67,58 +67,58 @@ enum ErrorSeverity {
 @freezed
 class AdminActivityLog with _$AdminActivityLog {
   const factory AdminActivityLog({
-    required String id,
-    required String adminId,
-    required String adminEmail,
-    required String action,
-    required String targetType,
-    required String targetId,
-    required Map<String, dynamic> details,
-    required DateTime timestamp,
-    required String ipAddress,
-    required String userAgent,
+    required final String id,
+    required final String adminId,
+    required final String adminEmail,
+    required final String action,
+    required final String targetType,
+    required final String targetId,
+    required final Map<String, dynamic> details,
+    required final DateTime timestamp,
+    required final String ipAddress,
+    required final String userAgent,
   }) = _AdminActivityLog;
 
-  factory AdminActivityLog.fromJson(Map<String, dynamic> json) =>
+  factory AdminActivityLog.fromJson(final Map<String, dynamic> json) =>
       _$AdminActivityLogFromJson(json);
 }
 
 @freezed
 class AdRevenueStats with _$AdRevenueStats {
   const factory AdRevenueStats({
-    required double totalRevenue,
-    required double monthlyRevenue,
-    required double weeklyRevenue,
-    required double dailyRevenue,
-    required int totalImpressions,
-    required int totalClicks,
-    required double clickThroughRate,
-    required Map<String, double> revenueByAdType,
-    required Map<String, double> revenueByUserTier,
-    required Map<String, double> revenueByCountry,
-    required DateTime lastUpdated,
+    required final double totalRevenue,
+    required final double monthlyRevenue,
+    required final double weeklyRevenue,
+    required final double dailyRevenue,
+    required final int totalImpressions,
+    required final int totalClicks,
+    required final double clickThroughRate,
+    required final Map<String, double> revenueByAdType,
+    required final Map<String, double> revenueByUserTier,
+    required final Map<String, double> revenueByCountry,
+    required final DateTime lastUpdated,
   }) = _AdRevenueStats;
 
-  factory AdRevenueStats.fromJson(Map<String, dynamic> json) =>
+  factory AdRevenueStats.fromJson(final Map<String, dynamic> json) =>
       _$AdRevenueStatsFromJson(json);
 }
 
 @freezed
 class MonetizationSettings with _$MonetizationSettings {
   const factory MonetizationSettings({
-    required bool adsEnabledForFreeUsers,
-    required bool adsEnabledForChildren,
-    required bool adsEnabledForStudioUsers,
-    required bool adsEnabledForPremiumUsers,
-    required double adFrequencyForFreeUsers,
-    required double adFrequencyForChildren,
-    required double adFrequencyForStudioUsers,
-    required double adFrequencyForPremiumUsers,
-    required List<String> enabledAdTypes,
-    required Map<String, bool> adTypeSettings,
-    required DateTime lastUpdated,
+    required final bool adsEnabledForFreeUsers,
+    required final bool adsEnabledForChildren,
+    required final bool adsEnabledForStudioUsers,
+    required final bool adsEnabledForPremiumUsers,
+    required final double adFrequencyForFreeUsers,
+    required final double adFrequencyForChildren,
+    required final double adFrequencyForStudioUsers,
+    required final double adFrequencyForPremiumUsers,
+    required final List<String> enabledAdTypes,
+    required final Map<String, bool> adTypeSettings,
+    required final DateTime lastUpdated,
   }) = _MonetizationSettings;
 
-  factory MonetizationSettings.fromJson(Map<String, dynamic> json) =>
+  factory MonetizationSettings.fromJson(final Map<String, dynamic> json) =>
       _$MonetizationSettingsFromJson(json);
 } 

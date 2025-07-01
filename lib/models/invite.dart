@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'contact.dart';
+import 'package:appoint/models/contact.dart';
 
 part 'invite.g.dart';
 
@@ -23,7 +23,7 @@ class Invite {
     required this.requiresInstallFallback,
   });
 
-  factory Invite.fromJson(Map<String, dynamic> json) => _$InviteFromJson(json);
+  factory Invite.fromJson(final Map<String, dynamic> json) => _$InviteFromJson(json);
 
   Map<String, dynamic> toJson() => _$InviteToJson(this);
 }

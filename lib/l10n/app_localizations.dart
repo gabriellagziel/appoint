@@ -25,6 +25,7 @@ import 'app_localizations_fo.dart';
 import 'app_localizations_fr.dart';
 import 'app_localizations_ga.dart';
 import 'app_localizations_gl.dart';
+import 'app_localizations_ha.dart';
 import 'app_localizations_he.dart';
 import 'app_localizations_hi.dart';
 import 'app_localizations_hr.dart';
@@ -112,7 +113,7 @@ import 'app_localizations_zh.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -135,11 +136,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-    delegate,
-    GlobalMaterialLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-  ];
+        delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -165,6 +166,7 @@ abstract class AppLocalizations {
     Locale('fr'),
     Locale('ga'),
     Locale('gl'),
+    Locale('ha'),
     Locale('he'),
     Locale('hi'),
     Locale('hr'),
@@ -196,7 +198,8 @@ abstract class AppLocalizations {
     Locale('uk'),
     Locale('ur'),
     Locale('vi'),
-    Locale('zh')
+    Locale('zh'),
+    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'),
   ];
 
   /// Refresh button text
@@ -289,11 +292,11 @@ abstract class AppLocalizations {
   /// **'Undo'**
   String get undo;
 
-  /// Opened status
+  /// Opened status with count
   ///
   /// In en, this message translates to:
-  /// **'Opened'**
-  String get opened;
+  /// **'Opened: {count}'**
+  String opened(Object count);
 
   /// Create virtual session button
   ///
@@ -331,10 +334,10 @@ abstract class AppLocalizations {
   /// **'Are you sure you want to cancel this invite?'**
   String get cancelInviteConfirmation;
 
-  /// Created status
+  /// Created status with date
   ///
   /// In en, this message translates to:
-  /// **'Created'**
+  /// **'Created: {date}'**
   String created(Object date);
 
   /// Revoke access button
@@ -376,7 +379,7 @@ abstract class AppLocalizations {
   /// Error loading family links message
   ///
   /// In en, this message translates to:
-  /// **'Error loading family links'**
+  /// **'Error loading family links: {error}'**
   String errorLoadingFamilyLinks(Object error);
 
   /// Cancel button text
@@ -394,7 +397,7 @@ abstract class AppLocalizations {
   /// Failed to action privacy request message
   ///
   /// In en, this message translates to:
-  /// **'Failed to action privacy request'**
+  /// **'Failed to action privacy request {action}: {error}'**
   String failedToActionPrivacyRequest(Object action, Object error);
 
   /// The title of the application
@@ -445,10 +448,10 @@ abstract class AppLocalizations {
   /// **'Participants'**
   String get participants;
 
-  /// Recipients label
+  /// Recipients label with count
   ///
   /// In en, this message translates to:
-  /// **'Recipients'**
+  /// **'Recipients: {count}'**
   String recipients(Object count);
 
   /// No search results message
@@ -517,16 +520,16 @@ abstract class AppLocalizations {
   /// **'Enable Notifications'**
   String get enableNotifications;
 
-  /// Invited status
+  /// Invited status with date
   ///
   /// In en, this message translates to:
-  /// **'Invited'**
+  /// **'Invited: {date}'**
   String invited(Object date);
 
-  /// Content label
+  /// Content label with content
   ///
   /// In en, this message translates to:
-  /// **'Content'**
+  /// **'Content: {content}'**
   String content(Object content);
 
   /// Meeting shared successfully message
@@ -625,10 +628,10 @@ abstract class AppLocalizations {
   /// **'Remove Child'**
   String get removeChild;
 
-  /// Status label
+  /// Status label with value
   ///
   /// In en, this message translates to:
-  /// **'Status'**
+  /// **'Status: {status}'**
   String status(Object status);
 
   /// Logout button text
@@ -695,7 +698,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error loading invites'**
-  String errorLoadingInvites(Object error);
+  String get errorLoadingInvites;
 
   /// Targeting filters label
   ///
@@ -727,11 +730,11 @@ abstract class AppLocalizations {
   /// **'Access revoked successfully'**
   String get accessRevokedSuccessfully;
 
-  /// Type label
+  /// Type label with value
   ///
   /// In en, this message translates to:
-  /// **'Type'**
-  String get type;
+  /// **'Type: {type}'**
+  String type(Object type);
 
   /// Checking permissions message
   ///
@@ -787,10 +790,10 @@ abstract class AppLocalizations {
   /// **'No messages yet'**
   String get noBroadcastMessages;
 
-  /// Request type label
+  /// Request type label with value
   ///
   /// In en, this message translates to:
-  /// **'Request Type'**
+  /// **'Request Type: {type}'**
   String requestType(Object type);
 
   /// Notifications title
@@ -833,7 +836,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error loading profile'**
-  String errorLoadingProfile(Object error);
+  String get errorLoadingProfile;
 
   /// Edit button text
   ///
@@ -892,7 +895,7 @@ abstract class AppLocalizations {
   /// Error checking permissions message
   ///
   /// In en, this message translates to:
-  /// **'Error checking permissions'**
+  /// **'Error checking permissions: {error}'**
   String errorCheckingPermissions(Object error);
 
   /// Client screen TBD message
@@ -904,7 +907,7 @@ abstract class AppLocalizations {
   /// FCM token label
   ///
   /// In en, this message translates to:
-  /// **'FCM Token'**
+  /// **'FCM Token: {token}'**
   String fcmToken(Object token);
 
   /// Pick image button
@@ -973,16 +976,16 @@ abstract class AppLocalizations {
   /// **'Invite Details'**
   String get inviteDetail;
 
-  /// Scheduled status
+  /// Scheduled status with date
   ///
   /// In en, this message translates to:
-  /// **'Scheduled'**
+  /// **'Scheduled: {date}'**
   String scheduled(Object date);
 
   /// Failed to resend OTP message
   ///
   /// In en, this message translates to:
-  /// **'Failed to resend OTP'**
+  /// **'Failed to resend OTP: {error}'**
   String failedToResendOtp(Object error);
 
   /// Scheduling label
@@ -994,7 +997,7 @@ abstract class AppLocalizations {
   /// Error saving message message
   ///
   /// In en, this message translates to:
-  /// **'Error saving message'**
+  /// **'Error saving message: {error}'**
   String errorSavingMessage(Object error);
 
   /// Save button text
@@ -1024,7 +1027,7 @@ abstract class AppLocalizations {
   /// Failed to revoke access message
   ///
   /// In en, this message translates to:
-  /// **'Failed to revoke access'**
+  /// **'Failed to revoke access: {error}'**
   String failedToRevokeAccess(Object error);
 
   /// Recent games label
@@ -1042,13 +1045,13 @@ abstract class AppLocalizations {
   /// Failed to cancel invite message
   ///
   /// In en, this message translates to:
-  /// **'Failed to cancel invite'**
+  /// **'Failed to cancel invite: {error}'**
   String failedToCancelInvite(Object error);
 
   /// Error sending message message
   ///
   /// In en, this message translates to:
-  /// **'Error sending message'**
+  /// **'Error sending message: {error}'**
   String errorSendingMessage(Object error);
 
   /// Confirm password field label
@@ -1060,7 +1063,7 @@ abstract class AppLocalizations {
   /// Error loading privacy requests message
   ///
   /// In en, this message translates to:
-  /// **'Error loading privacy requests'**
+  /// **'Error loading privacy requests: {error}'**
   String errorLoadingPrivacyRequests(Object error);
 
   /// Connected children label
@@ -1159,16 +1162,16 @@ abstract class AppLocalizations {
   /// **'Poll Options'**
   String get pollOptions;
 
-  /// Clicked status
+  /// Clicked status with count
   ///
   /// In en, this message translates to:
-  /// **'Clicked'**
+  /// **'Clicked: {count}'**
   String clicked(Object count);
 
-  /// Link label
+  /// Link label with url
   ///
   /// In en, this message translates to:
-  /// **'Link'**
+  /// **'Link: {link}'**
   String link(Object link);
 
   /// Meeting ready message
@@ -1183,10 +1186,10 @@ abstract class AppLocalizations {
   /// **'Pending Invites'**
   String get pendingInvites;
 
-  /// Status colon label
+  /// Status colon label with value
   ///
   /// In en, this message translates to:
-  /// **'Status:'**
+  /// **'Status: {status}'**
   String statusColon(Object status);
 
   /// No description provided for @pleaseLoginToViewProfile.
@@ -1194,6 +1197,42 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Please log in to view your profile.'**
   String get pleaseLoginToViewProfile;
+
+  /// Admin metrics title
+  ///
+  /// In en, this message translates to:
+  /// **'Admin Metrics'**
+  String get adminMetrics;
+
+  /// Overview section title
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get overview;
+
+  /// Bookings section title
+  ///
+  /// In en, this message translates to:
+  /// **'Bookings'**
+  String get bookings;
+
+  /// Users section title
+  ///
+  /// In en, this message translates to:
+  /// **'Users'**
+  String get users;
+
+  /// Revenue section title
+  ///
+  /// In en, this message translates to:
+  /// **'Revenue'**
+  String get revenue;
+
+  /// Content library title
+  ///
+  /// In en, this message translates to:
+  /// **'Content Library'**
+  String get contentLibrary;
 }
 
 class _AppLocalizationsDelegate
@@ -1207,64 +1246,77 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-        'am',
-        'ar',
-        'bg',
-        'bn',
-        'bs',
-        'ca',
-        'cs',
-        'cy',
-        'da',
-        'de',
-        'en',
-        'es',
-        'et',
-        'eu',
-        'fa',
-        'fi',
-        'fo',
-        'fr',
-        'ga',
-        'gl',
-        'he',
-        'hi',
-        'hr',
-        'hu',
-        'id',
-        'is',
-        'it',
-        'ja',
-        'ko',
-        'lt',
-        'lv',
-        'mk',
-        'ms',
-        'mt',
-        'nl',
-        'no',
-        'pl',
-        'pt',
-        'ro',
-        'ru',
-        'sk',
-        'sl',
-        'sq',
-        'sr',
-        'sv',
-        'th',
-        'tr',
-        'uk',
-        'ur',
-        'vi',
-        'zh'
-      ].contains(locale.languageCode);
+    'am',
+    'ar',
+    'bg',
+    'bn',
+    'bs',
+    'ca',
+    'cs',
+    'cy',
+    'da',
+    'de',
+    'en',
+    'es',
+    'et',
+    'eu',
+    'fa',
+    'fi',
+    'fo',
+    'fr',
+    'ga',
+    'gl',
+    'ha',
+    'he',
+    'hi',
+    'hr',
+    'hu',
+    'id',
+    'is',
+    'it',
+    'ja',
+    'ko',
+    'lt',
+    'lv',
+    'mk',
+    'ms',
+    'mt',
+    'nl',
+    'no',
+    'pl',
+    'pt',
+    'ro',
+    'ru',
+    'sk',
+    'sl',
+    'sq',
+    'sr',
+    'sv',
+    'th',
+    'tr',
+    'uk',
+    'ur',
+    'vi',
+    'zh',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
 }
 
 AppLocalizations lookupAppLocalizations(Locale locale) {
+  // Lookup logic when language+script codes are specified.
+  switch (locale.languageCode) {
+    case 'zh':
+      {
+        switch (locale.scriptCode) {
+          case 'Hant':
+            return AppLocalizationsZhHant();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when language+country codes are specified.
   switch (locale.languageCode) {
     case 'bn':
@@ -1335,6 +1387,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsGa();
     case 'gl':
       return AppLocalizationsGl();
+    case 'ha':
+      return AppLocalizationsHa();
     case 'he':
       return AppLocalizationsHe();
     case 'hi':
@@ -1400,8 +1454,9 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-      'an issue with the localizations generation tool. Please file an issue '
-      'on GitHub with a reproducible sample app and the gen-l10n configuration '
-      'that was used.');
+    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+    'an issue with the localizations generation tool. Please file an issue '
+    'on GitHub with a reproducible sample app and the gen-l10n configuration '
+    'that was used.',
+  );
 }

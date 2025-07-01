@@ -3,26 +3,26 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../providers/user_profile_provider.dart';
-import '../../../providers/user_subscription_provider.dart';
-import '../../../widgets/app_scaffold.dart';
-import '../../../widgets/loading_state.dart';
-import '../../../widgets/error_state.dart';
-import '../../../theme/app_spacing.dart';
+import 'package:appoint/providers/user_profile_provider.dart';
+import 'package:appoint/providers/user_subscription_provider.dart';
+import 'package:appoint/widgets/app_scaffold.dart';
+import 'package:appoint/widgets/loading_state.dart';
+import 'package:appoint/widgets/error_state.dart';
+import 'package:appoint/theme/app_spacing.dart';
 
 /// Displays the current user's profile information.
 class ProfileScreen extends ConsumerWidget {
   const ProfileScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final profileAsync = ref.watch(currentUserProfileProvider);
     final subscriptionAsync = ref.watch(userSubscriptionProvider);
 
     return AppScaffold(
       title: 'Profile',
       body: profileAsync.when(
-        data: (profile) {
+        data: (final profile) {
           if (profile == null) {
             return const ErrorState(
               title: 'Profile',
@@ -50,11 +50,11 @@ class ProfileScreen extends ConsumerWidget {
                 ],
                 const SizedBox(height: AppSpacing.xs),
                 subscriptionAsync.when(
-                  data: (isSub) => Text(
+                  data: (final isSub) => Text(
                     isSub ? 'Premium Subscriber' : 'Free User',
                   ),
                   loading: () => const Text('Checking subscription...'),
-                  error: (_, __) => const Text('Subscription unavailable'),
+                  error: (final _, final __) => const Text('Subscription unavailable'),
                 ),
                 const SizedBox(height: AppSpacing.md),
                 ElevatedButton(
@@ -70,7 +70,7 @@ class ProfileScreen extends ConsumerWidget {
           );
         },
         loading: () => const LoadingState(),
-        error: (_, __) => const ErrorState(
+        error: (final _, final __) => const ErrorState(
           title: 'Profile',
           description: 'Error loading profile',
         ),

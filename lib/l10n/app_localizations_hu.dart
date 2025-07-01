@@ -15,7 +15,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get home => 'Kezdőlap';
 
   @override
-  String get noSessionsYet => 'Még nincs ülés';
+  String get noSessionsYet => '[HU] No sessions yet';
 
   @override
   String get ok => 'Rendben';
@@ -33,16 +33,16 @@ class AppLocalizationsHu extends AppLocalizations {
   String get decline => 'Elutasítás';
 
   @override
-  String get adminBroadcast => 'Admin sugárzás';
+  String get adminBroadcast => '[HU] Admin Broadcast';
 
   @override
   String get login => 'Bejelentkezés';
 
   @override
-  String get playtimeChooseFriends => 'Barátok kiválasztása';
+  String get playtimeChooseFriends => '[HU] Choose friends to invite';
 
   @override
-  String get noInvites => 'Nincs meghívó';
+  String get noInvites => '[HU] No invites';
 
   @override
   String get playtimeChooseTime => 'Idő kiválasztása';
@@ -51,10 +51,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get success => 'Siker';
 
   @override
-  String get undo => 'Visszavonás';
+  String get undo => '[HU] Undo';
 
   @override
-  String get opened => 'Megnyitva';
+  String opened(Object count) {
+    return 'Megnyitva';
+  }
 
   @override
   String get createVirtualSession => 'Virtuális munkamenet létrehozása';
@@ -73,7 +75,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get cancelInviteConfirmation =>
-      'Meghívás visszavonásának megerősítése';
+      '[HU] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -81,17 +83,17 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get revokeAccess => 'Hozzáférés visszavonása';
+  String get revokeAccess => '[HU] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => 'Csoport mentése felismeréshez';
+  String get saveGroupForRecognition => '[HU] Save Group for Recognition';
 
   @override
   String get playtimeLiveScheduled => 'Élő munkamenet ütemezve';
 
   @override
   String get revokeAccessConfirmation =>
-      'Hozzáférés visszavonásának megerősítése';
+      '[HU] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Letöltés';
@@ -101,7 +103,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Hiba a családi kapcsolatok betöltésekor';
+    return '[HU] Error loading family links';
   }
 
   @override
@@ -112,7 +114,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'A adatvédelmi kérés sikertelen';
+    return '[HU] Failed to action privacy request';
   }
 
   @override
@@ -131,10 +133,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get delete => 'Törlés';
 
   @override
-  String get playtimeVirtualStarted => 'Virtuális munkamenet elindult';
+  String get playtimeVirtualStarted => '[HU] Virtual playtime started!';
 
   @override
-  String get createYourFirstGame => 'Hozd létre az első játékodat';
+  String get createYourFirstGame => '[HU] Create your first game';
 
   @override
   String get participants => 'Résztvevők';
@@ -145,7 +147,7 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get noResults => 'Nincs találat';
+  String get noResults => '[HU] No results found';
 
   @override
   String get yes => 'Igen';
@@ -166,7 +168,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get no => 'Nem';
 
   @override
-  String get playtimeHub => 'Playtime központ';
+  String get playtimeHub => '[HU] Playtime Hub';
 
   @override
   String get error => 'Hiba';
@@ -191,22 +193,23 @@ class AppLocalizationsHu extends AppLocalizations {
   String get meetingSharedSuccessfully => 'Találkozó sikeresen megosztva';
 
   @override
-  String get welcomeToPlaytime => 'Üdv a Playtime-on';
+  String get welcomeToPlaytime => '[HU] Welcome to Playtime';
 
   @override
-  String get viewAll => 'Összes megtekintése';
+  String get viewAll => '[HU] View All';
 
   @override
   String get playtimeVirtual => 'Virtuális Playtime';
 
   @override
-  String get staffScreenTBD => 'Munkatársi képernyő később';
+  String get staffScreenTBD => '[HU] Staff screen coming soon';
 
   @override
   String get cut => 'Kivágás';
 
   @override
-  String get inviteCancelledSuccessfully => 'Meghívás sikeresen visszavonva';
+  String get inviteCancelledSuccessfully =>
+      '[HU] Invite cancelled successfully';
 
   @override
   String get retry => 'Újrapróbálkozás';
@@ -218,7 +221,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get sendNow => 'Küldés most';
 
   @override
-  String get noGamesYet => 'Még nincs játék';
+  String get noGamesYet => '[HU] No games yet';
 
   @override
   String get select => 'Kiválasztás';
@@ -230,7 +233,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get choose => 'Válassz';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[HU] Profile';
 
   @override
   String get removeChild => 'Gyermek eltávolítása';
@@ -262,7 +265,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get upcomingSessions => 'Közelgő munkamenetek';
 
   @override
-  String get enterGroupName => 'Csoportnév megadása';
+  String get enterGroupName => '[HU] Enter group name';
 
   @override
   String get confirm => 'Megerősítés';
@@ -271,9 +274,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get playtimeLive => 'Élő Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Hiba a meghívók betöltésekor';
-  }
+  String get errorLoadingInvites => '[HU] Error loading invites';
 
   @override
   String get targetingFilters => 'Célzási szűrők';
@@ -288,10 +289,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get scheduleForLater => 'Ütemezés későbbre';
 
   @override
-  String get accessRevokedSuccessfully => 'Hozzáférés sikeresen visszavonva';
+  String get accessRevokedSuccessfully => '[HU] Access revoked successfully';
 
   @override
-  String get type => 'Típus';
+  String type(Object type) {
+    return 'Típus';
+  }
 
   @override
   String get checkingPermissions => 'Engedélyek ellenőrzése';
@@ -306,19 +309,19 @@ class AppLocalizationsHu extends AppLocalizations {
   String get email => 'Email';
 
   @override
-  String get shareOnWhatsApp => 'Megosztás WhatsApp-on';
+  String get shareOnWhatsApp => '[HU] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Értesítési beállítások';
 
   @override
-  String get myProfile => 'Profilom';
+  String get myProfile => '[HU] My Profile';
 
   @override
-  String get revoke => 'Visszavonás';
+  String get revoke => '[HU] Revoke';
 
   @override
-  String get noBroadcastMessages => 'Nincsenek sugárzott üzenetek';
+  String get noBroadcastMessages => '[HU] No messages yet';
 
   @override
   String requestType(Object type) {
@@ -332,7 +335,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get details => 'Részletek';
 
   @override
-  String get cancelInvite => 'Meghívás visszavonása';
+  String get cancelInvite => '[HU] Cancel Invite';
 
   @override
   String get createNew => 'Új létrehozása';
@@ -344,9 +347,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get playtimeReject => 'Playtime elutasítása';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Hiba a profil betöltésekor';
-  }
+  String get errorLoadingProfile => '[HU] Error loading profile';
 
   @override
   String get edit => 'Szerkesztés';
@@ -367,7 +368,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get loading => 'Betöltés';
 
   @override
-  String get quickActions => 'Gyors műveletek';
+  String get quickActions => '[HU] Quick Actions';
 
   @override
   String get playtimeTitle => 'Playtime címe';
@@ -377,7 +378,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Hiba az engedélyek ellenőrzésekor';
+    return '[HU] Error checking permissions';
   }
 
   @override
@@ -385,7 +386,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'FCM token';
+    return '[HU] FCM Token';
   }
 
   @override
@@ -395,13 +396,13 @@ class AppLocalizationsHu extends AppLocalizations {
   String get previous => 'Előző';
 
   @override
-  String get noProfileFound => 'Profil nem található';
+  String get noProfileFound => '[HU] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Még nincs családtag';
+  String get noFamilyMembersYet => '[HU] No family members yet';
 
   @override
-  String get mediaOptional => 'Média (opcionális)';
+  String get mediaOptional => '[HU] Media (Optional)';
 
   @override
   String get messageSavedSuccessfully => 'Üzenet sikeresen mentve';
@@ -413,10 +414,10 @@ class AppLocalizationsHu extends AppLocalizations {
   String get dashboard => 'Irányítópult';
 
   @override
-  String get noPermissionForBroadcast => 'Nincs jogosultság sugárzáshoz';
+  String get noPermissionForBroadcast => '[HU] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime admin panel címe';
+  String get playtimeAdminPanelTitle => '[HU] Playtime Games – Admin';
 
   @override
   String get inviteDetail => 'Meghívás részletei';
@@ -436,7 +437,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Hiba az üzenet mentésekor';
+    return '[HU] Error saving message';
   }
 
   @override
@@ -453,7 +454,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Hozzáférés visszavonása sikertelen';
+    return '[HU] Failed to revoke access';
   }
 
   @override
@@ -464,12 +465,12 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Meghívás visszavonása sikertelen';
+    return '[HU] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Hiba üzenet küldésekor';
+    return '[HU] Error sending message';
   }
 
   @override
@@ -477,7 +478,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Hiba a adatvédelmi kérések betöltésekor';
+    return '[HU] Error loading privacy requests';
   }
 
   @override
@@ -500,13 +501,13 @@ class AppLocalizationsHu extends AppLocalizations {
   String get createGame => 'Játék létrehozása';
 
   @override
-  String get groupNameOptional => 'Csoportnév (opcionális)';
+  String get groupNameOptional => '[HU] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Nincs Playtime ülés';
+  String get playtimeNoSessions => '[HU] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Admin képernyő később';
+  String get adminScreenTBD => '[HU] Admin screen coming soon';
 
   @override
   String get playtimeParentDashboardTitle =>
@@ -516,7 +517,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get close => 'Bezárás';
 
   @override
-  String get knownGroupDetected => 'Ismert csoport észlelve';
+  String get knownGroupDetected => '[HU] Known group detected';
 
   @override
   String get back => 'Vissza';
@@ -532,12 +533,12 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String clicked(Object count) {
-    return 'Kattintva';
+    return '[HU] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[HU] Link';
   }
 
   @override
@@ -553,5 +554,23 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get pleaseLoginToViewProfile =>
-      'Kérjük jelentkezz be a profil megtekintéséhez';
+      '[HU] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

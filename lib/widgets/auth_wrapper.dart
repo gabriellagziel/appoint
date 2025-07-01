@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../providers/user_role_provider.dart';
-import '../models/user_role.dart';
-import '../features/business/screens/business_dashboard_screen.dart';
-import '../l10n/app_localizations.dart';
+import 'package:appoint/providers/user_role_provider.dart';
+import 'package:appoint/models/user_role.dart';
+import 'package:appoint/features/business/screens/business_dashboard_screen.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 
 class AuthWrapper extends ConsumerWidget {
   const AuthWrapper({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final role = ref.watch(userRoleProvider);
     final l10n = AppLocalizations.of(context)!;
 

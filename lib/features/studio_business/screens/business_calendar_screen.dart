@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../models/business_event.dart';
+import 'package:appoint/features/studio_business/models/business_event.dart';
 
 class BusinessCalendarScreen extends StatefulWidget {
-  const BusinessCalendarScreen({Key? key}) : super(key: key);
+  const BusinessCalendarScreen({final Key? key}) : super(key: key);
 
   @override
   State<BusinessCalendarScreen> createState() => _BusinessCalendarScreenState();
@@ -12,32 +12,8 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
-  final List<BusinessEvent> _mockEvents = [
-    BusinessEvent(
-      id: '1',
-      title: 'Team Meeting',
-      description: 'Discuss project updates',
-      type: 'Meeting',
-      startTime: DateTime.now().add(const Duration(hours: 1)),
-      endTime: DateTime.now().add(const Duration(hours: 2)),
-    ),
-    BusinessEvent(
-      id: '2',
-      title: 'Client Call',
-      description: 'Call with client',
-      type: 'Call',
-      startTime: DateTime.now().add(const Duration(days: 1, hours: 3)),
-      endTime: DateTime.now().add(const Duration(days: 1, hours: 4)),
-    ),
-    BusinessEvent(
-      id: '3',
-      title: 'Studio Session',
-      description: 'Music recording',
-      type: 'Session',
-      startTime: DateTime.now().add(const Duration(days: 2, hours: 2)),
-      endTime: DateTime.now().add(const Duration(days: 2, hours: 5)),
-    ),
-  ];
+  // TODO: Replace with real calendar data from business service
+  final List<BusinessEvent> _events = [];
 
   @override
   void initState() {
@@ -52,7 +28,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Business Calendar'),
@@ -78,10 +54,23 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
   }
 
   Widget _buildDayView() {
+    if (_events.isEmpty) {
+      return const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.event_busy, size: 64, color: Colors.grey),
+            SizedBox(height: 16),
+            Text('No events scheduled for today'),
+          ],
+        ),
+      );
+    }
+
     return ListView.builder(
-      itemCount: _mockEvents.length,
-      itemBuilder: (context, idx) {
-        final event = _mockEvents[idx];
+      itemCount: _events.length,
+      itemBuilder: (final context, final idx) {
+        final event = _events[idx];
         return ListTile(
           leading: const Icon(Icons.event),
           title: Text(event.title),
@@ -95,12 +84,24 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
   }
 
   Widget _buildWeekView() {
-    // For mock, just show all events in a grid
+    if (_events.isEmpty) {
+      return const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.view_week, size: 64, color: Colors.grey),
+            SizedBox(height: 16),
+            Text('No events scheduled this week'),
+          ],
+        ),
+      );
+    }
+
     return GridView.count(
       crossAxisCount: MediaQuery.of(context).size.width > 600 ? 3 : 1,
       childAspectRatio: 3,
-      children: _mockEvents
-          .map((event) => Card(
+      children: _events
+          .map((final event) => Card(
                 child: ListTile(
                   leading: const Icon(Icons.event_available),
                   title: Text(event.title),
@@ -112,12 +113,24 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
   }
 
   Widget _buildMonthView() {
-    // For mock, just show all events in a grid
+    if (_events.isEmpty) {
+      return const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.calendar_month, size: 64, color: Colors.grey),
+            SizedBox(height: 16),
+            Text('No events scheduled this month'),
+          ],
+        ),
+      );
+    }
+
     return GridView.count(
       crossAxisCount: MediaQuery.of(context).size.width > 600 ? 4 : 2,
       childAspectRatio: 1.5,
-      children: _mockEvents
-          .map((event) => Card(
+      children: _events
+          .map((final event) => Card(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

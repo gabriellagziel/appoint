@@ -3,7 +3,7 @@ class NotificationSettings {
 
   NotificationSettings({required this.push});
 
-  factory NotificationSettings.fromJson(Map<String, dynamic> json) =>
+  factory NotificationSettings.fromJson(final Map<String, dynamic> json) =>
       NotificationSettings(
         push: json['push'] ?? false,
       );

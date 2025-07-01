@@ -1,16 +1,16 @@
 import 'dart:core';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '../models/appointment.dart';
-import 'notification_service.dart';
+import 'package:appoint/models/appointment.dart';
+import 'package:appoint/services/notification_service.dart';
 
 class AppointmentService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<Appointment> createScheduled({
-    required String creatorId,
-    required String inviteeId,
-    required DateTime scheduledAt,
+    required final String creatorId,
+    required final String inviteeId,
+    required final DateTime scheduledAt,
   }) async {
     final doc = _firestore.collection('appointments').doc();
     final appointment = Appointment(
@@ -27,8 +27,8 @@ class AppointmentService {
   }
 
   Future<Appointment> createOpenCallRequest({
-    required String creatorId,
-    required String inviteeId,
+    required final String creatorId,
+    required final String inviteeId,
   }) async {
     final doc = _firestore.collection('appointments').doc();
     final callRequestId = _firestore.collection('callRequests').doc().id;
@@ -46,13 +46,13 @@ class AppointmentService {
     return appointment;
   }
 
-  Stream<List<Appointment>> watchMyAppointments(String userId) {
+  Stream<List<Appointment>> watchMyAppointments(final String userId) {
     return _firestore
         .collection('appointments')
         .where('creatorId', isEqualTo: userId)
         .snapshots()
-        .map((snapshot) => snapshot.docs
-            .map((doc) => Appointment.fromJson(doc.data()))
+        .map((final snapshot) => snapshot.docs
+            .map((final doc) => Appointment.fromJson(doc.data()))
             .toList());
   }
 }

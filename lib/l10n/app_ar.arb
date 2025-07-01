@@ -1,664 +1,664 @@
 {
-  "refresh": "تحديث",
-  "@refresh": {
-    "description": "Refresh button text"
-  },
-  "home": "الرئيسية",
-  "@home": {
-    "description": "Home navigation label"
-  },
-  "noSessionsYet": "لا توجد جلسات بعد",
-  "@noSessionsYet": {
-    "description": "No sessions yet message"
-  },
-  "ok": "حسناً",
-  "@ok": {
-    "description": "OK button text"
-  },
-  "playtimeLandingChooseMode": "اختر وضعاً",
-  "@playtimeLandingChooseMode": {
-    "description": "Playtime landing choose mode message"
-  },
-  "signUp": "سجّل",
-  "@signUp": {
-    "description": "Sign up button text"
-  },
-  "scheduleMessage": "جدولة رسالة",
-  "@scheduleMessage": {
-    "description": "Schedule message button"
-  },
-  "decline": "رفض",
-  "@decline": {
-    "description": "Decline button"
-  },
-  "adminBroadcast": "بث الإدارة",
-  "@adminBroadcast": {
-    "description": "Admin broadcast title"
-  },
-  "login": "تسجيل الدخول",
-  "@login": {
-    "description": "Login button text"
-  },
-  "playtimeChooseFriends": "اختر الأصدقاء",
-  "@playtimeChooseFriends": {
-    "description": "Choose friends label"
-  },
-  "noInvites": "لا توجد دعوات",
-  "@noInvites": {
-    "description": "No invites message"
-  },
-  "playtimeChooseTime": "اختر الوقت",
-  "@playtimeChooseTime": {
-    "description": "Choose time label"
-  },
-  "success": "تم بنجاح",
-  "@success": {
-    "description": "Success message"
-  },
-  "undo": "تراجع",
-  "@undo": {
-    "description": "Undo button text"
-  },
-  "opened": "مفتوح",
-  "@opened": {
-    "description": "Opened status"
-  },
-  "createVirtualSession": "إنشاء جلسة افتراضية",
-  "@createVirtualSession": {
-    "description": "Create virtual session button"
-  },
-  "messageSentSuccessfully": "تم إرسال الرسالة بنجاح",
-  "@messageSentSuccessfully": {
-    "description": "Message sent successfully message"
-  },
-  "redo": "إعادة",
-  "@redo": {
-    "description": "Redo button text"
-  },
-  "next": "التالي",
-  "@next": {
-    "description": "Next button text"
-  },
-  "search": "بحث",
-  "@search": {
-    "description": "Search placeholder text"
-  },
-  "cancelInviteConfirmation": "إلغاء تأكيد الدعوة",
-  "@cancelInviteConfirmation": {
-    "description": "Cancel invite confirmation message"
-  },
-  "created": "تم الإنشاء",
-  "@created": {
-    "description": "Created status"
-  },
-  "revokeAccess": "سحب الوصول",
-  "@revokeAccess": {
-    "description": "Revoke access button"
-  },
-  "saveGroupForRecognition": "احفظ المجموعة للتعرف",
-  "@saveGroupForRecognition": {
-    "description": "Save group for recognition label"
-  },
-  "playtimeLiveScheduled": "تم جدول البث المباشر",
-  "@playtimeLiveScheduled": {
-    "description": "Live playtime scheduled message"
-  },
-  "revokeAccessConfirmation": "تأكيد سحب الوصول",
-  "@revokeAccessConfirmation": {
-    "description": "Revoke access confirmation message"
-  },
-  "download": "تنزيل",
-  "@download": {
-    "description": "Download button text"
-  },
-  "password": "كلمة المرور",
-  "@password": {
-    "description": "Password field label"
-  },
-  "errorLoadingFamilyLinks": "خطأ في تحميل روابط العائلة",
-  "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message"
-  },
-  "cancel": "إلغاء",
-  "@cancel": {
-    "description": "Cancel button text"
-  },
-  "playtimeCreate": "إنشاء Playtime",
-  "@playtimeCreate": {
-    "description": "Create button"
-  },
-  "failedToActionPrivacyRequest": "فشل في تنفيذ طلب الخصوصية",
-  "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message"
-  },
-  "appTitle": "عنوان التطبيق",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
-  "accept": "قبول",
-  "@accept": {
-    "description": "Accept button"
-  },
-  "playtimeModeVirtual": "الوضع الافتراضي",
-  "@playtimeModeVirtual": {
-    "description": "Virtual play mode label"
-  },
-  "playtimeDescription": "وصف Playtime",
-  "@playtimeDescription": {
-    "description": "Playtime description"
-  },
-  "delete": "حذف",
-  "@delete": {
-    "description": "Delete button text"
-  },
-  "playtimeVirtualStarted": "بدأت الجلسة الافتراضية",
-  "@playtimeVirtualStarted": {
-    "description": "Virtual playtime started message"
-  },
-  "createYourFirstGame": "أنشئ لعبتك الأولى",
-  "@createYourFirstGame": {
-    "description": "Create your first game message"
-  },
-  "participants": "المشاركون",
-  "@participants": {
-    "description": "Participants label"
-  },
-  "recipients": "المستلمون",
-  "@recipients": {
-    "description": "Recipients label"
-  },
-  "noResults": "لا توجد نتائج",
-  "@noResults": {
-    "description": "No search results message"
-  },
-  "yes": "نعم",
-  "@yes": {
-    "description": "Yes button text"
-  },
-  "invite": "دعوة",
-  "@invite": {
-    "description": "Invite button"
-  },
-  "playtimeModeLive": "وضع مباشر",
-  "@playtimeModeLive": {
-    "description": "Live play mode label"
-  },
-  "done": "تم",
-  "@done": {
-    "description": "Done button text"
-  },
-  "defaultShareMessage": "رسالة المشاركة الافتراضية",
-  "@defaultShareMessage": {
-    "description": "Default share message"
-  },
-  "no": "لا",
-  "@no": {
-    "description": "No button text"
-  },
-  "playtimeHub": "مركز Playtime",
-  "@playtimeHub": {
-    "description": "Playtime hub title"
-  },
-  "error": "خطأ",
-  "@error": {
-    "description": "Error message"
-  },
-  "createLiveSession": "إنشاء جلسة مباشرة",
-  "@createLiveSession": {
-    "description": "Create live session button"
-  },
-  "enableNotifications": "تفعيل الإشعارات",
-  "@enableNotifications": {
-    "description": "Enable notifications label"
-  },
-  "invited": "مدعو",
-  "@invited": {
-    "description": "Invited status"
-  },
-  "content": "المحتوى",
-  "@content": {
-    "description": "Content label"
-  },
-  "meetingSharedSuccessfully": "تم مشاركة الاجتماع بنجاح",
-  "@meetingSharedSuccessfully": {
-    "description": "Meeting shared successfully message"
-  },
-  "welcomeToPlaytime": "مرحباً بك في Playtime",
-  "@welcomeToPlaytime": {
-    "description": "Welcome to playtime message"
-  },
-  "viewAll": "عرض الكل",
-  "@viewAll": {
-    "description": "View all button"
-  },
-  "playtimeVirtual": "Playtime افتراضي",
-  "@playtimeVirtual": {
-    "description": "Virtual play label"
-  },
-  "staffScreenTBD": "شاشة الموظفين قيد التحديد",
-  "@staffScreenTBD": {
-    "description": "Staff screen TBD message"
-  },
-  "cut": "قص",
-  "@cut": {
-    "description": "Cut button text"
-  },
-  "inviteCancelledSuccessfully": "تم إلغاء الدعوة بنجاح",
-  "@inviteCancelledSuccessfully": {
-    "description": "Invite cancelled successfully message"
-  },
-  "retry": "أعد المحاولة",
-  "@retry": {
-    "description": "Retry button text"
-  },
-  "composeBroadcastMessage": "إنشاء رسالة البث",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message title"
-  },
-  "sendNow": "أرسل الآن",
-  "@sendNow": {
-    "description": "Send now button"
-  },
-  "noGamesYet": "لا توجد ألعاب بعد",
-  "@noGamesYet": {
-    "description": "No games yet message"
-  },
-  "select": "اختر",
-  "@select": {
-    "description": "Select button text"
-  },
-  "about": "حول",
+  "@@locale": "ar",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "اختر",
-  "@choose": {
-    "description": "Choose button text"
+  "@accept": {
+    "description": "Accept button"
   },
-  "profile": "الملف الشخصي",
-  "@profile": {
-    "description": "Profile navigation label"
-  },
-  "removeChild": "إزالة طفل",
-  "@removeChild": {
-    "description": "Remove child button"
-  },
-  "status": "الحالة",
-  "@status": {
-    "description": "Status label"
-  },
-  "logout": "تسجيل الخروج",
-  "@logout": {
-    "description": "Logout button text"
-  },
-  "paste": "لصق",
-  "@paste": {
-    "description": "Paste button text"
-  },
-  "welcome": "مرحباً",
-  "@welcome": {
-    "description": "Welcome message"
-  },
-  "playtimeCreateSession": "إنشاء جلسة",
-  "@playtimeCreateSession": {
-    "description": "Create playtime session button"
-  },
-  "familyMembers": "أفراد العائلة",
-  "@familyMembers": {
-    "description": "Family members label"
-  },
-  "upload": "تحميل",
-  "@upload": {
-    "description": "Upload button text"
-  },
-  "upcomingSessions": "الجلسات القادمة",
-  "@upcomingSessions": {
-    "description": "Upcoming sessions label"
-  },
-  "enterGroupName": "أدخل اسم المجموعة",
-  "@enterGroupName": {
-    "description": "Enter group name placeholder"
-  },
-  "confirm": "تأكيد",
-  "@confirm": {
-    "description": "Confirm button text"
-  },
-  "playtimeLive": "Playtime مباشر",
-  "@playtimeLive": {
-    "description": "Live play label"
-  },
-  "errorLoadingInvites": "خطأ في تحميل الدعوات",
-  "@errorLoadingInvites": {
-    "description": "Error loading invites message"
-  },
-  "targetingFilters": "فلاتر الاستهداف",
-  "@targetingFilters": {
-    "description": "Targeting filters label"
-  },
-  "pickVideo": "اختر فيديو",
-  "@pickVideo": {
-    "description": "Pick video button"
-  },
-  "playtimeGameDeleted": "تم حذف اللعبة",
-  "@playtimeGameDeleted": {
-    "description": "Game deleted message"
-  },
-  "scheduleForLater": "جدولة لاحقاً",
-  "@scheduleForLater": {
-    "description": "Schedule for later button"
-  },
-  "accessRevokedSuccessfully": "تم سحب الوصول بنجاح",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "النوع",
-  "@type": {
-    "description": "Type label"
-  },
-  "checkingPermissions": "جاري التحقق من الأذونات",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "copy": "نسخ",
-  "@copy": {
-    "description": "Copy button text"
-  },
-  "yesCancel": "نعم، إلغاء",
-  "@yesCancel": {
-    "description": "Yes cancel button"
-  },
-  "email": "البريد الإلكتروني",
-  "@email": {
-    "description": "Email field label"
-  },
-  "shareOnWhatsApp": "[AR] Share on WhatsApp",
-  "@shareOnWhatsApp": {
-    "description": "Share on WhatsApp button"
-  },
-  "notificationSettings": "إعدادات الإشعارات",
-  "@notificationSettings": {
-    "description": "Notification settings title"
-  },
-  "myProfile": "ملفي الشخصي",
-  "@myProfile": {
-    "description": "My profile title"
-  },
-  "revoke": "سحب",
-  "@revoke": {
-    "description": "Revoke button"
-  },
-  "noBroadcastMessages": "لا توجد رسائل بث",
-  "@noBroadcastMessages": {
-    "description": "No broadcast messages message"
-  },
-  "requestType": "نوع الطلب",
-  "@requestType": {
-    "description": "Request type label"
-  },
-  "notifications": "الإشعارات",
-  "@notifications": {
-    "description": "Notifications title"
-  },
-  "details": "التفاصيل",
-  "@details": {
-    "description": "Details label"
-  },
-  "cancelInvite": "إلغاء الدعوة",
-  "@cancelInvite": {
-    "description": "Cancel invite button"
-  },
-  "createNew": "إنشاء جديد",
-  "@createNew": {
-    "description": "Create new button"
-  },
-  "settings": "الإعدادات",
-  "@settings": {
-    "description": "Settings navigation label"
-  },
-  "playtimeReject": "رفض Playtime",
-  "@playtimeReject": {
-    "description": "Playtime reject button"
-  },
-  "errorLoadingProfile": "خطأ في تحميل الملف الشخصي",
-  "@errorLoadingProfile": {
-    "description": "Error loading profile message"
-  },
-  "edit": "تعديل",
-  "@edit": {
-    "description": "Edit button text"
-  },
-  "add": "إضافة",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "تم الموافقة على اللعبة",
-  "@playtimeGameApproved": {
-    "description": "Game approved message"
+  "@adminBroadcast": {
+    "description": "Admin broadcast title"
   },
-  "forgotPassword": "هل نسيت كلمة المرور؟",
-  "@forgotPassword": {
-    "description": "Forgot password link text"
-  },
-  "familyDashboard": "لوحة تحكم العائلة",
-  "@familyDashboard": {
-    "description": "Family dashboard title"
-  },
-  "loading": "جارٍ التحميل",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "quickActions": "إجراءات سريعة",
-  "@quickActions": {
-    "description": "Quick actions label"
-  },
-  "playtimeTitle": "عنوان Playtime",
-  "@playtimeTitle": {
-    "description": "Playtime title"
-  },
-  "otpResentSuccessfully": "تم إعادة إرسال رمز التحقق",
-  "@otpResentSuccessfully": {
-    "description": "OTP resent successfully message"
-  },
-  "errorCheckingPermissions": "خطأ في التحقق من الأذونات",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message"
-  },
-  "clientScreenTBD": "شاشة العميل قيد التحديد",
-  "@clientScreenTBD": {
-    "description": "Client screen TBD message"
-  },
-  "fcmToken": "رمز FCM",
-  "@fcmToken": {
-    "description": "FCM token label"
-  },
-  "pickImage": "اختر صورة",
-  "@pickImage": {
-    "description": "Pick image button"
-  },
-  "previous": "السابق",
-  "@previous": {
-    "description": "Previous button text"
-  },
-  "noProfileFound": "لم يتم العثور على ملف شخصي",
-  "@noProfileFound": {
-    "description": "No profile found message"
-  },
-  "noFamilyMembersYet": "لا يوجد أعضاء عائلة بعد",
-  "@noFamilyMembersYet": {
-    "description": "No family members yet message"
-  },
-  "mediaOptional": "وسائط (اختياري)",
-  "@mediaOptional": {
-    "description": "Media optional label"
-  },
-  "messageSavedSuccessfully": "تم حفظ الرسالة بنجاح",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully message"
-  },
-  "scheduledFor": "مجدول لـ",
-  "@scheduledFor": {
-    "description": "Scheduled for label"
-  },
-  "dashboard": "لوحة القيادة",
-  "@dashboard": {
-    "description": "Dashboard title"
-  },
-  "noPermissionForBroadcast": "لا يوجد إذن للبث",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "playtimeAdminPanelTitle": "عنوان لوحة إدارة Playtime",
-  "@playtimeAdminPanelTitle": {
-    "description": "Playtime admin panel title"
-  },
-  "inviteDetail": "تفاصيل الدعوة",
-  "@inviteDetail": {
-    "description": "Invite detail title"
-  },
-  "scheduled": "مجدول",
-  "@scheduled": {
-    "description": "Scheduled status"
-  },
-  "failedToResendOtp": "فشل في إعادة إرسال رمز التحقق",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
-  },
-  "scheduling": "جارٍ الجدولة",
-  "@scheduling": {
-    "description": "Scheduling label"
-  },
-  "errorSavingMessage": "خطأ في حفظ الرسالة",
-  "@errorSavingMessage": {
-    "description": "Error saving message message"
-  },
-  "save": "حفظ",
-  "@save": {
-    "description": "Save button text"
-  },
-  "playtimeApprove": "قبول Playtime",
-  "@playtimeApprove": {
-    "description": "Playtime approve button"
-  },
-  "createYourFirstSession": "أنشئ جلستك الأولى",
-  "@createYourFirstSession": {
-    "description": "Create your first session message"
-  },
-  "playtimeGameRejected": "تم رفض اللعبة",
-  "@playtimeGameRejected": {
-    "description": "Game rejected message"
-  },
-  "failedToRevokeAccess": "فشل في سحب الوصول",
-  "@failedToRevokeAccess": {
-    "description": "Failed to revoke access message"
-  },
-  "recentGames": "الألعاب الأخيرة",
-  "@recentGames": {
-    "description": "Recent games label"
-  },
-  "customizeMessage": "تخصيص الرسالة",
-  "@customizeMessage": {
-    "description": "Customize message button"
-  },
-  "failedToCancelInvite": "فشل في إلغاء الدعوة",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
-  },
-  "errorSendingMessage": "خطأ في إرسال الرسالة",
-  "@errorSendingMessage": {
-    "description": "Error sending message message"
-  },
-  "confirmPassword": "تأكيد كلمة المرور",
-  "@confirmPassword": {
-    "description": "Confirm password field label"
-  },
-  "errorLoadingPrivacyRequests": "خطأ في تحميل طلبات الخصوصية",
-  "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message"
-  },
-  "connectedChildren": "الأطفال المتصلون",
-  "@connectedChildren": {
-    "description": "Connected children label"
-  },
-  "share": "مشاركة",
-  "@share": {
-    "description": "Share button text"
-  },
-  "playtimeEnterGameName": "أدخل اسم اللعبة",
-  "@playtimeEnterGameName": {
-    "description": "Enter game name label"
-  },
-  "pleaseLoginForFamilyFeatures": "يرجى تسجيل الدخول لميزات العائلة",
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Please login for family features message"
-  },
-  "myInvites": "دعواتي",
-  "@myInvites": {
-    "description": "My invites title"
-  },
-  "createGame": "إنشاء لعبة",
-  "@createGame": {
-    "description": "Create game button"
-  },
-  "groupNameOptional": "اسم المجموعة (اختياري)",
-  "@groupNameOptional": {
-    "description": "Group name optional label"
-  },
-  "playtimeNoSessions": "لا توجد جلسات Playtime",
-  "@playtimeNoSessions": {
-    "description": "No playtime sessions message"
-  },
-  "adminScreenTBD": "شاشة الإدارة قيد التحديد",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "عنوان لوحة الآباء في Playtime",
-  "@playtimeParentDashboardTitle": {
-    "description": "Playtime parent dashboard title"
+  "@appTitle": {
+    "description": "The title of the application"
   },
-  "close": "إغلاق",
-  "@close": {
-    "description": "Close button text"
-  },
-  "knownGroupDetected": "تم الكشف عن مجموعة معروفة",
-  "@knownGroupDetected": {
-    "description": "Known group detected message"
-  },
-  "back": "عودة",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "اختر لعبة",
-  "@playtimeChooseGame": {
-    "description": "Choose game label"
+  "@cancel": {
+    "description": "Cancel button text"
   },
-  "managePermissions": "إدارة الأذونات",
-  "@managePermissions": {
-    "description": "Manage permissions button"
+  "@cancelInvite": {
+    "description": "Cancel invite button"
   },
-  "pollOptions": "خيارات الاستطلاع",
-  "@pollOptions": {
-    "description": "Poll options label"
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
   },
-  "clicked": "تم النقر",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "@choose": {
+    "description": "Choose button text"
+  },
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "رابط",
+  "@clientScreenTBD": {
+    "description": "Client screen TBD message"
+  },
+  "@close": {
+    "description": "Close button text"
+  },
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message title"
+  },
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "@content": {
+    "description": "Content label"
+  },
+  "@copy": {
+    "description": "Copy button text"
+  },
+  "@createGame": {
+    "description": "Create game button"
+  },
+  "@createLiveSession": {
+    "description": "Create live session button"
+  },
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
+  },
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "@created": {
+    "description": "Created status"
+  },
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "@dashboard": {
+    "description": "Dashboard title"
+  },
+  "@decline": {
+    "description": "Decline button"
+  },
+  "@defaultShareMessage": {
+    "description": "Default share message"
+  },
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "@details": {
+    "description": "Details label"
+  },
+  "@done": {
+    "description": "Done button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "@email": {
+    "description": "Email field label"
+  },
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "@enterGroupName": {
+    "description": "Enter group name placeholder"
+  },
+  "@error": {
+    "description": "Error message"
+  },
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message"
+  },
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message"
+  },
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "@errorSavingMessage": {
+    "description": "Error saving message message"
+  },
+  "@errorSendingMessage": {
+    "description": "Error sending message message"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message"
+  },
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message"
+  },
+  "@familyDashboard": {
+    "description": "Family dashboard title"
+  },
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "@fcmToken": {
+    "description": "FCM token label"
+  },
+  "@forgotPassword": {
+    "description": "Forgot password link text"
+  },
+  "@groupNameOptional": {
+    "description": "Group name optional label"
+  },
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "@invite": {
+    "description": "Invite button"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "@inviteDetail": {
+    "description": "Invite detail title"
+  },
+  "@invited": {
+    "description": "Invited status"
+  },
+  "@knownGroupDetected": {
+    "description": "Known group detected message"
+  },
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "الاجتماع جاهز",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@login": {
+    "description": "Login button text"
+  },
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "@managePermissions": {
+    "description": "Manage permissions button"
+  },
+  "@mediaOptional": {
+    "description": "Media optional label"
+  },
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "الدعوات المعلقة",
+  "@meetingSharedSuccessfully": {
+    "description": "Meeting shared successfully message"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "@myInvites": {
+    "description": "My invites title"
+  },
+  "@myProfile": {
+    "description": "My profile title"
+  },
+  "@next": {
+    "description": "Next button text"
+  },
+  "@no": {
+    "description": "No button text"
+  },
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
+  },
+  "@notificationSettings": {
+    "description": "Notification settings title"
+  },
+  "@notifications": {
+    "description": "Notifications title"
+  },
+  "@ok": {
+    "description": "OK button text"
+  },
+  "@opened": {
+    "description": "Opened status"
+  },
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "@participants": {
+    "description": "Participants label"
+  },
+  "@password": {
+    "description": "Password field label"
+  },
+  "@paste": {
+    "description": "Paste button text"
+  },
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "الحالة:",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
+  },
+  "@playtimeChooseGame": {
+    "description": "Choose game label"
+  },
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "@playtimeCreate": {
+    "description": "Create button"
+  },
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "@playtimeGameApproved": {
+    "description": "Game approved message"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Game deleted message"
+  },
+  "@playtimeGameRejected": {
+    "description": "Game rejected message"
+  },
+  "@playtimeHub": {
+    "description": "Playtime hub title"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "@playtimeLive": {
+    "description": "Live play label"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
+  },
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
+  "@playtimeNoSessions": {
+    "description": "No playtime sessions message"
+  },
+  "@playtimeParentDashboardTitle": {
+    "description": "Playtime parent dashboard title"
+  },
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "@playtimeVirtual": {
+    "description": "Virtual play label"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "@recipients": {
+    "description": "Recipients label"
+  },
+  "@redo": {
+    "description": "Redo button text"
+  },
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  "@removeChild": {
+    "description": "Remove child button"
+  },
+  "@requestType": {
+    "description": "Request type label"
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@revoke": {
+    "description": "Revoke button"
+  },
+  "@revokeAccess": {
+    "description": "Revoke access button"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "@save": {
+    "description": "Save button text"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
+  },
+  "@scheduleForLater": {
+    "description": "Schedule for later button"
+  },
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "@scheduling": {
+    "description": "Scheduling label"
+  },
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "@select": {
+    "description": "Select button text"
+  },
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "@share": {
+    "description": "Share button text"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "@staffScreenTBD": {
+    "description": "Staff screen TBD message"
+  },
+  "@status": {
+    "description": "Status label"
+  },
   "@statusColon": {
     "description": "Status colon label"
   },
-  "@@locale": "ar",
-  "pleaseLoginToViewProfile": "يرجى تسجيل الدخول لعرض الملف الشخصي"
+  "@success": {
+    "description": "Success message"
+  },
+  "@targetingFilters": {
+    "description": "Targeting filters label"
+  },
+  "@type": {
+    "description": "Type label"
+  },
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "@yes": {
+    "description": "Yes button text"
+  },
+  "@yesCancel": {
+    "description": "Yes cancel button"
+  },
+  "about": "حول",
+  "accept": "قبول",
+  "accessRevokedSuccessfully": "تم سحب الوصول بنجاح",
+  "add": "إضافة",
+  "adminBroadcast": "بث الإدارة",
+  "adminScreenTBD": "شاشة الإدارة قيد التحديد",
+  "appTitle": "عنوان التطبيق",
+  "back": "عودة",
+  "cancel": "إلغاء",
+  "cancelInvite": "إلغاء الدعوة",
+  "cancelInviteConfirmation": "إلغاء تأكيد الدعوة",
+  "checkingPermissions": "جاري التحقق من الأذونات",
+  "choose": "اختر",
+  "clicked": "تم النقر",
+  "clientScreenTBD": "شاشة العميل قيد التحديد",
+  "close": "إغلاق",
+  "composeBroadcastMessage": "إنشاء رسالة البث",
+  "confirm": "تأكيد",
+  "confirmPassword": "تأكيد كلمة المرور",
+  "connectedChildren": "الأطفال المتصلون",
+  "content": "المحتوى",
+  "copy": "نسخ",
+  "createGame": "إنشاء لعبة",
+  "createLiveSession": "إنشاء جلسة مباشرة",
+  "createNew": "إنشاء جديد",
+  "createVirtualSession": "إنشاء جلسة افتراضية",
+  "createYourFirstGame": "أنشئ لعبتك الأولى",
+  "createYourFirstSession": "أنشئ جلستك الأولى",
+  "created": "تم الإنشاء",
+  "customizeMessage": "تخصيص الرسالة",
+  "cut": "قص",
+  "dashboard": "لوحة القيادة",
+  "decline": "رفض",
+  "defaultShareMessage": "رسالة المشاركة الافتراضية",
+  "delete": "حذف",
+  "details": "التفاصيل",
+  "done": "تم",
+  "download": "تنزيل",
+  "edit": "تعديل",
+  "email": "البريد الإلكتروني",
+  "enableNotifications": "تفعيل الإشعارات",
+  "enterGroupName": "أدخل اسم المجموعة",
+  "error": "خطأ",
+  "errorCheckingPermissions": "خطأ في التحقق من الأذونات",
+  "errorLoadingFamilyLinks": "خطأ في تحميل روابط العائلة",
+  "errorLoadingInvites": "خطأ في تحميل الدعوات",
+  "errorLoadingPrivacyRequests": "خطأ في تحميل طلبات الخصوصية",
+  "errorLoadingProfile": "خطأ في تحميل الملف الشخصي",
+  "errorSavingMessage": "خطأ في حفظ الرسالة",
+  "errorSendingMessage": "خطأ في إرسال الرسالة",
+  "failedToActionPrivacyRequest": "فشل في تنفيذ طلب الخصوصية",
+  "failedToCancelInvite": "فشل في إلغاء الدعوة",
+  "failedToResendOtp": "فشل في إعادة إرسال رمز التحقق",
+  "failedToRevokeAccess": "فشل في سحب الوصول",
+  "familyDashboard": "لوحة تحكم العائلة",
+  "familyMembers": "أفراد العائلة",
+  "fcmToken": "رمز FCM",
+  "forgotPassword": "هل نسيت كلمة المرور؟",
+  "groupNameOptional": "اسم المجموعة (اختياري)",
+  "home": "الرئيسية",
+  "invite": "دعوة",
+  "inviteCancelledSuccessfully": "تم إلغاء الدعوة بنجاح",
+  "inviteDetail": "تفاصيل الدعوة",
+  "invited": "مدعو",
+  "knownGroupDetected": "تم الكشف عن مجموعة معروفة",
+  "link": "رابط",
+  "loading": "جارٍ التحميل",
+  "login": "تسجيل الدخول",
+  "logout": "تسجيل الخروج",
+  "managePermissions": "إدارة الأذونات",
+  "mediaOptional": "وسائط (اختياري)",
+  "meetingReadyMessage": "الاجتماع جاهز",
+  "meetingSharedSuccessfully": "تم مشاركة الاجتماع بنجاح",
+  "messageSavedSuccessfully": "تم حفظ الرسالة بنجاح",
+  "messageSentSuccessfully": "تم إرسال الرسالة بنجاح",
+  "myInvites": "دعواتي",
+  "myProfile": "ملفي الشخصي",
+  "next": "التالي",
+  "no": "لا",
+  "noBroadcastMessages": "لا توجد رسائل بث",
+  "noFamilyMembersYet": "لا يوجد أعضاء عائلة بعد",
+  "noGamesYet": "لا توجد ألعاب بعد",
+  "noInvites": "لا توجد دعوات",
+  "noPermissionForBroadcast": "لا يوجد إذن للبث",
+  "noProfileFound": "لم يتم العثور على ملف شخصي",
+  "noResults": "لا توجد نتائج",
+  "noSessionsYet": "لا توجد جلسات بعد",
+  "notificationSettings": "إعدادات الإشعارات",
+  "notifications": "الإشعارات",
+  "ok": "حسناً",
+  "opened": "مفتوح",
+  "otpResentSuccessfully": "تم إعادة إرسال رمز التحقق",
+  "participants": "المشاركون",
+  "password": "كلمة المرور",
+  "paste": "لصق",
+  "pendingInvites": "الدعوات المعلقة",
+  "pickImage": "اختر صورة",
+  "pickVideo": "اختر فيديو",
+  "playtimeAdminPanelTitle": "عنوان لوحة إدارة Playtime",
+  "playtimeApprove": "قبول Playtime",
+  "playtimeChooseFriends": "اختر الأصدقاء",
+  "playtimeChooseGame": "اختر لعبة",
+  "playtimeChooseTime": "اختر الوقت",
+  "playtimeCreate": "إنشاء Playtime",
+  "playtimeCreateSession": "إنشاء جلسة",
+  "playtimeDescription": "وصف Playtime",
+  "playtimeEnterGameName": "أدخل اسم اللعبة",
+  "playtimeGameApproved": "تم الموافقة على اللعبة",
+  "playtimeGameDeleted": "تم حذف اللعبة",
+  "playtimeGameRejected": "تم رفض اللعبة",
+  "playtimeHub": "مركز Playtime",
+  "playtimeLandingChooseMode": "اختر وضعاً",
+  "playtimeLive": "Playtime مباشر",
+  "playtimeLiveScheduled": "تم جدول البث المباشر",
+  "playtimeModeLive": "وضع مباشر",
+  "playtimeModeVirtual": "الوضع الافتراضي",
+  "playtimeNoSessions": "لا توجد جلسات Playtime",
+  "playtimeParentDashboardTitle": "عنوان لوحة الآباء في Playtime",
+  "playtimeReject": "رفض Playtime",
+  "playtimeTitle": "عنوان Playtime",
+  "playtimeVirtual": "Playtime افتراضي",
+  "playtimeVirtualStarted": "بدأت الجلسة الافتراضية",
+  "pleaseLoginForFamilyFeatures": "يرجى تسجيل الدخول لميزات العائلة",
+  "pleaseLoginToViewProfile": "يرجى تسجيل الدخول لعرض الملف الشخصي",
+  "pollOptions": "خيارات الاستطلاع",
+  "previous": "السابق",
+  "profile": "الملف الشخصي",
+  "quickActions": "إجراءات سريعة",
+  "recentGames": "الألعاب الأخيرة",
+  "recipients": "المستلمون",
+  "redo": "إعادة",
+  "refresh": "تحديث",
+  "removeChild": "إزالة طفل",
+  "requestType": "نوع الطلب",
+  "retry": "أعد المحاولة",
+  "revoke": "سحب",
+  "revokeAccess": "سحب الوصول",
+  "revokeAccessConfirmation": "تأكيد سحب الوصول",
+  "save": "حفظ",
+  "saveGroupForRecognition": "احفظ المجموعة للتعرف",
+  "scheduleForLater": "جدولة لاحقاً",
+  "scheduleMessage": "جدولة رسالة",
+  "scheduled": "مجدول",
+  "scheduledFor": "مجدول لـ",
+  "scheduling": "جارٍ الجدولة",
+  "search": "بحث",
+  "select": "اختر",
+  "sendNow": "أرسل الآن",
+  "settings": "الإعدادات",
+  "share": "مشاركة",
+  "shareOnWhatsApp": "[AR] Share on WhatsApp",
+  "signUp": "سجّل",
+  "staffScreenTBD": "شاشة الموظفين قيد التحديد",
+  "status": "الحالة",
+  "statusColon": "الحالة:",
+  "success": "تم بنجاح",
+  "targetingFilters": "فلاتر الاستهداف",
+  "type": "النوع",
+  "undo": "تراجع",
+  "upcomingSessions": "الجلسات القادمة",
+  "upload": "تحميل",
+  "viewAll": "عرض الكل",
+  "welcome": "مرحباً",
+  "welcomeToPlaytime": "مرحباً بك في Playtime",
+  "yes": "نعم",
+  "yesCancel": "نعم، إلغاء"
 }

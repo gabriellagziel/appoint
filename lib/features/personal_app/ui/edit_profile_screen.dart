@@ -4,7 +4,7 @@ class EditProfileScreen extends StatelessWidget {
   const EditProfileScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Edit Profile')),
       body: Padding(
@@ -20,12 +20,12 @@ class EditProfileScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            TextField(
-              decoration: const InputDecoration(labelText: 'Username'),
+            const TextField(
+              decoration: InputDecoration(labelText: 'Username'),
             ),
             const SizedBox(height: 8),
-            TextField(
-              decoration: const InputDecoration(labelText: 'Bio'),
+            const TextField(
+              decoration: InputDecoration(labelText: 'Bio'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(

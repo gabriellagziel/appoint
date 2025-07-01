@@ -54,7 +54,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get undo => 'واگرد';
 
   @override
-  String get opened => 'باز شد';
+  String opened(Object count) {
+    return 'باز شد';
+  }
 
   @override
   String get createVirtualSession => 'ایجاد جلسه مجازی';
@@ -269,9 +271,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get playtimeLive => 'Playtime زنده';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'خطا در بارگذاری دعوت‌ها';
-  }
+  String get errorLoadingInvites => 'خطا در بارگذاری دعوت‌ها';
 
   @override
   String get targetingFilters => 'فیلترهای هدف';
@@ -289,7 +289,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get accessRevokedSuccessfully => 'دسترسی با موفقیت باطل شد';
 
   @override
-  String get type => 'نوع';
+  String type(Object type) {
+    return 'نوع';
+  }
 
   @override
   String get checkingPermissions => 'در حال بررسی دسترسی‌ها';
@@ -342,9 +344,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String get playtimeReject => 'رد Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'خطا در بارگذاری پروفایل';
-  }
+  String get errorLoadingProfile => 'خطا در بارگذاری پروفایل';
 
   @override
   String get edit => 'ویرایش';
@@ -551,4 +551,22 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get pleaseLoginToViewProfile =>
       'لطفاً برای مشاهده پروفایل خود وارد شوید.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

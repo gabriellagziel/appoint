@@ -1,23 +1,23 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-import '../models/support_ticket.dart';
+import 'package:appoint/models/support_ticket.dart';
 
 class FamilySupportService {
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
 
-  FamilySupportService({FirebaseFirestore? firestore, FirebaseAuth? auth})
+  FamilySupportService({final FirebaseFirestore? firestore, final FirebaseAuth? auth})
       : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
 
   CollectionReference<SupportTicket> get _collection =>
       _firestore.collection('supportTickets').withConverter<SupportTicket>(
-            fromFirestore: (snap, _) => SupportTicket.fromJson(snap.data()!),
-            toFirestore: (ticket, _) => ticket.toJson(),
+            fromFirestore: (final snap, final _) => SupportTicket.fromJson(snap.data()!),
+            toFirestore: (final ticket, final _) => ticket.toJson(),
           );
 
-  Future<void> submitTicket(String subject, String message) async {
+  Future<void> submitTicket(final String subject, final String message) async {
     final uid = _auth.currentUser?.uid;
     if (uid == null) throw Exception('Not logged in');
     final doc = _collection.doc();
@@ -38,6 +38,6 @@ class FamilySupportService {
         .where('userId', isEqualTo: uid)
         .orderBy('createdAt', descending: true)
         .snapshots()
-        .map((snap) => snap.docs.map((d) => d.data()).toList());
+        .map((final snap) => snap.docs.map((final d) => d.data()).toList());
   }
 }

@@ -23,7 +23,7 @@ Future<void> main() async {
   // when(FirebaseAnalytics.instance).thenReturn(MockFirebaseAnalytics());
 
   group('AdminBroadcastScreen', () {
-    Widget createTestWidget(Widget child) {
+    Widget createTestWidget(final Widget child) {
       return ProviderScope(
         child: MaterialApp(
           localizationsDelegates: AppLocalizations.localizationsDelegates,
@@ -34,18 +34,18 @@ Future<void> main() async {
     }
 
     testWidgets('should display the title in app bar',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       expect(find.text('Admin Broadcast'), findsOneWidget);
     });
 
     testWidgets('should have add button in app bar',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       final addButton = find.byIcon(Icons.add);
@@ -53,18 +53,18 @@ Future<void> main() async {
     });
 
     testWidgets('should display loading indicator initially',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       expect(find.byType(CircularProgressIndicator), findsOneWidget);
     });
 
     testWidgets('should display empty state when no messages',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       // Wait for loading to complete
@@ -74,9 +74,9 @@ Future<void> main() async {
     });
 
     testWidgets('should show compose dialog when add button is tapped',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       // Wait for loading to complete
@@ -93,9 +93,9 @@ Future<void> main() async {
     });
 
     testWidgets('should have form fields in compose dialog',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       // Wait for loading to complete
@@ -111,9 +111,9 @@ Future<void> main() async {
     });
 
     testWidgets('should close dialog when cancel is tapped',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       // Wait for loading to complete
@@ -135,9 +135,9 @@ Future<void> main() async {
     });
 
     testWidgets('should display message type options in dropdown',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       // Wait for loading to complete
@@ -164,9 +164,9 @@ Future<void> main() async {
     });
 
     testWidgets('should display status chips with correct colors',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       // Wait for loading to complete
@@ -182,9 +182,9 @@ Future<void> main() async {
       }
     });
 
-    testWidgets('should handle form validation', (WidgetTester tester) async {
+    testWidgets('should handle form validation', (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       // Wait for loading to complete
@@ -203,9 +203,9 @@ Future<void> main() async {
     });
 
     testWidgets('should display message details correctly',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       // Wait for loading to complete
@@ -217,9 +217,9 @@ Future<void> main() async {
     });
 
     testWidgets('should have proper navigation structure',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
-        createTestWidget(AdminBroadcastScreen()),
+        createTestWidget(const AdminBroadcastScreen()),
       );
 
       // Check for scaffold structure

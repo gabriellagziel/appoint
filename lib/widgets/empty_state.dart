@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_spacing.dart';
-import '../theme/app_text_styles.dart';
+import 'package:appoint/theme/app_spacing.dart';
+import 'package:appoint/theme/app_text_styles.dart';
 
 /// Themed empty state with optional call to action.
 class EmptyState extends StatelessWidget {
@@ -21,7 +21,7 @@ class EmptyState extends StatelessWidget {
   final VoidCallback? onPressed;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return AnimatedOpacity(
       opacity: 1,
       duration: const Duration(milliseconds: 300),

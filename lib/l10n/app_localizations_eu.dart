@@ -9,115 +9,118 @@ class AppLocalizationsEu extends AppLocalizations {
   AppLocalizationsEu([String locale = 'eu']) : super(locale);
 
   @override
-  String get refresh => 'Eguneratu';
+  String get refresh => '[EU] Refresh';
 
   @override
   String get home => 'Hasiera';
 
   @override
-  String get noSessionsYet => 'Oraindik ez da saiorik';
+  String get noSessionsYet => '[EU] No sessions yet';
 
   @override
   String get ok => 'Ados';
 
   @override
-  String get playtimeLandingChooseMode => 'Hautatu modua';
+  String get playtimeLandingChooseMode => '[EU] Choose your play mode:';
 
   @override
-  String get signUp => 'Erregistratu';
+  String get signUp => '[EU] Sign Up';
 
   @override
-  String get scheduleMessage => 'Mezua programatu';
+  String get scheduleMessage => '[EU] Schedule Message';
 
   @override
-  String get decline => 'Ukatu';
+  String get decline => '[EU] Decline';
 
   @override
-  String get adminBroadcast => 'Administratzailearen emisioa';
+  String get adminBroadcast => '[EU] Admin Broadcast';
 
   @override
   String get login => 'Saioa hasi';
 
   @override
-  String get playtimeChooseFriends => 'Lagunak hautatu';
+  String get playtimeChooseFriends => '[EU] Choose friends to invite';
 
   @override
-  String get noInvites => 'Ez dago gonbidapenik';
+  String get noInvites => '[EU] No invites';
 
   @override
-  String get playtimeChooseTime => 'Ordua hautatu';
+  String get playtimeChooseTime => '[EU] Choose a time';
 
   @override
   String get success => 'Arrakasta';
 
   @override
-  String get undo => 'Desegin';
+  String get undo => '[EU] Undo';
 
   @override
-  String get opened => 'Ireki da';
+  String opened(Object count) {
+    return 'Ireki da';
+  }
 
   @override
-  String get createVirtualSession => 'Saio birtuala sortu';
+  String get createVirtualSession => '[EU] Create Virtual Session';
 
   @override
-  String get messageSentSuccessfully => 'Mezua ondo bidali da';
+  String get messageSentSuccessfully => '[EU] Message sent successfully';
 
   @override
-  String get redo => 'Berriro egin';
+  String get redo => '[EU] Redo';
 
   @override
   String get next => 'Hurrengoa';
 
   @override
-  String get search => 'Bilatu';
+  String get search => '[EU] Search';
 
   @override
-  String get cancelInviteConfirmation => 'Gonbidapenaren berrespena ezeztatu';
+  String get cancelInviteConfirmation =>
+      '[EU] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return 'Sortu da';
+    return '[EU] Created';
   }
 
   @override
   String get revokeAccess => 'Sarbidea kentzea';
 
   @override
-  String get saveGroupForRecognition => 'Taldea gordetu ezagutzeko';
+  String get saveGroupForRecognition => '[EU] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Zuzeneko saioa programatu da';
+  String get playtimeLiveScheduled => '[EU] Live playtime scheduled!';
 
   @override
   String get revokeAccessConfirmation => 'Sarbide-ezgaitzearen berrespena';
 
   @override
-  String get download => 'Deskargatu';
+  String get download => '[EU] Download';
 
   @override
   String get password => 'Pasahitza';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Error familia-estekak kargatzean';
+    return '[EU] Error loading family links';
   }
 
   @override
-  String get cancel => 'Ezeztatu';
+  String get cancel => '[EU] Cancel';
 
   @override
-  String get playtimeCreate => 'Playtime sortu';
+  String get playtimeCreate => '[EU] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Pribatutasun-eskabidea ezin izan da betearazi';
+    return '[EU] Failed to action privacy request';
   }
 
   @override
   String get appTitle => 'Aplikazioaren izenburua';
 
   @override
-  String get accept => 'Onartu';
+  String get accept => '[EU] Accept';
 
   @override
   String get playtimeModeVirtual => 'Modu birtuala';
@@ -126,13 +129,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get playtimeDescription => 'Playtime deskribapena';
 
   @override
-  String get delete => 'Ezabatu';
+  String get delete => '[EU] Delete';
 
   @override
   String get playtimeVirtualStarted => 'Saio birtuala hasi da';
 
   @override
-  String get createYourFirstGame => 'Sortu zure lehenengo jokoa';
+  String get createYourFirstGame => '[EU] Create your first game';
 
   @override
   String get participants => 'Parte-hartzaileak';
@@ -149,16 +152,16 @@ class AppLocalizationsEu extends AppLocalizations {
   String get yes => 'Bai';
 
   @override
-  String get invite => 'Gonbidatu';
+  String get invite => '[EU] Invite';
 
   @override
   String get playtimeModeLive => 'Modu zuzenean';
 
   @override
-  String get done => 'Eginda';
+  String get done => '[EU] Done';
 
   @override
-  String get defaultShareMessage => 'Partekatzeko mezua lehenetsia';
+  String get defaultShareMessage => '[EU] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Ez';
@@ -167,17 +170,17 @@ class AppLocalizationsEu extends AppLocalizations {
   String get playtimeHub => 'Playtime zentroa';
 
   @override
-  String get error => 'Errorea';
+  String get error => '[EU] Error';
 
   @override
-  String get createLiveSession => 'Saio zuzena sortu';
+  String get createLiveSession => '[EU] Create Live Session';
 
   @override
-  String get enableNotifications => 'Jakinarazpenak gaituta';
+  String get enableNotifications => '[EU] Enable Notifications';
 
   @override
   String invited(Object date) {
-    return 'Gonbidatua';
+    return '[EU] Invited';
   }
 
   @override
@@ -186,10 +189,10 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Bilera ondo partekatu da';
+  String get meetingSharedSuccessfully => '[EU] Meeting shared successfully';
 
   @override
-  String get welcomeToPlaytime => 'Ongi etorri Playtimera';
+  String get welcomeToPlaytime => '[EU] Welcome to Playtime';
 
   @override
   String get viewAll => 'Denak ikusi';
@@ -204,31 +207,32 @@ class AppLocalizationsEu extends AppLocalizations {
   String get cut => 'Ebaki';
 
   @override
-  String get inviteCancelledSuccessfully => 'Gonbidapena ondo ezeztatu da';
+  String get inviteCancelledSuccessfully =>
+      '[EU] Invite cancelled successfully';
 
   @override
-  String get retry => 'Saiatu berriro';
+  String get retry => '[EU] Retry';
 
   @override
-  String get composeBroadcastMessage => 'Iragarki-mezua sortu';
+  String get composeBroadcastMessage => '[EU] Compose Broadcast Message';
 
   @override
-  String get sendNow => 'Bidali orain';
+  String get sendNow => '[EU] Send Now';
 
   @override
-  String get noGamesYet => 'Oraindik ez da jokoik';
+  String get noGamesYet => '[EU] No games yet';
 
   @override
-  String get select => 'Hautatu';
+  String get select => '[EU] Select';
 
   @override
-  String get about => 'Honi buruz';
+  String get about => '[EU] About';
 
   @override
-  String get choose => 'Hautatu';
+  String get choose => '[EU] Choose';
 
   @override
-  String get profile => 'Profila';
+  String get profile => '[EU] Profile';
 
   @override
   String get removeChild => 'Haurraren kentzea';
@@ -242,13 +246,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get logout => 'Saioa itxi';
 
   @override
-  String get paste => 'Itsatsi';
+  String get paste => '[EU] Paste';
 
   @override
-  String get welcome => 'Ongi etorri';
+  String get welcome => '[EU] Welcome';
 
   @override
-  String get playtimeCreateSession => 'Saio sortu';
+  String get playtimeCreateSession => '[EU] Create a Playtime Session';
 
   @override
   String get familyMembers => 'Senideak';
@@ -257,7 +261,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get upload => 'Igotu';
 
   @override
-  String get upcomingSessions => 'Etorkizuneko saioak';
+  String get upcomingSessions => '[EU] Upcoming Sessions';
 
   @override
   String get enterGroupName => 'Talde-izena sartu';
@@ -269,51 +273,51 @@ class AppLocalizationsEu extends AppLocalizations {
   String get playtimeLive => 'Playtime zuzenean';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Gonbidapenak kargatzean errorea';
-  }
+  String get errorLoadingInvites => '[EU] Error loading invites';
 
   @override
   String get targetingFilters => 'Helburu-iragazkiak';
 
   @override
-  String get pickVideo => 'Bideoa hautatu';
+  String get pickVideo => '[EU] Pick Video';
 
   @override
-  String get playtimeGameDeleted => 'Jokoa ezabatu da';
+  String get playtimeGameDeleted => '[EU] Game deleted';
 
   @override
-  String get scheduleForLater => 'Beranduago programatu';
+  String get scheduleForLater => '[EU] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully => 'Sarbidea ondo kendu da';
+  String get accessRevokedSuccessfully => '[EU] Access revoked successfully';
 
   @override
-  String get type => 'Mota';
+  String type(Object type) {
+    return 'Mota';
+  }
 
   @override
   String get checkingPermissions => 'Baimenen egiaztapena';
 
   @override
-  String get copy => 'Kopiatu';
+  String get copy => '[EU] Copy';
 
   @override
-  String get yesCancel => 'Bai, ezeztatu';
+  String get yesCancel => '[EU] Yes, Cancel';
 
   @override
-  String get email => 'Posta elektronikoa';
+  String get email => '[EU] Email';
 
   @override
-  String get shareOnWhatsApp => 'Partekatu WhatsApp-en';
+  String get shareOnWhatsApp => '[EU] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Jakinarazpenen ezarpenak';
+  String get notificationSettings => '[EU] Notification Settings';
 
   @override
-  String get myProfile => 'Nire profila';
+  String get myProfile => '[EU] My Profile';
 
   @override
-  String get revoke => 'Ezeztatu';
+  String get revoke => '[EU] Revoke';
 
   @override
   String get noBroadcastMessages => 'Ez dago mezu-emisioik';
@@ -324,48 +328,46 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get notifications => 'Jakinarazpenak';
+  String get notifications => '[EU] Notifications';
 
   @override
   String get details => 'Xehetasunak';
 
   @override
-  String get cancelInvite => 'Gonbidapena ezeztatu';
+  String get cancelInvite => '[EU] Cancel Invite';
 
   @override
-  String get createNew => 'Sortu berria';
+  String get createNew => '[EU] Create New';
 
   @override
   String get settings => 'Ezarpenak';
 
   @override
-  String get playtimeReject => 'Playtime ukatu';
+  String get playtimeReject => '[EU] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Profila kargatzean errorea';
-  }
+  String get errorLoadingProfile => '[EU] Error loading profile';
 
   @override
-  String get edit => 'Editatu';
+  String get edit => '[EU] Edit';
 
   @override
   String get add => 'Gehitu';
 
   @override
-  String get playtimeGameApproved => 'Jokoa onartu da';
+  String get playtimeGameApproved => '[EU] Game approved';
 
   @override
   String get forgotPassword => 'Pasahitza ahaztu duzu?';
 
   @override
-  String get familyDashboard => 'Senide-kontrol panela';
+  String get familyDashboard => '[EU] Family Dashboard';
 
   @override
-  String get loading => 'Kargatzen';
+  String get loading => '[EU] Loading...';
 
   @override
-  String get quickActions => 'Ekintza azkarrak';
+  String get quickActions => '[EU] Quick Actions';
 
   @override
   String get playtimeTitle => 'Playtime izenburua';
@@ -375,7 +377,7 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Baimenen egiaztapenean errorea';
+    return '[EU] Error checking permissions';
   }
 
   @override
@@ -383,91 +385,91 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'FCM tokena';
+    return '[EU] FCM Token';
   }
 
   @override
-  String get pickImage => 'Irudia hautatu';
+  String get pickImage => '[EU] Pick Image';
 
   @override
   String get previous => 'Aurrekoa';
 
   @override
-  String get noProfileFound => 'Ez da profilik aurkitu';
+  String get noProfileFound => '[EU] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Oraindik ez da seniderik';
+  String get noFamilyMembersYet => '[EU] No family members yet';
 
   @override
   String get mediaOptional => 'Hedabideak (boluntarioa)';
 
   @override
-  String get messageSavedSuccessfully => 'Mezua ondo gorde da';
+  String get messageSavedSuccessfully => '[EU] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Programatua';
+  String get scheduledFor => '[EU] Scheduled for';
 
   @override
-  String get dashboard => 'Kontrol panela';
+  String get dashboard => '[EU] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => 'Ez dago baimenik emisiorako';
+  String get noPermissionForBroadcast => '[EU] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime administrazio panela';
+  String get playtimeAdminPanelTitle => '[EU] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Gonbidapenaren xehetasunak';
+  String get inviteDetail => '[EU] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return 'Programatua';
+    return '[EU] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'OTP berriro bidaltzean errorea';
+    return '[EU] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => 'Programatzen';
+  String get scheduling => '[EU] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Mezua gordetzean errorea';
+    return '[EU] Error saving message';
   }
 
   @override
-  String get save => 'Gorde';
+  String get save => '[EU] Save';
 
   @override
-  String get playtimeApprove => 'Playtime onartu';
+  String get playtimeApprove => '[EU] Approve';
 
   @override
-  String get createYourFirstSession => 'Sortu zure lehenengo saioa';
+  String get createYourFirstSession => '[EU] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'Jokoa ukatu da';
+  String get playtimeGameRejected => '[EU] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Sarbidea kentzean errorea';
+    return '[EU] Failed to revoke access';
   }
 
   @override
   String get recentGames => 'Azken jokoak';
 
   @override
-  String get customizeMessage => 'Mezua pertsonalizatu';
+  String get customizeMessage => '[EU] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Gonbidapena ezeztatzean errorea';
+    return '[EU] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Mezua bidaltzean errorea';
+    return '[EU] Error sending message';
   }
 
   @override
@@ -475,14 +477,14 @@ class AppLocalizationsEu extends AppLocalizations {
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Pribatutasun eskabideak kargatzean errorea';
+    return '[EU] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Haurrak konektatuta';
+  String get connectedChildren => '[EU] Connected Children';
 
   @override
-  String get share => 'Partekatu';
+  String get share => '[EU] Share';
 
   @override
   String get playtimeEnterGameName => 'Jokoaren izena sartu';
@@ -492,23 +494,22 @@ class AppLocalizationsEu extends AppLocalizations {
       'Saioa hasi familiako funtzioetarako';
 
   @override
-  String get myInvites => 'Nire gonbidapenak';
+  String get myInvites => '[EU] My Invites';
 
   @override
-  String get createGame => 'Jokoa sortu';
+  String get createGame => '[EU] Create Game';
 
   @override
   String get groupNameOptional => 'Talde-izena (boluntarioa)';
 
   @override
-  String get playtimeNoSessions => 'Ez dago Playtime saiorik';
+  String get playtimeNoSessions => '[EU] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Admin-pantaila zehaztu gabe';
+  String get adminScreenTBD => '[EU] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      'Playtime guraso-kontrol panela izenburua';
+  String get playtimeParentDashboardTitle => '[EU] Playtime Dashboard';
 
   @override
   String get close => 'Itxi';
@@ -517,20 +518,20 @@ class AppLocalizationsEu extends AppLocalizations {
   String get knownGroupDetected => 'Ezagutzen den taldea aurkitu da';
 
   @override
-  String get back => 'Atzera';
+  String get back => '[EU] Back';
 
   @override
-  String get playtimeChooseGame => 'Jokoa hautatu';
+  String get playtimeChooseGame => '[EU] Choose a game';
 
   @override
-  String get managePermissions => 'Baimenak kudeatu';
+  String get managePermissions => '[EU] Manage Permissions';
 
   @override
-  String get pollOptions => 'Inkesta aukerak';
+  String get pollOptions => '[EU] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Klik egin da';
+    return '[EU] Clicked';
   }
 
   @override
@@ -542,7 +543,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get meetingReadyMessage => 'Bilera prest dago';
 
   @override
-  String get pendingInvites => 'Zain dauden gonbidapenak';
+  String get pendingInvites => '[EU] Pending Invites';
 
   @override
   String statusColon(Object status) {
@@ -550,5 +551,24 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Saioa hasi profilarekin ikusteko';
+  String get pleaseLoginToViewProfile =>
+      '[EU] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

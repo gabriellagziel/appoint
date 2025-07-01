@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
-import '../providers/ambassador_data_provider.dart';
-import '../models/ambassador_stats.dart';
-import '../models/business_analytics.dart';
-import '../models/branch.dart';
-import '../services/branch_service.dart';
-import '../services/notification_service.dart';
-import 'ambassador_quota_dashboard_screen.dart';
+import 'package:appoint/providers/ambassador_data_provider.dart';
+import 'package:appoint/models/ambassador_stats.dart';
+import 'package:appoint/models/business_analytics.dart';
+import 'package:appoint/models/branch.dart';
+import 'package:appoint/services/branch_service.dart';
+import 'package:appoint/services/notification_service.dart';
+import 'package:appoint/features/ambassador_quota_dashboard_screen.dart';
 
 class AmbassadorDashboardScreen extends ConsumerStatefulWidget {
-  const AmbassadorDashboardScreen({Key? key}) : super(key: key);
+  const AmbassadorDashboardScreen({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<AmbassadorDashboardScreen> createState() =>
@@ -60,7 +60,7 @@ class _AmbassadorDashboardScreenState
 
   Future<void> _initializeNotifications() async {
     await _notificationService.initialize(
-      onMessage: (payload) {
+      onMessage: (final payload) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
@@ -79,7 +79,7 @@ class _AmbassadorDashboardScreenState
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final ambassadorDataAsync = ref.watch(ambassadorDataProvider);
     final ambassadorsOverTimeAsync = ref.watch(ambassadorsOverTimeProvider);
 
@@ -95,7 +95,7 @@ class _AmbassadorDashboardScreenState
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const AmbassadorQuotaDashboardScreen(),
+                  builder: (final context) => const AmbassadorQuotaDashboardScreen(),
                 ),
               );
             },
@@ -121,7 +121,7 @@ class _AmbassadorDashboardScreenState
             const SizedBox(height: 24),
             ambassadorDataAsync.when(
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (error, stack) => Center(
+              error: (final error, final stack) => Center(
                 child: Column(
                   children: [
                     const Icon(Icons.error, size: 48, color: Colors.red),
@@ -139,7 +139,7 @@ class _AmbassadorDashboardScreenState
                   ],
                 ),
               ),
-              data: (data) => Column(
+              data: (final data) => Column(
                 children: [
                   _buildStatsCards(_getFilteredData(data)),
                   const SizedBox(height: 24),
@@ -147,7 +147,7 @@ class _AmbassadorDashboardScreenState
                     data: _buildAmbassadorsOverTimeChart,
                     loading: () =>
                         const Center(child: CircularProgressIndicator()),
-                    error: (e, _) => Text('Error: $e'),
+                    error: (final e, final _) => Text('Error: $e'),
                   ),
                   const SizedBox(height: 24),
                   _buildChart(_getFilteredData(data)),
@@ -169,12 +169,12 @@ class _AmbassadorDashboardScreenState
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: LayoutBuilder(
-          builder: (context, constraints) {
+          builder: (final context, final constraints) {
             if (constraints.maxWidth > 600) {
               // Horizontal layout for larger screens
               return SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-                child: Container(
+                child: SizedBox(
                   width: MediaQuery.of(context).size.width * 1.5,
                   child: Row(
                     children: [
@@ -231,13 +231,13 @@ class _AmbassadorDashboardScreenState
             'Italy',
             'United Kingdom'
           ]
-              .map((country) => DropdownMenuItem<String>(
+              .map((final country) => DropdownMenuItem<String>(
                     value: country,
                     child: Text(country),
                   ))
               .toList(),
         ],
-        onChanged: (value) {
+        onChanged: (final value) {
           setState(() {
             selectedCountry = value;
           });
@@ -266,13 +266,13 @@ class _AmbassadorDashboardScreenState
             child: Text('All Languages'),
           ),
           ...['English', 'Spanish', 'German', 'French', 'Italian', 'Portuguese']
-              .map((language) => DropdownMenuItem<String>(
+              .map((final language) => DropdownMenuItem<String>(
                     value: language,
                     child: Text(language),
                   ))
               .toList(),
         ],
-        onChanged: (value) {
+        onChanged: (final value) {
           setState(() {
             selectedLanguage = value;
           });
@@ -362,7 +362,7 @@ class _AmbassadorDashboardScreenState
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: _branches.length,
-                  itemBuilder: (context, index) {
+                  itemBuilder: (final context, final index) {
                     final branch = _branches[index];
                     return Container(
                       width: 200,
@@ -416,18 +416,18 @@ class _AmbassadorDashboardScreenState
     );
   }
 
-  Widget _buildStatsCards(AmbassadorData data) {
+  Widget _buildStatsCards(final AmbassadorData data) {
     final totalAmbassadors =
-        data.stats.fold<int>(0, (sum, stat) => sum + stat.ambassadors);
+        data.stats.fold<int>(0, (final sum, final stat) => sum + stat.ambassadors);
     final totalReferrals =
-        data.stats.fold<int>(0, (sum, stat) => sum + stat.referrals);
+        data.stats.fold<int>(0, (final sum, final stat) => sum + stat.referrals);
     final averageSurveyScore = data.stats.isEmpty
         ? 0.0
-        : data.stats.fold<double>(0, (sum, stat) => sum + stat.surveyScore) /
+        : data.stats.fold<double>(0, (final sum, final stat) => sum + stat.surveyScore) /
             data.stats.length;
 
     return LayoutBuilder(
-      builder: (context, constraints) {
+      builder: (final context, final constraints) {
         if (constraints.maxWidth > 600) {
           return Row(
             children: [
@@ -461,7 +461,7 @@ class _AmbassadorDashboardScreenState
     );
   }
 
-  Widget _buildStatCard(String title, String value, IconData icon) {
+  Widget _buildStatCard(final String title, final String value, final IconData icon) {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -486,7 +486,7 @@ class _AmbassadorDashboardScreenState
     );
   }
 
-  Widget _buildChart(AmbassadorData data) {
+  Widget _buildChart(final AmbassadorData data) {
     if (data.chartData.isEmpty) {
       return const Card(
         child: Padding(
@@ -525,7 +525,7 @@ class _AmbassadorDashboardScreenState
                     bottomTitles: AxisTitles(
                       sideTitles: SideTitles(
                         showTitles: true,
-                        getTitlesWidget: (value, meta) {
+                        getTitlesWidget: (final value, final meta) {
                           if (value.toInt() >= 0 &&
                               value.toInt() < data.chartData.length) {
                             return Padding(
@@ -545,7 +545,7 @@ class _AmbassadorDashboardScreenState
                       sideTitles: SideTitles(
                         showTitles: true,
                         reservedSize: 40,
-                        getTitlesWidget: (value, meta) {
+                        getTitlesWidget: (final value, final meta) {
                           return Text(
                             value.toInt().toString(),
                             style: const TextStyle(fontSize: 10),
@@ -555,7 +555,7 @@ class _AmbassadorDashboardScreenState
                     ),
                   ),
                   borderData: FlBorderData(show: false),
-                  barGroups: data.chartData.asMap().entries.map((entry) {
+                  barGroups: data.chartData.asMap().entries.map((final entry) {
                     return BarChartGroupData(
                       x: entry.key,
                       barRods: [
@@ -576,7 +576,7 @@ class _AmbassadorDashboardScreenState
     );
   }
 
-  Widget _buildAmbassadorsOverTimeChart(List<TimeSeriesPoint> data) {
+  Widget _buildAmbassadorsOverTimeChart(final List<TimeSeriesPoint> data) {
     if (data.isEmpty) {
       return const Card(
         child: Padding(
@@ -607,7 +607,7 @@ class _AmbassadorDashboardScreenState
                   lineBarsData: [
                     LineChartBarData(
                       spots: data
-                          .map((e) => FlSpot(
+                          .map((final e) => FlSpot(
                               e.date.millisecondsSinceEpoch.toDouble(),
                               e.count.toDouble()))
                           .toList(),
@@ -626,14 +626,14 @@ class _AmbassadorDashboardScreenState
     );
   }
 
-  Widget _buildLanguagePieChart(AmbassadorData data) {
+  Widget _buildLanguagePieChart(final AmbassadorData data) {
     if (data.stats.isEmpty) {
       return const SizedBox.shrink();
     }
 
     final counts = <String, int>{};
     for (final stat in data.stats) {
-      counts.update(stat.language, (v) => v + stat.ambassadors,
+      counts.update(stat.language, (final v) => v + stat.ambassadors,
           ifAbsent: () => stat.ambassadors);
     }
 
@@ -654,7 +654,7 @@ class _AmbassadorDashboardScreenState
                 PieChartData(
                   centerSpaceRadius: 40,
                   sections:
-                      counts.entries.toList().asMap().entries.map((entry) {
+                      counts.entries.toList().asMap().entries.map((final entry) {
                     final index = entry.key;
                     final item = entry.value;
                     return PieChartSectionData(
@@ -672,7 +672,7 @@ class _AmbassadorDashboardScreenState
     );
   }
 
-  Widget _buildDataTable(AmbassadorData data) {
+  Widget _buildDataTable(final AmbassadorData data) {
     if (data.stats.isEmpty) {
       return const Card(
         child: Padding(
@@ -695,7 +695,7 @@ class _AmbassadorDashboardScreenState
             DataColumn(label: Text('Referrals')),
             DataColumn(label: Text('Survey Score')),
           ],
-          rows: data.stats.map((ambassador) {
+          rows: data.stats.map((final ambassador) {
             return DataRow(
               cells: [
                 DataCell(Text(ambassador.country)),
@@ -711,17 +711,17 @@ class _AmbassadorDashboardScreenState
     );
   }
 
-  double _getMaxValue(List<ChartDataPoint> chartData) {
+  double _getMaxValue(final List<ChartDataPoint> chartData) {
     if (chartData.isEmpty) return 100.0;
 
     final maxValue =
-        chartData.map((e) => e.value).reduce((a, b) => a > b ? a : b);
+        chartData.map((final e) => e.value).reduce((final a, final b) => a > b ? a : b);
     return maxValue;
   }
 
-  AmbassadorData _getFilteredData(AmbassadorData data) {
+  AmbassadorData _getFilteredData(final AmbassadorData data) {
     // Apply country/language filters
-    final filteredStats = data.stats.where((s) {
+    final filteredStats = data.stats.where((final s) {
       if (selectedCountry != null && s.country != selectedCountry) return false;
       if (selectedLanguage != null && s.language != selectedLanguage)
         return false;
@@ -729,8 +729,8 @@ class _AmbassadorDashboardScreenState
     }).toList();
 
     // Recalculate chart data based on filtered stats
-    final filteredChartData = data.chartData.where((point) {
-      return filteredStats.any((stat) => stat.country == point.label);
+    final filteredChartData = data.chartData.where((final point) {
+      return filteredStats.any((final stat) => stat.country == point.label);
     }).toList();
 
     return AmbassadorData(

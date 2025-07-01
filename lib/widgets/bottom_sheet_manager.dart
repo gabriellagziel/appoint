@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 class BottomSheetManager {
   /// Shows a modal bottom sheet with the given [child] widget.
   static Future<T?> show<T>({
-    required BuildContext context,
-    required Widget child,
-    bool isDismissible = true,
-    bool useSafeArea = true,
+    required final BuildContext context,
+    required final Widget child,
+    final bool isDismissible = true,
+    final bool useSafeArea = true,
   }) {
     return showModalBottomSheet<T>(
       context: context,
@@ -17,7 +17,7 @@ class BottomSheetManager {
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
-      builder: (_) => Padding(
+      builder: (final _) => Padding(
         padding: MediaQuery.of(context).viewInsets,
         child: child,
       ),

@@ -1,0 +1,54 @@
+Locale,Missing Keys,Details
+am,0,None
+ar,0,None
+bg,0,None
+bn,23,"delete: Delete;participants: Participants;error: Error;cut: Cut;paste: Paste;"
+bn_BD,0,None
+bs,166,"refresh: Refresh;home: Home;noSessionsYet: No sessions yet;ok: OK;playtimeLandingChooseMode: Choose your play mode:;"
+ca,0,None
+cs,0,None
+cy,0,None
+da,0,None
+de,103,"composeBroadcastMessage: Compose Broadcast Message;sendNow: Send Now;noGamesYet: No games yet;select: Select;about: About;"
+en,0,None
+es,103,"composeBroadcastMessage: Compose Broadcast Message;sendNow: Send Now;noGamesYet: No games yet;select: Select;about: About;"
+et,0,None
+eu,0,None
+fa,0,None
+fi,0,None
+fo,0,None
+fr,103,"composeBroadcastMessage: Compose Broadcast Message;sendNow: Send Now;noGamesYet: No games yet;select: Select;about: About;"
+ga,0,None
+gl,166,"refresh: Refresh;home: Home;noSessionsYet: No sessions yet;ok: OK;playtimeLandingChooseMode: Choose your play mode:;"
+he,0,None
+hi,0,None
+hr,0,None
+hu,0,None
+id,0,None
+is,0,None
+it,103,"composeBroadcastMessage: Compose Broadcast Message;sendNow: Send Now;noGamesYet: No games yet;select: Select;about: About;"
+ja,19,"failedToRevokeAccess: Failed to revoke access;pleaseLoginForFamilyFeatures: Please login to access family features;myInvites: My Invites;createGame: Create Game;groupNameOptional: Group Name (Optional);"
+ko,66,"details: Details;cancelInvite: Cancel Invite;createNew: Create New;settings: Settings;playtimeReject: Reject;"
+lt,166,"refresh: Refresh;home: Home;noSessionsYet: No sessions yet;ok: OK;playtimeLandingChooseMode: Choose your play mode:;"
+lv,71,"refresh: Refresh;noSessionsYet: No sessions yet;ok: OK;playtimeLandingChooseMode: Choose your play mode:;signUp: Sign Up;"
+mk,166,"refresh: Refresh;home: Home;noSessionsYet: No sessions yet;ok: OK;playtimeLandingChooseMode: Choose your play mode:;"
+ms,19,"failedToRevokeAccess: Failed to revoke access;pleaseLoginForFamilyFeatures: Please login to access family features;myInvites: My Invites;createGame: Create Game;groupNameOptional: Group Name (Optional);"
+mt,166,"refresh: Refresh;home: Home;noSessionsYet: No sessions yet;ok: OK;playtimeLandingChooseMode: Choose your play mode:;"
+nl,0,None
+no,0,None
+pl,0,None
+pt,103,"composeBroadcastMessage: Compose Broadcast Message;sendNow: Send Now;noGamesYet: No games yet;select: Select;about: About;"
+pt_BR,0,None
+ro,0,None
+ru,0,None
+sk,0,None
+sl,0,None
+sq,0,None
+sr,0,None
+sv,19,"failedToRevokeAccess: Failed to revoke access;pleaseLoginForFamilyFeatures: Please login to access family features;myInvites: My Invites;createGame: Create Game;groupNameOptional: Group Name (Optional);"
+th,0,None
+tr,0,None
+uk,0,None
+ur,0,None
+vi,0,None
+zh,0,None

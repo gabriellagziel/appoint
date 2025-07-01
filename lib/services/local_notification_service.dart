@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../models/notification_item.dart';
+import 'package:appoint/models/notification_item.dart';
 
 /// Simple service that manages in-memory notifications.
 class LocalNotificationService {

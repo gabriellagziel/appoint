@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
-import '../../widgets/admin_guard.dart';
-import '../../providers/admin_provider.dart';
-import '../../models/admin_dashboard_stats.dart';
-import '../../l10n/app_localizations.dart';
-import 'admin_broadcast_screen.dart';
-import 'admin_users_screen.dart';
-import 'admin_orgs_screen.dart';
-import 'admin_demo_panel_screen.dart';
+import 'package:appoint/widgets/admin_guard.dart';
+import 'package:appoint/providers/admin_provider.dart';
+import 'package:appoint/models/admin_dashboard_stats.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/features/admin/admin_broadcast_screen.dart';
+import 'package:appoint/features/admin/admin_users_screen.dart';
+import 'package:appoint/features/admin/admin_orgs_screen.dart';
 
 class AdminDashboardScreen extends ConsumerStatefulWidget {
-  const AdminDashboardScreen({Key? key}) : super(key: key);
+  const AdminDashboardScreen({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<AdminDashboardScreen> createState() =>
@@ -41,7 +40,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final l10n = AppLocalizations.of(context);
 
     return AdminGuard(
@@ -97,7 +96,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     final dashboardStats = ref.watch(adminDashboardStatsProvider);
 
     return dashboardStats.when(
-      data: (stats) => SingleChildScrollView(
+      data: (final stats) => SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -113,7 +112,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
         ),
       ),
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (error, stack) => Center(
+      error: (final error, final stack) => Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -131,7 +130,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  Widget _buildStatsCards(AdminDashboardStats stats) {
+  Widget _buildStatsCards(final AdminDashboardStats stats) {
     return GridView.count(
       crossAxisCount: 2,
       shrinkWrap: true,
@@ -186,8 +185,8 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  Widget _buildStatCard(String title, String value, IconData icon, Color color,
-      {String? subtitle}) {
+  Widget _buildStatCard(final String title, final String value, final IconData icon, final Color color,
+      {final String? subtitle}) {
     return Card(
       elevation: 4,
       child: Padding(
@@ -235,7 +234,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  Widget _buildRevenueChart(AdminDashboardStats stats) {
+  Widget _buildRevenueChart(final AdminDashboardStats stats) {
     return Card(
       elevation: 4,
       child: Padding(
@@ -281,7 +280,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  Widget _buildUserGrowthChart(AdminDashboardStats stats) {
+  Widget _buildUserGrowthChart(final AdminDashboardStats stats) {
     return Card(
       elevation: 4,
       child: Padding(
@@ -301,8 +300,8 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
               height: 200,
               child: LineChart(
                 LineChartData(
-                  gridData: FlGridData(show: true),
-                  titlesData: FlTitlesData(show: false),
+                  gridData: const FlGridData(show: true),
+                  titlesData: const FlTitlesData(show: false),
                   borderData: FlBorderData(show: true),
                   lineBarsData: [
                     LineChartBarData(
@@ -318,7 +317,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
                       isCurved: true,
                       color: Colors.blue,
                       barWidth: 3,
-                      dotData: FlDotData(show: false),
+                      dotData: const FlDotData(show: false),
                     ),
                   ],
                 ),
@@ -357,7 +356,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
                   () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const AdminBroadcastScreen(),
+                      builder: (final context) => const AdminBroadcastScreen(),
                     ),
                   ),
                 ),
@@ -368,7 +367,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
                   () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const AdminUsersScreen(),
+                      builder: (final context) => const AdminUsersScreen(),
                     ),
                   ),
                 ),
@@ -379,18 +378,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
                   () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const AdminOrgsScreen(),
-                    ),
-                  ),
-                ),
-                _buildActionButton(
-                  'Demo Panel',
-                  Icons.science,
-                  Colors.teal,
-                  () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const AdminDemoPanelScreen(),
+                      builder: (final context) => const AdminOrgsScreen(),
                     ),
                   ),
                 ),
@@ -409,7 +397,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
   }
 
   Widget _buildActionButton(
-      String title, IconData icon, Color color, VoidCallback onPressed) {
+      final String title, final IconData icon, final Color color, final VoidCallback onPressed) {
     return ElevatedButton.icon(
       onPressed: onPressed,
       icon: Icon(icon, color: Colors.white),
@@ -426,10 +414,10 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     final errorLogs = ref.watch(errorLogsProvider({'limit': 50}));
 
     return errorLogs.when(
-      data: (logs) => ListView.builder(
+      data: (final logs) => ListView.builder(
         padding: const EdgeInsets.all(16),
         itemCount: logs.length,
-        itemBuilder: (context, index) {
+        itemBuilder: (final context, final index) {
           final log = logs[index];
           return Card(
             margin: const EdgeInsets.only(bottom: 8),
@@ -466,7 +454,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
         },
       ),
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (error, stack) => Center(child: Text('Error: $error')),
+      error: (final error, final stack) => Center(child: Text('Error: $error')),
     );
   }
 
@@ -474,10 +462,10 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     final activityLogs = ref.watch(activityLogsProvider({'limit': 50}));
 
     return activityLogs.when(
-      data: (logs) => ListView.builder(
+      data: (final logs) => ListView.builder(
         padding: const EdgeInsets.all(16),
         itemCount: logs.length,
-        itemBuilder: (context, index) {
+        itemBuilder: (final context, final index) {
           final log = logs[index];
           return Card(
             margin: const EdgeInsets.only(bottom: 8),
@@ -507,7 +495,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
         },
       ),
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (error, stack) => Center(child: Text('Error: $error')),
+      error: (final error, final stack) => Center(child: Text('Error: $error')),
     );
   }
 
@@ -521,22 +509,22 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           monetizationSettings.when(
-            data: (settings) => _buildMonetizationSettings(settings),
+            data: (final settings) => _buildMonetizationSettings(settings),
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (error, stack) => Center(child: Text('Error: $error')),
+            error: (final error, final stack) => Center(child: Text('Error: $error')),
           ),
           const SizedBox(height: 24),
           adRevenueStats.when(
-            data: (stats) => _buildAdRevenueStats(stats),
+            data: (final stats) => _buildAdRevenueStats(stats),
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (error, stack) => Center(child: Text('Error: $error')),
+            error: (final error, final stack) => Center(child: Text('Error: $error')),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildMonetizationSettings(MonetizationSettings settings) {
+  Widget _buildMonetizationSettings(final MonetizationSettings settings) {
     return Card(
       elevation: 4,
       child: Padding(
@@ -555,22 +543,22 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
             _buildSettingSwitch(
               'Ads for Free Users',
               settings.adsEnabledForFreeUsers,
-              (value) => _updateAdSetting('adsEnabledForFreeUsers', value),
+              (final value) => _updateAdSetting('adsEnabledForFreeUsers', value),
             ),
             _buildSettingSwitch(
               'Ads for Children',
               settings.adsEnabledForChildren,
-              (value) => _updateAdSetting('adsEnabledForChildren', value),
+              (final value) => _updateAdSetting('adsEnabledForChildren', value),
             ),
             _buildSettingSwitch(
               'Ads for Studio Users',
               settings.adsEnabledForStudioUsers,
-              (value) => _updateAdSetting('adsEnabledForStudioUsers', value),
+              (final value) => _updateAdSetting('adsEnabledForStudioUsers', value),
             ),
             _buildSettingSwitch(
               'Ads for Premium Users',
               settings.adsEnabledForPremiumUsers,
-              (value) => _updateAdSetting('adsEnabledForPremiumUsers', value),
+              (final value) => _updateAdSetting('adsEnabledForPremiumUsers', value),
             ),
           ],
         ),
@@ -579,7 +567,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
   }
 
   Widget _buildSettingSwitch(
-      String title, bool value, ValueChanged<bool> onChanged) {
+      final String title, final bool value, final ValueChanged<bool> onChanged) {
     return SwitchListTile(
       title: Text(title),
       value: value,
@@ -587,7 +575,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  Widget _buildAdRevenueStats(AdRevenueStats stats) {
+  Widget _buildAdRevenueStats(final AdRevenueStats stats) {
     return Card(
       elevation: 4,
       child: Padding(
@@ -622,7 +610,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  Widget _buildStatRow(String label, String value) {
+  Widget _buildStatRow(final String label, final String value) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
@@ -645,7 +633,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
           onPressed: () => Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const AdminBroadcastScreen(),
+              builder: (final context) => const AdminBroadcastScreen(),
             ),
           ),
           child: const Icon(Icons.broadcast_on_personal),
@@ -694,7 +682,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const AdminBroadcastScreen(),
+                  builder: (final context) => const AdminBroadcastScreen(),
                 ),
               );
             },
@@ -707,7 +695,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const AdminUsersScreen(),
+                  builder: (final context) => const AdminUsersScreen(),
                 ),
               );
             },
@@ -720,7 +708,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const AdminOrgsScreen(),
+                  builder: (final context) => const AdminOrgsScreen(),
                 ),
               );
             },
@@ -748,7 +736,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
   }
 
   // Helper methods
-  IconData _getErrorIcon(ErrorSeverity severity) {
+  IconData _getErrorIcon(final ErrorSeverity severity) {
     switch (severity) {
       case ErrorSeverity.low:
         return Icons.info;
@@ -761,7 +749,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     }
   }
 
-  Color _getErrorColor(ErrorSeverity severity) {
+  Color _getErrorColor(final ErrorSeverity severity) {
     switch (severity) {
       case ErrorSeverity.low:
         return Colors.blue;
@@ -774,7 +762,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     }
   }
 
-  IconData _getActivityIcon(String action) {
+  IconData _getActivityIcon(final String action) {
     switch (action) {
       case 'create_broadcast':
         return Icons.broadcast_on_personal;
@@ -787,7 +775,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     }
   }
 
-  String _formatDate(DateTime date) {
+  String _formatDate(final DateTime date) {
     return '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute}';
   }
 
@@ -795,7 +783,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
   void _showSettingsDialog() {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (final context) => AlertDialog(
         title: const Text('Admin Settings'),
         content: const Text('Settings dialog will be implemented here.'),
         actions: [
@@ -811,7 +799,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
   void _showExportDialog() {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (final context) => AlertDialog(
         title: const Text('Export Data'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
@@ -844,11 +832,11 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  void _showResolveErrorDialog(AdminErrorLog? log) {
+  void _showResolveErrorDialog(final AdminErrorLog? log) {
     final controller = TextEditingController();
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (final context) => AlertDialog(
         title: Text(
             log == null ? 'Resolve Error' : 'Resolve Error: ${log.errorType}'),
         content: Column(
@@ -889,10 +877,10 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  void _showErrorDetailsDialog(AdminErrorLog log) {
+  void _showErrorDetailsDialog(final AdminErrorLog log) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (final context) => AlertDialog(
         title: Text('Error Details: ${log.errorType}'),
         content: SingleChildScrollView(
           child: Column(
@@ -942,10 +930,10 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  void _showActivityDetailsDialog(AdminActivityLog log) {
+  void _showActivityDetailsDialog(final AdminActivityLog log) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
+      builder: (final context) => AlertDialog(
         title: Text('Activity: ${log.action}'),
         content: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -983,7 +971,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  void _updateAdSetting(String setting, bool value) {
+  void _updateAdSetting(final String setting, final bool value) {
     final currentSettings = ref.read(monetizationSettingsProvider).value;
     if (currentSettings != null) {
       final updatedSettings = currentSettings.copyWith(

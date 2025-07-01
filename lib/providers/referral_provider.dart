@@ -1,12 +1,12 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../services/referral_service.dart';
-import 'auth_provider.dart';
+import 'package:appoint/services/referral_service.dart';
+import 'package:appoint/providers/auth_provider.dart';
 
 final referralServiceProvider =
-    Provider<ReferralService>((ref) => ReferralService());
+    Provider<ReferralService>((final ref) => ReferralService());
 
-final referralCodeProvider = FutureProvider<String>((ref) async {
+final referralCodeProvider = FutureProvider<String>((final ref) async {
   final user = ref.read(authProvider).currentUser;
   if (user == null) {
     throw Exception('User not logged in');

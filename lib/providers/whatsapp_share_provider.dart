@@ -1,15 +1,15 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../services/whatsapp_share_service.dart';
-import '../models/smart_share_link.dart';
+import 'package:appoint/services/whatsapp_share_service.dart';
+import 'package:appoint/models/smart_share_link.dart';
 
 // Provider for WhatsAppShareService
-final whatsappShareServiceProvider = Provider<WhatsAppShareService>((ref) {
+final whatsappShareServiceProvider = Provider<WhatsAppShareService>((final ref) {
   return WhatsAppShareService();
 });
 
 // Provider for share statistics
 final shareStatsProvider = FutureProvider.family<Map<String, dynamic>, String>(
-  (ref, meetingId) async {
+  (final ref, final meetingId) async {
     final service = ref.read(whatsappShareServiceProvider);
     return await service.getShareStats(meetingId);
   },
@@ -18,7 +18,7 @@ final shareStatsProvider = FutureProvider.family<Map<String, dynamic>, String>(
 // Provider for group recognition
 final groupRecognitionProvider =
     FutureProvider.family<GroupRecognition?, String>(
-  (ref, phoneNumber) async {
+  (final ref, final phoneNumber) async {
     final service = ref.read(whatsappShareServiceProvider);
     return await service.recognizeGroup(phoneNumber);
   },
@@ -39,10 +39,10 @@ class ShareDialogState {
   });
 
   ShareDialogState copyWith({
-    bool? isLoading,
-    String? error,
-    bool? showGroupOptions,
-    List<GroupRecognition>? knownGroups,
+    final bool? isLoading,
+    final String? error,
+    final bool? showGroupOptions,
+    final List<GroupRecognition>? knownGroups,
   }) {
     return ShareDialogState(
       isLoading: isLoading ?? this.isLoading,
@@ -59,12 +59,12 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
   ShareDialogNotifier(this._service) : super(const ShareDialogState());
 
   Future<void> shareToWhatsApp({
-    required String meetingId,
-    required String creatorId,
-    required String customMessage,
-    String? contextId,
-    String? groupId,
-    String? recipientPhone,
+    required final String meetingId,
+    required final String creatorId,
+    required final String customMessage,
+    final String? contextId,
+    final String? groupId,
+    final String? recipientPhone,
   }) async {
     state = state.copyWith(isLoading: true, error: null);
 
@@ -95,10 +95,10 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
   }
 
   Future<void> saveGroupForRecognition({
-    required String groupId,
-    required String groupName,
-    required String phoneNumber,
-    required String meetingId,
+    required final String groupId,
+    required final String groupName,
+    required final String phoneNumber,
+    required final String meetingId,
   }) async {
     try {
       await _service.saveGroupForRecognition(
@@ -123,5 +123,5 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
 
 final shareDialogProvider =
     StateNotifierProvider<ShareDialogNotifier, ShareDialogState>(
-  (ref) => ShareDialogNotifier(ref.read(whatsappShareServiceProvider)),
+  (final ref) => ShareDialogNotifier(ref.read(whatsappShareServiceProvider)),
 );

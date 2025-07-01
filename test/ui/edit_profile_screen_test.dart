@@ -10,7 +10,7 @@ Future<void> main() async {
 
   group('EditProfileScreen bio field', () {
     testWidgets('shows live character count and enforces max length',
-        (tester) async {
+        (final tester) async {
       await tester.pumpWidget(const MaterialApp(home: EditProfileScreen()));
 
       final bioField = find.byType(TextFormField);

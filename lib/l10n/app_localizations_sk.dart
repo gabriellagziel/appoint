@@ -33,13 +33,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get decline => 'Odmietnuť';
 
   @override
-  String get adminBroadcast => 'Administrátorské vysielanie';
+  String get adminBroadcast => '[SK] Admin Broadcast';
 
   @override
   String get login => 'Prihlásiť sa';
 
   @override
-  String get playtimeChooseFriends => 'Vyberte priateľov';
+  String get playtimeChooseFriends => '[SK] Choose friends to invite';
 
   @override
   String get noInvites => 'Žiadne pozvánky';
@@ -54,10 +54,12 @@ class AppLocalizationsSk extends AppLocalizations {
   String get undo => 'Späť';
 
   @override
-  String get opened => 'Otvorené';
+  String opened(Object count) {
+    return '[SK] Opened';
+  }
 
   @override
-  String get createVirtualSession => 'Vytvoriť virtuálnu reláciu';
+  String get createVirtualSession => '[SK] Create Virtual Session';
 
   @override
   String get messageSentSuccessfully => 'Správa bola úspešne odoslaná';
@@ -76,14 +78,14 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String created(Object date) {
-    return 'Vytvorené';
+    return '[SK] Created';
   }
 
   @override
   String get revokeAccess => 'Odvolať prístup';
 
   @override
-  String get saveGroupForRecognition => 'Uložiť skupinu na rozpoznanie';
+  String get saveGroupForRecognition => '[SK] Save Group for Recognition';
 
   @override
   String get playtimeLiveScheduled => 'Živá relácia naplánovaná';
@@ -99,14 +101,14 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Chyba pri načítaní rodinných odkazov';
+    return '[SK] Error loading family links';
   }
 
   @override
   String get cancel => 'Zrušiť';
 
   @override
-  String get playtimeCreate => 'Vytvoriť Playtime';
+  String get playtimeCreate => '[SK] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
@@ -132,7 +134,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get playtimeVirtualStarted => 'Virtuálna relácia spustená';
 
   @override
-  String get createYourFirstGame => 'Vytvorte svoju prvú hru';
+  String get createYourFirstGame => '[SK] Create your first game';
 
   @override
   String get participants => 'Účastníci';
@@ -155,7 +157,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get playtimeModeLive => 'Živý režim';
 
   @override
-  String get done => 'Hotovo';
+  String get done => '[SK] Done';
 
   @override
   String get defaultShareMessage => 'Predvolená správa na zdieľanie';
@@ -170,10 +172,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get error => 'Chyba';
 
   @override
-  String get createLiveSession => 'Vytvoriť živú reláciu';
+  String get createLiveSession => '[SK] Create Live Session';
 
   @override
-  String get enableNotifications => 'Povoliť upozornenia';
+  String get enableNotifications => '[SK] Enable Notifications';
 
   @override
   String invited(Object date) {
@@ -198,7 +200,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get playtimeVirtual => 'Virtuálny Playtime';
 
   @override
-  String get staffScreenTBD => 'Obrazovka personálu bude určená';
+  String get staffScreenTBD => '[SK] Staff screen coming soon';
 
   @override
   String get cut => 'Vystrihnúť';
@@ -210,7 +212,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get retry => 'Skúsiť znova';
 
   @override
-  String get composeBroadcastMessage => 'Vytvoriť vysielaciu správu';
+  String get composeBroadcastMessage => '[SK] Compose Broadcast Message';
 
   @override
   String get sendNow => 'Odoslať teraz';
@@ -228,7 +230,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get choose => 'Vybrať';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[SK] Profile';
 
   @override
   String get removeChild => 'Odstrániť dieťa';
@@ -248,10 +250,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get welcome => 'Vitajte';
 
   @override
-  String get playtimeCreateSession => 'Vytvoriť reláciu';
+  String get playtimeCreateSession => '[SK] Create a Playtime Session';
 
   @override
-  String get familyMembers => 'Členovia rodiny';
+  String get familyMembers => '[SK] Family Members';
 
   @override
   String get upload => 'Nahrať';
@@ -260,7 +262,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get upcomingSessions => 'Nadchádzajúce relácie';
 
   @override
-  String get enterGroupName => 'Zadajte názov skupiny';
+  String get enterGroupName => '[SK] Enter group name';
 
   @override
   String get confirm => 'Potvrdiť';
@@ -269,9 +271,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get playtimeLive => 'Živý Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Chyba pri načítaní pozvánok';
-  }
+  String get errorLoadingInvites => 'Chyba pri načítaní pozvánok';
 
   @override
   String get targetingFilters => 'Cieľové filtre';
@@ -289,10 +289,12 @@ class AppLocalizationsSk extends AppLocalizations {
   String get accessRevokedSuccessfully => 'Prístup úspešne odvolaný';
 
   @override
-  String get type => 'Typ';
+  String type(Object type) {
+    return 'Typ';
+  }
 
   @override
-  String get checkingPermissions => 'Kontrola oprávnení';
+  String get checkingPermissions => '[SK] Checking permissions...';
 
   @override
   String get copy => 'Kopírovať';
@@ -304,13 +306,13 @@ class AppLocalizationsSk extends AppLocalizations {
   String get email => 'Email';
 
   @override
-  String get shareOnWhatsApp => 'Zdieľať na WhatsApp';
+  String get shareOnWhatsApp => '[SK] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Nastavenia upozornení';
+  String get notificationSettings => '[SK] Notification Settings';
 
   @override
-  String get myProfile => 'Môj profil';
+  String get myProfile => '[SK] My Profile';
 
   @override
   String get revoke => 'Odvolať';
@@ -324,7 +326,7 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
-  String get notifications => 'Upozornenia';
+  String get notifications => '[SK] Notifications';
 
   @override
   String get details => 'Podrobnosti';
@@ -333,7 +335,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get cancelInvite => 'Zrušiť pozvánku';
 
   @override
-  String get createNew => 'Vytvoriť nové';
+  String get createNew => '[SK] Create New';
 
   @override
   String get settings => 'Nastavenia';
@@ -342,9 +344,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get playtimeReject => 'Odmietnuť Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Chyba pri načítaní profilu';
-  }
+  String get errorLoadingProfile => '[SK] Error loading profile';
 
   @override
   String get edit => 'Upraviť';
@@ -359,7 +359,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get forgotPassword => 'Zabudli ste heslo?';
 
   @override
-  String get familyDashboard => 'Panel rodiny';
+  String get familyDashboard => '[SK] Family Dashboard';
 
   @override
   String get loading => 'Načítava sa';
@@ -375,7 +375,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Chyba pri kontrole oprávnení';
+    return '[SK] Error checking permissions';
   }
 
   @override
@@ -383,7 +383,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'FCM token';
+    return '[SK] FCM Token';
   }
 
   @override
@@ -393,10 +393,10 @@ class AppLocalizationsSk extends AppLocalizations {
   String get previous => 'Predchádzajúci';
 
   @override
-  String get noProfileFound => 'Profil nenájdený';
+  String get noProfileFound => '[SK] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Žiadni členovia rodiny';
+  String get noFamilyMembersYet => '[SK] No family members yet';
 
   @override
   String get mediaOptional => 'Médiá (voliteľné)';
@@ -414,7 +414,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get noPermissionForBroadcast => 'Žiadne oprávnenie na vysielanie';
 
   @override
-  String get playtimeAdminPanelTitle => 'Názov admin panela Playtime';
+  String get playtimeAdminPanelTitle => '[SK] Playtime Games – Admin';
 
   @override
   String get inviteDetail => 'Podrobnosti pozvánky';
@@ -444,14 +444,14 @@ class AppLocalizationsSk extends AppLocalizations {
   String get playtimeApprove => 'Schváliť Playtime';
 
   @override
-  String get createYourFirstSession => 'Vytvorte svoju prvú reláciu';
+  String get createYourFirstSession => '[SK] Create your first session';
 
   @override
   String get playtimeGameRejected => 'Hra odmietnutá';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Nepodarilo sa odvolať prístup';
+    return '[SK] Failed to revoke access';
   }
 
   @override
@@ -489,66 +489,84 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Prihláste sa pre prístup k rodinným funkciám';
+      '[SK] Please login to access family features';
 
   @override
-  String get myInvites => 'Moje pozvánky';
+  String get myInvites => '[SK] My Invites';
 
   @override
-  String get createGame => 'Vytvoriť hru';
+  String get createGame => '[SK] Create Game';
 
   @override
-  String get groupNameOptional => 'Názov skupiny (voliteľné)';
+  String get groupNameOptional => '[SK] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Nenašli sa žiadne Playtime relácie.';
+  String get playtimeNoSessions => '[SK] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Obrazovka administrátora bude čoskoro dostupná';
+  String get adminScreenTBD => '[SK] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime ovládací panel';
+  String get playtimeParentDashboardTitle => '[SK] Playtime Dashboard';
 
   @override
-  String get close => 'Zatvoriť';
+  String get close => '[SK] Close';
 
   @override
-  String get knownGroupDetected => 'Zistená známa skupina';
+  String get knownGroupDetected => '[SK] Known group detected';
 
   @override
-  String get back => 'Späť';
+  String get back => '[SK] Back';
 
   @override
-  String get playtimeChooseGame => 'Vyberte hru';
+  String get playtimeChooseGame => '[SK] Choose a game';
 
   @override
-  String get managePermissions => 'Spravovať oprávnenia';
+  String get managePermissions => '[SK] Manage Permissions';
 
   @override
-  String get pollOptions => 'Možnosti hlasovania';
+  String get pollOptions => '[SK] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Kliknuté';
+    return '[SK] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Odkaz';
+    return '[SK] Link';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'Vaše stretnutie je pripravené! Pridajte sa teraz';
+  String get meetingReadyMessage => '[SK] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Čakajúce pozvánky';
+  String get pendingInvites => '[SK] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Stav:';
+    return '[SK] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Prihláste sa na zobrazenie profilu';
+  String get pleaseLoginToViewProfile =>
+      '[SK] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

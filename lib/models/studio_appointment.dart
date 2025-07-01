@@ -13,7 +13,7 @@ class StudioAppointment {
     this.notes,
   });
 
-  factory StudioAppointment.fromJson(Map<String, dynamic> json) {
+  factory StudioAppointment.fromJson(final Map<String, dynamic> json) {
     return StudioAppointment(
       id: json['id'] as String,
       title: json['title'] as String,
@@ -32,11 +32,11 @@ class StudioAppointment {
       };
 
   StudioAppointment copyWith({
-    String? id,
-    String? title,
-    DateTime? time,
-    String? client,
-    String? notes,
+    final String? id,
+    final String? title,
+    final DateTime? time,
+    final String? client,
+    final String? notes,
   }) {
     return StudioAppointment(
       id: id ?? this.id,

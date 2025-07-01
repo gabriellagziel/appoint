@@ -12,13 +12,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get refresh => 'Actualitza';
 
   @override
-  String get home => 'Inici';
+  String get home => '[CA] Home';
 
   @override
-  String get noSessionsYet => 'Encara no hi ha sessions';
+  String get noSessionsYet => '[CA] No sessions yet';
 
   @override
-  String get ok => 'D\'acord';
+  String get ok => '[CA] OK';
 
   @override
   String get playtimeLandingChooseMode => 'Tria un mode';
@@ -27,25 +27,25 @@ class AppLocalizationsCa extends AppLocalizations {
   String get signUp => 'Registra\'t';
 
   @override
-  String get scheduleMessage => 'Programa un missatge';
+  String get scheduleMessage => '[CA] Schedule Message';
 
   @override
-  String get decline => 'Rebutja';
+  String get decline => '[CA] Decline';
 
   @override
-  String get adminBroadcast => 'Emissió d\'administrador';
+  String get adminBroadcast => '[CA] Admin Broadcast';
 
   @override
-  String get login => 'Inicia sessió';
+  String get login => '[CA] Login';
 
   @override
   String get playtimeChooseFriends => 'Tria amics';
 
   @override
-  String get noInvites => 'Sense invitacions';
+  String get noInvites => '[CA] No invites';
 
   @override
-  String get playtimeChooseTime => 'Tria l\'hora';
+  String get playtimeChooseTime => '[CA] Choose a time';
 
   @override
   String get success => 'Èxit';
@@ -54,16 +54,18 @@ class AppLocalizationsCa extends AppLocalizations {
   String get undo => 'Desfer';
 
   @override
-  String get opened => 'Obert';
+  String opened(Object count) {
+    return 'Obert';
+  }
 
   @override
   String get createVirtualSession => 'Crea sessió virtual';
 
   @override
-  String get messageSentSuccessfully => 'Missatge enviat amb èxit';
+  String get messageSentSuccessfully => '[CA] Message sent successfully';
 
   @override
-  String get redo => 'Torna-ho a fer';
+  String get redo => '[CA] Redo';
 
   @override
   String get next => 'Següent';
@@ -73,34 +75,35 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get cancelInviteConfirmation =>
-      'Cancel·la la confirmació d\'invitació';
+      '[CA] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return 'Creat';
+    return '[CA] Created';
   }
 
   @override
   String get revokeAccess => 'Revoca l\'accés';
 
   @override
-  String get saveGroupForRecognition => 'Desa el grup per reconeixement';
+  String get saveGroupForRecognition => '[CA] Save Group for Recognition';
 
   @override
   String get playtimeLiveScheduled => 'Sessió en directe programada';
 
   @override
-  String get revokeAccessConfirmation => 'Confirmació de revocació d\'accés';
+  String get revokeAccessConfirmation =>
+      '[CA] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Descarrega';
 
   @override
-  String get password => 'Contrasenya';
+  String get password => '[CA] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Error en carregar enllaços familiars';
+    return '[CA] Error loading family links';
   }
 
   @override
@@ -115,7 +118,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get appTitle => 'Títol de l\'aplicació';
+  String get appTitle => '[CA] APP-OINT';
 
   @override
   String get accept => 'Accepta';
@@ -130,7 +133,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get delete => 'Suprimeix';
 
   @override
-  String get playtimeVirtualStarted => 'Sessió virtual iniciada';
+  String get playtimeVirtualStarted => '[CA] Virtual playtime started!';
 
   @override
   String get createYourFirstGame => 'Crea el teu primer joc';
@@ -140,17 +143,17 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String recipients(Object count) {
-    return 'Destinataris';
+    return '[CA] Recipients';
   }
 
   @override
-  String get noResults => 'Sense resultats';
+  String get noResults => '[CA] No results found';
 
   @override
   String get yes => 'Sí';
 
   @override
-  String get invite => 'Convida';
+  String get invite => '[CA] Invite';
 
   @override
   String get playtimeModeLive => 'Mode en directe';
@@ -159,7 +162,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get done => 'Fet';
 
   @override
-  String get defaultShareMessage => 'Missatge per compartir predeterminat';
+  String get defaultShareMessage => '[CA] Let\'s meet via Appoint!';
 
   @override
   String get no => 'No';
@@ -168,50 +171,51 @@ class AppLocalizationsCa extends AppLocalizations {
   String get playtimeHub => 'Hub de Playtime';
 
   @override
-  String get error => 'Error';
+  String get error => '[CA] Error';
 
   @override
   String get createLiveSession => 'Crea sessió en directe';
 
   @override
-  String get enableNotifications => 'Activa notificacions';
+  String get enableNotifications => '[CA] Enable Notifications';
 
   @override
   String invited(Object date) {
-    return 'Convidat';
+    return '[CA] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'Contingut';
+    return '[CA] Content';
   }
 
   @override
   String get meetingSharedSuccessfully => 'Reunió compartida amb èxit';
 
   @override
-  String get welcomeToPlaytime => 'Benvingut a Playtime';
+  String get welcomeToPlaytime => '[CA] Welcome to Playtime';
 
   @override
-  String get viewAll => 'Mostra-ho tot';
+  String get viewAll => '[CA] View All';
 
   @override
   String get playtimeVirtual => 'Playtime virtual';
 
   @override
-  String get staffScreenTBD => 'Pantalla de personal per determinar';
+  String get staffScreenTBD => '[CA] Staff screen coming soon';
 
   @override
   String get cut => 'Talla';
 
   @override
-  String get inviteCancelledSuccessfully => 'Invitació cancel·lada amb èxit';
+  String get inviteCancelledSuccessfully =>
+      '[CA] Invite cancelled successfully';
 
   @override
-  String get retry => 'Torna a intentar';
+  String get retry => '[CA] Retry';
 
   @override
-  String get composeBroadcastMessage => 'Compon missatge de difusió';
+  String get composeBroadcastMessage => '[CA] Compose Broadcast Message';
 
   @override
   String get sendNow => 'Envia ara';
@@ -220,7 +224,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get noGamesYet => 'Encara no hi ha jocs';
 
   @override
-  String get select => 'Selecciona';
+  String get select => '[CA] Select';
 
   @override
   String get about => 'Quant a';
@@ -232,11 +236,11 @@ class AppLocalizationsCa extends AppLocalizations {
   String get profile => 'Perfil';
 
   @override
-  String get removeChild => 'Elimina l\'infant';
+  String get removeChild => '[CA] Remove Child';
 
   @override
   String status(Object status) {
-    return 'Estat';
+    return '[CA] Status';
   }
 
   @override
@@ -246,7 +250,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get paste => 'Enganxa';
 
   @override
-  String get welcome => 'Benvingut';
+  String get welcome => '[CA] Welcome';
 
   @override
   String get playtimeCreateSession => 'Crea sessió';
@@ -258,21 +262,19 @@ class AppLocalizationsCa extends AppLocalizations {
   String get upload => 'Penja';
 
   @override
-  String get upcomingSessions => 'Sessions pròximes';
+  String get upcomingSessions => '[CA] Upcoming Sessions';
 
   @override
-  String get enterGroupName => 'Introdueix nom del grup';
+  String get enterGroupName => '[CA] Enter group name';
 
   @override
-  String get confirm => 'Confirma';
+  String get confirm => '[CA] Confirm';
 
   @override
   String get playtimeLive => 'Playtime en directe';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Error en carregar invitacions';
-  }
+  String get errorLoadingInvites => '[CA] Error loading invites';
 
   @override
   String get targetingFilters => 'Filtres de segmentació';
@@ -281,16 +283,18 @@ class AppLocalizationsCa extends AppLocalizations {
   String get pickVideo => 'Tria vídeo';
 
   @override
-  String get playtimeGameDeleted => 'Joc eliminat';
+  String get playtimeGameDeleted => '[CA] Game deleted';
 
   @override
   String get scheduleForLater => 'Programa per més tard';
 
   @override
-  String get accessRevokedSuccessfully => 'Accés revocat amb èxit';
+  String get accessRevokedSuccessfully => '[CA] Access revoked successfully';
 
   @override
-  String get type => 'Tipus';
+  String type(Object type) {
+    return 'Tipus';
+  }
 
   @override
   String get checkingPermissions => 'Comprovant permisos';
@@ -302,13 +306,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get yesCancel => 'Sí, cancel·la';
 
   @override
-  String get email => 'Correu electrònic';
+  String get email => '[CA] Email';
 
   @override
-  String get shareOnWhatsApp => 'Comparteix per WhatsApp';
+  String get shareOnWhatsApp => '[CA] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Configuració de notificacions';
+  String get notificationSettings => '[CA] Notification Settings';
 
   @override
   String get myProfile => 'El meu perfil';
@@ -317,7 +321,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get revoke => 'Revoca';
 
   @override
-  String get noBroadcastMessages => 'Sense missatges de difusió';
+  String get noBroadcastMessages => '[CA] No messages yet';
 
   @override
   String requestType(Object type) {
@@ -325,27 +329,25 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get notifications => 'Notificacions';
+  String get notifications => '[CA] Notifications';
 
   @override
   String get details => 'Detalls';
 
   @override
-  String get cancelInvite => 'Cancel·la invitació';
+  String get cancelInvite => '[CA] Cancel Invite';
 
   @override
   String get createNew => 'Crea de nou';
 
   @override
-  String get settings => 'Configuració';
+  String get settings => '[CA] Settings';
 
   @override
-  String get playtimeReject => 'Rebutja Playtime';
+  String get playtimeReject => '[CA] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Error en carregar perfil';
-  }
+  String get errorLoadingProfile => '[CA] Error loading profile';
 
   @override
   String get edit => 'Edita';
@@ -354,10 +356,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get add => 'Afegeix';
 
   @override
-  String get playtimeGameApproved => 'Joc aprovat';
+  String get playtimeGameApproved => '[CA] Game approved';
 
   @override
-  String get forgotPassword => 'Has oblidat la contrasenya?';
+  String get forgotPassword => '[CA] Forgot Password?';
 
   @override
   String get familyDashboard => 'Tauler familiar';
@@ -366,47 +368,47 @@ class AppLocalizationsCa extends AppLocalizations {
   String get loading => 'Carregant';
 
   @override
-  String get quickActions => 'Accions ràpides';
+  String get quickActions => '[CA] Quick Actions';
 
   @override
-  String get playtimeTitle => 'Títol de Playtime';
+  String get playtimeTitle => '[CA] Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP reenviat amb èxit';
+  String get otpResentSuccessfully => '[CA] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Error en comprovar permisos';
+    return '[CA] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Pantalla de client per determinar';
+  String get clientScreenTBD => '[CA] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'Token FCM';
+    return '[CA] FCM Token';
   }
 
   @override
-  String get pickImage => 'Tria imatge';
+  String get pickImage => '[CA] Pick Image';
 
   @override
-  String get previous => 'Anterior';
+  String get previous => '[CA] Previous';
 
   @override
-  String get noProfileFound => 'Perfil no trobat';
+  String get noProfileFound => '[CA] No profile found';
 
   @override
   String get noFamilyMembersYet => 'Encara no hi ha membres de la família';
 
   @override
-  String get mediaOptional => 'Mitjans (opcional)';
+  String get mediaOptional => '[CA] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => 'Missatge desat amb èxit';
+  String get messageSavedSuccessfully => '[CA] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Programat per';
+  String get scheduledFor => '[CA] Scheduled for';
 
   @override
   String get dashboard => 'Tauler';
@@ -415,15 +417,14 @@ class AppLocalizationsCa extends AppLocalizations {
   String get noPermissionForBroadcast => 'Sense permís per difusió';
 
   @override
-  String get playtimeAdminPanelTitle =>
-      'Títol del panell d\'administració de Playtime';
+  String get playtimeAdminPanelTitle => '[CA] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Detall d\'invitació';
+  String get inviteDetail => '[CA] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return 'Programat';
+    return '[CA] Scheduled';
   }
 
   @override
@@ -436,7 +437,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Error en desar missatge';
+    return '[CA] Error saving message';
   }
 
   @override
@@ -449,7 +450,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get createYourFirstSession => 'Crea la teva primera sessió';
 
   @override
-  String get playtimeGameRejected => 'Joc rebutjat';
+  String get playtimeGameRejected => '[CA] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
@@ -460,63 +461,62 @@ class AppLocalizationsCa extends AppLocalizations {
   String get recentGames => 'Jocs recents';
 
   @override
-  String get customizeMessage => 'Personalitza missatge';
+  String get customizeMessage => '[CA] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'No s\'ha pogut cancel·lar invitació';
+    return '[CA] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Error en enviar missatge';
+    return '[CA] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Confirma contrasenya';
+  String get confirmPassword => '[CA] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Error en carregar sol·licituds de privadesa';
+    return '[CA] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Infants connectats';
+  String get connectedChildren => '[CA] Connected Children';
 
   @override
   String get share => 'Comparteix';
 
   @override
-  String get playtimeEnterGameName => 'Introdueix nom del joc';
+  String get playtimeEnterGameName => '[CA] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Inicia sessió per funcions familiars';
+      '[CA] Please login to access family features';
 
   @override
-  String get myInvites => 'Les meves invitacions';
+  String get myInvites => '[CA] My Invites';
 
   @override
   String get createGame => 'Crea joc';
 
   @override
-  String get groupNameOptional => 'Nom de grup (opcional)';
+  String get groupNameOptional => '[CA] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'No hi ha sessions de Playtime';
+  String get playtimeNoSessions => '[CA] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Pantalla d\'administració per determinar';
+  String get adminScreenTBD => '[CA] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      'Títol del tauler de pares de Playtime';
+  String get playtimeParentDashboardTitle => '[CA] Playtime Dashboard';
 
   @override
   String get close => 'Tanca';
 
   @override
-  String get knownGroupDetected => 'Grup conegut detectat';
+  String get knownGroupDetected => '[CA] Known group detected';
 
   @override
   String get back => 'Enrere';
@@ -525,14 +525,14 @@ class AppLocalizationsCa extends AppLocalizations {
   String get playtimeChooseGame => 'Tria joc';
 
   @override
-  String get managePermissions => 'Gestiona permisos';
+  String get managePermissions => '[CA] Manage Permissions';
 
   @override
-  String get pollOptions => 'Opcions de votació';
+  String get pollOptions => '[CA] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Clicat';
+    return '[CA] Clicked';
   }
 
   @override
@@ -544,13 +544,32 @@ class AppLocalizationsCa extends AppLocalizations {
   String get meetingReadyMessage => 'Reunió preparada';
 
   @override
-  String get pendingInvites => 'Invitacions pendents';
+  String get pendingInvites => '[CA] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Estat:';
+    return '[CA] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Inicia sessió per veure el perfil';
+  String get pleaseLoginToViewProfile =>
+      '[CA] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

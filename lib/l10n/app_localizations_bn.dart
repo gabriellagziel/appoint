@@ -55,7 +55,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get undo => 'পূর্বাবস্থায় ফিরুন';
 
   @override
-  String get opened => 'খোলা';
+  String opened(Object count) {
+    return 'খোলা';
+  }
 
   @override
   String get createVirtualSession => 'ভার্চুয়াল সেশন তৈরি করুন';
@@ -78,7 +80,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String created(Object date) {
-    return 'তৈরি হয়েছে: $date';
+    return '[BN] Created';
   }
 
   @override
@@ -102,7 +104,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'পরিবার লিঙ্ক লোড করতে ত্রুটি: $error';
+    return '[BN] Error loading family links';
   }
 
   @override
@@ -113,11 +115,11 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'গোপনীয়তা অনুরোধ $action করতে ব্যর্থ: $error';
+    return '[BN] Failed to action privacy request';
   }
 
   @override
-  String get appTitle => 'Appoint';
+  String get appTitle => '[BN] APP-OINT';
 
   @override
   String get accept => 'গ্রহণ করুন';
@@ -129,16 +131,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String get playtimeDescription => 'প্লেটাইম বর্ণনা';
 
   @override
-  String get delete => 'মুছুন';
+  String get delete => '[BN] Delete';
 
   @override
   String get playtimeVirtualStarted => 'ভার্চুয়াল সেশন শুরু হয়েছে';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => '[BN] Create your first game';
 
   @override
-  String get participants => 'অংশগ্রহণকারী';
+  String get participants => '[BN] Participants';
 
   @override
   String recipients(Object count) {
@@ -161,8 +163,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get done => 'সিদ্ধ';
 
   @override
-  String get defaultShareMessage =>
-      'হাই! আমি APP-OINT এর মাধ্যমে আপনার সাথে একটি মিটিং নির্ধারণ করেছি। নিশ্চিত করতে বা অন্য সময় প্রস্তাব করতে এখানে ক্লিক করুন:';
+  String get defaultShareMessage => '[BN] Let\'s meet via Appoint!';
 
   @override
   String get no => 'না';
@@ -171,7 +172,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get playtimeHub => 'প্লেটাইম হাব';
 
   @override
-  String get error => 'ত্রুটি';
+  String get error => '[BN] Error';
 
   @override
   String get createLiveSession => 'লাইভ সেশন তৈরি করুন';
@@ -181,12 +182,12 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String invited(Object date) {
-    return 'আমন্ত্রণ জানানো হয়েছে: $date';
+    return '[BN] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'বিষয়বস্তু: $content';
+    return '[BN] Content';
   }
 
   @override
@@ -205,7 +206,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get staffScreenTBD => 'স্টাফ স্ক্রীন - পরে তৈরি করা হবে';
 
   @override
-  String get cut => 'কাটুন';
+  String get cut => '[BN] Cut';
 
   @override
   String get inviteCancelledSuccessfully => 'আমন্ত্রণ সফলভাবে বাতিল হয়েছে!';
@@ -239,14 +240,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String status(Object status) {
-    return 'স্ট্যাটাস: $status';
+    return '[BN] Status';
   }
 
   @override
   String get logout => 'লগ আউট';
 
   @override
-  String get paste => 'পেস্ট করুন';
+  String get paste => '[BN] Paste';
 
   @override
   String get welcome => 'স্বাগতম';
@@ -261,7 +262,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get upload => 'আপলোড';
 
   @override
-  String get upcomingSessions => 'আসন্ন সেশন';
+  String get upcomingSessions => '[BN] Upcoming Sessions';
 
   @override
   String get enterGroupName => 'পরিচয়ের জন্য গ্রুপের নাম লিখুন';
@@ -273,9 +274,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get playtimeLive => 'লাইভ প্লেটাইম';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'আমন্ত্রণ লোড করতে ত্রুটি';
-  }
+  String get errorLoadingInvites => 'আমন্ত্রণ লোড করতে ত্রুটি';
 
   @override
   String get targetingFilters => 'টার্গেটিং ফিল্টার';
@@ -284,7 +283,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get pickVideo => 'ভিডিও নির্বাচন করুন';
 
   @override
-  String get playtimeGameDeleted => 'গেম মুছে ফেলা হয়েছে';
+  String get playtimeGameDeleted => '[BN] Game deleted';
 
   @override
   String get scheduleForLater => 'পরে শিডিউল করুন';
@@ -293,7 +292,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get accessRevokedSuccessfully => 'অ্যাক্সেস সফলভাবে বাতিল হয়েছে!';
 
   @override
-  String get type => 'ধরন';
+  String type(Object type) {
+    return 'ধরন';
+  }
 
   @override
   String get checkingPermissions => 'অনুমতি যাচাই করা হচ্ছে...';
@@ -308,7 +309,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get email => 'ইমেইল';
 
   @override
-  String get shareOnWhatsApp => 'WhatsApp-এ শেয়ার করুন';
+  String get shareOnWhatsApp => '[BN] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'নোটিফিকেশন সেটিংস';
@@ -343,12 +344,10 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settings => 'সেটিংস';
 
   @override
-  String get playtimeReject => 'Playtime প্রত্যাখ্যান করুন';
+  String get playtimeReject => '[BN] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'প্রোফাইল লোড করতে ত্রুটি';
-  }
+  String get errorLoadingProfile => 'প্রোফাইল লোড করতে ত্রুটি';
 
   @override
   String get edit => 'সম্পাদনা';
@@ -357,7 +356,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get add => 'যোগ করুন';
 
   @override
-  String get playtimeGameApproved => 'গেম অনুমোদিত হয়েছে';
+  String get playtimeGameApproved => '[BN] Game approved';
 
   @override
   String get forgotPassword => 'পাসওয়ার্ড ভুলে গেছেন?';
@@ -372,14 +371,14 @@ class AppLocalizationsBn extends AppLocalizations {
   String get quickActions => 'কুইক অ্যাকশনস';
 
   @override
-  String get playtimeTitle => 'Playtime শিরোনাম';
+  String get playtimeTitle => '[BN] Playtime';
 
   @override
   String get otpResentSuccessfully => 'OTP সফলভাবে পুনরায় পাঠানো হয়েছে!';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'অনুমতি যাচাই করতে ত্রুটি: $error';
+    return '[BN] Error checking permissions';
   }
 
   @override
@@ -387,7 +386,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'FCM টোকেন: $token';
+    return '[BN] FCM Token';
   }
 
   @override
@@ -410,7 +409,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get messageSavedSuccessfully => 'বার্তা সফলভাবে সংরক্ষিত হয়েছে';
 
   @override
-  String get scheduledFor => 'নির্ধারিত';
+  String get scheduledFor => '[BN] Scheduled for';
 
   @override
   String get dashboard => 'ড্যাশবোর্ড';
@@ -420,19 +419,19 @@ class AppLocalizationsBn extends AppLocalizations {
       'আপনার সম্প্রচার বার্তা তৈরি করার অনুমতি নেই।';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime অ্যাডমিন প্যানেল শিরোনাম';
+  String get playtimeAdminPanelTitle => '[BN] Playtime Games – Admin';
 
   @override
   String get inviteDetail => 'আমন্ত্রণের বিস্তারিত';
 
   @override
   String scheduled(Object date) {
-    return 'নির্ধারিত হয়েছে: $date';
+    return '[BN] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'OTP পুনরায় পাঠাতে ব্যর্থ: $error';
+    return '[BN] Failed to resend OTP';
   }
 
   @override
@@ -440,58 +439,58 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String errorSavingMessage(Object error) {
-    return 'বার্তা সংরক্ষণ করতে ত্রুটি: $error';
+    return '[BN] Error saving message';
   }
 
   @override
   String get save => 'সংরক্ষণ করুন';
 
   @override
-  String get playtimeApprove => 'Playtime অনুমোদন করুন';
+  String get playtimeApprove => '[BN] Approve';
 
   @override
-  String get createYourFirstSession => 'আপনার প্রথম সেশন তৈরি করুন';
+  String get createYourFirstSession => '[BN] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'গেম প্রত্যাখ্যান করা হয়েছে';
+  String get playtimeGameRejected => '[BN] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'অ্যাক্সেস বাতিল করতে ব্যর্থ: $error';
+    return '[BN] Failed to revoke access';
   }
 
   @override
-  String get recentGames => 'সাম্প্রতিক গেম';
+  String get recentGames => '[BN] Recent Games';
 
   @override
   String get customizeMessage => 'আপনার বার্তা কাস্টমাইজ করুন...';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'আমন্ত্রণ বাতিল করতে ব্যর্থ: $error';
+    return '[BN] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'বার্তা পাঠাতে ত্রুটি: $error';
+    return '[BN] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'পাসওয়ার্ড নিশ্চিত করুন';
+  String get confirmPassword => '[BN] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'গোপনীয়তা অনুরোধ লোড করতে ত্রুটি: $error';
+    return '[BN] Error loading privacy requests';
   }
 
   @override
   String get connectedChildren => 'সংযুক্ত শিশু';
 
   @override
-  String get share => 'শেয়ার করুন';
+  String get share => '[BN] Share';
 
   @override
-  String get playtimeEnterGameName => 'গেমের নাম লিখুন';
+  String get playtimeEnterGameName => '[BN] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
@@ -501,19 +500,19 @@ class AppLocalizationsBn extends AppLocalizations {
   String get myInvites => 'আমার আমন্ত্রণ';
 
   @override
-  String get createGame => 'গেম তৈরি করুন';
+  String get createGame => '[BN] Create Game';
 
   @override
   String get groupNameOptional => 'গ্রুপের নাম (ঐচ্ছিক)';
 
   @override
-  String get playtimeNoSessions => 'কোনও প্লেটাইম সেশন পাওয়া যায়নি।';
+  String get playtimeNoSessions => '[BN] No playtime sessions found.';
 
   @override
   String get adminScreenTBD => 'অ্যাডমিন স্ক্রীন - পরে তৈরি করা হবে';
 
   @override
-  String get playtimeParentDashboardTitle => 'প্লেটাইম ড্যাশবোর্ড';
+  String get playtimeParentDashboardTitle => '[BN] Playtime Dashboard';
 
   @override
   String get close => 'বন্ধ করুন';
@@ -525,7 +524,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get back => 'পেছনে ফিরে যান';
 
   @override
-  String get playtimeChooseGame => 'গেম নির্বাচন করুন';
+  String get playtimeChooseGame => '[BN] Choose a game';
 
   @override
   String get managePermissions => 'অনুমতি পরিচালনা করুন';
@@ -557,6 +556,24 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get pleaseLoginToViewProfile => 'প্রোফাইল দেখতে লগইন করুন';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }
 
 /// The translations for Bengali Bangla, as used in Bangladesh (`bn_BD`).
@@ -609,7 +626,9 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get undo => 'পূর্বাবস্থা';
 
   @override
-  String get opened => 'খোলা হয়েছে';
+  String opened(Object count) {
+    return 'খোলা হয়েছে';
+  }
 
   @override
   String get createVirtualSession => 'ভার্চুয়াল সেশন তৈরি করুন';
@@ -824,9 +843,7 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get playtimeLive => 'লাইভ Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'আমন্ত্রণ লোড করতে ত্রুটি';
-  }
+  String get errorLoadingInvites => 'আমন্ত্রণ লোড করতে ত্রুটি';
 
   @override
   String get targetingFilters => 'টার্গেটিং ফিল্টার';
@@ -845,7 +862,9 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
       'অ্যাক্সেস সফলভাবে প্রত্যাহার করা হয়েছে';
 
   @override
-  String get type => 'পরামিতি';
+  String type(Object type) {
+    return 'পরামিতি';
+  }
 
   @override
   String get checkingPermissions => 'অনুমতি যাচাই করা হচ্ছে';
@@ -860,7 +879,7 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get email => 'ইমেল';
 
   @override
-  String get shareOnWhatsApp => 'WhatsApp এ শেয়ার করুন';
+  String get shareOnWhatsApp => '[BN_BD] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'নোটিফিকেশন সেটিংস';
@@ -898,9 +917,7 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get playtimeReject => 'Playtime প্রত্যাখ্যান করুন';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'প্রোফাইল লোড করতে ত্রুটি';
-  }
+  String get errorLoadingProfile => 'প্রোফাইল লোড করতে ত্রুটি';
 
   @override
   String get edit => 'সম্পাদনা করুন';
@@ -1006,6 +1023,11 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get playtimeGameRejected => 'গেম প্রত্যাখ্যান করা হয়েছে';
 
   @override
+  String failedToRevokeAccess(Object error) {
+    return '[BN_BD] Failed to revoke access';
+  }
+
+  @override
   String get recentGames => 'সাম্প্রতিক গেম';
 
   @override
@@ -1037,6 +1059,67 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
 
   @override
   String get playtimeEnterGameName => 'গেমের নাম লিখুন';
+
+  @override
+  String get pleaseLoginForFamilyFeatures =>
+      '[BN_BD] Please login to access family features';
+
+  @override
+  String get myInvites => '[BN_BD] My Invites';
+
+  @override
+  String get createGame => '[BN_BD] Create Game';
+
+  @override
+  String get groupNameOptional => '[BN_BD] Group Name (Optional)';
+
+  @override
+  String get playtimeNoSessions => '[BN_BD] No playtime sessions found.';
+
+  @override
+  String get adminScreenTBD => '[BN_BD] Admin screen coming soon';
+
+  @override
+  String get playtimeParentDashboardTitle => '[BN_BD] Playtime Dashboard';
+
+  @override
+  String get close => '[BN_BD] Close';
+
+  @override
+  String get knownGroupDetected => '[BN_BD] Known group detected';
+
+  @override
+  String get back => '[BN_BD] Back';
+
+  @override
+  String get playtimeChooseGame => '[BN_BD] Choose a game';
+
+  @override
+  String get managePermissions => '[BN_BD] Manage Permissions';
+
+  @override
+  String get pollOptions => '[BN_BD] Poll Options';
+
+  @override
+  String clicked(Object count) {
+    return '[BN_BD] Clicked';
+  }
+
+  @override
+  String link(Object link) {
+    return '[BN_BD] Link';
+  }
+
+  @override
+  String get meetingReadyMessage => '[BN_BD] Your meeting is ready! Join now';
+
+  @override
+  String get pendingInvites => '[BN_BD] Pending Invites';
+
+  @override
+  String statusColon(Object status) {
+    return '[BN_BD] Status:';
+  }
 
   @override
   String get pleaseLoginToViewProfile => 'প্রোফাইল দেখতে অনুগ্রহ করে লগইন করুন';

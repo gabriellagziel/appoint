@@ -23,20 +23,20 @@ class TapScaleFeedback extends StatefulWidget {
 class _TapScaleFeedbackState extends State<TapScaleFeedback> {
   bool _pressed = false;
 
-  void _handleDown(PointerDownEvent event) {
+  void _handleDown(final PointerDownEvent event) {
     setState(() => _pressed = true);
   }
 
-  void _handleUp(PointerUpEvent event) {
+  void _handleUp(final PointerUpEvent event) {
     setState(() => _pressed = false);
   }
 
-  void _handleCancel(PointerCancelEvent event) {
+  void _handleCancel(final PointerCancelEvent event) {
     setState(() => _pressed = false);
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Listener(
       onPointerDown: _handleDown,
       onPointerUp: _handleUp,

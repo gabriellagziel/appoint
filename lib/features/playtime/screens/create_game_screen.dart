@@ -5,10 +5,10 @@ import 'package:image_picker/image_picker.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io';
 
-import '../../../l10n/app_localizations.dart';
-import '../../../providers/playtime_provider.dart';
-import '../../../config/theme.dart';
-import '../../../models/playtime_game.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/models/playtime_game.dart';
 
 class CreateGameScreen extends ConsumerStatefulWidget {
   const CreateGameScreen({super.key});
@@ -49,7 +49,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
@@ -88,7 +88,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
     );
   }
 
-  Widget _buildImageSection(AppLocalizations l10n) {
+  Widget _buildImageSection(final AppLocalizations l10n) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -149,7 +149,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
     );
   }
 
-  Widget _buildBasicInformation(AppLocalizations l10n) {
+  Widget _buildBasicInformation(final AppLocalizations l10n) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -174,7 +174,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
             ),
             prefixIcon: const Icon(Icons.games),
           ),
-          validator: (value) {
+          validator: (final value) {
             if (value == null || value.isEmpty) {
               return 'Please enter a game name';
             }
@@ -198,7 +198,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
             prefixIcon: const Icon(Icons.description),
           ),
           maxLines: 3,
-          validator: (value) {
+          validator: (final value) {
             if (value == null || value.isEmpty) {
               return 'Please enter a game description';
             }
@@ -220,13 +220,13 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
             ),
             prefixIcon: const Icon(Icons.category),
           ),
-          items: _categories.map((category) {
+          items: _categories.map((final category) {
             return DropdownMenuItem(
               value: category,
               child: Text(category),
             );
           }).toList(),
-          onChanged: (value) {
+          onChanged: (final value) {
             setState(() {
               _selectedCategory = value!;
             });
@@ -236,7 +236,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
     );
   }
 
-  Widget _buildGameSettings(AppLocalizations l10n) {
+  Widget _buildGameSettings(final AppLocalizations l10n) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -265,7 +265,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           max: 18,
           divisions: 15,
           labels: RangeLabels('$_minAge', '$_maxAge'),
-          onChanged: (values) {
+          onChanged: (final values) {
             setState(() {
               _minAge = values.start.round();
               _maxAge = values.end.round();
@@ -289,7 +289,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           max: 10,
           divisions: 8,
           label: '$_maxParticipants',
-          onChanged: (value) {
+          onChanged: (final value) {
             setState(() {
               _maxParticipants = value.round();
             });
@@ -312,7 +312,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           max: 120,
           divisions: 21,
           label: '$_estimatedDuration',
-          onChanged: (value) {
+          onChanged: (final value) {
             setState(() {
               _estimatedDuration = value.round();
             });
@@ -322,7 +322,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
     );
   }
 
-  Widget _buildPrivacySettings(AppLocalizations l10n) {
+  Widget _buildPrivacySettings(final AppLocalizations l10n) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -341,7 +341,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           title: const Text('Make Game Public'),
           subtitle: const Text('Allow other users to find and join this game'),
           value: _isPublic,
-          onChanged: (value) {
+          onChanged: (final value) {
             setState(() {
               _isPublic = value;
             });
@@ -354,7 +354,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           title: const Text('Require Parent Approval'),
           subtitle: const Text('Parents must approve before children can join'),
           value: _parentApprovalRequired,
-          onChanged: (value) {
+          onChanged: (final value) {
             setState(() {
               _parentApprovalRequired = value;
             });
@@ -365,9 +365,9 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
     );
   }
 
-  Widget _buildCreateButton(AppLocalizations l10n) {
+  Widget _buildCreateButton(final AppLocalizations l10n) {
     return Consumer(
-      builder: (context, ref, child) {
+      builder: (final context, final ref, final child) {
         final createGameState = ref.watch(playtimeGameNotifierProvider);
 
         return SizedBox(

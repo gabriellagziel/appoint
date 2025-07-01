@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../providers/child_providers.dart';
-import '../../../config/theme.dart';
+import 'package:appoint/features/child/providers/child_providers.dart';
+import 'package:appoint/config/theme.dart';
 
 /// Simple dashboard for child users showing avatar, nickname and playtime status.
 class ChildDashboardScreen extends ConsumerWidget {
   const ChildDashboardScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final info = ref.watch(childInfoProvider);
     final settings = ref.watch(childSettingsProvider);
 

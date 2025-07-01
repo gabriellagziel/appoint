@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../l10n/app_localizations.dart';
-import '../../../config/theme.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/config/theme.dart';
 
 class PlaytimeLandingScreen extends ConsumerWidget {
   const PlaytimeLandingScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
@@ -52,7 +52,7 @@ class PlaytimeLandingScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildHeader(BuildContext context, AppLocalizations l10n) {
+  Widget _buildHeader(final BuildContext context, final AppLocalizations l10n) {
     return Column(
       children: [
         Container(
@@ -97,7 +97,7 @@ class PlaytimeLandingScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildMainOptions(BuildContext context, AppLocalizations l10n) {
+  Widget _buildMainOptions(final BuildContext context, final AppLocalizations l10n) {
     return Column(
       children: [
         // Virtual Playtime Option
@@ -125,12 +125,12 @@ class PlaytimeLandingScreen extends ConsumerWidget {
   }
 
   Widget _buildOptionCard(
-    BuildContext context, {
-    required String title,
-    required String subtitle,
-    required IconData icon,
-    required Color color,
-    required VoidCallback onTap,
+    final BuildContext context, {
+    required final String title,
+    required final String subtitle,
+    required final IconData icon,
+    required final Color color,
+    required final VoidCallback onTap,
   }) {
     return GestureDetector(
       onTap: onTap,
@@ -200,7 +200,7 @@ class PlaytimeLandingScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildQuickActions(BuildContext context, AppLocalizations l10n) {
+  Widget _buildQuickActions(final BuildContext context, final AppLocalizations l10n) {
     return Column(
       children: [
         Text(
@@ -240,10 +240,10 @@ class PlaytimeLandingScreen extends ConsumerWidget {
   }
 
   Widget _buildQuickActionButton(
-    BuildContext context, {
-    required IconData icon,
-    required String label,
-    required VoidCallback onTap,
+    final BuildContext context, {
+    required final IconData icon,
+    required final String label,
+    required final VoidCallback onTap,
   }) {
     return GestureDetector(
       onTap: onTap,
@@ -277,7 +277,7 @@ class PlaytimeLandingScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildFooter(BuildContext context, AppLocalizations l10n) {
+  Widget _buildFooter(final BuildContext context, final AppLocalizations l10n) {
     return Column(
       children: [
         Text(

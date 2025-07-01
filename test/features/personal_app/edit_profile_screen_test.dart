@@ -7,7 +7,7 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
   group('EditProfileScreen', () {
-    testWidgets('renders form fields and save button', (tester) async {
+    testWidgets('renders form fields and save button', (final tester) async {
       await tester.pumpWidget(const MaterialApp(home: EditProfileScreen()));
 
       expect(find.byType(CircleAvatar), findsOneWidget);

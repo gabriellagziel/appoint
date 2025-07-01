@@ -14,7 +14,7 @@ class Analytics {
     required this.activeAppointments,
   });
 
-  factory Analytics.fromJson(Map<String, dynamic> json) =>
+  factory Analytics.fromJson(final Map<String, dynamic> json) =>
       _$AnalyticsFromJson(json);
 
   Map<String, dynamic> toJson() => _$AnalyticsToJson(this);

@@ -54,7 +54,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get undo => 'Отмяна';
 
   @override
-  String get opened => 'Отворено';
+  String opened(Object count) {
+    return 'Отворено';
+  }
 
   @override
   String get createVirtualSession => 'Създаване на виртуална сесия';
@@ -269,9 +271,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get playtimeLive => 'Playtime на живо';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Грешка при зареждане на покани';
-  }
+  String get errorLoadingInvites => 'Грешка при зареждане на покани';
 
   @override
   String get targetingFilters => 'Филтри за насочване';
@@ -289,7 +289,9 @@ class AppLocalizationsBg extends AppLocalizations {
   String get accessRevokedSuccessfully => 'Достъпът беше отменен успешно';
 
   @override
-  String get type => 'Тип';
+  String type(Object type) {
+    return 'Тип';
+  }
 
   @override
   String get checkingPermissions => 'Проверка на разрешения';
@@ -304,7 +306,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get email => 'Имейл';
 
   @override
-  String get shareOnWhatsApp => 'Споделяне в WhatsApp';
+  String get shareOnWhatsApp => '[BG] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Настройки на известия';
@@ -342,9 +344,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get playtimeReject => 'Откажи Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Грешка при зареждане на профил';
-  }
+  String get errorLoadingProfile => 'Грешка при зареждане на профил';
 
   @override
   String get edit => 'Редактирай';
@@ -550,4 +550,22 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get pleaseLoginToViewProfile => 'Моля, влезте, за да видите профила';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

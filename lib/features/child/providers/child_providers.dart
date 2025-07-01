@@ -7,7 +7,7 @@ class ChildInfo {
 
   ChildInfo({required this.nickname, required this.avatarUrl});
 
-  ChildInfo copyWith({String? nickname, String? avatarUrl}) {
+  ChildInfo copyWith({final String? nickname, final String? avatarUrl}) {
     return ChildInfo(
       nickname: nickname ?? this.nickname,
       avatarUrl: avatarUrl ?? this.avatarUrl,
@@ -16,7 +16,7 @@ class ChildInfo {
 }
 
 /// Fake provider with placeholder child profile data.
-final childInfoProvider = StateProvider<ChildInfo>((ref) {
+final childInfoProvider = StateProvider<ChildInfo>((final ref) {
   return ChildInfo(
     nickname: 'PlayerOne',
     avatarUrl: 'https://via.placeholder.com/150',
@@ -36,9 +36,9 @@ class ChildSettings {
   });
 
   ChildSettings copyWith({
-    bool? playtimeEnabled,
-    bool? notificationsEnabled,
-    bool? contentFilterEnabled,
+    final bool? playtimeEnabled,
+    final bool? notificationsEnabled,
+    final bool? contentFilterEnabled,
   }) {
     return ChildSettings(
       playtimeEnabled: playtimeEnabled ?? this.playtimeEnabled,
@@ -56,21 +56,21 @@ class ChildSettingsNotifier extends StateNotifier<ChildSettings> {
           contentFilterEnabled: true,
         ));
 
-  void togglePlaytime(bool value) {
+  void togglePlaytime(final bool value) {
     state = state.copyWith(playtimeEnabled: value);
   }
 
-  void toggleNotifications(bool value) {
+  void toggleNotifications(final bool value) {
     state = state.copyWith(notificationsEnabled: value);
   }
 
-  void toggleContentFilter(bool value) {
+  void toggleContentFilter(final bool value) {
     state = state.copyWith(contentFilterEnabled: value);
   }
 }
 
 /// Provider exposing the current parental control settings.
 final childSettingsProvider =
-    StateNotifierProvider<ChildSettingsNotifier, ChildSettings>((ref) {
+    StateNotifierProvider<ChildSettingsNotifier, ChildSettings>((final ref) {
   return ChildSettingsNotifier();
 });

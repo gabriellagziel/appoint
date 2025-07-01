@@ -1,11 +1,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/family_link.dart';
-import '../models/permission.dart';
-import '../models/privacy_request.dart';
-import '../services/family_service.dart';
-import 'auth_provider.dart';
+import 'package:appoint/models/family_link.dart';
+import 'package:appoint/models/permission.dart';
+import 'package:appoint/models/privacy_request.dart';
+import 'package:appoint/services/family_service.dart';
+import 'package:appoint/providers/auth_provider.dart';
 
-final familyServiceProvider = Provider((_) => FamilyService());
+final familyServiceProvider = Provider((final _) => FamilyService());
 
 /// Represents the loading state for family links
 class FamilyLinksState {
@@ -22,10 +22,10 @@ class FamilyLinksState {
   });
 
   FamilyLinksState copyWith({
-    bool? isLoading,
-    List<FamilyLink>? pendingInvites,
-    List<FamilyLink>? connectedChildren,
-    String? error,
+    final bool? isLoading,
+    final List<FamilyLink>? pendingInvites,
+    final List<FamilyLink>? connectedChildren,
+    final String? error,
   }) {
     return FamilyLinksState(
       isLoading: isLoading ?? this.isLoading,
@@ -53,8 +53,8 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
       final links = await _familyService.fetchFamilyLinks(parentId);
       state = state.copyWith(
         isLoading: false,
-        pendingInvites: links.where((l) => l.status == 'pending').toList(),
-        connectedChildren: links.where((l) => l.status == 'active').toList(),
+        pendingInvites: links.where((final l) => l.status == 'pending').toList(),
+        connectedChildren: links.where((final l) => l.status == 'active').toList(),
       );
     } catch (e) {
       state = state.copyWith(
@@ -65,7 +65,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
   }
 
   /// Cancel a pending invite
-  Future<void> cancelInvite(FamilyLink link) async {
+  Future<void> cancelInvite(final FamilyLink link) async {
     try {
       await _familyService.cancelInvite(parentId, link.childId);
       await loadLinks();
@@ -75,7 +75,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
   }
 
   /// Resend OTP for a pending invite
-  Future<void> resendInvite(FamilyLink link) async {
+  Future<void> resendInvite(final FamilyLink link) async {
     try {
       await _familyService.resendOtp(parentId, link.childId);
       // Optionally notify user via analytics or toast
@@ -88,29 +88,29 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
 /// Provider for FamilyLinksNotifier, requires parentId from auth
 final familyLinksProvider =
     StateNotifierProvider.family<FamilyLinksNotifier, FamilyLinksState, String>(
-  (ref, String parentId) => FamilyLinksNotifier(
+  (final ref, final String parentId) => FamilyLinksNotifier(
     ref.read(familyServiceProvider),
     parentId,
   ),
 );
 
 final permissionsProvider =
-    FutureProvider.family.autoDispose<List<Permission>, String>((ref, linkId) {
+    FutureProvider.family.autoDispose<List<Permission>, String>((final ref, final linkId) {
   final svc = ref.watch(familyServiceProvider);
   return svc.fetchPermissions(linkId);
 });
 
 final privacyRequestsProvider =
-    FutureProvider.autoDispose<List<PrivacyRequest>>((ref) {
+    FutureProvider.autoDispose<List<PrivacyRequest>>((final ref) {
   final svc = ref.watch(familyServiceProvider);
   final authState = ref.watch(authStateProvider);
 
   return authState.when(
-    data: (user) {
+    data: (final user) {
       if (user == null) return Future.value([]);
       return svc.fetchPrivacyRequests(user.uid);
     },
     loading: () => Future.value([]),
-    error: (_, __) => Future.value([]),
+    error: (final _, final __) => Future.value([]),
   );
 });

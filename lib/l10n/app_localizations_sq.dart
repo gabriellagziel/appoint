@@ -9,546 +9,568 @@ class AppLocalizationsSq extends AppLocalizations {
   AppLocalizationsSq([String locale = 'sq']) : super(locale);
 
   @override
-  String get refresh => 'Përditëso';
+  String get refresh => '[SQ] Refresh';
 
   @override
-  String get home => 'Kryefaqe';
+  String get home => '[SQ] Home';
 
   @override
-  String get noSessionsYet => 'Ende nuk ka seanca';
+  String get noSessionsYet => '[SQ] No sessions yet';
 
   @override
-  String get ok => 'Mirë';
+  String get ok => '[SQ] OK';
 
   @override
-  String get playtimeLandingChooseMode => 'Zgjidh mënyrën';
+  String get playtimeLandingChooseMode => '[SQ] Choose your play mode:';
 
   @override
-  String get signUp => 'Regjistrohu';
+  String get signUp => '[SQ] Sign Up';
 
   @override
-  String get scheduleMessage => 'Cakto mesazhin';
+  String get scheduleMessage => '[SQ] Schedule Message';
 
   @override
-  String get decline => 'Refuzo';
+  String get decline => '[SQ] Decline';
 
   @override
-  String get adminBroadcast => 'Transmetim admini';
+  String get adminBroadcast => '[SQ] Admin Broadcast';
 
   @override
-  String get login => 'Hyrje';
+  String get login => '[SQ] Login';
 
   @override
-  String get playtimeChooseFriends => 'Zgjidh miqtë';
+  String get playtimeChooseFriends => '[SQ] Choose friends to invite';
 
   @override
-  String get noInvites => 'Nuk ka ftesa';
+  String get noInvites => '[SQ] No invites';
 
   @override
-  String get playtimeChooseTime => 'Zgjidh kohën';
+  String get playtimeChooseTime => '[SQ] Choose a time';
 
   @override
-  String get success => 'Sukses';
+  String get success => '[SQ] Success';
 
   @override
-  String get undo => 'Zhbëj';
+  String get undo => '[SQ] Undo';
 
   @override
-  String get opened => 'Hapur';
+  String opened(Object count) {
+    return '[SQ] Opened';
+  }
 
   @override
-  String get createVirtualSession => 'Krijo seancë virtuale';
+  String get createVirtualSession => '[SQ] Create Virtual Session';
 
   @override
-  String get messageSentSuccessfully => 'Mesazhi u dërgua me sukses';
+  String get messageSentSuccessfully => '[SQ] Message sent successfully';
 
   @override
-  String get redo => 'Bëje përsëri';
+  String get redo => '[SQ] Redo';
 
   @override
-  String get next => 'Tjetra';
+  String get next => '[SQ] Next';
 
   @override
-  String get search => 'Kërko';
+  String get search => '[SQ] Search';
 
   @override
-  String get cancelInviteConfirmation => 'Anulo konfirmimin e ftesës';
+  String get cancelInviteConfirmation =>
+      '[SQ] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return 'Krijuar';
+    return '[SQ] Created';
   }
 
   @override
-  String get revokeAccess => 'Heq qasjen';
+  String get revokeAccess => '[SQ] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => 'Ruaj grupin për njohje';
+  String get saveGroupForRecognition => '[SQ] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Seanca live e planifikuar';
+  String get playtimeLiveScheduled => '[SQ] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Konfirmo heqjen e qasjes';
+  String get revokeAccessConfirmation =>
+      '[SQ] Are you sure you want to revoke access?';
 
   @override
-  String get download => 'Shkarko';
+  String get download => '[SQ] Download';
 
   @override
-  String get password => 'Fjalëkalim';
+  String get password => '[SQ] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Gabim gjatë ngarkimit të lidhjeve familjare';
+    return '[SQ] Error loading family links';
   }
 
   @override
-  String get cancel => 'Anulo';
+  String get cancel => '[SQ] Cancel';
 
   @override
-  String get playtimeCreate => 'Krijo Playtime';
+  String get playtimeCreate => '[SQ] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Dështoi kërkesa për privatësi';
+    return '[SQ] Failed to action privacy request';
   }
 
   @override
-  String get appTitle => 'Titulli i aplikacionit';
+  String get appTitle => '[SQ] APP-OINT';
 
   @override
-  String get accept => 'Prano';
+  String get accept => '[SQ] Accept';
 
   @override
-  String get playtimeModeVirtual => 'Mënyra virtuale';
+  String get playtimeModeVirtual => '[SQ] Virtual Play';
 
   @override
-  String get playtimeDescription => 'Përshkrimi i Playtime';
+  String get playtimeDescription =>
+      '[SQ] Enjoy live or virtual games with your friends!';
 
   @override
-  String get delete => 'Fshi';
+  String get delete => '[SQ] Delete';
 
   @override
-  String get playtimeVirtualStarted => 'Seanca virtuale filloi';
+  String get playtimeVirtualStarted => '[SQ] Virtual playtime started!';
 
   @override
-  String get createYourFirstGame => 'Krijo lojën tënde të parë';
+  String get createYourFirstGame => '[SQ] Create your first game';
 
   @override
-  String get participants => 'Pjesëmarrësit';
+  String get participants => '[SQ] Participants';
 
   @override
   String recipients(Object count) {
-    return 'Marrësit';
+    return '[SQ] Recipients';
   }
 
   @override
-  String get noResults => 'Pa rezultate';
+  String get noResults => '[SQ] No results found';
 
   @override
-  String get yes => 'Po';
+  String get yes => '[SQ] Yes';
 
   @override
-  String get invite => 'Fto';
+  String get invite => '[SQ] Invite';
 
   @override
-  String get playtimeModeLive => 'Mënyra live';
+  String get playtimeModeLive => '[SQ] Live Play';
 
   @override
-  String get done => 'Përfunduar';
+  String get done => '[SQ] Done';
 
   @override
-  String get defaultShareMessage => 'Mesazhi i parazgjedhur i ndarjes';
+  String get defaultShareMessage => '[SQ] Let\'s meet via Appoint!';
 
   @override
-  String get no => 'Jo';
+  String get no => '[SQ] No';
 
   @override
-  String get playtimeHub => 'Qendra Playtime';
+  String get playtimeHub => '[SQ] Playtime Hub';
 
   @override
-  String get error => 'Gabim';
+  String get error => '[SQ] Error';
 
   @override
-  String get createLiveSession => 'Krijo seancë live';
+  String get createLiveSession => '[SQ] Create Live Session';
 
   @override
-  String get enableNotifications => 'Aktivizo njoftimet';
+  String get enableNotifications => '[SQ] Enable Notifications';
 
   @override
   String invited(Object date) {
-    return 'I ftuar';
+    return '[SQ] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'Përmbajtje';
+    return '[SQ] Content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Takimi u ndau me sukses';
+  String get meetingSharedSuccessfully => '[SQ] Meeting shared successfully';
 
   @override
-  String get welcomeToPlaytime => 'Mirësevini në Playtime';
+  String get welcomeToPlaytime => '[SQ] Welcome to Playtime';
 
   @override
-  String get viewAll => 'Shiko të gjitha';
+  String get viewAll => '[SQ] View All';
 
   @override
-  String get playtimeVirtual => 'Playtime virtual';
+  String get playtimeVirtual => '[SQ] Virtual Play';
 
   @override
-  String get staffScreenTBD => 'Ekrani i stafit vendoset më vonë';
+  String get staffScreenTBD => '[SQ] Staff screen coming soon';
 
   @override
-  String get cut => 'Pren';
+  String get cut => '[SQ] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => 'Ftesa u anulua me sukses';
+  String get inviteCancelledSuccessfully =>
+      '[SQ] Invite cancelled successfully';
 
   @override
-  String get retry => 'Provoni përsëri';
+  String get retry => '[SQ] Retry';
 
   @override
-  String get composeBroadcastMessage => 'Shkruaj mesazh transmetimi';
+  String get composeBroadcastMessage => '[SQ] Compose Broadcast Message';
 
   @override
-  String get sendNow => 'Dërgo tani';
+  String get sendNow => '[SQ] Send Now';
 
   @override
-  String get noGamesYet => 'Ende nuk ka lojëra';
+  String get noGamesYet => '[SQ] No games yet';
 
   @override
-  String get select => 'Zgjidh';
+  String get select => '[SQ] Select';
 
   @override
-  String get about => 'Rreth';
+  String get about => '[SQ] About';
 
   @override
-  String get choose => 'Zgjidh';
+  String get choose => '[SQ] Choose';
 
   @override
-  String get profile => 'Profili';
+  String get profile => '[SQ] Profile';
 
   @override
-  String get removeChild => 'Fshi fëmijën';
+  String get removeChild => '[SQ] Remove Child';
 
   @override
   String status(Object status) {
-    return 'Statusi';
+    return '[SQ] Status';
   }
 
   @override
-  String get logout => 'Dil';
+  String get logout => '[SQ] Logout';
 
   @override
-  String get paste => 'Ngjit';
+  String get paste => '[SQ] Paste';
 
   @override
-  String get welcome => 'Mirësevini';
+  String get welcome => '[SQ] Welcome';
 
   @override
-  String get playtimeCreateSession => 'Krijo seancë';
+  String get playtimeCreateSession => '[SQ] Create a Playtime Session';
 
   @override
-  String get familyMembers => 'Anëtarët e familjes';
+  String get familyMembers => '[SQ] Family Members';
 
   @override
-  String get upload => 'Ngarko';
+  String get upload => '[SQ] Upload';
 
   @override
-  String get upcomingSessions => 'Seancat e ardhshme';
+  String get upcomingSessions => '[SQ] Upcoming Sessions';
 
   @override
-  String get enterGroupName => 'Shkruaj emrin e grupit';
+  String get enterGroupName => '[SQ] Enter group name';
 
   @override
-  String get confirm => 'Konfirmo';
+  String get confirm => '[SQ] Confirm';
 
   @override
-  String get playtimeLive => 'Playtime live';
+  String get playtimeLive => '[SQ] Live Play';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Gabim gjatë ngarkimit të ftesave';
+  String get errorLoadingInvites => '[SQ] Error loading invites';
+
+  @override
+  String get targetingFilters => '[SQ] Targeting Filters';
+
+  @override
+  String get pickVideo => '[SQ] Pick Video';
+
+  @override
+  String get playtimeGameDeleted => '[SQ] Game deleted';
+
+  @override
+  String get scheduleForLater => '[SQ] Schedule for Later';
+
+  @override
+  String get accessRevokedSuccessfully => '[SQ] Access revoked successfully';
+
+  @override
+  String type(Object type) {
+    return '[SQ] Type';
   }
 
   @override
-  String get targetingFilters => 'Filtro targeting';
+  String get checkingPermissions => '[SQ] Checking permissions...';
 
   @override
-  String get pickVideo => 'Zgjidh video';
+  String get copy => '[SQ] Copy';
 
   @override
-  String get playtimeGameDeleted => 'Loja u fshi';
+  String get yesCancel => '[SQ] Yes, Cancel';
 
   @override
-  String get scheduleForLater => 'Planifiko më vonë';
+  String get email => '[SQ] Email';
 
   @override
-  String get accessRevokedSuccessfully => 'Qasja u hoq me sukses';
+  String get shareOnWhatsApp => '[SQ] Share on WhatsApp';
 
   @override
-  String get type => 'Lloji';
+  String get notificationSettings => '[SQ] Notification Settings';
 
   @override
-  String get checkingPermissions => 'Po kontrollohen lejet';
+  String get myProfile => '[SQ] My Profile';
 
   @override
-  String get copy => 'Kopjo';
+  String get revoke => '[SQ] Revoke';
 
   @override
-  String get yesCancel => 'Po, anulo';
-
-  @override
-  String get email => 'Email';
-
-  @override
-  String get shareOnWhatsApp => 'Ndaj në WhatsApp';
-
-  @override
-  String get notificationSettings => 'Cilësimet e njoftimeve';
-
-  @override
-  String get myProfile => 'Profili im';
-
-  @override
-  String get revoke => 'Heq';
-
-  @override
-  String get noBroadcastMessages => 'Pa mesazhe transmetimi';
+  String get noBroadcastMessages => '[SQ] No messages yet';
 
   @override
   String requestType(Object type) {
-    return 'Lloji i kërkesës';
+    return '[SQ] Request Type';
   }
 
   @override
-  String get notifications => 'Njoftimet';
+  String get notifications => '[SQ] Notifications';
 
   @override
-  String get details => 'Detajet';
+  String get details => '[SQ] Details';
 
   @override
-  String get cancelInvite => 'Anulo ftesën';
+  String get cancelInvite => '[SQ] Cancel Invite';
 
   @override
-  String get createNew => 'Krijo të ri';
+  String get createNew => '[SQ] Create New';
 
   @override
-  String get settings => 'Cilësimet';
+  String get settings => '[SQ] Settings';
 
   @override
-  String get playtimeReject => 'Refuzo Playtime';
+  String get playtimeReject => '[SQ] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Gabim gjatë ngarkimit të profilit';
-  }
+  String get errorLoadingProfile => '[SQ] Error loading profile';
 
   @override
-  String get edit => 'Redakto';
+  String get edit => '[SQ] Edit';
 
   @override
-  String get add => 'Shto';
+  String get add => '[SQ] Add';
 
   @override
-  String get playtimeGameApproved => 'Loja u miratua';
+  String get playtimeGameApproved => '[SQ] Game approved';
 
   @override
-  String get forgotPassword => 'Harrove fjalëkalimin?';
+  String get forgotPassword => '[SQ] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Paneli i familjes';
+  String get familyDashboard => '[SQ] Family Dashboard';
 
   @override
-  String get loading => 'Duke ngarkuar';
+  String get loading => '[SQ] Loading...';
 
   @override
-  String get quickActions => 'Veprime të shpejta';
+  String get quickActions => '[SQ] Quick Actions';
 
   @override
-  String get playtimeTitle => 'Titulli i Playtime';
+  String get playtimeTitle => '[SQ] Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP u dërgua përsëri me sukses';
+  String get otpResentSuccessfully => '[SQ] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Gabim gjatë kontrollit të lejeve';
+    return '[SQ] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Ekrani i klientit vendoset më vonë';
+  String get clientScreenTBD => '[SQ] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'Token FCM';
+    return '[SQ] FCM Token';
   }
 
   @override
-  String get pickImage => 'Zgjidh imazh';
+  String get pickImage => '[SQ] Pick Image';
 
   @override
-  String get previous => 'I mëparshëm';
+  String get previous => '[SQ] Previous';
 
   @override
-  String get noProfileFound => 'Profili nuk u gjet';
+  String get noProfileFound => '[SQ] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Ende nuk ka anëtarë familjeje';
+  String get noFamilyMembersYet => '[SQ] No family members yet';
 
   @override
-  String get mediaOptional => 'Media (opsionale)';
+  String get mediaOptional => '[SQ] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => 'Mesazhi u ruajt me sukses';
+  String get messageSavedSuccessfully => '[SQ] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Planifikuar për';
+  String get scheduledFor => '[SQ] Scheduled for';
 
   @override
-  String get dashboard => 'Paneli';
+  String get dashboard => '[SQ] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => 'Nuk ka leje për transmetim';
+  String get noPermissionForBroadcast => '[SQ] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Titulli i panelit admin Playtime';
+  String get playtimeAdminPanelTitle => '[SQ] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Detajet e ftesës';
+  String get inviteDetail => '[SQ] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return 'Planifikuar';
+    return '[SQ] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Dështoi dërgimi i OTP-së';
+    return '[SQ] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => 'Planifikimi';
+  String get scheduling => '[SQ] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Gabim gjatë ruajtjes së mesazhit';
+    return '[SQ] Error saving message';
   }
 
   @override
-  String get save => 'Ruaj';
+  String get save => '[SQ] Save';
 
   @override
-  String get playtimeApprove => 'Aprovo Playtime';
+  String get playtimeApprove => '[SQ] Approve';
 
   @override
-  String get createYourFirstSession => 'Krijo seancën tënde të parë';
+  String get createYourFirstSession => '[SQ] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'Loja u refuzua';
+  String get playtimeGameRejected => '[SQ] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Dështoi heqja e qasjes';
+    return '[SQ] Failed to revoke access';
   }
 
   @override
-  String get recentGames => 'Lojërat e fundit';
+  String get recentGames => '[SQ] Recent Games';
 
   @override
-  String get customizeMessage => 'Përshtat mesazhin';
+  String get customizeMessage => '[SQ] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Dështoi anulimi i ftesës';
+    return '[SQ] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Gabim gjatë dërgimit të mesazhit';
+    return '[SQ] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Konfirmo fjalëkalimin';
+  String get confirmPassword => '[SQ] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Gabim gjatë ngarkimit të kërkesave për privatësi';
+    return '[SQ] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Fëmijët e lidhur';
+  String get connectedChildren => '[SQ] Connected Children';
 
   @override
-  String get share => 'Ndaj';
+  String get share => '[SQ] Share';
 
   @override
-  String get playtimeEnterGameName => 'Shkruaj emrin e lojës';
+  String get playtimeEnterGameName => '[SQ] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Ju lutem identifikohu për të aksesuar veçoritë e familjes';
+      '[SQ] Please login to access family features';
 
   @override
-  String get myInvites => 'Ftesat e mia';
+  String get myInvites => '[SQ] My Invites';
 
   @override
-  String get createGame => 'Krijo lojë';
+  String get createGame => '[SQ] Create Game';
 
   @override
-  String get groupNameOptional => 'Emri i grupit (opsionale)';
+  String get groupNameOptional => '[SQ] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Nuk u gjetën seanca Playtime';
+  String get playtimeNoSessions => '[SQ] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Ekrani i adminit do të vijë së shpejti';
+  String get adminScreenTBD => '[SQ] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Paneli i Playtime';
+  String get playtimeParentDashboardTitle => '[SQ] Playtime Dashboard';
 
   @override
-  String get close => 'Mbyll';
+  String get close => '[SQ] Close';
 
   @override
-  String get knownGroupDetected => 'U zbulua grup i njohur';
+  String get knownGroupDetected => '[SQ] Known group detected';
 
   @override
-  String get back => 'Kthehu';
+  String get back => '[SQ] Back';
 
   @override
-  String get playtimeChooseGame => 'Zgjidh një lojë';
+  String get playtimeChooseGame => '[SQ] Choose a game';
 
   @override
-  String get managePermissions => 'Menaxho lejet';
+  String get managePermissions => '[SQ] Manage Permissions';
 
   @override
-  String get pollOptions => 'Opsionet e sondazhit';
+  String get pollOptions => '[SQ] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Klikuar';
+    return '[SQ] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Lidhje';
+    return '[SQ] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Takimi juaj është gati! Bashkohuni tani';
+  String get meetingReadyMessage => '[SQ] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Ftesat në pritje';
+  String get pendingInvites => '[SQ] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Statusi:';
+    return '[SQ] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      'Ju lutem identifikohu për të parë profilin';
+      '[SQ] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

@@ -2,20 +2,20 @@ import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../providers/appointment_provider.dart';
-import '../../providers/auth_provider.dart';
-import '../../providers/calendar_provider.dart';
-import '../../models/appointment.dart';
-import '../../providers/notification_provider.dart';
-import '../../providers/user_subscription_provider.dart';
-import '../../services/ad_service.dart';
-import '../../widgets/whatsapp_share_button.dart';
-import 'models/booking_request_args.dart';
+import 'package:appoint/providers/appointment_provider.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/providers/calendar_provider.dart';
+import 'package:appoint/models/appointment.dart';
+import 'package:appoint/providers/notification_provider.dart';
+import 'package:appoint/providers/user_subscription_provider.dart';
+import 'package:appoint/services/ad_service.dart';
+import 'package:appoint/widgets/whatsapp_share_button.dart';
+import 'package:appoint/features/booking/models/booking_request_args.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import '../../services/maps_service.dart';
+import 'package:appoint/services/maps_service.dart';
 
 class BookingConfirmScreen extends ConsumerStatefulWidget {
-  const BookingConfirmScreen({Key? key}) : super(key: key);
+  const BookingConfirmScreen({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<BookingConfirmScreen> createState() =>
@@ -30,7 +30,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
 
   Future<void> _maybeShowAd() async {
     final isPremium = ref.read(userSubscriptionProvider).maybeWhen(
-          data: (isPremium) => isPremium,
+          data: (final isPremium) => isPremium,
           orElse: () => false,
         );
     if (isPremium) return; // isPremium now includes isAdminFreeAccess
@@ -45,7 +45,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final args =
         ModalRoute.of(context)!.settings.arguments as BookingRequestArgs;
     return Scaffold(
@@ -68,19 +68,19 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                   height: 200,
                   child: GoogleMap(
                     initialCameraPosition: MapsService.initialPosition,
-                    onMapCreated: (_) {},
+                    onMapCreated: (final _) {},
                     myLocationEnabled: true,
                   ),
                 ),
                 SwitchListTile(
                   title: const Text('Sync to Google'),
                   value: _syncGoogle,
-                  onChanged: (v) => setState(() => _syncGoogle = v),
+                  onChanged: (final v) => setState(() => _syncGoogle = v),
                 ),
                 SwitchListTile(
                   title: const Text('Sync to Outlook'),
                   value: _syncOutlook,
-                  onChanged: (v) => setState(() => _syncOutlook = v),
+                  onChanged: (final v) => setState(() => _syncOutlook = v),
                 ),
                 const Spacer(),
                 if (_createdAppointment != null) ...[
@@ -113,8 +113,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                       ? null
                       : () async {
                           await _maybeShowAd();
-                          final user =
-                              await ref.read(authServiceProvider).currentUser();
+                          final user = ref.read(authProvider).currentUser;
                           if (user == null) return;
                           late final Appointment appt;
                           if (args.openCall) {

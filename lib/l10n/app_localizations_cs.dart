@@ -15,7 +15,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get home => 'Domů';
 
   @override
-  String get noSessionsYet => 'Zatím žádná sezení';
+  String get noSessionsYet => '[CS] No sessions yet';
 
   @override
   String get ok => 'OK';
@@ -24,10 +24,10 @@ class AppLocalizationsCs extends AppLocalizations {
   String get playtimeLandingChooseMode => 'Vyber režim';
 
   @override
-  String get signUp => 'Registrovat se';
+  String get signUp => '[CS] Sign Up';
 
   @override
-  String get scheduleMessage => 'Naplánovat zprávu';
+  String get scheduleMessage => '[CS] Schedule Message';
 
   @override
   String get decline => 'Odmítnout';
@@ -54,13 +54,15 @@ class AppLocalizationsCs extends AppLocalizations {
   String get undo => 'Zpět';
 
   @override
-  String get opened => 'Otevřeno';
+  String opened(Object count) {
+    return 'Otevřeno';
+  }
 
   @override
   String get createVirtualSession => 'Vytvořit virtuální relaci';
 
   @override
-  String get messageSentSuccessfully => 'Zpráva byla úspěšně odeslána';
+  String get messageSentSuccessfully => '[CS] Message sent successfully';
 
   @override
   String get redo => 'Znovu';
@@ -69,7 +71,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get next => 'Další';
 
   @override
-  String get search => 'Hledat';
+  String get search => '[CS] Search';
 
   @override
   String get cancelInviteConfirmation => 'Zrušit potvrzení pozvánky';
@@ -80,10 +82,10 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get revokeAccess => 'Odvolat přístup';
+  String get revokeAccess => '[CS] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => 'Uložit skupinu pro rozpoznání';
+  String get saveGroupForRecognition => '[CS] Save Group for Recognition';
 
   @override
   String get playtimeLiveScheduled => 'Živá relace naplánována';
@@ -99,7 +101,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Chyba načítání rodinných odkazů';
+    return '[CS] Error loading family links';
   }
 
   @override
@@ -110,7 +112,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Nepodařilo se zpracovat žádost o soukromí';
+    return '[CS] Failed to action privacy request';
   }
 
   @override
@@ -149,13 +151,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get yes => 'Ano';
 
   @override
-  String get invite => 'Pozvat';
+  String get invite => '[CS] Invite';
 
   @override
   String get playtimeModeLive => 'Živý režim';
 
   @override
-  String get done => 'Hotovo';
+  String get done => '[CS] Done';
 
   @override
   String get defaultShareMessage => 'Výchozí zpráva pro sdílení';
@@ -173,7 +175,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get createLiveSession => 'Vytvořit živou relaci';
 
   @override
-  String get enableNotifications => 'Povolit upozornění';
+  String get enableNotifications => '[CS] Enable Notifications';
 
   @override
   String invited(Object date) {
@@ -198,7 +200,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get playtimeVirtual => 'Virtuální Playtime';
 
   @override
-  String get staffScreenTBD => 'Obrazovka personálu bude určena';
+  String get staffScreenTBD => '[CS] Staff screen coming soon';
 
   @override
   String get cut => 'Vyjmout';
@@ -213,22 +215,22 @@ class AppLocalizationsCs extends AppLocalizations {
   String get composeBroadcastMessage => 'Vytvořit vysílací zprávu';
 
   @override
-  String get sendNow => 'Odeslat nyní';
+  String get sendNow => '[CS] Send Now';
 
   @override
   String get noGamesYet => 'Ještě žádné hry';
 
   @override
-  String get select => 'Vybrat';
+  String get select => '[CS] Select';
 
   @override
   String get about => 'O aplikaci';
 
   @override
-  String get choose => 'Vybrat';
+  String get choose => '[CS] Choose';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[CS] Profile';
 
   @override
   String get removeChild => 'Odstranit dítě';
@@ -251,7 +253,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get playtimeCreateSession => 'Vytvořit relaci';
 
   @override
-  String get familyMembers => 'Členové rodiny';
+  String get familyMembers => '[CS] Family Members';
 
   @override
   String get upload => 'Nahrát';
@@ -260,7 +262,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get upcomingSessions => 'Nadcházející relace';
 
   @override
-  String get enterGroupName => 'Zadejte název skupiny';
+  String get enterGroupName => '[CS] Enter group name';
 
   @override
   String get confirm => 'Potvrdit';
@@ -269,33 +271,33 @@ class AppLocalizationsCs extends AppLocalizations {
   String get playtimeLive => 'Živý Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Chyba načítání pozvánek';
-  }
+  String get errorLoadingInvites => 'Chyba načítání pozvánek';
 
   @override
   String get targetingFilters => 'Cílení filtrů';
 
   @override
-  String get pickVideo => 'Vybrat video';
+  String get pickVideo => '[CS] Pick Video';
 
   @override
   String get playtimeGameDeleted => 'Hra smazána';
 
   @override
-  String get scheduleForLater => 'Naplánovat na později';
+  String get scheduleForLater => '[CS] Schedule for Later';
 
   @override
   String get accessRevokedSuccessfully => 'Přístup úspěšně odvolán';
 
   @override
-  String get type => 'Typ';
+  String type(Object type) {
+    return 'Typ';
+  }
 
   @override
-  String get checkingPermissions => 'Kontrola oprávnění';
+  String get checkingPermissions => '[CS] Checking permissions...';
 
   @override
-  String get copy => 'Kopírovat';
+  String get copy => '[CS] Copy';
 
   @override
   String get yesCancel => 'Ano, zrušit';
@@ -304,16 +306,16 @@ class AppLocalizationsCs extends AppLocalizations {
   String get email => 'Email';
 
   @override
-  String get shareOnWhatsApp => 'Sdílet na WhatsApp';
+  String get shareOnWhatsApp => '[CS] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Nastavení oznámení';
 
   @override
-  String get myProfile => 'Můj profil';
+  String get myProfile => '[CS] My Profile';
 
   @override
-  String get revoke => 'Odvolat';
+  String get revoke => '[CS] Revoke';
 
   @override
   String get noBroadcastMessages => 'Žádné vysílací zprávy';
@@ -324,7 +326,7 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get notifications => 'Upozornění';
+  String get notifications => '[CS] Notifications';
 
   @override
   String get details => 'Podrobnosti';
@@ -342,15 +344,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get playtimeReject => 'Odmítnout Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Chyba načítání profilu';
-  }
+  String get errorLoadingProfile => '[CS] Error loading profile';
 
   @override
   String get edit => 'Upravit';
 
   @override
-  String get add => 'Přidat';
+  String get add => '[CS] Add';
 
   @override
   String get playtimeGameApproved => 'Hra schválena';
@@ -359,7 +359,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get forgotPassword => 'Zapomněli jste heslo?';
 
   @override
-  String get familyDashboard => 'Rodinná nadstavba';
+  String get familyDashboard => '[CS] Family Dashboard';
 
   @override
   String get loading => 'Načítání';
@@ -371,11 +371,11 @@ class AppLocalizationsCs extends AppLocalizations {
   String get playtimeTitle => 'Název Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP bylo úspěšně znovu odesláno';
+  String get otpResentSuccessfully => '[CS] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Chyba při kontrole oprávnění';
+    return '[CS] Error checking permissions';
   }
 
   @override
@@ -383,26 +383,26 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'Token FCM';
+    return '[CS] FCM Token';
   }
 
   @override
-  String get pickImage => 'Vybrat obrázek';
+  String get pickImage => '[CS] Pick Image';
 
   @override
   String get previous => 'Předchozí';
 
   @override
-  String get noProfileFound => 'Profil nenalezen';
+  String get noProfileFound => '[CS] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Ještě žádní členové rodiny';
+  String get noFamilyMembersYet => '[CS] No family members yet';
 
   @override
   String get mediaOptional => 'Média (volitelné)';
 
   @override
-  String get messageSavedSuccessfully => 'Zpráva byla úspěšně uložena';
+  String get messageSavedSuccessfully => '[CS] Message saved successfully';
 
   @override
   String get scheduledFor => 'Naplánováno na';
@@ -414,8 +414,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get noPermissionForBroadcast => 'Žádné oprávnění k vysílání';
 
   @override
-  String get playtimeAdminPanelTitle =>
-      'Název administrátorského panelu Playtime';
+  String get playtimeAdminPanelTitle => '[CS] Playtime Games – Admin';
 
   @override
   String get inviteDetail => 'Podrobnosti pozvánky';
@@ -427,7 +426,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Nepodařilo se znovu odeslat OTP';
+    return '[CS] Failed to resend OTP';
   }
 
   @override
@@ -452,7 +451,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Nepodařilo se odvolat přístup';
+    return '[CS] Failed to revoke access';
   }
 
   @override
@@ -490,7 +489,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Prosím přihlaste se pro rodinné funkce';
+      '[CS] Please login to access family features';
 
   @override
   String get myInvites => 'Moje pozvánky';
@@ -499,13 +498,13 @@ class AppLocalizationsCs extends AppLocalizations {
   String get createGame => 'Vytvořit hru';
 
   @override
-  String get groupNameOptional => 'Název skupiny (volitelný)';
+  String get groupNameOptional => '[CS] Group Name (Optional)';
 
   @override
   String get playtimeNoSessions => 'Žádná Playtime relace';
 
   @override
-  String get adminScreenTBD => 'Administrátorská obrazovka bude určena';
+  String get adminScreenTBD => '[CS] Admin screen coming soon';
 
   @override
   String get playtimeParentDashboardTitle =>
@@ -515,7 +514,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get close => 'Zavřít';
 
   @override
-  String get knownGroupDetected => 'Zjištěna známá skupina';
+  String get knownGroupDetected => '[CS] Known group detected';
 
   @override
   String get back => 'Zpět';
@@ -531,7 +530,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String clicked(Object count) {
-    return 'Kliknuto';
+    return '[CS] Clicked';
   }
 
   @override
@@ -551,5 +550,24 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Přihlaste se pro zobrazení profilu';
+  String get pleaseLoginToViewProfile =>
+      '[CS] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import '../../../utils/datetime_converter.dart';
+import 'package:appoint/utils/datetime_converter.dart';
 
 part 'business_event.freezed.dart';
 part 'business_event.g.dart';
@@ -7,14 +7,14 @@ part 'business_event.g.dart';
 @freezed
 class BusinessEvent with _$BusinessEvent {
   const factory BusinessEvent({
-    required String id,
-    required String title,
-    required String description,
-    required String type,
-    @DateTimeConverter() required DateTime startTime,
-    @DateTimeConverter() required DateTime endTime,
+    required final String id,
+    required final String title,
+    required final String description,
+    required final String type,
+    @DateTimeConverter() required final DateTime startTime,
+    @DateTimeConverter() required final DateTime endTime,
   }) = _BusinessEvent;
 
-  factory BusinessEvent.fromJson(Map<String, dynamic> json) =>
+  factory BusinessEvent.fromJson(final Map<String, dynamic> json) =>
       _$BusinessEventFromJson(json);
 }

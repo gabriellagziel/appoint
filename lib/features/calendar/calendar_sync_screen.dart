@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../models/appointment.dart';
-import '../../providers/calendar_provider.dart';
+import 'package:appoint/models/appointment.dart';
+import 'package:appoint/providers/calendar_provider.dart';
 
 class CalendarSyncScreen extends ConsumerWidget {
-  const CalendarSyncScreen({Key? key}) : super(key: key);
+  const CalendarSyncScreen({final Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final appt = ModalRoute.of(context)!.settings.arguments as Appointment;
     return Scaffold(
       appBar: AppBar(title: const Text('Sync Appointment')),

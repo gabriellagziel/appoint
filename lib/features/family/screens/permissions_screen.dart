@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../models/family_link.dart';
-import '../../../models/permission.dart';
-import '../../../providers/family_provider.dart';
+import 'package:appoint/models/family_link.dart';
+import 'package:appoint/models/permission.dart';
+import 'package:appoint/providers/family_provider.dart';
 
 class PermissionsScreen extends ConsumerWidget {
   final FamilyLink familyLink;
 
   const PermissionsScreen({
-    Key? key,
+    final Key? key,
     required this.familyLink,
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final permissionsAsync = ref.watch(permissionsProvider(familyLink.id));
 
     return Scaffold(
@@ -21,9 +21,9 @@ class PermissionsScreen extends ConsumerWidget {
         title: Text('Permissions - ${familyLink.childId}'),
       ),
       body: permissionsAsync.when(
-        data: (permissions) => _buildPermissionsList(context, ref, permissions),
+        data: (final permissions) => _buildPermissionsList(context, ref, permissions),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, stack) => Center(
+        error: (final error, final stack) => Center(
           child: Text('Error loading permissions: $error'),
         ),
       ),
@@ -31,14 +31,14 @@ class PermissionsScreen extends ConsumerWidget {
   }
 
   Widget _buildPermissionsList(
-    BuildContext context,
-    WidgetRef ref,
-    List<Permission> permissions,
+    final BuildContext context,
+    final WidgetRef ref,
+    final List<Permission> permissions,
   ) {
     return ListView.builder(
       padding: const EdgeInsets.all(16),
       itemCount: permissions.length,
-      itemBuilder: (context, index) {
+      itemBuilder: (final context, final index) {
         final permission = permissions[index];
         return Card(
           margin: const EdgeInsets.only(bottom: 8),
@@ -57,13 +57,13 @@ class PermissionsScreen extends ConsumerWidget {
   }
 
   Widget _buildAccessLevelSelector(
-    BuildContext context,
-    WidgetRef ref,
-    Permission permission,
+    final BuildContext context,
+    final WidgetRef ref,
+    final Permission permission,
   ) {
     return DropdownButton<String>(
       value: permission.accessLevel,
-      onChanged: (String? newValue) {
+      onChanged: (final String? newValue) {
         if (newValue != null) {
           _updatePermission(context, ref, permission, newValue);
         }
@@ -76,7 +76,7 @@ class PermissionsScreen extends ConsumerWidget {
     );
   }
 
-  IconData _getAccessLevelIcon(String accessLevel) {
+  IconData _getAccessLevelIcon(final String accessLevel) {
     switch (accessLevel) {
       case 'none':
         return Icons.cancel;
@@ -89,7 +89,7 @@ class PermissionsScreen extends ConsumerWidget {
     }
   }
 
-  Color _getAccessLevelColor(String accessLevel) {
+  Color _getAccessLevelColor(final String accessLevel) {
     switch (accessLevel) {
       case 'none':
         return Colors.red;
@@ -102,7 +102,7 @@ class PermissionsScreen extends ConsumerWidget {
     }
   }
 
-  String _getCategoryDisplayName(String category) {
+  String _getCategoryDisplayName(final String category) {
     switch (category) {
       case 'profile':
         return 'Profile Information';
@@ -119,7 +119,7 @@ class PermissionsScreen extends ConsumerWidget {
     }
   }
 
-  String _getCategoryDescription(String category) {
+  String _getCategoryDescription(final String category) {
     switch (category) {
       case 'profile':
         return 'Access to personal information and settings';
@@ -137,10 +137,10 @@ class PermissionsScreen extends ConsumerWidget {
   }
 
   void _updatePermission(
-    BuildContext context,
-    WidgetRef ref,
-    Permission permission,
-    String newValue,
+    final BuildContext context,
+    final WidgetRef ref,
+    final Permission permission,
+    final String newValue,
   ) async {
     try {
       // Create updated permission with new access level

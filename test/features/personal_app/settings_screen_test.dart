@@ -7,7 +7,7 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
   group('SettingsScreen', () {
-    testWidgets('shows settings text', (WidgetTester tester) async {
+    testWidgets('shows settings text', (final WidgetTester tester) async {
       await tester.pumpWidget(const MaterialApp(home: SettingsScreen()));
 
       expect(find.text('Settings Screen'), findsOneWidget);

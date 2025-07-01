@@ -38,7 +38,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     Widget preview;
     if (_file != null || _webFile != null) {
       final provider = kIsWeb

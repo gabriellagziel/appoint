@@ -9,25 +9,25 @@ class AppLocalizationsUr extends AppLocalizations {
   AppLocalizationsUr([String locale = 'ur']) : super(locale);
 
   @override
-  String get refresh => 'تازہ کریں';
+  String get refresh => '[UR] Refresh';
 
   @override
   String get home => 'ہوم';
 
   @override
-  String get noSessionsYet => 'ابھی تک کوئی سیشن نہیں';
+  String get noSessionsYet => '[UR] No sessions yet';
 
   @override
-  String get ok => 'ٹھیک ہے';
+  String get ok => '[UR] OK';
 
   @override
-  String get playtimeLandingChooseMode => 'موڈ منتخب کریں';
+  String get playtimeLandingChooseMode => '[UR] Choose your play mode:';
 
   @override
-  String get signUp => 'سائن اپ کریں';
+  String get signUp => '[UR] Sign Up';
 
   @override
-  String get scheduleMessage => 'پیغام طے کریں';
+  String get scheduleMessage => '[UR] Schedule Message';
 
   @override
   String get decline => 'نامنظور کریں';
@@ -39,37 +39,39 @@ class AppLocalizationsUr extends AppLocalizations {
   String get login => 'لاگ ان';
 
   @override
-  String get playtimeChooseFriends => 'دوست منتخب کریں';
+  String get playtimeChooseFriends => '[UR] Choose friends to invite';
 
   @override
   String get noInvites => 'کوئی دعوت نامے نہیں';
 
   @override
-  String get playtimeChooseTime => 'وقت منتخب کریں';
+  String get playtimeChooseTime => '[UR] Choose a time';
 
   @override
-  String get success => 'کامیابی';
+  String get success => '[UR] Success';
 
   @override
-  String get undo => 'واپس کریں';
+  String get undo => '[UR] Undo';
 
   @override
-  String get opened => 'کھول دیا گیا';
+  String opened(Object count) {
+    return 'کھول دیا گیا';
+  }
 
   @override
-  String get createVirtualSession => 'ورچوئل سیشن بنائیں';
+  String get createVirtualSession => '[UR] Create Virtual Session';
 
   @override
   String get messageSentSuccessfully => 'پیغام کامیابی سے بھیجا گیا';
 
   @override
-  String get redo => 'دوبارہ کریں';
+  String get redo => '[UR] Redo';
 
   @override
   String get next => 'اگلا';
 
   @override
-  String get search => 'تلاش کریں';
+  String get search => '[UR] Search';
 
   @override
   String get cancelInviteConfirmation => 'دعوت کی تصدیق منسوخ کریں';
@@ -86,13 +88,13 @@ class AppLocalizationsUr extends AppLocalizations {
   String get saveGroupForRecognition => 'شناخت کے لیے گروپ محفوظ کریں';
 
   @override
-  String get playtimeLiveScheduled => 'لائیو سیشن طے شدہ';
+  String get playtimeLiveScheduled => '[UR] Live playtime scheduled!';
 
   @override
   String get revokeAccessConfirmation => 'رسائی منسوخ کرنے کی تصدیق';
 
   @override
-  String get download => 'ڈاؤن لوڈ کریں';
+  String get download => '[UR] Download';
 
   @override
   String get password => 'پاس ورڈ';
@@ -106,7 +108,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get cancel => 'منسوخ کریں';
 
   @override
-  String get playtimeCreate => 'Playtime بنائیں';
+  String get playtimeCreate => '[UR] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
@@ -120,22 +122,23 @@ class AppLocalizationsUr extends AppLocalizations {
   String get accept => 'قبول کریں';
 
   @override
-  String get playtimeModeVirtual => 'ورچوئل موڈ';
+  String get playtimeModeVirtual => '[UR] Virtual Play';
 
   @override
-  String get playtimeDescription => 'Playtime کی تفصیل';
+  String get playtimeDescription =>
+      '[UR] Enjoy live or virtual games with your friends!';
 
   @override
-  String get delete => 'حذف کریں';
+  String get delete => '[UR] Delete';
 
   @override
-  String get playtimeVirtualStarted => 'ورچوئل سیشن شروع ہوا';
+  String get playtimeVirtualStarted => '[UR] Virtual playtime started!';
 
   @override
-  String get createYourFirstGame => 'اپنا پہلا گیم بنائیں';
+  String get createYourFirstGame => '[UR] Create your first game';
 
   @override
-  String get participants => 'شرکاء';
+  String get participants => '[UR] Participants';
 
   @override
   String recipients(Object count) {
@@ -143,7 +146,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get noResults => 'نتائج نہیں';
+  String get noResults => '[UR] No results found';
 
   @override
   String get yes => 'ہاں';
@@ -152,10 +155,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get invite => 'مدعو کریں';
 
   @override
-  String get playtimeModeLive => 'لائیو موڈ';
+  String get playtimeModeLive => '[UR] Live Play';
 
   @override
-  String get done => 'ہو گیا';
+  String get done => '[UR] Done';
 
   @override
   String get defaultShareMessage => 'ڈیفالٹ شیئر میسج';
@@ -164,13 +167,13 @@ class AppLocalizationsUr extends AppLocalizations {
   String get no => 'نہیں';
 
   @override
-  String get playtimeHub => 'Playtime مرکز';
+  String get playtimeHub => '[UR] Playtime Hub';
 
   @override
-  String get error => 'خرابی';
+  String get error => '[UR] Error';
 
   @override
-  String get createLiveSession => 'لائیو سیشن بنائیں';
+  String get createLiveSession => '[UR] Create Live Session';
 
   @override
   String get enableNotifications => 'اطلاعات فعال کریں';
@@ -189,25 +192,25 @@ class AppLocalizationsUr extends AppLocalizations {
   String get meetingSharedSuccessfully => 'میٹنگ کامیابی سے شیئر ہوئی';
 
   @override
-  String get welcomeToPlaytime => 'Playtime میں خوش آمدید';
+  String get welcomeToPlaytime => '[UR] Welcome to Playtime';
 
   @override
-  String get viewAll => 'تمام دیکھیں';
+  String get viewAll => '[UR] View All';
 
   @override
-  String get playtimeVirtual => 'ورچوئل Playtime';
+  String get playtimeVirtual => '[UR] Virtual Play';
 
   @override
   String get staffScreenTBD => 'سٹاف اسکرین بعد میں طے ہوگی';
 
   @override
-  String get cut => 'کاٹیں';
+  String get cut => '[UR] Cut';
 
   @override
   String get inviteCancelledSuccessfully => 'دعوت کامیابی سے منسوخ ہو گئی';
 
   @override
-  String get retry => 'دوبارہ کوشش کریں';
+  String get retry => '[UR] Retry';
 
   @override
   String get composeBroadcastMessage => 'نشریاتی پیغام لکھیں';
@@ -216,16 +219,16 @@ class AppLocalizationsUr extends AppLocalizations {
   String get sendNow => 'ابھی بھیجیں';
 
   @override
-  String get noGamesYet => 'ابھی تک کوئی گیم نہیں';
+  String get noGamesYet => '[UR] No games yet';
 
   @override
-  String get select => 'منتخب کریں';
+  String get select => '[UR] Select';
 
   @override
-  String get about => 'کے بارے میں';
+  String get about => '[UR] About';
 
   @override
-  String get choose => 'منتخب کریں';
+  String get choose => '[UR] Choose';
 
   @override
   String get profile => 'پروفائل';
@@ -239,39 +242,37 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get logout => 'لاگ آؤٹ';
+  String get logout => '[UR] Logout';
 
   @override
-  String get paste => 'چسپاں کریں';
+  String get paste => '[UR] Paste';
 
   @override
   String get welcome => 'خوش آمدید';
 
   @override
-  String get playtimeCreateSession => 'سیشن بنائیں';
+  String get playtimeCreateSession => '[UR] Create a Playtime Session';
 
   @override
   String get familyMembers => 'خاندانی ممبر';
 
   @override
-  String get upload => 'اپ لوڈ کریں';
+  String get upload => '[UR] Upload';
 
   @override
-  String get upcomingSessions => 'آنے والے سیشن';
+  String get upcomingSessions => '[UR] Upcoming Sessions';
 
   @override
   String get enterGroupName => 'گروپ کا نام درج کریں';
 
   @override
-  String get confirm => 'تصدیق کریں';
+  String get confirm => '[UR] Confirm';
 
   @override
-  String get playtimeLive => 'Live Playtime';
+  String get playtimeLive => '[UR] Live Play';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'دعوت نامے لوڈ کرنے میں خرابی';
-  }
+  String get errorLoadingInvites => 'دعوت نامے لوڈ کرنے میں خرابی';
 
   @override
   String get targetingFilters => 'ہدف فلٹر';
@@ -280,7 +281,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get pickVideo => 'ویڈیو منتخب کریں';
 
   @override
-  String get playtimeGameDeleted => 'گیم حذف ہو گئی';
+  String get playtimeGameDeleted => '[UR] Game deleted';
 
   @override
   String get scheduleForLater => 'بعد میں طے کریں';
@@ -289,13 +290,15 @@ class AppLocalizationsUr extends AppLocalizations {
   String get accessRevokedSuccessfully => 'رسائی کامیابی سے منسوخ';
 
   @override
-  String get type => 'قسم';
+  String type(Object type) {
+    return 'قسم';
+  }
 
   @override
   String get checkingPermissions => 'اجازتوں کی جانچ ہو رہی ہے';
 
   @override
-  String get copy => 'کاپی کریں';
+  String get copy => '[UR] Copy';
 
   @override
   String get yesCancel => 'ہاں، منسوخ کریں';
@@ -304,7 +307,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get email => 'ای میل';
 
   @override
-  String get shareOnWhatsApp => 'WhatsApp پر شیئر کریں';
+  String get shareOnWhatsApp => '[UR] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'اطلاعات کی ترتیبات';
@@ -333,30 +336,28 @@ class AppLocalizationsUr extends AppLocalizations {
   String get cancelInvite => 'دعوت منسوخ کریں';
 
   @override
-  String get createNew => 'نیا بنائیں';
+  String get createNew => '[UR] Create New';
 
   @override
-  String get settings => 'ترتیبات';
+  String get settings => '[UR] Settings';
 
   @override
-  String get playtimeReject => 'Playtime رد کریں';
+  String get playtimeReject => '[UR] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'پروفائل لوڈ کرنے میں خرابی';
-  }
+  String get errorLoadingProfile => 'پروفائل لوڈ کرنے میں خرابی';
 
   @override
-  String get edit => 'ترمیم کریں';
+  String get edit => '[UR] Edit';
 
   @override
-  String get add => 'شامل کریں';
+  String get add => '[UR] Add';
 
   @override
-  String get playtimeGameApproved => 'گیم کی منظوری دی گئی';
+  String get playtimeGameApproved => '[UR] Game approved';
 
   @override
-  String get forgotPassword => 'کیا آپ نے پاس ورڈ بھول گئے؟';
+  String get forgotPassword => '[UR] Forgot Password?';
 
   @override
   String get familyDashboard => 'خاندانی ڈیش بورڈ';
@@ -365,10 +366,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get loading => 'لوڈ ہو رہا ہے';
 
   @override
-  String get quickActions => 'فوری اقدامات';
+  String get quickActions => '[UR] Quick Actions';
 
   @override
-  String get playtimeTitle => 'Playtime عنوان';
+  String get playtimeTitle => '[UR] Playtime';
 
   @override
   String get otpResentSuccessfully => 'OTP کامیابی کے ساتھ دوبارہ بھیجا گیا';
@@ -390,7 +391,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get pickImage => 'تصویر منتخب کریں';
 
   @override
-  String get previous => 'پچھلا';
+  String get previous => '[UR] Previous';
 
   @override
   String get noProfileFound => 'کوئی پروفائل نہیں ملا';
@@ -405,7 +406,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get messageSavedSuccessfully => 'پیغام کامیابی سے محفوظ ہوا';
 
   @override
-  String get scheduledFor => 'کے لیے طے شدہ';
+  String get scheduledFor => '[UR] Scheduled for';
 
   @override
   String get dashboard => 'ڈیش بورڈ';
@@ -414,7 +415,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get noPermissionForBroadcast => 'نشریات کی اجازت نہیں';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime ایڈمن پینل عنوان';
+  String get playtimeAdminPanelTitle => '[UR] Playtime Games – Admin';
 
   @override
   String get inviteDetail => 'دعوت کی تفصیل';
@@ -441,21 +442,21 @@ class AppLocalizationsUr extends AppLocalizations {
   String get save => 'محفوظ کریں';
 
   @override
-  String get playtimeApprove => 'Playtime کی منظوری دیں';
+  String get playtimeApprove => '[UR] Approve';
 
   @override
-  String get createYourFirstSession => 'اپنا پہلا سیشن بنائیں';
+  String get createYourFirstSession => '[UR] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'گیم رد کر دی گئی';
+  String get playtimeGameRejected => '[UR] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Failed to revoke access';
+    return '[UR] Failed to revoke access';
   }
 
   @override
-  String get recentGames => 'حالیہ گیمز';
+  String get recentGames => '[UR] Recent Games';
 
   @override
   String get customizeMessage => 'پیغام حسب ضرورت بنائیں';
@@ -471,7 +472,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get confirmPassword => 'پاس ورڈ کی تصدیق کریں';
+  String get confirmPassword => '[UR] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
@@ -482,10 +483,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get connectedChildren => 'جڑے ہوئے بچے';
 
   @override
-  String get share => 'شیئر کریں';
+  String get share => '[UR] Share';
 
   @override
-  String get playtimeEnterGameName => 'گیم کا نام درج کریں';
+  String get playtimeEnterGameName => '[UR] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
@@ -495,19 +496,19 @@ class AppLocalizationsUr extends AppLocalizations {
   String get myInvites => 'میری دعوتیں';
 
   @override
-  String get createGame => 'گیم بنائیں';
+  String get createGame => '[UR] Create Game';
 
   @override
   String get groupNameOptional => 'گروپ کا نام (اختیاری)';
 
   @override
-  String get playtimeNoSessions => 'کوئی Playtime سیشن نہیں ملے';
+  String get playtimeNoSessions => '[UR] No playtime sessions found.';
 
   @override
   String get adminScreenTBD => 'ایڈمن اسکرین جلد دستیاب ہوگا';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime ڈیش بورڈ';
+  String get playtimeParentDashboardTitle => '[UR] Playtime Dashboard';
 
   @override
   String get close => 'بند کریں';
@@ -516,10 +517,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get knownGroupDetected => 'معلوم گروپ کا پتہ چلا';
 
   @override
-  String get back => 'واپس';
+  String get back => '[UR] Back';
 
   @override
-  String get playtimeChooseGame => 'گیم منتخب کریں';
+  String get playtimeChooseGame => '[UR] Choose a game';
 
   @override
   String get managePermissions => 'اجازتوں کا انتظام کریں';
@@ -549,5 +550,24 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'پروفائل دیکھنے کے لیے لاگ ان کریں';
+  String get pleaseLoginToViewProfile =>
+      '[UR] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

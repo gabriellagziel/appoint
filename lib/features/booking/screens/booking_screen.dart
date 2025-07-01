@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import '../../../widgets/bottom_sheet_manager.dart';
-import '../../../widgets/booking_confirmation_sheet.dart';
-import '../../../models/booking.dart';
-import '../services/booking_service.dart';
-import '../booking_helper.dart';
-import '../../../utils/snackbar_extensions.dart';
-import '../../selection/providers/selection_provider.dart';
-import '../../../widgets/animations/tap_scale_feedback.dart';
-import '../../../widgets/animations/fade_slide_in.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
+import 'package:appoint/widgets/booking_confirmation_sheet.dart';
+import 'package:appoint/models/booking.dart';
+import 'package:appoint/features/booking/services/booking_service.dart';
+import 'package:appoint/features/booking/booking_helper.dart';
+import 'package:appoint/utils/snackbar_extensions.dart';
+import 'package:appoint/features/selection/providers/selection_provider.dart';
+import 'package:appoint/widgets/animations/tap_scale_feedback.dart';
+import 'package:appoint/widgets/animations/fade_slide_in.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
   const BookingScreen({super.key});
@@ -26,13 +26,13 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
 
     BookingHelper(ref)
         .submitBooking()
-        .then((_) {
+        .then((final _) {
           if (!mounted) return;
           context.showSnackBar('Booking confirmed');
           Navigator.pop(context);
         })
-        .catchError((e, st) {
-          debugPrint('Error during booking: $e\n$st');
+        .catchError((final e, final st) {
+          // Removed debug print: debugPrint('Error during booking: $e\n$st');
           if (!mounted) return;
           context.showSnackBar('Failed to confirm booking',
               backgroundColor: Colors.red);
@@ -67,7 +67,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final staffId = ref.watch(staffSelectionProvider);
     final serviceId = ref.watch(serviceSelectionProvider);
     final dateTime = ref.watch(selectedSlotProvider);
@@ -136,12 +136,12 @@ class BookingListView extends ConsumerWidget {
   const BookingListView({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final bookingsStream = ref.watch(bookingServiceProvider).getBookings();
 
     return StreamBuilder<List<Booking>>(
       stream: bookingsStream,
-      builder: (context, snapshot) {
+      builder: (final context, final snapshot) {
         if (snapshot.hasError) {
           return Center(
             child: Text('Error loading bookings: ${snapshot.error}'),
@@ -160,7 +160,7 @@ class BookingListView extends ConsumerWidget {
         return ListView.builder(
           shrinkWrap: true,
           itemCount: bookingsList.length,
-          itemBuilder: (context, index) {
+          itemBuilder: (final context, final index) {
             final booking = bookingsList[index];
             return FadeSlideIn(
               delay: Duration(milliseconds: 50 * index),

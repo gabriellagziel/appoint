@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../l10n/app_localizations.dart';
-import '../providers/whatsapp_share_provider.dart';
-import '../models/appointment.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/providers/whatsapp_share_provider.dart';
+import 'package:appoint/models/appointment.dart';
 
 class WhatsAppShareButton extends ConsumerWidget {
   final Appointment appointment;
@@ -12,7 +12,7 @@ class WhatsAppShareButton extends ConsumerWidget {
   final VoidCallback? onShared;
 
   const WhatsAppShareButton({
-    Key? key,
+    final Key? key,
     required this.appointment,
     this.customMessage,
     this.groupId,
@@ -21,7 +21,7 @@ class WhatsAppShareButton extends ConsumerWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final shareState = ref.watch(shareDialogProvider);
 
     return ElevatedButton.icon(
@@ -43,10 +43,10 @@ class WhatsAppShareButton extends ConsumerWidget {
     );
   }
 
-  void _showShareDialog(BuildContext context, WidgetRef ref) {
+  void _showShareDialog(final BuildContext context, final WidgetRef ref) {
     showDialog(
       context: context,
-      builder: (context) => WhatsAppShareDialog(
+      builder: (final context) => WhatsAppShareDialog(
         appointment: appointment,
         customMessage: customMessage,
         groupId: groupId,
@@ -65,7 +65,7 @@ class WhatsAppShareDialog extends ConsumerStatefulWidget {
   final VoidCallback? onShared;
 
   const WhatsAppShareDialog({
-    Key? key,
+    final Key? key,
     required this.appointment,
     this.customMessage,
     this.groupId,
@@ -98,7 +98,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final shareState = ref.watch(shareDialogProvider);
     final l10n = AppLocalizations.of(context)!;
 
@@ -139,7 +139,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
               CheckboxListTile(
                 title: Text(l10n.saveGroupForRecognition),
                 value: _saveGroupForRecognition,
-                onChanged: (value) {
+                onChanged: (final value) {
                   setState(() {
                     _saveGroupForRecognition = value ?? false;
                   });

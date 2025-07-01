@@ -1,4 +1,4 @@
-import '../utils/datetime_converter.dart';
+import 'package:appoint/utils/datetime_converter.dart';
 
 class PersonalAppointment {
   final String id;
@@ -19,7 +19,7 @@ class PersonalAppointment {
     required this.endTime,
   });
 
-  factory PersonalAppointment.fromJson(Map<String, dynamic> json) {
+  factory PersonalAppointment.fromJson(final Map<String, dynamic> json) {
     return PersonalAppointment(
       id: json['id'] as String,
       userId: json['userId'] as String,

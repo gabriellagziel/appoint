@@ -1,664 +1,664 @@
 {
   "@@locale": "uk",
-  "refresh": "Оновити",
-  "@refresh": {
-    "description": "Refresh button text"
-  },
-  "home": "Головна",
-  "@home": {
-    "description": "Home navigation label"
-  },
-  "noSessionsYet": "Сесій поки що немає",
-  "@noSessionsYet": {
-    "description": "No sessions yet message"
-  },
-  "ok": "Гаразд",
-  "@ok": {
-    "description": "OK button text"
-  },
-  "playtimeLandingChooseMode": "Оберіть режим",
-  "@playtimeLandingChooseMode": {
-    "description": "Playtime landing choose mode message"
-  },
-  "signUp": "Зареєструватися",
-  "@signUp": {
-    "description": "Sign up button text"
-  },
-  "scheduleMessage": "Запланувати повідомлення",
-  "@scheduleMessage": {
-    "description": "Schedule message button"
-  },
-  "decline": "Відхилити",
-  "@decline": {
-    "description": "Decline button"
-  },
-  "adminBroadcast": "Трансляція адміністратора",
-  "@adminBroadcast": {
-    "description": "Admin broadcast title"
-  },
-  "login": "Увійти",
-  "@login": {
-    "description": "Login button text"
-  },
-  "playtimeChooseFriends": "Оберіть друзів",
-  "@playtimeChooseFriends": {
-    "description": "Choose friends label"
-  },
-  "noInvites": "Немає запрошень",
-  "@noInvites": {
-    "description": "No invites message"
-  },
-  "playtimeChooseTime": "Оберіть час",
-  "@playtimeChooseTime": {
-    "description": "Choose time label"
-  },
-  "success": "Успіх",
-  "@success": {
-    "description": "Success message"
-  },
-  "undo": "Скасувати",
-  "@undo": {
-    "description": "Undo button text"
-  },
-  "opened": "Відкрито",
-  "@opened": {
-    "description": "Opened status"
-  },
-  "createVirtualSession": "Створити віртуальну сесію",
-  "@createVirtualSession": {
-    "description": "Create virtual session button"
-  },
-  "messageSentSuccessfully": "Повідомлення успішно надіслано",
-  "@messageSentSuccessfully": {
-    "description": "Message sent successfully message"
-  },
-  "redo": "Повторити",
-  "@redo": {
-    "description": "Redo button text"
-  },
-  "next": "Далі",
-  "@next": {
-    "description": "Next button text"
-  },
-  "search": "Пошук",
-  "@search": {
-    "description": "Search placeholder text"
-  },
-  "cancelInviteConfirmation": "Скасувати підтвердження запрошення",
-  "@cancelInviteConfirmation": {
-    "description": "Cancel invite confirmation message"
-  },
-  "created": "Створено",
-  "@created": {
-    "description": "Created status"
-  },
-  "revokeAccess": "Скасувати доступ",
-  "@revokeAccess": {
-    "description": "Revoke access button"
-  },
-  "saveGroupForRecognition": "Зберегти групу для розпізнавання",
-  "@saveGroupForRecognition": {
-    "description": "Save group for recognition label"
-  },
-  "playtimeLiveScheduled": "Жива сесія запланована",
-  "@playtimeLiveScheduled": {
-    "description": "Live playtime scheduled message"
-  },
-  "revokeAccessConfirmation": "Підтвердження скасування доступу",
-  "@revokeAccessConfirmation": {
-    "description": "Revoke access confirmation message"
-  },
-  "download": "Завантажити",
-  "@download": {
-    "description": "Download button text"
-  },
-  "password": "Пароль",
-  "@password": {
-    "description": "Password field label"
-  },
-  "errorLoadingFamilyLinks": "Помилка завантаження сімейних посилань",
-  "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message"
-  },
-  "cancel": "Скасувати",
-  "@cancel": {
-    "description": "Cancel button text"
-  },
-  "playtimeCreate": "Створити Playtime",
-  "@playtimeCreate": {
-    "description": "Create button"
-  },
-  "failedToActionPrivacyRequest": "Не вдалося обробити запит приватності",
-  "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message"
-  },
-  "appTitle": "Назва додатка",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
-  "accept": "Прийняти",
-  "@accept": {
-    "description": "Accept button"
-  },
-  "playtimeModeVirtual": "Віртуальний режим",
-  "@playtimeModeVirtual": {
-    "description": "Virtual play mode label"
-  },
-  "playtimeDescription": "Опис Playtime",
-  "@playtimeDescription": {
-    "description": "Playtime description"
-  },
-  "delete": "Видалити",
-  "@delete": {
-    "description": "Delete button text"
-  },
-  "playtimeVirtualStarted": "Віртуальна сесія розпочалася",
-  "@playtimeVirtualStarted": {
-    "description": "Virtual playtime started message"
-  },
-  "createYourFirstGame": "Створіть свою першу гру",
-  "@createYourFirstGame": {
-    "description": "Create your first game message"
-  },
-  "participants": "Учасники",
-  "@participants": {
-    "description": "Participants label"
-  },
-  "recipients": "Одержувачі",
-  "@recipients": {
-    "description": "Recipients label"
-  },
-  "noResults": "Немає результатів",
-  "@noResults": {
-    "description": "No search results message"
-  },
-  "yes": "Так",
-  "@yes": {
-    "description": "Yes button text"
-  },
-  "invite": "Запросити",
-  "@invite": {
-    "description": "Invite button"
-  },
-  "playtimeModeLive": "Живий режим",
-  "@playtimeModeLive": {
-    "description": "Live play mode label"
-  },
-  "done": "Готово",
-  "@done": {
-    "description": "Done button text"
-  },
-  "defaultShareMessage": "За замовчуванням повідомлення для спільного доступу",
-  "@defaultShareMessage": {
-    "description": "Default share message"
-  },
-  "no": "Ні",
-  "@no": {
-    "description": "No button text"
-  },
-  "playtimeHub": "Центр Playtime",
-  "@playtimeHub": {
-    "description": "Playtime hub title"
-  },
-  "error": "Помилка",
-  "@error": {
-    "description": "Error message"
-  },
-  "createLiveSession": "Створити живу сесію",
-  "@createLiveSession": {
-    "description": "Create live session button"
-  },
-  "enableNotifications": "Увімкнути сповіщення",
-  "@enableNotifications": {
-    "description": "Enable notifications button"
-  },
-  "invited": "Запрошено",
-  "@invited": {
-    "description": "Invited status"
-  },
-  "content": "Зміст",
-  "@content": {
-    "description": "Content label"
-  },
-  "meetingSharedSuccessfully": "Зустріч успішно поділена",
-  "@meetingSharedSuccessfully": {
-    "description": "Meeting shared successfully message"
-  },
-  "welcomeToPlaytime": "Ласкаво просимо до Playtime",
-  "@welcomeToPlaytime": {
-    "description": "Welcome to playtime message"
-  },
-  "viewAll": "Переглянути все",
-  "@viewAll": {
-    "description": "View all button"
-  },
-  "playtimeVirtual": "Віртуальний Playtime",
-  "@playtimeVirtual": {
-    "description": "Virtual playtime label"
-  },
-  "staffScreenTBD": "Екран персоналу буде визначено пізніше",
-  "@staffScreenTBD": {
-    "description": "Staff screen coming soon"
-  },
-  "cut": "Вирізати",
-  "@cut": {
-    "description": "Cut button text"
-  },
-  "inviteCancelledSuccessfully": "Запрошення успішно скасовано",
-  "@inviteCancelledSuccessfully": {
-    "description": "Invite cancelled successfully message"
-  },
-  "retry": "Спробувати знову",
-  "@retry": {
-    "description": "Retry button text"
-  },
-  "composeBroadcastMessage": "Скласти трансляційне повідомлення",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message button"
-  },
-  "sendNow": "Надіслати зараз",
-  "@sendNow": {
-    "description": "Send now button"
-  },
-  "noGamesYet": "Ігор поки що немає",
-  "@noGamesYet": {
-    "description": "No games yet message"
-  },
-  "select": "Оберіть",
-  "@select": {
-    "description": "Select button text"
-  },
-  "about": "Про додаток",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Оберіть",
-  "@choose": {
-    "description": "Choose button text"
+  "@accept": {
+    "description": "Accept button"
   },
-  "profile": "Профіль",
-  "@profile": {
-    "description": "Profile navigation label"
-  },
-  "removeChild": "Вилучити дитину",
-  "@removeChild": {
-    "description": "Remove child button"
-  },
-  "status": "Статус",
-  "@status": {
-    "description": "Status label"
-  },
-  "logout": "Вийти",
-  "@logout": {
-    "description": "Logout button text"
-  },
-  "paste": "Вставити",
-  "@paste": {
-    "description": "Paste button text"
-  },
-  "welcome": "Ласкаво просимо",
-  "@welcome": {
-    "description": "Welcome message"
-  },
-  "playtimeCreateSession": "Створити сесію",
-  "@playtimeCreateSession": {
-    "description": "Create playtime session button"
-  },
-  "familyMembers": "Члени родини",
-  "@familyMembers": {
-    "description": "Family members label"
-  },
-  "upload": "Завантажити",
-  "@upload": {
-    "description": "Upload button text"
-  },
-  "upcomingSessions": "Найближчі сесії",
-  "@upcomingSessions": {
-    "description": "Upcoming sessions label"
-  },
-  "enterGroupName": "Введіть назву групи",
-  "@enterGroupName": {
-    "description": "Enter group name label"
-  },
-  "confirm": "Підтвердити",
-  "@confirm": {
-    "description": "Confirm button text"
-  },
-  "playtimeLive": "Живий Playtime",
-  "@playtimeLive": {
-    "description": "Live playtime label"
-  },
-  "errorLoadingInvites": "Помилка завантаження запрошень",
-  "@errorLoadingInvites": {
-    "description": "Error loading invites message"
-  },
-  "targetingFilters": "Фільтри таргетингу",
-  "@targetingFilters": {
-    "description": "Targeting filters label"
-  },
-  "pickVideo": "Вибрати відео",
-  "@pickVideo": {
-    "description": "Pick video button"
-  },
-  "playtimeGameDeleted": "Гру видалено",
-  "@playtimeGameDeleted": {
-    "description": "Playtime game deleted message"
-  },
-  "scheduleForLater": "Запланувати на потім",
-  "@scheduleForLater": {
-    "description": "Schedule for later button"
-  },
-  "accessRevokedSuccessfully": "Доступ успішно скасовано",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "Тип",
-  "@type": {
-    "description": "Type label"
-  },
-  "checkingPermissions": "Перевірка дозволів",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "copy": "Копіювати",
-  "@copy": {
-    "description": "Copy button text"
-  },
-  "yesCancel": "Так, скасувати",
-  "@yesCancel": {
-    "description": "Yes cancel button"
-  },
-  "email": "Електронна пошта",
-  "@email": {
-    "description": "Email field label"
-  },
-  "shareOnWhatsApp": "[UK] Share on WhatsApp",
-  "@shareOnWhatsApp": {
-    "description": "Share on WhatsApp button"
-  },
-  "notificationSettings": "Налаштування сповіщень",
-  "@notificationSettings": {
-    "description": "Notification settings label"
-  },
-  "myProfile": "Мій профіль",
-  "@myProfile": {
-    "description": "My profile label"
-  },
-  "revoke": "Скасувати",
-  "@revoke": {
-    "description": "Revoke button text"
-  },
-  "noBroadcastMessages": "Немає трансляційних повідомлень",
-  "@noBroadcastMessages": {
-    "description": "No broadcast messages message"
-  },
-  "requestType": "Тип запиту",
-  "@requestType": {
-    "description": "Request type label"
-  },
-  "notifications": "Сповіщення",
-  "@notifications": {
-    "description": "Notifications label"
-  },
-  "details": "Деталі",
-  "@details": {
-    "description": "Details label"
-  },
-  "cancelInvite": "Скасувати запрошення",
-  "@cancelInvite": {
-    "description": "Cancel invite button"
-  },
-  "createNew": "Створити нове",
-  "@createNew": {
-    "description": "Create new button"
-  },
-  "settings": "Налаштування",
-  "@settings": {
-    "description": "Settings navigation label"
-  },
-  "playtimeReject": "Відхилити Playtime",
-  "@playtimeReject": {
-    "description": "Playtime reject button"
-  },
-  "errorLoadingProfile": "Помилка завантаження профілю",
-  "@errorLoadingProfile": {
-    "description": "Error loading profile message"
-  },
-  "edit": "Редагувати",
-  "@edit": {
-    "description": "Edit button text"
-  },
-  "add": "Додати",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "Гра схвалена",
-  "@playtimeGameApproved": {
-    "description": "Playtime game approved message"
+  "@adminBroadcast": {
+    "description": "Admin broadcast title"
   },
-  "forgotPassword": "Забули пароль?",
-  "@forgotPassword": {
-    "description": "Forgot password link"
-  },
-  "familyDashboard": "Панель родини",
-  "@familyDashboard": {
-    "description": "Family dashboard label"
-  },
-  "loading": "Завантаження",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "quickActions": "Швидкі дії",
-  "@quickActions": {
-    "description": "Quick actions label"
-  },
-  "playtimeTitle": "Заголовок Playtime",
-  "@playtimeTitle": {
-    "description": "Playtime title"
-  },
-  "otpResentSuccessfully": "OTP успішно надіслано повторно",
-  "@otpResentSuccessfully": {
-    "description": "OTP resent successfully message"
-  },
-  "errorCheckingPermissions": "Помилка перевірки дозволів",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message"
-  },
-  "clientScreenTBD": "Екран клієнта буде визначено пізніше",
-  "@clientScreenTBD": {
-    "description": "Client screen coming soon"
-  },
-  "fcmToken": "FCM токен",
-  "@fcmToken": {
-    "description": "FCM token label"
-  },
-  "pickImage": "Вибрати зображення",
-  "@pickImage": {
-    "description": "Pick image button"
-  },
-  "previous": "Попередній",
-  "@previous": {
-    "description": "Previous button text"
-  },
-  "noProfileFound": "Профіль не знайдено",
-  "@noProfileFound": {
-    "description": "No profile found message"
-  },
-  "noFamilyMembersYet": "Немає членів родини",
-  "@noFamilyMembersYet": {
-    "description": "No family members yet message"
-  },
-  "mediaOptional": "Медіа (необов'язково)",
-  "@mediaOptional": {
-    "description": "Media optional label"
-  },
-  "messageSavedSuccessfully": "Повідомлення успішно збережено",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully message"
-  },
-  "scheduledFor": "Заплановано на",
-  "@scheduledFor": {
-    "description": "Scheduled for label"
-  },
-  "dashboard": "Панель керування",
-  "@dashboard": {
-    "description": "Dashboard label"
-  },
-  "noPermissionForBroadcast": "Немає дозволу на трансляцію",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "playtimeAdminPanelTitle": "Заголовок панелі адміністратора Playtime",
-  "@playtimeAdminPanelTitle": {
-    "description": "Playtime admin panel title"
-  },
-  "inviteDetail": "Деталі запрошення",
-  "@inviteDetail": {
-    "description": "Invite detail label"
-  },
-  "scheduled": "Заплановано",
-  "@scheduled": {
-    "description": "Scheduled status"
-  },
-  "failedToCancelInvite": "Не вдалося скасувати запрошення",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
-  },
-  "failedToResendOtp": "Не вдалося повторно надіслати OTP",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
-  },
-  "scheduling": "Планування",
-  "@scheduling": {
-    "description": "Scheduling status"
-  },
-  "errorSavingMessage": "Помилка збереження повідомлення",
-  "@errorSavingMessage": {
-    "description": "Error saving message"
-  },
-  "save": "Зберегти",
-  "@save": {
-    "description": "Save button text"
-  },
-  "playtimeApprove": "Підтвердити Playtime",
-  "@playtimeApprove": {
-    "description": "Playtime approve button"
-  },
-  "createYourFirstSession": "Створіть свою першу сесію",
-  "@createYourFirstSession": {
-    "description": "Create your first session message"
-  },
-  "playtimeGameRejected": "Гра відхилена",
-  "@playtimeGameRejected": {
-    "description": "Playtime game rejected message"
-  },
-  "recentGames": "Останні ігри",
-  "@recentGames": {
-    "description": "Recent games label"
-  },
-  "customizeMessage": "Налаштувати повідомлення",
-  "@customizeMessage": {
-    "description": "Customize message button"
-  },
-  "errorSendingMessage": "Помилка надсилання повідомлення",
-  "@errorSendingMessage": {
-    "description": "Error sending message"
-  },
-  "confirmPassword": "Підтвердьте пароль",
-  "@confirmPassword": {
-    "description": "Confirm password field label"
-  },
-  "errorLoadingPrivacyRequests": "Помилка завантаження запитів приватності",
-  "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message"
-  },
-  "connectedChildren": "Підключені діти",
-  "@connectedChildren": {
-    "description": "Connected children label"
-  },
-  "share": "Поділитися",
-  "@share": {
-    "description": "Share button text"
-  },
-  "playtimeEnterGameName": "Введіть назву гри",
-  "@playtimeEnterGameName": {
-    "description": "Enter game name label"
-  },
-  "pleaseLoginToViewProfile": "Увійдіть, щоб переглянути профіль",
-  "adminScreenTBD": "[UK] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "back": "[UK] Back",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
   "@back": {
     "description": "Back button text"
   },
-  "clicked": "[UK] Clicked",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "@cancelInvite": {
+    "description": "Cancel invite button"
+  },
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "@choose": {
+    "description": "Choose button text"
+  },
   "@clicked": {
     "description": "Clicked status"
   },
-  "close": "[UK] Close",
+  "@clientScreenTBD": {
+    "description": "Client screen coming soon"
+  },
   "@close": {
     "description": "Close button text"
   },
-  "createGame": "[UK] Create Game",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message button"
+  },
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "@content": {
+    "description": "Content label"
+  },
+  "@copy": {
+    "description": "Copy button text"
+  },
   "@createGame": {
     "description": "Create game button"
   },
-  "failedToRevokeAccess": "[UK] Failed to revoke access",
+  "@createLiveSession": {
+    "description": "Create live session button"
+  },
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
+  },
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "@created": {
+    "description": "Created status"
+  },
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "@decline": {
+    "description": "Decline button"
+  },
+  "@defaultShareMessage": {
+    "description": "Default share message"
+  },
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "@details": {
+    "description": "Details label"
+  },
+  "@done": {
+    "description": "Done button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "@email": {
+    "description": "Email field label"
+  },
+  "@enableNotifications": {
+    "description": "Enable notifications button"
+  },
+  "@enterGroupName": {
+    "description": "Enter group name label"
+  },
+  "@error": {
+    "description": "Error message"
+  },
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message"
+  },
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message"
+  },
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "@errorSavingMessage": {
+    "description": "Error saving message"
+  },
+  "@errorSendingMessage": {
+    "description": "Error sending message"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message"
+  },
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "groupNameOptional": "[UK] Group Name (Optional)",
+  "@familyDashboard": {
+    "description": "Family dashboard label"
+  },
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "@fcmToken": {
+    "description": "FCM token label"
+  },
+  "@forgotPassword": {
+    "description": "Forgot password link"
+  },
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "knownGroupDetected": "[UK] Known group detected",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "@invite": {
+    "description": "Invite button"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "@inviteDetail": {
+    "description": "Invite detail label"
+  },
+  "@invited": {
+    "description": "Invited status"
+  },
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "link": "[UK] Link",
   "@link": {
     "description": "Link label"
   },
-  "managePermissions": "[UK] Manage Permissions",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@login": {
+    "description": "Login button text"
+  },
+  "@logout": {
+    "description": "Logout button text"
+  },
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "meetingReadyMessage": "[UK] Your meeting is ready! Join now",
+  "@mediaOptional": {
+    "description": "Media optional label"
+  },
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "myInvites": "[UK] My Invites",
+  "@meetingSharedSuccessfully": {
+    "description": "Meeting shared successfully message"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
   "@myInvites": {
     "description": "My invites title"
   },
-  "pendingInvites": "[UK] Pending Invites",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "@next": {
+    "description": "Next button text"
+  },
+  "@no": {
+    "description": "No button text"
+  },
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
+  },
+  "@notificationSettings": {
+    "description": "Notification settings label"
+  },
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "@ok": {
+    "description": "OK button text"
+  },
+  "@opened": {
+    "description": "Opened status"
+  },
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "@participants": {
+    "description": "Participants label"
+  },
+  "@password": {
+    "description": "Password field label"
+  },
+  "@paste": {
+    "description": "Paste button text"
+  },
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "playtimeChooseGame": "[UK] Choose a game",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
+  },
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "playtimeNoSessions": "[UK] No playtime sessions found.",
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "@playtimeCreate": {
+    "description": "Create button"
+  },
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "@playtimeGameApproved": {
+    "description": "Playtime game approved message"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Playtime game deleted message"
+  },
+  "@playtimeGameRejected": {
+    "description": "Playtime game rejected message"
+  },
+  "@playtimeHub": {
+    "description": "Playtime hub title"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "@playtimeLive": {
+    "description": "Live playtime label"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
+  },
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "playtimeParentDashboardTitle": "[UK] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "pleaseLoginForFamilyFeatures": "[UK] Please login to access family features",
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "@playtimeVirtual": {
+    "description": "Virtual playtime label"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "pollOptions": "[UK] Poll Options",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "statusColon": "[UK] Status:",
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "@recipients": {
+    "description": "Recipients label"
+  },
+  "@redo": {
+    "description": "Redo button text"
+  },
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  "@removeChild": {
+    "description": "Remove child button"
+  },
+  "@requestType": {
+    "description": "Request type label"
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@revoke": {
+    "description": "Revoke button text"
+  },
+  "@revokeAccess": {
+    "description": "Revoke access button"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "@save": {
+    "description": "Save button text"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
+  },
+  "@scheduleForLater": {
+    "description": "Schedule for later button"
+  },
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "@scheduling": {
+    "description": "Scheduling status"
+  },
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "@select": {
+    "description": "Select button text"
+  },
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "@share": {
+    "description": "Share button text"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "@staffScreenTBD": {
+    "description": "Staff screen coming soon"
+  },
+  "@status": {
+    "description": "Status label"
+  },
   "@statusColon": {
     "description": "Status colon label"
-  }
+  },
+  "@success": {
+    "description": "Success message"
+  },
+  "@targetingFilters": {
+    "description": "Targeting filters label"
+  },
+  "@type": {
+    "description": "Type label"
+  },
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "@yes": {
+    "description": "Yes button text"
+  },
+  "@yesCancel": {
+    "description": "Yes cancel button"
+  },
+  "about": "Про додаток",
+  "accept": "Прийняти",
+  "accessRevokedSuccessfully": "Доступ успішно скасовано",
+  "add": "Додати",
+  "adminBroadcast": "Трансляція адміністратора",
+  "adminScreenTBD": "[UK] Admin screen coming soon",
+  "appTitle": "Назва додатка",
+  "back": "[UK] Back",
+  "cancel": "Скасувати",
+  "cancelInvite": "Скасувати запрошення",
+  "cancelInviteConfirmation": "Скасувати підтвердження запрошення",
+  "checkingPermissions": "Перевірка дозволів",
+  "choose": "Оберіть",
+  "clicked": "[UK] Clicked",
+  "clientScreenTBD": "Екран клієнта буде визначено пізніше",
+  "close": "[UK] Close",
+  "composeBroadcastMessage": "Скласти трансляційне повідомлення",
+  "confirm": "Підтвердити",
+  "confirmPassword": "Підтвердьте пароль",
+  "connectedChildren": "Підключені діти",
+  "content": "Зміст",
+  "copy": "Копіювати",
+  "createGame": "[UK] Create Game",
+  "createLiveSession": "Створити живу сесію",
+  "createNew": "Створити нове",
+  "createVirtualSession": "Створити віртуальну сесію",
+  "createYourFirstGame": "Створіть свою першу гру",
+  "createYourFirstSession": "Створіть свою першу сесію",
+  "created": "Створено",
+  "customizeMessage": "Налаштувати повідомлення",
+  "cut": "Вирізати",
+  "dashboard": "Панель керування",
+  "decline": "Відхилити",
+  "defaultShareMessage": "За замовчуванням повідомлення для спільного доступу",
+  "delete": "Видалити",
+  "details": "Деталі",
+  "done": "Готово",
+  "download": "Завантажити",
+  "edit": "Редагувати",
+  "email": "Електронна пошта",
+  "enableNotifications": "Увімкнути сповіщення",
+  "enterGroupName": "Введіть назву групи",
+  "error": "Помилка",
+  "errorCheckingPermissions": "Помилка перевірки дозволів",
+  "errorLoadingFamilyLinks": "Помилка завантаження сімейних посилань",
+  "errorLoadingInvites": "Помилка завантаження запрошень",
+  "errorLoadingPrivacyRequests": "Помилка завантаження запитів приватності",
+  "errorLoadingProfile": "Помилка завантаження профілю",
+  "errorSavingMessage": "Помилка збереження повідомлення",
+  "errorSendingMessage": "Помилка надсилання повідомлення",
+  "failedToActionPrivacyRequest": "Не вдалося обробити запит приватності",
+  "failedToCancelInvite": "Не вдалося скасувати запрошення",
+  "failedToResendOtp": "Не вдалося повторно надіслати OTP",
+  "failedToRevokeAccess": "[UK] Failed to revoke access",
+  "familyDashboard": "Панель родини",
+  "familyMembers": "Члени родини",
+  "fcmToken": "FCM токен",
+  "forgotPassword": "Забули пароль?",
+  "groupNameOptional": "[UK] Group Name (Optional)",
+  "home": "Головна",
+  "invite": "Запросити",
+  "inviteCancelledSuccessfully": "Запрошення успішно скасовано",
+  "inviteDetail": "Деталі запрошення",
+  "invited": "Запрошено",
+  "knownGroupDetected": "[UK] Known group detected",
+  "link": "[UK] Link",
+  "loading": "Завантаження",
+  "login": "Увійти",
+  "logout": "Вийти",
+  "managePermissions": "[UK] Manage Permissions",
+  "mediaOptional": "Медіа (необов'язково)",
+  "meetingReadyMessage": "[UK] Your meeting is ready! Join now",
+  "meetingSharedSuccessfully": "Зустріч успішно поділена",
+  "messageSavedSuccessfully": "Повідомлення успішно збережено",
+  "messageSentSuccessfully": "Повідомлення успішно надіслано",
+  "myInvites": "[UK] My Invites",
+  "myProfile": "Мій профіль",
+  "next": "Далі",
+  "no": "Ні",
+  "noBroadcastMessages": "Немає трансляційних повідомлень",
+  "noFamilyMembersYet": "Немає членів родини",
+  "noGamesYet": "Ігор поки що немає",
+  "noInvites": "Немає запрошень",
+  "noPermissionForBroadcast": "Немає дозволу на трансляцію",
+  "noProfileFound": "Профіль не знайдено",
+  "noResults": "Немає результатів",
+  "noSessionsYet": "Сесій поки що немає",
+  "notificationSettings": "Налаштування сповіщень",
+  "notifications": "Сповіщення",
+  "ok": "Гаразд",
+  "opened": "Відкрито",
+  "otpResentSuccessfully": "OTP успішно надіслано повторно",
+  "participants": "Учасники",
+  "password": "Пароль",
+  "paste": "Вставити",
+  "pendingInvites": "[UK] Pending Invites",
+  "pickImage": "Вибрати зображення",
+  "pickVideo": "Вибрати відео",
+  "playtimeAdminPanelTitle": "Заголовок панелі адміністратора Playtime",
+  "playtimeApprove": "Підтвердити Playtime",
+  "playtimeChooseFriends": "Оберіть друзів",
+  "playtimeChooseGame": "[UK] Choose a game",
+  "playtimeChooseTime": "Оберіть час",
+  "playtimeCreate": "Створити Playtime",
+  "playtimeCreateSession": "Створити сесію",
+  "playtimeDescription": "Опис Playtime",
+  "playtimeEnterGameName": "Введіть назву гри",
+  "playtimeGameApproved": "Гра схвалена",
+  "playtimeGameDeleted": "Гру видалено",
+  "playtimeGameRejected": "Гра відхилена",
+  "playtimeHub": "Центр Playtime",
+  "playtimeLandingChooseMode": "Оберіть режим",
+  "playtimeLive": "Живий Playtime",
+  "playtimeLiveScheduled": "Жива сесія запланована",
+  "playtimeModeLive": "Живий режим",
+  "playtimeModeVirtual": "Віртуальний режим",
+  "playtimeNoSessions": "[UK] No playtime sessions found.",
+  "playtimeParentDashboardTitle": "[UK] Playtime Dashboard",
+  "playtimeReject": "Відхилити Playtime",
+  "playtimeTitle": "Заголовок Playtime",
+  "playtimeVirtual": "Віртуальний Playtime",
+  "playtimeVirtualStarted": "Віртуальна сесія розпочалася",
+  "pleaseLoginForFamilyFeatures": "[UK] Please login to access family features",
+  "pleaseLoginToViewProfile": "Увійдіть, щоб переглянути профіль",
+  "pollOptions": "[UK] Poll Options",
+  "previous": "Попередній",
+  "profile": "Профіль",
+  "quickActions": "Швидкі дії",
+  "recentGames": "Останні ігри",
+  "recipients": "Одержувачі",
+  "redo": "Повторити",
+  "refresh": "Оновити",
+  "removeChild": "Вилучити дитину",
+  "requestType": "Тип запиту",
+  "retry": "Спробувати знову",
+  "revoke": "Скасувати",
+  "revokeAccess": "Скасувати доступ",
+  "revokeAccessConfirmation": "Підтвердження скасування доступу",
+  "save": "Зберегти",
+  "saveGroupForRecognition": "Зберегти групу для розпізнавання",
+  "scheduleForLater": "Запланувати на потім",
+  "scheduleMessage": "Запланувати повідомлення",
+  "scheduled": "Заплановано",
+  "scheduledFor": "Заплановано на",
+  "scheduling": "Планування",
+  "search": "Пошук",
+  "select": "Оберіть",
+  "sendNow": "Надіслати зараз",
+  "settings": "Налаштування",
+  "share": "Поділитися",
+  "shareOnWhatsApp": "[UK] Share on WhatsApp",
+  "signUp": "Зареєструватися",
+  "staffScreenTBD": "Екран персоналу буде визначено пізніше",
+  "status": "Статус",
+  "statusColon": "[UK] Status:",
+  "success": "Успіх",
+  "targetingFilters": "Фільтри таргетингу",
+  "type": "Тип",
+  "undo": "Скасувати",
+  "upcomingSessions": "Найближчі сесії",
+  "upload": "Завантажити",
+  "viewAll": "Переглянути все",
+  "welcome": "Ласкаво просимо",
+  "welcomeToPlaytime": "Ласкаво просимо до Playtime",
+  "yes": "Так",
+  "yesCancel": "Так, скасувати"
 }

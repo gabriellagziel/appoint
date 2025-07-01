@@ -7,5 +7,5 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
 
-  testWidgets('OTP flow: send and verify code', (tester) async {}, skip: true);
+  testWidgets('OTP flow: send and verify code', (final tester) async {}, skip: true);
 }

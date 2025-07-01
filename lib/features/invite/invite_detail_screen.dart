@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../models/invite.dart';
-import '../../providers/invite_provider.dart';
-import '../../l10n/app_localizations.dart';
+import 'package:appoint/models/invite.dart';
+import 'package:appoint/providers/invite_provider.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 
 class InviteDetailScreen extends ConsumerWidget {
   final Invite invite;
@@ -11,7 +11,7 @@ class InviteDetailScreen extends ConsumerWidget {
   const InviteDetailScreen({super.key, required this.invite});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(

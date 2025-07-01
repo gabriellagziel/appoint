@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../providers/family_provider.dart';
+import 'package:appoint/providers/family_provider.dart';
 
 class PrivacyRequestWidget extends ConsumerStatefulWidget {
   final String childId;
 
   const PrivacyRequestWidget({
-    Key? key,
+    final Key? key,
     required this.childId,
   }) : super(key: key);
 
@@ -31,7 +31,7 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
           .read(familyServiceProvider)
           .fetchPrivacyRequests(widget.childId);
       setState(() {
-        _hasActiveRequest = requests.any((req) => req.status == 'pending');
+        _hasActiveRequest = requests.any((final req) => req.status == 'pending');
       });
     } catch (e) {
       // Handle error silently for now
@@ -77,7 +77,7 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),

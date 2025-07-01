@@ -11,7 +11,7 @@ class NotificationPayload {
     this.data,
   });
 
-  factory NotificationPayload.fromJson(Map<String, dynamic> json) =>
+  factory NotificationPayload.fromJson(final Map<String, dynamic> json) =>
       NotificationPayload(
         id: json['id'],
         title: json['title'],

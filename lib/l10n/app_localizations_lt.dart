@@ -9,549 +9,568 @@ class AppLocalizationsLt extends AppLocalizations {
   AppLocalizationsLt([String locale = 'lt']) : super(locale);
 
   @override
-  String get refresh => 'Atnaujinti';
+  String get refresh => '[LT] Refresh';
 
   @override
-  String get home => 'Pradžia';
+  String get home => '[LT] Home';
 
   @override
-  String get noSessionsYet => 'Dar nėra sesijų';
+  String get noSessionsYet => '[LT] No sessions yet';
 
   @override
-  String get ok => 'Gerai';
+  String get ok => '[LT] OK';
 
   @override
-  String get playtimeLandingChooseMode => 'Pasirinkite žaidimo režimą:';
+  String get playtimeLandingChooseMode => '[LT] Choose your play mode:';
 
   @override
-  String get signUp => 'Registruotis';
+  String get signUp => '[LT] Sign Up';
 
   @override
-  String get scheduleMessage => 'Suplanuoti pranešimą';
+  String get scheduleMessage => '[LT] Schedule Message';
 
   @override
-  String get decline => 'Atmesti';
+  String get decline => '[LT] Decline';
 
   @override
-  String get adminBroadcast => 'Administratoriaus transliacija';
+  String get adminBroadcast => '[LT] Admin Broadcast';
 
   @override
-  String get login => 'Prisijungti';
+  String get login => '[LT] Login';
 
   @override
-  String get playtimeChooseFriends => 'Pasirinkite draugus pakviesti';
+  String get playtimeChooseFriends => '[LT] Choose friends to invite';
 
   @override
-  String get noInvites => 'Nėra pakvietimų';
+  String get noInvites => '[LT] No invites';
 
   @override
-  String get playtimeChooseTime => 'Pasirinkite laiką';
+  String get playtimeChooseTime => '[LT] Choose a time';
 
   @override
-  String get success => 'Sėkmė';
+  String get success => '[LT] Success';
 
   @override
-  String get undo => 'Atšaukti';
+  String get undo => '[LT] Undo';
 
   @override
-  String get opened => 'Atidaryta';
+  String opened(Object count) {
+    return '[LT] Opened';
+  }
 
   @override
-  String get createVirtualSession => 'Sukurti virtualią sesiją';
+  String get createVirtualSession => '[LT] Create Virtual Session';
 
   @override
-  String get messageSentSuccessfully => 'Pranešimas sėkmingai išsiųstas';
+  String get messageSentSuccessfully => '[LT] Message sent successfully';
 
   @override
-  String get redo => 'Pakartoti';
+  String get redo => '[LT] Redo';
 
   @override
-  String get next => 'Kitas';
+  String get next => '[LT] Next';
 
   @override
-  String get search => 'Ieškoti';
+  String get search => '[LT] Search';
 
   @override
   String get cancelInviteConfirmation =>
-      'Ar tikrai norite atšaukti šį pakvietimą?';
+      '[LT] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return 'Sukurta';
+    return '[LT] Created';
   }
 
   @override
-  String get revokeAccess => 'Atšaukti prieigą';
+  String get revokeAccess => '[LT] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => 'Išsaugoti grupę atpažinimui';
+  String get saveGroupForRecognition => '[LT] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Tiesioginis playtime suplanuotas!';
+  String get playtimeLiveScheduled => '[LT] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Ar tikrai norite atšaukti prieigą?';
+  String get revokeAccessConfirmation =>
+      '[LT] Are you sure you want to revoke access?';
 
   @override
-  String get download => 'Atsisiųsti';
+  String get download => '[LT] Download';
 
   @override
-  String get password => 'Slaptažodis';
+  String get password => '[LT] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Klaida įkeliant šeimos nuorodas';
+    return '[LT] Error loading family links';
   }
 
   @override
-  String get cancel => 'Atšaukti';
+  String get cancel => '[LT] Cancel';
 
   @override
-  String get playtimeCreate => 'Sukurti';
+  String get playtimeCreate => '[LT] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Nepavyko apdoroti privatumo užklausos';
+    return '[LT] Failed to action privacy request';
   }
 
   @override
-  String get appTitle => 'APP-OINT';
+  String get appTitle => '[LT] APP-OINT';
 
   @override
-  String get accept => 'Priimti';
+  String get accept => '[LT] Accept';
 
   @override
-  String get playtimeModeVirtual => 'Virtualus žaidimas';
+  String get playtimeModeVirtual => '[LT] Virtual Play';
 
   @override
   String get playtimeDescription =>
-      'Mėgaukitės tiesioginiais ar virtualiais žaidimais su draugais!';
+      '[LT] Enjoy live or virtual games with your friends!';
 
   @override
-  String get delete => 'Ištrinti';
+  String get delete => '[LT] Delete';
 
   @override
-  String get playtimeVirtualStarted => 'Virtualus playtime pradėtas!';
+  String get playtimeVirtualStarted => '[LT] Virtual playtime started!';
 
   @override
-  String get createYourFirstGame => 'Sukurkite savo pirmąjį žaidimą';
+  String get createYourFirstGame => '[LT] Create your first game';
 
   @override
-  String get participants => 'Dalyviai';
+  String get participants => '[LT] Participants';
 
   @override
   String recipients(Object count) {
-    return 'Gavėjai';
+    return '[LT] Recipients';
   }
 
   @override
-  String get noResults => 'Rezultatų nerasta';
+  String get noResults => '[LT] No results found';
 
   @override
-  String get yes => 'Taip';
+  String get yes => '[LT] Yes';
 
   @override
-  String get invite => 'Pakviesti';
+  String get invite => '[LT] Invite';
 
   @override
-  String get playtimeModeLive => 'Tiesioginis žaidimas';
+  String get playtimeModeLive => '[LT] Live Play';
 
   @override
-  String get done => 'Atlikta';
+  String get done => '[LT] Done';
 
   @override
-  String get defaultShareMessage => 'Susipažinkime per Appoint!';
+  String get defaultShareMessage => '[LT] Let\'s meet via Appoint!';
 
   @override
-  String get no => 'Ne';
+  String get no => '[LT] No';
 
   @override
-  String get playtimeHub => 'Playtime centras';
+  String get playtimeHub => '[LT] Playtime Hub';
 
   @override
-  String get error => 'Klaida';
+  String get error => '[LT] Error';
 
   @override
-  String get createLiveSession => 'Sukurti tiesioginę sesiją';
+  String get createLiveSession => '[LT] Create Live Session';
 
   @override
-  String get enableNotifications => 'Įjungti pranešimus';
+  String get enableNotifications => '[LT] Enable Notifications';
 
   @override
   String invited(Object date) {
-    return 'Pakviestas';
+    return '[LT] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'Turinys';
+    return '[LT] Content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Susirinkimas sėkmingai pasidalintas';
+  String get meetingSharedSuccessfully => '[LT] Meeting shared successfully';
 
   @override
-  String get welcomeToPlaytime => 'Sveiki atvykę į Playtime';
+  String get welcomeToPlaytime => '[LT] Welcome to Playtime';
 
   @override
-  String get viewAll => 'Peržiūrėti visus';
+  String get viewAll => '[LT] View All';
 
   @override
-  String get playtimeVirtual => 'Virtualus žaidimas';
+  String get playtimeVirtual => '[LT] Virtual Play';
 
   @override
-  String get staffScreenTBD => 'Darbuotojų ekranas netrukus';
+  String get staffScreenTBD => '[LT] Staff screen coming soon';
 
   @override
-  String get cut => 'Iškirpti';
+  String get cut => '[LT] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => 'Pakvietimas sėkmingai atšauktas';
+  String get inviteCancelledSuccessfully =>
+      '[LT] Invite cancelled successfully';
 
   @override
-  String get retry => 'Bandyti iš naujo';
+  String get retry => '[LT] Retry';
 
   @override
-  String get composeBroadcastMessage => 'Sukurti transliacijos pranešimą';
+  String get composeBroadcastMessage => '[LT] Compose Broadcast Message';
 
   @override
-  String get sendNow => 'Siųsti dabar';
+  String get sendNow => '[LT] Send Now';
 
   @override
-  String get noGamesYet => 'Dar nėra žaidimų';
+  String get noGamesYet => '[LT] No games yet';
 
   @override
-  String get select => 'Pasirinkti';
+  String get select => '[LT] Select';
 
   @override
-  String get about => 'Apie';
+  String get about => '[LT] About';
 
   @override
-  String get choose => 'Pasirinkti';
+  String get choose => '[LT] Choose';
 
   @override
-  String get profile => 'Profilis';
+  String get profile => '[LT] Profile';
 
   @override
-  String get removeChild => 'Pašalinti vaiką';
+  String get removeChild => '[LT] Remove Child';
 
   @override
   String status(Object status) {
-    return 'Būsena';
+    return '[LT] Status';
   }
 
   @override
-  String get logout => 'Atsijungti';
+  String get logout => '[LT] Logout';
 
   @override
-  String get paste => 'Įklijuoti';
+  String get paste => '[LT] Paste';
 
   @override
-  String get welcome => 'Sveiki atvykę';
+  String get welcome => '[LT] Welcome';
 
   @override
-  String get playtimeCreateSession => 'Sukurti Playtime sesiją';
+  String get playtimeCreateSession => '[LT] Create a Playtime Session';
 
   @override
-  String get familyMembers => 'Šeimos nariai';
+  String get familyMembers => '[LT] Family Members';
 
   @override
-  String get upload => 'Įkelti';
+  String get upload => '[LT] Upload';
 
   @override
-  String get upcomingSessions => 'Artimiausios sesijos';
+  String get upcomingSessions => '[LT] Upcoming Sessions';
 
   @override
-  String get enterGroupName => 'Įveskite grupės pavadinimą';
+  String get enterGroupName => '[LT] Enter group name';
 
   @override
-  String get confirm => 'Patvirtinti';
+  String get confirm => '[LT] Confirm';
 
   @override
-  String get playtimeLive => 'Tiesioginis žaidimas';
+  String get playtimeLive => '[LT] Live Play';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Klaida įkeliant pakvietimus';
+  String get errorLoadingInvites => '[LT] Error loading invites';
+
+  @override
+  String get targetingFilters => '[LT] Targeting Filters';
+
+  @override
+  String get pickVideo => '[LT] Pick Video';
+
+  @override
+  String get playtimeGameDeleted => '[LT] Game deleted';
+
+  @override
+  String get scheduleForLater => '[LT] Schedule for Later';
+
+  @override
+  String get accessRevokedSuccessfully => '[LT] Access revoked successfully';
+
+  @override
+  String type(Object type) {
+    return '[LT] Type';
   }
 
   @override
-  String get targetingFilters => 'Tikslinimo filtrai';
+  String get checkingPermissions => '[LT] Checking permissions...';
 
   @override
-  String get pickVideo => 'Pasirinkti vaizdo įrašą';
+  String get copy => '[LT] Copy';
 
   @override
-  String get playtimeGameDeleted => 'Žaidimas ištrintas';
+  String get yesCancel => '[LT] Yes, Cancel';
 
   @override
-  String get scheduleForLater => 'Suplanuoti vėliau';
+  String get email => '[LT] Email';
 
   @override
-  String get accessRevokedSuccessfully => 'Prieiga sėkmingai atšaukta';
+  String get shareOnWhatsApp => '[LT] Share on WhatsApp';
 
   @override
-  String get type => 'Tipas';
+  String get notificationSettings => '[LT] Notification Settings';
 
   @override
-  String get checkingPermissions => 'Tikrinami leidimai...';
+  String get myProfile => '[LT] My Profile';
 
   @override
-  String get copy => 'Kopijuoti';
+  String get revoke => '[LT] Revoke';
 
   @override
-  String get yesCancel => 'Taip, atšaukti';
-
-  @override
-  String get email => 'El. paštas';
-
-  @override
-  String get shareOnWhatsApp => 'Pasidalinti WhatsApp';
-
-  @override
-  String get notificationSettings => 'Pranešimų nustatymai';
-
-  @override
-  String get myProfile => 'Mano profilis';
-
-  @override
-  String get revoke => 'Atšaukti';
-
-  @override
-  String get noBroadcastMessages => 'Dar nėra pranešimų';
+  String get noBroadcastMessages => '[LT] No messages yet';
 
   @override
   String requestType(Object type) {
-    return 'Užklausos tipas';
+    return '[LT] Request Type';
   }
 
   @override
-  String get notifications => 'Pranešimai';
+  String get notifications => '[LT] Notifications';
 
   @override
-  String get details => 'Išsami informacija';
+  String get details => '[LT] Details';
 
   @override
-  String get cancelInvite => 'Atšaukti pakvietimą';
+  String get cancelInvite => '[LT] Cancel Invite';
 
   @override
-  String get createNew => 'Sukurti naują';
+  String get createNew => '[LT] Create New';
 
   @override
-  String get settings => 'Nustatymai';
+  String get settings => '[LT] Settings';
 
   @override
-  String get playtimeReject => 'Atmesti';
+  String get playtimeReject => '[LT] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Klaida įkeliant profilį';
-  }
+  String get errorLoadingProfile => '[LT] Error loading profile';
 
   @override
-  String get edit => 'Redaguoti';
+  String get edit => '[LT] Edit';
 
   @override
-  String get add => 'Pridėti';
+  String get add => '[LT] Add';
 
   @override
-  String get playtimeGameApproved => 'Žaidimas patvirtintas';
+  String get playtimeGameApproved => '[LT] Game approved';
 
   @override
-  String get forgotPassword => 'Pamiršote slaptažodį?';
+  String get forgotPassword => '[LT] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Šeimos valdymo skydelis';
+  String get familyDashboard => '[LT] Family Dashboard';
 
   @override
-  String get loading => 'Įkeliama...';
+  String get loading => '[LT] Loading...';
 
   @override
-  String get quickActions => 'Greitosios veiksmai';
+  String get quickActions => '[LT] Quick Actions';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => '[LT] Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP sėkmingai išsiųstas iš naujo';
+  String get otpResentSuccessfully => '[LT] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Klaida tikrinant leidimus';
+    return '[LT] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Kliento ekranas netrukus';
+  String get clientScreenTBD => '[LT] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM žetonas';
+    return '[LT] FCM Token';
   }
 
   @override
-  String get pickImage => 'Pasirinkti paveikslėlį';
+  String get pickImage => '[LT] Pick Image';
 
   @override
-  String get previous => 'Ankstesnis';
+  String get previous => '[LT] Previous';
 
   @override
-  String get noProfileFound => 'Profilis nerastas';
+  String get noProfileFound => '[LT] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Dar nėra šeimos narių';
+  String get noFamilyMembersYet => '[LT] No family members yet';
 
   @override
-  String get mediaOptional => 'Medija (neprivaloma)';
+  String get mediaOptional => '[LT] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => 'Pranešimas sėkmingai išsaugotas';
+  String get messageSavedSuccessfully => '[LT] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Suplanuota';
+  String get scheduledFor => '[LT] Scheduled for';
 
   @override
-  String get dashboard => 'Valdymo skydelis';
+  String get dashboard => '[LT] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => 'Nėra leidimo transliuoti';
+  String get noPermissionForBroadcast => '[LT] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime žaidimai – Administratorius';
+  String get playtimeAdminPanelTitle => '[LT] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Pakvietimo informacija';
+  String get inviteDetail => '[LT] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return 'Suplanuota';
+    return '[LT] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Nepavyko išsiųsti OTP iš naujo';
+    return '[LT] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => 'Planavimas';
+  String get scheduling => '[LT] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Klaida išsaugant pranešimą';
+    return '[LT] Error saving message';
   }
 
   @override
-  String get save => 'Išsaugoti';
+  String get save => '[LT] Save';
 
   @override
-  String get playtimeApprove => 'Patvirtinti';
+  String get playtimeApprove => '[LT] Approve';
 
   @override
-  String get createYourFirstSession => 'Sukurkite savo pirmąją sesiją';
+  String get createYourFirstSession => '[LT] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'Žaidimas atmestas';
+  String get playtimeGameRejected => '[LT] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Nepavyko atšaukti prieigos';
+    return '[LT] Failed to revoke access';
   }
 
   @override
-  String get recentGames => 'Naujausi žaidimai';
+  String get recentGames => '[LT] Recent Games';
 
   @override
-  String get customizeMessage => 'Pritaikyti pranešimą';
+  String get customizeMessage => '[LT] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Nepavyko atšaukti pakvietimo';
+    return '[LT] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Klaida siunčiant pranešimą';
+    return '[LT] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Patvirtinti slaptažodį';
+  String get confirmPassword => '[LT] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Klaida įkeliant privatumo užklausas';
+    return '[LT] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Prijungti vaikai';
+  String get connectedChildren => '[LT] Connected Children';
 
   @override
-  String get share => 'Pasidalinti';
+  String get share => '[LT] Share';
 
   @override
-  String get playtimeEnterGameName => 'Įveskite žaidimo pavadinimą';
+  String get playtimeEnterGameName => '[LT] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Prašome prisijungti, kad galėtumėte naudotis šeimos funkcijomis';
+      '[LT] Please login to access family features';
 
   @override
-  String get myInvites => 'Mano pakvietimai';
+  String get myInvites => '[LT] My Invites';
 
   @override
-  String get createGame => 'Sukurti žaidimą';
+  String get createGame => '[LT] Create Game';
 
   @override
-  String get groupNameOptional => 'Grupės pavadinimas (neprivalomas)';
+  String get groupNameOptional => '[LT] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Playtime sesijų nerasta.';
+  String get playtimeNoSessions => '[LT] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Administratoriaus ekranas netrukus';
+  String get adminScreenTBD => '[LT] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime valdymo skydelis';
+  String get playtimeParentDashboardTitle => '[LT] Playtime Dashboard';
 
   @override
-  String get close => 'Uždaryti';
+  String get close => '[LT] Close';
 
   @override
-  String get knownGroupDetected => 'Aptikta žinoma grupė';
+  String get knownGroupDetected => '[LT] Known group detected';
 
   @override
-  String get back => 'Atgal';
+  String get back => '[LT] Back';
 
   @override
-  String get playtimeChooseGame => 'Pasirinkti žaidimą';
+  String get playtimeChooseGame => '[LT] Choose a game';
 
   @override
-  String get managePermissions => 'Valdyti leidimus';
+  String get managePermissions => '[LT] Manage Permissions';
 
   @override
-  String get pollOptions => 'Apklausos parinktys';
+  String get pollOptions => '[LT] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Spustelėta';
+    return '[LT] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Nuoroda';
+    return '[LT] Link';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'Jūsų susirinkimas paruoštas! Prisijunkite dabar';
+  String get meetingReadyMessage => '[LT] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Laukiami pakvietimai';
+  String get pendingInvites => '[LT] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Būsena:';
+    return '[LT] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      'Prašome prisijungti, kad galėtumėte peržiūrėti savo profilį.';
+      '[LT] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

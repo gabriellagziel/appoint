@@ -15,7 +15,7 @@ class Branch {
     this.isActive = true,
   });
 
-  factory Branch.fromJson(Map<String, dynamic> json, String id) {
+  factory Branch.fromJson(final Map<String, dynamic> json, final String id) {
     return Branch(
       id: id,
       name: json['name'] ?? 'Branch',

@@ -1,10 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../models/content_item.dart';
-import '../services/content_service.dart';
+import 'package:appoint/models/content_item.dart';
+import 'package:appoint/services/content_service.dart';
 
-final contentServiceProvider = Provider<ContentService>((ref) {
+final contentServiceProvider = Provider<ContentService>((final ref) {
   return ContentService();
 });
 
@@ -29,7 +29,7 @@ class ContentPagingNotifier
       final snap =
           await _service.fetchSnapshot(startAfter: _lastDoc, limit: limit);
       final newItems =
-          snap.docs.map((d) => ContentItem.fromMap(d.id, d.data())).toList();
+          snap.docs.map((final d) => ContentItem.fromMap(d.id, d.data())).toList();
       if (snap.docs.isNotEmpty) {
         _lastDoc = snap.docs.last;
       }
@@ -46,11 +46,11 @@ class ContentPagingNotifier
 
 final contentPagingProvider =
     StateNotifierProvider<ContentPagingNotifier, AsyncValue<List<ContentItem>>>(
-        (ref) {
+        (final ref) {
   return ContentPagingNotifier(ref.read(contentServiceProvider));
 });
 
 final contentByIdProvider =
-    FutureProvider.family<ContentItem?, String>((ref, id) {
+    FutureProvider.family<ContentItem?, String>((final ref, final id) {
   return ref.read(contentServiceProvider).fetchById(id);
 });

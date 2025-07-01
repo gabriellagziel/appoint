@@ -6,14 +6,14 @@ part 'booking_model.g.dart';
 @freezed
 class BookingModel with _$BookingModel {
   const factory BookingModel({
-    required String id,
-    required String userId,
-    required String staffId,
-    required String serviceId,
-    required DateTime startTime,
-    required DateTime endTime,
+    required final String id,
+    required final String userId,
+    required final String staffId,
+    required final String serviceId,
+    required final DateTime startTime,
+    required final DateTime endTime,
   }) = _BookingModel;
 
-  factory BookingModel.fromJson(Map<String, dynamic> json) =>
+  factory BookingModel.fromJson(final Map<String, dynamic> json) =>
       _$BookingModelFromJson(json);
 }

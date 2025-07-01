@@ -1,21 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../providers/rewards_provider.dart';
+import 'package:appoint/providers/rewards_provider.dart';
+import 'package:appoint/services/rewards_service.dart';
+
+final rewardsServiceProvider =
+    Provider<RewardsService>((final ref) => RewardsService());
 
 class RewardsScreen extends ConsumerWidget {
   const RewardsScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final pointsAsync = ref.watch(userPointsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Rewards')),
       body: pointsAsync.when(
-        data: (points) {
+        data: (final points) {
           final tier = ref.read(rewardsServiceProvider).tierForPoints(points);
-          final nextTier = _nextTierInfo(points);
+          final nextTier =
+              _nextTierInfo(points, ref.read(rewardsServiceProvider));
           return Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
@@ -37,12 +42,13 @@ class RewardsScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, __) => const Center(child: Text('Error loading rewards')),
+        error: (final _, final __) => const Center(child: Text('Error loading rewards')),
       ),
     );
   }
 
-  Map<String, dynamic>? _nextTierInfo(int points) {
+  Map<String, dynamic>? _nextTierInfo(
+      final int points, final RewardsService rewardsService) {
     if (points < RewardsService.rewardTiers['silver']!) {
       return {
         'tier': 'silver',

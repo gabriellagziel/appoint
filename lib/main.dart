@@ -8,13 +8,11 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'dart:async';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
-import 'l10n/app_localizations.dart';
-import 'config/routes.dart';
-import 'theme/app_theme.dart';
-import 'providers/theme_provider.dart';
-import 'firebase_options.dart';
-import 'services/custom_deep_link_service.dart';
-import 'services/notification_service.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/config/routes.dart';
+import 'package:appoint/providers/theme_provider.dart';
+import 'package:appoint/firebase_options.dart';
+import 'package:appoint/services/notification_service.dart';
 
 final FirebaseAnalytics analytics = FirebaseAnalytics.instance;
 
@@ -39,19 +37,12 @@ Future<void> appMain() async {
   FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
 
   // Forward Dart errors to Crashlytics
-  PlatformDispatcher.instance.onError = (error, stack) {
-    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
-    return true;
+  FlutterError.onError = (final FlutterErrorDetails details) {
+    FirebaseCrashlytics.instance.recordFlutterFatalError(details);
   };
 
   // Initialize Firebase Analytics
   await analytics.setAnalyticsCollectionEnabled(true);
-
-  // Initialize custom deep link service (replaces Firebase Dynamic Links)
-  final deepLinkService = CustomDeepLinkService();
-  // Deep link initialization is disabled to avoid unsupported web URL errors
-  // during tests and web builds.
-  // await deepLinkService.initialize();
 
   // Initialize notifications
   final notificationService = NotificationService();
@@ -60,12 +51,12 @@ Future<void> appMain() async {
   runZonedGuarded(
     () {
       runApp(
-        ProviderScope(
-          child: MyApp(deepLinkService: deepLinkService),
+        const ProviderScope(
+          child: MyApp(),
         ),
       );
     },
-    (error, stack) =>
+    (final error, final stack) =>
         FirebaseCrashlytics.instance.recordError(error, stack, fatal: true),
   );
 }
@@ -76,9 +67,7 @@ void main() {
 }
 
 class MyApp extends ConsumerStatefulWidget {
-  final CustomDeepLinkService deepLinkService;
-
-  const MyApp({Key? key, required this.deepLinkService}) : super(key: key);
+  const MyApp({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<MyApp> createState() => _MyAppState();
@@ -90,18 +79,15 @@ class _MyAppState extends ConsumerState<MyApp> {
   @override
   void initState() {
     super.initState();
-    // Set the navigator key for deep link service
-    widget.deepLinkService.setNavigatorKey(_navigatorKey);
   }
 
   @override
   void dispose() {
-    widget.deepLinkService.dispose();
     super.dispose();
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final lightTheme = ref.watch(lightThemeProvider);
     final darkTheme = ref.watch(darkThemeProvider);
     final themeMode = ref.watch(themeModeProvider);
@@ -117,7 +103,7 @@ class _MyAppState extends ConsumerState<MyApp> {
         FirebaseAnalyticsObserver(analytics: analytics),
       ],
       // Localization support
-      localizationsDelegates: [
+      localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,

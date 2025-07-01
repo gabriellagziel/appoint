@@ -6,7 +6,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 class StorageService {
   final FirebaseStorage _storage;
 
-  StorageService({FirebaseStorage? storage})
+  StorageService({final FirebaseStorage? storage})
       : _storage = storage ?? FirebaseStorage.instance {
     _connectToEmulatorIfNeeded();
   }
@@ -22,7 +22,7 @@ class StorageService {
     }
   }
 
-  Future<String> uploadFile(File file, String path) async {
+  Future<String> uploadFile(final File file, final String path) async {
     final ref = _storage.ref().child(path);
     await ref.putFile(file);
     return ref.getDownloadURL();

@@ -13,7 +13,7 @@ class AnimatedWrapper extends StatelessWidget {
   final Duration duration;
   final AxisDirection direction;
 
-  Offset _offsetForDirection(AxisDirection direction) {
+  Offset _offsetForDirection(final AxisDirection direction) {
     switch (direction) {
       case AxisDirection.up:
         return const Offset(0, 0.1);
@@ -27,10 +27,10 @@ class AnimatedWrapper extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return AnimatedSwitcher(
       duration: duration,
-      transitionBuilder: (child, animation) {
+      transitionBuilder: (final child, final animation) {
         final offsetAnimation = Tween<Offset>(
                 begin: _offsetForDirection(direction), end: Offset.zero)
             .animate(animation);

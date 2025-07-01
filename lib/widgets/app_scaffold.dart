@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../theme/app_spacing.dart';
+import 'package:appoint/theme/app_spacing.dart';
 
 /// Basic wrapper around [Scaffold] used across the app.
 class AppScaffold extends StatelessWidget {
@@ -20,7 +20,7 @@ class AppScaffold extends StatelessWidget {
   final bool useSliverAppBar;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final content = SafeArea(
       child: useSliverAppBar
           ? CustomScrollView(

@@ -21,13 +21,13 @@ class AppLocalizationsSl extends AppLocalizations {
   String get ok => 'V redu';
 
   @override
-  String get playtimeLandingChooseMode => 'Izberite način';
+  String get playtimeLandingChooseMode => '[SL] Choose your play mode:';
 
   @override
   String get signUp => 'Registriraj se';
 
   @override
-  String get scheduleMessage => 'Načrtuj sporočilo';
+  String get scheduleMessage => '[SL] Schedule Message';
 
   @override
   String get decline => 'Zavrni';
@@ -39,7 +39,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get login => 'Prijava';
 
   @override
-  String get playtimeChooseFriends => 'Izberite prijatelje';
+  String get playtimeChooseFriends => '[SL] Choose friends to invite';
 
   @override
   String get noInvites => 'Ni povabil';
@@ -54,16 +54,18 @@ class AppLocalizationsSl extends AppLocalizations {
   String get undo => 'Razveljavi';
 
   @override
-  String get opened => 'Odprto';
+  String opened(Object count) {
+    return '[SL] Opened';
+  }
 
   @override
   String get createVirtualSession => 'Ustvari virtualno sejo';
 
   @override
-  String get messageSentSuccessfully => 'Sporočilo uspešno poslano';
+  String get messageSentSuccessfully => '[SL] Message sent successfully';
 
   @override
-  String get redo => 'Ponovi';
+  String get redo => '[SL] Redo';
 
   @override
   String get next => 'Naslednje';
@@ -80,16 +82,17 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
-  String get revokeAccess => 'Razveljavi dostop';
+  String get revokeAccess => '[SL] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => 'Shrani skupino za prepoznavanje';
+  String get saveGroupForRecognition => '[SL] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Živa seja načrtovana';
+  String get playtimeLiveScheduled => '[SL] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Potrditev razveljavitve dostopa';
+  String get revokeAccessConfirmation =>
+      '[SL] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Prenesi';
@@ -99,7 +102,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Napaka pri nalaganju družinskih povezav';
+    return '[SL] Error loading family links';
   }
 
   @override
@@ -120,7 +123,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get accept => 'Sprejmi';
 
   @override
-  String get playtimeModeVirtual => 'Virtualni način';
+  String get playtimeModeVirtual => '[SL] Virtual Play';
 
   @override
   String get playtimeDescription => 'Opis Playtime';
@@ -143,7 +146,7 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
-  String get noResults => 'Ni rezultatov';
+  String get noResults => '[SL] No results found';
 
   @override
   String get yes => 'Da';
@@ -152,13 +155,13 @@ class AppLocalizationsSl extends AppLocalizations {
   String get invite => 'Povabi';
 
   @override
-  String get playtimeModeLive => 'Živi način';
+  String get playtimeModeLive => '[SL] Live Play';
 
   @override
-  String get done => 'Končano';
+  String get done => '[SL] Done';
 
   @override
-  String get defaultShareMessage => 'Privzeto sporočilo za deljenje';
+  String get defaultShareMessage => '[SL] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Ne';
@@ -182,7 +185,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String content(Object content) {
-    return 'Vsebina';
+    return '[SL] Content';
   }
 
   @override
@@ -198,7 +201,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get playtimeVirtual => 'Virtualni Playtime';
 
   @override
-  String get staffScreenTBD => 'Zaslon osebja bo določen';
+  String get staffScreenTBD => '[SL] Staff screen coming soon';
 
   @override
   String get cut => 'Izreži';
@@ -210,7 +213,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get retry => 'Poskusi znova';
 
   @override
-  String get composeBroadcastMessage => 'Sestavi oddajno sporočilo';
+  String get composeBroadcastMessage => '[SL] Compose Broadcast Message';
 
   @override
   String get sendNow => 'Pošlji zdaj';
@@ -228,7 +231,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get choose => 'Izberi';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[SL] Profile';
 
   @override
   String get removeChild => 'Odstrani otroka';
@@ -251,7 +254,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get playtimeCreateSession => 'Ustvari sejo';
 
   @override
-  String get familyMembers => 'Člani družine';
+  String get familyMembers => '[SL] Family Members';
 
   @override
   String get upload => 'Naloži';
@@ -260,7 +263,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get upcomingSessions => 'Prihajajoče seje';
 
   @override
-  String get enterGroupName => 'Vnesite ime skupine';
+  String get enterGroupName => '[SL] Enter group name';
 
   @override
   String get confirm => 'Potrdi';
@@ -269,9 +272,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get playtimeLive => 'Živi Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Napaka pri nalaganju povabil';
-  }
+  String get errorLoadingInvites => 'Napaka pri nalaganju povabil';
 
   @override
   String get targetingFilters => 'Filtri ciljanja';
@@ -286,10 +287,12 @@ class AppLocalizationsSl extends AppLocalizations {
   String get scheduleForLater => 'Načrtuj za kasneje';
 
   @override
-  String get accessRevokedSuccessfully => 'Dostop uspešno razveljavljen';
+  String get accessRevokedSuccessfully => '[SL] Access revoked successfully';
 
   @override
-  String get type => 'Tip';
+  String type(Object type) {
+    return 'Tip';
+  }
 
   @override
   String get checkingPermissions => 'Preverjanje dovoljenj';
@@ -304,19 +307,19 @@ class AppLocalizationsSl extends AppLocalizations {
   String get email => 'E-pošta';
 
   @override
-  String get shareOnWhatsApp => 'Deli na WhatsApp';
+  String get shareOnWhatsApp => '[SL] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Nastavitve obvestil';
 
   @override
-  String get myProfile => 'Moj profil';
+  String get myProfile => '[SL] My Profile';
 
   @override
   String get revoke => 'Razveljavi';
 
   @override
-  String get noBroadcastMessages => 'Ni oddajnih sporočil';
+  String get noBroadcastMessages => '[SL] No messages yet';
 
   @override
   String requestType(Object type) {
@@ -342,9 +345,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get playtimeReject => 'Zavrni Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Napaka pri nalaganju profila';
-  }
+  String get errorLoadingProfile => '[SL] Error loading profile';
 
   @override
   String get edit => 'Uredi';
@@ -359,7 +360,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get forgotPassword => 'Ste pozabili geslo?';
 
   @override
-  String get familyDashboard => 'Družinski nadzorni plošči';
+  String get familyDashboard => '[SL] Family Dashboard';
 
   @override
   String get loading => 'Nalaganje';
@@ -371,7 +372,7 @@ class AppLocalizationsSl extends AppLocalizations {
   String get playtimeTitle => 'Naslov Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP uspešno ponovno poslan';
+  String get otpResentSuccessfully => '[SL] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
@@ -379,11 +380,11 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
-  String get clientScreenTBD => 'Zaslon odjemalca bo določen';
+  String get clientScreenTBD => '[SL] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM žeton';
+    return '[SL] FCM Token';
   }
 
   @override
@@ -393,22 +394,22 @@ class AppLocalizationsSl extends AppLocalizations {
   String get previous => 'Prejšnji';
 
   @override
-  String get noProfileFound => 'Profil ni najden';
+  String get noProfileFound => '[SL] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Še ni družinskih članov';
+  String get noFamilyMembersYet => '[SL] No family members yet';
 
   @override
   String get mediaOptional => 'Mediji (izbirno)';
 
   @override
-  String get messageSavedSuccessfully => 'Sporočilo uspešno shranjeno';
+  String get messageSavedSuccessfully => '[SL] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Načrtovano za';
+  String get scheduledFor => '[SL] Scheduled for';
 
   @override
-  String get dashboard => 'Nadzorna plošča';
+  String get dashboard => '[SL] Dashboard';
 
   @override
   String get noPermissionForBroadcast => 'Ni dovoljenja za oddajanje';
@@ -421,20 +422,20 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String scheduled(Object date) {
-    return 'Načrtovano';
+    return '[SL] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Ni uspelo ponovno poslati OTP';
+    return '[SL] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => 'Načrtovanje';
+  String get scheduling => '[SL] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Napaka pri shranjevanju sporočila';
+    return '[SL] Error saving message';
   }
 
   @override
@@ -451,23 +452,23 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Ni uspelo razveljaviti dostopa';
+    return '[SL] Failed to revoke access';
   }
 
   @override
   String get recentGames => 'Nedavne igre';
 
   @override
-  String get customizeMessage => 'Prilagodi sporočilo';
+  String get customizeMessage => '[SL] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Ni uspelo preklicati povabila';
+    return '[SL] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Napaka pri pošiljanju sporočila';
+    return '[SL] Error sending message';
   }
 
   @override
@@ -489,67 +490,84 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Prosimo, prijavite se za dostop do družinskih funkcij';
+      '[SL] Please login to access family features';
 
   @override
-  String get myInvites => 'Moja povabila';
+  String get myInvites => '[SL] My Invites';
 
   @override
-  String get createGame => 'Ustvari igro';
+  String get createGame => '[SL] Create Game';
 
   @override
-  String get groupNameOptional => 'Ime skupine (izbirno)';
+  String get groupNameOptional => '[SL] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Ni najdenih Playtime sej.';
+  String get playtimeNoSessions => '[SL] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Zaslon skrbnika bo kmalu na voljo';
+  String get adminScreenTBD => '[SL] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime nadzorna plošča';
+  String get playtimeParentDashboardTitle => '[SL] Playtime Dashboard';
 
   @override
-  String get close => 'Zapri';
+  String get close => '[SL] Close';
 
   @override
-  String get knownGroupDetected => 'Zaznana znana skupina';
+  String get knownGroupDetected => '[SL] Known group detected';
 
   @override
-  String get back => 'Nazaj';
+  String get back => '[SL] Back';
 
   @override
-  String get playtimeChooseGame => 'Izberite igro';
+  String get playtimeChooseGame => '[SL] Choose a game';
 
   @override
-  String get managePermissions => 'Upravljaj dovoljenja';
+  String get managePermissions => '[SL] Manage Permissions';
 
   @override
-  String get pollOptions => 'Možnosti glasovanja';
+  String get pollOptions => '[SL] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Kliknjeno';
+    return '[SL] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Povezava';
+    return '[SL] Link';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'Vaše srečanje je pripravljeno! Pridružite se zdaj';
+  String get meetingReadyMessage => '[SL] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Čakajoča povabila';
+  String get pendingInvites => '[SL] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Stanje:';
+    return '[SL] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      'Prosimo, prijavite se za ogled profila';
+      '[SL] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

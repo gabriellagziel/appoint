@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 
 /// Simplified user model built from Firebase custom claims.
 class AppUser {

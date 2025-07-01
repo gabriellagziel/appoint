@@ -6,11 +6,11 @@ part 'playtime_background.g.dart';
 @freezed
 class PlaytimeBackground with _$PlaytimeBackground {
   const factory PlaytimeBackground({
-    required String id,
-    required String imageUrl,
-    required String createdBy,
+    required final String id,
+    required final String imageUrl,
+    required final String createdBy,
   }) = _PlaytimeBackground;
 
-  factory PlaytimeBackground.fromJson(Map<String, dynamic> json) =>
+  factory PlaytimeBackground.fromJson(final Map<String, dynamic> json) =>
       _$PlaytimeBackgroundFromJson(json);
 }

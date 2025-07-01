@@ -1,27 +1,27 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../services/ambassador_quota_service.dart';
+import 'package:appoint/services/ambassador_quota_service.dart';
 
 // Provider for the ambassador quota service
-final ambassadorQuotaServiceProvider = Provider<AmbassadorQuotaService>((ref) {
+final ambassadorQuotaServiceProvider = Provider<AmbassadorQuotaService>((final ref) {
   return AmbassadorQuotaService();
 });
 
 // Provider for quota statistics
-final quotaStatisticsProvider = FutureProvider<Map<String, dynamic>>((ref) {
+final quotaStatisticsProvider = FutureProvider<Map<String, dynamic>>((final ref) {
   final service = ref.read(ambassadorQuotaServiceProvider);
   return service.getQuotaStatistics();
 });
 
 // Provider for global statistics
 final globalQuotaStatisticsProvider =
-    FutureProvider<Map<String, dynamic>>((ref) {
+    FutureProvider<Map<String, dynamic>>((final ref) {
   final service = ref.read(ambassadorQuotaServiceProvider);
   return service.getGlobalStatistics();
 });
 
 // Provider for available slots for a specific country-language combination
 final availableSlotsProvider =
-    FutureProvider.family<int, Map<String, String>>((ref, params) {
+    FutureProvider.family<int, Map<String, String>>((final ref, final params) {
   final service = ref.read(ambassadorQuotaServiceProvider);
   final countryCode = params['countryCode']!;
   final languageCode = params['languageCode']!;
@@ -30,7 +30,7 @@ final availableSlotsProvider =
 
 // Provider for checking if slots are available
 final hasAvailableSlotsProvider =
-    FutureProvider.family<bool, Map<String, String>>((ref, params) {
+    FutureProvider.family<bool, Map<String, String>>((final ref, final params) {
   final service = ref.read(ambassadorQuotaServiceProvider);
   final countryCode = params['countryCode']!;
   final languageCode = params['languageCode']!;
@@ -39,7 +39,7 @@ final hasAvailableSlotsProvider =
 
 // Provider for user eligibility
 final userEligibilityProvider =
-    FutureProvider.family<bool, String>((ref, userId) {
+    FutureProvider.family<bool, String>((final ref, final userId) {
   final service = ref.read(ambassadorQuotaServiceProvider);
   return service.isUserEligible(userId);
 });
@@ -52,9 +52,9 @@ class AmbassadorAssignmentNotifier extends StateNotifier<AsyncValue<bool>> {
       : super(const AsyncValue.data(false));
 
   Future<bool> assignAmbassador({
-    required String userId,
-    required String countryCode,
-    required String languageCode,
+    required final String userId,
+    required final String countryCode,
+    required final String languageCode,
   }) async {
     state = const AsyncValue.loading();
 
@@ -73,7 +73,7 @@ class AmbassadorAssignmentNotifier extends StateNotifier<AsyncValue<bool>> {
     }
   }
 
-  Future<bool> removeAmbassador(String userId) async {
+  Future<bool> removeAmbassador(final String userId) async {
     state = const AsyncValue.loading();
 
     try {
@@ -106,7 +106,7 @@ class AmbassadorAssignmentNotifier extends StateNotifier<AsyncValue<bool>> {
 
 final ambassadorAssignmentProvider =
     StateNotifierProvider<AmbassadorAssignmentNotifier, AsyncValue<bool>>(
-        (ref) {
+        (final ref) {
   final service = ref.read(ambassadorQuotaServiceProvider);
   return AmbassadorAssignmentNotifier(service);
 });
@@ -135,7 +135,7 @@ class QuotaDataNotifier
   }
 
   // Get specific country-language quota info
-  Map<String, dynamic>? getQuotaInfo(String countryCode, String languageCode) {
+  Map<String, dynamic>? getQuotaInfo(final String countryCode, final String languageCode) {
     final data = state.value;
     if (data == null) return null;
 
@@ -144,7 +144,7 @@ class QuotaDataNotifier
   }
 
   // Get all quotas for a specific country
-  Map<String, dynamic> getQuotasForCountry(String countryCode) {
+  Map<String, dynamic> getQuotasForCountry(final String countryCode) {
     final data = state.value;
     if (data == null) return {};
 
@@ -158,7 +158,7 @@ class QuotaDataNotifier
   }
 
   // Get all quotas for a specific language
-  Map<String, dynamic> getQuotasForLanguage(String languageCode) {
+  Map<String, dynamic> getQuotasForLanguage(final String languageCode) {
     final data = state.value;
     if (data == null) return {};
 
@@ -172,7 +172,7 @@ class QuotaDataNotifier
   }
 
   // Get top countries by utilization
-  List<Map<String, dynamic>> getTopCountriesByUtilization({int limit = 10}) {
+  List<Map<String, dynamic>> getTopCountriesByUtilization({final int limit = 10}) {
     final data = state.value;
     if (data == null) return [];
 
@@ -198,7 +198,7 @@ class QuotaDataNotifier
 
     // Calculate utilization percentage and sort
     final sortedCountries = countries.values.toList()
-      ..sort((a, b) {
+      ..sort((final a, final b) {
         final aUtilization =
             (a['totalCurrent'] / a['totalQuota'] * 100).roundToDouble();
         final bUtilization =
@@ -211,7 +211,7 @@ class QuotaDataNotifier
 
   // Get countries with most available slots
   List<Map<String, dynamic>> getCountriesWithMostAvailableSlots(
-      {int limit = 10}) {
+      {final int limit = 10}) {
     final data = state.value;
     if (data == null) return [];
 
@@ -232,7 +232,7 @@ class QuotaDataNotifier
     }
 
     final sortedCountries = countries.values.toList()
-      ..sort((a, b) => b['totalAvailable']
+      ..sort((final a, final b) => b['totalAvailable']
           .compareTo(a['totalAvailable'])); // Descending order
 
     return sortedCountries.take(limit).toList();
@@ -241,31 +241,31 @@ class QuotaDataNotifier
 
 final quotaDataProvider =
     StateNotifierProvider<QuotaDataNotifier, AsyncValue<Map<String, dynamic>>>(
-        (ref) {
+        (final ref) {
   final service = ref.read(ambassadorQuotaServiceProvider);
   return QuotaDataNotifier(service);
 });
 
 // Convenience providers for filtered data
 final topCountriesByUtilizationProvider =
-    Provider<AsyncValue<List<Map<String, dynamic>>>>((ref) {
+    Provider<AsyncValue<List<Map<String, dynamic>>>>((final ref) {
   final quotaDataAsync = ref.watch(quotaDataProvider);
   return quotaDataAsync.when(
-    data: (data) => AsyncValue.data(
+    data: (final data) => AsyncValue.data(
         ref.read(quotaDataProvider.notifier).getTopCountriesByUtilization()),
     loading: () => const AsyncValue.loading(),
-    error: (error, stackTrace) => AsyncValue.error(error, stackTrace),
+    error: (final error, final stackTrace) => AsyncValue.error(error, stackTrace),
   );
 });
 
 final countriesWithMostAvailableSlotsProvider =
-    Provider<AsyncValue<List<Map<String, dynamic>>>>((ref) {
+    Provider<AsyncValue<List<Map<String, dynamic>>>>((final ref) {
   final quotaDataAsync = ref.watch(quotaDataProvider);
   return quotaDataAsync.when(
-    data: (data) => AsyncValue.data(ref
+    data: (final data) => AsyncValue.data(ref
         .read(quotaDataProvider.notifier)
         .getCountriesWithMostAvailableSlots()),
     loading: () => const AsyncValue.loading(),
-    error: (error, stackTrace) => AsyncValue.error(error, stackTrace),
+    error: (final error, final stackTrace) => AsyncValue.error(error, stackTrace),
   );
 });

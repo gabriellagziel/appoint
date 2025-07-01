@@ -12,7 +12,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get refresh => 'Segarkan';
 
   @override
-  String get home => 'Beranda';
+  String get home => '[ID] Home';
 
   @override
   String get noSessionsYet => 'Belum ada sesi';
@@ -30,10 +30,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get scheduleMessage => 'Jadwalkan pesan';
 
   @override
-  String get decline => 'Tolak';
+  String get decline => '[ID] Decline';
 
   @override
-  String get adminBroadcast => 'Siarkan admin';
+  String get adminBroadcast => '[ID] Admin Broadcast';
 
   @override
   String get login => 'Masuk';
@@ -54,10 +54,12 @@ class AppLocalizationsId extends AppLocalizations {
   String get undo => 'Urungkan';
 
   @override
-  String get opened => 'Dibuka';
+  String opened(Object count) {
+    return 'Dibuka';
+  }
 
   @override
-  String get createVirtualSession => 'Buat sesi virtual';
+  String get createVirtualSession => '[ID] Create Virtual Session';
 
   @override
   String get messageSentSuccessfully => 'Pesan berhasil terkirim';
@@ -72,15 +74,16 @@ class AppLocalizationsId extends AppLocalizations {
   String get search => 'Cari';
 
   @override
-  String get cancelInviteConfirmation => 'Batalkan konfirmasi undangan';
+  String get cancelInviteConfirmation =>
+      '[ID] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return 'Dibuat';
+    return '[ID] Created';
   }
 
   @override
-  String get revokeAccess => 'Cabut akses';
+  String get revokeAccess => '[ID] Revoke Access';
 
   @override
   String get saveGroupForRecognition => 'Simpan grup untuk pengenalan';
@@ -89,28 +92,29 @@ class AppLocalizationsId extends AppLocalizations {
   String get playtimeLiveScheduled => 'Sesi langsung dijadwalkan';
 
   @override
-  String get revokeAccessConfirmation => 'Konfirmasi pencabutan akses';
+  String get revokeAccessConfirmation =>
+      '[ID] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Unduh';
 
   @override
-  String get password => 'Kata sandi';
+  String get password => '[ID] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Kesalahan memuat tautan keluarga';
+    return '[ID] Error loading family links';
   }
 
   @override
-  String get cancel => 'Batal';
+  String get cancel => '[ID] Cancel';
 
   @override
-  String get playtimeCreate => 'Buat Playtime';
+  String get playtimeCreate => '[ID] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Gagal memproses permintaan privasi';
+    return '[ID] Failed to action privacy request';
   }
 
   @override
@@ -132,7 +136,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get playtimeVirtualStarted => 'Sesi virtual dimulai';
 
   @override
-  String get createYourFirstGame => 'Buat game pertama Anda';
+  String get createYourFirstGame => '[ID] Create your first game';
 
   @override
   String get participants => 'Peserta';
@@ -164,13 +168,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get no => 'Tidak';
 
   @override
-  String get playtimeHub => 'Pusat Playtime';
+  String get playtimeHub => '[ID] Playtime Hub';
 
   @override
   String get error => 'Kesalahan';
 
   @override
-  String get createLiveSession => 'Buat sesi langsung';
+  String get createLiveSession => '[ID] Create Live Session';
 
   @override
   String get enableNotifications => 'Aktifkan notifikasi';
@@ -182,17 +186,17 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String content(Object content) {
-    return 'Konten';
+    return '[ID] Content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Rapat berhasil dibagikan';
+  String get meetingSharedSuccessfully => '[ID] Meeting shared successfully';
 
   @override
-  String get welcomeToPlaytime => 'Selamat datang di Playtime';
+  String get welcomeToPlaytime => '[ID] Welcome to Playtime';
 
   @override
-  String get viewAll => 'Lihat semua';
+  String get viewAll => '[ID] View All';
 
   @override
   String get playtimeVirtual => 'Playtime virtual';
@@ -201,16 +205,17 @@ class AppLocalizationsId extends AppLocalizations {
   String get staffScreenTBD => 'Layar staf akan ditentukan';
 
   @override
-  String get cut => 'Potong';
+  String get cut => '[ID] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => 'Undangan berhasil dibatalkan';
+  String get inviteCancelledSuccessfully =>
+      '[ID] Invite cancelled successfully';
 
   @override
   String get retry => 'Coba lagi';
 
   @override
-  String get composeBroadcastMessage => 'Buat pesan siaran';
+  String get composeBroadcastMessage => '[ID] Compose Broadcast Message';
 
   @override
   String get sendNow => 'Kirim sekarang';
@@ -228,14 +233,14 @@ class AppLocalizationsId extends AppLocalizations {
   String get choose => 'Pilih';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[ID] Profile';
 
   @override
   String get removeChild => 'Hapus anak';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return '[ID] Status';
   }
 
   @override
@@ -245,10 +250,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get paste => 'Tempel';
 
   @override
-  String get welcome => 'Selamat datang';
+  String get welcome => '[ID] Welcome';
 
   @override
-  String get playtimeCreateSession => 'Buat sesi';
+  String get playtimeCreateSession => '[ID] Create a Playtime Session';
 
   @override
   String get familyMembers => 'Anggota keluarga';
@@ -257,21 +262,19 @@ class AppLocalizationsId extends AppLocalizations {
   String get upload => 'Unggah';
 
   @override
-  String get upcomingSessions => 'Sesi mendatang';
+  String get upcomingSessions => '[ID] Upcoming Sessions';
 
   @override
   String get enterGroupName => 'Masukkan nama grup';
 
   @override
-  String get confirm => 'Konfirmasi';
+  String get confirm => '[ID] Confirm';
 
   @override
   String get playtimeLive => 'Playtime langsung';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Kesalahan memuat undangan';
-  }
+  String get errorLoadingInvites => '[ID] Error loading invites';
 
   @override
   String get targetingFilters => 'Filter penargetan';
@@ -286,41 +289,43 @@ class AppLocalizationsId extends AppLocalizations {
   String get scheduleForLater => 'Jadwalkan nanti';
 
   @override
-  String get accessRevokedSuccessfully => 'Akses berhasil dicabut';
+  String get accessRevokedSuccessfully => '[ID] Access revoked successfully';
 
   @override
-  String get type => 'Jenis';
+  String type(Object type) {
+    return 'Jenis';
+  }
 
   @override
-  String get checkingPermissions => 'Memeriksa izin';
+  String get checkingPermissions => '[ID] Checking permissions...';
 
   @override
-  String get copy => 'Salin';
+  String get copy => '[ID] Copy';
 
   @override
-  String get yesCancel => 'Ya, batal';
+  String get yesCancel => '[ID] Yes, Cancel';
 
   @override
   String get email => 'Email';
 
   @override
-  String get shareOnWhatsApp => 'Bagikan di WhatsApp';
+  String get shareOnWhatsApp => '[ID] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Pengaturan notifikasi';
+  String get notificationSettings => '[ID] Notification Settings';
 
   @override
-  String get myProfile => 'Profil saya';
+  String get myProfile => '[ID] My Profile';
 
   @override
-  String get revoke => 'Cabut';
+  String get revoke => '[ID] Revoke';
 
   @override
   String get noBroadcastMessages => 'Tidak ada pesan siaran';
 
   @override
   String requestType(Object type) {
-    return 'Jenis permintaan';
+    return '[ID] Request Type';
   }
 
   @override
@@ -330,21 +335,19 @@ class AppLocalizationsId extends AppLocalizations {
   String get details => 'Detail';
 
   @override
-  String get cancelInvite => 'Batal undangan';
+  String get cancelInvite => '[ID] Cancel Invite';
 
   @override
-  String get createNew => 'Buat baru';
+  String get createNew => '[ID] Create New';
 
   @override
-  String get settings => 'Pengaturan';
+  String get settings => '[ID] Settings';
 
   @override
-  String get playtimeReject => 'Tolak Playtime';
+  String get playtimeReject => '[ID] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Kesalahan memuat profil';
-  }
+  String get errorLoadingProfile => '[ID] Error loading profile';
 
   @override
   String get edit => 'Edit';
@@ -356,16 +359,16 @@ class AppLocalizationsId extends AppLocalizations {
   String get playtimeGameApproved => 'Game disetujui';
 
   @override
-  String get forgotPassword => 'Lupa kata sandi?';
+  String get forgotPassword => '[ID] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Dasbor keluarga';
+  String get familyDashboard => '[ID] Family Dashboard';
 
   @override
-  String get loading => 'Memuat';
+  String get loading => '[ID] Loading...';
 
   @override
-  String get quickActions => 'Aksi cepat';
+  String get quickActions => '[ID] Quick Actions';
 
   @override
   String get playtimeTitle => 'Judul Playtime';
@@ -375,7 +378,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Kesalahan memeriksa izin';
+    return '[ID] Error checking permissions';
   }
 
   @override
@@ -383,7 +386,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'Token FCM';
+    return '[ID] FCM Token';
   }
 
   @override
@@ -393,13 +396,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get previous => 'Sebelumnya';
 
   @override
-  String get noProfileFound => 'Tidak ada profil ditemukan';
+  String get noProfileFound => '[ID] No profile found';
 
   @override
   String get noFamilyMembersYet => 'Belum ada anggota keluarga';
 
   @override
-  String get mediaOptional => 'Media (opsional)';
+  String get mediaOptional => '[ID] Media (Optional)';
 
   @override
   String get messageSavedSuccessfully => 'Pesan berhasil disimpan';
@@ -408,13 +411,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get scheduledFor => 'Dijadwalkan untuk';
 
   @override
-  String get dashboard => 'Dasbor';
+  String get dashboard => '[ID] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => 'Tidak ada izin untuk siaran';
+  String get noPermissionForBroadcast => '[ID] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Judul panel admin Playtime';
+  String get playtimeAdminPanelTitle => '[ID] Playtime Games – Admin';
 
   @override
   String get inviteDetail => 'Detail undangan';
@@ -444,14 +447,14 @@ class AppLocalizationsId extends AppLocalizations {
   String get playtimeApprove => 'Setujui Playtime';
 
   @override
-  String get createYourFirstSession => 'Buat sesi pertama Anda';
+  String get createYourFirstSession => '[ID] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'Game ditolak';
+  String get playtimeGameRejected => '[ID] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Gagal mencabut akses';
+    return '[ID] Failed to revoke access';
   }
 
   @override
@@ -462,7 +465,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Gagal membatalkan undangan';
+    return '[ID] Failed to cancel invite';
   }
 
   @override
@@ -471,11 +474,11 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
-  String get confirmPassword => 'Konfirmasi kata sandi';
+  String get confirmPassword => '[ID] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Kesalahan memuat permintaan privasi';
+    return '[ID] Error loading privacy requests';
   }
 
   @override
@@ -489,25 +492,25 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Silakan login untuk fitur keluarga';
+      '[ID] Please login to access family features';
 
   @override
   String get myInvites => 'Undangan saya';
 
   @override
-  String get createGame => 'Buat game';
+  String get createGame => '[ID] Create Game';
 
   @override
-  String get groupNameOptional => 'Nama grup (opsional)';
+  String get groupNameOptional => '[ID] Group Name (Optional)';
 
   @override
   String get playtimeNoSessions => 'Tidak ada sesi Playtime';
 
   @override
-  String get adminScreenTBD => 'Layar admin akan ditentukan';
+  String get adminScreenTBD => '[ID] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Judul dasbor orang tua Playtime';
+  String get playtimeParentDashboardTitle => '[ID] Playtime Dashboard';
 
   @override
   String get close => 'Tutup';
@@ -522,10 +525,10 @@ class AppLocalizationsId extends AppLocalizations {
   String get playtimeChooseGame => 'Pilih game';
 
   @override
-  String get managePermissions => 'Kelola izin';
+  String get managePermissions => '[ID] Manage Permissions';
 
   @override
-  String get pollOptions => 'Opsi polling';
+  String get pollOptions => '[ID] Poll Options';
 
   @override
   String clicked(Object count) {
@@ -545,9 +548,28 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[ID] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Silakan login untuk melihat profil';
+  String get pleaseLoginToViewProfile =>
+      '[ID] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

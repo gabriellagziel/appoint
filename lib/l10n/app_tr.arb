@@ -1,663 +1,663 @@
 {
-  "refresh": "Yenile",
-  "@refresh": {
-    "description": "Refresh button text"
-  },
-  "home": "Ana Sayfa",
-  "@home": {
-    "description": "Home navigation label"
-  },
-  "noSessionsYet": "Henüz oturum yok",
-  "@noSessionsYet": {
-    "description": "No sessions yet message"
-  },
-  "ok": "Tamam",
-  "@ok": {
-    "description": "OK button text"
-  },
-  "playtimeLandingChooseMode": "[TR] Choose your play mode:",
-  "@playtimeLandingChooseMode": {
-    "description": "Playtime landing choose mode message"
-  },
-  "signUp": "Kayıt Ol",
-  "@signUp": {
-    "description": "Sign up button text"
-  },
-  "scheduleMessage": "Mesaj planla",
-  "@scheduleMessage": {
-    "description": "Schedule message button"
-  },
-  "decline": "Reddet",
-  "@decline": {
-    "description": "Decline button"
-  },
-  "adminBroadcast": "Yönetici yayın",
-  "@adminBroadcast": {
-    "description": "Admin broadcast title"
-  },
-  "login": "Giriş Yap",
-  "@login": {
-    "description": "Login button text"
-  },
-  "playtimeChooseFriends": "[TR] Choose friends to invite",
-  "@playtimeChooseFriends": {
-    "description": "Choose friends label"
-  },
-  "noInvites": "Davet yok",
-  "@noInvites": {
-    "description": "No invites message"
-  },
-  "playtimeChooseTime": "[TR] Choose a time",
-  "@playtimeChooseTime": {
-    "description": "Choose time label"
-  },
-  "success": "Başarılı",
-  "@success": {
-    "description": "Success message"
-  },
-  "undo": "Geri Al",
-  "@undo": {
-    "description": "Undo button text"
-  },
-  "opened": "Açıldı",
-  "@opened": {
-    "description": "Opened status"
-  },
-  "createVirtualSession": "Sanal oturum oluştur",
-  "@createVirtualSession": {
-    "description": "Create virtual session button"
-  },
-  "messageSentSuccessfully": "Mesaj başarıyla gönderildi",
-  "@messageSentSuccessfully": {
-    "description": "Message sent successfully message"
-  },
-  "redo": "[TR] Redo",
-  "@redo": {
-    "description": "Redo button text"
-  },
-  "next": "[TR] Next",
-  "@next": {
-    "description": "Next button text"
-  },
-  "search": "Ara",
-  "@search": {
-    "description": "Search placeholder text"
-  },
-  "cancelInviteConfirmation": "[TR] Are you sure you want to cancel this invite?",
-  "@cancelInviteConfirmation": {
-    "description": "Cancel invite confirmation message"
-  },
-  "created": "Oluşturuldu",
-  "@created": {
-    "description": "Created status"
-  },
-  "revokeAccess": "Erişimi geri al",
-  "@revokeAccess": {
-    "description": "Revoke access button"
-  },
-  "saveGroupForRecognition": "[TR] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Save group for recognition label"
-  },
-  "playtimeLiveScheduled": "[TR] Live playtime scheduled!",
-  "@playtimeLiveScheduled": {
-    "description": "Live playtime scheduled message"
-  },
-  "revokeAccessConfirmation": "[TR] Are you sure you want to revoke access?",
-  "@revokeAccessConfirmation": {
-    "description": "Revoke access confirmation message"
-  },
-  "download": "İndir",
-  "@download": {
-    "description": "Download button text"
-  },
-  "password": "Şifre",
-  "@password": {
-    "description": "Password field label"
-  },
-  "errorLoadingFamilyLinks": "[TR] Error loading family links",
-  "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message"
-  },
-  "cancel": "İptal",
-  "@cancel": {
-    "description": "Cancel button text"
-  },
-  "playtimeCreate": "Playtime oluştur",
-  "@playtimeCreate": {
-    "description": "Create button"
-  },
-  "failedToActionPrivacyRequest": "Gizlilik isteği gerçekleştirilemedi",
-  "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message"
-  },
-  "appTitle": "Uygulama Başlığı",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
-  "accept": "Kabul Et",
-  "@accept": {
-    "description": "Accept button"
-  },
-  "playtimeModeVirtual": "Sanal mod",
-  "@playtimeModeVirtual": {
-    "description": "Virtual play mode label"
-  },
-  "playtimeDescription": "Playtime açıklaması",
-  "@playtimeDescription": {
-    "description": "Playtime description"
-  },
-  "delete": "Sil",
-  "@delete": {
-    "description": "Delete button text"
-  },
-  "playtimeVirtualStarted": "Sanal oturum başladı",
-  "@playtimeVirtualStarted": {
-    "description": "Virtual playtime started message"
-  },
-  "createYourFirstGame": "İlk oyununuzu oluşturun",
-  "@createYourFirstGame": {
-    "description": "Create your first game message"
-  },
-  "participants": "[TR] Participants",
-  "@participants": {
-    "description": "Participants label"
-  },
-  "recipients": "Alıcılar",
-  "@recipients": {
-    "description": "Recipients label"
-  },
-  "noResults": "[TR] No results found",
-  "@noResults": {
-    "description": "No search results message"
-  },
-  "yes": "Evet",
-  "@yes": {
-    "description": "Yes button text"
-  },
-  "invite": "Davet Et",
-  "@invite": {
-    "description": "Invite button"
-  },
-  "playtimeModeLive": "Canlı mod",
-  "@playtimeModeLive": {
-    "description": "Live play mode label"
-  },
-  "done": "[TR] Done",
-  "@done": {
-    "description": "Done button text"
-  },
-  "defaultShareMessage": "Varsayılan paylaşım mesajı",
-  "@defaultShareMessage": {
-    "description": "Default share message"
-  },
-  "no": "Hayır",
-  "@no": {
-    "description": "No button text"
-  },
-  "playtimeHub": "Playtime Merkezi",
-  "@playtimeHub": {
-    "description": "Playtime hub title"
-  },
-  "error": "[TR] Error",
-  "@error": {
-    "description": "Error message"
-  },
-  "createLiveSession": "Canlı oturum oluştur",
-  "@createLiveSession": {
-    "description": "Create live session button"
-  },
-  "enableNotifications": "[TR] Enable Notifications",
-  "@enableNotifications": {
-    "description": "Enable notifications button"
-  },
-  "invited": "Davet edildi",
-  "@invited": {
-    "description": "Invited status"
-  },
-  "content": "İçerik",
-  "@content": {
-    "description": "Content label"
-  },
-  "meetingSharedSuccessfully": "[TR] Meeting shared successfully",
-  "@meetingSharedSuccessfully": {
-    "description": "Meeting shared successfully message"
-  },
-  "welcomeToPlaytime": "[TR] Welcome to Playtime",
-  "@welcomeToPlaytime": {
-    "description": "Welcome to playtime message"
-  },
-  "viewAll": "[TR] View All",
-  "@viewAll": {
-    "description": "View all button"
-  },
-  "playtimeVirtual": "Sanal Playtime",
-  "@playtimeVirtual": {
-    "description": "Virtual playtime label"
-  },
-  "staffScreenTBD": "[TR] Staff screen coming soon",
-  "@staffScreenTBD": {
-    "description": "Staff screen coming soon"
-  },
-  "cut": "Kes",
-  "@cut": {
-    "description": "Cut button text"
-  },
-  "inviteCancelledSuccessfully": "Davet başarıyla iptal edildi",
-  "@inviteCancelledSuccessfully": {
-    "description": "Invite cancelled successfully message"
-  },
-  "retry": "Tekrar dene",
-  "@retry": {
-    "description": "Retry button text"
-  },
-  "composeBroadcastMessage": "Yayın mesajı oluştur",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message button"
-  },
-  "sendNow": "Şimdi Gönder",
-  "@sendNow": {
-    "description": "Send now button"
-  },
-  "noGamesYet": "Henüz oyun yok",
-  "@noGamesYet": {
-    "description": "No games yet message"
-  },
-  "select": "Seç",
-  "@select": {
-    "description": "Select button text"
-  },
-  "about": "Hakkında",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Seç",
-  "@choose": {
-    "description": "Choose button text"
+  "@accept": {
+    "description": "Accept button"
   },
-  "profile": "[TR] Profile",
-  "@profile": {
-    "description": "Profile navigation label"
-  },
-  "removeChild": "Çocuğu kaldır",
-  "@removeChild": {
-    "description": "Remove child button"
-  },
-  "status": "Durum",
-  "@status": {
-    "description": "Status label"
-  },
-  "logout": "Çıkış Yap",
-  "@logout": {
-    "description": "Logout button text"
-  },
-  "paste": "Yapıştır",
-  "@paste": {
-    "description": "Paste button text"
-  },
-  "welcome": "[TR] Welcome",
-  "@welcome": {
-    "description": "Welcome message"
-  },
-  "playtimeCreateSession": "Oturum oluştur",
-  "@playtimeCreateSession": {
-    "description": "Create playtime session button"
-  },
-  "familyMembers": "Aile üyeleri",
-  "@familyMembers": {
-    "description": "Family members label"
-  },
-  "upload": "Yükle",
-  "@upload": {
-    "description": "Upload button text"
-  },
-  "upcomingSessions": "Gelecek oturumlar",
-  "@upcomingSessions": {
-    "description": "Upcoming sessions label"
-  },
-  "enterGroupName": "[TR] Enter group name",
-  "@enterGroupName": {
-    "description": "Enter group name label"
-  },
-  "confirm": "[TR] Confirm",
-  "@confirm": {
-    "description": "Confirm button text"
-  },
-  "playtimeLive": "Canlı Playtime",
-  "@playtimeLive": {
-    "description": "Live playtime label"
-  },
-  "errorLoadingInvites": "[TR] Error loading invites",
-  "@errorLoadingInvites": {
-    "description": "Error loading invites message"
-  },
-  "targetingFilters": "Hedefleme filtreleri",
-  "@targetingFilters": {
-    "description": "Targeting filters label"
-  },
-  "pickVideo": "Video seç",
-  "@pickVideo": {
-    "description": "Pick video button"
-  },
-  "playtimeGameDeleted": "[TR] Game deleted",
-  "@playtimeGameDeleted": {
-    "description": "Playtime game deleted message"
-  },
-  "scheduleForLater": "[TR] Schedule for Later",
-  "@scheduleForLater": {
-    "description": "Schedule for later button"
-  },
-  "accessRevokedSuccessfully": "Erişim başarıyla iptal edildi",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "Tür",
-  "@type": {
-    "description": "Type label"
-  },
-  "checkingPermissions": "[TR] Checking permissions...",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "copy": "Kopyala",
-  "@copy": {
-    "description": "Copy button text"
-  },
-  "yesCancel": "Evet, iptal et",
-  "@yesCancel": {
-    "description": "Yes cancel button"
-  },
-  "email": "E-posta",
-  "@email": {
-    "description": "Email field label"
-  },
-  "shareOnWhatsApp": "[TR] Share on WhatsApp",
-  "@shareOnWhatsApp": {
-    "description": "Share on WhatsApp button"
-  },
-  "notificationSettings": "Bildirim ayarları",
-  "@notificationSettings": {
-    "description": "Notification settings label"
-  },
-  "myProfile": "[TR] My Profile",
-  "@myProfile": {
-    "description": "My profile label"
-  },
-  "revoke": "Geri al",
-  "@revoke": {
-    "description": "Revoke button text"
-  },
-  "noBroadcastMessages": "Yayın mesajı yok",
-  "@noBroadcastMessages": {
-    "description": "No broadcast messages message"
-  },
-  "requestType": "İstek türü",
-  "@requestType": {
-    "description": "Request type label"
-  },
-  "notifications": "Bildirimler",
-  "@notifications": {
-    "description": "Notifications label"
-  },
-  "details": "Detaylar",
-  "@details": {
-    "description": "Details label"
-  },
-  "cancelInvite": "Daveti iptal et",
-  "@cancelInvite": {
-    "description": "Cancel invite button"
-  },
-  "createNew": "Yeni oluştur",
-  "@createNew": {
-    "description": "Create new button"
-  },
-  "settings": "Ayarlar",
-  "@settings": {
-    "description": "Settings navigation label"
-  },
-  "playtimeReject": "Playtime reddet",
-  "@playtimeReject": {
-    "description": "Playtime reject button"
-  },
-  "errorLoadingProfile": "[TR] Error loading profile",
-  "@errorLoadingProfile": {
-    "description": "Error loading profile message"
-  },
-  "edit": "Düzenle",
-  "@edit": {
-    "description": "Edit button text"
-  },
-  "add": "Ekle",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "[TR] Game approved",
-  "@playtimeGameApproved": {
-    "description": "Playtime game approved message"
+  "@adminBroadcast": {
+    "description": "Admin broadcast title"
   },
-  "forgotPassword": "Şifrenizi unuttunuz mu?",
-  "@forgotPassword": {
-    "description": "Forgot password link"
-  },
-  "familyDashboard": "Aile panosu",
-  "@familyDashboard": {
-    "description": "Family dashboard label"
-  },
-  "loading": "[TR] Loading...",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "quickActions": "Hızlı işlemler",
-  "@quickActions": {
-    "description": "Quick actions label"
-  },
-  "playtimeTitle": "Playtime başlığı",
-  "@playtimeTitle": {
-    "description": "Playtime title"
-  },
-  "otpResentSuccessfully": "OTP başarıyla yeniden gönderildi",
-  "@otpResentSuccessfully": {
-    "description": "OTP resent successfully message"
-  },
-  "errorCheckingPermissions": "[TR] Error checking permissions",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message"
-  },
-  "clientScreenTBD": "[TR] Client screen coming soon",
-  "@clientScreenTBD": {
-    "description": "Client screen coming soon"
-  },
-  "fcmToken": "FCM belirteci",
-  "@fcmToken": {
-    "description": "FCM token label"
-  },
-  "pickImage": "Resim seç",
-  "@pickImage": {
-    "description": "Pick image button"
-  },
-  "previous": "Önceki",
-  "@previous": {
-    "description": "Previous button text"
-  },
-  "noProfileFound": "[TR] No profile found",
-  "@noProfileFound": {
-    "description": "No profile found message"
-  },
-  "noFamilyMembersYet": "Henüz aile üyesi yok",
-  "@noFamilyMembersYet": {
-    "description": "No family members yet message"
-  },
-  "mediaOptional": "Medya (isteğe bağlı)",
-  "@mediaOptional": {
-    "description": "Media optional label"
-  },
-  "messageSavedSuccessfully": "Mesaj başarıyla kaydedildi",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully message"
-  },
-  "scheduledFor": "[TR] Scheduled for",
-  "@scheduledFor": {
-    "description": "Scheduled for label"
-  },
-  "dashboard": "Pano",
-  "@dashboard": {
-    "description": "Dashboard label"
-  },
-  "noPermissionForBroadcast": "Yayın izni yok",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "playtimeAdminPanelTitle": "Playtime yönetici paneli başlığı",
-  "@playtimeAdminPanelTitle": {
-    "description": "Playtime admin panel title"
-  },
-  "inviteDetail": "Davet detayları",
-  "@inviteDetail": {
-    "description": "Invite detail label"
-  },
-  "scheduled": "[TR] Scheduled",
-  "@scheduled": {
-    "description": "Scheduled status"
-  },
-  "failedToCancelInvite": "Davet iptali yapılamadı",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
-  },
-  "failedToResendOtp": "OTP yeniden gönderilemedi",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
-  },
-  "scheduling": "[TR] Scheduling",
-  "@scheduling": {
-    "description": "Scheduling status"
-  },
-  "errorSavingMessage": "[TR] Error saving message",
-  "@errorSavingMessage": {
-    "description": "Error saving message"
-  },
-  "save": "Kaydet",
-  "@save": {
-    "description": "Save button text"
-  },
-  "playtimeApprove": "[TR] Approve",
-  "@playtimeApprove": {
-    "description": "Playtime approve button"
-  },
-  "createYourFirstSession": "İlk oturumunuzu oluşturun",
-  "@createYourFirstSession": {
-    "description": "Create your first session message"
-  },
-  "playtimeGameRejected": "Oyun reddedildi",
-  "@playtimeGameRejected": {
-    "description": "Playtime game rejected message"
-  },
-  "recentGames": "[TR] Recent Games",
-  "@recentGames": {
-    "description": "Recent games label"
-  },
-  "customizeMessage": "Mesajı özelleştir",
-  "@customizeMessage": {
-    "description": "Customize message button"
-  },
-  "errorSendingMessage": "[TR] Error sending message",
-  "@errorSendingMessage": {
-    "description": "Error sending message"
-  },
-  "confirmPassword": "[TR] Confirm Password",
-  "@confirmPassword": {
-    "description": "Confirm password field label"
-  },
-  "errorLoadingPrivacyRequests": "[TR] Error loading privacy requests",
-  "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message"
-  },
-  "connectedChildren": "Bağlı çocuklar",
-  "@connectedChildren": {
-    "description": "Connected children label"
-  },
-  "share": "Paylaş",
-  "@share": {
-    "description": "Share button text"
-  },
-  "playtimeEnterGameName": "[TR] Enter game name",
-  "@playtimeEnterGameName": {
-    "description": "Enter game name label"
-  },
-  "pleaseLoginToViewProfile": "[TR] Please log in to view your profile.",
-  "adminScreenTBD": "[TR] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "back": "[TR] Back",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
   "@back": {
     "description": "Back button text"
   },
-  "clicked": "[TR] Clicked",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "@cancelInvite": {
+    "description": "Cancel invite button"
+  },
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "@choose": {
+    "description": "Choose button text"
+  },
   "@clicked": {
     "description": "Clicked status"
   },
-  "close": "[TR] Close",
+  "@clientScreenTBD": {
+    "description": "Client screen coming soon"
+  },
   "@close": {
     "description": "Close button text"
   },
-  "createGame": "[TR] Create Game",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message button"
+  },
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "@content": {
+    "description": "Content label"
+  },
+  "@copy": {
+    "description": "Copy button text"
+  },
   "@createGame": {
     "description": "Create game button"
   },
-  "failedToRevokeAccess": "[TR] Failed to revoke access",
+  "@createLiveSession": {
+    "description": "Create live session button"
+  },
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
+  },
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "@created": {
+    "description": "Created status"
+  },
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "@decline": {
+    "description": "Decline button"
+  },
+  "@defaultShareMessage": {
+    "description": "Default share message"
+  },
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "@details": {
+    "description": "Details label"
+  },
+  "@done": {
+    "description": "Done button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "@email": {
+    "description": "Email field label"
+  },
+  "@enableNotifications": {
+    "description": "Enable notifications button"
+  },
+  "@enterGroupName": {
+    "description": "Enter group name label"
+  },
+  "@error": {
+    "description": "Error message"
+  },
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message"
+  },
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message"
+  },
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "@errorSavingMessage": {
+    "description": "Error saving message"
+  },
+  "@errorSendingMessage": {
+    "description": "Error sending message"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message"
+  },
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "groupNameOptional": "[TR] Group Name (Optional)",
+  "@familyDashboard": {
+    "description": "Family dashboard label"
+  },
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "@fcmToken": {
+    "description": "FCM token label"
+  },
+  "@forgotPassword": {
+    "description": "Forgot password link"
+  },
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "knownGroupDetected": "[TR] Known group detected",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "@invite": {
+    "description": "Invite button"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "@inviteDetail": {
+    "description": "Invite detail label"
+  },
+  "@invited": {
+    "description": "Invited status"
+  },
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "link": "[TR] Link",
   "@link": {
     "description": "Link label"
   },
-  "managePermissions": "[TR] Manage Permissions",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@login": {
+    "description": "Login button text"
+  },
+  "@logout": {
+    "description": "Logout button text"
+  },
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "meetingReadyMessage": "[TR] Your meeting is ready! Join now",
+  "@mediaOptional": {
+    "description": "Media optional label"
+  },
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "myInvites": "[TR] My Invites",
+  "@meetingSharedSuccessfully": {
+    "description": "Meeting shared successfully message"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
   "@myInvites": {
     "description": "My invites title"
   },
-  "pendingInvites": "[TR] Pending Invites",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "@next": {
+    "description": "Next button text"
+  },
+  "@no": {
+    "description": "No button text"
+  },
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
+  },
+  "@notificationSettings": {
+    "description": "Notification settings label"
+  },
+  "@notifications": {
+    "description": "Notifications label"
+  },
+  "@ok": {
+    "description": "OK button text"
+  },
+  "@opened": {
+    "description": "Opened status"
+  },
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "@participants": {
+    "description": "Participants label"
+  },
+  "@password": {
+    "description": "Password field label"
+  },
+  "@paste": {
+    "description": "Paste button text"
+  },
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "playtimeChooseGame": "[TR] Choose a game",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
+  },
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "playtimeNoSessions": "[TR] No playtime sessions found.",
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "@playtimeCreate": {
+    "description": "Create button"
+  },
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "@playtimeGameApproved": {
+    "description": "Playtime game approved message"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Playtime game deleted message"
+  },
+  "@playtimeGameRejected": {
+    "description": "Playtime game rejected message"
+  },
+  "@playtimeHub": {
+    "description": "Playtime hub title"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "@playtimeLive": {
+    "description": "Live playtime label"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
+  },
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "playtimeParentDashboardTitle": "[TR] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "pleaseLoginForFamilyFeatures": "[TR] Please login to access family features",
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "@playtimeVirtual": {
+    "description": "Virtual playtime label"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "pollOptions": "[TR] Poll Options",
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "statusColon": "[TR] Status:",
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "@recipients": {
+    "description": "Recipients label"
+  },
+  "@redo": {
+    "description": "Redo button text"
+  },
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  "@removeChild": {
+    "description": "Remove child button"
+  },
+  "@requestType": {
+    "description": "Request type label"
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@revoke": {
+    "description": "Revoke button text"
+  },
+  "@revokeAccess": {
+    "description": "Revoke access button"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "@save": {
+    "description": "Save button text"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
+  },
+  "@scheduleForLater": {
+    "description": "Schedule for later button"
+  },
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "@scheduling": {
+    "description": "Scheduling status"
+  },
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "@select": {
+    "description": "Select button text"
+  },
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "@share": {
+    "description": "Share button text"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "@staffScreenTBD": {
+    "description": "Staff screen coming soon"
+  },
+  "@status": {
+    "description": "Status label"
+  },
   "@statusColon": {
     "description": "Status colon label"
-  }
+  },
+  "@success": {
+    "description": "Success message"
+  },
+  "@targetingFilters": {
+    "description": "Targeting filters label"
+  },
+  "@type": {
+    "description": "Type label"
+  },
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "@yes": {
+    "description": "Yes button text"
+  },
+  "@yesCancel": {
+    "description": "Yes cancel button"
+  },
+  "about": "Hakkında",
+  "accept": "Kabul Et",
+  "accessRevokedSuccessfully": "Erişim başarıyla iptal edildi",
+  "add": "Ekle",
+  "adminBroadcast": "Yönetici yayın",
+  "adminScreenTBD": "[TR] Admin screen coming soon",
+  "appTitle": "Uygulama Başlığı",
+  "back": "[TR] Back",
+  "cancel": "İptal",
+  "cancelInvite": "Daveti iptal et",
+  "cancelInviteConfirmation": "[TR] Are you sure you want to cancel this invite?",
+  "checkingPermissions": "[TR] Checking permissions...",
+  "choose": "Seç",
+  "clicked": "[TR] Clicked",
+  "clientScreenTBD": "[TR] Client screen coming soon",
+  "close": "[TR] Close",
+  "composeBroadcastMessage": "Yayın mesajı oluştur",
+  "confirm": "[TR] Confirm",
+  "confirmPassword": "[TR] Confirm Password",
+  "connectedChildren": "Bağlı çocuklar",
+  "content": "İçerik",
+  "copy": "Kopyala",
+  "createGame": "[TR] Create Game",
+  "createLiveSession": "Canlı oturum oluştur",
+  "createNew": "Yeni oluştur",
+  "createVirtualSession": "Sanal oturum oluştur",
+  "createYourFirstGame": "İlk oyununuzu oluşturun",
+  "createYourFirstSession": "İlk oturumunuzu oluşturun",
+  "created": "Oluşturuldu",
+  "customizeMessage": "Mesajı özelleştir",
+  "cut": "Kes",
+  "dashboard": "Pano",
+  "decline": "Reddet",
+  "defaultShareMessage": "Varsayılan paylaşım mesajı",
+  "delete": "Sil",
+  "details": "Detaylar",
+  "done": "[TR] Done",
+  "download": "İndir",
+  "edit": "Düzenle",
+  "email": "E-posta",
+  "enableNotifications": "[TR] Enable Notifications",
+  "enterGroupName": "[TR] Enter group name",
+  "error": "[TR] Error",
+  "errorCheckingPermissions": "[TR] Error checking permissions",
+  "errorLoadingFamilyLinks": "[TR] Error loading family links",
+  "errorLoadingInvites": "[TR] Error loading invites",
+  "errorLoadingPrivacyRequests": "[TR] Error loading privacy requests",
+  "errorLoadingProfile": "[TR] Error loading profile",
+  "errorSavingMessage": "[TR] Error saving message",
+  "errorSendingMessage": "[TR] Error sending message",
+  "failedToActionPrivacyRequest": "Gizlilik isteği gerçekleştirilemedi",
+  "failedToCancelInvite": "Davet iptali yapılamadı",
+  "failedToResendOtp": "OTP yeniden gönderilemedi",
+  "failedToRevokeAccess": "[TR] Failed to revoke access",
+  "familyDashboard": "Aile panosu",
+  "familyMembers": "Aile üyeleri",
+  "fcmToken": "FCM belirteci",
+  "forgotPassword": "Şifrenizi unuttunuz mu?",
+  "groupNameOptional": "[TR] Group Name (Optional)",
+  "home": "Ana Sayfa",
+  "invite": "Davet Et",
+  "inviteCancelledSuccessfully": "Davet başarıyla iptal edildi",
+  "inviteDetail": "Davet detayları",
+  "invited": "Davet edildi",
+  "knownGroupDetected": "[TR] Known group detected",
+  "link": "[TR] Link",
+  "loading": "[TR] Loading...",
+  "login": "Giriş Yap",
+  "logout": "Çıkış Yap",
+  "managePermissions": "[TR] Manage Permissions",
+  "mediaOptional": "Medya (isteğe bağlı)",
+  "meetingReadyMessage": "[TR] Your meeting is ready! Join now",
+  "meetingSharedSuccessfully": "[TR] Meeting shared successfully",
+  "messageSavedSuccessfully": "Mesaj başarıyla kaydedildi",
+  "messageSentSuccessfully": "Mesaj başarıyla gönderildi",
+  "myInvites": "[TR] My Invites",
+  "myProfile": "[TR] My Profile",
+  "next": "[TR] Next",
+  "no": "Hayır",
+  "noBroadcastMessages": "Yayın mesajı yok",
+  "noFamilyMembersYet": "Henüz aile üyesi yok",
+  "noGamesYet": "Henüz oyun yok",
+  "noInvites": "Davet yok",
+  "noPermissionForBroadcast": "Yayın izni yok",
+  "noProfileFound": "[TR] No profile found",
+  "noResults": "[TR] No results found",
+  "noSessionsYet": "Henüz oturum yok",
+  "notificationSettings": "Bildirim ayarları",
+  "notifications": "Bildirimler",
+  "ok": "Tamam",
+  "opened": "Açıldı",
+  "otpResentSuccessfully": "OTP başarıyla yeniden gönderildi",
+  "participants": "[TR] Participants",
+  "password": "Şifre",
+  "paste": "Yapıştır",
+  "pendingInvites": "[TR] Pending Invites",
+  "pickImage": "Resim seç",
+  "pickVideo": "Video seç",
+  "playtimeAdminPanelTitle": "Playtime yönetici paneli başlığı",
+  "playtimeApprove": "[TR] Approve",
+  "playtimeChooseFriends": "[TR] Choose friends to invite",
+  "playtimeChooseGame": "[TR] Choose a game",
+  "playtimeChooseTime": "[TR] Choose a time",
+  "playtimeCreate": "Playtime oluştur",
+  "playtimeCreateSession": "Oturum oluştur",
+  "playtimeDescription": "Playtime açıklaması",
+  "playtimeEnterGameName": "[TR] Enter game name",
+  "playtimeGameApproved": "[TR] Game approved",
+  "playtimeGameDeleted": "[TR] Game deleted",
+  "playtimeGameRejected": "Oyun reddedildi",
+  "playtimeHub": "Playtime Merkezi",
+  "playtimeLandingChooseMode": "[TR] Choose your play mode:",
+  "playtimeLive": "Canlı Playtime",
+  "playtimeLiveScheduled": "[TR] Live playtime scheduled!",
+  "playtimeModeLive": "Canlı mod",
+  "playtimeModeVirtual": "Sanal mod",
+  "playtimeNoSessions": "[TR] No playtime sessions found.",
+  "playtimeParentDashboardTitle": "[TR] Playtime Dashboard",
+  "playtimeReject": "Playtime reddet",
+  "playtimeTitle": "Playtime başlığı",
+  "playtimeVirtual": "Sanal Playtime",
+  "playtimeVirtualStarted": "Sanal oturum başladı",
+  "pleaseLoginForFamilyFeatures": "[TR] Please login to access family features",
+  "pleaseLoginToViewProfile": "[TR] Please log in to view your profile.",
+  "pollOptions": "[TR] Poll Options",
+  "previous": "Önceki",
+  "profile": "[TR] Profile",
+  "quickActions": "Hızlı işlemler",
+  "recentGames": "[TR] Recent Games",
+  "recipients": "Alıcılar",
+  "redo": "[TR] Redo",
+  "refresh": "Yenile",
+  "removeChild": "Çocuğu kaldır",
+  "requestType": "İstek türü",
+  "retry": "Tekrar dene",
+  "revoke": "Geri al",
+  "revokeAccess": "Erişimi geri al",
+  "revokeAccessConfirmation": "[TR] Are you sure you want to revoke access?",
+  "save": "Kaydet",
+  "saveGroupForRecognition": "[TR] Save Group for Recognition",
+  "scheduleForLater": "[TR] Schedule for Later",
+  "scheduleMessage": "Mesaj planla",
+  "scheduled": "[TR] Scheduled",
+  "scheduledFor": "[TR] Scheduled for",
+  "scheduling": "[TR] Scheduling",
+  "search": "Ara",
+  "select": "Seç",
+  "sendNow": "Şimdi Gönder",
+  "settings": "Ayarlar",
+  "share": "Paylaş",
+  "shareOnWhatsApp": "[TR] Share on WhatsApp",
+  "signUp": "Kayıt Ol",
+  "staffScreenTBD": "[TR] Staff screen coming soon",
+  "status": "Durum",
+  "statusColon": "[TR] Status:",
+  "success": "Başarılı",
+  "targetingFilters": "Hedefleme filtreleri",
+  "type": "Tür",
+  "undo": "Geri Al",
+  "upcomingSessions": "Gelecek oturumlar",
+  "upload": "Yükle",
+  "viewAll": "[TR] View All",
+  "welcome": "[TR] Welcome",
+  "welcomeToPlaytime": "[TR] Welcome to Playtime",
+  "yes": "Evet",
+  "yesCancel": "Evet, iptal et"
 }

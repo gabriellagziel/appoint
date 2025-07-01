@@ -6,18 +6,18 @@ part 'user_profile.g.dart';
 @freezed
 class UserProfile with _$UserProfile {
   const factory UserProfile({
-    required String id,
-    required String name,
-    String? email,
-    String? phone,
-    String? photoUrl,
-    bool? isAdminFreeAccess,
+    required final String id,
+    required final String name,
+    final String? email,
+    final String? phone,
+    final String? photoUrl,
+    final bool? isAdminFreeAccess,
     // Playtime-specific fields
-    PlaytimeSettings? playtimeSettings,
-    PlaytimePermissions? playtimePermissions,
+    final PlaytimeSettings? playtimeSettings,
+    final PlaytimePermissions? playtimePermissions,
   }) = _UserProfile;
 
-  factory UserProfile.fromJson(Map<String, dynamic> json) =>
+  factory UserProfile.fromJson(final Map<String, dynamic> json) =>
       _$UserProfileFromJson(json);
 }
 
@@ -39,7 +39,7 @@ class PlaytimeSettings {
     required this.usageStats,
   });
 
-  factory PlaytimeSettings.fromJson(Map<String, dynamic> json) =>
+  factory PlaytimeSettings.fromJson(final Map<String, dynamic> json) =>
       _$PlaytimeSettingsFromJson(json);
 
   Map<String, dynamic> toJson() => _$PlaytimeSettingsToJson(this);
@@ -61,7 +61,7 @@ class PlaytimePreferences {
     required this.allowFriendInvites,
   });
 
-  factory PlaytimePreferences.fromJson(Map<String, dynamic> json) =>
+  factory PlaytimePreferences.fromJson(final Map<String, dynamic> json) =>
       _$PlaytimePreferencesFromJson(json);
 
   Map<String, dynamic> toJson() => _$PlaytimePreferencesToJson(this);
@@ -83,7 +83,7 @@ class SafetySettings {
     required this.restrictedContent,
   });
 
-  factory SafetySettings.fromJson(Map<String, dynamic> json) =>
+  factory SafetySettings.fromJson(final Map<String, dynamic> json) =>
       _$SafetySettingsFromJson(json);
 
   Map<String, dynamic> toJson() => _$SafetySettingsToJson(this);
@@ -103,7 +103,7 @@ class UsageStats {
     required this.favoriteBackgrounds,
   });
 
-  factory UsageStats.fromJson(Map<String, dynamic> json) =>
+  factory UsageStats.fromJson(final Map<String, dynamic> json) =>
       _$UsageStatsFromJson(json);
 
   Map<String, dynamic> toJson() => _$UsageStatsToJson(this);
@@ -125,7 +125,7 @@ class PlaytimePermissions {
     required this.requiresParentApproval,
   });
 
-  factory PlaytimePermissions.fromJson(Map<String, dynamic> json) =>
+  factory PlaytimePermissions.fromJson(final Map<String, dynamic> json) =>
       _$PlaytimePermissionsFromJson(json);
 
   Map<String, dynamic> toJson() => _$PlaytimePermissionsToJson(this);

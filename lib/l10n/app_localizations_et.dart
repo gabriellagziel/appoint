@@ -15,7 +15,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get home => 'Kodu';
 
   @override
-  String get noSessionsYet => 'Sessioone pole veel';
+  String get noSessionsYet => '[ET] No sessions yet';
 
   @override
   String get ok => 'OK';
@@ -27,13 +27,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get signUp => 'Registreeru';
 
   @override
-  String get scheduleMessage => 'Aja planeerimine';
+  String get scheduleMessage => '[ET] Schedule Message';
 
   @override
   String get decline => 'Keeldu';
 
   @override
-  String get adminBroadcast => 'Admini otseülekanne';
+  String get adminBroadcast => '[ET] Admin Broadcast';
 
   @override
   String get login => 'Logi sisse';
@@ -54,7 +54,9 @@ class AppLocalizationsEt extends AppLocalizations {
   String get undo => 'Tagasi';
 
   @override
-  String get opened => 'Avatud';
+  String opened(Object count) {
+    return '[ET] Opened';
+  }
 
   @override
   String get createVirtualSession => 'Loo virtuaalne seanss';
@@ -66,13 +68,14 @@ class AppLocalizationsEt extends AppLocalizations {
   String get redo => 'Tee uuesti';
 
   @override
-  String get next => 'Järgmine';
+  String get next => '[ET] Next';
 
   @override
   String get search => 'Otsi';
 
   @override
-  String get cancelInviteConfirmation => 'Tühista kutse kinnitamine';
+  String get cancelInviteConfirmation =>
+      '[ET] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -83,13 +86,14 @@ class AppLocalizationsEt extends AppLocalizations {
   String get revokeAccess => 'Tühista juurdepääs';
 
   @override
-  String get saveGroupForRecognition => 'Salvesta grupp äratundmiseks';
+  String get saveGroupForRecognition => '[ET] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Otseülekanne on ajastatud';
+  String get playtimeLiveScheduled => '[ET] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Juurdepääsu tühistamise kinnitus';
+  String get revokeAccessConfirmation =>
+      '[ET] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Laadi alla';
@@ -99,7 +103,7 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Perekonna linkide laadimisel ilmnes viga';
+    return '[ET] Error loading family links';
   }
 
   @override
@@ -110,7 +114,7 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Privaatsuspäring ebaõnnestus';
+    return '[ET] Failed to action privacy request';
   }
 
   @override
@@ -173,7 +177,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get createLiveSession => 'Loo otseülekanne';
 
   @override
-  String get enableNotifications => 'Luba teatised';
+  String get enableNotifications => '[ET] Enable Notifications';
 
   @override
   String invited(Object date) {
@@ -186,31 +190,32 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Kohtumine jagatud edukalt';
+  String get meetingSharedSuccessfully => '[ET] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => 'Tere tulemast Playtime\'i';
 
   @override
-  String get viewAll => 'Vaata kõiki';
+  String get viewAll => '[ET] View All';
 
   @override
   String get playtimeVirtual => 'Virtuaalne Playtime';
 
   @override
-  String get staffScreenTBD => 'Töötajate ekraan tuleb määrata';
+  String get staffScreenTBD => '[ET] Staff screen coming soon';
 
   @override
   String get cut => 'Lõika';
 
   @override
-  String get inviteCancelledSuccessfully => 'Kutse tühistatud edukalt';
+  String get inviteCancelledSuccessfully =>
+      '[ET] Invite cancelled successfully';
 
   @override
   String get retry => 'Proovi uuesti';
 
   @override
-  String get composeBroadcastMessage => 'Koosta otseülekande sõnum';
+  String get composeBroadcastMessage => '[ET] Compose Broadcast Message';
 
   @override
   String get sendNow => 'Saada kohe';
@@ -228,14 +233,14 @@ class AppLocalizationsEt extends AppLocalizations {
   String get choose => 'Vali';
 
   @override
-  String get profile => 'Profiil';
+  String get profile => '[ET] Profile';
 
   @override
   String get removeChild => 'Eemalda laps';
 
   @override
   String status(Object status) {
-    return 'Staatus';
+    return '[ET] Status';
   }
 
   @override
@@ -263,15 +268,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get enterGroupName => 'Sisesta grupi nimi';
 
   @override
-  String get confirm => 'Kinnita';
+  String get confirm => '[ET] Confirm';
 
   @override
   String get playtimeLive => 'Otse Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Kutseid ei õnnestunud laadida';
-  }
+  String get errorLoadingInvites => 'Kutseid ei õnnestunud laadida';
 
   @override
   String get targetingFilters => 'Sihtimisfiltrid';
@@ -280,19 +283,21 @@ class AppLocalizationsEt extends AppLocalizations {
   String get pickVideo => 'Vali video';
 
   @override
-  String get playtimeGameDeleted => 'Mäng kustutatud';
+  String get playtimeGameDeleted => '[ET] Game deleted';
 
   @override
   String get scheduleForLater => 'Planeeri hilisemaks';
 
   @override
-  String get accessRevokedSuccessfully => 'Juurdepääs tühistatud edukalt';
+  String get accessRevokedSuccessfully => '[ET] Access revoked successfully';
 
   @override
-  String get type => 'Tüüp';
+  String type(Object type) {
+    return 'Tüüp';
+  }
 
   @override
-  String get checkingPermissions => 'Õiguste kontrollimine';
+  String get checkingPermissions => '[ET] Checking permissions...';
 
   @override
   String get copy => 'Kopeeri';
@@ -304,27 +309,27 @@ class AppLocalizationsEt extends AppLocalizations {
   String get email => 'E-post';
 
   @override
-  String get shareOnWhatsApp => 'Jaga WhatsApp\'is';
+  String get shareOnWhatsApp => '[ET] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Teavituste seaded';
 
   @override
-  String get myProfile => 'Minu profiil';
+  String get myProfile => '[ET] My Profile';
 
   @override
   String get revoke => 'Tühista';
 
   @override
-  String get noBroadcastMessages => 'Otseülekandeid pole';
+  String get noBroadcastMessages => '[ET] No messages yet';
 
   @override
   String requestType(Object type) {
-    return 'Päringu tüüp';
+    return '[ET] Request Type';
   }
 
   @override
-  String get notifications => 'Teatised';
+  String get notifications => '[ET] Notifications';
 
   @override
   String get details => 'Üksikasjad';
@@ -342,9 +347,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get playtimeReject => 'Keela Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Profiili laadimisel ilmnes viga';
-  }
+  String get errorLoadingProfile => '[ET] Error loading profile';
 
   @override
   String get edit => 'Muuda';
@@ -359,13 +362,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get forgotPassword => 'Unustasid parooli?';
 
   @override
-  String get familyDashboard => 'Perekonna juhtpaneel';
+  String get familyDashboard => '[ET] Family Dashboard';
 
   @override
-  String get loading => 'Laadimine';
+  String get loading => '[ET] Loading...';
 
   @override
-  String get quickActions => 'Kiirtoimingud';
+  String get quickActions => '[ET] Quick Actions';
 
   @override
   String get playtimeTitle => 'Playtime pealkiri';
@@ -375,43 +378,43 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Õiguste kontrollimisel ilmnes viga';
+    return '[ET] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Kliendi ekraan tuleb määrata';
+  String get clientScreenTBD => '[ET] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM token';
+    return '[ET] FCM Token';
   }
 
   @override
   String get pickImage => 'Vali pilt';
 
   @override
-  String get previous => 'Eelmine';
+  String get previous => '[ET] Previous';
 
   @override
-  String get noProfileFound => 'Profiili ei leitud';
+  String get noProfileFound => '[ET] No profile found';
 
   @override
   String get noFamilyMembersYet => 'Pereliikmeid pole veel';
 
   @override
-  String get mediaOptional => 'Meedia (valikuline)';
+  String get mediaOptional => '[ET] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => 'Sõnum salvestatud edukalt';
+  String get messageSavedSuccessfully => '[ET] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Ajastatud';
+  String get scheduledFor => '[ET] Scheduled for';
 
   @override
   String get dashboard => 'Juhtpaneel';
 
   @override
-  String get noPermissionForBroadcast => 'Puudub lubamine edastamiseks';
+  String get noPermissionForBroadcast => '[ET] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => 'Playtime halduspaneeli pealkiri';
@@ -421,16 +424,16 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String scheduled(Object date) {
-    return 'Ajastatud';
+    return '[ET] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'OTP uuesti saatmine ebaõnnestus';
+    return '[ET] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => 'Planeerimine';
+  String get scheduling => '[ET] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
@@ -441,24 +444,24 @@ class AppLocalizationsEt extends AppLocalizations {
   String get save => 'Salvesta';
 
   @override
-  String get playtimeApprove => 'Kinnita Playtime';
+  String get playtimeApprove => '[ET] Approve';
 
   @override
   String get createYourFirstSession => 'Loo oma esimene seanss';
 
   @override
-  String get playtimeGameRejected => 'Mäng tagasi lükatud';
+  String get playtimeGameRejected => '[ET] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Juurdepääsu tühistamine ebaõnnestus';
+    return '[ET] Failed to revoke access';
   }
 
   @override
   String get recentGames => 'Hiljutised mängud';
 
   @override
-  String get customizeMessage => 'Kohanda sõnumit';
+  String get customizeMessage => '[ET] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
@@ -467,19 +470,19 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Sõnumi saatmisel ilmnes viga';
+    return '[ET] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Kinnita parool';
+  String get confirmPassword => '[ET] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Privaatsuspäringute laadimisel ilmnes viga';
+    return '[ET] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Ühendatud lapsed';
+  String get connectedChildren => '[ET] Connected Children';
 
   @override
   String get share => 'Jaga';
@@ -489,22 +492,22 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Palun logi sisse perefunktsioonide jaoks';
+      '[ET] Please login to access family features';
 
   @override
-  String get myInvites => 'Minu kutsed';
+  String get myInvites => '[ET] My Invites';
 
   @override
   String get createGame => 'Loo mäng';
 
   @override
-  String get groupNameOptional => 'Grupi nimi (valikuline)';
+  String get groupNameOptional => '[ET] Group Name (Optional)';
 
   @override
   String get playtimeNoSessions => 'Playtime seansse pole';
 
   @override
-  String get adminScreenTBD => 'Admin ekraan tuleb määrata';
+  String get adminScreenTBD => '[ET] Admin screen coming soon';
 
   @override
   String get playtimeParentDashboardTitle =>
@@ -514,7 +517,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get close => 'Sulge';
 
   @override
-  String get knownGroupDetected => 'Tuvastatud tuntud grupp';
+  String get knownGroupDetected => '[ET] Known group detected';
 
   @override
   String get back => 'Tagasi';
@@ -535,21 +538,39 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[ET] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Kohtumine on valmis';
+  String get meetingReadyMessage => '[ET] Your meeting is ready! Join now';
 
   @override
   String get pendingInvites => 'Ootel kutsed';
 
   @override
   String statusColon(Object status) {
-    return 'Staatus:';
+    return '[ET] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      'Palun logi sisse profiili vaatamiseks';
+      '[ET] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../providers/business_profile_provider.dart';
+import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 
 class BusinessProfileScreen extends ConsumerWidget {
   const BusinessProfileScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final profile = ref.watch(businessProfileProvider);
     final notifier = ref.read(businessProfileProvider.notifier);
 
@@ -22,13 +22,13 @@ class BusinessProfileScreen extends ConsumerWidget {
                     initialValue: profile.name,
                     decoration:
                         const InputDecoration(labelText: 'Business Name'),
-                    onChanged: (value) => notifier.updateField(name: value),
+                    onChanged: (final value) => notifier.updateField(name: value),
                   ),
                   const SizedBox(height: 16),
                   TextFormField(
                     initialValue: profile.description,
                     decoration: const InputDecoration(labelText: 'Description'),
-                    onChanged: (value) =>
+                    onChanged: (final value) =>
                         notifier.updateField(description: value),
                   ),
                   const SizedBox(height: 16),
@@ -37,7 +37,7 @@ class BusinessProfileScreen extends ConsumerWidget {
                     decoration:
                         const InputDecoration(labelText: 'Phone Number'),
                     keyboardType: TextInputType.phone,
-                    onChanged: (value) => notifier.updateField(phone: value),
+                    onChanged: (final value) => notifier.updateField(phone: value),
                   ),
                   const SizedBox(height: 24),
                   ElevatedButton.icon(

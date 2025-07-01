@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../models/staff_availability.dart';
-import '../../../providers/staff_availability_crud_provider.dart';
+import 'package:appoint/models/staff_availability.dart';
+import 'package:appoint/providers/staff_availability_crud_provider.dart';
 
 class StaffScreen extends ConsumerStatefulWidget {
   final String staffId;
@@ -30,7 +30,7 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final availabilityAsync =
         ref.watch(staffAvailabilityProvider(widget.staffId));
     return Scaffold(
@@ -82,9 +82,9 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
           const SizedBox(height: 16),
           Expanded(
             child: availabilityAsync.when(
-              data: (list) {
+              data: (final list) {
                 final todays = list
-                    .where((a) =>
+                    .where((final a) =>
                         a.date.year == _selectedDate.year &&
                         a.date.month == _selectedDate.month &&
                         a.date.day == _selectedDate.day)
@@ -93,10 +93,10 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
                   return const Center(child: Text('No slots'));
                 }
                 final slots =
-                    todays.expand((a) => a.availableSlots ?? []).toList();
+                    todays.expand((final a) => a.availableSlots ?? []).toList();
                 return ListView.builder(
                   itemCount: slots.length,
-                  itemBuilder: (context, index) {
+                  itemBuilder: (final context, final index) {
                     final slot = slots[index];
                     return ListTile(
                       title: Text(slot),
@@ -114,7 +114,7 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (e, _) => Center(child: Text('Error: $e')),
+              error: (final e, final _) => Center(child: Text('Error: $e')),
             ),
           )
         ],

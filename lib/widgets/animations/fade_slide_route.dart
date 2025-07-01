@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 /// Page route that fades and slides the new screen into view.
 class FadeSlideRoute<T> extends PageRouteBuilder<T> {
   FadeSlideRoute({
-    required WidgetBuilder builder,
+    required final WidgetBuilder builder,
     this.duration = const Duration(milliseconds: 300),
     this.direction = AxisDirection.right,
   }) : super(
-          pageBuilder: (context, animation, secondaryAnimation) => builder(context),
+          pageBuilder: (final context, final animation, final secondaryAnimation) => builder(context),
           transitionDuration: duration,
-          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+          transitionsBuilder: (final context, final animation, final secondaryAnimation, final child) {
             final offsetAnimation = Tween<Offset>(
               begin: _offsetForDirection(direction),
               end: Offset.zero,
@@ -27,7 +27,7 @@ class FadeSlideRoute<T> extends PageRouteBuilder<T> {
   /// Direction from which the screen slides in.
   final AxisDirection direction;
 
-  static Offset _offsetForDirection(AxisDirection direction) {
+  static Offset _offsetForDirection(final AxisDirection direction) {
     switch (direction) {
       case AxisDirection.up:
         return const Offset(0, 0.1);

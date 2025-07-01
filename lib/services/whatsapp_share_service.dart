@@ -3,8 +3,8 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:share_plus/share_plus.dart';
 
-import '../models/smart_share_link.dart';
-import 'custom_deep_link_service.dart';
+import 'package:appoint/models/smart_share_link.dart';
+import 'package:appoint/services/custom_deep_link_service.dart';
 
 class WhatsAppShareService {
   final FirebaseFirestore _firestore;
@@ -15,9 +15,9 @@ class WhatsAppShareService {
   static const String _whatsappBaseUrl = 'https://wa.me/?text=';
 
   WhatsAppShareService({
-    FirebaseFirestore? firestore,
-    FirebaseAnalytics? analytics,
-    CustomDeepLinkService? deepLinkService,
+    final FirebaseFirestore? firestore,
+    final FirebaseAnalytics? analytics,
+    final CustomDeepLinkService? deepLinkService,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _analytics = analytics ?? FirebaseAnalytics.instance {
     _deepLinkService =
@@ -26,10 +26,10 @@ class WhatsAppShareService {
 
   /// Generate a smart share link for a meeting
   Future<String> generateSmartShareLink({
-    required String meetingId,
-    required String creatorId,
-    String? contextId,
-    String? groupId,
+    required final String meetingId,
+    required final String creatorId,
+    final String? contextId,
+    final String? groupId,
   }) async {
     try {
       // Use custom deep link service instead of Firebase Dynamic Links
@@ -50,7 +50,7 @@ class WhatsAppShareService {
 
       return link;
     } catch (e) {
-      print('Error generating smart share link: $e');
+      // Removed debug print: print('Error generating smart share link: $e');
       // Fallback to simple URL
       return '$_baseUrl/meeting/$meetingId?creatorId=$creatorId${contextId != null ? '&contextId=$contextId' : ''}';
     }
@@ -58,12 +58,12 @@ class WhatsAppShareService {
 
   /// Share meeting to WhatsApp
   Future<bool> shareToWhatsApp({
-    required String meetingId,
-    required String creatorId,
-    required String customMessage,
-    String? contextId,
-    String? groupId,
-    String? recipientPhone,
+    required final String meetingId,
+    required final String creatorId,
+    required final String customMessage,
+    final String? contextId,
+    final String? groupId,
+    final String? recipientPhone,
   }) async {
     try {
       // Generate smart share link
@@ -108,13 +108,13 @@ class WhatsAppShareService {
         return true;
       }
     } catch (e) {
-      print('Error sharing to WhatsApp: $e');
+      // Removed debug print: print('Error sharing to WhatsApp: $e');
       return false;
     }
   }
 
   /// Recognize and track group interactions
-  Future<GroupRecognition?> recognizeGroup(String phoneNumber) async {
+  Future<GroupRecognition?> recognizeGroup(final String phoneNumber) async {
     try {
       final doc = await _firestore
           .collection('group_recognition')
@@ -126,17 +126,17 @@ class WhatsAppShareService {
       }
       return null;
     } catch (e) {
-      print('Error recognizing group: $e');
+      // Removed debug print: print('Error recognizing group: $e');
       return null;
     }
   }
 
   /// Save group for future recognition
   Future<void> saveGroupForRecognition({
-    required String groupId,
-    required String groupName,
-    required String phoneNumber,
-    required String meetingId,
+    required final String groupId,
+    required final String groupName,
+    required final String phoneNumber,
+    required final String meetingId,
   }) async {
     try {
       final groupRecognition = GroupRecognition(
@@ -154,28 +154,28 @@ class WhatsAppShareService {
           .doc(groupId)
           .set(groupRecognition.toJson());
     } catch (e) {
-      print('Error saving group recognition: $e');
+      // Removed debug print: print('Error saving group recognition: $e');
     }
   }
 
   /// Update group recognition stats
-  Future<void> _updateGroupRecognition(String groupId, String meetingId) async {
+  Future<void> _updateGroupRecognition(final String groupId, final String meetingId) async {
     try {
       await _firestore.collection('group_recognition').doc(groupId).update({
         'totalShares': FieldValue.increment(1),
         'lastSharedAt': FieldValue.serverTimestamp(),
       });
     } catch (e) {
-      print('Error updating group recognition: $e');
+      // Removed debug print: print('Error updating group recognition: $e');
     }
   }
 
   /// Log share analytics
   Future<void> logShareAnalytics({
-    required String meetingId,
-    required String channel,
-    String? groupId,
-    String? creatorId,
+    required final String meetingId,
+    required final String channel,
+    final String? groupId,
+    final String? creatorId,
   }) async {
     try {
       final analytics = ShareAnalytics(
@@ -189,12 +189,12 @@ class WhatsAppShareService {
 
       await _firestore.collection('share_analytics').add(analytics.toJson());
     } catch (e) {
-      print('Error logging share analytics: $e');
+      // Removed debug print: print('Error logging share analytics: $e');
     }
   }
 
   /// Handle deep link when app is opened
-  Future<void> handleDeepLink(Uri uri) async {
+  Future<void> handleDeepLink(final Uri uri) async {
     try {
       final pathSegments = uri.pathSegments;
       if (pathSegments.length >= 2 && pathSegments[0] == 'meeting') {
@@ -228,13 +228,13 @@ class WhatsAppShareService {
         // This will be handled by the main app router
       }
     } catch (e) {
-      print('Error handling deep link: $e');
+      // Removed debug print: print('Error handling deep link: $e');
     }
   }
 
   /// Update share analytics status
   Future<void> _updateShareAnalytics(
-      String meetingId, ShareStatus status) async {
+      final String meetingId, final ShareStatus status) async {
     try {
       final query = await _firestore
           .collection('share_analytics')
@@ -251,12 +251,12 @@ class WhatsAppShareService {
         });
       }
     } catch (e) {
-      print('Error updating share analytics: $e');
+      // Removed debug print: print('Error updating share analytics: $e');
     }
   }
 
   /// Get share statistics for a meeting
-  Future<Map<String, dynamic>> getShareStats(String meetingId) async {
+  Future<Map<String, dynamic>> getShareStats(final String meetingId) async {
     try {
       final snapshot = await _firestore
           .collection('share_analytics')
@@ -264,21 +264,21 @@ class WhatsAppShareService {
           .get();
 
       final analytics = snapshot.docs
-          .map((doc) => ShareAnalytics.fromJson(doc.data()))
+          .map((final doc) => ShareAnalytics.fromJson(doc.data()))
           .toList();
 
       return {
         'totalShares': analytics.length,
         'whatsappShares':
-            analytics.where((a) => a.channel == 'whatsapp').length,
+            analytics.where((final a) => a.channel == 'whatsapp').length,
         'totalClicks':
-            analytics.where((a) => a.status == ShareStatus.clicked).length,
+            analytics.where((final a) => a.status == ShareStatus.clicked).length,
         'totalResponses':
-            analytics.where((a) => a.status == ShareStatus.responded).length,
-        'groupShares': analytics.where((a) => a.groupId != null).length,
+            analytics.where((final a) => a.status == ShareStatus.responded).length,
+        'groupShares': analytics.where((final a) => a.groupId != null).length,
       };
     } catch (e) {
-      print('Error getting share stats: $e');
+      // Removed debug print: print('Error getting share stats: $e');
       return {};
     }
   }

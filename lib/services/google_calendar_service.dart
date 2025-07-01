@@ -7,7 +7,7 @@ import 'package:googleapis_auth/googleapis_auth.dart';
 import 'package:http/http.dart' as http;
 import 'package:encrypt/encrypt.dart' as encrypt;
 
-import '../config/google_config.dart';
+import 'package:appoint/config/google_config.dart';
 
 class GoogleCalendarService {
   static const _credentialKey = 'google_calendar_credentials';
@@ -16,7 +16,7 @@ class GoogleCalendarService {
   final FlutterSecureStorage _storage;
   AutoRefreshingAuthClient? _client;
 
-  GoogleCalendarService({FlutterSecureStorage? storage})
+  GoogleCalendarService({final FlutterSecureStorage? storage})
       : _storage = storage ?? const FlutterSecureStorage();
 
   Future<encrypt.Key> _getEncryptionKey() async {
@@ -29,7 +29,7 @@ class GoogleCalendarService {
     return key;
   }
 
-  Future<String> _encryptData(String plainText) async {
+  Future<String> _encryptData(final String plainText) async {
     final key = await _getEncryptionKey();
     final iv = encrypt.IV.fromSecureRandom(16);
     final encrypter = encrypt.Encrypter(encrypt.AES(key));
@@ -37,7 +37,7 @@ class GoogleCalendarService {
     return jsonEncode({'iv': iv.base64, 'data': encrypted.base64});
   }
 
-  Future<String> _decryptData(String payload) async {
+  Future<String> _decryptData(final String payload) async {
     final key = await _getEncryptionKey();
     final map = jsonDecode(payload) as Map<String, dynamic>;
     final iv = encrypt.IV.fromBase64(map['iv'] as String);
@@ -114,11 +114,11 @@ class GoogleCalendarService {
   }
 
   Future<void> createEvent(
-    String calendarId, {
-    required String summary,
-    required DateTime start,
-    required DateTime end,
-    String? description,
+    final String calendarId, {
+    required final String summary,
+    required final DateTime start,
+    required final DateTime end,
+    final String? description,
   }) async {
     final client = await _getClient();
     final api = CalendarApi(client);
@@ -140,7 +140,7 @@ class GoogleCalendarService {
     return _setClientFromCredentials(creds);
   }
 
-  AutoRefreshingAuthClient _setClientFromCredentials(AccessCredentials creds) {
+  AutoRefreshingAuthClient _setClientFromCredentials(final AccessCredentials creds) {
     final clientId = ClientId(GoogleConfig.clientId, null);
     final client = autoRefreshingClient(clientId, creds, http.Client());
     client.credentialUpdates.listen(_saveCredentials);
@@ -160,7 +160,7 @@ class GoogleCalendarService {
     }
   }
 
-  Future<void> _saveCredentials(AccessCredentials credentials) async {
+  Future<void> _saveCredentials(final AccessCredentials credentials) async {
     final jsonData = jsonEncode(credentials.toJson());
     final encrypted = await _encryptData(jsonData);
     await _storage.write(key: _credentialKey, value: encrypted);

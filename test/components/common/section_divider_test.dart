@@ -8,7 +8,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('SectionDivider', () {
-    testWidgets('renders without label', (tester) async {
+    testWidgets('renders without label', (final tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: SectionDivider(),
@@ -19,7 +19,7 @@ Future<void> main() async {
       expect(find.byType(Text), findsNothing);
     });
 
-    testWidgets('renders with label', (tester) async {
+    testWidgets('renders with label', (final tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: SectionDivider(label: 'Section'),

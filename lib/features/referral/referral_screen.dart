@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../providers/referral_provider.dart';
+import 'package:appoint/providers/referral_provider.dart';
 
 class ReferralScreen extends ConsumerWidget {
   const ReferralScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final codeAsync = ref.watch(referralCodeProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Referral Code')),
       body: Center(
         child: codeAsync.when(
-          data: (code) => Card(
+          data: (final code) => Card(
             margin: const EdgeInsets.all(16),
             child: Padding(
               padding: const EdgeInsets.all(24),
@@ -47,7 +47,7 @@ class ReferralScreen extends ConsumerWidget {
             ),
           ),
           loading: () => const CircularProgressIndicator(),
-          error: (e, _) => const Text('Error loading referral code'),
+          error: (final e, final _) => const Text('Error loading referral code'),
         ),
       ),
     );

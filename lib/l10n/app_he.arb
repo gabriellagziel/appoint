@@ -1,667 +1,667 @@
 {
-  "refresh": "רענן",
-  "@refresh": {
-    "description": "Refresh button text"
-  },
-  "home": "בית",
-  "@home": {
-    "description": "Home navigation label"
-  },
-  "noSessionsYet": "טרם התקיימו מפגשים",
-  "@noSessionsYet": {
-    "description": "No sessions yet message"
-  },
-  "ok": "אישור",
-  "@ok": {
-    "description": "OK button text"
-  },
-  "playtimeLandingChooseMode": "בחר מצב",
-  "@playtimeLandingChooseMode": {
-    "description": "Playtime landing choose mode message"
-  },
-  "signUp": "הרשמה",
-  "@signUp": {
-    "description": "Sign up button text"
-  },
-  "scheduleMessage": "תזמן הודעה",
-  "@scheduleMessage": {
-    "description": "Schedule message button"
-  },
-  "decline": "דחה",
-  "@decline": {
-    "description": "Decline button"
-  },
-  "adminBroadcast": "שידור מנהל",
-  "@adminBroadcast": {
-    "description": "Admin broadcast title"
-  },
-  "login": "התחברות",
-  "@login": {
-    "description": "Login button text"
-  },
-  "playtimeChooseFriends": "בחר חברים",
-  "@playtimeChooseFriends": {
-    "description": "Choose friends label"
-  },
-  "noInvites": "אין הזמנות",
-  "@noInvites": {
-    "description": "No invites message"
-  },
-  "playtimeChooseTime": "בחר זמן",
-  "@playtimeChooseTime": {
-    "description": "Choose time label"
-  },
-  "success": "הצלחה",
-  "@success": {
-    "description": "Success message"
-  },
-  "undo": "בטל",
-  "@undo": {
-    "description": "Undo button text"
-  },
-  "opened": "נפתח",
-  "@opened": {
-    "description": "Opened status"
-  },
-  "createVirtualSession": "צור מפגש וירטואלי",
-  "@createVirtualSession": {
-    "description": "Create virtual session button"
-  },
-  "messageSentSuccessfully": "ההודעה נשלחה בהצלחה",
-  "@messageSentSuccessfully": {
-    "description": "Message sent successfully message"
-  },
-  "redo": "בצע שוב",
-  "@redo": {
-    "description": "Redo button text"
-  },
-  "next": "הבא",
-  "@next": {
-    "description": "Next button text"
-  },
-  "search": "חיפוש",
-  "@search": {
-    "description": "Search placeholder text"
-  },
-  "cancelInviteConfirmation": "בטל אישור הזמנה",
-  "@cancelInviteConfirmation": {
-    "description": "Cancel invite confirmation message"
-  },
-  "created": "נוצר",
-  "@created": {
-    "description": "Created status"
-  },
-  "revokeAccess": "ביטול גישה",
-  "@revokeAccess": {
-    "description": "Revoke access button"
-  },
-  "saveGroupForRecognition": "שמור קבוצה לזיהוי",
-  "@saveGroupForRecognition": {
-    "description": "Save group for recognition label"
-  },
-  "playtimeLiveScheduled": "מפגש חי מתוזמן",
-  "@playtimeLiveScheduled": {
-    "description": "Live playtime scheduled message"
-  },
-  "revokeAccessConfirmation": "אישור ביטול גישה",
-  "@revokeAccessConfirmation": {
-    "description": "Revoke access confirmation message"
-  },
-  "download": "הורדה",
-  "@download": {
-    "description": "Download button text"
-  },
-  "password": "סיסמה",
-  "@password": {
-    "description": "Password field label"
-  },
-  "errorLoadingFamilyLinks": "שגיאה בטעינת קישורי משפחה",
-  "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message"
-  },
-  "cancel": "בטל",
-  "@cancel": {
-    "description": "Cancel button text"
-  },
-  "playtimeCreate": "צור Playtime",
-  "@playtimeCreate": {
-    "description": "Create button"
-  },
-  "failedToActionPrivacyRequest": "נכשל בביצוע בקשת פרטיות",
-  "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message"
-  },
-  "appTitle": "כותרת האפליקציה",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
-  "accept": "קבל",
-  "@accept": {
-    "description": "Accept button"
-  },
-  "playtimeModeVirtual": "מצב וירטואלי",
-  "@playtimeModeVirtual": {
-    "description": "Virtual play mode label"
-  },
-  "playtimeDescription": "תיאור Playtime",
-  "@playtimeDescription": {
-    "description": "Playtime description"
-  },
-  "delete": "מחק",
-  "@delete": {
-    "description": "Delete button text"
-  },
-  "playtimeVirtualStarted": "מפגש וירטואלי התחיל",
-  "@playtimeVirtualStarted": {
-    "description": "Virtual playtime started message"
-  },
-  "createYourFirstGame": "צור את המשחק הראשון שלך",
-  "@createYourFirstGame": {
-    "description": "Create your first game message"
-  },
-  "participants": "משתתפים",
-  "@participants": {
-    "description": "Participants label"
-  },
-  "recipients": "נמענים",
-  "@recipients": {
-    "description": "Recipients label"
-  },
-  "noResults": "אין תוצאות",
-  "@noResults": {
-    "description": "No search results message"
-  },
-  "yes": "כן",
-  "@yes": {
-    "description": "Yes button text"
-  },
-  "invite": "הזמן",
-  "@invite": {
-    "description": "Invite button"
-  },
-  "playtimeModeLive": "מצב חי",
-  "@playtimeModeLive": {
-    "description": "Live play mode label"
-  },
-  "done": "בוצע",
-  "@done": {
-    "description": "Done button text"
-  },
-  "defaultShareMessage": "הודעת שיתוף ברירת מחדל",
-  "@defaultShareMessage": {
-    "description": "Default share message"
-  },
-  "no": "לא",
-  "@no": {
-    "description": "No button text"
-  },
-  "playtimeHub": "מרכז Playtime",
-  "@playtimeHub": {
-    "description": "Playtime hub title"
-  },
-  "error": "שגיאה",
-  "@error": {
-    "description": "Error message"
-  },
-  "createLiveSession": "צור מפגש חי",
-  "@createLiveSession": {
-    "description": "Create live session button"
-  },
-  "enableNotifications": "הפעל התראות",
-  "@enableNotifications": {
-    "description": "Enable notifications label"
-  },
-  "invited": "הוזמן",
-  "@invited": {
-    "description": "Invited status"
-  },
-  "content": "תוכן",
-  "@content": {
-    "description": "Content label"
-  },
-  "meetingSharedSuccessfully": "מפגש שותף בהצלחה",
-  "@meetingSharedSuccessfully": {
-    "description": "Meeting shared successfully message"
-  },
-  "welcomeToPlaytime": "ברוכים הבאים ל-Playtime",
-  "@welcomeToPlaytime": {
-    "description": "Welcome to playtime message"
-  },
-  "viewAll": "הצג הכל",
-  "@viewAll": {
-    "description": "View all button"
-  },
-  "playtimeVirtual": "Playtime וירטואלי",
-  "@playtimeVirtual": {
-    "description": "Virtual play label"
-  },
-  "staffScreenTBD": "מסך צוות ייקבע מאוחר יותר",
-  "@staffScreenTBD": {
-    "description": "Staff screen TBD message"
-  },
-  "cut": "גזור",
-  "@cut": {
-    "description": "Cut button text"
-  },
-  "inviteCancelledSuccessfully": "הזמנה בוטלה בהצלחה",
-  "@inviteCancelledSuccessfully": {
-    "description": "Invite cancelled successfully message"
-  },
-  "retry": "נסה שוב",
-  "@retry": {
-    "description": "Retry button text"
-  },
-  "composeBroadcastMessage": "כתוב הודעת שידור",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message title"
-  },
-  "sendNow": "שלח כעת",
-  "@sendNow": {
-    "description": "Send now button"
-  },
-  "noGamesYet": "טרם קיימו משחקים",
-  "@noGamesYet": {
-    "description": "No games yet message"
-  },
-  "select": "בחר",
-  "@select": {
-    "description": "Select button text"
-  },
-  "about": "אודות",
+  "@@locale": "he",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "בחר",
-  "@choose": {
-    "description": "Choose button text"
+  "@accept": {
+    "description": "Accept button"
   },
-  "profile": "פרופיל",
-  "@profile": {
-    "description": "Profile navigation label"
-  },
-  "removeChild": "הסר ילד",
-  "@removeChild": {
-    "description": "Remove child button"
-  },
-  "status": "סטטוס",
-  "@status": {
-    "description": "Status label"
-  },
-  "logout": "התנתק",
-  "@logout": {
-    "description": "Logout button text"
-  },
-  "paste": "הדבק",
-  "@paste": {
-    "description": "Paste button text"
-  },
-  "welcome": "ברוך הבא",
-  "@welcome": {
-    "description": "Welcome message"
-  },
-  "playtimeCreateSession": "צור מפגש",
-  "@playtimeCreateSession": {
-    "description": "Create playtime session button"
-  },
-  "familyMembers": "חברי המשפחה",
-  "@familyMembers": {
-    "description": "Family members label"
-  },
-  "upload": "העלה",
-  "@upload": {
-    "description": "Upload button text"
-  },
-  "upcomingSessions": "מפגשים קרובים",
-  "@upcomingSessions": {
-    "description": "Upcoming sessions label"
-  },
-  "enterGroupName": "הכנס שם קבוצה",
-  "@enterGroupName": {
-    "description": "Enter group name placeholder"
-  },
-  "confirm": "אשר",
-  "@confirm": {
-    "description": "Confirm button text"
-  },
-  "playtimeLive": "Playtime חי",
-  "@playtimeLive": {
-    "description": "Live play label"
-  },
-  "errorLoadingInvites": "שגיאה בטעינת הזמנות",
-  "@errorLoadingInvites": {
-    "description": "Error loading invites message"
-  },
-  "targetingFilters": "מסנני מיקוד",
-  "@targetingFilters": {
-    "description": "Targeting filters label"
-  },
-  "pickVideo": "בחר וידאו",
-  "@pickVideo": {
-    "description": "Pick video button"
-  },
-  "playtimeGameDeleted": "המשחק נמחק",
-  "@playtimeGameDeleted": {
-    "description": "Game deleted message"
-  },
-  "scheduleForLater": "תזמן למועד מאוחר יותר",
-  "@scheduleForLater": {
-    "description": "Schedule for later button"
-  },
-  "accessRevokedSuccessfully": "הגישה בוטלה בהצלחה",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "סוג",
-  "@type": {
-    "description": "Type label"
-  },
-  "checkingPermissions": "בודק הרשאות",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "copy": "העתק",
-  "@copy": {
-    "description": "Copy button text"
-  },
-  "yesCancel": "כן, בטל",
-  "@yesCancel": {
-    "description": "Yes cancel button"
-  },
-  "email": "דוא״ל",
-  "@email": {
-    "description": "Email field label"
-  },
-  "shareOnWhatsApp": "[HE] Share on WhatsApp",
-  "@shareOnWhatsApp": {
-    "description": "Share on WhatsApp button"
-  },
-  "notificationSettings": "הגדרות התראות",
-  "@notificationSettings": {
-    "description": "Notification settings title"
-  },
-  "myProfile": "הפרופיל שלי",
-  "@myProfile": {
-    "description": "My profile title"
-  },
-  "revoke": "בטל",
-  "@revoke": {
-    "description": "Revoke button"
-  },
-  "noBroadcastMessages": "אין הודעות שידור",
-  "@noBroadcastMessages": {
-    "description": "No broadcast messages message"
-  },
-  "requestType": "סוג בקשה",
-  "@requestType": {
-    "description": "Request type label"
-  },
-  "notifications": "התראות",
-  "@notifications": {
-    "description": "Notifications title"
-  },
-  "details": "פרטים",
-  "@details": {
-    "description": "Details label"
-  },
-  "cancelInvite": "בטל הזמנה",
-  "@cancelInvite": {
-    "description": "Cancel invite button"
-  },
-  "createNew": "צור חדש",
-  "@createNew": {
-    "description": "Create new button"
-  },
-  "settings": "הגדרות",
-  "@settings": {
-    "description": "Settings navigation label"
-  },
-  "playtimeReject": "סרב Playtime",
-  "@playtimeReject": {
-    "description": "Playtime reject button"
-  },
-  "errorLoadingProfile": "שגיאה בטעינת הפרופיל",
-  "@errorLoadingProfile": {
-    "description": "Error loading profile message"
-  },
-  "edit": "ערוך",
-  "@edit": {
-    "description": "Edit button text"
-  },
-  "add": "הוסף",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "המשחק אושר",
-  "@playtimeGameApproved": {
-    "description": "Game approved message"
+  "@adminBroadcast": {
+    "description": "Admin broadcast title"
   },
-  "forgotPassword": "שכחת סיסמה?",
-  "@forgotPassword": {
-    "description": "Forgot password link"
-  },
-  "familyDashboard": "לוח מנהל המשפחה",
-  "@familyDashboard": {
-    "description": "Family dashboard title"
-  },
-  "loading": "טוען",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "quickActions": "פעולות מהירות",
-  "@quickActions": {
-    "description": "Quick actions label"
-  },
-  "playtimeTitle": "כותרת Playtime",
-  "@playtimeTitle": {
-    "description": "Playtime title"
-  },
-  "otpResentSuccessfully": "OTP נשלח מחדש בהצלחה",
-  "@otpResentSuccessfully": {
-    "description": "OTP resent successfully message"
-  },
-  "errorCheckingPermissions": "שגיאה בבדיקת הרשאות",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message"
-  },
-  "clientScreenTBD": "מסך לקוח ייקבע מאוחר יותר",
-  "@clientScreenTBD": {
-    "description": "Client screen TBD message"
-  },
-  "fcmToken": "אסימון FCM",
-  "@fcmToken": {
-    "description": "FCM token label"
-  },
-  "pickImage": "בחר תמונה",
-  "@pickImage": {
-    "description": "Pick image button"
-  },
-  "previous": "הקודם",
-  "@previous": {
-    "description": "Previous button text"
-  },
-  "noProfileFound": "לא נמצא פרופיל",
-  "@noProfileFound": {
-    "description": "No profile found message"
-  },
-  "noFamilyMembersYet": "אין עדיין חברי משפחה",
-  "@noFamilyMembersYet": {
-    "description": "No family members yet message"
-  },
-  "mediaOptional": "מדיה (אופציונלי)",
-  "@mediaOptional": {
-    "description": "Media optional label"
-  },
-  "messageSavedSuccessfully": "ההודעה נשמרה בהצלחה",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully message"
-  },
-  "scheduledFor": "מתוזמן עבור",
-  "@scheduledFor": {
-    "description": "Scheduled for label"
-  },
-  "dashboard": "לוח מחוונים",
-  "@dashboard": {
-    "description": "Dashboard title"
-  },
-  "noPermissionForBroadcast": "אין הרשאה לשידור",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "playtimeAdminPanelTitle": "כותרת לוח ניהול Playtime",
-  "@playtimeAdminPanelTitle": {
-    "description": "Playtime admin panel title"
-  },
-  "inviteDetail": "פרטי הזמנה",
-  "@inviteDetail": {
-    "description": "Invite detail title"
-  },
-  "scheduled": "מתוזמן",
-  "@scheduled": {
-    "description": "Scheduled status"
-  },
-  "failedToCancelInvite": "נכשל בביטול הזמנה",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
-  },
-  "failedToResendOtp": "נכשל בשליחת OTP מחדש",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
-  },
-  "scheduling": "מתוזמן",
-  "@scheduling": {
-    "description": "Scheduling label"
-  },
-  "errorSavingMessage": "שגיאה בשמירת ההודעה",
-  "@errorSavingMessage": {
-    "description": "Error saving message message"
-  },
-  "save": "שמור",
-  "@save": {
-    "description": "Save button text"
-  },
-  "playtimeApprove": "אשר Playtime",
-  "@playtimeApprove": {
-    "description": "Playtime approve button"
-  },
-  "createYourFirstSession": "צור את המפגש הראשון שלך",
-  "@createYourFirstSession": {
-    "description": "Create your first session message"
-  },
-  "playtimeGameRejected": "המשחק נדחה",
-  "@playtimeGameRejected": {
-    "description": "Game rejected message"
-  },
-  "recentGames": "משחקים אחרונים",
-  "@recentGames": {
-    "description": "Recent games label"
-  },
-  "customizeMessage": "התאם אישית הודעה",
-  "@customizeMessage": {
-    "description": "Customize message button"
-  },
-  "errorSendingMessage": "שגיאה בשליחת הודעה",
-  "@errorSendingMessage": {
-    "description": "Error sending message message"
-  },
-  "confirmPassword": "אשר סיסמה",
-  "@confirmPassword": {
-    "description": "Confirm password field label"
-  },
-  "errorLoadingPrivacyRequests": "שגיאה בטעינת בקשות פרטיות",
-  "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message"
-  },
-  "connectedChildren": "ילדים מחוברים",
-  "@connectedChildren": {
-    "description": "Connected children label"
-  },
-  "share": "שתף",
-  "@share": {
-    "description": "Share button text"
-  },
-  "playtimeEnterGameName": "הכנס שם משחק",
-  "@playtimeEnterGameName": {
-    "description": "Enter game name label"
-  },
-  "pleaseLoginToViewProfile": "אנא התחבר כדי לצפות בפרופיל",
-  "@pleaseLoginToViewProfile": {
-    "description": "Please login to view profile message"
-  },
-  "@@locale": "he",
-  "adminScreenTBD": "[HE] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "back": "[HE] Back",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
   "@back": {
     "description": "Back button text"
   },
-  "clicked": "[HE] Clicked",
+  "@cancel": {
+    "description": "Cancel button text"
+  },
+  "@cancelInvite": {
+    "description": "Cancel invite button"
+  },
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
+  },
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "@choose": {
+    "description": "Choose button text"
+  },
   "@clicked": {
     "description": "Clicked status"
   },
-  "close": "[HE] Close",
+  "@clientScreenTBD": {
+    "description": "Client screen TBD message"
+  },
   "@close": {
     "description": "Close button text"
   },
-  "createGame": "[HE] Create Game",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message title"
+  },
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "@content": {
+    "description": "Content label"
+  },
+  "@copy": {
+    "description": "Copy button text"
+  },
   "@createGame": {
     "description": "Create game button"
   },
-  "failedToRevokeAccess": "[HE] Failed to revoke access",
+  "@createLiveSession": {
+    "description": "Create live session button"
+  },
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
+  },
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "@created": {
+    "description": "Created status"
+  },
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "@dashboard": {
+    "description": "Dashboard title"
+  },
+  "@decline": {
+    "description": "Decline button"
+  },
+  "@defaultShareMessage": {
+    "description": "Default share message"
+  },
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "@details": {
+    "description": "Details label"
+  },
+  "@done": {
+    "description": "Done button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "@email": {
+    "description": "Email field label"
+  },
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "@enterGroupName": {
+    "description": "Enter group name placeholder"
+  },
+  "@error": {
+    "description": "Error message"
+  },
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message"
+  },
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message"
+  },
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "@errorSavingMessage": {
+    "description": "Error saving message message"
+  },
+  "@errorSendingMessage": {
+    "description": "Error sending message message"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message"
+  },
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
   "@failedToRevokeAccess": {
     "description": "Failed to revoke access message"
   },
-  "groupNameOptional": "[HE] Group Name (Optional)",
+  "@familyDashboard": {
+    "description": "Family dashboard title"
+  },
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "@fcmToken": {
+    "description": "FCM token label"
+  },
+  "@forgotPassword": {
+    "description": "Forgot password link"
+  },
   "@groupNameOptional": {
     "description": "Group name optional label"
   },
-  "knownGroupDetected": "[HE] Known group detected",
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "@invite": {
+    "description": "Invite button"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "@inviteDetail": {
+    "description": "Invite detail title"
+  },
+  "@invited": {
+    "description": "Invited status"
+  },
   "@knownGroupDetected": {
     "description": "Known group detected message"
   },
-  "link": "[HE] Link",
   "@link": {
     "description": "Link label"
   },
-  "managePermissions": "[HE] Manage Permissions",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@login": {
+    "description": "Login button text"
+  },
+  "@logout": {
+    "description": "Logout button text"
+  },
   "@managePermissions": {
     "description": "Manage permissions button"
   },
-  "meetingReadyMessage": "[HE] Your meeting is ready! Join now",
+  "@mediaOptional": {
+    "description": "Media optional label"
+  },
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "myInvites": "[HE] My Invites",
+  "@meetingSharedSuccessfully": {
+    "description": "Meeting shared successfully message"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
   "@myInvites": {
     "description": "My invites title"
   },
-  "pendingInvites": "[HE] Pending Invites",
+  "@myProfile": {
+    "description": "My profile title"
+  },
+  "@next": {
+    "description": "Next button text"
+  },
+  "@no": {
+    "description": "No button text"
+  },
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
+  },
+  "@notificationSettings": {
+    "description": "Notification settings title"
+  },
+  "@notifications": {
+    "description": "Notifications title"
+  },
+  "@ok": {
+    "description": "OK button text"
+  },
+  "@opened": {
+    "description": "Opened status"
+  },
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "@participants": {
+    "description": "Participants label"
+  },
+  "@password": {
+    "description": "Password field label"
+  },
+  "@paste": {
+    "description": "Paste button text"
+  },
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "playtimeChooseGame": "[HE] Choose a game",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
+  },
   "@playtimeChooseGame": {
     "description": "Choose game label"
   },
-  "playtimeNoSessions": "[HE] No playtime sessions found.",
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "@playtimeCreate": {
+    "description": "Create button"
+  },
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "@playtimeGameApproved": {
+    "description": "Game approved message"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Game deleted message"
+  },
+  "@playtimeGameRejected": {
+    "description": "Game rejected message"
+  },
+  "@playtimeHub": {
+    "description": "Playtime hub title"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "@playtimeLive": {
+    "description": "Live play label"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
+  },
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
   "@playtimeNoSessions": {
     "description": "No playtime sessions message"
   },
-  "playtimeParentDashboardTitle": "[HE] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Playtime parent dashboard title"
   },
-  "pleaseLoginForFamilyFeatures": "[HE] Please login to access family features",
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "@playtimeVirtual": {
+    "description": "Virtual play label"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
   "@pleaseLoginForFamilyFeatures": {
     "description": "Please login for family features message"
   },
-  "pollOptions": "[HE] Poll Options",
+  "@pleaseLoginToViewProfile": {
+    "description": "Please login to view profile message"
+  },
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "statusColon": "[HE] Status:",
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "@recipients": {
+    "description": "Recipients label"
+  },
+  "@redo": {
+    "description": "Redo button text"
+  },
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  "@removeChild": {
+    "description": "Remove child button"
+  },
+  "@requestType": {
+    "description": "Request type label"
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@revoke": {
+    "description": "Revoke button"
+  },
+  "@revokeAccess": {
+    "description": "Revoke access button"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "@save": {
+    "description": "Save button text"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
+  },
+  "@scheduleForLater": {
+    "description": "Schedule for later button"
+  },
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "@scheduling": {
+    "description": "Scheduling label"
+  },
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "@select": {
+    "description": "Select button text"
+  },
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "@share": {
+    "description": "Share button text"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "@staffScreenTBD": {
+    "description": "Staff screen TBD message"
+  },
+  "@status": {
+    "description": "Status label"
+  },
   "@statusColon": {
     "description": "Status colon label"
-  }
+  },
+  "@success": {
+    "description": "Success message"
+  },
+  "@targetingFilters": {
+    "description": "Targeting filters label"
+  },
+  "@type": {
+    "description": "Type label"
+  },
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "@yes": {
+    "description": "Yes button text"
+  },
+  "@yesCancel": {
+    "description": "Yes cancel button"
+  },
+  "about": "אודות",
+  "accept": "קבל",
+  "accessRevokedSuccessfully": "הגישה בוטלה בהצלחה",
+  "add": "הוסף",
+  "adminBroadcast": "שידור מנהל",
+  "adminScreenTBD": "[HE] Admin screen coming soon",
+  "appTitle": "כותרת האפליקציה",
+  "back": "[HE] Back",
+  "cancel": "בטל",
+  "cancelInvite": "בטל הזמנה",
+  "cancelInviteConfirmation": "בטל אישור הזמנה",
+  "checkingPermissions": "בודק הרשאות",
+  "choose": "בחר",
+  "clicked": "[HE] Clicked",
+  "clientScreenTBD": "מסך לקוח ייקבע מאוחר יותר",
+  "close": "[HE] Close",
+  "composeBroadcastMessage": "כתוב הודעת שידור",
+  "confirm": "אשר",
+  "confirmPassword": "אשר סיסמה",
+  "connectedChildren": "ילדים מחוברים",
+  "content": "תוכן",
+  "copy": "העתק",
+  "createGame": "[HE] Create Game",
+  "createLiveSession": "צור מפגש חי",
+  "createNew": "צור חדש",
+  "createVirtualSession": "צור מפגש וירטואלי",
+  "createYourFirstGame": "צור את המשחק הראשון שלך",
+  "createYourFirstSession": "צור את המפגש הראשון שלך",
+  "created": "נוצר",
+  "customizeMessage": "התאם אישית הודעה",
+  "cut": "גזור",
+  "dashboard": "לוח מחוונים",
+  "decline": "דחה",
+  "defaultShareMessage": "הודעת שיתוף ברירת מחדל",
+  "delete": "מחק",
+  "details": "פרטים",
+  "done": "בוצע",
+  "download": "הורדה",
+  "edit": "ערוך",
+  "email": "דוא״ל",
+  "enableNotifications": "הפעל התראות",
+  "enterGroupName": "הכנס שם קבוצה",
+  "error": "שגיאה",
+  "errorCheckingPermissions": "שגיאה בבדיקת הרשאות",
+  "errorLoadingFamilyLinks": "שגיאה בטעינת קישורי משפחה",
+  "errorLoadingInvites": "שגיאה בטעינת הזמנות",
+  "errorLoadingPrivacyRequests": "שגיאה בטעינת בקשות פרטיות",
+  "errorLoadingProfile": "שגיאה בטעינת הפרופיל",
+  "errorSavingMessage": "שגיאה בשמירת ההודעה",
+  "errorSendingMessage": "שגיאה בשליחת הודעה",
+  "failedToActionPrivacyRequest": "נכשל בביצוע בקשת פרטיות",
+  "failedToCancelInvite": "נכשל בביטול הזמנה",
+  "failedToResendOtp": "נכשל בשליחת OTP מחדש",
+  "failedToRevokeAccess": "[HE] Failed to revoke access",
+  "familyDashboard": "לוח מנהל המשפחה",
+  "familyMembers": "חברי המשפחה",
+  "fcmToken": "אסימון FCM",
+  "forgotPassword": "שכחת סיסמה?",
+  "groupNameOptional": "[HE] Group Name (Optional)",
+  "home": "בית",
+  "invite": "הזמן",
+  "inviteCancelledSuccessfully": "הזמנה בוטלה בהצלחה",
+  "inviteDetail": "פרטי הזמנה",
+  "invited": "הוזמן",
+  "knownGroupDetected": "[HE] Known group detected",
+  "link": "[HE] Link",
+  "loading": "טוען",
+  "login": "התחברות",
+  "logout": "התנתק",
+  "managePermissions": "[HE] Manage Permissions",
+  "mediaOptional": "מדיה (אופציונלי)",
+  "meetingReadyMessage": "[HE] Your meeting is ready! Join now",
+  "meetingSharedSuccessfully": "מפגש שותף בהצלחה",
+  "messageSavedSuccessfully": "ההודעה נשמרה בהצלחה",
+  "messageSentSuccessfully": "ההודעה נשלחה בהצלחה",
+  "myInvites": "[HE] My Invites",
+  "myProfile": "הפרופיל שלי",
+  "next": "הבא",
+  "no": "לא",
+  "noBroadcastMessages": "אין הודעות שידור",
+  "noFamilyMembersYet": "אין עדיין חברי משפחה",
+  "noGamesYet": "טרם קיימו משחקים",
+  "noInvites": "אין הזמנות",
+  "noPermissionForBroadcast": "אין הרשאה לשידור",
+  "noProfileFound": "לא נמצא פרופיל",
+  "noResults": "אין תוצאות",
+  "noSessionsYet": "טרם התקיימו מפגשים",
+  "notificationSettings": "הגדרות התראות",
+  "notifications": "התראות",
+  "ok": "אישור",
+  "opened": "נפתח",
+  "otpResentSuccessfully": "OTP נשלח מחדש בהצלחה",
+  "participants": "משתתפים",
+  "password": "סיסמה",
+  "paste": "הדבק",
+  "pendingInvites": "[HE] Pending Invites",
+  "pickImage": "בחר תמונה",
+  "pickVideo": "בחר וידאו",
+  "playtimeAdminPanelTitle": "כותרת לוח ניהול Playtime",
+  "playtimeApprove": "אשר Playtime",
+  "playtimeChooseFriends": "בחר חברים",
+  "playtimeChooseGame": "[HE] Choose a game",
+  "playtimeChooseTime": "בחר זמן",
+  "playtimeCreate": "צור Playtime",
+  "playtimeCreateSession": "צור מפגש",
+  "playtimeDescription": "תיאור Playtime",
+  "playtimeEnterGameName": "הכנס שם משחק",
+  "playtimeGameApproved": "המשחק אושר",
+  "playtimeGameDeleted": "המשחק נמחק",
+  "playtimeGameRejected": "המשחק נדחה",
+  "playtimeHub": "מרכז Playtime",
+  "playtimeLandingChooseMode": "בחר מצב",
+  "playtimeLive": "Playtime חי",
+  "playtimeLiveScheduled": "מפגש חי מתוזמן",
+  "playtimeModeLive": "מצב חי",
+  "playtimeModeVirtual": "מצב וירטואלי",
+  "playtimeNoSessions": "[HE] No playtime sessions found.",
+  "playtimeParentDashboardTitle": "[HE] Playtime Dashboard",
+  "playtimeReject": "סרב Playtime",
+  "playtimeTitle": "כותרת Playtime",
+  "playtimeVirtual": "Playtime וירטואלי",
+  "playtimeVirtualStarted": "מפגש וירטואלי התחיל",
+  "pleaseLoginForFamilyFeatures": "[HE] Please login to access family features",
+  "pleaseLoginToViewProfile": "אנא התחבר כדי לצפות בפרופיל",
+  "pollOptions": "[HE] Poll Options",
+  "previous": "הקודם",
+  "profile": "פרופיל",
+  "quickActions": "פעולות מהירות",
+  "recentGames": "משחקים אחרונים",
+  "recipients": "נמענים",
+  "redo": "בצע שוב",
+  "refresh": "רענן",
+  "removeChild": "הסר ילד",
+  "requestType": "סוג בקשה",
+  "retry": "נסה שוב",
+  "revoke": "בטל",
+  "revokeAccess": "ביטול גישה",
+  "revokeAccessConfirmation": "אישור ביטול גישה",
+  "save": "שמור",
+  "saveGroupForRecognition": "שמור קבוצה לזיהוי",
+  "scheduleForLater": "תזמן למועד מאוחר יותר",
+  "scheduleMessage": "תזמן הודעה",
+  "scheduled": "מתוזמן",
+  "scheduledFor": "מתוזמן עבור",
+  "scheduling": "מתוזמן",
+  "search": "חיפוש",
+  "select": "בחר",
+  "sendNow": "שלח כעת",
+  "settings": "הגדרות",
+  "share": "שתף",
+  "shareOnWhatsApp": "[HE] Share on WhatsApp",
+  "signUp": "הרשמה",
+  "staffScreenTBD": "מסך צוות ייקבע מאוחר יותר",
+  "status": "סטטוס",
+  "statusColon": "[HE] Status:",
+  "success": "הצלחה",
+  "targetingFilters": "מסנני מיקוד",
+  "type": "סוג",
+  "undo": "בטל",
+  "upcomingSessions": "מפגשים קרובים",
+  "upload": "העלה",
+  "viewAll": "הצג הכל",
+  "welcome": "ברוך הבא",
+  "welcomeToPlaytime": "ברוכים הבאים ל-Playtime",
+  "yes": "כן",
+  "yesCancel": "כן, בטל"
 }
