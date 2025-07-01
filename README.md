@@ -33,7 +33,7 @@ Appointment scheduling app built with Flutter with advanced features including A
    
 ```bash
    flutter pub get
-   ./tool/codegen.sh
+   ./tool/codegen.sh    # runs flutter gen-l10n and build_runner
 
 ```
 
@@ -54,7 +54,9 @@ Appointment scheduling app built with Flutter with advanced features including A
    flutter analyze
    flutter test --coverage
    dart test --coverage
-   flutter run
+   flutter run                 # Android or desktop
+   flutter run -d chrome       # Web
+   dart run                    # CLI
 ```
 
 ## CI Network Access Requirements
@@ -80,6 +82,27 @@ Where `<token>` has `admin:enterprise` scope.
 Update your firewall/proxy settings on the runner machines to permit connections to the above hosts.
 
 Without these, `flutter pub get`, `dart run build_runner`, and `flutter test` will fail.
+
+### Mirrors or Proxy Setup
+If access to `storage.googleapis.com` is blocked, point Flutter and pub at a mirror or use your corporate proxy so dependency downloads work:
+
+```bash
+export PUB_HOSTED_URL="https://pub.flutter-io.cn"
+export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
+# or set your proxy
+export HTTP_PROXY="http://proxy.mycorp.com:8080"
+export HTTPS_PROXY="http://proxy.mycorp.com:8080"
+```
+
+In GitHub Actions workflows you can inject these variables at the job level:
+
+```yaml
+env:
+  PUB_HOSTED_URL: https://pub.flutter-io.cn
+  FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
+  HTTP_PROXY: http://proxy.mycorp.com:8080
+  HTTPS_PROXY: http://proxy.mycorp.com:8080
+```
 
 
 ## Environment Setup & Testing
@@ -242,8 +265,11 @@ Our GitHub Actions pipeline (`.github/workflows/flutter.yml`) runs on every push
 
 - **Flutter/Dart Versions**: Flutter 3.32.0 with Dart 3.4.0 is required.
 - **Initial Script**: Run `./setup.sh` once after cloning to install dependencies.
+- **Dev Container**: Place the pre-downloaded Flutter and Dart SDK archives under
+  `.devcontainer/sdk_archives` before building the container so it can install
+  them without network access.
 - **CI Network Allowlist**: Ensure your CI runners can access `storage.googleapis.com`, `firebase-public.firebaseio.com`, `metadata.google.internal`, `169.254.169.254`, `raw.githubusercontent.com`, and `pub.dev`.
-- **Code Generation**: Use `./tool/codegen.sh` to run build_runner when models or localization files change.
+- **Code Generation**: Use `./tool/codegen.sh` to regenerate localizations and run build_runner whenever models or translations change.
 - **Running Tests**:
   ```bash
   firebase emulators:start --only auth,firestore
