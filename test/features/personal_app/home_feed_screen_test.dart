@@ -8,7 +8,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('HomeFeedScreen', () {
-    testWidgets('shows placeholder feed text', (tester) async {
+    testWidgets('shows placeholder feed text', (final tester) async {
       await tester.pumpWidget(const MaterialApp(home: HomeFeedScreen()));
 
       expect(find.text('Home Feed Screen'), findsOneWidget);

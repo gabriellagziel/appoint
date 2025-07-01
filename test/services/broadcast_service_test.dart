@@ -57,18 +57,18 @@ Future<void> main() async {
     });
 
     test('should handle different targeting filter combinations', () {
-      final filters1 = BroadcastTargetingFilters(
+      const filters1 = BroadcastTargetingFilters(
         countries: ['US', 'CA'],
         cities: ['New York', 'Toronto'],
       );
 
-      final filters2 = BroadcastTargetingFilters(
+      const filters2 = BroadcastTargetingFilters(
         minAge: 18,
         maxAge: 65,
         subscriptionTiers: ['premium'],
       );
 
-      final filters3 = BroadcastTargetingFilters(
+      const filters3 = BroadcastTargetingFilters(
         userRoles: ['user', 'admin'],
         accountStatuses: ['active'],
       );
@@ -80,7 +80,7 @@ Future<void> main() async {
     });
 
     test('should handle different broadcast message types', () {
-      final targetingFilters = BroadcastTargetingFilters(
+      const targetingFilters = BroadcastTargetingFilters(
         userRoles: ['user'],
       );
 

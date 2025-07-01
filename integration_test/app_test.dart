@@ -1,11 +1,12 @@
 import 'package:integration_test/integration_test.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter/material.dart';
 import 'package:appoint/main.dart' as app;
 
 void main() {
   REDACTED_TOKEN.ensureInitialized();
 
-  testWidgets('edit profile flow', (tester) async {
+  testWidgets('edit profile flow', (final tester) async {
     await app.appMain();
     await tester.pumpAndSettle();
 
@@ -29,7 +30,7 @@ void main() {
     expect(find.text('Hello'), findsOneWidget);
   });
 
-  testWidgets('referral copy flow', (tester) async {
+  testWidgets('referral copy flow', (final tester) async {
     await app.appMain();
     await tester.pumpAndSettle();
 

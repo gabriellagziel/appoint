@@ -8,7 +8,7 @@ Future<void> main() async {
       // TODO: Initialize test dependencies
     });
 
-    testWidgets('renders correctly', (tester) async {
+    testWidgets('renders correctly', (final tester) async {
       // TODO: implement widget test
     });
   });

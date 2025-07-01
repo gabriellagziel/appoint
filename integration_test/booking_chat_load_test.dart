@@ -5,11 +5,10 @@ import 'package:integration_test/integration_test.dart';
 import 'package:appoint/main.dart' as app;
 
 void main() {
-  final binding = REDACTED_TOKEN.ensureInitialized()
-      as REDACTED_TOKEN;
+  final binding = REDACTED_TOKEN.ensureInitialized();
 
   group('Booking Chat Load', () {
-    testWidgets('repeated chat booking flow', (tester) async {
+    testWidgets('repeated chat booking flow', (final tester) async {
       await binding.watchPerformance(() async {
         await app.appMain();
         await tester.pumpAndSettle();
