@@ -5,9 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/business/screens/business_dashboard_screen.dart';
 import '../../fake_firebase_setup.dart';
 import 'package:mockito/mockito.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-
-class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
+import '../../mocks/firebase_mocks.dart';
 
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -15,10 +13,14 @@ Future<void> main() async {
 
   testWidgets('Business Dashboard shows welcome text',
       (WidgetTester tester) async {
+    final firestore = MockFirebaseFirestore();
+
     await tester.pumpWidget(const ProviderScope(
       child: MaterialApp(home: BusinessDashboardScreen()),
     ));
 
     expect(find.text('Welcome to Business Dashboard'), findsOneWidget);
+
+    verifyZeroInteractions(firestore);
   });
 }

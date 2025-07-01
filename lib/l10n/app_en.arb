@@ -59,9 +59,12 @@
   "@undo": {
     "description": "Undo button text"
   },
-  "opened": "Opened",
+  "opened": "Opened: {count}",
   "@opened": {
-    "description": "Opened status"
+    "description": "Opened status with count",
+    "placeholders": {
+      "count": {}
+    }
   },
   "createVirtualSession": "Create Virtual Session",
   "@createVirtualSession": {
@@ -87,9 +90,12 @@
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "Created",
+  "created": "Created: {date}",
   "@created": {
-    "description": "Created status"
+    "description": "Created status with date",
+    "placeholders": {
+      "date": {}
+    }
   },
   "revokeAccess": "Revoke Access",
   "@revokeAccess": {
@@ -115,9 +121,12 @@
   "@password": {
     "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "Error loading family links",
+  "errorLoadingFamilyLinks": "Error loading family links: {error}",
   "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message"
+    "description": "Error loading family links message",
+    "placeholders": {
+      "error": {}
+    }
   },
   "cancel": "Cancel",
   "@cancel": {
@@ -127,9 +136,13 @@
   "@playtimeCreate": {
     "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "Failed to action privacy request",
+  "failedToActionPrivacyRequest": "Failed to action privacy request {action}: {error}",
   "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message"
+    "description": "Failed to action privacy request message",
+    "placeholders": {
+      "action": {},
+      "error": {}
+    }
   },
   "appTitle": "APP-OINT",
   "@appTitle": {
@@ -163,9 +176,12 @@
   "@participants": {
     "description": "Participants label"
   },
-  "recipients": "Recipients",
+  "recipients": "Recipients: {count}",
   "@recipients": {
-    "description": "Recipients label"
+    "description": "Recipients label with count",
+    "placeholders": {
+      "count": {}
+    }
   },
   "noResults": "No results found",
   "@noResults": {
@@ -211,13 +227,19 @@
   "@enableNotifications": {
     "description": "Enable notifications label"
   },
-  "invited": "Invited",
+  "invited": "Invited: {date}",
   "@invited": {
-    "description": "Invited status"
+    "description": "Invited status with date",
+    "placeholders": {
+      "date": {}
+    }
   },
-  "content": "Content",
+  "content": "Content: {content}",
   "@content": {
-    "description": "Content label"
+    "description": "Content label with content",
+    "placeholders": {
+      "content": {}
+    }
   },
   "meetingSharedSuccessfully": "Meeting shared successfully",
   "@meetingSharedSuccessfully": {
@@ -283,9 +305,12 @@
   "@removeChild": {
     "description": "Remove child button"
   },
-  "status": "Status",
+  "status": "Status: {status}",
   "@status": {
-    "description": "Status label"
+    "description": "Status label with value",
+    "placeholders": {
+      "status": {}
+    }
   },
   "logout": "Logout",
   "@logout": {
@@ -351,9 +376,12 @@
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "Type",
+  "type": "Type: {type}",
   "@type": {
-    "description": "Type label"
+    "description": "Type label with value",
+    "placeholders": {
+      "type": {}
+    }
   },
   "checkingPermissions": "Checking permissions...",
   "@checkingPermissions": {
@@ -391,9 +419,12 @@
   "@noBroadcastMessages": {
     "description": "No broadcast messages message"
   },
-  "requestType": "Request Type",
+  "requestType": "Request Type: {type}",
   "@requestType": {
-    "description": "Request type label"
+    "description": "Request type label with value",
+    "placeholders": {
+      "type": {}
+    }
   },
   "notifications": "Notifications",
   "@notifications": {
@@ -459,17 +490,23 @@
   "@otpResentSuccessfully": {
     "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "Error checking permissions",
+  "errorCheckingPermissions": "Error checking permissions: {error}",
   "@errorCheckingPermissions": {
-    "description": "Error checking permissions message"
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {}
+    }
   },
   "clientScreenTBD": "Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
   },
-  "fcmToken": "FCM Token",
+  "fcmToken": "FCM Token: {token}",
   "@fcmToken": {
-    "description": "FCM token label"
+    "description": "FCM token label",
+    "placeholders": {
+      "token": {}
+    }
   },
   "pickImage": "Pick Image",
   "@pickImage": {
@@ -515,21 +552,30 @@
   "@inviteDetail": {
     "description": "Invite detail title"
   },
-  "scheduled": "Scheduled",
+  "scheduled": "Scheduled: {date}",
   "@scheduled": {
-    "description": "Scheduled status"
+    "description": "Scheduled status with date",
+    "placeholders": {
+      "date": {}
+    }
   },
-  "failedToResendOtp": "Failed to resend OTP",
+  "failedToResendOtp": "Failed to resend OTP: {error}",
   "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
+    "description": "Failed to resend OTP message",
+    "placeholders": {
+      "error": {}
+    }
   },
   "scheduling": "Scheduling",
   "@scheduling": {
     "description": "Scheduling label"
   },
-  "errorSavingMessage": "Error saving message",
+  "errorSavingMessage": "Error saving message: {error}",
   "@errorSavingMessage": {
-    "description": "Error saving message message"
+    "description": "Error saving message message",
+    "placeholders": {
+      "error": {}
+    }
   },
   "save": "Save",
   "@save": {
@@ -547,9 +593,12 @@
   "@playtimeGameRejected": {
     "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "Failed to revoke access",
+  "failedToRevokeAccess": "Failed to revoke access: {error}",
   "@failedToRevokeAccess": {
-    "description": "Failed to revoke access message"
+    "description": "Failed to revoke access message",
+    "placeholders": {
+      "error": {}
+    }
   },
   "recentGames": "Recent Games",
   "@recentGames": {
@@ -559,21 +608,30 @@
   "@customizeMessage": {
     "description": "Customize message button"
   },
-  "failedToCancelInvite": "Failed to cancel invite",
+  "failedToCancelInvite": "Failed to cancel invite: {error}",
   "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
+    "description": "Failed to cancel invite message",
+    "placeholders": {
+      "error": {}
+    }
   },
-  "errorSendingMessage": "Error sending message",
+  "errorSendingMessage": "Error sending message: {error}",
   "@errorSendingMessage": {
-    "description": "Error sending message message"
+    "description": "Error sending message message",
+    "placeholders": {
+      "error": {}
+    }
   },
   "confirmPassword": "Confirm Password",
   "@confirmPassword": {
     "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "Error loading privacy requests: {error}",
   "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message"
+    "description": "Error loading privacy requests message",
+    "placeholders": {
+      "error": {}
+    }
   },
   "connectedChildren": "Connected Children",
   "@connectedChildren": {
@@ -639,13 +697,19 @@
   "@pollOptions": {
     "description": "Poll options label"
   },
-  "clicked": "Clicked",
+  "clicked": "Clicked: {count}",
   "@clicked": {
-    "description": "Clicked status"
+    "description": "Clicked status with count",
+    "placeholders": {
+      "count": {}
+    }
   },
-  "link": "Link",
+  "link": "Link: {link}",
   "@link": {
-    "description": "Link label"
+    "description": "Link label with url",
+    "placeholders": {
+      "link": {}
+    }
   },
   "meetingReadyMessage": "Your meeting is ready! Join now",
   "@meetingReadyMessage": {
@@ -655,9 +719,12 @@
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "Status:",
+  "statusColon": "Status: {status}",
   "@statusColon": {
-    "description": "Status colon label"
+    "description": "Status colon label with value",
+    "placeholders": {
+      "status": {}
+    }
   },
   "@@locale": "en",
   "pleaseLoginToViewProfile": "Please log in to view your profile."
