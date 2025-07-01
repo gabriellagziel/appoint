@@ -26,7 +26,7 @@ jobs:
       # network checks removed for offline usage
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.20.0'
+          flutter-version: '3.32.0'
       - run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Configure Network Allowlist
         run: |
@@ -36,13 +36,13 @@ jobs:
           which dart
           dart --version
       # network checks removed for offline usage
-      - run: flutter pub get --offline
+      - run: flutter pub get
       - run: dart pub get
       - name: Check Dart formatting
         run: dart format --output=none --set-exit-if-changed .
       - name: Analyze code
         run: flutter analyze --no-fatal-infos
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: dart test --coverage
       - name: Calculate coverage
         id: cov
@@ -71,3 +71,11 @@ jobs:
             echo "Coverage $pct% is below threshold" >&2
             exit 1
           fi
+      - name: Validate Firestore rules
+        run: |
+          npm install -g firebase-tools
+          firebase deploy --only firestore:rules --dry-run
+      - name: Validate Release Notes Script
+        run: |
+          chmod +x scripts/generate_release_notes.sh
+          scripts/generate_release_notes.sh 0.0.0 --dry-run
