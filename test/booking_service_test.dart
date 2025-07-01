@@ -3,7 +3,13 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:appoint/models/booking.dart';
 import './fake_firebase_setup.dart';
-import './fake_firebase_firestore.dart';
+import 'mocks/firebase_mocks.dart';
+
+class MockCollectionReference extends Mock
+    implements CollectionReference<Map<String, dynamic>> {}
+
+class MockDocumentReference extends Mock
+    implements DocumentReference<Map<String, dynamic>> {}
 
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -11,10 +17,16 @@ Future<void> main() async {
 
   group('BookingService', () {
     late BookingService bookingService;
-    late FakeFirebaseFirestore firestore;
+    late MockFirebaseFirestore firestore;
+    late MockCollectionReference collection;
+    late MockDocumentReference docRef;
 
     setUp(() {
-      firestore = FakeFirebaseFirestore();
+      firestore = MockFirebaseFirestore();
+      collection = MockCollectionReference();
+      docRef = MockDocumentReference();
+      when(firestore.collection('appointments')).thenReturn(collection);
+      when(collection.add(any)).thenAnswer((_) async => docRef);
       bookingService = BookingService(firestore: firestore);
     });
 
@@ -40,9 +52,9 @@ Future<void> main() async {
         createdAt: DateTime(2025, 6, 17),
       );
 
-      // Should complete without throwing
       await bookingService.createBooking(booking);
-      expect(true, isTrue); // If no error, test passes
+
+      verify(collection.add(booking.toJson())).called(1);
     });
 
     test('createBooking should return a Future<void>', () async {
@@ -92,7 +104,9 @@ Future<void> main() async {
 
       await bookingService.createBooking(shortBooking);
       await bookingService.createBooking(longBooking);
-      expect(true, isTrue); // If no error, test passes
+
+      verify(collection.add(shortBooking.toJson())).called(1);
+      verify(collection.add(longBooking.toJson())).called(1);
     });
 
     test('should handle booking with different confirmation statuses',
@@ -125,7 +139,9 @@ Future<void> main() async {
 
       await bookingService.createBooking(confirmedBooking);
       await bookingService.createBooking(pendingBooking);
-      expect(true, isTrue); // If no error, test passes
+
+      verify(collection.add(confirmedBooking.toJson())).called(1);
+      verify(collection.add(pendingBooking.toJson())).called(1);
     });
   });
 }
