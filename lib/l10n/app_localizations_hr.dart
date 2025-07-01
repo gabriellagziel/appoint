@@ -21,25 +21,25 @@ class AppLocalizationsHr extends AppLocalizations {
   String get ok => 'U redu';
 
   @override
-  String get playtimeLandingChooseMode => 'Odaberite način';
+  String get playtimeLandingChooseMode => '[HR] Choose your play mode:';
 
   @override
   String get signUp => 'Prijavi se';
 
   @override
-  String get scheduleMessage => 'Razvrstaj poruku';
+  String get scheduleMessage => '[HR] Schedule Message';
 
   @override
   String get decline => 'Odbij';
 
   @override
-  String get adminBroadcast => 'Administratorsko emitiranje';
+  String get adminBroadcast => '[HR] Admin Broadcast';
 
   @override
   String get login => 'Prijava';
 
   @override
-  String get playtimeChooseFriends => 'Odaberi prijatelje';
+  String get playtimeChooseFriends => '[HR] Choose friends to invite';
 
   @override
   String get noInvites => 'Nema pozivnica';
@@ -51,19 +51,21 @@ class AppLocalizationsHr extends AppLocalizations {
   String get success => 'Uspjeh';
 
   @override
-  String get undo => 'Poništi';
+  String get undo => '[HR] Undo';
 
   @override
-  String get opened => 'Otvoreno';
+  String opened(Object count) {
+    return '[HR] Opened';
+  }
 
   @override
   String get createVirtualSession => 'Kreiraj virtualnu sesiju';
 
   @override
-  String get messageSentSuccessfully => 'Poruka je uspješno poslana';
+  String get messageSentSuccessfully => '[HR] Message sent successfully';
 
   @override
-  String get redo => 'Ponovi';
+  String get redo => '[HR] Redo';
 
   @override
   String get next => 'Sljedeće';
@@ -76,11 +78,11 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String created(Object date) {
-    return 'Stvoreno';
+    return '[HR] Created';
   }
 
   @override
-  String get revokeAccess => 'Poništi pristup';
+  String get revokeAccess => '[HR] Revoke Access';
 
   @override
   String get saveGroupForRecognition => 'Spremi grupu za prepoznavanje';
@@ -89,13 +91,14 @@ class AppLocalizationsHr extends AppLocalizations {
   String get playtimeLiveScheduled => 'Živa sesija zakazana';
 
   @override
-  String get revokeAccessConfirmation => 'Potvrda poništenja pristupa';
+  String get revokeAccessConfirmation =>
+      '[HR] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Preuzmi';
 
   @override
-  String get password => 'Lozinka';
+  String get password => '[HR] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
@@ -110,17 +113,17 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Neuspjelo postupanje po zahtjevu za privatnost';
+    return '[HR] Failed to action privacy request';
   }
 
   @override
   String get appTitle => 'Naslov aplikacije';
 
   @override
-  String get accept => 'Prihvati';
+  String get accept => '[HR] Accept';
 
   @override
-  String get playtimeModeVirtual => 'Virtualni način';
+  String get playtimeModeVirtual => '[HR] Virtual Play';
 
   @override
   String get playtimeDescription => 'Opis Playtime';
@@ -135,15 +138,15 @@ class AppLocalizationsHr extends AppLocalizations {
   String get createYourFirstGame => 'Kreiraj svoju prvu igru';
 
   @override
-  String get participants => 'Sudionici';
+  String get participants => '[HR] Participants';
 
   @override
   String recipients(Object count) {
-    return 'Primatelji';
+    return '[HR] Recipients';
   }
 
   @override
-  String get noResults => 'Nema rezultata';
+  String get noResults => '[HR] No results found';
 
   @override
   String get yes => 'Da';
@@ -152,13 +155,13 @@ class AppLocalizationsHr extends AppLocalizations {
   String get invite => 'Pozovi';
 
   @override
-  String get playtimeModeLive => 'Live način';
+  String get playtimeModeLive => '[HR] Live Play';
 
   @override
-  String get done => 'Gotovo';
+  String get done => '[HR] Done';
 
   @override
-  String get defaultShareMessage => 'Zadana poruka za dijeljenje';
+  String get defaultShareMessage => '[HR] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Ne';
@@ -198,7 +201,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get playtimeVirtual => 'Virtualni Playtime';
 
   @override
-  String get staffScreenTBD => 'Zaslon osoblja će biti određen';
+  String get staffScreenTBD => '[HR] Staff screen coming soon';
 
   @override
   String get cut => 'Izreži';
@@ -207,10 +210,10 @@ class AppLocalizationsHr extends AppLocalizations {
   String get inviteCancelledSuccessfully => 'Poziv je uspješno otkazan';
 
   @override
-  String get retry => 'Pokušaj ponovno';
+  String get retry => '[HR] Retry';
 
   @override
-  String get composeBroadcastMessage => 'Sastavi emitiranu poruku';
+  String get composeBroadcastMessage => '[HR] Compose Broadcast Message';
 
   @override
   String get sendNow => 'Pošalji sada';
@@ -228,14 +231,14 @@ class AppLocalizationsHr extends AppLocalizations {
   String get choose => 'Odaberi';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[HR] Profile';
 
   @override
-  String get removeChild => 'Ukloni dijete';
+  String get removeChild => '[HR] Remove Child';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return '[HR] Status';
   }
 
   @override
@@ -269,9 +272,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get playtimeLive => 'Playtime uživo';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Greška pri učitavanju pozivnica';
-  }
+  String get errorLoadingInvites => 'Greška pri učitavanju pozivnica';
 
   @override
   String get targetingFilters => 'Filtri cilja';
@@ -286,10 +287,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get scheduleForLater => 'Zakaži za kasnije';
 
   @override
-  String get accessRevokedSuccessfully => 'Pristup uspješno poništen';
+  String get accessRevokedSuccessfully => '[HR] Access revoked successfully';
 
   @override
-  String get type => 'Vrsta';
+  String type(Object type) {
+    return 'Vrsta';
+  }
 
   @override
   String get checkingPermissions => 'Provjera dozvola';
@@ -304,19 +307,19 @@ class AppLocalizationsHr extends AppLocalizations {
   String get email => 'Email';
 
   @override
-  String get shareOnWhatsApp => 'Podijeli na WhatsApp';
+  String get shareOnWhatsApp => '[HR] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Postavke obavijesti';
 
   @override
-  String get myProfile => 'Moj profil';
+  String get myProfile => '[HR] My Profile';
 
   @override
-  String get revoke => 'Poništi';
+  String get revoke => '[HR] Revoke';
 
   @override
-  String get noBroadcastMessages => 'Nema emitiranih poruka';
+  String get noBroadcastMessages => '[HR] No messages yet';
 
   @override
   String requestType(Object type) {
@@ -342,9 +345,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get playtimeReject => 'Odbaci Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Greška pri učitavanju profila';
-  }
+  String get errorLoadingProfile => '[HR] Error loading profile';
 
   @override
   String get edit => 'Uredi';
@@ -356,10 +357,10 @@ class AppLocalizationsHr extends AppLocalizations {
   String get playtimeGameApproved => 'Igra je odobrena';
 
   @override
-  String get forgotPassword => 'Zaboravili ste lozinku?';
+  String get forgotPassword => '[HR] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Obiteljska nadzorna ploča';
+  String get familyDashboard => '[HR] Family Dashboard';
 
   @override
   String get loading => 'Učitavanje';
@@ -371,7 +372,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get playtimeTitle => 'Naslov Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP je ponovno poslan';
+  String get otpResentSuccessfully => '[HR] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
@@ -379,11 +380,11 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get clientScreenTBD => 'Zaslon klijenta bit će određen';
+  String get clientScreenTBD => '[HR] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM token';
+    return '[HR] FCM Token';
   }
 
   @override
@@ -393,29 +394,28 @@ class AppLocalizationsHr extends AppLocalizations {
   String get previous => 'Prethodno';
 
   @override
-  String get noProfileFound => 'Profil nije pronađen';
+  String get noProfileFound => '[HR] No profile found';
 
   @override
   String get noFamilyMembersYet => 'Još nema članova obitelji';
 
   @override
-  String get mediaOptional => 'Mediji (opcionalno)';
+  String get mediaOptional => '[HR] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => 'Poruka je uspješno spremljena';
+  String get messageSavedSuccessfully => '[HR] Message saved successfully';
 
   @override
   String get scheduledFor => 'Zakaženo za';
 
   @override
-  String get dashboard => 'Nadzorna ploča';
+  String get dashboard => '[HR] Dashboard';
 
   @override
   String get noPermissionForBroadcast => 'Nema dozvole za emitiranje';
 
   @override
-  String get playtimeAdminPanelTitle =>
-      'Naslov administratorske ploče Playtime';
+  String get playtimeAdminPanelTitle => '[HR] Playtime Games – Admin';
 
   @override
   String get inviteDetail => 'Detalji poziva';
@@ -427,7 +427,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Ponovno slanje OTP-a nije uspjelo';
+    return '[HR] Failed to resend OTP';
   }
 
   @override
@@ -435,7 +435,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Greška pri spremanju poruke';
+    return '[HR] Error saving message';
   }
 
   @override
@@ -459,7 +459,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get recentGames => 'Nedavne igre';
 
   @override
-  String get customizeMessage => 'Prilagodi poruku';
+  String get customizeMessage => '[HR] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
@@ -468,15 +468,15 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Greška pri slanju poruke';
+    return '[HR] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Potvrdi lozinku';
+  String get confirmPassword => '[HR] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Greška pri učitavanju zahtjeva za privatnošću';
+    return '[HR] Error loading privacy requests';
   }
 
   @override
@@ -499,26 +499,25 @@ class AppLocalizationsHr extends AppLocalizations {
   String get createGame => 'Kreiraj igru';
 
   @override
-  String get groupNameOptional => 'Naziv grupe (opcionalno)';
+  String get groupNameOptional => '[HR] Group Name (Optional)';
 
   @override
   String get playtimeNoSessions => 'Nema Playtime sesija';
 
   @override
-  String get adminScreenTBD => 'Administratorski zaslon bit će određen';
+  String get adminScreenTBD => '[HR] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      'Naslov roditeljske nadzorne ploče Playtime';
+  String get playtimeParentDashboardTitle => '[HR] Playtime Dashboard';
 
   @override
-  String get close => 'Zatvori';
+  String get close => '[HR] Close';
 
   @override
-  String get knownGroupDetected => 'Prepoznata poznata grupa';
+  String get knownGroupDetected => '[HR] Known group detected';
 
   @override
-  String get back => 'Natrag';
+  String get back => '[HR] Back';
 
   @override
   String get playtimeChooseGame => 'Odaberi igru';
@@ -531,7 +530,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String clicked(Object count) {
-    return 'Kliknuto';
+    return '[HR] Clicked';
   }
 
   @override
@@ -547,9 +546,28 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[HR] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Prijavite se za pregled profila';
+  String get pleaseLoginToViewProfile =>
+      '[HR] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

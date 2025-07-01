@@ -7,13 +7,13 @@ class ErrorScreen extends StatelessWidget {
   final VoidCallback onTryAgain;
 
   const ErrorScreen({
-    Key? key,
+    final Key? key,
     required this.message,
     required this.onTryAgain,
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       body: Center(
         child: Column(

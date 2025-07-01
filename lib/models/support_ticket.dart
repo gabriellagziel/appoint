@@ -1,4 +1,4 @@
-import '../utils/datetime_converter.dart';
+import 'package:appoint/utils/datetime_converter.dart';
 
 class SupportTicket {
   final String id;
@@ -18,7 +18,7 @@ class SupportTicket {
     this.status = 'open',
   });
 
-  factory SupportTicket.fromJson(Map<String, dynamic> json) {
+  factory SupportTicket.fromJson(final Map<String, dynamic> json) {
     return SupportTicket(
       id: json['id'] as String,
       userId: json['userId'] as String,

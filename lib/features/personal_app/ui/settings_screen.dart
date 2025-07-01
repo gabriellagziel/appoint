@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 
-import '../../../providers/ambassador_record_provider.dart';
+import 'package:appoint/providers/ambassador_record_provider.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final ambassadorAsync = ref.watch(ambassadorRecordProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Settings')),
       body: ambassadorAsync.when(
-        data: (ambassador) {
+        data: (final ambassador) {
           if (ambassador == null) {
             return Center(
               child: ElevatedButton(
@@ -51,7 +51,7 @@ class SettingsScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (final e, final _) => Center(child: Text('Error: $e')),
       ),
     );
   }

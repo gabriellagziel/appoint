@@ -2,11 +2,11 @@ import 'dart:core';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../models/contact.dart';
-import '../../providers/invite_provider.dart';
+import 'package:appoint/models/contact.dart';
+import 'package:appoint/providers/invite_provider.dart';
 
 class InviteRequestScreen extends ConsumerStatefulWidget {
-  const InviteRequestScreen({Key? key}) : super(key: key);
+  const InviteRequestScreen({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<InviteRequestScreen> createState() =>
@@ -29,7 +29,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final String appointmentId =
         ModalRoute.of(context)!.settings.arguments as String;
     return Scaffold(
@@ -43,7 +43,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
               TextFormField(
                 controller: _nameController,
                 decoration: const InputDecoration(labelText: 'Name'),
-                validator: (value) {
+                validator: (final value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter a name';
                   }
@@ -53,7 +53,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
               TextFormField(
                 controller: _phoneController,
                 decoration: const InputDecoration(labelText: 'Phone Number'),
-                validator: (value) {
+                validator: (final value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter a phone number';
                   }
@@ -68,7 +68,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
               SwitchListTile(
                 title: const Text('Requires Install Fallback'),
                 value: _requiresInstallFallback,
-                onChanged: (v) => setState(() => _requiresInstallFallback = v),
+                onChanged: (final v) => setState(() => _requiresInstallFallback = v),
               ),
               const SizedBox(height: 16),
               ElevatedButton(

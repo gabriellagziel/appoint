@@ -54,7 +54,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get undo => 'Отменить';
 
   @override
-  String get opened => 'Открыто';
+  String opened(Object count) {
+    return 'Открыто';
+  }
 
   @override
   String get createVirtualSession => 'Создать виртуальную сессию';
@@ -269,9 +271,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get playtimeLive => 'Живой Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Ошибка загрузки приглашений';
-  }
+  String get errorLoadingInvites => 'Ошибка загрузки приглашений';
 
   @override
   String get targetingFilters => 'Фильтры таргетинга';
@@ -289,7 +289,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get accessRevokedSuccessfully => 'Доступ успешно отозван';
 
   @override
-  String get type => 'Тип';
+  String type(Object type) {
+    return 'Тип';
+  }
 
   @override
   String get checkingPermissions => 'Проверка разрешений';
@@ -304,7 +306,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get email => 'Электронная почта';
 
   @override
-  String get shareOnWhatsApp => 'Поделиться в WhatsApp';
+  String get shareOnWhatsApp => '[RU] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Настройки уведомлений';
@@ -342,9 +344,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get playtimeReject => 'Отклонить Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Ошибка загрузки профиля';
-  }
+  String get errorLoadingProfile => 'Ошибка загрузки профиля';
 
   @override
   String get edit => 'Редактировать';
@@ -452,7 +452,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Не удалось отозвать доступ';
+    return '[RU] Failed to revoke access';
   }
 
   @override
@@ -490,67 +490,84 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Пожалуйста, войдите, чтобы получить доступ к семейным функциям';
+      '[RU] Please login to access family features';
 
   @override
-  String get myInvites => 'Мои приглашения';
+  String get myInvites => '[RU] My Invites';
 
   @override
-  String get createGame => 'Создать игру';
+  String get createGame => '[RU] Create Game';
 
   @override
-  String get groupNameOptional => 'Название группы (необязательно)';
+  String get groupNameOptional => '[RU] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Сессии Playtime не найдены.';
+  String get playtimeNoSessions => '[RU] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Экран администратора скоро будет доступен';
+  String get adminScreenTBD => '[RU] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Панель управления Playtime';
+  String get playtimeParentDashboardTitle => '[RU] Playtime Dashboard';
 
   @override
-  String get close => 'Закрыть';
+  String get close => '[RU] Close';
 
   @override
-  String get knownGroupDetected => 'Обнаружена известная группа';
+  String get knownGroupDetected => '[RU] Known group detected';
 
   @override
-  String get back => 'Назад';
+  String get back => '[RU] Back';
 
   @override
-  String get playtimeChooseGame => 'Выберите игру';
+  String get playtimeChooseGame => '[RU] Choose a game';
 
   @override
-  String get managePermissions => 'Управление разрешениями';
+  String get managePermissions => '[RU] Manage Permissions';
 
   @override
-  String get pollOptions => 'Варианты опроса';
+  String get pollOptions => '[RU] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Нажато';
+    return '[RU] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Ссылка';
+    return '[RU] Link';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'Ваша встреча готова! Присоединяйтесь сейчас';
+  String get meetingReadyMessage => '[RU] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Ожидающие приглашения';
+  String get pendingInvites => '[RU] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Статус:';
+    return '[RU] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
       'Пожалуйста, войдите, чтобы просмотреть профиль';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

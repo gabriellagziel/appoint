@@ -30,10 +30,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get scheduleMessage => 'Programează mesaj';
 
   @override
-  String get decline => 'Respinge';
+  String get decline => '[RO] Decline';
 
   @override
-  String get adminBroadcast => 'Transmitere administrator';
+  String get adminBroadcast => '[RO] Admin Broadcast';
 
   @override
   String get login => 'Autentificare';
@@ -42,10 +42,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get playtimeChooseFriends => 'Alege prieteni';
 
   @override
-  String get noInvites => 'Fără invitații';
+  String get noInvites => '[RO] No invites';
 
   @override
-  String get playtimeChooseTime => 'Alege ora';
+  String get playtimeChooseTime => '[RO] Choose a time';
 
   @override
   String get success => 'Succes';
@@ -54,7 +54,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get undo => 'Anulează';
 
   @override
-  String get opened => 'Deschis';
+  String opened(Object count) {
+    return 'Deschis';
+  }
 
   @override
   String get createVirtualSession => 'Creează sesiune virtuală';
@@ -66,17 +68,18 @@ class AppLocalizationsRo extends AppLocalizations {
   String get redo => 'Repetă';
 
   @override
-  String get next => 'Următorul';
+  String get next => '[RO] Next';
 
   @override
   String get search => 'Caută';
 
   @override
-  String get cancelInviteConfirmation => 'Anulează confirmarea invitației';
+  String get cancelInviteConfirmation =>
+      '[RO] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return 'Creat';
+    return '[RO] Created';
   }
 
   @override
@@ -86,10 +89,11 @@ class AppLocalizationsRo extends AppLocalizations {
   String get saveGroupForRecognition => 'Salvează grup pentru recunoaștere';
 
   @override
-  String get playtimeLiveScheduled => 'Sesiune live programată';
+  String get playtimeLiveScheduled => '[RO] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Confirmare revocare acces';
+  String get revokeAccessConfirmation =>
+      '[RO] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Descarcă';
@@ -99,7 +103,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Eroare la încărcarea legăturilor de familie';
+    return '[RO] Error loading family links';
   }
 
   @override
@@ -110,7 +114,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Nu s-a putut procesa cererea de confidențialitate';
+    return '[RO] Failed to action privacy request';
   }
 
   @override
@@ -139,23 +143,23 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String recipients(Object count) {
-    return 'Destinatari';
+    return '[RO] Recipients';
   }
 
   @override
-  String get noResults => 'Fără rezultate';
+  String get noResults => '[RO] No results found';
 
   @override
   String get yes => 'Da';
 
   @override
-  String get invite => 'Invită';
+  String get invite => '[RO] Invite';
 
   @override
   String get playtimeModeLive => 'Mod live';
 
   @override
-  String get done => 'Gata';
+  String get done => '[RO] Done';
 
   @override
   String get defaultShareMessage => 'Mesaj implicit pentru distribuire';
@@ -177,34 +181,35 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String invited(Object date) {
-    return 'Invitat';
+    return '[RO] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'Conținut';
+    return '[RO] Content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Întâlnire partajată cu succes';
+  String get meetingSharedSuccessfully => '[RO] Meeting shared successfully';
 
   @override
-  String get welcomeToPlaytime => 'Bine ai venit la Playtime';
+  String get welcomeToPlaytime => '[RO] Welcome to Playtime';
 
   @override
-  String get viewAll => 'Vezi tot';
+  String get viewAll => '[RO] View All';
 
   @override
   String get playtimeVirtual => 'Playtime virtual';
 
   @override
-  String get staffScreenTBD => 'Ecran personal de definit';
+  String get staffScreenTBD => '[RO] Staff screen coming soon';
 
   @override
   String get cut => 'Decupează';
 
   @override
-  String get inviteCancelledSuccessfully => 'Invitație anulată cu succes';
+  String get inviteCancelledSuccessfully =>
+      '[RO] Invite cancelled successfully';
 
   @override
   String get retry => 'Reîncearcă';
@@ -228,10 +233,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get choose => 'Alege';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[RO] Profile';
 
   @override
-  String get removeChild => 'Elimină copil';
+  String get removeChild => '[RO] Remove Child';
 
   @override
   String status(Object status) {
@@ -239,13 +244,13 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get logout => 'Deconectare';
+  String get logout => '[RO] Logout';
 
   @override
   String get paste => 'Lipește';
 
   @override
-  String get welcome => 'Bine ai venit';
+  String get welcome => '[RO] Welcome';
 
   @override
   String get playtimeCreateSession => 'Creează sesiune';
@@ -257,24 +262,22 @@ class AppLocalizationsRo extends AppLocalizations {
   String get upload => 'Încarcă';
 
   @override
-  String get upcomingSessions => 'Sesiuni viitoare';
+  String get upcomingSessions => '[RO] Upcoming Sessions';
 
   @override
-  String get enterGroupName => 'Introdu numele grupului';
+  String get enterGroupName => '[RO] Enter group name';
 
   @override
-  String get confirm => 'Confirmă';
+  String get confirm => '[RO] Confirm';
 
   @override
   String get playtimeLive => 'Playtime live';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Eroare la încărcarea invitațiilor';
-  }
+  String get errorLoadingInvites => '[RO] Error loading invites';
 
   @override
-  String get targetingFilters => 'Filtre țintă';
+  String get targetingFilters => '[RO] Targeting Filters';
 
   @override
   String get pickVideo => 'Alege video';
@@ -286,10 +289,12 @@ class AppLocalizationsRo extends AppLocalizations {
   String get scheduleForLater => 'Programează pentru mai târziu';
 
   @override
-  String get accessRevokedSuccessfully => 'Acces revocat cu succes';
+  String get accessRevokedSuccessfully => '[RO] Access revoked successfully';
 
   @override
-  String get type => 'Tip';
+  String type(Object type) {
+    return 'Tip';
+  }
 
   @override
   String get checkingPermissions => 'Verificare permisiuni';
@@ -304,13 +309,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get email => 'Email';
 
   @override
-  String get shareOnWhatsApp => 'Partajează pe WhatsApp';
+  String get shareOnWhatsApp => '[RO] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Setări notificări';
 
   @override
-  String get myProfile => 'Profilul meu';
+  String get myProfile => '[RO] My Profile';
 
   @override
   String get revoke => 'Revocă';
@@ -330,7 +335,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get details => 'Detalii';
 
   @override
-  String get cancelInvite => 'Anulează invitația';
+  String get cancelInvite => '[RO] Cancel Invite';
 
   @override
   String get createNew => 'Creează nou';
@@ -339,12 +344,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get settings => 'Setări';
 
   @override
-  String get playtimeReject => 'Respinge Playtime';
+  String get playtimeReject => '[RO] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Eroare la încărcarea profilului';
-  }
+  String get errorLoadingProfile => '[RO] Error loading profile';
 
   @override
   String get edit => 'Editează';
@@ -353,10 +356,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get add => 'Adaugă';
 
   @override
-  String get playtimeGameApproved => 'Joc aprobat';
+  String get playtimeGameApproved => '[RO] Game approved';
 
   @override
-  String get forgotPassword => 'Ai uitat parola?';
+  String get forgotPassword => '[RO] Forgot Password?';
 
   @override
   String get familyDashboard => 'Panou familie';
@@ -375,53 +378,53 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Eroare la verificarea permisiunilor';
+    return '[RO] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Ecran client de definit';
+  String get clientScreenTBD => '[RO] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'Token FCM';
+    return '[RO] FCM Token';
   }
 
   @override
-  String get pickImage => 'Alege imagine';
+  String get pickImage => '[RO] Pick Image';
 
   @override
-  String get previous => 'Anterior';
+  String get previous => '[RO] Previous';
 
   @override
-  String get noProfileFound => 'Profil neidentificat';
+  String get noProfileFound => '[RO] No profile found';
 
   @override
   String get noFamilyMembersYet => 'Fără membri de familie';
 
   @override
-  String get mediaOptional => 'Media (opțional)';
+  String get mediaOptional => '[RO] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => 'Mesaj salvat cu succes';
+  String get messageSavedSuccessfully => '[RO] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Programat pentru';
+  String get scheduledFor => '[RO] Scheduled for';
 
   @override
-  String get dashboard => 'Tablou de bord';
+  String get dashboard => '[RO] Dashboard';
 
   @override
   String get noPermissionForBroadcast => 'Fără permisiune pentru broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Titlu panou admin Playtime';
+  String get playtimeAdminPanelTitle => '[RO] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Detaliu invitație';
+  String get inviteDetail => '[RO] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return 'Programat';
+    return '[RO] Scheduled';
   }
 
   @override
@@ -447,22 +450,22 @@ class AppLocalizationsRo extends AppLocalizations {
   String get createYourFirstSession => 'Creează prima sesiune';
 
   @override
-  String get playtimeGameRejected => 'Joc respins';
+  String get playtimeGameRejected => '[RO] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Nu s-a putut revoca accesul';
+    return '[RO] Failed to revoke access';
   }
 
   @override
   String get recentGames => 'Jocuri recente';
 
   @override
-  String get customizeMessage => 'Personalizează mesaj';
+  String get customizeMessage => '[RO] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Nu s-a putut anula invitația';
+    return '[RO] Failed to cancel invite';
   }
 
   @override
@@ -471,85 +474,102 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get confirmPassword => 'Confirmă parola';
+  String get confirmPassword => '[RO] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Eroare la încărcarea cererilor de confidențialitate';
+    return '[RO] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Copii conectați';
+  String get connectedChildren => '[RO] Connected Children';
 
   @override
   String get share => 'Partajează';
 
   @override
-  String get playtimeEnterGameName => 'Introdu numele jocului';
+  String get playtimeEnterGameName => '[RO] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Autentifică-te pentru a accesa funcțiile de familie';
+      '[RO] Please login to access family features';
 
   @override
-  String get myInvites => 'Invitațiile mele';
+  String get myInvites => '[RO] My Invites';
 
   @override
-  String get createGame => 'Creează joc';
+  String get createGame => '[RO] Create Game';
 
   @override
-  String get groupNameOptional => 'Numele grupului (opțional)';
+  String get groupNameOptional => '[RO] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Nu s-au găsit sesiuni playtime.';
+  String get playtimeNoSessions => '[RO] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD =>
-      'Ecranul administratorului va fi disponibil în curând';
+  String get adminScreenTBD => '[RO] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Tabloul de bord Playtime';
+  String get playtimeParentDashboardTitle => '[RO] Playtime Dashboard';
 
   @override
-  String get close => 'Închide';
+  String get close => '[RO] Close';
 
   @override
-  String get knownGroupDetected => 'Grup cunoscut detectat';
+  String get knownGroupDetected => '[RO] Known group detected';
 
   @override
-  String get back => 'Înapoi';
+  String get back => '[RO] Back';
 
   @override
-  String get playtimeChooseGame => 'Alege un joc';
+  String get playtimeChooseGame => '[RO] Choose a game';
 
   @override
-  String get managePermissions => 'Gestionează permisiunile';
+  String get managePermissions => '[RO] Manage Permissions';
 
   @override
-  String get pollOptions => 'Opțiuni sondaj';
+  String get pollOptions => '[RO] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Apăsat';
+    return '[RO] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[RO] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Întâlnirea ta este gata! Alătură-te acum';
+  String get meetingReadyMessage => '[RO] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Invitații în așteptare';
+  String get pendingInvites => '[RO] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Stare:';
+    return '[RO] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      'Autentifică-te pentru a vedea profilul';
+      '[RO] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

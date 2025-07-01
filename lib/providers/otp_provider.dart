@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../services/family_service.dart';
-import 'family_provider.dart';
+import 'package:appoint/services/family_service.dart';
+import 'package:appoint/providers/family_provider.dart';
 
 // OTP flow states
 enum OtpState { idle, sending, codeSent, verifying, success, error }
@@ -10,7 +10,7 @@ class OtpNotifier extends StateNotifier<OtpState> {
 
   OtpNotifier(this._familyService) : super(OtpState.idle);
 
-  Future<void> sendOtp(String childContact, String parentId) async {
+  Future<void> sendOtp(final String childContact, final String parentId) async {
     state = OtpState.sending;
     try {
       await _familyService.sendOtp(childContact, parentId);
@@ -20,7 +20,7 @@ class OtpNotifier extends StateNotifier<OtpState> {
     }
   }
 
-  Future<void> verifyOtp(String childContact, String code) async {
+  Future<void> verifyOtp(final String childContact, final String code) async {
     state = OtpState.verifying;
     try {
       final result = await _familyService.verifyOtp(childContact, code);
@@ -35,7 +35,7 @@ class OtpNotifier extends StateNotifier<OtpState> {
   }
 }
 
-final otpProvider = StateNotifierProvider<OtpNotifier, OtpState>((ref) {
+final otpProvider = StateNotifierProvider<OtpNotifier, OtpState>((final ref) {
   final familyService = ref.watch(familyServiceProvider);
   return OtpNotifier(familyService);
 });

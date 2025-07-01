@@ -10,14 +10,14 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
   group('NotificationsScreen', () {
-    testWidgets('shows notifications from provider', (tester) async {
+    testWidgets('shows notifications from provider', (final tester) async {
       final notifications = [
         NotificationPayload(id: '1', title: 'A', body: 'a'),
         NotificationPayload(id: '2', title: 'B', body: 'b'),
       ];
 
       final container = ProviderContainer(overrides: [
-        userNotificationsProvider.overrideWith((ref) async => notifications),
+        userNotificationsProvider.overrideWith((final ref) async => notifications),
       ]);
 
       await tester.pumpWidget(

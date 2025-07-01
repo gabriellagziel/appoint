@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../providers/auth_provider.dart';
-import '../studio_business/entry/business_entry_screen.dart';
-import '../studio_profile/studio_profile_screen.dart';
-import '../admin/ui/admin_dashboard_screen.dart';
-import '../family/screens/family_dashboard_screen.dart';
-import 'home_screen.dart';
-import 'login_screen.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/features/studio_business/entry/business_entry_screen.dart';
+import 'package:appoint/features/studio_profile/studio_profile_screen.dart';
+import 'package:appoint/features/admin/ui/admin_dashboard_screen.dart';
+import 'package:appoint/features/family/screens/family_dashboard_screen.dart';
+import 'package:appoint/features/auth/home_screen.dart';
+import 'package:appoint/features/auth/login_screen.dart';
 
 class AuthWrapper extends ConsumerWidget {
-  const AuthWrapper({Key? key}) : super(key: key);
+  const AuthWrapper({final Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final authState = ref.watch(authStateProvider);
 
     return authState.when(
-      data: (user) {
+      data: (final user) {
         if (user == null) {
           return const LoginScreen();
         }
@@ -40,7 +40,7 @@ class AuthWrapper extends ConsumerWidget {
       loading: () => const Scaffold(
         body: Center(child: CircularProgressIndicator()),
       ),
-      error: (_, __) => const Scaffold(
+      error: (final _, final __) => const Scaffold(
         body: Center(child: Text('Error')),
       ),
     );

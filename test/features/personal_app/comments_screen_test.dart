@@ -8,7 +8,7 @@ Future<void> main() async {
   await initializeTestFirebase();
   group('CommentsScreen', () {
     testWidgets('shows input field and send button',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: CommentsScreen(),

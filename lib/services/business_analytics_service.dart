@@ -1,12 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 
-import '../models/business_analytics.dart';
+import 'package:appoint/models/business_analytics.dart';
 
 class BusinessAnalyticsService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<List<TimeSeriesPoint>> fetchBookingsOverTime({
-    DateTimeRange? range,
+    final DateTimeRange? range,
   }) async {
     try {
       Query<Map<String, dynamic>> query =
@@ -21,18 +22,20 @@ class BusinessAnalyticsService {
       for (final doc in snapshot.docs) {
         final ts = doc.data()['dateTime'] as Timestamp?;
         if (ts == null) continue;
-        final date = DateTime(ts.toDate().year, ts.toDate().month, ts.toDate().day);
-        counts.update(date, (value) => value + 1, ifAbsent: () => 1);
+        final date =
+            DateTime(ts.toDate().year, ts.toDate().month, ts.toDate().day);
+        counts.update(date, (final value) => value + 1, ifAbsent: () => 1);
       }
       return counts.entries
-          .map((e) => TimeSeriesPoint(date: e.key, count: e.value))
+          .map((final e) => TimeSeriesPoint(date: e.key, count: e.value))
           .toList()
-        ..sort((a, b) => a.date.compareTo(b.date));
+        ..sort((final a, final b) => a.date.compareTo(b.date));
     } catch (e) {
       // Return sample data when offline or on error
       final now = DateTime.now();
-      return List.generate(7, (i) {
-        return TimeSeriesPoint(date: now.subtract(Duration(days: 6 - i)), count: (i + 1) * 3);
+      return List.generate(7, (final i) {
+        return TimeSeriesPoint(
+            date: now.subtract(Duration(days: 6 - i)), count: (i + 1) * 3);
       });
     }
   }
@@ -43,16 +46,17 @@ class BusinessAnalyticsService {
       final Map<String, int> counts = {};
       for (final doc in snapshot.docs) {
         final service = doc.data()['serviceName'] as String? ?? 'Unknown';
-        counts.update(service, (value) => value + 1, ifAbsent: () => 1);
+        counts.update(service, (final value) => value + 1, ifAbsent: () => 1);
       }
       return counts.entries
-          .map((e) => ServiceDistribution(service: e.key, bookings: e.value))
+          .map((final e) =>
+              ServiceDistribution(service: e.key, bookings: e.value))
           .toList();
     } catch (e) {
       return [
-        const ServiceDistribution(service: 'Hair Cut', bookings: 20),
-        const ServiceDistribution(service: 'Color', bookings: 15),
-        const ServiceDistribution(service: 'Styling', bookings: 10),
+        ServiceDistribution(service: 'Hair Cut', bookings: 20),
+        ServiceDistribution(service: 'Color', bookings: 15),
+        ServiceDistribution(service: 'Styling', bookings: 10),
       ];
     }
   }
@@ -64,16 +68,17 @@ class BusinessAnalyticsService {
       for (final doc in snapshot.docs) {
         final staff = doc.data()['staffId'] as String? ?? 'unknown';
         final amount = (doc.data()['amount'] as num?)?.toDouble() ?? 0;
-        totals.update(staff, (value) => value + amount, ifAbsent: () => amount);
+        totals.update(staff, (final value) => value + amount,
+            ifAbsent: () => amount);
       }
       return totals.entries
-          .map((e) => RevenueByStaff(staff: e.key, revenue: e.value))
+          .map((final e) => RevenueByStaff(staff: e.key, revenue: e.value))
           .toList();
     } catch (e) {
       return [
-        const RevenueByStaff(staff: 'Alice', revenue: 1200),
-        const RevenueByStaff(staff: 'Bob', revenue: 950),
-        const RevenueByStaff(staff: 'Carla', revenue: 760),
+        RevenueByStaff(staff: 'Alice', revenue: 1200),
+        RevenueByStaff(staff: 'Bob', revenue: 950),
+        RevenueByStaff(staff: 'Carla', revenue: 760),
       ];
     }
   }

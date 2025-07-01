@@ -18,7 +18,7 @@ class ContentItem {
   });
 
   /// Constructs a [ContentItem] from Firestore data.
-  factory ContentItem.fromMap(String id, Map<String, dynamic> map) {
+  factory ContentItem.fromMap(final String id, final Map<String, dynamic> map) {
     final ts = map['createdAt'];
     DateTime created;
     if (ts is Timestamp) {

@@ -11,7 +11,7 @@ class Permission {
     required this.accessLevel,
   });
 
-  factory Permission.fromJson(Map<String, dynamic> json) => Permission(
+  factory Permission.fromJson(final Map<String, dynamic> json) => Permission(
         id: json['id'],
         familyLinkId: json['familyLinkId'],
         category: json['category'],

@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../providers/content_provider.dart';
+import 'package:appoint/providers/content_provider.dart';
 
 /// Shows details for a single content item.
 class ContentDetailScreen extends ConsumerWidget {
@@ -11,13 +11,13 @@ class ContentDetailScreen extends ConsumerWidget {
   const ContentDetailScreen({super.key, required this.contentId});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final contentAsync = ref.watch(contentByIdProvider(contentId));
 
     return Scaffold(
       appBar: AppBar(title: const Text('Content Detail')),
       body: contentAsync.when(
-        data: (item) {
+        data: (final item) {
           if (item == null) {
             return const Center(child: Text('Content not found'));
           }
@@ -39,7 +39,7 @@ class ContentDetailScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (final e, final _) => Center(child: Text('Error: $e')),
       ),
     );
   }

@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import '../../fake_firebase_setup.dart';
 import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
-import 'package:mockito/mockito.dart';
 import '../../mocks/firebase_mocks.dart';
 import 'package:appoint/features/booking/services/booking_service.dart';
 
@@ -17,7 +16,7 @@ Future<void> main() async {
   bookingService = BookingService(firestore: mockFirestore);
 
   group('ChatBookingScreen', () {
-    testWidgets('should display chat interface', (WidgetTester tester) async {
+    testWidgets('should display chat interface', (final WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(
@@ -33,7 +32,7 @@ Future<void> main() async {
     });
 
     testWidgets('should add user message when send button is pressed',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(
@@ -54,7 +53,7 @@ Future<void> main() async {
     });
 
     testWidgets('should show welcome message on initialization',
-        (WidgetTester tester) async {
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(

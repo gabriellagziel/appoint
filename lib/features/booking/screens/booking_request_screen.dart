@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../booking_helper.dart';
-import '../../../utils/snackbar_extensions.dart';
-import '../../selection/providers/selection_provider.dart';
+import 'package:appoint/features/booking/booking_helper.dart';
+import 'package:appoint/utils/snackbar_extensions.dart';
+import 'package:appoint/features/selection/providers/selection_provider.dart';
 
 class BookingRequestScreen extends ConsumerStatefulWidget {
   const BookingRequestScreen({super.key});
@@ -20,13 +20,13 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
 
     BookingHelper(ref)
         .submitBooking()
-        .then((_) {
+        .then((final _) {
           if (!mounted) return;
           context.showSnackBar('Booking confirmed');
           Navigator.pop(context);
         })
-        .catchError((e, st) {
-          debugPrint('Error during booking: $e\n$st');
+        .catchError((final e, final st) {
+          // Removed debug print: debugPrint('Error during booking: $e\n$st');
           if (!mounted) return;
           context.showSnackBar('Failed to confirm booking',
               backgroundColor: Colors.red);
@@ -37,7 +37,7 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final staffId = ref.watch(staffSelectionProvider);
     final serviceId = ref.watch(serviceSelectionProvider);
     final dateTime = ref.watch(selectedSlotProvider);

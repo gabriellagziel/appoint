@@ -9,13 +9,13 @@ class AppLocalizationsIt extends AppLocalizations {
   AppLocalizationsIt([String locale = 'it']) : super(locale);
 
   @override
-  String get refresh => 'Aggiorna';
+  String get refresh => '[IT] Refresh';
 
   @override
   String get home => 'Home';
 
   @override
-  String get noSessionsYet => 'Nessuna sessione disponibile';
+  String get noSessionsYet => '[IT] No sessions yet';
 
   @override
   String get ok => 'OK';
@@ -24,7 +24,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get playtimeLandingChooseMode => 'Scegli una modalità';
 
   @override
-  String get signUp => 'Registrati';
+  String get signUp => '[IT] Sign Up';
 
   @override
   String get scheduleMessage => 'Pianifica messaggio';
@@ -33,7 +33,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get decline => 'Rifiuta';
 
   @override
-  String get adminBroadcast => 'Trasmissione amministratore';
+  String get adminBroadcast => '[IT] Admin Broadcast';
 
   @override
   String get login => 'Accedi';
@@ -42,10 +42,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get playtimeChooseFriends => 'Scegli amici';
 
   @override
-  String get noInvites => 'Nessun invito';
+  String get noInvites => '[IT] No invites';
 
   @override
-  String get playtimeChooseTime => 'Scegli l\'orario';
+  String get playtimeChooseTime => '[IT] Choose a time';
 
   @override
   String get success => 'Successo';
@@ -54,13 +54,15 @@ class AppLocalizationsIt extends AppLocalizations {
   String get undo => 'Annulla';
 
   @override
-  String get opened => 'Aperto';
+  String opened(Object count) {
+    return '[IT] Opened';
+  }
 
   @override
-  String get createVirtualSession => 'Crea sessione virtuale';
+  String get createVirtualSession => '[IT] Create Virtual Session';
 
   @override
-  String get messageSentSuccessfully => 'Messaggio inviato con successo';
+  String get messageSentSuccessfully => '[IT] Message sent successfully';
 
   @override
   String get redo => 'Ripeti';
@@ -72,34 +74,36 @@ class AppLocalizationsIt extends AppLocalizations {
   String get search => 'Cerca';
 
   @override
-  String get cancelInviteConfirmation => 'Annulla conferma invito';
+  String get cancelInviteConfirmation =>
+      '[IT] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return 'Creato';
+    return '[IT] Created';
   }
 
   @override
   String get revokeAccess => 'Revoca accesso';
 
   @override
-  String get saveGroupForRecognition => 'Salva gruppo per riconoscimento';
+  String get saveGroupForRecognition => '[IT] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Sessione live programmata';
+  String get playtimeLiveScheduled => '[IT] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Conferma revoca accesso';
+  String get revokeAccessConfirmation =>
+      '[IT] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Scarica';
 
   @override
-  String get password => 'Password';
+  String get password => '[IT] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Errore nel caricamento dei link familiari';
+    return '[IT] Error loading family links';
   }
 
   @override
@@ -114,7 +118,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get appTitle => 'Titolo dell\'app';
+  String get appTitle => '[IT] APP-OINT';
 
   @override
   String get accept => 'Accetta';
@@ -123,13 +127,14 @@ class AppLocalizationsIt extends AppLocalizations {
   String get playtimeModeVirtual => 'Modalità virtuale';
 
   @override
-  String get playtimeDescription => 'Descrizione di Playtime';
+  String get playtimeDescription =>
+      '[IT] Enjoy live or virtual games with your friends!';
 
   @override
-  String get delete => 'Elimina';
+  String get delete => '[IT] Delete';
 
   @override
-  String get playtimeVirtualStarted => 'Sessione virtuale avviata';
+  String get playtimeVirtualStarted => '[IT] Virtual playtime started!';
 
   @override
   String get createYourFirstGame => 'Crea il tuo primo gioco';
@@ -139,26 +144,26 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String recipients(Object count) {
-    return 'Destinatari';
+    return '[IT] Recipients';
   }
 
   @override
-  String get noResults => 'Nessun risultato';
+  String get noResults => '[IT] No results found';
 
   @override
   String get yes => 'Sì';
 
   @override
-  String get invite => 'Invita';
+  String get invite => '[IT] Invite';
 
   @override
   String get playtimeModeLive => 'Modalità live';
 
   @override
-  String get done => 'Fatto';
+  String get done => '[IT] Done';
 
   @override
-  String get defaultShareMessage => 'Messaggio di condivisione predefinito';
+  String get defaultShareMessage => '[IT] Let\'s meet via Appoint!';
 
   @override
   String get no => 'No';
@@ -167,388 +172,405 @@ class AppLocalizationsIt extends AppLocalizations {
   String get playtimeHub => 'Hub di Playtime';
 
   @override
-  String get error => 'Errore';
+  String get error => '[IT] Error';
 
   @override
-  String get createLiveSession => 'Crea sessione live';
+  String get createLiveSession => '[IT] Create Live Session';
 
   @override
   String get enableNotifications => 'Abilita notifiche';
 
   @override
   String invited(Object date) {
-    return 'Invitato';
+    return '[IT] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'Contenuto';
+    return '[IT] Content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Riunione condivisa con successo';
+  String get meetingSharedSuccessfully => '[IT] Meeting shared successfully';
 
   @override
-  String get welcomeToPlaytime => 'Benvenuto su Playtime';
+  String get welcomeToPlaytime => '[IT] Welcome to Playtime';
 
   @override
-  String get viewAll => 'Mostra tutto';
+  String get viewAll => '[IT] View All';
 
   @override
   String get playtimeVirtual => 'Playtime virtuale';
 
   @override
-  String get staffScreenTBD => 'Schermata staff da definire';
+  String get staffScreenTBD => '[IT] Staff screen coming soon';
 
   @override
   String get cut => 'Taglia';
 
   @override
-  String get inviteCancelledSuccessfully => 'Invito annullato con successo';
+  String get inviteCancelledSuccessfully =>
+      '[IT] Invite cancelled successfully';
 
   @override
   String get retry => 'Riprova';
 
   @override
-  String get composeBroadcastMessage => 'Componi messaggio di trasmissione';
+  String get composeBroadcastMessage => '[IT] Compose Broadcast Message';
 
   @override
-  String get sendNow => 'Invia ora';
+  String get sendNow => '[IT] Send Now';
 
   @override
-  String get noGamesYet => 'Nessun gioco ancora';
+  String get noGamesYet => '[IT] No games yet';
 
   @override
-  String get select => 'Seleziona';
+  String get select => '[IT] Select';
 
   @override
-  String get about => 'Informazioni';
+  String get about => '[IT] About';
 
   @override
-  String get choose => 'Scegli';
+  String get choose => '[IT] Choose';
 
   @override
-  String get profile => 'Profilo';
+  String get profile => '[IT] Profile';
 
   @override
-  String get removeChild => 'Rimuovi bambino';
+  String get removeChild => '[IT] Remove Child';
 
   @override
   String status(Object status) {
-    return 'Stato';
+    return '[IT] Status';
   }
 
   @override
-  String get logout => 'Disconnetti';
+  String get logout => '[IT] Logout';
 
   @override
-  String get paste => 'Incolla';
+  String get paste => '[IT] Paste';
 
   @override
-  String get welcome => 'Benvenuto';
+  String get welcome => '[IT] Welcome';
 
   @override
-  String get playtimeCreateSession => 'Crea sessione Playtime';
+  String get playtimeCreateSession => '[IT] Create a Playtime Session';
 
   @override
-  String get familyMembers => 'Membri della famiglia';
+  String get familyMembers => '[IT] Family Members';
 
   @override
-  String get upload => 'Carica';
+  String get upload => '[IT] Upload';
 
   @override
-  String get upcomingSessions => 'Sessioni imminenti';
+  String get upcomingSessions => '[IT] Upcoming Sessions';
 
   @override
-  String get enterGroupName => 'Inserisci nome gruppo';
+  String get enterGroupName => '[IT] Enter group name';
 
   @override
-  String get confirm => 'Conferma';
+  String get confirm => '[IT] Confirm';
 
   @override
-  String get playtimeLive => 'Gioco dal vivo';
+  String get playtimeLive => '[IT] Live Play';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Errore nel caricamento degli inviti';
+  String get errorLoadingInvites => '[IT] Error loading invites';
+
+  @override
+  String get targetingFilters => '[IT] Targeting Filters';
+
+  @override
+  String get pickVideo => '[IT] Pick Video';
+
+  @override
+  String get playtimeGameDeleted => '[IT] Game deleted';
+
+  @override
+  String get scheduleForLater => '[IT] Schedule for Later';
+
+  @override
+  String get accessRevokedSuccessfully => '[IT] Access revoked successfully';
+
+  @override
+  String type(Object type) {
+    return '[IT] Type';
   }
 
   @override
-  String get targetingFilters => 'Filtri di targeting';
+  String get checkingPermissions => '[IT] Checking permissions...';
 
   @override
-  String get pickVideo => 'Scegli video';
+  String get copy => '[IT] Copy';
 
   @override
-  String get playtimeGameDeleted => 'Gioco eliminato';
+  String get yesCancel => '[IT] Yes, Cancel';
 
   @override
-  String get scheduleForLater => 'Programma per dopo';
+  String get email => '[IT] Email';
 
   @override
-  String get accessRevokedSuccessfully => 'Accesso revocato con successo';
+  String get shareOnWhatsApp => '[IT] Share on WhatsApp';
 
   @override
-  String get type => 'Tipo';
+  String get notificationSettings => '[IT] Notification Settings';
 
   @override
-  String get checkingPermissions => 'Controllo permessi...';
+  String get myProfile => '[IT] My Profile';
 
   @override
-  String get copy => 'Copia';
+  String get revoke => '[IT] Revoke';
 
   @override
-  String get yesCancel => 'Sì, annulla';
-
-  @override
-  String get email => 'Email';
-
-  @override
-  String get shareOnWhatsApp => 'Condividi su WhatsApp';
-
-  @override
-  String get notificationSettings => 'Impostazioni notifiche';
-
-  @override
-  String get myProfile => 'Il mio profilo';
-
-  @override
-  String get revoke => 'Revoca';
-
-  @override
-  String get noBroadcastMessages => 'Nessun messaggio ancora';
+  String get noBroadcastMessages => '[IT] No messages yet';
 
   @override
   String requestType(Object type) {
-    return 'Tipo di richiesta';
+    return '[IT] Request Type';
   }
 
   @override
-  String get notifications => 'Notifiche';
+  String get notifications => '[IT] Notifications';
 
   @override
-  String get details => 'Dettagli';
+  String get details => '[IT] Details';
 
   @override
-  String get cancelInvite => 'Annulla invito';
+  String get cancelInvite => '[IT] Cancel Invite';
 
   @override
-  String get createNew => 'Crea nuovo';
+  String get createNew => '[IT] Create New';
 
   @override
-  String get settings => 'Impostazioni';
+  String get settings => '[IT] Settings';
 
   @override
-  String get playtimeReject => 'Rifiuta';
+  String get playtimeReject => '[IT] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Errore nel caricamento del profilo';
-  }
+  String get errorLoadingProfile => '[IT] Error loading profile';
 
   @override
-  String get edit => 'Modifica';
+  String get edit => '[IT] Edit';
 
   @override
-  String get add => 'Aggiungi';
+  String get add => '[IT] Add';
 
   @override
-  String get playtimeGameApproved => 'Gioco approvato';
+  String get playtimeGameApproved => '[IT] Game approved';
 
   @override
-  String get forgotPassword => 'Password dimenticata?';
+  String get forgotPassword => '[IT] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Dashboard familiare';
+  String get familyDashboard => '[IT] Family Dashboard';
 
   @override
-  String get loading => 'Caricamento...';
+  String get loading => '[IT] Loading...';
 
   @override
-  String get quickActions => 'Azioni rapide';
+  String get quickActions => '[IT] Quick Actions';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => '[IT] Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP reinviato con successo';
+  String get otpResentSuccessfully => '[IT] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Errore nel controllo dei permessi';
+    return '[IT] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Schermata client in arrivo';
+  String get clientScreenTBD => '[IT] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'Token FCM';
+    return '[IT] FCM Token';
   }
 
   @override
-  String get pickImage => 'Scegli immagine';
+  String get pickImage => '[IT] Pick Image';
 
   @override
-  String get previous => 'Precedente';
+  String get previous => '[IT] Previous';
 
   @override
-  String get noProfileFound => 'Nessun profilo trovato';
+  String get noProfileFound => '[IT] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Nessun membro della famiglia ancora';
+  String get noFamilyMembersYet => '[IT] No family members yet';
 
   @override
-  String get mediaOptional => 'Media (opzionale)';
+  String get mediaOptional => '[IT] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => 'Messaggio salvato con successo';
+  String get messageSavedSuccessfully => '[IT] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Programmato per';
+  String get scheduledFor => '[IT] Scheduled for';
 
   @override
-  String get dashboard => 'Dashboard';
+  String get dashboard => '[IT] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => 'Nessun permesso per la trasmissione';
+  String get noPermissionForBroadcast => '[IT] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Giochi Playtime – Admin';
+  String get playtimeAdminPanelTitle => '[IT] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Dettagli invito';
+  String get inviteDetail => '[IT] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return 'Programmato';
+    return '[IT] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Errore nel reinvio dell\'OTP';
+    return '[IT] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => 'Programmazione';
+  String get scheduling => '[IT] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Errore nel salvataggio del messaggio';
+    return '[IT] Error saving message';
   }
 
   @override
-  String get save => 'Salva';
+  String get save => '[IT] Save';
 
   @override
-  String get playtimeApprove => 'Approva';
+  String get playtimeApprove => '[IT] Approve';
 
   @override
-  String get createYourFirstSession => 'Crea la tua prima sessione';
+  String get createYourFirstSession => '[IT] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'Gioco rifiutato';
+  String get playtimeGameRejected => '[IT] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Errore nella revoca dell\'accesso';
+    return '[IT] Failed to revoke access';
   }
 
   @override
-  String get recentGames => 'Giochi recenti';
+  String get recentGames => '[IT] Recent Games';
 
   @override
-  String get customizeMessage => 'Personalizza messaggio';
+  String get customizeMessage => '[IT] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Errore nell\'annullamento dell\'invito';
+    return '[IT] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Errore nell\'invio del messaggio';
+    return '[IT] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Conferma password';
+  String get confirmPassword => '[IT] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Errore nel caricamento delle richieste di privacy';
+    return '[IT] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Bambini connessi';
+  String get connectedChildren => '[IT] Connected Children';
 
   @override
-  String get share => 'Condividi';
+  String get share => '[IT] Share';
 
   @override
-  String get playtimeEnterGameName => 'Inserisci nome gioco';
+  String get playtimeEnterGameName => '[IT] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Accedi per accedere alle funzionalità familiari';
+      '[IT] Please login to access family features';
 
   @override
-  String get myInvites => 'I miei inviti';
+  String get myInvites => '[IT] My Invites';
 
   @override
-  String get createGame => 'Crea gioco';
+  String get createGame => '[IT] Create Game';
 
   @override
-  String get groupNameOptional => 'Nome gruppo (opzionale)';
+  String get groupNameOptional => '[IT] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Nessuna sessione playtime trovata.';
+  String get playtimeNoSessions => '[IT] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Schermata admin in arrivo';
+  String get adminScreenTBD => '[IT] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Dashboard Playtime';
+  String get playtimeParentDashboardTitle => '[IT] Playtime Dashboard';
 
   @override
-  String get close => 'Chiudi';
+  String get close => '[IT] Close';
 
   @override
-  String get knownGroupDetected => 'Gruppo conosciuto rilevato';
+  String get knownGroupDetected => '[IT] Known group detected';
 
   @override
-  String get back => 'Indietro';
+  String get back => '[IT] Back';
 
   @override
-  String get playtimeChooseGame => 'Scegli gioco';
+  String get playtimeChooseGame => '[IT] Choose a game';
 
   @override
-  String get managePermissions => 'Gestisci permessi';
+  String get managePermissions => '[IT] Manage Permissions';
 
   @override
-  String get pollOptions => 'Opzioni sondaggio';
+  String get pollOptions => '[IT] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Cliccato';
+    return '[IT] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[IT] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'La tua riunione è pronta! Unisciti ora';
+  String get meetingReadyMessage => '[IT] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Inviti in attesa';
+  String get pendingInvites => '[IT] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Stato:';
+    return '[IT] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      'Accedi per visualizzare il tuo profilo.';
+      '[IT] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

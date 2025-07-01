@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../l10n/app_localizations.dart';
-import '../../providers/playtime_provider.dart';
-import '../../config/theme.dart';
-import '../../models/playtime_game.dart';
-import '../../models/playtime_session.dart';
-import '../../widgets/bottom_sheet_manager.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/models/playtime_game.dart';
+import 'package:appoint/models/playtime_session.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
 
 class PlaytimeHubScreen extends ConsumerWidget {
   const PlaytimeHubScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
@@ -80,7 +80,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildWelcomeSection(BuildContext context, AppLocalizations l10n) {
+  Widget _buildWelcomeSection(final BuildContext context, final AppLocalizations l10n) {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -142,7 +142,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildQuickActions(BuildContext context, AppLocalizations l10n) {
+  Widget _buildQuickActions(final BuildContext context, final AppLocalizations l10n) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -182,11 +182,11 @@ class PlaytimeHubScreen extends ConsumerWidget {
   }
 
   Widget _buildActionCard(
-    BuildContext context,
-    String title,
-    IconData icon,
-    Color color,
-    VoidCallback onTap,
+    final BuildContext context,
+    final String title,
+    final IconData icon,
+    final Color color,
+    final VoidCallback onTap,
   ) {
     return GestureDetector(
       onTap: onTap,
@@ -227,7 +227,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildRecentGames(BuildContext context, AppLocalizations l10n) {
+  Widget _buildRecentGames(final BuildContext context, final AppLocalizations l10n) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -249,11 +249,11 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ),
         const SizedBox(height: 12),
         Consumer(
-          builder: (context, ref, child) {
+          builder: (final context, final ref, final child) {
             final gamesAsync = ref.watch(systemGamesProvider);
 
             return gamesAsync.when(
-              data: (games) {
+              data: (final games) {
                 if (games.isEmpty) {
                   return _buildEmptyState(
                     context,
@@ -268,7 +268,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: games.take(5).length,
-                    itemBuilder: (context, index) {
+                    itemBuilder: (final context, final index) {
                       final game = games[index];
                       return _buildGameCard(context, game, l10n);
                     },
@@ -276,7 +276,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (error, stack) => Text('Error: $error'),
+              error: (final error, final stack) => Text('Error: $error'),
             );
           },
         ),
@@ -285,7 +285,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
   }
 
   Widget _buildGameCard(
-      BuildContext context, PlaytimeGame game, AppLocalizations l10n) {
+      final BuildContext context, final PlaytimeGame game, final AppLocalizations l10n) {
     return Container(
       width: 120,
       margin: const EdgeInsets.only(right: 12),
@@ -305,7 +305,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
                     CircleAvatar(
                       radius: 20,
                       backgroundImage: null,
-                      onBackgroundImageError: (_, __) {},
+                      onBackgroundImageError: (final _, final __) {},
                       child: const Icon(Icons.games, size: 20),
                     ),
                     const SizedBox(width: 8),
@@ -346,7 +346,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildUpcomingSessions(BuildContext context, AppLocalizations l10n) {
+  Widget _buildUpcomingSessions(final BuildContext context, final AppLocalizations l10n) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -368,11 +368,11 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ),
         const SizedBox(height: 12),
         Consumer(
-          builder: (context, ref, child) {
+          builder: (final context, final ref, final child) {
             final sessionsAsync = ref.watch(confirmedSessionsProvider);
 
             return sessionsAsync.when(
-              data: (sessions) {
+              data: (final sessions) {
                 if (sessions.isEmpty) {
                   return _buildEmptyState(
                     context,
@@ -383,13 +383,13 @@ class PlaytimeHubScreen extends ConsumerWidget {
                 }
 
                 return Column(
-                  children: sessions.take(3).map((session) {
+                  children: sessions.take(3).map((final session) {
                     return _buildSessionCard(context, session, l10n);
                   }).toList(),
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (error, stack) => Text('Error: $error'),
+              error: (final error, final stack) => Text('Error: $error'),
             );
           },
         ),
@@ -398,7 +398,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
   }
 
   Widget _buildSessionCard(
-      BuildContext context, PlaytimeSession session, AppLocalizations l10n) {
+      final BuildContext context, final PlaytimeSession session, final AppLocalizations l10n) {
     return Card(
       margin: const EdgeInsets.only(bottom: 8),
       elevation: 2,
@@ -442,7 +442,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
   }
 
   Widget _buildEmptyState(
-      BuildContext context, String title, String subtitle, IconData icon) {
+      final BuildContext context, final String title, final String subtitle, final IconData icon) {
     return Container(
       padding: const EdgeInsets.all(24),
       child: Column(
@@ -475,7 +475,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  void _showCreateOptions(BuildContext context, AppLocalizations l10n) {
+  void _showCreateOptions(final BuildContext context, final AppLocalizations l10n) {
     BottomSheetManager.show(
       context: context,
       child: Container(
@@ -540,11 +540,11 @@ class PlaytimeHubScreen extends ConsumerWidget {
   }
 
   Widget _buildCreateOption(
-    BuildContext context,
-    String title,
-    IconData icon,
-    Color color,
-    VoidCallback onTap,
+    final BuildContext context,
+    final String title,
+    final IconData icon,
+    final Color color,
+    final VoidCallback onTap,
   ) {
     return InkWell(
       onTap: onTap,
@@ -583,7 +583,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  String _formatDateTime(DateTime dateTime) {
+  String _formatDateTime(final DateTime dateTime) {
     final now = DateTime.now();
     final difference = dateTime.difference(now);
 

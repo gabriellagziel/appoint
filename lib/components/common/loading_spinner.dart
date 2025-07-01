@@ -8,7 +8,7 @@ class LoadingSpinner extends StatelessWidget {
   const LoadingSpinner({super.key, this.text = 'Loading...'});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,

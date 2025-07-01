@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
 
-import '../../../models/personal_appointment.dart';
-import '../../../providers/personal_scheduler_provider.dart';
-import '../../../services/personal_scheduler_service.dart';
+import 'package:appoint/models/personal_appointment.dart';
+import 'package:appoint/providers/personal_scheduler_provider.dart';
+import 'package:appoint/providers/auth_provider.dart';
 
 class PersonalSchedulerScreen extends ConsumerStatefulWidget {
   const PersonalSchedulerScreen({super.key});
@@ -19,7 +19,7 @@ class _PersonalSchedulerScreenState
   DateTime _focusedDay = DateTime.now();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final apptsAsync = ref.watch(personalAppointmentsProvider);
 
     return Scaffold(
@@ -30,13 +30,13 @@ class _PersonalSchedulerScreenState
             initialDate: _focusedDay,
             firstDate: DateTime(2000),
             lastDate: DateTime(2100),
-            onDateChanged: (d) => setState(() => _focusedDay = d),
+            onDateChanged: (final d) => setState(() => _focusedDay = d),
           ),
           Expanded(
             child: apptsAsync.when(
-              data: (appts) {
+              data: (final appts) {
                 final dayAppts = appts
-                    .where((a) =>
+                    .where((final a) =>
                         a.startTime.year == _focusedDay.year &&
                         a.startTime.month == _focusedDay.month &&
                         a.startTime.day == _focusedDay.day)
@@ -47,7 +47,7 @@ class _PersonalSchedulerScreenState
                 return ListView(
                   children: dayAppts
                       .map(
-                        (a) => ListTile(
+                        (final a) => ListTile(
                           title: Text(a.title),
                           subtitle: Text(
                               '${a.startTime.hour.toString().padLeft(2, '0')}:${a.startTime.minute.toString().padLeft(2, '0')} - '
@@ -63,7 +63,7 @@ class _PersonalSchedulerScreenState
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (e, _) => Center(child: Text('Error: $e')),
+              error: (final e, final _) => Center(child: Text('Error: $e')),
             ),
           ),
         ],
@@ -82,7 +82,7 @@ class _PersonalSchedulerScreenState
     }
   }
 
-  Future<void> _edit(PersonalAppointment appt) async {
+  Future<void> _edit(final PersonalAppointment appt) async {
     final updated = await _showEditDialog(existing: appt);
     if (updated != null) {
       await ref
@@ -91,12 +91,12 @@ class _PersonalSchedulerScreenState
     }
   }
 
-  Future<void> _delete(String id) async {
+  Future<void> _delete(final String id) async {
     await ref.read(REDACTED_TOKEN).deleteAppointment(id);
   }
 
   Future<PersonalAppointment?> _showEditDialog(
-      {PersonalAppointment? existing}) {
+      {final PersonalAppointment? existing}) {
     final titleCtrl = TextEditingController(text: existing?.title);
     final descCtrl = TextEditingController(text: existing?.description);
     DateTime start = existing?.startTime ?? _focusedDay;
@@ -105,7 +105,7 @@ class _PersonalSchedulerScreenState
 
     return showDialog<PersonalAppointment>(
       context: context,
-      builder: (context) {
+      builder: (final context) {
         return AlertDialog(
           title:
               Text(existing == null ? 'New Appointment' : 'Edit Appointment'),
@@ -176,12 +176,8 @@ class _PersonalSchedulerScreenState
             TextButton(
               onPressed: () {
                 final id = existing?.id ?? const Uuid().v4();
-                final userId = existing?.userId ??
-                    ref
-                        .read(REDACTED_TOKEN)
-                        ._auth
-                        .currentUser!
-                        .uid;
+                final userId =
+                    existing?.userId ?? ref.read(authProvider).currentUser!.uid;
                 final appt = PersonalAppointment(
                   id: id,
                   userId: userId,

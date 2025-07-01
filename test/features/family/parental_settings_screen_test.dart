@@ -8,7 +8,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('ParentalSettingsScreen', () {
-    testWidgets('shows toggle and manage accounts button', (tester) async {
+    testWidgets('shows toggle and manage accounts button', (final tester) async {
       await tester.pumpWidget(
         const MaterialApp(home: ParentalSettingsScreen()),
       );

@@ -9,7 +9,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('CommentItem', () {
-    testWidgets('renders relative time', (tester) async {
+    testWidgets('renders relative time', (final tester) async {
       final timestamp = DateTime.now().subtract(const Duration(minutes: 2));
       await tester.pumpWidget(
         MaterialApp(

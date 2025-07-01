@@ -28,12 +28,12 @@ Future<void> main() async {
 
     test('should have correct total global quota', () {
       final totalQuota = AmbassadorQuotaService.ambassadorQuotas.values
-          .fold<int>(0, (sum, quota) => sum + quota);
+          .fold<int>(0, (final sum, final quota) => sum + quota);
       expect(totalQuota, equals(4787));
     });
 
     test('should include all major regions', () {
-      final quotas = AmbassadorQuotaService.ambassadorQuotas;
+      const quotas = AmbassadorQuotaService.ambassadorQuotas;
 
       // Check for major countries
       expect(quotas.containsKey('US_en'), true);
@@ -43,14 +43,14 @@ Future<void> main() async {
       expect(quotas.containsKey('NG_en'), true);
 
       // Check for major languages
-      expect(quotas.values.any((quota) => quota > 200),
+      expect(quotas.values.any((final quota) => quota > 200),
           true); // Should have some large quotas
     });
 
     test('should have reasonable quota distribution', () {
       final quotas = AmbassadorQuotaService.ambassadorQuotas.values.toList();
       final averageQuota =
-          quotas.fold<int>(0, (sum, quota) => sum + quota) / quotas.length;
+          quotas.fold<int>(0, (final sum, final quota) => sum + quota) / quotas.length;
       expect(averageQuota, greaterThan(95));
     });
 

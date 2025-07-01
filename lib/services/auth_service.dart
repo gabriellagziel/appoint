@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
-import '../models/app_user.dart';
+import 'package:appoint/models/app_user.dart';
 
 class AuthService {
   static const redirectUri = 'http://localhost:8080/__/auth/handler';
@@ -12,7 +12,7 @@ class AuthService {
   }
 
   Stream<AppUser?> authStateChanges() {
-    return _firebaseAuth.authStateChanges().asyncMap((user) async {
+    return _firebaseAuth.authStateChanges().asyncMap((final user) async {
       if (user == null) return null;
       final token = await user.getIdTokenResult(true);
       final claims = token.claims ?? <String, dynamic>{};
@@ -27,7 +27,7 @@ class AuthService {
     });
   }
 
-  Future<void> signIn(String email, String password) async {
+  Future<void> signIn(final String email, final String password) async {
     await _firebaseAuth.signInWithEmailAndPassword(
       email: email,
       password: password,

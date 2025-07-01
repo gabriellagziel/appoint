@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../providers/content_provider.dart';
+import 'package:appoint/providers/content_provider.dart';
 
 /// Displays a paginated list of content items.
 class ContentLibraryScreen extends ConsumerStatefulWidget {
@@ -30,7 +30,7 @@ class _ContentLibraryScreenState extends ConsumerState<ContentLibraryScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final contentAsync = ref.watch(contentPagingProvider);
 
     return Scaffold(
@@ -38,14 +38,14 @@ class _ContentLibraryScreenState extends ConsumerState<ContentLibraryScreen> {
         title: const Text('Content Library'),
       ),
       body: contentAsync.when(
-        data: (items) {
+        data: (final items) {
           if (items.isEmpty) {
             return const Center(child: Text('No content available yet'));
           }
           return ListView.builder(
             controller: _controller,
             itemCount: items.length,
-            itemBuilder: (context, index) {
+            itemBuilder: (final context, final index) {
               final item = items[index];
               return ListTile(
                 title: Text(item.title),
@@ -63,7 +63,7 @@ class _ContentLibraryScreenState extends ConsumerState<ContentLibraryScreen> {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (final e, final _) => Center(child: Text('Error: $e')),
       ),
     );
   }

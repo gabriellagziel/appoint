@@ -8,7 +8,7 @@ Future<void> main() async {
 
   group('AdminBroadcastMessage Model', () {
     test('should correctly create a text broadcast message', () {
-      final targetingFilters = BroadcastTargetingFilters(
+      const targetingFilters = BroadcastTargetingFilters(
         countries: ['US', 'CA'],
         cities: ['New York', 'Toronto'],
         minAge: 18,
@@ -45,7 +45,7 @@ Future<void> main() async {
     });
 
     test('should correctly create an image broadcast message', () {
-      final targetingFilters = BroadcastTargetingFilters(
+      const targetingFilters = BroadcastTargetingFilters(
         countries: ['US'],
         userRoles: ['user'],
       );
@@ -77,7 +77,7 @@ Future<void> main() async {
     });
 
     test('should correctly create a poll broadcast message', () {
-      final targetingFilters = BroadcastTargetingFilters(
+      const targetingFilters = BroadcastTargetingFilters(
         userRoles: ['user'],
       );
 
@@ -109,7 +109,7 @@ Future<void> main() async {
     });
 
     test('should be able to convert to JSON and back', () {
-      final targetingFilters = BroadcastTargetingFilters(
+      const targetingFilters = BroadcastTargetingFilters(
         countries: ['US'],
         userRoles: ['user'],
       );
@@ -139,7 +139,7 @@ Future<void> main() async {
     });
 
     test('should handle scheduled broadcast messages', () {
-      final targetingFilters = BroadcastTargetingFilters(
+      const targetingFilters = BroadcastTargetingFilters(
         userRoles: ['user'],
       );
 
@@ -160,7 +160,7 @@ Future<void> main() async {
     });
 
     test('should handle failed broadcast messages', () {
-      final targetingFilters = BroadcastTargetingFilters(
+      const targetingFilters = BroadcastTargetingFilters(
         userRoles: ['user'],
       );
 
@@ -184,7 +184,7 @@ Future<void> main() async {
     });
 
     test('should handle different broadcast message types', () {
-      final targetingFilters = BroadcastTargetingFilters(
+      const targetingFilters = BroadcastTargetingFilters(
         userRoles: ['user'],
       );
 

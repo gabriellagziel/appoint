@@ -1,5 +1,5 @@
 class MLDownloaderService {
-  Future<void> downloadModel(String modelId) async {
+  Future<void> downloadModel(final String modelId) async {
     // Placeholder for model download logic.
   }
 }

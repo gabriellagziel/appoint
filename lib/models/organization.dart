@@ -14,7 +14,7 @@ class Organization {
     required this.memberIds,
   });
 
-  factory Organization.fromJson(Map<String, dynamic> json) =>
+  factory Organization.fromJson(final Map<String, dynamic> json) =>
       _$OrganizationFromJson(json);
 
   Map<String, dynamic> toJson() => _$OrganizationToJson(this);

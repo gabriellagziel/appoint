@@ -56,10 +56,10 @@ class _FadeSlideInState extends State<FadeSlideIn>
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return AnimatedBuilder(
       animation: _controller,
-      builder: (context, child) {
+      builder: (final context, final child) {
         return Opacity(
           opacity: _opacity.value,
           child: SlideTransition(position: _offset, child: child!),
@@ -69,7 +69,7 @@ class _FadeSlideInState extends State<FadeSlideIn>
     );
   }
 
-  static Offset _offsetForDirection(AxisDirection direction) {
+  static Offset _offsetForDirection(final AxisDirection direction) {
     switch (direction) {
       case AxisDirection.up:
         return const Offset(0, 0.2);

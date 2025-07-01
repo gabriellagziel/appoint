@@ -54,7 +54,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get undo => 'ለውጡን ይቀልሱ';
 
   @override
-  String get opened => 'ተከፈተ';
+  String opened(Object count) {
+    return 'ተከፈተ';
+  }
 
   @override
   String get createVirtualSession => 'ብልጽግናዊ ትዕይንት ይፍጠሩ';
@@ -269,9 +271,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get playtimeLive => 'በቀጥታ Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'የግብዣዎች ማስጫን ስህተት';
-  }
+  String get errorLoadingInvites => 'የግብዣዎች ማስጫን ስህተት';
 
   @override
   String get targetingFilters => 'የመድረሻ ቅርጸ-ቁልፍ';
@@ -289,7 +289,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get accessRevokedSuccessfully => 'መዳረሻ በትክክል ተሰርዟል';
 
   @override
-  String get type => 'ዓይነት';
+  String type(Object type) {
+    return 'ዓይነት';
+  }
 
   @override
   String get checkingPermissions => 'መብቶች በማረጋገጥ';
@@ -304,7 +306,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get email => 'ኢሜይል';
 
   @override
-  String get shareOnWhatsApp => 'በWhatsApp ያካፍሉ';
+  String get shareOnWhatsApp => '[AM] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'የማሳወቂያ ቅንብሮች';
@@ -342,9 +344,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get playtimeReject => 'Playtime አትቀበሉ';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'የመገለጫ ማስጫን ስህተት';
-  }
+  String get errorLoadingProfile => 'የመገለጫ ማስጫን ስህተት';
 
   @override
   String get edit => 'አርትዕ';
@@ -549,4 +549,22 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get pleaseLoginToViewProfile => 'መገለጫ ለማየት እባክዎ ይግቡ';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

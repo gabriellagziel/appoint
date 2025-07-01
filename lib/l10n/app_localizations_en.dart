@@ -54,7 +54,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get undo => 'Undo';
 
   @override
-  String get opened => 'Opened';
+  String opened(Object count) {
+    return 'Opened: $count';
+  }
 
   @override
   String get createVirtualSession => 'Create Virtual Session';
@@ -77,7 +79,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String created(Object date) {
-    return 'Created';
+    return 'Created: $date';
   }
 
   @override
@@ -101,7 +103,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Error loading family links';
+    return 'Error loading family links: $error';
   }
 
   @override
@@ -112,7 +114,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Failed to action privacy request';
+    return 'Failed to action privacy request $action: $error';
   }
 
   @override
@@ -142,7 +144,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String recipients(Object count) {
-    return 'Recipients';
+    return 'Recipients: $count';
   }
 
   @override
@@ -180,12 +182,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String invited(Object date) {
-    return 'Invited';
+    return 'Invited: $date';
   }
 
   @override
   String content(Object content) {
-    return 'Content';
+    return 'Content: $content';
   }
 
   @override
@@ -238,7 +240,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String status(Object status) {
-    return 'Status';
+    return 'Status: $status';
   }
 
   @override
@@ -272,9 +274,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get playtimeLive => 'Live Play';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Error loading invites';
-  }
+  String get errorLoadingInvites => 'Error loading invites';
 
   @override
   String get targetingFilters => 'Targeting Filters';
@@ -292,7 +292,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get accessRevokedSuccessfully => 'Access revoked successfully';
 
   @override
-  String get type => 'Type';
+  String type(Object type) {
+    return 'Type: $type';
+  }
 
   @override
   String get checkingPermissions => 'Checking permissions...';
@@ -323,7 +325,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String requestType(Object type) {
-    return 'Request Type';
+    return 'Request Type: $type';
   }
 
   @override
@@ -345,9 +347,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get playtimeReject => 'Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Error loading profile';
-  }
+  String get errorLoadingProfile => 'Error loading profile';
 
   @override
   String get edit => 'Edit';
@@ -378,7 +378,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Error checking permissions';
+    return 'Error checking permissions: $error';
   }
 
   @override
@@ -386,7 +386,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'FCM Token';
+    return 'FCM Token: $token';
   }
 
   @override
@@ -424,12 +424,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String scheduled(Object date) {
-    return 'Scheduled';
+    return 'Scheduled: $date';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Failed to resend OTP';
+    return 'Failed to resend OTP: $error';
   }
 
   @override
@@ -437,7 +437,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Error saving message';
+    return 'Error saving message: $error';
   }
 
   @override
@@ -454,7 +454,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Failed to revoke access';
+    return 'Failed to revoke access: $error';
   }
 
   @override
@@ -465,12 +465,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Failed to cancel invite';
+    return 'Failed to cancel invite: $error';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Error sending message';
+    return 'Error sending message: $error';
   }
 
   @override
@@ -478,7 +478,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Error loading privacy requests';
+    return 'Error loading privacy requests: $error';
   }
 
   @override
@@ -532,12 +532,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String clicked(Object count) {
-    return 'Clicked';
+    return 'Clicked: $count';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return 'Link: $link';
   }
 
   @override
@@ -548,9 +548,27 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return 'Status: $status';
   }
 
   @override
   String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

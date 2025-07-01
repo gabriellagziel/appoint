@@ -9,13 +9,13 @@ class AppLocalizationsNo extends AppLocalizations {
   AppLocalizationsNo([String locale = 'no']) : super(locale);
 
   @override
-  String get refresh => 'Oppdater';
+  String get refresh => '[NO] Refresh';
 
   @override
   String get home => 'Hjem';
 
   @override
-  String get noSessionsYet => 'Ingen økter ennå';
+  String get noSessionsYet => '[NO] No sessions yet';
 
   @override
   String get ok => 'OK';
@@ -27,22 +27,22 @@ class AppLocalizationsNo extends AppLocalizations {
   String get signUp => 'Registrer deg';
 
   @override
-  String get scheduleMessage => 'Planlegg melding';
+  String get scheduleMessage => '[NO] Schedule Message';
 
   @override
   String get decline => 'Avslå';
 
   @override
-  String get adminBroadcast => 'Administrator kringkasting';
+  String get adminBroadcast => '[NO] Admin Broadcast';
 
   @override
-  String get login => 'Logg inn';
+  String get login => '[NO] Login';
 
   @override
   String get playtimeChooseFriends => 'Velg venner';
 
   @override
-  String get noInvites => 'Ingen invitasjoner';
+  String get noInvites => '[NO] No invites';
 
   @override
   String get playtimeChooseTime => 'Velg tid';
@@ -54,13 +54,15 @@ class AppLocalizationsNo extends AppLocalizations {
   String get undo => 'Angre';
 
   @override
-  String get opened => 'Åpnet';
+  String opened(Object count) {
+    return 'Åpnet';
+  }
 
   @override
   String get createVirtualSession => 'Opprett virtuell økt';
 
   @override
-  String get messageSentSuccessfully => 'Melding sendt vellykket';
+  String get messageSentSuccessfully => '[NO] Message sent successfully';
 
   @override
   String get redo => 'Gjør på nytt';
@@ -72,7 +74,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get search => 'Søk';
 
   @override
-  String get cancelInviteConfirmation => 'Avbryt invitasjonsbekreftelse';
+  String get cancelInviteConfirmation =>
+      '[NO] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -83,24 +86,24 @@ class AppLocalizationsNo extends AppLocalizations {
   String get revokeAccess => 'Tilgang tilbakekalt';
 
   @override
-  String get saveGroupForRecognition => 'Lagre gruppe for gjenkjenning';
+  String get saveGroupForRecognition => '[NO] Save Group for Recognition';
 
   @override
   String get playtimeLiveScheduled => 'Direktesendt økt planlagt';
 
   @override
   String get revokeAccessConfirmation =>
-      'Bekreftelse av tilbakekalling av tilgang';
+      '[NO] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Last ned';
 
   @override
-  String get password => 'Passord';
+  String get password => '[NO] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Feil ved lasting av familielinker';
+    return '[NO] Error loading family links';
   }
 
   @override
@@ -111,7 +114,7 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Kunne ikke utføre personvernforespørsel';
+    return '[NO] Failed to action privacy request';
   }
 
   @override
@@ -144,13 +147,13 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get noResults => 'Ingen resultater';
+  String get noResults => '[NO] No results found';
 
   @override
   String get yes => 'Ja';
 
   @override
-  String get invite => 'Inviter';
+  String get invite => '[NO] Invite';
 
   @override
   String get playtimeModeLive => 'Direktesendt modus';
@@ -159,7 +162,7 @@ class AppLocalizationsNo extends AppLocalizations {
   String get done => 'Ferdig';
 
   @override
-  String get defaultShareMessage => 'Standard delingsmelding';
+  String get defaultShareMessage => '[NO] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Nei';
@@ -178,12 +181,12 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String invited(Object date) {
-    return 'Invitert';
+    return '[NO] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'Innhold';
+    return '[NO] Content';
   }
 
   @override
@@ -199,25 +202,26 @@ class AppLocalizationsNo extends AppLocalizations {
   String get playtimeVirtual => 'Virtuell Playtime';
 
   @override
-  String get staffScreenTBD => 'Ansattskjerm kommer snart';
+  String get staffScreenTBD => '[NO] Staff screen coming soon';
 
   @override
   String get cut => 'Klipp';
 
   @override
-  String get inviteCancelledSuccessfully => 'Invitasjon avbrutt vellykket';
+  String get inviteCancelledSuccessfully =>
+      '[NO] Invite cancelled successfully';
 
   @override
   String get retry => 'Prøv igjen';
 
   @override
-  String get composeBroadcastMessage => 'Skriv kringkastingsmelding';
+  String get composeBroadcastMessage => '[NO] Compose Broadcast Message';
 
   @override
   String get sendNow => 'Send nå';
 
   @override
-  String get noGamesYet => 'Ingen spill ennå';
+  String get noGamesYet => '[NO] No games yet';
 
   @override
   String get select => 'Velg';
@@ -229,21 +233,21 @@ class AppLocalizationsNo extends AppLocalizations {
   String get choose => 'Velg';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[NO] Profile';
 
   @override
   String get removeChild => 'Fjern barn';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return '[NO] Status';
   }
 
   @override
   String get logout => 'Logg ut';
 
   @override
-  String get paste => 'Lim inn';
+  String get paste => '[NO] Paste';
 
   @override
   String get welcome => 'Velkommen';
@@ -270,12 +274,10 @@ class AppLocalizationsNo extends AppLocalizations {
   String get playtimeLive => 'Direktesendt Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Feil ved lasting av invitasjoner';
-  }
+  String get errorLoadingInvites => '[NO] Error loading invites';
 
   @override
-  String get targetingFilters => 'Målrettingsfiltre';
+  String get targetingFilters => '[NO] Targeting Filters';
 
   @override
   String get pickVideo => 'Velg video';
@@ -290,10 +292,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get accessRevokedSuccessfully => 'Tilgang tilbakekalt vellykket';
 
   @override
-  String get type => 'Type';
+  String type(Object type) {
+    return 'Type';
+  }
 
   @override
-  String get checkingPermissions => 'Sjekker tillatelser';
+  String get checkingPermissions => '[NO] Checking permissions...';
 
   @override
   String get copy => 'Kopier';
@@ -305,23 +309,23 @@ class AppLocalizationsNo extends AppLocalizations {
   String get email => 'E-post';
 
   @override
-  String get shareOnWhatsApp => 'Del på WhatsApp';
+  String get shareOnWhatsApp => '[NO] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Varslingsinnstillinger';
+  String get notificationSettings => '[NO] Notification Settings';
 
   @override
-  String get myProfile => 'Min profil';
+  String get myProfile => '[NO] My Profile';
 
   @override
   String get revoke => 'Tilbakekall';
 
   @override
-  String get noBroadcastMessages => 'Ingen kringkastingsmeldinger';
+  String get noBroadcastMessages => '[NO] No messages yet';
 
   @override
   String requestType(Object type) {
-    return 'Forespørselstype';
+    return '[NO] Request Type';
   }
 
   @override
@@ -331,21 +335,19 @@ class AppLocalizationsNo extends AppLocalizations {
   String get details => 'Detaljer';
 
   @override
-  String get cancelInvite => 'Avbryt invitasjon';
+  String get cancelInvite => '[NO] Cancel Invite';
 
   @override
   String get createNew => 'Opprett ny';
 
   @override
-  String get settings => 'Innstillinger';
+  String get settings => '[NO] Settings';
 
   @override
   String get playtimeReject => 'Avslå Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Feil ved lasting av profil';
-  }
+  String get errorLoadingProfile => '[NO] Error loading profile';
 
   @override
   String get edit => 'Rediger';
@@ -357,16 +359,16 @@ class AppLocalizationsNo extends AppLocalizations {
   String get playtimeGameApproved => 'Spill godkjent';
 
   @override
-  String get forgotPassword => 'Glemt passord?';
+  String get forgotPassword => '[NO] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Familiens dashbord';
+  String get familyDashboard => '[NO] Family Dashboard';
 
   @override
   String get loading => 'Laster';
 
   @override
-  String get quickActions => 'Hurtighandlinger';
+  String get quickActions => '[NO] Quick Actions';
 
   @override
   String get playtimeTitle => 'Playtime-tittel';
@@ -376,7 +378,7 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Feil ved sjekking av tillatelser';
+    return '[NO] Error checking permissions';
   }
 
   @override
@@ -384,41 +386,41 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'FCM-token';
+    return '[NO] FCM Token';
   }
 
   @override
   String get pickImage => 'Velg bilde';
 
   @override
-  String get previous => 'Forrige';
+  String get previous => '[NO] Previous';
 
   @override
-  String get noProfileFound => 'Ingen profil funnet';
+  String get noProfileFound => '[NO] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Ingen familiemedlemmer ennå';
+  String get noFamilyMembersYet => '[NO] No family members yet';
 
   @override
   String get mediaOptional => 'Media (valgfritt)';
 
   @override
-  String get messageSavedSuccessfully => 'Melding lagret vellykket';
+  String get messageSavedSuccessfully => '[NO] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Planlagt for';
+  String get scheduledFor => '[NO] Scheduled for';
 
   @override
-  String get dashboard => 'Dashbord';
+  String get dashboard => '[NO] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => 'Ingen tillatelse til kringkasting';
+  String get noPermissionForBroadcast => '[NO] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime adminpanel tittel';
+  String get playtimeAdminPanelTitle => '[NO] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Invitasjonsdetaljer';
+  String get inviteDetail => '[NO] Invite Details';
 
   @override
   String scheduled(Object date) {
@@ -435,7 +437,7 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Feil ved lagring av melding';
+    return '[NO] Error saving message';
   }
 
   @override
@@ -445,38 +447,38 @@ class AppLocalizationsNo extends AppLocalizations {
   String get playtimeApprove => 'Godkjenn Playtime';
 
   @override
-  String get createYourFirstSession => 'Opprett din første økt';
+  String get createYourFirstSession => '[NO] Create your first session';
 
   @override
   String get playtimeGameRejected => 'Spill avvist';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Kunne ikke tilbakekalle tilgang';
+    return '[NO] Failed to revoke access';
   }
 
   @override
   String get recentGames => 'Siste spill';
 
   @override
-  String get customizeMessage => 'Tilpass melding';
+  String get customizeMessage => '[NO] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Kunne ikke avbryte invitasjon';
+    return '[NO] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Feil ved sending av melding';
+    return '[NO] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Bekreft passord';
+  String get confirmPassword => '[NO] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Feil ved lasting av personvernforespørsler';
+    return '[NO] Error loading privacy requests';
   }
 
   @override
@@ -486,69 +488,88 @@ class AppLocalizationsNo extends AppLocalizations {
   String get share => 'Del';
 
   @override
-  String get playtimeEnterGameName => 'Skriv inn spillnavn';
+  String get playtimeEnterGameName => '[NO] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Logg inn for å få tilgang til familie-funksjoner';
+      '[NO] Please login to access family features';
 
   @override
-  String get myInvites => 'Mine invitasjoner';
+  String get myInvites => '[NO] My Invites';
 
   @override
-  String get createGame => 'Opprett spill';
+  String get createGame => '[NO] Create Game';
 
   @override
-  String get groupNameOptional => 'Gruppenavn (valgfritt)';
+  String get groupNameOptional => '[NO] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Ingen playtime-økter funnet.';
+  String get playtimeNoSessions => '[NO] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Admin-skjerm kommer snart';
+  String get adminScreenTBD => '[NO] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime-dashbord';
+  String get playtimeParentDashboardTitle => '[NO] Playtime Dashboard';
 
   @override
-  String get close => 'Lukk';
+  String get close => '[NO] Close';
 
   @override
-  String get knownGroupDetected => 'Kjent gruppe oppdaget';
+  String get knownGroupDetected => '[NO] Known group detected';
 
   @override
-  String get back => 'Tilbake';
+  String get back => '[NO] Back';
 
   @override
-  String get playtimeChooseGame => 'Velg et spill';
+  String get playtimeChooseGame => '[NO] Choose a game';
 
   @override
-  String get managePermissions => 'Administrer tillatelser';
+  String get managePermissions => '[NO] Manage Permissions';
 
   @override
-  String get pollOptions => 'Avstemningsalternativer';
+  String get pollOptions => '[NO] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Klikket';
+    return '[NO] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Lenke';
+    return '[NO] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Møtet ditt er klart! Bli med nå';
+  String get meetingReadyMessage => '[NO] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Ventende invitasjoner';
+  String get pendingInvites => '[NO] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[NO] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Logg inn for å se profil';
+  String get pleaseLoginToViewProfile =>
+      '[NO] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

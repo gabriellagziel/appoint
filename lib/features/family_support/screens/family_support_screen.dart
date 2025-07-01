@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../providers/family_support_provider.dart';
+import 'package:appoint/providers/family_support_provider.dart';
 
 class FamilySupportScreen extends ConsumerStatefulWidget {
   const FamilySupportScreen({super.key});
@@ -18,7 +18,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
   bool _submitting = false;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final ticketsAsync = ref.watch(supportTicketsProvider);
 
     return Scaffold(
@@ -35,7 +35,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                   TextFormField(
                     controller: _subjectController,
                     decoration: const InputDecoration(labelText: 'Subject'),
-                    validator: (v) =>
+                    validator: (final v) =>
                         v == null || v.isEmpty ? 'Required' : null,
                   ),
                   const SizedBox(height: 8),
@@ -43,7 +43,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                     controller: _messageController,
                     decoration: const InputDecoration(labelText: 'Message'),
                     maxLines: 3,
-                    validator: (v) =>
+                    validator: (final v) =>
                         v == null || v.isEmpty ? 'Required' : null,
                   ),
                   const SizedBox(height: 8),
@@ -61,14 +61,14 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                 style: TextStyle(fontWeight: FontWeight.bold)),
             const SizedBox(height: 8),
             ticketsAsync.when(
-              data: (tickets) {
+              data: (final tickets) {
                 if (tickets.isEmpty) {
                   return const Text('No tickets yet');
                 }
                 return Column(
                   children: tickets
                       .map(
-                        (t) => Card(
+                        (final t) => Card(
                           child: ListTile(
                             title: Text(t.subject),
                             subtitle: Text(t.message),
@@ -80,7 +80,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (e, _) => Text('Error: $e'),
+              error: (final e, final _) => Text('Error: $e'),
             ),
           ],
         ),

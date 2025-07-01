@@ -25,7 +25,7 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
     });
   }
 
-  void _removeQuestion(int index) {
+  void _removeQuestion(final int index) {
     setState(() {
       _questions[index].controller.dispose();
       _questions.removeAt(index);
@@ -33,7 +33,7 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Survey Editor'),
@@ -47,7 +47,7 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
               child: Center(child: Text('No questions added')),
             ),
           ..._questions.asMap().entries.map(
-                (entry) => _buildQuestionCard(entry.key, entry.value),
+                (final entry) => _buildQuestionCard(entry.key, entry.value),
               ),
           const SizedBox(height: 16),
           ElevatedButton.icon(
@@ -60,7 +60,7 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
     );
   }
 
-  Widget _buildQuestionCard(int index, _QuestionItem item) {
+  Widget _buildQuestionCard(final int index, final _QuestionItem item) {
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
       child: Padding(
@@ -81,7 +81,7 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
                     value: 'multiple', child: Text('Multiple Choice')),
                 DropdownMenuItem(value: 'rating', child: Text('Rating')),
               ],
-              onChanged: (val) => setState(() => item.type = val ?? 'text'),
+              onChanged: (final val) => setState(() => item.type = val ?? 'text'),
             ),
             Align(
               alignment: Alignment.centerRight,

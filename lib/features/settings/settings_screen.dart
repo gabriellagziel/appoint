@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../providers/theme_provider.dart';
-import '../../theme/app_spacing.dart';
-import '../../theme/sample_palettes.dart';
-import '../../widgets/app_scaffold.dart';
+import 'package:appoint/providers/theme_provider.dart';
+import 'package:appoint/theme/app_spacing.dart';
+import 'package:appoint/theme/sample_palettes.dart';
+import 'package:appoint/widgets/app_scaffold.dart';
 
 /// Static settings screen with dummy toggles.
 class SettingsScreen extends ConsumerStatefulWidget {
@@ -19,7 +19,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   bool _vibration = false;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final palette = ref.watch(themeNotifierProvider).palette;
     final darkMode = ref.watch(themeModeProvider) == ThemeMode.dark;
 
@@ -32,19 +32,19 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             SwitchListTile(
               title: const Text('Enable Notifications'),
               value: _notifications,
-              onChanged: (value) => setState(() => _notifications = value),
+              onChanged: (final value) => setState(() => _notifications = value),
             ),
             const SizedBox(height: AppSpacing.sm),
             SwitchListTile(
               title: const Text('Enable Vibration'),
               value: _vibration,
-              onChanged: (value) => setState(() => _vibration = value),
+              onChanged: (final value) => setState(() => _vibration = value),
             ),
             const SizedBox(height: AppSpacing.sm),
             SwitchListTile(
               title: const Text('Dark Mode'),
               value: darkMode,
-              onChanged: (value) {
+              onChanged: (final value) {
                 ref
                     .read(themeNotifierProvider.notifier)
                     .setMode(value ? ThemeMode.dark : ThemeMode.light);
@@ -53,14 +53,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             const SizedBox(height: AppSpacing.sm),
             DropdownButton<AppPalette>(
               value: palette,
-              onChanged: (value) {
+              onChanged: (final value) {
                 if (value != null) {
                   ref.read(themeNotifierProvider.notifier).setPalette(value);
                 }
               },
               items: AppPalette.values
                   .map(
-                    (p) => DropdownMenuItem(
+                    (final p) => DropdownMenuItem(
                       value: p,
                       child: Text(p.name),
                     ),

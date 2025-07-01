@@ -11,7 +11,7 @@ class AmbassadorRecord {
     required this.referrals,
   });
 
-  factory AmbassadorRecord.fromJson(Map<String, dynamic> json) {
+  factory AmbassadorRecord.fromJson(final Map<String, dynamic> json) {
     return AmbassadorRecord(
       id: json['id'] as String,
       status: json['status'] as String? ?? 'inactive',

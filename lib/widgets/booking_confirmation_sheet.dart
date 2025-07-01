@@ -13,7 +13,7 @@ class BookingConfirmationSheet extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(24),
       child: Column(

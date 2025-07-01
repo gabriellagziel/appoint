@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../models/studio_profile.dart';
-import '../../services/studio_profile_service.dart';
+import 'package:appoint/models/studio_profile.dart';
+import 'package:appoint/services/studio_profile_service.dart';
 
 class StudioProfileScreen extends ConsumerStatefulWidget {
   final String studioId;
-  const StudioProfileScreen({Key? key, required this.studioId}) : super(key: key);
+  const StudioProfileScreen({final Key? key, required this.studioId}) : super(key: key);
 
   @override
   ConsumerState<StudioProfileScreen> createState() => _StudioProfileScreenState();
@@ -46,7 +46,7 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     if (_loading) {
       return const Scaffold(
         body: Center(child: CircularProgressIndicator()),
@@ -69,38 +69,38 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
               TextFormField(
                 initialValue: _profile!.name,
                 decoration: const InputDecoration(labelText: 'Studio Name'),
-                onSaved: (v) => _profile = _profile!.copyWith(name: v ?? ''),
-                validator: (v) => v == null || v.isEmpty ? 'Required' : null,
+                onSaved: (final v) => _profile = _profile!.copyWith(name: v ?? ''),
+                validator: (final v) => v == null || v.isEmpty ? 'Required' : null,
               ),
               const SizedBox(height: 16),
               TextFormField(
                 initialValue: _profile!.description,
                 decoration: const InputDecoration(labelText: 'Description'),
-                onSaved: (v) => _profile = _profile!.copyWith(description: v),
+                onSaved: (final v) => _profile = _profile!.copyWith(description: v),
               ),
               const SizedBox(height: 16),
               TextFormField(
                 initialValue: _profile!.address,
                 decoration: const InputDecoration(labelText: 'Address'),
-                onSaved: (v) => _profile = _profile!.copyWith(address: v),
+                onSaved: (final v) => _profile = _profile!.copyWith(address: v),
               ),
               const SizedBox(height: 16),
               TextFormField(
                 initialValue: _profile!.phone,
                 decoration: const InputDecoration(labelText: 'Phone'),
-                onSaved: (v) => _profile = _profile!.copyWith(phone: v),
+                onSaved: (final v) => _profile = _profile!.copyWith(phone: v),
               ),
               const SizedBox(height: 16),
               TextFormField(
                 initialValue: _profile!.email,
                 decoration: const InputDecoration(labelText: 'Email'),
-                onSaved: (v) => _profile = _profile!.copyWith(email: v),
+                onSaved: (final v) => _profile = _profile!.copyWith(email: v),
               ),
               const SizedBox(height: 16),
               SwitchListTile(
                 title: const Text('Admin Free Access'),
                 value: _profile!.isAdminFreeAccess ?? false,
-                onChanged: (v) => setState(() => _profile = _profile!.copyWith(isAdminFreeAccess: v)),
+                onChanged: (final v) => setState(() => _profile = _profile!.copyWith(isAdminFreeAccess: v)),
               ),
               const SizedBox(height: 24),
               ElevatedButton(

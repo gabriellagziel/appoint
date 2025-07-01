@@ -7,6 +7,11 @@
   <script src="https://accounts.google.com/gsi/client" async defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.gstatic.com https://accounts.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; connect-src 'self' https://firebase.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
   <title>Appoint</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
@@ -14,18 +19,11 @@
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js';
     import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js';
     
-    const firebaseConfig = {
-      apiKey: "REDACTED_TOKEN",
-      authDomain: "app-oint-core.firebaseapp.com",
-      projectId: "app-oint-core",
-      storageBucket: "app-oint-core.appspot.com",
-      messagingSenderId: "944776470711",
-      appId: "1:944776470711:web:6f3c833ef110bca6c66d32",
-      measurementId: "G-HHH7T7JFHS"
-    };
+    // Firebase config will be injected by Flutter at runtime
+    // This prevents exposing sensitive keys in the source code
     
     // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
+    const app = initializeApp();
     const analytics = getAnalytics(app);
     
     // Make Firebase available globally for compatibility

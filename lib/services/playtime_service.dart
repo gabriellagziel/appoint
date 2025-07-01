@@ -3,15 +3,15 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io';
 
-import '../models/playtime_game.dart';
-import '../models/playtime_session.dart';
-import '../models/playtime_background.dart';
-import '../models/playtime_chat.dart';
+import 'package:appoint/models/playtime_game.dart';
+import 'package:appoint/models/playtime_session.dart';
+import 'package:appoint/models/playtime_background.dart';
+import 'package:appoint/models/playtime_chat.dart';
 
 class PlaytimeService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  // TODO: Integrate a storage solution for non-web platforms
+  // TODO: Implement this featurentegrate a storage solution for non-web platforms
   // final FirebaseStorage _storage = FirebaseStorage.instance;
 
   // Collections
@@ -25,7 +25,7 @@ class PlaytimeService {
     try {
       final snapshot = await _firestore.collection(_gamesCollection).get();
       return snapshot.docs
-          .map((doc) => PlaytimeGame.fromJson({
+          .map((final doc) => PlaytimeGame.fromJson({
                 'id': doc.id,
                 ...doc.data(),
               }))
@@ -35,7 +35,7 @@ class PlaytimeService {
     }
   }
 
-  Future<PlaytimeGame> createGame(PlaytimeGame game) async {
+  Future<PlaytimeGame> createGame(final PlaytimeGame game) async {
     try {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');
@@ -53,7 +53,7 @@ class PlaytimeService {
     }
   }
 
-  Future<void> updateGame(PlaytimeGame game) async {
+  Future<void> updateGame(final PlaytimeGame game) async {
     try {
       await _firestore.collection(_gamesCollection).doc(game.id).update({
         ...game.toJson(),
@@ -64,7 +64,7 @@ class PlaytimeService {
     }
   }
 
-  Future<void> deleteGame(String gameId) async {
+  Future<void> deleteGame(final String gameId) async {
     try {
       await _firestore.collection(_gamesCollection).doc(gameId).delete();
     } catch (e) {
@@ -77,7 +77,7 @@ class PlaytimeService {
     try {
       final snapshot = await _firestore.collection(_sessionsCollection).get();
       return snapshot.docs
-          .map((doc) => PlaytimeSession.fromJson({
+          .map((final doc) => PlaytimeSession.fromJson({
                 'id': doc.id,
                 ...doc.data(),
               }))
@@ -87,7 +87,7 @@ class PlaytimeService {
     }
   }
 
-  Future<PlaytimeSession> createSession(PlaytimeSession session) async {
+  Future<PlaytimeSession> createSession(final PlaytimeSession session) async {
     try {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');
@@ -103,7 +103,7 @@ class PlaytimeService {
     }
   }
 
-  Future<void> updateSession(PlaytimeSession session) async {
+  Future<void> updateSession(final PlaytimeSession session) async {
     try {
       await _firestore.collection(_sessionsCollection).doc(session.id).update({
         ...session.toJson(),
@@ -120,7 +120,7 @@ class PlaytimeService {
       final snapshot =
           await _firestore.collection(_backgroundsCollection).get();
       return snapshot.docs
-          .map((doc) => PlaytimeBackground.fromJson({
+          .map((final doc) => PlaytimeBackground.fromJson({
                 'id': doc.id,
                 ...doc.data(),
               }))
@@ -131,11 +131,11 @@ class PlaytimeService {
   }
 
   Future<PlaytimeBackground> createBackground(
-    String name,
-    String description,
-    File imageFile,
-    String category,
-    List<String> tags,
+    final String name,
+    final String description,
+    final File imageFile,
+    final String category,
+    final List<String> tags,
   ) async {
     if (kIsWeb) {
       throw UnsupportedError('createBackground is not supported on the web');
@@ -144,8 +144,8 @@ class PlaytimeService {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');
 
-      // TODO: Upload image to a storage service
-      final imageUrl = 'TODO: image url';
+      // TODO: Implement this feature
+      const imageUrl = 'TODO: image url';
 
       final docRef = await _firestore.collection(_backgroundsCollection).add({
         'imageUrl': imageUrl,
@@ -164,7 +164,7 @@ class PlaytimeService {
   }
 
   // Chat Operations
-  Future<PlaytimeChat> getChat(String sessionId) async {
+  Future<PlaytimeChat> getChat(final String sessionId) async {
     try {
       final doc =
           await _firestore.collection(_chatsCollection).doc(sessionId).get();
@@ -189,11 +189,12 @@ class PlaytimeService {
     }
   }
 
-  Future<void> sendMessage(String sessionId, ChatMessage message) async {
+  Future<void> sendMessage(
+      final String sessionId, final ChatMessage message) async {
     try {
       final chatRef = _firestore.collection(_chatsCollection).doc(sessionId);
 
-      await _firestore.runTransaction((transaction) async {
+      await _firestore.runTransaction((final transaction) async {
         final chatDoc = await transaction.get(chatRef);
         final messages = List<Map<String, dynamic>>.from(
           chatDoc.data()?['messages'] ?? [],

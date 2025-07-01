@@ -13,20 +13,20 @@ class AdService {
       adUnitId: _testInterstitialAdId,
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
-        onAdLoaded: (ad) {
+        onAdLoaded: (final ad) {
           ad.fullScreenContentCallback = FullScreenContentCallback(
-            onAdDismissedFullScreenContent: (ad) {
+            onAdDismissedFullScreenContent: (final ad) {
               ad.dispose();
               if (!completer.isCompleted) completer.complete();
             },
-            REDACTED_TOKEN: (ad, error) {
+            REDACTED_TOKEN: (final ad, final error) {
               ad.dispose();
               if (!completer.isCompleted) completer.complete();
             },
           );
           ad.show();
         },
-        onAdFailedToLoad: (error) {
+        onAdFailedToLoad: (final error) {
           if (!completer.isCompleted) completer.complete();
         },
       ),

@@ -1,14 +1,14 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../services/auth_service.dart';
+import 'package:appoint/services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import '../models/app_user.dart';
+import 'package:appoint/models/app_user.dart';
 
-final authServiceProvider = Provider<AuthService>((ref) => AuthService());
+final authServiceProvider = Provider<AuthService>((final ref) => AuthService());
 
 final authStateProvider = StreamProvider<AppUser?>(
-  (ref) => ref.read(authServiceProvider).authStateChanges(),
+  (final ref) => ref.read(authServiceProvider).authStateChanges(),
 );
 
-final authProvider = Provider<FirebaseAuth>((ref) {
+final authProvider = Provider<FirebaseAuth>((final ref) {
   return FirebaseAuth.instance;
 });

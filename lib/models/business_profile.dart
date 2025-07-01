@@ -6,10 +6,16 @@ part 'business_profile.g.dart';
 @freezed
 class BusinessProfile with _$BusinessProfile {
   const factory BusinessProfile({
-    required String name,
-    required String description,
-    required String phone,
+    required final String name,
+    required final String description,
+    required final String phone,
   }) = _BusinessProfile;
 
-  factory BusinessProfile.fromJson(Map<String, dynamic> json) => _$BusinessProfileFromJson(json);
-} 
+  factory BusinessProfile.fromJson(final Map<String, dynamic> json) =>
+      _$BusinessProfileFromJson(json);
+}
+
+extension BusinessProfileExtension on BusinessProfile {
+  String? get logoUrl =>
+      null; // TODO: Add logoUrl property when code generation is fixed
+}

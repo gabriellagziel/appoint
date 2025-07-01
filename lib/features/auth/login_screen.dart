@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../providers/auth_provider.dart';
-import '../../providers/notification_provider.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/providers/notification_provider.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<LoginScreen> createState() => _LoginScreenState();
@@ -24,7 +24,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Login')),
       body: Padding(
@@ -48,18 +48,18 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                       setState(() => _isLoading = true);
                       try {
                         await ref.read(authServiceProvider).signIn(
-                          _emailController.text,
-                          _passwordController.text,
-                        );
+                              _emailController.text,
+                              _passwordController.text,
+                            );
                         final uid = ref.read(authProvider).currentUser?.uid;
                         if (uid != null) {
                           await ref
                               .read(notificationServiceProvider)
                               .saveTokenForUser(uid);
                         }
-                        if (!mounted) return;
-                        // ignore: unused_result
-                        ref.refresh(authStateProvider);
+                        if (mounted) {
+                          ref.refresh(authStateProvider);
+                        }
                       } catch (e) {
                         if (mounted) {
                           ScaffoldMessenger.of(context).showSnackBar(

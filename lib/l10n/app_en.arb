@@ -727,5 +727,29 @@
     }
   },
   "@@locale": "en",
-  "pleaseLoginToViewProfile": "Please log in to view your profile."
+  "pleaseLoginToViewProfile": "Please log in to view your profile.",
+  "adminMetrics": "Admin Metrics",
+  "@adminMetrics": {
+    "description": "Admin metrics title"
+  },
+  "overview": "Overview",
+  "@overview": {
+    "description": "Overview section title"
+  },
+  "bookings": "Bookings",
+  "@bookings": {
+    "description": "Bookings section title"
+  },
+  "users": "Users",
+  "@users": {
+    "description": "Users section title"
+  },
+  "revenue": "Revenue",
+  "@revenue": {
+    "description": "Revenue section title"
+  },
+  "contentLibrary": "Content Library",
+  "@contentLibrary": {
+    "description": "Content library title"
+  }
 }

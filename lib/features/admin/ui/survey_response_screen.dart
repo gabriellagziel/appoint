@@ -5,7 +5,7 @@ class SurveyResponsesScreen extends StatelessWidget {
   const SurveyResponsesScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final responses = _dummyResponses;
     return Scaffold(
       appBar: AppBar(
@@ -14,7 +14,7 @@ class SurveyResponsesScreen extends StatelessWidget {
       body: ListView.builder(
         padding: const EdgeInsets.all(16),
         itemCount: responses.length,
-        itemBuilder: (context, index) {
+        itemBuilder: (final context, final index) {
           final r = responses[index];
           return Card(
             child: ListTile(
@@ -24,7 +24,7 @@ class SurveyResponsesScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) => SurveyResponseDetailScreen(response: r),
+                    builder: (final _) => SurveyResponseDetailScreen(response: r),
                   ),
                 );
               },
@@ -42,7 +42,7 @@ class SurveyResponseDetailScreen extends StatelessWidget {
   const SurveyResponseDetailScreen({super.key, required this.response});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Response Detail'),
@@ -54,7 +54,7 @@ class SurveyResponseDetailScreen extends StatelessWidget {
           children: [
             Text('User: ${response['user']}'),
             const SizedBox(height: 12),
-            ...response['answers'].entries.map<Widget>((e) => Padding(
+            ...response['answers'].entries.map<Widget>((final e) => Padding(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text('${e.key}: ${e.value}'),
                 )),

@@ -11,12 +11,12 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
   group('ProfileScreen', () {
-    testWidgets('renders profile data and edit button', (tester) async {
+    testWidgets('renders profile data and edit button', (final tester) async {
       const profile = UserProfile(id: '1', name: 'Tester', email: 't@e.com');
 
       final container = ProviderContainer(overrides: [
-        currentUserProfileProvider.overrideWith((ref) => Stream.value(profile)),
-        userSubscriptionProvider.overrideWith((ref) async => true),
+        currentUserProfileProvider.overrideWith((final ref) => Stream.value(profile)),
+        userSubscriptionProvider.overrideWith((final ref) async => true),
       ]);
 
       await tester.pumpWidget(

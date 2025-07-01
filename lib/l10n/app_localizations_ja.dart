@@ -54,7 +54,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get undo => '元に戻す';
 
   @override
-  String get opened => '開きました';
+  String opened(Object count) {
+    return '開きました';
+  }
 
   @override
   String get createVirtualSession => 'バーチャルセッションを作成';
@@ -269,9 +271,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get playtimeLive => 'ライブPlaytime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return '招待の読み込みエラー';
-  }
+  String get errorLoadingInvites => '招待の読み込みエラー';
 
   @override
   String get targetingFilters => 'ターゲティングフィルター';
@@ -289,7 +289,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get accessRevokedSuccessfully => 'アクセスが正常に取り消されました';
 
   @override
-  String get type => 'タイプ';
+  String type(Object type) {
+    return 'タイプ';
+  }
 
   @override
   String get checkingPermissions => '権限を確認中';
@@ -304,7 +306,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get email => 'メール';
 
   @override
-  String get shareOnWhatsApp => 'WhatsAppで共有';
+  String get shareOnWhatsApp => '[JA] Share on WhatsApp';
 
   @override
   String get notificationSettings => '通知設定';
@@ -342,9 +344,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get playtimeReject => 'Playtimeを拒否';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'プロフィール読み込みエラー';
-  }
+  String get errorLoadingProfile => 'プロフィール読み込みエラー';
 
   @override
   String get edit => '編集';
@@ -451,7 +451,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'アクセスの取り消しに失敗しました';
+    return '[JA] Failed to revoke access';
   }
 
   @override
@@ -488,65 +488,84 @@ class AppLocalizationsJa extends AppLocalizations {
   String get playtimeEnterGameName => 'ゲーム名を入力';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '家族機能にアクセスするにはログインしてください';
+  String get pleaseLoginForFamilyFeatures =>
+      '[JA] Please login to access family features';
 
   @override
-  String get myInvites => 'マイ招待';
+  String get myInvites => '[JA] My Invites';
 
   @override
-  String get createGame => 'ゲームを作成';
+  String get createGame => '[JA] Create Game';
 
   @override
-  String get groupNameOptional => 'グループ名（オプション）';
+  String get groupNameOptional => '[JA] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'プレイタイムセッションが見つかりません。';
+  String get playtimeNoSessions => '[JA] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => '管理者画面は近日公開予定';
+  String get adminScreenTBD => '[JA] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'プレイタイムダッシュボード';
+  String get playtimeParentDashboardTitle => '[JA] Playtime Dashboard';
 
   @override
-  String get close => '閉じる';
+  String get close => '[JA] Close';
 
   @override
-  String get knownGroupDetected => '既知のグループが検出されました';
+  String get knownGroupDetected => '[JA] Known group detected';
 
   @override
-  String get back => '戻る';
+  String get back => '[JA] Back';
 
   @override
-  String get playtimeChooseGame => 'ゲームを選択';
+  String get playtimeChooseGame => '[JA] Choose a game';
 
   @override
-  String get managePermissions => '権限を管理';
+  String get managePermissions => '[JA] Manage Permissions';
 
   @override
-  String get pollOptions => '投票オプション';
+  String get pollOptions => '[JA] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'クリック済み';
+    return '[JA] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'リンク';
+    return '[JA] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'ミーティングの準備ができました！今すぐ参加してください';
+  String get meetingReadyMessage => '[JA] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => '保留中の招待';
+  String get pendingInvites => '[JA] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'ステータス：';
+    return '[JA] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile => 'プロフィールを表示するにはログインしてください';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

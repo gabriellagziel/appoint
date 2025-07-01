@@ -7,7 +7,7 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
   group('StudioDashboardScreen', () {
-    testWidgets('shows welcome text', (WidgetTester tester) async {
+    testWidgets('shows welcome text', (final WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: StudioDashboardScreen(),

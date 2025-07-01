@@ -7,14 +7,14 @@ class FakeFirebaseFirestore implements FirebaseFirestore {
   final Map<String, Map<String, Map<String, dynamic>>> _storage = {};
 
   @override
-  CollectionReference<Map<String, dynamic>> collection(String path) {
+  CollectionReference<Map<String, dynamic>> collection(final String path) {
     return _FakeCollectionReference(this, path);
   }
 
   // ignore: no-empty-block
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
+  dynamic noSuchMethod(final Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
@@ -30,38 +30,38 @@ class _FakeCollectionReference
 
   @override
   Future<DocumentReference<Map<String, dynamic>>> add(
-      Map<String, dynamic> data) async {
+      final Map<String, dynamic> data) async {
     final id = DateTime.now().microsecondsSinceEpoch.toString();
     _col[id] = Map<String, dynamic>.from(data);
     return _FakeDocumentReference(_fs, '$_path/$id');
   }
 
   @override
-  DocumentReference<Map<String, dynamic>> doc([String? id]) {
+  DocumentReference<Map<String, dynamic>> doc([final String? id]) {
     final docId = id ?? DateTime.now().microsecondsSinceEpoch.toString();
     _col.putIfAbsent(docId, () => <String, dynamic>{});
     return _FakeDocumentReference(_fs, '$_path/$docId');
   }
 
   @override
-  Future<QuerySnapshot<Map<String, dynamic>>> get([GetOptions? options]) async {
+  Future<QuerySnapshot<Map<String, dynamic>>> get([final GetOptions? options]) async {
     final docs = _col.entries
-        .map((e) => _FakeQueryDocumentSnapshot(e.key, e.value))
+        .map((final e) => _FakeQueryDocumentSnapshot(e.key, e.value))
         .toList();
     return _FakeQuerySnapshot(docs);
   }
 
   @override
   Stream<QuerySnapshot<Map<String, dynamic>>> snapshots({
-    bool includeMetadataChanges = false,
-    ListenSource source = ListenSource.defaultSource,
+    final bool includeMetadataChanges = false,
+    final ListenSource source = ListenSource.defaultSource,
   }) async* {
     yield await get();
   }
 
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
+  dynamic noSuchMethod(final Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
@@ -77,7 +77,7 @@ class _FakeDocumentReference
     return _fs._storage[parts[0]]?[parts[1]];
   }
 
-  set _data(Map<String, dynamic>? value) {
+  set _data(final Map<String, dynamic>? value) {
     final parts = _path.split('/');
     if (value == null) {
       _fs._storage[parts[0]]?.remove(parts[1]);
@@ -98,12 +98,12 @@ class _FakeDocumentReference
       _FakeCollectionReference(_fs, _path.split('/').first);
 
   @override
-  Future<void> set(Map<String, dynamic> data, [SetOptions? options]) async {
+  Future<void> set(final Map<String, dynamic> data, [final SetOptions? options]) async {
     _data = Map<String, dynamic>.from(data);
   }
 
   @override
-  Future<DocumentSnapshot<Map<String, dynamic>>> get([GetOptions? options]) async {
+  Future<DocumentSnapshot<Map<String, dynamic>>> get([final GetOptions? options]) async {
     return _FakeDocumentSnapshot(id, _data);
   }
 
@@ -113,7 +113,7 @@ class _FakeDocumentReference
   }
 
   @override
-  Future<void> update(Map<Object, Object?> data) async {
+  Future<void> update(final Map<Object, Object?> data) async {
     final current = _data ?? <String, dynamic>{};
     current.addAll(Map<String, dynamic>.from(data));
     _data = current;
@@ -121,15 +121,15 @@ class _FakeDocumentReference
 
   @override
   Stream<DocumentSnapshot<Map<String, dynamic>>> snapshots({
-    bool includeMetadataChanges = false,
-    ListenSource source = ListenSource.defaultSource,
+    final bool includeMetadataChanges = false,
+    final ListenSource source = ListenSource.defaultSource,
   }) async* {
     yield await get();
   }
 
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
+  dynamic noSuchMethod(final Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
@@ -151,7 +151,7 @@ class _FakeDocumentSnapshot
 
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
+  dynamic noSuchMethod(final Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
@@ -165,13 +165,13 @@ class _FakeQuerySnapshot
 
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
+  dynamic noSuchMethod(final Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
 class _FakeQueryDocumentSnapshot extends _FakeDocumentSnapshot
     implements QueryDocumentSnapshot<Map<String, dynamic>> {
-  _FakeQueryDocumentSnapshot(String id, Map<String, dynamic> data)
+  _FakeQueryDocumentSnapshot(final String id, final Map<String, dynamic> data)
       : super(id, data);
 
   @override

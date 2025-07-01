@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../selection/providers/selection_provider.dart';
+import 'package:appoint/features/selection/providers/selection_provider.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import '../../services/maps_service.dart';
-import '../../services/location_service.dart';
-import '../../providers/branch_provider.dart';
+import 'package:appoint/services/maps_service.dart';
+import 'package:appoint/services/location_service.dart';
+import 'package:appoint/providers/branch_provider.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 class BookingRequestScreen extends ConsumerStatefulWidget {
@@ -33,7 +33,7 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
       final branches = await ref.read(branchesProvider.future);
       setState(() {
         _markers = branches
-            .map((b) => Marker(
+            .map((final b) => Marker(
                   markerId: MarkerId(b.id),
                   position: LatLng(b.latitude, b.longitude),
                   infoWindow: InfoWindow(title: b.name),
@@ -49,12 +49,12 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
         }
       }
     } catch (e) {
-      print('Error loading initial data: $e');
+      // Removed debug print: print('Error loading initial data: $e');
     }
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     ref.watch(staffSelectionProvider);
     ref.watch(serviceSelectionProvider);
     ref.watch(selectedSlotProvider);
@@ -70,7 +70,7 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
     return GoogleMap(
       initialCameraPosition: MapsService.initialPosition,
       markers: _markers,
-      onMapCreated: (controller) {
+      onMapCreated: (final controller) {
         _mapController = controller;
       },
       myLocationEnabled: true,

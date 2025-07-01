@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../providers/admin_provider.dart';
+import 'package:appoint/providers/admin_provider.dart';
 
 /// A widget that only shows its child if the user has admin privileges.
 /// Shows an access denied screen for non-admin users.
@@ -10,18 +10,18 @@ class AdminGuard extends ConsumerWidget {
   final Widget? customAccessDeniedWidget;
 
   const AdminGuard({
-    Key? key,
+    final Key? key,
     required this.child,
     this.customMessage,
     this.customAccessDeniedWidget,
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final isAdmin = ref.watch(isAdminProvider);
 
     return isAdmin.when(
-      data: (hasAdminAccess) {
+      data: (final hasAdminAccess) {
         if (!hasAdminAccess) {
           return customAccessDeniedWidget ?? _buildDefaultAccessDeniedScreen();
         }
@@ -39,7 +39,7 @@ class AdminGuard extends ConsumerWidget {
           ),
         ),
       ),
-      error: (error, stack) => Scaffold(
+      error: (final error, final stack) => Scaffold(
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -121,7 +121,7 @@ class AdminGuard extends ConsumerWidget {
 /// A mixin that provides admin role checking functionality
 mixin AdminRoleMixin {
   /// Checks if the current user has admin privileges
-  Future<bool> checkAdminRole(WidgetRef ref) async {
+  Future<bool> checkAdminRole(final WidgetRef ref) async {
     try {
       return await ref.read(isAdminProvider.future);
     } catch (e) {
@@ -130,7 +130,7 @@ mixin AdminRoleMixin {
   }
 
   /// Shows an access denied snackbar
-  void showAccessDeniedSnackBar(BuildContext context, {String? message}) {
+  void showAccessDeniedSnackBar(final BuildContext context, {final String? message}) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(

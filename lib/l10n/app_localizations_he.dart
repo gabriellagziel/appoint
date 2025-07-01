@@ -54,7 +54,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get undo => 'בטל';
 
   @override
-  String get opened => 'נפתח';
+  String opened(Object count) {
+    return 'נפתח';
+  }
 
   @override
   String get createVirtualSession => 'צור מפגש וירטואלי';
@@ -269,9 +271,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get playtimeLive => 'Playtime חי';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'שגיאה בטעינת הזמנות';
-  }
+  String get errorLoadingInvites => 'שגיאה בטעינת הזמנות';
 
   @override
   String get targetingFilters => 'מסנני מיקוד';
@@ -289,7 +289,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get accessRevokedSuccessfully => 'הגישה בוטלה בהצלחה';
 
   @override
-  String get type => 'סוג';
+  String type(Object type) {
+    return 'סוג';
+  }
 
   @override
   String get checkingPermissions => 'בודק הרשאות';
@@ -304,7 +306,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get email => 'דוא״ל';
 
   @override
-  String get shareOnWhatsApp => 'שתף ב-WhatsApp';
+  String get shareOnWhatsApp => '[HE] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'הגדרות התראות';
@@ -342,9 +344,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get playtimeReject => 'סרב Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'שגיאה בטעינת הפרופיל';
-  }
+  String get errorLoadingProfile => 'שגיאה בטעינת הפרופיל';
 
   @override
   String get edit => 'ערוך';
@@ -451,7 +451,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Failed to revoke access';
+    return '[HE] Failed to revoke access';
   }
 
   @override
@@ -489,65 +489,83 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+      '[HE] Please login to access family features';
 
   @override
-  String get myInvites => 'My Invites';
+  String get myInvites => '[HE] My Invites';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => '[HE] Create Game';
 
   @override
-  String get groupNameOptional => 'Group Name (Optional)';
+  String get groupNameOptional => '[HE] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => '[HE] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Admin screen coming soon';
+  String get adminScreenTBD => '[HE] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => '[HE] Playtime Dashboard';
 
   @override
-  String get close => 'Close';
+  String get close => '[HE] Close';
 
   @override
-  String get knownGroupDetected => 'Known group detected';
+  String get knownGroupDetected => '[HE] Known group detected';
 
   @override
-  String get back => 'Back';
+  String get back => '[HE] Back';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => '[HE] Choose a game';
 
   @override
-  String get managePermissions => 'Manage Permissions';
+  String get managePermissions => '[HE] Manage Permissions';
 
   @override
-  String get pollOptions => 'Poll Options';
+  String get pollOptions => '[HE] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Clicked';
+    return '[HE] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[HE] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Your meeting is ready! Join now';
+  String get meetingReadyMessage => '[HE] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Pending Invites';
+  String get pendingInvites => '[HE] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[HE] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile => 'אנא התחבר כדי לצפות בפרופיל';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

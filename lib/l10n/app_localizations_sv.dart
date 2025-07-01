@@ -9,13 +9,13 @@ class AppLocalizationsSv extends AppLocalizations {
   AppLocalizationsSv([String locale = 'sv']) : super(locale);
 
   @override
-  String get refresh => 'Uppdatera';
+  String get refresh => '[SV] Refresh';
 
   @override
   String get home => 'Hem';
 
   @override
-  String get noSessionsYet => 'Inga sessioner än';
+  String get noSessionsYet => '[SV] No sessions yet';
 
   @override
   String get ok => 'OK';
@@ -27,22 +27,22 @@ class AppLocalizationsSv extends AppLocalizations {
   String get signUp => 'Registrera dig';
 
   @override
-  String get scheduleMessage => 'Schemalägg meddelande';
+  String get scheduleMessage => '[SV] Schedule Message';
 
   @override
   String get decline => 'Avböj';
 
   @override
-  String get adminBroadcast => 'Admin-sändning';
+  String get adminBroadcast => '[SV] Admin Broadcast';
 
   @override
-  String get login => 'Logga in';
+  String get login => '[SV] Login';
 
   @override
-  String get playtimeChooseFriends => 'Välj vänner att bjuda in';
+  String get playtimeChooseFriends => '[SV] Choose friends to invite';
 
   @override
-  String get noInvites => 'Inga inbjudningar';
+  String get noInvites => '[SV] No invites';
 
   @override
   String get playtimeChooseTime => 'Välj tid';
@@ -54,13 +54,15 @@ class AppLocalizationsSv extends AppLocalizations {
   String get undo => 'Ångra';
 
   @override
-  String get opened => 'Öppnad';
+  String opened(Object count) {
+    return 'Öppnad';
+  }
 
   @override
-  String get createVirtualSession => 'Skapa virtuell session';
+  String get createVirtualSession => '[SV] Create Virtual Session';
 
   @override
-  String get messageSentSuccessfully => 'Meddelande skickat framgångsrikt';
+  String get messageSentSuccessfully => '[SV] Message sent successfully';
 
   @override
   String get redo => 'Gör om';
@@ -72,21 +74,22 @@ class AppLocalizationsSv extends AppLocalizations {
   String get search => 'Sök';
 
   @override
-  String get cancelInviteConfirmation => 'Avbryt inbjudningsbekräftelse';
+  String get cancelInviteConfirmation =>
+      '[SV] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return 'Skapat';
+    return '[SV] Created';
   }
 
   @override
   String get revokeAccess => 'Återkalla åtkomst';
 
   @override
-  String get saveGroupForRecognition => 'Spara grupp för igenkänning';
+  String get saveGroupForRecognition => '[SV] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Livesession schemalagd';
+  String get playtimeLiveScheduled => '[SV] Live playtime scheduled!';
 
   @override
   String get revokeAccessConfirmation => 'Bekräfta återkallad åtkomst';
@@ -95,11 +98,11 @@ class AppLocalizationsSv extends AppLocalizations {
   String get download => 'Ladda ner';
 
   @override
-  String get password => 'Lösenord';
+  String get password => '[SV] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Fel vid inläsning av familjelänkar';
+    return '[SV] Error loading family links';
   }
 
   @override
@@ -110,7 +113,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Kunde inte hantera sekretessförfrågan';
+    return '[SV] Failed to action privacy request';
   }
 
   @override
@@ -123,13 +126,14 @@ class AppLocalizationsSv extends AppLocalizations {
   String get playtimeModeVirtual => 'Virtuellt läge';
 
   @override
-  String get playtimeDescription => 'Playtime-beskrivning';
+  String get playtimeDescription =>
+      '[SV] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => 'Radera';
 
   @override
-  String get playtimeVirtualStarted => 'Virtuell session startad';
+  String get playtimeVirtualStarted => '[SV] Virtual playtime started!';
 
   @override
   String get createYourFirstGame => 'Skapa ditt första spel';
@@ -143,13 +147,13 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
-  String get noResults => 'Inga resultat';
+  String get noResults => '[SV] No results found';
 
   @override
   String get yes => 'Ja';
 
   @override
-  String get invite => 'Bjud in';
+  String get invite => '[SV] Invite';
 
   @override
   String get playtimeModeLive => 'Live-läge';
@@ -158,7 +162,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get done => 'Klar';
 
   @override
-  String get defaultShareMessage => 'Standarddelningsmeddelande';
+  String get defaultShareMessage => '[SV] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Nej';
@@ -170,23 +174,23 @@ class AppLocalizationsSv extends AppLocalizations {
   String get error => 'Fel';
 
   @override
-  String get createLiveSession => 'Skapa livesession';
+  String get createLiveSession => '[SV] Create Live Session';
 
   @override
-  String get enableNotifications => 'Aktivera aviseringar';
+  String get enableNotifications => '[SV] Enable Notifications';
 
   @override
   String invited(Object date) {
-    return 'Inbjuden';
+    return '[SV] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'Innehåll';
+    return '[SV] Content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Möte delat';
+  String get meetingSharedSuccessfully => '[SV] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => 'Välkommen till Playtime';
@@ -198,25 +202,26 @@ class AppLocalizationsSv extends AppLocalizations {
   String get playtimeVirtual => 'Virtuell Playtime';
 
   @override
-  String get staffScreenTBD => 'Personalvy TBD';
+  String get staffScreenTBD => '[SV] Staff screen coming soon';
 
   @override
   String get cut => 'Klipp ut';
 
   @override
-  String get inviteCancelledSuccessfully => 'Inbjudan avbruten';
+  String get inviteCancelledSuccessfully =>
+      '[SV] Invite cancelled successfully';
 
   @override
   String get retry => 'Försök igen';
 
   @override
-  String get composeBroadcastMessage => 'Skriv sändningsmeddelande';
+  String get composeBroadcastMessage => '[SV] Compose Broadcast Message';
 
   @override
   String get sendNow => 'Skicka nu';
 
   @override
-  String get noGamesYet => 'Inga spel än';
+  String get noGamesYet => '[SV] No games yet';
 
   @override
   String get select => 'Välj';
@@ -228,27 +233,27 @@ class AppLocalizationsSv extends AppLocalizations {
   String get choose => 'Välj';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[SV] Profile';
 
   @override
-  String get removeChild => 'Ta bort barn';
+  String get removeChild => '[SV] Remove Child';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return '[SV] Status';
   }
 
   @override
   String get logout => 'Logga ut';
 
   @override
-  String get paste => 'Klistra in';
+  String get paste => '[SV] Paste';
 
   @override
   String get welcome => 'Välkommen';
 
   @override
-  String get playtimeCreateSession => 'Skapa Playtime-session';
+  String get playtimeCreateSession => '[SV] Create a Playtime Session';
 
   @override
   String get familyMembers => 'Familjemedlemmar';
@@ -257,7 +262,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get upload => 'Ladda upp';
 
   @override
-  String get upcomingSessions => 'Kommande sessioner';
+  String get upcomingSessions => '[SV] Upcoming Sessions';
 
   @override
   String get enterGroupName => 'Ange gruppnamn';
@@ -269,18 +274,16 @@ class AppLocalizationsSv extends AppLocalizations {
   String get playtimeLive => 'Live-spel';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Fel vid laddning av inbjudningar';
-  }
+  String get errorLoadingInvites => '[SV] Error loading invites';
 
   @override
-  String get targetingFilters => 'Riktningsfilter';
+  String get targetingFilters => '[SV] Targeting Filters';
 
   @override
   String get pickVideo => 'Välj video';
 
   @override
-  String get playtimeGameDeleted => 'Spel raderat';
+  String get playtimeGameDeleted => '[SV] Game deleted';
 
   @override
   String get scheduleForLater => 'Schemalägg för senare';
@@ -289,10 +292,12 @@ class AppLocalizationsSv extends AppLocalizations {
   String get accessRevokedSuccessfully => 'Åtkomst återkallad framgångsrikt';
 
   @override
-  String get type => 'Typ';
+  String type(Object type) {
+    return 'Typ';
+  }
 
   @override
-  String get checkingPermissions => 'Kontrollerar behörigheter...';
+  String get checkingPermissions => '[SV] Checking permissions...';
 
   @override
   String get copy => 'Kopiera';
@@ -304,47 +309,45 @@ class AppLocalizationsSv extends AppLocalizations {
   String get email => 'E-post';
 
   @override
-  String get shareOnWhatsApp => 'Dela på WhatsApp';
+  String get shareOnWhatsApp => '[SV] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Aviseringsinställningar';
+  String get notificationSettings => '[SV] Notification Settings';
 
   @override
-  String get myProfile => 'Min profil';
+  String get myProfile => '[SV] My Profile';
 
   @override
   String get revoke => 'Återkalla';
 
   @override
-  String get noBroadcastMessages => 'Inga meddelanden än';
+  String get noBroadcastMessages => '[SV] No messages yet';
 
   @override
   String requestType(Object type) {
-    return 'Förfrågningstyp';
+    return '[SV] Request Type';
   }
 
   @override
-  String get notifications => 'Aviseringar';
+  String get notifications => '[SV] Notifications';
 
   @override
   String get details => 'Detaljer';
 
   @override
-  String get cancelInvite => 'Avbryt inbjudan';
+  String get cancelInvite => '[SV] Cancel Invite';
 
   @override
   String get createNew => 'Skapa ny';
 
   @override
-  String get settings => 'Inställningar';
+  String get settings => '[SV] Settings';
 
   @override
   String get playtimeReject => 'Avvisa';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Fel vid laddning av profil';
-  }
+  String get errorLoadingProfile => '[SV] Error loading profile';
 
   @override
   String get edit => 'Redigera';
@@ -356,10 +359,10 @@ class AppLocalizationsSv extends AppLocalizations {
   String get playtimeGameApproved => 'Spel godkänt';
 
   @override
-  String get forgotPassword => 'Glömt lösenord?';
+  String get forgotPassword => '[SV] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Familjeinstrumentpanel';
+  String get familyDashboard => '[SV] Family Dashboard';
 
   @override
   String get loading => 'Laddar...';
@@ -371,11 +374,11 @@ class AppLocalizationsSv extends AppLocalizations {
   String get playtimeTitle => 'Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP skickat om framgångsrikt';
+  String get otpResentSuccessfully => '[SV] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Fel vid kontroll av behörigheter';
+    return '[SV] Error checking permissions';
   }
 
   @override
@@ -383,7 +386,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'FCM-token';
+    return '[SV] FCM Token';
   }
 
   @override
@@ -393,31 +396,31 @@ class AppLocalizationsSv extends AppLocalizations {
   String get previous => 'Föregående';
 
   @override
-  String get noProfileFound => 'Ingen profil hittad';
+  String get noProfileFound => '[SV] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Inga familjemedlemmar än';
+  String get noFamilyMembersYet => '[SV] No family members yet';
 
   @override
   String get mediaOptional => 'Media (valfritt)';
 
   @override
-  String get messageSavedSuccessfully => 'Meddelande sparat framgångsrikt';
+  String get messageSavedSuccessfully => '[SV] Message saved successfully';
 
   @override
   String get scheduledFor => 'Schemalagd för';
 
   @override
-  String get dashboard => 'Instrumentpanel';
+  String get dashboard => '[SV] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => 'Ingen behörighet för sändning';
+  String get noPermissionForBroadcast => '[SV] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime-spel – Admin';
+  String get playtimeAdminPanelTitle => '[SV] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Inbjudningsdetaljer';
+  String get inviteDetail => '[SV] Invite Details';
 
   @override
   String scheduled(Object date) {
@@ -426,15 +429,15 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Misslyckades att skicka om OTP';
+    return '[SV] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => 'Schemaläggning';
+  String get scheduling => '[SV] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Fel vid sparande av meddelande';
+    return '[SV] Error saving message';
   }
 
   @override
@@ -444,38 +447,38 @@ class AppLocalizationsSv extends AppLocalizations {
   String get playtimeApprove => 'Godkänn';
 
   @override
-  String get createYourFirstSession => 'Skapa din första session';
+  String get createYourFirstSession => '[SV] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'Spel avvisat';
+  String get playtimeGameRejected => '[SV] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Misslyckades att återkalla åtkomst';
+    return '[SV] Failed to revoke access';
   }
 
   @override
   String get recentGames => 'Senaste spel';
 
   @override
-  String get customizeMessage => 'Anpassa meddelande';
+  String get customizeMessage => '[SV] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Misslyckades att avbryta inbjudan';
+    return '[SV] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Fel vid sändning av meddelande';
+    return '[SV] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Bekräfta lösenord';
+  String get confirmPassword => '[SV] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Fel vid laddning av integritetsförfrågningar';
+    return '[SV] Error loading privacy requests';
   }
 
   @override
@@ -489,65 +492,84 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Logga in för att komma åt familjefunktioner';
+      '[SV] Please login to access family features';
 
   @override
-  String get myInvites => 'Mina inbjudningar';
+  String get myInvites => '[SV] My Invites';
 
   @override
-  String get createGame => 'Skapa spel';
+  String get createGame => '[SV] Create Game';
 
   @override
-  String get groupNameOptional => 'Gruppnamn (valfritt)';
+  String get groupNameOptional => '[SV] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Inga playtime-sessioner hittades.';
+  String get playtimeNoSessions => '[SV] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Admin-skärm kommer snart';
+  String get adminScreenTBD => '[SV] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime-instrumentpanel';
+  String get playtimeParentDashboardTitle => '[SV] Playtime Dashboard';
 
   @override
-  String get close => 'Stäng';
+  String get close => '[SV] Close';
 
   @override
-  String get knownGroupDetected => 'Känd grupp upptäckt';
+  String get knownGroupDetected => '[SV] Known group detected';
 
   @override
-  String get back => 'Tillbaka';
+  String get back => '[SV] Back';
 
   @override
-  String get playtimeChooseGame => 'Välj spel';
+  String get playtimeChooseGame => '[SV] Choose a game';
 
   @override
-  String get managePermissions => 'Hantera behörigheter';
+  String get managePermissions => '[SV] Manage Permissions';
 
   @override
-  String get pollOptions => 'Omröstningsalternativ';
+  String get pollOptions => '[SV] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Klickad';
+    return '[SV] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Länk';
+    return '[SV] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Ditt möte är redo! Gå med nu';
+  String get meetingReadyMessage => '[SV] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Väntande inbjudningar';
+  String get pendingInvites => '[SV] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[SV] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Logga in för att se din profil.';
+  String get pleaseLoginToViewProfile =>
+      '[SV] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

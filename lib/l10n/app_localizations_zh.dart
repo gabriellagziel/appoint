@@ -54,7 +54,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get undo => '撤销';
 
   @override
-  String get opened => '已打开';
+  String opened(Object count) {
+    return '已打开';
+  }
 
   @override
   String get createVirtualSession => '创建虚拟会话';
@@ -269,9 +271,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get playtimeLive => '直播 Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return '加载邀请出错';
-  }
+  String get errorLoadingInvites => '加载邀请出错';
 
   @override
   String get targetingFilters => '目标过滤';
@@ -289,7 +289,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get accessRevokedSuccessfully => '访问撤销成功';
 
   @override
-  String get type => '类型';
+  String type(Object type) {
+    return '类型';
+  }
 
   @override
   String get checkingPermissions => '检查权限中';
@@ -304,7 +306,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get email => '邮箱';
 
   @override
-  String get shareOnWhatsApp => '在 WhatsApp 上分享';
+  String get shareOnWhatsApp => '[ZH] Share on WhatsApp';
 
   @override
   String get notificationSettings => '通知设置';
@@ -342,9 +344,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get playtimeReject => '拒绝 Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return '加载资料出错';
-  }
+  String get errorLoadingProfile => '加载资料出错';
 
   @override
   String get edit => '编辑';
@@ -489,7 +489,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+      '[ZH] Please login to access family features';
 
   @override
   String get myInvites => '我的邀请';
@@ -550,4 +550,570 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get pleaseLoginToViewProfile => '请登录以查看资料';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
+}
+
+/// The translations for Chinese, using the Han script (`zh_Hant`).
+class AppLocalizationsZhHant extends AppLocalizationsZh {
+  AppLocalizationsZhHant() : super('zh_Hant');
+
+  @override
+  String get refresh => 'Refresh';
+
+  @override
+  String get home => '主頁';
+
+  @override
+  String get noSessionsYet => 'No sessions yet';
+
+  @override
+  String get ok => 'OK';
+
+  @override
+  String get playtimeLandingChooseMode => 'Choose your play mode:';
+
+  @override
+  String get signUp => 'Sign Up';
+
+  @override
+  String get scheduleMessage => 'Schedule Message';
+
+  @override
+  String get decline => '拒絕';
+
+  @override
+  String get adminBroadcast => '管理員廣播';
+
+  @override
+  String get login => '登入';
+
+  @override
+  String get playtimeChooseFriends => 'Choose friends to invite';
+
+  @override
+  String get noInvites => '無邀請';
+
+  @override
+  String get playtimeChooseTime => 'Choose a time';
+
+  @override
+  String get success => 'Success';
+
+  @override
+  String get undo => 'Undo';
+
+  @override
+  String opened(Object count) {
+    return '已開啟：$count';
+  }
+
+  @override
+  String get createVirtualSession => 'Create Virtual Session';
+
+  @override
+  String get messageSentSuccessfully => '訊息已成功發送';
+
+  @override
+  String get redo => 'Redo';
+
+  @override
+  String get next => '下一步';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get cancelInviteConfirmation => '您確定要取消此邀請嗎？';
+
+  @override
+  String created(Object date) {
+    return '建立於：$date';
+  }
+
+  @override
+  String get revokeAccess => '撤銷存取權';
+
+  @override
+  String get saveGroupForRecognition => '儲存群組以供未來辨識';
+
+  @override
+  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+
+  @override
+  String get revokeAccessConfirmation => '您確定要撤銷此孩童的存取權嗎？此操作無法還原。';
+
+  @override
+  String get download => 'Download';
+
+  @override
+  String get password => '密碼';
+
+  @override
+  String errorLoadingFamilyLinks(Object error) {
+    return '讀取家庭連結錯誤：$error';
+  }
+
+  @override
+  String get cancel => '取消';
+
+  @override
+  String get playtimeCreate => 'Create';
+
+  @override
+  String failedToActionPrivacyRequest(Object action, Object error) {
+    return '$action 隱私請求失敗：$error';
+  }
+
+  @override
+  String get appTitle => 'Appoint';
+
+  @override
+  String get accept => '接受';
+
+  @override
+  String get playtimeModeVirtual => 'Virtual Play';
+
+  @override
+  String get playtimeDescription =>
+      'Enjoy live or virtual games with your friends!';
+
+  @override
+  String get delete => 'Delete';
+
+  @override
+  String get playtimeVirtualStarted => 'Virtual playtime started!';
+
+  @override
+  String get createYourFirstGame => 'Create your first game';
+
+  @override
+  String get participants => 'Participants';
+
+  @override
+  String recipients(Object count) {
+    return '收件人：$count';
+  }
+
+  @override
+  String get noResults => 'No results found';
+
+  @override
+  String get yes => '是';
+
+  @override
+  String get invite => '邀請';
+
+  @override
+  String get playtimeModeLive => 'Live Play';
+
+  @override
+  String get done => 'Done';
+
+  @override
+  String get defaultShareMessage => '嗨！我透過 APP‑OINT 安排了一次會議。點此確認或提出其他時間：';
+
+  @override
+  String get no => '否';
+
+  @override
+  String get playtimeHub => 'Playtime Hub';
+
+  @override
+  String get error => 'Error';
+
+  @override
+  String get createLiveSession => 'Create Live Session';
+
+  @override
+  String get enableNotifications => '啟用通知';
+
+  @override
+  String invited(Object date) {
+    return '已邀請：$date';
+  }
+
+  @override
+  String content(Object content) {
+    return '內容：$content';
+  }
+
+  @override
+  String get meetingSharedSuccessfully => '會議已成功分享！';
+
+  @override
+  String get welcomeToPlaytime => 'Welcome to Playtime';
+
+  @override
+  String get viewAll => 'View All';
+
+  @override
+  String get playtimeVirtual => 'Virtual Play';
+
+  @override
+  String get staffScreenTBD => '員工畫面 – 開發中';
+
+  @override
+  String get cut => 'Cut';
+
+  @override
+  String get inviteCancelledSuccessfully => '邀請已成功取消！';
+
+  @override
+  String get retry => 'Retry';
+
+  @override
+  String get composeBroadcastMessage => '撰寫廣播訊息';
+
+  @override
+  String get sendNow => '立即發送';
+
+  @override
+  String get noGamesYet => 'No games yet';
+
+  @override
+  String get select => 'Select';
+
+  @override
+  String get about => 'About';
+
+  @override
+  String get choose => 'Choose';
+
+  @override
+  String get profile => '個人資料';
+
+  @override
+  String get removeChild => '移除孩童';
+
+  @override
+  String status(Object status) {
+    return '狀態：$status';
+  }
+
+  @override
+  String get logout => 'Logout';
+
+  @override
+  String get paste => 'Paste';
+
+  @override
+  String get welcome => '歡迎';
+
+  @override
+  String get playtimeCreateSession => 'Create a Playtime Session';
+
+  @override
+  String get familyMembers => '家庭成員';
+
+  @override
+  String get upload => 'Upload';
+
+  @override
+  String get upcomingSessions => 'Upcoming Sessions';
+
+  @override
+  String get enterGroupName => '輸入群組名稱以便辨識';
+
+  @override
+  String get confirm => 'Confirm';
+
+  @override
+  String get playtimeLive => 'Live Play';
+
+  @override
+  String get errorLoadingInvites => '讀取邀請錯誤';
+
+  @override
+  String get targetingFilters => '目標篩選';
+
+  @override
+  String get pickVideo => '選擇影片';
+
+  @override
+  String get playtimeGameDeleted => 'Game deleted';
+
+  @override
+  String get scheduleForLater => '稍後安排';
+
+  @override
+  String get accessRevokedSuccessfully => '存取權已撤銷成功！';
+
+  @override
+  String type(Object type) {
+    return '類型：$type';
+  }
+
+  @override
+  String get checkingPermissions => '正在檢查權限...';
+
+  @override
+  String get copy => 'Copy';
+
+  @override
+  String get yesCancel => '是，取消';
+
+  @override
+  String get email => '電子郵件';
+
+  @override
+  String get shareOnWhatsApp => '分享到 WhatsApp';
+
+  @override
+  String get notificationSettings => '通知設定';
+
+  @override
+  String get myProfile => '我的個人資料';
+
+  @override
+  String get revoke => '撤銷';
+
+  @override
+  String get noBroadcastMessages => '尚無廣播訊息';
+
+  @override
+  String requestType(Object type) {
+    return '$type 請求';
+  }
+
+  @override
+  String get notifications => '通知';
+
+  @override
+  String get details => '詳細資訊';
+
+  @override
+  String get cancelInvite => '取消邀請';
+
+  @override
+  String get createNew => 'Create New';
+
+  @override
+  String get settings => 'Settings';
+
+  @override
+  String get playtimeReject => 'Reject';
+
+  @override
+  String get errorLoadingProfile => '讀取個人資料錯誤';
+
+  @override
+  String get edit => 'Edit';
+
+  @override
+  String get add => 'Add';
+
+  @override
+  String get playtimeGameApproved => 'Game approved';
+
+  @override
+  String get forgotPassword => 'Forgot Password?';
+
+  @override
+  String get familyDashboard => '家庭儀表板';
+
+  @override
+  String get loading => '載入中...';
+
+  @override
+  String get quickActions => 'Quick Actions';
+
+  @override
+  String get playtimeTitle => 'Playtime';
+
+  @override
+  String get otpResentSuccessfully => 'OTP 已重新發送成功！';
+
+  @override
+  String errorCheckingPermissions(Object error) {
+    return '檢查權限錯誤：$error';
+  }
+
+  @override
+  String get clientScreenTBD => '客戶畫面 – 開發中';
+
+  @override
+  String fcmToken(Object token) {
+    return 'FCM 令牌：$token';
+  }
+
+  @override
+  String get pickImage => '選擇圖片';
+
+  @override
+  String get previous => 'Previous';
+
+  @override
+  String get noProfileFound => '找不到個人資料';
+
+  @override
+  String get noFamilyMembersYet => '尚無家庭成員。邀請多人開始使用吧！';
+
+  @override
+  String get mediaOptional => '媒體（選填）';
+
+  @override
+  String get messageSavedSuccessfully => '訊息已成功儲存';
+
+  @override
+  String get scheduledFor => 'Scheduled for';
+
+  @override
+  String get dashboard => '儀表板';
+
+  @override
+  String get noPermissionForBroadcast => '您無權建立廣播訊息。';
+
+  @override
+  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+
+  @override
+  String get inviteDetail => '邀請詳情';
+
+  @override
+  String scheduled(Object date) {
+    return '已排程：$date';
+  }
+
+  @override
+  String failedToResendOtp(Object error) {
+    return '重新發送 OTP 失敗：$error';
+  }
+
+  @override
+  String get scheduling => '排程';
+
+  @override
+  String errorSavingMessage(Object error) {
+    return '儲存訊息失敗：$error';
+  }
+
+  @override
+  String get save => '儲存';
+
+  @override
+  String get playtimeApprove => 'Approve';
+
+  @override
+  String get createYourFirstSession => 'Create your first session';
+
+  @override
+  String get playtimeGameRejected => 'Game rejected';
+
+  @override
+  String failedToRevokeAccess(Object error) {
+    return '撤銷存取權失敗：$error';
+  }
+
+  @override
+  String get recentGames => 'Recent Games';
+
+  @override
+  String get customizeMessage => '自訂您的訊息...';
+
+  @override
+  String failedToCancelInvite(Object error) {
+    return '取消邀請失敗：$error';
+  }
+
+  @override
+  String errorSendingMessage(Object error) {
+    return '發送訊息失敗：$error';
+  }
+
+  @override
+  String get confirmPassword => 'Confirm Password';
+
+  @override
+  String errorLoadingPrivacyRequests(Object error) {
+    return '讀取隱私請求錯誤：$error';
+  }
+
+  @override
+  String get connectedChildren => '已連結子女';
+
+  @override
+  String get share => 'Share';
+
+  @override
+  String get playtimeEnterGameName => 'Enter game name';
+
+  @override
+  String get pleaseLoginForFamilyFeatures => '請登入以存取家庭功能';
+
+  @override
+  String get myInvites => '我的邀請';
+
+  @override
+  String get createGame => 'Create Game';
+
+  @override
+  String get groupNameOptional => '群組名稱（選填）';
+
+  @override
+  String get playtimeNoSessions => 'No playtime sessions found.';
+
+  @override
+  String get adminScreenTBD => '管理員畫面 – 開發中';
+
+  @override
+  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+
+  @override
+  String get close => '關閉';
+
+  @override
+  String get knownGroupDetected => '偵測到已知群組';
+
+  @override
+  String get back => 'Back';
+
+  @override
+  String get playtimeChooseGame => 'Choose a game';
+
+  @override
+  String get managePermissions => '管理權限';
+
+  @override
+  String get pollOptions => '投票選項：';
+
+  @override
+  String clicked(Object count) {
+    return '已點擊：$count';
+  }
+
+  @override
+  String link(Object link) {
+    return '連結：$link';
+  }
+
+  @override
+  String get meetingReadyMessage => '會議已就緒！是否要發送給您的群組？';
+
+  @override
+  String get pendingInvites => '待處理邀請';
+
+  @override
+  String statusColon(Object status) {
+    return '狀態：$status';
+  }
+
+  @override
+  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
 }

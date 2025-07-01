@@ -20,15 +20,15 @@ class BookingDraft {
     this.date,
     this.time,
     this.notes,
-    List<ChatMessage>? chatMessages,
+    final List<ChatMessage>? chatMessages,
   }) : chatMessages = chatMessages ?? [];
 
   BookingDraft copyWith({
-    String? type,
-    DateTime? date,
-    String? time,
-    String? notes,
-    List<ChatMessage>? chatMessages,
+    final String? type,
+    final DateTime? date,
+    final String? time,
+    final String? notes,
+    final List<ChatMessage>? chatMessages,
   }) {
     return BookingDraft(
       type: type ?? this.type,
@@ -46,7 +46,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
     addBotMessage('Welcome! What type of appointment would you like?');
   }
 
-  void addUserMessage(String text) {
+  void addUserMessage(final String text) {
     state = state.copyWith(
       chatMessages: [
         ...state.chatMessages,
@@ -56,7 +56,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
     _advanceFlow(text);
   }
 
-  void addBotMessage(String text) {
+  void addBotMessage(final String text) {
     state = state.copyWith(
       chatMessages: [
         ...state.chatMessages,
@@ -65,7 +65,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
     );
   }
 
-  void _advanceFlow(String userInput) async {
+  void _advanceFlow(final String userInput) async {
     if (state.type == null) {
       state = state.copyWith(type: userInput);
       addBotMessage('Great. Which date works for you? (YYYY-MM-DD)');
@@ -119,5 +119,5 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
 /// Provider for the booking draft chat flow
 final bookingDraftProvider =
     StateNotifierProvider<BookingDraftNotifier, BookingDraft>(
-  (ref) => BookingDraftNotifier(),
+  (final ref) => BookingDraftNotifier(),
 );

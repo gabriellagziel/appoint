@@ -1,664 +1,664 @@
 {
-  "refresh": "Reîmprospătează",
-  "@refresh": {
-    "description": "Refresh button text"
-  },
-  "home": "Acasă",
-  "@home": {
-    "description": "Home navigation label"
-  },
-  "noSessionsYet": "Încă nu există sesiuni",
-  "@noSessionsYet": {
-    "description": "No sessions yet message"
-  },
-  "ok": "OK",
-  "@ok": {
-    "description": "OK button text"
-  },
-  "playtimeLandingChooseMode": "Alege modul",
-  "@playtimeLandingChooseMode": {
-    "description": "Playtime landing choose mode message"
-  },
-  "signUp": "Înregistrează-te",
-  "@signUp": {
-    "description": "Sign up button text"
-  },
-  "scheduleMessage": "Programează mesaj",
-  "@scheduleMessage": {
-    "description": "Schedule message button"
-  },
-  "decline": "[RO] Decline",
-  "@decline": {
-    "description": "Decline button"
-  },
-  "adminBroadcast": "[RO] Admin Broadcast",
-  "@adminBroadcast": {
-    "description": "Admin broadcast title"
-  },
-  "login": "Autentificare",
-  "@login": {
-    "description": "Login button text"
-  },
-  "playtimeChooseFriends": "Alege prieteni",
-  "@playtimeChooseFriends": {
-    "description": "Choose friends label"
-  },
-  "noInvites": "[RO] No invites",
-  "@noInvites": {
-    "description": "No invites message"
-  },
-  "playtimeChooseTime": "[RO] Choose a time",
-  "@playtimeChooseTime": {
-    "description": "Choose time label"
-  },
-  "success": "Succes",
-  "@success": {
-    "description": "Success message"
-  },
-  "undo": "Anulează",
-  "@undo": {
-    "description": "Undo button text"
-  },
-  "opened": "Deschis",
-  "@opened": {
-    "description": "Opened status"
-  },
-  "createVirtualSession": "Creează sesiune virtuală",
-  "@createVirtualSession": {
-    "description": "Create virtual session button"
-  },
-  "messageSentSuccessfully": "Mesaj trimis cu succes",
-  "@messageSentSuccessfully": {
-    "description": "Message sent successfully message"
-  },
-  "redo": "Repetă",
-  "@redo": {
-    "description": "Redo button text"
-  },
-  "next": "[RO] Next",
-  "@next": {
-    "description": "Next button text"
-  },
-  "search": "Caută",
-  "@search": {
-    "description": "Search placeholder text"
-  },
-  "cancelInviteConfirmation": "[RO] Are you sure you want to cancel this invite?",
-  "@cancelInviteConfirmation": {
-    "description": "Cancel invite confirmation message"
-  },
-  "created": "[RO] Created",
-  "@created": {
-    "description": "Created status"
-  },
-  "revokeAccess": "Revocă acces",
-  "@revokeAccess": {
-    "description": "Revoke access button"
-  },
-  "saveGroupForRecognition": "Salvează grup pentru recunoaștere",
-  "@saveGroupForRecognition": {
-    "description": "Save group for recognition label"
-  },
-  "playtimeLiveScheduled": "[RO] Live playtime scheduled!",
-  "@playtimeLiveScheduled": {
-    "description": "Live playtime scheduled message"
-  },
-  "revokeAccessConfirmation": "[RO] Are you sure you want to revoke access?",
-  "@revokeAccessConfirmation": {
-    "description": "Revoke access confirmation message"
-  },
-  "download": "Descarcă",
-  "@download": {
-    "description": "Download button text"
-  },
-  "password": "Parolă",
-  "@password": {
-    "description": "Password field label"
-  },
-  "errorLoadingFamilyLinks": "[RO] Error loading family links",
-  "@errorLoadingFamilyLinks": {
-    "description": "Error loading family links message"
-  },
-  "cancel": "Anulează",
-  "@cancel": {
-    "description": "Cancel button text"
-  },
-  "playtimeCreate": "Creează Playtime",
-  "@playtimeCreate": {
-    "description": "Create button"
-  },
-  "failedToActionPrivacyRequest": "[RO] Failed to action privacy request",
-  "@failedToActionPrivacyRequest": {
-    "description": "Failed to action privacy request message"
-  },
-  "appTitle": "Titlul aplicației",
-  "@appTitle": {
-    "description": "The title of the application"
-  },
-  "accept": "Acceptă",
-  "@accept": {
-    "description": "Accept button"
-  },
-  "playtimeModeVirtual": "Mod virtual",
-  "@playtimeModeVirtual": {
-    "description": "Virtual play mode label"
-  },
-  "playtimeDescription": "Descriere Playtime",
-  "@playtimeDescription": {
-    "description": "Playtime description"
-  },
-  "delete": "Șterge",
-  "@delete": {
-    "description": "Delete button text"
-  },
-  "playtimeVirtualStarted": "Sesiune virtuală începută",
-  "@playtimeVirtualStarted": {
-    "description": "Virtual playtime started message"
-  },
-  "createYourFirstGame": "Creează primul tău joc",
-  "@createYourFirstGame": {
-    "description": "Create your first game message"
-  },
-  "participants": "Participanți",
-  "@participants": {
-    "description": "Participants label"
-  },
-  "recipients": "[RO] Recipients",
-  "@recipients": {
-    "description": "Recipients label"
-  },
-  "noResults": "[RO] No results found",
-  "@noResults": {
-    "description": "No search results message"
-  },
-  "yes": "Da",
-  "@yes": {
-    "description": "Yes button text"
-  },
-  "invite": "[RO] Invite",
-  "@invite": {
-    "description": "Invite button"
-  },
-  "playtimeModeLive": "Mod live",
-  "@playtimeModeLive": {
-    "description": "Live play mode label"
-  },
-  "done": "[RO] Done",
-  "@done": {
-    "description": "Done button text"
-  },
-  "defaultShareMessage": "Mesaj implicit pentru distribuire",
-  "@defaultShareMessage": {
-    "description": "Default share message"
-  },
-  "no": "Nu",
-  "@no": {
-    "description": "No button text"
-  },
-  "playtimeHub": "Centrul Playtime",
-  "@playtimeHub": {
-    "description": "Playtime hub title"
-  },
-  "error": "Eroare",
-  "@error": {
-    "description": "Error message"
-  },
-  "createLiveSession": "Creează sesiune live",
-  "@createLiveSession": {
-    "description": "Create live session button"
-  },
-  "enableNotifications": "Activează notificări",
-  "@enableNotifications": {
-    "description": "Enable notifications label"
-  },
-  "invited": "[RO] Invited",
-  "@invited": {
-    "description": "Invited status"
-  },
-  "content": "[RO] Content",
-  "@content": {
-    "description": "Content label"
-  },
-  "meetingSharedSuccessfully": "[RO] Meeting shared successfully",
-  "@meetingSharedSuccessfully": {
-    "description": "Meeting shared successfully message"
-  },
-  "welcomeToPlaytime": "[RO] Welcome to Playtime",
-  "@welcomeToPlaytime": {
-    "description": "Welcome to playtime message"
-  },
-  "viewAll": "[RO] View All",
-  "@viewAll": {
-    "description": "View all button"
-  },
-  "playtimeVirtual": "Playtime virtual",
-  "@playtimeVirtual": {
-    "description": "Virtual play label"
-  },
-  "staffScreenTBD": "[RO] Staff screen coming soon",
-  "@staffScreenTBD": {
-    "description": "Staff screen TBD message"
-  },
-  "cut": "Decupează",
-  "@cut": {
-    "description": "Cut button text"
-  },
-  "inviteCancelledSuccessfully": "[RO] Invite cancelled successfully",
-  "@inviteCancelledSuccessfully": {
-    "description": "Invite cancelled successfully message"
-  },
-  "retry": "Reîncearcă",
-  "@retry": {
-    "description": "Retry button text"
-  },
-  "composeBroadcastMessage": "Compune mesaj broadcast",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message title"
-  },
-  "sendNow": "Trimite acum",
-  "@sendNow": {
-    "description": "Send now button"
-  },
-  "noGamesYet": "Încă nu există jocuri",
-  "@noGamesYet": {
-    "description": "No games yet message"
-  },
-  "select": "Selectează",
-  "@select": {
-    "description": "Select button text"
-  },
-  "about": "Despre",
+  "@@locale": "ro",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Alege",
-  "@choose": {
-    "description": "Choose button text"
+  "@accept": {
+    "description": "Accept button"
   },
-  "profile": "[RO] Profile",
-  "@profile": {
-    "description": "Profile navigation label"
-  },
-  "removeChild": "[RO] Remove Child",
-  "@removeChild": {
-    "description": "Remove child button"
-  },
-  "status": "Stare",
-  "@status": {
-    "description": "Status label"
-  },
-  "logout": "[RO] Logout",
-  "@logout": {
-    "description": "Logout button text"
-  },
-  "paste": "Lipește",
-  "@paste": {
-    "description": "Paste button text"
-  },
-  "welcome": "[RO] Welcome",
-  "@welcome": {
-    "description": "Welcome message"
-  },
-  "playtimeCreateSession": "Creează sesiune",
-  "@playtimeCreateSession": {
-    "description": "Create playtime session button"
-  },
-  "familyMembers": "Membri familie",
-  "@familyMembers": {
-    "description": "Family members label"
-  },
-  "upload": "Încarcă",
-  "@upload": {
-    "description": "Upload button text"
-  },
-  "upcomingSessions": "[RO] Upcoming Sessions",
-  "@upcomingSessions": {
-    "description": "Upcoming sessions label"
-  },
-  "enterGroupName": "[RO] Enter group name",
-  "@enterGroupName": {
-    "description": "Enter group name placeholder"
-  },
-  "confirm": "[RO] Confirm",
-  "@confirm": {
-    "description": "Confirm button text"
-  },
-  "playtimeLive": "Playtime live",
-  "@playtimeLive": {
-    "description": "Live play label"
-  },
-  "errorLoadingInvites": "[RO] Error loading invites",
-  "@errorLoadingInvites": {
-    "description": "Error loading invites message"
-  },
-  "targetingFilters": "[RO] Targeting Filters",
-  "@targetingFilters": {
-    "description": "Targeting filters label"
-  },
-  "pickVideo": "Alege video",
-  "@pickVideo": {
-    "description": "Pick video button"
-  },
-  "playtimeGameDeleted": "Joc șters",
-  "@playtimeGameDeleted": {
-    "description": "Game deleted message"
-  },
-  "scheduleForLater": "Programează pentru mai târziu",
-  "@scheduleForLater": {
-    "description": "Schedule for later button"
-  },
-  "accessRevokedSuccessfully": "[RO] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Access revoked successfully message"
   },
-  "type": "Tip",
-  "@type": {
-    "description": "Type label"
-  },
-  "checkingPermissions": "Verificare permisiuni",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "copy": "Copiază",
-  "@copy": {
-    "description": "Copy button text"
-  },
-  "yesCancel": "Da, anulează",
-  "@yesCancel": {
-    "description": "Yes cancel button"
-  },
-  "email": "Email",
-  "@email": {
-    "description": "Email field label"
-  },
-  "shareOnWhatsApp": "[RO] Share on WhatsApp",
-  "@shareOnWhatsApp": {
-    "description": "Share on WhatsApp button"
-  },
-  "notificationSettings": "Setări notificări",
-  "@notificationSettings": {
-    "description": "Notification settings title"
-  },
-  "myProfile": "[RO] My Profile",
-  "@myProfile": {
-    "description": "My profile title"
-  },
-  "revoke": "Revocă",
-  "@revoke": {
-    "description": "Revoke button"
-  },
-  "noBroadcastMessages": "Fără mesaje broadcast",
-  "@noBroadcastMessages": {
-    "description": "No broadcast messages message"
-  },
-  "requestType": "Tip cerere",
-  "@requestType": {
-    "description": "Request type label"
-  },
-  "notifications": "Notificări",
-  "@notifications": {
-    "description": "Notifications title"
-  },
-  "details": "Detalii",
-  "@details": {
-    "description": "Details label"
-  },
-  "cancelInvite": "[RO] Cancel Invite",
-  "@cancelInvite": {
-    "description": "Cancel invite button"
-  },
-  "createNew": "Creează nou",
-  "@createNew": {
-    "description": "Create new button"
-  },
-  "settings": "Setări",
-  "@settings": {
-    "description": "Settings navigation label"
-  },
-  "playtimeReject": "[RO] Reject",
-  "@playtimeReject": {
-    "description": "Playtime reject button"
-  },
-  "errorLoadingProfile": "[RO] Error loading profile",
-  "@errorLoadingProfile": {
-    "description": "Error loading profile message"
-  },
-  "edit": "Editează",
-  "@edit": {
-    "description": "Edit button text"
-  },
-  "add": "Adaugă",
   "@add": {
     "description": "Add button text"
   },
-  "playtimeGameApproved": "[RO] Game approved",
-  "@playtimeGameApproved": {
-    "description": "Game approved message"
+  "@adminBroadcast": {
+    "description": "Admin broadcast title"
   },
-  "forgotPassword": "[RO] Forgot Password?",
-  "@forgotPassword": {
-    "description": "Forgot password link text"
-  },
-  "familyDashboard": "Panou familie",
-  "@familyDashboard": {
-    "description": "Family dashboard title"
-  },
-  "loading": "Se încarcă",
-  "@loading": {
-    "description": "Loading message"
-  },
-  "quickActions": "Acțiuni rapide",
-  "@quickActions": {
-    "description": "Quick actions label"
-  },
-  "playtimeTitle": "Titlu Playtime",
-  "@playtimeTitle": {
-    "description": "Playtime title"
-  },
-  "otpResentSuccessfully": "OTP retrimis cu succes",
-  "@otpResentSuccessfully": {
-    "description": "OTP resent successfully message"
-  },
-  "errorCheckingPermissions": "[RO] Error checking permissions",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message"
-  },
-  "clientScreenTBD": "[RO] Client screen coming soon",
-  "@clientScreenTBD": {
-    "description": "Client screen TBD message"
-  },
-  "fcmToken": "[RO] FCM Token",
-  "@fcmToken": {
-    "description": "FCM token label"
-  },
-  "pickImage": "[RO] Pick Image",
-  "@pickImage": {
-    "description": "Pick image button"
-  },
-  "previous": "[RO] Previous",
-  "@previous": {
-    "description": "Previous button text"
-  },
-  "noProfileFound": "[RO] No profile found",
-  "@noProfileFound": {
-    "description": "No profile found message"
-  },
-  "noFamilyMembersYet": "Fără membri de familie",
-  "@noFamilyMembersYet": {
-    "description": "No family members yet message"
-  },
-  "mediaOptional": "[RO] Media (Optional)",
-  "@mediaOptional": {
-    "description": "Media optional label"
-  },
-  "messageSavedSuccessfully": "[RO] Message saved successfully",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully message"
-  },
-  "scheduledFor": "[RO] Scheduled for",
-  "@scheduledFor": {
-    "description": "Scheduled for label"
-  },
-  "dashboard": "[RO] Dashboard",
-  "@dashboard": {
-    "description": "Dashboard title"
-  },
-  "noPermissionForBroadcast": "Fără permisiune pentru broadcast",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "playtimeAdminPanelTitle": "[RO] Playtime Games – Admin",
-  "@playtimeAdminPanelTitle": {
-    "description": "Playtime admin panel title"
-  },
-  "inviteDetail": "[RO] Invite Details",
-  "@inviteDetail": {
-    "description": "Invite detail title"
-  },
-  "scheduled": "[RO] Scheduled",
-  "@scheduled": {
-    "description": "Scheduled status"
-  },
-  "failedToResendOtp": "Nu s-a putut retrimite OTP",
-  "@failedToResendOtp": {
-    "description": "Failed to resend OTP message"
-  },
-  "scheduling": "Se programează",
-  "@scheduling": {
-    "description": "Scheduling label"
-  },
-  "errorSavingMessage": "Eroare la salvarea mesajului",
-  "@errorSavingMessage": {
-    "description": "Error saving message message"
-  },
-  "save": "Salvează",
-  "@save": {
-    "description": "Save button text"
-  },
-  "playtimeApprove": "Aprobă Playtime",
-  "@playtimeApprove": {
-    "description": "Playtime approve button"
-  },
-  "createYourFirstSession": "Creează prima sesiune",
-  "@createYourFirstSession": {
-    "description": "Create your first session message"
-  },
-  "playtimeGameRejected": "[RO] Game rejected",
-  "@playtimeGameRejected": {
-    "description": "Game rejected message"
-  },
-  "failedToRevokeAccess": "[RO] Failed to revoke access",
-  "@failedToRevokeAccess": {
-    "description": "Failed to revoke access message"
-  },
-  "recentGames": "Jocuri recente",
-  "@recentGames": {
-    "description": "Recent games label"
-  },
-  "customizeMessage": "[RO] Customize Message",
-  "@customizeMessage": {
-    "description": "Customize message button"
-  },
-  "failedToCancelInvite": "[RO] Failed to cancel invite",
-  "@failedToCancelInvite": {
-    "description": "Failed to cancel invite message"
-  },
-  "errorSendingMessage": "Eroare la trimiterea mesajului",
-  "@errorSendingMessage": {
-    "description": "Error sending message message"
-  },
-  "confirmPassword": "[RO] Confirm Password",
-  "@confirmPassword": {
-    "description": "Confirm password field label"
-  },
-  "errorLoadingPrivacyRequests": "[RO] Error loading privacy requests",
-  "@errorLoadingPrivacyRequests": {
-    "description": "Error loading privacy requests message"
-  },
-  "connectedChildren": "[RO] Connected Children",
-  "@connectedChildren": {
-    "description": "Connected children label"
-  },
-  "share": "Partajează",
-  "@share": {
-    "description": "Share button text"
-  },
-  "playtimeEnterGameName": "[RO] Enter game name",
-  "@playtimeEnterGameName": {
-    "description": "Enter game name label"
-  },
-  "pleaseLoginForFamilyFeatures": "[RO] Please login to access family features",
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Please login for family features message"
-  },
-  "myInvites": "[RO] My Invites",
-  "@myInvites": {
-    "description": "My invites title"
-  },
-  "createGame": "[RO] Create Game",
-  "@createGame": {
-    "description": "Create game button"
-  },
-  "groupNameOptional": "[RO] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Group name optional label"
-  },
-  "playtimeNoSessions": "[RO] No playtime sessions found.",
-  "@playtimeNoSessions": {
-    "description": "No playtime sessions message"
-  },
-  "adminScreenTBD": "[RO] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Admin screen TBD message"
   },
-  "playtimeParentDashboardTitle": "[RO] Playtime Dashboard",
-  "@playtimeParentDashboardTitle": {
-    "description": "Playtime parent dashboard title"
+  "@appTitle": {
+    "description": "The title of the application"
   },
-  "close": "[RO] Close",
-  "@close": {
-    "description": "Close button text"
-  },
-  "knownGroupDetected": "[RO] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Known group detected message"
-  },
-  "back": "[RO] Back",
   "@back": {
     "description": "Back button text"
   },
-  "playtimeChooseGame": "[RO] Choose a game",
-  "@playtimeChooseGame": {
-    "description": "Choose game label"
+  "@cancel": {
+    "description": "Cancel button text"
   },
-  "managePermissions": "[RO] Manage Permissions",
-  "@managePermissions": {
-    "description": "Manage permissions button"
+  "@cancelInvite": {
+    "description": "Cancel invite button"
   },
-  "pollOptions": "[RO] Poll Options",
-  "@pollOptions": {
-    "description": "Poll options label"
+  "@cancelInviteConfirmation": {
+    "description": "Cancel invite confirmation message"
   },
-  "clicked": "[RO] Clicked",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "@choose": {
+    "description": "Choose button text"
+  },
   "@clicked": {
     "description": "Clicked status"
   },
-  "link": "[RO] Link",
+  "@clientScreenTBD": {
+    "description": "Client screen TBD message"
+  },
+  "@close": {
+    "description": "Close button text"
+  },
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message title"
+  },
+  "@confirm": {
+    "description": "Confirm button text"
+  },
+  "@confirmPassword": {
+    "description": "Confirm password field label"
+  },
+  "@connectedChildren": {
+    "description": "Connected children label"
+  },
+  "@content": {
+    "description": "Content label"
+  },
+  "@copy": {
+    "description": "Copy button text"
+  },
+  "@createGame": {
+    "description": "Create game button"
+  },
+  "@createLiveSession": {
+    "description": "Create live session button"
+  },
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "@createVirtualSession": {
+    "description": "Create virtual session button"
+  },
+  "@createYourFirstGame": {
+    "description": "Create your first game message"
+  },
+  "@createYourFirstSession": {
+    "description": "Create your first session message"
+  },
+  "@created": {
+    "description": "Created status"
+  },
+  "@customizeMessage": {
+    "description": "Customize message button"
+  },
+  "@cut": {
+    "description": "Cut button text"
+  },
+  "@dashboard": {
+    "description": "Dashboard title"
+  },
+  "@decline": {
+    "description": "Decline button"
+  },
+  "@defaultShareMessage": {
+    "description": "Default share message"
+  },
+  "@delete": {
+    "description": "Delete button text"
+  },
+  "@details": {
+    "description": "Details label"
+  },
+  "@done": {
+    "description": "Done button text"
+  },
+  "@download": {
+    "description": "Download button text"
+  },
+  "@edit": {
+    "description": "Edit button text"
+  },
+  "@email": {
+    "description": "Email field label"
+  },
+  "@enableNotifications": {
+    "description": "Enable notifications label"
+  },
+  "@enterGroupName": {
+    "description": "Enter group name placeholder"
+  },
+  "@error": {
+    "description": "Error message"
+  },
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Error loading family links message"
+  },
+  "@errorLoadingInvites": {
+    "description": "Error loading invites message"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "Error loading privacy requests message"
+  },
+  "@errorLoadingProfile": {
+    "description": "Error loading profile message"
+  },
+  "@errorSavingMessage": {
+    "description": "Error saving message message"
+  },
+  "@errorSendingMessage": {
+    "description": "Error sending message message"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "Failed to action privacy request message"
+  },
+  "@failedToCancelInvite": {
+    "description": "Failed to cancel invite message"
+  },
+  "@failedToResendOtp": {
+    "description": "Failed to resend OTP message"
+  },
+  "@failedToRevokeAccess": {
+    "description": "Failed to revoke access message"
+  },
+  "@familyDashboard": {
+    "description": "Family dashboard title"
+  },
+  "@familyMembers": {
+    "description": "Family members label"
+  },
+  "@fcmToken": {
+    "description": "FCM token label"
+  },
+  "@forgotPassword": {
+    "description": "Forgot password link text"
+  },
+  "@groupNameOptional": {
+    "description": "Group name optional label"
+  },
+  "@home": {
+    "description": "Home navigation label"
+  },
+  "@invite": {
+    "description": "Invite button"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Invite cancelled successfully message"
+  },
+  "@inviteDetail": {
+    "description": "Invite detail title"
+  },
+  "@invited": {
+    "description": "Invited status"
+  },
+  "@knownGroupDetected": {
+    "description": "Known group detected message"
+  },
   "@link": {
     "description": "Link label"
   },
-  "meetingReadyMessage": "[RO] Your meeting is ready! Join now",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@login": {
+    "description": "Login button text"
+  },
+  "@logout": {
+    "description": "Logout button text"
+  },
+  "@managePermissions": {
+    "description": "Manage permissions button"
+  },
+  "@mediaOptional": {
+    "description": "Media optional label"
+  },
   "@meetingReadyMessage": {
     "description": "Meeting ready message"
   },
-  "pendingInvites": "[RO] Pending Invites",
+  "@meetingSharedSuccessfully": {
+    "description": "Meeting shared successfully message"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully message"
+  },
+  "@messageSentSuccessfully": {
+    "description": "Message sent successfully message"
+  },
+  "@myInvites": {
+    "description": "My invites title"
+  },
+  "@myProfile": {
+    "description": "My profile title"
+  },
+  "@next": {
+    "description": "Next button text"
+  },
+  "@no": {
+    "description": "No button text"
+  },
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "@noFamilyMembersYet": {
+    "description": "No family members yet message"
+  },
+  "@noGamesYet": {
+    "description": "No games yet message"
+  },
+  "@noInvites": {
+    "description": "No invites message"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "@noProfileFound": {
+    "description": "No profile found message"
+  },
+  "@noResults": {
+    "description": "No search results message"
+  },
+  "@noSessionsYet": {
+    "description": "No sessions yet message"
+  },
+  "@notificationSettings": {
+    "description": "Notification settings title"
+  },
+  "@notifications": {
+    "description": "Notifications title"
+  },
+  "@ok": {
+    "description": "OK button text"
+  },
+  "@opened": {
+    "description": "Opened status"
+  },
+  "@otpResentSuccessfully": {
+    "description": "OTP resent successfully message"
+  },
+  "@participants": {
+    "description": "Participants label"
+  },
+  "@password": {
+    "description": "Password field label"
+  },
+  "@paste": {
+    "description": "Paste button text"
+  },
   "@pendingInvites": {
     "description": "Pending invites label"
   },
-  "statusColon": "[RO] Status:",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Playtime admin panel title"
+  },
+  "@playtimeApprove": {
+    "description": "Playtime approve button"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Choose friends label"
+  },
+  "@playtimeChooseGame": {
+    "description": "Choose game label"
+  },
+  "@playtimeChooseTime": {
+    "description": "Choose time label"
+  },
+  "@playtimeCreate": {
+    "description": "Create button"
+  },
+  "@playtimeCreateSession": {
+    "description": "Create playtime session button"
+  },
+  "@playtimeDescription": {
+    "description": "Playtime description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Enter game name label"
+  },
+  "@playtimeGameApproved": {
+    "description": "Game approved message"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Game deleted message"
+  },
+  "@playtimeGameRejected": {
+    "description": "Game rejected message"
+  },
+  "@playtimeHub": {
+    "description": "Playtime hub title"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Playtime landing choose mode message"
+  },
+  "@playtimeLive": {
+    "description": "Live play label"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Live playtime scheduled message"
+  },
+  "@playtimeModeLive": {
+    "description": "Live play mode label"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Virtual play mode label"
+  },
+  "@playtimeNoSessions": {
+    "description": "No playtime sessions message"
+  },
+  "@playtimeParentDashboardTitle": {
+    "description": "Playtime parent dashboard title"
+  },
+  "@playtimeReject": {
+    "description": "Playtime reject button"
+  },
+  "@playtimeTitle": {
+    "description": "Playtime title"
+  },
+  "@playtimeVirtual": {
+    "description": "Virtual play label"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Virtual playtime started message"
+  },
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Please login for family features message"
+  },
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "@previous": {
+    "description": "Previous button text"
+  },
+  "@profile": {
+    "description": "Profile navigation label"
+  },
+  "@quickActions": {
+    "description": "Quick actions label"
+  },
+  "@recentGames": {
+    "description": "Recent games label"
+  },
+  "@recipients": {
+    "description": "Recipients label"
+  },
+  "@redo": {
+    "description": "Redo button text"
+  },
+  "@refresh": {
+    "description": "Refresh button text"
+  },
+  "@removeChild": {
+    "description": "Remove child button"
+  },
+  "@requestType": {
+    "description": "Request type label"
+  },
+  "@retry": {
+    "description": "Retry button text"
+  },
+  "@revoke": {
+    "description": "Revoke button"
+  },
+  "@revokeAccess": {
+    "description": "Revoke access button"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Revoke access confirmation message"
+  },
+  "@save": {
+    "description": "Save button text"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
+  },
+  "@scheduleForLater": {
+    "description": "Schedule for later button"
+  },
+  "@scheduleMessage": {
+    "description": "Schedule message button"
+  },
+  "@scheduled": {
+    "description": "Scheduled status"
+  },
+  "@scheduledFor": {
+    "description": "Scheduled for label"
+  },
+  "@scheduling": {
+    "description": "Scheduling label"
+  },
+  "@search": {
+    "description": "Search placeholder text"
+  },
+  "@select": {
+    "description": "Select button text"
+  },
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "@settings": {
+    "description": "Settings navigation label"
+  },
+  "@share": {
+    "description": "Share button text"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "@signUp": {
+    "description": "Sign up button text"
+  },
+  "@staffScreenTBD": {
+    "description": "Staff screen TBD message"
+  },
+  "@status": {
+    "description": "Status label"
+  },
   "@statusColon": {
     "description": "Status colon label"
   },
-  "@@locale": "ro",
-  "pleaseLoginToViewProfile": "[RO] Please log in to view your profile."
+  "@success": {
+    "description": "Success message"
+  },
+  "@targetingFilters": {
+    "description": "Targeting filters label"
+  },
+  "@type": {
+    "description": "Type label"
+  },
+  "@undo": {
+    "description": "Undo button text"
+  },
+  "@upcomingSessions": {
+    "description": "Upcoming sessions label"
+  },
+  "@upload": {
+    "description": "Upload button text"
+  },
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "@welcome": {
+    "description": "Welcome message"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Welcome to playtime message"
+  },
+  "@yes": {
+    "description": "Yes button text"
+  },
+  "@yesCancel": {
+    "description": "Yes cancel button"
+  },
+  "about": "Despre",
+  "accept": "Acceptă",
+  "accessRevokedSuccessfully": "[RO] Access revoked successfully",
+  "add": "Adaugă",
+  "adminBroadcast": "[RO] Admin Broadcast",
+  "adminScreenTBD": "[RO] Admin screen coming soon",
+  "appTitle": "Titlul aplicației",
+  "back": "[RO] Back",
+  "cancel": "Anulează",
+  "cancelInvite": "[RO] Cancel Invite",
+  "cancelInviteConfirmation": "[RO] Are you sure you want to cancel this invite?",
+  "checkingPermissions": "Verificare permisiuni",
+  "choose": "Alege",
+  "clicked": "[RO] Clicked",
+  "clientScreenTBD": "[RO] Client screen coming soon",
+  "close": "[RO] Close",
+  "composeBroadcastMessage": "Compune mesaj broadcast",
+  "confirm": "[RO] Confirm",
+  "confirmPassword": "[RO] Confirm Password",
+  "connectedChildren": "[RO] Connected Children",
+  "content": "[RO] Content",
+  "copy": "Copiază",
+  "createGame": "[RO] Create Game",
+  "createLiveSession": "Creează sesiune live",
+  "createNew": "Creează nou",
+  "createVirtualSession": "Creează sesiune virtuală",
+  "createYourFirstGame": "Creează primul tău joc",
+  "createYourFirstSession": "Creează prima sesiune",
+  "created": "[RO] Created",
+  "customizeMessage": "[RO] Customize Message",
+  "cut": "Decupează",
+  "dashboard": "[RO] Dashboard",
+  "decline": "[RO] Decline",
+  "defaultShareMessage": "Mesaj implicit pentru distribuire",
+  "delete": "Șterge",
+  "details": "Detalii",
+  "done": "[RO] Done",
+  "download": "Descarcă",
+  "edit": "Editează",
+  "email": "Email",
+  "enableNotifications": "Activează notificări",
+  "enterGroupName": "[RO] Enter group name",
+  "error": "Eroare",
+  "errorCheckingPermissions": "[RO] Error checking permissions",
+  "errorLoadingFamilyLinks": "[RO] Error loading family links",
+  "errorLoadingInvites": "[RO] Error loading invites",
+  "errorLoadingPrivacyRequests": "[RO] Error loading privacy requests",
+  "errorLoadingProfile": "[RO] Error loading profile",
+  "errorSavingMessage": "Eroare la salvarea mesajului",
+  "errorSendingMessage": "Eroare la trimiterea mesajului",
+  "failedToActionPrivacyRequest": "[RO] Failed to action privacy request",
+  "failedToCancelInvite": "[RO] Failed to cancel invite",
+  "failedToResendOtp": "Nu s-a putut retrimite OTP",
+  "failedToRevokeAccess": "[RO] Failed to revoke access",
+  "familyDashboard": "Panou familie",
+  "familyMembers": "Membri familie",
+  "fcmToken": "[RO] FCM Token",
+  "forgotPassword": "[RO] Forgot Password?",
+  "groupNameOptional": "[RO] Group Name (Optional)",
+  "home": "Acasă",
+  "invite": "[RO] Invite",
+  "inviteCancelledSuccessfully": "[RO] Invite cancelled successfully",
+  "inviteDetail": "[RO] Invite Details",
+  "invited": "[RO] Invited",
+  "knownGroupDetected": "[RO] Known group detected",
+  "link": "[RO] Link",
+  "loading": "Se încarcă",
+  "login": "Autentificare",
+  "logout": "[RO] Logout",
+  "managePermissions": "[RO] Manage Permissions",
+  "mediaOptional": "[RO] Media (Optional)",
+  "meetingReadyMessage": "[RO] Your meeting is ready! Join now",
+  "meetingSharedSuccessfully": "[RO] Meeting shared successfully",
+  "messageSavedSuccessfully": "[RO] Message saved successfully",
+  "messageSentSuccessfully": "Mesaj trimis cu succes",
+  "myInvites": "[RO] My Invites",
+  "myProfile": "[RO] My Profile",
+  "next": "[RO] Next",
+  "no": "Nu",
+  "noBroadcastMessages": "Fără mesaje broadcast",
+  "noFamilyMembersYet": "Fără membri de familie",
+  "noGamesYet": "Încă nu există jocuri",
+  "noInvites": "[RO] No invites",
+  "noPermissionForBroadcast": "Fără permisiune pentru broadcast",
+  "noProfileFound": "[RO] No profile found",
+  "noResults": "[RO] No results found",
+  "noSessionsYet": "Încă nu există sesiuni",
+  "notificationSettings": "Setări notificări",
+  "notifications": "Notificări",
+  "ok": "OK",
+  "opened": "Deschis",
+  "otpResentSuccessfully": "OTP retrimis cu succes",
+  "participants": "Participanți",
+  "password": "Parolă",
+  "paste": "Lipește",
+  "pendingInvites": "[RO] Pending Invites",
+  "pickImage": "[RO] Pick Image",
+  "pickVideo": "Alege video",
+  "playtimeAdminPanelTitle": "[RO] Playtime Games – Admin",
+  "playtimeApprove": "Aprobă Playtime",
+  "playtimeChooseFriends": "Alege prieteni",
+  "playtimeChooseGame": "[RO] Choose a game",
+  "playtimeChooseTime": "[RO] Choose a time",
+  "playtimeCreate": "Creează Playtime",
+  "playtimeCreateSession": "Creează sesiune",
+  "playtimeDescription": "Descriere Playtime",
+  "playtimeEnterGameName": "[RO] Enter game name",
+  "playtimeGameApproved": "[RO] Game approved",
+  "playtimeGameDeleted": "Joc șters",
+  "playtimeGameRejected": "[RO] Game rejected",
+  "playtimeHub": "Centrul Playtime",
+  "playtimeLandingChooseMode": "Alege modul",
+  "playtimeLive": "Playtime live",
+  "playtimeLiveScheduled": "[RO] Live playtime scheduled!",
+  "playtimeModeLive": "Mod live",
+  "playtimeModeVirtual": "Mod virtual",
+  "playtimeNoSessions": "[RO] No playtime sessions found.",
+  "playtimeParentDashboardTitle": "[RO] Playtime Dashboard",
+  "playtimeReject": "[RO] Reject",
+  "playtimeTitle": "Titlu Playtime",
+  "playtimeVirtual": "Playtime virtual",
+  "playtimeVirtualStarted": "Sesiune virtuală începută",
+  "pleaseLoginForFamilyFeatures": "[RO] Please login to access family features",
+  "pleaseLoginToViewProfile": "[RO] Please log in to view your profile.",
+  "pollOptions": "[RO] Poll Options",
+  "previous": "[RO] Previous",
+  "profile": "[RO] Profile",
+  "quickActions": "Acțiuni rapide",
+  "recentGames": "Jocuri recente",
+  "recipients": "[RO] Recipients",
+  "redo": "Repetă",
+  "refresh": "Reîmprospătează",
+  "removeChild": "[RO] Remove Child",
+  "requestType": "Tip cerere",
+  "retry": "Reîncearcă",
+  "revoke": "Revocă",
+  "revokeAccess": "Revocă acces",
+  "revokeAccessConfirmation": "[RO] Are you sure you want to revoke access?",
+  "save": "Salvează",
+  "saveGroupForRecognition": "Salvează grup pentru recunoaștere",
+  "scheduleForLater": "Programează pentru mai târziu",
+  "scheduleMessage": "Programează mesaj",
+  "scheduled": "[RO] Scheduled",
+  "scheduledFor": "[RO] Scheduled for",
+  "scheduling": "Se programează",
+  "search": "Caută",
+  "select": "Selectează",
+  "sendNow": "Trimite acum",
+  "settings": "Setări",
+  "share": "Partajează",
+  "shareOnWhatsApp": "[RO] Share on WhatsApp",
+  "signUp": "Înregistrează-te",
+  "staffScreenTBD": "[RO] Staff screen coming soon",
+  "status": "Stare",
+  "statusColon": "[RO] Status:",
+  "success": "Succes",
+  "targetingFilters": "[RO] Targeting Filters",
+  "type": "Tip",
+  "undo": "Anulează",
+  "upcomingSessions": "[RO] Upcoming Sessions",
+  "upload": "Încarcă",
+  "viewAll": "[RO] View All",
+  "welcome": "[RO] Welcome",
+  "welcomeToPlaytime": "[RO] Welcome to Playtime",
+  "yes": "Da",
+  "yesCancel": "Da, anulează"
 }

@@ -12,7 +12,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get refresh => 'Odśwież';
 
   @override
-  String get home => 'Strona główna';
+  String get home => '[PL] Home';
 
   @override
   String get noSessionsYet => 'Brak sesji';
@@ -33,7 +33,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get decline => 'Odrzuć';
 
   @override
-  String get adminBroadcast => 'Emisja administratora';
+  String get adminBroadcast => '[PL] Admin Broadcast';
 
   @override
   String get login => 'Zaloguj się';
@@ -51,10 +51,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get success => 'Sukces';
 
   @override
-  String get undo => 'Cofnij';
+  String get undo => '[PL] Undo';
 
   @override
-  String get opened => 'Otwarte';
+  String opened(Object count) {
+    return 'Otwarte';
+  }
 
   @override
   String get createVirtualSession => 'Utwórz wirtualną sesję';
@@ -76,11 +78,11 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String created(Object date) {
-    return 'Utworzono';
+    return '[PL] Created';
   }
 
   @override
-  String get revokeAccess => 'Cofnij dostęp';
+  String get revokeAccess => '[PL] Revoke Access';
 
   @override
   String get saveGroupForRecognition => 'Zapisz grupę do rozpoznania';
@@ -89,7 +91,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get playtimeLiveScheduled => 'Sesja na żywo zaplanowana';
 
   @override
-  String get revokeAccessConfirmation => 'Potwierdzenie cofnięcia dostępu';
+  String get revokeAccessConfirmation =>
+      '[PL] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Pobierz';
@@ -99,7 +102,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Błąd ładowania powiązań rodzinnych';
+    return '[PL] Error loading family links';
   }
 
   @override
@@ -110,7 +113,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Nie powiodło się przetworzenie żądania prywatności';
+    return '[PL] Failed to action privacy request';
   }
 
   @override
@@ -139,7 +142,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String recipients(Object count) {
-    return 'Odbiorcy';
+    return '[PL] Recipients';
   }
 
   @override
@@ -155,7 +158,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get playtimeModeLive => 'Tryb na żywo';
 
   @override
-  String get done => 'Gotowe';
+  String get done => '[PL] Done';
 
   @override
   String get defaultShareMessage => 'Domyślna wiadomość udostępniania';
@@ -186,7 +189,7 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Spotkanie udostępnione pomyślnie';
+  String get meetingSharedSuccessfully => '[PL] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => 'Witamy w Playtime';
@@ -198,7 +201,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get playtimeVirtual => 'Wirtualne Playtime';
 
   @override
-  String get staffScreenTBD => 'Ekran personelu do ustalenia';
+  String get staffScreenTBD => '[PL] Staff screen coming soon';
 
   @override
   String get cut => 'Wytnij';
@@ -207,7 +210,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get inviteCancelledSuccessfully => 'Zaproszenie anulowane pomyślnie';
 
   @override
-  String get retry => 'Ponów próbę';
+  String get retry => '[PL] Retry';
 
   @override
   String get composeBroadcastMessage => 'Napisz wiadomość broadcast';
@@ -228,14 +231,14 @@ class AppLocalizationsPl extends AppLocalizations {
   String get choose => 'Wybierz';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[PL] Profile';
 
   @override
   String get removeChild => 'Usuń dziecko';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return '[PL] Status';
   }
 
   @override
@@ -251,7 +254,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get playtimeCreateSession => 'Utwórz sesję';
 
   @override
-  String get familyMembers => 'Członkowie rodziny';
+  String get familyMembers => '[PL] Family Members';
 
   @override
   String get upload => 'Prześlij';
@@ -269,12 +272,10 @@ class AppLocalizationsPl extends AppLocalizations {
   String get playtimeLive => 'Playtime na żywo';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Błąd ładowania zaproszeń';
-  }
+  String get errorLoadingInvites => 'Błąd ładowania zaproszeń';
 
   @override
-  String get targetingFilters => 'Filtry targetowania';
+  String get targetingFilters => '[PL] Targeting Filters';
 
   @override
   String get pickVideo => 'Wybierz wideo';
@@ -286,10 +287,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get scheduleForLater => 'Zaplanuj na później';
 
   @override
-  String get accessRevokedSuccessfully => 'Dostęp cofnięty pomyślnie';
+  String get accessRevokedSuccessfully => '[PL] Access revoked successfully';
 
   @override
-  String get type => 'Typ';
+  String type(Object type) {
+    return 'Typ';
+  }
 
   @override
   String get checkingPermissions => 'Sprawdzanie uprawnień';
@@ -304,16 +307,16 @@ class AppLocalizationsPl extends AppLocalizations {
   String get email => 'Email';
 
   @override
-  String get shareOnWhatsApp => 'Udostępnij na WhatsApp';
+  String get shareOnWhatsApp => '[PL] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Ustawienia powiadomień';
 
   @override
-  String get myProfile => 'Mój profil';
+  String get myProfile => '[PL] My Profile';
 
   @override
-  String get revoke => 'Cofnij';
+  String get revoke => '[PL] Revoke';
 
   @override
   String get noBroadcastMessages => 'Brak wiadomości broadcast';
@@ -342,9 +345,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get playtimeReject => 'Odrzuć Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Błąd ładowania profilu';
-  }
+  String get errorLoadingProfile => '[PL] Error loading profile';
 
   @override
   String get edit => 'Edytuj';
@@ -353,13 +354,13 @@ class AppLocalizationsPl extends AppLocalizations {
   String get add => 'Dodaj';
 
   @override
-  String get playtimeGameApproved => 'Gra zatwierdzona';
+  String get playtimeGameApproved => '[PL] Game approved';
 
   @override
   String get forgotPassword => 'Zapomniałeś hasła?';
 
   @override
-  String get familyDashboard => 'Panel rodziny';
+  String get familyDashboard => '[PL] Family Dashboard';
 
   @override
   String get loading => 'Ładowanie';
@@ -371,7 +372,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get playtimeTitle => 'Tytuł Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP wysłany ponownie pomyślnie';
+  String get otpResentSuccessfully => '[PL] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
@@ -383,7 +384,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'Token FCM';
+    return '[PL] FCM Token';
   }
 
   @override
@@ -393,13 +394,13 @@ class AppLocalizationsPl extends AppLocalizations {
   String get previous => 'Poprzedni';
 
   @override
-  String get noProfileFound => 'Nie znaleziono profilu';
+  String get noProfileFound => '[PL] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Brak członków rodziny';
+  String get noFamilyMembersYet => '[PL] No family members yet';
 
   @override
-  String get mediaOptional => 'Media (opcjonalne)';
+  String get mediaOptional => '[PL] Media (Optional)';
 
   @override
   String get messageSavedSuccessfully => 'Wiadomość zapisana pomyślnie';
@@ -414,7 +415,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get noPermissionForBroadcast => 'Brak uprawnień do broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Tytuł panelu administratora Playtime';
+  String get playtimeAdminPanelTitle => '[PL] Playtime Games – Admin';
 
   @override
   String get inviteDetail => 'Szczegóły zaproszenia';
@@ -426,7 +427,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Nie udało się ponownie wysłać OTP';
+    return '[PL] Failed to resend OTP';
   }
 
   @override
@@ -441,24 +442,24 @@ class AppLocalizationsPl extends AppLocalizations {
   String get save => 'Zapisz';
 
   @override
-  String get playtimeApprove => 'Zatwierdź Playtime';
+  String get playtimeApprove => '[PL] Approve';
 
   @override
   String get createYourFirstSession => 'Utwórz swoją pierwszą sesję';
 
   @override
-  String get playtimeGameRejected => 'Gra odrzucona';
+  String get playtimeGameRejected => '[PL] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Nie udało się cofnąć dostępu';
+    return '[PL] Failed to revoke access';
   }
 
   @override
-  String get recentGames => 'Ostatnie gry';
+  String get recentGames => '[PL] Recent Games';
 
   @override
-  String get customizeMessage => 'Dostosuj wiadomość';
+  String get customizeMessage => '[PL] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
@@ -475,7 +476,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Błąd ładowania żądań prywatności';
+    return '[PL] Error loading privacy requests';
   }
 
   @override
@@ -489,65 +490,84 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Zaloguj się, aby uzyskać dostęp do funkcji rodzinnych';
+      '[PL] Please login to access family features';
 
   @override
-  String get myInvites => 'Moje zaproszenia';
+  String get myInvites => '[PL] My Invites';
 
   @override
-  String get createGame => 'Utwórz grę';
+  String get createGame => '[PL] Create Game';
 
   @override
-  String get groupNameOptional => 'Nazwa grupy (opcjonalna)';
+  String get groupNameOptional => '[PL] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Nie znaleziono sesji playtime.';
+  String get playtimeNoSessions => '[PL] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Ekran administratora wkrótce dostępny';
+  String get adminScreenTBD => '[PL] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Panel Playtime';
+  String get playtimeParentDashboardTitle => '[PL] Playtime Dashboard';
 
   @override
-  String get close => 'Zamknij';
+  String get close => '[PL] Close';
 
   @override
-  String get knownGroupDetected => 'Wykryto znaną grupę';
+  String get knownGroupDetected => '[PL] Known group detected';
 
   @override
-  String get back => 'Wstecz';
+  String get back => '[PL] Back';
 
   @override
-  String get playtimeChooseGame => 'Wybierz grę';
+  String get playtimeChooseGame => '[PL] Choose a game';
 
   @override
-  String get managePermissions => 'Zarządzaj uprawnieniami';
+  String get managePermissions => '[PL] Manage Permissions';
 
   @override
-  String get pollOptions => 'Opcje ankiety';
+  String get pollOptions => '[PL] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Kliknięto';
+    return '[PL] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[PL] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Twoje spotkanie jest gotowe! Dołącz teraz';
+  String get meetingReadyMessage => '[PL] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Oczekujące zaproszenia';
+  String get pendingInvites => '[PL] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[PL] Status:';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Zaloguj się, aby zobaczyć profil';
+  String get pleaseLoginToViewProfile =>
+      '[PL] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

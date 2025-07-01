@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../providers/otp_provider.dart';
-import '../../../providers/family_provider.dart';
-import '../../../providers/auth_provider.dart';
-import '../widgets/otp_entry_modal.dart';
+import 'package:appoint/providers/otp_provider.dart';
+import 'package:appoint/providers/family_provider.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/features/family/widgets/otp_entry_modal.dart';
 
 class InviteChildScreen extends ConsumerStatefulWidget {
-  const InviteChildScreen({Key? key}) : super(key: key);
+  const InviteChildScreen({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<InviteChildScreen> createState() => _InviteChildScreenState();
@@ -24,7 +24,7 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
   Future<void> _onSendInvite() async {
     final authState = ref.read(authStateProvider);
     final user = await authState.maybeWhen(
-      data: (user) => user,
+      data: (final user) => user,
       orElse: () => null,
     );
     final parentId = user?.uid;
@@ -42,12 +42,12 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
     // 3) open the OTP modal
     showDialog(
       context: context,
-      builder: (_) => OtpEntryModal(parentId: parentId, childContact: contact),
+      builder: (final _) => OtpEntryModal(parentId: parentId, childContact: contact),
     );
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Invite Child')),
       body: Padding(

@@ -9,7 +9,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('SearchScreen', () {
-    testWidgets('shows search field', (WidgetTester tester) async {
+    testWidgets('shows search field', (final WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(

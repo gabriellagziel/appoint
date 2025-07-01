@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../models/comment.dart';
-import '../../../utils/localized_date_formatter.dart';
+import 'package:appoint/models/comment.dart';
+import 'package:appoint/utils/localized_date_formatter.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 
 /// Displays a single comment with a relative timestamp.
 class CommentItem extends StatelessWidget {
@@ -10,9 +11,10 @@ class CommentItem extends StatelessWidget {
   const CommentItem({super.key, required this.comment});
 
   @override
-  Widget build(BuildContext context) {
-    final timestamp =
-        LocalizedDateFormatter.relativeTimeFromNow(comment.createdAt);
+  Widget build(final BuildContext context) {
+    final formatter =
+        LocalizedDateFormatter.fromL10n(AppLocalizations.of(context)!);
+    final timestamp = formatter.formatRelative(comment.createdAt);
 
     return Card(
       child: ListTile(

@@ -9,7 +9,7 @@ class AppLocalizationsGa extends AppLocalizations {
   AppLocalizationsGa([String locale = 'ga']) : super(locale);
 
   @override
-  String get refresh => 'Athnuachan';
+  String get refresh => '[GA] Refresh';
 
   @override
   String get home => 'Baile';
@@ -18,7 +18,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get noSessionsYet => 'Níl seisiún ann fós';
 
   @override
-  String get ok => 'Ceart go leor';
+  String get ok => '[GA] OK';
 
   @override
   String get playtimeLandingChooseMode => 'Roghnaigh mód';
@@ -42,25 +42,27 @@ class AppLocalizationsGa extends AppLocalizations {
   String get playtimeChooseFriends => 'Roghnaigh cairde';
 
   @override
-  String get noInvites => 'Níl aon cuireadh';
+  String get noInvites => '[GA] No invites';
 
   @override
   String get playtimeChooseTime => 'Roghnaigh am';
 
   @override
-  String get success => 'Rath';
+  String get success => '[GA] Success';
 
   @override
   String get undo => 'Cealaigh';
 
   @override
-  String get opened => 'Oscailte';
+  String opened(Object count) {
+    return 'Oscailte';
+  }
 
   @override
-  String get createVirtualSession => 'Cruthaigh seisiún fíorúil';
+  String get createVirtualSession => '[GA] Create Virtual Session';
 
   @override
-  String get messageSentSuccessfully => 'Teachtaireacht seolta go rathúil';
+  String get messageSentSuccessfully => '[GA] Message sent successfully';
 
   @override
   String get redo => 'Déan arís';
@@ -76,20 +78,21 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String created(Object date) {
-    return 'Cruthaithe';
+    return '[GA] Created';
   }
 
   @override
-  String get revokeAccess => 'Cealaigh rochtain';
+  String get revokeAccess => '[GA] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => 'Sábháil an grúpa le haitheantas';
+  String get saveGroupForRecognition => '[GA] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Seisiún beo cláraithe';
+  String get playtimeLiveScheduled => '[GA] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Dearbhú cealaithe rochtana';
+  String get revokeAccessConfirmation =>
+      '[GA] Are you sure you want to revoke access?';
 
   @override
   String get download => 'Íoslódáil';
@@ -110,7 +113,7 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Theip ar iarratas príobháideachta';
+    return '[GA] Failed to action privacy request';
   }
 
   @override
@@ -120,7 +123,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get accept => 'Glac';
 
   @override
-  String get playtimeModeVirtual => 'Mód fíorúil';
+  String get playtimeModeVirtual => '[GA] Virtual Play';
 
   @override
   String get playtimeDescription => 'Cur síos Playtime';
@@ -129,13 +132,13 @@ class AppLocalizationsGa extends AppLocalizations {
   String get delete => 'Scrios';
 
   @override
-  String get playtimeVirtualStarted => 'Seisiún fíorúil tosaithe';
+  String get playtimeVirtualStarted => '[GA] Virtual playtime started!';
 
   @override
   String get createYourFirstGame => 'Cruthaigh do chéad chluiche';
 
   @override
-  String get participants => 'Rannpháirtithe';
+  String get participants => '[GA] Participants';
 
   @override
   String recipients(Object count) {
@@ -143,7 +146,7 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get noResults => 'Gan torthaí';
+  String get noResults => '[GA] No results found';
 
   @override
   String get yes => 'Tá';
@@ -158,13 +161,13 @@ class AppLocalizationsGa extends AppLocalizations {
   String get done => 'Déanta';
 
   @override
-  String get defaultShareMessage => 'Teachtaireacht réamhshocraithe le roinnt';
+  String get defaultShareMessage => '[GA] Let\'s meet via Appoint!';
 
   @override
   String get no => 'Níl';
 
   @override
-  String get playtimeHub => 'Ionad Playtime';
+  String get playtimeHub => '[GA] Playtime Hub';
 
   @override
   String get error => 'Earráid';
@@ -186,7 +189,7 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Cruinniú roinnte go rathúil';
+  String get meetingSharedSuccessfully => '[GA] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => 'Fáilte chuig Playtime';
@@ -195,7 +198,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get viewAll => 'Féach ar uile';
 
   @override
-  String get playtimeVirtual => 'Playtime fíorúil';
+  String get playtimeVirtual => '[GA] Virtual Play';
 
   @override
   String get staffScreenTBD => 'Scáileán foirne le socrú';
@@ -204,7 +207,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get cut => 'Gearr';
 
   @override
-  String get inviteCancelledSuccessfully => 'Cuireadh cealaithe go rathúil';
+  String get inviteCancelledSuccessfully =>
+      '[GA] Invite cancelled successfully';
 
   @override
   String get retry => 'Féach arís';
@@ -231,7 +235,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get profile => 'Próifíl';
 
   @override
-  String get removeChild => 'Bain páiste';
+  String get removeChild => '[GA] Remove Child';
 
   @override
   String status(Object status) {
@@ -257,10 +261,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get upload => 'Uaslódáil';
 
   @override
-  String get upcomingSessions => 'Seisiúin atá le teacht';
+  String get upcomingSessions => '[GA] Upcoming Sessions';
 
   @override
-  String get enterGroupName => 'Iontráil ainm an ghrúpa';
+  String get enterGroupName => '[GA] Enter group name';
 
   @override
   String get confirm => 'Deimhnigh';
@@ -269,12 +273,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get playtimeLive => 'Playtime beo';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Earráid ag luchtú cuireadh';
-  }
+  String get errorLoadingInvites => 'Earráid ag luchtú cuireadh';
 
   @override
-  String get targetingFilters => 'Scagairí dírithe';
+  String get targetingFilters => '[GA] Targeting Filters';
 
   @override
   String get pickVideo => 'Roghnaigh físeán';
@@ -286,10 +288,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get scheduleForLater => 'Cláraigh le haghaidh níos déanaí';
 
   @override
-  String get accessRevokedSuccessfully => 'Rochtain cealaithe go rathúil';
+  String get accessRevokedSuccessfully => '[GA] Access revoked successfully';
 
   @override
-  String get type => 'Cineál';
+  String type(Object type) {
+    return '[GA] Type';
+  }
 
   @override
   String get checkingPermissions => 'Ag seiceáil ceadanna';
@@ -304,10 +308,10 @@ class AppLocalizationsGa extends AppLocalizations {
   String get email => 'Ríomhphost';
 
   @override
-  String get shareOnWhatsApp => 'Roinn ar WhatsApp';
+  String get shareOnWhatsApp => '[GA] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Socruithe fógraí';
+  String get notificationSettings => '[GA] Notification Settings';
 
   @override
   String get myProfile => 'Mo phróifíl';
@@ -320,14 +324,14 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String requestType(Object type) {
-    return 'Cineál iarratais';
+    return '[GA] Request Type';
   }
 
   @override
   String get notifications => 'Fógraí';
 
   @override
-  String get details => 'Sonraí';
+  String get details => '[GA] Details';
 
   @override
   String get cancelInvite => 'Cealaigh cuireadh';
@@ -336,30 +340,28 @@ class AppLocalizationsGa extends AppLocalizations {
   String get createNew => 'Cruthaigh nua';
 
   @override
-  String get settings => 'Socruithe';
+  String get settings => '[GA] Settings';
 
   @override
   String get playtimeReject => 'Diúltú Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Earráid ag luchtú próifíle';
-  }
+  String get errorLoadingProfile => 'Earráid ag luchtú próifíle';
 
   @override
-  String get edit => 'Cuir in eagar';
+  String get edit => '[GA] Edit';
 
   @override
   String get add => 'Cuir leis';
 
   @override
-  String get playtimeGameApproved => 'Cluiche faofa';
+  String get playtimeGameApproved => '[GA] Game approved';
 
   @override
   String get forgotPassword => 'Ar chaill tú d\'fhocal faire?';
 
   @override
-  String get familyDashboard => 'Painéal teaghlaigh';
+  String get familyDashboard => '[GA] Family Dashboard';
 
   @override
   String get loading => 'Ag luchtú';
@@ -371,7 +373,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get playtimeTitle => 'Teideal Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP athsheoladh go rathúil';
+  String get otpResentSuccessfully => '[GA] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
@@ -383,7 +385,7 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'Token FCM';
+    return '[GA] FCM Token';
   }
 
   @override
@@ -393,7 +395,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get previous => 'Roimhe seo';
 
   @override
-  String get noProfileFound => 'Gan próifíl aimsithe';
+  String get noProfileFound => '[GA] No profile found';
 
   @override
   String get noFamilyMembersYet => 'Níl baill teaghlaigh fós';
@@ -402,31 +404,31 @@ class AppLocalizationsGa extends AppLocalizations {
   String get mediaOptional => 'Meán (roghnach)';
 
   @override
-  String get messageSavedSuccessfully => 'Teachtaireacht sábháilte go rathúil';
+  String get messageSavedSuccessfully => '[GA] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Cláraithe do';
+  String get scheduledFor => '[GA] Scheduled for';
 
   @override
-  String get dashboard => 'Painéal';
+  String get dashboard => '[GA] Dashboard';
 
   @override
   String get noPermissionForBroadcast => 'Gan cead le craoladh';
 
   @override
-  String get playtimeAdminPanelTitle => 'Teideal painéal riarthóra Playtime';
+  String get playtimeAdminPanelTitle => '[GA] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Sonraí cuireadh';
+  String get inviteDetail => '[GA] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return 'Cláraithe';
+    return '[GA] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Theip ar athsheoladh OTP';
+    return '[GA] Failed to resend OTP';
   }
 
   @override
@@ -441,17 +443,17 @@ class AppLocalizationsGa extends AppLocalizations {
   String get save => 'Sábháil';
 
   @override
-  String get playtimeApprove => 'Faofa Playtime';
+  String get playtimeApprove => '[GA] Approve';
 
   @override
   String get createYourFirstSession => 'Cruthaigh do chéad seisiún';
 
   @override
-  String get playtimeGameRejected => 'Cluiche diúltaithe';
+  String get playtimeGameRejected => '[GA] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Theip ar chealú rochtana';
+    return '[GA] Failed to revoke access';
   }
 
   @override
@@ -462,7 +464,7 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Theip ar chealú cuireadh';
+    return '[GA] Failed to cancel invite';
   }
 
   @override
@@ -475,21 +477,21 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Earráid ag luchtú iarratais príobháideachta';
+    return '[GA] Error loading privacy requests';
   }
 
   @override
   String get connectedChildren => 'Páistí nasctha';
 
   @override
-  String get share => 'Roinn';
+  String get share => '[GA] Share';
 
   @override
-  String get playtimeEnterGameName => 'Iontráil ainm an chluiche';
+  String get playtimeEnterGameName => '[GA] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Logáil isteach le haghaidh gnéithe teaghlaigh';
+      '[GA] Please login to access family features';
 
   @override
   String get myInvites => 'Mo cuireadh';
@@ -498,23 +500,22 @@ class AppLocalizationsGa extends AppLocalizations {
   String get createGame => 'Cruthaigh cluiche';
 
   @override
-  String get groupNameOptional => 'Ainm grúpa (roghnach)';
+  String get groupNameOptional => '[GA] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Níl seisiúin Playtime ann';
+  String get playtimeNoSessions => '[GA] No playtime sessions found.';
 
   @override
   String get adminScreenTBD => 'Scáileán riarthóra le socrú';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      'Teideal painéal tuismitheoirí Playtime';
+  String get playtimeParentDashboardTitle => '[GA] Playtime Dashboard';
 
   @override
   String get close => 'Dún';
 
   @override
-  String get knownGroupDetected => 'Grúpa aitheanta aimsithe';
+  String get knownGroupDetected => '[GA] Known group detected';
 
   @override
   String get back => 'Ar ais';
@@ -523,7 +524,7 @@ class AppLocalizationsGa extends AppLocalizations {
   String get playtimeChooseGame => 'Roghnaigh cluiche';
 
   @override
-  String get managePermissions => 'Bainistigh ceadanna';
+  String get managePermissions => '[GA] Manage Permissions';
 
   @override
   String get pollOptions => 'Roghanna suirbhé';
@@ -539,10 +540,10 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get meetingReadyMessage => 'Cruinniú réidh';
+  String get meetingReadyMessage => '[GA] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Cuireadh i bhfeitheamh';
+  String get pendingInvites => '[GA] Pending Invites';
 
   @override
   String statusColon(Object status) {
@@ -552,4 +553,22 @@ class AppLocalizationsGa extends AppLocalizations {
   @override
   String get pleaseLoginToViewProfile =>
       'Logáil isteach chun próifíl a fheiceáil';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

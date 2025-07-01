@@ -8,7 +8,7 @@ Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
 
-  testWidgets('Admin Dashboard shows overview text', (WidgetTester tester) async {
+  testWidgets('Admin Dashboard shows overview text', (final WidgetTester tester) async {
     await tester.pumpWidget(const ProviderScope(
       child: MaterialApp(home: AdminDashboardScreen()),
     ));

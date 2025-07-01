@@ -54,7 +54,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get undo => 'Скасувати';
 
   @override
-  String get opened => 'Відкрито';
+  String opened(Object count) {
+    return 'Відкрито';
+  }
 
   @override
   String get createVirtualSession => 'Створити віртуальну сесію';
@@ -270,9 +272,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get playtimeLive => 'Живий Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Помилка завантаження запрошень';
-  }
+  String get errorLoadingInvites => 'Помилка завантаження запрошень';
 
   @override
   String get targetingFilters => 'Фільтри таргетингу';
@@ -290,7 +290,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get accessRevokedSuccessfully => 'Доступ успішно скасовано';
 
   @override
-  String get type => 'Тип';
+  String type(Object type) {
+    return 'Тип';
+  }
 
   @override
   String get checkingPermissions => 'Перевірка дозволів';
@@ -305,7 +307,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get email => 'Електронна пошта';
 
   @override
-  String get shareOnWhatsApp => 'Поділитися в WhatsApp';
+  String get shareOnWhatsApp => '[UK] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Налаштування сповіщень';
@@ -343,9 +345,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get playtimeReject => 'Відхилити Playtime';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Помилка завантаження профілю';
-  }
+  String get errorLoadingProfile => 'Помилка завантаження профілю';
 
   @override
   String get edit => 'Редагувати';
@@ -453,7 +453,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Failed to revoke access';
+    return '[UK] Failed to revoke access';
   }
 
   @override
@@ -491,65 +491,83 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+      '[UK] Please login to access family features';
 
   @override
-  String get myInvites => 'My Invites';
+  String get myInvites => '[UK] My Invites';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => '[UK] Create Game';
 
   @override
-  String get groupNameOptional => 'Group Name (Optional)';
+  String get groupNameOptional => '[UK] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => '[UK] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Admin screen coming soon';
+  String get adminScreenTBD => '[UK] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => '[UK] Playtime Dashboard';
 
   @override
-  String get close => 'Close';
+  String get close => '[UK] Close';
 
   @override
-  String get knownGroupDetected => 'Known group detected';
+  String get knownGroupDetected => '[UK] Known group detected';
 
   @override
-  String get back => 'Back';
+  String get back => '[UK] Back';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => '[UK] Choose a game';
 
   @override
-  String get managePermissions => 'Manage Permissions';
+  String get managePermissions => '[UK] Manage Permissions';
 
   @override
-  String get pollOptions => 'Poll Options';
+  String get pollOptions => '[UK] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Clicked';
+    return '[UK] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[UK] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Your meeting is ready! Join now';
+  String get meetingReadyMessage => '[UK] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Pending Invites';
+  String get pendingInvites => '[UK] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[UK] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile => 'Увійдіть, щоб переглянути профіль';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

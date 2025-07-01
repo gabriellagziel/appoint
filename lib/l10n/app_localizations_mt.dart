@@ -9,550 +9,568 @@ class AppLocalizationsMt extends AppLocalizations {
   AppLocalizationsMt([String locale = 'mt']) : super(locale);
 
   @override
-  String get refresh => 'Aġġorna';
+  String get refresh => '[MT] Refresh';
 
   @override
-  String get home => 'Id-dar';
+  String get home => '[MT] Home';
 
   @override
-  String get noSessionsYet => 'Għadhom ma kienux hemm sessjonijiet';
+  String get noSessionsYet => '[MT] No sessions yet';
 
   @override
-  String get ok => 'OK';
+  String get ok => '[MT] OK';
 
   @override
-  String get playtimeLandingChooseMode => 'Agħżel il-mod tal-logħob tiegħek:';
+  String get playtimeLandingChooseMode => '[MT] Choose your play mode:';
 
   @override
-  String get signUp => 'Irreġistra';
+  String get signUp => '[MT] Sign Up';
 
   @override
-  String get scheduleMessage => 'Iskedja messaġġ';
+  String get scheduleMessage => '[MT] Schedule Message';
 
   @override
-  String get decline => 'Irrifjuta';
+  String get decline => '[MT] Decline';
 
   @override
-  String get adminBroadcast => 'Xandir tal-Amministratur';
+  String get adminBroadcast => '[MT] Admin Broadcast';
 
   @override
-  String get login => 'Idħol';
+  String get login => '[MT] Login';
 
   @override
-  String get playtimeChooseFriends => 'Agħżel ħbieb biex tistieden';
+  String get playtimeChooseFriends => '[MT] Choose friends to invite';
 
   @override
-  String get noInvites => 'L-ebda stedina';
+  String get noInvites => '[MT] No invites';
 
   @override
-  String get playtimeChooseTime => 'Agħżel ħin';
+  String get playtimeChooseTime => '[MT] Choose a time';
 
   @override
-  String get success => 'Suċċess';
+  String get success => '[MT] Success';
 
   @override
-  String get undo => 'M\'għadhomx';
+  String get undo => '[MT] Undo';
 
   @override
-  String get opened => 'Miftuħ';
+  String opened(Object count) {
+    return '[MT] Opened';
+  }
 
   @override
-  String get createVirtualSession => 'Oħloq sessjoni virtwali';
+  String get createVirtualSession => '[MT] Create Virtual Session';
 
   @override
-  String get messageSentSuccessfully => 'Il-messaġġ ġie mibgħut b\'suċċess';
+  String get messageSentSuccessfully => '[MT] Message sent successfully';
 
   @override
-  String get redo => 'Erġa\' agħmel';
+  String get redo => '[MT] Redo';
 
   @override
-  String get next => 'Li jmiss';
+  String get next => '[MT] Next';
 
   @override
-  String get search => 'Fittex';
+  String get search => '[MT] Search';
 
   @override
   String get cancelInviteConfirmation =>
-      'Inti żgur li trid tkkanċella din l-istedina?';
+      '[MT] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return 'Maħluq';
+    return '[MT] Created';
   }
 
   @override
-  String get revokeAccess => 'Irrevoka l-aċċess';
+  String get revokeAccess => '[MT] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => 'Salva grupp għar-rikonoxximent';
+  String get saveGroupForRecognition => '[MT] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Playtime diretta skedata!';
+  String get playtimeLiveScheduled => '[MT] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Inti żgur li trid trevoka l-aċċess?';
+  String get revokeAccessConfirmation =>
+      '[MT] Are you sure you want to revoke access?';
 
   @override
-  String get download => 'Niżżel';
+  String get download => '[MT] Download';
 
   @override
-  String get password => 'Password';
+  String get password => '[MT] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Żball ittagħbija tal-links tal-familja';
+    return '[MT] Error loading family links';
   }
 
   @override
-  String get cancel => 'Ikkanċella';
+  String get cancel => '[MT] Cancel';
 
   @override
-  String get playtimeCreate => 'Oħloq';
+  String get playtimeCreate => '[MT] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'Falliet li taġixxi talba tal-privatezza';
+    return '[MT] Failed to action privacy request';
   }
 
   @override
-  String get appTitle => 'APP-OINT';
+  String get appTitle => '[MT] APP-OINT';
 
   @override
-  String get accept => 'Aċċetta';
+  String get accept => '[MT] Accept';
 
   @override
-  String get playtimeModeVirtual => 'Logħob virtwali';
+  String get playtimeModeVirtual => '[MT] Virtual Play';
 
   @override
   String get playtimeDescription =>
-      'Igawdu logħob diretta jew virtwali ma\' ħbiebek!';
+      '[MT] Enjoy live or virtual games with your friends!';
 
   @override
-  String get delete => 'Ħassar';
+  String get delete => '[MT] Delete';
 
   @override
-  String get playtimeVirtualStarted => 'Playtime virtwali beda!';
+  String get playtimeVirtualStarted => '[MT] Virtual playtime started!';
 
   @override
-  String get createYourFirstGame => 'Oħloq l-ewwel logħba tiegħek';
+  String get createYourFirstGame => '[MT] Create your first game';
 
   @override
-  String get participants => 'Parteċipanti';
+  String get participants => '[MT] Participants';
 
   @override
   String recipients(Object count) {
-    return 'Riċevituri';
+    return '[MT] Recipients';
   }
 
   @override
-  String get noResults => 'Ma nstabu l-ebda riżultati';
+  String get noResults => '[MT] No results found';
 
   @override
-  String get yes => 'Iva';
+  String get yes => '[MT] Yes';
 
   @override
-  String get invite => 'Stieden';
+  String get invite => '[MT] Invite';
 
   @override
-  String get playtimeModeLive => 'Logħob diretta';
+  String get playtimeModeLive => '[MT] Live Play';
 
   @override
-  String get done => 'Imwettaq';
+  String get done => '[MT] Done';
 
   @override
-  String get defaultShareMessage => 'Ejja niltaqgħu permezz ta\' Appoint!';
+  String get defaultShareMessage => '[MT] Let\'s meet via Appoint!';
 
   @override
-  String get no => 'Le';
+  String get no => '[MT] No';
 
   @override
-  String get playtimeHub => 'Ċentru Playtime';
+  String get playtimeHub => '[MT] Playtime Hub';
 
   @override
-  String get error => 'Żball';
+  String get error => '[MT] Error';
 
   @override
-  String get createLiveSession => 'Oħloq sessjoni diretta';
+  String get createLiveSession => '[MT] Create Live Session';
 
   @override
-  String get enableNotifications => 'Ippermetti notifiki';
+  String get enableNotifications => '[MT] Enable Notifications';
 
   @override
   String invited(Object date) {
-    return 'Mistieden';
+    return '[MT] Invited';
   }
 
   @override
   String content(Object content) {
-    return 'Kontenut';
+    return '[MT] Content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Il-laqgħa ġiet kondiviża b\'suċċess';
+  String get meetingSharedSuccessfully => '[MT] Meeting shared successfully';
 
   @override
-  String get welcomeToPlaytime => 'Merħba għal Playtime';
+  String get welcomeToPlaytime => '[MT] Welcome to Playtime';
 
   @override
-  String get viewAll => 'Ara kollox';
+  String get viewAll => '[MT] View All';
 
   @override
-  String get playtimeVirtual => 'Logħob virtwali';
+  String get playtimeVirtual => '[MT] Virtual Play';
 
   @override
-  String get staffScreenTBD => 'Iskrin tal-istaff dalwaqt';
+  String get staffScreenTBD => '[MT] Staff screen coming soon';
 
   @override
-  String get cut => 'Aqtgħet';
+  String get cut => '[MT] Cut';
 
   @override
   String get inviteCancelledSuccessfully =>
-      'L-istedina ġiet kkanċellata b\'suċċess';
+      '[MT] Invite cancelled successfully';
 
   @override
-  String get retry => 'Erġa\' pprova';
+  String get retry => '[MT] Retry';
 
   @override
-  String get composeBroadcastMessage => 'Ikkomponi messaġġ ta\' xandir';
+  String get composeBroadcastMessage => '[MT] Compose Broadcast Message';
 
   @override
-  String get sendNow => 'Ibgħat issa';
+  String get sendNow => '[MT] Send Now';
 
   @override
-  String get noGamesYet => 'Għadhom ma kienux hemm logħob';
+  String get noGamesYet => '[MT] No games yet';
 
   @override
-  String get select => 'Agħżel';
+  String get select => '[MT] Select';
 
   @override
-  String get about => 'Dwar';
+  String get about => '[MT] About';
 
   @override
-  String get choose => 'Agħżel';
+  String get choose => '[MT] Choose';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[MT] Profile';
 
   @override
-  String get removeChild => 'Neħħi tifel';
+  String get removeChild => '[MT] Remove Child';
 
   @override
   String status(Object status) {
-    return 'Status';
+    return '[MT] Status';
   }
 
   @override
-  String get logout => 'Oħroġ';
+  String get logout => '[MT] Logout';
 
   @override
-  String get paste => 'Inkolla';
+  String get paste => '[MT] Paste';
 
   @override
-  String get welcome => 'Merħba';
+  String get welcome => '[MT] Welcome';
 
   @override
-  String get playtimeCreateSession => 'Oħloq sessjoni Playtime';
+  String get playtimeCreateSession => '[MT] Create a Playtime Session';
 
   @override
-  String get familyMembers => 'Membri tal-familja';
+  String get familyMembers => '[MT] Family Members';
 
   @override
-  String get upload => 'Ittella\'';
+  String get upload => '[MT] Upload';
 
   @override
-  String get upcomingSessions => 'Sessjonijiet li ġejjin';
+  String get upcomingSessions => '[MT] Upcoming Sessions';
 
   @override
-  String get enterGroupName => 'Daħħal isem tal-grupp';
+  String get enterGroupName => '[MT] Enter group name';
 
   @override
-  String get confirm => 'Ikkonferma';
+  String get confirm => '[MT] Confirm';
 
   @override
-  String get playtimeLive => 'Logħob diretta';
+  String get playtimeLive => '[MT] Live Play';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Żball ittagħbija tal-istediniet';
+  String get errorLoadingInvites => '[MT] Error loading invites';
+
+  @override
+  String get targetingFilters => '[MT] Targeting Filters';
+
+  @override
+  String get pickVideo => '[MT] Pick Video';
+
+  @override
+  String get playtimeGameDeleted => '[MT] Game deleted';
+
+  @override
+  String get scheduleForLater => '[MT] Schedule for Later';
+
+  @override
+  String get accessRevokedSuccessfully => '[MT] Access revoked successfully';
+
+  @override
+  String type(Object type) {
+    return '[MT] Type';
   }
 
   @override
-  String get targetingFilters => 'Filtri ta\' mira';
+  String get checkingPermissions => '[MT] Checking permissions...';
 
   @override
-  String get pickVideo => 'Agħżel video';
+  String get copy => '[MT] Copy';
 
   @override
-  String get playtimeGameDeleted => 'Logħba mħassra';
+  String get yesCancel => '[MT] Yes, Cancel';
 
   @override
-  String get scheduleForLater => 'Iskedja għal aktar tard';
+  String get email => '[MT] Email';
 
   @override
-  String get accessRevokedSuccessfully => 'L-aċċess ġie revokat b\'suċċess';
+  String get shareOnWhatsApp => '[MT] Share on WhatsApp';
 
   @override
-  String get type => 'Tip';
+  String get notificationSettings => '[MT] Notification Settings';
 
   @override
-  String get checkingPermissions => 'Qed jiċċekkja l-permessi...';
+  String get myProfile => '[MT] My Profile';
 
   @override
-  String get copy => 'Kopja';
+  String get revoke => '[MT] Revoke';
 
   @override
-  String get yesCancel => 'Iva, ikkanċella';
-
-  @override
-  String get email => 'Email';
-
-  @override
-  String get shareOnWhatsApp => 'Kondividi fuq WhatsApp';
-
-  @override
-  String get notificationSettings => 'Settings tan-notifiki';
-
-  @override
-  String get myProfile => 'Il-profil tiegħi';
-
-  @override
-  String get revoke => 'Irrevoka';
-
-  @override
-  String get noBroadcastMessages => 'Għadhom ma kienux hemm messaġġi';
+  String get noBroadcastMessages => '[MT] No messages yet';
 
   @override
   String requestType(Object type) {
-    return 'Tip ta\' talba';
+    return '[MT] Request Type';
   }
 
   @override
-  String get notifications => 'Notifiki';
+  String get notifications => '[MT] Notifications';
 
   @override
-  String get details => 'Dettalji';
+  String get details => '[MT] Details';
 
   @override
-  String get cancelInvite => 'Ikkanċella stedina';
+  String get cancelInvite => '[MT] Cancel Invite';
 
   @override
-  String get createNew => 'Oħloq ġdid';
+  String get createNew => '[MT] Create New';
 
   @override
-  String get settings => 'Settings';
+  String get settings => '[MT] Settings';
 
   @override
-  String get playtimeReject => 'Irrifjuta';
+  String get playtimeReject => '[MT] Reject';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Żball ittagħbija tal-profil';
-  }
+  String get errorLoadingProfile => '[MT] Error loading profile';
 
   @override
-  String get edit => 'Editja';
+  String get edit => '[MT] Edit';
 
   @override
-  String get add => 'Żid';
+  String get add => '[MT] Add';
 
   @override
-  String get playtimeGameApproved => 'Logħba approvata';
+  String get playtimeGameApproved => '[MT] Game approved';
 
   @override
-  String get forgotPassword => 'Insirt il-password?';
+  String get forgotPassword => '[MT] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Dashboard tal-Familja';
+  String get familyDashboard => '[MT] Family Dashboard';
 
   @override
-  String get loading => 'Qed ittagħbja...';
+  String get loading => '[MT] Loading...';
 
   @override
-  String get quickActions => 'Azzjonijiet malajr';
+  String get quickActions => '[MT] Quick Actions';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => '[MT] Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP ġie mibgħut mill-ġdid b\'suċċess';
+  String get otpResentSuccessfully => '[MT] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Żball iċċekkja l-permessi';
+    return '[MT] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Iskrin tal-klijent dalwaqt';
+  String get clientScreenTBD => '[MT] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return 'Token FCM';
+    return '[MT] FCM Token';
   }
 
   @override
-  String get pickImage => 'Agħżel immaġni';
+  String get pickImage => '[MT] Pick Image';
 
   @override
-  String get previous => 'Preċedenti';
+  String get previous => '[MT] Previous';
 
   @override
-  String get noProfileFound => 'Ma nstab l-ebda profil';
+  String get noProfileFound => '[MT] No profile found';
 
   @override
-  String get noFamilyMembersYet => 'Għadhom ma kienux hemm membri tal-familja';
+  String get noFamilyMembersYet => '[MT] No family members yet';
 
   @override
-  String get mediaOptional => 'Media (Mhux obbligatorja)';
+  String get mediaOptional => '[MT] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => 'Il-messaġġ ġie msalva b\'suċċess';
+  String get messageSavedSuccessfully => '[MT] Message saved successfully';
 
   @override
-  String get scheduledFor => 'Skedat għal';
+  String get scheduledFor => '[MT] Scheduled for';
 
   @override
-  String get dashboard => 'Dashboard';
+  String get dashboard => '[MT] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => 'L-ebda permess għax-xandir';
+  String get noPermissionForBroadcast => '[MT] No permission for broadcast';
 
   @override
-  String get playtimeAdminPanelTitle => 'Logħob Playtime – Amministratur';
+  String get playtimeAdminPanelTitle => '[MT] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Dettalji tal-istedina';
+  String get inviteDetail => '[MT] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return 'Skedat';
+    return '[MT] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'Falliet li terġa\' tibgħat OTP';
+    return '[MT] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => 'Skedar';
+  String get scheduling => '[MT] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Żball isalva messaġġ';
+    return '[MT] Error saving message';
   }
 
   @override
-  String get save => 'Salva';
+  String get save => '[MT] Save';
 
   @override
-  String get playtimeApprove => 'Ipprova';
+  String get playtimeApprove => '[MT] Approve';
 
   @override
-  String get createYourFirstSession => 'Oħloq l-ewwel sessjoni tiegħek';
+  String get createYourFirstSession => '[MT] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'Logħba rifjutata';
+  String get playtimeGameRejected => '[MT] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Falliet li trevoka l-aċċess';
+    return '[MT] Failed to revoke access';
   }
 
   @override
-  String get recentGames => 'Logħob reċenti';
+  String get recentGames => '[MT] Recent Games';
 
   @override
-  String get customizeMessage => 'Ippersonalizza messaġġ';
+  String get customizeMessage => '[MT] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Falliet li tkkanċella stedina';
+    return '[MT] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Żball ibgħat messaġġ';
+    return '[MT] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Ikkonferma l-password';
+  String get confirmPassword => '[MT] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Żball ittagħbija tat-talbiet tal-privatezza';
+    return '[MT] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Tfal konnessi';
+  String get connectedChildren => '[MT] Connected Children';
 
   @override
-  String get share => 'Kondividi';
+  String get share => '[MT] Share';
 
   @override
-  String get playtimeEnterGameName => 'Daħħal isem tal-logħba';
+  String get playtimeEnterGameName => '[MT] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Jekk jogħġbok idħol biex taċċessa l-karatteristiċi tal-familja';
+      '[MT] Please login to access family features';
 
   @override
-  String get myInvites => 'L-istediniet tiegħi';
+  String get myInvites => '[MT] My Invites';
 
   @override
-  String get createGame => 'Oħloq logħba';
+  String get createGame => '[MT] Create Game';
 
   @override
-  String get groupNameOptional => 'Isem tal-grupp (Mhux obbligatorju)';
+  String get groupNameOptional => '[MT] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'Ma nstabu l-ebda sessjonijiet playtime.';
+  String get playtimeNoSessions => '[MT] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Iskrin tal-amministratur dalwaqt';
+  String get adminScreenTBD => '[MT] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Dashboard Playtime';
+  String get playtimeParentDashboardTitle => '[MT] Playtime Dashboard';
 
   @override
-  String get close => 'Agħlaq';
+  String get close => '[MT] Close';
 
   @override
-  String get knownGroupDetected => 'Grupp magħruf skopert';
+  String get knownGroupDetected => '[MT] Known group detected';
 
   @override
-  String get back => 'Lura';
+  String get back => '[MT] Back';
 
   @override
-  String get playtimeChooseGame => 'Agħżel logħba';
+  String get playtimeChooseGame => '[MT] Choose a game';
 
   @override
-  String get managePermissions => 'Immaniġġja l-permessi';
+  String get managePermissions => '[MT] Manage Permissions';
 
   @override
-  String get pollOptions => 'Għażliet tal-poll';
+  String get pollOptions => '[MT] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Imkaxkar';
+    return '[MT] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[MT] Link';
   }
 
   @override
-  String get meetingReadyMessage =>
-      'Il-laqgħa tiegħek hija lesta! Ingħaqad issa';
+  String get meetingReadyMessage => '[MT] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Stediniet pendenti';
+  String get pendingInvites => '[MT] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[MT] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      'Jekk jogħġbok idħol biex tara l-profil tiegħek.';
+      '[MT] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

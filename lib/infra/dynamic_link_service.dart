@@ -1,5 +1,5 @@
 class DynamicLinkService {
-  Future<String> createLink(String path) async {
+  Future<String> createLink(final String path) async {
     return 'https://example.com/$path';
   }
 }

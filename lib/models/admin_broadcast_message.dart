@@ -20,49 +20,49 @@ enum BroadcastMessageStatus {
 @freezed
 class AdminBroadcastMessage with _$AdminBroadcastMessage {
   const factory AdminBroadcastMessage({
-    required String id,
-    required String title,
-    required String content,
-    required BroadcastMessageType type,
-    String? imageUrl,
-    String? videoUrl,
-    String? externalLink,
-    List<String>? pollOptions,
-    required BroadcastTargetingFilters targetingFilters,
-    required String createdByAdminId,
-    required String createdByAdminName,
-    required DateTime createdAt,
-    DateTime? scheduledFor,
-    required BroadcastMessageStatus status,
-    int? estimatedRecipients,
-    int? actualRecipients,
-    int? openedCount,
-    int? clickedCount,
-    Map<String, int>? pollResponses,
-    List<String>? failedRecipients,
-    String? failureReason,
+    required final String id,
+    required final String title,
+    required final String content,
+    required final BroadcastMessageType type,
+    final String? imageUrl,
+    final String? videoUrl,
+    final String? externalLink,
+    final List<String>? pollOptions,
+    required final BroadcastTargetingFilters targetingFilters,
+    required final String createdByAdminId,
+    required final String createdByAdminName,
+    required final DateTime createdAt,
+    final DateTime? scheduledFor,
+    required final BroadcastMessageStatus status,
+    final int? estimatedRecipients,
+    final int? actualRecipients,
+    final int? openedCount,
+    final int? clickedCount,
+    final Map<String, int>? pollResponses,
+    final List<String>? failedRecipients,
+    final String? failureReason,
   }) = _AdminBroadcastMessage;
 
-  factory AdminBroadcastMessage.fromJson(Map<String, dynamic> json) =>
+  factory AdminBroadcastMessage.fromJson(final Map<String, dynamic> json) =>
       _$AdminBroadcastMessageFromJson(json);
 }
 
 @freezed
 class BroadcastTargetingFilters with _$BroadcastTargetingFilters {
   const factory BroadcastTargetingFilters({
-    List<String>? countries,
-    List<String>? cities,
-    int? minAge,
-    int? maxAge,
-    List<String>? subscriptionTiers,
-    List<String>? accountTypes,
-    List<String>? languages,
-    List<String>? accountStatuses,
-    DateTime? joinedAfter,
-    DateTime? joinedBefore,
-    List<String>? userRoles,
+    final List<String>? countries,
+    final List<String>? cities,
+    final int? minAge,
+    final int? maxAge,
+    final List<String>? subscriptionTiers,
+    final List<String>? accountTypes,
+    final List<String>? languages,
+    final List<String>? accountStatuses,
+    final DateTime? joinedAfter,
+    final DateTime? joinedBefore,
+    final List<String>? userRoles,
   }) = _BroadcastTargetingFilters;
 
-  factory BroadcastTargetingFilters.fromJson(Map<String, dynamic> json) =>
+  factory BroadcastTargetingFilters.fromJson(final Map<String, dynamic> json) =>
       _$REDACTED_TOKEN(json);
 }

@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:async/async.dart';
 
-import '../models/dashboard_stats.dart';
-import '../models/invite.dart';
+import 'package:appoint/models/dashboard_stats.dart';
+import 'package:appoint/models/invite.dart';
 
 class DashboardService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -10,7 +10,7 @@ class DashboardService {
   Future<DashboardStats> fetchDashboardStats() async {
     final appointmentsSnap = await _firestore.collection('appointments').get();
     final totalAppointments = appointmentsSnap.size;
-    final completedAppointments = appointmentsSnap.docs.where((doc) {
+    final completedAppointments = appointmentsSnap.docs.where((final doc) {
       final status = doc.data()['status'] as String?;
       return status == 'accepted' || status == 'completed';
     }).length;
@@ -45,7 +45,7 @@ class DashboardService {
       appointmentsStream,
       invitesStream,
       paymentsStream,
-    ]).map((values) {
+    ]).map((final values) {
       final QuerySnapshot<Map<String, dynamic>> appointmentsSnapshot =
           values[0] as QuerySnapshot<Map<String, dynamic>>;
       final QuerySnapshot<Map<String, dynamic>> invitesSnapshot =
@@ -54,12 +54,12 @@ class DashboardService {
           values[2] as DocumentSnapshot<Map<String, dynamic>>;
 
       final totalAppointments = appointmentsSnapshot.size;
-      final completedAppointments = appointmentsSnapshot.docs.where((doc) {
+      final completedAppointments = appointmentsSnapshot.docs.where((final doc) {
         final status = doc.data()['status'] as String?;
         return status == 'accepted' || status == 'completed';
       }).length;
 
-      final pendingInvites = invitesSnapshot.docs.where((doc) {
+      final pendingInvites = invitesSnapshot.docs.where((final doc) {
         final status = doc.data()['status'] as String?;
         return status == InviteStatus.pending.name;
       }).length;

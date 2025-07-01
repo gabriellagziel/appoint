@@ -6,13 +6,13 @@ part 'playtime_game.g.dart';
 @freezed
 class PlaytimeGame with _$PlaytimeGame {
   const factory PlaytimeGame({
-    required String id,
-    required String name,
-    required String createdBy,
-    required String status, // pending, approved, rejected
-    DateTime? createdAt,
+    required final String id,
+    required final String name,
+    required final String createdBy,
+    required final String status, // pending, approved, rejected
+    final DateTime? createdAt,
   }) = _PlaytimeGame;
 
-  factory PlaytimeGame.fromJson(Map<String, dynamic> json) =>
+  factory PlaytimeGame.fromJson(final Map<String, dynamic> json) =>
       _$PlaytimeGameFromJson(json);
 }

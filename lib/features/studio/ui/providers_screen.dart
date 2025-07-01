@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../models/care_provider.dart';
-import '../../../providers/care_providers_provider.dart';
+import 'package:appoint/models/care_provider.dart';
+import 'package:appoint/providers/care_providers_provider.dart';
 
 class ProvidersScreen extends ConsumerWidget {
   const ProvidersScreen({super.key});
 
-  Future<void> _openEditor(BuildContext context, WidgetRef ref,
-      {CareProvider? provider}) async {
+  Future<void> _openEditor(final BuildContext context, final WidgetRef ref,
+      {final CareProvider? provider}) async {
     final nameController = TextEditingController(text: provider?.name ?? '');
     final specialtyController =
         TextEditingController(text: provider?.specialty ?? '');
@@ -16,7 +16,7 @@ class ProvidersScreen extends ConsumerWidget {
 
     await showDialog(
       context: context,
-      builder: (context) {
+      builder: (final context) {
         return AlertDialog(
           title: Text(provider == null ? 'Add Provider' : 'Edit Provider'),
           content: Column(
@@ -65,7 +65,7 @@ class ProvidersScreen extends ConsumerWidget {
   }
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(final BuildContext context, final WidgetRef ref) {
     final provsAsync = ref.watch(careProvidersProvider);
     return Scaffold(
       appBar: AppBar(title: const Text('Providers')),
@@ -74,13 +74,13 @@ class ProvidersScreen extends ConsumerWidget {
         child: const Icon(Icons.add),
       ),
       body: provsAsync.when(
-        data: (provs) {
+        data: (final provs) {
           if (provs.isEmpty) {
             return const Center(child: Text('No providers'));
           }
           return ListView.builder(
             itemCount: provs.length,
-            itemBuilder: (context, index) {
+            itemBuilder: (final context, final index) {
               final p = provs[index];
               return ListTile(
                 title: Text(p.name),
@@ -105,7 +105,7 @@ class ProvidersScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, _) => Center(child: Text('Error: $e')),
+        error: (final e, final _) => Center(child: Text('Error: $e')),
       ),
     );
   }

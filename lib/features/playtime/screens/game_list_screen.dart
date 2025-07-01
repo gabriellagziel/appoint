@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../l10n/app_localizations.dart';
-import '../../../providers/playtime_provider.dart';
-import '../../../config/theme.dart';
-import '../../../models/playtime_game.dart';
-import '../../../widgets/bottom_sheet_manager.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/models/playtime_game.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
 
 class GameListScreen extends ConsumerStatefulWidget {
   const GameListScreen({super.key});
@@ -31,12 +31,12 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
   ];
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Game List'),
+        title: const Text('Game List'),
         backgroundColor: AppTheme.primaryColor,
         foregroundColor: Colors.white,
         elevation: 0,
@@ -55,11 +55,11 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
           // Games List
           Expanded(
             child: Consumer(
-              builder: (context, ref, child) {
+              builder: (final context, final ref, final child) {
                 final gamesAsync = ref.watch(gamesProvider);
 
                 return gamesAsync.when(
-                  data: (games) {
+                  data: (final games) {
                     final filteredGames = _filterGames(games);
 
                     if (filteredGames.isEmpty) {
@@ -69,7 +69,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                     return ListView.builder(
                       padding: const EdgeInsets.all(16),
                       itemCount: filteredGames.length,
-                      itemBuilder: (context, index) {
+                      itemBuilder: (final context, final index) {
                         final game = filteredGames[index];
                         return _buildGameCard(context, game, l10n);
                       },
@@ -77,7 +77,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                   },
                   loading: () =>
                       const Center(child: CircularProgressIndicator()),
-                  error: (error, stack) => Center(
+                  error: (final error, final stack) => Center(
                     child: Text('Error: $error'),
                   ),
                 );
@@ -89,7 +89,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
     );
   }
 
-  Widget _buildSearchAndFilter(AppLocalizations l10n) {
+  Widget _buildSearchAndFilter(final AppLocalizations l10n) {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -120,7 +120,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                 vertical: 12,
               ),
             ),
-            onChanged: (value) {
+            onChanged: (final value) {
               setState(() {
                 _searchQuery = value;
               });
@@ -134,7 +134,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: _categories.length,
-              itemBuilder: (context, index) {
+              itemBuilder: (final context, final index) {
                 final category = _categories[index];
                 final isSelected = _selectedCategory == category;
 
@@ -143,7 +143,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                   child: FilterChip(
                     label: Text(category),
                     selected: isSelected,
-                    onSelected: (selected) {
+                    onSelected: (final selected) {
                       setState(() {
                         _selectedCategory = category;
                       });
@@ -168,7 +168,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
   }
 
   Widget _buildGameCard(
-      BuildContext context, PlaytimeGame game, AppLocalizations l10n) {
+      final BuildContext context, final PlaytimeGame game, final AppLocalizations l10n) {
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
       elevation: 2,
@@ -237,7 +237,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                           ),
                           child: Text(
                             'Created by: ${game.createdBy}',
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 12,
                               color: AppTheme.primaryColor,
                               fontWeight: FontWeight.w500,
@@ -288,7 +288,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
     );
   }
 
-  Widget _buildEmptyState(AppLocalizations l10n) {
+  Widget _buildEmptyState(final AppLocalizations l10n) {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -320,7 +320,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
           ElevatedButton.icon(
             onPressed: () => context.push('/playtime/create-game'),
             icon: const Icon(Icons.add),
-            label: Text('Create Game'),
+            label: const Text('Create Game'),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppTheme.primaryColor,
               foregroundColor: Colors.white,
@@ -336,7 +336,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
   }
 
   void _showPlayOptions(
-      BuildContext context, PlaytimeGame game, AppLocalizations l10n) {
+      final BuildContext context, final PlaytimeGame game, final AppLocalizations l10n) {
     BottomSheetManager.show(
       context: context,
       child: Container(
@@ -401,11 +401,11 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
   }
 
   Widget _buildPlayOption(
-    BuildContext context,
-    String title,
-    IconData icon,
-    Color color,
-    VoidCallback onTap,
+    final BuildContext context,
+    final String title,
+    final IconData icon,
+    final Color color,
+    final VoidCallback onTap,
   ) {
     return InkWell(
       onTap: onTap,
@@ -444,8 +444,8 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
     );
   }
 
-  List<PlaytimeGame> _filterGames(List<PlaytimeGame> games) {
-    return games.where((game) {
+  List<PlaytimeGame> _filterGames(final List<PlaytimeGame> games) {
+    return games.where((final game) {
       // Search filter
       if (_searchQuery.isNotEmpty) {
         final query = _searchQuery.toLowerCase();

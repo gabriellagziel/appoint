@@ -28,7 +28,7 @@ Future<void> main() async {
       });
 
       test('should create broadcast message with targeting filters', () {
-        final filters = BroadcastTargetingFilters(
+        const filters = BroadcastTargetingFilters(
           countries: ['US', 'CA'],
           cities: ['New York', 'Toronto'],
           subscriptionTiers: ['premium', 'business'],

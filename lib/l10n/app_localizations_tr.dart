@@ -21,7 +21,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get ok => 'Tamam';
 
   @override
-  String get playtimeLandingChooseMode => 'Mod seçin';
+  String get playtimeLandingChooseMode => '[TR] Choose your play mode:';
 
   @override
   String get signUp => 'Kayıt Ol';
@@ -39,13 +39,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get login => 'Giriş Yap';
 
   @override
-  String get playtimeChooseFriends => 'Arkadaşları seçin';
+  String get playtimeChooseFriends => '[TR] Choose friends to invite';
 
   @override
   String get noInvites => 'Davet yok';
 
   @override
-  String get playtimeChooseTime => 'Zaman seçin';
+  String get playtimeChooseTime => '[TR] Choose a time';
 
   @override
   String get success => 'Başarılı';
@@ -54,7 +54,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get undo => 'Geri Al';
 
   @override
-  String get opened => 'Açıldı';
+  String opened(Object count) {
+    return 'Açıldı';
+  }
 
   @override
   String get createVirtualSession => 'Sanal oturum oluştur';
@@ -63,16 +65,17 @@ class AppLocalizationsTr extends AppLocalizations {
   String get messageSentSuccessfully => 'Mesaj başarıyla gönderildi';
 
   @override
-  String get redo => 'Yinele';
+  String get redo => '[TR] Redo';
 
   @override
-  String get next => 'Sonraki';
+  String get next => '[TR] Next';
 
   @override
   String get search => 'Ara';
 
   @override
-  String get cancelInviteConfirmation => 'Davet iptal onayı';
+  String get cancelInviteConfirmation =>
+      '[TR] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -83,13 +86,14 @@ class AppLocalizationsTr extends AppLocalizations {
   String get revokeAccess => 'Erişimi geri al';
 
   @override
-  String get saveGroupForRecognition => 'Tanıma için grubu kaydet';
+  String get saveGroupForRecognition => '[TR] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Canlı oturum planlandı';
+  String get playtimeLiveScheduled => '[TR] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Erişim iptali onayı';
+  String get revokeAccessConfirmation =>
+      '[TR] Are you sure you want to revoke access?';
 
   @override
   String get download => 'İndir';
@@ -99,7 +103,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Aile bağlantıları yüklenirken hata';
+    return '[TR] Error loading family links';
   }
 
   @override
@@ -135,7 +139,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get createYourFirstGame => 'İlk oyununuzu oluşturun';
 
   @override
-  String get participants => 'Katılımcılar';
+  String get participants => '[TR] Participants';
 
   @override
   String recipients(Object count) {
@@ -143,7 +147,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get noResults => 'Sonuç yok';
+  String get noResults => '[TR] No results found';
 
   @override
   String get yes => 'Evet';
@@ -155,7 +159,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get playtimeModeLive => 'Canlı mod';
 
   @override
-  String get done => 'Tamamlandı';
+  String get done => '[TR] Done';
 
   @override
   String get defaultShareMessage => 'Varsayılan paylaşım mesajı';
@@ -167,13 +171,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get playtimeHub => 'Playtime Merkezi';
 
   @override
-  String get error => 'Hata';
+  String get error => '[TR] Error';
 
   @override
   String get createLiveSession => 'Canlı oturum oluştur';
 
   @override
-  String get enableNotifications => 'Bildirimleri etkinleştir';
+  String get enableNotifications => '[TR] Enable Notifications';
 
   @override
   String invited(Object date) {
@@ -186,19 +190,19 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Toplantı başarıyla paylaşıldı';
+  String get meetingSharedSuccessfully => '[TR] Meeting shared successfully';
 
   @override
-  String get welcomeToPlaytime => 'Playtime\'a hoş geldiniz';
+  String get welcomeToPlaytime => '[TR] Welcome to Playtime';
 
   @override
-  String get viewAll => 'Hepsini Gör';
+  String get viewAll => '[TR] View All';
 
   @override
   String get playtimeVirtual => 'Sanal Playtime';
 
   @override
-  String get staffScreenTBD => 'Personel ekranı daha sonra';
+  String get staffScreenTBD => '[TR] Staff screen coming soon';
 
   @override
   String get cut => 'Kes';
@@ -228,7 +232,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get choose => 'Seç';
 
   @override
-  String get profile => 'Profil';
+  String get profile => '[TR] Profile';
 
   @override
   String get removeChild => 'Çocuğu kaldır';
@@ -245,7 +249,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get paste => 'Yapıştır';
 
   @override
-  String get welcome => 'Hoş geldiniz';
+  String get welcome => '[TR] Welcome';
 
   @override
   String get playtimeCreateSession => 'Oturum oluştur';
@@ -260,18 +264,16 @@ class AppLocalizationsTr extends AppLocalizations {
   String get upcomingSessions => 'Gelecek oturumlar';
 
   @override
-  String get enterGroupName => 'Grup adını girin';
+  String get enterGroupName => '[TR] Enter group name';
 
   @override
-  String get confirm => 'Onayla';
+  String get confirm => '[TR] Confirm';
 
   @override
   String get playtimeLive => 'Canlı Playtime';
 
   @override
-  String errorLoadingInvites(Object error) {
-    return 'Davetler yüklenirken hata';
-  }
+  String get errorLoadingInvites => '[TR] Error loading invites';
 
   @override
   String get targetingFilters => 'Hedefleme filtreleri';
@@ -280,19 +282,21 @@ class AppLocalizationsTr extends AppLocalizations {
   String get pickVideo => 'Video seç';
 
   @override
-  String get playtimeGameDeleted => 'Oyun silindi';
+  String get playtimeGameDeleted => '[TR] Game deleted';
 
   @override
-  String get scheduleForLater => 'Daha sonra planla';
+  String get scheduleForLater => '[TR] Schedule for Later';
 
   @override
   String get accessRevokedSuccessfully => 'Erişim başarıyla iptal edildi';
 
   @override
-  String get type => 'Tür';
+  String type(Object type) {
+    return 'Tür';
+  }
 
   @override
-  String get checkingPermissions => 'İzinler kontrol ediliyor';
+  String get checkingPermissions => '[TR] Checking permissions...';
 
   @override
   String get copy => 'Kopyala';
@@ -304,13 +308,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get email => 'E-posta';
 
   @override
-  String get shareOnWhatsApp => 'WhatsApp\'ta paylaş';
+  String get shareOnWhatsApp => '[TR] Share on WhatsApp';
 
   @override
   String get notificationSettings => 'Bildirim ayarları';
 
   @override
-  String get myProfile => 'Profilim';
+  String get myProfile => '[TR] My Profile';
 
   @override
   String get revoke => 'Geri al';
@@ -342,9 +346,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get playtimeReject => 'Playtime reddet';
 
   @override
-  String errorLoadingProfile(Object error) {
-    return 'Profil yüklenirken hata';
-  }
+  String get errorLoadingProfile => '[TR] Error loading profile';
 
   @override
   String get edit => 'Düzenle';
@@ -353,7 +355,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get add => 'Ekle';
 
   @override
-  String get playtimeGameApproved => 'Oyun onaylandı';
+  String get playtimeGameApproved => '[TR] Game approved';
 
   @override
   String get forgotPassword => 'Şifrenizi unuttunuz mu?';
@@ -362,7 +364,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get familyDashboard => 'Aile panosu';
 
   @override
-  String get loading => 'Yükleniyor';
+  String get loading => '[TR] Loading...';
 
   @override
   String get quickActions => 'Hızlı işlemler';
@@ -375,11 +377,11 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'İzinler kontrol edilirken hata';
+    return '[TR] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Müşteri ekranı daha sonra';
+  String get clientScreenTBD => '[TR] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
@@ -393,7 +395,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get previous => 'Önceki';
 
   @override
-  String get noProfileFound => 'Profil bulunamadı';
+  String get noProfileFound => '[TR] No profile found';
 
   @override
   String get noFamilyMembersYet => 'Henüz aile üyesi yok';
@@ -405,7 +407,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get messageSavedSuccessfully => 'Mesaj başarıyla kaydedildi';
 
   @override
-  String get scheduledFor => 'Planlandı için';
+  String get scheduledFor => '[TR] Scheduled for';
 
   @override
   String get dashboard => 'Pano';
@@ -421,7 +423,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String scheduled(Object date) {
-    return 'Planlandı';
+    return '[TR] Scheduled';
   }
 
   @override
@@ -430,18 +432,18 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get scheduling => 'Planlanıyor';
+  String get scheduling => '[TR] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Mesaj kaydedilirken hata';
+    return '[TR] Error saving message';
   }
 
   @override
   String get save => 'Kaydet';
 
   @override
-  String get playtimeApprove => 'Playtime onayla';
+  String get playtimeApprove => '[TR] Approve';
 
   @override
   String get createYourFirstSession => 'İlk oturumunuzu oluşturun';
@@ -451,11 +453,11 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Failed to revoke access';
+    return '[TR] Failed to revoke access';
   }
 
   @override
-  String get recentGames => 'Son oyunlar';
+  String get recentGames => '[TR] Recent Games';
 
   @override
   String get customizeMessage => 'Mesajı özelleştir';
@@ -467,15 +469,15 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Mesaj gönderilirken hata';
+    return '[TR] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Şifreyi onayla';
+  String get confirmPassword => '[TR] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Gizlilik istekleri yüklenirken hata';
+    return '[TR] Error loading privacy requests';
   }
 
   @override
@@ -485,70 +487,88 @@ class AppLocalizationsTr extends AppLocalizations {
   String get share => 'Paylaş';
 
   @override
-  String get playtimeEnterGameName => 'Oyun adını girin';
+  String get playtimeEnterGameName => '[TR] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+      '[TR] Please login to access family features';
 
   @override
-  String get myInvites => 'My Invites';
+  String get myInvites => '[TR] My Invites';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => '[TR] Create Game';
 
   @override
-  String get groupNameOptional => 'Group Name (Optional)';
+  String get groupNameOptional => '[TR] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => '[TR] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Admin screen coming soon';
+  String get adminScreenTBD => '[TR] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => '[TR] Playtime Dashboard';
 
   @override
-  String get close => 'Close';
+  String get close => '[TR] Close';
 
   @override
-  String get knownGroupDetected => 'Known group detected';
+  String get knownGroupDetected => '[TR] Known group detected';
 
   @override
-  String get back => 'Back';
+  String get back => '[TR] Back';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => '[TR] Choose a game';
 
   @override
-  String get managePermissions => 'Manage Permissions';
+  String get managePermissions => '[TR] Manage Permissions';
 
   @override
-  String get pollOptions => 'Poll Options';
+  String get pollOptions => '[TR] Poll Options';
 
   @override
   String clicked(Object count) {
-    return 'Clicked';
+    return '[TR] Clicked';
   }
 
   @override
   String link(Object link) {
-    return 'Link';
+    return '[TR] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Your meeting is ready! Join now';
+  String get meetingReadyMessage => '[TR] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => 'Pending Invites';
+  String get pendingInvites => '[TR] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return 'Status:';
+    return '[TR] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      'Profili görüntülemek için lütfen giriş yapın';
+      '[TR] Please log in to view your profile.';
+
+  @override
+  String get adminMetrics => 'Admin Metrics';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get bookings => 'Bookings';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get revenue => 'Revenue';
+
+  @override
+  String get contentLibrary => 'Content Library';
 }

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../providers/family_provider.dart';
-import '../../../providers/auth_provider.dart';
+import 'package:appoint/providers/family_provider.dart';
+import 'package:appoint/providers/auth_provider.dart';
 
 class InvitationModal extends ConsumerStatefulWidget {
-  const InvitationModal({Key? key}) : super(key: key);
+  const InvitationModal({final Key? key}) : super(key: key);
 
   @override
   ConsumerState<InvitationModal> createState() => _InvitationModalState();
@@ -65,7 +65,7 @@ class _InvitationModalState extends ConsumerState<InvitationModal> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return AlertDialog(
       title: const Text('Invite Child'),
       content: TextField(

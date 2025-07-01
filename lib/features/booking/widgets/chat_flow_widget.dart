@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../providers/booking_draft_provider.dart';
+import 'package:appoint/providers/booking_draft_provider.dart';
 
 /// A chat-driven booking flow widget.
 class ChatFlowWidget extends ConsumerStatefulWidget {
-  const ChatFlowWidget({Key? key}) : super(key: key);
+  const ChatFlowWidget({final Key? key}) : super(key: key);
 
   @override
   ChatFlowWidgetState createState() => ChatFlowWidgetState();
@@ -15,7 +15,7 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
   final ScrollController _scrollController = ScrollController();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final messages = ref.watch(bookingDraftProvider).chatMessages;
     return Scaffold(
       appBar: AppBar(title: const Text('Chat Booking')),
@@ -25,7 +25,7 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
             child: ListView.builder(
               controller: _scrollController,
               itemCount: messages.length,
-              itemBuilder: (context, index) {
+              itemBuilder: (final context, final index) {
                 final msg = messages[index];
                 return Align(
                   alignment:
@@ -62,7 +62,7 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
                       hintText: 'Type your message...',
                       border: OutlineInputBorder(),
                     ),
-                    onSubmitted: (_) => _sendMessage(),
+                    onSubmitted: (final _) => _sendMessage(),
                   ),
                 ),
                 const SizedBox(width: 8),
@@ -84,7 +84,7 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
     ref.read(bookingDraftProvider.notifier).addUserMessage(input);
     _controller.clear();
     // Scroll to bottom after frame
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((final _) {
       if (_scrollController.hasClients) {
         _scrollController.animateTo(
           _scrollController.position.maxScrollExtent,
