@@ -107,9 +107,9 @@ format_commits() {
         echo "### $category"
         echo ""
         while IFS='|' read -r hash subject; do
-            # Extract scope if present
-            if [[ "$subject" =~ ^[a-z]+\(([^)]+)\): ]]; then
-                scope="${BASH_REMATCH[1]}"
+            # Extract scope if present using sed
+            if echo "$subject" | grep -q "^[a-z]*(.*):"; then
+                scope=$(echo "$subject" | sed -n 's/^[a-z]*(\([^)]*\)):.*/\1/p')
                 clean_subject="${subject#*: }"
                 echo "- **$scope**: $clean_subject"
             else
@@ -173,17 +173,16 @@ done
 
 # If dry run, output to stdout and exit
 if $DRY_RUN; then
-  cat <<EOF
-# Release Notes - $VERSION
-
-**Release Date:** $(get_release_date)  
-**Previous Version:** ${PREVIOUS_VERSION:-"Initial Release"}  
-**Commits:** $(get_commit_count)  
-**Files Changed:** $(get_files_changed)  
-**Lines Changed:** $(get_lines_changed)
-
-## 🎉 What's New
-EOF
+  echo "# Release Notes - $VERSION"
+  echo ""
+  echo "**Release Date:** $(get_release_date)"
+  echo "**Previous Version:** ${PREVIOUS_VERSION:-"Initial Release"}"
+  echo "**Commits:** $(get_commit_count)"
+  echo "**Files Changed:** $(get_files_changed)"
+  echo "**Lines Changed:** $(get_lines_changed)"
+  echo ""
+  echo "## 🎉 What's New"
+  echo ""
   format_commits "$FEATURES_FILE" "✨ Features"
   format_commits "$PERF_FILE" "⚡ Performance"
   format_commits "$FIXES_FILE" "🐛 Bug Fixes"
@@ -194,6 +193,7 @@ EOF
   format_commits "$CI_FILE" "🔧 CI/CD"
   format_commits "$CHORES_FILE" "🔨 Chores"
   echo "## 👥 Contributors"
+  echo ""
   get_contributors | while read -r count author; do
     echo "- $author ($count commits)"
   done
