@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/providers/studio_business_providers.dart';
-import 'package:appoint/models/contact.dart';
 
 class AppointmentsScreen extends ConsumerWidget {
   const AppointmentsScreen({super.key});
@@ -45,7 +44,8 @@ class AppointmentsScreen extends ConsumerWidget {
                       Text('Date: ${appointment.scheduledAt.toString()}'),
                       Text('Status: ${appointment.status.name}'),
                       if (appointment.inviteeContact != null)
-                        Text('Client: ${appointment.inviteeContact!.name}'),
+                        Text(
+                            'Client: ${appointment.inviteeContact!.displayName}'),
                     ],
                   ),
                   leading: CircleAvatar(
@@ -80,7 +80,8 @@ class AppointmentsScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final error, final stack) => Center(child: Text('Error: $error')),
+        error: (final error, final stack) =>
+            Center(child: Text('Error: $error')),
       ),
     );
   }
@@ -98,8 +99,8 @@ class AppointmentsScreen extends ConsumerWidget {
     }
   }
 
-  void _handleAppointmentAction(
-      final BuildContext context, final String appointmentId, final String action) {
+  void _handleAppointmentAction(final BuildContext context,
+      final String appointmentId, final String action) {
     switch (action) {
       case 'edit':
         // TODO: Implement this featurentment screen
@@ -113,7 +114,8 @@ class AppointmentsScreen extends ConsumerWidget {
     }
   }
 
-  void _showCancelConfirmation(final BuildContext context, final String appointmentId) {
+  void _showCancelConfirmation(
+      final BuildContext context, final String appointmentId) {
     showDialog(
       context: context,
       builder: (final context) => AlertDialog(
@@ -137,7 +139,8 @@ class AppointmentsScreen extends ConsumerWidget {
     );
   }
 
-  void _showDeleteConfirmation(final BuildContext context, final String appointmentId) {
+  void _showDeleteConfirmation(
+      final BuildContext context, final String appointmentId) {
     showDialog(
       context: context,
       builder: (final context) => AlertDialog(

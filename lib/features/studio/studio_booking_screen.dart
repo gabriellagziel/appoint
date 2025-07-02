@@ -18,7 +18,7 @@ class StudioBookingSelection {
 }
 
 class StudioBookingScreen extends ConsumerStatefulWidget {
-  const StudioBookingScreen({final Key? key}) : super(key: key);
+  const StudioBookingScreen({super.key});
 
   @override
   ConsumerState<StudioBookingScreen> createState() =>

@@ -6,9 +6,10 @@ import 'package:appoint/models/admin_user.dart';
 import 'package:appoint/providers/admin_provider.dart';
 
 class AdminUsersScreen extends ConsumerWidget {
-  const AdminUsersScreen({final Key? key}) : super(key: key);
+  const AdminUsersScreen({super.key});
 
-  Future<void> _changeRole(final BuildContext context, final WidgetRef ref, final AdminUser user) async {
+  Future<void> _changeRole(final BuildContext context, final WidgetRef ref,
+      final AdminUser user) async {
     final newRole = user.role == 'admin' ? 'manager' : 'admin';
     await FirebaseFirestore.instance
         .collection('users')
@@ -34,7 +35,8 @@ class AdminUsersScreen extends ConsumerWidget {
             itemBuilder: (final context, final index) {
               final user = users[index];
               return ListTile(
-                title: Text(user.displayName.isEmpty ? user.email : user.displayName),
+                title: Text(
+                    user.displayName.isEmpty ? user.email : user.displayName),
                 subtitle: Text(user.role),
                 trailing: ElevatedButton(
                   onPressed: () => _changeRole(context, ref, user),
@@ -45,7 +47,8 @@ class AdminUsersScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final _, final __) => const Center(child: Text('Error loading users')),
+        error: (final _, final __) =>
+            const Center(child: Text('Error loading users')),
       ),
     );
   }

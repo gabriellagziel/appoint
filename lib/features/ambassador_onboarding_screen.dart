@@ -5,7 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:share_plus/share_plus.dart';
 
 class AmbassadorOnboardingScreen extends ConsumerStatefulWidget {
-  const AmbassadorOnboardingScreen({final Key? key}) : super(key: key);
+  const AmbassadorOnboardingScreen({super.key});
 
   @override
   ConsumerState<AmbassadorOnboardingScreen> createState() =>
@@ -516,9 +516,11 @@ Ready to lead the revolution?""",
 
   void _shareLinkViaWhatsApp() {
     if (_shareLink != null) {
-      Share.share(
-        'Join me on Appoint! Use my ambassador link: $_shareLink',
-        subject: 'Join Appoint with my ambassador link',
+      SharePlus.instance.share(
+        ShareParams(
+          text: 'Join me on Appoint! Use my ambassador link: $_shareLink',
+          subject: 'Join Appoint with my ambassador link',
+        ),
       );
     }
   }

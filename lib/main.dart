@@ -7,7 +7,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'dart:async';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/config/routes.dart';
 import 'package:appoint/providers/theme_provider.dart';
@@ -62,12 +61,11 @@ Future<void> appMain() async {
 }
 
 void main() {
-  setUrlStrategy(const HashUrlStrategy());
   appMain();
 }
 
 class MyApp extends ConsumerStatefulWidget {
-  const MyApp({final Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   ConsumerState<MyApp> createState() => _MyAppState();

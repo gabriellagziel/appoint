@@ -6,9 +6,9 @@ class PrivacyRequestWidget extends ConsumerStatefulWidget {
   final String childId;
 
   const PrivacyRequestWidget({
-    final Key? key,
+    super.key,
     required this.childId,
-  }) : super(key: key);
+  });
 
   @override
   ConsumerState<PrivacyRequestWidget> createState() =>
@@ -31,7 +31,8 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
           .read(familyServiceProvider)
           .fetchPrivacyRequests(widget.childId);
       setState(() {
-        _hasActiveRequest = requests.any((final req) => req.status == 'pending');
+        _hasActiveRequest =
+            requests.any((final req) => req.status == 'pending');
       });
     } catch (e) {
       // Handle error silently for now

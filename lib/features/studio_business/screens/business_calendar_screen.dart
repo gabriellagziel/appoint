@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:appoint/features/studio_business/models/business_event.dart';
 
 class BusinessCalendarScreen extends StatefulWidget {
-  const BusinessCalendarScreen({final Key? key}) : super(key: key);
+  const BusinessCalendarScreen({super.key});
 
   @override
   State<BusinessCalendarScreen> createState() => _BusinessCalendarScreenState();

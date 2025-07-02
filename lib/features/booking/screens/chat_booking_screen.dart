@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/booking/widgets/chat_flow_widget.dart';
 
 class ChatBookingScreen extends ConsumerWidget {
-  const ChatBookingScreen({final Key? key}) : super(key: key);
+  const ChatBookingScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {

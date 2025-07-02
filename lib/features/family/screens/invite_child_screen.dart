@@ -6,7 +6,7 @@ import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/features/family/widgets/otp_entry_modal.dart';
 
 class InviteChildScreen extends ConsumerStatefulWidget {
-  const InviteChildScreen({final Key? key}) : super(key: key);
+  const InviteChildScreen({super.key});
 
   @override
   ConsumerState<InviteChildScreen> createState() => _InviteChildScreenState();
@@ -23,7 +23,7 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
 
   Future<void> _onSendInvite() async {
     final authState = ref.read(authStateProvider);
-    final user = await authState.maybeWhen(
+    final user = authState.maybeWhen(
       data: (final user) => user,
       orElse: () => null,
     );
@@ -40,10 +40,13 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
     // 2) send OTP
     await ref.read(otpProvider.notifier).sendOtp(contact, parentId);
     // 3) open the OTP modal
-    showDialog(
-      context: context,
-      builder: (final _) => OtpEntryModal(parentId: parentId, childContact: contact),
-    );
+    if (mounted) {
+      showDialog(
+        context: context,
+        builder: (final _) =>
+            OtpEntryModal(parentId: parentId, childContact: contact),
+      );
+    }
   }
 
   @override

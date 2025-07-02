@@ -10,7 +10,7 @@ import 'package:appoint/features/admin/admin_users_screen.dart';
 import 'package:appoint/features/admin/admin_orgs_screen.dart';
 
 class AdminDashboardScreen extends ConsumerStatefulWidget {
-  const AdminDashboardScreen({final Key? key}) : super(key: key);
+  const AdminDashboardScreen({super.key});
 
   @override
   ConsumerState<AdminDashboardScreen> createState() =>
@@ -185,7 +185,8 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  Widget _buildStatCard(final String title, final String value, final IconData icon, final Color color,
+  Widget _buildStatCard(final String title, final String value,
+      final IconData icon, final Color color,
       {final String? subtitle}) {
     return Card(
       elevation: 4,
@@ -396,8 +397,8 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  Widget _buildActionButton(
-      final String title, final IconData icon, final Color color, final VoidCallback onPressed) {
+  Widget _buildActionButton(final String title, final IconData icon,
+      final Color color, final VoidCallback onPressed) {
     return ElevatedButton.icon(
       onPressed: onPressed,
       icon: Icon(icon, color: Colors.white),
@@ -511,13 +512,15 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
           monetizationSettings.when(
             data: (final settings) => _buildMonetizationSettings(settings),
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (final error, final stack) => Center(child: Text('Error: $error')),
+            error: (final error, final stack) =>
+                Center(child: Text('Error: $error')),
           ),
           const SizedBox(height: 24),
           adRevenueStats.when(
             data: (final stats) => _buildAdRevenueStats(stats),
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (final error, final stack) => Center(child: Text('Error: $error')),
+            error: (final error, final stack) =>
+                Center(child: Text('Error: $error')),
           ),
         ],
       ),
@@ -543,7 +546,8 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
             _buildSettingSwitch(
               'Ads for Free Users',
               settings.adsEnabledForFreeUsers,
-              (final value) => _updateAdSetting('adsEnabledForFreeUsers', value),
+              (final value) =>
+                  _updateAdSetting('adsEnabledForFreeUsers', value),
             ),
             _buildSettingSwitch(
               'Ads for Children',
@@ -553,12 +557,14 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
             _buildSettingSwitch(
               'Ads for Studio Users',
               settings.adsEnabledForStudioUsers,
-              (final value) => _updateAdSetting('adsEnabledForStudioUsers', value),
+              (final value) =>
+                  _updateAdSetting('adsEnabledForStudioUsers', value),
             ),
             _buildSettingSwitch(
               'Ads for Premium Users',
               settings.adsEnabledForPremiumUsers,
-              (final value) => _updateAdSetting('adsEnabledForPremiumUsers', value),
+              (final value) =>
+                  _updateAdSetting('adsEnabledForPremiumUsers', value),
             ),
           ],
         ),
@@ -566,8 +572,8 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     );
   }
 
-  Widget _buildSettingSwitch(
-      final String title, final bool value, final ValueChanged<bool> onChanged) {
+  Widget _buildSettingSwitch(final String title, final bool value,
+      final ValueChanged<bool> onChanged) {
     return SwitchListTile(
       title: Text(title),
       value: value,

@@ -2,14 +2,13 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/services/whatsapp_share_service.dart';
 import 'package:appoint/models/smart_share_link.dart';
 import './fake_firebase_setup.dart';
-import 'package:mockito/mockito.dart';
+import 'package:mocktail/mocktail.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 
 class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
 class MockFirebaseAnalytics extends Mock implements FirebaseAnalytics {}
-
 
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -18,13 +17,10 @@ Future<void> main() async {
   group('WhatsApp Share Service Tests', () {
     late WhatsAppShareService service;
     late MockFirebaseFirestore mockFirestore;
-    late MockFirebaseAnalytics mockAnalytics;
 
     setUp(() {
       mockFirestore = MockFirebaseFirestore();
-      mockAnalytics = MockFirebaseAnalytics();
-      service = WhatsAppShareService(
-          firestore: mockFirestore, analytics: mockAnalytics);
+      service = WhatsAppShareService(firestore: mockFirestore);
     });
 
     test('should instantiate WhatsAppShareService', () {

@@ -1,3 +1,4 @@
+// ignore_for_file: use_of_void_result
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -83,10 +84,12 @@ class BookingHelper {
       );
 
       // Send notifications (fire and forget)
-      _sendBookingNotifications(createdBooking, appointment); // ignore: use_of_void_result
+      // ignore: unawaited_futures
+      Future(() => _sendBookingNotifications(createdBooking, appointment));
 
       // Track booking analytics (fire and forget)
-      _trackBookingAnalytics(createdBooking, studioId); // ignore: use_of_void_result
+      // ignore: unawaited_futures
+      Future(() => _trackBookingAnalytics(createdBooking, studioId));
 
       return BookingResult.success(createdBooking, appointment);
     } catch (e) {
@@ -174,7 +177,8 @@ class BookingHelper {
       await _cancelAppointment(bookingId);
 
       // Send cancellation notifications (fire and forget)
-      _sendCancellationNotifications(booking, reason); // ignore: use_of_void_result
+      // ignore: unawaited_futures
+      Future(() => _sendCancellationNotifications(booking, reason));
 
       return BookingResult.cancelled(booking);
     } catch (e) {
@@ -345,7 +349,7 @@ class BookingHelper {
     return doc.exists;
   }
 
-  /// Send booking notifications
+  /// Send notifications and track analytics (fire and forget)
   Future<void> _sendBookingNotifications(
       final Booking booking, final Appointment appointment) async {
     try {
@@ -363,7 +367,7 @@ class BookingHelper {
         'Your booking for ${booking.serviceName} has been confirmed',
       );
     } catch (e) {
-      // Removed debug print: print('Error sending booking notifications: $e');
+      // Removed debug print: print('Error sending notifications and tracking analytics: $e');
     }
   }
 

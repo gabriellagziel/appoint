@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/admin/survey/survey_provider.dart';
 
 class SurveyEntryScreen extends ConsumerWidget {
-  const SurveyEntryScreen({final Key? key}) : super(key: key);
+  const SurveyEntryScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {
@@ -142,7 +142,8 @@ class SurveyEntryScreen extends ConsumerWidget {
     );
   }
 
-  void _showCreateSurveyDialog(final BuildContext context, final WidgetRef ref) {
+  void _showCreateSurveyDialog(
+      final BuildContext context, final WidgetRef ref) {
     final titleController = TextEditingController();
     final descriptionController = TextEditingController();
     final rewardPointsController = TextEditingController(text: '10');
@@ -205,8 +206,8 @@ class SurveyEntryScreen extends ConsumerWidget {
     );
   }
 
-  void _handleSurveyAction(
-      final BuildContext context, final WidgetRef ref, final String surveyId, final String action) {
+  void _handleSurveyAction(final BuildContext context, final WidgetRef ref,
+      final String surveyId, final String action) {
     switch (action) {
       case 'edit':
         // TODO: Implement this featurent edit survey
@@ -252,7 +253,8 @@ class SurveyEntryScreen extends ConsumerWidget {
     );
   }
 
-  void _showSurveyDetails(final BuildContext context, final Map<String, dynamic> survey) {
+  void _showSurveyDetails(
+      final BuildContext context, final Map<String, dynamic> survey) {
     showDialog(
       context: context,
       builder: (final context) => AlertDialog(

@@ -3,13 +3,15 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:appoint/services/stripe_service.dart';
 
 class SubscriptionManagementScreen extends StatefulWidget {
-  const SubscriptionManagementScreen({final Key? key}) : super(key: key);
+  const SubscriptionManagementScreen({super.key});
 
   @override
-  State<SubscriptionManagementScreen> createState() => REDACTED_TOKEN();
+  State<SubscriptionManagementScreen> createState() =>
+      REDACTED_TOKEN();
 }
 
-class REDACTED_TOKEN extends State<SubscriptionManagementScreen> {
+class REDACTED_TOKEN
+    extends State<SubscriptionManagementScreen> {
   final StripeService _stripeService = StripeService();
   bool _isLoading = true;
   Map<String, dynamic>? _subscriptionDetails;
@@ -74,33 +76,39 @@ class REDACTED_TOKEN extends State<SubscriptionManagementScreen> {
 
       if (confirmed == true) {
         setState(() => _isLoading = true);
-        
+
         final success = await _stripeService.cancelSubscription(user.uid);
-        
+
         if (success) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Subscription cancelled successfully'),
-              backgroundColor: Colors.green,
-            ),
-          );
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Subscription cancelled successfully'),
+                backgroundColor: Colors.green,
+              ),
+            );
+          }
           await _loadSubscriptionDetails();
         } else {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Failed to cancel subscription'),
-              backgroundColor: Colors.red,
-            ),
-          );
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Failed to cancel subscription'),
+                backgroundColor: Colors.red,
+              ),
+            );
+          }
         }
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Error: $e'),
-          backgroundColor: Colors.red,
-        ),
-      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Error: $e'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
     } finally {
       setState(() => _isLoading = false);
     }
@@ -186,9 +194,9 @@ class REDACTED_TOKEN extends State<SubscriptionManagementScreen> {
                   Text(
                     status.toUpperCase(),
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      color: status == 'active' ? Colors.green : Colors.red,
-                      fontWeight: FontWeight.bold,
-                    ),
+                          color: status == 'active' ? Colors.green : Colors.red,
+                          fontWeight: FontWeight.bold,
+                        ),
                   ),
                 ],
               ),
@@ -210,8 +218,8 @@ class REDACTED_TOKEN extends State<SubscriptionManagementScreen> {
                     Text(
                       subscriptionId,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        fontFamily: 'monospace',
-                      ),
+                            fontFamily: 'monospace',
+                          ),
                     ),
                   ],
                 ),
@@ -269,4 +277,4 @@ class REDACTED_TOKEN extends State<SubscriptionManagementScreen> {
       ),
     );
   }
-} 
+}

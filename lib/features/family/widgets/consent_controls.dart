@@ -8,10 +8,10 @@ class ConsentControls extends ConsumerStatefulWidget {
   final VoidCallback? onConsentChanged;
 
   const ConsentControls({
-    final Key? key,
+    super.key,
     required this.familyLink,
     this.onConsentChanged,
-  }) : super(key: key);
+  });
 
   @override
   ConsumerState<ConsentControls> createState() => _ConsentControlsState();

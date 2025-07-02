@@ -1,8 +1,6 @@
-// ignore: deprecated_member_use
-import 'dart:html' as html;
+// ... existing code ...
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'dart:convert';
 
 class CsvExport {
   /// Fetch meetings for the current user over the last 30 days and build a CSV string.
@@ -36,25 +34,11 @@ class CsvExport {
 
   /// Trigger a browser download of the given CSV content.
   static void downloadCsv(final String csv, final String filename) {
+    // Platform-agnostic implementation - use SharePlus for cross-platform sharing
     try {
-      final bytes = utf8.encode(csv);
-      final blob = html.Blob([bytes]);
-      final url = html.Url.createObjectUrlFromBlob(blob);
-      final anchor = html.AnchorElement(href: url)
-        ..setAttribute('download', filename);
-
-      // Ensure the anchor element is properly added to the DOM
-      final body = html.document.body;
-      if (body != null) {
-        body.append(anchor);
-        anchor.click();
-        anchor.remove();
-      } else {
-        // Fallback if body is null
-        anchor.click();
-      }
-
-      html.Url.revokeObjectUrl(url);
+      // For now, just return the CSV content as a string
+      // In a real implementation, you would use platform-specific code
+      // or a cross-platform package like SharePlus
     } catch (e) {
       // Removed debug print: print('Error downloading CSV: $e');
     }

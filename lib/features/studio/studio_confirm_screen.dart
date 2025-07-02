@@ -9,7 +9,7 @@ import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/features/studio/studio_booking_screen.dart';
 
 class StudioConfirmScreen extends ConsumerWidget {
-  const StudioConfirmScreen({final Key? key}) : super(key: key);
+  const StudioConfirmScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {
@@ -36,9 +36,7 @@ class StudioConfirmScreen extends ConsumerWidget {
     }
 
     void showConfirmationSheet() {
-      final summary =
-          'You are about to book with ${selection.staff.displayName} on ' +
-              DateFormat.yMMMEd().add_jm().format(scheduledAt) + '.';
+      final summary = 'You are about to book with ${selection.staff.displayName} on ${DateFormat.yMMMEd().add_jm().format(scheduledAt)}.';
       BottomSheetManager.show(
         context: context,
         child: BookingConfirmationSheet(

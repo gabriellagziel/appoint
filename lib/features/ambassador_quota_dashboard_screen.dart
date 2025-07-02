@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/providers/ambassador_quota_provider.dart';
 
 class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
-  const AmbassadorQuotaDashboardScreen({final Key? key}) : super(key: key);
+  const AmbassadorQuotaDashboardScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {
@@ -24,7 +24,8 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildDashboard(final BuildContext context, final Map<String, dynamic> globalStats) {
+  Widget _buildDashboard(
+      final BuildContext context, final Map<String, dynamic> globalStats) {
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16.0),
       child: Column(
@@ -78,8 +79,8 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildStatCard(
-      final String title, final String value, final IconData icon, final Color color) {
+  Widget _buildStatCard(final String title, final String value,
+      final IconData icon, final Color color) {
     return Card(
       elevation: 4,
       child: Padding(

@@ -24,22 +24,18 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
   Future<void> _submitBooking() async {
     setState(() => _isSubmitting = true);
 
-    BookingHelper(ref)
-        .submitBooking()
-        .then((final _) {
-          if (!mounted) return;
-          context.showSnackBar('Booking confirmed');
-          Navigator.pop(context);
-        })
-        .catchError((final e, final st) {
-          // Removed debug print: debugPrint('Error during booking: $e\n$st');
-          if (!mounted) return;
-          context.showSnackBar('Failed to confirm booking',
-              backgroundColor: Colors.red);
-        })
-        .whenComplete(() {
-          if (mounted) setState(() => _isSubmitting = false);
-        });
+    BookingHelper(ref).submitBooking().then((final _) {
+      if (!mounted) return;
+      context.showSnackBar('Booking confirmed');
+      Navigator.pop(context);
+    }).catchError((final e, final st) {
+      // Removed debug print: debugPrint('Error during booking: $e\n$st');
+      if (!mounted) return;
+      context.showSnackBar('Failed to confirm booking',
+          backgroundColor: Colors.red);
+    }).whenComplete(() {
+      if (mounted) setState(() => _isSubmitting = false);
+    });
   }
 
   void _showConfirmationSheet() {
@@ -49,9 +45,8 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
     final duration = ref.read(serviceDurationProvider);
     if (staffId == null || dateTime == null || duration == null) return;
 
-    final summary = 'You are about to book $serviceName with $staffId on ' +
-        DateFormat.yMMMEd().add_jm().format(dateTime) +
-        ' for ${duration.inMinutes} minutes.';
+    final summary =
+        'You are about to book $serviceName with $staffId on ${DateFormat.yMMMEd().add_jm().format(dateTime)} for ${duration.inMinutes} minutes.';
 
     BottomSheetManager.show(
       context: context,

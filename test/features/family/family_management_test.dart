@@ -1,7 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-
-// ignore_for_file: unused_local_variable, undefined_identifier
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:mocktail/mocktail.dart';
 import 'package:appoint/models/family_link.dart';
 import 'package:appoint/models/permission.dart';
 import 'package:appoint/models/privacy_request.dart';
@@ -9,8 +8,8 @@ import 'package:appoint/services/family_service.dart';
 import 'package:appoint/providers/family_provider.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:appoint/models/app_user.dart';
 import '../../fake_firebase_setup.dart';
-import 'package:mockito/mockito.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class FakeUser implements User {
@@ -18,7 +17,9 @@ class FakeUser implements User {
   final String uid;
   FakeUser(this.uid);
   // Implement only the members used by the code, throw UnimplementedError for others
-  noSuchMethod(final Invocation invocation) => super.noSuchMethod(invocation);
+  @override
+  dynamic noSuchMethod(final Invocation invocation) =>
+      super.noSuchMethod(invocation);
 }
 
 final fakeAuthUser = FakeUser('test-parent-id');
@@ -150,7 +151,6 @@ Future<void> main() async {
   group('Family Management System Tests', () {
     late ProviderContainer container;
     late MockFamilyService mockFamilyService;
-    late FamilyService familyService;
     late MockFirebaseFirestore mockFirestore;
 
     setUp(() {
@@ -159,7 +159,13 @@ Future<void> main() async {
       container = ProviderContainer(
         overrides: [
           familyServiceProvider.overrideWithValue(mockFamilyService),
-          authStateProvider.overrideWith((final ref) => Stream.value(null)),
+          authStateProvider.overrideWith((final ref) => Stream.value(
+                const AppUser(
+                  uid: 'test-user-id',
+                  email: 'test@example.com',
+                  role: 'user',
+                ),
+              )),
         ],
       );
     });

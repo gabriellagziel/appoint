@@ -5,10 +5,11 @@ import 'package:appoint/services/studio_profile_service.dart';
 
 class StudioProfileScreen extends ConsumerStatefulWidget {
   final String studioId;
-  const StudioProfileScreen({final Key? key, required this.studioId}) : super(key: key);
+  const StudioProfileScreen({super.key, required this.studioId});
 
   @override
-  ConsumerState<StudioProfileScreen> createState() => _StudioProfileScreenState();
+  ConsumerState<StudioProfileScreen> createState() =>
+      _StudioProfileScreenState();
 }
 
 class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
@@ -38,9 +39,11 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
       _formKey.currentState?.save();
       if (_profile != null) {
         await _service.saveProfile(_profile!);
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Profile saved!')),
-        );
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Profile saved!')),
+          );
+        }
       }
     }
   }
@@ -69,14 +72,17 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
               TextFormField(
                 initialValue: _profile!.name,
                 decoration: const InputDecoration(labelText: 'Studio Name'),
-                onSaved: (final v) => _profile = _profile!.copyWith(name: v ?? ''),
-                validator: (final v) => v == null || v.isEmpty ? 'Required' : null,
+                onSaved: (final v) =>
+                    _profile = _profile!.copyWith(name: v ?? ''),
+                validator: (final v) =>
+                    v == null || v.isEmpty ? 'Required' : null,
               ),
               const SizedBox(height: 16),
               TextFormField(
                 initialValue: _profile!.description,
                 decoration: const InputDecoration(labelText: 'Description'),
-                onSaved: (final v) => _profile = _profile!.copyWith(description: v),
+                onSaved: (final v) =>
+                    _profile = _profile!.copyWith(description: v),
               ),
               const SizedBox(height: 16),
               TextFormField(
@@ -100,7 +106,8 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
               SwitchListTile(
                 title: const Text('Admin Free Access'),
                 value: _profile!.isAdminFreeAccess ?? false,
-                onChanged: (final v) => setState(() => _profile = _profile!.copyWith(isAdminFreeAccess: v)),
+                onChanged: (final v) => setState(
+                    () => _profile = _profile!.copyWith(isAdminFreeAccess: v)),
               ),
               const SizedBox(height: 24),
               ElevatedButton(
@@ -113,4 +120,4 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
       ),
     );
   }
-} 
+}

@@ -15,9 +15,3 @@ class Contact with _$Contact {
   factory Contact.fromJson(final Map<String, dynamic> json) =>
       _$ContactFromJson(json);
 }
-
-extension ContactComputed on Contact {
-  String get displayName => displayName;
-  String? get phoneNumber => phoneNumber;
-  String get name => displayName;
-}

@@ -1,4 +1,3 @@
-/// Routing configuration. Verified conflict-free.
 import 'package:flutter/material.dart';
 
 import 'package:appoint/features/auth/home_screen.dart';
@@ -15,7 +14,8 @@ import 'package:appoint/widgets/animations/fade_slide_page_route.dart';
 import 'package:appoint/features/dashboard/dashboard_screen.dart';
 import 'package:appoint/features/personal_app/ui/profile_screen.dart';
 import 'package:appoint/features/personal_app/ui/edit_profile_screen.dart';
-import 'package:appoint/features/profile/ui/edit_profile_screen.dart' as profile_edit;
+import 'package:appoint/features/profile/ui/edit_profile_screen.dart'
+    as profile_edit;
 import 'package:appoint/features/personal_app/ui/settings_screen.dart';
 import 'package:appoint/features/admin/ui/admin_dashboard_screen.dart';
 import 'package:appoint/features/family/widgets/invitation_modal.dart';
@@ -315,12 +315,12 @@ class MeetingDetailsScreen extends StatelessWidget {
   final String? groupId;
 
   const MeetingDetailsScreen({
-    final Key? key,
+    super.key,
     required this.meetingId,
     this.creatorId,
     this.contextId,
     this.groupId,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(final BuildContext context) {

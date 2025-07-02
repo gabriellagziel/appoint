@@ -6,6 +6,8 @@ import 'package:appoint/providers/studio_business_providers.dart';
 class StaffAvailabilityScreen extends ConsumerWidget {
   static const routeName = '/studio/staff-availability';
 
+  const StaffAvailabilityScreen({super.key});
+
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {
     final avail = ref.watch(staffAvailabilityProvider);
