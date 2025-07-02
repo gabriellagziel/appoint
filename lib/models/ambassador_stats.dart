@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'ambassador_stats.freezed.dart';
-part 'ambassador_stats.g.dart';
+part '../generated/models/ambassador_stats.freezed.dart';
+part '../generated/models/ambassador_stats.g.dart';
 
 @freezed
 class AmbassadorStats with _$AmbassadorStats {

@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'staff_profile.g.dart';
+part '../../../generated/features/studio_business/models/staff_profile.g.dart';
 
 @JsonSerializable()
 class StaffProfile {

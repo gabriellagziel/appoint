@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'studio_profile.freezed.dart';
-part 'studio_profile.g.dart';
+part '../generated/models/studio_profile.freezed.dart';
+part '../generated/models/studio_profile.g.dart';
 
 @freezed
 class StudioProfile with _$StudioProfile {

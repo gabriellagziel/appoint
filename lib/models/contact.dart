@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'contact.freezed.dart';
-part 'contact.g.dart';
+part '../generated/models/contact.freezed.dart';
+part '../generated/models/contact.g.dart';
 
 @freezed
 class Contact with _$Contact {

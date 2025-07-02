@@ -1,11 +1,6 @@
 {
-  "recommendations": [
-    "dart-code.dart-code",
-    "dart-code.flutter",
-    "ms-vscode.vscode-json"
-  ],
+  "recommendations": [],
   "unwantedRecommendations": [
-    "ms-azuretools.vscode-docker",
-    "ms-vscode.vscode-yaml"
+    "github.vscode-github-actions"
   ]
 } 

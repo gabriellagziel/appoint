@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'organization.g.dart';
+part '../generated/models/organization.g.dart';
 
 @JsonSerializable()
 class Organization {

@@ -44,9 +44,10 @@ class BookingService {
     }
   }
 
-  /// Gets all bookings for a specific user
+  /// Gets all bookings for a specific user with batched queries
   Future<List<Booking>> getBookingsForUser(final String userId) async {
     try {
+      // Use batched query to get all user bookings in one call
       final snapshot = await _firestore
           .collection('appointments')
           .where('userId', isEqualTo: userId)
@@ -54,11 +55,43 @@ class BookingService {
           .get();
 
       return snapshot.docs
-          .map((final doc) => Booking.fromJson(doc.data()))
+          .map((final doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
           .toList();
     } catch (e) {
-      // Removed debug print: print('❌ Error getting user bookings: $e');
-      // Removed debug print: print(st);
+      return [];
+    }
+  }
+
+  /// Gets multiple bookings by IDs using batched queries
+  Future<List<Booking>> getBookingsByIds(final List<String> bookingIds) async {
+    try {
+      if (bookingIds.isEmpty) return [];
+
+      // Split into batches of 10 (Firestore limit for 'in' queries)
+      final batches = <List<String>>[];
+      for (int i = 0; i < bookingIds.length; i += 10) {
+        batches.add(bookingIds.sublist(
+            i, i + 10 > bookingIds.length ? bookingIds.length : i + 10));
+      }
+
+      final allBookings = <Booking>[];
+
+      // Execute batched queries
+      for (final batch in batches) {
+        final snapshot = await _firestore
+            .collection(_bookingsCollection)
+            .where(FieldPath.documentId, whereIn: batch)
+            .get();
+
+        final bookings = snapshot.docs
+            .map((final doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
+            .toList();
+
+        allBookings.addAll(bookings);
+      }
+
+      return allBookings;
+    } catch (e) {
       return [];
     }
   }

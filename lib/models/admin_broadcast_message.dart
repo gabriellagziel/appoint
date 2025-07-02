@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'admin_broadcast_message.freezed.dart';
-part 'admin_broadcast_message.g.dart';
+part '../generated/models/admin_broadcast_message.freezed.dart';
+part '../generated/models/admin_broadcast_message.g.dart';
 
 enum BroadcastMessageType {
   text,

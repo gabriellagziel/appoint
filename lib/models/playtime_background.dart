@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'playtime_background.freezed.dart';
-part 'playtime_background.g.dart';
+part '../generated/models/playtime_background.freezed.dart';
+part '../generated/models/playtime_background.g.dart';
 
 @freezed
 class PlaytimeBackground with _$PlaytimeBackground {

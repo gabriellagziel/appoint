@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'business_profile.freezed.dart';
-part 'business_profile.g.dart';
+part '../generated/models/business_profile.freezed.dart';
+part '../generated/models/business_profile.g.dart';
 
 @freezed
 class BusinessProfile with _$BusinessProfile {

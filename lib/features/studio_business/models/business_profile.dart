@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'business_profile.g.dart';
+part '../../../generated/features/studio_business/models/business_profile.g.dart';
 
 @JsonSerializable()
 class BusinessProfile {

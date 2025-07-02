@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'playtime_game.freezed.dart';
-part 'playtime_game.g.dart';
+part '../generated/models/playtime_game.freezed.dart';
+part '../generated/models/playtime_game.g.dart';
 
 @freezed
 class PlaytimeGame with _$PlaytimeGame {
