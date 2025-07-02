@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'parent_free_access.freezed.dart';
-part 'parent_free_access.g.dart';
+part '../generated/models/parent_free_access.freezed.dart';
+part '../generated/models/parent_free_access.g.dart';
 
 enum FreeAccessStatus {
   active,

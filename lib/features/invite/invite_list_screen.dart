@@ -23,7 +23,7 @@ class InviteListScreen extends ConsumerWidget {
             itemBuilder: (final context, final index) {
               final invite = invites[index];
               return ListTile(
-                title: Text(invite.inviteeContact.displayName),
+                title: Text(invite.inviteeContact?.displayName ?? 'Unknown'),
                 subtitle: Text(invite.status.name),
                 onTap: () {
                   Navigator.pushNamed(
@@ -37,7 +37,8 @@ class InviteListScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final _, final __) => Center(child: Text(l10n.errorLoadingInvites)),
+        error: (final _, final __) =>
+            Center(child: Text(l10n.errorLoadingInvites)),
       ),
     );
   }

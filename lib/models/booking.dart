@@ -2,8 +2,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:appoint/utils/datetime_converter.dart';
 
-part 'booking.freezed.dart';
-part 'booking.g.dart';
+part '../generated/models/booking.freezed.dart';
+part '../generated/models/booking.g.dart';
 
 @freezed
 class Booking with _$Booking {

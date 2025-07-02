@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:flutter/material.dart';
 
-part 'staff_availability.g.dart';
+part '../../../generated/features/studio_business/models/staff_availability.g.dart';
 
 class TimeOfDayConverter implements JsonConverter<TimeOfDay, String> {
   const TimeOfDayConverter();

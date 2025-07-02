@@ -1,8 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:appoint/utils/datetime_converter.dart';
 
-part 'business_event.freezed.dart';
-part 'business_event.g.dart';
+part '../../../generated/features/studio_business/models/business_event.freezed.dart';
+part '../../../generated/features/studio_business/models/business_event.g.dart';
 
 @freezed
 class BusinessEvent with _$BusinessEvent {

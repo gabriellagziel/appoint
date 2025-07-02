@@ -52,9 +52,9 @@ dependencies:
   syncfusion_flutter_charts: ^30.1.37
   shared_preferences: ^2.2.2
 
-  webview_flutter: any
-  uuid: any
-  async: any
+  webview_flutter: ^4.13.0
+  uuid: ^4.1.0
+  async: ^2.10.0
 dev_dependencies:
   integration_test:
     sdk: flutter
@@ -67,13 +67,13 @@ dev_dependencies:
 
   flutter_test:
     sdk: flutter
-  vm_service: any
-  firebase_auth_mocks: any
-  REDACTED_TOKEN: any
-  REDACTED_TOKEN: any
-  REDACTED_TOKEN: any
-  REDACTED_TOKEN: any
-  plugin_platform_interface: any
+  vm_service: ^15.0.0
+  firebase_auth_mocks: ^0.14.1
+  REDACTED_TOKEN: ^7.0.0
+  REDACTED_TOKEN: ^6.6.10
+  REDACTED_TOKEN: ^3.8.8
+  REDACTED_TOKEN: ^5.0.0
+  plugin_platform_interface: ^2.1.8
 flutter:
   uses-material-design: true
   generate: true

@@ -5,7 +5,7 @@ import 'package:appoint/utils/datetime_converter.dart';
 import 'package:appoint/models/contact.dart';
 import 'package:appoint/models/invite.dart';
 
-part 'appointment.g.dart';
+part '../generated/models/appointment.g.dart';
 
 enum AppointmentType { scheduled, openCall }
 
@@ -18,6 +18,7 @@ class Appointment {
   final DateTime scheduledAt;
   final AppointmentType type;
   final String? callRequestId;
+  @JsonKey(includeFromJson: false, includeToJson: false)
   final Contact? inviteeContact;
   final InviteStatus status;
 

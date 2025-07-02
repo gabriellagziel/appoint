@@ -1,21 +1,22 @@
 {
+  // Disable all YAML schema and validation
+  "yaml.schemas": [],
   "yaml.validate": false,
-  "yaml.schemas": {},
-  "yaml.customTags": [],
-  "yaml.format.enable": false,
-  "yaml.hover": false,
-  "yaml.completion": false,
-  "yaml.validate.enable": false,
-  "markdownlint.config": {
-    "MD009": false,
-    "MD047": false
+
+  // Treat GitHub Actions workflows as plain text
+  "files.associations": {
+    "**/.github/workflows/*.yml": "plaintext"
   },
+
+  // Disable markdown linting and hide Markdown files
+  "markdownlint.enable": false,
   "files.exclude": {
-    "**/.github/workflows/.github-actions-lint-ignore": true,
-    "**/.github/workflows/.yamllint": true
+    "**/*.md": true
   },
-  "github-actions.workflowValidation": "off",
-  "github-actions.enableWorkflowValidation": false,
-  "github-actions.workflowValidationLevel": "off",
-  "github-actions.workflowValidationMode": "off"
+  "search.exclude": {
+    "**/*.md": true
+  },
+
+  // Disable spell checking
+  "cSpell.enabled": false
 } 

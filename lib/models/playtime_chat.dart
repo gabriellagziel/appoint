@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'playtime_chat.freezed.dart';
-part 'playtime_chat.g.dart';
+part '../generated/models/playtime_chat.freezed.dart';
+part '../generated/models/playtime_chat.g.dart';
 
 @freezed
 class PlaytimeChat with _$PlaytimeChat {

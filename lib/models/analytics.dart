@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'analytics.g.dart';
+part '../generated/models/analytics.g.dart';
 
 @JsonSerializable()
 class Analytics {

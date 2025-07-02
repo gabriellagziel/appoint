@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'admin_user.g.dart';
+part '../generated/models/admin_user.g.dart';
 
 @JsonSerializable()
 class AdminUser {

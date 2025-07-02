@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'admin_dashboard_stats.freezed.dart';
-part 'admin_dashboard_stats.g.dart';
+part '../generated/models/admin_dashboard_stats.freezed.dart';
+part '../generated/models/admin_dashboard_stats.g.dart';
 
 @freezed
 class AdminDashboardStats with _$AdminDashboardStats {

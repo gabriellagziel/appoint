@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'booking_model.freezed.dart';
-part 'booking_model.g.dart';
+part '../generated/models/booking_model.freezed.dart';
+part '../generated/models/booking_model.g.dart';
 
 @freezed
 class BookingModel with _$BookingModel {
