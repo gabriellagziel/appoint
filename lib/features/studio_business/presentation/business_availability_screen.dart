@@ -7,7 +7,7 @@ import 'package:appoint/shared/widgets/responsive_scaffold.dart';
 import 'package:appoint/utils/business_helpers.dart';
 
 class BusinessAvailabilityScreen extends ConsumerStatefulWidget {
-  const BusinessAvailabilityScreen({final Key? key}) : super(key: key);
+  const BusinessAvailabilityScreen({super.key});
 
   @override
   ConsumerState<BusinessAvailabilityScreen> createState() =>
@@ -32,9 +32,11 @@ class _BusinessAvailabilityScreenState
       await service.loadConfiguration();
       ref.read(businessAvailabilityProvider.notifier).loadConfiguration();
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error loading configuration: $e')),
-      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error loading configuration: $e')),
+        );
+      }
     } finally {
       setState(() => _isLoading = false);
     }

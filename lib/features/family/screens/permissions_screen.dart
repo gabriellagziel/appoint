@@ -8,9 +8,9 @@ class PermissionsScreen extends ConsumerWidget {
   final FamilyLink familyLink;
 
   const PermissionsScreen({
-    final Key? key,
+    super.key,
     required this.familyLink,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {
@@ -21,7 +21,8 @@ class PermissionsScreen extends ConsumerWidget {
         title: Text('Permissions - ${familyLink.childId}'),
       ),
       body: permissionsAsync.when(
-        data: (final permissions) => _buildPermissionsList(context, ref, permissions),
+        data: (final permissions) =>
+            _buildPermissionsList(context, ref, permissions),
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (final error, final stack) => Center(
           child: Text('Error loading permissions: $error'),

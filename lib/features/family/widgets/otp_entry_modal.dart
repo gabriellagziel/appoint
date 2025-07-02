@@ -6,8 +6,7 @@ class OtpEntryModal extends ConsumerStatefulWidget {
   final String parentId;
   final String childContact;
   const OtpEntryModal(
-      {final Key? key, required this.parentId, required this.childContact})
-      : super(key: key);
+      {super.key, required this.parentId, required this.childContact});
 
   @override
   ConsumerState<OtpEntryModal> createState() => _OtpEntryModalState();
@@ -26,7 +25,7 @@ class _OtpEntryModalState extends ConsumerState<OtpEntryModal> {
     await ref
         .read(otpProvider.notifier)
         .verifyOtp(widget.childContact, _codeController.text.trim());
-    if (ref.read(otpProvider) == OtpState.success) {
+    if (mounted && ref.read(otpProvider) == OtpState.success) {
       Navigator.of(context).pop();
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Child linked successfully!')),

@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import '../../../lib/models/ambassador_stats.dart';
+import 'package:appoint/models/ambassador_stats.dart';
 import '../../fake_firebase_setup.dart';
 
 Future<void> main() async {
@@ -158,9 +158,9 @@ Future<void> main() async {
         ),
       ];
 
-      final averageScore =
-          stats.fold<double>(0, (final sum, final stat) => sum + stat.surveyScore) /
-              stats.length;
+      final averageScore = stats.fold<double>(
+              0, (final sum, final stat) => sum + stat.surveyScore) /
+          stats.length;
       expect(averageScore, equals(4.35));
     });
 
@@ -183,8 +183,9 @@ Future<void> main() async {
         ),
       ];
 
-      final maxValue =
-          chartData.map((final e) => e.value).reduce((final a, final b) => a > b ? a : b);
+      final maxValue = chartData
+          .map((final e) => e.value)
+          .reduce((final a, final b) => a > b ? a : b);
       expect(maxValue, equals(30.0));
     });
   });

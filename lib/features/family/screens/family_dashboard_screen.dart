@@ -8,7 +8,7 @@ import 'package:appoint/models/privacy_request.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 
 class FamilyDashboardScreen extends ConsumerWidget {
-  const FamilyDashboardScreen({final Key? key}) : super(key: key);
+  const FamilyDashboardScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {
@@ -111,16 +111,16 @@ class FamilyDashboardScreen extends ConsumerWidget {
                 // ignore: argument_type_not_assignable
                 _buildSectionHeader(l10n.pendingInvites),
                 const SizedBox(height: 8),
-                ...familyLinksState.pendingInvites
-                    .map((final link) => _buildPendingInviteCard(context, ref, link)),
+                ...familyLinksState.pendingInvites.map((final link) =>
+                    _buildPendingInviteCard(context, ref, link)),
                 const SizedBox(height: 16),
               ],
               if (familyLinksState.connectedChildren.isNotEmpty) ...[
                 // ignore: argument_type_not_assignable
                 _buildSectionHeader(l10n.connectedChildren),
                 const SizedBox(height: 8),
-                ...familyLinksState.connectedChildren.map(
-                    (final link) => _buildConnectedChildCard(context, ref, link)),
+                ...familyLinksState.connectedChildren.map((final link) =>
+                    _buildConnectedChildCard(context, ref, link)),
               ],
               if (familyLinksState.pendingInvites.isEmpty &&
                   familyLinksState.connectedChildren.isEmpty)
@@ -399,8 +399,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildPrivacyRequestCard(
-      final BuildContext context, final WidgetRef ref, final PrivacyRequest request) {
+  Widget _buildPrivacyRequestCard(final BuildContext context,
+      final WidgetRef ref, final PrivacyRequest request) {
     final l10n = AppLocalizations.of(context)!;
 
     return Card(
@@ -430,8 +430,11 @@ class FamilyDashboardScreen extends ConsumerWidget {
     );
   }
 
-  void _handlePrivacyRequestAction(final BuildContext context, final WidgetRef ref,
-      final PrivacyRequest request, final String action) async {
+  void _handlePrivacyRequestAction(
+      final BuildContext context,
+      final WidgetRef ref,
+      final PrivacyRequest request,
+      final String action) async {
     final l10n = AppLocalizations.of(context)!;
 
     try {

@@ -7,11 +7,11 @@ class EmptyState extends StatelessWidget {
   final String? description;
 
   const EmptyState({
-    final Key? key,
+    super.key,
     required this.title,
     this.icon = Icons.inbox,
     this.description,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(final BuildContext context) {

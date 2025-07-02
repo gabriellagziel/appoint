@@ -5,7 +5,7 @@ import 'package:appoint/features/studio/providers/staff_availability_provider.da
 
 class StudioBookingScreen extends ConsumerWidget {
   static const routeName = '/studio/booking';
-  const StudioBookingScreen({final Key? key}) : super(key: key);
+  const StudioBookingScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {

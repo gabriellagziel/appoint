@@ -6,7 +6,7 @@ import 'package:appoint/models/contact.dart';
 import 'package:appoint/providers/invite_provider.dart';
 
 class InviteRequestScreen extends ConsumerStatefulWidget {
-  const InviteRequestScreen({final Key? key}) : super(key: key);
+  const InviteRequestScreen({super.key});
 
   @override
   ConsumerState<InviteRequestScreen> createState() =>
@@ -68,7 +68,8 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
               SwitchListTile(
                 title: const Text('Requires Install Fallback'),
                 value: _requiresInstallFallback,
-                onChanged: (final v) => setState(() => _requiresInstallFallback = v),
+                onChanged: (final v) =>
+                    setState(() => _requiresInstallFallback = v),
               ),
               const SizedBox(height: 16),
               ElevatedButton(
@@ -86,6 +87,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
                         appointmentId, contact,
                         requiresInstallFallback: _requiresInstallFallback);
                     if (!mounted) return;
+                    // ignore: use_build_context_synchronously
                     Navigator.pop(context);
                   }
                 },

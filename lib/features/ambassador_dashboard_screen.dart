@@ -1,3 +1,4 @@
+// ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
@@ -10,7 +11,7 @@ import 'package:appoint/services/notification_service.dart';
 import 'package:appoint/features/ambassador_quota_dashboard_screen.dart';
 
 class AmbassadorDashboardScreen extends ConsumerStatefulWidget {
-  const AmbassadorDashboardScreen({final Key? key}) : super(key: key);
+  const AmbassadorDashboardScreen({super.key});
 
   @override
   ConsumerState<AmbassadorDashboardScreen> createState() =>
@@ -95,7 +96,8 @@ class _AmbassadorDashboardScreenState
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (final context) => const AmbassadorQuotaDashboardScreen(),
+                  builder: (final context) =>
+                      const AmbassadorQuotaDashboardScreen(),
                 ),
               );
             },
@@ -223,19 +225,11 @@ class _AmbassadorDashboardScreenState
             value: null,
             child: Text('All Countries'),
           ),
-          ...[
-            'United States',
-            'Spain',
-            'Germany',
-            'France',
-            'Italy',
-            'United Kingdom'
-          ]
+          ...['USA', 'Canada', 'UK', 'Germany', 'France', 'Spain', 'Italy']
               .map((final country) => DropdownMenuItem<String>(
                     value: country,
                     child: Text(country),
-                  ))
-              .toList(),
+                  )),
         ],
         onChanged: (final value) {
           setState(() {
@@ -269,8 +263,7 @@ class _AmbassadorDashboardScreenState
               .map((final language) => DropdownMenuItem<String>(
                     value: language,
                     child: Text(language),
-                  ))
-              .toList(),
+                  )),
         ],
         onChanged: (final value) {
           setState(() {
@@ -417,13 +410,14 @@ class _AmbassadorDashboardScreenState
   }
 
   Widget _buildStatsCards(final AmbassadorData data) {
-    final totalAmbassadors =
-        data.stats.fold<int>(0, (final sum, final stat) => sum + stat.ambassadors);
-    final totalReferrals =
-        data.stats.fold<int>(0, (final sum, final stat) => sum + stat.referrals);
+    final totalAmbassadors = data.stats
+        .fold<int>(0, (final sum, final stat) => sum + stat.ambassadors);
+    final totalReferrals = data.stats
+        .fold<int>(0, (final sum, final stat) => sum + stat.referrals);
     final averageSurveyScore = data.stats.isEmpty
         ? 0.0
-        : data.stats.fold<double>(0, (final sum, final stat) => sum + stat.surveyScore) /
+        : data.stats.fold<double>(
+                0, (final sum, final stat) => sum + stat.surveyScore) /
             data.stats.length;
 
     return LayoutBuilder(
@@ -461,7 +455,8 @@ class _AmbassadorDashboardScreenState
     );
   }
 
-  Widget _buildStatCard(final String title, final String value, final IconData icon) {
+  Widget _buildStatCard(
+      final String title, final String value, final IconData icon) {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -653,8 +648,11 @@ class _AmbassadorDashboardScreenState
               child: PieChart(
                 PieChartData(
                   centerSpaceRadius: 40,
-                  sections:
-                      counts.entries.toList().asMap().entries.map((final entry) {
+                  sections: counts.entries
+                      .toList()
+                      .asMap()
+                      .entries
+                      .map((final entry) {
                     final index = entry.key;
                     final item = entry.value;
                     return PieChartSectionData(
@@ -714,17 +712,21 @@ class _AmbassadorDashboardScreenState
   double _getMaxValue(final List<ChartDataPoint> chartData) {
     if (chartData.isEmpty) return 100.0;
 
-    final maxValue =
-        chartData.map((final e) => e.value).reduce((final a, final b) => a > b ? a : b);
+    final maxValue = chartData
+        .map((final e) => e.value)
+        .reduce((final a, final b) => a > b ? a : b);
     return maxValue;
   }
 
   AmbassadorData _getFilteredData(final AmbassadorData data) {
     // Apply country/language filters
     final filteredStats = data.stats.where((final s) {
-      if (selectedCountry != null && s.country != selectedCountry) return false;
-      if (selectedLanguage != null && s.language != selectedLanguage)
+      if (selectedCountry != null && s.country != selectedCountry) {
         return false;
+      }
+      if (selectedLanguage != null && s.language != selectedLanguage) {
+        return false;
+      }
       return true;
     }).toList();
 

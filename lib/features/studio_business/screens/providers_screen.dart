@@ -76,21 +76,21 @@ class ProvidersScreen extends ConsumerWidget {
   }
 
   void _showAddProviderDialog(final BuildContext context) {
-    final _formKey = GlobalKey<FormState>();
-    final _nameController = TextEditingController();
-    final _roleController = TextEditingController();
+    final formKey = GlobalKey<FormState>();
+    final nameController = TextEditingController();
+    final roleController = TextEditingController();
 
     showDialog(
       context: context,
       builder: (final context) => AlertDialog(
         title: const Text('Add Provider'),
         content: Form(
-          key: _formKey,
+          key: formKey,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               TextFormField(
-                controller: _nameController,
+                controller: nameController,
                 decoration: const InputDecoration(labelText: 'Name'),
                 validator: (final value) {
                   if (value == null || value.isEmpty) {
@@ -100,7 +100,7 @@ class ProvidersScreen extends ConsumerWidget {
                 },
               ),
               TextFormField(
-                controller: _roleController,
+                controller: roleController,
                 decoration: const InputDecoration(labelText: 'Role'),
               ),
             ],
@@ -124,21 +124,21 @@ class ProvidersScreen extends ConsumerWidget {
 
   void _showEditProviderDialog(
       final BuildContext context, final Map<String, dynamic> provider) {
-    final _formKey = GlobalKey<FormState>();
-    final _nameController = TextEditingController(text: provider['name'] ?? '');
-    final _roleController = TextEditingController(text: provider['role'] ?? '');
+    final formKey = GlobalKey<FormState>();
+    final nameController = TextEditingController(text: provider['name'] ?? '');
+    final roleController = TextEditingController(text: provider['role'] ?? '');
 
     showDialog(
       context: context,
       builder: (final context) => AlertDialog(
         title: const Text('Edit Provider'),
         content: Form(
-          key: _formKey,
+          key: formKey,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               TextFormField(
-                controller: _nameController,
+                controller: nameController,
                 decoration: const InputDecoration(labelText: 'Name'),
                 validator: (final value) {
                   if (value == null || value.isEmpty) {
@@ -148,7 +148,7 @@ class ProvidersScreen extends ConsumerWidget {
                 },
               ),
               TextFormField(
-                controller: _roleController,
+                controller: roleController,
                 decoration: const InputDecoration(labelText: 'Role'),
               ),
             ],
@@ -184,7 +184,7 @@ class ProvidersScreen extends ConsumerWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              // TODO: Implement this featurentext);
+              // TODO: Implement this feature
             },
             style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
             child: const Text('Yes'),

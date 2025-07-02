@@ -108,17 +108,20 @@ final routerProvider = Provider<GoRouter>((final ref) {
       GoRoute(
         path: '/google/calendar',
         name: 'googleCalendar',
-        builder: (final context, final state) => const GoogleIntegrationScreen(),
+        builder: (final context, final state) =>
+            const GoogleIntegrationScreen(),
       ),
       GoRoute(
         path: '/ambassador-dashboard',
         name: 'ambassadorDashboard',
-        builder: (final context, final state) => const AmbassadorDashboardScreen(),
+        builder: (final context, final state) =>
+            const AmbassadorDashboardScreen(),
       ),
       GoRoute(
         path: '/ambassador-onboarding',
         name: 'ambassadorOnboarding',
-        builder: (final context, final state) => const AmbassadorOnboardingScreen(),
+        builder: (final context, final state) =>
+            const AmbassadorOnboardingScreen(),
       ),
       GoRoute(
         path: '/chat-booking',
@@ -172,9 +175,16 @@ final routerProvider = Provider<GoRouter>((final ref) {
         builder: (final context, final state) => const BusinessConnectScreen(),
       ),
       GoRoute(
+        path: '/dev/business-dashboard',
+        name: 'devBusinessDashboard',
+        builder: (final context, final state) =>
+            const business.BusinessDashboardScreen(),
+      ),
+      GoRoute(
         path: '/business/dashboard',
         name: 'businessDashboard',
-        builder: (final context, final state) => const business.BusinessDashboardScreen(),
+        builder: (final context, final state) =>
+            const business.BusinessDashboardScreen(),
       ),
       GoRoute(
         path: '/business/profile',
@@ -189,7 +199,8 @@ final routerProvider = Provider<GoRouter>((final ref) {
       GoRoute(
         path: '/business/clients',
         name: 'clients',
-        builder: (final context, final state) => const studio_clients.ClientsScreen(),
+        builder: (final context, final state) =>
+            const studio_clients.ClientsScreen(),
       ),
       GoRoute(
         path: '/business/appointments',
@@ -230,7 +241,8 @@ final routerProvider = Provider<GoRouter>((final ref) {
       GoRoute(
         path: '/business/appointment-requests',
         name: 'appointmentRequests',
-        builder: (final context, final state) => const AppointmentRequestsScreen(),
+        builder: (final context, final state) =>
+            const AppointmentRequestsScreen(),
       ),
       GoRoute(
         path: '/business/external-meetings',
@@ -253,12 +265,14 @@ final routerProvider = Provider<GoRouter>((final ref) {
           GoRoute(
             path: 'availability',
             name: 'studioAvailability',
-            builder: (final context, final state) => const BusinessAvailabilityScreen(),
+            builder: (final context, final state) =>
+                const BusinessAvailabilityScreen(),
           ),
           GoRoute(
             path: 'dashboard',
             name: 'studioDashboard',
-            builder: (final context, final state) => const BusinessDashboardScreen(),
+            builder: (final context, final state) =>
+                const BusinessDashboardScreen(),
           ),
         ],
       ),
@@ -281,7 +295,8 @@ final routerProvider = Provider<GoRouter>((final ref) {
       GoRoute(
         path: '/studio/staff-availability',
         name: 'studioStaffAvailability',
-        builder: (final context, final state) => StaffAvailabilityScreen(),
+        builder: (final context, final state) =>
+            const StaffAvailabilityScreen(),
       ),
     ],
     errorBuilder: (final context, final state) => Scaffold(
@@ -300,12 +315,12 @@ class MeetingDetailsScreen extends StatelessWidget {
   final String? groupId;
 
   const MeetingDetailsScreen({
-    final Key? key,
+    super.key,
     required this.meetingId,
     this.creatorId,
     this.contextId,
     this.groupId,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(final BuildContext context) {

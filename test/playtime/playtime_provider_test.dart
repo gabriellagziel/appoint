@@ -1,11 +1,11 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../lib/providers/playtime_provider.dart';
-import '../../lib/models/playtime_game.dart';
-import '../../lib/models/playtime_session.dart';
-import '../../lib/models/playtime_background.dart';
-import '../../lib/services/playtime_service.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:appoint/models/playtime_game.dart';
+import 'package:appoint/models/playtime_session.dart';
+import 'package:appoint/models/playtime_background.dart';
+import 'package:appoint/services/playtime_service.dart';
 import '../fake_firebase_setup.dart';
 
 Future<void> main() async {
@@ -17,11 +17,12 @@ Future<void> main() async {
 
     setUp(() {
       container = ProviderContainer(overrides: [
-        allGamesProvider.overrideWith((final ref) => Stream.value(<PlaytimeGame>[])),
-        allSessionsProvider.overrideWith(
-            (final ref) => Stream.value(<PlaytimeSession>[])),
-        allBackgroundsProvider.overrideWith(
-            (final ref) => Stream.value(<PlaytimeBackground>[])),
+        allGamesProvider
+            .overrideWith((final ref) => Stream.value(<PlaytimeGame>[])),
+        allSessionsProvider
+            .overrideWith((final ref) => Stream.value(<PlaytimeSession>[])),
+        allBackgroundsProvider
+            .overrideWith((final ref) => Stream.value(<PlaytimeBackground>[])),
       ]);
     });
 

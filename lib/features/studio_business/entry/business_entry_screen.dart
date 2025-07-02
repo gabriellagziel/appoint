@@ -3,7 +3,7 @@ import 'package:appoint/features/studio_business/screens/business_calendar_scree
 import 'package:appoint/features/studio_business/screens/business_availability_screen.dart';
 
 class BusinessEntryScreen extends StatelessWidget {
-  const BusinessEntryScreen({final Key? key}) : super(key: key);
+  const BusinessEntryScreen({super.key});
 
   @override
   Widget build(final BuildContext context) {

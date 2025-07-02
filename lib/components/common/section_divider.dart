@@ -3,7 +3,7 @@ import 'package:appoint/config/theme.dart';
 
 class SectionDivider extends StatelessWidget {
   final String? label;
-  const SectionDivider({final Key? key, this.label}) : super(key: key);
+  const SectionDivider({super.key, this.label});
 
   @override
   Widget build(final BuildContext context) {

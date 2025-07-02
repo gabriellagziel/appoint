@@ -53,7 +53,8 @@ final clientsCountProvider = StreamProvider<int>((final ref) {
 });
 
 // Recent bookings stream (last 10)
-final recentBookingsProvider = StreamProvider<List<Map<String, dynamic>>>((final ref) {
+final recentBookingsProvider =
+    StreamProvider<List<Map<String, dynamic>>>((final ref) {
   final userId = ref.watch(currentUserIdProvider);
   return FirebaseFirestore.instance
       .collection('business')
@@ -62,9 +63,8 @@ final recentBookingsProvider = StreamProvider<List<Map<String, dynamic>>>((final
       .orderBy('createdAt', descending: true)
       .limit(10)
       .snapshots()
-      .map((final snap) => snap.docs
-          .map((final doc) => {'id': doc.id, ...doc.data()})
-          .toList());
+      .map((final snap) =>
+          snap.docs.map((final doc) => {'id': doc.id, ...doc.data()}).toList());
 });
 
 // Monthly revenue stream
@@ -72,16 +72,18 @@ final monthlyRevenueProvider = StreamProvider<double>((final ref) {
   final userId = ref.watch(currentUserIdProvider);
   final now = DateTime.now();
   final startOfMonth = DateTime(now.year, now.month, 1);
-  
+
   return FirebaseFirestore.instance
       .collection('business')
       .doc(userId)
       .collection('bookings')
-      .where('createdAt', isGreaterThanOrEqualTo: Timestamp.fromDate(startOfMonth))
+      .where('createdAt',
+          isGreaterThanOrEqualTo: Timestamp.fromDate(startOfMonth))
       .where('status', isEqualTo: 'completed')
       .snapshots()
       .map((final snap) => snap.docs.fold<double>(
             0.0,
-            (final sum, final doc) => sum + (doc.data()['amount'] as double? ?? 0.0),
+            (final total, final doc) =>
+                total + (doc.data()['amount'] as double? ?? 0.0),
           ));
-}); 
+});

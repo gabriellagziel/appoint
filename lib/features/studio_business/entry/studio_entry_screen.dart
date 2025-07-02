@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StudioEntryScreen extends StatelessWidget {
-  const StudioEntryScreen({final Key? key}) : super(key: key);
+  const StudioEntryScreen({super.key});
 
   @override
   Widget build(final BuildContext context) {

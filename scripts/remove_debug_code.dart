@@ -2,20 +2,20 @@ import 'dart:io';
 
 void main() async {
   final dartFiles = await _findDartFiles();
-  
+
   for (final file in dartFiles) {
     await _processFile(file);
   }
-  
-  print('Debug code removal completed!');
+
+  stdout.writeln('Debug code removal completed!');
 }
 
 Future<List<File>> _findDartFiles() async {
   final dir = Directory('.');
   final dartFiles = <File>[];
-  
+
   await for (final entity in dir.list(recursive: true)) {
-    if (entity is File && 
+    if (entity is File &&
         entity.path.endsWith('.dart') &&
         !entity.path.contains('/lib/l10n/') &&
         !entity.path.contains('.freezed.dart') &&
@@ -26,7 +26,7 @@ Future<List<File>> _findDartFiles() async {
       dartFiles.add(entity);
     }
   }
-  
+
   return dartFiles;
 }
 
@@ -34,7 +34,7 @@ Future<void> _processFile(final File file) async {
   final content = await file.readAsString();
   var modified = false;
   var newContent = content;
-  
+
   // Remove print statements
   newContent = newContent.replaceAllMapped(
     RegExp(r'print\s*\(\s*[^)]*\)\s*;'),
@@ -43,7 +43,7 @@ Future<void> _processFile(final File file) async {
       return '// Removed debug print: ${match.group(0)}';
     },
   );
-  
+
   // Remove debugPrint statements
   newContent = newContent.replaceAllMapped(
     RegExp(r'debugPrint\s*\(\s*[^)]*\)\s*;'),
@@ -52,7 +52,7 @@ Future<void> _processFile(final File file) async {
       return '// Removed debug print: ${match.group(0)}';
     },
   );
-  
+
   // Remove TODO comments
   newContent = newContent.replaceAllMapped(
     RegExp(r'//\s*TODO[^\\n]*'),
@@ -61,9 +61,9 @@ Future<void> _processFile(final File file) async {
       return '// TODO: Implement this feature';
     },
   );
-  
+
   if (modified) {
     await file.writeAsString(newContent);
-    print('Processed: ${file.path}');
+    stdout.writeln('Processed: ${file.path}');
   }
-} 
+}

@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/studio_business/providers/business_availability_provider.dart';
 
 class BusinessAvailabilityScreen extends ConsumerWidget {
-  const BusinessAvailabilityScreen({final Key? key}) : super(key: key);
+  const BusinessAvailabilityScreen({super.key});
 
   String _getDayName(final int weekday) {
     switch (weekday) {
@@ -70,8 +70,11 @@ class BusinessAvailabilityScreen extends ConsumerWidget {
                   IconButton(
                     icon: const Icon(Icons.access_time),
                     tooltip: 'Set Start',
-                    onPressed: () => _pickTime(context, avail.start,
-                        (final t) => notifier.setHours(avail.weekday, t, avail.end)),
+                    onPressed: () => _pickTime(
+                        context,
+                        avail.start,
+                        (final t) =>
+                            notifier.setHours(avail.weekday, t, avail.end)),
                   ),
                   IconButton(
                     icon: const Icon(Icons.access_time_filled),

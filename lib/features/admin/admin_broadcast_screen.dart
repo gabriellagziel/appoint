@@ -10,7 +10,7 @@ import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/providers/admin_provider.dart';
 
 class AdminBroadcastScreen extends ConsumerStatefulWidget {
-  const AdminBroadcastScreen({final Key? key}) : super(key: key);
+  const AdminBroadcastScreen({super.key});
 
   @override
   ConsumerState<AdminBroadcastScreen> createState() =>
@@ -624,12 +624,13 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       lastDate: DateTime.now().add(const Duration(days: 365)),
     );
 
+    if (!mounted) return;
     if (date != null) {
       final time = await showTimePicker(
         context: context,
         initialTime: TimeOfDay.now(),
       );
-
+      if (!mounted) return;
       if (time != null) {
         setState(() {
           _scheduledDate = date;
@@ -657,9 +658,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         _estimatedRecipients = count;
       });
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error estimating recipients: $e')),
-      );
+      if (!mounted) return;
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error estimating recipients: $e')),
+        );
+      }
     }
   }
 
@@ -683,9 +687,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         });
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error picking image: $e')),
-      );
+      if (!mounted) return;
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error picking image: $e')),
+        );
+      }
     }
   }
 
@@ -706,9 +713,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         });
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error picking video: $e')),
-      );
+      if (!mounted) return;
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error picking video: $e')),
+        );
+      }
     }
   }
 
@@ -730,12 +740,15 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     // Additional admin role check before saving
     final isAdmin = await ref.read(isAdminProvider.future);
     if (!isAdmin) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(l10n.noPermissionForBroadcast),
-          backgroundColor: Colors.red,
-        ),
-      );
+      if (!mounted) return;
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(l10n.noPermissionForBroadcast),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
       return;
     }
 
@@ -800,14 +813,20 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       _contentController.clear();
       _linkController.clear();
 
-      Navigator.of(context).pop();
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.messageSavedSuccessfully)),
-      );
+      if (!mounted) return;
+      if (mounted) {
+        Navigator.of(context).pop();
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(l10n.messageSavedSuccessfully)),
+        );
+      }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.errorSavingMessage(e))),
-      );
+      if (!mounted) return;
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(l10n.errorSavingMessage(e))),
+        );
+      }
     }
   }
 
@@ -817,10 +836,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     try {
       final service = ref.read(broadcastServiceProvider);
       await service.sendBroadcastMessage(messageId);
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(l10n.messageSentSuccessfully)),
       );
     } catch (e) {
+      if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(l10n.errorSendingMessage(e))),
       );

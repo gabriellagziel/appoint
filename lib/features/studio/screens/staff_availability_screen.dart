@@ -7,7 +7,7 @@ import 'package:appoint/features/studio/screens/slot_dialog.dart';
 
 class StaffAvailabilityScreen extends ConsumerWidget {
   static const routeName = '/studio/staff-availability';
-  const StaffAvailabilityScreen({final Key? key}) : super(key: key);
+  const StaffAvailabilityScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {
@@ -156,7 +156,8 @@ class StaffAvailabilityScreen extends ConsumerWidget {
     );
   }
 
-  void _confirmDelete(final BuildContext context, final WidgetRef ref, final String slotId) {
+  void _confirmDelete(
+      final BuildContext context, final WidgetRef ref, final String slotId) {
     showDialog(
       context: context,
       builder: (final context) => AlertDialog(
@@ -181,8 +182,8 @@ class StaffAvailabilityScreen extends ConsumerWidget {
     );
   }
 
-  Future<void> _deleteSlot(
-      final BuildContext context, final WidgetRef ref, final String slotId) async {
+  Future<void> _deleteSlot(final BuildContext context, final WidgetRef ref,
+      final String slotId) async {
     try {
       final service = ref.read(staffAvailabilityServiceProvider);
       await service.deleteSlot(slotId);

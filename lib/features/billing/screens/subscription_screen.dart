@@ -10,12 +10,12 @@ class SubscriptionScreen extends StatefulWidget {
   final double price;
 
   const SubscriptionScreen({
-    final Key? key,
+    super.key,
     required this.studioId,
     required this.priceId,
     required this.planName,
     required this.price,
-  }) : super(key: key);
+  });
 
   @override
   State<SubscriptionScreen> createState() => _SubscriptionScreenState();

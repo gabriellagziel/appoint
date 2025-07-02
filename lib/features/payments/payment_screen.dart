@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/providers/payment_provider.dart';
 
 class PaymentScreen extends ConsumerStatefulWidget {
-  const PaymentScreen({final Key? key}) : super(key: key);
+  const PaymentScreen({super.key});
 
   @override
   ConsumerState<PaymentScreen> createState() => _PaymentScreenState();
@@ -36,7 +36,9 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
             ElevatedButton(
               onPressed: () async {
                 final amount = double.tryParse(_amountController.text) ?? 0;
-                final data = await ref.read(paymentServiceProvider).createPaymentIntent(amount);
+                final data = await ref
+                    .read(paymentServiceProvider)
+                    .createPaymentIntent(amount);
                 final secret = data['clientSecret'] as String;
                 await ref.read(paymentServiceProvider).handlePayment(secret);
                 if (context.mounted) {

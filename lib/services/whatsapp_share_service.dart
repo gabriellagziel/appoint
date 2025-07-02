@@ -8,7 +8,6 @@ import 'package:appoint/services/custom_deep_link_service.dart';
 
 class WhatsAppShareService {
   final FirebaseFirestore _firestore;
-  final FirebaseAnalytics _analytics;
   late final CustomDeepLinkService _deepLinkService;
 
   static const String _baseUrl = 'https://app-oint-core.web.app';
@@ -16,10 +15,8 @@ class WhatsAppShareService {
 
   WhatsAppShareService({
     final FirebaseFirestore? firestore,
-    final FirebaseAnalytics? analytics,
     final CustomDeepLinkService? deepLinkService,
-  })  : _firestore = firestore ?? FirebaseFirestore.instance,
-        _analytics = analytics ?? FirebaseAnalytics.instance {
+  }) : _firestore = firestore ?? FirebaseFirestore.instance {
     _deepLinkService =
         deepLinkService ?? CustomDeepLinkService(whatsappShareService: this);
   }
@@ -86,14 +83,8 @@ class WhatsAppShareService {
         await launchUrl(uri, mode: LaunchMode.externalApplication);
 
         // Track successful share
-        await _analytics.logEvent(
+        await FirebaseAnalytics.instance.logEvent(
           name: 'share_whatsapp',
-          parameters: {
-            'meeting_id': meetingId,
-            'creator_id': creatorId,
-            'has_group_id': groupId != null,
-            'has_context_id': contextId != null,
-          },
         );
 
         // Update group recognition if applicable
@@ -104,7 +95,9 @@ class WhatsAppShareService {
         return true;
       } else {
         // Fallback to general share
-        await Share.share('$customMessage\n\n$shareLink');
+        await SharePlus.instance.share(
+          ShareParams(text: '$customMessage\n\n$shareLink'),
+        );
         return true;
       }
     } catch (e) {
@@ -159,7 +152,8 @@ class WhatsAppShareService {
   }
 
   /// Update group recognition stats
-  Future<void> _updateGroupRecognition(final String groupId, final String meetingId) async {
+  Future<void> _updateGroupRecognition(
+      final String groupId, final String meetingId) async {
     try {
       await _firestore.collection('group_recognition').doc(groupId).update({
         'totalShares': FieldValue.increment(1),
@@ -200,20 +194,11 @@ class WhatsAppShareService {
       if (pathSegments.length >= 2 && pathSegments[0] == 'meeting') {
         final meetingId = pathSegments[1];
         final queryParams = uri.queryParameters;
-        final creatorId = queryParams['creatorId'];
-        final contextId = queryParams['contextId'];
         final groupId = queryParams['groupId'];
 
         // Track link click
-        await _analytics.logEvent(
+        await FirebaseAnalytics.instance.logEvent(
           name: 'invite_clicked',
-          parameters: {
-            'meeting_id': meetingId,
-            'creator_id': creatorId,
-            'has_group_id': groupId != null,
-            'has_context_id': contextId != null,
-            'source': 'whatsapp',
-          },
         );
 
         // Update analytics
@@ -271,10 +256,12 @@ class WhatsAppShareService {
         'totalShares': analytics.length,
         'whatsappShares':
             analytics.where((final a) => a.channel == 'whatsapp').length,
-        'totalClicks':
-            analytics.where((final a) => a.status == ShareStatus.clicked).length,
-        'totalResponses':
-            analytics.where((final a) => a.status == ShareStatus.responded).length,
+        'totalClicks': analytics
+            .where((final a) => a.status == ShareStatus.clicked)
+            .length,
+        'totalResponses': analytics
+            .where((final a) => a.status == ShareStatus.responded)
+            .length,
         'groupShares': analytics.where((final a) => a.groupId != null).length,
       };
     } catch (e) {

@@ -40,8 +40,11 @@ class SettingsScreen extends ConsumerWidget {
                 ElevatedButton.icon(
                   icon: const Icon(Icons.share),
                   onPressed: () {
-                    Share.share(
-                      'Join me on Appoint! Use my ambassador link: ${ambassador.shareLink}',
+                    SharePlus.instance.share(
+                      ShareParams(
+                        text: 'Join me on Appoint! Use my ambassador link: ${ambassador.shareLink}',
+                        subject: 'Appoint - Ambassador Link',
+                      ),
                     );
                   },
                   label: const Text('Share Link'),
