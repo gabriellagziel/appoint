@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-part 'staff_member.freezed.dart';
-part 'staff_member.g.dart';
+part '../generated/models/staff_member.freezed.dart';
+part '../generated/models/staff_member.g.dart';
 
 @freezed
 class StaffMember with _$StaffMember {

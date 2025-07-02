@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'provider.g.dart';
+part '../generated/models/provider.g.dart';
 
 @JsonSerializable()
 class BusinessProvider {

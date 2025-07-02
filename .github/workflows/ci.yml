@@ -7,11 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
-    env:
-      PUB_HOSTED_URL: https://pub.flutter-io.cn
-      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
     steps:
       - uses: actions/checkout@v4
       - name: Install Flutter
@@ -19,24 +16,55 @@ jobs:
         with:
           flutter-version: '3.32.0'
           cache: true
-      - name: Setup Dart
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: '3.4.0'
-      - name: Add Flutter & Dart to PATH
-        run: |
-          echo "${{ runner.temp }}/flutter/bin" >> "$GITHUB_PATH"
-          echo "${{ runner.temp }}/dart-sdk/bin" >> "$GITHUB_PATH"
-      - name: Pre-flight Dart version check
-        run: |
-          version=$(dart --version 2>&1 | awk '{print $4}')
-          required=3.4.0
-          if [ "$(printf '%s\n%s\n' "$required" "$version" | sort -V | head -n1)" != "$required" ]; then
-            echo "Dart SDK $version is below required $required" && exit 1
-          fi
       - run: flutter pub get
       - run: flutter analyze
-      - name: Run tests
+      - name: Run localization validation
+        run: dart run tool/arb_validator.dart
+      - name: Generate localization dashboard
+        run: dart run tool/localization_dashboard.dart
+      - name: Upload localization report
+        uses: actions/upload-artifact@v3
+        with:
+          name: localization-report
+          path: docs/TRANSLATION_STATUS.md
+          retention-days: 30
+
+  security-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.0'
+          cache: true
+      - run: flutter pub get
+      - name: Run security rules tests
+        run: flutter test test/security_rules_test.dart
+      - name: Test Firestore rules
+        run: |
+          # Install Firebase CLI if not available
+          if ! command -v firebase &> /dev/null; then
+            npm install -g firebase-tools
+          fi
+          
+          # Test Firestore rules
+          firebase emulators:exec "flutter test test/security_rules_test.dart" --only firestore
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.0'
+          cache: true
+      - run: flutter pub get
+      - name: Run tests with coverage
         run: |
           tries=3
           for i in $(seq 1 $tries); do
@@ -48,11 +76,14 @@ jobs:
             sleep 5
           done
       - name: Install lcov
-        run: sudo apt-get install lcov
-      
+        run: |
+          if [ "$RUNNER_OS" == "macOS" ]; then
+            brew install lcov
+          else
+            sudo apt-get install lcov
+          fi
       - name: Generate coverage report
         run: genhtml coverage/lcov.info -o coverage/html
-      
       - name: Check coverage threshold
         run: |
           COVERAGE=$(lcov --summary coverage/lcov.info | grep lines | awk '{print $2}' | sed 's/%//')
@@ -62,14 +93,29 @@ jobs:
           else
             echo "✅ Coverage ($COVERAGE%) meets threshold (80%)"
           fi
-      
-      - name: Upload coverage
+      - name: Upload coverage report
         uses: actions/upload-artifact@v3
         with:
-          name: coverage
-          path: coverage/lcov.info
-      
-      - name: Upload APK for smoke testing
+          name: coverage-${{ matrix.os }}
+          path: |
+            coverage/lcov.info
+            coverage/html/
+          retention-days: 30
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [lint, test]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.0'
+          cache: true
+      - run: flutter pub get
+      - name: Build APK
+        run: flutter build apk --release
+      - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
           name: app-apk

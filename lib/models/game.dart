@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'game.freezed.dart';
-part 'game.g.dart';
+part '../generated/models/game.freezed.dart';
+part '../generated/models/game.g.dart';
 
 @freezed
 class Game with _$Game {

@@ -11,6 +11,8 @@ analyzer:
     - ".github/workflows/**"
     - "FINAL_FIXES_REPORT.md"
     - ".cspell.json"
+    - "scripts/**"
+    - "tool/**"
   
   errors:
     # Suppress TODO warnings

@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'smart_share_link.freezed.dart';
-part 'smart_share_link.g.dart';
+part '../generated/models/smart_share_link.freezed.dart';
+part '../generated/models/smart_share_link.g.dart';
 
 @freezed
 class SmartShareLink with _$SmartShareLink {

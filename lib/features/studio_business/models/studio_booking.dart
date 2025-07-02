@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'studio_booking.g.dart';
+part '../../../generated/features/studio_business/models/studio_booking.g.dart';
 
 @JsonSerializable()
 class StudioBooking {
