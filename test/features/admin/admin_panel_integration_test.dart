@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mockito/mockito.dart';
-import 'package:mockito/annotations.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-
+import 'package:mocktail/mocktail.dart';
 import 'package:appoint/features/admin/admin_dashboard_screen.dart';
 import 'package:appoint/features/admin/admin_broadcast_screen.dart';
 import 'package:appoint/features/admin/admin_monetization_screen.dart';
@@ -16,15 +12,13 @@ import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import '../../fake_firebase_setup.dart';
 
-// Generate mocks
-@GenerateMocks([AdminService, FirebaseAuth, FirebaseFirestore])
-import 'admin_panel_integration_test.mocks.dart';
+class MockAdminService extends Mock implements AdminService {}
 
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
 
-group('Admin Panel Integration Tests', () {
+  group('Admin Panel Integration Tests', () {
     late MockAdminService mockAdminService;
     late ProviderContainer container;
 
@@ -106,7 +100,8 @@ group('Admin Panel Integration Tests', () {
       testContainer.dispose();
     });
 
-    testWidgets('Admin Broadcast screen loads', (final WidgetTester tester) async {
+    testWidgets('Admin Broadcast screen loads',
+        (final WidgetTester tester) async {
       // Mock broadcast messages
       final mockMessages = [
         AdminBroadcastMessage(
@@ -154,7 +149,8 @@ group('Admin Panel Integration Tests', () {
       testContainer.dispose();
     });
 
-    testWidgets('Admin Monetization screen loads', (final WidgetTester tester) async {
+    testWidgets('Admin Monetization screen loads',
+        (final WidgetTester tester) async {
       // Mock monetization settings
       final mockSettings = MonetizationSettings(
         adsEnabledForFreeUsers: true,
@@ -170,7 +166,7 @@ group('Admin Panel Integration Tests', () {
         lastUpdated: DateTime.now(),
       );
 
-      when(mockAdminService.fetchMonetizationSettings())
+      when(() => mockAdminService.fetchMonetizationSettings())
           .thenAnswer((final _) async => mockSettings);
 
       // Build the monetization screen with proper localization
@@ -220,7 +216,7 @@ group('Admin Panel Integration Tests', () {
         lastUpdated: DateTime.now(),
       );
 
-      when(mockAdminService.fetchAdminDashboardStats())
+      when(() => mockAdminService.fetchAdminDashboardStats())
           .thenAnswer((final _) async => mockStats);
 
       final result = await mockAdminService.fetchAdminDashboardStats();
@@ -228,7 +224,7 @@ group('Admin Panel Integration Tests', () {
       expect(result.totalBookings, equals(50));
       expect(result.totalRevenue, equals(1000.0));
 
-      verify(mockAdminService.fetchAdminDashboardStats()).called(1);
+      verify(() => mockAdminService.fetchAdminDashboardStats()).called(1);
     });
 
     test('Admin providers work correctly', () async {
@@ -258,7 +254,7 @@ group('Admin Panel Integration Tests', () {
         lastUpdated: DateTime.now(),
       );
 
-      when(mockAdminService.fetchAdminDashboardStats())
+      when(() => mockAdminService.fetchAdminDashboardStats())
           .thenAnswer((final _) async => mockStats);
 
       final stats = await container.read(adminDashboardStatsProvider.future);

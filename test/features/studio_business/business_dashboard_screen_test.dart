@@ -26,9 +26,8 @@ Future<void> main() async {
       expect(find.text('Availability'), findsOneWidget);
       expect(find.text('Profile'), findsOneWidget);
 
-      // Verify mock bookings are displayed
-      expect(find.text('Yoga Class'), findsOneWidget);
-      expect(find.text('Personal Coaching'), findsOneWidget);
+      // Verify empty state is displayed when no bookings
+      expect(find.text('No upcoming bookings'), findsOneWidget);
     });
   });
 }

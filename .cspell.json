@@ -33,10 +33,26 @@
     "gabriellagziel",
     "endforeach",
     "codegen",
-    "Codegen"
+    "Codegen",
+    "appbundle",
+    "apks",
+    "codesign",
+    "elif",
+    "iphoneos",
+    "mocktail",
+    "sarisia",
+    "subosito"
   ],
   "ignorePaths": [
     "lib/l10n/*.arb",
     "**/*.arb"
+  ],
+  "ignoreWords": [],
+  "patterns": [
+    {
+      "name": "YAML GitHub Actions",
+      "pattern": "\\.yml$",
+      "description": "GitHub Actions YAML files"
+    }
   ]
 } 

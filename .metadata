@@ -15,7 +15,16 @@ migration:
     - platform: root
       create_revision: REDACTED_TOKEN
       base_revision: REDACTED_TOKEN
-    - platform: ios
+    - platform: android
+      create_revision: REDACTED_TOKEN
+      base_revision: REDACTED_TOKEN
+    - platform: linux
+      create_revision: REDACTED_TOKEN
+      base_revision: REDACTED_TOKEN
+    - platform: web
+      create_revision: REDACTED_TOKEN
+      base_revision: REDACTED_TOKEN
+    - platform: windows
       create_revision: REDACTED_TOKEN
       base_revision: REDACTED_TOKEN
 
