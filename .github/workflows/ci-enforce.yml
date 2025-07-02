@@ -1,0 +1,99 @@
+name: CI Enforce
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  setup:
+    name: Install Flutter
+    runs-on: ubuntu-latest
+    outputs:
+      flutter-cache: ${{ steps.flutter-cache.outputs.cache-hit }}
+    steps:
+      - uses: actions/checkout@v3
+
+      # Cache pub & build outputs
+      - name: Cache pub
+        id: flutter-cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.pub-cache
+            build
+          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.yaml') }}
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: stable
+
+  analyze:
+    name: Run Analyzer
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Restore pub cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.yaml') }}
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+      - name: Flutter Analyze
+        run: flutter analyze --no-fatal-infos
+      - name: Run localization validation
+        run: dart run tool/arb_validator.dart
+
+  test-and-coverage:
+    name: Test & Enforce Coverage
+    needs: analyze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Restore pub cache
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.yaml') }}
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+      - name: Run Tests with Coverage
+        run: flutter test --coverage
+
+      # Install genhtml (Ubuntu)
+      - name: Install lcov tools
+        run: sudo apt-get update && sudo apt-get install -y lcov
+
+      - name: Generate HTML report
+        run: genhtml coverage/lcov.info --output-directory coverage/html
+
+      - name: Check coverage ≥ 80%
+        id: coverage-check
+        run: |
+          COVERAGE=$(lcov --summary coverage/lcov.info | grep lines\.*% | awk '{print $2}' | sed 's/%//')
+          echo "Total coverage: $COVERAGE%"
+          if (( $(echo "$COVERAGE < 80" | bc -l) )); then
+            echo "::error ::Coverage ($COVERAGE%) below threshold of 80%"
+            echo "::warning ::Please add more tests to improve coverage"
+            exit 1
+          fi
+          echo "✅ Coverage ($COVERAGE%) meets threshold (80%)"
+
+      # (Optional) Upload to Codecov
+      #- name: Upload coverage to Codecov
+      #  uses: codecov/codecov-action@v3
+      
+      - name: Upload coverage artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-enforce
+          path: |
+            coverage/lcov.info
+            coverage/html/
+          retention-days: 30 
