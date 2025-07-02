@@ -5,7 +5,7 @@ import 'package:appoint/models/appointment.dart';
 import 'package:appoint/providers/calendar_provider.dart';
 
 class CalendarSyncScreen extends ConsumerWidget {
-  const CalendarSyncScreen({final Key? key}) : super(key: key);
+  const CalendarSyncScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {

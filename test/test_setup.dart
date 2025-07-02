@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mockito/mockito.dart';
+import 'package:mocktail/mocktail.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth_platform_interface/firebase_auth_platform_interface.dart';
 import 'package:cloud_firestore_platform_interface/cloud_firestore_platform_interface.dart';
@@ -9,8 +9,8 @@ import 'test_config.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'mocks/service_mocks.mocks.dart';
 
-import '../lib/generated/pigeon_auth_api.dart';
-import '../lib/generated/pigeon_firestore_api.dart';
+import 'package:appoint/generated/pigeon_auth_api.dart';
+import 'package:appoint/generated/pigeon_firestore_api.dart';
 
 // Mocks
 class MockFirebaseAuthPlatform extends Mock

@@ -1,0 +1,224 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    # Increment build number
+    increment_build_number(
+      build_number: latest_testflight_build_number + 1,
+    )
+    
+    # Sync code signing
+    sync_code_signing(
+      type: "appstore",
+      readonly: true
+    )
+    
+    # Build the app
+    build_ios_app(
+      scheme: "Runner",
+      export_method: "app-store",
+      export_options: {
+        provisioningProfiles: {
+          "com.example.appoint" => "match AppStore com.example.appoint"
+        }
+      },
+      output_directory: "build/ios",
+      output_name: "appoint.ipa"
+    )
+    
+    # Upload to TestFlight
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true
+    )
+    
+    # Notify team
+    slack(
+      message: "Successfully uploaded a new beta build to TestFlight",
+      slack_url: ENV["SLACK_URL"]
+    )
+  end
+
+  desc "Push a new release build to the App Store"
+  lane :release do
+    # Ensure we're on main branch
+    ensure_git_branch(branch: 'main')
+    
+    # Run tests
+    run_tests(
+      scheme: "Runner",
+      device: "iPhone 14"
+    )
+    
+    # Increment version and build number
+    increment_version_number(
+      version_number: ENV["VERSION_NUMBER"]
+    )
+    increment_build_number(
+      build_number: latest_testflight_build_number + 1,
+    )
+    
+    # Sync code signing
+    sync_code_signing(
+      type: "appstore",
+      readonly: true
+    )
+    
+    # Build the app
+    build_ios_app(
+      scheme: "Runner",
+      export_method: "app-store",
+      export_options: {
+        provisioningProfiles: {
+          "com.example.appoint" => "match AppStore com.example.appoint"
+        }
+      },
+      output_directory: "build/ios",
+      output_name: "appoint.ipa"
+    )
+    
+    # Upload to App Store
+    upload_to_app_store(
+      force: true,
+      skip_metadata: true,
+      skip_screenshots: true,
+      precheck_include_in_app_purchases: false
+    )
+    
+    # Create git tag
+    add_git_tag(
+      tag: "v#{get_version_number}",
+      message: "Release v#{get_version_number}"
+    )
+    push_git_tags
+    
+    # Notify team
+    slack(
+      message: "Successfully uploaded a new release to the App Store",
+      slack_url: ENV["SLACK_URL"]
+    )
+  end
+end
+
+platform :android do
+  desc "Push a new beta build to Play Store"
+  lane :beta do
+    # Increment version code
+    gradle(
+      task: "clean"
+    )
+    
+    # Build APK
+    gradle(
+      task: "assembleRelease",
+      project_dir: "android/"
+    )
+    
+    # Upload to Play Store (internal testing)
+    upload_to_play_store(
+      track: 'internal',
+      aab: '../build/app/outputs/bundle/release/app-release.aab',
+      json_key: ENV['PLAY_STORE_JSON_KEY']
+    )
+    
+    # Notify team
+    slack(
+      message: "Successfully uploaded a new beta build to Play Store",
+      slack_url: ENV["SLACK_URL"]
+    )
+  end
+
+  desc "Push a new release build to Play Store"
+  lane :release do
+    # Ensure we're on main branch
+    ensure_git_branch(branch: 'main')
+    
+    # Run tests
+    gradle(
+      task: "test",
+      project_dir: "android/"
+    )
+    
+    # Build AAB
+    gradle(
+      task: "bundleRelease",
+      project_dir: "android/"
+    )
+    
+    # Upload to Play Store (production)
+    upload_to_play_store(
+      track: 'production',
+      aab: '../build/app/outputs/bundle/release/app-release.aab',
+      json_key: ENV['PLAY_STORE_JSON_KEY'],
+      release_status: 'completed'
+    )
+    
+    # Create git tag
+    add_git_tag(
+      tag: "v#{get_version_name}",
+      message: "Release v#{get_version_name}"
+    )
+    push_git_tags
+    
+    # Notify team
+    slack(
+      message: "Successfully uploaded a new release to Play Store",
+      slack_url: ENV["SLACK_URL"]
+    )
+  end
+end
+
+# Cross-platform lanes
+desc "Run tests on both platforms"
+lane :test do
+  run_tests(
+    scheme: "Runner",
+    device: "iPhone 14"
+  )
+  gradle(
+    task: "test",
+    project_dir: "android/"
+  )
+end
+
+desc "Build both platforms"
+lane :build do
+  # iOS build
+  build_ios_app(
+    scheme: "Runner",
+    export_method: "app-store",
+    output_directory: "build/ios",
+    output_name: "appoint.ipa"
+  )
+  
+  # Android build
+  gradle(
+    task: "bundleRelease",
+    project_dir: "android/"
+  )
+end
+
+desc "Deploy to both platforms"
+lane :deploy do
+  # Run tests first
+  test
+  
+  # Deploy to both platforms
+  ios_release
+  android_release
+end 

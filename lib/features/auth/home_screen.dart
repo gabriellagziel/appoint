@@ -7,7 +7,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:appoint/theme/app_colors.dart';
 
 class HomeScreen extends ConsumerWidget {
-  const HomeScreen({final Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {
@@ -24,7 +24,8 @@ class HomeScreen extends ConsumerWidget {
             appointments.when(
               data: (final list) => Text('Appointments: ${list.length}'),
               loading: () => const CircularProgressIndicator(),
-              error: (final _, final __) => const Text('Error loading appointments'),
+              error: (final _, final __) =>
+                  const Text('Error loading appointments'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
@@ -72,7 +73,7 @@ class HomeScreen extends ConsumerWidget {
 }
 
 class _HomeDrawer extends ConsumerWidget {
-  const _HomeDrawer({final Key? key}) : super(key: key);
+  const _HomeDrawer();
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {

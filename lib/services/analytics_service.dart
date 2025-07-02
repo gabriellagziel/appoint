@@ -22,7 +22,8 @@ class AnalyticsService {
   }) async {
     await _analytics.setUserId(id: userId);
     await _analytics.setUserProperty(name: 'user_type', value: userType);
-    await _analytics.setUserProperty(name: 'subscription_tier', value: subscriptionTier);
+    await _analytics.setUserProperty(
+        name: 'subscription_tier', value: subscriptionTier);
     await _analytics.setUserProperty(name: 'country', value: country);
     await _analytics.setUserProperty(name: 'language', value: language);
   }
@@ -320,9 +321,13 @@ class AnalyticsService {
 
   /// Start a network request trace
   HttpMetric startNetworkTrace(final String url, final String method) {
-    return _performance.newHttpMetric(url, HttpMethod.values.firstWhere(
-      (final e) => e.toString().split('.').last.toUpperCase() == method.toUpperCase(),
-    ));
+    return _performance.newHttpMetric(
+        url,
+        HttpMethod.values.firstWhere(
+          (final e) =>
+              e.toString().split('.').last.toUpperCase() ==
+              method.toUpperCase(),
+        ));
   }
 
   // MARK: - Error Tracking
@@ -336,10 +341,10 @@ class AnalyticsService {
   }) async {
     await _analytics.logEvent(
       name: 'custom_error',
-      parameters: {
+      parameters: <String, Object>{
         'error_type': errorType,
         'error_message': errorMessage,
-        'screen_name': screenName,
+        if (screenName != null) 'screen_name': screenName,
         ...?parameters,
       },
     );
@@ -412,4 +417,4 @@ class AnalyticsService {
       },
     );
   }
-} 
+}

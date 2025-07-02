@@ -10,11 +10,11 @@ class AdminGuard extends ConsumerWidget {
   final Widget? customAccessDeniedWidget;
 
   const AdminGuard({
-    final Key? key,
+    super.key,
     required this.child,
     this.customMessage,
     this.customAccessDeniedWidget,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {

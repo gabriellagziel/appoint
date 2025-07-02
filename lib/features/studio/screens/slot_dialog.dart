@@ -6,7 +6,7 @@ import 'package:appoint/features/studio/providers/staff_availability_provider.da
 
 class SlotDialog extends ConsumerStatefulWidget {
   final SlotWithId? slot;
-  const SlotDialog({final Key? key, this.slot}) : super(key: key);
+  const SlotDialog({super.key, this.slot});
 
   @override
   ConsumerState<SlotDialog> createState() => _SlotDialogState();

@@ -12,13 +12,13 @@ class WhatsAppShareButton extends ConsumerWidget {
   final VoidCallback? onShared;
 
   const WhatsAppShareButton({
-    final Key? key,
+    super.key,
     required this.appointment,
     this.customMessage,
     this.groupId,
     this.contextId,
     this.onShared,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {
@@ -65,13 +65,13 @@ class WhatsAppShareDialog extends ConsumerStatefulWidget {
   final VoidCallback? onShared;
 
   const WhatsAppShareDialog({
-    final Key? key,
+    super.key,
     required this.appointment,
     this.customMessage,
     this.groupId,
     this.contextId,
     this.onShared,
-  }) : super(key: key);
+  });
 
   @override
   ConsumerState<WhatsAppShareDialog> createState() =>

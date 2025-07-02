@@ -12,12 +12,13 @@ import 'package:appoint/features/booking/services/booking_service.dart';
 final businessProfileProvider =
     StreamProvider.autoDispose<BusinessProfile>((final ref) {
   final user = FirebaseAuth.instance.currentUser;
-  if (user == null)
+  if (user == null) {
     return Stream.value(const BusinessProfile(
       name: 'Default Business',
       description: 'Default business description',
       phone: '+1234567890',
     ));
+  }
 
   return FirebaseFirestore.instance
       .collection('business_profiles')
@@ -67,14 +68,15 @@ final businessBookingsProvider =
 
 // Clients Provider
 final clientsProvider = StreamProvider.autoDispose<List<Map<String, dynamic>>>(
-  (final ref) => FirebaseFirestore.instance.collection('clients').snapshots().map(
-        (final snapshot) => snapshot.docs
-            .map((final doc) => {
-                  'id': doc.id,
-                  ...doc.data(),
-                })
-            .toList(),
-      ),
+  (final ref) =>
+      FirebaseFirestore.instance.collection('clients').snapshots().map(
+            (final snapshot) => snapshot.docs
+                .map((final doc) => {
+                      'id': doc.id,
+                      ...doc.data(),
+                    })
+                .toList(),
+          ),
 );
 
 // Appointments Provider
@@ -82,8 +84,8 @@ final appointmentsProvider = StreamProvider<List<Appointment>>((final ref) {
   final user = FirebaseAuth.instance.currentUser;
   if (user == null) return Stream.value([]);
 
-  return FirestoreService.getCollectionStream('appointments').map((final snapshot) =>
-      snapshot.docs
+  return FirestoreService.getCollectionStream('appointments').map(
+      (final snapshot) => snapshot.docs
           .where((final doc) =>
               (doc.data() as Map<String, dynamic>)['businessProfileId'] ==
               user.uid)
@@ -112,13 +114,13 @@ final staffProvider = StreamProvider<List<Map<String, dynamic>>>((final ref) {
 });
 
 // Services Provider
-final servicesProvider = StreamProvider<List<Map<String, dynamic>>>((final ref) {
+final servicesProvider =
+    StreamProvider<List<Map<String, dynamic>>>((final ref) {
   final user = FirebaseAuth.instance.currentUser;
   if (user == null) return Stream.value([]);
 
-  return FirestoreService.getCollectionStream(
-          'services')
-      .map((final snapshot) => snapshot.docs
+  return FirestoreService.getCollectionStream('services').map(
+      (final snapshot) => snapshot.docs
           .where((final doc) =>
               (doc.data() as Map<String, dynamic>)['businessProfileId'] ==
               user.uid)
@@ -152,8 +154,8 @@ final businessProvidersProvider =
   final user = FirebaseAuth.instance.currentUser;
   if (user == null) return Stream.value([]);
 
-  return FirestoreService.getCollectionStream('providers').map((final snapshot) =>
-      snapshot.docs
+  return FirestoreService.getCollectionStream('providers').map(
+      (final snapshot) => snapshot.docs
           .where((final doc) =>
               (doc.data() as Map<String, dynamic>)['businessProfileId'] ==
               user.uid)
@@ -167,18 +169,23 @@ final businessProvidersProvider =
 // Analytics Provider
 final analyticsProvider = StreamProvider<Analytics>((final ref) {
   final user = FirebaseAuth.instance.currentUser;
-  if (user == null) return Stream.value(Analytics(
-    totalUsers: 0,
-    totalOrgs: 0,
-    activeAppointments: 0,
-  ));
-
-  return FirestoreService.getDocumentStream('analytics', user.uid).map((final doc) {
-    if (!doc.exists) return Analytics(
+  if (user == null) {
+    return Stream.value(Analytics(
       totalUsers: 0,
       totalOrgs: 0,
       activeAppointments: 0,
-    );
+    ));
+  }
+
+  return FirestoreService.getDocumentStream('analytics', user.uid)
+      .map((final doc) {
+    if (!doc.exists) {
+      return Analytics(
+        totalUsers: 0,
+        totalOrgs: 0,
+        activeAppointments: 0,
+      );
+    }
     return Analytics.fromJson(doc.data() as Map<String, dynamic>);
   });
 });
@@ -207,8 +214,8 @@ final dashboardStatsProvider = Provider<Map<String, dynamic>>((final ref) {
     ),
     'upcomingAppointments': appointmentsAsync.when(
       data: (final appointments) => appointments
-          .where(
-              (final appointment) => appointment.scheduledAt.isAfter(DateTime.now()))
+          .where((final appointment) =>
+              appointment.scheduledAt.isAfter(DateTime.now()))
           .length,
       loading: () => 0,
       error: (final _, final __) => 0,
@@ -217,13 +224,13 @@ final dashboardStatsProvider = Provider<Map<String, dynamic>>((final ref) {
 });
 
 // Messages Provider
-final messagesProvider = StreamProvider<List<Map<String, dynamic>>>((final ref) {
+final messagesProvider =
+    StreamProvider<List<Map<String, dynamic>>>((final ref) {
   final user = FirebaseAuth.instance.currentUser;
   if (user == null) return Stream.value([]);
 
-  return FirestoreService.getCollectionStream(
-          'messages')
-      .map((final snapshot) => snapshot.docs
+  return FirestoreService.getCollectionStream('messages').map(
+      (final snapshot) => snapshot.docs
           .where((final doc) =>
               (doc.data() as Map<String, dynamic>)['businessProfileId'] ==
               user.uid)

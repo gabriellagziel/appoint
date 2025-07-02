@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AdminMonetizationScreen extends ConsumerWidget {
-  const AdminMonetizationScreen({final Key? key}) : super(key: key);
+  const AdminMonetizationScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {

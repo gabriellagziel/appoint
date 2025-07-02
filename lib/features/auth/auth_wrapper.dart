@@ -10,7 +10,7 @@ import 'package:appoint/features/auth/home_screen.dart';
 import 'package:appoint/features/auth/login_screen.dart';
 
 class AuthWrapper extends ConsumerWidget {
-  const AuthWrapper({final Key? key}) : super(key: key);
+  const AuthWrapper({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {

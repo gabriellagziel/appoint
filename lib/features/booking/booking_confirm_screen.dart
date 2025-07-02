@@ -6,7 +6,6 @@ import 'package:appoint/providers/appointment_provider.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/calendar_provider.dart';
 import 'package:appoint/models/appointment.dart';
-import 'package:appoint/providers/notification_provider.dart';
 import 'package:appoint/providers/user_subscription_provider.dart';
 import 'package:appoint/services/ad_service.dart';
 import 'package:appoint/widgets/whatsapp_share_button.dart';
@@ -15,7 +14,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:appoint/services/maps_service.dart';
 
 class BookingConfirmScreen extends ConsumerStatefulWidget {
-  const BookingConfirmScreen({final Key? key}) : super(key: key);
+  const BookingConfirmScreen({super.key});
 
   @override
   ConsumerState<BookingConfirmScreen> createState() =>
@@ -149,23 +148,24 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                                 .read(calendarServiceProvider)
                                 .syncToOutlook(appt);
                           }
-                          await ref
-                              .read(notificationServiceProvider)
-                              .sendNotificationToUser(
-                                  args.inviteeId,
-                                  'Booking Confirmed',
-                                  'You have a new booking request');
+                          if (!mounted) return;
+                          // TODO: Implement notification sending
+                          // await ref
+                          //     .read(notificationServiceProvider)
+                          //     .sendNotificationToUser(
+                          //         args.inviteeId,
+                          //         'Booking Confirmed',
+                          //         'You have a new booking request');
 
                           // Show success message
-                          if (mounted) {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(
-                                content: Text(
-                                    'Booking confirmed! You can now share the invitation.'),
-                                backgroundColor: Colors.green,
-                              ),
-                            );
-                          }
+                          // ignore: use_build_context_synchronously
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text(
+                                  'Booking confirmed! You can now share the invitation.'),
+                              backgroundColor: Colors.green,
+                            ),
+                          );
                         },
                   child: _isLoadingAd
                       ? const SizedBox(

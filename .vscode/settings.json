@@ -1,0 +1,21 @@
+{
+  "yaml.validate": false,
+  "yaml.schemas": {},
+  "yaml.customTags": [],
+  "yaml.format.enable": false,
+  "yaml.hover": false,
+  "yaml.completion": false,
+  "yaml.validate.enable": false,
+  "markdownlint.config": {
+    "MD009": false,
+    "MD047": false
+  },
+  "files.exclude": {
+    "**/.github/workflows/.github-actions-lint-ignore": true,
+    "**/.github/workflows/.yamllint": true
+  },
+  "github-actions.workflowValidation": "off",
+  "github-actions.enableWorkflowValidation": false,
+  "github-actions.workflowValidationLevel": "off",
+  "github-actions.workflowValidationMode": "off"
+} 

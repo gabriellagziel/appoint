@@ -5,7 +5,7 @@ import 'package:googleapis/calendar/v3.dart';
 import 'package:appoint/providers/google_calendar_provider.dart';
 
 class GoogleIntegrationScreen extends ConsumerStatefulWidget {
-  const GoogleIntegrationScreen({final Key? key}) : super(key: key);
+  const GoogleIntegrationScreen({super.key});
 
   @override
   ConsumerState<GoogleIntegrationScreen> createState() =>

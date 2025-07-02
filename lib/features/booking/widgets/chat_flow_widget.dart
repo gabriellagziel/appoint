@@ -4,7 +4,7 @@ import 'package:appoint/providers/booking_draft_provider.dart';
 
 /// A chat-driven booking flow widget.
 class ChatFlowWidget extends ConsumerStatefulWidget {
-  const ChatFlowWidget({final Key? key}) : super(key: key);
+  const ChatFlowWidget({super.key});
 
   @override
   ChatFlowWidgetState createState() => ChatFlowWidgetState();

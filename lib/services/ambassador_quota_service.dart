@@ -300,7 +300,7 @@ class AmbassadorQuotaService {
   /// Get total global statistics
   Future<Map<String, dynamic>> getGlobalStatistics() async {
     final totalQuota = ambassadorQuotas.values
-        .fold<int>(0, (final sum, final quota) => sum + quota);
+        .fold<int>(0, (final total, final quota) => total + quota);
     int totalCurrent = 0;
 
     for (final entry in ambassadorQuotas.entries) {

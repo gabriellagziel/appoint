@@ -5,7 +5,8 @@ import 'package:appoint/l10n/app_localizations.dart';
 
 void main() {
   group('Localization Tests', () {
-    testWidgets('should load English localization correctly', (final WidgetTester tester) async {
+    testWidgets('should load English localization correctly',
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         MaterialApp(
           localizationsDelegates: const [
@@ -71,7 +72,8 @@ void main() {
       expect(find.text('Close'), findsOneWidget);
     });
 
-    testWidgets('should handle method calls with parameters', (final WidgetTester tester) async {
+    testWidgets('should handle method calls with parameters',
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         MaterialApp(
           localizationsDelegates: const [
@@ -120,11 +122,12 @@ void main() {
       expect(find.text('Opened: 10'), findsOneWidget);
       expect(find.text('Created: 2024-01-01'), findsOneWidget);
       expect(find.text('Scheduled: 2024-01-02'), findsOneWidget);
-      expect(find.text('Error checking permissions: Test Error'), findsOneWidget);
-      expect(find.text('Error saving message'), findsOneWidget);
-      expect(find.text('Error sending message'), findsOneWidget);
-      expect(find.text('Link'), findsOneWidget);
-      expect(find.text('Clicked'), findsOneWidget);
+      expect(
+          find.text('Error checking permissions: Test Error'), findsOneWidget);
+      expect(find.text('Error saving message: Test Error'), findsOneWidget);
+      expect(find.text('Error sending message: Test Error'), findsOneWidget);
+      expect(find.text('Link: https://example.com'), findsOneWidget);
+      expect(find.text('Clicked: 5'), findsOneWidget);
     });
   });
-} 
+}

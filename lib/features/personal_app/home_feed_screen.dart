@@ -8,7 +8,7 @@ class HomeFeedScreen extends StatelessWidget {
     // TODO: Implement actual state management for error and empty states
     const body = Center(child: Text('Home Feed Screen'));
 
-    return Scaffold(
+    return const Scaffold(
       body: body,
     );
   }

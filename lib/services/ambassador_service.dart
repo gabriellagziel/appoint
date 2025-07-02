@@ -50,13 +50,13 @@ class AmbassadorService {
 
     for (final entry in countryGroups.entries) {
       final countryStats = entry.value;
-      final totalAmbassadors =
-          countryStats.fold<int>(0, (final sum, final stat) => sum + stat.ambassadors);
-      final totalReferrals =
-          countryStats.fold<int>(0, (final sum, final stat) => sum + stat.referrals);
-      final avgSurveyScore =
-          countryStats.fold<double>(0, (final sum, final stat) => sum + stat.surveyScore) /
-              countryStats.length;
+      final totalAmbassadors = countryStats.fold<int>(
+          0, (final total, final stat) => total + stat.ambassadors);
+      final totalReferrals = countryStats.fold<int>(
+          0, (final total, final stat) => total + stat.referrals);
+      final avgSurveyScore = countryStats.fold<double>(
+              0, (final total, final stat) => total + stat.surveyScore) /
+          countryStats.length;
 
       chartData.addAll([
         ChartDataPoint(

@@ -1,8 +1,8 @@
-import 'package:mockito/annotations.dart';
+import 'package:mocktail/mocktail.dart';
+import 'package:appoint/services/auth_service.dart';
+import 'package:appoint/services/notification_service.dart';
+import 'package:appoint/services/appointment_service.dart';
 
-import '../../lib/services/auth_service.dart';
-import '../../lib/infra/firestore_service.dart';
-import '../../lib/infra/firebase_storage_service.dart';
-
-@GenerateMocks([FirestoreService, AuthService, FirebaseStorageService])
-void main() {}
+class MockAuthService extends Mock implements AuthService {}
+class MockNotificationService extends Mock implements NotificationService {}
+class MockAppointmentService extends Mock implements AppointmentService {}

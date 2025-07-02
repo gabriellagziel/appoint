@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/providers/admin_provider.dart';
 
 class AdminOrgsScreen extends ConsumerWidget {
-  const AdminOrgsScreen({final Key? key}) : super(key: key);
+  const AdminOrgsScreen({super.key});
 
   @override
   Widget build(final BuildContext context, final WidgetRef ref) {
@@ -28,7 +28,8 @@ class AdminOrgsScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final _, final __) => const Center(child: Text('Error loading organizations')),
+        error: (final _, final __) =>
+            const Center(child: Text('Error loading organizations')),
       ),
     );
   }

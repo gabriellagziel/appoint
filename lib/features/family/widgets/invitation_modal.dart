@@ -4,7 +4,7 @@ import 'package:appoint/providers/family_provider.dart';
 import 'package:appoint/providers/auth_provider.dart';
 
 class InvitationModal extends ConsumerStatefulWidget {
-  const InvitationModal({final Key? key}) : super(key: key);
+  const InvitationModal({super.key});
 
   @override
   ConsumerState<InvitationModal> createState() => _InvitationModalState();
