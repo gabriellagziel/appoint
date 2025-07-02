@@ -7,7 +7,8 @@ void main() async {
     stderr.writeln('lib/l10n/app_en.arb not found');
     exit(1);
   }
-  final arbMap = jsonDecode(await arbFile.readAsString()) as Map<String, dynamic>;
+  final arbMap =
+      jsonDecode(await arbFile.readAsString()) as Map<String, dynamic>;
   final keys = <String>{};
 
   await for (final entity in Directory('lib').list(recursive: true)) {
@@ -22,7 +23,8 @@ void main() async {
     }
   }
 
-  final missing = keys.where((final k) => !arbMap.containsKey(k) && k != 'localeName');
+  final missing =
+      keys.where((final k) => !arbMap.containsKey(k) && k != 'localeName');
   if (missing.isNotEmpty) {
     stderr.writeln('Missing localization keys:');
     for (final k in missing) {
@@ -30,6 +32,6 @@ void main() async {
     }
     exit(1);
   } else {
-    print('All localization getters defined.');
+    stdout.writeln('All localization getters defined.');
   }
 }

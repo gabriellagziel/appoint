@@ -18,6 +18,9 @@ Future<void> main() async {
         ),
       );
 
+      // Wait for any async operations to complete
+      await tester.pumpAndSettle();
+
       expect(find.byType(TextField), findsOneWidget);
     });
   });

@@ -20,7 +20,12 @@ Future<void> main() async {
 
       expect(find.text('Home'), findsOneWidget);
       expect(find.byType(AppBar), findsOneWidget);
-      expect(find.byType(SafeArea), findsOneWidget);
+      expect(
+          find.ancestor(
+            of: find.text('content'),
+            matching: find.byType(SafeArea),
+          ),
+          findsOneWidget);
     });
 
     testWidgets('renders without title', (final tester) async {
@@ -31,7 +36,12 @@ Future<void> main() async {
       );
 
       expect(find.byType(AppBar), findsNothing);
-      expect(find.byType(SafeArea), findsOneWidget);
+      expect(
+          find.ancestor(
+            of: find.text('content'),
+            matching: find.byType(SafeArea),
+          ),
+          findsOneWidget);
     });
   });
 }

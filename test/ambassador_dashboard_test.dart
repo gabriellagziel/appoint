@@ -75,7 +75,8 @@ Future<void> main() async {
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
-        const ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
+        const ChartDataPoint(
+            label: 'Spain', value: 32.0, category: 'ambassadors'),
       ]);
 
       await tester.pumpWidget(
@@ -134,7 +135,8 @@ Future<void> main() async {
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
-        const ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
+        const ChartDataPoint(
+            label: 'Spain', value: 32.0, category: 'ambassadors'),
       ]);
 
       await tester.pumpWidget(
@@ -201,7 +203,8 @@ Future<void> main() async {
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
-        const ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
+        const ChartDataPoint(
+            label: 'Spain', value: 32.0, category: 'ambassadors'),
       ]);
 
       await tester.pumpWidget(
@@ -256,7 +259,8 @@ Future<void> main() async {
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
-        const ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
+        const ChartDataPoint(
+            label: 'Spain', value: 32.0, category: 'ambassadors'),
       ]);
 
       await tester.pumpWidget(
@@ -279,7 +283,8 @@ Future<void> main() async {
       expect(find.text('Spain'), findsWidgets);
     });
 
-    testWidgets('should display chart when data is available', (final tester) async {
+    testWidgets('should display chart when data is available',
+        (final tester) async {
       final mockStats = [
         AmbassadorStats(
           country: 'United States',
@@ -304,7 +309,8 @@ Future<void> main() async {
       when(() => mockService.generateChartData(any())).thenReturn([
         const ChartDataPoint(
             label: 'United States', value: 45.0, category: 'ambassadors'),
-        const ChartDataPoint(label: 'Spain', value: 32.0, category: 'ambassadors'),
+        const ChartDataPoint(
+            label: 'Spain', value: 32.0, category: 'ambassadors'),
       ]);
 
       await tester.pumpWidget(
@@ -403,8 +409,7 @@ Future<void> main() async {
       await Future.delayed(
           const Duration(milliseconds: 100)); // Wait for async operation
 
-      verify(() => mockService.fetchAmbassadorStats(country: 'United States'))
-          .called(1);
+      verify(() => mockService.fetchAmbassadorStats(country: 'United States')).called(1);
     });
 
     test('should clear filters and reload data', () async {
