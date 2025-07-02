@@ -1,4 +1,4 @@
-import 'package:mockito/mockito.dart';
+import 'package:mocktail/mocktail.dart';
 
 import '../../lib/services/auth_service.dart';
 import '../../lib/infra/firestore_service.dart';

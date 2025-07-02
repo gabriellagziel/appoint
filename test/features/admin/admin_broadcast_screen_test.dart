@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../fake_firebase_setup.dart';
 import 'package:appoint/features/admin/admin_broadcast_screen.dart';
 import 'package:appoint/l10n/app_localizations.dart';
-import 'package:mockito/mockito.dart';
+import 'package:mocktail/mocktail.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:appoint/services/broadcast_service.dart';
 
@@ -20,7 +20,7 @@ Future<void> main() async {
   mockFirestore = MockFirebaseFirestore();
   broadcastService = BroadcastService(firestore: mockFirestore);
   // Stub FirebaseAnalytics if used
-  // when(FirebaseAnalytics.instance).thenReturn(MockFirebaseAnalytics());
+  // when(() => FirebaseAnalytics.instance).thenReturn(MockFirebaseAnalytics());
 
   group('AdminBroadcastScreen', () {
     Widget createTestWidget(final Widget child) {

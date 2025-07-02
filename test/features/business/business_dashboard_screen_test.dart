@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/business/screens/business_dashboard_screen.dart';
 import '../../fake_firebase_setup.dart';
-import 'package:mockito/mockito.dart';
+import 'package:mocktail/mocktail.dart';
 import '../../mocks/firebase_mocks.dart';
 
 Future<void> main() async {
@@ -19,7 +19,7 @@ Future<void> main() async {
       child: MaterialApp(home: BusinessDashboardScreen()),
     ));
 
-    expect(find.text('Welcome to Business Dashboard'), findsOneWidget);
+    expect(find.text('Welcome to Your Business Dashboard'), findsOneWidget);
 
     verifyZeroInteractions(firestore);
   });
