@@ -1,0 +1,72 @@
+name: CI & QA Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  static-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: flutter pub get
+      - name: Static analysis
+        run: flutter analyze --no-fatal-infos
+      - name: Dart format check
+        run: dart format --set-exit-if-changed .
+
+  unit-widget-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: flutter pub get
+      - name: Run tests with coverage
+        run: dart test --coverage
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage
+          path: coverage/
+
+  integration-tests:
+    runs-on: ubuntu-latest
+    services:
+      android-emulator:
+        image: reactivecircus/android-emulator:api-30
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: flutter pub get
+      - name: Start emulator
+        run: |
+          sdkmanager --install "system-images;android-30;default;x86_64"
+          echo "no" | avdmanager create avd -n test -k "system-images;android-30;default;x86_64"
+          emulator -avd test -no-window -no-audio &
+          adb wait-for-device
+      - name: Run integration tests
+        run: flutter drive --target=test_driver/app.dart
+
+  coverage-threshold:
+    needs: [static-analysis, unit-widget-tests]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download coverage
+        uses: actions/download-artifact@v3
+        with:
+          name: coverage
+      - name: Enforce coverage threshold
+        run: |
+          dart pub global activate coverage
+          format_coverage --lcov --in=coverage/lcov.info --out=coverage/total.lcov
+          cobertura-badge --input coverage/total.lcov --output coverage/badge.svg --minimum_coverage 90
+
+  badges:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate badges
+        run: |
+          echo '[![CI](https://github.com/${{ github.repository }}/actions/workflows/ci_qa.yml/badge.svg)](https://github.com/${{ github.repository }}/actions/workflows/ci_qa.yml)' > README.md
