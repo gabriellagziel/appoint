@@ -74,6 +74,7 @@ dev_dependencies:
   firebase_crashlytics_platform_interface: any
   firebase_core_platform_interface: any
   plugin_platform_interface: any
+  mockito: ^5.4.6
 flutter:
   uses-material-design: true
   generate: true
