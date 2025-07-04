@@ -1180,6 +1180,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.8.2"
+  mockito:
+    dependency: "direct dev"
+    description:
+      name: mockito
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.4.6"
   mocktail:
     dependency: "direct dev"
     description:
