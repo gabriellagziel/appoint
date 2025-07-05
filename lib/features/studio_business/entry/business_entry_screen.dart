@@ -27,7 +27,8 @@ class BusinessEntryScreen extends StatelessWidget {
                         onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (final _) => const BusinessCalendarScreen()),
+                              builder: (final _) =>
+                                  const BusinessCalendarScreen()),
                         ),
                       ),
                       const SizedBox(width: 32),
@@ -52,7 +53,8 @@ class BusinessEntryScreen extends StatelessWidget {
                         onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (final _) => const BusinessCalendarScreen()),
+                              builder: (final _) =>
+                                  const BusinessCalendarScreen()),
                         ),
                       ),
                       const SizedBox(height: 24),

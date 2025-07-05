@@ -15,7 +15,8 @@ final REDACTED_TOKEN =
 });
 
 // Staff availability provider (read-only for existing slots)
-final staffAvailabilityProvider = StreamProvider.autoDispose<List<Slot>>((final ref) {
+final staffAvailabilityProvider =
+    StreamProvider.autoDispose<List<Slot>>((final ref) {
   final studioId = ref.watch(currentStudioIdProvider);
   // Removed debug print: print('🔍 Fetching staff availability for studio: $studioId');
 

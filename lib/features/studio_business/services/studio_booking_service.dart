@@ -53,7 +53,8 @@ class StudioBookingService {
         .get();
 
     return snapshot.docs
-        .map((final doc) => StudioBooking.fromJson({...doc.data(), 'id': doc.id}))
+        .map((final doc) =>
+            StudioBooking.fromJson({...doc.data(), 'id': doc.id}))
         .toList();
   }
 
@@ -66,11 +67,13 @@ class StudioBookingService {
         .get();
 
     return snapshot.docs
-        .map((final doc) => StudioBooking.fromJson({...doc.data(), 'id': doc.id}))
+        .map((final doc) =>
+            StudioBooking.fromJson({...doc.data(), 'id': doc.id}))
         .toList();
   }
 
-  Future<void> updateBookingStatus(final String bookingId, final String status) async {
+  Future<void> updateBookingStatus(
+      final String bookingId, final String status) async {
     await _firestore.collection('studio_bookings').doc(bookingId).update({
       'status': status,
       'updatedAt': DateTime.now().toIso8601String(),

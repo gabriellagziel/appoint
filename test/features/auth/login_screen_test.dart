@@ -37,7 +37,8 @@ Future<void> main() async {
       expect(find.text('Password'), findsOneWidget);
     });
 
-    testWidgets('should have sign in button', (final WidgetTester tester) async {
+    testWidgets('should have sign in button',
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(
@@ -77,7 +78,8 @@ Future<void> main() async {
       expect(find.text('password123'), findsOneWidget);
     });
 
-    testWidgets('should have proper form layout', (final WidgetTester tester) async {
+    testWidgets('should have proper form layout',
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(
@@ -229,7 +231,8 @@ Future<void> main() async {
       expect(find.text('test.user+tag@example.co.uk'), findsOneWidget);
     });
 
-    testWidgets('should handle long password', (final WidgetTester tester) async {
+    testWidgets('should handle long password',
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(

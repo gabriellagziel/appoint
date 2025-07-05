@@ -2,8 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/studio_appointment.dart';
 import 'package:appoint/services/studio_appointment_service.dart';
 
-final REDACTED_TOKEN =
-    Provider<StudioAppointmentService>((final ref) => StudioAppointmentService());
+final REDACTED_TOKEN = Provider<StudioAppointmentService>(
+    (final ref) => StudioAppointmentService());
 
 class StudioAppointmentsNotifier
     extends StateNotifier<AsyncValue<List<StudioAppointment>>> {

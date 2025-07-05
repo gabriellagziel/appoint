@@ -13,13 +13,24 @@ import 'package:appoint/services/family_service.dart';
 import 'package:appoint/services/playtime_service.dart';
 
 class MockAuthService extends Mock implements AuthService {}
+
 class MockNotificationService extends Mock implements NotificationService {}
+
 class MockAppointmentService extends Mock implements AppointmentService {}
+
 class MockAdminService extends Mock implements AdminService {}
+
 class MockAmbassadorService extends Mock implements AmbassadorService {}
-class MockAmbassadorQuotaService extends Mock implements AmbassadorQuotaService {}
+
+class MockAmbassadorQuotaService extends Mock
+    implements AmbassadorQuotaService {}
+
 class MockCalendarService extends Mock implements CalendarService {}
+
 class MockPaymentService extends Mock implements PaymentService {}
+
 class MockStudioService extends Mock implements StudioService {}
+
 class MockFamilyService extends Mock implements FamilyService {}
-class MockPlaytimeService extends Mock implements PlaytimeService {} 
+
+class MockPlaytimeService extends Mock implements PlaytimeService {}

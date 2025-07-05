@@ -130,7 +130,8 @@ mixin AdminRoleMixin {
   }
 
   /// Shows an access denied snackbar
-  void showAccessDeniedSnackBar(final BuildContext context, {final String? message}) {
+  void showAccessDeniedSnackBar(final BuildContext context,
+      {final String? message}) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(

@@ -140,15 +140,16 @@ class StaffAvailabilityScreen extends ConsumerWidget {
     );
   }
 
-  void _showAddAvailabilityDialog(final BuildContext context, final WidgetRef ref) {
+  void _showAddAvailabilityDialog(
+      final BuildContext context, final WidgetRef ref) {
     showDialog(
       context: context,
       builder: (final context) => const _AvailabilityDialog(),
     );
   }
 
-  void _showEditAvailabilityDialog(
-      final BuildContext context, final WidgetRef ref, final DocumentSnapshot doc) {
+  void _showEditAvailabilityDialog(final BuildContext context,
+      final WidgetRef ref, final DocumentSnapshot doc) {
     showDialog(
       context: context,
       builder: (final context) => _AvailabilityDialog(editDoc: doc),

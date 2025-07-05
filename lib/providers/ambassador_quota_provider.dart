@@ -2,12 +2,14 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/services/ambassador_quota_service.dart';
 
 // Provider for the ambassador quota service
-final ambassadorQuotaServiceProvider = Provider<AmbassadorQuotaService>((final ref) {
+final ambassadorQuotaServiceProvider =
+    Provider<AmbassadorQuotaService>((final ref) {
   return AmbassadorQuotaService();
 });
 
 // Provider for quota statistics
-final quotaStatisticsProvider = FutureProvider<Map<String, dynamic>>((final ref) {
+final quotaStatisticsProvider =
+    FutureProvider<Map<String, dynamic>>((final ref) {
   final service = ref.read(ambassadorQuotaServiceProvider);
   return service.getQuotaStatistics();
 });
@@ -135,7 +137,8 @@ class QuotaDataNotifier
   }
 
   // Get specific country-language quota info
-  Map<String, dynamic>? getQuotaInfo(final String countryCode, final String languageCode) {
+  Map<String, dynamic>? getQuotaInfo(
+      final String countryCode, final String languageCode) {
     final data = state.value;
     if (data == null) return null;
 
@@ -172,7 +175,8 @@ class QuotaDataNotifier
   }
 
   // Get top countries by utilization
-  List<Map<String, dynamic>> getTopCountriesByUtilization({final int limit = 10}) {
+  List<Map<String, dynamic>> getTopCountriesByUtilization(
+      {final int limit = 10}) {
     final data = state.value;
     if (data == null) return [];
 
@@ -254,7 +258,8 @@ final REDACTED_TOKEN =
     data: (final data) => AsyncValue.data(
         ref.read(quotaDataProvider.notifier).getTopCountriesByUtilization()),
     loading: () => const AsyncValue.loading(),
-    error: (final error, final stackTrace) => AsyncValue.error(error, stackTrace),
+    error: (final error, final stackTrace) =>
+        AsyncValue.error(error, stackTrace),
   );
 });
 
@@ -266,6 +271,7 @@ final REDACTED_TOKEN =
         .read(quotaDataProvider.notifier)
         .REDACTED_TOKEN()),
     loading: () => const AsyncValue.loading(),
-    error: (final error, final stackTrace) => AsyncValue.error(error, stackTrace),
+    error: (final error, final stackTrace) =>
+        AsyncValue.error(error, stackTrace),
   );
 });

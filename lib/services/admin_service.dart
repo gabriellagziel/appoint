@@ -20,7 +20,9 @@ class AdminService {
   // User Management
   Future<List<AdminUser>> fetchAllUsers() async {
     final snap = await _firestore.collection('users').get();
-    return snap.docs.map((final doc) => AdminUser.fromJson(doc.data())).toList();
+    return snap.docs
+        .map((final doc) => AdminUser.fromJson(doc.data()))
+        .toList();
   }
 
   Future<void> updateUserRole(final String uid, final String role) async {
@@ -36,7 +38,9 @@ class AdminService {
   // Organization Management
   Future<List<Organization>> fetchOrganizations() async {
     final snap = await _firestore.collection('organizations').get();
-    return snap.docs.map((final doc) => Organization.fromJson(doc.data())).toList();
+    return snap.docs
+        .map((final doc) => Organization.fromJson(doc.data()))
+        .toList();
   }
 
   // Analytics
@@ -183,7 +187,8 @@ class AdminService {
     }).toList();
   }
 
-  Future<void> resolveError(final String errorId, final String resolutionNotes) async {
+  Future<void> resolveError(
+      final String errorId, final String resolutionNotes) async {
     final user = _auth.currentUser;
     await _firestore.collection('error_logs').doc(errorId).update({
       'isResolved': true,
@@ -275,7 +280,8 @@ class AdminService {
     );
   }
 
-  Future<void> updateMonetizationSettings(final MonetizationSettings settings) async {
+  Future<void> updateMonetizationSettings(
+      final MonetizationSettings settings) async {
     await _firestore
         .collection('settings')
         .doc('monetization')
@@ -301,7 +307,8 @@ class AdminService {
     }).toList();
   }
 
-  Future<void> createBroadcastMessage(final AdminBroadcastMessage message) async {
+  Future<void> createBroadcastMessage(
+      final AdminBroadcastMessage message) async {
     await _firestore.collection('admin_broadcasts').add(message.toJson());
 
     await _logAdminActivity(

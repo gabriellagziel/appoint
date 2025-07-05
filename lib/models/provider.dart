@@ -24,4 +24,4 @@ class BusinessProvider {
       _$BusinessProviderFromJson(json);
 
   Map<String, dynamic> toJson() => _$BusinessProviderToJson(this);
-} 
+}

@@ -67,7 +67,8 @@ class PerformanceService {
   }
 
   /// Track app startup time
-  Future<void> trackAppStartup(final Future<void> Function() startupOperation) async {
+  Future<void> trackAppStartup(
+      final Future<void> Function() startupOperation) async {
     final trace = _performance.newTrace('app_startup');
     await trace.start();
 

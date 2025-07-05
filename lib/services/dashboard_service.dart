@@ -23,8 +23,8 @@ class DashboardService {
 
     final paymentsDoc =
         await _firestore.collection('payments').doc('summary').get();
-    final revenue = (paymentsDoc.data()?['totalRevenue'] as num?)?.toDouble() ??
-        0.0;
+    final revenue =
+        (paymentsDoc.data()?['totalRevenue'] as num?)?.toDouble() ?? 0.0;
 
     return DashboardStats(
       totalAppointments: totalAppointments,
@@ -54,7 +54,8 @@ class DashboardService {
           values[2] as DocumentSnapshot<Map<String, dynamic>>;
 
       final totalAppointments = appointmentsSnapshot.size;
-      final completedAppointments = appointmentsSnapshot.docs.where((final doc) {
+      final completedAppointments =
+          appointmentsSnapshot.docs.where((final doc) {
         final status = doc.data()['status'] as String?;
         return status == 'accepted' || status == 'completed';
       }).length;

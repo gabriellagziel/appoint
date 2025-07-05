@@ -22,7 +22,8 @@ class BusinessProfileScreen extends ConsumerWidget {
                     initialValue: profile.name,
                     decoration:
                         const InputDecoration(labelText: 'Business Name'),
-                    onChanged: (final value) => notifier.updateField(name: value),
+                    onChanged: (final value) =>
+                        notifier.updateField(name: value),
                   ),
                   const SizedBox(height: 16),
                   TextFormField(
@@ -37,7 +38,8 @@ class BusinessProfileScreen extends ConsumerWidget {
                     decoration:
                         const InputDecoration(labelText: 'Phone Number'),
                     keyboardType: TextInputType.phone,
-                    onChanged: (final value) => notifier.updateField(phone: value),
+                    onChanged: (final value) =>
+                        notifier.updateField(phone: value),
                   ),
                   const SizedBox(height: 24),
                   ElevatedButton.icon(

@@ -2,23 +2,28 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/studio_business/models/studio_booking.dart';
 import 'package:appoint/features/studio_business/services/studio_booking_service.dart';
 
-final studioBookingServiceProvider = Provider<StudioBookingService>((final ref) {
+final studioBookingServiceProvider =
+    Provider<StudioBookingService>((final ref) {
   return StudioBookingService();
 });
 
-final userBookingsProvider = FutureProvider<List<StudioBooking>>((final ref) async {
+final userBookingsProvider =
+    FutureProvider<List<StudioBooking>>((final ref) async {
   final service = ref.read(studioBookingServiceProvider);
   return service.getUserBookings();
 });
 
-final businessBookingsProvider = FutureProvider.family<List<StudioBooking>, String>(
+final businessBookingsProvider =
+    FutureProvider.family<List<StudioBooking>, String>(
   (final ref, final businessProfileId) async {
     final service = ref.read(studioBookingServiceProvider);
     return service.getBusinessBookings(businessProfileId);
   },
 );
 
-final bookingProvider = StateNotifierProvider<BookingNotifier, AsyncValue<StudioBooking?>>((final ref) {
+final bookingProvider =
+    StateNotifierProvider<BookingNotifier, AsyncValue<StudioBooking?>>(
+        (final ref) {
   return BookingNotifier(ref.read(studioBookingServiceProvider));
 });
 
@@ -51,7 +56,8 @@ class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
     }
   }
 
-  Future<void> updateBookingStatus(final String bookingId, final String status) async {
+  Future<void> updateBookingStatus(
+      final String bookingId, final String status) async {
     try {
       await _service.updateBookingStatus(bookingId, status);
       // Refresh the booking data
@@ -75,4 +81,4 @@ class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
       state = AsyncValue.error(e, st);
     }
   }
-} 
+}

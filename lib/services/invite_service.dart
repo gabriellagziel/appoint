@@ -25,8 +25,8 @@ class InviteService {
         invitee.id, 'New Invite', 'You have a new invite');
   }
 
-  Future<void> respondToInvite(
-      final String appointmentId, final String inviteeId, final InviteStatus status) async {
+  Future<void> respondToInvite(final String appointmentId,
+      final String inviteeId, final InviteStatus status) async {
     final query = await _firestore
         .collection('invites')
         .where('appointmentId', isEqualTo: appointmentId)
@@ -46,7 +46,8 @@ class InviteService {
         .collection('invites')
         .where('inviteeId', isEqualTo: user.uid)
         .snapshots()
-        .map((final snapshot) =>
-            snapshot.docs.map((final doc) => Invite.fromJson(doc.data())).toList());
+        .map((final snapshot) => snapshot.docs
+            .map((final doc) => Invite.fromJson(doc.data()))
+            .toList());
   }
 }

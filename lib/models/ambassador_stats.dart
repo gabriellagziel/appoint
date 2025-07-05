@@ -33,4 +33,4 @@ class ChartDataPoint with _$ChartDataPoint {
     required final double value,
     required final String category,
   }) = _ChartDataPoint;
-} 
+}

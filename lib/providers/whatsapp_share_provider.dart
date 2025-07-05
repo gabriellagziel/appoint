@@ -3,7 +3,8 @@ import 'package:appoint/services/whatsapp_share_service.dart';
 import 'package:appoint/models/smart_share_link.dart';
 
 // Provider for WhatsAppShareService
-final whatsappShareServiceProvider = Provider<WhatsAppShareService>((final ref) {
+final whatsappShareServiceProvider =
+    Provider<WhatsAppShareService>((final ref) {
   return WhatsAppShareService();
 });
 

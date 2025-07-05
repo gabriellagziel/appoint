@@ -48,7 +48,7 @@ class PromoCode {
       isActive: json['isActive'] as bool,
       createdAt: DateTime.parse(json['createdAt'] as String),
       updatedAt: DateTime.parse(json['updatedAt'] as String),
-      applicablePlans: json['applicablePlans'] != null 
+      applicablePlans: json['applicablePlans'] != null
           ? List<String>.from(json['applicablePlans'] as List)
           : null,
       minimumSubscriptionMonths: json['minimumSubscriptionMonths'] as int?,

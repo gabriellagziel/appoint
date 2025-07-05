@@ -6,10 +6,8 @@ class StaffAvailabilityService {
 
   StaffAvailabilityService(this.studioId);
 
-  CollectionReference get _collection => _db
-      .collection('studio')
-      .doc(studioId)
-      .collection('staff_availability');
+  CollectionReference get _collection =>
+      _db.collection('studio').doc(studioId).collection('staff_availability');
 
   Future<void> addSlot(final DateTime startTime, final DateTime endTime) async {
     try {
@@ -24,7 +22,8 @@ class StaffAvailabilityService {
     }
   }
 
-  Future<void> updateSlot(final String id, final DateTime startTime, final DateTime endTime) async {
+  Future<void> updateSlot(
+      final String id, final DateTime startTime, final DateTime endTime) async {
     try {
       await _collection.doc(id).update({
         'startTime': Timestamp.fromDate(startTime),
@@ -44,4 +43,4 @@ class StaffAvailabilityService {
       rethrow;
     }
   }
-} 
+}

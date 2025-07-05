@@ -16,7 +16,8 @@ class FamilyService {
       : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
 
-  Future<FamilyLink> inviteChild(final String parentId, final String childEmail) async {
+  Future<FamilyLink> inviteChild(
+      final String parentId, final String childEmail) async {
     final resp = await http.post(
       Uri.parse('$_base/invite'),
       body: jsonEncode({'parentId': parentId, 'childEmail': childEmail}),
@@ -79,8 +80,8 @@ class FamilyService {
     });
   }
 
-  Future<void> _logFamilyEvent(
-      final String eventType, final String parentId, final Map<String, dynamic> data) async {
+  Future<void> _logFamilyEvent(final String eventType, final String parentId,
+      final Map<String, dynamic> data) async {
     try {
       await _firestore.collection('family_analytics').add({
         'eventType': eventType,
@@ -109,7 +110,8 @@ class FamilyService {
         .toList();
   }
 
-  Future<void> updatePermissions(final String linkId, final List<Permission> perms) async {
+  Future<void> updatePermissions(
+      final String linkId, final List<Permission> perms) async {
     await http.post(
       Uri.parse('$_base/permissions-update'),
       body: jsonEncode({
@@ -120,7 +122,8 @@ class FamilyService {
     );
   }
 
-  Future<List<PrivacyRequest>> fetchPrivacyRequests(final String parentId) async {
+  Future<List<PrivacyRequest>> fetchPrivacyRequests(
+      final String parentId) async {
     final resp =
         await http.get(Uri.parse('$_base/privacy-requests?parentId=$parentId'));
     return (jsonDecode(resp.body) as List)
@@ -171,7 +174,8 @@ class FamilyService {
     }
   }
 
-  Future<void> handlePrivacyRequest(final String requestId, final String action) async {
+  Future<void> handlePrivacyRequest(
+      final String requestId, final String action) async {
     final resp = await http.post(
       Uri.parse('$_base/privacy-request/$requestId/$action'),
       headers: {'Content-Type': 'application/json'},

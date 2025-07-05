@@ -172,9 +172,6 @@ class AppLocalizationsNl extends AppLocalizations {
   String get playtimeHub => 'Playtime hub';
 
   @override
-  String get error => 'Fout';
-
-  @override
   String get createLiveSession => 'Live sessie maken';
 
   @override
@@ -566,11 +563,288 @@ class AppLocalizationsNl extends AppLocalizations {
   String get bookings => 'Bookings';
 
   @override
-  String get users => 'Users';
+  String get users => 'users (TRANSLATE)';
 
   @override
-  String get revenue => 'Revenue';
+  String get revenue => 'revenue (TRANSLATE)';
 
   @override
   String get contentLibrary => 'Content Library';
+
+  @override
+  String get authErrorUserNotFound =>
+      'No account found with this email address.';
+
+  @override
+  String get authErrorWrongPassword => 'Incorrect password. Please try again.';
+
+  @override
+  String get authErrorInvalidEmail => 'Please enter a valid email address.';
+
+  @override
+  String get authErrorUserDisabled =>
+      'This account has been disabled. Please contact support.';
+
+  @override
+  String get authErrorWeakPassword =>
+      'Password is too weak. Please choose a stronger password.';
+
+  @override
+  String get authErrorEmailAlreadyInUse =>
+      'An account with this email already exists.';
+
+  @override
+  String get authErrorTooManyRequests =>
+      'Too many failed attempts. Please try again later.';
+
+  @override
+  String get authErrorOperationNotAllowed =>
+      'This sign-in method is not enabled. Please contact support.';
+
+  @override
+  String get authErrorInvalidCredential =>
+      'Invalid credentials. Please try again.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'An account already exists with this email using a different sign-in method.';
+
+  @override
+  String get authErrorCredentialAlreadyInUse =>
+      'These credentials are already associated with another account.';
+
+  @override
+  String get authErrorNetworkRequestFailed =>
+      'Network error. Please check your connection and try again.';
+
+  @override
+  String get socialAccountConflictTitle => 'Account Already Exists';
+
+  @override
+  String socialAccountConflictMessage(Object email) {
+    return 'An account with email $email already exists using a different sign-in method. Would you like to link your accounts?';
+  }
+
+  @override
+  String get linkAccounts => 'Link Accounts';
+
+  @override
+  String get signInWithExistingMethod => 'Sign in with existing method';
+
+  @override
+  String get authErrorRequiresRecentLogin =>
+      'Please log in again to perform this operation.';
+
+  @override
+  String get authErrorAppNotAuthorized =>
+      'This app is not authorized to use Firebase Authentication.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'The verification code is invalid.';
+
+  @override
+  String get authErrorInvalidVerificationId =>
+      'The verification ID is invalid.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Please enter the verification code.';
+
+  @override
+  String get authErrorMissingVerificationId => 'Missing verification ID.';
+
+  @override
+  String get authErrorInvalidPhoneNumber => 'The phone number is invalid.';
+
+  @override
+  String get authErrorMissingPhoneNumber => 'Please enter a phone number.';
+
+  @override
+  String get authErrorQuotaExceeded =>
+      'The SMS quota for this project has been exceeded. Please try again later.';
+
+  @override
+  String get authErrorCodeExpired =>
+      'The verification code has expired. Please request a new one.';
+
+  @override
+  String get authErrorSessionExpired =>
+      'Your session has expired. Please log in again.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Multi-factor authentication is required.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Multi-factor information not found.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Missing multi-factor session.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Invalid multi-factor session.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'This second factor is already in use.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Maximum number of second factors exceeded.';
+
+  @override
+  String get authErrorUnsupportedFirstFactor =>
+      'Unsupported first factor for multi-factor authentication.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Email change requires verification.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'This phone number is already in use.';
+
+  @override
+  String get authErrorInvalidPassword => 'The password is invalid or too weak.';
+
+  @override
+  String get authErrorInvalidIdToken => 'The ID token is invalid.';
+
+  @override
+  String get authErrorIdTokenExpired => 'The ID token has expired.';
+
+  @override
+  String get authErrorIdTokenRevoked => 'The ID token has been revoked.';
+
+  @override
+  String get authErrorInternalError =>
+      'An internal error occurred. Please try again.';
+
+  @override
+  String get authErrorInvalidArgument => 'An invalid argument was provided.';
+
+  @override
+  String get authErrorInvalidClaims => 'Invalid custom claims provided.';
+
+  @override
+  String get authErrorInvalidContinueUri => 'The continue URL is invalid.';
+
+  @override
+  String get authErrorInvalidCreationTime => 'The creation time is invalid.';
+
+  @override
+  String get authErrorInvalidDisabledField =>
+      'The disabled field value is invalid.';
+
+  @override
+  String get authErrorInvalidDisplayName => 'The display name is invalid.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'The dynamic link domain is invalid.';
+
+  @override
+  String get authErrorInvalidEmailVerified =>
+      'The email verified value is invalid.';
+
+  @override
+  String get authErrorInvalidHashAlgorithm => 'The hash algorithm is invalid.';
+
+  @override
+  String get authErrorInvalidHashBlockSize => 'The hash block size is invalid.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'The hash derived key length is invalid.';
+
+  @override
+  String get authErrorInvalidHashKey => 'The hash key is invalid.';
+
+  @override
+  String get authErrorInvalidHashMemoryCost =>
+      'The hash memory cost is invalid.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'The hash parallelization is invalid.';
+
+  @override
+  String get authErrorInvalidHashRounds => 'The hash rounds value is invalid.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'The hash salt separator is invalid.';
+
+  @override
+  String get authErrorInvalidLastSignInTime =>
+      'The last sign-in time is invalid.';
+
+  @override
+  String get authErrorInvalidPageToken => 'The page token is invalid.';
+
+  @override
+  String get authErrorInvalidProviderData => 'The provider data is invalid.';
+
+  @override
+  String get authErrorInvalidProviderId => 'The provider ID is invalid.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'The session cookie duration is invalid.';
+
+  @override
+  String get authErrorInvalidUid => 'The UID is invalid.';
+
+  @override
+  String get authErrorInvalidUserImport => 'The user import record is invalid.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Maximum user import count exceeded.';
+
+  @override
+  String get authErrorMissingAndroidPkgName => 'Missing Android package name.';
+
+  @override
+  String get authErrorMissingContinueUri => 'Missing continue URL.';
+
+  @override
+  String get authErrorMissingHashAlgorithm => 'Missing hash algorithm.';
+
+  @override
+  String get authErrorMissingIosBundleId => 'Missing iOS bundle ID.';
+
+  @override
+  String get authErrorMissingUid => 'Missing UID.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'Missing OAuth client secret.';
+
+  @override
+  String get authErrorProjectNotFound => 'Firebase project not found.';
+
+  @override
+  String get authErrorReservedClaims => 'Reserved claims provided.';
+
+  @override
+  String get authErrorSessionCookieExpired => 'Session cookie has expired.';
+
+  @override
+  String get authErrorSessionCookieRevoked =>
+      'Session cookie has been revoked.';
+
+  @override
+  String get authErrorUidAlreadyExists => 'The UID is already in use.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'The continue URL domain is not whitelisted.';
+
+  @override
+  String get authErrorUnknown => 'An unknown authentication error occurred.';
 }

@@ -11,7 +11,8 @@ import 'package:appoint/models/playtime_background.dart';
 import 'package:appoint/models/playtime_chat.dart';
 
 // Stream Providers for real-time data
-final allGamesProvider = StreamProvider.autoDispose<List<PlaytimeGame>>((final ref) {
+final allGamesProvider =
+    StreamProvider.autoDispose<List<PlaytimeGame>>((final ref) {
   return FirebaseFirestore.instance
       .collection('playtime_games')
       .snapshots()
@@ -56,7 +57,8 @@ final gamesProvider = FutureProvider<List<PlaytimeGame>>((final ref) async {
   return await service.getGames();
 });
 
-final systemGamesProvider = FutureProvider<List<PlaytimeGame>>((final ref) async {
+final systemGamesProvider =
+    FutureProvider<List<PlaytimeGame>>((final ref) async {
   final service = ref.read(playtimeServiceProvider);
   return await service.getGames();
 });
@@ -69,8 +71,8 @@ final userGamesProvider = FutureProvider<List<PlaytimeGame>>((final ref) async {
   return await service.getGames();
 });
 
-final gameByIdProvider =
-    FutureProvider.family<PlaytimeGame?, String>((final ref, final gameId) async {
+final gameByIdProvider = FutureProvider.family<PlaytimeGame?, String>(
+    (final ref, final gameId) async {
   final games = await ref.read(gamesProvider.future);
   try {
     return games.firstWhere((final game) => game.id == gameId);
@@ -80,12 +82,14 @@ final gameByIdProvider =
 });
 
 // Sessions Providers
-final sessionsProvider = FutureProvider<List<PlaytimeSession>>((final ref) async {
+final sessionsProvider =
+    FutureProvider<List<PlaytimeSession>>((final ref) async {
   final service = ref.read(playtimeServiceProvider);
   return await service.getSessions();
 });
 
-final userSessionsProvider = FutureProvider<List<PlaytimeSession>>((final ref) async {
+final userSessionsProvider =
+    FutureProvider<List<PlaytimeSession>>((final ref) async {
   final service = ref.read(playtimeServiceProvider);
   final user = ref.read(authProvider).currentUser;
   if (user == null) return [];
@@ -105,8 +109,8 @@ final confirmedSessionsProvider =
   return await service.getSessions();
 });
 
-final sessionByIdProvider =
-    FutureProvider.family<PlaytimeSession?, String>((final ref, final sessionId) async {
+final sessionByIdProvider = FutureProvider.family<PlaytimeSession?, String>(
+    (final ref, final sessionId) async {
   final sessions = await ref.read(sessionsProvider.future);
   try {
     return sessions.firstWhere((final session) => session.id == sessionId);
@@ -153,8 +157,8 @@ final backgroundByIdProvider =
 });
 
 // Chat Providers
-final chatProvider =
-    FutureProvider.family<PlaytimeChat, String>((final ref, final sessionId) async {
+final chatProvider = FutureProvider.family<PlaytimeChat, String>(
+    (final ref, final sessionId) async {
   final service = ref.read(playtimeServiceProvider);
   return await service.getChat(sessionId);
 });
@@ -274,7 +278,8 @@ class PlaytimeChatNotifier extends StateNotifier<AsyncValue<void>> {
 
   PlaytimeChatNotifier(this._service) : super(const AsyncValue.data(null));
 
-  Future<void> sendMessage(final String sessionId, final ChatMessage message) async {
+  Future<void> sendMessage(
+      final String sessionId, final ChatMessage message) async {
     state = const AsyncValue.loading();
     try {
       await _service.sendMessage(sessionId, message);
@@ -293,13 +298,15 @@ final playtimeGameNotifierProvider =
 });
 
 final playtimeSessionNotifierProvider =
-    StateNotifierProvider<PlaytimeSessionNotifier, AsyncValue<void>>((final ref) {
+    StateNotifierProvider<PlaytimeSessionNotifier, AsyncValue<void>>(
+        (final ref) {
   final service = ref.read(playtimeServiceProvider);
   return PlaytimeSessionNotifier(service);
 });
 
 final REDACTED_TOKEN =
-    StateNotifierProvider<PlaytimeBackgroundNotifier, AsyncValue<void>>((final ref) {
+    StateNotifierProvider<PlaytimeBackgroundNotifier, AsyncValue<void>>(
+        (final ref) {
   final service = ref.read(playtimeServiceProvider);
   return PlaytimeBackgroundNotifier(service);
 });

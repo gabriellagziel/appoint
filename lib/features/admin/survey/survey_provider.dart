@@ -7,14 +7,16 @@ final surveyServiceProvider = Provider<SurveyService>((final ref) {
 });
 
 // Provider for surveys stream
-final surveysStreamProvider = StreamProvider<List<Map<String, dynamic>>>((final ref) {
+final surveysStreamProvider =
+    StreamProvider<List<Map<String, dynamic>>>((final ref) {
   final surveyService = ref.watch(surveyServiceProvider);
   return surveyService.fetchSurveys();
 });
 
 // Provider for survey responses
 final surveyResponsesProvider =
-    StreamProvider.family<List<Map<String, dynamic>>, String>((final ref, final surveyId) {
+    StreamProvider.family<List<Map<String, dynamic>>, String>(
+        (final ref, final surveyId) {
   final surveyService = ref.watch(surveyServiceProvider);
   return surveyService.getSurveyResponses(surveyId);
 });

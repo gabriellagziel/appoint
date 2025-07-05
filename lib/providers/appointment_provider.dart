@@ -7,7 +7,8 @@ import 'package:appoint/providers/auth_provider.dart';
 final appointmentServiceProvider =
     Provider<AppointmentService>((final ref) => AppointmentService());
 
-final appointmentsStreamProvider = StreamProvider<List<Appointment>>((final ref) {
+final appointmentsStreamProvider =
+    StreamProvider<List<Appointment>>((final ref) {
   final authState = ref.watch(authStateProvider);
   return authState.when(
     data: (final user) {

@@ -28,7 +28,8 @@ class NotificationsScreen extends ConsumerWidget {
                 },
               ),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final error, final stack) => Center(child: Text('Error: $error')),
+        error: (final error, final stack) =>
+            Center(child: Text('Error: $error')),
       ),
     );
   }

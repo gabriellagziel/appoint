@@ -31,4 +31,4 @@ class StaffProfile {
   factory StaffProfile.fromJson(final Map<String, dynamic> json) =>
       _$StaffProfileFromJson(json);
   Map<String, dynamic> toJson() => _$StaffProfileToJson(this);
-} 
+}

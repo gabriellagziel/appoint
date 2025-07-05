@@ -17,7 +17,8 @@ class StudioProfileService {
         .set(profile.toJson());
   }
 
-  Future<void> updateProfile(final String studioId, final Map<String, dynamic> data) async {
+  Future<void> updateProfile(
+      final String studioId, final Map<String, dynamic> data) async {
     await _firestore.collection('studios').doc(studioId).update(data);
   }
 }

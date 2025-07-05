@@ -140,7 +140,8 @@ class GoogleCalendarService {
     return _setClientFromCredentials(creds);
   }
 
-  AutoRefreshingAuthClient _setClientFromCredentials(final AccessCredentials creds) {
+  AutoRefreshingAuthClient _setClientFromCredentials(
+      final AccessCredentials creds) {
     final clientId = ClientId(GoogleConfig.clientId, null);
     final client = autoRefreshingClient(clientId, creds, http.Client());
     client.credentialUpdates.listen(_saveCredentials);

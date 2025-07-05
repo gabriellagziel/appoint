@@ -13,4 +13,4 @@ class BusinessAppointmentsEntryScreen extends ConsumerWidget {
       ),
     );
   }
-} 
+}

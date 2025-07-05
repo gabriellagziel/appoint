@@ -24,7 +24,8 @@ class SurveyResponsesScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (final _) => SurveyResponseDetailScreen(response: r),
+                    builder: (final _) =>
+                        SurveyResponseDetailScreen(response: r),
                   ),
                 );
               },

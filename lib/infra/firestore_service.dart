@@ -11,8 +11,8 @@ class FirestoreService {
     return _firestore.collection(collection).doc(id).get();
   }
 
-  Future<void> setDoc(
-      final String collection, final String id, final Map<String, dynamic> data) {
+  Future<void> setDoc(final String collection, final String id,
+      final Map<String, dynamic> data) {
     return _firestore.collection(collection).doc(id).set(data);
   }
 }

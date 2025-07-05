@@ -4,7 +4,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/studio_business/models/business_availability.dart';
 
-final REDACTED_TOKEN = Provider<BusinessAvailabilityService>((final ref) {
+final REDACTED_TOKEN =
+    Provider<BusinessAvailabilityService>((final ref) {
   return BusinessAvailabilityService();
 });
 
@@ -58,7 +59,8 @@ class BusinessAvailabilityService {
   }
 
   /// Update a specific day's availability
-  Future<void> updateDay(final int weekday, final BusinessAvailability availability) async {
+  Future<void> updateDay(
+      final int weekday, final BusinessAvailability availability) async {
     final currentConfig = await loadConfiguration();
     final updatedConfig = currentConfig.map((final day) {
       if (day.weekday == weekday) {
@@ -66,7 +68,7 @@ class BusinessAvailabilityService {
       }
       return day;
     }).toList();
-    
+
     await saveConfiguration(toJson(updatedConfig));
   }
 
