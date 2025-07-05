@@ -20,7 +20,8 @@ void main() {
         if (match != null) {
           final locale = match.group(1)!;
           final country =
-              (locale.contains('_') ? locale.split('_').last : locale).toLowerCase();
+              (locale.contains('_') ? locale.split('_').last : locale)
+                  .toLowerCase();
           origins.add('https://app-oint-core.$country.firebaseapp.com');
         }
       }

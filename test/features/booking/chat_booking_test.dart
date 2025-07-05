@@ -16,7 +16,8 @@ Future<void> main() async {
   bookingService = BookingService(firestore: mockFirestore);
 
   group('ChatBookingScreen', () {
-    testWidgets('should display chat interface', (final WidgetTester tester) async {
+    testWidgets('should display chat interface',
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(

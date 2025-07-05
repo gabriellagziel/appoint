@@ -9,7 +9,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('AdminService', () {
-      // ignore: unused_local_variable
+    // ignore: unused_local_variable
     late AdminService adminService;
     late MockFirebaseFirestore mockFirestore;
 

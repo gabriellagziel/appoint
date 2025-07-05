@@ -17,7 +17,8 @@ Future<void> main() async {
       ];
 
       final container = ProviderContainer(overrides: [
-        userNotificationsProvider.overrideWith((final ref) async => notifications),
+        userNotificationsProvider
+            .overrideWith((final ref) async => notifications),
       ]);
 
       await tester.pumpWidget(
