@@ -721,33 +721,33 @@
   "@errorLoadingStats": {
     "description": "errorLoadingStats description"
   },
-  "appointment": "appointment (TRANSLATE)",
+  "appointment": "Appuntamento",
   "@appointment": {
-    "description": "appointment description"
+    "description": "Appointment label"
   },
-  "from": "from (TRANSLATE)",
+  "from": "Da",
   "@from": {
-    "description": "from description"
+    "description": "From label"
   },
-  "phone": "phone (TRANSLATE)",
+  "phone": "Telefono",
   "@phone": {
-    "description": "phone description"
+    "description": "Phone label"
   },
   "noRouteDefined": "noRouteDefined (TRANSLATE)",
   "@noRouteDefined": {
     "description": "noRouteDefined description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "Dettagli Riunione",
   "@meetingDetails": {
-    "description": "meetingDetails description"
+    "description": "Meeting details label"
   },
-  "meetingId": "meetingId (TRANSLATE)",
+  "meetingId": "ID Riunione",
   "@meetingId": {
-    "description": "meetingId description"
+    "description": "Meeting ID label"
   },
-  "creator": "creator (TRANSLATE)",
+  "creator": "Creatore",
   "@creator": {
-    "description": "creator description"
+    "description": "Creator label"
   },
   "context": "context (TRANSLATE)",
   "@context": {
@@ -777,11 +777,11 @@
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "Prenotazioni",
   "@bookings": {
-    "description": "Description"
+    "description": "Bookings section title"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "Libreria Contenuti",
   "authErrorUserNotFound": "Nessun account trovato con questo indirizzo email.",
   "authErrorWrongPassword": "Password errata. Riprova.",
   "authErrorInvalidEmail": "Inserisci un indirizzo email valido.",
