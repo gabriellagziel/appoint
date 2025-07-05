@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:cloud_functions/cloud_functions.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:appoint/services/payment_service.dart';
 
 class MockFirebaseFunctions extends Mock implements FirebaseFunctions {}
@@ -8,6 +9,8 @@ class MockFirebaseFunctions extends Mock implements FirebaseFunctions {}
 class MockHttpsCallable extends Mock implements HttpsCallable {}
 
 class MockHttpsCallableResult extends Mock implements HttpsCallableResult {}
+
+class MockStripe extends Mock implements Stripe {}
 
 void main() {
   group('PaymentService', () {
@@ -173,6 +176,105 @@ void main() {
             equals('Payment successful!'));
         expect(paymentService.getPaymentStatusMessage(PaymentStatus.failed),
             equals('Payment failed. Please try again.'));
+      });
+    });
+
+    // New foundational error handling tests
+    group('PaymentService Error Handling', () {
+      test('should handle card_declined error from Firebase Functions',
+          () async {
+        // Arrange
+        const amount = 50.0;
+
+        when(() => mockFunctions.httpsCallable('createPaymentIntent'))
+            .thenReturn(mockCallable);
+        when(() => mockCallable.call({'amount': amount}))
+            .thenThrow(FirebaseFunctionsException(
+          code: 'card_declined',
+          message: 'Your card was declined',
+        ));
+
+        // Act
+        final result = await paymentService.handlePayment(amount);
+
+        // Assert
+        expect(result, equals(PaymentStatus.failed));
+      });
+
+      test('should handle rate_limit error from Firebase Functions', () async {
+        // Arrange
+        const amount = 50.0;
+
+        when(() => mockFunctions.httpsCallable('createPaymentIntent'))
+            .thenReturn(mockCallable);
+        when(() => mockCallable.call({'amount': amount}))
+            .thenThrow(FirebaseFunctionsException(
+          code: 'rate_limit',
+          message: 'Too many requests',
+        ));
+
+        // Act
+        final result = await paymentService.handlePayment(amount);
+
+        // Assert
+        expect(result, equals(PaymentStatus.failed));
+      });
+
+      test('should handle insufficient_funds error', () async {
+        // Arrange
+        const amount = 50.0;
+
+        when(() => mockFunctions.httpsCallable('createPaymentIntent'))
+            .thenReturn(mockCallable);
+        when(() => mockCallable.call({'amount': amount}))
+            .thenThrow(FirebaseFunctionsException(
+          code: 'insufficient_funds',
+          message: 'Insufficient funds',
+        ));
+
+        // Act
+        final result = await paymentService.handlePayment(amount);
+
+        // Assert
+        expect(result, equals(PaymentStatus.failed));
+      });
+
+      test('should handle expired_card error', () async {
+        // Arrange
+        const amount = 50.0;
+
+        when(() => mockFunctions.httpsCallable('createPaymentIntent'))
+            .thenReturn(mockCallable);
+        when(() => mockCallable.call({'amount': amount}))
+            .thenThrow(FirebaseFunctionsException(
+          code: 'expired_card',
+          message: 'Card has expired',
+        ));
+
+        // Act
+        final result = await paymentService.handlePayment(amount);
+
+        // Assert
+        expect(result, equals(PaymentStatus.failed));
+      });
+
+      test('should handle invalid_cvc error', () async {
+        // Arrange
+        const amount = 50.0;
+
+        when(() => mockFunctions.httpsCallable('createPaymentIntent'))
+            .thenReturn(mockCallable);
+        when(() => mockCallable.call({'amount': amount}))
+            .thenThrow(FirebaseFunctionsException(
+          code: 'invalid_cvc',
+          message: 'Invalid CVC',
+        ));
+
+        // Act
+        final result = await paymentService.handlePayment(amount);
+
+        // Assert
+        expect(result, equals(PaymentStatus.failed));
       });
     });
   });
