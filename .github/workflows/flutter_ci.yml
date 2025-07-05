@@ -48,6 +48,18 @@ jobs:
           flags: unit
           fail_ci_if_error: true
 
+      - name: Enforce 60% coverage gate
+        shell: bash
+        run: |
+          total_lines=$(grep -n "LF:" coverage/lcov.info | wc -l)
+          covered_lines=$(grep -n "LH:" coverage/lcov.info | wc -l)
+          pct=$((100*covered_lines/total_lines))
+          echo "Line coverage: $pct%"
+          if [ $pct -lt 60 ]; then
+            echo "❌ Coverage $pct% < 60% threshold"
+            exit 1
+          fi
+
       - name: Launch AVD
         uses: reactivecircus/android-emulator-runner@v2
         with:
