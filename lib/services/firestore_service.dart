@@ -13,7 +13,8 @@ class FirestoreService {
   }
 
   // Generic method to get collection with error handling
-  static Stream<QuerySnapshot> getCollectionStream(final String collectionPath) {
+  static Stream<QuerySnapshot> getCollectionStream(
+      final String collectionPath) {
     try {
       return _firestore.collection(collectionPath).snapshots();
     } catch (e) {
@@ -56,8 +57,8 @@ class FirestoreService {
   }
 
   // Generic method to update document with error handling
-  static Future<void> updateDocument(final String collectionPath, final String documentId,
-      final Map<String, dynamic> data) async {
+  static Future<void> updateDocument(final String collectionPath,
+      final String documentId, final Map<String, dynamic> data) async {
     try {
       await _firestore.collection(collectionPath).doc(documentId).update(data);
     } catch (e) {

@@ -15,7 +15,8 @@ class StaffAvailabilityService {
         .get();
 
     return snapshot.docs
-        .map((final doc) => StaffAvailability.fromJson({...doc.data(), 'id': doc.id}))
+        .map((final doc) =>
+            StaffAvailability.fromJson({...doc.data(), 'id': doc.id}))
         .toList();
   }
 
@@ -33,14 +34,16 @@ class StaffAvailabilityService {
         {...doc.docs.first.data(), 'id': doc.docs.first.id});
   }
 
-  Future<void> updateStaffAvailability(final StaffAvailability availability) async {
+  Future<void> updateStaffAvailability(
+      final StaffAvailability availability) async {
     await _firestore
         .collection('staff_availability')
         .doc(availability.id)
         .set(availability.toJson());
   }
 
-  Future<void> createStaffAvailability(final StaffAvailability availability) async {
+  Future<void> createStaffAvailability(
+      final StaffAvailability availability) async {
     await _firestore
         .collection('staff_availability')
         .add(availability.toJson());

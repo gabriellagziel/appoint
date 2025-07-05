@@ -1,7 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-final weeklyUsageProvider = StateNotifierProvider<WeeklyUsageNotifier, int>((final ref) {
+final weeklyUsageProvider =
+    StateNotifierProvider<WeeklyUsageNotifier, int>((final ref) {
   return WeeklyUsageNotifier();
 });
 
@@ -17,12 +18,12 @@ class WeeklyUsageNotifier extends StateNotifier<int> {
     final prefs = await SharedPreferences.getInstance();
     final lastReset = prefs.getString(_lastResetKey);
     final now = DateTime.now();
-    
+
     // Check if we need to reset (new week)
     if (lastReset != null) {
       final lastResetDate = DateTime.parse(lastReset);
       final daysSinceReset = now.difference(lastResetDate).inDays;
-      
+
       if (daysSinceReset >= 7) {
         // Reset for new week
         await _resetWeeklyUsage();
@@ -32,7 +33,7 @@ class WeeklyUsageNotifier extends StateNotifier<int> {
       // First time, set last reset to now
       await prefs.setString(_lastResetKey, now.toIso8601String());
     }
-    
+
     // Load current usage
     final usage = prefs.getInt(_usageKey) ?? 0;
     state = usage;
@@ -59,4 +60,4 @@ class WeeklyUsageNotifier extends StateNotifier<int> {
     final timestamp = DateTime.now().millisecondsSinceEpoch;
     return 'UPGRADE_${timestamp.toString().substring(timestamp.toString().length - 6)}';
   }
-} 
+}

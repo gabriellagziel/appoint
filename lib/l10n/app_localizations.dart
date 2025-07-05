@@ -208,7 +208,7 @@ abstract class AppLocalizations {
   /// **'Refresh'**
   String get refresh;
 
-  /// Home navigation label
+  /// Home screen label
   ///
   /// In en, this message translates to:
   /// **'Home'**
@@ -220,19 +220,19 @@ abstract class AppLocalizations {
   /// **'No sessions yet'**
   String get noSessionsYet;
 
-  /// OK button text
+  /// OK button label
   ///
   /// In en, this message translates to:
   /// **'OK'**
   String get ok;
 
-  /// Playtime landing choose mode message
+  /// Prompt to choose play mode
   ///
   /// In en, this message translates to:
   /// **'Choose your play mode:'**
   String get playtimeLandingChooseMode;
 
-  /// Sign up button text
+  /// Sign up button label
   ///
   /// In en, this message translates to:
   /// **'Sign Up'**
@@ -244,7 +244,7 @@ abstract class AppLocalizations {
   /// **'Schedule Message'**
   String get scheduleMessage;
 
-  /// Decline button
+  /// Decline button label
   ///
   /// In en, this message translates to:
   /// **'Decline'**
@@ -256,7 +256,7 @@ abstract class AppLocalizations {
   /// **'Admin Broadcast'**
   String get adminBroadcast;
 
-  /// Login button text
+  /// Login button label
   ///
   /// In en, this message translates to:
   /// **'Login'**
@@ -286,13 +286,13 @@ abstract class AppLocalizations {
   /// **'Success'**
   String get success;
 
-  /// Undo button text
+  /// Undo button label
   ///
   /// In en, this message translates to:
   /// **'Undo'**
   String get undo;
 
-  /// Opened status with count
+  /// Opened count label
   ///
   /// In en, this message translates to:
   /// **'Opened: {count}'**
@@ -310,19 +310,19 @@ abstract class AppLocalizations {
   /// **'Message sent successfully'**
   String get messageSentSuccessfully;
 
-  /// Redo button text
+  /// Redo button label
   ///
   /// In en, this message translates to:
   /// **'Redo'**
   String get redo;
 
-  /// Next button text
+  /// Next button label
   ///
   /// In en, this message translates to:
   /// **'Next'**
   String get next;
 
-  /// Search placeholder text
+  /// Search placeholder
   ///
   /// In en, this message translates to:
   /// **'Search'**
@@ -340,853 +340,847 @@ abstract class AppLocalizations {
   /// **'Created: {date}'**
   String created(Object date);
 
-  /// Revoke access button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Revoke Access'**
   String get revokeAccess;
 
-  /// Save group for recognition label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Save Group for Recognition'**
   String get saveGroupForRecognition;
 
-  /// Live playtime scheduled message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Live playtime scheduled!'**
   String get playtimeLiveScheduled;
 
-  /// Revoke access confirmation message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Are you sure you want to revoke access?'**
   String get revokeAccessConfirmation;
 
-  /// Download button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Download'**
   String get download;
 
-  /// Password field label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Password'**
   String get password;
 
-  /// Error loading family links message
+  /// No description provided for @errorLoadingFamilyLinks.
   ///
   /// In en, this message translates to:
   /// **'Error loading family links: {error}'**
   String errorLoadingFamilyLinks(Object error);
 
-  /// Cancel button text
+  /// Cancel button label
   ///
   /// In en, this message translates to:
   /// **'Cancel'**
   String get cancel;
 
-  /// Create button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Create'**
   String get playtimeCreate;
 
-  /// Failed to action privacy request message
+  /// No description provided for @failedToActionPrivacyRequest.
   ///
   /// In en, this message translates to:
   /// **'Failed to action privacy request {action}: {error}'**
   String failedToActionPrivacyRequest(Object action, Object error);
 
-  /// The title of the application
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'APP-OINT'**
   String get appTitle;
 
-  /// Accept button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Accept'**
   String get accept;
 
-  /// Virtual play mode label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Virtual Play'**
   String get playtimeModeVirtual;
 
-  /// Playtime description
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Enjoy live or virtual games with your friends!'**
   String get playtimeDescription;
 
-  /// Delete button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Delete'**
   String get delete;
 
-  /// Virtual playtime started message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Virtual playtime started!'**
   String get playtimeVirtualStarted;
 
-  /// Create your first game message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Create your first game'**
   String get createYourFirstGame;
 
-  /// Participants label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Participants'**
   String get participants;
 
-  /// Recipients label with count
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Recipients: {count}'**
   String recipients(Object count);
 
-  /// No search results message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'No results found'**
   String get noResults;
 
-  /// Yes button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Yes'**
   String get yes;
 
-  /// Invite button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Invite'**
   String get invite;
 
-  /// Live play mode label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Live Play'**
   String get playtimeModeLive;
 
-  /// Done button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Done'**
   String get done;
 
-  /// Default share message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Let\'s meet via Appoint!'**
   String get defaultShareMessage;
 
-  /// No button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'No'**
   String get no;
 
-  /// Playtime hub title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Playtime Hub'**
   String get playtimeHub;
 
-  /// Error message
-  ///
-  /// In en, this message translates to:
-  /// **'Error'**
-  String get error;
-
-  /// Create live session button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Create Live Session'**
   String get createLiveSession;
 
-  /// Enable notifications label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Enable Notifications'**
   String get enableNotifications;
 
-  /// Invited status with date
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Invited: {date}'**
   String invited(Object date);
 
-  /// Content label with content
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Content: {content}'**
   String content(Object content);
 
-  /// Meeting shared successfully message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Meeting shared successfully'**
   String get meetingSharedSuccessfully;
 
-  /// Welcome to playtime message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Welcome to Playtime'**
   String get welcomeToPlaytime;
 
-  /// View all button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'View All'**
   String get viewAll;
 
-  /// Virtual play label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Virtual Play'**
   String get playtimeVirtual;
 
-  /// Staff screen TBD message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Staff screen coming soon'**
   String get staffScreenTBD;
 
-  /// Cut button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Cut'**
   String get cut;
 
-  /// Invite cancelled successfully message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Invite cancelled successfully'**
   String get inviteCancelledSuccessfully;
 
-  /// Retry button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Retry'**
   String get retry;
 
-  /// Compose broadcast message title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Compose Broadcast Message'**
   String get composeBroadcastMessage;
 
-  /// Send now button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Send Now'**
   String get sendNow;
 
-  /// No games yet message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'No games yet'**
   String get noGamesYet;
 
-  /// Select button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Select'**
   String get select;
 
-  /// About navigation label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'About'**
   String get about;
 
-  /// Choose button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Choose'**
   String get choose;
 
-  /// Profile navigation label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Profile'**
   String get profile;
 
-  /// Remove child button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Remove Child'**
   String get removeChild;
 
-  /// Status label with value
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Status: {status}'**
   String status(Object status);
 
-  /// Logout button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Logout'**
   String get logout;
 
-  /// Paste button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Paste'**
   String get paste;
 
-  /// Welcome message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Welcome'**
   String get welcome;
 
-  /// Create playtime session button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Create a Playtime Session'**
   String get playtimeCreateSession;
 
-  /// Family members label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Family Members'**
   String get familyMembers;
 
-  /// Upload button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Upload'**
   String get upload;
 
-  /// Upcoming sessions label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Upcoming Sessions'**
   String get upcomingSessions;
 
-  /// Enter group name placeholder
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Enter group name'**
   String get enterGroupName;
 
-  /// Confirm button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Confirm'**
   String get confirm;
 
-  /// Live play label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Live Play'**
   String get playtimeLive;
 
-  /// Error loading invites message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Error loading invites'**
   String get errorLoadingInvites;
 
-  /// Targeting filters label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Targeting Filters'**
   String get targetingFilters;
 
-  /// Pick video button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Pick Video'**
   String get pickVideo;
 
-  /// Game deleted message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Game deleted'**
   String get playtimeGameDeleted;
 
-  /// Schedule for later button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Schedule for Later'**
   String get scheduleForLater;
 
-  /// Access revoked successfully message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Access revoked successfully'**
   String get accessRevokedSuccessfully;
 
-  /// Type label with value
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Type: {type}'**
   String type(Object type);
 
-  /// Checking permissions message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Checking permissions...'**
   String get checkingPermissions;
 
-  /// Copy button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Copy'**
   String get copy;
 
-  /// Yes cancel button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Yes, Cancel'**
   String get yesCancel;
 
-  /// Email field label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Email'**
   String get email;
 
-  /// Share on WhatsApp button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Share on WhatsApp'**
   String get shareOnWhatsApp;
 
-  /// Notification settings title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Notification Settings'**
   String get notificationSettings;
 
-  /// My profile title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'My Profile'**
   String get myProfile;
 
-  /// Revoke button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Revoke'**
   String get revoke;
 
-  /// No broadcast messages message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'No messages yet'**
   String get noBroadcastMessages;
 
-  /// Request type label with value
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Request Type: {type}'**
   String requestType(Object type);
 
-  /// Notifications title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Notifications'**
   String get notifications;
 
-  /// Details label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Details'**
   String get details;
 
-  /// Cancel invite button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Cancel Invite'**
   String get cancelInvite;
 
-  /// Create new button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Create New'**
   String get createNew;
 
-  /// Settings navigation label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Settings'**
   String get settings;
 
-  /// Playtime reject button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Reject'**
   String get playtimeReject;
 
-  /// Error loading profile message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Error loading profile'**
   String get errorLoadingProfile;
 
-  /// Edit button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Edit'**
   String get edit;
 
-  /// Add button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Add'**
   String get add;
 
-  /// Game approved message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Game approved'**
   String get playtimeGameApproved;
 
-  /// Forgot password link text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Forgot Password?'**
   String get forgotPassword;
 
-  /// Family dashboard title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Family Dashboard'**
   String get familyDashboard;
 
-  /// Loading message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Loading...'**
   String get loading;
 
-  /// Quick actions label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Quick Actions'**
   String get quickActions;
 
-  /// Playtime title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Playtime'**
   String get playtimeTitle;
 
-  /// OTP resent successfully message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'OTP resent successfully'**
   String get otpResentSuccessfully;
 
-  /// Error checking permissions message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Error checking permissions: {error}'**
   String errorCheckingPermissions(Object error);
 
-  /// Client screen TBD message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Client screen coming soon'**
   String get clientScreenTBD;
 
-  /// FCM token label
+  /// No description provided for @fcmToken.
   ///
   /// In en, this message translates to:
   /// **'FCM Token: {token}'**
   String fcmToken(Object token);
 
-  /// Pick image button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Pick Image'**
   String get pickImage;
 
-  /// Previous button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Previous'**
   String get previous;
 
-  /// No profile found message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'No profile found'**
   String get noProfileFound;
 
-  /// No family members yet message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'No family members yet'**
   String get noFamilyMembersYet;
 
-  /// Media optional label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Media (Optional)'**
   String get mediaOptional;
 
-  /// Message saved successfully message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Message saved successfully'**
   String get messageSavedSuccessfully;
 
-  /// Scheduled for label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Scheduled for'**
   String get scheduledFor;
 
-  /// Dashboard title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Dashboard'**
   String get dashboard;
 
-  /// No permission for broadcast message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'No permission for broadcast'**
   String get noPermissionForBroadcast;
 
-  /// Playtime admin panel title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Playtime Games – Admin'**
   String get playtimeAdminPanelTitle;
 
-  /// Invite detail title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Invite Details'**
   String get inviteDetail;
 
-  /// Scheduled status with date
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Scheduled: {date}'**
   String scheduled(Object date);
 
-  /// Failed to resend OTP message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Failed to resend OTP: {error}'**
   String failedToResendOtp(Object error);
 
-  /// Scheduling label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Scheduling'**
   String get scheduling;
 
-  /// Error saving message message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Error saving message: {error}'**
   String errorSavingMessage(Object error);
 
-  /// Save button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Save'**
   String get save;
 
-  /// Playtime approve button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Approve'**
   String get playtimeApprove;
 
-  /// Create your first session message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Create your first session'**
   String get createYourFirstSession;
 
-  /// Game rejected message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Game rejected'**
   String get playtimeGameRejected;
 
-  /// Failed to revoke access message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Failed to revoke access: {error}'**
   String failedToRevokeAccess(Object error);
 
-  /// Recent games label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Recent Games'**
   String get recentGames;
 
-  /// Customize message button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Customize Message'**
   String get customizeMessage;
 
-  /// Failed to cancel invite message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Failed to cancel invite: {error}'**
   String failedToCancelInvite(Object error);
 
-  /// Error sending message message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Error sending message: {error}'**
   String errorSendingMessage(Object error);
 
-  /// Confirm password field label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Confirm Password'**
   String get confirmPassword;
 
-  /// Error loading privacy requests message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Error loading privacy requests: {error}'**
   String errorLoadingPrivacyRequests(Object error);
 
-  /// Connected children label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Connected Children'**
   String get connectedChildren;
 
-  /// Share button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Share'**
   String get share;
 
-  /// Enter game name label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Enter game name'**
   String get playtimeEnterGameName;
 
-  /// Please login for family features message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Please login to access family features'**
   String get pleaseLoginForFamilyFeatures;
 
-  /// My invites title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'My Invites'**
   String get myInvites;
 
-  /// Create game button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Create Game'**
   String get createGame;
 
-  /// Group name optional label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Group Name (Optional)'**
   String get groupNameOptional;
 
-  /// No playtime sessions message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'No playtime sessions found.'**
   String get playtimeNoSessions;
 
-  /// Admin screen TBD message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Admin screen coming soon'**
   String get adminScreenTBD;
 
-  /// Playtime parent dashboard title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Playtime Dashboard'**
   String get playtimeParentDashboardTitle;
 
-  /// Close button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Close'**
   String get close;
 
-  /// Known group detected message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Known group detected'**
   String get knownGroupDetected;
 
-  /// Back button text
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Back'**
   String get back;
 
-  /// Choose game label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Choose a game'**
   String get playtimeChooseGame;
 
-  /// Manage permissions button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Manage Permissions'**
   String get managePermissions;
 
-  /// Poll options label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Poll Options'**
   String get pollOptions;
 
-  /// Clicked status with count
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Clicked: {count}'**
   String clicked(Object count);
 
-  /// Link label with url
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Link: {link}'**
   String link(Object link);
 
-  /// Meeting ready message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Your meeting is ready! Join now'**
   String get meetingReadyMessage;
 
-  /// Pending invites label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Pending Invites'**
   String get pendingInvites;
 
-  /// Status colon label with value
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Status: {status}'**
@@ -1198,41 +1192,509 @@ abstract class AppLocalizations {
   /// **'Please log in to view your profile.'**
   String get pleaseLoginToViewProfile;
 
-  /// Admin metrics title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Admin Metrics'**
   String get adminMetrics;
 
-  /// Overview section title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Overview'**
   String get overview;
 
-  /// Bookings section title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Bookings'**
   String get bookings;
 
-  /// Users section title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Users'**
   String get users;
 
-  /// Revenue section title
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Revenue'**
   String get revenue;
 
-  /// Content library title
+  /// No description provided for @contentLibrary.
   ///
   /// In en, this message translates to:
   /// **'Content Library'**
   String get contentLibrary;
+
+  /// Firebase Auth user-not-found error message
+  ///
+  /// In en, this message translates to:
+  /// **'No account found with this email address.'**
+  String get authErrorUserNotFound;
+
+  /// Firebase Auth wrong-password error message
+  ///
+  /// In en, this message translates to:
+  /// **'Incorrect password. Please try again.'**
+  String get authErrorWrongPassword;
+
+  /// Firebase Auth invalid-email error message
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid email address.'**
+  String get authErrorInvalidEmail;
+
+  /// Firebase Auth user-disabled error message
+  ///
+  /// In en, this message translates to:
+  /// **'This account has been disabled. Please contact support.'**
+  String get authErrorUserDisabled;
+
+  /// Firebase Auth weak-password error message
+  ///
+  /// In en, this message translates to:
+  /// **'Password is too weak. Please choose a stronger password.'**
+  String get authErrorWeakPassword;
+
+  /// Firebase Auth email-already-in-use error message
+  ///
+  /// In en, this message translates to:
+  /// **'An account with this email already exists.'**
+  String get authErrorEmailAlreadyInUse;
+
+  /// Firebase Auth too-many-requests error message
+  ///
+  /// In en, this message translates to:
+  /// **'Too many failed attempts. Please try again later.'**
+  String get authErrorTooManyRequests;
+
+  /// Firebase Auth operation-not-allowed error message
+  ///
+  /// In en, this message translates to:
+  /// **'This sign-in method is not enabled. Please contact support.'**
+  String get authErrorOperationNotAllowed;
+
+  /// Firebase Auth invalid-credential error message
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid credentials. Please try again.'**
+  String get authErrorInvalidCredential;
+
+  /// Firebase Auth account-exists-with-different-credential error message
+  ///
+  /// In en, this message translates to:
+  /// **'An account already exists with this email using a different sign-in method.'**
+  String get authErrorAccountExistsWithDifferentCredential;
+
+  /// Firebase Auth credential-already-in-use error message
+  ///
+  /// In en, this message translates to:
+  /// **'These credentials are already associated with another account.'**
+  String get authErrorCredentialAlreadyInUse;
+
+  /// Firebase Auth network-request-failed error message
+  ///
+  /// In en, this message translates to:
+  /// **'Network error. Please check your connection and try again.'**
+  String get authErrorNetworkRequestFailed;
+
+  /// Title for social account conflict dialog
+  ///
+  /// In en, this message translates to:
+  /// **'Account Already Exists'**
+  String get socialAccountConflictTitle;
+
+  /// Message for social account conflict dialog
+  ///
+  /// In en, this message translates to:
+  /// **'An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?'**
+  String socialAccountConflictMessage(Object email);
+
+  /// Button to link social accounts
+  ///
+  /// In en, this message translates to:
+  /// **'Link Accounts'**
+  String get linkAccounts;
+
+  /// Button to sign in with existing method
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in with existing method'**
+  String get signInWithExistingMethod;
+
+  /// No description provided for @authErrorRequiresRecentLogin.
+  ///
+  /// In en, this message translates to:
+  /// **'Please log in again to perform this operation.'**
+  String get authErrorRequiresRecentLogin;
+
+  /// No description provided for @authErrorAppNotAuthorized.
+  ///
+  /// In en, this message translates to:
+  /// **'This app is not authorized to use Firebase Authentication.'**
+  String get authErrorAppNotAuthorized;
+
+  /// No description provided for @authErrorInvalidVerificationCode.
+  ///
+  /// In en, this message translates to:
+  /// **'The verification code is invalid.'**
+  String get authErrorInvalidVerificationCode;
+
+  /// No description provided for @authErrorInvalidVerificationId.
+  ///
+  /// In en, this message translates to:
+  /// **'The verification ID is invalid.'**
+  String get authErrorInvalidVerificationId;
+
+  /// No description provided for @authErrorMissingVerificationCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter the verification code.'**
+  String get authErrorMissingVerificationCode;
+
+  /// No description provided for @authErrorMissingVerificationId.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing verification ID.'**
+  String get authErrorMissingVerificationId;
+
+  /// No description provided for @authErrorInvalidPhoneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'The phone number is invalid.'**
+  String get authErrorInvalidPhoneNumber;
+
+  /// No description provided for @authErrorMissingPhoneNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a phone number.'**
+  String get authErrorMissingPhoneNumber;
+
+  /// No description provided for @authErrorQuotaExceeded.
+  ///
+  /// In en, this message translates to:
+  /// **'The SMS quota for this project has been exceeded. Please try again later.'**
+  String get authErrorQuotaExceeded;
+
+  /// No description provided for @authErrorCodeExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'The verification code has expired. Please request a new one.'**
+  String get authErrorCodeExpired;
+
+  /// No description provided for @authErrorSessionExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Your session has expired. Please log in again.'**
+  String get authErrorSessionExpired;
+
+  /// No description provided for @authErrorMultiFactorAuthRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Multi-factor authentication is required.'**
+  String get authErrorMultiFactorAuthRequired;
+
+  /// No description provided for @authErrorMultiFactorInfoNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'Multi-factor information not found.'**
+  String get authErrorMultiFactorInfoNotFound;
+
+  /// No description provided for @authErrorMissingMultiFactorSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing multi-factor session.'**
+  String get authErrorMissingMultiFactorSession;
+
+  /// No description provided for @authErrorInvalidMultiFactorSession.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid multi-factor session.'**
+  String get authErrorInvalidMultiFactorSession;
+
+  /// No description provided for @authErrorSecondFactorAlreadyInUse.
+  ///
+  /// In en, this message translates to:
+  /// **'This second factor is already in use.'**
+  String get authErrorSecondFactorAlreadyInUse;
+
+  /// No description provided for @authErrorMaximumSecondFactorCountExceeded.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum number of second factors exceeded.'**
+  String get authErrorMaximumSecondFactorCountExceeded;
+
+  /// No description provided for @authErrorUnsupportedFirstFactor.
+  ///
+  /// In en, this message translates to:
+  /// **'Unsupported first factor for multi-factor authentication.'**
+  String get authErrorUnsupportedFirstFactor;
+
+  /// No description provided for @authErrorEmailChangeNeedsVerification.
+  ///
+  /// In en, this message translates to:
+  /// **'Email change requires verification.'**
+  String get authErrorEmailChangeNeedsVerification;
+
+  /// No description provided for @authErrorPhoneNumberAlreadyExists.
+  ///
+  /// In en, this message translates to:
+  /// **'This phone number is already in use.'**
+  String get authErrorPhoneNumberAlreadyExists;
+
+  /// No description provided for @authErrorInvalidPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'The password is invalid or too weak.'**
+  String get authErrorInvalidPassword;
+
+  /// No description provided for @authErrorInvalidIdToken.
+  ///
+  /// In en, this message translates to:
+  /// **'The ID token is invalid.'**
+  String get authErrorInvalidIdToken;
+
+  /// No description provided for @authErrorIdTokenExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'The ID token has expired.'**
+  String get authErrorIdTokenExpired;
+
+  /// No description provided for @authErrorIdTokenRevoked.
+  ///
+  /// In en, this message translates to:
+  /// **'The ID token has been revoked.'**
+  String get authErrorIdTokenRevoked;
+
+  /// No description provided for @authErrorInternalError.
+  ///
+  /// In en, this message translates to:
+  /// **'An internal error occurred. Please try again.'**
+  String get authErrorInternalError;
+
+  /// No description provided for @authErrorInvalidArgument.
+  ///
+  /// In en, this message translates to:
+  /// **'An invalid argument was provided.'**
+  String get authErrorInvalidArgument;
+
+  /// No description provided for @authErrorInvalidClaims.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid custom claims provided.'**
+  String get authErrorInvalidClaims;
+
+  /// No description provided for @authErrorInvalidContinueUri.
+  ///
+  /// In en, this message translates to:
+  /// **'The continue URL is invalid.'**
+  String get authErrorInvalidContinueUri;
+
+  /// No description provided for @authErrorInvalidCreationTime.
+  ///
+  /// In en, this message translates to:
+  /// **'The creation time is invalid.'**
+  String get authErrorInvalidCreationTime;
+
+  /// No description provided for @authErrorInvalidDisabledField.
+  ///
+  /// In en, this message translates to:
+  /// **'The disabled field value is invalid.'**
+  String get authErrorInvalidDisabledField;
+
+  /// No description provided for @authErrorInvalidDisplayName.
+  ///
+  /// In en, this message translates to:
+  /// **'The display name is invalid.'**
+  String get authErrorInvalidDisplayName;
+
+  /// No description provided for @authErrorInvalidDynamicLinkDomain.
+  ///
+  /// In en, this message translates to:
+  /// **'The dynamic link domain is invalid.'**
+  String get authErrorInvalidDynamicLinkDomain;
+
+  /// No description provided for @authErrorInvalidEmailVerified.
+  ///
+  /// In en, this message translates to:
+  /// **'The email verified value is invalid.'**
+  String get authErrorInvalidEmailVerified;
+
+  /// No description provided for @authErrorInvalidHashAlgorithm.
+  ///
+  /// In en, this message translates to:
+  /// **'The hash algorithm is invalid.'**
+  String get authErrorInvalidHashAlgorithm;
+
+  /// No description provided for @authErrorInvalidHashBlockSize.
+  ///
+  /// In en, this message translates to:
+  /// **'The hash block size is invalid.'**
+  String get authErrorInvalidHashBlockSize;
+
+  /// No description provided for @authErrorInvalidHashDerivedKeyLength.
+  ///
+  /// In en, this message translates to:
+  /// **'The hash derived key length is invalid.'**
+  String get authErrorInvalidHashDerivedKeyLength;
+
+  /// No description provided for @authErrorInvalidHashKey.
+  ///
+  /// In en, this message translates to:
+  /// **'The hash key is invalid.'**
+  String get authErrorInvalidHashKey;
+
+  /// No description provided for @authErrorInvalidHashMemoryCost.
+  ///
+  /// In en, this message translates to:
+  /// **'The hash memory cost is invalid.'**
+  String get authErrorInvalidHashMemoryCost;
+
+  /// No description provided for @authErrorInvalidHashParallelization.
+  ///
+  /// In en, this message translates to:
+  /// **'The hash parallelization is invalid.'**
+  String get authErrorInvalidHashParallelization;
+
+  /// No description provided for @authErrorInvalidHashRounds.
+  ///
+  /// In en, this message translates to:
+  /// **'The hash rounds value is invalid.'**
+  String get authErrorInvalidHashRounds;
+
+  /// No description provided for @authErrorInvalidHashSaltSeparator.
+  ///
+  /// In en, this message translates to:
+  /// **'The hash salt separator is invalid.'**
+  String get authErrorInvalidHashSaltSeparator;
+
+  /// No description provided for @authErrorInvalidLastSignInTime.
+  ///
+  /// In en, this message translates to:
+  /// **'The last sign-in time is invalid.'**
+  String get authErrorInvalidLastSignInTime;
+
+  /// No description provided for @authErrorInvalidPageToken.
+  ///
+  /// In en, this message translates to:
+  /// **'The page token is invalid.'**
+  String get authErrorInvalidPageToken;
+
+  /// No description provided for @authErrorInvalidProviderData.
+  ///
+  /// In en, this message translates to:
+  /// **'The provider data is invalid.'**
+  String get authErrorInvalidProviderData;
+
+  /// No description provided for @authErrorInvalidProviderId.
+  ///
+  /// In en, this message translates to:
+  /// **'The provider ID is invalid.'**
+  String get authErrorInvalidProviderId;
+
+  /// No description provided for @authErrorInvalidSessionCookieDuration.
+  ///
+  /// In en, this message translates to:
+  /// **'The session cookie duration is invalid.'**
+  String get authErrorInvalidSessionCookieDuration;
+
+  /// No description provided for @authErrorInvalidUid.
+  ///
+  /// In en, this message translates to:
+  /// **'The UID is invalid.'**
+  String get authErrorInvalidUid;
+
+  /// No description provided for @authErrorInvalidUserImport.
+  ///
+  /// In en, this message translates to:
+  /// **'The user import record is invalid.'**
+  String get authErrorInvalidUserImport;
+
+  /// No description provided for @authErrorMaximumUserCountExceeded.
+  ///
+  /// In en, this message translates to:
+  /// **'Maximum user import count exceeded.'**
+  String get authErrorMaximumUserCountExceeded;
+
+  /// No description provided for @authErrorMissingAndroidPkgName.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing Android package name.'**
+  String get authErrorMissingAndroidPkgName;
+
+  /// No description provided for @authErrorMissingContinueUri.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing continue URL.'**
+  String get authErrorMissingContinueUri;
+
+  /// No description provided for @authErrorMissingHashAlgorithm.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing hash algorithm.'**
+  String get authErrorMissingHashAlgorithm;
+
+  /// No description provided for @authErrorMissingIosBundleId.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing iOS bundle ID.'**
+  String get authErrorMissingIosBundleId;
+
+  /// No description provided for @authErrorMissingUid.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing UID.'**
+  String get authErrorMissingUid;
+
+  /// No description provided for @authErrorMissingOauthClientSecret.
+  ///
+  /// In en, this message translates to:
+  /// **'Missing OAuth client secret.'**
+  String get authErrorMissingOauthClientSecret;
+
+  /// No description provided for @authErrorProjectNotFound.
+  ///
+  /// In en, this message translates to:
+  /// **'Firebase project not found.'**
+  String get authErrorProjectNotFound;
+
+  /// No description provided for @authErrorReservedClaims.
+  ///
+  /// In en, this message translates to:
+  /// **'Reserved claims provided.'**
+  String get authErrorReservedClaims;
+
+  /// No description provided for @authErrorSessionCookieExpired.
+  ///
+  /// In en, this message translates to:
+  /// **'Session cookie has expired.'**
+  String get authErrorSessionCookieExpired;
+
+  /// No description provided for @authErrorSessionCookieRevoked.
+  ///
+  /// In en, this message translates to:
+  /// **'Session cookie has been revoked.'**
+  String get authErrorSessionCookieRevoked;
+
+  /// No description provided for @authErrorUidAlreadyExists.
+  ///
+  /// In en, this message translates to:
+  /// **'The UID is already in use.'**
+  String get authErrorUidAlreadyExists;
+
+  /// No description provided for @authErrorUnauthorizedContinueUri.
+  ///
+  /// In en, this message translates to:
+  /// **'The continue URL domain is not whitelisted.'**
+  String get authErrorUnauthorizedContinueUri;
+
+  /// No description provided for @authErrorUnknown.
+  ///
+  /// In en, this message translates to:
+  /// **'An unknown authentication error occurred.'**
+  String get authErrorUnknown;
 }
 
 class _AppLocalizationsDelegate

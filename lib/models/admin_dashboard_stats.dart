@@ -121,4 +121,4 @@ class MonetizationSettings with _$MonetizationSettings {
 
   factory MonetizationSettings.fromJson(final Map<String, dynamic> json) =>
       _$MonetizationSettingsFromJson(json);
-} 
+}

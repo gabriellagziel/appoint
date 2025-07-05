@@ -1,4 +1,3 @@
-
 /// Simplified user model built from Firebase custom claims.
 class AppUser {
   final String uid;
@@ -15,4 +14,3 @@ class AppUser {
     this.businessProfileId,
   });
 }
-

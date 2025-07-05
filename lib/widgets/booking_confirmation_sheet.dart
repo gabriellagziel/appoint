@@ -20,7 +20,8 @@ class BookingConfirmationSheet extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Confirm Appointment', style: Theme.of(context).textTheme.titleLarge),
+          Text('Confirm Appointment',
+              style: Theme.of(context).textTheme.titleLarge),
           const SizedBox(height: 12),
           Text(summaryText),
           const SizedBox(height: 24),

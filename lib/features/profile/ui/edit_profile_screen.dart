@@ -38,21 +38,28 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            TextField(
-              controller: _nameController,
-              decoration: const InputDecoration(labelText: 'Name'),
+            Semantics(
+              label: 'Full name',
+              child: TextField(
+                controller: _nameController,
+                decoration: const InputDecoration(labelText: 'Name'),
+              ),
             ),
             const SizedBox(height: 8),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                TextFormField(
-                  controller: _bioController,
-                  inputFormatters: [
-                    LengthLimitingTextInputFormatter(150),
-                  ],
-                  onChanged: (final _) => setState(() {}),
-                  decoration: const InputDecoration(labelText: 'Bio'),
+                Semantics(
+                  label: 'Personal biography',
+                  hint: 'Tell us about yourself',
+                  child: TextFormField(
+                    controller: _bioController,
+                    inputFormatters: [
+                      LengthLimitingTextInputFormatter(150),
+                    ],
+                    onChanged: (final _) => setState(() {}),
+                    decoration: const InputDecoration(labelText: 'Bio'),
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Align(
@@ -65,15 +72,17 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               ],
             ),
             const SizedBox(height: 8),
-            TextField(
-              controller: _locationController,
-              decoration: const InputDecoration(labelText: 'Location'),
+            Semantics(
+              label: 'Location or city',
+              child: TextField(
+                controller: _locationController,
+                decoration: const InputDecoration(labelText: 'Location'),
+              ),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                FirebaseAnalytics.instance
-                    .logEvent(name: 'profile_saved');
+                FirebaseAnalytics.instance.logEvent(name: 'profile_saved');
                 Navigator.pop(context, {
                   'name': _nameController.text,
                   'bio': _bioController.text,

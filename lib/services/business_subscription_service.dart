@@ -219,7 +219,9 @@ class BusinessSubscriptionService {
           .limit(limit)
           .get();
 
-      return snap.docs.map((final doc) => Invoice.fromJson(doc.data())).toList();
+      return snap.docs
+          .map((final doc) => Invoice.fromJson(doc.data()))
+          .toList();
     } catch (e) {
       // Removed debug print: print('Error fetching invoices: $e');
       return [];

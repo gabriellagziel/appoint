@@ -182,7 +182,8 @@ Future<void> main() async {
       }
     });
 
-    testWidgets('should handle form validation', (final WidgetTester tester) async {
+    testWidgets('should handle form validation',
+        (final WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -228,4 +229,3 @@ Future<void> main() async {
     });
   }, skip: true);
 }
-

@@ -1,2 +1,1 @@
-const Map<String, List<String>> missingTranslations = {
-};
+const Map<String, List<String>> missingTranslations = {};

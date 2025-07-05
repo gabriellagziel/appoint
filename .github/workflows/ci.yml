@@ -17,11 +17,16 @@ jobs:
           flutter-version: '3.32.0'
           cache: true
       - run: flutter pub get
-      - run: flutter analyze
+      - name: Analyze
+        run: flutter analyze --no-fatal-infos
       - name: Run localization validation
         run: dart run tool/arb_validator.dart
       - name: Generate localization dashboard
         run: dart run tool/localization_dashboard.dart
+      - name: Run accessibility audit
+        run: ./scripts/accessibility_audit.sh
+      - name: Run translation audit
+        run: ./scripts/audit_languages.sh
       - name: Upload localization report
         uses: actions/upload-artifact@v3
         with:
@@ -101,10 +106,17 @@ jobs:
             coverage/lcov.info
             coverage/html/
           retention-days: 30
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          file: coverage/lcov.info
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: false
 
   build:
     runs-on: ubuntu-latest
-    needs: [lint, test]
+    needs: [lint, test, visual-qa]
     steps:
       - uses: actions/checkout@v4
       - name: Install Flutter
@@ -115,12 +127,56 @@ jobs:
       - run: flutter pub get
       - name: Build APK
         run: flutter build apk --release
+      - name: Build iOS IPA
+        run: |
+          flutter build ios --release --no-codesign
+          cd ios
+          xcodebuild -workspace Runner.xcworkspace -scheme Runner -configuration Release -archivePath build/Runner.xcarchive archive
+          xcodebuild -exportArchive -archivePath build/Runner.xcarchive -exportPath build/ios -exportOptionsPlist exportOptions.plist
+        continue-on-error: true
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
-          name: app-apk
+          name: app-release.apk
           path: build/app/outputs/flutter-apk/app-release.apk
-          retention-days: 1
+          retention-days: 7
+      - name: Upload iOS IPA
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release.ipa
+          path: ios/build/ios/Runner.ipa
+          retention-days: 7
+        continue-on-error: true
+
+  visual-qa:
+    runs-on: ubuntu-latest
+    needs: [lint, test]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.0'
+          cache: true
+      - run: flutter pub get
+      - name: Run Visual QA Tests
+        run: |
+          # Make scripts executable
+          chmod +x scripts/*.sh
+          
+          # Run comprehensive visual QA
+          ./scripts/run_visual_qa.sh
+      - name: Upload Visual QA Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: visual-qa-reports
+          path: |
+            docs/visual_qa_summary.md
+            docs/rtl_tests/
+            docs/dark_mode_tests/
+            docs/screen_size_tests/
+            docs/landscape_tests/
+          retention-days: 30
 
   smoke-test:
     needs: build

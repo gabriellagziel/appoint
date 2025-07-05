@@ -167,8 +167,8 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
     );
   }
 
-  Widget _buildGameCard(
-      final BuildContext context, final PlaytimeGame game, final AppLocalizations l10n) {
+  Widget _buildGameCard(final BuildContext context, final PlaytimeGame game,
+      final AppLocalizations l10n) {
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
       elevation: 2,
@@ -335,8 +335,8 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
     );
   }
 
-  void _showPlayOptions(
-      final BuildContext context, final PlaytimeGame game, final AppLocalizations l10n) {
+  void _showPlayOptions(final BuildContext context, final PlaytimeGame game,
+      final AppLocalizations l10n) {
     BottomSheetManager.show(
       context: context,
       child: Container(

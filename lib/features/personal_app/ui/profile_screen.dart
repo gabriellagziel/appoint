@@ -54,7 +54,8 @@ class ProfileScreen extends ConsumerWidget {
                     isSub ? 'Premium Subscriber' : 'Free User',
                   ),
                   loading: () => const Text('Checking subscription...'),
-                  error: (final _, final __) => const Text('Subscription unavailable'),
+                  error: (final _, final __) =>
+                      const Text('Subscription unavailable'),
                 ),
                 const SizedBox(height: AppSpacing.md),
                 ElevatedButton(

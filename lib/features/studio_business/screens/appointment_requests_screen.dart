@@ -124,7 +124,8 @@ class AppointmentRequestsScreen extends ConsumerWidget {
     }
   }
 
-  Future<void> _updateRequestStatus(final String requestId, final String status) async {
+  Future<void> _updateRequestStatus(
+      final String requestId, final String status) async {
     try {
       await FirebaseFirestore.instance
           .collection('appointmentRequests')

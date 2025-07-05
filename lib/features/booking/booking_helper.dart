@@ -48,4 +48,3 @@ class BookingHelper {
     await ref.read(bookingServiceProvider).submitBooking(booking);
   }
 }
-

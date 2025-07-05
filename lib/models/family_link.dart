@@ -32,6 +32,7 @@ class FamilyLink {
         'childId': childId,
         'status': status,
         'invitedAt': invitedAt.toIso8601String(),
-        'consentedAt': consentedAt.map((final d) => d.toIso8601String()).toList(),
+        'consentedAt':
+            consentedAt.map((final d) => d.toIso8601String()).toList(),
       };
 }

@@ -1,11 +1,10 @@
+import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-/// Represents a single chat message in the flow
-class ChatMessage {
-  final String text;
-  final bool isUser;
-  ChatMessage({required this.text, required this.isUser});
-}
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:appoint/models/playtime_chat.dart';
+import 'package:appoint/services/auth_service.dart';
+import 'package:appoint/providers/firebase_providers.dart';
+import 'package:appoint/providers/auth_provider.dart';
 
 /// Holds the booking draft data and chat history
 class BookingDraft {
@@ -14,6 +13,8 @@ class BookingDraft {
   String? time;
   String? notes;
   final List<ChatMessage> chatMessages;
+  final String? chatSessionId;
+  final bool isOtherUserTyping;
 
   BookingDraft({
     this.type,
@@ -21,6 +22,8 @@ class BookingDraft {
     this.time,
     this.notes,
     final List<ChatMessage>? chatMessages,
+    this.chatSessionId,
+    this.isOtherUserTyping = false,
   }) : chatMessages = chatMessages ?? [];
 
   BookingDraft copyWith({
@@ -29,6 +32,8 @@ class BookingDraft {
     final String? time,
     final String? notes,
     final List<ChatMessage>? chatMessages,
+    final String? chatSessionId,
+    final bool? isOtherUserTyping,
   }) {
     return BookingDraft(
       type: type ?? this.type,
@@ -36,33 +41,172 @@ class BookingDraft {
       time: time ?? this.time,
       notes: notes ?? this.notes,
       chatMessages: chatMessages ?? List.from(this.chatMessages),
+      chatSessionId: chatSessionId ?? this.chatSessionId,
+      isOtherUserTyping: isOtherUserTyping ?? this.isOtherUserTyping,
     );
   }
 }
 
 class BookingDraftNotifier extends StateNotifier<BookingDraft> {
-  BookingDraftNotifier() : super(BookingDraft()) {
-    // Initialize conversation
-    addBotMessage('Welcome! What type of appointment would you like?');
+  final FirebaseFirestore _firestore;
+  final AuthService _auth;
+  StreamSubscription<DocumentSnapshot>? _chatSubscription;
+  StreamSubscription<DocumentSnapshot>? _typingSubscription;
+
+  BookingDraftNotifier({
+    required FirebaseFirestore firestore,
+    required AuthService auth,
+  })  : _firestore = firestore,
+        _auth = auth,
+        super(BookingDraft()) {
+    _initializeChat();
   }
 
-  void addUserMessage(final String text) {
-    state = state.copyWith(
-      chatMessages: [
-        ...state.chatMessages,
-        ChatMessage(text: text, isUser: true)
-      ],
+  void _initializeChat() async {
+    final currentUser = await _auth.currentUser();
+    if (currentUser != null) {
+      final sessionId =
+          'booking_${currentUser.uid}_${DateTime.now().millisecondsSinceEpoch}';
+      state = state.copyWith(chatSessionId: sessionId);
+      _setupChatListeners(sessionId, currentUser.uid);
+      // Initialize conversation
+      addBotMessage('Welcome! What type of appointment would you like?');
+    }
+  }
+
+  void _setupChatListeners(String sessionId, String currentUserId) {
+    final chatDoc = _firestore.collection('chats').doc(sessionId);
+
+    // Listen to chat messages
+    _chatSubscription = chatDoc.snapshots().listen((snapshot) {
+      if (snapshot.exists && snapshot.data() != null) {
+        final data = snapshot.data()!;
+        final messages = (data['messages'] as List<dynamic>?)
+                ?.map((msg) =>
+                    ChatMessage.fromJson(Map<String, dynamic>.from(msg)))
+                .toList() ??
+            [];
+
+        state = state.copyWith(chatMessages: messages);
+      }
+    });
+
+    // Listen to typing status
+    _typingSubscription = chatDoc.snapshots().listen((snapshot) {
+      if (snapshot.exists && snapshot.data() != null) {
+        final data = snapshot.data()!;
+        final typingUsers = List<String>.from(data['typing'] ?? []);
+        final isOtherUserTyping =
+            typingUsers.isNotEmpty && !typingUsers.contains(currentUserId);
+
+        state = state.copyWith(isOtherUserTyping: isOtherUserTyping);
+      }
+    });
+  }
+
+  void addUserMessage(final String text) async {
+    final currentUser = await _auth.currentUser();
+    if (currentUser == null || state.chatSessionId == null) return;
+
+    final message = ChatMessage(
+      id: DateTime.now().millisecondsSinceEpoch.toString(),
+      senderId: currentUser.uid,
+      content: text,
+      timestamp: DateTime.now(),
+      readBy: [currentUser.uid], // User has read their own message
     );
+
+    // Add to local state immediately
+    state = state.copyWith(
+      chatMessages: [...state.chatMessages, message],
+    );
+
+    // Update Firestore
+    await _updateChatInFirestore(message);
+
+    // Mark as typing
+    await _setTypingStatus(true);
+
     _advanceFlow(text);
   }
 
-  void addBotMessage(final String text) {
-    state = state.copyWith(
-      chatMessages: [
-        ...state.chatMessages,
-        ChatMessage(text: text, isUser: false)
-      ],
+  void addBotMessage(final String text) async {
+    final currentUser = await _auth.currentUser();
+    if (currentUser == null || state.chatSessionId == null) return;
+
+    final message = ChatMessage(
+      id: DateTime.now().millisecondsSinceEpoch.toString(),
+      senderId: 'bot',
+      content: text,
+      timestamp: DateTime.now(),
+      readBy: [], // Bot messages start unread
     );
+
+    // Add to local state immediately
+    state = state.copyWith(
+      chatMessages: [...state.chatMessages, message],
+    );
+
+    // Update Firestore
+    await _updateChatInFirestore(message);
+
+    // Stop typing
+    await _setTypingStatus(false);
+  }
+
+  Future<void> _updateChatInFirestore(ChatMessage message) async {
+    if (state.chatSessionId == null) return;
+
+    final chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
+    final messages = state.chatMessages.map((msg) => msg.toJson()).toList();
+
+    await chatDoc.set({
+      'sessionId': state.chatSessionId,
+      'messages': messages,
+      'lastUpdated': FieldValue.serverTimestamp(),
+    }, SetOptions(merge: true));
+  }
+
+  Future<void> _setTypingStatus(bool isTyping) async {
+    final currentUser = await _auth.currentUser();
+    if (currentUser == null || state.chatSessionId == null) return;
+
+    final chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
+
+    if (isTyping) {
+      await chatDoc.update({
+        'typing': FieldValue.arrayUnion([currentUser.uid]),
+      });
+    } else {
+      await chatDoc.update({
+        'typing': FieldValue.arrayRemove([currentUser.uid]),
+      });
+    }
+  }
+
+  Future<void> markMessageAsRead(String messageId) async {
+    final currentUser = await _auth.currentUser();
+    if (currentUser == null || state.chatSessionId == null) return;
+
+    final updatedMessages = state.chatMessages.map((message) {
+      if (message.id == messageId &&
+          !message.readBy.contains(currentUser.uid)) {
+        return message.copyWith(
+          readBy: [...message.readBy, currentUser.uid],
+        );
+      }
+      return message;
+    }).toList();
+
+    state = state.copyWith(chatMessages: updatedMessages);
+
+    // Update Firestore
+    final chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
+    final messages = updatedMessages.map((msg) => msg.toJson()).toList();
+
+    await chatDoc.update({
+      'messages': messages,
+    });
   }
 
   void _advanceFlow(final String userInput) async {
@@ -114,10 +258,20 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
       }
     }
   }
+
+  @override
+  void dispose() {
+    _chatSubscription?.cancel();
+    _typingSubscription?.cancel();
+    super.dispose();
+  }
 }
 
 /// Provider for the booking draft chat flow
 final bookingDraftProvider =
     StateNotifierProvider<BookingDraftNotifier, BookingDraft>(
-  (final ref) => BookingDraftNotifier(),
+  (final ref) => BookingDraftNotifier(
+    firestore: ref.read(firestoreProvider),
+    auth: ref.read(authServiceProvider),
+  ),
 );

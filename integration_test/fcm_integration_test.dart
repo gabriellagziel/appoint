@@ -13,7 +13,7 @@ void main() {
     setUpAll(() async {
       // Configure Firebase to use emulators
       await Firebase.initializeApp();
-      
+
       // Point Firestore to emulator
       FirebaseFirestore.instance.settings = const Settings(
         host: 'localhost:8080',
@@ -25,7 +25,8 @@ void main() {
       await FirebaseAuth.instance.useAuthEmulator('localhost', 9099);
     });
 
-    testWidgets('FCM Service Initialization and Token Management', (final tester) async {
+    testWidgets('FCM Service Initialization and Token Management',
+        (final tester) async {
       app.main();
       await tester.pumpAndSettle();
 
@@ -44,19 +45,20 @@ void main() {
             .collection('studio')
             .doc(user.uid)
             .get();
-        
+
         expect(studioDoc.data()?['fcmToken'], equals(token));
       }
     });
 
-    testWidgets('FCM Notification Trigger on New Booking', (final tester) async {
+    testWidgets('FCM Notification Trigger on New Booking',
+        (final tester) async {
       app.main();
       await tester.pumpAndSettle();
 
       // Setup test studio with FCM token
       const testStudioId = 'test-studio-fcm';
       const testFcmToken = 'test-fcm-token-123';
-      
+
       await FirebaseFirestore.instance
           .collection('studio')
           .doc(testStudioId)
@@ -69,8 +71,10 @@ void main() {
       await FirebaseFirestore.instance.collection('bookings').add({
         'studioId': testStudioId,
         'clientName': 'FCM Test Client',
-        'startTime': Timestamp.fromDate(DateTime.now().add(const Duration(hours: 1))),
-        'endTime': Timestamp.fromDate(DateTime.now().add(const Duration(hours: 2))),
+        'startTime':
+            Timestamp.fromDate(DateTime.now().add(const Duration(hours: 1))),
+        'endTime':
+            Timestamp.fromDate(DateTime.now().add(const Duration(hours: 2))),
         'status': 'confirmed',
         'createdAt': FieldValue.serverTimestamp(),
       });
@@ -83,12 +87,14 @@ void main() {
           .collection('bookings')
           .where('studioId', isEqualTo: testStudioId)
           .get();
-      
+
       expect(bookings.docs, isNotEmpty);
-      expect(bookings.docs.first.data()['clientName'], equals('FCM Test Client'));
+      expect(
+          bookings.docs.first.data()['clientName'], equals('FCM Test Client'));
     });
 
-    testWidgets('FCM Topic Subscription and Unsubscription', (final tester) async {
+    testWidgets('FCM Topic Subscription and Unsubscription',
+        (final tester) async {
       app.main();
       await tester.pumpAndSettle();
 
@@ -117,13 +123,13 @@ void main() {
       // Simulate a foreground message
       // Note: In integration tests, we can't actually receive real FCM messages
       // but we can test the service structure and error handling
-      
+
       // Verify the service can handle initialization multiple times
       expect(() => fcmService.initialize(), returnsNormally);
-      
+
       // Verify token retrieval works
       final token = await fcmService.getToken();
       expect(token, isNotNull);
     });
   });
-} 
+}

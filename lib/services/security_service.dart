@@ -138,7 +138,8 @@ class SecurityService {
   }
 
   /// Log security event
-  static void logSecurityEvent(final String event, {final Map<String, dynamic>? details}) {
+  static void logSecurityEvent(final String event,
+      {final Map<String, dynamic>? details}) {
     if (kDebugMode) {
       // Removed debug print: print('🔒 Security Event: $event');
       if (details != null) {

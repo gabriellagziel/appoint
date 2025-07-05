@@ -26,17 +26,18 @@ class StudioConfirmScreen extends ConsumerWidget {
       final user = await ref.read(authServiceProvider).currentUser();
       if (user == null) return;
       await ref.read(appointmentServiceProvider).createScheduled(
-        creatorId: user.uid,
-        inviteeId: selection.staff.id,
-        scheduledAt: scheduledAt,
-      );
+            creatorId: user.uid,
+            inviteeId: selection.staff.id,
+            scheduledAt: scheduledAt,
+          );
       if (context.mounted) {
         Navigator.popUntil(context, ModalRoute.withName('/'));
       }
     }
 
     void showConfirmationSheet() {
-      final summary = 'You are about to book with ${selection.staff.displayName} on ${DateFormat.yMMMEd().add_jm().format(scheduledAt)}.';
+      final summary =
+          'You are about to book with ${selection.staff.displayName} on ${DateFormat.yMMMEd().add_jm().format(scheduledAt)}.';
       BottomSheetManager.show(
         context: context,
         child: BookingConfirmationSheet(

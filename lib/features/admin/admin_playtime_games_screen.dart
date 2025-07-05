@@ -72,8 +72,8 @@ class _GamesTab extends ConsumerWidget {
                         'Pending Approval (${pendingGames.length})',
                         Colors.orange),
                     const SizedBox(height: 12),
-                    ...pendingGames
-                        .map((final game) => _buildGameCard(context, game, ref)),
+                    ...pendingGames.map(
+                        (final game) => _buildGameCard(context, game, ref)),
                     const SizedBox(height: 24),
                   ],
 
@@ -82,8 +82,8 @@ class _GamesTab extends ConsumerWidget {
                     _buildSectionHeader(
                         'Approved (${approvedGames.length})', Colors.green),
                     const SizedBox(height: 12),
-                    ...approvedGames
-                        .map((final game) => _buildGameCard(context, game, ref)),
+                    ...approvedGames.map(
+                        (final game) => _buildGameCard(context, game, ref)),
                     const SizedBox(height: 24),
                   ],
 
@@ -92,8 +92,8 @@ class _GamesTab extends ConsumerWidget {
                     _buildSectionHeader(
                         'Rejected (${rejectedGames.length})', Colors.red),
                     const SizedBox(height: 12),
-                    ...rejectedGames
-                        .map((final game) => _buildGameCard(context, game, ref)),
+                    ...rejectedGames.map(
+                        (final game) => _buildGameCard(context, game, ref)),
                   ],
 
                   // Empty State
@@ -105,7 +105,8 @@ class _GamesTab extends ConsumerWidget {
             );
           },
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (final error, final stack) => Center(child: Text('Error: $error')),
+          error: (final error, final stack) =>
+              Center(child: Text('Error: $error')),
         );
       },
     );
@@ -135,8 +136,8 @@ class _GamesTab extends ConsumerWidget {
     );
   }
 
-  Widget _buildGameCard(
-      final BuildContext context, final PlaytimeGame game, final WidgetRef ref) {
+  Widget _buildGameCard(final BuildContext context, final PlaytimeGame game,
+      final WidgetRef ref) {
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
       elevation: 2,
@@ -328,7 +329,8 @@ class _GamesTab extends ConsumerWidget {
     );
   }
 
-  void _approveGame(final BuildContext context, final String gameId, final WidgetRef ref) {
+  void _approveGame(
+      final BuildContext context, final String gameId, final WidgetRef ref) {
     PlaytimeAdminNotifier.approveGame(gameId);
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -338,7 +340,8 @@ class _GamesTab extends ConsumerWidget {
     );
   }
 
-  void _rejectGame(final BuildContext context, final String gameId, final WidgetRef ref) {
+  void _rejectGame(
+      final BuildContext context, final String gameId, final WidgetRef ref) {
     PlaytimeAdminNotifier.rejectGame(gameId);
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -348,7 +351,8 @@ class _GamesTab extends ConsumerWidget {
     );
   }
 
-  void _deleteGame(final BuildContext context, final String gameId, final WidgetRef ref) {
+  void _deleteGame(
+      final BuildContext context, final String gameId, final WidgetRef ref) {
     showDialog(
       context: context,
       builder: (final context) => AlertDialog(
@@ -431,8 +435,8 @@ class _BackgroundsTab extends ConsumerWidget {
                     _buildSectionHeader(
                         'All Backgrounds (${backgrounds.length})', Colors.blue),
                     const SizedBox(height: 12),
-                    ...backgrounds
-                        .map((final bg) => _buildBackgroundCard(context, bg, ref)),
+                    ...backgrounds.map(
+                        (final bg) => _buildBackgroundCard(context, bg, ref)),
                   ],
 
                   // Empty State
@@ -444,7 +448,8 @@ class _BackgroundsTab extends ConsumerWidget {
             );
           },
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (final error, final stack) => Center(child: Text('Error: $error')),
+          error: (final error, final stack) =>
+              Center(child: Text('Error: $error')),
         );
       },
     );
@@ -474,8 +479,8 @@ class _BackgroundsTab extends ConsumerWidget {
     );
   }
 
-  Widget _buildBackgroundCard(
-      final BuildContext context, final PlaytimeBackground background, final WidgetRef ref) {
+  Widget _buildBackgroundCard(final BuildContext context,
+      final PlaytimeBackground background, final WidgetRef ref) {
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
       elevation: 2,
@@ -499,7 +504,8 @@ class _BackgroundsTab extends ConsumerWidget {
                     child: Image.network(
                       background.imageUrl,
                       fit: BoxFit.cover,
-                      errorBuilder: (final context, final error, final stackTrace) {
+                      errorBuilder:
+                          (final context, final error, final stackTrace) {
                         return const Icon(Icons.image,
                             color: Colors.grey, size: 40);
                       },
@@ -580,8 +586,8 @@ class _BackgroundsTab extends ConsumerWidget {
     context.push('/admin/playtime/background/${background.id}');
   }
 
-  void _deleteBackground(
-      final BuildContext context, final String backgroundId, final WidgetRef ref) {
+  void _deleteBackground(final BuildContext context, final String backgroundId,
+      final WidgetRef ref) {
     showDialog(
       context: context,
       builder: (final context) => AlertDialog(

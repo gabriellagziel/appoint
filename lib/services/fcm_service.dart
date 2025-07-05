@@ -50,7 +50,8 @@ class FCMService {
         FirebaseMessaging.onMessageOpenedApp.listen(_handleNotificationTap);
 
         // Handle notification tap when app is terminated
-        final RemoteMessage? initialMessage = await _messaging.getInitialMessage();
+        final RemoteMessage? initialMessage =
+            await _messaging.getInitialMessage();
         if (initialMessage != null) {
           _handleNotificationTap(initialMessage);
         }

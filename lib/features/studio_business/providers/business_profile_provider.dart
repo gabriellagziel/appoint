@@ -18,7 +18,8 @@ class BusinessProfileNotifier extends StateNotifier<BusinessProfile?> {
     state = await _service.fetchProfile();
   }
 
-  void updateField({final String? name, final String? description, final String? phone}) {
+  void updateField(
+      {final String? name, final String? description, final String? phone}) {
     state = state?.copyWith(
       name: name ?? state!.name,
       description: description ?? state!.description,

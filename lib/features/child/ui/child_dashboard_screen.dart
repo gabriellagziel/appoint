@@ -51,9 +51,7 @@ class ChildDashboardScreen extends ConsumerWidget {
                 children: [
                   Icon(
                     settings.playtimeEnabled ? Icons.check : Icons.block,
-                    color: settings.playtimeEnabled
-                        ? Colors.green
-                        : Colors.red,
+                    color: settings.playtimeEnabled ? Colors.green : Colors.red,
                   ),
                   const SizedBox(width: 8),
                   Text(

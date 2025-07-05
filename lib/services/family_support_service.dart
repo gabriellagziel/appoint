@@ -7,13 +7,15 @@ class FamilySupportService {
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
 
-  FamilySupportService({final FirebaseFirestore? firestore, final FirebaseAuth? auth})
+  FamilySupportService(
+      {final FirebaseFirestore? firestore, final FirebaseAuth? auth})
       : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
 
   CollectionReference<SupportTicket> get _collection =>
       _firestore.collection('supportTickets').withConverter<SupportTicket>(
-            fromFirestore: (final snap, final _) => SupportTicket.fromJson(snap.data()!),
+            fromFirestore: (final snap, final _) =>
+                SupportTicket.fromJson(snap.data()!),
             toFirestore: (final ticket, final _) => ticket.toJson(),
           );
 

@@ -186,7 +186,7 @@ class BookingHelper {
     }
   }
 
-  /// Get available time slots for a staff member
+  /// Get available time slots for a staff member with proper timezone handling
   Future<List<TimeSlot>> getAvailableSlots({
     required final String staffId,
     required final DateTime date,
@@ -202,26 +202,77 @@ class BookingHelper {
         return slots;
       }
 
-      // Generate time slots
-      final startTime = DateTime(date.year, date.month, date.day, 9, 0); // 9 AM
-      final endTime = DateTime(date.year, date.month, date.day, 18, 0); // 6 PM
+      // Generate time slots with proper timezone handling
+      final localDate = DateTime(date.year, date.month, date.day);
+      final businessStartHour = 9; // 9 AM local time
+      final businessEndHour = 18; // 6 PM local time
 
+      // Create start and end times in local timezone
+      final startTime = DateTime(
+        localDate.year,
+        localDate.month,
+        localDate.day,
+        businessStartHour,
+        0,
+      );
+      final endTime = DateTime(
+        localDate.year,
+        localDate.month,
+        localDate.day,
+        businessEndHour,
+        0,
+      );
+
+      // Generate slots within business hours
       for (DateTime time = startTime;
           time.isBefore(endTime);
           time = time.add(duration)) {
         final slotEnd = time.add(duration);
-        final isAvailable = availability.any((final avail) =>
-            avail.startTime.isBefore(time) && avail.endTime.isAfter(slotEnd));
 
-        if (isAvailable) {
-          // Check if slot is already booked
-          final isBooked = await _isSlotBooked(staffId, time, duration);
-          if (!isBooked) {
-            slots.add(TimeSlot(
-              startTime: time,
-              endTime: slotEnd,
-              isAvailable: true,
-            ));
+        // Ensure slot doesn't cross midnight
+        if (slotEnd.day != time.day) {
+          // Adjust slot to end at midnight if it would cross
+          final adjustedEnd = DateTime(
+            time.year,
+            time.month,
+            time.day,
+            23,
+            59,
+            59,
+          );
+
+          // Only add slot if it's still within business hours
+          if (time.hour >= businessStartHour) {
+            final isAvailable = availability.any((final avail) =>
+                avail.startTime.isBefore(time) &&
+                avail.endTime.isAfter(adjustedEnd));
+
+            if (isAvailable) {
+              final isBooked = await _isSlotBooked(
+                  staffId, time, adjustedEnd.difference(time));
+              if (!isBooked) {
+                slots.add(TimeSlot(
+                  startTime: time,
+                  endTime: adjustedEnd,
+                  isAvailable: true,
+                ));
+              }
+            }
+          }
+        } else {
+          // Normal slot within same day
+          final isAvailable = availability.any((final avail) =>
+              avail.startTime.isBefore(time) && avail.endTime.isAfter(slotEnd));
+
+          if (isAvailable) {
+            final isBooked = await _isSlotBooked(staffId, time, duration);
+            if (!isBooked) {
+              slots.add(TimeSlot(
+                startTime: time,
+                endTime: slotEnd,
+                isAvailable: true,
+              ));
+            }
           }
         }
       }
@@ -233,7 +284,7 @@ class BookingHelper {
     }
   }
 
-  /// Validate booking parameters
+  /// Validate booking parameters with enhanced timezone and business hours handling
   Future<ValidationResult> _validateBooking({
     required final String userId,
     required final String staffId,
@@ -241,13 +292,14 @@ class BookingHelper {
     required final DateTime dateTime,
     required final Duration duration,
   }) async {
-    // Check if date is in the future
-    if (dateTime.isBefore(DateTime.now())) {
+    // Check if date is in the future (using local time)
+    final now = DateTime.now();
+    if (dateTime.isBefore(now)) {
       return ValidationResult.error('Booking time must be in the future');
     }
 
     // Check if date is within allowed range (e.g., 30 days)
-    final maxDate = DateTime.now().add(const Duration(days: 30));
+    final maxDate = now.add(const Duration(days: 30));
     if (dateTime.isAfter(maxDate)) {
       return ValidationResult.error(
           'Booking cannot be more than 30 days in advance');
@@ -265,11 +317,42 @@ class BookingHelper {
       return ValidationResult.error('Selected service not found');
     }
 
-    // Check business hours
-    final hour = dateTime.hour;
-    if (hour < 9 || hour >= 18) {
+    // Enhanced business hours validation
+    final businessStartHour = 9; // 9 AM local time
+    final businessEndHour = 18; // 6 PM local time
+
+    // Check if booking starts within business hours
+    if (dateTime.hour < businessStartHour || dateTime.hour >= businessEndHour) {
       return ValidationResult.error(
-          'Bookings are only available between 9 AM and 6 PM');
+          'Bookings are only available between 9 AM and 6 PM local time');
+    }
+
+    // Check if booking duration would extend beyond business hours
+    final bookingEnd = dateTime.add(duration);
+    final bookingEndHour = bookingEnd.hour;
+
+    // Handle midnight crossing
+    if (bookingEnd.day != dateTime.day) {
+      // Booking crosses midnight - check if it starts late enough to be valid
+      if (dateTime.hour < businessStartHour) {
+        return ValidationResult.error(
+            'Bookings cannot start before 9 AM local time');
+      }
+    } else {
+      // Same day booking - check if it ends within business hours
+      if (bookingEndHour > businessEndHour) {
+        return ValidationResult.error(
+            'Bookings cannot extend beyond 6 PM local time');
+      }
+    }
+
+    // Validate booking duration (minimum 15 minutes, maximum 8 hours)
+    if (duration.inMinutes < 15) {
+      return ValidationResult.error(
+          'Booking duration must be at least 15 minutes');
+    }
+    if (duration.inHours > 8) {
+      return ValidationResult.error('Booking duration cannot exceed 8 hours');
     }
 
     return ValidationResult.success();

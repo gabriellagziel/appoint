@@ -97,7 +97,8 @@ class PlaytimeLandingScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildMainOptions(final BuildContext context, final AppLocalizations l10n) {
+  Widget _buildMainOptions(
+      final BuildContext context, final AppLocalizations l10n) {
     return Column(
       children: [
         // Virtual Playtime Option
@@ -200,7 +201,8 @@ class PlaytimeLandingScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildQuickActions(final BuildContext context, final AppLocalizations l10n) {
+  Widget _buildQuickActions(
+      final BuildContext context, final AppLocalizations l10n) {
     return Column(
       children: [
         Text(

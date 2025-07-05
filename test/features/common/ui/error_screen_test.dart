@@ -8,7 +8,8 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('ErrorScreen (features)', () {
-    testWidgets('renders icon, message and try again button', (final tester) async {
+    testWidgets('renders icon, message and try again button',
+        (final tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: ErrorScreen(

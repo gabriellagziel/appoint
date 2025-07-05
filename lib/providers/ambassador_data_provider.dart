@@ -71,7 +71,8 @@ final ambassadorStatsProvider =
   return dataAsync.when(
     data: (final data) => AsyncValue.data(data.stats),
     loading: () => const AsyncValue.loading(),
-    error: (final error, final stackTrace) => AsyncValue.error(error, stackTrace),
+    error: (final error, final stackTrace) =>
+        AsyncValue.error(error, stackTrace),
   );
 });
 
@@ -81,7 +82,8 @@ final ambassadorChartDataProvider =
   return dataAsync.when(
     data: (final data) => AsyncValue.data(data.chartData),
     loading: () => const AsyncValue.loading(),
-    error: (final error, final stackTrace) => AsyncValue.error(error, stackTrace),
+    error: (final error, final stackTrace) =>
+        AsyncValue.error(error, stackTrace),
   );
 });
 
@@ -96,4 +98,5 @@ final ambassadorFiltersProvider =
 
 final selectedCountryProvider = StateProvider<String?>((final ref) => null);
 final selectedLanguageProvider = StateProvider<String?>((final ref) => null);
-final selectedDateRangeProvider = StateProvider<DateTimeRange?>((final ref) => null);
+final selectedDateRangeProvider =
+    StateProvider<DateTimeRange?>((final ref) => null);

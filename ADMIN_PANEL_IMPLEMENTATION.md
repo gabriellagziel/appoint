@@ -1,261 +1,663 @@
-# Admin Panel Implementation Documentation
+# Admin Panel Implementation Guide
+
+This document provides comprehensive guidance for implementing and using the APP-OINT admin panel system.
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Role-Based Access Control](#role-based-access-control)
+3. [Custom Claims Setup](#custom-claims-setup)
+4. [Permission System](#permission-system)
+5. [Admin Panel Features](#admin-panel-features)
+6. [Implementation Examples](#implementation-examples)
+7. [Security Considerations](#security-considerations)
+8. [Troubleshooting](#troubleshooting)
 
 ## Overview
 
-The Admin Panel is a comprehensive management system for the Appoint application that provides administrators with real-time insights, user management capabilities, broadcast messaging, monetization controls, and detailed analytics.
+The APP-OINT admin panel provides comprehensive system management capabilities with role-based access control (RBAC). The system supports multiple admin roles with different permission levels.
 
-## Key Features Implemented
+### Supported Roles
 
-### 1. Admin Dashboard Screen
-- **Real-time Statistics**: Displays total users, bookings, revenue, organizations, ambassadors, and errors
-- **Interactive Charts**: Revenue trends, user growth, and booking analytics using fl_chart
-- **Quick Actions**: Direct access to common admin functions
-- **Multi-tab Interface**: Dashboard, Errors, Activity, and Monetization tabs
+- **Super Admin**: Full system access
+- **System Admin**: System-wide management
+- **Business Admin**: Business-specific management
+- **Moderator**: Content moderation and support
+- **Analyst**: Read-only analytics access
 
-### 2. Broadcast System
-- **Targeted Messaging**: Send messages to specific user segments based on filters
-- **Multiple Message Types**: Text, image, video, poll, and link messages
-- **Scheduling**: Schedule messages for future delivery
-- **Analytics**: Track message delivery, opens, and engagement
-- **Targeting Filters**: Country, city, age, subscription tier, account type, language, etc.
+## Role-Based Access Control
 
-### 3. Monetization Control
-- **Ad Visibility Settings**: Control ads for different user types (free, children, studio, premium)
-- **Ad Type Management**: Enable/disable specific ad types (interstitial, banner, rewarded, native)
-- **Frequency Controls**: Set ad frequency for different user tiers
-- **Real-time Updates**: Changes apply immediately across the app
+### Role Hierarchy
 
-### 4. Error & Activity Logs
-- **Error Tracking**: Monitor application errors with severity levels and resolution status
-- **Admin Activity Logging**: Track all admin actions for audit purposes
-- **Filtering & Search**: Filter logs by severity, status, admin, or action type
-- **Resolution System**: Mark errors as resolved with notes
-
-### 5. Analytics & Business Reports
-- **Revenue Analytics**: Track total, ad, and subscription revenue
-- **User Analytics**: Monitor user growth, activity, and demographics
-- **Booking Analytics**: Track booking trends and completion rates
-- **Export Capabilities**: Export data as CSV or PDF reports
-
-### 6. User Management
-- **User Overview**: View all users with filtering and search
-- **Role Management**: Update user roles and permissions
-- **Organization Management**: Manage business organizations
-- **Ambassador Management**: Monitor ambassador activity and quotas
-
-## Technical Architecture
-
-### Models
-- `AdminDashboardStats`: Comprehensive statistics for the dashboard
-- `AdminBroadcastMessage`: Broadcast message with targeting and analytics
-- `AdminErrorLog`: Error tracking with severity and resolution
-- `AdminActivityLog`: Admin action logging for audit trails
-- `AdRevenueStats`: Detailed ad revenue analytics
-- `MonetizationSettings`: Ad visibility and frequency controls
-
-### Providers (Riverpod)
-- `adminDashboardStatsProvider`: Real-time dashboard statistics
-- `broadcastMessagesProvider`: Broadcast message management
-- `errorLogsProvider`: Error log filtering and management
-- `activityLogsProvider`: Activity log filtering and management
-- `adRevenueStatsProvider`: Ad revenue analytics
-- `monetizationSettingsProvider`: Monetization controls
-- `isAdminProvider`: Admin role verification
-
-### Services
-- `AdminService`: Core admin functionality and Firebase integration
-- `BroadcastService`: Broadcast message delivery and analytics
-
-### Screens
-- `AdminDashboardScreen`: Main admin interface with tabs
-- `AdminBroadcastScreen`: Broadcast message composition and management
-- `AdminUsersScreen`: User management interface
-- `AdminOrgsScreen`: Organization management
-- `AdminMonetizationScreen`: Monetization settings
-
-## Setup and Configuration
-
-### 1. Firebase Configuration
-Ensure your Firebase project has the following collections:
-- `users`: User data with admin roles
-- `appointments`: Booking data
-- `payments`: Revenue data
-- `organizations`: Organization data
-- `error_logs`: Error tracking
-- `admin_activity_logs`: Admin action logging
-- `admin_broadcasts`: Broadcast messages
-- `settings`: App settings including monetization
-
-### 2. Admin Role Setup
-Admins are identified by Firebase Auth custom claims:
-```javascript
-// Set admin role via Firebase Functions
-await admin.auth().setCustomUserClaims(uid, { admin: true });
+```
+Super Admin
+├── System Admin
+│   ├── Business Admin
+│   │   ├── Moderator
+│   │   └── Analyst
+│   └── Moderator
+└── Analyst
 ```
 
-### 3. Security Rules
-Ensure Firestore security rules allow admin access:
+### Permission Matrix
+
+| Feature | Super Admin | System Admin | Business Admin | Moderator | Analyst |
+|---------|-------------|--------------|----------------|-----------|---------|
+| User Management | ✅ Full | ✅ Full | ❌ | ❌ | ❌ |
+| Business Management | ✅ Full | ✅ Full | ✅ Own | ❌ | ❌ |
+| System Settings | ✅ Full | ✅ Read/Write | ❌ | ❌ | ❌ |
+| Analytics | ✅ Full | ✅ Full | ✅ Own | ❌ | ✅ Read |
+| Content Moderation | ✅ Full | ✅ Full | ✅ Own | ✅ Full | ❌ |
+| Payment Management | ✅ Full | ✅ Full | ✅ Own | ❌ | ❌ |
+| Support Management | ✅ Full | ✅ Full | ✅ Own | ✅ Full | ❌ |
+
+## Custom Claims Setup
+
+### Firebase Custom Claims
+
+Custom claims are used to store user roles and permissions in Firebase Auth.
+
+#### Setting Custom Claims
+
 ```javascript
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    function isAdmin() {
-      return request.auth != null && request.auth.token.admin == true;
-    }
+// Cloud Function to set admin role
+exports.setAdminRole = functions.https.onCall(async (data, context) => {
+  // Verify the caller is a super admin
+  if (!context.auth?.token?.admin || !context.auth?.token?.superAdmin) {
+    throw new functions.https.HttpsError('permission-denied', 'Insufficient permissions');
+  }
+
+  const { uid, role, permissions } = data;
+  
+  const customClaims = {
+    admin: true,
+    role: role,
+    permissions: permissions,
+    updatedAt: Date.now()
+  };
+
+  try {
+    await admin.auth().setCustomUserClaims(uid, customClaims);
+    return { success: true, message: 'Role updated successfully' };
+  } catch (error) {
+    throw new functions.https.HttpsError('internal', 'Failed to update role');
+  }
+});
+```
+
+#### Role Definitions
+
+```javascript
+const ROLES = {
+  SUPER_ADMIN: {
+    role: 'super_admin',
+    permissions: ['*'] // All permissions
+  },
+  SYSTEM_ADMIN: {
+    role: 'system_admin',
+    permissions: [
+      'user.manage',
+      'business.manage',
+      'system.settings',
+      'analytics.view',
+      'content.moderate',
+      'payment.manage',
+      'support.manage'
+    ]
+  },
+  BUSINESS_ADMIN: {
+    role: 'business_admin',
+    permissions: [
+      'business.own.manage',
+      'analytics.own.view',
+      'content.own.moderate',
+      'payment.own.manage',
+      'support.own.manage'
+    ]
+  },
+  MODERATOR: {
+    role: 'moderator',
+    permissions: [
+      'content.moderate',
+      'support.manage'
+    ]
+  },
+  ANALYST: {
+    role: 'analyst',
+    permissions: [
+      'analytics.view'
+    ]
+  }
+};
+```
+
+## Permission System
+
+### Permission Structure
+
+Permissions follow a hierarchical structure: `resource.action` or `resource.own.action`
+
+#### Core Permissions
+
+- `user.manage` - Full user management
+- `business.manage` - Full business management
+- `business.own.manage` - Own business management
+- `system.settings` - System configuration
+- `analytics.view` - View analytics
+- `analytics.own.view` - View own business analytics
+- `content.moderate` - Content moderation
+- `content.own.moderate` - Own content moderation
+- `payment.manage` - Payment management
+- `payment.own.manage` - Own payment management
+- `support.manage` - Support ticket management
+- `support.own.manage` - Own support ticket management
+
+### Permission Checking
+
+```dart
+class PermissionService {
+  static bool hasPermission(String permission, Map<String, dynamic> claims) {
+    if (claims['permissions'] == null) return false;
     
-    match /{document=**} {
-      allow read, write: if isAdmin();
+    final permissions = List<String>.from(claims['permissions']);
+    
+    // Check for wildcard permission
+    if (permissions.contains('*')) return true;
+    
+    // Check exact permission
+    if (permissions.contains(permission)) return true;
+    
+    // Check resource-level permission
+    final resource = permission.split('.')[0];
+    if (permissions.contains('$resource.*')) return true;
+    
+    return false;
+  }
+  
+  static bool hasRole(String role, Map<String, dynamic> claims) {
+    return claims['role'] == role;
+  }
+}
+```
+
+## Admin Panel Features
+
+### Dashboard
+
+The admin dashboard provides an overview of system metrics and key performance indicators.
+
+#### Key Metrics
+
+- Total users
+- Active businesses
+- Total appointments
+- Revenue metrics
+- System health status
+- Recent activities
+
+### User Management
+
+#### User List
+
+```dart
+class UserManagementScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('User Management')),
+      body: Consumer(
+        builder: (context, ref, child) {
+          final usersAsync = ref.watch(usersProvider);
+          
+          return usersAsync.when(
+            data: (users) => ListView.builder(
+              itemCount: users.length,
+              itemBuilder: (context, index) {
+                final user = users[index];
+                return UserListTile(
+                  user: user,
+                  onRoleChange: (newRole) => _updateUserRole(user.id, newRole),
+                );
+              },
+            ),
+            loading: () => CircularProgressIndicator(),
+            error: (error, stack) => Text('Error: $error'),
+          );
+        },
+      ),
+    );
+  }
+}
+```
+
+#### Role Assignment
+
+```dart
+class RoleAssignmentDialog extends StatelessWidget {
+  final String userId;
+  final String currentRole;
+  
+  @override
+  Widget build(BuildContext context) {
+    return AlertDialog(
+      title: Text('Assign Role'),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          DropdownButtonFormField<String>(
+            value: currentRole,
+            items: ROLES.keys.map((role) => 
+              DropdownMenuItem(value: role, child: Text(role))
+            ).toList(),
+            onChanged: (newRole) => _assignRole(userId, newRole!),
+          ),
+        ],
+      ),
+    );
+  }
+}
+```
+
+### Business Management
+
+#### Business Overview
+
+```dart
+class BusinessManagementScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Business Management')),
+      body: Consumer(
+        builder: (context, ref, child) {
+          final businessesAsync = ref.watch(businessesProvider);
+          
+          return businessesAsync.when(
+            data: (businesses) => ListView.builder(
+              itemCount: businesses.length,
+              itemBuilder: (context, index) {
+                final business = businesses[index];
+                return BusinessCard(
+                  business: business,
+                  onEdit: () => _editBusiness(business),
+                  onSuspend: () => _suspendBusiness(business.id),
+                );
+              },
+            ),
+            loading: () => CircularProgressIndicator(),
+            error: (error, stack) => Text('Error: $error'),
+          );
+        },
+      ),
+    );
+  }
+}
+```
+
+### Analytics Dashboard
+
+#### Analytics Widgets
+
+```dart
+class AnalyticsDashboard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Analytics')),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            // Revenue Chart
+            Card(
+              child: Padding(
+                padding: EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Revenue Overview', style: Theme.of(context).textTheme.headline6),
+                    SizedBox(height: 16),
+                    RevenueChart(),
+                  ],
+                ),
+              ),
+            ),
+            
+            // User Growth Chart
+            Card(
+              child: Padding(
+                padding: EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('User Growth', style: Theme.of(context).textTheme.headline6),
+                    SizedBox(height: 16),
+                    UserGrowthChart(),
+                  ],
+                ),
+              ),
+            ),
+            
+            // System Metrics
+            Card(
+              child: Padding(
+                padding: EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('System Metrics', style: Theme.of(context).textTheme.headline6),
+                    SizedBox(height: 16),
+                    SystemMetricsGrid(),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+
+## Implementation Examples
+
+### Admin Route Guard
+
+```dart
+class AdminRouteGuard extends ConsumerWidget {
+  final Widget child;
+  
+  const AdminRouteGuard({required this.child});
+  
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final authState = ref.watch(authStateProvider);
+    
+    return authState.when(
+      data: (user) {
+        if (user == null) {
+          return LoginScreen();
+        }
+        
+        final claims = user.customClaims;
+        if (claims == null || !claims['admin']) {
+          return UnauthorizedScreen();
+        }
+        
+        return child;
+      },
+      loading: () => LoadingScreen(),
+      error: (error, stack) => ErrorScreen(error: error),
+    );
+  }
+}
+```
+
+### Permission-Based UI
+
+```dart
+class PermissionWidget extends StatelessWidget {
+  final String permission;
+  final Widget child;
+  final Widget? fallback;
+  
+  const PermissionWidget({
+    required this.permission,
+    required this.child,
+    this.fallback,
+  });
+  
+  @override
+  Widget build(BuildContext context) {
+    return Consumer(
+      builder: (context, ref, _) {
+        final user = ref.watch(currentUserProvider);
+        
+        if (user == null) return fallback ?? SizedBox.shrink();
+        
+        final claims = user.customClaims;
+        if (claims == null) return fallback ?? SizedBox.shrink();
+        
+        if (PermissionService.hasPermission(permission, claims)) {
+          return child;
+        }
+        
+        return fallback ?? SizedBox.shrink();
+      },
+    );
+  }
+}
+```
+
+### Admin Provider
+
+```dart
+class AdminProvider extends StateNotifier<AdminState> {
+  final FirebaseFirestore _firestore;
+  final FirebaseAuth _auth;
+  
+  AdminProvider(this._firestore, this._auth) : super(AdminState.initial());
+  
+  Future<void> loadUsers() async {
+    state = state.copyWith(loading: true);
+    
+    try {
+      final snapshot = await _firestore.collection('users').get();
+      final users = snapshot.docs.map((doc) => 
+        UserModel.fromJson(doc.data())
+      ).toList();
+      
+      state = state.copyWith(
+        users: users,
+        loading: false,
+      );
+    } catch (error) {
+      state = state.copyWith(
+        error: error.toString(),
+        loading: false,
+      );
+    }
+  }
+  
+  Future<void> updateUserRole(String userId, String role) async {
+    try {
+      final functions = FirebaseFunctions.instance;
+      await functions.httpsCallable('setAdminRole').call({
+        'uid': userId,
+        'role': role,
+        'permissions': ROLES[role]?.permissions ?? [],
+      });
+      
+      // Reload users
+      await loadUsers();
+    } catch (error) {
+      state = state.copyWith(error: error.toString());
     }
   }
 }
 ```
 
-## Usage Guide
-
-### Accessing the Admin Panel
-1. Navigate to the admin dashboard screen
-2. The system automatically checks for admin permissions
-3. If authorized, you'll see the full admin interface
-
-### Dashboard Overview
-- **Statistics Cards**: View key metrics at a glance
-- **Charts**: Interactive revenue and user growth visualizations
-- **Quick Actions**: Common admin tasks accessible from the dashboard
-
-### Sending Broadcast Messages
-1. Navigate to the Broadcast tab or use Quick Actions
-2. Click "Compose Broadcast Message"
-3. Fill in message details (title, content, type)
-4. Set targeting filters to reach specific users
-5. Schedule delivery (optional)
-6. Send the message
-
-### Managing Monetization
-1. Go to the Monetization tab
-2. Adjust ad visibility settings for different user types
-3. Configure ad types and frequencies
-4. Save changes (applies immediately)
-
-### Monitoring Errors
-1. Check the Errors tab for recent issues
-2. Filter by severity or resolution status
-3. Mark errors as resolved with notes
-4. Track error trends over time
-
-### Exporting Reports
-1. Use the Export & Reports section
-2. Choose report type (revenue, analytics, etc.)
-3. Set date ranges and filters
-4. Export as CSV or PDF
-
-## Localization
-
-The admin panel supports multiple languages through the existing localization system. All admin strings are defined in the ARB files and automatically translated.
-
-### Key Localized Strings
-- Dashboard titles and labels
-- Error messages and status indicators
-- Button text and navigation
-- Form labels and validation messages
-- Report headers and descriptions
-
 ## Security Considerations
 
-### Access Control
-- Admin role verification through Firebase Auth custom claims
-- Automatic permission checking on all admin screens
-- Activity logging for all admin actions
+### Input Validation
 
-### Data Protection
-- Secure Firebase rules prevent unauthorized access
-- Sensitive data is not exposed in client-side code
-- All admin actions are logged for audit purposes
+```dart
+class AdminInputValidator {
+  static String? validateRole(String? role) {
+    if (role == null || role.isEmpty) {
+      return 'Role is required';
+    }
+    
+    if (!ROLES.containsKey(role)) {
+      return 'Invalid role';
+    }
+    
+    return null;
+  }
+  
+  static String? validateUserId(String? userId) {
+    if (userId == null || userId.isEmpty) {
+      return 'User ID is required';
+    }
+    
+    // Validate Firebase UID format
+    if (!RegExp(r'^[a-zA-Z0-9]{28}$').hasMatch(userId)) {
+      return 'Invalid user ID format';
+    }
+    
+    return null;
+  }
+}
+```
 
-### Error Handling
-- Graceful error handling with user-friendly messages
-- Automatic retry mechanisms for failed operations
-- Comprehensive error logging for debugging
+### Rate Limiting
 
-## Performance Optimization
+```javascript
+// Cloud Function with rate limiting
+exports.adminAction = functions.https.onCall(async (data, context) => {
+  // Rate limiting check
+  const uid = context.auth?.uid;
+  const rateLimitKey = `admin_action_${uid}`;
+  
+  const currentCount = await redis.get(rateLimitKey) || 0;
+  if (currentCount > 10) { // 10 actions per minute
+    throw new functions.https.HttpsError('resource-exhausted', 'Rate limit exceeded');
+  }
+  
+  await redis.incr(rateLimitKey);
+  await redis.expire(rateLimitKey, 60); // 1 minute
+  
+  // Proceed with admin action
+  // ...
+});
+```
 
-### Data Loading
-- Efficient Firestore queries with proper indexing
-- Pagination for large datasets
-- Caching of frequently accessed data
+### Audit Logging
 
-### Real-time Updates
-- Stream-based data updates for live statistics
-- Optimized chart rendering with fl_chart
-- Background data refresh to maintain accuracy
-
-## Testing
-
-### Unit Tests
-- Provider testing for all admin functionality
-- Model validation and serialization tests
-- Service method testing with mocked Firebase
-
-### Integration Tests
-- End-to-end admin workflow testing
-- Permission and access control testing
-- Broadcast message delivery testing
-
-### Widget Tests
-- Admin screen UI testing
-- Form validation and submission testing
-- Chart rendering and interaction testing
+```dart
+class AdminAuditLogger {
+  static Future<void> logAction({
+    required String action,
+    required String targetUserId,
+    required Map<String, dynamic> details,
+  }) async {
+    final firestore = FirebaseFirestore.instance;
+    final user = FirebaseAuth.instance.currentUser;
+    
+    await firestore.collection('admin_audit_logs').add({
+      'action': action,
+      'adminUserId': user?.uid,
+      'targetUserId': targetUserId,
+      'details': details,
+      'timestamp': FieldValue.serverTimestamp(),
+      'ipAddress': await _getClientIP(),
+    });
+  }
+}
+```
 
 ## Troubleshooting
 
 ### Common Issues
 
-1. **Admin Access Denied**
-   - Verify Firebase custom claims are set correctly
-   - Check Firebase Auth configuration
-   - Ensure user is properly authenticated
+#### 1. Custom Claims Not Updating
 
-2. **Data Not Loading**
-   - Check Firestore security rules
-   - Verify collection names and structure
-   - Check network connectivity
+**Problem**: User roles not reflecting after assignment
 
-3. **Broadcast Messages Not Sending**
-   - Verify targeting filters are valid
-   - Check Firebase Functions for message delivery
-   - Review error logs for delivery failures
+**Solution**:
+```dart
+// Force token refresh after role assignment
+await FirebaseAuth.instance.currentUser?.getIdToken(true);
+```
 
-4. **Charts Not Rendering**
-   - Ensure fl_chart dependency is properly installed
-   - Check data format for chart components
-   - Verify chart configuration
+#### 2. Permission Denied Errors
 
-### Debug Mode
-Enable debug logging by setting the appropriate log levels in the admin service and providers.
+**Problem**: Admin users getting permission denied
 
-## Future Enhancements
+**Solution**:
+```dart
+// Check if user has admin claims
+final user = FirebaseAuth.instance.currentUser;
+final token = await user?.getIdTokenResult();
+final claims = token?.claims;
 
-### Planned Features
-- Advanced analytics with machine learning insights
-- Automated report generation and scheduling
-- Enhanced user segmentation and targeting
-- Real-time notifications for critical events
-- Advanced export formats (Excel, JSON)
-- API endpoints for external integrations
+if (claims?['admin'] != true) {
+  // Handle unauthorized access
+}
+```
 
-### Performance Improvements
-- Offline support for admin functions
-- Advanced caching strategies
-- Optimized chart rendering for large datasets
-- Background data synchronization
+#### 3. Role Assignment Fails
 
-## Support
+**Problem**: Cloud function fails to assign roles
 
-For technical support or feature requests related to the admin panel:
-1. Check the error logs for specific issues
-2. Review the Firebase console for data consistency
-3. Test with different user roles and permissions
-4. Consult the development team for complex issues
+**Solution**:
+```javascript
+// Ensure proper error handling in Cloud Function
+exports.setAdminRole = functions.https.onCall(async (data, context) => {
+  try {
+    // Validate input
+    if (!data.uid || !data.role) {
+      throw new functions.https.HttpsError('invalid-argument', 'Missing required fields');
+    }
+    
+    // Check permissions
+    if (!context.auth?.token?.admin) {
+      throw new functions.https.HttpsError('permission-denied', 'Admin access required');
+    }
+    
+    // Set custom claims
+    await admin.auth().setCustomUserClaims(data.uid, {
+      admin: true,
+      role: data.role,
+      permissions: data.permissions || [],
+      updatedAt: Date.now(),
+    });
+    
+    return { success: true };
+  } catch (error) {
+    console.error('Role assignment error:', error);
+    throw new functions.https.HttpsError('internal', 'Failed to assign role');
+  }
+});
+```
 
----
+### Debug Tools
 
-*This documentation is maintained as part of the Appoint application and should be updated as new features are added or existing functionality is modified.* 
+#### Admin Debug Panel
+
+```dart
+class AdminDebugPanel extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Consumer(
+      builder: (context, ref, child) {
+        final user = ref.watch(currentUserProvider);
+        
+        return Card(
+          child: Padding(
+            padding: EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Debug Information', style: Theme.of(context).textTheme.headline6),
+                SizedBox(height: 8),
+                Text('User ID: ${user?.uid ?? 'N/A'}'),
+                Text('Email: ${user?.email ?? 'N/A'}'),
+                Text('Claims: ${user?.customClaims ?? 'N/A'}'),
+                Text('Role: ${user?.customClaims?['role'] ?? 'N/A'}'),
+                Text('Permissions: ${user?.customClaims?['permissions'] ?? 'N/A'}'),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+```
+
+## Conclusion
+
+This admin panel implementation provides a robust, secure, and scalable solution for managing the APP-OINT platform. The role-based access control system ensures proper security while maintaining flexibility for different admin needs.
+
+For additional support or questions, please refer to the main documentation or create an issue in the repository. 

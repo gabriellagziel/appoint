@@ -4,7 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:appoint/models/ambassador_record.dart';
 
-final ambassadorRecordProvider = FutureProvider<AmbassadorRecord?>((final ref) async {
+final ambassadorRecordProvider =
+    FutureProvider<AmbassadorRecord?>((final ref) async {
   final uid = FirebaseAuth.instance.currentUser?.uid;
   if (uid == null) return null;
   final snap = await FirebaseFirestore.instance

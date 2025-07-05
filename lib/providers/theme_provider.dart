@@ -11,7 +11,8 @@ class ThemeState {
   final ThemeMode mode;
   const ThemeState({required this.palette, required this.mode});
 
-  ThemeState copyWith({final AppPalette? palette, final ThemeMode? mode}) => ThemeState(
+  ThemeState copyWith({final AppPalette? palette, final ThemeMode? mode}) =>
+      ThemeState(
         palette: palette ?? this.palette,
         mode: mode ?? this.mode,
       );

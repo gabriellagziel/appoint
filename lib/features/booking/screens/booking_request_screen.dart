@@ -18,22 +18,18 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
   Future<void> _submitBooking() async {
     setState(() => _isSubmitting = true);
 
-    BookingHelper(ref)
-        .submitBooking()
-        .then((final _) {
-          if (!mounted) return;
-          context.showSnackBar('Booking confirmed');
-          Navigator.pop(context);
-        })
-        .catchError((final e, final st) {
-          // Removed debug print: debugPrint('Error during booking: $e\n$st');
-          if (!mounted) return;
-          context.showSnackBar('Failed to confirm booking',
-              backgroundColor: Colors.red);
-        })
-        .whenComplete(() {
-          if (mounted) setState(() => _isSubmitting = false);
-        });
+    BookingHelper(ref).submitBooking().then((final _) {
+      if (!mounted) return;
+      context.showSnackBar('Booking confirmed');
+      Navigator.pop(context);
+    }).catchError((final e, final st) {
+      // Removed debug print: debugPrint('Error during booking: $e\n$st');
+      if (!mounted) return;
+      context.showSnackBar('Failed to confirm booking',
+          backgroundColor: Colors.red);
+    }).whenComplete(() {
+      if (mounted) setState(() => _isSubmitting = false);
+    });
   }
 
   @override

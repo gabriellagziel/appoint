@@ -242,14 +242,22 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
     }
   }
 
-  Future<void> _createBookingForExistingUser(final String phoneNumber,
-      final String customerName, final String date, final String time, final String bookingCode) async {
+  Future<void> _createBookingForExistingUser(
+      final String phoneNumber,
+      final String customerName,
+      final String date,
+      final String time,
+      final String bookingCode) async {
     // TODO: Implement push notification via FCM and create booking record
     // Creating booking for existing user: $phoneNumber, $customerName, $date, $time, $bookingCode
   }
 
-  Future<void> _openWhatsApp(final String phoneNumber, final String customerName,
-      final String date, final String time, final String bookingCode) async {
+  Future<void> _openWhatsApp(
+      final String phoneNumber,
+      final String customerName,
+      final String date,
+      final String time,
+      final String bookingCode) async {
     final message = '''
 Hi $customerName!
 
@@ -275,8 +283,12 @@ We'll see you soon!
     }
   }
 
-  Future<void> _saveBookingRequest(final String customerName, final String phoneNumber,
-      final String date, final String time, final String bookingCode) async {
+  Future<void> _saveBookingRequest(
+      final String customerName,
+      final String phoneNumber,
+      final String date,
+      final String time,
+      final String bookingCode) async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) throw Exception('Not authenticated');
 

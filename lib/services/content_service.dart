@@ -30,7 +30,9 @@ class ContentService {
     final int limit = 20,
   }) async {
     final snap = await fetchSnapshot(startAfter: startAfter, limit: limit);
-    return snap.docs.map((final d) => ContentItem.fromMap(d.id, d.data())).toList();
+    return snap.docs
+        .map((final d) => ContentItem.fromMap(d.id, d.data()))
+        .toList();
   }
 
   Future<ContentItem?> fetchById(final String id) async {

@@ -81,7 +81,8 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
                     value: 'multiple', child: Text('Multiple Choice')),
                 DropdownMenuItem(value: 'rating', child: Text('Rating')),
               ],
-              onChanged: (final val) => setState(() => item.type = val ?? 'text'),
+              onChanged: (final val) =>
+                  setState(() => item.type = val ?? 'text'),
             ),
             Align(
               alignment: Alignment.centerRight,

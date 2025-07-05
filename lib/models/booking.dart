@@ -14,7 +14,9 @@ class Booking with _$Booking {
     required final String staffId,
     required final String serviceId,
     required final String serviceName,
-    @DateTimeConverter() @JsonKey(name: 'dateTime') required final DateTime dateTime,
+    @DateTimeConverter()
+    @JsonKey(name: 'dateTime')
+    required final DateTime dateTime,
     @JsonKey(name: 'duration') required final Duration duration,
     final String? notes,
     @Default(false) final bool isConfirmed,
