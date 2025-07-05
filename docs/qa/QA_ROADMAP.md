@@ -16,6 +16,16 @@ _Updated: 2025-07-05_
 | Web | Chrome 125 | Desktop | P0 |
 | Web | Safari 17 | Mac | P1 |
 
+## Coverage bump rules
+
+| Overall coverage holds for… | New gate |
+|-----------------------------|----------|
+| ≥25 % for 2 consecutive weeks | 40 % |
+| ≥50 % for 2 consecutive weeks | 60 % |
+| ≥70 % for 2 consecutive weeks | 80 % |
+
+> CI maintainer: update the threshold in `.github/workflows/flutter_ci.yml` each time the rule triggers.
+
 ## Sign-off flow
 1. Feature branch merges → CI green.  
 2. QA executes relevant manual suite.  

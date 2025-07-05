@@ -62,6 +62,7 @@ jobs:
           fail_ci_if_error: true
 
       - name: Enforce 80% coverage gate
+        # TODO(COV-4): bump gate when roadmap rule triggers
         shell: bash
         run: |
           total_lines=$(grep -n "LF:" coverage/lcov.info | wc -l)
