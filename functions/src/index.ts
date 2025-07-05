@@ -1,5 +1,11 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
+import { 
+  validateInput, 
+  createCheckoutSessionSchema, 
+  cancelSubscriptionSchema, 
+  sendNotificationToStudioSchema 
+} from './validation';
 
 admin.initializeApp();
 const db = admin.firestore();
@@ -71,11 +77,9 @@ export const onNewBooking = functions.firestore
 // Stripe Checkout Session Creation
 export const createCheckoutSession = functions.https.onRequest(async (req, res) => {
   try {
-    const { studioId, priceId, successUrl, cancelUrl } = req.body;
-
-    if (!studioId || !priceId) {
-      return res.status(400).json({ error: 'Missing studioId or priceId' });
-    }
+    // Validate input data
+    const validatedData = validateInput(createCheckoutSessionSchema, req.body);
+    const { studioId, priceId, successUrl, cancelUrl, customerEmail } = validatedData;
 
     const stripe = require('stripe')(functions.config().stripe.secret_key);
 
@@ -89,7 +93,7 @@ export const createCheckoutSession = functions.https.onRequest(async (req, res) 
         studioId,
         type: 'subscription'
       },
-      customer_email: req.body.customerEmail,
+      customer_email: customerEmail,
     });
 
     res.json({ url: session.url, sessionId: session.id });
@@ -150,14 +154,9 @@ export const stripeWebhook = functions.https.onRequest(async (req, res) => {
 // Cancel Subscription
 export const cancelSubscription = functions.https.onCall(async (data, context) => {
   try {
-    const { subscriptionId } = data;
-
-    if (!subscriptionId) {
-      throw new functions.https.HttpsError(
-        'invalid-argument',
-        'Missing subscriptionId'
-      );
-    }
+    // Validate input data
+    const validatedData = validateInput(cancelSubscriptionSchema, data);
+    const { subscriptionId } = validatedData;
 
     const stripe = require('stripe')(functions.config().stripe.secret_key);
 
@@ -181,11 +180,9 @@ export const cancelSubscription = functions.https.onCall(async (data, context) =
 // Optional: Function to send notification to specific studio
 export const sendNotificationToStudio = functions.https.onCall(async (data, context) => {
   try {
-    const { studioId, title, body, data: additionalData } = data;
-    
-    if (!studioId || !title || !body) {
-      throw new functions.https.HttpsError('invalid-argument', 'Missing required parameters');
-    }
+    // Validate input data
+    const validatedData = validateInput(sendNotificationToStudioSchema, data);
+    const { studioId, title, body, data: additionalData } = validatedData;
 
     // Get studio's FCM token
     const studioSnap = await db.collection('studio').doc(studioId).get();
