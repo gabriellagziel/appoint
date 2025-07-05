@@ -28,6 +28,12 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
+      - name: Copy finished locales
+        run: dart run tool/skip_unfinished_locales.dart
+
+      - name: Generate localisation
+        run: flutter gen-l10n --arb-dir build/l10n
+
       - name: Static analysis
         run: flutter analyze --fatal-infos
 
@@ -40,4 +46,25 @@ jobs:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: coverage/lcov.info
           flags: unit
-          fail_ci_if_error: true 
+          fail_ci_if_error: true
+
+      - name: Launch AVD
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          arch: x86_64
+
+      - name: Run booking flow on Android
+        run: flutter drive integration_test/booking_flow_android_test.dart
+
+      - name: Run booking flow on Web
+        run: flutter drive -d chrome integration_test/booking_flow_web_test.dart
+
+      - name: Run performance test (profile)
+        run: flutter drive --profile -d chrome integration_test/perf/perf_driver.dart
+
+      - name: Upload perf artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: booking_flow_perf
+          path: performance/booking_flow_summary.json 
