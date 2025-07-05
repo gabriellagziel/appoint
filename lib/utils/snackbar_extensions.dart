@@ -10,4 +10,3 @@ extension SnackBarExtensions on BuildContext {
     );
   }
 }
-

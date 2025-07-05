@@ -83,12 +83,14 @@ class MessagesScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final error, final stack) => Center(child: Text('Error: $error')),
+        error: (final error, final stack) =>
+            Center(child: Text('Error: $error')),
       ),
     );
   }
 
-  void _handleMessageAction(final BuildContext context, final String messageId, final String action) {
+  void _handleMessageAction(
+      final BuildContext context, final String messageId, final String action) {
     switch (action) {
       case 'reply':
         // TODO: Implement this featuren
@@ -102,7 +104,8 @@ class MessagesScreen extends ConsumerWidget {
     }
   }
 
-  void _showDeleteConfirmation(final BuildContext context, final String messageId) {
+  void _showDeleteConfirmation(
+      final BuildContext context, final String messageId) {
     showDialog(
       context: context,
       builder: (final context) => AlertDialog(

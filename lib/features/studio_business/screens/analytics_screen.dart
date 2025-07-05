@@ -134,7 +134,8 @@ class AnalyticsScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildKPICard(final String title, final String value, final IconData icon, final Color color) {
+  Widget _buildKPICard(final String title, final String value,
+      final IconData icon, final Color color) {
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),

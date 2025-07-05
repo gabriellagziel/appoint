@@ -9,7 +9,8 @@ class StaffAvailabilityService {
   CollectionReference<Map<String, dynamic>> _col(final String staffId) =>
       _firestore.collection('staff/$staffId/availability');
 
-  Future<List<StaffAvailability>> fetchAvailability(final String staffId) async {
+  Future<List<StaffAvailability>> fetchAvailability(
+      final String staffId) async {
     final snap = await _col(staffId).get();
     return snap.docs
         .map((final d) =>
@@ -22,7 +23,8 @@ class StaffAvailabilityService {
     await doc.set(avail.toJson());
   }
 
-  Future<void> deleteAvailability(final String staffId, final DateTime date) async {
+  Future<void> deleteAvailability(
+      final String staffId, final DateTime date) async {
     await _col(staffId).doc(date.toIso8601String()).delete();
   }
 }

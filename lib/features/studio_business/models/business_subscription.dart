@@ -48,7 +48,9 @@ class BusinessSubscription {
       ),
       currentPeriodStart: DateTime.parse(json['currentPeriodStart'] as String),
       currentPeriodEnd: DateTime.parse(json['currentPeriodEnd'] as String),
-      trialEnd: json['trialEnd'] != null ? DateTime.parse(json['trialEnd'] as String) : null,
+      trialEnd: json['trialEnd'] != null
+          ? DateTime.parse(json['trialEnd'] as String)
+          : null,
       createdAt: DateTime.parse(json['createdAt'] as String),
       updatedAt: DateTime.parse(json['updatedAt'] as String),
       cancelAtPeriodEnd: json['cancelAtPeriodEnd'] as String?,
@@ -180,7 +182,8 @@ extension SubscriptionStatusExtension on SubscriptionStatus {
   }
 
   bool get isActive {
-    return this == SubscriptionStatus.active || this == SubscriptionStatus.trialing;
+    return this == SubscriptionStatus.active ||
+        this == SubscriptionStatus.trialing;
   }
 
   Color get color {

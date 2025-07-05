@@ -2,7 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/notification_payload.dart';
 
 final notificationServiceProvider = Provider(
-  (final ref) => throw UnimplementedError('NotificationService not implemented'),
+  (final ref) =>
+      throw UnimplementedError('NotificationService not implemented'),
 );
 
 // TODO: Implement proper notifications provider

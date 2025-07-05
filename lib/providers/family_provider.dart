@@ -53,8 +53,10 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
       final links = await _familyService.fetchFamilyLinks(parentId);
       state = state.copyWith(
         isLoading: false,
-        pendingInvites: links.where((final l) => l.status == 'pending').toList(),
-        connectedChildren: links.where((final l) => l.status == 'active').toList(),
+        pendingInvites:
+            links.where((final l) => l.status == 'pending').toList(),
+        connectedChildren:
+            links.where((final l) => l.status == 'active').toList(),
       );
     } catch (e) {
       state = state.copyWith(
@@ -94,8 +96,8 @@ final familyLinksProvider =
   ),
 );
 
-final permissionsProvider =
-    FutureProvider.family.autoDispose<List<Permission>, String>((final ref, final linkId) {
+final permissionsProvider = FutureProvider.family
+    .autoDispose<List<Permission>, String>((final ref, final linkId) {
   final svc = ref.watch(familyServiceProvider);
   return svc.fetchPermissions(linkId);
 });

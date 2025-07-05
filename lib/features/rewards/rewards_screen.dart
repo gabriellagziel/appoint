@@ -42,7 +42,8 @@ class RewardsScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final _, final __) => const Center(child: Text('Error loading rewards')),
+        error: (final _, final __) =>
+            const Center(child: Text('Error loading rewards')),
       ),
     );
   }

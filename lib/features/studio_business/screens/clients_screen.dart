@@ -173,8 +173,8 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
     );
   }
 
-  void _showEditClientDialog(
-      final BuildContext context, final String clientId, final Map<String, dynamic> client) {
+  void _showEditClientDialog(final BuildContext context, final String clientId,
+      final Map<String, dynamic> client) {
     _nameController.text = client['name'] ?? '';
     _emailController.text = client['email'] ?? '';
     _phoneController.text = client['phone'] ?? '';

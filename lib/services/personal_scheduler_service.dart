@@ -7,14 +7,16 @@ class PersonalSchedulerService {
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
 
-  PersonalSchedulerService({final FirebaseFirestore? firestore, final FirebaseAuth? auth})
+  PersonalSchedulerService(
+      {final FirebaseFirestore? firestore, final FirebaseAuth? auth})
       : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
 
   CollectionReference<PersonalAppointment> get _collection => _firestore
       .collection('personalAppointments')
       .withConverter<PersonalAppointment>(
-        fromFirestore: (final snap, final _) => PersonalAppointment.fromJson(snap.data()!),
+        fromFirestore: (final snap, final _) =>
+            PersonalAppointment.fromJson(snap.data()!),
         toFirestore: (final appt, final _) => appt.toJson(),
       );
 

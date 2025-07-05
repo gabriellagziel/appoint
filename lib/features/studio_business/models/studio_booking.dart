@@ -33,4 +33,4 @@ class StudioBooking {
   factory StudioBooking.fromJson(final Map<String, dynamic> json) =>
       _$StudioBookingFromJson(json);
   Map<String, dynamic> toJson() => _$StudioBookingToJson(this);
-} 
+}

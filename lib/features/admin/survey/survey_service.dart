@@ -11,8 +11,9 @@ class SurveyService {
         .collection('surveys')
         .where('status', isEqualTo: 'active')
         .snapshots()
-        .map((final snapshot) =>
-            snapshot.docs.map((final doc) => {'id': doc.id, ...doc.data()}).toList());
+        .map((final snapshot) => snapshot.docs
+            .map((final doc) => {'id': doc.id, ...doc.data()})
+            .toList());
   }
 
   // Submit survey response
@@ -87,7 +88,8 @@ class SurveyService {
         .doc(surveyId)
         .collection('responses')
         .snapshots()
-        .map((final snapshot) =>
-            snapshot.docs.map((final doc) => {'id': doc.id, ...doc.data()}).toList());
+        .map((final snapshot) => snapshot.docs
+            .map((final doc) => {'id': doc.id, ...doc.data()})
+            .toList());
   }
 }

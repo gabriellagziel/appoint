@@ -11,7 +11,8 @@ class NotificationService {
 
   Function(NotificationPayload)? _onMessage;
 
-  Future<void> initialize({final Function(NotificationPayload)? onMessage}) async {
+  Future<void> initialize(
+      {final Function(NotificationPayload)? onMessage}) async {
     _onMessage = onMessage;
     await _messaging.requestPermission();
     FirebaseMessaging.onMessage.listen(_handleMessage);
@@ -47,7 +48,8 @@ class NotificationService {
     }
   }
 
-  Future<void> sendNotification(final String token, final String title, final String body,
+  Future<void> sendNotification(
+      final String token, final String title, final String body,
       {final Map<String, dynamic>? data}) async {
     await _functions
         .httpsCallable('sendNotification')

@@ -17,6 +17,9 @@ class BusinessProfileService {
   Future<void> saveProfile(final BusinessProfile profile) async {
     final uid = _auth.currentUser?.uid;
     if (uid == null) return;
-    await _firestore.collection('business_profiles').doc(uid).set(profile.toJson());
+    await _firestore
+        .collection('business_profiles')
+        .doc(uid)
+        .set(profile.toJson());
   }
-} 
+}

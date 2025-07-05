@@ -17,4 +17,3 @@ class UnsupportedScreen extends StatelessWidget {
     );
   }
 }
-

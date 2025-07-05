@@ -12,7 +12,7 @@ Future<void> main() async {
   await initializeTestFirebase();
 
   group('BroadcastService', () {
-      // ignore: unused_local_variable
+    // ignore: unused_local_variable
     late BroadcastService broadcastService;
     late MockFirebaseFirestore mockFirestore;
 

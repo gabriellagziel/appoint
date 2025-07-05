@@ -118,7 +118,8 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
     );
   }
 
-  Widget _buildTimePicker(final BuildContext context, {required final bool isStart}) {
+  Widget _buildTimePicker(final BuildContext context,
+      {required final bool isStart}) {
     final theme = Theme.of(context);
     final label = isStart ? 'Start Time' : 'End Time';
     final time = isStart ? _startTime : _endTime;
@@ -213,4 +214,4 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
       );
     }
   }
-} 
+}

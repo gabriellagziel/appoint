@@ -136,6 +136,10 @@ Future<void> main() async {
       expect(newMessage.status, message.status);
       expect(newMessage.createdByAdminId, message.createdByAdminId);
       expect(newMessage.createdByAdminName, message.createdByAdminName);
+      expect(newMessage.targetingFilters.countries,
+          message.targetingFilters.countries);
+      expect(newMessage.targetingFilters.userRoles,
+          message.targetingFilters.userRoles);
     });
 
     test('should handle scheduled broadcast messages', () {

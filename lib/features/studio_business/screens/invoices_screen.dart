@@ -258,7 +258,8 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
     }
   }
 
-  Future<void> _updateInvoiceStatus(final String invoiceId, final String status) async {
+  Future<void> _updateInvoiceStatus(
+      final String invoiceId, final String status) async {
     try {
       await FirebaseFirestore.instance
           .collection('invoices')

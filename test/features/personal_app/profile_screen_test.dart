@@ -15,7 +15,8 @@ Future<void> main() async {
       const profile = UserProfile(id: '1', name: 'Tester', email: 't@e.com');
 
       final container = ProviderContainer(overrides: [
-        currentUserProfileProvider.overrideWith((final ref) => Stream.value(profile)),
+        currentUserProfileProvider
+            .overrideWith((final ref) => Stream.value(profile)),
         userSubscriptionProvider.overrideWith((final ref) async => true),
       ]);
 

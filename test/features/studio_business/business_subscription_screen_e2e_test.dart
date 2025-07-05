@@ -115,7 +115,8 @@ void main() {
       'currentPeriodEnd':
           DateTime.now().add(const Duration(days: 25)).toIso8601String(),
       'customerId': 'cus_abc',
-      'createdAt': DateTime.now().subtract(const Duration(days: 5)).toIso8601String(),
+      'createdAt':
+          DateTime.now().subtract(const Duration(days: 5)).toIso8601String(),
       'updatedAt': DateTime.now().toIso8601String(),
     });
 
@@ -176,7 +177,8 @@ void main() {
       expect(mockService.proCalled, false);
     });
 
-    testWidgets('Subscribe to Pro button calls service method', (final tester) async {
+    testWidgets('Subscribe to Pro button calls service method',
+        (final tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -189,7 +191,8 @@ void main() {
       expect(mockService.basicCalled, false);
     });
 
-    testWidgets('Change Plan button calls customer portal', (final tester) async {
+    testWidgets('Change Plan button calls customer portal',
+        (final tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -219,7 +222,8 @@ void main() {
       expect(find.text('TESTCODE'), findsOneWidget);
     });
 
-    testWidgets('Apply promo code button calls service method', (final tester) async {
+    testWidgets('Apply promo code button calls service method',
+        (final tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -235,7 +239,8 @@ void main() {
       expect(mockService.lastPromoCode, 'TESTCODE');
     });
 
-    testWidgets('shows error snackbar for invalid promo code', (final tester) async {
+    testWidgets('shows error snackbar for invalid promo code',
+        (final tester) async {
       // Set up the mock to throw an error
       mockService.shouldThrowError = true;
 
@@ -254,7 +259,8 @@ void main() {
       expect(find.textContaining('Failed to apply promo code'), findsOneWidget);
     });
 
-    testWidgets('shows success snackbar for valid promo code', (final tester) async {
+    testWidgets('shows success snackbar for valid promo code',
+        (final tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 

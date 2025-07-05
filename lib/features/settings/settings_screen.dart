@@ -32,7 +32,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             SwitchListTile(
               title: const Text('Enable Notifications'),
               value: _notifications,
-              onChanged: (final value) => setState(() => _notifications = value),
+              onChanged: (final value) =>
+                  setState(() => _notifications = value),
             ),
             const SizedBox(height: AppSpacing.sm),
             SwitchListTile(

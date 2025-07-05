@@ -28,8 +28,9 @@ class ContentPagingNotifier
     try {
       final snap =
           await _service.fetchSnapshot(startAfter: _lastDoc, limit: limit);
-      final newItems =
-          snap.docs.map((final d) => ContentItem.fromMap(d.id, d.data())).toList();
+      final newItems = snap.docs
+          .map((final d) => ContentItem.fromMap(d.id, d.data()))
+          .toList();
       if (snap.docs.isNotEmpty) {
         _lastDoc = snap.docs.last;
       }

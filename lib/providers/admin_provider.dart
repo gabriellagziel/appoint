@@ -8,7 +8,8 @@ import 'package:appoint/models/admin_dashboard_stats.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/services/admin_service.dart';
 
-final adminServiceProvider = Provider<AdminService>((final ref) => AdminService());
+final adminServiceProvider =
+    Provider<AdminService>((final ref) => AdminService());
 
 // Admin role provider that checks Firebase Auth custom claims
 final isAdminProvider = FutureProvider<bool>((final ref) async {
@@ -39,7 +40,8 @@ final analyticsProvider = FutureProvider<Analytics>((final ref) {
 });
 
 // Admin Dashboard Stats
-final adminDashboardStatsProvider = FutureProvider<AdminDashboardStats>((final ref) {
+final adminDashboardStatsProvider =
+    FutureProvider<AdminDashboardStats>((final ref) {
   return ref.read(adminServiceProvider).fetchAdminDashboardStats();
 });
 
@@ -106,15 +108,18 @@ class AdminActions {
     await _adminService.updateUserRole(uid, role);
   }
 
-  Future<void> resolveError(final String errorId, final String resolutionNotes) async {
+  Future<void> resolveError(
+      final String errorId, final String resolutionNotes) async {
     await _adminService.resolveError(errorId, resolutionNotes);
   }
 
-  Future<void> updateMonetizationSettings(final MonetizationSettings settings) async {
+  Future<void> updateMonetizationSettings(
+      final MonetizationSettings settings) async {
     await _adminService.updateMonetizationSettings(settings);
   }
 
-  Future<void> createBroadcastMessage(final AdminBroadcastMessage message) async {
+  Future<void> createBroadcastMessage(
+      final AdminBroadcastMessage message) async {
     await _adminService.createBroadcastMessage(message);
   }
 

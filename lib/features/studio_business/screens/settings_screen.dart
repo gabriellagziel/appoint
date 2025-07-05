@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
@@ -160,10 +161,22 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           ),
           ListTile(
             leading: const Icon(Icons.security),
-            title: const Text('Privacy Settings'),
-            subtitle: const Text('Manage your privacy preferences'),
-            onTap: () {
-              // TODO: Implement this featurent privacy settings
+            title: const Text('Privacy Policy'),
+            subtitle: const Text('Read our privacy policy'),
+            onTap: () async {
+              const url = 'https://yourdomain.com/privacy-policy';
+              final uri = Uri.parse(url);
+              if (await canLaunchUrl(uri)) {
+                await launchUrl(uri, mode: LaunchMode.externalApplication);
+              } else {
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Could not open privacy policy'),
+                    ),
+                  );
+                }
+              }
             },
           ),
           ListTile(

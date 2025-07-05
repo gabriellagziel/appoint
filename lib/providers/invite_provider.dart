@@ -4,7 +4,8 @@ import 'package:appoint/models/invite.dart';
 import 'package:appoint/services/invite_service.dart';
 import 'package:appoint/providers/auth_provider.dart';
 
-final inviteServiceProvider = Provider<InviteService>((final ref) => InviteService());
+final inviteServiceProvider =
+    Provider<InviteService>((final ref) => InviteService());
 
 final myInvitesStreamProvider = StreamProvider<List<Invite>>((final ref) {
   final authState = ref.watch(authStateProvider);

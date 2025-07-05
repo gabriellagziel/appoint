@@ -71,6 +71,7 @@ class FlSpot {
   final double y;
   const FlSpot(this.x, this.y);
 }
+
 // Pie chart stubs
 class PieChart extends StatelessWidget {
   final PieChartData data;
@@ -154,5 +155,6 @@ class SideTitles {
   final bool showTitles;
   final double? reservedSize;
   final Widget Function(double, dynamic)? getTitlesWidget;
-  const SideTitles({this.showTitles = true, this.reservedSize, this.getTitlesWidget});
+  const SideTitles(
+      {this.showTitles = true, this.reservedSize, this.getTitlesWidget});
 }

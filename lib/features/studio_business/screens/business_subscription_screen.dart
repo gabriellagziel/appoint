@@ -377,7 +377,8 @@ class _BusinessSubscriptionScreenState
     );
   }
 
-  Widget _buildComparisonRow(final String feature, final String basic, final String pro) {
+  Widget _buildComparisonRow(
+      final String feature, final String basic, final String pro) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(

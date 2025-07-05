@@ -160,8 +160,8 @@ class CalendarService {
   }
 
   Stream<List<CalendarEvent>> getEvents() {
-    return _firestore.collection(_collection).snapshots().map((final snapshot) =>
-        snapshot.docs
+    return _firestore.collection(_collection).snapshots().map(
+        (final snapshot) => snapshot.docs
             .map((final doc) => CalendarEvent.fromJson(doc.data()))
             .toList());
   }
@@ -178,8 +178,9 @@ class CalendarService {
         .where('endTime', isLessThanOrEqualTo: end)
         .get();
 
-    final events =
-        snapshot.docs.map((final doc) => CalendarEvent.fromJson(doc.data())).toList();
+    final events = snapshot.docs
+        .map((final doc) => CalendarEvent.fromJson(doc.data()))
+        .toList();
     _setCache(key, events);
     return events;
   }

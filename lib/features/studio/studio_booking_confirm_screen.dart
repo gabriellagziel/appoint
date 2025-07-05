@@ -25,13 +25,14 @@ class StudioBookingConfirmScreen extends ConsumerWidget {
             const Spacer(),
             ElevatedButton(
               onPressed: () {
-                final summary = 'You are about to book with ${args.staff.displayName} on ${DateFormat.yMMMEd().add_jm().format(DateTime(
-                              args.date.year,
-                              args.date.month,
-                              args.date.day,
-                              args.slot.hour,
-                              args.slot.minute,
-                            ))}.';
+                final summary =
+                    'You are about to book with ${args.staff.displayName} on ${DateFormat.yMMMEd().add_jm().format(DateTime(
+                          args.date.year,
+                          args.date.month,
+                          args.date.day,
+                          args.slot.hour,
+                          args.slot.minute,
+                        ))}.';
                 BottomSheetManager.show(
                   context: context,
                   child: BookingConfirmationSheet(

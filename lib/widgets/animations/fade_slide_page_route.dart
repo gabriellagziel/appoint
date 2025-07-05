@@ -10,7 +10,8 @@ class FadeSlidePageRoute<T> extends PageRouteBuilder<T> {
   }) : super(
           pageBuilder: (final _, final __, final ___) => page,
           transitionDuration: duration,
-          transitionsBuilder: (final context, final animation, final secondaryAnimation, final child) {
+          transitionsBuilder: (final context, final animation,
+              final secondaryAnimation, final child) {
             final offsetAnimation = Tween<Offset>(
               begin: _offsetForDirection(direction),
               end: Offset.zero,

@@ -80,7 +80,8 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildWelcomeSection(final BuildContext context, final AppLocalizations l10n) {
+  Widget _buildWelcomeSection(
+      final BuildContext context, final AppLocalizations l10n) {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -142,7 +143,8 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildQuickActions(final BuildContext context, final AppLocalizations l10n) {
+  Widget _buildQuickActions(
+      final BuildContext context, final AppLocalizations l10n) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -227,7 +229,8 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildRecentGames(final BuildContext context, final AppLocalizations l10n) {
+  Widget _buildRecentGames(
+      final BuildContext context, final AppLocalizations l10n) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -284,8 +287,8 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildGameCard(
-      final BuildContext context, final PlaytimeGame game, final AppLocalizations l10n) {
+  Widget _buildGameCard(final BuildContext context, final PlaytimeGame game,
+      final AppLocalizations l10n) {
     return Container(
       width: 120,
       margin: const EdgeInsets.only(right: 12),
@@ -346,7 +349,8 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildUpcomingSessions(final BuildContext context, final AppLocalizations l10n) {
+  Widget _buildUpcomingSessions(
+      final BuildContext context, final AppLocalizations l10n) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -397,8 +401,8 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildSessionCard(
-      final BuildContext context, final PlaytimeSession session, final AppLocalizations l10n) {
+  Widget _buildSessionCard(final BuildContext context,
+      final PlaytimeSession session, final AppLocalizations l10n) {
     return Card(
       margin: const EdgeInsets.only(bottom: 8),
       elevation: 2,
@@ -441,8 +445,8 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildEmptyState(
-      final BuildContext context, final String title, final String subtitle, final IconData icon) {
+  Widget _buildEmptyState(final BuildContext context, final String title,
+      final String subtitle, final IconData icon) {
     return Container(
       padding: const EdgeInsets.all(24),
       child: Column(
@@ -475,7 +479,8 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  void _showCreateOptions(final BuildContext context, final AppLocalizations l10n) {
+  void _showCreateOptions(
+      final BuildContext context, final AppLocalizations l10n) {
     BottomSheetManager.show(
       context: context,
       child: Container(

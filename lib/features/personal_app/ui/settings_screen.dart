@@ -42,7 +42,8 @@ class SettingsScreen extends ConsumerWidget {
                   onPressed: () {
                     SharePlus.instance.share(
                       ShareParams(
-                        text: 'Join me on Appoint! Use my ambassador link: ${ambassador.shareLink}',
+                        text:
+                            'Join me on Appoint! Use my ambassador link: ${ambassador.shareLink}',
                         subject: 'Appoint - Ambassador Link',
                       ),
                     );

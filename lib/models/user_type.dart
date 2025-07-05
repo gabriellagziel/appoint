@@ -4,4 +4,4 @@ enum UserType {
   studio,
   admin,
   child,
-} 
+}

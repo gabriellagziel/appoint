@@ -77,12 +77,11 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                 margin: const EdgeInsets.only(bottom: 16),
                 child: ListTile(
                   leading: CircleAvatar(
-                    backgroundColor: room['isAvailable'] == true 
-                        ? Colors.green 
-                        : Colors.red,
+                    backgroundColor:
+                        room['isAvailable'] == true ? Colors.green : Colors.red,
                     child: Icon(
-                      room['isAvailable'] == true 
-                          ? Icons.meeting_room 
+                      room['isAvailable'] == true
+                          ? Icons.meeting_room
                           : Icons.block,
                       color: Colors.white,
                     ),
@@ -94,7 +93,8 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                       Text('Capacity: ${room['capacity']} people'),
                       if (room['description'] != null)
                         Text('Description: ${room['description']}'),
-                      Text('Status: ${room['isAvailable'] == true ? 'Available' : 'Occupied'}'),
+                      Text(
+                          'Status: ${room['isAvailable'] == true ? 'Available' : 'Occupied'}'),
                     ],
                   ),
                   trailing: PopupMenuButton(
@@ -116,7 +116,8 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                       if (value == 'edit') {
                         _showEditRoomDialog(context, roomId, room);
                       } else if (value == 'toggle') {
-                        _toggleRoomAvailability(roomId, room['isAvailable'] ?? true);
+                        _toggleRoomAvailability(
+                            roomId, room['isAvailable'] ?? true);
                       } else if (value == 'delete') {
                         _deleteRoom(roomId);
                       }
@@ -193,7 +194,8 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
     );
   }
 
-  void _showEditRoomDialog(final BuildContext context, final String roomId, final Map<String, dynamic> room) {
+  void _showEditRoomDialog(final BuildContext context, final String roomId,
+      final Map<String, dynamic> room) {
     _nameController.text = room['name'] ?? '';
     _capacityController.text = (room['capacity'] ?? 0).toString();
     _descriptionController.text = room['description'] ?? '';
@@ -269,8 +271,8 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
       await FirebaseFirestore.instance.collection('rooms').add({
         'name': _nameController.text.trim(),
         'capacity': int.parse(_capacityController.text.trim()),
-        'description': _descriptionController.text.trim().isEmpty 
-            ? null 
+        'description': _descriptionController.text.trim().isEmpty
+            ? null
             : _descriptionController.text.trim(),
         'businessProfileId': user.uid,
         'isAvailable': true,
@@ -308,8 +310,8 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
       await FirebaseFirestore.instance.collection('rooms').doc(roomId).update({
         'name': _nameController.text.trim(),
         'capacity': int.parse(_capacityController.text.trim()),
-        'description': _descriptionController.text.trim().isEmpty 
-            ? null 
+        'description': _descriptionController.text.trim().isEmpty
+            ? null
             : _descriptionController.text.trim(),
         'updatedAt': DateTime.now().toIso8601String(),
       });
@@ -333,7 +335,8 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
     }
   }
 
-  Future<void> _toggleRoomAvailability(final String roomId, final bool currentAvailability) async {
+  Future<void> _toggleRoomAvailability(
+      final String roomId, final bool currentAvailability) async {
     try {
       await FirebaseFirestore.instance.collection('rooms').doc(roomId).update({
         'isAvailable': !currentAvailability,
@@ -342,7 +345,9 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Room ${!currentAvailability ? 'enabled' : 'disabled'} successfully!')),
+          SnackBar(
+              content: Text(
+                  'Room ${!currentAvailability ? 'enabled' : 'disabled'} successfully!')),
         );
       }
     } catch (e) {
@@ -371,4 +376,4 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
       }
     }
   }
-} 
+}

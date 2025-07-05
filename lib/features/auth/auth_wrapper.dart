@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'dart:io';
 
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/features/studio_business/entry/business_entry_screen.dart';
@@ -40,8 +41,46 @@ class AuthWrapper extends ConsumerWidget {
       loading: () => const Scaffold(
         body: Center(child: CircularProgressIndicator()),
       ),
-      error: (final _, final __) => const Scaffold(
-        body: Center(child: Text('Error')),
+      error: (final error, final stack) {
+        if (error is SocketException) {
+          return NetworkErrorRetry(
+            onRetry: () => ref.refresh(authStateProvider),
+          );
+        }
+        return const Scaffold(
+          body: Center(child: Text('Error')),
+        );
+      },
+    );
+  }
+}
+
+class NetworkErrorRetry extends StatelessWidget {
+  final VoidCallback onRetry;
+  const NetworkErrorRetry({super.key, required this.onRetry});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.wifi_off, size: 64, color: Colors.red),
+            const SizedBox(height: 16),
+            const Text(
+              'Network error. Please check your connection and try again.',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 24),
+            ElevatedButton.icon(
+              icon: const Icon(Icons.refresh),
+              label: const Text('Retry'),
+              onPressed: onRetry,
+            ),
+          ],
+        ),
       ),
     );
   }

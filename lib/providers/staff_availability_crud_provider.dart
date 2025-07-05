@@ -2,8 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/staff_availability.dart';
 import 'package:appoint/services/staff_availability_service.dart';
 
-final staffAvailabilityServiceProvider =
-    Provider<StaffAvailabilityService>((final ref) => StaffAvailabilityService());
+final staffAvailabilityServiceProvider = Provider<StaffAvailabilityService>(
+    (final ref) => StaffAvailabilityService());
 
 class StaffAvailabilityNotifier
     extends StateNotifier<AsyncValue<List<StaffAvailability>>> {
