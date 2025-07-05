@@ -4,6 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:appoint/features/booking/widgets/chat_flow_widget.dart';
 import 'package:appoint/providers/booking_draft_provider.dart';
+import 'package:appoint/models/playtime_chat.dart';
+import 'package:appoint/services/auth_service.dart';
 
 class MockBookingDraftNotifier extends Mock implements BookingDraftNotifier {}
 
@@ -14,7 +16,7 @@ void main() {
 
     setUp(() {
       mockNotifier = MockBookingDraftNotifier();
-      
+
       container = ProviderContainer(
         overrides: [
           bookingDraftProvider.overrideWith((ref) => mockNotifier),
@@ -30,13 +32,14 @@ void main() {
       return ProviderScope(
         parent: container,
         child: MaterialApp(
-          home: const ChatFlowWidget(),
+          home: ChatFlowWidget(auth: AuthService()),
         ),
       );
     }
 
     group('Typing Indicator', () {
-      testWidgets('should show typing indicator when other user is typing', (WidgetTester tester) async {
+      testWidgets('should show typing indicator when other user is typing',
+          (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(
           BookingDraft(isOtherUserTyping: true),
@@ -51,7 +54,8 @@ void main() {
         expect(find.byType(AnimatedContainer), findsNWidgets(3)); // Typing dots
       });
 
-      testWidgets('should not show typing indicator when no one is typing', (WidgetTester tester) async {
+      testWidgets('should not show typing indicator when no one is typing',
+          (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(
           BookingDraft(isOtherUserTyping: false),
@@ -67,7 +71,9 @@ void main() {
     });
 
     group('Read Receipts', () {
-      testWidgets('should show read receipt on user messages that have been read', (WidgetTester tester) async {
+      testWidgets(
+          'should show read receipt on user messages that have been read',
+          (WidgetTester tester) async {
         // Arrange
         final readMessage = ChatMessage(
           id: '1',
@@ -89,7 +95,8 @@ void main() {
         expect(find.byIcon(Icons.check), findsOneWidget);
       });
 
-      testWidgets('should not show read receipt on unread messages', (WidgetTester tester) async {
+      testWidgets('should not show read receipt on unread messages',
+          (WidgetTester tester) async {
         // Arrange
         final unreadMessage = ChatMessage(
           id: '1',
@@ -111,7 +118,8 @@ void main() {
         expect(find.byIcon(Icons.check), findsNothing);
       });
 
-      testWidgets('should not show read receipt on bot messages', (WidgetTester tester) async {
+      testWidgets('should not show read receipt on bot messages',
+          (WidgetTester tester) async {
         // Arrange
         final botMessage = ChatMessage(
           id: '1',
@@ -147,7 +155,8 @@ void main() {
         expect(find.text('0/500'), findsOneWidget);
       });
 
-      testWidgets('should update character counter when typing', (WidgetTester tester) async {
+      testWidgets('should update character counter when typing',
+          (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(BookingDraft());
 
@@ -162,7 +171,8 @@ void main() {
         expect(find.text('5/500'), findsOneWidget);
       });
 
-      testWidgets('should show error when message exceeds limit', (WidgetTester tester) async {
+      testWidgets('should show error when message exceeds limit',
+          (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(BookingDraft());
 
@@ -179,7 +189,8 @@ void main() {
         expect(find.text('501/500'), findsOneWidget);
       });
 
-      testWidgets('should disable send button when message is empty', (WidgetTester tester) async {
+      testWidgets('should disable send button when message is empty',
+          (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(BookingDraft());
 
@@ -192,7 +203,8 @@ void main() {
         expect(tester.widget<IconButton>(sendButton).onPressed, isNull);
       });
 
-      testWidgets('should disable send button when message exceeds limit', (WidgetTester tester) async {
+      testWidgets('should disable send button when message exceeds limit',
+          (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(BookingDraft());
 
@@ -209,7 +221,8 @@ void main() {
         expect(tester.widget<IconButton>(sendButton).onPressed, isNull);
       });
 
-      testWidgets('should enable send button for valid message', (WidgetTester tester) async {
+      testWidgets('should enable send button for valid message',
+          (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(BookingDraft());
 
@@ -271,7 +284,8 @@ void main() {
     });
 
     group('Message Sending', () {
-      testWidgets('should call addUserMessage when send button is pressed', (WidgetTester tester) async {
+      testWidgets('should call addUserMessage when send button is pressed',
+          (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(BookingDraft());
         when(() => mockNotifier.addUserMessage(any())).thenReturn(null);
@@ -289,7 +303,8 @@ void main() {
         verify(() => mockNotifier.addUserMessage('Test message')).called(1);
       });
 
-      testWidgets('should clear input after sending message', (WidgetTester tester) async {
+      testWidgets('should clear input after sending message',
+          (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(BookingDraft());
         when(() => mockNotifier.addUserMessage(any())).thenReturn(null);
@@ -307,7 +322,8 @@ void main() {
         expect(find.text('0/500'), findsOneWidget); // Counter should be reset
       });
 
-      testWidgets('should not call addUserMessage for empty message', (WidgetTester tester) async {
+      testWidgets('should not call addUserMessage for empty message',
+          (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(BookingDraft());
         when(() => mockNotifier.addUserMessage(any())).thenReturn(null);
