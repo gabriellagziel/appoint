@@ -74,7 +74,8 @@ class BookingHelper {
         createdAt: DateTime.now(),
       );
 
-      final createdBooking = await _bookingService.submitBooking(booking);
+      await _bookingService.submitBooking(booking);
+      final createdBooking = booking.copyWith(id: booking.id.isEmpty ? 'temp_id' : booking.id);
 
       // Create corresponding appointment
       final appointment = await _appointmentService.createScheduled(
@@ -85,11 +86,11 @@ class BookingHelper {
 
       // Send notifications (fire and forget)
       // ignore: unawaited_futures
-      Future(() => _sendBookingNotifications(createdBooking, appointment));
+      unawaited(_sendBookingNotifications(createdBooking, appointment));
 
       // Track booking analytics (fire and forget)
       // ignore: unawaited_futures
-      Future(() => _trackBookingAnalytics(createdBooking, studioId));
+      unawaited(_trackBookingAnalytics(createdBooking, studioId));
 
       return BookingResult.success(createdBooking, appointment);
     } catch (e) {
@@ -178,7 +179,7 @@ class BookingHelper {
 
       // Send cancellation notifications (fire and forget)
       // ignore: unawaited_futures
-      Future(() => _sendCancellationNotifications(booking, reason));
+      unawaited(_sendCancellationNotifications(booking, reason));
 
       return BookingResult.cancelled(booking);
     } catch (e) {
