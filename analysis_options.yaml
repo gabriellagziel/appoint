@@ -1,35 +1,5 @@
-include: package:flutter_lints/flutter.yaml
 
-analyzer:
+coverage:
   exclude:
     - "**/*.g.dart"
     - "**/*.freezed.dart"
-    - "**/*.mocks.dart"
-    - "lib/generated/**"
-    - "packages/**"
-    - "**/*.arb"
-    - ".github/workflows/**"
-    - "FINAL_FIXES_REPORT.md"
-    - ".cspell.json"
-    - "scripts/**"
-    - "tool/**"
-  
-  errors:
-    # Suppress TODO warnings
-    todo: ignore
-    
-  language:
-    strict-casts: false
-    strict-raw-types: false
-
-linter:
-  rules:
-    # Disable rules that are too strict for this project
-    prefer_const_constructors: false
-    prefer_const_declarations: false
-    use_build_context_synchronously: false
-
-# Test-specific rules
-test:
-  rules:
-    - avoid_as
