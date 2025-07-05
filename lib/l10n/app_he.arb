@@ -724,33 +724,33 @@
   "@errorLoadingStats": {
     "description": "errorLoadingStats description"
   },
-  "appointment": "appointment (TRANSLATE)",
+  "appointment": "פגישה",
   "@appointment": {
-    "description": "appointment description"
+    "description": "Appointment label"
   },
-  "from": "from (TRANSLATE)",
+  "from": "מ",
   "@from": {
-    "description": "from description"
+    "description": "From label"
   },
-  "phone": "phone (TRANSLATE)",
+  "phone": "טלפון",
   "@phone": {
-    "description": "phone description"
+    "description": "Phone label"
   },
   "noRouteDefined": "noRouteDefined (TRANSLATE)",
   "@noRouteDefined": {
     "description": "noRouteDefined description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "פרטי פגישה",
   "@meetingDetails": {
-    "description": "meetingDetails description"
+    "description": "Meeting details label"
   },
-  "meetingId": "meetingId (TRANSLATE)",
+  "meetingId": "מזהה פגישה",
   "@meetingId": {
-    "description": "meetingId description"
+    "description": "Meeting ID label"
   },
-  "creator": "creator (TRANSLATE)",
+  "creator": "יוצר",
   "@creator": {
-    "description": "creator description"
+    "description": "Creator label"
   },
   "context": "context (TRANSLATE)",
   "@context": {
@@ -780,9 +780,83 @@
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "הזמנות",
   "@bookings": {
-    "description": "Description"
+    "description": "Bookings section title"
   },
-  "contentLibrary": "Content Library"
+  "contentLibrary": "ספריית תוכן",
+  "authErrorUserNotFound": "לא נמצא חשבון עם כתובת אימייל זו.",
+  "authErrorWrongPassword": "סיסמה שגויה. אנא נסה שוב.",
+  "authErrorInvalidEmail": "אנא הכנס כתובת אימייל תקינה.",
+  "authErrorUserDisabled": "חשבון זה הושבת. אנא פנה לתמיכה.",
+  "authErrorWeakPassword": "הסיסמה חלשה מדי. אנא בחר סיסמה חזקה יותר.",
+  "authErrorEmailAlreadyInUse": "כבר קיים חשבון עם אימייל זה.",
+  "authErrorTooManyRequests": "יותר מדי ניסיונות כושלים. אנא נסה שוב מאוחר יותר.",
+  "authErrorOperationNotAllowed": "שיטת התחברות זו אינה מופעלת. אנא פנה לתמיכה.",
+  "authErrorInvalidCredential": "פרטי התחברות לא תקינים. אנא נסה שוב.",
+  "authErrorAccountExistsWithDifferentCredential": "כבר קיים חשבון עם אימייל זה המשתמש בשיטת התחברות אחרת.",
+  "authErrorCredentialAlreadyInUse": "פרטי התחברות אלה כבר קשורים לחשבון אחר.",
+  "authErrorNetworkRequestFailed": "שגיאת רשת. אנא בדוק את החיבור ונסה שוב.",
+  "authErrorRequiresRecentLogin": "אנא התחבר שוב לביצוע פעולה זו.",
+  "authErrorAppNotAuthorized": "אפליקציה זו אינה מורשית להשתמש ב-Firebase Authentication.",
+  "authErrorInvalidVerificationCode": "קוד האימות אינו תקין.",
+  "authErrorInvalidVerificationId": "מזהה האימות אינו תקין.",
+  "authErrorMissingVerificationCode": "אנא הכנס את קוד האימות.",
+  "authErrorMissingVerificationId": "מזהה אימות חסר.",
+  "authErrorInvalidPhoneNumber": "מספר הטלפון אינו תקין.",
+  "authErrorMissingPhoneNumber": "אנא הכנס מספר טלפון.",
+  "authErrorQuotaExceeded": "מכסת ה-SMS עבור פרויקט זה הותרה. אנא נסה שוב מאוחר יותר.",
+  "authErrorCodeExpired": "קוד האימות פג תוקף. אנא בקש אחד חדש.",
+  "authErrorSessionExpired": "הסשן פג תוקף. אנא התחבר שוב.",
+  "authErrorMultiFactorAuthRequired": "נדרשת אימות רב-גורמי.",
+  "authErrorMultiFactorInfoNotFound": "מידע רב-גורמי לא נמצא.",
+  "authErrorMissingMultiFactorSession": "סשן רב-גורמי חסר.",
+  "authErrorInvalidMultiFactorSession": "סשן רב-גורמי לא תקין.",
+  "authErrorSecondFactorAlreadyInUse": "גורם שני זה כבר בשימוש.",
+  "authErrorMaximumSecondFactorCountExceeded": "מספר מקסימלי של גורמים שניים הותר.",
+  "authErrorUnsupportedFirstFactor": "גורם ראשון לא נתמך לאימות רב-גורמי.",
+  "authErrorEmailChangeNeedsVerification": "שינוי אימייל דורש אימות.",
+  "authErrorPhoneNumberAlreadyExists": "מספר טלפון זה כבר בשימוש.",
+  "authErrorInvalidPassword": "הסיסמה אינה תקינה או חלשה מדי.",
+  "authErrorInvalidIdToken": "טוקן ה-ID אינו תקין.",
+  "authErrorIdTokenExpired": "טוקן ה-ID פג תוקף.",
+  "authErrorIdTokenRevoked": "טוקן ה-ID בוטל.",
+  "authErrorInternalError": "אירעה שגיאה פנימית. אנא נסה שוב.",
+  "authErrorInvalidArgument": "סופק ארגומנט לא תקין.",
+  "authErrorInvalidClaims": "סופקו טענות מותאמות אישית לא תקינות.",
+  "authErrorInvalidContinueUri": "כתובת ה-URL להמשך אינה תקינה.",
+  "authErrorInvalidCreationTime": "זמן היצירה אינו תקין.",
+  "authErrorInvalidDisabledField": "ערך השדה המושבת אינו תקין.",
+  "authErrorInvalidDisplayName": "שם התצוגה אינו תקין.",
+  "authErrorInvalidDynamicLinkDomain": "דומיין הקישור הדינמי אינו תקין.",
+  "authErrorInvalidEmailVerified": "ערך האימייל המאומת אינו תקין.",
+  "authErrorInvalidHashAlgorithm": "אלגוריתם ה-hash אינו תקין.",
+  "authErrorInvalidHashBlockSize": "גודל בלוק ה-hash אינו תקין.",
+  "authErrorInvalidHashDerivedKeyLength": "אורך המפתח הנגזר מה-hash אינו תקין.",
+  "authErrorInvalidHashKey": "מפתח ה-hash אינו תקין.",
+  "authErrorInvalidHashMemoryCost": "עלות הזיכרון של ה-hash אינה תקינה.",
+  "authErrorInvalidHashParallelization": "המקבילות של ה-hash אינה תקינה.",
+  "authErrorInvalidHashRounds": "ערך סיבובי ה-hash אינו תקין.",
+  "authErrorInvalidHashSaltSeparator": "מפריד המלח של ה-hash אינו תקין.",
+  "authErrorInvalidLastSignInTime": "זמן ההתחברות האחרון אינו תקין.",
+  "authErrorInvalidPageToken": "טוקן הדף אינו תקין.",
+  "authErrorInvalidProviderData": "נתוני הספק אינם תקינים.",
+  "authErrorInvalidProviderId": "מזהה הספק אינו תקין.",
+  "authErrorInvalidSessionCookieDuration": "משך עוגיית הסשן אינו תקין.",
+  "authErrorInvalidUid": "ה-UID אינו תקין.",
+  "authErrorInvalidUserImport": "רשומת ייבוא המשתמש אינה תקינה.",
+  "authErrorMaximumUserCountExceeded": "מספר מקסימלי של משתמשים לייבוא הותר.",
+  "authErrorMissingAndroidPkgName": "שם חבילת Android חסר.",
+  "authErrorMissingContinueUri": "כתובת URL להמשך חסרה.",
+  "authErrorMissingHashAlgorithm": "אלגוריתם hash חסר.",
+  "authErrorMissingIosBundleId": "מזהה חבילת iOS חסר.",
+  "authErrorMissingUid": "UID חסר.",
+  "authErrorMissingOauthClientSecret": "סוד הלקוח OAuth חסר.",
+  "authErrorProjectNotFound": "פרויקט Firebase לא נמצא.",
+  "authErrorReservedClaims": "סופקו טענות שמורות.",
+  "authErrorSessionCookieExpired": "עוגיית הסשן פגה תוקף.",
+  "authErrorSessionCookieRevoked": "עוגיית הסשן בוטלה.",
+  "authErrorUidAlreadyExists": "ה-UID כבר בשימוש.",
+  "authErrorUnauthorizedContinueUri": "דומיין כתובת ה-URL להמשך אינו מורשה.",
+  "authErrorUnknown": "אירעה שגיאת אימות לא ידועה."
 }
