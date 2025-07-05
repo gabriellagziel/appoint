@@ -409,7 +409,8 @@ Future<void> main() async {
       await Future.delayed(
           const Duration(milliseconds: 100)); // Wait for async operation
 
-      verify(() => mockService.fetchAmbassadorStats(country: 'United States')).called(1);
+      verify(() => mockService.fetchAmbassadorStats(country: 'United States'))
+          .called(1);
     });
 
     test('should clear filters and reload data', () async {

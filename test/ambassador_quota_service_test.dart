@@ -50,7 +50,8 @@ Future<void> main() async {
     test('should have reasonable quota distribution', () {
       final quotas = AmbassadorQuotaService.ambassadorQuotas.values.toList();
       final averageQuota =
-          quotas.fold<int>(0, (final sum, final quota) => sum + quota) / quotas.length;
+          quotas.fold<int>(0, (final sum, final quota) => sum + quota) /
+              quotas.length;
       expect(averageQuota, greaterThan(95));
     });
 
