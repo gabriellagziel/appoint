@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:appoint/utils/booking_helper.dart';
 import 'package:appoint/models/booking.dart';
 import 'package:appoint/models/appointment.dart';
+import 'package:appoint/models/invite.dart';
 import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:appoint/services/appointment_service.dart';
 import 'package:appoint/services/notification_service.dart';
@@ -53,7 +54,8 @@ class MockAppointmentService extends AppointmentService {
       creatorId: creatorId,
       inviteeId: inviteeId,
       scheduledAt: scheduledAt,
-      status: 'scheduled',
+      type: AppointmentType.scheduled,
+      status: InviteStatus.pending,
     );
     _appointments.add(appointment);
     return appointment;
