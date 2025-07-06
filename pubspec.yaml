@@ -78,7 +78,7 @@ dev_dependencies:
   mockito: ^5.4.6
 flutter:
   uses-material-design: true
-  # generate: true  # Temporarily disabled due to ARB syntax errors
+  generate: true  # Temporarily disabled due to ARB syntax errors
 
   assets:
     - web/assets/FontManifest.json
