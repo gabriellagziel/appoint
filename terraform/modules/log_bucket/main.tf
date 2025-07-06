@@ -10,7 +10,7 @@ resource "REDACTED_TOKEN" "log_lifecycle" {
     status = "Enabled"
 
     expiration {
-      days = var.log_retention_days
+      days = var.log_retention_period
     }
   }
 }

@@ -1,0 +1,64 @@
+{
+  "annotations": {"list": []},
+  "templating": {
+    "list": [
+      {"name": "dau_target", "type": "constant", "query": "${DAU_TARGET}"},
+      {"name": "wau_target", "type": "constant", "query": "${WAU_TARGET}"},
+      {"name": "api_availability_slo_percent", "type": "constant", "query": "${API_AVAILABILITY_SLO}"},
+      {"name": "api_p95_latency_ms", "type": "constant", "query": "${API_P95_LATENCY}"},
+      {"name": "api_p99_latency_ms", "type": "constant", "query": "${API_P99_LATENCY}"},
+      {"name": "booking_success_slo_percent", "type": "constant", "query": "${BOOKING_SUCCESS_SLO}"},
+      {"name": "peak_sessions_target", "type": "constant", "query": "${PEAK_SESSIONS}"},
+      {"name": "incident_mttr_target", "type": "constant", "query": "${INCIDENT_MTTR}"},
+      {"name": "incident_mttd_target", "type": "constant", "query": "${INCIDENT_MTTD}"}
+    ]
+  },
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Daily Active Users",
+      "targets": [{"expr": "dau"}],
+      "fieldConfig": {"defaults": {}, "overrides": []}
+    },
+    {
+      "type": "timeseries",
+      "title": "Weekly Active Users",
+      "targets": [{"expr": "wau"}],
+      "fieldConfig": {"defaults": {}, "overrides": []}
+    },
+    {
+      "type": "gauge",
+      "title": "Peak Concurrent Sessions",
+      "targets": [{"expr": "peak_concurrent_sessions"}],
+      "options": {"reduceOptions": {"calcs": ["max"]}},
+      "fieldConfig": {"defaults": {}, "overrides": []}
+    },
+    {
+      "type": "heatmap",
+      "title": "API Latency Heatmap",
+      "targets": [{"expr": "histogram_quantile(0.95, rate(REDACTED_TOKEN[5m]))"}],
+      "fieldConfig": {"defaults": {}, "overrides": []}
+    },
+    {
+      "type": "timeseries",
+      "title": "Booking Success Rate",
+      "targets": [{"expr": "booking_success_rate"}],
+      "fieldConfig": {"defaults": {}, "overrides": []}
+    },
+    {
+      "type": "stat",
+      "title": "Incident MTTR",
+      "targets": [{"expr": "incident_mttr"}],
+      "fieldConfig": {"defaults": {}, "overrides": []}
+    },
+    {
+      "type": "stat",
+      "title": "Incident MTTD",
+      "targets": [{"expr": "incident_mttd"}],
+      "fieldConfig": {"defaults": {}, "overrides": []}
+    }
+  ],
+  "schemaVersion": 36,
+  "title": "App Observability",
+  "version": 1
+}
