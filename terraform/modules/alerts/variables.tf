@@ -3,7 +3,7 @@ variable "namespace" {
   type        = string
 }
 
-variable "api_uptime_target" {
+variable "api_availability_slo_percent" {
   description = "Target uptime percentage for API"
   type        = number
 }
@@ -18,7 +18,7 @@ variable "api_p99_latency_ms" {
   type        = number
 }
 
-variable "booking_success_target" {
+variable "booking_success_slo_percent" {
   description = "Booking success rate threshold percentage"
   type        = number
 }
