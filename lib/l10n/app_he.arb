@@ -1,862 +1,4569 @@
 {
   "@@locale": "he",
-  "@about": {
-    "description": "About navigation label"
-  },
-  "@accept": {
-    "description": "Description"
-  },
-  "@accessRevokedSuccessfully": {
-    "description": "Description"
-  },
-  "@add": {
-    "description": "Description"
-  },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
-  "@appTitle": {
-    "description": "Description"
-  },
-  "@back": {
-    "description": "Description"
-  },
-  "@cancel": {
-    "description": "cancel description"
-  },
-  "@cancelInvite": {
-    "description": "Description"
-  },
-  "@cancelInviteConfirmation": {
-    "description": "Description"
-  },
-  "@checkingPermissions": {
-    "description": "checkingPermissions description"
-  },
-  "@choose": {
-    "description": "Description"
-  },
-  "@clicked": {
-    "description": "clicked description"
-  },
-  "@clientScreenTBD": {
-    "description": "Description"
-  },
-  "@close": {
-    "description": "close description"
-  },
-  "@composeBroadcastMessage": {
-    "description": "composeBroadcastMessage description"
-  },
-  "@confirm": {
-    "description": "Description"
-  },
-  "@confirmPassword": {
-    "description": "Description"
-  },
-  "@connectedChildren": {
-    "description": "Description"
-  },
-  "@content": {
-    "description": "content description"
-  },
-  "@copy": {
-    "description": "Description"
-  },
-  "@createGame": {
-    "description": "Description"
-  },
-  "@createLiveSession": {
-    "description": "Description"
-  },
-  "@createNew": {
-    "description": "Description"
-  },
-  "@createVirtualSession": {
-    "description": "Description"
-  },
-  "@createYourFirstGame": {
-    "description": "Description"
-  },
-  "@createYourFirstSession": {
-    "description": "Description"
-  },
-  "@created": {
-    "description": "created description"
-  },
-  "@customizeMessage": {
-    "description": "Description"
-  },
-  "@cut": {
-    "description": "Description"
-  },
-  "@dashboard": {
-    "description": "Description"
-  },
-  "@decline": {
-    "description": "Description"
-  },
-  "@defaultShareMessage": {
-    "description": "Description"
-  },
-  "@delete": {
-    "description": "Description"
-  },
-  "@details": {
-    "description": "details description"
-  },
-  "@done": {
-    "description": "Description"
-  },
-  "@download": {
-    "description": "Description"
-  },
-  "@edit": {
-    "description": "Description"
-  },
-  "@email": {
-    "description": "Description"
-  },
-  "@enableNotifications": {
-    "description": "Description"
-  },
-  "@enterGroupName": {
-    "description": "Description"
-  },
-  "@error": {
-    "description": "Description"
-  },
-  "@errorCheckingPermissions": {
-    "description": "errorCheckingPermissions description"
-  },
-  "@errorLoadingFamilyLinks": {
-    "description": "Description"
-  },
-  "@errorLoadingInvites": {
-    "description": "Description"
-  },
-  "@errorLoadingPrivacyRequests": {
-    "description": "errorLoadingPrivacyRequests description"
-  },
-  "@errorLoadingProfile": {
-    "description": "Description"
-  },
-  "@errorSavingMessage": {
-    "description": "errorSavingMessage description"
-  },
-  "@errorSendingMessage": {
-    "description": "errorSendingMessage description"
-  },
-  "@failedToActionPrivacyRequest": {
-    "description": "failedToActionPrivacyRequest description"
-  },
-  "@failedToCancelInvite": {
-    "description": "Description"
-  },
+  "failedToResendOtp": "נכשל בשליחת OTP מחדש",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "@failedToRevokeAccess": {
-    "description": "Description"
+  "targetingFilters": "מסנני מיקוד",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
   },
-  "@familyDashboard": {
-    "description": "Description"
-  },
-  "@familyMembers": {
-    "description": "Description"
-  },
-  "@fcmToken": {
-    "description": "Description"
-  },
-  "@forgotPassword": {
-    "description": "Description"
-  },
-  "@groupNameOptional": {
-    "description": "Description"
-  },
-  "@home": {
-    "description": "Description"
-  },
-  "@invite": {
-    "description": "Description"
-  },
-  "@inviteCancelledSuccessfully": {
-    "description": "Description"
-  },
-  "@inviteDetail": {
-    "description": "Description"
-  },
-  "@invited": {
-    "description": "Description"
-  },
-  "@knownGroupDetected": {
-    "description": "Description"
-  },
-  "@link": {
-    "description": "link description"
-  },
-  "@loading": {
-    "description": "Description"
-  },
-  "@login": {
-    "description": "Description"
-  },
-  "@logout": {
-    "description": "Description"
-  },
-  "@managePermissions": {
-    "description": "Description"
-  },
-  "@mediaOptional": {
-    "description": "mediaOptional description"
-  },
-  "@meetingReadyMessage": {
-    "description": "Description"
-  },
-  "@meetingSharedSuccessfully": {
-    "description": "Description"
-  },
-  "@messageSavedSuccessfully": {
-    "description": "messageSavedSuccessfully description"
-  },
-  "@messageSentSuccessfully": {
-    "description": "messageSentSuccessfully description"
-  },
-  "@myInvites": {
-    "description": "Description"
-  },
-  "@myProfile": {
-    "description": "Description"
-  },
-  "@next": {
-    "description": "Description"
-  },
-  "@no": {
-    "description": "Description"
-  },
-  "@noBroadcastMessages": {
-    "description": "noBroadcastMessages description"
+  "contentDetail": "contentDetail (TRANSLATE)",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
   },
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "@noGamesYet": {
-    "description": "Description"
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
   },
-  "@noInvites": {
-    "description": "Description"
-  },
-  "@noPermissionForBroadcast": {
-    "description": "noPermissionForBroadcast description"
-  },
-  "@noProfileFound": {
-    "description": "Description"
-  },
-  "@noResults": {
-    "description": "Description"
-  },
-  "@noSessionsYet": {
-    "description": "Description"
-  },
-  "@notificationSettings": {
-    "description": "Description"
-  },
-  "@notifications": {
-    "description": "Description"
-  },
-  "@ok": {
-    "description": "Description"
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
   },
   "@opened": {
     "description": "opened description"
   },
-  "@otpResentSuccessfully": {
+  "cancelInviteConfirmation": "בטל אישור הזמנה",
+  "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "@participants": {
+  "typeOpenCall": "typeOpenCall (TRANSLATE)",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "done": "בוצע",
+  "@done": {
     "description": "Description"
   },
-  "@password": {
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "authErrorMissingContinueUri": "כתובת URL להמשך חסרה.",
+  "createLiveSession": "צור מפגש חי",
+  "@createLiveSession": {
     "description": "Description"
   },
-  "@paste": {
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "openingCustomerPortal": "openingCustomerPortal (TRANSLATE)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "forgotPassword": "שכחת סיסמה?",
+  "@forgotPassword": {
     "description": "Description"
   },
-  "@pendingInvites": {
+  "updateYourBusinessInformation": "updateYourBusinessInformation (TRANSLATE)",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "promoAppliedYourNextBillIsFree": "promoAppliedYourNextBillIsFree (TRANSLATE)",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "@back": {
     "description": "Description"
   },
-  "@pickImage": {
-    "description": "pickImage description"
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
   },
-  "@pickVideo": {
-    "description": "pickVideo description"
-  },
-  "@playtimeAdminPanelTitle": {
+  "@enterGroupName": {
     "description": "Description"
   },
-  "@playtimeApprove": {
-    "description": "Description"
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
   },
-  "@playtimeChooseFriends": {
-    "description": "Description"
-  },
-  "@playtimeChooseGame": {
-    "description": "Description"
-  },
-  "@playtimeChooseTime": {
-    "description": "Description"
-  },
-  "@playtimeCreate": {
-    "description": "Description"
-  },
-  "@playtimeCreateSession": {
-    "description": "Description"
-  },
-  "@playtimeDescription": {
-    "description": "Description"
-  },
-  "@playtimeEnterGameName": {
-    "description": "Description"
-  },
-  "@playtimeGameApproved": {
-    "description": "Description"
-  },
-  "@playtimeGameDeleted": {
-    "description": "Description"
-  },
-  "@playtimeGameRejected": {
-    "description": "Description"
-  },
-  "@playtimeHub": {
-    "description": "Description"
-  },
-  "@playtimeLandingChooseMode": {
-    "description": "Description"
-  },
-  "@playtimeLive": {
-    "description": "Description"
-  },
-  "@playtimeLiveScheduled": {
-    "description": "Description"
-  },
-  "@playtimeModeLive": {
-    "description": "Description"
-  },
-  "@playtimeModeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeNoSessions": {
-    "description": "Description"
-  },
-  "@playtimeParentDashboardTitle": {
-    "description": "Description"
-  },
-  "@playtimeReject": {
-    "description": "Description"
-  },
-  "@playtimeTitle": {
-    "description": "Description"
-  },
-  "@playtimeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeVirtualStarted": {
-    "description": "Description"
-  },
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Description"
-  },
-  "@pleaseLoginToViewProfile": {
-    "description": "Description"
-  },
-  "@pollOptions": {
-    "description": "pollOptions description"
-  },
-  "@previous": {
-    "description": "Description"
-  },
-  "@profile": {
-    "description": "Description"
-  },
-  "@quickActions": {
-    "description": "Description"
-  },
-  "@recentGames": {
-    "description": "Description"
-  },
-  "@recipients": {
-    "description": "recipients description"
-  },
-  "@redo": {
-    "description": "Description"
-  },
-  "@refresh": {
-    "description": "Description"
-  },
-  "@removeChild": {
-    "description": "Description"
-  },
-  "@requestType": {
-    "description": "requestType description"
-  },
-  "@retry": {
-    "description": "Description"
-  },
-  "@revoke": {
-    "description": "Description"
-  },
-  "@revokeAccess": {
-    "description": "Description"
-  },
-  "@revokeAccessConfirmation": {
-    "description": "Description"
-  },
-  "@save": {
-    "description": "save description"
-  },
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
-  "@scheduleForLater": {
-    "description": "scheduleForLater description"
-  },
-  "@scheduleMessage": {
-    "description": "Description"
-  },
-  "@scheduled": {
-    "description": "scheduled description"
-  },
-  "@scheduledFor": {
-    "description": "Description"
-  },
-  "@scheduling": {
-    "description": "scheduling description"
-  },
-  "@search": {
-    "description": "Description"
-  },
-  "@select": {
-    "description": "Description"
-  },
-  "@sendNow": {
-    "description": "sendNow description"
-  },
-  "@settings": {
-    "description": "Description"
-  },
-  "@share": {
-    "description": "Description"
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
   },
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "@signUp": {
-    "description": "Description"
-  },
-  "@staffScreenTBD": {
-    "description": "Description"
-  },
-  "@status": {
-    "description": "status description"
-  },
-  "@statusColon": {
-    "description": "statusColon description"
-  },
-  "@success": {
-    "description": "Description"
-  },
-  "@targetingFilters": {
-    "description": "targetingFilters description"
-  },
-  "@type": {
-    "description": "type description"
-  },
-  "@undo": {
-    "description": "Description"
-  },
-  "@upcomingSessions": {
-    "description": "Description"
-  },
-  "@upload": {
-    "description": "Description"
-  },
-  "@viewAll": {
-    "description": "Description"
-  },
-  "@welcome": {
-    "description": "Description"
-  },
-  "@welcomeToPlaytime": {
-    "description": "Description"
-  },
-  "@yes": {
-    "description": "yes description"
-  },
-  "@yesCancel": {
-    "description": "Description"
-  },
-  "about": "אודות",
-  "accept": "קבל",
-  "accessRevokedSuccessfully": "הגישה בוטלה בהצלחה",
-  "add": "הוסף",
-  "adminBroadcast": "שידור מנהל",
-  "adminScreenTBD": "[HE] Admin screen coming soon",
-  "appTitle": "כותרת האפליקציה",
-  "back": "[HE] Back",
-  "cancel": "בטל",
-  "cancelInvite": "בטל הזמנה",
-  "cancelInviteConfirmation": "בטל אישור הזמנה",
-  "checkingPermissions": "בודק הרשאות",
-  "choose": "בחר",
-  "clicked": "[HE] Clicked",
-  "clientScreenTBD": "מסך לקוח ייקבע מאוחר יותר",
-  "close": "[HE] Close",
-  "composeBroadcastMessage": "כתוב הודעת שידור",
-  "confirm": "אשר",
-  "confirmPassword": "אשר סיסמה",
-  "connectedChildren": "ילדים מחוברים",
-  "content": "תוכן",
-  "copy": "העתק",
-  "createGame": "[HE] Create Game",
-  "createLiveSession": "צור מפגש חי",
   "createNew": "צור חדש",
-  "createVirtualSession": "צור מפגש וירטואלי",
-  "createYourFirstGame": "צור את המשחק הראשון שלך",
-  "createYourFirstSession": "צור את המפגש הראשון שלך",
-  "created": "נוצר",
-  "customizeMessage": "התאם אישית הודעה",
-  "cut": "גזור",
-  "dashboard": "לוח מחוונים",
-  "decline": "דחה",
-  "defaultShareMessage": "הודעת שיתוף ברירת מחדל",
-  "delete": "מחק",
-  "details": "פרטים",
-  "done": "בוצע",
-  "download": "הורדה",
-  "edit": "ערוך",
-  "email": "דוא״ל",
-  "enableNotifications": "הפעל התראות",
-  "enterGroupName": "הכנס שם קבוצה",
-  "error": "שגיאה",
-  "errorCheckingPermissions": "שגיאה בבדיקת הרשאות",
-  "errorLoadingFamilyLinks": "שגיאה בטעינת קישורי משפחה",
-  "errorLoadingInvites": "שגיאה בטעינת הזמנות",
-  "errorLoadingPrivacyRequests": "שגיאה בטעינת בקשות פרטיות",
-  "errorLoadingProfile": "שגיאה בטעינת הפרופיל",
-  "errorSavingMessage": "שגיאה בשמירת ההודעה",
-  "errorSendingMessage": "שגיאה בשליחת הודעה",
-  "failedToActionPrivacyRequest": "נכשל בביצוע בקשת פרטיות",
+  "@createNew": {
+    "description": "Description"
+  },
+  "@myInvites": {
+    "description": "Description"
+  },
+  "referralCode": "referralCode (TRANSLATE)",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "activateBusinessProfile": "activateBusinessProfile (TRANSLATE)",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
   "failedToCancelInvite": "נכשל בביטול הזמנה",
-  "failedToResendOtp": "נכשל בשליחת OTP מחדש",
-  "failedToRevokeAccess": "[HE] Failed to revoke access",
-  "familyDashboard": "לוח מנהל המשפחה",
-  "familyMembers": "חברי המשפחה",
-  "fcmToken": "אסימון FCM",
-  "forgotPassword": "שכחת סיסמה?",
-  "groupNameOptional": "[HE] Group Name (Optional)",
-  "home": "בית",
-  "invite": "הזמן",
-  "inviteCancelledSuccessfully": "הזמנה בוטלה בהצלחה",
-  "inviteDetail": "פרטי הזמנה",
-  "invited": "הוזמן",
-  "knownGroupDetected": "[HE] Known group detected",
-  "link": "[HE] Link",
-  "loading": "טוען",
-  "login": "התחברות",
-  "logout": "התנתק",
-  "managePermissions": "[HE] Manage Permissions",
-  "mediaOptional": "מדיה (אופציונלי)",
-  "meetingReadyMessage": "[HE] Your meeting is ready! Join now",
-  "meetingSharedSuccessfully": "מפגש שותף בהצלחה",
-  "messageSavedSuccessfully": "ההודעה נשמרה בהצלחה",
-  "messageSentSuccessfully": "ההודעה נשלחה בהצלחה",
-  "myInvites": "[HE] My Invites",
-  "myProfile": "הפרופיל שלי",
-  "next": "הבא",
-  "no": "לא",
-  "noBroadcastMessages": "אין הודעות שידור",
-  "noFamilyMembersYet": "אין עדיין חברי משפחה",
-  "noGamesYet": "טרם קיימו משחקים",
-  "noInvites": "אין הזמנות",
-  "noPermissionForBroadcast": "אין הרשאה לשידור",
-  "noProfileFound": "לא נמצא פרופיל",
-  "noResults": "אין תוצאות",
-  "noSessionsYet": "טרם התקיימו מפגשים",
-  "notificationSettings": "הגדרות התראות",
-  "notifications": "התראות",
-  "ok": "אישור",
-  "opened": "נפתח",
-  "otpResentSuccessfully": "OTP נשלח מחדש בהצלחה",
-  "participants": "משתתפים",
-  "password": "סיסמה",
-  "paste": "הדבק",
-  "pendingInvites": "[HE] Pending Invites",
-  "pickImage": "בחר תמונה",
-  "pickVideo": "בחר וידאו",
-  "playtimeAdminPanelTitle": "כותרת לוח ניהול Playtime",
-  "playtimeApprove": "אשר Playtime",
-  "playtimeChooseFriends": "בחר חברים",
-  "playtimeChooseGame": "[HE] Choose a game",
-  "playtimeChooseTime": "בחר זמן",
-  "playtimeCreate": "צור Playtime",
-  "playtimeCreateSession": "צור מפגש",
-  "playtimeDescription": "תיאור Playtime",
-  "playtimeEnterGameName": "הכנס שם משחק",
-  "playtimeGameApproved": "המשחק אושר",
-  "playtimeGameDeleted": "המשחק נמחק",
-  "playtimeGameRejected": "המשחק נדחה",
-  "playtimeHub": "מרכז Playtime",
-  "playtimeLandingChooseMode": "בחר מצב",
-  "playtimeLive": "Playtime חי",
-  "playtimeLiveScheduled": "מפגש חי מתוזמן",
-  "playtimeModeLive": "מצב חי",
-  "playtimeModeVirtual": "מצב וירטואלי",
-  "playtimeNoSessions": "[HE] No playtime sessions found.",
-  "playtimeParentDashboardTitle": "[HE] Playtime Dashboard",
-  "playtimeReject": "סרב Playtime",
-  "playtimeTitle": "כותרת Playtime",
-  "playtimeVirtual": "Playtime וירטואלי",
-  "playtimeVirtualStarted": "מפגש וירטואלי התחיל",
-  "pleaseLoginForFamilyFeatures": "[HE] Please login to access family features",
-  "pleaseLoginToViewProfile": "אנא התחבר כדי לצפות בפרופיל",
-  "pollOptions": "[HE] Poll Options",
-  "previous": "הקודם",
-  "profile": "פרופיל",
-  "quickActions": "פעולות מהירות",
-  "recentGames": "משחקים אחרונים",
-  "recipients": "נמענים",
-  "redo": "בצע שוב",
-  "refresh": "רענן",
-  "removeChild": "הסר ילד",
-  "requestType": "סוג בקשה",
-  "retry": "נסה שוב",
-  "revoke": "בטל",
-  "revokeAccess": "ביטול גישה",
-  "revokeAccessConfirmation": "אישור ביטול גישה",
-  "save": "שמור",
-  "saveGroupForRecognition": "שמור קבוצה לזיהוי",
-  "scheduleForLater": "תזמן למועד מאוחר יותר",
-  "scheduleMessage": "תזמן הודעה",
-  "scheduled": "מתוזמן",
-  "scheduledFor": "מתוזמן עבור",
-  "scheduling": "מתוזמן",
-  "search": "חיפוש",
-  "select": "בחר",
-  "sendNow": "שלח כעת",
-  "settings": "הגדרות",
-  "share": "שתף",
-  "shareOnWhatsApp": "[HE] Share on WhatsApp",
-  "signUp": "הרשמה",
-  "staffScreenTBD": "מסך צוות ייקבע מאוחר יותר",
-  "status": "סטטוס",
-  "statusColon": "[HE] Status:",
-  "success": "הצלחה",
-  "targetingFilters": "מסנני מיקוד",
-  "type": "סוג",
-  "undo": "בטל",
-  "upcomingSessions": "מפגשים קרובים",
-  "upload": "העלה",
-  "viewAll": "הצג הכל",
-  "welcome": "ברוך הבא",
-  "welcomeToPlaytime": "ברוכים הבאים ל-Playtime",
-  "yes": "כן",
-  "yesCancel": "כן, בטל",
-  "errorEstimatingRecipients": "errorEstimatingRecipients (TRANSLATE)",
-  "@errorEstimatingRecipients": {
-    "description": "errorEstimatingRecipients description"
+  "@failedToCancelInvite": {
+    "description": "Description"
   },
-  "errorPickingImage": "errorPickingImage (TRANSLATE)",
-  "@errorPickingImage": {
-    "description": "errorPickingImage description"
+  "@adminScreenTBD": {
+    "description": "Description"
   },
-  "errorPickingVideo": "errorPickingVideo (TRANSLATE)",
-  "@errorPickingVideo": {
-    "description": "errorPickingVideo description"
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
   "@organizations": {
     "description": "organizations description"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
-  "@noOrganizations": {
-    "description": "noOrganizations description"
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
-  "@errorLoadingOrganizations": {
-    "description": "errorLoadingOrganizations description"
+  "@ok": {
+    "description": "Description"
   },
-  "members": "members (TRANSLATE)",
-  "@members": {
-    "description": "members description"
+  "surveyScore": "surveyScore (TRANSLATE)",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
   },
-  "users": "users (TRANSLATE)",
-  "@users": {
-    "description": "users description"
-  },
-  "noUsers": "noUsers (TRANSLATE)",
-  "@noUsers": {
-    "description": "noUsers description"
-  },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
-  "@errorLoadingUsers": {
-    "description": "errorLoadingUsers description"
+  "playtimeCreate": "צור Playtime",
+  "@playtimeCreate": {
+    "description": "Description"
   },
   "changeRole": "changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "totalAppointments": "totalAppointments (TRANSLATE)",
-  "@totalAppointments": {
-    "description": "totalAppointments description"
+  "parentalControls": "parentalControls (TRANSLATE)",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
   },
-  "completedAppointments": "completedAppointments (TRANSLATE)",
-  "@completedAppointments": {
-    "description": "completedAppointments description"
+  "noTimeSeriesDataAvailable": "noTimeSeriesDataAvailable (TRANSLATE)",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
   },
-  "revenue": "revenue (TRANSLATE)",
-  "@revenue": {
-    "description": "revenue description"
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
   },
-  "errorLoadingStats": "errorLoadingStats (TRANSLATE)",
-  "@errorLoadingStats": {
-    "description": "errorLoadingStats description"
+  "emailProfileemail": "emailProfileemail (TRANSLATE)",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: ${profile.email}",
+    "placeholders": {
+      "profile_email": {},
+      "payload_title": {}
+    }
   },
-  "appointment": "פגישה",
-  "@appointment": {
-    "description": "Appointment label"
+  "@goBack": {
+    "description": "Localization key for: Go Back"
   },
-  "from": "מ",
-  "@from": {
-    "description": "From label"
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: ${log.deviceInfo}",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
   },
-  "phone": "טלפון",
-  "@phone": {
-    "description": "Phone label"
+  "noSlots": "noSlots (TRANSLATE)",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
   },
-  "noRouteDefined": "noRouteDefined (TRANSLATE)",
-  "@noRouteDefined": {
-    "description": "noRouteDefined description"
+  "profileSaved": "profileSaved (TRANSLATE)",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "authErrorInvalidMultiFactorSession": "סשן רב-גורמי לא תקין.",
+  "invoices": "invoices (TRANSLATE)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "allowPlaytime": "allowPlaytime (TRANSLATE)",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "sendInvite": "sendInvite (TRANSLATE)",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "studioProfile": "studioProfile (TRANSLATE)",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "analytics": "analytics (TRANSLATE)",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "mySchedule": "mySchedule (TRANSLATE)",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "@requestPrivateSession": {
+    "description": "requestPrivateSession description"
+  },
+  "@playtimeGameApproved": {
+    "description": "Description"
+  },
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "error": "שגיאה",
+  "@error": {
+    "description": "Description"
+  },
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "authErrorSessionExpired": "הסשן פג תוקף. אנא התחבר שוב.",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "content": "תוכן",
+  "@content": {
+    "description": "content description"
+  },
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "keepSubscription": "keepSubscription (TRANSLATE)",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "deleteSurvey": "deleteSurvey (TRANSLATE)",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "noRouteDefinedForStateuripath": "noRouteDefinedForStateuripath (TRANSLATE)",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for ${state.uri.path}",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "subscriptionActivatedSuccessfully": "subscriptionActivatedSuccessfully (TRANSLATE)",
+  "@subscriptionActivatedSuccessfully": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "@status": {
+    "description": "status description"
+  },
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "@knownGroupDetected": {
+    "description": "Description"
+  },
+  "failedToCancelSubscription": "failedToCancelSubscription (TRANSLATE)",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "deleteBackground": "deleteBackground (TRANSLATE)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createGame1": "createGame1 (TRANSLATE)",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "noAmbassadorDataAvailable": "noAmbassadorDataAvailable (TRANSLATE)",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "staffScreenTBD": "מסך צוות ייקבע מאוחר יותר",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "notifications": "התראות",
+  "@notifications": {
+    "description": "Description"
+  },
+  "editProvider": "editProvider (TRANSLATE)",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "errorLoadingPrivacyRequests": "שגיאה בטעינת בקשות פרטיות",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "authErrorInvalidProviderId": "מזהה הספק אינו תקין.",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: ${log.targetType}: ${log.targetId}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_status": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "phoneBooking": "phoneBooking (TRANSLATE)",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: ${org.memberIds.length} members",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "authErrorUnauthorizedContinueUri": "דומיין כתובת ה-URL להמשך אינו מורשה.",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "slotDeletedSuccessfully": "slotDeletedSuccessfully (TRANSLATE)",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "authErrorInvalidCredential": "פרטי התחברות לא תקינים. אנא נסה שוב.",
+  "@authErrorInvalidCredential": {
+    "description": "Firebase Auth invalid-credential error message"
+  },
+  "viewAll": "הצג הכל",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: ${selection.staff.displayName}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "parentDashboard": "parentDashboard (TRANSLATE)",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "reject": "reject (TRANSLATE)",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "appointmentInviteappointmentid": "appointmentInviteappointmentid (TRANSLATE)",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: ${invite.appointmentId}",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "authErrorIdTokenRevoked": "טוקן ה-ID בוטל.",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "goToDashboard": "goToDashboard (TRANSLATE)",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: ${link.childId.substring(0, 8)}...",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "monetizationSettingsWillBeImplementedHere": "monetizationSettingsWillBeImplementedHere (TRANSLATE)",
+  "@monetizationSettingsWillBeImplementedHere": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "checkingPermissions": "בודק הרשאות",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "pleaseLogInToViewYourProfile": "pleaseLogInToViewYourProfile (TRANSLATE)",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "businessDashboardEntryScreenComingSoon": "businessDashboardEntryScreenComingSoon (TRANSLATE)",
+  "@businessDashboardEntryScreenComingSoon": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "addAvailability": "addAvailability (TRANSLATE)",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "choose": "בחר",
+  "@choose": {
+    "description": "Description"
+  },
+  "@areYouSureYouWantToDeleteThisProvider": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "@youWillReceiveAConfirmationEmailShortly": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "invited": "הוזמן",
+  "@invited": {
+    "description": "Description"
+  },
+  "refresh1": "refresh1 (TRANSLATE)",
+  "requestType": "סוג בקשה",
+  "@requestType": {
+    "description": "requestType description"
+  },
+  "subscribe": "subscribe (TRANSLATE)",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "authErrorOperationNotAllowed": "שיטת התחברות זו אינה מופעלת. אנא פנה לתמיכה.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Firebase Auth operation-not-allowed error message"
+  },
+  "errorSavingSettingsE": "errorSavingSettingsE (TRANSLATE)",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "@no": {
+    "description": "Description"
+  },
+  "users1": "users1 (TRANSLATE)",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: ${log.severity.name}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@appTitle": {
+    "description": "Description"
+  },
+  "cancel": "בטל",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "@ekeyEvalue": {
+    "description": "Localization key for: ${e.key}: ${e.value}",
+    "placeholders": {
+      "event_startTime": {},
+      "snapshot_error": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_userEmail": {},
+      "appointment_status_name": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {},
+      "e_value": {}
+    }
+  },
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "deleteAccount": "deleteAccount (TRANSLATE)",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "registrationFailedEtostring": "registrationFailedEtostring (TRANSLATE)",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: ${e.toString()}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "shareLink": "shareLink (TRANSLATE)",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "cut": "גזור",
+  "@cut": {
+    "description": "Description"
+  },
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "noUpcomingBookings": "noUpcomingBookings (TRANSLATE)",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "@businessAppointmentsEntryScreenComingSoon": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "errorSavingConfigurationE": "errorSavingConfigurationE (TRANSLATE)",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "selectLocation": "selectLocation (TRANSLATE)",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "clearFilters": "clearFilters (TRANSLATE)",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "authErrorInvalidContinueUri": "כתובת ה-URL להמשך אינה תקינה.",
+  "@createVirtualSession": {
+    "description": "Description"
+  },
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "failedToOpenCustomerPortalE": "failedToOpenCustomerPortalE (TRANSLATE)",
+  "upcomingSessions": "מפגשים קרובים",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "surveyManagement": "surveyManagement (TRANSLATE)",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "receiveBookingNotificationsViaSms": "receiveBookingNotificationsViaSms (TRANSLATE)",
+  "@receiveBookingNotificationsViaSms": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "autoconfirmBookings": "autoconfirmBookings (TRANSLATE)",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "@businessCompletionScreenComingSoon": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "businessWelcomeScreenComingSoon": "businessWelcomeScreenComingSoon (TRANSLATE)",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "authErrorInvalidProviderData": "נתוני הספק אינם תקינים.",
+  "readOurPrivacyPolicy": "readOurPrivacyPolicy (TRANSLATE)",
+  "noAvailableSlots": "noAvailableSlots (TRANSLATE)",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "@businessVerificationScreenComingSoon": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "@dateAppointmentscheduledattostring": {
+    "description": "Localization key for: Date: ${appointment.scheduledAt.toString()}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "setup": "setup (TRANSLATE)",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "@authErrorTooManyRequests": {
+    "description": "Firebase Auth too-many-requests error message"
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "מספר מקסימלי של גורמים שניים הותר.",
+  "errorDetailsLogerrortype": "errorDetailsLogerrortype (TRANSLATE)",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: ${log.errorType}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "errorLoadingEvents": "errorLoadingEvents (TRANSLATE)",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Firebase Auth credential-already-in-use error message"
+  },
+  "@adminMetrics": {
+    "description": "Description"
+  },
+  "editSurveyComingSoon": "editSurveyComingSoon (TRANSLATE)",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "businessPhoneBookingEntryScreenComingSoon": "businessPhoneBookingEntryScreenComingSoon (TRANSLATE)",
+  "@businessPhoneBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "authErrorInvalidPageToken": "טוקן הדף אינו תקין.",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: ${appt.id}",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "schedulerScreen": "schedulerScreen (TRANSLATE)",
+  "authErrorWrongPassword": "סיסמה שגויה. אנא נסה שוב.",
+  "@authErrorWrongPassword": {
+    "description": "Firebase Auth wrong-password error message"
+  },
+  "pickImage": "בחר תמונה",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "ambassadorOnboarding": "ambassadorOnboarding (TRANSLATE)",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "pay": "pay (TRANSLATE)",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "enterOtp": "enterOtp (TRANSLATE)",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "revokeConsent": "revokeConsent (TRANSLATE)",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "makeGamePublic": "makeGamePublic (TRANSLATE)",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "@clientScreenTBD": {
+    "description": "Description"
+  },
+  "skip": "skip (TRANSLATE)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "failedToSendInvitationE": "failedToSendInvitationE (TRANSLATE)",
+  "authErrorMissingVerificationCode": "אנא הכנס את קוד האימות.",
+  "noFamilyMembersYet": "אין עדיין חברי משפחה",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: ${snapshot.error}",
+    "placeholders": {
+      "event_startTime": {},
+      "snapshot_error": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "errorLoadingProfile": "שגיאה בטעינת הפרופיל",
+  "@errorLoadingProfile": {
+    "description": "Description"
+  },
+  "authErrorInvalidDisplayName": "שם התצוגה אינו תקין.",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: ${profileAsync.phone}",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "booking": "booking (TRANSLATE)",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "linkCopiedToClipboard": "linkCopiedToClipboard (TRANSLATE)",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "settingsSavedSuccessfully": "settingsSavedSuccessfully (TRANSLATE)",
+  "playtimeParentDashboardTitle": "[HE] Playtime Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "noResults": "אין תוצאות",
+  "@noResults": {
+    "description": "Description"
+  },
+  "password": "סיסמה",
+  "@password": {
+    "description": "Description"
+  },
+  "backgroundApproved": "backgroundApproved (TRANSLATE)",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "sessionApproved": "sessionApproved (TRANSLATE)",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "@durationDurationinminutes0Minutes": {
+    "description": "Localization key for: Duration: ${duration?.inMinutes ?? 0} minutes",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "cancelSubscription": "cancelSubscription (TRANSLATE)",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "@socialAccountConflictTitle": {
+    "description": "Title for social account conflict dialog"
+  },
+  "@next": {
+    "description": "Description"
+  },
+  "quickActions": "פעולות מהירות",
+  "@quickActions": {
+    "description": "Description"
+  },
+  "inviteDetail": "פרטי הזמנה",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "errorLoadingBookingsSnapshoterror": "errorLoadingBookingsSnapshoterror (TRANSLATE)",
+  "@errorLoadingBookingsSnapshoterror": {
+    "description": "Localization key for: Error loading bookings: ${snapshot.error}",
+    "placeholders": {
+      "e_toString": {},
+      "staffId_Not_selected": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "tier_toUpperCase": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "index_1": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "errorE": "errorE (TRANSLATE)",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "authErrorMaximumUserCountExceeded": "מספר מקסימלי של משתמשים לייבוא הותר.",
+  "clientUpdatedSuccessfully": "clientUpdatedSuccessfully (TRANSLATE)",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "@dashboard": {
+    "description": "Description"
+  },
+  "fcmToken": "אסימון FCM",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "select": "בחר",
+  "@select": {
+    "description": "Description"
+  },
+  "referrals": "referrals (TRANSLATE)",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "delete1": "delete1 (TRANSLATE)",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "@ud83dudcc5Bookingdatetimetolocal": {
+    "description": "Localization key for: \\uD83D\\uDCC5 ${booking.dateTime.toLocal()}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "readOnly": "readOnly (TRANSLATE)",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "verification": "verification (TRANSLATE)",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "@noInvoicesFoundCreateYourFirstInvoice": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "businessSubscription": "businessSubscription (TRANSLATE)",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "changePlan": "changePlan (TRANSLATE)",
+  "managePermissions": "[HE] Manage Permissions",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "option": "option (TRANSLATE)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "privacyPolicy": "privacyPolicy (TRANSLATE)",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "appVersionLogappversion": "appVersionLogappversion (TRANSLATE)",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: ${log.appVersion}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "noEventsScheduledForToday": "noEventsScheduledForToday (TRANSLATE)",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "nameProfilename": "nameProfilename (TRANSLATE)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: ${profile.name}",
+    "placeholders": {
+      "e_toString": {},
+      "staffId_Not_selected": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "tier_toUpperCase": {},
+      "profile_name": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "index_1": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@bookings": {
+    "description": "Bookings section title"
+  },
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "severityLogseverityname": "severityLogseverityname (TRANSLATE)",
+  "noEventsScheduledThisMonth": "noEventsScheduledThisMonth (TRANSLATE)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: ${event.startTime} - ${event.endTime}",
+    "placeholders": {
+      "event_startTime": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "playtimeModeVirtual": "מצב וירטואלי",
+  "@revoke": {
+    "description": "Description"
+  },
+  "share": "שתף",
+  "@share": {
+    "description": "Description"
+  },
+  "editClient": "editClient (TRANSLATE)",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "responseIndex1": "responseIndex1 (TRANSLATE)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #${index + 1}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "tier_toUpperCase": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "index_1": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "redirectingToStripeCheckoutForProPlan": "redirectingToStripeCheckoutForProPlan (TRANSLATE)",
+  "@redirectingToStripeCheckoutForProPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "@yesCancel": {
+    "description": "Description"
+  },
+  "@adminBroadcast": {
+    "description": "adminBroadcast description"
+  },
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "ambassadorStatusAmbassadorstatus": "ambassadorStatusAmbassadorstatus (TRANSLATE)",
+  "@ambassadorStatusAmbassadorstatus": {
+    "description": "Localization key for: Ambassador Status: ${ambassador.status}",
+    "placeholders": {
+      "profile_email": {},
+      "payload_title": {},
+      "c_id": {},
+      "ambassador_status": {}
+    }
+  },
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "authErrorMultiFactorAuthRequired": "נדרשת אימות רב-גורמי.",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "authErrorUserDisabled": "חשבון זה הושבת. אנא פנה לתמיכה.",
+  "@authErrorUserDisabled": {
+    "description": "Firebase Auth user-disabled error message"
+  },
+  "noGamesYet": "טרם קיימו משחקים",
+  "@noGamesYet": {
+    "description": "Description"
   },
   "meetingDetails": "פרטי פגישה",
   "@meetingDetails": {
     "description": "Meeting details label"
   },
-  "meetingId": "מזהה פגישה",
-  "@meetingId": {
-    "description": "Meeting ID label"
+  "invoiceCreatedSuccessfully": "invoiceCreatedSuccessfully (TRANSLATE)",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
   },
-  "creator": "יוצר",
-  "@creator": {
-    "description": "Creator label"
+  "subscribeNow": "subscribeNow (TRANSLATE)",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
   },
-  "context": "context (TRANSLATE)",
-  "@context": {
-    "description": "context description"
+  "adminOverviewGoesHere": "סקירה כללית של Admin עוברת לכאן",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
   },
-  "group": "group (TRANSLATE)",
-  "@group": {
-    "description": "group description"
+  "valuetointk": "valuetointk (TRANSLATE)",
+  "@valuetointk": {
+    "description": "Localization key for: \\$${value.toInt()}K",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "payload_title": {}
+    }
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
-  "@requestPrivateSession": {
-    "description": "requestPrivateSession description"
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
   },
-  "privacyRequestSent": "privacyRequestSent (TRANSLATE)",
-  "@privacyRequestSent": {
-    "description": "privacyRequestSent description"
-  },
-  "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
-  "@failedToSendPrivacyRequest": {
-    "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
+  "@noSessionsYet": {
     "description": "Description"
   },
-  "overview": "Overview",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: ${log.adminEmail}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "paymentConfirmation": "paymentConfirmation (TRANSLATE)",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "decline": "דחה",
+  "@decline": {
+    "description": "Description"
+  },
+  "scheduledAtScheduledat": "scheduledAtScheduledat (TRANSLATE)",
+  "accept1": "accept1 (TRANSLATE)",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "syncToOutlook": "syncToOutlook (TRANSLATE)",
+  "home1": "home1 (TRANSLATE)",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "retry1": "retry1 (TRANSLATE)",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "loading": "טוען",
+  "@loading": {
+    "description": "Description"
+  },
+  "subscriptionManagement": "subscriptionManagement (TRANSLATE)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "syncToGoogle": "syncToGoogle (TRANSLATE)",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "yourUpgradeCodeUpgradecode": "yourUpgradeCodeUpgradecode (TRANSLATE)",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: ${payload.title}",
+    "placeholders": {
+      "payload_title": {}
+    }
+  },
+  "playtimeModeLive": "מצב חי",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "subscriptionUnavailable": "subscriptionUnavailable (TRANSLATE)",
+  "chooseYourPlan": "chooseYourPlan (TRANSLATE)",
+  "authErrorInvalidPhoneNumber": "מספר הטלפון אינו תקין.",
+  "supportTicketSubmitted": "supportTicketSubmitted (TRANSLATE)",
+  "noPermissionForBroadcast": "אין הרשאה לשידור",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "@settings": {
+    "description": "Description"
+  },
+  "addNewClient": "addNewClient (TRANSLATE)",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "@timestamp_formatdatelogtimestamp": {
+    "description": "Localization key for: Timestamp: ${_formatDate(log.timestamp)}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "deleteMessage": "deleteMessage (TRANSLATE)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "close1": "close1 (TRANSLATE)",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "@linkAccounts": {
+    "description": "Button to link social accounts"
+  },
+  "businessBookingEntryScreenComingSoon": "businessBookingEntryScreenComingSoon (TRANSLATE)",
+  "@businessBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "@add": {
+    "description": "Description"
+  },
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "authErrorInvalidVerificationCode": "קוד האימות אינו תקין.",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "messages": "messages (TRANSLATE)",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "phonebasedBookingSystem": "phonebasedBookingSystem (TRANSLATE)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "successfullyRegisteredAsAmbassador": "successfullyRegisteredAsAmbassador (TRANSLATE)",
+  "@successfullyRegisteredAsAmbassador": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "linkchildidsubstring08": "linkchildidsubstring08 (TRANSLATE)",
+  "@yourPaymentHasBeenProcessedSuccessfully": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "@businessProfileEntryScreenComingSoon": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "viewResponses": "viewResponses (TRANSLATE)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "authErrorMissingMultiFactorSession": "סשן רב-גורמי חסר.",
+  "responseDetail": "responseDetail (TRANSLATE)",
+  "@areYouSureYouWantToDeleteThisAppointment": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "@signInWithExistingMethod": {
+    "description": "Button to sign in with existing method"
+  },
+  "noBroadcastMessages": "אין הודעות שידור",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
+  },
+  "connectToGoogleCalendar": "connectToGoogleCalendar (TRANSLATE)",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "gameCreatedSuccessfully": "gameCreatedSuccessfully (TRANSLATE)",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "appointmentApptid": "appointmentApptid (TRANSLATE)",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "manageSubscription": "manageSubscription (TRANSLATE)",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "@created": {
+    "description": "created description"
+  },
+  "targetLogtargettypeLogtargetid": "targetLogtargettypeLogtargetid (TRANSLATE)",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: ${log.targetType} - ${log.targetId}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "localizationContribution": "localizationContribution (TRANSLATE)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "profile": "פרופיל",
+  "@profile": {
+    "description": "Description"
+  },
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to ${widget.planName}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: ${args.slot.format(context)}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "sendBookingInvite": "sendBookingInvite (TRANSLATE)",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "apply": "apply (TRANSLATE)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "businessOnboarding": "businessOnboarding (TRANSLATE)",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: ${p.specialty}\\n${p.contactInfo}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "businessProfileActivatedSuccessfully": "businessProfileActivatedSuccessfully (TRANSLATE)",
+  "@businessProfileActivatedSuccessfully": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "bookingRequest": "bookingRequest (TRANSLATE)",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "gameApprovedSuccessfully": "gameApprovedSuccessfully (TRANSLATE)",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "noChartDataAvailable": "noChartDataAvailable (TRANSLATE)",
+  "pickDate": "pickDate (TRANSLATE)",
+  "authErrorInvalidPassword": "הסיסמה אינה תקינה או חלשה מדי.",
+  "adminScreenTBD": "[HE] Admin screen coming soon",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "@playtimeTitle": {
+    "description": "Description"
+  },
+  "pollOptions": "[HE] Poll Options",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "@businessSubscriptionEntryScreenComingSoon": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "@valuetoint": {
+    "description": "Localization key for: ${value.toInt()}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "ud83dudcc5Bookingdatetimetolocal": "ud83dudcc5Bookingdatetimetolocal (TRANSLATE)",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "statusAppointmentstatusname": "statusAppointmentstatusname (TRANSLATE)",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: ${appointment.status.name}",
+    "placeholders": {
+      "event_startTime": {},
+      "snapshot_error": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "log_userEmail": {},
+      "appointment_status_name": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "authErrorInvalidHashSaltSeparator": "מפריד המלח של ה-hash אינו תקין.",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "contentNotFound": "contentNotFound (TRANSLATE)",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pleaseActivateYourBusinessProfileToContinue": "pleaseActivateYourBusinessProfileToContinue (TRANSLATE)",
+  "@pleaseActivateYourBusinessProfileToContinue": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "exportAsCsv": "exportAsCsv (TRANSLATE)",
+  "paste": "הדבק",
+  "@paste": {
+    "description": "Description"
+  },
+  "welcomeToYourStudio": "welcomeToYourStudio (TRANSLATE)",
+  "businessCalendar": "businessCalendar (TRANSLATE)",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "userCid": "userCid (TRANSLATE)",
+  "@userCid": {
+    "description": "Localization key for: User ${c.id}",
+    "placeholders": {
+      "profile_email": {},
+      "payload_title": {},
+      "c_id": {}
+    }
+  },
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "cancelAppointment": "cancelAppointment (TRANSLATE)",
+  "yesCancel": "כן, בטל",
+  "@undo": {
+    "description": "Description"
+  },
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "add1": "add1 (TRANSLATE)",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "failedToCreateGameE": "failedToCreateGameE (TRANSLATE)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "deleteFunctionalityComingSoon": "deleteFunctionalityComingSoon (TRANSLATE)",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "automaticallyConfirmNewBookingRequests": "automaticallyConfirmNewBookingRequests (TRANSLATE)",
+  "@automaticallyConfirmNewBookingRequests": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "noMediaSelected": "noMediaSelected (TRANSLATE)",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "groupGroupid": "groupGroupid (TRANSLATE)",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentAppointmentid": "appointmentAppointmentid (TRANSLATE)",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment ${appointment.id}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "businessSignup": "businessSignup (TRANSLATE)",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "errorSavingMessage": "שגיאה בשמירת ההודעה",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "advancedReporting": "advancedReporting (TRANSLATE)",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "copiedToClipboard": "copiedToClipboard (TRANSLATE)",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Firebase Auth network-request-failed error message"
+  },
+  "playtimeDescription": "תיאור Playtime",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "notificationSettings": "הגדרות התראות",
+  "@notificationSettings": {
+    "description": "Description"
+  },
+  "authErrorRequiresRecentLogin": "אנא התחבר שוב לביצוע פעולה זו.",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "exportData": "exportData (TRANSLATE)",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "gameDeletedSuccessfully": "gameDeletedSuccessfully (TRANSLATE)",
+  "authErrorAccountExistsWithDifferentCredential": "כבר קיים חשבון עם אימייל זה המשתמש בשיטת התחברות אחרת.",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Firebase Auth account-exists-with-different-credential error message"
+  },
+  "@details": {
+    "description": "details description"
+  },
+  "syncAppointment": "syncAppointment (TRANSLATE)",
+  "type": "סוג",
+  "@type": {
+    "description": "type description"
+  },
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "clearAll": "clearAll (TRANSLATE)",
+  "authErrorInvalidArgument": "סופק ארגומנט לא תקין.",
+  "playtimeReject": "סרב Playtime",
+  "@playtimeReject": {
+    "description": "Description"
+  },
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "@settingsDialogWillBeImplementedHere": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "allowOtherUsersToFindAndJoinThisGame": "allowOtherUsersToFindAndJoinThisGame (TRANSLATE)",
+  "@allowOtherUsersToFindAndJoinThisGame": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "@continueButton": {
+    "description": "Localization key for: Continue"
+  },
+  "authErrorInvalidLastSignInTime": "זמן ההתחברות האחרון אינו תקין.",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "deviceLogdeviceinfo": "deviceLogdeviceinfo (TRANSLATE)",
+  "noMessagesFound": "noMessagesFound (TRANSLATE)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "onboardingScreen": "onboardingScreen (TRANSLATE)",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "authErrorPhoneNumberAlreadyExists": "מספר טלפון זה כבר בשימוש.",
+  "areYouSureYouWantToDeleteThisAppointment": "areYouSureYouWantToDeleteThisAppointment (TRANSLATE)",
+  "accept": "קבל",
+  "@accept": {
+    "description": "Description"
+  },
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Firebase Auth email-already-in-use error message"
+  },
+  "playtimeGameApproved": "המשחק אושר",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "authErrorInvalidDynamicLinkDomain": "דומיין הקישור הדינמי אינו תקין.",
+  "@home": {
+    "description": "Description"
+  },
+  "subscribeToBasic499mo": "subscribeToBasic499mo (TRANSLATE)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "roomDeletedSuccessfully": "roomDeletedSuccessfully (TRANSLATE)",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "childLinkedSuccessfully": "childLinkedSuccessfully (TRANSLATE)",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "playtimeChooseFriends": "בחר חברים",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "socialAccountConflictMessage": "socialAccountConflictMessage (TRANSLATE)",
+  "@socialAccountConflictMessage": {
+    "description": "Message for social account conflict dialog",
+    "placeholders": {
+      "email": {}
+    }
+  },
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "errorDeletingSlotE": "errorDeletingSlotE (TRANSLATE)",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "deleteGame": "deleteGame (TRANSLATE)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "smsNotifications": "smsNotifications (TRANSLATE)",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "playtimeNoSessions": "[HE] No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: ${args.inviteeId}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@about": {
+    "description": "About navigation label"
+  },
+  "noAppointmentsFound": "noAppointmentsFound (TRANSLATE)",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "upload1": "upload1 (TRANSLATE)",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "youWillReceiveAConfirmationEmailShortly": "youWillReceiveAConfirmationEmailShortly (TRANSLATE)",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noSessionsYet": "טרם התקיימו מפגשים",
+  "continueButton": "continueButton (TRANSLATE)",
+  "eventstarttimeEventendtime": "eventstarttimeEventendtime (TRANSLATE)",
+  "@businessProvidersEntryScreenComingSoon": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "authErrorMissingOauthClientSecret": "סוד הלקוח OAuth חסר.",
+  "contentLibrary": "ספריית תוכן",
+  "@contentLibrary": {},
+  "errorLoadingConfigurationE": "errorLoadingConfigurationE (TRANSLATE)",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "email": "דוא״ל",
+  "@email": {
+    "description": "Description"
+  },
+  "errorLoadingAvailabilityE": "errorLoadingAvailabilityE (TRANSLATE)",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "inviteFriends": "inviteFriends (TRANSLATE)",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "noBookingsFound": "noBookingsFound (TRANSLATE)",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "staffAvailability": "staffAvailability (TRANSLATE)",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "phoneProfileasyncphone": "phoneProfileasyncphone (TRANSLATE)",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "invited1": "invited1 (TRANSLATE)",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "pspecialtynpcontactinfo": "pspecialtynpcontactinfo (TRANSLATE)",
+  "@authErrorInvalidEmail": {
+    "description": "Firebase Auth invalid-email error message"
+  },
+  "authErrorTooManyRequests": "יותר מדי ניסיונות כושלים. אנא נסה שוב מאוחר יותר.",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "checkingPermissions1": "checkingPermissions1 (TRANSLATE)",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: ${ambassador.referrals}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "ambassador_status": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "authErrorInvalidHashParallelization": "המקבילות של ה-hash אינה תקינה.",
+  "iConsent": "iConsent (TRANSLATE)",
+  "crm": "crm (TRANSLATE)",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameList": "gameList (TRANSLATE)",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "@receiveBookingNotificationsViaEmail": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "scheduledAtArgsscheduledat": "scheduledAtArgsscheduledat (TRANSLATE)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: ${args.scheduledAt}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "signIn": "signIn (TRANSLATE)",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "@createGame": {
+    "description": "Description"
+  },
+  "@previous": {
+    "description": "Description"
+  },
+  "clientAddedSuccessfully": "clientAddedSuccessfully (TRANSLATE)",
+  "noClientsFoundAddYourFirstClient": "noClientsFoundAddYourFirstClient (TRANSLATE)",
+  "@noClientsFoundAddYourFirstClient": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "errorPickingVideoE": "errorPickingVideoE (TRANSLATE)",
+  "staffManagementTools": "staffManagementTools (TRANSLATE)",
+  "search": "חיפוש",
+  "@search": {
+    "description": "Description"
+  },
+  "authErrorMissingVerificationId": "מזהה אימות חסר.",
+  "businessProfileEntryScreenComingSoon": "businessProfileEntryScreenComingSoon (TRANSLATE)",
+  "authErrorSecondFactorAlreadyInUse": "גורם שני זה כבר בשימוש.",
+  "authErrorInvalidClaims": "סופקו טענות מותאמות אישית לא תקינות.",
+  "link": "[HE] Link",
+  "@link": {
+    "description": "link description"
+  },
+  "signOut": "signOut (TRANSLATE)",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "businessCompletionScreenComingSoon": "businessCompletionScreenComingSoon (TRANSLATE)",
+  "connectedChildren": "ילדים מחוברים",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "authErrorQuotaExceeded": "מכסת ה-SMS עבור פרויקט זה הותרה. אנא נסה שוב מאוחר יותר.",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "@revenue": {
+    "description": "revenue description"
+  },
+  "deleteAppointment": "deleteAppointment (TRANSLATE)",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toAvailendformatcontext": "toAvailendformatcontext (TRANSLATE)",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: ${avail.end.format(context)}",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "rewards": "rewards (TRANSLATE)",
+  "@confirm": {
+    "description": "Description"
+  },
+  "authErrorInvalidHashAlgorithm": "אלגוריתם ה-hash אינו תקין.",
+  "areYouSureYouWantToCancelThisAppointment": "areYouSureYouWantToCancelThisAppointment (TRANSLATE)",
+  "@areYouSureYouWantToCancelThisAppointment": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "businessSubscriptionEntryScreenComingSoon": "businessSubscriptionEntryScreenComingSoon (TRANSLATE)",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "noNotifications": "noNotifications (TRANSLATE)",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "authErrorEmailAlreadyInUse": "כבר קיים חשבון עם אימייל זה.",
+  "@download": {
+    "description": "Description"
+  },
+  "noInvoicesFoundCreateYourFirstInvoice": "noInvoicesFoundCreateYourFirstInvoice (TRANSLATE)",
+  "groupNameOptional": "[HE] Group Name (Optional)",
+  "@groupNameOptional": {
+    "description": "Description"
+  },
+  "subscribeToPro1499mo": "subscribeToPro1499mo (TRANSLATE)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "login": "התחברות",
+  "@login": {
+    "description": "Description"
+  },
+  "@upload": {
+    "description": "Description"
+  },
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "errorCheckingPermissions": "שגיאה בבדיקת הרשאות",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
+  },
+  "businessLoginScreenComingSoon": "businessLoginScreenComingSoon (TRANSLATE)",
+  "readWrite": "readWrite (TRANSLATE)",
+  "manageStaffAvailability": "manageStaffAvailability (TRANSLATE)",
+  "authErrorMissingIosBundleId": "מזהה חבילת iOS חסר.",
+  "enableNotifications1": "enableNotifications1 (TRANSLATE)",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "failedToApplyPromoCodeE": "failedToApplyPromoCodeE (TRANSLATE)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "playtimeVirtualStarted": "מפגש וירטואלי התחיל",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "playtimeGameRejected": "המשחק נדחה",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "addProvider": "addProvider (TRANSLATE)",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "ambassadorQuotaDashboard": "ambassadorQuotaDashboard (TRANSLATE)",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "parentsMustApproveBeforeChildrenCanJoin": "parentsMustApproveBeforeChildrenCanJoin (TRANSLATE)",
+  "@parentsMustApproveBeforeChildrenCanJoin": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "errorConfirmingPaymentE": "errorConfirmingPaymentE (TRANSLATE)",
+  "familySupport": "familySupport (TRANSLATE)",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "enableNotifications": "הפעל התראות",
+  "noRoomsFoundAddYourFirstRoom": "noRoomsFoundAddYourFirstRoom (TRANSLATE)",
+  "playtimeLandingChooseMode": "בחר מצב",
+  "@playtimeLandingChooseMode": {
+    "description": "Description"
+  },
+  "pickTime": "pickTime (TRANSLATE)",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "@noProvidersFoundAddYourFirstProvider": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "next": "הבא",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "loginFailedE": "loginFailedE (TRANSLATE)",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "deleteAvailability": "deleteAvailability (TRANSLATE)",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "authErrorInvalidEmail": "אנא הכנס כתובת אימייל תקינה.",
+  "errorLoadingBranchesE": "errorLoadingBranchesE (TRANSLATE)",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "authErrorInvalidHashBlockSize": "גודל בלוק ה-hash אינו תקין.",
+  "recentGames": "משחקים אחרונים",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "errorPickingImageE": "errorPickingImageE (TRANSLATE)",
+  "retry": "נסה שוב",
+  "@retry": {
+    "description": "Description"
+  },
+  "privacyRequestSentToYourParents": "privacyRequestSentToYourParents (TRANSLATE)",
+  "adminLogadminemail": "adminLogadminemail (TRANSLATE)",
+  "pleaseSignInToCreateASession": "pleaseSignInToCreateASession (TRANSLATE)",
+  "authErrorUnsupportedFirstFactor": "גורם ראשון לא נתמך לאימות רב-גורמי.",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "inviteeArgsinviteeid": "inviteeArgsinviteeid (TRANSLATE)",
+  "menu": "menu (TRANSLATE)",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "home": "בית",
+  "registering": "registering (TRANSLATE)",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "login1": "login1 (TRANSLATE)",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "messageSavedSuccessfully": "ההודעה נשמרה בהצלחה",
+  "businessSetupScreenComingSoon": "businessSetupScreenComingSoon (TRANSLATE)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "authErrorInvalidEmailVerified": "ערך האימייל המאומת אינו תקין.",
+  "settings": "הגדרות",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "errorLoadingSubscriptionError": "errorLoadingSubscriptionError (TRANSLATE)",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "goBack": "goBack (TRANSLATE)",
+  "createYourFirstSession": "צור את המפגש הראשון שלך",
+  "authErrorInvalidIdToken": "טוקן ה-ID אינו תקין.",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "branchesLengthBranches": "branchesLengthBranches (TRANSLATE)",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: ${_branches.length} branches",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "permissionsFamilylinkchildid": "permissionsFamilylinkchildid (TRANSLATE)",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - ${familyLink.childId}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "users": "users (TRANSLATE)",
+  "@users": {
+    "description": "users description"
+  },
+  "rating": "rating (TRANSLATE)",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "admin": "מנהל",
+  "meetingReadyMessage": "[HE] Your meeting is ready! Join now",
+  "timestamp_formatdatelogtimestamp": "timestamp_formatdatelogtimestamp (TRANSLATE)",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "invite": "הזמן",
+  "@invite": {
+    "description": "Description"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Description"
+  },
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "getHelpWithYourAccount": "getHelpWithYourAccount (TRANSLATE)",
+  "colorContrastTesting": "colorContrastTesting (TRANSLATE)",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "appointments": "appointments (TRANSLATE)",
+  "manageChildAccounts": "manageChildAccounts (TRANSLATE)",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "parentalConsent": "parentalConsent (TRANSLATE)",
+  "userLoguseremail": "userLoguseremail (TRANSLATE)",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: ${log.userEmail}",
+    "placeholders": {
+      "event_startTime": {},
+      "snapshot_error": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "noProfileFound": "לא נמצא פרופיל",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "mediaOptional": "מדיה (אופציונלי)",
+  "myInvites": "[HE] My Invites",
+  "creatorCreatorid": "creatorCreatorid (TRANSLATE)",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: ${tier.toUpperCase()}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "tier_toUpperCase": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "noEvents": "noEvents (TRANSLATE)",
+  "copy1": "copy1 (TRANSLATE)",
+  "homeFeedScreen": "homeFeedScreen (TRANSLATE)",
+  "adminBroadcast": "שידור מנהל",
+  "submitBooking": "submitBooking (TRANSLATE)",
+  "playtimeManagement": "playtimeManagement (TRANSLATE)",
+  "childDashboard": "childDashboard (TRANSLATE)",
+  "removeChild": "הסר ילד",
+  "@removeChild": {
+    "description": "Description"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "broadcast": "broadcast (TRANSLATE)",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "loginScreen": "loginScreen (TRANSLATE)",
+  "familyDashboard": "לוח מנהל המשפחה",
+  "@familyDashboard": {
+    "description": "Description"
+  },
+  "@scheduleMessage": {
+    "description": "Description"
+  },
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "businessAppointmentsEntryScreenComingSoon": "businessAppointmentsEntryScreenComingSoon (TRANSLATE)",
+  "eventCreated": "eventCreated (TRANSLATE)",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "virtualSessionCreatedInvitingFriends": "virtualSessionCreatedInvitingFriends (TRANSLATE)",
+  "@virtualSessionCreatedInvitingFriends": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "@redo": {
+    "description": "Description"
+  },
+  "add": "הוסף",
+  "cancelInvite": "בטל הזמנה",
+  "@cancelInvite": {
+    "description": "Description"
+  },
+  "errorLoadingRewards": "errorLoadingRewards (TRANSLATE)",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "authErrorMissingUid": "UID חסר.",
+  "backgroundDeletedSuccessfully": "backgroundDeletedSuccessfully (TRANSLATE)",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: ${list.length}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "dashboard1": "dashboard1 (TRANSLATE)",
+  "@businessOnboardingScreenComingSoon": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "viewResponsesComingSoon": "viewResponsesComingSoon (TRANSLATE)",
+  "businessProvidersEntryScreenComingSoon": "businessProvidersEntryScreenComingSoon (TRANSLATE)",
+  "errorLoadingStaff": "errorLoadingStaff (TRANSLATE)",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "rooms": "rooms (TRANSLATE)",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "newNotificationPayloadtitle": "newNotificationPayloadtitle (TRANSLATE)",
+  "@areYouSureYouWantToDeleteThisMessage": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "activityLogaction": "activityLogaction (TRANSLATE)",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: ${log.action}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "created": "נוצר",
+  "playtimeChooseGame": "[HE] Choose a game",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "pleaseEnterAPromoCode": "pleaseEnterAPromoCode (TRANSLATE)",
+  "@authErrorUserNotFound": {
+    "description": "Firebase Auth user-not-found error message"
+  },
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "configurationSavedSuccessfully": "configurationSavedSuccessfully (TRANSLATE)",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "verify": "verify (TRANSLATE)",
+  "download": "הורדה",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "back": "[HE] Back",
+  "clicked": "[HE] Clicked",
+  "playtimeHub": "מרכז Playtime",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "failedToUpdateConsentE": "failedToUpdateConsentE (TRANSLATE)",
+  "authErrorCodeExpired": "קוד האימות פג תוקף. אנא בקש אחד חדש.",
+  "chatBooking": "chatBooking (TRANSLATE)",
+  "authErrorMultiFactorInfoNotFound": "מידע רב-גורמי לא נמצא.",
+  "welcome": "ברוך הבא",
+  "@welcome": {
+    "description": "Description"
+  },
+  "opened": "נפתח",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "createGame": "[HE] Create Game",
+  "@save": {
+    "description": "save description"
+  },
+  "saveGroupForRecognition": "שמור קבוצה לזיהוי",
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
+  "contentFilter": "contentFilter (TRANSLATE)",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "noProviders": "noProviders (TRANSLATE)",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "reply": "reply (TRANSLATE)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "authErrorInvalidHashKey": "מפתח ה-hash אינו תקין.",
+  "revenue": "revenue (TRANSLATE)",
+  "areYouSureYouWantToDeleteThisProvider": "areYouSureYouWantToDeleteThisProvider (TRANSLATE)",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "couldNotOpenPrivacyPolicy": "couldNotOpenPrivacyPolicy (TRANSLATE)",
+  "adminMetrics": "מדדי מנהל",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "authErrorInvalidDisabledField": "ערך השדה המושבת אינו תקין.",
+  "failedToStartProSubscriptionE": "failedToStartProSubscriptionE (TRANSLATE)",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "createNewGame": "createNewGame (TRANSLATE)",
+  "authErrorIdTokenExpired": "טוקן ה-ID פג תוקף.",
+  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "noUsers": "noUsers (TRANSLATE)",
+  "errorLoadingFamilyLinks": "שגיאה בטעינת קישורי משפחה",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "appointmentRequests": "appointmentRequests (TRANSLATE)",
+  "participants": "משתתפים",
+  "@participants": {
+    "description": "Description"
+  },
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "bookings": "הזמנות",
+  "dateAppointmentscheduledattostring": "dateAppointmentscheduledattostring (TRANSLATE)",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "errorLoadingDashboardError": "errorLoadingDashboardError (TRANSLATE)",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "monetizationSettings": "monetizationSettings (TRANSLATE)",
+  "clients": "clients (TRANSLATE)",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "scheduled": "מתוזמן",
+  "authErrorEmailChangeNeedsVerification": "שינוי אימייל דורש אימות.",
+  "createYourFirstGame": "צור את המשחק הראשון שלך",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "submit": "submit (TRANSLATE)",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "confirm": "אשר",
+  "edit": "ערוך",
+  "@edit": {
+    "description": "Description"
+  },
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "details": "פרטים",
+  "helpSupport": "helpSupport (TRANSLATE)",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "emailNotifications": "emailNotifications (TRANSLATE)",
+  "toggleAvailability": "toggleAvailability (TRANSLATE)",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "myProfile": "הפרופיל שלי",
+  "@myProfile": {
+    "description": "Description"
+  },
+  "signUp": "הרשמה",
+  "@signUp": {
+    "description": "Description"
+  },
+  "organizations": "organizations (TRANSLATE)",
+  "availability": "availability (TRANSLATE)",
+  "businessSignupScreenComingSoon": "businessSignupScreenComingSoon (TRANSLATE)",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "date": "date (TRANSLATE)",
+  "payment": "payment (TRANSLATE)",
+  "failedToDeleteAccountE": "failedToDeleteAccountE (TRANSLATE)",
+  "failedToActionPrivacyRequest": "נכשל בביצוע בקשת פרטיות",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "authErrorInvalidUserImport": "רשומת ייבוא המשתמש אינה תקינה.",
+  "authErrorInvalidHashRounds": "ערך סיבובי ה-hash אינו תקין.",
+  "notAuthenticated": "notAuthenticated (TRANSLATE)",
+  "save1": "save1 (TRANSLATE)",
+  "errorLogerrormessage": "errorLogerrormessage (TRANSLATE)",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: ${log.errorMessage}",
+    "placeholders": {
+      "profile_email": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "payload_title": {}
+    }
+  },
+  "authErrorInvalidHashDerivedKeyLength": "אורך המפתח הנגזר מה-hash אינו תקין.",
+  "linkAccounts": "linkAccounts (TRANSLATE)",
+  "completion": "completion (TRANSLATE)",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "confirmBooking": "confirmBooking (TRANSLATE)",
+  "addQuestion": "addQuestion (TRANSLATE)",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "surveyResponses": "surveyResponses (TRANSLATE)",
+  "pleaseLoginForFamilyFeatures": "[HE] Please login to access family features",
+  "pleaseEnterAValidEmailAddress": "pleaseEnterAValidEmailAddress (TRANSLATE)",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "meetingIdMeetingid": "meetingIdMeetingid (TRANSLATE)",
+  "businessLogin": "businessLogin (TRANSLATE)",
+  "grantConsent": "grantConsent (TRANSLATE)",
+  "noRouteDefinedForSettingsname": "noRouteDefinedForSettingsname (TRANSLATE)",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for ${settings.name}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_status": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {}
+    }
+  },
+  "contentLibrary1": "contentLibrary1 (TRANSLATE)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "errorSnapshoterror": "errorSnapshoterror (TRANSLATE)",
+  "@authErrorWeakPassword": {
+    "description": "Firebase Auth weak-password error message"
+  },
+  "pleaseLoginToViewProfile": "אנא התחבר כדי לצפות בפרופיל",
+  "@pleaseLoginToViewProfile": {
+    "description": "Description"
+  },
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "failedToRevokeAccess": "[HE] Failed to revoke access",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "noAppointmentRequestsFound": "noAppointmentRequestsFound (TRANSLATE)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "authErrorInvalidCreationTime": "זמן היצירה אינו תקין.",
+  "authErrorInternalError": "אירעה שגיאה פנימית. אנא נסה שוב.",
+  "createNewSurvey": "createNewSurvey (TRANSLATE)",
+  "noBranchesAvailable": "noBranchesAvailable (TRANSLATE)",
+  "receiveBookingNotificationsViaEmail": "receiveBookingNotificationsViaEmail (TRANSLATE)",
+  "editBusinessProfile": "editBusinessProfile (TRANSLATE)",
+  "ambassadorDashboard": "ambassadorDashboard (TRANSLATE)",
+  "crmDashboardWithAnalytics": "crmDashboardWithAnalytics (TRANSLATE)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "durationDurationinminutes0Minutes": "durationDurationinminutes0Minutes (TRANSLATE)",
+  "liveSessionScheduledWaitingForParentApproval": "liveSessionScheduledWaitingForParentApproval (TRANSLATE)",
+  "@liveSessionScheduledWaitingForParentApproval": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "authErrorWeakPassword": "הסיסמה חלשה מדי. אנא בחר סיסמה חזקה יותר.",
+  "errorSendingMessage": "שגיאה בשליחת הודעה",
+  "staffSelectionstaffdisplayname": "staffSelectionstaffdisplayname (TRANSLATE)",
+  "businessOnboardingScreenComingSoon": "businessOnboardingScreenComingSoon (TRANSLATE)",
+  "adminDashboard": "לוח מחוונים למנהל",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "currentTierTiertouppercase": "currentTierTiertouppercase (TRANSLATE)",
+  "subscriptionCancelledSuccessfully": "subscriptionCancelledSuccessfully (TRANSLATE)",
+  "@subscriptionCancelledSuccessfully": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "playtimeChooseTime": "בחר זמן",
+  "signInWithExistingMethod": "signInWithExistingMethod (TRANSLATE)",
+  "join": "join (TRANSLATE)",
+  "send": "send (TRANSLATE)",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "clientDeletedSuccessfully": "clientDeletedSuccessfully (TRANSLATE)",
+  "calendar": "calendar (TRANSLATE)",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "becomeAnAmbassador": "becomeAnAmbassador (TRANSLATE)",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "errorLoadingInvites": "שגיאה בטעינת הזמנות",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "knownGroupDetected": "[HE] Known group detected",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "accessRevokedSuccessfully": "הגישה בוטלה בהצלחה",
+  "providers": "providers (TRANSLATE)",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "noAppointments": "noAppointments (TRANSLATE)",
+  "revokeAccessConfirmation": "אישור ביטול גישה",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "paymentSuccessful": "paymentSuccessful (TRANSLATE)",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: ${args.staff.displayName}",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "errorLoadingSurveysError": "errorLoadingSurveysError (TRANSLATE)",
+  "livePlaytime": "livePlaytime (TRANSLATE)",
+  "about": "אודות",
+  "enableVibration": "enableVibration (TRANSLATE)",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "upgradeToBusiness": "upgradeToBusiness (TRANSLATE)",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "@receivePushNotificationsForNewBookings": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "@close": {
+    "description": "close description"
+  },
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "authErrorInvalidHashMemoryCost": "עלות הזיכרון של ה-hash אינה תקינה.",
+  "myInvites1": "myInvites1 (TRANSLATE)",
+  "ambassadors": "ambassadors (TRANSLATE)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "meetingSharedSuccessfully1": "meetingSharedSuccessfully1 (TRANSLATE)",
+  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "approve": "approve (TRANSLATE)",
+  "enterGroupName": "הכנס שם קבוצה",
+  "text": "text (TRANSLATE)",
+  "failedToUpdatePermissionE": "failedToUpdatePermissionE (TRANSLATE)",
+  "businessAvailability": "businessAvailability (TRANSLATE)",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: ${avail.start.format(context)}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "errorLoadingSlots": "errorLoadingSlots (TRANSLATE)",
+  "yourPaymentHasBeenProcessedSuccessfully": "yourPaymentHasBeenProcessedSuccessfully (TRANSLATE)",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "staffStaffidNotSelected": "staffStaffidNotSelected (TRANSLATE)",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: ${staffId ?? \"Not selected\"}",
+    "placeholders": {
+      "e_toString": {},
+      "staffId_Not_selected": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "tier_toUpperCase": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "index_1": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "restrictMatureContent": "restrictMatureContent (TRANSLATE)",
+  "requireParentApproval": "requireParentApproval (TRANSLATE)",
+  "@refresh": {
+    "description": "Description"
+  },
+  "noAnalyticsDataAvailableYet": "noAnalyticsDataAvailableYet (TRANSLATE)",
+  "copyLink": "copyLink (TRANSLATE)",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "receivePushNotificationsForNewBookings": "receivePushNotificationsForNewBookings (TRANSLATE)",
+  "authErrorUnknown": "אירעה שגיאת אימות לא ידועה.",
+  "createVirtualSession": "צור מפגש וירטואלי",
+  "dashboard": "לוח מחוונים",
+  "language": "language (TRANSLATE)",
+  "failedToCreateSessionE": "failedToCreateSessionE (TRANSLATE)",
+  "referralsAmbassadorreferrals": "referralsAmbassadorreferrals (TRANSLATE)",
+  "revokeAccess": "ביטול גישה",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "redirectingToStripeCheckoutForBasicPlan": "redirectingToStripeCheckoutForBasicPlan (TRANSLATE)",
+  "@redirectingToStripeCheckoutForBasicPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "authErrorReservedClaims": "סופקו טענות שמורות.",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "orgmemberidslengthMembers": "orgmemberidslengthMembers (TRANSLATE)",
+  "changesSavedSuccessfully": "changesSavedSuccessfully (TRANSLATE)",
+  "@otpResentSuccessfully": {
+    "description": "Description"
+  },
+  "businessAvailabilityEntryScreenComingSoon": "businessAvailabilityEntryScreenComingSoon (TRANSLATE)",
+  "@businessAvailabilityEntryScreenComingSoon": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "errorLoadingAppointments": "errorLoadingAppointments (TRANSLATE)",
+  "playtimeApprove": "אשר Playtime",
+  "customizeMessage": "התאם אישית הודעה",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "errorEstimatingRecipientsE": "errorEstimatingRecipientsE (TRANSLATE)",
+  "noMissingTranslations": "noMissingTranslations (TRANSLATE)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "markAsPaid": "markAsPaid (TRANSLATE)",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "pendingInvites": "[HE] Pending Invites",
+  "authErrorCredentialAlreadyInUse": "פרטי התחברות אלה כבר קשורים לחשבון אחר.",
+  "bookAppointment": "bookAppointment (TRANSLATE)",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "errorLoadingPermissionsError": "errorLoadingPermissionsError (TRANSLATE)",
+  "staffArgsstaffdisplayname": "staffArgsstaffdisplayname (TRANSLATE)",
+  "noInvites": "אין הזמנות",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "fromAvailstartformatcontext": "fromAvailstartformatcontext (TRANSLATE)",
+  "status": "סטטוס",
+  "forward": "forward (TRANSLATE)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "playtimeTitle": "כותרת Playtime",
+  "sessionRejected": "sessionRejected (TRANSLATE)",
+  "socialAccountConflictTitle": "socialAccountConflictTitle (TRANSLATE)",
+  "yes": "כן",
+  "@yes": {
+    "description": "yes description"
+  },
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "editRoom": "editRoom (TRANSLATE)",
+  "studioBooking": "studioBooking (TRANSLATE)",
+  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "clientScreenTBD": "מסך לקוח ייקבע מאוחר יותר",
+  "virtualPlaytime": "virtualPlaytime (TRANSLATE)",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "businessProfile": "businessProfile (TRANSLATE)",
+  "upload": "העלה",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "meetingSharedSuccessfully": "מפגש שותף בהצלחה",
+  "messageSentSuccessfully": "ההודעה נשלחה בהצלחה",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "time": "time (TRANSLATE)",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "create": "create (TRANSLATE)",
+  "shareOnWhatsApp": "[HE] Share on WhatsApp",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "checkingSubscription": "checkingSubscription (TRANSLATE)",
+  "scheduleMessage": "תזמן הודעה",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "selectStaff": "selectStaff (TRANSLATE)",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "multipleChoice": "multipleChoice (TRANSLATE)",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "exportAsPdf": "exportAsPdf (TRANSLATE)",
+  "@studioBookingIsOnlyAvailableOnWeb": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "invitationSentSuccessfully": "invitationSentSuccessfully (TRANSLATE)",
+  "studioDashboard": "studioDashboard (TRANSLATE)",
+  "allCountries": "allCountries (TRANSLATE)",
+  "authErrorUserNotFound": "לא נמצא חשבון עם כתובת אימייל זו.",
+  "pickVideo": "בחר וידאו",
+  "errorLoadingReferralCode": "errorLoadingReferralCode (TRANSLATE)",
+  "darkMode": "darkMode (TRANSLATE)",
+  "noQuestionsAdded": "noQuestionsAdded (TRANSLATE)",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "failedToStartBasicSubscriptionE": "failedToStartBasicSubscriptionE (TRANSLATE)",
+  "authErrorMissingHashAlgorithm": "אלגוריתם hash חסר.",
+  "deleteMyAccount": "deleteMyAccount (TRANSLATE)",
+  "resolved": "resolved (TRANSLATE)",
+  "paymentWasCancelled": "paymentWasCancelled (TRANSLATE)",
+  "authErrorNetworkRequestFailed": "שגיאת רשת. אנא בדוק את החיבור ונסה שוב.",
+  "contextContextid": "contextContextid (TRANSLATE)",
+  "appVersionAndInformation": "appVersionAndInformation (TRANSLATE)",
+  "logout": "התנתק",
+  "@logout": {
+    "description": "Description"
+  },
+  "noContentAvailableYet": "noContentAvailableYet (TRANSLATE)",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "failedToSendPrivacyRequestE": "failedToSendPrivacyRequestE (TRANSLATE)",
+  "viewDetails": "viewDetails (TRANSLATE)",
+  "saveChanges": "saveChanges (TRANSLATE)",
+  "inviteContact": "inviteContact (TRANSLATE)",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "scheduledFor": "מתוזמן עבור",
+  "defaultShareMessage": "הודעת שיתוף ברירת מחדל",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "timeArgsslotformatcontext": "timeArgsslotformatcontext (TRANSLATE)",
+  "editProfile": "editProfile (TRANSLATE)",
+  "recipients": "נמענים",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "familyMembers": "חברי המשפחה",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: ${serviceId ?? \"Not selected\"}",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "studioBookingIsOnlyAvailableOnWeb": "studioBookingIsOnlyAvailableOnWeb (TRANSLATE)",
+  "composeBroadcastMessage": "כתוב הודעת שידור",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "redo": "בצע שוב",
+  "closed": "closed (TRANSLATE)",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "deleteProvider": "deleteProvider (TRANSLATE)",
+  "next1": "next1 (TRANSLATE)",
+  "noProvidersFoundAddYourFirstProvider": "noProvidersFoundAddYourFirstProvider (TRANSLATE)",
+  "playtimeEnterGameName": "הכנס שם משחק",
+  "authErrorMissingPhoneNumber": "אנא הכנס מספר טלפון.",
+  "notifications1": "notifications1 (TRANSLATE)",
+  "logtargettypeLogtargetid": "logtargettypeLogtargetid (TRANSLATE)",
+  "adminFreeAccess": "גישה ללא מנהל",
+  "iDoNotConsent": "iDoNotConsent (TRANSLATE)",
+  "businessDashboard": "businessDashboard (TRANSLATE)",
+  "backgroundRejected": "backgroundRejected (TRANSLATE)",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "@copy": {
+    "description": "Description"
+  },
+  "noExternalMeetingsFound": "noExternalMeetingsFound (TRANSLATE)",
+  "addNewRoom": "addNewRoom (TRANSLATE)",
+  "roomAddedSuccessfully": "roomAddedSuccessfully (TRANSLATE)",
+  "loadingCheckout": "loadingCheckout (TRANSLATE)",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  },
+  "deletingAccount": "deletingAccount (TRANSLATE)",
+  "playtimeLiveScheduled": "מפגש חי מתוזמן",
+  "@businessCrmEntryScreenComingSoon": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "subscription": "subscription (TRANSLATE)",
+  "settingsDialogWillBeImplementedHere": "settingsDialogWillBeImplementedHere (TRANSLATE)",
+  "settings1": "settings1 (TRANSLATE)",
+  "failedToUploadBackgroundE": "failedToUploadBackgroundE (TRANSLATE)",
+  "close": "[HE] Close",
+  "businessVerificationScreenComingSoon": "businessVerificationScreenComingSoon (TRANSLATE)",
+  "country": "country (TRANSLATE)",
+  "inviteCancelledSuccessfully": "הזמנה בוטלה בהצלחה",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: ${invite.status.name}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "statusColon": "[HE] Status:",
+  "authErrorProjectNotFound": "פרויקט Firebase לא נמצא.",
+  "permissionPermissioncategoryUpdatedToNewvalue": "permissionPermissioncategoryUpdatedToNewvalue (TRANSLATE)",
+  "@permissionPermissioncategoryUpdatedToNewvalue": {
+    "description": "Localization key for: Permission ${permission.category} updated to $newValue",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "edit1": "edit1 (TRANSLATE)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "resolve": "resolve (TRANSLATE)",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorError": "errorError (TRANSLATE)",
+  "logout1": "logout1 (TRANSLATE)",
+  "myProfile1": "myProfile1 (TRANSLATE)",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "parentalSettings": "parentalSettings (TRANSLATE)",
+  "inviteChild": "inviteChild (TRANSLATE)",
+  "confirmPassword": "אשר סיסמה",
+  "undo": "בטל",
+  "allLanguages": "allLanguages (TRANSLATE)",
+  "noTicketsYet": "noTicketsYet (TRANSLATE)",
+  "pleaseSignInToUploadABackground": "pleaseSignInToUploadABackground (TRANSLATE)",
+  "success": "הצלחה",
+  "@success": {
+    "description": "Description"
+  },
+  "authErrorInvalidVerificationId": "מזהה האימות אינו תקין.",
+  "copy": "העתק",
+  "statusInvitestatusname": "statusInvitestatusname (TRANSLATE)",
+  "otpResentSuccessfully": "OTP נשלח מחדש בהצלחה",
+  "shareViaWhatsapp": "shareViaWhatsapp (TRANSLATE)",
+  "deleteSlot": "deleteSlot (TRANSLATE)",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "הזמנות",
-  "@bookings": {
-    "description": "Bookings section title"
-  },
-  "contentLibrary": "ספריית תוכן",
-  "authErrorUserNotFound": "לא נמצא חשבון עם כתובת אימייל זו.",
-  "authErrorWrongPassword": "סיסמה שגויה. אנא נסה שוב.",
-  "authErrorInvalidEmail": "אנא הכנס כתובת אימייל תקינה.",
-  "authErrorUserDisabled": "חשבון זה הושבת. אנא פנה לתמיכה.",
-  "authErrorWeakPassword": "הסיסמה חלשה מדי. אנא בחר סיסמה חזקה יותר.",
-  "authErrorEmailAlreadyInUse": "כבר קיים חשבון עם אימייל זה.",
-  "authErrorTooManyRequests": "יותר מדי ניסיונות כושלים. אנא נסה שוב מאוחר יותר.",
-  "authErrorOperationNotAllowed": "שיטת התחברות זו אינה מופעלת. אנא פנה לתמיכה.",
-  "authErrorInvalidCredential": "פרטי התחברות לא תקינים. אנא נסה שוב.",
-  "authErrorAccountExistsWithDifferentCredential": "כבר קיים חשבון עם אימייל זה המשתמש בשיטת התחברות אחרת.",
-  "authErrorCredentialAlreadyInUse": "פרטי התחברות אלה כבר קשורים לחשבון אחר.",
-  "authErrorNetworkRequestFailed": "שגיאת רשת. אנא בדוק את החיבור ונסה שוב.",
-  "authErrorRequiresRecentLogin": "אנא התחבר שוב לביצוע פעולה זו.",
-  "authErrorAppNotAuthorized": "אפליקציה זו אינה מורשית להשתמש ב-Firebase Authentication.",
-  "authErrorInvalidVerificationCode": "קוד האימות אינו תקין.",
-  "authErrorInvalidVerificationId": "מזהה האימות אינו תקין.",
-  "authErrorMissingVerificationCode": "אנא הכנס את קוד האימות.",
-  "authErrorMissingVerificationId": "מזהה אימות חסר.",
-  "authErrorInvalidPhoneNumber": "מספר הטלפון אינו תקין.",
-  "authErrorMissingPhoneNumber": "אנא הכנס מספר טלפון.",
-  "authErrorQuotaExceeded": "מכסת ה-SMS עבור פרויקט זה הותרה. אנא נסה שוב מאוחר יותר.",
-  "authErrorCodeExpired": "קוד האימות פג תוקף. אנא בקש אחד חדש.",
-  "authErrorSessionExpired": "הסשן פג תוקף. אנא התחבר שוב.",
-  "authErrorMultiFactorAuthRequired": "נדרשת אימות רב-גורמי.",
-  "authErrorMultiFactorInfoNotFound": "מידע רב-גורמי לא נמצא.",
-  "authErrorMissingMultiFactorSession": "סשן רב-גורמי חסר.",
-  "authErrorInvalidMultiFactorSession": "סשן רב-גורמי לא תקין.",
-  "authErrorSecondFactorAlreadyInUse": "גורם שני זה כבר בשימוש.",
-  "authErrorMaximumSecondFactorCountExceeded": "מספר מקסימלי של גורמים שניים הותר.",
-  "authErrorUnsupportedFirstFactor": "גורם ראשון לא נתמך לאימות רב-גורמי.",
-  "authErrorEmailChangeNeedsVerification": "שינוי אימייל דורש אימות.",
-  "authErrorPhoneNumberAlreadyExists": "מספר טלפון זה כבר בשימוש.",
-  "authErrorInvalidPassword": "הסיסמה אינה תקינה או חלשה מדי.",
-  "authErrorInvalidIdToken": "טוקן ה-ID אינו תקין.",
-  "authErrorIdTokenExpired": "טוקן ה-ID פג תוקף.",
-  "authErrorIdTokenRevoked": "טוקן ה-ID בוטל.",
-  "authErrorInternalError": "אירעה שגיאה פנימית. אנא נסה שוב.",
-  "authErrorInvalidArgument": "סופק ארגומנט לא תקין.",
-  "authErrorInvalidClaims": "סופקו טענות מותאמות אישית לא תקינות.",
-  "authErrorInvalidContinueUri": "כתובת ה-URL להמשך אינה תקינה.",
-  "authErrorInvalidCreationTime": "זמן היצירה אינו תקין.",
-  "authErrorInvalidDisabledField": "ערך השדה המושבת אינו תקין.",
-  "authErrorInvalidDisplayName": "שם התצוגה אינו תקין.",
-  "authErrorInvalidDynamicLinkDomain": "דומיין הקישור הדינמי אינו תקין.",
-  "authErrorInvalidEmailVerified": "ערך האימייל המאומת אינו תקין.",
-  "authErrorInvalidHashAlgorithm": "אלגוריתם ה-hash אינו תקין.",
-  "authErrorInvalidHashBlockSize": "גודל בלוק ה-hash אינו תקין.",
-  "authErrorInvalidHashDerivedKeyLength": "אורך המפתח הנגזר מה-hash אינו תקין.",
-  "authErrorInvalidHashKey": "מפתח ה-hash אינו תקין.",
-  "authErrorInvalidHashMemoryCost": "עלות הזיכרון של ה-hash אינה תקינה.",
-  "authErrorInvalidHashParallelization": "המקבילות של ה-hash אינה תקינה.",
-  "authErrorInvalidHashRounds": "ערך סיבובי ה-hash אינו תקין.",
-  "authErrorInvalidHashSaltSeparator": "מפריד המלח של ה-hash אינו תקין.",
-  "authErrorInvalidLastSignInTime": "זמן ההתחברות האחרון אינו תקין.",
-  "authErrorInvalidPageToken": "טוקן הדף אינו תקין.",
-  "authErrorInvalidProviderData": "נתוני הספק אינם תקינים.",
-  "authErrorInvalidProviderId": "מזהה הספק אינו תקין.",
-  "authErrorInvalidSessionCookieDuration": "משך עוגיית הסשן אינו תקין.",
-  "authErrorInvalidUid": "ה-UID אינו תקין.",
-  "authErrorInvalidUserImport": "רשומת ייבוא המשתמש אינה תקינה.",
-  "authErrorMaximumUserCountExceeded": "מספר מקסימלי של משתמשים לייבוא הותר.",
-  "authErrorMissingAndroidPkgName": "שם חבילת Android חסר.",
-  "authErrorMissingContinueUri": "כתובת URL להמשך חסרה.",
-  "authErrorMissingHashAlgorithm": "אלגוריתם hash חסר.",
-  "authErrorMissingIosBundleId": "מזהה חבילת iOS חסר.",
-  "authErrorMissingUid": "UID חסר.",
-  "authErrorMissingOauthClientSecret": "סוד הלקוח OAuth חסר.",
-  "authErrorProjectNotFound": "פרויקט Firebase לא נמצא.",
-  "authErrorReservedClaims": "סופקו טענות שמורות.",
-  "authErrorSessionCookieExpired": "עוגיית הסשן פגה תוקף.",
+  "scheduling": "מתוזמן",
   "authErrorSessionCookieRevoked": "עוגיית הסשן בוטלה.",
+  "authErrorSessionCookieExpired": "עוגיית הסשן פגה תוקף.",
+  "tryAgain": "tryAgain (TRANSLATE)",
+  "ok": "אישור",
+  "bookingConfirmed": "bookingConfirmed (TRANSLATE)",
+  "noEventsScheduledThisWeek": "noEventsScheduledThisWeek (TRANSLATE)",
   "authErrorUidAlreadyExists": "ה-UID כבר בשימוש.",
-  "authErrorUnauthorizedContinueUri": "דומיין כתובת ה-URL להמשך אינו מורשה.",
-  "authErrorUnknown": "אירעה שגיאת אימות לא ידועה."
+  "cancel1": "cancel1 (TRANSLATE)",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "profileNotFound": "profileNotFound (TRANSLATE)",
+  "pleaseEnterAValidEmailOrPhone": "pleaseEnterAValidEmailOrPhone (TRANSLATE)",
+  "update": "update (TRANSLATE)",
+  "requiresInstallFallback": "requiresInstallFallback (TRANSLATE)",
+  "appTitle": "כותרת האפליקציה",
+  "authErrorInvalidUid": "ה-UID אינו תקין.",
+  "no": "לא",
+  "playtimeCreateSession": "צור מפגש",
+  "subscribeToWidgetplanname": "subscribeToWidgetplanname (TRANSLATE)",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "confirm1": "confirm1 (TRANSLATE)",
+  "surveyEditor": "surveyEditor (TRANSLATE)",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "playtimeVirtual": "Playtime וירטואלי",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "unlimitedBookingsPerWeek": "unlimitedBookingsPerWeek (TRANSLATE)",
+  "previous": "הקודם",
+  "gameRejected": "gameRejected (TRANSLATE)",
+  "authErrorMissingAndroidPkgName": "שם חבילת Android חסר.",
+  "save": "שמור",
+  "welcomeToPlaytime": "ברוכים הבאים ל-Playtime",
+  "revoke": "בטל",
+  "businessCrmEntryScreenComingSoon": "businessCrmEntryScreenComingSoon (TRANSLATE)",
+  "sendNow": "שלח כעת",
+  "scheduleForLater": "תזמן למועד מאוחר יותר",
+  "authErrorInvalidSessionCookieDuration": "משך עוגיית הסשן אינו תקין.",
+  "overview": "סקירה כללית",
+  "ekeyEvalue": "ekeyEvalue (TRANSLATE)",
+  "userUserid": "userUserid (TRANSLATE)",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "backgroundUploadedSuccessfully": "backgroundUploadedSuccessfully (TRANSLATE)",
+  "refresh": "רענן",
+  "adminSettings": "הגדרות מנהל",
+  "playtimeAdminPanelTitle": "כותרת לוח ניהול Playtime",
+  "createNewInvoice": "createNewInvoice (TRANSLATE)",
+  "viewAll1": "viewAll1 (TRANSLATE)",
+  "playtimeLive": "Playtime חי",
+  "bookViaChat": "bookViaChat (TRANSLATE)",
+  "@delete": {
+    "description": "Description"
+  },
+  "googleCalendar": "googleCalendar (TRANSLATE)",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "playtimeGameDeleted": "המשחק נמחק",
+  "serviceServiceidNotSelected": "serviceServiceidNotSelected (TRANSLATE)",
+  "valuetoint": "valuetoint (TRANSLATE)",
+  "authErrorAppNotAuthorized": "אפליקציה זו אינה מורשית להשתמש ב-Firebase Authentication.",
+  "roomUpdatedSuccessfully": "roomUpdatedSuccessfully (TRANSLATE)",
+  "success1": "success1 (TRANSLATE)",
+  "profile1": "profile1 (TRANSLATE)",
+  "none": "none (TRANSLATE)",
+  "areYouSureYouWantToDeleteThisMessage": "areYouSureYouWantToDeleteThisMessage (TRANSLATE)",
+  "welcome1": "welcome1 (TRANSLATE)",
+  "appointmentsListlength": "appointmentsListlength (TRANSLATE)",
+  "about1": "about1 (TRANSLATE)",
+  "externalMeetings": "externalMeetings (TRANSLATE)",
+  "delete": "מחק",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: כתובת URL להמשך חסרה."
+  },
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Localization key for: סשן רב-גורמי לא תקין."
+  },
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: הסשן פג תוקף. אנא התחבר שוב."
+  },
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: מזהה הספק אינו תקין."
+  },
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Localization key for: דומיין כתובת ה-URL להמשך אינו מורשה."
+  },
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: טוקן ה-ID בוטל."
+  },
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: כתובת ה-URL להמשך אינה תקינה."
+  },
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: נתוני הספק אינם תקינים."
+  },
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Localization key for: מספר מקסימלי של גורמים שניים הותר."
+  },
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: טוקן הדף אינו תקין."
+  },
+  "@authErrorMissingVerificationCode": {
+    "description": "Localization key for: אנא הכנס את קוד האימות."
+  },
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: שם התצוגה אינו תקין."
+  },
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Localization key for: מספר מקסימלי של משתמשים לייבוא הותר."
+  },
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Localization key for: נדרשת אימות רב-גורמי."
+  },
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: מספר הטלפון אינו תקין."
+  },
+  "@authErrorInvalidVerificationCode": {
+    "description": "Localization key for: קוד האימות אינו תקין."
+  },
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Localization key for: סשן רב-גורמי חסר."
+  },
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: הסיסמה אינה תקינה או חלשה מדי."
+  },
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Localization key for: מפריד המלח של ה-hash אינו תקין."
+  },
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: אנא התחבר שוב לביצוע פעולה זו."
+  },
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: סופק ארגומנט לא תקין."
+  },
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: זמן ההתחברות האחרון אינו תקין."
+  },
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Localization key for: מספר טלפון זה כבר בשימוש."
+  },
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Localization key for: דומיין הקישור הדינמי אינו תקין."
+  },
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Localization key for: סוד הלקוח OAuth חסר."
+  },
+  "@authErrorInvalidHashParallelization": {
+    "description": "Localization key for: המקבילות של ה-hash אינה תקינה."
+  },
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: מזהה אימות חסר."
+  },
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Localization key for: גורם שני זה כבר בשימוש."
+  },
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: סופקו טענות מותאמות אישית לא תקינות."
+  },
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: מכסת ה-SMS עבור פרויקט זה הותרה. אנא נסה שוב מאוחר יותר."
+  },
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: אלגוריתם ה-hash אינו תקין."
+  },
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: מזהה חבילת iOS חסר."
+  },
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: גודל בלוק ה-hash אינו תקין."
+  },
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: גורם ראשון לא נתמך לאימות רב-גורמי."
+  },
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: ערך האימייל המאומת אינו תקין."
+  },
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: טוקן ה-ID אינו תקין."
+  },
+  "@authErrorMissingUid": {
+    "description": "Localization key for: UID חסר."
+  },
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: קוד האימות פג תוקף. אנא בקש אחד חדש."
+  },
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Localization key for: מידע רב-גורמי לא נמצא."
+  },
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: מפתח ה-hash אינו תקין."
+  },
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: ערך השדה המושבת אינו תקין."
+  },
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: טוקן ה-ID פג תוקף."
+  },
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Localization key for: שינוי אימייל דורש אימות."
+  },
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: רשומת ייבוא המשתמש אינה תקינה."
+  },
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: ערך סיבובי ה-hash אינו תקין."
+  },
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Localization key for: אורך המפתח הנגזר מה-hash אינו תקין."
+  },
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: זמן היצירה אינו תקין."
+  },
+  "@authErrorInternalError": {
+    "description": "Localization key for: אירעה שגיאה פנימית. אנא נסה שוב."
+  },
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: עלות הזיכרון של ה-hash אינה תקינה."
+  },
+  "@authErrorUnknown": {
+    "description": "Localization key for: אירעה שגיאת אימות לא ידועה."
+  },
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: סופקו טענות שמורות."
+  },
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: אלגוריתם hash חסר."
+  },
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: אנא הכנס מספר טלפון."
+  },
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: פרויקט Firebase לא נמצא."
+  },
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: מזהה האימות אינו תקין."
+  },
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: עוגיית הסשן בוטלה."
+  },
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: עוגיית הסשן פגה תוקף."
+  },
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: ה-UID כבר בשימוש."
+  },
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: ה-UID אינו תקין."
+  },
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: שם חבילת Android חסר."
+  },
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Localization key for: משך עוגיית הסשן אינו תקין."
+  },
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: אפליקציה זו אינה מורשית להשתמש ב-Firebase Authentication."
+  }
 }

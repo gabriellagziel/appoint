@@ -1,785 +1,4569 @@
 {
   "@@locale": "bs",
-  "@about": {
-    "description": "About navigation label"
-  },
-  "@accept": {
-    "description": "Description"
-  },
-  "@accessRevokedSuccessfully": {
-    "description": "Description"
-  },
-  "@add": {
-    "description": "Description"
-  },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
-  "@appTitle": {
-    "description": "Description"
-  },
-  "@back": {
-    "description": "Description"
-  },
-  "@cancel": {
-    "description": "cancel description"
-  },
-  "@cancelInvite": {
-    "description": "Description"
-  },
-  "@cancelInviteConfirmation": {
-    "description": "Description"
-  },
-  "@checkingPermissions": {
-    "description": "checkingPermissions description"
-  },
-  "@choose": {
-    "description": "Description"
-  },
-  "@clicked": {
-    "description": "clicked description"
-  },
-  "@clientScreenTBD": {
-    "description": "Description"
-  },
-  "@close": {
-    "description": "close description"
-  },
-  "@composeBroadcastMessage": {
-    "description": "composeBroadcastMessage description"
-  },
-  "@confirm": {
-    "description": "Description"
-  },
-  "@confirmPassword": {
-    "description": "Description"
-  },
-  "@connectedChildren": {
-    "description": "Description"
-  },
-  "@content": {
-    "description": "content description"
-  },
-  "@copy": {
-    "description": "Description"
-  },
-  "@createGame": {
-    "description": "Description"
-  },
-  "@createLiveSession": {
-    "description": "Description"
-  },
-  "@createNew": {
-    "description": "Description"
-  },
-  "@createVirtualSession": {
-    "description": "Description"
-  },
-  "@createYourFirstGame": {
-    "description": "Description"
-  },
-  "@createYourFirstSession": {
-    "description": "Description"
-  },
-  "@created": {
-    "description": "created description"
-  },
-  "@customizeMessage": {
-    "description": "Description"
-  },
-  "@cut": {
-    "description": "Description"
-  },
-  "@dashboard": {
-    "description": "Description"
-  },
-  "@decline": {
-    "description": "Description"
-  },
-  "@defaultShareMessage": {
-    "description": "Description"
-  },
-  "@delete": {
-    "description": "Description"
-  },
-  "@details": {
-    "description": "details description"
-  },
-  "@done": {
-    "description": "Description"
-  },
-  "@download": {
-    "description": "Description"
-  },
-  "@edit": {
-    "description": "Description"
-  },
-  "@email": {
-    "description": "Description"
-  },
-  "@enableNotifications": {
-    "description": "Description"
-  },
-  "@enterGroupName": {
-    "description": "Description"
-  },
-  "@error": {
-    "description": "Description"
-  },
-  "@errorCheckingPermissions": {
-    "description": "errorCheckingPermissions description"
-  },
-  "@errorLoadingFamilyLinks": {
-    "description": "Description"
-  },
-  "@errorLoadingInvites": {
-    "description": "Description"
-  },
-  "@errorLoadingPrivacyRequests": {
-    "description": "errorLoadingPrivacyRequests description"
-  },
-  "@errorLoadingProfile": {
-    "description": "Description"
-  },
-  "@errorSavingMessage": {
-    "description": "errorSavingMessage description"
-  },
-  "@errorSendingMessage": {
-    "description": "errorSendingMessage description"
-  },
-  "@failedToActionPrivacyRequest": {
-    "description": "failedToActionPrivacyRequest description"
-  },
-  "@failedToCancelInvite": {
-    "description": "Description"
-  },
+  "failedToResendOtp": "[BS] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "@failedToRevokeAccess": {
-    "description": "Description"
+  "targetingFilters": "[BS] Targeting Filters",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
   },
-  "@familyDashboard": {
-    "description": "Description"
-  },
-  "@familyMembers": {
-    "description": "Description"
-  },
-  "@fcmToken": {
-    "description": "Description"
-  },
-  "@forgotPassword": {
-    "description": "Description"
-  },
-  "@groupNameOptional": {
-    "description": "Description"
-  },
-  "@home": {
-    "description": "Description"
-  },
-  "@invite": {
-    "description": "Description"
-  },
-  "@inviteCancelledSuccessfully": {
-    "description": "Description"
-  },
-  "@inviteDetail": {
-    "description": "Description"
-  },
-  "@invited": {
-    "description": "Description"
-  },
-  "@knownGroupDetected": {
-    "description": "Description"
-  },
-  "@link": {
-    "description": "link description"
-  },
-  "@loading": {
-    "description": "Description"
-  },
-  "@login": {
-    "description": "Description"
-  },
-  "@logout": {
-    "description": "Description"
-  },
-  "@managePermissions": {
-    "description": "Description"
-  },
-  "@mediaOptional": {
-    "description": "mediaOptional description"
-  },
-  "@meetingReadyMessage": {
-    "description": "Description"
-  },
-  "@meetingSharedSuccessfully": {
-    "description": "Description"
-  },
-  "@messageSavedSuccessfully": {
-    "description": "messageSavedSuccessfully description"
-  },
-  "@messageSentSuccessfully": {
-    "description": "messageSentSuccessfully description"
-  },
-  "@myInvites": {
-    "description": "Description"
-  },
-  "@myProfile": {
-    "description": "Description"
-  },
-  "@next": {
-    "description": "Description"
-  },
-  "@no": {
-    "description": "Description"
-  },
-  "@noBroadcastMessages": {
-    "description": "noBroadcastMessages description"
+  "contentDetail": "Detalji sadržaja",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
   },
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "@noGamesYet": {
-    "description": "Description"
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
   },
-  "@noInvites": {
-    "description": "Description"
-  },
-  "@noPermissionForBroadcast": {
-    "description": "noPermissionForBroadcast description"
-  },
-  "@noProfileFound": {
-    "description": "Description"
-  },
-  "@noResults": {
-    "description": "Description"
-  },
-  "@noSessionsYet": {
-    "description": "Description"
-  },
-  "@notificationSettings": {
-    "description": "Description"
-  },
-  "@notifications": {
-    "description": "Description"
-  },
-  "@ok": {
-    "description": "Description"
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
   },
   "@opened": {
     "description": "opened description"
   },
-  "@otpResentSuccessfully": {
+  "cancelInviteConfirmation": "[BS] Are you sure you want to cancel this invite?",
+  "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "@participants": {
+  "typeOpenCall": "Tip: Otvoreni poziv",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "done": "[BS] Done",
+  "@done": {
     "description": "Description"
   },
-  "@password": {
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "authErrorMissingContinueUri": "Nedostaje nastavlja URL.",
+  "createLiveSession": "[BS] Create Live Session",
+  "@createLiveSession": {
     "description": "Description"
   },
-  "@paste": {
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "openingCustomerPortal": "openingCustomerPortal (TRANSLATE)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "forgotPassword": "[BS] Forgot Password?",
+  "@forgotPassword": {
     "description": "Description"
   },
-  "@pendingInvites": {
+  "updateYourBusinessInformation": "Ažurirajte svoje poslovne informacije",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "promoAppliedYourNextBillIsFree": "PROMO PRIJAVA! ",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "@back": {
     "description": "Description"
   },
-  "@pickImage": {
-    "description": "pickImage description"
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
   },
-  "@pickVideo": {
-    "description": "pickVideo description"
-  },
-  "@playtimeAdminPanelTitle": {
+  "@enterGroupName": {
     "description": "Description"
   },
-  "@playtimeApprove": {
-    "description": "Description"
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
   },
-  "@playtimeChooseFriends": {
-    "description": "Description"
-  },
-  "@playtimeChooseGame": {
-    "description": "Description"
-  },
-  "@playtimeChooseTime": {
-    "description": "Description"
-  },
-  "@playtimeCreate": {
-    "description": "Description"
-  },
-  "@playtimeCreateSession": {
-    "description": "Description"
-  },
-  "@playtimeDescription": {
-    "description": "Description"
-  },
-  "@playtimeEnterGameName": {
-    "description": "Description"
-  },
-  "@playtimeGameApproved": {
-    "description": "Description"
-  },
-  "@playtimeGameDeleted": {
-    "description": "Description"
-  },
-  "@playtimeGameRejected": {
-    "description": "Description"
-  },
-  "@playtimeHub": {
-    "description": "Description"
-  },
-  "@playtimeLandingChooseMode": {
-    "description": "Description"
-  },
-  "@playtimeLive": {
-    "description": "Description"
-  },
-  "@playtimeLiveScheduled": {
-    "description": "Description"
-  },
-  "@playtimeModeLive": {
-    "description": "Description"
-  },
-  "@playtimeModeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeNoSessions": {
-    "description": "Description"
-  },
-  "@playtimeParentDashboardTitle": {
-    "description": "Description"
-  },
-  "@playtimeReject": {
-    "description": "Description"
-  },
-  "@playtimeTitle": {
-    "description": "Description"
-  },
-  "@playtimeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeVirtualStarted": {
-    "description": "Description"
-  },
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Description"
-  },
-  "@pollOptions": {
-    "description": "pollOptions description"
-  },
-  "@previous": {
-    "description": "Description"
-  },
-  "@profile": {
-    "description": "Description"
-  },
-  "@quickActions": {
-    "description": "Description"
-  },
-  "@recentGames": {
-    "description": "Description"
-  },
-  "@recipients": {
-    "description": "recipients description"
-  },
-  "@redo": {
-    "description": "Description"
-  },
-  "@refresh": {
-    "description": "Description"
-  },
-  "@removeChild": {
-    "description": "Description"
-  },
-  "@requestType": {
-    "description": "requestType description"
-  },
-  "@retry": {
-    "description": "Description"
-  },
-  "@revoke": {
-    "description": "Description"
-  },
-  "@revokeAccess": {
-    "description": "Description"
-  },
-  "@revokeAccessConfirmation": {
-    "description": "Description"
-  },
-  "@save": {
-    "description": "save description"
-  },
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
-  "@scheduleForLater": {
-    "description": "scheduleForLater description"
-  },
-  "@scheduleMessage": {
-    "description": "Description"
-  },
-  "@scheduled": {
-    "description": "scheduled description"
-  },
-  "@scheduledFor": {
-    "description": "Description"
-  },
-  "@scheduling": {
-    "description": "scheduling description"
-  },
-  "@search": {
-    "description": "Description"
-  },
-  "@select": {
-    "description": "Description"
-  },
-  "@sendNow": {
-    "description": "sendNow description"
-  },
-  "@settings": {
-    "description": "Description"
-  },
-  "@share": {
-    "description": "Description"
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
   },
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "@signUp": {
-    "description": "Description"
-  },
-  "@staffScreenTBD": {
-    "description": "Description"
-  },
-  "@status": {
-    "description": "status description"
-  },
-  "@statusColon": {
-    "description": "statusColon description"
-  },
-  "@success": {
-    "description": "Description"
-  },
-  "@targetingFilters": {
-    "description": "targetingFilters description"
-  },
-  "@type": {
-    "description": "type description"
-  },
-  "@undo": {
-    "description": "Description"
-  },
-  "@upcomingSessions": {
-    "description": "Description"
-  },
-  "@upload": {
-    "description": "Description"
-  },
-  "@viewAll": {
-    "description": "Description"
-  },
-  "@welcome": {
-    "description": "Description"
-  },
-  "@welcomeToPlaytime": {
-    "description": "Description"
-  },
-  "@yes": {
-    "description": "yes description"
-  },
-  "@yesCancel": {
-    "description": "Description"
-  },
-  "about": "[BS] About",
-  "accept": "[BS] Accept",
-  "accessRevokedSuccessfully": "[BS] Access revoked successfully",
-  "add": "[BS] Add",
-  "adminBroadcast": "[BS] Admin Broadcast",
-  "adminScreenTBD": "[BS] Admin screen coming soon",
-  "appTitle": "[BS] APP-OINT",
-  "back": "[BS] Back",
-  "cancel": "[BS] Cancel",
-  "cancelInvite": "[BS] Cancel Invite",
-  "cancelInviteConfirmation": "[BS] Are you sure you want to cancel this invite?",
-  "checkingPermissions": "[BS] Checking permissions...",
-  "choose": "[BS] Choose",
-  "clicked": "[BS] Clicked",
-  "clientScreenTBD": "[BS] Client screen coming soon",
-  "close": "[BS] Close",
-  "composeBroadcastMessage": "[BS] Compose Broadcast Message",
-  "confirm": "[BS] Confirm",
-  "confirmPassword": "[BS] Confirm Password",
-  "connectedChildren": "[BS] Connected Children",
-  "content": "[BS] Content",
-  "copy": "[BS] Copy",
-  "createGame": "[BS] Create Game",
-  "createLiveSession": "[BS] Create Live Session",
   "createNew": "[BS] Create New",
-  "createVirtualSession": "[BS] Create Virtual Session",
-  "createYourFirstGame": "[BS] Create your first game",
-  "createYourFirstSession": "[BS] Create your first session",
-  "created": "[BS] Created",
-  "customizeMessage": "[BS] Customize Message",
-  "cut": "[BS] Cut",
-  "dashboard": "[BS] Dashboard",
-  "decline": "[BS] Decline",
-  "defaultShareMessage": "[BS] Let's meet via Appoint!",
-  "delete": "[BS] Delete",
-  "details": "[BS] Details",
-  "done": "[BS] Done",
-  "download": "[BS] Download",
-  "edit": "[BS] Edit",
-  "email": "[BS] Email",
-  "enableNotifications": "[BS] Enable Notifications",
-  "enterGroupName": "[BS] Enter group name",
-  "error": "[BS] Error",
-  "errorCheckingPermissions": "[BS] Error checking permissions",
-  "errorLoadingFamilyLinks": "[BS] Error loading family links",
-  "errorLoadingInvites": "[BS] Error loading invites",
-  "errorLoadingPrivacyRequests": "[BS] Error loading privacy requests",
-  "errorLoadingProfile": "[BS] Error loading profile",
-  "errorSavingMessage": "[BS] Error saving message",
-  "errorSendingMessage": "[BS] Error sending message",
-  "failedToActionPrivacyRequest": "[BS] Failed to action privacy request",
+  "@createNew": {
+    "description": "Description"
+  },
+  "@myInvites": {
+    "description": "Description"
+  },
+  "referralCode": "Kod preporuke",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "activateBusinessProfile": "Aktivirajte poslovni profil",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
   "failedToCancelInvite": "[BS] Failed to cancel invite",
-  "failedToResendOtp": "[BS] Failed to resend OTP",
-  "failedToRevokeAccess": "[BS] Failed to revoke access",
-  "familyDashboard": "[BS] Family Dashboard",
-  "familyMembers": "[BS] Family Members",
-  "fcmToken": "[BS] FCM Token",
-  "forgotPassword": "[BS] Forgot Password?",
-  "groupNameOptional": "[BS] Group Name (Optional)",
-  "home": "[BS] Home",
-  "invite": "[BS] Invite",
-  "inviteCancelledSuccessfully": "[BS] Invite cancelled successfully",
-  "inviteDetail": "[BS] Invite Details",
-  "invited": "[BS] Invited",
-  "knownGroupDetected": "[BS] Known group detected",
-  "link": "[BS] Link",
-  "loading": "[BS] Loading...",
-  "login": "[BS] Login",
-  "logout": "[BS] Logout",
-  "managePermissions": "[BS] Manage Permissions",
-  "mediaOptional": "[BS] Media (Optional)",
-  "meetingReadyMessage": "[BS] Your meeting is ready! Join now",
-  "meetingSharedSuccessfully": "[BS] Meeting shared successfully",
-  "messageSavedSuccessfully": "[BS] Message saved successfully",
-  "messageSentSuccessfully": "[BS] Message sent successfully",
-  "myInvites": "[BS] My Invites",
-  "myProfile": "[BS] My Profile",
-  "next": "[BS] Next",
-  "no": "[BS] No",
-  "noBroadcastMessages": "[BS] No messages yet",
-  "noFamilyMembersYet": "[BS] No family members yet",
-  "noGamesYet": "[BS] No games yet",
-  "noInvites": "[BS] No invites",
-  "noPermissionForBroadcast": "[BS] No permission for broadcast",
-  "noProfileFound": "[BS] No profile found",
-  "noResults": "[BS] No results found",
-  "noSessionsYet": "[BS] No sessions yet",
-  "notificationSettings": "[BS] Notification Settings",
-  "notifications": "[BS] Notifications",
-  "ok": "[BS] OK",
-  "opened": "[BS] Opened",
-  "otpResentSuccessfully": "[BS] OTP resent successfully",
-  "participants": "[BS] Participants",
-  "password": "[BS] Password",
-  "paste": "[BS] Paste",
-  "pendingInvites": "[BS] Pending Invites",
-  "pickImage": "[BS] Pick Image",
-  "pickVideo": "[BS] Pick Video",
-  "playtimeAdminPanelTitle": "[BS] Playtime Games – Admin",
-  "playtimeApprove": "[BS] Approve",
-  "playtimeChooseFriends": "[BS] Choose friends to invite",
-  "playtimeChooseGame": "[BS] Choose a game",
-  "playtimeChooseTime": "[BS] Choose a time",
-  "playtimeCreate": "[BS] Create",
-  "playtimeCreateSession": "[BS] Create a Playtime Session",
-  "playtimeDescription": "[BS] Enjoy live or virtual games with your friends!",
-  "playtimeEnterGameName": "[BS] Enter game name",
-  "playtimeGameApproved": "[BS] Game approved",
-  "playtimeGameDeleted": "[BS] Game deleted",
-  "playtimeGameRejected": "[BS] Game rejected",
-  "playtimeHub": "[BS] Playtime Hub",
-  "playtimeLandingChooseMode": "[BS] Choose your play mode:",
-  "playtimeLive": "[BS] Live Play",
-  "playtimeLiveScheduled": "[BS] Live playtime scheduled!",
-  "playtimeModeLive": "[BS] Live Play",
-  "playtimeModeVirtual": "[BS] Virtual Play",
-  "playtimeNoSessions": "[BS] No playtime sessions found.",
-  "playtimeParentDashboardTitle": "[BS] Playtime Dashboard",
-  "playtimeReject": "[BS] Reject",
-  "playtimeTitle": "[BS] Playtime",
-  "playtimeVirtual": "[BS] Virtual Play",
-  "playtimeVirtualStarted": "[BS] Virtual playtime started!",
-  "pleaseLoginForFamilyFeatures": "[BS] Please login to access family features",
-  "pleaseLoginToViewProfile": "[BS] Please log in to view your profile.",
-  "pollOptions": "[BS] Poll Options",
-  "previous": "[BS] Previous",
-  "profile": "[BS] Profile",
-  "quickActions": "[BS] Quick Actions",
-  "recentGames": "[BS] Recent Games",
-  "recipients": "[BS] Recipients",
-  "redo": "[BS] Redo",
-  "refresh": "[BS] Refresh",
-  "removeChild": "[BS] Remove Child",
-  "requestType": "[BS] Request Type",
-  "retry": "[BS] Retry",
-  "revoke": "[BS] Revoke",
-  "revokeAccess": "[BS] Revoke Access",
-  "revokeAccessConfirmation": "[BS] Are you sure you want to revoke access?",
-  "save": "[BS] Save",
-  "saveGroupForRecognition": "[BS] Save Group for Recognition",
-  "scheduleForLater": "[BS] Schedule for Later",
-  "scheduleMessage": "[BS] Schedule Message",
-  "scheduled": "[BS] Scheduled",
-  "scheduledFor": "[BS] Scheduled for",
-  "scheduling": "[BS] Scheduling",
-  "search": "[BS] Search",
-  "select": "[BS] Select",
-  "sendNow": "[BS] Send Now",
-  "settings": "[BS] Settings",
-  "share": "[BS] Share",
-  "shareOnWhatsApp": "[BS] Share on WhatsApp",
-  "signUp": "[BS] Sign Up",
-  "staffScreenTBD": "[BS] Staff screen coming soon",
-  "status": "[BS] Status",
-  "statusColon": "[BS] Status:",
-  "success": "[BS] Success",
-  "targetingFilters": "[BS] Targeting Filters",
-  "type": "[BS] Type",
-  "undo": "[BS] Undo",
-  "upcomingSessions": "[BS] Upcoming Sessions",
-  "upload": "[BS] Upload",
-  "viewAll": "[BS] View All",
-  "welcome": "[BS] Welcome",
-  "welcomeToPlaytime": "[BS] Welcome to Playtime",
-  "yes": "[BS] Yes",
-  "yesCancel": "[BS] Yes, Cancel",
-  "errorEstimatingRecipients": "errorEstimatingRecipients (TRANSLATE)",
-  "@errorEstimatingRecipients": {
-    "description": "errorEstimatingRecipients description"
+  "@failedToCancelInvite": {
+    "description": "Description"
   },
-  "errorPickingImage": "errorPickingImage (TRANSLATE)",
-  "@errorPickingImage": {
-    "description": "errorPickingImage description"
+  "@adminScreenTBD": {
+    "description": "Description"
   },
-  "errorPickingVideo": "errorPickingVideo (TRANSLATE)",
-  "@errorPickingVideo": {
-    "description": "errorPickingVideo description"
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
   "@organizations": {
     "description": "organizations description"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
-  "@noOrganizations": {
-    "description": "noOrganizations description"
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
-  "@errorLoadingOrganizations": {
-    "description": "errorLoadingOrganizations description"
+  "@ok": {
+    "description": "Description"
   },
-  "members": "members (TRANSLATE)",
-  "@members": {
-    "description": "members description"
+  "surveyScore": "Rezultat ankete",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
   },
-  "users": "users (TRANSLATE)",
-  "@users": {
-    "description": "users description"
-  },
-  "noUsers": "noUsers (TRANSLATE)",
-  "@noUsers": {
-    "description": "noUsers description"
-  },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
-  "@errorLoadingUsers": {
-    "description": "errorLoadingUsers description"
+  "playtimeCreate": "[BS] Create",
+  "@playtimeCreate": {
+    "description": "Description"
   },
   "changeRole": "changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "totalAppointments": "totalAppointments (TRANSLATE)",
-  "@totalAppointments": {
-    "description": "totalAppointments description"
+  "parentalControls": "Roditeljska kontrola",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
   },
-  "completedAppointments": "completedAppointments (TRANSLATE)",
-  "@completedAppointments": {
-    "description": "completedAppointments description"
+  "noTimeSeriesDataAvailable": "Nema dostupnih podataka o vremenskoj seriji",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
   },
-  "revenue": "revenue (TRANSLATE)",
-  "@revenue": {
-    "description": "revenue description"
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
   },
-  "errorLoadingStats": "errorLoadingStats (TRANSLATE)",
-  "@errorLoadingStats": {
-    "description": "errorLoadingStats description"
+  "emailProfileemail": "Email: {profil_email}",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: ${profile.email}",
+    "placeholders": {
+      "profile_email": {},
+      "payload_title": {}
+    }
   },
-  "appointment": "appointment (TRANSLATE)",
-  "@appointment": {
-    "description": "appointment description"
+  "@goBack": {
+    "description": "Localization key for: Go Back"
   },
-  "from": "from (TRANSLATE)",
-  "@from": {
-    "description": "from description"
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: ${log.deviceInfo}",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
   },
-  "phone": "phone (TRANSLATE)",
-  "@phone": {
-    "description": "phone description"
+  "noSlots": "Nema utora",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
   },
-  "noRouteDefined": "noRouteDefined (TRANSLATE)",
-  "@noRouteDefined": {
-    "description": "noRouteDefined description"
+  "profileSaved": "Profil sačuvan!",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
-  "@meetingDetails": {
-    "description": "meetingDetails description"
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
   },
-  "meetingId": "meetingId (TRANSLATE)",
-  "@meetingId": {
-    "description": "meetingId description"
+  "authErrorInvalidMultiFactorSession": "Nevažeća sesija sa više faktora.",
+  "invoices": "invoices (TRANSLATE)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
   },
-  "creator": "creator (TRANSLATE)",
-  "@creator": {
-    "description": "creator description"
+  "allowPlaytime": "Dopusti vrijeme za reprodukciju",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
   },
-  "context": "context (TRANSLATE)",
-  "@context": {
-    "description": "context description"
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
   },
-  "group": "group (TRANSLATE)",
-  "@group": {
-    "description": "group description"
+  "sendInvite": "Pošaljite pozivnicu",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "studioProfile": "Profil studio",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "analytics": "Analitika",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "mySchedule": "Moj raspored",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "privacyRequestSent": "privacyRequestSent (TRANSLATE)",
-  "@privacyRequestSent": {
-    "description": "privacyRequestSent description"
+  "@playtimeGameApproved": {
+    "description": "Description"
   },
-  "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
-  "@failedToSendPrivacyRequest": {
-    "description": "failedToSendPrivacyRequest description"
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
   },
-  "adminMetrics": "Admin Metrics",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "error": "[BS] Error",
+  "@error": {
+    "description": "Description"
+  },
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "authErrorSessionExpired": "Vaša sesija je istekla. ",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "content": "[BS] Content",
+  "@content": {
+    "description": "content description"
+  },
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "keepSubscription": "Držite pretplatu",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "deleteSurvey": "Izbriši anketu",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "noRouteDefinedForStateuripath": "Nijedna ruta nije definirana za {state_uri_path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for ${state.uri.path}",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "subscriptionActivatedSuccessfully": "Pretplata je uspješno aktivirana!",
+  "@subscriptionActivatedSuccessfully": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "@status": {
+    "description": "status description"
+  },
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "@knownGroupDetected": {
+    "description": "Description"
+  },
+  "failedToCancelSubscription": "Otkazivanje pretplate nije uspjelo",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "deleteBackground": "deleteBackground (TRANSLATE)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createGame1": "Stvoriti igru",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "noAmbassadorDataAvailable": "Nema dostupnih podataka ambasadora",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "staffScreenTBD": "[BS] Staff screen coming soon",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "notifications": "[BS] Notifications",
+  "@notifications": {
+    "description": "Description"
+  },
+  "editProvider": "editProvider (TRANSLATE)",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "errorLoadingPrivacyRequests": "[BS] Error loading privacy requests",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "authErrorInvalidProviderId": "ID pružatelja usluga nije važeći.",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: ${log.targetType}: ${log.targetId}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_status": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "phoneBooking": "Telefonski rezervacija",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: ${org.memberIds.length} members",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "authErrorUnauthorizedContinueUri": "Domena Nastavna URL-a nije bijela.",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "slotDeletedSuccessfully": "Utor je uspešno izbrisan",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "authErrorInvalidCredential": "Nevažeće vjerodajnice. ",
+  "@authErrorInvalidCredential": {
+    "description": "Firebase Auth invalid-credential error message"
+  },
+  "viewAll": "[BS] View All",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: ${selection.staff.displayName}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "parentDashboard": "Matična nadzorna ploča",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "reject": "Odbiti",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "appointmentInviteappointmentid": "Imenovanje: {invent_appointment}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: ${invite.appointmentId}",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "authErrorIdTokenRevoked": "Token ID-a je opozvan.",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "goToDashboard": "Idi na nadzornu ploču",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: ${link.childId.substring(0, 8)}...",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "monetizationSettingsWillBeImplementedHere": "monetizationSettingsWillBeImplementedHere (TRANSLATE)",
+  "@monetizationSettingsWillBeImplementedHere": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "checkingPermissions": "[BS] Checking permissions...",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "pleaseLogInToViewYourProfile": "Prijavite se da biste vidjeli svoj profil.",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "businessDashboardEntryScreenComingSoon": "Ekran za ekranu za poslovne nadzornice - uskoro dolazi",
+  "@businessDashboardEntryScreenComingSoon": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "addAvailability": "Dodajte dostupnost",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "choose": "[BS] Choose",
+  "@choose": {
+    "description": "Description"
+  },
+  "@areYouSureYouWantToDeleteThisProvider": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "@youWillReceiveAConfirmationEmailShortly": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "invited": "[BS] Invited",
+  "@invited": {
+    "description": "Description"
+  },
+  "refresh1": "Osvježiti",
+  "requestType": "[BS] Request Type",
+  "@requestType": {
+    "description": "requestType description"
+  },
+  "subscribe": "subscribe (TRANSLATE)",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "authErrorOperationNotAllowed": "Ova metoda prijave nije omogućena. ",
+  "@authErrorOperationNotAllowed": {
+    "description": "Firebase Auth operation-not-allowed error message"
+  },
+  "errorSavingSettingsE": "Postavke uštede pogrešaka: $ e",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "@no": {
+    "description": "Description"
+  },
+  "users1": "Korisnici",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: ${log.severity.name}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@appTitle": {
+    "description": "Description"
+  },
+  "cancel": "[BS] Cancel",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "@ekeyEvalue": {
+    "description": "Localization key for: ${e.key}: ${e.value}",
+    "placeholders": {
+      "event_startTime": {},
+      "snapshot_error": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_userEmail": {},
+      "appointment_status_name": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {},
+      "e_value": {}
+    }
+  },
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "deleteAccount": "Izbriši račun",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "registrationFailedEtostring": "Registracija nije uspjela: {e_tostring}",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: ${e.toString()}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "shareLink": "Podijeli link",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "cut": "[BS] Cut",
+  "@cut": {
+    "description": "Description"
+  },
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "noUpcomingBookings": "Nema nadolazećih rezervacija",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "@businessAppointmentsEntryScreenComingSoon": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "errorSavingConfigurationE": "Konfiguracija uštede pogreške: $ E",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "selectLocation": "Odaberite lokaciju",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "clearFilters": "Clear Filteri",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "authErrorInvalidContinueUri": "Nastavak URL nije važeći.",
+  "@createVirtualSession": {
+    "description": "Description"
+  },
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "failedToOpenCustomerPortalE": "failedToOpenCustomerPortalE (TRANSLATE)",
+  "upcomingSessions": "[BS] Upcoming Sessions",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "surveyManagement": "Anketno upravljanje",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "receiveBookingNotificationsViaSms": "receiveBookingNotificationsViaSms (TRANSLATE)",
+  "@receiveBookingNotificationsViaSms": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "autoconfirmBookings": "Automatsko potvrđivanje rezervacija",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "@businessCompletionScreenComingSoon": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "businessWelcomeScreenComingSoon": "businessWelcomeScreenComingSoon (TRANSLATE)",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "authErrorInvalidProviderData": "Podaci davatelja usluga nisu valjani.",
+  "readOurPrivacyPolicy": "Pročitajte našu politiku privatnosti",
+  "noAvailableSlots": "Nema dostupnih slotova",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "@businessVerificationScreenComingSoon": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "@dateAppointmentscheduledattostring": {
+    "description": "Localization key for: Date: ${appointment.scheduledAt.toString()}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "setup": "Podešavanje",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "@authErrorTooManyRequests": {
+    "description": "Firebase Auth too-many-requests error message"
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "Prekoračen je maksimalni broj drugog faktora.",
+  "errorDetailsLogerrortype": "Detalji o pogrešci: {log_errortype}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: ${log.errorType}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "errorLoadingEvents": "Pogreška prilikom učitavanja događaja",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Firebase Auth credential-already-in-use error message"
+  },
   "@adminMetrics": {
     "description": "Description"
   },
-  "overview": "Overview",
-  "@overview": {
+  "editSurveyComingSoon": "Uređivanje ankete - uskoro dolazi!",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "businessPhoneBookingEntryScreenComingSoon": "Zaslon za rezervaciju poslovnog telefona - uskoro dolazi",
+  "@businessPhoneBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "authErrorInvalidPageToken": "Token stranica nije važeći.",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: ${appt.id}",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "schedulerScreen": "Zaslon za planiranje",
+  "authErrorWrongPassword": "Netačna lozinka. ",
+  "@authErrorWrongPassword": {
+    "description": "Firebase Auth wrong-password error message"
+  },
+  "pickImage": "[BS] Pick Image",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "@meetingReadyMessage": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "ambassadorOnboarding": "Ambasador na brodu",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "pay": "Platiti",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "enterOtp": "Unesite OTP",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "revokeConsent": "Odvikujte saglasnost",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "makeGamePublic": "Učinite igru ​​javnosti",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "@clientScreenTBD": {
+    "description": "Description"
+  },
+  "skip": "skip (TRANSLATE)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "failedToSendInvitationE": "Pošaljite poziv: $ e",
+  "authErrorMissingVerificationCode": "Unesite potvrdni kod.",
+  "noFamilyMembersYet": "[BS] No family members yet",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: ${snapshot.error}",
+    "placeholders": {
+      "event_startTime": {},
+      "snapshot_error": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "errorLoadingProfile": "[BS] Error loading profile",
+  "@errorLoadingProfile": {
+    "description": "Description"
+  },
+  "authErrorInvalidDisplayName": "Naziv ekrana nije važeći.",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: ${profileAsync.phone}",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "booking": "Rezervacija",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "linkCopiedToClipboard": "Veza kopirana u međuspremnik!",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "settingsSavedSuccessfully": "Postavke uspješno sačuvane!",
+  "playtimeParentDashboardTitle": "[BS] Playtime Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "noResults": "[BS] No results found",
+  "@noResults": {
+    "description": "Description"
+  },
+  "password": "[BS] Password",
+  "@password": {
+    "description": "Description"
+  },
+  "backgroundApproved": "Pozadina odobrena!",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "sessionApproved": "Odobrena sesija!",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "@durationDurationinminutes0Minutes": {
+    "description": "Localization key for: Duration: ${duration?.inMinutes ?? 0} minutes",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "cancelSubscription": "Otkaži pretplatu",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "@socialAccountConflictTitle": {
+    "description": "Title for social account conflict dialog"
+  },
+  "@next": {
+    "description": "Description"
+  },
+  "quickActions": "[BS] Quick Actions",
+  "@quickActions": {
+    "description": "Description"
+  },
+  "inviteDetail": "[BS] Invite Details",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "errorLoadingBookingsSnapshoterror": "errorLoadingBookingsSnapshoterror (TRANSLATE)",
+  "@errorLoadingBookingsSnapshoterror": {
+    "description": "Localization key for: Error loading bookings: ${snapshot.error}",
+    "placeholders": {
+      "e_toString": {},
+      "staffId_Not_selected": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "tier_toUpperCase": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "index_1": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "errorE": "GREŠKA: $ E",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "authErrorMaximumUserCountExceeded": "Prekoračen je maksimalni broj uvoza korisnika.",
+  "clientUpdatedSuccessfully": "Klijent je uspješno ažuriran!",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "@dashboard": {
+    "description": "Description"
+  },
+  "fcmToken": "[BS] FCM Token",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "select": "[BS] Select",
+  "@select": {
+    "description": "Description"
+  },
+  "referrals": "Preporuke",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "delete1": "Izbrisati",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "@ud83dudcc5Bookingdatetimetolocal": {
+    "description": "Localization key for: \\uD83D\\uDCC5 ${booking.dateTime.toLocal()}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "readOnly": "Čitajte samo",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "verification": "Verifikacija",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "@noInvoicesFoundCreateYourFirstInvoice": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "businessSubscription": "Poslovna pretplata",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "changePlan": "Promjena plana",
+  "managePermissions": "[BS] Manage Permissions",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "option": "option (TRANSLATE)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "privacyPolicy": "Politika privatnosti",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "appVersionLogappversion": "Verzija aplikacije: {log_appversion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: ${log.appVersion}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "noEventsScheduledForToday": "Nema zakazanih događaja za danas",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "nameProfilename": "nameProfilename (TRANSLATE)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: ${profile.name}",
+    "placeholders": {
+      "e_toString": {},
+      "staffId_Not_selected": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "tier_toUpperCase": {},
+      "profile_name": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "index_1": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
   "@bookings": {
     "description": "Description"
   },
-  "contentLibrary": "Content Library"
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "severityLogseverityname": "Ozbiljnost: {log_severity_name}",
+  "noEventsScheduledThisMonth": "noEventsScheduledThisMonth (TRANSLATE)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: ${event.startTime} - ${event.endTime}",
+    "placeholders": {
+      "event_startTime": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "playtimeModeVirtual": "[BS] Virtual Play",
+  "@revoke": {
+    "description": "Description"
+  },
+  "share": "[BS] Share",
+  "@share": {
+    "description": "Description"
+  },
+  "editClient": "Uredi klijent",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "responseIndex1": "responseIndex1 (TRANSLATE)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #${index + 1}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "tier_toUpperCase": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "index_1": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "redirectingToStripeCheckoutForProPlan": "Preusmjeravanje na stripe odjave za PRO planu ...",
+  "@redirectingToStripeCheckoutForProPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "@yesCancel": {
+    "description": "Description"
+  },
+  "@adminBroadcast": {
+    "description": "adminBroadcast description"
+  },
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "ambassadorStatusAmbassadorstatus": "Status ambasadora: {ambassador_status}",
+  "@ambassadorStatusAmbassadorstatus": {
+    "description": "Localization key for: Ambassador Status: ${ambassador.status}",
+    "placeholders": {
+      "profile_email": {},
+      "payload_title": {},
+      "c_id": {},
+      "ambassador_status": {}
+    }
+  },
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "authErrorMultiFactorAuthRequired": "Potrebna je višekratna provjera autentičnosti.",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "authErrorUserDisabled": "Ovaj je račun onemogućen. ",
+  "@authErrorUserDisabled": {
+    "description": "Firebase Auth user-disabled error message"
+  },
+  "noGamesYet": "[BS] No games yet",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "meetingDetails": "Detalji o sastanku",
+  "@meetingDetails": {
+    "description": "meetingDetails description"
+  },
+  "invoiceCreatedSuccessfully": "Račun stvoren uspješno!",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "subscribeNow": "Pretplatite se sada",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "adminOverviewGoesHere": "Pregled administratora ide ovde",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "valuetointk": "\\ $ {value_toint} k",
+  "@valuetointk": {
+    "description": "Localization key for: \\$${value.toInt()}K",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "payload_title": {}
+    }
+  },
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "@noSessionsYet": {
+    "description": "Description"
+  },
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: ${log.adminEmail}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "paymentConfirmation": "Potvrda plaćanja",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "decline": "[BS] Decline",
+  "@decline": {
+    "description": "Description"
+  },
+  "scheduledAtScheduledat": "Zakazano na: $ Scheduledat",
+  "accept1": "Prihvatiti",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "syncToOutlook": "Sync u Outlook",
+  "home1": "Dom",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "retry1": "Pokušati",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "loading": "[BS] Loading...",
+  "@loading": {
+    "description": "Description"
+  },
+  "subscriptionManagement": "subscriptionManagement (TRANSLATE)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "syncToGoogle": "Sinkronizirajte Googleu",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "yourUpgradeCodeUpgradecode": "Vaša nadogradnja kod: $ upgradeCode",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: ${payload.title}",
+    "placeholders": {
+      "payload_title": {}
+    }
+  },
+  "playtimeModeLive": "[BS] Live Play",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "subscriptionUnavailable": "Pretplata nedostupna",
+  "chooseYourPlan": "Odaberite svoj plan",
+  "authErrorInvalidPhoneNumber": "Telefonski broj nije važeći.",
+  "supportTicketSubmitted": "Podnesena ulaznica za podršku",
+  "noPermissionForBroadcast": "[BS] No permission for broadcast",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "@settings": {
+    "description": "Description"
+  },
+  "addNewClient": "Dodajte novi klijent",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "@timestamp_formatdatelogtimestamp": {
+    "description": "Localization key for: Timestamp: ${_formatDate(log.timestamp)}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "deleteMessage": "deleteMessage (TRANSLATE)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "close1": "close1 (TRANSLATE)",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "@linkAccounts": {
+    "description": "Button to link social accounts"
+  },
+  "businessBookingEntryScreenComingSoon": "Ekran za ulazak poslovnog rezervacije - uskoro dolazi",
+  "@businessBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "@add": {
+    "description": "Description"
+  },
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "authErrorInvalidVerificationCode": "Kod verifikacije nije važeći.",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "messages": "Poruke",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "phonebasedBookingSystem": "phonebasedBookingSystem (TRANSLATE)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "successfullyRegisteredAsAmbassador": "Uspješno se registrovan kao ambasador!",
+  "@successfullyRegisteredAsAmbassador": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "linkchildidsubstring08": "{link_childid_substring_0_8} ...",
+  "@yourPaymentHasBeenProcessedSuccessfully": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "@businessProfileEntryScreenComingSoon": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "viewResponses": "viewResponses (TRANSLATE)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "authErrorMissingMultiFactorSession": "Nedostaje više faktorskih sesija.",
+  "responseDetail": "Detalji odgovora",
+  "@areYouSureYouWantToDeleteThisAppointment": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "@signInWithExistingMethod": {
+    "description": "Button to sign in with existing method"
+  },
+  "noBroadcastMessages": "[BS] No messages yet",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
+  },
+  "connectToGoogleCalendar": "Povežite se na Google Calendar",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "gameCreatedSuccessfully": "Igra je uspješno stvorena!",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "appointmentApptid": "Imenovanje: {appt_id}",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "manageSubscription": "Upravljanje pretplatom",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "@created": {
+    "description": "created description"
+  },
+  "targetLogtargettypeLogtargetid": "Cilj: {log_targettype} - {log_targedid}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: ${log.targetType} - ${log.targetId}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "localizationContribution": "localizationContribution (TRANSLATE)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "profile": "[BS] Profile",
+  "@profile": {
+    "description": "Description"
+  },
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to ${widget.planName}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: ${args.slot.format(context)}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "sendBookingInvite": "Pošaljite pozivnicu za rezervaciju",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "apply": "apply (TRANSLATE)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "businessOnboarding": "Poslovna na brodu",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: ${p.specialty}\\n${p.contactInfo}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "businessProfileActivatedSuccessfully": "Poslovni profil je uspješno aktiviran!",
+  "@businessProfileActivatedSuccessfully": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "bookingRequest": "Zahtev za rezervaciju",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "gameApprovedSuccessfully": "Igra uspješno odobrena!",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "noChartDataAvailable": "noChartDataAvailable (TRANSLATE)",
+  "pickDate": "Datum izbora",
+  "authErrorInvalidPassword": "Lozinka je nevažeća ili previše slaba.",
+  "adminScreenTBD": "[BS] Admin screen coming soon",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "@playtimeTitle": {
+    "description": "Description"
+  },
+  "pollOptions": "[BS] Poll Options",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "@businessSubscriptionEntryScreenComingSoon": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "@valuetoint": {
+    "description": "Localization key for: ${value.toInt()}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "ud83dudcc5Bookingdatetimetolocal": "\\ ud83d \\ udcc5 {booking_datetime_tolocal}",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "statusAppointmentstatusname": "Status: {Intment_Status_name}",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: ${appointment.status.name}",
+    "placeholders": {
+      "event_startTime": {},
+      "snapshot_error": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "log_userEmail": {},
+      "appointment_status_name": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "authErrorInvalidHashSaltSeparator": "Separator soli hash nije važeći.",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "contentNotFound": "Sadržaj nije pronađen",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pleaseActivateYourBusinessProfileToContinue": "pleaseActivateYourBusinessProfileToContinue (TRANSLATE)",
+  "@pleaseActivateYourBusinessProfileToContinue": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "exportAsCsv": "Izvoz kao CSV",
+  "paste": "[BS] Paste",
+  "@paste": {
+    "description": "Description"
+  },
+  "welcomeToYourStudio": "Dobrodošli u svoj studio",
+  "businessCalendar": "Poslovni kalendar",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "userCid": "Korisnik {c_id}",
+  "@userCid": {
+    "description": "Localization key for: User ${c.id}",
+    "placeholders": {
+      "profile_email": {},
+      "payload_title": {},
+      "c_id": {}
+    }
+  },
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "cancelAppointment": "Otkaži sastanak",
+  "yesCancel": "[BS] Yes, Cancel",
+  "@undo": {
+    "description": "Description"
+  },
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "add1": "Dodavati",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "failedToCreateGameE": "failedToCreateGameE (TRANSLATE)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "deleteFunctionalityComingSoon": "Izbrišite funkcionalnost uskoro!",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "automaticallyConfirmNewBookingRequests": "Automatski potvrdite nove zahtjeve za rezervaciju",
+  "@automaticallyConfirmNewBookingRequests": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "noMediaSelected": "Nije odabrani mediji",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "groupGroupid": "groupGroupid (TRANSLATE)",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentAppointmentid": "Imenovanje {Imenovani ID}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment ${appointment.id}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "businessSignup": "Poslovni pregled",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "errorSavingMessage": "[BS] Error saving message",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "advancedReporting": "• Napredno izvještavanje",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "copiedToClipboard": "Kopirano u međuspremnik",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Firebase Auth network-request-failed error message"
+  },
+  "playtimeDescription": "[BS] Enjoy live or virtual games with your friends!",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "notificationSettings": "[BS] Notification Settings",
+  "@notificationSettings": {
+    "description": "Description"
+  },
+  "authErrorRequiresRecentLogin": "Molimo prijavite se ponovo da biste izvršili ovu operaciju.",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "exportData": "Izvoz podataka",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "gameDeletedSuccessfully": "Igra je uspješno izbrisana!",
+  "authErrorAccountExistsWithDifferentCredential": "Račun već postoji s ovim e-poštom koristeći različitu metodu prijave.",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Firebase Auth account-exists-with-different-credential error message"
+  },
+  "@details": {
+    "description": "details description"
+  },
+  "syncAppointment": "syncAppointment (TRANSLATE)",
+  "type": "[BS] Type",
+  "@type": {
+    "description": "type description"
+  },
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "clearAll": "clearAll (TRANSLATE)",
+  "authErrorInvalidArgument": "Osiguran je nevažeći argument.",
+  "playtimeReject": "[BS] Reject",
+  "@playtimeReject": {
+    "description": "Description"
+  },
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "@settingsDialogWillBeImplementedHere": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "allowOtherUsersToFindAndJoinThisGame": "Dopustite drugim korisnicima da pronađu i pridružuju se ovoj igri",
+  "@allowOtherUsersToFindAndJoinThisGame": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "@continueButton": {
+    "description": "Localization key for: Continue"
+  },
+  "authErrorInvalidLastSignInTime": "Posljednje vrijeme prijave nije važeće.",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "deviceLogdeviceinfo": "Uređaj: {log_deviceinfo}",
+  "noMessagesFound": "noMessagesFound (TRANSLATE)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "onboardingScreen": "Screen",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "authErrorPhoneNumberAlreadyExists": "Ovaj telefonski broj već se koristi.",
+  "areYouSureYouWantToDeleteThisAppointment": "areYouSureYouWantToDeleteThisAppointment (TRANSLATE)",
+  "accept": "[BS] Accept",
+  "@accept": {
+    "description": "Description"
+  },
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Firebase Auth email-already-in-use error message"
+  },
+  "playtimeGameApproved": "[BS] Game approved",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "authErrorInvalidDynamicLinkDomain": "Domena dinamičke veze nije važeća.",
+  "@home": {
+    "description": "Description"
+  },
+  "subscribeToBasic499mo": "Pretplatite se na Basic (4,99 € / MO)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "roomDeletedSuccessfully": "Soba je uspješno izbrisana!",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "childLinkedSuccessfully": "Dijete je uspješno povezano!",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "playtimeChooseFriends": "[BS] Choose friends to invite",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "socialAccountConflictMessage": "Račun sa e-pošte {email} već postoji korištenjem različite metode prijave.Želite li povezati svoje račune?",
+  "@socialAccountConflictMessage": {
+    "description": "Message for social account conflict dialog",
+    "placeholders": {
+      "email": {}
+    }
+  },
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "errorDeletingSlotE": "Brisanje greške utor: $ E",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "deleteGame": "deleteGame (TRANSLATE)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "smsNotifications": "smsNotifications (TRANSLATE)",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "playtimeNoSessions": "[BS] No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: ${args.inviteeId}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@about": {
+    "description": "About navigation label"
+  },
+  "noAppointmentsFound": "Nije pronađen nijedan sastanci.",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "upload1": "Učitaj",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "youWillReceiveAConfirmationEmailShortly": "Uskoro ćete dobiti e-poštu za potvrdu.",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noSessionsYet": "[BS] No sessions yet",
+  "continueButton": "continueButton (TRANSLATE)",
+  "eventstarttimeEventendtime": "{event_starttime} - {event_endtime}",
+  "@businessProvidersEntryScreenComingSoon": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "authErrorMissingOauthClientSecret": "Nedostaje tajna Oauth klijenta.",
+  "contentLibrary": "Biblioteka sadržaja",
+  "@contentLibrary": {},
+  "errorLoadingConfigurationE": "Pogreška prilikom učitavanja konfiguracije: $ E",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "email": "[BS] Email",
+  "@email": {
+    "description": "Description"
+  },
+  "errorLoadingAvailabilityE": "Pogreška prilikom učitavanja dostupnosti: $ E",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "inviteFriends": "Pozovite prijatelje",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "noBookingsFound": "Nisu pronađene rezervacije",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "staffAvailability": "Dostupnost osoblja",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "phoneProfileasyncphone": "Telefon: {profileasync_phone}",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "invited1": "Pozvan",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "pspecialtynpcontactinfo": "{p_specialty} \\ n {p_contactinfo}",
+  "@authErrorInvalidEmail": {
+    "description": "Firebase Auth invalid-email error message"
+  },
+  "authErrorTooManyRequests": "Previše neuspjelih pokušaja. ",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "checkingPermissions1": "Provjera dozvola ...",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: ${ambassador.referrals}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "ambassador_status": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "authErrorInvalidHashParallelization": "Paralelizacija hash-a nije važeća.",
+  "iConsent": "iConsent (TRANSLATE)",
+  "crm": "CRM",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameList": "Lista igra",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "@receiveBookingNotificationsViaEmail": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "scheduledAtArgsscheduledat": "scheduledAtArgsscheduledat (TRANSLATE)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: ${args.scheduledAt}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "signIn": "Prijaviti se",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "@createGame": {
+    "description": "Description"
+  },
+  "@previous": {
+    "description": "Description"
+  },
+  "clientAddedSuccessfully": "Klijent je uspešno dodao!",
+  "noClientsFoundAddYourFirstClient": "noClientsFoundAddYourFirstClient (TRANSLATE)",
+  "@noClientsFoundAddYourFirstClient": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "errorPickingVideoE": "Pogreška u branje videa: $ e",
+  "staffManagementTools": "staffManagementTools (TRANSLATE)",
+  "search": "[BS] Search",
+  "@search": {
+    "description": "Description"
+  },
+  "authErrorMissingVerificationId": "Nedostaje ID verifikacije.",
+  "businessProfileEntryScreenComingSoon": "businessProfileEntryScreenComingSoon (TRANSLATE)",
+  "authErrorSecondFactorAlreadyInUse": "Ovaj drugi faktor se već koristi.",
+  "authErrorInvalidClaims": "Nevažeće prilagođene prilagođene zahtjeve.",
+  "link": "[BS] Link",
+  "@link": {
+    "description": "link description"
+  },
+  "signOut": "signOut (TRANSLATE)",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "businessCompletionScreenComingSoon": "Ekran za završetak poslovanja - uskoro dolazi",
+  "connectedChildren": "[BS] Connected Children",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "authErrorQuotaExceeded": "Prekoračena je SMS kvota za ovaj projekt. ",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "@revenue": {
+    "description": "revenue description"
+  },
+  "deleteAppointment": "Izbriši imenovanje",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toAvailendformatcontext": "Na: {avce_end_format_context}",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: ${avail.end.format(context)}",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "rewards": "Nagrade",
+  "@confirm": {
+    "description": "Description"
+  },
+  "authErrorInvalidHashAlgorithm": "Algoritam hash-a nije važeći.",
+  "areYouSureYouWantToCancelThisAppointment": "Jeste li sigurni da želite otkazati ovaj sastanak?",
+  "@areYouSureYouWantToCancelThisAppointment": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "businessSubscriptionEntryScreenComingSoon": "Ekran za prijavu poslovnog pretplate - uskoro dolazi",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "noNotifications": "Nema obaveštenja",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "authErrorEmailAlreadyInUse": "Račun u ovoj e-pošti već postoji.",
+  "@download": {
+    "description": "Description"
+  },
+  "noInvoicesFoundCreateYourFirstInvoice": "noInvoicesFoundCreateYourFirstInvoice (TRANSLATE)",
+  "groupNameOptional": "[BS] Group Name (Optional)",
+  "@groupNameOptional": {
+    "description": "Description"
+  },
+  "subscribeToPro1499mo": "Pretplatite se na Pro (14,99 € / MO)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "login": "[BS] Login",
+  "@login": {
+    "description": "Description"
+  },
+  "@upload": {
+    "description": "Description"
+  },
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "errorCheckingPermissions": "[BS] Error checking permissions",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
+  },
+  "businessLoginScreenComingSoon": "Ekran za prijavu poslovanja - uskoro dolazi",
+  "readWrite": "Čitaj i pisanje",
+  "manageStaffAvailability": "manageStaffAvailability (TRANSLATE)",
+  "authErrorMissingIosBundleId": "Nedostaje ID paketa iOS-a.",
+  "enableNotifications1": "enableNotifications1 (TRANSLATE)",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "failedToApplyPromoCodeE": "failedToApplyPromoCodeE (TRANSLATE)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "playtimeVirtualStarted": "[BS] Virtual playtime started!",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "playtimeGameRejected": "[BS] Game rejected",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "addProvider": "Dodajte dobavljača",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "ambassadorQuotaDashboard": "Ambasador kvota nadzorna ploča",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "parentsMustApproveBeforeChildrenCanJoin": "Roditelji moraju odobriti prije nego što se djeca mogu pridružiti",
+  "@parentsMustApproveBeforeChildrenCanJoin": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "errorConfirmingPaymentE": "Pogreška prilikom potvrde plaćanja: $ E",
+  "familySupport": "Pomoć porodice",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "enableNotifications": "[BS] Enable Notifications",
+  "noRoomsFoundAddYourFirstRoom": "Nije pronađena nijedna soba. ",
+  "playtimeLandingChooseMode": "[BS] Choose your play mode:",
+  "@playtimeLandingChooseMode": {
+    "description": "Description"
+  },
+  "pickTime": "Vrijeme izbora",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "@noProvidersFoundAddYourFirstProvider": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "next": "[BS] Next",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "loginFailedE": "Prijava nije uspjela: $ e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "deleteAvailability": "Izbrišite dostupnost",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "authErrorInvalidEmail": "Molimo unesite valjanu adresu e-pošte.",
+  "errorLoadingBranchesE": "Pogreška prilikom učitavanja grana: $ E",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "authErrorInvalidHashBlockSize": "Veličina hash bloka nije važeća.",
+  "recentGames": "[BS] Recent Games",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "errorPickingImageE": "Pogreška u branje Slika: $ E",
+  "retry": "[BS] Retry",
+  "@retry": {
+    "description": "Description"
+  },
+  "privacyRequestSentToYourParents": "Zahtev za privatnost poslan roditeljima!",
+  "adminLogadminemail": "Admin: {log_adminemail}",
+  "pleaseSignInToCreateASession": "pleaseSignInToCreateASession (TRANSLATE)",
+  "authErrorUnsupportedFirstFactor": "Nepodržani prvi faktor za više faktorske provjere autentičnosti.",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "inviteeArgsinviteeid": "Pozvatelj: {args_inviteeid}",
+  "menu": "Meni",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "home": "[BS] Home",
+  "registering": "Registriranje ...",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "login1": "login1 (TRANSLATE)",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "messageSavedSuccessfully": "[BS] Message saved successfully",
+  "businessSetupScreenComingSoon": "businessSetupScreenComingSoon (TRANSLATE)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "authErrorInvalidEmailVerified": "Vrijednost provjere e-pošte nije važeća.",
+  "settings": "[BS] Settings",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "errorLoadingSubscriptionError": "errorLoadingSubscriptionError (TRANSLATE)",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "goBack": "Vratiti se",
+  "createYourFirstSession": "[BS] Create your first session",
+  "authErrorInvalidIdToken": "Token ID nije važeći.",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "branchesLengthBranches": "{EnfEres_Length} Podružnice",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: ${_branches.length} branches",
+    "placeholders": {
+      "profile_email": {},
+      "value_toInt": {},
+      "branches_length": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "permissionsFamilylinkchildid": "Dozvole - {porodicalink_childid}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - ${familyLink.childId}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "users": "Korisnici",
+  "@users": {
+    "description": "users description"
+  },
+  "rating": "Rejting",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "admin": "Administrator",
+  "meetingReadyMessage": "[BS] Your meeting is ready! Join now",
+  "timestamp_formatdatelogtimestamp": "Vremenska oznaka: {formatDate_log_timestamp}",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "invite": "[BS] Invite",
+  "@invite": {
+    "description": "Description"
+  },
+  "@playtimeAdminPanelTitle": {
+    "description": "Description"
+  },
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "getHelpWithYourAccount": "Pomoć potražite u svom računu",
+  "colorContrastTesting": "Ispitivanje kontrasta boja",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "appointments": "Sastanke",
+  "manageChildAccounts": "Upravljanje dječjim računima",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "parentalConsent": "parentalConsent (TRANSLATE)",
+  "userLoguseremail": "Korisnik: {log_useremail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: ${log.userEmail}",
+    "placeholders": {
+      "event_startTime": {},
+      "snapshot_error": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "log_deviceInfo": {},
+      "payload_title": {},
+      "state_uri_path": {}
+    }
+  },
+  "noProfileFound": "[BS] No profile found",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "mediaOptional": "[BS] Media (Optional)",
+  "myInvites": "[BS] My Invites",
+  "creatorCreatorid": "Stvoritelj: $ CreatorID",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: ${tier.toUpperCase()}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "tier_toUpperCase": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "noEvents": "Nema događaja",
+  "copy1": "Kopija",
+  "homeFeedScreen": "Početni ekran za dovod",
+  "adminBroadcast": "[BS] Admin Broadcast",
+  "submitBooking": "Pošaljite rezervaciju",
+  "playtimeManagement": "Playtime upravljanje",
+  "childDashboard": "Dečija nadzorna ploča",
+  "removeChild": "[BS] Remove Child",
+  "@removeChild": {
+    "description": "Description"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "broadcast": "Emitirati",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "loginScreen": "Ekran za prijavu",
+  "familyDashboard": "[BS] Family Dashboard",
+  "@familyDashboard": {
+    "description": "Description"
+  },
+  "@scheduleMessage": {
+    "description": "Description"
+  },
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "businessAppointmentsEntryScreenComingSoon": "businessAppointmentsEntryScreenComingSoon (TRANSLATE)",
+  "eventCreated": "Stvoren događaj",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "virtualSessionCreatedInvitingFriends": "Stvorena virtualna sesija! ",
+  "@virtualSessionCreatedInvitingFriends": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "@redo": {
+    "description": "Description"
+  },
+  "add": "[BS] Add",
+  "cancelInvite": "[BS] Cancel Invite",
+  "@cancelInvite": {
+    "description": "Description"
+  },
+  "errorLoadingRewards": "Pogreška prilikom učitavanja nagrade",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "authErrorMissingUid": "Nedostaje UID.",
+  "backgroundDeletedSuccessfully": "Pozadina se uspješno briše!",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: ${list.length}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "dashboard1": "Kontrolna tabla",
+  "@businessOnboardingScreenComingSoon": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "viewResponsesComingSoon": "Pogledajte odgovore - uskoro dolazi!",
+  "businessProvidersEntryScreenComingSoon": "Ekran za ulazak poslovnih pružatelja usluga - uskoro dolazi",
+  "errorLoadingStaff": "Pogreška prilikom učitavanja osoblja",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "rooms": "Sobe",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "newNotificationPayloadtitle": "Nova obavijest: {payload_title}",
+  "@areYouSureYouWantToDeleteThisMessage": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "activityLogaction": "Aktivnost: {log_ation}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: ${log.action}",
+    "placeholders": {
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "created": "[BS] Created",
+  "playtimeChooseGame": "[BS] Choose a game",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "pleaseEnterAPromoCode": "Molimo unesite promo kod",
+  "@authErrorUserNotFound": {
+    "description": "Firebase Auth user-not-found error message"
+  },
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "configurationSavedSuccessfully": "configurationSavedSuccessfully (TRANSLATE)",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "verify": "verify (TRANSLATE)",
+  "download": "[BS] Download",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "back": "[BS] Back",
+  "clicked": "[BS] Clicked",
+  "playtimeHub": "[BS] Playtime Hub",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "failedToUpdateConsentE": "Nije uspjelo ažuriranje pristanka: $ E",
+  "authErrorCodeExpired": "Provjera koda je istekao. ",
+  "chatBooking": "Rezervacija za razgovor",
+  "authErrorMultiFactorInfoNotFound": "Višefazni podaci nisu pronađeni.",
+  "welcome": "[BS] Welcome",
+  "@welcome": {
+    "description": "Description"
+  },
+  "opened": "[BS] Opened",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "createGame": "[BS] Create Game",
+  "@save": {
+    "description": "save description"
+  },
+  "saveGroupForRecognition": "[BS] Save Group for Recognition",
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
+  "contentFilter": "Sadržajni filter",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "noOrganizations": "Nema organizacije",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "noProviders": "Nema pružatelja usluga",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "reply": "reply (TRANSLATE)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "authErrorInvalidHashKey": "Hash ključ nije važeći.",
+  "revenue": "Prihod",
+  "areYouSureYouWantToDeleteThisProvider": "Jeste li sigurni da želite izbrisati ovaj provajder?",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "couldNotOpenPrivacyPolicy": "Nije mogao otvoriti politiku privatnosti",
+  "adminMetrics": "Admin metrike",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "authErrorInvalidDisabledField": "Vrijednost polja sa invaliditetom nije važeća.",
+  "failedToStartProSubscriptionE": "Nije uspjelo pokretanje Pro pretplate: $ E",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "createNewGame": "createNewGame (TRANSLATE)",
+  "authErrorIdTokenExpired": "Token ID je istekao.",
+  "errorLoadingOrganizations": "Pogreška prilikom učitavanja organizacija",
+  "noUsers": "noUsers (TRANSLATE)",
+  "errorLoadingFamilyLinks": "[BS] Error loading family links",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "appointmentRequests": "appointmentRequests (TRANSLATE)",
+  "participants": "[BS] Participants",
+  "@participants": {
+    "description": "Description"
+  },
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "bookings": "Rezervacije",
+  "dateAppointmentscheduledattostring": "Datum: {Iment_scheduledat_tostring}",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "errorLoadingDashboardError": "Greška učitavanje nadzorne ploče: $ Pogreška",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "monetizationSettings": "Postavke u novčani monetizaciji",
+  "clients": "Klijenti",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "scheduled": "[BS] Scheduled",
+  "authErrorEmailChangeNeedsVerification": "Promjena e-pošte zahtijeva provjeru.",
+  "createYourFirstGame": "[BS] Create your first game",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "submit": "Predati",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "confirm": "[BS] Confirm",
+  "edit": "[BS] Edit",
+  "@edit": {
+    "description": "Description"
+  },
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "details": "[BS] Details",
+  "helpSupport": "Pomoć i podrška",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "emailNotifications": "Obavijesti putem e-pošte",
+  "toggleAvailability": "Prebaci dostupnost",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "myProfile": "[BS] My Profile",
+  "@myProfile": {
+    "description": "Description"
+  },
+  "signUp": "[BS] Sign Up",
+  "@signUp": {
+    "description": "Description"
+  },
+  "organizations": "organizations (TRANSLATE)",
+  "availability": "Raspoloživost",
+  "businessSignupScreenComingSoon": "businessSignupScreenComingSoon (TRANSLATE)",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "date": "Datum",
+  "payment": "Plaćanje",
+  "failedToDeleteAccountE": "Nije uspjelo izbrisati račun: $ e",
+  "failedToActionPrivacyRequest": "[BS] Failed to action privacy request",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "authErrorInvalidUserImport": "Record korisničkog uvoza nije važeći.",
+  "authErrorInvalidHashRounds": "Vrijednost hash okruga nije važeća.",
+  "notAuthenticated": "Nije ovjereno",
+  "save1": "Sačuvati",
+  "errorLogerrormessage": "Greška: {log_errormessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: ${log.errorMessage}",
+    "placeholders": {
+      "profile_email": {},
+      "log_errorMessage": {},
+      "c_id": {},
+      "ambassador_status": {},
+      "payload_title": {}
+    }
+  },
+  "authErrorInvalidHashDerivedKeyLength": "Dužina ključne tipke Hash nije važeća.",
+  "linkAccounts": "Link računi",
+  "completion": "Završetak",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "confirmBooking": "Potvrdite rezervaciju",
+  "addQuestion": "Dodajte pitanje",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "surveyResponses": "Odgovori ankete",
+  "pleaseLoginForFamilyFeatures": "[BS] Please login to access family features",
+  "pleaseEnterAValidEmailAddress": "Molimo unesite valjanu adresu e-pošte",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "meetingIdMeetingid": "meetingIdMeetingid (TRANSLATE)",
+  "businessLogin": "Poslovna prijava",
+  "grantConsent": "Pristanak grantova",
+  "noRouteDefinedForSettingsname": "Nijedna ruta nije definirana za {Settings_Name}",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for ${settings.name}",
+    "placeholders": {
+      "appointment_status_name": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_status": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "state_uri_path": {}
+    }
+  },
+  "contentLibrary1": "contentLibrary1 (TRANSLATE)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "errorSnapshoterror": "Greška: {snimshot_error}",
+  "@authErrorWeakPassword": {
+    "description": "Firebase Auth weak-password error message"
+  },
+  "pleaseLoginToViewProfile": "[BS] Please log in to view your profile.",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "failedToRevokeAccess": "[BS] Failed to revoke access",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "noAppointmentRequestsFound": "noAppointmentRequestsFound (TRANSLATE)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "authErrorInvalidCreationTime": "Vrijeme stvaranja nije važeće.",
+  "authErrorInternalError": "Došlo je do interne greške. ",
+  "createNewSurvey": "Kreirajte novu anketu",
+  "noBranchesAvailable": "Nema dostupnih grana",
+  "receiveBookingNotificationsViaEmail": "Primite obavijesti o rezervacijama putem e-maila",
+  "editBusinessProfile": "Uredi poslovni profil",
+  "ambassadorDashboard": "Ambasador nadzorne ploče",
+  "crmDashboardWithAnalytics": "crmDashboardWithAnalytics (TRANSLATE)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "durationDurationinminutes0Minutes": "durationDurationinminutes0Minutes (TRANSLATE)",
+  "liveSessionScheduledWaitingForParentApproval": "liveSessionScheduledWaitingForParentApproval (TRANSLATE)",
+  "@liveSessionScheduledWaitingForParentApproval": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "authErrorWeakPassword": "Lozinka je preslaba. ",
+  "errorSendingMessage": "[BS] Error sending message",
+  "staffSelectionstaffdisplayname": "Osoblje: {seply_staff_displayname}",
+  "businessOnboardingScreenComingSoon": "Poslovni ekran na brodu - uskoro dolazi",
+  "adminDashboard": "Administratorska nadzorna ploča",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "currentTierTiertouppercase": "currentTierTiertouppercase (TRANSLATE)",
+  "subscriptionCancelledSuccessfully": "Pretplata je uspešno otkazana",
+  "@subscriptionCancelledSuccessfully": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "playtimeChooseTime": "[BS] Choose a time",
+  "signInWithExistingMethod": "Prijavite se sa postojećom metodom",
+  "join": "Pridružiti se",
+  "send": "Pošalji",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "clientDeletedSuccessfully": "Klijent je uspješno izbrisan!",
+  "calendar": "Kalendar",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "becomeAnAmbassador": "Postaju ambasador",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "errorLoadingInvites": "[BS] Error loading invites",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "knownGroupDetected": "[BS] Known group detected",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "accessRevokedSuccessfully": "[BS] Access revoked successfully",
+  "providers": "Pružatelji usluga",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "noAppointments": "Nema sastanka",
+  "revokeAccessConfirmation": "[BS] Are you sure you want to revoke access?",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "paymentSuccessful": "Plaćanje uspješno!",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: ${args.staff.displayName}",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "errorLoadingSurveysError": "Pogreška prilikom učitavanja anketa: $ Greška",
+  "livePlaytime": "Live igranje",
+  "about": "[BS] About",
+  "enableVibration": "Omogući vibraciju",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "upgradeToBusiness": "upgradeToBusiness (TRANSLATE)",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "@receivePushNotificationsForNewBookings": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "@close": {
+    "description": "close description"
+  },
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "authErrorInvalidHashMemoryCost": "Trošak memorije Hash nije važeći.",
+  "myInvites1": "Moji pozivnice",
+  "ambassadors": "ambassadors (TRANSLATE)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "meetingSharedSuccessfully1": "Sastanak se uspešno podijeli!",
+  "requestPrivateSession": "Zatražite privatnu sjednicu",
+  "approve": "approve (TRANSLATE)",
+  "enterGroupName": "[BS] Enter group name",
+  "text": "Tekst",
+  "failedToUpdatePermissionE": "Nije uspjelo ažuriranje dozvole: $ e",
+  "businessAvailability": "Dostupnost poslovanja",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: ${avail.start.format(context)}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "errorLoadingSlots": "Pogreška prilikom učitavanja utora",
+  "yourPaymentHasBeenProcessedSuccessfully": "Vaša uplata je uspješno obrađena.",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "staffStaffidNotSelected": "staffStaffidNotSelected (TRANSLATE)",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: ${staffId ?? \"Not selected\"}",
+    "placeholders": {
+      "e_toString": {},
+      "staffId_Not_selected": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "tier_toUpperCase": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "widget_planName": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "args_scheduledAt": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "duration_inMinutes_0": {},
+      "index_1": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "formatDate_log_timestamp": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "restrictMatureContent": "restrictMatureContent (TRANSLATE)",
+  "requireParentApproval": "Zahtijevaju odobrenje roditelja",
+  "@refresh": {
+    "description": "Description"
+  },
+  "noAnalyticsDataAvailableYet": "Još nema dostupnih analitičkih podataka.",
+  "copyLink": "Kopiraj vezu",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "receivePushNotificationsForNewBookings": "Primite push obavijesti za nove rezervacije",
+  "authErrorUnknown": "Došlo je do nepoznate pogreške za provjeru autentičnosti.",
+  "createVirtualSession": "[BS] Create Virtual Session",
+  "dashboard": "[BS] Dashboard",
+  "language": "language (TRANSLATE)",
+  "failedToCreateSessionE": "Nije uspjelo kreiranje sesije: $ E",
+  "referralsAmbassadorreferrals": "Preporuke: {ambasador_referrals}",
+  "revokeAccess": "[BS] Revoke Access",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "redirectingToStripeCheckoutForBasicPlan": "Preusmjeravanje na stripe odjave za osnovni plan ...",
+  "@redirectingToStripeCheckoutForBasicPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "authErrorReservedClaims": "Rezervisani potraživanja.",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "orgmemberidslengthMembers": "{org_memberids_length} Članovi",
+  "changesSavedSuccessfully": "Promjene uspješno spremljene!",
+  "@otpResentSuccessfully": {
+    "description": "Description"
+  },
+  "businessAvailabilityEntryScreenComingSoon": "Ekran za unos poslovanja - uskoro dolazi",
+  "@businessAvailabilityEntryScreenComingSoon": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "errorLoadingAppointments": "Pogreška prilikom učitavanja sastanka",
+  "playtimeApprove": "[BS] Approve",
+  "customizeMessage": "[BS] Customize Message",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "errorEstimatingRecipientsE": "Error Procjena primatelja: $ E",
+  "noMissingTranslations": "noMissingTranslations (TRANSLATE)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "markAsPaid": "Označi kao plaćeni",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "pendingInvites": "[BS] Pending Invites",
+  "authErrorCredentialAlreadyInUse": "Te su vjerodajnice već povezane s drugim računom.",
+  "bookAppointment": "Imenovanje knjiga",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "errorLoadingPermissionsError": "Pogreška prilikom učitavanja dozvola: $ Greška",
+  "staffArgsstaffdisplayname": "Osoblje: {args_staff_displayname}",
+  "noInvites": "[BS] No invites",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "fromAvailstartformatcontext": "Od: {aveard_start_format_context}",
+  "status": "[BS] Status",
+  "forward": "forward (TRANSLATE)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "playtimeTitle": "[BS] Playtime",
+  "sessionRejected": "sessionRejected (TRANSLATE)",
+  "socialAccountConflictTitle": "Račun već postoji",
+  "yes": "[BS] Yes",
+  "@yes": {
+    "description": "yes description"
+  },
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "editRoom": "Uredi sobu",
+  "studioBooking": "Rezervacija studija",
+  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "clientScreenTBD": "[BS] Client screen coming soon",
+  "virtualPlaytime": "Virtualno igranje",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "businessProfile": "Poslovni profil",
+  "upload": "[BS] Upload",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "meetingSharedSuccessfully": "[BS] Meeting shared successfully",
+  "messageSentSuccessfully": "[BS] Message sent successfully",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "time": "Vrijeme",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "create": "Stvoriti",
+  "shareOnWhatsApp": "[BS] Share on WhatsApp",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "checkingSubscription": "Provjera pretplate ...",
+  "scheduleMessage": "[BS] Schedule Message",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "selectStaff": "Odaberite osoblje",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "multipleChoice": "Višestruki izbor",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "exportAsPdf": "Izvezi kao PDF",
+  "@studioBookingIsOnlyAvailableOnWeb": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "invitationSentSuccessfully": "Poziv je uspješno poslan!",
+  "studioDashboard": "Studio nadzorna ploča",
+  "allCountries": "allCountries (TRANSLATE)",
+  "authErrorUserNotFound": "Nije pronađen račun sa ovom adresom e-pošte.",
+  "pickVideo": "[BS] Pick Video",
+  "errorLoadingReferralCode": "errorLoadingReferralCode (TRANSLATE)",
+  "darkMode": "Tamni režim",
+  "noQuestionsAdded": "Nema dodanih pitanja",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "failedToStartBasicSubscriptionE": "Nije uspjelo pokretanje osnovne pretplate: $ E",
+  "authErrorMissingHashAlgorithm": "Nedostaje algoritam hash-a.",
+  "deleteMyAccount": "deleteMyAccount (TRANSLATE)",
+  "resolved": "Riješen",
+  "paymentWasCancelled": "paymentWasCancelled (TRANSLATE)",
+  "authErrorNetworkRequestFailed": "Mrežna greška. ",
+  "contextContextid": "Kontekst: $ Contextid",
+  "appVersionAndInformation": "Verzija i informacije aplikacije",
+  "logout": "[BS] Logout",
+  "@logout": {
+    "description": "Description"
+  },
+  "noContentAvailableYet": "Još nema dostupnog sadržaja",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "failedToSendPrivacyRequestE": "Nije uspjelo slanje zahtjeva za privatnost: $ e",
+  "viewDetails": "viewDetails (TRANSLATE)",
+  "saveChanges": "Spremite promjene",
+  "inviteContact": "Pozovite kontakt",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "scheduledFor": "[BS] Scheduled for",
+  "defaultShareMessage": "[BS] Let's meet via Appoint!",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "timeArgsslotformatcontext": "Vrijeme: {args_slot_format_context}",
+  "editProfile": "Uredi profil",
+  "recipients": "[BS] Recipients",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "familyMembers": "[BS] Family Members",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: ${serviceId ?? \"Not selected\"}",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "studioBookingIsOnlyAvailableOnWeb": "Studio rezervacija je dostupna samo na webu",
+  "composeBroadcastMessage": "[BS] Compose Broadcast Message",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "redo": "[BS] Redo",
+  "closed": "Zatvoren",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "deleteProvider": "Obriši dobavljača",
+  "next1": "next1 (TRANSLATE)",
+  "noProvidersFoundAddYourFirstProvider": "Nije pronađen nijedan pružaoci. ",
+  "playtimeEnterGameName": "[BS] Enter game name",
+  "authErrorMissingPhoneNumber": "Unesite telefonski broj.",
+  "notifications1": "notifications1 (TRANSLATE)",
+  "logtargettypeLogtargetid": "{log_targettype}: {log_targedid}",
+  "adminFreeAccess": "Admin Besplatan pristup",
+  "iDoNotConsent": "iDoNotConsent (TRANSLATE)",
+  "businessDashboard": "businessDashboard (TRANSLATE)",
+  "backgroundRejected": "Pozadina odbijena",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "@copy": {
+    "description": "Description"
+  },
+  "noExternalMeetingsFound": "Nisu pronađeni vanjski sastanci.",
+  "addNewRoom": "Dodajte novu sobu",
+  "roomAddedSuccessfully": "roomAddedSuccessfully (TRANSLATE)",
+  "loadingCheckout": "loadingCheckout (TRANSLATE)",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  },
+  "deletingAccount": "Brisanje računa ...",
+  "playtimeLiveScheduled": "[BS] Live playtime scheduled!",
+  "@businessCrmEntryScreenComingSoon": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "subscription": "subscription (TRANSLATE)",
+  "settingsDialogWillBeImplementedHere": "settingsDialogWillBeImplementedHere (TRANSLATE)",
+  "settings1": "Postavke",
+  "failedToUploadBackgroundE": "Nije uspjelo upload Pozadina: $ E",
+  "close": "[BS] Close",
+  "businessVerificationScreenComingSoon": "Ekran za provjeru poslovanja - uskoro dolazi",
+  "country": "Zemlja",
+  "inviteCancelledSuccessfully": "[BS] Invite cancelled successfully",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: ${invite.status.name}",
+    "placeholders": {
+      "e_toString": {},
+      "log_action": {},
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "selection_staff_displayName": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "link_childId_substring_0_8": {},
+      "payload_title": {},
+      "e_value": {},
+      "profileAsync_phone": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "appointment_id": {},
+      "log_appVersion": {},
+      "familyLink_childId": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "log_errorType": {},
+      "appointment_scheduledAt_toString": {},
+      "avail_start_format_context": {},
+      "serviceId_Not_selected": {},
+      "invite_status_name": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "log_severity_name": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "avail_end_format_context": {},
+      "args_staff_displayName": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "statusColon": "[BS] Status:",
+  "authErrorProjectNotFound": "Projekt za vatru nije pronađen.",
+  "permissionPermissioncategoryUpdatedToNewvalue": "Dozvola {dozvola_kategoriju} Ažurirano na $ novovalue",
+  "@permissionPermissioncategoryUpdatedToNewvalue": {
+    "description": "Localization key for: Permission ${permission.category} updated to $newValue",
+    "placeholders": {
+      "invite_appointmentId": {},
+      "appointment_status_name": {},
+      "args_slot_format_context": {},
+      "settings_name": {},
+      "payload_title": {},
+      "e_value": {},
+      "permission_category": {},
+      "snapshot_error": {},
+      "ambassador_referrals": {},
+      "log_adminEmail": {},
+      "list_length": {},
+      "ambassador_status": {},
+      "args_inviteeId": {},
+      "appointment_scheduledAt_toString": {},
+      "serviceId_Not_selected": {},
+      "event_endTime": {},
+      "profile_email": {},
+      "value_toInt": {},
+      "e_key": {},
+      "booking_dateTime_toLocal": {},
+      "appt_id": {},
+      "log_errorMessage": {},
+      "log_deviceInfo": {},
+      "log_targetId": {},
+      "p_specialty": {},
+      "event_startTime": {},
+      "log_userEmail": {},
+      "branches_length": {},
+      "org_memberIds_length": {},
+      "c_id": {},
+      "p_contactInfo": {},
+      "state_uri_path": {},
+      "log_targetType": {}
+    }
+  },
+  "edit1": "edit1 (TRANSLATE)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "resolve": "Riješiti",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorError": "GREŠKA: $ Greška",
+  "logout1": "Odjaviti",
+  "myProfile1": "Moj profil",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "parentalSettings": "parentalSettings (TRANSLATE)",
+  "inviteChild": "Pozovite dijete",
+  "confirmPassword": "[BS] Confirm Password",
+  "undo": "[BS] Undo",
+  "allLanguages": "Svi jezici",
+  "noTicketsYet": "Još nema ulaznica",
+  "pleaseSignInToUploadABackground": "Prijavite se da biste prenijeli pozadinu",
+  "success": "[BS] Success",
+  "@success": {
+    "description": "Description"
+  },
+  "authErrorInvalidVerificationId": "ID verifikacije nije važeći.",
+  "copy": "[BS] Copy",
+  "statusInvitestatusname": "Status: {invie_status_name}",
+  "otpResentSuccessfully": "[BS] OTP resent successfully",
+  "shareViaWhatsapp": "Podijelite putem whatsapp-a",
+  "deleteSlot": "deleteSlot (TRANSLATE)",
+  "@overview": {
+    "description": "Description"
+  },
+  "scheduling": "[BS] Scheduling",
+  "authErrorSessionCookieRevoked": "Kolačić sesije je opozvan.",
+  "authErrorSessionCookieExpired": "Kolačić sesije je istekao.",
+  "tryAgain": "tryAgain (TRANSLATE)",
+  "ok": "[BS] OK",
+  "bookingConfirmed": "Potvrđeno rezervacijom",
+  "noEventsScheduledThisWeek": "Nisu zakazani događaji ove sedmice",
+  "authErrorUidAlreadyExists": "UID se već koristi.",
+  "cancel1": "Otkazati",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "profileNotFound": "Profil nije pronađen.",
+  "pleaseEnterAValidEmailOrPhone": "Molimo unesite valjanu e-poštu ili telefon",
+  "update": "Ažurirati",
+  "requiresInstallFallback": "Zahtijeva instalaciju Fallback",
+  "appTitle": "[BS] APP-OINT",
+  "authErrorInvalidUid": "UID je nevažeći.",
+  "no": "[BS] No",
+  "playtimeCreateSession": "[BS] Create a Playtime Session",
+  "subscribeToWidgetplanname": "Pretplatite se na {widget_planname}",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "confirm1": "confirm1 (TRANSLATE)",
+  "surveyEditor": "Anketni urednik",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "playtimeVirtual": "[BS] Virtual Play",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "unlimitedBookingsPerWeek": "• Neograničene rezervacije nedeljno",
+  "previous": "[BS] Previous",
+  "gameRejected": "Igra odbijena",
+  "authErrorMissingAndroidPkgName": "Nedostaje ime Android paketa.",
+  "save": "[BS] Save",
+  "welcomeToPlaytime": "[BS] Welcome to Playtime",
+  "revoke": "[BS] Revoke",
+  "businessCrmEntryScreenComingSoon": "Poslovni ekran za ulazak CRM - uskoro dolazi",
+  "sendNow": "[BS] Send Now",
+  "scheduleForLater": "[BS] Schedule for Later",
+  "authErrorInvalidSessionCookieDuration": "Trajanje kolačića sesije nije važeće.",
+  "overview": "Pregled",
+  "ekeyEvalue": "{e_key}: {e_value}",
+  "userUserid": "Korisnik $ USERID",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "backgroundUploadedSuccessfully": "backgroundUploadedSuccessfully (TRANSLATE)",
+  "refresh": "[BS] Refresh",
+  "adminSettings": "Administratorske postavke",
+  "playtimeAdminPanelTitle": "[BS] Playtime Games – Admin",
+  "createNewInvoice": "Kreirajte novu fakturu",
+  "viewAll1": "Pogledajte sve",
+  "playtimeLive": "[BS] Live Play",
+  "bookViaChat": "Knjiga putem chata",
+  "@delete": {
+    "description": "Description"
+  },
+  "googleCalendar": "Google kalendar",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "playtimeGameDeleted": "[BS] Game deleted",
+  "serviceServiceidNotSelected": "Servis: {septiid_not_selected}",
+  "valuetoint": "{vrednost_toint}",
+  "authErrorAppNotAuthorized": "Ova aplikacija nije ovlaštena za korištenje autentičnosti za firebase.",
+  "roomUpdatedSuccessfully": "Soba se uspješno ažurira!",
+  "success1": "Uspjeh",
+  "profile1": "Profil",
+  "none": "Nijedan",
+  "areYouSureYouWantToDeleteThisMessage": "Jeste li sigurni da želite izbrisati ovu poruku?",
+  "welcome1": "Dobrodošli",
+  "appointmentsListlength": "Sastanci: {list_length}",
+  "about1": "O",
+  "externalMeetings": "externalMeetings (TRANSLATE)",
+  "delete": "[BS] Delete",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Nedostaje nastavlja URL."
+  },
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Localization key for: Nevažeća sesija sa više faktora."
+  },
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Vaša sesija je istekla. "
+  },
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: ID pružatelja usluga nije važeći."
+  },
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Localization key for: Domena Nastavna URL-a nije bijela."
+  },
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: Token ID-a je opozvan."
+  },
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: Nastavak URL nije važeći."
+  },
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: Podaci davatelja usluga nisu valjani."
+  },
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Localization key for: Prekoračen je maksimalni broj drugog faktora."
+  },
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: Token stranica nije važeći."
+  },
+  "@authErrorMissingVerificationCode": {
+    "description": "Localization key for: Unesite potvrdni kod."
+  },
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: Naziv ekrana nije važeći."
+  },
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Localization key for: Prekoračen je maksimalni broj uvoza korisnika."
+  },
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Localization key for: Potrebna je višekratna provjera autentičnosti."
+  },
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: Telefonski broj nije važeći."
+  },
+  "@authErrorInvalidVerificationCode": {
+    "description": "Localization key for: Kod verifikacije nije važeći."
+  },
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Localization key for: Nedostaje više faktorskih sesija."
+  },
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: Lozinka je nevažeća ili previše slaba."
+  },
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Localization key for: Separator soli hash nije važeći."
+  },
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Molimo prijavite se ponovo da biste izvršili ovu operaciju."
+  },
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: Osiguran je nevažeći argument."
+  },
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: Posljednje vrijeme prijave nije važeće."
+  },
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Localization key for: Ovaj telefonski broj već se koristi."
+  },
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Localization key for: Domena dinamičke veze nije važeća."
+  },
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Localization key for: Nedostaje tajna Oauth klijenta."
+  },
+  "@authErrorInvalidHashParallelization": {
+    "description": "Localization key for: Paralelizacija hash-a nije važeća."
+  },
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Nedostaje ID verifikacije."
+  },
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Localization key for: Ovaj drugi faktor se već koristi."
+  },
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Nevažeće prilagođene prilagođene zahtjeve."
+  },
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: Prekoračena je SMS kvota za ovaj projekt. "
+  },
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: Algoritam hash-a nije važeći."
+  },
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Nedostaje ID paketa iOS-a."
+  },
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: Veličina hash bloka nije važeća."
+  },
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Nepodržani prvi faktor za više faktorske provjere autentičnosti."
+  },
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: Vrijednost provjere e-pošte nije važeća."
+  },
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: Token ID nije važeći."
+  },
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Nedostaje UID."
+  },
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: Provjera koda je istekao. "
+  },
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Localization key for: Višefazni podaci nisu pronađeni."
+  },
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: Hash ključ nije važeći."
+  },
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: Vrijednost polja sa invaliditetom nije važeća."
+  },
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: Token ID je istekao."
+  },
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Localization key for: Promjena e-pošte zahtijeva provjeru."
+  },
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: Record korisničkog uvoza nije važeći."
+  },
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: Vrijednost hash okruga nije važeća."
+  },
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Localization key for: Dužina ključne tipke Hash nije važeća."
+  },
+  "@pleaseLoginToViewProfile": {
+    "description": "Localization key for: [BS] Please log in to view your profile."
+  },
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: Vrijeme stvaranja nije važeće."
+  },
+  "@authErrorInternalError": {
+    "description": "Localization key for: Došlo je do interne greške. "
+  },
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: Trošak memorije Hash nije važeći."
+  },
+  "@authErrorUnknown": {
+    "description": "Localization key for: Došlo je do nepoznate pogreške za provjeru autentičnosti."
+  },
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Rezervisani potraživanja."
+  },
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Nedostaje algoritam hash-a."
+  },
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Unesite telefonski broj."
+  },
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Projekt za vatru nije pronađen."
+  },
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: ID verifikacije nije važeći."
+  },
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Kolačić sesije je opozvan."
+  },
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Kolačić sesije je istekao."
+  },
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: UID se već koristi."
+  },
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: UID je nevažeći."
+  },
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Nedostaje ime Android paketa."
+  },
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Localization key for: Trajanje kolačića sesije nije važeće."
+  },
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: Ova aplikacija nije ovlaštena za korištenje autentičnosti za firebase."
+  }
 }
