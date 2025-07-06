@@ -3,7 +3,7 @@ variable "bucket_name" {
   type        = string
 }
 
-variable "log_retention_days" {
+variable "log_retention_period" {
   description = "Number of days to retain logs"
   type        = number
 }
