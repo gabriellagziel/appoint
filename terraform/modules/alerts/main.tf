@@ -2,7 +2,7 @@ data "template_file" "api_availability" {
   template = file("${path.module}/api_availability.yaml.tmpl")
   vars = {
     namespace         = var.namespace
-    api_uptime_target = var.api_uptime_target
+    api_uptime_target = var.api_availability_slo_percent
   }
 }
 
@@ -27,7 +27,7 @@ data "template_file" "booking_success" {
   template = file("${path.module}/booking_success.yaml.tmpl")
   vars = {
     namespace              = var.namespace
-    booking_success_target = var.booking_success_target
+    booking_success_target = var.booking_success_slo_percent
   }
 }
 
