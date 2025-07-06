@@ -39,23 +39,23 @@ provider "helm" {
 }
 
 module "observability" {
-  source                = "./modules/observability"
-  namespace             = var.monitoring_namespace
-  metrics_retention_days = var.metrics_retention_days
-  trace_retention_days   = var.trace_retention_days
+  source                   = "./modules/observability"
+  namespace                = var.monitoring_namespace
+  metrics_retention_period = var.metrics_retention_period
+  trace_retention_period   = var.trace_retention_period
 }
 
 module "log_bucket" {
-  source            = "./modules/log_bucket"
-  bucket_name       = var.log_bucket_name
-  log_retention_days = var.log_retention_days
+  source               = "./modules/log_bucket"
+  bucket_name          = var.log_bucket_name
+  log_retention_period = var.log_retention_period
 }
 
 module "alerts" {
-  source                 = "./modules/alerts"
-  namespace              = var.monitoring_namespace
-  api_uptime_target      = var.api_uptime_target
-  api_p95_latency_ms     = var.api_p95_latency_ms
-  api_p99_latency_ms     = var.api_p99_latency_ms
-  booking_success_target = var.booking_success_target
+  source                      = "./modules/alerts"
+  namespace                   = var.monitoring_namespace
+  api_availability_slo_percent = var.api_availability_slo_percent
+  api_p95_latency_ms          = var.api_p95_latency_ms
+  api_p99_latency_ms          = var.api_p99_latency_ms
+  booking_success_slo_percent = var.booking_success_slo_percent
 }
