@@ -1,4 +1,4 @@
-name: CI
+name: "Submodule CI (legacy)"
 
 on:
   push:
