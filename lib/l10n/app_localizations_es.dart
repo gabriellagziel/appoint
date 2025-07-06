@@ -12,13 +12,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get refresh => 'Actualizar';
 
   @override
-  String get home => '[ES] Home';
+  String get home => 'Inicio';
 
   @override
   String get noSessionsYet => '[ES] No sessions yet';
 
   @override
-  String get ok => 'Aceptar';
+  String get ok => 'OK';
 
   @override
   String get playtimeLandingChooseMode => 'Elige un modo';
@@ -30,39 +30,39 @@ class AppLocalizationsEs extends AppLocalizations {
   String get scheduleMessage => 'Programar mensaje';
 
   @override
-  String get decline => 'Rechazar';
+  String get decline => 'Declinar';
 
   @override
-  String get adminBroadcast => '[ES] Admin Broadcast';
+  String get adminBroadcast => 'Difusión de administrador';
 
   @override
-  String get login => '[ES] Login';
+  String get login => 'Iniciar sesión';
 
   @override
-  String get playtimeChooseFriends => 'Elige amigos';
+  String get playtimeChooseFriends => 'Elegir amigos';
 
   @override
-  String get noInvites => '[ES] No invites';
+  String get noInvites => 'Sin invitaciones';
 
   @override
-  String get playtimeChooseTime => '[ES] Choose a time';
+  String get playtimeChooseTime => 'Elegir hora';
 
   @override
-  String get success => '[ES] Success';
+  String get success => 'Éxito';
 
   @override
   String get undo => 'Deshacer';
 
   @override
   String opened(Object count) {
-    return '[ES] Opened';
+    return 'Abierto';
   }
 
   @override
   String get createVirtualSession => 'Crear sesión virtual';
 
   @override
-  String get messageSentSuccessfully => '[ES] Message sent successfully';
+  String get messageSentSuccessfully => 'Mensaje enviado exitosamente';
 
   @override
   String get redo => 'Rehacer';
@@ -75,7 +75,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get cancelInviteConfirmation =>
-      '[ES] Are you sure you want to cancel this invite?';
+      '¿Confirmar cancelación de invitación?';
 
   @override
   String created(Object date) {
@@ -86,39 +86,38 @@ class AppLocalizationsEs extends AppLocalizations {
   String get revokeAccess => 'Revocar acceso';
 
   @override
-  String get saveGroupForRecognition => '[ES] Save Group for Recognition';
+  String get saveGroupForRecognition => 'Guardar grupo para reconocimiento';
 
   @override
-  String get playtimeLiveScheduled => 'Sesión en vivo programada';
+  String get playtimeLiveScheduled => 'Juego en vivo programado';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[ES] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '¿Confirmar revocación de acceso?';
 
   @override
   String get download => 'Descargar';
 
   @override
-  String get password => '[ES] Password';
+  String get password => 'Contraseña';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return '[ES] Error loading family links';
+    return 'Error al cargar enlaces familiares';
   }
 
   @override
   String get cancel => 'Cancelar';
 
   @override
-  String get playtimeCreate => 'Crear Playtime';
+  String get playtimeCreate => 'Crear juego';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return '[ES] Failed to action privacy request';
+    return 'Error al procesar solicitud de privacidad';
   }
 
   @override
-  String get appTitle => 'Título de la aplicación';
+  String get appTitle => 'Appoint';
 
   @override
   String get accept => 'Aceptar';
@@ -127,13 +126,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get playtimeModeVirtual => 'Modo virtual';
 
   @override
-  String get playtimeDescription => 'Descripción de Playtime';
+  String get playtimeDescription => 'Descripción del juego';
 
   @override
-  String get delete => '[ES] Delete';
+  String get delete => 'Eliminar';
 
   @override
-  String get playtimeVirtualStarted => '[ES] Virtual playtime started!';
+  String get playtimeVirtualStarted => 'Juego virtual iniciado';
 
   @override
   String get createYourFirstGame => 'Crea tu primer juego';
@@ -143,17 +142,17 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String recipients(Object count) {
-    return '[ES] Recipients';
+    return 'Destinatarios';
   }
 
   @override
-  String get noResults => '[ES] No results found';
+  String get noResults => 'Sin resultados';
 
   @override
   String get yes => 'Sí';
 
   @override
-  String get invite => '[ES] Invite';
+  String get invite => 'Invitar';
 
   @override
   String get playtimeModeLive => 'Modo en vivo';
@@ -162,398 +161,397 @@ class AppLocalizationsEs extends AppLocalizations {
   String get done => 'Hecho';
 
   @override
-  String get defaultShareMessage => '[ES] Let\'s meet via Appoint!';
+  String get defaultShareMessage => 'Mensaje de compartir predeterminado';
 
   @override
   String get no => 'No';
 
   @override
-  String get playtimeHub => 'Centro de Playtime';
+  String get playtimeHub => 'Centro de juegos';
 
   @override
   String get createLiveSession => 'Crear sesión en vivo';
 
   @override
-  String get enableNotifications => '[ES] Enable Notifications';
+  String get enableNotifications => 'Habilitar notificaciones';
 
   @override
   String invited(Object date) {
-    return '[ES] Invited';
+    return 'Invitado';
   }
 
   @override
   String content(Object content) {
-    return '[ES] Content';
+    return 'Contenido';
   }
 
   @override
-  String get meetingSharedSuccessfully => '[ES] Meeting shared successfully';
+  String get meetingSharedSuccessfully => 'Reunión compartida exitosamente';
 
   @override
   String get welcomeToPlaytime => 'Bienvenido a Playtime';
 
   @override
-  String get viewAll => '[ES] View All';
+  String get viewAll => 'Ver todo';
 
   @override
-  String get playtimeVirtual => 'Playtime virtual';
+  String get playtimeVirtual => 'Juego virtual';
 
   @override
-  String get staffScreenTBD => '[ES] Staff screen coming soon';
+  String get staffScreenTBD => 'Pantalla de personal (Pendiente)';
 
   @override
-  String get cut => '[ES] Cut';
+  String get cut => 'Cortar';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[ES] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => 'Invitación cancelada exitosamente';
 
   @override
-  String get retry => '[ES] Retry';
+  String get retry => 'Reintentar';
 
   @override
-  String get composeBroadcastMessage => '[ES] Compose Broadcast Message';
+  String get composeBroadcastMessage => 'Componer mensaje de difusión';
 
   @override
-  String get sendNow => '[ES] Send Now';
+  String get sendNow => 'Enviar ahora';
 
   @override
   String get noGamesYet => '[ES] No games yet';
 
   @override
-  String get select => '[ES] Select';
+  String get select => 'Seleccionar';
 
   @override
-  String get about => '[ES] About';
+  String get about => 'Acerca de';
 
   @override
-  String get choose => '[ES] Choose';
+  String get choose => 'Elegir';
 
   @override
-  String get profile => '[ES] Profile';
+  String get profile => 'Perfil';
 
   @override
-  String get removeChild => '[ES] Remove Child';
+  String get removeChild => 'Eliminar niño';
 
   @override
   String status(Object status) {
-    return '[ES] Status';
+    return 'Estado';
   }
 
   @override
-  String get logout => '[ES] Logout';
+  String get logout => 'Cerrar sesión';
 
   @override
-  String get paste => '[ES] Paste';
+  String get paste => 'Pegar';
 
   @override
-  String get welcome => '[ES] Welcome';
+  String get welcome => 'Bienvenido';
 
   @override
-  String get playtimeCreateSession => '[ES] Create a Playtime Session';
+  String get playtimeCreateSession => 'Crear sesión de juego';
 
   @override
-  String get familyMembers => '[ES] Family Members';
+  String get familyMembers => 'Miembros de la familia';
 
   @override
-  String get upload => '[ES] Upload';
+  String get upload => 'Subir';
 
   @override
-  String get upcomingSessions => '[ES] Upcoming Sessions';
+  String get upcomingSessions => 'Sesiones próximas';
 
   @override
-  String get enterGroupName => '[ES] Enter group name';
+  String get enterGroupName => 'Ingresar nombre del grupo';
 
   @override
-  String get confirm => '[ES] Confirm';
+  String get confirm => 'Confirmar';
 
   @override
-  String get playtimeLive => '[ES] Live Play';
+  String get playtimeLive => 'Juego en vivo';
 
   @override
-  String get errorLoadingInvites => '[ES] Error loading invites';
+  String get errorLoadingInvites => 'Error al cargar invitaciones';
 
   @override
-  String get targetingFilters => '[ES] Targeting Filters';
+  String get targetingFilters => 'Filtros de segmentación';
 
   @override
-  String get pickVideo => '[ES] Pick Video';
+  String get pickVideo => 'Seleccionar video';
 
   @override
-  String get playtimeGameDeleted => '[ES] Game deleted';
+  String get playtimeGameDeleted => 'Juego eliminado';
 
   @override
-  String get scheduleForLater => '[ES] Schedule for Later';
+  String get scheduleForLater => 'Programar para más tarde';
 
   @override
-  String get accessRevokedSuccessfully => '[ES] Access revoked successfully';
+  String get accessRevokedSuccessfully => 'Acceso revocado exitosamente';
 
   @override
   String type(Object type) {
-    return '[ES] Type';
+    return 'Tipo';
   }
 
   @override
-  String get checkingPermissions => '[ES] Checking permissions...';
+  String get checkingPermissions => 'Verificando permisos';
 
   @override
-  String get copy => '[ES] Copy';
+  String get copy => 'Copiar';
 
   @override
-  String get yesCancel => '[ES] Yes, Cancel';
+  String get yesCancel => 'Sí, cancelar';
 
   @override
-  String get email => '[ES] Email';
+  String get email => 'Correo electrónico';
 
   @override
-  String get shareOnWhatsApp => '[ES] Share on WhatsApp';
+  String get shareOnWhatsApp => 'Compartir en WhatsApp';
 
   @override
-  String get notificationSettings => '[ES] Notification Settings';
+  String get notificationSettings => 'Configuración de notificaciones';
 
   @override
-  String get myProfile => '[ES] My Profile';
+  String get myProfile => 'Mi perfil';
 
   @override
-  String get revoke => '[ES] Revoke';
+  String get revoke => 'Revocar';
 
   @override
-  String get noBroadcastMessages => '[ES] No messages yet';
+  String get noBroadcastMessages => 'Sin mensajes de difusión';
 
   @override
   String requestType(Object type) {
-    return '[ES] Request Type';
+    return 'Tipo de solicitud';
   }
 
   @override
-  String get notifications => '[ES] Notifications';
+  String get notifications => 'Notificaciones';
 
   @override
-  String get details => '[ES] Details';
+  String get details => 'Detalles';
 
   @override
-  String get cancelInvite => '[ES] Cancel Invite';
+  String get cancelInvite => 'Cancelar invitación';
 
   @override
   String get createNew => '[ES] Create New';
 
   @override
-  String get settings => '[ES] Settings';
+  String get settings => 'Configuración';
 
   @override
-  String get playtimeReject => '[ES] Reject';
+  String get playtimeReject => 'Rechazar';
 
   @override
-  String get errorLoadingProfile => '[ES] Error loading profile';
+  String get errorLoadingProfile => 'Error al cargar perfil';
 
   @override
-  String get edit => '[ES] Edit';
+  String get edit => 'Editar';
 
   @override
-  String get add => '[ES] Add';
+  String get add => 'Agregar';
 
   @override
-  String get playtimeGameApproved => '[ES] Game approved';
+  String get playtimeGameApproved => 'Juego aprobado';
 
   @override
-  String get forgotPassword => '[ES] Forgot Password?';
+  String get forgotPassword => '¿Olvidaste tu contraseña?';
 
   @override
-  String get familyDashboard => '[ES] Family Dashboard';
+  String get familyDashboard => 'Panel familiar';
 
   @override
-  String get loading => '[ES] Loading...';
+  String get loading => 'Cargando...';
 
   @override
-  String get quickActions => '[ES] Quick Actions';
+  String get quickActions => 'Acciones rápidas';
 
   @override
-  String get playtimeTitle => '[ES] Playtime';
+  String get playtimeTitle => 'Título del juego';
 
   @override
-  String get otpResentSuccessfully => '[ES] OTP resent successfully';
+  String get otpResentSuccessfully => 'OTP reenviado exitosamente';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return '[ES] Error checking permissions';
+    return 'Error al verificar permisos';
   }
 
   @override
-  String get clientScreenTBD => '[ES] Client screen coming soon';
+  String get clientScreenTBD => 'Pantalla de cliente (Pendiente)';
 
   @override
   String fcmToken(Object token) {
-    return '[ES] FCM Token';
+    return 'Token FCM';
   }
 
   @override
-  String get pickImage => '[ES] Pick Image';
+  String get pickImage => 'Seleccionar imagen';
 
   @override
-  String get previous => '[ES] Previous';
+  String get previous => 'Anterior';
 
   @override
-  String get noProfileFound => '[ES] No profile found';
+  String get noProfileFound => 'No se encontró perfil';
 
   @override
-  String get noFamilyMembersYet => '[ES] No family members yet';
+  String get noFamilyMembersYet => 'Aún no hay miembros de la familia';
 
   @override
-  String get mediaOptional => '[ES] Media (Optional)';
+  String get mediaOptional => 'Medios opcionales';
 
   @override
-  String get messageSavedSuccessfully => '[ES] Message saved successfully';
+  String get messageSavedSuccessfully => 'Mensaje guardado exitosamente';
 
   @override
-  String get scheduledFor => '[ES] Scheduled for';
+  String get scheduledFor => 'Programado para';
 
   @override
-  String get dashboard => '[ES] Dashboard';
+  String get dashboard => 'Panel de control';
 
   @override
-  String get noPermissionForBroadcast => '[ES] No permission for broadcast';
+  String get noPermissionForBroadcast => 'Sin permiso para difusión';
 
   @override
-  String get playtimeAdminPanelTitle => '[ES] Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => 'Panel de administración de juegos';
 
   @override
-  String get inviteDetail => '[ES] Invite Details';
+  String get inviteDetail => 'Detalle de invitación';
 
   @override
   String scheduled(Object date) {
-    return '[ES] Scheduled';
+    return 'Programado';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return '[ES] Failed to resend OTP';
+    return 'Error al reenviar OTP';
   }
 
   @override
-  String get scheduling => '[ES] Scheduling';
+  String get scheduling => 'Programación';
 
   @override
   String errorSavingMessage(Object error) {
-    return '[ES] Error saving message';
+    return 'Error al guardar mensaje';
   }
 
   @override
-  String get save => '[ES] Save';
+  String get save => 'Guardar';
 
   @override
-  String get playtimeApprove => '[ES] Approve';
+  String get playtimeApprove => 'Aprobar';
 
   @override
-  String get createYourFirstSession => '[ES] Create your first session';
+  String get createYourFirstSession => 'Crea tu primera sesión';
 
   @override
-  String get playtimeGameRejected => '[ES] Game rejected';
+  String get playtimeGameRejected => 'Juego rechazado';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return '[ES] Failed to revoke access';
+    return 'Error al revocar acceso';
   }
 
   @override
-  String get recentGames => '[ES] Recent Games';
+  String get recentGames => 'Juegos recientes';
 
   @override
-  String get customizeMessage => '[ES] Customize Message';
+  String get customizeMessage => 'Personalizar mensaje';
 
   @override
   String failedToCancelInvite(Object error) {
-    return '[ES] Failed to cancel invite';
+    return 'Error al cancelar invitación';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return '[ES] Error sending message';
+    return 'Error al enviar mensaje';
   }
 
   @override
-  String get confirmPassword => '[ES] Confirm Password';
+  String get confirmPassword => 'Confirmar contraseña';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return '[ES] Error loading privacy requests';
+    return 'Error al cargar solicitudes de privacidad';
   }
 
   @override
-  String get connectedChildren => '[ES] Connected Children';
+  String get connectedChildren => 'Niños conectados';
 
   @override
-  String get share => '[ES] Share';
+  String get share => 'Compartir';
 
   @override
-  String get playtimeEnterGameName => '[ES] Enter game name';
+  String get playtimeEnterGameName => 'Ingresar nombre del juego';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      '[ES] Please login to access family features';
+      'Por favor inicia sesión para acceder a las funciones familiares';
 
   @override
-  String get myInvites => '[ES] My Invites';
+  String get myInvites => 'Mis invitaciones';
 
   @override
   String get createGame => '[ES] Create Game';
 
   @override
-  String get groupNameOptional => '[ES] Group Name (Optional)';
+  String get groupNameOptional => 'Nombre del grupo (opcional)';
 
   @override
-  String get playtimeNoSessions => '[ES] No playtime sessions found.';
+  String get playtimeNoSessions => 'No hay sesiones';
 
   @override
-  String get adminScreenTBD => '[ES] Admin screen coming soon';
+  String get adminScreenTBD => 'Pantalla de administrador (Pendiente)';
 
   @override
-  String get playtimeParentDashboardTitle => '[ES] Playtime Dashboard';
+  String get playtimeParentDashboardTitle => 'Panel de padres';
 
   @override
-  String get close => '[ES] Close';
+  String get close => 'Cerrar';
 
   @override
-  String get knownGroupDetected => '[ES] Known group detected';
+  String get knownGroupDetected => 'Grupo conocido detectado';
 
   @override
-  String get back => '[ES] Back';
+  String get back => 'Atrás';
 
   @override
-  String get playtimeChooseGame => '[ES] Choose a game';
+  String get playtimeChooseGame => 'Elegir juego';
 
   @override
-  String get managePermissions => '[ES] Manage Permissions';
+  String get managePermissions => 'Gestionar permisos';
 
   @override
-  String get pollOptions => '[ES] Poll Options';
+  String get pollOptions => 'Opciones de encuesta';
 
   @override
   String clicked(Object count) {
-    return '[ES] Clicked';
+    return 'Hace clic';
   }
 
   @override
   String link(Object link) {
-    return '[ES] Link';
+    return 'Enlace';
   }
 
   @override
-  String get meetingReadyMessage => '[ES] Your meeting is ready! Join now';
+  String get meetingReadyMessage => 'Mensaje de reunión lista';
 
   @override
-  String get pendingInvites => '[ES] Pending Invites';
+  String get pendingInvites => 'Invitaciones pendientes';
 
   @override
   String statusColon(Object status) {
-    return '[ES] Status:';
+    return 'Estado:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      '[ES] Please log in to view your profile.';
+      'Por favor inicia sesión para ver el perfil';
 
   @override
-  String get adminMetrics => 'Admin Metrics';
+  String get adminMetrics => 'Métricas de administrador';
 
   @override
   String get overview => 'Overview';
@@ -562,10 +560,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get bookings => 'Bookings';
 
   @override
-  String get users => 'users (TRANSLATE)';
+  String get users => 'Usuarios';
 
   @override
-  String get revenue => 'revenue (TRANSLATE)';
+  String get revenue => 'Ingresos';
 
   @override
   String get contentLibrary => 'Content Library';
@@ -846,6 +844,3181 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get authErrorUnknown => 'An unknown authentication error occurred.';
+
+  @override
+  String get checkingPermissions1 => 'Checking permissions...';
+
+  @override
+  String get paymentSuccessful => 'Payment Successful!';
+
+  @override
+  String get businessAvailability => 'Business Availability';
+
+  @override
+  String get send => 'Send';
+
+  @override
+  String newNotificationPayloadtitle(Object payload_title) {
+    return 'New notification: $payload_title';
+  }
+
+  @override
+  String get gameList => 'Game List';
+
+  @override
+  String get deleteAvailability => 'Delete Availability';
+
+  @override
+  String get connectToGoogleCalendar => 'Connect to Google Calendar';
+
+  @override
+  String get adminFreeAccess => 'Acceso libre de administrador';
+
+  @override
+  String emailProfileemail(Object profile_email, Object payload_title) {
+    return 'Email: $profile_email';
+  }
+
+  @override
+  String get calendar => 'Calendar';
+
+  @override
+  String get upload1 => 'Upload';
+
+  @override
+  String get resolved => 'Resolved';
+
+  @override
+  String get keepSubscription => 'Keep Subscription';
+
+  @override
+  String get virtualSessionCreatedInvitingFriends =>
+      'Virtual session created! Inviting friends...';
+
+  @override
+  String get noEventsScheduledForToday => 'No events scheduled for today';
+
+  @override
+  String get exportData => 'Export Data';
+
+  @override
+  String get rewards => 'Rewards';
+
+  @override
+  String get time => 'Time';
+
+  @override
+  String userCid(Object profile_email, Object payload_title, Object c_id) {
+    return 'User $c_id';
+  }
+
+  @override
+  String get noSlots => 'No slots';
+
+  @override
+  String get signIn => 'Sign In';
+
+  @override
+  String get homeFeedScreen => 'Home Feed Screen';
+
+  @override
+  String get selectLocation => 'Select Location';
+
+  @override
+  String get noTicketsYet => 'No tickets yet';
+
+  @override
+  String get meetingSharedSuccessfully1 => 'Meeting shared successfully!';
+
+  @override
+  String get studioProfile => 'Studio Profile';
+
+  @override
+  String get subscriptionUnavailable => 'Subscription unavailable';
+
+  @override
+  String get confirmBooking => 'Confirm Booking';
+
+  @override
+  String get failedToUpdatePermissionE => 'Failed to update permission: \$e';
+
+  @override
+  String get reject => 'Reject';
+
+  @override
+  String ambassadorStatusAmbassadorstatus(Object profile_email,
+      Object payload_title, Object c_id, Object ambassador_status) {
+    return 'Ambassador Status: $ambassador_status';
+  }
+
+  @override
+  String get noProviders => 'No providers';
+
+  @override
+  String get checkingSubscription => 'Checking subscription...';
+
+  @override
+  String errorPickingImageE(Object e) {
+    return 'Error picking image: \$e';
+  }
+
+  @override
+  String get noContentAvailableYet => 'No content available yet';
+
+  @override
+  String get resolve => 'Resolve';
+
+  @override
+  String get errorLoadingSurveysError => 'Error loading surveys: \$error';
+
+  @override
+  String errorLogerrormessage(Object profile_email, Object log_errorMessage,
+      Object c_id, Object ambassador_status, Object payload_title) {
+    return 'Error: $log_errorMessage';
+  }
+
+  @override
+  String get getHelpWithYourAccount => 'Get help with your account';
+
+  @override
+  String get pay => 'Pay';
+
+  @override
+  String get noOrganizations => 'Sin organizaciones';
+
+  @override
+  String get meetingDetails => 'Detalles de la reunión';
+
+  @override
+  String get errorLoadingAppointments => 'Error loading appointments';
+
+  @override
+  String get changesSavedSuccessfully => 'Changes saved successfully!';
+
+  @override
+  String get createNewInvoice => 'Create New Invoice';
+
+  @override
+  String get profileNotFound => 'Profile not found.';
+
+  @override
+  String errorConfirmingPaymentE(Object e) {
+    return 'Error confirming payment: \$e';
+  }
+
+  @override
+  String get inviteFriends => 'Invite Friends';
+
+  @override
+  String get profileSaved => 'Profile saved!';
+
+  @override
+  String get receiveBookingNotificationsViaEmail =>
+      'Receive booking notifications via email';
+
+  @override
+  String valuetointk(
+      Object profile_email,
+      Object value_toInt,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object payload_title) {
+    return '\\\$${value_toInt}K';
+  }
+
+  @override
+  String get deleteAccount => 'Delete Account';
+
+  @override
+  String get profile1 => 'Profile';
+
+  @override
+  String get businessOnboarding => 'Business Onboarding';
+
+  @override
+  String get addNewClient => 'Add New Client';
+
+  @override
+  String get darkMode => 'Dark Mode';
+
+  @override
+  String get addProvider => 'Add Provider';
+
+  @override
+  String noRouteDefinedForStateuripath(
+      Object profile_email,
+      Object value_toInt,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object payload_title,
+      Object state_uri_path) {
+    return 'No route defined for $state_uri_path';
+  }
+
+  @override
+  String get youWillReceiveAConfirmationEmailShortly =>
+      'You will receive a confirmation email shortly.';
+
+  @override
+  String get addQuestion => 'Add Question';
+
+  @override
+  String get privacyPolicy => 'Privacy Policy';
+
+  @override
+  String branchesLengthBranches(
+      Object profile_email,
+      Object value_toInt,
+      Object branches_length,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object payload_title,
+      Object state_uri_path) {
+    return '$branches_length branches';
+  }
+
+  @override
+  String get join => 'Join';
+
+  @override
+  String get businessSubscription => 'Business Subscription';
+
+  @override
+  String get myInvites1 => 'My Invites';
+
+  @override
+  String get providers => 'Providers';
+
+  @override
+  String get surveyManagement => 'Survey Management';
+
+  @override
+  String get pleaseEnterAValidEmailOrPhone =>
+      'Please enter a valid email or phone';
+
+  @override
+  String get noRoomsFoundAddYourFirstRoom =>
+      'No rooms found. Add your first room!';
+
+  @override
+  String get readOurPrivacyPolicy => 'Read our privacy policy';
+
+  @override
+  String get couldNotOpenPrivacyPolicy => 'Could not open privacy policy';
+
+  @override
+  String get refresh1 => 'Refresh';
+
+  @override
+  String get roomUpdatedSuccessfully => 'Room updated successfully!';
+
+  @override
+  String get contentDetail => 'Content Detail';
+
+  @override
+  String get cancelSubscription => 'Cancel Subscription';
+
+  @override
+  String get successfullyRegisteredAsAmbassador =>
+      'Successfully registered as Ambassador!';
+
+  @override
+  String get save1 => 'Save';
+
+  @override
+  String get copy1 => 'Copy';
+
+  @override
+  String get failedToSendInvitationE => 'Failed to send invitation: \$e';
+
+  @override
+  String get surveyScore => 'Survey Score';
+
+  @override
+  String get userUserid => 'User \$userId';
+
+  @override
+  String get noAppointmentsFound => 'No appointments found.';
+
+  @override
+  String get responseDetail => 'Response Detail';
+
+  @override
+  String get businessVerificationScreenComingSoon =>
+      'Business Verification Screen - Coming Soon';
+
+  @override
+  String get businessProfileActivatedSuccessfully =>
+      'Business profile activated successfully!';
+
+  @override
+  String get failedToStartProSubscriptionE =>
+      'Failed to start Pro subscription: \$e';
+
+  @override
+  String get businessDashboardEntryScreenComingSoon =>
+      'Business Dashboard Entry Screen - Coming Soon';
+
+  @override
+  String get contentFilter => 'Content Filter';
+
+  @override
+  String get helpSupport => 'Help & Support';
+
+  @override
+  String get editRoom => 'Edit Room';
+
+  @override
+  String appointmentApptid(
+      Object profile_email,
+      Object value_toInt,
+      Object branches_length,
+      Object appt_id,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object payload_title,
+      Object state_uri_path) {
+    return 'Appointment: $appt_id';
+  }
+
+  @override
+  String deviceLogdeviceinfo(
+      Object profile_email,
+      Object value_toInt,
+      Object branches_length,
+      Object appt_id,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object log_deviceInfo,
+      Object payload_title,
+      Object state_uri_path,
+      Object log_deviceinfo) {
+    return 'Device: $log_deviceInfo';
+  }
+
+  @override
+  String get businessCrmEntryScreenComingSoon =>
+      'Business CRM Entry Screen - Coming Soon';
+
+  @override
+  String get adminDashboard => 'Panel de administrador';
+
+  @override
+  String orgmemberidslengthMembers(
+      Object profile_email,
+      Object value_toInt,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object appt_id,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object log_deviceInfo,
+      Object payload_title,
+      Object state_uri_path) {
+    return '$org_memberIds_length members';
+  }
+
+  @override
+  String get errorLoadingDashboardError => 'Error loading dashboard: \$error';
+
+  @override
+  String get gameDeletedSuccessfully => 'Game deleted successfully!';
+
+  @override
+  String get viewResponsesComingSoon => 'View responses - Coming soon!';
+
+  @override
+  String get deleteProvider => 'Delete Provider';
+
+  @override
+  String get errorLoadingRewards => 'Error loading rewards';
+
+  @override
+  String get failedToDeleteAccountE => 'Failed to delete account: \$e';
+
+  @override
+  String get invited1 => 'Invited';
+
+  @override
+  String get noBranchesAvailable => 'No branches available';
+
+  @override
+  String get errorError => 'Error: \$error';
+
+  @override
+  String get noEvents => 'No events';
+
+  @override
+  String get gameCreatedSuccessfully => 'Game created successfully!';
+
+  @override
+  String get add1 => 'Add';
+
+  @override
+  String get creatorCreatorid => 'Creator: \$creatorId';
+
+  @override
+  String eventstarttimeEventendtime(
+      Object event_startTime,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object appt_id,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object log_deviceInfo,
+      Object payload_title,
+      Object state_uri_path) {
+    return '$event_startTime - $event_endTime';
+  }
+
+  @override
+  String get allowPlaytime => 'Allow Playtime';
+
+  @override
+  String get clients => 'Clients';
+
+  @override
+  String get noAmbassadorDataAvailable => 'No ambassador data available';
+
+  @override
+  String get backgroundDeletedSuccessfully =>
+      'Background deleted successfully!';
+
+  @override
+  String errorSnapshoterror(
+      Object event_startTime,
+      Object snapshot_error,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object appt_id,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object log_deviceInfo,
+      Object payload_title,
+      Object state_uri_path) {
+    return 'Error: $snapshot_error';
+  }
+
+  @override
+  String get noAnalyticsDataAvailableYet => 'No analytics data available yet.';
+
+  @override
+  String errorDeletingSlotE(Object e) {
+    return 'Error deleting slot: \$e';
+  }
+
+  @override
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      'Business Phone Booking Entry Screen - Coming Soon';
+
+  @override
+  String get verification => 'Verification';
+
+  @override
+  String get copyLink => 'Copy Link';
+
+  @override
+  String get dashboard1 => 'Dashboard';
+
+  @override
+  String get manageChildAccounts => 'Manage Child Accounts';
+
+  @override
+  String get grantConsent => 'Grant Consent';
+
+  @override
+  String get myProfile1 => 'My Profile';
+
+  @override
+  String get submit => 'Submit';
+
+  @override
+  String userLoguseremail(
+      Object event_startTime,
+      Object snapshot_error,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object appt_id,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object log_deviceInfo,
+      Object payload_title,
+      Object state_uri_path) {
+    return 'User: $log_userEmail';
+  }
+
+  @override
+  String get emailNotifications => 'Email Notifications';
+
+  @override
+  String get ambassadorDashboard => 'Ambassador Dashboard';
+
+  @override
+  String get phoneBooking => 'Phone Booking';
+
+  @override
+  String get bookViaChat => 'Book via Chat';
+
+  @override
+  String get error => 'Error';
+
+  @override
+  String get businessProfile => 'Business Profile';
+
+  @override
+  String get businessBookingEntryScreenComingSoon =>
+      'Business Booking Entry Screen - Coming Soon';
+
+  @override
+  String get createNewSurvey => 'Create New Survey';
+
+  @override
+  String get backgroundRejected => 'Background rejected';
+
+  @override
+  String get noMediaSelected => 'No media selected';
+
+  @override
+  String get syncToGoogle => 'Sync to Google';
+
+  @override
+  String get virtualPlaytime => 'Virtual Playtime';
+
+  @override
+  String get colorContrastTesting => 'Color Contrast Testing';
+
+  @override
+  String get loginFailedE => 'Login failed: \$e';
+
+  @override
+  String get invitationSentSuccessfully => 'Invitation sent successfully!';
+
+  @override
+  String get registering => 'Registering...';
+
+  @override
+  String statusAppointmentstatusname(
+      Object event_startTime,
+      Object snapshot_error,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object log_userEmail,
+      Object appointment_status_name,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object appt_id,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object log_deviceInfo,
+      Object payload_title,
+      Object state_uri_path) {
+    return 'Status: $appointment_status_name';
+  }
+
+  @override
+  String get home1 => 'Home';
+
+  @override
+  String get errorSavingSettingsE => 'Error saving settings: \$e';
+
+  @override
+  String get appVersionAndInformation => 'App version and information';
+
+  @override
+  String get businessSubscriptionEntryScreenComingSoon =>
+      'Business Subscription Entry Screen - Coming Soon';
+
+  @override
+  String ekeyEvalue(
+      Object event_startTime,
+      Object snapshot_error,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_userEmail,
+      Object appointment_status_name,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object appt_id,
+      Object log_errorMessage,
+      Object c_id,
+      Object ambassador_status,
+      Object log_deviceInfo,
+      Object payload_title,
+      Object state_uri_path,
+      Object e_value) {
+    return '$e_key: $e_value';
+  }
+
+  @override
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      'Your payment has been processed successfully.';
+
+  @override
+  String get errorE => 'Error: \$e';
+
+  @override
+  String get viewAll1 => 'View All';
+
+  @override
+  String get editSurveyComingSoon => 'Edit survey - Coming soon!';
+
+  @override
+  String get enterOtp => 'Enter OTP';
+
+  @override
+  String get payment => 'Payment';
+
+  @override
+  String get automaticallyConfirmNewBookingRequests =>
+      'Automatically confirm new booking requests';
+
+  @override
+  String errorPickingVideoE(Object e) {
+    return 'Error picking video: \$e';
+  }
+
+  @override
+  String noRouteDefinedForSettingsname(
+      Object appointment_status_name,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_status,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object state_uri_path) {
+    return 'No route defined for $settings_name';
+  }
+
+  @override
+  String get pleaseSignInToUploadABackground =>
+      'Please sign in to upload a background';
+
+  @override
+  String logtargettypeLogtargetid(
+      Object appointment_status_name,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_status,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object state_uri_path,
+      Object log_targetType) {
+    return '$log_targetType: $log_targetId';
+  }
+
+  @override
+  String get staffAvailability => 'Staff Availability';
+
+  @override
+  String get livePlaytime => 'Live Playtime';
+
+  @override
+  String get autoconfirmBookings => 'Auto-Confirm Bookings';
+
+  @override
+  String get redirectingToStripeCheckoutForProPlan =>
+      'Redirecting to Stripe checkout for Pro plan...';
+
+  @override
+  String get exportAsCsv => 'Export as CSV';
+
+  @override
+  String get deleteFunctionalityComingSoon =>
+      'Delete functionality coming soon!';
+
+  @override
+  String get editClient => 'Edit Client';
+
+  @override
+  String get areYouSureYouWantToDeleteThisMessage =>
+      'Are you sure you want to delete this message?';
+
+  @override
+  String referralsAmbassadorreferrals(
+      Object appointment_status_name,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object ambassador_status,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Referrals: $ambassador_referrals';
+  }
+
+  @override
+  String get notAuthenticated => 'Not authenticated';
+
+  @override
+  String get privacyRequestSentToYourParents =>
+      'Privacy request sent to your parents!';
+
+  @override
+  String get clientDeletedSuccessfully => 'Client deleted successfully!';
+
+  @override
+  String get failedToCancelSubscription => 'Failed to cancel subscription';
+
+  @override
+  String get allLanguages => 'All Languages';
+
+  @override
+  String get slotDeletedSuccessfully => 'Slot deleted successfully';
+
+  @override
+  String get businessProvidersEntryScreenComingSoon =>
+      'Business Providers Entry Screen - Coming Soon';
+
+  @override
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      'Parents must approve before children can join';
+
+  @override
+  String get subscribeToPro1499mo => 'Subscribe to Pro (€14.99/mo)';
+
+  @override
+  String get businessAvailabilityEntryScreenComingSoon =>
+      'Business Availability Entry Screen - Coming Soon';
+
+  @override
+  String appointmentsListlength(
+      Object appointment_status_name,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object list_length,
+      Object ambassador_status,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Appointments: $list_length';
+  }
+
+  @override
+  String get clearFilters => 'Clear Filters';
+
+  @override
+  String get submitBooking => 'Submit Booking';
+
+  @override
+  String get areYouSureYouWantToCancelThisAppointment =>
+      'Are you sure you want to cancel this appointment?';
+
+  @override
+  String get noUpcomingBookings => 'No upcoming bookings';
+
+  @override
+  String get goBack => 'Go Back';
+
+  @override
+  String get setup => 'Setup';
+
+  @override
+  String get inviteChild => 'Invite Child';
+
+  @override
+  String get goToDashboard => 'Go to Dashboard';
+
+  @override
+  String get ambassadorQuotaDashboard => 'Ambassador Quota Dashboard';
+
+  @override
+  String get adminSettings => 'Configuración de administrador';
+
+  @override
+  String get referralCode => 'Referral Code';
+
+  @override
+  String adminLogadminemail(
+      Object appointment_status_name,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Admin: $log_adminEmail';
+  }
+
+  @override
+  String get date => 'Date';
+
+  @override
+  String get readOnly => 'Read Only';
+
+  @override
+  String get bookingRequest => 'Booking Request';
+
+  @override
+  String get advancedReporting => '• Advanced reporting';
+
+  @override
+  String get rooms => 'Rooms';
+
+  @override
+  String get copiedToClipboard => 'Copied to clipboard';
+
+  @override
+  String get bookingConfirmed => 'Booking Confirmed';
+
+  @override
+  String get sessionApproved => 'Session approved!';
+
+  @override
+  String get clientAddedSuccessfully => 'Client added successfully!';
+
+  @override
+  String get noNotifications => 'No notifications';
+
+  @override
+  String get backgroundApproved => 'Background approved!';
+
+  @override
+  String get familySupport => 'Family Support';
+
+  @override
+  String get deletingAccount => 'Deleting account...';
+
+  @override
+  String get bookAppointment => 'Book Appointment';
+
+  @override
+  String get receivePushNotificationsForNewBookings =>
+      'Receive push notifications for new bookings';
+
+  @override
+  String get delete1 => 'Delete';
+
+  @override
+  String get sendBookingInvite => 'Send Booking Invite';
+
+  @override
+  String get text => 'Text';
+
+  @override
+  String get manageSubscription => 'Manage Subscription';
+
+  @override
+  String get requiresInstallFallback => 'Requires Install Fallback';
+
+  @override
+  String get paymentConfirmation => 'Payment Confirmation';
+
+  @override
+  String get promoAppliedYourNextBillIsFree =>
+      'Promo applied! Your next bill is free.';
+
+  @override
+  String inviteeArgsinviteeid(
+      Object appointment_status_name,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object state_uri_path,
+      Object log_targetType,
+      Object args_inviteeid) {
+    return 'Invitee: $args_inviteeId';
+  }
+
+  @override
+  String get errorLoadingSlots => 'Error loading slots';
+
+  @override
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      'Allow other users to find and join this game';
+
+  @override
+  String get businessOnboardingScreenComingSoon =>
+      'Business Onboarding Screen - Coming Soon';
+
+  @override
+  String get activateBusinessProfile => 'Activate Business Profile';
+
+  @override
+  String get contentNotFound => 'Content not found';
+
+  @override
+  String pspecialtynpcontactinfo(
+      Object appointment_status_name,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return '$p_specialty\\n$p_contactInfo';
+  }
+
+  @override
+  String get rating => 'Rating';
+
+  @override
+  String get messages => 'Messages';
+
+  @override
+  String errorEstimatingRecipientsE(Object e) {
+    return 'Error estimating recipients: \$e';
+  }
+
+  @override
+  String get becomeAnAmbassador => 'Become an Ambassador';
+
+  @override
+  String get subscribeNow => 'Subscribe Now';
+
+  @override
+  String timeArgsslotformatcontext(
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Time: $args_slot_format_context';
+  }
+
+  @override
+  String get shareViaWhatsapp => 'Share via WhatsApp';
+
+  @override
+  String get users1 => 'Users';
+
+  @override
+  String get shareLink => 'Share Link';
+
+  @override
+  String get areYouSureYouWantToDeleteThisProvider =>
+      'Are you sure you want to delete this provider?';
+
+  @override
+  String get deleteAppointment => 'Delete Appointment';
+
+  @override
+  String get toggleAvailability => 'Toggle Availability';
+
+  @override
+  String get changePlan => 'Change Plan';
+
+  @override
+  String get errorLoadingStaff => 'Error loading staff';
+
+  @override
+  String errorLoadingConfigurationE(Object e) {
+    return 'Error loading configuration: \$e';
+  }
+
+  @override
+  String get updateYourBusinessInformation =>
+      'Update your business information';
+
+  @override
+  String get noProvidersFoundAddYourFirstProvider =>
+      'No providers found. Add your first provider!';
+
+  @override
+  String get parentDashboard => 'Parent Dashboard';
+
+  @override
+  String get menu => 'Menu';
+
+  @override
+  String get studioBooking => 'Studio Booking';
+
+  @override
+  String get about1 => 'About';
+
+  @override
+  String get multipleChoice => 'Multiple Choice';
+
+  @override
+  String dateAppointmentscheduledattostring(
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Date: $appointment_scheduledAt_toString';
+  }
+
+  @override
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      'Studio booking is only available on web';
+
+  @override
+  String get errorLoadingBranchesE => 'Error loading branches: \$e';
+
+  @override
+  String ud83dudcc5Bookingdatetimetolocal(
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return '\\uD83D\\uDCC5 $booking_dateTime_toLocal';
+  }
+
+  @override
+  String appointmentInviteappointmentid(
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType,
+      Object appointment_id) {
+    return 'Appointment: $invite_appointmentId';
+  }
+
+  @override
+  String get none => 'None';
+
+  @override
+  String get failedToUpdateConsentE => 'Failed to update consent: \$e';
+
+  @override
+  String get welcome1 => 'Welcome';
+
+  @override
+  String get failedToCreateSessionE => 'Failed to create session: \$e';
+
+  @override
+  String get inviteContact => 'Invite Contact';
+
+  @override
+  String get surveyEditor => 'Survey Editor';
+
+  @override
+  String get failedToStartBasicSubscriptionE =>
+      'Failed to start Basic subscription: \$e';
+
+  @override
+  String get mySchedule => 'My Schedule';
+
+  @override
+  String get studioDashboard => 'Studio Dashboard';
+
+  @override
+  String get editProfile => 'Edit Profile';
+
+  @override
+  String get logout1 => 'Logout';
+
+  @override
+  String serviceServiceidNotSelected(
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Service: $serviceId_Not_selected';
+  }
+
+  @override
+  String get settingsSavedSuccessfully => 'Settings saved successfully!';
+
+  @override
+  String get linkCopiedToClipboard => 'Link copied to clipboard!';
+
+  @override
+  String get accept1 => 'Accept';
+
+  @override
+  String get noAvailableSlots => 'No available slots';
+
+  @override
+  String get makeGamePublic => 'Make Game Public';
+
+  @override
+  String permissionPermissioncategoryUpdatedToNewvalue(
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Permission $permission_category updated to \$newValue';
+  }
+
+  @override
+  String get roomDeletedSuccessfully => 'Room deleted successfully!';
+
+  @override
+  String get businessCalendar => 'Business Calendar';
+
+  @override
+  String get addAvailability => 'Add Availability';
+
+  @override
+  String get ambassadorOnboarding => 'Ambassador Onboarding';
+
+  @override
+  String phoneProfileasyncphone(
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Phone: $profileAsync_phone';
+  }
+
+  @override
+  String get addNewRoom => 'Add New Room';
+
+  @override
+  String get requireParentApproval => 'Require Parent Approval';
+
+  @override
+  String get closed => 'Closed';
+
+  @override
+  String get exportAsPdf => 'Export as PDF';
+
+  @override
+  String get enableVibration => 'Enable Vibration';
+
+  @override
+  String toAvailendformatcontext(
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'To: $avail_end_format_context';
+  }
+
+  @override
+  String get yourUpgradeCodeUpgradecode => 'Your upgrade code: \$upgradeCode';
+
+  @override
+  String get requestPrivateSession => 'Solicitar sesión privada';
+
+  @override
+  String get country => 'Country';
+
+  @override
+  String get loginScreen => 'Login Screen';
+
+  @override
+  String staffArgsstaffdisplayname(
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Staff: $args_staff_displayName';
+  }
+
+  @override
+  String get revokeConsent => 'Revoke Consent';
+
+  @override
+  String get settings1 => 'Settings';
+
+  @override
+  String get cancel1 => 'Cancel';
+
+  @override
+  String get subscriptionActivatedSuccessfully =>
+      'Subscription activated successfully!';
+
+  @override
+  String activityLogaction(
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Activity: $log_action';
+  }
+
+  @override
+  String get broadcast => 'Broadcast';
+
+  @override
+  String get noEventsScheduledThisWeek => 'No events scheduled this week';
+
+  @override
+  String get googleCalendar => 'Google Calendar';
+
+  @override
+  String get sendInvite => 'Send Invite';
+
+  @override
+  String get childDashboard => 'Child Dashboard';
+
+  @override
+  String get failedToUploadBackgroundE => 'Failed to upload background: \$e';
+
+  @override
+  String linkchildidsubstring08(
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return '$link_childId_substring_0_8...';
+  }
+
+  @override
+  String targetLogtargettypeLogtargetid(
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Target: $log_targetType - $log_targetId';
+  }
+
+  @override
+  String get contextContextid => 'Context: \$contextId';
+
+  @override
+  String get noAppointments => 'No appointments';
+
+  @override
+  String get unlimitedBookingsPerWeek => '• Unlimited bookings per week';
+
+  @override
+  String errorDetailsLogerrortype(
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType,
+      Object log_errortype) {
+    return 'Error Details: $log_errorType';
+  }
+
+  @override
+  String get scheduledAtScheduledat => 'Scheduled at: \$scheduledAt';
+
+  @override
+  String get selectStaff => 'Select Staff';
+
+  @override
+  String get subscriptionCancelledSuccessfully =>
+      'Subscription cancelled successfully';
+
+  @override
+  String get pleaseLogInToViewYourProfile =>
+      'Please log in to view your profile.';
+
+  @override
+  String get cancelAppointment => 'Cancel Appointment';
+
+  @override
+  String permissionsFamilylinkchildid(
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType,
+      Object childid) {
+    return 'Permissions - $familyLink_childId';
+  }
+
+  @override
+  String get businessSignup => 'Business Signup';
+
+  @override
+  String get businessCompletionScreenComingSoon =>
+      'Business Completion Screen - Coming Soon';
+
+  @override
+  String get createGame1 => 'Create Game';
+
+  @override
+  String valuetoint(
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return '$value_toInt';
+  }
+
+  @override
+  String get pleaseEnterAPromoCode => 'Please enter a promo code';
+
+  @override
+  String get errorLoadingAvailabilityE => 'Error loading availability: \$e';
+
+  @override
+  String get parentalControls => 'Parental Controls';
+
+  @override
+  String get editBusinessProfile => 'Edit Business Profile';
+
+  @override
+  String get childLinkedSuccessfully => 'Child linked successfully!';
+
+  @override
+  String get create => 'Create';
+
+  @override
+  String get noExternalMeetingsFound => 'No external meetings found.';
+
+  @override
+  String staffSelectionstaffdisplayname(
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Staff: $selection_staff_displayName';
+  }
+
+  @override
+  String get pleaseEnterAValidEmailAddress =>
+      'Please enter a valid email address';
+
+  @override
+  String get schedulerScreen => 'Scheduler Screen';
+
+  @override
+  String get clientUpdatedSuccessfully => 'Client updated successfully!';
+
+  @override
+  String get surveyResponses => 'Survey Responses';
+
+  @override
+  String get syncToOutlook => 'Sync to Outlook';
+
+  @override
+  String get saveChanges => 'Save Changes';
+
+  @override
+  String get pickTime => 'Pick Time';
+
+  @override
+  String registrationFailedEtostring(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Registration failed: $e_toString';
+  }
+
+  @override
+  String get analytics => 'Analytics';
+
+  @override
+  String get errorLoadingEvents => 'Error loading events';
+
+  @override
+  String get errorLoadingOrganizations => 'Error al cargar organizaciones';
+
+  @override
+  String get businessLoginScreenComingSoon =>
+      'Business Login Screen - Coming Soon';
+
+  @override
+  String get success1 => 'Success';
+
+  @override
+  String appVersionLogappversion(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object appointment_scheduledAt_toString,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType,
+      Object log_appversion) {
+    return 'App Version: $log_appVersion';
+  }
+
+  @override
+  String fromAvailstartformatcontext(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'From: $avail_start_format_context';
+  }
+
+  @override
+  String get readWrite => 'Read & Write';
+
+  @override
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      'Redirecting to Stripe checkout for Basic plan...';
+
+  @override
+  String get errorSavingConfigurationE => 'Error saving configuration: \$e';
+
+  @override
+  String get pickDate => 'Pick Date';
+
+  @override
+  String get chatBooking => 'Chat Booking';
+
+  @override
+  String get noQuestionsAdded => 'No questions added';
+
+  @override
+  String severityLogseverityname(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Severity: $log_severity_name';
+  }
+
+  @override
+  String get markAsPaid => 'Mark as Paid';
+
+  @override
+  String get typeOpenCall => 'Type: Open Call';
+
+  @override
+  String appointmentAppointmentid(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object serviceId_Not_selected,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Appointment $appointment_id';
+  }
+
+  @override
+  String statusInvitestatusname(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object serviceId_Not_selected,
+      Object invite_status_name,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType,
+      Object invite_statusname) {
+    return 'Status: $invite_status_name';
+  }
+
+  @override
+  String get businessLogin => 'Business Login';
+
+  @override
+  String get invoiceCreatedSuccessfully => 'Invoice created successfully!';
+
+  @override
+  String get noTimeSeriesDataAvailable => 'No time series data available';
+
+  @override
+  String subscribeToWidgetplanname(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object widget_planName,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object serviceId_Not_selected,
+      Object invite_status_name,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType,
+      Object widget_planname) {
+    return 'Subscribe to $widget_planName';
+  }
+
+  @override
+  String timestamp_formatdatelogtimestamp(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object widget_planName,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object serviceId_Not_selected,
+      Object invite_status_name,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object formatDate_log_timestamp,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Timestamp: $formatDate_log_timestamp';
+  }
+
+  @override
+  String get failedToSendPrivacyRequestE =>
+      'Failed to send privacy request: \$e';
+
+  @override
+  String get chooseYourPlan => 'Choose Your Plan';
+
+  @override
+  String get playtimeManagement => 'Playtime Management';
+
+  @override
+  String get availability => 'Availability';
+
+  @override
+  String get eventCreated => 'Event created';
+
+  @override
+  String get subscribeToBasic499mo => 'Subscribe to Basic (€4.99/mo)';
+
+  @override
+  String get completion => 'Completion';
+
+  @override
+  String get supportTicketSubmitted => 'Support ticket submitted';
+
+  @override
+  String get monetizationSettings => 'Monetization Settings';
+
+  @override
+  String get noBookingsFound => 'No bookings found';
+
+  @override
+  String get admin => 'Administrador';
+
+  @override
+  String get deleteSurvey => 'Delete Survey';
+
+  @override
+  String get gameApprovedSuccessfully => 'Game approved successfully!';
+
+  @override
+  String get errorLoadingPermissionsError =>
+      'Error loading permissions: \$error';
+
+  @override
+  String get referrals => 'Referrals';
+
+  @override
+  String get crm => 'CRM';
+
+  @override
+  String get gameRejected => 'Game rejected';
+
+  @override
+  String get appointments => 'Appointments';
+
+  @override
+  String get onboardingScreen => 'Onboarding Screen';
+
+  @override
+  String get welcomeToYourStudio => 'Welcome to your studio';
+
+  @override
+  String get update => 'Update';
+
+  @override
+  String get retry1 => 'Retry';
+
+  @override
+  String get booking => 'Booking';
+
+  @override
+  String get parentalSettings => 'Parental Settings';
+
+  @override
+  String get language => 'Language';
+
+  @override
+  String get deleteSlot => 'Delete Slot';
+
+  @override
+  String get organizations => 'Organizaciones';
+
+  @override
+  String get configurationSavedSuccessfully =>
+      'Configuration saved successfully!';
+
+  @override
+  String get createNewGame => 'Create New Game';
+
+  @override
+  String get next1 => 'Next';
+
+  @override
+  String get backgroundUploadedSuccessfully =>
+      'Background uploaded successfully!';
+
+  @override
+  String get noAppointmentRequestsFound => 'No appointment requests found.';
+
+  @override
+  String get pleaseSignInToCreateASession =>
+      'Please sign in to create a session';
+
+  @override
+  String get restrictMatureContent => 'Restrict mature content';
+
+  @override
+  String get ambassadors => 'Ambassadors';
+
+  @override
+  String get smsNotifications => 'SMS Notifications';
+
+  @override
+  String get paymentWasCancelled => 'Payment was cancelled';
+
+  @override
+  String get clearAll => 'Clear All';
+
+  @override
+  String get viewDetails => 'View Details';
+
+  @override
+  String get notifications1 => 'Notifications';
+
+  @override
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'Live session scheduled! Waiting for parent approval...';
+
+  @override
+  String get failedToCreateGameE => 'Failed to create game: \$e';
+
+  @override
+  String get noChartDataAvailable => 'No chart data available';
+
+  @override
+  String get phonebasedBookingSystem => '• Phone-based booking system';
+
+  @override
+  String get enableNotifications1 => 'Enable Notifications';
+
+  @override
+  String get invoices => 'Invoices';
+
+  @override
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'Please activate your business profile to continue.';
+
+  @override
+  String scheduledAtArgsscheduledat(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object widget_planName,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object args_scheduledAt,
+      Object serviceId_Not_selected,
+      Object invite_status_name,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object formatDate_log_timestamp,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Scheduled at: $args_scheduledAt';
+  }
+
+  @override
+  String durationDurationinminutes0Minutes(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object widget_planName,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object args_scheduledAt,
+      Object serviceId_Not_selected,
+      Object invite_status_name,
+      Object duration_inMinutes_0,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object formatDate_log_timestamp,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Duration: $duration_inMinutes_0 minutes';
+  }
+
+  @override
+  String get tryAgain => 'Try Again';
+
+  @override
+  String get deleteBackground => 'Delete Background';
+
+  @override
+  String currentTierTiertouppercase(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object tier_toUpperCase,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object widget_planName,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object args_scheduledAt,
+      Object serviceId_Not_selected,
+      Object invite_status_name,
+      Object duration_inMinutes_0,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object formatDate_log_timestamp,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Current Tier: $tier_toUpperCase';
+  }
+
+  @override
+  String get iDoNotConsent => 'I Do Not Consent';
+
+  @override
+  String get noClientsFoundAddYourFirstClient =>
+      'No clients found. Add your first client!';
+
+  @override
+  String get settingsDialogWillBeImplementedHere =>
+      'Settings dialog will be implemented here.';
+
+  @override
+  String get groupGroupid => 'Group: \$groupId';
+
+  @override
+  String get appointmentRequests => 'Appointment Requests';
+
+  @override
+  String get forward => 'Forward';
+
+  @override
+  String get roomAddedSuccessfully => 'Room added successfully!';
+
+  @override
+  String get option => '• \$option';
+
+  @override
+  String responseIndex1(
+      Object e_toString,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object tier_toUpperCase,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object widget_planName,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object args_scheduledAt,
+      Object serviceId_Not_selected,
+      Object invite_status_name,
+      Object duration_inMinutes_0,
+      Object index_1,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object formatDate_log_timestamp,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Response #$index_1';
+  }
+
+  @override
+  String get crmDashboardWithAnalytics => '• CRM dashboard with analytics';
+
+  @override
+  String get contentLibrary1 => 'Content Library';
+
+  @override
+  String get reply => 'Reply';
+
+  @override
+  String get subscriptionManagement => 'Subscription Management';
+
+  @override
+  String get monetizationSettingsWillBeImplementedHere =>
+      'Monetization settings will be implemented here';
+
+  @override
+  String get failedToApplyPromoCodeE => 'Failed to apply promo code: \$e';
+
+  @override
+  String get editProvider => 'Edit Provider';
+
+  @override
+  String get localizationContribution => 'Localization Contribution';
+
+  @override
+  String get parentalConsent => 'Parental Consent';
+
+  @override
+  String get businessSignupScreenComingSoon =>
+      'Business Signup Screen - Coming Soon';
+
+  @override
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      'Are you sure you want to delete this appointment?';
+
+  @override
+  String get syncAppointment => 'Sync Appointment';
+
+  @override
+  String get iConsent => 'I Consent';
+
+  @override
+  String get sessionRejected => 'Session rejected';
+
+  @override
+  String get businessSetupScreenComingSoon =>
+      'Business Setup Screen - Coming Soon';
+
+  @override
+  String get edit1 => 'Edit';
+
+  @override
+  String get noEventsScheduledThisMonth => 'No events scheduled this month';
+
+  @override
+  String get businessDashboard => 'Business Dashboard';
+
+  @override
+  String get noMessagesFound => 'No messages found.';
+
+  @override
+  String staffStaffidNotSelected(
+      Object e_toString,
+      Object staffId_Not_selected,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object tier_toUpperCase,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object widget_planName,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object args_scheduledAt,
+      Object serviceId_Not_selected,
+      Object invite_status_name,
+      Object duration_inMinutes_0,
+      Object index_1,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object formatDate_log_timestamp,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Staff: $staffId_Not_selected';
+  }
+
+  @override
+  String get manageStaffAvailability => 'Manage Staff Availability';
+
+  @override
+  String get noMissingTranslations => 'No missing translations';
+
+  @override
+  String get skip => 'Skip';
+
+  @override
+  String meetingIdMeetingid(Object meeting_id) {
+    return 'Meeting ID: \$meetingId';
+  }
+
+  @override
+  String get noUsers => 'Sin usuarios';
+
+  @override
+  String get errorLoadingReferralCode => 'Error loading referral code';
+
+  @override
+  String get allCountries => 'All Countries';
+
+  @override
+  String get deleteGame => 'Delete Game';
+
+  @override
+  String get staffManagementTools => '• Staff management tools';
+
+  @override
+  String get deleteMessage => 'Delete Message';
+
+  @override
+  String get receiveBookingNotificationsViaSms =>
+      'Receive booking notifications via SMS';
+
+  @override
+  String get changeRole => 'Cambiar rol';
+
+  @override
+  String errorLoadingBookingsSnapshoterror(
+      Object e_toString,
+      Object staffId_Not_selected,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object tier_toUpperCase,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object widget_planName,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object args_scheduledAt,
+      Object serviceId_Not_selected,
+      Object invite_status_name,
+      Object duration_inMinutes_0,
+      Object index_1,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object formatDate_log_timestamp,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType,
+      Object error) {
+    return 'Error loading bookings: $snapshot_error';
+  }
+
+  @override
+  String get openingCustomerPortal => 'Opening customer portal...';
+
+  @override
+  String get signOut => 'Sign Out';
+
+  @override
+  String nameProfilename(
+      Object e_toString,
+      Object staffId_Not_selected,
+      Object log_action,
+      Object invite_appointmentId,
+      Object appointment_status_name,
+      Object selection_staff_displayName,
+      Object args_slot_format_context,
+      Object settings_name,
+      Object link_childId_substring_0_8,
+      Object payload_title,
+      Object e_value,
+      Object profileAsync_phone,
+      Object permission_category,
+      Object snapshot_error,
+      Object ambassador_referrals,
+      Object log_adminEmail,
+      Object list_length,
+      Object appointment_id,
+      Object tier_toUpperCase,
+      Object profile_name,
+      Object log_appVersion,
+      Object familyLink_childId,
+      Object ambassador_status,
+      Object args_inviteeId,
+      Object log_errorType,
+      Object widget_planName,
+      Object appointment_scheduledAt_toString,
+      Object avail_start_format_context,
+      Object args_scheduledAt,
+      Object serviceId_Not_selected,
+      Object invite_status_name,
+      Object duration_inMinutes_0,
+      Object index_1,
+      Object event_endTime,
+      Object profile_email,
+      Object value_toInt,
+      Object e_key,
+      Object log_severity_name,
+      Object booking_dateTime_toLocal,
+      Object appt_id,
+      Object log_errorMessage,
+      Object log_deviceInfo,
+      Object formatDate_log_timestamp,
+      Object avail_end_format_context,
+      Object args_staff_displayName,
+      Object log_targetId,
+      Object p_specialty,
+      Object event_startTime,
+      Object log_userEmail,
+      Object branches_length,
+      Object org_memberIds_length,
+      Object c_id,
+      Object p_contactInfo,
+      Object state_uri_path,
+      Object log_targetType) {
+    return 'Name: $profile_name';
+  }
+
+  @override
+  String get businessProfileEntryScreenComingSoon =>
+      'Business Profile Entry Screen - Coming Soon';
+
+  @override
+  String get upgradeToBusiness => 'Upgrade to Business';
+
+  @override
+  String get apply => 'Apply';
+
+  @override
+  String get errorLoadingSubscriptionError =>
+      'Error loading subscription: \$error';
+
+  @override
+  String get errorLoadingUsers => 'Error al cargar usuarios';
+
+  @override
+  String get verify => 'Verify';
+
+  @override
+  String get subscription => 'Subscription';
+
+  @override
+  String get deleteMyAccount => 'Delete My Account';
+
+  @override
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'Business Appointments Entry Screen - Coming Soon';
+
+  @override
+  String get viewResponses => 'View Responses';
+
+  @override
+  String get businessWelcomeScreenComingSoon =>
+      'Business Welcome Screen - Coming Soon';
+
+  @override
+  String get failedToOpenCustomerPortalE =>
+      'Failed to open customer portal: \$e';
+
+  @override
+  String get continueButton => 'Continue';
+
+  @override
+  String get close1 => 'Close';
+
+  @override
+  String get confirm1 => 'Confirm';
+
+  @override
+  String get externalMeetings => 'External Meetings';
+
+  @override
+  String get approve => 'Approve';
+
+  @override
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'No invoices found. Create your first invoice!';
+
+  @override
+  String get subscribe => 'Subscribe';
+
+  @override
+  String get login1 => 'Login';
+
+  @override
+  String get adminOverviewGoesHere => 'Resumen de administrador va aquí';
+
+  @override
+  String get loadingCheckout => 'Loading checkout...';
 }
 
 /// The translations for Spanish Castilian, as used in Latin America and the Caribbean (`es_419`).
@@ -1416,4 +4589,47 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
 
   @override
   String get contentLibrary => 'Content Library';
+
+  @override
+  String get adminFreeAccess => 'Admin Free Access';
+
+  @override
+  String get noOrganizations => 'noOrganizations (TRANSLATE)';
+
+  @override
+  String get meetingDetails => 'meetingDetails (TRANSLATE)';
+
+  @override
+  String get adminDashboard => 'Admin Dashboard';
+
+  @override
+  String get error => '[ES_419] Error';
+
+  @override
+  String get adminSettings => 'Admin Settings';
+
+  @override
+  String get requestPrivateSession => 'requestPrivateSession (TRANSLATE)';
+
+  @override
+  String get errorLoadingOrganizations =>
+      'errorLoadingOrganizations (TRANSLATE)';
+
+  @override
+  String get admin => 'Admin';
+
+  @override
+  String get organizations => 'organizations (TRANSLATE)';
+
+  @override
+  String get noUsers => 'noUsers (TRANSLATE)';
+
+  @override
+  String get changeRole => 'changeRole (TRANSLATE)';
+
+  @override
+  String get errorLoadingUsers => 'errorLoadingUsers (TRANSLATE)';
+
+  @override
+  String get adminOverviewGoesHere => 'Admin overview goes here';
 }

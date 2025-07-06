@@ -21,7 +21,10 @@ LANGUAGE_MAPPING = {
     'urdu': 'ur', 
     'hausa': 'ha',
     'persian': 'fa',
-    'traditional_chinese': 'zh_TW'
+    'traditional_chinese': 'zh_TW',
+    'spanish': 'es',
+    'french': 'fr',
+    'german': 'de'
 }
 
 def load_translations_from_module(module_name):
@@ -54,7 +57,10 @@ def load_all_translations():
         'update_urdu_translations', 
         'update_hausa_translations',
         'update_persian_translations',
-        'update_traditional_chinese_translations'
+        'update_traditional_chinese_translations',
+        'update_spanish_translations',
+        'update_french_translations',
+        'update_german_translations'
     ]
     
     for module_name in modules:
