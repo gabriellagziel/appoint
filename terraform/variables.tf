@@ -16,14 +16,14 @@ variable "monitoring_namespace" {
   default     = "monitoring"
 }
 
-variable "metrics_retention_days" {
-  description = "Prometheus metrics retention period in days"
-  type        = number
+variable "metrics_retention_period" {
+  description = "Prometheus metrics retention period (e.g. 14d)"
+  type        = string
 }
 
-variable "trace_retention_days" {
-  description = "Trace retention period in days"
-  type        = number
+variable "trace_retention_period" {
+  description = "Trace retention period (e.g. 7d)"
+  type        = string
 }
 
 variable "log_bucket_name" {
@@ -31,27 +31,27 @@ variable "log_bucket_name" {
   type        = string
 }
 
-variable "log_retention_days" {
+variable "log_retention_period" {
   description = "Log retention period in days"
   type        = number
 }
 
-variable "api_uptime_target" {
-  description = "Uptime threshold percentage for API availability"
+variable "api_availability_slo_percent" {
+  description = "Target uptime percentage for API availability"
   type        = number
 }
 
 variable "api_p95_latency_ms" {
-  description = "Alert threshold for p95 latency in milliseconds"
+  description = "p95 latency threshold in milliseconds"
   type        = number
 }
 
 variable "api_p99_latency_ms" {
-  description = "Alert threshold for p99 latency in milliseconds"
+  description = "p99 latency threshold in milliseconds"
   type        = number
 }
 
-variable "booking_success_target" {
+variable "booking_success_slo_percent" {
   description = "Booking success rate threshold percentage"
   type        = number
 }
