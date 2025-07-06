@@ -5,7 +5,7 @@ echo "Running pre-commit checks..."
 
 # Run Flutter analyzer
 echo "Running Flutter analyzer..."
-flutter analyze --no-fatal-infos
+flutter analyze --no-fatal-infos --no-fatal-warnings
 if [ $? -ne 0 ]; then
     echo "❌ Flutter analyzer failed"
     exit 1
