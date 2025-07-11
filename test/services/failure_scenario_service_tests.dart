@@ -6,7 +6,7 @@ void main() {
       test('handles Stripe API errors gracefully', () async {
         // Simulate Stripe API failure
         expect(
-          () => _simulatePaymentCreation(0.0),
+          () => _simulatePaymentCreation(0),
           throwsA(isA<PaymentException>()),
         );
       });
@@ -14,7 +14,7 @@ void main() {
       test('handles network connectivity issues', () async {
         // Simulate network failure
         expect(
-          () => _simulateNetworkFailure(),
+          _simulateNetworkFailure,
           throwsA(isA<NetworkException>()),
         );
       });
@@ -22,7 +22,7 @@ void main() {
       test('handles payment timeout errors', () async {
         // Simulate timeout
         expect(
-          () => _simulateTimeout(),
+          _simulateTimeout,
           throwsA(isA<TimeoutException>()),
         );
       });
@@ -30,7 +30,7 @@ void main() {
       test('handles invalid payment data', () async {
         // Simulate validation error
         expect(
-          () => _simulateInvalidPayment(-5.0),
+          () => _simulateInvalidPayment(-5),
           throwsA(isA<ValidationException>()),
         );
       });
@@ -39,21 +39,21 @@ void main() {
     group('Authentication Failures', () {
       test('handles invalid credentials', () async {
         expect(
-          () => _simulateInvalidCredentials(),
+          _simulateInvalidCredentials,
           throwsA(isA<AuthException>()),
         );
       });
 
       test('handles account disabled errors', () async {
         expect(
-          () => _simulateAccountDisabled(),
+          _simulateAccountDisabled,
           throwsA(isA<AuthException>()),
         );
       });
 
       test('handles too many login attempts', () async {
         expect(
-          () => _simulateTooManyAttempts(),
+          _simulateTooManyAttempts,
           throwsA(isA<AuthException>()),
         );
       });
@@ -61,17 +61,17 @@ void main() {
 
     group('Error Recovery Tests', () {
       test('can recover from payment errors', () async {
-        final result = await _simulatePaymentRecovery();
+        result = await _simulatePaymentRecovery();
         expect(result, isTrue);
       });
 
       test('can recover from network errors', () async {
-        final result = await _simulateNetworkRecovery();
+        result = await _simulateNetworkRecovery();
         expect(result, isTrue);
       });
 
       test('can recover from authentication errors', () async {
-        final result = await _simulateAuthRecovery();
+        result = await _simulateAuthRecovery();
         expect(result, isTrue);
       });
     });
@@ -79,8 +79,8 @@ void main() {
     group('Error Message Tests', () {
       test('provides meaningful payment error messages', () {
         try {
-          _simulatePaymentCreation(0.0);
-        } catch (e) {
+          _simulatePaymentCreation(0);
+        } catch (e) {e) {
           expect(e.toString(), contains('Invalid payment amount'));
         }
       });
@@ -88,7 +88,7 @@ void main() {
       test('provides meaningful network error messages', () {
         try {
           _simulateNetworkFailure();
-        } catch (e) {
+        } catch (e) {e) {
           expect(e.toString(), contains('No internet connection'));
         }
       });
@@ -96,7 +96,7 @@ void main() {
       test('provides meaningful auth error messages', () {
         try {
           _simulateInvalidCredentials();
-        } catch (e) {
+        } catch (e) {e) {
           expect(e.toString(), contains('Invalid credentials'));
         }
       });
@@ -140,58 +140,58 @@ void _simulateTooManyAttempts() {
 
 Future<bool> _simulatePaymentRecovery() async {
   // Simulate retry logic
-  await Future.delayed(Duration(milliseconds: 100));
+  await Future.delayed(const Duration(milliseconds: 100));
   return true;
 }
 
 Future<bool> _simulateNetworkRecovery() async {
   // Simulate network recovery
-  await Future.delayed(Duration(milliseconds: 100));
+  await Future.delayed(const Duration(milliseconds: 100));
   return true;
 }
 
 Future<bool> _simulateAuthRecovery() async {
   // Simulate auth recovery
-  await Future.delayed(Duration(milliseconds: 100));
+  await Future.delayed(const Duration(milliseconds: 100));
   return true;
 }
 
 // Custom exception classes for testing
 class PaymentException implements Exception {
-  final String message;
   PaymentException(this.message);
+  final String message;
 
   @override
   String toString() => message;
 }
 
 class NetworkException implements Exception {
-  final String message;
   NetworkException(this.message);
+  final String message;
 
   @override
   String toString() => message;
 }
 
 class TimeoutException implements Exception {
-  final String message;
   TimeoutException(this.message);
+  final String message;
 
   @override
   String toString() => message;
 }
 
 class ValidationException implements Exception {
-  final String message;
   ValidationException(this.message);
+  final String message;
 
   @override
   String toString() => message;
 }
 
 class AuthException implements Exception {
-  final String message;
   AuthException(this.message);
+  final String message;
 
   @override
   String toString() => message;

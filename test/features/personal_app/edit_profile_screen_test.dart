@@ -1,13 +1,14 @@
+import 'package:appoint/features/personal_app/ui/edit_profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/features/personal_app/ui/edit_profile_screen.dart';
-import '../../fake_firebase_setup.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import 'firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+  });
   group('EditProfileScreen', () {
-    testWidgets('renders form fields and save button', (final tester) async {
+    testWidgets('renders form fields and save button', (tester) async {
       await tester.pumpWidget(const MaterialApp(home: EditProfileScreen()));
 
       expect(find.byType(CircleAvatar), findsOneWidget);

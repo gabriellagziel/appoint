@@ -19,7 +19,7 @@ void main() async {
         entity.path != enFile.path) {
       final map =
           jsonDecode(await entity.readAsString()) as Map<String, dynamic>;
-      bool updated = false;
+      var updated = false;
       final locale = entity.uri.pathSegments.last
           .replaceFirst('app_', '')
           .replaceFirst('.arb', '');

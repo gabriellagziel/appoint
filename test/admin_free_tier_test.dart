@@ -1,8 +1,8 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mocktail/mocktail.dart';
-import 'package:appoint/services/admin_service.dart';
 import 'package:appoint/providers/admin_provider.dart';
+import 'package:appoint/services/admin_service.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
 
 class MockAdminService extends Mock implements AdminService {}
 
@@ -24,7 +24,7 @@ void main() {
           adminServiceProvider.overrideWithValue(mockAdminService),
         ],
       );
-      final service = container.read(adminServiceProvider);
+      service = container.read(adminServiceProvider);
       expect(service, isA<MockAdminService>());
       container.dispose();
     });
@@ -36,7 +36,7 @@ void main() {
           adminActionsProvider.overrideWithValue(mockAdminActions),
         ],
       );
-      final actions = container.read(adminActionsProvider);
+      actions = container.read(adminActionsProvider);
       expect(actions, isA<MockAdminActions>());
       container.dispose();
     });
@@ -48,7 +48,7 @@ void main() {
           adminActionsProvider.overrideWithValue(mockAdminActions),
         ],
       );
-      final actions = container.read(adminActionsProvider);
+      actions = container.read(adminActionsProvider);
 
       // This test verifies the method exists and can be called
       expect(actions.updateUserRole, isA<Function>());
@@ -63,7 +63,7 @@ void main() {
           adminActionsProvider.overrideWithValue(mockAdminActions),
         ],
       );
-      final actions = container.read(adminActionsProvider);
+      actions = container.read(adminActionsProvider);
 
       // This test verifies the method exists and can be called
       expect(actions.resolveError, isA<Function>());
@@ -78,7 +78,7 @@ void main() {
           adminActionsProvider.overrideWithValue(mockAdminActions),
         ],
       );
-      final actions = container.read(adminActionsProvider);
+      actions = container.read(adminActionsProvider);
 
       // This test verifies the method exists and can be called
       expect(actions.createBroadcastMessage, isA<Function>());
@@ -93,7 +93,7 @@ void main() {
           adminActionsProvider.overrideWithValue(mockAdminActions),
         ],
       );
-      final actions = container.read(adminActionsProvider);
+      actions = container.read(adminActionsProvider);
 
       // This test verifies the method exists and can be called
       expect(actions.exportDataAsCSV, isA<Function>());
@@ -108,7 +108,7 @@ void main() {
           adminActionsProvider.overrideWithValue(mockAdminActions),
         ],
       );
-      final actions = container.read(adminActionsProvider);
+      actions = container.read(adminActionsProvider);
 
       // This test verifies the method exists and can be called
       expect(actions.exportDataAsPDF, isA<Function>());

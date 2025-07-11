@@ -1,14 +1,15 @@
+import 'dart:async';
+
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:connectivity_plus/connectivity_plus.dart';
-import 'dart:async';
 
 // Minimal offline banner widget for testing
 class TestOfflineBanner extends StatefulWidget {
+  const TestOfflineBanner(
+      {required this.child, required this.connectivityStream, super.key,});
   final Widget child;
   final Stream<ConnectivityResult> connectivityStream;
-  const TestOfflineBanner(
-      {super.key, required this.child, required this.connectivityStream});
   @override
   State<TestOfflineBanner> createState() => _TestOfflineBannerState();
 }
@@ -37,8 +38,7 @@ class _TestOfflineBannerState extends State<TestOfflineBanner> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Stack(
+  Widget build(BuildContext context) => Stack(
       children: [
         widget.child,
         if (_isOffline)
@@ -68,7 +68,6 @@ class _TestOfflineBannerState extends State<TestOfflineBanner> {
           ),
       ],
     );
-  }
 }
 
 void main() {
@@ -83,8 +82,7 @@ void main() {
       connectivityController.close();
     });
 
-    Widget createTestWidget() {
-      return MaterialApp(
+    Widget createTestWidget() => MaterialApp(
         home: TestOfflineBanner(
           connectivityStream: connectivityController.stream,
           child: const Scaffold(
@@ -94,7 +92,6 @@ void main() {
           ),
         ),
       );
-    }
 
     testWidgets('shows offline banner when connectivity is lost',
         (tester) async {

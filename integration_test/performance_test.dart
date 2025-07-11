@@ -1,39 +1,39 @@
 // @dart=3.4
 import 'dart:developer' as developer;
+
+import 'package:appoint/features/studio_business/screens/business_calendar_screen.dart';
+import 'package:appoint/main.dart' as app;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:vm_service/vm_service.dart' as vm;
 import 'package:vm_service/vm_service_io.dart';
-import 'package:appoint/main.dart' as app;
-import 'package:appoint/features/studio_business/screens/business_calendar_screen.dart';
 
 Future<int> _heapUsage() async {
-  final info = await developer.Service.getInfo();
+  info = await developer.Service.getInfo();
   if (info.serverUri == null) return -1;
   final service = await vmServiceConnectUri(
-      'ws://localhost:${info.serverUri!.port}${info.serverUri!.path}ws');
-  final vm.VM vmData = await service.getVM();
-  final vm.IsolateRef? iso = vmData.isolates?.first;
+      'ws://localhost:${info.serverUri!.port}${info.serverUri!.path}ws',);
+  vmData = await service.getVM();
+  final iso = vmData.isolates?.first;
   if (iso == null) return -1;
-  final vm.MemoryUsage usage = await service.getMemoryUsage(iso.id!);
+  usage = await service.getMemoryUsage(iso.id!);
   return usage.heapUsage ?? -1;
 }
 
 void main() {
-  final binding = REDACTED_TOKEN.ensureInitialized();
+  binding = REDACTED_TOKEN.ensureInitialized();
 
   group('Calendar Performance Tests', () {
-    testWidgets('CalendarWidget build performance test', (final tester) async {
-      final before = await _heapUsage();
-      final sw = Stopwatch()..start();
+    testWidgets('CalendarWidget build performance test', (tester) async {
+      before = await _heapUsage();
+      sw = Stopwatch()..start();
 
       await binding.watchPerformance(() async {
         await app.appMain();
         await tester.pumpAndSettle();
 
         // Navigate to calendar screen
-        final navigator = tester.state<NavigatorState>(find.byType(Navigator));
+        navigator = tester.state<NavigatorState>(find.byType(Navigator));
         navigator.pushNamed('/business-calendar');
         await tester.pumpAndSettle();
 
@@ -50,15 +50,15 @@ void main() {
 
         await tester.tap(find.text('Day'));
         await tester.pumpAndSettle();
-      }, reportKey: 'calendar_widget');
+      }, reportKey: 'calendar_widget',);
 
       sw.stop();
-      final after = await _heapUsage();
+      after = await _heapUsage();
 
       // Assert performance requirements
       expect(sw.elapsedMilliseconds <= 1000, isTrue,
           reason:
-              'Calendar widget build should complete within 1000ms, but took ${sw.elapsedMilliseconds}ms');
+              'Calendar widget build should complete within 1000ms, but took ${sw.elapsedMilliseconds}ms',);
 
       binding.reportData ??= <String, dynamic>{};
       binding.reportData!['calendar_widget_response_ms'] =
@@ -71,16 +71,16 @@ void main() {
     });
 
     testWidgets('Calendar with many events performance test',
-        (final tester) async {
-      final before = await _heapUsage();
-      final sw = Stopwatch()..start();
+        (tester) async {
+      before = await _heapUsage();
+      sw = Stopwatch()..start();
 
       await binding.watchPerformance(() async {
         await app.appMain();
         await tester.pumpAndSettle();
 
         // Navigate to calendar screen
-        final navigator = tester.state<NavigatorState>(find.byType(Navigator));
+        navigator = tester.state<NavigatorState>(find.byType(Navigator));
         navigator.pushNamed('/business-calendar');
         await tester.pumpAndSettle();
 
@@ -101,15 +101,15 @@ void main() {
         // Reset to default size
         await tester.binding.setSurfaceSize(null);
         await tester.pumpAndSettle();
-      }, reportKey: 'calendar_with_events');
+      }, reportKey: 'calendar_with_events',);
 
       sw.stop();
-      final after = await _heapUsage();
+      after = await _heapUsage();
 
       // Assert performance requirements
       expect(sw.elapsedMilliseconds <= 1000, isTrue,
           reason:
-              'Calendar with events should complete within 1000ms, but took ${sw.elapsedMilliseconds}ms');
+              'Calendar with events should complete within 1000ms, but took ${sw.elapsedMilliseconds}ms',);
 
       binding.reportData ??= <String, dynamic>{};
       binding.reportData!['REDACTED_TOKEN'] =
@@ -121,21 +121,21 @@ void main() {
       expect(report['average_frame_build_time_millis'] < 16.0, isTrue);
     });
 
-    testWidgets('Calendar navigation performance test', (final tester) async {
-      final before = await _heapUsage();
-      final sw = Stopwatch()..start();
+    testWidgets('Calendar navigation performance test', (tester) async {
+      before = await _heapUsage();
+      sw = Stopwatch()..start();
 
       await binding.watchPerformance(() async {
         await app.appMain();
         await tester.pumpAndSettle();
 
         // Navigate to calendar screen
-        final navigator = tester.state<NavigatorState>(find.byType(Navigator));
+        navigator = tester.state<NavigatorState>(find.byType(Navigator));
         navigator.pushNamed('/business-calendar');
         await tester.pumpAndSettle();
 
         // Test rapid tab switching
-        for (int i = 0; i < 10; i++) {
+        for (var i = 0; i < 10; i++) {
           await tester.tap(find.text('Day'));
           await tester.pumpAndSettle();
 
@@ -145,15 +145,15 @@ void main() {
           await tester.tap(find.text('Month'));
           await tester.pumpAndSettle();
         }
-      }, reportKey: 'calendar_navigation');
+      }, reportKey: 'calendar_navigation',);
 
       sw.stop();
-      final after = await _heapUsage();
+      after = await _heapUsage();
 
       // Assert performance requirements
       expect(sw.elapsedMilliseconds <= 1000, isTrue,
           reason:
-              'Calendar navigation should complete within 1000ms, but took ${sw.elapsedMilliseconds}ms');
+              'Calendar navigation should complete within 1000ms, but took ${sw.elapsedMilliseconds}ms',);
 
       binding.reportData ??= <String, dynamic>{};
       binding.reportData!['calendar_navigation_response_ms'] =

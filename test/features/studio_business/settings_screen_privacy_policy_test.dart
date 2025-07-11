@@ -1,11 +1,17 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
-import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:appoint/features/studio_business/screens/settings_screen.dart';
+import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
+import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+import '../../firebase_test_helper.dart';
 
 void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
+
   group('SettingsScreen Privacy Policy Tests', () {
     late FakeFirebaseFirestore fakeFirestore;
     late MockFirebaseAuth mockAuth;
@@ -16,7 +22,6 @@ void main() {
       mockUser = MockUser(
         uid: 'test-user-id',
         email: 'test@example.com',
-        isAnonymous: false,
       );
       mockAuth = MockFirebaseAuth(mockUser: mockUser);
     });
@@ -24,9 +29,9 @@ void main() {
     testWidgets('should show privacy policy tile', (tester) async {
       // Arrange
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
-            home: const SettingsScreen(),
+            home: SettingsScreen(),
           ),
         ),
       );
@@ -39,15 +44,15 @@ void main() {
     testWidgets('should tap privacy policy tile', (tester) async {
       // Arrange
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
-            home: const SettingsScreen(),
+            home: SettingsScreen(),
           ),
         ),
       );
 
       // Act
-      final privacyPolicyTile = find.text('Privacy Policy');
+      privacyPolicyTile = find.text('Privacy Policy');
       await tester.tap(privacyPolicyTile);
       await tester.pumpAndSettle();
 
@@ -61,9 +66,9 @@ void main() {
         (tester) async {
       // Arrange
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
-            home: const SettingsScreen(),
+            home: SettingsScreen(),
           ),
         ),
       );
@@ -82,9 +87,9 @@ void main() {
     testWidgets('should have correct icon for privacy policy', (tester) async {
       // Arrange
       await tester.pumpWidget(
-        ProviderScope(
+        const ProviderScope(
           child: MaterialApp(
-            home: const SettingsScreen(),
+            home: SettingsScreen(),
           ),
         ),
       );
@@ -95,10 +100,10 @@ void main() {
         matching: find.byType(ListTile),
       );
 
-      final listTile = tester.widget<ListTile>(privacyPolicyTile);
+      listTile = tester.widget<ListTile>(privacyPolicyTile);
       expect(listTile.leading, isA<Icon>());
 
-      final icon = listTile.leading as Icon;
+      final icon = listTile.leading! as Icon;
       expect(icon.icon, Icons.security);
     });
   });

@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('Localization Tests', () {
     testWidgets('should load English localization correctly',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         MaterialApp(
           localizationsDelegates: const [
@@ -20,8 +20,8 @@ void main() {
           ],
           locale: const Locale('en'),
           home: Builder(
-            builder: (final context) {
-              final l10n = AppLocalizations.of(context)!;
+            builder: (context) {
+              l10n = AppLocalizations.of(context)!;
               return Scaffold(
                 body: Column(
                   children: [
@@ -73,7 +73,7 @@ void main() {
     });
 
     testWidgets('should handle method calls with parameters',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         MaterialApp(
           localizationsDelegates: const [
@@ -87,8 +87,8 @@ void main() {
           ],
           locale: const Locale('en'),
           home: Builder(
-            builder: (final context) {
-              final l10n = AppLocalizations.of(context)!;
+            builder: (context) {
+              l10n = AppLocalizations.of(context)!;
               return Scaffold(
                 body: Column(
                   children: [
@@ -123,7 +123,7 @@ void main() {
       expect(find.text('Created: 2024-01-01'), findsOneWidget);
       expect(find.text('Scheduled: 2024-01-02'), findsOneWidget);
       expect(
-          find.text('Error checking permissions: Test Error'), findsOneWidget);
+          find.text('Error checking permissions: Test Error'), findsOneWidget,);
       expect(find.text('Error saving message: Test Error'), findsOneWidget);
       expect(find.text('Error sending message: Test Error'), findsOneWidget);
       expect(find.text('Link: https://example.com'), findsOneWidget);
