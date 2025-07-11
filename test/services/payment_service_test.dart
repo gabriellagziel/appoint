@@ -1,8 +1,8 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:mocktail/mocktail.dart';
+import 'package:appoint/services/payment_service.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
-import 'package:appoint/services/payment_service.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
 
 class MockFirebaseFunctions extends Mock implements FirebaseFunctions {}
 
@@ -44,7 +44,7 @@ void main() {
         when(() => mockResult.data).thenReturn(expectedResponse);
 
         // Act
-        final result = await paymentService.createPaymentIntent(amount);
+        result = await paymentService.createPaymentIntent(amount);
 
         // Assert
         expect(result, equals(expectedResponse));
@@ -63,7 +63,7 @@ void main() {
             .thenThrow(FirebaseFunctionsException(
           code: 'invalid-argument',
           message: 'Invalid amount',
-        ));
+        ),);
 
         // Act & Assert
         expect(
@@ -91,7 +91,7 @@ void main() {
         when(() => mockResult.data).thenReturn(intentResponse);
 
         // Act
-        final result = await paymentService.handlePayment(amount);
+        result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, isA<PaymentStatus>());
@@ -114,7 +114,7 @@ void main() {
         when(() => mockResult.data).thenReturn(intentResponse);
 
         // Act
-        final result = await paymentService.handlePayment(amount);
+        result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, isA<PaymentStatus>());
@@ -136,7 +136,7 @@ void main() {
         when(() => mockResult.data).thenReturn(intentResponse);
 
         // Act
-        final result = await paymentService.handlePayment(amount);
+        result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, equals(PaymentStatus.failed));
@@ -152,10 +152,10 @@ void main() {
             .thenThrow(FirebaseFunctionsException(
           code: 'internal',
           message: 'Network error',
-        ));
+        ),);
 
         // Act
-        final result = await paymentService.handlePayment(amount);
+        result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, equals(PaymentStatus.failed));
@@ -165,17 +165,17 @@ void main() {
     group('PaymentStatus Messages', () {
       test('should return correct status messages', () {
         expect(paymentService.getPaymentStatusMessage(PaymentStatus.initial),
-            equals('Ready to process payment'));
+            equals('Ready to process payment'),);
         expect(paymentService.getPaymentStatusMessage(PaymentStatus.processing),
-            equals('Processing payment...'));
+            equals('Processing payment...'),);
         expect(
             paymentService
                 .getPaymentStatusMessage(PaymentStatus.requiresAction),
-            equals('Authentication required...'));
+            equals('Authentication required...'),);
         expect(paymentService.getPaymentStatusMessage(PaymentStatus.succeeded),
-            equals('Payment successful!'));
+            equals('Payment successful!'),);
         expect(paymentService.getPaymentStatusMessage(PaymentStatus.failed),
-            equals('Payment failed. Please try again.'));
+            equals('Payment failed. Please try again.'),);
       });
     });
 
@@ -192,10 +192,10 @@ void main() {
             .thenThrow(FirebaseFunctionsException(
           code: 'card_declined',
           message: 'Your card was declined',
-        ));
+        ),);
 
         // Act
-        final result = await paymentService.handlePayment(amount);
+        result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, equals(PaymentStatus.failed));
@@ -211,10 +211,10 @@ void main() {
             .thenThrow(FirebaseFunctionsException(
           code: 'rate_limit',
           message: 'Too many requests',
-        ));
+        ),);
 
         // Act
-        final result = await paymentService.handlePayment(amount);
+        result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, equals(PaymentStatus.failed));
@@ -230,10 +230,10 @@ void main() {
             .thenThrow(FirebaseFunctionsException(
           code: 'insufficient_funds',
           message: 'Insufficient funds',
-        ));
+        ),);
 
         // Act
-        final result = await paymentService.handlePayment(amount);
+        result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, equals(PaymentStatus.failed));
@@ -249,10 +249,10 @@ void main() {
             .thenThrow(FirebaseFunctionsException(
           code: 'expired_card',
           message: 'Card has expired',
-        ));
+        ),);
 
         // Act
-        final result = await paymentService.handlePayment(amount);
+        result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, equals(PaymentStatus.failed));
@@ -268,10 +268,10 @@ void main() {
             .thenThrow(FirebaseFunctionsException(
           code: 'invalid_cvc',
           message: 'Invalid CVC',
-        ));
+        ),);
 
         // Act
-        final result = await paymentService.handlePayment(amount);
+        result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, equals(PaymentStatus.failed));
@@ -306,7 +306,7 @@ void main() {
           .thenReturn(mockCallable);
 
       // Act
-      final status = await paymentService.handlePayment(10.0);
+      status = await paymentService.handlePayment(10);
 
       // Assert
       expect(status, isA<PaymentStatus>());
@@ -325,7 +325,7 @@ void main() {
           .thenReturn(mockCallable);
 
       // Act
-      final status = await paymentService.handlePayment(20.0);
+      status = await paymentService.handlePayment(20);
 
       // Assert
       expect(status, isA<PaymentStatus>());
@@ -344,7 +344,7 @@ void main() {
           .thenReturn(mockCallable);
 
       // Act
-      final status = await paymentService.handlePayment(30.0);
+      status = await paymentService.handlePayment(30);
 
       // Assert
       expect(status, equals(PaymentStatus.failed));
@@ -356,12 +356,12 @@ void main() {
           .thenThrow(FirebaseFunctionsException(
         code: 'internal',
         message: 'Network error',
-      ));
+      ),);
       when(() => mockFunctions.httpsCallable('createPaymentIntent'))
           .thenReturn(mockCallable);
 
       // Act
-      final status = await paymentService.handlePayment(40.0);
+      status = await paymentService.handlePayment(40);
 
       // Assert
       expect(status, equals(PaymentStatus.failed));

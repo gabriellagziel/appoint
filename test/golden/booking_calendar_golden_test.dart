@@ -1,20 +1,19 @@
+import 'package:appoint/widgets/calendar/REDACTED_TOKEN.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/widgets/calendar/REDACTED_TOKEN.dart';
 
 /// Demo widget for BookingCalendar golden test
 class BookingCalendarDemo extends StatelessWidget {
   const BookingCalendarDemo({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  Widget build(BuildContext context) => MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Booking Calendar'),
         ),
         body: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -49,10 +48,8 @@ class BookingCalendarDemo extends StatelessWidget {
         ),
       ),
     );
-  }
 
-  Widget _buildTimeSlot(String time, bool isAvailable) {
-    return Card(
+  Widget _buildTimeSlot(String time, bool isAvailable) => Card(
       color: isAvailable ? Colors.blue[50] : Colors.grey[200],
       child: InkWell(
         onTap: isAvailable ? () {} : null,
@@ -88,7 +85,6 @@ class BookingCalendarDemo extends StatelessWidget {
         ),
       ),
     );
-  }
 }
 
 void main() {

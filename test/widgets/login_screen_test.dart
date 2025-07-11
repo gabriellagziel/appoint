@@ -1,39 +1,43 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:mocktail/mocktail.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/auth/login_screen.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
+
+import '../firebase_test_helper.dart';
 
 class MockAuthService extends Mock implements AuthService {}
 
 class MockUserCredential extends Mock implements UserCredential {}
 
 void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
+
   late MockAuthService mockAuthService;
 
   setUp(() {
     mockAuthService = MockAuthService();
   });
 
-  Widget createTestWidget(final Widget child) {
-    return ProviderScope(
-      overrides: [
-        authServiceProvider.overrideWithValue(mockAuthService),
-      ],
-      child: MaterialApp(
-        home: child,
-      ),
-    );
-  }
+  Widget createTestWidget(Widget child) => ProviderScope(
+        overrides: [
+          authServiceProvider.overrideWithValue(mockAuthService),
+        ],
+        child: MaterialApp(
+          home: child,
+        ),
+      );
 
   group('LoginScreen Widget Tests', () {
-    testWidgets('should display login form', (final WidgetTester tester) async {
+    testWidgets('should display login form', (WidgetTester tester) async {
       // Arrange
       when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((final _) async {});
+          .thenAnswer((_) async {});
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
@@ -45,10 +49,10 @@ void main() {
     });
 
     testWidgets('should show email and password fields',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       // Arrange
       when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((final _) async {});
+          .thenAnswer((_) async {});
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
@@ -59,10 +63,10 @@ void main() {
       expect(find.text('Password'), findsOneWidget);
     });
 
-    testWidgets('should handle email input', (final WidgetTester tester) async {
+    testWidgets('should handle email input', (WidgetTester tester) async {
       // Arrange
       when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((final _) async {});
+          .thenAnswer((_) async {});
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
@@ -74,14 +78,14 @@ void main() {
     });
 
     testWidgets('should handle password input',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       // Arrange
       when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((final _) async {});
+          .thenAnswer((_) async {});
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
-      final passwordField = find.byType(TextField).last;
+      passwordField = find.byType(TextField).last;
       await tester.enterText(passwordField, 'password123');
       await tester.pump();
 
@@ -89,10 +93,10 @@ void main() {
       expect(find.text('password123'), findsOneWidget);
     });
 
-    testWidgets('should show loading state', (final WidgetTester tester) async {
+    testWidgets('should show loading state', (WidgetTester tester) async {
       // Arrange
       when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((final _) async {
+          .thenAnswer((_) async {
         await Future.delayed(const Duration(seconds: 1));
       });
 
@@ -109,7 +113,7 @@ void main() {
     });
 
     testWidgets('should display error message for login failure',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       // Arrange
       when(() => mockAuthService.signIn(any(), any()))
           .thenThrow(Exception('Invalid credentials'));
@@ -126,10 +130,10 @@ void main() {
     });
 
     testWidgets('should handle successful login',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       // Arrange
       when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((final _) async {});
+          .thenAnswer((_) async {});
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));

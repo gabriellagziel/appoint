@@ -1,9 +1,9 @@
+import 'package:appoint/main.dart' as app;
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:appoint/main.dart' as app;
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 void main() {
   REDACTED_TOKEN.ensureInitialized();
@@ -25,7 +25,7 @@ void main() {
       await _navigateToSettings(tester);
 
       // Find and tap the privacy policy tile
-      final privacyPolicyTile = find.text('Privacy Policy');
+      privacyPolicyTile = find.text('Privacy Policy');
       expect(privacyPolicyTile, findsOneWidget);
       await tester.tap(privacyPolicyTile);
       await tester.pumpAndSettle();
@@ -39,7 +39,7 @@ void main() {
       await _navigateToProfile(tester);
 
       // Find and tap the delete account button
-      final deleteButton = find.text('Delete My Account');
+      deleteButton = find.text('Delete My Account');
       expect(deleteButton, findsOneWidget);
       await tester.tap(deleteButton);
       await tester.pumpAndSettle();
@@ -58,7 +58,7 @@ void main() {
       await _navigateToProfile(tester);
 
       // Find and tap the delete account button
-      final deleteButton = find.text('Delete My Account');
+      deleteButton = find.text('Delete My Account');
       await tester.tap(deleteButton);
       await tester.pumpAndSettle();
 
@@ -82,16 +82,16 @@ void main() {
 
       await _navigateToProfile(tester);
 
-      final deleteButton = find.text('Delete My Account');
+      deleteButton = find.text('Delete My Account');
       await tester.tap(deleteButton);
       await tester.pumpAndSettle();
 
-      final cancelButton = find.text('Cancel');
+      cancelButton = find.text('Cancel');
       await tester.tap(cancelButton);
       await tester.pumpAndSettle();
 
       expect(find.text('Are you sure you want to delete your account?'),
-          findsNothing);
+          findsNothing,);
     });
   });
 }

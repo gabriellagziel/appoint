@@ -1,19 +1,19 @@
 // @dart=3.4
+import 'package:appoint/main.dart' as app;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:appoint/main.dart' as app;
 
 void main() {
-  final binding = REDACTED_TOKEN.ensureInitialized();
+  binding = REDACTED_TOKEN.ensureInitialized();
 
   group('Booking Chat Load', () {
-    testWidgets('repeated chat booking flow', (final tester) async {
+    testWidgets('repeated chat booking flow', (tester) async {
       await binding.watchPerformance(() async {
         await app.appMain();
         await tester.pumpAndSettle();
 
-        final navigator = tester.state<NavigatorState>(find.byType(Navigator));
+        navigator = tester.state<NavigatorState>(find.byType(Navigator));
         navigator.pushNamed('/chat-booking');
         await tester.pumpAndSettle();
 
@@ -42,7 +42,7 @@ void main() {
         for (var i = 0; i < 20; i++) {
           await runFlow();
         }
-      }, reportKey: 'booking_chat_load');
+      }, reportKey: 'booking_chat_load',);
 
       final report =
           binding.reportData!['booking_chat_load'] as Map<String, dynamic>;

@@ -1,11 +1,13 @@
+import 'package:appoint/models/ambassador_stats.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:appoint/models/ambassador_stats.dart';
-import '../../fake_firebase_setup.dart';
+import '../../firebase_test_helper.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
+
   group('Ambassador Dashboard Logic Tests', () {
     test('filters chart data based on country filter', () {
       final data = AmbassadorData(
@@ -30,12 +32,12 @@ Future<void> main() async {
         chartData: [
           const ChartDataPoint(
             label: 'United States',
-            value: 25.0,
+            value: 25,
             category: 'referrals',
           ),
           const ChartDataPoint(
             label: 'Spain',
-            value: 15.0,
+            value: 15,
             category: 'referrals',
           ),
         ],
@@ -43,7 +45,7 @@ Future<void> main() async {
 
       // Test filtering logic
       final filteredStats =
-          data.stats.where((final s) => s.country == 'United States').toList();
+          data.stats.where((s) => s.country == 'United States').toList();
       expect(filteredStats.length, equals(1));
       expect(filteredStats.first.country, equals('United States'));
     });
@@ -71,19 +73,19 @@ Future<void> main() async {
         chartData: [
           const ChartDataPoint(
             label: 'United States',
-            value: 25.0,
+            value: 25,
             category: 'referrals',
           ),
           const ChartDataPoint(
             label: 'Spain',
-            value: 15.0,
+            value: 15,
             category: 'referrals',
           ),
         ],
       );
 
       final filteredStats =
-          data.stats.where((final s) => s.language == 'English').toList();
+          data.stats.where((s) => s.language == 'English').toList();
       expect(filteredStats.length, equals(1));
       expect(filteredStats.first.language, equals('English'));
     });
@@ -109,7 +111,7 @@ Future<void> main() async {
       ];
 
       final totalAmbassadors =
-          stats.fold<int>(0, (final sum, final stat) => sum + stat.ambassadors);
+          stats.fold<int>(0, (sum, final stat) => sum + stat.ambassadors);
       expect(totalAmbassadors, equals(15));
     });
 
@@ -134,7 +136,7 @@ Future<void> main() async {
       ];
 
       final totalReferrals =
-          stats.fold<int>(0, (final sum, final stat) => sum + stat.referrals);
+          stats.fold<int>(0, (sum, final stat) => sum + stat.referrals);
       expect(totalReferrals, equals(40));
     });
 
@@ -159,7 +161,7 @@ Future<void> main() async {
       ];
 
       final averageScore = stats.fold<double>(
-              0, (final sum, final stat) => sum + stat.surveyScore) /
+              0, (sum, final stat) => sum + stat.surveyScore,) /
           stats.length;
       expect(averageScore, equals(4.35));
     });
@@ -168,24 +170,24 @@ Future<void> main() async {
       final chartData = [
         const ChartDataPoint(
           label: 'United States',
-          value: 25.0,
+          value: 25,
           category: 'referrals',
         ),
         const ChartDataPoint(
           label: 'Spain',
-          value: 15.0,
+          value: 15,
           category: 'referrals',
         ),
         const ChartDataPoint(
           label: 'Germany',
-          value: 30.0,
+          value: 30,
           category: 'referrals',
         ),
       ];
 
       final maxValue = chartData
-          .map((final e) => e.value)
-          .reduce((final a, final b) => a > b ? a : b);
+          .map((e) => e.value)
+          .reduce((a, final b) => a > b ? a : b);
       expect(maxValue, equals(30.0));
     });
   });
