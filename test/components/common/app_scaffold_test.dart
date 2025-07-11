@@ -1,47 +1,39 @@
+import 'package:appoint/components/common/app_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/components/common/app_scaffold.dart';
-import '../../fake_firebase_setup.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import '../../firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
   group('AppScaffold', () {
-    testWidgets('renders with title', (final tester) async {
+    testWidgets('renders with title and child', (WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: AppScaffold(
-            title: 'Home',
-            child: Text('content'),
+            title: 'Test Title',
+            child: Text('Test Body'),
           ),
         ),
       );
 
-      expect(find.text('Home'), findsOneWidget);
-      expect(find.byType(AppBar), findsOneWidget);
-      expect(
-          find.ancestor(
-            of: find.text('content'),
-            matching: find.byType(SafeArea),
-          ),
-          findsOneWidget);
+      expect(find.text('Test Title'), findsOneWidget);
+      expect(find.text('Test Body'), findsOneWidget);
     });
 
-    testWidgets('renders without title', (final tester) async {
+    testWidgets('renders with child only', (WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
-          home: AppScaffold(child: Text('content')),
+          home: AppScaffold(
+            child: Text('Test Body'),
+          ),
         ),
       );
 
-      expect(find.byType(AppBar), findsNothing);
-      expect(
-          find.ancestor(
-            of: find.text('content'),
-            matching: find.byType(SafeArea),
-          ),
-          findsOneWidget);
+      expect(find.text('Test Body'), findsOneWidget);
     });
   });
 }

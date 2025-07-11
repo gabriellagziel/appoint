@@ -1,11 +1,11 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:mocktail/mocktail.dart';
-import 'package:appoint/utils/booking_helper.dart';
 import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:appoint/models/booking.dart';
 import 'package:appoint/services/appointment_service.dart';
 import 'package:appoint/services/notification_service.dart';
+import 'package:appoint/utils/booking_helper.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
 
 class MockBookingService extends Mock implements BookingService {}
 
@@ -51,7 +51,7 @@ void main() {
           .thenAnswer((_) async => mockBooking);
       when(() => svc.cancelBooking('B123')).thenAnswer((_) async {});
 
-      final res = await helper.cancelBooking(bookingId: 'B123');
+      res = await helper.cancelBooking(bookingId: 'B123');
       expect(res.isSuccess, true);
     });
   });

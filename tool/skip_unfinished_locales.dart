@@ -7,8 +7,8 @@ void main() {
   if (!dstDir.existsSync()) dstDir.createSync(recursive: true);
 
   for (final file in srcDir.listSync().whereType<File>().where(
-    (f) => f.path.endsWith('.arb'),
-  )) {
+        (f) => f.path.endsWith('.arb'),
+      )) {
     final contents = file.readAsStringSync();
     if (!contents.contains('"TODO"') && !contents.contains('(TRANSLATE)')) {
       file.copySync(p.join(dstDir.path, p.basename(file.path)));

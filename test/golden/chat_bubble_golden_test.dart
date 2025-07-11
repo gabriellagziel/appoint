@@ -6,14 +6,13 @@ class ChatBubbleDemo extends StatelessWidget {
   const ChatBubbleDemo({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  Widget build(BuildContext context) => MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Chat Bubbles'),
         ),
         body: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -35,19 +34,19 @@ class ChatBubbleDemo extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     _buildChatBubble(
-                      'Hi! I would like to book an appointment for a haircut. I\'m looking for something that will work well with my face shape and lifestyle. Do you have any recommendations for styles that are easy to maintain but still look professional?',
+                      "Hi! I would like to book an appointment for a haircut. I'm looking for something that will work well with my face shape and lifestyle. Do you have any recommendations for styles that are easy to maintain but still look professional?",
                       true, // outgoing message (right-aligned)
                       '10:32 AM',
                     ),
                     const SizedBox(height: 8),
                     _buildChatBubble(
-                      'Of course! I\'d be happy to help you find the perfect style. Could you tell me a bit more about your hair type and what you do for work?',
+                      "Of course! I'd be happy to help you find the perfect style. Could you tell me a bit more about your hair type and what you do for work?",
                       false,
                       '10:33 AM',
                     ),
                     const SizedBox(height: 8),
                     _buildChatBubble(
-                      'Sure! I have medium-length hair that\'s naturally wavy. I work in an office environment, so I need something that looks polished but doesn\'t require too much styling in the morning.',
+                      "Sure! I have medium-length hair that's naturally wavy. I work in an office environment, so I need something that looks polished but doesn't require too much styling in the morning.",
                       true,
                       '10:35 AM',
                     ),
@@ -65,13 +64,11 @@ class ChatBubbleDemo extends StatelessWidget {
         ),
       ),
     );
-  }
 
-  Widget _buildChatBubble(String message, bool isOutgoing, String timestamp) {
-    return Align(
+  Widget _buildChatBubble(String message, bool isOutgoing, String timestamp) => Align(
       alignment: isOutgoing ? Alignment.centerRight : Alignment.centerLeft,
       child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         constraints: const BoxConstraints(maxWidth: 280),
         child: Column(
           crossAxisAlignment:
@@ -109,7 +106,6 @@ class ChatBubbleDemo extends StatelessWidget {
         ),
       ),
     );
-  }
 }
 
 void main() {

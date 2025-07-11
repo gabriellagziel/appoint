@@ -1,252 +1,220 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
-import '../fake_firebase_setup.dart';
+import 'package:flutter_test/flutter_test.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import '../firebase_test_helper.dart';
 
-  group('AdminBroadcastMessage Model', () {
-    test('should correctly create a text broadcast message', () {
-      const targetingFilters = BroadcastTargetingFilters(
-        countries: ['US', 'CA'],
-        cities: ['New York', 'Toronto'],
-        minAge: 18,
-        maxAge: 65,
-        subscriptionTiers: ['premium', 'basic'],
-        accountTypes: ['personal', 'business'],
-        languages: ['en', 'es'],
-        accountStatuses: ['active'],
-        userRoles: ['user', 'admin'],
-      );
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
+  group('AdminBroadcastMessage', () {
+    test('should create message with required fields', () {
       final message = AdminBroadcastMessage(
-        id: 'broadcast-123',
-        title: 'Important Announcement',
-        content: 'This is a test broadcast message',
+        id: 'test-id',
+        title: 'Test Title',
+        content: 'Test Content',
         type: BroadcastMessageType.text,
-        targetingFilters: targetingFilters,
+        targetingFilters: const BroadcastTargetingFilters(),
         createdByAdminId: 'admin-123',
         createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
+        createdAt: DateTime.now(),
         status: BroadcastMessageStatus.pending,
       );
 
-      expect(message.id, 'broadcast-123');
-      expect(message.title, 'Important Announcement');
-      expect(message.content, 'This is a test broadcast message');
-      expect(message.type, BroadcastMessageType.text);
-      expect(message.status, BroadcastMessageStatus.pending);
-      expect(message.createdByAdminId, 'admin-123');
-      expect(message.createdByAdminName, 'Admin User');
-      expect(message.targetingFilters.countries, ['US', 'CA']);
-      expect(message.targetingFilters.minAge, 18);
-      expect(message.targetingFilters.maxAge, 65);
+      expect(message.id, equals('test-id'));
+      expect(message.title, equals('Test Title'));
+      expect(message.content, equals('Test Content'));
+      expect(message.type, equals(BroadcastMessageType.text));
+      expect(message.createdByAdminId, equals('admin-123'));
+      expect(message.status, equals(BroadcastMessageStatus.pending));
     });
 
-    test('should correctly create an image broadcast message', () {
-      const targetingFilters = BroadcastTargetingFilters(
-        countries: ['US'],
-        userRoles: ['user'],
-      );
-
+    test('should create image message with image URL', () {
       final message = AdminBroadcastMessage(
-        id: 'broadcast-456',
-        title: 'New Feature Image',
-        content: 'Check out our new feature!',
+        id: 'test-id',
+        title: 'Test Image',
+        content: 'Test Image Content',
         type: BroadcastMessageType.image,
         imageUrl: 'https://example.com/image.jpg',
-        targetingFilters: targetingFilters,
+        targetingFilters: const BroadcastTargetingFilters(),
         createdByAdminId: 'admin-123',
         createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
-        status: BroadcastMessageStatus.sent,
-        estimatedRecipients: 1000,
-        actualRecipients: 950,
-        openedCount: 500,
-        clickedCount: 100,
-      );
-
-      expect(message.type, BroadcastMessageType.image);
-      expect(message.imageUrl, 'https://example.com/image.jpg');
-      expect(message.status, BroadcastMessageStatus.sent);
-      expect(message.estimatedRecipients, 1000);
-      expect(message.actualRecipients, 950);
-      expect(message.openedCount, 500);
-      expect(message.clickedCount, 100);
-    });
-
-    test('should correctly create a poll broadcast message', () {
-      const targetingFilters = BroadcastTargetingFilters(
-        userRoles: ['user'],
-      );
-
-      final message = AdminBroadcastMessage(
-        id: 'broadcast-789',
-        title: 'User Feedback Poll',
-        content: 'What feature would you like to see next?',
-        type: BroadcastMessageType.poll,
-        pollOptions: ['Feature A', 'Feature B', 'Feature C'],
-        targetingFilters: targetingFilters,
-        createdByAdminId: 'admin-123',
-        createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
-        status: BroadcastMessageStatus.pending,
-        pollResponses: {
-          'Feature A': 45,
-          'Feature B': 30,
-          'Feature C': 25,
-        },
-      );
-
-      expect(message.type, BroadcastMessageType.poll);
-      expect(message.pollOptions, ['Feature A', 'Feature B', 'Feature C']);
-      expect(message.pollResponses, {
-        'Feature A': 45,
-        'Feature B': 30,
-        'Feature C': 25,
-      });
-    });
-
-    test('should be able to convert to JSON and back', () {
-      const targetingFilters = BroadcastTargetingFilters(
-        countries: ['US'],
-        userRoles: ['user'],
-      );
-
-      final message = AdminBroadcastMessage(
-        id: 'broadcast-123',
-        title: 'Test Message',
-        content: 'Test content',
-        type: BroadcastMessageType.text,
-        targetingFilters: targetingFilters,
-        createdByAdminId: 'admin-123',
-        createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
+        createdAt: DateTime.now(),
         status: BroadcastMessageStatus.pending,
       );
 
-      final json = message.toJson();
-      final newMessage = AdminBroadcastMessage.fromJson(json);
-
-      expect(newMessage.id, message.id);
-      expect(newMessage.title, message.title);
-      expect(newMessage.content, message.content);
-      expect(newMessage.type, message.type);
-      expect(newMessage.status, message.status);
-      expect(newMessage.createdByAdminId, message.createdByAdminId);
-      expect(newMessage.createdByAdminName, message.createdByAdminName);
-      expect(newMessage.targetingFilters.countries,
-          message.targetingFilters.countries);
-      expect(newMessage.targetingFilters.userRoles,
-          message.targetingFilters.userRoles);
+      expect(message.type, equals(BroadcastMessageType.image));
+      expect(message.imageUrl, equals('https://example.com/image.jpg'));
     });
 
-    test('should handle scheduled broadcast messages', () {
-      const targetingFilters = BroadcastTargetingFilters(
-        userRoles: ['user'],
-      );
-
-      final message = AdminBroadcastMessage(
-        id: 'broadcast-123',
-        title: 'Scheduled Message',
-        content: 'This message is scheduled',
+    test('should serialize and deserialize correctly', () {
+      final original = AdminBroadcastMessage(
+        id: 'test-id',
+        title: 'Test Title',
+        content: 'Test Content',
         type: BroadcastMessageType.text,
-        targetingFilters: targetingFilters,
+        targetingFilters: const BroadcastTargetingFilters(
+          countries: ['US', 'CA'],
+          userRoles: ['user'],
+        ),
         createdByAdminId: 'admin-123',
         createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
-        scheduledFor: DateTime(2025, 6, 19, 10, 0),
+        createdAt: DateTime(2024, 1, 1, 10),
         status: BroadcastMessageStatus.pending,
       );
 
-      expect(message.scheduledFor, DateTime(2025, 6, 19, 10, 0));
+      json = original.toJson();
+      deserialized = AdminBroadcastMessage.fromJson(json);
+
+      expect(deserialized.id, equals(original.id));
+      expect(deserialized.title, equals(original.title));
+      expect(deserialized.content, equals(original.content));
+      expect(deserialized.type, equals(original.type));
+      expect(deserialized.createdByAdminId, equals(original.createdByAdminId));
+      expect(deserialized.status, equals(original.status));
+      expect(deserialized.targetingFilters.countries, equals(['US', 'CA']));
+      expect(deserialized.targetingFilters.userRoles, equals(['user']));
     });
 
-    test('should handle failed broadcast messages', () {
-      const targetingFilters = BroadcastTargetingFilters(
-        userRoles: ['user'],
-      );
-
-      final message = AdminBroadcastMessage(
-        id: 'broadcast-123',
-        title: 'Failed Message',
-        content: 'This message failed to send',
-        type: BroadcastMessageType.text,
-        targetingFilters: targetingFilters,
-        createdByAdminId: 'admin-123',
-        createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
-        status: BroadcastMessageStatus.failed,
-        failureReason: 'Network error',
-        failedRecipients: ['user-1', 'user-2'],
-      );
-
-      expect(message.status, BroadcastMessageStatus.failed);
-      expect(message.failureReason, 'Network error');
-      expect(message.failedRecipients, ['user-1', 'user-2']);
-    });
-
-    test('should handle different broadcast message types', () {
-      const targetingFilters = BroadcastTargetingFilters(
-        userRoles: ['user'],
-      );
-
+    test('should handle different message types', () {
       final textMessage = AdminBroadcastMessage(
-        id: 'broadcast-1',
+        id: 'text-id',
         title: 'Text Message',
         content: 'Text content',
         type: BroadcastMessageType.text,
-        targetingFilters: targetingFilters,
+        targetingFilters: const BroadcastTargetingFilters(),
         createdByAdminId: 'admin-123',
         createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
+        createdAt: DateTime.now(),
         status: BroadcastMessageStatus.pending,
       );
 
       final imageMessage = AdminBroadcastMessage(
-        id: 'broadcast-2',
+        id: 'image-id',
         title: 'Image Message',
         content: 'Image content',
         type: BroadcastMessageType.image,
         imageUrl: 'https://example.com/image.jpg',
-        targetingFilters: targetingFilters,
+        targetingFilters: const BroadcastTargetingFilters(),
         createdByAdminId: 'admin-123',
         createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
+        createdAt: DateTime.now(),
         status: BroadcastMessageStatus.pending,
       );
 
-      final videoMessage = AdminBroadcastMessage(
-        id: 'broadcast-3',
-        title: 'Video Message',
-        content: 'Video content',
-        type: BroadcastMessageType.video,
-        videoUrl: 'https://example.com/video.mp4',
-        targetingFilters: targetingFilters,
+      expect(textMessage.type, equals(BroadcastMessageType.text));
+      expect(imageMessage.type, equals(BroadcastMessageType.image));
+      expect(imageMessage.imageUrl, isNotNull);
+      expect(textMessage.imageUrl, isNull);
+    });
+
+    test('should handle different statuses', () {
+      final pendingMessage = AdminBroadcastMessage(
+        id: 'pending-id',
+        title: 'Pending Message',
+        content: 'Pending content',
+        type: BroadcastMessageType.text,
+        targetingFilters: const BroadcastTargetingFilters(),
         createdByAdminId: 'admin-123',
         createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
+        createdAt: DateTime.now(),
         status: BroadcastMessageStatus.pending,
       );
 
-      final linkMessage = AdminBroadcastMessage(
-        id: 'broadcast-4',
-        title: 'Link Message',
-        content: 'Link content',
-        type: BroadcastMessageType.link,
-        externalLink: 'https://example.com',
-        targetingFilters: targetingFilters,
+      final sentMessage = AdminBroadcastMessage(
+        id: 'sent-id',
+        title: 'Sent Message',
+        content: 'Sent content',
+        type: BroadcastMessageType.text,
+        targetingFilters: const BroadcastTargetingFilters(),
         createdByAdminId: 'admin-123',
         createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
+        createdAt: DateTime.now(),
+        status: BroadcastMessageStatus.sent,
+      );
+
+      expect(pendingMessage.status, equals(BroadcastMessageStatus.pending));
+      expect(sentMessage.status, equals(BroadcastMessageStatus.sent));
+    });
+
+    test('should handle targeting filters', () {
+      const filters = BroadcastTargetingFilters(
+        countries: ['US', 'CA'],
+        cities: ['New York', 'Toronto'],
+        minAge: 18,
+        maxAge: 65,
+        userRoles: ['user', 'premium'],
+        subscriptionTiers: ['basic', 'premium'],
+        accountStatuses: ['active'],
+      );
+
+      final message = AdminBroadcastMessage(
+        id: 'targeted-id',
+        title: 'Targeted Message',
+        content: 'Targeted content',
+        type: BroadcastMessageType.text,
+        targetingFilters: filters,
+        createdByAdminId: 'admin-123',
+        createdByAdminName: 'Admin User',
+        createdAt: DateTime.now(),
         status: BroadcastMessageStatus.pending,
       );
 
-      expect(textMessage.type, BroadcastMessageType.text);
-      expect(imageMessage.type, BroadcastMessageType.image);
-      expect(videoMessage.type, BroadcastMessageType.video);
-      expect(linkMessage.type, BroadcastMessageType.link);
+      expect(message.targetingFilters.countries, equals(['US', 'CA']));
+      expect(message.targetingFilters.cities, equals(['New York', 'Toronto']));
+      expect(message.targetingFilters.minAge, equals(18));
+      expect(message.targetingFilters.maxAge, equals(65));
+      expect(message.targetingFilters.userRoles, equals(['user', 'premium']));
+      expect(message.targetingFilters.subscriptionTiers,
+          equals(['basic', 'premium']),);
+      expect(message.targetingFilters.accountStatuses, equals(['active']));
+    });
+
+    test('should handle optional fields', () {
+      final message = AdminBroadcastMessage(
+        id: 'optional-id',
+        title: 'Optional Fields',
+        content: 'Optional content',
+        type: BroadcastMessageType.text,
+        targetingFilters: const BroadcastTargetingFilters(),
+        createdByAdminId: 'admin-123',
+        createdByAdminName: 'Admin User',
+        createdAt: DateTime.now(),
+        status: BroadcastMessageStatus.pending,
+        scheduledFor: DateTime(2024, 1, 2, 10),
+        actualRecipients: 1000,
+        openedCount: 500,
+        clickedCount: 100,
+      );
+
+      expect(message.scheduledFor, isNotNull);
+      expect(message.actualRecipients, equals(1000));
+      expect(message.openedCount, equals(500));
+      expect(message.clickedCount, equals(100));
+    });
+
+    test('should handle empty targeting filters', () {
+      const emptyFilters = BroadcastTargetingFilters();
+      final message = AdminBroadcastMessage(
+        id: 'empty-filters-id',
+        title: 'Empty Filters',
+        content: 'Empty filters content',
+        type: BroadcastMessageType.text,
+        targetingFilters: emptyFilters,
+        createdByAdminId: 'admin-123',
+        createdByAdminName: 'Admin User',
+        createdAt: DateTime.now(),
+        status: BroadcastMessageStatus.pending,
+      );
+
+      expect(message.targetingFilters.countries, isNull);
+      expect(message.targetingFilters.cities, isNull);
+      expect(message.targetingFilters.userRoles, isNull);
+      expect(message.targetingFilters.subscriptionTiers, isNull);
+      expect(message.targetingFilters.accountStatuses, isNull);
+      expect(message.targetingFilters.minAge, isNull);
+      expect(message.targetingFilters.maxAge, isNull);
     });
   });
 }

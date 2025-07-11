@@ -4,7 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   group('Standalone Accessibility Tests', () {
     testWidgets('should have proper semantics for basic widgets',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: Scaffold(
@@ -29,7 +29,7 @@ void main() {
     });
 
     testWidgets('should have proper semantics for form fields',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
@@ -37,8 +37,8 @@ void main() {
               children: [
                 Semantics(
                   label: 'Email',
-                  child: TextField(
-                    decoration: const InputDecoration(
+                  child: const TextField(
+                    decoration: InputDecoration(
                       labelText: 'Email',
                       hintText: 'Enter your email',
                     ),
@@ -46,8 +46,8 @@ void main() {
                 ),
                 Semantics(
                   label: 'Password',
-                  child: TextField(
-                    decoration: const InputDecoration(
+                  child: const TextField(
+                    decoration: InputDecoration(
                       labelText: 'Password',
                       hintText: 'Enter your password',
                     ),
@@ -65,7 +65,7 @@ void main() {
     });
 
     testWidgets('should have proper semantics for IconButton',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
@@ -73,14 +73,14 @@ void main() {
               children: [
                 Semantics(
                   label: 'Close dialog',
-                  child: IconButton(
+                  child: const IconButton(
                     onPressed: null,
                     icon: Icon(Icons.close),
                   ),
                 ),
                 Semantics(
                   label: 'Send message',
-                  child: IconButton(
+                  child: const IconButton(
                     onPressed: null,
                     icon: Icon(Icons.send),
                   ),
@@ -97,9 +97,9 @@ void main() {
     });
 
     testWidgets('should have proper contrast for text',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
-        MaterialApp(
+        const MaterialApp(
           home: Scaffold(
             backgroundColor: Colors.white,
             body: Text(

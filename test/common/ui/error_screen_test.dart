@@ -1,14 +1,16 @@
+import 'package:appoint/common/ui/error_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/common/ui/error_screen.dart';
-import '../../fake_firebase_setup.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import '../../firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
   group('ErrorScreen', () {
-    testWidgets('shows icon, message and retry button', (final tester) async {
+    testWidgets('shows icon, message and retry button', (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: ErrorScreen(

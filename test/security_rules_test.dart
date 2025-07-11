@@ -136,7 +136,7 @@ void main() {
         });
 
         // Act & Assert
-        final query = await fakeFirestore.collection('users').get();
+        query = await fakeFirestore.collection('users').get();
         expect(query.docs.length, 2);
       });
 
@@ -166,7 +166,7 @@ void main() {
           'date': DateTime.now().toIso8601String(),
         });
 
-        final query = await fakeFirestore.collection('bookings').get();
+        query = await fakeFirestore.collection('bookings').get();
         expect(query.docs.length, 1);
       });
 

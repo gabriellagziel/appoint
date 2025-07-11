@@ -1,19 +1,19 @@
 // @dart=3.4
+import 'package:appoint/main.dart' as app;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:appoint/main.dart' as app;
 
 void main() {
-  final binding = REDACTED_TOKEN.ensureInitialized();
+  binding = REDACTED_TOKEN.ensureInitialized();
 
   group('Load & Stress Tests', () {
-    testWidgets('booking chat load test', (final tester) async {
+    testWidgets('booking chat load test', (tester) async {
       await binding.watchPerformance(() async {
         await app.appMain();
         await tester.pumpAndSettle();
 
-        final navigator = tester.state<NavigatorState>(find.byType(Navigator));
+        navigator = tester.state<NavigatorState>(find.byType(Navigator));
         navigator.pushNamed('/chat-booking');
         await tester.pumpAndSettle();
 
@@ -42,19 +42,19 @@ void main() {
         for (var i = 0; i < 10; i++) {
           await runFlow();
         }
-      }, reportKey: 'booking_load');
+      }, reportKey: 'booking_load',);
 
       final report =
           binding.reportData!['booking_load'] as Map<String, dynamic>;
       expect(report['REDACTED_TOKEN'] < 16.0, isTrue);
     });
 
-    testWidgets('dashboard stress navigation', (final tester) async {
+    testWidgets('dashboard stress navigation', (tester) async {
       await binding.watchPerformance(() async {
         await app.appMain();
         await tester.pumpAndSettle();
 
-        final navigator = tester.state<NavigatorState>(find.byType(Navigator));
+        navigator = tester.state<NavigatorState>(find.byType(Navigator));
         for (var i = 0; i < 20; i++) {
           navigator.pushNamed('/dashboard');
           await tester.pumpAndSettle();
@@ -62,7 +62,7 @@ void main() {
           await tester.pageBack();
           await tester.pumpAndSettle();
         }
-      }, reportKey: 'dashboard_stress');
+      }, reportKey: 'dashboard_stress',);
 
       final report =
           binding.reportData!['dashboard_stress'] as Map<String, dynamic>;

@@ -1,12 +1,13 @@
 import 'package:flutter_test/flutter_test.dart';
-import './fake_firebase_setup.dart';
+import 'firebase_test_helper.dart';
 
 // Flutter widgets & material controls
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
-  testWidgets('OTP flow: send and verify code', (final tester) async {},
-      skip: true);
+  testWidgets('OTP flow: send and verify code', (tester) async {},
+      skip: true,);
 }
