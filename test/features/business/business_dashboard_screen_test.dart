@@ -1,23 +1,26 @@
-import 'package:flutter_test/flutter_test.dart';
-
+import 'package:appoint/features/business/screens/business_dashboard_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/features/business/screens/business_dashboard_screen.dart';
-import '../../fake_firebase_setup.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import '../../mocks/firebase_mocks.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import '../../mocks/firebase_mocks.dart';
+import 'firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
   testWidgets('Business Dashboard shows welcome text',
-      (final WidgetTester tester) async {
-    final firestore = MockFirebaseFirestore();
+      (WidgetTester tester) async {
+    firestore = MockFirebaseFirestore();
 
-    await tester.pumpWidget(const ProviderScope(
-      child: MaterialApp(home: BusinessDashboardScreen()),
-    ));
+    await tester.pumpWidget(
+      const ProviderScope(
+        child: MaterialApp(home: BusinessDashboardScreen()),
+      ),
+    );
 
     expect(find.text('Welcome to Your Business Dashboard'), findsOneWidget);
 

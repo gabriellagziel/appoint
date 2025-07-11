@@ -1,18 +1,20 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/services/whatsapp_share_service.dart';
 import 'package:appoint/models/smart_share_link.dart';
-import './fake_firebase_setup.dart';
-import 'package:mocktail/mocktail.dart';
+import 'package:appoint/services/whatsapp_share_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
+
+import 'firebase_test_helper.dart';
 
 class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
 class MockFirebaseAnalytics extends Mock implements FirebaseAnalytics {}
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
   group('WhatsApp Share Service Tests', () {
     late WhatsAppShareService service;
@@ -80,7 +82,7 @@ Future<void> main() async {
       expect(link.groupId, equals('test-group'));
       expect(link.shareChannel, equals('whatsapp'));
     });
-  }, skip: true);
+  }, skip: true,);
 
   group('Share Status Enum Tests', () {
     test('should have correct enum values', () {

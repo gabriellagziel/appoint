@@ -1,10 +1,12 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/models/personal_appointment.dart';
-import '../fake_firebase_setup.dart';
+import 'package:flutter_test/flutter_test.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import '../firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
   group('PersonalAppointment', () {
     test('toJson/fromJson round trip', () {
@@ -13,11 +15,11 @@ Future<void> main() async {
         userId: 'u1',
         title: 'Meeting',
         description: 'Discuss project',
-        startTime: DateTime(2024, 1, 1, 10, 0),
-        endTime: DateTime(2024, 1, 1, 11, 0),
+        startTime: DateTime(2024, 1, 1, 10),
+        endTime: DateTime(2024, 1, 1, 11),
       );
-      final json = appt.toJson();
-      final copy = PersonalAppointment.fromJson(json);
+      json = appt.toJson();
+      copy = PersonalAppointment.fromJson(json);
       expect(copy.id, appt.id);
       expect(copy.userId, appt.userId);
       expect(copy.title, appt.title);

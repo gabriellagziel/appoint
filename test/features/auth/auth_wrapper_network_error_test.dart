@@ -1,13 +1,14 @@
-import 'dart:io';
 import 'dart:async';
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mocktail/mocktail.dart';
+import 'dart:io';
+
 import 'package:appoint/features/auth/auth_wrapper.dart';
+import 'package:appoint/models/app_user.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/services/auth_service.dart';
-import 'package:appoint/models/app_user.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
 
 class MockAuthService extends Mock implements AuthService {}
 
@@ -22,7 +23,7 @@ void main() {
 
       // Mock the authStateChanges method to throw SocketException
       when(() => mockAuthService.authStateChanges()).thenAnswer(
-          (_) => Stream.error(const SocketException('No Internet')));
+          (_) => Stream.error(const SocketException('No Internet')),);
     });
 
     tearDown(() {
@@ -32,7 +33,7 @@ void main() {
     testWidgets('NetworkErrorRetry widget displays correct UI',
         (WidgetTester tester) async {
       // Arrange: Create a test callback
-      bool retryCalled = false;
+      var retryCalled = false;
       void onRetry() {
         retryCalled = true;
       }
@@ -53,7 +54,7 @@ void main() {
       expect(find.byIcon(Icons.refresh), findsOneWidget);
 
       // Locate and tap the Retry label directly
-      final retryText = find.text('Retry');
+      retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
       await tester.tap(retryText);
       await tester.pumpAndSettle();
@@ -76,12 +77,12 @@ void main() {
       await tester.pumpAndSettle();
 
       // Assert: Network error UI styling is correct
-      final wifiOffIcon = tester.widget<Icon>(find.byIcon(Icons.wifi_off));
+      wifiOffIcon = tester.widget<Icon>(find.byIcon(Icons.wifi_off));
       expect(wifiOffIcon.size, 64);
       expect(wifiOffIcon.color, Colors.red);
 
       // Check that Retry text is present
-      final retryText = find.text('Retry');
+      retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
     });
 
@@ -127,7 +128,7 @@ void main() {
       expect(find.textContaining('check your connection'), findsOneWidget);
       expect(find.textContaining('try again'), findsOneWidget);
       expect(find.byIcon(Icons.refresh), findsOneWidget);
-      final retryText = find.text('Retry');
+      retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
     });
 
@@ -155,7 +156,7 @@ void main() {
       debugPrint(tester.element(find.byType(AuthWrapper)).toStringDeep());
 
       // Locate the Retry label
-      final retryText = find.text('Retry');
+      retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
 
       // Tap the label to trigger the button

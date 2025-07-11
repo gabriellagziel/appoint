@@ -1,15 +1,16 @@
+import 'package:appoint/features/studio_business/models/business_subscription.dart';
+import 'package:appoint/features/studio_business/models/promo_code.dart';
+import 'package:appoint/features/studio_business/providers/business_subscription_provider.dart';
+import 'package:appoint/features/studio_business/screens/business_subscription_screen.dart';
+import 'package:appoint/providers/firebase_providers.dart';
+import 'package:appoint/services/business_subscription_service.dart';
+import 'package:cloud_functions/cloud_functions.dart';
+import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
+import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
-import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
-import 'package:appoint/features/studio_business/screens/business_subscription_screen.dart';
-import 'package:appoint/providers/firebase_providers.dart';
-import 'package:appoint/features/studio_business/providers/business_subscription_provider.dart';
-import 'package:appoint/services/business_subscription_service.dart';
-import 'package:appoint/features/studio_business/models/business_subscription.dart';
-import 'package:appoint/features/studio_business/models/promo_code.dart';
-import 'package:cloud_functions/cloud_functions.dart';
+
 import '../../firebase_test_setup.dart';
 
 class MockFirebaseFunctions extends Fake implements FirebaseFunctions {}
@@ -44,29 +45,23 @@ class MockBusinessSubscriptionService extends Fake
   }
 
   @override
-  Future<void> applyPromoCode(final String code) async {
+  Future<void> applyPromoCode(String code) async {
     if (shouldThrowError) throw Exception('Invalid promo code');
     lastPromoCode = code;
   }
 
   @override
-  Stream<BusinessSubscription?> watchSubscription() {
-    return Stream.value(mockSubscription);
-  }
+  Stream<BusinessSubscription?> watchSubscription() => Stream.value(mockSubscription);
 
   @override
-  Future<BusinessSubscription?> getCurrentSubscription() async {
-    return mockSubscription;
-  }
+  Future<BusinessSubscription?> getCurrentSubscription() async => mockSubscription;
 
   @override
-  Future<bool> hasActiveSubscription() async {
-    return mockSubscription != null &&
+  Future<bool> hasActiveSubscription() async => mockSubscription != null &&
         mockSubscription!.status == SubscriptionStatus.active;
-  }
 
   @override
-  Future<PromoCode?> validatePromoCode(final String code) async {
+  Future<PromoCode?> validatePromoCode(String code) async {
     if (shouldThrowError) return null;
     return PromoCode(
       id: code,
@@ -134,8 +129,7 @@ void main() {
     );
   });
 
-  Widget createTestWidget() {
-    return ProviderScope(
+  Widget createTestWidget() => ProviderScope(
       overrides: [
         firestoreProvider.overrideWithValue(fakeFs),
         firebaseAuthProvider.overrideWithValue(mockAuth),
@@ -146,10 +140,9 @@ void main() {
         home: BusinessSubscriptionScreen(),
       ),
     );
-  }
 
   group('BusinessSubscriptionScreen E2E Tests', () {
-    testWidgets('shows basic UI elements', (final tester) async {
+    testWidgets('shows basic UI elements', (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -164,7 +157,7 @@ void main() {
     });
 
     testWidgets('Subscribe to Basic button calls service method',
-        (final tester) async {
+        (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -178,7 +171,7 @@ void main() {
     });
 
     testWidgets('Subscribe to Pro button calls service method',
-        (final tester) async {
+        (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -192,7 +185,7 @@ void main() {
     });
 
     testWidgets('Change Plan button calls customer portal',
-        (final tester) async {
+        (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -206,12 +199,12 @@ void main() {
     });
 
     testWidgets('promo code text field is present and functional',
-        (final tester) async {
+        (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
       // Find the promo code text field
-      final textField = find.byType(TextField);
+      textField = find.byType(TextField);
       expect(textField, findsOneWidget);
 
       // Enter text in the promo code field
@@ -223,7 +216,7 @@ void main() {
     });
 
     testWidgets('Apply promo code button calls service method',
-        (final tester) async {
+        (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -240,7 +233,7 @@ void main() {
     });
 
     testWidgets('shows error snackbar for invalid promo code',
-        (final tester) async {
+        (tester) async {
       // Set up the mock to throw an error
       mockService.shouldThrowError = true;
 
@@ -260,7 +253,7 @@ void main() {
     });
 
     testWidgets('shows success snackbar for valid promo code',
-        (final tester) async {
+        (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -274,11 +267,11 @@ void main() {
 
       // Verify success snackbar appears
       expect(
-          find.text('Promo applied! Your next bill is free.'), findsOneWidget);
+          find.text('Promo applied! Your next bill is free.'), findsOneWidget,);
     });
 
     testWidgets('shows loading spinner during subscription process',
-        (final tester) async {
+        (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -292,7 +285,7 @@ void main() {
     });
 
     testWidgets('shows error snackbar for subscription failure',
-        (final tester) async {
+        (tester) async {
       // Set up the mock to throw an error
       mockService.shouldThrowError = true;
 
@@ -305,11 +298,11 @@ void main() {
 
       // Verify error snackbar appears
       expect(find.textContaining('Failed to start Basic subscription'),
-          findsOneWidget);
+          findsOneWidget,);
     });
 
     testWidgets('shows success snackbar for subscription success',
-        (final tester) async {
+        (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -319,7 +312,7 @@ void main() {
 
       // Verify success snackbar appears
       expect(find.text('Redirecting to Stripe checkout for Basic plan...'),
-          findsOneWidget);
+          findsOneWidget,);
     });
   });
 }

@@ -52,7 +52,7 @@ Future<void> updatePartDirectives() async {
       // Check if file has part directives
       if (content.contains('part ') &&
           (content.contains('.g.dart') || content.contains('.freezed.dart'))) {
-        String updatedContent = content;
+        var updatedContent = content;
 
         // Update part directives to point to generated/ directory
         updatedContent = updatedContent.replaceAllMapped(

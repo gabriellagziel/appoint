@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/auth_wrapper.dart';
 import 'package:appoint/providers/auth_provider.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
 import '../../mocks/service_mocks.dart';
@@ -21,7 +21,7 @@ void main() {
           overrides: [
             authServiceProvider.overrideWithValue(mockAuthService),
           ],
-          child: MaterialApp(
+          child: const MaterialApp(
             home: AuthWrapper(),
           ),
         ),
@@ -37,7 +37,7 @@ void main() {
           overrides: [
             authServiceProvider.overrideWithValue(mockAuthService),
           ],
-          child: MaterialApp(
+          child: const MaterialApp(
             home: AuthWrapper(),
           ),
         ),
@@ -57,7 +57,7 @@ void main() {
           overrides: [
             authServiceProvider.overrideWithValue(mockAuthService),
           ],
-          child: MaterialApp(
+          child: const MaterialApp(
             home: AuthWrapper(),
           ),
         ),
@@ -77,7 +77,7 @@ void main() {
           overrides: [
             authServiceProvider.overrideWithValue(mockAuthService),
           ],
-          child: MaterialApp(
+          child: const MaterialApp(
             home: AuthWrapper(),
           ),
         ),
@@ -94,7 +94,7 @@ void main() {
           overrides: [
             authServiceProvider.overrideWithValue(mockAuthService),
           ],
-          child: MaterialApp(
+          child: const MaterialApp(
             home: AuthWrapper(),
           ),
         ),
@@ -118,7 +118,7 @@ void main() {
           overrides: [
             authServiceProvider.overrideWithValue(mockAuthService),
           ],
-          child: MaterialApp(
+          child: const MaterialApp(
             home: AuthWrapper(),
           ),
         ),
@@ -139,7 +139,7 @@ void main() {
           overrides: [
             authServiceProvider.overrideWithValue(mockAuthService),
           ],
-          child: MaterialApp(
+          child: const MaterialApp(
             home: AuthWrapper(),
           ),
         ),
@@ -149,20 +149,18 @@ void main() {
       expect(find.byType(MaterialApp), findsOneWidget);
     });
 
-
-
     testWidgets('shows loading state during authentication',
         (WidgetTester tester) async {
       // Mock slow authentication
       when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((_) => Future.delayed(Duration(seconds: 2)));
+          .thenAnswer((_) => Future.delayed(const Duration(seconds: 2)));
 
       await tester.pumpWidget(
         ProviderScope(
           overrides: [
             authServiceProvider.overrideWithValue(mockAuthService),
           ],
-          child: MaterialApp(
+          child: const MaterialApp(
             home: AuthWrapper(),
           ),
         ),
@@ -183,7 +181,7 @@ void main() {
           overrides: [
             authServiceProvider.overrideWithValue(mockAuthService),
           ],
-          child: MaterialApp(
+          child: const MaterialApp(
             home: AuthWrapper(),
           ),
         ),

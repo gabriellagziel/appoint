@@ -1,82 +1,77 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:appoint/services/auth_service.dart';
 import 'package:appoint/widgets/social_account_conflict_dialog.dart';
-import '../firebase_test_config.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+import '../firebase_test_helper.dart';
+import '../test_service_factory.dart';
 
 void main() {
-  setUpAll(() async => await setupFirebaseMocks());
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
+
   group('AuthService Social Account Conflict Tests', () {
     late AuthService authService;
 
     setUp(() {
-      authService = AuthService();
+      authService = TestServiceFactory.createMockAuthService();
     });
 
     group('isSocialAccountConflict', () {
       test('should return true for account-exists-with-different-credential',
           () {
-        final error = FirebaseAuthException(
+        final exception = FirebaseAuthException(
           code: 'account-exists-with-different-credential',
           message: 'Test error',
-          email: 'test@example.com',
         );
-
-        expect(authService.isSocialAccountConflict(error), isTrue);
+        expect(authService.isSocialAccountConflict(exception), true);
       });
 
       test('should return true for credential-already-in-use', () {
-        final error = FirebaseAuthException(
+        final exception = FirebaseAuthException(
           code: 'credential-already-in-use',
           message: 'Test error',
-          email: 'test@example.com',
         );
-
-        expect(authService.isSocialAccountConflict(error), isTrue);
+        expect(authService.isSocialAccountConflict(exception), true);
       });
 
       test('should return false for other error codes', () {
-        final error = FirebaseAuthException(
+        final exception = FirebaseAuthException(
           code: 'user-not-found',
           message: 'Test error',
         );
-
-        expect(authService.isSocialAccountConflict(error), isFalse);
+        expect(authService.isSocialAccountConflict(exception), false);
       });
     });
 
     group('getConflictingEmail', () {
       test('should return email for account-exists-with-different-credential',
           () {
-        final error = FirebaseAuthException(
+        final exception = FirebaseAuthException(
           code: 'account-exists-with-different-credential',
           message: 'Test error',
           email: 'test@example.com',
         );
-
-        expect(
-            authService.getConflictingEmail(error), equals('test@example.com'));
+        expect(authService.getConflictingEmail(exception), 'test@example.com');
       });
 
       test('should return null for other error codes', () {
-        final error = FirebaseAuthException(
+        final exception = FirebaseAuthException(
           code: 'user-not-found',
           message: 'Test error',
-          email: 'test@example.com',
         );
-
-        expect(authService.getConflictingEmail(error), isNull);
+        expect(authService.getConflictingEmail(exception), isNull);
       });
     });
 
     group('handleSocialAccountConflict', () {
       testWidgets('should show dialog for social account conflict',
           (WidgetTester tester) async {
-        final error = FirebaseAuthException(
+        final exception = FirebaseAuthException(
           code: 'account-exists-with-different-credential',
           message: 'Test error',
-          email: 'test@example.com',
         );
 
         await tester.pumpWidget(
@@ -86,7 +81,9 @@ void main() {
                 builder: (context) => ElevatedButton(
                   onPressed: () async {
                     await authService.handleSocialAccountConflict(
-                        context, error);
+                      context,
+                      exception,
+                    );
                   },
                   child: const Text('Test Conflict'),
                 ),
@@ -106,7 +103,7 @@ void main() {
 
       testWidgets('should not show dialog for non-conflict errors',
           (WidgetTester tester) async {
-        final error = FirebaseAuthException(
+        final exception = FirebaseAuthException(
           code: 'user-not-found',
           message: 'Test error',
         );
@@ -118,7 +115,9 @@ void main() {
                 builder: (context) => ElevatedButton(
                   onPressed: () async {
                     await authService.handleSocialAccountConflict(
-                        context, error);
+                      context,
+                      exception,
+                    );
                   },
                   child: const Text('Test Non-Conflict'),
                 ),
@@ -137,7 +136,7 @@ void main() {
       testWidgets(
           'should return correct result when user chooses link accounts',
           (WidgetTester tester) async {
-        final error = FirebaseAuthException(
+        final exception = FirebaseAuthException(
           code: 'account-exists-with-different-credential',
           message: 'Test error',
           email: 'test@example.com',
@@ -152,7 +151,9 @@ void main() {
                 builder: (context) => ElevatedButton(
                   onPressed: () async {
                     result = await authService.handleSocialAccountConflict(
-                        context, error);
+                      context,
+                      exception,
+                    );
                   },
                   child: const Text('Test Link'),
                 ),
@@ -173,7 +174,7 @@ void main() {
       testWidgets(
           'should return correct result when user chooses existing method',
           (WidgetTester tester) async {
-        final error = FirebaseAuthException(
+        final exception = FirebaseAuthException(
           code: 'account-exists-with-different-credential',
           message: 'Test error',
           email: 'test@example.com',
@@ -188,7 +189,9 @@ void main() {
                 builder: (context) => ElevatedButton(
                   onPressed: () async {
                     result = await authService.handleSocialAccountConflict(
-                        context, error);
+                      context,
+                      exception,
+                    );
                   },
                   child: const Text('Test Existing'),
                 ),
@@ -208,7 +211,7 @@ void main() {
 
       testWidgets('should return correct result when user cancels',
           (WidgetTester tester) async {
-        final error = FirebaseAuthException(
+        final exception = FirebaseAuthException(
           code: 'account-exists-with-different-credential',
           message: 'Test error',
           email: 'test@example.com',
@@ -223,7 +226,9 @@ void main() {
                 builder: (context) => ElevatedButton(
                   onPressed: () async {
                     result = await authService.handleSocialAccountConflict(
-                        context, error);
+                      context,
+                      exception,
+                    );
                   },
                   child: const Text('Test Cancel'),
                 ),
