@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/ambassador_stats.freezed.dart';
-part '../generated/models/ambassador_stats.g.dart';
+part 'ambassador_stats.freezed.dart';
+part 'ambassador_stats.g.dart';
 
 @freezed
 class AmbassadorStats with _$AmbassadorStats {
@@ -14,7 +14,7 @@ class AmbassadorStats with _$AmbassadorStats {
     required final DateTime date,
   }) = _AmbassadorStats;
 
-  factory AmbassadorStats.fromJson(final Map<String, dynamic> json) =>
+  factory AmbassadorStats.fromJson(Map<String, dynamic> json) =>
       _$AmbassadorStatsFromJson(json);
 }
 

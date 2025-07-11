@@ -1,24 +1,24 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'dart:io';
 
-import 'package:appoint/providers/auth_provider.dart';
-import 'package:appoint/features/studio_business/entry/business_entry_screen.dart';
-import 'package:appoint/features/studio_profile/studio_profile_screen.dart';
 import 'package:appoint/features/admin/ui/admin_dashboard_screen.dart';
-import 'package:appoint/features/family/screens/family_dashboard_screen.dart';
 import 'package:appoint/features/auth/home_screen.dart';
 import 'package:appoint/features/auth/login_screen.dart';
+import 'package:appoint/features/family/screens/family_dashboard_screen.dart';
+import 'package:appoint/features/studio_business/entry/business_entry_screen.dart';
+import 'package:appoint/features/studio_profile/studio_profile_screen.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AuthWrapper extends ConsumerWidget {
   const AuthWrapper({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final authState = ref.watch(authStateProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    authState = ref.watch(authStateProvider);
 
     return authState.when(
-      data: (final user) {
+      data: (user) {
         if (user == null) {
           return const LoginScreen();
         }
@@ -41,7 +41,7 @@ class AuthWrapper extends ConsumerWidget {
       loading: () => const Scaffold(
         body: Center(child: CircularProgressIndicator()),
       ),
-      error: (final error, final stack) {
+      error: (error, final stack) {
         if (error is SocketException) {
           return NetworkErrorRetry(
             onRetry: () => ref.refresh(authStateProvider),
@@ -56,12 +56,11 @@ class AuthWrapper extends ConsumerWidget {
 }
 
 class NetworkErrorRetry extends StatelessWidget {
+  const NetworkErrorRetry({required this.onRetry, super.key});
   final VoidCallback onRetry;
-  const NetworkErrorRetry({super.key, required this.onRetry});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -83,5 +82,4 @@ class NetworkErrorRetry extends StatelessWidget {
         ),
       ),
     );
-  }
 }

@@ -1,18 +1,16 @@
-import 'package:flutter/material.dart';
-import 'package:fl_chart/fl_chart.dart';
 import 'package:appoint/models/admin_dashboard_stats.dart';
+import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/material.dart';
 
 class RevenuePieChart extends StatelessWidget {
-  final AdminDashboardStats stats;
 
   const RevenuePieChart({
-    super.key,
-    required this.stats,
+    required this.stats, super.key,
   });
+  final AdminDashboardStats stats;
 
   @override
-  Widget build(BuildContext context) {
-    return Card(
+  Widget build(BuildContext context) => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -55,5 +53,4 @@ class RevenuePieChart extends StatelessWidget {
         ),
       ),
     );
-  }
 }

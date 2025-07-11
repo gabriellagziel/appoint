@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
 
 class CustomFilterChip extends StatelessWidget {
+
+  const CustomFilterChip({
+    required this.label, required this.isSelected, required this.onTap, super.key,
+    this.icon,
+  });
   final String label;
   final bool isSelected;
   final VoidCallback onTap;
   final IconData? icon;
 
-  const CustomFilterChip({
-    super.key,
-    required this.label,
-    required this.isSelected,
-    required this.onTap,
-    this.icon,
-  });
-
   @override
-  Widget build(final BuildContext context) {
-    return FilterChip(
+  Widget build(BuildContext context) => FilterChip(
       label: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -34,7 +30,7 @@ class CustomFilterChip extends StatelessWidget {
         ],
       ),
       selected: isSelected,
-      onSelected: (final _) => onTap(),
+      onSelected: (_) => onTap(),
       backgroundColor: Theme.of(context).colorScheme.surface,
       selectedColor: Theme.of(context).colorScheme.primary,
       checkmarkColor: Theme.of(context).colorScheme.onPrimary,
@@ -44,5 +40,4 @@ class CustomFilterChip extends StatelessWidget {
             : Theme.of(context).colorScheme.onSurface,
       ),
     );
-  }
 }

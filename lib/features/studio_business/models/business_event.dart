@@ -1,8 +1,8 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:appoint/utils/datetime_converter.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../../../generated/features/studio_business/models/business_event.freezed.dart';
-part '../../../generated/features/studio_business/models/business_event.g.dart';
+part 'business_event.freezed.dart';
+part 'business_event.g.dart';
 
 @freezed
 class BusinessEvent with _$BusinessEvent {
@@ -15,6 +15,6 @@ class BusinessEvent with _$BusinessEvent {
     @DateTimeConverter() required final DateTime endTime,
   }) = _BusinessEvent;
 
-  factory BusinessEvent.fromJson(final Map<String, dynamic> json) =>
+  factory BusinessEvent.fromJson(Map<String, dynamic> json) =>
       _$BusinessEventFromJson(json);
 }

@@ -1,6 +1,6 @@
+import 'package:appoint/widgets/booking/booking_slot_chip.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/widgets/booking/booking_slot_chip.dart';
 
 void main() {
   group('BookingSlotChip', () {
@@ -19,7 +19,7 @@ void main() {
       );
 
       // Ensure semantics label exists for screen-reader users
-      final semantics = tester.getSemantics(find.byType(BookingSlotChip));
+      semantics = tester.getSemantics(find.byType(BookingSlotChip));
       expect(semantics, isNotNull);
 
       // Tap and verify callback
@@ -73,7 +73,7 @@ void main() {
         ),
       );
 
-      final semantics = tester.getSemantics(find.byType(BookingSlotChip));
+      semantics = tester.getSemantics(find.byType(BookingSlotChip));
       expect(semantics, isNotNull);
     });
 
@@ -91,12 +91,12 @@ void main() {
         ),
       );
 
-      final semantics = tester.getSemantics(find.byType(BookingSlotChip));
+      semantics = tester.getSemantics(find.byType(BookingSlotChip));
       expect(semantics, isNotNull);
     });
 
     testWidgets('does not fire callback when disabled', (tester) async {
-      bool callbackFired = false;
+      var callbackFired = false;
       await tester.pumpWidget(
         MaterialApp(
           home: Material(
@@ -115,7 +115,7 @@ void main() {
     });
 
     testWidgets('does not fire callback when unavailable', (tester) async {
-      bool callbackFired = false;
+      var callbackFired = false;
       await tester.pumpWidget(
         MaterialApp(
           home: Material(
@@ -146,7 +146,7 @@ void main() {
         ),
       );
 
-      final chip = tester.widget<FilterChip>(find.byType(FilterChip));
+      chip = tester.widget<FilterChip>(find.byType(FilterChip));
       expect(chip.selected, true);
     });
 
@@ -164,7 +164,7 @@ void main() {
         ),
       );
 
-      final semantics = tester.getSemantics(find.byType(BookingSlotChip));
+      semantics = tester.getSemantics(find.byType(BookingSlotChip));
       expect(semantics, isNotNull);
     });
 
@@ -332,12 +332,12 @@ void main() {
       );
 
       // Verify all chips are rendered with proper semantics
-      final chips = find.byType(BookingSlotChip);
+      chips = find.byType(BookingSlotChip);
       expect(chips, findsNWidgets(3));
 
       // Verify each individual chip has semantics
-      for (int i = 0; i < 3; i++) {
-        final semantics = tester.getSemantics(chips.at(i));
+      for (var i = 0; i < 3; i++) {
+        semantics = tester.getSemantics(chips.at(i));
         expect(semantics, isNotNull);
       }
     });

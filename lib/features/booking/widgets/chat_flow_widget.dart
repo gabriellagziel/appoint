@@ -1,37 +1,36 @@
+import 'package:appoint/models/playtime_chat.dart';
+import 'package:appoint/providers/booking_draft_provider.dart';
+import 'package:appoint/services/auth_service.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:appoint/services/auth_service.dart';
-import 'package:appoint/providers/booking_draft_provider.dart';
-import 'package:appoint/models/playtime_chat.dart';
 
 /// A chat-driven booking flow widget with typing indicators and read receipts.
 class ChatFlowWidget extends ConsumerStatefulWidget {
-  /// [auth] is injected for testability.
-  final AuthService auth;
 
   const ChatFlowWidget({
-    super.key,
-    required this.auth,
+    required this.auth, super.key,
   });
+  /// [auth] is injected for testability.
+  final AuthService auth;
 
   @override
   ChatFlowWidgetState createState() => ChatFlowWidgetState(auth);
 }
 
 class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
+
+  ChatFlowWidgetState(this._auth);
   // Injected instead of direct FirebaseAuth.instance
   final AuthService _auth;
 
-  ChatFlowWidgetState(this._auth);
-
-  final TextEditingController _controller = TextEditingController();
-  final ScrollController _scrollController = ScrollController();
+  TextEditingController _controller = TextEditingController();
+  ScrollController _scrollController = ScrollController();
   static const int maxMessageLength = 500;
 
   @override
-  Widget build(final BuildContext context) {
-    final draft = ref.watch(bookingDraftProvider);
+  Widget build(BuildContext context) {
+    draft = ref.watch(bookingDraftProvider);
     final messages = draft.chatMessages;
     final isOtherUserTyping = draft.isOtherUserTyping;
 
@@ -48,7 +47,7 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
                 return ListView.builder(
                   controller: _scrollController,
                   itemCount: messages.length + (isOtherUserTyping ? 1 : 0),
-                  itemBuilder: (final context, final index) {
+                  itemBuilder: (context, final index) {
                     if (index == messages.length && isOtherUserTyping) {
                       return _buildTypingIndicator();
                     }
@@ -80,15 +79,14 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
     );
   }
 
-  Widget _buildTypingIndicator() {
-    return Align(
+  Widget _buildTypingIndicator() => Align(
       alignment: Alignment.centerLeft,
       child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         child: Card(
           color: Colors.grey[200],
           child: Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -107,10 +105,8 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
         ),
       ),
     );
-  }
 
-  Widget _buildTypingDots() {
-    return Row(
+  Widget _buildTypingDots() => Row(
       mainAxisSize: MainAxisSize.min,
       children: [
         for (int i = 0; i < 3; i++)
@@ -128,23 +124,22 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
           ),
       ],
     );
-  }
 
   Widget _buildMessageBubble(
-      ChatMessage msg, bool isUser, String? currentUserId) {
+      ChatMessage msg, bool isUser, String? currentUserId,) {
     final hasBeenRead =
         currentUserId != null && msg.readBy.contains(currentUserId);
 
     return Align(
       alignment: isUser ? Alignment.centerRight : Alignment.centerLeft,
       child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
         child: Stack(
           children: [
             Card(
               color: isUser ? Colors.blue[100] : Colors.grey[200],
               child: Padding(
-                padding: const EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(12),
                 child: Text(
                   msg.content,
                   style: TextStyle(
@@ -174,7 +169,7 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
     final isOverLimit = currentLength > maxMessageLength;
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       child: Column(
         children: [
           Row(
@@ -195,7 +190,7 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
                     onChanged: (value) {
                       setState(() {}); // Rebuild to update counter
                     },
-                    onSubmitted: (final _) => _sendMessage(),
+                    onSubmitted: (_) => _sendMessage(),
                   ),
                 ),
               ),
@@ -216,14 +211,14 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
   }
 
   void _sendMessage() {
-    final input = _controller.text.trim();
+    input = _controller.text.trim();
     if (input.isEmpty || input.length > maxMessageLength) return;
 
     ref.read(bookingDraftProvider.notifier).addUserMessage(input);
     _controller.clear();
 
     // Scroll to bottom after frame
-    WidgetsBinding.instance.addPostFrameCallback((final _) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_scrollController.hasClients) {
         _scrollController.animateTo(
           _scrollController.position.maxScrollExtent,

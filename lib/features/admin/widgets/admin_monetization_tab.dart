@@ -1,15 +1,15 @@
+import 'package:appoint/models/admin_dashboard_stats.dart';
+import 'package:appoint/providers/admin_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/admin_provider.dart';
-import 'package:appoint/models/admin_dashboard_stats.dart';
 
 class AdminMonetizationTab extends ConsumerWidget {
   const AdminMonetizationTab({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final monetizationSettings = ref.watch(monetizationSettingsProvider);
-    final adRevenueStats = ref.watch(adRevenueStatsProvider);
+    monetizationSettings = ref.watch(monetizationSettingsProvider);
+    adRevenueStats = ref.watch(adRevenueStatsProvider);
 
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16),
@@ -17,17 +17,17 @@ class AdminMonetizationTab extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           monetizationSettings.when(
-            data: (final settings) =>
+            data: (settings) =>
                 _buildMonetizationSettings(context, ref, settings),
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (final error, final stack) =>
+            error: (error, final stack) =>
                 Center(child: Text('Error: $error')),
           ),
           const SizedBox(height: 24),
           adRevenueStats.when(
-            data: (final stats) => _buildAdRevenueStats(stats),
+            data: _buildAdRevenueStats,
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (final error, final stack) =>
+            error: (error, final stack) =>
                 Center(child: Text('Error: $error')),
           ),
         ],
@@ -36,8 +36,7 @@ class AdminMonetizationTab extends ConsumerWidget {
   }
 
   Widget _buildMonetizationSettings(
-      BuildContext context, WidgetRef ref, MonetizationSettings settings) {
-    return Card(
+      BuildContext context, WidgetRef ref, MonetizationSettings settings,) => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -55,44 +54,40 @@ class AdminMonetizationTab extends ConsumerWidget {
             _buildSettingSwitch(
               'Ads for Free Users',
               settings.adsEnabledForFreeUsers,
-              (final value) =>
+              (value) =>
                   _updateAdSetting(ref, 'adsEnabledForFreeUsers', value),
             ),
             _buildSettingSwitch(
               'Ads for Children',
               settings.adsEnabledForChildren,
-              (final value) =>
+              (value) =>
                   _updateAdSetting(ref, 'adsEnabledForChildren', value),
             ),
             _buildSettingSwitch(
               'Ads for Studio Users',
               settings.adsEnabledForStudioUsers,
-              (final value) =>
+              (value) =>
                   _updateAdSetting(ref, 'adsEnabledForStudioUsers', value),
             ),
             _buildSettingSwitch(
               'Ads for Premium Users',
               settings.adsEnabledForPremiumUsers,
-              (final value) =>
+              (value) =>
                   _updateAdSetting(ref, 'adsEnabledForPremiumUsers', value),
             ),
           ],
         ),
       ),
     );
-  }
 
   Widget _buildSettingSwitch(final String title, final bool value,
-      final ValueChanged<bool> onChanged) {
-    return SwitchListTile(
+      ValueChanged<bool> onChanged,) => SwitchListTile(
       title: Text(title),
       value: value,
       onChanged: onChanged,
     );
-  }
 
-  Widget _buildAdRevenueStats(final AdRevenueStats stats) {
-    return Card(
+  Widget _buildAdRevenueStats(AdRevenueStats stats) => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -108,26 +103,24 @@ class AdminMonetizationTab extends ConsumerWidget {
             ),
             const SizedBox(height: 16),
             _buildStatRow(
-                'Total Revenue', '\$${stats.totalRevenue.toStringAsFixed(2)}'),
+                'Total Revenue', '\$${stats.totalRevenue.toStringAsFixed(2)}',),
             _buildStatRow('Monthly Revenue',
-                '\$${stats.monthlyRevenue.toStringAsFixed(2)}'),
+                '\$${stats.monthlyRevenue.toStringAsFixed(2)}',),
             _buildStatRow('Weekly Revenue',
-                '\$${stats.weeklyRevenue.toStringAsFixed(2)}'),
+                '\$${stats.weeklyRevenue.toStringAsFixed(2)}',),
             _buildStatRow(
-                'Daily Revenue', '\$${stats.dailyRevenue.toStringAsFixed(2)}'),
+                'Daily Revenue', '\$${stats.dailyRevenue.toStringAsFixed(2)}',),
             _buildStatRow(
-                'Total Impressions', stats.totalImpressions.toString()),
+                'Total Impressions', stats.totalImpressions.toString(),),
             _buildStatRow('Total Clicks', stats.totalClicks.toString()),
             _buildStatRow('Click Through Rate',
-                '${(stats.clickThroughRate * 100).toStringAsFixed(2)}%'),
+                '${(stats.clickThroughRate * 100).toStringAsFixed(2)}%',),
           ],
         ),
       ),
     );
-  }
 
-  Widget _buildStatRow(final String label, final String value) {
-    return Padding(
+  Widget _buildStatRow(String label, final String value) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -140,10 +133,9 @@ class AdminMonetizationTab extends ConsumerWidget {
         ],
       ),
     );
-  }
 
-  void _updateAdSetting(WidgetRef ref, final String setting, final bool value) {
-    final currentSettings = ref.read(monetizationSettingsProvider).value;
+  void _updateAdSetting(WidgetRef ref, String setting, final bool value) {
+    currentSettings = ref.read(monetizationSettingsProvider).value;
     if (currentSettings != null) {
       final updatedSettings = currentSettings.copyWith(
         adsEnabledForFreeUsers: setting == 'adsEnabledForFreeUsers'

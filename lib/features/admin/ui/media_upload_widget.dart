@@ -17,8 +17,8 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
   XFile? _webFile;
 
   Future<void> _selectFile() async {
-    final picker = ImagePicker();
-    final XFile? picked = await picker.pickImage(source: ImageSource.gallery);
+    picker = ImagePicker();
+    picked = await picker.pickImage(source: ImageSource.gallery);
     if (picked != null) {
       setState(() {
         if (kIsWeb) {
@@ -38,7 +38,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
   }
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     Widget preview;
     if (_file != null || _webFile != null) {
       final provider = kIsWeb
@@ -86,7 +86,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
           icon: const Icon(Icons.upload_file),
           label: Text(_file == null && _webFile == null
               ? 'Select File'
-              : 'Change File'),
+              : 'Change File',),
         ),
       ],
     );

@@ -1,8 +1,8 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:appoint/utils/datetime_converter.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/calendar_event.freezed.dart';
-part '../generated/models/calendar_event.g.dart';
+part 'calendar_event.freezed.dart';
+part 'calendar_event.g.dart';
 
 @freezed
 class CalendarEvent with _$CalendarEvent {
@@ -16,6 +16,6 @@ class CalendarEvent with _$CalendarEvent {
     final String? location,
   }) = _CalendarEvent;
 
-  factory CalendarEvent.fromJson(final Map<String, dynamic> json) =>
+  factory CalendarEvent.fromJson(Map<String, dynamic> json) =>
       _$CalendarEventFromJson(json);
 }

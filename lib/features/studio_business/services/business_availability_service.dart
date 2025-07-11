@@ -1,27 +1,26 @@
 import 'dart:convert';
-import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'package:appoint/features/studio_business/models/business_availability.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 final businessAvailabilityServiceProvider =
-    Provider<BusinessAvailabilityService>((final ref) {
-  return BusinessAvailabilityService();
-});
+    Provider<BusinessAvailabilityService>((ref) => BusinessAvailabilityService());
 
 class BusinessAvailabilityService {
   static const String _storageKey = 'business_availability_config';
 
   /// Save the business availability configuration to local storage
-  Future<void> saveConfiguration(final Map<String, dynamic> config) async {
-    final prefs = await SharedPreferences.getInstance();
+  Future<void> saveConfiguration(Map<String, dynamic> config) async {
+    prefs = await SharedPreferences.getInstance();
     await prefs.setString(_storageKey, jsonEncode(config));
   }
 
   /// Load the business availability configuration from local storage
   Future<List<BusinessAvailability>> loadConfiguration() async {
-    final prefs = await SharedPreferences.getInstance();
-    final configString = prefs.getString(_storageKey);
+    prefs = await SharedPreferences.getInstance();
+    configString = prefs.getString(_storageKey);
 
     if (configString == null) {
       // Return default configuration if no saved config exists
@@ -37,14 +36,14 @@ class BusinessAvailabilityService {
     }
 
     try {
-      final config = jsonDecode(configString) as Map<String, dynamic>;
+      config = jsonDecode(configString) as Map<String, dynamic>;
       final availabilityList = config['availability'] as List<dynamic>;
 
       return availabilityList
-          .map((final item) =>
-              BusinessAvailability.fromJson(item as Map<String, dynamic>))
+          .map((item) =>
+              BusinessAvailability.fromJson(item as Map<String, dynamic>),)
           .toList();
-    } catch (e) {
+    } catch (e) {e) {
       // Return default configuration if parsing fails
       return [
         for (int i = 0; i < 7; i++)
@@ -60,9 +59,9 @@ class BusinessAvailabilityService {
 
   /// Update a specific day's availability
   Future<void> updateDay(
-      final int weekday, final BusinessAvailability availability) async {
-    final currentConfig = await loadConfiguration();
-    final updatedConfig = currentConfig.map((final day) {
+      int weekday, final BusinessAvailability availability,) async {
+    currentConfig = await loadConfiguration();
+    updatedConfig = currentConfig.map((final day) {
       if (day.weekday == weekday) {
         return availability;
       }
@@ -73,9 +72,7 @@ class BusinessAvailabilityService {
   }
 
   /// Convert a list of BusinessAvailability to a JSON map for saving
-  Map<String, dynamic> toJson(final List<BusinessAvailability> availability) {
-    return {
-      'availability': availability.map((final a) => a.toJson()).toList(),
+  Map<String, dynamic> toJson(List<BusinessAvailability> availability) => {
+      'availability': availability.map((a) => a.toJson()).toList(),
     };
-  }
 }

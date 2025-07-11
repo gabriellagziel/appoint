@@ -1,20 +1,15 @@
+import 'package:appoint/models/staff_availability.dart';
+import 'package:appoint/models/staff_member.dart';
+import 'package:appoint/services/studio_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:appoint/services/studio_service.dart';
-import 'package:appoint/models/staff_member.dart';
-import 'package:appoint/models/staff_availability.dart';
-
 final studioServiceProvider =
-    Provider<StudioService>((final ref) => StudioService());
+    Provider<StudioService>((ref) => StudioService());
 
-final staffListProvider = FutureProvider.family<List<StaffMember>, String>(
-    (final ref, final studioId) {
-  return ref.read(studioServiceProvider).fetchStaff(studioId);
-});
+final FutureProviderFamily<List<StaffMember>, String> staffListProvider = FutureProvider.family<List<StaffMember>, String>(
+    (ref, final studioId) => ref.read(studioServiceProvider).fetchStaff(studioId),);
 
-final staffAvailabilityProvider =
+final FutureProviderFamily<StaffAvailability, Map<String, dynamic>> staffAvailabilityProvider =
     FutureProvider.family<StaffAvailability, Map<String, dynamic>>(
-        (final ref, final params) {
-  return ref.read(studioServiceProvider).fetchAvailability(
-      params['staffId'] as String, params['date'] as DateTime);
-});
+        (ref, final params) => ref.read(studioServiceProvider).fetchAvailability(
+      params['staffId'] as String, params['date'] as DateTime,),);

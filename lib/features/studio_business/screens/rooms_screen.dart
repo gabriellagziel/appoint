@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class RoomsScreen extends ConsumerStatefulWidget {
   const RoomsScreen({super.key});
@@ -11,10 +11,10 @@ class RoomsScreen extends ConsumerStatefulWidget {
 }
 
 class _RoomsScreenState extends ConsumerState<RoomsScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
-  final _capacityController = TextEditingController();
-  final _descriptionController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _nameController = TextEditingController();
+  _capacityController = TextEditingController();
+  _descriptionController = TextEditingController();
   bool _isAdding = false;
 
   @override
@@ -26,7 +26,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
       return const Scaffold(
@@ -49,7 +49,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
             .collection('rooms')
             .where('businessProfileId', isEqualTo: user.uid)
             .snapshots(),
-        builder: (final context, final snapshot) {
+        builder: (context, final snapshot) {
           if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           }
@@ -69,8 +69,8 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           return ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: rooms.length,
-            itemBuilder: (final context, final index) {
-              final room = rooms[index].data() as Map<String, dynamic>;
+            itemBuilder: (context, final index) {
+              room = rooms[index].data()! as Map<String, dynamic>;
               final roomId = rooms[index].id;
 
               return Card(
@@ -94,11 +94,11 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                       if (room['description'] != null)
                         Text('Description: ${room['description']}'),
                       Text(
-                          'Status: ${room['isAvailable'] == true ? 'Available' : 'Occupied'}'),
+                          'Status: ${room['isAvailable'] == true ? 'Available' : 'Occupied'}',),
                     ],
                   ),
                   trailing: PopupMenuButton(
-                    itemBuilder: (final context) => [
+                    itemBuilder: (context) => [
                       const PopupMenuItem(
                         value: 'edit',
                         child: Text('Edit'),
@@ -112,12 +112,12 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                         child: Text('Delete'),
                       ),
                     ],
-                    onSelected: (final value) {
+                    onSelected: (value) {
                       if (value == 'edit') {
                         _showEditRoomDialog(context, roomId, room);
                       } else if (value == 'toggle') {
                         _toggleRoomAvailability(
-                            roomId, room['isAvailable'] ?? true);
+                            roomId, room['isAvailable'] ?? true,);
                       } else if (value == 'delete') {
                         _deleteRoom(roomId);
                       }
@@ -132,14 +132,14 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
     );
   }
 
-  void _showAddRoomDialog(final BuildContext context) {
+  void _showAddRoomDialog(BuildContext context) {
     _nameController.clear();
     _capacityController.clear();
     _descriptionController.clear();
 
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Add New Room'),
         content: Form(
           key: _formKey,
@@ -149,7 +149,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
               TextFormField(
                 controller: _nameController,
                 decoration: const InputDecoration(labelText: 'Room Name'),
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter room name';
                   }
@@ -160,7 +160,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                 controller: _capacityController,
                 decoration: const InputDecoration(labelText: 'Capacity'),
                 keyboardType: TextInputType.number,
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter capacity';
                   }
@@ -195,14 +195,14 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
   }
 
   void _showEditRoomDialog(final BuildContext context, final String roomId,
-      final Map<String, dynamic> room) {
+      Map<String, dynamic> room,) {
     _nameController.text = room['name'] ?? '';
     _capacityController.text = (room['capacity'] ?? 0).toString();
     _descriptionController.text = room['description'] ?? '';
 
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Edit Room'),
         content: Form(
           key: _formKey,
@@ -212,7 +212,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
               TextFormField(
                 controller: _nameController,
                 decoration: const InputDecoration(labelText: 'Room Name'),
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter room name';
                   }
@@ -223,7 +223,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                 controller: _capacityController,
                 decoration: const InputDecoration(labelText: 'Capacity'),
                 keyboardType: TextInputType.number,
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter capacity';
                   }
@@ -286,7 +286,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           const SnackBar(content: Text('Room added successfully!')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -299,7 +299,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
     }
   }
 
-  Future<void> _updateRoom(final String roomId) async {
+  Future<void> _updateRoom(String roomId) async {
     if (!_formKey.currentState!.validate()) {
       return;
     }
@@ -322,7 +322,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           const SnackBar(content: Text('Room updated successfully!')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -336,7 +336,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
   }
 
   Future<void> _toggleRoomAvailability(
-      final String roomId, final bool currentAvailability) async {
+      String roomId, final bool currentAvailability,) async {
     try {
       await FirebaseFirestore.instance.collection('rooms').doc(roomId).update({
         'isAvailable': !currentAvailability,
@@ -347,10 +347,10 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
               content: Text(
-                  'Room ${!currentAvailability ? 'enabled' : 'disabled'} successfully!')),
+                  'Room ${!currentAvailability ? 'enabled' : 'disabled'} successfully!',),),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -359,7 +359,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
     }
   }
 
-  Future<void> _deleteRoom(final String roomId) async {
+  Future<void> _deleteRoom(String roomId) async {
     try {
       await FirebaseFirestore.instance.collection('rooms').doc(roomId).delete();
 
@@ -368,7 +368,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           const SnackBar(content: Text('Room deleted successfully!')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),

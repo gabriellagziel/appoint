@@ -1,10 +1,10 @@
-import 'package:integration_test/integration_test.dart';
-import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/main.dart' as app;
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:appoint/services/fcm_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:integration_test/integration_test.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
@@ -26,16 +26,16 @@ void main() {
     });
 
     testWidgets('FCM Service Initialization and Token Management',
-        (final tester) async {
+        (tester) async {
       app.main();
       await tester.pumpAndSettle();
 
       // Initialize FCM service
-      final fcmService = FCMService();
+      fcmService = FCMService();
       await fcmService.initialize();
 
       // Get FCM token
-      final token = await fcmService.getToken();
+      token = await fcmService.getToken();
       expect(token, isNotNull);
 
       // Verify token is saved to Firestore
@@ -51,7 +51,7 @@ void main() {
     });
 
     testWidgets('FCM Notification Trigger on New Booking',
-        (final tester) async {
+        (tester) async {
       app.main();
       await tester.pumpAndSettle();
 
@@ -90,15 +90,15 @@ void main() {
 
       expect(bookings.docs, isNotEmpty);
       expect(
-          bookings.docs.first.data()['clientName'], equals('FCM Test Client'));
+          bookings.docs.first.data()['clientName'], equals('FCM Test Client'),);
     });
 
     testWidgets('FCM Topic Subscription and Unsubscription',
-        (final tester) async {
+        (tester) async {
       app.main();
       await tester.pumpAndSettle();
 
-      final fcmService = FCMService();
+      fcmService = FCMService();
       await fcmService.initialize();
 
       // Test topic subscription
@@ -113,11 +113,11 @@ void main() {
       expect(() => fcmService.unsubscribeFromTopic(testTopic), returnsNormally);
     });
 
-    testWidgets('FCM Foreground Message Handling', (final tester) async {
+    testWidgets('FCM Foreground Message Handling', (tester) async {
       app.main();
       await tester.pumpAndSettle();
 
-      final fcmService = FCMService();
+      fcmService = FCMService();
       await fcmService.initialize();
 
       // Simulate a foreground message
@@ -125,10 +125,10 @@ void main() {
       // but we can test the service structure and error handling
 
       // Verify the service can handle initialization multiple times
-      expect(() => fcmService.initialize(), returnsNormally);
+      expect(fcmService.initialize, returnsNormally);
 
       // Verify token retrieval works
-      final token = await fcmService.getToken();
+      token = await fcmService.getToken();
       expect(token, isNotNull);
     });
   });

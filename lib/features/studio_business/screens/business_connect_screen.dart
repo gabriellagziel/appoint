@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class BusinessConnectScreen extends ConsumerStatefulWidget {
   const BusinessConnectScreen({super.key});
@@ -12,8 +12,8 @@ class BusinessConnectScreen extends ConsumerStatefulWidget {
 }
 
 class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _codeController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _codeController = TextEditingController();
   bool _isConnecting = false;
 
   @override
@@ -23,8 +23,7 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(title: const Text('Activate Business Profile')),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -45,7 +44,7 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
                   border: OutlineInputBorder(),
                   hintText: 'e.g., UPGRADE_123456',
                 ),
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter your upgrade code';
                   }
@@ -75,7 +74,7 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
                       Text(
                         'What you get with Business Profile:',
                         style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold),
+                            fontSize: 16, fontWeight: FontWeight.bold,),
                       ),
                       SizedBox(height: 8),
                       Text('• Unlimited bookings per week'),
@@ -92,7 +91,6 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
         ),
       ),
     );
-  }
 
   Future<void> _connectBusiness() async {
     if (!_formKey.currentState!.validate()) {
@@ -105,7 +103,7 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
       final user = FirebaseAuth.instance.currentUser;
       if (user == null) throw Exception('Not authenticated');
 
-      final upgradeCode = _codeController.text.trim();
+      upgradeCode = _codeController.text.trim();
 
       // Validate the upgrade code (in a real app, this would check against a database)
       if (!_isValidUpgradeCode(upgradeCode)) {
@@ -125,11 +123,11 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-              content: Text('Business profile activated successfully!')),
+              content: Text('Business profile activated successfully!'),),
         );
         Navigator.pushReplacementNamed(context, '/business/dashboard');
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -142,7 +140,7 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
     }
   }
 
-  bool _isValidUpgradeCode(final String code) {
+  bool _isValidUpgradeCode(String code) {
     // Simple validation - in a real app, this would check against a database
     return code.startsWith('UPGRADE_') && code.length >= 10;
   }

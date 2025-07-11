@@ -1,613 +1,0 @@
-00:00 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:01 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:02 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:03 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:04 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:05 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:06 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:07 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:08 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:09 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:10 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:11 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:12 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:13 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:14 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:15 +0: loading /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart                                                                                                                00:15 +0: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: (setUpAll)                                                                                                            00:15 +0: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should display the title in app bar                                                                       00:16 +0: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should display the title in app bar                                                                       00:17 +0: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should display the title in app bar                                                                       00:18 +0: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should display the title in app bar                                                                       00:19 +0: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should display the title in app bar                                                                       00:19 +1: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: ChatBookingScreen should display chat interface                                                                    00:19 +2: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: ChatBookingScreen should display chat interface                                                                    00:19 +3: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: ChatBookingScreen should display chat interface                                                                    00:20 +3: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: ChatBookingScreen should display chat interface                                                                    00:20 +4: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should allow entering email and password                                                                  00:20 +5: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: ChatBookingScreen should add user message when send button is pressed                                              00:20 +6: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: ChatBookingScreen should add user message when send button is pressed                                              00:20 +7: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: ChatBookingScreen should add user message when send button is pressed                                              00:21 +7: /Users/a/Documents/APP-OINT/test/features/booking/chat_booking_test.dart: ChatBookingScreen should add user message when send button is pressed                                              00:21 +8: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle empty form submission                                                                       00:21 +9: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle empty form submission                                                                       00:22 +9: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle empty form submission                                                                       00:22 +9: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle empty form submission                                                                       
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following FirebaseException was thrown running a test:
-[core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-
-When the exception was thrown, this was the stack:
-#1      ProviderContainer.read (package:riverpod/src/framework/container.dart:241:21)
-#2      ConsumerStatefulElement.read (package:flutter_riverpod/src/consumer.dart:620:59)
-#3      _LoginScreenState.build.<anonymous closure> (package:appoint/features/auth/login_screen.dart:44:27)
-#4      _InkResponseState.handleTap (package:flutter/src/material/ink_well.dart:1203:21)
-#5      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
-#6      TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:737:11)
-#7      BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:362:5)
-#8      BaseTapGestureRecognizer.handlePrimaryPointer (package:flutter/src/gestures/tap.dart:293:7)
-#9      PrimaryPointerGestureRecognizer.handleEvent (package:flutter/src/gestures/recognizer.dart:706:9)
-#10     PointerRouter._dispatch (package:flutter/src/gestures/pointer_router.dart:97:12)
-#11     PointerRouter._dispatchEventToRoutes.<anonymous closure> (package:flutter/src/gestures/pointer_router.dart:143:9)
-#12     _LinkedHashMapMixin.forEach (dart:_compact_hash:764:13)
-#13     PointerRouter._dispatchEventToRoutes (package:flutter/src/gestures/pointer_router.dart:141:18)
-#14     PointerRouter.route (package:flutter/src/gestures/pointer_router.dart:131:7)
-#15     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:530:19)
-#16     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:499:22)
-#17     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
-#18     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
-#19     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
-#20     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:678:42)
-#21     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:688:11)
-#22     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:678:5)
-#23     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:870:15)
-#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#27     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:869:27)
-#28     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:538:26)
-#31     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#32     TestGesture.up (package:flutter_test/src/test_pointer.dart:531:27)
-#33     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1113:21)
-#34     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
-#35     main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart:123:7)
-#36     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-#37     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-#39     MethodChannelFirebase.app (package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart:195:5)
-#40     Firebase.app (package:firebase_core/src/firebase.dart:56:41)
-#41     FirebaseAuth.instance (package:firebase_auth/src/firebase_auth.dart:38:47)
-#42     new AuthService (package:appoint/core/auth_service.dart:4:51)
-#43     authServiceProvider.<anonymous closure> (package:appoint/providers/auth_provider.dart:5:60)
-#44     ProviderContainer.read (package:riverpod/src/framework/container.dart:241:21)
-#45     ConsumerStatefulElement.read (package:flutter_riverpod/src/consumer.dart:620:59)
-#46     _LoginScreenState.build.<anonymous closure> (package:appoint/features/auth/login_screen.dart:44:27)
-#47     _InkResponseState.handleTap (package:flutter/src/material/ink_well.dart:1203:21)
-#48     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
-#49     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:737:11)
-#50     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:362:5)
-#51     BaseTapGestureRecognizer.handlePrimaryPointer (package:flutter/src/gestures/tap.dart:293:7)
-#52     PrimaryPointerGestureRecognizer.handleEvent (package:flutter/src/gestures/recognizer.dart:706:9)
-#53     PointerRouter._dispatch (package:flutter/src/gestures/pointer_router.dart:97:12)
-#54     PointerRouter._dispatchEventToRoutes.<anonymous closure> (package:flutter/src/gestures/pointer_router.dart:143:9)
-#55     _LinkedHashMapMixin.forEach (dart:_compact_hash:764:13)
-#56     PointerRouter._dispatchEventToRoutes (package:flutter/src/gestures/pointer_router.dart:141:18)
-#57     PointerRouter.route (package:flutter/src/gestures/pointer_router.dart:131:7)
-#58     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:530:19)
-#59     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:499:22)
-#60     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
-#61     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
-#62     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
-#63     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:678:42)
-#64     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:688:11)
-#65     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:678:5)
-#66     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:870:15)
-#69     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#70     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:869:27)
-#71     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:538:26)
-#74     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#75     TestGesture.up (package:flutter_test/src/test_pointer.dart:531:27)
-#76     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1113:21)
-#78     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1107:35)
-#81     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#82     WidgetController.tapAt (package:flutter_test/src/controller.dart:1106:27)
-#83     WidgetController.tap (package:flutter_test/src/controller.dart:1040:12)
-#84     main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart:123:20)
-#86     main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart:114:7)
-#87     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:29)
-#89     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:190:25)
-#90     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:19)
-#92     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1053:5)
-#95     TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1038:10)
-#96     AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:1573:24)
-#97     FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
-#102    withClock (package:clock/src/default.dart:52:10)
-#103    FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
-#108    FakeAsync.run (package:fake_async/fake_async.dart:181:52)
-#109    AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:1570:15)
-#110    testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:185:24)
-#111    Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:229:19)
-#113    Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:228:9)
-#118    Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:227:13)
-#119    Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:258:17)
-#124    Invoker._waitForOutstandingCallbacks (package:test_api/src/backend/invoker.dart:254:5)
-#125    Invoker._onRun.<anonymous closure>.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:394:17)
-#127    Invoker._onRun.<anonymous closure>.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:392:11)
-#132    Invoker._onRun.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:383:9)
-#133    Invoker._guardIfGuarded (package:test_api/src/backend/invoker.dart:426:15)
-#134    Invoker._onRun.<anonymous closure> (package:test_api/src/backend/invoker.dart:382:7)
-#141    Invoker._onRun (package:test_api/src/backend/invoker.dart:381:11)
-#142    LiveTestController.run (package:test_api/src/backend/live_test_controller.dart:153:11)
-#143    RemoteListener._runLiveTest.<anonymous closure> (package:test_api/src/backend/remote_listener.dart:273:16)
-#148    RemoteListener._runLiveTest (package:test_api/src/backend/remote_listener.dart:272:5)
-#149    RemoteListener._serializeTest.<anonymous closure> (package:test_api/src/backend/remote_listener.dart:220:7)
-#167    _GuaranteeSink.add (package:stream_channel/src/guarantee_channel.dart:125:12)
-#168    new _MultiChannel.<anonymous closure> (package:stream_channel/src/multi_channel.dart:159:31)
-#170    CastStreamSubscription._onData (dart:_internal/async_cast.dart:96:11)
-#196    new _WebSocketImpl._fromSocket.<anonymous closure> (dart:_http/websocket_impl.dart:1258:31)
-#202    _WebSocketProtocolTransformer._messageFrameEnd (dart:_http/websocket_impl.dart:348:23)
-#203    _WebSocketProtocolTransformer.add (dart:_http/websocket_impl.dart:238:46)
-#211    _Socket._onData (dart:io-patch/socket_patch.dart:2907:41)
-#218    new _RawSocket.<anonymous closure> (dart:io-patch/socket_patch.dart:2326:31)
-#219    _NativeSocket.issueReadEvent.issue (dart:io-patch/socket_patch.dart:1649:14)
-(elided 112 frames from dart:async and package:stack_trace)
-
-The test description was:
-  should handle empty form submission
-════════════════════════════════════════════════════════════════════════════════════════════════════
-00:22 +9 -1: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle empty form submission [E]                                                                
-  Test failed. See exception logs above.
-  The test description was: should handle empty form submission
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart -p vm --plain-name 'LoginScreen should handle empty form submission'
-00:22 +9 -1: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle form with credentials                                                                    00:23 +9 -1: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle form with credentials                                                                    00:23 +9 -1: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle form with credentials                                                                    
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following FirebaseException was thrown running a test:
-[core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-
-When the exception was thrown, this was the stack:
-#1      ProviderContainer.read (package:riverpod/src/framework/container.dart:241:21)
-#2      ConsumerStatefulElement.read (package:flutter_riverpod/src/consumer.dart:620:59)
-#3      _LoginScreenState.build.<anonymous closure> (package:appoint/features/auth/login_screen.dart:44:27)
-#4      _InkResponseState.handleTap (package:flutter/src/material/ink_well.dart:1203:21)
-#5      GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
-#6      TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:737:11)
-#7      BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:362:5)
-#8      BaseTapGestureRecognizer.handlePrimaryPointer (package:flutter/src/gestures/tap.dart:293:7)
-#9      PrimaryPointerGestureRecognizer.handleEvent (package:flutter/src/gestures/recognizer.dart:706:9)
-#10     PointerRouter._dispatch (package:flutter/src/gestures/pointer_router.dart:97:12)
-#11     PointerRouter._dispatchEventToRoutes.<anonymous closure> (package:flutter/src/gestures/pointer_router.dart:143:9)
-#12     _LinkedHashMapMixin.forEach (dart:_compact_hash:764:13)
-#13     PointerRouter._dispatchEventToRoutes (package:flutter/src/gestures/pointer_router.dart:141:18)
-#14     PointerRouter.route (package:flutter/src/gestures/pointer_router.dart:131:7)
-#15     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:530:19)
-#16     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:499:22)
-#17     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
-#18     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
-#19     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
-#20     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:678:42)
-#21     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:688:11)
-#22     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:678:5)
-#23     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:870:15)
-#26     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#27     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:869:27)
-#28     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:538:26)
-#31     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#32     TestGesture.up (package:flutter_test/src/test_pointer.dart:531:27)
-#33     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1113:21)
-#34     TestAsyncUtils.guard.<anonymous closure> (package:flutter_test/src/test_async_utils.dart:130:27)
-#35     main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart:150:7)
-#36     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:15)
-#37     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:5)
-#39     MethodChannelFirebase.app (package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart:195:5)
-#40     Firebase.app (package:firebase_core/src/firebase.dart:56:41)
-#41     FirebaseAuth.instance (package:firebase_auth/src/firebase_auth.dart:38:47)
-#42     new AuthService (package:appoint/core/auth_service.dart:4:51)
-#43     authServiceProvider.<anonymous closure> (package:appoint/providers/auth_provider.dart:5:60)
-#44     ProviderContainer.read (package:riverpod/src/framework/container.dart:241:21)
-#45     ConsumerStatefulElement.read (package:flutter_riverpod/src/consumer.dart:620:59)
-#46     _LoginScreenState.build.<anonymous closure> (package:appoint/features/auth/login_screen.dart:44:27)
-#47     _InkResponseState.handleTap (package:flutter/src/material/ink_well.dart:1203:21)
-#48     GestureRecognizer.invokeCallback (package:flutter/src/gestures/recognizer.dart:345:24)
-#49     TapGestureRecognizer.handleTapUp (package:flutter/src/gestures/tap.dart:737:11)
-#50     BaseTapGestureRecognizer._checkUp (package:flutter/src/gestures/tap.dart:362:5)
-#51     BaseTapGestureRecognizer.handlePrimaryPointer (package:flutter/src/gestures/tap.dart:293:7)
-#52     PrimaryPointerGestureRecognizer.handleEvent (package:flutter/src/gestures/recognizer.dart:706:9)
-#53     PointerRouter._dispatch (package:flutter/src/gestures/pointer_router.dart:97:12)
-#54     PointerRouter._dispatchEventToRoutes.<anonymous closure> (package:flutter/src/gestures/pointer_router.dart:143:9)
-#55     _LinkedHashMapMixin.forEach (dart:_compact_hash:764:13)
-#56     PointerRouter._dispatchEventToRoutes (package:flutter/src/gestures/pointer_router.dart:141:18)
-#57     PointerRouter.route (package:flutter/src/gestures/pointer_router.dart:131:7)
-#58     GestureBinding.handleEvent (package:flutter/src/gestures/binding.dart:530:19)
-#59     GestureBinding.dispatchEvent (package:flutter/src/gestures/binding.dart:499:22)
-#60     RendererBinding.dispatchEvent (package:flutter/src/rendering/binding.dart:473:11)
-#61     GestureBinding._handlePointerEventImmediately (package:flutter/src/gestures/binding.dart:437:7)
-#62     GestureBinding.handlePointerEvent (package:flutter/src/gestures/binding.dart:394:5)
-#63     TestWidgetsFlutterBinding.handlePointerEventForSource.<anonymous closure> (package:flutter_test/src/binding.dart:678:42)
-#64     TestWidgetsFlutterBinding.withPointerEventSource (package:flutter_test/src/binding.dart:688:11)
-#65     TestWidgetsFlutterBinding.handlePointerEventForSource (package:flutter_test/src/binding.dart:678:5)
-#66     WidgetTester.sendEventToBinding.<anonymous closure> (package:flutter_test/src/widget_tester.dart:870:15)
-#69     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#70     WidgetTester.sendEventToBinding (package:flutter_test/src/widget_tester.dart:869:27)
-#71     TestGesture.up.<anonymous closure> (package:flutter_test/src/test_pointer.dart:538:26)
-#74     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#75     TestGesture.up (package:flutter_test/src/test_pointer.dart:531:27)
-#76     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1113:21)
-#78     WidgetController.tapAt.<anonymous closure> (package:flutter_test/src/controller.dart:1107:35)
-#81     TestAsyncUtils.guard (package:flutter_test/src/test_async_utils.dart:74:41)
-#82     WidgetController.tapAt (package:flutter_test/src/controller.dart:1106:27)
-#83     WidgetController.tap (package:flutter_test/src/controller.dart:1040:12)
-#84     main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart:150:20)
-#86     main.<anonymous closure>.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart:133:7)
-#87     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:29)
-#89     testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:190:25)
-#90     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1064:19)
-#92     TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1053:5)
-#95     TestWidgetsFlutterBinding._runTest (package:flutter_test/src/binding.dart:1038:10)
-#96     AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:1573:24)
-#97     FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:182:47)
-#102    withClock (package:clock/src/default.dart:52:10)
-#103    FakeAsync.run.<anonymous closure> (package:fake_async/fake_async.dart:182:15)
-#108    FakeAsync.run (package:fake_async/fake_async.dart:181:52)
-#109    AutomatedTestWidgetsFlutterBinding.runTest (package:flutter_test/src/binding.dart:1570:15)
-#110    testWidgets.<anonymous closure> (package:flutter_test/src/widget_tester.dart:185:24)
-#111    Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:229:19)
-#113    Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:228:9)
-#118    Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:227:13)
-#119    Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:258:17)
-#124    Invoker._waitForOutstandingCallbacks (package:test_api/src/backend/invoker.dart:254:5)
-#125    Invoker._onRun.<anonymous closure>.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:394:17)
-#127    Invoker._onRun.<anonymous closure>.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:392:11)
-#132    Invoker._onRun.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/invoker.dart:383:9)
-#133    Invoker._guardIfGuarded (package:test_api/src/backend/invoker.dart:426:15)
-#134    Invoker._onRun.<anonymous closure> (package:test_api/src/backend/invoker.dart:382:7)
-#141    Invoker._onRun (package:test_api/src/backend/invoker.dart:381:11)
-#142    LiveTestController.run (package:test_api/src/backend/live_test_controller.dart:153:11)
-#143    RemoteListener._runLiveTest.<anonymous closure> (package:test_api/src/backend/remote_listener.dart:273:16)
-#148    RemoteListener._runLiveTest (package:test_api/src/backend/remote_listener.dart:272:5)
-#149    RemoteListener._serializeTest.<anonymous closure> (package:test_api/src/backend/remote_listener.dart:220:7)
-#167    _GuaranteeSink.add (package:stream_channel/src/guarantee_channel.dart:125:12)
-#168    new _MultiChannel.<anonymous closure> (package:stream_channel/src/multi_channel.dart:159:31)
-#170    CastStreamSubscription._onData (dart:_internal/async_cast.dart:96:11)
-#196    new _WebSocketImpl._fromSocket.<anonymous closure> (dart:_http/websocket_impl.dart:1258:31)
-#202    _WebSocketProtocolTransformer._messageFrameEnd (dart:_http/websocket_impl.dart:348:23)
-#203    _WebSocketProtocolTransformer.add (dart:_http/websocket_impl.dart:238:46)
-#211    _Socket._onData (dart:io-patch/socket_patch.dart:2907:41)
-#218    new _RawSocket.<anonymous closure> (dart:io-patch/socket_patch.dart:2326:31)
-#219    _NativeSocket.issueReadEvent.issue (dart:io-patch/socket_patch.dart:1649:14)
-(elided 112 frames from dart:async and package:stack_trace)
-
-The test description was:
-  should handle form with credentials
-════════════════════════════════════════════════════════════════════════════════════════════════════
-00:23 +9 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle form with credentials [E]                                                                
-  Test failed. See exception logs above.
-  The test description was: should handle form with credentials
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart -p vm --plain-name 'LoginScreen should handle form with credentials'
-00:23 +9 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should have proper input decorations                                                                   00:23 +10 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should have proper input decorations                                                                  00:23 +10 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should have password field with obscure text                                                          00:24 +11 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should have password field with obscure text                                                          00:24 +11 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should have email field without obscure text                                                          00:24 +12 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should have email field without obscure text                                                          00:24 +12 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle special characters in email                                                             00:24 +13 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle special characters in email                                                             00:24 +13 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle long password                                                                           00:24 +14 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: LoginScreen should handle long password                                                                           00:24 +14 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: (tearDownAll)                                                                                                     00:25 +14 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: (tearDownAll)                                                                                                     00:26 +14 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: (tearDownAll)                                                                                                     00:27 +14 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: (tearDownAll)                                                                                                     00:28 +14 -2: /Users/a/Documents/APP-OINT/test/features/auth/login_screen_test.dart: (tearDownAll)                                                                                                     00:28 +14 -2: loading /Users/a/Documents/APP-OINT/test/features/business/business_dashboard_screen_test.dart                                                                                           00:28 +14 -2: /Users/a/Documents/APP-OINT/test/features/business/business_dashboard_screen_test.dart: (setUpAll)                                                                                       00:28 +14 -2: /Users/a/Documents/APP-OINT/test/features/business/business_dashboard_screen_test.dart: Business Dashboard shows welcome text                                                            00:29 +14 -2: /Users/a/Documents/APP-OINT/test/features/business/business_dashboard_screen_test.dart: Business Dashboard shows welcome text                                                            00:30 +14 -2: /Users/a/Documents/APP-OINT/test/features/business/business_dashboard_screen_test.dart: Business Dashboard shows welcome text                                                            00:30 +15 -2: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyLink model serialization                                              00:30 +15 -3: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyLink model serialization [E]                                          
-  [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-  package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart 195:5  MethodChannelFirebase.app
-  package:firebase_core/src/firebase.dart 56:41                                                   Firebase.app
-  package:firebase_auth/src/firebase_auth.dart 38:47                                              FirebaseAuth.instance
-  package:appoint/services/family_service.dart 16:38                                              new FamilyService
-  test/features/family/family_management_test.dart 154:23                                         main.<fn>.<fn>
-  
-  LateInitializationError: Local 'container' has not been initialized.
-  dart:_internal                                    LateError._throwLocalNotInitialized
-  test/features/family/family_management_test.dart  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart -p vm --plain-name 'Family Management System Tests FamilyLink model serialization'
-00:30 +15 -3: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests Permission model serialization                                              00:30 +15 -4: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests Permission model serialization [E]                                          
-  [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-  package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart 195:5  MethodChannelFirebase.app
-  package:firebase_core/src/firebase.dart 56:41                                                   Firebase.app
-  package:firebase_auth/src/firebase_auth.dart 38:47                                              FirebaseAuth.instance
-  package:appoint/services/family_service.dart 16:38                                              new FamilyService
-  test/features/family/family_management_test.dart 154:23                                         main.<fn>.<fn>
-  
-  LateInitializationError: Local 'container' has not been initialized.
-  dart:_internal                                    LateError._throwLocalNotInitialized
-  test/features/family/family_management_test.dart  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart -p vm --plain-name 'Family Management System Tests Permission model serialization'
-00:30 +15 -4: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests PrivacyRequest model serialization                                          00:30 +15 -5: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests PrivacyRequest model serialization [E]                                      
-  [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-  package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart 195:5  MethodChannelFirebase.app
-  package:firebase_core/src/firebase.dart 56:41                                                   Firebase.app
-  package:firebase_auth/src/firebase_auth.dart 38:47                                              FirebaseAuth.instance
-  package:appoint/services/family_service.dart 16:38                                              new FamilyService
-  test/features/family/family_management_test.dart 154:23                                         main.<fn>.<fn>
-  
-  LateInitializationError: Local 'container' has not been initialized.
-  dart:_internal                                    LateError._throwLocalNotInitialized
-  test/features/family/family_management_test.dart  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart -p vm --plain-name 'Family Management System Tests PrivacyRequest model serialization'
-00:30 +15 -5: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyService provider creation                                             00:30 +15 -6: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyService provider creation [E]                                         
-  [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-  package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart 195:5  MethodChannelFirebase.app
-  package:firebase_core/src/firebase.dart 56:41                                                   Firebase.app
-  package:firebase_auth/src/firebase_auth.dart 38:47                                              FirebaseAuth.instance
-  package:appoint/services/family_service.dart 16:38                                              new FamilyService
-  test/features/family/family_management_test.dart 154:23                                         main.<fn>.<fn>
-  
-  LateInitializationError: Local 'container' has not been initialized.
-  dart:_internal                                    LateError._throwLocalNotInitialized
-  test/features/family/family_management_test.dart  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart -p vm --plain-name 'Family Management System Tests FamilyService provider creation'
-00:30 +15 -6: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyLinks provider loads data correctly                                   00:30 +15 -7: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyLinks provider loads data correctly [E]                               
-  [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-  package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart 195:5  MethodChannelFirebase.app
-  package:firebase_core/src/firebase.dart 56:41                                                   Firebase.app
-  package:firebase_auth/src/firebase_auth.dart 38:47                                              FirebaseAuth.instance
-  package:appoint/services/family_service.dart 16:38                                              new FamilyService
-  test/features/family/family_management_test.dart 154:23                                         main.<fn>.<fn>
-  
-  LateInitializationError: Local 'container' has not been initialized.
-  dart:_internal                                    LateError._throwLocalNotInitialized
-  test/features/family/family_management_test.dart  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart -p vm --plain-name 'Family Management System Tests FamilyLinks provider loads data correctly'
-00:30 +15 -7: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests Permissions provider loads data correctly                                   00:30 +15 -8: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests Permissions provider loads data correctly [E]                               
-  [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-  package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart 195:5  MethodChannelFirebase.app
-  package:firebase_core/src/firebase.dart 56:41                                                   Firebase.app
-  package:firebase_auth/src/firebase_auth.dart 38:47                                              FirebaseAuth.instance
-  package:appoint/services/family_service.dart 16:38                                              new FamilyService
-  test/features/family/family_management_test.dart 154:23                                         main.<fn>.<fn>
-  
-  LateInitializationError: Local 'container' has not been initialized.
-  dart:_internal                                    LateError._throwLocalNotInitialized
-  test/features/family/family_management_test.dart  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart -p vm --plain-name 'Family Management System Tests Permissions provider loads data correctly'
-00:30 +15 -8: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests PrivacyRequests provider loads data correctly                               00:30 +15 -9: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests PrivacyRequests provider loads data correctly [E]                           
-  [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-  package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart 195:5  MethodChannelFirebase.app
-  package:firebase_core/src/firebase.dart 56:41                                                   Firebase.app
-  package:firebase_auth/src/firebase_auth.dart 38:47                                              FirebaseAuth.instance
-  package:appoint/services/family_service.dart 16:38                                              new FamilyService
-  test/features/family/family_management_test.dart 154:23                                         main.<fn>.<fn>
-  
-  LateInitializationError: Local 'container' has not been initialized.
-  dart:_internal                                    LateError._throwLocalNotInitialized
-  test/features/family/family_management_test.dart  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart -p vm --plain-name 'Family Management System Tests PrivacyRequests provider loads data correctly'
-00:30 +15 -9: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyLinksNotifier cancelInvite method                                     00:31 +15 -10: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyLinksNotifier cancelInvite method                                    00:31 +15 -10: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyLinksNotifier cancelInvite method [E]                                
-  [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-  package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart 195:5  MethodChannelFirebase.app
-  package:firebase_core/src/firebase.dart 56:41                                                   Firebase.app
-  package:firebase_auth/src/firebase_auth.dart 38:47                                              FirebaseAuth.instance
-  package:appoint/services/family_service.dart 16:38                                              new FamilyService
-  test/features/family/family_management_test.dart 154:23                                         main.<fn>.<fn>
-  
-  LateInitializationError: Local 'container' has not been initialized.
-  dart:_internal                                    LateError._throwLocalNotInitialized
-  test/features/family/family_management_test.dart  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart -p vm --plain-name 'Family Management System Tests FamilyLinksNotifier cancelInvite method'
-00:31 +15 -10: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyLinksNotifier resendInvite method                                    00:31 +15 -11: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: Family Management System Tests FamilyLinksNotifier resendInvite method [E]                                
-  [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-  package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart 195:5  MethodChannelFirebase.app
-  package:firebase_core/src/firebase.dart 56:41                                                   Firebase.app
-  package:firebase_auth/src/firebase_auth.dart 38:47                                              FirebaseAuth.instance
-  package:appoint/services/family_service.dart 16:38                                              new FamilyService
-  test/features/family/family_management_test.dart 154:23                                         main.<fn>.<fn>
-  
-  LateInitializationError: Local 'container' has not been initialized.
-  dart:_internal                                    LateError._throwLocalNotInitialized
-  test/features/family/family_management_test.dart  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart -p vm --plain-name 'Family Management System Tests FamilyLinksNotifier resendInvite method'
-00:31 +15 -11: /Users/a/Documents/APP-OINT/test/features/family/family_management_test.dart: (tearDownAll)                                                                                             00:31 +15 -11: loading /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart                                                                                                             00:32 +15 -11: loading /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart                                                                                                             00:33 +15 -11: loading /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart                                                                                                             00:34 +15 -11: loading /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart                                                                                                             00:35 +15 -11: loading /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart                                                                                                             00:36 +15 -11: loading /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart                                                                                                             00:36 +15 -11: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: (setUpAll)                                                                                                         00:36 +15 -11: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow sendOtp success                                                                                           00:36 +15 -12: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow sendOtp success [E]                                                                                       
-  type 'Null' is not a subtype of type 'CollectionReference<Map<String, dynamic>>'
-  test/features/family/otp_flow_test.dart 124:7  MockFirebaseFirestore.collection
-  test/features/family/otp_flow_test.dart 33:26  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart -p vm --plain-name 'OTP Flow sendOtp success'
-00:36 +15 -12: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow sendOtp failure                                                                                           00:37 +15 -13: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow sendOtp failure                                                                                           00:37 +15 -13: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow sendOtp failure [E]                                                                                       
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5          when
-  test/features/family/otp_flow_test.dart 33:7  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart -p vm --plain-name 'OTP Flow sendOtp failure'
-00:37 +15 -13: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow verifyOtp success                                                                                         00:37 +15 -14: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow verifyOtp success [E]                                                                                     
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5          when
-  test/features/family/otp_flow_test.dart 33:7  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart -p vm --plain-name 'OTP Flow verifyOtp success'
-00:37 +15 -14: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow verifyOtp failure                                                                                         00:37 +15 -15: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow verifyOtp failure [E]                                                                                     
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5          when
-  test/features/family/otp_flow_test.dart 33:7  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart -p vm --plain-name 'OTP Flow verifyOtp failure'
-00:37 +15 -15: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow initial state is idle                                                                                     00:37 +15 -16: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: OTP Flow initial state is idle [E]                                                                                 
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5          when
-  test/features/family/otp_flow_test.dart 33:7  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart -p vm --plain-name 'OTP Flow initial state is idle'
-00:37 +15 -16: /Users/a/Documents/APP-OINT/test/features/family/otp_flow_test.dart: (tearDownAll)                                                                                                      00:37 +15 -16: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart                                                                                                       00:37 +15 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: ... System Tests BroadcastMessage Model Tests should create broadcast message with all required fields       00:37 +16 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: ... System Tests BroadcastMessage Model Tests should create broadcast message with all required fields       00:37 +16 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: ... System Tests BroadcastMessage Model Tests should create broadcast message with targeting filters         00:38 +16 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: ... System Tests BroadcastMessage Model Tests should create broadcast message with targeting filters         00:38 +17 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: ... System Tests BroadcastMessage Model Tests should create broadcast message with targeting filters         00:38 +17 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessage Model Tests should create poll message with options            00:38 +18 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessage Model Tests should create poll message with options            00:38 +18 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessage Model Tests should handle different message types              00:38 +19 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessage Model Tests should handle different message types              00:38 +19 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastTargetingFilters Tests should create filters with all properties       00:38 +20 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastTargetingFilters Tests should create filters with all properties       00:38 +20 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastTargetingFilters Tests should handle empty filters                     00:38 +21 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastTargetingFilters Tests should handle empty filters                     00:38 +21 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageStatus Tests should have correct enum values                    00:38 +22 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageStatus Tests should have correct enum values                    00:38 +22 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageStatus Tests should convert to string correctly                 00:38 +23 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageStatus Tests should convert to string correctly                 00:38 +23 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageType Tests should have correct enum values                      00:38 +24 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageType Tests should have correct enum values                      00:38 +24 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageType Tests should convert to string correctly                   00:38 +25 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageType Tests should convert to string correctly                   00:39 +25 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageType Tests should convert to string correctly                   00:40 +25 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_test.dart: Admin Broadcast System Tests BroadcastMessageType Tests should convert to string correctly                   00:40 +25 -16: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart                                                                                                00:41 +25 -16: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart                                                                                                00:42 +25 -16: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart                                                                                                00:43 +25 -16: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart                                                                                                00:44 +25 -16: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart                                                                                                00:44 +25 -16: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart: (setUpAll)                                                                                            00:44 +25 -17: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart: (setUpAll) [E]                                                                                        
-  type 'Null' is not a subtype of type 'CollectionReference<Map<String, dynamic>>'
-  test/features/admin/admin_broadcast_screen_test.dart 11:7   MockFirebaseFirestore.collection
-  test/features/admin/admin_broadcast_screen_test.dart 23:24  main.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart -p vm --plain-name '(setUpAll)'
-00:44 +25 -17: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart: (tearDownAll)                                                                                         00:45 +25 -17: /Users/a/Documents/APP-OINT/test/features/admin/admin_broadcast_screen_test.dart: (tearDownAll)                                                                                         00:45 +25 -17: loading /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart                                                                                                            00:45 +25 -17: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: (setUpAll)                                                                                                        00:46 +25 -17: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: (setUpAll)                                                                                                        00:46 +25 -17: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: Admin Role Tests isAdminProvider should return false when user is not authenticated                               00:46 +25 -18: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: Admin Role Tests isAdminProvider should return false when user is not authenticated [E]                           
-  [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
-  package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart 195:5  MethodChannelFirebase.app
-  package:firebase_core/src/firebase.dart 56:41                                                   Firebase.app
-  package:firebase_auth/src/firebase_auth.dart 38:47                                              FirebaseAuth.instance
-  package:appoint/providers/admin_provider.dart 13:29                                             isAdminProvider.<fn>
-  package:riverpod/src/future_provider/base.dart 71:65                                            FutureProvider._create
-  package:riverpod/src/future_provider/base.dart 117:22                                           FutureProviderElement.create.<fn>
-  package:riverpod/src/async_notifier/base.dart 341:30                                            FutureHandlerProviderElementMixin.handleFuture.<fn>
-  package:riverpod/src/async_notifier/base.dart 388:47                                            FutureHandlerProviderElementMixin._handleAsync
-  package:riverpod/src/async_notifier/base.dart 335:5                                             FutureHandlerProviderElementMixin.handleFuture
-  package:riverpod/src/future_provider/base.dart 116:5                                            FutureProviderElement.create
-  package:riverpod/src/framework/element.dart 426:7                                               ProviderElementBase.buildState
-  package:riverpod/src/framework/element.dart 228:5                                               ProviderElementBase.mount
-  package:riverpod/src/framework/container.dart 47:11                                             _StateReader._create
-  package:riverpod/src/framework/container.dart 35:52                                             _StateReader.getElement
-  package:riverpod/src/framework/container.dart 440:40                                            ProviderContainer.readProviderElement.<fn>
-  package:riverpod/src/framework/container.dart 475:8                                             ProviderContainer.readProviderElement
-  package:riverpod/src/framework/proxy_provider_listenable.dart 134:26                            ProviderElementProxy.read
-  package:riverpod/src/framework/container.dart 241:21                                            ProviderContainer.read
-  test/features/admin/admin_role_test.dart 25:39                                                  main.<fn>.<fn>
-  ===== asynchronous gap ===========================
-  dart:async                                                                                      _Completer.completeError
-  package:riverpod/src/async_notifier/base.dart 260:11                                            FutureHandlerProviderElementMixin.onError
-  package:riverpod/src/async_notifier/base.dart 393:11                                            FutureHandlerProviderElementMixin._handleAsync.<fn>
-  package:riverpod/src/async_notifier/base.dart 363:16                                            FutureHandlerProviderElementMixin.handleFuture.<fn>.<fn>
-  ===== asynchronous gap ===========================
-  dart:async                                                                                      Future.then
-  package:riverpod/src/async_notifier/base.dart 354:16                                            FutureHandlerProviderElementMixin.handleFuture.<fn>
-  package:riverpod/src/async_notifier/base.dart 388:47                                            FutureHandlerProviderElementMixin._handleAsync
-  package:riverpod/src/async_notifier/base.dart 335:5                                             FutureHandlerProviderElementMixin.handleFuture
-  package:riverpod/src/future_provider/base.dart 116:5                                            FutureProviderElement.create
-  package:riverpod/src/framework/element.dart 426:7                                               ProviderElementBase.buildState
-  package:riverpod/src/framework/element.dart 228:5                                               ProviderElementBase.mount
-  package:riverpod/src/framework/container.dart 47:11                                             _StateReader._create
-  package:riverpod/src/framework/container.dart 35:52                                             _StateReader.getElement
-  package:riverpod/src/framework/container.dart 440:40                                            ProviderContainer.readProviderElement.<fn>
-  package:riverpod/src/framework/container.dart 475:8                                             ProviderContainer.readProviderElement
-  package:riverpod/src/framework/proxy_provider_listenable.dart 134:26                            ProviderElementProxy.read
-  package:riverpod/src/framework/container.dart 241:21                                            ProviderContainer.read
-  test/features/admin/admin_role_test.dart 25:39                                                  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart -p vm --plain-name 'Admin Role Tests isAdminProvider should return false when user is not authenticated'
-00:46 +25 -18: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: Admin Role Tests AdminGuard widget should show access denied for non-admin users                                  00:46 +26 -18: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: Admin Role Tests AdminGuard widget should show access denied for non-admin users                                  00:46 +26 -18: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: Admin Role Tests AdminRoleMixin should provide admin checking methods                                             00:46 +27 -18: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: Admin Role Tests AdminRoleMixin should provide admin checking methods                                             00:46 +27 -18: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: (tearDownAll)                                                                                                     00:47 +27 -18: /Users/a/Documents/APP-OINT/test/features/admin/admin_role_test.dart: (tearDownAll)                                                                                                     00:47 +27 -18: loading /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart                                                                                                                  00:48 +27 -18: loading /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart                                                                                                                  00:49 +27 -18: loading /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart                                                                                                                  00:50 +27 -18: loading /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart                                                                                                                  00:51 +27 -18: loading /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart                                                                                                                  00:52 +27 -18: loading /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart                                                                                                                  00:52 +27 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: (setUpAll)                                                                                                              00:53 +27 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: (setUpAll)                                                                                                              00:53 +27 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: UserProfile Model should correctly create a user profile                                                                00:53 +28 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: UserProfile Model should correctly create a user profile                                                                00:53 +28 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: UserProfile Model should be able to convert to JSON and back                                                            00:53 +29 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: UserProfile Model should be able to convert to JSON and back                                                            00:53 +29 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: UserProfile Model should handle empty photoUrl                                                                          00:53 +30 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: UserProfile Model should handle empty photoUrl                                                                          00:53 +30 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: UserProfile Model should handle special characters in displayName                                                       00:53 +31 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: UserProfile Model should handle special characters in displayName                                                       00:53 +31 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: UserProfile Model should handle complex email addresses                                                                 00:53 +32 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: UserProfile Model should handle complex email addresses                                                                 00:53 +32 -18: /Users/a/Documents/APP-OINT/test/models/user_profile_test.dart: (tearDownAll)                                                                                                           00:53 +32 -18: loading /Users/a/Documents/APP-OINT/test/models/appointment_test.dart                                                                                                                   00:53 +32 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: (setUpAll)                                                                                                               00:53 +32 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should correctly create a scheduled appointment                                                        00:53 +33 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should correctly create a scheduled appointment                                                        00:53 +33 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should correctly create an open call appointment                                                       00:53 +34 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should correctly create an open call appointment                                                       00:53 +34 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should be able to convert to JSON and back                                                             00:53 +35 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should be able to convert to JSON and back                                                             00:53 +35 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should handle appointment with contact information                                                     00:53 +36 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should handle appointment with contact information                                                     00:53 +36 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should handle different appointment statuses                                                           00:53 +37 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should handle different appointment statuses                                                           00:53 +37 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should handle different appointment types                                                              00:53 +38 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: Appointment Model should handle different appointment types                                                              00:53 +38 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: (tearDownAll)                                                                                                            00:54 +38 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: (tearDownAll)                                                                                                            00:55 +38 -18: /Users/a/Documents/APP-OINT/test/models/appointment_test.dart: (tearDownAll)                                                                                                            00:55 +38 -18: loading /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart                                                                                                       00:56 +38 -18: loading /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart                                                                                                       00:57 +38 -18: loading /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart                                                                                                       00:58 +38 -18: loading /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart                                                                                                       00:59 +38 -18: loading /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart                                                                                                       00:59 +38 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: (setUpAll)                                                                                                   00:59 +38 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should correctly create a text broadcast message                                 00:59 +39 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should correctly create a text broadcast message                                 00:59 +39 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should correctly create an image broadcast message                               00:59 +40 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should correctly create an image broadcast message                               00:59 +40 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should correctly create a poll broadcast message                                 00:59 +41 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should correctly create a poll broadcast message                                 00:59 +41 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should be able to convert to JSON and back                                       00:59 +42 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should be able to convert to JSON and back                                       00:59 +42 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should handle scheduled broadcast messages                                       00:59 +43 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should handle scheduled broadcast messages                                       00:59 +43 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should handle failed broadcast messages                                          00:59 +44 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should handle failed broadcast messages                                          00:59 +44 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should handle different broadcast message types                                  00:59 +45 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: AdminBroadcastMessage Model should handle different broadcast message types                                  00:59 +45 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: (tearDownAll)                                                                                                01:00 +45 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: (tearDownAll)                                                                                                01:01 +45 -18: /Users/a/Documents/APP-OINT/test/models/admin_broadcast_message_test.dart: (tearDownAll)                                                                                                01:01 +45 -18: loading /Users/a/Documents/APP-OINT/test/widget_test.dart                                                                                                                               01:01 +45 -18: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                       01:02 +45 -18: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                       01:03 +45 -18: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                       01:04 +45 -18: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                       01:04 +46 -18: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                       01:05 +46 -18: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                       01:06 +46 -18: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                       01:07 +46 -18: /Users/a/Documents/APP-OINT/test/widget_test.dart: App smoke test                                                                                                                       01:07 +46 -18: loading /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart                                                                                                                       01:07 +46 -18: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: (setUpAll)                                                                                                                   01:07 +46 -18: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: WhatsApp Share Service Tests should instantiate WhatsAppShareService                                                         01:08 +46 -19: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: WhatsApp Share Service Tests should instantiate WhatsAppShareService                                                         01:08 +46 -19: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: WhatsApp Share Service Tests should instantiate WhatsAppShareService [E]                                                     
-  type 'Null' is not a subtype of type 'CollectionReference<Map<String, dynamic>>'
-  test/whatsapp_share_test.dart 9:7    MockFirebaseFirestore.collection
-  test/whatsapp_share_test.dart 30:26  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart -p vm --plain-name 'WhatsApp Share Service Tests should instantiate WhatsAppShareService'
-01:08 +46 -19: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: WhatsApp Share Service Tests should create ShareAnalytics with correct data                                                  01:08 +46 -20: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: WhatsApp Share Service Tests should create ShareAnalytics with correct data [E]                                              
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5  when
-  test/whatsapp_share_test.dart 30:7    main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart -p vm --plain-name 'WhatsApp Share Service Tests should create ShareAnalytics with correct data'
-01:08 +46 -20: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: WhatsApp Share Service Tests should create GroupRecognition with correct data                                                01:08 +46 -21: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: WhatsApp Share Service Tests should create GroupRecognition with correct data [E]                                            
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5  when
-  test/whatsapp_share_test.dart 30:7    main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart -p vm --plain-name 'WhatsApp Share Service Tests should create GroupRecognition with correct data'
-01:08 +46 -21: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: WhatsApp Share Service Tests should create SmartShareLink with correct data                                                  01:08 +46 -22: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: WhatsApp Share Service Tests should create SmartShareLink with correct data [E]                                              
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5  when
-  test/whatsapp_share_test.dart 30:7    main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart -p vm --plain-name 'WhatsApp Share Service Tests should create SmartShareLink with correct data'
-01:08 +46 -22: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: Share Status Enum Tests should have correct enum values                                                                      01:08 +47 -22: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: Share Status Enum Tests should have correct enum values                                                                      01:08 +47 -22: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: (tearDownAll)                                                                                                                01:09 +47 -22: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: (tearDownAll)                                                                                                                01:10 +47 -22: /Users/a/Documents/APP-OINT/test/whatsapp_share_test.dart: (tearDownAll)                                                                                                                01:10 +47 -22: loading /Users/a/Documents/APP-OINT/test/family_integration_test.dart                                                                                                                   01:10 +47 -22: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink model should serialize correctly                                                     01:10 +48 -22: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink model should serialize correctly                                                     01:10 +48 -22: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink should categorize status correctly                                                   01:10 +49 -22: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink should categorize status correctly                                                   01:10 +49 -22: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink should handle different statuses                                                     01:10 +50 -22: /Users/a/Documents/APP-OINT/test/family_integration_test.dart: Family Integration Tests FamilyLink should handle different statuses                                                     01:10 +50 -22: loading /Users/a/Documents/APP-OINT/test/otp_flow_test.dart                                                                                                                             01:11 +50 -22: loading /Users/a/Documents/APP-OINT/test/otp_flow_test.dart                                                                                                                             01:12 +50 -22: loading /Users/a/Documents/APP-OINT/test/otp_flow_test.dart                                                                                                                             01:13 +50 -22: loading /Users/a/Documents/APP-OINT/test/otp_flow_test.dart                                                                                                                             01:14 +50 -22: loading /Users/a/Documents/APP-OINT/test/otp_flow_test.dart                                                                                                                             01:15 +50 -22: loading /Users/a/Documents/APP-OINT/test/otp_flow_test.dart                                                                                                                             01:15 +50 -22: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: (setUpAll)                                                                                                                         01:15 +50 -22: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: OTP flow: send and verify code                                                                                                     01:16 +50 -22: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: OTP flow: send and verify code                                                                                                     01:17 +50 -22: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: OTP flow: send and verify code                                                                                                     01:17 +50 -23: /Users/a/Documents/APP-OINT/test/booking_service_test.dart: BookingService should be instantiated correctly [E]                                                                         
-  type 'Null' is not a subtype of type 'CollectionReference<Map<String, dynamic>>'
-  test/booking_service_test.dart 8:7    MockFirebaseFirestore.collection
-  test/booking_service_test.dart 25:26  main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/booking_service_test.dart -p vm --plain-name 'BookingService should be instantiated correctly'
-01:17 +50 -24: /Users/a/Documents/APP-OINT/test/booking_service_test.dart: BookingService should have required methods [E]                                                                             
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5  when
-  test/booking_service_test.dart 25:7   main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/booking_service_test.dart -p vm --plain-name 'BookingService should have required methods'
-01:17 +50 -25: /Users/a/Documents/APP-OINT/test/booking_service_test.dart: BookingService createBooking should complete without error [E]                                                              
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5  when
-  test/booking_service_test.dart 25:7   main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/booking_service_test.dart -p vm --plain-name 'BookingService createBooking should complete without error'
-01:17 +50 -26: /Users/a/Documents/APP-OINT/test/booking_service_test.dart: BookingService createBooking should return a Future<void> [E]                                                               
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5  when
-  test/booking_service_test.dart 25:7   main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/booking_service_test.dart -p vm --plain-name 'BookingService createBooking should return a Future<void>'
-01:17 +50 -27: /Users/a/Documents/APP-OINT/test/booking_service_test.dart: BookingService should handle booking with different durations [E]                                                           
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5  when
-  test/booking_service_test.dart 25:7   main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/booking_service_test.dart -p vm --plain-name 'BookingService should handle booking with different durations'
-01:17 +50 -28: /Users/a/Documents/APP-OINT/test/booking_service_test.dart: BookingService should handle booking with different confirmation statuses [E]                                               
-  Bad state: Cannot call `when` within a stub response
-  package:mockito/src/mock.dart 1207:5  when
-  test/booking_service_test.dart 25:7   main.<fn>.<fn>
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/booking_service_test.dart -p vm --plain-name 'BookingService should handle booking with different confirmation statuses'
-01:17 +50 -28: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: OTP flow: send and verify code                                                                                                     01:18 +50 -28: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: OTP flow: send and verify code                                                                                                     01:18 +50 -28: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: OTP flow: send and verify code                                                                                                     
-══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
-The following StackOverflowError was thrown running a test:
-Stack Overflow
-
-When the exception was thrown, this was the stack:
-#0      new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:17:3)
-#1      new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#2      new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#3      new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#4      new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#5      new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#6      new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#7      new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#8      new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#9      new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#10     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#11     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#12     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#13     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#14     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#15     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#16     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#17     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#18     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#19     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#20     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#21     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#22     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#23     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#24     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#25     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#26     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#27     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#28     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#29     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#30     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#31     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#32     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#33     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#34     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#35     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#36     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#37     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#38     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#39     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#40     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#41     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#42     new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#43     new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-...
-...
-#110720 new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#110721 new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#110722 new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#110723 new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#110724 new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#110725 new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#110726 new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#110727 new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#110728 new WhatsAppShareService (package:appoint/services/whatsapp_share_service.dart:12:50)
-#110729 new CustomDeepLinkService (package:appoint/services/custom_deep_link_service.dart:8:49)
-#110730 main.<anonymous closure> (file:///Users/a/Documents/APP-OINT/test/otp_flow_test.dart:18:29)
-#110731 testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:193:29)
-#110740 FakeAsync.run.<anonymous closure>.<anonymous closure> (package:fake_async/fake_async.dart:189:18)
-#110741 FakeAsync.flushMicrotasks (package:fake_async/fake_async.dart:200:32)
-#110742 AutomatedTestWidgetsFlutterBinding.runTest.<anonymous closure> (package:flutter_test/src/binding.dart:1590:17)
-(elided 23 frames from dart:async and package:stack_trace)
-
-The test description was:
-  OTP flow: send and verify code
-════════════════════════════════════════════════════════════════════════════════════════════════════
-01:18 +50 -29: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: OTP flow: send and verify code [E]                                                                                                 
-  Test failed. See exception logs above.
-  The test description was: OTP flow: send and verify code
-  
-
-To run this test again: /Users/a/flutter/bin/cache/dart-sdk/bin/dart test /Users/a/Documents/APP-OINT/test/otp_flow_test.dart -p vm --plain-name 'OTP flow: send and verify code'
-01:18 +50 -29: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: (tearDownAll)                                                                                                                      01:19 +50 -29: /Users/a/Documents/APP-OINT/test/otp_flow_test.dart: (tearDownAll)                                                                                                                      01:19 +50 -29: loading /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart                                                                                                               01:20 +50 -29: loading /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart                                                                                                               01:21 +50 -29: loading /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart                                                                                                               01:22 +50 -29: loading /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart                                                                                                               01:23 +50 -29: loading /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart                                                                                                               01:23 +50 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: (setUpAll)                                                                                                           01:23 +50 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have required method signatures                                                                  01:23 +51 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have required method signatures                                                                  01:23 +51 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have fetchAllUsers method                                                                        01:23 +52 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have fetchAllUsers method                                                                        01:23 +52 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have fetchOrganizations method                                                                   01:23 +53 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have fetchOrganizations method                                                                   01:23 +53 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have fetchAnalytics method                                                                       01:23 +54 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have fetchAnalytics method                                                                       01:23 +54 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have updateUserRole method                                                                       01:23 +55 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have updateUserRole method                                                                       01:23 +55 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should be a concrete class                                                                              01:23 +56 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should be a concrete class                                                                              01:23 +56 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have proper constructor                                                                          01:23 +57 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: AdminService should have proper constructor                                                                          01:23 +57 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: (tearDownAll)                                                                                                        01:24 +57 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: (tearDownAll)                                                                                                        01:25 +57 -29: /Users/a/Documents/APP-OINT/test/services/admin_service_test.dart: (tearDownAll)                                                                                                        01:25 +57 -29: loading /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart                                                                                                           01:25 +57 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (setUpAll)                                                                                                       01:25 +57 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have required method signatures                                                          01:25 +58 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have required method signatures                                                          01:25 +58 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have createBroadcastMessage method                                                       01:25 +59 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have createBroadcastMessage method                                                       01:25 +59 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have getBroadcastMessages method                                                         01:25 +60 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have getBroadcastMessages method                                                         01:25 +60 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have getBroadcastMessage method                                                          01:25 +61 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have getBroadcastMessage method                                                          01:25 +61 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have estimateTargetAudience method                                                       01:25 +62 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have estimateTargetAudience method                                                       01:25 +62 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have sendBroadcastMessage method                                                         01:25 +63 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should have sendBroadcastMessage method                                                         01:25 +63 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should be a concrete class                                                                      01:25 +64 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should be a concrete class                                                                      01:25 +64 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should handle different targeting filter combinations                                           01:25 +65 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should handle different targeting filter combinations                                           01:25 +65 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should handle different broadcast message types                                                 01:25 +66 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: BroadcastService should handle different broadcast message types                                                 01:25 +66 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (tearDownAll)                                                                                                    01:26 +66 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (tearDownAll)                                                                                                    01:27 +66 -29: /Users/a/Documents/APP-OINT/test/services/broadcast_service_test.dart: (tearDownAll)                                                                                                    01:27 +66 -29: Some tests failed.                                                                                                                                                                      

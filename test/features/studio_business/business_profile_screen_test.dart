@@ -1,14 +1,17 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
-import '../../fake_firebase_setup.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import '../../firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
+
   group('BusinessProfileScreen', () {
-    testWidgets('renders correctly', (final WidgetTester tester) async {
+    testWidgets('renders correctly', (WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(
@@ -30,7 +33,7 @@ Future<void> main() async {
     });
 
     testWidgets('shows loading indicator when profile is null',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(
@@ -42,5 +45,5 @@ Future<void> main() async {
       // Initially shows loading indicator
       expect(find.byType(CircularProgressIndicator), findsOneWidget);
     });
-  }, skip: true);
+  }, skip: true,);
 }

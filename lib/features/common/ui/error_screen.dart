@@ -1,20 +1,17 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/components/common/retry_button.dart';
+import 'package:flutter/material.dart';
 
 /// Simple error screen with retry action.
 class ErrorScreen extends StatelessWidget {
+
+  const ErrorScreen({
+    required this.message, required this.onTryAgain, super.key,
+  });
   final String message;
   final VoidCallback onTryAgain;
 
-  const ErrorScreen({
-    super.key,
-    required this.message,
-    required this.onTryAgain,
-  });
-
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       body: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -35,5 +32,4 @@ class ErrorScreen extends StatelessWidget {
         ),
       ),
     );
-  }
 }

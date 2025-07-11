@@ -1,9 +1,19 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/theme/app_breakpoints.dart';
 import 'package:appoint/theme/app_spacing.dart';
+import 'package:flutter/material.dart';
 
 /// Enhanced calendar overflow handler for tablet devices
 class TabletCalendarOverflowHandler extends StatelessWidget {
+
+  const TabletCalendarOverflowHandler({
+    required this.child, super.key,
+    this.maxWidth,
+    this.maxHeight,
+    this.padding,
+    this.enableHorizontalScroll = true,
+    this.enableVerticalScroll = true,
+    this.physics,
+  });
   final Widget child;
   final double? maxWidth;
   final double? maxHeight;
@@ -12,20 +22,8 @@ class TabletCalendarOverflowHandler extends StatelessWidget {
   final bool enableVerticalScroll;
   final ScrollPhysics? physics;
 
-  const TabletCalendarOverflowHandler({
-    super.key,
-    required this.child,
-    this.maxWidth,
-    this.maxHeight,
-    this.padding,
-    this.enableHorizontalScroll = true,
-    this.enableVerticalScroll = true,
-    this.physics,
-  });
-
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
+  Widget build(BuildContext context) => LayoutBuilder(
       builder: (context, constraints) {
         final isTablet = constraints.maxWidth >= AppBreakpoints.tablet;
 
@@ -36,7 +34,6 @@ class TabletCalendarOverflowHandler extends StatelessWidget {
         return _buildTabletLayout(context, constraints);
       },
     );
-  }
 
   Widget _buildTabletLayout(BuildContext context, BoxConstraints constraints) {
     final effectiveMaxWidth = maxWidth ?? constraints.maxWidth * 0.9;
@@ -66,7 +63,6 @@ class TabletCalendarOverflowHandler extends StatelessWidget {
     // Handle vertical overflow
     if (enableVerticalScroll && constraints.maxHeight < effectiveMaxHeight) {
       content = SingleChildScrollView(
-        scrollDirection: Axis.vertical,
         physics: physics ?? const BouncingScrollPhysics(),
         child: content,
       );
@@ -78,24 +74,22 @@ class TabletCalendarOverflowHandler extends StatelessWidget {
 
 /// Responsive calendar grid that adapts to tablet screen sizes
 class ResponsiveCalendarGrid extends StatelessWidget {
+
+  const ResponsiveCalendarGrid({
+    required this.children, super.key,
+    this.spacing = 8.0,
+    this.runSpacing = 8.0,
+    this.padding,
+    this.enableOverflowHandling = true,
+  });
   final List<Widget> children;
   final double spacing;
   final double runSpacing;
   final EdgeInsetsGeometry? padding;
   final bool enableOverflowHandling;
 
-  const ResponsiveCalendarGrid({
-    super.key,
-    required this.children,
-    this.spacing = 8.0,
-    this.runSpacing = 8.0,
-    this.padding,
-    this.enableOverflowHandling = true,
-  });
-
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
+  Widget build(BuildContext context) => LayoutBuilder(
       builder: (context, constraints) {
         final isTablet = constraints.maxWidth >= AppBreakpoints.tablet;
         final isDesktop = constraints.maxWidth >= AppBreakpoints.desktop;
@@ -134,7 +128,6 @@ class ResponsiveCalendarGrid extends StatelessWidget {
         if (enableOverflowHandling) {
           grid = TabletCalendarOverflowHandler(
             enableHorizontalScroll: false,
-            enableVerticalScroll: true,
             child: grid,
           );
         }
@@ -142,27 +135,24 @@ class ResponsiveCalendarGrid extends StatelessWidget {
         return grid;
       },
     );
-  }
 }
 
 /// Responsive calendar list that adapts to tablet screen sizes
 class ResponsiveCalendarList extends StatelessWidget {
+
+  const ResponsiveCalendarList({
+    required this.children, super.key,
+    this.padding,
+    this.enableOverflowHandling = true,
+    this.physics,
+  });
   final List<Widget> children;
   final EdgeInsetsGeometry? padding;
   final bool enableOverflowHandling;
   final ScrollPhysics? physics;
 
-  const ResponsiveCalendarList({
-    super.key,
-    required this.children,
-    this.padding,
-    this.enableOverflowHandling = true,
-    this.physics,
-  });
-
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
+  Widget build(BuildContext context) => LayoutBuilder(
       builder: (context, constraints) {
         final isTablet = constraints.maxWidth >= AppBreakpoints.tablet;
 
@@ -173,7 +163,7 @@ class ResponsiveCalendarList extends StatelessWidget {
           list = GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
-              childAspectRatio: 3.0,
+              childAspectRatio: 3,
               crossAxisSpacing: AppSpacing.md,
               mainAxisSpacing: AppSpacing.sm,
             ),
@@ -201,7 +191,6 @@ class ResponsiveCalendarList extends StatelessWidget {
         if (enableOverflowHandling) {
           list = TabletCalendarOverflowHandler(
             enableHorizontalScroll: false,
-            enableVerticalScroll: true,
             child: list,
           );
         }
@@ -209,29 +198,25 @@ class ResponsiveCalendarList extends StatelessWidget {
         return list;
       },
     );
-  }
 }
 
 /// Responsive calendar week view for tablets
 class ResponsiveCalendarWeekView extends StatelessWidget {
+
+  const ResponsiveCalendarWeekView({
+    required this.dayColumns, required this.dayHeaders, super.key,
+    this.columnWidth,
+    this.headerHeight,
+    this.padding,
+  });
   final List<Widget> dayColumns;
   final List<String> dayHeaders;
   final double? columnWidth;
   final double? headerHeight;
   final EdgeInsetsGeometry? padding;
 
-  const ResponsiveCalendarWeekView({
-    super.key,
-    required this.dayColumns,
-    required this.dayHeaders,
-    this.columnWidth,
-    this.headerHeight,
-    this.padding,
-  });
-
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
+  Widget build(BuildContext context) => LayoutBuilder(
       builder: (context, constraints) {
         final isTablet = constraints.maxWidth >= AppBreakpoints.tablet;
         final isDesktop = constraints.maxWidth >= AppBreakpoints.desktop;
@@ -242,7 +227,7 @@ class ResponsiveCalendarWeekView extends StatelessWidget {
                 : isTablet
                     ? 150.0
                     : 120.0);
-        final effectiveHeaderHeight = headerHeight ?? (isTablet ? 60.0 : 50.0);
+        effectiveHeaderHeight = headerHeight ?? (isTablet ? 60.0 : 50.0);
 
         Widget weekView = Column(
           children: [
@@ -258,7 +243,6 @@ class ResponsiveCalendarWeekView extends StatelessWidget {
                             border: Border(
                               bottom: BorderSide(
                                 color: Theme.of(context).dividerColor,
-                                width: 1,
                               ),
                             ),
                           ),
@@ -297,35 +281,29 @@ class ResponsiveCalendarWeekView extends StatelessWidget {
         }
 
         return TabletCalendarOverflowHandler(
-          enableHorizontalScroll: true,
-          enableVerticalScroll: true,
           child: weekView,
         );
       },
     );
-  }
 }
 
 /// Responsive calendar month view for tablets
 class ResponsiveCalendarMonthView extends StatelessWidget {
+
+  const ResponsiveCalendarMonthView({
+    required this.weekRows, required this.dayHeaders, super.key,
+    this.cellHeight,
+    this.headerHeight,
+    this.padding,
+  });
   final List<List<Widget>> weekRows;
   final List<String> dayHeaders;
   final double? cellHeight;
   final double? headerHeight;
   final EdgeInsetsGeometry? padding;
 
-  const ResponsiveCalendarMonthView({
-    super.key,
-    required this.weekRows,
-    required this.dayHeaders,
-    this.cellHeight,
-    this.headerHeight,
-    this.padding,
-  });
-
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
+  Widget build(BuildContext context) => LayoutBuilder(
       builder: (context, constraints) {
         final isTablet = constraints.maxWidth >= AppBreakpoints.tablet;
         final isDesktop = constraints.maxWidth >= AppBreakpoints.desktop;
@@ -336,7 +314,7 @@ class ResponsiveCalendarMonthView extends StatelessWidget {
                 : isTablet
                     ? 100.0
                     : 80.0);
-        final effectiveHeaderHeight = headerHeight ?? (isTablet ? 50.0 : 40.0);
+        effectiveHeaderHeight = headerHeight ?? (isTablet ? 50.0 : 40.0);
 
         Widget monthView = Column(
           children: [
@@ -352,7 +330,6 @@ class ResponsiveCalendarMonthView extends StatelessWidget {
                             border: Border(
                               bottom: BorderSide(
                                 color: Theme.of(context).dividerColor,
-                                width: 1,
                               ),
                             ),
                           ),
@@ -399,35 +376,29 @@ class ResponsiveCalendarMonthView extends StatelessWidget {
         }
 
         return TabletCalendarOverflowHandler(
-          enableHorizontalScroll: true,
-          enableVerticalScroll: true,
           child: monthView,
         );
       },
     );
-  }
 }
 
 /// Responsive calendar day view for tablets
 class ResponsiveCalendarDayView extends StatelessWidget {
+
+  const ResponsiveCalendarDayView({
+    required this.timeSlots, required this.timeLabels, super.key,
+    this.slotHeight,
+    this.labelWidth,
+    this.padding,
+  });
   final List<Widget> timeSlots;
   final List<String> timeLabels;
   final double? slotHeight;
   final double? labelWidth;
   final EdgeInsetsGeometry? padding;
 
-  const ResponsiveCalendarDayView({
-    super.key,
-    required this.timeSlots,
-    required this.timeLabels,
-    this.slotHeight,
-    this.labelWidth,
-    this.padding,
-  });
-
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
+  Widget build(BuildContext context) => LayoutBuilder(
       builder: (context, constraints) {
         final isTablet = constraints.maxWidth >= AppBreakpoints.tablet;
         final isDesktop = constraints.maxWidth >= AppBreakpoints.desktop;
@@ -459,7 +430,6 @@ class ResponsiveCalendarDayView extends StatelessWidget {
                           border: Border(
                             right: BorderSide(
                               color: Theme.of(context).dividerColor,
-                              width: 1,
                             ),
                           ),
                         ),
@@ -487,7 +457,6 @@ class ResponsiveCalendarDayView extends StatelessWidget {
                               color: Theme.of(context)
                                   .dividerColor
                                   .withOpacity(0.3),
-                              width: 1,
                             ),
                           ),
                         ),
@@ -505,17 +474,24 @@ class ResponsiveCalendarDayView extends StatelessWidget {
         }
 
         return TabletCalendarOverflowHandler(
-          enableHorizontalScroll: true,
-          enableVerticalScroll: true,
           child: dayView,
         );
       },
     );
-  }
 }
 
 /// Responsive calendar event card that adapts to tablet screen sizes
 class ResponsiveCalendarEventCard extends StatelessWidget {
+
+  const ResponsiveCalendarEventCard({
+    required this.title, super.key,
+    this.subtitle,
+    this.time,
+    this.location,
+    this.color,
+    this.onTap,
+    this.isSelected = false,
+  });
   final String title;
   final String? subtitle;
   final String? time;
@@ -524,20 +500,8 @@ class ResponsiveCalendarEventCard extends StatelessWidget {
   final VoidCallback? onTap;
   final bool isSelected;
 
-  const ResponsiveCalendarEventCard({
-    super.key,
-    required this.title,
-    this.subtitle,
-    this.time,
-    this.location,
-    this.color,
-    this.onTap,
-    this.isSelected = false,
-  });
-
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
+  Widget build(BuildContext context) => LayoutBuilder(
       builder: (context, constraints) {
         final isTablet = constraints.maxWidth >= AppBreakpoints.tablet;
 
@@ -632,29 +596,26 @@ class ResponsiveCalendarEventCard extends StatelessWidget {
         );
       },
     );
-  }
 }
 
 /// Responsive calendar navigation controls
 class ResponsiveCalendarNavigation extends StatelessWidget {
+
+  const ResponsiveCalendarNavigation({
+    required this.title, super.key,
+    this.onPrevious,
+    this.onNext,
+    this.onToday,
+    this.showTodayButton = true,
+  });
   final VoidCallback? onPrevious;
   final VoidCallback? onNext;
   final VoidCallback? onToday;
   final String title;
   final bool showTodayButton;
 
-  const ResponsiveCalendarNavigation({
-    super.key,
-    this.onPrevious,
-    this.onNext,
-    this.onToday,
-    required this.title,
-    this.showTodayButton = true,
-  });
-
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
+  Widget build(BuildContext context) => LayoutBuilder(
       builder: (context, constraints) {
         final isTablet = constraints.maxWidth >= AppBreakpoints.tablet;
 
@@ -720,25 +681,20 @@ class ResponsiveCalendarNavigation extends StatelessWidget {
         );
       },
     );
-  }
 }
 
 /// Responsive calendar view selector
 class ResponsiveCalendarViewSelector extends StatelessWidget {
+
+  const ResponsiveCalendarViewSelector({
+    required this.views, required this.selectedIndex, required this.onViewChanged, super.key,
+  });
   final List<String> views;
   final int selectedIndex;
   final ValueChanged<int> onViewChanged;
 
-  const ResponsiveCalendarViewSelector({
-    super.key,
-    required this.views,
-    required this.selectedIndex,
-    required this.onViewChanged,
-  });
-
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
+  Widget build(BuildContext context) => LayoutBuilder(
       builder: (context, constraints) {
         final isTablet = constraints.maxWidth >= AppBreakpoints.tablet;
 
@@ -784,5 +740,4 @@ class ResponsiveCalendarViewSelector extends StatelessWidget {
         );
       },
     );
-  }
 }

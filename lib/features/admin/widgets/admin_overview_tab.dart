@@ -1,23 +1,23 @@
+import 'package:appoint/features/admin/admin_broadcast_screen.dart';
+import 'package:appoint/features/admin/admin_orgs_screen.dart';
+import 'package:appoint/features/admin/admin_users_screen.dart';
+import 'package:appoint/features/admin/widgets/analytics/revenue_pie_chart.dart';
+import 'package:appoint/features/admin/widgets/analytics/stat_card.dart';
+import 'package:appoint/features/admin/widgets/analytics/user_growth_line_chart.dart';
+import 'package:appoint/models/admin_dashboard_stats.dart';
+import 'package:appoint/providers/admin_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/admin_provider.dart';
-import 'package:appoint/models/admin_dashboard_stats.dart';
-import 'package:appoint/features/admin/admin_broadcast_screen.dart';
-import 'package:appoint/features/admin/admin_users_screen.dart';
-import 'package:appoint/features/admin/admin_orgs_screen.dart';
-import 'package:appoint/features/admin/widgets/analytics/stat_card.dart';
-import 'package:appoint/features/admin/widgets/analytics/revenue_pie_chart.dart';
-import 'package:appoint/features/admin/widgets/analytics/user_growth_line_chart.dart';
 
 class AdminOverviewTab extends ConsumerWidget {
   const AdminOverviewTab({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final dashboardStats = ref.watch(adminDashboardStatsProvider);
+    dashboardStats = ref.watch(adminDashboardStatsProvider);
 
     return dashboardStats.when(
-      data: (final stats) => SingleChildScrollView(
+      data: (stats) => SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,7 +33,7 @@ class AdminOverviewTab extends ConsumerWidget {
         ),
       ),
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (final error, final stack) => Center(
+      error: (error, final stack) => Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -51,8 +51,7 @@ class AdminOverviewTab extends ConsumerWidget {
     );
   }
 
-  Widget _buildStatsCards(final AdminDashboardStats stats) {
-    return GridView.count(
+  Widget _buildStatsCards(AdminDashboardStats stats) => GridView.count(
       crossAxisCount: 2,
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
@@ -104,10 +103,8 @@ class AdminOverviewTab extends ConsumerWidget {
         ),
       ],
     );
-  }
 
-  Widget _buildQuickActions(BuildContext context) {
-    return Card(
+  Widget _buildQuickActions(BuildContext context) => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -133,7 +130,7 @@ class AdminOverviewTab extends ConsumerWidget {
                   () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (final context) => const AdminBroadcastScreen(),
+                      builder: (context) => const AdminBroadcastScreen(),
                     ),
                   ),
                 ),
@@ -144,7 +141,7 @@ class AdminOverviewTab extends ConsumerWidget {
                   () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (final context) => const AdminUsersScreen(),
+                      builder: (context) => const AdminUsersScreen(),
                     ),
                   ),
                 ),
@@ -155,7 +152,7 @@ class AdminOverviewTab extends ConsumerWidget {
                   () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (final context) => const AdminOrgsScreen(),
+                      builder: (context) => const AdminOrgsScreen(),
                     ),
                   ),
                 ),
@@ -171,11 +168,9 @@ class AdminOverviewTab extends ConsumerWidget {
         ),
       ),
     );
-  }
 
   Widget _buildActionButton(final String title, final IconData icon,
-      final Color color, final VoidCallback onPressed) {
-    return ElevatedButton.icon(
+      Color color, final VoidCallback onPressed,) => ElevatedButton.icon(
       onPressed: onPressed,
       icon: Icon(icon, color: Colors.white),
       label: Text(title),
@@ -185,12 +180,11 @@ class AdminOverviewTab extends ConsumerWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       ),
     );
-  }
 
   void _showExportDialog(BuildContext context) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Export Data'),
         content: Column(
           mainAxisSize: MainAxisSize.min,

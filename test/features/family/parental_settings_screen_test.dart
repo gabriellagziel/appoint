@@ -1,15 +1,16 @@
+import 'package:appoint/features/family/ui/parental_settings_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/features/family/ui/parental_settings_screen.dart';
-import '../../fake_firebase_setup.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import 'firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+  });
 
   group('ParentalSettingsScreen', () {
     testWidgets('shows toggle and manage accounts button',
-        (final tester) async {
+        (tester) async {
       await tester.pumpWidget(
         const MaterialApp(home: ParentalSettingsScreen()),
       );

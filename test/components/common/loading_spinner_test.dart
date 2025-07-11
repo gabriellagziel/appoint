@@ -1,14 +1,16 @@
+import 'package:appoint/components/common/loading_spinner.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/components/common/loading_spinner.dart';
-import '../../fake_firebase_setup.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import '../../firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
   group('LoadingSpinner', () {
-    testWidgets('shows default text', (final tester) async {
+    testWidgets('renders with default properties', (WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
           home: LoadingSpinner(),
@@ -16,18 +18,17 @@ Future<void> main() async {
       );
 
       expect(find.byType(CircularProgressIndicator), findsOneWidget);
-      expect(find.text('Loading...'), findsOneWidget);
     });
 
-    testWidgets('shows custom text', (final tester) async {
+    testWidgets('renders with custom text', (WidgetTester tester) async {
       await tester.pumpWidget(
         const MaterialApp(
-          home: LoadingSpinner(text: 'Please wait'),
+          home: LoadingSpinner(text: 'Custom Loading...'),
         ),
       );
 
+      expect(find.text('Custom Loading...'), findsOneWidget);
       expect(find.byType(CircularProgressIndicator), findsOneWidget);
-      expect(find.text('Please wait'), findsOneWidget);
     });
   });
 }

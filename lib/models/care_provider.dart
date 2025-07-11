@@ -1,8 +1,4 @@
 class CareProvider {
-  final String id;
-  final String name;
-  final String specialty;
-  final String contactInfo;
 
   CareProvider({
     required this.id,
@@ -11,14 +7,16 @@ class CareProvider {
     required this.contactInfo,
   });
 
-  factory CareProvider.fromJson(final Map<String, dynamic> json) {
-    return CareProvider(
+  factory CareProvider.fromJson(Map<String, dynamic> json) => CareProvider(
       id: json['id'] as String,
       name: json['name'] as String,
       specialty: json['specialty'] as String,
       contactInfo: json['contactInfo'] as String,
     );
-  }
+  final String id;
+  final String name;
+  final String specialty;
+  final String contactInfo;
 
   Map<String, dynamic> toJson() => {
         'id': id,
@@ -32,12 +30,10 @@ class CareProvider {
     final String? name,
     final String? specialty,
     final String? contactInfo,
-  }) {
-    return CareProvider(
+  }) => CareProvider(
       id: id ?? this.id,
       name: name ?? this.name,
       specialty: specialty ?? this.specialty,
       contactInfo: contactInfo ?? this.contactInfo,
     );
-  }
 }

@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:appoint/features/studio_business/models/staff_profile.dart';
 import 'package:appoint/features/studio_business/providers/booking_provider.dart';
-import 'package:appoint/features/studio_business/providers/weekly_usage_provider.dart';
 import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
+import 'package:appoint/features/studio_business/providers/weekly_usage_provider.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class StudioBookingScreen extends ConsumerStatefulWidget {
   const StudioBookingScreen({super.key});
@@ -19,15 +19,15 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   String? selectedTimeSlot;
   StaffProfile? selectedStaff;
   bool isConfirming = false;
-  final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
-  final _phoneController = TextEditingController();
-  final _dateController = TextEditingController();
-  final _timeController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _nameController = TextEditingController();
+  _phoneController = TextEditingController();
+  _dateController = TextEditingController();
+  _timeController = TextEditingController();
   bool _isProcessing = false;
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     if (!kIsWeb) {
       return Scaffold(
         appBar: AppBar(title: const Text('Studio Booking')),
@@ -37,7 +37,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
       );
     }
 
-    final profileAsync = ref.watch(businessProfileProvider);
+    profileAsync = ref.watch(businessProfileProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Studio Booking')),
@@ -83,7 +83,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                         labelText: 'Customer Name',
                         border: OutlineInputBorder(),
                       ),
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter customer name';
                         }
@@ -100,7 +100,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                         prefixText: '+1 ',
                       ),
                       keyboardType: TextInputType.phone,
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter phone number';
                         }
@@ -121,7 +121,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                       ),
                       readOnly: true,
                       onTap: () => _selectDate(context),
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please select a date';
                         }
@@ -139,7 +139,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                       ),
                       readOnly: true,
                       onTap: () => _selectTime(context),
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please select a time';
                         }
@@ -164,7 +164,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
     );
   }
 
-  // TODO: Implement time slot selector and staff selector when needed
+  // TODO(username): Implement time slot selector and staff selector when needed
 
   Future<void> _processBooking() async {
     if (_formKey.currentState!.validate()) {
@@ -172,14 +172,14 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
 
       try {
         // Check weekly usage for upgrade modal
-        final weeklyUsage = ref.read(weeklyUsageProvider.notifier);
+        weeklyUsage = ref.read(weeklyUsageProvider.notifier);
         if (weeklyUsage.shouldShowUpgradeModal) {
           _showUpgradeModal(weeklyUsage.upgradeCode);
           return;
         }
 
         // Create booking
-        final bookingNotifier = ref.read(bookingProvider.notifier);
+        bookingNotifier = ref.read(bookingProvider.notifier);
         await bookingNotifier.createBooking(
           staffProfileId: selectedStaff!.id,
           businessProfileId: 'business1', // This should come from the profile
@@ -196,11 +196,11 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (final _) => const StudioBookingConfirmScreen(),
+              builder: (_) => const StudioBookingConfirmScreen(),
             ),
           );
         }
-      } catch (e) {
+      } catch (e) {e) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Error: $e')),
@@ -214,28 +214,28 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
     }
   }
 
-  String _getEndTime(final String startTime) {
-    final parts = startTime.split(':');
-    final hour = int.parse(parts[0]);
-    final minute = int.parse(parts[1]);
+  String _getEndTime(String startTime) {
+    parts = startTime.split(':');
+    hour = int.parse(parts[0]);
+    minute = int.parse(parts[1]);
 
     final endMinute = minute + 30;
-    final endHour = hour + (endMinute >= 60 ? 1 : 0);
+    endHour = hour + (endMinute >= 60 ? 1 : 0);
     final finalMinute = endMinute >= 60 ? endMinute - 60 : endMinute;
 
     return '${endHour.toString().padLeft(2, '0')}:${finalMinute.toString().padLeft(2, '0')}';
   }
 
-  void _showUpgradeModal(final String upgradeCode) {
+  void _showUpgradeModal(String upgradeCode) {
     showDialog(
       context: context,
       barrierDismissible: false,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Upgrade to Business'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('You\'ve exceeded the weekly booking limit.'),
+            const Text("You've exceeded the weekly booking limit."),
             const SizedBox(height: 16),
             Text('Your upgrade code: $upgradeCode'),
             const SizedBox(height: 16),
@@ -255,11 +255,11 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
     );
   }
 
-  void _selectDate(final BuildContext context) {
+  void _selectDate(BuildContext context) {
     // Implementation of _selectDate method
   }
 
-  void _selectTime(final BuildContext context) {
+  void _selectTime(BuildContext context) {
     // Implementation of _selectTime method
   }
 }
@@ -268,8 +268,7 @@ class StudioBookingConfirmScreen extends StatelessWidget {
   const StudioBookingConfirmScreen({super.key});
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(title: const Text('Booking Confirmed')),
       body: const Center(
         child: Column(
@@ -287,5 +286,4 @@ class StudioBookingConfirmScreen extends StatelessWidget {
         ),
       ),
     );
-  }
 }

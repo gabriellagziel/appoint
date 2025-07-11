@@ -1,18 +1,15 @@
 // ignore_for_file: use_of_void_result
 import 'dart:async';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/models/booking.dart';
-import 'package:appoint/models/appointment.dart';
+
 import 'package:appoint/features/booking/services/booking_service.dart';
+import 'package:appoint/models/appointment.dart';
+import 'package:appoint/models/booking.dart';
 import 'package:appoint/services/appointment_service.dart';
 import 'package:appoint/services/notification_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class BookingHelper {
-  final BookingService _bookingService;
-  final AppointmentService _appointmentService;
-  final NotificationService _notificationService;
-  final FirebaseFirestore _firestore;
 
   BookingHelper({
     final BookingService? bookingService,
@@ -23,6 +20,10 @@ class BookingHelper {
         _appointmentService = appointmentService ?? AppointmentService(),
         _notificationService = notificationService ?? NotificationService(),
         _firestore = firestore ?? FirebaseFirestore.instance;
+  final BookingService _bookingService;
+  final AppointmentService _appointmentService;
+  final NotificationService _notificationService;
+  final FirebaseFirestore _firestore;
 
   /// Create a new booking with comprehensive validation and error handling
   Future<BookingResult> createBooking({
@@ -75,7 +76,8 @@ class BookingHelper {
       );
 
       await _bookingService.submitBooking(booking);
-      final createdBooking = booking.copyWith(id: booking.id.isEmpty ? 'temp_id' : booking.id);
+      final createdBooking =
+          booking.copyWith(id: booking.id.isEmpty ? 'temp_id' : booking.id);
 
       // Create corresponding appointment
       final appointment = await _appointmentService.createScheduled(
@@ -93,7 +95,7 @@ class BookingHelper {
       unawaited(_trackBookingAnalytics(createdBooking, studioId));
 
       return BookingResult.success(createdBooking, appointment);
-    } catch (e) {
+    } catch (e) {e) {
       return BookingResult.error('Failed to create booking: $e');
     }
   }
@@ -107,7 +109,7 @@ class BookingHelper {
     final String? newStatus,
   }) async {
     try {
-      final existingBooking = await _bookingService.getBookingById(bookingId);
+      existingBooking = await _bookingService.getBookingById(bookingId);
       if (existingBooking == null) {
         return BookingResult.error('Booking not found');
       }
@@ -155,7 +157,7 @@ class BookingHelper {
       }
 
       return BookingResult.success(updatedBooking, null);
-    } catch (e) {
+    } catch (e) {e) {
       return BookingResult.error('Failed to update booking: $e');
     }
   }
@@ -166,7 +168,7 @@ class BookingHelper {
     final String? reason,
   }) async {
     try {
-      final booking = await _bookingService.getBookingById(bookingId);
+      booking = await _bookingService.getBookingById(bookingId);
       if (booking == null) {
         return BookingResult.error('Booking not found');
       }
@@ -182,7 +184,7 @@ class BookingHelper {
       unawaited(_sendCancellationNotifications(booking, reason));
 
       return BookingResult.cancelled(booking);
-    } catch (e) {
+    } catch (e) {e) {
       return BookingResult.error('Failed to cancel booking: $e');
     }
   }
@@ -194,19 +196,19 @@ class BookingHelper {
     final Duration? slotDuration,
   }) async {
     try {
-      final duration = slotDuration ?? const Duration(minutes: 30);
+      duration = slotDuration ?? const Duration(minutes: 30);
       final slots = <TimeSlot>[];
 
       // Get staff availability for the date
-      final availability = await _getStaffAvailability(staffId, date);
+      availability = await _getStaffAvailability(staffId, date);
       if (availability.isEmpty) {
         return slots;
       }
 
       // Generate time slots with proper timezone handling
-      final localDate = DateTime(date.year, date.month, date.day);
-      final businessStartHour = 9; // 9 AM local time
-      final businessEndHour = 18; // 6 PM local time
+      localDate = DateTime(date.year, date.month, date.day);
+      const businessStartHour = 9; // 9 AM local time
+      const businessEndHour = 18; // 6 PM local time
 
       // Create start and end times in local timezone
       final startTime = DateTime(
@@ -214,21 +216,19 @@ class BookingHelper {
         localDate.month,
         localDate.day,
         businessStartHour,
-        0,
       );
       final endTime = DateTime(
         localDate.year,
         localDate.month,
         localDate.day,
         businessEndHour,
-        0,
       );
 
       // Generate slots within business hours
-      for (DateTime time = startTime;
+      for (var time = startTime;
           time.isBefore(endTime);
           time = time.add(duration)) {
-        final slotEnd = time.add(duration);
+        slotEnd = time.add(duration);
 
         // Ensure slot doesn't cross midnight
         if (slotEnd.day != time.day) {
@@ -244,43 +244,43 @@ class BookingHelper {
 
           // Only add slot if it's still within business hours
           if (time.hour >= businessStartHour) {
-            final isAvailable = availability.any((final avail) =>
+            isAvailable = availability.any((final avail) =>
                 avail.startTime.isBefore(time) &&
-                avail.endTime.isAfter(adjustedEnd));
+                avail.endTime.isAfter(adjustedEnd),);
 
             if (isAvailable) {
               final isBooked = await _isSlotBooked(
-                  staffId, time, adjustedEnd.difference(time));
+                  staffId, time, adjustedEnd.difference(time),);
               if (!isBooked) {
                 slots.add(TimeSlot(
                   startTime: time,
                   endTime: adjustedEnd,
                   isAvailable: true,
-                ));
+                ),);
               }
             }
           }
         } else {
           // Normal slot within same day
-          final isAvailable = availability.any((final avail) =>
-              avail.startTime.isBefore(time) && avail.endTime.isAfter(slotEnd));
+          isAvailable = availability.any((final avail) =>
+              avail.startTime.isBefore(time) && avail.endTime.isAfter(slotEnd),);
 
           if (isAvailable) {
-            final isBooked = await _isSlotBooked(staffId, time, duration);
+            isBooked = await _isSlotBooked(staffId, time, duration);
             if (!isBooked) {
               slots.add(TimeSlot(
                 startTime: time,
                 endTime: slotEnd,
                 isAvailable: true,
-              ));
+              ),);
             }
           }
         }
       }
 
       return slots;
-    } catch (e) {
-      // Removed debug print: print('Error getting available slots: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error getting available slots: $e');
       return [];
     }
   }
@@ -294,42 +294,42 @@ class BookingHelper {
     required final Duration duration,
   }) async {
     // Check if date is in the future (using local time)
-    final now = DateTime.now();
+    now = DateTime.now();
     if (dateTime.isBefore(now)) {
       return ValidationResult.error('Booking time must be in the future');
     }
 
     // Check if date is within allowed range (e.g., 30 days)
-    final maxDate = now.add(const Duration(days: 30));
+    maxDate = now.add(const Duration(days: 30));
     if (dateTime.isAfter(maxDate)) {
       return ValidationResult.error(
-          'Booking cannot be more than 30 days in advance');
+          'Booking cannot be more than 30 days in advance',);
     }
 
     // Check if staff exists and is available
-    final staffExists = await _checkStaffExists(staffId);
+    staffExists = await _checkStaffExists(staffId);
     if (!staffExists) {
       return ValidationResult.error('Selected staff member not found');
     }
 
     // Check if service exists
-    final serviceExists = await _checkServiceExists(serviceId);
+    serviceExists = await _checkServiceExists(serviceId);
     if (!serviceExists) {
       return ValidationResult.error('Selected service not found');
     }
 
     // Enhanced business hours validation
-    final businessStartHour = 9; // 9 AM local time
-    final businessEndHour = 18; // 6 PM local time
+    const businessStartHour = 9; // 9 AM local time
+    const businessEndHour = 18; // 6 PM local time
 
     // Check if booking starts within business hours
     if (dateTime.hour < businessStartHour || dateTime.hour >= businessEndHour) {
       return ValidationResult.error(
-          'Bookings are only available between 9 AM and 6 PM local time');
+          'Bookings are only available between 9 AM and 6 PM local time',);
     }
 
     // Check if booking duration would extend beyond business hours
-    final bookingEnd = dateTime.add(duration);
+    bookingEnd = dateTime.add(duration);
     final bookingEndHour = bookingEnd.hour;
 
     // Handle midnight crossing
@@ -337,20 +337,20 @@ class BookingHelper {
       // Booking crosses midnight - check if it starts late enough to be valid
       if (dateTime.hour < businessStartHour) {
         return ValidationResult.error(
-            'Bookings cannot start before 9 AM local time');
+            'Bookings cannot start before 9 AM local time',);
       }
     } else {
       // Same day booking - check if it ends within business hours
       if (bookingEndHour > businessEndHour) {
         return ValidationResult.error(
-            'Bookings cannot extend beyond 6 PM local time');
+            'Bookings cannot extend beyond 6 PM local time',);
       }
     }
 
     // Validate booking duration (minimum 15 minutes, maximum 8 hours)
     if (duration.inMinutes < 15) {
       return ValidationResult.error(
-          'Booking duration must be at least 15 minutes');
+          'Booking duration must be at least 15 minutes',);
     }
     if (duration.inHours > 8) {
       return ValidationResult.error('Booking duration cannot exceed 8 hours');
@@ -366,7 +366,7 @@ class BookingHelper {
     required final Duration duration,
     final String? excludeBookingId,
   }) async {
-    final endTime = dateTime.add(duration);
+    endTime = dateTime.add(duration);
 
     final query = _firestore
         .collection('bookings')
@@ -374,10 +374,10 @@ class BookingHelper {
         .where('dateTime', isLessThan: endTime)
         .where('dateTime', isGreaterThan: dateTime);
 
-    final snapshot = await query.get();
+    snapshot = await query.get();
 
     if (excludeBookingId != null) {
-      return snapshot.docs.any((final doc) => doc.id != excludeBookingId);
+      return snapshot.docs.any((doc) => doc.id != excludeBookingId);
     }
 
     return snapshot.docs.isNotEmpty;
@@ -385,7 +385,7 @@ class BookingHelper {
 
   /// Get staff availability
   Future<List<AvailabilitySlot>> _getStaffAvailability(
-      final String staffId, final DateTime date) async {
+      String staffId, final DateTime date,) async {
     try {
       final snapshot = await _firestore
           .collection('staff_availability')
@@ -393,23 +393,23 @@ class BookingHelper {
           .where('date', isEqualTo: date.toIso8601String().split('T')[0])
           .get();
 
-      return snapshot.docs.map((final doc) {
-        final data = doc.data();
+      return snapshot.docs.map((doc) {
+        data = doc.data();
         return AvailabilitySlot(
           startTime: (data['startTime'] as Timestamp).toDate(),
           endTime: (data['endTime'] as Timestamp).toDate(),
         );
       }).toList();
-    } catch (e) {
-      // Removed debug print: print('Error getting staff availability: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error getting staff availability: $e');
       return [];
     }
   }
 
   /// Check if a time slot is already booked
   Future<bool> _isSlotBooked(final String staffId, final DateTime startTime,
-      final Duration duration) async {
-    final endTime = startTime.add(duration);
+      Duration duration,) async {
+    endTime = startTime.add(duration);
 
     final snapshot = await _firestore
         .collection('bookings')
@@ -422,20 +422,20 @@ class BookingHelper {
   }
 
   /// Check if staff member exists
-  Future<bool> _checkStaffExists(final String staffId) async {
-    final doc = await _firestore.collection('staff').doc(staffId).get();
+  Future<bool> _checkStaffExists(String staffId) async {
+    doc = await _firestore.collection('staff').doc(staffId).get();
     return doc.exists;
   }
 
   /// Check if service exists
-  Future<bool> _checkServiceExists(final String serviceId) async {
-    final doc = await _firestore.collection('services').doc(serviceId).get();
+  Future<bool> _checkServiceExists(String serviceId) async {
+    doc = await _firestore.collection('services').doc(serviceId).get();
     return doc.exists;
   }
 
   /// Send notifications and track analytics (fire and forget)
   Future<void> _sendBookingNotifications(
-      final Booking booking, final Appointment appointment) async {
+      Booking booking, final Appointment appointment,) async {
     try {
       // Notify staff member
       await _notificationService.sendNotificationToUser(
@@ -450,14 +450,14 @@ class BookingHelper {
         'Booking Confirmed',
         'Your booking for ${booking.serviceName} has been confirmed',
       );
-    } catch (e) {
-      // Removed debug print: print('Error sending notifications and tracking analytics: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error sending notifications and tracking analytics: $e');
     }
   }
 
   /// Send cancellation notifications
   Future<void> _sendCancellationNotifications(
-      final Booking booking, final String? reason) async {
+      Booking booking, final String? reason,) async {
     try {
       final reasonText = reason ?? 'No reason provided';
 
@@ -474,14 +474,14 @@ class BookingHelper {
         'Booking Cancelled',
         'Your booking for ${booking.serviceName} has been cancelled. Reason: $reasonText',
       );
-    } catch (e) {
-      // Removed debug print: print('Error sending cancellation notifications: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error sending cancellation notifications: $e');
     }
   }
 
   /// Track booking analytics
   Future<void> _trackBookingAnalytics(
-      final Booking booking, final String? studioId) async {
+      Booking booking, final String? studioId,) async {
     try {
       await _firestore.collection('booking_analytics').add({
         'bookingId': booking.id,
@@ -494,14 +494,14 @@ class BookingHelper {
         'createdAt': FieldValue.serverTimestamp(),
         'source': 'app',
       });
-    } catch (e) {
-      // Removed debug print: print('Error tracking booking analytics: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error tracking booking analytics: $e');
     }
   }
 
   /// Update appointment time
   Future<void> _updateAppointmentTime(
-      final String bookingId, final DateTime newTime) async {
+      String bookingId, final DateTime newTime,) async {
     try {
       // Find appointment by booking ID
       final snapshot = await _firestore
@@ -516,13 +516,13 @@ class BookingHelper {
           'updatedAt': FieldValue.serverTimestamp(),
         });
       }
-    } catch (e) {
-      // Removed debug print: print('Error updating appointment time: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error updating appointment time: $e');
     }
   }
 
   /// Cancel appointment
-  Future<void> _cancelAppointment(final String bookingId) async {
+  Future<void> _cancelAppointment(String bookingId) async {
     try {
       final snapshot = await _firestore
           .collection('appointments')
@@ -536,18 +536,14 @@ class BookingHelper {
           'cancelledAt': FieldValue.serverTimestamp(),
         });
       }
-    } catch (e) {
-      // Removed debug print: print('Error cancelling appointment: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error cancelling appointment: $e');
     }
   }
 }
 
 /// Result class for booking operations
 class BookingResult {
-  final bool isSuccess;
-  final Booking? booking;
-  final Appointment? appointment;
-  final String? errorMessage;
 
   BookingResult._({
     required this.isSuccess,
@@ -557,77 +553,68 @@ class BookingResult {
   });
 
   factory BookingResult.success(
-      final Booking? booking, final Appointment? appointment) {
-    return BookingResult._(
+      Booking? booking, final Appointment? appointment,) => BookingResult._(
       isSuccess: true,
       booking: booking,
       appointment: appointment,
     );
-  }
 
-  factory BookingResult.error(final String message) {
-    return BookingResult._(
+  factory BookingResult.error(String message) => BookingResult._(
       isSuccess: false,
       errorMessage: message,
     );
-  }
 
-  factory BookingResult.cancelled(final Booking booking) {
-    return BookingResult._(
+  factory BookingResult.cancelled(Booking booking) => BookingResult._(
       isSuccess: true,
       booking: booking,
-      appointment: null,
     );
-  }
+  final bool isSuccess;
+  final Booking? booking;
+  final Appointment? appointment;
+  final String? errorMessage;
 }
 
 /// Validation result for booking parameters
 class ValidationResult {
-  final bool isValid;
-  final String? errorMessage;
 
   ValidationResult._({
     required this.isValid,
     this.errorMessage,
   });
 
-  factory ValidationResult.success() {
-    return ValidationResult._(isValid: true);
-  }
+  factory ValidationResult.success() => ValidationResult._(isValid: true);
 
-  factory ValidationResult.error(final String message) {
-    return ValidationResult._(
+  factory ValidationResult.error(String message) => ValidationResult._(
       isValid: false,
       errorMessage: message,
     );
-  }
+  final bool isValid;
+  final String? errorMessage;
 }
 
 /// Time slot for availability
 class TimeSlot {
-  final DateTime startTime;
-  final DateTime endTime;
-  final bool isAvailable;
 
   TimeSlot({
     required this.startTime,
     required this.endTime,
     required this.isAvailable,
   });
+  final DateTime startTime;
+  final DateTime endTime;
+  final bool isAvailable;
 }
 
 /// Availability slot for staff
 class AvailabilitySlot {
-  final DateTime startTime;
-  final DateTime endTime;
 
   AvailabilitySlot({
     required this.startTime,
     required this.endTime,
   });
+  final DateTime startTime;
+  final DateTime endTime;
 }
 
 /// Provider for BookingHelper
-final bookingHelperProvider = Provider<BookingHelper>((final ref) {
-  return BookingHelper();
-});
+bookingHelperProvider = Provider<BookingHelper>((final ref) => BookingHelper());

@@ -1,7 +1,7 @@
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/providers/family_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/family_provider.dart';
-import 'package:appoint/providers/auth_provider.dart';
 
 class InvitationModal extends ConsumerStatefulWidget {
   const InvitationModal({super.key});
@@ -11,7 +11,7 @@ class InvitationModal extends ConsumerStatefulWidget {
 }
 
 class _InvitationModalState extends ConsumerState<InvitationModal> {
-  final _emailController = TextEditingController();
+  _emailController = TextEditingController();
   bool _isLoading = false;
 
   @override
@@ -33,15 +33,15 @@ class _InvitationModalState extends ConsumerState<InvitationModal> {
     });
 
     try {
-      final familyService = ref.read(familyServiceProvider);
-      final authState = await ref.read(authStateProvider.future);
+      familyService = ref.read(familyServiceProvider);
+      authState = await ref.read(authStateProvider.future);
 
       if (authState == null) {
         throw Exception('User not authenticated');
       }
 
       await familyService.inviteChild(
-          authState.uid, _emailController.text.trim());
+          authState.uid, _emailController.text.trim(),);
 
       if (mounted) {
         Navigator.of(context).pop();
@@ -49,7 +49,7 @@ class _InvitationModalState extends ConsumerState<InvitationModal> {
           const SnackBar(content: Text('Invitation sent successfully!')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to send invitation: $e')),
@@ -65,14 +65,13 @@ class _InvitationModalState extends ConsumerState<InvitationModal> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return AlertDialog(
+  Widget build(BuildContext context) => AlertDialog(
       title: const Text('Invite Child'),
       content: TextField(
         controller: _emailController,
         decoration: const InputDecoration(
           labelText: 'Child Email',
-          hintText: 'Enter child\'s email address',
+          hintText: "Enter child's email address",
         ),
         keyboardType: TextInputType.emailAddress,
       ),
@@ -93,5 +92,4 @@ class _InvitationModalState extends ConsumerState<InvitationModal> {
         ),
       ],
     );
-  }
 }

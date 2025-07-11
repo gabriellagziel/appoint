@@ -1,9 +1,4 @@
 class PrivacyRequest {
-  final String id;
-  final String childId;
-  final String type; // "private_session"
-  final String status; // "pending"|"approved"|"denied"
-  final DateTime requestedAt;
 
   PrivacyRequest({
     required this.id,
@@ -13,7 +8,7 @@ class PrivacyRequest {
     required this.requestedAt,
   });
 
-  factory PrivacyRequest.fromJson(final Map<String, dynamic> json) =>
+  factory PrivacyRequest.fromJson(Map<String, dynamic> json) =>
       PrivacyRequest(
         id: json['id'],
         childId: json['childId'],
@@ -21,6 +16,11 @@ class PrivacyRequest {
         status: json['status'],
         requestedAt: DateTime.parse(json['requestedAt']),
       );
+  final String id;
+  final String childId;
+  final String type; // "private_session"
+  final String status; // "pending"|"approved"|"denied"
+  final DateTime requestedAt;
 
   Map<String, dynamic> toJson() => {
         'id': id,

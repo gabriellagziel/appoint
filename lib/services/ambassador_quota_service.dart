@@ -70,14 +70,14 @@ class AmbassadorQuotaService {
   };
 
   /// Get the quota for a specific country-language combination
-  int getQuota(final String countryCode, final String languageCode) {
+  int getQuota(String countryCode, final String languageCode) {
     final key = '${countryCode}_$languageCode';
     return ambassadorQuotas[key] ?? 0;
   }
 
   /// Get current ambassador count for a country-language combination
   Future<int> getCurrentAmbassadorCount(
-      final String countryCode, final String languageCode) async {
+      String countryCode, final String languageCode,) async {
     try {
       final snapshot = await _firestore
           .collection('ambassadors')
@@ -88,16 +88,16 @@ class AmbassadorQuotaService {
           .get();
 
       return snapshot.count ?? 0;
-    } catch (e) {
-      // Removed debug print: print('Error getting ambassador count: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error getting ambassador count: $e');
       return 0;
     }
   }
 
   /// Check if there are available slots for a country-language combination
   Future<bool> hasAvailableSlots(
-      final String countryCode, final String languageCode) async {
-    final quota = getQuota(countryCode, languageCode);
+      String countryCode, final String languageCode,) async {
+    quota = getQuota(countryCode, languageCode);
     if (quota == 0) return false;
 
     final currentCount =
@@ -107,8 +107,8 @@ class AmbassadorQuotaService {
 
   /// Get available slots count for a country-language combination
   Future<int> getAvailableSlots(
-      final String countryCode, final String languageCode) async {
-    final quota = getQuota(countryCode, languageCode);
+      String countryCode, final String languageCode,) async {
+    quota = getQuota(countryCode, languageCode);
     if (quota == 0) return 0;
 
     final currentCount =
@@ -117,12 +117,12 @@ class AmbassadorQuotaService {
   }
 
   /// Check if a user is eligible to become an ambassador
-  Future<bool> isUserEligible(final String userId) async {
+  Future<bool> isUserEligible(String userId) async {
     try {
-      final userDoc = await _firestore.collection('users').doc(userId).get();
+      userDoc = await _firestore.collection('users').doc(userId).get();
       if (!userDoc.exists) return false;
 
-      final userData = userDoc.data();
+      userData = userDoc.data();
       if (userData == null) return false;
 
       // Check if user is an adult
@@ -134,8 +134,8 @@ class AmbassadorQuotaService {
       if (currentRole == 'ambassador') return false;
 
       return true;
-    } catch (e) {
-      // Removed debug print: print('Error checking user eligibility: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error checking user eligibility: $e');
       return false;
     }
   }
@@ -149,32 +149,32 @@ class AmbassadorQuotaService {
   }) async {
     try {
       // Check if user is eligible
-      final isEligible = await isUserEligible(userId);
+      isEligible = await isUserEligible(userId);
       if (!isEligible) {
-        // Removed debug print: print('User $userId is not eligible for ambassadorship');
+        // Removed debug print: debugPrint('User $userId is not eligible for ambassadorship');
         return false;
       }
 
       // Check if there are available slots
-      final hasSlots = await hasAvailableSlots(countryCode, languageCode);
+      hasSlots = await hasAvailableSlots(countryCode, languageCode);
       if (!hasSlots) {
-        // Removed debug print: print('No available ambassador slots for ${countryCode}_$languageCode');
+        // Removed debug print: debugPrint('No available ambassador slots for ${countryCode}_$languageCode');
         return false;
       }
 
       // Use a transaction to ensure atomicity
-      await _firestore.runTransaction((final transaction) async {
+      await _firestore.runTransaction((transaction) async {
         // Double-check availability within transaction
         final currentCount =
             await getCurrentAmbassadorCount(countryCode, languageCode);
-        final quota = getQuota(countryCode, languageCode);
+        quota = getQuota(countryCode, languageCode);
 
         if (currentCount >= quota) {
           throw Exception('Quota exceeded during transaction');
         }
 
         // Update user role
-        final userRef = _firestore.collection('users').doc(userId);
+        userRef = _firestore.collection('users').doc(userId);
         transaction.update(userRef, {
           'role': 'ambassador',
           'ambassadorSince': FieldValue.serverTimestamp(),
@@ -182,7 +182,7 @@ class AmbassadorQuotaService {
         });
 
         // Create ambassador record
-        final ambassadorRef = _firestore.collection('ambassadors').doc(userId);
+        ambassadorRef = _firestore.collection('ambassadors').doc(userId);
         transaction.set(ambassadorRef, {
           'userId': userId,
           'countryCode': countryCode,
@@ -195,7 +195,7 @@ class AmbassadorQuotaService {
         });
 
         // Log the assignment
-        final logRef = _firestore.collection('ambassador_assignments').doc();
+        logRef = _firestore.collection('ambassador_assignments').doc();
         transaction.set(logRef, {
           'userId': userId,
           'countryCode': countryCode,
@@ -207,25 +207,25 @@ class AmbassadorQuotaService {
         });
       });
 
-      // Removed debug print: print(
+      // Removed debug print: debugPrint(
       //   'Successfully assigned ambassador role to user $userId for ${countryCode}_$languageCode'
       // );
       return true;
-    } catch (e) {
-      // Removed debug print: print('Error assigning ambassador: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error assigning ambassador: $e');
       return false;
     }
   }
 
   /// Remove ambassador role and free up slot
-  Future<bool> removeAmbassador(final String userId) async {
+  Future<bool> removeAmbassador(String userId) async {
     try {
       // Get ambassador data first
       final ambassadorDoc =
           await _firestore.collection('ambassadors').doc(userId).get();
       if (!ambassadorDoc.exists) return false;
 
-      final ambassadorData = ambassadorDoc.data();
+      ambassadorData = ambassadorDoc.data();
       if (ambassadorData == null) return false;
 
       final countryCode = ambassadorData['countryCode'] as String?;
@@ -233,9 +233,9 @@ class AmbassadorQuotaService {
 
       if (countryCode == null || languageCode == null) return false;
 
-      await _firestore.runTransaction((final transaction) async {
+      await _firestore.runTransaction((transaction) async {
         // Update user role
-        final userRef = _firestore.collection('users').doc(userId);
+        userRef = _firestore.collection('users').doc(userId);
         transaction.update(userRef, {
           'role': 'client',
           'ambassadorRemovedAt': FieldValue.serverTimestamp(),
@@ -243,7 +243,7 @@ class AmbassadorQuotaService {
         });
 
         // Update ambassador status
-        final ambassadorRef = _firestore.collection('ambassadors').doc(userId);
+        ambassadorRef = _firestore.collection('ambassadors').doc(userId);
         transaction.update(ambassadorRef, {
           'status': 'inactive',
           'removedAt': FieldValue.serverTimestamp(),
@@ -251,7 +251,7 @@ class AmbassadorQuotaService {
         });
 
         // Log the removal
-        final logRef = _firestore.collection('ambassador_removals').doc();
+        logRef = _firestore.collection('ambassador_removals').doc();
         transaction.set(logRef, {
           'userId': userId,
           'countryCode': countryCode,
@@ -261,10 +261,10 @@ class AmbassadorQuotaService {
         });
       });
 
-      // Removed debug print: print('Successfully removed ambassador role from user $userId');
+      // Removed debug print: debugPrint('Successfully removed ambassador role from user $userId');
       return true;
-    } catch (e) {
-      // Removed debug print: print('Error removing ambassador: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error removing ambassador: $e');
       return false;
     }
   }
@@ -273,10 +273,10 @@ class AmbassadorQuotaService {
   Future<Map<String, dynamic>> getQuotaStatistics() async {
     final stats = <String, Map<String, dynamic>>{};
 
-    for (final entry in ambassadorQuotas.entries) {
+    for (entry in ambassadorQuotas.entries) {
       final key = entry.key;
       final quota = entry.value;
-      final parts = key.split('_');
+      parts = key.split('_');
       final countryCode = parts[0];
       final languageCode = parts[1];
 
@@ -300,12 +300,12 @@ class AmbassadorQuotaService {
   /// Get total global statistics
   Future<Map<String, dynamic>> getGlobalStatistics() async {
     final totalQuota = ambassadorQuotas.values
-        .fold<int>(0, (final total, final quota) => total + quota);
-    int totalCurrent = 0;
+        .fold<int>(0, (total, final quota) => total + quota);
+    var totalCurrent = 0;
 
-    for (final entry in ambassadorQuotas.entries) {
-      final parts = entry.key.split('_');
-      final currentCount = await getCurrentAmbassadorCount(parts[0], parts[1]);
+    for (entry in ambassadorQuotas.entries) {
+      parts = entry.key.split('_');
+      currentCount = await getCurrentAmbassadorCount(parts[0], parts[1]);
       totalCurrent += currentCount;
     }
 
@@ -320,7 +320,7 @@ class AmbassadorQuotaService {
 
   /// Find next eligible user for ambassadorship in a specific country-language
   Future<String?> findNextEligibleUser(
-      final String countryCode, final String languageCode) async {
+      String countryCode, final String languageCode,) async {
     try {
       // Query for eligible users in the specified country
       final usersSnapshot = await _firestore
@@ -336,8 +336,8 @@ class AmbassadorQuotaService {
       if (usersSnapshot.docs.isEmpty) return null;
 
       return usersSnapshot.docs.first.id;
-    } catch (e) {
-      // Removed debug print: print('Error finding eligible user: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error finding eligible user: $e');
       return null;
     }
   }
@@ -345,16 +345,16 @@ class AmbassadorQuotaService {
   /// Auto-assign ambassadors for all available slots
   /// This can be called by a scheduled Cloud Function
   Future<int> autoAssignAvailableSlots() async {
-    int assignedCount = 0;
+    var assignedCount = 0;
 
-    for (final entry in ambassadorQuotas.entries) {
+    for (entry in ambassadorQuotas.entries) {
       final key = entry.key;
-      final parts = key.split('_');
+      parts = key.split('_');
       final countryCode = parts[0];
       final languageCode = parts[1];
 
       // Check if there are available slots
-      final hasSlots = await hasAvailableSlots(countryCode, languageCode);
+      hasSlots = await hasAvailableSlots(countryCode, languageCode);
       if (!hasSlots) continue;
 
       // Find eligible user

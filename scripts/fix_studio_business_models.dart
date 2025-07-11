@@ -25,7 +25,7 @@ Future<void> updatePartDirectives() async {
     '*.g.dart',
     '-not',
     '-name',
-    '*.freezed.dart'
+    '*.freezed.dart',
   ]);
   final files = result.stdout.toString().trim().split('\n');
 
@@ -35,13 +35,13 @@ Future<void> updatePartDirectives() async {
     final file = File(filePath);
     if (!await file.exists()) continue;
 
-    String content = await file.readAsString();
-    bool modified = false;
+    var content = await file.readAsString();
+    var modified = false;
 
     // Update part directives to use correct path
     content = content.replaceAllMapped(
       RegExp(
-          r"part '\.\./\.\./\.\./generated/models/([^.]+)\.(freezed|g)\.dart';"),
+          r"part '\.\./\.\./\.\./generated/models/([^.]+)\.(freezed|g)\.dart';",),
       (match) {
         modified = true;
         return "part '../../../generated/features/studio_business/models/${match.group(1)}.${match.group(2)}.dart';";
@@ -59,7 +59,7 @@ Future<void> updateGeneratedPartOfHeaders() async {
   print('Updating generated files part of headers...');
 
   final result = await Process.run('find',
-      ['lib/generated/features/studio_business/models', '-name', '*.dart']);
+      ['lib/generated/features/studio_business/models', '-name', '*.dart'],);
   final files = result.stdout.toString().trim().split('\n');
 
   for (final filePath in files) {
@@ -68,8 +68,8 @@ Future<void> updateGeneratedPartOfHeaders() async {
     final file = File(filePath);
     if (!await file.exists()) continue;
 
-    String content = await file.readAsString();
-    bool modified = false;
+    var content = await file.readAsString();
+    var modified = false;
 
     // Extract the model name from the file path
     final fileName = filePath.split('/').last;
@@ -77,7 +77,7 @@ Future<void> updateGeneratedPartOfHeaders() async {
 
     // Update part of header to use package path
     content = content.replaceAllMapped(
-      RegExp(r"part of '[^']*';"),
+      RegExp("part of '[^']*';"),
       (match) {
         modified = true;
         return "part of 'package:appoint/features/studio_business/models/$modelName.dart';";

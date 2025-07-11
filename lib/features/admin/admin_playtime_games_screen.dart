@@ -1,20 +1,18 @@
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/features/playtime/playtime_admin_notifier.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/models/playtime_background.dart';
+import 'package:appoint/models/playtime_game.dart';
+import 'package:appoint/providers/playtime_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/config/theme.dart';
-import 'package:appoint/providers/playtime_provider.dart';
-import 'package:appoint/models/playtime_game.dart';
-import 'package:appoint/models/playtime_background.dart';
-import 'package:appoint/features/playtime/playtime_admin_notifier.dart';
 
 class AdminPlaytimeGamesScreen extends ConsumerWidget {
   const AdminPlaytimeGamesScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    return DefaultTabController(
+  Widget build(BuildContext context, final WidgetRef ref) => DefaultTabController(
       length: 3,
       child: Scaffold(
         appBar: AppBar(
@@ -40,26 +38,25 @@ class AdminPlaytimeGamesScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 }
 
 class _GamesTab extends ConsumerWidget {
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final l10n = AppLocalizations.of(context)!;
+  Widget build(BuildContext context, final WidgetRef ref) {
+    l10n = AppLocalizations.of(context)!;
 
     return Consumer(
-      builder: (final context, final ref, final child) {
-        final gamesAsync = ref.watch(allGamesProvider);
+      builder: (context, final ref, final child) {
+        gamesAsync = ref.watch(allGamesProvider);
 
         return gamesAsync.when(
-          data: (final games) {
+          data: (games) {
             final pendingGames =
-                games.where((final g) => g.status == 'pending').toList();
+                games.where((g) => g.status == 'pending').toList();
             final approvedGames =
-                games.where((final g) => g.status == 'approved').toList();
+                games.where((g) => g.status == 'approved').toList();
             final rejectedGames =
-                games.where((final g) => g.status == 'rejected').toList();
+                games.where((g) => g.status == 'rejected').toList();
 
             return SingleChildScrollView(
               padding: const EdgeInsets.all(16),
@@ -70,30 +67,30 @@ class _GamesTab extends ConsumerWidget {
                   if (pendingGames.isNotEmpty) ...[
                     _buildSectionHeader(
                         'Pending Approval (${pendingGames.length})',
-                        Colors.orange),
+                        Colors.orange,),
                     const SizedBox(height: 12),
                     ...pendingGames.map(
-                        (final game) => _buildGameCard(context, game, ref)),
+                        (game) => _buildGameCard(context, game, ref),),
                     const SizedBox(height: 24),
                   ],
 
                   // Approved Games
                   if (approvedGames.isNotEmpty) ...[
                     _buildSectionHeader(
-                        'Approved (${approvedGames.length})', Colors.green),
+                        'Approved (${approvedGames.length})', Colors.green,),
                     const SizedBox(height: 12),
                     ...approvedGames.map(
-                        (final game) => _buildGameCard(context, game, ref)),
+                        (game) => _buildGameCard(context, game, ref),),
                     const SizedBox(height: 24),
                   ],
 
                   // Rejected Games
                   if (rejectedGames.isNotEmpty) ...[
                     _buildSectionHeader(
-                        'Rejected (${rejectedGames.length})', Colors.red),
+                        'Rejected (${rejectedGames.length})', Colors.red,),
                     const SizedBox(height: 12),
                     ...rejectedGames.map(
-                        (final game) => _buildGameCard(context, game, ref)),
+                        (game) => _buildGameCard(context, game, ref),),
                   ],
 
                   // Empty State
@@ -105,15 +102,14 @@ class _GamesTab extends ConsumerWidget {
             );
           },
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (final error, final stack) =>
+          error: (error, final stack) =>
               Center(child: Text('Error: $error')),
         );
       },
     );
   }
 
-  Widget _buildSectionHeader(final String title, final Color color) {
-    return Row(
+  Widget _buildSectionHeader(String title, final Color color) => Row(
       children: [
         Container(
           width: 4,
@@ -134,11 +130,9 @@ class _GamesTab extends ConsumerWidget {
         ),
       ],
     );
-  }
 
   Widget _buildGameCard(final BuildContext context, final PlaytimeGame game,
-      final WidgetRef ref) {
-    return Card(
+      WidgetRef ref,) => Card(
       margin: const EdgeInsets.only(bottom: 16),
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -151,8 +145,7 @@ class _GamesTab extends ConsumerWidget {
               children: [
                 CircleAvatar(
                   radius: 25,
-                  backgroundImage: null,
-                  onBackgroundImageError: (final _, final __) {},
+                  onBackgroundImageError: (_, final __) {},
                   child: const Icon(Icons.games, size: 25),
                 ),
                 const SizedBox(width: 16),
@@ -191,7 +184,7 @@ class _GamesTab extends ConsumerWidget {
                           ),
                           const SizedBox(width: 16),
                           Icon(Icons.access_time,
-                              size: 16, color: Colors.grey[600]),
+                              size: 16, color: Colors.grey[600],),
                           const SizedBox(width: 4),
                           Text(
                             '${game.createdAt?.day}/${game.createdAt?.month}/${game.createdAt?.year}',
@@ -327,10 +320,9 @@ class _GamesTab extends ConsumerWidget {
         ),
       ),
     );
-  }
 
   void _approveGame(
-      final BuildContext context, final String gameId, final WidgetRef ref) {
+      BuildContext context, final String gameId, final WidgetRef ref,) {
     PlaytimeAdminNotifier.approveGame(gameId);
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -341,7 +333,7 @@ class _GamesTab extends ConsumerWidget {
   }
 
   void _rejectGame(
-      final BuildContext context, final String gameId, final WidgetRef ref) {
+      BuildContext context, final String gameId, final WidgetRef ref,) {
     PlaytimeAdminNotifier.rejectGame(gameId);
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -352,13 +344,13 @@ class _GamesTab extends ConsumerWidget {
   }
 
   void _deleteGame(
-      final BuildContext context, final String gameId, final WidgetRef ref) {
+      BuildContext context, final String gameId, final WidgetRef ref,) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Delete Game'),
         content: const Text(
-            'Are you sure you want to delete this game? This action cannot be undone.'),
+            'Are you sure you want to delete this game? This action cannot be undone.',),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
@@ -383,13 +375,12 @@ class _GamesTab extends ConsumerWidget {
     );
   }
 
-  void _viewGameDetails(final BuildContext context, final PlaytimeGame game) {
+  void _viewGameDetails(BuildContext context, final PlaytimeGame game) {
     // Navigate to game details screen
     context.push('/admin/playtime/game/${game.id}');
   }
 
-  Widget _buildEmptyState(final AppLocalizations l10n, final String message) {
-    return Center(
+  Widget _buildEmptyState(AppLocalizations l10n, final String message) => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -410,20 +401,19 @@ class _GamesTab extends ConsumerWidget {
         ],
       ),
     );
-  }
 }
 
 class _BackgroundsTab extends ConsumerWidget {
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final l10n = AppLocalizations.of(context)!;
+  Widget build(BuildContext context, final WidgetRef ref) {
+    l10n = AppLocalizations.of(context)!;
 
     return Consumer(
-      builder: (final context, final ref, final child) {
-        final backgroundsAsync = ref.watch(allBackgroundsProvider);
+      builder: (context, final ref, final child) {
+        backgroundsAsync = ref.watch(allBackgroundsProvider);
 
         return backgroundsAsync.when(
-          data: (final backgrounds) {
+          data: (backgrounds) {
             // Since simplified model doesn't have status, show all backgrounds
             return SingleChildScrollView(
               padding: const EdgeInsets.all(16),
@@ -433,10 +423,10 @@ class _BackgroundsTab extends ConsumerWidget {
                   // All Backgrounds
                   if (backgrounds.isNotEmpty) ...[
                     _buildSectionHeader(
-                        'All Backgrounds (${backgrounds.length})', Colors.blue),
+                        'All Backgrounds (${backgrounds.length})', Colors.blue,),
                     const SizedBox(height: 12),
                     ...backgrounds.map(
-                        (final bg) => _buildBackgroundCard(context, bg, ref)),
+                        (bg) => _buildBackgroundCard(context, bg, ref),),
                   ],
 
                   // Empty State
@@ -448,15 +438,14 @@ class _BackgroundsTab extends ConsumerWidget {
             );
           },
           loading: () => const Center(child: CircularProgressIndicator()),
-          error: (final error, final stack) =>
+          error: (error, final stack) =>
               Center(child: Text('Error: $error')),
         );
       },
     );
   }
 
-  Widget _buildSectionHeader(final String title, final Color color) {
-    return Row(
+  Widget _buildSectionHeader(String title, final Color color) => Row(
       children: [
         Container(
           width: 4,
@@ -477,11 +466,9 @@ class _BackgroundsTab extends ConsumerWidget {
         ),
       ],
     );
-  }
 
   Widget _buildBackgroundCard(final BuildContext context,
-      final PlaytimeBackground background, final WidgetRef ref) {
-    return Card(
+      PlaytimeBackground background, final WidgetRef ref,) => Card(
       margin: const EdgeInsets.only(bottom: 12),
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -505,10 +492,8 @@ class _BackgroundsTab extends ConsumerWidget {
                       background.imageUrl,
                       fit: BoxFit.cover,
                       errorBuilder:
-                          (final context, final error, final stackTrace) {
-                        return const Icon(Icons.image,
-                            color: Colors.grey, size: 40);
-                      },
+                          (context, final error, final stackTrace) => const Icon(Icons.image,
+                            color: Colors.grey, size: 40,),
                     ),
                   ),
                 ),
@@ -578,22 +563,21 @@ class _BackgroundsTab extends ConsumerWidget {
         ),
       ),
     );
-  }
 
   void _viewBackgroundDetails(
-      final BuildContext context, final PlaytimeBackground background) {
+      BuildContext context, final PlaytimeBackground background,) {
     // Navigate to background details screen
     context.push('/admin/playtime/background/${background.id}');
   }
 
   void _deleteBackground(final BuildContext context, final String backgroundId,
-      final WidgetRef ref) {
+      WidgetRef ref,) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Delete Background'),
         content: const Text(
-            'Are you sure you want to delete this background? This action cannot be undone.'),
+            'Are you sure you want to delete this background? This action cannot be undone.',),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
@@ -602,7 +586,7 @@ class _BackgroundsTab extends ConsumerWidget {
           ElevatedButton(
             onPressed: () {
               PlaytimeAdminNotifier.deleteGame(
-                  backgroundId); // Reuse deleteGame for now
+                  backgroundId,); // Reuse deleteGame for now
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
@@ -619,8 +603,7 @@ class _BackgroundsTab extends ConsumerWidget {
     );
   }
 
-  Widget _buildEmptyState(final AppLocalizations l10n, final String message) {
-    return Center(
+  Widget _buildEmptyState(AppLocalizations l10n, final String message) => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -641,13 +624,11 @@ class _BackgroundsTab extends ConsumerWidget {
         ],
       ),
     );
-  }
 }
 
 class _SessionsTab extends ConsumerWidget {
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    return Center(
+  Widget build(BuildContext context, final WidgetRef ref) => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -668,5 +649,4 @@ class _SessionsTab extends ConsumerWidget {
         ],
       ),
     );
-  }
 }

@@ -1,8 +1,8 @@
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:appoint/l10n/app_localizations.dart';
 
 enum ErrorSeverity {
   low,
@@ -21,6 +21,13 @@ enum ErrorType {
 }
 
 class AppError {
+
+  AppError({
+    required this.message,
+    required this.type, required this.severity, this.code,
+    this.stackTrace,
+    this.context,
+  });
   final String message;
   final String? code;
   final ErrorType type;
@@ -28,30 +35,19 @@ class AppError {
   final StackTrace? stackTrace;
   final Map<String, dynamic>? context;
 
-  AppError({
-    required this.message,
-    this.code,
-    required this.type,
-    required this.severity,
-    this.stackTrace,
-    this.context,
-  });
-
   @override
-  String toString() {
-    return 'AppError: $message (${type.name}, ${severity.name})';
-  }
+  String toString() => 'AppError: $message (${type.name}, ${severity.name})';
 }
 
 class ErrorHandlingService {
-  static final ErrorHandlingService _instance =
-      ErrorHandlingService._internal();
   factory ErrorHandlingService() => _instance;
   ErrorHandlingService._internal();
+  static final ErrorHandlingService _instance =
+      ErrorHandlingService._internal();
 
   /// Handle and log errors
   Future<void> handleError(
-    final dynamic error,
+    final error,
     final StackTrace? stackTrace, {
     final ErrorType type = ErrorType.unknown,
     final ErrorSeverity severity = ErrorSeverity.medium,
@@ -67,14 +63,14 @@ class ErrorHandlingService {
 
     // Log to console in debug mode
     if (kDebugMode) {
-      // Removed debug print: print('🚨 Error: ${appError.message}');
-      // Removed debug print: print('Type: ${appError.type.name}');
-      // Removed debug print: print('Severity: ${appError.severity.name}');
+      // Removed debug print: debugPrint('🚨 Error: ${appError.message}');
+      // Removed debug print: debugPrint('Type: ${appError.type.name}');
+      // Removed debug print: debugPrint('Severity: ${appError.severity.name}');
       if (context != null) {
-        // Removed debug print: print('Context: $context');
+        // Removed debug print: debugPrint('Context: $context');
       }
       if (stackTrace != null) {
-        // Removed debug print: print('StackTrace: $stackTrace');
+        // Removed debug print: debugPrint('StackTrace: $stackTrace');
       }
     }
 
@@ -85,7 +81,7 @@ class ErrorHandlingService {
         stackTrace,
         reason: appError.message,
         information: context?.entries
-                .map((final e) => '${e.key}: ${e.value}')
+                .map((e) => '${e.key}: ${e.value}')
                 .toList() ??
             [],
       );
@@ -98,9 +94,9 @@ class ErrorHandlingService {
   }
 
   /// Handle critical errors
-  Future<void> _handleCriticalError(final AppError error) async {
+  Future<void> _handleCriticalError(AppError error) async {
     // Log critical error
-    // Removed debug print: print('🚨 CRITICAL ERROR: ${error.message}');
+    // Removed debug print: debugPrint('🚨 CRITICAL ERROR: ${error.message}');
 
     // In a real app, you might:
     // - Show a critical error screen
@@ -111,19 +107,18 @@ class ErrorHandlingService {
 
   /// Handle network errors
   Future<void> handleNetworkError(
-      final dynamic error, final StackTrace? stackTrace) async {
+      error, final StackTrace? stackTrace,) async {
     await handleError(
       error,
       stackTrace,
       type: ErrorType.network,
-      severity: ErrorSeverity.medium,
       context: {'operation': 'network_request'},
     );
   }
 
   /// Handle authentication errors
   Future<void> handleAuthError(
-      final dynamic error, final StackTrace? stackTrace) async {
+      error, final StackTrace? stackTrace,) async {
     await handleError(
       error,
       stackTrace,
@@ -135,7 +130,7 @@ class ErrorHandlingService {
 
   /// Handle validation errors
   Future<void> handleValidationError(
-      final dynamic error, final StackTrace? stackTrace) async {
+      error, final StackTrace? stackTrace,) async {
     await handleError(
       error,
       stackTrace,
@@ -147,7 +142,7 @@ class ErrorHandlingService {
 
   /// Handle database errors
   Future<void> handleDatabaseError(
-      final dynamic error, final StackTrace? stackTrace) async {
+      error, final StackTrace? stackTrace,) async {
     await handleError(
       error,
       stackTrace,
@@ -159,18 +154,17 @@ class ErrorHandlingService {
 
   /// Handle file errors
   Future<void> handleFileError(
-      final dynamic error, final StackTrace? stackTrace) async {
+      error, final StackTrace? stackTrace,) async {
     await handleError(
       error,
       stackTrace,
       type: ErrorType.file,
-      severity: ErrorSeverity.medium,
       context: {'operation': 'file_operation'},
     );
   }
 
   /// Get user-friendly error message
-  String getUserFriendlyMessage(final AppError error) {
+  String getUserFriendlyMessage(AppError error) {
     switch (error.type) {
       case ErrorType.network:
         return 'Connection error. Please check your internet connection and try again.';
@@ -188,12 +182,10 @@ class ErrorHandlingService {
   }
 
   /// Check if error is recoverable
-  bool isRecoverable(final AppError error) {
-    return error.severity != ErrorSeverity.critical;
-  }
+  bool isRecoverable(AppError error) => error.severity != ErrorSeverity.critical;
 
   /// Get error recovery suggestion
-  String getRecoverySuggestion(final AppError error) {
+  String getRecoverySuggestion(AppError error) {
     switch (error.type) {
       case ErrorType.network:
         return 'Try checking your internet connection and restarting the app.';
@@ -212,7 +204,7 @@ class ErrorHandlingService {
 
   /// Get localized Firebase Auth error message
   String getLocalizedFirebaseAuthError(
-      FirebaseAuthException e, AppLocalizations l10n) {
+      FirebaseAuthException e, AppLocalizations l10n,) {
     switch (e.code) {
       case 'user-not-found':
         return l10n.authErrorUserNotFound;
@@ -366,32 +358,26 @@ class ErrorHandlingService {
   }
 
   /// Check if Firebase Auth error is a social account conflict
-  bool isSocialAccountConflict(FirebaseAuthException e) {
-    return e.code == 'account-exists-with-different-credential' ||
+  bool isSocialAccountConflict(FirebaseAuthException e) => e.code == 'account-exists-with-different-credential' ||
         e.code == 'credential-already-in-use';
-  }
 }
 
 // Riverpod providers
 final errorHandlingServiceProvider =
-    Provider<ErrorHandlingService>((final ref) {
-  return ErrorHandlingService();
-});
+    Provider<ErrorHandlingService>((ref) => ErrorHandlingService());
 
-final errorStateProvider = StateProvider<AppError?>((final ref) {
-  return null;
-});
+errorStateProvider = StateProvider<AppError?>((final ref) => null);
 
 // Error handling extension
 extension ErrorHandlingExtension on WidgetRef {
   Future<void> handleError(
-    final dynamic error,
+    final error,
     final StackTrace? stackTrace, {
     final ErrorType type = ErrorType.unknown,
     final ErrorSeverity severity = ErrorSeverity.medium,
     final Map<String, dynamic>? context,
   }) async {
-    final service = read(errorHandlingServiceProvider);
+    service = read(errorHandlingServiceProvider);
     await service.handleError(
       error,
       stackTrace,

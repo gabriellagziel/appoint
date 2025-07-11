@@ -1,21 +1,19 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/config/theme.dart';
+import 'package:flutter/material.dart';
 
 class EmptyState extends StatelessWidget {
+
+  const EmptyState({
+    required this.title, super.key,
+    this.icon = Icons.inbox,
+    this.description,
+  });
   final String title;
   final IconData icon;
   final String? description;
 
-  const EmptyState({
-    super.key,
-    required this.title,
-    this.icon = Icons.inbox,
-    this.description,
-  });
-
   @override
-  Widget build(final BuildContext context) {
-    return Center(
+  Widget build(BuildContext context) => Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -33,5 +31,4 @@ class EmptyState extends StatelessWidget {
         ],
       ),
     );
-  }
 }

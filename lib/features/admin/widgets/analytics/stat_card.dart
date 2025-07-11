@@ -1,24 +1,19 @@
 import 'package:flutter/material.dart';
 
 class StatCard extends StatelessWidget {
+
+  const StatCard({
+    required this.title, required this.value, required this.icon, required this.color, super.key,
+    this.subtitle,
+  });
   final String title;
   final String value;
   final IconData icon;
   final Color color;
   final String? subtitle;
 
-  const StatCard({
-    super.key,
-    required this.title,
-    required this.value,
-    required this.icon,
-    required this.color,
-    this.subtitle,
-  });
-
   @override
-  Widget build(BuildContext context) {
-    return Card(
+  Widget build(BuildContext context) => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -63,5 +58,4 @@ class StatCard extends StatelessWidget {
         ),
       ),
     );
-  }
 }

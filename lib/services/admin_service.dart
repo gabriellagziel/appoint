@@ -1,31 +1,30 @@
+import 'package:appoint/models/admin_broadcast_message.dart';
+import 'package:appoint/models/admin_dashboard_stats.dart';
+import 'package:appoint/models/admin_user.dart';
+import 'package:appoint/models/analytics.dart';
+import 'package:appoint/models/organization.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-import 'package:appoint/models/admin_user.dart';
-import 'package:appoint/models/organization.dart';
-import 'package:appoint/models/analytics.dart';
-import 'package:appoint/models/admin_dashboard_stats.dart';
-import 'package:appoint/models/admin_broadcast_message.dart';
-
 class AdminService {
-  final FirebaseFirestore _firestore;
-  final FirebaseAuth _auth;
 
   AdminService({
     final FirebaseFirestore? firestore,
     final FirebaseAuth? auth,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
+  final FirebaseFirestore _firestore;
+  final FirebaseAuth _auth;
 
   // User Management
   Future<List<AdminUser>> fetchAllUsers() async {
-    final snap = await _firestore.collection('users').get();
+    snap = await _firestore.collection('users').get();
     return snap.docs
-        .map((final doc) => AdminUser.fromJson(doc.data()))
+        .map((doc) => AdminUser.fromJson(doc.data()))
         .toList();
   }
 
-  Future<void> updateUserRole(final String uid, final String role) async {
+  Future<void> updateUserRole(String uid, final String role) async {
     await _firestore.collection('users').doc(uid).update({'role': role});
     await _logAdminActivity(
       action: 'update_user_role',
@@ -37,25 +36,25 @@ class AdminService {
 
   // Organization Management
   Future<List<Organization>> fetchOrganizations() async {
-    final snap = await _firestore.collection('organizations').get();
+    snap = await _firestore.collection('organizations').get();
     return snap.docs
-        .map((final doc) => Organization.fromJson(doc.data()))
+        .map((doc) => Organization.fromJson(doc.data()))
         .toList();
   }
 
   // Analytics
   Future<Analytics> fetchAnalytics() async {
-    final doc = await _firestore.collection('analytics').doc('summary').get();
+    doc = await _firestore.collection('analytics').doc('summary').get();
     return Analytics.fromJson(doc.data() ?? {});
   }
 
   // Admin Dashboard Stats
   Future<AdminDashboardStats> fetchAdminDashboardStats() async {
     // Fetch users stats
-    final usersSnap = await _firestore.collection('users').get();
+    usersSnap = await _firestore.collection('users').get();
     final totalUsers = usersSnap.size;
-    final activeUsers = usersSnap.docs.where((final doc) {
-      final lastActive = doc.data()['lastActive'] as Timestamp?;
+    activeUsers = usersSnap.docs.where((final doc) {
+      lastActive = doc.data()['lastActive'] as Timestamp?;
       if (lastActive == null) return false;
       final daysSinceActive =
           DateTime.now().difference(lastActive.toDate()).inDays;
@@ -63,14 +62,14 @@ class AdminService {
     }).length;
 
     // Fetch bookings stats
-    final bookingsSnap = await _firestore.collection('appointments').get();
+    bookingsSnap = await _firestore.collection('appointments').get();
     final totalBookings = bookingsSnap.size;
-    final completedBookings = bookingsSnap.docs.where((final doc) {
-      final status = doc.data()['status'] as String?;
+    completedBookings = bookingsSnap.docs.where((final doc) {
+      status = doc.data()['status'] as String?;
       return status == 'completed';
     }).length;
-    final pendingBookings = bookingsSnap.docs.where((final doc) {
-      final status = doc.data()['status'] as String?;
+    pendingBookings = bookingsSnap.docs.where((final doc) {
+      status = doc.data()['status'] as String?;
       return status == 'pending';
     }).length;
 
@@ -85,10 +84,10 @@ class AdminService {
         (paymentsDoc.data()?['subscriptionRevenue'] as num?)?.toDouble() ?? 0.0;
 
     // Fetch organizations stats
-    final orgsSnap = await _firestore.collection('organizations').get();
+    orgsSnap = await _firestore.collection('organizations').get();
     final totalOrganizations = orgsSnap.size;
-    final activeOrganizations = orgsSnap.docs.where((final doc) {
-      final lastActive = doc.data()['lastActive'] as Timestamp?;
+    activeOrganizations = orgsSnap.docs.where((final doc) {
+      lastActive = doc.data()['lastActive'] as Timestamp?;
       if (lastActive == null) return false;
       final daysSinceActive =
           DateTime.now().difference(lastActive.toDate()).inDays;
@@ -101,8 +100,8 @@ class AdminService {
         .where('role', isEqualTo: 'ambassador')
         .get();
     final totalAmbassadors = ambassadorsSnap.size;
-    final activeAmbassadors = ambassadorsSnap.docs.where((final doc) {
-      final lastActive = doc.data()['lastActive'] as Timestamp?;
+    activeAmbassadors = ambassadorsSnap.docs.where((final doc) {
+      lastActive = doc.data()['lastActive'] as Timestamp?;
       if (lastActive == null) return false;
       final daysSinceActive =
           DateTime.now().difference(lastActive.toDate()).inDays;
@@ -114,11 +113,11 @@ class AdminService {
         .collection('error_logs')
         .where('timestamp',
             isGreaterThan: Timestamp.fromDate(
-                DateTime.now().subtract(const Duration(days: 30))))
+                DateTime.now().subtract(const Duration(days: 30)),),)
         .get();
     final totalErrors = errorsSnap.size;
-    final criticalErrors = errorsSnap.docs.where((final doc) {
-      final severity = doc.data()['severity'] as String?;
+    criticalErrors = errorsSnap.docs.where((final doc) {
+      severity = doc.data()['severity'] as String?;
       return severity == 'critical';
     }).length;
 
@@ -180,15 +179,15 @@ class AdminService {
       query = query.where('isResolved', isEqualTo: isResolved);
     }
 
-    final snap = await query.get();
-    return snap.docs.map((final doc) {
-      final data = doc.data() as Map<String, dynamic>;
+    snap = await query.get();
+    return snap.docs.map((doc) {
+      data = doc.data()! as Map<String, dynamic>;
       return AdminErrorLog.fromJson(data);
     }).toList();
   }
 
   Future<void> resolveError(
-      final String errorId, final String resolutionNotes) async {
+      String errorId, final String resolutionNotes,) async {
     final user = _auth.currentUser;
     await _firestore.collection('error_logs').doc(errorId).update({
       'isResolved': true,
@@ -224,30 +223,30 @@ class AdminService {
       query = query.where('action', isEqualTo: action);
     }
 
-    final snap = await query.get();
-    return snap.docs.map((final doc) {
-      final data = doc.data() as Map<String, dynamic>;
+    snap = await query.get();
+    return snap.docs.map((doc) {
+      data = doc.data()! as Map<String, dynamic>;
       return AdminActivityLog.fromJson(data);
     }).toList();
   }
 
   // Ad Revenue Stats
   Future<AdRevenueStats> fetchAdRevenueStats() async {
-    final doc = await _firestore.collection('ad_revenue').doc('stats').get();
+    doc = await _firestore.collection('ad_revenue').doc('stats').get();
     if (doc.exists && doc.data() != null) {
-      final data = doc.data() as Map<String, dynamic>;
+      data = doc.data()!;
       return AdRevenueStats.fromJson(data);
     }
 
     // Return default stats if document doesn't exist
     return AdRevenueStats(
-      totalRevenue: 0.0,
-      monthlyRevenue: 0.0,
-      weeklyRevenue: 0.0,
-      dailyRevenue: 0.0,
+      totalRevenue: 0,
+      monthlyRevenue: 0,
+      weeklyRevenue: 0,
+      dailyRevenue: 0,
       totalImpressions: 0,
       totalClicks: 0,
-      clickThroughRate: 0.0,
+      clickThroughRate: 0,
       revenueByAdType: {},
       revenueByUserTier: {},
       revenueByCountry: {},
@@ -260,7 +259,7 @@ class AdminService {
     final doc =
         await _firestore.collection('settings').doc('monetization').get();
     if (doc.exists && doc.data() != null) {
-      final data = doc.data() as Map<String, dynamic>;
+      data = doc.data()!;
       return MonetizationSettings.fromJson(data);
     }
 
@@ -270,10 +269,10 @@ class AdminService {
       adsEnabledForChildren: false,
       adsEnabledForStudioUsers: true,
       adsEnabledForPremiumUsers: false,
-      adFrequencyForFreeUsers: 1.0,
-      adFrequencyForChildren: 0.0,
+      adFrequencyForFreeUsers: 1,
+      adFrequencyForChildren: 0,
       adFrequencyForStudioUsers: 0.5,
-      adFrequencyForPremiumUsers: 0.0,
+      adFrequencyForPremiumUsers: 0,
       enabledAdTypes: ['interstitial', 'banner'],
       adTypeSettings: {},
       lastUpdated: DateTime.now(),
@@ -281,7 +280,7 @@ class AdminService {
   }
 
   Future<void> updateMonetizationSettings(
-      final MonetizationSettings settings) async {
+      MonetizationSettings settings,) async {
     await _firestore
         .collection('settings')
         .doc('monetization')
@@ -301,14 +300,14 @@ class AdminService {
         .collection('admin_broadcasts')
         .orderBy('createdAt', descending: true)
         .get();
-    return snap.docs.map((final doc) {
-      final data = doc.data();
+    return snap.docs.map((doc) {
+      data = doc.data();
       return AdminBroadcastMessage.fromJson(data);
     }).toList();
   }
 
   Future<void> createBroadcastMessage(
-      final AdminBroadcastMessage message) async {
+      AdminBroadcastMessage message,) async {
     await _firestore.collection('admin_broadcasts').add(message.toJson());
 
     await _logAdminActivity(
@@ -351,14 +350,14 @@ class AdminService {
 
   // Export functionality
   Future<String> exportDataAsCSV(final String dataType,
-      {final Map<String, dynamic>? filters}) async {
+      {Map<String, dynamic>? filters,}) async {
     // This would implement CSV export logic
     // For now, return a placeholder
     return 'CSV export for $dataType';
   }
 
   Future<String> exportDataAsPDF(final String dataType,
-      {final Map<String, dynamic>? filters}) async {
+      {Map<String, dynamic>? filters,}) async {
     // This would implement PDF export logic
     // For now, return a placeholder
     return 'PDF export for $dataType';

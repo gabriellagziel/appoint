@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/studio_profile.freezed.dart';
-part '../generated/models/studio_profile.g.dart';
+part 'studio_profile.freezed.dart';
+part 'studio_profile.g.dart';
 
 @freezed
 class StudioProfile with _$StudioProfile {
@@ -19,6 +19,6 @@ class StudioProfile with _$StudioProfile {
     final DateTime? updatedAt,
   }) = _StudioProfile;
 
-  factory StudioProfile.fromJson(final Map<String, dynamic> json) =>
+  factory StudioProfile.fromJson(Map<String, dynamic> json) =>
       _$StudioProfileFromJson(json);
 }

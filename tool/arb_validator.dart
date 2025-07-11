@@ -1,6 +1,6 @@
 // ignore_for_file: avoid_print
-import 'dart:io';
 import 'dart:convert';
+import 'dart:io';
 
 void main() {
   print('Validating ARB files...');
@@ -28,7 +28,7 @@ void main() {
   print('Base language file: ${baseFile.path}');
   print('Base keys count: ${baseKeys.length}');
 
-  bool hasErrors = false;
+  var hasErrors = false;
 
   for (final file in arbFiles) {
     if (file.path == baseFile.path) continue;

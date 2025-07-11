@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/booking_model.freezed.dart';
-part '../generated/models/booking_model.g.dart';
+part 'booking_model.freezed.dart';
+part 'booking_model.g.dart';
 
 @freezed
 class BookingModel with _$BookingModel {
@@ -14,6 +14,6 @@ class BookingModel with _$BookingModel {
     required final DateTime endTime,
   }) = _BookingModel;
 
-  factory BookingModel.fromJson(final Map<String, dynamic> json) =>
+  factory BookingModel.fromJson(Map<String, dynamic> json) =>
       _$BookingModelFromJson(json);
 }

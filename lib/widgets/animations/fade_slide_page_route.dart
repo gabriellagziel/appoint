@@ -6,17 +6,17 @@ class FadeSlidePageRoute<T> extends PageRouteBuilder<T> {
     required final Widget page,
     this.direction = AxisDirection.right,
     super.settings,
-    final Duration duration = const Duration(milliseconds: 300),
+    Duration duration = const Duration(milliseconds: 300),
   }) : super(
-          pageBuilder: (final _, final __, final ___) => page,
+          pageBuilder: (_, final __, final ___) => page,
           transitionDuration: duration,
           transitionsBuilder: (final context, final animation,
-              final secondaryAnimation, final child) {
+              secondaryAnimation, final child,) {
             final offsetAnimation = Tween<Offset>(
               begin: _offsetForDirection(direction),
               end: Offset.zero,
             ).animate(
-                CurvedAnimation(parent: animation, curve: Curves.easeOut));
+                CurvedAnimation(parent: animation, curve: Curves.easeOut),);
 
             return SlideTransition(
               position: offsetAnimation,
@@ -30,7 +30,7 @@ class FadeSlidePageRoute<T> extends PageRouteBuilder<T> {
 
   final AxisDirection direction;
 
-  static Offset _offsetForDirection(final AxisDirection direction) {
+  static Offset _offsetForDirection(AxisDirection direction) {
     switch (direction) {
       case AxisDirection.up:
         return const Offset(0, 0.1);
