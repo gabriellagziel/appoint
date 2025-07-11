@@ -1,8 +1,8 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:appoint/utils/datetime_converter.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/staff_availability.freezed.dart';
-part '../generated/models/staff_availability.g.dart';
+part 'staff_availability.freezed.dart';
+part 'staff_availability.g.dart';
 
 @freezed
 class StaffAvailability with _$StaffAvailability {
@@ -12,6 +12,6 @@ class StaffAvailability with _$StaffAvailability {
     final List<String>? availableSlots,
   }) = _StaffAvailability;
 
-  factory StaffAvailability.fromJson(final Map<String, dynamic> json) =>
+  factory StaffAvailability.fromJson(Map<String, dynamic> json) =>
       _$StaffAvailabilityFromJson(json);
 }

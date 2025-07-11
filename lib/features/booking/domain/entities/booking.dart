@@ -1,9 +1,10 @@
 import 'dart:core';
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:appoint/utils/datetime_converter.dart';
 
-part '../../../../generated/features/booking/domain/entities/booking.freezed.dart';
-part '../../../../generated/features/booking/domain/entities/booking.g.dart';
+import 'package:appoint/utils/datetime_converter.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'booking.freezed.dart';
+part 'booking.g.dart';
 
 @freezed
 class Booking with _$Booking {
@@ -13,6 +14,6 @@ class Booking with _$Booking {
     @DateTimeConverter() required final DateTime endTime,
   }) = _Booking;
 
-  factory Booking.fromJson(final Map<String, dynamic> json) =>
+  factory Booking.fromJson(Map<String, dynamic> json) =>
       _$BookingFromJson(json);
 }

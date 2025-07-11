@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 
 /// Reusable icon button for retry actions.
 class RetryButton extends StatelessWidget {
+
+  const RetryButton({required this.onPressed, super.key});
   /// Callback when the user taps the button.
   final VoidCallback onPressed;
 
-  const RetryButton({super.key, required this.onPressed});
-
   @override
-  Widget build(final BuildContext context) {
-    return Column(
+  Widget build(BuildContext context) => Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         IconButton(
@@ -20,5 +19,4 @@ class RetryButton extends StatelessWidget {
         const Text('Try Again'),
       ],
     );
-  }
 }

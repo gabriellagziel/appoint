@@ -1,20 +1,18 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/models/game.dart';
+import 'package:flutter/material.dart';
 
 class GameCard extends StatelessWidget {
+
+  const GameCard({
+    required this.game, super.key,
+    this.onTap,
+  });
   final Game game;
   final VoidCallback? onTap;
 
-  const GameCard({
-    super.key,
-    required this.game,
-    this.onTap,
-  });
-
   @override
-  Widget build(final BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.all(8.0),
+  Widget build(BuildContext context) => Card(
+      margin: const EdgeInsets.all(8),
       child: InkWell(
         onTap: onTap,
         child: Column(
@@ -25,7 +23,7 @@ class GameCard extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: const BorderRadius.vertical(
-                    top: Radius.circular(4.0),
+                    top: Radius.circular(4),
                   ),
                   image: DecorationImage(
                     image: NetworkImage(game.imageUrl),
@@ -35,7 +33,7 @@ class GameCard extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: const EdgeInsets.all(12),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -78,5 +76,4 @@ class GameCard extends StatelessWidget {
         ),
       ),
     );
-  }
 }

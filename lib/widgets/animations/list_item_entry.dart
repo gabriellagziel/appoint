@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 /// Animates a list item when it first appears.
 class ListItemEntry extends StatefulWidget {
   const ListItemEntry({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.duration = const Duration(milliseconds: 300),
     this.delay = Duration.zero,
     this.offset = const Offset(0, 0.1),
@@ -47,15 +46,13 @@ class _ListItemEntryState extends State<ListItemEntry>
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return FadeTransition(
+  Widget build(BuildContext context) => FadeTransition(
       opacity: _controller,
       child: SlideTransition(
         position: _offsetAnimation,
         child: widget.child,
       ),
     );
-  }
 }
 
 /// Example usage inside ListView.builder:

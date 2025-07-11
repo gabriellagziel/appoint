@@ -1,17 +1,16 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:async/async.dart';
-
 import 'package:appoint/models/dashboard_stats.dart';
 import 'package:appoint/models/invite.dart';
+import 'package:async/async.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class DashboardService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<DashboardStats> fetchDashboardStats() async {
-    final appointmentsSnap = await _firestore.collection('appointments').get();
+    appointmentsSnap = await _firestore.collection('appointments').get();
     final totalAppointments = appointmentsSnap.size;
-    final completedAppointments = appointmentsSnap.docs.where((final doc) {
-      final status = doc.data()['status'] as String?;
+    completedAppointments = appointmentsSnap.docs.where((final doc) {
+      status = doc.data()['status'] as String?;
       return status == 'accepted' || status == 'completed';
     }).length;
 
@@ -37,7 +36,7 @@ class DashboardService {
   Stream<DashboardStats> watchDashboardStats() {
     final appointmentsStream =
         _firestore.collection('appointments').snapshots();
-    final invitesStream = _firestore.collection('invites').snapshots();
+    invitesStream = _firestore.collection('invites').snapshots();
     final paymentsStream =
         _firestore.collection('payments').doc('summary').snapshots();
 
@@ -45,23 +44,23 @@ class DashboardService {
       appointmentsStream,
       invitesStream,
       paymentsStream,
-    ]).map((final values) {
-      final QuerySnapshot<Map<String, dynamic>> appointmentsSnapshot =
+    ]).map((values) {
+      final appointmentsSnapshot =
           values[0] as QuerySnapshot<Map<String, dynamic>>;
-      final QuerySnapshot<Map<String, dynamic>> invitesSnapshot =
+      final invitesSnapshot =
           values[1] as QuerySnapshot<Map<String, dynamic>>;
-      final DocumentSnapshot<Map<String, dynamic>> paymentsSnapshot =
+      final paymentsSnapshot =
           values[2] as DocumentSnapshot<Map<String, dynamic>>;
 
       final totalAppointments = appointmentsSnapshot.size;
       final completedAppointments =
-          appointmentsSnapshot.docs.where((final doc) {
-        final status = doc.data()['status'] as String?;
+          appointmentsSnapshot.docs.where((doc) {
+        status = doc.data()['status'] as String?;
         return status == 'accepted' || status == 'completed';
       }).length;
 
-      final pendingInvites = invitesSnapshot.docs.where((final doc) {
-        final status = doc.data()['status'] as String?;
+      pendingInvites = invitesSnapshot.docs.where((final doc) {
+        status = doc.data()['status'] as String?;
         return status == InviteStatus.pending.name;
       }).length;
 

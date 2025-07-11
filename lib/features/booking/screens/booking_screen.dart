@@ -1,15 +1,15 @@
+import 'package:appoint/features/booking/booking_helper.dart';
+import 'package:appoint/features/booking/services/booking_service.dart';
+import 'package:appoint/features/selection/providers/selection_provider.dart';
+import 'package:appoint/models/booking.dart';
+import 'package:appoint/utils/snackbar_extensions.dart';
+import 'package:appoint/widgets/animations/fade_slide_in.dart';
+import 'package:appoint/widgets/animations/tap_scale_feedback.dart';
+import 'package:appoint/widgets/booking_confirmation_sheet.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import 'package:appoint/widgets/bottom_sheet_manager.dart';
-import 'package:appoint/widgets/booking_confirmation_sheet.dart';
-import 'package:appoint/models/booking.dart';
-import 'package:appoint/features/booking/services/booking_service.dart';
-import 'package:appoint/features/booking/booking_helper.dart';
-import 'package:appoint/utils/snackbar_extensions.dart';
-import 'package:appoint/features/selection/providers/selection_provider.dart';
-import 'package:appoint/widgets/animations/tap_scale_feedback.dart';
-import 'package:appoint/widgets/animations/fade_slide_in.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
   const BookingScreen({super.key});
@@ -24,25 +24,25 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
   Future<void> _submitBooking() async {
     setState(() => _isSubmitting = true);
 
-    BookingHelper(ref).submitBooking().then((final _) {
+    BookingHelper(ref).submitBooking().then((_) {
       if (!mounted) return;
       context.showSnackBar('Booking confirmed');
       Navigator.pop(context);
-    }).catchError((final e, final st) {
+    }).catchError((e, final st) {
       // Removed debug print: debugPrint('Error during booking: $e\n$st');
       if (!mounted) return;
       context.showSnackBar('Failed to confirm booking',
-          backgroundColor: Colors.red);
+          backgroundColor: Colors.red,);
     }).whenComplete(() {
       if (mounted) setState(() => _isSubmitting = false);
     });
   }
 
   void _showConfirmationSheet() {
-    final staffId = ref.read(staffSelectionProvider);
-    final serviceName = ref.read(serviceNameProvider) ?? 'Service';
-    final dateTime = ref.read(selectedSlotProvider);
-    final duration = ref.read(serviceDurationProvider);
+    staffId = ref.read(staffSelectionProvider);
+    serviceName = ref.read(serviceNameProvider) ?? 'Service';
+    dateTime = ref.read(selectedSlotProvider);
+    duration = ref.read(serviceDurationProvider);
     if (staffId == null || dateTime == null || duration == null) return;
 
     final summary =
@@ -62,16 +62,16 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final staffId = ref.watch(staffSelectionProvider);
-    final serviceId = ref.watch(serviceSelectionProvider);
-    final dateTime = ref.watch(selectedSlotProvider);
-    final duration = ref.watch(serviceDurationProvider);
+  Widget build(BuildContext context) {
+    staffId = ref.watch(staffSelectionProvider);
+    serviceId = ref.watch(serviceSelectionProvider);
+    dateTime = ref.watch(selectedSlotProvider);
+    duration = ref.watch(serviceDurationProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Book Appointment')),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -86,7 +86,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
             const SizedBox(height: 16),
             Card(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -95,7 +95,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                     Text('Service: ${serviceId ?? "Not selected"}'),
                     const SizedBox(height: 8),
                     Text(
-                        'Date & Time: ${dateTime?.toLocal() ?? "Not selected"}'),
+                        'Date & Time: ${dateTime?.toLocal() ?? "Not selected"}',),
                     const SizedBox(height: 8),
                     Text('Duration: ${duration?.inMinutes ?? 0} minutes'),
                   ],
@@ -131,12 +131,12 @@ class BookingListView extends ConsumerWidget {
   const BookingListView({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final bookingsStream = ref.watch(bookingServiceProvider).getBookings();
+  Widget build(BuildContext context, final WidgetRef ref) {
+    bookingsStream = ref.watch(bookingServiceProvider).getBookings();
 
     return StreamBuilder<List<Booking>>(
       stream: bookingsStream,
-      builder: (final context, final snapshot) {
+      builder: (context, final snapshot) {
         if (snapshot.hasError) {
           return Center(
             child: Text('Error loading bookings: ${snapshot.error}'),
@@ -155,7 +155,7 @@ class BookingListView extends ConsumerWidget {
         return ListView.builder(
           shrinkWrap: true,
           itemCount: bookingsList.length,
-          itemBuilder: (final context, final index) {
+          itemBuilder: (context, final index) {
             final booking = bookingsList[index];
             return FadeSlideIn(
               delay: Duration(milliseconds: 50 * index),

@@ -1,17 +1,17 @@
 import 'dart:core';
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'package:appoint/features/booking/models/booking_request_args.dart';
+import 'package:appoint/models/appointment.dart';
 import 'package:appoint/providers/appointment_provider.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/calendar_provider.dart';
-import 'package:appoint/models/appointment.dart';
 import 'package:appoint/providers/user_subscription_provider.dart';
 import 'package:appoint/services/ad_service.dart';
-import 'package:appoint/widgets/whatsapp_share_button.dart';
-import 'package:appoint/features/booking/models/booking_request_args.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:appoint/services/maps_service.dart';
+import 'package:appoint/widgets/whatsapp_share_button.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class BookingConfirmScreen extends ConsumerStatefulWidget {
   const BookingConfirmScreen({super.key});
@@ -28,15 +28,15 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
   Appointment? _createdAppointment;
 
   Future<void> _maybeShowAd() async {
-    final isPremium = ref.read(userSubscriptionProvider).maybeWhen(
-          data: (final isPremium) => isPremium,
+    isPremium = ref.read(userSubscriptionProvider).maybeWhen(
+          data: (isPremium) => isPremium,
           orElse: () => false,
         );
     if (isPremium) return; // isPremium now includes isAdminFreeAccess
     setState(() => _isLoadingAd = true);
     try {
       await AdService.showInterstitialAd();
-    } catch (_) {
+    } catch (e) {_) {
       // continue even if ad fails
     } finally {
       if (mounted) setState(() => _isLoadingAd = false);
@@ -44,9 +44,9 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     final args =
-        ModalRoute.of(context)!.settings.arguments as BookingRequestArgs;
+        ModalRoute.of(context)!.settings.arguments! as BookingRequestArgs;
     return Scaffold(
       appBar: AppBar(title: const Text('Confirm Booking')),
       body: Stack(
@@ -67,19 +67,19 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                   height: 200,
                   child: GoogleMap(
                     initialCameraPosition: MapsService.initialPosition,
-                    onMapCreated: (final _) {},
+                    onMapCreated: (_) {},
                     myLocationEnabled: true,
                   ),
                 ),
                 SwitchListTile(
                   title: const Text('Sync to Google'),
                   value: _syncGoogle,
-                  onChanged: (final v) => setState(() => _syncGoogle = v),
+                  onChanged: (v) => setState(() => _syncGoogle = v),
                 ),
                 SwitchListTile(
                   title: const Text('Sync to Outlook'),
                   value: _syncOutlook,
-                  onChanged: (final v) => setState(() => _syncOutlook = v),
+                  onChanged: (v) => setState(() => _syncOutlook = v),
                 ),
                 const Spacer(),
                 if (_createdAppointment != null) ...[
@@ -112,7 +112,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                       ? null
                       : () async {
                           await _maybeShowAd();
-                          final user = ref.read(authProvider).currentUser;
+                          user = ref.read(authProvider).currentUser;
                           if (user == null) return;
                           late final Appointment appt;
                           if (args.openCall) {
@@ -149,7 +149,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                                 .syncToOutlook(appt);
                           }
                           if (!mounted) return;
-                          // TODO: Implement notification sending
+                          // TODO(username): Implement notification sending
                           // await ref
                           //     .read(notificationServiceProvider)
                           //     .sendNotificationToUser(
@@ -162,7 +162,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(
                               content: Text(
-                                  'Booking confirmed! You can now share the invitation.'),
+                                  'Booking confirmed! You can now share the invitation.',),
                               backgroundColor: Colors.green,
                             ),
                           );
@@ -179,9 +179,9 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
             ),
           ),
           if (_isLoadingAd)
-            Container(
+            const ColoredBox(
               color: Colors.black45,
-              child: const Center(
+              child: Center(
                 child: Text(
                   'Loading ad... please wait',
                   style: TextStyle(color: Colors.white, fontSize: 16),

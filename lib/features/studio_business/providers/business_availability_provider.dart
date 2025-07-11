@@ -1,6 +1,6 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/studio_business/models/business_availability.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class BusinessAvailabilityNotifier
     extends StateNotifier<List<BusinessAvailability>> {
@@ -15,34 +15,34 @@ class BusinessAvailabilityNotifier
             ),
         ]);
 
-  void toggleOpen(final int weekday, final bool isOpen) {
+  void toggleOpen(int weekday, final bool isOpen) {
     state = [
-      for (final avail in state)
-        if (avail.weekday == weekday) avail.copyWith(isOpen: isOpen) else avail
+      for (avail in state)
+        if (avail.weekday == weekday) avail.copyWith(isOpen: isOpen) else avail,
     ];
   }
 
-  void setHours(final int weekday, final TimeOfDay start, final TimeOfDay end) {
+  void setHours(int weekday, final TimeOfDay start, final TimeOfDay end) {
     state = [
-      for (final avail in state)
+      for (avail in state)
         if (avail.weekday == weekday)
           avail.copyWith(start: start, end: end)
         else
-          avail
+          avail,
     ];
   }
 
   void loadConfiguration() {
-    // TODO: Implement loading configuration from backend
+    // TODO(username): Implement loading configuration from backend
   }
 
   void updateDay(final int weekday,
-      {final bool? isOpen, final TimeOfDay? start, final TimeOfDay? end}) {
-    // TODO: Implement updating a single day's availability
+      {bool? isOpen, final TimeOfDay? start, final TimeOfDay? end,}) {
+    // TODO(username): Implement updating a single day's availability
   }
 }
 
 final businessAvailabilityProvider = StateNotifierProvider<
     BusinessAvailabilityNotifier, List<BusinessAvailability>>(
-  (final ref) => BusinessAvailabilityNotifier(),
+  (ref) => BusinessAvailabilityNotifier(),
 );

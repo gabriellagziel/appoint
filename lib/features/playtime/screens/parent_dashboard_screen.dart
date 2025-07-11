@@ -1,19 +1,18 @@
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/models/playtime_background.dart';
+import 'package:appoint/models/playtime_session.dart';
+import 'package:appoint/providers/playtime_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/config/theme.dart';
-import 'package:appoint/providers/playtime_provider.dart';
-import 'package:appoint/models/playtime_session.dart';
-import 'package:appoint/models/playtime_background.dart';
 
 class ParentDashboardScreen extends ConsumerWidget {
   const ParentDashboardScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final l10n = AppLocalizations.of(context)!;
+  Widget build(BuildContext context, final WidgetRef ref) {
+    l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -35,7 +34,7 @@ class ParentDashboardScreen extends ConsumerWidget {
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -61,8 +60,7 @@ class ParentDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildHeader(final BuildContext context, final AppLocalizations l10n) {
-    return Container(
+  Widget _buildHeader(BuildContext context, final AppLocalizations l10n) => Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: AppTheme.primaryColor,
@@ -104,7 +102,7 @@ class ParentDashboardScreen extends ConsumerWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Manage your child\'s playtime activities',
+                  "Manage your child's playtime activities",
                   style: TextStyle(
                     color: Colors.white.withValues(alpha: 0.9),
                     fontSize: 14,
@@ -116,11 +114,9 @@ class ParentDashboardScreen extends ConsumerWidget {
         ],
       ),
     );
-  }
 
   Widget _buildQuickStats(
-      final BuildContext context, final AppLocalizations l10n) {
-    return Row(
+      BuildContext context, final AppLocalizations l10n,) => Row(
       children: [
         Expanded(
           child: _buildStatCard(
@@ -150,11 +146,9 @@ class ParentDashboardScreen extends ConsumerWidget {
         ),
       ],
     );
-  }
 
   Widget _buildStatCard(final String title, final String value,
-      final IconData icon, final Color color) {
-    return Container(
+      IconData icon, final Color color,) => Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -195,11 +189,9 @@ class ParentDashboardScreen extends ConsumerWidget {
         ],
       ),
     );
-  }
 
   Widget _buildPendingApprovals(
-      final BuildContext context, final AppLocalizations l10n) {
-    return Column(
+      BuildContext context, final AppLocalizations l10n,) => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
@@ -221,47 +213,43 @@ class ParentDashboardScreen extends ConsumerWidget {
         ),
         const SizedBox(height: 12),
         Consumer(
-          builder: (final context, final ref, final child) {
-            final sessionsAsync = ref.watch(pendingSessionsProvider);
-            final backgroundsAsync = ref.watch(pendingBackgroundsProvider);
+          builder: (context, final ref, final child) {
+            sessionsAsync = ref.watch(pendingSessionsProvider);
+            backgroundsAsync = ref.watch(pendingBackgroundsProvider);
 
             return Column(
               children: [
                 // Pending Sessions
                 sessionsAsync.when(
-                  data: (final sessions) {
+                  data: (sessions) {
                     if (sessions.isEmpty) {
                       return const SizedBox.shrink();
                     }
 
                     return Column(
-                      children: sessions.take(2).map((final session) {
-                        return _buildPendingSessionCard(context, session, l10n);
-                      }).toList(),
+                      children: sessions.take(2).map((session) => _buildPendingSessionCard(context, session, l10n)).toList(),
                     );
                   },
                   loading: () =>
                       const Center(child: CircularProgressIndicator()),
-                  error: (final error, final stack) => Text('Error: $error'),
+                  error: (error, final stack) => Text('Error: $error'),
                 ),
 
                 // Pending Backgrounds
                 backgroundsAsync.when(
-                  data: (final backgrounds) {
+                  data: (backgrounds) {
                     if (backgrounds.isEmpty) {
                       return const SizedBox.shrink();
                     }
 
                     return Column(
-                      children: backgrounds.take(2).map((final background) {
-                        return _buildPendingBackgroundCard(
-                            context, background, l10n);
-                      }).toList(),
+                      children: backgrounds.take(2).map((background) => _buildPendingBackgroundCard(
+                            context, background, l10n,),).toList(),
                     );
                   },
                   loading: () =>
                       const Center(child: CircularProgressIndicator()),
-                  error: (final error, final stack) => Text('Error: $error'),
+                  error: (error, final stack) => Text('Error: $error'),
                 ),
 
                 // Empty State
@@ -274,11 +262,9 @@ class ParentDashboardScreen extends ConsumerWidget {
         ),
       ],
     );
-  }
 
   Widget _buildPendingSessionCard(final BuildContext context,
-      final PlaytimeSession session, final AppLocalizations l10n) {
-    return Card(
+      PlaytimeSession session, final AppLocalizations l10n,) => Card(
       margin: const EdgeInsets.only(bottom: 8),
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -359,11 +345,9 @@ class ParentDashboardScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
   Widget _buildPendingBackgroundCard(final BuildContext context,
-      final PlaytimeBackground background, final AppLocalizations l10n) {
-    return Card(
+      PlaytimeBackground background, final AppLocalizations l10n,) => Card(
       margin: const EdgeInsets.only(bottom: 8),
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -387,9 +371,7 @@ class ParentDashboardScreen extends ConsumerWidget {
                       background.imageUrl,
                       fit: BoxFit.cover,
                       errorBuilder:
-                          (final context, final error, final stackTrace) {
-                        return const Icon(Icons.image, color: Colors.grey);
-                      },
+                          (context, final error, final stackTrace) => const Icon(Icons.image, color: Colors.grey),
                     ),
                   ),
                 ),
@@ -456,10 +438,8 @@ class ParentDashboardScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
-  Widget _buildEmptyApprovalsState(final AppLocalizations l10n) {
-    return Container(
+  Widget _buildEmptyApprovalsState(AppLocalizations l10n) => Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
         color: Colors.grey[100],
@@ -493,18 +473,16 @@ class ParentDashboardScreen extends ConsumerWidget {
         ],
       ),
     );
-  }
 
   Widget _buildChildSessions(
-      final BuildContext context, final AppLocalizations l10n) {
-    return Column(
+      BuildContext context, final AppLocalizations l10n,) => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              'Child\'s Sessions',
+              "Child's Sessions",
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -519,33 +497,29 @@ class ParentDashboardScreen extends ConsumerWidget {
         ),
         const SizedBox(height: 12),
         Consumer(
-          builder: (final context, final ref, final child) {
-            final sessionsAsync = ref.watch(userSessionsProvider);
+          builder: (context, final ref, final child) {
+            sessionsAsync = ref.watch(userSessionsProvider);
 
             return sessionsAsync.when(
-              data: (final sessions) {
+              data: (sessions) {
                 if (sessions.isEmpty) {
                   return _buildEmptySessionsState(l10n);
                 }
 
                 return Column(
-                  children: sessions.take(3).map((final session) {
-                    return _buildSessionCard(context, session, l10n);
-                  }).toList(),
+                  children: sessions.take(3).map((session) => _buildSessionCard(context, session, l10n)).toList(),
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (final error, final stack) => Text('Error: $error'),
+              error: (error, final stack) => Text('Error: $error'),
             );
           },
         ),
       ],
     );
-  }
 
   Widget _buildSessionCard(final BuildContext context,
-      final PlaytimeSession session, final AppLocalizations l10n) {
-    return Card(
+      PlaytimeSession session, final AppLocalizations l10n,) => Card(
       margin: const EdgeInsets.only(bottom: 8),
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -585,10 +559,8 @@ class ParentDashboardScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
-  Widget _buildEmptySessionsState(final AppLocalizations l10n) {
-    return Container(
+  Widget _buildEmptySessionsState(AppLocalizations l10n) => Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
         color: Colors.grey[100],
@@ -612,7 +584,7 @@ class ParentDashboardScreen extends ConsumerWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Your child hasn\'t created any sessions',
+            "Your child hasn't created any sessions",
             style: TextStyle(
               fontSize: 14,
               color: Colors.grey[500],
@@ -622,11 +594,10 @@ class ParentDashboardScreen extends ConsumerWidget {
         ],
       ),
     );
-  }
 
-  String _formatDateTime(final DateTime dateTime) {
-    final now = DateTime.now();
-    final difference = dateTime.difference(now);
+  String _formatDateTime(DateTime dateTime) {
+    now = DateTime.now();
+    difference = dateTime.difference(now);
 
     if (difference.inDays > 0) {
       return '${difference.inDays} ${difference.inDays == 1 ? 'day' : 'days'}';
@@ -639,7 +610,7 @@ class ParentDashboardScreen extends ConsumerWidget {
     }
   }
 
-  void _approveSession(final BuildContext context, final String sessionId) {
+  void _approveSession(BuildContext context, final String sessionId) {
     // This would typically call the provider to approve the session
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -649,7 +620,7 @@ class ParentDashboardScreen extends ConsumerWidget {
     );
   }
 
-  void _rejectSession(final BuildContext context, final String sessionId) {
+  void _rejectSession(BuildContext context, final String sessionId) {
     // This would typically call the provider to reject the session
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -660,7 +631,7 @@ class ParentDashboardScreen extends ConsumerWidget {
   }
 
   void _approveBackground(
-      final BuildContext context, final String backgroundId) {
+      BuildContext context, final String backgroundId,) {
     // This would typically call the provider to approve the background
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -671,7 +642,7 @@ class ParentDashboardScreen extends ConsumerWidget {
   }
 
   void _rejectBackground(
-      final BuildContext context, final String backgroundId) {
+      BuildContext context, final String backgroundId,) {
     // This would typically call the provider to reject the background
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(

@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 /// A chip widget for displaying booking time slots with availability status
 class BookingSlotChip extends StatelessWidget {
   const BookingSlotChip({
-    super.key,
-    required this.time,
-    required this.available,
-    required this.onSelected,
+    required this.time, required this.available, required this.onSelected, super.key,
     this.selected = false,
     this.disabled = false,
   });
@@ -28,7 +25,7 @@ class BookingSlotChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    theme = Theme.of(context);
     final isAvailable = available && !disabled;
 
     return Semantics(
@@ -51,7 +48,6 @@ class BookingSlotChip extends StatelessWidget {
         disabledColor: theme.colorScheme.surfaceVariant,
         side: BorderSide(
           color: _getBorderColor(theme),
-          width: 1.0,
         ),
         elevation: selected ? 2.0 : 0.0,
         pressElevation: isAvailable ? 1.0 : 0.0,
@@ -62,7 +58,7 @@ class BookingSlotChip extends StatelessWidget {
   }
 
   String _getSemanticsLabel() {
-    final timeStr = _formatTime(time);
+    timeStr = _formatTime(time);
     final status = disabled
         ? 'unavailable'
         : available
@@ -72,8 +68,8 @@ class BookingSlotChip extends StatelessWidget {
   }
 
   String _formatTime(TimeOfDay time) {
-    final hour = time.hour.toString().padLeft(2, '0');
-    final minute = time.minute.toString().padLeft(2, '0');
+    hour = time.hour.toString().padLeft(2, '0');
+    minute = time.minute.toString().padLeft(2, '0');
     return '$hour:$minute';
   }
 

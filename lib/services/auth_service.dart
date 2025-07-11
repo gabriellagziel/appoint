@@ -1,24 +1,26 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-
+import 'package:appoint/config/environment_config.dart';
 import 'package:appoint/models/app_user.dart';
 import 'package:appoint/services/error_handling_service.dart';
 import 'package:appoint/widgets/social_account_conflict_dialog.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 
 class AuthService {
-  static const redirectUri = 'http://localhost:8080/__/auth/handler';
 
-  final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-  final ErrorHandlingService _errorService = ErrorHandlingService();
+  /// Constructor that accepts injected dependencies for testing
+  AuthService({FirebaseAuth? firebaseAuth})
+      : _firebaseAuth = firebaseAuth ?? FirebaseAuth.instance;
+  // Load redirect URI from environment configuration
+  static const String redirectUri = EnvironmentConfig.authRedirectUri;
 
-  Future<User?> currentUser() async {
-    return _firebaseAuth.currentUser;
-  }
+  final FirebaseAuth _firebaseAuth;
+  ErrorHandlingService _errorService = ErrorHandlingService();
 
-  Stream<AppUser?> authStateChanges() {
-    return _firebaseAuth.authStateChanges().asyncMap((final user) async {
+  Future<User?> currentUser() async => _firebaseAuth.currentUser;
+
+  Stream<AppUser?> authStateChanges() => _firebaseAuth.authStateChanges().asyncMap((user) async {
       if (user == null) return null;
-      final token = await user.getIdTokenResult(true);
+      token = await user.getIdTokenResult(true);
       final claims = token.claims ?? <String, dynamic>{};
       final role = claims['role'] as String? ?? 'personal';
       return AppUser(
@@ -29,15 +31,14 @@ class AuthService {
         businessProfileId: claims['businessProfileId'] as String?,
       );
     });
-  }
 
-  Future<void> signIn(final String email, final String password) async {
+  Future<void> signIn(String email, final String password) async {
     try {
       await _firebaseAuth.signInWithEmailAndPassword(
         email: email,
         password: password,
       );
-    } on FirebaseAuthException catch (e) {
+    } on FirebaseAuthException catch (e) {e) {
       await _handleAuthException(e);
       rethrow;
     }
@@ -49,10 +50,10 @@ class AuthService {
 
   Future<UserCredential> signInWithGooglePopup() async {
     try {
-      final googleProvider = GoogleAuthProvider();
+      googleProvider = GoogleAuthProvider();
       googleProvider.setCustomParameters({'redirectUri': redirectUri});
       return await _firebaseAuth.signInWithPopup(googleProvider);
-    } on FirebaseAuthException catch (e) {
+    } on FirebaseAuthException catch (e) {e) {
       await _handleAuthException(e);
       rethrow;
     }
@@ -87,14 +88,14 @@ class AuthService {
   ) async {
     try {
       return await signInWithGooglePopup();
-    } on FirebaseAuthException catch (e) {
+    } on FirebaseAuthException catch (e) {e) {
       if (isSocialAccountConflict(e)) {
-        final choice = await handleSocialAccountConflict(context, e);
+        choice = await handleSocialAccountConflict(context, e);
 
         switch (choice) {
           case 'link':
             // Handle account linking
-            return await _handleAccountLinking(e);
+            return _handleAccountLinking(e);
           case 'existing':
             // Guide user to sign in with existing method
             return null;
@@ -112,9 +113,9 @@ class AuthService {
 
   /// Handle account linking when user chooses to link accounts
   Future<UserCredential?> _handleAccountLinking(
-      FirebaseAuthException error) async {
+      FirebaseAuthException error,) async {
     try {
-      final credential = getConflictingCredential(error);
+      credential = getConflictingCredential(error);
       if (credential != null) {
         // Link the credential to the current user
         final currentUser = _firebaseAuth.currentUser;
@@ -122,7 +123,7 @@ class AuthService {
           return await currentUser.linkWithCredential(credential);
         }
       }
-    } on FirebaseAuthException catch (e) {
+    } on FirebaseAuthException catch (e) {e) {
       await _handleAuthException(e);
       rethrow;
     }
@@ -131,8 +132,8 @@ class AuthService {
 
   /// Handle Firebase Auth exceptions with proper error mapping
   Future<void> _handleAuthException(FirebaseAuthException e) async {
-    final errorType = _mapFirebaseErrorToType(e.code);
-    final severity = _getErrorSeverity(e.code);
+    errorType = _mapFirebaseErrorToType(e.code);
+    severity = _getErrorSeverity(e.code);
 
     await _errorService.handleError(
       e,
@@ -189,10 +190,8 @@ class AuthService {
   }
 
   /// Check if the error is a social account link conflict
-  bool isSocialAccountConflict(FirebaseAuthException e) {
-    return e.code == 'REDACTED_TOKEN' ||
+  bool isSocialAccountConflict(FirebaseAuthException e) => e.code == 'REDACTED_TOKEN' ||
         e.code == 'credential-already-in-use';
-  }
 
   /// Get the email associated with the conflicting account
   String? getConflictingEmail(FirebaseAuthException e) {

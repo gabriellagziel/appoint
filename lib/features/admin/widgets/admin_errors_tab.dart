@@ -1,20 +1,20 @@
+import 'package:appoint/models/admin_dashboard_stats.dart';
+import 'package:appoint/providers/admin_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/admin_provider.dart';
-import 'package:appoint/models/admin_dashboard_stats.dart';
 
 class AdminErrorsTab extends ConsumerWidget {
   const AdminErrorsTab({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final errorLogs = ref.watch(errorLogsProvider({'limit': 50}));
+    errorLogs = ref.watch(errorLogsProvider({'limit': 50}));
 
     return errorLogs.when(
-      data: (final logs) => ListView.builder(
+      data: (logs) => ListView.builder(
         padding: const EdgeInsets.all(16),
         itemCount: logs.length,
-        itemBuilder: (final context, final index) {
+        itemBuilder: (context, final index) {
           final log = logs[index];
           return Card(
             margin: const EdgeInsets.only(bottom: 8),
@@ -40,7 +40,7 @@ class AdminErrorsTab extends ConsumerWidget {
               ),
               trailing: log.isResolved
                   ? const Chip(
-                      label: Text('Resolved'), backgroundColor: Colors.green)
+                      label: Text('Resolved'), backgroundColor: Colors.green,)
                   : IconButton(
                       icon: const Icon(Icons.check_circle_outline),
                       onPressed: () =>
@@ -52,11 +52,11 @@ class AdminErrorsTab extends ConsumerWidget {
         },
       ),
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (final error, final stack) => Center(child: Text('Error: $error')),
+      error: (error, final stack) => Center(child: Text('Error: $error')),
     );
   }
 
-  IconData _getErrorIcon(final ErrorSeverity severity) {
+  IconData _getErrorIcon(ErrorSeverity severity) {
     switch (severity) {
       case ErrorSeverity.low:
         return Icons.info;
@@ -69,7 +69,7 @@ class AdminErrorsTab extends ConsumerWidget {
     }
   }
 
-  Color _getErrorColor(final ErrorSeverity severity) {
+  Color _getErrorColor(ErrorSeverity severity) {
     switch (severity) {
       case ErrorSeverity.low:
         return Colors.blue;
@@ -82,18 +82,16 @@ class AdminErrorsTab extends ConsumerWidget {
     }
   }
 
-  String _formatDate(final DateTime date) {
-    return '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute}';
-  }
+  String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute}';
 
   void _showResolveErrorDialog(
-      BuildContext context, WidgetRef ref, AdminErrorLog? log) {
-    final controller = TextEditingController();
+      BuildContext context, WidgetRef ref, AdminErrorLog? log,) {
+    controller = TextEditingController();
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: Text(
-            log == null ? 'Resolve Error' : 'Resolve Error: ${log.errorType}'),
+            log == null ? 'Resolve Error' : 'Resolve Error: ${log.errorType}',),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -135,7 +133,7 @@ class AdminErrorsTab extends ConsumerWidget {
   void _showErrorDetailsDialog(BuildContext context, AdminErrorLog log) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: Text('Error Details: ${log.errorType}'),
         content: SingleChildScrollView(
           child: Column(
@@ -159,7 +157,7 @@ class AdminErrorsTab extends ConsumerWidget {
               ],
               const SizedBox(height: 8),
               const Text('Stack Trace:',
-                  style: TextStyle(fontWeight: FontWeight.bold)),
+                  style: TextStyle(fontWeight: FontWeight.bold),),
               const SizedBox(height: 4),
               Container(
                 padding: const EdgeInsets.all(8),

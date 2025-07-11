@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 /// Button with proper semantics and minimum tap target.
 class SemanticButton extends StatelessWidget {
   const SemanticButton({
-    super.key,
-    required this.onPressed,
-    required this.label,
-    required this.child,
+    required this.onPressed, required this.label, required this.child, super.key,
   });
 
   final VoidCallback onPressed;
@@ -14,8 +11,7 @@ class SemanticButton extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(final BuildContext context) {
-    return Semantics(
+  Widget build(BuildContext context) => Semantics(
       button: true,
       label: label,
       child: InkWell(
@@ -29,5 +25,4 @@ class SemanticButton extends StatelessWidget {
         ),
       ),
     );
-  }
 }

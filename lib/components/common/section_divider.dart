@@ -1,13 +1,12 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/config/theme.dart';
+import 'package:flutter/material.dart';
 
 class SectionDivider extends StatelessWidget {
-  final String? label;
   const SectionDivider({super.key, this.label});
+  final String? label;
 
   @override
-  Widget build(final BuildContext context) {
-    return Column(
+  Widget build(BuildContext context) => Column(
       mainAxisSize: MainAxisSize.min,
       children: [
         if (label != null) ...[
@@ -21,5 +20,4 @@ class SectionDivider extends StatelessWidget {
         const Divider(color: AppTheme.secondaryColor),
       ],
     );
-  }
 }

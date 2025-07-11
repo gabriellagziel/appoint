@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/staff_availability.dart';
 import 'package:appoint/providers/REDACTED_TOKEN.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class StaffScreen extends ConsumerStatefulWidget {
+  const StaffScreen({required this.staffId, super.key});
   final String staffId;
-  const StaffScreen({super.key, required this.staffId});
 
   @override
   ConsumerState<StaffScreen> createState() => _StaffScreenState();
@@ -13,7 +13,7 @@ class StaffScreen extends ConsumerStatefulWidget {
 
 class _StaffScreenState extends ConsumerState<StaffScreen> {
   DateTime _selectedDate = DateTime.now();
-  final _slotController = TextEditingController();
+  _slotController = TextEditingController();
 
   Future<void> _addSlot() async {
     final slot = _slotController.text;
@@ -30,7 +30,7 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     final availabilityAsync =
         ref.watch(staffAvailabilityProvider(widget.staffId));
     return Scaffold(
@@ -38,7 +38,7 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16),
             child: Row(
               children: [
                 Text('${_selectedDate.toLocal()}'.split(' ')[0]),
@@ -61,7 +61,7 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               children: [
                 Expanded(
@@ -75,28 +75,28 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
                 IconButton(
                   icon: const Icon(Icons.add),
                   onPressed: _addSlot,
-                )
+                ),
               ],
             ),
           ),
           const SizedBox(height: 16),
           Expanded(
             child: availabilityAsync.when(
-              data: (final list) {
+              data: (list) {
                 final todays = list
-                    .where((final a) =>
+                    .where((a) =>
                         a.date.year == _selectedDate.year &&
                         a.date.month == _selectedDate.month &&
-                        a.date.day == _selectedDate.day)
+                        a.date.day == _selectedDate.day,)
                     .toList();
                 if (todays.isEmpty) {
                   return const Center(child: Text('No slots'));
                 }
                 final slots =
-                    todays.expand((final a) => a.availableSlots ?? []).toList();
+                    todays.expand((a) => a.availableSlots ?? []).toList();
                 return ListView.builder(
                   itemCount: slots.length,
-                  itemBuilder: (final context, final index) {
+                  itemBuilder: (context, final index) {
                     final slot = slots[index];
                     return ListTile(
                       title: Text(slot),
@@ -105,7 +105,7 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
                         onPressed: () async {
                           await ref
                               .read(staffAvailabilityProvider(widget.staffId)
-                                  .notifier)
+                                  .notifier,)
                               .delete(_selectedDate);
                         },
                       ),
@@ -114,9 +114,9 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (final e, final _) => Center(child: Text('Error: $e')),
+              error: (e, final _) => Center(child: Text('Error: $e')),
             ),
-          )
+          ),
         ],
       ),
     );

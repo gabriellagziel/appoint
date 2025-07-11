@@ -1,7 +1,6 @@
+import 'package:appoint/providers/auth_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'package:appoint/providers/auth_provider.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -11,8 +10,8 @@ class LoginScreen extends ConsumerStatefulWidget {
 }
 
 class _LoginScreenState extends ConsumerState<LoginScreen> {
-  final TextEditingController _emailController = TextEditingController();
-  final TextEditingController _passwordController = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
+  TextEditingController _passwordController = TextEditingController();
   bool _isLoading = false;
 
   @override
@@ -23,8 +22,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(title: const Text('Login')),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -46,9 +44,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               ),
             ),
             const SizedBox(height: 16),
-            _isLoading
-                ? const CircularProgressIndicator()
-                : ElevatedButton(
+            if (_isLoading) const CircularProgressIndicator() else ElevatedButton(
                     onPressed: () async {
                       setState(() => _isLoading = true);
                       try {
@@ -57,18 +53,18 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                               _passwordController.text,
                             );
                         if (!mounted) return;
-                        // TODO: Implement notification token saving
-                        // final uid = ref.read(authProvider).currentUser?.uid;
+                        // TODO(username): Implement notification token saving
+                        // uid = ref.read(authProvider).currentUser?.uid;
                         // if (uid != null) {
                         //   ref
                         //       .read(notificationServiceProvider)
                         //       .saveTokenForUser(uid);
                         // }
-                        // TODO: Implement auth state refresh
+                        // TODO(username): Implement auth state refresh
                         // if (mounted) {
                         //   ref.refresh(authStateProvider);
                         // }
-                      } catch (e) {
+                      } catch (e) {e) {
                         if (!mounted) return;
                         // ignore: use_build_context_synchronously
                         ScaffoldMessenger.of(context).showSnackBar(
@@ -86,5 +82,4 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         ),
       ),
     );
-  }
 }

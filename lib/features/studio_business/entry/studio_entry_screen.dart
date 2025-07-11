@@ -4,8 +4,7 @@ class StudioEntryScreen extends StatelessWidget {
   const StudioEntryScreen({super.key});
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Studio Dashboard'),
         backgroundColor: Theme.of(context).primaryColor,
@@ -37,12 +36,11 @@ class StudioEntryScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 32),
-            // TODO: Implement this featurendar view
-            // TODO: Implement this featureng overview
-            // TODO: Implement this featuren actions
+            // TODO(username): Implement this featurendar view
+            // TODO(username): Implement this featureng overview
+            // TODO(username): Implement this featuren actions
           ],
         ),
       ),
     );
-  }
 }

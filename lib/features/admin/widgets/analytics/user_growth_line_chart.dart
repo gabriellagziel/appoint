@@ -1,12 +1,11 @@
-import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/material.dart';
 
 class UserGrowthLineChart extends StatelessWidget {
   const UserGrowthLineChart({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Card(
+  Widget build(BuildContext context) => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -25,7 +24,6 @@ class UserGrowthLineChart extends StatelessWidget {
               height: 200,
               child: LineChart(
                 LineChartData(
-                  gridData: const FlGridData(show: true),
                   titlesData: const FlTitlesData(show: false),
                   borderData: FlBorderData(show: true),
                   lineBarsData: [
@@ -52,5 +50,4 @@ class UserGrowthLineChart extends StatelessWidget {
         ),
       ),
     );
-  }
 }

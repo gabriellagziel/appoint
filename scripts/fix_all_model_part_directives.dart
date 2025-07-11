@@ -10,7 +10,7 @@ void main() async {
   // Step 2: Run build runner to generate files in default location
   print('Running build runner to generate files...');
   final result = await Process.run('flutter',
-      ['pub', 'run', 'build_runner', 'build', '--delete-conflicting-outputs']);
+      ['pub', 'run', 'build_runner', 'build', '--delete-conflicting-outputs'],);
   if (result.exitCode != 0) {
     print('Build runner failed: ${result.stderr}');
     return;
@@ -36,8 +36,8 @@ Future<void> updatePartDirectivesToDefault() async {
 
   for (final filePath in modelFiles) {
     final file = File(filePath);
-    String content = await file.readAsString();
-    bool modified = false;
+    var content = await file.readAsString();
+    var modified = false;
 
     // Update part directives to use default location
     content = content.replaceAllMapped(
@@ -72,7 +72,7 @@ Future<void> moveGeneratedFiles() async {
     '*.g.dart',
     '-o',
     '-name',
-    '*.freezed.dart'
+    '*.freezed.dart',
   ]);
   final files = result.stdout.toString().trim().split('\n');
 
@@ -98,8 +98,8 @@ Future<void> REDACTED_TOKEN() async {
 
   for (final filePath in modelFiles) {
     final file = File(filePath);
-    String content = await file.readAsString();
-    bool modified = false;
+    var content = await file.readAsString();
+    var modified = false;
 
     // Update part directives to use centralized location
     content = content.replaceAllMapped(
@@ -130,8 +130,8 @@ Future<void> updateGeneratedPartOfHeaders() async {
     final file = File(filePath);
     if (!await file.exists()) continue;
 
-    String content = await file.readAsString();
-    bool modified = false;
+    var content = await file.readAsString();
+    var modified = false;
 
     // Extract the model name from the file path
     final fileName = filePath.split('/').last;
@@ -139,7 +139,7 @@ Future<void> updateGeneratedPartOfHeaders() async {
 
     // Update part of header to use package path
     content = content.replaceAllMapped(
-      RegExp(r"part of '[^']*';"),
+      RegExp("part of '[^']*';"),
       (match) {
         modified = true;
         return "part of 'package:appoint/models/$modelName.dart';";
@@ -164,7 +164,7 @@ Future<List<String>> findModelFiles() async {
     '*.g.dart',
     '-not',
     '-name',
-    '*.freezed.dart'
+    '*.freezed.dart',
   ]);
   return result.stdout
       .toString()

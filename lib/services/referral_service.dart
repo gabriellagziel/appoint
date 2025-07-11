@@ -4,28 +4,28 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class ReferralService {
+
+  ReferralService(
+      {FirebaseFirestore? firestore, final FirebaseAuth? auth,})
+      : _firestore = firestore ?? FirebaseFirestore.instance,
+        _auth = auth ?? FirebaseAuth.instance;
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
 
-  ReferralService(
-      {final FirebaseFirestore? firestore, final FirebaseAuth? auth})
-      : _firestore = firestore ?? FirebaseFirestore.instance,
-        _auth = auth ?? FirebaseAuth.instance;
-
-  Future<String> generateReferralCode(final String userId) async {
-    final docRef = _firestore.collection('referrals').doc(userId);
-    final existing = await docRef.get();
-    final data = existing.data();
+  Future<String> generateReferralCode(String userId) async {
+    docRef = _firestore.collection('referrals').doc(userId);
+    existing = await docRef.get();
+    data = existing.data();
     if (data != null && data['code'] is String) {
       return data['code'] as String;
     }
 
     String code;
-    bool exists = true;
-    final random = Random();
+    var exists = true;
+    random = Random();
     const chars = 'REDACTED_TOKEN';
     do {
-      code = List.generate(8, (final _) => chars[random.nextInt(chars.length)])
+      code = List.generate(8, (_) => chars[random.nextInt(chars.length)])
           .join();
       final query = await _firestore
           .collection('referrals')

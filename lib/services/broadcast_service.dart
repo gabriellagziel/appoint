@@ -1,13 +1,13 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/models/user_profile.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class BroadcastService {
-  final FirebaseFirestore _firestore;
 
-  BroadcastService({final FirebaseFirestore? firestore})
+  BroadcastService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
 
   // Collection references
   CollectionReference<Map<String, dynamic>> get _broadcastsCollection =>
@@ -18,47 +18,45 @@ class BroadcastService {
 
   // Create a new broadcast message
   Future<String> createBroadcastMessage(
-      final AdminBroadcastMessage message) async {
+      AdminBroadcastMessage message,) async {
     try {
-      final docRef = await _broadcastsCollection.add(message.toJson());
+      docRef = await _broadcastsCollection.add(message.toJson());
       return docRef.id;
-    } catch (e) {
+    } catch (e) {e) {
       throw Exception('Failed to create broadcast message: $e');
     }
   }
 
   // Get all broadcast messages
-  Stream<List<AdminBroadcastMessage>> getBroadcastMessages() {
-    return _broadcastsCollection
+  Stream<List<AdminBroadcastMessage>> getBroadcastMessages() => _broadcastsCollection
         .orderBy('createdAt', descending: true)
         .snapshots()
-        .map((final snapshot) => snapshot.docs
-            .map((final doc) => AdminBroadcastMessage.fromJson({
+        .map((snapshot) => snapshot.docs
+            .map((doc) => AdminBroadcastMessage.fromJson({
                   'id': doc.id,
                   ...doc.data(),
-                }))
-            .toList());
-  }
+                }),)
+            .toList(),);
 
   // Get broadcast message by ID
-  Future<AdminBroadcastMessage?> getBroadcastMessage(final String id) async {
+  Future<AdminBroadcastMessage?> getBroadcastMessage(String id) async {
     try {
-      final doc = await _broadcastsCollection.doc(id).get();
+      doc = await _broadcastsCollection.doc(id).get();
       if (doc.exists) {
         return AdminBroadcastMessage.fromJson({
           'id': doc.id,
-          ...(doc.data() as Map<String, dynamic>),
+          ...doc.data()!,
         });
       }
       return null;
-    } catch (e) {
+    } catch (e) {e) {
       throw Exception('Failed to get broadcast message: $e');
     }
   }
 
   // Estimate target audience size
   Future<int> estimateTargetAudience(
-      final BroadcastTargetingFilters filters) async {
+      BroadcastTargetingFilters filters,) async {
     try {
       Query query = _usersCollection;
 
@@ -88,7 +86,7 @@ class BroadcastService {
 
       if (filters.joinedAfter != null) {
         query = query.where('createdAt',
-            isGreaterThanOrEqualTo: filters.joinedAfter);
+            isGreaterThanOrEqualTo: filters.joinedAfter,);
       }
 
       if (filters.joinedBefore != null) {
@@ -96,23 +94,23 @@ class BroadcastService {
             query.where('createdAt', isLessThanOrEqualTo: filters.joinedBefore);
       }
 
-      final snapshot = await query.get();
+      snapshot = await query.get();
       return snapshot.docs.length;
-    } catch (e) {
+    } catch (e) {e) {
       throw Exception('Failed to estimate target audience: $e');
     }
   }
 
   // Send broadcast message
-  Future<void> sendBroadcastMessage(final String messageId) async {
+  Future<void> sendBroadcastMessage(String messageId) async {
     try {
-      final message = await getBroadcastMessage(messageId);
+      message = await getBroadcastMessage(messageId);
       if (message == null) {
         throw Exception('Message not found');
       }
 
       // Get target users
-      final targetUsers = await _getTargetUsers(message.targetingFilters);
+      targetUsers = await _getTargetUsers(message.targetingFilters);
 
       // Update message with actual recipient count
       await _broadcastsCollection.doc(messageId).update({
@@ -121,10 +119,10 @@ class BroadcastService {
       });
 
       // Send FCM messages
-      for (final user in targetUsers) {
+      for (user in targetUsers) {
         await _sendFCMNotification(user, message);
       }
-    } catch (e) {
+    } catch (e) {e) {
       // Update message with failure status
       await _broadcastsCollection.doc(messageId).update({
         'status': BroadcastMessageStatus.failed.name,
@@ -136,7 +134,7 @@ class BroadcastService {
 
   // Get target users based on filters
   Future<List<UserProfile>> _getTargetUsers(
-      final BroadcastTargetingFilters filters) async {
+      BroadcastTargetingFilters filters,) async {
     try {
       Query query = _usersCollection;
 
@@ -166,7 +164,7 @@ class BroadcastService {
 
       if (filters.joinedAfter != null) {
         query = query.where('createdAt',
-            isGreaterThanOrEqualTo: filters.joinedAfter);
+            isGreaterThanOrEqualTo: filters.joinedAfter,);
       }
 
       if (filters.joinedBefore != null) {
@@ -174,36 +172,36 @@ class BroadcastService {
             query.where('createdAt', isLessThanOrEqualTo: filters.joinedBefore);
       }
 
-      final snapshot = await query.get();
+      snapshot = await query.get();
       return snapshot.docs
-          .map((final doc) => UserProfile.fromJson({
+          .map((doc) => UserProfile.fromJson({
                 'id': doc.id,
-                ...(doc.data() as Map<String, dynamic>),
-              }))
+                ...(doc.data()! as Map<String, dynamic>),
+              }),)
           .toList();
-    } catch (e) {
+    } catch (e) {e) {
       throw Exception('Failed to get target users: $e');
     }
   }
 
   // Send FCM notification to a user
   Future<void> _sendFCMNotification(
-      final UserProfile user, final AdminBroadcastMessage message) async {
+      UserProfile user, final AdminBroadcastMessage message,) async {
     try {
       // Get user's FCM token
-      final userDoc = await _usersCollection.doc(user.id).get();
-      final fcmToken = userDoc.data()?['fcmToken'] as String?;
+      userDoc = await _usersCollection.doc(user.id).get();
+      fcmToken = userDoc.data()?['fcmToken'] as String?;
 
       if (fcmToken == null) {
         throw Exception('User has no FCM token');
       }
 
       // Prepare notification payload
-      // TODO: Implement FCM notification sending via Firebase Functions
+      // TODO(username): Implement FCM notification sending via Firebase Functions
       // For now, we'll just log it
-      // Removed debug print: print('Sending FCM notification to ${user.id}');
-    } catch (e) {
-      // Removed debug print: print('Failed to send FCM notification to ${user.id}: $e');
+      // Removed debug print: debugPrint('Sending FCM notification to ${user.id}');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Failed to send FCM notification to ${user.id}: $e');
       rethrow;
     }
   }
@@ -231,22 +229,20 @@ class BroadcastService {
       }
 
       await _broadcastsCollection.doc(messageId).update(updates);
-    } catch (e) {
+    } catch (e) {e) {
       throw Exception('Failed to update message analytics: $e');
     }
   }
 
   // Delete broadcast message
-  Future<void> deleteBroadcastMessage(final String id) async {
+  Future<void> deleteBroadcastMessage(String id) async {
     try {
       await _broadcastsCollection.doc(id).delete();
-    } catch (e) {
+    } catch (e) {e) {
       throw Exception('Failed to delete broadcast message: $e');
     }
   }
 }
 
 // Provider
-final broadcastServiceProvider = Provider<BroadcastService>((final ref) {
-  return BroadcastService();
-});
+broadcastServiceProvider = Provider<BroadcastService>((final ref) => BroadcastService());

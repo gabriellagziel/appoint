@@ -5,8 +5,7 @@ class UnsupportedScreen extends StatelessWidget {
   const UnsupportedScreen({super.key});
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       body: Center(
         child: Text(
           'Unsupported account type',
@@ -15,5 +14,4 @@ class UnsupportedScreen extends StatelessWidget {
         ),
       ),
     );
-  }
 }

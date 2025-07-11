@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/playtime_game.freezed.dart';
-part '../generated/models/playtime_game.g.dart';
+part 'playtime_game.freezed.dart';
+part 'playtime_game.g.dart';
 
 @freezed
 class PlaytimeGame with _$PlaytimeGame {
@@ -13,6 +13,6 @@ class PlaytimeGame with _$PlaytimeGame {
     final DateTime? createdAt,
   }) = _PlaytimeGame;
 
-  factory PlaytimeGame.fromJson(final Map<String, dynamic> json) =>
+  factory PlaytimeGame.fromJson(Map<String, dynamic> json) =>
       _$PlaytimeGameFromJson(json);
 }

@@ -1,18 +1,16 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/config/theme.dart';
+import 'package:flutter/material.dart';
 
 class AppScaffold extends StatelessWidget {
+
+  const AppScaffold({required this.child, super.key, this.title});
   final Widget child;
   final String? title;
 
-  const AppScaffold({super.key, required this.child, this.title});
-
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       backgroundColor: AppTheme.backgroundColor,
       appBar: title != null ? AppBar(title: Text(title!)) : null,
       body: SafeArea(child: child),
     );
-  }
 }

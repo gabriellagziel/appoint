@@ -1,24 +1,21 @@
 import 'package:flutter/material.dart';
 
 class CustomSearchBar extends StatelessWidget {
+
+  const CustomSearchBar({
+    required this.controller, required this.hintText, super.key,
+    this.onChanged,
+    this.onClear,
+    this.showClearButton = true,
+  });
   final TextEditingController controller;
   final String hintText;
   final ValueChanged<String>? onChanged;
   final VoidCallback? onClear;
   final bool showClearButton;
 
-  const CustomSearchBar({
-    super.key,
-    required this.controller,
-    required this.hintText,
-    this.onChanged,
-    this.onClear,
-    this.showClearButton = true,
-  });
-
   @override
-  Widget build(final BuildContext context) {
-    return Semantics(
+  Widget build(BuildContext context) => Semantics(
       label: 'Search field',
       hint: hintText,
       child: TextField(
@@ -43,14 +40,13 @@ class CustomSearchBar extends StatelessWidget {
                 )
               : null,
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8.0),
+            borderRadius: BorderRadius.circular(8),
           ),
           contentPadding: const EdgeInsets.symmetric(
-            horizontal: 16.0,
-            vertical: 12.0,
+            horizontal: 16,
+            vertical: 12,
           ),
         ),
       ),
     );
-  }
 }

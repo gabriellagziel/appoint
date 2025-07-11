@@ -1,16 +1,15 @@
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/config/theme.dart';
 
 class PlaytimeLandingScreen extends ConsumerWidget {
   const PlaytimeLandingScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final l10n = AppLocalizations.of(context)!;
+  Widget build(BuildContext context, final WidgetRef ref) {
+    l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       body: Container(
@@ -26,7 +25,7 @@ class PlaytimeLandingScreen extends ConsumerWidget {
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(24.0),
+            padding: const EdgeInsets.all(24),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -52,8 +51,7 @@ class PlaytimeLandingScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildHeader(final BuildContext context, final AppLocalizations l10n) {
-    return Column(
+  Widget _buildHeader(BuildContext context, final AppLocalizations l10n) => Column(
       children: [
         Container(
           padding: const EdgeInsets.all(20),
@@ -95,11 +93,9 @@ class PlaytimeLandingScreen extends ConsumerWidget {
         ),
       ],
     );
-  }
 
   Widget _buildMainOptions(
-      final BuildContext context, final AppLocalizations l10n) {
-    return Column(
+      BuildContext context, final AppLocalizations l10n,) => Column(
       children: [
         // Virtual Playtime Option
         _buildOptionCard(
@@ -123,7 +119,6 @@ class PlaytimeLandingScreen extends ConsumerWidget {
         ),
       ],
     );
-  }
 
   Widget _buildOptionCard(
     final BuildContext context, {
@@ -132,8 +127,7 @@ class PlaytimeLandingScreen extends ConsumerWidget {
     required final IconData icon,
     required final Color color,
     required final VoidCallback onTap,
-  }) {
-    return GestureDetector(
+  }) => GestureDetector(
       onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(24),
@@ -199,11 +193,9 @@ class PlaytimeLandingScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
   Widget _buildQuickActions(
-      final BuildContext context, final AppLocalizations l10n) {
-    return Column(
+      BuildContext context, final AppLocalizations l10n,) => Column(
       children: [
         Text(
           'Quick Actions',
@@ -239,15 +231,13 @@ class PlaytimeLandingScreen extends ConsumerWidget {
         ),
       ],
     );
-  }
 
   Widget _buildQuickActionButton(
     final BuildContext context, {
     required final IconData icon,
     required final String label,
     required final VoidCallback onTap,
-  }) {
-    return GestureDetector(
+  }) => GestureDetector(
       onTap: onTap,
       child: Column(
         children: [
@@ -277,10 +267,8 @@ class PlaytimeLandingScreen extends ConsumerWidget {
         ],
       ),
     );
-  }
 
-  Widget _buildFooter(final BuildContext context, final AppLocalizations l10n) {
-    return Column(
+  Widget _buildFooter(BuildContext context, final AppLocalizations l10n) => Column(
       children: [
         Text(
           'Safe & Fun Gaming Environment',
@@ -325,5 +313,4 @@ class PlaytimeLandingScreen extends ConsumerWidget {
         ),
       ],
     );
-  }
 }

@@ -1,36 +1,30 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/services/whatsapp_share_service.dart';
 import 'package:appoint/models/smart_share_link.dart';
+import 'package:appoint/services/whatsapp_share_service.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // Provider for WhatsAppShareService
 final whatsappShareServiceProvider =
-    Provider<WhatsAppShareService>((final ref) {
-  return WhatsAppShareService();
-});
+    Provider<WhatsAppShareService>((ref) => WhatsAppShareService());
 
 // Provider for share statistics
-final shareStatsProvider = FutureProvider.family<Map<String, dynamic>, String>(
-  (final ref, final meetingId) async {
-    final service = ref.read(whatsappShareServiceProvider);
-    return await service.getShareStats(meetingId);
+final FutureProviderFamily<Map<String, dynamic>, String> shareStatsProvider = FutureProvider.family<Map<String, dynamic>, String>(
+  (ref, final meetingId) async {
+    service = ref.read(whatsappShareServiceProvider);
+    return service.getShareStats(meetingId);
   },
 );
 
 // Provider for group recognition
-final groupRecognitionProvider =
+final FutureProviderFamily<GroupRecognition?, String> groupRecognitionProvider =
     FutureProvider.family<GroupRecognition?, String>(
-  (final ref, final phoneNumber) async {
-    final service = ref.read(whatsappShareServiceProvider);
-    return await service.recognizeGroup(phoneNumber);
+  (ref, final phoneNumber) async {
+    service = ref.read(whatsappShareServiceProvider);
+    return service.recognizeGroup(phoneNumber);
   },
 );
 
 // State notifier for share dialog
 class ShareDialogState {
-  final bool isLoading;
-  final String? error;
-  final bool showGroupOptions;
-  final List<GroupRecognition> knownGroups;
 
   const ShareDialogState({
     this.isLoading = false,
@@ -38,26 +32,28 @@ class ShareDialogState {
     this.showGroupOptions = false,
     this.knownGroups = const [],
   });
+  final bool isLoading;
+  final String? error;
+  final bool showGroupOptions;
+  final List<GroupRecognition> knownGroups;
 
   ShareDialogState copyWith({
     final bool? isLoading,
     final String? error,
     final bool? showGroupOptions,
     final List<GroupRecognition>? knownGroups,
-  }) {
-    return ShareDialogState(
+  }) => ShareDialogState(
       isLoading: isLoading ?? this.isLoading,
       error: error,
       showGroupOptions: showGroupOptions ?? this.showGroupOptions,
       knownGroups: knownGroups ?? this.knownGroups,
     );
-  }
 }
 
 class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
-  final WhatsAppShareService _service;
 
   ShareDialogNotifier(this._service) : super(const ShareDialogState());
+  final WhatsAppShareService _service;
 
   Future<void> shareToWhatsApp({
     required final String meetingId,
@@ -67,7 +63,7 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
     final String? groupId,
     final String? recipientPhone,
   }) async {
-    state = state.copyWith(isLoading: true, error: null);
+    state = state.copyWith(isLoading: true);
 
     try {
       final success = await _service.shareToWhatsApp(
@@ -87,7 +83,7 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
       } else {
         state = state.copyWith(isLoading: false);
       }
-    } catch (e) {
+    } catch (e) {e) {
       state = state.copyWith(
         isLoading: false,
         error: e.toString(),
@@ -108,13 +104,13 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
         phoneNumber: phoneNumber,
         meetingId: meetingId,
       );
-    } catch (e) {
+    } catch (e) {e) {
       state = state.copyWith(error: e.toString());
     }
   }
 
   void clearError() {
-    state = state.copyWith(error: null);
+    state = state.copyWith();
   }
 
   void toggleGroupOptions() {
@@ -124,5 +120,5 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
 
 final shareDialogProvider =
     StateNotifierProvider<ShareDialogNotifier, ShareDialogState>(
-  (final ref) => ShareDialogNotifier(ref.read(whatsappShareServiceProvider)),
+  (ref) => ShareDialogNotifier(ref.read(whatsappShareServiceProvider)),
 );

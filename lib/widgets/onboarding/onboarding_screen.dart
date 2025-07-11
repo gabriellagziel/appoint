@@ -9,23 +9,23 @@ class OnboardingScreen extends StatefulWidget {
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
-  final PageController _controller = PageController();
+  PageController _controller = PageController();
   int _index = 0;
 
   final List<_OnboardingPage> _pages = const [
     _OnboardingPage(title: 'Welcome', description: 'Welcome to Appoint!'),
     _OnboardingPage(
-        title: 'Core Features', description: 'Discover the core features.'),
+        title: 'Core Features', description: 'Discover the core features.',),
     _OnboardingPage(
-        title: 'Scheduling Flow', description: 'Easily schedule appointments.'),
+        title: 'Scheduling Flow', description: 'Easily schedule appointments.',),
     _OnboardingPage(
-        title: 'Upgrade Plan', description: 'Upgrade anytime for more.'),
+        title: 'Upgrade Plan', description: 'Upgrade anytime for more.',),
   ];
 
   void _next() {
     if (_index < _pages.length - 1) {
       _controller.nextPage(
-          duration: const Duration(milliseconds: 300), curve: Curves.easeOut);
+          duration: const Duration(milliseconds: 300), curve: Curves.easeOut,);
     } else {
       OnboardingPrefs.setCompleted();
       Navigator.of(context).pop();
@@ -38,15 +38,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       body: SafeArea(
         child: Column(
           children: [
             Expanded(
               child: PageView(
                 controller: _controller,
-                onPageChanged: (final i) => setState(() => _index = i),
+                onPageChanged: (i) => setState(() => _index = i),
                 children: _pages,
               ),
             ),
@@ -62,7 +61,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   Row(
                     children: List.generate(
                       _pages.length,
-                      (final i) => Container(
+                      (i) => Container(
                         width: 8,
                         height: 8,
                         margin: const EdgeInsets.all(4),
@@ -85,7 +84,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         ),
       ),
     );
-  }
 }
 
 class _OnboardingPage extends StatelessWidget {
@@ -95,8 +93,7 @@ class _OnboardingPage extends StatelessWidget {
   final String description;
 
   @override
-  Widget build(final BuildContext context) {
-    return Padding(
+  Widget build(BuildContext context) => Padding(
       padding: const EdgeInsets.all(32),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -111,7 +108,6 @@ class _OnboardingPage extends StatelessWidget {
         ],
       ),
     );
-  }
 }
 
 /// Mock storage for onboarding completion.

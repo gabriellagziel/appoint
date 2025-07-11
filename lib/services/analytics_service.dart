@@ -3,9 +3,9 @@ import 'package:firebase_performance/firebase_performance.dart';
 
 /// Service for tracking custom analytics events throughout the app
 class AnalyticsService {
-  static final AnalyticsService _instance = AnalyticsService._internal();
   factory AnalyticsService() => _instance;
   AnalyticsService._internal();
+  static AnalyticsService _instance = AnalyticsService._internal();
 
   final FirebaseAnalytics _analytics = FirebaseAnalytics.instance;
   final FirebasePerformance _performance = FirebasePerformance.instance;
@@ -23,7 +23,7 @@ class AnalyticsService {
     await _analytics.setUserId(id: userId);
     await _analytics.setUserProperty(name: 'user_type', value: userType);
     await _analytics.setUserProperty(
-        name: 'subscription_tier', value: subscriptionTier);
+        name: 'subscription_tier', value: subscriptionTier,);
     await _analytics.setUserProperty(name: 'country', value: country);
     await _analytics.setUserProperty(name: 'language', value: language);
   }
@@ -315,20 +315,16 @@ class AnalyticsService {
   // MARK: - Performance Tracking
 
   /// Start a custom trace for performance monitoring
-  Trace startTrace(final String traceName) {
-    return _performance.newTrace(traceName);
-  }
+  Trace startTrace(String traceName) => _performance.newTrace(traceName);
 
   /// Start a network request trace
-  HttpMetric startNetworkTrace(final String url, final String method) {
-    return _performance.newHttpMetric(
+  HttpMetric startNetworkTrace(String url, final String method) => _performance.newHttpMetric(
         url,
         HttpMethod.values.firstWhere(
-          (final e) =>
+          (e) =>
               e.toString().split('.').last.toUpperCase() ==
               method.toUpperCase(),
-        ));
-  }
+        ),);
 
   // MARK: - Error Tracking
 

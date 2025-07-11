@@ -1,35 +1,40 @@
+import 'package:appoint/config/environment_config.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 
 enum PaymentStatus { initial, processing, requiresAction, succeeded, failed }
 
 class PaymentService {
-  final FirebaseFunctions _functions;
 
   PaymentService([FirebaseFunctions? functions])
       : _functions = functions ?? FirebaseFunctions.instance;
+  final FirebaseFunctions _functions;
 
   Future<void> init() async {
-    Stripe.publishableKey = 'pk_test_…';
+    // Load Stripe publishable key from environment configuration
+    if (!EnvironmentConfig.isStripeConfigured) {
+      throw Exception('STRIPE_PUBLISHABLE_KEY environment variable is not set');
+    }
+    Stripe.publishableKey = EnvironmentConfig.stripePublishableKey;
     await Stripe.instance.applySettings();
   }
 
-  Future<Map<String, dynamic>> createPaymentIntent(final double amount) async {
-    final callable = _functions.httpsCallable('createPaymentIntent');
-    final result = await callable.call({'amount': amount});
+  Future<Map<String, dynamic>> createPaymentIntent(double amount) async {
+    callable = _functions.httpsCallable('createPaymentIntent');
+    result = await callable.call({'amount': amount});
     return Map<String, dynamic>.from(result.data);
   }
 
-  Future<PaymentStatus> handlePayment(final double amount) async {
+  Future<PaymentStatus> handlePayment(double amount) async {
     try {
-      final intent = await createPaymentIntent(amount);
+      intent = await createPaymentIntent(amount);
       final clientSecret = intent['clientSecret'] as String;
       final status = intent['status'] as String?;
       if (status == 'requires_action') {
         // 3D Secure required
         try {
           await Stripe.instance.handleNextAction(clientSecret);
-        } catch (_) {
+        } catch (e) {_) {
           return PaymentStatus.failed;
         }
         // Re-confirm after 3DS
@@ -38,7 +43,7 @@ class PaymentService {
         // Try to confirm payment
         return await _confirmPayment(clientSecret);
       }
-    } catch (_) {
+    } catch (e) {_) {
       return PaymentStatus.failed;
     }
   }
@@ -48,7 +53,7 @@ class PaymentService {
       final paymentResult = await Stripe.instance.confirmPayment(
         paymentIntentClientSecret: clientSecret,
         data: const PaymentMethodParams.card(
-            paymentMethodData: PaymentMethodData()),
+            paymentMethodData: PaymentMethodData(),),
       );
       switch (paymentResult.status) {
         case PaymentIntentsStatus.Succeeded:
@@ -56,7 +61,7 @@ class PaymentService {
         case PaymentIntentsStatus.RequiresAction:
           try {
             await Stripe.instance.handleNextAction(clientSecret);
-          } catch (_) {
+          } catch (e) {_) {
             return PaymentStatus.failed;
           }
           return await _confirmPayment(clientSecret);
@@ -65,7 +70,7 @@ class PaymentService {
         default:
           return PaymentStatus.failed;
       }
-    } catch (_) {
+    } catch (e) {_) {
       return PaymentStatus.failed;
     }
   }

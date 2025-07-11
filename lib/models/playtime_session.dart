@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/playtime_session.freezed.dart';
-part '../generated/models/playtime_session.g.dart';
+part 'playtime_session.freezed.dart';
+part 'playtime_session.g.dart';
 
 @freezed
 class PlaytimeSession with _$PlaytimeSession {
@@ -14,6 +14,6 @@ class PlaytimeSession with _$PlaytimeSession {
     required final String backgroundId,
   }) = _PlaytimeSession;
 
-  factory PlaytimeSession.fromJson(final Map<String, dynamic> json) =>
+  factory PlaytimeSession.fromJson(Map<String, dynamic> json) =>
       _$PlaytimeSessionFromJson(json);
 }

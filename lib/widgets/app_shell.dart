@@ -1,15 +1,15 @@
+import 'package:appoint/providers/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/user_provider.dart';
 
 class AppShell extends ConsumerWidget {
+
+  const AppShell({required this.child, super.key});
   final Widget child;
 
-  const AppShell({super.key, required this.child});
-
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final user = ref.watch(userProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    user = ref.watch(userProvider);
 
     if (user == null) {
       return Scaffold(body: child);
@@ -68,7 +68,7 @@ class AppShell extends ConsumerWidget {
             Expanded(
               child: ListView.builder(
                 itemCount: items.length,
-                itemBuilder: (final context, final index) {
+                itemBuilder: (context, final index) {
                   final item = items[index];
                   return ListTile(
                     leading: Icon(item.icon),
@@ -86,7 +86,7 @@ class AppShell extends ConsumerWidget {
               leading: const Icon(Icons.logout),
               title: const Text('Logout'),
               onTap: () {
-                // TODO: Implement this featurent logout
+                // TODO(username): Implement this featurent logout
                 Navigator.pop(context);
               },
             ),
@@ -99,15 +99,15 @@ class AppShell extends ConsumerWidget {
 }
 
 class MenuItem {
-  final String label;
-  final IconData icon;
-  final String route;
 
   const MenuItem({
     required this.label,
     required this.icon,
     required this.route,
   });
+  final String label;
+  final IconData icon;
+  final String route;
 }
 
 // Personal user menu items

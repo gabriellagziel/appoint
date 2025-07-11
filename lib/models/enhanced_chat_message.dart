@@ -14,6 +14,6 @@ class EnhancedChatMessage with _$EnhancedChatMessage {
     @Default(false) final bool isTyping,
   }) = _EnhancedChatMessage;
 
-  factory EnhancedChatMessage.fromJson(final Map<String, dynamic> json) =>
+  factory EnhancedChatMessage.fromJson(Map<String, dynamic> json) =>
       _$EnhancedChatMessageFromJson(json);
-} 
+}

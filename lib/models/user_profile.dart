@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/user_profile.freezed.dart';
-part '../generated/models/user_profile.g.dart';
+part 'user_profile.freezed.dart';
+part 'user_profile.g.dart';
 
 @freezed
 class UserProfile with _$UserProfile {
@@ -17,12 +17,20 @@ class UserProfile with _$UserProfile {
     final PlaytimePermissions? playtimePermissions,
   }) = _UserProfile;
 
-  factory UserProfile.fromJson(final Map<String, dynamic> json) =>
+  factory UserProfile.fromJson(Map<String, dynamic> json) =>
       _$UserProfileFromJson(json);
 }
 
 @JsonSerializable()
 class PlaytimeSettings {
+
+  PlaytimeSettings({
+    required this.isChild,
+    required this.approvedPlaytimeSessions, required this.playtimePreferences, required this.safetySettings, required this.usageStats, this.parentUid,
+  });
+
+  factory PlaytimeSettings.fromJson(Map<String, dynamic> json) =>
+      _$PlaytimeSettingsFromJson(json);
   final bool isChild;
   final String? parentUid;
   final List<String> approvedPlaytimeSessions;
@@ -30,28 +38,11 @@ class PlaytimeSettings {
   final SafetySettings safetySettings;
   final UsageStats usageStats;
 
-  PlaytimeSettings({
-    required this.isChild,
-    this.parentUid,
-    required this.approvedPlaytimeSessions,
-    required this.playtimePreferences,
-    required this.safetySettings,
-    required this.usageStats,
-  });
-
-  factory PlaytimeSettings.fromJson(final Map<String, dynamic> json) =>
-      _$PlaytimeSettingsFromJson(json);
-
   Map<String, dynamic> toJson() => _$PlaytimeSettingsToJson(this);
 }
 
 @JsonSerializable()
 class PlaytimePreferences {
-  final List<String> favoriteGames;
-  final List<String> preferredCategories;
-  final int maxSessionDuration;
-  final bool allowPublicSessions;
-  final bool allowFriendInvites;
 
   PlaytimePreferences({
     required this.favoriteGames,
@@ -61,19 +52,19 @@ class PlaytimePreferences {
     required this.allowFriendInvites,
   });
 
-  factory PlaytimePreferences.fromJson(final Map<String, dynamic> json) =>
+  factory PlaytimePreferences.fromJson(Map<String, dynamic> json) =>
       _$PlaytimePreferencesFromJson(json);
+  final List<String> favoriteGames;
+  final List<String> preferredCategories;
+  final int maxSessionDuration;
+  final bool allowPublicSessions;
+  final bool allowFriendInvites;
 
   Map<String, dynamic> toJson() => _$PlaytimePreferencesToJson(this);
 }
 
 @JsonSerializable()
 class SafetySettings {
-  final bool chatEnabled;
-  final bool autoApproveSessions;
-  final bool requireParentApproval;
-  final List<String> blockedUsers;
-  final List<String> restrictedContent;
 
   SafetySettings({
     required this.chatEnabled,
@@ -83,39 +74,38 @@ class SafetySettings {
     required this.restrictedContent,
   });
 
-  factory SafetySettings.fromJson(final Map<String, dynamic> json) =>
+  factory SafetySettings.fromJson(Map<String, dynamic> json) =>
       _$SafetySettingsFromJson(json);
+  final bool chatEnabled;
+  final bool autoApproveSessions;
+  final bool requireParentApproval;
+  final List<String> blockedUsers;
+  final List<String> restrictedContent;
 
   Map<String, dynamic> toJson() => _$SafetySettingsToJson(this);
 }
 
 @JsonSerializable()
 class UsageStats {
-  final int totalSessions;
-  final int totalPlaytime;
-  final DateTime? lastActive;
-  final List<String> favoriteBackgrounds;
 
   UsageStats({
     required this.totalSessions,
     required this.totalPlaytime,
-    this.lastActive,
-    required this.favoriteBackgrounds,
+    required this.favoriteBackgrounds, this.lastActive,
   });
 
-  factory UsageStats.fromJson(final Map<String, dynamic> json) =>
+  factory UsageStats.fromJson(Map<String, dynamic> json) =>
       _$UsageStatsFromJson(json);
+  final int totalSessions;
+  final int totalPlaytime;
+  final DateTime? lastActive;
+  final List<String> favoriteBackgrounds;
 
   Map<String, dynamic> toJson() => _$UsageStatsToJson(this);
 }
 
 @JsonSerializable()
 class PlaytimePermissions {
-  final bool canCreateSessions;
-  final bool canUploadContent;
-  final bool canInviteFriends;
-  final bool canJoinPublicSessions;
-  final bool requiresParentApproval;
 
   PlaytimePermissions({
     required this.canCreateSessions,
@@ -125,8 +115,13 @@ class PlaytimePermissions {
     required this.requiresParentApproval,
   });
 
-  factory PlaytimePermissions.fromJson(final Map<String, dynamic> json) =>
+  factory PlaytimePermissions.fromJson(Map<String, dynamic> json) =>
       _$PlaytimePermissionsFromJson(json);
+  final bool canCreateSessions;
+  final bool canUploadContent;
+  final bool canInviteFriends;
+  final bool canJoinPublicSessions;
+  final bool requiresParentApproval;
 
   Map<String, dynamic> toJson() => _$PlaytimePermissionsToJson(this);
 }

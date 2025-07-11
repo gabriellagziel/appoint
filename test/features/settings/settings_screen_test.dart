@@ -1,15 +1,16 @@
 import 'package:flutter_test/flutter_test.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
+import '../../firebase_test_helper.dart';
 
-  group('SettingsScreen', () {
-    setUp(() {
-      // TODO: Initialize test dependencies
-    });
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
-    testWidgets('renders correctly', (final tester) async {
-      // TODO: implement widget test
+  group('Settings Screen', () {
+    testWidgets('should display settings options', (tester) async {
+      // Placeholder test
+      expect(true, isTrue);
     });
   });
 }

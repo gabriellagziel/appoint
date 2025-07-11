@@ -1,11 +1,17 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:appoint/widgets/social_account_conflict_dialog.dart';
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/widgets/social_account_conflict_dialog.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_test/flutter_test.dart';
+
+import '../firebase_test_helper.dart';
 
 void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
+
   group('SocialAccountConflictDialog', () {
     late FirebaseAuthException testError;
 
@@ -92,7 +98,7 @@ void main() {
 
     testWidgets('should call onCancel when cancel button is pressed',
         (WidgetTester tester) async {
-      bool cancelCalled = false;
+      var cancelCalled = false;
 
       await tester.pumpWidget(
         MaterialApp(
@@ -135,7 +141,7 @@ void main() {
     testWidgets(
         'should call onSignInWithExistingMethod when existing method button is pressed',
         (WidgetTester tester) async {
-      bool existingMethodCalled = false;
+      var existingMethodCalled = false;
 
       await tester.pumpWidget(
         MaterialApp(
@@ -179,7 +185,7 @@ void main() {
     testWidgets(
         'should call onLinkAccounts when link accounts button is pressed',
         (WidgetTester tester) async {
-      bool linkAccountsCalled = false;
+      var linkAccountsCalled = false;
 
       await tester.pumpWidget(
         MaterialApp(

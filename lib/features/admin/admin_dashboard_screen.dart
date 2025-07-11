@@ -1,15 +1,15 @@
+import 'package:appoint/features/admin/admin_broadcast_screen.dart';
+import 'package:appoint/features/admin/admin_orgs_screen.dart';
+import 'package:appoint/features/admin/admin_users_screen.dart';
+import 'package:appoint/features/admin/widgets/admin_activity_tab.dart';
+import 'package:appoint/features/admin/widgets/admin_errors_tab.dart';
+import 'package:appoint/features/admin/widgets/admin_monetization_tab.dart';
+import 'package:appoint/features/admin/widgets/admin_overview_tab.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/providers/admin_provider.dart';
+import 'package:appoint/widgets/admin_guard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/widgets/admin_guard.dart';
-import 'package:appoint/providers/admin_provider.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/features/admin/admin_broadcast_screen.dart';
-import 'package:appoint/features/admin/admin_users_screen.dart';
-import 'package:appoint/features/admin/admin_orgs_screen.dart';
-import 'package:appoint/features/admin/widgets/admin_overview_tab.dart';
-import 'package:appoint/features/admin/widgets/admin_errors_tab.dart';
-import 'package:appoint/features/admin/widgets/admin_activity_tab.dart';
-import 'package:appoint/features/admin/widgets/admin_monetization_tab.dart';
 
 class AdminDashboardScreen extends ConsumerStatefulWidget {
   const AdminDashboardScreen({super.key});
@@ -42,8 +42,8 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final l10n = AppLocalizations.of(context);
+  Widget build(BuildContext context) {
+    l10n = AppLocalizations.of(context);
 
     return AdminGuard(
       child: Scaffold(
@@ -68,7 +68,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
               label: 'Open admin settings',
               child: IconButton(
                 icon: const Icon(Icons.settings),
-                onPressed: () => _showSettingsDialog(),
+                onPressed: _showSettingsDialog,
               ),
             ),
           ],
@@ -87,11 +87,11 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
         ),
         body: TabBarView(
           controller: _tabController,
-          children: [
-            const AdminOverviewTab(),
-            const AdminErrorsTab(),
-            const AdminActivityTab(),
-            const AdminMonetizationTab(),
+          children: const [
+            AdminOverviewTab(),
+            AdminErrorsTab(),
+            AdminActivityTab(),
+            AdminMonetizationTab(),
           ],
         ),
         floatingActionButton: _buildFloatingActionButton(),
@@ -107,7 +107,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
           onPressed: () => Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (final context) => const AdminBroadcastScreen(),
+              builder: (context) => const AdminBroadcastScreen(),
             ),
           ),
           child: const Icon(Icons.broadcast_on_personal),
@@ -117,8 +117,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     }
   }
 
-  Widget _buildDrawer() {
-    return Drawer(
+  Widget _buildDrawer() => Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
@@ -151,7 +150,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (final context) => const AdminBroadcastScreen(),
+                  builder: (context) => const AdminBroadcastScreen(),
                 ),
               );
             },
@@ -164,7 +163,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (final context) => const AdminUsersScreen(),
+                  builder: (context) => const AdminUsersScreen(),
                 ),
               );
             },
@@ -177,7 +176,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (final context) => const AdminOrgsScreen(),
+                  builder: (context) => const AdminOrgsScreen(),
                 ),
               );
             },
@@ -202,13 +201,12 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
         ],
       ),
     );
-  }
 
   // Dialog methods
   void _showSettingsDialog() {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Admin Settings'),
         content: const Text('Settings dialog will be implemented here.'),
         actions: [

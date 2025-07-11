@@ -1,16 +1,16 @@
+import 'package:appoint/providers/studio_business_providers.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:appoint/providers/studio_business_providers.dart';
 
 class StaffAvailabilityScreen extends ConsumerWidget {
-  static const routeName = '/studio/staff-availability';
 
   const StaffAvailabilityScreen({super.key});
+  static const routeName = '/studio/staff-availability';
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final avail = ref.watch(staffAvailabilityProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    avail = ref.watch(staffAvailabilityProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Staff Availability'),
@@ -29,7 +29,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
         ],
       ),
       body: avail.when(
-        data: (final snap) {
+        data: (snap) {
           if (snap.docs.isEmpty) {
             return Center(
               child: Column(
@@ -59,9 +59,9 @@ class StaffAvailabilityScreen extends ConsumerWidget {
           return ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: snap.docs.length,
-            itemBuilder: (final context, final index) {
+            itemBuilder: (context, final index) {
               final doc = snap.docs[index];
-              final data = doc.data();
+              data = doc.data();
               return Card(
                 margin: const EdgeInsets.only(bottom: 12),
                 child: ListTile(
@@ -77,7 +77,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                          'Available Slots: ${data['availableSlots'] ?? 'N/A'}'),
+                          'Available Slots: ${data['availableSlots'] ?? 'N/A'}',),
                       if (data['timeRange'] != null)
                         Text('Time: ${data['timeRange']}'),
                       if (data['daysOfWeek'] != null)
@@ -85,14 +85,14 @@ class StaffAvailabilityScreen extends ConsumerWidget {
                     ],
                   ),
                   trailing: PopupMenuButton<String>(
-                    onSelected: (final value) {
+                    onSelected: (value) {
                       if (value == 'edit') {
                         _showEditAvailabilityDialog(context, ref, doc);
                       } else if (value == 'delete') {
                         _showDeleteConfirmation(context, ref, doc.id);
                       }
                     },
-                    itemBuilder: (final context) => [
+                    itemBuilder: (context) => [
                       const PopupMenuItem(
                         value: 'edit',
                         child: Row(
@@ -121,7 +121,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final e, final _) => Center(
+        error: (e, final _) => Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -141,29 +141,29 @@ class StaffAvailabilityScreen extends ConsumerWidget {
   }
 
   void _showAddAvailabilityDialog(
-      final BuildContext context, final WidgetRef ref) {
+      BuildContext context, final WidgetRef ref,) {
     showDialog(
       context: context,
-      builder: (final context) => const _AvailabilityDialog(),
+      builder: (context) => const _AvailabilityDialog(),
     );
   }
 
   void _showEditAvailabilityDialog(final BuildContext context,
-      final WidgetRef ref, final DocumentSnapshot doc) {
+      WidgetRef ref, final DocumentSnapshot doc,) {
     showDialog(
       context: context,
-      builder: (final context) => _AvailabilityDialog(editDoc: doc),
+      builder: (context) => _AvailabilityDialog(editDoc: doc),
     );
   }
 
   void _showDeleteConfirmation(
-      final BuildContext context, final WidgetRef ref, final String docId) {
+      BuildContext context, final WidgetRef ref, final String docId,) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Delete Availability'),
         content: const Text(
-            'Are you sure you want to delete this availability slot?'),
+            'Are you sure you want to delete this availability slot?',),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
@@ -171,11 +171,11 @@ class StaffAvailabilityScreen extends ConsumerWidget {
           ),
           TextButton(
             onPressed: () {
-              // TODO: Implement this featurent delete functionality
+              // TODO(username): Implement this featurent delete functionality
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
-                    content: Text('Delete functionality coming soon!')),
+                    content: Text('Delete functionality coming soon!'),),
               );
             },
             style: TextButton.styleFrom(foregroundColor: Colors.red),
@@ -188,26 +188,26 @@ class StaffAvailabilityScreen extends ConsumerWidget {
 }
 
 class _AvailabilityDialog extends StatefulWidget {
-  final DocumentSnapshot? editDoc;
 
   const _AvailabilityDialog({this.editDoc});
+  final DocumentSnapshot? editDoc;
 
   @override
   State<_AvailabilityDialog> createState() => _AvailabilityDialogState();
 }
 
 class _AvailabilityDialogState extends State<_AvailabilityDialog> {
-  final _formKey = GlobalKey<FormState>();
-  final _profileController = TextEditingController();
-  final _slotsController = TextEditingController();
-  final _timeRangeController = TextEditingController();
-  final _daysController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _profileController = TextEditingController();
+  _slotsController = TextEditingController();
+  _timeRangeController = TextEditingController();
+  _daysController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
     if (widget.editDoc != null) {
-      final data = widget.editDoc!.data() as Map<String, dynamic>;
+      data = widget.editDoc!.data()! as Map<String, dynamic>;
       _profileController.text = data['profileId'] ?? '';
       _slotsController.text = data['availableSlots']?.toString() ?? '';
       _timeRangeController.text = data['timeRange'] ?? '';
@@ -225,10 +225,9 @@ class _AvailabilityDialogState extends State<_AvailabilityDialog> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return AlertDialog(
+  Widget build(BuildContext context) => AlertDialog(
       title: Text(
-          widget.editDoc != null ? 'Edit Availability' : 'Add Availability'),
+          widget.editDoc != null ? 'Edit Availability' : 'Add Availability',),
       content: Form(
         key: _formKey,
         child: Column(
@@ -240,7 +239,7 @@ class _AvailabilityDialogState extends State<_AvailabilityDialog> {
                 labelText: 'Staff Member/Profile ID',
                 border: OutlineInputBorder(),
               ),
-              validator: (final value) {
+              validator: (value) {
                 if (value == null || value.isEmpty) {
                   return 'Please enter a staff member or profile ID';
                 }
@@ -256,7 +255,7 @@ class _AvailabilityDialogState extends State<_AvailabilityDialog> {
                 hintText: 'e.g., 10',
               ),
               keyboardType: TextInputType.number,
-              validator: (final value) {
+              validator: (value) {
                 if (value == null || value.isEmpty) {
                   return 'Please enter available slots';
                 }
@@ -292,13 +291,13 @@ class _AvailabilityDialogState extends State<_AvailabilityDialog> {
         ElevatedButton(
           onPressed: () {
             if (_formKey.currentState!.validate()) {
-              // TODO: Implement this featurent save functionality
+              // TODO(username): Implement this featurent save functionality
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text(widget.editDoc != null
                       ? 'Edit functionality coming soon!'
-                      : 'Add functionality coming soon!'),
+                      : 'Add functionality coming soon!',),
                 ),
               );
             }
@@ -307,5 +306,4 @@ class _AvailabilityDialogState extends State<_AvailabilityDialog> {
         ),
       ],
     );
-  }
 }

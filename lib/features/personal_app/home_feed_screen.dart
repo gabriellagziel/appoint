@@ -4,8 +4,8 @@ class HomeFeedScreen extends StatelessWidget {
   const HomeFeedScreen({super.key});
 
   @override
-  Widget build(final BuildContext context) {
-    // TODO: Implement actual state management for error and empty states
+  Widget build(BuildContext context) {
+    // TODO(username): Implement actual state management for error and empty states
     const body = Center(child: Text('Home Feed Screen'));
 
     return const Scaffold(

@@ -1,15 +1,21 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mocktail/mocktail.dart';
 import 'package:appoint/features/booking/widgets/chat_flow_widget.dart';
-import 'package:appoint/providers/booking_draft_provider.dart';
 import 'package:appoint/models/playtime_chat.dart';
+import 'package:appoint/providers/booking_draft_provider.dart';
 import 'package:appoint/services/auth_service.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
+
+import '../../firebase_test_helper.dart';
 
 class MockBookingDraftNotifier extends Mock implements BookingDraftNotifier {}
 
 void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
+
   group('ChatFlowWidget', () {
     late MockBookingDraftNotifier mockNotifier;
     late ProviderContainer container;
@@ -28,14 +34,12 @@ void main() {
       container.dispose();
     });
 
-    Widget createTestWidget() {
-      return ProviderScope(
+    Widget createTestWidget() => ProviderScope(
         parent: container,
         child: MaterialApp(
           home: ChatFlowWidget(auth: AuthService()),
         ),
       );
-    }
 
     group('Typing Indicator', () {
       testWidgets('should show typing indicator when other user is typing',
@@ -58,7 +62,7 @@ void main() {
           (WidgetTester tester) async {
         // Arrange
         when(() => mockNotifier.state).thenReturn(
-          BookingDraft(isOtherUserTyping: false),
+          BookingDraft(),
         );
 
         // Act
@@ -199,7 +203,7 @@ void main() {
         await tester.pump();
 
         // Assert
-        final sendButton = find.byIcon(Icons.send);
+        sendButton = find.byIcon(Icons.send);
         expect(tester.widget<IconButton>(sendButton).onPressed, isNull);
       });
 
@@ -217,7 +221,7 @@ void main() {
         await tester.pump();
 
         // Assert
-        final sendButton = find.byIcon(Icons.send);
+        sendButton = find.byIcon(Icons.send);
         expect(tester.widget<IconButton>(sendButton).onPressed, isNull);
       });
 
@@ -234,7 +238,7 @@ void main() {
         await tester.pump();
 
         // Assert
-        final sendButton = find.byIcon(Icons.send);
+        sendButton = find.byIcon(Icons.send);
         expect(tester.widget<IconButton>(sendButton).onPressed, isNotNull);
       });
     });
@@ -333,7 +337,7 @@ void main() {
         await tester.pump();
 
         // Try to tap send button (should be disabled)
-        final sendButton = find.byIcon(Icons.send);
+        sendButton = find.byIcon(Icons.send);
         expect(tester.widget<IconButton>(sendButton).onPressed, isNull);
 
         // Assert

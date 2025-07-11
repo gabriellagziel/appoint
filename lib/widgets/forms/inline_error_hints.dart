@@ -1,30 +1,11 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/theme/app_spacing.dart';
+import 'package:flutter/material.dart';
 
 /// Enhanced form field with inline error hints
 class InlineErrorFormField extends StatefulWidget {
-  final String label;
-  final String? hint;
-  final String? errorText;
-  final TextEditingController? controller;
-  final TextInputType? keyboardType;
-  final bool obscureText;
-  final Widget? prefixIcon;
-  final Widget? suffixIcon;
-  final String? Function(String?)? validator;
-  final void Function(String)? onChanged;
-  final void Function(String)? onSubmitted;
-  final bool enabled;
-  final int? maxLines;
-  final int? maxLength;
-  final bool showErrorIcon;
-  final bool showSuccessIcon;
-  final Duration errorAnimationDuration;
-  final bool autoValidate;
 
   const InlineErrorFormField({
-    super.key,
-    required this.label,
+    required this.label, super.key,
     this.hint,
     this.errorText,
     this.controller,
@@ -43,6 +24,24 @@ class InlineErrorFormField extends StatefulWidget {
     this.errorAnimationDuration = const Duration(milliseconds: 300),
     this.autoValidate = false,
   });
+  final String label;
+  final String? hint;
+  final String? errorText;
+  final TextEditingController? controller;
+  final TextInputType? keyboardType;
+  final bool obscureText;
+  final Widget? prefixIcon;
+  final Widget? suffixIcon;
+  String? Function(String?)? validator;
+  void Function(String)? onChanged;
+  void Function(String)? onSubmitted;
+  final bool enabled;
+  final int? maxLines;
+  final int? maxLength;
+  final bool showErrorIcon;
+  final bool showSuccessIcon;
+  final Duration errorAnimationDuration;
+  final bool autoValidate;
 
   @override
   State<InlineErrorFormField> createState() => _InlineErrorFormFieldState();
@@ -75,7 +74,7 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
 
   void _validateField(String? value) {
     if (widget.validator != null) {
-      final error = widget.validator!(value);
+      error = widget.validator!(value);
       if (error != null && error != _currentError) {
         _currentError = error;
         _animationController.forward().then((_) {
@@ -89,7 +88,7 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    theme = Theme.of(context);
     final hasError = _currentError != null || widget.errorText != null;
     final errorMessage = _currentError ?? widget.errorText;
     final isValid = !hasError && _hasBeenTouched && widget.showSuccessIcon;
@@ -99,8 +98,7 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
       children: [
         AnimatedBuilder(
           animation: _shakeAnimation,
-          builder: (context, child) {
-            return Transform.translate(
+          builder: (context, child) => Transform.translate(
               offset: Offset(_shakeAnimation.value, 0),
               child: TextFormField(
                 controller: widget.controller,
@@ -133,7 +131,7 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
-                      color: hasError 
+                      color: hasError
                           ? theme.colorScheme.error
                           : theme.colorScheme.primary,
                       width: 2,
@@ -156,19 +154,18 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide(
-                      color: hasError 
+                      color: hasError
                           ? theme.colorScheme.error
                           : theme.colorScheme.outline,
                     ),
                   ),
                   filled: true,
-                  fillColor: hasError 
+                  fillColor: hasError
                       ? theme.colorScheme.error.withOpacity(0.05)
                       : theme.colorScheme.surface,
                 ),
               ),
-            );
-          },
+            ),
         ),
         if (hasError) ...[
           const SizedBox(height: AppSpacing.xs),
@@ -192,8 +189,7 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
     }
   }
 
-  Widget _buildErrorHint(String errorMessage, ThemeData theme) {
-    return AnimatedContainer(
+  Widget _buildErrorHint(String errorMessage, ThemeData theme) => AnimatedContainer(
       duration: const Duration(milliseconds: 200),
       child: Row(
         children: [
@@ -215,10 +211,8 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
         ],
       ),
     );
-  }
 
-  Widget _buildSuccessHint(ThemeData theme) {
-    return AnimatedContainer(
+  Widget _buildSuccessHint(ThemeData theme) => AnimatedContainer(
       duration: const Duration(milliseconds: 200),
       child: Row(
         children: [
@@ -238,25 +232,13 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
         ],
       ),
     );
-  }
 }
 
 /// Enhanced password field with inline validation
 class InlineErrorPasswordField extends StatefulWidget {
-  final String label;
-  final String? hint;
-  final String? errorText;
-  final TextEditingController? controller;
-  final String? Function(String?)? validator;
-  final void Function(String)? onChanged;
-  final void Function(String)? onSubmitted;
-  final bool enabled;
-  final bool showPasswordToggle;
-  final bool autoValidate;
 
   const InlineErrorPasswordField({
-    super.key,
-    required this.label,
+    required this.label, super.key,
     this.hint,
     this.errorText,
     this.controller,
@@ -267,9 +249,20 @@ class InlineErrorPasswordField extends StatefulWidget {
     this.showPasswordToggle = true,
     this.autoValidate = false,
   });
+  final String label;
+  final String? hint;
+  final String? errorText;
+  final TextEditingController? controller;
+  String? Function(String?)? validator;
+  void Function(String)? onChanged;
+  void Function(String)? onSubmitted;
+  final bool enabled;
+  final bool showPasswordToggle;
+  final bool autoValidate;
 
   @override
-  State<InlineErrorPasswordField> createState() => _InlineErrorPasswordFieldState();
+  State<InlineErrorPasswordField> createState() =>
+      _InlineErrorPasswordFieldState();
 }
 
 class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
@@ -279,14 +272,14 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
 
   void _validatePassword(String? value) {
     if (widget.validator != null) {
-      final error = widget.validator!(value);
+      error = widget.validator!(value);
       setState(() => _currentError = error);
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    theme = Theme.of(context);
     final hasError = _currentError != null || widget.errorText != null;
     final errorMessage = _currentError ?? widget.errorText;
 
@@ -330,7 +323,7 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
               borderSide: BorderSide(
-                color: hasError 
+                color: hasError
                     ? theme.colorScheme.error
                     : theme.colorScheme.primary,
                 width: 2,
@@ -346,13 +339,13 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
               borderSide: BorderSide(
-                color: hasError 
+                color: hasError
                     ? theme.colorScheme.error
                     : theme.colorScheme.outline,
               ),
             ),
             filled: true,
-            fillColor: hasError 
+            fillColor: hasError
                 ? theme.colorScheme.error.withOpacity(0.05)
                 : theme.colorScheme.surface,
           ),
@@ -365,8 +358,7 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
     );
   }
 
-  Widget _buildErrorHint(String errorMessage, ThemeData theme) {
-    return Row(
+  Widget _buildErrorHint(String errorMessage, ThemeData theme) => Row(
       children: [
         Icon(
           Icons.error_outline,
@@ -385,23 +377,13 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
         ),
       ],
     );
-  }
 }
 
 /// Enhanced email field with inline validation
 class InlineErrorEmailField extends StatefulWidget {
-  final String label;
-  final String? hint;
-  final String? errorText;
-  final TextEditingController? controller;
-  final void Function(String)? onChanged;
-  final void Function(String)? onSubmitted;
-  final bool enabled;
-  final bool autoValidate;
 
   const InlineErrorEmailField({
-    super.key,
-    required this.label,
+    required this.label, super.key,
     this.hint,
     this.errorText,
     this.controller,
@@ -410,6 +392,14 @@ class InlineErrorEmailField extends StatefulWidget {
     this.enabled = true,
     this.autoValidate = false,
   });
+  final String label;
+  final String? hint;
+  final String? errorText;
+  final TextEditingController? controller;
+  void Function(String)? onChanged;
+  void Function(String)? onSubmitted;
+  final bool enabled;
+  final bool autoValidate;
 
   @override
   State<InlineErrorEmailField> createState() => _InlineErrorEmailFieldState();
@@ -423,18 +413,18 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
     if (value == null || value.isEmpty) {
       return 'Email is required';
     }
-    
-    final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+
+    emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
     if (!emailRegex.hasMatch(value)) {
       return 'Please enter a valid email address';
     }
-    
+
     return null;
   }
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    theme = Theme.of(context);
     final hasError = _currentError != null || widget.errorText != null;
     final errorMessage = _currentError ?? widget.errorText;
 
@@ -468,7 +458,7 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
               borderSide: BorderSide(
-                color: hasError 
+                color: hasError
                     ? theme.colorScheme.error
                     : theme.colorScheme.primary,
                 width: 2,
@@ -484,13 +474,13 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
               borderSide: BorderSide(
-                color: hasError 
+                color: hasError
                     ? theme.colorScheme.error
                     : theme.colorScheme.outline,
               ),
             ),
             filled: true,
-            fillColor: hasError 
+            fillColor: hasError
                 ? theme.colorScheme.error.withOpacity(0.05)
                 : theme.colorScheme.surface,
           ),
@@ -503,8 +493,7 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
     );
   }
 
-  Widget _buildErrorHint(String errorMessage, ThemeData theme) {
-    return Row(
+  Widget _buildErrorHint(String errorMessage, ThemeData theme) => Row(
       children: [
         Icon(
           Icons.error_outline,
@@ -523,23 +512,13 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
         ),
       ],
     );
-  }
 }
 
 /// Enhanced phone field with inline validation
 class InlineErrorPhoneField extends StatefulWidget {
-  final String label;
-  final String? hint;
-  final String? errorText;
-  final TextEditingController? controller;
-  final void Function(String)? onChanged;
-  final void Function(String)? onSubmitted;
-  final bool enabled;
-  final bool autoValidate;
 
   const InlineErrorPhoneField({
-    super.key,
-    required this.label,
+    required this.label, super.key,
     this.hint,
     this.errorText,
     this.controller,
@@ -548,6 +527,14 @@ class InlineErrorPhoneField extends StatefulWidget {
     this.enabled = true,
     this.autoValidate = false,
   });
+  final String label;
+  final String? hint;
+  final String? errorText;
+  final TextEditingController? controller;
+  void Function(String)? onChanged;
+  void Function(String)? onSubmitted;
+  final bool enabled;
+  final bool autoValidate;
 
   @override
   State<InlineErrorPhoneField> createState() => _InlineErrorPhoneFieldState();
@@ -561,24 +548,24 @@ class _InlineErrorPhoneFieldState extends State<InlineErrorPhoneField> {
     if (value == null || value.isEmpty) {
       return 'Phone number is required';
     }
-    
+
     // Remove all non-digit characters for validation
-    final digitsOnly = value.replaceAll(RegExp(r'[^\d]'), '');
-    
+    digitsOnly = value.replaceAll(RegExp(r'[^\d]'), '');
+
     if (digitsOnly.length < 10) {
       return 'Phone number must be at least 10 digits';
     }
-    
+
     if (digitsOnly.length > 15) {
       return 'Phone number is too long';
     }
-    
+
     return null;
   }
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
+    theme = Theme.of(context);
     final hasError = _currentError != null || widget.errorText != null;
     final errorMessage = _currentError ?? widget.errorText;
 
@@ -612,7 +599,7 @@ class _InlineErrorPhoneFieldState extends State<InlineErrorPhoneField> {
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
               borderSide: BorderSide(
-                color: hasError 
+                color: hasError
                     ? theme.colorScheme.error
                     : theme.colorScheme.primary,
                 width: 2,
@@ -628,13 +615,13 @@ class _InlineErrorPhoneFieldState extends State<InlineErrorPhoneField> {
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(8),
               borderSide: BorderSide(
-                color: hasError 
+                color: hasError
                     ? theme.colorScheme.error
                     : theme.colorScheme.outline,
               ),
             ),
             filled: true,
-            fillColor: hasError 
+            fillColor: hasError
                 ? theme.colorScheme.error.withOpacity(0.05)
                 : theme.colorScheme.surface,
           ),
@@ -647,8 +634,7 @@ class _InlineErrorPhoneFieldState extends State<InlineErrorPhoneField> {
     );
   }
 
-  Widget _buildErrorHint(String errorMessage, ThemeData theme) {
-    return Row(
+  Widget _buildErrorHint(String errorMessage, ThemeData theme) => Row(
       children: [
         Icon(
           Icons.error_outline,
@@ -667,7 +653,6 @@ class _InlineErrorPhoneFieldState extends State<InlineErrorPhoneField> {
         ),
       ],
     );
-  }
 }
 
 /// Form validation helper
@@ -681,7 +666,8 @@ class FormValidationHelper {
   }
 
   /// Validate minimum length
-  static String? validateMinLength(String? value, int minLength, String fieldName) {
+  static String? validateMinLength(
+      String? value, int minLength, String fieldName,) {
     if (value == null || value.length < minLength) {
       return '$fieldName must be at least $minLength characters';
     }
@@ -689,7 +675,8 @@ class FormValidationHelper {
   }
 
   /// Validate maximum length
-  static String? validateMaxLength(String? value, int maxLength, String fieldName) {
+  static String? validateMaxLength(
+      String? value, int maxLength, String fieldName,) {
     if (value != null && value.length > maxLength) {
       return '$fieldName must be no more than $maxLength characters';
     }
@@ -701,12 +688,12 @@ class FormValidationHelper {
     if (value == null || value.isEmpty) {
       return 'Email is required';
     }
-    
-    final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+
+    emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
     if (!emailRegex.hasMatch(value)) {
       return 'Please enter a valid email address';
     }
-    
+
     return null;
   }
 
@@ -715,17 +702,17 @@ class FormValidationHelper {
     if (value == null || value.isEmpty) {
       return 'Phone number is required';
     }
-    
-    final digitsOnly = value.replaceAll(RegExp(r'[^\d]'), '');
-    
+
+    digitsOnly = value.replaceAll(RegExp(r'[^\d]'), '');
+
     if (digitsOnly.length < 10) {
       return 'Phone number must be at least 10 digits';
     }
-    
+
     if (digitsOnly.length > 15) {
       return 'Phone number is too long';
     }
-    
+
     return null;
   }
 
@@ -734,23 +721,23 @@ class FormValidationHelper {
     if (value == null || value.isEmpty) {
       return 'Password is required';
     }
-    
+
     if (value.length < 8) {
       return 'Password must be at least 8 characters';
     }
-    
-    if (!RegExp(r'[A-Z]').hasMatch(value)) {
+
+    if (!RegExp('[A-Z]').hasMatch(value)) {
       return 'Password must contain at least one uppercase letter';
     }
-    
-    if (!RegExp(r'[a-z]').hasMatch(value)) {
+
+    if (!RegExp('[a-z]').hasMatch(value)) {
       return 'Password must contain at least one lowercase letter';
     }
-    
-    if (!RegExp(r'[0-9]').hasMatch(value)) {
+
+    if (!RegExp('[0-9]').hasMatch(value)) {
       return 'Password must contain at least one number';
     }
-    
+
     return null;
   }
 
@@ -759,11 +746,11 @@ class FormValidationHelper {
     if (value == null || value.isEmpty) {
       return null; // URL is optional
     }
-    
+
     try {
       Uri.parse(value);
       return null;
-    } catch (e) {
+    } catch (e) {e) {
       return 'Please enter a valid URL';
     }
   }
@@ -773,26 +760,26 @@ class FormValidationHelper {
     if (value == null || value.isEmpty) {
       return '$fieldName is required';
     }
-    
+
     if (double.tryParse(value) == null) {
       return '$fieldName must be a number';
     }
-    
+
     return null;
   }
 
   /// Validate positive number
   static String? validatePositiveNumber(String? value, String fieldName) {
-    final numericError = validateNumeric(value, fieldName);
+    numericError = validateNumeric(value, fieldName);
     if (numericError != null) {
       return numericError;
     }
-    
-    final number = double.parse(value!);
+
+    number = double.parse(value!);
     if (number <= 0) {
       return '$fieldName must be greater than 0';
     }
-    
+
     return null;
   }
-} 
+}

@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/l10n/l10n_contribution.dart';
+import 'package:flutter/material.dart';
 
 /// Simple UI allowing ambassadors to submit missing translations.
 class LocalizationContributionScreen extends StatefulWidget {
@@ -15,8 +15,8 @@ class REDACTED_TOKEN
   String? _selectedLocale;
 
   @override
-  Widget build(final BuildContext context) {
-    final locales = missingTranslations.keys.toList()..sort();
+  Widget build(BuildContext context) {
+    locales = missingTranslations.keys.toList()..sort();
     _selectedLocale ??= locales.isNotEmpty ? locales.first : null;
 
     return Scaffold(
@@ -31,14 +31,14 @@ class REDACTED_TOKEN
                   padding: const EdgeInsets.all(16),
                   child: DropdownButton<String>(
                     value: _selectedLocale,
-                    onChanged: (final val) =>
+                    onChanged: (val) =>
                         setState(() => _selectedLocale = val),
                     items: [
-                      for (final locale in locales)
+                      for (locale in locales)
                         DropdownMenuItem(
                           value: locale,
                           child: Text(locale),
-                        )
+                        ),
                     ],
                   ),
                 ),
@@ -46,7 +46,7 @@ class REDACTED_TOKEN
                   child: ListView(
                     padding: const EdgeInsets.all(16),
                     children: [
-                      for (final key in missingTranslations[_selectedLocale]!)
+                      for (key in missingTranslations[_selectedLocale]!)
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: TextField(
@@ -59,13 +59,13 @@ class REDACTED_TOKEN
                       const SizedBox(height: 16),
                       ElevatedButton(
                         onPressed: () {
-                          // TODO: Implement this featurend translations to backend
+                          // TODO(username): Implement this featurend translations to backend
                         },
                         child: const Text('Submit'),
                       ),
                     ],
                   ),
-                )
+                ),
               ],
             ),
     );

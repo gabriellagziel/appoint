@@ -1,20 +1,20 @@
+import 'package:appoint/models/admin_dashboard_stats.dart';
+import 'package:appoint/providers/admin_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/admin_provider.dart';
-import 'package:appoint/models/admin_dashboard_stats.dart';
 
 class AdminActivityTab extends ConsumerWidget {
   const AdminActivityTab({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final activityLogs = ref.watch(activityLogsProvider({'limit': 50}));
+    activityLogs = ref.watch(activityLogsProvider({'limit': 50}));
 
     return activityLogs.when(
-      data: (final logs) => ListView.builder(
+      data: (logs) => ListView.builder(
         padding: const EdgeInsets.all(16),
         itemCount: logs.length,
-        itemBuilder: (final context, final index) {
+        itemBuilder: (context, final index) {
           final log = logs[index];
           return Card(
             margin: const EdgeInsets.only(bottom: 8),
@@ -44,11 +44,11 @@ class AdminActivityTab extends ConsumerWidget {
         },
       ),
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (final error, final stack) => Center(child: Text('Error: $error')),
+      error: (error, final stack) => Center(child: Text('Error: $error')),
     );
   }
 
-  IconData _getActivityIcon(final String action) {
+  IconData _getActivityIcon(String action) {
     switch (action) {
       case 'create_broadcast':
         return Icons.broadcast_on_personal;
@@ -61,14 +61,12 @@ class AdminActivityTab extends ConsumerWidget {
     }
   }
 
-  String _formatDate(final DateTime date) {
-    return '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute}';
-  }
+  String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute}';
 
   void _showActivityDetailsDialog(BuildContext context, AdminActivityLog log) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: Text('Activity: ${log.action}'),
         content: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,7 +79,7 @@ class AdminActivityTab extends ConsumerWidget {
             Text('Timestamp: ${_formatDate(log.timestamp)}'),
             const SizedBox(height: 8),
             const Text('Details:',
-                style: TextStyle(fontWeight: FontWeight.bold)),
+                style: TextStyle(fontWeight: FontWeight.bold),),
             const SizedBox(height: 4),
             Container(
               padding: const EdgeInsets.all(8),

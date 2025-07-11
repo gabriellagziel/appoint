@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/parent_free_access.freezed.dart';
-part '../generated/models/parent_free_access.g.dart';
+part 'parent_free_access.freezed.dart';
+part 'parent_free_access.g.dart';
 
 enum FreeAccessStatus {
   active,
@@ -25,6 +25,6 @@ class ParentFreeAccess with _$ParentFreeAccess {
     final int? totalAccessCount,
   }) = _ParentFreeAccess;
 
-  factory ParentFreeAccess.fromJson(final Map<String, dynamic> json) =>
+  factory ParentFreeAccess.fromJson(Map<String, dynamic> json) =>
       _$ParentFreeAccessFromJson(json);
 }

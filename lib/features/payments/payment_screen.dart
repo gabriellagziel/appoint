@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import 'package:appoint/providers/payment_provider.dart';
 import 'package:appoint/services/payment_service.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class PaymentScreen extends ConsumerStatefulWidget {
   const PaymentScreen({super.key});
@@ -12,7 +11,7 @@ class PaymentScreen extends ConsumerStatefulWidget {
 }
 
 class _PaymentScreenState extends ConsumerState<PaymentScreen> {
-  final TextEditingController _amountController = TextEditingController();
+  TextEditingController _amountController = TextEditingController();
   PaymentStatus _paymentStatus = PaymentStatus.initial;
   String? _errorMessage;
 
@@ -23,7 +22,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
   }
 
   Future<void> _processPayment() async {
-    final amount = double.tryParse(_amountController.text) ?? 0;
+    amount = double.tryParse(_amountController.text) ?? 0;
     if (amount <= 0) {
       setState(() {
         _errorMessage = 'Please enter a valid amount';
@@ -34,7 +33,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
       _paymentStatus = PaymentStatus.processing;
       _errorMessage = null;
     });
-    final status = await ref.read(paymentServiceProvider).handlePayment(amount);
+    status = await ref.read(paymentServiceProvider).handlePayment(amount);
     setState(() {
       _paymentStatus = status;
     });
@@ -60,7 +59,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
               Navigator.of(context).pop();
               Navigator.of(context).pushReplacementNamed(
                   '/payment/confirmation',
-                  arguments: true);
+                  arguments: true,);
             },
             child: const Text('Continue'),
           ),
@@ -72,16 +71,16 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
   Widget _buildOverlay() {
     if (_paymentStatus == PaymentStatus.processing ||
         _paymentStatus == PaymentStatus.requiresAction) {
-      return Container(
+      return ColoredBox(
         color: Colors.black.withValues(alpha: 0.5),
-        child: Center(
+        child: const Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            children: const [
+            children: [
               CircularProgressIndicator(),
               SizedBox(height: 16),
               Text('Authenticating…',
-                  style: TextStyle(color: Colors.white, fontSize: 18)),
+                  style: TextStyle(color: Colors.white, fontSize: 18),),
             ],
           ),
         ),
@@ -91,7 +90,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     final isLoading = _paymentStatus == PaymentStatus.processing ||
         _paymentStatus == PaymentStatus.requiresAction;
     return Stack(

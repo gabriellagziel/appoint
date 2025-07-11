@@ -1,24 +1,23 @@
-import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 
 class SocialAccountConflictDialog extends StatelessWidget {
+
+  const SocialAccountConflictDialog({
+    required this.error, super.key,
+    this.onLinkAccounts,
+    this.onSignInWithExistingMethod,
+    this.onCancel,
+  });
   final FirebaseAuthException error;
   final VoidCallback? onLinkAccounts;
   final VoidCallback? onSignInWithExistingMethod;
   final VoidCallback? onCancel;
 
-  const SocialAccountConflictDialog({
-    super.key,
-    required this.error,
-    this.onLinkAccounts,
-    this.onSignInWithExistingMethod,
-    this.onCancel,
-  });
-
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+    l10n = AppLocalizations.of(context)!;
     final conflictingEmail = error.email ?? 'this email';
 
     return AlertDialog(

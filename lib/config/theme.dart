@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/theme/app_colors.dart';
 import 'package:appoint/theme/typography.dart';
+import 'package:flutter/material.dart';
 
 class AppTheme {
   // Color constants centralized in [AppColors]

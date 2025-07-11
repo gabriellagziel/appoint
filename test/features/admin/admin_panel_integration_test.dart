@@ -1,22 +1,24 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:mocktail/mocktail.dart';
-import 'package:appoint/features/admin/admin_dashboard_screen.dart';
 import 'package:appoint/features/admin/admin_broadcast_screen.dart';
+import 'package:appoint/features/admin/admin_dashboard_screen.dart';
 import 'package:appoint/features/admin/admin_monetization_screen.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/models/admin_broadcast_message.dart';
+import 'package:appoint/models/admin_dashboard_stats.dart';
 import 'package:appoint/providers/admin_provider.dart';
 import 'package:appoint/services/admin_service.dart';
-import 'package:appoint/models/admin_dashboard_stats.dart';
-import 'package:appoint/models/admin_broadcast_message.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import '../../fake_firebase_setup.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
+
+import '../../firebase_test_helper.dart';
 
 class MockAdminService extends Mock implements AdminService {}
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
   group('Admin Panel Integration Tests', () {
     late MockAdminService mockAdminService;
@@ -37,7 +39,7 @@ Future<void> main() async {
     });
 
     testWidgets('Admin Dashboard loads with stats',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       // Mock admin dashboard stats
       final mockStats = AdminDashboardStats(
         totalUsers: 1000,
@@ -45,9 +47,9 @@ Future<void> main() async {
         totalBookings: 500,
         completedBookings: 450,
         pendingBookings: 50,
-        totalRevenue: 10000.0,
-        adRevenue: 3000.0,
-        subscriptionRevenue: 7000.0,
+        totalRevenue: 10000,
+        adRevenue: 3000,
+        subscriptionRevenue: 7000,
         totalOrganizations: 25,
         activeOrganizations: 20,
         totalAmbassadors: 50,
@@ -67,8 +69,8 @@ Future<void> main() async {
       // Create a new container with the mock data
       final testContainer = ProviderContainer(
         overrides: [
-          adminDashboardStatsProvider.overrideWith((final ref) => mockStats),
-          isAdminProvider.overrideWith((final ref) => true),
+          adminDashboardStatsProvider.overrideWith((ref) => mockStats),
+          isAdminProvider.overrideWith((ref) => true),
         ],
       );
 
@@ -95,13 +97,13 @@ Future<void> main() async {
       expect(find.text('Total Bookings'), findsOneWidget);
       expect(find.text('500'), findsOneWidget);
       expect(find.text('Total Revenue'), findsOneWidget);
-      expect(find.text('\$10000.00'), findsOneWidget);
+      expect(find.text(r'$10000.00'), findsOneWidget);
 
       testContainer.dispose();
     });
 
     testWidgets('Admin Broadcast screen loads',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       // Mock broadcast messages
       final mockMessages = [
         AdminBroadcastMessage(
@@ -120,8 +122,8 @@ Future<void> main() async {
       // Create a new container with the mock data
       final testContainer = ProviderContainer(
         overrides: [
-          broadcastMessagesProvider.overrideWith((final ref) => mockMessages),
-          isAdminProvider.overrideWith((final ref) => true),
+          broadcastMessagesProvider.overrideWith((ref) => mockMessages),
+          isAdminProvider.overrideWith((ref) => true),
         ],
       );
 
@@ -150,24 +152,24 @@ Future<void> main() async {
     });
 
     testWidgets('Admin Monetization screen loads',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       // Mock monetization settings
       final mockSettings = MonetizationSettings(
         adsEnabledForFreeUsers: true,
         adsEnabledForChildren: false,
         adsEnabledForStudioUsers: true,
         adsEnabledForPremiumUsers: false,
-        adFrequencyForFreeUsers: 1.0,
-        adFrequencyForChildren: 0.0,
+        adFrequencyForFreeUsers: 1,
+        adFrequencyForChildren: 0,
         adFrequencyForStudioUsers: 0.5,
-        adFrequencyForPremiumUsers: 0.0,
+        adFrequencyForPremiumUsers: 0,
         enabledAdTypes: ['interstitial', 'banner'],
         adTypeSettings: {},
         lastUpdated: DateTime.now(),
       );
 
       when(() => mockAdminService.fetchMonetizationSettings())
-          .thenAnswer((final _) async => mockSettings);
+          .thenAnswer((_) async => mockSettings);
 
       // Build the monetization screen with proper localization
       await tester.pumpWidget(
@@ -197,9 +199,9 @@ Future<void> main() async {
         totalBookings: 50,
         completedBookings: 45,
         pendingBookings: 5,
-        totalRevenue: 1000.0,
-        adRevenue: 300.0,
-        subscriptionRevenue: 700.0,
+        totalRevenue: 1000,
+        adRevenue: 300,
+        subscriptionRevenue: 700,
         totalOrganizations: 5,
         activeOrganizations: 4,
         totalAmbassadors: 10,
@@ -217,9 +219,9 @@ Future<void> main() async {
       );
 
       when(() => mockAdminService.fetchAdminDashboardStats())
-          .thenAnswer((final _) async => mockStats);
+          .thenAnswer((_) async => mockStats);
 
-      final result = await mockAdminService.fetchAdminDashboardStats();
+      result = await mockAdminService.fetchAdminDashboardStats();
       expect(result.totalUsers, equals(100));
       expect(result.totalBookings, equals(50));
       expect(result.totalRevenue, equals(1000.0));
@@ -235,9 +237,9 @@ Future<void> main() async {
         totalBookings: 50,
         completedBookings: 45,
         pendingBookings: 5,
-        totalRevenue: 1000.0,
-        adRevenue: 300.0,
-        subscriptionRevenue: 700.0,
+        totalRevenue: 1000,
+        adRevenue: 300,
+        subscriptionRevenue: 700,
         totalOrganizations: 5,
         activeOrganizations: 4,
         totalAmbassadors: 10,
@@ -255,12 +257,12 @@ Future<void> main() async {
       );
 
       when(() => mockAdminService.fetchAdminDashboardStats())
-          .thenAnswer((final _) async => mockStats);
+          .thenAnswer((_) async => mockStats);
 
-      final stats = await container.read(adminDashboardStatsProvider.future);
+      stats = await container.read(adminDashboardStatsProvider.future);
       expect(stats.totalUsers, equals(100));
       expect(stats.totalBookings, equals(50));
       expect(stats.totalRevenue, equals(1000.0));
     });
-  }, skip: true);
+  }, skip: true,);
 }

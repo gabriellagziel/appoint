@@ -1,27 +1,26 @@
+import 'package:appoint/providers/admin_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/admin_provider.dart';
 
 /// A widget that only shows its child if the user has admin privileges.
 /// Shows an access denied screen for non-admin users.
 class AdminGuard extends ConsumerWidget {
+
+  const AdminGuard({
+    required this.child, super.key,
+    this.customMessage,
+    this.customAccessDeniedWidget,
+  });
   final Widget child;
   final String? customMessage;
   final Widget? customAccessDeniedWidget;
 
-  const AdminGuard({
-    super.key,
-    required this.child,
-    this.customMessage,
-    this.customAccessDeniedWidget,
-  });
-
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final isAdmin = ref.watch(isAdminProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    isAdmin = ref.watch(isAdminProvider);
 
     return isAdmin.when(
-      data: (final hasAdminAccess) {
+      data: (hasAdminAccess) {
         if (!hasAdminAccess) {
           return customAccessDeniedWidget ?? _buildDefaultAccessDeniedScreen();
         }
@@ -39,7 +38,7 @@ class AdminGuard extends ConsumerWidget {
           ),
         ),
       ),
-      error: (final error, final stack) => Scaffold(
+      error: (error, final stack) => Scaffold(
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -73,8 +72,7 @@ class AdminGuard extends ConsumerWidget {
     );
   }
 
-  Widget _buildDefaultAccessDeniedScreen() {
-    return Scaffold(
+  Widget _buildDefaultAccessDeniedScreen() => Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -115,27 +113,26 @@ class AdminGuard extends ConsumerWidget {
         ),
       ),
     );
-  }
 }
 
 /// A mixin that provides admin role checking functionality
 mixin AdminRoleMixin {
   /// Checks if the current user has admin privileges
-  Future<bool> checkAdminRole(final WidgetRef ref) async {
+  Future<bool> checkAdminRole(WidgetRef ref) async {
     try {
       return await ref.read(isAdminProvider.future);
-    } catch (e) {
+    } catch (e) {e) {
       return false;
     }
   }
 
   /// Shows an access denied snackbar
   void showAccessDeniedSnackBar(final BuildContext context,
-      {final String? message}) {
+      {String? message,}) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(
-            message ?? 'You do not have permission to perform this action.'),
+            message ?? 'You do not have permission to perform this action.',),
         backgroundColor: Colors.red,
       ),
     );

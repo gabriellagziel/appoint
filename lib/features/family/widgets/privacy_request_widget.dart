@@ -1,14 +1,13 @@
+import 'package:appoint/providers/family_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/family_provider.dart';
 
 class PrivacyRequestWidget extends ConsumerStatefulWidget {
-  final String childId;
 
   const PrivacyRequestWidget({
-    super.key,
-    required this.childId,
+    required this.childId, super.key,
   });
+  final String childId;
 
   @override
   ConsumerState<PrivacyRequestWidget> createState() =>
@@ -32,9 +31,9 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
           .fetchPrivacyRequests(widget.childId);
       setState(() {
         _hasActiveRequest =
-            requests.any((final req) => req.status == 'pending');
+            requests.any((req) => req.status == 'pending');
       });
-    } catch (e) {
+    } catch (e) {e) {
       // Handle error silently for now
     }
   }
@@ -59,7 +58,7 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
           ),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -78,8 +77,7 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Card(
+  Widget build(BuildContext context) => Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -139,5 +137,4 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
         ),
       ),
     );
-  }
 }
