@@ -1,6 +1,6 @@
 // ignore_for_file: avoid_print
-import 'dart:io';
 import 'dart:convert';
+import 'dart:io';
 
 void main() async {
   print('Generating localization dashboard...');
@@ -52,7 +52,7 @@ void main() async {
     });
 
     print(
-        '$languageCode: $completionRate% complete (${translatedKeys.length}/$baseKeyCount)');
+        '$languageCode: $completionRate% complete (${translatedKeys.length}/$baseKeyCount)',);
   }
 
   // Generate markdown report
@@ -69,7 +69,7 @@ Set<String> _extractKeys(FileSystemEntity file) {
 }
 
 Future<void> _generateMarkdownReport(
-    List<Map<String, dynamic>> statusData, int totalKeys) async {
+    List<Map<String, dynamic>> statusData, int totalKeys,) async {
   final report = StringBuffer();
 
   report.writeln('# Translation Status Report');

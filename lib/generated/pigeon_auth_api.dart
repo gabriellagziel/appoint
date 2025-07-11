@@ -1,3 +1,3 @@
 class AuthHostApi {
-  static void setup(final AuthHostApi api) {}
+  static void setup(AuthHostApi api) {}
 }

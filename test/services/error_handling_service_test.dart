@@ -1,12 +1,18 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:appoint/services/error_handling_service.dart';
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/services/error_handling_service.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
+
+import '../firebase_test_helper.dart';
 
 class MockAppLocalizations extends Mock implements AppLocalizations {}
 
 void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
+
   late ErrorHandlingService service;
   late MockAppLocalizations l10n;
 
@@ -223,15 +229,15 @@ void main() {
     };
 
     codes.forEach((code, expected) {
-      final e = FirebaseAuthException(code: code);
-      final result = service.getLocalizedFirebaseAuthError(e, l10n);
+      e = FirebaseAuthException(code: code);
+      result = service.getLocalizedFirebaseAuthError(e, l10n);
       expect(result, expected, reason: 'Failed for code: $code');
     });
   });
 
   test('returns unknown for unmapped error code', () {
-    final e = FirebaseAuthException(code: 'some-unknown-code');
-    final result = service.getLocalizedFirebaseAuthError(e, l10n);
+    e = FirebaseAuthException(code: 'some-unknown-code');
+    result = service.getLocalizedFirebaseAuthError(e, l10n);
     expect(result, l10n.authErrorUnknown);
   });
 }

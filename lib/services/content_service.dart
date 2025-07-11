@@ -1,13 +1,12 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-
 import 'package:appoint/models/content_item.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// Service for interacting with the content collection in Firestore.
 class ContentService {
-  final FirebaseFirestore _firestore;
 
-  ContentService({final FirebaseFirestore? firestore})
+  ContentService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
 
   CollectionReference<Map<String, dynamic>> get _col =>
       _firestore.collection('content_items');
@@ -17,7 +16,7 @@ class ContentService {
     final DocumentSnapshot<Map<String, dynamic>>? startAfter,
     final int limit = 20,
   }) {
-    Query<Map<String, dynamic>> query =
+    var query =
         _col.orderBy('createdAt', descending: true).limit(limit);
     if (startAfter != null) {
       query = query.startAfterDocument(startAfter);
@@ -29,14 +28,14 @@ class ContentService {
     final DocumentSnapshot<Map<String, dynamic>>? startAfter,
     final int limit = 20,
   }) async {
-    final snap = await fetchSnapshot(startAfter: startAfter, limit: limit);
+    snap = await fetchSnapshot(startAfter: startAfter, limit: limit);
     return snap.docs
-        .map((final d) => ContentItem.fromMap(d.id, d.data()))
+        .map((d) => ContentItem.fromMap(d.id, d.data()))
         .toList();
   }
 
-  Future<ContentItem?> fetchById(final String id) async {
-    final doc = await _col.doc(id).get();
+  Future<ContentItem?> fetchById(String id) async {
+    doc = await _col.doc(id).get();
     if (!doc.exists) return null;
     return ContentItem.fromMap(doc.id, doc.data()!);
   }

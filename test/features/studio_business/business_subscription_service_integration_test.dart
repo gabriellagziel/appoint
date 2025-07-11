@@ -1,9 +1,10 @@
-import 'package:flutter_test/flutter_test.dart';
+import 'package:appoint/features/studio_business/models/business_subscription.dart';
+import 'package:appoint/services/business_subscription_service.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
-import 'package:cloud_functions/cloud_functions.dart';
-import 'package:appoint/services/business_subscription_service.dart';
-import 'package:appoint/features/studio_business/models/business_subscription.dart';
+import 'package:flutter_test/flutter_test.dart';
+
 import '../../firebase_test_setup.dart';
 
 class MockFirebaseFunctions extends Fake implements FirebaseFunctions {}
@@ -45,7 +46,7 @@ void main() {
     test('validatePromoCode() returns valid promo code for active code',
         () async {
       // Arrange: seed a valid promo code
-      final now = DateTime.now();
+      now = DateTime.now();
       await fakeFs.collection('promoCodes').doc('FREE30').set({
         'id': 'FREE30',
         'code': 'FREE30',
@@ -62,7 +63,7 @@ void main() {
       });
 
       // Act
-      final result = await service.validatePromoCode('FREE30');
+      result = await service.validatePromoCode('FREE30');
 
       // Assert
       expect(result, isNotNull);
@@ -71,7 +72,7 @@ void main() {
 
     test('validatePromoCode() returns null for expired promo code', () async {
       // Arrange: expired code
-      final now = DateTime.now();
+      now = DateTime.now();
       await fakeFs.collection('promoCodes').doc('OLD').set({
         'id': 'OLD',
         'code': 'OLD',
@@ -88,7 +89,7 @@ void main() {
       });
 
       // Act
-      final result = await service.validatePromoCode('OLD');
+      result = await service.validatePromoCode('OLD');
 
       // Assert
       expect(result, isNull);
@@ -96,7 +97,7 @@ void main() {
 
     test('applyPromoCode() updates Firestore with promo code', () async {
       // Arrange: seed a valid promo code
-      final now = DateTime.now();
+      now = DateTime.now();
       await fakeFs.collection('promoCodes').doc('FREE30').set({
         'id': 'FREE30',
         'code': 'FREE30',
@@ -120,21 +121,21 @@ void main() {
           await fakeFs.collection('business_subscriptions').get();
       expect(subscriptionDocs.docs.length, 1);
 
-      final subscriptionData = subscriptionDocs.docs.first.data();
+      subscriptionData = subscriptionDocs.docs.first.data();
       expect(subscriptionData['businessId'], 'test-user');
       expect(subscriptionData['promoCodeId'], 'FREE30');
 
       // Assert: Check that promo code usage was incremented
       final promoCodeDoc =
           await fakeFs.collection('promoCodes').doc('FREE30').get();
-      final promoCodeData = promoCodeDoc.data();
+      promoCodeData = promoCodeDoc.data();
       expect(promoCodeData!['currentUses'], 1);
     });
 
     test('getCurrentSubscription() returns null when no subscription exists',
         () async {
       // Act
-      final result = await service.getCurrentSubscription();
+      result = await service.getCurrentSubscription();
 
       // Assert
       expect(result, isNull);
@@ -158,7 +159,7 @@ void main() {
       });
 
       // Act
-      final result = await service.getCurrentSubscription();
+      result = await service.getCurrentSubscription();
 
       // Assert
       expect(result, isNotNull);
@@ -169,7 +170,7 @@ void main() {
     test('hasActiveSubscription() returns false when no subscription exists',
         () async {
       // Act
-      final result = await service.hasActiveSubscription();
+      result = await service.hasActiveSubscription();
 
       // Assert
       expect(result, false);
@@ -193,7 +194,7 @@ void main() {
       });
 
       // Act
-      final result = await service.hasActiveSubscription();
+      result = await service.hasActiveSubscription();
 
       // Assert
       expect(result, true);

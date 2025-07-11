@@ -1,7 +1,6 @@
+import 'package:appoint/providers/family_support_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'package:appoint/providers/family_support_provider.dart';
 
 class FamilySupportScreen extends ConsumerStatefulWidget {
   const FamilySupportScreen({super.key});
@@ -12,14 +11,14 @@ class FamilySupportScreen extends ConsumerStatefulWidget {
 }
 
 class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _subjectController = TextEditingController();
-  final _messageController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _subjectController = TextEditingController();
+  _messageController = TextEditingController();
   bool _submitting = false;
 
   @override
-  Widget build(final BuildContext context) {
-    final ticketsAsync = ref.watch(supportTicketsProvider);
+  Widget build(BuildContext context) {
+    ticketsAsync = ref.watch(supportTicketsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Family Support')),
@@ -35,7 +34,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                   TextFormField(
                     controller: _subjectController,
                     decoration: const InputDecoration(labelText: 'Subject'),
-                    validator: (final v) =>
+                    validator: (v) =>
                         v == null || v.isEmpty ? 'Required' : null,
                   ),
                   const SizedBox(height: 8),
@@ -43,7 +42,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                     controller: _messageController,
                     decoration: const InputDecoration(labelText: 'Message'),
                     maxLines: 3,
-                    validator: (final v) =>
+                    validator: (v) =>
                         v == null || v.isEmpty ? 'Required' : null,
                   ),
                   const SizedBox(height: 8),
@@ -58,17 +57,17 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
             ),
             const SizedBox(height: 24),
             const Text('Past Tickets',
-                style: TextStyle(fontWeight: FontWeight.bold)),
+                style: TextStyle(fontWeight: FontWeight.bold),),
             const SizedBox(height: 8),
             ticketsAsync.when(
-              data: (final tickets) {
+              data: (tickets) {
                 if (tickets.isEmpty) {
                   return const Text('No tickets yet');
                 }
                 return Column(
                   children: tickets
                       .map(
-                        (final t) => Card(
+                        (t) => Card(
                           child: ListTile(
                             title: Text(t.subject),
                             subtitle: Text(t.message),
@@ -80,7 +79,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (final e, final _) => Text('Error: $e'),
+              error: (e, final _) => Text('Error: $e'),
             ),
           ],
         ),
@@ -102,7 +101,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
           const SnackBar(content: Text('Support ticket submitted')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text('Error: $e')));

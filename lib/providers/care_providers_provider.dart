@@ -1,37 +1,37 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/care_provider.dart';
 import 'package:appoint/services/care_provider_service.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final careProviderServiceProvider =
-    Provider<CareProviderService>((final ref) => CareProviderService());
+    Provider<CareProviderService>((ref) => CareProviderService());
 
 class CareProvidersNotifier
     extends StateNotifier<AsyncValue<List<CareProvider>>> {
-  final CareProviderService _service;
   CareProvidersNotifier(this._service) : super(const AsyncValue.loading()) {
     load();
   }
+  final CareProviderService _service;
 
   Future<void> load() async {
     try {
-      final data = await _service.fetchProviders();
+      data = await _service.fetchProviders();
       state = AsyncValue.data(data);
-    } catch (e, st) {
+    } catch (e) {e, st) {
       state = AsyncValue.error(e, st);
     }
   }
 
-  Future<void> add(final CareProvider provider) async {
+  Future<void> add(CareProvider provider) async {
     await _service.addProvider(provider);
     await load();
   }
 
-  Future<void> update(final CareProvider provider) async {
+  Future<void> update(CareProvider provider) async {
     await _service.updateProvider(provider);
     await load();
   }
 
-  Future<void> delete(final String id) async {
+  Future<void> delete(String id) async {
     await _service.deleteProvider(id);
     await load();
   }
@@ -39,5 +39,5 @@ class CareProvidersNotifier
 
 final careProvidersProvider = StateNotifierProvider<CareProvidersNotifier,
     AsyncValue<List<CareProvider>>>(
-  (final ref) => CareProvidersNotifier(ref.read(careProviderServiceProvider)),
+  (ref) => CareProvidersNotifier(ref.read(careProviderServiceProvider)),
 );

@@ -1,20 +1,21 @@
-import 'package:flutter/material.dart';
 import 'dart:math';
+
+import 'package:flutter/material.dart';
 
 /// Color contrast testing utilities for WCAG compliance
 class ColorContrastTesting {
   /// Calculate relative luminance of a color
   static double calculateRelativeLuminance(Color color) {
-    final double r = _normalizeColorComponent(color.red);
-    final double g = _normalizeColorComponent(color.green);
-    final double b = _normalizeColorComponent(color.blue);
+    r = _normalizeColorComponent(color.red);
+    g = _normalizeColorComponent(color.green);
+    b = _normalizeColorComponent(color.blue);
 
     return 0.2126 * r + 0.7152 * g + 0.0722 * b;
   }
 
   /// Normalize color component for luminance calculation
   static double _normalizeColorComponent(int component) {
-    final double normalized = component / 255.0;
+    final normalized = component / 255.0;
     return normalized <= 0.03928
         ? normalized / 12.92
         : pow((normalized + 0.055) / 1.055, 2.4).toDouble();
@@ -22,31 +23,34 @@ class ColorContrastTesting {
 
   /// Calculate contrast ratio between two colors
   static double calculateContrastRatio(Color color1, Color color2) {
-    final double luminance1 = calculateRelativeLuminance(color1);
-    final double luminance2 = calculateRelativeLuminance(color2);
+    luminance1 = calculateRelativeLuminance(color1);
+    luminance2 = calculateRelativeLuminance(color2);
 
-    final double lighter = max(luminance1, luminance2);
-    final double darker = min(luminance1, luminance2);
+    double lighter = max(luminance1, luminance2);
+    double darker = min(luminance1, luminance2);
 
     return (lighter + 0.05) / (darker + 0.05);
   }
 
   /// Check if contrast ratio meets WCAG AA standards
-  static bool meetsWCAGAA(Color foreground, Color background, {bool isLargeText = false}) {
-    final double ratio = calculateContrastRatio(foreground, background);
+  static bool meetsWCAGAA(Color foreground, Color background,
+      {bool isLargeText = false,}) {
+    ratio = calculateContrastRatio(foreground, background);
     return isLargeText ? ratio >= 3.0 : ratio >= 4.5;
   }
 
   /// Check if contrast ratio meets WCAG AAA standards
-  static bool meetsWCAGAAA(Color foreground, Color background, {bool isLargeText = false}) {
-    final double ratio = calculateContrastRatio(foreground, background);
+  static bool meetsWCAGAAA(Color foreground, Color background,
+      {bool isLargeText = false,}) {
+    ratio = calculateContrastRatio(foreground, background);
     return isLargeText ? ratio >= 4.5 : ratio >= 7.0;
   }
 
   /// Get contrast ratio with descriptive text
-  static String getContrastRatioDescription(Color foreground, Color background) {
-    final double ratio = calculateContrastRatio(foreground, background);
-    
+  static String getContrastRatioDescription(
+      Color foreground, Color background,) {
+    ratio = calculateContrastRatio(foreground, background);
+
     if (ratio >= 7.0) {
       return 'Excellent (${ratio.toStringAsFixed(2)}:1) - Meets WCAG AAA';
     } else if (ratio >= 4.5) {
@@ -59,13 +63,14 @@ class ColorContrastTesting {
   }
 
   /// Find accessible text color for a given background
-  static Color findAccessibleTextColor(Color background, {bool preferDark = true}) {
-    const Color black = Color(0xFF000000);
-    const Color white = Color(0xFFFFFFFF);
-    
-    final double blackContrast = calculateContrastRatio(black, background);
-    final double whiteContrast = calculateContrastRatio(white, background);
-    
+  static Color findAccessibleTextColor(Color background,
+      {bool preferDark = true,}) {
+    const black = Color(0xFF000000);
+    const white = Color(0xFFFFFFFF);
+
+    blackContrast = calculateContrastRatio(black, background);
+    whiteContrast = calculateContrastRatio(white, background);
+
     if (preferDark) {
       return blackContrast >= whiteContrast ? black : white;
     } else {
@@ -74,114 +79,114 @@ class ColorContrastTesting {
   }
 
   /// Generate accessible color palette
-  static List<Color> generateAccessiblePalette(Color baseColor, {int count = 5}) {
-    final List<Color> palette = [];
-    final double baseLuminance = calculateRelativeLuminance(baseColor);
-    
-    for (int i = 0; i < count; i++) {
-      final double factor = 0.2 + (i * 0.2);
-      final Color accessibleColor = _adjustColorLuminance(baseColor, factor);
+  static List<Color> generateAccessiblePalette(Color baseColor,
+      {int count = 5,}) {
+    final palette = <Color>[];
+    baseLuminance = calculateRelativeLuminance(baseColor);
+
+    for (var i = 0; i < count; i++) {
+      factor = 0.2 + (i * 0.2);
+      accessibleColor = _adjustColorLuminance(baseColor, factor);
       palette.add(accessibleColor);
     }
-    
+
     return palette;
   }
 
   /// Adjust color luminance while maintaining hue and saturation
   static Color _adjustColorLuminance(Color color, double factor) {
-    final HSLColor hsl = HSLColor.fromColor(color);
-    final double newLightness = (hsl.lightness * factor).clamp(0.0, 1.0);
+    hsl = HSLColor.fromColor(color);
+    newLightness = (hsl.lightness * factor).clamp(0.0, 1.0);
     return hsl.withLightness(newLightness).toColor();
   }
 
   /// Test color combinations in a theme
   static Map<String, bool> testThemeContrast(ThemeData theme) {
-    final Map<String, bool> results = {};
-    
+    final results = <String, bool>{};
+
     // Test primary colors
     results['primary_on_surface'] = meetsWCAGAA(
       theme.colorScheme.primary,
       theme.colorScheme.surface,
     );
-    
+
     results['on_primary_on_primary'] = meetsWCAGAA(
       theme.colorScheme.onPrimary,
       theme.colorScheme.primary,
     );
-    
+
     // Test secondary colors
     results['secondary_on_surface'] = meetsWCAGAA(
       theme.colorScheme.secondary,
       theme.colorScheme.surface,
     );
-    
+
     results['on_secondary_on_secondary'] = meetsWCAGAA(
       theme.colorScheme.onSecondary,
       theme.colorScheme.secondary,
     );
-    
+
     // Test error colors
     results['error_on_surface'] = meetsWCAGAA(
       theme.colorScheme.error,
       theme.colorScheme.surface,
     );
-    
+
     results['on_error_on_error'] = meetsWCAGAA(
       theme.colorScheme.onError,
       theme.colorScheme.error,
     );
-    
+
     // Test text colors
     results['on_surface_on_surface'] = meetsWCAGAA(
       theme.colorScheme.onSurface,
       theme.colorScheme.surface,
     );
-    
+
     results['on_background_on_background'] = meetsWCAGAA(
       theme.colorScheme.onSurface,
       theme.colorScheme.surface,
     );
-    
+
     return results;
   }
 
   /// Generate contrast report for a theme
   static String generateContrastReport(ThemeData theme) {
-    final Map<String, bool> results = testThemeContrast(theme);
-    final StringBuffer report = StringBuffer();
-    
+    results = testThemeContrast(theme);
+    report = StringBuffer();
+
     report.writeln('Color Contrast Report');
     report.writeln('===================');
     report.writeln();
-    
+
     results.forEach((String test, bool passed) {
-      final String status = passed ? '✅ PASS' : '❌ FAIL';
+      final status = passed ? '✅ PASS' : '❌ FAIL';
       report.writeln('$status: $test');
     });
-    
-    final int passedCount = results.values.where((bool passed) => passed).length;
-    final int totalCount = results.length;
-    final double passRate = (passedCount / totalCount) * 100;
-    
+
+    final passedCount =
+        results.values.where((bool passed) => passed).length;
+    final totalCount = results.length;
+    passRate = (passedCount / totalCount) * 100;
+
     report.writeln();
-    report.writeln('Summary: $passedCount/$totalCount tests passed (${passRate.toStringAsFixed(1)}%)');
-    
+    report.writeln(
+        'Summary: $passedCount/$totalCount tests passed (${passRate.toStringAsFixed(1)}%)',);
+
     return report.toString();
   }
 }
 
 /// Widget for testing color contrast
 class ColorContrastTester extends StatefulWidget {
+
+  const ColorContrastTester({
+    required this.foreground, required this.background, required this.label, super.key,
+  });
   final Color foreground;
   final Color background;
   final String label;
-
-  const ColorContrastTester({
-    super.key,
-    required this.foreground,
-    required this.background,
-    required this.label,
-  });
 
   @override
   State<ColorContrastTester> createState() => _ColorContrastTesterState();
@@ -201,7 +206,7 @@ class _ColorContrastTesterState extends State<ColorContrastTester> {
   @override
   void didUpdateWidget(ColorContrastTester oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.foreground != widget.foreground || 
+    if (oldWidget.foreground != widget.foreground ||
         oldWidget.background != widget.background) {
       _calculateContrast();
     }
@@ -223,8 +228,7 @@ class _ColorContrastTesterState extends State<ColorContrastTester> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Card(
+  Widget build(BuildContext context) => Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -257,23 +261,32 @@ class _ColorContrastTesterState extends State<ColorContrastTester> {
             Row(
               children: [
                 Icon(
-                  _meetsWCAGAAA ? Icons.check_circle : 
-                  _meetsWCAGAA ? Icons.warning : Icons.error,
-                  color: _meetsWCAGAAA ? Colors.green : 
-                         _meetsWCAGAA ? Colors.orange : Colors.red,
+                  _meetsWCAGAAA
+                      ? Icons.check_circle
+                      : _meetsWCAGAA
+                          ? Icons.warning
+                          : Icons.error,
+                  color: _meetsWCAGAAA
+                      ? Colors.green
+                      : _meetsWCAGAA
+                          ? Colors.orange
+                          : Colors.red,
                   size: 20,
                 ),
                 const SizedBox(width: 8),
                 Text(
                   '${_contrastRatio.toStringAsFixed(2)}:1',
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                        fontWeight: FontWeight.bold,
+                      ),
                 ),
                 const SizedBox(width: 8),
                 Text(
-                  _meetsWCAGAAA ? 'WCAG AAA' : 
-                  _meetsWCAGAA ? 'WCAG AA' : 'Below AA',
+                  _meetsWCAGAAA
+                      ? 'WCAG AAA'
+                      : _meetsWCAGAA
+                          ? 'WCAG AA'
+                          : 'Below AA',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
               ],
@@ -282,7 +295,6 @@ class _ColorContrastTesterState extends State<ColorContrastTester> {
         ),
       ),
     );
-  }
 }
 
 /// Screen for testing color contrast
@@ -290,7 +302,8 @@ class ColorContrastTestScreen extends StatefulWidget {
   const ColorContrastTestScreen({super.key});
 
   @override
-  State<ColorContrastTestScreen> createState() => _ColorContrastTestScreenState();
+  State<ColorContrastTestScreen> createState() =>
+      _ColorContrastTestScreenState();
 }
 
 class _ColorContrastTestScreenState extends State<ColorContrastTestScreen> {
@@ -317,8 +330,7 @@ class _ColorContrastTestScreenState extends State<ColorContrastTestScreen> {
   ];
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Color Contrast Testing'),
       ),
@@ -332,12 +344,13 @@ class _ColorContrastTestScreenState extends State<ColorContrastTestScreen> {
               style: Theme.of(context).textTheme.headlineSmall,
             ),
             const SizedBox(height: 16),
-            ..._testColors.expand((foreground) => 
-              _backgroundColors.map((background) => 
-                ColorContrastTester(
+            ..._testColors.expand(
+              (foreground) => _backgroundColors.map(
+                (background) => ColorContrastTester(
                   foreground: foreground,
                   background: background,
-                  label: '${_getColorName(foreground)} on ${_getColorName(background)}',
+                  label:
+                      '${_getColorName(foreground)} on ${_getColorName(background)}',
                 ),
               ),
             ),
@@ -351,7 +364,8 @@ class _ColorContrastTestScreenState extends State<ColorContrastTestScreen> {
               child: Padding(
                 padding: const EdgeInsets.all(16),
                 child: Text(
-                  ColorContrastTesting.generateContrastReport(Theme.of(context)),
+                  ColorContrastTesting.generateContrastReport(
+                      Theme.of(context),),
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ),
@@ -360,7 +374,6 @@ class _ColorContrastTestScreenState extends State<ColorContrastTestScreen> {
         ),
       ),
     );
-  }
 
   String _getColorName(Color color) {
     if (color == Colors.black) return 'Black';
@@ -380,53 +393,42 @@ class _ColorContrastTestScreenState extends State<ColorContrastTestScreen> {
 /// Mixin for adding contrast testing to widgets
 mixin ContrastTestingMixin {
   /// Test contrast for a widget's colors
-  bool testWidgetContrast(Color foreground, Color background) {
-    return ColorContrastTesting.meetsWCAGAA(foreground, background);
-  }
+  bool testWidgetContrast(Color foreground, Color background) => ColorContrastTesting.meetsWCAGAA(foreground, background);
 
   /// Get accessible text color for a background
-  Color getAccessibleTextColor(Color background) {
-    return ColorContrastTesting.findAccessibleTextColor(background);
-  }
+  Color getAccessibleTextColor(Color background) => ColorContrastTesting.findAccessibleTextColor(background);
 
   /// Generate accessible color palette
-  List<Color> generateAccessiblePalette(Color baseColor) {
-    return ColorContrastTesting.generateAccessiblePalette(baseColor);
-  }
+  List<Color> generateAccessiblePalette(Color baseColor) => ColorContrastTesting.generateAccessiblePalette(baseColor);
 }
 
 /// Provider for color contrast testing
 class ColorContrastProvider {
-  static final ColorContrastProvider _instance = ColorContrastProvider._internal();
   factory ColorContrastProvider() => _instance;
   ColorContrastProvider._internal();
+  static final ColorContrastProvider _instance =
+      ColorContrastProvider._internal();
 
   /// Test a color combination
-  bool testContrast(Color foreground, Color background) {
-    return ColorContrastTesting.meetsWCAGAA(foreground, background);
-  }
+  bool testContrast(Color foreground, Color background) => ColorContrastTesting.meetsWCAGAA(foreground, background);
 
   /// Get contrast ratio
-  double getContrastRatio(Color foreground, Color background) {
-    return ColorContrastTesting.calculateContrastRatio(foreground, background);
-  }
+  double getContrastRatio(Color foreground, Color background) => ColorContrastTesting.calculateContrastRatio(foreground, background);
 
   /// Generate contrast report for current theme
-  String generateThemeReport(ThemeData theme) {
-    return ColorContrastTesting.generateContrastReport(theme);
-  }
+  String generateThemeReport(ThemeData theme) => ColorContrastTesting.generateContrastReport(theme);
 
   /// Test all color combinations in a list
   Map<String, bool> testColorCombinations(List<Color> colors) {
-    final Map<String, bool> results = {};
-    
-    for (int i = 0; i < colors.length; i++) {
-      for (int j = i + 1; j < colors.length; j++) {
-        final String key = 'Color $i vs Color $j';
+    final results = <String, bool>{};
+
+    for (var i = 0; i < colors.length; i++) {
+      for (var j = i + 1; j < colors.length; j++) {
+        final key = 'Color $i vs Color $j';
         results[key] = ColorContrastTesting.meetsWCAGAA(colors[i], colors[j]);
       }
     }
-    
+
     return results;
   }
-} 
+}

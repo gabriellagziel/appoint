@@ -1,10 +1,10 @@
+import 'package:appoint/main.dart' as app;
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:appoint/main.dart' as app;
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
@@ -42,14 +42,14 @@ void main() {
     await firestore.collection('chats').add({'userId': uid, 'msg': 'hi'});
     await firestore.collection('profiles').doc(uid).set({'bio': 'bye'});
     await auth.signInWithEmailAndPassword(
-        email: testEmail, password: testPassword);
+        email: testEmail, password: testPassword,);
     expect(auth.currentUser, isNotNull);
     expect(auth.currentUser!.uid, equals(uid));
     app.main();
     await tester.pumpAndSettle(const Duration(seconds: 2));
-    final profileTab = find.text('Profile');
+    profileTab = find.text('Profile');
     if (profileTab.evaluate().isEmpty) {
-      final profileIcon = find.byIcon(Icons.person);
+      profileIcon = find.byIcon(Icons.person);
       if (profileIcon.evaluate().isNotEmpty) {
         await tester.tap(profileIcon);
         await tester.pumpAndSettle();
@@ -58,16 +58,16 @@ void main() {
       await tester.tap(profileTab);
       await tester.pumpAndSettle();
     }
-    final deleteButton = find.text('Delete My Account');
+    deleteButton = find.text('Delete My Account');
     expect(deleteButton, findsOneWidget);
     await tester.tap(deleteButton);
     await tester.pumpAndSettle();
-    final confirmDelete = find.widgetWithText(TextButton, 'Delete Account');
+    confirmDelete = find.widgetWithText(TextButton, 'Delete Account');
     expect(confirmDelete, findsOneWidget);
     await tester.tap(confirmDelete);
     await tester.pumpAndSettle(const Duration(seconds: 2));
     expect(auth.currentUser, isNull);
-    final userDoc = await firestore.collection('users').doc(uid).get();
+    userDoc = await firestore.collection('users').doc(uid).get();
     expect(userDoc.exists, isFalse);
     final bookings = await firestore
         .collection('bookings')
@@ -79,7 +79,7 @@ void main() {
         .where('userId', isEqualTo: uid)
         .get();
     expect(chats.docs, isEmpty);
-    final profileDoc = await firestore.collection('profiles').doc(uid).get();
+    profileDoc = await firestore.collection('profiles').doc(uid).get();
     expect(profileDoc.exists, isFalse);
     expect(find.text('Login'), findsOneWidget);
   });
@@ -96,21 +96,21 @@ void main() {
       password: testPassword,
     );
     await auth.signInWithEmailAndPassword(
-        email: testEmail, password: testPassword);
+        email: testEmail, password: testPassword,);
 
     // Start app and navigate to profile
     app.main();
     await tester.pumpAndSettle(const Duration(seconds: 2));
 
     // Navigate to Profile screen
-    final profileTab = find.text('Profile');
+    profileTab = find.text('Profile');
     if (profileTab.evaluate().isNotEmpty) {
       await tester.tap(profileTab);
       await tester.pumpAndSettle();
     }
 
     // Tap delete button
-    final deleteButton = find.text('Delete My Account');
+    deleteButton = find.text('Delete My Account');
     await tester.tap(deleteButton);
     await tester.pumpAndSettle();
 
@@ -142,26 +142,26 @@ void main() {
     });
 
     await auth.signInWithEmailAndPassword(
-        email: testEmail, password: testPassword);
+        email: testEmail, password: testPassword,);
 
     // Start app and navigate to profile
     app.main();
     await tester.pumpAndSettle(const Duration(seconds: 2));
 
     // Navigate to Profile screen
-    final profileTab = find.text('Profile');
+    profileTab = find.text('Profile');
     if (profileTab.evaluate().isNotEmpty) {
       await tester.tap(profileTab);
       await tester.pumpAndSettle();
     }
 
     // Tap delete button
-    final deleteButton = find.text('Delete My Account');
+    deleteButton = find.text('Delete My Account');
     await tester.tap(deleteButton);
     await tester.pumpAndSettle();
 
     // Tap cancel button
-    final cancelButton = find.text('Cancel');
+    cancelButton = find.text('Cancel');
     await tester.tap(cancelButton);
     await tester.pumpAndSettle();
 
@@ -169,7 +169,7 @@ void main() {
     expect(find.text('Delete Account'), findsNothing);
     expect(auth.currentUser, isNotNull);
 
-    final userDoc = await firestore.collection('users').doc(uid).get();
+    userDoc = await firestore.collection('users').doc(uid).get();
     expect(userDoc.exists, isTrue);
   });
 }

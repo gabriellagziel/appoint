@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 
 class LoadingIndicator extends StatelessWidget {
-  final String? message;
-  final double size;
 
   const LoadingIndicator({
     super.key,
     this.message,
     this.size = 40.0,
   });
+  final String? message;
+  final double size;
 
   @override
-  Widget build(final BuildContext context) {
-    return Center(
+  Widget build(BuildContext context) => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -32,5 +31,4 @@ class LoadingIndicator extends StatelessWidget {
         ],
       ),
     );
-  }
 }

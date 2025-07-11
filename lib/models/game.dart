@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/game.freezed.dart';
-part '../generated/models/game.g.dart';
+part 'game.freezed.dart';
+part 'game.g.dart';
 
 @freezed
 class Game with _$Game {
@@ -18,6 +18,6 @@ class Game with _$Game {
     required final DateTime updatedAt,
   }) = _Game;
 
-  factory Game.fromJson(final Map<String, dynamic> json) =>
+  factory Game.fromJson(Map<String, dynamic> json) =>
       _$GameFromJson(json);
 }

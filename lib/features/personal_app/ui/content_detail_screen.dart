@@ -1,23 +1,22 @@
 // Displays a single content item retrieved from Firestore.
+import 'package:appoint/providers/content_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:appoint/providers/content_provider.dart';
-
 /// Shows details for a single content item.
 class ContentDetailScreen extends ConsumerWidget {
+
+  const ContentDetailScreen({required this.contentId, super.key});
   final String contentId;
 
-  const ContentDetailScreen({super.key, required this.contentId});
-
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final contentAsync = ref.watch(contentByIdProvider(contentId));
+  Widget build(BuildContext context, final WidgetRef ref) {
+    contentAsync = ref.watch(contentByIdProvider(contentId));
 
     return Scaffold(
       appBar: AppBar(title: const Text('Content Detail')),
       body: contentAsync.when(
-        data: (final item) {
+        data: (item) {
           if (item == null) {
             return const Center(child: Text('Content not found'));
           }
@@ -39,7 +38,7 @@ class ContentDetailScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final e, final _) => Center(child: Text('Error: $e')),
+        error: (e, final _) => Center(child: Text('Error: $e')),
       ),
     );
   }

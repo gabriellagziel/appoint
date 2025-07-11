@@ -3,18 +3,18 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class PerformanceService {
-  static final PerformanceService _instance = PerformanceService._internal();
   factory PerformanceService() => _instance;
   PerformanceService._internal();
+  static PerformanceService _instance = PerformanceService._internal();
 
   final FirebasePerformance _performance = FirebasePerformance.instance;
 
   /// Track custom trace
   Future<void> trackTrace(
     final String name,
-    final Future<void> Function() operation,
+    Future<void> Function() operation,
   ) async {
-    final trace = _performance.newTrace(name);
+    trace = _performance.newTrace(name);
     await trace.start();
 
     try {
@@ -33,7 +33,7 @@ class PerformanceService {
     final metric = _performance.newHttpMetric(
       url,
       HttpMethod.values.firstWhere(
-        (final e) =>
+        (e) =>
             e.toString().split('.').last.toUpperCase() == method.toUpperCase(),
       ),
     );
@@ -46,9 +46,9 @@ class PerformanceService {
   /// Track screen load time
   Future<void> trackScreenLoad(
     final String screenName,
-    final Future<void> Function() loadOperation,
+    Future<void> Function() loadOperation,
   ) async {
-    final trace = _performance.newTrace('screen_load_$screenName');
+    trace = _performance.newTrace('screen_load_$screenName');
     await trace.start();
 
     try {
@@ -68,8 +68,8 @@ class PerformanceService {
 
   /// Track app startup time
   Future<void> trackAppStartup(
-      final Future<void> Function() startupOperation) async {
-    final trace = _performance.newTrace('app_startup');
+      Future<void> Function() startupOperation,) async {
+    trace = _performance.newTrace('app_startup');
     await trace.start();
 
     try {
@@ -80,15 +80,15 @@ class PerformanceService {
   }
 
   /// Track feature usage
-  void trackFeatureUsage(final String featureName) {
-    final trace = _performance.newTrace('feature_usage_$featureName');
+  void trackFeatureUsage(String featureName) {
+    trace = _performance.newTrace('feature_usage_$featureName');
     trace.start();
     trace.stop();
   }
 
   /// Track error performance
-  void trackError(final String errorType, final String errorMessage) {
-    final trace = _performance.newTrace('error_$errorType');
+  void trackError(String errorType, final String errorMessage) {
+    trace = _performance.newTrace('error_$errorType');
     trace.putAttribute('error_message', errorMessage);
     trace.start();
     trace.stop();
@@ -96,10 +96,8 @@ class PerformanceService {
 }
 
 // Riverpod providers
-final performanceServiceProvider = Provider<PerformanceService>((final ref) {
-  return PerformanceService();
-});
+performanceServiceProvider = Provider<PerformanceService>((final ref) => PerformanceService());
 
-final performanceEnabledProvider = StateProvider<bool>((final ref) {
+performanceEnabledProvider = StateProvider<bool>((final ref) {
   return !kDebugMode; // Enable in release mode only
 });

@@ -1,11 +1,8 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import 'package:appoint/models/branch.dart';
 import 'package:appoint/services/branch_service.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final branchServiceProvider =
-    Provider<BranchService>((final ref) => BranchService());
+    Provider<BranchService>((ref) => BranchService());
 
-final branchesProvider = FutureProvider<List<Branch>>((final ref) async {
-  return ref.read(branchServiceProvider).fetchBranches();
-});
+branchesProvider = FutureProvider<List<Branch>>((final ref) async => ref.read(branchServiceProvider).fetchBranches());

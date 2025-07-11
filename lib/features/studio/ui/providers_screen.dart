@@ -1,14 +1,14 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/care_provider.dart';
 import 'package:appoint/providers/care_providers_provider.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ProvidersScreen extends ConsumerWidget {
   const ProvidersScreen({super.key});
 
   Future<void> _openEditor(final BuildContext context, final WidgetRef ref,
-      {final CareProvider? provider}) async {
-    final nameController = TextEditingController(text: provider?.name ?? '');
+      {CareProvider? provider,}) async {
+    nameController = TextEditingController(text: provider?.name ?? '');
     final specialtyController =
         TextEditingController(text: provider?.specialty ?? '');
     final contactController =
@@ -16,8 +16,7 @@ class ProvidersScreen extends ConsumerWidget {
 
     await showDialog(
       context: context,
-      builder: (final context) {
-        return AlertDialog(
+      builder: (context) => AlertDialog(
           title: Text(provider == null ? 'Add Provider' : 'Edit Provider'),
           content: Column(
             mainAxisSize: MainAxisSize.min,
@@ -59,14 +58,13 @@ class ProvidersScreen extends ConsumerWidget {
               child: const Text('Save'),
             ),
           ],
-        );
-      },
+        ),
     );
   }
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final provsAsync = ref.watch(careProvidersProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    provsAsync = ref.watch(careProvidersProvider);
     return Scaffold(
       appBar: AppBar(title: const Text('Providers')),
       floatingActionButton: FloatingActionButton(
@@ -74,13 +72,13 @@ class ProvidersScreen extends ConsumerWidget {
         child: const Icon(Icons.add),
       ),
       body: provsAsync.when(
-        data: (final provs) {
+        data: (provs) {
           if (provs.isEmpty) {
             return const Center(child: Text('No providers'));
           }
           return ListView.builder(
             itemCount: provs.length,
-            itemBuilder: (final context, final index) {
+            itemBuilder: (context, final index) {
               final p = provs[index];
               return ListTile(
                 title: Text(p.name),
@@ -105,7 +103,7 @@ class ProvidersScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final e, final _) => Center(child: Text('Error: $e')),
+        error: (e, final _) => Center(child: Text('Error: $e')),
       ),
     );
   }

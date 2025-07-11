@@ -2,8 +2,15 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class UserDeletionService {
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final FirebaseAuth _auth = FirebaseAuth.instance;
+
+  /// Constructor that accepts injected dependencies for testing
+  UserDeletionService({
+    FirebaseFirestore? firestore,
+    FirebaseAuth? auth,
+  }) : _firestore = firestore ?? FirebaseFirestore.instance,
+       _auth = auth ?? FirebaseAuth.instance;
+  final FirebaseFirestore _firestore;
+  final FirebaseAuth _auth;
 
   /// Deletes the current user account and all associated data
   Future<void> deleteCurrentUser() async {
@@ -23,14 +30,14 @@ class UserDeletionService {
 
       // Sign out to clear any remaining state
       await _auth.signOut();
-    } catch (e) {
+    } catch (e) {e) {
       throw Exception('Failed to delete user account: $e');
     }
   }
 
   /// Deletes all user data from Firestore collections
   Future<void> _deleteUserData(String uid) async {
-    final batch = _firestore.batch();
+    batch = _firestore.batch();
 
     // Delete user profile
     batch.delete(_firestore.collection('users').doc(uid));
@@ -40,7 +47,7 @@ class UserDeletionService {
         .collection('users')
         .doc(uid)
         .collection('settings')
-        .doc('notifications'));
+        .doc('notifications'),);
 
     // Delete business profile if exists
     batch.delete(_firestore.collection('business_profiles').doc(uid));
@@ -53,7 +60,7 @@ class UserDeletionService {
         .collection('bookings')
         .where('userId', isEqualTo: uid)
         .get();
-    for (final doc in userBookings.docs) {
+    for (doc in userBookings.docs) {
       batch.delete(doc.reference);
     }
 
@@ -62,7 +69,7 @@ class UserDeletionService {
         .collection('bookings')
         .where('businessId', isEqualTo: uid)
         .get();
-    for (final doc in businessBookings.docs) {
+    for (doc in businessBookings.docs) {
       batch.delete(doc.reference);
     }
 
@@ -71,7 +78,7 @@ class UserDeletionService {
         .collection('messages')
         .where('userId', isEqualTo: uid)
         .get();
-    for (final doc in chatMessages.docs) {
+    for (doc in chatMessages.docs) {
       batch.delete(doc.reference);
     }
 
@@ -80,7 +87,7 @@ class UserDeletionService {
         .collection('messages')
         .where('businessId', isEqualTo: uid)
         .get();
-    for (final doc in businessMessages.docs) {
+    for (doc in businessMessages.docs) {
       batch.delete(doc.reference);
     }
 
@@ -89,7 +96,7 @@ class UserDeletionService {
         .collection('personalAppointments')
         .where('userId', isEqualTo: uid)
         .get();
-    for (final doc in personalAppointments.docs) {
+    for (doc in personalAppointments.docs) {
       batch.delete(doc.reference);
     }
 
@@ -98,7 +105,7 @@ class UserDeletionService {
         .collection('notifications')
         .where('userId', isEqualTo: uid)
         .get();
-    for (final doc in notifications.docs) {
+    for (doc in notifications.docs) {
       batch.delete(doc.reference);
     }
 
@@ -107,7 +114,7 @@ class UserDeletionService {
         .collection('payments')
         .where('userId', isEqualTo: uid)
         .get();
-    for (final doc in payments.docs) {
+    for (doc in payments.docs) {
       batch.delete(doc.reference);
     }
 
@@ -116,7 +123,7 @@ class UserDeletionService {
         .collection('ambassadors')
         .where('userId', isEqualTo: uid)
         .get();
-    for (final doc in ambassadorRecords.docs) {
+    for (doc in ambassadorRecords.docs) {
       batch.delete(doc.reference);
     }
 
@@ -125,7 +132,7 @@ class UserDeletionService {
         .collection('family_invitations')
         .where('parentId', isEqualTo: uid)
         .get();
-    for (final doc in familyInvitations.docs) {
+    for (doc in familyInvitations.docs) {
       batch.delete(doc.reference);
     }
 
@@ -133,7 +140,7 @@ class UserDeletionService {
         .collection('family_invitations')
         .where('childId', isEqualTo: uid)
         .get();
-    for (final doc in childInvitations.docs) {
+    for (doc in childInvitations.docs) {
       batch.delete(doc.reference);
     }
 
@@ -142,18 +149,18 @@ class UserDeletionService {
         .collection('playtime_sessions')
         .where('userId', isEqualTo: uid)
         .get();
-    for (final doc in playtimeSessions.docs) {
+    for (doc in playtimeSessions.docs) {
       batch.delete(doc.reference);
     }
 
     // Delete survey responses
-    final surveys = await _firestore.collection('surveys').get();
-    for (final surveyDoc in surveys.docs) {
+    surveys = await _firestore.collection('surveys').get();
+    for (surveyDoc in surveys.docs) {
       final responses = await surveyDoc.reference
           .collection('responses')
           .where('userId', isEqualTo: uid)
           .get();
-      for (final doc in responses.docs) {
+      for (doc in responses.docs) {
         batch.delete(doc.reference);
       }
     }

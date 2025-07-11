@@ -1,11 +1,11 @@
+import 'package:appoint/features/studio_business/providers/business_availability_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/features/studio_business/providers/business_availability_provider.dart';
 
 class BusinessAvailabilityScreen extends ConsumerWidget {
   const BusinessAvailabilityScreen({super.key});
 
-  String _getDayName(final int weekday) {
+  String _getDayName(int weekday) {
     switch (weekday) {
       case 0:
         return 'Sunday';
@@ -27,15 +27,15 @@ class BusinessAvailabilityScreen extends ConsumerWidget {
   }
 
   Future<void> _pickTime(final BuildContext context, final TimeOfDay initial,
-      final void Function(TimeOfDay) onPicked) async {
-    final picked = await showTimePicker(context: context, initialTime: initial);
+      void Function(TimeOfDay) onPicked,) async {
+    picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) onPicked(picked);
   }
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final availability = ref.watch(businessAvailabilityProvider);
-    final notifier = ref.read(businessAvailabilityProvider.notifier);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    availability = ref.watch(businessAvailabilityProvider);
+    notifier = ref.read(businessAvailabilityProvider.notifier);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Business Availability'),
@@ -43,12 +43,12 @@ class BusinessAvailabilityScreen extends ConsumerWidget {
       ),
       body: ListView.separated(
         itemCount: availability.length,
-        separatorBuilder: (final _, final __) => const Divider(height: 1),
-        itemBuilder: (final context, final idx) {
+        separatorBuilder: (_, final __) => const Divider(height: 1),
+        itemBuilder: (context, final idx) {
           final avail = availability[idx];
           return ListTile(
             leading: Icon(avail.isOpen ? Icons.check_circle : Icons.cancel,
-                color: avail.isOpen ? Colors.green : Colors.red),
+                color: avail.isOpen ? Colors.green : Colors.red,),
             title: Text(_getDayName(avail.weekday)),
             subtitle: avail.isOpen
                 ? Row(
@@ -64,7 +64,7 @@ class BusinessAvailabilityScreen extends ConsumerWidget {
               children: [
                 Switch(
                   value: avail.isOpen,
-                  onChanged: (final v) => notifier.toggleOpen(avail.weekday, v),
+                  onChanged: (v) => notifier.toggleOpen(avail.weekday, v),
                 ),
                 if (avail.isOpen) ...[
                   IconButton(
@@ -73,8 +73,8 @@ class BusinessAvailabilityScreen extends ConsumerWidget {
                     onPressed: () => _pickTime(
                         context,
                         avail.start,
-                        (final t) =>
-                            notifier.setHours(avail.weekday, t, avail.end)),
+                        (t) =>
+                            notifier.setHours(avail.weekday, t, avail.end),),
                   ),
                   IconButton(
                     icon: const Icon(Icons.access_time_filled),
@@ -82,8 +82,8 @@ class BusinessAvailabilityScreen extends ConsumerWidget {
                     onPressed: () => _pickTime(
                         context,
                         avail.end,
-                        (final t) =>
-                            notifier.setHours(avail.weekday, avail.start, t)),
+                        (t) =>
+                            notifier.setHours(avail.weekday, avail.start, t),),
                   ),
                 ],
               ],

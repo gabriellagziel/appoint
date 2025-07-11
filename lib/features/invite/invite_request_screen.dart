@@ -1,9 +1,9 @@
 import 'dart:core';
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:appoint/models/contact.dart';
 import 'package:appoint/providers/invite_provider.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class InviteRequestScreen extends ConsumerStatefulWidget {
   const InviteRequestScreen({super.key});
@@ -14,10 +14,10 @@ class InviteRequestScreen extends ConsumerStatefulWidget {
 }
 
 class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
-  final _phoneController = TextEditingController();
-  final _emailController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _nameController = TextEditingController();
+  _phoneController = TextEditingController();
+  _emailController = TextEditingController();
   bool _requiresInstallFallback = false;
 
   @override
@@ -29,21 +29,21 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final String appointmentId =
-        ModalRoute.of(context)!.settings.arguments as String;
+  Widget build(BuildContext context) {
+    final appointmentId =
+        ModalRoute.of(context)!.settings.arguments! as String;
     return Scaffold(
       appBar: AppBar(title: const Text('Invite Contact')),
       body: Form(
         key: _formKey,
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16),
           child: Column(
             children: [
               TextFormField(
                 controller: _nameController,
                 decoration: const InputDecoration(labelText: 'Name'),
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter a name';
                   }
@@ -53,7 +53,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
               TextFormField(
                 controller: _phoneController,
                 decoration: const InputDecoration(labelText: 'Phone Number'),
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter a phone number';
                   }
@@ -68,7 +68,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
               SwitchListTile(
                 title: const Text('Requires Install Fallback'),
                 value: _requiresInstallFallback,
-                onChanged: (final v) =>
+                onChanged: (v) =>
                     setState(() => _requiresInstallFallback = v),
               ),
               const SizedBox(height: 16),
@@ -85,7 +85,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
                     );
                     await ref.read(inviteServiceProvider).sendInvite(
                         appointmentId, contact,
-                        requiresInstallFallback: _requiresInstallFallback);
+                        requiresInstallFallback: _requiresInstallFallback,);
                     if (!mounted) return;
                     // ignore: use_build_context_synchronously
                     Navigator.pop(context);

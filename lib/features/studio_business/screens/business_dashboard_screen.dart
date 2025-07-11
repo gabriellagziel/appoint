@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/features/studio_business/models/business_event.dart';
+import 'package:flutter/material.dart';
 
 class BusinessDashboardScreen extends StatelessWidget {
   const BusinessDashboardScreen({super.key});
 
   @override
-  Widget build(final BuildContext context) {
-    // TODO: Replace with real bookings from business service
-    final List<BusinessEvent> upcomingBookings = [];
+  Widget build(BuildContext context) {
+    // TODO(username): Replace with real bookings from business service
+    final upcomingBookings = <BusinessEvent>[];
 
     return Scaffold(
       appBar: AppBar(
@@ -18,7 +18,7 @@ class BusinessDashboardScreen extends StatelessWidget {
         child: ListView(
           children: [
             const Text('Upcoming Bookings',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
             const SizedBox(height: 8),
             if (upcomingBookings.isEmpty)
               const Card(
@@ -34,17 +34,17 @@ class BusinessDashboardScreen extends StatelessWidget {
                 ),
               )
             else
-              ...upcomingBookings.map((final event) => Card(
+              ...upcomingBookings.map((event) => Card(
                     child: ListTile(
                       title: Text(event.title),
                       subtitle: Text(
-                          '${event.startTime.hour}:${event.startTime.minute.toString().padLeft(2, '0')} → ${event.endTime.hour}:${event.endTime.minute.toString().padLeft(2, '0')}'),
+                          '${event.startTime.hour}:${event.startTime.minute.toString().padLeft(2, '0')} → ${event.endTime.hour}:${event.endTime.minute.toString().padLeft(2, '0')}',),
                       trailing: Text(event.type),
                     ),
-                  )),
+                  ),),
             const Divider(height: 32),
             const Text('Quick Actions',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
             const SizedBox(height: 8),
             Wrap(
               spacing: 12,

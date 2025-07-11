@@ -98,11 +98,34 @@ flutter gen-l10n
 3. Place files in appropriate directories
 
 ### 4. Configure Environment Variables
-Create a `.env` file in the root directory:
+
+**Important**: The application uses environment variables for sensitive configuration. See [Environment Setup Guide](docs/environment_setup.md) for detailed instructions.
+
+Create a `.env` file in the root directory with the following variables:
+
 ```env
+# Required for payments
 STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
-STRIPE_SECRET_KEY=your_stripe_secret_key
+
+# Required for Firebase
 FIREBASE_PROJECT_ID=your_firebase_project_id
+
+# Required for Google OAuth
+GOOGLE_CLIENT_ID=your_google_client_id
+
+# Optional - API endpoints (defaults provided)
+FAMILY_API_BASE_URL=https://api.yourapp.com/api/v1/family
+AUTH_REDIRECT_URI=http://localhost:8080/__/auth/handler
+DEEP_LINK_BASE_URL=https://app-oint-core.web.app
+WHATSAPP_BASE_URL=https://app-oint-core.web.app
+WHATSAPP_API_URL=https://wa.me/?text=
+```
+
+**Security Note**: Never commit your `.env` file to version control. It's already included in `.gitignore`.
+
+**Validation**: Run the environment validation script to check your setup:
+```bash
+dart scripts/validate_env.dart
 ```
 
 ### 5. Run the Application

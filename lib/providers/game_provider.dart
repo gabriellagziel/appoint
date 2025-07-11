@@ -1,9 +1,9 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/game.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final gameProvider =
     StateNotifierProvider<GameNotifier, AsyncValue<List<Game>>>(
-  (final ref) => GameNotifier(),
+  (ref) => GameNotifier(),
 );
 
 class GameNotifier extends StateNotifier<AsyncValue<List<Game>>> {
@@ -12,41 +12,41 @@ class GameNotifier extends StateNotifier<AsyncValue<List<Game>>> {
   Future<void> loadGames() async {
     state = const AsyncValue.loading();
     try {
-      // TODO: Implement actual game loading from API or Firestore
+      // TODO(username): Implement actual game loading from API or Firestore
       await Future.delayed(const Duration(seconds: 1));
       state = const AsyncValue.data([]);
-    } catch (error, stackTrace) {
+    } catch (e) {error, stackTrace) {
       state = AsyncValue.error(error, stackTrace);
     }
   }
 
-  Future<void> addGame(final Game game) async {
+  Future<void> addGame(Game game) async {
     try {
       final currentGames = state.value ?? [];
       state = AsyncValue.data([...currentGames, game]);
-    } catch (error, stackTrace) {
+    } catch (e) {error, stackTrace) {
       state = AsyncValue.error(error, stackTrace);
     }
   }
 
-  Future<void> updateGame(final Game game) async {
+  Future<void> updateGame(Game game) async {
     try {
       final currentGames = state.value ?? [];
       final updatedGames =
-          currentGames.map((final g) => g.id == game.id ? game : g).toList();
+          currentGames.map((g) => g.id == game.id ? game : g).toList();
       state = AsyncValue.data(updatedGames);
-    } catch (error, stackTrace) {
+    } catch (e) {error, stackTrace) {
       state = AsyncValue.error(error, stackTrace);
     }
   }
 
-  Future<void> deleteGame(final String gameId) async {
+  Future<void> deleteGame(String gameId) async {
     try {
       final currentGames = state.value ?? [];
       final updatedGames =
-          currentGames.where((final g) => g.id != gameId).toList();
+          currentGames.where((g) => g.id != gameId).toList();
       state = AsyncValue.data(updatedGames);
-    } catch (error, stackTrace) {
+    } catch (e) {error, stackTrace) {
       state = AsyncValue.error(error, stackTrace);
     }
   }

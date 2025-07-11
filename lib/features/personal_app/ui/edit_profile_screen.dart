@@ -4,13 +4,11 @@ class EditProfileScreen extends StatelessWidget {
   const EditProfileScreen({super.key});
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(title: const Text('Edit Profile')),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             GestureDetector(
               onTap: () {},
@@ -36,5 +34,4 @@ class EditProfileScreen extends StatelessWidget {
         ),
       ),
     );
-  }
 }

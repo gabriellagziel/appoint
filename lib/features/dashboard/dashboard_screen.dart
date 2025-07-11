@@ -1,38 +1,37 @@
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/providers/dashboard_provider.dart';
+import 'package:appoint/theme/app_spacing.dart';
+import 'package:appoint/widgets/app_scaffold.dart';
+import 'package:appoint/widgets/error_state.dart';
+import 'package:appoint/widgets/loading_state.dart';
+import 'package:appoint/widgets/responsive_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'package:appoint/providers/dashboard_provider.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/widgets/app_scaffold.dart';
-import 'package:appoint/widgets/loading_state.dart';
-import 'package:appoint/widgets/error_state.dart';
-import 'package:appoint/widgets/responsive_scaffold.dart';
-import 'package:appoint/theme/app_spacing.dart';
 
 class DashboardScreen extends ConsumerWidget {
   const DashboardScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final l10n = AppLocalizations.of(context)!;
-    final statsAsync = ref.watch(dashboardStatsProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    l10n = AppLocalizations.of(context)!;
+    statsAsync = ref.watch(dashboardStatsProvider);
 
     return AppScaffold(
       title: l10n.dashboard,
       body: statsAsync.when(
-        data: (final stats) {
+        data: (stats) {
           final cards = [
             _StatsCard(
                 title: 'Total Appointments',
-                value: '${stats.totalAppointments}'),
+                value: '${stats.totalAppointments}',),
             _StatsCard(
                 title: 'Completed Appointments',
-                value: '${stats.completedAppointments}'),
+                value: '${stats.completedAppointments}',),
             _StatsCard(
-                title: 'Pending Invites', value: '${stats.pendingInvites}'),
+                title: 'Pending Invites', value: '${stats.pendingInvites}',),
             _StatsCard(
                 title: 'Revenue',
-                value: '\$${stats.revenue.toStringAsFixed(2)}'),
+                value: '\$${stats.revenue.toStringAsFixed(2)}',),
           ];
 
           return ResponsiveScaffold(
@@ -54,7 +53,7 @@ class DashboardScreen extends ConsumerWidget {
           );
         },
         loading: () => const LoadingState(),
-        error: (final _, final __) => const ErrorState(
+        error: (_, final __) => const ErrorState(
           title: 'Error',
           description: 'Error loading stats',
         ),
@@ -70,12 +69,10 @@ class _StatsCard extends StatelessWidget {
   final String value;
 
   @override
-  Widget build(final BuildContext context) {
-    return Card(
+  Widget build(BuildContext context) => Card(
       child: ListTile(
         title: Text(title),
         subtitle: Text(value),
       ),
     );
-  }
 }

@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/features/studio_business/models/business_event.dart';
+import 'package:flutter/material.dart';
 
 class BusinessCalendarScreen extends StatefulWidget {
   const BusinessCalendarScreen({super.key});
@@ -12,7 +12,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
-  // TODO: Replace with real calendar data from business service
+  // TODO(username): Replace with real calendar data from business service
   final List<BusinessEvent> _events = [];
 
   @override
@@ -28,8 +28,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Business Calendar'),
         centerTitle: true,
@@ -51,7 +50,6 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
         ],
       ),
     );
-  }
 
   Widget _buildDayView() {
     if (_events.isEmpty) {
@@ -138,7 +136,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
                           ),
                           Container(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 8, vertical: 4),
+                                horizontal: 8, vertical: 4,),
                             decoration: BoxDecoration(
                               color: Theme.of(context)
                                   .colorScheme

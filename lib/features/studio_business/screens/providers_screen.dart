@@ -1,13 +1,13 @@
+import 'package:appoint/providers/studio_business_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/studio_business_providers.dart';
 
 class ProvidersScreen extends ConsumerWidget {
   const ProvidersScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final providersAsync = ref.watch(businessProvidersProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    providersAsync = ref.watch(businessProvidersProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -20,7 +20,7 @@ class ProvidersScreen extends ConsumerWidget {
         ],
       ),
       body: providersAsync.when(
-        data: (final providers) {
+        data: (providers) {
           if (providers.isEmpty) {
             return const Center(
               child: Text('No providers found. Add your first provider!'),
@@ -30,7 +30,7 @@ class ProvidersScreen extends ConsumerWidget {
           return ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: providers.length,
-            itemBuilder: (final context, final index) {
+            itemBuilder: (context, final index) {
               final provider = providers[index];
               return Card(
                 margin: const EdgeInsets.only(bottom: 16),
@@ -45,14 +45,14 @@ class ProvidersScreen extends ConsumerWidget {
                     ),
                   ),
                   trailing: PopupMenuButton<String>(
-                    onSelected: (final value) {
+                    onSelected: (value) {
                       if (value == 'edit') {
                         _showEditProviderDialog(context, provider);
                       } else if (value == 'delete') {
                         _showDeleteConfirmation(context, provider['id']);
                       }
                     },
-                    itemBuilder: (final context) => [
+                    itemBuilder: (context) => [
                       const PopupMenuItem(
                         value: 'edit',
                         child: Text('Edit'),
@@ -69,20 +69,20 @@ class ProvidersScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final error, final stack) =>
+        error: (error, final stack) =>
             Center(child: Text('Error: $error')),
       ),
     );
   }
 
-  void _showAddProviderDialog(final BuildContext context) {
-    final formKey = GlobalKey<FormState>();
-    final nameController = TextEditingController();
-    final roleController = TextEditingController();
+  void _showAddProviderDialog(BuildContext context) {
+    formKey = GlobalKey<FormState>();
+    nameController = TextEditingController();
+    roleController = TextEditingController();
 
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Add Provider'),
         content: Form(
           key: formKey,
@@ -92,7 +92,7 @@ class ProvidersScreen extends ConsumerWidget {
               TextFormField(
                 controller: nameController,
                 decoration: const InputDecoration(labelText: 'Name'),
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter a name';
                   }
@@ -113,7 +113,7 @@ class ProvidersScreen extends ConsumerWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              // TODO: Implement this feature
+              // TODO(username): Implement this feature
             },
             child: const Text('Add'),
           ),
@@ -123,14 +123,14 @@ class ProvidersScreen extends ConsumerWidget {
   }
 
   void _showEditProviderDialog(
-      final BuildContext context, final Map<String, dynamic> provider) {
-    final formKey = GlobalKey<FormState>();
-    final nameController = TextEditingController(text: provider['name'] ?? '');
-    final roleController = TextEditingController(text: provider['role'] ?? '');
+      BuildContext context, final Map<String, dynamic> provider,) {
+    formKey = GlobalKey<FormState>();
+    nameController = TextEditingController(text: provider['name'] ?? '');
+    roleController = TextEditingController(text: provider['role'] ?? '');
 
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Edit Provider'),
         content: Form(
           key: formKey,
@@ -140,7 +140,7 @@ class ProvidersScreen extends ConsumerWidget {
               TextFormField(
                 controller: nameController,
                 decoration: const InputDecoration(labelText: 'Name'),
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter a name';
                   }
@@ -161,7 +161,7 @@ class ProvidersScreen extends ConsumerWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              // TODO: Implement this feature
+              // TODO(username): Implement this feature
             },
             child: const Text('Update'),
           ),
@@ -171,10 +171,10 @@ class ProvidersScreen extends ConsumerWidget {
   }
 
   void _showDeleteConfirmation(
-      final BuildContext context, final String providerId) {
+      BuildContext context, final String providerId,) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Delete Provider'),
         content: const Text('Are you sure you want to delete this provider?'),
         actions: [
@@ -184,7 +184,7 @@ class ProvidersScreen extends ConsumerWidget {
           ),
           ElevatedButton(
             onPressed: () {
-              // TODO: Implement this feature
+              // TODO(username): Implement this feature
             },
             style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
             child: const Text('Yes'),

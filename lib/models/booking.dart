@@ -1,9 +1,9 @@
 // ignore_for_file: invalid_annotation_target
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:appoint/utils/datetime_converter.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/booking.freezed.dart';
-part '../generated/models/booking.g.dart';
+part 'booking.freezed.dart';
+part 'booking.g.dart';
 
 @freezed
 class Booking with _$Booking {
@@ -23,6 +23,6 @@ class Booking with _$Booking {
     @DateTimeConverter() final DateTime? createdAt,
   }) = _Booking;
 
-  factory Booking.fromJson(final Map<String, dynamic> json) =>
+  factory Booking.fromJson(Map<String, dynamic> json) =>
       _$BookingFromJson(json);
 }

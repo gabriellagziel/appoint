@@ -1,17 +1,16 @@
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/features/child/providers/child_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'package:appoint/features/child/providers/child_providers.dart';
-import 'package:appoint/config/theme.dart';
 
 /// Simple dashboard for child users showing avatar, nickname and playtime status.
 class ChildDashboardScreen extends ConsumerWidget {
   const ChildDashboardScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final info = ref.watch(childInfoProvider);
-    final settings = ref.watch(childSettingsProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    info = ref.watch(childInfoProvider);
+    settings = ref.watch(childSettingsProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -22,8 +21,6 @@ class ChildDashboardScreen extends ConsumerWidget {
       body: Padding(
         padding: const EdgeInsets.all(24),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 60,

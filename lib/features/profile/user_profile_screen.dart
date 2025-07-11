@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/user_profile_provider.dart';
-import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/services/user_deletion_service.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class UserProfileScreen extends ConsumerWidget {
   const UserProfileScreen({super.key});
@@ -11,8 +11,7 @@ class UserProfileScreen extends ConsumerWidget {
   void _showDeleteAccountDialog(BuildContext context) {
     showDialog(
       context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
+      builder: (BuildContext context) => AlertDialog(
           title: const Text('Delete Account'),
           content: const Text(
             'Are you sure you want to delete your account? This action cannot be undone and will permanently remove all your data including:\n\n'
@@ -39,8 +38,7 @@ class UserProfileScreen extends ConsumerWidget {
               child: const Text('Delete Account'),
             ),
           ],
-        );
-      },
+        ),
     );
   }
 
@@ -50,8 +48,7 @@ class UserProfileScreen extends ConsumerWidget {
       showDialog(
         context: context,
         barrierDismissible: false,
-        builder: (BuildContext context) {
-          return const AlertDialog(
+        builder: (BuildContext context) => const AlertDialog(
             content: Row(
               children: [
                 CircularProgressIndicator(),
@@ -59,12 +56,11 @@ class UserProfileScreen extends ConsumerWidget {
                 Text('Deleting account...'),
               ],
             ),
-          );
-        },
+          ),
       );
 
       // Delete the account
-      final deletionService = UserDeletionService();
+      deletionService = UserDeletionService();
       await deletionService.deleteCurrentUser();
 
       // Close loading dialog
@@ -79,7 +75,7 @@ class UserProfileScreen extends ConsumerWidget {
           (route) => false,
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       // Close loading dialog
       if (context.mounted) {
         Navigator.of(context).pop();
@@ -98,14 +94,14 @@ class UserProfileScreen extends ConsumerWidget {
   }
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final l10n = AppLocalizations.of(context)!;
-    final authState = ref.watch(authStateProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    l10n = AppLocalizations.of(context)!;
+    authState = ref.watch(authStateProvider);
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.myProfile)),
       body: authState.when(
-        data: (final user) {
+        data: (user) {
           if (user == null) {
             return Center(
               child: Column(
@@ -123,9 +119,9 @@ class UserProfileScreen extends ConsumerWidget {
               ),
             );
           }
-          final profileAsync = ref.watch(currentUserProfileProvider);
+          profileAsync = ref.watch(currentUserProfileProvider);
           return profileAsync.when(
-            data: (final profile) {
+            data: (profile) {
               if (profile == null) {
                 return Center(child: Text(l10n.noProfileFound));
               }
@@ -155,12 +151,12 @@ class UserProfileScreen extends ConsumerWidget {
               );
             },
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (final _, final __) =>
+            error: (_, final __) =>
                 Center(child: Text(l10n.errorLoadingProfile)),
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final _, final __) =>
+        error: (_, final __) =>
             Center(child: Text(l10n.errorLoadingProfile)),
       ),
     );

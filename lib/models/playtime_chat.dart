@@ -10,7 +10,7 @@ class PlaytimeChat with _$PlaytimeChat {
     required final List<ChatMessage> messages,
   }) = _PlaytimeChat;
 
-  factory PlaytimeChat.fromJson(final Map<String, dynamic> json) =>
+  factory PlaytimeChat.fromJson(Map<String, dynamic> json) =>
       _$PlaytimeChatFromJson(json);
 }
 
@@ -25,6 +25,6 @@ class ChatMessage with _$ChatMessage {
     @Default(false) final bool isTyping,
   }) = _ChatMessage;
 
-  factory ChatMessage.fromJson(final Map<String, dynamic> json) =>
+  factory ChatMessage.fromJson(Map<String, dynamic> json) =>
       _$ChatMessageFromJson(json);
 }

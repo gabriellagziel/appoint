@@ -1,17 +1,16 @@
+import 'package:appoint/theme/app_colors.dart';
+import 'package:appoint/theme/app_theme.dart';
+import 'package:appoint/theme/sample_palettes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:appoint/theme/app_theme.dart';
-import 'package:appoint/theme/sample_palettes.dart';
-import 'package:appoint/theme/app_colors.dart';
-
 /// Holds the currently selected palette and theme mode.
 class ThemeState {
+  const ThemeState({required this.palette, required this.mode});
   final AppPalette palette;
   final ThemeMode mode;
-  const ThemeState({required this.palette, required this.mode});
 
-  ThemeState copyWith({final AppPalette? palette, final ThemeMode? mode}) =>
+  ThemeState copyWith({AppPalette? palette, final ThemeMode? mode}) =>
       ThemeState(
         palette: palette ?? this.palette,
         mode: mode ?? this.mode,
@@ -21,21 +20,19 @@ class ThemeState {
 class ThemeNotifier extends StateNotifier<ThemeState> {
   ThemeNotifier()
       : super(
-            const ThemeState(palette: AppPalette.blue, mode: ThemeMode.system));
+            const ThemeState(palette: AppPalette.blue, mode: ThemeMode.system),);
 
-  void setPalette(final AppPalette palette) {
+  void setPalette(AppPalette palette) {
     state = state.copyWith(palette: palette);
   }
 
-  void setMode(final ThemeMode mode) {
+  void setMode(ThemeMode mode) {
     state = state.copyWith(mode: mode);
   }
 }
 
 final themeNotifierProvider =
-    StateNotifierProvider<ThemeNotifier, ThemeState>((final ref) {
-  return ThemeNotifier();
-});
+    StateNotifierProvider<ThemeNotifier, ThemeState>((ref) => ThemeNotifier());
 
 /// Provides the light [ThemeData] based on the selected palette.
 final lightThemeProvider = Provider<ThemeData>((final ref) {
@@ -52,6 +49,4 @@ final darkThemeProvider = Provider<ThemeData>((final ref) {
 });
 
 /// Exposes the current [ThemeMode].
-final themeModeProvider = Provider<ThemeMode>((final ref) {
-  return ref.watch(themeNotifierProvider).mode;
-});
+final themeModeProvider = Provider<ThemeMode>((final ref) => ref.watch(themeNotifierProvider).mode);

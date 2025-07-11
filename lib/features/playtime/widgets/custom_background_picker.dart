@@ -1,20 +1,17 @@
+import 'dart:io';
+
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/models/playtime_background.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'dart:io';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:appoint/widgets/bottom_sheet_manager.dart';
-
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/config/theme.dart';
-import 'package:appoint/providers/playtime_provider.dart';
-import 'package:appoint/models/playtime_background.dart';
 
 class CustomBackgroundPicker extends ConsumerStatefulWidget {
-  final String? selectedBackgroundId;
-  final Function(String backgroundId)? onBackgroundSelected;
-  final bool showUploadOption;
 
   const CustomBackgroundPicker({
     super.key,
@@ -22,6 +19,9 @@ class CustomBackgroundPicker extends ConsumerStatefulWidget {
     this.onBackgroundSelected,
     this.showUploadOption = true,
   });
+  final String? selectedBackgroundId;
+  Function(String backgroundId)? onBackgroundSelected;
+  final bool showUploadOption;
 
   @override
   ConsumerState<CustomBackgroundPicker> createState() =>
@@ -40,8 +40,8 @@ class _CustomBackgroundPickerState
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+  Widget build(BuildContext context) {
+    l10n = AppLocalizations.of(context)!;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,11 +58,11 @@ class _CustomBackgroundPickerState
 
         // Background Grid
         Consumer(
-          builder: (final context, final ref, final child) {
-            final backgroundsAsync = ref.watch(allBackgroundsProvider);
+          builder: (context, final ref, final child) {
+            backgroundsAsync = ref.watch(allBackgroundsProvider);
 
             return backgroundsAsync.when(
-              data: (final backgrounds) {
+              data: (backgrounds) {
                 if (backgrounds.isEmpty) {
                   return _buildEmptyState(l10n);
                 }
@@ -79,7 +79,7 @@ class _CustomBackgroundPickerState
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (final error, final stack) => Text('Error: $error'),
+              error: (error, final stack) => Text('Error: $error'),
             );
           },
         ),
@@ -94,7 +94,7 @@ class _CustomBackgroundPickerState
   }
 
   Widget _buildBackgroundSection(final String title,
-      final List<PlaytimeBackground> backgrounds, final AppLocalizations l10n) {
+      List<PlaytimeBackground> backgrounds, final AppLocalizations l10n,) {
     if (backgrounds.isEmpty) return const SizedBox.shrink();
 
     return Column(
@@ -114,7 +114,7 @@ class _CustomBackgroundPickerState
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: backgrounds.length,
-            itemBuilder: (final context, final index) {
+            itemBuilder: (context, final index) {
               final background = backgrounds[index];
               return _buildBackgroundCard(background);
             },
@@ -124,7 +124,7 @@ class _CustomBackgroundPickerState
     );
   }
 
-  Widget _buildBackgroundCard(final PlaytimeBackground background) {
+  Widget _buildBackgroundCard(PlaytimeBackground background) {
     final isSelected = _selectedBackgroundId == background.id;
 
     return Container(
@@ -155,16 +155,14 @@ class _CustomBackgroundPickerState
                   width: double.infinity,
                   height: double.infinity,
                   fit: BoxFit.cover,
-                  errorBuilder: (final context, final error, final stackTrace) {
-                    return Container(
+                  errorBuilder: (context, final error, final stackTrace) => Container(
                       color: Colors.grey[200],
                       child: const Icon(
                         Icons.image,
                         size: 40,
                         color: Colors.grey,
                       ),
-                    );
-                  },
+                    ),
                 ),
               ),
 
@@ -215,8 +213,7 @@ class _CustomBackgroundPickerState
     );
   }
 
-  Widget _buildEmptyState(final AppLocalizations l10n) {
-    return Container(
+  Widget _buildEmptyState(AppLocalizations l10n) => Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
         color: Colors.grey[100],
@@ -250,12 +247,10 @@ class _CustomBackgroundPickerState
         ],
       ),
     );
-  }
 
-  Widget _buildUploadButton(final AppLocalizations l10n) {
-    return Consumer(
-      builder: (final context, final ref, final child) {
-        final uploadState = ref.watch(playtimeBackgroundNotifierProvider);
+  Widget _buildUploadButton(AppLocalizations l10n) => Consumer(
+      builder: (context, final ref, final child) {
+        uploadState = ref.watch(playtimeBackgroundNotifierProvider);
 
         return SizedBox(
           width: double.infinity,
@@ -276,7 +271,7 @@ class _CustomBackgroundPickerState
                 : const Icon(Icons.upload),
             label: Text(_isUploading || uploadState.isLoading
                 ? 'Uploading...'
-                : 'Upload Background'),
+                : 'Upload Background',),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppTheme.primaryColor,
               foregroundColor: Colors.white,
@@ -288,13 +283,12 @@ class _CustomBackgroundPickerState
         );
       },
     );
-  }
 
   void _showUploadDialog() {
     BottomSheetManager.show(
       context: context,
       child: _UploadBackgroundDialog(
-        onBackgroundUploaded: (final backgroundId) {
+        onBackgroundUploaded: (backgroundId) {
           setState(() {
             _selectedBackgroundId = backgroundId;
           });
@@ -306,9 +300,9 @@ class _CustomBackgroundPickerState
 }
 
 class _UploadBackgroundDialog extends ConsumerStatefulWidget {
-  final Function(String backgroundId) onBackgroundUploaded;
 
   const _UploadBackgroundDialog({required this.onBackgroundUploaded});
+  Function(String backgroundId) onBackgroundUploaded;
 
   @override
   ConsumerState<_UploadBackgroundDialog> createState() =>
@@ -317,9 +311,9 @@ class _UploadBackgroundDialog extends ConsumerStatefulWidget {
 
 class _UploadBackgroundDialogState
     extends ConsumerState<_UploadBackgroundDialog> {
-  final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
-  final _descriptionController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _nameController = TextEditingController();
+  _descriptionController = TextEditingController();
   File? _selectedImage;
   String _selectedCategory = 'Nature';
   final List<String> _selectedTags = [];
@@ -360,8 +354,7 @@ class _UploadBackgroundDialogState
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Container(
+  Widget build(BuildContext context) => Container(
       padding: const EdgeInsets.all(20),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -417,10 +410,8 @@ class _UploadBackgroundDialogState
         ],
       ),
     );
-  }
 
-  Widget _buildImageSelection() {
-    return Column(
+  Widget _buildImageSelection() => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -442,7 +433,6 @@ class _UploadBackgroundDialogState
               border: Border.all(
                 color: Colors.grey[300]!,
                 width: 2,
-                style: BorderStyle.solid,
               ),
             ),
             child: _selectedImage != null
@@ -475,10 +465,8 @@ class _UploadBackgroundDialogState
         ),
       ],
     );
-  }
 
-  Widget _buildBasicInfo() {
-    return Column(
+  Widget _buildBasicInfo() => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -499,7 +487,7 @@ class _UploadBackgroundDialogState
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          validator: (final value) {
+          validator: (value) {
             if (value == null || value.isEmpty) {
               return 'Please enter a name';
             }
@@ -517,7 +505,7 @@ class _UploadBackgroundDialogState
             ),
           ),
           maxLines: 3,
-          validator: (final value) {
+          validator: (value) {
             if (value == null || value.isEmpty) {
               return 'Please enter a description';
             }
@@ -526,10 +514,8 @@ class _UploadBackgroundDialogState
         ),
       ],
     );
-  }
 
-  Widget _buildCategorySelection() {
-    return Column(
+  Widget _buildCategorySelection() => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -548,13 +534,11 @@ class _UploadBackgroundDialogState
               borderRadius: BorderRadius.circular(12),
             ),
           ),
-          items: _categories.map((final category) {
-            return DropdownMenuItem(
+          items: _categories.map((category) => DropdownMenuItem(
               value: category,
               child: Text(category),
-            );
-          }).toList(),
-          onChanged: (final value) {
+            ),).toList(),
+          onChanged: (value) {
             setState(() {
               _selectedCategory = value!;
             });
@@ -562,10 +546,8 @@ class _UploadBackgroundDialogState
         ),
       ],
     );
-  }
 
-  Widget _buildTagsSelection() {
-    return Column(
+  Widget _buildTagsSelection() => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -580,12 +562,12 @@ class _UploadBackgroundDialogState
         Wrap(
           spacing: 8,
           runSpacing: 8,
-          children: _availableTags.map((final tag) {
-            final isSelected = _selectedTags.contains(tag);
+          children: _availableTags.map((tag) {
+            isSelected = _selectedTags.contains(tag);
             return FilterChip(
               label: Text(tag),
               selected: isSelected,
-              onSelected: (final selected) {
+              onSelected: (selected) {
                 setState(() {
                   if (selected) {
                     _selectedTags.add(tag);
@@ -602,10 +584,8 @@ class _UploadBackgroundDialogState
         ),
       ],
     );
-  }
 
-  Widget _buildActionButtons() {
-    return Row(
+  Widget _buildActionButtons() => Row(
       children: [
         Expanded(
           child: OutlinedButton(
@@ -645,14 +625,13 @@ class _UploadBackgroundDialogState
         ),
       ],
     );
-  }
 
   Future<void> _pickImage() async {
     if (kIsWeb) {
       return;
     }
-    final ImagePicker picker = ImagePicker();
-    final XFile? image = await picker.pickImage(
+    picker = ImagePicker();
+    final image = await picker.pickImage(
       source: ImageSource.gallery,
       maxWidth: 1024,
       maxHeight: 1024,
@@ -665,11 +644,9 @@ class _UploadBackgroundDialogState
     }
   }
 
-  bool _canUpload() {
-    return _selectedImage != null &&
+  bool _canUpload() => _selectedImage != null &&
         _nameController.text.isNotEmpty &&
         _descriptionController.text.isNotEmpty;
-  }
 
   Future<void> _uploadBackground() async {
     if (kIsWeb) {
@@ -715,7 +692,7 @@ class _UploadBackgroundDialogState
         // Refresh the background list
         ref.invalidate(allBackgroundsProvider);
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

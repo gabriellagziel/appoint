@@ -1,10 +1,9 @@
+import 'package:appoint/models/personal_appointment.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/providers/personal_scheduler_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:uuid/uuid.dart';
-
-import 'package:appoint/models/personal_appointment.dart';
-import 'package:appoint/providers/personal_scheduler_provider.dart';
-import 'package:appoint/providers/auth_provider.dart';
 
 class PersonalSchedulerScreen extends ConsumerStatefulWidget {
   const PersonalSchedulerScreen({super.key});
@@ -19,8 +18,8 @@ class _PersonalSchedulerScreenState
   DateTime _focusedDay = DateTime.now();
 
   @override
-  Widget build(final BuildContext context) {
-    final apptsAsync = ref.watch(personalAppointmentsProvider);
+  Widget build(BuildContext context) {
+    apptsAsync = ref.watch(personalAppointmentsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('My Schedule')),
@@ -30,16 +29,16 @@ class _PersonalSchedulerScreenState
             initialDate: _focusedDay,
             firstDate: DateTime(2000),
             lastDate: DateTime(2100),
-            onDateChanged: (final d) => setState(() => _focusedDay = d),
+            onDateChanged: (d) => setState(() => _focusedDay = d),
           ),
           Expanded(
             child: apptsAsync.when(
-              data: (final appts) {
+              data: (appts) {
                 final dayAppts = appts
-                    .where((final a) =>
+                    .where((a) =>
                         a.startTime.year == _focusedDay.year &&
                         a.startTime.month == _focusedDay.month &&
-                        a.startTime.day == _focusedDay.day)
+                        a.startTime.day == _focusedDay.day,)
                     .toList();
                 if (dayAppts.isEmpty) {
                   return const Center(child: Text('No appointments'));
@@ -47,7 +46,7 @@ class _PersonalSchedulerScreenState
                 return ListView(
                   children: dayAppts
                       .map(
-                        (final a) => ListTile(
+                        (a) => ListTile(
                           title: Text(a.title),
                           subtitle: Text(
                               '${a.startTime.hour.toString().padLeft(2, '0')}:${a.startTime.minute.toString().padLeft(2, '0')} - '
@@ -63,7 +62,7 @@ class _PersonalSchedulerScreenState
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (final e, final _) => Center(child: Text('Error: $e')),
+              error: (e, final _) => Center(child: Text('Error: $e')),
             ),
           ),
         ],
@@ -76,14 +75,14 @@ class _PersonalSchedulerScreenState
   }
 
   Future<void> _add() async {
-    final newAppt = await _showEditDialog();
+    newAppt = await _showEditDialog();
     if (newAppt != null) {
       await ref.read(personalSchedulerServiceProvider).addAppointment(newAppt);
     }
   }
 
-  Future<void> _edit(final PersonalAppointment appt) async {
-    final updated = await _showEditDialog(existing: appt);
+  Future<void> _edit(PersonalAppointment appt) async {
+    updated = await _showEditDialog(existing: appt);
     if (updated != null) {
       await ref
           .read(personalSchedulerServiceProvider)
@@ -91,22 +90,21 @@ class _PersonalSchedulerScreenState
     }
   }
 
-  Future<void> _delete(final String id) async {
+  Future<void> _delete(String id) async {
     await ref.read(personalSchedulerServiceProvider).deleteAppointment(id);
   }
 
   Future<PersonalAppointment?> _showEditDialog(
-      {final PersonalAppointment? existing}) {
-    final titleCtrl = TextEditingController(text: existing?.title);
-    final descCtrl = TextEditingController(text: existing?.description);
-    DateTime start = existing?.startTime ?? _focusedDay;
-    DateTime end =
+      {PersonalAppointment? existing,}) {
+    titleCtrl = TextEditingController(text: existing?.title);
+    descCtrl = TextEditingController(text: existing?.description);
+    var start = existing?.startTime ?? _focusedDay;
+    var end =
         existing?.endTime ?? _focusedDay.add(const Duration(hours: 1));
 
     return showDialog<PersonalAppointment>(
       context: context,
-      builder: (final context) {
-        return AlertDialog(
+      builder: (context) => AlertDialog(
           title:
               Text(existing == null ? 'New Appointment' : 'Edit Appointment'),
           content: SingleChildScrollView(
@@ -135,13 +133,13 @@ class _PersonalSchedulerScreenState
                           if (d != null) {
                             setState(() {
                               start = DateTime(d.year, d.month, d.day,
-                                  start.hour, start.minute);
+                                  start.hour, start.minute,);
                               end = start.add(const Duration(hours: 1));
                             });
                           }
                         },
                         child: Text(
-                            'Date: ${start.year}-${start.month}-${start.day}'),
+                            'Date: ${start.year}-${start.month}-${start.day}',),
                       ),
                     ),
                     Expanded(
@@ -154,13 +152,13 @@ class _PersonalSchedulerScreenState
                           if (t != null) {
                             setState(() {
                               start = DateTime(start.year, start.month,
-                                  start.day, t.hour, t.minute);
+                                  start.day, t.hour, t.minute,);
                               end = start.add(const Duration(hours: 1));
                             });
                           }
                         },
                         child: Text(
-                            'Start: ${start.hour.toString().padLeft(2, '0')}:${start.minute.toString().padLeft(2, '0')}'),
+                            'Start: ${start.hour.toString().padLeft(2, '0')}:${start.minute.toString().padLeft(2, '0')}',),
                       ),
                     ),
                   ],
@@ -175,7 +173,7 @@ class _PersonalSchedulerScreenState
             ),
             TextButton(
               onPressed: () {
-                final id = existing?.id ?? const Uuid().v4();
+                id = existing?.id ?? const Uuid().v4();
                 final userId =
                     existing?.userId ?? ref.read(authProvider).currentUser!.uid;
                 final appt = PersonalAppointment(
@@ -191,8 +189,7 @@ class _PersonalSchedulerScreenState
               child: const Text('Save'),
             ),
           ],
-        );
-      },
+        ),
     );
   }
 }

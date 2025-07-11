@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ExternalMeetingsScreen extends ConsumerWidget {
   const ExternalMeetingsScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
+  Widget build(BuildContext context, final WidgetRef ref) {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
       return const Scaffold(
@@ -23,7 +23,7 @@ class ExternalMeetingsScreen extends ConsumerWidget {
             .where('businessProfileId', isEqualTo: user.uid)
             .orderBy('date', descending: true)
             .snapshots(),
-        builder: (final context, final snapshot) {
+        builder: (context, final snapshot) {
           if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           }
@@ -43,8 +43,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
           return ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: meetings.length,
-            itemBuilder: (final context, final index) {
-              final meeting = meetings[index].data() as Map<String, dynamic>;
+            itemBuilder: (context, final index) {
+              meeting = meetings[index].data()! as Map<String, dynamic>;
               final meetingId = meetings[index].id;
 
               return Card(
@@ -67,7 +67,7 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                     ],
                   ),
                   trailing: PopupMenuButton(
-                    itemBuilder: (final context) => [
+                    itemBuilder: (context) => [
                       const PopupMenuItem(
                         value: 'join',
                         child: Text('Join'),
@@ -77,7 +77,7 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                         child: Text('Delete'),
                       ),
                     ],
-                    onSelected: (final value) {
+                    onSelected: (value) {
                       if (value == 'join') {
                         _joinMeeting(meeting['link']);
                       } else if (value == 'delete') {
@@ -94,20 +94,20 @@ class ExternalMeetingsScreen extends ConsumerWidget {
     );
   }
 
-  void _joinMeeting(final String? link) {
+  void _joinMeeting(String? link) {
     if (link == null) return;
     // In a real app, use url_launcher to open the link
-    // Removed debug print: print('Joining meeting: $link');
+    // Removed debug print: debugPrint('Joining meeting: $link');
   }
 
-  Future<void> _deleteMeeting(final String meetingId) async {
+  Future<void> _deleteMeeting(String meetingId) async {
     try {
       await FirebaseFirestore.instance
           .collection('externalMeetings')
           .doc(meetingId)
           .delete();
-    } catch (e) {
-      // Removed debug print: print('Error deleting meeting: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error deleting meeting: $e');
     }
   }
 }

@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part '../generated/models/smart_share_link.freezed.dart';
-part '../generated/models/smart_share_link.g.dart';
+part 'smart_share_link.freezed.dart';
+part 'smart_share_link.g.dart';
 
 @freezed
 class SmartShareLink with _$SmartShareLink {
@@ -14,7 +14,7 @@ class SmartShareLink with _$SmartShareLink {
     final String? shareChannel,
   }) = _SmartShareLink;
 
-  factory SmartShareLink.fromJson(final Map<String, dynamic> json) =>
+  factory SmartShareLink.fromJson(Map<String, dynamic> json) =>
       _$SmartShareLinkFromJson(json);
 }
 
@@ -30,7 +30,7 @@ class GroupRecognition with _$GroupRecognition {
     final DateTime? lastSharedAt,
   }) = _GroupRecognition;
 
-  factory GroupRecognition.fromJson(final Map<String, dynamic> json) =>
+  factory GroupRecognition.fromJson(Map<String, dynamic> json) =>
       _$GroupRecognitionFromJson(json);
 }
 
@@ -46,7 +46,7 @@ class ShareAnalytics with _$ShareAnalytics {
     final DateTime? respondedAt,
   }) = _ShareAnalytics;
 
-  factory ShareAnalytics.fromJson(final Map<String, dynamic> json) =>
+  factory ShareAnalytics.fromJson(Map<String, dynamic> json) =>
       _$ShareAnalyticsFromJson(json);
 }
 

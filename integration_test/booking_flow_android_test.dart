@@ -1,7 +1,7 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter/material.dart';
-import 'package:integration_test/integration_test.dart';
 import 'package:appoint/main.dart' as app;
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:integration_test/integration_test.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
@@ -22,14 +22,14 @@ void main() {
     expect(find.byIcon(Icons.calendar_month), findsWidgets);
 
     // Try to find and tap a calendar icon or date picker
-    final calendarIcons = find.byIcon(Icons.calendar_month);
+    calendarIcons = find.byIcon(Icons.calendar_month);
     if (calendarIcons.evaluate().isNotEmpty) {
       await tester.tap(calendarIcons.first);
       await tester.pumpAndSettle();
     }
 
     // Look for a confirm button
-    final confirmButton = find.text('Confirm');
+    confirmButton = find.text('Confirm');
     if (confirmButton.evaluate().isNotEmpty) {
       await tester.tap(confirmButton);
       await tester.pumpAndSettle();
@@ -44,8 +44,8 @@ void main() {
       'Confirmed',
     ];
 
-    bool foundSuccess = false;
-    for (final indicator in successIndicators) {
+    var foundSuccess = false;
+    for (indicator in successIndicators) {
       if (find.text(indicator).evaluate().isNotEmpty) {
         foundSuccess = true;
         break;

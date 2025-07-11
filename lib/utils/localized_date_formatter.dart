@@ -1,5 +1,5 @@
-import 'package:intl/intl.dart';
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:intl/intl.dart';
 
 /// Formats dates and relative times using the current locale.
 ///
@@ -9,20 +9,16 @@ class LocalizedDateFormatter {
   LocalizedDateFormatter(this._locale);
 
   /// Create a formatter from the generated [AppLocalizations].
-  factory LocalizedDateFormatter.fromL10n(final AppLocalizations l10n) {
-    return LocalizedDateFormatter(l10n.localeName);
-  }
+  factory LocalizedDateFormatter.fromL10n(AppLocalizations l10n) => LocalizedDateFormatter(l10n.localeName);
 
   final String _locale;
 
   /// Format a calendar date like "Jan 5, 2024" respecting locale.
-  String formatDate(final DateTime date) {
-    return DateFormat.yMMMMEEEEd(_locale).format(date);
-  }
+  String formatDate(DateTime date) => DateFormat.yMMMMEEEEd(_locale).format(date);
 
   /// Format the difference from [timestamp] to now in a human friendly form.
-  String formatRelative(final DateTime timestamp) {
-    final diff = DateTime.now().difference(timestamp);
+  String formatRelative(DateTime timestamp) {
+    diff = DateTime.now().difference(timestamp);
     if (diff.inMinutes < 1) {
       return Intl.message('just now', name: 'justNow', locale: _locale);
     }

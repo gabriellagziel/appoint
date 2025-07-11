@@ -12,9 +12,9 @@ void main() async {
     '-exec',
     'grep',
     '-l',
-    "part '.*\\.g\\.dart'",
+    r"part '.*\.g\.dart'",
     '{}',
-    ';'
+    ';',
   ]);
   final files = result.stdout.toString().trim().split('\n');
 
@@ -26,8 +26,8 @@ void main() async {
     final file = File(filePath);
     if (!await file.exists()) continue;
 
-    String content = await file.readAsString();
-    bool modified = false;
+    var content = await file.readAsString();
+    var modified = false;
 
     // Update part directives for .g.dart files
     content = content.replaceAllMapped(

@@ -1,20 +1,17 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/components/common/retry_button.dart';
+import 'package:flutter/material.dart';
 
 /// Generic screen to display an error with a retry option.
 class ErrorScreen extends StatelessWidget {
+
+  const ErrorScreen({
+    required this.message, required this.onRetry, super.key,
+  });
   final String message;
   final VoidCallback onRetry;
 
-  const ErrorScreen({
-    super.key,
-    required this.message,
-    required this.onRetry,
-  });
-
   @override
-  Widget build(final BuildContext context) {
-    return Center(
+  Widget build(BuildContext context) => Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -26,5 +23,4 @@ class ErrorScreen extends StatelessWidget {
         ],
       ),
     );
-  }
 }

@@ -1,21 +1,21 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/studio_business_providers.dart';
 import 'package:appoint/models/appointment.dart';
 import 'package:appoint/models/business_profile.dart';
+import 'package:appoint/providers/studio_business_providers.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class CRMDashboardScreen extends ConsumerWidget {
   const CRMDashboardScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final profileAsync = ref.watch(businessProfileProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    profileAsync = ref.watch(businessProfileProvider);
 
     return Scaffold(
       body: profileAsync.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final e, final _) => Center(child: Text('Error: $e')),
-        data: (final profile) => Row(
+        error: (e, final _) => Center(child: Text('Error: $e')),
+        data: (profile) => Row(
           children: [
             // Sidebar
             Container(
@@ -36,7 +36,7 @@ class CRMDashboardScreen extends ConsumerWidget {
                         Text(
                           profile.name,
                           style: const TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold),
+                              fontSize: 18, fontWeight: FontWeight.bold,),
                         ),
                       ],
                     ),
@@ -97,8 +97,7 @@ class CRMDashboardScreen extends ConsumerWidget {
 
   Widget _buildNavItem(final BuildContext context, final String title,
       final IconData icon, final VoidCallback onTap,
-      {final bool isSelected = false}) {
-    return ListTile(
+      {bool isSelected = false,}) => ListTile(
       leading: Icon(icon, color: isSelected ? Colors.blue : Colors.grey),
       title: Text(
         title,
@@ -110,21 +109,20 @@ class CRMDashboardScreen extends ConsumerWidget {
       onTap: onTap,
       selected: isSelected,
     );
-  }
 }
 
 class DashboardHome extends ConsumerWidget {
   const DashboardHome({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final profileAsync = ref.watch(businessProfileProvider);
-    final statsAsync = ref.watch(dashboardStatsProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    profileAsync = ref.watch(businessProfileProvider);
+    statsAsync = ref.watch(dashboardStatsProvider);
 
     return profileAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
-      error: (final e, final _) => Center(child: Text('Error: $e')),
-      data: (final profile) => Padding(
+      error: (e, final _) => Center(child: Text('Error: $e')),
+      data: (profile) => Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -141,7 +139,7 @@ class DashboardHome extends ConsumerWidget {
                         style: Theme.of(context).textTheme.headlineMedium,
                       ),
                       Text(
-                        'Here\'s what\'s happening with ${profile.name}',
+                        "Here's what's happening with ${profile.name}",
                         style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ],
@@ -151,13 +149,13 @@ class DashboardHome extends ConsumerWidget {
                 Row(
                   children: [
                     _buildStatCard('Weekly Bookings',
-                        '${statsAsync['totalBookings'] ?? 0}'),
+                        '${statsAsync['totalBookings'] ?? 0}',),
                     const SizedBox(width: 16),
                     _buildStatCard(
-                        'Total Clients', '${statsAsync['totalClients'] ?? 0}'),
+                        'Total Clients', '${statsAsync['totalClients'] ?? 0}',),
                     const SizedBox(width: 16),
                     _buildStatCard('Upcoming',
-                        '${statsAsync['upcomingAppointments'] ?? 0}'),
+                        '${statsAsync['upcomingAppointments'] ?? 0}',),
                   ],
                 ),
               ],
@@ -186,7 +184,7 @@ class DashboardHome extends ConsumerWidget {
                 Expanded(
                   child: _buildKPICard(
                     'Revenue',
-                    '\$1,200',
+                    r'$1,200',
                     Icons.attach_money,
                   ),
                 ),
@@ -225,8 +223,7 @@ class DashboardHome extends ConsumerWidget {
     );
   }
 
-  Widget _buildStatCard(final String title, final String value) {
-    return Card(
+  Widget _buildStatCard(String title, final String value) => Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -235,16 +232,14 @@ class DashboardHome extends ConsumerWidget {
             const SizedBox(height: 4),
             Text(value,
                 style:
-                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
           ],
         ),
       ),
     );
-  }
 
   Widget _buildKPICard(
-      final String title, final String value, final IconData icon) {
-    return Card(
+      String title, final String value, final IconData icon,) => Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -253,17 +248,15 @@ class DashboardHome extends ConsumerWidget {
             const SizedBox(height: 8),
             Text(value,
                 style:
-                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
             Text(title, style: const TextStyle(fontSize: 14)),
           ],
         ),
       ),
     );
-  }
 
   Widget _buildQuickAction(
-      final String title, final IconData icon, final VoidCallback onTap) {
-    return Expanded(
+      String title, final IconData icon, final VoidCallback onTap,) => Expanded(
       child: Card(
         child: InkWell(
           onTap: onTap,
@@ -280,7 +273,6 @@ class DashboardHome extends ConsumerWidget {
         ),
       ),
     );
-  }
 }
 
 // Real screens for other sections
@@ -288,15 +280,15 @@ class ClientsScreen extends ConsumerWidget {
   const ClientsScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final clientsAsync = ref.watch(clientsProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    clientsAsync = ref.watch(clientsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Clients')),
       body: clientsAsync.when(
-        data: (final clients) => ListView.builder(
+        data: (clients) => ListView.builder(
           itemCount: clients.length,
-          itemBuilder: (final context, final index) {
+          itemBuilder: (context, final index) {
             final client = clients[index];
             return ListTile(
               title: Text(client['name'] ?? 'Unknown'),
@@ -308,7 +300,7 @@ class ClientsScreen extends ConsumerWidget {
           },
         ),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final error, final stack) =>
+        error: (error, final stack) =>
             Center(child: Text('Error: $error')),
       ),
     );
@@ -319,15 +311,15 @@ class AppointmentsScreen extends ConsumerWidget {
   const AppointmentsScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final appointmentsAsync = ref.watch(appointmentsProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    appointmentsAsync = ref.watch(appointmentsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Appointments')),
       body: appointmentsAsync.when(
-        data: (final appointments) => ListView.builder(
+        data: (appointments) => ListView.builder(
           itemCount: appointments.length,
-          itemBuilder: (final context, final index) {
+          itemBuilder: (context, final index) {
             final appointment = appointments[index];
             return ListTile(
               title: Text(appointment.title),
@@ -337,7 +329,7 @@ class AppointmentsScreen extends ConsumerWidget {
           },
         ),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final error, final stack) =>
+        error: (error, final stack) =>
             Center(child: Text('Error: $error')),
       ),
     );

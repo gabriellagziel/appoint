@@ -1,24 +1,22 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/studio_business/models/staff_availability.dart';
 import 'package:appoint/features/studio_business/services/staff_availability_service.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final staffAvailabilityServiceProvider =
-    Provider<StaffAvailabilityService>((final ref) {
-  return StaffAvailabilityService();
-});
+    Provider<StaffAvailabilityService>((ref) => StaffAvailabilityService());
 
-final staffAvailabilityProvider =
+final FutureProviderFamily<List<StaffAvailability>, String> staffAvailabilityProvider =
     FutureProvider.family<List<StaffAvailability>, String>(
-  (final ref, final businessProfileId) async {
-    final service = ref.read(staffAvailabilityServiceProvider);
+  (ref, final businessProfileId) async {
+    service = ref.read(staffAvailabilityServiceProvider);
     return service.getStaffAvailability(businessProfileId);
   },
 );
 
-final staffAvailabilityByIdProvider =
+final FutureProviderFamily<StaffAvailability?, String> staffAvailabilityByIdProvider =
     FutureProvider.family<StaffAvailability?, String>(
-  (final ref, final staffProfileId) async {
-    final service = ref.read(staffAvailabilityServiceProvider);
+  (ref, final staffProfileId) async {
+    service = ref.read(staffAvailabilityServiceProvider);
     return service.getStaffAvailabilityById(staffProfileId);
   },
 );

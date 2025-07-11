@@ -1,14 +1,14 @@
 import 'dart:convert';
 import 'dart:io';
+
+import 'package:appoint/main.dart' as app;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:appoint/main.dart' as app;
 
 void main() {
-  IntegrationTestWidgetsFlutterBinding binding =
-      IntegrationTestWidgetsFlutterBinding.ensureInitialized()
-          as IntegrationTestWidgetsFlutterBinding;
+  final binding =
+      IntegrationTestWidgetsFlutterBinding.ensureInitialized();
   binding.framePolicy = LiveTestWidgetsFlutterBindingFramePolicy.fullyLive;
 
   testWidgets('booking flow perf', (tester) async {
@@ -24,12 +24,12 @@ void main() {
 
       await tester.tap(find.text('Confirm'));
       await tester.pumpAndSettle();
-    }, reportKey: 'booking_flow');
+    }, reportKey: 'booking_flow',);
 
     final summary = binding.reportData;
-    final file = File('performance/booking_flow_summary.json')
+    file = File('performance/booking_flow_summary.json')
       ..createSync(recursive: true);
     file.writeAsStringSync(jsonEncode(summary));
-    print('📊 Perf summary written to ${file.path}');
+    debugPrint('📊 Perf summary written to ${file.path}');
   });
 }

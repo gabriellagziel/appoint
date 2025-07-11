@@ -1,10 +1,29 @@
-import 'package:json_annotation/json_annotation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:json_annotation/json_annotation.dart';
 
-part '../../../generated/features/studio_business/models/business_profile.g.dart';
+part 'business_profile.g.dart';
 
 @JsonSerializable()
 class BusinessProfile {
+
+  BusinessProfile({
+    required this.id,
+    required this.name,
+    required this.description,
+    required this.address,
+    required this.phone,
+    required this.email,
+    required this.services, required this.businessHours, required this.createdAt, required this.updatedAt, this.website = '',
+    this.logoUrl,
+    this.coverImageUrl,
+    this.isActive = true,
+    this.ownerId,
+    this.imageUrl,
+    this.isAdminFreeAccess,
+  });
+
+  factory BusinessProfile.fromJson(Map<String, dynamic> json) =>
+      _$BusinessProfileFromJson(json);
   final String id;
   final String name;
   final String description;
@@ -22,29 +41,6 @@ class BusinessProfile {
   final String? ownerId;
   final String? imageUrl;
   final bool? isAdminFreeAccess;
-
-  BusinessProfile({
-    required this.id,
-    required this.name,
-    required this.description,
-    required this.address,
-    required this.phone,
-    required this.email,
-    this.website = '',
-    required this.services,
-    required this.businessHours,
-    this.logoUrl,
-    this.coverImageUrl,
-    this.isActive = true,
-    required this.createdAt,
-    required this.updatedAt,
-    this.ownerId,
-    this.imageUrl,
-    this.isAdminFreeAccess,
-  });
-
-  factory BusinessProfile.fromJson(final Map<String, dynamic> json) =>
-      _$BusinessProfileFromJson(json);
 
   Map<String, dynamic> toJson() => _$BusinessProfileToJson(this);
 
@@ -66,8 +62,7 @@ class BusinessProfile {
     final String? ownerId,
     final String? imageUrl,
     final bool? isAdminFreeAccess,
-  }) {
-    return BusinessProfile(
+  }) => BusinessProfile(
       id: id ?? this.id,
       name: name ?? this.name,
       description: description ?? this.description,
@@ -86,5 +81,4 @@ class BusinessProfile {
       imageUrl: imageUrl ?? this.imageUrl,
       isAdminFreeAccess: isAdminFreeAccess ?? this.isAdminFreeAccess,
     );
-  }
 }

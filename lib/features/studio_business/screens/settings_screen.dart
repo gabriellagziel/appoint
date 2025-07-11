@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {
@@ -34,7 +34,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           .get();
 
       if (doc.exists) {
-        final data = doc.data()!;
+        data = doc.data()!;
         setState(() {
           _notificationsEnabled = data['notificationsEnabled'] ?? true;
           _autoConfirmBookings = data['autoConfirmBookings'] ?? false;
@@ -42,8 +42,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           _smsNotifications = data['smsNotifications'] ?? false;
         });
       }
-    } catch (e) {
-      // Removed debug print: print('Error loading settings: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error loading settings: $e');
     }
   }
 
@@ -68,7 +68,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           const SnackBar(content: Text('Settings saved successfully!')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error saving settings: $e')),
@@ -78,8 +78,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Settings'),
         actions: [
@@ -101,7 +100,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             title: const Text('Enable Notifications'),
             subtitle: const Text('Receive push notifications for new bookings'),
             value: _notificationsEnabled,
-            onChanged: (final value) {
+            onChanged: (value) {
               setState(() {
                 _notificationsEnabled = value;
               });
@@ -111,7 +110,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             title: const Text('Email Notifications'),
             subtitle: const Text('Receive booking notifications via email'),
             value: _emailNotifications,
-            onChanged: (final value) {
+            onChanged: (value) {
               setState(() {
                 _emailNotifications = value;
               });
@@ -121,7 +120,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             title: const Text('SMS Notifications'),
             subtitle: const Text('Receive booking notifications via SMS'),
             value: _smsNotifications,
-            onChanged: (final value) {
+            onChanged: (value) {
               setState(() {
                 _smsNotifications = value;
               });
@@ -138,7 +137,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             title: const Text('Auto-Confirm Bookings'),
             subtitle: const Text('Automatically confirm new booking requests'),
             value: _autoConfirmBookings,
-            onChanged: (final value) {
+            onChanged: (value) {
               setState(() {
                 _autoConfirmBookings = value;
               });
@@ -165,7 +164,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             subtitle: const Text('Read our privacy policy'),
             onTap: () async {
               const url = 'https://yourdomain.com/privacy-policy';
-              final uri = Uri.parse(url);
+              uri = Uri.parse(url);
               if (await canLaunchUrl(uri)) {
                 await launchUrl(uri, mode: LaunchMode.externalApplication);
               } else {
@@ -184,7 +183,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             title: const Text('Help & Support'),
             subtitle: const Text('Get help with your account'),
             onTap: () {
-              // TODO: Implement this featurent help & support
+              // TODO(username): Implement this featurent help & support
             },
           ),
           ListTile(
@@ -199,7 +198,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                 applicationIcon: const FlutterLogo(size: 64),
                 children: const [
                   Text(
-                      'Business management app for studios and service providers.'),
+                      'Business management app for studios and service providers.',),
                 ],
               );
             },
@@ -207,5 +206,4 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         ],
       ),
     );
-  }
 }
