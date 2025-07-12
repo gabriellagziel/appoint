@@ -21,7 +21,6 @@ services:
     source_dir: "admin"
     build_command: "npm install && npm run build"
     run_command: "npm start"
-    output_dir: ".next"
     routes:
       - path: /admin
 
@@ -33,7 +32,6 @@ services:
     source_dir: "dashboard"
     build_command: "npm install && npm run build"
     run_command: "npm start"
-    output_dir: ".next"
     routes:
       - path: /dashboard
 
@@ -45,6 +43,5 @@ services:
     source_dir: "marketing"
     build_command: "npm install && npm run build"
     run_command: "npm start"
-    output_dir: ".next"
     routes:
       - path: / 
