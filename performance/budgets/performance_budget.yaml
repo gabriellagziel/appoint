@@ -1,0 +1,289 @@
+# Performance Budget Configuration
+# This file defines acceptable performance thresholds for the APP-OINT application
+
+# Overall application performance budget
+app_performance:
+  startup_time:
+    target: 2000ms      # 2 seconds target
+    warning: 2500ms     # Warning threshold
+    critical: 3000ms    # Critical threshold
+    description: "App startup time from launch to interactive state"
+  
+  frame_time:
+    target: 16ms        # 60 FPS target
+    warning: 20ms       # Warning threshold
+    critical: 33ms      # Critical threshold (30 FPS)
+    description: "Average frame rendering time"
+  
+  jank_percentage:
+    target: 2.0         # 2% jank target
+    warning: 5.0        # Warning threshold
+    critical: 10.0      # Critical threshold
+    description: "Percentage of frames that exceed 16ms"
+
+# Memory usage budget
+memory_usage:
+  baseline:
+    target: 50MB        # Baseline memory usage
+    warning: 75MB       # Warning threshold
+    critical: 100MB     # Critical threshold
+    description: "Baseline memory usage after startup"
+  
+  peak:
+    target: 100MB       # Peak memory usage
+    warning: 150MB      # Warning threshold
+    critical: 200MB     # Critical threshold
+    description: "Peak memory usage during operation"
+  
+  leak_threshold:
+    target: 10MB        # Memory leak threshold
+    warning: 20MB       # Warning threshold
+    critical: 50MB      # Critical threshold
+    description: "Memory increase over time indicating potential leak"
+
+# Network performance budget
+network_performance:
+  request_size:
+    target: 100KB       # 100KB per request
+    warning: 500KB      # Warning threshold
+    critical: 1MB       # Critical threshold
+    description: "Average request payload size"
+  
+  response_time:
+    target: 500ms       # 500ms response time
+    warning: 1000ms     # Warning threshold
+    critical: 2000ms    # Critical threshold
+    description: "Average API response time"
+  
+  bandwidth_usage:
+    target: 1MB         # 1MB per minute
+    warning: 5MB        # Warning threshold
+    critical: 10MB      # Critical threshold
+    description: "Bandwidth usage per minute"
+
+# Feature-specific performance budgets
+features:
+  booking_flow:
+    startup_time:
+      target: 1000ms
+      warning: 1500ms
+      critical: 2000ms
+      description: "Booking flow initialization time"
+    
+    form_submission:
+      target: 500ms
+      warning: 1000ms
+      critical: 2000ms
+      description: "Booking form submission time"
+  
+  calendar_view:
+    render_time:
+      target: 100ms
+      warning: 200ms
+      critical: 500ms
+      description: "Calendar view rendering time"
+    
+    scroll_performance:
+      target: 60fps
+      warning: 45fps
+      critical: 30fps
+      description: "Calendar scrolling performance"
+  
+  admin_panel:
+    data_loading:
+      target: 1000ms
+      warning: 2000ms
+      critical: 5000ms
+      description: "Admin panel data loading time"
+    
+    dashboard_render:
+      target: 500ms
+      warning: 1000ms
+      critical: 2000ms
+      description: "Admin dashboard rendering time"
+
+# Platform-specific budgets
+platforms:
+  android:
+    startup_time:
+      target: 2500ms    # Android typically slower
+      warning: 3000ms
+      critical: 4000ms
+    
+    memory_usage:
+      baseline:
+        target: 60MB
+        warning: 80MB
+        critical: 120MB
+  
+  ios:
+    startup_time:
+      target: 1800ms    # iOS typically faster
+      warning: 2200ms
+      critical: 2800ms
+    
+    memory_usage:
+      baseline:
+        target: 45MB
+        warning: 65MB
+        critical: 100MB
+  
+  web:
+    startup_time:
+      target: 3000ms    # Web typically slower
+      warning: 4000ms
+      critical: 6000ms
+    
+    memory_usage:
+      baseline:
+        target: 80MB
+        warning: 120MB
+        critical: 200MB
+
+# Device performance budgets
+devices:
+  high_end:
+    startup_time:
+      target: 1500ms
+      warning: 2000ms
+      critical: 2500ms
+    
+    frame_time:
+      target: 16ms
+      warning: 20ms
+      critical: 25ms
+  
+  mid_range:
+    startup_time:
+      target: 2500ms
+      warning: 3000ms
+      critical: 4000ms
+    
+    frame_time:
+      target: 16ms
+      warning: 25ms
+      critical: 33ms
+  
+  low_end:
+    startup_time:
+      target: 4000ms
+      warning: 5000ms
+      critical: 7000ms
+    
+    frame_time:
+      target: 20ms
+      warning: 33ms
+      critical: 50ms
+
+# Performance regression thresholds
+regression_detection:
+  startup_time:
+    regression_threshold: 10%    # 10% increase triggers regression alert
+    significant_regression: 25%  # 25% increase is significant regression
+  
+  frame_time:
+    regression_threshold: 15%    # 15% increase triggers regression alert
+    significant_regression: 30%  # 30% increase is significant regression
+  
+  memory_usage:
+    regression_threshold: 20%    # 20% increase triggers regression alert
+    significant_regression: 50%  # 50% increase is significant regression
+
+# Performance monitoring configuration
+monitoring:
+  sampling_rate: 0.1             # Sample 10% of sessions
+  collection_interval: 60        # Collect metrics every 60 seconds
+  retention_period: 30           # Keep data for 30 days
+  
+  alerts:
+    enabled: true
+    channels:
+      - email
+      - slack
+      - dashboard
+    
+    thresholds:
+      warning: 1                 # Alert after 1 violation
+      critical: 3                # Alert after 3 violations
+      regression: 1              # Alert immediately on regression
+
+# Performance testing configuration
+testing:
+  iterations: 5                  # Number of test iterations
+  warmup_iterations: 2           # Warmup iterations before measurement
+  cooldown_period: 5             # Seconds between iterations
+  
+  scenarios:
+    - name: "cold_start"
+      description: "App launch from cold state"
+      iterations: 3
+    
+    - name: "warm_start"
+      description: "App launch from background"
+      iterations: 3
+    
+    - name: "navigation"
+      description: "Screen navigation performance"
+      iterations: 5
+    
+    - name: "scrolling"
+      description: "List scrolling performance"
+      iterations: 5
+    
+    - name: "data_loading"
+      description: "Data loading performance"
+      iterations: 3
+
+# Performance optimization targets
+optimization_targets:
+  startup_time:
+    current: 2500ms
+    target: 2000ms
+    improvement: 20%
+  
+  frame_time:
+    current: 18ms
+    target: 16ms
+    improvement: 11%
+  
+  memory_usage:
+    current: 70MB
+    target: 50MB
+    improvement: 29%
+  
+  jank_percentage:
+    current: 5%
+    target: 2%
+    improvement: 60%
+
+# Performance budget validation rules
+validation_rules:
+  - name: "startup_time_budget"
+    description: "App startup time must be within budget"
+    metric: "startup_time"
+    condition: "value <= target"
+    severity: "critical"
+  
+  - name: "frame_time_budget"
+    description: "Frame time must be within budget"
+    metric: "frame_time"
+    condition: "value <= target"
+    severity: "critical"
+  
+  - name: "jank_percentage_budget"
+    description: "Jank percentage must be within budget"
+    metric: "jank_percentage"
+    condition: "value <= target"
+    severity: "high"
+  
+  - name: "memory_usage_budget"
+    description: "Memory usage must be within budget"
+    metric: "memory_usage.baseline"
+    condition: "value <= target"
+    severity: "high"
+  
+  - name: "network_performance_budget"
+    description: "Network performance must be within budget"
+    metric: "network_performance.response_time"
+    condition: "value <= target"
+    severity: "medium" 

@@ -1,5 +1,13 @@
 # APP-OINT
 
+[![Release](https://img.shields.io/github/v/release/gabriellagziel/appoint)]
+[![Build](https://github.com/gabriellagziel/appoint/workflows/Build/badge.svg)](https://github.com/gabriellagziel/appoint/actions/workflows/build.yml)
+[![Test](https://github.com/gabriellagziel/appoint/workflows/Test/badge.svg)](https://github.com/gabriellagziel/appoint/actions/workflows/test.yml)
+[![Security](https://github.com/gabriellagziel/appoint/workflows/Security/badge.svg)](https://github.com/gabriellagziel/appoint/actions/workflows/security.yml)
+[![Coverage](https://img.shields.io/codecov/c/github/gabriellagziel/appoint?flag=unit)]
+[![Codecov](https://codecov.io/gh/gabriellagziel/appoint/branch/main/graph/badge.svg)](https://codecov.io/gh/gabriellagziel/appoint)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A comprehensive appointment booking and management application built with Flutter, featuring real-time chat, business management, and multi-platform support.
 
 ## 🚀 Features
@@ -24,7 +32,12 @@ A comprehensive appointment booking and management application built with Flutte
 
 ## 📱 Screenshots
 
-*Screenshots will be added here*
+<div align="center">
+  <img src="docs/images/calendar.png" alt="Calendar View" width="300"/>
+  <img src="docs/images/booking.png" alt="Booking Interface" width="300"/>
+  <img src="docs/images/chat.png" alt="Chat System" width="300"/>
+  <img src="docs/images/admin.png" alt="Admin Panel" width="300"/>
+</div>
 
 ## 🛠️ Tech Stack
 
@@ -61,8 +74,8 @@ A comprehensive appointment booking and management application built with Flutte
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/APP-OINT.git
-cd APP-OINT
+git clone https://github.com/gabriellagziel/appoint
+cd appoint
 ```
 
 ### 2. Setup Dependencies
@@ -85,11 +98,34 @@ flutter gen-l10n
 3. Place files in appropriate directories
 
 ### 4. Configure Environment Variables
-Create a `.env` file in the root directory:
+
+**Important**: The application uses environment variables for sensitive configuration. See [Environment Setup Guide](docs/environment_setup.md) for detailed instructions.
+
+Create a `.env` file in the root directory with the following variables:
+
 ```env
+# Required for payments
 STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
-STRIPE_SECRET_KEY=your_stripe_secret_key
+
+# Required for Firebase
 FIREBASE_PROJECT_ID=your_firebase_project_id
+
+# Required for Google OAuth
+GOOGLE_CLIENT_ID=your_google_client_id
+
+# Optional - API endpoints (defaults provided)
+FAMILY_API_BASE_URL=https://api.yourapp.com/api/v1/family
+AUTH_REDIRECT_URI=http://localhost:8080/__/auth/handler
+DEEP_LINK_BASE_URL=https://app-oint-core.web.app
+WHATSAPP_BASE_URL=https://app-oint-core.web.app
+WHATSAPP_API_URL=https://wa.me/?text=
+```
+
+**Security Note**: Never commit your `.env` file to version control. It's already included in `.gitignore`.
+
+**Validation**: Run the environment validation script to check your setup:
+```bash
+dart scripts/validate_env.dart
 ```
 
 ### 5. Run the Application
@@ -137,13 +173,39 @@ flutter test integration_test/
 
 # Test with coverage
 flutter test --coverage
+
+# Run specific test file
+flutter test test/services/failure_scenario_service_tests.dart
+
+# Run Cloud Functions tests
+cd functions && npm test
 ```
 
 ### Test Structure
 - **Unit Tests**: `test/` directory
-- **Widget Tests**: `test/` directory
+- **Widget Tests**: `test/` directory  
 - **Integration Tests**: `integration_test/` directory
 - **Performance Tests**: `integration_test/` directory
+- **Cloud Functions Tests**: `functions/test/` directory
+- **Failure Scenario Tests**: `test/services/failure_scenario_service_tests.dart`
+
+### Test Coverage
+- **Coverage Threshold**: 80% minimum
+- **Coverage Report**: Available on [Codecov](https://codecov.io/gh/gabriellagziel/appoint)
+- **Coverage Badge**: ![Codecov](https://codecov.io/gh/gabriellagziel/appoint/branch/main/graph/badge.svg)
+
+### Failure Scenario Testing
+The app includes comprehensive failure scenario tests that simulate:
+- **Payment Processing Failures**: Stripe API errors, network issues, timeouts
+- **Authentication Failures**: Invalid credentials, account disabled, rate limiting
+- **Error Recovery**: Automatic retry mechanisms and graceful degradation
+- **Error Messages**: Meaningful error messages for better user experience
+
+### CI/CD Testing
+- **Automated Testing**: All tests run on every PR and push
+- **Lint Enforcement**: Code analysis enforced in CI pipeline
+- **Nightly Builds**: Automated builds run daily at 02:00 UTC
+- **Build Artifacts**: APK and IPA files generated for testing
 
 ## 🔧 Configuration
 

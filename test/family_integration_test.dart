@@ -1,10 +1,13 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/models/family_link.dart';
-import 'fake_firebase_setup.dart';
+import 'package:flutter_test/flutter_test.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import 'firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
+
   group('Family Integration Tests', () {
     test('FamilyLink model should serialize correctly', () {
       final link = FamilyLink(
@@ -16,8 +19,8 @@ Future<void> main() async {
         consentedAt: [],
       );
 
-      final json = link.toJson();
-      final fromJson = FamilyLink.fromJson(json);
+      json = link.toJson();
+      fromJson = FamilyLink.fromJson(json);
 
       expect(fromJson.id, equals(link.id));
       expect(fromJson.parentId, equals(link.parentId));
