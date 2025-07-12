@@ -1,6 +1,8 @@
 # app_spec.yaml
-name: appoint-app
+name: appoint-app-v2
 region: fra1
+features:
+  - buildpack-stack=ubuntu-22
 
 static_sites:
   - name: marketing
@@ -8,7 +10,7 @@ static_sites:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "marketing"
-    output_dir: "marketing/out"
+    output_dir: "out"
     build_command: "npm install && npm run build"
     routes:
       - path: /marketing
