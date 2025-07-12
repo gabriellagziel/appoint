@@ -1,18 +1,30 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
 
-echo "🔍 Running pre-commit checks..."
+echo "Running pre-commit checks..."
 
-# Check if any ARB files are staged
-if git diff --cached --name-only | grep -q "\.arb$"; then
-    echo "📝 Checking spelling in staged ARB files..."
-    git diff --cached --name-only | grep "\.arb$" | xargs npx cspell --no-progress
+# Run Flutter analyzer
+echo "Running Flutter analyzer..."
+flutter analyze --no-fatal-infos --no-fatal-warnings
+if [ $? -ne 0 ]; then
+    echo "❌ Flutter analyzer failed"
+    exit 1
 fi
 
-# Check if any Dart files are staged
-if git diff --cached --name-only | grep -q "\.dart$"; then
-    echo "🔧 Running Flutter analyze on staged Dart files..."
-    flutter analyze --no-fatal-infos
+# Run localization validation
+echo "Running localization validation..."
+dart run tool/arb_validator.dart
+if [ $? -ne 0 ]; then
+    echo "❌ Localization validation failed"
+    exit 1
 fi
 
-echo "✅ Pre-commit checks passed!" 
+# Run tests
+echo "Running tests..."
+flutter test
+if [ $? -ne 0 ]; then
+    echo "❌ Tests failed"
+    exit 1
+fi
+
+echo "✅ All pre-commit checks passed" 

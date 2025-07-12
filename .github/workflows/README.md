@@ -1,3 +1,144 @@
+# GitHub Actions Workflows
+
+This directory contains the CI/CD workflows for the APP-OINT project.
+
+## Workflow Overview
+
+### 1. `ci-enforce.yml` - Quality Gate Enforcement
+**Purpose**: Enforces code quality standards and test coverage on every push and PR.
+
+**Triggers**:
+- Push to `main` or `develop` branches
+- Pull requests to `main` or `develop` branches
+- Manual trigger via workflow_dispatch
+
+**Jobs**:
+- **setup**: Installs Flutter and caches dependencies
+- **analyze**: Runs `flutter analyze` and localization validation
+- **test-and-coverage**: Runs tests with coverage and enforces 80% minimum
+
+**Key Features**:
+- ✅ Fails on any analyzer errors/warnings
+- ✅ Enforces 80% test coverage minimum
+- ✅ Generates HTML coverage reports
+- ✅ Uploads coverage artifacts for review
+
+### 2. `ci.yml` - Comprehensive CI Pipeline
+**Purpose**: Full CI pipeline including security tests, multi-platform testing, and smoke tests.
+
+**Triggers**:
+- Push to `main` branch
+- Pull requests to `main` branch
+
+**Jobs**:
+- **lint**: Code analysis and localization validation
+- **security-rules**: Security rule testing with Firebase emulators
+- **test**: Multi-platform testing (Ubuntu + macOS) with coverage
+- **build**: APK building and artifact upload
+- **smoke-test**: Android emulator testing and app validation
+
+### 3. `release.yml` - Release Management
+**Purpose**: Automated release process with version bumping, building, and deployment.
+
+**Triggers**:
+- Push of version tags (v*)
+- Manual workflow dispatch
+
+**Jobs**:
+- **version-bump**: Semantic version bumping
+- **build-android/ios/web**: Multi-platform builds
+- **test**: Test execution
+- **security-scan**: Security auditing
+- **create-release**: GitHub release creation
+- **notify**: Slack/Discord notifications
+- **deploy**: Play Store deployment
+
+## Workflow Relationships
+
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   ci-enforce    │    │      ci.yml     │    │   release.yml   │
+│   (Quality)     │    │  (Comprehensive)│    │   (Release)     │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+         │                       │                       │
+         ▼                       ▼                       ▼
+   Fast feedback          Full validation         Production deploy
+   (PR blocking)          (Multi-platform)        (Tag-based)
+```
+
+## Quality Gates
+
+### Analyzer Health
+- Zero analyzer errors or warnings
+- All localization files validated
+- Code formatting compliance
+
+### Test Coverage
+- Minimum 80% line coverage required
+- Coverage reports generated and uploaded
+- Coverage trend monitoring
+
+### Security
+- Firestore security rules tested
+- Dependency vulnerability scanning
+- Security rule validation
+
+## Usage
+
+### For Developers
+1. **Push to feature branch**: Only `ci-enforce` runs (fast feedback)
+2. **Create PR to main**: Both `ci-enforce` and `ci.yml` run
+3. **Merge to main**: Full pipeline executes
+
+### For Releases
+1. **Create version tag**: `release.yml` automatically triggers
+2. **Manual release**: Use workflow dispatch with version input
+
+## Configuration
+
+### Coverage Threshold
+To change the coverage threshold, update the value in both:
+- `.github/workflows/ci-enforce.yml` (line with `COVERAGE < 80`)
+- `.github/workflows/ci.yml` (line with `COVERAGE < 80`)
+
+### Branch Protection
+Recommended branch protection rules for `main`:
+- Require `ci-enforce` to pass
+- Require `ci.yml` to pass
+- Require PR reviews
+- Dismiss stale reviews on new commits
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Coverage below threshold**
+   - Add more unit tests
+   - Check for untested code paths
+   - Review test exclusions
+
+2. **Analyzer failures**
+   - Fix linting issues
+   - Update generated code with `flutter packages pub run build_runner build`
+   - Check for missing imports
+
+3. **Localization validation failures**
+   - Ensure all ARB files have matching keys
+   - Run `flutter gen-l10n` locally
+   - Check for missing translations
+
+### Local Testing
+```bash
+# Run analyzer locally
+flutter analyze
+
+# Run tests with coverage
+flutter test --coverage
+
+# Check coverage locally
+genhtml coverage/lcov.info --output-directory coverage/html
+```
+
 # GitHub Actions CI/CD Workflow Setup
 
 This document explains the CI/CD workflow configuration and required setup for the AppOint Flutter project.

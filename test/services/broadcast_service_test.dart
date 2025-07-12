@@ -1,18 +1,20 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/services/broadcast_service.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
-import '../fake_firebase_setup.dart';
-import 'package:mocktail/mocktail.dart';
+import 'package:appoint/services/broadcast_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
+
+import '../firebase_test_helper.dart';
 
 class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
+void main() {
+  setUpAll(() async {
   await initializeTestFirebase();
+  });
 
   group('BroadcastService', () {
-      // ignore: unused_local_variable
+    // ignore: unused_local_variable
     late BroadcastService broadcastService;
     late MockFirebaseFirestore mockFirestore;
 
@@ -92,7 +94,7 @@ Future<void> main() async {
         targetingFilters: targetingFilters,
         createdByAdminId: 'admin-123',
         createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
+        createdAt: DateTime(2025, 6, 18, 10),
         status: BroadcastMessageStatus.pending,
       );
 
@@ -105,7 +107,7 @@ Future<void> main() async {
         targetingFilters: targetingFilters,
         createdByAdminId: 'admin-123',
         createdByAdminName: 'Admin User',
-        createdAt: DateTime(2025, 6, 18, 10, 0),
+        createdAt: DateTime(2025, 6, 18, 10),
         status: BroadcastMessageStatus.pending,
       );
 
