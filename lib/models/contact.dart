@@ -12,6 +12,6 @@ class Contact with _$Contact {
     final String? email,
   }) = _Contact;
 
-  factory Contact.fromJson(final Map<String, dynamic> json) =>
+  factory Contact.fromJson(Map<String, dynamic> json) =>
       _$ContactFromJson(json);
 }

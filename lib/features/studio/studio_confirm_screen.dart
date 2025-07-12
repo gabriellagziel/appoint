@@ -1,20 +1,19 @@
+import 'package:appoint/features/studio/studio_booking_screen.dart';
+import 'package:appoint/providers/appointment_provider.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/widgets/booking_confirmation_sheet.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import 'package:appoint/widgets/bottom_sheet_manager.dart';
-import 'package:appoint/widgets/booking_confirmation_sheet.dart';
-
-import 'package:appoint/providers/appointment_provider.dart';
-import 'package:appoint/providers/auth_provider.dart';
-import 'package:appoint/features/studio/studio_booking_screen.dart';
 
 class StudioConfirmScreen extends ConsumerWidget {
   const StudioConfirmScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
+  Widget build(BuildContext context, final WidgetRef ref) {
     final selection =
-        ModalRoute.of(context)!.settings.arguments as StudioBookingSelection;
+        ModalRoute.of(context)!.settings.arguments! as StudioBookingSelection;
     final scheduledAt = DateTime(
       selection.date.year,
       selection.date.month,
@@ -23,20 +22,21 @@ class StudioConfirmScreen extends ConsumerWidget {
       selection.slot.minute,
     );
     Future<void> submitBooking() async {
-      final user = await ref.read(authServiceProvider).currentUser();
+      user = await ref.read(authServiceProvider).currentUser();
       if (user == null) return;
       await ref.read(appointmentServiceProvider).createScheduled(
-        creatorId: user.uid,
-        inviteeId: selection.staff.id,
-        scheduledAt: scheduledAt,
-      );
+            creatorId: user.uid,
+            inviteeId: selection.staff.id,
+            scheduledAt: scheduledAt,
+          );
       if (context.mounted) {
         Navigator.popUntil(context, ModalRoute.withName('/'));
       }
     }
 
     void showConfirmationSheet() {
-      final summary = 'You are about to book with ${selection.staff.displayName} on ${DateFormat.yMMMEd().add_jm().format(scheduledAt)}.';
+      final summary =
+          'You are about to book with ${selection.staff.displayName} on ${DateFormat.yMMMEd().add_jm().format(scheduledAt)}.';
       BottomSheetManager.show(
         context: context,
         child: BookingConfirmationSheet(
@@ -63,7 +63,7 @@ class StudioConfirmScreen extends ConsumerWidget {
             ElevatedButton(
               onPressed: showConfirmationSheet,
               child: const Text('Confirm'),
-            )
+            ),
           ],
         ),
       ),

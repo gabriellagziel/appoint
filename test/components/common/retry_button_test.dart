@@ -1,14 +1,16 @@
+import 'package:appoint/components/common/retry_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/components/common/retry_button.dart';
-import '../../fake_firebase_setup.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import '../../firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
   group('RetryButton', () {
-    testWidgets('renders and triggers tap', (final tester) async {
+    testWidgets('renders and triggers tap', (tester) async {
       var tapped = false;
       await tester.pumpWidget(
         MaterialApp(

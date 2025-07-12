@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/studio_business/models/business_subscription.dart';
 import 'package:appoint/features/studio_business/providers/business_subscription_provider.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class BusinessSubscriptionScreen extends ConsumerStatefulWidget {
   const BusinessSubscriptionScreen({super.key});
@@ -13,7 +13,7 @@ class BusinessSubscriptionScreen extends ConsumerStatefulWidget {
 
 class REDACTED_TOKEN
     extends ConsumerState<BusinessSubscriptionScreen> {
-  final TextEditingController _promoCodeController = TextEditingController();
+  TextEditingController _promoCodeController = TextEditingController();
   String? _selectedPromoCode;
   bool _isLoading = false;
   bool _isApplyingPromo = false;
@@ -33,7 +33,7 @@ class REDACTED_TOKEN
     setState(() => _isLoading = true);
 
     try {
-      final service = ref.read(REDACTED_TOKEN);
+      service = ref.read(REDACTED_TOKEN);
       await service.subscribeBasic();
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -43,7 +43,7 @@ class REDACTED_TOKEN
           ),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -63,7 +63,7 @@ class REDACTED_TOKEN
     setState(() => _isLoading = true);
 
     try {
-      final service = ref.read(REDACTED_TOKEN);
+      service = ref.read(REDACTED_TOKEN);
       await service.subscribePro();
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -73,7 +73,7 @@ class REDACTED_TOKEN
           ),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -90,7 +90,7 @@ class REDACTED_TOKEN
   }
 
   Future<void> _applyPromoCode() async {
-    final code = _promoCodeController.text.trim();
+    code = _promoCodeController.text.trim();
     if (code.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -104,7 +104,7 @@ class REDACTED_TOKEN
     setState(() => _isApplyingPromo = true);
 
     try {
-      final service = ref.read(REDACTED_TOKEN);
+      service = ref.read(REDACTED_TOKEN);
       await service.applyPromoCode(code);
       setState(() => _selectedPromoCode = code);
       if (mounted) {
@@ -115,7 +115,7 @@ class REDACTED_TOKEN
           ),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -133,7 +133,7 @@ class REDACTED_TOKEN
 
   Future<void> _openCustomerPortal() async {
     try {
-      final service = ref.read(REDACTED_TOKEN);
+      service = ref.read(REDACTED_TOKEN);
       await service.openCustomerPortal();
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -143,7 +143,7 @@ class REDACTED_TOKEN
           ),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -156,8 +156,8 @@ class REDACTED_TOKEN
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final subscriptionAsync = ref.watch(currentSubscriptionProvider);
+  Widget build(BuildContext context) {
+    subscriptionAsync = ref.watch(currentSubscriptionProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -177,7 +177,7 @@ class REDACTED_TOKEN
           children: [
             // Current subscription status
             subscriptionAsync.when(
-              data: (final subscription) {
+              data: (subscription) {
                 if (subscription != null) {
                   return Card(
                     child: Padding(
@@ -229,7 +229,7 @@ class REDACTED_TOKEN
                   child: Center(child: CircularProgressIndicator()),
                 ),
               ),
-              error: (final error, final stack) => Card(
+              error: (error, final stack) => Card(
                 child: Padding(
                   padding: const EdgeInsets.all(16),
                   child: Text('Error loading subscription: $error'),
@@ -282,7 +282,7 @@ class REDACTED_TOKEN
                       Text(
                         'Applied: $_selectedPromoCode',
                         style: const TextStyle(
-                            color: Colors.green, fontWeight: FontWeight.bold),
+                            color: Colors.green, fontWeight: FontWeight.bold,),
                       ),
                     ],
                   ],
@@ -351,8 +351,7 @@ class REDACTED_TOKEN
     );
   }
 
-  Widget _buildFeaturesComparison() {
-    return Card(
+  Widget _buildFeaturesComparison() => Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -365,7 +364,7 @@ class REDACTED_TOKEN
             const SizedBox(height: 16),
             _buildComparisonRow('Meetings per month', '20', 'Unlimited'),
             _buildComparisonRow(
-                'Calendar views', 'Daily only', 'Daily + Monthly'),
+                'Calendar views', 'Daily only', 'Daily + Monthly',),
             _buildComparisonRow('Analytics', 'No', 'Yes'),
             _buildComparisonRow('CSV Export', 'No', 'Yes'),
             _buildComparisonRow('Email Reminders', 'No', 'Yes'),
@@ -375,34 +374,30 @@ class REDACTED_TOKEN
         ),
       ),
     );
-  }
 
-  Widget _buildComparisonRow(final String feature, final String basic, final String pro) {
-    return Padding(
+  Widget _buildComparisonRow(
+      String feature, final String basic, final String pro,) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
         children: [
           Expanded(
             flex: 2,
             child: Text(feature,
-                style: const TextStyle(fontWeight: FontWeight.w500)),
+                style: const TextStyle(fontWeight: FontWeight.w500),),
           ),
           Expanded(
             child: Text(basic,
                 textAlign: TextAlign.center,
-                style: const TextStyle(color: Colors.grey)),
+                style: const TextStyle(color: Colors.grey),),
           ),
           Expanded(
             child: Text(pro,
                 textAlign: TextAlign.center,
-                style: const TextStyle(fontWeight: FontWeight.bold)),
+                style: const TextStyle(fontWeight: FontWeight.bold),),
           ),
         ],
       ),
     );
-  }
 
-  String _formatDate(final DateTime date) {
-    return '${date.day}/${date.month}/${date.year}';
-  }
+  String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year}';
 }

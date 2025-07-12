@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 
 class AmbassadorOnboardingScreen extends ConsumerStatefulWidget {
@@ -14,13 +14,13 @@ class AmbassadorOnboardingScreen extends ConsumerStatefulWidget {
 
 class REDACTED_TOKEN
     extends ConsumerState<AmbassadorOnboardingScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
-  final _emailController = TextEditingController();
-  final _phoneController = TextEditingController();
-  final _countryController = TextEditingController();
-  final _languageController = TextEditingController();
-  final _bioController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _nameController = TextEditingController();
+  _emailController = TextEditingController();
+  _phoneController = TextEditingController();
+  _countryController = TextEditingController();
+  _languageController = TextEditingController();
+  _bioController = TextEditingController();
 
   bool _isLoading = false;
   bool _isRegistered = false;
@@ -69,19 +69,16 @@ class REDACTED_TOKEN
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Ambassador Onboarding'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: _isRegistered ? _buildSuccessView() : _buildRegistrationForm(),
     );
-  }
 
-  Widget _buildRegistrationForm() {
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(16.0),
+  Widget _buildRegistrationForm() => SingleChildScrollView(
+      padding: const EdgeInsets.all(16),
       child: Form(
         key: _formKey,
         child: Column(
@@ -89,7 +86,7 @@ class REDACTED_TOKEN
           children: [
             const Card(
               child: Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -102,7 +99,8 @@ class REDACTED_TOKEN
                     ),
                     SizedBox(height: 16),
                     Text(
-                      """You're among the first users speaking your language in your country. As our pioneer, enjoy full premium access for free while you serve.
+                      """
+You're among the first users speaking your language in your country. As our pioneer, enjoy full premium access for free while you serve.
 
 • How it works:
   1. Complete the registration form below
@@ -122,7 +120,7 @@ Ready to lead the revolution?""",
             const SizedBox(height: 24),
             Card(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -141,7 +139,7 @@ Ready to lead the revolution?""",
                         border: OutlineInputBorder(),
                         prefixIcon: Icon(Icons.person),
                       ),
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.trim().isEmpty) {
                           return 'Please enter your full name';
                         }
@@ -160,7 +158,7 @@ Ready to lead the revolution?""",
                         prefixIcon: Icon(Icons.email),
                       ),
                       keyboardType: TextInputType.emailAddress,
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.trim().isEmpty) {
                           return 'Please enter your email address';
                         }
@@ -188,7 +186,7 @@ Ready to lead the revolution?""",
             const SizedBox(height: 16),
             Card(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -209,18 +207,16 @@ Ready to lead the revolution?""",
                       value: _countryController.text.isEmpty
                           ? null
                           : _countryController.text,
-                      items: _countries.map((final String country) {
-                        return DropdownMenuItem<String>(
+                      items: _countries.map((String country) => DropdownMenuItem<String>(
                           value: country,
                           child: Text(country),
-                        );
-                      }).toList(),
-                      onChanged: (final String? newValue) {
+                        ),).toList(),
+                      onChanged: (String? newValue) {
                         setState(() {
                           _countryController.text = newValue ?? '';
                         });
                       },
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please select your country';
                         }
@@ -237,18 +233,16 @@ Ready to lead the revolution?""",
                       value: _languageController.text.isEmpty
                           ? null
                           : _languageController.text,
-                      items: _languages.map((final String language) {
-                        return DropdownMenuItem<String>(
+                      items: _languages.map((String language) => DropdownMenuItem<String>(
                           value: language,
                           child: Text(language),
-                        );
-                      }).toList(),
-                      onChanged: (final String? newValue) {
+                        ),).toList(),
+                      onChanged: (String? newValue) {
                         setState(() {
                           _languageController.text = newValue ?? '';
                         });
                       },
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please select your primary language';
                         }
@@ -262,7 +256,7 @@ Ready to lead the revolution?""",
             const SizedBox(height: 16),
             Card(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -321,11 +315,9 @@ Ready to lead the revolution?""",
         ),
       ),
     );
-  }
 
-  Widget _buildSuccessView() {
-    return Padding(
-      padding: const EdgeInsets.all(16.0),
+  Widget _buildSuccessView() => Padding(
+      padding: const EdgeInsets.all(16),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -345,14 +337,14 @@ Ready to lead the revolution?""",
           ),
           const SizedBox(height: 16),
           const Text(
-            'You\'ve successfully joined our ambassador program. Start sharing your unique link to earn rewards!',
+            "You've successfully joined our ambassador program. Start sharing your unique link to earn rewards!",
             style: TextStyle(fontSize: 16),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 32),
           Card(
             child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
                   const Text(
@@ -437,7 +429,6 @@ Ready to lead the revolution?""",
         ],
       ),
     );
-  }
 
   Future<void> _submitRegistration() async {
     if (!_formKey.currentState!.validate()) {
@@ -498,7 +489,7 @@ Ready to lead the revolution?""",
           ),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       setState(() {
         _isLoading = false;
       });
@@ -506,7 +497,7 @@ Ready to lead the revolution?""",
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Registration failed: ${e.toString()}'),
+            content: Text('Registration failed: $e'),
             backgroundColor: Colors.red,
           ),
         );

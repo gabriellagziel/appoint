@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import 'package:appoint/features/studio_business/providers/business_availability_provider.dart';
 import 'package:appoint/features/studio_business/services/business_availability_service.dart';
 import 'package:appoint/shared/widgets/responsive_scaffold.dart';
 import 'package:appoint/utils/business_helpers.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 class BusinessAvailabilityScreen extends ConsumerStatefulWidget {
   const BusinessAvailabilityScreen({super.key});
@@ -28,10 +28,10 @@ class REDACTED_TOKEN
   Future<void> _loadConfiguration() async {
     setState(() => _isLoading = true);
     try {
-      final service = ref.read(REDACTED_TOKEN);
+      service = ref.read(REDACTED_TOKEN);
       await service.loadConfiguration();
       ref.read(businessAvailabilityProvider.notifier).loadConfiguration();
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error loading configuration: $e')),
@@ -45,9 +45,9 @@ class REDACTED_TOKEN
   Future<void> _saveConfiguration() async {
     setState(() => _isSaving = true);
     try {
-      final availability = ref.read(businessAvailabilityProvider);
-      final service = ref.read(REDACTED_TOKEN);
-      final config = service.toJson(availability);
+      availability = ref.read(businessAvailabilityProvider);
+      service = ref.read(REDACTED_TOKEN);
+      config = service.toJson(availability);
       await service.saveConfiguration(config);
 
       if (mounted) {
@@ -55,7 +55,7 @@ class REDACTED_TOKEN
           const SnackBar(content: Text('Configuration saved successfully!')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error saving configuration: $e')),
@@ -66,7 +66,7 @@ class REDACTED_TOKEN
     }
   }
 
-  String _getDayName(final int weekday) {
+  String _getDayName(int weekday) {
     switch (weekday) {
       case 0:
         return 'Sunday';
@@ -88,15 +88,15 @@ class REDACTED_TOKEN
   }
 
   Future<void> _pickTime(final BuildContext context, final TimeOfDay initial,
-      final void Function(TimeOfDay) onPicked) async {
-    final picked = await showTimePicker(context: context, initialTime: initial);
+      void Function(TimeOfDay) onPicked,) async {
+    picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) onPicked(picked);
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final availability = ref.watch(businessAvailabilityProvider);
-    final notifier = ref.read(businessAvailabilityProvider.notifier);
+  Widget build(BuildContext context) {
+    availability = ref.watch(businessAvailabilityProvider);
+    notifier = ref.read(businessAvailabilityProvider.notifier);
 
     if (_isLoading) {
       return Theme(
@@ -118,7 +118,7 @@ class REDACTED_TOKEN
           actions: [
             if (_isSaving)
               const Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(16),
                 child: SizedBox(
                   width: 20,
                   height: 20,
@@ -137,11 +137,11 @@ class REDACTED_TOKEN
         body: ListView.separated(
           padding: const EdgeInsets.all(16),
           itemCount: 7,
-          separatorBuilder: (final _, final __) => const SizedBox(height: 8),
-          itemBuilder: (final context, final weekday) {
+          separatorBuilder: (_, final __) => const SizedBox(height: 8),
+          itemBuilder: (context, final weekday) {
             final avail =
-                availability.firstWhere((final a) => a.weekday == weekday);
-            final timeRange = TimeRange(start: avail.start, end: avail.end);
+                availability.firstWhere((a) => a.weekday == weekday);
+            timeRange = TimeRange(start: avail.start, end: avail.end);
             final hasError = avail.isOpen && !timeRange.isValid;
 
             return Card(
@@ -165,7 +165,7 @@ class REDACTED_TOKEN
                         ),
                         Switch(
                           value: avail.isOpen,
-                          onChanged: (final value) =>
+                          onChanged: (value) =>
                               notifier.toggleOpen(weekday, value),
                         ),
                       ],
@@ -180,20 +180,20 @@ class REDACTED_TOKEN
                               children: [
                                 const Text('Start Time',
                                     style:
-                                        TextStyle(fontWeight: FontWeight.bold)),
+                                        TextStyle(fontWeight: FontWeight.bold),),
                                 const SizedBox(height: 8),
                                 InkWell(
                                   onTap: () => _pickTime(
                                     context,
                                     avail.start,
-                                    (final time) => notifier.updateDay(
+                                    (time) => notifier.updateDay(
                                       weekday,
                                       start: time,
                                     ),
                                   ),
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 12, vertical: 8),
+                                        horizontal: 12, vertical: 8,),
                                     decoration: BoxDecoration(
                                       border: Border.all(color: Colors.grey),
                                       borderRadius: BorderRadius.circular(4),
@@ -218,20 +218,20 @@ class REDACTED_TOKEN
                               children: [
                                 const Text('End Time',
                                     style:
-                                        TextStyle(fontWeight: FontWeight.bold)),
+                                        TextStyle(fontWeight: FontWeight.bold),),
                                 const SizedBox(height: 8),
                                 InkWell(
                                   onTap: () => _pickTime(
                                     context,
                                     avail.end,
-                                    (final time) => notifier.updateDay(
+                                    (time) => notifier.updateDay(
                                       weekday,
                                       end: time,
                                     ),
                                   ),
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 12, vertical: 8),
+                                        horizontal: 12, vertical: 8,),
                                     decoration: BoxDecoration(
                                       border: Border.all(color: Colors.grey),
                                       borderRadius: BorderRadius.circular(4),
@@ -263,13 +263,13 @@ class REDACTED_TOKEN
                           child: Row(
                             children: [
                               Icon(Icons.error_outline,
-                                  color: Colors.red.shade700, size: 16),
+                                  color: Colors.red.shade700, size: 16,),
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
                                   'End time must be after start time',
                                   style: TextStyle(
-                                      color: Colors.red.shade700, fontSize: 12),
+                                      color: Colors.red.shade700, fontSize: 12,),
                                 ),
                               ),
                             ],
@@ -296,8 +296,7 @@ class REDACTED_TOKEN
     );
   }
 
-  Widget _buildDrawer(final BuildContext context) {
-    return Drawer(
+  Widget _buildDrawer(BuildContext context) => Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
@@ -340,5 +339,4 @@ class REDACTED_TOKEN
         ],
       ),
     );
-  }
 }

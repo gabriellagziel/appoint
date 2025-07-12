@@ -24,16 +24,11 @@ class AdminBroadcastMessage with _$AdminBroadcastMessage {
     required final String title,
     required final String content,
     required final BroadcastMessageType type,
-    final String? imageUrl,
+    required final BroadcastTargetingFilters targetingFilters, required final String createdByAdminId, required final String createdByAdminName, required final DateTime createdAt, required final BroadcastMessageStatus status, final String? imageUrl,
     final String? videoUrl,
     final String? externalLink,
     final List<String>? pollOptions,
-    required final BroadcastTargetingFilters targetingFilters,
-    required final String createdByAdminId,
-    required final String createdByAdminName,
-    required final DateTime createdAt,
     final DateTime? scheduledFor,
-    required final BroadcastMessageStatus status,
     final int? estimatedRecipients,
     final int? actualRecipients,
     final int? openedCount,
@@ -43,7 +38,7 @@ class AdminBroadcastMessage with _$AdminBroadcastMessage {
     final String? failureReason,
   }) = _AdminBroadcastMessage;
 
-  factory AdminBroadcastMessage.fromJson(final Map<String, dynamic> json) =>
+  factory AdminBroadcastMessage.fromJson(Map<String, dynamic> json) =>
       _$AdminBroadcastMessageFromJson(json);
 }
 
@@ -63,6 +58,6 @@ class BroadcastTargetingFilters with _$BroadcastTargetingFilters {
     final List<String>? userRoles,
   }) = _BroadcastTargetingFilters;
 
-  factory BroadcastTargetingFilters.fromJson(final Map<String, dynamic> json) =>
+  factory BroadcastTargetingFilters.fromJson(Map<String, dynamic> json) =>
       _$REDACTED_TOKEN(json);
 }

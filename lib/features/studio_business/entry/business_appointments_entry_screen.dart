@@ -5,12 +5,10 @@ class BusinessAppointmentsEntryScreen extends ConsumerWidget {
   const BusinessAppointmentsEntryScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    return Scaffold(
+  Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
       appBar: AppBar(title: const Text('Appointments')),
       body: const Center(
         child: Text('Business Appointments Entry Screen - Coming Soon'),
       ),
     );
-  }
-} 
+}

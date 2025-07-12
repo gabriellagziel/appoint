@@ -1,20 +1,20 @@
 class TimeSeriesPoint {
-  final DateTime date;
-  final int count;
 
   TimeSeriesPoint({required this.date, required this.count});
+  final DateTime date;
+  final int count;
 }
 
 class ServiceDistribution {
-  final String service;
-  final int bookings;
 
   ServiceDistribution({required this.service, required this.bookings});
+  final String service;
+  final int bookings;
 }
 
 class RevenueByStaff {
-  final String staff;
-  final double revenue;
 
   RevenueByStaff({required this.staff, required this.revenue});
+  final String staff;
+  final double revenue;
 }

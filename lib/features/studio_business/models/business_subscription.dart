@@ -1,6 +1,46 @@
 import 'package:flutter/material.dart';
 
 class BusinessSubscription {
+
+  BusinessSubscription({
+    required this.id,
+    required this.businessId,
+    required this.customerId,
+    required this.plan,
+    required this.status,
+    required this.currentPeriodStart,
+    required this.currentPeriodEnd,
+    required this.createdAt, required this.updatedAt, this.trialEnd,
+    this.cancelAtPeriodEnd,
+    this.stripeSubscriptionId,
+    this.stripePriceId,
+    this.promoCodeId,
+  });
+
+  factory BusinessSubscription.fromJson(Map<String, dynamic> json) => BusinessSubscription(
+      id: json['id'] as String,
+      businessId: json['businessId'] as String,
+      customerId: json['customerId'] as String,
+      plan: SubscriptionPlan.values.firstWhere(
+        (e) => e.name == json['plan'],
+        orElse: () => SubscriptionPlan.basic,
+      ),
+      status: SubscriptionStatus.values.firstWhere(
+        (e) => e.name == json['status'],
+        orElse: () => SubscriptionStatus.inactive,
+      ),
+      currentPeriodStart: DateTime.parse(json['currentPeriodStart'] as String),
+      currentPeriodEnd: DateTime.parse(json['currentPeriodEnd'] as String),
+      trialEnd: json['trialEnd'] != null
+          ? DateTime.parse(json['trialEnd'] as String)
+          : null,
+      createdAt: DateTime.parse(json['createdAt'] as String),
+      updatedAt: DateTime.parse(json['updatedAt'] as String),
+      cancelAtPeriodEnd: json['cancelAtPeriodEnd'] as String?,
+      stripeSubscriptionId: json['stripeSubscriptionId'] as String?,
+      stripePriceId: json['stripePriceId'] as String?,
+      promoCodeId: json['promoCodeId'] as String?,
+    );
   final String id;
   final String businessId;
   final String customerId;
@@ -16,50 +56,7 @@ class BusinessSubscription {
   final String? stripePriceId;
   final String? promoCodeId;
 
-  BusinessSubscription({
-    required this.id,
-    required this.businessId,
-    required this.customerId,
-    required this.plan,
-    required this.status,
-    required this.currentPeriodStart,
-    required this.currentPeriodEnd,
-    this.trialEnd,
-    required this.createdAt,
-    required this.updatedAt,
-    this.cancelAtPeriodEnd,
-    this.stripeSubscriptionId,
-    this.stripePriceId,
-    this.promoCodeId,
-  });
-
-  factory BusinessSubscription.fromJson(final Map<String, dynamic> json) {
-    return BusinessSubscription(
-      id: json['id'] as String,
-      businessId: json['businessId'] as String,
-      customerId: json['customerId'] as String,
-      plan: SubscriptionPlan.values.firstWhere(
-        (final e) => e.name == json['plan'],
-        orElse: () => SubscriptionPlan.basic,
-      ),
-      status: SubscriptionStatus.values.firstWhere(
-        (final e) => e.name == json['status'],
-        orElse: () => SubscriptionStatus.inactive,
-      ),
-      currentPeriodStart: DateTime.parse(json['currentPeriodStart'] as String),
-      currentPeriodEnd: DateTime.parse(json['currentPeriodEnd'] as String),
-      trialEnd: json['trialEnd'] != null ? DateTime.parse(json['trialEnd'] as String) : null,
-      createdAt: DateTime.parse(json['createdAt'] as String),
-      updatedAt: DateTime.parse(json['updatedAt'] as String),
-      cancelAtPeriodEnd: json['cancelAtPeriodEnd'] as String?,
-      stripeSubscriptionId: json['stripeSubscriptionId'] as String?,
-      stripePriceId: json['stripePriceId'] as String?,
-      promoCodeId: json['promoCodeId'] as String?,
-    );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
+  Map<String, dynamic> toJson() => {
       'id': id,
       'businessId': businessId,
       'customerId': customerId,
@@ -75,7 +72,6 @@ class BusinessSubscription {
       'stripePriceId': stripePriceId,
       'promoCodeId': promoCodeId,
     };
-  }
 }
 
 enum SubscriptionPlan {
@@ -122,9 +118,7 @@ extension SubscriptionPlanExtension on SubscriptionPlan {
     }
   }
 
-  String get priceDisplay {
-    return '€${price.toStringAsFixed(2)}/mo';
-  }
+  String get priceDisplay => '€${price.toStringAsFixed(2)}/mo';
 
   int get meetingLimit {
     switch (this) {
@@ -179,9 +173,8 @@ extension SubscriptionStatusExtension on SubscriptionStatus {
     }
   }
 
-  bool get isActive {
-    return this == SubscriptionStatus.active || this == SubscriptionStatus.trialing;
-  }
+  bool get isActive => this == SubscriptionStatus.active ||
+        this == SubscriptionStatus.trialing;
 
   Color get color {
     switch (this) {

@@ -1,19 +1,16 @@
+import 'package:appoint/services/stripe_service.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:appoint/services/stripe_service.dart';
 
 class SubscriptionScreen extends StatefulWidget {
+
+  const SubscriptionScreen({
+    required this.priceId, required this.planName, required this.price, super.key,
+  });
   final String priceId;
   final String planName;
   final double price;
-
-  const SubscriptionScreen({
-    super.key,
-    required this.priceId,
-    required this.planName,
-    required this.price,
-  });
 
   @override
   State<SubscriptionScreen> createState() => _SubscriptionScreenState();
@@ -24,7 +21,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
   bool _isLoading = true;
   bool _hasError = false;
   String _errorMessage = '';
-  final StripeService _stripeService = StripeService();
+  StripeService _stripeService = StripeService();
 
   @override
   void initState() {
@@ -64,17 +61,17 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         ..setJavaScriptMode(JavaScriptMode.unrestricted)
         ..setNavigationDelegate(
           NavigationDelegate(
-            onPageStarted: (final String url) {
+            onPageStarted: (String url) {
               setState(() {
                 _isLoading = true;
               });
             },
-            onPageFinished: (final String url) {
+            onPageFinished: (String url) {
               setState(() {
                 _isLoading = false;
               });
             },
-            onNavigationRequest: (final NavigationRequest request) {
+            onNavigationRequest: (NavigationRequest request) {
               // Handle success URL
               if (request.url.contains('session_id=')) {
                 _handleCheckoutSuccess(request.url);
@@ -89,7 +86,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
 
               return NavigationDecision.navigate;
             },
-            onWebResourceError: (final WebResourceError error) {
+            onWebResourceError: (WebResourceError error) {
               setState(() {
                 _hasError = true;
                 _errorMessage =
@@ -100,7 +97,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           ),
         )
         ..loadRequest(Uri.parse(checkoutUrl));
-    } catch (e) {
+    } catch (e) {e) {
       setState(() {
         _hasError = true;
         _errorMessage = 'Failed to initialize checkout: $e';
@@ -109,9 +106,9 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
     }
   }
 
-  void _handleCheckoutSuccess(final String url) {
+  void _handleCheckoutSuccess(String url) {
     // Extract session ID from URL
-    final uri = Uri.parse(url);
+    uri = Uri.parse(url);
     final sessionId = uri.queryParameters['session_id'];
 
     if (sessionId != null) {
@@ -136,8 +133,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: Text('Subscribe to ${widget.planName}'),
         backgroundColor: Colors.white,
@@ -153,12 +149,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
               ],
             ),
     );
-  }
 
-  Widget _buildErrorWidget() {
-    return Center(
+  Widget _buildErrorWidget() => Center(
       child: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(24),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -199,12 +193,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         ),
       ),
     );
-  }
 
-  Widget _buildLoadingWidget() {
-    return Container(
+  Widget _buildLoadingWidget() => const ColoredBox(
       color: Colors.white,
-      child: const Center(
+      child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -215,7 +207,6 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         ),
       ),
     );
-  }
 }
 
 // Subscription Plan Selection Screen
@@ -223,8 +214,7 @@ class SubscriptionPlansScreen extends StatelessWidget {
   const SubscriptionPlansScreen({super.key});
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Choose Your Plan'),
         backgroundColor: Colors.white,
@@ -232,7 +222,7 @@ class SubscriptionPlansScreen extends StatelessWidget {
         elevation: 0,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -245,7 +235,7 @@ class SubscriptionPlansScreen extends StatelessWidget {
             _buildPlanCard(
               context,
               'Basic',
-              '\$9.99/month',
+              r'$9.99/month',
               'price_basic_monthly',
               [
                 'Up to 50 bookings/month',
@@ -257,7 +247,7 @@ class SubscriptionPlansScreen extends StatelessWidget {
             _buildPlanCard(
               context,
               'Professional',
-              '\$19.99/month',
+              r'$19.99/month',
               'price_professional_monthly',
               [
                 'Up to 200 bookings/month',
@@ -271,7 +261,7 @@ class SubscriptionPlansScreen extends StatelessWidget {
             _buildPlanCard(
               context,
               'Enterprise',
-              '\$49.99/month',
+              r'$49.99/month',
               'price_enterprise_monthly',
               [
                 'Unlimited bookings',
@@ -285,7 +275,6 @@ class SubscriptionPlansScreen extends StatelessWidget {
         ),
       ),
     );
-  }
 
   Widget _buildPlanCard(
     final BuildContext context,
@@ -294,8 +283,7 @@ class SubscriptionPlansScreen extends StatelessWidget {
     final String priceId,
     final List<String> features, {
     final bool isRecommended = false,
-  }) {
-    return Card(
+  }) => Card(
       elevation: isRecommended ? 4 : 2,
       child: Container(
         decoration: isRecommended
@@ -305,7 +293,7 @@ class SubscriptionPlansScreen extends StatelessWidget {
               )
             : null,
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -346,7 +334,7 @@ class SubscriptionPlansScreen extends StatelessWidget {
                     ),
               ),
               const SizedBox(height: 16),
-              ...features.map((final feature) => Padding(
+              ...features.map((feature) => Padding(
                     padding: const EdgeInsets.symmetric(vertical: 4),
                     child: Row(
                       children: [
@@ -355,7 +343,7 @@ class SubscriptionPlansScreen extends StatelessWidget {
                         Expanded(child: Text(feature)),
                       ],
                     ),
-                  )),
+                  ),),
               const SizedBox(height: 16),
               SizedBox(
                 width: double.infinity,
@@ -363,11 +351,11 @@ class SubscriptionPlansScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (final context) => SubscriptionScreen(
+                        builder: (context) => SubscriptionScreen(
                           priceId: priceId,
                           planName: name,
                           price: double.parse(
-                              price.replaceAll(RegExp(r'[^\d.]'), '')),
+                              price.replaceAll(RegExp(r'[^\d.]'), ''),),
                         ),
                       ),
                     );
@@ -385,5 +373,4 @@ class SubscriptionPlansScreen extends StatelessWidget {
         ),
       ),
     );
-  }
 }

@@ -1,14 +1,14 @@
+import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 
 class BusinessProfileScreen extends ConsumerWidget {
   const BusinessProfileScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final profile = ref.watch(businessProfileProvider);
-    final notifier = ref.read(businessProfileProvider.notifier);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    profile = ref.watch(businessProfileProvider);
+    notifier = ref.read(businessProfileProvider.notifier);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Business Profile')),
@@ -22,13 +22,14 @@ class BusinessProfileScreen extends ConsumerWidget {
                     initialValue: profile.name,
                     decoration:
                         const InputDecoration(labelText: 'Business Name'),
-                    onChanged: (final value) => notifier.updateField(name: value),
+                    onChanged: (value) =>
+                        notifier.updateField(name: value),
                   ),
                   const SizedBox(height: 16),
                   TextFormField(
                     initialValue: profile.description,
                     decoration: const InputDecoration(labelText: 'Description'),
-                    onChanged: (final value) =>
+                    onChanged: (value) =>
                         notifier.updateField(description: value),
                   ),
                   const SizedBox(height: 16),
@@ -37,7 +38,8 @@ class BusinessProfileScreen extends ConsumerWidget {
                     decoration:
                         const InputDecoration(labelText: 'Phone Number'),
                     keyboardType: TextInputType.phone,
-                    onChanged: (final value) => notifier.updateField(phone: value),
+                    onChanged: (value) =>
+                        notifier.updateField(phone: value),
                   ),
                   const SizedBox(height: 24),
                   ElevatedButton.icon(
@@ -48,11 +50,11 @@ class BusinessProfileScreen extends ConsumerWidget {
                       if (context.mounted) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
-                              content: Text('Changes saved successfully!')),
+                              content: Text('Changes saved successfully!'),),
                         );
                       }
                     },
-                  )
+                  ),
                 ],
               ),
       ),

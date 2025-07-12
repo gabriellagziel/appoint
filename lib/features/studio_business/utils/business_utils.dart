@@ -2,7 +2,7 @@ import 'package:appoint/models/user_type.dart';
 
 class BusinessUtils {
   /// Convert UserType enum to string for display
-  static String userTypeToString(final UserType userType) {
+  static String userTypeToString(UserType userType) {
     switch (userType) {
       case UserType.personal:
         return 'Personal';
@@ -18,7 +18,7 @@ class BusinessUtils {
   }
 
   /// Convert string to UserType enum
-  static UserType stringToUserType(final String userTypeString) {
+  static UserType stringToUserType(String userTypeString) {
     switch (userTypeString.toLowerCase()) {
       case 'business':
         return UserType.business;
@@ -36,12 +36,10 @@ class BusinessUtils {
   }
 
   /// Check if user type is a business type (business or studio)
-  static bool isBusinessType(final UserType userType) {
-    return userType == UserType.business || userType == UserType.studio;
-  }
+  static bool isBusinessType(UserType userType) => userType == UserType.business || userType == UserType.studio;
 
   /// Get the appropriate dashboard title for a user type
-  static String getDashboardTitle(final UserType userType) {
+  static String getDashboardTitle(UserType userType) {
     switch (userType) {
       case UserType.business:
         return 'Business Dashboard';
@@ -57,7 +55,7 @@ class BusinessUtils {
   }
 
   /// Get the appropriate icon name for a user type
-  static String getUserTypeIcon(final UserType userType) {
+  static String getUserTypeIcon(UserType userType) {
     switch (userType) {
       case UserType.business:
         return 'business';

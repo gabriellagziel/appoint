@@ -1,26 +1,93 @@
+import 'package:appoint/config/environment_config.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 
+enum PaymentStatus { initial, processing, requiresAction, succeeded, failed }
+
 class PaymentService {
 
+  PaymentService([FirebaseFunctions? functions])
+      : _functions = functions ?? FirebaseFunctions.instance;
+  final FirebaseFunctions _functions;
+
   Future<void> init() async {
-    Stripe.publishableKey = 'pk_test_…';
+    // Load Stripe publishable key from environment configuration
+    if (!EnvironmentConfig.isStripeConfigured) {
+      throw Exception('STRIPE_PUBLISHABLE_KEY environment variable is not set');
+    }
+    Stripe.publishableKey = EnvironmentConfig.stripePublishableKey;
     await Stripe.instance.applySettings();
   }
 
-  Future<Map<String, dynamic>> createPaymentIntent(final double amount) async {
-    final callable = FirebaseFunctions.instance.httpsCallable('createPaymentIntent');
-    final result = await callable.call({'amount': amount});
+  Future<Map<String, dynamic>> createPaymentIntent(double amount) async {
+    callable = _functions.httpsCallable('createPaymentIntent');
+    result = await callable.call({'amount': amount});
     return Map<String, dynamic>.from(result.data);
   }
 
-  Future<void> handlePayment(final String clientSecret) async {
-    // Use flutter_stripe’s confirmPayment with PaymentMethodParams
-    await Stripe.instance.confirmPayment(
-      paymentIntentClientSecret: clientSecret,
-      data: const PaymentMethodParams.card(
-        paymentMethodData: PaymentMethodData(),
-      ),
-    );
+  Future<PaymentStatus> handlePayment(double amount) async {
+    try {
+      intent = await createPaymentIntent(amount);
+      final clientSecret = intent['clientSecret'] as String;
+      final status = intent['status'] as String?;
+      if (status == 'requires_action') {
+        // 3D Secure required
+        try {
+          await Stripe.instance.handleNextAction(clientSecret);
+        } catch (e) {_) {
+          return PaymentStatus.failed;
+        }
+        // Re-confirm after 3DS
+        return await _confirmPayment(clientSecret);
+      } else {
+        // Try to confirm payment
+        return await _confirmPayment(clientSecret);
+      }
+    } catch (e) {_) {
+      return PaymentStatus.failed;
+    }
+  }
+
+  Future<PaymentStatus> _confirmPayment(String clientSecret) async {
+    try {
+      final paymentResult = await Stripe.instance.confirmPayment(
+        paymentIntentClientSecret: clientSecret,
+        data: const PaymentMethodParams.card(
+            paymentMethodData: PaymentMethodData(),),
+      );
+      switch (paymentResult.status) {
+        case PaymentIntentsStatus.Succeeded:
+          return PaymentStatus.succeeded;
+        case PaymentIntentsStatus.RequiresAction:
+          try {
+            await Stripe.instance.handleNextAction(clientSecret);
+          } catch (e) {_) {
+            return PaymentStatus.failed;
+          }
+          return await _confirmPayment(clientSecret);
+        case PaymentIntentsStatus.RequiresPaymentMethod:
+        case PaymentIntentsStatus.Canceled:
+        default:
+          return PaymentStatus.failed;
+      }
+    } catch (e) {_) {
+      return PaymentStatus.failed;
+    }
+  }
+
+  // Helper method to get payment status description
+  String getPaymentStatusMessage(PaymentStatus status) {
+    switch (status) {
+      case PaymentStatus.initial:
+        return 'Ready to process payment';
+      case PaymentStatus.processing:
+        return 'Processing payment...';
+      case PaymentStatus.requiresAction:
+        return 'Authentication required...';
+      case PaymentStatus.succeeded:
+        return 'Payment successful!';
+      case PaymentStatus.failed:
+        return 'Payment failed. Please try again.';
+    }
   }
 }

@@ -7,26 +7,26 @@ class AdService {
 
   static Future<void> showInterstitialAd() async {
     await MobileAds.instance.initialize();
-    final completer = Completer<void>();
+    completer = Completer<void>();
 
     await InterstitialAd.load(
       adUnitId: _testInterstitialAdId,
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
-        onAdLoaded: (final ad) {
+        onAdLoaded: (ad) {
           ad.fullScreenContentCallback = FullScreenContentCallback(
-            onAdDismissedFullScreenContent: (final ad) {
+            onAdDismissedFullScreenContent: (ad) {
               ad.dispose();
               if (!completer.isCompleted) completer.complete();
             },
-            REDACTED_TOKEN: (final ad, final error) {
+            REDACTED_TOKEN: (ad, final error) {
               ad.dispose();
               if (!completer.isCompleted) completer.complete();
             },
           );
           ad.show();
         },
-        onAdFailedToLoad: (final error) {
+        onAdFailedToLoad: (error) {
           if (!completer.isCompleted) completer.complete();
         },
       ),

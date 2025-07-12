@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 
 class ResponsiveScaffold extends StatelessWidget {
+
+  const ResponsiveScaffold({
+    required this.body, super.key,
+    this.drawer,
+    this.bottomNavigationBar,
+    this.appBar,
+    this.floatingActionButton,
+    this.floatingActionButtonLocation,
+  });
   final Widget body;
   final Widget? drawer;
   final Widget? bottomNavigationBar;
@@ -8,19 +17,9 @@ class ResponsiveScaffold extends StatelessWidget {
   final FloatingActionButton? floatingActionButton;
   final FloatingActionButtonLocation? floatingActionButtonLocation;
 
-  const ResponsiveScaffold({
-    super.key,
-    required this.body,
-    this.drawer,
-    this.bottomNavigationBar,
-    this.appBar,
-    this.floatingActionButton,
-    this.floatingActionButtonLocation,
-  });
-
   @override
-  Widget build(final BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
+  Widget build(BuildContext context) {
+    width = MediaQuery.of(context).size.width;
     final isDesktop = width >= 800;
 
     return Scaffold(
@@ -31,7 +30,7 @@ class ResponsiveScaffold extends StatelessWidget {
       floatingActionButtonLocation: floatingActionButtonLocation,
       body: Row(
         children: [
-          if (isDesktop && drawer != null) SizedBox(width: 250, child: drawer!),
+          if (isDesktop && drawer != null) SizedBox(width: 250, child: drawer),
           Expanded(child: body),
         ],
       ),

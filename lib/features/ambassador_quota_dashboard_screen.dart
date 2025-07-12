@@ -1,13 +1,13 @@
+import 'package:appoint/providers/ambassador_quota_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/ambassador_quota_provider.dart';
 
 class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
   const AmbassadorQuotaDashboardScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final globalStatsAsync = ref.watch(globalQuotaStatisticsProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    globalStatsAsync = ref.watch(globalQuotaStatisticsProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -15,9 +15,9 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: globalStatsAsync.when(
-        data: (final globalStats) => _buildDashboard(context, globalStats),
+        data: (globalStats) => _buildDashboard(context, globalStats),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final error, final stack) => Center(
+        error: (error, final stack) => Center(
           child: Text('Error: $error'),
         ),
       ),
@@ -25,9 +25,8 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
   }
 
   Widget _buildDashboard(
-      final BuildContext context, final Map<String, dynamic> globalStats) {
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(16.0),
+      BuildContext context, final Map<String, dynamic> globalStats,) => SingleChildScrollView(
+      padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -40,10 +39,8 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
         ],
       ),
     );
-  }
 
-  Widget _buildStatsGrid(final Map<String, dynamic> globalStats) {
-    return GridView.count(
+  Widget _buildStatsGrid(Map<String, dynamic> globalStats) => GridView.count(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
@@ -77,14 +74,12 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
         ),
       ],
     );
-  }
 
   Widget _buildStatCard(final String title, final String value,
-      final IconData icon, final Color color) {
-    return Card(
+      IconData icon, final Color color,) => Card(
       elevation: 4,
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -110,5 +105,4 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 }

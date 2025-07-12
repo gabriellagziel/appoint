@@ -1,18 +1,4 @@
 class PromoCode {
-  final String id;
-  final String code;
-  final String description;
-  final PromoCodeType type;
-  final double value;
-  final DateTime validFrom;
-  final DateTime validUntil;
-  final int maxUses;
-  final int currentUses;
-  final bool isActive;
-  final DateTime createdAt;
-  final DateTime updatedAt;
-  final List<String>? applicablePlans;
-  final int? minimumSubscriptionMonths;
 
   PromoCode({
     required this.id,
@@ -31,13 +17,12 @@ class PromoCode {
     this.minimumSubscriptionMonths,
   });
 
-  factory PromoCode.fromJson(final Map<String, dynamic> json) {
-    return PromoCode(
+  factory PromoCode.fromJson(Map<String, dynamic> json) => PromoCode(
       id: json['id'] as String,
       code: json['code'] as String,
       description: json['description'] as String,
       type: PromoCodeType.values.firstWhere(
-        (final e) => e.name == json['type'],
+        (e) => e.name == json['type'],
         orElse: () => PromoCodeType.freeTrial,
       ),
       value: (json['value'] as num).toDouble(),
@@ -48,15 +33,27 @@ class PromoCode {
       isActive: json['isActive'] as bool,
       createdAt: DateTime.parse(json['createdAt'] as String),
       updatedAt: DateTime.parse(json['updatedAt'] as String),
-      applicablePlans: json['applicablePlans'] != null 
+      applicablePlans: json['applicablePlans'] != null
           ? List<String>.from(json['applicablePlans'] as List)
           : null,
       minimumSubscriptionMonths: json['minimumSubscriptionMonths'] as int?,
     );
-  }
+  final String id;
+  final String code;
+  final String description;
+  final PromoCodeType type;
+  final double value;
+  final DateTime validFrom;
+  final DateTime validUntil;
+  final int maxUses;
+  final int currentUses;
+  final bool isActive;
+  final DateTime createdAt;
+  final DateTime updatedAt;
+  final List<String>? applicablePlans;
+  final int? minimumSubscriptionMonths;
 
-  Map<String, dynamic> toJson() {
-    return {
+  Map<String, dynamic> toJson() => {
       'id': id,
       'code': code,
       'description': description,
@@ -72,7 +69,6 @@ class PromoCode {
       'applicablePlans': applicablePlans,
       'minimumSubscriptionMonths': minimumSubscriptionMonths,
     };
-  }
 }
 
 enum PromoCodeType {

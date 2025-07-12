@@ -1,8 +1,7 @@
 // This screen fetches and paginates content items from Firestore.
+import 'package:appoint/providers/content_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'package:appoint/providers/content_provider.dart';
 
 /// Displays a paginated list of content items.
 class ContentLibraryScreen extends ConsumerStatefulWidget {
@@ -14,7 +13,7 @@ class ContentLibraryScreen extends ConsumerStatefulWidget {
 }
 
 class _ContentLibraryScreenState extends ConsumerState<ContentLibraryScreen> {
-  final ScrollController _controller = ScrollController();
+  ScrollController _controller = ScrollController();
 
   @override
   void initState() {
@@ -30,22 +29,22 @@ class _ContentLibraryScreenState extends ConsumerState<ContentLibraryScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final contentAsync = ref.watch(contentPagingProvider);
+  Widget build(BuildContext context) {
+    contentAsync = ref.watch(contentPagingProvider);
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('Content Library'),
       ),
       body: contentAsync.when(
-        data: (final items) {
+        data: (items) {
           if (items.isEmpty) {
             return const Center(child: Text('No content available yet'));
           }
           return ListView.builder(
             controller: _controller,
             itemCount: items.length,
-            itemBuilder: (final context, final index) {
+            itemBuilder: (context, final index) {
               final item = items[index];
               return ListTile(
                 title: Text(item.title),
@@ -63,7 +62,7 @@ class _ContentLibraryScreenState extends ConsumerState<ContentLibraryScreen> {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final e, final _) => Center(child: Text('Error: $e')),
+        error: (e, final _) => Center(child: Text('Error: $e')),
       ),
     );
   }

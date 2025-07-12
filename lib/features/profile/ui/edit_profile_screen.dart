@@ -1,6 +1,7 @@
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
 
 class EditProfileScreen extends StatefulWidget {
   const EditProfileScreen({super.key});
@@ -10,14 +11,25 @@ class EditProfileScreen extends StatefulWidget {
 }
 
 class _EditProfileScreenState extends State<EditProfileScreen> {
-  final TextEditingController _nameController = TextEditingController();
-  final TextEditingController _bioController = TextEditingController();
-  final TextEditingController _locationController = TextEditingController();
+  TextEditingController _nameController = TextEditingController();
+  TextEditingController _bioController = TextEditingController();
+  TextEditingController _locationController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
-    FirebaseAnalytics.instance.logEvent(name: 'edit_profile_view');
+    _logAnalyticsEvent('edit_profile_view');
+  }
+
+  void _logAnalyticsEvent(String eventName) {
+    try {
+      // Only log analytics if Firebase is initialized
+      if (Firebase.apps.isNotEmpty) {
+        FirebaseAnalytics.instance.logEvent(name: eventName);
+      }
+    } catch (e) {e) {
+      // Silently ignore analytics errors in tests
+    }
   }
 
   @override
@@ -29,8 +41,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Edit Profile'),
       ),
@@ -38,21 +49,28 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            TextField(
-              controller: _nameController,
-              decoration: const InputDecoration(labelText: 'Name'),
+            Semantics(
+              label: 'Full name',
+              child: TextField(
+                controller: _nameController,
+                decoration: const InputDecoration(labelText: 'Name'),
+              ),
             ),
             const SizedBox(height: 8),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                TextFormField(
-                  controller: _bioController,
-                  inputFormatters: [
-                    REDACTED_TOKEN(150),
-                  ],
-                  onChanged: (final _) => setState(() {}),
-                  decoration: const InputDecoration(labelText: 'Bio'),
+                Semantics(
+                  label: 'Personal biography',
+                  hint: 'Tell us about yourself',
+                  child: TextFormField(
+                    controller: _bioController,
+                    inputFormatters: [
+                      REDACTED_TOKEN(150),
+                    ],
+                    onChanged: (_) => setState(() {}),
+                    decoration: const InputDecoration(labelText: 'Bio'),
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Align(
@@ -65,15 +83,17 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               ],
             ),
             const SizedBox(height: 8),
-            TextField(
-              controller: _locationController,
-              decoration: const InputDecoration(labelText: 'Location'),
+            Semantics(
+              label: 'Location or city',
+              child: TextField(
+                controller: _locationController,
+                decoration: const InputDecoration(labelText: 'Location'),
+              ),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                FirebaseAnalytics.instance
-                    .logEvent(name: 'profile_saved');
+                _logAnalyticsEvent('profile_saved');
                 Navigator.pop(context, {
                   'name': _nameController.text,
                   'bio': _bioController.text,
@@ -86,5 +106,4 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         ),
       ),
     );
-  }
 }

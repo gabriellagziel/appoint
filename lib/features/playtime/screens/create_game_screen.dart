@@ -1,14 +1,14 @@
+import 'dart:io';
+
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/models/playtime_game.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'dart:io';
-
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/providers/playtime_provider.dart';
-import 'package:appoint/config/theme.dart';
-import 'package:appoint/models/playtime_game.dart';
 
 class CreateGameScreen extends ConsumerStatefulWidget {
   const CreateGameScreen({super.key});
@@ -18,9 +18,9 @@ class CreateGameScreen extends ConsumerStatefulWidget {
 }
 
 class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
-  final _descriptionController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _nameController = TextEditingController();
+  _descriptionController = TextEditingController();
 
   String _selectedCategory = 'Action';
   int _minAge = 5;
@@ -49,8 +49,8 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+  Widget build(BuildContext context) {
+    l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -88,8 +88,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
     );
   }
 
-  Widget _buildImageSection(final AppLocalizations l10n) {
-    return Column(
+  Widget _buildImageSection(AppLocalizations l10n) => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -113,7 +112,6 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
                 border: Border.all(
                   color: Colors.grey[300]!,
                   width: 2,
-                  style: BorderStyle.solid,
                 ),
               ),
               child: _selectedImage != null
@@ -147,10 +145,8 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
         ),
       ],
     );
-  }
 
-  Widget _buildBasicInformation(final AppLocalizations l10n) {
-    return Column(
+  Widget _buildBasicInformation(AppLocalizations l10n) => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -174,7 +170,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
             ),
             prefixIcon: const Icon(Icons.games),
           ),
-          validator: (final value) {
+          validator: (value) {
             if (value == null || value.isEmpty) {
               return 'Please enter a game name';
             }
@@ -198,7 +194,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
             prefixIcon: const Icon(Icons.description),
           ),
           maxLines: 3,
-          validator: (final value) {
+          validator: (value) {
             if (value == null || value.isEmpty) {
               return 'Please enter a game description';
             }
@@ -220,13 +216,11 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
             ),
             prefixIcon: const Icon(Icons.category),
           ),
-          items: _categories.map((final category) {
-            return DropdownMenuItem(
+          items: _categories.map((category) => DropdownMenuItem(
               value: category,
               child: Text(category),
-            );
-          }).toList(),
-          onChanged: (final value) {
+            ),).toList(),
+          onChanged: (value) {
             setState(() {
               _selectedCategory = value!;
             });
@@ -234,10 +228,8 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
         ),
       ],
     );
-  }
 
-  Widget _buildGameSettings(final AppLocalizations l10n) {
-    return Column(
+  Widget _buildGameSettings(AppLocalizations l10n) => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -265,7 +257,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           max: 18,
           divisions: 15,
           labels: RangeLabels('$_minAge', '$_maxAge'),
-          onChanged: (final values) {
+          onChanged: (values) {
             setState(() {
               _minAge = values.start.round();
               _maxAge = values.end.round();
@@ -289,7 +281,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           max: 10,
           divisions: 8,
           label: '$_maxParticipants',
-          onChanged: (final value) {
+          onChanged: (value) {
             setState(() {
               _maxParticipants = value.round();
             });
@@ -312,7 +304,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           max: 120,
           divisions: 21,
           label: '$_estimatedDuration',
-          onChanged: (final value) {
+          onChanged: (value) {
             setState(() {
               _estimatedDuration = value.round();
             });
@@ -320,10 +312,8 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
         ),
       ],
     );
-  }
 
-  Widget _buildPrivacySettings(final AppLocalizations l10n) {
-    return Column(
+  Widget _buildPrivacySettings(AppLocalizations l10n) => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -341,7 +331,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           title: const Text('Make Game Public'),
           subtitle: const Text('Allow other users to find and join this game'),
           value: _isPublic,
-          onChanged: (final value) {
+          onChanged: (value) {
             setState(() {
               _isPublic = value;
             });
@@ -354,7 +344,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           title: const Text('Require Parent Approval'),
           subtitle: const Text('Parents must approve before children can join'),
           value: _parentApprovalRequired,
-          onChanged: (final value) {
+          onChanged: (value) {
             setState(() {
               _parentApprovalRequired = value;
             });
@@ -363,12 +353,10 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
         ),
       ],
     );
-  }
 
-  Widget _buildCreateButton(final AppLocalizations l10n) {
-    return Consumer(
-      builder: (final context, final ref, final child) {
-        final createGameState = ref.watch(playtimeGameNotifierProvider);
+  Widget _buildCreateButton(AppLocalizations l10n) => Consumer(
+      builder: (context, final ref, final child) {
+        createGameState = ref.watch(playtimeGameNotifierProvider);
 
         return SizedBox(
           width: double.infinity,
@@ -395,14 +383,13 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
         );
       },
     );
-  }
 
   Future<void> _pickImage() async {
     if (kIsWeb) {
       return;
     }
-    final ImagePicker picker = ImagePicker();
-    final XFile? image = await picker.pickImage(
+    picker = ImagePicker();
+    final image = await picker.pickImage(
       source: ImageSource.gallery,
       maxWidth: 512,
       maxHeight: 512,
@@ -440,7 +427,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
         );
         context.pop();
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

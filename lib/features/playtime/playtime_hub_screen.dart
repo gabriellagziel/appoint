@@ -1,20 +1,19 @@
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/models/playtime_game.dart';
+import 'package:appoint/models/playtime_session.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/providers/playtime_provider.dart';
-import 'package:appoint/config/theme.dart';
-import 'package:appoint/models/playtime_game.dart';
-import 'package:appoint/models/playtime_session.dart';
-import 'package:appoint/widgets/bottom_sheet_manager.dart';
 
 class PlaytimeHubScreen extends ConsumerWidget {
   const PlaytimeHubScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final l10n = AppLocalizations.of(context)!;
+  Widget build(BuildContext context, final WidgetRef ref) {
+    l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -45,7 +44,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -80,8 +79,8 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildWelcomeSection(final BuildContext context, final AppLocalizations l10n) {
-    return Container(
+  Widget _buildWelcomeSection(
+      BuildContext context, final AppLocalizations l10n,) => Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: AppTheme.primaryColor,
@@ -140,10 +139,9 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ],
       ),
     );
-  }
 
-  Widget _buildQuickActions(final BuildContext context, final AppLocalizations l10n) {
-    return Column(
+  Widget _buildQuickActions(
+      BuildContext context, final AppLocalizations l10n,) => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
@@ -179,7 +177,6 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ),
       ],
     );
-  }
 
   Widget _buildActionCard(
     final BuildContext context,
@@ -187,8 +184,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
     final IconData icon,
     final Color color,
     final VoidCallback onTap,
-  ) {
-    return GestureDetector(
+  ) => GestureDetector(
       onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(20),
@@ -225,10 +221,9 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
-  Widget _buildRecentGames(final BuildContext context, final AppLocalizations l10n) {
-    return Column(
+  Widget _buildRecentGames(
+      BuildContext context, final AppLocalizations l10n,) => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
@@ -249,11 +244,11 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ),
         const SizedBox(height: 12),
         Consumer(
-          builder: (final context, final ref, final child) {
-            final gamesAsync = ref.watch(systemGamesProvider);
+          builder: (context, final ref, final child) {
+            gamesAsync = ref.watch(systemGamesProvider);
 
             return gamesAsync.when(
-              data: (final games) {
+              data: (games) {
                 if (games.isEmpty) {
                   return _buildEmptyState(
                     context,
@@ -268,7 +263,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: games.take(5).length,
-                    itemBuilder: (final context, final index) {
+                    itemBuilder: (context, final index) {
                       final game = games[index];
                       return _buildGameCard(context, game, l10n);
                     },
@@ -276,17 +271,15 @@ class PlaytimeHubScreen extends ConsumerWidget {
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (final error, final stack) => Text('Error: $error'),
+              error: (error, final stack) => Text('Error: $error'),
             );
           },
         ),
       ],
     );
-  }
 
-  Widget _buildGameCard(
-      final BuildContext context, final PlaytimeGame game, final AppLocalizations l10n) {
-    return Container(
+  Widget _buildGameCard(final BuildContext context, final PlaytimeGame game,
+      AppLocalizations l10n,) => Container(
       width: 120,
       margin: const EdgeInsets.only(right: 12),
       child: Card(
@@ -304,8 +297,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
                   children: [
                     CircleAvatar(
                       radius: 20,
-                      backgroundImage: null,
-                      onBackgroundImageError: (final _, final __) {},
+                      onBackgroundImageError: (_, final __) {},
                       child: const Icon(Icons.games, size: 20),
                     ),
                     const SizedBox(width: 8),
@@ -344,10 +336,9 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
-  Widget _buildUpcomingSessions(final BuildContext context, final AppLocalizations l10n) {
-    return Column(
+  Widget _buildUpcomingSessions(
+      BuildContext context, final AppLocalizations l10n,) => Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
@@ -368,11 +359,11 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ),
         const SizedBox(height: 12),
         Consumer(
-          builder: (final context, final ref, final child) {
-            final sessionsAsync = ref.watch(confirmedSessionsProvider);
+          builder: (context, final ref, final child) {
+            sessionsAsync = ref.watch(confirmedSessionsProvider);
 
             return sessionsAsync.when(
-              data: (final sessions) {
+              data: (sessions) {
                 if (sessions.isEmpty) {
                   return _buildEmptyState(
                     context,
@@ -383,23 +374,19 @@ class PlaytimeHubScreen extends ConsumerWidget {
                 }
 
                 return Column(
-                  children: sessions.take(3).map((final session) {
-                    return _buildSessionCard(context, session, l10n);
-                  }).toList(),
+                  children: sessions.take(3).map((session) => _buildSessionCard(context, session, l10n)).toList(),
                 );
               },
               loading: () => const Center(child: CircularProgressIndicator()),
-              error: (final error, final stack) => Text('Error: $error'),
+              error: (error, final stack) => Text('Error: $error'),
             );
           },
         ),
       ],
     );
-  }
 
-  Widget _buildSessionCard(
-      final BuildContext context, final PlaytimeSession session, final AppLocalizations l10n) {
-    return Card(
+  Widget _buildSessionCard(final BuildContext context,
+      PlaytimeSession session, final AppLocalizations l10n,) => Card(
       margin: const EdgeInsets.only(bottom: 8),
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -439,11 +426,9 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
-  Widget _buildEmptyState(
-      final BuildContext context, final String title, final String subtitle, final IconData icon) {
-    return Container(
+  Widget _buildEmptyState(final BuildContext context, final String title,
+      String subtitle, final IconData icon,) => Container(
       padding: const EdgeInsets.all(24),
       child: Column(
         children: [
@@ -473,9 +458,9 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ],
       ),
     );
-  }
 
-  void _showCreateOptions(final BuildContext context, final AppLocalizations l10n) {
+  void _showCreateOptions(
+      BuildContext context, final AppLocalizations l10n,) {
     BottomSheetManager.show(
       context: context,
       child: Container(
@@ -545,8 +530,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
     final IconData icon,
     final Color color,
     final VoidCallback onTap,
-  ) {
-    return InkWell(
+  ) => InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(12),
       child: Container(
@@ -581,11 +565,10 @@ class PlaytimeHubScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
-  String _formatDateTime(final DateTime dateTime) {
-    final now = DateTime.now();
-    final difference = dateTime.difference(now);
+  String _formatDateTime(DateTime dateTime) {
+    now = DateTime.now();
+    difference = dateTime.difference(now);
 
     if (difference.inDays > 0) {
       return '${difference.inDays} ${difference.inDays == 1 ? 'day' : 'days'}';

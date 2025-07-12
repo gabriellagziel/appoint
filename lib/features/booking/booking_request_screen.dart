@@ -1,11 +1,11 @@
+import 'package:appoint/features/selection/providers/selection_provider.dart';
+import 'package:appoint/providers/branch_provider.dart';
+import 'package:appoint/services/location_service.dart';
+import 'package:appoint/services/maps_service.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/features/selection/providers/selection_provider.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:appoint/services/maps_service.dart';
-import 'package:appoint/services/location_service.dart';
-import 'package:appoint/providers/branch_provider.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 
 class BookingRequestScreen extends ConsumerStatefulWidget {
   const BookingRequestScreen({super.key});
@@ -17,7 +17,7 @@ class BookingRequestScreen extends ConsumerStatefulWidget {
 
 class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
   GoogleMapController? _mapController;
-  final LocationService _locationService = LocationService();
+  LocationService _locationService = LocationService();
   Set<Marker> _markers = {};
 
   @override
@@ -30,31 +30,31 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
 
   Future<void> _loadInitialData() async {
     try {
-      final branches = await ref.read(branchesProvider.future);
+      branches = await ref.read(branchesProvider.future);
       setState(() {
         _markers = branches
-            .map((final b) => Marker(
+            .map((b) => Marker(
                   markerId: MarkerId(b.id),
                   position: LatLng(b.latitude, b.longitude),
                   infoWindow: InfoWindow(title: b.name),
-                ))
+                ),)
             .toSet();
       });
 
       if (!kIsWeb) {
-        final position = await _locationService.getCurrentLocation();
+        position = await _locationService.getCurrentLocation();
         if (position != null && _mapController != null) {
           _mapController!.moveCamera(CameraUpdate.newLatLng(
-              LatLng(position.latitude, position.longitude)));
+              LatLng(position.latitude, position.longitude),),);
         }
       }
-    } catch (e) {
-      // Removed debug print: print('Error loading initial data: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error loading initial data: $e');
     }
   }
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     ref.watch(staffSelectionProvider);
     ref.watch(serviceSelectionProvider);
     ref.watch(selectedSlotProvider);
@@ -66,19 +66,16 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
     );
   }
 
-  Widget _buildMap() {
-    return GoogleMap(
+  Widget _buildMap() => GoogleMap(
       initialCameraPosition: MapsService.initialPosition,
       markers: _markers,
-      onMapCreated: (final controller) {
+      onMapCreated: (controller) {
         _mapController = controller;
       },
       myLocationEnabled: true,
     );
-  }
 
-  Widget _buildWebFallback() {
-    return Center(
+  Widget _buildWebFallback() => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -101,5 +98,4 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
         ],
       ),
     );
-  }
 }

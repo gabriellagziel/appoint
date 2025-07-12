@@ -1,15 +1,17 @@
 import 'package:flutter_test/flutter_test.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
+void main() {
+  setUpAll(() async {
+    // TODO(username): Initialize Firebase for tests
+  });
 
   group('NotificationService', () {
     setUp(() {
-      // TODO: Set up NotificationService tests
+      // TODO(username): Set up NotificationService tests
     });
 
-    testWidgets('initializes correctly', (final tester) async {
-      // TODO: implement service test
+    testWidgets('initializes correctly', (tester) async {
+      // TODO(username): implement service test
     });
   });
 }

@@ -5,8 +5,7 @@ class AdminMonetizationScreen extends ConsumerWidget {
   const AdminMonetizationScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    return Scaffold(
+  Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
       appBar: AppBar(
         title: const Text('Monetization Settings'),
         backgroundColor: Theme.of(context).primaryColor,
@@ -16,5 +15,4 @@ class AdminMonetizationScreen extends ConsumerWidget {
         child: Text('Monetization settings will be implemented here'),
       ),
     );
-  }
 }

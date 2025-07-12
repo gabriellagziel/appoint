@@ -1,17 +1,16 @@
-import 'package:flutter/material.dart';
-
 import 'package:appoint/theme/app_text_styles.dart';
+import 'package:flutter/material.dart';
 
 /// Application theme built with Material 3 color schemes.
 class AppTheme {
-  static ThemeData lightTheme(final Color seedColor) =>
+  static ThemeData lightTheme(Color seedColor) =>
       _buildTheme(seedColor: seedColor, brightness: Brightness.light);
 
-  static ThemeData darkTheme(final Color seedColor) =>
+  static ThemeData darkTheme(Color seedColor) =>
       _buildTheme(seedColor: seedColor, brightness: Brightness.dark);
 
   static ThemeData fromSeed(final Color seedColor,
-          {final Brightness brightness = Brightness.light}) =>
+          {Brightness brightness = Brightness.light,}) =>
       _buildTheme(seedColor: seedColor, brightness: brightness);
 
   static ThemeData _buildTheme({

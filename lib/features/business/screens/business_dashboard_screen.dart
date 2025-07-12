@@ -5,8 +5,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
   const BusinessDashboardScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    return Scaffold(
+  Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
       appBar: AppBar(
         title: const Text('Business Dashboard'),
         backgroundColor: Theme.of(context).primaryColor,
@@ -28,10 +27,8 @@ class BusinessDashboardScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
-  Widget _buildWelcomeCard(final BuildContext context) {
-    return Card(
+  Widget _buildWelcomeCard(BuildContext context) => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(20),
@@ -55,10 +52,8 @@ class BusinessDashboardScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
-  Widget _buildStatsGrid(final BuildContext context) {
-    return GridView.count(
+  Widget _buildStatsGrid(BuildContext context) => GridView.count(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
@@ -83,7 +78,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
         _buildStatCard(
           context,
           'Revenue This Month',
-          '\$2,450',
+          r'$2,450',
           Icons.attach_money,
           Colors.orange,
         ),
@@ -96,11 +91,9 @@ class BusinessDashboardScreen extends ConsumerWidget {
         ),
       ],
     );
-  }
 
   Widget _buildStatCard(final BuildContext context, final String title,
-      final String value, final IconData icon, final Color color) {
-    return Card(
+      String value, final IconData icon, final Color color,) => Card(
       elevation: 2,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -132,10 +125,8 @@ class BusinessDashboardScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
-  Widget _buildQuickActions(final BuildContext context) {
-    return Card(
+  Widget _buildQuickActions(BuildContext context) => Card(
       elevation: 2,
       child: Padding(
         padding: const EdgeInsets.all(20),
@@ -200,11 +191,9 @@ class BusinessDashboardScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
   Widget _buildActionButton(final BuildContext context, final String label,
-      final IconData icon, final Color color, final VoidCallback onTap) {
-    return ElevatedButton.icon(
+      IconData icon, final Color color, final VoidCallback onTap,) => ElevatedButton.icon(
       onPressed: onTap,
       icon: Icon(icon, color: Colors.white),
       label: Text(
@@ -216,10 +205,8 @@ class BusinessDashboardScreen extends ConsumerWidget {
         padding: const EdgeInsets.symmetric(vertical: 12),
       ),
     );
-  }
 
-  Widget _buildRecentActivity(final BuildContext context) {
-    return Card(
+  Widget _buildRecentActivity(BuildContext context) => Card(
       elevation: 2,
       child: Padding(
         padding: const EdgeInsets.all(20),
@@ -252,7 +239,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
             _buildActivityItem(
               context,
               'Payment received',
-              '\$85.00 - Massage session',
+              r'$85.00 - Massage session',
               '6 hours ago',
               Icons.payment,
               Colors.orange,
@@ -269,7 +256,6 @@ class BusinessDashboardScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
   Widget _buildActivityItem(
       final BuildContext context,
@@ -277,8 +263,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
       final String subtitle,
       final String time,
       final IconData icon,
-      final Color color) {
-    return Padding(
+      Color color,) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
         children: [
@@ -319,5 +304,4 @@ class BusinessDashboardScreen extends ConsumerWidget {
         ],
       ),
     );
-  }
 }

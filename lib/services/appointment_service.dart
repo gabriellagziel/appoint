@@ -1,8 +1,8 @@
 import 'dart:core';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'package:appoint/models/appointment.dart';
 import 'package:appoint/services/notification_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class AppointmentService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -12,7 +12,7 @@ class AppointmentService {
     required final String inviteeId,
     required final DateTime scheduledAt,
   }) async {
-    final doc = _firestore.collection('appointments').doc();
+    doc = _firestore.collection('appointments').doc();
     final appointment = Appointment(
       id: doc.id,
       creatorId: creatorId,
@@ -22,7 +22,7 @@ class AppointmentService {
     );
     await doc.set(appointment.toJson());
     await NotificationService().sendNotificationToUser(
-        inviteeId, 'New Appointment', 'You have a new booking');
+        inviteeId, 'New Appointment', 'You have a new booking',);
     return appointment;
   }
 
@@ -30,8 +30,8 @@ class AppointmentService {
     required final String creatorId,
     required final String inviteeId,
   }) async {
-    final doc = _firestore.collection('appointments').doc();
-    final callRequestId = _firestore.collection('callRequests').doc().id;
+    doc = _firestore.collection('appointments').doc();
+    callRequestId = _firestore.collection('callRequests').doc().id;
     final appointment = Appointment(
       id: doc.id,
       creatorId: creatorId,
@@ -42,17 +42,15 @@ class AppointmentService {
     );
     await doc.set(appointment.toJson());
     await NotificationService().sendNotificationToUser(
-        inviteeId, 'New Call Request', 'You have a new call request');
+        inviteeId, 'New Call Request', 'You have a new call request',);
     return appointment;
   }
 
-  Stream<List<Appointment>> watchMyAppointments(final String userId) {
-    return _firestore
+  Stream<List<Appointment>> watchMyAppointments(String userId) => _firestore
         .collection('appointments')
         .where('creatorId', isEqualTo: userId)
         .snapshots()
-        .map((final snapshot) => snapshot.docs
-            .map((final doc) => Appointment.fromJson(doc.data()))
-            .toList());
-  }
+        .map((snapshot) => snapshot.docs
+            .map((doc) => Appointment.fromJson(doc.data()))
+            .toList(),);
 }

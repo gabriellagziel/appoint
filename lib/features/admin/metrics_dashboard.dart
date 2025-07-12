@@ -1,10 +1,9 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/services/analytics_service.dart';
+import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:fl_chart/fl_chart.dart';
-import 'package:appoint/services/analytics_service.dart';
-
-import 'package:appoint/l10n/app_localizations.dart';
 
 /// Admin metrics dashboard widget displaying key performance indicators
 class AdminMetricsDashboard extends ConsumerStatefulWidget {
@@ -18,7 +17,7 @@ class AdminMetricsDashboard extends ConsumerStatefulWidget {
 class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
     with TickerProviderStateMixin {
   late TabController _tabController;
-  final AnalyticsService _analyticsService = AnalyticsService();
+  AnalyticsService _analyticsService = AnalyticsService();
 
   @override
   void initState() {
@@ -42,8 +41,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+  Widget build(BuildContext context) {
+    l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -71,8 +70,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
     );
   }
 
-  Widget _buildOverviewTab() {
-    return SingleChildScrollView(
+  Widget _buildOverviewTab() => SingleChildScrollView(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -85,10 +83,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ],
       ),
     );
-  }
 
-  Widget _buildKPICards() {
-    return GridView.count(
+  Widget _buildKPICards() => GridView.count(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
@@ -114,7 +110,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
         _buildKPICard(
           title: 'Revenue (MTD)',
-          value: '\$45,678',
+          value: r'$45,678',
           change: '+15.3%',
           isPositive: true,
           icon: Icons.attach_money,
@@ -130,7 +126,6 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ],
     );
-  }
 
   Widget _buildKPICard({
     required final String title,
@@ -139,8 +134,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
     required final bool isPositive,
     required final IconData icon,
     required final Color color,
-  }) {
-    return Card(
+  }) => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -202,10 +196,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ),
     );
-  }
 
-  Widget _buildRecentActivityChart() {
-    return Card(
+  Widget _buildRecentActivityChart() => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -224,9 +216,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
               height: 200,
               child: LineChart(
                 LineChartData(
-                  gridData: const FlGridData(show: true),
                   titlesData: FlTitlesData(
-                    show: true,
                     leftTitles: const AxisTitles(
                       sideTitles:
                           SideTitles(showTitles: true, reservedSize: 40),
@@ -234,7 +224,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                     bottomTitles: AxisTitles(
                       sideTitles: SideTitles(
                         showTitles: true,
-                        getTitlesWidget: (final value, final meta) {
+                        getTitlesWidget: (value, final meta) {
                           const days = [
                             'Mon',
                             'Tue',
@@ -242,7 +232,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                             'Thu',
                             'Fri',
                             'Sat',
-                            'Sun'
+                            'Sun',
                           ];
                           if (value.toInt() >= 0 &&
                               value.toInt() < days.length) {
@@ -253,9 +243,9 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       ),
                     ),
                     rightTitles: const AxisTitles(
-                        sideTitles: SideTitles(showTitles: false)),
+                        ,),
                     topTitles: const AxisTitles(
-                        sideTitles: SideTitles(showTitles: false)),
+                        ,),
                   ),
                   borderData: FlBorderData(show: true),
                   lineBarsData: [
@@ -272,7 +262,6 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       isCurved: true,
                       color: Colors.blue,
                       barWidth: 3,
-                      dotData: const FlDotData(show: true),
                     ),
                   ],
                 ),
@@ -282,10 +271,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ),
     );
-  }
 
-  Widget _buildSystemHealthWidget() {
-    return Card(
+  Widget _buildSystemHealthWidget() => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -308,11 +295,9 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ),
     );
-  }
 
   Widget _buildHealthIndicator(
-      final String label, final String value, final Color color) {
-    return Padding(
+      String label, final String value, final Color color,) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
         children: [
@@ -336,10 +321,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ],
       ),
     );
-  }
 
-  Widget _buildBookingsTab() {
-    return SingleChildScrollView(
+  Widget _buildBookingsTab() => SingleChildScrollView(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -352,10 +335,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ],
       ),
     );
-  }
 
-  Widget _buildBookingMetrics() {
-    return Row(
+  Widget _buildBookingMetrics() => Row(
       children: [
         Expanded(
           child: _buildMetricCard(
@@ -382,14 +363,12 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ],
     );
-  }
 
   Widget _buildMetricCard({
     required final String title,
     required final String value,
     required final String subtitle,
-  }) {
-    return Card(
+  }) => Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -421,10 +400,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ),
     );
-  }
 
-  Widget _buildBookingTrendsChart() {
-    return Card(
+  Widget _buildBookingTrendsChart() => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -447,18 +424,17 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                   maxY: 100,
                   barTouchData: BarTouchData(enabled: false),
                   titlesData: FlTitlesData(
-                    show: true,
                     bottomTitles: AxisTitles(
                       sideTitles: SideTitles(
                         showTitles: true,
-                        getTitlesWidget: (final value, final meta) {
+                        getTitlesWidget: (value, final meta) {
                           const months = <String>[
                             'Jan',
                             'Feb',
                             'Mar',
                             'Apr',
                             'May',
-                            'Jun'
+                            'Jun',
                           ];
                           if (value.toInt() >= 0 &&
                               value.toInt() < months.length) {
@@ -472,36 +448,34 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       sideTitles: SideTitles(
                         showTitles: true,
                         reservedSize: 40,
-                        getTitlesWidget: (final value, final meta) {
-                          return Text('${value.toInt()}');
-                        },
+                        getTitlesWidget: (value, final meta) => Text('${value.toInt()}'),
                       ),
                     ),
                     rightTitles: const AxisTitles(
-                        sideTitles: SideTitles(showTitles: false)),
+                        ,),
                     topTitles: const AxisTitles(
-                        sideTitles: SideTitles(showTitles: false)),
+                        ,),
                   ),
                   borderData: FlBorderData(show: false),
                   barGroups: [
                     BarChartGroupData(x: 0, barRods: [
-                      BarChartRodData(toY: 65, color: Colors.blue)
-                    ]),
+                      BarChartRodData(toY: 65, color: Colors.blue),
+                    ],),
                     BarChartGroupData(x: 1, barRods: [
-                      BarChartRodData(toY: 72, color: Colors.blue)
-                    ]),
+                      BarChartRodData(toY: 72, color: Colors.blue),
+                    ],),
                     BarChartGroupData(x: 2, barRods: [
-                      BarChartRodData(toY: 58, color: Colors.blue)
-                    ]),
+                      BarChartRodData(toY: 58, color: Colors.blue),
+                    ],),
                     BarChartGroupData(x: 3, barRods: [
-                      BarChartRodData(toY: 85, color: Colors.blue)
-                    ]),
+                      BarChartRodData(toY: 85, color: Colors.blue),
+                    ],),
                     BarChartGroupData(x: 4, barRods: [
-                      BarChartRodData(toY: 91, color: Colors.blue)
-                    ]),
+                      BarChartRodData(toY: 91, color: Colors.blue),
+                    ],),
                     BarChartGroupData(x: 5, barRods: [
-                      BarChartRodData(toY: 78, color: Colors.blue)
-                    ]),
+                      BarChartRodData(toY: 78, color: Colors.blue),
+                    ],),
                   ],
                 ),
               ),
@@ -510,10 +484,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ),
     );
-  }
 
-  Widget _buildTopServicesWidget() {
-    return Card(
+  Widget _buildTopServicesWidget() => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -537,11 +509,9 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ),
     );
-  }
 
   Widget _buildServiceItem(
-      final String name, final int bookings, final double percentage) {
-    return Padding(
+      String name, final int bookings, final double percentage,) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
         children: [
@@ -550,14 +520,12 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
             child: Text(name),
           ),
           Expanded(
-            flex: 1,
             child: Text(
               bookings.toString(),
               textAlign: TextAlign.center,
             ),
           ),
           Expanded(
-            flex: 1,
             child: Text(
               '${(percentage * 100).toStringAsFixed(1)}%',
               textAlign: TextAlign.right,
@@ -566,10 +534,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ],
       ),
     );
-  }
 
-  Widget _buildUsersTab() {
-    return SingleChildScrollView(
+  Widget _buildUsersTab() => SingleChildScrollView(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -580,10 +546,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ],
       ),
     );
-  }
 
-  Widget _buildUserGrowthChart() {
-    return Card(
+  Widget _buildUserGrowthChart() => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -602,9 +566,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
               height: 200,
               child: LineChart(
                 LineChartData(
-                  gridData: const FlGridData(show: true),
                   titlesData: FlTitlesData(
-                    show: true,
                     leftTitles: const AxisTitles(
                       sideTitles:
                           SideTitles(showTitles: true, reservedSize: 40),
@@ -612,14 +574,14 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                     bottomTitles: AxisTitles(
                       sideTitles: SideTitles(
                         showTitles: true,
-                        getTitlesWidget: (final value, final meta) {
+                        getTitlesWidget: (value, final meta) {
                           const months = <String>[
                             'Jan',
                             'Feb',
                             'Mar',
                             'Apr',
                             'May',
-                            'Jun'
+                            'Jun',
                           ];
                           if (value.toInt() >= 0 &&
                               value.toInt() < months.length) {
@@ -630,9 +592,9 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       ),
                     ),
                     rightTitles: const AxisTitles(
-                        sideTitles: SideTitles(showTitles: false)),
+                        ,),
                     topTitles: const AxisTitles(
-                        sideTitles: SideTitles(showTitles: false)),
+                        ,),
                   ),
                   borderData: FlBorderData(show: true),
                   lineBarsData: [
@@ -648,7 +610,6 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       isCurved: true,
                       color: Colors.green,
                       barWidth: 3,
-                      dotData: const FlDotData(show: true),
                     ),
                   ],
                 ),
@@ -658,10 +619,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ),
     );
-  }
 
-  Widget _buildUserDemographics() {
-    return Card(
+  Widget _buildUserDemographics() => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -712,10 +671,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ),
     );
-  }
 
-  Widget _buildLegendItem(final String label, final Color color) {
-    return Padding(
+  Widget _buildLegendItem(String label, final Color color) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
         children: [
@@ -732,10 +689,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ],
       ),
     );
-  }
 
-  Widget _buildRevenueTab() {
-    return SingleChildScrollView(
+  Widget _buildRevenueTab() => SingleChildScrollView(
       padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -748,15 +703,13 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ],
       ),
     );
-  }
 
-  Widget _buildRevenueOverview() {
-    return Row(
+  Widget _buildRevenueOverview() => Row(
       children: [
         Expanded(
           child: _buildRevenueCard(
             title: 'Total Revenue',
-            value: '\$125,847',
+            value: r'$125,847',
             change: '+18.5%',
             isPositive: true,
           ),
@@ -765,7 +718,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         Expanded(
           child: _buildRevenueCard(
             title: 'Monthly Recurring',
-            value: '\$45,678',
+            value: r'$45,678',
             change: '+12.3%',
             isPositive: true,
           ),
@@ -774,22 +727,20 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         Expanded(
           child: _buildRevenueCard(
             title: 'Average Order',
-            value: '\$89.50',
+            value: r'$89.50',
             change: '+5.2%',
             isPositive: true,
           ),
         ),
       ],
     );
-  }
 
   Widget _buildRevenueCard({
     required final String title,
     required final String value,
     required final String change,
     required final bool isPositive,
-  }) {
-    return Card(
+  }) => Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -831,10 +782,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ),
     );
-  }
 
-  Widget _buildRevenueChart() {
-    return Card(
+  Widget _buildRevenueChart() => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -853,29 +802,25 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
               height: 200,
               child: LineChart(
                 LineChartData(
-                  gridData: const FlGridData(show: true),
                   titlesData: FlTitlesData(
-                    show: true,
                     leftTitles: AxisTitles(
                       sideTitles: SideTitles(
                         showTitles: true,
                         reservedSize: 60,
-                        getTitlesWidget: (final value, final meta) {
-                          return Text('\$${value.toInt()}K');
-                        },
+                        getTitlesWidget: (value, final meta) => Text('\$${value.toInt()}K'),
                       ),
                     ),
                     bottomTitles: AxisTitles(
                       sideTitles: SideTitles(
                         showTitles: true,
-                        getTitlesWidget: (final value, final meta) {
+                        getTitlesWidget: (value, final meta) {
                           const months = <String>[
                             'Jan',
                             'Feb',
                             'Mar',
                             'Apr',
                             'May',
-                            'Jun'
+                            'Jun',
                           ];
                           if (value.toInt() >= 0 &&
                               value.toInt() < months.length) {
@@ -886,9 +831,9 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       ),
                     ),
                     rightTitles: const AxisTitles(
-                        sideTitles: SideTitles(showTitles: false)),
+                        ,),
                     topTitles: const AxisTitles(
-                        sideTitles: SideTitles(showTitles: false)),
+                        ,),
                   ),
                   borderData: FlBorderData(show: true),
                   lineBarsData: [
@@ -904,7 +849,6 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       isCurved: true,
                       color: Colors.orange,
                       barWidth: 3,
-                      dotData: const FlDotData(show: true),
                     ),
                   ],
                 ),
@@ -914,10 +858,8 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ),
       ),
     );
-  }
 
-  Widget _buildRevenueBreakdown() {
-    return Card(
+  Widget _buildRevenueBreakdown() => Card(
       elevation: 4,
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -932,19 +874,17 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
               ),
             ),
             const SizedBox(height: 16),
-            _buildRevenueItem('Subscription Revenue', '\$67,890', 0.54),
-            _buildRevenueItem('One-time Bookings', '\$34,567', 0.27),
-            _buildRevenueItem('Premium Features', '\$15,234', 0.12),
-            _buildRevenueItem('Other', '\$8,156', 0.07),
+            _buildRevenueItem('Subscription Revenue', r'$67,890', 0.54),
+            _buildRevenueItem('One-time Bookings', r'$34,567', 0.27),
+            _buildRevenueItem('Premium Features', r'$15,234', 0.12),
+            _buildRevenueItem('Other', r'$8,156', 0.07),
           ],
         ),
       ),
     );
-  }
 
   Widget _buildRevenueItem(
-      final String category, final String amount, final double percentage) {
-    return Padding(
+      String category, final String amount, final double percentage,) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
         children: [
@@ -953,7 +893,6 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
             child: Text(category),
           ),
           Expanded(
-            flex: 1,
             child: Text(
               amount,
               textAlign: TextAlign.center,
@@ -961,7 +900,6 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
             ),
           ),
           Expanded(
-            flex: 1,
             child: Text(
               '${(percentage * 100).toStringAsFixed(1)}%',
               textAlign: TextAlign.right,
@@ -970,5 +908,4 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
         ],
       ),
     );
-  }
 }

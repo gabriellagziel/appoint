@@ -1,24 +1,23 @@
+import 'package:appoint/providers/rewards_provider.dart';
+import 'package:appoint/services/rewards_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:appoint/providers/rewards_provider.dart';
-import 'package:appoint/services/rewards_service.dart';
-
 final rewardsServiceProvider =
-    Provider<RewardsService>((final ref) => RewardsService());
+    Provider<RewardsService>((ref) => RewardsService());
 
 class RewardsScreen extends ConsumerWidget {
   const RewardsScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final pointsAsync = ref.watch(userPointsProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    pointsAsync = ref.watch(userPointsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Rewards')),
       body: pointsAsync.when(
-        data: (final points) {
-          final tier = ref.read(rewardsServiceProvider).tierForPoints(points);
+        data: (points) {
+          tier = ref.read(rewardsServiceProvider).tierForPoints(points);
           final nextTier =
               _nextTierInfo(points, ref.read(rewardsServiceProvider));
           return Padding(
@@ -35,20 +34,21 @@ class RewardsScreen extends ConsumerWidget {
                 if (nextTier != null) ...[
                   const SizedBox(height: 8),
                   Text(
-                      'Next Tier (${nextTier['tier']}) at ${nextTier['points']} points'),
+                      'Next Tier (${nextTier['tier']}) at ${nextTier['points']} points',),
                 ],
               ],
             ),
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final _, final __) => const Center(child: Text('Error loading rewards')),
+        error: (_, final __) =>
+            const Center(child: Text('Error loading rewards')),
       ),
     );
   }
 
   Map<String, dynamic>? _nextTierInfo(
-      final int points, final RewardsService rewardsService) {
+      int points, final RewardsService rewardsService,) {
     if (points < RewardsService.rewardTiers['silver']!) {
       return {
         'tier': 'silver',

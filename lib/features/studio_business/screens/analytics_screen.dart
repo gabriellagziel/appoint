@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AnalyticsScreen extends ConsumerWidget {
   const AnalyticsScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
+  Widget build(BuildContext context, final WidgetRef ref) {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
       return const Scaffold(
@@ -24,7 +24,7 @@ class AnalyticsScreen extends ConsumerWidget {
             .orderBy('date', descending: true)
             .limit(30)
             .snapshots(),
-        builder: (final context, final snapshot) {
+        builder: (context, final snapshot) {
           if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           }
@@ -105,9 +105,9 @@ class AnalyticsScreen extends ConsumerWidget {
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
                     itemCount: analyticsData.length,
-                    itemBuilder: (final context, final index) {
+                    itemBuilder: (context, final index) {
                       final data =
-                          analyticsData[index].data() as Map<String, dynamic>;
+                          analyticsData[index].data()! as Map<String, dynamic>;
 
                       return Card(
                         margin: const EdgeInsets.only(bottom: 8),
@@ -134,8 +134,8 @@ class AnalyticsScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildKPICard(final String title, final String value, final IconData icon, final Color color) {
-    return Card(
+  Widget _buildKPICard(final String title, final String value,
+      IconData icon, final Color color,) => Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -154,12 +154,11 @@ class AnalyticsScreen extends ConsumerWidget {
         ),
       ),
     );
-  }
 
-  String _getTotalBookings(final List<QueryDocumentSnapshot> data) {
-    int total = 0;
-    for (final doc in data) {
-      final analytics = doc.data() as Map<String, dynamic>;
+  String _getTotalBookings(List<QueryDocumentSnapshot> data) {
+    var total = 0;
+    for (doc in data) {
+      analytics = doc.data()! as Map<String, dynamic>;
       if (analytics['type'] == 'booking') {
         total += (analytics['count'] ?? 0) as int;
       }
@@ -167,10 +166,10 @@ class AnalyticsScreen extends ConsumerWidget {
     return total.toString();
   }
 
-  String _getTotalRevenue(final List<QueryDocumentSnapshot> data) {
+  String _getTotalRevenue(List<QueryDocumentSnapshot> data) {
     double total = 0;
-    for (final doc in data) {
-      final analytics = doc.data() as Map<String, dynamic>;
+    for (doc in data) {
+      analytics = doc.data()! as Map<String, dynamic>;
       if (analytics['type'] == 'revenue') {
         total += (analytics['amount'] ?? 0).toDouble();
       }
@@ -178,10 +177,10 @@ class AnalyticsScreen extends ConsumerWidget {
     return total.toStringAsFixed(2);
   }
 
-  String _getActiveClients(final List<QueryDocumentSnapshot> data) {
-    int total = 0;
-    for (final doc in data) {
-      final analytics = doc.data() as Map<String, dynamic>;
+  String _getActiveClients(List<QueryDocumentSnapshot> data) {
+    var total = 0;
+    for (doc in data) {
+      analytics = doc.data()! as Map<String, dynamic>;
       if (analytics['type'] == 'client') {
         total += (analytics['count'] ?? 0) as int;
       }
@@ -189,11 +188,11 @@ class AnalyticsScreen extends ConsumerWidget {
     return total.toString();
   }
 
-  String _getAverageRating(final List<QueryDocumentSnapshot> data) {
+  String _getAverageRating(List<QueryDocumentSnapshot> data) {
     double total = 0;
-    int count = 0;
-    for (final doc in data) {
-      final analytics = doc.data() as Map<String, dynamic>;
+    var count = 0;
+    for (doc in data) {
+      analytics = doc.data()! as Map<String, dynamic>;
       if (analytics['type'] == 'rating') {
         total += (analytics['rating'] ?? 0).toDouble();
         count++;
@@ -202,7 +201,7 @@ class AnalyticsScreen extends ConsumerWidget {
     return count > 0 ? (total / count).toStringAsFixed(1) : '0.0';
   }
 
-  Color _getActivityColor(final String? type) {
+  Color _getActivityColor(String? type) {
     switch (type) {
       case 'booking':
         return Colors.blue;
@@ -217,7 +216,7 @@ class AnalyticsScreen extends ConsumerWidget {
     }
   }
 
-  IconData _getActivityIcon(final String? type) {
+  IconData _getActivityIcon(String? type) {
     switch (type) {
       case 'booking':
         return Icons.calendar_today;

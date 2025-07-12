@@ -1,9 +1,9 @@
+import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 
 class PhoneBookingScreen extends ConsumerStatefulWidget {
   const PhoneBookingScreen({super.key});
@@ -13,11 +13,11 @@ class PhoneBookingScreen extends ConsumerStatefulWidget {
 }
 
 class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
-  final _phoneController = TextEditingController();
-  final _dateController = TextEditingController();
-  final _timeController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _nameController = TextEditingController();
+  _phoneController = TextEditingController();
+  _dateController = TextEditingController();
+  _timeController = TextEditingController();
   bool _isProcessing = false;
 
   @override
@@ -30,8 +30,8 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final profileAsync = ref.watch(businessProfileProvider);
+  Widget build(BuildContext context) {
+    profileAsync = ref.watch(businessProfileProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Phone Booking')),
@@ -77,7 +77,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
                         labelText: 'Customer Name',
                         border: OutlineInputBorder(),
                       ),
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter customer name';
                         }
@@ -94,7 +94,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
                         prefixText: '+1 ',
                       ),
                       keyboardType: TextInputType.phone,
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter phone number';
                         }
@@ -115,7 +115,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
                       ),
                       readOnly: true,
                       onTap: () => _selectDate(context),
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please select a date';
                         }
@@ -133,7 +133,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
                       ),
                       readOnly: true,
                       onTap: () => _selectTime(context),
-                      validator: (final value) {
+                      validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please select a time';
                         }
@@ -158,8 +158,8 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
     );
   }
 
-  Future<void> _selectDate(final BuildContext context) async {
-    final DateTime? picked = await showDatePicker(
+  Future<void> _selectDate(BuildContext context) async {
+    final picked = await showDatePicker(
       context: context,
       initialDate: DateTime.now(),
       firstDate: DateTime.now(),
@@ -171,8 +171,8 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
     }
   }
 
-  Future<void> _selectTime(final BuildContext context) async {
-    final TimeOfDay? picked = await showTimePicker(
+  Future<void> _selectTime(BuildContext context) async {
+    final picked = await showTimePicker(
       context: context,
       initialTime: TimeOfDay.now(),
     );
@@ -190,21 +190,21 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
     setState(() => _isProcessing = true);
 
     try {
-      final phoneNumber = _phoneController.text.trim();
-      final customerName = _nameController.text.trim();
+      phoneNumber = _phoneController.text.trim();
+      customerName = _nameController.text.trim();
       final date = _dateController.text;
       final time = _timeController.text;
 
       // Generate unique booking code
-      final bookingCode = _generateBookingCode();
+      bookingCode = _generateBookingCode();
 
       // Check if user exists in Firestore
-      final userExists = await _checkUserExists(phoneNumber);
+      userExists = await _checkUserExists(phoneNumber);
 
       if (userExists) {
         // Send in-app notification and create booking
         await _createBookingForExistingUser(
-            phoneNumber, customerName, date, time, bookingCode);
+            phoneNumber, customerName, date, time, bookingCode,);
         _showSuccessDialog('In-app notification sent to existing user');
       } else {
         // Open WhatsApp with download link and booking code
@@ -213,8 +213,8 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
 
       // Save booking request to Firestore
       await _saveBookingRequest(
-          customerName, phoneNumber, date, time, bookingCode);
-    } catch (e) {
+          customerName, phoneNumber, date, time, bookingCode,);
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -227,7 +227,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
     }
   }
 
-  Future<bool> _checkUserExists(final String phoneNumber) async {
+  Future<bool> _checkUserExists(String phoneNumber) async {
     try {
       final snapshot = await FirebaseFirestore.instance
           .collection('users')
@@ -236,20 +236,28 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
           .get();
 
       return snapshot.docs.isNotEmpty;
-    } catch (e) {
+    } catch (e) {e) {
       // If error, assume user doesn't exist and proceed with WhatsApp
       return false;
     }
   }
 
-  Future<void> _createBookingForExistingUser(final String phoneNumber,
-      final String customerName, final String date, final String time, final String bookingCode) async {
-    // TODO: Implement push notification via FCM and create booking record
+  Future<void> _createBookingForExistingUser(
+      final String phoneNumber,
+      final String customerName,
+      final String date,
+      final String time,
+      String bookingCode,) async {
+    // TODO(username): Implement push notification via FCM and create booking record
     // Creating booking for existing user: $phoneNumber, $customerName, $date, $time, $bookingCode
   }
 
-  Future<void> _openWhatsApp(final String phoneNumber, final String customerName,
-      final String date, final String time, final String bookingCode) async {
+  Future<void> _openWhatsApp(
+      final String phoneNumber,
+      final String customerName,
+      final String date,
+      final String time,
+      String bookingCode,) async {
     final message = '''
 Hi $customerName!
 
@@ -275,8 +283,12 @@ We'll see you soon!
     }
   }
 
-  Future<void> _saveBookingRequest(final String customerName, final String phoneNumber,
-      final String date, final String time, final String bookingCode) async {
+  Future<void> _saveBookingRequest(
+      final String customerName,
+      final String phoneNumber,
+      final String date,
+      final String time,
+      String bookingCode,) async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) throw Exception('Not authenticated');
 
@@ -293,15 +305,15 @@ We'll see you soon!
   }
 
   String _generateBookingCode() {
-    final timestamp = DateTime.now().millisecondsSinceEpoch;
-    final random = (timestamp % 10000).toString().padLeft(4, '0');
+    timestamp = DateTime.now().millisecondsSinceEpoch;
+    random = (timestamp % 10000).toString().padLeft(4, '0');
     return 'BK$random';
   }
 
-  void _showSuccessDialog(final String message) {
+  void _showSuccessDialog(String message) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Success'),
         content: Text(message),
         actions: [

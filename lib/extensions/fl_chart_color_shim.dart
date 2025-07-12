@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 /// `fl_chart`. It simply wraps a [Color] so tests depending on the type still
 /// compile.
 class ChartColor {
-  final Color color;
   const ChartColor(this.color);
+  final Color color;
 }
 
 /// Flutter 3.19 removed the `a`, `r`, `g`, and `b` getters from [Color] that
@@ -25,14 +25,12 @@ extension ColorChannelShims on Color {
       {final double? alpha,
       final double? red,
       final double? green,
-      final double? blue}) {
-    return Color.fromARGB(
+      double? blue,}) => Color.fromARGB(
       (255 * (alpha ?? a)).round(),
       (255 * (red ?? r)).round(),
       (255 * (green ?? g)).round(),
       (255 * (blue ?? b)).round(),
     );
-  }
 }
 
 /// Adds missing color getters used by tests.

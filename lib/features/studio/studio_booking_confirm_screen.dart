@@ -1,17 +1,17 @@
+import 'package:appoint/features/studio/studio_booking_screen.dart';
+import 'package:appoint/widgets/booking_confirmation_sheet.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import 'package:appoint/widgets/bottom_sheet_manager.dart';
-import 'package:appoint/widgets/booking_confirmation_sheet.dart';
-import 'package:appoint/features/studio/studio_booking_screen.dart';
 
 class StudioBookingConfirmScreen extends ConsumerWidget {
   const StudioBookingConfirmScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
+  Widget build(BuildContext context, final WidgetRef ref) {
     final args =
-        ModalRoute.of(context)!.settings.arguments as StudioBookingSelection;
+        ModalRoute.of(context)!.settings.arguments! as StudioBookingSelection;
     return Scaffold(
       appBar: AppBar(title: const Text('Confirm Booking')),
       body: Padding(
@@ -25,13 +25,14 @@ class StudioBookingConfirmScreen extends ConsumerWidget {
             const Spacer(),
             ElevatedButton(
               onPressed: () {
-                final summary = 'You are about to book with ${args.staff.displayName} on ${DateFormat.yMMMEd().add_jm().format(DateTime(
-                              args.date.year,
-                              args.date.month,
-                              args.date.day,
-                              args.slot.hour,
-                              args.slot.minute,
-                            ))}.';
+                final summary =
+                    'You are about to book with ${args.staff.displayName} on ${DateFormat.yMMMEd().add_jm().format(DateTime(
+                          args.date.year,
+                          args.date.month,
+                          args.date.day,
+                          args.slot.hour,
+                          args.slot.minute,
+                        ),)}.';
                 BottomSheetManager.show(
                   context: context,
                   child: BookingConfirmationSheet(

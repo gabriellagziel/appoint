@@ -1,16 +1,16 @@
+import 'package:appoint/features/studio_business/models/studio_booking.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:appoint/features/studio_business/models/studio_booking.dart';
 
 class StudioBookingService {
-  final FirebaseFirestore _firestore;
-  final FirebaseAuth _auth;
 
   StudioBookingService({
     final FirebaseFirestore? firestore,
     final FirebaseAuth? auth,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
+  final FirebaseFirestore _firestore;
+  final FirebaseAuth _auth;
 
   Future<StudioBooking> createBooking({
     required final String staffProfileId,
@@ -53,12 +53,13 @@ class StudioBookingService {
         .get();
 
     return snapshot.docs
-        .map((final doc) => StudioBooking.fromJson({...doc.data(), 'id': doc.id}))
+        .map((doc) =>
+            StudioBooking.fromJson({...doc.data(), 'id': doc.id}),)
         .toList();
   }
 
   Future<List<StudioBooking>> getBusinessBookings(
-      final String businessProfileId) async {
+      String businessProfileId,) async {
     final snapshot = await _firestore
         .collection('studio_bookings')
         .where('businessProfileId', isEqualTo: businessProfileId)
@@ -66,11 +67,13 @@ class StudioBookingService {
         .get();
 
     return snapshot.docs
-        .map((final doc) => StudioBooking.fromJson({...doc.data(), 'id': doc.id}))
+        .map((doc) =>
+            StudioBooking.fromJson({...doc.data(), 'id': doc.id}),)
         .toList();
   }
 
-  Future<void> updateBookingStatus(final String bookingId, final String status) async {
+  Future<void> updateBookingStatus(
+      String bookingId, final String status,) async {
     await _firestore.collection('studio_bookings').doc(bookingId).update({
       'status': status,
       'updatedAt': DateTime.now().toIso8601String(),
