@@ -2,11 +2,10 @@ name: app-oint-marketing
 static_sites:
   - name: marketing
     repo:
-      repo: "<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>"
+      repo: "gabriellagziel/appoint"
       branch: main
     build_command: "npm --prefix marketing install && npm --prefix marketing run build && npm --prefix marketing run export"
     output_dir: "marketing/out"
     routes:
       - path: /
-    domains:
-      - domain: "www.app-oint.com" 
+ 
