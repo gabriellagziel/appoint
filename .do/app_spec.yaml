@@ -8,7 +8,7 @@ services:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "functions"
-    build_command: "npm install && npm run build"
+    build_command: "rm -rf .next && npm install && npm run build"
     run_command: "npm run start"
     routes:
       - path: /api
@@ -19,7 +19,7 @@ services:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "admin"
-    build_command: "npm install && npm run build"
+    build_command: "rm -rf .next && npm install && npm run build"
     run_command: "npm start"
     routes:
       - path: /admin
@@ -30,7 +30,7 @@ services:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "dashboard"
-    build_command: "npm install && npm run build"
+    build_command: "rm -rf .next && npm install && npm run build"
     run_command: "npm start"
     routes:
       - path: /dashboard
@@ -41,7 +41,7 @@ services:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "marketing"
-    build_command: "npm install && npm run build"
+    build_command: "rm -rf .next && npm install && npm run build"
     run_command: "npm start"
     routes:
       - path: / 
