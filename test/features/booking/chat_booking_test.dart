@@ -1,22 +1,25 @@
+import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
+import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import '../../fake_firebase_setup.dart';
-import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
+
+import '../../firebase_test_helper.dart';
 import '../../mocks/firebase_mocks.dart';
-import 'package:appoint/features/booking/services/booking_service.dart';
 
 late BookingService bookingService;
 late MockFirebaseFirestore mockFirestore;
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
-  mockFirestore = MockFirebaseFirestore();
-  bookingService = BookingService(firestore: mockFirestore);
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+    mockFirestore = MockFirebaseFirestore();
+    bookingService = BookingService(firestore: mockFirestore);
+  });
 
   group('ChatBookingScreen', () {
-    testWidgets('should display chat interface', (final WidgetTester tester) async {
+    testWidgets('should display chat interface',
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(
@@ -32,7 +35,7 @@ Future<void> main() async {
     });
 
     testWidgets('should add user message when send button is pressed',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(
@@ -53,7 +56,7 @@ Future<void> main() async {
     });
 
     testWidgets('should show welcome message on initialization',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(
@@ -63,8 +66,10 @@ Future<void> main() async {
       );
 
       // Verify welcome message appears
-      expect(find.text('Welcome! What type of appointment would you like?'),
-          findsOneWidget);
+      expect(
+        find.text('Welcome! What type of appointment would you like?'),
+        findsOneWidget,
+      );
     });
   });
 }

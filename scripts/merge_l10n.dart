@@ -1,3 +1,4 @@
+// ignore_for_file: avoid_print
 import 'dart:convert';
 import 'dart:io';
 
@@ -13,9 +14,12 @@ void main() async {
   final missing = <String, List<String>>{};
 
   await for (final entity in l10nDir.list()) {
-    if (entity is File && entity.path.endsWith('.arb') && entity.path != enFile.path) {
-      final map = jsonDecode(await entity.readAsString()) as Map<String, dynamic>;
-      bool updated = false;
+    if (entity is File &&
+        entity.path.endsWith('.arb') &&
+        entity.path != enFile.path) {
+      final map =
+          jsonDecode(await entity.readAsString()) as Map<String, dynamic>;
+      var updated = false;
       final locale = entity.uri.pathSegments.last
           .replaceFirst('app_', '')
           .replaceFirst('.arb', '');

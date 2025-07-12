@@ -1,9 +1,9 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('Business subscription flow: basic structure test',
-      (final WidgetTester tester) async {
+      (WidgetTester tester) async {
     // Create a simple mock widget that represents the basic structure
     await tester.pumpWidget(
       MaterialApp(

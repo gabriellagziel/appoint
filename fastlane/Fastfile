@@ -92,12 +92,25 @@ platform :ios do
       output_name: "appoint.ipa"
     )
     
+    # Parse CHANGELOG.md for release notes
+    changelog = File.read("../CHANGELOG.md")
+    release_notes = extract_release_notes(changelog, get_version_number)
+    
     # Upload to App Store
     upload_to_app_store(
       force: true,
       skip_metadata: true,
       skip_screenshots: true,
-      REDACTED_TOKEN: false
+      REDACTED_TOKEN: false,
+      submission_information: {
+        REDACTED_TOKEN: false,
+        export_compliance_is_exempt: true
+      }
+    )
+    
+    # Set release notes
+    set_app_store_release_notes(
+      release_notes: release_notes
     )
     
     # Create git tag
@@ -160,12 +173,21 @@ platform :android do
       project_dir: "android/"
     )
     
+    # Parse CHANGELOG.md for release notes
+    changelog = File.read("../CHANGELOG.md")
+    release_notes = extract_release_notes(changelog, get_version_name)
+    
     # Upload to Play Store (production)
     upload_to_play_store(
       track: 'production',
       aab: '../build/app/outputs/bundle/release/app-release.aab',
       json_key: ENV['PLAY_STORE_JSON_KEY'],
       release_status: 'completed'
+    )
+    
+    # Upload release notes
+    upload_metadata_to_play_store(
+      release_notes: release_notes
     )
     
     # Create git tag
@@ -181,6 +203,26 @@ platform :android do
       slack_url: ENV["SLACK_URL"]
     )
   end
+end
+
+# Helper function to extract release notes from CHANGELOG.md
+def extract_release_notes(changelog, version)
+  lines = changelog.split("\n")
+  release_notes = []
+  in_version_section = false
+  
+  lines.each do |line|
+    if line.start_with?("## #{version}") || line.start_with?("## v#{version}")
+      in_version_section = true
+      next
+    elsif line.start_with?("## ") && in_version_section
+      break
+    elsif in_version_section && line.strip.length > 0
+      release_notes << line
+    end
+  end
+  
+  release_notes.join("\n").strip
 end
 
 # Cross-platform lanes

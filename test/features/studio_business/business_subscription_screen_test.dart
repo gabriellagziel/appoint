@@ -1,12 +1,13 @@
+import 'package:appoint/features/studio_business/screens/business_subscription_screen.dart';
+import 'package:appoint/providers/firebase_providers.dart';
+import 'package:appoint/services/business_subscription_service.dart';
+import 'package:cloud_functions/cloud_functions.dart';
+import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
+import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:appoint/features/studio_business/screens/business_subscription_screen.dart';
-import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
-import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
-import 'package:cloud_functions/cloud_functions.dart';
-import 'package:appoint/providers/firebase_providers.dart';
-import 'package:appoint/services/business_subscription_service.dart';
+
 import '../../firebase_test_setup.dart';
 
 class MockFirebaseFunctions extends Fake implements FirebaseFunctions {}
@@ -24,7 +25,7 @@ class MockBusinessSubscriptionService extends Fake
   }
 
   @override
-  Future<void> applyPromoCode(final String code) async {
+  Future<void> applyPromoCode(String code) async {
     // Mock implementation
   }
 
@@ -50,7 +51,7 @@ void main() {
   });
 
   testWidgets('business subscription screen shows basic UI elements',
-      (final tester) async {
+      (tester) async {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
@@ -76,7 +77,7 @@ void main() {
   });
 
   testWidgets('promo code text field is present and functional',
-      (final tester) async {
+      (tester) async {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
@@ -91,7 +92,7 @@ void main() {
     await tester.pumpAndSettle();
 
     // Find the promo code text field
-    final textField = find.byType(TextField);
+    textField = find.byType(TextField);
     expect(textField, findsOneWidget);
 
     // Enter text in the promo code field
