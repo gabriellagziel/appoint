@@ -1,7 +1,15 @@
+'use client'
+export const dynamic = 'force-dynamic'
+
+import { useSession } from 'next-auth/react'
 import { appointments } from "@/lib/mock-data"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
 export default function AppointmentsListPage() {
+  const { data: session, status } = useSession()
+
+  if (status === 'loading') return <p>Loading...</p>
+  if (!session) return <p>Not authenticated</p>
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">Appointments</h1>
