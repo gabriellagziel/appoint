@@ -1,5 +1,6 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
+const { validate, schemas } = require('./test/validation-schemas');
 
 // Initialize Firebase Admin
 admin.initializeApp();
@@ -352,14 +353,9 @@ exports.getQuotaStats = functions.https.onRequest(async (req, res) => {
  */
 exports.assignAmbassador = functions.https.onRequest(async (req, res) => {
   try {
-    const { userId, countryCode, languageCode } = req.body;
-    
-    if (!userId || !countryCode || !languageCode) {
-      return res.status(400).json({
-        success: false,
-        error: 'Missing required parameters: userId, countryCode, languageCode'
-      });
-    }
+    // Validate input data
+    const validatedData = validate(schemas.assignAmbassador, req.body);
+    const { userId, countryCode, languageCode } = validatedData;
     
     const success = await assignAmbassador(userId, countryCode, languageCode);
     
@@ -369,10 +365,20 @@ exports.assignAmbassador = functions.https.onRequest(async (req, res) => {
     });
   } catch (error) {
     console.error('Error in assignAmbassador:', error);
-    res.status(500).json({
-      success: false,
-      error: error.message
-    });
+    
+    // Handle validation errors
+    if (error.code === 'invalid-argument') {
+      res.status(400).json({
+        success: false,
+        error: error.message,
+        field: error.details?.field
+      });
+    } else {
+      res.status(500).json({
+        success: false,
+        error: error.message
+      });
+    }
   }
 });
 

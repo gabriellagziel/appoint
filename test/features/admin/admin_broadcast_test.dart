@@ -1,10 +1,13 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
-import '../../fake_firebase_setup.dart';
+import 'package:flutter_test/flutter_test.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
+import '../../firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
   await initializeTestFirebase();
+  });
+
   group('Admin Broadcast System Tests', () {
     group('BroadcastMessage Model Tests', () {
       test('should create broadcast message with all required fields', () {
@@ -50,7 +53,7 @@ Future<void> main() async {
         expect(message.targetingFilters.countries, ['US', 'CA']);
         expect(message.targetingFilters.cities, ['New York', 'Toronto']);
         expect(message.targetingFilters.subscriptionTiers,
-            ['premium', 'business']);
+            ['premium', 'business'],);
         expect(message.targetingFilters.userRoles, ['client', 'business']);
       });
 
@@ -130,8 +133,8 @@ Future<void> main() async {
           accountTypes: ['individual', 'corporate'],
           languages: ['en', 'es'],
           accountStatuses: ['active', 'verified'],
-          joinedAfter: DateTime(2023, 1, 1),
-          joinedBefore: DateTime(2024, 1, 1),
+          joinedAfter: DateTime(2023),
+          joinedBefore: DateTime(2024),
           userRoles: ['client', 'business'],
         );
 
@@ -143,8 +146,8 @@ Future<void> main() async {
         expect(filters.accountTypes, ['individual', 'corporate']);
         expect(filters.languages, ['en', 'es']);
         expect(filters.accountStatuses, ['active', 'verified']);
-        expect(filters.joinedAfter, DateTime(2023, 1, 1));
-        expect(filters.joinedBefore, DateTime(2024, 1, 1));
+        expect(filters.joinedAfter, DateTime(2023));
+        expect(filters.joinedBefore, DateTime(2024));
         expect(filters.userRoles, ['client', 'business']);
       });
 

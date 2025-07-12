@@ -1,5 +1,6 @@
-import 'dart:io';
+// ignore_for_file: avoid_print
 import 'dart:convert';
+import 'dart:io';
 
 void main() async {
   final arbFile = File('lib/l10n/app_en.arb');

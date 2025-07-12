@@ -1,6 +1,6 @@
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter/material.dart';
 import 'package:appoint/features/studio_business/models/business_subscription.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   group('Business Subscription Models', () {
@@ -44,7 +44,6 @@ void main() {
         status: SubscriptionStatus.active,
         currentPeriodStart: DateTime.now(),
         currentPeriodEnd: DateTime.now().add(const Duration(days: 30)),
-        trialEnd: null,
         createdAt: DateTime.now(),
         updatedAt: DateTime.now(),
       );
