@@ -2,8 +2,15 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const { validate, schemas } = require('./test/validation-schemas');
 
+// Detect Firebase environment
+const isFirebase = !!process.env.FUNCTIONS_EMULATOR || !!process.env.K_SERVICE || !!process.env.FIREBASE_CONFIG;
+
 // Initialize Firebase Admin
 admin.initializeApp();
+
+// Initialize Express for DigitalOcean
+const express = require('express');
+const app = express();
 
 const db = admin.firestore();
 
@@ -82,7 +89,7 @@ async function getCurrentAmbassadorCount(countryCode, languageCode) {
       .where('languageCode', '==', languageCode)
       .where('status', '==', 'active')
       .get();
-    
+
     return snapshot.size;
   } catch (error) {
     console.error('Error getting ambassador count:', error);
@@ -97,7 +104,7 @@ async function hasAvailableSlots(countryCode, languageCode) {
   const key = `${countryCode}_${languageCode}`;
   const quota = ambassadorQuotas[key] || 0;
   if (quota === 0) return false;
-  
+
   const currentCount = await getCurrentAmbassadorCount(countryCode, languageCode);
   return currentCount < quota;
 }
@@ -109,7 +116,7 @@ async function isUserEligible(userId) {
   try {
     const userDoc = await db.collection('users').doc(userId).get();
     if (!userDoc.exists) return false;
-    
+
     const userData = userDoc.data();
     if (!userData) return false;
 
@@ -145,7 +152,7 @@ async function findNextEligibleUser(countryCode, languageCode) {
       .get();
 
     if (usersSnapshot.empty) return null;
-    
+
     return usersSnapshot.docs[0].id;
   } catch (error) {
     console.error('Error finding eligible user:', error);
@@ -178,7 +185,7 @@ async function assignAmbassador(userId, countryCode, languageCode) {
       const currentCount = await getCurrentAmbassadorCount(countryCode, languageCode);
       const key = `${countryCode}_${languageCode}`;
       const quota = ambassadorQuotas[key] || 0;
-      
+
       if (currentCount >= quota) {
         throw new Error('Quota exceeded during transaction');
       }
@@ -231,28 +238,28 @@ async function assignAmbassador(userId, countryCode, languageCode) {
  */
 async function autoAssignAvailableSlots() {
   let assignedCount = 0;
-  
+
   for (const [key, quota] of Object.entries(ambassadorQuotas)) {
     const parts = key.split('_');
     const countryCode = parts[0];
     const languageCode = parts[1];
-    
+
     // Check if there are available slots
     const hasSlots = await hasAvailableSlots(countryCode, languageCode);
     if (!hasSlots) continue;
-    
+
     // Find eligible user
     const eligibleUserId = await findNextEligibleUser(countryCode, languageCode);
     if (!eligibleUserId) continue;
-    
+
     // Assign ambassador role
     const success = await assignAmbassador(eligibleUserId, countryCode, languageCode);
-    
+
     if (success) {
       assignedCount++;
     }
   }
-  
+
   return assignedCount;
 }
 
@@ -261,15 +268,15 @@ async function autoAssignAvailableSlots() {
  */
 async function getQuotaStatistics() {
   const stats = {};
-  
+
   for (const [key, quota] of Object.entries(ambassadorQuotas)) {
     const parts = key.split('_');
     const countryCode = parts[0];
     const languageCode = parts[1];
-    
+
     const currentCount = await getCurrentAmbassadorCount(countryCode, languageCode);
     const availableSlots = quota - currentCount;
-    
+
     stats[key] = {
       countryCode: countryCode,
       languageCode: languageCode,
@@ -279,7 +286,7 @@ async function getQuotaStatistics() {
       utilizationPercentage: Math.round((currentCount / quota) * 100),
     };
   }
-  
+
   return stats;
 }
 
@@ -289,13 +296,13 @@ async function getQuotaStatistics() {
 async function getGlobalStatistics() {
   const totalQuota = Object.values(ambassadorQuotas).reduce((sum, quota) => sum + quota, 0);
   let totalCurrent = 0;
-  
+
   for (const [key] of Object.entries(ambassadorQuotas)) {
     const parts = key.split('_');
     const currentCount = await getCurrentAmbassadorCount(parts[0], parts[1]);
     totalCurrent += currentCount;
   }
-  
+
   return {
     totalQuota: totalQuota,
     totalCurrent: totalCurrent,
@@ -333,7 +340,7 @@ exports.getQuotaStats = functions.https.onRequest(async (req, res) => {
   try {
     const stats = await getQuotaStatistics();
     const globalStats = await getGlobalStatistics();
-    
+
     res.json({
       success: true,
       globalStats: globalStats,
@@ -356,16 +363,16 @@ exports.assignAmbassador = functions.https.onRequest(async (req, res) => {
     // Validate input data
     const validatedData = validate(schemas.assignAmbassador, req.body);
     const { userId, countryCode, languageCode } = validatedData;
-    
+
     const success = await assignAmbassador(userId, countryCode, languageCode);
-    
+
     res.json({
       success: success,
       message: success ? 'Ambassador assigned successfully' : 'Failed to assign ambassador'
     });
   } catch (error) {
     console.error('Error in assignAmbassador:', error);
-    
+
     // Handle validation errors
     if (error.code === 'invalid-argument') {
       res.status(400).json({
@@ -387,40 +394,44 @@ exports.assignAmbassador = functions.https.onRequest(async (req, res) => {
 /**
  * Scheduled function to auto-assign ambassadors every hour
  */
-exports.scheduledAutoAssign = functions.pubsub.schedule('every 1 hours').onRun(async (context) => {
-  try {
-    const assignedCount = await autoAssignAvailableSlots();
-    console.log(`Scheduled auto-assignment completed. Assigned ${assignedCount} ambassadors.`);
-    return null;
-  } catch (error) {
-    console.error('Error in scheduled auto-assignment:', error);
-    return null;
-  }
-});
+if (isFirebase && functions.pubsub && typeof functions.pubsub.schedule === 'function') {
+  exports.scheduledAutoAssign = functions.pubsub.schedule('every 1 hours').onRun(async (context) => {
+    try {
+      const assignedCount = await autoAssignAvailableSlots();
+      console.log(`Scheduled auto-assignment completed. Assigned ${assignedCount} ambassadors.`);
+      return null;
+    } catch (error) {
+      console.error('Error in scheduled auto-assignment:', error);
+      return null;
+    }
+  });
 
-/**
- * Daily quota statistics report
- */
-exports.dailyQuotaReport = functions.pubsub.schedule('every 24 hours').onRun(async (context) => {
-  try {
-    const globalStats = await getGlobalStatistics();
-    const stats = await getQuotaStatistics();
-    
-    // Store daily report
-    await db.collection('quota_reports').add({
-      date: admin.firestore.FieldValue.serverTimestamp(),
-      globalStats: globalStats,
-      countryStats: stats,
-      reportType: 'daily'
-    });
-    
-    console.log('Daily quota report generated and stored.');
-    return null;
-  } catch (error) {
-    console.error('Error generating daily quota report:', error);
-    return null;
-  }
-});
+  /**
+   * Daily quota statistics report
+   */
+  exports.dailyQuotaReport = functions.pubsub.schedule('every 24 hours').onRun(async (context) => {
+    try {
+      const globalStats = await getGlobalStatistics();
+      const stats = await getQuotaStatistics();
+
+      // Store daily report
+      await db.collection('quota_reports').add({
+        date: admin.firestore.FieldValue.serverTimestamp(),
+        globalStats: globalStats,
+        countryStats: stats,
+        reportType: 'daily'
+      });
+
+      console.log('Daily quota report generated and stored.');
+      return null;
+    } catch (error) {
+      console.error('Error generating daily quota report:', error);
+      return null;
+    }
+  });
+} else {
+  console.log('Skipping Pub/Sub schedules in non-Firebase environment');
+}
 
 // Firestore Triggers
 
@@ -434,33 +445,33 @@ exports.checkAmbassadorEligibility = functions.firestore
       const userId = context.params.userId;
       const newData = change.after.data();
       const previousData = change.before.data();
-      
+
       // Only proceed if this is a new user or if relevant fields changed
       if (!newData) return null;
-      
+
       const isNewUser = !previousData;
       const roleChanged = isNewUser || previousData.role !== newData.role;
       const adultStatusChanged = isNewUser || previousData.isAdult !== newData.isAdult;
-      
+
       if (!roleChanged && !adultStatusChanged) return null;
-      
+
       // Check if user is now eligible for ambassadorship
       const isEligible = await isUserEligible(userId);
       if (!isEligible) return null;
-      
+
       // Get user's country and language
       const countryCode = newData.countryCode;
       const languageCode = newData.languageCode;
-      
+
       if (!countryCode || !languageCode) return null;
-      
+
       // Check if there are available slots
       const hasSlots = await hasAvailableSlots(countryCode, languageCode);
       if (!hasSlots) return null;
-      
+
       // Auto-assign ambassador role
       await assignAmbassador(userId, countryCode, languageCode);
-      
+
       return null;
     } catch (error) {
       console.error('Error in checkAmbassadorEligibility:', error);
@@ -478,12 +489,12 @@ exports.handleAmbassadorRemoval = functions.firestore
       const ambassadorId = context.params.ambassadorId;
       const newData = change.after.data();
       const previousData = change.before.data();
-      
+
       // Check if ambassador status changed to inactive
       if (previousData.status === 'active' && newData.status === 'inactive') {
         const countryCode = newData.countryCode;
         const languageCode = newData.languageCode;
-        
+
         if (countryCode && languageCode) {
           // Log the slot being freed
           await db.collection('ambassador_removals').add({
@@ -493,11 +504,11 @@ exports.handleAmbassadorRemoval = functions.firestore
             removedAt: admin.firestore.FieldValue.serverTimestamp(),
             reason: 'status_change_to_inactive'
           });
-          
+
           console.log(`Ambassador slot freed for ${countryCode}_${languageCode}`);
         }
       }
-      
+
       return null;
     } catch (error) {
       console.error('Error in handleAmbassadorRemoval:', error);
@@ -506,4 +517,31 @@ exports.handleAmbassadorRemoval = functions.firestore
   });
 
 // Export the quota data for reference
-exports.ambassadorQuotas = ambassadorQuotas; 
+exports.ambassadorQuotas = ambassadorQuotas;
+
+// Express routes for DigitalOcean
+app.get('/', (req, res) => {
+  res.json({
+    message: 'APP-OINT API is running!',
+    status: 'active',
+    timestamp: new Date().toISOString()
+  });
+});
+
+app.get('/health', (req, res) => {
+  res.json({
+    status: 'healthy',
+    timestamp: new Date().toISOString()
+  });
+});
+
+// Export Express app for DigitalOcean
+if (!isFirebase) {
+  const PORT = process.env.PORT || 8080;
+  app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`);
+  });
+}
+
+// Export for Firebase Functions
+exports.app = functions.https.onRequest(app); 
