@@ -1,7 +1,15 @@
+'use client'
+export const dynamic = 'force-dynamic'
+
+import { useSession } from 'next-auth/react'
 import { reports } from "@/lib/mock-data"
 import { Card } from "@/components/ui/card"
 
 export default function ReportsPage() {
+  const { data: session, status } = useSession()
+
+  if (status === 'loading') return <p>Loading...</p>
+  if (!session) return <p>Not authenticated</p>
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <Card className="p-6">
