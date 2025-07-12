@@ -4,7 +4,7 @@ services:
     github:
       repo: "gabriellagziel/appoint"
       branch: main
-      path: "dashboard"
+      source_dir: "dashboard"
     environment_slug: node-js
     build_command: "npm install && npm run build"
     run_command: "npm run start"
