@@ -1,40 +1,39 @@
-import 'package:flutter_test/flutter_test.dart';
-
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../fake_firebase_setup.dart';
 import 'package:appoint/features/admin/admin_broadcast_screen.dart';
 import 'package:appoint/l10n/app_localizations.dart';
-import 'package:mocktail/mocktail.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:appoint/services/broadcast_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:mocktail/mocktail.dart';
+
+import '../../firebase_test_helper.dart';
 
 class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
 late BroadcastService broadcastService;
 late MockFirebaseFirestore mockFirestore;
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
+void main() {
+  setUpAll(() async {
   await initializeTestFirebase();
   mockFirestore = MockFirebaseFirestore();
   broadcastService = BroadcastService(firestore: mockFirestore);
   // Stub FirebaseAnalytics if used
   // when(() => FirebaseAnalytics.instance).thenReturn(MockFirebaseAnalytics());
+  });
 
   group('AdminBroadcastScreen', () {
-    Widget createTestWidget(final Widget child) {
-      return ProviderScope(
+    Widget createTestWidget(Widget child) => ProviderScope(
         child: MaterialApp(
           localizationsDelegates: AppLocalizations.localizationsDelegates,
           supportedLocales: AppLocalizations.supportedLocales,
           home: child,
         ),
       );
-    }
 
     testWidgets('should display the title in app bar',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -43,17 +42,17 @@ Future<void> main() async {
     });
 
     testWidgets('should have add button in app bar',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
 
-      final addButton = find.byIcon(Icons.add);
+      addButton = find.byIcon(Icons.add);
       expect(addButton, findsOneWidget);
     });
 
     testWidgets('should display loading indicator initially',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -62,7 +61,7 @@ Future<void> main() async {
     });
 
     testWidgets('should display empty state when no messages',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -74,7 +73,7 @@ Future<void> main() async {
     });
 
     testWidgets('should show compose dialog when add button is tapped',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -93,7 +92,7 @@ Future<void> main() async {
     });
 
     testWidgets('should have form fields in compose dialog',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -111,7 +110,7 @@ Future<void> main() async {
     });
 
     testWidgets('should close dialog when cancel is tapped',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -135,7 +134,7 @@ Future<void> main() async {
     });
 
     testWidgets('should display message type options in dropdown',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -148,7 +147,7 @@ Future<void> main() async {
       await tester.pumpAndSettle();
 
       // Find dropdown and tap it
-      final dropdown = find.byType(DropdownButtonFormField);
+      dropdown = find.byType(DropdownButtonFormField);
       expect(dropdown, findsWidgets);
 
       // Tap the dropdown to open options
@@ -164,7 +163,7 @@ Future<void> main() async {
     });
 
     testWidgets('should display status chips with correct colors',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -173,16 +172,17 @@ Future<void> main() async {
       await tester.pumpAndSettle();
 
       // Check for status chips (if any messages exist)
-      final chips = find.byType(Chip);
+      chips = find.byType(Chip);
       if (chips.evaluate().isNotEmpty) {
         // Verify chip colors based on status
         final chip = chips.first;
-        final chipWidget = tester.widget<Chip>(chip);
+        chipWidget = tester.widget<Chip>(chip);
         expect(chipWidget.label, isA<Text>());
       }
     });
 
-    testWidgets('should handle form validation', (final WidgetTester tester) async {
+    testWidgets('should handle form validation',
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -199,11 +199,11 @@ Future<void> main() async {
       await tester.pumpAndSettle();
 
       // Should show validation errors
-      expect(find.byType(Form), findsOneWidget);
+      expect(find.text('Title is required'), findsOneWidget);
     });
 
     testWidgets('should display message details correctly',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -217,7 +217,7 @@ Future<void> main() async {
     });
 
     testWidgets('should have proper navigation structure',
-        (final WidgetTester tester) async {
+        (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
@@ -226,6 +226,5 @@ Future<void> main() async {
       expect(find.byType(Scaffold), findsOneWidget);
       expect(find.byType(AppBar), findsOneWidget);
     });
-  }, skip: true);
+  });
 }
-

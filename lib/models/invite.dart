@@ -1,5 +1,5 @@
-import 'package:json_annotation/json_annotation.dart';
 import 'package:appoint/models/contact.dart';
+import 'package:json_annotation/json_annotation.dart';
 
 part 'invite.g.dart';
 
@@ -7,23 +7,23 @@ enum InviteStatus { pending, accepted, declined }
 
 @JsonSerializable()
 class Invite {
-  final String id;
-  final String appointmentId;
-  final String inviteeId;
-  final Contact inviteeContact;
-  final InviteStatus status;
-  final bool requiresInstallFallback;
 
   Invite({
     required this.id,
     required this.appointmentId,
     required this.inviteeId,
-    required this.inviteeContact,
-    required this.status,
-    required this.requiresInstallFallback,
+    required this.status, required this.requiresInstallFallback, this.inviteeContact,
   });
 
-  factory Invite.fromJson(final Map<String, dynamic> json) => _$InviteFromJson(json);
+  factory Invite.fromJson(Map<String, dynamic> json) =>
+      _$InviteFromJson(json);
+  final String id;
+  final String appointmentId;
+  final String inviteeId;
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  final Contact? inviteeContact;
+  final InviteStatus status;
+  final bool requiresInstallFallback;
 
   Map<String, dynamic> toJson() => _$InviteToJson(this);
 }

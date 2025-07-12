@@ -1,19 +1,19 @@
+import 'package:appoint/providers/otp_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/otp_provider.dart';
 
 class OtpEntryModal extends ConsumerStatefulWidget {
+  const OtpEntryModal(
+      {required this.parentId, required this.childContact, super.key,});
   final String parentId;
   final String childContact;
-  const OtpEntryModal(
-      {super.key, required this.parentId, required this.childContact});
 
   @override
   ConsumerState<OtpEntryModal> createState() => _OtpEntryModalState();
 }
 
 class _OtpEntryModalState extends ConsumerState<OtpEntryModal> {
-  final _codeController = TextEditingController();
+  _codeController = TextEditingController();
 
   @override
   void dispose() {
@@ -34,8 +34,8 @@ class _OtpEntryModalState extends ConsumerState<OtpEntryModal> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final state = ref.watch(otpProvider);
+  Widget build(BuildContext context) {
+    state = ref.watch(otpProvider);
 
     return AlertDialog(
       title: const Text('Enter OTP'),
@@ -51,7 +51,7 @@ class _OtpEntryModalState extends ConsumerState<OtpEntryModal> {
             const Padding(
               padding: EdgeInsets.only(top: 8),
               child: Text('Invalid code, please try again.',
-                  style: TextStyle(color: Colors.red)),
+                  style: TextStyle(color: Colors.red),),
             ),
         ],
       ),

@@ -11,6 +11,6 @@ class Location with _$Location {
     final String? address,
   }) = _Location;
 
-  factory Location.fromJson(final Map<String, dynamic> json) =>
+  factory Location.fromJson(Map<String, dynamic> json) =>
       _$LocationFromJson(json);
 }

@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class InvoicesScreen extends ConsumerStatefulWidget {
   const InvoicesScreen({super.key});
@@ -11,10 +11,10 @@ class InvoicesScreen extends ConsumerStatefulWidget {
 }
 
 class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _clientNameController = TextEditingController();
-  final _amountController = TextEditingController();
-  final _descriptionController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _clientNameController = TextEditingController();
+  _amountController = TextEditingController();
+  _descriptionController = TextEditingController();
   bool _isAdding = false;
 
   @override
@@ -26,7 +26,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
       return const Scaffold(
@@ -50,7 +50,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
             .where('businessProfileId', isEqualTo: user.uid)
             .orderBy('createdAt', descending: true)
             .snapshots(),
-        builder: (final context, final snapshot) {
+        builder: (context, final snapshot) {
           if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           }
@@ -70,8 +70,8 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
           return ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: invoices.length,
-            itemBuilder: (final context, final index) {
-              final invoice = invoices[index].data() as Map<String, dynamic>;
+            itemBuilder: (context, final index) {
+              invoice = invoices[index].data()! as Map<String, dynamic>;
               final invoiceId = invoices[index].id;
 
               return Card(
@@ -96,7 +96,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
                     ],
                   ),
                   trailing: PopupMenuButton(
-                    itemBuilder: (final context) => [
+                    itemBuilder: (context) => [
                       const PopupMenuItem(
                         value: 'paid',
                         child: Text('Mark as Paid'),
@@ -106,7 +106,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
                         child: Text('Delete'),
                       ),
                     ],
-                    onSelected: (final value) {
+                    onSelected: (value) {
                       if (value == 'paid') {
                         _updateInvoiceStatus(invoiceId, 'paid');
                       } else if (value == 'delete') {
@@ -123,14 +123,14 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
     );
   }
 
-  void _showAddInvoiceDialog(final BuildContext context) {
+  void _showAddInvoiceDialog(BuildContext context) {
     _clientNameController.clear();
     _amountController.clear();
     _descriptionController.clear();
 
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Create New Invoice'),
         content: Form(
           key: _formKey,
@@ -140,7 +140,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
               TextFormField(
                 controller: _clientNameController,
                 decoration: const InputDecoration(labelText: 'Client Name'),
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter client name';
                   }
@@ -149,9 +149,9 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
               ),
               TextFormField(
                 controller: _amountController,
-                decoration: const InputDecoration(labelText: 'Amount (\$)'),
+                decoration: const InputDecoration(labelText: r'Amount ($)'),
                 keyboardType: TextInputType.number,
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter amount';
                   }
@@ -197,7 +197,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
       if (user == null) throw Exception('Not authenticated');
 
       // Generate invoice number
-      final invoiceNumber = _generateInvoiceNumber();
+      invoiceNumber = _generateInvoiceNumber();
 
       await FirebaseFirestore.instance.collection('invoices').add({
         'invoiceNumber': invoiceNumber,
@@ -218,7 +218,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
           const SnackBar(content: Text('Invoice created successfully!')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -232,11 +232,11 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
   }
 
   String _generateInvoiceNumber() {
-    final timestamp = DateTime.now().millisecondsSinceEpoch;
+    timestamp = DateTime.now().millisecondsSinceEpoch;
     return 'INV-${timestamp.toString().substring(timestamp.toString().length - 6)}';
   }
 
-  Color _getStatusColor(final String? status) {
+  Color _getStatusColor(String? status) {
     switch (status) {
       case 'paid':
         return Colors.green;
@@ -247,7 +247,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
     }
   }
 
-  IconData _getStatusIcon(final String? status) {
+  IconData _getStatusIcon(String? status) {
     switch (status) {
       case 'paid':
         return Icons.check;
@@ -258,7 +258,8 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
     }
   }
 
-  Future<void> _updateInvoiceStatus(final String invoiceId, final String status) async {
+  Future<void> _updateInvoiceStatus(
+      String invoiceId, final String status,) async {
     try {
       await FirebaseFirestore.instance
           .collection('invoices')
@@ -267,19 +268,19 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
         'status': status,
         'updatedAt': DateTime.now().toIso8601String(),
       });
-    } catch (e) {
-      // Removed debug print: print('Error updating invoice: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error updating invoice: $e');
     }
   }
 
-  Future<void> _deleteInvoice(final String invoiceId) async {
+  Future<void> _deleteInvoice(String invoiceId) async {
     try {
       await FirebaseFirestore.instance
           .collection('invoices')
           .doc(invoiceId)
           .delete();
-    } catch (e) {
-      // Removed debug print: print('Error deleting invoice: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error deleting invoice: $e');
     }
   }
 }

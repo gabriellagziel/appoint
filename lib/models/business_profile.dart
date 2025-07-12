@@ -11,11 +11,11 @@ class BusinessProfile with _$BusinessProfile {
     required final String phone,
   }) = _BusinessProfile;
 
-  factory BusinessProfile.fromJson(final Map<String, dynamic> json) =>
+  factory BusinessProfile.fromJson(Map<String, dynamic> json) =>
       _$BusinessProfileFromJson(json);
 }
 
 extension BusinessProfileExtension on BusinessProfile {
   String? get logoUrl =>
-      null; // TODO: Add logoUrl property when code generation is fixed
+      null; // TODO(username): Add logoUrl property when code generation is fixed
 }

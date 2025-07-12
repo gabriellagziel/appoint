@@ -1,30 +1,29 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/family_link.dart';
 import 'package:appoint/models/permission.dart';
 import 'package:appoint/providers/family_provider.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class PermissionsScreen extends ConsumerWidget {
-  final FamilyLink familyLink;
 
   const PermissionsScreen({
-    super.key,
-    required this.familyLink,
+    required this.familyLink, super.key,
   });
+  final FamilyLink familyLink;
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final permissionsAsync = ref.watch(permissionsProvider(familyLink.id));
+  Widget build(BuildContext context, final WidgetRef ref) {
+    permissionsAsync = ref.watch(permissionsProvider(familyLink.id));
 
     return Scaffold(
       appBar: AppBar(
         title: Text('Permissions - ${familyLink.childId}'),
       ),
       body: permissionsAsync.when(
-        data: (final permissions) =>
+        data: (permissions) =>
             _buildPermissionsList(context, ref, permissions),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final error, final stack) => Center(
+        error: (error, final stack) => Center(
           child: Text('Error loading permissions: $error'),
         ),
       ),
@@ -35,11 +34,10 @@ class PermissionsScreen extends ConsumerWidget {
     final BuildContext context,
     final WidgetRef ref,
     final List<Permission> permissions,
-  ) {
-    return ListView.builder(
+  ) => ListView.builder(
       padding: const EdgeInsets.all(16),
       itemCount: permissions.length,
-      itemBuilder: (final context, final index) {
+      itemBuilder: (context, final index) {
         final permission = permissions[index];
         return Card(
           margin: const EdgeInsets.only(bottom: 8),
@@ -55,16 +53,14 @@ class PermissionsScreen extends ConsumerWidget {
         );
       },
     );
-  }
 
   Widget _buildAccessLevelSelector(
     final BuildContext context,
     final WidgetRef ref,
     final Permission permission,
-  ) {
-    return DropdownButton<String>(
+  ) => DropdownButton<String>(
       value: permission.accessLevel,
-      onChanged: (final String? newValue) {
+      onChanged: (String? newValue) {
         if (newValue != null) {
           _updatePermission(context, ref, permission, newValue);
         }
@@ -75,9 +71,8 @@ class PermissionsScreen extends ConsumerWidget {
         DropdownMenuItem(value: 'write', child: Text('Read & Write')),
       ],
     );
-  }
 
-  IconData _getAccessLevelIcon(final String accessLevel) {
+  IconData _getAccessLevelIcon(String accessLevel) {
     switch (accessLevel) {
       case 'none':
         return Icons.cancel;
@@ -90,7 +85,7 @@ class PermissionsScreen extends ConsumerWidget {
     }
   }
 
-  Color _getAccessLevelColor(final String accessLevel) {
+  Color _getAccessLevelColor(String accessLevel) {
     switch (accessLevel) {
       case 'none':
         return Colors.red;
@@ -103,7 +98,7 @@ class PermissionsScreen extends ConsumerWidget {
     }
   }
 
-  String _getCategoryDisplayName(final String category) {
+  String _getCategoryDisplayName(String category) {
     switch (category) {
       case 'profile':
         return 'Profile Information';
@@ -120,7 +115,7 @@ class PermissionsScreen extends ConsumerWidget {
     }
   }
 
-  String _getCategoryDescription(final String category) {
+  String _getCategoryDescription(String category) {
     switch (category) {
       case 'profile':
         return 'Access to personal information and settings';
@@ -137,7 +132,7 @@ class PermissionsScreen extends ConsumerWidget {
     }
   }
 
-  void _updatePermission(
+  Future<void> _updatePermission(
     final BuildContext context,
     final WidgetRef ref,
     final Permission permission,
@@ -153,7 +148,7 @@ class PermissionsScreen extends ConsumerWidget {
       );
 
       // Call family service to update permission
-      final familyService = ref.read(familyServiceProvider);
+      familyService = ref.read(familyServiceProvider);
       await familyService.updatePermissions(
         familyLink.id,
         [updatedPermission],
@@ -171,7 +166,7 @@ class PermissionsScreen extends ConsumerWidget {
 
       // Refresh the permissions list
       ref.invalidate(permissionsProvider(familyLink.id));
-    } catch (e) {
+    } catch (e) {e) {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

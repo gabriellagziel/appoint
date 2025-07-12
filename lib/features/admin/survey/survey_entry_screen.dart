@@ -1,13 +1,13 @@
+import 'package:appoint/features/admin/survey/survey_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/features/admin/survey/survey_provider.dart';
 
 class SurveyEntryScreen extends ConsumerWidget {
   const SurveyEntryScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final surveysAsync = ref.watch(surveysStreamProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    surveysAsync = ref.watch(surveysStreamProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -23,7 +23,7 @@ class SurveyEntryScreen extends ConsumerWidget {
         ],
       ),
       body: surveysAsync.when(
-        data: (final surveys) {
+        data: (surveys) {
           if (surveys.isEmpty) {
             return const Center(
               child: Column(
@@ -48,7 +48,7 @@ class SurveyEntryScreen extends ConsumerWidget {
           return ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: surveys.length,
-            itemBuilder: (final context, final index) {
+            itemBuilder: (context, final index) {
               final survey = surveys[index];
               return Card(
                 margin: const EdgeInsets.only(bottom: 12),
@@ -86,9 +86,9 @@ class SurveyEntryScreen extends ConsumerWidget {
                     ],
                   ),
                   trailing: PopupMenuButton<String>(
-                    onSelected: (final value) =>
+                    onSelected: (value) =>
                         _handleSurveyAction(context, ref, survey['id'], value),
-                    itemBuilder: (final context) => [
+                    itemBuilder: (context) => [
                       const PopupMenuItem(
                         value: 'edit',
                         child: Row(
@@ -128,7 +128,7 @@ class SurveyEntryScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final error, final stack) => Center(
+        error: (error, final stack) => Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -143,14 +143,14 @@ class SurveyEntryScreen extends ConsumerWidget {
   }
 
   void _showCreateSurveyDialog(
-      final BuildContext context, final WidgetRef ref) {
-    final titleController = TextEditingController();
-    final descriptionController = TextEditingController();
-    final rewardPointsController = TextEditingController(text: '10');
+      BuildContext context, final WidgetRef ref,) {
+    titleController = TextEditingController();
+    descriptionController = TextEditingController();
+    rewardPointsController = TextEditingController(text: '10');
 
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Create New Survey'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
@@ -207,34 +207,31 @@ class SurveyEntryScreen extends ConsumerWidget {
   }
 
   void _handleSurveyAction(final BuildContext context, final WidgetRef ref,
-      final String surveyId, final String action) {
+      String surveyId, final String action,) {
     switch (action) {
       case 'edit':
-        // TODO: Implement this featurent edit survey
+        // TODO(username): Implement this featurent edit survey
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Edit survey - Coming soon!')),
         );
-        break;
       case 'responses':
-        // TODO: Implement this featurenses screen
+        // TODO(username): Implement this featurenses screen
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('View responses - Coming soon!')),
         );
-        break;
       case 'delete':
         _showDeleteConfirmation(context, ref, surveyId);
-        break;
     }
   }
 
   void _showDeleteConfirmation(
-      final BuildContext context, final WidgetRef ref, final String surveyId) {
+      BuildContext context, final WidgetRef ref, final String surveyId,) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Delete Survey'),
         content: const Text(
-            'Are you sure you want to delete this survey? This action cannot be undone.'),
+            'Are you sure you want to delete this survey? This action cannot be undone.',),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
@@ -254,10 +251,10 @@ class SurveyEntryScreen extends ConsumerWidget {
   }
 
   void _showSurveyDetails(
-      final BuildContext context, final Map<String, dynamic> survey) {
+      BuildContext context, final Map<String, dynamic> survey,) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: Text(survey['title'] ?? 'Survey Details'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
@@ -269,7 +266,7 @@ class SurveyEntryScreen extends ConsumerWidget {
             const SizedBox(height: 8),
             Text('Status: ${survey['status'] ?? 'Unknown'}'),
             if (survey['createdAt'] != null)
-              Text('Created: ${survey['createdAt'].toString()}'),
+              Text('Created: ${survey['createdAt']}'),
           ],
         ),
         actions: [

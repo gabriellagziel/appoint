@@ -1,12 +1,12 @@
+import 'package:appoint/features/studio/models/slot.dart';
+import 'package:appoint/features/studio/providers/staff_availability_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import 'package:appoint/features/studio/models/slot.dart';
-import 'package:appoint/features/studio/providers/staff_availability_provider.dart';
 
 class SlotDialog extends ConsumerStatefulWidget {
-  final SlotWithId? slot;
   const SlotDialog({super.key, this.slot});
+  final SlotWithId? slot;
 
   @override
   ConsumerState<SlotDialog> createState() => _SlotDialogState();
@@ -33,9 +33,9 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
   }
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     final isEdit = widget.slot != null;
-    final theme = Theme.of(context);
+    theme = Theme.of(context);
     return Dialog(
       child: Padding(
         padding: const EdgeInsets.all(24),
@@ -79,8 +79,8 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
     );
   }
 
-  Widget _buildDatePicker(final BuildContext context) {
-    final theme = Theme.of(context);
+  Widget _buildDatePicker(BuildContext context) {
+    theme = Theme.of(context);
     return Row(
       children: [
         const Icon(Icons.calendar_today, size: 20),
@@ -90,7 +90,7 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
             onTap: _saving
                 ? null
                 : () async {
-                    final now = DateTime.now();
+                    now = DateTime.now();
                     final picked = await showDatePicker(
                       context: context,
                       initialDate: _date ?? now,
@@ -118,8 +118,9 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
     );
   }
 
-  Widget _buildTimePicker(final BuildContext context, {required final bool isStart}) {
-    final theme = Theme.of(context);
+  Widget _buildTimePicker(final BuildContext context,
+      {required bool isStart,}) {
+    theme = Theme.of(context);
     final label = isStart ? 'Start Time' : 'End Time';
     final time = isStart ? _startTime : _endTime;
     return Row(
@@ -186,7 +187,7 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
       return;
     }
     setState(() => _saving = true);
-    final service = ref.read(staffAvailabilityServiceProvider);
+    service = ref.read(staffAvailabilityServiceProvider);
     try {
       if (widget.slot == null) {
         await service.addSlot(start, end);
@@ -196,14 +197,14 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
         _showSnackbar('Slot updated successfully');
       }
       if (mounted) Navigator.of(context).pop();
-    } catch (e) {
+    } catch (e) {e) {
       _showSnackbar('Error: $e', isError: true);
     } finally {
       if (mounted) setState(() => _saving = false);
     }
   }
 
-  void _showSnackbar(final String message, {final bool isError = false}) {
+  void _showSnackbar(String message, {final bool isError = false}) {
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -213,4 +214,4 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
       );
     }
   }
-} 
+}

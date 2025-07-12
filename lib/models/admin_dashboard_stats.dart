@@ -30,7 +30,7 @@ class AdminDashboardStats with _$AdminDashboardStats {
     required final DateTime lastUpdated,
   }) = _AdminDashboardStats;
 
-  factory AdminDashboardStats.fromJson(final Map<String, dynamic> json) =>
+  factory AdminDashboardStats.fromJson(Map<String, dynamic> json) =>
       _$AdminDashboardStatsFromJson(json);
 }
 
@@ -53,7 +53,7 @@ class AdminErrorLog with _$AdminErrorLog {
     final String? resolutionNotes,
   }) = _AdminErrorLog;
 
-  factory AdminErrorLog.fromJson(final Map<String, dynamic> json) =>
+  factory AdminErrorLog.fromJson(Map<String, dynamic> json) =>
       _$AdminErrorLogFromJson(json);
 }
 
@@ -79,7 +79,7 @@ class AdminActivityLog with _$AdminActivityLog {
     required final String userAgent,
   }) = _AdminActivityLog;
 
-  factory AdminActivityLog.fromJson(final Map<String, dynamic> json) =>
+  factory AdminActivityLog.fromJson(Map<String, dynamic> json) =>
       _$AdminActivityLogFromJson(json);
 }
 
@@ -99,7 +99,7 @@ class AdRevenueStats with _$AdRevenueStats {
     required final DateTime lastUpdated,
   }) = _AdRevenueStats;
 
-  factory AdRevenueStats.fromJson(final Map<String, dynamic> json) =>
+  factory AdRevenueStats.fromJson(Map<String, dynamic> json) =>
       _$AdRevenueStatsFromJson(json);
 }
 
@@ -119,6 +119,6 @@ class MonetizationSettings with _$MonetizationSettings {
     required final DateTime lastUpdated,
   }) = _MonetizationSettings;
 
-  factory MonetizationSettings.fromJson(final Map<String, dynamic> json) =>
+  factory MonetizationSettings.fromJson(Map<String, dynamic> json) =>
       _$MonetizationSettingsFromJson(json);
-} 
+}

@@ -5,12 +5,10 @@ class BusinessWelcomeScreen extends ConsumerWidget {
   const BusinessWelcomeScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    return Scaffold(
+  Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
       appBar: AppBar(title: const Text('Welcome')),
       body: const Center(
         child: Text('Business Welcome Screen - Coming Soon'),
       ),
     );
-  }
 }

@@ -1,47 +1,46 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class StaffAvailabilityService {
+
+  StaffAvailabilityService(this.studioId);
   final FirebaseFirestore _db = FirebaseFirestore.instance;
   final String studioId;
 
-  StaffAvailabilityService(this.studioId);
+  CollectionReference get _collection =>
+      _db.collection('studio').doc(studioId).collection('staff_availability');
 
-  CollectionReference get _collection => _db
-      .collection('studio')
-      .doc(studioId)
-      .collection('staff_availability');
-
-  Future<void> addSlot(final DateTime startTime, final DateTime endTime) async {
+  Future<void> addSlot(DateTime startTime, final DateTime endTime) async {
     try {
       await _collection.add({
         'startTime': Timestamp.fromDate(startTime),
         'endTime': Timestamp.fromDate(endTime),
         'isBooked': false,
       });
-    } catch (e) {
-      // Removed debug print: print('❌ Error adding slot: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('❌ Error adding slot: $e');
       rethrow;
     }
   }
 
-  Future<void> updateSlot(final String id, final DateTime startTime, final DateTime endTime) async {
+  Future<void> updateSlot(
+      String id, final DateTime startTime, final DateTime endTime,) async {
     try {
       await _collection.doc(id).update({
         'startTime': Timestamp.fromDate(startTime),
         'endTime': Timestamp.fromDate(endTime),
       });
-    } catch (e) {
-      // Removed debug print: print('❌ Error updating slot: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('❌ Error updating slot: $e');
       rethrow;
     }
   }
 
-  Future<void> deleteSlot(final String id) async {
+  Future<void> deleteSlot(String id) async {
     try {
       await _collection.doc(id).delete();
-    } catch (e) {
-      // Removed debug print: print('❌ Error deleting slot: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('❌ Error deleting slot: $e');
       rethrow;
     }
   }
-} 
+}

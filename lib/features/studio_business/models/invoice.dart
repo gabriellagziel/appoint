@@ -1,21 +1,4 @@
 class Invoice {
-  final String id;
-  final String businessId;
-  final String subscriptionId;
-  final String customerId;
-  final double amount;
-  final String currency;
-  final InvoiceStatus status;
-  final DateTime dueDate;
-  final DateTime createdAt;
-  final DateTime updatedAt;
-  final String? stripeInvoiceId;
-  final String? stripePaymentIntentId;
-  final String? description;
-  final Map<String, dynamic>? metadata;
-  final String? promoCodeId;
-  final double? discountAmount;
-  final double? taxAmount;
 
   Invoice({
     required this.id,
@@ -37,8 +20,7 @@ class Invoice {
     this.taxAmount,
   });
 
-  factory Invoice.fromJson(final Map<String, dynamic> json) {
-    return Invoice(
+  factory Invoice.fromJson(Map<String, dynamic> json) => Invoice(
       id: json['id'] as String,
       businessId: json['businessId'] as String,
       subscriptionId: json['subscriptionId'] as String,
@@ -46,7 +28,7 @@ class Invoice {
       amount: (json['amount'] as num).toDouble(),
       currency: json['currency'] as String,
       status: InvoiceStatus.values.firstWhere(
-        (final e) => e.name == json['status'],
+        (e) => e.name == json['status'],
         orElse: () => InvoiceStatus.draft,
       ),
       dueDate: DateTime.parse(json['dueDate'] as String),
@@ -64,10 +46,25 @@ class Invoice {
           ? (json['taxAmount'] as num).toDouble()
           : null,
     );
-  }
+  final String id;
+  final String businessId;
+  final String subscriptionId;
+  final String customerId;
+  final double amount;
+  final String currency;
+  final InvoiceStatus status;
+  final DateTime dueDate;
+  final DateTime createdAt;
+  final DateTime updatedAt;
+  final String? stripeInvoiceId;
+  final String? stripePaymentIntentId;
+  final String? description;
+  final Map<String, dynamic>? metadata;
+  final String? promoCodeId;
+  final double? discountAmount;
+  final double? taxAmount;
 
-  Map<String, dynamic> toJson() {
-    return {
+  Map<String, dynamic> toJson() => {
       'id': id,
       'businessId': businessId,
       'subscriptionId': subscriptionId,
@@ -86,7 +83,6 @@ class Invoice {
       'discountAmount': discountAmount,
       'taxAmount': taxAmount,
     };
-  }
 }
 
 enum InvoiceStatus {
@@ -113,11 +109,7 @@ extension InvoiceStatusExtension on InvoiceStatus {
     }
   }
 
-  bool get isPaid {
-    return this == InvoiceStatus.paid;
-  }
+  bool get isPaid => this == InvoiceStatus.paid;
 
-  bool get isOverdue {
-    return this == InvoiceStatus.open;
-  }
+  bool get isOverdue => this == InvoiceStatus.open;
 }

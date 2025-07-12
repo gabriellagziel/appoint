@@ -25,6 +25,6 @@ class ParentFreeAccess with _$ParentFreeAccess {
     final int? totalAccessCount,
   }) = _ParentFreeAccess;
 
-  factory ParentFreeAccess.fromJson(final Map<String, dynamic> json) =>
+  factory ParentFreeAccess.fromJson(Map<String, dynamic> json) =>
       _$ParentFreeAccessFromJson(json);
 }

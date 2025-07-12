@@ -1,0 +1,11 @@
+name: app-oint-marketing
+static_sites:
+  - name: marketing
+    repo:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    build_command: "npm --prefix marketing install && npm --prefix marketing run build && npm --prefix marketing run export"
+    output_dir: "marketing/out"
+    routes:
+      - path: /
+ 

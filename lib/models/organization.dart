@@ -4,9 +4,6 @@ part 'organization.g.dart';
 
 @JsonSerializable()
 class Organization {
-  final String id;
-  final String name;
-  final List<String> memberIds;
 
   Organization({
     required this.id,
@@ -14,8 +11,11 @@ class Organization {
     required this.memberIds,
   });
 
-  factory Organization.fromJson(final Map<String, dynamic> json) =>
+  factory Organization.fromJson(Map<String, dynamic> json) =>
       _$OrganizationFromJson(json);
+  final String id;
+  final String name;
+  final List<String> memberIds;
 
   Map<String, dynamic> toJson() => _$OrganizationToJson(this);
 }

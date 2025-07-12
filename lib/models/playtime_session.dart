@@ -14,6 +14,6 @@ class PlaytimeSession with _$PlaytimeSession {
     required final String backgroundId,
   }) = _PlaytimeSession;
 
-  factory PlaytimeSession.fromJson(final Map<String, dynamic> json) =>
+  factory PlaytimeSession.fromJson(Map<String, dynamic> json) =>
       _$PlaytimeSessionFromJson(json);
 }

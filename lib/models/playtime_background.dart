@@ -11,6 +11,6 @@ class PlaytimeBackground with _$PlaytimeBackground {
     required final String createdBy,
   }) = _PlaytimeBackground;
 
-  factory PlaytimeBackground.fromJson(final Map<String, dynamic> json) =>
+  factory PlaytimeBackground.fromJson(Map<String, dynamic> json) =>
       _$PlaytimeBackgroundFromJson(json);
 }

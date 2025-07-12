@@ -1,12 +1,12 @@
-import 'package:integration_test/integration_test.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter/material.dart';
 import 'package:appoint/main.dart' as app;
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:integration_test/integration_test.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
-  testWidgets('edit profile flow', (final tester) async {
+  testWidgets('edit profile flow', (tester) async {
     await app.appMain();
     await tester.pumpAndSettle();
 
@@ -30,7 +30,7 @@ void main() {
     expect(find.text('Hello'), findsOneWidget);
   });
 
-  testWidgets('referral copy flow', (final tester) async {
+  testWidgets('referral copy flow', (tester) async {
     await app.appMain();
     await tester.pumpAndSettle();
 
@@ -38,14 +38,14 @@ void main() {
     expect(find.text('Login'), findsOneWidget);
 
     await tester.enterText(
-        find.widgetWithText(TextField, 'Email'), 'test@example.com');
+        find.widgetWithText(TextField, 'Email'), 'test@example.com',);
     await tester.enterText(
-        find.widgetWithText(TextField, 'Password'), 'password');
+        find.widgetWithText(TextField, 'Password'), 'password',);
     await tester.tap(find.text('Sign In'));
     await tester.pumpAndSettle();
 
     // Navigate directly to onboarding
-    final navigator = tester.state<NavigatorState>(find.byType(Navigator));
+    navigator = tester.state<NavigatorState>(find.byType(Navigator));
     navigator.pushNamed('/ambassador-onboarding');
     await tester.pumpAndSettle();
 

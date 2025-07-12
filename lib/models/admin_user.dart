@@ -4,10 +4,6 @@ part 'admin_user.g.dart';
 
 @JsonSerializable()
 class AdminUser {
-  final String uid;
-  final String email;
-  final String displayName;
-  final String role;
 
   AdminUser({
     required this.uid,
@@ -16,8 +12,12 @@ class AdminUser {
     required this.role,
   });
 
-  factory AdminUser.fromJson(final Map<String, dynamic> json) =>
+  factory AdminUser.fromJson(Map<String, dynamic> json) =>
       _$AdminUserFromJson(json);
+  final String uid;
+  final String email;
+  final String displayName;
+  final String role;
 
   Map<String, dynamic> toJson() => _$AdminUserToJson(this);
 }

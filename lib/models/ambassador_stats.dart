@@ -14,7 +14,7 @@ class AmbassadorStats with _$AmbassadorStats {
     required final DateTime date,
   }) = _AmbassadorStats;
 
-  factory AmbassadorStats.fromJson(final Map<String, dynamic> json) =>
+  factory AmbassadorStats.fromJson(Map<String, dynamic> json) =>
       _$AmbassadorStatsFromJson(json);
 }
 
@@ -33,4 +33,4 @@ class ChartDataPoint with _$ChartDataPoint {
     required final double value,
     required final String category,
   }) = _ChartDataPoint;
-} 
+}

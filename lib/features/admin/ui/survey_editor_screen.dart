@@ -13,7 +13,7 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
 
   @override
   void dispose() {
-    for (final q in _questions) {
+    for (q in _questions) {
       q.controller.dispose();
     }
     super.dispose();
@@ -25,7 +25,7 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
     });
   }
 
-  void _removeQuestion(final int index) {
+  void _removeQuestion(int index) {
     setState(() {
       _questions[index].controller.dispose();
       _questions.removeAt(index);
@@ -33,8 +33,7 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Survey Editor'),
       ),
@@ -47,7 +46,7 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
               child: Center(child: Text('No questions added')),
             ),
           ..._questions.asMap().entries.map(
-                (final entry) => _buildQuestionCard(entry.key, entry.value),
+                (entry) => _buildQuestionCard(entry.key, entry.value),
               ),
           const SizedBox(height: 16),
           ElevatedButton.icon(
@@ -58,10 +57,8 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
         ],
       ),
     );
-  }
 
-  Widget _buildQuestionCard(final int index, final _QuestionItem item) {
-    return Card(
+  Widget _buildQuestionCard(int index, final _QuestionItem item) => Card(
       margin: const EdgeInsets.only(bottom: 12),
       child: Padding(
         padding: const EdgeInsets.all(12),
@@ -78,10 +75,11 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
               items: const [
                 DropdownMenuItem(value: 'text', child: Text('Text')),
                 DropdownMenuItem(
-                    value: 'multiple', child: Text('Multiple Choice')),
+                    value: 'multiple', child: Text('Multiple Choice'),),
                 DropdownMenuItem(value: 'rating', child: Text('Rating')),
               ],
-              onChanged: (final val) => setState(() => item.type = val ?? 'text'),
+              onChanged: (val) =>
+                  setState(() => item.type = val ?? 'text'),
             ),
             Align(
               alignment: Alignment.centerRight,
@@ -94,10 +92,9 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
         ),
       ),
     );
-  }
 }
 
 class _QuestionItem {
-  final TextEditingController controller = TextEditingController();
+  TextEditingController controller = TextEditingController();
   String type = 'text';
 }

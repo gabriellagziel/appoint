@@ -3,22 +3,16 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// Represents a piece of content in the library.
 class ContentItem {
-  final String id;
-  final String title;
-  final String? description;
-  final String? imageUrl;
-  final DateTime createdAt;
 
   ContentItem({
     required this.id,
     required this.title,
-    this.description,
+    required this.createdAt, this.description,
     this.imageUrl,
-    required this.createdAt,
   });
 
   /// Constructs a [ContentItem] from Firestore data.
-  factory ContentItem.fromMap(final String id, final Map<String, dynamic> map) {
+  factory ContentItem.fromMap(String id, final Map<String, dynamic> map) {
     final ts = map['createdAt'];
     DateTime created;
     if (ts is Timestamp) {
@@ -36,14 +30,17 @@ class ContentItem {
       createdAt: created,
     );
   }
+  final String id;
+  final String title;
+  final String? description;
+  final String? imageUrl;
+  final DateTime createdAt;
 
   /// Converts this item to a map for Firestore.
-  Map<String, dynamic> toMap() {
-    return {
+  Map<String, dynamic> toMap() => {
       'title': title,
       'description': description,
       'imageUrl': imageUrl,
       'createdAt': Timestamp.fromDate(createdAt),
     };
-  }
 }

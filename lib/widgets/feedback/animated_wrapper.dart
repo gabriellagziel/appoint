@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 /// Wraps child with fade and slide transition when it changes.
 class AnimatedWrapper extends StatelessWidget {
   const AnimatedWrapper({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.duration = const Duration(milliseconds: 300),
     this.direction = AxisDirection.down,
   });
@@ -13,7 +12,7 @@ class AnimatedWrapper extends StatelessWidget {
   final Duration duration;
   final AxisDirection direction;
 
-  Offset _offsetForDirection(final AxisDirection direction) {
+  Offset _offsetForDirection(AxisDirection direction) {
     switch (direction) {
       case AxisDirection.up:
         return const Offset(0, 0.1);
@@ -27,12 +26,11 @@ class AnimatedWrapper extends StatelessWidget {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return AnimatedSwitcher(
+  Widget build(BuildContext context) => AnimatedSwitcher(
       duration: duration,
-      transitionBuilder: (final child, final animation) {
+      transitionBuilder: (child, final animation) {
         final offsetAnimation = Tween<Offset>(
-                begin: _offsetForDirection(direction), end: Offset.zero)
+                begin: _offsetForDirection(direction), end: Offset.zero,)
             .animate(animation);
         return SlideTransition(
           position: offsetAnimation,
@@ -41,5 +39,4 @@ class AnimatedWrapper extends StatelessWidget {
       },
       child: child,
     );
-  }
 }

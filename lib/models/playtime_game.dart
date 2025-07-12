@@ -13,6 +13,6 @@ class PlaytimeGame with _$PlaytimeGame {
     final DateTime? createdAt,
   }) = _PlaytimeGame;
 
-  factory PlaytimeGame.fromJson(final Map<String, dynamic> json) =>
+  factory PlaytimeGame.fromJson(Map<String, dynamic> json) =>
       _$PlaytimeGameFromJson(json);
 }

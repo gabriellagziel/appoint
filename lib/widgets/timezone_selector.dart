@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
-
 import 'package:appoint/theme/app_spacing.dart';
 import 'package:appoint/theme/app_text_styles.dart';
+import 'package:flutter/material.dart';
 
 /// Dropdown widget to select a timezone using Material 3 styling.
 class TimezoneSelector extends StatefulWidget {
@@ -28,8 +27,7 @@ class _TimezoneSelectorState extends State<TimezoneSelector> {
   String? _selectedTimezone;
 
   @override
-  Widget build(final BuildContext context) {
-    return DropdownButtonFormField<String>(
+  Widget build(BuildContext context) => DropdownButtonFormField<String>(
       decoration: const InputDecoration(
         labelText: 'Timezone',
         border: OutlineInputBorder(),
@@ -41,9 +39,9 @@ class _TimezoneSelectorState extends State<TimezoneSelector> {
       value: _selectedTimezone,
       style: AppTextStyles.body,
       items: _timezones
-          .map((final tz) => DropdownMenuItem(value: tz, child: Text(tz)))
+          .map((tz) => DropdownMenuItem(value: tz, child: Text(tz)))
           .toList(),
-      onChanged: (final value) {
+      onChanged: (value) {
         setState(() {
           _selectedTimezone = value;
         });
@@ -52,5 +50,4 @@ class _TimezoneSelectorState extends State<TimezoneSelector> {
         }
       },
     );
-  }
 }

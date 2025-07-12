@@ -1,9 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Slot {
-  final DateTime startTime;
-  final DateTime endTime;
-  final bool isBooked;
 
   const Slot({
     required this.startTime,
@@ -11,9 +8,9 @@ class Slot {
     required this.isBooked,
   });
 
-  factory Slot.fromFirestore(final DocumentSnapshot doc) {
+  factory Slot.fromFirestore(DocumentSnapshot doc) {
     try {
-      final data = doc.data() as Map<String, dynamic>?;
+      data = doc.data() as Map<String, dynamic>?;
       if (data == null) {
         throw Exception('Document data is null');
       }
@@ -35,16 +32,18 @@ class Slot {
             : DateTime.parse(endTime.toString()),
         isBooked: isBooked,
       );
-    } catch (e) {
-      // Removed debug print: print('❌ Error parsing slot from Firestore: $e');
-      // Removed debug print: print('📄 Document ID: ${doc.id}');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('❌ Error parsing slot from Firestore: $e');
+      // Removed debug print: debugPrint('📄 Document ID: ${doc.id}');
       rethrow;
     }
   }
+  final DateTime startTime;
+  final DateTime endTime;
+  final bool isBooked;
 }
 
 class SlotWithId extends Slot {
-  final String id;
 
   const SlotWithId({
     required this.id,
@@ -53,8 +52,8 @@ class SlotWithId extends Slot {
     required super.isBooked,
   });
 
-  factory SlotWithId.fromFirestore(final DocumentSnapshot doc) {
-    final slot = Slot.fromFirestore(doc);
+  factory SlotWithId.fromFirestore(DocumentSnapshot doc) {
+    slot = Slot.fromFirestore(doc);
     return SlotWithId(
       id: doc.id,
       startTime: slot.startTime,
@@ -62,18 +61,17 @@ class SlotWithId extends Slot {
       isBooked: slot.isBooked,
     );
   }
+  final String id;
 
   SlotWithId copyWith({
     final String? id,
     final DateTime? startTime,
     final DateTime? endTime,
     final bool? isBooked,
-  }) {
-    return SlotWithId(
+  }) => SlotWithId(
       id: id ?? this.id,
       startTime: startTime ?? this.startTime,
       endTime: endTime ?? this.endTime,
       isBooked: isBooked ?? this.isBooked,
     );
-  }
 }

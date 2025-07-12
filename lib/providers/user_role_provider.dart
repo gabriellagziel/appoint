@@ -1,7 +1,7 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/user_role.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final userRoleProvider = Provider<UserRole>((final ref) {
-  // TODO: Replace with Firebase user role from authentication service
+userRoleProvider = Provider<UserRole>((final ref) {
+  // TODO(username): Replace with Firebase user role from authentication service
   return UserRole.business;
 });

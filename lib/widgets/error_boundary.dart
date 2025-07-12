@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ErrorBoundary extends StatefulWidget {
+  const ErrorBoundary({required this.child, super.key});
   final Widget child;
-  const ErrorBoundary({super.key, required this.child});
 
   @override
   State<ErrorBoundary> createState() => _ErrorBoundaryState();
@@ -14,7 +14,7 @@ class _ErrorBoundaryState extends State<ErrorBoundary> {
   @override
   void initState() {
     super.initState();
-    FlutterError.onError = (final FlutterErrorDetails details) {
+    FlutterError.onError = (FlutterErrorDetails details) {
       setState(() {
         _error = details.exception;
       });
@@ -23,7 +23,7 @@ class _ErrorBoundaryState extends State<ErrorBoundary> {
   }
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     if (_error != null) {
       return MaterialApp(
         home: Scaffold(
@@ -35,10 +35,10 @@ class _ErrorBoundaryState extends State<ErrorBoundary> {
                 const SizedBox(height: 16),
                 const Text('Something went wrong',
                     style:
-                        TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                        TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
                 const SizedBox(height: 8),
                 Text(_error.toString(),
-                    style: const TextStyle(color: Colors.grey)),
+                    style: const TextStyle(color: Colors.grey),),
                 const SizedBox(height: 16),
                 ElevatedButton(
                   onPressed: () => setState(() {

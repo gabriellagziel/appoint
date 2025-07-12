@@ -1,20 +1,19 @@
+import 'package:appoint/providers/ambassador_record_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
-
-import 'package:appoint/providers/ambassador_record_provider.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final ambassadorAsync = ref.watch(ambassadorRecordProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    ambassadorAsync = ref.watch(ambassadorRecordProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Settings')),
       body: ambassadorAsync.when(
-        data: (final ambassador) {
+        data: (ambassador) {
           if (ambassador == null) {
             return Center(
               child: ElevatedButton(
@@ -42,7 +41,8 @@ class SettingsScreen extends ConsumerWidget {
                   onPressed: () {
                     SharePlus.instance.share(
                       ShareParams(
-                        text: 'Join me on Appoint! Use my ambassador link: ${ambassador.shareLink}',
+                        text:
+                            'Join me on Appoint! Use my ambassador link: ${ambassador.shareLink}',
                         subject: 'Appoint - Ambassador Link',
                       ),
                     );
@@ -54,7 +54,7 @@ class SettingsScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final e, final _) => Center(child: Text('Error: $e')),
+        error: (e, final _) => Center(child: Text('Error: $e')),
       ),
     );
   }

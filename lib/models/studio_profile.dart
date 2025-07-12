@@ -19,6 +19,6 @@ class StudioProfile with _$StudioProfile {
     final DateTime? updatedAt,
   }) = _StudioProfile;
 
-  factory StudioProfile.fromJson(final Map<String, dynamic> json) =>
+  factory StudioProfile.fromJson(Map<String, dynamic> json) =>
       _$StudioProfileFromJson(json);
 }

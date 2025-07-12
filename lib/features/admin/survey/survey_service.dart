@@ -6,18 +6,17 @@ class SurveyService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   // Fetch surveys from Firestore
-  Stream<List<Map<String, dynamic>>> fetchSurveys() {
-    return _firestore
+  Stream<List<Map<String, dynamic>>> fetchSurveys() => _firestore
         .collection('surveys')
         .where('status', isEqualTo: 'active')
         .snapshots()
-        .map((final snapshot) =>
-            snapshot.docs.map((final doc) => {'id': doc.id, ...doc.data()}).toList());
-  }
+        .map((snapshot) => snapshot.docs
+            .map((doc) => {'id': doc.id, ...doc.data()})
+            .toList(),);
 
   // Submit survey response
   Future<void> submitResponse(
-      final String surveyId, final Map<String, dynamic> response) async {
+      String surveyId, final Map<String, dynamic> response,) async {
     final user = _auth.currentUser;
     if (user == null) throw Exception('User not authenticated');
 
@@ -38,8 +37,8 @@ class SurveyService {
   }
 
   // Create new survey
-  Future<String> createSurvey(final Map<String, dynamic> surveyData) async {
-    final docRef = await _firestore.collection('surveys').add({
+  Future<String> createSurvey(Map<String, dynamic> surveyData) async {
+    docRef = await _firestore.collection('surveys').add({
       ...surveyData,
       'createdAt': FieldValue.serverTimestamp(),
       'status': 'active',
@@ -49,7 +48,7 @@ class SurveyService {
 
   // Update survey
   Future<void> updateSurvey(
-      final String surveyId, final Map<String, dynamic> updates) async {
+      String surveyId, final Map<String, dynamic> updates,) async {
     await _firestore.collection('surveys').doc(surveyId).update({
       ...updates,
       'updatedAt': FieldValue.serverTimestamp(),
@@ -57,16 +56,16 @@ class SurveyService {
   }
 
   // Delete survey
-  Future<void> deleteSurvey(final String surveyId) async {
+  Future<void> deleteSurvey(String surveyId) async {
     await _firestore.collection('surveys').doc(surveyId).delete();
   }
 
   // Grant reward for survey completion
-  Future<void> _grantReward(final String userId, final String surveyId) async {
+  Future<void> _grantReward(String userId, final String surveyId) async {
     // Get survey details to determine reward
     final surveyDoc =
         await _firestore.collection('surveys').doc(surveyId).get();
-    final surveyData = surveyDoc.data();
+    surveyData = surveyDoc.data();
 
     if (surveyData != null && surveyData['rewardPoints'] != null) {
       final points = surveyData['rewardPoints'] as int;
@@ -81,13 +80,12 @@ class SurveyService {
   }
 
   // Get survey responses for admin
-  Stream<List<Map<String, dynamic>>> getSurveyResponses(final String surveyId) {
-    return _firestore
+  Stream<List<Map<String, dynamic>>> getSurveyResponses(String surveyId) => _firestore
         .collection('surveys')
         .doc(surveyId)
         .collection('responses')
         .snapshots()
-        .map((final snapshot) =>
-            snapshot.docs.map((final doc) => {'id': doc.id, ...doc.data()}).toList());
-  }
+        .map((snapshot) => snapshot.docs
+            .map((doc) => {'id': doc.id, ...doc.data()})
+            .toList(),);
 }

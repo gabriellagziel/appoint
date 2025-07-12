@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
-
 import 'package:appoint/theme/app_spacing.dart';
 import 'package:appoint/theme/app_text_styles.dart';
+import 'package:flutter/material.dart';
 
 /// Standard loading state with fade in animation.
 class LoadingState extends StatelessWidget {
@@ -10,8 +9,7 @@ class LoadingState extends StatelessWidget {
   final String? message;
 
   @override
-  Widget build(final BuildContext context) {
-    return AnimatedOpacity(
+  Widget build(BuildContext context) => AnimatedOpacity(
       opacity: 1,
       duration: const Duration(milliseconds: 300),
       child: Center(
@@ -27,5 +25,4 @@ class LoadingState extends StatelessWidget {
         ),
       ),
     );
-  }
 }

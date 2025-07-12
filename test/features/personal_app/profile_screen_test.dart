@@ -1,23 +1,28 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/features/personal_app/ui/profile_screen.dart';
+import 'package:appoint/models/user_profile.dart';
 import 'package:appoint/providers/user_profile_provider.dart';
 import 'package:appoint/providers/user_subscription_provider.dart';
-import 'package:appoint/models/user_profile.dart';
-import '../../fake_firebase_setup.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import 'firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+  });
+
   group('ProfileScreen', () {
-    testWidgets('renders profile data and edit button', (final tester) async {
+    testWidgets('renders profile data and edit button', (tester) async {
       const profile = UserProfile(id: '1', name: 'Tester', email: 't@e.com');
 
-      final container = ProviderContainer(overrides: [
-        currentUserProfileProvider.overrideWith((final ref) => Stream.value(profile)),
-        userSubscriptionProvider.overrideWith((final ref) async => true),
-      ]);
+      final container = ProviderContainer(
+        overrides: [
+          currentUserProfileProvider
+              .overrideWith((ref) => Stream.value(profile)),
+          userSubscriptionProvider.overrideWith((ref) async => true),
+        ],
+      );
 
       await tester.pumpWidget(
         UncontrolledProviderScope(

@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 /// Can wrap any widget that needs a pressed state animation.
 class TapScaleFeedback extends StatefulWidget {
   const TapScaleFeedback({
-    super.key,
-    required this.child,
+    required this.child, super.key,
     this.onTap,
     this.scale = 0.95,
     this.duration = const Duration(milliseconds: 100),
@@ -23,21 +22,20 @@ class TapScaleFeedback extends StatefulWidget {
 class _TapScaleFeedbackState extends State<TapScaleFeedback> {
   bool _pressed = false;
 
-  void _handleDown(final PointerDownEvent event) {
+  void _handleDown(PointerDownEvent event) {
     setState(() => _pressed = true);
   }
 
-  void _handleUp(final PointerUpEvent event) {
+  void _handleUp(PointerUpEvent event) {
     setState(() => _pressed = false);
   }
 
-  void _handleCancel(final PointerCancelEvent event) {
+  void _handleCancel(PointerCancelEvent event) {
     setState(() => _pressed = false);
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Listener(
+  Widget build(BuildContext context) => Listener(
       onPointerDown: _handleDown,
       onPointerUp: _handleUp,
       onPointerCancel: _handleCancel,
@@ -52,5 +50,4 @@ class _TapScaleFeedbackState extends State<TapScaleFeedback> {
         ),
       ),
     );
-  }
 }
