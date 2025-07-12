@@ -1,11 +1,24 @@
-name: app-oint-marketing
+# app_spec.yaml
+name: appoint-app
+region: fra1
+
 static_sites:
   - name: marketing
-    repo:
+    github:
       repo: "gabriellagziel/appoint"
       branch: main
-    build_command: "npm --prefix marketing install && npm --prefix marketing run build && npm --prefix marketing run export"
+    source_dir: "marketing"
     output_dir: "marketing/out"
     routes:
       - path: /
+
+services:
+  - name: api
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "functions"
+    build_command: "npm install && npm run build"
+    run_command: "npm run start"
  
