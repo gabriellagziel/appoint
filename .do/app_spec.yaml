@@ -1,0 +1,50 @@
+name: appoint-app-v2
+region: fra1
+
+services:
+  - name: api
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "functions"
+    build_command: "npm install && npm run build"
+    run_command: "npm run start"
+    routes:
+      - path: /api
+
+  - name: admin
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "admin"
+    build_command: "npm install && npm run build"
+    run_command: "npm start"
+    output_dir: ".next"
+    routes:
+      - path: /admin
+
+  - name: dashboard
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "dashboard"
+    build_command: "npm install && npm run build"
+    run_command: "npm start"
+    output_dir: ".next"
+    routes:
+      - path: /dashboard
+
+  - name: marketing
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "marketing"
+    build_command: "npm install && npm run build"
+    run_command: "npm start"
+    output_dir: ".next"
+    routes:
+      - path: / 
