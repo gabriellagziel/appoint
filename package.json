@@ -14,9 +14,21 @@
     "localization-ci": "npm run spell-check && flutter gen-l10n && npm run check-translations && npm run gen-todos",
     "setup-hooks": "npm install && husky install && chmod +x .husky/pre-commit"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.dart": [
+      "flutter analyze --write=none --no-fatal-infos --no-fatal-warnings",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "cspell": "^6.31.1",
     "husky": "^8.0.3",
+    "lint-staged": "^16.1.2",
     "markdownlint-cli": "^0.45.0",
     "prettier": "^3.5.3"
   },
