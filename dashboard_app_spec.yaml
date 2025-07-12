@@ -2,7 +2,7 @@ name: app-oint-dashboard
 services:
   - name: dashboard
     github:
-      repo: "<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>"
+      repo: "gabriellagziel/appoint"
       branch: main
       path: "dashboard"
     environment_slug: node-js
@@ -10,5 +10,4 @@ services:
     run_command: "npm run start"
     routes:
       - path: /dashboard
-    domains:
-      - domain: "dashboard.app-oint.com" 
+ 
