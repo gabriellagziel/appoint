@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 
 class CustomErrorWidget extends StatelessWidget {
+
+  const CustomErrorWidget({
+    required this.message, super.key,
+    this.onRetry,
+  });
   final String message;
   final VoidCallback? onRetry;
 
-  const CustomErrorWidget({
-    super.key,
-    required this.message,
-    this.onRetry,
-  });
-
   @override
-  Widget build(final BuildContext context) {
-    return Center(
+  Widget build(BuildContext context) => Center(
       child: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -47,5 +45,4 @@ class CustomErrorWidget extends StatelessWidget {
         ),
       ),
     );
-  }
 }

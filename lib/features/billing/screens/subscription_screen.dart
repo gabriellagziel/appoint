@@ -1,21 +1,16 @@
+import 'package:appoint/services/stripe_service.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-import 'package:appoint/services/stripe_service.dart';
-
 class SubscriptionScreen extends StatefulWidget {
+
+  const SubscriptionScreen({
+    required this.studioId, required this.priceId, required this.planName, required this.price, super.key,
+  });
   final String studioId;
   final String priceId;
   final String planName;
   final double price;
-
-  const SubscriptionScreen({
-    super.key,
-    required this.studioId,
-    required this.priceId,
-    required this.planName,
-    required this.price,
-  });
 
   @override
   State<SubscriptionScreen> createState() => _SubscriptionScreenState();
@@ -33,10 +28,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
     _initializeWebView();
   }
 
-  void _initializeWebView() async {
+  Future<void> _initializeWebView() async {
     try {
       // Create checkout session
-      final sessionData = await StripeService().createCheckoutSession(
+      sessionData = await StripeService().createCheckoutSession(
         studioId: widget.studioId,
         priceId: widget.priceId,
       );
@@ -48,12 +43,12 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         ..setJavaScriptMode(JavaScriptMode.unrestricted)
         ..setNavigationDelegate(
           NavigationDelegate(
-            onPageStarted: (final String url) {
+            onPageStarted: (String url) {
               setState(() {
                 _isLoading = true;
               });
             },
-            onPageFinished: (final String url) {
+            onPageFinished: (String url) {
               setState(() {
                 _isLoading = false;
               });
@@ -68,7 +63,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                 _handleCancelledPayment();
               }
             },
-            onNavigationRequest: (final NavigationRequest request) {
+            onNavigationRequest: (NavigationRequest request) {
               // Handle navigation requests
               if (request.url.contains('session_id=')) {
                 _handleSuccessfulPayment(request.url);
@@ -76,7 +71,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
               }
               return NavigationDecision.navigate;
             },
-            onWebResourceError: (final WebResourceError error) {
+            onWebResourceError: (WebResourceError error) {
               setState(() {
                 _hasError = true;
                 _errorMessage = 'Error loading checkout: ${error.description}';
@@ -86,7 +81,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           ),
         )
         ..loadRequest(Uri.parse(checkoutUrl));
-    } catch (e) {
+    } catch (e) {e) {
       setState(() {
         _hasError = true;
         _errorMessage = 'Failed to initialize checkout: $e';
@@ -95,10 +90,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
     }
   }
 
-  Future<void> _handleSuccessfulPayment(final String url) async {
+  Future<void> _handleSuccessfulPayment(String url) async {
     try {
       // Extract session_id from URL
-      final uri = Uri.parse(url);
+      uri = Uri.parse(url);
       final sessionId = uri.queryParameters['session_id'];
 
       if (sessionId != null) {
@@ -122,7 +117,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           Navigator.of(context).pop(true);
         }
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -147,15 +142,14 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: Text('Subscribe to ${widget.planName}'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         actions: [
           if (_isLoading)
             const Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: EdgeInsets.all(16),
               child: SizedBox(
                 width: 20,
                 height: 20,
@@ -205,12 +199,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         ],
       ),
     );
-  }
 
-  Widget _buildErrorWidget() {
-    return Center(
+  Widget _buildErrorWidget() => Center(
       child: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(24),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -250,5 +242,4 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         ),
       ),
     );
-  }
 }

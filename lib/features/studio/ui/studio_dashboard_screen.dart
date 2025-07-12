@@ -5,8 +5,7 @@ class StudioDashboardScreen extends StatelessWidget {
   const StudioDashboardScreen({super.key});
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Studio Dashboard'),
       ),
@@ -14,5 +13,4 @@ class StudioDashboardScreen extends StatelessWidget {
         child: Text('Welcome to your studio'),
       ),
     );
-  }
 }

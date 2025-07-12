@@ -10,6 +10,6 @@ class StaffMember with _$StaffMember {
     final String? photoUrl,
   }) = _StaffMember;
 
-  factory StaffMember.fromJson(final Map<String, dynamic> json) =>
+  factory StaffMember.fromJson(Map<String, dynamic> json) =>
       _$StaffMemberFromJson(json);
 }

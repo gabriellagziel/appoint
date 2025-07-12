@@ -1,17 +1,17 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:intl/intl.dart';
 import 'package:appoint/features/studio/models/slot.dart';
 import 'package:appoint/features/studio/providers/staff_availability_provider.dart';
 import 'package:appoint/features/studio/screens/slot_dialog.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
 
 class StaffAvailabilityScreen extends ConsumerWidget {
-  static const routeName = '/studio/staff-availability';
   const StaffAvailabilityScreen({super.key});
+  static const routeName = '/studio/staff-availability';
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final asyncSlots = ref.watch(staffSlotsWithIdProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    asyncSlots = ref.watch(staffSlotsWithIdProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -20,7 +20,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
       ),
       body: asyncSlots.when(
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (final e, final _) => Center(
+        error: (e, final _) => Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -35,7 +35,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
             ],
           ),
         ),
-        data: (final slots) {
+        data: (slots) {
           if (slots.isEmpty) {
             return const Center(
               child: Column(
@@ -60,10 +60,10 @@ class StaffAvailabilityScreen extends ConsumerWidget {
           return ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: slots.length,
-            itemBuilder: (final context, final index) {
+            itemBuilder: (context, final index) {
               final slot = slots[index];
-              final dateFormat = DateFormat('MMM dd, yyyy');
-              final timeFormat = DateFormat('HH:mm');
+              dateFormat = DateFormat('MMM dd, yyyy');
+              timeFormat = DateFormat('HH:mm');
 
               return Card(
                 margin: const EdgeInsets.only(bottom: 12),
@@ -149,21 +149,21 @@ class StaffAvailabilityScreen extends ConsumerWidget {
   }
 
   void _showSlotDialog(final BuildContext context, final WidgetRef ref,
-      {final SlotWithId? slot}) {
+      {SlotWithId? slot,}) {
     showDialog(
       context: context,
-      builder: (final context) => SlotDialog(slot: slot),
+      builder: (context) => SlotDialog(slot: slot),
     );
   }
 
   void _confirmDelete(
-      final BuildContext context, final WidgetRef ref, final String slotId) {
+      BuildContext context, final WidgetRef ref, final String slotId,) {
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Delete Slot'),
         content: const Text(
-            'Are you sure you want to delete this availability slot?'),
+            'Are you sure you want to delete this availability slot?',),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
@@ -183,9 +183,9 @@ class StaffAvailabilityScreen extends ConsumerWidget {
   }
 
   Future<void> _deleteSlot(final BuildContext context, final WidgetRef ref,
-      final String slotId) async {
+      String slotId,) async {
     try {
-      final service = ref.read(staffAvailabilityServiceProvider);
+      service = ref.read(staffAvailabilityServiceProvider);
       await service.deleteSlot(slotId);
 
       if (context.mounted) {
@@ -196,7 +196,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
           ),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

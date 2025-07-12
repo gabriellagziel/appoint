@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 
 /// Simple centered loading spinner with optional text.
 class LoadingSpinner extends StatelessWidget {
+
+  const LoadingSpinner({super.key, this.text = 'Loading...'});
   /// Message shown below the spinner.
   final String text;
 
-  const LoadingSpinner({super.key, this.text = 'Loading...'});
-
   @override
-  Widget build(final BuildContext context) {
-    return Center(
+  Widget build(BuildContext context) => Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -19,5 +18,4 @@ class LoadingSpinner extends StatelessWidget {
         ],
       ),
     );
-  }
 }

@@ -1,14 +1,6 @@
 import 'package:appoint/utils/datetime_converter.dart';
 
 class PersonalAppointment {
-  final String id;
-  final String userId;
-  final String title;
-  final String description;
-  @DateTimeConverter()
-  final DateTime startTime;
-  @DateTimeConverter()
-  final DateTime endTime;
 
   PersonalAppointment({
     required this.id,
@@ -19,8 +11,7 @@ class PersonalAppointment {
     required this.endTime,
   });
 
-  factory PersonalAppointment.fromJson(final Map<String, dynamic> json) {
-    return PersonalAppointment(
+  factory PersonalAppointment.fromJson(Map<String, dynamic> json) => PersonalAppointment(
       id: json['id'] as String,
       userId: json['userId'] as String,
       title: json['title'] as String,
@@ -28,7 +19,14 @@ class PersonalAppointment {
       startTime: DateTime.parse(json['startTime'] as String),
       endTime: DateTime.parse(json['endTime'] as String),
     );
-  }
+  final String id;
+  final String userId;
+  final String title;
+  final String description;
+  @DateTimeConverter()
+  final DateTime startTime;
+  @DateTimeConverter()
+  final DateTime endTime;
 
   Map<String, dynamic> toJson() => {
         'id': id,

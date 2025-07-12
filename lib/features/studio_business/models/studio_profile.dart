@@ -4,6 +4,23 @@ part 'studio_profile.g.dart';
 
 @JsonSerializable()
 class StudioProfile {
+
+  StudioProfile({
+    required this.id,
+    required this.name,
+    required this.description,
+    required this.address,
+    required this.phone,
+    required this.email,
+    required this.services, required this.equipment, required this.studioHours, required this.createdAt, required this.updatedAt, this.website = '',
+    this.logoUrl,
+    this.coverImageUrl,
+    this.photos = const [],
+    this.isActive = true,
+  });
+
+  factory StudioProfile.fromJson(Map<String, dynamic> json) =>
+      _$StudioProfileFromJson(json);
   final String id;
   final String name;
   final String description;
@@ -20,28 +37,6 @@ class StudioProfile {
   final bool isActive;
   final DateTime createdAt;
   final DateTime updatedAt;
-
-  StudioProfile({
-    required this.id,
-    required this.name,
-    required this.description,
-    required this.address,
-    required this.phone,
-    required this.email,
-    this.website = '',
-    required this.services,
-    required this.equipment,
-    required this.studioHours,
-    this.logoUrl,
-    this.coverImageUrl,
-    this.photos = const [],
-    this.isActive = true,
-    required this.createdAt,
-    required this.updatedAt,
-  });
-
-  factory StudioProfile.fromJson(final Map<String, dynamic> json) =>
-      _$StudioProfileFromJson(json);
 
   Map<String, dynamic> toJson() => _$StudioProfileToJson(this);
 
@@ -62,8 +57,7 @@ class StudioProfile {
     final bool? isActive,
     final DateTime? createdAt,
     final DateTime? updatedAt,
-  }) {
-    return StudioProfile(
+  }) => StudioProfile(
       id: id ?? this.id,
       name: name ?? this.name,
       description: description ?? this.description,
@@ -81,5 +75,4 @@ class StudioProfile {
       createdAt: createdAt ?? this.createdAt,
       updatedAt: updatedAt ?? this.updatedAt,
     );
-  }
 }

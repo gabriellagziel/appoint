@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
 class BookingConfirmationSheet extends StatelessWidget {
-  final VoidCallback onConfirm;
-  final VoidCallback onCancel;
-  final String summaryText;
 
   const BookingConfirmationSheet({
     required this.onConfirm,
@@ -11,16 +8,19 @@ class BookingConfirmationSheet extends StatelessWidget {
     required this.summaryText,
     super.key,
   });
+  final VoidCallback onConfirm;
+  final VoidCallback onCancel;
+  final String summaryText;
 
   @override
-  Widget build(final BuildContext context) {
-    return Padding(
+  Widget build(BuildContext context) => Padding(
       padding: const EdgeInsets.all(24),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Confirm Appointment', style: Theme.of(context).textTheme.titleLarge),
+          Text('Confirm Appointment',
+              style: Theme.of(context).textTheme.titleLarge,),
           const SizedBox(height: 12),
           Text(summaryText),
           const SizedBox(height: 24),
@@ -44,5 +44,4 @@ class BookingConfirmationSheet extends StatelessWidget {
         ],
       ),
     );
-  }
 }

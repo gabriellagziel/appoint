@@ -1,9 +1,9 @@
+import 'package:appoint/features/family/widgets/otp_entry_modal.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/providers/family_provider.dart';
+import 'package:appoint/providers/otp_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/otp_provider.dart';
-import 'package:appoint/providers/family_provider.dart';
-import 'package:appoint/providers/auth_provider.dart';
-import 'package:appoint/features/family/widgets/otp_entry_modal.dart';
 
 class InviteChildScreen extends ConsumerStatefulWidget {
   const InviteChildScreen({super.key});
@@ -13,7 +13,7 @@ class InviteChildScreen extends ConsumerStatefulWidget {
 }
 
 class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
-  final _contactController = TextEditingController();
+  _contactController = TextEditingController();
 
   @override
   void dispose() {
@@ -22,13 +22,13 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
   }
 
   Future<void> _onSendInvite() async {
-    final authState = ref.read(authStateProvider);
+    authState = ref.read(authStateProvider);
     final user = authState.maybeWhen(
-      data: (final user) => user,
+      data: (user) => user,
       orElse: () => null,
     );
     final parentId = user?.uid;
-    final contact = _contactController.text.trim();
+    contact = _contactController.text.trim();
     if (contact.isEmpty || parentId == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Please enter a valid email or phone')),
@@ -43,18 +43,17 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
     if (mounted) {
       showDialog(
         context: context,
-        builder: (final _) =>
+        builder: (_) =>
             OtpEntryModal(parentId: parentId, childContact: contact),
       );
     }
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(title: const Text('Invite Child')),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16),
         child: Column(
           children: [
             TextField(
@@ -71,5 +70,4 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
         ),
       ),
     );
-  }
 }

@@ -1,12 +1,14 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/models/appointment.dart';
 import 'package:appoint/models/contact.dart';
 import 'package:appoint/models/invite.dart';
-import '../fake_firebase_setup.dart';
+import 'package:flutter_test/flutter_test.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import '../firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
   group('Appointment Model', () {
     test('should correctly create a scheduled appointment', () {
@@ -14,15 +16,14 @@ Future<void> main() async {
         id: 'appointment-123',
         creatorId: 'user-1',
         inviteeId: 'user-2',
-        scheduledAt: DateTime(2025, 6, 18, 10, 0),
+        scheduledAt: DateTime(2025, 6, 18, 10),
         type: AppointmentType.scheduled,
-        status: InviteStatus.pending,
       );
 
       expect(appointment.id, 'appointment-123');
       expect(appointment.creatorId, 'user-1');
       expect(appointment.inviteeId, 'user-2');
-      expect(appointment.scheduledAt, DateTime(2025, 6, 18, 10, 0));
+      expect(appointment.scheduledAt, DateTime(2025, 6, 18, 10));
       expect(appointment.type, AppointmentType.scheduled);
       expect(appointment.status, InviteStatus.pending);
       expect(appointment.callRequestId, isNull);
@@ -50,13 +51,12 @@ Future<void> main() async {
         id: 'appointment-123',
         creatorId: 'user-1',
         inviteeId: 'user-2',
-        scheduledAt: DateTime(2025, 6, 18, 10, 0),
+        scheduledAt: DateTime(2025, 6, 18, 10),
         type: AppointmentType.scheduled,
-        status: InviteStatus.pending,
       );
 
-      final json = appointment.toJson();
-      final newAppointment = Appointment.fromJson(json);
+      json = appointment.toJson();
+      newAppointment = Appointment.fromJson(json);
 
       expect(newAppointment.id, appointment.id);
       expect(newAppointment.creatorId, appointment.creatorId);
@@ -78,10 +78,9 @@ Future<void> main() async {
         id: 'appointment-123',
         creatorId: 'user-1',
         inviteeId: 'user-2',
-        scheduledAt: DateTime(2025, 6, 18, 10, 0),
+        scheduledAt: DateTime(2025, 6, 18, 10),
         type: AppointmentType.scheduled,
         inviteeContact: contact,
-        status: InviteStatus.pending,
       );
 
       expect(appointment.inviteeContact, contact);
@@ -93,16 +92,15 @@ Future<void> main() async {
         id: 'appointment-1',
         creatorId: 'user-1',
         inviteeId: 'user-2',
-        scheduledAt: DateTime(2025, 6, 18, 10, 0),
+        scheduledAt: DateTime(2025, 6, 18, 10),
         type: AppointmentType.scheduled,
-        status: InviteStatus.pending,
       );
 
       final acceptedAppointment = Appointment(
         id: 'appointment-2',
         creatorId: 'user-1',
         inviteeId: 'user-2',
-        scheduledAt: DateTime(2025, 6, 18, 10, 0),
+        scheduledAt: DateTime(2025, 6, 18, 10),
         type: AppointmentType.scheduled,
         status: InviteStatus.accepted,
       );
@@ -111,7 +109,7 @@ Future<void> main() async {
         id: 'appointment-3',
         creatorId: 'user-1',
         inviteeId: 'user-2',
-        scheduledAt: DateTime(2025, 6, 18, 10, 0),
+        scheduledAt: DateTime(2025, 6, 18, 10),
         type: AppointmentType.scheduled,
         status: InviteStatus.declined,
       );
@@ -126,18 +124,16 @@ Future<void> main() async {
         id: 'appointment-1',
         creatorId: 'user-1',
         inviteeId: 'user-2',
-        scheduledAt: DateTime(2025, 6, 18, 10, 0),
+        scheduledAt: DateTime(2025, 6, 18, 10),
         type: AppointmentType.scheduled,
-        status: InviteStatus.pending,
       );
 
       final openCallAppointment = Appointment(
         id: 'appointment-2',
         creatorId: 'user-1',
         inviteeId: 'user-2',
-        scheduledAt: DateTime(2025, 6, 18, 10, 0),
+        scheduledAt: DateTime(2025, 6, 18, 10),
         type: AppointmentType.openCall,
-        status: InviteStatus.pending,
       );
 
       expect(scheduledAppointment.type, AppointmentType.scheduled);

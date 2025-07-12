@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AppointmentRequestsScreen extends ConsumerWidget {
   const AppointmentRequestsScreen({super.key});
 
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
+  Widget build(BuildContext context, final WidgetRef ref) {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
       return const Scaffold(
@@ -23,7 +23,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
             .where('businessProfileId', isEqualTo: user.uid)
             .orderBy('createdAt', descending: true)
             .snapshots(),
-        builder: (final context, final snapshot) {
+        builder: (context, final snapshot) {
           if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           }
@@ -43,8 +43,8 @@ class AppointmentRequestsScreen extends ConsumerWidget {
           return ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: requests.length,
-            itemBuilder: (final context, final index) {
-              final request = requests[index].data() as Map<String, dynamic>;
+            itemBuilder: (context, final index) {
+              request = requests[index].data()! as Map<String, dynamic>;
               final requestId = requests[index].id;
 
               return Card(
@@ -69,7 +69,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
                     ],
                   ),
                   trailing: PopupMenuButton(
-                    itemBuilder: (final context) => [
+                    itemBuilder: (context) => [
                       const PopupMenuItem(
                         value: 'accept',
                         child: Text('Accept'),
@@ -83,7 +83,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
                         child: Text('Delete'),
                       ),
                     ],
-                    onSelected: (final value) {
+                    onSelected: (value) {
                       if (value == 'accept') {
                         _updateRequestStatus(requestId, 'accepted');
                       } else if (value == 'reject') {
@@ -102,7 +102,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
     );
   }
 
-  Color _getStatusColor(final String? status) {
+  Color _getStatusColor(String? status) {
     switch (status) {
       case 'accepted':
         return Colors.green;
@@ -113,7 +113,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
     }
   }
 
-  IconData _getStatusIcon(final String? status) {
+  IconData _getStatusIcon(String? status) {
     switch (status) {
       case 'accepted':
         return Icons.check;
@@ -124,7 +124,8 @@ class AppointmentRequestsScreen extends ConsumerWidget {
     }
   }
 
-  Future<void> _updateRequestStatus(final String requestId, final String status) async {
+  Future<void> _updateRequestStatus(
+      String requestId, final String status,) async {
     try {
       await FirebaseFirestore.instance
           .collection('appointmentRequests')
@@ -133,19 +134,19 @@ class AppointmentRequestsScreen extends ConsumerWidget {
         'status': status,
         'updatedAt': DateTime.now().toIso8601String(),
       });
-    } catch (e) {
-      // Removed debug print: print('Error updating request: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error updating request: $e');
     }
   }
 
-  Future<void> _deleteRequest(final String requestId) async {
+  Future<void> _deleteRequest(String requestId) async {
     try {
       await FirebaseFirestore.instance
           .collection('appointmentRequests')
           .doc(requestId)
           .delete();
-    } catch (e) {
-      // Removed debug print: print('Error deleting request: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error deleting request: $e');
     }
   }
 }

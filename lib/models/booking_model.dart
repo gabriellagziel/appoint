@@ -14,6 +14,6 @@ class BookingModel with _$BookingModel {
     required final DateTime endTime,
   }) = _BookingModel;
 
-  factory BookingModel.fromJson(final Map<String, dynamic> json) =>
+  factory BookingModel.fromJson(Map<String, dynamic> json) =>
       _$BookingModelFromJson(json);
 }

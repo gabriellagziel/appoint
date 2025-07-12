@@ -1,11 +1,13 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:appoint/services/rewards_service.dart';
-import '../fake_firebase_setup.dart';
-import '../fake_firebase_firestore.dart';
+import 'package:flutter_test/flutter_test.dart';
 
-Future<void> main() async {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  await initializeTestFirebase();
+import '../fake_firebase_firestore.dart';
+import '../firebase_test_helper.dart';
+
+void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+  });
 
   group('RewardsService', () {
     late RewardsService service;
@@ -31,7 +33,7 @@ Future<void> main() async {
       await service.addReferralSignupPoints(userId);
       await service.addReferralSignupPoints(userId);
 
-      final points = await service.getPoints(userId);
+      points = await service.getPoints(userId);
       expect(points, RewardsService.referralSignupPoints * 2);
     });
   });

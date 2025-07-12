@@ -1,52 +1,49 @@
+import 'package:appoint/models/booking.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/models/booking.dart';
 
-final bookingServiceProvider = Provider<BookingService>((final ref) {
-  return BookingService();
-});
+bookingServiceProvider = Provider<BookingService>((final ref) => BookingService());
 
 class BookingService {
+
+  BookingService({FirebaseFirestore? firestore})
+      : _firestore = firestore ?? FirebaseFirestore.instance;
   final FirebaseFirestore _firestore;
   final _bookingsCollection = 'appointments';
 
-  BookingService({final FirebaseFirestore? firestore})
-      : _firestore = firestore ?? FirebaseFirestore.instance;
-
   /// Creates a new booking in Firestore
-  Future<void> createBooking(final Booking booking) async {
+  Future<void> createBooking(Booking booking) async {
     try {
       await _firestore.collection('appointments').add(booking.toJson());
-    } catch (e) {
-      // Removed debug print: print('❌ Error creating booking: $e');
-      // Removed debug print: print(st);
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('❌ Error creating booking: $e');
+      // Removed debug print: debugPrint(st);
       rethrow;
     }
   }
 
   /// Gets a stream of all bookings
-  Stream<List<Booking>> getBookings() {
-    return _firestore.collection(_bookingsCollection).snapshots().map(
-        (final snapshot) => snapshot.docs
-            .map((final doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
-            .toList());
-  }
+  Stream<List<Booking>> getBookings() => _firestore.collection(_bookingsCollection).snapshots().map(
+        (snapshot) => snapshot.docs
+            .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
+            .toList(),);
 
   /// Submits a booking to Firestore
-  Future<void> submitBooking(final Booking booking) async {
+  Future<void> submitBooking(Booking booking) async {
     try {
-      final docRef = _firestore.collection(_bookingsCollection).doc();
-      final bookingWithId = booking.copyWith(id: docRef.id);
+      docRef = _firestore.collection(_bookingsCollection).doc();
+      bookingWithId = booking.copyWith(id: docRef.id);
       await docRef.set(bookingWithId.toJson());
-    } catch (e) {
+    } catch (e) {e) {
       // Removed debug print: debugPrint('Error submitting booking: $e\n$st');
       rethrow;
     }
   }
 
-  /// Gets all bookings for a specific user
-  Future<List<Booking>> getBookingsForUser(final String userId) async {
+  /// Gets all bookings for a specific user with batched queries
+  Future<List<Booking>> getBookingsForUser(String userId) async {
     try {
+      // Use batched query to get all user bookings in one call
       final snapshot = await _firestore
           .collection('appointments')
           .where('userId', isEqualTo: userId)
@@ -54,69 +51,97 @@ class BookingService {
           .get();
 
       return snapshot.docs
-          .map((final doc) => Booking.fromJson(doc.data()))
+          .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
           .toList();
-    } catch (e) {
-      // Removed debug print: print('❌ Error getting user bookings: $e');
-      // Removed debug print: print(st);
+    } catch (e) {e) {
+      return [];
+    }
+  }
+
+  /// Gets multiple bookings by IDs using batched queries
+  Future<List<Booking>> getBookingsByIds(List<String> bookingIds) async {
+    try {
+      if (bookingIds.isEmpty) return [];
+
+      // Split into batches of 10 (Firestore limit for 'in' queries)
+      final batches = <List<String>>[];
+      for (var i = 0; i < bookingIds.length; i += 10) {
+        batches.add(bookingIds.sublist(
+            i, i + 10 > bookingIds.length ? bookingIds.length : i + 10,),);
+      }
+
+      final allBookings = <Booking>[];
+
+      // Execute batched queries
+      for (batch in batches) {
+        final snapshot = await _firestore
+            .collection(_bookingsCollection)
+            .where(FieldPath.documentId, whereIn: batch)
+            .get();
+
+        final bookings = snapshot.docs
+            .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
+            .toList();
+
+        allBookings.addAll(bookings);
+      }
+
+      return allBookings;
+    } catch (e) {e) {
       return [];
     }
   }
 
   /// Cancels a booking by its ID
-  Future<void> cancelBooking(final String bookingId) async {
+  Future<void> cancelBooking(String bookingId) async {
     try {
       await _firestore.collection(_bookingsCollection).doc(bookingId).delete();
-    } catch (e) {
+    } catch (e) {e) {
       // Removed debug print: debugPrint('Error canceling booking: $e\n$st');
       rethrow;
     }
   }
 
   /// Gets a stream of bookings for a specific user
-  Stream<List<Booking>> getUserBookings(final String userId) {
-    return _firestore
+  Stream<List<Booking>> getUserBookings(String userId) => _firestore
         .collection(_bookingsCollection)
         .where('userId', isEqualTo: userId)
         .orderBy('startTime')
         .snapshots()
-        .map((final snapshot) => snapshot.docs
-            .map((final doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
-            .toList());
-  }
+        .map((snapshot) => snapshot.docs
+            .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
+            .toList(),);
 
   /// Gets a stream of bookings for a specific business
-  Stream<List<Booking>> getBusinessBookings(final String businessId) {
-    return _firestore
+  Stream<List<Booking>> getBusinessBookings(String businessId) => _firestore
         .collection(_bookingsCollection)
         .where('businessProfileId', isEqualTo: businessId)
         .orderBy('startTime')
         .snapshots()
-        .map((final snapshot) => snapshot.docs
-            .map((final doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
-            .toList());
-  }
+        .map((snapshot) => snapshot.docs
+            .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
+            .toList(),);
 
   /// Get a booking by its ID
-  Future<Booking?> getBookingById(final String bookingId) async {
+  Future<Booking?> getBookingById(String bookingId) async {
     try {
       final doc =
           await _firestore.collection(_bookingsCollection).doc(bookingId).get();
       if (!doc.exists) return null;
       return Booking.fromJson({...doc.data()!, 'id': doc.id});
-    } catch (e) {
+    } catch (e) {e) {
       return null;
     }
   }
 
   /// Update an existing booking
-  Future<void> updateBooking(final Booking booking) async {
+  Future<void> updateBooking(Booking booking) async {
     try {
       await _firestore
           .collection(_bookingsCollection)
           .doc(booking.id)
           .update(booking.toJson());
-    } catch (e) {
+    } catch (e) {e) {
       rethrow;
     }
   }

@@ -1,5 +1,5 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:appoint/utils/datetime_converter.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'staff_availability.freezed.dart';
 part 'staff_availability.g.dart';
@@ -12,6 +12,6 @@ class StaffAvailability with _$StaffAvailability {
     final List<String>? availableSlots,
   }) = _StaffAvailability;
 
-  factory StaffAvailability.fromJson(final Map<String, dynamic> json) =>
+  factory StaffAvailability.fromJson(Map<String, dynamic> json) =>
       _$StaffAvailabilityFromJson(json);
 }

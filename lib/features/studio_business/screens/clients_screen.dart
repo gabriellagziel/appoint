@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ClientsScreen extends ConsumerStatefulWidget {
   const ClientsScreen({super.key});
@@ -11,10 +11,10 @@ class ClientsScreen extends ConsumerStatefulWidget {
 }
 
 class _ClientsScreenState extends ConsumerState<ClientsScreen> {
-  final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
-  final _emailController = TextEditingController();
-  final _phoneController = TextEditingController();
+  _formKey = GlobalKey<FormState>();
+  _nameController = TextEditingController();
+  _emailController = TextEditingController();
+  _phoneController = TextEditingController();
   bool _isAdding = false;
 
   @override
@@ -26,7 +26,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
+  Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) {
       return const Scaffold(
@@ -49,7 +49,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
             .collection('clients')
             .where('businessProfileId', isEqualTo: user.uid)
             .snapshots(),
-        builder: (final context, final snapshot) {
+        builder: (context, final snapshot) {
           if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           }
@@ -69,8 +69,8 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
           return ListView.builder(
             padding: const EdgeInsets.all(16),
             itemCount: clients.length,
-            itemBuilder: (final context, final index) {
-              final client = clients[index].data() as Map<String, dynamic>;
+            itemBuilder: (context, final index) {
+              client = clients[index].data()! as Map<String, dynamic>;
               final clientId = clients[index].id;
 
               return Card(
@@ -93,7 +93,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
                     ],
                   ),
                   trailing: PopupMenuButton(
-                    itemBuilder: (final context) => [
+                    itemBuilder: (context) => [
                       const PopupMenuItem(
                         value: 'edit',
                         child: Text('Edit'),
@@ -103,7 +103,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
                         child: Text('Delete'),
                       ),
                     ],
-                    onSelected: (final value) {
+                    onSelected: (value) {
                       if (value == 'edit') {
                         _showEditClientDialog(context, clientId, client);
                       } else if (value == 'delete') {
@@ -120,14 +120,14 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
     );
   }
 
-  void _showAddClientDialog(final BuildContext context) {
+  void _showAddClientDialog(BuildContext context) {
     _nameController.clear();
     _emailController.clear();
     _phoneController.clear();
 
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Add New Client'),
         content: Form(
           key: _formKey,
@@ -137,7 +137,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
               TextFormField(
                 controller: _nameController,
                 decoration: const InputDecoration(labelText: 'Name'),
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter a name';
                   }
@@ -173,15 +173,15 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
     );
   }
 
-  void _showEditClientDialog(
-      final BuildContext context, final String clientId, final Map<String, dynamic> client) {
+  void _showEditClientDialog(final BuildContext context, final String clientId,
+      Map<String, dynamic> client,) {
     _nameController.text = client['name'] ?? '';
     _emailController.text = client['email'] ?? '';
     _phoneController.text = client['phone'] ?? '';
 
     showDialog(
       context: context,
-      builder: (final context) => AlertDialog(
+      builder: (context) => AlertDialog(
         title: const Text('Edit Client'),
         content: Form(
           key: _formKey,
@@ -191,7 +191,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
               TextFormField(
                 controller: _nameController,
                 decoration: const InputDecoration(labelText: 'Name'),
-                validator: (final value) {
+                validator: (value) {
                   if (value == null || value.isEmpty) {
                     return 'Please enter a name';
                   }
@@ -258,7 +258,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
           const SnackBar(content: Text('Client added successfully!')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -271,7 +271,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
     }
   }
 
-  Future<void> _updateClient(final String clientId) async {
+  Future<void> _updateClient(String clientId) async {
     if (!_formKey.currentState!.validate()) {
       return;
     }
@@ -299,7 +299,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
           const SnackBar(content: Text('Client updated successfully!')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -312,7 +312,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
     }
   }
 
-  Future<void> _deleteClient(final String clientId) async {
+  Future<void> _deleteClient(String clientId) async {
     try {
       await FirebaseFirestore.instance
           .collection('clients')
@@ -324,7 +324,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
           const SnackBar(content: Text('Client deleted successfully!')),
         );
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),

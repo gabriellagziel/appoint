@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:appoint/services/stripe_service.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 
 class SubscriptionManagementScreen extends StatefulWidget {
   const SubscriptionManagementScreen({super.key});
@@ -12,7 +12,7 @@ class SubscriptionManagementScreen extends StatefulWidget {
 
 class _SubscriptionManagementScreenState
     extends State<SubscriptionManagementScreen> {
-  final StripeService _stripeService = StripeService();
+  StripeService _stripeService = StripeService();
   bool _isLoading = true;
   Map<String, dynamic>? _subscriptionDetails;
   String? _error;
@@ -34,12 +34,12 @@ class _SubscriptionManagementScreenState
         return;
       }
 
-      final details = await _stripeService.getSubscriptionDetails(user.uid);
+      details = await _stripeService.getSubscriptionDetails(user.uid);
       setState(() {
         _subscriptionDetails = details;
         _isLoading = false;
       });
-    } catch (e) {
+    } catch (e) {e) {
       setState(() {
         _error = 'Failed to load subscription details: $e';
         _isLoading = false;
@@ -54,7 +54,7 @@ class _SubscriptionManagementScreenState
 
       final confirmed = await showDialog<bool>(
         context: context,
-        builder: (final context) => AlertDialog(
+        builder: (context) => AlertDialog(
           title: const Text('Cancel Subscription'),
           content: const Text(
             'Are you sure you want to cancel your subscription? '
@@ -77,7 +77,7 @@ class _SubscriptionManagementScreenState
       if (confirmed == true) {
         setState(() => _isLoading = true);
 
-        final success = await _stripeService.cancelSubscription(user.uid);
+        success = await _stripeService.cancelSubscription(user.uid);
 
         if (success) {
           if (mounted) {
@@ -100,7 +100,7 @@ class _SubscriptionManagementScreenState
           }
         }
       }
-    } catch (e) {
+    } catch (e) {e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -115,8 +115,7 @@ class _SubscriptionManagementScreenState
   }
 
   @override
-  Widget build(final BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Subscription Management'),
         backgroundColor: Colors.white,
@@ -129,12 +128,10 @@ class _SubscriptionManagementScreenState
               ? _buildErrorWidget()
               : _buildSubscriptionWidget(),
     );
-  }
 
-  Widget _buildErrorWidget() {
-    return Center(
+  Widget _buildErrorWidget() => Center(
       child: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(24),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -159,7 +156,6 @@ class _SubscriptionManagementScreenState
         ),
       ),
     );
-  }
 
   Widget _buildSubscriptionWidget() {
     final status = _subscriptionDetails?['status'] ?? 'inactive';
@@ -167,13 +163,13 @@ class _SubscriptionManagementScreenState
     final lastPaymentDate = _subscriptionDetails?['lastPaymentDate'];
 
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Card(
             child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -206,7 +202,7 @@ class _SubscriptionManagementScreenState
           if (subscriptionId != null) ...[
             Card(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -230,7 +226,7 @@ class _SubscriptionManagementScreenState
           if (lastPaymentDate != null) ...[
             Card(
               child: Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

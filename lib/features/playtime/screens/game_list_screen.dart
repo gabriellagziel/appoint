@@ -1,12 +1,11 @@
+import 'package:appoint/config/theme.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/models/playtime_game.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/providers/playtime_provider.dart';
-import 'package:appoint/config/theme.dart';
-import 'package:appoint/models/playtime_game.dart';
-import 'package:appoint/widgets/bottom_sheet_manager.dart';
 
 class GameListScreen extends ConsumerStatefulWidget {
   const GameListScreen({super.key});
@@ -31,8 +30,8 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
   ];
 
   @override
-  Widget build(final BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
+  Widget build(BuildContext context) {
+    l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -55,12 +54,12 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
           // Games List
           Expanded(
             child: Consumer(
-              builder: (final context, final ref, final child) {
-                final gamesAsync = ref.watch(gamesProvider);
+              builder: (context, final ref, final child) {
+                gamesAsync = ref.watch(gamesProvider);
 
                 return gamesAsync.when(
-                  data: (final games) {
-                    final filteredGames = _filterGames(games);
+                  data: (games) {
+                    filteredGames = _filterGames(games);
 
                     if (filteredGames.isEmpty) {
                       return _buildEmptyState(l10n);
@@ -69,7 +68,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                     return ListView.builder(
                       padding: const EdgeInsets.all(16),
                       itemCount: filteredGames.length,
-                      itemBuilder: (final context, final index) {
+                      itemBuilder: (context, final index) {
                         final game = filteredGames[index];
                         return _buildGameCard(context, game, l10n);
                       },
@@ -77,7 +76,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                   },
                   loading: () =>
                       const Center(child: CircularProgressIndicator()),
-                  error: (final error, final stack) => Center(
+                  error: (error, final stack) => Center(
                     child: Text('Error: $error'),
                   ),
                 );
@@ -89,8 +88,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
     );
   }
 
-  Widget _buildSearchAndFilter(final AppLocalizations l10n) {
-    return Container(
+  Widget _buildSearchAndFilter(AppLocalizations l10n) => Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -120,7 +118,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                 vertical: 12,
               ),
             ),
-            onChanged: (final value) {
+            onChanged: (value) {
               setState(() {
                 _searchQuery = value;
               });
@@ -134,7 +132,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: _categories.length,
-              itemBuilder: (final context, final index) {
+              itemBuilder: (context, final index) {
                 final category = _categories[index];
                 final isSelected = _selectedCategory == category;
 
@@ -143,7 +141,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                   child: FilterChip(
                     label: Text(category),
                     selected: isSelected,
-                    onSelected: (final selected) {
+                    onSelected: (selected) {
                       setState(() {
                         _selectedCategory = category;
                       });
@@ -165,11 +163,9 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
         ],
       ),
     );
-  }
 
-  Widget _buildGameCard(
-      final BuildContext context, final PlaytimeGame game, final AppLocalizations l10n) {
-    return Card(
+  Widget _buildGameCard(final BuildContext context, final PlaytimeGame game,
+      AppLocalizations l10n,) => Card(
       margin: const EdgeInsets.only(bottom: 12),
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -286,10 +282,8 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
         ),
       ),
     );
-  }
 
-  Widget _buildEmptyState(final AppLocalizations l10n) {
-    return Center(
+  Widget _buildEmptyState(AppLocalizations l10n) => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -333,10 +327,9 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
         ],
       ),
     );
-  }
 
-  void _showPlayOptions(
-      final BuildContext context, final PlaytimeGame game, final AppLocalizations l10n) {
+  void _showPlayOptions(final BuildContext context, final PlaytimeGame game,
+      AppLocalizations l10n,) {
     BottomSheetManager.show(
       context: context,
       child: Container(
@@ -406,8 +399,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
     final IconData icon,
     final Color color,
     final VoidCallback onTap,
-  ) {
-    return InkWell(
+  ) => InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(12),
       child: Container(
@@ -442,13 +434,11 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
         ),
       ),
     );
-  }
 
-  List<PlaytimeGame> _filterGames(final List<PlaytimeGame> games) {
-    return games.where((final game) {
+  List<PlaytimeGame> _filterGames(List<PlaytimeGame> games) => games.where((game) {
       // Search filter
       if (_searchQuery.isNotEmpty) {
-        final query = _searchQuery.toLowerCase();
+        query = _searchQuery.toLowerCase();
         return game.name.toLowerCase().contains(query) ||
             game.status.toLowerCase().contains(query) ||
             game.createdBy.toLowerCase().contains(query);
@@ -456,5 +446,4 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
 
       return true;
     }).toList();
-  }
 }

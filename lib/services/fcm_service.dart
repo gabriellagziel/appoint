@@ -1,13 +1,13 @@
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class FCMService {
-  static final FCMService _instance = FCMService._internal();
   factory FCMService() => _instance;
   FCMService._internal();
+  static FCMService _instance = FCMService._internal();
 
   final FirebaseMessaging _messaging = FirebaseMessaging.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -20,28 +20,22 @@ class FCMService {
   Future<void> initialize() async {
     try {
       // Request permission
-      final NotificationSettings settings = await _messaging.requestPermission(
-        alert: true,
-        badge: true,
-        sound: true,
-        provisional: false,
+      final settings = await _messaging.requestPermission(
+        
       );
 
-      // Removed debug print: print('FCM Permission status: ${settings.authorizationStatus}');
+      // Removed debug print: debugPrint('FCM Permission status: ${settings.authorizationStatus}');
 
       if (settings.authorizationStatus == AuthorizationStatus.authorized) {
         // Get FCM token
-        final String? token = await _messaging.getToken();
+        token = await _messaging.getToken();
         if (token != null) {
-          // Removed debug print: print('FCM Token: $token');
+          // Removed debug print: debugPrint('FCM Token: $token');
           await _saveTokenToFirestore(token);
         }
 
         // Listen for token refresh
-        _messaging.onTokenRefresh.listen((final newToken) {
-          // Removed debug print: print('FCM Token refreshed: $newToken');
-          _saveTokenToFirestore(newToken);
-        });
+        _messaging.onTokenRefresh.listen(_saveTokenToFirestore);
 
         // Handle foreground messages
         FirebaseMessaging.onMessage.listen(_handleForegroundMessage);
@@ -50,18 +44,19 @@ class FCMService {
         FirebaseMessaging.onMessageOpenedApp.listen(_handleNotificationTap);
 
         // Handle notification tap when app is terminated
-        final RemoteMessage? initialMessage = await _messaging.getInitialMessage();
+        final initialMessage =
+            await _messaging.getInitialMessage();
         if (initialMessage != null) {
           _handleNotificationTap(initialMessage);
         }
       }
-    } catch (e) {
-      // Removed debug print: print('Error initializing FCM: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error initializing FCM: $e');
     }
   }
 
   /// Save FCM token to Firestore
-  Future<void> _saveTokenToFirestore(final String token) async {
+  Future<void> _saveTokenToFirestore(String token) async {
     try {
       // Get current user ID (you may need to adjust this based on your auth setup)
       final user = FirebaseAuth.instance.currentUser;
@@ -78,16 +73,16 @@ class FCMService {
             .doc(user.uid)
             .set({'fcmToken': token}, SetOptions(merge: true));
 
-        // Removed debug print: print('FCM token saved to Firestore');
+        // Removed debug print: debugPrint('FCM token saved to Firestore');
       }
-    } catch (e) {
-      // Removed debug print: print('Error saving FCM token: $e');
+    } catch (e) {e) {
+      // Removed debug print: debugPrint('Error saving FCM token: $e');
     }
   }
 
   /// Handle foreground messages
-  void _handleForegroundMessage(final RemoteMessage message) {
-    // Removed debug print: print('Received foreground message: ${message.notification?.title}');
+  void _handleForegroundMessage(RemoteMessage message) {
+    // Removed debug print: debugPrint('Received foreground message: ${message.notification?.title}');
 
     // Show SnackBar notification
     if (navigatorKey.currentContext != null) {
@@ -96,7 +91,7 @@ class FCMService {
           content: Text(message.notification?.body ?? 'New booking received'),
           action: SnackBarAction(
             label: 'View',
-            onPressed: () => _navigateToBookings(),
+            onPressed: _navigateToBookings,
           ),
           duration: const Duration(seconds: 5),
         ),
@@ -105,31 +100,29 @@ class FCMService {
   }
 
   /// Handle notification tap
-  void _handleNotificationTap(final RemoteMessage message) {
-    // Removed debug print: print('Notification tapped: ${message.notification?.title}');
+  void _handleNotificationTap(RemoteMessage message) {
+    // Removed debug print: debugPrint('Notification tapped: ${message.notification?.title}');
     _navigateToBookings();
   }
 
   /// Navigate to bookings page
   void _navigateToBookings() {
     if (navigatorKey.currentContext != null) {
-      final router = GoRouter.of(navigatorKey.currentContext!);
+      router = GoRouter.of(navigatorKey.currentContext!);
       router.push('/studio/bookings');
     }
   }
 
   /// Get FCM token
-  Future<String?> getToken() async {
-    return await _messaging.getToken();
-  }
+  Future<String?> getToken() async => _messaging.getToken();
 
   /// Subscribe to topic
-  Future<void> subscribeToTopic(final String topic) async {
+  Future<void> subscribeToTopic(String topic) async {
     await _messaging.subscribeToTopic(topic);
   }
 
   /// Unsubscribe from topic
-  Future<void> unsubscribeFromTopic(final String topic) async {
+  Future<void> unsubscribeFromTopic(String topic) async {
     await _messaging.unsubscribeFromTopic(topic);
   }
 }

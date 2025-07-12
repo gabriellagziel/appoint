@@ -1,20 +1,19 @@
+import 'package:appoint/models/staff_availability.dart';
+import 'package:appoint/models/staff_member.dart';
+import 'package:appoint/providers/studio_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:appoint/models/staff_member.dart';
-import 'package:appoint/models/staff_availability.dart';
-import 'package:appoint/providers/studio_provider.dart';
-
 class StudioBookingSelection {
-  final StaffMember staff;
-  final DateTime date;
-  final TimeOfDay slot;
 
   StudioBookingSelection({
     required this.staff,
     required this.date,
     required this.slot,
   });
+  final StaffMember staff;
+  final DateTime date;
+  final TimeOfDay slot;
 }
 
 class StudioBookingScreen extends ConsumerStatefulWidget {
@@ -30,8 +29,8 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   DateTime? _selectedDate;
   TimeOfDay? _selectedSlot;
 
-  TimeOfDay _parseTimeSlot(final String slot) {
-    final parts = slot.split(':');
+  TimeOfDay _parseTimeSlot(String slot) {
+    parts = slot.split(':');
     return TimeOfDay(
       hour: int.parse(parts[0]),
       minute: int.parse(parts[1]),
@@ -54,15 +53,15 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final studioId = ModalRoute.of(context)!.settings.arguments as String;
-    final staffListAsync = ref.watch(staffListProvider(studioId));
+  Widget build(BuildContext context) {
+    studioId = ModalRoute.of(context)!.settings.arguments! as String;
+    staffListAsync = ref.watch(staffListProvider(studioId));
     AsyncValue<StaffAvailability>? availability;
     if (_selectedStaff != null && _selectedDate != null) {
       availability = ref.watch(staffAvailabilityProvider({
         'staffId': _selectedStaff!.id,
-        'date': _selectedDate!,
-      }));
+        'date': _selectedDate,
+      }),);
     }
 
     return Scaffold(
@@ -73,50 +72,50 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             staffListAsync.when(
-              data: (final staff) => DropdownButton<StaffMember>(
+              data: (staff) => DropdownButton<StaffMember>(
                 value: _selectedStaff,
                 hint: const Text('Select Staff'),
-                onChanged: (final value) {
+                onChanged: (value) {
                   setState(() {
                     _selectedStaff = value;
                     _selectedSlot = null;
                   });
                 },
                 items: staff
-                    .map((final s) => DropdownMenuItem(
+                    .map((s) => DropdownMenuItem(
                           value: s,
                           child: Text(s.displayName),
-                        ))
+                        ),)
                     .toList(),
               ),
               loading: () => const CircularProgressIndicator(),
-              error: (final _, final __) => const Text('Error loading staff'),
+              error: (_, final __) => const Text('Error loading staff'),
             ),
             const SizedBox(height: 16),
             ListTile(
               title: Text(_selectedDate == null
                   ? 'Pick Date'
-                  : _selectedDate!.toLocal().toString().split(' ')[0]),
+                  : _selectedDate!.toLocal().toString().split(' ')[0],),
               trailing: const Icon(Icons.calendar_today),
               onTap: _pickDate,
             ),
             const SizedBox(height: 16),
             if (availability != null)
               availability.when(
-                data: (final avail) {
+                data: (avail) {
                   final slots = avail.availableSlots;
                   if (slots == null || slots.isEmpty) {
                     return const Text('No slots');
                   }
                   return Wrap(
                     spacing: 8,
-                    children: slots.map((final slot) {
-                      final timeSlot = _parseTimeSlot(slot);
+                    children: slots.map((slot) {
+                      timeSlot = _parseTimeSlot(slot);
                       final selected = _selectedSlot == timeSlot;
                       return ChoiceChip(
                         label: Text(slot),
                         selected: selected,
-                        onSelected: (final _) {
+                        onSelected: (_) {
                           setState(() {
                             _selectedSlot = timeSlot;
                           });
@@ -126,7 +125,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                   );
                 },
                 loading: () => const CircularProgressIndicator(),
-                error: (final _, final __) => const Text('Error loading slots'),
+                error: (_, final __) => const Text('Error loading slots'),
               ),
             const Spacer(),
             ElevatedButton(
@@ -140,11 +139,11 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                         slot: _selectedSlot!,
                       );
                       Navigator.pushNamed(context, '/studio/confirm',
-                          arguments: args);
+                          arguments: args,);
                     }
                   : null,
               child: const Text('Next'),
-            )
+            ),
           ],
         ),
       ),

@@ -1,28 +1,27 @@
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/models/appointment.dart';
+import 'package:appoint/providers/whatsapp_share_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/providers/whatsapp_share_provider.dart';
-import 'package:appoint/models/appointment.dart';
 
 class WhatsAppShareButton extends ConsumerWidget {
+
+  const WhatsAppShareButton({
+    required this.appointment, super.key,
+    this.customMessage,
+    this.groupId,
+    this.contextId,
+    this.onShared,
+  });
   final Appointment appointment;
   final String? customMessage;
   final String? groupId;
   final String? contextId;
   final VoidCallback? onShared;
 
-  const WhatsAppShareButton({
-    super.key,
-    required this.appointment,
-    this.customMessage,
-    this.groupId,
-    this.contextId,
-    this.onShared,
-  });
-
   @override
-  Widget build(final BuildContext context, final WidgetRef ref) {
-    final shareState = ref.watch(shareDialogProvider);
+  Widget build(BuildContext context, final WidgetRef ref) {
+    shareState = ref.watch(shareDialogProvider);
 
     return ElevatedButton.icon(
       onPressed:
@@ -43,10 +42,10 @@ class WhatsAppShareButton extends ConsumerWidget {
     );
   }
 
-  void _showShareDialog(final BuildContext context, final WidgetRef ref) {
+  void _showShareDialog(BuildContext context, final WidgetRef ref) {
     showDialog(
       context: context,
-      builder: (final context) => WhatsAppShareDialog(
+      builder: (context) => WhatsAppShareDialog(
         appointment: appointment,
         customMessage: customMessage,
         groupId: groupId,
@@ -58,20 +57,19 @@ class WhatsAppShareButton extends ConsumerWidget {
 }
 
 class WhatsAppShareDialog extends ConsumerStatefulWidget {
-  final Appointment appointment;
-  final String? customMessage;
-  final String? groupId;
-  final String? contextId;
-  final VoidCallback? onShared;
 
   const WhatsAppShareDialog({
-    super.key,
-    required this.appointment,
+    required this.appointment, super.key,
     this.customMessage,
     this.groupId,
     this.contextId,
     this.onShared,
   });
+  final Appointment appointment;
+  final String? customMessage;
+  final String? groupId;
+  final String? contextId;
+  final VoidCallback? onShared;
 
   @override
   ConsumerState<WhatsAppShareDialog> createState() =>
@@ -79,8 +77,8 @@ class WhatsAppShareDialog extends ConsumerStatefulWidget {
 }
 
 class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
-  final TextEditingController _messageController = TextEditingController();
-  final TextEditingController _groupNameController = TextEditingController();
+  TextEditingController _messageController = TextEditingController();
+  TextEditingController _groupNameController = TextEditingController();
   bool _saveGroupForRecognition = false;
 
   @override
@@ -98,9 +96,9 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
   }
 
   @override
-  Widget build(final BuildContext context) {
-    final shareState = ref.watch(shareDialogProvider);
-    final l10n = AppLocalizations.of(context)!;
+  Widget build(BuildContext context) {
+    shareState = ref.watch(shareDialogProvider);
+    l10n = AppLocalizations.of(context)!;
 
     return AlertDialog(
       title: Row(
@@ -139,7 +137,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
               CheckboxListTile(
                 title: Text(l10n.saveGroupForRecognition),
                 value: _saveGroupForRecognition,
-                onChanged: (final value) {
+                onChanged: (value) {
                   setState(() {
                     _saveGroupForRecognition = value ?? false;
                   });
@@ -213,7 +211,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
           child: Text(l10n.cancel),
         ),
         ElevatedButton.icon(
-          onPressed: shareState.isLoading ? null : () => _shareToWhatsApp(),
+          onPressed: shareState.isLoading ? null : _shareToWhatsApp,
           icon: shareState.isLoading
               ? const SizedBox(
                   width: 16,
@@ -232,8 +230,8 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
   }
 
   Future<void> _shareToWhatsApp() async {
-    final notifier = ref.read(shareDialogProvider.notifier);
-    final l10n = AppLocalizations.of(context)!;
+    notifier = ref.read(shareDialogProvider.notifier);
+    l10n = AppLocalizations.of(context)!;
 
     await notifier.shareToWhatsApp(
       meetingId: widget.appointment.id,

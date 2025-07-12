@@ -1,11 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/features/studio_business/screens/business_availability_screen.dart';
+import 'package:flutter/material.dart';
 
 class StudioAvailabilityScreen extends StatelessWidget {
   const StudioAvailabilityScreen({super.key});
 
   @override
-  Widget build(final BuildContext context) {
-    return const BusinessAvailabilityScreen();
-  }
+  Widget build(BuildContext context) => const BusinessAvailabilityScreen();
 }

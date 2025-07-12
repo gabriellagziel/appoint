@@ -1,8 +1,9 @@
-import 'package:flutter_test/flutter_test.dart';
+import 'package:appoint/services/business_subscription_service.dart';
+import 'package:cloud_functions/cloud_functions.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
-import 'package:cloud_functions/cloud_functions.dart';
-import 'package:appoint/services/business_subscription_service.dart';
+import 'package:flutter_test/flutter_test.dart';
+
 import '../../firebase_test_setup.dart';
 
 class MockFirebaseFunctions extends Fake implements FirebaseFunctions {}
@@ -31,7 +32,7 @@ void main() {
   group('validatePromoCode', () {
     test('returns valid promo code for active code', () async {
       // Arrange: seed a valid promo code
-      final now = DateTime.now();
+      now = DateTime.now();
       await fakeFs.collection('promoCodes').doc('FREE30').set({
         'id': 'FREE30',
         'code': 'FREE30',
@@ -48,7 +49,7 @@ void main() {
       });
 
       // Act
-      final result = await service.validatePromoCode('FREE30');
+      result = await service.validatePromoCode('FREE30');
 
       // Assert
       expect(result, isNotNull);
@@ -57,7 +58,7 @@ void main() {
 
     test('returns null for expired promo code', () async {
       // Arrange: expired code
-      final now = DateTime.now();
+      now = DateTime.now();
       await fakeFs.collection('promoCodes').doc('OLD').set({
         'id': 'OLD',
         'code': 'OLD',
@@ -74,7 +75,7 @@ void main() {
       });
 
       // Act
-      final result = await service.validatePromoCode('OLD');
+      result = await service.validatePromoCode('OLD');
 
       // Assert
       expect(result, isNull);
@@ -82,7 +83,7 @@ void main() {
 
     test('returns null for code with exceeded usage limit', () async {
       // Arrange: code with exceeded usage
-      final now = DateTime.now();
+      now = DateTime.now();
       await fakeFs.collection('promoCodes').doc('USED').set({
         'id': 'USED',
         'code': 'USED',
@@ -99,7 +100,7 @@ void main() {
       });
 
       // Act
-      final result = await service.validatePromoCode('USED');
+      result = await service.validatePromoCode('USED');
 
       // Assert
       expect(result, isNull);

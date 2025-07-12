@@ -1,31 +1,31 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:appoint/models/studio_appointment.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class StudioAppointmentService {
-  final FirebaseFirestore _firestore;
-  StudioAppointmentService({final FirebaseFirestore? firestore})
+  StudioAppointmentService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
+  final FirebaseFirestore _firestore;
 
   CollectionReference<Map<String, dynamic>> get _col =>
       _firestore.collection('studio_appointments');
 
   Future<List<StudioAppointment>> fetchAppointments() async {
-    final snap = await _col.get();
+    snap = await _col.get();
     return snap.docs
-        .map((final d) => StudioAppointment.fromJson({...d.data(), 'id': d.id}))
+        .map((d) => StudioAppointment.fromJson({...d.data(), 'id': d.id}))
         .toList();
   }
 
-  Future<void> addAppointment(final StudioAppointment appt) async {
-    final doc = _col.doc(appt.id.isEmpty ? null : appt.id);
+  Future<void> addAppointment(StudioAppointment appt) async {
+    doc = _col.doc(appt.id.isEmpty ? null : appt.id);
     await doc.set(appt.copyWith(id: doc.id).toJson());
   }
 
-  Future<void> updateAppointment(final StudioAppointment appt) async {
+  Future<void> updateAppointment(StudioAppointment appt) async {
     await _col.doc(appt.id).set(appt.toJson());
   }
 
-  Future<void> deleteAppointment(final String id) async {
+  Future<void> deleteAppointment(String id) async {
     await _col.doc(id).delete();
   }
 }

@@ -1,10 +1,13 @@
 import * as functions from 'firebase-functions';
 import Stripe from 'stripe';
 import * as admin from 'firebase-admin';
+// @ts-ignore
+import { validate, schemas } from '../test/validation-schemas';
 
 // Initialize Stripe with your secret key
 const stripe = new Stripe(functions.config().stripe.secret_key || 'sk_test_your_secret_key_here', {
-  apiVersion: '2023-10-16',
+  // Remove apiVersion if not supported by installed SDK
+  // apiVersion: '2023-10-16',
 });
 
 admin.initializeApp();
@@ -79,8 +82,8 @@ export const confirmSession = functions.https.onRequest(async (req, res) => {
     const session = await stripe.checkout.sessions.retrieve(sessionId);
 
     if (session.payment_status === 'paid') {
-      // Get subscription details
-      const subscription = await stripe.subscriptions.retrieve(session.subscription as string);
+      // Get subscription details - Response<Subscription> has properties directly accessible
+      const subscription = await stripe.subscriptions.retrieve(session.subscription as string) as any;
 
       // Update Firestore
       await db.collection('studio').doc(studioId).update({
@@ -90,8 +93,8 @@ export const confirmSession = functions.https.onRequest(async (req, res) => {
           subscriptionId: subscription.id,
           customerId: subscription.customer,
           status: subscription.status,
-          currentPeriodEnd: new Date(subscription.current_period_end * 1000),
-          createdAt: new Date(subscription.created * 1000),
+          currentPeriodEnd: subscription.current_period_end ? new Date(subscription.current_period_end * 1000) : null,
+          createdAt: subscription.created ? new Date(subscription.created * 1000) : null,
         },
         lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
       });
@@ -101,7 +104,7 @@ export const confirmSession = functions.https.onRequest(async (req, res) => {
         subscription: {
           id: subscription.id,
           status: subscription.status,
-          currentPeriodEnd: subscription.current_period_end,
+          currentPeriodEnd: subscription.current_period_end ?? null,
         },
       });
     } else {
@@ -122,7 +125,7 @@ export const handleCheckoutSessionCompleted = functions.https.onRequest(async (r
 
   try {
     event = stripe.webhooks.constructEvent(req.rawBody, sig as string, endpointSecret);
-  } catch (err) {
+  } catch (err: any) {
     console.error('Webhook signature verification failed:', err);
     res.status(400).send(`Webhook Error: ${err.message}`);
     return;
@@ -132,7 +135,7 @@ export const handleCheckoutSessionCompleted = functions.https.onRequest(async (r
     switch (event.type) {
       case 'checkout.session.completed':
         const session = event.data.object as Stripe.Checkout.Session;
-        await handleCheckoutSessionCompleted(session);
+        await processCheckoutSessionCompleted(session);
         break;
 
       case 'customer.subscription.updated':
@@ -161,8 +164,8 @@ export const handleCheckoutSessionCompleted = functions.https.onRequest(async (r
   }
 });
 
-// Handle checkout session completed
-async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) {
+// Handle checkout session completed (renamed to avoid duplicate identifier)
+async function processCheckoutSessionCompleted(session: Stripe.Checkout.Session) {
   const studioId = session.client_reference_id || session.metadata?.studioId;
 
   if (!studioId) {
@@ -171,7 +174,8 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
   }
 
   if (session.payment_status === 'paid' && session.subscription) {
-    const subscription = await stripe.subscriptions.retrieve(session.subscription as string);
+    // Response<Subscription> has properties directly accessible
+    const subscription = await stripe.subscriptions.retrieve(session.subscription as string) as any;
 
     await db.collection('studio').doc(studioId).update({
       subscriptionStatus: 'active',
@@ -180,8 +184,8 @@ async function handleCheckoutSessionCompleted(session: Stripe.Checkout.Session) 
         subscriptionId: subscription.id,
         customerId: subscription.customer,
         status: subscription.status,
-        currentPeriodEnd: new Date(subscription.current_period_end * 1000),
-        createdAt: new Date(subscription.created * 1000),
+        currentPeriodEnd: subscription.current_period_end ? new Date(subscription.current_period_end * 1000) : null,
+        createdAt: subscription.created ? new Date(subscription.created * 1000) : null,
       },
       lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
     });
@@ -199,14 +203,15 @@ async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
     return;
   }
 
+  const sub = subscription as any;
   await db.collection('studio').doc(studioId).update({
     subscriptionStatus: subscription.status,
     subscriptionData: {
       subscriptionId: subscription.id,
       customerId: subscription.customer,
       status: subscription.status,
-      currentPeriodEnd: new Date(subscription.current_period_end * 1000),
-      updatedAt: new Date(subscription.updated * 1000),
+      currentPeriodEnd: sub.current_period_end ? new Date(sub.current_period_end * 1000) : null,
+      updatedAt: sub.updated ? new Date(sub.updated * 1000) : null,
     },
     lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
   });
@@ -223,13 +228,14 @@ async function handleSubscriptionDeleted(subscription: Stripe.Subscription) {
     return;
   }
 
+  const sub = subscription as any;
   await db.collection('studio').doc(studioId).update({
     subscriptionStatus: 'cancelled',
     subscriptionData: {
       subscriptionId: subscription.id,
       customerId: subscription.customer,
       status: subscription.status,
-      cancelledAt: new Date(subscription.canceled_at! * 1000),
+      cancelledAt: sub.canceled_at ? new Date(sub.canceled_at * 1000) : null,
     },
     lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
   });
@@ -239,8 +245,14 @@ async function handleSubscriptionDeleted(subscription: Stripe.Subscription) {
 
 // Handle payment failed
 async function handlePaymentFailed(invoice: Stripe.Invoice) {
-  const subscription = await stripe.subscriptions.retrieve(invoice.subscription as string);
-  const studioId = subscription.metadata?.studioId;
+  const invoiceData = invoice as any;
+  if (!invoiceData.subscription) {
+    console.error('No subscription ID found in invoice');
+    return;
+  }
+  // Response<Subscription> has properties directly accessible
+  const subscription = await stripe.subscriptions.retrieve(invoiceData.subscription as string) as any;
+  const studioId = (subscription.metadata && subscription.metadata.studioId) ? subscription.metadata.studioId : undefined;
 
   if (!studioId) {
     console.error('No studio ID found in subscription metadata');
@@ -248,12 +260,12 @@ async function handlePaymentFailed(invoice: Stripe.Invoice) {
   }
 
   await db.collection('studio').doc(studioId).update({
-    subscriptionStatus: 'past_due',
+    subscriptionStatus: 'payment_failed',
     subscriptionData: {
       subscriptionId: subscription.id,
       customerId: subscription.customer,
       status: subscription.status,
-      lastPaymentFailed: new Date(invoice.created * 1000),
+      paymentFailedAt: invoice.created ? new Date(invoice.created * 1000) : null,
     },
     lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
   });
@@ -284,7 +296,7 @@ export const cancelSubscription = functions.https.onRequest(async (req, res) => 
     // Cancel the subscription at period end
     const subscription = await stripe.subscriptions.update(subscriptionId, {
       cancel_at_period_end: true,
-    });
+    }) as any;
 
     // Update Firestore
     await db.collection('studio').doc(studioId).update({
@@ -294,7 +306,7 @@ export const cancelSubscription = functions.https.onRequest(async (req, res) => 
         customerId: subscription.customer,
         status: subscription.status,
         cancelAtPeriodEnd: true,
-        currentPeriodEnd: new Date(subscription.current_period_end * 1000),
+        currentPeriodEnd: subscription.current_period_end ? new Date(subscription.current_period_end * 1000) : null,
       },
       lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
     });
@@ -310,5 +322,44 @@ export const cancelSubscription = functions.https.onRequest(async (req, res) => 
   } catch (error) {
     console.error('Error cancelling subscription:', error);
     res.status(500).json({ error: 'Failed to cancel subscription' });
+  }
+});
+
+// Create payment intent with 3D Secure support
+export const createPaymentIntent = functions.https.onCall(async (data, context) => {
+  try {
+    // Validate input data
+    const validatedData = validate(schemas.createPaymentIntent, data);
+    const { amount } = validatedData;
+    
+    const paymentIntent = await stripe.paymentIntents.create({
+      amount: Math.round(amount * 100),
+      currency: 'eur',
+      payment_method_options: {
+        card: { request_three_d_secure: 'any' },
+      },
+      metadata: {
+        userId: (context as any)?.auth?.uid || 'anonymous',
+        type: 'payment',
+      },
+    });
+    return {
+      clientSecret: paymentIntent.client_secret,
+      paymentIntentId: paymentIntent.id,
+      status: paymentIntent.status,
+    };
+  } catch (error: any) {
+    console.error('Error creating payment intent:', error);
+    
+    // Handle validation errors
+    if (error.code === 'invalid-argument') {
+      throw new functions.https.HttpsError(
+        'invalid-argument',
+        error.message,
+        { field: error.details?.field }
+      );
+    }
+    
+    throw new functions.https.HttpsError('internal', 'Failed to create payment intent');
   }
 }); 

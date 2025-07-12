@@ -1,9 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class BusinessProfile {
-  final String id;
-  final String name;
-  final bool isActive;
 
   const BusinessProfile({
     required this.id,
@@ -11,42 +8,39 @@ class BusinessProfile {
     required this.isActive,
   });
 
-  factory BusinessProfile.fromFirestore(final DocumentSnapshot doc) {
-    final data = doc.data() as Map<String, dynamic>? ?? {};
+  factory BusinessProfile.fromFirestore(DocumentSnapshot doc) {
+    data = doc.data() as Map<String, dynamic>? ?? {};
     return BusinessProfile(
       id: doc.id,
       name: data['name'] as String? ?? '',
       isActive: data['isActive'] as bool? ?? true,
     );
   }
+  final String id;
+  final String name;
+  final bool isActive;
 
-  Map<String, dynamic> toJson() {
-    return {
+  Map<String, dynamic> toJson() => {
       'id': id,
       'name': name,
       'isActive': isActive,
     };
-  }
 
   BusinessProfile copyWith({
     final String? id,
     final String? name,
     final bool? isActive,
-  }) {
-    return BusinessProfile(
+  }) => BusinessProfile(
       id: id ?? this.id,
       name: name ?? this.name,
       isActive: isActive ?? this.isActive,
     );
-  }
 
   @override
-  String toString() {
-    return 'BusinessProfile(id: $id, name: $name, isActive: $isActive)';
-  }
+  String toString() => 'BusinessProfile(id: $id, name: $name, isActive: $isActive)';
 
   @override
-  bool operator ==(final Object other) {
+  bool operator ==(Object other) {
     if (identical(this, other)) return true;
     return other is BusinessProfile &&
         other.id == id &&
