@@ -438,83 +438,87 @@ if (isFirebase && functions.pubsub && typeof functions.pubsub.schedule === 'func
 /**
  * Trigger when a user document is created/updated to check for ambassador eligibility
  */
-exports.checkAmbassadorEligibility = functions.firestore
-  .document('users/{userId}')
-  .onWrite(async (change, context) => {
-    try {
-      const userId = context.params.userId;
-      const newData = change.after.data();
-      const previousData = change.before.data();
+if (isFirebase && functions.firestore && typeof functions.firestore.document === 'function') {
+  exports.checkAmbassadorEligibility = functions.firestore
+    .document('users/{userId}')
+    .onWrite(async (change, context) => {
+      try {
+        const userId = context.params.userId;
+        const newData = change.after.data();
+        const previousData = change.before.data();
 
-      // Only proceed if this is a new user or if relevant fields changed
-      if (!newData) return null;
+        // Only proceed if this is a new user or if relevant fields changed
+        if (!newData) return null;
 
-      const isNewUser = !previousData;
-      const roleChanged = isNewUser || previousData.role !== newData.role;
-      const adultStatusChanged = isNewUser || previousData.isAdult !== newData.isAdult;
+        const isNewUser = !previousData;
+        const roleChanged = isNewUser || previousData.role !== newData.role;
+        const adultStatusChanged = isNewUser || previousData.isAdult !== newData.isAdult;
 
-      if (!roleChanged && !adultStatusChanged) return null;
+        if (!roleChanged && !adultStatusChanged) return null;
 
-      // Check if user is now eligible for ambassadorship
-      const isEligible = await isUserEligible(userId);
-      if (!isEligible) return null;
+        // Check if user is now eligible for ambassadorship
+        const isEligible = await isUserEligible(userId);
+        if (!isEligible) return null;
 
-      // Get user's country and language
-      const countryCode = newData.countryCode;
-      const languageCode = newData.languageCode;
-
-      if (!countryCode || !languageCode) return null;
-
-      // Check if there are available slots
-      const hasSlots = await hasAvailableSlots(countryCode, languageCode);
-      if (!hasSlots) return null;
-
-      // Auto-assign ambassador role
-      await assignAmbassador(userId, countryCode, languageCode);
-
-      return null;
-    } catch (error) {
-      console.error('Error in checkAmbassadorEligibility:', error);
-      return null;
-    }
-  });
-
-/**
- * Trigger when an ambassador becomes inactive to free up slot
- */
-exports.handleAmbassadorRemoval = functions.firestore
-  .document('ambassadors/{ambassadorId}')
-  .onUpdate(async (change, context) => {
-    try {
-      const ambassadorId = context.params.ambassadorId;
-      const newData = change.after.data();
-      const previousData = change.before.data();
-
-      // Check if ambassador status changed to inactive
-      if (previousData.status === 'active' && newData.status === 'inactive') {
+        // Get user's country and language
         const countryCode = newData.countryCode;
         const languageCode = newData.languageCode;
 
-        if (countryCode && languageCode) {
-          // Log the slot being freed
-          await db.collection('ambassador_removals').add({
-            ambassadorId: ambassadorId,
-            countryCode: countryCode,
-            languageCode: languageCode,
-            removedAt: admin.firestore.FieldValue.serverTimestamp(),
-            reason: 'status_change_to_inactive'
-          });
+        if (!countryCode || !languageCode) return null;
 
-          console.log(`Ambassador slot freed for ${countryCode}_${languageCode}`);
-        }
+        // Check if there are available slots
+        const hasSlots = await hasAvailableSlots(countryCode, languageCode);
+        if (!hasSlots) return null;
+
+        // Auto-assign ambassador role
+        await assignAmbassador(userId, countryCode, languageCode);
+
+        return null;
+      } catch (error) {
+        console.error('Error in checkAmbassadorEligibility:', error);
+        return null;
       }
+    });
 
-      return null;
-    } catch (error) {
-      console.error('Error in handleAmbassadorRemoval:', error);
-      return null;
-    }
-  });
+  /**
+   * Trigger when an ambassador becomes inactive to free up slot
+   */
+  exports.handleAmbassadorRemoval = functions.firestore
+    .document('ambassadors/{ambassadorId}')
+    .onUpdate(async (change, context) => {
+      try {
+        const ambassadorId = context.params.ambassadorId;
+        const newData = change.after.data();
+        const previousData = change.before.data();
+
+        // Check if ambassador status changed to inactive
+        if (previousData.status === 'active' && newData.status === 'inactive') {
+          const countryCode = newData.countryCode;
+          const languageCode = newData.languageCode;
+
+          if (countryCode && languageCode) {
+            // Log the slot being freed
+            await db.collection('ambassador_removals').add({
+              ambassadorId: ambassadorId,
+              countryCode: countryCode,
+              languageCode: languageCode,
+              removedAt: admin.firestore.FieldValue.serverTimestamp(),
+              reason: 'status_change_to_inactive'
+            });
+
+            console.log(`Ambassador slot freed for ${countryCode}_${languageCode}`);
+          }
+        }
+
+        return null;
+      } catch (error) {
+        console.error('Error in handleAmbassadorRemoval:', error);
+        return null;
+      }
+    });
+} else {
+  console.log('Skipping Firestore triggers in non-Firebase environment');
+}
 
 // Export the quota data for reference
 exports.ambassadorQuotas = ambassadorQuotas;
