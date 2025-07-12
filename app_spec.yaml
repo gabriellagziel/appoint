@@ -9,8 +9,9 @@ static_sites:
       branch: main
     source_dir: "marketing"
     output_dir: "marketing/out"
+    build_command: "npm install && npm run build"
     routes:
-      - path: /
+      - path: /marketing
 
 services:
   - name: api
@@ -21,4 +22,6 @@ services:
     source_dir: "functions"
     build_command: "npm install && npm run build"
     run_command: "npm run start"
+    routes:
+      - path: /api
  
