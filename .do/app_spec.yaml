@@ -36,13 +36,13 @@ services:
     routes:
       - path: /dashboard
 
-static_sites:
   - name: marketing
+    environment_slug: node-js
     github:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "marketing"
     build_command: "rm -rf .next out && npm install && npm run build"
-    output_dir: "out"
+    run_command: "npm start"
     routes:
       - path: / 
