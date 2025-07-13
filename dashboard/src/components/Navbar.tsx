@@ -4,6 +4,35 @@ import Link from "next/link"
 
 export default function Navbar() {
   const session = useSession()
+
+  // Handle case when session is undefined (SSR)
+  if (!session) {
+    return (
+      <nav className="flex items-center justify-between px-6 py-4 bg-white border-b">
+        <Link href="/dashboard">
+          <span className="font-bold text-xl">APP-OINT</span>
+        </Link>
+        <div className="flex items-center gap-4">
+          <span>Loading...</span>
+        </div>
+      </nav>
+    )
+  }
+
+  // Handle loading state
+  if (session.status === 'loading') {
+    return (
+      <nav className="flex items-center justify-between px-6 py-4 bg-white border-b">
+        <Link href="/dashboard">
+          <span className="font-bold text-xl">APP-OINT</span>
+        </Link>
+        <div className="flex items-center gap-4">
+          <span>Loading...</span>
+        </div>
+      </nav>
+    )
+  }
+
   return (
     <nav className="flex items-center justify-between px-6 py-4 bg-white border-b">
       <Link href="/dashboard">
