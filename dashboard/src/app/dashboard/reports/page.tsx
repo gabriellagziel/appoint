@@ -8,6 +8,9 @@ import { useSession } from 'next-auth/react'
 export default function ReportsPage() {
   const sessionState = useSession()
 
+  // Handle case when session is undefined (SSR)
+  if (!sessionState) return <p>Loading...</p>
+
   if (sessionState.status === 'loading') return <p>Loading...</p>
   if (sessionState.status === 'unauthenticated') return <p>Not authenticated</p>
 
