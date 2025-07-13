@@ -18,4 +18,4 @@ export default function DashboardPage() {
       <p>Welcome, {user?.name || 'User'}!</p>
     </div>
   )
-} 
+} // Force DigitalOcean to pick up latest commit
