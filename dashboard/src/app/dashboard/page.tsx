@@ -7,6 +7,9 @@ import { useSession } from 'next-auth/react'
 export default function DashboardPage() {
   const session = useSession()
 
+  // Handle case when session is undefined (SSR)
+  if (!session) return <p>Loading...</p>
+
   if (session.status === 'loading') return <p>Loading...</p>
   if (session.status === 'unauthenticated') return <p>Not authenticated</p>
 
