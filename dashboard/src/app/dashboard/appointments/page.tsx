@@ -4,10 +4,12 @@ export const dynamic = 'force-dynamic'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { appointments } from "@/lib/mock-data"
 import { useSession } from 'next-auth/react'
-import React from 'react'
 
 export default function AppointmentsListPage() {
   const sessionState = useSession()
+
+  // Handle case when session is undefined (SSR)
+  if (!sessionState) return <p>Loading...</p>
 
   if (sessionState.status === 'loading') return <p>Loading...</p>
   if (sessionState.status === 'unauthenticated') return <p>Not authenticated</p>
