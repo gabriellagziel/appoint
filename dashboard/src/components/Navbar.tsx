@@ -42,7 +42,7 @@ export default function Navbar() {
         {session.data?.user && (
           <>
             <span className="rounded-full bg-gray-200 px-3 py-1 text-sm font-medium">
-              {session.data.user.name || session.data.user.email}
+              {session.data?.user?.name || session.data?.user?.email}
             </span>
             <button
               className="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700"
