@@ -43,3 +43,4 @@ NEXTAUTH_SECRET=<your-secret>
 - Protected dashboard routes
 - Placeholder pages for Overview, Appointments, New Booking, Reports
 - API route stubs for appointments
+# Force deployment
