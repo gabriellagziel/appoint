@@ -1,5 +1,6 @@
 name: appoint-app-v2
 region: fra1
+# Force deployment with latest useSession fixes
 
 services:
   - name: api
