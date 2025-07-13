@@ -4,19 +4,18 @@ export const dynamic = 'force-dynamic'
 import React from 'react'
 import { useSession } from 'next-auth/react'
 
-export default function DashboardOverviewPage() {
-  const sessionState = useSession()
+export default function DashboardPage() {
+  const session = useSession()
 
-  if (sessionState.status === 'loading') return <p>Loading...</p>
-  if (sessionState.status === 'unauthenticated') return <p>Not authenticated</p>
+  if (session.status === 'loading') return <p>Loading...</p>
+  if (session.status === 'unauthenticated') return <p>Not authenticated</p>
 
-  const user = sessionState.data?.user
+  const user = session.data?.user
 
   return (
     <div>
       <h1>Dashboard</h1>
-      <p>Welcome, {user?.name}</p>
-      {/* More dashboard content here */}
+      <p>Welcome, {user?.name || 'User'}!</p>
     </div>
   )
 } 
