@@ -42,7 +42,7 @@ static_sites:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "marketing"
-    build_command: "rm -rf .next && npm install && npm run build"
+    build_command: "rm -rf .next out && npm install && npm run build"
     output_dir: "out"
     routes:
       - path: / 

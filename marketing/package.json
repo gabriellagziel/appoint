@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "serve": "serve out",
     "lint": "next lint"
   },
   "dependencies": {
@@ -19,6 +20,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.60.0",
+    "serve": "^14.2.1",
     "tailwind-merge": "^3.3.1",
     "zod": "^4.0.2"
   },
