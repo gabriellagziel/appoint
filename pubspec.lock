@@ -13,10 +13,10 @@ packages:
     dependency: transitive
     description:
       name: _fe_analyzer_shared
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "76.0.0"
+    version: "72.0.0"
   _flutterfire_internals:
     dependency: transitive
     description:
@@ -29,7 +29,7 @@ packages:
     dependency: transitive
     description: dart
     source: sdk
-    version: "0.3.3"
+    version: "0.3.2"
   adaptive_number:
     dependency: transitive
     description:
@@ -42,10 +42,10 @@ packages:
     dependency: transitive
     description:
       name: analyzer
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "6.11.0"
+    version: "6.7.0"
   antlr4:
     dependency: transitive
     description:
@@ -90,18 +90,18 @@ packages:
     dependency: transitive
     description:
       name: build
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.2"
+    version: "2.4.1"
   build_config:
     dependency: transitive
     description:
       name: build_config
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.2"
+    version: "1.1.1"
   build_daemon:
     dependency: transitive
     description:
@@ -109,15 +109,15 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.4"
+    version: "4.0.2"
   build_resolvers:
     dependency: transitive
     description:
       name: build_resolvers
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.4"
+    version: "2.4.2"
   build_runner:
     dependency: "direct dev"
     description:
@@ -125,15 +125,15 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.15"
+    version: "2.4.13"
   build_runner_core:
     dependency: transitive
     description:
       name: build_runner_core
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "8.0.0"
+    version: "7.3.2"
   built_collection:
     dependency: transitive
     description:
@@ -245,7 +245,7 @@ packages:
       sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "1.19.0"
+    version: "1.18.0"
   connectivity_plus:
     dependency: "direct main"
     description:
@@ -309,7 +309,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.8"
+    version: "2.3.7"
   dbus:
     dependency: transitive
     description:
@@ -429,7 +429,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "0.9.4+3"
+    version: "0.9.4+2"
   REDACTED_TOKEN:
     dependency: transitive
     description:
@@ -745,10 +745,10 @@ packages:
     dependency: transitive
     description:
       name: REDACTED_TOKEN
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.28"
+    version: "2.0.26"
   flutter_riverpod:
     dependency: "direct main"
     description:
@@ -968,10 +968,10 @@ packages:
     dependency: "direct main"
     description:
       name: google_maps_flutter
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.12.3"
+    version: "2.10.1"
   google_maps_flutter_android:
     dependency: transitive
     description:
@@ -979,7 +979,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.16.2"
+    version: "2.14.13"
   google_maps_flutter_ios:
     dependency: transitive
     description:
@@ -987,15 +987,15 @@ packages:
       sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "2.15.4"
+    version: "2.15.2"
   REDACTED_TOKEN:
     dependency: transitive
     description:
       name: REDACTED_TOKEN
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.12.1"
+    version: "2.11.1"
   google_maps_flutter_web:
     dependency: transitive
     description:
@@ -1003,15 +1003,15 @@ packages:
       sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.12+2"
+    version: "0.5.12"
   google_mobile_ads:
     dependency: "direct main"
     description:
       name: google_mobile_ads
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.0"
+    version: "5.3.1"
   googleapis:
     dependency: "direct main"
     description:
@@ -1019,7 +1019,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "14.0.0"
+    version: "13.2.0"
   googleapis_auth:
     dependency: "direct main"
     description:
@@ -1027,7 +1027,7 @@ packages:
       sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.0"
+    version: "1.6.0"
   graphs:
     dependency: transitive
     description:
@@ -1107,7 +1107,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "4.1.2"
+    version: "4.0.2"
   image_picker:
     dependency: "direct main"
     description:
@@ -1123,7 +1123,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "0.8.12+23"
+    version: "0.8.12+21"
   image_picker_for_web:
     dependency: transitive
     description:
@@ -1224,7 +1224,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "10.0.7"
+    version: "10.0.5"
   leak_tracker_flutter_testing:
     dependency: transitive
     description:
@@ -1232,7 +1232,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.8"
+    version: "3.0.5"
   leak_tracker_testing:
     dependency: transitive
     description:
@@ -1272,7 +1272,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.3-main.0"
+    version: "0.1.2-main.4"
   mailer:
     dependency: "direct main"
     description:
@@ -1325,10 +1325,10 @@ packages:
     dependency: "direct dev"
     description:
       name: mockito
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "5.4.5"
+    version: "5.4.4"
   mocktail:
     dependency: "direct dev"
     description:
@@ -1397,10 +1397,10 @@ packages:
     dependency: transitive
     description:
       name: path_provider_android
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.17"
+    version: "2.2.15"
   path_provider_foundation:
     dependency: transitive
     description:
@@ -1496,7 +1496,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "1.5.0"
+    version: "1.4.0"
   quiver:
     dependency: transitive
     description:
@@ -1568,7 +1568,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.10"
+    version: "2.4.7"
   shared_preferences_foundation:
     dependency: transitive
     description:
@@ -1616,20 +1616,20 @@ packages:
       sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "1.4.2"
+    version: "1.4.1"
   shelf_web_socket:
     dependency: transitive
     description:
       name: shelf_web_socket
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.0"
+    version: "2.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
     source: sdk
-    version: "0.0.0"
+    version: "0.0.99"
   source_gen:
     dependency: transitive
     description:
@@ -1669,7 +1669,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "1.12.0"
+    version: "1.11.1"
   state_notifier:
     dependency: transitive
     description:
@@ -1701,7 +1701,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "1.3.0"
+    version: "1.2.0"
   stripe_android:
     dependency: transitive
     description:
@@ -1765,7 +1765,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "0.7.3"
+    version: "0.7.2"
   timezone:
     dependency: transitive
     description:
@@ -1837,7 +1837,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "6.3.16"
+    version: "6.3.14"
   url_launcher_ios:
     dependency: transitive
     description:
@@ -1877,7 +1877,7 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.1"
+    version: "2.3.3"
   url_launcher_windows:
     dependency: transitive
     description:
@@ -1911,13 +1911,13 @@ packages:
     source: hosted
     version: "6.0.0"
   vm_service:
-    dependency: "direct dev"
+    dependency: transitive
     description:
       name: vm_service
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "14.3.0"
+    version: "14.2.5"
   watcher:
     dependency: transitive
     description:
@@ -1957,31 +1957,31 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.4"
+    version: "3.0.3"
   webview_flutter:
     dependency: "direct main"
     description:
       name: webview_flutter
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "4.13.0"
+    version: "4.10.0"
   webview_flutter_android:
     dependency: transitive
     description:
       name: webview_flutter_android
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "4.7.0"
+    version: "4.3.2"
   REDACTED_TOKEN:
     dependency: transitive
     description:
       name: REDACTED_TOKEN
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.13.1"
+    version: "2.13.0"
   webview_flutter_wkwebview:
     dependency: transitive
     description:
@@ -2031,5 +2031,5 @@ packages:
     source: hosted
     version: "3.1.3"
 sdks:
-  dart: ">=3.6.0 <4.0.0"
-  flutter: ">=3.27.0"
+  dart: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
