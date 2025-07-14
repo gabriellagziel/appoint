@@ -75,7 +75,7 @@ dev_dependencies:
 
   flutter_test:
     sdk: flutter
-  vm_service: ^14.2.5
+  vm_service: ^15.0.0
   firebase_auth_mocks: ^0.14.1
   REDACTED_TOKEN: ^7.0.0
   REDACTED_TOKEN: ^6.6.10
