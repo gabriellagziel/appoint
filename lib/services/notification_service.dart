@@ -2,7 +2,7 @@ import 'package:appoint/models/notification_payload.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:appoint/providers/fcm_token_provider.dart';
+// import 'package:appoint/providers/fcm_token_provider.dart'; // Unused
 
 /// Service for showing user notifications
 class NotificationService {

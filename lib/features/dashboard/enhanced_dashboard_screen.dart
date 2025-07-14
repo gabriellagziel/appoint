@@ -1,8 +1,8 @@
-import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart';
-import 'package:appoint/features/rewards/screens/rewards_screen.dart';
-import 'package:appoint/features/subscriptions/screens/subscription_screen.dart';
-import 'package:appoint/features/messaging/screens/messages_list_screen.dart';
-import 'package:appoint/features/search/screens/search_screen.dart';
+// import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart'; // Unused
+// import 'package:appoint/features/rewards/screens/rewards_screen.dart'; // Unused
+// import 'package:appoint/features/subscriptions/screens/subscription_screen.dart'; // Unused
+// import 'package:appoint/features/messaging/screens/messages_list_screen.dart'; // Unused
+// import 'package:appoint/features/search/screens/search_screen.dart'; // Unused
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

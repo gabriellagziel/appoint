@@ -3,7 +3,6 @@ import 'package:appoint/models/smart_share_link.dart';
 import 'package:appoint/services/custom_deep_link_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class WhatsAppShareService {

@@ -1,7 +1,7 @@
 import 'package:appoint/models/notification_payload.dart';
 import 'package:appoint/services/notification_service.dart';
 import 'package:appoint/services/ui_notification_service.dart';
-import 'package:appoint/providers/fcm_token_provider.dart';
+// import 'package:appoint/providers/fcm_token_provider.dart'; // Unused
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final notificationServiceProvider = Provider<NotificationService>(

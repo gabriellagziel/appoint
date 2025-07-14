@@ -1,8 +1,6 @@
 import 'package:appoint/providers/ambassador_record_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:share_plus/share_plus.dart';
-
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
