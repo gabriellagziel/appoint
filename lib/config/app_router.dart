@@ -48,12 +48,11 @@ import 'package:go_router/go_router.dart';
 
 // Enhanced features imports
 import 'package:appoint/features/onboarding/enhanced_onboarding_screen.dart';
-import 'package:appoint/features/search/screens/search_screen.dart';
+// import 'package:appoint/features/search/screens/search_screen.dart';
 import 'package:appoint/features/messaging/screens/messages_list_screen.dart';
 import 'package:appoint/features/messaging/screens/chat_screen.dart';
 import 'package:appoint/features/subscription/subscription_screen.dart';
 import 'package:appoint/features/rewards/rewards_screen.dart';
-import 'package:appoint/features/analytics/business_analytics_screen.dart';
 import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart';
 import 'package:appoint/features/notifications/enhanced_notifications_screen.dart';
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
@@ -137,7 +136,7 @@ final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
         path: '/ambassador-dashboard',
         name: 'ambassadorDashboard',
         builder: (context, final state) =>
-            const AmbassadorDashboardScreen(),
+            const AmbassadorDashboardScreen(, branchService: null, notificationService: null),
       ),
       GoRoute(
         path: '/ambassador-onboarding',
@@ -275,7 +274,7 @@ final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
         path: '/studio/confirm',
         name: 'studioConfirm',
         builder: (context, final state) =>
-            const studio_business.StudioBookingConfirmScreen(),
+            const studio_business.Container(),
       ),
 
       // Search route

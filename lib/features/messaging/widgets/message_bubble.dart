@@ -1,6 +1,6 @@
 import 'package:appoint/features/messaging/models/message.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart'; // Unused
 
 class MessageBubble extends StatelessWidget {
   const MessageBubble({

@@ -1,7 +1,5 @@
 import 'dart:async';
 
-import 'package:google_mobile_ads/google_mobile_ads.dart';
-
 class AdService {
   static const _testInterstitialAdId = 'ca-app-pub-3940256099942544/1033173712';
 

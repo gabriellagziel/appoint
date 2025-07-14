@@ -1,8 +1,6 @@
 import 'package:appoint/providers/google_calendar_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:googleapis/calendar/v3.dart';
-
 class GoogleIntegrationScreen extends ConsumerStatefulWidget {
   const GoogleIntegrationScreen({super.key});
 

@@ -1,5 +1,5 @@
 // This screen fetches and paginates content items from Firestore.
-import 'package:appoint/providers/content_provider.dart';
+// import 'package:appoint/providers/content_provider.dart'; // Unused
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
