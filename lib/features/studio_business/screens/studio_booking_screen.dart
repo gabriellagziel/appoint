@@ -196,7 +196,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (_) => const StudioBookingConfirmScreen(),
+              builder: (_) => const Container(),
             ),
           );
         }
@@ -265,7 +265,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
 }
 
 class StudioBookingConfirmScreen extends StatelessWidget {
-  const StudioBookingConfirmScreen({super.key});
+  const Container({super.key});
 
   @override
   Widget build(BuildContext context) => Scaffold(

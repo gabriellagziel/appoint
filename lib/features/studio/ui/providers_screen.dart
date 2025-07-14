@@ -1,5 +1,5 @@
 import 'package:appoint/models/care_provider.dart';
-import 'package:appoint/providers/care_providers_provider.dart';
+// import 'package:appoint/providers/care_providers_provider.dart'; // Unused
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

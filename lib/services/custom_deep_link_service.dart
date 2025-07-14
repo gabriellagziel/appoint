@@ -4,8 +4,6 @@ import 'package:appoint/config/environment_config.dart';
 import 'package:appoint/services/whatsapp_share_service.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:uni_links/uni_links.dart';
-
 class CustomDeepLinkService {
   CustomDeepLinkService({WhatsAppShareService? whatsappShareService}) {
     _whatsappService =
