@@ -41,7 +41,11 @@ import 'package:appoint/features/studio_business/screens/settings_screen.dart';
 import 'package:appoint/features/studio_business/screens/staff_availability_screen.dart';
 import 'package:appoint/features/studio_business/screens/studio_booking_screen.dart'
     as studio_business;
+import 'package:appoint/features/studio/studio_booking_confirm_screen.dart';
 import 'package:appoint/models/invite.dart';
+import 'package:appoint/models/family_link.dart';
+import 'package:appoint/services/notification_service.dart';
+import 'package:appoint/services/branch_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -50,13 +54,12 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 // Enhanced features imports
+import 'package:appoint/features/onboarding/onboarding_screen.dart';
 import 'package:appoint/features/onboarding/enhanced_onboarding_screen.dart';
-import 'package:appoint/features/search/screens/search_screen.dart';
 import 'package:appoint/features/messaging/screens/messages_list_screen.dart';
 import 'package:appoint/features/messaging/screens/chat_screen.dart';
-import 'package:appoint/features/subscription/subscription_screen.dart';
+import 'package:appoint/features/subscriptions/screens/subscription_screen.dart';
 import 'package:appoint/features/rewards/rewards_screen.dart';
-import 'package:appoint/features/analytics/business_analytics_screen.dart';
 import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart';
 import 'package:appoint/features/notifications/enhanced_notifications_screen.dart';
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
@@ -126,7 +129,7 @@ final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
         path: '/family/permissions',
         name: 'permissions',
         builder: (context, final state) {
-          final familyLink = state.extra as dynamic;
+          final familyLink = state.extra as FamilyLink;
           return PermissionsScreen(familyLink: familyLink);
         },
       ),
@@ -140,7 +143,10 @@ final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
         path: '/ambassador-dashboard',
         name: 'ambassadorDashboard',
         builder: (context, final state) =>
-            const AmbassadorDashboardScreen(),
+            AmbassadorDashboardScreen(
+              notificationService: NotificationService(),
+              branchService: BranchService(),
+            ),
       ),
       GoRoute(
         path: '/ambassador-onboarding',
@@ -278,7 +284,7 @@ final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
         path: '/studio/confirm',
         name: 'studioConfirm',
         builder: (context, final state) =>
-            const studio_business.StudioBookingConfirmScreen(),
+            const StudioBookingConfirmScreen(),
       ),
 
       // Search route
