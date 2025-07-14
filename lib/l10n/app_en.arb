@@ -2638,8 +2638,8 @@
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continue": "Continue",
-  "@continue": {
+  "continueText": "Continue",
+  "@continueText": {
     "description": "Localization key for: Continue"
   },
   "close1": "Close",
