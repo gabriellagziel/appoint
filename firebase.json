@@ -13,6 +13,31 @@
       }
     }
   },
+  "hosting": {
+    "public": "web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      }
+    ]
+  },
   "emulators": {
     "functions": {
       "port": 5001
@@ -23,6 +48,9 @@
     "firestore": {
       "port": 8081,
       "rules": "firestore.rules"
+    },
+    "hosting": {
+      "port": 5000
     },
     "ui": {
       "enabled": true
