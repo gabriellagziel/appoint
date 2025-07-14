@@ -1,25 +1,20 @@
 import 'package:appoint/models/notification_payload.dart';
 import 'package:appoint/services/notification_service.dart';
 import 'package:appoint/services/ui_notification_service.dart';
+import 'package:appoint/providers/fcm_token_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final notificationServiceProvider = Provider<NotificationService>(
   (ref) => NotificationService(),
 );
 
-// TODO(username): Implement proper notifications provider
+/// Provider for notifications list
 final notificationsProvider =
     StateProvider<List<NotificationPayload>>((ref) => []);
 
-// TODO(username): Implement FCM token provider
-fcmTokenProvider = FutureProvider<String?>((final ref) async {
-  // TODO(username): Replace with actual FCM token retrieval
-  return null;
-});
-
 /// Provider for the UI notification service
 /// This should be overridden in the app's main function with a real implementation
-uiNotificationServiceProvider = Provider<UINotificationService>((ref) {
+final uiNotificationServiceProvider = Provider<UINotificationService>((ref) {
   throw UnimplementedError(
     'UINotificationService not provided. '
     'Please override this provider in your main function.',
@@ -27,14 +22,13 @@ uiNotificationServiceProvider = Provider<UINotificationService>((ref) {
 });
 
 /// Provider for showing sync-related notifications
-syncNotificationProvider = Provider<SyncNotificationHelper>((ref) {
-  notificationService = ref.watch(uiNotificationServiceProvider);
+final syncNotificationProvider = Provider<SyncNotificationHelper>((ref) {
+  final notificationService = ref.watch(uiNotificationServiceProvider);
   return SyncNotificationHelper(notificationService);
 });
 
 /// Helper class for showing sync-related notifications
 class SyncNotificationHelper {
-
   SyncNotificationHelper(this._notificationService);
   final UINotificationService _notificationService;
 
