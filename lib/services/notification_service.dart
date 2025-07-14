@@ -2,6 +2,7 @@ import 'package:appoint/models/notification_payload.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:appoint/providers/fcm_token_provider.dart';
 
 /// Service for showing user notifications
 class NotificationService {
@@ -36,10 +37,16 @@ class NotificationService {
     // Removed debug print: debugPrint('BG message: ${message.messageId}');
   }
 
-  Future<String?> getToken() => _messaging.getToken();
+  /// Get FCM token using the provider
+  Future<String?> getToken() async {
+    // This method is now deprecated in favor of using the FCM Token Provider
+    // Use the provider instead for better state management
+    return await _messaging.getToken();
+  }
 
+  /// Save token for user using Firestore
   Future<void> saveTokenForUser(String uid) async {
-    token = await _messaging.getToken();
+    final token = await _messaging.getToken();
     if (token != null) {
       await _firestore
           .collection('users')
@@ -48,6 +55,7 @@ class NotificationService {
     }
   }
 
+  /// Send notification to specific token
   Future<void> sendNotification(
       final String token, final String title, final String body,
       {Map<String, dynamic>? data,}) async {
@@ -56,15 +64,17 @@ class NotificationService {
         .call({'token': token, 'title': title, 'body': body, 'data': data});
   }
 
+  /// Send notification to user by UID
   Future<void> sendNotificationToUser(
       String uid, final String title, final String body,) async {
-    doc = await _firestore.collection('users').doc(uid).get();
-    token = doc.data()?['fcmToken'] as String?;
+    final doc = await _firestore.collection('users').doc(uid).get();
+    final token = doc.data()?['fcmToken'] as String?;
     if (token != null) {
       await sendNotification(token, title, body);
     }
   }
 
+  /// Send test notification
   Future<void> sendTestNotification(
       String token, final String title, final String body,) async {
     final callable =
