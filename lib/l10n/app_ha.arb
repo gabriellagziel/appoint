@@ -1,761 +1,668 @@
 {
   "@@locale": "ha",
-  "@about": {
-    "description": "About navigation label"
-  },
-  "@accept": {
-    "description": "Description"
-  },
-  "@accessRevokedSuccessfully": {
-    "description": "Description"
-  },
-  "@add": {
-    "description": "Description"
-  },
-  "@appTitle": {
-    "description": "Description"
-  },
-  "@back": {
-    "description": "Description"
-  },
-  "@cancel": {
-    "description": "cancel description"
-  },
-  "@cancelInvite": {
-    "description": "Description"
-  },
-  "@cancelInviteConfirmation": {
-    "description": "Description"
-  },
-  "@checkingPermissions": {
-    "description": "checkingPermissions description"
-  },
-  "@choose": {
-    "description": "Description"
-  },
-  "@clicked": {
-    "description": "clicked description"
-  },
-  "@clientScreenTBD": {
-    "description": "Description"
-  },
-  "@close": {
-    "description": "close description"
-  },
-  "@composeBroadcastMessage": {
-    "description": "composeBroadcastMessage description"
-  },
-  "@confirm": {
-    "description": "Description"
-  },
-  "@confirmPassword": {
-    "description": "Description"
-  },
-  "@connectedChildren": {
-    "description": "Description"
-  },
-  "@content": {
-    "description": "content description"
-  },
-  "@copy": {
-    "description": "Description"
-  },
-  "@createGame": {
-    "description": "Description"
-  },
-  "@createLiveSession": {
-    "description": "Description"
-  },
-  "@createNew": {
-    "description": "Description"
-  },
-  "@createVirtualSession": {
-    "description": "Description"
-  },
-  "@createYourFirstGame": {
-    "description": "Description"
-  },
-  "@createYourFirstSession": {
-    "description": "Description"
-  },
-  "@created": {
-    "description": "created description"
-  },
-  "@customizeMessage": {
-    "description": "Description"
-  },
-  "@cut": {
-    "description": "Description"
-  },
-  "@dashboard": {
-    "description": "Description"
-  },
-  "@decline": {
-    "description": "Description"
-  },
-  "@defaultShareMessage": {
-    "description": "Description"
-  },
-  "@delete": {
-    "description": "Description"
-  },
-  "@details": {
-    "description": "details description"
-  },
-  "@done": {
-    "description": "Description"
-  },
-  "@download": {
-    "description": "Description"
-  },
-  "@edit": {
-    "description": "Description"
-  },
-  "@email": {
-    "description": "Description"
-  },
-  "@enableNotifications": {
-    "description": "Description"
-  },
-  "@enterGroupName": {
-    "description": "Description"
-  },
-  "@error": {
-    "description": "Description"
-  },
-  "@errorCheckingPermissions": {
-    "description": "errorCheckingPermissions description"
-  },
-  "@errorLoadingFamilyLinks": {
-    "description": "Description"
-  },
-  "@errorLoadingInvites": {
-    "description": "Description"
-  },
-  "@errorLoadingPrivacyRequests": {
-    "description": "errorLoadingPrivacyRequests description"
-  },
-  "@errorLoadingProfile": {
-    "description": "Description"
-  },
-  "@errorSavingMessage": {
-    "description": "errorSavingMessage description"
-  },
-  "@errorSendingMessage": {
-    "description": "errorSendingMessage description"
-  },
-  "@failedToActionPrivacyRequest": {
-    "description": "failedToActionPrivacyRequest description"
-  },
-  "@failedToCancelInvite": {
-    "description": "Description"
-  },
-  "@failedToResendOtp": {
-    "description": "Description"
-  },
-  "@failedToRevokeAccess": {
-    "description": "Description"
-  },
-  "@familyDashboard": {
-    "description": "Description"
-  },
-  "@familyMembers": {
-    "description": "Description"
-  },
-  "@fcmToken": {
-    "description": "Description"
-  },
-  "@forgotPassword": {
-    "description": "Description"
-  },
-  "@groupNameOptional": {
-    "description": "Description"
-  },
-  "@home": {
-    "description": "Description"
-  },
-  "@invite": {
-    "description": "Description"
-  },
-  "@inviteCancelledSuccessfully": {
-    "description": "Description"
-  },
-  "@inviteDetail": {
-    "description": "Description"
-  },
-  "@invited": {
-    "description": "Description"
-  },
-  "@knownGroupDetected": {
-    "description": "Description"
-  },
-  "@link": {
-    "description": "link description"
-  },
-  "@loading": {
-    "description": "Description"
-  },
-  "@login": {
-    "description": "Description"
-  },
-  "@logout": {
-    "description": "Description"
-  },
-  "@managePermissions": {
-    "description": "Description"
-  },
-  "@mediaOptional": {
-    "description": "mediaOptional description"
-  },
-  "@meetingReadyMessage": {
-    "description": "Description"
-  },
-  "@meetingSharedSuccessfully": {
-    "description": "Description"
-  },
-  "@messageSavedSuccessfully": {
-    "description": "messageSavedSuccessfully description"
-  },
-  "@messageSentSuccessfully": {
-    "description": "messageSentSuccessfully description"
-  },
-  "@myInvites": {
-    "description": "Description"
-  },
-  "@myProfile": {
-    "description": "Description"
-  },
-  "@next": {
-    "description": "Description"
-  },
-  "@no": {
-    "description": "Description"
-  },
-  "@noBroadcastMessages": {
-    "description": "noBroadcastMessages description"
-  },
-  "@noFamilyMembersYet": {
-    "description": "Description"
-  },
-  "@noGamesYet": {
-    "description": "Description"
-  },
-  "@noInvites": {
-    "description": "Description"
-  },
-  "@noPermissionForBroadcast": {
-    "description": "noPermissionForBroadcast description"
-  },
-  "@noProfileFound": {
-    "description": "Description"
-  },
-  "@noResults": {
-    "description": "Description"
-  },
-  "@noSessionsYet": {
-    "description": "Description"
-  },
-  "@notificationSettings": {
-    "description": "Description"
-  },
-  "@notifications": {
-    "description": "Description"
-  },
-  "@ok": {
-    "description": "Description"
-  },
-  "@opened": {
-    "description": "opened description"
-  },
-  "@otpResentSuccessfully": {
-    "description": "Description"
-  },
-  "@participants": {
-    "description": "Description"
-  },
-  "@password": {
-    "description": "Description"
-  },
-  "@paste": {
-    "description": "Description"
-  },
-  "@pendingInvites": {
-    "description": "Description"
-  },
-  "@pickImage": {
-    "description": "pickImage description"
-  },
-  "@pickVideo": {
-    "description": "pickVideo description"
-  },
-  "@playtimeApprove": {
-    "description": "Description"
-  },
-  "@playtimeChooseFriends": {
-    "description": "Description"
-  },
-  "@playtimeChooseGame": {
-    "description": "Description"
-  },
-  "@playtimeChooseTime": {
-    "description": "Description"
-  },
-  "@playtimeCreate": {
-    "description": "Description"
-  },
-  "@playtimeCreateSession": {
-    "description": "Description"
-  },
-  "@playtimeDescription": {
-    "description": "Description"
-  },
-  "@playtimeEnterGameName": {
-    "description": "Description"
-  },
-  "@playtimeGameApproved": {
-    "description": "Description"
-  },
-  "@playtimeGameDeleted": {
-    "description": "Description"
-  },
-  "@playtimeGameRejected": {
-    "description": "Description"
-  },
-  "@playtimeHub": {
-    "description": "Description"
-  },
-  "@playtimeLandingChooseMode": {
-    "description": "Description"
-  },
-  "@playtimeLive": {
-    "description": "Description"
-  },
-  "@playtimeLiveScheduled": {
-    "description": "Description"
-  },
-  "@playtimeModeLive": {
-    "description": "Description"
-  },
-  "@playtimeModeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeNoSessions": {
-    "description": "Description"
-  },
-  "@playtimeParentDashboardTitle": {
-    "description": "Description"
-  },
-  "@playtimeReject": {
-    "description": "Description"
-  },
-  "@playtimeTitle": {
-    "description": "Description"
-  },
-  "@playtimeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeVirtualStarted": {
-    "description": "Description"
-  },
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Description"
-  },
-  "@pollOptions": {
-    "description": "pollOptions description"
-  },
-  "@previous": {
-    "description": "Description"
-  },
-  "@profile": {
-    "description": "Description"
-  },
-  "@quickActions": {
-    "description": "Description"
-  },
-  "@recentGames": {
-    "description": "Description"
-  },
-  "@recipients": {
-    "description": "recipients description"
-  },
-  "@redo": {
-    "description": "Description"
-  },
+  "refresh": "Refresh",
   "@refresh": {
     "description": "Description"
   },
-  "@removeChild": {
+  "home": "Farko",
+  "@home": {
     "description": "Description"
   },
-  "@requestType": {
-    "description": "requestType description"
-  },
-  "@retry": {
+  "noSessionsYet": "No sessions yet",
+  "@noSessionsYet": {
     "description": "Description"
   },
-  "@revoke": {
+  "ok": "OK",
+  "@ok": {
     "description": "Description"
   },
-  "@revokeAccess": {
+  "playtimeLandingChooseMode": "Choose your play mode:",
+  "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "@revokeAccessConfirmation": {
-    "description": "Description"
-  },
-  "@save": {
-    "description": "save description"
-  },
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
-  "@scheduleForLater": {
-    "description": "scheduleForLater description"
-  },
-  "@scheduleMessage": {
-    "description": "Description"
-  },
-  "@scheduled": {
-    "description": "scheduled description"
-  },
-  "@scheduledFor": {
-    "description": "Description"
-  },
-  "@scheduling": {
-    "description": "scheduling description"
-  },
-  "@search": {
-    "description": "Description"
-  },
-  "@select": {
-    "description": "Description"
-  },
-  "@sendNow": {
-    "description": "sendNow description"
-  },
-  "@settings": {
-    "description": "Description"
-  },
-  "@share": {
-    "description": "Description"
-  },
-  "@shareOnWhatsApp": {
-    "description": "Description"
-  },
+  "signUp": "Sign Up",
   "@signUp": {
     "description": "Description"
   },
-  "@staffScreenTBD": {
+  "scheduleMessage": "Schedule Message",
+  "@scheduleMessage": {
     "description": "Description"
   },
-  "@status": {
-    "description": "status description"
+  "decline": "Kiɗe",
+  "@decline": {
+    "description": "Description"
   },
-  "@statusColon": {
-    "description": "statusColon description"
+  "adminBroadcast": "Faɗaɗa mai kulawa",
+  "@adminBroadcast": {
+    "description": "Localization key for: Admin Broadcast"
   },
+  "login": "Shiga",
+  "@login": {
+    "description": "Description"
+  },
+  "playtimeChooseFriends": "Choose friends to invite",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "noInvites": "Babu gayyata",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "playtimeChooseTime": "Choose a time",
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "success": "Success",
   "@success": {
     "description": "Description"
   },
-  "@targetingFilters": {
-    "description": "targetingFilters description"
-  },
-  "@type": {
-    "description": "type description"
-  },
+  "undo": "Undo",
   "@undo": {
     "description": "Description"
   },
-  "@upcomingSessions": {
+  "opened": "An buɗe: {count}",
+  "@opened": {
+    "description": "opened description"
+  },
+  "createVirtualSession": "Create Virtual Session",
+  "@createVirtualSession": {
     "description": "Description"
   },
-  "@upload": {
+  "messageSentSuccessfully": "Saƙon an aika cikin nasara",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "redo": "Redo",
+  "@redo": {
     "description": "Description"
   },
-  "@viewAll": {
+  "next": "Gaba",
+  "@next": {
     "description": "Description"
   },
-  "@welcome": {
+  "search": "Search",
+  "@search": {
     "description": "Description"
   },
-  "@welcomeToPlaytime": {
+  "cancelInviteConfirmation": "Kuna da tabbacin kuna son soke wannan gayyata?",
+  "@cancelInviteConfirmation": {
     "description": "Description"
   },
+  "created": "An ƙirƙira: {date}",
+  "@created": {
+    "description": "created description"
+  },
+  "revokeAccess": "Cire izini",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "saveGroupForRecognition": "Ajiye rukuni don gane shi gaba",
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
+  "playtimeLiveScheduled": "Live playtime scheduled!",
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "revokeAccessConfirmation": "Kuna da tabbacin cire izinin wannan yaron? Wannan aikin ba za a iya maida shi ba.",
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "download": "Download",
+  "@download": {
+    "description": "Description"
+  },
+  "password": "Kalmar wucewa",
+  "@password": {
+    "description": "Description"
+  },
+  "errorLoadingFamilyLinks": "Kuskure wajen ɗora alaƙar iyali: {error}",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "cancel": "Sokewa",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "playtimeCreate": "Create",
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "failedToActionPrivacyRequest": "An kasa {action} buƙatar sirri: {error}",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "appTitle": "Appoint",
+  "@appTitle": {
+    "description": "Description"
+  },
+  "accept": "Amince",
+  "@accept": {
+    "description": "Description"
+  },
+  "playtimeModeVirtual": "Virtual Play",
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "playtimeDescription": "Enjoy live or virtual games with your friends!",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Description"
+  },
+  "playtimeVirtualStarted": "Virtual playtime started!",
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createYourFirstGame": "Create your first game",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "participants": "Participants",
+  "@participants": {
+    "description": "Description"
+  },
+  "recipients": "Masu karɓa: {count}",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "noResults": "No results found",
+  "@noResults": {
+    "description": "Description"
+  },
+  "yes": "I",
   "@yes": {
     "description": "yes description"
   },
-  "@yesCancel": {
+  "invite": "Gayyata",
+  "@invite": {
+    "description": "Description"
+  },
+  "playtimeModeLive": "Live Play",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "done": "Done",
+  "@done": {
+    "description": "Description"
+  },
+  "defaultShareMessage": "Sannu! Mun shirya taro tare da kai ta APP‑OINT. Danna nan don tabbatarwa ko ba da shawarar wata lokaci:",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "no": "A'a",
+  "@no": {
+    "description": "Description"
+  },
+  "playtimeHub": "Playtime Hub",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "createLiveSession": "Create Live Session",
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "enableNotifications": "Kunna sanarwa",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "invited": "An gayyace: {date}",
+  "@invited": {
+    "description": "Description"
+  },
+  "content": "Abun ciki: {content}",
+  "@content": {
+    "description": "content description"
+  },
+  "meetingSharedSuccessfully": "An raba taron cikin nasara!",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "welcomeToPlaytime": "Welcome to Playtime",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "viewAll": "View All",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "playtimeVirtual": "Virtual Play",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "staffScreenTBD": "Fuskar ma'aikata – A ci gaba",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "cut": "Cut",
+  "@cut": {
+    "description": "Description"
+  },
+  "inviteCancelledSuccessfully": "An soke gayyata cikin nasara!",
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Description"
+  },
+  "composeBroadcastMessage": "Rubuta saƙon faɗaɗa",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "sendNow": "Aika yanzu",
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "noGamesYet": "No games yet",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "select": "Select",
+  "@select": {
     "description": "Description"
   },
   "about": "About",
-  "accept": "Amince",
-  "accessRevokedSuccessfully": "An cire izini cikin nasara!",
-  "add": "Add",
-  "appTitle": "Appoint",
-  "back": "Back",
-  "cancel": "Sokewa",
-  "cancelInvite": "Soke gayyata",
-  "cancelInviteConfirmation": "Kuna da tabbacin kuna son soke wannan gayyata?",
-  "checkingPermissions": "Ana duba izini...",
+  "@about": {
+    "description": "About navigation label"
+  },
   "choose": "Choose",
-  "clicked": "An danna: {count}",
-  "clientScreenTBD": "Fuskar abokin ciniki – A ci gaba",
-  "close": "Rufe",
-  "composeBroadcastMessage": "Rubuta saƙon faɗaɗa",
-  "confirm": "Confirm",
-  "confirmPassword": "Confirm Password",
-  "connectedChildren": "Ɗalibai haɗe",
-  "content": "Abun ciki: {content}",
-  "copy": "Copy",
-  "createGame": "Create Game",
-  "createLiveSession": "Create Live Session",
-  "createNew": "Create New",
-  "createVirtualSession": "Create Virtual Session",
-  "createYourFirstGame": "Create your first game",
-  "createYourFirstSession": "Create your first session",
-  "created": "An ƙirƙira: {date}",
-  "customizeMessage": "Keɓance saƙonka...",
-  "cut": "Cut",
-  "dashboard": "Dashboard",
-  "decline": "Kiɗe",
-  "defaultShareMessage": "Sannu! Mun shirya taro tare da kai ta APP‑OINT. Danna nan don tabbatarwa ko ba da shawarar wata lokaci:",
-  "delete": "Delete",
-  "details": "Cikakkun bayanai",
-  "done": "Done",
-  "download": "Download",
-  "edit": "Edit",
-  "email": "Imel",
-  "enableNotifications": "Kunna sanarwa",
-  "enterGroupName": "Shigar da sunan rukuni don gane shi",
-  "error": "Error",
-  "errorCheckingPermissions": "Kuskure wajen duba izini: {error}",
-  "errorLoadingFamilyLinks": "Kuskure wajen ɗora alaƙar iyali: {error}",
-  "errorLoadingInvites": "Kuskure wajen ɗora gayyata",
-  "errorLoadingPrivacyRequests": "Kuskure wajen ɗora buƙatun sirri: {error}",
-  "errorLoadingProfile": "Kuskure wajen ɗora bayani",
-  "errorSavingMessage": "Kuskure wajen ajiye saƙo: {error}",
-  "errorSendingMessage": "Kuskure wajen aika saƙo: {error}",
-  "failedToActionPrivacyRequest": "An kasa {action} buƙatar sirri: {error}",
-  "failedToCancelInvite": "An kasa soke gayyata: {error}",
-  "failedToResendOtp": "An kasa sake aika OTP: {error}",
-  "failedToRevokeAccess": "An kasa cire izini: {error}",
-  "familyDashboard": "Dashboard na iyali",
-  "familyMembers": "'Yan uwa",
-  "fcmToken": "FCM Token: {token}",
-  "forgotPassword": "Forgot Password?",
-  "groupNameOptional": "Sunan rukuni (zaɓi)",
-  "home": "Farko",
-  "invite": "Gayyata",
-  "inviteCancelledSuccessfully": "An soke gayyata cikin nasara!",
-  "inviteDetail": "Cikakken gayyata",
-  "invited": "An gayyace: {date}",
-  "knownGroupDetected": "An sami sanannen rukuni",
-  "link": "Haɗi: {link}",
-  "loading": "Ana ɗora...",
-  "login": "Shiga",
-  "logout": "Logout",
-  "managePermissions": "Sarrafa izini",
-  "mediaOptional": "Kafofi (zaɓi)",
-  "meetingReadyMessage": "An shirya taro! Kuna son a tura shi zuwa rukunin ku?",
-  "meetingSharedSuccessfully": "An raba taron cikin nasara!",
-  "messageSavedSuccessfully": "Saƙon an ajiye cikin nasara",
-  "messageSentSuccessfully": "Saƙon an aika cikin nasara",
-  "myInvites": "Gayyatar da na samu",
-  "myProfile": "Bayana",
-  "next": "Gaba",
-  "no": "A'a",
-  "noBroadcastMessages": "Babu saƙonnin faɗaɗa tukuna",
-  "noFamilyMembersYet": "Babu membobin iyali tukuna. Aika gayyata don farawa!",
-  "noGamesYet": "No games yet",
-  "noInvites": "Babu gayyata",
-  "noPermissionForBroadcast": "Ba ku da izini don ƙirƙirar saƙonnin faɗaɗa.",
-  "noProfileFound": "Ba a sami bayani ba",
-  "noResults": "No results found",
-  "noSessionsYet": "No sessions yet",
-  "notificationSettings": "Saitunan sanarwa",
-  "notifications": "Sanarwa",
-  "ok": "OK",
-  "opened": "An buɗe: {count}",
-  "otpResentSuccessfully": "An sake aika OTP cikin nasara!",
-  "participants": "Participants",
-  "password": "Kalmar wucewa",
-  "paste": "Paste",
-  "pendingInvites": "Gayyata a tsaye",
-  "pickImage": "Zaɓi hoto",
-  "pickVideo": "Zaɓi bidiyo",
-  "playtimeApprove": "Approve",
-  "playtimeChooseFriends": "Choose friends to invite",
-  "playtimeChooseGame": "Choose a game",
-  "playtimeChooseTime": "Choose a time",
-  "playtimeCreate": "Create",
-  "playtimeCreateSession": "Create a Playtime Session",
-  "playtimeDescription": "Enjoy live or virtual games with your friends!",
-  "playtimeEnterGameName": "Enter game name",
-  "playtimeGameApproved": "Game approved",
-  "playtimeGameDeleted": "Game deleted",
-  "playtimeGameRejected": "Game rejected",
-  "playtimeHub": "Playtime Hub",
-  "playtimeLandingChooseMode": "Choose your play mode:",
-  "playtimeLive": "Live Play",
-  "playtimeLiveScheduled": "Live playtime scheduled!",
-  "playtimeModeLive": "Live Play",
-  "playtimeModeVirtual": "Virtual Play",
-  "playtimeNoSessions": "No playtime sessions found.",
-  "playtimeParentDashboardTitle": "Playtime Dashboard",
-  "playtimeReject": "Reject",
-  "playtimeTitle": "Playtime",
-  "playtimeVirtual": "Virtual Play",
-  "playtimeVirtualStarted": "Virtual playtime started!",
-  "pleaseLoginForFamilyFeatures": "Don Allah shiga don amfani da fasalolin iyali",
-  "pleaseLoginToViewProfile": "Please log in to view your profile.",
-  "pollOptions": "Zaɓuɓɓuka:",
-  "previous": "Previous",
+  "@choose": {
+    "description": "Description"
+  },
   "profile": "Bayani",
-  "quickActions": "Quick Actions",
-  "recentGames": "Recent Games",
-  "recipients": "Masu karɓa: {count}",
-  "redo": "Redo",
-  "refresh": "Refresh",
+  "@profile": {
+    "description": "Description"
+  },
   "removeChild": "Cire yaro",
-  "requestType": "Buƙatar {type}",
-  "retry": "Retry",
-  "revoke": "Cire",
-  "revokeAccess": "Cire izini",
-  "revokeAccessConfirmation": "Kuna da tabbacin cire izinin wannan yaron? Wannan aikin ba za a iya maida shi ba.",
-  "save": "Ajiye",
-  "saveGroupForRecognition": "Ajiye rukuni don gane shi gaba",
-  "scheduleForLater": "Saita zuwa gaba",
-  "scheduleMessage": "Schedule Message",
-  "scheduled": "An tsara: {date}",
-  "scheduledFor": "Scheduled for",
-  "scheduling": "Jadawalin lokaci",
-  "search": "Search",
-  "select": "Select",
-  "sendNow": "Aika yanzu",
-  "settings": "Settings",
-  "share": "Share",
-  "shareOnWhatsApp": "Raba a WhatsApp",
-  "signUp": "Sign Up",
-  "staffScreenTBD": "Fuskar ma'aikata – A ci gaba",
+  "@removeChild": {
+    "description": "Description"
+  },
   "status": "Matsayi: {status}",
-  "statusColon": "Matsayi: {status}",
-  "success": "Success",
-  "targetingFilters": "Matattarar manufa",
-  "type": "Nau'i: {type}",
-  "undo": "Undo",
-  "upcomingSessions": "Upcoming Sessions",
-  "upload": "Upload",
-  "viewAll": "View All",
+  "@status": {
+    "description": "status description"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Description"
+  },
+  "paste": "Paste",
+  "@paste": {
+    "description": "Description"
+  },
   "welcome": "Barka da zuwa",
-  "welcomeToPlaytime": "Welcome to Playtime",
-  "yes": "I",
+  "@welcome": {
+    "description": "Description"
+  },
+  "playtimeCreateSession": "Create a Playtime Session",
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "familyMembers": "'Yan uwa",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "upload": "Upload",
+  "@upload": {
+    "description": "Description"
+  },
+  "upcomingSessions": "Upcoming Sessions",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "enterGroupName": "Shigar da sunan rukuni don gane shi",
+  "@enterGroupName": {
+    "description": "Description"
+  },
+  "confirm": "Confirm",
+  "@confirm": {
+    "description": "Description"
+  },
+  "playtimeLive": "Live Play",
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "errorLoadingInvites": "Kuskure wajen ɗora gayyata",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "targetingFilters": "Matattarar manufa",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "pickVideo": "Zaɓi bidiyo",
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "playtimeGameDeleted": "Game deleted",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "scheduleForLater": "Saita zuwa gaba",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "accessRevokedSuccessfully": "An cire izini cikin nasara!",
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "type": "Nau'i: {type}",
+  "@type": {
+    "description": "type description"
+  },
+  "checkingPermissions": "Ana duba izini...",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "copy": "Copy",
+  "@copy": {
+    "description": "Description"
+  },
   "yesCancel": "Ee, a'aika",
-  "errorEstimatingRecipients": "Kuskure wajen hasashen masu karɓa: {error}",
-  "@errorEstimatingRecipients": {
-    "description": "errorEstimatingRecipients description"
+  "@yesCancel": {
+    "description": "Description"
   },
-  "errorPickingImage": "Kuskure wajen zaɓar hoto: {error}",
-  "@errorPickingImage": {
-    "description": "errorPickingImage description"
+  "email": "Imel",
+  "@email": {
+    "description": "Description"
   },
-  "errorPickingVideo": "Kuskure wajen zaɓar bidiyo: {error}",
-  "@errorPickingVideo": {
-    "description": "errorPickingVideo description"
+  "shareOnWhatsApp": "Raba a WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Description"
   },
-  "organizations": "Ƙungiyoyi",
-  "@organizations": {
-    "description": "organizations description"
+  "notificationSettings": "Saitunan sanarwa",
+  "@notificationSettings": {
+    "description": "Description"
   },
-  "noOrganizations": "Babu ƙungiyoyi",
-  "@noOrganizations": {
-    "description": "noOrganizations description"
+  "myProfile": "Bayana",
+  "@myProfile": {
+    "description": "Description"
   },
-  "errorLoadingOrganizations": "Kuskure wajen ɗora ƙungiyoyi",
-  "@errorLoadingOrganizations": {
-    "description": "errorLoadingOrganizations description"
+  "revoke": "Cire",
+  "@revoke": {
+    "description": "Description"
   },
-  "members": "mambobi: {count}",
-  "@members": {
-    "description": "members description"
+  "noBroadcastMessages": "Babu saƙonnin faɗaɗa tukuna",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
   },
-  "users": "Masu amfani",
-  "@users": {
-    "description": "users description"
+  "requestType": "Buƙatar {type}",
+  "@requestType": {
+    "description": "requestType description"
   },
-  "noUsers": "Babu masu amfani",
-  "@noUsers": {
-    "description": "noUsers description"
+  "notifications": "Sanarwa",
+  "@notifications": {
+    "description": "Description"
   },
-  "errorLoadingUsers": "Kuskure wajen ɗora masu amfani",
-  "@errorLoadingUsers": {
-    "description": "errorLoadingUsers description"
+  "details": "Cikakkun bayanai",
+  "@details": {
+    "description": "details description"
   },
-  "changeRole": "Canza matsayi",
-  "@changeRole": {
-    "description": "changeRole description"
+  "cancelInvite": "Soke gayyata",
+  "@cancelInvite": {
+    "description": "Description"
   },
-  "totalAppointments": "Jimlar haduwa",
-  "@totalAppointments": {
-    "description": "totalAppointments description"
+  "createNew": "Create New",
+  "@createNew": {
+    "description": "Description"
   },
-  "completedAppointments": "An kammala haduwa",
-  "@completedAppointments": {
-    "description": "completedAppointments description"
+  "settings": "Settings",
+  "@settings": {
+    "description": "Description"
   },
-  "revenue": "Kudaden shiga",
-  "@revenue": {
-    "description": "revenue description"
+  "playtimeReject": "Reject",
+  "@playtimeReject": {
+    "description": "Description"
   },
-  "errorLoadingStats": "Kuskure wajen ɗora ƙididdiga",
-  "@errorLoadingStats": {
-    "description": "errorLoadingStats description"
+  "errorLoadingProfile": "Kuskure wajen ɗora bayani",
+  "@errorLoadingProfile": {
+    "description": "Description"
   },
-  "appointment": "Haduwa: {id}",
-  "@appointment": {
-    "description": "appointment description"
+  "edit": "Edit",
+  "@edit": {
+    "description": "Description"
   },
-  "from": "Daga: {name}",
-  "@from": {
-    "description": "from description"
+  "add": "Add",
+  "@add": {
+    "description": "Description"
   },
-  "phone": "Waya: {number}",
-  "@phone": {
-    "description": "phone description"
+  "playtimeGameApproved": "Game approved",
+  "@playtimeGameApproved": {
+    "description": "Description"
   },
-  "noRouteDefined": "Ba a ƙayyade hanya ba don {route}",
-  "@noRouteDefined": {
-    "description": "noRouteDefined description"
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": {
+    "description": "Description"
   },
-  "meetingDetails": "Cikakken bayani game da taro",
-  "@meetingDetails": {
-    "description": "meetingDetails description"
+  "familyDashboard": "Dashboard na iyali",
+  "@familyDashboard": {
+    "description": "Description"
   },
-  "meetingId": "ID na taro: {id}",
-  "@meetingId": {
-    "description": "meetingId description"
+  "loading": "Ana ɗora...",
+  "@loading": {
+    "description": "Description"
   },
-  "creator": "Mai ƙirƙira: {id}",
-  "@creator": {
-    "description": "creator description"
+  "quickActions": "Quick Actions",
+  "@quickActions": {
+    "description": "Description"
   },
-  "context": "Mahallin: {id}",
-  "@context": {
-    "description": "context description"
+  "playtimeTitle": "Playtime",
+  "@playtimeTitle": {
+    "description": "Description"
   },
-  "group": "Rukuni: {id}",
-  "@group": {
-    "description": "group description"
+  "otpResentSuccessfully": "An sake aika OTP cikin nasara!",
+  "@otpResentSuccessfully": {
+    "description": "Description"
   },
-  "requestPrivateSession": "Buƙaci zaman sirri",
-  "@requestPrivateSession": {
-    "description": "requestPrivateSession description"
+  "errorCheckingPermissions": "Kuskure wajen duba izini: {error}",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
   },
-  "privacyRequestSent": "An aika buƙatar sirri zuwa iyaye!",
-  "@privacyRequestSent": {
-    "description": "privacyRequestSent description"
+  "clientScreenTBD": "Fuskar abokin ciniki – A ci gaba",
+  "@clientScreenTBD": {
+    "description": "Description"
   },
-  "failedToSendPrivacyRequest": "An kasa aika buƙatar sirri: {error}",
-  "@failedToSendPrivacyRequest": {
-    "description": "failedToSendPrivacyRequest description"
+  "fcmToken": "FCM Token: {token}",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "pickImage": "Zaɓi hoto",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "previous": "Previous",
+  "@previous": {
+    "description": "Description"
+  },
+  "noProfileFound": "Ba a sami bayani ba",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "noFamilyMembersYet": "Babu membobin iyali tukuna. Aika gayyata don farawa!",
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "mediaOptional": "Kafofi (zaɓi)",
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "messageSavedSuccessfully": "Saƙon an ajiye cikin nasara",
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "scheduledFor": "Scheduled for",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "description": "Description"
+  },
+  "noPermissionForBroadcast": "Ba ku da izini don ƙirƙirar saƙonnin faɗaɗa.",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "@playtimeAdminPanelTitle": {
+    "description": "Localization key for: Playtime Games – Admin"
+  },
+  "inviteDetail": "Cikakken gayyata",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "scheduled": "An tsara: {date}",
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "failedToResendOtp": "An kasa sake aika OTP: {error}",
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "scheduling": "Jadawalin lokaci",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "errorSavingMessage": "Kuskure wajen ajiye saƙo: {error}",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "save": "Ajiye",
+  "@save": {
+    "description": "save description"
+  },
+  "playtimeApprove": "Approve",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "createYourFirstSession": "Create your first session",
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "playtimeGameRejected": "Game rejected",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "failedToRevokeAccess": "An kasa cire izini: {error}",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "recentGames": "Recent Games",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "customizeMessage": "Keɓance saƙonka...",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "failedToCancelInvite": "An kasa soke gayyata: {error}",
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "errorSendingMessage": "Kuskure wajen aika saƙo: {error}",
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "confirmPassword": "Confirm Password",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "errorLoadingPrivacyRequests": "Kuskure wajen ɗora buƙatun sirri: {error}",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "connectedChildren": "Ɗalibai haɗe",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "share": "Share",
+  "@share": {
+    "description": "Description"
+  },
+  "playtimeEnterGameName": "Enter game name",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "pleaseLoginForFamilyFeatures": "Don Allah shiga don amfani da fasalolin iyali",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "myInvites": "Gayyatar da na samu",
+  "@myInvites": {
+    "description": "Description"
+  },
+  "createGame": "Create Game",
+  "@createGame": {
+    "description": "Description"
+  },
+  "groupNameOptional": "Sunan rukuni (zaɓi)",
+  "@groupNameOptional": {
+    "description": "Description"
+  },
+  "playtimeNoSessions": "No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "adminScreenTBD": "Fuskar mai kulawa – A ci gaba",
+  "@adminScreenTBD": {
+    "description": "Localization key for: Admin screen coming soon"
+  },
+  "playtimeParentDashboardTitle": "Playtime Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "close": "Rufe",
+  "@close": {
+    "description": "close description"
+  },
+  "knownGroupDetected": "An sami sanannen rukuni",
+  "@knownGroupDetected": {
+    "description": "Description"
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Description"
+  },
+  "playtimeChooseGame": "Choose a game",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "managePermissions": "Sarrafa izini",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "pollOptions": "Zaɓuɓɓuka:",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "clicked": "An danna: {count}",
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "link": "Haɗi: {link}",
+  "@link": {
+    "description": "link description"
+  },
+  "meetingReadyMessage": "An shirya taro! Kuna son a tura shi zuwa rukunin ku?",
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "pendingInvites": "Gayyata a tsaye",
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "statusColon": "Matsayi: {status}",
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "pleaseLoginToViewProfile": "Please log in to view your profile.",
+  "@pleaseLoginToViewProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "adminMetrics": "Admin Metrics",
+  "@adminMetrics": {
+    "description": "Localization key for: Admin Metrics"
   },
   "overview": "Overview",
   "@overview": {
@@ -765,66 +672,2192 @@
   "@bookings": {
     "description": "Description"
   },
+  "users": "Masu amfani",
+  "@users": {
+    "description": "users description"
+  },
+  "revenue": "Kudaden shiga",
+  "@revenue": {
+    "description": "revenue description"
+  },
   "contentLibrary": "Content Library",
-  "menu": "Menu",
-  "signOut": "Fice",
-  "signIn": "Shiga ciki",
-  "bookMeeting": "Tanadi Taro",
-  "bookAppointment": "Tanadi Haduwa",
-  "bookingRequest": "Buƙatar tanadi",
-  "confirmBooking": "Tabbatar da tanadi",
-  "chatBooking": "Tanadi ta hira",
-  "bookViaChat": "Tanadi ta hira",
-  "submitBooking": "Miƙa tanadi",
-  "selectStaff": "Zaɓi ma'aikata",
-  "pickDate": "Zaɓi Kwanan wata",
-  "staff": "Ma'aikata",
-  "service": "Sabis",
-  "dateTime": "Kwanan wata & Lokaci",
-  "duration": "Tsawon lokaci: {duration} minti",
-  "notSelected": "Ba a zaɓi ba",
-  "noSlots": "Babu wurare",
-  "bookingConfirmed": "An tabbatar da tanadi",
-  "failedToConfirmBooking": "An kasa tabbatar da tanadi",
-  "noBookingsFound": "Ba a sami tanadi ba",
-  "errorLoadingBookings": "Kuskure wajen ɗora tanadi: {error}",
-  "shareMeetingInvitation": "Raba gayyatar taro:",
-  "bookingConfirmedShare": "An tabbatar da tanadi! Yanzu za ka iya raba gayyata.",
-  "businessDashboard": "Dashboard na kasuwanci",
-  "inviteContact": "Tuntuɓi gayyata",
-  "sendInvite": "Aika gayyata",
-  "name": "Suna",
-  "phoneNumber": "Lambar waya",
-  "emailOptional": "Imel (zaɓi)",
-  "requiresInstallFallback": "Yana buƙatar shigarwa",
-  "errorFetchingToken": "Kuskure wajen samin token",
-  "inviteChild": "Gayyaci yaro",
-  "childEmail": "Imel ɗan yaro",
-  "childEmailOrPhone": "Imel ko waya ɗan yaro",
-  "enterChildEmail": "Shigar da imel ɗan yaro",
-  "otpCode": "Lambar OTP",
-  "enterOtp": "Shigar da OTP",
-  "verify": "Tabbatar",
-  "childLinkedSuccessfully": "An haɗa yaro cikin nasara!",
-  "invitationSentSuccessfully": "An aika gayyata cikin nasara!",
-  "failedToSendInvitation": "An kasa aikawa gayyata: {error}",
-  "pleaseEnterValidEmail": "Da fatan a shigar da ingantaccen imel",
-  "pleaseEnterValidEmailOrPhone": "Da fatan a shigar da ingantaccen imel ko waya",
-  "invalidCode": "Lambar ba ta da inganci, sake gwadawa",
-  "grantConsent": "Ba da yarda",
-  "revokeConsent": "Cire yarda",
-  "consentGrantedSuccessfully": "An ba da yarda cikin nasara!",
-  "consentRevokedSuccessfully": "An cire yarda cikin nasara!",
-  "failedToUpdateConsent": "An kasa sabunta yarda: {error}",
+  "@contentLibrary": {
+    "description": "Localization key for: Content Library"
+  },
+  "authErrorUserNotFound": "No account found with this email address.",
+  "@authErrorUserNotFound": {
+    "description": "Localization key for: No account found with this email address."
+  },
+  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "@authErrorWrongPassword": {
+    "description": "Localization key for: Incorrect password. Please try again."
+  },
+  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Localization key for: Please enter a valid email address."
+  },
+  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "@authErrorUserDisabled": {
+    "description": "Localization key for: This account has been disabled. Please contact support."
+  },
+  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "@authErrorWeakPassword": {
+    "description": "Localization key for: Password is too weak. Please choose a stronger password."
+  },
+  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Localization key for: An account with this email already exists."
+  },
+  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "@authErrorTooManyRequests": {
+    "description": "Localization key for: Too many failed attempts. Please try again later."
+  },
+  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
+  },
+  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "@authErrorInvalidCredential": {
+    "description": "Localization key for: Invalid credentials. Please try again."
+  },
+  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: An account already exists with this email using a different sign-in method."
+  },
+  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Localization key for: These credentials are already associated with another account."
+  },
+  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Localization key for: Network error. Please check your connection and try again."
+  },
+  "socialAccountConflictTitle": "Account Already Exists (Hausa)",
+  "@socialAccountConflictTitle": {
+    "description": "Localization key for: Account Already Exists"
+  },
+  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Hausa)",
+  "@socialAccountConflictMessage": {
+    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
+  },
+  "linkAccounts": "Link Accounts (Hausa)",
+  "@linkAccounts": {
+    "description": "Localization key for: Link Accounts"
+  },
+  "signInWithExistingMethod": "Sign in with existing method (Hausa)",
+  "@signInWithExistingMethod": {
+    "description": "Localization key for: Sign in with existing method"
+  },
+  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Please log in again to perform this operation."
+  },
+  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
+  },
+  "REDACTED_TOKEN": "The verification code is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The verification code is invalid."
+  },
+  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: The verification ID is invalid."
+  },
+  "REDACTED_TOKEN": "Please enter the verification code.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Please enter the verification code."
+  },
+  "authErrorMissingVerificationId": "Missing verification ID.",
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Missing verification ID."
+  },
+  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: The phone number is invalid."
+  },
+  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Please enter a phone number."
+  },
+  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
+  },
+  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: The verification code has expired. Please request a new one."
+  },
+  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Your session has expired. Please log in again."
+  },
+  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Multi-factor authentication is required."
+  },
+  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Multi-factor information not found."
+  },
+  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Missing multi-factor session."
+  },
+  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Invalid multi-factor session."
+  },
+  "REDACTED_TOKEN": "This second factor is already in use.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: This second factor is already in use."
+  },
+  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Maximum number of second factors exceeded."
+  },
+  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
+  },
+  "REDACTED_TOKEN": "Email change requires verification.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Email change requires verification."
+  },
+  "REDACTED_TOKEN": "This phone number is already in use.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: This phone number is already in use."
+  },
+  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: The password is invalid or too weak."
+  },
+  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: The ID token is invalid."
+  },
+  "authErrorIdTokenExpired": "The ID token has expired.",
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: The ID token has expired."
+  },
+  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: The ID token has been revoked."
+  },
+  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "@authErrorInternalError": {
+    "description": "Localization key for: An internal error occurred. Please try again."
+  },
+  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: An invalid argument was provided."
+  },
+  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Invalid custom claims provided."
+  },
+  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: The continue URL is invalid."
+  },
+  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: The creation time is invalid."
+  },
+  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: The disabled field value is invalid."
+  },
+  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: The display name is invalid."
+  },
+  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The dynamic link domain is invalid."
+  },
+  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: The email verified value is invalid."
+  },
+  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: The hash algorithm is invalid."
+  },
+  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: The hash block size is invalid."
+  },
+  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The hash derived key length is invalid."
+  },
+  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: The hash key is invalid."
+  },
+  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: The hash memory cost is invalid."
+  },
+  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The hash parallelization is invalid."
+  },
+  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: The hash rounds value is invalid."
+  },
+  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The hash salt separator is invalid."
+  },
+  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: The last sign-in time is invalid."
+  },
+  "authErrorInvalidPageToken": "The page token is invalid.",
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: The page token is invalid."
+  },
+  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: The provider data is invalid."
+  },
+  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: The provider ID is invalid."
+  },
+  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The session cookie duration is invalid."
+  },
+  "authErrorInvalidUid": "The UID is invalid.",
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: The UID is invalid."
+  },
+  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: The user import record is invalid."
+  },
+  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Maximum user import count exceeded."
+  },
+  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Missing Android package name."
+  },
+  "authErrorMissingContinueUri": "Missing continue URL.",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Missing continue URL."
+  },
+  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Missing hash algorithm."
+  },
+  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Missing iOS bundle ID."
+  },
+  "authErrorMissingUid": "Missing UID.",
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Missing UID."
+  },
+  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Missing OAuth client secret."
+  },
+  "authErrorProjectNotFound": "Firebase project not found.",
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Firebase project not found."
+  },
+  "authErrorReservedClaims": "Reserved claims provided.",
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Reserved claims provided."
+  },
+  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Session cookie has expired."
+  },
+  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Session cookie has been revoked."
+  },
+  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: The UID is already in use."
+  },
+  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The continue URL domain is not whitelisted."
+  },
+  "authErrorUnknown": "An unknown authentication error occurred.",
+  "@authErrorUnknown": {
+    "description": "Localization key for: An unknown authentication error occurred."
+  },
+  "checkingPermissions1": "Checking permissions... (Hausa)",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "paymentSuccessful": "Payment Successful! (Hausa)",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "businessAvailability": "Business Availability (Hausa)",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
   "send": "Aika",
-  "permissions": "Izini",
-  "permissionsFor": "Izini – {childId}",
-  "errorLoadingPermissions": "Kuskure wajen ɗora izini: {error}",
-  "none": "Babu",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Hausa)",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: {payloadTitle}"
+  },
+  "gameList": "Game List (Hausa)",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "deleteAvailability": "Delete Availability (Hausa)",
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "connectToGoogleCalendar": "Connect to Google Calendar (Hausa)",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "adminFreeAccess": "Admin Free Access",
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "emailProfileemail": "Email: {profileEmail} (Hausa)",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: {profileEmail}"
+  },
+  "calendar": "Calendar (Hausa)",
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "upload1": "Upload (Hausa)",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "resolved": "Resolved (Hausa)",
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "keepSubscription": "Keep Subscription (Hausa)",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "noEventsScheduledForToday": "No events scheduled for today (Hausa)",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "exportData": "Export Data (Hausa)",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "rewards": "Rewards (Hausa)",
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "time": "Time (Hausa)",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "userCid": "User {id}",
+  "@userCid": {
+    "description": "Localization key for: User {id}"
+  },
+  "noSlots": "Babu wurare",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
+  },
+  "signIn": "Shiga ciki",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "homeFeedScreen": "Home Feed Screen (Hausa)",
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "selectLocation": "Select Location (Hausa)",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "noTicketsYet": "No tickets yet (Hausa)",
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "meetingSharedSuccessfully1": "Meeting shared successfully! (Hausa)",
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "studioProfile": "Studio Profile (Hausa)",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "subscriptionUnavailable": "Subscription unavailable (Hausa)",
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
+  },
+  "confirmBooking": "Tabbatar da tanadi",
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "failedToUpdatePermissionE": "Failed to update permission: $e (Hausa)",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "reject": "Reject (Hausa)",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
+  },
+  "noProviders": "No providers",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "checkingSubscription": "Checking subscription... (Hausa)",
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "errorPickingImageE": "Error picking image: $e (Hausa)",
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "noContentAvailableYet": "No content available yet (Hausa)",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "resolve": "Resolve (Hausa)",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorLoadingSurveysError": "Error loading surveys: $error (Hausa)",
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "errorLogerrormessage": "Error: {errorMessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: {errorMessage}"
+  },
+  "getHelpWithYourAccount": "Get help with your account (Hausa)",
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "pay": "Pay (Hausa)",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "noOrganizations": "Babu ƙungiyoyi",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "meetingDetails": "Cikakken bayani game da taro",
+  "@meetingDetails": {
+    "description": "meetingDetails description"
+  },
+  "errorLoadingAppointments": "Error loading appointments (Hausa)",
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "changesSavedSuccessfully": "Changes saved successfully! (Hausa)",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "createNewInvoice": "Create New Invoice (Hausa)",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "profileNotFound": "Profile not found. (Hausa)",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "errorConfirmingPaymentE": "Error confirming payment: $e (Hausa)",
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "inviteFriends": "Invite Friends (Hausa)",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "profileSaved": "Profile saved! (Hausa)",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "REDACTED_TOKEN": "Receive booking notifications via email (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "valuetointk": "\\${value}K (Hausa)",
+  "@valuetointk": {
+    "description": "Localization key for: \\${value}K"
+  },
+  "deleteAccount": "Delete Account (Hausa)",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "profile1": "Profile (Hausa)",
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "businessOnboarding": "Business Onboarding (Hausa)",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "addNewClient": "Add New Client (Hausa)",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "darkMode": "Dark Mode (Hausa)",
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "addProvider": "Add Provider",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for {path}"
+  },
+  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "addQuestion": "Add Question (Hausa)",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "privacyPolicy": "Privacy Policy (Hausa)",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "branchesLengthBranches": "{branchCount} branches (Hausa)",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: {branchCount} branches"
+  },
+  "join": "Join (Hausa)",
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "businessSubscription": "Business Subscription (Hausa)",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "myInvites1": "My Invites (Hausa)",
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "providers": "Providers",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "surveyManagement": "Survey Management (Hausa)",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
+  },
+  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Hausa)",
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "readOurPrivacyPolicy": "Read our privacy policy (Hausa)",
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
+  },
+  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Hausa)",
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "refresh1": "Refresh (Hausa)",
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "roomUpdatedSuccessfully": "Room updated successfully! (Hausa)",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "contentDetail": "Content Detail (Hausa)",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
+  },
+  "cancelSubscription": "Cancel Subscription (Hausa)",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "save1": "Save (Hausa)",
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "copy1": "Copy (Hausa)",
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "failedToSendInvitationE": "Failed to send invitation: $e (Hausa)",
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "surveyScore": "Survey Score (Hausa)",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
+  },
+  "userUserid": "User $userId",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "noAppointmentsFound": "No appointments found. (Hausa)",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "responseDetail": "Response Detail (Hausa)",
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "REDACTED_TOKEN": "Business profile activated successfully! (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Hausa)",
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "contentFilter": "Content Filter (Hausa)",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "helpSupport": "Help & Support (Hausa)",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "editRoom": "Edit Room (Hausa)",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "appointmentApptid": "Appointment: {appointmentId}",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: {deviceInfo}"
+  },
+  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "adminDashboard": "Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "orgmemberidslengthMembers": "{memberCount} members",
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: {memberCount} members"
+  },
+  "errorLoadingDashboardError": "Error loading dashboard: $error (Hausa)",
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "gameDeletedSuccessfully": "Game deleted successfully! (Hausa)",
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "viewResponsesComingSoon": "View responses - Coming soon! (Hausa)",
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "deleteProvider": "Delete Provider",
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "errorLoadingRewards": "Error loading rewards (Hausa)",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "failedToDeleteAccountE": "Failed to delete account: $e (Hausa)",
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "invited1": "Invited (Hausa)",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "noBranchesAvailable": "No branches available (Hausa)",
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "errorError": "Error: $error (Hausa)",
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "noEvents": "No events (Hausa)",
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "gameCreatedSuccessfully": "Game created successfully! (Hausa)",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "add1": "Add (Hausa)",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "creatorCreatorid": "Creator: $creatorId",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "eventstarttimeEventendtime": "{startTime} - {endTime} (Hausa)",
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: {startTime} - {endTime}"
+  },
+  "allowPlaytime": "Allow Playtime (Hausa)",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "clients": "Clients (Hausa)",
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "noAmbassadorDataAvailable": "No ambassador data available (Hausa)",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "backgroundDeletedSuccessfully": "Background deleted successfully! (Hausa)",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "errorSnapshoterror": "Error: {error} (Hausa)",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: {error}"
+  },
+  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Hausa)",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "errorDeletingSlotE": "Error deleting slot: $e (Hausa)",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "verification": "Verification (Hausa)",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "copyLink": "Copy Link (Hausa)",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "dashboard1": "Dashboard (Hausa)",
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "manageChildAccounts": "Manage Child Accounts (Hausa)",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "grantConsent": "Ba da yarda",
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "myProfile1": "My Profile (Hausa)",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "submit": "Submit (Hausa)",
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "userLoguseremail": "User: {userEmail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: {userEmail}"
+  },
+  "emailNotifications": "Email Notifications (Hausa)",
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "ambassadorDashboard": "Ambassador Dashboard (Hausa)",
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "phoneBooking": "Phone Booking (Hausa)",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "bookViaChat": "Tanadi ta hira",
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Description"
+  },
+  "businessProfile": "Business Profile (Hausa)",
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "createNewSurvey": "Create New Survey (Hausa)",
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "backgroundRejected": "Background rejected (Hausa)",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "noMediaSelected": "No media selected (Hausa)",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "syncToGoogle": "Sync to Google (Hausa)",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "virtualPlaytime": "Virtual Playtime (Hausa)",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "colorContrastTesting": "Color Contrast Testing",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "loginFailedE": "Login failed: $e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "invitationSentSuccessfully": "An aika gayyata cikin nasara!",
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "registering": "Registering... (Hausa)",
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "statusAppointmentstatusname": "Status: {status} (Hausa)",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "home1": "Home (Hausa)",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "errorSavingSettingsE": "Error saving settings: $e (Hausa)",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "appVersionAndInformation": "App version and information (Hausa)",
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "ekeyEvalue": "{key}: {value} (Hausa)",
+  "@ekeyEvalue": {
+    "description": "Localization key for: {key}: {value}"
+  },
+  "REDACTED_TOKEN": "Your payment has been processed successfully. (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "errorE": "Error: $e (Hausa)",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "viewAll1": "View All (Hausa)",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "editSurveyComingSoon": "Edit survey - Coming soon! (Hausa)",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "enterOtp": "Shigar da OTP",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "payment": "Payment (Hausa)",
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "REDACTED_TOKEN": "Automatically confirm new booking requests (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "errorPickingVideoE": "Error picking video: $e",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Hausa)",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for {settingsName}"
+  },
+  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Hausa)",
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: {targetType}: {targetId}"
+  },
+  "staffAvailability": "Staff Availability (Hausa)",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "livePlaytime": "Live Playtime (Hausa)",
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "autoconfirmBookings": "Auto-Confirm Bookings (Hausa)",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "exportAsCsv": "Export as CSV (Hausa)",
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
+  },
+  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Hausa)",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "editClient": "Edit Client (Hausa)",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "referralsAmbassadorreferrals": "Referrals: {referrals} (Hausa)",
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: {referrals}"
+  },
+  "notAuthenticated": "Not authenticated",
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Hausa)",
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "clientDeletedSuccessfully": "Client deleted successfully! (Hausa)",
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
+  },
+  "failedToCancelSubscription": "Failed to cancel subscription (Hausa)",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "allLanguages": "All Languages (Hausa)",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "slotDeletedSuccessfully": "Slot deleted successfully (Hausa)",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "REDACTED_TOKEN": "Parents must approve before children can join (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Hausa)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "appointmentsListlength": "Appointments: {count} (Hausa)",
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: {count}"
+  },
+  "clearFilters": "Clear Filters (Hausa)",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "submitBooking": "Miƙa tanadi",
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "noUpcomingBookings": "No upcoming bookings (Hausa)",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "goBack": "Go Back (Hausa)",
+  "@goBack": {
+    "description": "Localization key for: Go Back"
+  },
+  "setup": "Setup (Hausa)",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "inviteChild": "Gayyaci yaro",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "goToDashboard": "Go to Dashboard (Hausa)",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Hausa)",
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "adminSettings": "Admin Settings",
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "referralCode": "Referral Code (Hausa)",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "adminLogadminemail": "Admin: {adminEmail}",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: {adminEmail}"
+  },
+  "date": "Date (Hausa)",
+  "@date": {
+    "description": "Localization key for: Date"
+  },
   "readOnly": "Karatu kawai",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "bookingRequest": "Buƙatar tanadi",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "advancedReporting": "• Advanced reporting (Hausa)",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "rooms": "Rooms (Hausa)",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "copiedToClipboard": "Copied to clipboard (Hausa)",
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "bookingConfirmed": "An tabbatar da tanadi",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "sessionApproved": "Session approved! (Hausa)",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "clientAddedSuccessfully": "Client added successfully! (Hausa)",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noNotifications": "No notifications (Hausa)",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "backgroundApproved": "Background approved! (Hausa)",
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "familySupport": "Family Support (Hausa)",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "deletingAccount": "Deleting account... (Hausa)",
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "bookAppointment": "Tanadi Haduwa",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "REDACTED_TOKEN": "Receive push notifications for new bookings (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "delete1": "Delete (Hausa)",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "sendBookingInvite": "Send Booking Invite (Hausa)",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "text": "Text (Hausa)",
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "manageSubscription": "Manage Subscription (Hausa)",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "requiresInstallFallback": "Yana buƙatar shigarwa",
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "paymentConfirmation": "Payment Confirmation (Hausa)",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Hausa)",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: {inviteeId}"
+  },
+  "errorLoadingSlots": "Error loading slots (Hausa)",
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "REDACTED_TOKEN": "Allow other users to find and join this game (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "activateBusinessProfile": "Activate Business Profile (Hausa)",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
+  "contentNotFound": "Content not found (Hausa)",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Hausa)",
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: {specialty}\\n{contactInfo}"
+  },
+  "rating": "Rating (Hausa)",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "messages": "Messages (Hausa)",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Hausa)",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "becomeAnAmbassador": "Become an Ambassador (Hausa)",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "subscribeNow": "Subscribe Now (Hausa)",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "timeArgsslotformatcontext": "Time: {time} (Hausa)",
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: {time}"
+  },
+  "shareViaWhatsapp": "Share via WhatsApp (Hausa)",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "users1": "Users (Hausa)",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "shareLink": "Share Link (Hausa)",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "deleteAppointment": "Delete Appointment (Hausa)",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toggleAvailability": "Toggle Availability (Hausa)",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "changePlan": "Change Plan (Hausa)",
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "errorLoadingStaff": "Error loading staff (Hausa)",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "updateYourBusinessInformation": "Update your business information (Hausa)",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "parentDashboard": "Parent Dashboard (Hausa)",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "menu": "Menu",
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "studioBooking": "Studio Booking (Hausa)",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "about1": "About (Hausa)",
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "multipleChoice": "Multiple Choice (Hausa)",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "REDACTED_TOKEN": "Date: {date} (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Date: {date}"
+  },
+  "REDACTED_TOKEN": "Studio booking is only available on web (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "errorLoadingBranchesE": "Error loading branches: $e (Hausa)",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
+  },
+  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "none": "Babu",
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "failedToUpdateConsentE": "Failed to update consent: $e (Hausa)",
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "welcome1": "Welcome (Hausa)",
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "failedToCreateSessionE": "Failed to create session: $e (Hausa)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "inviteContact": "Tuntuɓi gayyata",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "surveyEditor": "Survey Editor (Hausa)",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Hausa)",
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "mySchedule": "My Schedule (Hausa)",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "studioDashboard": "Studio Dashboard (Hausa)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
+  "editProfile": "Edit Profile (Hausa)",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "logout1": "Logout",
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "serviceServiceidNotSelected": "Service: {service}",
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: {service}"
+  },
+  "settingsSavedSuccessfully": "Settings saved successfully! (Hausa)",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "linkCopiedToClipboard": "Link copied to clipboard! (Hausa)",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "accept1": "Accept (Hausa)",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "noAvailableSlots": "No available slots (Hausa)",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "makeGamePublic": "Make Game Public (Hausa)",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Permission {category} updated to $newValue"
+  },
+  "roomDeletedSuccessfully": "Room deleted successfully! (Hausa)",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "businessCalendar": "Business Calendar (Hausa)",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "addAvailability": "Add Availability (Hausa)",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "ambassadorOnboarding": "Ambassador Onboarding (Hausa)",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "phoneProfileasyncphone": "Phone: {phone} (Hausa)",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: {phone}"
+  },
+  "addNewRoom": "Add New Room (Hausa)",
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "requireParentApproval": "Require Parent Approval (Hausa)",
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "closed": "Closed (Hausa)",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "exportAsPdf": "Export as PDF (Hausa)",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "enableVibration": "Enable Vibration (Hausa)",
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "toAvailendformatcontext": "To: {endTime} (Hausa)",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: {endTime}"
+  },
+  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Hausa)",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "requestPrivateSession": "Buƙaci zaman sirri",
+  "@requestPrivateSession": {
+    "description": "requestPrivateSession description"
+  },
+  "country": "Country (Hausa)",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "loginScreen": "Login Screen",
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "staffArgsstaffdisplayname": "Staff: {staffName} (Hausa)",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "revokeConsent": "Cire yarda",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "settings1": "Settings (Hausa)",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "cancel1": "Cancel (Hausa)",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "REDACTED_TOKEN": "Subscription activated successfully! (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "activityLogaction": "Activity: {action}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: {action}"
+  },
+  "broadcast": "Broadcast (Hausa)",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "noEventsScheduledThisWeek": "No events scheduled this week (Hausa)",
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "googleCalendar": "Google Calendar (Hausa)",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "sendInvite": "Aika gayyata",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "childDashboard": "Child Dashboard (Hausa)",
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "failedToUploadBackgroundE": "Failed to upload background: $e (Hausa)",
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "linkchildidsubstring08": "{linkId}...",
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: {linkId}..."
+  },
+  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: {targetType} - {targetId}"
+  },
+  "contextContextid": "Context: $contextId",
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
+  },
+  "noAppointments": "No appointments (Hausa)",
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Hausa)",
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: {errorType}"
+  },
+  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Hausa)",
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "selectStaff": "Zaɓi ma'aikata",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "REDACTED_TOKEN": "Subscription cancelled successfully (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "cancelAppointment": "Cancel Appointment (Hausa)",
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - {childId}"
+  },
+  "businessSignup": "Business Signup (Hausa)",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "createGame1": "Create Game (Hausa)",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "valuetoint": "{value} (Hausa)",
+  "@valuetoint": {
+    "description": "Localization key for: {value}"
+  },
+  "pleaseEnterAPromoCode": "Please enter a promo code (Hausa)",
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "errorLoadingAvailabilityE": "Error loading availability: $e (Hausa)",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "parentalControls": "Parental Controls (Hausa)",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
+  },
+  "editBusinessProfile": "Edit Business Profile (Hausa)",
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "childLinkedSuccessfully": "An haɗa yaro cikin nasara!",
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "create": "Create (Hausa)",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "noExternalMeetingsFound": "No external meetings found. (Hausa)",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "staffSelectionstaffdisplayname": "Staff: {staffName} (Hausa)",
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "schedulerScreen": "Scheduler Screen (Hausa)",
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "clientUpdatedSuccessfully": "Client updated successfully! (Hausa)",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "surveyResponses": "Survey Responses (Hausa)",
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "syncToOutlook": "Sync to Outlook (Hausa)",
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "saveChanges": "Save Changes (Hausa)",
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "pickTime": "Pick Time (Hausa)",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "registrationFailedEtostring": "Registration failed: {error} (Hausa)",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: {error}"
+  },
+  "analytics": "Analytics (Hausa)",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "errorLoadingEvents": "Error loading events (Hausa)",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "errorLoadingOrganizations": "Kuskure wajen ɗora ƙungiyoyi",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "success1": "Success (Hausa)",
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "appVersionLogappversion": "App Version: {appVersion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: {appVersion}"
+  },
+  "fromAvailstartformatcontext": "From: {startTime} (Hausa)",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: {startTime}"
+  },
   "readWrite": "Karatu & rubutu",
-  "permissionUpdated": "An sabunta izini {category} zuwa {newValue}",
-  "failedToUpdatePermission": "An kasa sabunta izini: {error}",
-  "adminBroadcast": "Faɗaɗa mai kulawa",
-  "adminScreenTBD": "Fuskar mai kulawa – A ci gaba"
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "pickDate": "Zaɓi Kwanan wata",
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "chatBooking": "Tanadi ta hira",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "noQuestionsAdded": "No questions added (Hausa)",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "severityLogseverityname": "Severity: {severity}",
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: {severity}"
+  },
+  "markAsPaid": "Mark as Paid",
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "typeOpenCall": "Type: Open Call (Hausa)",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment {appointmentId}"
+  },
+  "statusInvitestatusname": "Status: {status}",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "businessLogin": "Business Login",
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "invoiceCreatedSuccessfully": "Invoice created successfully! (Hausa)",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "noTimeSeriesDataAvailable": "No time series data available (Hausa)",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
+  },
+  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to {planName}"
+  },
+  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Timestamp: {timestamp}"
+  },
+  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Hausa)",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "chooseYourPlan": "Choose Your Plan (Hausa)",
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "playtimeManagement": "Playtime Management (Hausa)",
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "availability": "Availability (Hausa)",
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "eventCreated": "Event created (Hausa)",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Hausa)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "completion": "Completion (Hausa)",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "supportTicketSubmitted": "Support ticket submitted (Hausa)",
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "monetizationSettings": "Monetization Settings (Hausa)",
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "noBookingsFound": "Ba a sami tanadi ba",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "admin": "Admin",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "deleteSurvey": "Delete Survey (Hausa)",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "gameApprovedSuccessfully": "Game approved successfully! (Hausa)",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "errorLoadingPermissionsError": "Error loading permissions: $error (Hausa)",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "referrals": "Referrals (Hausa)",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "crm": "CRM (Hausa)",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameRejected": "Game rejected (Hausa)",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "appointments": "Appointments (Hausa)",
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "onboardingScreen": "Onboarding Screen (Hausa)",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "welcomeToYourStudio": "Welcome to your studio (Hausa)",
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "update": "Update (Hausa)",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "retry1": "Retry (Hausa)",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "booking": "Booking (Hausa)",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "parentalSettings": "Parental Settings (Hausa)",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "language": "Language (Hausa)",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "deleteSlot": "Delete Slot (Hausa)",
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "organizations": "Ƙungiyoyi",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "createNewGame": "Create New Game (Hausa)",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "next1": "Next (Hausa)",
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Hausa)",
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "noAppointmentRequestsFound": "No appointment requests found. (Hausa)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "pleaseSignInToCreateASession": "Please sign in to create a session (Hausa)",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "restrictMatureContent": "Restrict mature content (Hausa)",
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "ambassadors": "Ambassadors (Hausa)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "smsNotifications": "SMS Notifications (Hausa)",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "paymentWasCancelled": "Payment was cancelled (Hausa)",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "clearAll": "Clear All (Hausa)",
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
+  },
+  "viewDetails": "View Details (Hausa)",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "notifications1": "Notifications (Hausa)",
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "failedToCreateGameE": "Failed to create game: $e (Hausa)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "noChartDataAvailable": "No chart data available (Hausa)",
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
+  },
+  "phonebasedBookingSystem": "• Phone-based booking system (Hausa)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "enableNotifications1": "Enable Notifications (Hausa)",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "invoices": "Invoices (Hausa)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "REDACTED_TOKEN": "Please activate your business profile to continue. (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Hausa)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: {scheduledAt}"
+  },
+  "REDACTED_TOKEN": "Duration: {duration} minutes (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Duration: {duration} minutes"
+  },
+  "tryAgain": "Try Again (Hausa)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "deleteBackground": "Delete Background (Hausa)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "currentTierTiertouppercase": "Current Tier: {tier} (Hausa)",
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: {tier}"
+  },
+  "iDoNotConsent": "I Do Not Consent",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "REDACTED_TOKEN": "No clients found. Add your first client! (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "groupGroupid": "Group: $groupId",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentRequests": "Appointment Requests (Hausa)",
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "forward": "Forward (Hausa)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "roomAddedSuccessfully": "Room added successfully! (Hausa)",
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "option": "• $option (Hausa)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "responseIndex1": "Response #{number} (Hausa)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #{number}"
+  },
+  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Hausa)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "contentLibrary1": "Content Library (Hausa)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "reply": "Reply (Hausa)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "subscriptionManagement": "Subscription Management (Hausa)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "REDACTED_TOKEN": "Monetization settings will be implemented here (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Hausa)",
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "editProvider": "Edit Provider",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "localizationContribution": "Localization Contribution (Hausa)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "parentalConsent": "Parental Consent (Hausa)",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Hausa)",
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "syncAppointment": "Sync Appointment (Hausa)",
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "iConsent": "I Consent (Hausa)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "sessionRejected": "Session rejected (Hausa)",
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Hausa)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "edit1": "Edit (Hausa)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "noEventsScheduledThisMonth": "No events scheduled this month (Hausa)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "businessDashboard": "Dashboard na kasuwanci",
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "noMessagesFound": "No messages found. (Hausa)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "staffStaffidNotSelected": "Staff: {staff}",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: {staff}"
+  },
+  "manageStaffAvailability": "Manage Staff Availability (Hausa)",
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "noMissingTranslations": "No missing translations (Hausa)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "skip": "Skip (Hausa)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "noUsers": "Babu masu amfani",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingReferralCode": "Error loading referral code (Hausa)",
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "allCountries": "All Countries (Hausa)",
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "deleteGame": "Delete Game (Hausa)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "staffManagementTools": "• Staff management tools (Hausa)",
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "deleteMessage": "Delete Message (Hausa)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "REDACTED_TOKEN": "Receive booking notifications via SMS (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "changeRole": "Canza matsayi",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "REDACTED_TOKEN": "Error loading bookings: {error} (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Error loading bookings: {error}"
+  },
+  "openingCustomerPortal": "Opening customer portal... (Hausa)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "signOut": "Fice",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "nameProfilename": "Name: {name} (Hausa)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: {name}"
+  },
+  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "upgradeToBusiness": "Upgrade to Business (Hausa)",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "apply": "Apply (Hausa)",
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "errorLoadingSubscriptionError": "Error loading subscription: $error (Hausa)",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "errorLoadingUsers": "Kuskure wajen ɗora masu amfani",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "verify": "Tabbatar",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "subscription": "Subscription (Hausa)",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "deleteMyAccount": "Delete My Account (Hausa)",
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "viewResponses": "View Responses (Hausa)",
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Hausa)",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Hausa)",
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "continueText": "Continue (Hausa)",
+  "@continueText": {
+    "description": "Localization key for: Continue"
+  },
+  "close1": "Close (Hausa)",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "confirm1": "Confirm (Hausa)",
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "externalMeetings": "External Meetings (Hausa)",
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "approve": "Approve (Hausa)",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Hausa)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "subscribe": "Subscribe (Hausa)",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "login1": "Login",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "adminOverviewGoesHere": "Admin overview goes here",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "loadingCheckout": "Loading checkout... (Hausa)",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  }
 }
