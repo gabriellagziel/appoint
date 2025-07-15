@@ -80,7 +80,7 @@ void main() {
       test('provides meaningful payment error messages', () {
         try {
           _simulatePaymentCreation(0);
-        } catch (e) {e) {
+        } catch (e) {
           expect(e.toString(), contains('Invalid payment amount'));
         }
       });
@@ -88,7 +88,7 @@ void main() {
       test('provides meaningful network error messages', () {
         try {
           _simulateNetworkFailure();
-        } catch (e) {e) {
+        } catch (e) {
           expect(e.toString(), contains('No internet connection'));
         }
       });
@@ -96,7 +96,7 @@ void main() {
       test('provides meaningful auth error messages', () {
         try {
           _simulateInvalidCredentials();
-        } catch (e) {e) {
+        } catch (e) {
           expect(e.toString(), contains('Invalid credentials'));
         }
       });
