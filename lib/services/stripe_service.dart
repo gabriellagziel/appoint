@@ -18,7 +18,7 @@ class StripeService {
     final String? cancelUrl,
   }) async {
     try {
-      callable = _functions.httpsCallable('createCheckoutSession');
+      final callable = _functions.httpsCallable('createCheckoutSession');
 
       final result = await callable.call({
         'studioId': studioId,
@@ -29,7 +29,7 @@ class StripeService {
       });
 
       return result.data;
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error creating checkout session: $e');
       rethrow;
     }
@@ -38,10 +38,29 @@ class StripeService {
   /// Get subscription status for a studio
   Future<String?> getSubscriptionStatus(String studioId) async {
     try {
-      doc = await _firestore.collection('studio').doc(studioId).get();
+      final doc = await _firestore.collection('studio').doc(studioId).get();
       return doc.data()?['subscriptionStatus'] as String?;
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error getting subscription status: $e');
+      return null;
+    }
+  }
+
+  /// Create business checkout session for subscription upgrade
+  Future<String?> fetchCheckoutUrl(String userId) async {
+    try {
+      final callable = _functions.httpsCallable('createBusinessCheckout');
+      final result = await callable.call({
+        'userId': userId,
+      });
+      
+      if (result.data != null && result.data['checkoutUrl'] != null) {
+        return result.data['checkoutUrl'] as String;
+      }
+      
+      return null;
+    } catch (e) {
+      // Removed debug print: debugPrint('Error creating business checkout: $e');
       return null;
     }
   }
