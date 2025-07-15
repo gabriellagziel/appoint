@@ -13,7 +13,7 @@ class StaffScreen extends ConsumerStatefulWidget {
 
 class _StaffScreenState extends ConsumerState<StaffScreen> {
   DateTime _selectedDate = DateTime.now();
-  _slotController = TextEditingController();
+  final _slotController = TextEditingController();
 
   Future<void> _addSlot() async {
     final slot = _slotController.text;
@@ -68,8 +68,7 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
                   child: TextField(
                     controller: _slotController,
                     decoration: const InputDecoration(
-                      labelText: 'HH:MM',
-                    ),
+                      labelText: 'HH:MM'),
                   ),
                 ),
                 IconButton(

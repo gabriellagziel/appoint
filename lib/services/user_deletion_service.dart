@@ -37,7 +37,7 @@ class UserDeletionService {
 
   /// Deletes all user data from Firestore collections
   Future<void> _deleteUserData(String uid) async {
-    batch = _firestore.batch();
+    final batch = _firestore.batch();
 
     // Delete user profile
     batch.delete(_firestore.collection('users').doc(uid));
@@ -154,7 +154,7 @@ class UserDeletionService {
     }
 
     // Delete survey responses
-    surveys = await _firestore.collection('surveys').get();
+    final surveys = await _firestore.collection('surveys').get();
     for (surveyDoc in surveys.docs) {
       final responses = await surveyDoc.reference
           .collection('responses')

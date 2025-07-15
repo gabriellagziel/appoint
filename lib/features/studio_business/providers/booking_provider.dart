@@ -7,14 +7,14 @@ final studioBookingServiceProvider =
 
 final userBookingsProvider =
     FutureProvider<List<StudioBooking>>((ref) async {
-  service = ref.read(studioBookingServiceProvider);
+  final service = ref.read(studioBookingServiceProvider);
   return service.getUserBookings();
 });
 
 final FutureProviderFamily<List<StudioBooking>, String> businessBookingsProvider =
     FutureProvider.family<List<StudioBooking>, String>(
   (ref, final businessProfileId) async {
-    service = ref.read(studioBookingServiceProvider);
+    final service = ref.read(studioBookingServiceProvider);
     return service.getBusinessBookings(businessProfileId);
   },
 );
@@ -46,9 +46,9 @@ class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
         endTime: endTime,
         cost: cost,
       );
-      state = AsyncValue.data(booking);
-    } catch (e) {e, st) {
-      state = AsyncValue.error(e, st);
+      final state = AsyncValue.data(booking);
+    } catch (e) {
+      final state = AsyncValue.error(e, st);
     }
   }
 
@@ -71,10 +71,10 @@ class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
           createdAt: state.value!.createdAt,
           updatedAt: DateTime.now(),
         );
-        state = AsyncValue.data(updatedBooking);
+        final state = AsyncValue.data(updatedBooking);
       }
-    } catch (e) {e, st) {
-      state = AsyncValue.error(e, st);
+    } catch (e) {
+      final state = AsyncValue.error(e, st);
     }
   }
 }

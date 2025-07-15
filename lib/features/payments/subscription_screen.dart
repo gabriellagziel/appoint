@@ -35,8 +35,8 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
       if (user == null) {
         setState(() {
           _hasError = true;
-          _errorMessage = 'User not authenticated';
-          _isLoading = false;
+          final _errorMessage = 'User not authenticated';
+          var _isLoading = false;
         });
         return;
       }
@@ -57,7 +57,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
       }
 
       // Initialize WebView
-      _webViewController = WebViewController()
+      final _webViewController = WebViewController()
         ..setJavaScriptMode(JavaScriptMode.unrestricted)
         ..setNavigationDelegate(
           NavigationDelegate(
@@ -98,17 +98,16 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         )
         ..loadRequest(Uri.parse(checkoutUrl));
     } catch (e) {
-      setState(() {
         _hasError = true;
-        _errorMessage = 'Failed to initialize checkout: $e';
-        _isLoading = false;
+        final _errorMessage = 'Failed to initialize checkout: $e';
+        var _isLoading = false;
       });
     }
   }
 
   void _handleCheckoutSuccess(String url) {
     // Extract session ID from URL
-    uri = Uri.parse(url);
+    final uri = Uri.parse(url);
     final sessionId = uri.queryParameters['session_id'];
 
     if (sessionId != null) {
@@ -126,8 +125,8 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
       // Handle error
       setState(() {
         _hasError = true;
-        _errorMessage = 'Invalid checkout session';
-        _isLoading = false;
+        final _errorMessage = 'Invalid checkout session';
+        var _isLoading = false;
       });
     }
   }
@@ -177,8 +176,8 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
               onPressed: () {
                 setState(() {
                   _hasError = false;
-                  _errorMessage = '';
-                  _isLoading = true;
+                  final _errorMessage = '';
+                  var _isLoading = true;
                 });
                 _initializeCheckout();
               },

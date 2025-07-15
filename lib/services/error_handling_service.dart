@@ -366,7 +366,7 @@ class ErrorHandlingService {
 final errorHandlingServiceProvider =
     Provider<ErrorHandlingService>((ref) => ErrorHandlingService());
 
-errorStateProvider = StateProvider<AppError?>((final ref) => null);
+final errorStateProvider = StateProvider<AppError?>((ref) => null);
 
 // Error handling extension
 extension ErrorHandlingExtension on WidgetRef {
@@ -377,7 +377,7 @@ extension ErrorHandlingExtension on WidgetRef {
     final ErrorSeverity severity = ErrorSeverity.medium,
     final Map<String, dynamic>? context,
   }) async {
-    service = read(errorHandlingServiceProvider);
+    final service = read(errorHandlingServiceProvider);
     await service.handleError(
       error,
       stackTrace,

@@ -11,13 +11,13 @@ class RewardsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    pointsAsync = ref.watch(userPointsProvider);
+    final pointsAsync = ref.watch(userPointsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Rewards')),
       body: pointsAsync.when(
         data: (points) {
-          tier = ref.read(rewardsServiceProvider).tierForPoints(points);
+          final tier = ref.read(rewardsServiceProvider).tierForPoints(points);
           final nextTier =
               _nextTierInfo(points, ref.read(rewardsServiceProvider));
           return Padding(

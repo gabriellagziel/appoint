@@ -12,8 +12,8 @@ class BusinessConnectScreen extends ConsumerStatefulWidget {
 }
 
 class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
-  _formKey = GlobalKey<FormState>();
-  _codeController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _codeController = TextEditingController();
   bool _isConnecting = false;
 
   @override
@@ -103,7 +103,7 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
       final user = FirebaseAuth.instance.currentUser;
       if (user == null) throw Exception('Not authenticated');
 
-      upgradeCode = _codeController.text.trim();
+      final upgradeCode = _codeController.text.trim();
 
       // Validate the upgrade code (in a real app, this would check against a database)
       if (!_isValidUpgradeCode(upgradeCode)) {
@@ -128,7 +128,6 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
         Navigator.pushReplacementNamed(context, '/business/dashboard');
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );

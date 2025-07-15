@@ -14,7 +14,7 @@ class PerformanceService {
     final String name,
     Future<void> Function() operation,
   ) async {
-    trace = _performance.newTrace(name);
+    final trace = _performance.newTrace(name);
     await trace.start();
 
     try {
@@ -48,7 +48,7 @@ class PerformanceService {
     final String screenName,
     Future<void> Function() loadOperation,
   ) async {
-    trace = _performance.newTrace('screen_load_$screenName');
+    final trace = _performance.newTrace('screen_load_$screenName');
     await trace.start();
 
     try {
@@ -69,7 +69,7 @@ class PerformanceService {
   /// Track app startup time
   Future<void> trackAppStartup(
       Future<void> Function() startupOperation,) async {
-    trace = _performance.newTrace('app_startup');
+    final trace = _performance.newTrace('app_startup');
     await trace.start();
 
     try {
@@ -81,14 +81,14 @@ class PerformanceService {
 
   /// Track feature usage
   void trackFeatureUsage(String featureName) {
-    trace = _performance.newTrace('feature_usage_$featureName');
+    final trace = _performance.newTrace('feature_usage_$featureName');
     trace.start();
     trace.stop();
   }
 
   /// Track error performance
   void trackError(String errorType, final String errorMessage) {
-    trace = _performance.newTrace('error_$errorType');
+    final trace = _performance.newTrace('error_$errorType');
     trace.putAttribute('error_message', errorMessage);
     trace.start();
     trace.stop();
@@ -96,8 +96,8 @@ class PerformanceService {
 }
 
 // Riverpod providers
-performanceServiceProvider = Provider<PerformanceService>((final ref) => PerformanceService());
+final performanceServiceProvider = Provider<PerformanceService>((ref) => PerformanceService());
 
-performanceEnabledProvider = StateProvider<bool>((final ref) {
+final performanceEnabledProvider = StateProvider<bool>((ref) {
   return !kDebugMode; // Enable in release mode only
 });

@@ -13,7 +13,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -245,7 +245,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
         const SizedBox(height: 12),
         Consumer(
           builder: (context, final ref, final child) {
-            gamesAsync = ref.watch(systemGamesProvider);
+            final gamesAsync = ref.watch(systemGamesProvider);
 
             return gamesAsync.when(
               data: (games) {
@@ -360,7 +360,7 @@ class PlaytimeHubScreen extends ConsumerWidget {
         const SizedBox(height: 12),
         Consumer(
           builder: (context, final ref, final child) {
-            sessionsAsync = ref.watch(confirmedSessionsProvider);
+            final sessionsAsync = ref.watch(confirmedSessionsProvider);
 
             return sessionsAsync.when(
               data: (sessions) {
@@ -567,8 +567,8 @@ class PlaytimeHubScreen extends ConsumerWidget {
     );
 
   String _formatDateTime(DateTime dateTime) {
-    now = DateTime.now();
-    difference = dateTime.difference(now);
+    final now = DateTime.now();
+    final difference = dateTime.difference(now);
 
     if (difference.inDays > 0) {
       return '${difference.inDays} ${difference.inDays == 1 ? 'day' : 'days'}';

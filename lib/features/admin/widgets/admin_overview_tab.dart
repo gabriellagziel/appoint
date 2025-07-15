@@ -14,7 +14,7 @@ class AdminOverviewTab extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    dashboardStats = ref.watch(adminDashboardStatsProvider);
+    final dashboardStats = ref.watch(adminDashboardStatsProvider);
 
     return dashboardStats.when(
       data: (stats) => SingleChildScrollView(

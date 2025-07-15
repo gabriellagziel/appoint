@@ -15,11 +15,11 @@ class AmbassadorService {
       Query query = _firestore.collection('ambassador_stats');
 
       if (country != null) {
-        query = query.where('country', isEqualTo: country);
+        final query = query.where('country', isEqualTo: country);
       }
 
       if (language != null) {
-        query = query.where('language', isEqualTo: language);
+        final query = query.where('language', isEqualTo: language);
       }
 
       if (dateRange != null) {
@@ -28,7 +28,7 @@ class AmbassadorService {
             .where('date', isLessThanOrEqualTo: dateRange.end);
       }
 
-      snapshot = await query.get();
+      final snapshot = await query.get();
       return snapshot.docs
           .map((doc) =>
               AmbassadorStats.fromJson(doc.data()! as Map<String, dynamic>),)
@@ -91,14 +91,14 @@ class AmbassadorService {
             .where('date', isLessThanOrEqualTo: range.end);
       }
 
-      snapshot = await query.get();
+      final snapshot = await query.get();
       final counts = <DateTime, int>{};
       for (doc in snapshot.docs) {
         final ts = doc['date'] as Timestamp?;
         if (ts == null) continue;
         final date =
             DateTime(ts.toDate().year, ts.toDate().month, ts.toDate().day);
-        ambassadors = (doc['ambassadors'] as int?) ?? 0;
+        final ambassadors = (doc['ambassadors'] as int?) ?? 0;
         counts.update(date, (v) => v + ambassadors,
             ifAbsent: () => ambassadors,);
       }
@@ -109,7 +109,7 @@ class AmbassadorService {
       list.sort((a, final b) => a.date.compareTo(b.date));
       return list;
     } catch (e) {
-      now = DateTime.now();
+      final now = DateTime.now();
       return List.generate(7, (i) => TimeSeriesPoint(
             date: now.subtract(Duration(days: 6 - i)), count: (i + 1) * 4,),);
     }

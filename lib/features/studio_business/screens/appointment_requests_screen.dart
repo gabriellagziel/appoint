@@ -44,7 +44,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
             padding: const EdgeInsets.all(16),
             itemCount: requests.length,
             itemBuilder: (context, final index) {
-              request = requests[index].data()! as Map<String, dynamic>;
+              final request = requests[index].data()! as Map<String, dynamic>;
               final requestId = requests[index].id;
 
               return Card(

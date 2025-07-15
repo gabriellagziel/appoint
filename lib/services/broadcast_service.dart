@@ -18,9 +18,9 @@ class BroadcastService {
 
   // Create a new broadcast message
   Future<String> createBroadcastMessage(
-      AdminBroadcastMessage message,) async {
+      AdminBroadcastMessage message) async {
     try {
-      docRef = await _broadcastsCollection.add(message.toJson());
+      final docRef = await _broadcastsCollection.add(message.toJson());
       return docRef.id;
     } catch (e) {
       throw Exception('Failed to create broadcast message: $e');
@@ -41,7 +41,7 @@ class BroadcastService {
   // Get broadcast message by ID
   Future<AdminBroadcastMessage?> getBroadcastMessage(String id) async {
     try {
-      doc = await _broadcastsCollection.doc(id).get();
+      final doc = await _broadcastsCollection.doc(id).get();
       if (doc.exists) {
         return AdminBroadcastMessage.fromJson({
           'id': doc.id,
@@ -56,17 +56,17 @@ class BroadcastService {
 
   // Estimate target audience size
   Future<int> estimateTargetAudience(
-      BroadcastTargetingFilters filters,) async {
+      BroadcastTargetingFilters filters) async {
     try {
       Query query = _usersCollection;
 
       // Apply filters
       if (filters.countries != null && filters.countries!.isNotEmpty) {
-        query = query.where('country', whereIn: filters.countries);
+        final query = query.where('country', whereIn: filters.countries);
       }
 
       if (filters.cities != null && filters.cities!.isNotEmpty) {
-        query = query.where('city', whereIn: filters.cities);
+        final query = query.where('city', whereIn: filters.cities);
       }
 
       if (filters.subscriptionTiers != null &&
@@ -76,12 +76,12 @@ class BroadcastService {
       }
 
       if (filters.userRoles != null && filters.userRoles!.isNotEmpty) {
-        query = query.where('role', whereIn: filters.userRoles);
+        final query = query.where('role', whereIn: filters.userRoles);
       }
 
       if (filters.accountStatuses != null &&
           filters.accountStatuses!.isNotEmpty) {
-        query = query.where('status', whereIn: filters.accountStatuses);
+        final query = query.where('status', whereIn: filters.accountStatuses);
       }
 
       if (filters.joinedAfter != null) {
@@ -94,7 +94,7 @@ class BroadcastService {
             query.where('createdAt', isLessThanOrEqualTo: filters.joinedBefore);
       }
 
-      snapshot = await query.get();
+      final snapshot = await query.get();
       return snapshot.docs.length;
     } catch (e) {
       throw Exception('Failed to estimate target audience: $e');
@@ -104,13 +104,13 @@ class BroadcastService {
   // Send broadcast message
   Future<void> sendBroadcastMessage(String messageId) async {
     try {
-      message = await getBroadcastMessage(messageId);
+      final message = await getBroadcastMessage(messageId);
       if (message == null) {
         throw Exception('Message not found');
       }
 
       // Get target users
-      targetUsers = await _getTargetUsers(message.targetingFilters);
+      final targetUsers = await _getTargetUsers(message.targetingFilters);
 
       // Update message with actual recipient count
       await _broadcastsCollection.doc(messageId).update({
@@ -134,17 +134,17 @@ class BroadcastService {
 
   // Get target users based on filters
   Future<List<UserProfile>> _getTargetUsers(
-      BroadcastTargetingFilters filters,) async {
+      BroadcastTargetingFilters filters) async {
     try {
       Query query = _usersCollection;
 
       // Apply filters
       if (filters.countries != null && filters.countries!.isNotEmpty) {
-        query = query.where('country', whereIn: filters.countries);
+        final query = query.where('country', whereIn: filters.countries);
       }
 
       if (filters.cities != null && filters.cities!.isNotEmpty) {
-        query = query.where('city', whereIn: filters.cities);
+        final query = query.where('city', whereIn: filters.cities);
       }
 
       if (filters.subscriptionTiers != null &&
@@ -154,12 +154,12 @@ class BroadcastService {
       }
 
       if (filters.userRoles != null && filters.userRoles!.isNotEmpty) {
-        query = query.where('role', whereIn: filters.userRoles);
+        final query = query.where('role', whereIn: filters.userRoles);
       }
 
       if (filters.accountStatuses != null &&
           filters.accountStatuses!.isNotEmpty) {
-        query = query.where('status', whereIn: filters.accountStatuses);
+        final query = query.where('status', whereIn: filters.accountStatuses);
       }
 
       if (filters.joinedAfter != null) {
@@ -172,7 +172,7 @@ class BroadcastService {
             query.where('createdAt', isLessThanOrEqualTo: filters.joinedBefore);
       }
 
-      snapshot = await query.get();
+      final snapshot = await query.get();
       return snapshot.docs
           .map((doc) => UserProfile.fromJson({
                 'id': doc.id,
@@ -189,8 +189,8 @@ class BroadcastService {
       UserProfile user, final AdminBroadcastMessage message,) async {
     try {
       // Get user's FCM token
-      userDoc = await _usersCollection.doc(user.id).get();
-      fcmToken = userDoc.data()?['fcmToken'] as String?;
+      final userDoc = await _usersCollection.doc(user.id).get();
+      final fcmToken = userDoc.data()?['fcmToken'] as String?;
 
       if (fcmToken == null) {
         throw Exception('User has no FCM token');
@@ -245,4 +245,4 @@ class BroadcastService {
 }
 
 // Provider
-broadcastServiceProvider = Provider<BroadcastService>((final ref) => BroadcastService());
+final broadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());

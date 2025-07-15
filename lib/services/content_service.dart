@@ -19,7 +19,7 @@ class ContentService {
     var query =
         _col.orderBy('createdAt', descending: true).limit(limit);
     if (startAfter != null) {
-      query = query.startAfterDocument(startAfter);
+      final query = query.startAfterDocument(startAfter);
     }
     return query.get();
   }
@@ -28,14 +28,14 @@ class ContentService {
     final DocumentSnapshot<Map<String, dynamic>>? startAfter,
     final int limit = 20,
   }) async {
-    snap = await fetchSnapshot(startAfter: startAfter, limit: limit);
+    final snap = await fetchSnapshot(startAfter: startAfter, limit: limit);
     return snap.docs
         .map((d) => ContentItem.fromMap(d.id, d.data()))
         .toList();
   }
 
   Future<ContentItem?> fetchById(String id) async {
-    doc = await _col.doc(id).get();
+    final doc = await _col.doc(id).get();
     if (!doc.exists) return null;
     return ContentItem.fromMap(doc.id, doc.data()!);
   }

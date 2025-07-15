@@ -87,8 +87,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
             child: Text(
               'Notifications',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
           ),
           SwitchListTile(
@@ -133,8 +132,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
             child: Text(
               'Privacy & Security',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
           ),
           ListTile(
@@ -178,8 +176,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
             child: Text(
               'Appearance',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
           ),
           ListTile(
@@ -218,8 +215,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
             child: Text(
               'Subscription',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
           ),
           ListTile(
@@ -255,8 +251,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
             child: Text(
               'Support',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
           ),
           ListTile(
@@ -299,8 +294,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
             child: Text(
               'About',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
           ),
           ListTile(

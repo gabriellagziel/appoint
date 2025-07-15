@@ -28,12 +28,6 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         FirebaseAnalytics.instance.logEvent(name: eventName);
       }
     } catch (e) {
-      // Silently ignore analytics errors in tests
-    }
-  }
-
-  @override
-  void dispose() {
     _nameController.dispose();
     _bioController.dispose();
     _locationController.dispose();

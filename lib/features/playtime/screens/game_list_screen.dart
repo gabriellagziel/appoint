@@ -31,7 +31,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
 
   @override
   Widget build(BuildContext context) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -55,11 +55,11 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
           Expanded(
             child: Consumer(
               builder: (context, final ref, final child) {
-                gamesAsync = ref.watch(gamesProvider);
+                final gamesAsync = ref.watch(gamesProvider);
 
                 return gamesAsync.when(
                   data: (games) {
-                    filteredGames = _filterGames(games);
+                    final filteredGames = _filterGames(games);
 
                     if (filteredGames.isEmpty) {
                       return _buildEmptyState(l10n);
@@ -438,7 +438,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
   List<PlaytimeGame> _filterGames(List<PlaytimeGame> games) => games.where((game) {
       // Search filter
       if (_searchQuery.isNotEmpty) {
-        query = _searchQuery.toLowerCase();
+        final query = _searchQuery.toLowerCase();
         return game.name.toLowerCase().contains(query) ||
             game.status.toLowerCase().contains(query) ||
             game.createdBy.toLowerCase().contains(query);

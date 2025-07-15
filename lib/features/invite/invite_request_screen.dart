@@ -14,10 +14,10 @@ class InviteRequestScreen extends ConsumerStatefulWidget {
 }
 
 class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
-  _formKey = GlobalKey<FormState>();
-  _nameController = TextEditingController();
-  _phoneController = TextEditingController();
-  _emailController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _nameController = TextEditingController();
+  final _phoneController = TextEditingController();
+  final _emailController = TextEditingController();
   bool _requiresInstallFallback = false;
 
   @override

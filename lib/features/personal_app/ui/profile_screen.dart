@@ -15,8 +15,8 @@ class ProfileScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    profileAsync = ref.watch(currentUserProfileProvider);
-    subscriptionAsync = ref.watch(userSubscriptionProvider);
+    final profileAsync = ref.watch(currentUserProfileProvider);
+    final subscriptionAsync = ref.watch(userSubscriptionProvider);
 
     return AppScaffold(
       title: 'Profile',
@@ -49,8 +49,7 @@ class ProfileScreen extends ConsumerWidget {
                 const SizedBox(height: AppSpacing.xs),
                 subscriptionAsync.when(
                   data: (isSub) => Text(
-                    isSub ? 'Premium Subscriber' : 'Free User',
-                  ),
+                    isSub ? 'Premium Subscriber' : 'Free User'),
                   loading: () => const Text('Checking subscription...'),
                   error: (_, final __) =>
                       const Text('Subscription unavailable'),

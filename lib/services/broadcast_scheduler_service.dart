@@ -23,7 +23,7 @@ class BroadcastSchedulerService {
     if (_isRunning) return;
     
     _isRunning = true;
-    _schedulerTimer = Timer.periodic(interval, (_) async {
+    final _schedulerTimer = Timer.periodic(interval, (_) async {
       await _processScheduledMessages();
     });
   }

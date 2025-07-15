@@ -12,7 +12,7 @@ class NotificationsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    notificationsAsync = ref.watch(userNotificationsProvider);
+    final notificationsAsync = ref.watch(userNotificationsProvider);
 
     return AppScaffold(
       title: 'Notifications',

@@ -39,38 +39,38 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
         // Listen for user authentication changes
         _authService.authStateChanges.listen(_onAuthStateChanged);
       } else {
-        state = FCMTokenState.error('Notification permissions denied');
+        final state = FCMTokenState.error('Notification permissions denied');
       }
     } catch (e) {
-      state = FCMTokenState.error('Failed to initialize FCM: $e');
+      final state = FCMTokenState.error('Failed to initialize FCM: $e');
     }
   }
 
   /// Get current FCM token and store it
   Future<void> _getAndStoreToken() async {
     try {
-      state = FCMTokenState.loading();
+      final state = FCMTokenState.loading();
       
       final token = await FirebaseMessaging.instance.getToken();
       
       if (token != null) {
-        state = FCMTokenState.success(token);
+        final state = FCMTokenState.success(token);
         await _sendTokenToBackend(token);
       } else {
-        state = FCMTokenState.error('Failed to get FCM token');
+        final state = FCMTokenState.error('Failed to get FCM token');
       }
     } catch (e) {
-      state = FCMTokenState.error('Failed to get FCM token: $e');
+      final state = FCMTokenState.error('Failed to get FCM token: $e');
     }
   }
 
   /// Handle token refresh
   Future<void> _onTokenRefresh(String newToken) async {
     try {
-      state = FCMTokenState.success(newToken);
+      final state = FCMTokenState.success(newToken);
       await _sendTokenToBackend(newToken);
     } catch (e) {
-      state = FCMTokenState.error('Failed to handle token refresh: $e');
+      final state = FCMTokenState.error('Failed to handle token refresh: $e');
     }
   }
 
@@ -86,7 +86,7 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
       }
     } else {
       // User logged out, clear token state
-      state = FCMTokenState.initial();
+      final state = FCMTokenState.initial();
     }
   }
 
@@ -102,13 +102,6 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
         });
       }
     } catch (e) {
-      // Log error but don't fail the token update
-      // In a real app, you would log this to a service like Crashlytics
-    }
-  }
-
-  /// Get current platform
-  String _getPlatform() {
     if (Platform.isAndroid) return 'android';
     if (Platform.isIOS) return 'ios';
     if (kIsWeb) return 'web';

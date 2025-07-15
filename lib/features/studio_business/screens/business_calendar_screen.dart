@@ -18,7 +18,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    final _tabController = TabController(length: 3, vsync: this);
   }
 
   @override
@@ -103,8 +103,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
                                   .textTheme
                                   .titleMedium
                                   ?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                    fontWeight: FontWeight.bold),
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                             ),
@@ -187,8 +186,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
                   title: Text(
                     event.title,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
+                          fontWeight: FontWeight.bold),
                   ),
                   subtitle: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -262,20 +260,20 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
 
         if (constraints.maxWidth > 1200) {
           // Large desktop/tablet landscape
-          crossAxisCount = 4;
-          childAspectRatio = 2.5;
+          final crossAxisCount = 4;
+          final childAspectRatio = 2.5;
         } else if (constraints.maxWidth > 800) {
           // Tablet
-          crossAxisCount = 3;
-          childAspectRatio = 2.8;
+          final crossAxisCount = 3;
+          final childAspectRatio = 2.8;
         } else if (constraints.maxWidth > 600) {
           // Large phone/small tablet
-          crossAxisCount = 2;
-          childAspectRatio = 3.0;
+          final crossAxisCount = 2;
+          final childAspectRatio = 3.0;
         } else {
           // Phone
-          crossAxisCount = 1;
-          childAspectRatio = 3.5;
+          final crossAxisCount = 1;
+          final childAspectRatio = 3.5;
         }
 
         return GridView.builder(
@@ -311,8 +309,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
                                 .textTheme
                                 .titleMedium
                                 ?.copyWith(
-                                  fontWeight: FontWeight.bold,
-                                ),
+                                  fontWeight: FontWeight.bold),
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
@@ -370,20 +367,20 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
 
         if (constraints.maxWidth > 1200) {
           // Large desktop/tablet landscape
-          crossAxisCount = 6;
-          childAspectRatio = 1.2;
+          final crossAxisCount = 6;
+          final childAspectRatio = 1.2;
         } else if (constraints.maxWidth > 800) {
           // Tablet
-          crossAxisCount = 4;
-          childAspectRatio = 1.3;
+          final crossAxisCount = 4;
+          final childAspectRatio = 1.3;
         } else if (constraints.maxWidth > 600) {
           // Large phone/small tablet
-          crossAxisCount = 3;
-          childAspectRatio = 1.4;
+          final crossAxisCount = 3;
+          final childAspectRatio = 1.4;
         } else {
           // Phone
-          crossAxisCount = 2;
-          childAspectRatio = 1.5;
+          final crossAxisCount = 2;
+          final childAspectRatio = 1.5;
         }
 
         return GridView.builder(
@@ -413,8 +410,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
                     Text(
                       event.title,
                       style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
+                            fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
