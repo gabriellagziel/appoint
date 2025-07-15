@@ -40,8 +40,9 @@ class REDACTED_TOKEN
         var _isLoading = false;
       });
     } catch (e) {
+      setState(() {
         _error = 'Failed to load subscription details: $e';
-        var _isLoading = false;
+        _isLoading = false;
       });
     }
   }
@@ -99,13 +100,12 @@ class REDACTED_TOKEN
         }
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
     } finally {
       setState(() => _isLoading = false);
     }
@@ -173,7 +173,7 @@ class REDACTED_TOKEN
                   Row(
                     children: [
                       Icon(
-                        final status = = 'active' ? Icons.check_circle : Icons.cancel,
+                        status == 'active' ? Icons.check_circle : Icons.cancel,
                         color: status == 'active' ? Colors.green : Colors.red,
                       ),
                       const SizedBox(width: 8),
