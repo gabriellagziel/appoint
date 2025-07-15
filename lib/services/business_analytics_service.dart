@@ -16,10 +16,10 @@ class BusinessAnalyticsService {
             .where('dateTime', isGreaterThanOrEqualTo: range.start)
             .where('dateTime', isLessThanOrEqualTo: range.end);
       }
-      snapshot = await query.get();
+      final snapshot = await query.get();
       final counts = <DateTime, int>{};
       for (doc in snapshot.docs) {
-        ts = doc.data()['dateTime'] as Timestamp?;
+        final ts = doc.data()['dateTime'] as Timestamp?;
         if (ts == null) continue;
         final date =
             DateTime(ts.toDate().year, ts.toDate().month, ts.toDate().day);
@@ -31,7 +31,7 @@ class BusinessAnalyticsService {
         ..sort((a, final b) => a.date.compareTo(b.date));
     } catch (e) {
       // Return sample data when offline or on error
-      now = DateTime.now();
+      final now = DateTime.now();
       return List.generate(7, (i) => TimeSeriesPoint(
             date: now.subtract(Duration(days: 6 - i)), count: (i + 1) * 3,),);
     }
@@ -39,10 +39,10 @@ class BusinessAnalyticsService {
 
   Future<List<ServiceDistribution>> fetchServiceDistribution() async {
     try {
-      snapshot = await _firestore.collection('appointments').get();
+      final snapshot = await _firestore.collection('appointments').get();
       final counts = <String, int>{};
       for (doc in snapshot.docs) {
-        service = doc.data()['serviceName'] as String? ?? 'Unknown';
+        final service = doc.data()['serviceName'] as String? ?? 'Unknown';
         counts.update(service, (value) => value + 1, ifAbsent: () => 1);
       }
       return counts.entries
@@ -60,11 +60,11 @@ class BusinessAnalyticsService {
 
   Future<List<RevenueByStaff>> fetchRevenueByStaff() async {
     try {
-      snapshot = await _firestore.collection('payments').get();
+      final snapshot = await _firestore.collection('payments').get();
       final totals = <String, double>{};
       for (doc in snapshot.docs) {
-        staff = doc.data()['staffId'] as String? ?? 'unknown';
-        amount = (doc.data()['amount'] as num?)?.toDouble() ?? 0;
+        final staff = doc.data()['staffId'] as String? ?? 'unknown';
+        final amount = (doc.data()['amount'] as num?)?.toDouble() ?? 0;
         totals.update(staff, (value) => value + amount,
             ifAbsent: () => amount,);
       }

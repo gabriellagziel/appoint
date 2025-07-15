@@ -8,9 +8,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 // Service provider
 final businessSubscriptionServiceProvider =
     Provider<BusinessSubscriptionService>((ref) {
-  firestore = ref.watch(firestoreProvider);
-  auth = ref.watch(firebaseAuthProvider);
-  functions = ref.watch(firebaseFunctionsProvider);
+  final firestore = ref.watch(firestoreProvider);
+  final auth = ref.watch(firebaseAuthProvider);
+  final functions = ref.watch(firebaseFunctionsProvider);
   return BusinessSubscriptionService(
     firestore: firestore,
     auth: auth,
@@ -21,7 +21,7 @@ final businessSubscriptionServiceProvider =
 // Current subscription provider
 final currentSubscriptionProvider = StreamProvider<BusinessSubscription?>(
   (ref) {
-    service = ref.watch(businessSubscriptionServiceProvider);
+    final service = ref.watch(businessSubscriptionServiceProvider);
     return service.watchSubscription();
   },
 );
@@ -29,7 +29,7 @@ final currentSubscriptionProvider = StreamProvider<BusinessSubscription?>(
 // Subscription limits provider
 final subscriptionLimitsProvider = FutureProvider<Map<String, dynamic>>(
   (ref) async {
-    service = ref.watch(businessSubscriptionServiceProvider);
+    final service = ref.watch(businessSubscriptionServiceProvider);
     return service.getSubscriptionLimits();
   },
 );
@@ -37,7 +37,7 @@ final subscriptionLimitsProvider = FutureProvider<Map<String, dynamic>>(
 // Active subscription check provider
 final hasActiveSubscriptionProvider = FutureProvider<bool>(
   (ref) async {
-    service = ref.watch(businessSubscriptionServiceProvider);
+    final service = ref.watch(businessSubscriptionServiceProvider);
     return service.hasActiveSubscription();
   },
 );
@@ -45,7 +45,7 @@ final hasActiveSubscriptionProvider = FutureProvider<bool>(
 // Invoices provider
 final subscriptionInvoicesProvider = FutureProvider<List<Invoice>>(
   (ref) async {
-    service = ref.watch(businessSubscriptionServiceProvider);
+    final service = ref.watch(businessSubscriptionServiceProvider);
     return service.getInvoices();
   },
 );
@@ -53,7 +53,7 @@ final subscriptionInvoicesProvider = FutureProvider<List<Invoice>>(
 // Promo code validation provider
 final FutureProviderFamily<PromoCode?, String> promoCodeValidationProvider = FutureProvider.family<PromoCode?, String>(
   (ref, final code) async {
-    service = ref.watch(businessSubscriptionServiceProvider);
+    final service = ref.watch(businessSubscriptionServiceProvider);
     return service.validatePromoCode(code);
   },
 );
@@ -71,10 +71,10 @@ class BusinessSubscriptionNotifier
   Future<void> _loadSubscription() async {
     state = const AsyncValue.loading();
     try {
-      subscription = await _service.getCurrentSubscription();
-      state = AsyncValue.data(subscription);
-    } catch (e) {error, stackTrace) {
-      state = AsyncValue.error(error, stackTrace);
+      final subscription = await _service.getCurrentSubscription();
+      final state = AsyncValue.data(subscription);
+    } catch (e) {
+      final state = AsyncValue.error(error, stackTrace);
     }
   }
 
@@ -87,7 +87,7 @@ class BusinessSubscriptionNotifier
         plan: plan,
         promoCode: promoCode,
       );
-    } catch (e) {error) {
+    } catch (e) {
       throw Exception('Failed to create checkout session: $error');
     }
   }
@@ -95,7 +95,7 @@ class BusinessSubscriptionNotifier
   Future<String> createCustomerPortalSession() async {
     try {
       return await _service.createCustomerPortalSession();
-    } catch (e) {error) {
+    } catch (e) {
       throw Exception('Failed to create customer portal session: $error');
     }
   }
@@ -108,7 +108,7 @@ class BusinessSubscriptionNotifier
 final businessSubscriptionNotifierProvider = StateNotifierProvider<
     BusinessSubscriptionNotifier, AsyncValue<BusinessSubscription?>>(
   (ref) {
-    service = ref.watch(businessSubscriptionServiceProvider);
+    final service = ref.watch(businessSubscriptionServiceProvider);
     return BusinessSubscriptionNotifier(service);
   },
 );

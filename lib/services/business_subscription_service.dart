@@ -38,7 +38,7 @@ class BusinessSubscriptionService {
   // Generic subscription method
   Future<void> _subscribeToPlan(SubscriptionPlan plan) async {
     try {
-      sessionId = await createCheckoutSession(plan: plan);
+      final sessionId = await createCheckoutSession(plan: plan);
 
       // Load Stripe checkout URL from environment configuration
       const stripeCheckoutUrl = EnvironmentConfig.stripeCheckoutUrl;
@@ -58,7 +58,7 @@ class BusinessSubscriptionService {
   // Open customer portal
   Future<void> openCustomerPortal() async {
     try {
-      url = await createCustomerPortalSession();
+      final url = await createCustomerPortalSession();
 
       if (await canLaunchUrl(Uri.parse(url))) {
         await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
@@ -74,7 +74,7 @@ class BusinessSubscriptionService {
   Future<void> applyPromoCode(String code) async {
     try {
       // Validate the promo code
-      promoCode = await validatePromoCode(code);
+      final promoCode = await validatePromoCode(code);
       if (promoCode == null) {
         throw Exception('Invalid or expired promo code');
       }
@@ -86,7 +86,7 @@ class BusinessSubscriptionService {
       }
 
       // Check if user already has a subscription
-      existingSubscription = await getCurrentSubscription();
+      final existingSubscription = await getCurrentSubscription();
 
       if (existingSubscription != null) {
         // Update existing subscription with promo code
@@ -141,8 +141,8 @@ class BusinessSubscriptionService {
   // Create Stripe customer portal session
   Future<String> createCustomerPortalSession() async {
     try {
-      callable = _functions.httpsCallable('createCustomerPortalSession');
-      result = await callable.call({});
+      final callable = _functions.httpsCallable('createCustomerPortalSession');
+      final result = await callable.call({});
 
       return result.data['url'] as String;
     } catch (e) {
@@ -162,10 +162,10 @@ class BusinessSubscriptionService {
 
       if (doc.docs.isEmpty) return null;
 
-      promoCode = PromoCode.fromJson(doc.docs.first.data());
+      final promoCode = PromoCode.fromJson(doc.docs.first.data());
 
       // Check if code is still valid
-      now = DateTime.now();
+      final now = DateTime.now();
       if (now.isBefore(promoCode.validFrom) ||
           now.isAfter(promoCode.validUntil)) {
         return null;
@@ -198,7 +198,7 @@ class BusinessSubscriptionService {
 
       if (doc.docs.isEmpty) return null;
 
-      data = doc.docs.first.data();
+      final data = doc.docs.first.data();
       data['id'] = doc.docs.first.id; // Add the document ID to the data
       return BusinessSubscription.fromJson(data);
     } catch (e) {
@@ -213,7 +213,7 @@ class BusinessSubscriptionService {
     if (user == null) return [];
 
     try {
-      subscription = await getCurrentSubscription();
+      final subscription = await getCurrentSubscription();
       if (subscription == null) return [];
 
       final snap = await _firestore
@@ -247,7 +247,7 @@ class BusinessSubscriptionService {
       // Get the most recent active subscription
       final activeSubs = snapshot.docs
           .map((doc) {
-            data = doc.data();
+            final data = doc.data();
             data['id'] = doc.id; // Add the document ID to the data
             return BusinessSubscription.fromJson(data);
           })
@@ -264,13 +264,13 @@ class BusinessSubscriptionService {
 
   // Check if user has active subscription
   Future<bool> hasActiveSubscription() async {
-    subscription = await getCurrentSubscription();
+    final subscription = await getCurrentSubscription();
     return subscription != null && subscription.status.isActive;
   }
 
   // Get subscription plan limits
   Future<Map<String, dynamic>> getSubscriptionLimits() async {
-    subscription = await getCurrentSubscription();
+    final subscription = await getCurrentSubscription();
 
     if (subscription == null) {
       return {

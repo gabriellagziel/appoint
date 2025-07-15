@@ -2,7 +2,7 @@ import 'package:appoint/models/booking.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-bookingServiceProvider = Provider<BookingService>((final ref) => BookingService());
+final bookingServiceProvider = Provider<BookingService>((ref) => BookingService());
 
 class BookingService {
 
@@ -31,8 +31,8 @@ class BookingService {
   /// Submits a booking to Firestore
   Future<void> submitBooking(Booking booking) async {
     try {
-      docRef = _firestore.collection(_bookingsCollection).doc();
-      bookingWithId = booking.copyWith(id: docRef.id);
+      final docRef = _firestore.collection(_bookingsCollection).doc();
+      final bookingWithId = booking.copyWith(id: docRef.id);
       await docRef.set(bookingWithId.toJson());
     } catch (e) {
       // Removed debug print: debugPrint('Error submitting booking: $e\n$st');

@@ -3,7 +3,7 @@ mixin ServiceErrorHandler {
       {void Function(Object, StackTrace)? onError,}) async {
     try {
       return await fn();
-    } catch (e) {e, stack) {
+    } catch (e) {
       onError?.call(e, stack);
       // Optionally log to Crashlytics or another service here
       return null;

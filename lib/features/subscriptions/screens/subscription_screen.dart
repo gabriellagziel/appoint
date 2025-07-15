@@ -169,7 +169,7 @@ class SubscriptionScreen extends ConsumerWidget {
                 Row(
                   children: [
                     Icon(
-                      status == SubscriptionStatus.active ? Icons.check_circle : Icons.warning,
+                      final status = = SubscriptionStatus.active ? Icons.check_circle : Icons.warning,
                       color: status == SubscriptionStatus.active ? Colors.green : Colors.orange,
                     ),
                     const SizedBox(width: 12),
@@ -375,8 +375,7 @@ class SubscriptionScreen extends ConsumerWidget {
           value: percentage / 100,
           backgroundColor: Colors.grey[300],
           valueColor: AlwaysStoppedAnimation<Color>(
-            percentage > 80 ? Colors.red : Colors.green,
-          ),
+            percentage > 80 ? Colors.red : Colors.green),
         ),
       ],
     );
@@ -453,7 +452,6 @@ class SubscriptionScreen extends ConsumerWidget {
         ref.invalidate(subscriptionStatusProvider);
       }
     } catch (e) {
-      if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to subscribe: $e')),
         );

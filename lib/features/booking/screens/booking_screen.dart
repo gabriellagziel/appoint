@@ -52,8 +52,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
       builder: (context) => AlertDialog(
         title: const Text('Upgrade to Business'),
         content: const Text(
-          'You have reached your weekly limit of 21 bookings. Upgrade to Business mode for unlimited bookings.',
-        ),
+          'You have reached your weekly limit of 21 bookings. Upgrade to Business mode for unlimited bookings.'),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
@@ -122,10 +121,10 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
   }
 
   void _showConfirmationSheet() {
-    staffId = ref.read(staffSelectionProvider);
-    serviceName = ref.read(serviceNameProvider) ?? 'Service';
-    dateTime = ref.read(selectedSlotProvider);
-    duration = ref.read(serviceDurationProvider);
+    final staffId = ref.read(staffSelectionProvider);
+    final serviceName = ref.read(serviceNameProvider) ?? 'Service';
+    final dateTime = ref.read(selectedSlotProvider);
+    final duration = ref.read(serviceDurationProvider);
     if (staffId == null || dateTime == null || duration == null) return;
 
     final summary =
@@ -146,10 +145,10 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    staffId = ref.watch(staffSelectionProvider);
-    serviceId = ref.watch(serviceSelectionProvider);
-    dateTime = ref.watch(selectedSlotProvider);
-    duration = ref.watch(serviceDurationProvider);
+    final staffId = ref.watch(staffSelectionProvider);
+    final serviceId = ref.watch(serviceSelectionProvider);
+    final dateTime = ref.watch(selectedSlotProvider);
+    final duration = ref.watch(serviceDurationProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Book Appointment')),
@@ -215,7 +214,7 @@ class BookingListView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    bookingsStream = ref.watch(bookingServiceProvider).getBookings();
+    final bookingsStream = ref.watch(bookingServiceProvider).getBookings();
 
     return StreamBuilder<List<Booking>>(
       stream: bookingsStream,

@@ -11,7 +11,7 @@ class ContentDetailScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    contentAsync = ref.watch(contentByIdProvider(contentId));
+    final contentAsync = ref.watch(contentByIdProvider(contentId));
 
     return Scaffold(
       appBar: AppBar(title: const Text('Content Detail')),

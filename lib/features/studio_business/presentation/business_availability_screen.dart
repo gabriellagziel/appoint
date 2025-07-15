@@ -28,11 +28,10 @@ class _BusinessAvailabilityScreenState
   Future<void> _loadConfiguration() async {
     setState(() => _isLoading = true);
     try {
-      service = ref.read(businessAvailabilityServiceProvider);
+      final service = ref.read(businessAvailabilityServiceProvider);
       await service.loadConfiguration();
       ref.read(businessAvailabilityProvider.notifier).loadConfiguration();
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error loading configuration: $e')),
         );
@@ -45,9 +44,9 @@ class _BusinessAvailabilityScreenState
   Future<void> _saveConfiguration() async {
     setState(() => _isSaving = true);
     try {
-      availability = ref.read(businessAvailabilityProvider);
-      service = ref.read(businessAvailabilityServiceProvider);
-      config = service.toJson(availability);
+      final availability = ref.read(businessAvailabilityProvider);
+      final service = ref.read(businessAvailabilityServiceProvider);
+      final config = service.toJson(availability);
       await service.saveConfiguration(config);
 
       if (mounted) {
@@ -56,7 +55,6 @@ class _BusinessAvailabilityScreenState
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error saving configuration: $e')),
         );
@@ -89,14 +87,14 @@ class _BusinessAvailabilityScreenState
 
   Future<void> _pickTime(final BuildContext context, final TimeOfDay initial,
       void Function(TimeOfDay) onPicked,) async {
-    picked = await showTimePicker(context: context, initialTime: initial);
+    final picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) onPicked(picked);
   }
 
   @override
   Widget build(BuildContext context) {
-    availability = ref.watch(businessAvailabilityProvider);
-    notifier = ref.read(businessAvailabilityProvider.notifier);
+    final availability = ref.watch(businessAvailabilityProvider);
+    final notifier = ref.read(businessAvailabilityProvider.notifier);
 
     if (_isLoading) {
       return Theme(
@@ -141,7 +139,7 @@ class _BusinessAvailabilityScreenState
           itemBuilder: (context, final weekday) {
             final avail =
                 availability.firstWhere((a) => a.weekday == weekday);
-            timeRange = TimeRange(start: avail.start, end: avail.end);
+            final timeRange = TimeRange(start: avail.start, end: avail.end);
             final hasError = avail.isOpen && !timeRange.isValid;
 
             return Card(
@@ -302,8 +300,7 @@ class _BusinessAvailabilityScreenState
         children: [
           DrawerHeader(
             decoration: BoxDecoration(
-              color: BusinessTheme.businessTheme.colorScheme.primary,
-            ),
+              color: BusinessTheme.businessTheme.colorScheme.primary),
             child: const Text(
               'Studio Management',
               style: TextStyle(

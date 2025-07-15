@@ -20,21 +20,21 @@ class PaymentService {
   }
 
   Future<Map<String, dynamic>> createPaymentIntent(double amount) async {
-    callable = _functions.httpsCallable('createPaymentIntent');
-    result = await callable.call({'amount': amount});
+    final callable = _functions.httpsCallable('createPaymentIntent');
+    final result = await callable.call({'amount': amount});
     return Map<String, dynamic>.from(result.data);
   }
 
   Future<PaymentStatus> handlePayment(double amount) async {
     try {
-      intent = await createPaymentIntent(amount);
+      final intent = await createPaymentIntent(amount);
       final clientSecret = intent['clientSecret'] as String;
       final status = intent['status'] as String?;
       if (status == 'requires_action') {
         // 3D Secure required
         try {
           await Stripe.instance.handleNextAction(clientSecret);
-        } catch (e) {_) {
+        } catch (e) {
           return PaymentStatus.failed;
         }
         // Re-confirm after 3DS
@@ -43,7 +43,7 @@ class PaymentService {
         // Try to confirm payment
         return await _confirmPayment(clientSecret);
       }
-    } catch (e) {_) {
+    } catch (e) {
       return PaymentStatus.failed;
     }
   }
@@ -61,7 +61,7 @@ class PaymentService {
         case PaymentIntentsStatus.RequiresAction:
           try {
             await Stripe.instance.handleNextAction(clientSecret);
-          } catch (e) {_) {
+          } catch (e) {
             return PaymentStatus.failed;
           }
           return await _confirmPayment(clientSecret);
@@ -70,7 +70,7 @@ class PaymentService {
         default:
           return PaymentStatus.failed;
       }
-    } catch (e) {_) {
+    } catch (e) {
       return PaymentStatus.failed;
     }
   }

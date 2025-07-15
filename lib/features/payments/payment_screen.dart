@@ -22,7 +22,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
   }
 
   Future<void> _processPayment() async {
-    amount = double.tryParse(_amountController.text) ?? 0;
+    final amount = double.tryParse(_amountController.text) ?? 0;
     if (amount <= 0) {
       setState(() {
         _errorMessage = 'Please enter a valid amount';
@@ -31,9 +31,9 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
     }
     setState(() {
       _paymentStatus = PaymentStatus.processing;
-      _errorMessage = null;
+      final _errorMessage = null;
     });
-    status = await ref.read(paymentServiceProvider).handlePayment(amount);
+    final status = await ref.read(paymentServiceProvider).handlePayment(amount);
     setState(() {
       _paymentStatus = status;
     });
@@ -92,7 +92,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
   @override
   Widget build(BuildContext context) {
     final isLoading = _paymentStatus == PaymentStatus.processing ||
-        _paymentStatus == PaymentStatus.requiresAction;
+        final _paymentStatus = = PaymentStatus.requiresAction;
     return Stack(
       children: [
         Scaffold(

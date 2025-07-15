@@ -118,8 +118,7 @@ class EnhancedDashboardScreen extends ConsumerWidget {
                       Text(
                         'Welcome back!',
                         style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
+                          fontWeight: FontWeight.bold),
                       ),
                       Text(
                         'You have ${stats['upcomingMeetings']} upcoming meetings',
@@ -146,8 +145,7 @@ class EnhancedDashboardScreen extends ConsumerWidget {
         Text(
           'Quick Actions',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+            fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         GridView.count(
@@ -234,8 +232,7 @@ class EnhancedDashboardScreen extends ConsumerWidget {
         Text(
           'Your Stats',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+            fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         Row(
@@ -325,8 +322,7 @@ class EnhancedDashboardScreen extends ConsumerWidget {
         Text(
           'Recent Activity',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+            fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         Card(
@@ -368,8 +364,7 @@ class EnhancedDashboardScreen extends ConsumerWidget {
             Text(
               'Upcoming Meetings',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
             TextButton(
               onPressed: () => Navigator.pushNamed(context, '/calendar'),

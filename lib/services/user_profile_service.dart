@@ -7,7 +7,7 @@ class UserProfileService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   Future<UserProfile?> getProfile(String uid) async {
-    doc = await _firestore.collection('users').doc(uid).get();
+    final doc = await _firestore.collection('users').doc(uid).get();
     if (!doc.exists) return null;
     return UserProfile.fromJson({
       'id': doc.id,

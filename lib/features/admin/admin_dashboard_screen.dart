@@ -28,7 +28,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 4, vsync: this);
+    final _tabController = TabController(length: 4, vsync: this);
     _tabController.addListener(() {
       setState(() {
         _selectedIndex = _tabController.index;
@@ -44,7 +44,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
 
   @override
   Widget build(BuildContext context) {
-    l10n = AdminLocalizations.of(context);
+    final l10n = AdminLocalizations.of(context);
 
     return AdminGuard(
       child: Scaffold(
@@ -124,8 +124,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
         children: [
           const DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.blue,
-            ),
+              color: Colors.blue),
             child: Text(
               'Admin Panel',
               style: TextStyle(

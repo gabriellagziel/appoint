@@ -10,7 +10,7 @@ class InviteService {
 
   Future<void> sendInvite(final String appointmentId, final Contact invitee,
       {bool requiresInstallFallback = false,}) async {
-    doc = _firestore.collection('invites').doc();
+    final doc = _firestore.collection('invites').doc();
     final invite = Invite(
       id: doc.id,
       appointmentId: appointmentId,

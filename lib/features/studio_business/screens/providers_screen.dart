@@ -7,7 +7,7 @@ class ProvidersScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    providersAsync = ref.watch(businessProvidersProvider);
+    final providersAsync = ref.watch(businessProvidersProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -76,9 +76,9 @@ class ProvidersScreen extends ConsumerWidget {
   }
 
   void _showAddProviderDialog(BuildContext context) {
-    formKey = GlobalKey<FormState>();
-    nameController = TextEditingController();
-    roleController = TextEditingController();
+    final formKey = GlobalKey<FormState>();
+    final nameController = TextEditingController();
+    final roleController = TextEditingController();
 
     showDialog(
       context: context,
@@ -124,9 +124,9 @@ class ProvidersScreen extends ConsumerWidget {
 
   void _showEditProviderDialog(
       BuildContext context, final Map<String, dynamic> provider,) {
-    formKey = GlobalKey<FormState>();
-    nameController = TextEditingController(text: provider['name'] ?? '');
-    roleController = TextEditingController(text: provider['role'] ?? '');
+    final formKey = GlobalKey<FormState>();
+    final nameController = TextEditingController(text: provider['name'] ?? '');
+    final roleController = TextEditingController(text: provider['role'] ?? '');
 
     showDialog(
       context: context,

@@ -7,7 +7,7 @@ class MessagesScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    messagesAsync = ref.watch(messagesProvider);
+    final messagesAsync = ref.watch(messagesProvider);
 
     return Scaffold(
       appBar: AppBar(

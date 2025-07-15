@@ -6,8 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final userProfileServiceProvider =
     Provider<UserProfileService>((ref) => UserProfileService());
 
-currentUserProfileProvider = StreamProvider<UserProfile?>((final ref) {
-  authState = ref.watch(authStateProvider);
+final currentUserProfileProvider = StreamProvider<UserProfile?>((ref) {
+  final authState = ref.watch(authStateProvider);
   return authState.when(
     data: (user) {
       if (user == null) {

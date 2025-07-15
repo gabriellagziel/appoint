@@ -8,8 +8,8 @@ class NotificationListScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
-    notifications = ref.watch(notificationsProvider);
+    final l10n = AppLocalizations.of(context)!;
+    final notifications = ref.watch(notificationsProvider);
     return Scaffold(
       appBar: AppBar(title: Text(l10n.notifications)),
       body: ListView.builder(

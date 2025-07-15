@@ -5,7 +5,7 @@ class BranchService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<List<Branch>> fetchBranches() async {
-    snapshot = await _firestore.collection('branches').get();
+    final snapshot = await _firestore.collection('branches').get();
     return snapshot.docs
         .map((doc) => Branch.fromJson(doc.data(), doc.id))
         .toList();

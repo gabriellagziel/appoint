@@ -5,7 +5,7 @@ class StudioProfileService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<StudioProfile?> fetchProfile(String studioId) async {
-    doc = await _firestore.collection('studios').doc(studioId).get();
+    final doc = await _firestore.collection('studios').doc(studioId).get();
     if (!doc.exists) return null;
     return StudioProfile.fromJson(doc.data()!..['id'] = doc.id);
   }
