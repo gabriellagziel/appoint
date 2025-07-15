@@ -65,10 +65,10 @@ class AmbassadorAssignmentNotifier extends StateNotifier<AsyncValue<bool>> {
         languageCode: languageCode,
       );
 
-      final state = AsyncValue.data(success);
+      state = AsyncValue.data(success);
       return success;
-    } catch (e) {
-      final state = AsyncValue.error(error, stackTrace);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
       return false;
     }
   }
@@ -78,10 +78,10 @@ class AmbassadorAssignmentNotifier extends StateNotifier<AsyncValue<bool>> {
 
     try {
       final success = await _service.removeAmbassador(userId);
-      final state = AsyncValue.data(success);
+      state = AsyncValue.data(success);
       return success;
-    } catch (e) {
-      final state = AsyncValue.error(error, stackTrace);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
       return false;
     }
   }
@@ -91,10 +91,10 @@ class AmbassadorAssignmentNotifier extends StateNotifier<AsyncValue<bool>> {
 
     try {
       final assignedCount = await _service.autoAssignAvailableSlots();
-      final state = AsyncValue.data(assignedCount > 0);
+      state = AsyncValue.data(assignedCount > 0);
       return assignedCount;
-    } catch (e) {
-      final state = AsyncValue.error(error, stackTrace);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
       return 0;
     }
   }
@@ -124,9 +124,9 @@ class QuotaDataNotifier
     state = const AsyncValue.loading();
     try {
       final stats = await _service.getQuotaStatistics();
-      final state = AsyncValue.data(stats);
-    } catch (e) {
-      final state = AsyncValue.error(error, stackTrace);
+      state = AsyncValue.data(stats);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -150,7 +150,7 @@ class QuotaDataNotifier
     if (data == null) return {};
 
     final countryQuotas = <String, dynamic>{};
-    for (entry in data.entries) {
+    for (final entry in data.entries) {
       if (entry.value['countryCode'] == countryCode) {
         countryQuotas[entry.key] = entry.value;
       }
@@ -164,7 +164,7 @@ class QuotaDataNotifier
     if (data == null) return {};
 
     final languageQuotas = <String, dynamic>{};
-    for (entry in data.entries) {
+    for (final entry in data.entries) {
       if (entry.value['languageCode'] == languageCode) {
         languageQuotas[entry.key] = entry.value;
       }
@@ -180,7 +180,7 @@ class QuotaDataNotifier
 
     final countries = <String, Map<String, dynamic>>{};
 
-    for (entry in data.entries) {
+    for (final entry in data.entries) {
       final countryCode = entry.value['countryCode'] as String;
       final currentData = countries[countryCode];
 
@@ -219,7 +219,7 @@ class QuotaDataNotifier
 
     final countries = <String, Map<String, dynamic>>{};
 
-    for (entry in data.entries) {
+    for (final entry in data.entries) {
       final countryCode = entry.value['countryCode'] as String;
       final currentData = countries[countryCode];
 

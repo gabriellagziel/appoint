@@ -380,7 +380,7 @@ class AnalyticsService {
 
   /// Generic event logging method - use this for any custom events
   static Future<void> logEvent(String name, {Map<String, dynamic>? params}) async {
-    await _instance._analytics.logEvent(name: name, parameters: params);
+    await _instance._analytics.logEvent(name: name, parameters: params?.cast<String, Object>());
   }
 
   /// Generic screen view logging method - use this for tracking screen views

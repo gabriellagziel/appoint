@@ -74,7 +74,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
             onWebResourceError: (WebResourceError error) {
               setState(() {
                 _hasError = true;
-                final _errorMessage = 'Error loading checkout: ${error.description}';
+                _errorMessage = 'Error loading checkout: ${error.description}';
                 _isLoading = false;
               });
             },
@@ -82,9 +82,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         )
         ..loadRequest(Uri.parse(checkoutUrl));
     } catch (e) {
+      setState(() {
         _hasError = true;
-        final _errorMessage = 'Failed to initialize checkout: $e';
-        var _isLoading = false;
+        _errorMessage = 'Failed to initialize checkout: $e';
+        _isLoading = false;
       });
     }
   }
@@ -117,13 +118,12 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         }
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error confirming payment: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error confirming payment: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
 
@@ -224,7 +224,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
               onPressed: () {
                 setState(() {
                   _hasError = false;
-                  var _isLoading = true;
+                  _isLoading = true;
                 });
                 _initializeWebView();
               },

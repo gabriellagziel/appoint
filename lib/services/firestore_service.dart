@@ -86,7 +86,7 @@ class FirestoreService {
     try {
       Query<Object?> query = _firestore.collection(collectionPath);
       if (queryBuilder != null) {
-        final query = queryBuilder(query);
+        query = queryBuilder(query);
       }
       return await query.get();
     } catch (e) {

@@ -13,7 +13,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final adminServiceProvider = Provider<AdminService>((ref) => AdminService());
 
 /// Provider for the broadcast service
-final broadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());
+final adminBroadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());
 
 /// Provider to check if current user has admin privileges
 final isAdminProvider = FutureProvider<bool>((ref) async {
@@ -72,24 +72,24 @@ class AdminNotifier extends StateNotifier<AdminState> {
   final Ref ref;
   
   Future<void> deleteUser(String userId) async {
-    final state = state.copyWith(isLoading: true);
+    state = state.copyWith(isLoading: true);
     try {
       final adminService = ref.read(adminServiceProvider);
       await adminService.deleteUser(userId);
-      final state = state.copyWith(isLoading: false);
+      state = state.copyWith(isLoading: false);
     } catch (e) {
-      final state = state.copyWith(isLoading: false, error: e.toString());
+      state = state.copyWith(isLoading: false, error: e.toString());
     }
   }
   
   Future<void> updateUserRole(String userId, String newRole) async {
-    final state = state.copyWith(isLoading: true);
+    state = state.copyWith(isLoading: true);
     try {
       final adminService = ref.read(adminServiceProvider);
       await adminService.updateUserRole(userId, newRole);
-      final state = state.copyWith(isLoading: false);
+      state = state.copyWith(isLoading: false);
     } catch (e) {
-      final state = state.copyWith(isLoading: false, error: e.toString());
+      state = state.copyWith(isLoading: false, error: e.toString());
     }
   }
 }

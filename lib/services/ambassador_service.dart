@@ -15,11 +15,11 @@ class AmbassadorService {
       Query query = _firestore.collection('ambassador_stats');
 
       if (country != null) {
-        final query = query.where('country', isEqualTo: country);
+        query = query.where('country', isEqualTo: country);
       }
 
       if (language != null) {
-        final query = query.where('language', isEqualTo: language);
+        query = query.where('language', isEqualTo: language);
       }
 
       if (dateRange != null) {
@@ -44,11 +44,11 @@ class AmbassadorService {
 
     // Group by country for chart
     final countryGroups = <String, List<AmbassadorStats>>{};
-    for (stat in stats) {
+    for (final stat in stats) {
       countryGroups.putIfAbsent(stat.country, () => []).add(stat);
     }
 
-    for (entry in countryGroups.entries) {
+    for (final entry in countryGroups.entries) {
       final countryStats = entry.value;
       final totalAmbassadors = countryStats.fold<int>(
           0, (total, final stat) => total + stat.ambassadors,);
@@ -93,7 +93,7 @@ class AmbassadorService {
 
       final snapshot = await query.get();
       final counts = <DateTime, int>{};
-      for (doc in snapshot.docs) {
+      for (final doc in snapshot.docs) {
         final ts = doc['date'] as Timestamp?;
         if (ts == null) continue;
         final date =

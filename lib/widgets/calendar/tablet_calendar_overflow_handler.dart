@@ -227,7 +227,7 @@ class ResponsiveCalendarWeekView extends StatelessWidget {
                 : isTablet
                     ? 150.0
                     : 120.0);
-        effectiveHeaderHeight = headerHeight ?? (isTablet ? 60.0 : 50.0);
+        final effectiveHeaderHeight = headerHeight ?? (isTablet ? 60.0 : 50.0);
 
         Widget weekView = Column(
           children: [
@@ -314,7 +314,7 @@ class ResponsiveCalendarMonthView extends StatelessWidget {
                 : isTablet
                     ? 100.0
                     : 80.0);
-        effectiveHeaderHeight = headerHeight ?? (isTablet ? 50.0 : 40.0);
+        final effectiveHeaderHeight = headerHeight ?? (isTablet ? 50.0 : 40.0);
 
         Widget monthView = Column(
           children: [
