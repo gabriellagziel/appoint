@@ -31,7 +31,7 @@ class InviteService {
         .where('appointmentId', isEqualTo: appointmentId)
         .where('inviteeId', isEqualTo: inviteeId)
         .get();
-    for (doc in query.docs) {
+    for (final doc in query.docs) {
       await doc.reference.update({'status': status.name});
     }
   }

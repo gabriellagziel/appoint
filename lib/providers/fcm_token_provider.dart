@@ -37,40 +37,40 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
         FirebaseMessaging.instance.onTokenRefresh.listen(_onTokenRefresh);
         
         // Listen for user authentication changes
-        _authService.authStateChanges.listen(_onAuthStateChanged);
+        _authService.authStateChanges().listen(_onAuthStateChanged);
       } else {
-        final state = FCMTokenState.error('Notification permissions denied');
+        state = FCMTokenState.error('Notification permissions denied');
       }
     } catch (e) {
-      final state = FCMTokenState.error('Failed to initialize FCM: $e');
+      state = FCMTokenState.error('Failed to initialize FCM: $e');
     }
   }
 
   /// Get current FCM token and store it
   Future<void> _getAndStoreToken() async {
     try {
-      final state = FCMTokenState.loading();
+      state = FCMTokenState.loading();
       
       final token = await FirebaseMessaging.instance.getToken();
       
       if (token != null) {
-        final state = FCMTokenState.success(token);
+        state = FCMTokenState.success(token);
         await _sendTokenToBackend(token);
       } else {
-        final state = FCMTokenState.error('Failed to get FCM token');
+        state = FCMTokenState.error('Failed to get FCM token');
       }
     } catch (e) {
-      final state = FCMTokenState.error('Failed to get FCM token: $e');
+      state = FCMTokenState.error('Failed to get FCM token: $e');
     }
   }
 
   /// Handle token refresh
   Future<void> _onTokenRefresh(String newToken) async {
     try {
-      final state = FCMTokenState.success(newToken);
+      state = FCMTokenState.success(newToken);
       await _sendTokenToBackend(newToken);
     } catch (e) {
-      final state = FCMTokenState.error('Failed to handle token refresh: $e');
+      state = FCMTokenState.error('Failed to handle token refresh: $e');
     }
   }
 
@@ -86,7 +86,7 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
       }
     } else {
       // User logged out, clear token state
-      final state = FCMTokenState.initial();
+      state = FCMTokenState.initial();
     }
   }
 
@@ -102,6 +102,12 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
         });
       }
     } catch (e) {
+      // Handle error silently
+    }
+  }
+
+  /// Get platform identifier
+  String _getPlatform() {
     if (Platform.isAndroid) return 'android';
     if (Platform.isIOS) return 'ios';
     if (kIsWeb) return 'web';
@@ -151,6 +157,12 @@ class FCMTokenState {
   factory FCMTokenState.success(String token) => FCMTokenState._(token: token);
 
   factory FCMTokenState.error(String error) => FCMTokenState._(error: error);
+
+  /// Check if token is available
+  bool get hasToken => token != null;
+
+  /// Check if there's an error
+  bool get hasError => error != null;
 }
 
 /// Provider for FCM Token
