@@ -9,7 +9,7 @@ class AppShell extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    user = ref.watch(userProvider);
+    final user = ref.watch(userProvider);
 
     if (user == null) {
       return Scaffold(body: child);
