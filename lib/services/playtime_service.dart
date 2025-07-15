@@ -20,7 +20,7 @@ class PlaytimeService {
         _firestore = FirebaseFirestore.instance;
         _auth = FirebaseAuth.instance;
       }
-    } catch (e) {e) {
+    } catch (e) { {
       // Silently handle Firebase initialization errors in tests
     }
   }
@@ -45,7 +45,7 @@ class PlaytimeService {
                 ...doc.data(),
               }),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to fetch games: $e');
     }
   }
@@ -63,7 +63,7 @@ class PlaytimeService {
       });
 
       return game.copyWith(id: docRef.id);
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to create game: $e');
     }
   }
@@ -74,7 +74,7 @@ class PlaytimeService {
         ...game.toJson(),
         'id': null,
       });
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to update game: $e');
     }
   }
@@ -82,7 +82,7 @@ class PlaytimeService {
   Future<void> deleteGame(String gameId) async {
     try {
       await _firestore.collection(_gamesCollection).doc(gameId).delete();
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to delete game: $e');
     }
   }
@@ -97,7 +97,7 @@ class PlaytimeService {
                 ...doc.data(),
               }),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to fetch sessions: $e');
     }
   }
@@ -113,7 +113,7 @@ class PlaytimeService {
       });
 
       return session.copyWith(id: docRef.id);
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to create session: $e');
     }
   }
@@ -124,7 +124,7 @@ class PlaytimeService {
         ...session.toJson(),
         'id': null,
       });
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to update session: $e');
     }
   }
@@ -140,7 +140,7 @@ class PlaytimeService {
                 ...doc.data(),
               }),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to fetch backgrounds: $e');
     }
   }
@@ -173,7 +173,7 @@ class PlaytimeService {
         imageUrl: imageUrl,
         createdBy: user.uid,
       );
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to create background: $e');
     }
   }
@@ -199,7 +199,7 @@ class PlaytimeService {
       return PlaytimeChat.fromJson({
         ...doc.data()!,
       });
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to fetch chat: $e');
     }
   }
@@ -226,7 +226,7 @@ class PlaytimeService {
             },
             SetOptions(merge: true),);
       });
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to send message: $e');
     }
   }
