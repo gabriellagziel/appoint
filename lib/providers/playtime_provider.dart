@@ -66,7 +66,7 @@ final FutureProviderFamily<PlaytimeGame?, String> gameByIdProvider = FutureProvi
   games = await ref.read(gamesProvider.future);
   try {
     return games.firstWhere((game) => game.id == gameId);
-  } catch (e) {e) {
+  } catch (e) { {
     return null;
   }
 });
@@ -104,7 +104,7 @@ final FutureProviderFamily<PlaytimeSession?, String> sessionByIdProvider = Futur
   sessions = await ref.read(sessionsProvider.future);
   try {
     return sessions.firstWhere((session) => session.id == sessionId);
-  } catch (e) {e) {
+  } catch (e) { {
     return null;
   }
 });
@@ -141,7 +141,7 @@ final FutureProviderFamily<PlaytimeBackground?, String> backgroundByIdProvider =
   try {
     return backgrounds
         .firstWhere((background) => background.id == backgroundId);
-  } catch (e) {e) {
+  } catch (e) { {
     return null;
   }
 });

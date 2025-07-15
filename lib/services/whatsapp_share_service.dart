@@ -47,7 +47,7 @@ class WhatsAppShareService {
       );
 
       return link;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error generating smart share link: $e');
       // Fallback to simple URL
       return '$_baseUrl/meeting/$meetingId?creatorId=$creatorId${contextId != null ? '&contextId=$contextId' : ''}';
@@ -101,7 +101,7 @@ class WhatsAppShareService {
         );
         return true;
       }
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error sharing to WhatsApp: $e');
       return false;
     }
@@ -119,7 +119,7 @@ class WhatsAppShareService {
         return GroupRecognition.fromJson(doc.docs.first.data());
       }
       return null;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error recognizing group: $e');
       return null;
     }
@@ -147,7 +147,7 @@ class WhatsAppShareService {
           .collection('group_recognition')
           .doc(groupId)
           .set(groupRecognition.toJson());
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error saving group recognition: $e');
     }
   }
@@ -160,7 +160,7 @@ class WhatsAppShareService {
         'totalShares': FieldValue.increment(1),
         'lastSharedAt': FieldValue.serverTimestamp(),
       });
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error updating group recognition: $e');
     }
   }
@@ -183,7 +183,7 @@ class WhatsAppShareService {
       );
 
       await _firestore.collection('share_analytics').add(analytics.toJson());
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error logging share analytics: $e');
     }
   }
@@ -213,7 +213,7 @@ class WhatsAppShareService {
         // Navigate to appropriate screen based on user state
         // This will be handled by the main app router
       }
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error handling deep link: $e');
     }
   }
@@ -236,7 +236,7 @@ class WhatsAppShareService {
             'respondedAt': FieldValue.serverTimestamp(),
         });
       }
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error updating share analytics: $e');
     }
   }
@@ -265,7 +265,7 @@ class WhatsAppShareService {
             .length,
         'groupShares': analytics.where((a) => a.groupId != null).length,
       };
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error getting share stats: $e');
       return {};
     }
