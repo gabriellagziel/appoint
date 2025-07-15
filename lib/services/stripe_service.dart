@@ -29,7 +29,7 @@ class StripeService {
       });
 
       return result.data;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error creating checkout session: $e');
       rethrow;
     }
@@ -40,7 +40,7 @@ class StripeService {
     try {
       doc = await _firestore.collection('studio').doc(studioId).get();
       return doc.data()?['subscriptionStatus'] as String?;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error getting subscription status: $e');
       return null;
     }
@@ -58,7 +58,7 @@ class StripeService {
         if (subscriptionId != null) 'subscriptionId': subscriptionId,
         'lastUpdated': FieldValue.serverTimestamp(),
       });
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error updating subscription status: $e');
       rethrow;
     }
@@ -84,7 +84,7 @@ class StripeService {
         return true;
       }
       return false;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error cancelling subscription: $e');
       return false;
     }
@@ -106,7 +106,7 @@ class StripeService {
         };
       }
       return null;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error getting subscription details: $e');
       return null;
     }

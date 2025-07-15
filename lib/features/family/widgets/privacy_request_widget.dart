@@ -33,7 +33,7 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
         _hasActiveRequest =
             requests.any((req) => req.status == 'pending');
       });
-    } catch (e) {e) {
+    } catch (e) { {
       // Handle error silently for now
     }
   }
@@ -58,7 +58,7 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
           ),
         );
       }
-    } catch (e) {e) {
+    } catch (e) { {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

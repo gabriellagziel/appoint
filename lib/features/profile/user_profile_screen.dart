@@ -75,7 +75,7 @@ class UserProfileScreen extends ConsumerWidget {
           (route) => false,
         );
       }
-    } catch (e) {e) {
+    } catch (e) { {
       // Close loading dialog
       if (context.mounted) {
         Navigator.of(context).pop();

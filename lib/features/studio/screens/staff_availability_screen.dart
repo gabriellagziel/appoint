@@ -196,7 +196,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
           ),
         );
       }
-    } catch (e) {e) {
+    } catch (e) { {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

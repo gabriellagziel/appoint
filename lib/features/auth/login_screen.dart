@@ -64,7 +64,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         // if (mounted) {
                         //   ref.refresh(authStateProvider);
                         // }
-                      } catch (e) {e) {
+                      } catch (e) { {
                         if (!mounted) return;
                         // ignore: use_build_context_synchronously
                         ScaffoldMessenger.of(context).showSnackBar(
