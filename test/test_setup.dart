@@ -59,7 +59,7 @@ Future<void> setupTestEnvironment() async {
   // Initialize Firebase with test configuration
   try {
     await Firebase.initializeApp();
-  } catch (e) {e) {
+  } catch (e) {
     // If already initialized, continue
   }
 
@@ -98,7 +98,7 @@ void setupBasicTestEnvironment() {
     // Initialize Firebase if not already done
     try {
       await Firebase.initializeApp();
-    } catch (e) {e) {
+    } catch (e) {
       // Ignore if already initialized
     }
   });
