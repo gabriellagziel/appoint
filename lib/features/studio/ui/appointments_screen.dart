@@ -14,9 +14,9 @@ class AppointmentsScreen extends ConsumerWidget {
 
   Future<void> _openEditor(final BuildContext context, final WidgetRef ref,
       {StudioAppointment? appt,}) async {
-    titleController = TextEditingController(text: appt?.title ?? '');
-    clientController = TextEditingController(text: appt?.client ?? '');
-    notesController = TextEditingController(text: appt?.notes ?? '');
+    final titleController = TextEditingController(text: appt?.title ?? '');
+    final clientController = TextEditingController(text: appt?.client ?? '');
+    final notesController = TextEditingController(text: appt?.notes ?? '');
     DateTime? time = appt?.time ?? DateTime.now();
 
     await showDialog(
@@ -107,7 +107,7 @@ class AppointmentsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    apptsAsync = ref.watch(studioAppointmentsProvider);
+    final apptsAsync = ref.watch(studioAppointmentsProvider);
     return AppScaffold(
       title: 'Appointments',
       floatingActionButton: FloatingActionButton(

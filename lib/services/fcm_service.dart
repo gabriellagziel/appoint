@@ -28,7 +28,7 @@ class FCMService {
 
       if (settings.authorizationStatus == AuthorizationStatus.authorized) {
         // Get FCM token
-        token = await _messaging.getToken();
+        final token = await _messaging.getToken();
         if (token != null) {
           // Removed debug print: debugPrint('FCM Token: $token');
           await _saveTokenToFirestore(token);
@@ -108,7 +108,7 @@ class FCMService {
   /// Navigate to bookings page
   void _navigateToBookings() {
     if (navigatorKey.currentContext != null) {
-      router = GoRouter.of(navigatorKey.currentContext!);
+      final router = GoRouter.of(navigatorKey.currentContext!);
       router.push('/studio/bookings');
     }
   }

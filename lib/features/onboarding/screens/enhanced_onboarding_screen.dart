@@ -144,8 +144,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'Welcome to APP-OINT',
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+              fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           
@@ -154,8 +153,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'Your all-in-one platform for appointments, family coordination, and business management.',
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-              color: Colors.grey[600],
-            ),
+              color: Colors.grey[600]),
             textAlign: TextAlign.center,
           ),
           
@@ -194,8 +192,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'How will you use APP-OINT?',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+              fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           
@@ -310,8 +307,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'Choose your language',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+              fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           
@@ -361,8 +357,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
             Text(
               'Tell us about yourself',
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
             
@@ -444,8 +439,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'What interests you?',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+              fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           
@@ -489,8 +483,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
                     decoration: BoxDecoration(
                       color: isSelected ? Colors.blue[50] : Colors.grey[100],
                       border: Border.all(
-                        color: isSelected ? Colors.blue : Colors.grey[300]!,
-                      ),
+                        color: isSelected ? Colors.blue : Colors.grey[300]!),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
@@ -539,8 +532,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'You\'re all set!',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+              fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           
@@ -670,7 +662,6 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
         Navigator.of(context).pushReplacementNamed('/dashboard');
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to complete onboarding: $e')),
         );

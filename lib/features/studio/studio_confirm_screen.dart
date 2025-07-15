@@ -22,7 +22,7 @@ class StudioConfirmScreen extends ConsumerWidget {
       selection.slot.minute,
     );
     Future<void> submitBooking() async {
-      user = await ref.read(authServiceProvider).currentUser();
+      final user = await ref.read(authServiceProvider).currentUser();
       if (user == null) return;
       await ref.read(appointmentServiceProvider).createScheduled(
             creatorId: user.uid,

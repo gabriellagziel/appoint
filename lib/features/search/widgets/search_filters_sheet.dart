@@ -56,7 +56,7 @@ class _SearchFiltersSheetState extends State<SearchFiltersSheet> {
   @override
   void initState() {
     super.initState();
-    _filters = widget.initialFilters;
+    final _filters = widget.initialFilters;
     _initializeControllers();
   }
 
@@ -77,9 +77,9 @@ class _SearchFiltersSheetState extends State<SearchFiltersSheet> {
     _maxPriceController.text = _filters.maxPrice?.toString() ?? '';
     _distanceController.text = _filters.distance?.toString() ?? '';
     
-    _selectedCategory = _filters.category;
-    _selectedSortBy = _filters.sortBy ?? 'Relevance';
-    _availabilityOnly = _filters.availability ?? false;
+    final _selectedCategory = _filters.category;
+    final _selectedSortBy = _filters.sortBy ?? 'Relevance';
+    var _availabilityOnly = _filters.availability ?? false;
   }
 
   void _applyFilters() {
@@ -115,9 +115,9 @@ class _SearchFiltersSheetState extends State<SearchFiltersSheet> {
       _minRatingController.clear();
       _maxPriceController.clear();
       _distanceController.clear();
-      _selectedCategory = null;
-      _selectedSortBy = 'Relevance';
-      _availabilityOnly = false;
+      final _selectedCategory = null;
+      final _selectedSortBy = 'Relevance';
+      var _availabilityOnly = false;
     });
   }
 

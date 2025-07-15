@@ -33,7 +33,7 @@ class REDACTED_TOKEN
     setState(() => _isLoading = true);
 
     try {
-      service = ref.read(REDACTED_TOKEN);
+      final service = ref.read(REDACTED_TOKEN);
       await service.subscribeBasic();
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -44,7 +44,6 @@ class REDACTED_TOKEN
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to start Basic subscription: $e'),
@@ -63,7 +62,7 @@ class REDACTED_TOKEN
     setState(() => _isLoading = true);
 
     try {
-      service = ref.read(REDACTED_TOKEN);
+      final service = ref.read(REDACTED_TOKEN);
       await service.subscribePro();
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -74,7 +73,6 @@ class REDACTED_TOKEN
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to start Pro subscription: $e'),
@@ -90,7 +88,7 @@ class REDACTED_TOKEN
   }
 
   Future<void> _applyPromoCode() async {
-    code = _promoCodeController.text.trim();
+    final code = _promoCodeController.text.trim();
     if (code.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -104,7 +102,7 @@ class REDACTED_TOKEN
     setState(() => _isApplyingPromo = true);
 
     try {
-      service = ref.read(REDACTED_TOKEN);
+      final service = ref.read(REDACTED_TOKEN);
       await service.applyPromoCode(code);
       setState(() => _selectedPromoCode = code);
       if (mounted) {
@@ -116,7 +114,6 @@ class REDACTED_TOKEN
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to apply promo code: $e'),
@@ -133,7 +130,7 @@ class REDACTED_TOKEN
 
   Future<void> _openCustomerPortal() async {
     try {
-      service = ref.read(REDACTED_TOKEN);
+      final service = ref.read(REDACTED_TOKEN);
       await service.openCustomerPortal();
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -144,7 +141,6 @@ class REDACTED_TOKEN
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to open customer portal: $e'),
@@ -157,7 +153,7 @@ class REDACTED_TOKEN
 
   @override
   Widget build(BuildContext context) {
-    subscriptionAsync = ref.watch(currentSubscriptionProvider);
+    final subscriptionAsync = ref.watch(currentSubscriptionProvider);
 
     return Scaffold(
       appBar: AppBar(

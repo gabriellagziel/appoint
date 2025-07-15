@@ -8,7 +8,7 @@ final REDACTED_TOKEN =
 final FutureProviderFamily<List<StaffAvailability>, String> staffAvailabilityProvider =
     FutureProvider.family<List<StaffAvailability>, String>(
   (ref, final businessProfileId) async {
-    service = ref.read(REDACTED_TOKEN);
+    final service = ref.read(REDACTED_TOKEN);
     return service.getStaffAvailability(businessProfileId);
   },
 );
@@ -16,7 +16,7 @@ final FutureProviderFamily<List<StaffAvailability>, String> staffAvailabilityPro
 final FutureProviderFamily<StaffAvailability?, String> staffAvailabilityByIdProvider =
     FutureProvider.family<StaffAvailability?, String>(
   (ref, final staffProfileId) async {
-    service = ref.read(REDACTED_TOKEN);
+    final service = ref.read(REDACTED_TOKEN);
     return service.getStaffAvailabilityById(staffProfileId);
   },
 );

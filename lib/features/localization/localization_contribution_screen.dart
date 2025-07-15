@@ -16,7 +16,7 @@ class REDACTED_TOKEN
 
   @override
   Widget build(BuildContext context) {
-    locales = missingTranslations.keys.toList()..sort();
+    final locales = missingTranslations.keys.toList()..sort();
     _selectedLocale ??= locales.isNotEmpty ? locales.first : null;
 
     return Scaffold(

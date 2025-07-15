@@ -21,7 +21,7 @@ class AdminUsersScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    usersAsync = ref.watch(allUsersProvider);
+    final usersAsync = ref.watch(allUsersProvider);
     return Scaffold(
       appBar: AppBar(title: const Text('Users')),
       body: usersAsync.when(
@@ -35,7 +35,7 @@ class AdminUsersScreen extends ConsumerWidget {
               final user = users[index];
               return ListTile(
                 title: Text(
-                    user.displayName.isEmpty ? user.email : user.displayName,),
+                    user.displayName.isEmpty ? user.email : user.displayName),
                 subtitle: Text(user.role),
                 trailing: ElevatedButton(
                   onPressed: () => _changeRole(context, ref, user),

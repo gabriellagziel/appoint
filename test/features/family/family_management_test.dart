@@ -23,7 +23,7 @@ class FakeUser implements User {
       super.noSuchMethod(invocation);
 }
 
-fakeAuthUser = FakeUser('test-parent-id');
+final fakeAuthUser = FakeUser('test-parent-id');
 final fakeAuthStateProvider =
     FutureProvider<User?>((ref) async => fakeAuthUser);
 

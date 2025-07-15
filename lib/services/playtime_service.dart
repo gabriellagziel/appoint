@@ -38,7 +38,7 @@ class PlaytimeService {
     try {
       if (Firebase.apps.isEmpty) return [];
       
-      snapshot = await _firestore.collection(_gamesCollection).get();
+      final snapshot = await _firestore.collection(_gamesCollection).get();
       return snapshot.docs
           .map((doc) => PlaytimeGame.fromJson({
                 'id': doc.id,
@@ -55,7 +55,7 @@ class PlaytimeService {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');
 
-      docRef = await _firestore.collection(_gamesCollection).add({
+      final docRef = await _firestore.collection(_gamesCollection).add({
         ...game.toJson(),
         'id': null, // Remove id as it will be set by Firestore
         'createdBy': user.uid,
@@ -90,7 +90,7 @@ class PlaytimeService {
   // Session Operations
   Future<List<PlaytimeSession>> getSessions() async {
     try {
-      snapshot = await _firestore.collection(_sessionsCollection).get();
+      final snapshot = await _firestore.collection(_sessionsCollection).get();
       return snapshot.docs
           .map((doc) => PlaytimeSession.fromJson({
                 'id': doc.id,
@@ -107,7 +107,7 @@ class PlaytimeService {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');
 
-      docRef = await _firestore.collection(_sessionsCollection).add({
+      final docRef = await _firestore.collection(_sessionsCollection).add({
         ...session.toJson(),
         'id': null,
       });
@@ -162,7 +162,7 @@ class PlaytimeService {
       // TODO(username): Implement this feature
       const imageUrl = 'TODO: image url';
 
-      docRef = await _firestore.collection(_backgroundsCollection).add({
+      final docRef = await _firestore.collection(_backgroundsCollection).add({
         'imageUrl': imageUrl,
         'createdBy': user.uid,
         'createdAt': FieldValue.serverTimestamp(),
@@ -207,10 +207,10 @@ class PlaytimeService {
   Future<void> sendMessage(
       String sessionId, final ChatMessage message,) async {
     try {
-      chatRef = _firestore.collection(_chatsCollection).doc(sessionId);
+      final chatRef = _firestore.collection(_chatsCollection).doc(sessionId);
 
       await _firestore.runTransaction((transaction) async {
-        chatDoc = await transaction.get(chatRef);
+        final chatDoc = await transaction.get(chatRef);
         final messages = List<Map<String, dynamic>>.from(
           chatDoc.data()?['messages'] ?? [],
         );

@@ -78,20 +78,19 @@ class WhatsAppShareService {
       );
 
       // Create WhatsApp message
-      message = Uri.encodeComponent('$customMessage\n\n$shareLink');
+      final message = Uri.encodeComponent('$customMessage\n\n$shareLink');
       final whatsappUrl = '$_whatsappBaseUrl$message';
 
       // Launch WhatsApp
-      uri = Uri.parse(whatsappUrl);
-      canLaunch = await canLaunchUrl(uri);
+      final uri = Uri.parse(whatsappUrl);
+      final canLaunch = await canLaunchUrl(uri);
 
       if (canLaunch) {
         await launchUrl(uri, mode: LaunchMode.externalApplication);
 
         // Track successful share
         await FirebaseAnalytics.instance.logEvent(
-          name: 'share_whatsapp',
-        );
+          name: 'share_whatsapp');
 
         // Update group recognition if applicable
         if (groupId != null) {
@@ -204,8 +203,7 @@ class WhatsAppShareService {
 
         // Track link click
         await FirebaseAnalytics.instance.logEvent(
-          name: 'invite_clicked',
-        );
+          name: 'invite_clicked');
 
         // Update analytics
         await _updateShareAnalytics(meetingId, ShareStatus.clicked);

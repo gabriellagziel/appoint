@@ -14,7 +14,7 @@ class FirestoreService {
 
   // Generic method to get collection with error handling
   static Stream<QuerySnapshot> getCollectionStream(
-      String collectionPath,) {
+      String collectionPath) {
     try {
       return _firestore.collection(collectionPath).snapshots();
     } catch (e) {
@@ -86,7 +86,7 @@ class FirestoreService {
     try {
       Query<Object?> query = _firestore.collection(collectionPath);
       if (queryBuilder != null) {
-        query = queryBuilder(query);
+        final query = queryBuilder(query);
       }
       return await query.get();
     } catch (e) {

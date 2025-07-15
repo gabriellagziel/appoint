@@ -617,4 +617,4 @@ class AvailabilitySlot {
 }
 
 /// Provider for BookingHelper
-bookingHelperProvider = Provider<BookingHelper>((final ref) => BookingHelper());
+final bookingHelperProvider = Provider<BookingHelper>((ref) => BookingHelper());

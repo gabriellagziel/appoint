@@ -13,14 +13,14 @@ class CareProviderService {
       _firestore.collection('care_providers');
 
   Future<List<CareProvider>> fetchProviders() async {
-    snap = await _col.get();
+    final snap = await _col.get();
     return snap.docs
         .map((d) => CareProvider.fromJson({...d.data(), 'id': d.id}))
         .toList();
   }
 
   Future<void> addProvider(CareProvider provider) async {
-    doc = _col.doc(provider.id.isEmpty ? null : provider.id);
+    final doc = _col.doc(provider.id.isEmpty ? null : provider.id);
     await doc.set(provider.copyWith(id: doc.id).toJson());
   }
 

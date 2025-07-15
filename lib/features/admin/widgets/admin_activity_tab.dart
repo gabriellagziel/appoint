@@ -8,7 +8,7 @@ class AdminActivityTab extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    activityLogs = ref.watch(activityLogsProvider({'limit': 50}));
+    final activityLogs = ref.watch(activityLogsProvider({'limit': 50}));
 
     return activityLogs.when(
       data: (logs) => ListView.builder(

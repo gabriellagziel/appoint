@@ -8,7 +8,7 @@ class ReferralScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    codeAsync = ref.watch(referralCodeProvider);
+    final codeAsync = ref.watch(referralCodeProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Referral Code')),

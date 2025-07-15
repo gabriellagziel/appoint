@@ -221,15 +221,13 @@ class EnhancedCalendarScreen extends ConsumerWidget {
                   Text(
                     'No events for ${_formatDate(selectedDay)}',
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      color: Colors.grey[600],
-                    ),
+                      color: Colors.grey[600]),
                   ),
                   const SizedBox(height: 8),
                   Text(
                     'Tap + to add an event',
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Colors.grey[500],
-                    ),
+                      color: Colors.grey[500]),
                   ),
                 ],
               ),

@@ -30,7 +30,7 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
 
   @override
   Widget build(BuildContext context) {
-    draft = ref.watch(bookingDraftProvider);
+    final draft = ref.watch(bookingDraftProvider);
     final messages = draft.chatMessages;
     final isOtherUserTyping = draft.isOtherUserTyping;
 
@@ -143,8 +143,7 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
                 child: Text(
                   msg.content,
                   style: TextStyle(
-                    color: isUser ? Colors.white : Colors.black87,
-                  ),
+                    color: isUser ? Colors.white : Colors.black87),
                 ),
               ),
             ),
@@ -211,7 +210,7 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
   }
 
   void _sendMessage() {
-    input = _controller.text.trim();
+    final input = _controller.text.trim();
     if (input.isEmpty || input.length > maxMessageLength) return;
 
     ref.read(bookingDraftProvider.notifier).addUserMessage(input);

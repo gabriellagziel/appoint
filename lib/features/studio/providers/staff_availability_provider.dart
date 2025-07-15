@@ -10,14 +10,14 @@ final currentStudioIdProvider =
 // Staff availability service provider
 final REDACTED_TOKEN =
     Provider<StaffAvailabilityService>((ref) {
-  studioId = ref.watch(currentStudioIdProvider);
+  final studioId = ref.watch(currentStudioIdProvider);
   return StaffAvailabilityService(studioId);
 });
 
 // Staff availability provider (read-only for existing slots)
 final AutoDisposeStreamProvider<List<Slot>> staffAvailabilityProvider =
     StreamProvider.autoDispose<List<Slot>>((ref) {
-  studioId = ref.watch(currentStudioIdProvider);
+  final studioId = ref.watch(currentStudioIdProvider);
   // Removed debug print: debugPrint('🔍 Fetching staff availability for studio: $studioId');
 
   return FirebaseFirestore.instance
@@ -40,7 +40,7 @@ final AutoDisposeStreamProvider<List<Slot>> staffAvailabilityProvider =
 // Staff availability provider with IDs (for CRUD operations)
 final AutoDisposeStreamProvider<List<SlotWithId>> staffSlotsWithIdProvider =
     StreamProvider.autoDispose<List<SlotWithId>>((ref) {
-  studioId = ref.watch(currentStudioIdProvider);
+  final studioId = ref.watch(currentStudioIdProvider);
   // Removed debug print: debugPrint('🔍 Fetching staff availability with IDs for studio: $studioId');
 
   return FirebaseFirestore.instance

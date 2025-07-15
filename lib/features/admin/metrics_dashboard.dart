@@ -23,7 +23,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 4, vsync: this);
+    final _tabController = TabController(length: 4, vsync: this);
     _loadMetrics();
   }
 
@@ -43,7 +43,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
 
   @override
   Widget build(BuildContext context) {
-    l10n = AdminLocalizations.of(context);
+    final l10n = AdminLocalizations.of(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -244,9 +244,9 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       ),
                     ),
                     rightTitles: const AxisTitles(
-                        ,),
+                        ),
                     topTitles: const AxisTitles(
-                        ,),
+                        ),
                   ),
                   borderData: FlBorderData(show: true),
                   lineBarsData: [
@@ -453,9 +453,9 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       ),
                     ),
                     rightTitles: const AxisTitles(
-                        ,),
+                        ),
                     topTitles: const AxisTitles(
-                        ,),
+                        ),
                   ),
                   borderData: FlBorderData(show: false),
                   barGroups: [
@@ -593,9 +593,9 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       ),
                     ),
                     rightTitles: const AxisTitles(
-                        ,),
+                        ),
                     topTitles: const AxisTitles(
-                        ,),
+                        ),
                   ),
                   borderData: FlBorderData(show: true),
                   lineBarsData: [
@@ -832,9 +832,9 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
                       ),
                     ),
                     rightTitles: const AxisTitles(
-                        ,),
+                        ),
                     topTitles: const AxisTitles(
-                        ,),
+                        ),
                   ),
                   borderData: FlBorderData(show: true),
                   lineBarsData: [

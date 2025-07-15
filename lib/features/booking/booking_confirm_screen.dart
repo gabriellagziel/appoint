@@ -28,7 +28,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
   Appointment? _createdAppointment;
 
   Future<void> _maybeShowAd() async {
-    isPremium = ref.read(userSubscriptionProvider).maybeWhen(
+    final isPremium = ref.read(userSubscriptionProvider).maybeWhen(
           data: (isPremium) => isPremium,
           orElse: () => false,
         );
@@ -36,7 +36,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
     setState(() => _isLoadingAd = true);
     try {
       await AdService.showInterstitialAd();
-    } catch (e) {_) {
+    } catch (e) {
       // continue even if ad fails
     } finally {
       if (mounted) setState(() => _isLoadingAd = false);
@@ -112,7 +112,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                       ? null
                       : () async {
                           await _maybeShowAd();
-                          user = ref.read(authProvider).currentUser;
+                          final user = ref.read(authProvider).currentUser;
                           if (user == null) return;
                           late final Appointment appt;
                           if (args.openCall) {
@@ -162,7 +162,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(
                               content: Text(
-                                  'Booking confirmed! You can now share the invitation.',),
+                                  'Booking confirmed! You can now share the invitation.'),
                               backgroundColor: Colors.green,
                             ),
                           );
