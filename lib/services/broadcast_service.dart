@@ -68,7 +68,7 @@ class BroadcastService {
         });
       }
       return null;
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to get broadcast message: $e');
     }
   }
@@ -115,7 +115,7 @@ class BroadcastService {
 
       snapshot = await query.get();
       return snapshot.docs.length;
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to estimate target audience: $e');
     }
   }
@@ -141,7 +141,7 @@ class BroadcastService {
       for (user in targetUsers) {
         await _sendFCMNotification(user, message);
       }
-    } catch (e) {e) {
+    } catch (e) { {
       // Update message with failure status
       await _broadcastsCollection.doc(messageId).update({
         'status': BroadcastMessageStatus.failed.name,
@@ -198,7 +198,7 @@ class BroadcastService {
                 ...(doc.data()! as Map<String, dynamic>),
               }),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to get target users: $e');
     }
   }
@@ -365,7 +365,7 @@ class BroadcastService {
       }
 
       await _broadcastsCollection.doc(messageId).update(updates);
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to update message analytics: $e');
     }
   }

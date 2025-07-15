@@ -97,7 +97,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           ),
         )
         ..loadRequest(Uri.parse(checkoutUrl));
-    } catch (e) {e) {
+    } catch (e) { {
       setState(() {
         _hasError = true;
         _errorMessage = 'Failed to initialize checkout: $e';

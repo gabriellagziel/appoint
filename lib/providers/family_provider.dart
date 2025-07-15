@@ -56,7 +56,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
         connectedChildren:
             links.where((l) => l.status == 'active').toList(),
       );
-    } catch (e) {e) {
+    } catch (e) { {
       state = state.copyWith(
         isLoading: false,
         error: e.toString(),
@@ -69,7 +69,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
     try {
       await _familyService.cancelInvite(parentId, link.childId);
       await loadLinks();
-    } catch (e) {e) {
+    } catch (e) { {
       state = state.copyWith(error: e.toString());
     }
   }
@@ -79,7 +79,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
     try {
       await _familyService.resendOtp(parentId, link.childId);
       // Optionally notify user via analytics or toast
-    } catch (e) {e) {
+    } catch (e) { {
       state = state.copyWith(error: e.toString());
     }
   }
