@@ -81,7 +81,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           ),
         )
         ..loadRequest(Uri.parse(checkoutUrl));
-    } catch (e) { {
+    } catch (e) {
       setState(() {
         _hasError = true;
         _errorMessage = 'Failed to initialize checkout: $e';
@@ -117,7 +117,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           Navigator.of(context).pop(true);
         }
       }
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

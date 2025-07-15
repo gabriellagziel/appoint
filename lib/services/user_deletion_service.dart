@@ -30,7 +30,7 @@ class UserDeletionService {
 
       // Sign out to clear any remaining state
       await _auth.signOut();
-    } catch (e) { {
+    } catch (e) {
       throw Exception('Failed to delete user account: $e');
     }
   }

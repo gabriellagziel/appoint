@@ -65,7 +65,7 @@ class FamilyBackgroundService {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Daily family relationship check completed');
       }
-    } catch (e) { {
+    } catch (e) {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Error during daily family relationship check: $e');
       }
@@ -110,7 +110,7 @@ class FamilyBackgroundService {
           await _updatePermissionsForCOPPA(familyLink.id);
         }
       }
-    } catch (e) { {
+    } catch (e) {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Error checking age transitions: $e');
       }
@@ -160,7 +160,7 @@ class FamilyBackgroundService {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Updated permissions for adult child in link: $familyLinkId');
       }
-    } catch (e) { {
+    } catch (e) {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Error updating permissions for adult: $e');
       }
@@ -214,7 +214,7 @@ class FamilyBackgroundService {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Updated permissions for teenager in link: $familyLinkId');
       }
-    } catch (e) { {
+    } catch (e) {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Error updating permissions for teenager: $e');
       }
@@ -240,7 +240,7 @@ class FamilyBackgroundService {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Updated COPPA compliance for link: $familyLinkId');
       }
-    } catch (e) { {
+    } catch (e) {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Error updating COPPA compliance: $e');
       }
@@ -278,7 +278,7 @@ class FamilyBackgroundService {
           // Removed debug print: debugPrint('Expired privacy request: ${doc.id}');
         }
       }
-    } catch (e) { {
+    } catch (e) {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Error cleaning up expired requests: $e');
       }
@@ -310,7 +310,7 @@ class FamilyBackgroundService {
           // Removed debug print: debugPrint('Sent expired request notification to child: $childId');
         }
       }
-    } catch (e) { {
+    } catch (e) {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Error sending expired request notification: $e');
       }
@@ -364,7 +364,7 @@ class FamilyBackgroundService {
           }
         }
       }
-    } catch (e) { {
+    } catch (e) {
       if (kDebugMode) {
         // Removed debug print: debugPrint('Error validating family links: $e');
       }

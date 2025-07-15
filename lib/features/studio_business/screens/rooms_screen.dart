@@ -286,7 +286,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           const SnackBar(content: Text('Room added successfully!')),
         );
       }
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -322,7 +322,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           const SnackBar(content: Text('Room updated successfully!')),
         );
       }
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -350,7 +350,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                   'Room ${!currentAvailability ? 'enabled' : 'disabled'} successfully!',),),
         );
       }
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -368,7 +368,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           const SnackBar(content: Text('Room deleted successfully!')),
         );
       }
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),

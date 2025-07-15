@@ -31,7 +31,7 @@ class _BusinessAvailabilityScreenState
       service = ref.read(businessAvailabilityServiceProvider);
       await service.loadConfiguration();
       ref.read(businessAvailabilityProvider.notifier).loadConfiguration();
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error loading configuration: $e')),
@@ -55,7 +55,7 @@ class _BusinessAvailabilityScreenState
           const SnackBar(content: Text('Configuration saved successfully!')),
         );
       }
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error saving configuration: $e')),
