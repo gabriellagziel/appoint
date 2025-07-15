@@ -111,7 +111,7 @@ jobs:
       - name: Build and archive
         run: |
           echo "📦 Building and archiving iOS app..."
-          flutter build ios --release
+          flutter build ios --release --no-codesign
           xcodebuild -workspace ios/Runner.xcworkspace \
             -scheme Runner \
             -configuration Release \
