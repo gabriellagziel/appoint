@@ -2677,5 +2677,195 @@
   "loadingCheckout": "Loading checkout...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
+  },
+  "sendNow": "Send Now",
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Details button"
+  },
+  "noPermissionForBroadcast": "You do not have permission to send broadcast messages",
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
+  },
+  "composeBroadcastMessage": "Compose Broadcast Message",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message title"
+  },
+  "checkingPermissions": "Checking permissions...",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
+  },
+  "errorCheckingPermissions": "Error checking permissions: {error}",
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "mediaOptional": "Media (Optional)",
+  "@mediaOptional": {
+    "description": "Media optional section"
+  },
+  "pickImage": "Pick Image",
+  "@pickImage": {
+    "description": "Pick image button"
+  },
+  "pickVideo": "Pick Video",
+  "@pickVideo": {
+    "description": "Pick video button"
+  },
+  "pollOptions": "Poll Options",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "targetingFilters": "Targeting Filters",
+  "@targetingFilters": {
+    "description": "Targeting filters section"
+  },
+  "scheduling": "Scheduling",
+  "@scheduling": {
+    "description": "Scheduling section"
+  },
+  "scheduleForLater": "Schedule for Later",
+  "@scheduleForLater": {
+    "description": "Schedule for later option"
+  },
+  "messageSavedSuccessfully": "Message saved successfully",
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully"
+  },
+  "errorSavingMessage": "Error saving message: {error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "errorSendingMessage": "Error sending message: {error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "content": "Content",
+  "@content": {
+    "description": "Content label"
+  },
+  "type": "Type: {type}",
+  "@type": {
+    "description": "Type label",
+    "placeholders": {
+      "type": {}
+    }
+  },
+  "recipients": "Recipients: {count}",
+  "@recipients": {
+    "description": "Recipients label",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "created": "Created: {date}",
+  "@created": {
+    "description": "Created label",
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "scheduled": "Scheduled: {date}",
+  "@scheduled": {
+    "description": "Scheduled label",
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "clicked": "Clicked: {count}",
+  "@clicked": {
+    "description": "Clicked label",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "status": "Status: {status}",
+  "@status": {
+    "description": "Status label",
+    "placeholders": {
+      "status": {}
+    }
+  },
+  "link": "Link: {link}",
+  "@link": {
+    "description": "Link label",
+    "placeholders": {
+      "link": {}
+    }
+  },
+  "close": "Close",
+  "@close": {
+    "description": "Close button"
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Title label"
+  },
+  "pleaseEnterTitle": "Please enter a title",
+  "@pleaseEnterTitle": {
+    "description": "Please enter title message"
+  },
+  "messageType": "Message Type",
+  "@messageType": {
+    "description": "Message type label"
+  },
+  "pleaseEnterContent": "Please enter content",
+  "@pleaseEnterContent": {
+    "description": "Please enter content message"
+  },
+  "imageSelected": "Image selected",
+  "@imageSelected": {
+    "description": "Image selected message"
+  },
+  "videoSelected": "Video selected",
+  "@videoSelected": {
+    "description": "Video selected message"
+  },
+  "externalLink": "External Link",
+  "@externalLink": {
+    "description": "External link label"
+  },
+  "pleaseEnterLink": "Please enter a link",
+  "@pleaseEnterLink": {
+    "description": "Please enter link message"
+  },
+  "option": "Option",
+  "@option": {
+    "description": "Option label"
+  },
+  "estimatedRecipients": "Estimated Recipients",
+  "@estimatedRecipients": {
+    "description": "Estimated recipients label"
+  },
+  "countries": "Countries",
+  "@countries": {
+    "description": "Countries label"
+  },
+  "cities": "Cities",
+  "@cities": {
+    "description": "Cities label"
+  },
+  "subscriptionTiers": "Subscription Tiers",
+  "@subscriptionTiers": {
+    "description": "Subscription tiers label"
+  },
+  "userRoles": "User Roles",
+  "@userRoles": {
+    "description": "User roles label"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save button"
   }
 }

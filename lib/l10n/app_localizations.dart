@@ -96,12 +96,12 @@ import 'app_localizations_zh.dart';
 ///
 /// iOS applications define key application metadata, including supported
 /// locales, in an Info.plist file that is built into the application bundle.
-/// To configure the locales supported by your app, you’ll need to edit this
+/// To configure the locales supported by your app, you'll need to edit this
 /// file.
 ///
-/// First, open your project’s ios/Runner.xcworkspace Xcode workspace file.
+/// First, open your project's ios/Runner.xcworkspace Xcode workspace file.
 /// Then, in the Project Navigator, open the Info.plist file under the Runner
-/// project’s Runner folder.
+/// project's Runner folder.
 ///
 /// Next, select the Information Property List item, select Add Item from the
 /// Editor menu, then select Localizations from the pop-up menu.
@@ -4491,6 +4491,258 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Loading checkout...'**
   String get loadingCheckout;
+
+  /// No broadcast messages message
+  ///
+  /// In en, this message translates to:
+  /// **'No messages yet'**
+  String get noBroadcastMessages;
+
+  /// Send now button
+  ///
+  /// In en, this message translates to:
+  /// **'Send Now'**
+  String get sendNow;
+
+  /// Details button
+  ///
+  /// In en, this message translates to:
+  /// **'Details'**
+  String get details;
+
+  /// No permission for broadcast message
+  ///
+  /// In en, this message translates to:
+  /// **'You do not have permission to send broadcast messages'**
+  String get noPermissionForBroadcast;
+
+  /// Compose broadcast message title
+  ///
+  /// In en, this message translates to:
+  /// **'Compose Broadcast Message'**
+  String get composeBroadcastMessage;
+
+  /// Checking permissions message
+  ///
+  /// In en, this message translates to:
+  /// **'Checking permissions...'**
+  String get checkingPermissions;
+
+  /// Error checking permissions message
+  ///
+  /// In en, this message translates to:
+  /// **'Error checking permissions: {error}'**
+  String errorCheckingPermissions(Object error);
+
+  /// Media optional section
+  ///
+  /// In en, this message translates to:
+  /// **'Media (Optional)'**
+  String get mediaOptional;
+
+  /// Pick image button
+  ///
+  /// In en, this message translates to:
+  /// **'Pick Image'**
+  String get pickImage;
+
+  /// Pick video button
+  ///
+  /// In en, this message translates to:
+  /// **'Pick Video'**
+  String get pickVideo;
+
+  /// Poll options label
+  ///
+  /// In en, this message translates to:
+  /// **'Poll Options'**
+  String get pollOptions;
+
+  /// Targeting filters section
+  ///
+  /// In en, this message translates to:
+  /// **'Targeting Filters'**
+  String get targetingFilters;
+
+  /// Scheduling section
+  ///
+  /// In en, this message translates to:
+  /// **'Scheduling'**
+  String get scheduling;
+
+  /// Schedule for later option
+  ///
+  /// In en, this message translates to:
+  /// **'Schedule for Later'**
+  String get scheduleForLater;
+
+  /// Message saved successfully
+  ///
+  /// In en, this message translates to:
+  /// **'Message saved successfully'**
+  String get messageSavedSuccessfully;
+
+  /// Error saving message
+  ///
+  /// In en, this message translates to:
+  /// **'Error saving message: {error}'**
+  String errorSavingMessage(Object error);
+
+  /// Error sending message
+  ///
+  /// In en, this message translates to:
+  /// **'Error sending message: {error}'**
+  String errorSendingMessage(Object error);
+
+  /// Content label
+  ///
+  /// In en, this message translates to:
+  /// **'Content'**
+  String get content;
+
+  /// Type label
+  ///
+  /// In en, this message translates to:
+  /// **'Type: {type}'**
+  String type(Object type);
+
+  /// Recipients label
+  ///
+  /// In en, this message translates to:
+  /// **'Recipients: {count}'**
+  String recipients(Object count);
+
+  /// Opened label
+  ///
+  /// In en, this message translates to:
+  /// **'Opened: {count}'**
+  String opened(Object count);
+
+  /// Created label
+  ///
+  /// In en, this message translates to:
+  /// **'Created: {date}'**
+  String created(Object date);
+
+  /// Scheduled label
+  ///
+  /// In en, this message translates to:
+  /// **'Scheduled: {date}'**
+  String scheduled(Object date);
+
+  /// Clicked label
+  ///
+  /// In en, this message translates to:
+  /// **'Clicked: {count}'**
+  String clicked(Object count);
+
+  /// Status label
+  ///
+  /// In en, this message translates to:
+  /// **'Status: {status}'**
+  String status(Object status);
+
+  /// Link label
+  ///
+  /// In en, this message translates to:
+  /// **'Link: {link}'**
+  String link(Object link);
+
+  /// Close button
+  ///
+  /// In en, this message translates to:
+  /// **'Close'**
+  String get close;
+
+  /// Title label
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get title;
+
+  /// Please enter title message
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a title'**
+  String get pleaseEnterTitle;
+
+  /// Message type label
+  ///
+  /// In en, this message translates to:
+  /// **'Message Type'**
+  String get messageType;
+
+  /// Please enter content message
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter content'**
+  String get pleaseEnterContent;
+
+  /// Image selected message
+  ///
+  /// In en, this message translates to:
+  /// **'Image selected'**
+  String get imageSelected;
+
+  /// Video selected message
+  ///
+  /// In en, this message translates to:
+  /// **'Video selected'**
+  String get videoSelected;
+
+  /// External link label
+  ///
+  /// In en, this message translates to:
+  /// **'External Link'**
+  String get externalLink;
+
+  /// Please enter link message
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a link'**
+  String get pleaseEnterLink;
+
+  /// Option label
+  ///
+  /// In en, this message translates to:
+  /// **'Option'**
+  String get option;
+
+  /// Estimated recipients label
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated Recipients'**
+  String get estimatedRecipients;
+
+  /// Countries label
+  ///
+  /// In en, this message translates to:
+  /// **'Countries'**
+  String get countries;
+
+  /// Cities label
+  ///
+  /// In en, this message translates to:
+  /// **'Cities'**
+  String get cities;
+
+  /// Subscription tiers label
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription Tiers'**
+  String get subscriptionTiers;
+
+  /// User roles label
+  ///
+  /// In en, this message translates to:
+  /// **'User Roles'**
+  String get userRoles;
+
+  /// Save button
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
 }
 
 class _AppLocalizationsDelegate
