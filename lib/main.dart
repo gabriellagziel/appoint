@@ -9,6 +9,7 @@ import 'package:appoint/services/api/api_client.dart';
 import 'package:appoint/services/analytics/analytics_service.dart';
 import 'package:appoint/services/notifications/push_notification_service.dart';
 import 'package:appoint/services/error/error_handler.dart';
+import 'package:appoint/services/usage_monitor.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -47,6 +48,9 @@ Future<void> appMain() async {
   FlutterError.onError = (FlutterErrorDetails details) {
     FirebaseCrashlytics.instance.recordFlutterFatalError(details);
   };
+
+  // Initialize usage monitoring
+  UsageMonitorService.resetWeeklyCountIfNeeded();
 
   // Initialize Firebase Analytics
   await analytics.setAnalyticsCollectionEnabled(true);

@@ -427,7 +427,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
         );
         context.pop();
       }
-    } catch (e) {e) {
+    } catch (e) { {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
