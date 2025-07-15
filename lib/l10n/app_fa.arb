@@ -824,7 +824,5 @@
   "readOnly": "فقط خواندنی",
   "readWrite": "خواندن و نوشتن",
   "permissionUpdated": "دسترسی {category} به {newValue} به‌روزرسانی شد",
-  "failedToUpdatePermission": "به‌روزرسانی دسترسی با شکست مواجه شد: {error}",
-  "adminBroadcast": "پخش ادمین",
-  "adminScreenTBD": "صفحه مدیر - در حال توسعه"
+  "failedToUpdatePermission": "به‌روزرسانی دسترسی با شکست مواجه شد: {error}"
 }
