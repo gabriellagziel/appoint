@@ -27,18 +27,35 @@ jobs:
 
       - name: Get Flutter dependencies
         run: |
-          flutter pub get || echo "Flutter dependencies installation completed with issues"
-        continue-on-error: true
+          echo "Installing Flutter dependencies..."
+          flutter pub get
+          echo "✅ Flutter dependencies installed successfully"
 
-      - name: Generate code
+      - name: Generate code (optional)
         run: |
-          dart run build_runner build --delete-conflicting-outputs || echo "Code generation completed with issues"
+          echo "Running code generation..."
+          dart run build_runner build --delete-conflicting-outputs || echo "⚠️ Code generation completed with warnings (continuing)"
         continue-on-error: true
 
       - name: Build web app
         run: |
-          flutter build web --release || echo "Web build completed with issues"
-        continue-on-error: true
+          echo "Building Flutter web app..."
+          flutter build web --release
+          echo "✅ Flutter web build completed successfully"
+
+      - name: Verify build output
+        run: |
+          echo "Verifying build output..."
+          ls -la build/web/
+          if [ ! -f "build/web/index.html" ]; then
+            echo "❌ Build verification failed: index.html not found"
+            exit 1
+          fi
+          if [ ! -f "build/web/flutter_bootstrap.js" ]; then
+            echo "❌ Build verification failed: flutter_bootstrap.js not found"
+            exit 1
+          fi
+          echo "✅ Build verification passed"
 
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
@@ -48,8 +65,10 @@ jobs:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
           if [ -n "$FIREBASE_TOKEN" ]; then
-            firebase deploy --only hosting --token "$FIREBASE_TOKEN" || echo "Firebase deployment completed with issues"
+            echo "Deploying to Firebase Hosting..."
+            firebase deploy --only hosting --token "$FIREBASE_TOKEN"
+            echo "✅ Firebase deployment completed successfully"
           else
-            echo "Firebase token not available, skipping deployment"
+            echo "❌ Firebase token not available, cannot deploy"
+            exit 1
           fi
-        continue-on-error: true
