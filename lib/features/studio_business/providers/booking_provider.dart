@@ -46,9 +46,9 @@ class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
         endTime: endTime,
         cost: cost,
       );
-      final state = AsyncValue.data(booking);
+      state = AsyncValue.data(booking);
     } catch (e) {
-      final state = AsyncValue.error(e, st);
+      state = AsyncValue.error(e, StackTrace.current);
     }
   }
 
@@ -71,10 +71,10 @@ class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
           createdAt: state.value!.createdAt,
           updatedAt: DateTime.now(),
         );
-        final state = AsyncValue.data(updatedBooking);
+        state = AsyncValue.data(updatedBooking);
       }
     } catch (e) {
-      final state = AsyncValue.error(e, st);
+      state = AsyncValue.error(e, StackTrace.current);
     }
   }
 }

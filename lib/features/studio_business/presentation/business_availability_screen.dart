@@ -32,10 +32,9 @@ class _BusinessAvailabilityScreenState
       await service.loadConfiguration();
       ref.read(businessAvailabilityProvider.notifier).loadConfiguration();
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error loading configuration: $e')),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error loading configuration: $e')),
+      );
     } finally {
       setState(() => _isLoading = false);
     }
@@ -55,10 +54,9 @@ class _BusinessAvailabilityScreenState
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error saving configuration: $e')),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error saving configuration: $e')),
+      );
     } finally {
       setState(() => _isSaving = false);
     }
