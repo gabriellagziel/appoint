@@ -1,5 +1,7 @@
 import 'package:appoint/models/booking.dart';
+import 'package:appoint/utils/time_utils.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 bookingServiceProvider = Provider<BookingService>((final ref) => BookingService());
@@ -15,7 +17,8 @@ class BookingService {
   Future<void> createBooking(Booking booking) async {
     try {
       await _firestore.collection('appointments').add(booking.toJson());
-    } catch (e) { {
+      await _trackBookingUsage();
+    } catch (e) {
       // Removed debug print: debugPrint('❌ Error creating booking: $e');
       // Removed debug print: debugPrint(st);
       rethrow;
@@ -31,10 +34,11 @@ class BookingService {
   /// Submits a booking to Firestore
   Future<void> submitBooking(Booking booking) async {
     try {
-      docRef = _firestore.collection(_bookingsCollection).doc();
-      bookingWithId = booking.copyWith(id: docRef.id);
+      final docRef = _firestore.collection(_bookingsCollection).doc();
+      final bookingWithId = booking.copyWith(id: docRef.id);
       await docRef.set(bookingWithId.toJson());
-    } catch (e) { {
+      await _trackBookingUsage();
+    } catch (e) {
       // Removed debug print: debugPrint('Error submitting booking: $e\n$st');
       rethrow;
     }
@@ -53,7 +57,7 @@ class BookingService {
       return snapshot.docs
           .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
           .toList();
-    } catch (e) { {
+    } catch (e) {
       return [];
     }
   }
@@ -87,7 +91,7 @@ class BookingService {
       }
 
       return allBookings;
-    } catch (e) { {
+    } catch (e) {
       return [];
     }
   }
@@ -96,7 +100,7 @@ class BookingService {
   Future<void> cancelBooking(String bookingId) async {
     try {
       await _firestore.collection(_bookingsCollection).doc(bookingId).delete();
-    } catch (e) { {
+    } catch (e) {
       // Removed debug print: debugPrint('Error canceling booking: $e\n$st');
       rethrow;
     }
@@ -129,7 +133,7 @@ class BookingService {
           await _firestore.collection(_bookingsCollection).doc(bookingId).get();
       if (!doc.exists) return null;
       return Booking.fromJson({...doc.data()!, 'id': doc.id});
-    } catch (e) { {
+    } catch (e) {
       return null;
     }
   }
@@ -141,8 +145,52 @@ class BookingService {
           .collection(_bookingsCollection)
           .doc(booking.id)
           .update(booking.toJson());
-    } catch (e) { {
+    } catch (e) {
       rethrow;
+    }
+  }
+
+  /// Track booking usage for weekly limits
+  Future<void> _trackBookingUsage() async {
+    try {
+      final userId = FirebaseAuth.instance.currentUser?.uid;
+      if (userId == null) return;
+
+      final weekKey = getCurrentWeekKey();
+      final usageRef = _firestore
+          .collection('user_usage')
+          .doc(userId)
+          .collection('weekly')
+          .doc(weekKey);
+
+      await usageRef.set({
+        'count': FieldValue.increment(1),
+        'lastBooking': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+    } catch (e) {
+      // Removed debug print: debugPrint('Error tracking booking usage: $e');
+      // Continue execution even if tracking fails
+    }
+  }
+
+  /// Get user's weekly booking count
+  Future<int> getWeeklyBookingCount(String userId) async {
+    try {
+      final weekKey = getCurrentWeekKey();
+      final doc = await _firestore
+          .collection('user_usage')
+          .doc(userId)
+          .collection('weekly')
+          .doc(weekKey)
+          .get();
+
+      if (doc.exists) {
+        return doc.data()?['count'] ?? 0;
+      }
+      return 0;
+    } catch (e) {
+      // Removed debug print: debugPrint('Error getting weekly booking count: $e');
+      return 0;
     }
   }
 }
