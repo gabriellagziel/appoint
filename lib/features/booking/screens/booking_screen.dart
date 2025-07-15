@@ -2,14 +2,17 @@ import 'package:appoint/features/booking/booking_helper.dart';
 import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:appoint/features/selection/providers/selection_provider.dart';
 import 'package:appoint/models/booking.dart';
+import 'package:appoint/services/stripe_service.dart';
 import 'package:appoint/utils/snackbar_extensions.dart';
 import 'package:appoint/widgets/animations/fade_slide_in.dart';
 import 'package:appoint/widgets/animations/tap_scale_feedback.dart';
 import 'package:appoint/widgets/booking_confirmation_sheet.dart';
 import 'package:appoint/widgets/bottom_sheet_manager.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
   const BookingScreen({super.key});
@@ -20,6 +23,50 @@ class BookingScreen extends ConsumerStatefulWidget {
 
 class _BookingScreenState extends ConsumerState<BookingScreen> {
   bool _isSubmitting = false;
+
+  Future<void> _checkUsageLimitAndSubmit() async {
+    final userId = FirebaseAuth.instance.currentUser?.uid;
+    if (userId == null) return;
+
+    final weeklyCount = await ref.read(bookingServiceProvider).getWeeklyBookingCount(userId);
+    
+    if (weeklyCount >= 21) {
+      _showUpgradeDialog();
+    } else {
+      _submitBooking();
+    }
+  }
+
+  void _showUpgradeDialog() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Upgrade to Business'),
+        content: const Text(
+          'You have reached your weekly limit of 21 bookings. Upgrade to Business mode for unlimited bookings.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () async {
+              Navigator.of(context).pop();
+              final userId = FirebaseAuth.instance.currentUser?.uid;
+              if (userId != null) {
+                final checkoutUrl = await StripeService().fetchCheckoutUrl(userId);
+                if (checkoutUrl != null) {
+                  await launchUrl(Uri.parse(checkoutUrl), mode: LaunchMode.externalApplication);
+                }
+              }
+            },
+            child: const Text('Upgrade'),
+          ),
+        ],
+      ),
+    );
+  }
 
   Future<void> _submitBooking() async {
     setState(() => _isSubmitting = true);
@@ -55,7 +102,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
         onCancel: () => Navigator.of(context).pop(),
         onConfirm: () {
           Navigator.of(context).pop();
-          _submitBooking();
+          _checkUsageLimitAndSubmit();
         },
       ),
     );
