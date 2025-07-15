@@ -51,7 +51,7 @@ class PerformanceMonitoringService {
     try {
       // Firebase Performance integration would go here
       // await FirebasePerformance.instance.newTrace(name).start();
-    } catch (e) {e) {
+    } catch (e) {
       developer.log('Failed to start Firebase trace: $e',
           name: 'PerformanceMonitoring',);
     }
@@ -82,7 +82,7 @@ class PerformanceMonitoringService {
       // trace = FirebasePerformance.instance.newTrace(name);
       // trace.setMetric('duration', duration.inMilliseconds);
       // await trace.stop();
-    } catch (e) {e) {
+    } catch (e) {
       developer.log('Failed to stop Firebase trace: $e',
           name: 'PerformanceMonitoring',);
     }
@@ -99,7 +99,7 @@ class PerformanceMonitoringService {
 
       _recordOperation(name, stopwatch.elapsed);
       return result;
-    } catch (e) {e) {
+    } catch (e) {
       stopwatch.stop();
       _recordError(name, e);
       rethrow;
@@ -118,7 +118,7 @@ class PerformanceMonitoringService {
 
       _recordOperation(name, stopwatch.elapsed);
       return result;
-    } catch (e) {e) {
+    } catch (e) {
       stopwatch.stop();
       _recordError(name, e);
       rethrow;

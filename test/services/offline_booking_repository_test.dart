@@ -506,7 +506,7 @@ void main() {
         // The repository should handle the exception internally
         try {
           await repository.addBooking(booking);
-        } catch (e) {e) {
+        } catch (e) {
           // Exception is expected
         }
         expect(repository.getBookingSyncStatus('test-booking-1'),

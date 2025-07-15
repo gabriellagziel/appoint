@@ -33,7 +33,7 @@ class AmbassadorService {
           .map((doc) =>
               AmbassadorStats.fromJson(doc.data()! as Map<String, dynamic>),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) {
       // TODO(username): Implement proper error handling and fallback data
       return [];
     }
@@ -108,7 +108,7 @@ class AmbassadorService {
           .toList();
       list.sort((a, final b) => a.date.compareTo(b.date));
       return list;
-    } catch (e) {e) {
+    } catch (e) {
       now = DateTime.now();
       return List.generate(7, (i) => TimeSeriesPoint(
             date: now.subtract(Duration(days: 6 - i)), count: (i + 1) * 4,),);

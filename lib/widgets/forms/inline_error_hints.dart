@@ -750,7 +750,7 @@ class FormValidationHelper {
     try {
       Uri.parse(value);
       return null;
-    } catch (e) {e) {
+    } catch (e) {
       return 'Please enter a valid URL';
     }
   }

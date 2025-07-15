@@ -42,7 +42,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           _smsNotifications = data['smsNotifications'] ?? false;
         });
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error loading settings: $e');
     }
   }
@@ -68,7 +68,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           const SnackBar(content: Text('Settings saved successfully!')),
         );
       }
-    } catch (e) {e) {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error saving settings: $e')),

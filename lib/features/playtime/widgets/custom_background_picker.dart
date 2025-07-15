@@ -692,7 +692,7 @@ class _UploadBackgroundDialogState
         // Refresh the background list
         ref.invalidate(allBackgroundsProvider);
       }
-    } catch (e) {e) {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

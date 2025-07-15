@@ -50,7 +50,7 @@ class FCMService {
           _handleNotificationTap(initialMessage);
         }
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error initializing FCM: $e');
     }
   }
@@ -75,7 +75,7 @@ class FCMService {
 
         // Removed debug print: debugPrint('FCM token saved to Firestore');
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error saving FCM token: $e');
     }
   }
