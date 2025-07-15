@@ -685,7 +685,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         // Navigate back to hub
         context.pop();
       }
-    } catch (e) {e) {
+    } catch (e) { {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

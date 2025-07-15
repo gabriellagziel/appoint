@@ -218,7 +218,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
           const SnackBar(content: Text('Invoice created successfully!')),
         );
       }
-    } catch (e) {e) {
+    } catch (e) { {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -268,7 +268,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
         'status': status,
         'updatedAt': DateTime.now().toIso8601String(),
       });
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error updating invoice: $e');
     }
   }
@@ -279,7 +279,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
           .collection('invoices')
           .doc(invoiceId)
           .delete();
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error deleting invoice: $e');
     }
   }
