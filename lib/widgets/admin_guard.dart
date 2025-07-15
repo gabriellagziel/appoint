@@ -121,7 +121,7 @@ mixin AdminRoleMixin {
   Future<bool> checkAdminRole(WidgetRef ref) async {
     try {
       return await ref.read(isAdminProvider.future);
-    } catch (e) {e) {
+    } catch (e) { {
       return false;
     }
   }
