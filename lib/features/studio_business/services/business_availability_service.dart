@@ -43,7 +43,7 @@ class BusinessAvailabilityService {
           .map((item) =>
               BusinessAvailability.fromJson(item as Map<String, dynamic>),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) { {
       // Return default configuration if parsing fails
       return [
         for (int i = 0; i < 7; i++)
