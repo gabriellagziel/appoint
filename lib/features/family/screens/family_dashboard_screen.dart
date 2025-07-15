@@ -311,10 +311,9 @@ class FamilyDashboardScreen extends ConsumerWidget {
                   );
                 }
               } catch (e) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text(l10n.failedToCancelInvite(e))),
-                  );
-                }
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text(l10n.failedToCancelInvite(e))),
+                );
               }
             },
             child: Text(l10n.yesCancel),
@@ -336,8 +335,10 @@ class FamilyDashboardScreen extends ConsumerWidget {
           '/family/permissions',
           arguments: link,
         );
+        break;
       case 'revoke':
         _showRevokeConfirmation(context, ref, link);
+        break;
     }
   }
 
@@ -492,13 +493,12 @@ class FamilyDashboardScreen extends ConsumerWidget {
                     .read(familyLinksProvider(link.parentId).notifier)
                     .loadLinks();
               } catch (e) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(l10n.failedToRevokeAccess(e)),
-                      backgroundColor: Colors.red,
-                    ),
-                  );
-                }
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(l10n.failedToRevokeAccess(e)),
+                    backgroundColor: Colors.red,
+                  ),
+                );
               }
             },
             child: Text(l10n.revoke),
