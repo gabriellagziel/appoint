@@ -5,11 +5,15 @@ on: [push, pull_request]
 jobs:
   l10n_audit:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v3
-      - uses: subosito/flutter-action@v2
+      - uses: actions/checkout@v4
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.32.4'
+          flutter-version: '3.24.5'
+          channel: 'stable'
+          cache: true
       - name: Install deps
         run: flutter pub get
       - name: Run L10n Audit
