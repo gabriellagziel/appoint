@@ -58,11 +58,11 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to update consent: $e')),
-        );
-      }
-    } finally {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to update consent: $e')),
+      );
+    }
+    finally {
       if (mounted) {
         setState(() {
           _isLoading = false;
