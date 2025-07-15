@@ -110,8 +110,7 @@ class FamilyBackgroundService {
         }
       }
     } catch (e) {
-        // Removed debug print: debugPrint('Error checking age transitions: $e');
-      }
+      // Removed debug print: debugPrint('Error checking age transitions: $e');
     }
   }
 
@@ -159,8 +158,7 @@ class FamilyBackgroundService {
         // Removed debug print: debugPrint('Updated permissions for adult child in link: $familyLinkId');
       }
     } catch (e) {
-        // Removed debug print: debugPrint('Error updating permissions for adult: $e');
-      }
+      // Removed debug print: debugPrint('Error updating permissions for adult: $e');
     }
   }
 
@@ -212,8 +210,7 @@ class FamilyBackgroundService {
         // Removed debug print: debugPrint('Updated permissions for teenager in link: $familyLinkId');
       }
     } catch (e) {
-        // Removed debug print: debugPrint('Error updating permissions for teenager: $e');
-      }
+      // Removed debug print: debugPrint('Error updating permissions for teenager: $e');
     }
   }
 
@@ -237,8 +234,7 @@ class FamilyBackgroundService {
         // Removed debug print: debugPrint('Updated COPPA compliance for link: $familyLinkId');
       }
     } catch (e) {
-        // Removed debug print: debugPrint('Error updating COPPA compliance: $e');
-      }
+      // Removed debug print: debugPrint('Error updating COPPA compliance: $e');
     }
   }
 
@@ -248,7 +244,7 @@ class FamilyBackgroundService {
     }
 
     try {
-      sevenDaysAgo = DateTime.now().subtract(const Duration(days: 7));
+      final sevenDaysAgo = DateTime.now().subtract(const Duration(days: 7));
 
       // Find all pending privacy requests older than 7 days
       final expiredRequestsSnapshot = await _firestore
@@ -257,7 +253,7 @@ class FamilyBackgroundService {
           .where('requestedAt', isLessThan: Timestamp.fromDate(sevenDaysAgo))
           .get();
 
-      for (doc in expiredRequestsSnapshot.docs) {
+      for (final doc in expiredRequestsSnapshot.docs) {
         final requestData = doc.data();
 
         // Update status to expired
@@ -274,8 +270,7 @@ class FamilyBackgroundService {
         }
       }
     } catch (e) {
-        // Removed debug print: debugPrint('Error cleaning up expired requests: $e');
-      }
+      // Removed debug print: debugPrint('Error cleaning up expired requests: $e');
     }
   }
 
@@ -305,7 +300,7 @@ class FamilyBackgroundService {
         }
       }
     } catch (e) {
-        // Removed debug print: debugPrint('Error sending expired request notification: $e');
+      // Removed debug print: debugPrint('Error sending expired request notification: $e');
       }
     }
   }
