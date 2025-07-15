@@ -1,6 +1,6 @@
 name: appoint-app-v2
 region: fra1
-# Updated configuration for actual project structure - 2025-01-13
+# Minimal configuration fix - 2025-01-13
 
 services:
   - name: api
@@ -13,8 +13,6 @@ services:
     run_command: "npm start"
     routes:
       - path: /api
-    health_check:
-      http_path: /api/health
 
   - name: web
     environment_slug: node-js
@@ -25,6 +23,4 @@ services:
     build_command: "flutter build web --release"
     run_command: "serve -s build/web -l 8080"
     routes:
-      - path: /
-    health_check:
-      http_path: / 
+      - path: / 
