@@ -824,7 +824,5 @@
   "readOnly": "केवल पढ़ने के लिए",
   "readWrite": "पढ़ें और लिखें",
   "permissionUpdated": "अनुमति {category} को {newValue} में अपडेट किया गया",
-  "failedToUpdatePermission": "अनुमति अपडेट करने में विफल: {error}",
-  "adminBroadcast": "व्यवस्थापक प्रसारण",
-  "adminScreenTBD": "व्यवस्थापक स्क्रीन - विकासाधीन"
+  "failedToUpdatePermission": "अनुमति अपडेट करने में विफल: {error}"
 }

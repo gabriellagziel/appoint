@@ -776,9 +776,6 @@
   "calendar": "Calendario",
   "appointments": "Citas",
   "schedule": "Programar",
-  "playtimeAdminPanelTitle": "Panel de administración de juegos",
   "playtimeNoGamesYet": "Aún no hay juegos",
-  "checkingPermissions1": "Verificando permisos...",
-  "adminBroadcast": "Difusión de administrador",
-  "adminScreenTBD": "Pantalla de administrador (Pendiente)"
+  "checkingPermissions1": "Verificando permisos..."
 }

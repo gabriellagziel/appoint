@@ -824,7 +824,5 @@
   "readOnly": "Karatu kawai",
   "readWrite": "Karatu & rubutu",
   "permissionUpdated": "An sabunta izini {category} zuwa {newValue}",
-  "failedToUpdatePermission": "An kasa sabunta izini: {error}",
-  "adminBroadcast": "Faɗaɗa mai kulawa",
-  "adminScreenTBD": "Fuskar mai kulawa – A ci gaba"
+  "failedToUpdatePermission": "An kasa sabunta izini: {error}"
 }
