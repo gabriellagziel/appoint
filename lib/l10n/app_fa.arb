@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "تأیید",
   "accessRevokedSuccessfully": "دسترسی با موفقیت باطل شد",
   "add": "افزودن",
-  "adminBroadcast": "پخش ادمین",
-  "adminScreenTBD": "صفحه ادمین تعریف نشده",
   "appTitle": "عنوان برنامه",
   "back": "بازگشت",
   "cancel": "لغو",
@@ -593,7 +582,6 @@
   "pendingInvites": "دعوت‌نامه‌های در انتظار",
   "pickImage": "انتخاب تصویر",
   "pickVideo": "انتخاب ویدیو",
-  "playtimeAdminPanelTitle": "عنوان پنل مدیریت Playtime",
   "playtimeApprove": "تأیید Playtime",
   "playtimeChooseFriends": "انتخاب دوستان",
   "playtimeChooseGame": "بازی را انتخاب کنید",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

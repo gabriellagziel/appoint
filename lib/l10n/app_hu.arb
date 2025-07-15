@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Elfogadás",
   "accessRevokedSuccessfully": "[HU] Access revoked successfully",
   "add": "Hozzáadás",
-  "adminBroadcast": "[HU] Admin Broadcast",
-  "adminScreenTBD": "[HU] Admin screen coming soon",
   "appTitle": "Alkalmazás címe",
   "back": "Vissza",
   "cancel": "Mégse",
@@ -593,7 +582,6 @@
   "pendingInvites": "Függőben lévő meghívók",
   "pickImage": "Kép kiválasztása",
   "pickVideo": "Videó kiválasztása",
-  "playtimeAdminPanelTitle": "[HU] Playtime Games – Admin",
   "playtimeApprove": "Playtime jóváhagyása",
   "playtimeChooseFriends": "[HU] Choose friends to invite",
   "playtimeChooseGame": "Válassz játékot",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

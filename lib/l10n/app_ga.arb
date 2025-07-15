@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Glac",
   "accessRevokedSuccessfully": "[GA] Access revoked successfully",
   "add": "Cuir leis",
-  "adminBroadcast": "Craoladh riarthóra",
-  "adminScreenTBD": "Scáileán riarthóra le socrú",
   "appTitle": "Teideal an aip",
   "back": "Ar ais",
   "cancel": "Cealaigh",
@@ -593,7 +582,6 @@
   "pendingInvites": "[GA] Pending Invites",
   "pickImage": "Roghnaigh íomhá",
   "pickVideo": "Roghnaigh físeán",
-  "playtimeAdminPanelTitle": "[GA] Playtime Games – Admin",
   "playtimeApprove": "[GA] Approve",
   "playtimeChooseFriends": "Roghnaigh cairde",
   "playtimeChooseGame": "Roghnaigh cluiche",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

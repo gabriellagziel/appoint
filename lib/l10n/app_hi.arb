@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "स्वीकृत करें",
   "accessRevokedSuccessfully": "पहुँच सफलतापूर्वक रद्द की गई",
   "add": "जोड़ें",
-  "adminBroadcast": "व्यवस्थापक प्रसारण",
-  "adminScreenTBD": "व्यवस्थापक स्क्रीन - विकासाधीन",
   "appTitle": "एप्लिकेशन शीर्षक",
   "back": "पिछला",
   "cancel": "रद्द करें",
@@ -593,7 +582,6 @@
   "pendingInvites": "लंबित निमंत्रण",
   "pickImage": "छवि चुनें",
   "pickVideo": "वीडियो चुनें",
-  "playtimeAdminPanelTitle": "[HI] Playtime Games – Admin",
   "playtimeApprove": "स्वीकृत करें",
   "playtimeChooseFriends": "मित्र चुनें",
   "playtimeChooseGame": "एक गेम चुनें",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

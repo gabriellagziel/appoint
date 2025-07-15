@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Приеми",
   "accessRevokedSuccessfully": "Достъпът беше отменен успешно",
   "add": "Добави",
-  "adminBroadcast": "Административно излъчване",
-  "adminScreenTBD": "Административен екран предстои",
   "appTitle": "Заглавие на приложението",
   "back": "Назад",
   "cancel": "Откажи",
@@ -593,7 +582,6 @@
   "pendingInvites": "Чакащи покани",
   "pickImage": "Избери изображение",
   "pickVideo": "Избери видео",
-  "playtimeAdminPanelTitle": "Заглавие на админ панела на Playtime",
   "playtimeApprove": "Одобри Playtime",
   "playtimeChooseFriends": "Изберете приятели",
   "playtimeChooseGame": "Изберете игра",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {
