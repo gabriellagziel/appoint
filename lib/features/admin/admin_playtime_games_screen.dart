@@ -1,6 +1,7 @@
 import 'package:appoint/config/theme.dart';
 import 'package:appoint/features/playtime/playtime_admin_notifier.dart';
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/models/playtime_background.dart';
 import 'package:appoint/models/playtime_game.dart';
 import 'package:appoint/providers/playtime_provider.dart';
@@ -43,7 +44,7 @@ class AdminPlaytimeGamesScreen extends ConsumerWidget {
 class _GamesTab extends ConsumerWidget {
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);
 
     return Consumer(
       builder: (context, final ref, final child) {
@@ -406,7 +407,7 @@ class _GamesTab extends ConsumerWidget {
 class _BackgroundsTab extends ConsumerWidget {
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);
 
     return Consumer(
       builder: (context, final ref, final child) {

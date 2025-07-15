@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Pieņemt",
   "accessRevokedSuccessfully": "[LV] Access revoked successfully",
   "add": "[LV] Add",
-  "adminBroadcast": "[LV] Admin Broadcast",
-  "adminScreenTBD": "[LV] Admin screen coming soon",
   "appTitle": "[LV] APP-OINT",
   "back": "[LV] Back",
   "cancel": "[LV] Cancel",
@@ -593,7 +582,6 @@
   "pendingInvites": "[LV] Pending Invites",
   "pickImage": "[LV] Pick Image",
   "pickVideo": "Izvēlēties video",
-  "playtimeAdminPanelTitle": "[LV] Playtime Games – Admin",
   "playtimeApprove": "[LV] Approve",
   "playtimeChooseFriends": "[LV] Choose friends to invite",
   "playtimeChooseGame": "[LV] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

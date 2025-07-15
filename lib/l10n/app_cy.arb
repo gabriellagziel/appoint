@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "[CY] Accept",
   "accessRevokedSuccessfully": "Mynediad wedi ei ganslo'n llwyddiannus",
   "add": "Ychwanegu",
-  "adminBroadcast": "[CY] Admin Broadcast",
-  "adminScreenTBD": "[CY] Admin screen coming soon",
   "appTitle": "Teitl y cais",
   "back": "Yn ôl",
   "cancel": "Canslo",
@@ -593,7 +582,6 @@
   "pendingInvites": "Gwahoddiadau sy'n aros",
   "pickImage": "Dewiswch ddelwedd",
   "pickVideo": "Dewiswch fideo",
-  "playtimeAdminPanelTitle": "[CY] Playtime Games – Admin",
   "playtimeApprove": "Cymeradwywch Playtime",
   "playtimeChooseFriends": "[CY] Choose friends to invite",
   "playtimeChooseGame": "Dewiswch gêm",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Acceptă",
   "accessRevokedSuccessfully": "[RO] Access revoked successfully",
   "add": "Adaugă",
-  "adminBroadcast": "[RO] Admin Broadcast",
-  "adminScreenTBD": "[RO] Admin screen coming soon",
   "appTitle": "Titlul aplicației",
   "back": "[RO] Back",
   "cancel": "Anulează",
@@ -593,7 +582,6 @@
   "pendingInvites": "[RO] Pending Invites",
   "pickImage": "[RO] Pick Image",
   "pickVideo": "Alege video",
-  "playtimeAdminPanelTitle": "[RO] Playtime Games – Admin",
   "playtimeApprove": "Aprobă Playtime",
   "playtimeChooseFriends": "Alege prieteni",
   "playtimeChooseGame": "[RO] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {
