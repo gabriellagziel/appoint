@@ -1,24 +1,65 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:json_annotation/json_annotation.dart';
 
-part 'user_profile.freezed.dart';
 part 'user_profile.g.dart';
 
-@freezed
-class UserProfile with _$UserProfile {
-  const factory UserProfile({
-    required final String id,
-    required final String name,
-    final String? email,
-    final String? phone,
-    final String? photoUrl,
-    final bool? isAdminFreeAccess,
-    // Playtime-specific fields
-    final PlaytimeSettings? playtimeSettings,
-    final PlaytimePermissions? playtimePermissions,
-  }) = _UserProfile;
+@JsonSerializable()
+class UserProfile {
+  const UserProfile({
+    required this.id,
+    required this.name,
+    this.email,
+    this.phone,
+    this.photoUrl,
+    this.isAdminFreeAccess,
+    this.businessMode = false,
+    this.businessProfileId,
+    this.playtimeSettings,
+    this.playtimePermissions,
+  });
 
   factory UserProfile.fromJson(Map<String, dynamic> json) =>
       _$UserProfileFromJson(json);
+
+  final String id;
+  final String name;
+  final String? email;
+  final String? phone;
+  final String? photoUrl;
+  final bool? isAdminFreeAccess;
+  // Business mode fields
+  final bool businessMode;
+  final String? businessProfileId;
+  // Playtime-specific fields
+  final PlaytimeSettings? playtimeSettings;
+  final PlaytimePermissions? playtimePermissions;
+
+  Map<String, dynamic> toJson() => _$UserProfileToJson(this);
+
+  UserProfile copyWith({
+    String? id,
+    String? name,
+    String? email,
+    String? phone,
+    String? photoUrl,
+    bool? isAdminFreeAccess,
+    bool? businessMode,
+    String? businessProfileId,
+    PlaytimeSettings? playtimeSettings,
+    PlaytimePermissions? playtimePermissions,
+  }) {
+    return UserProfile(
+      id: id ?? this.id,
+      name: name ?? this.name,
+      email: email ?? this.email,
+      phone: phone ?? this.phone,
+      photoUrl: photoUrl ?? this.photoUrl,
+      isAdminFreeAccess: isAdminFreeAccess ?? this.isAdminFreeAccess,
+      businessMode: businessMode ?? this.businessMode,
+      businessProfileId: businessProfileId ?? this.businessProfileId,
+      playtimeSettings: playtimeSettings ?? this.playtimeSettings,
+      playtimePermissions: playtimePermissions ?? this.playtimePermissions,
+    );
+  }
 }
 
 @JsonSerializable()

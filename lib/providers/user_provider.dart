@@ -13,6 +13,8 @@ class User {
     this.phone,
     this.photoUrl,
     this.isAdminFreeAccess = false,
+    this.businessMode = false,
+    this.businessProfileId,
   });
   final String id;
   final String name;
@@ -21,14 +23,21 @@ class User {
   final String? photoUrl;
   final UserType userType;
   final bool isAdminFreeAccess;
+  final bool businessMode;
+  final String? businessProfileId;
 
   // Convenience getters
-  bool get businessMode => userType == UserType.business;
   bool get isStudio => userType == UserType.studio;
   bool get isAdmin => userType == UserType.admin;
   bool get isPersonal => userType == UserType.personal;
   bool get isChild => userType == UserType.child;
 }
+
+// Provider that checks if user is in business mode
+final isBusinessProvider = Provider<bool>((ref) {
+  final user = ref.watch(userProvider);
+  return user?.businessMode ?? false;
+});
 
 // Provider that combines user profile and business mode
 userProvider = Provider<User?>((final ref) {
@@ -47,6 +56,8 @@ userProvider = Provider<User?>((final ref) {
         photoUrl: profile.photoUrl,
         userType: userType,
         isAdminFreeAccess: profile.isAdminFreeAccess ?? false,
+        businessMode: profile.businessMode,
+        businessProfileId: profile.businessProfileId,
       );
     },
     loading: () => null,
