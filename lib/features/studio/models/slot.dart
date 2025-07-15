@@ -32,7 +32,7 @@ class Slot {
             : DateTime.parse(endTime.toString()),
         isBooked: isBooked,
       );
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('❌ Error parsing slot from Firestore: $e');
       // Removed debug print: debugPrint('📄 Document ID: ${doc.id}');
       rethrow;

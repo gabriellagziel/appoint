@@ -249,7 +249,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
           // Simulate booking submission
           await Future.delayed(const Duration(seconds: 1));
           addBotMessage('Your booking has been confirmed!');
-        } catch (e) {e) {
+        } catch (e) {
           addBotMessage('Failed to submit booking. Please try again later.');
         }
       } else {

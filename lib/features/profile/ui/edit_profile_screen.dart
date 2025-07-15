@@ -27,7 +27,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       if (Firebase.apps.isNotEmpty) {
         FirebaseAnalytics.instance.logEvent(name: eventName);
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Silently ignore analytics errors in tests
     }
   }

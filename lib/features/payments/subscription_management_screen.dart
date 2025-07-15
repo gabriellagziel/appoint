@@ -39,7 +39,7 @@ class REDACTED_TOKEN
         _subscriptionDetails = details;
         _isLoading = false;
       });
-    } catch (e) {e) {
+    } catch (e) {
       setState(() {
         _error = 'Failed to load subscription details: $e';
         _isLoading = false;
@@ -100,7 +100,7 @@ class REDACTED_TOKEN
           }
         }
       }
-    } catch (e) {e) {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

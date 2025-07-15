@@ -31,7 +31,7 @@ class REDACTED_TOKEN
       service = ref.read(REDACTED_TOKEN);
       await service.loadConfiguration();
       ref.read(businessAvailabilityProvider.notifier).loadConfiguration();
-    } catch (e) {e) {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error loading configuration: $e')),
@@ -55,7 +55,7 @@ class REDACTED_TOKEN
           const SnackBar(content: Text('Configuration saved successfully!')),
         );
       }
-    } catch (e) {e) {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error saving configuration: $e')),

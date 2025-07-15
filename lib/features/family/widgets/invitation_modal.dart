@@ -49,7 +49,7 @@ class _InvitationModalState extends ConsumerState<InvitationModal> {
           const SnackBar(content: Text('Invitation sent successfully!')),
         );
       }
-    } catch (e) {e) {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to send invitation: $e')),

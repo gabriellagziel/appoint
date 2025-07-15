@@ -5,6 +5,9 @@ class StaffAvailabilityService {
   StaffAvailabilityService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
   final FirebaseFirestore _firestore;
+  
+  late QuerySnapshot<Map<String, dynamic>> snap;
+  late DocumentReference<Map<String, dynamic>> doc;
 
   CollectionReference<Map<String, dynamic>> _col(String staffId) =>
       _firestore.collection('staff/$staffId/availability');

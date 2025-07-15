@@ -166,7 +166,7 @@ class PermissionsScreen extends ConsumerWidget {
 
       // Refresh the permissions list
       ref.invalidate(permissionsProvider(familyLink.id));
-    } catch (e) {e) {
+    } catch (e) {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(

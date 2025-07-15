@@ -193,7 +193,7 @@ class BookingScreenExample extends ConsumerWidget {
           // User dismissed dialog, do nothing
           break;
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Show error notification
       ref.read(uiNotificationServiceProvider).showError('Sync failed: $e');
     }

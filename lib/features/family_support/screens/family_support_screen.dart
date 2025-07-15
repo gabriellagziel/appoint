@@ -101,7 +101,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
           const SnackBar(content: Text('Support ticket submitted')),
         );
       }
-    } catch (e) {e) {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text('Error: $e')));

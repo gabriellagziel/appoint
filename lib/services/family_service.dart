@@ -93,7 +93,7 @@ class FamilyService {
         'timestamp': FieldValue.serverTimestamp(),
         'data': data,
       });
-    } catch (e) {e) {
+    } catch (e) {
       // Don't throw on analytics failures
       // Removed debug print: debugPrint('Failed to log family event: $e');
     }
