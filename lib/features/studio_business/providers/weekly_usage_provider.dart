@@ -34,21 +34,21 @@ class WeeklyUsageNotifier extends StateNotifier<int> {
 
     // Load current usage
     final usage = prefs.getInt(_usageKey) ?? 0;
-    final state = usage;
+    state = usage;
   }
 
   Future<void> _resetWeeklyUsage() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt(_usageKey, 0);
     await prefs.setString(_lastResetKey, DateTime.now().toIso8601String());
-    final state = 0;
+    state = 0;
   }
 
   Future<void> incrementUsage() async {
     final prefs = await SharedPreferences.getInstance();
     final newUsage = state + 1;
     await prefs.setInt(_usageKey, newUsage);
-    final state = newUsage;
+    state = newUsage;
   }
 
   bool get shouldShowUpgradeModal => state > 21;

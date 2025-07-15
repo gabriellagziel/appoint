@@ -25,7 +25,7 @@ class BookingSlotChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
     final isAvailable = available && !disabled;
 
     return Semantics(
@@ -58,7 +58,7 @@ class BookingSlotChip extends StatelessWidget {
   }
 
   String _getSemanticsLabel() {
-    timeStr = _formatTime(time);
+    final timeStr = _formatTime(time);
     final status = disabled
         ? 'unavailable'
         : available
@@ -68,8 +68,8 @@ class BookingSlotChip extends StatelessWidget {
   }
 
   String _formatTime(TimeOfDay time) {
-    hour = time.hour.toString().padLeft(2, '0');
-    minute = time.minute.toString().padLeft(2, '0');
+    final hour = time.hour.toString().padLeft(2, '0');
+    final minute = time.minute.toString().padLeft(2, '0');
     return '$hour:$minute';
   }
 

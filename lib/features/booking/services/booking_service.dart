@@ -73,7 +73,7 @@ class BookingService {
       final allBookings = <Booking>[];
 
       // Execute batched queries
-      for (batch in batches) {
+      for (final batch in batches) {
         final snapshot = await _firestore
             .collection(_bookingsCollection)
             .where(FieldPath.documentId, whereIn: batch)
