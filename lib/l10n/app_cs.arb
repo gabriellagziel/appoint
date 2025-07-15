@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Přijmout",
   "accessRevokedSuccessfully": "Přístup úspěšně odvolán",
   "add": "[CS] Add",
-  "adminBroadcast": "Správcovské vysílání",
-  "adminScreenTBD": "[CS] Admin screen coming soon",
   "appTitle": "Název aplikace",
   "back": "Zpět",
   "cancel": "Zrušit",
@@ -593,7 +582,6 @@
   "pendingInvites": "Čekající pozvánky",
   "pickImage": "[CS] Pick Image",
   "pickVideo": "[CS] Pick Video",
-  "playtimeAdminPanelTitle": "[CS] Playtime Games – Admin",
   "playtimeApprove": "Schválit Playtime",
   "playtimeChooseFriends": "Vyber přátele",
   "playtimeChooseGame": "Vyberte hru",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

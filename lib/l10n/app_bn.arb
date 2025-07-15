@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "গ্রহণ করুন",
   "accessRevokedSuccessfully": "অ্যাক্সেস সফলভাবে বাতিল হয়েছে!",
   "add": "যোগ করুন",
-  "adminBroadcast": "অ্যাডমিন সম্প্রচার",
-  "adminScreenTBD": "অ্যাডমিন স্ক্রীন - পরে তৈরি করা হবে",
   "appTitle": "[BN] APP-OINT",
   "back": "পেছনে ফিরে যান",
   "cancel": "বাতিল",
@@ -593,7 +582,6 @@
   "pendingInvites": "মুলতুবি আমন্ত্রণ",
   "pickImage": "ছবি নির্বাচন করুন",
   "pickVideo": "ভিডিও নির্বাচন করুন",
-  "playtimeAdminPanelTitle": "[BN] Playtime Games – Admin",
   "playtimeApprove": "[BN] Approve",
   "playtimeChooseFriends": "আমন্ত্রণ জানানোর জন্য বন্ধু নির্বাচন করুন",
   "playtimeChooseGame": "[BN] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

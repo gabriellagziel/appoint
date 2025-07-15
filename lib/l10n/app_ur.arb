@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "قبول کریں",
   "accessRevokedSuccessfully": "رسائی کامیابی سے منسوخ",
   "add": "[UR] Add",
-  "adminBroadcast": "ایڈمن نشریات",
-  "adminScreenTBD": "ایڈمن اسکرین جلد دستیاب ہوگا",
   "appTitle": "ایپ کا عنوان",
   "back": "[UR] Back",
   "cancel": "منسوخ کریں",
@@ -593,7 +582,6 @@
   "pendingInvites": "زیر التوا دعوتیں",
   "pickImage": "تصویر منتخب کریں",
   "pickVideo": "ویڈیو منتخب کریں",
-  "playtimeAdminPanelTitle": "[UR] Playtime Games – Admin",
   "playtimeApprove": "[UR] Approve",
   "playtimeChooseFriends": "[UR] Choose friends to invite",
   "playtimeChooseGame": "[UR] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

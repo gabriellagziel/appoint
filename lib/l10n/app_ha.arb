@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Amince",
   "accessRevokedSuccessfully": "An cire izini cikin nasara!",
   "add": "Add",
-  "adminBroadcast": "Faɗaɗa mai kulawa",
-  "adminScreenTBD": "Fuskar mai kulawa – A ci gaba",
   "appTitle": "Appoint",
   "back": "Back",
   "cancel": "Sokewa",
@@ -593,7 +582,6 @@
   "pendingInvites": "Gayyata a tsaye",
   "pickImage": "Zaɓi hoto",
   "pickVideo": "Zaɓi bidiyo",
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
   "playtimeApprove": "Approve",
   "playtimeChooseFriends": "Choose friends to invite",
   "playtimeChooseGame": "Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

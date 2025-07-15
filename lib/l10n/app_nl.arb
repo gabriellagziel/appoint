@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Accepteren",
   "accessRevokedSuccessfully": "[NL] Access revoked successfully",
   "add": "[NL] Add",
-  "adminBroadcast": "[NL] Admin Broadcast",
-  "adminScreenTBD": "[NL] Admin screen coming soon",
   "appTitle": "[NL] APP-OINT",
   "back": "[NL] Back",
   "cancel": "Annuleren",
@@ -593,7 +582,6 @@
   "pendingInvites": "[NL] Pending Invites",
   "pickImage": "[NL] Pick Image",
   "pickVideo": "Video kiezen",
-  "playtimeAdminPanelTitle": "Playtime beheerderspaneel titel",
   "playtimeApprove": "Playtime goedkeuren",
   "playtimeChooseFriends": "Kies vrienden",
   "playtimeChooseGame": "[NL] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

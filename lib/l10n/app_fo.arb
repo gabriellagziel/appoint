@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Váttað",
   "accessRevokedSuccessfully": "[FO] Access revoked successfully",
   "add": "[FO] Add",
-  "adminBroadcast": "[FO] Admin Broadcast",
-  "adminScreenTBD": "[FO] Admin screen coming soon",
   "appTitle": "[FO] APP-OINT",
   "back": "Tilbaka",
   "cancel": "Strika",
@@ -593,7 +582,6 @@
   "pendingInvites": "Boð bíða",
   "pickImage": "Vel mynd",
   "pickVideo": "Vel vídjó",
-  "playtimeAdminPanelTitle": "Playtime stýrisloyvi heiti",
   "playtimeApprove": "Váttað Playtime",
   "playtimeChooseFriends": "[FO] Choose friends to invite",
   "playtimeChooseGame": "Vel spæl",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {
