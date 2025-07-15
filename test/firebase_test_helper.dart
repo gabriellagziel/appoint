@@ -70,8 +70,8 @@ Future<void> initializeTestFirebase() async {
 Widget REDACTED_TOKEN(Widget child) => FirebaseTestHelper.REDACTED_TOKEN(child);
 
 // Global mock instances for tests
-mockAuth = MockFirebaseAuth();
-mockFirestore = MockFirebaseFirestore();
+final mockAuth = MockFirebaseAuth();
+final mockFirestore = MockFirebaseFirestore();
 
 // Helper function to setup Firebase mocks
 void setupFirebaseMocks() {
