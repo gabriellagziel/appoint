@@ -37,7 +37,7 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
         FirebaseMessaging.instance.onTokenRefresh.listen(_onTokenRefresh);
         
         // Listen for user authentication changes
-        _authService.authStateChanges.listen(_onAuthStateChanged);
+        _authService.authStateChanges().listen(_onAuthStateChanged);
       } else {
         state = FCMTokenState.error('Notification permissions denied');
       }
