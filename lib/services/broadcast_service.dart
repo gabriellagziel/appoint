@@ -62,11 +62,11 @@ class BroadcastService {
 
       // Apply filters
       if (filters.countries != null && filters.countries!.isNotEmpty) {
-        final query = query.where('country', whereIn: filters.countries);
+        query = query.where('country', whereIn: filters.countries);
       }
 
       if (filters.cities != null && filters.cities!.isNotEmpty) {
-        final query = query.where('city', whereIn: filters.cities);
+        query = query.where('city', whereIn: filters.cities);
       }
 
       if (filters.subscriptionTiers != null &&
@@ -76,12 +76,12 @@ class BroadcastService {
       }
 
       if (filters.userRoles != null && filters.userRoles!.isNotEmpty) {
-        final query = query.where('role', whereIn: filters.userRoles);
+        query = query.where('role', whereIn: filters.userRoles);
       }
 
       if (filters.accountStatuses != null &&
           filters.accountStatuses!.isNotEmpty) {
-        final query = query.where('status', whereIn: filters.accountStatuses);
+        query = query.where('status', whereIn: filters.accountStatuses);
       }
 
       if (filters.joinedAfter != null) {
@@ -140,11 +140,11 @@ class BroadcastService {
 
       // Apply filters
       if (filters.countries != null && filters.countries!.isNotEmpty) {
-        final query = query.where('country', whereIn: filters.countries);
+        query = query.where('country', whereIn: filters.countries);
       }
 
       if (filters.cities != null && filters.cities!.isNotEmpty) {
-        final query = query.where('city', whereIn: filters.cities);
+        query = query.where('city', whereIn: filters.cities);
       }
 
       if (filters.subscriptionTiers != null &&
@@ -154,12 +154,12 @@ class BroadcastService {
       }
 
       if (filters.userRoles != null && filters.userRoles!.isNotEmpty) {
-        final query = query.where('role', whereIn: filters.userRoles);
+        query = query.where('role', whereIn: filters.userRoles);
       }
 
       if (filters.accountStatuses != null &&
           filters.accountStatuses!.isNotEmpty) {
-        final query = query.where('status', whereIn: filters.accountStatuses);
+        query = query.where('status', whereIn: filters.accountStatuses);
       }
 
       if (filters.joinedAfter != null) {
