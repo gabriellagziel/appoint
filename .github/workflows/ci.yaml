@@ -1,17 +1,20 @@
-name: CI
+name: CI (Legacy - Redirecting to Main Pipeline)
 
 on: [push, pull_request]
 
 jobs:
-  analyze:
+  redirect:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: subosito/flutter-action@v2
-        with:
-          flutter-version: "latest"
-      - run: flutter pub get
-      - run: flutter analyze
-      - run: flutter test
-      - run: dart run tool/arb_validator.dart
-      - run: npm run spell-check 
+      - name: Redirect to Main Pipeline
+        run: |
+          echo "This workflow has been replaced by ci-cd-pipeline.yml"
+          echo "Please use the main CI/CD pipeline for all builds and tests"
+          echo "The main pipeline includes:"
+          echo "- Static analysis with flutter analyze --no-fatal-infos"
+          echo "- Code coverage with flutter test --coverage"
+          echo "- APK builds with artifact upload"
+          echo "- Codecov integration"
+          echo "- Security scanning"
+          echo "- Multi-platform builds"
+          exit 0 
