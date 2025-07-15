@@ -1,0 +1,116 @@
+name: Coverage Badge
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+
+jobs:
+  coverage-badge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.24.5'
+          channel: stable
+          cache: true
+          
+      - name: Install dependencies
+        run: flutter pub get
+        
+      - name: Run tests with coverage
+        run: |
+          echo "🧪 Running tests with coverage..."
+          flutter test --coverage
+          
+      - name: Generate coverage report
+        run: |
+          echo "📊 Generating coverage report..."
+          genhtml coverage/lcov.info -o coverage/html
+          
+      - name: Calculate coverage percentage
+        id: coverage
+        run: |
+          COVERAGE=$(lcov --summary coverage/lcov.info | grep "lines" | cut -d ' ' -f 4 | cut -d '%' -f 1)
+          echo "coverage=$COVERAGE" >> $GITHUB_OUTPUT
+          echo "📈 Coverage: $COVERAGE%"
+          
+      - name: Generate coverage badge
+        run: |
+          COVERAGE=${{ steps.coverage.outputs.coverage }}
+          
+          # Generate badge color based on coverage
+          if (( $(echo "$COVERAGE >= 90" | bc -l) )); then
+            COLOR="brightgreen"
+          elif (( $(echo "$COVERAGE >= 80" | bc -l) )); then
+            COLOR="green"
+          elif (( $(echo "$COVERAGE >= 70" | bc -l) )); then
+            COLOR="yellowgreen"
+          elif (( $(echo "$COVERAGE >= 60" | bc -l) )); then
+            COLOR="yellow"
+          elif (( $(echo "$COVERAGE >= 50" | bc -l) )); then
+            COLOR="orange"
+          else
+            COLOR="red"
+          fi
+          
+          # Generate badge URL
+          BADGE_URL="https://img.shields.io/badge/coverage-${COVERAGE}%25-${COLOR}?style=flat-square"
+          
+          # Download badge
+          curl -o coverage-badge.svg "$BADGE_URL"
+          
+          echo "🛡️ Coverage badge generated: $COVERAGE% ($COLOR)"
+          
+      - name: Upload coverage badge
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-badge
+          path: coverage-badge.svg
+          retention-days: 30
+          
+      - name: Update README with coverage badge
+        run: |
+          # Update README.md with the new coverage badge
+          if [ -f "README.md" ]; then
+            # Replace existing coverage badge or add new one
+            if grep -q "coverage.*%" README.md; then
+              # Replace existing badge
+              sed -i 's|!\[coverage\].*|![coverage](coverage-badge.svg)|g' README.md
+            else
+              # Add badge after the title
+              sed -i '1a\\n![coverage](coverage-badge.svg)\n' README.md
+            fi
+            echo "📝 README updated with coverage badge"
+          fi
+          
+      - name: Commit coverage badge
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add coverage-badge.svg README.md
+          git commit -m "Update coverage badge: ${{ steps.coverage.outputs.coverage }}%" || echo "No changes to commit"
+          git push origin HEAD || echo "Push failed (expected for PRs)"
+          
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 30
+          
+      - name: Upload to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: coverage/lcov.info
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: false
+          verbose: true
