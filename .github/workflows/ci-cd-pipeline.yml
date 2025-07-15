@@ -157,7 +157,7 @@ jobs:
       - name: Analyze code
         run: |
           echo "🔍 Running Flutter analyze..."
-          flutter analyze --no-fatal-infos || echo "⚠️ Analysis completed with warnings"
+          flutter analyze --no-fatal-infos
         continue-on-error: true
         
       - name: Run spell check
@@ -292,9 +292,8 @@ jobs:
       - name: Build web app
         run: |
           echo "🌐 Building Flutter web app..."
-          flutter build web --release --web-renderer html || echo "⚠️ Web build completed with warnings"
+          flutter build web --release --web-renderer html
           echo "✅ Web build completed"
-        continue-on-error: true
           
       - name: Verify web build
         run: |
@@ -341,18 +340,16 @@ jobs:
       - name: Build APK
         run: |
           echo "🤖 Building Android APK..."
-          flutter build apk --release --target-platform android-arm64 || echo "⚠️ Android APK build completed with warnings"
-          flutter build apk --release --target-platform android-arm || echo "⚠️ Android APK build completed with warnings"
-          flutter build apk --release --target-platform android-x64 || echo "⚠️ Android APK build completed with warnings"
+          flutter build apk --release --target-platform android-arm64
+          flutter build apk --release --target-platform android-arm
+          flutter build apk --release --target-platform android-x64
           echo "✅ Android APK build completed"
-        continue-on-error: true
           
       - name: Build App Bundle
         run: |
           echo "📦 Building Android App Bundle..."
-          flutter build appbundle --release || echo "⚠️ Android App Bundle build completed with warnings"
+          flutter build appbundle --release
           echo "✅ Android App Bundle build completed"
-        continue-on-error: true
           
       - name: Upload Android artifacts
         uses: actions/upload-artifact@v4
@@ -387,9 +384,8 @@ jobs:
       - name: Build iOS
         run: |
           echo "🍎 Building iOS app..."
-          flutter build ios --release --no-codesign || echo "⚠️ iOS build completed with warnings"
+          flutter build ios --release --no-codesign
           echo "✅ iOS build completed"
-        continue-on-error: true
           
       - name: Upload iOS artifacts
         uses: actions/upload-artifact@v4
