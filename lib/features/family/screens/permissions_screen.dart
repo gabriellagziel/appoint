@@ -167,13 +167,12 @@ class PermissionsScreen extends ConsumerWidget {
       // Refresh the permissions list
       ref.invalidate(permissionsProvider(familyLink.id));
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to update permission: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to update permission: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
 }
