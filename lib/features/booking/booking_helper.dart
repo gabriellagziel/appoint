@@ -26,8 +26,8 @@ class BookingHelper {
 
     if (staffId == null ||
         serviceId == null ||
-        final dateTime = = null ||
-        final duration = = null) {
+        dateTime == null ||
+        duration == null) {
       throw Exception('Missing required booking information');
     }
 
