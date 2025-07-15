@@ -9,2411 +9,2510 @@ class AppLocalizationsHu extends AppLocalizations {
   AppLocalizationsHu([String locale = 'hu']) : super(locale);
 
   @override
-  String get refresh => 'Frissítés';
+  String get refresh => '[HU] Frissítés';
 
   @override
-  String get home => 'Kezdőlap';
+  String get home => '[HU] Kezdőlap';
 
   @override
-  String get noSessionsYet => '[HU] No sessions yet';
+  String get noSessionsYet => '[HU] [HU] No sessions yet';
 
   @override
-  String get ok => 'Rendben';
+  String get ok => '[HU] Rendben';
 
   @override
-  String get playtimeLandingChooseMode => 'Válassz módot';
+  String get playtimeLandingChooseMode => '[HU] Válassz módot';
 
   @override
-  String get signUp => 'Regisztráció';
+  String get signUp => '[HU] Regisztráció';
 
   @override
-  String get scheduleMessage => 'Üzenet ütemezése';
+  String get scheduleMessage => '[HU] Üzenet ütemezése';
 
   @override
-  String get decline => 'Elutasítás';
+  String get decline => '[HU] Elutasítás';
 
   @override
   String get adminBroadcast => '[HU] Admin Broadcast';
 
   @override
-  String get login => 'Bejelentkezés';
+  String get login => '[HU] Bejelentkezés';
 
   @override
-  String get playtimeChooseFriends => '[HU] Choose friends to invite';
+  String get playtimeChooseFriends => '[HU] [HU] Choose friends to invite';
 
   @override
-  String get noInvites => '[HU] No invites';
+  String get noInvites => '[HU] [HU] No invites';
 
   @override
-  String get playtimeChooseTime => 'Idő kiválasztása';
+  String get playtimeChooseTime => '[HU] Idő kiválasztása';
 
   @override
-  String get success => 'Siker';
+  String get success => '[HU] Siker';
 
   @override
-  String get undo => '[HU] Undo';
+  String get undo => '[HU] [HU] Undo';
 
   @override
   String opened(Object count) {
-    return 'Megnyitva';
+    return '[HU] Megnyitva';
   }
 
   @override
-  String get createVirtualSession => 'Virtuális munkamenet létrehozása';
+  String get createVirtualSession => '[HU] Virtuális munkamenet létrehozása';
 
   @override
-  String get messageSentSuccessfully => 'Üzenet sikeresen elküldve';
+  String get messageSentSuccessfully => '[HU] Üzenet sikeresen elküldve';
 
   @override
-  String get redo => 'Újra';
+  String get redo => '[HU] Újra';
 
   @override
-  String get next => 'Következő';
+  String get next => '[HU] Következő';
 
   @override
-  String get search => 'Keresés';
+  String get search => '[HU] Keresés';
 
   @override
   String get cancelInviteConfirmation =>
-      '[HU] Are you sure you want to cancel this invite?';
+      '[HU] [HU] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return 'Létrehozva';
+    return '[HU] Létrehozva';
   }
 
   @override
-  String get revokeAccess => '[HU] Revoke Access';
+  String get revokeAccess => '[HU] [HU] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => '[HU] Save Group for Recognition';
+  String get saveGroupForRecognition => '[HU] [HU] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => 'Élő munkamenet ütemezve';
+  String get playtimeLiveScheduled => '[HU] Élő munkamenet ütemezve';
 
   @override
   String get revokeAccessConfirmation =>
-      '[HU] Are you sure you want to revoke access?';
+      '[HU] [HU] Are you sure you want to revoke access?';
 
   @override
-  String get download => 'Letöltés';
+  String get download => '[HU] Letöltés';
 
   @override
-  String get password => 'Jelszó';
+  String get password => '[HU] Jelszó';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return '[HU] Error loading family links';
+    return '[HU] [HU] Error loading family links';
   }
 
   @override
-  String get cancel => 'Mégse';
+  String get cancel => '[HU] Mégse';
 
   @override
-  String get playtimeCreate => 'Playtime létrehozása';
+  String get playtimeCreate => '[HU] Playtime létrehozása';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return '[HU] Failed to action privacy request';
+    return '[HU] [HU] Failed to action privacy request';
   }
 
   @override
-  String get appTitle => 'Alkalmazás címe';
+  String get appTitle => '[HU] Alkalmazás címe';
 
   @override
-  String get accept => 'Elfogadás';
+  String get accept => '[HU] Elfogadás';
 
   @override
-  String get playtimeModeVirtual => 'Virtuális mód';
+  String get playtimeModeVirtual => '[HU] Virtuális mód';
 
   @override
-  String get playtimeDescription => 'Playtime leírás';
+  String get playtimeDescription => '[HU] Playtime leírás';
 
   @override
-  String get delete => 'Törlés';
+  String get delete => '[HU] Törlés';
 
   @override
-  String get playtimeVirtualStarted => '[HU] Virtual playtime started!';
+  String get playtimeVirtualStarted => '[HU] [HU] Virtual playtime started!';
 
   @override
-  String get createYourFirstGame => '[HU] Create your first game';
+  String get createYourFirstGame => '[HU] [HU] Create your first game';
 
   @override
-  String get participants => 'Résztvevők';
+  String get participants => '[HU] Résztvevők';
 
   @override
   String recipients(Object count) {
-    return 'Címzettek';
+    return '[HU] Címzettek';
   }
 
   @override
-  String get noResults => '[HU] No results found';
+  String get noResults => '[HU] [HU] No results found';
 
   @override
-  String get yes => 'Igen';
+  String get yes => '[HU] Igen';
 
   @override
-  String get invite => 'Meghívás';
+  String get invite => '[HU] Meghívás';
 
   @override
-  String get playtimeModeLive => 'Élő mód';
+  String get playtimeModeLive => '[HU] Élő mód';
 
   @override
-  String get done => 'Kész';
+  String get done => '[HU] Kész';
 
   @override
-  String get defaultShareMessage => 'Alapértelmezett megosztási üzenet';
+  String get defaultShareMessage => '[HU] Alapértelmezett megosztási üzenet';
 
   @override
-  String get no => 'Nem';
+  String get no => '[HU] Nem';
 
   @override
-  String get playtimeHub => '[HU] Playtime Hub';
+  String get playtimeHub => '[HU] [HU] Playtime Hub';
 
   @override
-  String get createLiveSession => 'Élő munkamenet létrehozása';
+  String get createLiveSession => '[HU] Élő munkamenet létrehozása';
 
   @override
-  String get enableNotifications => 'Értesítések engedélyezése';
+  String get enableNotifications => '[HU] Értesítések engedélyezése';
 
   @override
   String invited(Object date) {
-    return 'Meghívva';
+    return '[HU] Meghívva';
   }
 
   @override
   String content(Object content) {
-    return 'Tartalom';
+    return '[HU] Tartalom';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'Találkozó sikeresen megosztva';
+  String get meetingSharedSuccessfully => '[HU] Találkozó sikeresen megosztva';
 
   @override
-  String get welcomeToPlaytime => '[HU] Welcome to Playtime';
+  String get welcomeToPlaytime => '[HU] [HU] Welcome to Playtime';
 
   @override
-  String get viewAll => '[HU] View All';
+  String get viewAll => '[HU] [HU] View All';
 
   @override
-  String get playtimeVirtual => 'Virtuális Playtime';
+  String get playtimeVirtual => '[HU] Virtuális Playtime';
 
   @override
-  String get staffScreenTBD => '[HU] Staff screen coming soon';
+  String get staffScreenTBD => '[HU] [HU] Staff screen coming soon';
 
   @override
-  String get cut => 'Kivágás';
+  String get cut => '[HU] Kivágás';
 
   @override
   String get inviteCancelledSuccessfully =>
-      '[HU] Invite cancelled successfully';
+      '[HU] [HU] Invite cancelled successfully';
 
   @override
-  String get retry => 'Újrapróbálkozás';
+  String get retry => '[HU] Újrapróbálkozás';
 
   @override
-  String get composeBroadcastMessage => 'Sugárzott üzenet szerkesztése';
+  String get composeBroadcastMessage => '[HU] Sugárzott üzenet szerkesztése';
 
   @override
-  String get sendNow => 'Küldés most';
+  String get sendNow => '[HU] Küldés most';
 
   @override
-  String get noGamesYet => '[HU] No games yet';
+  String get noGamesYet => '[HU] [HU] No games yet';
 
   @override
-  String get select => 'Kiválasztás';
+  String get select => '[HU] Kiválasztás';
 
   @override
-  String get about => 'Névjegy';
+  String get about => '[HU] Névjegy';
 
   @override
-  String get choose => 'Válassz';
+  String get choose => '[HU] Válassz';
 
   @override
-  String get profile => '[HU] Profile';
+  String get profile => '[HU] [HU] Profile';
 
   @override
-  String get removeChild => 'Gyermek eltávolítása';
+  String get removeChild => '[HU] Gyermek eltávolítása';
 
   @override
   String status(Object status) {
-    return 'Állapot';
+    return '[HU] Állapot';
   }
 
   @override
-  String get logout => 'Kijelentkezés';
+  String get logout => '[HU] Kijelentkezés';
 
   @override
-  String get paste => 'Beillesztés';
+  String get paste => '[HU] Beillesztés';
 
   @override
-  String get welcome => 'Üdvözlünk';
+  String get welcome => '[HU] Üdvözlünk';
 
   @override
-  String get playtimeCreateSession => 'Munkamenet létrehozása';
+  String get playtimeCreateSession => '[HU] Munkamenet létrehozása';
 
   @override
-  String get familyMembers => 'Családtagok';
+  String get familyMembers => '[HU] Családtagok';
 
   @override
-  String get upload => 'Feltöltés';
+  String get upload => '[HU] Feltöltés';
 
   @override
-  String get upcomingSessions => 'Közelgő munkamenetek';
+  String get upcomingSessions => '[HU] Közelgő munkamenetek';
 
   @override
-  String get enterGroupName => '[HU] Enter group name';
+  String get enterGroupName => '[HU] [HU] Enter group name';
 
   @override
-  String get confirm => 'Megerősítés';
+  String get confirm => '[HU] Megerősítés';
 
   @override
-  String get playtimeLive => 'Élő Playtime';
+  String get playtimeLive => '[HU] Élő Playtime';
 
   @override
-  String get errorLoadingInvites => '[HU] Error loading invites';
+  String get errorLoadingInvites => '[HU] [HU] Error loading invites';
 
   @override
-  String get targetingFilters => 'Célzási szűrők';
+  String get targetingFilters => '[HU] Célzási szűrők';
 
   @override
-  String get pickVideo => 'Videó kiválasztása';
+  String get pickVideo => '[HU] Videó kiválasztása';
 
   @override
-  String get playtimeGameDeleted => 'Játék törölve';
+  String get playtimeGameDeleted => '[HU] Játék törölve';
 
   @override
-  String get scheduleForLater => 'Ütemezés későbbre';
+  String get scheduleForLater => '[HU] Ütemezés későbbre';
 
   @override
-  String get accessRevokedSuccessfully => '[HU] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[HU] [HU] Access revoked successfully';
 
   @override
   String type(Object type) {
-    return 'Típus';
+    return '[HU] Típus';
   }
 
   @override
-  String get checkingPermissions => 'Engedélyek ellenőrzése';
+  String get checkingPermissions => '[HU] Engedélyek ellenőrzése';
 
   @override
-  String get copy => 'Másolás';
+  String get copy => '[HU] Másolás';
 
   @override
-  String get yesCancel => 'Igen, mégse';
+  String get yesCancel => '[HU] Igen, mégse';
 
   @override
-  String get email => 'Email';
+  String get email => '[HU] Email';
 
   @override
-  String get shareOnWhatsApp => '[HU] Share on WhatsApp';
+  String get shareOnWhatsApp => '[HU] [HU] Share on WhatsApp';
 
   @override
-  String get notificationSettings => 'Értesítési beállítások';
+  String get notificationSettings => '[HU] Értesítési beállítások';
 
   @override
-  String get myProfile => '[HU] My Profile';
+  String get myProfile => '[HU] [HU] My Profile';
 
   @override
-  String get revoke => '[HU] Revoke';
+  String get revoke => '[HU] [HU] Revoke';
 
   @override
-  String get noBroadcastMessages => '[HU] No messages yet';
+  String get noBroadcastMessages => '[HU] [HU] No messages yet';
 
   @override
   String requestType(Object type) {
-    return 'Kérés típusa';
+    return '[HU] Kérés típusa';
   }
 
   @override
-  String get notifications => 'Értesítések';
+  String get notifications => '[HU] Értesítések';
 
   @override
-  String get details => 'Részletek';
+  String get details => '[HU] Részletek';
 
   @override
-  String get cancelInvite => '[HU] Cancel Invite';
+  String get cancelInvite => '[HU] [HU] Cancel Invite';
 
   @override
-  String get createNew => 'Új létrehozása';
+  String get createNew => '[HU] Új létrehozása';
 
   @override
-  String get settings => 'Beállítások';
+  String get settings => '[HU] Beállítások';
 
   @override
-  String get playtimeReject => 'Playtime elutasítása';
+  String get playtimeReject => '[HU] Playtime elutasítása';
 
   @override
-  String get errorLoadingProfile => '[HU] Error loading profile';
+  String get errorLoadingProfile => '[HU] [HU] Error loading profile';
 
   @override
-  String get edit => 'Szerkesztés';
+  String get edit => '[HU] Szerkesztés';
 
   @override
-  String get add => 'Hozzáadás';
+  String get add => '[HU] Hozzáadás';
 
   @override
-  String get playtimeGameApproved => 'Játék jóváhagyva';
+  String get playtimeGameApproved => '[HU] Játék jóváhagyva';
 
   @override
-  String get forgotPassword => 'Elfelejtetted a jelszót?';
+  String get forgotPassword => '[HU] Elfelejtetted a jelszót?';
 
   @override
-  String get familyDashboard => 'Családi irányítópult';
+  String get familyDashboard => '[HU] Családi irányítópult';
 
   @override
-  String get loading => 'Betöltés';
+  String get loading => '[HU] Betöltés';
 
   @override
-  String get quickActions => '[HU] Quick Actions';
+  String get quickActions => '[HU] [HU] Quick Actions';
 
   @override
-  String get playtimeTitle => 'Playtime címe';
+  String get playtimeTitle => '[HU] Playtime címe';
 
   @override
-  String get otpResentSuccessfully => 'OTP sikeresen újraküldve';
+  String get otpResentSuccessfully => '[HU] OTP sikeresen újraküldve';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return '[HU] Error checking permissions';
+    return '[HU] [HU] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => 'Ügyfélképernyő később';
+  String get clientScreenTBD => '[HU] Ügyfélképernyő később';
 
   @override
   String fcmToken(Object token) {
-    return '[HU] FCM Token';
+    return '[HU] [HU] FCM Token';
   }
 
   @override
-  String get pickImage => 'Kép kiválasztása';
+  String get pickImage => '[HU] Kép kiválasztása';
 
   @override
-  String get previous => 'Előző';
+  String get previous => '[HU] Előző';
 
   @override
-  String get noProfileFound => '[HU] No profile found';
+  String get noProfileFound => '[HU] [HU] No profile found';
 
   @override
-  String get noFamilyMembersYet => '[HU] No family members yet';
+  String get noFamilyMembersYet => '[HU] [HU] No family members yet';
 
   @override
-  String get mediaOptional => '[HU] Media (Optional)';
+  String get mediaOptional => '[HU] [HU] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => 'Üzenet sikeresen mentve';
+  String get messageSavedSuccessfully => '[HU] Üzenet sikeresen mentve';
 
   @override
-  String get scheduledFor => 'Ütemezve erre';
+  String get scheduledFor => '[HU] Ütemezve erre';
 
   @override
-  String get dashboard => 'Irányítópult';
+  String get dashboard => '[HU] Irányítópult';
 
   @override
-  String get noPermissionForBroadcast => '[HU] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[HU] [HU] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[HU] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Meghívás részletei';
+  String get inviteDetail => '[HU] Meghívás részletei';
 
   @override
   String scheduled(Object date) {
-    return 'Ütemezve';
+    return '[HU] Ütemezve';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'OTP újraküldése sikertelen';
+    return '[HU] OTP újraküldése sikertelen';
   }
 
   @override
-  String get scheduling => 'Ütemezés';
+  String get scheduling => '[HU] Ütemezés';
 
   @override
   String errorSavingMessage(Object error) {
-    return '[HU] Error saving message';
+    return '[HU] [HU] Error saving message';
   }
 
   @override
-  String get save => 'Mentés';
+  String get save => '[HU] Mentés';
 
   @override
-  String get playtimeApprove => 'Playtime jóváhagyása';
+  String get playtimeApprove => '[HU] Playtime jóváhagyása';
 
   @override
-  String get createYourFirstSession => 'Hozd létre az első munkameneted';
+  String get createYourFirstSession => '[HU] Hozd létre az első munkameneted';
 
   @override
-  String get playtimeGameRejected => 'Játék elutasítva';
+  String get playtimeGameRejected => '[HU] Játék elutasítva';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return '[HU] Failed to revoke access';
+    return '[HU] [HU] Failed to revoke access';
   }
 
   @override
-  String get recentGames => 'Friss játékok';
+  String get recentGames => '[HU] Friss játékok';
 
   @override
-  String get customizeMessage => 'Üzenet testreszabása';
+  String get customizeMessage => '[HU] Üzenet testreszabása';
 
   @override
   String failedToCancelInvite(Object error) {
-    return '[HU] Failed to cancel invite';
+    return '[HU] [HU] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return '[HU] Error sending message';
+    return '[HU] [HU] Error sending message';
   }
 
   @override
-  String get confirmPassword => 'Jelszó megerősítése';
+  String get confirmPassword => '[HU] Jelszó megerősítése';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return '[HU] Error loading privacy requests';
+    return '[HU] [HU] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Kapcsolódó gyerekek';
+  String get connectedChildren => '[HU] Kapcsolódó gyerekek';
 
   @override
-  String get share => 'Megosztás';
+  String get share => '[HU] Megosztás';
 
   @override
-  String get playtimeEnterGameName => 'Add meg a játék nevét';
+  String get playtimeEnterGameName => '[HU] Add meg a játék nevét';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Kérjük jelentkezz be családi funkciókhoz';
+      '[HU] Kérjük jelentkezz be családi funkciókhoz';
 
   @override
-  String get myInvites => 'Meghívásaim';
+  String get myInvites => '[HU] Meghívásaim';
 
   @override
-  String get createGame => 'Játék létrehozása';
+  String get createGame => '[HU] Játék létrehozása';
 
   @override
-  String get groupNameOptional => '[HU] Group Name (Optional)';
+  String get groupNameOptional => '[HU] [HU] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => '[HU] No playtime sessions found.';
+  String get playtimeNoSessions => '[HU] [HU] No playtime sessions found.';
 
   @override
   String get adminScreenTBD => '[HU] Admin screen coming soon';
 
   @override
   String get playtimeParentDashboardTitle =>
-      'Playtime szülői irányítópult címe';
+      '[HU] Playtime szülői irányítópult címe';
 
   @override
-  String get close => 'Bezárás';
+  String get close => '[HU] Bezárás';
 
   @override
-  String get knownGroupDetected => '[HU] Known group detected';
+  String get knownGroupDetected => '[HU] [HU] Known group detected';
 
   @override
-  String get back => 'Vissza';
+  String get back => '[HU] Vissza';
 
   @override
-  String get playtimeChooseGame => 'Válassz játékot';
+  String get playtimeChooseGame => '[HU] Válassz játékot';
 
   @override
-  String get managePermissions => 'Engedélyek kezelése';
+  String get managePermissions => '[HU] Engedélyek kezelése';
 
   @override
-  String get pollOptions => 'Szavazási lehetőségek';
+  String get pollOptions => '[HU] Szavazási lehetőségek';
 
   @override
   String clicked(Object count) {
-    return '[HU] Clicked';
+    return '[HU] [HU] Clicked';
   }
 
   @override
   String link(Object link) {
-    return '[HU] Link';
+    return '[HU] [HU] Link';
   }
 
   @override
-  String get meetingReadyMessage => 'Találkozó készen áll';
+  String get meetingReadyMessage => '[HU] Találkozó készen áll';
 
   @override
-  String get pendingInvites => 'Függőben lévő meghívók';
+  String get pendingInvites => '[HU] Függőben lévő meghívók';
 
   @override
   String statusColon(Object status) {
-    return 'Állapot:';
+    return '[HU] Állapot:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      '[HU] Please log in to view your profile.';
+      '[HU] [HU] Please log in to view your profile.';
 
   @override
-  String get adminMetrics => 'Admin Metrics';
+  String get adminMetrics => '[HU] Admin Metrics';
 
   @override
-  String get overview => 'Overview';
+  String get overview => '[HU] Overview';
 
   @override
-  String get bookings => 'Bookings';
+  String get bookings => '[HU] Bookings';
 
   @override
-  String get users => 'users (TRANSLATE)';
+  String get users => '[HU] users (TRANSLATE)';
 
   @override
-  String get revenue => 'revenue (TRANSLATE)';
+  String get revenue => '[HU] revenue (TRANSLATE)';
 
   @override
-  String get contentLibrary => 'Content Library';
+  String get contentLibrary => '[HU] Content Library';
 
   @override
   String get authErrorUserNotFound =>
-      'No account found with this email address.';
+      '[HU] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => 'Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[HU] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => 'Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[HU] Please enter a valid email address.';
 
   @override
   String get authErrorUserDisabled =>
-      'This account has been disabled. Please contact support.';
+      '[HU] This account has been disabled. Please contact support.';
 
   @override
   String get authErrorWeakPassword =>
-      'Password is too weak. Please choose a stronger password.';
+      '[HU] Password is too weak. Please choose a stronger password.';
 
   @override
   String get authErrorEmailAlreadyInUse =>
-      'An account with this email already exists.';
+      '[HU] An account with this email already exists.';
 
   @override
   String get authErrorTooManyRequests =>
-      'Too many failed attempts. Please try again later.';
+      '[HU] Too many failed attempts. Please try again later.';
 
   @override
   String get authErrorOperationNotAllowed =>
-      'This sign-in method is not enabled. Please contact support.';
+      '[HU] This sign-in method is not enabled. Please contact support.';
 
   @override
   String get authErrorInvalidCredential =>
-      'Invalid credentials. Please try again.';
+      '[HU] Invalid credentials. Please try again.';
 
   @override
   String get REDACTED_TOKEN =>
-      'An account already exists with this email using a different sign-in method.';
+      '[HU] An account already exists with this email using a different sign-in method.';
 
   @override
   String get authErrorCredentialAlreadyInUse =>
-      'These credentials are already associated with another account.';
+      '[HU] These credentials are already associated with another account.';
 
   @override
   String get authErrorNetworkRequestFailed =>
-      'Network error. Please check your connection and try again.';
+      '[HU] Network error. Please check your connection and try again.';
 
   @override
-  String get socialAccountConflictTitle => 'Account Already Exists';
+  String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
 
   @override
   String socialAccountConflictMessage(Object email) {
-    return 'An account with email $email already exists using a different sign-in method. Would you like to link your accounts?';
+    return 'يبدو أن هناك حساب موجود بالفعل';
   }
 
   @override
-  String get linkAccounts => 'Link Accounts';
+  String get linkAccounts => 'ربط الحسابات';
 
   @override
-  String get signInWithExistingMethod => 'Sign in with existing method';
+  String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
   String get authErrorRequiresRecentLogin =>
-      'Please log in again to perform this operation.';
+      '[HU] Please log in again to perform this operation.';
 
   @override
   String get authErrorAppNotAuthorized =>
-      'This app is not authorized to use Firebase Authentication.';
+      '[HU] This app is not authorized to use Firebase Authentication.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The verification code is invalid.';
+      '[HU] The verification code is invalid.';
 
   @override
   String get authErrorInvalidVerificationId =>
-      'The verification ID is invalid.';
+      '[HU] The verification ID is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Please enter the verification code.';
+      '[HU] Please enter the verification code.';
 
   @override
-  String get authErrorMissingVerificationId => 'Missing verification ID.';
+  String get authErrorMissingVerificationId => '[HU] Missing verification ID.';
 
   @override
-  String get authErrorInvalidPhoneNumber => 'The phone number is invalid.';
+  String get authErrorInvalidPhoneNumber => '[HU] The phone number is invalid.';
 
   @override
-  String get authErrorMissingPhoneNumber => 'Please enter a phone number.';
+  String get authErrorMissingPhoneNumber => '[HU] Please enter a phone number.';
 
   @override
   String get authErrorQuotaExceeded =>
-      'The SMS quota for this project has been exceeded. Please try again later.';
+      '[HU] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
   String get authErrorCodeExpired =>
-      'The verification code has expired. Please request a new one.';
+      '[HU] The verification code has expired. Please request a new one.';
 
   @override
   String get authErrorSessionExpired =>
-      'Your session has expired. Please log in again.';
+      '[HU] Your session has expired. Please log in again.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Multi-factor authentication is required.';
+      '[HU] Multi-factor authentication is required.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Multi-factor information not found.';
+      '[HU] Multi-factor information not found.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Missing multi-factor session.';
+      '[HU] Missing multi-factor session.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Invalid multi-factor session.';
+      '[HU] Invalid multi-factor session.';
 
   @override
   String get REDACTED_TOKEN =>
-      'This second factor is already in use.';
+      '[HU] This second factor is already in use.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Maximum number of second factors exceeded.';
+      '[HU] Maximum number of second factors exceeded.';
 
   @override
   String get authErrorUnsupportedFirstFactor =>
-      'Unsupported first factor for multi-factor authentication.';
+      '[HU] Unsupported first factor for multi-factor authentication.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Email change requires verification.';
+      '[HU] Email change requires verification.';
 
   @override
   String get REDACTED_TOKEN =>
-      'This phone number is already in use.';
+      '[HU] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => 'The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[HU] The password is invalid or too weak.';
 
   @override
-  String get authErrorInvalidIdToken => 'The ID token is invalid.';
+  String get authErrorInvalidIdToken => '[HU] The ID token is invalid.';
 
   @override
-  String get authErrorIdTokenExpired => 'The ID token has expired.';
+  String get authErrorIdTokenExpired => '[HU] The ID token has expired.';
 
   @override
-  String get authErrorIdTokenRevoked => 'The ID token has been revoked.';
+  String get authErrorIdTokenRevoked => '[HU] The ID token has been revoked.';
 
   @override
   String get authErrorInternalError =>
-      'An internal error occurred. Please try again.';
+      '[HU] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => 'An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[HU] An invalid argument was provided.';
 
   @override
-  String get authErrorInvalidClaims => 'Invalid custom claims provided.';
+  String get authErrorInvalidClaims => '[HU] Invalid custom claims provided.';
 
   @override
-  String get authErrorInvalidContinueUri => 'The continue URL is invalid.';
+  String get authErrorInvalidContinueUri => '[HU] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => 'The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[HU] The creation time is invalid.';
 
   @override
   String get authErrorInvalidDisabledField =>
-      'The disabled field value is invalid.';
+      '[HU] The disabled field value is invalid.';
 
   @override
-  String get authErrorInvalidDisplayName => 'The display name is invalid.';
+  String get authErrorInvalidDisplayName => '[HU] The display name is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The dynamic link domain is invalid.';
+      '[HU] The dynamic link domain is invalid.';
 
   @override
   String get authErrorInvalidEmailVerified =>
-      'The email verified value is invalid.';
+      '[HU] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => 'The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[HU] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => 'The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[HU] The hash block size is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The hash derived key length is invalid.';
+      '[HU] The hash derived key length is invalid.';
 
   @override
-  String get authErrorInvalidHashKey => 'The hash key is invalid.';
+  String get authErrorInvalidHashKey => '[HU] The hash key is invalid.';
 
   @override
   String get authErrorInvalidHashMemoryCost =>
-      'The hash memory cost is invalid.';
+      '[HU] The hash memory cost is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The hash parallelization is invalid.';
+      '[HU] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => 'The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[HU] The hash rounds value is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The hash salt separator is invalid.';
+      '[HU] The hash salt separator is invalid.';
 
   @override
   String get authErrorInvalidLastSignInTime =>
-      'The last sign-in time is invalid.';
+      '[HU] The last sign-in time is invalid.';
 
   @override
-  String get authErrorInvalidPageToken => 'The page token is invalid.';
+  String get authErrorInvalidPageToken => '[HU] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => 'The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[HU] The provider data is invalid.';
 
   @override
-  String get authErrorInvalidProviderId => 'The provider ID is invalid.';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'The session cookie duration is invalid.';
-
-  @override
-  String get authErrorInvalidUid => 'The UID is invalid.';
-
-  @override
-  String get authErrorInvalidUserImport => 'The user import record is invalid.';
+  String get authErrorInvalidProviderId => '[HU] The provider ID is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Maximum user import count exceeded.';
+      '[HU] The session cookie duration is invalid.';
 
   @override
-  String get authErrorMissingAndroidPkgName => 'Missing Android package name.';
+  String get authErrorInvalidUid => '[HU] The UID is invalid.';
 
   @override
-  String get authErrorMissingContinueUri => 'Missing continue URL.';
-
-  @override
-  String get authErrorMissingHashAlgorithm => 'Missing hash algorithm.';
-
-  @override
-  String get authErrorMissingIosBundleId => 'Missing iOS bundle ID.';
-
-  @override
-  String get authErrorMissingUid => 'Missing UID.';
+  String get authErrorInvalidUserImport =>
+      '[HU] The user import record is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Missing OAuth client secret.';
+      '[HU] Maximum user import count exceeded.';
 
   @override
-  String get authErrorProjectNotFound => 'Firebase project not found.';
+  String get authErrorMissingAndroidPkgName =>
+      '[HU] Missing Android package name.';
 
   @override
-  String get authErrorReservedClaims => 'Reserved claims provided.';
+  String get authErrorMissingContinueUri => '[HU] Missing continue URL.';
 
   @override
-  String get authErrorSessionCookieExpired => 'Session cookie has expired.';
+  String get authErrorMissingHashAlgorithm => '[HU] Missing hash algorithm.';
+
+  @override
+  String get authErrorMissingIosBundleId => '[HU] Missing iOS bundle ID.';
+
+  @override
+  String get authErrorMissingUid => '[HU] Missing UID.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      '[HU] Missing OAuth client secret.';
+
+  @override
+  String get authErrorProjectNotFound => '[HU] Firebase project not found.';
+
+  @override
+  String get authErrorReservedClaims => '[HU] Reserved claims provided.';
+
+  @override
+  String get authErrorSessionCookieExpired =>
+      '[HU] Session cookie has expired.';
 
   @override
   String get authErrorSessionCookieRevoked =>
-      'Session cookie has been revoked.';
+      '[HU] Session cookie has been revoked.';
 
   @override
-  String get authErrorUidAlreadyExists => 'The UID is already in use.';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'The continue URL domain is not whitelisted.';
-
-  @override
-  String get authErrorUnknown => 'An unknown authentication error occurred.';
-
-  @override
-  String get checkingPermissions1 => 'Checking permissions...';
-
-  @override
-  String get paymentSuccessful => 'Payment Successful!';
-
-  @override
-  String get businessAvailability => 'Business Availability';
-
-  @override
-  String get send => 'Send';
-
-  @override
-  String newNotificationPayloadtitle(Object payloadTitle) {
-    return 'New notification: $payloadTitle';
-  }
-
-  @override
-  String get gameList => 'Game List';
-
-  @override
-  String get deleteAvailability => 'Delete Availability';
-
-  @override
-  String get connectToGoogleCalendar => 'Connect to Google Calendar';
-
-  @override
-  String get adminFreeAccess => 'Admin Free Access';
-
-  @override
-  String emailProfileemail(Object profileEmail) {
-    return 'Email: $profileEmail';
-  }
-
-  @override
-  String get calendar => 'Calendar';
-
-  @override
-  String get upload1 => 'Upload';
-
-  @override
-  String get resolved => 'Resolved';
-
-  @override
-  String get keepSubscription => 'Keep Subscription';
+  String get authErrorUidAlreadyExists => '[HU] The UID is already in use.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Virtual session created! Inviting friends...';
+      '[HU] The continue URL domain is not whitelisted.';
 
   @override
-  String get noEventsScheduledForToday => 'No events scheduled for today';
+  String get authErrorUnknown =>
+      '[HU] An unknown authentication error occurred.';
 
   @override
-  String get exportData => 'Export Data';
+  String get checkingPermissions1 => 'فحص الأذونات...';
 
   @override
-  String get rewards => 'Rewards';
+  String get paymentSuccessful => 'تم الدفع بنجاح';
 
   @override
-  String get time => 'Time';
+  String get businessAvailability => 'توفر الأعمال';
 
   @override
-  String userCid(Object id) {
-    return 'User $id';
+  String get send => 'إرسال';
+
+  @override
+  String newNotificationPayloadtitle(Object payloadTitle, Object title) {
+    return 'عنوان الإشعار الجديد: $title';
   }
 
   @override
-  String get noSlots => 'No slots';
+  String get gameList => 'قائمة الألعاب';
 
   @override
-  String get signIn => 'Sign In';
+  String get deleteAvailability => 'حذف التوفر';
 
   @override
-  String get homeFeedScreen => 'Home Feed Screen';
+  String get connectToGoogleCalendar => 'الاتصال بتقويم Google';
 
   @override
-  String get selectLocation => 'Select Location';
+  String get adminFreeAccess => '[HU] Admin Free Access';
 
   @override
-  String get noTicketsYet => 'No tickets yet';
+  String emailProfileemail(Object email, Object profileEmail) {
+    return 'البريد الإلكتروني للملف الشخصي: $email';
+  }
 
   @override
-  String get meetingSharedSuccessfully1 => 'Meeting shared successfully!';
+  String get calendar => 'التقويم';
 
   @override
-  String get studioProfile => 'Studio Profile';
+  String get upload1 => '[HU] Upload (Hungarian)';
 
   @override
-  String get subscriptionUnavailable => 'Subscription unavailable';
+  String get resolved => 'تم الحل';
 
   @override
-  String get confirmBooking => 'Confirm Booking';
+  String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get failedToUpdatePermissionE => 'Failed to update permission: \$e';
+  String get REDACTED_TOKEN =>
+      '[HU] Virtual session created! Inviting friends... (Hungarian)';
 
   @override
-  String get reject => 'Reject';
+  String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
+
+  @override
+  String get exportData => 'تصدير البيانات';
+
+  @override
+  String get rewards => '[HU] Rewards (Hungarian)';
+
+  @override
+  String get time => '[HU] Time (Hungarian)';
+
+  @override
+  String userCid(Object cid, Object id) {
+    return '[HU] User $id';
+  }
+
+  @override
+  String get noSlots => '[HU] No slots (Hungarian)';
+
+  @override
+  String get signIn => '[HU] Sign In (Hungarian)';
+
+  @override
+  String get homeFeedScreen => '[HU] Home Feed Screen (Hungarian)';
+
+  @override
+  String get selectLocation => '[HU] Select Location (Hungarian)';
+
+  @override
+  String get noTicketsYet => '[HU] No tickets yet (Hungarian)';
+
+  @override
+  String get meetingSharedSuccessfully1 => 'تم مشاركة الاجتماع بنجاح';
+
+  @override
+  String get studioProfile => 'ملف الاستوديو';
+
+  @override
+  String get subscriptionUnavailable =>
+      '[HU] Subscription unavailable (Hungarian)';
+
+  @override
+  String get confirmBooking => '[HU] Confirm Booking (Hungarian)';
+
+  @override
+  String get failedToUpdatePermissionE =>
+      '[HU] Failed to update permission: \$e (Hungarian)';
+
+  @override
+  String get reject => '[HU] Reject (Hungarian)';
 
   @override
   String REDACTED_TOKEN(Object ambassadorStatus) {
-    return 'Ambassador Status: $ambassadorStatus';
+    return '[HU] Ambassador Status: $ambassadorStatus (Hungarian)';
   }
 
   @override
-  String get noProviders => 'No providers';
+  String get noProviders => '[HU] No providers';
 
   @override
-  String get checkingSubscription => 'Checking subscription...';
+  String get checkingSubscription =>
+      '[HU] Checking subscription... (Hungarian)';
 
   @override
-  String get errorPickingImageE => 'Error picking image: \$e';
+  String errorPickingImageE(Object e) {
+    return 'خطأ في اختيار الصورة: $e';
+  }
 
   @override
-  String get noContentAvailableYet => 'No content available yet';
+  String get noContentAvailableYet =>
+      '[HU] No content available yet (Hungarian)';
 
   @override
-  String get resolve => 'Resolve';
+  String get resolve => '[HU] Resolve (Hungarian)';
 
   @override
-  String get errorLoadingSurveysError => 'Error loading surveys: \$error';
+  String get errorLoadingSurveysError =>
+      '[HU] Error loading surveys: \$error (Hungarian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
-    return 'Error: $errorMessage';
+    return '[HU] Error: $errorMessage';
   }
 
   @override
-  String get getHelpWithYourAccount => 'Get help with your account';
+  String get getHelpWithYourAccount =>
+      '[HU] Get help with your account (Hungarian)';
 
   @override
-  String get pay => 'Pay';
+  String get pay => '[HU] Pay (Hungarian)';
 
   @override
-  String get noOrganizations => 'noOrganizations (TRANSLATE)';
+  String get noOrganizations => '[HU] noOrganizations (TRANSLATE)';
 
   @override
-  String get meetingDetails => 'meetingDetails (TRANSLATE)';
+  String get meetingDetails => 'تفاصيل الاجتماع';
 
   @override
-  String get errorLoadingAppointments => 'Error loading appointments';
+  String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => 'Changes saved successfully!';
+  String get changesSavedSuccessfully =>
+      '[HU] Changes saved successfully! (Hungarian)';
 
   @override
-  String get createNewInvoice => 'Create New Invoice';
+  String get createNewInvoice => '[HU] Create New Invoice (Hungarian)';
 
   @override
-  String get profileNotFound => 'Profile not found.';
+  String get profileNotFound => 'الملف الشخصي غير موجود';
 
   @override
-  String get errorConfirmingPaymentE => 'Error confirming payment: \$e';
+  String errorConfirmingPaymentE(Object e) {
+    return 'خطأ في تأكيد الدفع: $e';
+  }
 
   @override
-  String get inviteFriends => 'Invite Friends';
+  String get inviteFriends => 'دعوة الأصدقاء';
 
   @override
-  String get profileSaved => 'Profile saved!';
+  String get profileSaved => '[HU] Profile saved! (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Receive booking notifications via email';
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
-  String valuetointk(Object value) {
-    return '\\\$${value}K';
+  String valuetointk(Object k, Object value) {
+    return '[HU] \\\$${value}K (Hungarian)';
   }
 
   @override
-  String get deleteAccount => 'Delete Account';
+  String get deleteAccount => '[HU] Delete Account (Hungarian)';
 
   @override
-  String get profile1 => 'Profile';
+  String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding => 'Business Onboarding';
+  String get businessOnboarding => '[HU] Business Onboarding (Hungarian)';
 
   @override
-  String get addNewClient => 'Add New Client';
+  String get addNewClient => '[HU] Add New Client (Hungarian)';
 
   @override
-  String get darkMode => 'Dark Mode';
+  String get darkMode => '[HU] Dark Mode (Hungarian)';
 
   @override
-  String get addProvider => 'Add Provider';
+  String get addProvider => '[HU] Add Provider';
 
   @override
   String noRouteDefinedForStateuripath(Object path) {
-    return 'No route defined for $path';
+    return '[HU] No route defined for $path';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'You will receive a confirmation email shortly.';
+      '[HU] You will receive a confirmation email shortly. (Hungarian)';
 
   @override
-  String get addQuestion => 'Add Question';
+  String get addQuestion => '[HU] Add Question (Hungarian)';
 
   @override
-  String get privacyPolicy => 'Privacy Policy';
+  String get privacyPolicy => '[HU] Privacy Policy (Hungarian)';
 
   @override
   String branchesLengthBranches(Object branchCount) {
-    return '$branchCount branches';
+    return '[HU] $branchCount branches (Hungarian)';
   }
 
   @override
-  String get join => 'Join';
+  String get join => '[HU] Join (Hungarian)';
 
   @override
-  String get businessSubscription => 'Business Subscription';
+  String get businessSubscription => '[HU] Business Subscription (Hungarian)';
 
   @override
-  String get myInvites1 => 'My Invites';
+  String get myInvites1 => 'دعواتي';
 
   @override
-  String get providers => 'Providers';
+  String get providers => '[HU] Providers';
 
   @override
-  String get surveyManagement => 'Survey Management';
+  String get surveyManagement => '[HU] Survey Management (Hungarian)';
 
   @override
   String get pleaseEnterAValidEmailOrPhone =>
-      'Please enter a valid email or phone';
+      '[HU] Please enter a valid email or phone';
 
   @override
   String get noRoomsFoundAddYourFirstRoom =>
-      'No rooms found. Add your first room!';
+      '[HU] No rooms found. Add your first room! (Hungarian)';
 
   @override
-  String get readOurPrivacyPolicy => 'Read our privacy policy';
+  String get readOurPrivacyPolicy => '[HU] Read our privacy policy (Hungarian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => 'Could not open privacy policy';
+  String get couldNotOpenPrivacyPolicy =>
+      '[HU] Could not open privacy policy (Hungarian)';
 
   @override
-  String get refresh1 => 'Refresh';
+  String get refresh1 => '[HU] Refresh (Hungarian)';
 
   @override
-  String get roomUpdatedSuccessfully => 'Room updated successfully!';
+  String get roomUpdatedSuccessfully =>
+      '[HU] Room updated successfully! (Hungarian)';
 
   @override
-  String get contentDetail => 'Content Detail';
+  String get contentDetail => '[HU] Content Detail (Hungarian)';
 
   @override
-  String get cancelSubscription => 'Cancel Subscription';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Successfully registered as Ambassador!';
-
-  @override
-  String get save1 => 'Save';
-
-  @override
-  String get copy1 => 'Copy';
-
-  @override
-  String get failedToSendInvitationE => 'Failed to send invitation: \$e';
-
-  @override
-  String get surveyScore => 'Survey Score';
-
-  @override
-  String get userUserid => 'User \$userId';
-
-  @override
-  String get noAppointmentsFound => 'No appointments found.';
-
-  @override
-  String get responseDetail => 'Response Detail';
+  String get cancelSubscription => '[HU] Cancel Subscription (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Verification Screen - Coming Soon';
+      '[HU] Successfully registered as Ambassador! (Hungarian)';
+
+  @override
+  String get save1 => '[HU] Save (Hungarian)';
+
+  @override
+  String get copy1 => '[HU] Copy (Hungarian)';
+
+  @override
+  String get failedToSendInvitationE =>
+      '[HU] Failed to send invitation: \$e (Hungarian)';
+
+  @override
+  String get surveyScore => '[HU] Survey Score (Hungarian)';
+
+  @override
+  String userUserid(Object userId) {
+    return '[HU] User \$userId';
+  }
+
+  @override
+  String get noAppointmentsFound => '[HU] No appointments found. (Hungarian)';
+
+  @override
+  String get responseDetail => '[HU] Response Detail (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business profile activated successfully!';
+      'شاشة التحقق من الأعمال - قريباً';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
   String get failedToStartProSubscriptionE =>
-      'Failed to start Pro subscription: \$e';
+      '[HU] Failed to start Pro subscription: \$e (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Dashboard Entry Screen - Coming Soon';
+      '[HU] Business Dashboard Entry Screen - Coming Soon (Hungarian)';
 
   @override
-  String get contentFilter => 'Content Filter';
+  String get contentFilter => '[HU] Content Filter (Hungarian)';
 
   @override
-  String get helpSupport => 'Help & Support';
+  String get helpSupport => '[HU] Help & Support (Hungarian)';
 
   @override
-  String get editRoom => 'Edit Room';
+  String get editRoom => '[HU] Edit Room (Hungarian)';
 
   @override
   String appointmentApptid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return '[HU] Appointment: $appointmentId';
   }
 
   @override
   String deviceLogdeviceinfo(Object deviceInfo) {
-    return 'Device: $deviceInfo';
+    return '[HU] Device: $deviceInfo';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Business CRM Entry Screen - Coming Soon';
+      '[HU] Business CRM Entry Screen - Coming Soon (Hungarian)';
 
   @override
-  String get adminDashboard => 'Admin Dashboard';
+  String get adminDashboard => '[HU] Admin Dashboard';
 
   @override
   String orgmemberidslengthMembers(Object memberCount) {
-    return '$memberCount members';
+    return '[HU] $memberCount members';
   }
 
   @override
-  String get errorLoadingDashboardError => 'Error loading dashboard: \$error';
+  String get errorLoadingDashboardError =>
+      '[HU] Error loading dashboard: \$error (Hungarian)';
 
   @override
-  String get gameDeletedSuccessfully => 'Game deleted successfully!';
+  String get gameDeletedSuccessfully =>
+      '[HU] Game deleted successfully! (Hungarian)';
 
   @override
-  String get viewResponsesComingSoon => 'View responses - Coming soon!';
+  String get viewResponsesComingSoon =>
+      '[HU] View responses - Coming soon! (Hungarian)';
 
   @override
-  String get deleteProvider => 'Delete Provider';
+  String get deleteProvider => '[HU] Delete Provider';
 
   @override
-  String get errorLoadingRewards => 'Error loading rewards';
+  String get errorLoadingRewards => '[HU] Error loading rewards (Hungarian)';
 
   @override
-  String get failedToDeleteAccountE => 'Failed to delete account: \$e';
+  String get failedToDeleteAccountE =>
+      '[HU] Failed to delete account: \$e (Hungarian)';
 
   @override
-  String get invited1 => 'Invited';
+  String get invited1 => '[HU] Invited (Hungarian)';
 
   @override
-  String get noBranchesAvailable => 'No branches available';
+  String get noBranchesAvailable => '[HU] No branches available (Hungarian)';
 
   @override
-  String get errorError => 'Error: \$error';
+  String get errorError => '[HU] Error: \$error (Hungarian)';
 
   @override
-  String get noEvents => 'No events';
+  String get noEvents => '[HU] No events (Hungarian)';
 
   @override
-  String get gameCreatedSuccessfully => 'Game created successfully!';
+  String get gameCreatedSuccessfully =>
+      '[HU] Game created successfully! (Hungarian)';
 
   @override
-  String get add1 => 'Add';
+  String get add1 => '[HU] Add (Hungarian)';
 
   @override
-  String get creatorCreatorid => 'Creator: \$creatorId';
+  String get creatorCreatorid => '[HU] Creator: \$creatorId';
 
   @override
   String eventstarttimeEventendtime(Object endTime, Object startTime) {
-    return '$startTime - $endTime';
+    return '[HU] $startTime - $endTime (Hungarian)';
   }
 
   @override
-  String get allowPlaytime => 'Allow Playtime';
+  String get allowPlaytime => '[HU] Allow Playtime (Hungarian)';
 
   @override
-  String get clients => 'Clients';
+  String get clients => '[HU] Clients (Hungarian)';
 
   @override
-  String get noAmbassadorDataAvailable => 'No ambassador data available';
+  String get noAmbassadorDataAvailable =>
+      '[HU] No ambassador data available (Hungarian)';
 
   @override
   String get backgroundDeletedSuccessfully =>
-      'Background deleted successfully!';
+      '[HU] Background deleted successfully! (Hungarian)';
 
   @override
   String errorSnapshoterror(Object error) {
-    return 'Error: $error';
+    return '[HU] Error: $error (Hungarian)';
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => 'No analytics data available yet.';
+  String get noAnalyticsDataAvailableYet =>
+      '[HU] No analytics data available yet. (Hungarian)';
 
   @override
-  String get errorDeletingSlotE => 'Error deleting slot: \$e';
+  String errorDeletingSlotE(Object e) {
+    return 'خطأ في حذف الفترة: $e';
+  }
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Phone Booking Entry Screen - Coming Soon';
+      '[HU] Business Phone Booking Entry Screen - Coming Soon (Hungarian)';
 
   @override
-  String get verification => 'Verification';
+  String get verification => '[HU] Verification (Hungarian)';
 
   @override
-  String get copyLink => 'Copy Link';
+  String get copyLink => '[HU] Copy Link (Hungarian)';
 
   @override
-  String get dashboard1 => 'Dashboard';
+  String get dashboard1 => '[HU] Dashboard (Hungarian)';
 
   @override
-  String get manageChildAccounts => 'Manage Child Accounts';
+  String get manageChildAccounts => '[HU] Manage Child Accounts (Hungarian)';
 
   @override
-  String get grantConsent => 'Grant Consent';
+  String get grantConsent => '[HU] Grant Consent (Hungarian)';
 
   @override
-  String get myProfile1 => 'My Profile';
+  String get myProfile1 => '[HU] My Profile (Hungarian)';
 
   @override
-  String get submit => 'Submit';
+  String get submit => '[HU] Submit (Hungarian)';
 
   @override
   String userLoguseremail(Object userEmail) {
-    return 'User: $userEmail';
+    return '[HU] User: $userEmail';
   }
 
   @override
-  String get emailNotifications => 'Email Notifications';
+  String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard => 'Ambassador Dashboard';
+  String get ambassadorDashboard => '[HU] Ambassador Dashboard (Hungarian)';
 
   @override
-  String get phoneBooking => 'Phone Booking';
+  String get phoneBooking => '[HU] Phone Booking (Hungarian)';
 
   @override
-  String get bookViaChat => 'Book via Chat';
+  String get bookViaChat => '[HU] Book via Chat (Hungarian)';
 
   @override
-  String get error => 'Hiba';
+  String get error => '[HU] Hiba';
 
   @override
-  String get businessProfile => 'Business Profile';
+  String get businessProfile => '[HU] Business Profile (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Booking Entry Screen - Coming Soon';
+      '[HU] Business Booking Entry Screen - Coming Soon (Hungarian)';
 
   @override
-  String get createNewSurvey => 'Create New Survey';
+  String get createNewSurvey => '[HU] Create New Survey (Hungarian)';
 
   @override
-  String get backgroundRejected => 'Background rejected';
+  String get backgroundRejected => '[HU] Background rejected (Hungarian)';
 
   @override
-  String get noMediaSelected => 'No media selected';
+  String get noMediaSelected => '[HU] No media selected (Hungarian)';
 
   @override
-  String get syncToGoogle => 'Sync to Google';
+  String get syncToGoogle => '[HU] Sync to Google (Hungarian)';
 
   @override
-  String get virtualPlaytime => 'Virtual Playtime';
+  String get virtualPlaytime => '[HU] Virtual Playtime (Hungarian)';
 
   @override
-  String get colorContrastTesting => 'Color Contrast Testing';
+  String get colorContrastTesting => '[HU] Color Contrast Testing';
 
   @override
-  String get loginFailedE => 'Login failed: \$e';
+  String get loginFailedE => '[HU] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => 'Invitation sent successfully!';
+  String get invitationSentSuccessfully =>
+      '[HU] Invitation sent successfully! (Hungarian)';
 
   @override
-  String get registering => 'Registering...';
+  String get registering => '[HU] Registering... (Hungarian)';
 
   @override
   String statusAppointmentstatusname(Object status) {
-    return 'Status: $status';
+    return '[HU] Status: $status (Hungarian)';
   }
 
   @override
-  String get home1 => 'Home';
+  String get home1 => '[HU] Home (Hungarian)';
 
   @override
-  String get errorSavingSettingsE => 'Error saving settings: \$e';
+  String get errorSavingSettingsE =>
+      '[HU] Error saving settings: \$e (Hungarian)';
 
   @override
-  String get appVersionAndInformation => 'App version and information';
+  String get appVersionAndInformation =>
+      '[HU] App version and information (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Subscription Entry Screen - Coming Soon';
+      '[HU] Business Subscription Entry Screen - Coming Soon (Hungarian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
-    return '$key: $value';
+    return '[HU] $key: $value (Hungarian)';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Your payment has been processed successfully.';
+      '[HU] Your payment has been processed successfully. (Hungarian)';
 
   @override
-  String get errorE => 'Error: \$e';
+  String get errorE => '[HU] Error: \$e (Hungarian)';
 
   @override
-  String get viewAll1 => 'View All';
+  String get viewAll1 => '[HU] View All (Hungarian)';
 
   @override
-  String get editSurveyComingSoon => 'Edit survey - Coming soon!';
+  String get editSurveyComingSoon =>
+      '[HU] Edit survey - Coming soon! (Hungarian)';
 
   @override
-  String get enterOtp => 'Enter OTP';
+  String get enterOtp => '[HU] Enter OTP (Hungarian)';
 
   @override
-  String get payment => 'Payment';
+  String get payment => '[HU] Payment (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Automatically confirm new booking requests';
+      '[HU] Automatically confirm new booking requests (Hungarian)';
 
   @override
-  String get errorPickingVideoE => 'Error picking video: \$e';
+  String errorPickingVideoE(Object e) {
+    return 'خطأ في اختيار الفيديو: $e';
+  }
 
   @override
   String noRouteDefinedForSettingsname(Object settingsName) {
-    return 'No route defined for $settingsName';
+    return '[HU] No route defined for $settingsName (Hungarian)';
   }
 
   @override
   String get pleaseSignInToUploadABackground =>
-      'Please sign in to upload a background';
+      '[HU] Please sign in to upload a background (Hungarian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
-    return '$targetType: $targetId';
+    return '[HU] $targetType: $targetId';
   }
 
   @override
-  String get staffAvailability => 'Staff Availability';
+  String get staffAvailability => '[HU] Staff Availability (Hungarian)';
 
   @override
-  String get livePlaytime => 'Live Playtime';
+  String get livePlaytime => '[HU] Live Playtime (Hungarian)';
 
   @override
-  String get autoconfirmBookings => 'Auto-Confirm Bookings';
+  String get autoconfirmBookings => '[HU] Auto-Confirm Bookings (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Redirecting to Stripe checkout for Pro plan...';
+      '[HU] Redirecting to Stripe checkout for Pro plan... (Hungarian)';
 
   @override
-  String get exportAsCsv => 'Export as CSV';
+  String get exportAsCsv => '[HU] Export as CSV (Hungarian)';
 
   @override
   String get deleteFunctionalityComingSoon =>
-      'Delete functionality coming soon!';
+      '[HU] Delete functionality coming soon! (Hungarian)';
 
   @override
-  String get editClient => 'Edit Client';
+  String get editClient => '[HU] Edit Client (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to delete this message?';
+      '[HU] Are you sure you want to delete this message? (Hungarian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
-    return 'Referrals: $referrals';
+    return '[HU] Referrals: $referrals (Hungarian)';
   }
 
   @override
-  String get notAuthenticated => 'Not authenticated';
+  String get notAuthenticated => '[HU] Not authenticated';
 
   @override
   String get privacyRequestSentToYourParents =>
-      'Privacy request sent to your parents!';
+      '[HU] Privacy request sent to your parents! (Hungarian)';
 
   @override
-  String get clientDeletedSuccessfully => 'Client deleted successfully!';
+  String get clientDeletedSuccessfully =>
+      '[HU] Client deleted successfully! (Hungarian)';
 
   @override
-  String get failedToCancelSubscription => 'Failed to cancel subscription';
+  String get failedToCancelSubscription =>
+      '[HU] Failed to cancel subscription (Hungarian)';
 
   @override
-  String get allLanguages => 'All Languages';
+  String get allLanguages => '[HU] All Languages (Hungarian)';
 
   @override
-  String get slotDeletedSuccessfully => 'Slot deleted successfully';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Business Providers Entry Screen - Coming Soon';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Parents must approve before children can join';
-
-  @override
-  String get subscribeToPro1499mo => 'Subscribe to Pro (€14.99/mo)';
+  String get slotDeletedSuccessfully =>
+      '[HU] Slot deleted successfully (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Availability Entry Screen - Coming Soon';
+      '[HU] Business Providers Entry Screen - Coming Soon';
+
+  @override
+  String get REDACTED_TOKEN =>
+      '[HU] Parents must approve before children can join (Hungarian)';
+
+  @override
+  String get subscribeToPro1499mo =>
+      '[HU] Subscribe to Pro (€14.99/mo) (Hungarian)';
+
+  @override
+  String get REDACTED_TOKEN =>
+      '[HU] Business Availability Entry Screen - Coming Soon (Hungarian)';
 
   @override
   String appointmentsListlength(Object count) {
-    return 'Appointments: $count';
+    return '[HU] Appointments: $count (Hungarian)';
   }
 
   @override
-  String get clearFilters => 'Clear Filters';
+  String get clearFilters => '[HU] Clear Filters (Hungarian)';
 
   @override
-  String get submitBooking => 'Submit Booking';
+  String get submitBooking => '[HU] Submit Booking (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to cancel this appointment?';
+      '[HU] Are you sure you want to cancel this appointment? (Hungarian)';
 
   @override
-  String get noUpcomingBookings => 'No upcoming bookings';
+  String get noUpcomingBookings => '[HU] No upcoming bookings (Hungarian)';
 
   @override
-  String get goBack => 'Go Back';
+  String get goBack => '[HU] Go Back (Hungarian)';
 
   @override
-  String get setup => 'Setup';
+  String get setup => '[HU] Setup (Hungarian)';
 
   @override
-  String get inviteChild => 'Invite Child';
+  String get inviteChild => '[HU] Invite Child (Hungarian)';
 
   @override
-  String get goToDashboard => 'Go to Dashboard';
+  String get goToDashboard => '[HU] Go to Dashboard (Hungarian)';
 
   @override
-  String get ambassadorQuotaDashboard => 'Ambassador Quota Dashboard';
+  String get ambassadorQuotaDashboard =>
+      '[HU] Ambassador Quota Dashboard (Hungarian)';
 
   @override
-  String get adminSettings => 'Admin Settings';
+  String get adminSettings => '[HU] Admin Settings';
 
   @override
-  String get referralCode => 'Referral Code';
+  String get referralCode => '[HU] Referral Code (Hungarian)';
 
   @override
   String adminLogadminemail(Object adminEmail) {
-    return 'Admin: $adminEmail';
+    return '[HU] Admin: $adminEmail';
   }
 
   @override
-  String get date => 'Date';
+  String get date => '[HU] Date (Hungarian)';
 
   @override
-  String get readOnly => 'Read Only';
+  String get readOnly => '[HU] Read Only (Hungarian)';
 
   @override
-  String get bookingRequest => 'Booking Request';
+  String get bookingRequest => '[HU] Booking Request (Hungarian)';
 
   @override
-  String get advancedReporting => '• Advanced reporting';
+  String get advancedReporting => '[HU] • Advanced reporting (Hungarian)';
 
   @override
-  String get rooms => 'Rooms';
+  String get rooms => '[HU] Rooms (Hungarian)';
 
   @override
-  String get copiedToClipboard => 'Copied to clipboard';
+  String get copiedToClipboard => '[HU] Copied to clipboard (Hungarian)';
 
   @override
-  String get bookingConfirmed => 'Booking Confirmed';
+  String get bookingConfirmed => '[HU] Booking Confirmed (Hungarian)';
 
   @override
-  String get sessionApproved => 'Session approved!';
+  String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => 'Client added successfully!';
+  String get clientAddedSuccessfully =>
+      '[HU] Client added successfully! (Hungarian)';
 
   @override
-  String get noNotifications => 'No notifications';
+  String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved => 'Background approved!';
+  String get backgroundApproved => '[HU] Background approved! (Hungarian)';
 
   @override
-  String get familySupport => 'Family Support';
+  String get familySupport => '[HU] Family Support (Hungarian)';
 
   @override
-  String get deletingAccount => 'Deleting account...';
+  String get deletingAccount => '[HU] Deleting account... (Hungarian)';
 
   @override
-  String get bookAppointment => 'Book Appointment';
+  String get bookAppointment => '[HU] Book Appointment (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Receive push notifications for new bookings';
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
-  String get delete1 => 'Delete';
+  String get delete1 => '[HU] Delete (Hungarian)';
 
   @override
-  String get sendBookingInvite => 'Send Booking Invite';
+  String get sendBookingInvite => '[HU] Send Booking Invite (Hungarian)';
 
   @override
-  String get text => 'Text';
+  String get text => '[HU] Text (Hungarian)';
 
   @override
-  String get manageSubscription => 'Manage Subscription';
+  String get manageSubscription => '[HU] Manage Subscription (Hungarian)';
 
   @override
-  String get requiresInstallFallback => 'Requires Install Fallback';
+  String get requiresInstallFallback =>
+      '[HU] Requires Install Fallback (Hungarian)';
 
   @override
-  String get paymentConfirmation => 'Payment Confirmation';
+  String get paymentConfirmation => '[HU] Payment Confirmation (Hungarian)';
 
   @override
   String get promoAppliedYourNextBillIsFree =>
-      'Promo applied! Your next bill is free.';
+      '[HU] Promo applied! Your next bill is free. (Hungarian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
-    return 'Invitee: $inviteeId';
+    return 'المدعو: $inviteeId';
   }
 
   @override
-  String get errorLoadingSlots => 'Error loading slots';
+  String get errorLoadingSlots => '[HU] Error loading slots (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Allow other users to find and join this game';
+      '[HU] Allow other users to find and join this game (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Onboarding Screen - Coming Soon';
+      '[HU] Business Onboarding Screen - Coming Soon (Hungarian)';
 
   @override
-  String get activateBusinessProfile => 'Activate Business Profile';
+  String get activateBusinessProfile =>
+      '[HU] Activate Business Profile (Hungarian)';
 
   @override
-  String get contentNotFound => 'Content not found';
+  String get contentNotFound => '[HU] Content not found (Hungarian)';
 
   @override
   String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
-    return '$specialty\\n$contactInfo';
+    return '[HU] $specialty\\n$contactInfo (Hungarian)';
   }
 
   @override
-  String get rating => 'Rating';
+  String get rating => '[HU] Rating (Hungarian)';
 
   @override
-  String get messages => 'Messages';
+  String get messages => '[HU] Messages (Hungarian)';
 
   @override
-  String get errorEstimatingRecipientsE => 'Error estimating recipients: \$e';
+  String errorEstimatingRecipientsE(Object e) {
+    return 'خطأ في تقدير المستلمين: $e';
+  }
 
   @override
-  String get becomeAnAmbassador => 'Become an Ambassador';
+  String get becomeAnAmbassador => '[HU] Become an Ambassador (Hungarian)';
 
   @override
-  String get subscribeNow => 'Subscribe Now';
+  String get subscribeNow => '[HU] Subscribe Now (Hungarian)';
 
   @override
   String timeArgsslotformatcontext(Object time) {
-    return 'Time: $time';
+    return '[HU] Time: $time (Hungarian)';
   }
 
   @override
-  String get shareViaWhatsapp => 'Share via WhatsApp';
+  String get shareViaWhatsapp => '[HU] Share via WhatsApp (Hungarian)';
 
   @override
-  String get users1 => 'Users';
+  String get users1 => '[HU] Users (Hungarian)';
 
   @override
-  String get shareLink => 'Share Link';
+  String get shareLink => '[HU] Share Link (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to delete this provider?';
+      '[HU] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment => 'Delete Appointment';
+  String get deleteAppointment => '[HU] Delete Appointment (Hungarian)';
 
   @override
-  String get toggleAvailability => 'Toggle Availability';
+  String get toggleAvailability => '[HU] Toggle Availability (Hungarian)';
 
   @override
-  String get changePlan => 'Change Plan';
+  String get changePlan => '[HU] Change Plan (Hungarian)';
 
   @override
-  String get errorLoadingStaff => 'Error loading staff';
+  String get errorLoadingStaff => '[HU] Error loading staff (Hungarian)';
 
   @override
-  String get errorLoadingConfigurationE => 'Error loading configuration: \$e';
+  String errorLoadingConfigurationE(Object e) {
+    return 'خطأ في تحميل التكوين: $e';
+  }
 
   @override
   String get updateYourBusinessInformation =>
-      'Update your business information';
+      '[HU] Update your business information (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'No providers found. Add your first provider!';
+      '[HU] No providers found. Add your first provider!';
 
   @override
-  String get parentDashboard => 'Parent Dashboard';
+  String get parentDashboard => '[HU] Parent Dashboard (Hungarian)';
 
   @override
-  String get menu => 'Menu';
+  String get menu => '[HU] Menu (Hungarian)';
 
   @override
-  String get studioBooking => 'Studio Booking';
+  String get studioBooking => '[HU] Studio Booking (Hungarian)';
 
   @override
-  String get about1 => 'About';
+  String get about1 => '[HU] About (Hungarian)';
 
   @override
-  String get multipleChoice => 'Multiple Choice';
+  String get multipleChoice => '[HU] Multiple Choice (Hungarian)';
 
   @override
   String REDACTED_TOKEN(Object date) {
-    return 'Date: $date';
+    return '[HU] Date: $date (Hungarian)';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Studio booking is only available on web';
+      '[HU] Studio booking is only available on web (Hungarian)';
 
   @override
-  String get errorLoadingBranchesE => 'Error loading branches: \$e';
+  String get errorLoadingBranchesE =>
+      '[HU] Error loading branches: \$e (Hungarian)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
-    return '\\uD83D\\uDCC5 $dateTime';
+    return '[HU] \\uD83D\\uDCC5 $dateTime (Hungarian)';
   }
 
   @override
   String appointmentInviteappointmentid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return 'دعوة الموعد: $appointmentId';
   }
 
   @override
-  String get none => 'None';
+  String get none => '[HU] None (Hungarian)';
 
   @override
-  String get failedToUpdateConsentE => 'Failed to update consent: \$e';
+  String get failedToUpdateConsentE =>
+      '[HU] Failed to update consent: \$e (Hungarian)';
 
   @override
-  String get welcome1 => 'Welcome';
+  String get welcome1 => '[HU] Welcome (Hungarian)';
 
   @override
-  String get failedToCreateSessionE => 'Failed to create session: \$e';
+  String get failedToCreateSessionE =>
+      '[HU] Failed to create session: \$e (Hungarian)';
 
   @override
-  String get inviteContact => 'Invite Contact';
+  String get inviteContact => '[HU] Invite Contact (Hungarian)';
 
   @override
-  String get surveyEditor => 'Survey Editor';
+  String get surveyEditor => '[HU] Survey Editor (Hungarian)';
 
   @override
   String get failedToStartBasicSubscriptionE =>
-      'Failed to start Basic subscription: \$e';
+      '[HU] Failed to start Basic subscription: \$e (Hungarian)';
 
   @override
-  String get mySchedule => 'My Schedule';
+  String get mySchedule => '[HU] My Schedule (Hungarian)';
 
   @override
-  String get studioDashboard => 'Studio Dashboard';
+  String get studioDashboard => '[HU] Studio Dashboard (Hungarian)';
 
   @override
-  String get editProfile => 'Edit Profile';
+  String get editProfile => 'تحرير الملف الشخصي';
 
   @override
-  String get logout1 => 'Logout';
+  String get logout1 => '[HU] Logout';
 
   @override
   String serviceServiceidNotSelected(Object service) {
-    return 'Service: $service';
+    return '[HU] Service: $service';
   }
 
   @override
-  String get settingsSavedSuccessfully => 'Settings saved successfully!';
+  String get settingsSavedSuccessfully =>
+      '[HU] Settings saved successfully! (Hungarian)';
 
   @override
-  String get linkCopiedToClipboard => 'Link copied to clipboard!';
+  String get linkCopiedToClipboard =>
+      '[HU] Link copied to clipboard! (Hungarian)';
 
   @override
-  String get accept1 => 'Accept';
+  String get accept1 => '[HU] Accept (Hungarian)';
 
   @override
-  String get noAvailableSlots => 'No available slots';
+  String get noAvailableSlots => '[HU] No available slots (Hungarian)';
 
   @override
-  String get makeGamePublic => 'Make Game Public';
+  String get makeGamePublic => '[HU] Make Game Public (Hungarian)';
 
   @override
   String REDACTED_TOKEN(Object category) {
-    return 'Permission $category updated to \$newValue';
+    return '[HU] Permission $category updated to \$newValue (Hungarian)';
   }
 
   @override
-  String get roomDeletedSuccessfully => 'Room deleted successfully!';
+  String get roomDeletedSuccessfully =>
+      '[HU] Room deleted successfully! (Hungarian)';
 
   @override
-  String get businessCalendar => 'Business Calendar';
+  String get businessCalendar => '[HU] Business Calendar (Hungarian)';
 
   @override
-  String get addAvailability => 'Add Availability';
+  String get addAvailability => '[HU] Add Availability (Hungarian)';
 
   @override
-  String get ambassadorOnboarding => 'Ambassador Onboarding';
+  String get ambassadorOnboarding => '[HU] Ambassador Onboarding (Hungarian)';
 
   @override
   String phoneProfileasyncphone(Object phone) {
-    return 'Phone: $phone';
+    return '[HU] Phone: $phone (Hungarian)';
   }
 
   @override
-  String get addNewRoom => 'Add New Room';
+  String get addNewRoom => '[HU] Add New Room (Hungarian)';
 
   @override
-  String get requireParentApproval => 'Require Parent Approval';
+  String get requireParentApproval =>
+      '[HU] Require Parent Approval (Hungarian)';
 
   @override
-  String get closed => 'Closed';
+  String get closed => '[HU] Closed (Hungarian)';
 
   @override
-  String get exportAsPdf => 'Export as PDF';
+  String get exportAsPdf => '[HU] Export as PDF (Hungarian)';
 
   @override
-  String get enableVibration => 'Enable Vibration';
+  String get enableVibration => '[HU] Enable Vibration (Hungarian)';
 
   @override
   String toAvailendformatcontext(Object endTime) {
-    return 'To: $endTime';
+    return '[HU] To: $endTime (Hungarian)';
   }
 
   @override
-  String get yourUpgradeCodeUpgradecode => 'Your upgrade code: \$upgradeCode';
+  String yourUpgradeCodeUpgradecode(Object upgradeCode) {
+    return '[HU] Your upgrade code: \$upgradeCode (Hungarian)';
+  }
 
   @override
-  String get requestPrivateSession => 'requestPrivateSession (TRANSLATE)';
+  String get requestPrivateSession => '[HU] requestPrivateSession (TRANSLATE)';
 
   @override
-  String get country => 'Country';
+  String get country => '[HU] Country (Hungarian)';
 
   @override
-  String get loginScreen => 'Login Screen';
+  String get loginScreen => '[HU] Login Screen';
 
   @override
   String staffArgsstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[HU] Staff: $staffName (Hungarian)';
   }
 
   @override
-  String get revokeConsent => 'Revoke Consent';
+  String get revokeConsent => '[HU] Revoke Consent (Hungarian)';
 
   @override
-  String get settings1 => 'Settings';
+  String get settings1 => '[HU] Settings (Hungarian)';
 
   @override
-  String get cancel1 => 'Cancel';
+  String get cancel1 => '[HU] Cancel (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Subscription activated successfully!';
+      '[HU] Subscription activated successfully! (Hungarian)';
 
   @override
   String activityLogaction(Object action) {
-    return 'Activity: $action';
+    return '[HU] Activity: $action';
   }
 
   @override
-  String get broadcast => 'Broadcast';
+  String get broadcast => '[HU] Broadcast (Hungarian)';
 
   @override
-  String get noEventsScheduledThisWeek => 'No events scheduled this week';
+  String get noEventsScheduledThisWeek =>
+      '[HU] No events scheduled this week (Hungarian)';
 
   @override
-  String get googleCalendar => 'Google Calendar';
+  String get googleCalendar => '[HU] Google Calendar (Hungarian)';
 
   @override
-  String get sendInvite => 'Send Invite';
+  String get sendInvite => 'إرسال دعوة';
 
   @override
-  String get childDashboard => 'Child Dashboard';
+  String get childDashboard => '[HU] Child Dashboard (Hungarian)';
 
   @override
-  String get failedToUploadBackgroundE => 'Failed to upload background: \$e';
+  String get failedToUploadBackgroundE =>
+      '[HU] Failed to upload background: \$e (Hungarian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
-    return '$linkId...';
+    return '[HU] $linkId...';
   }
 
   @override
   String targetLogtargettypeLogtargetid(Object targetId, Object targetType) {
-    return 'Target: $targetType - $targetId';
+    return '[HU] Target: $targetType - $targetId';
   }
 
   @override
-  String get contextContextid => 'Context: \$contextId';
+  String get contextContextid => '[HU] Context: \$contextId';
 
   @override
-  String get noAppointments => 'No appointments';
+  String get noAppointments => '[HU] No appointments (Hungarian)';
 
   @override
-  String get unlimitedBookingsPerWeek => '• Unlimited bookings per week';
+  String get unlimitedBookingsPerWeek =>
+      '[HU] • Unlimited bookings per week (Hungarian)';
 
   @override
-  String errorDetailsLogerrortype(Object errorType) {
-    return 'Error Details: $errorType';
+  String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
+    return 'تفاصيل الخطأ: $logErrorType';
   }
 
   @override
-  String get scheduledAtScheduledat => 'Scheduled at: \$scheduledAt';
+  String get scheduledAtScheduledat =>
+      '[HU] Scheduled at: \$scheduledAt (Hungarian)';
 
   @override
-  String get selectStaff => 'Select Staff';
+  String get selectStaff => '[HU] Select Staff (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Subscription cancelled successfully';
+      '[HU] Subscription cancelled successfully (Hungarian)';
 
   @override
   String get pleaseLogInToViewYourProfile =>
-      'Please log in to view your profile.';
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment => 'Cancel Appointment';
+  String get cancelAppointment => '[HU] Cancel Appointment (Hungarian)';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
-    return 'Permissions - $childId';
+    return '[HU] Permissions - $childId';
   }
 
   @override
-  String get businessSignup => 'Business Signup';
+  String get businessSignup => '[HU] Business Signup (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Completion Screen - Coming Soon';
+      '[HU] Business Completion Screen - Coming Soon (Hungarian)';
 
   @override
-  String get createGame1 => 'Create Game';
+  String get createGame1 => '[HU] Create Game (Hungarian)';
 
   @override
   String valuetoint(Object value) {
-    return '$value';
+    return '[HU] $value (Hungarian)';
   }
 
   @override
-  String get pleaseEnterAPromoCode => 'Please enter a promo code';
+  String get pleaseEnterAPromoCode =>
+      '[HU] Please enter a promo code (Hungarian)';
 
   @override
-  String get errorLoadingAvailabilityE => 'Error loading availability: \$e';
+  String get errorLoadingAvailabilityE =>
+      '[HU] Error loading availability: \$e (Hungarian)';
 
   @override
-  String get parentalControls => 'Parental Controls';
+  String get parentalControls => '[HU] Parental Controls (Hungarian)';
 
   @override
-  String get editBusinessProfile => 'Edit Business Profile';
+  String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => 'Child linked successfully!';
+  String get childLinkedSuccessfully =>
+      '[HU] Child linked successfully! (Hungarian)';
 
   @override
-  String get create => 'Create';
+  String get create => '[HU] Create (Hungarian)';
 
   @override
-  String get noExternalMeetingsFound => 'No external meetings found.';
+  String get noExternalMeetingsFound =>
+      '[HU] No external meetings found. (Hungarian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[HU] Staff: $staffName (Hungarian)';
   }
 
   @override
   String get pleaseEnterAValidEmailAddress =>
-      'Please enter a valid email address';
+      '[HU] Please enter a valid email address';
 
   @override
-  String get schedulerScreen => 'Scheduler Screen';
+  String get schedulerScreen => '[HU] Scheduler Screen (Hungarian)';
 
   @override
-  String get clientUpdatedSuccessfully => 'Client updated successfully!';
+  String get clientUpdatedSuccessfully =>
+      '[HU] Client updated successfully! (Hungarian)';
 
   @override
-  String get surveyResponses => 'Survey Responses';
+  String get surveyResponses => '[HU] Survey Responses (Hungarian)';
 
   @override
-  String get syncToOutlook => 'Sync to Outlook';
+  String get syncToOutlook => '[HU] Sync to Outlook (Hungarian)';
 
   @override
-  String get saveChanges => 'Save Changes';
+  String get saveChanges => '[HU] Save Changes (Hungarian)';
 
   @override
-  String get pickTime => 'Pick Time';
+  String get pickTime => '[HU] Pick Time (Hungarian)';
 
   @override
   String registrationFailedEtostring(Object error) {
-    return 'Registration failed: $error';
+    return '[HU] Registration failed: $error (Hungarian)';
   }
 
   @override
-  String get analytics => 'Analytics';
+  String get analytics => '[HU] Analytics (Hungarian)';
 
   @override
-  String get errorLoadingEvents => 'Error loading events';
+  String get errorLoadingEvents => '[HU] Error loading events (Hungarian)';
 
   @override
   String get errorLoadingOrganizations =>
-      'errorLoadingOrganizations (TRANSLATE)';
+      '[HU] errorLoadingOrganizations (TRANSLATE)';
 
   @override
   String get businessLoginScreenComingSoon =>
-      'Business Login Screen - Coming Soon';
+      '[HU] Business Login Screen - Coming Soon';
 
   @override
-  String get success1 => 'Success';
+  String get success1 => '[HU] Success (Hungarian)';
 
   @override
   String appVersionLogappversion(Object appVersion) {
-    return 'App Version: $appVersion';
+    return '[HU] App Version: $appVersion';
   }
 
   @override
   String fromAvailstartformatcontext(Object startTime) {
-    return 'From: $startTime';
+    return '[HU] From: $startTime (Hungarian)';
   }
 
   @override
-  String get readWrite => 'Read & Write';
+  String get readWrite => '[HU] Read & Write (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Redirecting to Stripe checkout for Basic plan...';
+      '[HU] Redirecting to Stripe checkout for Basic plan... (Hungarian)';
 
   @override
-  String get errorSavingConfigurationE => 'Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[HU] Error saving configuration: \$e';
 
   @override
-  String get pickDate => 'Pick Date';
+  String get pickDate => '[HU] Pick Date (Hungarian)';
 
   @override
-  String get chatBooking => 'Chat Booking';
+  String get chatBooking => '[HU] Chat Booking (Hungarian)';
 
   @override
-  String get noQuestionsAdded => 'No questions added';
+  String get noQuestionsAdded => '[HU] No questions added (Hungarian)';
 
   @override
   String severityLogseverityname(Object severity) {
-    return 'Severity: $severity';
+    return '[HU] Severity: $severity';
   }
 
   @override
-  String get markAsPaid => 'Mark as Paid';
+  String get markAsPaid => '[HU] Mark as Paid';
 
   @override
-  String get typeOpenCall => 'Type: Open Call';
+  String get typeOpenCall => '[HU] Type: Open Call (Hungarian)';
 
   @override
   String appointmentAppointmentid(Object appointmentId) {
-    return 'Appointment $appointmentId';
+    return '[HU] Appointment $appointmentId';
   }
 
   @override
-  String statusInvitestatusname(Object status) {
-    return 'Status: $status';
+  String statusInvitestatusname(Object inviteStatusName, Object status) {
+    return 'الحالة: $inviteStatusName';
   }
 
   @override
-  String get businessLogin => 'Business Login';
+  String get businessLogin => '[HU] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => 'Invoice created successfully!';
+  String get invoiceCreatedSuccessfully =>
+      '[HU] Invoice created successfully! (Hungarian)';
 
   @override
-  String get noTimeSeriesDataAvailable => 'No time series data available';
+  String get noTimeSeriesDataAvailable =>
+      '[HU] No time series data available (Hungarian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
-    return 'Subscribe to $planName';
+    return '[HU] Subscribe to $planName';
   }
 
   @override
   String REDACTED_TOKEN(Object timestamp) {
-    return 'Timestamp: $timestamp';
+    return '[HU] Timestamp: $timestamp';
   }
 
   @override
   String get failedToSendPrivacyRequestE =>
-      'Failed to send privacy request: \$e';
+      '[HU] Failed to send privacy request: \$e (Hungarian)';
 
   @override
-  String get chooseYourPlan => 'Choose Your Plan';
+  String get chooseYourPlan => '[HU] Choose Your Plan (Hungarian)';
 
   @override
-  String get playtimeManagement => 'Playtime Management';
+  String get playtimeManagement => '[HU] Playtime Management (Hungarian)';
 
   @override
-  String get availability => 'Availability';
+  String get availability => '[HU] Availability (Hungarian)';
 
   @override
-  String get eventCreated => 'Event created';
+  String get eventCreated => '[HU] Event created (Hungarian)';
 
   @override
-  String get subscribeToBasic499mo => 'Subscribe to Basic (€4.99/mo)';
+  String get subscribeToBasic499mo =>
+      '[HU] Subscribe to Basic (€4.99/mo) (Hungarian)';
 
   @override
-  String get completion => 'Completion';
+  String get completion => '[HU] Completion (Hungarian)';
 
   @override
-  String get supportTicketSubmitted => 'Support ticket submitted';
+  String get supportTicketSubmitted =>
+      '[HU] Support ticket submitted (Hungarian)';
 
   @override
-  String get monetizationSettings => 'Monetization Settings';
+  String get monetizationSettings => '[HU] Monetization Settings (Hungarian)';
 
   @override
-  String get noBookingsFound => 'No bookings found';
+  String get noBookingsFound => '[HU] No bookings found (Hungarian)';
 
   @override
-  String get admin => 'Admin';
+  String get admin => '[HU] Admin';
 
   @override
-  String get deleteSurvey => 'Delete Survey';
+  String get deleteSurvey => '[HU] Delete Survey (Hungarian)';
 
   @override
-  String get gameApprovedSuccessfully => 'Game approved successfully!';
+  String get gameApprovedSuccessfully =>
+      '[HU] Game approved successfully! (Hungarian)';
 
   @override
   String get errorLoadingPermissionsError =>
-      'Error loading permissions: \$error';
+      '[HU] Error loading permissions: \$error (Hungarian)';
 
   @override
-  String get referrals => 'Referrals';
+  String get referrals => '[HU] Referrals (Hungarian)';
 
   @override
-  String get crm => 'CRM';
+  String get crm => '[HU] CRM (Hungarian)';
 
   @override
-  String get gameRejected => 'Game rejected';
+  String get gameRejected => '[HU] Game rejected (Hungarian)';
 
   @override
-  String get appointments => 'Appointments';
+  String get appointments => '[HU] Appointments (Hungarian)';
 
   @override
-  String get onboardingScreen => 'Onboarding Screen';
+  String get onboardingScreen => '[HU] Onboarding Screen (Hungarian)';
 
   @override
-  String get welcomeToYourStudio => 'Welcome to your studio';
+  String get welcomeToYourStudio => '[HU] Welcome to your studio (Hungarian)';
 
   @override
-  String get update => 'Update';
+  String get update => '[HU] Update (Hungarian)';
 
   @override
-  String get retry1 => 'Retry';
+  String get retry1 => '[HU] Retry (Hungarian)';
 
   @override
-  String get booking => 'Booking';
+  String get booking => '[HU] Booking (Hungarian)';
 
   @override
-  String get parentalSettings => 'Parental Settings';
+  String get parentalSettings => '[HU] Parental Settings (Hungarian)';
 
   @override
-  String get language => 'Language';
+  String get language => '[HU] Language (Hungarian)';
 
   @override
-  String get deleteSlot => 'Delete Slot';
+  String get deleteSlot => '[HU] Delete Slot (Hungarian)';
 
   @override
-  String get organizations => 'organizations (TRANSLATE)';
+  String get organizations => '[HU] organizations (TRANSLATE)';
 
   @override
   String get configurationSavedSuccessfully =>
-      'Configuration saved successfully!';
+      '[HU] Configuration saved successfully!';
 
   @override
-  String get createNewGame => 'Create New Game';
+  String get createNewGame => '[HU] Create New Game (Hungarian)';
 
   @override
-  String get next1 => 'Next';
+  String get next1 => '[HU] Next (Hungarian)';
 
   @override
   String get backgroundUploadedSuccessfully =>
-      'Background uploaded successfully!';
+      '[HU] Background uploaded successfully! (Hungarian)';
 
   @override
-  String get noAppointmentRequestsFound => 'No appointment requests found.';
+  String get noAppointmentRequestsFound =>
+      '[HU] No appointment requests found. (Hungarian)';
 
   @override
-  String get pleaseSignInToCreateASession =>
-      'Please sign in to create a session';
+  String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => 'Restrict mature content';
+  String get restrictMatureContent =>
+      '[HU] Restrict mature content (Hungarian)';
 
   @override
-  String get ambassadors => 'Ambassadors';
+  String get ambassadors => '[HU] Ambassadors (Hungarian)';
 
   @override
-  String get smsNotifications => 'SMS Notifications';
+  String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled => 'Payment was cancelled';
+  String get paymentWasCancelled => '[HU] Payment was cancelled (Hungarian)';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => '[HU] Clear All (Hungarian)';
 
   @override
-  String get viewDetails => 'View Details';
+  String get viewDetails => '[HU] View Details (Hungarian)';
 
   @override
-  String get notifications1 => 'Notifications';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Live session scheduled! Waiting for parent approval...';
-
-  @override
-  String get failedToCreateGameE => 'Failed to create game: \$e';
-
-  @override
-  String get noChartDataAvailable => 'No chart data available';
-
-  @override
-  String get phonebasedBookingSystem => '• Phone-based booking system';
-
-  @override
-  String get enableNotifications1 => 'Enable Notifications';
-
-  @override
-  String get invoices => 'Invoices';
+  String get notifications1 => 'الإشعارات';
 
   @override
   String get REDACTED_TOKEN =>
-      'Please activate your business profile to continue.';
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+
+  @override
+  String get failedToCreateGameE =>
+      '[HU] Failed to create game: \$e (Hungarian)';
+
+  @override
+  String get noChartDataAvailable => '[HU] No chart data available (Hungarian)';
+
+  @override
+  String get phonebasedBookingSystem =>
+      '[HU] • Phone-based booking system (Hungarian)';
+
+  @override
+  String get enableNotifications1 => 'تفعيل الإشعارات';
+
+  @override
+  String get invoices => '[HU] Invoices (Hungarian)';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
-    return 'Scheduled at: $scheduledAt';
+    return '[HU] Scheduled at: $scheduledAt (Hungarian)';
   }
 
   @override
   String REDACTED_TOKEN(Object duration) {
-    return 'Duration: $duration minutes';
+    return '[HU] Duration: $duration minutes (Hungarian)';
   }
 
   @override
-  String get tryAgain => 'Try Again';
+  String get tryAgain => '[HU] Try Again (Hungarian)';
 
   @override
-  String get deleteBackground => 'Delete Background';
+  String get deleteBackground => '[HU] Delete Background (Hungarian)';
 
   @override
   String currentTierTiertouppercase(Object tier) {
-    return 'Current Tier: $tier';
+    return '[HU] Current Tier: $tier (Hungarian)';
   }
 
   @override
-  String get iDoNotConsent => 'I Do Not Consent';
+  String get iDoNotConsent => '[HU] I Do Not Consent';
 
   @override
   String get REDACTED_TOKEN =>
-      'No clients found. Add your first client!';
+      '[HU] No clients found. Add your first client! (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Settings dialog will be implemented here.';
+      '[HU] Settings dialog will be implemented here.';
 
   @override
-  String get groupGroupid => 'Group: \$groupId';
+  String get groupGroupid => '[HU] Group: \$groupId';
 
   @override
-  String get appointmentRequests => 'Appointment Requests';
+  String get appointmentRequests => '[HU] Appointment Requests (Hungarian)';
 
   @override
-  String get forward => 'Forward';
+  String get forward => '[HU] Forward (Hungarian)';
 
   @override
-  String get roomAddedSuccessfully => 'Room added successfully!';
+  String get roomAddedSuccessfully =>
+      '[HU] Room added successfully! (Hungarian)';
 
   @override
-  String get option => '• \$option';
+  String get option => '[HU] • \$option (Hungarian)';
 
   @override
   String responseIndex1(Object number) {
-    return 'Response #$number';
+    return '[HU] Response #$number (Hungarian)';
   }
 
   @override
-  String get crmDashboardWithAnalytics => '• CRM dashboard with analytics';
+  String get crmDashboardWithAnalytics =>
+      '[HU] • CRM dashboard with analytics (Hungarian)';
 
   @override
-  String get contentLibrary1 => 'Content Library';
+  String get contentLibrary1 => '[HU] Content Library (Hungarian)';
 
   @override
-  String get reply => 'Reply';
+  String get reply => '[HU] Reply (Hungarian)';
 
   @override
-  String get subscriptionManagement => 'Subscription Management';
+  String get subscriptionManagement =>
+      '[HU] Subscription Management (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Monetization settings will be implemented here';
+      '[HU] Monetization settings will be implemented here (Hungarian)';
 
   @override
-  String get failedToApplyPromoCodeE => 'Failed to apply promo code: \$e';
+  String get failedToApplyPromoCodeE =>
+      '[HU] Failed to apply promo code: \$e (Hungarian)';
 
   @override
-  String get editProvider => 'Edit Provider';
+  String get editProvider => '[HU] Edit Provider';
 
   @override
-  String get localizationContribution => 'Localization Contribution';
+  String get localizationContribution =>
+      '[HU] Localization Contribution (Hungarian)';
 
   @override
-  String get parentalConsent => 'Parental Consent';
+  String get parentalConsent => '[HU] Parental Consent (Hungarian)';
 
   @override
   String get businessSignupScreenComingSoon =>
-      'Business Signup Screen - Coming Soon';
+      '[HU] Business Signup Screen - Coming Soon (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to delete this appointment?';
+      '[HU] Are you sure you want to delete this appointment? (Hungarian)';
 
   @override
-  String get syncAppointment => 'Sync Appointment';
+  String get syncAppointment => '[HU] Sync Appointment (Hungarian)';
 
   @override
-  String get iConsent => 'I Consent';
+  String get iConsent => '[HU] I Consent (Hungarian)';
 
   @override
-  String get sessionRejected => 'Session rejected';
+  String get sessionRejected => 'تم رفض الجلسة';
 
   @override
   String get businessSetupScreenComingSoon =>
-      'Business Setup Screen - Coming Soon';
+      '[HU] Business Setup Screen - Coming Soon (Hungarian)';
 
   @override
-  String get edit1 => 'Edit';
+  String get edit1 => '[HU] Edit (Hungarian)';
 
   @override
-  String get noEventsScheduledThisMonth => 'No events scheduled this month';
+  String get noEventsScheduledThisMonth =>
+      '[HU] No events scheduled this month (Hungarian)';
 
   @override
-  String get businessDashboard => 'Business Dashboard';
+  String get businessDashboard => '[HU] Business Dashboard (Hungarian)';
 
   @override
-  String get noMessagesFound => 'No messages found.';
+  String get noMessagesFound => '[HU] No messages found. (Hungarian)';
 
   @override
   String staffStaffidNotSelected(Object staff) {
-    return 'Staff: $staff';
+    return '[HU] Staff: $staff';
   }
 
   @override
-  String get manageStaffAvailability => 'Manage Staff Availability';
+  String get manageStaffAvailability =>
+      '[HU] Manage Staff Availability (Hungarian)';
 
   @override
-  String get noMissingTranslations => 'No missing translations';
+  String get noMissingTranslations =>
+      '[HU] No missing translations (Hungarian)';
 
   @override
-  String get skip => 'Skip';
+  String get skip => '[HU] Skip (Hungarian)';
 
   @override
-  String get meetingIdMeetingid => 'Meeting ID: \$meetingId';
+  String meetingIdMeetingid(Object meetingId) {
+    return 'معرف الاجتماع: $meetingId';
+  }
 
   @override
-  String get noUsers => 'noUsers (TRANSLATE)';
+  String get noUsers => '[HU] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => 'Error loading referral code';
+  String get errorLoadingReferralCode =>
+      '[HU] Error loading referral code (Hungarian)';
 
   @override
-  String get allCountries => 'All Countries';
+  String get allCountries => '[HU] All Countries (Hungarian)';
 
   @override
-  String get deleteGame => 'Delete Game';
+  String get deleteGame => '[HU] Delete Game (Hungarian)';
 
   @override
-  String get staffManagementTools => '• Staff management tools';
+  String get staffManagementTools =>
+      '[HU] • Staff management tools (Hungarian)';
 
   @override
-  String get deleteMessage => 'Delete Message';
+  String get deleteMessage => '[HU] Delete Message (Hungarian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Receive booking notifications via SMS';
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
-  String get changeRole => 'changeRole (TRANSLATE)';
+  String get changeRole => '[HU] changeRole (TRANSLATE)';
 
   @override
   String REDACTED_TOKEN(Object error) {
-    return 'Error loading bookings: $error';
+    return 'خطأ في تحميل لقطة الحجوزات: $error';
   }
 
   @override
-  String get openingCustomerPortal => 'Opening customer portal...';
+  String get openingCustomerPortal =>
+      '[HU] Opening customer portal... (Hungarian)';
 
   @override
-  String get signOut => 'Sign Out';
+  String get signOut => '[HU] Sign Out (Hungarian)';
 
   @override
   String nameProfilename(Object name) {
-    return 'Name: $name';
+    return '[HU] Name: $name (Hungarian)';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Profile Entry Screen - Coming Soon';
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness => 'Upgrade to Business';
+  String get upgradeToBusiness => '[HU] Upgrade to Business (Hungarian)';
 
   @override
-  String get apply => 'Apply';
+  String get apply => 'تطبيق';
 
   @override
-  String get errorLoadingSubscriptionError =>
-      'Error loading subscription: \$error';
+  String errorLoadingSubscriptionError(Object error) {
+    return 'خطأ في تحميل الاشتراك: $error';
+  }
 
   @override
-  String get errorLoadingUsers => 'errorLoadingUsers (TRANSLATE)';
+  String get errorLoadingUsers => 'خطأ في تحميل المستخدمين';
 
   @override
-  String get verify => 'Verify';
+  String get verify => 'التحقق';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'الاشتراك';
 
   @override
-  String get deleteMyAccount => 'Delete My Account';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Business Appointments Entry Screen - Coming Soon';
-
-  @override
-  String get viewResponses => 'View Responses';
-
-  @override
-  String get businessWelcomeScreenComingSoon =>
-      'Business Welcome Screen - Coming Soon';
-
-  @override
-  String get failedToOpenCustomerPortalE =>
-      'Failed to open customer portal: \$e';
-
-  @override
-  String get continueText => 'Continue';
-
-  @override
-  String get close1 => 'Close';
-
-  @override
-  String get confirm1 => 'Confirm';
-
-  @override
-  String get externalMeetings => 'External Meetings';
-
-  @override
-  String get approve => 'Approve';
+  String get deleteMyAccount => 'حذف حسابي';
 
   @override
   String get REDACTED_TOKEN =>
-      'No invoices found. Create your first invoice!';
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get viewResponses => '[HU] View Responses (Hungarian)';
 
   @override
-  String get login1 => 'Login';
+  String get businessWelcomeScreenComingSoon => 'شاشة ترحيب الأعمال - قريباً';
 
   @override
-  String get adminOverviewGoesHere => 'Admin overview goes here';
+  String failedToOpenCustomerPortalE(Object e) {
+    return 'فشل في فتح بوابة العميل: $e';
+  }
 
   @override
-  String get loadingCheckout => 'Loading checkout...';
+  String get continueText => 'متابعة';
+
+  @override
+  String get close1 => 'إغلاق';
+
+  @override
+  String get confirm1 => 'تأكيد';
+
+  @override
+  String get externalMeetings => 'الاجتماعات الخارجية';
+
+  @override
+  String get approve => 'موافقة';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+
+  @override
+  String get subscribe => 'اشتراك';
+
+  @override
+  String get login1 => 'تسجيل الدخول';
+
+  @override
+  String get adminOverviewGoesHere => 'نظرة عامة على المسؤول هنا';
+
+  @override
+  String get loadingCheckout => 'جار تحميل الدفع...';
 }

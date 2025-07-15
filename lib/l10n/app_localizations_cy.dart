@@ -9,2411 +9,2494 @@ class AppLocalizationsCy extends AppLocalizations {
   AppLocalizationsCy([String locale = 'cy']) : super(locale);
 
   @override
-  String get refresh => 'Adnewyddu';
+  String get refresh => '[CY] Adnewyddu';
 
   @override
-  String get home => 'Hafan';
+  String get home => '[CY] Hafan';
 
   @override
-  String get noSessionsYet => '[CY] No sessions yet';
+  String get noSessionsYet => '[CY] [CY] No sessions yet';
 
   @override
-  String get ok => 'Iawn';
+  String get ok => '[CY] Iawn';
 
   @override
-  String get playtimeLandingChooseMode => 'Dewiswch fodd';
+  String get playtimeLandingChooseMode => '[CY] Dewiswch fodd';
 
   @override
-  String get signUp => '[CY] Sign Up';
+  String get signUp => '[CY] [CY] Sign Up';
 
   @override
-  String get scheduleMessage => '[CY] Schedule Message';
+  String get scheduleMessage => '[CY] [CY] Schedule Message';
 
   @override
-  String get decline => 'Gwrthod';
+  String get decline => '[CY] Gwrthod';
 
   @override
   String get adminBroadcast => '[CY] Admin Broadcast';
 
   @override
-  String get login => '[CY] Login';
+  String get login => '[CY] [CY] Login';
 
   @override
-  String get playtimeChooseFriends => '[CY] Choose friends to invite';
+  String get playtimeChooseFriends => '[CY] [CY] Choose friends to invite';
 
   @override
-  String get noInvites => 'Dim gwahoddiadau';
+  String get noInvites => '[CY] Dim gwahoddiadau';
 
   @override
-  String get playtimeChooseTime => 'Dewiswch amser';
+  String get playtimeChooseTime => '[CY] Dewiswch amser';
 
   @override
-  String get success => 'Llwyddiant';
+  String get success => '[CY] Llwyddiant';
 
   @override
-  String get undo => 'Dadhadlu';
+  String get undo => '[CY] Dadhadlu';
 
   @override
   String opened(Object count) {
-    return '[CY] Opened';
+    return '[CY] [CY] Opened';
   }
 
   @override
-  String get createVirtualSession => 'Creu sesiwn rhithwir';
+  String get createVirtualSession => '[CY] Creu sesiwn rhithwir';
 
   @override
-  String get messageSentSuccessfully => '[CY] Message sent successfully';
+  String get messageSentSuccessfully => '[CY] [CY] Message sent successfully';
 
   @override
-  String get redo => 'Ailadrodd';
+  String get redo => '[CY] Ailadrodd';
 
   @override
-  String get next => 'Nesaf';
+  String get next => '[CY] Nesaf';
 
   @override
-  String get search => 'Chwilio';
+  String get search => '[CY] Chwilio';
 
   @override
-  String get cancelInviteConfirmation => 'Diddymu cadarnhad gwahoddiad';
+  String get cancelInviteConfirmation => '[CY] Diddymu cadarnhad gwahoddiad';
 
   @override
   String created(Object date) {
-    return 'Wedi creu';
+    return '[CY] Wedi creu';
   }
 
   @override
-  String get revokeAccess => 'Canslo mynediad';
+  String get revokeAccess => '[CY] Canslo mynediad';
 
   @override
-  String get saveGroupForRecognition => 'Cadw grŵp ar gyfer adnabod';
+  String get saveGroupForRecognition => '[CY] Cadw grŵp ar gyfer adnabod';
 
   @override
-  String get playtimeLiveScheduled => '[CY] Live playtime scheduled!';
+  String get playtimeLiveScheduled => '[CY] [CY] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => 'Cadarnhad canslo mynediad';
+  String get revokeAccessConfirmation => '[CY] Cadarnhad canslo mynediad';
 
   @override
-  String get download => 'Lawrlwytho';
+  String get download => '[CY] Lawrlwytho';
 
   @override
-  String get password => '[CY] Password';
+  String get password => '[CY] [CY] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Gwall wrth lwytho dolenni teuluol';
+    return '[CY] Gwall wrth lwytho dolenni teuluol';
   }
 
   @override
-  String get cancel => 'Canslo';
+  String get cancel => '[CY] Canslo';
 
   @override
-  String get playtimeCreate => 'Creu Playtime';
+  String get playtimeCreate => '[CY] Creu Playtime';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return '[CY] Failed to action privacy request';
+    return '[CY] [CY] Failed to action privacy request';
   }
 
   @override
-  String get appTitle => 'Teitl y cais';
+  String get appTitle => '[CY] Teitl y cais';
 
   @override
-  String get accept => '[CY] Accept';
+  String get accept => '[CY] [CY] Accept';
 
   @override
-  String get playtimeModeVirtual => 'Modd rhithwir';
+  String get playtimeModeVirtual => '[CY] Modd rhithwir';
 
   @override
-  String get playtimeDescription => 'Disgrifiad Playtime';
+  String get playtimeDescription => '[CY] Disgrifiad Playtime';
 
   @override
-  String get delete => 'Dileu';
+  String get delete => '[CY] Dileu';
 
   @override
-  String get playtimeVirtualStarted => 'Sesiwn rhithwir wedi cychwyn';
+  String get playtimeVirtualStarted => '[CY] Sesiwn rhithwir wedi cychwyn';
 
   @override
-  String get createYourFirstGame => 'Creu eich gêm gyntaf';
+  String get createYourFirstGame => '[CY] Creu eich gêm gyntaf';
 
   @override
-  String get participants => 'Cyfranogwyr';
+  String get participants => '[CY] Cyfranogwyr';
 
   @override
   String recipients(Object count) {
-    return '[CY] Recipients';
+    return '[CY] [CY] Recipients';
   }
 
   @override
-  String get noResults => 'Dim canlyniadau';
+  String get noResults => '[CY] Dim canlyniadau';
 
   @override
-  String get yes => 'Ie';
+  String get yes => '[CY] Ie';
 
   @override
-  String get invite => 'Gwahodd';
+  String get invite => '[CY] Gwahodd';
 
   @override
-  String get playtimeModeLive => '[CY] Live Play';
+  String get playtimeModeLive => '[CY] [CY] Live Play';
 
   @override
-  String get done => '[CY] Done';
+  String get done => '[CY] [CY] Done';
 
   @override
-  String get defaultShareMessage => '[CY] Let\'s meet via Appoint!';
+  String get defaultShareMessage => '[CY] [CY] Let\'s meet via Appoint!';
 
   @override
-  String get no => 'Na';
+  String get no => '[CY] Na';
 
   @override
-  String get playtimeHub => 'Canolfan Playtime';
+  String get playtimeHub => '[CY] Canolfan Playtime';
 
   @override
-  String get createLiveSession => '[CY] Create Live Session';
+  String get createLiveSession => '[CY] [CY] Create Live Session';
 
   @override
-  String get enableNotifications => '[CY] Enable Notifications';
+  String get enableNotifications => '[CY] [CY] Enable Notifications';
 
   @override
   String invited(Object date) {
-    return 'Wedi gwahodd';
+    return '[CY] Wedi gwahodd';
   }
 
   @override
   String content(Object content) {
-    return 'Cynnwys';
+    return '[CY] Cynnwys';
   }
 
   @override
   String get meetingSharedSuccessfully =>
-      'Cyfarfod wedi ei rannu yn llwyddiannus';
+      '[CY] Cyfarfod wedi ei rannu yn llwyddiannus';
 
   @override
-  String get welcomeToPlaytime => 'Croeso i Playtime';
+  String get welcomeToPlaytime => '[CY] Croeso i Playtime';
 
   @override
-  String get viewAll => 'Gweld popeth';
+  String get viewAll => '[CY] Gweld popeth';
 
   @override
-  String get playtimeVirtual => 'Playtime rhithwir';
+  String get playtimeVirtual => '[CY] Playtime rhithwir';
 
   @override
-  String get staffScreenTBD => '[CY] Staff screen coming soon';
+  String get staffScreenTBD => '[CY] [CY] Staff screen coming soon';
 
   @override
-  String get cut => '[CY] Cut';
+  String get cut => '[CY] [CY] Cut';
 
   @override
   String get inviteCancelledSuccessfully =>
-      'Gwahoddiad wedi ei ganslo\'n llwyddiannus';
+      '[CY] Gwahoddiad wedi ei ganslo\'n llwyddiannus';
 
   @override
-  String get retry => '[CY] Retry';
+  String get retry => '[CY] [CY] Retry';
 
   @override
-  String get composeBroadcastMessage => 'Cyfansoddi neges darlledu';
+  String get composeBroadcastMessage => '[CY] Cyfansoddi neges darlledu';
 
   @override
-  String get sendNow => '[CY] Send Now';
+  String get sendNow => '[CY] [CY] Send Now';
 
   @override
-  String get noGamesYet => '[CY] No games yet';
+  String get noGamesYet => '[CY] [CY] No games yet';
 
   @override
-  String get select => 'Dewis';
+  String get select => '[CY] Dewis';
 
   @override
-  String get about => 'Am';
+  String get about => '[CY] Am';
 
   @override
-  String get choose => 'Dewiswch';
+  String get choose => '[CY] Dewiswch';
 
   @override
-  String get profile => '[CY] Profile';
+  String get profile => '[CY] [CY] Profile';
 
   @override
-  String get removeChild => 'Tynnu plentyn';
+  String get removeChild => '[CY] Tynnu plentyn';
 
   @override
   String status(Object status) {
-    return '[CY] Status';
+    return '[CY] [CY] Status';
   }
 
   @override
-  String get logout => '[CY] Logout';
+  String get logout => '[CY] [CY] Logout';
 
   @override
-  String get paste => 'Gludo';
+  String get paste => '[CY] Gludo';
 
   @override
-  String get welcome => 'Croeso';
+  String get welcome => '[CY] Croeso';
 
   @override
-  String get playtimeCreateSession => 'Creu sesiwn';
+  String get playtimeCreateSession => '[CY] Creu sesiwn';
 
   @override
-  String get familyMembers => 'Aelodau teulu';
+  String get familyMembers => '[CY] Aelodau teulu';
 
   @override
-  String get upload => 'Llwytho i fyny';
+  String get upload => '[CY] Llwytho i fyny';
 
   @override
-  String get upcomingSessions => 'Sesiynau sydd i ddod';
+  String get upcomingSessions => '[CY] Sesiynau sydd i ddod';
 
   @override
-  String get enterGroupName => 'Nodwch enw\'r grŵp';
+  String get enterGroupName => '[CY] Nodwch enw\'r grŵp';
 
   @override
-  String get confirm => 'Cadarnhau';
+  String get confirm => '[CY] Cadarnhau';
 
   @override
-  String get playtimeLive => '[CY] Live Play';
+  String get playtimeLive => '[CY] [CY] Live Play';
 
   @override
-  String get errorLoadingInvites => 'Gwall wrth lwytho gwahoddiadau';
+  String get errorLoadingInvites => '[CY] Gwall wrth lwytho gwahoddiadau';
 
   @override
-  String get targetingFilters => '[CY] Targeting Filters';
+  String get targetingFilters => '[CY] [CY] Targeting Filters';
 
   @override
-  String get pickVideo => 'Dewiswch fideo';
+  String get pickVideo => '[CY] Dewiswch fideo';
 
   @override
-  String get playtimeGameDeleted => 'Gêm wedi ei ddileu';
+  String get playtimeGameDeleted => '[CY] Gêm wedi ei ddileu';
 
   @override
-  String get scheduleForLater => 'Trefnu ar gyfer yn nes ymlaen';
+  String get scheduleForLater => '[CY] Trefnu ar gyfer yn nes ymlaen';
 
   @override
   String get accessRevokedSuccessfully =>
-      'Mynediad wedi ei ganslo\'n llwyddiannus';
+      '[CY] Mynediad wedi ei ganslo\'n llwyddiannus';
 
   @override
   String type(Object type) {
-    return '[CY] Type';
+    return '[CY] [CY] Type';
   }
 
   @override
-  String get checkingPermissions => '[CY] Checking permissions...';
+  String get checkingPermissions => '[CY] [CY] Checking permissions...';
 
   @override
-  String get copy => 'Copïo';
+  String get copy => '[CY] Copïo';
 
   @override
-  String get yesCancel => 'Ie, canslo';
+  String get yesCancel => '[CY] Ie, canslo';
 
   @override
-  String get email => 'E-bost';
+  String get email => '[CY] E-bost';
 
   @override
-  String get shareOnWhatsApp => '[CY] Share on WhatsApp';
+  String get shareOnWhatsApp => '[CY] [CY] Share on WhatsApp';
 
   @override
-  String get notificationSettings => '[CY] Notification Settings';
+  String get notificationSettings => '[CY] [CY] Notification Settings';
 
   @override
-  String get myProfile => '[CY] My Profile';
+  String get myProfile => '[CY] [CY] My Profile';
 
   @override
-  String get revoke => 'Canslo';
+  String get revoke => '[CY] Canslo';
 
   @override
-  String get noBroadcastMessages => '[CY] No messages yet';
+  String get noBroadcastMessages => '[CY] [CY] No messages yet';
 
   @override
   String requestType(Object type) {
-    return '[CY] Request Type';
+    return '[CY] [CY] Request Type';
   }
 
   @override
-  String get notifications => '[CY] Notifications';
+  String get notifications => '[CY] [CY] Notifications';
 
   @override
-  String get details => '[CY] Details';
+  String get details => '[CY] [CY] Details';
 
   @override
-  String get cancelInvite => 'Canslo gwahoddiad';
+  String get cancelInvite => '[CY] Canslo gwahoddiad';
 
   @override
-  String get createNew => 'Creu newydd';
+  String get createNew => '[CY] Creu newydd';
 
   @override
-  String get settings => 'Gosodiadau';
+  String get settings => '[CY] Gosodiadau';
 
   @override
-  String get playtimeReject => 'Gwrthod Playtime';
+  String get playtimeReject => '[CY] Gwrthod Playtime';
 
   @override
-  String get errorLoadingProfile => '[CY] Error loading profile';
+  String get errorLoadingProfile => '[CY] [CY] Error loading profile';
 
   @override
-  String get edit => 'Golygwch';
+  String get edit => '[CY] Golygwch';
 
   @override
-  String get add => 'Ychwanegu';
+  String get add => '[CY] Ychwanegu';
 
   @override
-  String get playtimeGameApproved => 'Gêm wedi ei gymeradwyo';
+  String get playtimeGameApproved => '[CY] Gêm wedi ei gymeradwyo';
 
   @override
-  String get forgotPassword => '[CY] Forgot Password?';
+  String get forgotPassword => '[CY] [CY] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Dangosfwrdd teulu';
+  String get familyDashboard => '[CY] Dangosfwrdd teulu';
 
   @override
-  String get loading => 'Wrthi\'n llwytho';
+  String get loading => '[CY] Wrthi\'n llwytho';
 
   @override
-  String get quickActions => 'Gweithredoedd cyflym';
+  String get quickActions => '[CY] Gweithredoedd cyflym';
 
   @override
-  String get playtimeTitle => 'Teitl Playtime';
+  String get playtimeTitle => '[CY] Teitl Playtime';
 
   @override
-  String get otpResentSuccessfully => '[CY] OTP resent successfully';
+  String get otpResentSuccessfully => '[CY] [CY] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return '[CY] Error checking permissions';
+    return '[CY] [CY] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => '[CY] Client screen coming soon';
+  String get clientScreenTBD => '[CY] [CY] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return '[CY] FCM Token';
+    return '[CY] [CY] FCM Token';
   }
 
   @override
-  String get pickImage => 'Dewiswch ddelwedd';
+  String get pickImage => '[CY] Dewiswch ddelwedd';
 
   @override
-  String get previous => '[CY] Previous';
+  String get previous => '[CY] [CY] Previous';
 
   @override
-  String get noProfileFound => '[CY] No profile found';
+  String get noProfileFound => '[CY] [CY] No profile found';
 
   @override
-  String get noFamilyMembersYet => '[CY] No family members yet';
+  String get noFamilyMembersYet => '[CY] [CY] No family members yet';
 
   @override
-  String get mediaOptional => 'Cyfryngau (dewisol)';
+  String get mediaOptional => '[CY] Cyfryngau (dewisol)';
 
   @override
-  String get messageSavedSuccessfully => 'Neges wedi ei gadw\'n llwyddiannus';
+  String get messageSavedSuccessfully =>
+      '[CY] Neges wedi ei gadw\'n llwyddiannus';
 
   @override
-  String get scheduledFor => 'Wedi\'i drefnu ar gyfer';
+  String get scheduledFor => '[CY] Wedi\'i drefnu ar gyfer';
 
   @override
-  String get dashboard => 'Dangosfwrdd';
+  String get dashboard => '[CY] Dangosfwrdd';
 
   @override
-  String get noPermissionForBroadcast => '[CY] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[CY] [CY] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[CY] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => '[CY] Invite Details';
+  String get inviteDetail => '[CY] [CY] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return 'Wedi\'i drefnu';
+    return '[CY] Wedi\'i drefnu';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return '[CY] Failed to resend OTP';
+    return '[CY] [CY] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => 'Wrthi\'n trefnu';
+  String get scheduling => '[CY] Wrthi\'n trefnu';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Gwall wrth arbed neges';
+    return '[CY] Gwall wrth arbed neges';
   }
 
   @override
-  String get save => 'Cadw';
+  String get save => '[CY] Cadw';
 
   @override
-  String get playtimeApprove => 'Cymeradwywch Playtime';
+  String get playtimeApprove => '[CY] Cymeradwywch Playtime';
 
   @override
-  String get createYourFirstSession => 'Creu eich sesiwn gyntaf';
+  String get createYourFirstSession => '[CY] Creu eich sesiwn gyntaf';
 
   @override
-  String get playtimeGameRejected => 'Gêm wedi ei wrthod';
+  String get playtimeGameRejected => '[CY] Gêm wedi ei wrthod';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'Methu canslo mynediad';
+    return '[CY] Methu canslo mynediad';
   }
 
   @override
-  String get recentGames => 'Gemau diweddar';
+  String get recentGames => '[CY] Gemau diweddar';
 
   @override
-  String get customizeMessage => '[CY] Customize Message';
+  String get customizeMessage => '[CY] [CY] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'Methu canslo gwahoddiad';
+    return '[CY] Methu canslo gwahoddiad';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return '[CY] Error sending message';
+    return '[CY] [CY] Error sending message';
   }
 
   @override
-  String get confirmPassword => '[CY] Confirm Password';
+  String get confirmPassword => '[CY] [CY] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return '[CY] Error loading privacy requests';
+    return '[CY] [CY] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => 'Plant cysylltiedig';
+  String get connectedChildren => '[CY] Plant cysylltiedig';
 
   @override
-  String get share => 'Rhannu';
+  String get share => '[CY] Rhannu';
 
   @override
-  String get playtimeEnterGameName => 'Nodwch enw\'r gêm';
+  String get playtimeEnterGameName => '[CY] Nodwch enw\'r gêm';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      '[CY] Please login to access family features';
+      '[CY] [CY] Please login to access family features';
 
   @override
-  String get myInvites => 'Fy nghwahoddiadau';
+  String get myInvites => '[CY] Fy nghwahoddiadau';
 
   @override
-  String get createGame => 'Creu gêm';
+  String get createGame => '[CY] Creu gêm';
 
   @override
-  String get groupNameOptional => 'Enw\'r grŵp (dewisol)';
+  String get groupNameOptional => '[CY] Enw\'r grŵp (dewisol)';
 
   @override
-  String get playtimeNoSessions => 'Dim sesiynau Playtime';
+  String get playtimeNoSessions => '[CY] Dim sesiynau Playtime';
 
   @override
   String get adminScreenTBD => '[CY] Admin screen coming soon';
 
   @override
   String get playtimeParentDashboardTitle =>
-      'Teitl dangosfwrdd rhiant Playtime';
+      '[CY] Teitl dangosfwrdd rhiant Playtime';
 
   @override
-  String get close => 'Cau';
+  String get close => '[CY] Cau';
 
   @override
-  String get knownGroupDetected => 'Grŵp cyfarwydd wedi\'i ganfod';
+  String get knownGroupDetected => '[CY] Grŵp cyfarwydd wedi\'i ganfod';
 
   @override
-  String get back => 'Yn ôl';
+  String get back => '[CY] Yn ôl';
 
   @override
-  String get playtimeChooseGame => 'Dewiswch gêm';
+  String get playtimeChooseGame => '[CY] Dewiswch gêm';
 
   @override
-  String get managePermissions => '[CY] Manage Permissions';
+  String get managePermissions => '[CY] [CY] Manage Permissions';
 
   @override
-  String get pollOptions => 'Opsiynau arolwg';
+  String get pollOptions => '[CY] Opsiynau arolwg';
 
   @override
   String clicked(Object count) {
-    return 'Wedi clicio';
+    return '[CY] Wedi clicio';
   }
 
   @override
   String link(Object link) {
-    return 'Cysylltiad';
+    return '[CY] Cysylltiad';
   }
 
   @override
-  String get meetingReadyMessage => 'Cyfarfod yn barod';
+  String get meetingReadyMessage => '[CY] Cyfarfod yn barod';
 
   @override
-  String get pendingInvites => 'Gwahoddiadau sy\'n aros';
+  String get pendingInvites => '[CY] Gwahoddiadau sy\'n aros';
 
   @override
   String statusColon(Object status) {
-    return '[CY] Status:';
+    return '[CY] [CY] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      '[CY] Please log in to view your profile.';
+      '[CY] [CY] Please log in to view your profile.';
 
   @override
-  String get adminMetrics => 'Admin Metrics';
+  String get adminMetrics => '[CY] Admin Metrics';
 
   @override
-  String get overview => 'Overview';
+  String get overview => '[CY] Overview';
 
   @override
-  String get bookings => 'Bookings';
+  String get bookings => '[CY] Bookings';
 
   @override
-  String get users => 'users (TRANSLATE)';
+  String get users => '[CY] users (TRANSLATE)';
 
   @override
-  String get revenue => 'revenue (TRANSLATE)';
+  String get revenue => '[CY] revenue (TRANSLATE)';
 
   @override
-  String get contentLibrary => 'Content Library';
+  String get contentLibrary => '[CY] Content Library';
 
   @override
   String get authErrorUserNotFound =>
-      'No account found with this email address.';
+      '[CY] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => 'Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[CY] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => 'Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[CY] Please enter a valid email address.';
 
   @override
   String get authErrorUserDisabled =>
-      'This account has been disabled. Please contact support.';
+      '[CY] This account has been disabled. Please contact support.';
 
   @override
   String get authErrorWeakPassword =>
-      'Password is too weak. Please choose a stronger password.';
+      '[CY] Password is too weak. Please choose a stronger password.';
 
   @override
   String get authErrorEmailAlreadyInUse =>
-      'An account with this email already exists.';
+      '[CY] An account with this email already exists.';
 
   @override
   String get authErrorTooManyRequests =>
-      'Too many failed attempts. Please try again later.';
+      '[CY] Too many failed attempts. Please try again later.';
 
   @override
   String get authErrorOperationNotAllowed =>
-      'This sign-in method is not enabled. Please contact support.';
+      '[CY] This sign-in method is not enabled. Please contact support.';
 
   @override
   String get authErrorInvalidCredential =>
-      'Invalid credentials. Please try again.';
+      '[CY] Invalid credentials. Please try again.';
 
   @override
   String get REDACTED_TOKEN =>
-      'An account already exists with this email using a different sign-in method.';
+      '[CY] An account already exists with this email using a different sign-in method.';
 
   @override
   String get authErrorCredentialAlreadyInUse =>
-      'These credentials are already associated with another account.';
+      '[CY] These credentials are already associated with another account.';
 
   @override
   String get authErrorNetworkRequestFailed =>
-      'Network error. Please check your connection and try again.';
+      '[CY] Network error. Please check your connection and try again.';
 
   @override
-  String get socialAccountConflictTitle => 'Account Already Exists';
+  String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
 
   @override
   String socialAccountConflictMessage(Object email) {
-    return 'An account with email $email already exists using a different sign-in method. Would you like to link your accounts?';
+    return 'يبدو أن هناك حساب موجود بالفعل';
   }
 
   @override
-  String get linkAccounts => 'Link Accounts';
+  String get linkAccounts => 'ربط الحسابات';
 
   @override
-  String get signInWithExistingMethod => 'Sign in with existing method';
+  String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
   String get authErrorRequiresRecentLogin =>
-      'Please log in again to perform this operation.';
+      '[CY] Please log in again to perform this operation.';
 
   @override
   String get authErrorAppNotAuthorized =>
-      'This app is not authorized to use Firebase Authentication.';
+      '[CY] This app is not authorized to use Firebase Authentication.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The verification code is invalid.';
+      '[CY] The verification code is invalid.';
 
   @override
   String get authErrorInvalidVerificationId =>
-      'The verification ID is invalid.';
+      '[CY] The verification ID is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Please enter the verification code.';
+      '[CY] Please enter the verification code.';
 
   @override
-  String get authErrorMissingVerificationId => 'Missing verification ID.';
+  String get authErrorMissingVerificationId => '[CY] Missing verification ID.';
 
   @override
-  String get authErrorInvalidPhoneNumber => 'The phone number is invalid.';
+  String get authErrorInvalidPhoneNumber => '[CY] The phone number is invalid.';
 
   @override
-  String get authErrorMissingPhoneNumber => 'Please enter a phone number.';
+  String get authErrorMissingPhoneNumber => '[CY] Please enter a phone number.';
 
   @override
   String get authErrorQuotaExceeded =>
-      'The SMS quota for this project has been exceeded. Please try again later.';
+      '[CY] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
   String get authErrorCodeExpired =>
-      'The verification code has expired. Please request a new one.';
+      '[CY] The verification code has expired. Please request a new one.';
 
   @override
   String get authErrorSessionExpired =>
-      'Your session has expired. Please log in again.';
+      '[CY] Your session has expired. Please log in again.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Multi-factor authentication is required.';
+      '[CY] Multi-factor authentication is required.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Multi-factor information not found.';
+      '[CY] Multi-factor information not found.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Missing multi-factor session.';
+      '[CY] Missing multi-factor session.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Invalid multi-factor session.';
+      '[CY] Invalid multi-factor session.';
 
   @override
   String get REDACTED_TOKEN =>
-      'This second factor is already in use.';
+      '[CY] This second factor is already in use.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Maximum number of second factors exceeded.';
+      '[CY] Maximum number of second factors exceeded.';
 
   @override
   String get authErrorUnsupportedFirstFactor =>
-      'Unsupported first factor for multi-factor authentication.';
+      '[CY] Unsupported first factor for multi-factor authentication.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Email change requires verification.';
+      '[CY] Email change requires verification.';
 
   @override
   String get REDACTED_TOKEN =>
-      'This phone number is already in use.';
+      '[CY] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => 'The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[CY] The password is invalid or too weak.';
 
   @override
-  String get authErrorInvalidIdToken => 'The ID token is invalid.';
+  String get authErrorInvalidIdToken => '[CY] The ID token is invalid.';
 
   @override
-  String get authErrorIdTokenExpired => 'The ID token has expired.';
+  String get authErrorIdTokenExpired => '[CY] The ID token has expired.';
 
   @override
-  String get authErrorIdTokenRevoked => 'The ID token has been revoked.';
+  String get authErrorIdTokenRevoked => '[CY] The ID token has been revoked.';
 
   @override
   String get authErrorInternalError =>
-      'An internal error occurred. Please try again.';
+      '[CY] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => 'An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[CY] An invalid argument was provided.';
 
   @override
-  String get authErrorInvalidClaims => 'Invalid custom claims provided.';
+  String get authErrorInvalidClaims => '[CY] Invalid custom claims provided.';
 
   @override
-  String get authErrorInvalidContinueUri => 'The continue URL is invalid.';
+  String get authErrorInvalidContinueUri => '[CY] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => 'The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[CY] The creation time is invalid.';
 
   @override
   String get authErrorInvalidDisabledField =>
-      'The disabled field value is invalid.';
+      '[CY] The disabled field value is invalid.';
 
   @override
-  String get authErrorInvalidDisplayName => 'The display name is invalid.';
+  String get authErrorInvalidDisplayName => '[CY] The display name is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The dynamic link domain is invalid.';
+      '[CY] The dynamic link domain is invalid.';
 
   @override
   String get authErrorInvalidEmailVerified =>
-      'The email verified value is invalid.';
+      '[CY] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => 'The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[CY] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => 'The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[CY] The hash block size is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The hash derived key length is invalid.';
+      '[CY] The hash derived key length is invalid.';
 
   @override
-  String get authErrorInvalidHashKey => 'The hash key is invalid.';
+  String get authErrorInvalidHashKey => '[CY] The hash key is invalid.';
 
   @override
   String get authErrorInvalidHashMemoryCost =>
-      'The hash memory cost is invalid.';
+      '[CY] The hash memory cost is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The hash parallelization is invalid.';
+      '[CY] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => 'The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[CY] The hash rounds value is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The hash salt separator is invalid.';
+      '[CY] The hash salt separator is invalid.';
 
   @override
   String get authErrorInvalidLastSignInTime =>
-      'The last sign-in time is invalid.';
+      '[CY] The last sign-in time is invalid.';
 
   @override
-  String get authErrorInvalidPageToken => 'The page token is invalid.';
+  String get authErrorInvalidPageToken => '[CY] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => 'The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[CY] The provider data is invalid.';
 
   @override
-  String get authErrorInvalidProviderId => 'The provider ID is invalid.';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'The session cookie duration is invalid.';
-
-  @override
-  String get authErrorInvalidUid => 'The UID is invalid.';
-
-  @override
-  String get authErrorInvalidUserImport => 'The user import record is invalid.';
+  String get authErrorInvalidProviderId => '[CY] The provider ID is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Maximum user import count exceeded.';
+      '[CY] The session cookie duration is invalid.';
 
   @override
-  String get authErrorMissingAndroidPkgName => 'Missing Android package name.';
+  String get authErrorInvalidUid => '[CY] The UID is invalid.';
 
   @override
-  String get authErrorMissingContinueUri => 'Missing continue URL.';
-
-  @override
-  String get authErrorMissingHashAlgorithm => 'Missing hash algorithm.';
-
-  @override
-  String get authErrorMissingIosBundleId => 'Missing iOS bundle ID.';
-
-  @override
-  String get authErrorMissingUid => 'Missing UID.';
+  String get authErrorInvalidUserImport =>
+      '[CY] The user import record is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Missing OAuth client secret.';
+      '[CY] Maximum user import count exceeded.';
 
   @override
-  String get authErrorProjectNotFound => 'Firebase project not found.';
+  String get authErrorMissingAndroidPkgName =>
+      '[CY] Missing Android package name.';
 
   @override
-  String get authErrorReservedClaims => 'Reserved claims provided.';
+  String get authErrorMissingContinueUri => '[CY] Missing continue URL.';
 
   @override
-  String get authErrorSessionCookieExpired => 'Session cookie has expired.';
+  String get authErrorMissingHashAlgorithm => '[CY] Missing hash algorithm.';
+
+  @override
+  String get authErrorMissingIosBundleId => '[CY] Missing iOS bundle ID.';
+
+  @override
+  String get authErrorMissingUid => '[CY] Missing UID.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      '[CY] Missing OAuth client secret.';
+
+  @override
+  String get authErrorProjectNotFound => '[CY] Firebase project not found.';
+
+  @override
+  String get authErrorReservedClaims => '[CY] Reserved claims provided.';
+
+  @override
+  String get authErrorSessionCookieExpired =>
+      '[CY] Session cookie has expired.';
 
   @override
   String get authErrorSessionCookieRevoked =>
-      'Session cookie has been revoked.';
+      '[CY] Session cookie has been revoked.';
 
   @override
-  String get authErrorUidAlreadyExists => 'The UID is already in use.';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'The continue URL domain is not whitelisted.';
-
-  @override
-  String get authErrorUnknown => 'An unknown authentication error occurred.';
-
-  @override
-  String get checkingPermissions1 => 'Checking permissions...';
-
-  @override
-  String get paymentSuccessful => 'Payment Successful!';
-
-  @override
-  String get businessAvailability => 'Business Availability';
-
-  @override
-  String get send => 'Send';
-
-  @override
-  String newNotificationPayloadtitle(Object payloadTitle) {
-    return 'New notification: $payloadTitle';
-  }
-
-  @override
-  String get gameList => 'Game List';
-
-  @override
-  String get deleteAvailability => 'Delete Availability';
-
-  @override
-  String get connectToGoogleCalendar => 'Connect to Google Calendar';
-
-  @override
-  String get adminFreeAccess => 'Admin Free Access';
-
-  @override
-  String emailProfileemail(Object profileEmail) {
-    return 'Email: $profileEmail';
-  }
-
-  @override
-  String get calendar => 'Calendar';
-
-  @override
-  String get upload1 => 'Upload';
-
-  @override
-  String get resolved => 'Resolved';
-
-  @override
-  String get keepSubscription => 'Keep Subscription';
+  String get authErrorUidAlreadyExists => '[CY] The UID is already in use.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Virtual session created! Inviting friends...';
+      '[CY] The continue URL domain is not whitelisted.';
 
   @override
-  String get noEventsScheduledForToday => 'No events scheduled for today';
+  String get authErrorUnknown =>
+      '[CY] An unknown authentication error occurred.';
 
   @override
-  String get exportData => 'Export Data';
+  String get checkingPermissions1 => 'فحص الأذونات...';
 
   @override
-  String get rewards => 'Rewards';
+  String get paymentSuccessful => 'تم الدفع بنجاح';
 
   @override
-  String get time => 'Time';
+  String get businessAvailability => 'توفر الأعمال';
 
   @override
-  String userCid(Object id) {
-    return 'User $id';
+  String get send => 'إرسال';
+
+  @override
+  String newNotificationPayloadtitle(Object payloadTitle, Object title) {
+    return 'عنوان الإشعار الجديد: $title';
   }
 
   @override
-  String get noSlots => 'No slots';
+  String get gameList => 'قائمة الألعاب';
 
   @override
-  String get signIn => 'Sign In';
+  String get deleteAvailability => 'حذف التوفر';
 
   @override
-  String get homeFeedScreen => 'Home Feed Screen';
+  String get connectToGoogleCalendar => 'الاتصال بتقويم Google';
 
   @override
-  String get selectLocation => 'Select Location';
+  String get adminFreeAccess => '[CY] Admin Free Access';
 
   @override
-  String get noTicketsYet => 'No tickets yet';
+  String emailProfileemail(Object email, Object profileEmail) {
+    return 'البريد الإلكتروني للملف الشخصي: $email';
+  }
 
   @override
-  String get meetingSharedSuccessfully1 => 'Meeting shared successfully!';
+  String get calendar => 'التقويم';
 
   @override
-  String get studioProfile => 'Studio Profile';
+  String get upload1 => '[CY] Upload (Welsh)';
 
   @override
-  String get subscriptionUnavailable => 'Subscription unavailable';
+  String get resolved => 'تم الحل';
 
   @override
-  String get confirmBooking => 'Confirm Booking';
+  String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get failedToUpdatePermissionE => 'Failed to update permission: \$e';
+  String get REDACTED_TOKEN =>
+      '[CY] Virtual session created! Inviting friends... (Welsh)';
 
   @override
-  String get reject => 'Reject';
+  String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
+
+  @override
+  String get exportData => 'تصدير البيانات';
+
+  @override
+  String get rewards => '[CY] Rewards (Welsh)';
+
+  @override
+  String get time => '[CY] Time (Welsh)';
+
+  @override
+  String userCid(Object cid, Object id) {
+    return '[CY] User $id';
+  }
+
+  @override
+  String get noSlots => '[CY] No slots (Welsh)';
+
+  @override
+  String get signIn => '[CY] Sign In (Welsh)';
+
+  @override
+  String get homeFeedScreen => '[CY] Home Feed Screen (Welsh)';
+
+  @override
+  String get selectLocation => '[CY] Select Location (Welsh)';
+
+  @override
+  String get noTicketsYet => '[CY] No tickets yet (Welsh)';
+
+  @override
+  String get meetingSharedSuccessfully1 => 'تم مشاركة الاجتماع بنجاح';
+
+  @override
+  String get studioProfile => 'ملف الاستوديو';
+
+  @override
+  String get subscriptionUnavailable => '[CY] Subscription unavailable (Welsh)';
+
+  @override
+  String get confirmBooking => '[CY] Confirm Booking (Welsh)';
+
+  @override
+  String get failedToUpdatePermissionE =>
+      '[CY] Failed to update permission: \$e (Welsh)';
+
+  @override
+  String get reject => '[CY] Reject (Welsh)';
 
   @override
   String REDACTED_TOKEN(Object ambassadorStatus) {
-    return 'Ambassador Status: $ambassadorStatus';
+    return '[CY] Ambassador Status: $ambassadorStatus (Welsh)';
   }
 
   @override
-  String get noProviders => 'No providers';
+  String get noProviders => '[CY] No providers';
 
   @override
-  String get checkingSubscription => 'Checking subscription...';
+  String get checkingSubscription => '[CY] Checking subscription... (Welsh)';
 
   @override
-  String get errorPickingImageE => 'Error picking image: \$e';
+  String errorPickingImageE(Object e) {
+    return 'خطأ في اختيار الصورة: $e';
+  }
 
   @override
-  String get noContentAvailableYet => 'No content available yet';
+  String get noContentAvailableYet => '[CY] No content available yet (Welsh)';
 
   @override
-  String get resolve => 'Resolve';
+  String get resolve => '[CY] Resolve (Welsh)';
 
   @override
-  String get errorLoadingSurveysError => 'Error loading surveys: \$error';
+  String get errorLoadingSurveysError =>
+      '[CY] Error loading surveys: \$error (Welsh)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
-    return 'Error: $errorMessage';
+    return '[CY] Error: $errorMessage';
   }
 
   @override
-  String get getHelpWithYourAccount => 'Get help with your account';
+  String get getHelpWithYourAccount =>
+      '[CY] Get help with your account (Welsh)';
 
   @override
-  String get pay => 'Pay';
+  String get pay => '[CY] Pay (Welsh)';
 
   @override
-  String get noOrganizations => 'noOrganizations (TRANSLATE)';
+  String get noOrganizations => '[CY] noOrganizations (TRANSLATE)';
 
   @override
-  String get meetingDetails => 'meetingDetails (TRANSLATE)';
+  String get meetingDetails => 'تفاصيل الاجتماع';
 
   @override
-  String get errorLoadingAppointments => 'Error loading appointments';
+  String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => 'Changes saved successfully!';
+  String get changesSavedSuccessfully =>
+      '[CY] Changes saved successfully! (Welsh)';
 
   @override
-  String get createNewInvoice => 'Create New Invoice';
+  String get createNewInvoice => '[CY] Create New Invoice (Welsh)';
 
   @override
-  String get profileNotFound => 'Profile not found.';
+  String get profileNotFound => 'الملف الشخصي غير موجود';
 
   @override
-  String get errorConfirmingPaymentE => 'Error confirming payment: \$e';
+  String errorConfirmingPaymentE(Object e) {
+    return 'خطأ في تأكيد الدفع: $e';
+  }
 
   @override
-  String get inviteFriends => 'Invite Friends';
+  String get inviteFriends => 'دعوة الأصدقاء';
 
   @override
-  String get profileSaved => 'Profile saved!';
+  String get profileSaved => '[CY] Profile saved! (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Receive booking notifications via email';
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
-  String valuetointk(Object value) {
-    return '\\\$${value}K';
+  String valuetointk(Object k, Object value) {
+    return '[CY] \\\$${value}K (Welsh)';
   }
 
   @override
-  String get deleteAccount => 'Delete Account';
+  String get deleteAccount => '[CY] Delete Account (Welsh)';
 
   @override
-  String get profile1 => 'Profile';
+  String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding => 'Business Onboarding';
+  String get businessOnboarding => '[CY] Business Onboarding (Welsh)';
 
   @override
-  String get addNewClient => 'Add New Client';
+  String get addNewClient => '[CY] Add New Client (Welsh)';
 
   @override
-  String get darkMode => 'Dark Mode';
+  String get darkMode => '[CY] Dark Mode (Welsh)';
 
   @override
-  String get addProvider => 'Add Provider';
+  String get addProvider => '[CY] Add Provider';
 
   @override
   String noRouteDefinedForStateuripath(Object path) {
-    return 'No route defined for $path';
+    return '[CY] No route defined for $path';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'You will receive a confirmation email shortly.';
+      '[CY] You will receive a confirmation email shortly. (Welsh)';
 
   @override
-  String get addQuestion => 'Add Question';
+  String get addQuestion => '[CY] Add Question (Welsh)';
 
   @override
-  String get privacyPolicy => 'Privacy Policy';
+  String get privacyPolicy => '[CY] Privacy Policy (Welsh)';
 
   @override
   String branchesLengthBranches(Object branchCount) {
-    return '$branchCount branches';
+    return '[CY] $branchCount branches (Welsh)';
   }
 
   @override
-  String get join => 'Join';
+  String get join => '[CY] Join (Welsh)';
 
   @override
-  String get businessSubscription => 'Business Subscription';
+  String get businessSubscription => '[CY] Business Subscription (Welsh)';
 
   @override
-  String get myInvites1 => 'My Invites';
+  String get myInvites1 => 'دعواتي';
 
   @override
-  String get providers => 'Providers';
+  String get providers => '[CY] Providers';
 
   @override
-  String get surveyManagement => 'Survey Management';
+  String get surveyManagement => '[CY] Survey Management (Welsh)';
 
   @override
   String get pleaseEnterAValidEmailOrPhone =>
-      'Please enter a valid email or phone';
+      '[CY] Please enter a valid email or phone';
 
   @override
   String get noRoomsFoundAddYourFirstRoom =>
-      'No rooms found. Add your first room!';
+      '[CY] No rooms found. Add your first room! (Welsh)';
 
   @override
-  String get readOurPrivacyPolicy => 'Read our privacy policy';
+  String get readOurPrivacyPolicy => '[CY] Read our privacy policy (Welsh)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => 'Could not open privacy policy';
+  String get couldNotOpenPrivacyPolicy =>
+      '[CY] Could not open privacy policy (Welsh)';
 
   @override
-  String get refresh1 => 'Refresh';
+  String get refresh1 => '[CY] Refresh (Welsh)';
 
   @override
-  String get roomUpdatedSuccessfully => 'Room updated successfully!';
+  String get roomUpdatedSuccessfully =>
+      '[CY] Room updated successfully! (Welsh)';
 
   @override
-  String get contentDetail => 'Content Detail';
+  String get contentDetail => '[CY] Content Detail (Welsh)';
 
   @override
-  String get cancelSubscription => 'Cancel Subscription';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Successfully registered as Ambassador!';
-
-  @override
-  String get save1 => 'Save';
-
-  @override
-  String get copy1 => 'Copy';
-
-  @override
-  String get failedToSendInvitationE => 'Failed to send invitation: \$e';
-
-  @override
-  String get surveyScore => 'Survey Score';
-
-  @override
-  String get userUserid => 'User \$userId';
-
-  @override
-  String get noAppointmentsFound => 'No appointments found.';
-
-  @override
-  String get responseDetail => 'Response Detail';
+  String get cancelSubscription => '[CY] Cancel Subscription (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Verification Screen - Coming Soon';
+      '[CY] Successfully registered as Ambassador! (Welsh)';
+
+  @override
+  String get save1 => '[CY] Save (Welsh)';
+
+  @override
+  String get copy1 => '[CY] Copy (Welsh)';
+
+  @override
+  String get failedToSendInvitationE =>
+      '[CY] Failed to send invitation: \$e (Welsh)';
+
+  @override
+  String get surveyScore => '[CY] Survey Score (Welsh)';
+
+  @override
+  String userUserid(Object userId) {
+    return '[CY] User \$userId';
+  }
+
+  @override
+  String get noAppointmentsFound => '[CY] No appointments found. (Welsh)';
+
+  @override
+  String get responseDetail => '[CY] Response Detail (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business profile activated successfully!';
+      'شاشة التحقق من الأعمال - قريباً';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
   String get failedToStartProSubscriptionE =>
-      'Failed to start Pro subscription: \$e';
+      '[CY] Failed to start Pro subscription: \$e (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Dashboard Entry Screen - Coming Soon';
+      '[CY] Business Dashboard Entry Screen - Coming Soon (Welsh)';
 
   @override
-  String get contentFilter => 'Content Filter';
+  String get contentFilter => '[CY] Content Filter (Welsh)';
 
   @override
-  String get helpSupport => 'Help & Support';
+  String get helpSupport => '[CY] Help & Support (Welsh)';
 
   @override
-  String get editRoom => 'Edit Room';
+  String get editRoom => '[CY] Edit Room (Welsh)';
 
   @override
   String appointmentApptid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return '[CY] Appointment: $appointmentId';
   }
 
   @override
   String deviceLogdeviceinfo(Object deviceInfo) {
-    return 'Device: $deviceInfo';
+    return '[CY] Device: $deviceInfo';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Business CRM Entry Screen - Coming Soon';
+      '[CY] Business CRM Entry Screen - Coming Soon (Welsh)';
 
   @override
-  String get adminDashboard => 'Admin Dashboard';
+  String get adminDashboard => '[CY] Admin Dashboard';
 
   @override
   String orgmemberidslengthMembers(Object memberCount) {
-    return '$memberCount members';
+    return '[CY] $memberCount members';
   }
 
   @override
-  String get errorLoadingDashboardError => 'Error loading dashboard: \$error';
+  String get errorLoadingDashboardError =>
+      '[CY] Error loading dashboard: \$error (Welsh)';
 
   @override
-  String get gameDeletedSuccessfully => 'Game deleted successfully!';
+  String get gameDeletedSuccessfully =>
+      '[CY] Game deleted successfully! (Welsh)';
 
   @override
-  String get viewResponsesComingSoon => 'View responses - Coming soon!';
+  String get viewResponsesComingSoon =>
+      '[CY] View responses - Coming soon! (Welsh)';
 
   @override
-  String get deleteProvider => 'Delete Provider';
+  String get deleteProvider => '[CY] Delete Provider';
 
   @override
-  String get errorLoadingRewards => 'Error loading rewards';
+  String get errorLoadingRewards => '[CY] Error loading rewards (Welsh)';
 
   @override
-  String get failedToDeleteAccountE => 'Failed to delete account: \$e';
+  String get failedToDeleteAccountE =>
+      '[CY] Failed to delete account: \$e (Welsh)';
 
   @override
-  String get invited1 => 'Invited';
+  String get invited1 => '[CY] Invited (Welsh)';
 
   @override
-  String get noBranchesAvailable => 'No branches available';
+  String get noBranchesAvailable => '[CY] No branches available (Welsh)';
 
   @override
-  String get errorError => 'Error: \$error';
+  String get errorError => '[CY] Error: \$error (Welsh)';
 
   @override
-  String get noEvents => 'No events';
+  String get noEvents => '[CY] No events (Welsh)';
 
   @override
-  String get gameCreatedSuccessfully => 'Game created successfully!';
+  String get gameCreatedSuccessfully =>
+      '[CY] Game created successfully! (Welsh)';
 
   @override
-  String get add1 => 'Add';
+  String get add1 => '[CY] Add (Welsh)';
 
   @override
-  String get creatorCreatorid => 'Creator: \$creatorId';
+  String get creatorCreatorid => '[CY] Creator: \$creatorId';
 
   @override
   String eventstarttimeEventendtime(Object endTime, Object startTime) {
-    return '$startTime - $endTime';
+    return '[CY] $startTime - $endTime (Welsh)';
   }
 
   @override
-  String get allowPlaytime => 'Allow Playtime';
+  String get allowPlaytime => '[CY] Allow Playtime (Welsh)';
 
   @override
-  String get clients => 'Clients';
+  String get clients => '[CY] Clients (Welsh)';
 
   @override
-  String get noAmbassadorDataAvailable => 'No ambassador data available';
+  String get noAmbassadorDataAvailable =>
+      '[CY] No ambassador data available (Welsh)';
 
   @override
   String get backgroundDeletedSuccessfully =>
-      'Background deleted successfully!';
+      '[CY] Background deleted successfully! (Welsh)';
 
   @override
   String errorSnapshoterror(Object error) {
-    return 'Error: $error';
+    return '[CY] Error: $error (Welsh)';
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => 'No analytics data available yet.';
+  String get noAnalyticsDataAvailableYet =>
+      '[CY] No analytics data available yet. (Welsh)';
 
   @override
-  String get errorDeletingSlotE => 'Error deleting slot: \$e';
+  String errorDeletingSlotE(Object e) {
+    return 'خطأ في حذف الفترة: $e';
+  }
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Phone Booking Entry Screen - Coming Soon';
+      '[CY] Business Phone Booking Entry Screen - Coming Soon (Welsh)';
 
   @override
-  String get verification => 'Verification';
+  String get verification => '[CY] Verification (Welsh)';
 
   @override
-  String get copyLink => 'Copy Link';
+  String get copyLink => '[CY] Copy Link (Welsh)';
 
   @override
-  String get dashboard1 => 'Dashboard';
+  String get dashboard1 => '[CY] Dashboard (Welsh)';
 
   @override
-  String get manageChildAccounts => 'Manage Child Accounts';
+  String get manageChildAccounts => '[CY] Manage Child Accounts (Welsh)';
 
   @override
-  String get grantConsent => 'Grant Consent';
+  String get grantConsent => '[CY] Grant Consent (Welsh)';
 
   @override
-  String get myProfile1 => 'My Profile';
+  String get myProfile1 => '[CY] My Profile (Welsh)';
 
   @override
-  String get submit => 'Submit';
+  String get submit => '[CY] Submit (Welsh)';
 
   @override
   String userLoguseremail(Object userEmail) {
-    return 'User: $userEmail';
+    return '[CY] User: $userEmail';
   }
 
   @override
-  String get emailNotifications => 'Email Notifications';
+  String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard => 'Ambassador Dashboard';
+  String get ambassadorDashboard => '[CY] Ambassador Dashboard (Welsh)';
 
   @override
-  String get phoneBooking => 'Phone Booking';
+  String get phoneBooking => '[CY] Phone Booking (Welsh)';
 
   @override
-  String get bookViaChat => 'Book via Chat';
+  String get bookViaChat => '[CY] Book via Chat (Welsh)';
 
   @override
-  String get error => 'Gwall';
+  String get error => '[CY] Gwall';
 
   @override
-  String get businessProfile => 'Business Profile';
+  String get businessProfile => '[CY] Business Profile (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Booking Entry Screen - Coming Soon';
+      '[CY] Business Booking Entry Screen - Coming Soon (Welsh)';
 
   @override
-  String get createNewSurvey => 'Create New Survey';
+  String get createNewSurvey => '[CY] Create New Survey (Welsh)';
 
   @override
-  String get backgroundRejected => 'Background rejected';
+  String get backgroundRejected => '[CY] Background rejected (Welsh)';
 
   @override
-  String get noMediaSelected => 'No media selected';
+  String get noMediaSelected => '[CY] No media selected (Welsh)';
 
   @override
-  String get syncToGoogle => 'Sync to Google';
+  String get syncToGoogle => '[CY] Sync to Google (Welsh)';
 
   @override
-  String get virtualPlaytime => 'Virtual Playtime';
+  String get virtualPlaytime => '[CY] Virtual Playtime (Welsh)';
 
   @override
-  String get colorContrastTesting => 'Color Contrast Testing';
+  String get colorContrastTesting => '[CY] Color Contrast Testing';
 
   @override
-  String get loginFailedE => 'Login failed: \$e';
+  String get loginFailedE => '[CY] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => 'Invitation sent successfully!';
+  String get invitationSentSuccessfully =>
+      '[CY] Invitation sent successfully! (Welsh)';
 
   @override
-  String get registering => 'Registering...';
+  String get registering => '[CY] Registering... (Welsh)';
 
   @override
   String statusAppointmentstatusname(Object status) {
-    return 'Status: $status';
+    return '[CY] Status: $status (Welsh)';
   }
 
   @override
-  String get home1 => 'Home';
+  String get home1 => '[CY] Home (Welsh)';
 
   @override
-  String get errorSavingSettingsE => 'Error saving settings: \$e';
+  String get errorSavingSettingsE => '[CY] Error saving settings: \$e (Welsh)';
 
   @override
-  String get appVersionAndInformation => 'App version and information';
+  String get appVersionAndInformation =>
+      '[CY] App version and information (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Subscription Entry Screen - Coming Soon';
+      '[CY] Business Subscription Entry Screen - Coming Soon (Welsh)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
-    return '$key: $value';
+    return '[CY] $key: $value (Welsh)';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Your payment has been processed successfully.';
+      '[CY] Your payment has been processed successfully. (Welsh)';
 
   @override
-  String get errorE => 'Error: \$e';
+  String get errorE => '[CY] Error: \$e (Welsh)';
 
   @override
-  String get viewAll1 => 'View All';
+  String get viewAll1 => '[CY] View All (Welsh)';
 
   @override
-  String get editSurveyComingSoon => 'Edit survey - Coming soon!';
+  String get editSurveyComingSoon => '[CY] Edit survey - Coming soon! (Welsh)';
 
   @override
-  String get enterOtp => 'Enter OTP';
+  String get enterOtp => '[CY] Enter OTP (Welsh)';
 
   @override
-  String get payment => 'Payment';
+  String get payment => '[CY] Payment (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Automatically confirm new booking requests';
+      '[CY] Automatically confirm new booking requests (Welsh)';
 
   @override
-  String get errorPickingVideoE => 'Error picking video: \$e';
+  String errorPickingVideoE(Object e) {
+    return 'خطأ في اختيار الفيديو: $e';
+  }
 
   @override
   String noRouteDefinedForSettingsname(Object settingsName) {
-    return 'No route defined for $settingsName';
+    return '[CY] No route defined for $settingsName (Welsh)';
   }
 
   @override
   String get pleaseSignInToUploadABackground =>
-      'Please sign in to upload a background';
+      '[CY] Please sign in to upload a background (Welsh)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
-    return '$targetType: $targetId';
+    return '[CY] $targetType: $targetId';
   }
 
   @override
-  String get staffAvailability => 'Staff Availability';
+  String get staffAvailability => '[CY] Staff Availability (Welsh)';
 
   @override
-  String get livePlaytime => 'Live Playtime';
+  String get livePlaytime => '[CY] Live Playtime (Welsh)';
 
   @override
-  String get autoconfirmBookings => 'Auto-Confirm Bookings';
+  String get autoconfirmBookings => '[CY] Auto-Confirm Bookings (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Redirecting to Stripe checkout for Pro plan...';
+      '[CY] Redirecting to Stripe checkout for Pro plan... (Welsh)';
 
   @override
-  String get exportAsCsv => 'Export as CSV';
+  String get exportAsCsv => '[CY] Export as CSV (Welsh)';
 
   @override
   String get deleteFunctionalityComingSoon =>
-      'Delete functionality coming soon!';
+      '[CY] Delete functionality coming soon! (Welsh)';
 
   @override
-  String get editClient => 'Edit Client';
+  String get editClient => '[CY] Edit Client (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to delete this message?';
+      '[CY] Are you sure you want to delete this message? (Welsh)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
-    return 'Referrals: $referrals';
+    return '[CY] Referrals: $referrals (Welsh)';
   }
 
   @override
-  String get notAuthenticated => 'Not authenticated';
+  String get notAuthenticated => '[CY] Not authenticated';
 
   @override
   String get privacyRequestSentToYourParents =>
-      'Privacy request sent to your parents!';
+      '[CY] Privacy request sent to your parents! (Welsh)';
 
   @override
-  String get clientDeletedSuccessfully => 'Client deleted successfully!';
+  String get clientDeletedSuccessfully =>
+      '[CY] Client deleted successfully! (Welsh)';
 
   @override
-  String get failedToCancelSubscription => 'Failed to cancel subscription';
+  String get failedToCancelSubscription =>
+      '[CY] Failed to cancel subscription (Welsh)';
 
   @override
-  String get allLanguages => 'All Languages';
+  String get allLanguages => '[CY] All Languages (Welsh)';
 
   @override
-  String get slotDeletedSuccessfully => 'Slot deleted successfully';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Business Providers Entry Screen - Coming Soon';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Parents must approve before children can join';
-
-  @override
-  String get subscribeToPro1499mo => 'Subscribe to Pro (€14.99/mo)';
+  String get slotDeletedSuccessfully =>
+      '[CY] Slot deleted successfully (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Availability Entry Screen - Coming Soon';
+      '[CY] Business Providers Entry Screen - Coming Soon';
+
+  @override
+  String get REDACTED_TOKEN =>
+      '[CY] Parents must approve before children can join (Welsh)';
+
+  @override
+  String get subscribeToPro1499mo =>
+      '[CY] Subscribe to Pro (€14.99/mo) (Welsh)';
+
+  @override
+  String get REDACTED_TOKEN =>
+      '[CY] Business Availability Entry Screen - Coming Soon (Welsh)';
 
   @override
   String appointmentsListlength(Object count) {
-    return 'Appointments: $count';
+    return '[CY] Appointments: $count (Welsh)';
   }
 
   @override
-  String get clearFilters => 'Clear Filters';
+  String get clearFilters => '[CY] Clear Filters (Welsh)';
 
   @override
-  String get submitBooking => 'Submit Booking';
+  String get submitBooking => '[CY] Submit Booking (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to cancel this appointment?';
+      '[CY] Are you sure you want to cancel this appointment? (Welsh)';
 
   @override
-  String get noUpcomingBookings => 'No upcoming bookings';
+  String get noUpcomingBookings => '[CY] No upcoming bookings (Welsh)';
 
   @override
-  String get goBack => 'Go Back';
+  String get goBack => '[CY] Go Back (Welsh)';
 
   @override
-  String get setup => 'Setup';
+  String get setup => '[CY] Setup (Welsh)';
 
   @override
-  String get inviteChild => 'Invite Child';
+  String get inviteChild => '[CY] Invite Child (Welsh)';
 
   @override
-  String get goToDashboard => 'Go to Dashboard';
+  String get goToDashboard => '[CY] Go to Dashboard (Welsh)';
 
   @override
-  String get ambassadorQuotaDashboard => 'Ambassador Quota Dashboard';
+  String get ambassadorQuotaDashboard =>
+      '[CY] Ambassador Quota Dashboard (Welsh)';
 
   @override
-  String get adminSettings => 'Admin Settings';
+  String get adminSettings => '[CY] Admin Settings';
 
   @override
-  String get referralCode => 'Referral Code';
+  String get referralCode => '[CY] Referral Code (Welsh)';
 
   @override
   String adminLogadminemail(Object adminEmail) {
-    return 'Admin: $adminEmail';
+    return '[CY] Admin: $adminEmail';
   }
 
   @override
-  String get date => 'Date';
+  String get date => '[CY] Date (Welsh)';
 
   @override
-  String get readOnly => 'Read Only';
+  String get readOnly => '[CY] Read Only (Welsh)';
 
   @override
-  String get bookingRequest => 'Booking Request';
+  String get bookingRequest => '[CY] Booking Request (Welsh)';
 
   @override
-  String get advancedReporting => '• Advanced reporting';
+  String get advancedReporting => '[CY] • Advanced reporting (Welsh)';
 
   @override
-  String get rooms => 'Rooms';
+  String get rooms => '[CY] Rooms (Welsh)';
 
   @override
-  String get copiedToClipboard => 'Copied to clipboard';
+  String get copiedToClipboard => '[CY] Copied to clipboard (Welsh)';
 
   @override
-  String get bookingConfirmed => 'Booking Confirmed';
+  String get bookingConfirmed => '[CY] Booking Confirmed (Welsh)';
 
   @override
-  String get sessionApproved => 'Session approved!';
+  String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => 'Client added successfully!';
+  String get clientAddedSuccessfully =>
+      '[CY] Client added successfully! (Welsh)';
 
   @override
-  String get noNotifications => 'No notifications';
+  String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved => 'Background approved!';
+  String get backgroundApproved => '[CY] Background approved! (Welsh)';
 
   @override
-  String get familySupport => 'Family Support';
+  String get familySupport => '[CY] Family Support (Welsh)';
 
   @override
-  String get deletingAccount => 'Deleting account...';
+  String get deletingAccount => '[CY] Deleting account... (Welsh)';
 
   @override
-  String get bookAppointment => 'Book Appointment';
+  String get bookAppointment => '[CY] Book Appointment (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Receive push notifications for new bookings';
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
-  String get delete1 => 'Delete';
+  String get delete1 => '[CY] Delete (Welsh)';
 
   @override
-  String get sendBookingInvite => 'Send Booking Invite';
+  String get sendBookingInvite => '[CY] Send Booking Invite (Welsh)';
 
   @override
-  String get text => 'Text';
+  String get text => '[CY] Text (Welsh)';
 
   @override
-  String get manageSubscription => 'Manage Subscription';
+  String get manageSubscription => '[CY] Manage Subscription (Welsh)';
 
   @override
-  String get requiresInstallFallback => 'Requires Install Fallback';
+  String get requiresInstallFallback =>
+      '[CY] Requires Install Fallback (Welsh)';
 
   @override
-  String get paymentConfirmation => 'Payment Confirmation';
+  String get paymentConfirmation => '[CY] Payment Confirmation (Welsh)';
 
   @override
   String get promoAppliedYourNextBillIsFree =>
-      'Promo applied! Your next bill is free.';
+      '[CY] Promo applied! Your next bill is free. (Welsh)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
-    return 'Invitee: $inviteeId';
+    return 'المدعو: $inviteeId';
   }
 
   @override
-  String get errorLoadingSlots => 'Error loading slots';
+  String get errorLoadingSlots => '[CY] Error loading slots (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Allow other users to find and join this game';
+      '[CY] Allow other users to find and join this game (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Onboarding Screen - Coming Soon';
+      '[CY] Business Onboarding Screen - Coming Soon (Welsh)';
 
   @override
-  String get activateBusinessProfile => 'Activate Business Profile';
+  String get activateBusinessProfile =>
+      '[CY] Activate Business Profile (Welsh)';
 
   @override
-  String get contentNotFound => 'Content not found';
+  String get contentNotFound => '[CY] Content not found (Welsh)';
 
   @override
   String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
-    return '$specialty\\n$contactInfo';
+    return '[CY] $specialty\\n$contactInfo (Welsh)';
   }
 
   @override
-  String get rating => 'Rating';
+  String get rating => '[CY] Rating (Welsh)';
 
   @override
-  String get messages => 'Messages';
+  String get messages => '[CY] Messages (Welsh)';
 
   @override
-  String get errorEstimatingRecipientsE => 'Error estimating recipients: \$e';
+  String errorEstimatingRecipientsE(Object e) {
+    return 'خطأ في تقدير المستلمين: $e';
+  }
 
   @override
-  String get becomeAnAmbassador => 'Become an Ambassador';
+  String get becomeAnAmbassador => '[CY] Become an Ambassador (Welsh)';
 
   @override
-  String get subscribeNow => 'Subscribe Now';
+  String get subscribeNow => '[CY] Subscribe Now (Welsh)';
 
   @override
   String timeArgsslotformatcontext(Object time) {
-    return 'Time: $time';
+    return '[CY] Time: $time (Welsh)';
   }
 
   @override
-  String get shareViaWhatsapp => 'Share via WhatsApp';
+  String get shareViaWhatsapp => '[CY] Share via WhatsApp (Welsh)';
 
   @override
-  String get users1 => 'Users';
+  String get users1 => '[CY] Users (Welsh)';
 
   @override
-  String get shareLink => 'Share Link';
+  String get shareLink => '[CY] Share Link (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to delete this provider?';
+      '[CY] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment => 'Delete Appointment';
+  String get deleteAppointment => '[CY] Delete Appointment (Welsh)';
 
   @override
-  String get toggleAvailability => 'Toggle Availability';
+  String get toggleAvailability => '[CY] Toggle Availability (Welsh)';
 
   @override
-  String get changePlan => 'Change Plan';
+  String get changePlan => '[CY] Change Plan (Welsh)';
 
   @override
-  String get errorLoadingStaff => 'Error loading staff';
+  String get errorLoadingStaff => '[CY] Error loading staff (Welsh)';
 
   @override
-  String get errorLoadingConfigurationE => 'Error loading configuration: \$e';
+  String errorLoadingConfigurationE(Object e) {
+    return 'خطأ في تحميل التكوين: $e';
+  }
 
   @override
   String get updateYourBusinessInformation =>
-      'Update your business information';
+      '[CY] Update your business information (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'No providers found. Add your first provider!';
+      '[CY] No providers found. Add your first provider!';
 
   @override
-  String get parentDashboard => 'Parent Dashboard';
+  String get parentDashboard => '[CY] Parent Dashboard (Welsh)';
 
   @override
-  String get menu => 'Menu';
+  String get menu => '[CY] Menu (Welsh)';
 
   @override
-  String get studioBooking => 'Studio Booking';
+  String get studioBooking => '[CY] Studio Booking (Welsh)';
 
   @override
-  String get about1 => 'About';
+  String get about1 => '[CY] About (Welsh)';
 
   @override
-  String get multipleChoice => 'Multiple Choice';
+  String get multipleChoice => '[CY] Multiple Choice (Welsh)';
 
   @override
   String REDACTED_TOKEN(Object date) {
-    return 'Date: $date';
+    return '[CY] Date: $date (Welsh)';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Studio booking is only available on web';
+      '[CY] Studio booking is only available on web (Welsh)';
 
   @override
-  String get errorLoadingBranchesE => 'Error loading branches: \$e';
+  String get errorLoadingBranchesE =>
+      '[CY] Error loading branches: \$e (Welsh)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
-    return '\\uD83D\\uDCC5 $dateTime';
+    return '[CY] \\uD83D\\uDCC5 $dateTime (Welsh)';
   }
 
   @override
   String appointmentInviteappointmentid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return 'دعوة الموعد: $appointmentId';
   }
 
   @override
-  String get none => 'None';
+  String get none => '[CY] None (Welsh)';
 
   @override
-  String get failedToUpdateConsentE => 'Failed to update consent: \$e';
+  String get failedToUpdateConsentE =>
+      '[CY] Failed to update consent: \$e (Welsh)';
 
   @override
-  String get welcome1 => 'Welcome';
+  String get welcome1 => '[CY] Welcome (Welsh)';
 
   @override
-  String get failedToCreateSessionE => 'Failed to create session: \$e';
+  String get failedToCreateSessionE =>
+      '[CY] Failed to create session: \$e (Welsh)';
 
   @override
-  String get inviteContact => 'Invite Contact';
+  String get inviteContact => '[CY] Invite Contact (Welsh)';
 
   @override
-  String get surveyEditor => 'Survey Editor';
+  String get surveyEditor => '[CY] Survey Editor (Welsh)';
 
   @override
   String get failedToStartBasicSubscriptionE =>
-      'Failed to start Basic subscription: \$e';
+      '[CY] Failed to start Basic subscription: \$e (Welsh)';
 
   @override
-  String get mySchedule => 'My Schedule';
+  String get mySchedule => '[CY] My Schedule (Welsh)';
 
   @override
-  String get studioDashboard => 'Studio Dashboard';
+  String get studioDashboard => '[CY] Studio Dashboard (Welsh)';
 
   @override
-  String get editProfile => 'Edit Profile';
+  String get editProfile => 'تحرير الملف الشخصي';
 
   @override
-  String get logout1 => 'Logout';
+  String get logout1 => '[CY] Logout';
 
   @override
   String serviceServiceidNotSelected(Object service) {
-    return 'Service: $service';
+    return '[CY] Service: $service';
   }
 
   @override
-  String get settingsSavedSuccessfully => 'Settings saved successfully!';
+  String get settingsSavedSuccessfully =>
+      '[CY] Settings saved successfully! (Welsh)';
 
   @override
-  String get linkCopiedToClipboard => 'Link copied to clipboard!';
+  String get linkCopiedToClipboard => '[CY] Link copied to clipboard! (Welsh)';
 
   @override
-  String get accept1 => 'Accept';
+  String get accept1 => '[CY] Accept (Welsh)';
 
   @override
-  String get noAvailableSlots => 'No available slots';
+  String get noAvailableSlots => '[CY] No available slots (Welsh)';
 
   @override
-  String get makeGamePublic => 'Make Game Public';
+  String get makeGamePublic => '[CY] Make Game Public (Welsh)';
 
   @override
   String REDACTED_TOKEN(Object category) {
-    return 'Permission $category updated to \$newValue';
+    return '[CY] Permission $category updated to \$newValue (Welsh)';
   }
 
   @override
-  String get roomDeletedSuccessfully => 'Room deleted successfully!';
+  String get roomDeletedSuccessfully =>
+      '[CY] Room deleted successfully! (Welsh)';
 
   @override
-  String get businessCalendar => 'Business Calendar';
+  String get businessCalendar => '[CY] Business Calendar (Welsh)';
 
   @override
-  String get addAvailability => 'Add Availability';
+  String get addAvailability => '[CY] Add Availability (Welsh)';
 
   @override
-  String get ambassadorOnboarding => 'Ambassador Onboarding';
+  String get ambassadorOnboarding => '[CY] Ambassador Onboarding (Welsh)';
 
   @override
   String phoneProfileasyncphone(Object phone) {
-    return 'Phone: $phone';
+    return '[CY] Phone: $phone (Welsh)';
   }
 
   @override
-  String get addNewRoom => 'Add New Room';
+  String get addNewRoom => '[CY] Add New Room (Welsh)';
 
   @override
-  String get requireParentApproval => 'Require Parent Approval';
+  String get requireParentApproval => '[CY] Require Parent Approval (Welsh)';
 
   @override
-  String get closed => 'Closed';
+  String get closed => '[CY] Closed (Welsh)';
 
   @override
-  String get exportAsPdf => 'Export as PDF';
+  String get exportAsPdf => '[CY] Export as PDF (Welsh)';
 
   @override
-  String get enableVibration => 'Enable Vibration';
+  String get enableVibration => '[CY] Enable Vibration (Welsh)';
 
   @override
   String toAvailendformatcontext(Object endTime) {
-    return 'To: $endTime';
+    return '[CY] To: $endTime (Welsh)';
   }
 
   @override
-  String get yourUpgradeCodeUpgradecode => 'Your upgrade code: \$upgradeCode';
+  String yourUpgradeCodeUpgradecode(Object upgradeCode) {
+    return '[CY] Your upgrade code: \$upgradeCode (Welsh)';
+  }
 
   @override
-  String get requestPrivateSession => 'requestPrivateSession (TRANSLATE)';
+  String get requestPrivateSession => '[CY] requestPrivateSession (TRANSLATE)';
 
   @override
-  String get country => 'Country';
+  String get country => '[CY] Country (Welsh)';
 
   @override
-  String get loginScreen => 'Login Screen';
+  String get loginScreen => '[CY] Login Screen';
 
   @override
   String staffArgsstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[CY] Staff: $staffName (Welsh)';
   }
 
   @override
-  String get revokeConsent => 'Revoke Consent';
+  String get revokeConsent => '[CY] Revoke Consent (Welsh)';
 
   @override
-  String get settings1 => 'Settings';
+  String get settings1 => '[CY] Settings (Welsh)';
 
   @override
-  String get cancel1 => 'Cancel';
+  String get cancel1 => '[CY] Cancel (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Subscription activated successfully!';
+      '[CY] Subscription activated successfully! (Welsh)';
 
   @override
   String activityLogaction(Object action) {
-    return 'Activity: $action';
+    return '[CY] Activity: $action';
   }
 
   @override
-  String get broadcast => 'Broadcast';
+  String get broadcast => '[CY] Broadcast (Welsh)';
 
   @override
-  String get noEventsScheduledThisWeek => 'No events scheduled this week';
+  String get noEventsScheduledThisWeek =>
+      '[CY] No events scheduled this week (Welsh)';
 
   @override
-  String get googleCalendar => 'Google Calendar';
+  String get googleCalendar => '[CY] Google Calendar (Welsh)';
 
   @override
-  String get sendInvite => 'Send Invite';
+  String get sendInvite => 'إرسال دعوة';
 
   @override
-  String get childDashboard => 'Child Dashboard';
+  String get childDashboard => '[CY] Child Dashboard (Welsh)';
 
   @override
-  String get failedToUploadBackgroundE => 'Failed to upload background: \$e';
+  String get failedToUploadBackgroundE =>
+      '[CY] Failed to upload background: \$e (Welsh)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
-    return '$linkId...';
+    return '[CY] $linkId...';
   }
 
   @override
   String targetLogtargettypeLogtargetid(Object targetId, Object targetType) {
-    return 'Target: $targetType - $targetId';
+    return '[CY] Target: $targetType - $targetId';
   }
 
   @override
-  String get contextContextid => 'Context: \$contextId';
+  String get contextContextid => '[CY] Context: \$contextId';
 
   @override
-  String get noAppointments => 'No appointments';
+  String get noAppointments => '[CY] No appointments (Welsh)';
 
   @override
-  String get unlimitedBookingsPerWeek => '• Unlimited bookings per week';
+  String get unlimitedBookingsPerWeek =>
+      '[CY] • Unlimited bookings per week (Welsh)';
 
   @override
-  String errorDetailsLogerrortype(Object errorType) {
-    return 'Error Details: $errorType';
+  String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
+    return 'تفاصيل الخطأ: $logErrorType';
   }
 
   @override
-  String get scheduledAtScheduledat => 'Scheduled at: \$scheduledAt';
+  String get scheduledAtScheduledat =>
+      '[CY] Scheduled at: \$scheduledAt (Welsh)';
 
   @override
-  String get selectStaff => 'Select Staff';
+  String get selectStaff => '[CY] Select Staff (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Subscription cancelled successfully';
+      '[CY] Subscription cancelled successfully (Welsh)';
 
   @override
   String get pleaseLogInToViewYourProfile =>
-      'Please log in to view your profile.';
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment => 'Cancel Appointment';
+  String get cancelAppointment => '[CY] Cancel Appointment (Welsh)';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
-    return 'Permissions - $childId';
+    return '[CY] Permissions - $childId';
   }
 
   @override
-  String get businessSignup => 'Business Signup';
+  String get businessSignup => '[CY] Business Signup (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Completion Screen - Coming Soon';
+      '[CY] Business Completion Screen - Coming Soon (Welsh)';
 
   @override
-  String get createGame1 => 'Create Game';
+  String get createGame1 => '[CY] Create Game (Welsh)';
 
   @override
   String valuetoint(Object value) {
-    return '$value';
+    return '[CY] $value (Welsh)';
   }
 
   @override
-  String get pleaseEnterAPromoCode => 'Please enter a promo code';
+  String get pleaseEnterAPromoCode => '[CY] Please enter a promo code (Welsh)';
 
   @override
-  String get errorLoadingAvailabilityE => 'Error loading availability: \$e';
+  String get errorLoadingAvailabilityE =>
+      '[CY] Error loading availability: \$e (Welsh)';
 
   @override
-  String get parentalControls => 'Parental Controls';
+  String get parentalControls => '[CY] Parental Controls (Welsh)';
 
   @override
-  String get editBusinessProfile => 'Edit Business Profile';
+  String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => 'Child linked successfully!';
+  String get childLinkedSuccessfully =>
+      '[CY] Child linked successfully! (Welsh)';
 
   @override
-  String get create => 'Create';
+  String get create => '[CY] Create (Welsh)';
 
   @override
-  String get noExternalMeetingsFound => 'No external meetings found.';
+  String get noExternalMeetingsFound =>
+      '[CY] No external meetings found. (Welsh)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[CY] Staff: $staffName (Welsh)';
   }
 
   @override
   String get pleaseEnterAValidEmailAddress =>
-      'Please enter a valid email address';
+      '[CY] Please enter a valid email address';
 
   @override
-  String get schedulerScreen => 'Scheduler Screen';
+  String get schedulerScreen => '[CY] Scheduler Screen (Welsh)';
 
   @override
-  String get clientUpdatedSuccessfully => 'Client updated successfully!';
+  String get clientUpdatedSuccessfully =>
+      '[CY] Client updated successfully! (Welsh)';
 
   @override
-  String get surveyResponses => 'Survey Responses';
+  String get surveyResponses => '[CY] Survey Responses (Welsh)';
 
   @override
-  String get syncToOutlook => 'Sync to Outlook';
+  String get syncToOutlook => '[CY] Sync to Outlook (Welsh)';
 
   @override
-  String get saveChanges => 'Save Changes';
+  String get saveChanges => '[CY] Save Changes (Welsh)';
 
   @override
-  String get pickTime => 'Pick Time';
+  String get pickTime => '[CY] Pick Time (Welsh)';
 
   @override
   String registrationFailedEtostring(Object error) {
-    return 'Registration failed: $error';
+    return '[CY] Registration failed: $error (Welsh)';
   }
 
   @override
-  String get analytics => 'Analytics';
+  String get analytics => '[CY] Analytics (Welsh)';
 
   @override
-  String get errorLoadingEvents => 'Error loading events';
+  String get errorLoadingEvents => '[CY] Error loading events (Welsh)';
 
   @override
   String get errorLoadingOrganizations =>
-      'errorLoadingOrganizations (TRANSLATE)';
+      '[CY] errorLoadingOrganizations (TRANSLATE)';
 
   @override
   String get businessLoginScreenComingSoon =>
-      'Business Login Screen - Coming Soon';
+      '[CY] Business Login Screen - Coming Soon';
 
   @override
-  String get success1 => 'Success';
+  String get success1 => '[CY] Success (Welsh)';
 
   @override
   String appVersionLogappversion(Object appVersion) {
-    return 'App Version: $appVersion';
+    return '[CY] App Version: $appVersion';
   }
 
   @override
   String fromAvailstartformatcontext(Object startTime) {
-    return 'From: $startTime';
+    return '[CY] From: $startTime (Welsh)';
   }
 
   @override
-  String get readWrite => 'Read & Write';
+  String get readWrite => '[CY] Read & Write (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Redirecting to Stripe checkout for Basic plan...';
+      '[CY] Redirecting to Stripe checkout for Basic plan... (Welsh)';
 
   @override
-  String get errorSavingConfigurationE => 'Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[CY] Error saving configuration: \$e';
 
   @override
-  String get pickDate => 'Pick Date';
+  String get pickDate => '[CY] Pick Date (Welsh)';
 
   @override
-  String get chatBooking => 'Chat Booking';
+  String get chatBooking => '[CY] Chat Booking (Welsh)';
 
   @override
-  String get noQuestionsAdded => 'No questions added';
+  String get noQuestionsAdded => '[CY] No questions added (Welsh)';
 
   @override
   String severityLogseverityname(Object severity) {
-    return 'Severity: $severity';
+    return '[CY] Severity: $severity';
   }
 
   @override
-  String get markAsPaid => 'Mark as Paid';
+  String get markAsPaid => '[CY] Mark as Paid';
 
   @override
-  String get typeOpenCall => 'Type: Open Call';
+  String get typeOpenCall => '[CY] Type: Open Call (Welsh)';
 
   @override
   String appointmentAppointmentid(Object appointmentId) {
-    return 'Appointment $appointmentId';
+    return '[CY] Appointment $appointmentId';
   }
 
   @override
-  String statusInvitestatusname(Object status) {
-    return 'Status: $status';
+  String statusInvitestatusname(Object inviteStatusName, Object status) {
+    return 'الحالة: $inviteStatusName';
   }
 
   @override
-  String get businessLogin => 'Business Login';
+  String get businessLogin => '[CY] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => 'Invoice created successfully!';
+  String get invoiceCreatedSuccessfully =>
+      '[CY] Invoice created successfully! (Welsh)';
 
   @override
-  String get noTimeSeriesDataAvailable => 'No time series data available';
+  String get noTimeSeriesDataAvailable =>
+      '[CY] No time series data available (Welsh)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
-    return 'Subscribe to $planName';
+    return '[CY] Subscribe to $planName';
   }
 
   @override
   String REDACTED_TOKEN(Object timestamp) {
-    return 'Timestamp: $timestamp';
+    return '[CY] Timestamp: $timestamp';
   }
 
   @override
   String get failedToSendPrivacyRequestE =>
-      'Failed to send privacy request: \$e';
+      '[CY] Failed to send privacy request: \$e (Welsh)';
 
   @override
-  String get chooseYourPlan => 'Choose Your Plan';
+  String get chooseYourPlan => '[CY] Choose Your Plan (Welsh)';
 
   @override
-  String get playtimeManagement => 'Playtime Management';
+  String get playtimeManagement => '[CY] Playtime Management (Welsh)';
 
   @override
-  String get availability => 'Availability';
+  String get availability => '[CY] Availability (Welsh)';
 
   @override
-  String get eventCreated => 'Event created';
+  String get eventCreated => '[CY] Event created (Welsh)';
 
   @override
-  String get subscribeToBasic499mo => 'Subscribe to Basic (€4.99/mo)';
+  String get subscribeToBasic499mo =>
+      '[CY] Subscribe to Basic (€4.99/mo) (Welsh)';
 
   @override
-  String get completion => 'Completion';
+  String get completion => '[CY] Completion (Welsh)';
 
   @override
-  String get supportTicketSubmitted => 'Support ticket submitted';
+  String get supportTicketSubmitted => '[CY] Support ticket submitted (Welsh)';
 
   @override
-  String get monetizationSettings => 'Monetization Settings';
+  String get monetizationSettings => '[CY] Monetization Settings (Welsh)';
 
   @override
-  String get noBookingsFound => 'No bookings found';
+  String get noBookingsFound => '[CY] No bookings found (Welsh)';
 
   @override
-  String get admin => 'Admin';
+  String get admin => '[CY] Admin';
 
   @override
-  String get deleteSurvey => 'Delete Survey';
+  String get deleteSurvey => '[CY] Delete Survey (Welsh)';
 
   @override
-  String get gameApprovedSuccessfully => 'Game approved successfully!';
+  String get gameApprovedSuccessfully =>
+      '[CY] Game approved successfully! (Welsh)';
 
   @override
   String get errorLoadingPermissionsError =>
-      'Error loading permissions: \$error';
+      '[CY] Error loading permissions: \$error (Welsh)';
 
   @override
-  String get referrals => 'Referrals';
+  String get referrals => '[CY] Referrals (Welsh)';
 
   @override
-  String get crm => 'CRM';
+  String get crm => '[CY] CRM (Welsh)';
 
   @override
-  String get gameRejected => 'Game rejected';
+  String get gameRejected => '[CY] Game rejected (Welsh)';
 
   @override
-  String get appointments => 'Appointments';
+  String get appointments => '[CY] Appointments (Welsh)';
 
   @override
-  String get onboardingScreen => 'Onboarding Screen';
+  String get onboardingScreen => '[CY] Onboarding Screen (Welsh)';
 
   @override
-  String get welcomeToYourStudio => 'Welcome to your studio';
+  String get welcomeToYourStudio => '[CY] Welcome to your studio (Welsh)';
 
   @override
-  String get update => 'Update';
+  String get update => '[CY] Update (Welsh)';
 
   @override
-  String get retry1 => 'Retry';
+  String get retry1 => '[CY] Retry (Welsh)';
 
   @override
-  String get booking => 'Booking';
+  String get booking => '[CY] Booking (Welsh)';
 
   @override
-  String get parentalSettings => 'Parental Settings';
+  String get parentalSettings => '[CY] Parental Settings (Welsh)';
 
   @override
-  String get language => 'Language';
+  String get language => '[CY] Language (Welsh)';
 
   @override
-  String get deleteSlot => 'Delete Slot';
+  String get deleteSlot => '[CY] Delete Slot (Welsh)';
 
   @override
-  String get organizations => 'organizations (TRANSLATE)';
+  String get organizations => '[CY] organizations (TRANSLATE)';
 
   @override
   String get configurationSavedSuccessfully =>
-      'Configuration saved successfully!';
+      '[CY] Configuration saved successfully!';
 
   @override
-  String get createNewGame => 'Create New Game';
+  String get createNewGame => '[CY] Create New Game (Welsh)';
 
   @override
-  String get next1 => 'Next';
+  String get next1 => '[CY] Next (Welsh)';
 
   @override
   String get backgroundUploadedSuccessfully =>
-      'Background uploaded successfully!';
+      '[CY] Background uploaded successfully! (Welsh)';
 
   @override
-  String get noAppointmentRequestsFound => 'No appointment requests found.';
+  String get noAppointmentRequestsFound =>
+      '[CY] No appointment requests found. (Welsh)';
 
   @override
-  String get pleaseSignInToCreateASession =>
-      'Please sign in to create a session';
+  String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => 'Restrict mature content';
+  String get restrictMatureContent => '[CY] Restrict mature content (Welsh)';
 
   @override
-  String get ambassadors => 'Ambassadors';
+  String get ambassadors => '[CY] Ambassadors (Welsh)';
 
   @override
-  String get smsNotifications => 'SMS Notifications';
+  String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled => 'Payment was cancelled';
+  String get paymentWasCancelled => '[CY] Payment was cancelled (Welsh)';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => '[CY] Clear All (Welsh)';
 
   @override
-  String get viewDetails => 'View Details';
+  String get viewDetails => '[CY] View Details (Welsh)';
 
   @override
-  String get notifications1 => 'Notifications';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Live session scheduled! Waiting for parent approval...';
-
-  @override
-  String get failedToCreateGameE => 'Failed to create game: \$e';
-
-  @override
-  String get noChartDataAvailable => 'No chart data available';
-
-  @override
-  String get phonebasedBookingSystem => '• Phone-based booking system';
-
-  @override
-  String get enableNotifications1 => 'Enable Notifications';
-
-  @override
-  String get invoices => 'Invoices';
+  String get notifications1 => 'الإشعارات';
 
   @override
   String get REDACTED_TOKEN =>
-      'Please activate your business profile to continue.';
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+
+  @override
+  String get failedToCreateGameE => '[CY] Failed to create game: \$e (Welsh)';
+
+  @override
+  String get noChartDataAvailable => '[CY] No chart data available (Welsh)';
+
+  @override
+  String get phonebasedBookingSystem =>
+      '[CY] • Phone-based booking system (Welsh)';
+
+  @override
+  String get enableNotifications1 => 'تفعيل الإشعارات';
+
+  @override
+  String get invoices => '[CY] Invoices (Welsh)';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
-    return 'Scheduled at: $scheduledAt';
+    return '[CY] Scheduled at: $scheduledAt (Welsh)';
   }
 
   @override
   String REDACTED_TOKEN(Object duration) {
-    return 'Duration: $duration minutes';
+    return '[CY] Duration: $duration minutes (Welsh)';
   }
 
   @override
-  String get tryAgain => 'Try Again';
+  String get tryAgain => '[CY] Try Again (Welsh)';
 
   @override
-  String get deleteBackground => 'Delete Background';
+  String get deleteBackground => '[CY] Delete Background (Welsh)';
 
   @override
   String currentTierTiertouppercase(Object tier) {
-    return 'Current Tier: $tier';
+    return '[CY] Current Tier: $tier (Welsh)';
   }
 
   @override
-  String get iDoNotConsent => 'I Do Not Consent';
+  String get iDoNotConsent => '[CY] I Do Not Consent';
 
   @override
   String get REDACTED_TOKEN =>
-      'No clients found. Add your first client!';
+      '[CY] No clients found. Add your first client! (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Settings dialog will be implemented here.';
+      '[CY] Settings dialog will be implemented here.';
 
   @override
-  String get groupGroupid => 'Group: \$groupId';
+  String get groupGroupid => '[CY] Group: \$groupId';
 
   @override
-  String get appointmentRequests => 'Appointment Requests';
+  String get appointmentRequests => '[CY] Appointment Requests (Welsh)';
 
   @override
-  String get forward => 'Forward';
+  String get forward => '[CY] Forward (Welsh)';
 
   @override
-  String get roomAddedSuccessfully => 'Room added successfully!';
+  String get roomAddedSuccessfully => '[CY] Room added successfully! (Welsh)';
 
   @override
-  String get option => '• \$option';
+  String get option => '[CY] • \$option (Welsh)';
 
   @override
   String responseIndex1(Object number) {
-    return 'Response #$number';
+    return '[CY] Response #$number (Welsh)';
   }
 
   @override
-  String get crmDashboardWithAnalytics => '• CRM dashboard with analytics';
+  String get crmDashboardWithAnalytics =>
+      '[CY] • CRM dashboard with analytics (Welsh)';
 
   @override
-  String get contentLibrary1 => 'Content Library';
+  String get contentLibrary1 => '[CY] Content Library (Welsh)';
 
   @override
-  String get reply => 'Reply';
+  String get reply => '[CY] Reply (Welsh)';
 
   @override
-  String get subscriptionManagement => 'Subscription Management';
+  String get subscriptionManagement => '[CY] Subscription Management (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Monetization settings will be implemented here';
+      '[CY] Monetization settings will be implemented here (Welsh)';
 
   @override
-  String get failedToApplyPromoCodeE => 'Failed to apply promo code: \$e';
+  String get failedToApplyPromoCodeE =>
+      '[CY] Failed to apply promo code: \$e (Welsh)';
 
   @override
-  String get editProvider => 'Edit Provider';
+  String get editProvider => '[CY] Edit Provider';
 
   @override
-  String get localizationContribution => 'Localization Contribution';
+  String get localizationContribution =>
+      '[CY] Localization Contribution (Welsh)';
 
   @override
-  String get parentalConsent => 'Parental Consent';
+  String get parentalConsent => '[CY] Parental Consent (Welsh)';
 
   @override
   String get businessSignupScreenComingSoon =>
-      'Business Signup Screen - Coming Soon';
+      '[CY] Business Signup Screen - Coming Soon (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to delete this appointment?';
+      '[CY] Are you sure you want to delete this appointment? (Welsh)';
 
   @override
-  String get syncAppointment => 'Sync Appointment';
+  String get syncAppointment => '[CY] Sync Appointment (Welsh)';
 
   @override
-  String get iConsent => 'I Consent';
+  String get iConsent => '[CY] I Consent (Welsh)';
 
   @override
-  String get sessionRejected => 'Session rejected';
+  String get sessionRejected => 'تم رفض الجلسة';
 
   @override
   String get businessSetupScreenComingSoon =>
-      'Business Setup Screen - Coming Soon';
+      '[CY] Business Setup Screen - Coming Soon (Welsh)';
 
   @override
-  String get edit1 => 'Edit';
+  String get edit1 => '[CY] Edit (Welsh)';
 
   @override
-  String get noEventsScheduledThisMonth => 'No events scheduled this month';
+  String get noEventsScheduledThisMonth =>
+      '[CY] No events scheduled this month (Welsh)';
 
   @override
-  String get businessDashboard => 'Business Dashboard';
+  String get businessDashboard => '[CY] Business Dashboard (Welsh)';
 
   @override
-  String get noMessagesFound => 'No messages found.';
+  String get noMessagesFound => '[CY] No messages found. (Welsh)';
 
   @override
   String staffStaffidNotSelected(Object staff) {
-    return 'Staff: $staff';
+    return '[CY] Staff: $staff';
   }
 
   @override
-  String get manageStaffAvailability => 'Manage Staff Availability';
+  String get manageStaffAvailability =>
+      '[CY] Manage Staff Availability (Welsh)';
 
   @override
-  String get noMissingTranslations => 'No missing translations';
+  String get noMissingTranslations => '[CY] No missing translations (Welsh)';
 
   @override
-  String get skip => 'Skip';
+  String get skip => '[CY] Skip (Welsh)';
 
   @override
-  String get meetingIdMeetingid => 'Meeting ID: \$meetingId';
+  String meetingIdMeetingid(Object meetingId) {
+    return 'معرف الاجتماع: $meetingId';
+  }
 
   @override
-  String get noUsers => 'noUsers (TRANSLATE)';
+  String get noUsers => '[CY] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => 'Error loading referral code';
+  String get errorLoadingReferralCode =>
+      '[CY] Error loading referral code (Welsh)';
 
   @override
-  String get allCountries => 'All Countries';
+  String get allCountries => '[CY] All Countries (Welsh)';
 
   @override
-  String get deleteGame => 'Delete Game';
+  String get deleteGame => '[CY] Delete Game (Welsh)';
 
   @override
-  String get staffManagementTools => '• Staff management tools';
+  String get staffManagementTools => '[CY] • Staff management tools (Welsh)';
 
   @override
-  String get deleteMessage => 'Delete Message';
+  String get deleteMessage => '[CY] Delete Message (Welsh)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Receive booking notifications via SMS';
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
-  String get changeRole => 'changeRole (TRANSLATE)';
+  String get changeRole => '[CY] changeRole (TRANSLATE)';
 
   @override
   String REDACTED_TOKEN(Object error) {
-    return 'Error loading bookings: $error';
+    return 'خطأ في تحميل لقطة الحجوزات: $error';
   }
 
   @override
-  String get openingCustomerPortal => 'Opening customer portal...';
+  String get openingCustomerPortal => '[CY] Opening customer portal... (Welsh)';
 
   @override
-  String get signOut => 'Sign Out';
+  String get signOut => '[CY] Sign Out (Welsh)';
 
   @override
   String nameProfilename(Object name) {
-    return 'Name: $name';
+    return '[CY] Name: $name (Welsh)';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Profile Entry Screen - Coming Soon';
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness => 'Upgrade to Business';
+  String get upgradeToBusiness => '[CY] Upgrade to Business (Welsh)';
 
   @override
-  String get apply => 'Apply';
+  String get apply => 'تطبيق';
 
   @override
-  String get errorLoadingSubscriptionError =>
-      'Error loading subscription: \$error';
+  String errorLoadingSubscriptionError(Object error) {
+    return 'خطأ في تحميل الاشتراك: $error';
+  }
 
   @override
-  String get errorLoadingUsers => 'errorLoadingUsers (TRANSLATE)';
+  String get errorLoadingUsers => 'خطأ في تحميل المستخدمين';
 
   @override
-  String get verify => 'Verify';
+  String get verify => 'التحقق';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'الاشتراك';
 
   @override
-  String get deleteMyAccount => 'Delete My Account';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Business Appointments Entry Screen - Coming Soon';
-
-  @override
-  String get viewResponses => 'View Responses';
-
-  @override
-  String get businessWelcomeScreenComingSoon =>
-      'Business Welcome Screen - Coming Soon';
-
-  @override
-  String get failedToOpenCustomerPortalE =>
-      'Failed to open customer portal: \$e';
-
-  @override
-  String get continueText => 'Continue';
-
-  @override
-  String get close1 => 'Close';
-
-  @override
-  String get confirm1 => 'Confirm';
-
-  @override
-  String get externalMeetings => 'External Meetings';
-
-  @override
-  String get approve => 'Approve';
+  String get deleteMyAccount => 'حذف حسابي';
 
   @override
   String get REDACTED_TOKEN =>
-      'No invoices found. Create your first invoice!';
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get viewResponses => '[CY] View Responses (Welsh)';
 
   @override
-  String get login1 => 'Login';
+  String get businessWelcomeScreenComingSoon => 'شاشة ترحيب الأعمال - قريباً';
 
   @override
-  String get adminOverviewGoesHere => 'Admin overview goes here';
+  String failedToOpenCustomerPortalE(Object e) {
+    return 'فشل في فتح بوابة العميل: $e';
+  }
 
   @override
-  String get loadingCheckout => 'Loading checkout...';
+  String get continueText => 'متابعة';
+
+  @override
+  String get close1 => 'إغلاق';
+
+  @override
+  String get confirm1 => 'تأكيد';
+
+  @override
+  String get externalMeetings => 'الاجتماعات الخارجية';
+
+  @override
+  String get approve => 'موافقة';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+
+  @override
+  String get subscribe => 'اشتراك';
+
+  @override
+  String get login1 => 'تسجيل الدخول';
+
+  @override
+  String get adminOverviewGoesHere => 'نظرة عامة على المسؤول هنا';
+
+  @override
+  String get loadingCheckout => 'جار تحميل الدفع...';
 }
