@@ -1,2862 +1,2862 @@
 {
   "@@locale": "lv",
-  "refresh": "[LV] Refresh",
+  "refresh": "[LV] [LV] Refresh",
   "@refresh": {
     "description": "Description"
   },
-  "home": "Sākums",
+  "home": "[LV] Sākums",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "[LV] No sessions yet",
+  "noSessionsYet": "[LV] [LV] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "[LV] OK",
+  "ok": "[LV] [LV] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "[LV] Choose your play mode:",
+  "playtimeLandingChooseMode": "[LV] [LV] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "[LV] Sign Up",
+  "signUp": "[LV] [LV] Sign Up",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "[LV] Schedule Message",
+  "scheduleMessage": "[LV] [LV] Schedule Message",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "[LV] Decline",
+  "decline": "[LV] [LV] Decline",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[LV] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "Ielogoties",
+  "login": "[LV] Ielogoties",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "[LV] Choose friends to invite",
+  "playtimeChooseFriends": "[LV] [LV] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "[LV] No invites",
+  "noInvites": "[LV] [LV] No invites",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "[LV] Choose a time",
+  "playtimeChooseTime": "[LV] [LV] Choose a time",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "[LV] Success",
+  "success": "[LV] [LV] Success",
   "@success": {
     "description": "Description"
   },
-  "undo": "[LV] Undo",
+  "undo": "[LV] [LV] Undo",
   "@undo": {
     "description": "Description"
   },
-  "opened": "[LV] Opened",
+  "opened": "[LV] [LV] Opened",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "[LV] Create Virtual Session",
+  "createVirtualSession": "[LV] [LV] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "Ziņojums veiksmīgi nosūtīts",
+  "messageSentSuccessfully": "[LV] Ziņojums veiksmīgi nosūtīts",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "[LV] Redo",
+  "redo": "[LV] [LV] Redo",
   "@redo": {
     "description": "Description"
   },
-  "next": "Tālāk",
+  "next": "[LV] Tālāk",
   "@next": {
     "description": "Description"
   },
-  "search": "[LV] Search",
+  "search": "[LV] [LV] Search",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "[LV] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[LV] [LV] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[LV] Created",
+  "created": "[LV] [LV] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "[LV] Revoke Access",
+  "revokeAccess": "[LV] [LV] Revoke Access",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[LV] Save Group for Recognition",
+  "saveGroupForRecognition": "[LV] [LV] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[LV] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[LV] [LV] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[LV] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[LV] [LV] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "[LV] Download",
+  "download": "[LV] [LV] Download",
   "@download": {
     "description": "Description"
   },
-  "password": "Parole",
+  "password": "[LV] Parole",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[LV] Error loading family links",
+  "errorLoadingFamilyLinks": "[LV] [LV] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "[LV] Cancel",
+  "cancel": "[LV] [LV] Cancel",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "[LV] Create",
+  "playtimeCreate": "[LV] [LV] Create",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[LV] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[LV] [LV] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "[LV] APP-OINT",
+  "appTitle": "[LV] [LV] APP-OINT",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Pieņemt",
+  "accept": "[LV] Pieņemt",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "[LV] Virtual Play",
+  "playtimeModeVirtual": "[LV] [LV] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "[LV] Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "[LV] [LV] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "[LV] Delete",
+  "delete": "[LV] [LV] Delete",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "[LV] Virtual playtime started!",
+  "playtimeVirtualStarted": "[LV] [LV] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "[LV] Create your first game",
+  "createYourFirstGame": "[LV] [LV] Create your first game",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "[LV] Participants",
+  "participants": "[LV] [LV] Participants",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "Saņēmēji: {count}",
+  "recipients": "[LV] Saņēmēji: {count}",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[LV] No results found",
+  "noResults": "[LV] [LV] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Jā",
+  "yes": "[LV] Jā",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "[LV] Invite",
+  "invite": "[LV] [LV] Invite",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "[LV] Live Play",
+  "playtimeModeLive": "[LV] [LV] Live Play",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[LV] Done",
+  "done": "[LV] [LV] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[LV] Let's meet via Appoint!",
+  "defaultShareMessage": "[LV] [LV] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Nē",
+  "no": "[LV] Nē",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "[LV] Playtime Hub",
+  "playtimeHub": "[LV] [LV] Playtime Hub",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "[LV] Create Live Session",
+  "createLiveSession": "[LV] [LV] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "Iespējot paziņojumus",
+  "enableNotifications": "[LV] Iespējot paziņojumus",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "[LV] Invited",
+  "invited": "[LV] [LV] Invited",
   "@invited": {
     "description": "Description"
   },
-  "content": "[LV] Content",
+  "content": "[LV] [LV] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "Tikšanās veiksmīgi kopīgota!",
+  "meetingSharedSuccessfully": "[LV] Tikšanās veiksmīgi kopīgota!",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[LV] Welcome to Playtime",
+  "welcomeToPlaytime": "[LV] [LV] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "[LV] View All",
+  "viewAll": "[LV] [LV] View All",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "[LV] Virtual Play",
+  "playtimeVirtual": "[LV] [LV] Virtual Play",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[LV] Staff screen coming soon",
+  "staffScreenTBD": "[LV] [LV] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "[LV] Cut",
+  "cut": "[LV] [LV] Cut",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[LV] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[LV] [LV] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "[LV] Retry",
+  "retry": "[LV] [LV] Retry",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "Sastādīt pārraides ziņojumu",
+  "composeBroadcastMessage": "[LV] Sastādīt pārraides ziņojumu",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Sūtīt tagad",
+  "sendNow": "[LV] Sūtīt tagad",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "[LV] No games yet",
+  "noGamesYet": "[LV] [LV] No games yet",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "[LV] Select",
+  "select": "[LV] [LV] Select",
   "@select": {
     "description": "Description"
   },
-  "about": "[LV] About",
+  "about": "[LV] [LV] About",
   "@about": {
     "description": "About button text"
   },
-  "choose": "[LV] Choose",
+  "choose": "[LV] [LV] Choose",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[LV] Profile",
+  "profile": "[LV] [LV] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "Noņemt bērnu",
+  "removeChild": "[LV] Noņemt bērnu",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "[LV] Status",
+  "status": "[LV] [LV] Status",
   "@status": {
     "description": "status description"
   },
-  "logout": "[LV] Logout",
+  "logout": "[LV] [LV] Logout",
   "@logout": {
     "description": "Description"
   },
-  "paste": "[LV] Paste",
+  "paste": "[LV] [LV] Paste",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "Laipni lūdzam",
+  "welcome": "[LV] Laipni lūdzam",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "[LV] Create a Playtime Session",
+  "playtimeCreateSession": "[LV] [LV] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Ģimenes locekļi",
+  "familyMembers": "[LV] Ģimenes locekļi",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "[LV] Upload",
+  "upload": "[LV] [LV] Upload",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[LV] Upcoming Sessions",
+  "upcomingSessions": "[LV] [LV] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "Ievadiet grupas nosaukumu",
+  "enterGroupName": "[LV] Ievadiet grupas nosaukumu",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "[LV] Confirm",
+  "confirm": "[LV] [LV] Confirm",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "[LV] Live Play",
+  "playtimeLive": "[LV] [LV] Live Play",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[LV] Error loading invites",
+  "errorLoadingInvites": "[LV] [LV] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "[LV] Targeting Filters",
+  "targetingFilters": "[LV] [LV] Targeting Filters",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Izvēlēties video",
+  "pickVideo": "[LV] Izvēlēties video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "[LV] Game deleted",
+  "playtimeGameDeleted": "[LV] [LV] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Ieplānot vēlāk",
+  "scheduleForLater": "[LV] Ieplānot vēlāk",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[LV] Access revoked successfully",
+  "accessRevokedSuccessfully": "[LV] [LV] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Tips",
+  "type": "[LV] Tips",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "[LV] Checking permissions...",
+  "checkingPermissions": "[LV] [LV] Checking permissions...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "[LV] Copy",
+  "copy": "[LV] [LV] Copy",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "[LV] Yes, Cancel",
+  "yesCancel": "[LV] [LV] Yes, Cancel",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "E-pasts",
+  "email": "[LV] E-pasts",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[LV] Share on WhatsApp",
+  "shareOnWhatsApp": "[LV] [LV] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[LV] Notification Settings",
+  "notificationSettings": "[LV] [LV] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[LV] My Profile",
+  "myProfile": "[LV] [LV] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "[LV] Revoke",
+  "revoke": "[LV] [LV] Revoke",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "Nav pārraides ziņojumu",
+  "noBroadcastMessages": "[LV] Nav pārraides ziņojumu",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "Pieprasījuma veids",
+  "requestType": "[LV] Pieprasījuma veids",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "Paziņojumi",
+  "notifications": "[LV] Paziņojumi",
   "@notifications": {
     "description": "Description"
   },
-  "details": "Detaļas",
+  "details": "[LV] Detaļas",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[LV] Cancel Invite",
+  "cancelInvite": "[LV] [LV] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "[LV] Create New",
+  "createNew": "[LV] [LV] Create New",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[LV] Settings",
+  "settings": "[LV] [LV] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[LV] Reject",
+  "playtimeReject": "[LV] [LV] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[LV] Error loading profile",
+  "errorLoadingProfile": "[LV] [LV] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "[LV] Edit",
+  "edit": "[LV] [LV] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "[LV] Add",
+  "add": "[LV] [LV] Add",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[LV] Game approved",
+  "playtimeGameApproved": "[LV] [LV] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[LV] Forgot Password?",
+  "forgotPassword": "[LV] [LV] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[LV] Family Dashboard",
+  "familyDashboard": "[LV] [LV] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "Ielādē",
+  "loading": "[LV] Ielādē",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[LV] Quick Actions",
+  "quickActions": "[LV] [LV] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "[LV] Playtime",
+  "playtimeTitle": "[LV] [LV] Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "OTP veiksmīgi pārsūtīts!",
+  "otpResentSuccessfully": "[LV] OTP veiksmīgi pārsūtīts!",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[LV] Error checking permissions",
+  "errorCheckingPermissions": "[LV] [LV] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "Klienta ekrāns - drīzumā",
+  "clientScreenTBD": "[LV] Klienta ekrāns - drīzumā",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[LV] FCM Token",
+  "fcmToken": "[LV] [LV] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "[LV] Pick Image",
+  "pickImage": "[LV] [LV] Pick Image",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[LV] Previous",
+  "previous": "[LV] [LV] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[LV] No profile found",
+  "noProfileFound": "[LV] [LV] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "Vēl nav ģimenes locekļu",
+  "noFamilyMembersYet": "[LV] Vēl nav ģimenes locekļu",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "Mediji (nav obligāti)",
+  "mediaOptional": "[LV] Mediji (nav obligāti)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "Ziņojums veiksmīgi saglabāts!",
+  "messageSavedSuccessfully": "[LV] Ziņojums veiksmīgi saglabāts!",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[LV] Scheduled for",
+  "scheduledFor": "[LV] [LV] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[LV] Dashboard",
+  "dashboard": "[LV] [LV] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "[LV] No permission for broadcast",
+  "noPermissionForBroadcast": "[LV] [LV] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[LV] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[LV] Invite Details",
+  "inviteDetail": "[LV] [LV] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "Ieplānots",
+  "scheduled": "[LV] Ieplānots",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[LV] Failed to resend OTP",
+  "failedToResendOtp": "[LV] [LV] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "Ieplāno",
+  "scheduling": "[LV] Ieplāno",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[LV] Error saving message",
+  "errorSavingMessage": "[LV] [LV] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Saglabāt",
+  "save": "[LV] Saglabāt",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "[LV] Approve",
+  "playtimeApprove": "[LV] [LV] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[LV] Create your first session",
+  "createYourFirstSession": "[LV] [LV] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[LV] Game rejected",
+  "playtimeGameRejected": "[LV] [LV] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[LV] Failed to revoke access",
+  "failedToRevokeAccess": "[LV] [LV] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "[LV] Recent Games",
+  "recentGames": "[LV] [LV] Recent Games",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "Pielāgot ziņojumu",
+  "customizeMessage": "[LV] Pielāgot ziņojumu",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[LV] Failed to cancel invite",
+  "failedToCancelInvite": "[LV] [LV] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[LV] Error sending message",
+  "errorSendingMessage": "[LV] [LV] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[LV] Confirm Password",
+  "confirmPassword": "[LV] [LV] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[LV] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[LV] [LV] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "Savienotie bērni",
+  "connectedChildren": "[LV] Savienotie bērni",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "[LV] Share",
+  "share": "[LV] [LV] Share",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[LV] Enter game name",
+  "playtimeEnterGameName": "[LV] [LV] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "Lūdzu, ielogojieties, lai piekļūtu ģimenes funkcijām",
+  "pleaseLoginForFamilyFeatures": "[LV] Lūdzu, ielogojieties, lai piekļūtu ģimenes funkcijām",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[LV] My Invites",
+  "myInvites": "[LV] [LV] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[LV] Create Game",
+  "createGame": "[LV] [LV] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "Grupas nosaukums (nav obligāts)",
+  "groupNameOptional": "[LV] Grupas nosaukums (nav obligāts)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[LV] No playtime sessions found.",
+  "playtimeNoSessions": "[LV] [LV] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[LV] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[LV] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[LV] [LV] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "Aizvērt",
+  "close": "[LV] Aizvērt",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[LV] Known group detected",
+  "knownGroupDetected": "[LV] [LV] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[LV] Back",
+  "back": "[LV] [LV] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[LV] Choose a game",
+  "playtimeChooseGame": "[LV] [LV] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[LV] Manage Permissions",
+  "managePermissions": "[LV] [LV] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "Aptaujas opcijas",
+  "pollOptions": "[LV] Aptaujas opcijas",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[LV] Clicked",
+  "clicked": "[LV] [LV] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "Saite",
+  "link": "[LV] Saite",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[LV] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[LV] [LV] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[LV] Pending Invites",
+  "pendingInvites": "[LV] [LV] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[LV] Status:",
+  "statusColon": "[LV] [LV] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[LV] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[LV] [LV] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[LV] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[LV] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[LV] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[LV] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[LV] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[LV] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[LV] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[LV] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[LV] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[LV] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[LV] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[LV] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[LV] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[LV] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[LV] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "authErrorAccountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method.",
+  "authErrorAccountExistsWithDifferentCredential": "[LV] An account already exists with this email using a different sign-in method.",
   "@authErrorAccountExistsWithDifferentCredential": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[LV] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[LV] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Latvian)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Latvian)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Latvian)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Latvian)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[LV] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[LV] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "authErrorInvalidVerificationCode": "The verification code is invalid.",
+  "authErrorInvalidVerificationCode": "[LV] The verification code is invalid.",
   "@authErrorInvalidVerificationCode": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[LV] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "authErrorMissingVerificationCode": "Please enter the verification code.",
+  "authErrorMissingVerificationCode": "[LV] Please enter the verification code.",
   "@authErrorMissingVerificationCode": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[LV] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[LV] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[LV] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[LV] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[LV] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[LV] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "authErrorMultiFactorAuthRequired": "Multi-factor authentication is required.",
+  "authErrorMultiFactorAuthRequired": "[LV] Multi-factor authentication is required.",
   "@authErrorMultiFactorAuthRequired": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "authErrorMultiFactorInfoNotFound": "Multi-factor information not found.",
+  "authErrorMultiFactorInfoNotFound": "[LV] Multi-factor information not found.",
   "@authErrorMultiFactorInfoNotFound": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "authErrorMissingMultiFactorSession": "Missing multi-factor session.",
+  "authErrorMissingMultiFactorSession": "[LV] Missing multi-factor session.",
   "@authErrorMissingMultiFactorSession": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "authErrorInvalidMultiFactorSession": "Invalid multi-factor session.",
+  "authErrorInvalidMultiFactorSession": "[LV] Invalid multi-factor session.",
   "@authErrorInvalidMultiFactorSession": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "authErrorSecondFactorAlreadyInUse": "This second factor is already in use.",
+  "authErrorSecondFactorAlreadyInUse": "[LV] This second factor is already in use.",
   "@authErrorSecondFactorAlreadyInUse": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "authErrorMaximumSecondFactorCountExceeded": "Maximum number of second factors exceeded.",
+  "authErrorMaximumSecondFactorCountExceeded": "[LV] Maximum number of second factors exceeded.",
   "@authErrorMaximumSecondFactorCountExceeded": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[LV] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "authErrorEmailChangeNeedsVerification": "Email change requires verification.",
+  "authErrorEmailChangeNeedsVerification": "[LV] Email change requires verification.",
   "@authErrorEmailChangeNeedsVerification": {
     "description": "Localization key for: Email change requires verification."
   },
-  "authErrorPhoneNumberAlreadyExists": "This phone number is already in use.",
+  "authErrorPhoneNumberAlreadyExists": "[LV] This phone number is already in use.",
   "@authErrorPhoneNumberAlreadyExists": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[LV] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[LV] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[LV] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[LV] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[LV] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[LV] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[LV] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[LV] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[LV] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[LV] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[LV] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "authErrorInvalidDynamicLinkDomain": "The dynamic link domain is invalid.",
+  "authErrorInvalidDynamicLinkDomain": "[LV] The dynamic link domain is invalid.",
   "@authErrorInvalidDynamicLinkDomain": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[LV] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[LV] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[LV] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "authErrorInvalidHashDerivedKeyLength": "The hash derived key length is invalid.",
+  "authErrorInvalidHashDerivedKeyLength": "[LV] The hash derived key length is invalid.",
   "@authErrorInvalidHashDerivedKeyLength": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[LV] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[LV] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "authErrorInvalidHashParallelization": "The hash parallelization is invalid.",
+  "authErrorInvalidHashParallelization": "[LV] The hash parallelization is invalid.",
   "@authErrorInvalidHashParallelization": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[LV] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "authErrorInvalidHashSaltSeparator": "The hash salt separator is invalid.",
+  "authErrorInvalidHashSaltSeparator": "[LV] The hash salt separator is invalid.",
   "@authErrorInvalidHashSaltSeparator": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[LV] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[LV] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[LV] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[LV] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "authErrorInvalidSessionCookieDuration": "The session cookie duration is invalid.",
+  "authErrorInvalidSessionCookieDuration": "[LV] The session cookie duration is invalid.",
   "@authErrorInvalidSessionCookieDuration": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[LV] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[LV] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "authErrorMaximumUserCountExceeded": "Maximum user import count exceeded.",
+  "authErrorMaximumUserCountExceeded": "[LV] Maximum user import count exceeded.",
   "@authErrorMaximumUserCountExceeded": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[LV] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[LV] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[LV] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[LV] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[LV] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "authErrorMissingOauthClientSecret": "Missing OAuth client secret.",
+  "authErrorMissingOauthClientSecret": "[LV] Missing OAuth client secret.",
   "@authErrorMissingOauthClientSecret": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[LV] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[LV] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[LV] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[LV] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[LV] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "authErrorUnauthorizedContinueUri": "The continue URL domain is not whitelisted.",
+  "authErrorUnauthorizedContinueUri": "[LV] The continue URL domain is not whitelisted.",
   "@authErrorUnauthorizedContinueUri": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[LV] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Latvian)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Latvian)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Latvian)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Latvian)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Latvian)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Latvian)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Latvian)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Latvian)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[LV] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Latvian)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Latvian)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Latvian)",
+  "upload1": "[LV] Upload (Latvian)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Latvian)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Latvian)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "virtualSessionCreatedInvitingFriends": "Virtual session created! Inviting friends... (Latvian)",
+  "virtualSessionCreatedInvitingFriends": "[LV] Virtual session created! Inviting friends... (Latvian)",
   "@virtualSessionCreatedInvitingFriends": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Latvian)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Latvian)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Latvian)",
+  "rewards": "[LV] Rewards (Latvian)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Latvian)",
+  "time": "[LV] Time (Latvian)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[LV] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Latvian)",
+  "noSlots": "[LV] No slots (Latvian)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Latvian)",
+  "signIn": "[LV] Sign In (Latvian)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Latvian)",
+  "homeFeedScreen": "[LV] Home Feed Screen (Latvian)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Latvian)",
+  "selectLocation": "[LV] Select Location (Latvian)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Latvian)",
+  "noTicketsYet": "[LV] No tickets yet (Latvian)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Latvian)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Latvian)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Latvian)",
+  "subscriptionUnavailable": "[LV] Subscription unavailable (Latvian)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Latvian)",
+  "confirmBooking": "[LV] Confirm Booking (Latvian)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Latvian)",
+  "failedToUpdatePermissionE": "[LV] Failed to update permission: $e (Latvian)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Latvian)",
+  "reject": "[LV] Reject (Latvian)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "ambassadorStatusAmbassadorstatus": "Ambassador Status: {ambassadorStatus} (Latvian)",
+  "ambassadorStatusAmbassadorstatus": "[LV] Ambassador Status: {ambassadorStatus} (Latvian)",
   "@ambassadorStatusAmbassadorstatus": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[LV] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Latvian)",
+  "checkingSubscription": "[LV] Checking subscription... (Latvian)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Latvian)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Latvian)",
+  "noContentAvailableYet": "[LV] No content available yet (Latvian)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Latvian)",
+  "resolve": "[LV] Resolve (Latvian)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Latvian)",
+  "errorLoadingSurveysError": "[LV] Error loading surveys: $error (Latvian)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[LV] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Latvian)",
+  "getHelpWithYourAccount": "[LV] Get help with your account (Latvian)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Latvian)",
+  "pay": "[LV] Pay (Latvian)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[LV] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Latvian)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Latvian)",
+  "changesSavedSuccessfully": "[LV] Changes saved successfully! (Latvian)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Latvian)",
+  "createNewInvoice": "[LV] Create New Invoice (Latvian)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Latvian)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Latvian)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Latvian)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Latvian)",
+  "profileSaved": "[LV] Profile saved! (Latvian)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "receiveBookingNotificationsViaEmail": "Receive booking notifications via email (Latvian)",
+  "receiveBookingNotificationsViaEmail": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@receiveBookingNotificationsViaEmail": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Latvian)",
+  "valuetointk": "[LV] \\${value}K (Latvian)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Latvian)",
+  "deleteAccount": "[LV] Delete Account (Latvian)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Latvian)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Latvian)",
+  "businessOnboarding": "[LV] Business Onboarding (Latvian)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Latvian)",
+  "addNewClient": "[LV] Add New Client (Latvian)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Latvian)",
+  "darkMode": "[LV] Dark Mode (Latvian)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[LV] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[LV] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "youWillReceiveAConfirmationEmailShortly": "You will receive a confirmation email shortly. (Latvian)",
+  "youWillReceiveAConfirmationEmailShortly": "[LV] You will receive a confirmation email shortly. (Latvian)",
   "@youWillReceiveAConfirmationEmailShortly": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Latvian)",
+  "addQuestion": "[LV] Add Question (Latvian)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Latvian)",
+  "privacyPolicy": "[LV] Privacy Policy (Latvian)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Latvian)",
+  "branchesLengthBranches": "[LV] {branchCount} branches (Latvian)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Latvian)",
+  "join": "[LV] Join (Latvian)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Latvian)",
+  "businessSubscription": "[LV] Business Subscription (Latvian)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Latvian)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[LV] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Latvian)",
+  "surveyManagement": "[LV] Survey Management (Latvian)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[LV] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Latvian)",
+  "noRoomsFoundAddYourFirstRoom": "[LV] No rooms found. Add your first room! (Latvian)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Latvian)",
+  "readOurPrivacyPolicy": "[LV] Read our privacy policy (Latvian)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Latvian)",
+  "couldNotOpenPrivacyPolicy": "[LV] Could not open privacy policy (Latvian)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Latvian)",
+  "refresh1": "[LV] Refresh (Latvian)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Latvian)",
+  "roomUpdatedSuccessfully": "[LV] Room updated successfully! (Latvian)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Latvian)",
+  "contentDetail": "[LV] Content Detail (Latvian)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Latvian)",
+  "cancelSubscription": "[LV] Cancel Subscription (Latvian)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "successfullyRegisteredAsAmbassador": "Successfully registered as Ambassador! (Latvian)",
+  "successfullyRegisteredAsAmbassador": "[LV] Successfully registered as Ambassador! (Latvian)",
   "@successfullyRegisteredAsAmbassador": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Latvian)",
+  "save1": "[LV] Save (Latvian)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Latvian)",
+  "copy1": "[LV] Copy (Latvian)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Latvian)",
+  "failedToSendInvitationE": "[LV] Failed to send invitation: $e (Latvian)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Latvian)",
+  "surveyScore": "[LV] Survey Score (Latvian)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[LV] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Latvian)",
+  "noAppointmentsFound": "[LV] No appointments found. (Latvian)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Latvian)",
+  "responseDetail": "[LV] Response Detail (Latvian)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "businessVerificationScreenComingSoon": "Business Verification Screen - Coming Soon (Latvian)",
+  "businessVerificationScreenComingSoon": "شاشة التحقق من الأعمال - قريباً",
   "@businessVerificationScreenComingSoon": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "businessProfileActivatedSuccessfully": "Business profile activated successfully! (Latvian)",
+  "businessProfileActivatedSuccessfully": "تم تفعيل الملف التجاري بنجاح",
   "@businessProfileActivatedSuccessfully": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Latvian)",
+  "failedToStartProSubscriptionE": "[LV] Failed to start Pro subscription: $e (Latvian)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "businessDashboardEntryScreenComingSoon": "Business Dashboard Entry Screen - Coming Soon (Latvian)",
+  "businessDashboardEntryScreenComingSoon": "[LV] Business Dashboard Entry Screen - Coming Soon (Latvian)",
   "@businessDashboardEntryScreenComingSoon": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Latvian)",
+  "contentFilter": "[LV] Content Filter (Latvian)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Latvian)",
+  "helpSupport": "[LV] Help & Support (Latvian)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Latvian)",
+  "editRoom": "[LV] Edit Room (Latvian)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[LV] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[LV] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "businessCrmEntryScreenComingSoon": "Business CRM Entry Screen - Coming Soon (Latvian)",
+  "businessCrmEntryScreenComingSoon": "[LV] Business CRM Entry Screen - Coming Soon (Latvian)",
   "@businessCrmEntryScreenComingSoon": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[LV] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[LV] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Latvian)",
+  "errorLoadingDashboardError": "[LV] Error loading dashboard: $error (Latvian)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Latvian)",
+  "gameDeletedSuccessfully": "[LV] Game deleted successfully! (Latvian)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Latvian)",
+  "viewResponsesComingSoon": "[LV] View responses - Coming soon! (Latvian)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[LV] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Latvian)",
+  "errorLoadingRewards": "[LV] Error loading rewards (Latvian)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Latvian)",
+  "failedToDeleteAccountE": "[LV] Failed to delete account: $e (Latvian)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Latvian)",
+  "invited1": "[LV] Invited (Latvian)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Latvian)",
+  "noBranchesAvailable": "[LV] No branches available (Latvian)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Latvian)",
+  "errorError": "[LV] Error: $error (Latvian)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Latvian)",
+  "noEvents": "[LV] No events (Latvian)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Latvian)",
+  "gameCreatedSuccessfully": "[LV] Game created successfully! (Latvian)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Latvian)",
+  "add1": "[LV] Add (Latvian)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[LV] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Latvian)",
+  "eventstarttimeEventendtime": "[LV] {startTime} - {endTime} (Latvian)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Latvian)",
+  "allowPlaytime": "[LV] Allow Playtime (Latvian)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Latvian)",
+  "clients": "[LV] Clients (Latvian)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Latvian)",
+  "noAmbassadorDataAvailable": "[LV] No ambassador data available (Latvian)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Latvian)",
+  "backgroundDeletedSuccessfully": "[LV] Background deleted successfully! (Latvian)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Latvian)",
+  "errorSnapshoterror": "[LV] Error: {error} (Latvian)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Latvian)",
+  "noAnalyticsDataAvailableYet": "[LV] No analytics data available yet. (Latvian)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Latvian)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "businessPhoneBookingEntryScreenComingSoon": "Business Phone Booking Entry Screen - Coming Soon (Latvian)",
+  "businessPhoneBookingEntryScreenComingSoon": "[LV] Business Phone Booking Entry Screen - Coming Soon (Latvian)",
   "@businessPhoneBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Latvian)",
+  "verification": "[LV] Verification (Latvian)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Latvian)",
+  "copyLink": "[LV] Copy Link (Latvian)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Latvian)",
+  "dashboard1": "[LV] Dashboard (Latvian)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Latvian)",
+  "manageChildAccounts": "[LV] Manage Child Accounts (Latvian)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Latvian)",
+  "grantConsent": "[LV] Grant Consent (Latvian)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Latvian)",
+  "myProfile1": "[LV] My Profile (Latvian)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Latvian)",
+  "submit": "[LV] Submit (Latvian)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[LV] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Latvian)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Latvian)",
+  "ambassadorDashboard": "[LV] Ambassador Dashboard (Latvian)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Latvian)",
+  "phoneBooking": "[LV] Phone Booking (Latvian)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Latvian)",
+  "bookViaChat": "[LV] Book via Chat (Latvian)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "[LV] Error",
+  "error": "[LV] [LV] Error",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Latvian)",
+  "businessProfile": "[LV] Business Profile (Latvian)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "businessBookingEntryScreenComingSoon": "Business Booking Entry Screen - Coming Soon (Latvian)",
+  "businessBookingEntryScreenComingSoon": "[LV] Business Booking Entry Screen - Coming Soon (Latvian)",
   "@businessBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Latvian)",
+  "createNewSurvey": "[LV] Create New Survey (Latvian)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Latvian)",
+  "backgroundRejected": "[LV] Background rejected (Latvian)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Latvian)",
+  "noMediaSelected": "[LV] No media selected (Latvian)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Latvian)",
+  "syncToGoogle": "[LV] Sync to Google (Latvian)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Latvian)",
+  "virtualPlaytime": "[LV] Virtual Playtime (Latvian)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[LV] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[LV] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Latvian)",
+  "invitationSentSuccessfully": "[LV] Invitation sent successfully! (Latvian)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Latvian)",
+  "registering": "[LV] Registering... (Latvian)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Latvian)",
+  "statusAppointmentstatusname": "[LV] Status: {status} (Latvian)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Latvian)",
+  "home1": "[LV] Home (Latvian)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Latvian)",
+  "errorSavingSettingsE": "[LV] Error saving settings: $e (Latvian)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Latvian)",
+  "appVersionAndInformation": "[LV] App version and information (Latvian)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "businessSubscriptionEntryScreenComingSoon": "Business Subscription Entry Screen - Coming Soon (Latvian)",
+  "businessSubscriptionEntryScreenComingSoon": "[LV] Business Subscription Entry Screen - Coming Soon (Latvian)",
   "@businessSubscriptionEntryScreenComingSoon": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Latvian)",
+  "ekeyEvalue": "[LV] {key}: {value} (Latvian)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "yourPaymentHasBeenProcessedSuccessfully": "Your payment has been processed successfully. (Latvian)",
+  "yourPaymentHasBeenProcessedSuccessfully": "[LV] Your payment has been processed successfully. (Latvian)",
   "@yourPaymentHasBeenProcessedSuccessfully": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Latvian)",
+  "errorE": "[LV] Error: $e (Latvian)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Latvian)",
+  "viewAll1": "[LV] View All (Latvian)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Latvian)",
+  "editSurveyComingSoon": "[LV] Edit survey - Coming soon! (Latvian)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Latvian)",
+  "enterOtp": "[LV] Enter OTP (Latvian)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Latvian)",
+  "payment": "[LV] Payment (Latvian)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "automaticallyConfirmNewBookingRequests": "Automatically confirm new booking requests (Latvian)",
+  "automaticallyConfirmNewBookingRequests": "[LV] Automatically confirm new booking requests (Latvian)",
   "@automaticallyConfirmNewBookingRequests": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Latvian)",
+  "noRouteDefinedForSettingsname": "[LV] No route defined for {settingsName} (Latvian)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Latvian)",
+  "pleaseSignInToUploadABackground": "[LV] Please sign in to upload a background (Latvian)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[LV] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Latvian)",
+  "staffAvailability": "[LV] Staff Availability (Latvian)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Latvian)",
+  "livePlaytime": "[LV] Live Playtime (Latvian)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Latvian)",
+  "autoconfirmBookings": "[LV] Auto-Confirm Bookings (Latvian)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "redirectingToStripeCheckoutForProPlan": "Redirecting to Stripe checkout for Pro plan... (Latvian)",
+  "redirectingToStripeCheckoutForProPlan": "[LV] Redirecting to Stripe checkout for Pro plan... (Latvian)",
   "@redirectingToStripeCheckoutForProPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Latvian)",
+  "exportAsCsv": "[LV] Export as CSV (Latvian)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Latvian)",
+  "deleteFunctionalityComingSoon": "[LV] Delete functionality coming soon! (Latvian)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Latvian)",
+  "editClient": "[LV] Edit Client (Latvian)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "areYouSureYouWantToDeleteThisMessage": "Are you sure you want to delete this message? (Latvian)",
+  "areYouSureYouWantToDeleteThisMessage": "[LV] Are you sure you want to delete this message? (Latvian)",
   "@areYouSureYouWantToDeleteThisMessage": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Latvian)",
+  "referralsAmbassadorreferrals": "[LV] Referrals: {referrals} (Latvian)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[LV] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Latvian)",
+  "privacyRequestSentToYourParents": "[LV] Privacy request sent to your parents! (Latvian)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Latvian)",
+  "clientDeletedSuccessfully": "[LV] Client deleted successfully! (Latvian)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Latvian)",
+  "failedToCancelSubscription": "[LV] Failed to cancel subscription (Latvian)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Latvian)",
+  "allLanguages": "[LV] All Languages (Latvian)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Latvian)",
+  "slotDeletedSuccessfully": "[LV] Slot deleted successfully (Latvian)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "businessProvidersEntryScreenComingSoon": "Business Providers Entry Screen - Coming Soon",
+  "businessProvidersEntryScreenComingSoon": "[LV] Business Providers Entry Screen - Coming Soon",
   "@businessProvidersEntryScreenComingSoon": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "parentsMustApproveBeforeChildrenCanJoin": "Parents must approve before children can join (Latvian)",
+  "parentsMustApproveBeforeChildrenCanJoin": "[LV] Parents must approve before children can join (Latvian)",
   "@parentsMustApproveBeforeChildrenCanJoin": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Latvian)",
+  "subscribeToPro1499mo": "[LV] Subscribe to Pro (€14.99/mo) (Latvian)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "businessAvailabilityEntryScreenComingSoon": "Business Availability Entry Screen - Coming Soon (Latvian)",
+  "businessAvailabilityEntryScreenComingSoon": "[LV] Business Availability Entry Screen - Coming Soon (Latvian)",
   "@businessAvailabilityEntryScreenComingSoon": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Latvian)",
+  "appointmentsListlength": "[LV] Appointments: {count} (Latvian)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Latvian)",
+  "clearFilters": "[LV] Clear Filters (Latvian)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Latvian)",
+  "submitBooking": "[LV] Submit Booking (Latvian)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "areYouSureYouWantToCancelThisAppointment": "Are you sure you want to cancel this appointment? (Latvian)",
+  "areYouSureYouWantToCancelThisAppointment": "[LV] Are you sure you want to cancel this appointment? (Latvian)",
   "@areYouSureYouWantToCancelThisAppointment": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Latvian)",
+  "noUpcomingBookings": "[LV] No upcoming bookings (Latvian)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Latvian)",
+  "goBack": "[LV] Go Back (Latvian)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Latvian)",
+  "setup": "[LV] Setup (Latvian)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Latvian)",
+  "inviteChild": "[LV] Invite Child (Latvian)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Latvian)",
+  "goToDashboard": "[LV] Go to Dashboard (Latvian)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Latvian)",
+  "ambassadorQuotaDashboard": "[LV] Ambassador Quota Dashboard (Latvian)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[LV] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Latvian)",
+  "referralCode": "[LV] Referral Code (Latvian)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[LV] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Latvian)",
+  "date": "[LV] Date (Latvian)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Latvian)",
+  "readOnly": "[LV] Read Only (Latvian)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Latvian)",
+  "bookingRequest": "[LV] Booking Request (Latvian)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Latvian)",
+  "advancedReporting": "[LV] • Advanced reporting (Latvian)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Latvian)",
+  "rooms": "[LV] Rooms (Latvian)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Latvian)",
+  "copiedToClipboard": "[LV] Copied to clipboard (Latvian)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Latvian)",
+  "bookingConfirmed": "[LV] Booking Confirmed (Latvian)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Latvian)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Latvian)",
+  "clientAddedSuccessfully": "[LV] Client added successfully! (Latvian)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Latvian)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Latvian)",
+  "backgroundApproved": "[LV] Background approved! (Latvian)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Latvian)",
+  "familySupport": "[LV] Family Support (Latvian)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Latvian)",
+  "deletingAccount": "[LV] Deleting account... (Latvian)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Latvian)",
+  "bookAppointment": "[LV] Book Appointment (Latvian)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "receivePushNotificationsForNewBookings": "Receive push notifications for new bookings (Latvian)",
+  "receivePushNotificationsForNewBookings": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@receivePushNotificationsForNewBookings": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Latvian)",
+  "delete1": "[LV] Delete (Latvian)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Latvian)",
+  "sendBookingInvite": "[LV] Send Booking Invite (Latvian)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Latvian)",
+  "text": "[LV] Text (Latvian)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Latvian)",
+  "manageSubscription": "[LV] Manage Subscription (Latvian)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Latvian)",
+  "requiresInstallFallback": "[LV] Requires Install Fallback (Latvian)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Latvian)",
+  "paymentConfirmation": "[LV] Payment Confirmation (Latvian)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Latvian)",
+  "promoAppliedYourNextBillIsFree": "[LV] Promo applied! Your next bill is free. (Latvian)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Latvian)",
+  "errorLoadingSlots": "[LV] Error loading slots (Latvian)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "allowOtherUsersToFindAndJoinThisGame": "Allow other users to find and join this game (Latvian)",
+  "allowOtherUsersToFindAndJoinThisGame": "[LV] Allow other users to find and join this game (Latvian)",
   "@allowOtherUsersToFindAndJoinThisGame": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "businessOnboardingScreenComingSoon": "Business Onboarding Screen - Coming Soon (Latvian)",
+  "businessOnboardingScreenComingSoon": "[LV] Business Onboarding Screen - Coming Soon (Latvian)",
   "@businessOnboardingScreenComingSoon": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Latvian)",
+  "activateBusinessProfile": "[LV] Activate Business Profile (Latvian)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Latvian)",
+  "contentNotFound": "[LV] Content not found (Latvian)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Latvian)",
+  "pspecialtynpcontactinfo": "[LV] {specialty}\\n{contactInfo} (Latvian)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Latvian)",
+  "rating": "[LV] Rating (Latvian)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Latvian)",
+  "messages": "[LV] Messages (Latvian)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Latvian)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Latvian)",
+  "becomeAnAmbassador": "[LV] Become an Ambassador (Latvian)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Latvian)",
+  "subscribeNow": "[LV] Subscribe Now (Latvian)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Latvian)",
+  "timeArgsslotformatcontext": "[LV] Time: {time} (Latvian)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Latvian)",
+  "shareViaWhatsapp": "[LV] Share via WhatsApp (Latvian)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Latvian)",
+  "users1": "[LV] Users (Latvian)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Latvian)",
+  "shareLink": "[LV] Share Link (Latvian)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
+  "areYouSureYouWantToDeleteThisProvider": "[LV] Are you sure you want to delete this provider?",
   "@areYouSureYouWantToDeleteThisProvider": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Latvian)",
+  "deleteAppointment": "[LV] Delete Appointment (Latvian)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Latvian)",
+  "toggleAvailability": "[LV] Toggle Availability (Latvian)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Latvian)",
+  "changePlan": "[LV] Change Plan (Latvian)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Latvian)",
+  "errorLoadingStaff": "[LV] Error loading staff (Latvian)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Latvian)",
+  "updateYourBusinessInformation": "[LV] Update your business information (Latvian)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "noProvidersFoundAddYourFirstProvider": "No providers found. Add your first provider!",
+  "noProvidersFoundAddYourFirstProvider": "[LV] No providers found. Add your first provider!",
   "@noProvidersFoundAddYourFirstProvider": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Latvian)",
+  "parentDashboard": "[LV] Parent Dashboard (Latvian)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Latvian)",
+  "menu": "[LV] Menu (Latvian)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Latvian)",
+  "studioBooking": "[LV] Studio Booking (Latvian)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Latvian)",
+  "about1": "[LV] About (Latvian)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Latvian)",
+  "multipleChoice": "[LV] Multiple Choice (Latvian)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "dateAppointmentscheduledattostring": "Date: {date} (Latvian)",
+  "dateAppointmentscheduledattostring": "[LV] Date: {date} (Latvian)",
   "@dateAppointmentscheduledattostring": {
     "description": "Localization key for: Date: {date}"
   },
-  "studioBookingIsOnlyAvailableOnWeb": "Studio booking is only available on web (Latvian)",
+  "studioBookingIsOnlyAvailableOnWeb": "[LV] Studio booking is only available on web (Latvian)",
   "@studioBookingIsOnlyAvailableOnWeb": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Latvian)",
+  "errorLoadingBranchesE": "[LV] Error loading branches: $e (Latvian)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "ud83dudcc5Bookingdatetimetolocal": "\\uD83D\\uDCC5 {dateTime} (Latvian)",
+  "ud83dudcc5Bookingdatetimetolocal": "[LV] \\uD83D\\uDCC5 {dateTime} (Latvian)",
   "@ud83dudcc5Bookingdatetimetolocal": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Latvian)",
+  "none": "[LV] None (Latvian)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Latvian)",
+  "failedToUpdateConsentE": "[LV] Failed to update consent: $e (Latvian)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Latvian)",
+  "welcome1": "[LV] Welcome (Latvian)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Latvian)",
+  "failedToCreateSessionE": "[LV] Failed to create session: $e (Latvian)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Latvian)",
+  "inviteContact": "[LV] Invite Contact (Latvian)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Latvian)",
+  "surveyEditor": "[LV] Survey Editor (Latvian)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Latvian)",
+  "failedToStartBasicSubscriptionE": "[LV] Failed to start Basic subscription: $e (Latvian)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Latvian)",
+  "mySchedule": "[LV] My Schedule (Latvian)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Latvian)",
+  "studioDashboard": "[LV] Studio Dashboard (Latvian)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Latvian)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[LV] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[LV] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Latvian)",
+  "settingsSavedSuccessfully": "[LV] Settings saved successfully! (Latvian)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Latvian)",
+  "linkCopiedToClipboard": "[LV] Link copied to clipboard! (Latvian)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Latvian)",
+  "accept1": "[LV] Accept (Latvian)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Latvian)",
+  "noAvailableSlots": "[LV] No available slots (Latvian)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Latvian)",
+  "makeGamePublic": "[LV] Make Game Public (Latvian)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "permissionPermissioncategoryUpdatedToNewvalue": "Permission {category} updated to $newValue (Latvian)",
+  "permissionPermissioncategoryUpdatedToNewvalue": "[LV] Permission {category} updated to $newValue (Latvian)",
   "@permissionPermissioncategoryUpdatedToNewvalue": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Latvian)",
+  "roomDeletedSuccessfully": "[LV] Room deleted successfully! (Latvian)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Latvian)",
+  "businessCalendar": "[LV] Business Calendar (Latvian)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Latvian)",
+  "addAvailability": "[LV] Add Availability (Latvian)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Latvian)",
+  "ambassadorOnboarding": "[LV] Ambassador Onboarding (Latvian)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Latvian)",
+  "phoneProfileasyncphone": "[LV] Phone: {phone} (Latvian)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Latvian)",
+  "addNewRoom": "[LV] Add New Room (Latvian)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Latvian)",
+  "requireParentApproval": "[LV] Require Parent Approval (Latvian)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Latvian)",
+  "closed": "[LV] Closed (Latvian)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Latvian)",
+  "exportAsPdf": "[LV] Export as PDF (Latvian)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Latvian)",
+  "enableVibration": "[LV] Enable Vibration (Latvian)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Latvian)",
+  "toAvailendformatcontext": "[LV] To: {endTime} (Latvian)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Latvian)",
+  "yourUpgradeCodeUpgradecode": "[LV] Your upgrade code: $upgradeCode (Latvian)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[LV] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Latvian)",
+  "country": "[LV] Country (Latvian)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[LV] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Latvian)",
+  "staffArgsstaffdisplayname": "[LV] Staff: {staffName} (Latvian)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Latvian)",
+  "revokeConsent": "[LV] Revoke Consent (Latvian)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Latvian)",
+  "settings1": "[LV] Settings (Latvian)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Latvian)",
+  "cancel1": "[LV] Cancel (Latvian)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "subscriptionActivatedSuccessfully": "Subscription activated successfully! (Latvian)",
+  "subscriptionActivatedSuccessfully": "[LV] Subscription activated successfully! (Latvian)",
   "@subscriptionActivatedSuccessfully": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[LV] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Latvian)",
+  "broadcast": "[LV] Broadcast (Latvian)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Latvian)",
+  "noEventsScheduledThisWeek": "[LV] No events scheduled this week (Latvian)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Latvian)",
+  "googleCalendar": "[LV] Google Calendar (Latvian)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Latvian)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Latvian)",
+  "childDashboard": "[LV] Child Dashboard (Latvian)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Latvian)",
+  "failedToUploadBackgroundE": "[LV] Failed to upload background: $e (Latvian)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[LV] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[LV] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[LV] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Latvian)",
+  "noAppointments": "[LV] No appointments (Latvian)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Latvian)",
+  "unlimitedBookingsPerWeek": "[LV] • Unlimited bookings per week (Latvian)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Latvian)",
+  "scheduledAtScheduledat": "[LV] Scheduled at: $scheduledAt (Latvian)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Latvian)",
+  "selectStaff": "[LV] Select Staff (Latvian)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "subscriptionCancelledSuccessfully": "Subscription cancelled successfully (Latvian)",
+  "subscriptionCancelledSuccessfully": "[LV] Subscription cancelled successfully (Latvian)",
   "@subscriptionCancelledSuccessfully": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Latvian)",
+  "cancelAppointment": "[LV] Cancel Appointment (Latvian)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[LV] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Latvian)",
+  "businessSignup": "[LV] Business Signup (Latvian)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "businessCompletionScreenComingSoon": "Business Completion Screen - Coming Soon (Latvian)",
+  "businessCompletionScreenComingSoon": "[LV] Business Completion Screen - Coming Soon (Latvian)",
   "@businessCompletionScreenComingSoon": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Latvian)",
+  "createGame1": "[LV] Create Game (Latvian)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Latvian)",
+  "valuetoint": "[LV] {value} (Latvian)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Latvian)",
+  "pleaseEnterAPromoCode": "[LV] Please enter a promo code (Latvian)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Latvian)",
+  "errorLoadingAvailabilityE": "[LV] Error loading availability: $e (Latvian)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Latvian)",
+  "parentalControls": "[LV] Parental Controls (Latvian)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Latvian)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Latvian)",
+  "childLinkedSuccessfully": "[LV] Child linked successfully! (Latvian)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Latvian)",
+  "create": "[LV] Create (Latvian)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Latvian)",
+  "noExternalMeetingsFound": "[LV] No external meetings found. (Latvian)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Latvian)",
+  "staffSelectionstaffdisplayname": "[LV] Staff: {staffName} (Latvian)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[LV] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Latvian)",
+  "schedulerScreen": "[LV] Scheduler Screen (Latvian)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Latvian)",
+  "clientUpdatedSuccessfully": "[LV] Client updated successfully! (Latvian)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Latvian)",
+  "surveyResponses": "[LV] Survey Responses (Latvian)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Latvian)",
+  "syncToOutlook": "[LV] Sync to Outlook (Latvian)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Latvian)",
+  "saveChanges": "[LV] Save Changes (Latvian)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Latvian)",
+  "pickTime": "[LV] Pick Time (Latvian)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Latvian)",
+  "registrationFailedEtostring": "[LV] Registration failed: {error} (Latvian)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Latvian)",
+  "analytics": "[LV] Analytics (Latvian)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Latvian)",
+  "errorLoadingEvents": "[LV] Error loading events (Latvian)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[LV] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[LV] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Latvian)",
+  "success1": "[LV] Success (Latvian)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[LV] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Latvian)",
+  "fromAvailstartformatcontext": "[LV] From: {startTime} (Latvian)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Latvian)",
+  "readWrite": "[LV] Read & Write (Latvian)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "redirectingToStripeCheckoutForBasicPlan": "Redirecting to Stripe checkout for Basic plan... (Latvian)",
+  "redirectingToStripeCheckoutForBasicPlan": "[LV] Redirecting to Stripe checkout for Basic plan... (Latvian)",
   "@redirectingToStripeCheckoutForBasicPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[LV] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Latvian)",
+  "pickDate": "[LV] Pick Date (Latvian)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Latvian)",
+  "chatBooking": "[LV] Chat Booking (Latvian)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Latvian)",
+  "noQuestionsAdded": "[LV] No questions added (Latvian)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[LV] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[LV] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Latvian)",
+  "typeOpenCall": "[LV] Type: Open Call (Latvian)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[LV] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[LV] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Latvian)",
+  "invoiceCreatedSuccessfully": "[LV] Invoice created successfully! (Latvian)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Latvian)",
+  "noTimeSeriesDataAvailable": "[LV] No time series data available (Latvian)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[LV] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "timestamp_formatdatelogtimestamp": "Timestamp: {timestamp}",
+  "timestamp_formatdatelogtimestamp": "[LV] Timestamp: {timestamp}",
   "@timestamp_formatdatelogtimestamp": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Latvian)",
+  "failedToSendPrivacyRequestE": "[LV] Failed to send privacy request: $e (Latvian)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Latvian)",
+  "chooseYourPlan": "[LV] Choose Your Plan (Latvian)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Latvian)",
+  "playtimeManagement": "[LV] Playtime Management (Latvian)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Latvian)",
+  "availability": "[LV] Availability (Latvian)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Latvian)",
+  "eventCreated": "[LV] Event created (Latvian)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Latvian)",
+  "subscribeToBasic499mo": "[LV] Subscribe to Basic (€4.99/mo) (Latvian)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Latvian)",
+  "completion": "[LV] Completion (Latvian)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Latvian)",
+  "supportTicketSubmitted": "[LV] Support ticket submitted (Latvian)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Latvian)",
+  "monetizationSettings": "[LV] Monetization Settings (Latvian)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Latvian)",
+  "noBookingsFound": "[LV] No bookings found (Latvian)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[LV] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Latvian)",
+  "deleteSurvey": "[LV] Delete Survey (Latvian)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Latvian)",
+  "gameApprovedSuccessfully": "[LV] Game approved successfully! (Latvian)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Latvian)",
+  "errorLoadingPermissionsError": "[LV] Error loading permissions: $error (Latvian)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Latvian)",
+  "referrals": "[LV] Referrals (Latvian)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Latvian)",
+  "crm": "[LV] CRM (Latvian)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Latvian)",
+  "gameRejected": "[LV] Game rejected (Latvian)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Latvian)",
+  "appointments": "[LV] Appointments (Latvian)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Latvian)",
+  "onboardingScreen": "[LV] Onboarding Screen (Latvian)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Latvian)",
+  "welcomeToYourStudio": "[LV] Welcome to your studio (Latvian)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Latvian)",
+  "update": "[LV] Update (Latvian)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Latvian)",
+  "retry1": "[LV] Retry (Latvian)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Latvian)",
+  "booking": "[LV] Booking (Latvian)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Latvian)",
+  "parentalSettings": "[LV] Parental Settings (Latvian)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Latvian)",
+  "language": "[LV] Language (Latvian)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Latvian)",
+  "deleteSlot": "[LV] Delete Slot (Latvian)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[LV] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[LV] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Latvian)",
+  "createNewGame": "[LV] Create New Game (Latvian)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Latvian)",
+  "next1": "[LV] Next (Latvian)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Latvian)",
+  "backgroundUploadedSuccessfully": "[LV] Background uploaded successfully! (Latvian)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Latvian)",
+  "noAppointmentRequestsFound": "[LV] No appointment requests found. (Latvian)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Latvian)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Latvian)",
+  "restrictMatureContent": "[LV] Restrict mature content (Latvian)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Latvian)",
+  "ambassadors": "[LV] Ambassadors (Latvian)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Latvian)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Latvian)",
+  "paymentWasCancelled": "[LV] Payment was cancelled (Latvian)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Latvian)",
+  "clearAll": "[LV] Clear All (Latvian)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Latvian)",
+  "viewDetails": "[LV] View Details (Latvian)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Latvian)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "liveSessionScheduledWaitingForParentApproval": "Live session scheduled! Waiting for parent approval... (Latvian)",
+  "liveSessionScheduledWaitingForParentApproval": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@liveSessionScheduledWaitingForParentApproval": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Latvian)",
+  "failedToCreateGameE": "[LV] Failed to create game: $e (Latvian)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Latvian)",
+  "noChartDataAvailable": "[LV] No chart data available (Latvian)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Latvian)",
+  "phonebasedBookingSystem": "[LV] • Phone-based booking system (Latvian)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Latvian)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Latvian)",
+  "invoices": "[LV] Invoices (Latvian)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "pleaseActivateYourBusinessProfileToContinue": "Please activate your business profile to continue. (Latvian)",
+  "pleaseActivateYourBusinessProfileToContinue": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@pleaseActivateYourBusinessProfileToContinue": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Latvian)",
+  "scheduledAtArgsscheduledat": "[LV] Scheduled at: {scheduledAt} (Latvian)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "durationDurationinminutes0Minutes": "Duration: {duration} minutes (Latvian)",
+  "durationDurationinminutes0Minutes": "[LV] Duration: {duration} minutes (Latvian)",
   "@durationDurationinminutes0Minutes": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Latvian)",
+  "tryAgain": "[LV] Try Again (Latvian)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Latvian)",
+  "deleteBackground": "[LV] Delete Background (Latvian)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Latvian)",
+  "currentTierTiertouppercase": "[LV] Current Tier: {tier} (Latvian)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[LV] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "noClientsFoundAddYourFirstClient": "No clients found. Add your first client! (Latvian)",
+  "noClientsFoundAddYourFirstClient": "[LV] No clients found. Add your first client! (Latvian)",
   "@noClientsFoundAddYourFirstClient": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "settingsDialogWillBeImplementedHere": "Settings dialog will be implemented here.",
+  "settingsDialogWillBeImplementedHere": "[LV] Settings dialog will be implemented here.",
   "@settingsDialogWillBeImplementedHere": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[LV] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Latvian)",
+  "appointmentRequests": "[LV] Appointment Requests (Latvian)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Latvian)",
+  "forward": "[LV] Forward (Latvian)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Latvian)",
+  "roomAddedSuccessfully": "[LV] Room added successfully! (Latvian)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Latvian)",
+  "option": "[LV] • $option (Latvian)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Latvian)",
+  "responseIndex1": "[LV] Response #{number} (Latvian)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Latvian)",
+  "crmDashboardWithAnalytics": "[LV] • CRM dashboard with analytics (Latvian)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Latvian)",
+  "contentLibrary1": "[LV] Content Library (Latvian)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Latvian)",
+  "reply": "[LV] Reply (Latvian)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Latvian)",
+  "subscriptionManagement": "[LV] Subscription Management (Latvian)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "monetizationSettingsWillBeImplementedHere": "Monetization settings will be implemented here (Latvian)",
+  "monetizationSettingsWillBeImplementedHere": "[LV] Monetization settings will be implemented here (Latvian)",
   "@monetizationSettingsWillBeImplementedHere": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Latvian)",
+  "failedToApplyPromoCodeE": "[LV] Failed to apply promo code: $e (Latvian)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[LV] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Latvian)",
+  "localizationContribution": "[LV] Localization Contribution (Latvian)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Latvian)",
+  "parentalConsent": "[LV] Parental Consent (Latvian)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Latvian)",
+  "businessSignupScreenComingSoon": "[LV] Business Signup Screen - Coming Soon (Latvian)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "areYouSureYouWantToDeleteThisAppointment": "Are you sure you want to delete this appointment? (Latvian)",
+  "areYouSureYouWantToDeleteThisAppointment": "[LV] Are you sure you want to delete this appointment? (Latvian)",
   "@areYouSureYouWantToDeleteThisAppointment": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Latvian)",
+  "syncAppointment": "[LV] Sync Appointment (Latvian)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Latvian)",
+  "iConsent": "[LV] I Consent (Latvian)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Latvian)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Latvian)",
+  "businessSetupScreenComingSoon": "[LV] Business Setup Screen - Coming Soon (Latvian)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Latvian)",
+  "edit1": "[LV] Edit (Latvian)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Latvian)",
+  "noEventsScheduledThisMonth": "[LV] No events scheduled this month (Latvian)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Latvian)",
+  "businessDashboard": "[LV] Business Dashboard (Latvian)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Latvian)",
+  "noMessagesFound": "[LV] No messages found. (Latvian)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[LV] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Latvian)",
+  "manageStaffAvailability": "[LV] Manage Staff Availability (Latvian)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Latvian)",
+  "noMissingTranslations": "[LV] No missing translations (Latvian)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Latvian)",
+  "skip": "[LV] Skip (Latvian)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[LV] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Latvian)",
+  "errorLoadingReferralCode": "[LV] Error loading referral code (Latvian)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Latvian)",
+  "allCountries": "[LV] All Countries (Latvian)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Latvian)",
+  "deleteGame": "[LV] Delete Game (Latvian)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Latvian)",
+  "staffManagementTools": "[LV] • Staff management tools (Latvian)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Latvian)",
+  "deleteMessage": "[LV] Delete Message (Latvian)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "receiveBookingNotificationsViaSms": "Receive booking notifications via SMS (Latvian)",
+  "receiveBookingNotificationsViaSms": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@receiveBookingNotificationsViaSms": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[LV] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "errorLoadingBookingsSnapshoterror": "Error loading bookings: {error} (Latvian)",
+  "errorLoadingBookingsSnapshoterror": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@errorLoadingBookingsSnapshoterror": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Latvian)",
+  "openingCustomerPortal": "[LV] Opening customer portal... (Latvian)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Latvian)",
+  "signOut": "[LV] Sign Out (Latvian)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Latvian)",
+  "nameProfilename": "[LV] Name: {name} (Latvian)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "businessProfileEntryScreenComingSoon": "Business Profile Entry Screen - Coming Soon (Latvian)",
+  "businessProfileEntryScreenComingSoon": "شاشة إدخال الملف التجاري - قريباً",
   "@businessProfileEntryScreenComingSoon": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Latvian)",
+  "upgradeToBusiness": "[LV] Upgrade to Business (Latvian)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Latvian)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Latvian)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Latvian)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Latvian)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Latvian)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "businessAppointmentsEntryScreenComingSoon": "Business Appointments Entry Screen - Coming Soon (Latvian)",
+  "businessAppointmentsEntryScreenComingSoon": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@businessAppointmentsEntryScreenComingSoon": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Latvian)",
+  "viewResponses": "[LV] View Responses (Latvian)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Latvian)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Latvian)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Latvian)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Latvian)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Latvian)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Latvian)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Latvian)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "noInvoicesFoundCreateYourFirstInvoice": "No invoices found. Create your first invoice! (Latvian)",
+  "noInvoicesFoundCreateYourFirstInvoice": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@noInvoicesFoundCreateYourFirstInvoice": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Latvian)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Latvian)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

@@ -1,2862 +1,2862 @@
 {
   "@@locale": "eu",
-  "refresh": "[EU] Refresh",
+  "refresh": "[EU] [EU] Refresh",
   "@refresh": {
     "description": "Description"
   },
-  "home": "Hasiera",
+  "home": "[EU] Hasiera",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "[EU] No sessions yet",
+  "noSessionsYet": "[EU] [EU] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "Ados",
+  "ok": "[EU] Ados",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "[EU] Choose your play mode:",
+  "playtimeLandingChooseMode": "[EU] [EU] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "[EU] Sign Up",
+  "signUp": "[EU] [EU] Sign Up",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "[EU] Schedule Message",
+  "scheduleMessage": "[EU] [EU] Schedule Message",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "[EU] Decline",
+  "decline": "[EU] [EU] Decline",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[EU] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "Saioa hasi",
+  "login": "[EU] Saioa hasi",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "[EU] Choose friends to invite",
+  "playtimeChooseFriends": "[EU] [EU] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "[EU] No invites",
+  "noInvites": "[EU] [EU] No invites",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "[EU] Choose a time",
+  "playtimeChooseTime": "[EU] [EU] Choose a time",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Arrakasta",
+  "success": "[EU] Arrakasta",
   "@success": {
     "description": "Description"
   },
-  "undo": "[EU] Undo",
+  "undo": "[EU] [EU] Undo",
   "@undo": {
     "description": "Description"
   },
-  "opened": "Ireki da",
+  "opened": "[EU] Ireki da",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "[EU] Create Virtual Session",
+  "createVirtualSession": "[EU] [EU] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "[EU] Message sent successfully",
+  "messageSentSuccessfully": "[EU] [EU] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "[EU] Redo",
+  "redo": "[EU] [EU] Redo",
   "@redo": {
     "description": "Description"
   },
-  "next": "Hurrengoa",
+  "next": "[EU] Hurrengoa",
   "@next": {
     "description": "Description"
   },
-  "search": "[EU] Search",
+  "search": "[EU] [EU] Search",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "[EU] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[EU] [EU] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[EU] Created",
+  "created": "[EU] [EU] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "Sarbidea kentzea",
+  "revokeAccess": "[EU] Sarbidea kentzea",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[EU] Save Group for Recognition",
+  "saveGroupForRecognition": "[EU] [EU] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[EU] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[EU] [EU] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "Sarbide-ezgaitzearen berrespena",
+  "revokeAccessConfirmation": "[EU] Sarbide-ezgaitzearen berrespena",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "[EU] Download",
+  "download": "[EU] [EU] Download",
   "@download": {
     "description": "Description"
   },
-  "password": "Pasahitza",
+  "password": "[EU] Pasahitza",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[EU] Error loading family links",
+  "errorLoadingFamilyLinks": "[EU] [EU] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "[EU] Cancel",
+  "cancel": "[EU] [EU] Cancel",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "[EU] Create",
+  "playtimeCreate": "[EU] [EU] Create",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[EU] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[EU] [EU] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Aplikazioaren izenburua",
+  "appTitle": "[EU] Aplikazioaren izenburua",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "[EU] Accept",
+  "accept": "[EU] [EU] Accept",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "Modu birtuala",
+  "playtimeModeVirtual": "[EU] Modu birtuala",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Playtime deskribapena",
+  "playtimeDescription": "[EU] Playtime deskribapena",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "[EU] Delete",
+  "delete": "[EU] [EU] Delete",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "Saio birtuala hasi da",
+  "playtimeVirtualStarted": "[EU] Saio birtuala hasi da",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "[EU] Create your first game",
+  "createYourFirstGame": "[EU] [EU] Create your first game",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "Parte-hartzaileak",
+  "participants": "[EU] Parte-hartzaileak",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "Hartzaileak",
+  "recipients": "[EU] Hartzaileak",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "Emaitzarik ez",
+  "noResults": "[EU] Emaitzarik ez",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Bai",
+  "yes": "[EU] Bai",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "[EU] Invite",
+  "invite": "[EU] [EU] Invite",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "Modu zuzenean",
+  "playtimeModeLive": "[EU] Modu zuzenean",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[EU] Done",
+  "done": "[EU] [EU] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[EU] Let's meet via Appoint!",
+  "defaultShareMessage": "[EU] [EU] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Ez",
+  "no": "[EU] Ez",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Playtime zentroa",
+  "playtimeHub": "[EU] Playtime zentroa",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "[EU] Create Live Session",
+  "createLiveSession": "[EU] [EU] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "[EU] Enable Notifications",
+  "enableNotifications": "[EU] [EU] Enable Notifications",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "[EU] Invited",
+  "invited": "[EU] [EU] Invited",
   "@invited": {
     "description": "Description"
   },
-  "content": "Eduki",
+  "content": "[EU] Eduki",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "[EU] Meeting shared successfully",
+  "meetingSharedSuccessfully": "[EU] [EU] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[EU] Welcome to Playtime",
+  "welcomeToPlaytime": "[EU] [EU] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "Denak ikusi",
+  "viewAll": "[EU] Denak ikusi",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Playtime birtuala",
+  "playtimeVirtual": "[EU] Playtime birtuala",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "Langile-pantaila zehaztu gabe",
+  "staffScreenTBD": "[EU] Langile-pantaila zehaztu gabe",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Ebaki",
+  "cut": "[EU] Ebaki",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[EU] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[EU] [EU] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "[EU] Retry",
+  "retry": "[EU] [EU] Retry",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "[EU] Compose Broadcast Message",
+  "composeBroadcastMessage": "[EU] [EU] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "[EU] Send Now",
+  "sendNow": "[EU] [EU] Send Now",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "[EU] No games yet",
+  "noGamesYet": "[EU] [EU] No games yet",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "[EU] Select",
+  "select": "[EU] [EU] Select",
   "@select": {
     "description": "Description"
   },
-  "about": "[EU] About",
+  "about": "[EU] [EU] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "[EU] Choose",
+  "choose": "[EU] [EU] Choose",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[EU] Profile",
+  "profile": "[EU] [EU] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "Haurraren kentzea",
+  "removeChild": "[EU] Haurraren kentzea",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "Egoera",
+  "status": "[EU] Egoera",
   "@status": {
     "description": "status description"
   },
-  "logout": "Saioa itxi",
+  "logout": "[EU] Saioa itxi",
   "@logout": {
     "description": "Description"
   },
-  "paste": "[EU] Paste",
+  "paste": "[EU] [EU] Paste",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "[EU] Welcome",
+  "welcome": "[EU] [EU] Welcome",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "[EU] Create a Playtime Session",
+  "playtimeCreateSession": "[EU] [EU] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Senideak",
+  "familyMembers": "[EU] Senideak",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Igotu",
+  "upload": "[EU] Igotu",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[EU] Upcoming Sessions",
+  "upcomingSessions": "[EU] [EU] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "Talde-izena sartu",
+  "enterGroupName": "[EU] Talde-izena sartu",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "Berretsi",
+  "confirm": "[EU] Berretsi",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Playtime zuzenean",
+  "playtimeLive": "[EU] Playtime zuzenean",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[EU] Error loading invites",
+  "errorLoadingInvites": "[EU] [EU] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "Helburu-iragazkiak",
+  "targetingFilters": "[EU] Helburu-iragazkiak",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "[EU] Pick Video",
+  "pickVideo": "[EU] [EU] Pick Video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "[EU] Game deleted",
+  "playtimeGameDeleted": "[EU] [EU] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "[EU] Schedule for Later",
+  "scheduleForLater": "[EU] [EU] Schedule for Later",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[EU] Access revoked successfully",
+  "accessRevokedSuccessfully": "[EU] [EU] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Mota",
+  "type": "[EU] Mota",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "Baimenen egiaztapena",
+  "checkingPermissions": "[EU] Baimenen egiaztapena",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "[EU] Copy",
+  "copy": "[EU] [EU] Copy",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "[EU] Yes, Cancel",
+  "yesCancel": "[EU] [EU] Yes, Cancel",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "[EU] Email",
+  "email": "[EU] [EU] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[EU] Share on WhatsApp",
+  "shareOnWhatsApp": "[EU] [EU] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[EU] Notification Settings",
+  "notificationSettings": "[EU] [EU] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[EU] My Profile",
+  "myProfile": "[EU] [EU] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "[EU] Revoke",
+  "revoke": "[EU] [EU] Revoke",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "Ez dago mezu-emisioik",
+  "noBroadcastMessages": "[EU] Ez dago mezu-emisioik",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "Eskari-mota",
+  "requestType": "[EU] Eskari-mota",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "[EU] Notifications",
+  "notifications": "[EU] [EU] Notifications",
   "@notifications": {
     "description": "Description"
   },
-  "details": "Xehetasunak",
+  "details": "[EU] Xehetasunak",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[EU] Cancel Invite",
+  "cancelInvite": "[EU] [EU] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "[EU] Create New",
+  "createNew": "[EU] [EU] Create New",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "Ezarpenak",
+  "settings": "[EU] Ezarpenak",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[EU] Reject",
+  "playtimeReject": "[EU] [EU] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[EU] Error loading profile",
+  "errorLoadingProfile": "[EU] [EU] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "[EU] Edit",
+  "edit": "[EU] [EU] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "Gehitu",
+  "add": "[EU] Gehitu",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[EU] Game approved",
+  "playtimeGameApproved": "[EU] [EU] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "Pasahitza ahaztu duzu?",
+  "forgotPassword": "[EU] Pasahitza ahaztu duzu?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[EU] Family Dashboard",
+  "familyDashboard": "[EU] [EU] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "[EU] Loading...",
+  "loading": "[EU] [EU] Loading...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[EU] Quick Actions",
+  "quickActions": "[EU] [EU] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Playtime izenburua",
+  "playtimeTitle": "[EU] Playtime izenburua",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "OTP berriro bidali da",
+  "otpResentSuccessfully": "[EU] OTP berriro bidali da",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[EU] Error checking permissions",
+  "errorCheckingPermissions": "[EU] [EU] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "Bezero-pantaila zehaztu gabe",
+  "clientScreenTBD": "[EU] Bezero-pantaila zehaztu gabe",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[EU] FCM Token",
+  "fcmToken": "[EU] [EU] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "[EU] Pick Image",
+  "pickImage": "[EU] [EU] Pick Image",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "Aurrekoa",
+  "previous": "[EU] Aurrekoa",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[EU] No profile found",
+  "noProfileFound": "[EU] [EU] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "[EU] No family members yet",
+  "noFamilyMembersYet": "[EU] [EU] No family members yet",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "Hedabideak (boluntarioa)",
+  "mediaOptional": "[EU] Hedabideak (boluntarioa)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[EU] Message saved successfully",
+  "messageSavedSuccessfully": "[EU] [EU] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[EU] Scheduled for",
+  "scheduledFor": "[EU] [EU] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[EU] Dashboard",
+  "dashboard": "[EU] [EU] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "[EU] No permission for broadcast",
+  "noPermissionForBroadcast": "[EU] [EU] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[EU] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[EU] Invite Details",
+  "inviteDetail": "[EU] [EU] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "[EU] Scheduled",
+  "scheduled": "[EU] [EU] Scheduled",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[EU] Failed to resend OTP",
+  "failedToResendOtp": "[EU] [EU] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "[EU] Scheduling",
+  "scheduling": "[EU] [EU] Scheduling",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[EU] Error saving message",
+  "errorSavingMessage": "[EU] [EU] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "[EU] Save",
+  "save": "[EU] [EU] Save",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "[EU] Approve",
+  "playtimeApprove": "[EU] [EU] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[EU] Create your first session",
+  "createYourFirstSession": "[EU] [EU] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[EU] Game rejected",
+  "playtimeGameRejected": "[EU] [EU] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[EU] Failed to revoke access",
+  "failedToRevokeAccess": "[EU] [EU] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Azken jokoak",
+  "recentGames": "[EU] Azken jokoak",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[EU] Customize Message",
+  "customizeMessage": "[EU] [EU] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[EU] Failed to cancel invite",
+  "failedToCancelInvite": "[EU] [EU] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[EU] Error sending message",
+  "errorSendingMessage": "[EU] [EU] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "Pasahitza berretsi",
+  "confirmPassword": "[EU] Pasahitza berretsi",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[EU] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[EU] [EU] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "[EU] Connected Children",
+  "connectedChildren": "[EU] [EU] Connected Children",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "[EU] Share",
+  "share": "[EU] [EU] Share",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "Jokoaren izena sartu",
+  "playtimeEnterGameName": "[EU] Jokoaren izena sartu",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "Saioa hasi familiako funtzioetarako",
+  "pleaseLoginForFamilyFeatures": "[EU] Saioa hasi familiako funtzioetarako",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[EU] My Invites",
+  "myInvites": "[EU] [EU] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[EU] Create Game",
+  "createGame": "[EU] [EU] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "Talde-izena (boluntarioa)",
+  "groupNameOptional": "[EU] Talde-izena (boluntarioa)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[EU] No playtime sessions found.",
+  "playtimeNoSessions": "[EU] [EU] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[EU] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[EU] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[EU] [EU] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "Itxi",
+  "close": "[EU] Itxi",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "Ezagutzen den taldea aurkitu da",
+  "knownGroupDetected": "[EU] Ezagutzen den taldea aurkitu da",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[EU] Back",
+  "back": "[EU] [EU] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[EU] Choose a game",
+  "playtimeChooseGame": "[EU] [EU] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[EU] Manage Permissions",
+  "managePermissions": "[EU] [EU] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[EU] Poll Options",
+  "pollOptions": "[EU] [EU] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[EU] Clicked",
+  "clicked": "[EU] [EU] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "Esteka",
+  "link": "[EU] Esteka",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "Bilera prest dago",
+  "meetingReadyMessage": "[EU] Bilera prest dago",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[EU] Pending Invites",
+  "pendingInvites": "[EU] [EU] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "Egoera:",
+  "statusColon": "[EU] Egoera:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[EU] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[EU] [EU] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[EU] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[EU] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[EU] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[EU] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[EU] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[EU] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[EU] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[EU] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[EU] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[EU] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[EU] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[EU] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[EU] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[EU] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[EU] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "authErrorAccountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method.",
+  "authErrorAccountExistsWithDifferentCredential": "[EU] An account already exists with this email using a different sign-in method.",
   "@authErrorAccountExistsWithDifferentCredential": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[EU] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[EU] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Basque)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Basque)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Basque)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Basque)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[EU] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[EU] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "authErrorInvalidVerificationCode": "The verification code is invalid.",
+  "authErrorInvalidVerificationCode": "[EU] The verification code is invalid.",
   "@authErrorInvalidVerificationCode": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[EU] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "authErrorMissingVerificationCode": "Please enter the verification code.",
+  "authErrorMissingVerificationCode": "[EU] Please enter the verification code.",
   "@authErrorMissingVerificationCode": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[EU] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[EU] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[EU] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[EU] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[EU] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[EU] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "authErrorMultiFactorAuthRequired": "Multi-factor authentication is required.",
+  "authErrorMultiFactorAuthRequired": "[EU] Multi-factor authentication is required.",
   "@authErrorMultiFactorAuthRequired": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "authErrorMultiFactorInfoNotFound": "Multi-factor information not found.",
+  "authErrorMultiFactorInfoNotFound": "[EU] Multi-factor information not found.",
   "@authErrorMultiFactorInfoNotFound": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "authErrorMissingMultiFactorSession": "Missing multi-factor session.",
+  "authErrorMissingMultiFactorSession": "[EU] Missing multi-factor session.",
   "@authErrorMissingMultiFactorSession": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "authErrorInvalidMultiFactorSession": "Invalid multi-factor session.",
+  "authErrorInvalidMultiFactorSession": "[EU] Invalid multi-factor session.",
   "@authErrorInvalidMultiFactorSession": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "authErrorSecondFactorAlreadyInUse": "This second factor is already in use.",
+  "authErrorSecondFactorAlreadyInUse": "[EU] This second factor is already in use.",
   "@authErrorSecondFactorAlreadyInUse": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "authErrorMaximumSecondFactorCountExceeded": "Maximum number of second factors exceeded.",
+  "authErrorMaximumSecondFactorCountExceeded": "[EU] Maximum number of second factors exceeded.",
   "@authErrorMaximumSecondFactorCountExceeded": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[EU] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "authErrorEmailChangeNeedsVerification": "Email change requires verification.",
+  "authErrorEmailChangeNeedsVerification": "[EU] Email change requires verification.",
   "@authErrorEmailChangeNeedsVerification": {
     "description": "Localization key for: Email change requires verification."
   },
-  "authErrorPhoneNumberAlreadyExists": "This phone number is already in use.",
+  "authErrorPhoneNumberAlreadyExists": "[EU] This phone number is already in use.",
   "@authErrorPhoneNumberAlreadyExists": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[EU] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[EU] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[EU] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[EU] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[EU] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[EU] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[EU] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[EU] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[EU] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[EU] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[EU] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "authErrorInvalidDynamicLinkDomain": "The dynamic link domain is invalid.",
+  "authErrorInvalidDynamicLinkDomain": "[EU] The dynamic link domain is invalid.",
   "@authErrorInvalidDynamicLinkDomain": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[EU] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[EU] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[EU] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "authErrorInvalidHashDerivedKeyLength": "The hash derived key length is invalid.",
+  "authErrorInvalidHashDerivedKeyLength": "[EU] The hash derived key length is invalid.",
   "@authErrorInvalidHashDerivedKeyLength": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[EU] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[EU] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "authErrorInvalidHashParallelization": "The hash parallelization is invalid.",
+  "authErrorInvalidHashParallelization": "[EU] The hash parallelization is invalid.",
   "@authErrorInvalidHashParallelization": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[EU] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "authErrorInvalidHashSaltSeparator": "The hash salt separator is invalid.",
+  "authErrorInvalidHashSaltSeparator": "[EU] The hash salt separator is invalid.",
   "@authErrorInvalidHashSaltSeparator": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[EU] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[EU] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[EU] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[EU] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "authErrorInvalidSessionCookieDuration": "The session cookie duration is invalid.",
+  "authErrorInvalidSessionCookieDuration": "[EU] The session cookie duration is invalid.",
   "@authErrorInvalidSessionCookieDuration": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[EU] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[EU] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "authErrorMaximumUserCountExceeded": "Maximum user import count exceeded.",
+  "authErrorMaximumUserCountExceeded": "[EU] Maximum user import count exceeded.",
   "@authErrorMaximumUserCountExceeded": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[EU] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[EU] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[EU] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[EU] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[EU] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "authErrorMissingOauthClientSecret": "Missing OAuth client secret.",
+  "authErrorMissingOauthClientSecret": "[EU] Missing OAuth client secret.",
   "@authErrorMissingOauthClientSecret": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[EU] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[EU] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[EU] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[EU] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[EU] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "authErrorUnauthorizedContinueUri": "The continue URL domain is not whitelisted.",
+  "authErrorUnauthorizedContinueUri": "[EU] The continue URL domain is not whitelisted.",
   "@authErrorUnauthorizedContinueUri": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[EU] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Basque)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Basque)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Basque)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Basque)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Basque)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Basque)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Basque)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Basque)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[EU] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Basque)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Basque)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Basque)",
+  "upload1": "[EU] Upload (Basque)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Basque)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Basque)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "virtualSessionCreatedInvitingFriends": "Virtual session created! Inviting friends... (Basque)",
+  "virtualSessionCreatedInvitingFriends": "[EU] Virtual session created! Inviting friends... (Basque)",
   "@virtualSessionCreatedInvitingFriends": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Basque)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Basque)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Basque)",
+  "rewards": "[EU] Rewards (Basque)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Basque)",
+  "time": "[EU] Time (Basque)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[EU] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Basque)",
+  "noSlots": "[EU] No slots (Basque)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Basque)",
+  "signIn": "[EU] Sign In (Basque)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Basque)",
+  "homeFeedScreen": "[EU] Home Feed Screen (Basque)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Basque)",
+  "selectLocation": "[EU] Select Location (Basque)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Basque)",
+  "noTicketsYet": "[EU] No tickets yet (Basque)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Basque)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Basque)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Basque)",
+  "subscriptionUnavailable": "[EU] Subscription unavailable (Basque)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Basque)",
+  "confirmBooking": "[EU] Confirm Booking (Basque)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Basque)",
+  "failedToUpdatePermissionE": "[EU] Failed to update permission: $e (Basque)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Basque)",
+  "reject": "[EU] Reject (Basque)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "ambassadorStatusAmbassadorstatus": "Ambassador Status: {ambassadorStatus} (Basque)",
+  "ambassadorStatusAmbassadorstatus": "[EU] Ambassador Status: {ambassadorStatus} (Basque)",
   "@ambassadorStatusAmbassadorstatus": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[EU] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Basque)",
+  "checkingSubscription": "[EU] Checking subscription... (Basque)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Basque)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Basque)",
+  "noContentAvailableYet": "[EU] No content available yet (Basque)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Basque)",
+  "resolve": "[EU] Resolve (Basque)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Basque)",
+  "errorLoadingSurveysError": "[EU] Error loading surveys: $error (Basque)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[EU] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Basque)",
+  "getHelpWithYourAccount": "[EU] Get help with your account (Basque)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Basque)",
+  "pay": "[EU] Pay (Basque)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[EU] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Basque)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Basque)",
+  "changesSavedSuccessfully": "[EU] Changes saved successfully! (Basque)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Basque)",
+  "createNewInvoice": "[EU] Create New Invoice (Basque)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Basque)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Basque)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Basque)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Basque)",
+  "profileSaved": "[EU] Profile saved! (Basque)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "receiveBookingNotificationsViaEmail": "Receive booking notifications via email (Basque)",
+  "receiveBookingNotificationsViaEmail": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@receiveBookingNotificationsViaEmail": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Basque)",
+  "valuetointk": "[EU] \\${value}K (Basque)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Basque)",
+  "deleteAccount": "[EU] Delete Account (Basque)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Basque)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Basque)",
+  "businessOnboarding": "[EU] Business Onboarding (Basque)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Basque)",
+  "addNewClient": "[EU] Add New Client (Basque)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Basque)",
+  "darkMode": "[EU] Dark Mode (Basque)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[EU] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[EU] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "youWillReceiveAConfirmationEmailShortly": "You will receive a confirmation email shortly. (Basque)",
+  "youWillReceiveAConfirmationEmailShortly": "[EU] You will receive a confirmation email shortly. (Basque)",
   "@youWillReceiveAConfirmationEmailShortly": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Basque)",
+  "addQuestion": "[EU] Add Question (Basque)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Basque)",
+  "privacyPolicy": "[EU] Privacy Policy (Basque)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Basque)",
+  "branchesLengthBranches": "[EU] {branchCount} branches (Basque)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Basque)",
+  "join": "[EU] Join (Basque)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Basque)",
+  "businessSubscription": "[EU] Business Subscription (Basque)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Basque)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[EU] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Basque)",
+  "surveyManagement": "[EU] Survey Management (Basque)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[EU] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Basque)",
+  "noRoomsFoundAddYourFirstRoom": "[EU] No rooms found. Add your first room! (Basque)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Basque)",
+  "readOurPrivacyPolicy": "[EU] Read our privacy policy (Basque)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Basque)",
+  "couldNotOpenPrivacyPolicy": "[EU] Could not open privacy policy (Basque)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Basque)",
+  "refresh1": "[EU] Refresh (Basque)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Basque)",
+  "roomUpdatedSuccessfully": "[EU] Room updated successfully! (Basque)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Basque)",
+  "contentDetail": "[EU] Content Detail (Basque)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Basque)",
+  "cancelSubscription": "[EU] Cancel Subscription (Basque)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "successfullyRegisteredAsAmbassador": "Successfully registered as Ambassador! (Basque)",
+  "successfullyRegisteredAsAmbassador": "[EU] Successfully registered as Ambassador! (Basque)",
   "@successfullyRegisteredAsAmbassador": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Basque)",
+  "save1": "[EU] Save (Basque)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Basque)",
+  "copy1": "[EU] Copy (Basque)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Basque)",
+  "failedToSendInvitationE": "[EU] Failed to send invitation: $e (Basque)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Basque)",
+  "surveyScore": "[EU] Survey Score (Basque)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[EU] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Basque)",
+  "noAppointmentsFound": "[EU] No appointments found. (Basque)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Basque)",
+  "responseDetail": "[EU] Response Detail (Basque)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "businessVerificationScreenComingSoon": "Business Verification Screen - Coming Soon (Basque)",
+  "businessVerificationScreenComingSoon": "شاشة التحقق من الأعمال - قريباً",
   "@businessVerificationScreenComingSoon": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "businessProfileActivatedSuccessfully": "Business profile activated successfully! (Basque)",
+  "businessProfileActivatedSuccessfully": "تم تفعيل الملف التجاري بنجاح",
   "@businessProfileActivatedSuccessfully": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Basque)",
+  "failedToStartProSubscriptionE": "[EU] Failed to start Pro subscription: $e (Basque)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "businessDashboardEntryScreenComingSoon": "Business Dashboard Entry Screen - Coming Soon (Basque)",
+  "businessDashboardEntryScreenComingSoon": "[EU] Business Dashboard Entry Screen - Coming Soon (Basque)",
   "@businessDashboardEntryScreenComingSoon": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Basque)",
+  "contentFilter": "[EU] Content Filter (Basque)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Basque)",
+  "helpSupport": "[EU] Help & Support (Basque)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Basque)",
+  "editRoom": "[EU] Edit Room (Basque)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[EU] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[EU] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "businessCrmEntryScreenComingSoon": "Business CRM Entry Screen - Coming Soon (Basque)",
+  "businessCrmEntryScreenComingSoon": "[EU] Business CRM Entry Screen - Coming Soon (Basque)",
   "@businessCrmEntryScreenComingSoon": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[EU] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[EU] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Basque)",
+  "errorLoadingDashboardError": "[EU] Error loading dashboard: $error (Basque)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Basque)",
+  "gameDeletedSuccessfully": "[EU] Game deleted successfully! (Basque)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Basque)",
+  "viewResponsesComingSoon": "[EU] View responses - Coming soon! (Basque)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[EU] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Basque)",
+  "errorLoadingRewards": "[EU] Error loading rewards (Basque)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Basque)",
+  "failedToDeleteAccountE": "[EU] Failed to delete account: $e (Basque)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Basque)",
+  "invited1": "[EU] Invited (Basque)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Basque)",
+  "noBranchesAvailable": "[EU] No branches available (Basque)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Basque)",
+  "errorError": "[EU] Error: $error (Basque)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Basque)",
+  "noEvents": "[EU] No events (Basque)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Basque)",
+  "gameCreatedSuccessfully": "[EU] Game created successfully! (Basque)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Basque)",
+  "add1": "[EU] Add (Basque)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[EU] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Basque)",
+  "eventstarttimeEventendtime": "[EU] {startTime} - {endTime} (Basque)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Basque)",
+  "allowPlaytime": "[EU] Allow Playtime (Basque)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Basque)",
+  "clients": "[EU] Clients (Basque)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Basque)",
+  "noAmbassadorDataAvailable": "[EU] No ambassador data available (Basque)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Basque)",
+  "backgroundDeletedSuccessfully": "[EU] Background deleted successfully! (Basque)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Basque)",
+  "errorSnapshoterror": "[EU] Error: {error} (Basque)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Basque)",
+  "noAnalyticsDataAvailableYet": "[EU] No analytics data available yet. (Basque)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Basque)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "businessPhoneBookingEntryScreenComingSoon": "Business Phone Booking Entry Screen - Coming Soon (Basque)",
+  "businessPhoneBookingEntryScreenComingSoon": "[EU] Business Phone Booking Entry Screen - Coming Soon (Basque)",
   "@businessPhoneBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Basque)",
+  "verification": "[EU] Verification (Basque)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Basque)",
+  "copyLink": "[EU] Copy Link (Basque)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Basque)",
+  "dashboard1": "[EU] Dashboard (Basque)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Basque)",
+  "manageChildAccounts": "[EU] Manage Child Accounts (Basque)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Basque)",
+  "grantConsent": "[EU] Grant Consent (Basque)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Basque)",
+  "myProfile1": "[EU] My Profile (Basque)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Basque)",
+  "submit": "[EU] Submit (Basque)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[EU] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Basque)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Basque)",
+  "ambassadorDashboard": "[EU] Ambassador Dashboard (Basque)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Basque)",
+  "phoneBooking": "[EU] Phone Booking (Basque)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Basque)",
+  "bookViaChat": "[EU] Book via Chat (Basque)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "[EU] Error",
+  "error": "[EU] [EU] Error",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Basque)",
+  "businessProfile": "[EU] Business Profile (Basque)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "businessBookingEntryScreenComingSoon": "Business Booking Entry Screen - Coming Soon (Basque)",
+  "businessBookingEntryScreenComingSoon": "[EU] Business Booking Entry Screen - Coming Soon (Basque)",
   "@businessBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Basque)",
+  "createNewSurvey": "[EU] Create New Survey (Basque)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Basque)",
+  "backgroundRejected": "[EU] Background rejected (Basque)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Basque)",
+  "noMediaSelected": "[EU] No media selected (Basque)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Basque)",
+  "syncToGoogle": "[EU] Sync to Google (Basque)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Basque)",
+  "virtualPlaytime": "[EU] Virtual Playtime (Basque)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[EU] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[EU] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Basque)",
+  "invitationSentSuccessfully": "[EU] Invitation sent successfully! (Basque)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Basque)",
+  "registering": "[EU] Registering... (Basque)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Basque)",
+  "statusAppointmentstatusname": "[EU] Status: {status} (Basque)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Basque)",
+  "home1": "[EU] Home (Basque)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Basque)",
+  "errorSavingSettingsE": "[EU] Error saving settings: $e (Basque)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Basque)",
+  "appVersionAndInformation": "[EU] App version and information (Basque)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "businessSubscriptionEntryScreenComingSoon": "Business Subscription Entry Screen - Coming Soon (Basque)",
+  "businessSubscriptionEntryScreenComingSoon": "[EU] Business Subscription Entry Screen - Coming Soon (Basque)",
   "@businessSubscriptionEntryScreenComingSoon": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Basque)",
+  "ekeyEvalue": "[EU] {key}: {value} (Basque)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "yourPaymentHasBeenProcessedSuccessfully": "Your payment has been processed successfully. (Basque)",
+  "yourPaymentHasBeenProcessedSuccessfully": "[EU] Your payment has been processed successfully. (Basque)",
   "@yourPaymentHasBeenProcessedSuccessfully": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Basque)",
+  "errorE": "[EU] Error: $e (Basque)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Basque)",
+  "viewAll1": "[EU] View All (Basque)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Basque)",
+  "editSurveyComingSoon": "[EU] Edit survey - Coming soon! (Basque)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Basque)",
+  "enterOtp": "[EU] Enter OTP (Basque)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Basque)",
+  "payment": "[EU] Payment (Basque)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "automaticallyConfirmNewBookingRequests": "Automatically confirm new booking requests (Basque)",
+  "automaticallyConfirmNewBookingRequests": "[EU] Automatically confirm new booking requests (Basque)",
   "@automaticallyConfirmNewBookingRequests": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Basque)",
+  "noRouteDefinedForSettingsname": "[EU] No route defined for {settingsName} (Basque)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Basque)",
+  "pleaseSignInToUploadABackground": "[EU] Please sign in to upload a background (Basque)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[EU] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Basque)",
+  "staffAvailability": "[EU] Staff Availability (Basque)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Basque)",
+  "livePlaytime": "[EU] Live Playtime (Basque)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Basque)",
+  "autoconfirmBookings": "[EU] Auto-Confirm Bookings (Basque)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "redirectingToStripeCheckoutForProPlan": "Redirecting to Stripe checkout for Pro plan... (Basque)",
+  "redirectingToStripeCheckoutForProPlan": "[EU] Redirecting to Stripe checkout for Pro plan... (Basque)",
   "@redirectingToStripeCheckoutForProPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Basque)",
+  "exportAsCsv": "[EU] Export as CSV (Basque)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Basque)",
+  "deleteFunctionalityComingSoon": "[EU] Delete functionality coming soon! (Basque)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Basque)",
+  "editClient": "[EU] Edit Client (Basque)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "areYouSureYouWantToDeleteThisMessage": "Are you sure you want to delete this message? (Basque)",
+  "areYouSureYouWantToDeleteThisMessage": "[EU] Are you sure you want to delete this message? (Basque)",
   "@areYouSureYouWantToDeleteThisMessage": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Basque)",
+  "referralsAmbassadorreferrals": "[EU] Referrals: {referrals} (Basque)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[EU] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Basque)",
+  "privacyRequestSentToYourParents": "[EU] Privacy request sent to your parents! (Basque)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Basque)",
+  "clientDeletedSuccessfully": "[EU] Client deleted successfully! (Basque)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Basque)",
+  "failedToCancelSubscription": "[EU] Failed to cancel subscription (Basque)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Basque)",
+  "allLanguages": "[EU] All Languages (Basque)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Basque)",
+  "slotDeletedSuccessfully": "[EU] Slot deleted successfully (Basque)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "businessProvidersEntryScreenComingSoon": "Business Providers Entry Screen - Coming Soon",
+  "businessProvidersEntryScreenComingSoon": "[EU] Business Providers Entry Screen - Coming Soon",
   "@businessProvidersEntryScreenComingSoon": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "parentsMustApproveBeforeChildrenCanJoin": "Parents must approve before children can join (Basque)",
+  "parentsMustApproveBeforeChildrenCanJoin": "[EU] Parents must approve before children can join (Basque)",
   "@parentsMustApproveBeforeChildrenCanJoin": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Basque)",
+  "subscribeToPro1499mo": "[EU] Subscribe to Pro (€14.99/mo) (Basque)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "businessAvailabilityEntryScreenComingSoon": "Business Availability Entry Screen - Coming Soon (Basque)",
+  "businessAvailabilityEntryScreenComingSoon": "[EU] Business Availability Entry Screen - Coming Soon (Basque)",
   "@businessAvailabilityEntryScreenComingSoon": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Basque)",
+  "appointmentsListlength": "[EU] Appointments: {count} (Basque)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Basque)",
+  "clearFilters": "[EU] Clear Filters (Basque)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Basque)",
+  "submitBooking": "[EU] Submit Booking (Basque)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "areYouSureYouWantToCancelThisAppointment": "Are you sure you want to cancel this appointment? (Basque)",
+  "areYouSureYouWantToCancelThisAppointment": "[EU] Are you sure you want to cancel this appointment? (Basque)",
   "@areYouSureYouWantToCancelThisAppointment": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Basque)",
+  "noUpcomingBookings": "[EU] No upcoming bookings (Basque)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Basque)",
+  "goBack": "[EU] Go Back (Basque)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Basque)",
+  "setup": "[EU] Setup (Basque)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Basque)",
+  "inviteChild": "[EU] Invite Child (Basque)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Basque)",
+  "goToDashboard": "[EU] Go to Dashboard (Basque)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Basque)",
+  "ambassadorQuotaDashboard": "[EU] Ambassador Quota Dashboard (Basque)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[EU] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Basque)",
+  "referralCode": "[EU] Referral Code (Basque)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[EU] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Basque)",
+  "date": "[EU] Date (Basque)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Basque)",
+  "readOnly": "[EU] Read Only (Basque)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Basque)",
+  "bookingRequest": "[EU] Booking Request (Basque)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Basque)",
+  "advancedReporting": "[EU] • Advanced reporting (Basque)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Basque)",
+  "rooms": "[EU] Rooms (Basque)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Basque)",
+  "copiedToClipboard": "[EU] Copied to clipboard (Basque)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Basque)",
+  "bookingConfirmed": "[EU] Booking Confirmed (Basque)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Basque)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Basque)",
+  "clientAddedSuccessfully": "[EU] Client added successfully! (Basque)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Basque)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Basque)",
+  "backgroundApproved": "[EU] Background approved! (Basque)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Basque)",
+  "familySupport": "[EU] Family Support (Basque)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Basque)",
+  "deletingAccount": "[EU] Deleting account... (Basque)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Basque)",
+  "bookAppointment": "[EU] Book Appointment (Basque)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "receivePushNotificationsForNewBookings": "Receive push notifications for new bookings (Basque)",
+  "receivePushNotificationsForNewBookings": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@receivePushNotificationsForNewBookings": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Basque)",
+  "delete1": "[EU] Delete (Basque)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Basque)",
+  "sendBookingInvite": "[EU] Send Booking Invite (Basque)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Basque)",
+  "text": "[EU] Text (Basque)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Basque)",
+  "manageSubscription": "[EU] Manage Subscription (Basque)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Basque)",
+  "requiresInstallFallback": "[EU] Requires Install Fallback (Basque)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Basque)",
+  "paymentConfirmation": "[EU] Payment Confirmation (Basque)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Basque)",
+  "promoAppliedYourNextBillIsFree": "[EU] Promo applied! Your next bill is free. (Basque)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Basque)",
+  "errorLoadingSlots": "[EU] Error loading slots (Basque)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "allowOtherUsersToFindAndJoinThisGame": "Allow other users to find and join this game (Basque)",
+  "allowOtherUsersToFindAndJoinThisGame": "[EU] Allow other users to find and join this game (Basque)",
   "@allowOtherUsersToFindAndJoinThisGame": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "businessOnboardingScreenComingSoon": "Business Onboarding Screen - Coming Soon (Basque)",
+  "businessOnboardingScreenComingSoon": "[EU] Business Onboarding Screen - Coming Soon (Basque)",
   "@businessOnboardingScreenComingSoon": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Basque)",
+  "activateBusinessProfile": "[EU] Activate Business Profile (Basque)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Basque)",
+  "contentNotFound": "[EU] Content not found (Basque)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Basque)",
+  "pspecialtynpcontactinfo": "[EU] {specialty}\\n{contactInfo} (Basque)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Basque)",
+  "rating": "[EU] Rating (Basque)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Basque)",
+  "messages": "[EU] Messages (Basque)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Basque)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Basque)",
+  "becomeAnAmbassador": "[EU] Become an Ambassador (Basque)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Basque)",
+  "subscribeNow": "[EU] Subscribe Now (Basque)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Basque)",
+  "timeArgsslotformatcontext": "[EU] Time: {time} (Basque)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Basque)",
+  "shareViaWhatsapp": "[EU] Share via WhatsApp (Basque)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Basque)",
+  "users1": "[EU] Users (Basque)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Basque)",
+  "shareLink": "[EU] Share Link (Basque)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
+  "areYouSureYouWantToDeleteThisProvider": "[EU] Are you sure you want to delete this provider?",
   "@areYouSureYouWantToDeleteThisProvider": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Basque)",
+  "deleteAppointment": "[EU] Delete Appointment (Basque)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Basque)",
+  "toggleAvailability": "[EU] Toggle Availability (Basque)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Basque)",
+  "changePlan": "[EU] Change Plan (Basque)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Basque)",
+  "errorLoadingStaff": "[EU] Error loading staff (Basque)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Basque)",
+  "updateYourBusinessInformation": "[EU] Update your business information (Basque)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "noProvidersFoundAddYourFirstProvider": "No providers found. Add your first provider!",
+  "noProvidersFoundAddYourFirstProvider": "[EU] No providers found. Add your first provider!",
   "@noProvidersFoundAddYourFirstProvider": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Basque)",
+  "parentDashboard": "[EU] Parent Dashboard (Basque)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Basque)",
+  "menu": "[EU] Menu (Basque)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Basque)",
+  "studioBooking": "[EU] Studio Booking (Basque)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Basque)",
+  "about1": "[EU] About (Basque)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Basque)",
+  "multipleChoice": "[EU] Multiple Choice (Basque)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "dateAppointmentscheduledattostring": "Date: {date} (Basque)",
+  "dateAppointmentscheduledattostring": "[EU] Date: {date} (Basque)",
   "@dateAppointmentscheduledattostring": {
     "description": "Localization key for: Date: {date}"
   },
-  "studioBookingIsOnlyAvailableOnWeb": "Studio booking is only available on web (Basque)",
+  "studioBookingIsOnlyAvailableOnWeb": "[EU] Studio booking is only available on web (Basque)",
   "@studioBookingIsOnlyAvailableOnWeb": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Basque)",
+  "errorLoadingBranchesE": "[EU] Error loading branches: $e (Basque)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "ud83dudcc5Bookingdatetimetolocal": "\\uD83D\\uDCC5 {dateTime} (Basque)",
+  "ud83dudcc5Bookingdatetimetolocal": "[EU] \\uD83D\\uDCC5 {dateTime} (Basque)",
   "@ud83dudcc5Bookingdatetimetolocal": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Basque)",
+  "none": "[EU] None (Basque)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Basque)",
+  "failedToUpdateConsentE": "[EU] Failed to update consent: $e (Basque)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Basque)",
+  "welcome1": "[EU] Welcome (Basque)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Basque)",
+  "failedToCreateSessionE": "[EU] Failed to create session: $e (Basque)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Basque)",
+  "inviteContact": "[EU] Invite Contact (Basque)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Basque)",
+  "surveyEditor": "[EU] Survey Editor (Basque)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Basque)",
+  "failedToStartBasicSubscriptionE": "[EU] Failed to start Basic subscription: $e (Basque)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Basque)",
+  "mySchedule": "[EU] My Schedule (Basque)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Basque)",
+  "studioDashboard": "[EU] Studio Dashboard (Basque)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Basque)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[EU] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[EU] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Basque)",
+  "settingsSavedSuccessfully": "[EU] Settings saved successfully! (Basque)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Basque)",
+  "linkCopiedToClipboard": "[EU] Link copied to clipboard! (Basque)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Basque)",
+  "accept1": "[EU] Accept (Basque)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Basque)",
+  "noAvailableSlots": "[EU] No available slots (Basque)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Basque)",
+  "makeGamePublic": "[EU] Make Game Public (Basque)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "permissionPermissioncategoryUpdatedToNewvalue": "Permission {category} updated to $newValue (Basque)",
+  "permissionPermissioncategoryUpdatedToNewvalue": "[EU] Permission {category} updated to $newValue (Basque)",
   "@permissionPermissioncategoryUpdatedToNewvalue": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Basque)",
+  "roomDeletedSuccessfully": "[EU] Room deleted successfully! (Basque)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Basque)",
+  "businessCalendar": "[EU] Business Calendar (Basque)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Basque)",
+  "addAvailability": "[EU] Add Availability (Basque)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Basque)",
+  "ambassadorOnboarding": "[EU] Ambassador Onboarding (Basque)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Basque)",
+  "phoneProfileasyncphone": "[EU] Phone: {phone} (Basque)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Basque)",
+  "addNewRoom": "[EU] Add New Room (Basque)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Basque)",
+  "requireParentApproval": "[EU] Require Parent Approval (Basque)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Basque)",
+  "closed": "[EU] Closed (Basque)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Basque)",
+  "exportAsPdf": "[EU] Export as PDF (Basque)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Basque)",
+  "enableVibration": "[EU] Enable Vibration (Basque)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Basque)",
+  "toAvailendformatcontext": "[EU] To: {endTime} (Basque)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Basque)",
+  "yourUpgradeCodeUpgradecode": "[EU] Your upgrade code: $upgradeCode (Basque)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[EU] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Basque)",
+  "country": "[EU] Country (Basque)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[EU] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Basque)",
+  "staffArgsstaffdisplayname": "[EU] Staff: {staffName} (Basque)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Basque)",
+  "revokeConsent": "[EU] Revoke Consent (Basque)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Basque)",
+  "settings1": "[EU] Settings (Basque)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Basque)",
+  "cancel1": "[EU] Cancel (Basque)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "subscriptionActivatedSuccessfully": "Subscription activated successfully! (Basque)",
+  "subscriptionActivatedSuccessfully": "[EU] Subscription activated successfully! (Basque)",
   "@subscriptionActivatedSuccessfully": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[EU] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Basque)",
+  "broadcast": "[EU] Broadcast (Basque)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Basque)",
+  "noEventsScheduledThisWeek": "[EU] No events scheduled this week (Basque)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Basque)",
+  "googleCalendar": "[EU] Google Calendar (Basque)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Basque)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Basque)",
+  "childDashboard": "[EU] Child Dashboard (Basque)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Basque)",
+  "failedToUploadBackgroundE": "[EU] Failed to upload background: $e (Basque)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[EU] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[EU] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[EU] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Basque)",
+  "noAppointments": "[EU] No appointments (Basque)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Basque)",
+  "unlimitedBookingsPerWeek": "[EU] • Unlimited bookings per week (Basque)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Basque)",
+  "scheduledAtScheduledat": "[EU] Scheduled at: $scheduledAt (Basque)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Basque)",
+  "selectStaff": "[EU] Select Staff (Basque)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "subscriptionCancelledSuccessfully": "Subscription cancelled successfully (Basque)",
+  "subscriptionCancelledSuccessfully": "[EU] Subscription cancelled successfully (Basque)",
   "@subscriptionCancelledSuccessfully": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Basque)",
+  "cancelAppointment": "[EU] Cancel Appointment (Basque)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[EU] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Basque)",
+  "businessSignup": "[EU] Business Signup (Basque)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "businessCompletionScreenComingSoon": "Business Completion Screen - Coming Soon (Basque)",
+  "businessCompletionScreenComingSoon": "[EU] Business Completion Screen - Coming Soon (Basque)",
   "@businessCompletionScreenComingSoon": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Basque)",
+  "createGame1": "[EU] Create Game (Basque)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Basque)",
+  "valuetoint": "[EU] {value} (Basque)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Basque)",
+  "pleaseEnterAPromoCode": "[EU] Please enter a promo code (Basque)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Basque)",
+  "errorLoadingAvailabilityE": "[EU] Error loading availability: $e (Basque)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Basque)",
+  "parentalControls": "[EU] Parental Controls (Basque)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Basque)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Basque)",
+  "childLinkedSuccessfully": "[EU] Child linked successfully! (Basque)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Basque)",
+  "create": "[EU] Create (Basque)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Basque)",
+  "noExternalMeetingsFound": "[EU] No external meetings found. (Basque)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Basque)",
+  "staffSelectionstaffdisplayname": "[EU] Staff: {staffName} (Basque)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[EU] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Basque)",
+  "schedulerScreen": "[EU] Scheduler Screen (Basque)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Basque)",
+  "clientUpdatedSuccessfully": "[EU] Client updated successfully! (Basque)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Basque)",
+  "surveyResponses": "[EU] Survey Responses (Basque)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Basque)",
+  "syncToOutlook": "[EU] Sync to Outlook (Basque)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Basque)",
+  "saveChanges": "[EU] Save Changes (Basque)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Basque)",
+  "pickTime": "[EU] Pick Time (Basque)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Basque)",
+  "registrationFailedEtostring": "[EU] Registration failed: {error} (Basque)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Basque)",
+  "analytics": "[EU] Analytics (Basque)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Basque)",
+  "errorLoadingEvents": "[EU] Error loading events (Basque)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[EU] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[EU] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Basque)",
+  "success1": "[EU] Success (Basque)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[EU] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Basque)",
+  "fromAvailstartformatcontext": "[EU] From: {startTime} (Basque)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Basque)",
+  "readWrite": "[EU] Read & Write (Basque)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "redirectingToStripeCheckoutForBasicPlan": "Redirecting to Stripe checkout for Basic plan... (Basque)",
+  "redirectingToStripeCheckoutForBasicPlan": "[EU] Redirecting to Stripe checkout for Basic plan... (Basque)",
   "@redirectingToStripeCheckoutForBasicPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[EU] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Basque)",
+  "pickDate": "[EU] Pick Date (Basque)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Basque)",
+  "chatBooking": "[EU] Chat Booking (Basque)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Basque)",
+  "noQuestionsAdded": "[EU] No questions added (Basque)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[EU] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[EU] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Basque)",
+  "typeOpenCall": "[EU] Type: Open Call (Basque)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[EU] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[EU] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Basque)",
+  "invoiceCreatedSuccessfully": "[EU] Invoice created successfully! (Basque)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Basque)",
+  "noTimeSeriesDataAvailable": "[EU] No time series data available (Basque)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[EU] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "timestamp_formatdatelogtimestamp": "Timestamp: {timestamp}",
+  "timestamp_formatdatelogtimestamp": "[EU] Timestamp: {timestamp}",
   "@timestamp_formatdatelogtimestamp": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Basque)",
+  "failedToSendPrivacyRequestE": "[EU] Failed to send privacy request: $e (Basque)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Basque)",
+  "chooseYourPlan": "[EU] Choose Your Plan (Basque)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Basque)",
+  "playtimeManagement": "[EU] Playtime Management (Basque)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Basque)",
+  "availability": "[EU] Availability (Basque)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Basque)",
+  "eventCreated": "[EU] Event created (Basque)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Basque)",
+  "subscribeToBasic499mo": "[EU] Subscribe to Basic (€4.99/mo) (Basque)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Basque)",
+  "completion": "[EU] Completion (Basque)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Basque)",
+  "supportTicketSubmitted": "[EU] Support ticket submitted (Basque)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Basque)",
+  "monetizationSettings": "[EU] Monetization Settings (Basque)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Basque)",
+  "noBookingsFound": "[EU] No bookings found (Basque)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[EU] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Basque)",
+  "deleteSurvey": "[EU] Delete Survey (Basque)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Basque)",
+  "gameApprovedSuccessfully": "[EU] Game approved successfully! (Basque)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Basque)",
+  "errorLoadingPermissionsError": "[EU] Error loading permissions: $error (Basque)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Basque)",
+  "referrals": "[EU] Referrals (Basque)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Basque)",
+  "crm": "[EU] CRM (Basque)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Basque)",
+  "gameRejected": "[EU] Game rejected (Basque)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Basque)",
+  "appointments": "[EU] Appointments (Basque)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Basque)",
+  "onboardingScreen": "[EU] Onboarding Screen (Basque)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Basque)",
+  "welcomeToYourStudio": "[EU] Welcome to your studio (Basque)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Basque)",
+  "update": "[EU] Update (Basque)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Basque)",
+  "retry1": "[EU] Retry (Basque)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Basque)",
+  "booking": "[EU] Booking (Basque)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Basque)",
+  "parentalSettings": "[EU] Parental Settings (Basque)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Basque)",
+  "language": "[EU] Language (Basque)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Basque)",
+  "deleteSlot": "[EU] Delete Slot (Basque)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[EU] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[EU] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Basque)",
+  "createNewGame": "[EU] Create New Game (Basque)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Basque)",
+  "next1": "[EU] Next (Basque)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Basque)",
+  "backgroundUploadedSuccessfully": "[EU] Background uploaded successfully! (Basque)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Basque)",
+  "noAppointmentRequestsFound": "[EU] No appointment requests found. (Basque)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Basque)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Basque)",
+  "restrictMatureContent": "[EU] Restrict mature content (Basque)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Basque)",
+  "ambassadors": "[EU] Ambassadors (Basque)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Basque)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Basque)",
+  "paymentWasCancelled": "[EU] Payment was cancelled (Basque)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Basque)",
+  "clearAll": "[EU] Clear All (Basque)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Basque)",
+  "viewDetails": "[EU] View Details (Basque)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Basque)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "liveSessionScheduledWaitingForParentApproval": "Live session scheduled! Waiting for parent approval... (Basque)",
+  "liveSessionScheduledWaitingForParentApproval": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@liveSessionScheduledWaitingForParentApproval": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Basque)",
+  "failedToCreateGameE": "[EU] Failed to create game: $e (Basque)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Basque)",
+  "noChartDataAvailable": "[EU] No chart data available (Basque)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Basque)",
+  "phonebasedBookingSystem": "[EU] • Phone-based booking system (Basque)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Basque)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Basque)",
+  "invoices": "[EU] Invoices (Basque)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "pleaseActivateYourBusinessProfileToContinue": "Please activate your business profile to continue. (Basque)",
+  "pleaseActivateYourBusinessProfileToContinue": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@pleaseActivateYourBusinessProfileToContinue": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Basque)",
+  "scheduledAtArgsscheduledat": "[EU] Scheduled at: {scheduledAt} (Basque)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "durationDurationinminutes0Minutes": "Duration: {duration} minutes (Basque)",
+  "durationDurationinminutes0Minutes": "[EU] Duration: {duration} minutes (Basque)",
   "@durationDurationinminutes0Minutes": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Basque)",
+  "tryAgain": "[EU] Try Again (Basque)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Basque)",
+  "deleteBackground": "[EU] Delete Background (Basque)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Basque)",
+  "currentTierTiertouppercase": "[EU] Current Tier: {tier} (Basque)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[EU] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "noClientsFoundAddYourFirstClient": "No clients found. Add your first client! (Basque)",
+  "noClientsFoundAddYourFirstClient": "[EU] No clients found. Add your first client! (Basque)",
   "@noClientsFoundAddYourFirstClient": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "settingsDialogWillBeImplementedHere": "Settings dialog will be implemented here.",
+  "settingsDialogWillBeImplementedHere": "[EU] Settings dialog will be implemented here.",
   "@settingsDialogWillBeImplementedHere": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[EU] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Basque)",
+  "appointmentRequests": "[EU] Appointment Requests (Basque)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Basque)",
+  "forward": "[EU] Forward (Basque)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Basque)",
+  "roomAddedSuccessfully": "[EU] Room added successfully! (Basque)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Basque)",
+  "option": "[EU] • $option (Basque)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Basque)",
+  "responseIndex1": "[EU] Response #{number} (Basque)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Basque)",
+  "crmDashboardWithAnalytics": "[EU] • CRM dashboard with analytics (Basque)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Basque)",
+  "contentLibrary1": "[EU] Content Library (Basque)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Basque)",
+  "reply": "[EU] Reply (Basque)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Basque)",
+  "subscriptionManagement": "[EU] Subscription Management (Basque)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "monetizationSettingsWillBeImplementedHere": "Monetization settings will be implemented here (Basque)",
+  "monetizationSettingsWillBeImplementedHere": "[EU] Monetization settings will be implemented here (Basque)",
   "@monetizationSettingsWillBeImplementedHere": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Basque)",
+  "failedToApplyPromoCodeE": "[EU] Failed to apply promo code: $e (Basque)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[EU] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Basque)",
+  "localizationContribution": "[EU] Localization Contribution (Basque)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Basque)",
+  "parentalConsent": "[EU] Parental Consent (Basque)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Basque)",
+  "businessSignupScreenComingSoon": "[EU] Business Signup Screen - Coming Soon (Basque)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "areYouSureYouWantToDeleteThisAppointment": "Are you sure you want to delete this appointment? (Basque)",
+  "areYouSureYouWantToDeleteThisAppointment": "[EU] Are you sure you want to delete this appointment? (Basque)",
   "@areYouSureYouWantToDeleteThisAppointment": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Basque)",
+  "syncAppointment": "[EU] Sync Appointment (Basque)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Basque)",
+  "iConsent": "[EU] I Consent (Basque)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Basque)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Basque)",
+  "businessSetupScreenComingSoon": "[EU] Business Setup Screen - Coming Soon (Basque)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Basque)",
+  "edit1": "[EU] Edit (Basque)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Basque)",
+  "noEventsScheduledThisMonth": "[EU] No events scheduled this month (Basque)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Basque)",
+  "businessDashboard": "[EU] Business Dashboard (Basque)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Basque)",
+  "noMessagesFound": "[EU] No messages found. (Basque)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[EU] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Basque)",
+  "manageStaffAvailability": "[EU] Manage Staff Availability (Basque)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Basque)",
+  "noMissingTranslations": "[EU] No missing translations (Basque)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Basque)",
+  "skip": "[EU] Skip (Basque)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[EU] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Basque)",
+  "errorLoadingReferralCode": "[EU] Error loading referral code (Basque)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Basque)",
+  "allCountries": "[EU] All Countries (Basque)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Basque)",
+  "deleteGame": "[EU] Delete Game (Basque)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Basque)",
+  "staffManagementTools": "[EU] • Staff management tools (Basque)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Basque)",
+  "deleteMessage": "[EU] Delete Message (Basque)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "receiveBookingNotificationsViaSms": "Receive booking notifications via SMS (Basque)",
+  "receiveBookingNotificationsViaSms": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@receiveBookingNotificationsViaSms": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[EU] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "errorLoadingBookingsSnapshoterror": "Error loading bookings: {error} (Basque)",
+  "errorLoadingBookingsSnapshoterror": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@errorLoadingBookingsSnapshoterror": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Basque)",
+  "openingCustomerPortal": "[EU] Opening customer portal... (Basque)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Basque)",
+  "signOut": "[EU] Sign Out (Basque)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Basque)",
+  "nameProfilename": "[EU] Name: {name} (Basque)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "businessProfileEntryScreenComingSoon": "Business Profile Entry Screen - Coming Soon (Basque)",
+  "businessProfileEntryScreenComingSoon": "شاشة إدخال الملف التجاري - قريباً",
   "@businessProfileEntryScreenComingSoon": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Basque)",
+  "upgradeToBusiness": "[EU] Upgrade to Business (Basque)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Basque)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Basque)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Basque)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Basque)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Basque)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "businessAppointmentsEntryScreenComingSoon": "Business Appointments Entry Screen - Coming Soon (Basque)",
+  "businessAppointmentsEntryScreenComingSoon": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@businessAppointmentsEntryScreenComingSoon": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Basque)",
+  "viewResponses": "[EU] View Responses (Basque)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Basque)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Basque)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Basque)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Basque)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Basque)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Basque)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Basque)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "noInvoicesFoundCreateYourFirstInvoice": "No invoices found. Create your first invoice! (Basque)",
+  "noInvoicesFoundCreateYourFirstInvoice": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@noInvoicesFoundCreateYourFirstInvoice": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Basque)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Basque)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

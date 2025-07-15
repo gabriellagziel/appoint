@@ -1,6 +1,6 @@
 {
   "@@locale": "hi",
-  "refresh": "रिफ्रेश करें",
+  "refresh": "[HI] रिफ्रेश करें",
   "@refresh": {
     "description": "Description"
   },
@@ -8,31 +8,31 @@
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "अभी तक कोई सत्र नहीं",
+  "noSessionsYet": "[HI] अभी तक कोई सत्र नहीं",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "ठीक है",
+  "ok": "[HI] ठीक है",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "मोड चुनें",
+  "playtimeLandingChooseMode": "[HI] मोड चुनें",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "साइन अप",
+  "signUp": "[HI] साइन अप",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "संदेश निर्धारित करें",
+  "scheduleMessage": "[HI] संदेश निर्धारित करें",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "अस्वीकार करें",
+  "decline": "[HI] अस्वीकार करें",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "व्यवस्थापक प्रसारण",
+  "adminBroadcast": "[HI] व्यवस्थापक प्रसारण",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
@@ -40,15 +40,15 @@
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "मित्र चुनें",
+  "playtimeChooseFriends": "[HI] मित्र चुनें",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "कोई निमंत्रण नहीं",
+  "noInvites": "[HI] कोई निमंत्रण नहीं",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "समय चुनें",
+  "playtimeChooseTime": "[HI] समय चुनें",
   "@playtimeChooseTime": {
     "description": "Description"
   },
@@ -56,19 +56,19 @@
   "@success": {
     "description": "Description"
   },
-  "undo": "पूर्ववत करें",
+  "undo": "[HI] पूर्ववत करें",
   "@undo": {
     "description": "Description"
   },
-  "opened": "खोला गया: {count}",
+  "opened": "[HI] खोला गया: {count}",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "वर्चुअल सत्र बनाएं",
+  "createVirtualSession": "[HI] वर्चुअल सत्र बनाएं",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "संदेश सफलतापूर्वक भेजा गया",
+  "messageSentSuccessfully": "[HI] संदेश सफलतापूर्वक भेजा गया",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
@@ -84,27 +84,27 @@
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "क्या आप वाकई इस निमंत्रण को रद्द करना चाहते हैं?",
+  "cancelInviteConfirmation": "[HI] क्या आप वाकई इस निमंत्रण को रद्द करना चाहते हैं?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "बनाया गया: {date}",
+  "created": "[HI] बनाया गया: {date}",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "पहुंच रद्द करें",
+  "revokeAccess": "[HI] पहुंच रद्द करें",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "भविष्य की पहचान के लिए समूह सहेजें",
+  "saveGroupForRecognition": "[HI] भविष्य की पहचान के लिए समूह सहेजें",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "लाइव सत्र निर्धारित किया गया",
+  "playtimeLiveScheduled": "[HI] लाइव सत्र निर्धारित किया गया",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "क्या आप वाकई इस बच्चे की पहुंच रद्द करना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।",
+  "revokeAccessConfirmation": "[HI] क्या आप वाकई इस बच्चे की पहुंच रद्द करना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
@@ -116,35 +116,35 @@
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "पारिवारिक लिंक लोड करने में त्रुटि: {error}",
+  "errorLoadingFamilyLinks": "[HI] पारिवारिक लिंक लोड करने में त्रुटि: {error}",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "रद्द करें",
+  "cancel": "[HI] रद्द करें",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Playtime बनाएं",
+  "playtimeCreate": "[HI] Playtime बनाएं",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "गोपनीयता अनुरोध {action} करने में विफल: {error}",
+  "failedToActionPrivacyRequest": "[HI] गोपनीयता अनुरोध {action} करने में विफल: {error}",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Appoint",
+  "appTitle": "[HI] Appoint",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "स्वीकार करें",
+  "accept": "[HI] स्वीकार करें",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "वर्चुअल मोड",
+  "playtimeModeVirtual": "[HI] वर्चुअल मोड",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Playtime विवरण",
+  "playtimeDescription": "[HI] Playtime विवरण",
   "@playtimeDescription": {
     "description": "Description"
   },
@@ -152,11 +152,11 @@
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "वर्चुअल सत्र प्रारंभ हुआ",
+  "playtimeVirtualStarted": "[HI] वर्चुअल सत्र प्रारंभ हुआ",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "अपना पहला गेम बनाएं",
+  "createYourFirstGame": "[HI] अपना पहला गेम बनाएं",
   "@createYourFirstGame": {
     "description": "Description"
   },
@@ -164,11 +164,11 @@
   "@participants": {
     "description": "Description"
   },
-  "recipients": "प्राप्तकर्ता: {count}",
+  "recipients": "[HI] प्राप्तकर्ता: {count}",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "कोई परिणाम नहीं",
+  "noResults": "[HI] कोई परिणाम नहीं",
   "@noResults": {
     "description": "Description"
   },
@@ -176,11 +176,11 @@
   "@yes": {
     "description": "yes description"
   },
-  "invite": "आमंत्रित करें",
+  "invite": "[HI] आमंत्रित करें",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "लाइव मोड",
+  "playtimeModeLive": "[HI] लाइव मोड",
   "@playtimeModeLive": {
     "description": "Description"
   },
@@ -188,7 +188,7 @@
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "हाय! मैंने APP-OINT के माध्यम से आपके साथ एक मीटिंग शेड्यूल की है। पुष्टि करने या अन्य समय सुझाने के लिए यहां क्लिक करें:",
+  "defaultShareMessage": "[HI] हाय! मैंने APP-OINT के माध्यम से आपके साथ एक मीटिंग शेड्यूल की है। पुष्टि करने या अन्य समय सुझाने के लिए यहां क्लिक करें:",
   "@defaultShareMessage": {
     "description": "Description"
   },
@@ -196,43 +196,43 @@
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Playtime केंद्र",
+  "playtimeHub": "[HI] Playtime केंद्र",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "लाइव सत्र बनाएं",
+  "createLiveSession": "[HI] लाइव सत्र बनाएं",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "सूचनाएं सक्षम करें",
+  "enableNotifications": "[HI] सूचनाएं सक्षम करें",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "आमंत्रित किया गया: {date}",
+  "invited": "[HI] आमंत्रित किया गया: {date}",
   "@invited": {
     "description": "Description"
   },
-  "content": "सामग्री: {content}",
+  "content": "[HI] सामग्री: {content}",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "मीटिंग सफलतापूर्वक साझा की गई!",
+  "meetingSharedSuccessfully": "[HI] मीटिंग सफलतापूर्वक साझा की गई!",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "Playtime में आपका स्वागत है",
+  "welcomeToPlaytime": "[HI] Playtime में आपका स्वागत है",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "सभी देखें",
+  "viewAll": "[HI] सभी देखें",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "वर्चुअल Playtime",
+  "playtimeVirtual": "[HI] वर्चुअल Playtime",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "स्टाफ स्क्रीन - विकासाधीन",
+  "staffScreenTBD": "[HI] स्टाफ स्क्रीन - विकासाधीन",
   "@staffScreenTBD": {
     "description": "Description"
   },
@@ -240,23 +240,23 @@
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "निमंत्रण सफलतापूर्वक रद्द किया गया!",
+  "inviteCancelledSuccessfully": "[HI] निमंत्रण सफलतापूर्वक रद्द किया गया!",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "पुनः प्रयास करें",
+  "retry": "[HI] पुनः प्रयास करें",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "प्रसारण संदेश लिखें",
+  "composeBroadcastMessage": "[HI] प्रसारण संदेश लिखें",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "अभी भेजें",
+  "sendNow": "[HI] अभी भेजें",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "अभी तक कोई गेम नहीं",
+  "noGamesYet": "[HI] अभी तक कोई गेम नहीं",
   "@noGamesYet": {
     "description": "Description"
   },
@@ -264,7 +264,7 @@
   "@select": {
     "description": "Description"
   },
-  "about": "के बारे में",
+  "about": "[HI] के बारे में",
   "@about": {
     "description": "About navigation label"
   },
@@ -276,91 +276,91 @@
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "बच्चे को हटाएं",
+  "removeChild": "[HI] बच्चे को हटाएं",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "स्थिति: {status}",
+  "status": "[HI] स्थिति: {status}",
   "@status": {
     "description": "status description"
   },
-  "logout": "लॉग आउट",
+  "logout": "[HI] लॉग आउट",
   "@logout": {
     "description": "Description"
   },
-  "paste": "पेस्ट करें",
+  "paste": "[HI] पेस्ट करें",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "स्वागत है",
+  "welcome": "[HI] स्वागत है",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "सत्र बनाएं",
+  "playtimeCreateSession": "[HI] सत्र बनाएं",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "परिवार के सदस्य",
+  "familyMembers": "[HI] परिवार के सदस्य",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "अपलोड करें",
+  "upload": "[HI] अपलोड करें",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "आगामी सत्र",
+  "upcomingSessions": "[HI] आगामी सत्र",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "पहचान के लिए समूह का नाम दर्ज करें",
+  "enterGroupName": "[HI] पहचान के लिए समूह का नाम दर्ज करें",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "पुष्टि करें",
+  "confirm": "[HI] पुष्टि करें",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "लाइव Playtime",
+  "playtimeLive": "[HI] लाइव Playtime",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "निमंत्रण लोड करने में त्रुटि",
+  "errorLoadingInvites": "[HI] निमंत्रण लोड करने में त्रुटि",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "लक्षित फ़िल्टर",
+  "targetingFilters": "[HI] लक्षित फ़िल्टर",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "वीडियो चुनें",
+  "pickVideo": "[HI] वीडियो चुनें",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "गेम हटा दिया गया",
+  "playtimeGameDeleted": "[HI] गेम हटा दिया गया",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "बाद के लिए शेड्यूल करें",
+  "scheduleForLater": "[HI] बाद के लिए शेड्यूल करें",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "पहुंच सफलतापूर्वक रद्द की गई!",
+  "accessRevokedSuccessfully": "[HI] पहुंच सफलतापूर्वक रद्द की गई!",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "प्रकार: {type}",
+  "type": "[HI] प्रकार: {type}",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "अनुमतियाँ जांची जा रही हैं...",
+  "checkingPermissions": "[HI] अनुमतियाँ जांची जा रही हैं...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "प्रतिलिपि बनाएँ",
+  "copy": "[HI] प्रतिलिपि बनाएँ",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "हाँ, रद्द करें",
+  "yesCancel": "[HI] हाँ, रद्द करें",
   "@yesCancel": {
     "description": "Description"
   },
@@ -368,27 +368,27 @@
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "व्हाट्सएप पर साझा करें",
+  "shareOnWhatsApp": "[HI] व्हाट्सएप पर साझा करें",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "अधिसूचना सेटिंग्स",
+  "notificationSettings": "[HI] अधिसूचना सेटिंग्स",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "मेरी प्रोफ़ाइल",
+  "myProfile": "[HI] मेरी प्रोफ़ाइल",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "रद्द करें",
+  "revoke": "[HI] रद्द करें",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "अभी तक कोई प्रसारण संदेश नहीं हैं",
+  "noBroadcastMessages": "[HI] अभी तक कोई प्रसारण संदेश नहीं हैं",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "{type} अनुरोध",
+  "requestType": "[HI] {type} अनुरोध",
   "@requestType": {
     "description": "requestType description"
   },
@@ -400,11 +400,11 @@
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "निमंत्रण रद्द करें",
+  "cancelInvite": "[HI] निमंत्रण रद्द करें",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "नया बनाएं",
+  "createNew": "[HI] नया बनाएं",
   "@createNew": {
     "description": "Description"
   },
@@ -412,15 +412,15 @@
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "अस्वीकार करें",
+  "playtimeReject": "[HI] अस्वीकार करें",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "प्रोफ़ाइल लोड करने में त्रुटि",
+  "errorLoadingProfile": "[HI] प्रोफ़ाइल लोड करने में त्रुटि",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "संपादित करें",
+  "edit": "[HI] संपादित करें",
   "@edit": {
     "description": "Description"
   },
@@ -428,47 +428,47 @@
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "गेम स्वीकृत किया गया",
+  "playtimeGameApproved": "[HI] गेम स्वीकृत किया गया",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "पासवर्ड भूल गया?",
+  "forgotPassword": "[HI] पासवर्ड भूल गया?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "पारिवारिक डैशबोर्ड",
+  "familyDashboard": "[HI] पारिवारिक डैशबोर्ड",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "लोड हो रहा है...",
+  "loading": "[HI] लोड हो रहा है...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "त्वरित क्रियाएं",
+  "quickActions": "[HI] त्वरित क्रियाएं",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Playtime",
+  "playtimeTitle": "[HI] Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "ओटीपी सफलतापूर्वक पुनः भेजा गया!",
+  "otpResentSuccessfully": "[HI] ओटीपी सफलतापूर्वक पुनः भेजा गया!",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "अनुमतियाँ जांचने में त्रुटि: {error}",
+  "errorCheckingPermissions": "[HI] अनुमतियाँ जांचने में त्रुटि: {error}",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "क्लाइंट स्क्रीन - विकासाधीन",
+  "clientScreenTBD": "[HI] क्लाइंट स्क्रीन - विकासाधीन",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "FCM टोकन: {token}",
+  "fcmToken": "[HI] FCM टोकन: {token}",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "छवि चुनें",
+  "pickImage": "[HI] छवि चुनें",
   "@pickImage": {
     "description": "pickImage description"
   },
@@ -476,23 +476,23 @@
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "कोई प्रोफ़ाइल नहीं मिली",
+  "noProfileFound": "[HI] कोई प्रोफ़ाइल नहीं मिली",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "अभी तक कोई परिवार सदस्य नहीं है। शुरू करने के लिए किसी को आमंत्रित करें!",
+  "noFamilyMembersYet": "[HI] अभी तक कोई परिवार सदस्य नहीं है। शुरू करने के लिए किसी को आमंत्रित करें!",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "मीडिया (वैकल्पिक)",
+  "mediaOptional": "[HI] मीडिया (वैकल्पिक)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "संदेश सफलतापूर्वक सहेजा गया",
+  "messageSavedSuccessfully": "[HI] संदेश सफलतापूर्वक सहेजा गया",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "संयोजित किया गया",
+  "scheduledFor": "[HI] संयोजित किया गया",
   "@scheduledFor": {
     "description": "Description"
   },
@@ -500,23 +500,23 @@
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "आपके पास प्रसारण संदेश बनाने की अनुमति नहीं है।",
+  "noPermissionForBroadcast": "[HI] आपके पास प्रसारण संदेश बनाने की अनुमति नहीं है।",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[HI] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "निमंत्रण विवरण",
+  "inviteDetail": "[HI] निमंत्रण विवरण",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "अनुसूचित: {date}",
+  "scheduled": "[HI] अनुसूचित: {date}",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "ओटीपी पुनः भेजने में विफल: {error}",
+  "failedToResendOtp": "[HI] ओटीपी पुनः भेजने में विफल: {error}",
   "@failedToResendOtp": {
     "description": "Description"
   },
@@ -524,7 +524,7 @@
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "संदेश सहेजने में त्रुटि: {error}",
+  "errorSavingMessage": "[HI] संदेश सहेजने में त्रुटि: {error}",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
@@ -532,91 +532,91 @@
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "स्वीकृत करें",
+  "playtimeApprove": "[HI] स्वीकृत करें",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "अपना पहला सत्र बनाएं",
+  "createYourFirstSession": "[HI] अपना पहला सत्र बनाएं",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "गेम अस्वीकृत किया गया",
+  "playtimeGameRejected": "[HI] गेम अस्वीकृत किया गया",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "पहुंच रद्द करने में विफल: {error}",
+  "failedToRevokeAccess": "[HI] पहुंच रद्द करने में विफल: {error}",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "हाल के गेम",
+  "recentGames": "[HI] हाल के गेम",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "अपना संदेश अनुकूलित करें...",
+  "customizeMessage": "[HI] अपना संदेश अनुकूलित करें...",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "निमंत्रण रद्द करने में विफल: {error}",
+  "failedToCancelInvite": "[HI] निमंत्रण रद्द करने में विफल: {error}",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "संदेश भेजने में त्रुटि: {error}",
+  "errorSendingMessage": "[HI] संदेश भेजने में त्रुटि: {error}",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "पासवर्ड सुष्ट करें",
+  "confirmPassword": "[HI] पासवर्ड सुष्ट करें",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "गोपनीयता अनुरोध लोड करने में त्रुटि: {error}",
+  "errorLoadingPrivacyRequests": "[HI] गोपनीयता अनुरोध लोड करने में त्रुटि: {error}",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "जुड़े हुए बच्चे",
+  "connectedChildren": "[HI] जुड़े हुए बच्चे",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "साझा करें",
+  "share": "[HI] साझा करें",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "गेम का नाम दर्ज करें",
+  "playtimeEnterGameName": "[HI] गेम का नाम दर्ज करें",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "पारिवारिक सुविधाओं के लिए कृपया लॉगिन करें",
+  "pleaseLoginForFamilyFeatures": "[HI] पारिवारिक सुविधाओं के लिए कृपया लॉगिन करें",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "मेरे निमंत्रण",
+  "myInvites": "[HI] मेरे निमंत्रण",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "गेम बनाएं",
+  "createGame": "[HI] गेम बनाएं",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "समूह का नाम (वैकल्पिक)",
+  "groupNameOptional": "[HI] समूह का नाम (वैकल्पिक)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "अभी तक कोई सत्र नहीं मिला",
+  "playtimeNoSessions": "[HI] अभी तक कोई सत्र नहीं मिला",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "व्यवस्थापक स्क्रीन - विकासाधीन",
+  "adminScreenTBD": "[HI] व्यवस्थापक स्क्रीन - विकासाधीन",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[HI] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "बंद करें",
+  "close": "[HI] बंद करें",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "ज्ञात समूह पाया गया",
+  "knownGroupDetected": "[HI] ज्ञात समूह पाया गया",
   "@knownGroupDetected": {
     "description": "Description"
   },
@@ -624,51 +624,51 @@
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "एक गेम चुनें",
+  "playtimeChooseGame": "[HI] एक गेम चुनें",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "अनुमतियाँ प्रबंधित करें",
+  "managePermissions": "[HI] अनुमतियाँ प्रबंधित करें",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "मतदान विकल्प:",
+  "pollOptions": "[HI] मतदान विकल्प:",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "क्लिक किया गया: {count}",
+  "clicked": "[HI] क्लिक किया गया: {count}",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "लिंक: {link}",
+  "link": "[HI] लिंक: {link}",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "मीटिंग तैयार है! क्या आप इसे अपने समूह को भेजना चाहते हैं?",
+  "meetingReadyMessage": "[HI] मीटिंग तैयार है! क्या आप इसे अपने समूह को भेजना चाहते हैं?",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "लंबित निमंत्रण",
+  "pendingInvites": "[HI] लंबित निमंत्रण",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "स्थिति: {status}",
+  "statusColon": "[HI] स्थिति: {status}",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "कृपया लॉगिन करें और अपनी प्रोफ़ाइल देखें.",
+  "pleaseLoginToViewProfile": "[HI] कृपया लॉगिन करें और अपनी प्रोफ़ाइल देखें.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[HI] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[HI] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[HI] Bookings",
   "@bookings": {
     "description": "Description"
   },
@@ -680,839 +680,839 @@
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[HI] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[HI] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[HI] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[HI] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[HI] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[HI] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[HI] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[HI] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[HI] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[HI] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "authErrorAccountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method.",
+  "authErrorAccountExistsWithDifferentCredential": "[HI] An account already exists with this email using a different sign-in method.",
   "@authErrorAccountExistsWithDifferentCredential": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[HI] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[HI] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Hindi)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Hindi)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Hindi)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Hindi)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[HI] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[HI] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "authErrorInvalidVerificationCode": "The verification code is invalid.",
+  "authErrorInvalidVerificationCode": "[HI] The verification code is invalid.",
   "@authErrorInvalidVerificationCode": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[HI] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "authErrorMissingVerificationCode": "Please enter the verification code.",
+  "authErrorMissingVerificationCode": "[HI] Please enter the verification code.",
   "@authErrorMissingVerificationCode": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[HI] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[HI] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[HI] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[HI] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[HI] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[HI] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "authErrorMultiFactorAuthRequired": "Multi-factor authentication is required.",
+  "authErrorMultiFactorAuthRequired": "[HI] Multi-factor authentication is required.",
   "@authErrorMultiFactorAuthRequired": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "authErrorMultiFactorInfoNotFound": "Multi-factor information not found.",
+  "authErrorMultiFactorInfoNotFound": "[HI] Multi-factor information not found.",
   "@authErrorMultiFactorInfoNotFound": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "authErrorMissingMultiFactorSession": "Missing multi-factor session.",
+  "authErrorMissingMultiFactorSession": "[HI] Missing multi-factor session.",
   "@authErrorMissingMultiFactorSession": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "authErrorInvalidMultiFactorSession": "Invalid multi-factor session.",
+  "authErrorInvalidMultiFactorSession": "[HI] Invalid multi-factor session.",
   "@authErrorInvalidMultiFactorSession": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "authErrorSecondFactorAlreadyInUse": "This second factor is already in use.",
+  "authErrorSecondFactorAlreadyInUse": "[HI] This second factor is already in use.",
   "@authErrorSecondFactorAlreadyInUse": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "authErrorMaximumSecondFactorCountExceeded": "Maximum number of second factors exceeded.",
+  "authErrorMaximumSecondFactorCountExceeded": "[HI] Maximum number of second factors exceeded.",
   "@authErrorMaximumSecondFactorCountExceeded": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[HI] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "authErrorEmailChangeNeedsVerification": "Email change requires verification.",
+  "authErrorEmailChangeNeedsVerification": "[HI] Email change requires verification.",
   "@authErrorEmailChangeNeedsVerification": {
     "description": "Localization key for: Email change requires verification."
   },
-  "authErrorPhoneNumberAlreadyExists": "This phone number is already in use.",
+  "authErrorPhoneNumberAlreadyExists": "[HI] This phone number is already in use.",
   "@authErrorPhoneNumberAlreadyExists": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[HI] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[HI] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[HI] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[HI] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[HI] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[HI] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[HI] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[HI] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[HI] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[HI] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[HI] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "authErrorInvalidDynamicLinkDomain": "The dynamic link domain is invalid.",
+  "authErrorInvalidDynamicLinkDomain": "[HI] The dynamic link domain is invalid.",
   "@authErrorInvalidDynamicLinkDomain": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[HI] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[HI] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[HI] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "authErrorInvalidHashDerivedKeyLength": "The hash derived key length is invalid.",
+  "authErrorInvalidHashDerivedKeyLength": "[HI] The hash derived key length is invalid.",
   "@authErrorInvalidHashDerivedKeyLength": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[HI] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[HI] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "authErrorInvalidHashParallelization": "The hash parallelization is invalid.",
+  "authErrorInvalidHashParallelization": "[HI] The hash parallelization is invalid.",
   "@authErrorInvalidHashParallelization": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[HI] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "authErrorInvalidHashSaltSeparator": "The hash salt separator is invalid.",
+  "authErrorInvalidHashSaltSeparator": "[HI] The hash salt separator is invalid.",
   "@authErrorInvalidHashSaltSeparator": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[HI] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[HI] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[HI] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[HI] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "authErrorInvalidSessionCookieDuration": "The session cookie duration is invalid.",
+  "authErrorInvalidSessionCookieDuration": "[HI] The session cookie duration is invalid.",
   "@authErrorInvalidSessionCookieDuration": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[HI] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[HI] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "authErrorMaximumUserCountExceeded": "Maximum user import count exceeded.",
+  "authErrorMaximumUserCountExceeded": "[HI] Maximum user import count exceeded.",
   "@authErrorMaximumUserCountExceeded": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[HI] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[HI] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[HI] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[HI] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[HI] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "authErrorMissingOauthClientSecret": "Missing OAuth client secret.",
+  "authErrorMissingOauthClientSecret": "[HI] Missing OAuth client secret.",
   "@authErrorMissingOauthClientSecret": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[HI] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[HI] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[HI] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[HI] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[HI] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "authErrorUnauthorizedContinueUri": "The continue URL domain is not whitelisted.",
+  "authErrorUnauthorizedContinueUri": "[HI] The continue URL domain is not whitelisted.",
   "@authErrorUnauthorizedContinueUri": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[HI] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Hindi)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Hindi)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Hindi)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "भेजें",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Hindi)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Hindi)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Hindi)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Hindi)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[HI] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Hindi)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Hindi)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Hindi)",
+  "upload1": "[HI] Upload (Hindi)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Hindi)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Hindi)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "virtualSessionCreatedInvitingFriends": "Virtual session created! Inviting friends... (Hindi)",
+  "virtualSessionCreatedInvitingFriends": "[HI] Virtual session created! Inviting friends... (Hindi)",
   "@virtualSessionCreatedInvitingFriends": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Hindi)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Hindi)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Hindi)",
+  "rewards": "[HI] Rewards (Hindi)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Hindi)",
+  "time": "[HI] Time (Hindi)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[HI] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "कोई स्लॉट उपलब्ध नहीं",
+  "noSlots": "[HI] कोई स्लॉट उपलब्ध नहीं",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "साइन इन",
+  "signIn": "[HI] साइन इन",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Hindi)",
+  "homeFeedScreen": "[HI] Home Feed Screen (Hindi)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Hindi)",
+  "selectLocation": "[HI] Select Location (Hindi)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Hindi)",
+  "noTicketsYet": "[HI] No tickets yet (Hindi)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Hindi)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Hindi)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Hindi)",
+  "subscriptionUnavailable": "[HI] Subscription unavailable (Hindi)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "बुकिंग की पुष्टि करें",
+  "confirmBooking": "[HI] बुकिंग की पुष्टि करें",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Hindi)",
+  "failedToUpdatePermissionE": "[HI] Failed to update permission: $e (Hindi)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Hindi)",
+  "reject": "[HI] Reject (Hindi)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "ambassadorStatusAmbassadorstatus": "Ambassador Status: {ambassadorStatus} (Hindi)",
+  "ambassadorStatusAmbassadorstatus": "[HI] Ambassador Status: {ambassadorStatus} (Hindi)",
   "@ambassadorStatusAmbassadorstatus": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[HI] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Hindi)",
+  "checkingSubscription": "[HI] Checking subscription... (Hindi)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Hindi)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Hindi)",
+  "noContentAvailableYet": "[HI] No content available yet (Hindi)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Hindi)",
+  "resolve": "[HI] Resolve (Hindi)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Hindi)",
+  "errorLoadingSurveysError": "[HI] Error loading surveys: $error (Hindi)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[HI] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Hindi)",
+  "getHelpWithYourAccount": "[HI] Get help with your account (Hindi)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Hindi)",
+  "pay": "[HI] Pay (Hindi)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "कोई संगठन नहीं",
+  "noOrganizations": "[HI] कोई संगठन नहीं",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "मीटिंग विवरण",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Hindi)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Hindi)",
+  "changesSavedSuccessfully": "[HI] Changes saved successfully! (Hindi)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Hindi)",
+  "createNewInvoice": "[HI] Create New Invoice (Hindi)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Hindi)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Hindi)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Hindi)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Hindi)",
+  "profileSaved": "[HI] Profile saved! (Hindi)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "receiveBookingNotificationsViaEmail": "Receive booking notifications via email (Hindi)",
+  "receiveBookingNotificationsViaEmail": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@receiveBookingNotificationsViaEmail": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Hindi)",
+  "valuetointk": "[HI] \\${value}K (Hindi)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Hindi)",
+  "deleteAccount": "[HI] Delete Account (Hindi)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Hindi)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Hindi)",
+  "businessOnboarding": "[HI] Business Onboarding (Hindi)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Hindi)",
+  "addNewClient": "[HI] Add New Client (Hindi)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Hindi)",
+  "darkMode": "[HI] Dark Mode (Hindi)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[HI] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[HI] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "youWillReceiveAConfirmationEmailShortly": "You will receive a confirmation email shortly. (Hindi)",
+  "youWillReceiveAConfirmationEmailShortly": "[HI] You will receive a confirmation email shortly. (Hindi)",
   "@youWillReceiveAConfirmationEmailShortly": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Hindi)",
+  "addQuestion": "[HI] Add Question (Hindi)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Hindi)",
+  "privacyPolicy": "[HI] Privacy Policy (Hindi)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Hindi)",
+  "branchesLengthBranches": "[HI] {branchCount} branches (Hindi)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Hindi)",
+  "join": "[HI] Join (Hindi)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Hindi)",
+  "businessSubscription": "[HI] Business Subscription (Hindi)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Hindi)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[HI] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Hindi)",
+  "surveyManagement": "[HI] Survey Management (Hindi)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[HI] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Hindi)",
+  "noRoomsFoundAddYourFirstRoom": "[HI] No rooms found. Add your first room! (Hindi)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Hindi)",
+  "readOurPrivacyPolicy": "[HI] Read our privacy policy (Hindi)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Hindi)",
+  "couldNotOpenPrivacyPolicy": "[HI] Could not open privacy policy (Hindi)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Hindi)",
+  "refresh1": "[HI] Refresh (Hindi)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Hindi)",
+  "roomUpdatedSuccessfully": "[HI] Room updated successfully! (Hindi)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Hindi)",
+  "contentDetail": "[HI] Content Detail (Hindi)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Hindi)",
+  "cancelSubscription": "[HI] Cancel Subscription (Hindi)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "successfullyRegisteredAsAmbassador": "Successfully registered as Ambassador! (Hindi)",
+  "successfullyRegisteredAsAmbassador": "[HI] Successfully registered as Ambassador! (Hindi)",
   "@successfullyRegisteredAsAmbassador": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Hindi)",
+  "save1": "[HI] Save (Hindi)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Hindi)",
+  "copy1": "[HI] Copy (Hindi)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Hindi)",
+  "failedToSendInvitationE": "[HI] Failed to send invitation: $e (Hindi)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Hindi)",
+  "surveyScore": "[HI] Survey Score (Hindi)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[HI] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Hindi)",
+  "noAppointmentsFound": "[HI] No appointments found. (Hindi)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Hindi)",
+  "responseDetail": "[HI] Response Detail (Hindi)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "businessVerificationScreenComingSoon": "Business Verification Screen - Coming Soon (Hindi)",
+  "businessVerificationScreenComingSoon": "شاشة التحقق من الأعمال - قريباً",
   "@businessVerificationScreenComingSoon": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "businessProfileActivatedSuccessfully": "Business profile activated successfully! (Hindi)",
+  "businessProfileActivatedSuccessfully": "تم تفعيل الملف التجاري بنجاح",
   "@businessProfileActivatedSuccessfully": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Hindi)",
+  "failedToStartProSubscriptionE": "[HI] Failed to start Pro subscription: $e (Hindi)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "businessDashboardEntryScreenComingSoon": "Business Dashboard Entry Screen - Coming Soon (Hindi)",
+  "businessDashboardEntryScreenComingSoon": "[HI] Business Dashboard Entry Screen - Coming Soon (Hindi)",
   "@businessDashboardEntryScreenComingSoon": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Hindi)",
+  "contentFilter": "[HI] Content Filter (Hindi)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Hindi)",
+  "helpSupport": "[HI] Help & Support (Hindi)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Hindi)",
+  "editRoom": "[HI] Edit Room (Hindi)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[HI] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[HI] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "businessCrmEntryScreenComingSoon": "Business CRM Entry Screen - Coming Soon (Hindi)",
+  "businessCrmEntryScreenComingSoon": "[HI] Business CRM Entry Screen - Coming Soon (Hindi)",
   "@businessCrmEntryScreenComingSoon": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[HI] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[HI] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Hindi)",
+  "errorLoadingDashboardError": "[HI] Error loading dashboard: $error (Hindi)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Hindi)",
+  "gameDeletedSuccessfully": "[HI] Game deleted successfully! (Hindi)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Hindi)",
+  "viewResponsesComingSoon": "[HI] View responses - Coming soon! (Hindi)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[HI] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Hindi)",
+  "errorLoadingRewards": "[HI] Error loading rewards (Hindi)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Hindi)",
+  "failedToDeleteAccountE": "[HI] Failed to delete account: $e (Hindi)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Hindi)",
+  "invited1": "[HI] Invited (Hindi)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Hindi)",
+  "noBranchesAvailable": "[HI] No branches available (Hindi)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Hindi)",
+  "errorError": "[HI] Error: $error (Hindi)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Hindi)",
+  "noEvents": "[HI] No events (Hindi)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Hindi)",
+  "gameCreatedSuccessfully": "[HI] Game created successfully! (Hindi)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Hindi)",
+  "add1": "[HI] Add (Hindi)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[HI] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Hindi)",
+  "eventstarttimeEventendtime": "[HI] {startTime} - {endTime} (Hindi)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Hindi)",
+  "allowPlaytime": "[HI] Allow Playtime (Hindi)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Hindi)",
+  "clients": "[HI] Clients (Hindi)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Hindi)",
+  "noAmbassadorDataAvailable": "[HI] No ambassador data available (Hindi)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Hindi)",
+  "backgroundDeletedSuccessfully": "[HI] Background deleted successfully! (Hindi)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Hindi)",
+  "errorSnapshoterror": "[HI] Error: {error} (Hindi)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Hindi)",
+  "noAnalyticsDataAvailableYet": "[HI] No analytics data available yet. (Hindi)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Hindi)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "businessPhoneBookingEntryScreenComingSoon": "Business Phone Booking Entry Screen - Coming Soon (Hindi)",
+  "businessPhoneBookingEntryScreenComingSoon": "[HI] Business Phone Booking Entry Screen - Coming Soon (Hindi)",
   "@businessPhoneBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Hindi)",
+  "verification": "[HI] Verification (Hindi)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Hindi)",
+  "copyLink": "[HI] Copy Link (Hindi)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Hindi)",
+  "dashboard1": "[HI] Dashboard (Hindi)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Hindi)",
+  "manageChildAccounts": "[HI] Manage Child Accounts (Hindi)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "सहमति दें",
+  "grantConsent": "[HI] सहमति दें",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Hindi)",
+  "myProfile1": "[HI] My Profile (Hindi)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Hindi)",
+  "submit": "[HI] Submit (Hindi)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[HI] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Hindi)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Hindi)",
+  "ambassadorDashboard": "[HI] Ambassador Dashboard (Hindi)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Hindi)",
+  "phoneBooking": "[HI] Phone Booking (Hindi)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "चैट के माध्यम से बुक करें",
+  "bookViaChat": "[HI] चैट के माध्यम से बुक करें",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
@@ -1520,431 +1520,431 @@
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Hindi)",
+  "businessProfile": "[HI] Business Profile (Hindi)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "businessBookingEntryScreenComingSoon": "Business Booking Entry Screen - Coming Soon (Hindi)",
+  "businessBookingEntryScreenComingSoon": "[HI] Business Booking Entry Screen - Coming Soon (Hindi)",
   "@businessBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Hindi)",
+  "createNewSurvey": "[HI] Create New Survey (Hindi)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Hindi)",
+  "backgroundRejected": "[HI] Background rejected (Hindi)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Hindi)",
+  "noMediaSelected": "[HI] No media selected (Hindi)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Hindi)",
+  "syncToGoogle": "[HI] Sync to Google (Hindi)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Hindi)",
+  "virtualPlaytime": "[HI] Virtual Playtime (Hindi)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[HI] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[HI] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "निमंत्रण सफलतापूर्वक भेजा गया!",
+  "invitationSentSuccessfully": "[HI] निमंत्रण सफलतापूर्वक भेजा गया!",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Hindi)",
+  "registering": "[HI] Registering... (Hindi)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Hindi)",
+  "statusAppointmentstatusname": "[HI] Status: {status} (Hindi)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Hindi)",
+  "home1": "[HI] Home (Hindi)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Hindi)",
+  "errorSavingSettingsE": "[HI] Error saving settings: $e (Hindi)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Hindi)",
+  "appVersionAndInformation": "[HI] App version and information (Hindi)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "businessSubscriptionEntryScreenComingSoon": "Business Subscription Entry Screen - Coming Soon (Hindi)",
+  "businessSubscriptionEntryScreenComingSoon": "[HI] Business Subscription Entry Screen - Coming Soon (Hindi)",
   "@businessSubscriptionEntryScreenComingSoon": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Hindi)",
+  "ekeyEvalue": "[HI] {key}: {value} (Hindi)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "yourPaymentHasBeenProcessedSuccessfully": "Your payment has been processed successfully. (Hindi)",
+  "yourPaymentHasBeenProcessedSuccessfully": "[HI] Your payment has been processed successfully. (Hindi)",
   "@yourPaymentHasBeenProcessedSuccessfully": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Hindi)",
+  "errorE": "[HI] Error: $e (Hindi)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Hindi)",
+  "viewAll1": "[HI] View All (Hindi)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Hindi)",
+  "editSurveyComingSoon": "[HI] Edit survey - Coming soon! (Hindi)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "ओटीपी दर्ज करें",
+  "enterOtp": "[HI] ओटीपी दर्ज करें",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Hindi)",
+  "payment": "[HI] Payment (Hindi)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "automaticallyConfirmNewBookingRequests": "Automatically confirm new booking requests (Hindi)",
+  "automaticallyConfirmNewBookingRequests": "[HI] Automatically confirm new booking requests (Hindi)",
   "@automaticallyConfirmNewBookingRequests": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Hindi)",
+  "noRouteDefinedForSettingsname": "[HI] No route defined for {settingsName} (Hindi)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Hindi)",
+  "pleaseSignInToUploadABackground": "[HI] Please sign in to upload a background (Hindi)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[HI] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Hindi)",
+  "staffAvailability": "[HI] Staff Availability (Hindi)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Hindi)",
+  "livePlaytime": "[HI] Live Playtime (Hindi)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Hindi)",
+  "autoconfirmBookings": "[HI] Auto-Confirm Bookings (Hindi)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "redirectingToStripeCheckoutForProPlan": "Redirecting to Stripe checkout for Pro plan... (Hindi)",
+  "redirectingToStripeCheckoutForProPlan": "[HI] Redirecting to Stripe checkout for Pro plan... (Hindi)",
   "@redirectingToStripeCheckoutForProPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Hindi)",
+  "exportAsCsv": "[HI] Export as CSV (Hindi)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Hindi)",
+  "deleteFunctionalityComingSoon": "[HI] Delete functionality coming soon! (Hindi)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Hindi)",
+  "editClient": "[HI] Edit Client (Hindi)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "areYouSureYouWantToDeleteThisMessage": "Are you sure you want to delete this message? (Hindi)",
+  "areYouSureYouWantToDeleteThisMessage": "[HI] Are you sure you want to delete this message? (Hindi)",
   "@areYouSureYouWantToDeleteThisMessage": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Hindi)",
+  "referralsAmbassadorreferrals": "[HI] Referrals: {referrals} (Hindi)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[HI] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Hindi)",
+  "privacyRequestSentToYourParents": "[HI] Privacy request sent to your parents! (Hindi)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Hindi)",
+  "clientDeletedSuccessfully": "[HI] Client deleted successfully! (Hindi)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Hindi)",
+  "failedToCancelSubscription": "[HI] Failed to cancel subscription (Hindi)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Hindi)",
+  "allLanguages": "[HI] All Languages (Hindi)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Hindi)",
+  "slotDeletedSuccessfully": "[HI] Slot deleted successfully (Hindi)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "businessProvidersEntryScreenComingSoon": "Business Providers Entry Screen - Coming Soon",
+  "businessProvidersEntryScreenComingSoon": "[HI] Business Providers Entry Screen - Coming Soon",
   "@businessProvidersEntryScreenComingSoon": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "parentsMustApproveBeforeChildrenCanJoin": "Parents must approve before children can join (Hindi)",
+  "parentsMustApproveBeforeChildrenCanJoin": "[HI] Parents must approve before children can join (Hindi)",
   "@parentsMustApproveBeforeChildrenCanJoin": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Hindi)",
+  "subscribeToPro1499mo": "[HI] Subscribe to Pro (€14.99/mo) (Hindi)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "businessAvailabilityEntryScreenComingSoon": "Business Availability Entry Screen - Coming Soon (Hindi)",
+  "businessAvailabilityEntryScreenComingSoon": "[HI] Business Availability Entry Screen - Coming Soon (Hindi)",
   "@businessAvailabilityEntryScreenComingSoon": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Hindi)",
+  "appointmentsListlength": "[HI] Appointments: {count} (Hindi)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Hindi)",
+  "clearFilters": "[HI] Clear Filters (Hindi)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "बुकिंग सबमिट करें",
+  "submitBooking": "[HI] बुकिंग सबमिट करें",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "areYouSureYouWantToCancelThisAppointment": "Are you sure you want to cancel this appointment? (Hindi)",
+  "areYouSureYouWantToCancelThisAppointment": "[HI] Are you sure you want to cancel this appointment? (Hindi)",
   "@areYouSureYouWantToCancelThisAppointment": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Hindi)",
+  "noUpcomingBookings": "[HI] No upcoming bookings (Hindi)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Hindi)",
+  "goBack": "[HI] Go Back (Hindi)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Hindi)",
+  "setup": "[HI] Setup (Hindi)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "बच्चे को आमंत्रित करें",
+  "inviteChild": "[HI] बच्चे को आमंत्रित करें",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Hindi)",
+  "goToDashboard": "[HI] Go to Dashboard (Hindi)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Hindi)",
+  "ambassadorQuotaDashboard": "[HI] Ambassador Quota Dashboard (Hindi)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[HI] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Hindi)",
+  "referralCode": "[HI] Referral Code (Hindi)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[HI] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Hindi)",
+  "date": "[HI] Date (Hindi)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "केवल पढ़ने के लिए",
+  "readOnly": "[HI] केवल पढ़ने के लिए",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "बुकिंग अनुरोध",
+  "bookingRequest": "[HI] बुकिंग अनुरोध",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Hindi)",
+  "advancedReporting": "[HI] • Advanced reporting (Hindi)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Hindi)",
+  "rooms": "[HI] Rooms (Hindi)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Hindi)",
+  "copiedToClipboard": "[HI] Copied to clipboard (Hindi)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "बुकिंग की पुष्टि हो गई",
+  "bookingConfirmed": "[HI] बुकिंग की पुष्टि हो गई",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Hindi)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Hindi)",
+  "clientAddedSuccessfully": "[HI] Client added successfully! (Hindi)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Hindi)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Hindi)",
+  "backgroundApproved": "[HI] Background approved! (Hindi)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Hindi)",
+  "familySupport": "[HI] Family Support (Hindi)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Hindi)",
+  "deletingAccount": "[HI] Deleting account... (Hindi)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "अपॉइंटमेंट बुक करें",
+  "bookAppointment": "[HI] अपॉइंटमेंट बुक करें",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "receivePushNotificationsForNewBookings": "Receive push notifications for new bookings (Hindi)",
+  "receivePushNotificationsForNewBookings": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@receivePushNotificationsForNewBookings": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Hindi)",
+  "delete1": "[HI] Delete (Hindi)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Hindi)",
+  "sendBookingInvite": "[HI] Send Booking Invite (Hindi)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Hindi)",
+  "text": "[HI] Text (Hindi)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Hindi)",
+  "manageSubscription": "[HI] Manage Subscription (Hindi)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "स्थापना की आवश्यकता है",
+  "requiresInstallFallback": "[HI] स्थापना की आवश्यकता है",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Hindi)",
+  "paymentConfirmation": "[HI] Payment Confirmation (Hindi)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Hindi)",
+  "promoAppliedYourNextBillIsFree": "[HI] Promo applied! Your next bill is free. (Hindi)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Hindi)",
+  "errorLoadingSlots": "[HI] Error loading slots (Hindi)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "allowOtherUsersToFindAndJoinThisGame": "Allow other users to find and join this game (Hindi)",
+  "allowOtherUsersToFindAndJoinThisGame": "[HI] Allow other users to find and join this game (Hindi)",
   "@allowOtherUsersToFindAndJoinThisGame": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "businessOnboardingScreenComingSoon": "Business Onboarding Screen - Coming Soon (Hindi)",
+  "businessOnboardingScreenComingSoon": "[HI] Business Onboarding Screen - Coming Soon (Hindi)",
   "@businessOnboardingScreenComingSoon": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Hindi)",
+  "activateBusinessProfile": "[HI] Activate Business Profile (Hindi)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Hindi)",
+  "contentNotFound": "[HI] Content not found (Hindi)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Hindi)",
+  "pspecialtynpcontactinfo": "[HI] {specialty}\\n{contactInfo} (Hindi)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Hindi)",
+  "rating": "[HI] Rating (Hindi)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Hindi)",
+  "messages": "[HI] Messages (Hindi)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Hindi)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Hindi)",
+  "becomeAnAmbassador": "[HI] Become an Ambassador (Hindi)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Hindi)",
+  "subscribeNow": "[HI] Subscribe Now (Hindi)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Hindi)",
+  "timeArgsslotformatcontext": "[HI] Time: {time} (Hindi)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Hindi)",
+  "shareViaWhatsapp": "[HI] Share via WhatsApp (Hindi)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Hindi)",
+  "users1": "[HI] Users (Hindi)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Hindi)",
+  "shareLink": "[HI] Share Link (Hindi)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
+  "areYouSureYouWantToDeleteThisProvider": "[HI] Are you sure you want to delete this provider?",
   "@areYouSureYouWantToDeleteThisProvider": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Hindi)",
+  "deleteAppointment": "[HI] Delete Appointment (Hindi)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Hindi)",
+  "toggleAvailability": "[HI] Toggle Availability (Hindi)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Hindi)",
+  "changePlan": "[HI] Change Plan (Hindi)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Hindi)",
+  "errorLoadingStaff": "[HI] Error loading staff (Hindi)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Hindi)",
+  "updateYourBusinessInformation": "[HI] Update your business information (Hindi)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "noProvidersFoundAddYourFirstProvider": "No providers found. Add your first provider!",
+  "noProvidersFoundAddYourFirstProvider": "[HI] No providers found. Add your first provider!",
   "@noProvidersFoundAddYourFirstProvider": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Hindi)",
+  "parentDashboard": "[HI] Parent Dashboard (Hindi)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
@@ -1952,539 +1952,539 @@
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Hindi)",
+  "studioBooking": "[HI] Studio Booking (Hindi)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Hindi)",
+  "about1": "[HI] About (Hindi)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Hindi)",
+  "multipleChoice": "[HI] Multiple Choice (Hindi)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "dateAppointmentscheduledattostring": "Date: {date} (Hindi)",
+  "dateAppointmentscheduledattostring": "[HI] Date: {date} (Hindi)",
   "@dateAppointmentscheduledattostring": {
     "description": "Localization key for: Date: {date}"
   },
-  "studioBookingIsOnlyAvailableOnWeb": "Studio booking is only available on web (Hindi)",
+  "studioBookingIsOnlyAvailableOnWeb": "[HI] Studio booking is only available on web (Hindi)",
   "@studioBookingIsOnlyAvailableOnWeb": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Hindi)",
+  "errorLoadingBranchesE": "[HI] Error loading branches: $e (Hindi)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "ud83dudcc5Bookingdatetimetolocal": "\\uD83D\\uDCC5 {dateTime} (Hindi)",
+  "ud83dudcc5Bookingdatetimetolocal": "[HI] \\uD83D\\uDCC5 {dateTime} (Hindi)",
   "@ud83dudcc5Bookingdatetimetolocal": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "कोई नहीं",
+  "none": "[HI] कोई नहीं",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Hindi)",
+  "failedToUpdateConsentE": "[HI] Failed to update consent: $e (Hindi)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Hindi)",
+  "welcome1": "[HI] Welcome (Hindi)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Hindi)",
+  "failedToCreateSessionE": "[HI] Failed to create session: $e (Hindi)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "संपर्क को आमंत्रित करें",
+  "inviteContact": "[HI] संपर्क को आमंत्रित करें",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Hindi)",
+  "surveyEditor": "[HI] Survey Editor (Hindi)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Hindi)",
+  "failedToStartBasicSubscriptionE": "[HI] Failed to start Basic subscription: $e (Hindi)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Hindi)",
+  "mySchedule": "[HI] My Schedule (Hindi)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Hindi)",
+  "studioDashboard": "[HI] Studio Dashboard (Hindi)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Hindi)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[HI] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[HI] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Hindi)",
+  "settingsSavedSuccessfully": "[HI] Settings saved successfully! (Hindi)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Hindi)",
+  "linkCopiedToClipboard": "[HI] Link copied to clipboard! (Hindi)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Hindi)",
+  "accept1": "[HI] Accept (Hindi)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Hindi)",
+  "noAvailableSlots": "[HI] No available slots (Hindi)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Hindi)",
+  "makeGamePublic": "[HI] Make Game Public (Hindi)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "permissionPermissioncategoryUpdatedToNewvalue": "Permission {category} updated to $newValue (Hindi)",
+  "permissionPermissioncategoryUpdatedToNewvalue": "[HI] Permission {category} updated to $newValue (Hindi)",
   "@permissionPermissioncategoryUpdatedToNewvalue": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Hindi)",
+  "roomDeletedSuccessfully": "[HI] Room deleted successfully! (Hindi)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Hindi)",
+  "businessCalendar": "[HI] Business Calendar (Hindi)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Hindi)",
+  "addAvailability": "[HI] Add Availability (Hindi)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Hindi)",
+  "ambassadorOnboarding": "[HI] Ambassador Onboarding (Hindi)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Hindi)",
+  "phoneProfileasyncphone": "[HI] Phone: {phone} (Hindi)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Hindi)",
+  "addNewRoom": "[HI] Add New Room (Hindi)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Hindi)",
+  "requireParentApproval": "[HI] Require Parent Approval (Hindi)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Hindi)",
+  "closed": "[HI] Closed (Hindi)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Hindi)",
+  "exportAsPdf": "[HI] Export as PDF (Hindi)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Hindi)",
+  "enableVibration": "[HI] Enable Vibration (Hindi)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Hindi)",
+  "toAvailendformatcontext": "[HI] To: {endTime} (Hindi)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Hindi)",
+  "yourUpgradeCodeUpgradecode": "[HI] Your upgrade code: $upgradeCode (Hindi)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "निजी सत्र का अनुरोध करें",
+  "requestPrivateSession": "[HI] निजी सत्र का अनुरोध करें",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Hindi)",
+  "country": "[HI] Country (Hindi)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[HI] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Hindi)",
+  "staffArgsstaffdisplayname": "[HI] Staff: {staffName} (Hindi)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "सहमति रद्द करें",
+  "revokeConsent": "[HI] सहमति रद्द करें",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Hindi)",
+  "settings1": "[HI] Settings (Hindi)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Hindi)",
+  "cancel1": "[HI] Cancel (Hindi)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "subscriptionActivatedSuccessfully": "Subscription activated successfully! (Hindi)",
+  "subscriptionActivatedSuccessfully": "[HI] Subscription activated successfully! (Hindi)",
   "@subscriptionActivatedSuccessfully": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[HI] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Hindi)",
+  "broadcast": "[HI] Broadcast (Hindi)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Hindi)",
+  "noEventsScheduledThisWeek": "[HI] No events scheduled this week (Hindi)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Hindi)",
+  "googleCalendar": "[HI] Google Calendar (Hindi)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "निमंत्रण भेजें",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Hindi)",
+  "childDashboard": "[HI] Child Dashboard (Hindi)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Hindi)",
+  "failedToUploadBackgroundE": "[HI] Failed to upload background: $e (Hindi)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[HI] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[HI] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[HI] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Hindi)",
+  "noAppointments": "[HI] No appointments (Hindi)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Hindi)",
+  "unlimitedBookingsPerWeek": "[HI] • Unlimited bookings per week (Hindi)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Hindi)",
+  "scheduledAtScheduledat": "[HI] Scheduled at: $scheduledAt (Hindi)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "स्टाफ चुनें",
+  "selectStaff": "[HI] स्टाफ चुनें",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "subscriptionCancelledSuccessfully": "Subscription cancelled successfully (Hindi)",
+  "subscriptionCancelledSuccessfully": "[HI] Subscription cancelled successfully (Hindi)",
   "@subscriptionCancelledSuccessfully": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Hindi)",
+  "cancelAppointment": "[HI] Cancel Appointment (Hindi)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[HI] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Hindi)",
+  "businessSignup": "[HI] Business Signup (Hindi)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "businessCompletionScreenComingSoon": "Business Completion Screen - Coming Soon (Hindi)",
+  "businessCompletionScreenComingSoon": "[HI] Business Completion Screen - Coming Soon (Hindi)",
   "@businessCompletionScreenComingSoon": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Hindi)",
+  "createGame1": "[HI] Create Game (Hindi)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Hindi)",
+  "valuetoint": "[HI] {value} (Hindi)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Hindi)",
+  "pleaseEnterAPromoCode": "[HI] Please enter a promo code (Hindi)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Hindi)",
+  "errorLoadingAvailabilityE": "[HI] Error loading availability: $e (Hindi)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Hindi)",
+  "parentalControls": "[HI] Parental Controls (Hindi)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Hindi)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "बच्चा सफलतापूर्वक लिंक हो गया!",
+  "childLinkedSuccessfully": "[HI] बच्चा सफलतापूर्वक लिंक हो गया!",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Hindi)",
+  "create": "[HI] Create (Hindi)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Hindi)",
+  "noExternalMeetingsFound": "[HI] No external meetings found. (Hindi)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Hindi)",
+  "staffSelectionstaffdisplayname": "[HI] Staff: {staffName} (Hindi)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[HI] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Hindi)",
+  "schedulerScreen": "[HI] Scheduler Screen (Hindi)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Hindi)",
+  "clientUpdatedSuccessfully": "[HI] Client updated successfully! (Hindi)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Hindi)",
+  "surveyResponses": "[HI] Survey Responses (Hindi)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Hindi)",
+  "syncToOutlook": "[HI] Sync to Outlook (Hindi)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Hindi)",
+  "saveChanges": "[HI] Save Changes (Hindi)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Hindi)",
+  "pickTime": "[HI] Pick Time (Hindi)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Hindi)",
+  "registrationFailedEtostring": "[HI] Registration failed: {error} (Hindi)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Hindi)",
+  "analytics": "[HI] Analytics (Hindi)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Hindi)",
+  "errorLoadingEvents": "[HI] Error loading events (Hindi)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "संगठन लोड करने में त्रुटि",
+  "errorLoadingOrganizations": "[HI] संगठन लोड करने में त्रुटि",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[HI] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Hindi)",
+  "success1": "[HI] Success (Hindi)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[HI] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Hindi)",
+  "fromAvailstartformatcontext": "[HI] From: {startTime} (Hindi)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "पढ़ें और लिखें",
+  "readWrite": "[HI] पढ़ें और लिखें",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "redirectingToStripeCheckoutForBasicPlan": "Redirecting to Stripe checkout for Basic plan... (Hindi)",
+  "redirectingToStripeCheckoutForBasicPlan": "[HI] Redirecting to Stripe checkout for Basic plan... (Hindi)",
   "@redirectingToStripeCheckoutForBasicPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[HI] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "तारीख चुनें",
+  "pickDate": "[HI] तारीख चुनें",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "चैट बुकिंग",
+  "chatBooking": "[HI] चैट बुकिंग",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Hindi)",
+  "noQuestionsAdded": "[HI] No questions added (Hindi)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[HI] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[HI] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Hindi)",
+  "typeOpenCall": "[HI] Type: Open Call (Hindi)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[HI] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[HI] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Hindi)",
+  "invoiceCreatedSuccessfully": "[HI] Invoice created successfully! (Hindi)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Hindi)",
+  "noTimeSeriesDataAvailable": "[HI] No time series data available (Hindi)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[HI] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "timestamp_formatdatelogtimestamp": "Timestamp: {timestamp}",
+  "timestamp_formatdatelogtimestamp": "[HI] Timestamp: {timestamp}",
   "@timestamp_formatdatelogtimestamp": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Hindi)",
+  "failedToSendPrivacyRequestE": "[HI] Failed to send privacy request: $e (Hindi)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Hindi)",
+  "chooseYourPlan": "[HI] Choose Your Plan (Hindi)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Hindi)",
+  "playtimeManagement": "[HI] Playtime Management (Hindi)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Hindi)",
+  "availability": "[HI] Availability (Hindi)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Hindi)",
+  "eventCreated": "[HI] Event created (Hindi)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Hindi)",
+  "subscribeToBasic499mo": "[HI] Subscribe to Basic (€4.99/mo) (Hindi)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Hindi)",
+  "completion": "[HI] Completion (Hindi)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Hindi)",
+  "supportTicketSubmitted": "[HI] Support ticket submitted (Hindi)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Hindi)",
+  "monetizationSettings": "[HI] Monetization Settings (Hindi)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "कोई बुकिंग नहीं मिली",
+  "noBookingsFound": "[HI] कोई बुकिंग नहीं मिली",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[HI] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Hindi)",
+  "deleteSurvey": "[HI] Delete Survey (Hindi)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Hindi)",
+  "gameApprovedSuccessfully": "[HI] Game approved successfully! (Hindi)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Hindi)",
+  "errorLoadingPermissionsError": "[HI] Error loading permissions: $error (Hindi)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Hindi)",
+  "referrals": "[HI] Referrals (Hindi)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Hindi)",
+  "crm": "[HI] CRM (Hindi)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Hindi)",
+  "gameRejected": "[HI] Game rejected (Hindi)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Hindi)",
+  "appointments": "[HI] Appointments (Hindi)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Hindi)",
+  "onboardingScreen": "[HI] Onboarding Screen (Hindi)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Hindi)",
+  "welcomeToYourStudio": "[HI] Welcome to your studio (Hindi)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Hindi)",
+  "update": "[HI] Update (Hindi)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Hindi)",
+  "retry1": "[HI] Retry (Hindi)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Hindi)",
+  "booking": "[HI] Booking (Hindi)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Hindi)",
+  "parentalSettings": "[HI] Parental Settings (Hindi)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Hindi)",
+  "language": "[HI] Language (Hindi)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Hindi)",
+  "deleteSlot": "[HI] Delete Slot (Hindi)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
@@ -2492,371 +2492,371 @@
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[HI] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Hindi)",
+  "createNewGame": "[HI] Create New Game (Hindi)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Hindi)",
+  "next1": "[HI] Next (Hindi)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Hindi)",
+  "backgroundUploadedSuccessfully": "[HI] Background uploaded successfully! (Hindi)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Hindi)",
+  "noAppointmentRequestsFound": "[HI] No appointment requests found. (Hindi)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Hindi)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Hindi)",
+  "restrictMatureContent": "[HI] Restrict mature content (Hindi)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Hindi)",
+  "ambassadors": "[HI] Ambassadors (Hindi)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Hindi)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Hindi)",
+  "paymentWasCancelled": "[HI] Payment was cancelled (Hindi)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Hindi)",
+  "clearAll": "[HI] Clear All (Hindi)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Hindi)",
+  "viewDetails": "[HI] View Details (Hindi)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Hindi)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "liveSessionScheduledWaitingForParentApproval": "Live session scheduled! Waiting for parent approval... (Hindi)",
+  "liveSessionScheduledWaitingForParentApproval": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@liveSessionScheduledWaitingForParentApproval": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Hindi)",
+  "failedToCreateGameE": "[HI] Failed to create game: $e (Hindi)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Hindi)",
+  "noChartDataAvailable": "[HI] No chart data available (Hindi)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Hindi)",
+  "phonebasedBookingSystem": "[HI] • Phone-based booking system (Hindi)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Hindi)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Hindi)",
+  "invoices": "[HI] Invoices (Hindi)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "pleaseActivateYourBusinessProfileToContinue": "Please activate your business profile to continue. (Hindi)",
+  "pleaseActivateYourBusinessProfileToContinue": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@pleaseActivateYourBusinessProfileToContinue": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Hindi)",
+  "scheduledAtArgsscheduledat": "[HI] Scheduled at: {scheduledAt} (Hindi)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "durationDurationinminutes0Minutes": "Duration: {duration} minutes (Hindi)",
+  "durationDurationinminutes0Minutes": "[HI] Duration: {duration} minutes (Hindi)",
   "@durationDurationinminutes0Minutes": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Hindi)",
+  "tryAgain": "[HI] Try Again (Hindi)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Hindi)",
+  "deleteBackground": "[HI] Delete Background (Hindi)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Hindi)",
+  "currentTierTiertouppercase": "[HI] Current Tier: {tier} (Hindi)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[HI] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "noClientsFoundAddYourFirstClient": "No clients found. Add your first client! (Hindi)",
+  "noClientsFoundAddYourFirstClient": "[HI] No clients found. Add your first client! (Hindi)",
   "@noClientsFoundAddYourFirstClient": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "settingsDialogWillBeImplementedHere": "Settings dialog will be implemented here.",
+  "settingsDialogWillBeImplementedHere": "[HI] Settings dialog will be implemented here.",
   "@settingsDialogWillBeImplementedHere": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[HI] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Hindi)",
+  "appointmentRequests": "[HI] Appointment Requests (Hindi)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Hindi)",
+  "forward": "[HI] Forward (Hindi)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Hindi)",
+  "roomAddedSuccessfully": "[HI] Room added successfully! (Hindi)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Hindi)",
+  "option": "[HI] • $option (Hindi)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Hindi)",
+  "responseIndex1": "[HI] Response #{number} (Hindi)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Hindi)",
+  "crmDashboardWithAnalytics": "[HI] • CRM dashboard with analytics (Hindi)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Hindi)",
+  "contentLibrary1": "[HI] Content Library (Hindi)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Hindi)",
+  "reply": "[HI] Reply (Hindi)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Hindi)",
+  "subscriptionManagement": "[HI] Subscription Management (Hindi)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "monetizationSettingsWillBeImplementedHere": "Monetization settings will be implemented here (Hindi)",
+  "monetizationSettingsWillBeImplementedHere": "[HI] Monetization settings will be implemented here (Hindi)",
   "@monetizationSettingsWillBeImplementedHere": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Hindi)",
+  "failedToApplyPromoCodeE": "[HI] Failed to apply promo code: $e (Hindi)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[HI] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Hindi)",
+  "localizationContribution": "[HI] Localization Contribution (Hindi)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Hindi)",
+  "parentalConsent": "[HI] Parental Consent (Hindi)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Hindi)",
+  "businessSignupScreenComingSoon": "[HI] Business Signup Screen - Coming Soon (Hindi)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "areYouSureYouWantToDeleteThisAppointment": "Are you sure you want to delete this appointment? (Hindi)",
+  "areYouSureYouWantToDeleteThisAppointment": "[HI] Are you sure you want to delete this appointment? (Hindi)",
   "@areYouSureYouWantToDeleteThisAppointment": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Hindi)",
+  "syncAppointment": "[HI] Sync Appointment (Hindi)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Hindi)",
+  "iConsent": "[HI] I Consent (Hindi)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Hindi)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Hindi)",
+  "businessSetupScreenComingSoon": "[HI] Business Setup Screen - Coming Soon (Hindi)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Hindi)",
+  "edit1": "[HI] Edit (Hindi)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Hindi)",
+  "noEventsScheduledThisMonth": "[HI] No events scheduled this month (Hindi)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "व्यापार डैशबोर्ड",
+  "businessDashboard": "[HI] व्यापार डैशबोर्ड",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Hindi)",
+  "noMessagesFound": "[HI] No messages found. (Hindi)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[HI] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Hindi)",
+  "manageStaffAvailability": "[HI] Manage Staff Availability (Hindi)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Hindi)",
+  "noMissingTranslations": "[HI] No missing translations (Hindi)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Hindi)",
+  "skip": "[HI] Skip (Hindi)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "कोई उपयोगकर्ता नहीं",
+  "noUsers": "[HI] कोई उपयोगकर्ता नहीं",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Hindi)",
+  "errorLoadingReferralCode": "[HI] Error loading referral code (Hindi)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Hindi)",
+  "allCountries": "[HI] All Countries (Hindi)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Hindi)",
+  "deleteGame": "[HI] Delete Game (Hindi)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Hindi)",
+  "staffManagementTools": "[HI] • Staff management tools (Hindi)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Hindi)",
+  "deleteMessage": "[HI] Delete Message (Hindi)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "receiveBookingNotificationsViaSms": "Receive booking notifications via SMS (Hindi)",
+  "receiveBookingNotificationsViaSms": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@receiveBookingNotificationsViaSms": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "भूमिका बदलें",
+  "changeRole": "[HI] भूमिका बदलें",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "errorLoadingBookingsSnapshoterror": "Error loading bookings: {error} (Hindi)",
+  "errorLoadingBookingsSnapshoterror": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@errorLoadingBookingsSnapshoterror": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Hindi)",
+  "openingCustomerPortal": "[HI] Opening customer portal... (Hindi)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "साइन आउट",
+  "signOut": "[HI] साइन आउट",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Hindi)",
+  "nameProfilename": "[HI] Name: {name} (Hindi)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "businessProfileEntryScreenComingSoon": "Business Profile Entry Screen - Coming Soon (Hindi)",
+  "businessProfileEntryScreenComingSoon": "شاشة إدخال الملف التجاري - قريباً",
   "@businessProfileEntryScreenComingSoon": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Hindi)",
+  "upgradeToBusiness": "[HI] Upgrade to Business (Hindi)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Hindi)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Hindi)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "उपयोगकर्ता लोड करने में त्रुटि",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "सत्यापित करें",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Hindi)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Hindi)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "businessAppointmentsEntryScreenComingSoon": "Business Appointments Entry Screen - Coming Soon (Hindi)",
+  "businessAppointmentsEntryScreenComingSoon": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@businessAppointmentsEntryScreenComingSoon": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Hindi)",
+  "viewResponses": "[HI] View Responses (Hindi)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Hindi)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Hindi)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Hindi)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Hindi)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Hindi)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Hindi)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Hindi)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "noInvoicesFoundCreateYourFirstInvoice": "No invoices found. Create your first invoice! (Hindi)",
+  "noInvoicesFoundCreateYourFirstInvoice": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@noInvoicesFoundCreateYourFirstInvoice": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Hindi)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Hindi)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }
