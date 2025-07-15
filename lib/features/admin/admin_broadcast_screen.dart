@@ -5,6 +5,7 @@ import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/providers/admin_provider.dart';
 import 'package:appoint/services/broadcast_service.dart';
+import 'package:appoint/infra/firebase_storage_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
@@ -759,13 +760,19 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       String? videoUrl;
 
       if (_selectedImage != null) {
-        // TODO(username): Implement media upload to Firebase Storage
-        imageUrl = 'placeholder_image_url';
+        try {
+          imageUrl = await FirebaseStorageService.instance.uploadBroadcastImage(_selectedImage!);
+        } catch (e) {
+          throw Exception('Failed to upload image: $e');
+        }
       }
 
       if (_selectedVideo != null) {
-        // TODO(username): Implement video upload to Firebase Storage
-        videoUrl = 'placeholder_video_url';
+        try {
+          videoUrl = await FirebaseStorageService.instance.uploadBroadcastVideo(_selectedVideo!);
+        } catch (e) {
+          throw Exception('Failed to upload video: $e');
+        }
       }
 
       // TODO(username): Implement actual message creation
