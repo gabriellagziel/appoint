@@ -8,7 +8,7 @@ Future<void> setupFirebaseMocks() async {
 
   try {
     await Firebase.initializeApp();
-  } catch (e) {e) {
+  } catch (e) { {
     // Firebase might already be initialized, which is fine
   }
 }

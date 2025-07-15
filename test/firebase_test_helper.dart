@@ -24,7 +24,7 @@ class FirebaseTestHelper {
       if (Firebase.apps.isEmpty) {
       await Firebase.initializeApp();
       }
-    } catch (e) {e) {
+    } catch (e) { {
       // Firebase might already be initialized or fail to initialize
       // This is acceptable for tests
       debugPrint('Firebase initialization warning: $e');
@@ -40,7 +40,7 @@ class FirebaseTestHelper {
           // Handle Firebase initialization errors gracefully
           try {
             return child;
-          } catch (e) {e) {
+          } catch (e) { {
             if (e.toString().contains('No Firebase App')) {
               // Return a placeholder widget if Firebase isn't initialized
               return const Scaffold(
