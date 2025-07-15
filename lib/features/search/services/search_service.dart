@@ -123,18 +123,18 @@ class SearchService {
     Query businessQuery = _firestore.collection('business_profiles');
 
     // Apply text search
-    final businessQuery = businessQuery
+    businessQuery = businessQuery
         .where('name', isGreaterThanOrEqualTo: query)
         .where('name', isLessThan: query + '\uf8ff');
 
     // Apply category filter
     if (filters.category != null) {
-      final businessQuery = businessQuery.where('category', isEqualTo: filters.category);
+      businessQuery = businessQuery.where('category', isEqualTo: filters.category);
     }
 
     // Apply rating filter
     if (filters.minRating != null) {
-      final businessQuery = businessQuery.where('rating', isGreaterThanOrEqualTo: filters.minRating);
+      businessQuery = businessQuery.where('rating', isGreaterThanOrEqualTo: filters.minRating);
     }
 
     final snapshot = await businessQuery.limit(20).get();
@@ -161,18 +161,18 @@ class SearchService {
     Query serviceQuery = _firestore.collection('services');
 
     // Apply text search
-    final serviceQuery = serviceQuery
+    serviceQuery = serviceQuery
         .where('name', isGreaterThanOrEqualTo: query)
         .where('name', isLessThan: query + '\uf8ff');
 
     // Apply category filter
     if (filters.category != null) {
-      final serviceQuery = serviceQuery.where('category', isEqualTo: filters.category);
+      serviceQuery = serviceQuery.where('category', isEqualTo: filters.category);
     }
 
     // Apply price filter
     if (filters.maxPrice != null) {
-      final serviceQuery = serviceQuery.where('price', isLessThanOrEqualTo: filters.maxPrice);
+      serviceQuery = serviceQuery.where('price', isLessThanOrEqualTo: filters.maxPrice);
     }
 
     final snapshot = await serviceQuery.limit(20).get();
@@ -198,7 +198,7 @@ class SearchService {
     Query userQuery = _firestore.collection('users');
 
     // Apply text search
-    final userQuery = userQuery
+    userQuery = userQuery
         .where('displayName', isGreaterThanOrEqualTo: query)
         .where('displayName', isLessThan: query + '\uf8ff')
         .where('isPublic', isEqualTo: true);

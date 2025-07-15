@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// Enhanced form field with inline error hints
 class InlineErrorFormField extends StatefulWidget {
 
-  const InlineErrorFormField({
+  InlineErrorFormField({
     required this.label, super.key,
     this.hint,
     this.errorText,
@@ -237,7 +237,7 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
 /// Enhanced password field with inline validation
 class InlineErrorPasswordField extends StatefulWidget {
 
-  const InlineErrorPasswordField({
+  InlineErrorPasswordField({
     required this.label, super.key,
     this.hint,
     this.errorText,
@@ -382,7 +382,7 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
 /// Enhanced email field with inline validation
 class InlineErrorEmailField extends StatefulWidget {
 
-  const InlineErrorEmailField({
+  InlineErrorEmailField({
     required this.label, super.key,
     this.hint,
     this.errorText,
@@ -517,7 +517,7 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
 /// Enhanced phone field with inline validation
 class InlineErrorPhoneField extends StatefulWidget {
 
-  const InlineErrorPhoneField({
+  InlineErrorPhoneField({
     required this.label, super.key,
     this.hint,
     this.errorText,
@@ -770,12 +770,12 @@ class FormValidationHelper {
 
   /// Validate positive number
   static String? validatePositiveNumber(String? value, String fieldName) {
-    numericError = validateNumeric(value, fieldName);
+    final numericError = validateNumeric(value, fieldName);
     if (numericError != null) {
       return numericError;
     }
 
-    number = double.parse(value!);
+    final number = double.parse(value!);
     if (number <= 0) {
       return '$fieldName must be greater than 0';
     }
