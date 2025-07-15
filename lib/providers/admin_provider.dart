@@ -18,7 +18,7 @@ isAdminProvider = FutureProvider<bool>((final ref) async {
   try {
     tokenResult = await user.getIdTokenResult(true);
     return tokenResult.claims?['admin'] == true;
-  } catch (e) {e) {
+  } catch (e) { {
     return false;
   }
 });
