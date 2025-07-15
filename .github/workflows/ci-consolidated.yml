@@ -11,453 +11,70 @@ env:
   FLUTTER_VERSION: '3.24.5'
   DART_VERSION: '3.5.4'
   NODE_VERSION: '18'
-  FIREBASE_EMULATOR_VERSION: '13.0.0'
 
 jobs:
-  # Global cache setup job
   setup-cache:
     runs-on: ubuntu-latest
-    outputs:
-      dart-pub-key: ${{ steps.cache-dart.outputs.cache-hit }}
-      flutter-key: ${{ steps.cache-flutter.outputs.cache-hit }}
-      npm-key: ${{ steps.cache-npm.outputs.cache-hit }}
-      firebase-key: ${{ steps.cache-firebase.outputs.cache-hit }}
+    timeout-minutes: 10
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      # Cache Dart pub dependencies
-      - name: Cache Dart Pub
-        id: cache-dart
-        uses: actions/cache@v4
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
         with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-dart-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-dart-pub-
+          flutter-version: '3.24.5'
+          channel: stable
+          cache: true
 
-      # Cache Flutter SDK and build artifacts
-      - name: Cache Flutter
-        id: cache-flutter
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.flutter
-            .dart_tool
-            build
-          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-flutter-
-
-      # Cache NPM dependencies for Firebase Functions
-      - name: Cache NPM
-        id: cache-npm
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('functions/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-
-
-      # Cache Firebase Emulator Suite
-      - name: Cache Firebase Emulators
-        id: cache-firebase
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cache/firebase/emulators
-            ~/.config/firebase
-          key: firebase-emulator-${{ env.FIREBASE_EMULATOR_VERSION }}-${{ hashFiles('**/firebase.json') }}
-          restore-keys: |
-            firebase-emulator-${{ env.FIREBASE_EMULATOR_VERSION }}-
-            firebase-emulator-
-
-  # Code generation step
-  code-generation:
+  lint:
     needs: setup-cache
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      # Restore caches
-      - name: Restore Dart Pub Cache
-        uses: actions/cache@v4
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
         with:
-          path: ~/.pub-cache
-          key: ${{ needs.setup-cache.outputs.dart-pub-key }}
-
-      - name: Restore Flutter Cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.flutter
-            .dart_tool
-            build
-          key: ${{ needs.setup-cache.outputs.flutter-key }}
-
-      # Install SDKs
-      - name: Setup Dart SDK
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: ${{ env.DART_VERSION }}
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v4
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
+          flutter-version: '3.24.5'
           channel: stable
-
-      # Get dependencies
-      - name: Get dependencies
-        run: |
-          dart pub get --offline || dart pub get
-          flutter pub get --offline || flutter pub get
-
-      # Generate code
-      - name: Generate code
-        run: |
-          dart run build_runner build --delete-conflicting-outputs
-          flutter packages pub run build_runner build --delete-conflicting-outputs
-
-      # Upload generated files as artifact
-      - name: Upload generated files
-        uses: actions/upload-artifact@v4
+          cache: true
+      - uses: actions/setup-node@v4
         with:
-          name: generated-files
-          path: |
-            lib/**/*.g.dart
-            lib/**/*.freezed.dart
-          retention-days: 1
-
-  # Linting and static analysis
-  lint:
-    needs: [setup-cache, code-generation]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      # Restore caches
-      - name: Restore Dart Pub Cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.pub-cache
-          key: ${{ needs.setup-cache.outputs.dart-pub-key }}
-
-      - name: Restore Flutter Cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.flutter
-            .dart_tool
-            build
-          key: ${{ needs.setup-cache.outputs.flutter-key }}
-
-      # Download generated files
-      - name: Download generated files
-        uses: actions/download-artifact@v4
-        with:
-          name: generated-files
-          path: .
-
-      # Install SDKs
-      - name: Setup Dart SDK
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: ${{ env.DART_VERSION }}
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v4
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
-          channel: stable
-
-      # Get dependencies
-      - name: Get dependencies
-        run: |
-          dart pub get --offline || dart pub get
-          flutter pub get --offline || flutter pub get
-
-      # Run analysis with relaxed error handling
-      - name: Run Flutter analyze
-        run: |
-          flutter analyze --no-fatal-infos || echo "Analysis completed with issues"
+          node-version: '18'
+          cache: 'npm'
+      - run: |
+          flutter pub get
+          npm install
+      - run: flutter analyze
+      - run: npm run spell-check
         continue-on-error: true
 
-      - name: Run localization audit
-        run: |
-          if [ -f "./scripts/audit_languages.sh" ]; then
-            chmod +x ./scripts/audit_languages.sh
-            ./scripts/audit_languages.sh || echo "Localization audit completed with issues"
-          else
-            echo "Localization audit script not found, skipping"
-          fi
-        continue-on-error: true
-
-      - name: Run accessibility audit
-        run: |
-          if [ -f "./scripts/accessibility_audit.sh" ]; then
-            chmod +x ./scripts/accessibility_audit.sh
-            ./scripts/accessibility_audit.sh || echo "Accessibility audit completed with issues"
-          else
-            echo "Accessibility audit script not found, skipping"
-          fi
-        continue-on-error: true
-
-  # Translation completeness check
-  l10n-check:
-    needs: lint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'
-
-      - name: Install dependencies
-        run: |
-          pip install jsonschema tabulate
-
-      - name: Run translation completeness check
-        run: |
-          python3 check_translations.py --threshold 90 || echo "Translation check completed with issues"
-        continue-on-error: true
-
-      - name: Generate detailed translation report
-        run: |
-          python3 check_translations.py --output l10n_report.md || echo "Translation report generated with issues"
-        continue-on-error: true
-
-      - name: Upload translation report
-        uses: actions/upload-artifact@v4
-        with:
-          name: translation-completeness-report
-          path: l10n_report.md
-          retention-days: 30
-        if: always()
-
-  # Unit and widget tests with matrix strategy
   test:
-    needs: [setup-cache, code-generation]
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-latest]
-        test-type: [unit, widget]
-        include:
-          - os: ubuntu-latest
-            test-type: unit
-            coverage: true
-          - os: ubuntu-latest
-            test-type: widget
-            coverage: true
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      # Restore caches
-      - name: Restore Flutter Cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.pub-cache
-            ~/.flutter
-            .dart_tool
-            build
-          key: ${{ needs.setup-cache.outputs.flutter-key }}
-
-      # Download generated files
-      - name: Download generated files
-        uses: actions/download-artifact@v4
-        with:
-          name: generated-files
-          path: .
-
-      # Install SDKs
-      - name: Setup Dart SDK
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: ${{ env.DART_VERSION }}
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v4
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
-          channel: stable
-
-      # Get dependencies
-      - name: Get dependencies
-        run: |
-          dart pub get --offline || dart pub get
-          flutter pub get --offline || flutter pub get
-
-      # Run tests based on type with relaxed error handling
-      - name: Run ${{ matrix.test-type }} tests
-        run: |
-          if [ "${{ matrix.test-type }}" = "unit" ]; then
-            flutter test test/ --coverage || echo "Unit tests completed with failures"
-          elif [ "${{ matrix.test-type }}" = "widget" ]; then
-            flutter test test/widgets/ --coverage || echo "Widget tests completed with failures"
-          fi
-        continue-on-error: true
-
-      # Generate coverage report
-      - name: Generate coverage report
-        if: matrix.coverage == true
-        run: |
-          if [ -f "coverage/lcov.info" ]; then
-            genhtml coverage/lcov.info -o coverage/html || echo "Coverage report generated with issues"
-          else
-            echo "No coverage file found, skipping coverage report"
-          fi
-        continue-on-error: true
-
-      # Upload coverage report
-      - name: Upload coverage report
-        if: matrix.coverage == true
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage-report-${{ matrix.test-type }}
-          path: |
-            coverage/lcov.info
-            coverage/html/
-          retention-days: 90
-        continue-on-error: true
-
-  # Firebase deployment
-  firebase-deploy:
-    needs: [setup-cache, code-generation]
+    needs: setup-cache
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    timeout-minutes: 15
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      # Restore caches
-      - name: Restore Flutter Cache
-        uses: actions/cache@v4
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
         with:
-          path: |
-            ~/.pub-cache
-            ~/.flutter
-            .dart_tool
-            build
-          key: ${{ needs.setup-cache.outputs.flutter-key }}
-
-      # Download generated files
-      - name: Download generated files
-        uses: actions/download-artifact@v4
-        with:
-          name: generated-files
-          path: .
-
-      # Install SDKs
-      - name: Setup Dart SDK
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: ${{ env.DART_VERSION }}
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v4
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
+          flutter-version: '3.24.5'
           channel: stable
+          cache: true
+      - run: flutter pub get
+      - run: flutter test --coverage
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      # Get dependencies
-      - name: Get Flutter dependencies
-        run: flutter pub get
-
-      # Install Firebase CLI
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-
-      # Build web app
-      - name: Build web app
-        run: |
-          flutter build web --release || echo "Web build completed with issues"
-        continue-on-error: true
-
-      # Deploy to Firebase (only if secrets are available)
-      - name: Deploy to Firebase Hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: |
-          if [ -n "$FIREBASE_TOKEN" ]; then
-            firebase deploy --only hosting --token "$FIREBASE_TOKEN" || echo "Firebase deployment completed with issues"
-          else
-            echo "Firebase token not available, skipping deployment"
-          fi
-        continue-on-error: true
-
-  # Build verification
   build:
-    needs: [setup-cache, code-generation]
+    needs: [lint, test]
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        platform: [web]
+    timeout-minutes: 15
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      # Restore caches
-      - name: Restore Flutter Cache
-        uses: actions/cache@v4
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
         with:
-          path: |
-            ~/.pub-cache
-            ~/.flutter
-            .dart_tool
-            build
-          key: ${{ needs.setup-cache.outputs.flutter-key }}
-
-      # Download generated files
-      - name: Download generated files
-        uses: actions/download-artifact@v4
-        with:
-          name: generated-files
-          path: .
-
-      # Install SDKs
-      - name: Setup Dart SDK
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: ${{ env.DART_VERSION }}
-
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v4
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
+          flutter-version: '3.24.5'
           channel: stable
-
-      # Get dependencies
-      - name: Get dependencies
-        run: flutter pub get
-
-      # Build for platform
-      - name: Build for ${{ matrix.platform }}
-        run: |
-          if [ "${{ matrix.platform }}" = "web" ]; then
-            flutter build web --release || echo "Web build completed with issues"
-          fi
-        continue-on-error: true
-
-      # Upload build artifacts
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+          cache: true
+      - run: flutter pub get
+      - run: flutter build web --release
+      - uses: actions/upload-artifact@v4
         with:
-          name: build-${{ matrix.platform }}
+          name: build-web
           path: build/
-          retention-days: 7
-        if: always() 
+        if: always()
