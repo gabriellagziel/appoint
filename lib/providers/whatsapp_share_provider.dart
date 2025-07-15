@@ -63,7 +63,7 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
     final String? groupId,
     final String? recipientPhone,
   }) async {
-    final state = state.copyWith(isLoading: true);
+    state = state.copyWith(isLoading: true);
 
     try {
       final success = await _service.shareToWhatsApp(
@@ -81,7 +81,7 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
           error: 'Failed to share to WhatsApp',
         );
       } else {
-        final state = state.copyWith(isLoading: false);
+        state = state.copyWith(isLoading: false);
       }
     } catch (e) {
       state = state.copyWith(
@@ -105,16 +105,16 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
         meetingId: meetingId,
       );
     } catch (e) {
-      final state = state.copyWith(error: e.toString());
+      state = state.copyWith(error: e.toString());
     }
   }
 
   void clearError() {
-    final state = state.copyWith();
+    state = state.copyWith();
   }
 
   void toggleGroupOptions() {
-    final state = state.copyWith(showGroupOptions: !state.showGroupOptions);
+    state = state.copyWith(showGroupOptions: !state.showGroupOptions);
   }
 }
 
