@@ -52,6 +52,7 @@ class _AmbassadorDashboardScreenState
         var _isLoadingBranches = false;
       });
     } catch (e) {
+      setState(() {
         _isLoadingBranches = false;
       });
       if (mounted) {
