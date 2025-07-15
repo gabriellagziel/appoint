@@ -273,7 +273,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
           SnackBar(content: Text(l10n.otpResentSuccessfully)),
         );
       }
-    } catch (e) {e) {
+    } catch (e) { {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text(l10n.failedToResendOtp(e))),
@@ -311,7 +311,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
                     SnackBar(content: Text(l10n.inviteCancelledSuccessfully)),
                   );
                 }
-              } catch (e) {e) {
+              } catch (e) { {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text(l10n.failedToCancelInvite(e))),
@@ -448,7 +448,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
       // Refresh the privacy requests list
       ref.invalidate(privacyRequestsProvider);
-    } catch (e) {e) {
+    } catch (e) { {
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -495,7 +495,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
                 ref
                     .read(familyLinksProvider(link.parentId).notifier)
                     .loadLinks();
-              } catch (e) {e) {
+              } catch (e) { {
                 if (context.mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(

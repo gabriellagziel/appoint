@@ -88,7 +88,7 @@ class AmbassadorQuotaService {
           .get();
 
       return snapshot.count ?? 0;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error getting ambassador count: $e');
       return 0;
     }
@@ -134,7 +134,7 @@ class AmbassadorQuotaService {
       if (currentRole == 'ambassador') return false;
 
       return true;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error checking user eligibility: $e');
       return false;
     }
@@ -211,7 +211,7 @@ class AmbassadorQuotaService {
       //   'Successfully assigned ambassador role to user $userId for ${countryCode}_$languageCode'
       // );
       return true;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error assigning ambassador: $e');
       return false;
     }
@@ -263,7 +263,7 @@ class AmbassadorQuotaService {
 
       // Removed debug print: debugPrint('Successfully removed ambassador role from user $userId');
       return true;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error removing ambassador: $e');
       return false;
     }
@@ -336,7 +336,7 @@ class AmbassadorQuotaService {
       if (usersSnapshot.docs.isEmpty) return null;
 
       return usersSnapshot.docs.first.id;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error finding eligible user: $e');
       return null;
     }
