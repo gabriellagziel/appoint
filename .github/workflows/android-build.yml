@@ -113,9 +113,12 @@ jobs:
       - name: Setup Android signing
         run: |
           echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > android/app/keystore.jks
-          echo "${{ secrets.ANDROID_KEYSTORE_PASSWORD }}" > android/app/key.properties
-          echo "${{ secrets.ANDROID_KEY_ALIAS }}" >> android/app/key.properties
-          echo "${{ secrets.ANDROID_KEY_PASSWORD }}" >> android/app/key.properties
+          cat > android/app/key.properties << EOF
+          storePassword=${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          keyPassword=${{ secrets.ANDROID_KEY_PASSWORD }}
+          keyAlias=${{ secrets.ANDROID_KEY_ALIAS }}
+          storeFile=keystore.jks
+          EOF
           
       - name: Sign APK
         run: |
