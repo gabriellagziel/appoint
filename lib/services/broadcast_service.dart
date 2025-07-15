@@ -119,7 +119,7 @@ class BroadcastService {
       });
 
       // Send FCM messages
-      for (user in targetUsers) {
+      for (final user in targetUsers) {
         await _sendFCMNotification(user, message);
       }
     } catch (e) {
