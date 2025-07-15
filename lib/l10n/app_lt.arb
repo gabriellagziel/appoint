@@ -1,2862 +1,2862 @@
 {
   "@@locale": "lt",
-  "refresh": "[LT] Refresh",
+  "refresh": "[LT] [LT] Refresh",
   "@refresh": {
     "description": "Description"
   },
-  "home": "[LT] Home",
+  "home": "[LT] [LT] Home",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "[LT] No sessions yet",
+  "noSessionsYet": "[LT] [LT] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "[LT] OK",
+  "ok": "[LT] [LT] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "[LT] Choose your play mode:",
+  "playtimeLandingChooseMode": "[LT] [LT] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "[LT] Sign Up",
+  "signUp": "[LT] [LT] Sign Up",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "[LT] Schedule Message",
+  "scheduleMessage": "[LT] [LT] Schedule Message",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "[LT] Decline",
+  "decline": "[LT] [LT] Decline",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[LT] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "[LT] Login",
+  "login": "[LT] [LT] Login",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "[LT] Choose friends to invite",
+  "playtimeChooseFriends": "[LT] [LT] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "[LT] No invites",
+  "noInvites": "[LT] [LT] No invites",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "[LT] Choose a time",
+  "playtimeChooseTime": "[LT] [LT] Choose a time",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "[LT] Success",
+  "success": "[LT] [LT] Success",
   "@success": {
     "description": "Description"
   },
-  "undo": "[LT] Undo",
+  "undo": "[LT] [LT] Undo",
   "@undo": {
     "description": "Description"
   },
-  "opened": "[LT] Opened",
+  "opened": "[LT] [LT] Opened",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "[LT] Create Virtual Session",
+  "createVirtualSession": "[LT] [LT] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "[LT] Message sent successfully",
+  "messageSentSuccessfully": "[LT] [LT] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "[LT] Redo",
+  "redo": "[LT] [LT] Redo",
   "@redo": {
     "description": "Description"
   },
-  "next": "[LT] Next",
+  "next": "[LT] [LT] Next",
   "@next": {
     "description": "Description"
   },
-  "search": "[LT] Search",
+  "search": "[LT] [LT] Search",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "[LT] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[LT] [LT] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[LT] Created",
+  "created": "[LT] [LT] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "[LT] Revoke Access",
+  "revokeAccess": "[LT] [LT] Revoke Access",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[LT] Save Group for Recognition",
+  "saveGroupForRecognition": "[LT] [LT] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[LT] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[LT] [LT] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[LT] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[LT] [LT] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "[LT] Download",
+  "download": "[LT] [LT] Download",
   "@download": {
     "description": "Description"
   },
-  "password": "[LT] Password",
+  "password": "[LT] [LT] Password",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[LT] Error loading family links",
+  "errorLoadingFamilyLinks": "[LT] [LT] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "[LT] Cancel",
+  "cancel": "[LT] [LT] Cancel",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "[LT] Create",
+  "playtimeCreate": "[LT] [LT] Create",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[LT] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[LT] [LT] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "[LT] APP-OINT",
+  "appTitle": "[LT] [LT] APP-OINT",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "[LT] Accept",
+  "accept": "[LT] [LT] Accept",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "[LT] Virtual Play",
+  "playtimeModeVirtual": "[LT] [LT] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "[LT] Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "[LT] [LT] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "[LT] Delete",
+  "delete": "[LT] [LT] Delete",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "[LT] Virtual playtime started!",
+  "playtimeVirtualStarted": "[LT] [LT] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "[LT] Create your first game",
+  "createYourFirstGame": "[LT] [LT] Create your first game",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "[LT] Participants",
+  "participants": "[LT] [LT] Participants",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "[LT] Recipients",
+  "recipients": "[LT] [LT] Recipients",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[LT] No results found",
+  "noResults": "[LT] [LT] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "[LT] Yes",
+  "yes": "[LT] [LT] Yes",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "[LT] Invite",
+  "invite": "[LT] [LT] Invite",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "[LT] Live Play",
+  "playtimeModeLive": "[LT] [LT] Live Play",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[LT] Done",
+  "done": "[LT] [LT] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[LT] Let's meet via Appoint!",
+  "defaultShareMessage": "[LT] [LT] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "[LT] No",
+  "no": "[LT] [LT] No",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "[LT] Playtime Hub",
+  "playtimeHub": "[LT] [LT] Playtime Hub",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "[LT] Create Live Session",
+  "createLiveSession": "[LT] [LT] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "[LT] Enable Notifications",
+  "enableNotifications": "[LT] [LT] Enable Notifications",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "[LT] Invited",
+  "invited": "[LT] [LT] Invited",
   "@invited": {
     "description": "Description"
   },
-  "content": "[LT] Content",
+  "content": "[LT] [LT] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "[LT] Meeting shared successfully",
+  "meetingSharedSuccessfully": "[LT] [LT] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[LT] Welcome to Playtime",
+  "welcomeToPlaytime": "[LT] [LT] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "[LT] View All",
+  "viewAll": "[LT] [LT] View All",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "[LT] Virtual Play",
+  "playtimeVirtual": "[LT] [LT] Virtual Play",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[LT] Staff screen coming soon",
+  "staffScreenTBD": "[LT] [LT] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "[LT] Cut",
+  "cut": "[LT] [LT] Cut",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[LT] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[LT] [LT] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "[LT] Retry",
+  "retry": "[LT] [LT] Retry",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "[LT] Compose Broadcast Message",
+  "composeBroadcastMessage": "[LT] [LT] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "[LT] Send Now",
+  "sendNow": "[LT] [LT] Send Now",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "[LT] No games yet",
+  "noGamesYet": "[LT] [LT] No games yet",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "[LT] Select",
+  "select": "[LT] [LT] Select",
   "@select": {
     "description": "Description"
   },
-  "about": "[LT] About",
+  "about": "[LT] [LT] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "[LT] Choose",
+  "choose": "[LT] [LT] Choose",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[LT] Profile",
+  "profile": "[LT] [LT] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "[LT] Remove Child",
+  "removeChild": "[LT] [LT] Remove Child",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "[LT] Status",
+  "status": "[LT] [LT] Status",
   "@status": {
     "description": "status description"
   },
-  "logout": "[LT] Logout",
+  "logout": "[LT] [LT] Logout",
   "@logout": {
     "description": "Description"
   },
-  "paste": "[LT] Paste",
+  "paste": "[LT] [LT] Paste",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "[LT] Welcome",
+  "welcome": "[LT] [LT] Welcome",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "[LT] Create a Playtime Session",
+  "playtimeCreateSession": "[LT] [LT] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "[LT] Family Members",
+  "familyMembers": "[LT] [LT] Family Members",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "[LT] Upload",
+  "upload": "[LT] [LT] Upload",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[LT] Upcoming Sessions",
+  "upcomingSessions": "[LT] [LT] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "[LT] Enter group name",
+  "enterGroupName": "[LT] [LT] Enter group name",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "[LT] Confirm",
+  "confirm": "[LT] [LT] Confirm",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "[LT] Live Play",
+  "playtimeLive": "[LT] [LT] Live Play",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[LT] Error loading invites",
+  "errorLoadingInvites": "[LT] [LT] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "[LT] Targeting Filters",
+  "targetingFilters": "[LT] [LT] Targeting Filters",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "[LT] Pick Video",
+  "pickVideo": "[LT] [LT] Pick Video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "[LT] Game deleted",
+  "playtimeGameDeleted": "[LT] [LT] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "[LT] Schedule for Later",
+  "scheduleForLater": "[LT] [LT] Schedule for Later",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[LT] Access revoked successfully",
+  "accessRevokedSuccessfully": "[LT] [LT] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "[LT] Type",
+  "type": "[LT] [LT] Type",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "[LT] Checking permissions...",
+  "checkingPermissions": "[LT] [LT] Checking permissions...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "[LT] Copy",
+  "copy": "[LT] [LT] Copy",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "[LT] Yes, Cancel",
+  "yesCancel": "[LT] [LT] Yes, Cancel",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "[LT] Email",
+  "email": "[LT] [LT] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[LT] Share on WhatsApp",
+  "shareOnWhatsApp": "[LT] [LT] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[LT] Notification Settings",
+  "notificationSettings": "[LT] [LT] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[LT] My Profile",
+  "myProfile": "[LT] [LT] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "[LT] Revoke",
+  "revoke": "[LT] [LT] Revoke",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "[LT] No messages yet",
+  "noBroadcastMessages": "[LT] [LT] No messages yet",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "[LT] Request Type",
+  "requestType": "[LT] [LT] Request Type",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "[LT] Notifications",
+  "notifications": "[LT] [LT] Notifications",
   "@notifications": {
     "description": "Description"
   },
-  "details": "[LT] Details",
+  "details": "[LT] [LT] Details",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[LT] Cancel Invite",
+  "cancelInvite": "[LT] [LT] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "[LT] Create New",
+  "createNew": "[LT] [LT] Create New",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[LT] Settings",
+  "settings": "[LT] [LT] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[LT] Reject",
+  "playtimeReject": "[LT] [LT] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[LT] Error loading profile",
+  "errorLoadingProfile": "[LT] [LT] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "[LT] Edit",
+  "edit": "[LT] [LT] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "[LT] Add",
+  "add": "[LT] [LT] Add",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[LT] Game approved",
+  "playtimeGameApproved": "[LT] [LT] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[LT] Forgot Password?",
+  "forgotPassword": "[LT] [LT] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[LT] Family Dashboard",
+  "familyDashboard": "[LT] [LT] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "[LT] Loading...",
+  "loading": "[LT] [LT] Loading...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[LT] Quick Actions",
+  "quickActions": "[LT] [LT] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "[LT] Playtime",
+  "playtimeTitle": "[LT] [LT] Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[LT] OTP resent successfully",
+  "otpResentSuccessfully": "[LT] [LT] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[LT] Error checking permissions",
+  "errorCheckingPermissions": "[LT] [LT] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "[LT] Client screen coming soon",
+  "clientScreenTBD": "[LT] [LT] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[LT] FCM Token",
+  "fcmToken": "[LT] [LT] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "[LT] Pick Image",
+  "pickImage": "[LT] [LT] Pick Image",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[LT] Previous",
+  "previous": "[LT] [LT] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[LT] No profile found",
+  "noProfileFound": "[LT] [LT] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "[LT] No family members yet",
+  "noFamilyMembersYet": "[LT] [LT] No family members yet",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[LT] Media (Optional)",
+  "mediaOptional": "[LT] [LT] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[LT] Message saved successfully",
+  "messageSavedSuccessfully": "[LT] [LT] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[LT] Scheduled for",
+  "scheduledFor": "[LT] [LT] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[LT] Dashboard",
+  "dashboard": "[LT] [LT] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "[LT] No permission for broadcast",
+  "noPermissionForBroadcast": "[LT] [LT] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[LT] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[LT] Invite Details",
+  "inviteDetail": "[LT] [LT] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "[LT] Scheduled",
+  "scheduled": "[LT] [LT] Scheduled",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[LT] Failed to resend OTP",
+  "failedToResendOtp": "[LT] [LT] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "[LT] Scheduling",
+  "scheduling": "[LT] [LT] Scheduling",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[LT] Error saving message",
+  "errorSavingMessage": "[LT] [LT] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "[LT] Save",
+  "save": "[LT] [LT] Save",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "[LT] Approve",
+  "playtimeApprove": "[LT] [LT] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[LT] Create your first session",
+  "createYourFirstSession": "[LT] [LT] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[LT] Game rejected",
+  "playtimeGameRejected": "[LT] [LT] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[LT] Failed to revoke access",
+  "failedToRevokeAccess": "[LT] [LT] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "[LT] Recent Games",
+  "recentGames": "[LT] [LT] Recent Games",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[LT] Customize Message",
+  "customizeMessage": "[LT] [LT] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[LT] Failed to cancel invite",
+  "failedToCancelInvite": "[LT] [LT] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[LT] Error sending message",
+  "errorSendingMessage": "[LT] [LT] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[LT] Confirm Password",
+  "confirmPassword": "[LT] [LT] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[LT] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[LT] [LT] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "[LT] Connected Children",
+  "connectedChildren": "[LT] [LT] Connected Children",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "[LT] Share",
+  "share": "[LT] [LT] Share",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[LT] Enter game name",
+  "playtimeEnterGameName": "[LT] [LT] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[LT] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[LT] [LT] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[LT] My Invites",
+  "myInvites": "[LT] [LT] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[LT] Create Game",
+  "createGame": "[LT] [LT] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[LT] Group Name (Optional)",
+  "groupNameOptional": "[LT] [LT] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[LT] No playtime sessions found.",
+  "playtimeNoSessions": "[LT] [LT] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[LT] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[LT] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[LT] [LT] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "[LT] Close",
+  "close": "[LT] [LT] Close",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[LT] Known group detected",
+  "knownGroupDetected": "[LT] [LT] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[LT] Back",
+  "back": "[LT] [LT] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[LT] Choose a game",
+  "playtimeChooseGame": "[LT] [LT] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[LT] Manage Permissions",
+  "managePermissions": "[LT] [LT] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[LT] Poll Options",
+  "pollOptions": "[LT] [LT] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[LT] Clicked",
+  "clicked": "[LT] [LT] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[LT] Link",
+  "link": "[LT] [LT] Link",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[LT] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[LT] [LT] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[LT] Pending Invites",
+  "pendingInvites": "[LT] [LT] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[LT] Status:",
+  "statusColon": "[LT] [LT] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[LT] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[LT] [LT] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[LT] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[LT] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[LT] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[LT] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[LT] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[LT] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[LT] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[LT] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[LT] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[LT] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[LT] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[LT] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[LT] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[LT] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[LT] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "authErrorAccountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method.",
+  "authErrorAccountExistsWithDifferentCredential": "[LT] An account already exists with this email using a different sign-in method.",
   "@authErrorAccountExistsWithDifferentCredential": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[LT] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[LT] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Lithuanian)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Lithuanian)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Lithuanian)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Lithuanian)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[LT] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[LT] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "authErrorInvalidVerificationCode": "The verification code is invalid.",
+  "authErrorInvalidVerificationCode": "[LT] The verification code is invalid.",
   "@authErrorInvalidVerificationCode": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[LT] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "authErrorMissingVerificationCode": "Please enter the verification code.",
+  "authErrorMissingVerificationCode": "[LT] Please enter the verification code.",
   "@authErrorMissingVerificationCode": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[LT] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[LT] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[LT] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[LT] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[LT] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[LT] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "authErrorMultiFactorAuthRequired": "Multi-factor authentication is required.",
+  "authErrorMultiFactorAuthRequired": "[LT] Multi-factor authentication is required.",
   "@authErrorMultiFactorAuthRequired": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "authErrorMultiFactorInfoNotFound": "Multi-factor information not found.",
+  "authErrorMultiFactorInfoNotFound": "[LT] Multi-factor information not found.",
   "@authErrorMultiFactorInfoNotFound": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "authErrorMissingMultiFactorSession": "Missing multi-factor session.",
+  "authErrorMissingMultiFactorSession": "[LT] Missing multi-factor session.",
   "@authErrorMissingMultiFactorSession": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "authErrorInvalidMultiFactorSession": "Invalid multi-factor session.",
+  "authErrorInvalidMultiFactorSession": "[LT] Invalid multi-factor session.",
   "@authErrorInvalidMultiFactorSession": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "authErrorSecondFactorAlreadyInUse": "This second factor is already in use.",
+  "authErrorSecondFactorAlreadyInUse": "[LT] This second factor is already in use.",
   "@authErrorSecondFactorAlreadyInUse": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "authErrorMaximumSecondFactorCountExceeded": "Maximum number of second factors exceeded.",
+  "authErrorMaximumSecondFactorCountExceeded": "[LT] Maximum number of second factors exceeded.",
   "@authErrorMaximumSecondFactorCountExceeded": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[LT] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "authErrorEmailChangeNeedsVerification": "Email change requires verification.",
+  "authErrorEmailChangeNeedsVerification": "[LT] Email change requires verification.",
   "@authErrorEmailChangeNeedsVerification": {
     "description": "Localization key for: Email change requires verification."
   },
-  "authErrorPhoneNumberAlreadyExists": "This phone number is already in use.",
+  "authErrorPhoneNumberAlreadyExists": "[LT] This phone number is already in use.",
   "@authErrorPhoneNumberAlreadyExists": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[LT] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[LT] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[LT] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[LT] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[LT] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[LT] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[LT] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[LT] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[LT] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[LT] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[LT] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "authErrorInvalidDynamicLinkDomain": "The dynamic link domain is invalid.",
+  "authErrorInvalidDynamicLinkDomain": "[LT] The dynamic link domain is invalid.",
   "@authErrorInvalidDynamicLinkDomain": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[LT] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[LT] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[LT] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "authErrorInvalidHashDerivedKeyLength": "The hash derived key length is invalid.",
+  "authErrorInvalidHashDerivedKeyLength": "[LT] The hash derived key length is invalid.",
   "@authErrorInvalidHashDerivedKeyLength": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[LT] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[LT] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "authErrorInvalidHashParallelization": "The hash parallelization is invalid.",
+  "authErrorInvalidHashParallelization": "[LT] The hash parallelization is invalid.",
   "@authErrorInvalidHashParallelization": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[LT] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "authErrorInvalidHashSaltSeparator": "The hash salt separator is invalid.",
+  "authErrorInvalidHashSaltSeparator": "[LT] The hash salt separator is invalid.",
   "@authErrorInvalidHashSaltSeparator": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[LT] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[LT] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[LT] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[LT] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "authErrorInvalidSessionCookieDuration": "The session cookie duration is invalid.",
+  "authErrorInvalidSessionCookieDuration": "[LT] The session cookie duration is invalid.",
   "@authErrorInvalidSessionCookieDuration": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[LT] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[LT] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "authErrorMaximumUserCountExceeded": "Maximum user import count exceeded.",
+  "authErrorMaximumUserCountExceeded": "[LT] Maximum user import count exceeded.",
   "@authErrorMaximumUserCountExceeded": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[LT] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[LT] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[LT] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[LT] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[LT] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "authErrorMissingOauthClientSecret": "Missing OAuth client secret.",
+  "authErrorMissingOauthClientSecret": "[LT] Missing OAuth client secret.",
   "@authErrorMissingOauthClientSecret": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[LT] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[LT] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[LT] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[LT] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[LT] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "authErrorUnauthorizedContinueUri": "The continue URL domain is not whitelisted.",
+  "authErrorUnauthorizedContinueUri": "[LT] The continue URL domain is not whitelisted.",
   "@authErrorUnauthorizedContinueUri": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[LT] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Lithuanian)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Lithuanian)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Lithuanian)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Lithuanian)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Lithuanian)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Lithuanian)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Lithuanian)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Lithuanian)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[LT] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Lithuanian)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Lithuanian)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Lithuanian)",
+  "upload1": "[LT] Upload (Lithuanian)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Lithuanian)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Lithuanian)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "virtualSessionCreatedInvitingFriends": "Virtual session created! Inviting friends... (Lithuanian)",
+  "virtualSessionCreatedInvitingFriends": "[LT] Virtual session created! Inviting friends... (Lithuanian)",
   "@virtualSessionCreatedInvitingFriends": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Lithuanian)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Lithuanian)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Lithuanian)",
+  "rewards": "[LT] Rewards (Lithuanian)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Lithuanian)",
+  "time": "[LT] Time (Lithuanian)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[LT] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Lithuanian)",
+  "noSlots": "[LT] No slots (Lithuanian)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Lithuanian)",
+  "signIn": "[LT] Sign In (Lithuanian)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Lithuanian)",
+  "homeFeedScreen": "[LT] Home Feed Screen (Lithuanian)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Lithuanian)",
+  "selectLocation": "[LT] Select Location (Lithuanian)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Lithuanian)",
+  "noTicketsYet": "[LT] No tickets yet (Lithuanian)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Lithuanian)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Lithuanian)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Lithuanian)",
+  "subscriptionUnavailable": "[LT] Subscription unavailable (Lithuanian)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Lithuanian)",
+  "confirmBooking": "[LT] Confirm Booking (Lithuanian)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Lithuanian)",
+  "failedToUpdatePermissionE": "[LT] Failed to update permission: $e (Lithuanian)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Lithuanian)",
+  "reject": "[LT] Reject (Lithuanian)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "ambassadorStatusAmbassadorstatus": "Ambassador Status: {ambassadorStatus} (Lithuanian)",
+  "ambassadorStatusAmbassadorstatus": "[LT] Ambassador Status: {ambassadorStatus} (Lithuanian)",
   "@ambassadorStatusAmbassadorstatus": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[LT] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Lithuanian)",
+  "checkingSubscription": "[LT] Checking subscription... (Lithuanian)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Lithuanian)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Lithuanian)",
+  "noContentAvailableYet": "[LT] No content available yet (Lithuanian)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Lithuanian)",
+  "resolve": "[LT] Resolve (Lithuanian)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Lithuanian)",
+  "errorLoadingSurveysError": "[LT] Error loading surveys: $error (Lithuanian)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[LT] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Lithuanian)",
+  "getHelpWithYourAccount": "[LT] Get help with your account (Lithuanian)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Lithuanian)",
+  "pay": "[LT] Pay (Lithuanian)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[LT] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Lithuanian)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Lithuanian)",
+  "changesSavedSuccessfully": "[LT] Changes saved successfully! (Lithuanian)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Lithuanian)",
+  "createNewInvoice": "[LT] Create New Invoice (Lithuanian)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Lithuanian)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Lithuanian)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Lithuanian)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Lithuanian)",
+  "profileSaved": "[LT] Profile saved! (Lithuanian)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "receiveBookingNotificationsViaEmail": "Receive booking notifications via email (Lithuanian)",
+  "receiveBookingNotificationsViaEmail": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@receiveBookingNotificationsViaEmail": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Lithuanian)",
+  "valuetointk": "[LT] \\${value}K (Lithuanian)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Lithuanian)",
+  "deleteAccount": "[LT] Delete Account (Lithuanian)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Lithuanian)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Lithuanian)",
+  "businessOnboarding": "[LT] Business Onboarding (Lithuanian)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Lithuanian)",
+  "addNewClient": "[LT] Add New Client (Lithuanian)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Lithuanian)",
+  "darkMode": "[LT] Dark Mode (Lithuanian)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[LT] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[LT] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "youWillReceiveAConfirmationEmailShortly": "You will receive a confirmation email shortly. (Lithuanian)",
+  "youWillReceiveAConfirmationEmailShortly": "[LT] You will receive a confirmation email shortly. (Lithuanian)",
   "@youWillReceiveAConfirmationEmailShortly": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Lithuanian)",
+  "addQuestion": "[LT] Add Question (Lithuanian)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Lithuanian)",
+  "privacyPolicy": "[LT] Privacy Policy (Lithuanian)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Lithuanian)",
+  "branchesLengthBranches": "[LT] {branchCount} branches (Lithuanian)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Lithuanian)",
+  "join": "[LT] Join (Lithuanian)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Lithuanian)",
+  "businessSubscription": "[LT] Business Subscription (Lithuanian)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Lithuanian)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[LT] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Lithuanian)",
+  "surveyManagement": "[LT] Survey Management (Lithuanian)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[LT] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Lithuanian)",
+  "noRoomsFoundAddYourFirstRoom": "[LT] No rooms found. Add your first room! (Lithuanian)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Lithuanian)",
+  "readOurPrivacyPolicy": "[LT] Read our privacy policy (Lithuanian)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Lithuanian)",
+  "couldNotOpenPrivacyPolicy": "[LT] Could not open privacy policy (Lithuanian)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Lithuanian)",
+  "refresh1": "[LT] Refresh (Lithuanian)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Lithuanian)",
+  "roomUpdatedSuccessfully": "[LT] Room updated successfully! (Lithuanian)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Lithuanian)",
+  "contentDetail": "[LT] Content Detail (Lithuanian)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Lithuanian)",
+  "cancelSubscription": "[LT] Cancel Subscription (Lithuanian)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "successfullyRegisteredAsAmbassador": "Successfully registered as Ambassador! (Lithuanian)",
+  "successfullyRegisteredAsAmbassador": "[LT] Successfully registered as Ambassador! (Lithuanian)",
   "@successfullyRegisteredAsAmbassador": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Lithuanian)",
+  "save1": "[LT] Save (Lithuanian)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Lithuanian)",
+  "copy1": "[LT] Copy (Lithuanian)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Lithuanian)",
+  "failedToSendInvitationE": "[LT] Failed to send invitation: $e (Lithuanian)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Lithuanian)",
+  "surveyScore": "[LT] Survey Score (Lithuanian)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[LT] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Lithuanian)",
+  "noAppointmentsFound": "[LT] No appointments found. (Lithuanian)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Lithuanian)",
+  "responseDetail": "[LT] Response Detail (Lithuanian)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "businessVerificationScreenComingSoon": "Business Verification Screen - Coming Soon (Lithuanian)",
+  "businessVerificationScreenComingSoon": "شاشة التحقق من الأعمال - قريباً",
   "@businessVerificationScreenComingSoon": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "businessProfileActivatedSuccessfully": "Business profile activated successfully! (Lithuanian)",
+  "businessProfileActivatedSuccessfully": "تم تفعيل الملف التجاري بنجاح",
   "@businessProfileActivatedSuccessfully": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Lithuanian)",
+  "failedToStartProSubscriptionE": "[LT] Failed to start Pro subscription: $e (Lithuanian)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "businessDashboardEntryScreenComingSoon": "Business Dashboard Entry Screen - Coming Soon (Lithuanian)",
+  "businessDashboardEntryScreenComingSoon": "[LT] Business Dashboard Entry Screen - Coming Soon (Lithuanian)",
   "@businessDashboardEntryScreenComingSoon": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Lithuanian)",
+  "contentFilter": "[LT] Content Filter (Lithuanian)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Lithuanian)",
+  "helpSupport": "[LT] Help & Support (Lithuanian)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Lithuanian)",
+  "editRoom": "[LT] Edit Room (Lithuanian)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[LT] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[LT] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "businessCrmEntryScreenComingSoon": "Business CRM Entry Screen - Coming Soon (Lithuanian)",
+  "businessCrmEntryScreenComingSoon": "[LT] Business CRM Entry Screen - Coming Soon (Lithuanian)",
   "@businessCrmEntryScreenComingSoon": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[LT] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[LT] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Lithuanian)",
+  "errorLoadingDashboardError": "[LT] Error loading dashboard: $error (Lithuanian)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Lithuanian)",
+  "gameDeletedSuccessfully": "[LT] Game deleted successfully! (Lithuanian)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Lithuanian)",
+  "viewResponsesComingSoon": "[LT] View responses - Coming soon! (Lithuanian)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[LT] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Lithuanian)",
+  "errorLoadingRewards": "[LT] Error loading rewards (Lithuanian)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Lithuanian)",
+  "failedToDeleteAccountE": "[LT] Failed to delete account: $e (Lithuanian)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Lithuanian)",
+  "invited1": "[LT] Invited (Lithuanian)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Lithuanian)",
+  "noBranchesAvailable": "[LT] No branches available (Lithuanian)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Lithuanian)",
+  "errorError": "[LT] Error: $error (Lithuanian)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Lithuanian)",
+  "noEvents": "[LT] No events (Lithuanian)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Lithuanian)",
+  "gameCreatedSuccessfully": "[LT] Game created successfully! (Lithuanian)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Lithuanian)",
+  "add1": "[LT] Add (Lithuanian)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[LT] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Lithuanian)",
+  "eventstarttimeEventendtime": "[LT] {startTime} - {endTime} (Lithuanian)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Lithuanian)",
+  "allowPlaytime": "[LT] Allow Playtime (Lithuanian)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Lithuanian)",
+  "clients": "[LT] Clients (Lithuanian)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Lithuanian)",
+  "noAmbassadorDataAvailable": "[LT] No ambassador data available (Lithuanian)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Lithuanian)",
+  "backgroundDeletedSuccessfully": "[LT] Background deleted successfully! (Lithuanian)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Lithuanian)",
+  "errorSnapshoterror": "[LT] Error: {error} (Lithuanian)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Lithuanian)",
+  "noAnalyticsDataAvailableYet": "[LT] No analytics data available yet. (Lithuanian)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Lithuanian)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "businessPhoneBookingEntryScreenComingSoon": "Business Phone Booking Entry Screen - Coming Soon (Lithuanian)",
+  "businessPhoneBookingEntryScreenComingSoon": "[LT] Business Phone Booking Entry Screen - Coming Soon (Lithuanian)",
   "@businessPhoneBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Lithuanian)",
+  "verification": "[LT] Verification (Lithuanian)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Lithuanian)",
+  "copyLink": "[LT] Copy Link (Lithuanian)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Lithuanian)",
+  "dashboard1": "[LT] Dashboard (Lithuanian)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Lithuanian)",
+  "manageChildAccounts": "[LT] Manage Child Accounts (Lithuanian)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Lithuanian)",
+  "grantConsent": "[LT] Grant Consent (Lithuanian)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Lithuanian)",
+  "myProfile1": "[LT] My Profile (Lithuanian)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Lithuanian)",
+  "submit": "[LT] Submit (Lithuanian)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[LT] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Lithuanian)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Lithuanian)",
+  "ambassadorDashboard": "[LT] Ambassador Dashboard (Lithuanian)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Lithuanian)",
+  "phoneBooking": "[LT] Phone Booking (Lithuanian)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Lithuanian)",
+  "bookViaChat": "[LT] Book via Chat (Lithuanian)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "[LT] Error",
+  "error": "[LT] [LT] Error",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Lithuanian)",
+  "businessProfile": "[LT] Business Profile (Lithuanian)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "businessBookingEntryScreenComingSoon": "Business Booking Entry Screen - Coming Soon (Lithuanian)",
+  "businessBookingEntryScreenComingSoon": "[LT] Business Booking Entry Screen - Coming Soon (Lithuanian)",
   "@businessBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Lithuanian)",
+  "createNewSurvey": "[LT] Create New Survey (Lithuanian)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Lithuanian)",
+  "backgroundRejected": "[LT] Background rejected (Lithuanian)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Lithuanian)",
+  "noMediaSelected": "[LT] No media selected (Lithuanian)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Lithuanian)",
+  "syncToGoogle": "[LT] Sync to Google (Lithuanian)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Lithuanian)",
+  "virtualPlaytime": "[LT] Virtual Playtime (Lithuanian)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[LT] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[LT] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Lithuanian)",
+  "invitationSentSuccessfully": "[LT] Invitation sent successfully! (Lithuanian)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Lithuanian)",
+  "registering": "[LT] Registering... (Lithuanian)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Lithuanian)",
+  "statusAppointmentstatusname": "[LT] Status: {status} (Lithuanian)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Lithuanian)",
+  "home1": "[LT] Home (Lithuanian)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Lithuanian)",
+  "errorSavingSettingsE": "[LT] Error saving settings: $e (Lithuanian)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Lithuanian)",
+  "appVersionAndInformation": "[LT] App version and information (Lithuanian)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "businessSubscriptionEntryScreenComingSoon": "Business Subscription Entry Screen - Coming Soon (Lithuanian)",
+  "businessSubscriptionEntryScreenComingSoon": "[LT] Business Subscription Entry Screen - Coming Soon (Lithuanian)",
   "@businessSubscriptionEntryScreenComingSoon": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Lithuanian)",
+  "ekeyEvalue": "[LT] {key}: {value} (Lithuanian)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "yourPaymentHasBeenProcessedSuccessfully": "Your payment has been processed successfully. (Lithuanian)",
+  "yourPaymentHasBeenProcessedSuccessfully": "[LT] Your payment has been processed successfully. (Lithuanian)",
   "@yourPaymentHasBeenProcessedSuccessfully": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Lithuanian)",
+  "errorE": "[LT] Error: $e (Lithuanian)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Lithuanian)",
+  "viewAll1": "[LT] View All (Lithuanian)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Lithuanian)",
+  "editSurveyComingSoon": "[LT] Edit survey - Coming soon! (Lithuanian)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Lithuanian)",
+  "enterOtp": "[LT] Enter OTP (Lithuanian)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Lithuanian)",
+  "payment": "[LT] Payment (Lithuanian)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "automaticallyConfirmNewBookingRequests": "Automatically confirm new booking requests (Lithuanian)",
+  "automaticallyConfirmNewBookingRequests": "[LT] Automatically confirm new booking requests (Lithuanian)",
   "@automaticallyConfirmNewBookingRequests": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Lithuanian)",
+  "noRouteDefinedForSettingsname": "[LT] No route defined for {settingsName} (Lithuanian)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Lithuanian)",
+  "pleaseSignInToUploadABackground": "[LT] Please sign in to upload a background (Lithuanian)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[LT] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Lithuanian)",
+  "staffAvailability": "[LT] Staff Availability (Lithuanian)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Lithuanian)",
+  "livePlaytime": "[LT] Live Playtime (Lithuanian)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Lithuanian)",
+  "autoconfirmBookings": "[LT] Auto-Confirm Bookings (Lithuanian)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "redirectingToStripeCheckoutForProPlan": "Redirecting to Stripe checkout for Pro plan... (Lithuanian)",
+  "redirectingToStripeCheckoutForProPlan": "[LT] Redirecting to Stripe checkout for Pro plan... (Lithuanian)",
   "@redirectingToStripeCheckoutForProPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Lithuanian)",
+  "exportAsCsv": "[LT] Export as CSV (Lithuanian)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Lithuanian)",
+  "deleteFunctionalityComingSoon": "[LT] Delete functionality coming soon! (Lithuanian)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Lithuanian)",
+  "editClient": "[LT] Edit Client (Lithuanian)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "areYouSureYouWantToDeleteThisMessage": "Are you sure you want to delete this message? (Lithuanian)",
+  "areYouSureYouWantToDeleteThisMessage": "[LT] Are you sure you want to delete this message? (Lithuanian)",
   "@areYouSureYouWantToDeleteThisMessage": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Lithuanian)",
+  "referralsAmbassadorreferrals": "[LT] Referrals: {referrals} (Lithuanian)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[LT] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Lithuanian)",
+  "privacyRequestSentToYourParents": "[LT] Privacy request sent to your parents! (Lithuanian)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Lithuanian)",
+  "clientDeletedSuccessfully": "[LT] Client deleted successfully! (Lithuanian)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Lithuanian)",
+  "failedToCancelSubscription": "[LT] Failed to cancel subscription (Lithuanian)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Lithuanian)",
+  "allLanguages": "[LT] All Languages (Lithuanian)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Lithuanian)",
+  "slotDeletedSuccessfully": "[LT] Slot deleted successfully (Lithuanian)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "businessProvidersEntryScreenComingSoon": "Business Providers Entry Screen - Coming Soon",
+  "businessProvidersEntryScreenComingSoon": "[LT] Business Providers Entry Screen - Coming Soon",
   "@businessProvidersEntryScreenComingSoon": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "parentsMustApproveBeforeChildrenCanJoin": "Parents must approve before children can join (Lithuanian)",
+  "parentsMustApproveBeforeChildrenCanJoin": "[LT] Parents must approve before children can join (Lithuanian)",
   "@parentsMustApproveBeforeChildrenCanJoin": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Lithuanian)",
+  "subscribeToPro1499mo": "[LT] Subscribe to Pro (€14.99/mo) (Lithuanian)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "businessAvailabilityEntryScreenComingSoon": "Business Availability Entry Screen - Coming Soon (Lithuanian)",
+  "businessAvailabilityEntryScreenComingSoon": "[LT] Business Availability Entry Screen - Coming Soon (Lithuanian)",
   "@businessAvailabilityEntryScreenComingSoon": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Lithuanian)",
+  "appointmentsListlength": "[LT] Appointments: {count} (Lithuanian)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Lithuanian)",
+  "clearFilters": "[LT] Clear Filters (Lithuanian)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Lithuanian)",
+  "submitBooking": "[LT] Submit Booking (Lithuanian)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "areYouSureYouWantToCancelThisAppointment": "Are you sure you want to cancel this appointment? (Lithuanian)",
+  "areYouSureYouWantToCancelThisAppointment": "[LT] Are you sure you want to cancel this appointment? (Lithuanian)",
   "@areYouSureYouWantToCancelThisAppointment": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Lithuanian)",
+  "noUpcomingBookings": "[LT] No upcoming bookings (Lithuanian)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Lithuanian)",
+  "goBack": "[LT] Go Back (Lithuanian)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Lithuanian)",
+  "setup": "[LT] Setup (Lithuanian)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Lithuanian)",
+  "inviteChild": "[LT] Invite Child (Lithuanian)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Lithuanian)",
+  "goToDashboard": "[LT] Go to Dashboard (Lithuanian)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Lithuanian)",
+  "ambassadorQuotaDashboard": "[LT] Ambassador Quota Dashboard (Lithuanian)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[LT] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Lithuanian)",
+  "referralCode": "[LT] Referral Code (Lithuanian)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[LT] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Lithuanian)",
+  "date": "[LT] Date (Lithuanian)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Lithuanian)",
+  "readOnly": "[LT] Read Only (Lithuanian)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Lithuanian)",
+  "bookingRequest": "[LT] Booking Request (Lithuanian)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Lithuanian)",
+  "advancedReporting": "[LT] • Advanced reporting (Lithuanian)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Lithuanian)",
+  "rooms": "[LT] Rooms (Lithuanian)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Lithuanian)",
+  "copiedToClipboard": "[LT] Copied to clipboard (Lithuanian)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Lithuanian)",
+  "bookingConfirmed": "[LT] Booking Confirmed (Lithuanian)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Lithuanian)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Lithuanian)",
+  "clientAddedSuccessfully": "[LT] Client added successfully! (Lithuanian)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Lithuanian)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Lithuanian)",
+  "backgroundApproved": "[LT] Background approved! (Lithuanian)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Lithuanian)",
+  "familySupport": "[LT] Family Support (Lithuanian)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Lithuanian)",
+  "deletingAccount": "[LT] Deleting account... (Lithuanian)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Lithuanian)",
+  "bookAppointment": "[LT] Book Appointment (Lithuanian)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "receivePushNotificationsForNewBookings": "Receive push notifications for new bookings (Lithuanian)",
+  "receivePushNotificationsForNewBookings": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@receivePushNotificationsForNewBookings": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Lithuanian)",
+  "delete1": "[LT] Delete (Lithuanian)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Lithuanian)",
+  "sendBookingInvite": "[LT] Send Booking Invite (Lithuanian)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Lithuanian)",
+  "text": "[LT] Text (Lithuanian)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Lithuanian)",
+  "manageSubscription": "[LT] Manage Subscription (Lithuanian)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Lithuanian)",
+  "requiresInstallFallback": "[LT] Requires Install Fallback (Lithuanian)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Lithuanian)",
+  "paymentConfirmation": "[LT] Payment Confirmation (Lithuanian)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Lithuanian)",
+  "promoAppliedYourNextBillIsFree": "[LT] Promo applied! Your next bill is free. (Lithuanian)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Lithuanian)",
+  "errorLoadingSlots": "[LT] Error loading slots (Lithuanian)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "allowOtherUsersToFindAndJoinThisGame": "Allow other users to find and join this game (Lithuanian)",
+  "allowOtherUsersToFindAndJoinThisGame": "[LT] Allow other users to find and join this game (Lithuanian)",
   "@allowOtherUsersToFindAndJoinThisGame": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "businessOnboardingScreenComingSoon": "Business Onboarding Screen - Coming Soon (Lithuanian)",
+  "businessOnboardingScreenComingSoon": "[LT] Business Onboarding Screen - Coming Soon (Lithuanian)",
   "@businessOnboardingScreenComingSoon": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Lithuanian)",
+  "activateBusinessProfile": "[LT] Activate Business Profile (Lithuanian)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Lithuanian)",
+  "contentNotFound": "[LT] Content not found (Lithuanian)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Lithuanian)",
+  "pspecialtynpcontactinfo": "[LT] {specialty}\\n{contactInfo} (Lithuanian)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Lithuanian)",
+  "rating": "[LT] Rating (Lithuanian)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Lithuanian)",
+  "messages": "[LT] Messages (Lithuanian)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Lithuanian)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Lithuanian)",
+  "becomeAnAmbassador": "[LT] Become an Ambassador (Lithuanian)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Lithuanian)",
+  "subscribeNow": "[LT] Subscribe Now (Lithuanian)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Lithuanian)",
+  "timeArgsslotformatcontext": "[LT] Time: {time} (Lithuanian)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Lithuanian)",
+  "shareViaWhatsapp": "[LT] Share via WhatsApp (Lithuanian)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Lithuanian)",
+  "users1": "[LT] Users (Lithuanian)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Lithuanian)",
+  "shareLink": "[LT] Share Link (Lithuanian)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
+  "areYouSureYouWantToDeleteThisProvider": "[LT] Are you sure you want to delete this provider?",
   "@areYouSureYouWantToDeleteThisProvider": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Lithuanian)",
+  "deleteAppointment": "[LT] Delete Appointment (Lithuanian)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Lithuanian)",
+  "toggleAvailability": "[LT] Toggle Availability (Lithuanian)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Lithuanian)",
+  "changePlan": "[LT] Change Plan (Lithuanian)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Lithuanian)",
+  "errorLoadingStaff": "[LT] Error loading staff (Lithuanian)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Lithuanian)",
+  "updateYourBusinessInformation": "[LT] Update your business information (Lithuanian)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "noProvidersFoundAddYourFirstProvider": "No providers found. Add your first provider!",
+  "noProvidersFoundAddYourFirstProvider": "[LT] No providers found. Add your first provider!",
   "@noProvidersFoundAddYourFirstProvider": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Lithuanian)",
+  "parentDashboard": "[LT] Parent Dashboard (Lithuanian)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Lithuanian)",
+  "menu": "[LT] Menu (Lithuanian)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Lithuanian)",
+  "studioBooking": "[LT] Studio Booking (Lithuanian)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Lithuanian)",
+  "about1": "[LT] About (Lithuanian)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Lithuanian)",
+  "multipleChoice": "[LT] Multiple Choice (Lithuanian)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "dateAppointmentscheduledattostring": "Date: {date} (Lithuanian)",
+  "dateAppointmentscheduledattostring": "[LT] Date: {date} (Lithuanian)",
   "@dateAppointmentscheduledattostring": {
     "description": "Localization key for: Date: {date}"
   },
-  "studioBookingIsOnlyAvailableOnWeb": "Studio booking is only available on web (Lithuanian)",
+  "studioBookingIsOnlyAvailableOnWeb": "[LT] Studio booking is only available on web (Lithuanian)",
   "@studioBookingIsOnlyAvailableOnWeb": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Lithuanian)",
+  "errorLoadingBranchesE": "[LT] Error loading branches: $e (Lithuanian)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "ud83dudcc5Bookingdatetimetolocal": "\\uD83D\\uDCC5 {dateTime} (Lithuanian)",
+  "ud83dudcc5Bookingdatetimetolocal": "[LT] \\uD83D\\uDCC5 {dateTime} (Lithuanian)",
   "@ud83dudcc5Bookingdatetimetolocal": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Lithuanian)",
+  "none": "[LT] None (Lithuanian)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Lithuanian)",
+  "failedToUpdateConsentE": "[LT] Failed to update consent: $e (Lithuanian)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Lithuanian)",
+  "welcome1": "[LT] Welcome (Lithuanian)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Lithuanian)",
+  "failedToCreateSessionE": "[LT] Failed to create session: $e (Lithuanian)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Lithuanian)",
+  "inviteContact": "[LT] Invite Contact (Lithuanian)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Lithuanian)",
+  "surveyEditor": "[LT] Survey Editor (Lithuanian)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Lithuanian)",
+  "failedToStartBasicSubscriptionE": "[LT] Failed to start Basic subscription: $e (Lithuanian)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Lithuanian)",
+  "mySchedule": "[LT] My Schedule (Lithuanian)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Lithuanian)",
+  "studioDashboard": "[LT] Studio Dashboard (Lithuanian)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Lithuanian)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[LT] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[LT] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Lithuanian)",
+  "settingsSavedSuccessfully": "[LT] Settings saved successfully! (Lithuanian)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Lithuanian)",
+  "linkCopiedToClipboard": "[LT] Link copied to clipboard! (Lithuanian)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Lithuanian)",
+  "accept1": "[LT] Accept (Lithuanian)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Lithuanian)",
+  "noAvailableSlots": "[LT] No available slots (Lithuanian)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Lithuanian)",
+  "makeGamePublic": "[LT] Make Game Public (Lithuanian)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "permissionPermissioncategoryUpdatedToNewvalue": "Permission {category} updated to $newValue (Lithuanian)",
+  "permissionPermissioncategoryUpdatedToNewvalue": "[LT] Permission {category} updated to $newValue (Lithuanian)",
   "@permissionPermissioncategoryUpdatedToNewvalue": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Lithuanian)",
+  "roomDeletedSuccessfully": "[LT] Room deleted successfully! (Lithuanian)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Lithuanian)",
+  "businessCalendar": "[LT] Business Calendar (Lithuanian)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Lithuanian)",
+  "addAvailability": "[LT] Add Availability (Lithuanian)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Lithuanian)",
+  "ambassadorOnboarding": "[LT] Ambassador Onboarding (Lithuanian)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Lithuanian)",
+  "phoneProfileasyncphone": "[LT] Phone: {phone} (Lithuanian)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Lithuanian)",
+  "addNewRoom": "[LT] Add New Room (Lithuanian)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Lithuanian)",
+  "requireParentApproval": "[LT] Require Parent Approval (Lithuanian)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Lithuanian)",
+  "closed": "[LT] Closed (Lithuanian)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Lithuanian)",
+  "exportAsPdf": "[LT] Export as PDF (Lithuanian)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Lithuanian)",
+  "enableVibration": "[LT] Enable Vibration (Lithuanian)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Lithuanian)",
+  "toAvailendformatcontext": "[LT] To: {endTime} (Lithuanian)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Lithuanian)",
+  "yourUpgradeCodeUpgradecode": "[LT] Your upgrade code: $upgradeCode (Lithuanian)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[LT] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Lithuanian)",
+  "country": "[LT] Country (Lithuanian)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[LT] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Lithuanian)",
+  "staffArgsstaffdisplayname": "[LT] Staff: {staffName} (Lithuanian)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Lithuanian)",
+  "revokeConsent": "[LT] Revoke Consent (Lithuanian)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Lithuanian)",
+  "settings1": "[LT] Settings (Lithuanian)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Lithuanian)",
+  "cancel1": "[LT] Cancel (Lithuanian)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "subscriptionActivatedSuccessfully": "Subscription activated successfully! (Lithuanian)",
+  "subscriptionActivatedSuccessfully": "[LT] Subscription activated successfully! (Lithuanian)",
   "@subscriptionActivatedSuccessfully": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[LT] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Lithuanian)",
+  "broadcast": "[LT] Broadcast (Lithuanian)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Lithuanian)",
+  "noEventsScheduledThisWeek": "[LT] No events scheduled this week (Lithuanian)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Lithuanian)",
+  "googleCalendar": "[LT] Google Calendar (Lithuanian)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Lithuanian)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Lithuanian)",
+  "childDashboard": "[LT] Child Dashboard (Lithuanian)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Lithuanian)",
+  "failedToUploadBackgroundE": "[LT] Failed to upload background: $e (Lithuanian)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[LT] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[LT] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[LT] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Lithuanian)",
+  "noAppointments": "[LT] No appointments (Lithuanian)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Lithuanian)",
+  "unlimitedBookingsPerWeek": "[LT] • Unlimited bookings per week (Lithuanian)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Lithuanian)",
+  "scheduledAtScheduledat": "[LT] Scheduled at: $scheduledAt (Lithuanian)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Lithuanian)",
+  "selectStaff": "[LT] Select Staff (Lithuanian)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "subscriptionCancelledSuccessfully": "Subscription cancelled successfully (Lithuanian)",
+  "subscriptionCancelledSuccessfully": "[LT] Subscription cancelled successfully (Lithuanian)",
   "@subscriptionCancelledSuccessfully": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Lithuanian)",
+  "cancelAppointment": "[LT] Cancel Appointment (Lithuanian)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[LT] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Lithuanian)",
+  "businessSignup": "[LT] Business Signup (Lithuanian)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "businessCompletionScreenComingSoon": "Business Completion Screen - Coming Soon (Lithuanian)",
+  "businessCompletionScreenComingSoon": "[LT] Business Completion Screen - Coming Soon (Lithuanian)",
   "@businessCompletionScreenComingSoon": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Lithuanian)",
+  "createGame1": "[LT] Create Game (Lithuanian)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Lithuanian)",
+  "valuetoint": "[LT] {value} (Lithuanian)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Lithuanian)",
+  "pleaseEnterAPromoCode": "[LT] Please enter a promo code (Lithuanian)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Lithuanian)",
+  "errorLoadingAvailabilityE": "[LT] Error loading availability: $e (Lithuanian)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Lithuanian)",
+  "parentalControls": "[LT] Parental Controls (Lithuanian)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Lithuanian)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Lithuanian)",
+  "childLinkedSuccessfully": "[LT] Child linked successfully! (Lithuanian)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Lithuanian)",
+  "create": "[LT] Create (Lithuanian)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Lithuanian)",
+  "noExternalMeetingsFound": "[LT] No external meetings found. (Lithuanian)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Lithuanian)",
+  "staffSelectionstaffdisplayname": "[LT] Staff: {staffName} (Lithuanian)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[LT] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Lithuanian)",
+  "schedulerScreen": "[LT] Scheduler Screen (Lithuanian)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Lithuanian)",
+  "clientUpdatedSuccessfully": "[LT] Client updated successfully! (Lithuanian)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Lithuanian)",
+  "surveyResponses": "[LT] Survey Responses (Lithuanian)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Lithuanian)",
+  "syncToOutlook": "[LT] Sync to Outlook (Lithuanian)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Lithuanian)",
+  "saveChanges": "[LT] Save Changes (Lithuanian)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Lithuanian)",
+  "pickTime": "[LT] Pick Time (Lithuanian)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Lithuanian)",
+  "registrationFailedEtostring": "[LT] Registration failed: {error} (Lithuanian)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Lithuanian)",
+  "analytics": "[LT] Analytics (Lithuanian)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Lithuanian)",
+  "errorLoadingEvents": "[LT] Error loading events (Lithuanian)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[LT] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[LT] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Lithuanian)",
+  "success1": "[LT] Success (Lithuanian)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[LT] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Lithuanian)",
+  "fromAvailstartformatcontext": "[LT] From: {startTime} (Lithuanian)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Lithuanian)",
+  "readWrite": "[LT] Read & Write (Lithuanian)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "redirectingToStripeCheckoutForBasicPlan": "Redirecting to Stripe checkout for Basic plan... (Lithuanian)",
+  "redirectingToStripeCheckoutForBasicPlan": "[LT] Redirecting to Stripe checkout for Basic plan... (Lithuanian)",
   "@redirectingToStripeCheckoutForBasicPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[LT] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Lithuanian)",
+  "pickDate": "[LT] Pick Date (Lithuanian)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Lithuanian)",
+  "chatBooking": "[LT] Chat Booking (Lithuanian)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Lithuanian)",
+  "noQuestionsAdded": "[LT] No questions added (Lithuanian)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[LT] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[LT] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Lithuanian)",
+  "typeOpenCall": "[LT] Type: Open Call (Lithuanian)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[LT] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[LT] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Lithuanian)",
+  "invoiceCreatedSuccessfully": "[LT] Invoice created successfully! (Lithuanian)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Lithuanian)",
+  "noTimeSeriesDataAvailable": "[LT] No time series data available (Lithuanian)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[LT] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "timestamp_formatdatelogtimestamp": "Timestamp: {timestamp}",
+  "timestamp_formatdatelogtimestamp": "[LT] Timestamp: {timestamp}",
   "@timestamp_formatdatelogtimestamp": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Lithuanian)",
+  "failedToSendPrivacyRequestE": "[LT] Failed to send privacy request: $e (Lithuanian)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Lithuanian)",
+  "chooseYourPlan": "[LT] Choose Your Plan (Lithuanian)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Lithuanian)",
+  "playtimeManagement": "[LT] Playtime Management (Lithuanian)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Lithuanian)",
+  "availability": "[LT] Availability (Lithuanian)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Lithuanian)",
+  "eventCreated": "[LT] Event created (Lithuanian)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Lithuanian)",
+  "subscribeToBasic499mo": "[LT] Subscribe to Basic (€4.99/mo) (Lithuanian)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Lithuanian)",
+  "completion": "[LT] Completion (Lithuanian)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Lithuanian)",
+  "supportTicketSubmitted": "[LT] Support ticket submitted (Lithuanian)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Lithuanian)",
+  "monetizationSettings": "[LT] Monetization Settings (Lithuanian)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Lithuanian)",
+  "noBookingsFound": "[LT] No bookings found (Lithuanian)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[LT] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Lithuanian)",
+  "deleteSurvey": "[LT] Delete Survey (Lithuanian)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Lithuanian)",
+  "gameApprovedSuccessfully": "[LT] Game approved successfully! (Lithuanian)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Lithuanian)",
+  "errorLoadingPermissionsError": "[LT] Error loading permissions: $error (Lithuanian)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Lithuanian)",
+  "referrals": "[LT] Referrals (Lithuanian)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Lithuanian)",
+  "crm": "[LT] CRM (Lithuanian)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Lithuanian)",
+  "gameRejected": "[LT] Game rejected (Lithuanian)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Lithuanian)",
+  "appointments": "[LT] Appointments (Lithuanian)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Lithuanian)",
+  "onboardingScreen": "[LT] Onboarding Screen (Lithuanian)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Lithuanian)",
+  "welcomeToYourStudio": "[LT] Welcome to your studio (Lithuanian)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Lithuanian)",
+  "update": "[LT] Update (Lithuanian)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Lithuanian)",
+  "retry1": "[LT] Retry (Lithuanian)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Lithuanian)",
+  "booking": "[LT] Booking (Lithuanian)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Lithuanian)",
+  "parentalSettings": "[LT] Parental Settings (Lithuanian)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Lithuanian)",
+  "language": "[LT] Language (Lithuanian)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Lithuanian)",
+  "deleteSlot": "[LT] Delete Slot (Lithuanian)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[LT] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[LT] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Lithuanian)",
+  "createNewGame": "[LT] Create New Game (Lithuanian)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Lithuanian)",
+  "next1": "[LT] Next (Lithuanian)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Lithuanian)",
+  "backgroundUploadedSuccessfully": "[LT] Background uploaded successfully! (Lithuanian)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Lithuanian)",
+  "noAppointmentRequestsFound": "[LT] No appointment requests found. (Lithuanian)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Lithuanian)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Lithuanian)",
+  "restrictMatureContent": "[LT] Restrict mature content (Lithuanian)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Lithuanian)",
+  "ambassadors": "[LT] Ambassadors (Lithuanian)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Lithuanian)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Lithuanian)",
+  "paymentWasCancelled": "[LT] Payment was cancelled (Lithuanian)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Lithuanian)",
+  "clearAll": "[LT] Clear All (Lithuanian)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Lithuanian)",
+  "viewDetails": "[LT] View Details (Lithuanian)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Lithuanian)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "liveSessionScheduledWaitingForParentApproval": "Live session scheduled! Waiting for parent approval... (Lithuanian)",
+  "liveSessionScheduledWaitingForParentApproval": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@liveSessionScheduledWaitingForParentApproval": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Lithuanian)",
+  "failedToCreateGameE": "[LT] Failed to create game: $e (Lithuanian)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Lithuanian)",
+  "noChartDataAvailable": "[LT] No chart data available (Lithuanian)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Lithuanian)",
+  "phonebasedBookingSystem": "[LT] • Phone-based booking system (Lithuanian)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Lithuanian)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Lithuanian)",
+  "invoices": "[LT] Invoices (Lithuanian)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "pleaseActivateYourBusinessProfileToContinue": "Please activate your business profile to continue. (Lithuanian)",
+  "pleaseActivateYourBusinessProfileToContinue": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@pleaseActivateYourBusinessProfileToContinue": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Lithuanian)",
+  "scheduledAtArgsscheduledat": "[LT] Scheduled at: {scheduledAt} (Lithuanian)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "durationDurationinminutes0Minutes": "Duration: {duration} minutes (Lithuanian)",
+  "durationDurationinminutes0Minutes": "[LT] Duration: {duration} minutes (Lithuanian)",
   "@durationDurationinminutes0Minutes": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Lithuanian)",
+  "tryAgain": "[LT] Try Again (Lithuanian)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Lithuanian)",
+  "deleteBackground": "[LT] Delete Background (Lithuanian)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Lithuanian)",
+  "currentTierTiertouppercase": "[LT] Current Tier: {tier} (Lithuanian)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[LT] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "noClientsFoundAddYourFirstClient": "No clients found. Add your first client! (Lithuanian)",
+  "noClientsFoundAddYourFirstClient": "[LT] No clients found. Add your first client! (Lithuanian)",
   "@noClientsFoundAddYourFirstClient": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "settingsDialogWillBeImplementedHere": "Settings dialog will be implemented here.",
+  "settingsDialogWillBeImplementedHere": "[LT] Settings dialog will be implemented here.",
   "@settingsDialogWillBeImplementedHere": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[LT] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Lithuanian)",
+  "appointmentRequests": "[LT] Appointment Requests (Lithuanian)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Lithuanian)",
+  "forward": "[LT] Forward (Lithuanian)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Lithuanian)",
+  "roomAddedSuccessfully": "[LT] Room added successfully! (Lithuanian)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Lithuanian)",
+  "option": "[LT] • $option (Lithuanian)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Lithuanian)",
+  "responseIndex1": "[LT] Response #{number} (Lithuanian)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Lithuanian)",
+  "crmDashboardWithAnalytics": "[LT] • CRM dashboard with analytics (Lithuanian)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Lithuanian)",
+  "contentLibrary1": "[LT] Content Library (Lithuanian)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Lithuanian)",
+  "reply": "[LT] Reply (Lithuanian)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Lithuanian)",
+  "subscriptionManagement": "[LT] Subscription Management (Lithuanian)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "monetizationSettingsWillBeImplementedHere": "Monetization settings will be implemented here (Lithuanian)",
+  "monetizationSettingsWillBeImplementedHere": "[LT] Monetization settings will be implemented here (Lithuanian)",
   "@monetizationSettingsWillBeImplementedHere": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Lithuanian)",
+  "failedToApplyPromoCodeE": "[LT] Failed to apply promo code: $e (Lithuanian)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[LT] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Lithuanian)",
+  "localizationContribution": "[LT] Localization Contribution (Lithuanian)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Lithuanian)",
+  "parentalConsent": "[LT] Parental Consent (Lithuanian)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Lithuanian)",
+  "businessSignupScreenComingSoon": "[LT] Business Signup Screen - Coming Soon (Lithuanian)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "areYouSureYouWantToDeleteThisAppointment": "Are you sure you want to delete this appointment? (Lithuanian)",
+  "areYouSureYouWantToDeleteThisAppointment": "[LT] Are you sure you want to delete this appointment? (Lithuanian)",
   "@areYouSureYouWantToDeleteThisAppointment": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Lithuanian)",
+  "syncAppointment": "[LT] Sync Appointment (Lithuanian)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Lithuanian)",
+  "iConsent": "[LT] I Consent (Lithuanian)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Lithuanian)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Lithuanian)",
+  "businessSetupScreenComingSoon": "[LT] Business Setup Screen - Coming Soon (Lithuanian)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Lithuanian)",
+  "edit1": "[LT] Edit (Lithuanian)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Lithuanian)",
+  "noEventsScheduledThisMonth": "[LT] No events scheduled this month (Lithuanian)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Lithuanian)",
+  "businessDashboard": "[LT] Business Dashboard (Lithuanian)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Lithuanian)",
+  "noMessagesFound": "[LT] No messages found. (Lithuanian)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[LT] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Lithuanian)",
+  "manageStaffAvailability": "[LT] Manage Staff Availability (Lithuanian)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Lithuanian)",
+  "noMissingTranslations": "[LT] No missing translations (Lithuanian)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Lithuanian)",
+  "skip": "[LT] Skip (Lithuanian)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[LT] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Lithuanian)",
+  "errorLoadingReferralCode": "[LT] Error loading referral code (Lithuanian)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Lithuanian)",
+  "allCountries": "[LT] All Countries (Lithuanian)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Lithuanian)",
+  "deleteGame": "[LT] Delete Game (Lithuanian)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Lithuanian)",
+  "staffManagementTools": "[LT] • Staff management tools (Lithuanian)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Lithuanian)",
+  "deleteMessage": "[LT] Delete Message (Lithuanian)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "receiveBookingNotificationsViaSms": "Receive booking notifications via SMS (Lithuanian)",
+  "receiveBookingNotificationsViaSms": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@receiveBookingNotificationsViaSms": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[LT] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "errorLoadingBookingsSnapshoterror": "Error loading bookings: {error} (Lithuanian)",
+  "errorLoadingBookingsSnapshoterror": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@errorLoadingBookingsSnapshoterror": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Lithuanian)",
+  "openingCustomerPortal": "[LT] Opening customer portal... (Lithuanian)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Lithuanian)",
+  "signOut": "[LT] Sign Out (Lithuanian)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Lithuanian)",
+  "nameProfilename": "[LT] Name: {name} (Lithuanian)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "businessProfileEntryScreenComingSoon": "Business Profile Entry Screen - Coming Soon (Lithuanian)",
+  "businessProfileEntryScreenComingSoon": "شاشة إدخال الملف التجاري - قريباً",
   "@businessProfileEntryScreenComingSoon": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Lithuanian)",
+  "upgradeToBusiness": "[LT] Upgrade to Business (Lithuanian)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Lithuanian)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Lithuanian)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Lithuanian)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Lithuanian)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Lithuanian)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "businessAppointmentsEntryScreenComingSoon": "Business Appointments Entry Screen - Coming Soon (Lithuanian)",
+  "businessAppointmentsEntryScreenComingSoon": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@businessAppointmentsEntryScreenComingSoon": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Lithuanian)",
+  "viewResponses": "[LT] View Responses (Lithuanian)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Lithuanian)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Lithuanian)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Lithuanian)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Lithuanian)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Lithuanian)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Lithuanian)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Lithuanian)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "noInvoicesFoundCreateYourFirstInvoice": "No invoices found. Create your first invoice! (Lithuanian)",
+  "noInvoicesFoundCreateYourFirstInvoice": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@noInvoicesFoundCreateYourFirstInvoice": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Lithuanian)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Lithuanian)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

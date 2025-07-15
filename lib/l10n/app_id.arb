@@ -1,2862 +1,2862 @@
 {
   "@@locale": "id",
-  "refresh": "Segarkan",
+  "refresh": "[ID] Segarkan",
   "@refresh": {
     "description": "Description"
   },
-  "home": "[ID] Home",
+  "home": "[ID] [ID] Home",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "Belum ada sesi",
+  "noSessionsYet": "[ID] Belum ada sesi",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "Oke",
+  "ok": "[ID] Oke",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "Pilih mode",
+  "playtimeLandingChooseMode": "[ID] Pilih mode",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Daftar",
+  "signUp": "[ID] Daftar",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "Jadwalkan pesan",
+  "scheduleMessage": "[ID] Jadwalkan pesan",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "[ID] Decline",
+  "decline": "[ID] [ID] Decline",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[ID] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "Masuk",
+  "login": "[ID] Masuk",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "Pilih teman",
+  "playtimeChooseFriends": "[ID] Pilih teman",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "Tidak ada undangan",
+  "noInvites": "[ID] Tidak ada undangan",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "Pilih waktu",
+  "playtimeChooseTime": "[ID] Pilih waktu",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Berhasil",
+  "success": "[ID] Berhasil",
   "@success": {
     "description": "Description"
   },
-  "undo": "Urungkan",
+  "undo": "[ID] Urungkan",
   "@undo": {
     "description": "Description"
   },
-  "opened": "Dibuka",
+  "opened": "[ID] Dibuka",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "[ID] Create Virtual Session",
+  "createVirtualSession": "[ID] [ID] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "Pesan berhasil terkirim",
+  "messageSentSuccessfully": "[ID] Pesan berhasil terkirim",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "Ulangi",
+  "redo": "[ID] Ulangi",
   "@redo": {
     "description": "Description"
   },
-  "next": "Berikutnya",
+  "next": "[ID] Berikutnya",
   "@next": {
     "description": "Description"
   },
-  "search": "Cari",
+  "search": "[ID] Cari",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "[ID] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[ID] [ID] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[ID] Created",
+  "created": "[ID] [ID] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "[ID] Revoke Access",
+  "revokeAccess": "[ID] [ID] Revoke Access",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "Simpan grup untuk pengenalan",
+  "saveGroupForRecognition": "[ID] Simpan grup untuk pengenalan",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "Sesi langsung dijadwalkan",
+  "playtimeLiveScheduled": "[ID] Sesi langsung dijadwalkan",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[ID] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[ID] [ID] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Unduh",
+  "download": "[ID] Unduh",
   "@download": {
     "description": "Description"
   },
-  "password": "[ID] Password",
+  "password": "[ID] [ID] Password",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[ID] Error loading family links",
+  "errorLoadingFamilyLinks": "[ID] [ID] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "[ID] Cancel",
+  "cancel": "[ID] [ID] Cancel",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "[ID] Create",
+  "playtimeCreate": "[ID] [ID] Create",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[ID] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[ID] [ID] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Judul aplikasi",
+  "appTitle": "[ID] Judul aplikasi",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Terima",
+  "accept": "[ID] Terima",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "Mode virtual",
+  "playtimeModeVirtual": "[ID] Mode virtual",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Deskripsi Playtime",
+  "playtimeDescription": "[ID] Deskripsi Playtime",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Hapus",
+  "delete": "[ID] Hapus",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "Sesi virtual dimulai",
+  "playtimeVirtualStarted": "[ID] Sesi virtual dimulai",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "[ID] Create your first game",
+  "createYourFirstGame": "[ID] [ID] Create your first game",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "Peserta",
+  "participants": "[ID] Peserta",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "Penerima",
+  "recipients": "[ID] Penerima",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "Tidak ada hasil",
+  "noResults": "[ID] Tidak ada hasil",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Ya",
+  "yes": "[ID] Ya",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "Undang",
+  "invite": "[ID] Undang",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "Mode langsung",
+  "playtimeModeLive": "[ID] Mode langsung",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "Selesai",
+  "done": "[ID] Selesai",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "Pesan berbagi default",
+  "defaultShareMessage": "[ID] Pesan berbagi default",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Tidak",
+  "no": "[ID] Tidak",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "[ID] Playtime Hub",
+  "playtimeHub": "[ID] [ID] Playtime Hub",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "[ID] Create Live Session",
+  "createLiveSession": "[ID] [ID] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "Aktifkan notifikasi",
+  "enableNotifications": "[ID] Aktifkan notifikasi",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "Diundang",
+  "invited": "[ID] Diundang",
   "@invited": {
     "description": "Description"
   },
-  "content": "[ID] Content",
+  "content": "[ID] [ID] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "[ID] Meeting shared successfully",
+  "meetingSharedSuccessfully": "[ID] [ID] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[ID] Welcome to Playtime",
+  "welcomeToPlaytime": "[ID] [ID] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "[ID] View All",
+  "viewAll": "[ID] [ID] View All",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Playtime virtual",
+  "playtimeVirtual": "[ID] Playtime virtual",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "Layar staf akan ditentukan",
+  "staffScreenTBD": "[ID] Layar staf akan ditentukan",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "[ID] Cut",
+  "cut": "[ID] [ID] Cut",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[ID] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[ID] [ID] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "Coba lagi",
+  "retry": "[ID] Coba lagi",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "[ID] Compose Broadcast Message",
+  "composeBroadcastMessage": "[ID] [ID] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Kirim sekarang",
+  "sendNow": "[ID] Kirim sekarang",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "Belum ada game",
+  "noGamesYet": "[ID] Belum ada game",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "Pilih",
+  "select": "[ID] Pilih",
   "@select": {
     "description": "Description"
   },
-  "about": "Tentang",
+  "about": "[ID] Tentang",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Pilih",
+  "choose": "[ID] Pilih",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[ID] Profile",
+  "profile": "[ID] [ID] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "Hapus anak",
+  "removeChild": "[ID] Hapus anak",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "[ID] Status",
+  "status": "[ID] [ID] Status",
   "@status": {
     "description": "status description"
   },
-  "logout": "Keluar",
+  "logout": "[ID] Keluar",
   "@logout": {
     "description": "Description"
   },
-  "paste": "Tempel",
+  "paste": "[ID] Tempel",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "[ID] Welcome",
+  "welcome": "[ID] [ID] Welcome",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "[ID] Create a Playtime Session",
+  "playtimeCreateSession": "[ID] [ID] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Anggota keluarga",
+  "familyMembers": "[ID] Anggota keluarga",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Unggah",
+  "upload": "[ID] Unggah",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[ID] Upcoming Sessions",
+  "upcomingSessions": "[ID] [ID] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "Masukkan nama grup",
+  "enterGroupName": "[ID] Masukkan nama grup",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "[ID] Confirm",
+  "confirm": "[ID] [ID] Confirm",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Playtime langsung",
+  "playtimeLive": "[ID] Playtime langsung",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[ID] Error loading invites",
+  "errorLoadingInvites": "[ID] [ID] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "Filter penargetan",
+  "targetingFilters": "[ID] Filter penargetan",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Pilih video",
+  "pickVideo": "[ID] Pilih video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Game dihapus",
+  "playtimeGameDeleted": "[ID] Game dihapus",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Jadwalkan nanti",
+  "scheduleForLater": "[ID] Jadwalkan nanti",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[ID] Access revoked successfully",
+  "accessRevokedSuccessfully": "[ID] [ID] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Jenis",
+  "type": "[ID] Jenis",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "[ID] Checking permissions...",
+  "checkingPermissions": "[ID] [ID] Checking permissions...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "[ID] Copy",
+  "copy": "[ID] [ID] Copy",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "[ID] Yes, Cancel",
+  "yesCancel": "[ID] [ID] Yes, Cancel",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "Email",
+  "email": "[ID] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[ID] Share on WhatsApp",
+  "shareOnWhatsApp": "[ID] [ID] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[ID] Notification Settings",
+  "notificationSettings": "[ID] [ID] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[ID] My Profile",
+  "myProfile": "[ID] [ID] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "[ID] Revoke",
+  "revoke": "[ID] [ID] Revoke",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "Tidak ada pesan siaran",
+  "noBroadcastMessages": "[ID] Tidak ada pesan siaran",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "[ID] Request Type",
+  "requestType": "[ID] [ID] Request Type",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "Notifikasi",
+  "notifications": "[ID] Notifikasi",
   "@notifications": {
     "description": "Description"
   },
-  "details": "Detail",
+  "details": "[ID] Detail",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[ID] Cancel Invite",
+  "cancelInvite": "[ID] [ID] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "[ID] Create New",
+  "createNew": "[ID] [ID] Create New",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[ID] Settings",
+  "settings": "[ID] [ID] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[ID] Reject",
+  "playtimeReject": "[ID] [ID] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[ID] Error loading profile",
+  "errorLoadingProfile": "[ID] [ID] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "Edit",
+  "edit": "[ID] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "Tambah",
+  "add": "[ID] Tambah",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "Game disetujui",
+  "playtimeGameApproved": "[ID] Game disetujui",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[ID] Forgot Password?",
+  "forgotPassword": "[ID] [ID] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[ID] Family Dashboard",
+  "familyDashboard": "[ID] [ID] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "[ID] Loading...",
+  "loading": "[ID] [ID] Loading...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[ID] Quick Actions",
+  "quickActions": "[ID] [ID] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Judul Playtime",
+  "playtimeTitle": "[ID] Judul Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "OTP berhasil dikirim ulang",
+  "otpResentSuccessfully": "[ID] OTP berhasil dikirim ulang",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[ID] Error checking permissions",
+  "errorCheckingPermissions": "[ID] [ID] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "Layar klien akan ditentukan",
+  "clientScreenTBD": "[ID] Layar klien akan ditentukan",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[ID] FCM Token",
+  "fcmToken": "[ID] [ID] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "Pilih gambar",
+  "pickImage": "[ID] Pilih gambar",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "Sebelumnya",
+  "previous": "[ID] Sebelumnya",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[ID] No profile found",
+  "noProfileFound": "[ID] [ID] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "Belum ada anggota keluarga",
+  "noFamilyMembersYet": "[ID] Belum ada anggota keluarga",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[ID] Media (Optional)",
+  "mediaOptional": "[ID] [ID] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "Pesan berhasil disimpan",
+  "messageSavedSuccessfully": "[ID] Pesan berhasil disimpan",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "Dijadwalkan untuk",
+  "scheduledFor": "[ID] Dijadwalkan untuk",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[ID] Dashboard",
+  "dashboard": "[ID] [ID] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "[ID] No permission for broadcast",
+  "noPermissionForBroadcast": "[ID] [ID] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[ID] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "Detail undangan",
+  "inviteDetail": "[ID] Detail undangan",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "Dijadwalkan",
+  "scheduled": "[ID] Dijadwalkan",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "Gagal mengirim ulang OTP",
+  "failedToResendOtp": "[ID] Gagal mengirim ulang OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "Menjadwalkan",
+  "scheduling": "[ID] Menjadwalkan",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "Kesalahan menyimpan pesan",
+  "errorSavingMessage": "[ID] Kesalahan menyimpan pesan",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Simpan",
+  "save": "[ID] Simpan",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Setujui Playtime",
+  "playtimeApprove": "[ID] Setujui Playtime",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[ID] Create your first session",
+  "createYourFirstSession": "[ID] [ID] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[ID] Game rejected",
+  "playtimeGameRejected": "[ID] [ID] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[ID] Failed to revoke access",
+  "failedToRevokeAccess": "[ID] [ID] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Game terbaru",
+  "recentGames": "[ID] Game terbaru",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "Sesuaikan pesan",
+  "customizeMessage": "[ID] Sesuaikan pesan",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[ID] Failed to cancel invite",
+  "failedToCancelInvite": "[ID] [ID] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "Kesalahan mengirim pesan",
+  "errorSendingMessage": "[ID] Kesalahan mengirim pesan",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[ID] Confirm Password",
+  "confirmPassword": "[ID] [ID] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[ID] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[ID] [ID] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "Anak terhubung",
+  "connectedChildren": "[ID] Anak terhubung",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "Bagikan",
+  "share": "[ID] Bagikan",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "Masukkan nama game",
+  "playtimeEnterGameName": "[ID] Masukkan nama game",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[ID] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[ID] [ID] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "Undangan saya",
+  "myInvites": "[ID] Undangan saya",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[ID] Create Game",
+  "createGame": "[ID] [ID] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[ID] Group Name (Optional)",
+  "groupNameOptional": "[ID] [ID] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "Tidak ada sesi Playtime",
+  "playtimeNoSessions": "[ID] Tidak ada sesi Playtime",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[ID] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[ID] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[ID] [ID] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "Tutup",
+  "close": "[ID] Tutup",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "Grup terdeteksi",
+  "knownGroupDetected": "[ID] Grup terdeteksi",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "Kembali",
+  "back": "[ID] Kembali",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "Pilih game",
+  "playtimeChooseGame": "[ID] Pilih game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[ID] Manage Permissions",
+  "managePermissions": "[ID] [ID] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[ID] Poll Options",
+  "pollOptions": "[ID] [ID] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "Diklik",
+  "clicked": "[ID] Diklik",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "Tautan",
+  "link": "[ID] Tautan",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "Pertemuan siap",
+  "meetingReadyMessage": "[ID] Pertemuan siap",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "Undangan tertunda",
+  "pendingInvites": "[ID] Undangan tertunda",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[ID] Status:",
+  "statusColon": "[ID] [ID] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[ID] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[ID] [ID] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[ID] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[ID] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[ID] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[ID] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[ID] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[ID] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[ID] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[ID] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[ID] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[ID] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[ID] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[ID] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[ID] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[ID] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[ID] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "authErrorAccountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method.",
+  "authErrorAccountExistsWithDifferentCredential": "[ID] An account already exists with this email using a different sign-in method.",
   "@authErrorAccountExistsWithDifferentCredential": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[ID] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[ID] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Indonesian)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Indonesian)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Indonesian)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Indonesian)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[ID] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[ID] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "authErrorInvalidVerificationCode": "The verification code is invalid.",
+  "authErrorInvalidVerificationCode": "[ID] The verification code is invalid.",
   "@authErrorInvalidVerificationCode": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[ID] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "authErrorMissingVerificationCode": "Please enter the verification code.",
+  "authErrorMissingVerificationCode": "[ID] Please enter the verification code.",
   "@authErrorMissingVerificationCode": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[ID] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[ID] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[ID] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[ID] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[ID] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[ID] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "authErrorMultiFactorAuthRequired": "Multi-factor authentication is required.",
+  "authErrorMultiFactorAuthRequired": "[ID] Multi-factor authentication is required.",
   "@authErrorMultiFactorAuthRequired": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "authErrorMultiFactorInfoNotFound": "Multi-factor information not found.",
+  "authErrorMultiFactorInfoNotFound": "[ID] Multi-factor information not found.",
   "@authErrorMultiFactorInfoNotFound": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "authErrorMissingMultiFactorSession": "Missing multi-factor session.",
+  "authErrorMissingMultiFactorSession": "[ID] Missing multi-factor session.",
   "@authErrorMissingMultiFactorSession": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "authErrorInvalidMultiFactorSession": "Invalid multi-factor session.",
+  "authErrorInvalidMultiFactorSession": "[ID] Invalid multi-factor session.",
   "@authErrorInvalidMultiFactorSession": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "authErrorSecondFactorAlreadyInUse": "This second factor is already in use.",
+  "authErrorSecondFactorAlreadyInUse": "[ID] This second factor is already in use.",
   "@authErrorSecondFactorAlreadyInUse": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "authErrorMaximumSecondFactorCountExceeded": "Maximum number of second factors exceeded.",
+  "authErrorMaximumSecondFactorCountExceeded": "[ID] Maximum number of second factors exceeded.",
   "@authErrorMaximumSecondFactorCountExceeded": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[ID] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "authErrorEmailChangeNeedsVerification": "Email change requires verification.",
+  "authErrorEmailChangeNeedsVerification": "[ID] Email change requires verification.",
   "@authErrorEmailChangeNeedsVerification": {
     "description": "Localization key for: Email change requires verification."
   },
-  "authErrorPhoneNumberAlreadyExists": "This phone number is already in use.",
+  "authErrorPhoneNumberAlreadyExists": "[ID] This phone number is already in use.",
   "@authErrorPhoneNumberAlreadyExists": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[ID] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[ID] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[ID] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[ID] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[ID] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[ID] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[ID] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[ID] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[ID] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[ID] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[ID] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "authErrorInvalidDynamicLinkDomain": "The dynamic link domain is invalid.",
+  "authErrorInvalidDynamicLinkDomain": "[ID] The dynamic link domain is invalid.",
   "@authErrorInvalidDynamicLinkDomain": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[ID] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[ID] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[ID] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "authErrorInvalidHashDerivedKeyLength": "The hash derived key length is invalid.",
+  "authErrorInvalidHashDerivedKeyLength": "[ID] The hash derived key length is invalid.",
   "@authErrorInvalidHashDerivedKeyLength": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[ID] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[ID] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "authErrorInvalidHashParallelization": "The hash parallelization is invalid.",
+  "authErrorInvalidHashParallelization": "[ID] The hash parallelization is invalid.",
   "@authErrorInvalidHashParallelization": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[ID] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "authErrorInvalidHashSaltSeparator": "The hash salt separator is invalid.",
+  "authErrorInvalidHashSaltSeparator": "[ID] The hash salt separator is invalid.",
   "@authErrorInvalidHashSaltSeparator": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[ID] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[ID] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[ID] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[ID] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "authErrorInvalidSessionCookieDuration": "The session cookie duration is invalid.",
+  "authErrorInvalidSessionCookieDuration": "[ID] The session cookie duration is invalid.",
   "@authErrorInvalidSessionCookieDuration": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[ID] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[ID] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "authErrorMaximumUserCountExceeded": "Maximum user import count exceeded.",
+  "authErrorMaximumUserCountExceeded": "[ID] Maximum user import count exceeded.",
   "@authErrorMaximumUserCountExceeded": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[ID] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[ID] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[ID] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[ID] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[ID] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "authErrorMissingOauthClientSecret": "Missing OAuth client secret.",
+  "authErrorMissingOauthClientSecret": "[ID] Missing OAuth client secret.",
   "@authErrorMissingOauthClientSecret": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[ID] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[ID] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[ID] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[ID] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[ID] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "authErrorUnauthorizedContinueUri": "The continue URL domain is not whitelisted.",
+  "authErrorUnauthorizedContinueUri": "[ID] The continue URL domain is not whitelisted.",
   "@authErrorUnauthorizedContinueUri": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[ID] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Indonesian)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Indonesian)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Indonesian)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Indonesian)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Indonesian)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Indonesian)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Indonesian)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Indonesian)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[ID] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Indonesian)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Indonesian)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Indonesian)",
+  "upload1": "[ID] Upload (Indonesian)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Indonesian)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Indonesian)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "virtualSessionCreatedInvitingFriends": "Virtual session created! Inviting friends... (Indonesian)",
+  "virtualSessionCreatedInvitingFriends": "[ID] Virtual session created! Inviting friends... (Indonesian)",
   "@virtualSessionCreatedInvitingFriends": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Indonesian)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Indonesian)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Indonesian)",
+  "rewards": "[ID] Rewards (Indonesian)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Indonesian)",
+  "time": "[ID] Time (Indonesian)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[ID] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Indonesian)",
+  "noSlots": "[ID] No slots (Indonesian)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Indonesian)",
+  "signIn": "[ID] Sign In (Indonesian)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Indonesian)",
+  "homeFeedScreen": "[ID] Home Feed Screen (Indonesian)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Indonesian)",
+  "selectLocation": "[ID] Select Location (Indonesian)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Indonesian)",
+  "noTicketsYet": "[ID] No tickets yet (Indonesian)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Indonesian)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Indonesian)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Indonesian)",
+  "subscriptionUnavailable": "[ID] Subscription unavailable (Indonesian)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Indonesian)",
+  "confirmBooking": "[ID] Confirm Booking (Indonesian)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Indonesian)",
+  "failedToUpdatePermissionE": "[ID] Failed to update permission: $e (Indonesian)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Indonesian)",
+  "reject": "[ID] Reject (Indonesian)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "ambassadorStatusAmbassadorstatus": "Ambassador Status: {ambassadorStatus} (Indonesian)",
+  "ambassadorStatusAmbassadorstatus": "[ID] Ambassador Status: {ambassadorStatus} (Indonesian)",
   "@ambassadorStatusAmbassadorstatus": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[ID] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Indonesian)",
+  "checkingSubscription": "[ID] Checking subscription... (Indonesian)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Indonesian)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Indonesian)",
+  "noContentAvailableYet": "[ID] No content available yet (Indonesian)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Indonesian)",
+  "resolve": "[ID] Resolve (Indonesian)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Indonesian)",
+  "errorLoadingSurveysError": "[ID] Error loading surveys: $error (Indonesian)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[ID] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Indonesian)",
+  "getHelpWithYourAccount": "[ID] Get help with your account (Indonesian)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Indonesian)",
+  "pay": "[ID] Pay (Indonesian)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[ID] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Indonesian)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Indonesian)",
+  "changesSavedSuccessfully": "[ID] Changes saved successfully! (Indonesian)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Indonesian)",
+  "createNewInvoice": "[ID] Create New Invoice (Indonesian)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Indonesian)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Indonesian)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Indonesian)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Indonesian)",
+  "profileSaved": "[ID] Profile saved! (Indonesian)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "receiveBookingNotificationsViaEmail": "Receive booking notifications via email (Indonesian)",
+  "receiveBookingNotificationsViaEmail": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@receiveBookingNotificationsViaEmail": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Indonesian)",
+  "valuetointk": "[ID] \\${value}K (Indonesian)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Indonesian)",
+  "deleteAccount": "[ID] Delete Account (Indonesian)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Indonesian)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Indonesian)",
+  "businessOnboarding": "[ID] Business Onboarding (Indonesian)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Indonesian)",
+  "addNewClient": "[ID] Add New Client (Indonesian)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Indonesian)",
+  "darkMode": "[ID] Dark Mode (Indonesian)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[ID] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[ID] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "youWillReceiveAConfirmationEmailShortly": "You will receive a confirmation email shortly. (Indonesian)",
+  "youWillReceiveAConfirmationEmailShortly": "[ID] You will receive a confirmation email shortly. (Indonesian)",
   "@youWillReceiveAConfirmationEmailShortly": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Indonesian)",
+  "addQuestion": "[ID] Add Question (Indonesian)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Indonesian)",
+  "privacyPolicy": "[ID] Privacy Policy (Indonesian)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Indonesian)",
+  "branchesLengthBranches": "[ID] {branchCount} branches (Indonesian)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Indonesian)",
+  "join": "[ID] Join (Indonesian)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Indonesian)",
+  "businessSubscription": "[ID] Business Subscription (Indonesian)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Indonesian)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[ID] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Indonesian)",
+  "surveyManagement": "[ID] Survey Management (Indonesian)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[ID] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Indonesian)",
+  "noRoomsFoundAddYourFirstRoom": "[ID] No rooms found. Add your first room! (Indonesian)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Indonesian)",
+  "readOurPrivacyPolicy": "[ID] Read our privacy policy (Indonesian)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Indonesian)",
+  "couldNotOpenPrivacyPolicy": "[ID] Could not open privacy policy (Indonesian)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Indonesian)",
+  "refresh1": "[ID] Refresh (Indonesian)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Indonesian)",
+  "roomUpdatedSuccessfully": "[ID] Room updated successfully! (Indonesian)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Indonesian)",
+  "contentDetail": "[ID] Content Detail (Indonesian)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Indonesian)",
+  "cancelSubscription": "[ID] Cancel Subscription (Indonesian)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "successfullyRegisteredAsAmbassador": "Successfully registered as Ambassador! (Indonesian)",
+  "successfullyRegisteredAsAmbassador": "[ID] Successfully registered as Ambassador! (Indonesian)",
   "@successfullyRegisteredAsAmbassador": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Indonesian)",
+  "save1": "[ID] Save (Indonesian)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Indonesian)",
+  "copy1": "[ID] Copy (Indonesian)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Indonesian)",
+  "failedToSendInvitationE": "[ID] Failed to send invitation: $e (Indonesian)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Indonesian)",
+  "surveyScore": "[ID] Survey Score (Indonesian)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[ID] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Indonesian)",
+  "noAppointmentsFound": "[ID] No appointments found. (Indonesian)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Indonesian)",
+  "responseDetail": "[ID] Response Detail (Indonesian)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "businessVerificationScreenComingSoon": "Business Verification Screen - Coming Soon (Indonesian)",
+  "businessVerificationScreenComingSoon": "شاشة التحقق من الأعمال - قريباً",
   "@businessVerificationScreenComingSoon": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "businessProfileActivatedSuccessfully": "Business profile activated successfully! (Indonesian)",
+  "businessProfileActivatedSuccessfully": "تم تفعيل الملف التجاري بنجاح",
   "@businessProfileActivatedSuccessfully": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Indonesian)",
+  "failedToStartProSubscriptionE": "[ID] Failed to start Pro subscription: $e (Indonesian)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "businessDashboardEntryScreenComingSoon": "Business Dashboard Entry Screen - Coming Soon (Indonesian)",
+  "businessDashboardEntryScreenComingSoon": "[ID] Business Dashboard Entry Screen - Coming Soon (Indonesian)",
   "@businessDashboardEntryScreenComingSoon": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Indonesian)",
+  "contentFilter": "[ID] Content Filter (Indonesian)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Indonesian)",
+  "helpSupport": "[ID] Help & Support (Indonesian)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Indonesian)",
+  "editRoom": "[ID] Edit Room (Indonesian)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[ID] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[ID] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "businessCrmEntryScreenComingSoon": "Business CRM Entry Screen - Coming Soon (Indonesian)",
+  "businessCrmEntryScreenComingSoon": "[ID] Business CRM Entry Screen - Coming Soon (Indonesian)",
   "@businessCrmEntryScreenComingSoon": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[ID] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[ID] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Indonesian)",
+  "errorLoadingDashboardError": "[ID] Error loading dashboard: $error (Indonesian)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Indonesian)",
+  "gameDeletedSuccessfully": "[ID] Game deleted successfully! (Indonesian)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Indonesian)",
+  "viewResponsesComingSoon": "[ID] View responses - Coming soon! (Indonesian)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[ID] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Indonesian)",
+  "errorLoadingRewards": "[ID] Error loading rewards (Indonesian)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Indonesian)",
+  "failedToDeleteAccountE": "[ID] Failed to delete account: $e (Indonesian)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Indonesian)",
+  "invited1": "[ID] Invited (Indonesian)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Indonesian)",
+  "noBranchesAvailable": "[ID] No branches available (Indonesian)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Indonesian)",
+  "errorError": "[ID] Error: $error (Indonesian)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Indonesian)",
+  "noEvents": "[ID] No events (Indonesian)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Indonesian)",
+  "gameCreatedSuccessfully": "[ID] Game created successfully! (Indonesian)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Indonesian)",
+  "add1": "[ID] Add (Indonesian)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[ID] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Indonesian)",
+  "eventstarttimeEventendtime": "[ID] {startTime} - {endTime} (Indonesian)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Indonesian)",
+  "allowPlaytime": "[ID] Allow Playtime (Indonesian)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Indonesian)",
+  "clients": "[ID] Clients (Indonesian)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Indonesian)",
+  "noAmbassadorDataAvailable": "[ID] No ambassador data available (Indonesian)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Indonesian)",
+  "backgroundDeletedSuccessfully": "[ID] Background deleted successfully! (Indonesian)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Indonesian)",
+  "errorSnapshoterror": "[ID] Error: {error} (Indonesian)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Indonesian)",
+  "noAnalyticsDataAvailableYet": "[ID] No analytics data available yet. (Indonesian)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Indonesian)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "businessPhoneBookingEntryScreenComingSoon": "Business Phone Booking Entry Screen - Coming Soon (Indonesian)",
+  "businessPhoneBookingEntryScreenComingSoon": "[ID] Business Phone Booking Entry Screen - Coming Soon (Indonesian)",
   "@businessPhoneBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Indonesian)",
+  "verification": "[ID] Verification (Indonesian)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Indonesian)",
+  "copyLink": "[ID] Copy Link (Indonesian)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Indonesian)",
+  "dashboard1": "[ID] Dashboard (Indonesian)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Indonesian)",
+  "manageChildAccounts": "[ID] Manage Child Accounts (Indonesian)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Indonesian)",
+  "grantConsent": "[ID] Grant Consent (Indonesian)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Indonesian)",
+  "myProfile1": "[ID] My Profile (Indonesian)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Indonesian)",
+  "submit": "[ID] Submit (Indonesian)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[ID] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Indonesian)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Indonesian)",
+  "ambassadorDashboard": "[ID] Ambassador Dashboard (Indonesian)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Indonesian)",
+  "phoneBooking": "[ID] Phone Booking (Indonesian)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Indonesian)",
+  "bookViaChat": "[ID] Book via Chat (Indonesian)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Kesalahan",
+  "error": "[ID] Kesalahan",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Indonesian)",
+  "businessProfile": "[ID] Business Profile (Indonesian)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "businessBookingEntryScreenComingSoon": "Business Booking Entry Screen - Coming Soon (Indonesian)",
+  "businessBookingEntryScreenComingSoon": "[ID] Business Booking Entry Screen - Coming Soon (Indonesian)",
   "@businessBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Indonesian)",
+  "createNewSurvey": "[ID] Create New Survey (Indonesian)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Indonesian)",
+  "backgroundRejected": "[ID] Background rejected (Indonesian)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Indonesian)",
+  "noMediaSelected": "[ID] No media selected (Indonesian)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Indonesian)",
+  "syncToGoogle": "[ID] Sync to Google (Indonesian)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Indonesian)",
+  "virtualPlaytime": "[ID] Virtual Playtime (Indonesian)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[ID] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[ID] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Indonesian)",
+  "invitationSentSuccessfully": "[ID] Invitation sent successfully! (Indonesian)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Indonesian)",
+  "registering": "[ID] Registering... (Indonesian)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Indonesian)",
+  "statusAppointmentstatusname": "[ID] Status: {status} (Indonesian)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Indonesian)",
+  "home1": "[ID] Home (Indonesian)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Indonesian)",
+  "errorSavingSettingsE": "[ID] Error saving settings: $e (Indonesian)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Indonesian)",
+  "appVersionAndInformation": "[ID] App version and information (Indonesian)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "businessSubscriptionEntryScreenComingSoon": "Business Subscription Entry Screen - Coming Soon (Indonesian)",
+  "businessSubscriptionEntryScreenComingSoon": "[ID] Business Subscription Entry Screen - Coming Soon (Indonesian)",
   "@businessSubscriptionEntryScreenComingSoon": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Indonesian)",
+  "ekeyEvalue": "[ID] {key}: {value} (Indonesian)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "yourPaymentHasBeenProcessedSuccessfully": "Your payment has been processed successfully. (Indonesian)",
+  "yourPaymentHasBeenProcessedSuccessfully": "[ID] Your payment has been processed successfully. (Indonesian)",
   "@yourPaymentHasBeenProcessedSuccessfully": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Indonesian)",
+  "errorE": "[ID] Error: $e (Indonesian)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Indonesian)",
+  "viewAll1": "[ID] View All (Indonesian)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Indonesian)",
+  "editSurveyComingSoon": "[ID] Edit survey - Coming soon! (Indonesian)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Indonesian)",
+  "enterOtp": "[ID] Enter OTP (Indonesian)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Indonesian)",
+  "payment": "[ID] Payment (Indonesian)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "automaticallyConfirmNewBookingRequests": "Automatically confirm new booking requests (Indonesian)",
+  "automaticallyConfirmNewBookingRequests": "[ID] Automatically confirm new booking requests (Indonesian)",
   "@automaticallyConfirmNewBookingRequests": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Indonesian)",
+  "noRouteDefinedForSettingsname": "[ID] No route defined for {settingsName} (Indonesian)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Indonesian)",
+  "pleaseSignInToUploadABackground": "[ID] Please sign in to upload a background (Indonesian)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[ID] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Indonesian)",
+  "staffAvailability": "[ID] Staff Availability (Indonesian)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Indonesian)",
+  "livePlaytime": "[ID] Live Playtime (Indonesian)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Indonesian)",
+  "autoconfirmBookings": "[ID] Auto-Confirm Bookings (Indonesian)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "redirectingToStripeCheckoutForProPlan": "Redirecting to Stripe checkout for Pro plan... (Indonesian)",
+  "redirectingToStripeCheckoutForProPlan": "[ID] Redirecting to Stripe checkout for Pro plan... (Indonesian)",
   "@redirectingToStripeCheckoutForProPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Indonesian)",
+  "exportAsCsv": "[ID] Export as CSV (Indonesian)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Indonesian)",
+  "deleteFunctionalityComingSoon": "[ID] Delete functionality coming soon! (Indonesian)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Indonesian)",
+  "editClient": "[ID] Edit Client (Indonesian)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "areYouSureYouWantToDeleteThisMessage": "Are you sure you want to delete this message? (Indonesian)",
+  "areYouSureYouWantToDeleteThisMessage": "[ID] Are you sure you want to delete this message? (Indonesian)",
   "@areYouSureYouWantToDeleteThisMessage": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Indonesian)",
+  "referralsAmbassadorreferrals": "[ID] Referrals: {referrals} (Indonesian)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[ID] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Indonesian)",
+  "privacyRequestSentToYourParents": "[ID] Privacy request sent to your parents! (Indonesian)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Indonesian)",
+  "clientDeletedSuccessfully": "[ID] Client deleted successfully! (Indonesian)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Indonesian)",
+  "failedToCancelSubscription": "[ID] Failed to cancel subscription (Indonesian)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Indonesian)",
+  "allLanguages": "[ID] All Languages (Indonesian)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Indonesian)",
+  "slotDeletedSuccessfully": "[ID] Slot deleted successfully (Indonesian)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "businessProvidersEntryScreenComingSoon": "Business Providers Entry Screen - Coming Soon",
+  "businessProvidersEntryScreenComingSoon": "[ID] Business Providers Entry Screen - Coming Soon",
   "@businessProvidersEntryScreenComingSoon": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "parentsMustApproveBeforeChildrenCanJoin": "Parents must approve before children can join (Indonesian)",
+  "parentsMustApproveBeforeChildrenCanJoin": "[ID] Parents must approve before children can join (Indonesian)",
   "@parentsMustApproveBeforeChildrenCanJoin": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Indonesian)",
+  "subscribeToPro1499mo": "[ID] Subscribe to Pro (€14.99/mo) (Indonesian)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "businessAvailabilityEntryScreenComingSoon": "Business Availability Entry Screen - Coming Soon (Indonesian)",
+  "businessAvailabilityEntryScreenComingSoon": "[ID] Business Availability Entry Screen - Coming Soon (Indonesian)",
   "@businessAvailabilityEntryScreenComingSoon": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Indonesian)",
+  "appointmentsListlength": "[ID] Appointments: {count} (Indonesian)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Indonesian)",
+  "clearFilters": "[ID] Clear Filters (Indonesian)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Indonesian)",
+  "submitBooking": "[ID] Submit Booking (Indonesian)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "areYouSureYouWantToCancelThisAppointment": "Are you sure you want to cancel this appointment? (Indonesian)",
+  "areYouSureYouWantToCancelThisAppointment": "[ID] Are you sure you want to cancel this appointment? (Indonesian)",
   "@areYouSureYouWantToCancelThisAppointment": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Indonesian)",
+  "noUpcomingBookings": "[ID] No upcoming bookings (Indonesian)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Indonesian)",
+  "goBack": "[ID] Go Back (Indonesian)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Indonesian)",
+  "setup": "[ID] Setup (Indonesian)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Indonesian)",
+  "inviteChild": "[ID] Invite Child (Indonesian)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Indonesian)",
+  "goToDashboard": "[ID] Go to Dashboard (Indonesian)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Indonesian)",
+  "ambassadorQuotaDashboard": "[ID] Ambassador Quota Dashboard (Indonesian)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[ID] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Indonesian)",
+  "referralCode": "[ID] Referral Code (Indonesian)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[ID] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Indonesian)",
+  "date": "[ID] Date (Indonesian)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Indonesian)",
+  "readOnly": "[ID] Read Only (Indonesian)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Indonesian)",
+  "bookingRequest": "[ID] Booking Request (Indonesian)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Indonesian)",
+  "advancedReporting": "[ID] • Advanced reporting (Indonesian)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Indonesian)",
+  "rooms": "[ID] Rooms (Indonesian)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Indonesian)",
+  "copiedToClipboard": "[ID] Copied to clipboard (Indonesian)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Indonesian)",
+  "bookingConfirmed": "[ID] Booking Confirmed (Indonesian)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Indonesian)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Indonesian)",
+  "clientAddedSuccessfully": "[ID] Client added successfully! (Indonesian)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Indonesian)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Indonesian)",
+  "backgroundApproved": "[ID] Background approved! (Indonesian)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Indonesian)",
+  "familySupport": "[ID] Family Support (Indonesian)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Indonesian)",
+  "deletingAccount": "[ID] Deleting account... (Indonesian)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Indonesian)",
+  "bookAppointment": "[ID] Book Appointment (Indonesian)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "receivePushNotificationsForNewBookings": "Receive push notifications for new bookings (Indonesian)",
+  "receivePushNotificationsForNewBookings": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@receivePushNotificationsForNewBookings": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Indonesian)",
+  "delete1": "[ID] Delete (Indonesian)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Indonesian)",
+  "sendBookingInvite": "[ID] Send Booking Invite (Indonesian)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Indonesian)",
+  "text": "[ID] Text (Indonesian)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Indonesian)",
+  "manageSubscription": "[ID] Manage Subscription (Indonesian)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Indonesian)",
+  "requiresInstallFallback": "[ID] Requires Install Fallback (Indonesian)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Indonesian)",
+  "paymentConfirmation": "[ID] Payment Confirmation (Indonesian)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Indonesian)",
+  "promoAppliedYourNextBillIsFree": "[ID] Promo applied! Your next bill is free. (Indonesian)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Indonesian)",
+  "errorLoadingSlots": "[ID] Error loading slots (Indonesian)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "allowOtherUsersToFindAndJoinThisGame": "Allow other users to find and join this game (Indonesian)",
+  "allowOtherUsersToFindAndJoinThisGame": "[ID] Allow other users to find and join this game (Indonesian)",
   "@allowOtherUsersToFindAndJoinThisGame": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "businessOnboardingScreenComingSoon": "Business Onboarding Screen - Coming Soon (Indonesian)",
+  "businessOnboardingScreenComingSoon": "[ID] Business Onboarding Screen - Coming Soon (Indonesian)",
   "@businessOnboardingScreenComingSoon": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Indonesian)",
+  "activateBusinessProfile": "[ID] Activate Business Profile (Indonesian)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Indonesian)",
+  "contentNotFound": "[ID] Content not found (Indonesian)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Indonesian)",
+  "pspecialtynpcontactinfo": "[ID] {specialty}\\n{contactInfo} (Indonesian)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Indonesian)",
+  "rating": "[ID] Rating (Indonesian)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Indonesian)",
+  "messages": "[ID] Messages (Indonesian)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Indonesian)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Indonesian)",
+  "becomeAnAmbassador": "[ID] Become an Ambassador (Indonesian)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Indonesian)",
+  "subscribeNow": "[ID] Subscribe Now (Indonesian)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Indonesian)",
+  "timeArgsslotformatcontext": "[ID] Time: {time} (Indonesian)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Indonesian)",
+  "shareViaWhatsapp": "[ID] Share via WhatsApp (Indonesian)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Indonesian)",
+  "users1": "[ID] Users (Indonesian)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Indonesian)",
+  "shareLink": "[ID] Share Link (Indonesian)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
+  "areYouSureYouWantToDeleteThisProvider": "[ID] Are you sure you want to delete this provider?",
   "@areYouSureYouWantToDeleteThisProvider": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Indonesian)",
+  "deleteAppointment": "[ID] Delete Appointment (Indonesian)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Indonesian)",
+  "toggleAvailability": "[ID] Toggle Availability (Indonesian)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Indonesian)",
+  "changePlan": "[ID] Change Plan (Indonesian)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Indonesian)",
+  "errorLoadingStaff": "[ID] Error loading staff (Indonesian)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Indonesian)",
+  "updateYourBusinessInformation": "[ID] Update your business information (Indonesian)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "noProvidersFoundAddYourFirstProvider": "No providers found. Add your first provider!",
+  "noProvidersFoundAddYourFirstProvider": "[ID] No providers found. Add your first provider!",
   "@noProvidersFoundAddYourFirstProvider": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Indonesian)",
+  "parentDashboard": "[ID] Parent Dashboard (Indonesian)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Indonesian)",
+  "menu": "[ID] Menu (Indonesian)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Indonesian)",
+  "studioBooking": "[ID] Studio Booking (Indonesian)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Indonesian)",
+  "about1": "[ID] About (Indonesian)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Indonesian)",
+  "multipleChoice": "[ID] Multiple Choice (Indonesian)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "dateAppointmentscheduledattostring": "Date: {date} (Indonesian)",
+  "dateAppointmentscheduledattostring": "[ID] Date: {date} (Indonesian)",
   "@dateAppointmentscheduledattostring": {
     "description": "Localization key for: Date: {date}"
   },
-  "studioBookingIsOnlyAvailableOnWeb": "Studio booking is only available on web (Indonesian)",
+  "studioBookingIsOnlyAvailableOnWeb": "[ID] Studio booking is only available on web (Indonesian)",
   "@studioBookingIsOnlyAvailableOnWeb": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Indonesian)",
+  "errorLoadingBranchesE": "[ID] Error loading branches: $e (Indonesian)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "ud83dudcc5Bookingdatetimetolocal": "\\uD83D\\uDCC5 {dateTime} (Indonesian)",
+  "ud83dudcc5Bookingdatetimetolocal": "[ID] \\uD83D\\uDCC5 {dateTime} (Indonesian)",
   "@ud83dudcc5Bookingdatetimetolocal": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Indonesian)",
+  "none": "[ID] None (Indonesian)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Indonesian)",
+  "failedToUpdateConsentE": "[ID] Failed to update consent: $e (Indonesian)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Indonesian)",
+  "welcome1": "[ID] Welcome (Indonesian)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Indonesian)",
+  "failedToCreateSessionE": "[ID] Failed to create session: $e (Indonesian)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Indonesian)",
+  "inviteContact": "[ID] Invite Contact (Indonesian)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Indonesian)",
+  "surveyEditor": "[ID] Survey Editor (Indonesian)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Indonesian)",
+  "failedToStartBasicSubscriptionE": "[ID] Failed to start Basic subscription: $e (Indonesian)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Indonesian)",
+  "mySchedule": "[ID] My Schedule (Indonesian)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Indonesian)",
+  "studioDashboard": "[ID] Studio Dashboard (Indonesian)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Indonesian)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[ID] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[ID] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Indonesian)",
+  "settingsSavedSuccessfully": "[ID] Settings saved successfully! (Indonesian)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Indonesian)",
+  "linkCopiedToClipboard": "[ID] Link copied to clipboard! (Indonesian)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Indonesian)",
+  "accept1": "[ID] Accept (Indonesian)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Indonesian)",
+  "noAvailableSlots": "[ID] No available slots (Indonesian)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Indonesian)",
+  "makeGamePublic": "[ID] Make Game Public (Indonesian)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "permissionPermissioncategoryUpdatedToNewvalue": "Permission {category} updated to $newValue (Indonesian)",
+  "permissionPermissioncategoryUpdatedToNewvalue": "[ID] Permission {category} updated to $newValue (Indonesian)",
   "@permissionPermissioncategoryUpdatedToNewvalue": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Indonesian)",
+  "roomDeletedSuccessfully": "[ID] Room deleted successfully! (Indonesian)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Indonesian)",
+  "businessCalendar": "[ID] Business Calendar (Indonesian)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Indonesian)",
+  "addAvailability": "[ID] Add Availability (Indonesian)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Indonesian)",
+  "ambassadorOnboarding": "[ID] Ambassador Onboarding (Indonesian)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Indonesian)",
+  "phoneProfileasyncphone": "[ID] Phone: {phone} (Indonesian)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Indonesian)",
+  "addNewRoom": "[ID] Add New Room (Indonesian)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Indonesian)",
+  "requireParentApproval": "[ID] Require Parent Approval (Indonesian)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Indonesian)",
+  "closed": "[ID] Closed (Indonesian)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Indonesian)",
+  "exportAsPdf": "[ID] Export as PDF (Indonesian)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Indonesian)",
+  "enableVibration": "[ID] Enable Vibration (Indonesian)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Indonesian)",
+  "toAvailendformatcontext": "[ID] To: {endTime} (Indonesian)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Indonesian)",
+  "yourUpgradeCodeUpgradecode": "[ID] Your upgrade code: $upgradeCode (Indonesian)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[ID] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Indonesian)",
+  "country": "[ID] Country (Indonesian)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[ID] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Indonesian)",
+  "staffArgsstaffdisplayname": "[ID] Staff: {staffName} (Indonesian)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Indonesian)",
+  "revokeConsent": "[ID] Revoke Consent (Indonesian)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Indonesian)",
+  "settings1": "[ID] Settings (Indonesian)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Indonesian)",
+  "cancel1": "[ID] Cancel (Indonesian)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "subscriptionActivatedSuccessfully": "Subscription activated successfully! (Indonesian)",
+  "subscriptionActivatedSuccessfully": "[ID] Subscription activated successfully! (Indonesian)",
   "@subscriptionActivatedSuccessfully": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[ID] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Indonesian)",
+  "broadcast": "[ID] Broadcast (Indonesian)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Indonesian)",
+  "noEventsScheduledThisWeek": "[ID] No events scheduled this week (Indonesian)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Indonesian)",
+  "googleCalendar": "[ID] Google Calendar (Indonesian)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Indonesian)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Indonesian)",
+  "childDashboard": "[ID] Child Dashboard (Indonesian)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Indonesian)",
+  "failedToUploadBackgroundE": "[ID] Failed to upload background: $e (Indonesian)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[ID] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[ID] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[ID] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Indonesian)",
+  "noAppointments": "[ID] No appointments (Indonesian)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Indonesian)",
+  "unlimitedBookingsPerWeek": "[ID] • Unlimited bookings per week (Indonesian)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Indonesian)",
+  "scheduledAtScheduledat": "[ID] Scheduled at: $scheduledAt (Indonesian)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Indonesian)",
+  "selectStaff": "[ID] Select Staff (Indonesian)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "subscriptionCancelledSuccessfully": "Subscription cancelled successfully (Indonesian)",
+  "subscriptionCancelledSuccessfully": "[ID] Subscription cancelled successfully (Indonesian)",
   "@subscriptionCancelledSuccessfully": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Indonesian)",
+  "cancelAppointment": "[ID] Cancel Appointment (Indonesian)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[ID] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Indonesian)",
+  "businessSignup": "[ID] Business Signup (Indonesian)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "businessCompletionScreenComingSoon": "Business Completion Screen - Coming Soon (Indonesian)",
+  "businessCompletionScreenComingSoon": "[ID] Business Completion Screen - Coming Soon (Indonesian)",
   "@businessCompletionScreenComingSoon": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Indonesian)",
+  "createGame1": "[ID] Create Game (Indonesian)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Indonesian)",
+  "valuetoint": "[ID] {value} (Indonesian)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Indonesian)",
+  "pleaseEnterAPromoCode": "[ID] Please enter a promo code (Indonesian)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Indonesian)",
+  "errorLoadingAvailabilityE": "[ID] Error loading availability: $e (Indonesian)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Indonesian)",
+  "parentalControls": "[ID] Parental Controls (Indonesian)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Indonesian)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Indonesian)",
+  "childLinkedSuccessfully": "[ID] Child linked successfully! (Indonesian)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Indonesian)",
+  "create": "[ID] Create (Indonesian)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Indonesian)",
+  "noExternalMeetingsFound": "[ID] No external meetings found. (Indonesian)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Indonesian)",
+  "staffSelectionstaffdisplayname": "[ID] Staff: {staffName} (Indonesian)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[ID] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Indonesian)",
+  "schedulerScreen": "[ID] Scheduler Screen (Indonesian)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Indonesian)",
+  "clientUpdatedSuccessfully": "[ID] Client updated successfully! (Indonesian)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Indonesian)",
+  "surveyResponses": "[ID] Survey Responses (Indonesian)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Indonesian)",
+  "syncToOutlook": "[ID] Sync to Outlook (Indonesian)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Indonesian)",
+  "saveChanges": "[ID] Save Changes (Indonesian)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Indonesian)",
+  "pickTime": "[ID] Pick Time (Indonesian)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Indonesian)",
+  "registrationFailedEtostring": "[ID] Registration failed: {error} (Indonesian)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Indonesian)",
+  "analytics": "[ID] Analytics (Indonesian)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Indonesian)",
+  "errorLoadingEvents": "[ID] Error loading events (Indonesian)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[ID] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[ID] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Indonesian)",
+  "success1": "[ID] Success (Indonesian)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[ID] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Indonesian)",
+  "fromAvailstartformatcontext": "[ID] From: {startTime} (Indonesian)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Indonesian)",
+  "readWrite": "[ID] Read & Write (Indonesian)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "redirectingToStripeCheckoutForBasicPlan": "Redirecting to Stripe checkout for Basic plan... (Indonesian)",
+  "redirectingToStripeCheckoutForBasicPlan": "[ID] Redirecting to Stripe checkout for Basic plan... (Indonesian)",
   "@redirectingToStripeCheckoutForBasicPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[ID] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Indonesian)",
+  "pickDate": "[ID] Pick Date (Indonesian)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Indonesian)",
+  "chatBooking": "[ID] Chat Booking (Indonesian)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Indonesian)",
+  "noQuestionsAdded": "[ID] No questions added (Indonesian)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[ID] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[ID] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Indonesian)",
+  "typeOpenCall": "[ID] Type: Open Call (Indonesian)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[ID] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[ID] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Indonesian)",
+  "invoiceCreatedSuccessfully": "[ID] Invoice created successfully! (Indonesian)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Indonesian)",
+  "noTimeSeriesDataAvailable": "[ID] No time series data available (Indonesian)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[ID] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "timestamp_formatdatelogtimestamp": "Timestamp: {timestamp}",
+  "timestamp_formatdatelogtimestamp": "[ID] Timestamp: {timestamp}",
   "@timestamp_formatdatelogtimestamp": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Indonesian)",
+  "failedToSendPrivacyRequestE": "[ID] Failed to send privacy request: $e (Indonesian)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Indonesian)",
+  "chooseYourPlan": "[ID] Choose Your Plan (Indonesian)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Indonesian)",
+  "playtimeManagement": "[ID] Playtime Management (Indonesian)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Indonesian)",
+  "availability": "[ID] Availability (Indonesian)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Indonesian)",
+  "eventCreated": "[ID] Event created (Indonesian)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Indonesian)",
+  "subscribeToBasic499mo": "[ID] Subscribe to Basic (€4.99/mo) (Indonesian)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Indonesian)",
+  "completion": "[ID] Completion (Indonesian)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Indonesian)",
+  "supportTicketSubmitted": "[ID] Support ticket submitted (Indonesian)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Indonesian)",
+  "monetizationSettings": "[ID] Monetization Settings (Indonesian)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Indonesian)",
+  "noBookingsFound": "[ID] No bookings found (Indonesian)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[ID] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Indonesian)",
+  "deleteSurvey": "[ID] Delete Survey (Indonesian)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Indonesian)",
+  "gameApprovedSuccessfully": "[ID] Game approved successfully! (Indonesian)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Indonesian)",
+  "errorLoadingPermissionsError": "[ID] Error loading permissions: $error (Indonesian)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Indonesian)",
+  "referrals": "[ID] Referrals (Indonesian)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Indonesian)",
+  "crm": "[ID] CRM (Indonesian)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Indonesian)",
+  "gameRejected": "[ID] Game rejected (Indonesian)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Indonesian)",
+  "appointments": "[ID] Appointments (Indonesian)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Indonesian)",
+  "onboardingScreen": "[ID] Onboarding Screen (Indonesian)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Indonesian)",
+  "welcomeToYourStudio": "[ID] Welcome to your studio (Indonesian)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Indonesian)",
+  "update": "[ID] Update (Indonesian)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Indonesian)",
+  "retry1": "[ID] Retry (Indonesian)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Indonesian)",
+  "booking": "[ID] Booking (Indonesian)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Indonesian)",
+  "parentalSettings": "[ID] Parental Settings (Indonesian)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Indonesian)",
+  "language": "[ID] Language (Indonesian)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Indonesian)",
+  "deleteSlot": "[ID] Delete Slot (Indonesian)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[ID] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[ID] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Indonesian)",
+  "createNewGame": "[ID] Create New Game (Indonesian)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Indonesian)",
+  "next1": "[ID] Next (Indonesian)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Indonesian)",
+  "backgroundUploadedSuccessfully": "[ID] Background uploaded successfully! (Indonesian)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Indonesian)",
+  "noAppointmentRequestsFound": "[ID] No appointment requests found. (Indonesian)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Indonesian)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Indonesian)",
+  "restrictMatureContent": "[ID] Restrict mature content (Indonesian)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Indonesian)",
+  "ambassadors": "[ID] Ambassadors (Indonesian)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Indonesian)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Indonesian)",
+  "paymentWasCancelled": "[ID] Payment was cancelled (Indonesian)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Indonesian)",
+  "clearAll": "[ID] Clear All (Indonesian)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Indonesian)",
+  "viewDetails": "[ID] View Details (Indonesian)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Indonesian)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "liveSessionScheduledWaitingForParentApproval": "Live session scheduled! Waiting for parent approval... (Indonesian)",
+  "liveSessionScheduledWaitingForParentApproval": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@liveSessionScheduledWaitingForParentApproval": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Indonesian)",
+  "failedToCreateGameE": "[ID] Failed to create game: $e (Indonesian)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Indonesian)",
+  "noChartDataAvailable": "[ID] No chart data available (Indonesian)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Indonesian)",
+  "phonebasedBookingSystem": "[ID] • Phone-based booking system (Indonesian)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Indonesian)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Indonesian)",
+  "invoices": "[ID] Invoices (Indonesian)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "pleaseActivateYourBusinessProfileToContinue": "Please activate your business profile to continue. (Indonesian)",
+  "pleaseActivateYourBusinessProfileToContinue": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@pleaseActivateYourBusinessProfileToContinue": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Indonesian)",
+  "scheduledAtArgsscheduledat": "[ID] Scheduled at: {scheduledAt} (Indonesian)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "durationDurationinminutes0Minutes": "Duration: {duration} minutes (Indonesian)",
+  "durationDurationinminutes0Minutes": "[ID] Duration: {duration} minutes (Indonesian)",
   "@durationDurationinminutes0Minutes": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Indonesian)",
+  "tryAgain": "[ID] Try Again (Indonesian)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Indonesian)",
+  "deleteBackground": "[ID] Delete Background (Indonesian)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Indonesian)",
+  "currentTierTiertouppercase": "[ID] Current Tier: {tier} (Indonesian)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[ID] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "noClientsFoundAddYourFirstClient": "No clients found. Add your first client! (Indonesian)",
+  "noClientsFoundAddYourFirstClient": "[ID] No clients found. Add your first client! (Indonesian)",
   "@noClientsFoundAddYourFirstClient": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "settingsDialogWillBeImplementedHere": "Settings dialog will be implemented here.",
+  "settingsDialogWillBeImplementedHere": "[ID] Settings dialog will be implemented here.",
   "@settingsDialogWillBeImplementedHere": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[ID] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Indonesian)",
+  "appointmentRequests": "[ID] Appointment Requests (Indonesian)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Indonesian)",
+  "forward": "[ID] Forward (Indonesian)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Indonesian)",
+  "roomAddedSuccessfully": "[ID] Room added successfully! (Indonesian)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Indonesian)",
+  "option": "[ID] • $option (Indonesian)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Indonesian)",
+  "responseIndex1": "[ID] Response #{number} (Indonesian)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Indonesian)",
+  "crmDashboardWithAnalytics": "[ID] • CRM dashboard with analytics (Indonesian)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Indonesian)",
+  "contentLibrary1": "[ID] Content Library (Indonesian)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Indonesian)",
+  "reply": "[ID] Reply (Indonesian)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Indonesian)",
+  "subscriptionManagement": "[ID] Subscription Management (Indonesian)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "monetizationSettingsWillBeImplementedHere": "Monetization settings will be implemented here (Indonesian)",
+  "monetizationSettingsWillBeImplementedHere": "[ID] Monetization settings will be implemented here (Indonesian)",
   "@monetizationSettingsWillBeImplementedHere": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Indonesian)",
+  "failedToApplyPromoCodeE": "[ID] Failed to apply promo code: $e (Indonesian)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[ID] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Indonesian)",
+  "localizationContribution": "[ID] Localization Contribution (Indonesian)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Indonesian)",
+  "parentalConsent": "[ID] Parental Consent (Indonesian)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Indonesian)",
+  "businessSignupScreenComingSoon": "[ID] Business Signup Screen - Coming Soon (Indonesian)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "areYouSureYouWantToDeleteThisAppointment": "Are you sure you want to delete this appointment? (Indonesian)",
+  "areYouSureYouWantToDeleteThisAppointment": "[ID] Are you sure you want to delete this appointment? (Indonesian)",
   "@areYouSureYouWantToDeleteThisAppointment": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Indonesian)",
+  "syncAppointment": "[ID] Sync Appointment (Indonesian)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Indonesian)",
+  "iConsent": "[ID] I Consent (Indonesian)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Indonesian)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Indonesian)",
+  "businessSetupScreenComingSoon": "[ID] Business Setup Screen - Coming Soon (Indonesian)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Indonesian)",
+  "edit1": "[ID] Edit (Indonesian)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Indonesian)",
+  "noEventsScheduledThisMonth": "[ID] No events scheduled this month (Indonesian)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Indonesian)",
+  "businessDashboard": "[ID] Business Dashboard (Indonesian)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Indonesian)",
+  "noMessagesFound": "[ID] No messages found. (Indonesian)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[ID] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Indonesian)",
+  "manageStaffAvailability": "[ID] Manage Staff Availability (Indonesian)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Indonesian)",
+  "noMissingTranslations": "[ID] No missing translations (Indonesian)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Indonesian)",
+  "skip": "[ID] Skip (Indonesian)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[ID] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Indonesian)",
+  "errorLoadingReferralCode": "[ID] Error loading referral code (Indonesian)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Indonesian)",
+  "allCountries": "[ID] All Countries (Indonesian)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Indonesian)",
+  "deleteGame": "[ID] Delete Game (Indonesian)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Indonesian)",
+  "staffManagementTools": "[ID] • Staff management tools (Indonesian)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Indonesian)",
+  "deleteMessage": "[ID] Delete Message (Indonesian)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "receiveBookingNotificationsViaSms": "Receive booking notifications via SMS (Indonesian)",
+  "receiveBookingNotificationsViaSms": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@receiveBookingNotificationsViaSms": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[ID] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "errorLoadingBookingsSnapshoterror": "Error loading bookings: {error} (Indonesian)",
+  "errorLoadingBookingsSnapshoterror": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@errorLoadingBookingsSnapshoterror": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Indonesian)",
+  "openingCustomerPortal": "[ID] Opening customer portal... (Indonesian)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Indonesian)",
+  "signOut": "[ID] Sign Out (Indonesian)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Indonesian)",
+  "nameProfilename": "[ID] Name: {name} (Indonesian)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "businessProfileEntryScreenComingSoon": "Business Profile Entry Screen - Coming Soon (Indonesian)",
+  "businessProfileEntryScreenComingSoon": "شاشة إدخال الملف التجاري - قريباً",
   "@businessProfileEntryScreenComingSoon": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Indonesian)",
+  "upgradeToBusiness": "[ID] Upgrade to Business (Indonesian)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Indonesian)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Indonesian)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Indonesian)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Indonesian)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Indonesian)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "businessAppointmentsEntryScreenComingSoon": "Business Appointments Entry Screen - Coming Soon (Indonesian)",
+  "businessAppointmentsEntryScreenComingSoon": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@businessAppointmentsEntryScreenComingSoon": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Indonesian)",
+  "viewResponses": "[ID] View Responses (Indonesian)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Indonesian)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Indonesian)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Indonesian)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Indonesian)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Indonesian)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Indonesian)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Indonesian)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "noInvoicesFoundCreateYourFirstInvoice": "No invoices found. Create your first invoice! (Indonesian)",
+  "noInvoicesFoundCreateYourFirstInvoice": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@noInvoicesFoundCreateYourFirstInvoice": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Indonesian)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Indonesian)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

@@ -1,2862 +1,2862 @@
 {
   "@@locale": "sl",
-  "refresh": "Osveži",
+  "refresh": "[SL] Osveži",
   "@refresh": {
     "description": "Description"
   },
-  "home": "Domov",
+  "home": "[SL] Domov",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "Še ni sej",
+  "noSessionsYet": "[SL] Še ni sej",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "V redu",
+  "ok": "[SL] V redu",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "[SL] Choose your play mode:",
+  "playtimeLandingChooseMode": "[SL] [SL] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Registriraj se",
+  "signUp": "[SL] Registriraj se",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "[SL] Schedule Message",
+  "scheduleMessage": "[SL] [SL] Schedule Message",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "Zavrni",
+  "decline": "[SL] Zavrni",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[SL] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "Prijava",
+  "login": "[SL] Prijava",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "[SL] Choose friends to invite",
+  "playtimeChooseFriends": "[SL] [SL] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "Ni povabil",
+  "noInvites": "[SL] Ni povabil",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "Izberite čas",
+  "playtimeChooseTime": "[SL] Izberite čas",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Uspeh",
+  "success": "[SL] Uspeh",
   "@success": {
     "description": "Description"
   },
-  "undo": "Razveljavi",
+  "undo": "[SL] Razveljavi",
   "@undo": {
     "description": "Description"
   },
-  "opened": "[SL] Opened",
+  "opened": "[SL] [SL] Opened",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "Ustvari virtualno sejo",
+  "createVirtualSession": "[SL] Ustvari virtualno sejo",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "[SL] Message sent successfully",
+  "messageSentSuccessfully": "[SL] [SL] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "[SL] Redo",
+  "redo": "[SL] [SL] Redo",
   "@redo": {
     "description": "Description"
   },
-  "next": "Naslednje",
+  "next": "[SL] Naslednje",
   "@next": {
     "description": "Description"
   },
-  "search": "Išči",
+  "search": "[SL] Išči",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "Prekliči potrditev povabila",
+  "cancelInviteConfirmation": "[SL] Prekliči potrditev povabila",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "Ustvarjeno",
+  "created": "[SL] Ustvarjeno",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "[SL] Revoke Access",
+  "revokeAccess": "[SL] [SL] Revoke Access",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[SL] Save Group for Recognition",
+  "saveGroupForRecognition": "[SL] [SL] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[SL] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[SL] [SL] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[SL] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[SL] [SL] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Prenesi",
+  "download": "[SL] Prenesi",
   "@download": {
     "description": "Description"
   },
-  "password": "Geslo",
+  "password": "[SL] Geslo",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[SL] Error loading family links",
+  "errorLoadingFamilyLinks": "[SL] [SL] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "Prekliči",
+  "cancel": "[SL] Prekliči",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Ustvari Playtime",
+  "playtimeCreate": "[SL] Ustvari Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "Obdelava zasebnostnega zahtevka ni uspela",
+  "failedToActionPrivacyRequest": "[SL] Obdelava zasebnostnega zahtevka ni uspela",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Naslov aplikacije",
+  "appTitle": "[SL] Naslov aplikacije",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Sprejmi",
+  "accept": "[SL] Sprejmi",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "[SL] Virtual Play",
+  "playtimeModeVirtual": "[SL] [SL] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Opis Playtime",
+  "playtimeDescription": "[SL] Opis Playtime",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Izbriši",
+  "delete": "[SL] Izbriši",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "Virtualna seja se je začela",
+  "playtimeVirtualStarted": "[SL] Virtualna seja se je začela",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Ustvari svojo prvo igro",
+  "createYourFirstGame": "[SL] Ustvari svojo prvo igro",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "Udeleženci",
+  "participants": "[SL] Udeleženci",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "Prejemniki",
+  "recipients": "[SL] Prejemniki",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[SL] No results found",
+  "noResults": "[SL] [SL] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Da",
+  "yes": "[SL] Da",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "Povabi",
+  "invite": "[SL] Povabi",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "[SL] Live Play",
+  "playtimeModeLive": "[SL] [SL] Live Play",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[SL] Done",
+  "done": "[SL] [SL] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[SL] Let's meet via Appoint!",
+  "defaultShareMessage": "[SL] [SL] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Ne",
+  "no": "[SL] Ne",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Playtime osrednje",
+  "playtimeHub": "[SL] Playtime osrednje",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "Ustvari živo sejo",
+  "createLiveSession": "[SL] Ustvari živo sejo",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "Omogoči obvestila",
+  "enableNotifications": "[SL] Omogoči obvestila",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "Povabljeni",
+  "invited": "[SL] Povabljeni",
   "@invited": {
     "description": "Description"
   },
-  "content": "[SL] Content",
+  "content": "[SL] [SL] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "Srečanje uspešno deljeno",
+  "meetingSharedSuccessfully": "[SL] Srečanje uspešno deljeno",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "Dobrodošli v Playtime",
+  "welcomeToPlaytime": "[SL] Dobrodošli v Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "Poglej vse",
+  "viewAll": "[SL] Poglej vse",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Virtualni Playtime",
+  "playtimeVirtual": "[SL] Virtualni Playtime",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[SL] Staff screen coming soon",
+  "staffScreenTBD": "[SL] [SL] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Izreži",
+  "cut": "[SL] Izreži",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "Povabilo uspešno preklicano",
+  "inviteCancelledSuccessfully": "[SL] Povabilo uspešno preklicano",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "Poskusi znova",
+  "retry": "[SL] Poskusi znova",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "[SL] Compose Broadcast Message",
+  "composeBroadcastMessage": "[SL] [SL] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Pošlji zdaj",
+  "sendNow": "[SL] Pošlji zdaj",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "Še ni iger",
+  "noGamesYet": "[SL] Še ni iger",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "Izberi",
+  "select": "[SL] Izberi",
   "@select": {
     "description": "Description"
   },
-  "about": "O aplikaciji",
+  "about": "[SL] O aplikaciji",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Izberi",
+  "choose": "[SL] Izberi",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[SL] Profile",
+  "profile": "[SL] [SL] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "Odstrani otroka",
+  "removeChild": "[SL] Odstrani otroka",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "Stanje",
+  "status": "[SL] Stanje",
   "@status": {
     "description": "status description"
   },
-  "logout": "Odjava",
+  "logout": "[SL] Odjava",
   "@logout": {
     "description": "Description"
   },
-  "paste": "Prilepi",
+  "paste": "[SL] Prilepi",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "Dobrodošli",
+  "welcome": "[SL] Dobrodošli",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "Ustvari sejo",
+  "playtimeCreateSession": "[SL] Ustvari sejo",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "[SL] Family Members",
+  "familyMembers": "[SL] [SL] Family Members",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Naloži",
+  "upload": "[SL] Naloži",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "Prihajajoče seje",
+  "upcomingSessions": "[SL] Prihajajoče seje",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "[SL] Enter group name",
+  "enterGroupName": "[SL] [SL] Enter group name",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "Potrdi",
+  "confirm": "[SL] Potrdi",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Živi Playtime",
+  "playtimeLive": "[SL] Živi Playtime",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "Napaka pri nalaganju povabil",
+  "errorLoadingInvites": "[SL] Napaka pri nalaganju povabil",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "Filtri ciljanja",
+  "targetingFilters": "[SL] Filtri ciljanja",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Izberi video",
+  "pickVideo": "[SL] Izberi video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Igra je izbrisana",
+  "playtimeGameDeleted": "[SL] Igra je izbrisana",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Načrtuj za kasneje",
+  "scheduleForLater": "[SL] Načrtuj za kasneje",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[SL] Access revoked successfully",
+  "accessRevokedSuccessfully": "[SL] [SL] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Tip",
+  "type": "[SL] Tip",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "Preverjanje dovoljenj",
+  "checkingPermissions": "[SL] Preverjanje dovoljenj",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "Kopiraj",
+  "copy": "[SL] Kopiraj",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "Da, prekliči",
+  "yesCancel": "[SL] Da, prekliči",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "E-pošta",
+  "email": "[SL] E-pošta",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[SL] Share on WhatsApp",
+  "shareOnWhatsApp": "[SL] [SL] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "Nastavitve obvestil",
+  "notificationSettings": "[SL] Nastavitve obvestil",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[SL] My Profile",
+  "myProfile": "[SL] [SL] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "Razveljavi",
+  "revoke": "[SL] Razveljavi",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "[SL] No messages yet",
+  "noBroadcastMessages": "[SL] [SL] No messages yet",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "Vrsta zahtevka",
+  "requestType": "[SL] Vrsta zahtevka",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "Obvestila",
+  "notifications": "[SL] Obvestila",
   "@notifications": {
     "description": "Description"
   },
-  "details": "Podrobnosti",
+  "details": "[SL] Podrobnosti",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "Prekliči povabilo",
+  "cancelInvite": "[SL] Prekliči povabilo",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Ustvari novo",
+  "createNew": "[SL] Ustvari novo",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "Nastavitve",
+  "settings": "[SL] Nastavitve",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "Zavrni Playtime",
+  "playtimeReject": "[SL] Zavrni Playtime",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[SL] Error loading profile",
+  "errorLoadingProfile": "[SL] [SL] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "Uredi",
+  "edit": "[SL] Uredi",
   "@edit": {
     "description": "Description"
   },
-  "add": "Dodaj",
+  "add": "[SL] Dodaj",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "Igra odobrena",
+  "playtimeGameApproved": "[SL] Igra odobrena",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "Ste pozabili geslo?",
+  "forgotPassword": "[SL] Ste pozabili geslo?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[SL] Family Dashboard",
+  "familyDashboard": "[SL] [SL] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "Nalaganje",
+  "loading": "[SL] Nalaganje",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "Hitre akcije",
+  "quickActions": "[SL] Hitre akcije",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Naslov Playtime",
+  "playtimeTitle": "[SL] Naslov Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[SL] OTP resent successfully",
+  "otpResentSuccessfully": "[SL] [SL] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "Napaka pri preverjanju dovoljenj",
+  "errorCheckingPermissions": "[SL] Napaka pri preverjanju dovoljenj",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "[SL] Client screen coming soon",
+  "clientScreenTBD": "[SL] [SL] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[SL] FCM Token",
+  "fcmToken": "[SL] [SL] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "Izberi sliko",
+  "pickImage": "[SL] Izberi sliko",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "Prejšnji",
+  "previous": "[SL] Prejšnji",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[SL] No profile found",
+  "noProfileFound": "[SL] [SL] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "[SL] No family members yet",
+  "noFamilyMembersYet": "[SL] [SL] No family members yet",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "Mediji (izbirno)",
+  "mediaOptional": "[SL] Mediji (izbirno)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[SL] Message saved successfully",
+  "messageSavedSuccessfully": "[SL] [SL] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[SL] Scheduled for",
+  "scheduledFor": "[SL] [SL] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[SL] Dashboard",
+  "dashboard": "[SL] [SL] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "Ni dovoljenja za oddajanje",
+  "noPermissionForBroadcast": "[SL] Ni dovoljenja za oddajanje",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[SL] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "Podrobnosti povabila",
+  "inviteDetail": "[SL] Podrobnosti povabila",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "[SL] Scheduled",
+  "scheduled": "[SL] [SL] Scheduled",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[SL] Failed to resend OTP",
+  "failedToResendOtp": "[SL] [SL] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "[SL] Scheduling",
+  "scheduling": "[SL] [SL] Scheduling",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[SL] Error saving message",
+  "errorSavingMessage": "[SL] [SL] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Shrani",
+  "save": "[SL] Shrani",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Odobri Playtime",
+  "playtimeApprove": "[SL] Odobri Playtime",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "Ustvari prvo sejo",
+  "createYourFirstSession": "[SL] Ustvari prvo sejo",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "Igra zavrnjena",
+  "playtimeGameRejected": "[SL] Igra zavrnjena",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[SL] Failed to revoke access",
+  "failedToRevokeAccess": "[SL] [SL] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Nedavne igre",
+  "recentGames": "[SL] Nedavne igre",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[SL] Customize Message",
+  "customizeMessage": "[SL] [SL] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[SL] Failed to cancel invite",
+  "failedToCancelInvite": "[SL] [SL] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[SL] Error sending message",
+  "errorSendingMessage": "[SL] [SL] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "Potrdi geslo",
+  "confirmPassword": "[SL] Potrdi geslo",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "Napaka pri nalaganju zahtevkov za zasebnost",
+  "errorLoadingPrivacyRequests": "[SL] Napaka pri nalaganju zahtevkov za zasebnost",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "Povezani otroci",
+  "connectedChildren": "[SL] Povezani otroci",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "Deli",
+  "share": "[SL] Deli",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "Vnesite ime igre",
+  "playtimeEnterGameName": "[SL] Vnesite ime igre",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[SL] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[SL] [SL] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[SL] My Invites",
+  "myInvites": "[SL] [SL] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[SL] Create Game",
+  "createGame": "[SL] [SL] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[SL] Group Name (Optional)",
+  "groupNameOptional": "[SL] [SL] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[SL] No playtime sessions found.",
+  "playtimeNoSessions": "[SL] [SL] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[SL] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[SL] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[SL] [SL] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "[SL] Close",
+  "close": "[SL] [SL] Close",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[SL] Known group detected",
+  "knownGroupDetected": "[SL] [SL] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[SL] Back",
+  "back": "[SL] [SL] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[SL] Choose a game",
+  "playtimeChooseGame": "[SL] [SL] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[SL] Manage Permissions",
+  "managePermissions": "[SL] [SL] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[SL] Poll Options",
+  "pollOptions": "[SL] [SL] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[SL] Clicked",
+  "clicked": "[SL] [SL] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[SL] Link",
+  "link": "[SL] [SL] Link",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[SL] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[SL] [SL] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[SL] Pending Invites",
+  "pendingInvites": "[SL] [SL] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[SL] Status:",
+  "statusColon": "[SL] [SL] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[SL] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[SL] [SL] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[SL] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[SL] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[SL] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[SL] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[SL] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[SL] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[SL] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[SL] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[SL] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[SL] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[SL] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[SL] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[SL] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[SL] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[SL] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "authErrorAccountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method.",
+  "authErrorAccountExistsWithDifferentCredential": "[SL] An account already exists with this email using a different sign-in method.",
   "@authErrorAccountExistsWithDifferentCredential": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[SL] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[SL] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Slovenian)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Slovenian)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Slovenian)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Slovenian)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[SL] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[SL] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "authErrorInvalidVerificationCode": "The verification code is invalid.",
+  "authErrorInvalidVerificationCode": "[SL] The verification code is invalid.",
   "@authErrorInvalidVerificationCode": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[SL] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "authErrorMissingVerificationCode": "Please enter the verification code.",
+  "authErrorMissingVerificationCode": "[SL] Please enter the verification code.",
   "@authErrorMissingVerificationCode": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[SL] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[SL] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[SL] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[SL] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[SL] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[SL] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "authErrorMultiFactorAuthRequired": "Multi-factor authentication is required.",
+  "authErrorMultiFactorAuthRequired": "[SL] Multi-factor authentication is required.",
   "@authErrorMultiFactorAuthRequired": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "authErrorMultiFactorInfoNotFound": "Multi-factor information not found.",
+  "authErrorMultiFactorInfoNotFound": "[SL] Multi-factor information not found.",
   "@authErrorMultiFactorInfoNotFound": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "authErrorMissingMultiFactorSession": "Missing multi-factor session.",
+  "authErrorMissingMultiFactorSession": "[SL] Missing multi-factor session.",
   "@authErrorMissingMultiFactorSession": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "authErrorInvalidMultiFactorSession": "Invalid multi-factor session.",
+  "authErrorInvalidMultiFactorSession": "[SL] Invalid multi-factor session.",
   "@authErrorInvalidMultiFactorSession": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "authErrorSecondFactorAlreadyInUse": "This second factor is already in use.",
+  "authErrorSecondFactorAlreadyInUse": "[SL] This second factor is already in use.",
   "@authErrorSecondFactorAlreadyInUse": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "authErrorMaximumSecondFactorCountExceeded": "Maximum number of second factors exceeded.",
+  "authErrorMaximumSecondFactorCountExceeded": "[SL] Maximum number of second factors exceeded.",
   "@authErrorMaximumSecondFactorCountExceeded": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[SL] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "authErrorEmailChangeNeedsVerification": "Email change requires verification.",
+  "authErrorEmailChangeNeedsVerification": "[SL] Email change requires verification.",
   "@authErrorEmailChangeNeedsVerification": {
     "description": "Localization key for: Email change requires verification."
   },
-  "authErrorPhoneNumberAlreadyExists": "This phone number is already in use.",
+  "authErrorPhoneNumberAlreadyExists": "[SL] This phone number is already in use.",
   "@authErrorPhoneNumberAlreadyExists": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[SL] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[SL] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[SL] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[SL] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[SL] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[SL] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[SL] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[SL] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[SL] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[SL] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[SL] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "authErrorInvalidDynamicLinkDomain": "The dynamic link domain is invalid.",
+  "authErrorInvalidDynamicLinkDomain": "[SL] The dynamic link domain is invalid.",
   "@authErrorInvalidDynamicLinkDomain": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[SL] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[SL] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[SL] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "authErrorInvalidHashDerivedKeyLength": "The hash derived key length is invalid.",
+  "authErrorInvalidHashDerivedKeyLength": "[SL] The hash derived key length is invalid.",
   "@authErrorInvalidHashDerivedKeyLength": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[SL] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[SL] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "authErrorInvalidHashParallelization": "The hash parallelization is invalid.",
+  "authErrorInvalidHashParallelization": "[SL] The hash parallelization is invalid.",
   "@authErrorInvalidHashParallelization": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[SL] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "authErrorInvalidHashSaltSeparator": "The hash salt separator is invalid.",
+  "authErrorInvalidHashSaltSeparator": "[SL] The hash salt separator is invalid.",
   "@authErrorInvalidHashSaltSeparator": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[SL] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[SL] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[SL] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[SL] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "authErrorInvalidSessionCookieDuration": "The session cookie duration is invalid.",
+  "authErrorInvalidSessionCookieDuration": "[SL] The session cookie duration is invalid.",
   "@authErrorInvalidSessionCookieDuration": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[SL] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[SL] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "authErrorMaximumUserCountExceeded": "Maximum user import count exceeded.",
+  "authErrorMaximumUserCountExceeded": "[SL] Maximum user import count exceeded.",
   "@authErrorMaximumUserCountExceeded": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[SL] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[SL] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[SL] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[SL] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[SL] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "authErrorMissingOauthClientSecret": "Missing OAuth client secret.",
+  "authErrorMissingOauthClientSecret": "[SL] Missing OAuth client secret.",
   "@authErrorMissingOauthClientSecret": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[SL] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[SL] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[SL] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[SL] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[SL] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "authErrorUnauthorizedContinueUri": "The continue URL domain is not whitelisted.",
+  "authErrorUnauthorizedContinueUri": "[SL] The continue URL domain is not whitelisted.",
   "@authErrorUnauthorizedContinueUri": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[SL] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Slovenian)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Slovenian)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Slovenian)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Slovenian)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Slovenian)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Slovenian)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Slovenian)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Slovenian)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[SL] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Slovenian)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Slovenian)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Slovenian)",
+  "upload1": "[SL] Upload (Slovenian)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Slovenian)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Slovenian)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "virtualSessionCreatedInvitingFriends": "Virtual session created! Inviting friends... (Slovenian)",
+  "virtualSessionCreatedInvitingFriends": "[SL] Virtual session created! Inviting friends... (Slovenian)",
   "@virtualSessionCreatedInvitingFriends": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Slovenian)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Slovenian)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Slovenian)",
+  "rewards": "[SL] Rewards (Slovenian)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Slovenian)",
+  "time": "[SL] Time (Slovenian)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[SL] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Slovenian)",
+  "noSlots": "[SL] No slots (Slovenian)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Slovenian)",
+  "signIn": "[SL] Sign In (Slovenian)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Slovenian)",
+  "homeFeedScreen": "[SL] Home Feed Screen (Slovenian)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Slovenian)",
+  "selectLocation": "[SL] Select Location (Slovenian)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Slovenian)",
+  "noTicketsYet": "[SL] No tickets yet (Slovenian)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Slovenian)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Slovenian)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Slovenian)",
+  "subscriptionUnavailable": "[SL] Subscription unavailable (Slovenian)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Slovenian)",
+  "confirmBooking": "[SL] Confirm Booking (Slovenian)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Slovenian)",
+  "failedToUpdatePermissionE": "[SL] Failed to update permission: $e (Slovenian)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Slovenian)",
+  "reject": "[SL] Reject (Slovenian)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "ambassadorStatusAmbassadorstatus": "Ambassador Status: {ambassadorStatus} (Slovenian)",
+  "ambassadorStatusAmbassadorstatus": "[SL] Ambassador Status: {ambassadorStatus} (Slovenian)",
   "@ambassadorStatusAmbassadorstatus": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[SL] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Slovenian)",
+  "checkingSubscription": "[SL] Checking subscription... (Slovenian)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Slovenian)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Slovenian)",
+  "noContentAvailableYet": "[SL] No content available yet (Slovenian)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Slovenian)",
+  "resolve": "[SL] Resolve (Slovenian)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Slovenian)",
+  "errorLoadingSurveysError": "[SL] Error loading surveys: $error (Slovenian)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[SL] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Slovenian)",
+  "getHelpWithYourAccount": "[SL] Get help with your account (Slovenian)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Slovenian)",
+  "pay": "[SL] Pay (Slovenian)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[SL] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Slovenian)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Slovenian)",
+  "changesSavedSuccessfully": "[SL] Changes saved successfully! (Slovenian)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Slovenian)",
+  "createNewInvoice": "[SL] Create New Invoice (Slovenian)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Slovenian)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Slovenian)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Slovenian)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Slovenian)",
+  "profileSaved": "[SL] Profile saved! (Slovenian)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "receiveBookingNotificationsViaEmail": "Receive booking notifications via email (Slovenian)",
+  "receiveBookingNotificationsViaEmail": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@receiveBookingNotificationsViaEmail": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Slovenian)",
+  "valuetointk": "[SL] \\${value}K (Slovenian)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Slovenian)",
+  "deleteAccount": "[SL] Delete Account (Slovenian)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Slovenian)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Slovenian)",
+  "businessOnboarding": "[SL] Business Onboarding (Slovenian)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Slovenian)",
+  "addNewClient": "[SL] Add New Client (Slovenian)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Slovenian)",
+  "darkMode": "[SL] Dark Mode (Slovenian)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[SL] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[SL] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "youWillReceiveAConfirmationEmailShortly": "You will receive a confirmation email shortly. (Slovenian)",
+  "youWillReceiveAConfirmationEmailShortly": "[SL] You will receive a confirmation email shortly. (Slovenian)",
   "@youWillReceiveAConfirmationEmailShortly": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Slovenian)",
+  "addQuestion": "[SL] Add Question (Slovenian)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Slovenian)",
+  "privacyPolicy": "[SL] Privacy Policy (Slovenian)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Slovenian)",
+  "branchesLengthBranches": "[SL] {branchCount} branches (Slovenian)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Slovenian)",
+  "join": "[SL] Join (Slovenian)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Slovenian)",
+  "businessSubscription": "[SL] Business Subscription (Slovenian)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Slovenian)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[SL] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Slovenian)",
+  "surveyManagement": "[SL] Survey Management (Slovenian)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[SL] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Slovenian)",
+  "noRoomsFoundAddYourFirstRoom": "[SL] No rooms found. Add your first room! (Slovenian)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Slovenian)",
+  "readOurPrivacyPolicy": "[SL] Read our privacy policy (Slovenian)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Slovenian)",
+  "couldNotOpenPrivacyPolicy": "[SL] Could not open privacy policy (Slovenian)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Slovenian)",
+  "refresh1": "[SL] Refresh (Slovenian)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Slovenian)",
+  "roomUpdatedSuccessfully": "[SL] Room updated successfully! (Slovenian)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Slovenian)",
+  "contentDetail": "[SL] Content Detail (Slovenian)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Slovenian)",
+  "cancelSubscription": "[SL] Cancel Subscription (Slovenian)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "successfullyRegisteredAsAmbassador": "Successfully registered as Ambassador! (Slovenian)",
+  "successfullyRegisteredAsAmbassador": "[SL] Successfully registered as Ambassador! (Slovenian)",
   "@successfullyRegisteredAsAmbassador": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Slovenian)",
+  "save1": "[SL] Save (Slovenian)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Slovenian)",
+  "copy1": "[SL] Copy (Slovenian)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Slovenian)",
+  "failedToSendInvitationE": "[SL] Failed to send invitation: $e (Slovenian)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Slovenian)",
+  "surveyScore": "[SL] Survey Score (Slovenian)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[SL] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Slovenian)",
+  "noAppointmentsFound": "[SL] No appointments found. (Slovenian)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Slovenian)",
+  "responseDetail": "[SL] Response Detail (Slovenian)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "businessVerificationScreenComingSoon": "Business Verification Screen - Coming Soon (Slovenian)",
+  "businessVerificationScreenComingSoon": "شاشة التحقق من الأعمال - قريباً",
   "@businessVerificationScreenComingSoon": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "businessProfileActivatedSuccessfully": "Business profile activated successfully! (Slovenian)",
+  "businessProfileActivatedSuccessfully": "تم تفعيل الملف التجاري بنجاح",
   "@businessProfileActivatedSuccessfully": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Slovenian)",
+  "failedToStartProSubscriptionE": "[SL] Failed to start Pro subscription: $e (Slovenian)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "businessDashboardEntryScreenComingSoon": "Business Dashboard Entry Screen - Coming Soon (Slovenian)",
+  "businessDashboardEntryScreenComingSoon": "[SL] Business Dashboard Entry Screen - Coming Soon (Slovenian)",
   "@businessDashboardEntryScreenComingSoon": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Slovenian)",
+  "contentFilter": "[SL] Content Filter (Slovenian)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Slovenian)",
+  "helpSupport": "[SL] Help & Support (Slovenian)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Slovenian)",
+  "editRoom": "[SL] Edit Room (Slovenian)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[SL] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[SL] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "businessCrmEntryScreenComingSoon": "Business CRM Entry Screen - Coming Soon (Slovenian)",
+  "businessCrmEntryScreenComingSoon": "[SL] Business CRM Entry Screen - Coming Soon (Slovenian)",
   "@businessCrmEntryScreenComingSoon": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[SL] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[SL] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Slovenian)",
+  "errorLoadingDashboardError": "[SL] Error loading dashboard: $error (Slovenian)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Slovenian)",
+  "gameDeletedSuccessfully": "[SL] Game deleted successfully! (Slovenian)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Slovenian)",
+  "viewResponsesComingSoon": "[SL] View responses - Coming soon! (Slovenian)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[SL] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Slovenian)",
+  "errorLoadingRewards": "[SL] Error loading rewards (Slovenian)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Slovenian)",
+  "failedToDeleteAccountE": "[SL] Failed to delete account: $e (Slovenian)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Slovenian)",
+  "invited1": "[SL] Invited (Slovenian)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Slovenian)",
+  "noBranchesAvailable": "[SL] No branches available (Slovenian)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Slovenian)",
+  "errorError": "[SL] Error: $error (Slovenian)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Slovenian)",
+  "noEvents": "[SL] No events (Slovenian)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Slovenian)",
+  "gameCreatedSuccessfully": "[SL] Game created successfully! (Slovenian)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Slovenian)",
+  "add1": "[SL] Add (Slovenian)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[SL] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Slovenian)",
+  "eventstarttimeEventendtime": "[SL] {startTime} - {endTime} (Slovenian)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Slovenian)",
+  "allowPlaytime": "[SL] Allow Playtime (Slovenian)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Slovenian)",
+  "clients": "[SL] Clients (Slovenian)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Slovenian)",
+  "noAmbassadorDataAvailable": "[SL] No ambassador data available (Slovenian)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Slovenian)",
+  "backgroundDeletedSuccessfully": "[SL] Background deleted successfully! (Slovenian)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Slovenian)",
+  "errorSnapshoterror": "[SL] Error: {error} (Slovenian)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Slovenian)",
+  "noAnalyticsDataAvailableYet": "[SL] No analytics data available yet. (Slovenian)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Slovenian)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "businessPhoneBookingEntryScreenComingSoon": "Business Phone Booking Entry Screen - Coming Soon (Slovenian)",
+  "businessPhoneBookingEntryScreenComingSoon": "[SL] Business Phone Booking Entry Screen - Coming Soon (Slovenian)",
   "@businessPhoneBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Slovenian)",
+  "verification": "[SL] Verification (Slovenian)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Slovenian)",
+  "copyLink": "[SL] Copy Link (Slovenian)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Slovenian)",
+  "dashboard1": "[SL] Dashboard (Slovenian)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Slovenian)",
+  "manageChildAccounts": "[SL] Manage Child Accounts (Slovenian)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Slovenian)",
+  "grantConsent": "[SL] Grant Consent (Slovenian)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Slovenian)",
+  "myProfile1": "[SL] My Profile (Slovenian)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Slovenian)",
+  "submit": "[SL] Submit (Slovenian)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[SL] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Slovenian)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Slovenian)",
+  "ambassadorDashboard": "[SL] Ambassador Dashboard (Slovenian)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Slovenian)",
+  "phoneBooking": "[SL] Phone Booking (Slovenian)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Slovenian)",
+  "bookViaChat": "[SL] Book via Chat (Slovenian)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Napaka",
+  "error": "[SL] Napaka",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Slovenian)",
+  "businessProfile": "[SL] Business Profile (Slovenian)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "businessBookingEntryScreenComingSoon": "Business Booking Entry Screen - Coming Soon (Slovenian)",
+  "businessBookingEntryScreenComingSoon": "[SL] Business Booking Entry Screen - Coming Soon (Slovenian)",
   "@businessBookingEntryScreenComingSoon": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Slovenian)",
+  "createNewSurvey": "[SL] Create New Survey (Slovenian)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Slovenian)",
+  "backgroundRejected": "[SL] Background rejected (Slovenian)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Slovenian)",
+  "noMediaSelected": "[SL] No media selected (Slovenian)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Slovenian)",
+  "syncToGoogle": "[SL] Sync to Google (Slovenian)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Slovenian)",
+  "virtualPlaytime": "[SL] Virtual Playtime (Slovenian)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[SL] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[SL] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Slovenian)",
+  "invitationSentSuccessfully": "[SL] Invitation sent successfully! (Slovenian)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Slovenian)",
+  "registering": "[SL] Registering... (Slovenian)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Slovenian)",
+  "statusAppointmentstatusname": "[SL] Status: {status} (Slovenian)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Slovenian)",
+  "home1": "[SL] Home (Slovenian)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Slovenian)",
+  "errorSavingSettingsE": "[SL] Error saving settings: $e (Slovenian)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Slovenian)",
+  "appVersionAndInformation": "[SL] App version and information (Slovenian)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "businessSubscriptionEntryScreenComingSoon": "Business Subscription Entry Screen - Coming Soon (Slovenian)",
+  "businessSubscriptionEntryScreenComingSoon": "[SL] Business Subscription Entry Screen - Coming Soon (Slovenian)",
   "@businessSubscriptionEntryScreenComingSoon": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Slovenian)",
+  "ekeyEvalue": "[SL] {key}: {value} (Slovenian)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "yourPaymentHasBeenProcessedSuccessfully": "Your payment has been processed successfully. (Slovenian)",
+  "yourPaymentHasBeenProcessedSuccessfully": "[SL] Your payment has been processed successfully. (Slovenian)",
   "@yourPaymentHasBeenProcessedSuccessfully": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Slovenian)",
+  "errorE": "[SL] Error: $e (Slovenian)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Slovenian)",
+  "viewAll1": "[SL] View All (Slovenian)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Slovenian)",
+  "editSurveyComingSoon": "[SL] Edit survey - Coming soon! (Slovenian)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Slovenian)",
+  "enterOtp": "[SL] Enter OTP (Slovenian)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Slovenian)",
+  "payment": "[SL] Payment (Slovenian)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "automaticallyConfirmNewBookingRequests": "Automatically confirm new booking requests (Slovenian)",
+  "automaticallyConfirmNewBookingRequests": "[SL] Automatically confirm new booking requests (Slovenian)",
   "@automaticallyConfirmNewBookingRequests": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Slovenian)",
+  "noRouteDefinedForSettingsname": "[SL] No route defined for {settingsName} (Slovenian)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Slovenian)",
+  "pleaseSignInToUploadABackground": "[SL] Please sign in to upload a background (Slovenian)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[SL] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Slovenian)",
+  "staffAvailability": "[SL] Staff Availability (Slovenian)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Slovenian)",
+  "livePlaytime": "[SL] Live Playtime (Slovenian)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Slovenian)",
+  "autoconfirmBookings": "[SL] Auto-Confirm Bookings (Slovenian)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "redirectingToStripeCheckoutForProPlan": "Redirecting to Stripe checkout for Pro plan... (Slovenian)",
+  "redirectingToStripeCheckoutForProPlan": "[SL] Redirecting to Stripe checkout for Pro plan... (Slovenian)",
   "@redirectingToStripeCheckoutForProPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Slovenian)",
+  "exportAsCsv": "[SL] Export as CSV (Slovenian)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Slovenian)",
+  "deleteFunctionalityComingSoon": "[SL] Delete functionality coming soon! (Slovenian)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Slovenian)",
+  "editClient": "[SL] Edit Client (Slovenian)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "areYouSureYouWantToDeleteThisMessage": "Are you sure you want to delete this message? (Slovenian)",
+  "areYouSureYouWantToDeleteThisMessage": "[SL] Are you sure you want to delete this message? (Slovenian)",
   "@areYouSureYouWantToDeleteThisMessage": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Slovenian)",
+  "referralsAmbassadorreferrals": "[SL] Referrals: {referrals} (Slovenian)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[SL] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Slovenian)",
+  "privacyRequestSentToYourParents": "[SL] Privacy request sent to your parents! (Slovenian)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Slovenian)",
+  "clientDeletedSuccessfully": "[SL] Client deleted successfully! (Slovenian)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Slovenian)",
+  "failedToCancelSubscription": "[SL] Failed to cancel subscription (Slovenian)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Slovenian)",
+  "allLanguages": "[SL] All Languages (Slovenian)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Slovenian)",
+  "slotDeletedSuccessfully": "[SL] Slot deleted successfully (Slovenian)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "businessProvidersEntryScreenComingSoon": "Business Providers Entry Screen - Coming Soon",
+  "businessProvidersEntryScreenComingSoon": "[SL] Business Providers Entry Screen - Coming Soon",
   "@businessProvidersEntryScreenComingSoon": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "parentsMustApproveBeforeChildrenCanJoin": "Parents must approve before children can join (Slovenian)",
+  "parentsMustApproveBeforeChildrenCanJoin": "[SL] Parents must approve before children can join (Slovenian)",
   "@parentsMustApproveBeforeChildrenCanJoin": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Slovenian)",
+  "subscribeToPro1499mo": "[SL] Subscribe to Pro (€14.99/mo) (Slovenian)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "businessAvailabilityEntryScreenComingSoon": "Business Availability Entry Screen - Coming Soon (Slovenian)",
+  "businessAvailabilityEntryScreenComingSoon": "[SL] Business Availability Entry Screen - Coming Soon (Slovenian)",
   "@businessAvailabilityEntryScreenComingSoon": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Slovenian)",
+  "appointmentsListlength": "[SL] Appointments: {count} (Slovenian)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Slovenian)",
+  "clearFilters": "[SL] Clear Filters (Slovenian)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Slovenian)",
+  "submitBooking": "[SL] Submit Booking (Slovenian)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "areYouSureYouWantToCancelThisAppointment": "Are you sure you want to cancel this appointment? (Slovenian)",
+  "areYouSureYouWantToCancelThisAppointment": "[SL] Are you sure you want to cancel this appointment? (Slovenian)",
   "@areYouSureYouWantToCancelThisAppointment": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Slovenian)",
+  "noUpcomingBookings": "[SL] No upcoming bookings (Slovenian)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Slovenian)",
+  "goBack": "[SL] Go Back (Slovenian)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Slovenian)",
+  "setup": "[SL] Setup (Slovenian)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Slovenian)",
+  "inviteChild": "[SL] Invite Child (Slovenian)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Slovenian)",
+  "goToDashboard": "[SL] Go to Dashboard (Slovenian)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Slovenian)",
+  "ambassadorQuotaDashboard": "[SL] Ambassador Quota Dashboard (Slovenian)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[SL] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Slovenian)",
+  "referralCode": "[SL] Referral Code (Slovenian)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[SL] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Slovenian)",
+  "date": "[SL] Date (Slovenian)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Slovenian)",
+  "readOnly": "[SL] Read Only (Slovenian)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Slovenian)",
+  "bookingRequest": "[SL] Booking Request (Slovenian)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Slovenian)",
+  "advancedReporting": "[SL] • Advanced reporting (Slovenian)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Slovenian)",
+  "rooms": "[SL] Rooms (Slovenian)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Slovenian)",
+  "copiedToClipboard": "[SL] Copied to clipboard (Slovenian)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Slovenian)",
+  "bookingConfirmed": "[SL] Booking Confirmed (Slovenian)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Slovenian)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Slovenian)",
+  "clientAddedSuccessfully": "[SL] Client added successfully! (Slovenian)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Slovenian)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Slovenian)",
+  "backgroundApproved": "[SL] Background approved! (Slovenian)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Slovenian)",
+  "familySupport": "[SL] Family Support (Slovenian)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Slovenian)",
+  "deletingAccount": "[SL] Deleting account... (Slovenian)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Slovenian)",
+  "bookAppointment": "[SL] Book Appointment (Slovenian)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "receivePushNotificationsForNewBookings": "Receive push notifications for new bookings (Slovenian)",
+  "receivePushNotificationsForNewBookings": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@receivePushNotificationsForNewBookings": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Slovenian)",
+  "delete1": "[SL] Delete (Slovenian)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Slovenian)",
+  "sendBookingInvite": "[SL] Send Booking Invite (Slovenian)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Slovenian)",
+  "text": "[SL] Text (Slovenian)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Slovenian)",
+  "manageSubscription": "[SL] Manage Subscription (Slovenian)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Slovenian)",
+  "requiresInstallFallback": "[SL] Requires Install Fallback (Slovenian)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Slovenian)",
+  "paymentConfirmation": "[SL] Payment Confirmation (Slovenian)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Slovenian)",
+  "promoAppliedYourNextBillIsFree": "[SL] Promo applied! Your next bill is free. (Slovenian)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Slovenian)",
+  "errorLoadingSlots": "[SL] Error loading slots (Slovenian)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "allowOtherUsersToFindAndJoinThisGame": "Allow other users to find and join this game (Slovenian)",
+  "allowOtherUsersToFindAndJoinThisGame": "[SL] Allow other users to find and join this game (Slovenian)",
   "@allowOtherUsersToFindAndJoinThisGame": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "businessOnboardingScreenComingSoon": "Business Onboarding Screen - Coming Soon (Slovenian)",
+  "businessOnboardingScreenComingSoon": "[SL] Business Onboarding Screen - Coming Soon (Slovenian)",
   "@businessOnboardingScreenComingSoon": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Slovenian)",
+  "activateBusinessProfile": "[SL] Activate Business Profile (Slovenian)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Slovenian)",
+  "contentNotFound": "[SL] Content not found (Slovenian)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Slovenian)",
+  "pspecialtynpcontactinfo": "[SL] {specialty}\\n{contactInfo} (Slovenian)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Slovenian)",
+  "rating": "[SL] Rating (Slovenian)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Slovenian)",
+  "messages": "[SL] Messages (Slovenian)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Slovenian)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Slovenian)",
+  "becomeAnAmbassador": "[SL] Become an Ambassador (Slovenian)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Slovenian)",
+  "subscribeNow": "[SL] Subscribe Now (Slovenian)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Slovenian)",
+  "timeArgsslotformatcontext": "[SL] Time: {time} (Slovenian)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Slovenian)",
+  "shareViaWhatsapp": "[SL] Share via WhatsApp (Slovenian)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Slovenian)",
+  "users1": "[SL] Users (Slovenian)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Slovenian)",
+  "shareLink": "[SL] Share Link (Slovenian)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
+  "areYouSureYouWantToDeleteThisProvider": "[SL] Are you sure you want to delete this provider?",
   "@areYouSureYouWantToDeleteThisProvider": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Slovenian)",
+  "deleteAppointment": "[SL] Delete Appointment (Slovenian)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Slovenian)",
+  "toggleAvailability": "[SL] Toggle Availability (Slovenian)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Slovenian)",
+  "changePlan": "[SL] Change Plan (Slovenian)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Slovenian)",
+  "errorLoadingStaff": "[SL] Error loading staff (Slovenian)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Slovenian)",
+  "updateYourBusinessInformation": "[SL] Update your business information (Slovenian)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "noProvidersFoundAddYourFirstProvider": "No providers found. Add your first provider!",
+  "noProvidersFoundAddYourFirstProvider": "[SL] No providers found. Add your first provider!",
   "@noProvidersFoundAddYourFirstProvider": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Slovenian)",
+  "parentDashboard": "[SL] Parent Dashboard (Slovenian)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Slovenian)",
+  "menu": "[SL] Menu (Slovenian)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Slovenian)",
+  "studioBooking": "[SL] Studio Booking (Slovenian)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Slovenian)",
+  "about1": "[SL] About (Slovenian)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Slovenian)",
+  "multipleChoice": "[SL] Multiple Choice (Slovenian)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "dateAppointmentscheduledattostring": "Date: {date} (Slovenian)",
+  "dateAppointmentscheduledattostring": "[SL] Date: {date} (Slovenian)",
   "@dateAppointmentscheduledattostring": {
     "description": "Localization key for: Date: {date}"
   },
-  "studioBookingIsOnlyAvailableOnWeb": "Studio booking is only available on web (Slovenian)",
+  "studioBookingIsOnlyAvailableOnWeb": "[SL] Studio booking is only available on web (Slovenian)",
   "@studioBookingIsOnlyAvailableOnWeb": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Slovenian)",
+  "errorLoadingBranchesE": "[SL] Error loading branches: $e (Slovenian)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "ud83dudcc5Bookingdatetimetolocal": "\\uD83D\\uDCC5 {dateTime} (Slovenian)",
+  "ud83dudcc5Bookingdatetimetolocal": "[SL] \\uD83D\\uDCC5 {dateTime} (Slovenian)",
   "@ud83dudcc5Bookingdatetimetolocal": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Slovenian)",
+  "none": "[SL] None (Slovenian)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Slovenian)",
+  "failedToUpdateConsentE": "[SL] Failed to update consent: $e (Slovenian)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Slovenian)",
+  "welcome1": "[SL] Welcome (Slovenian)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Slovenian)",
+  "failedToCreateSessionE": "[SL] Failed to create session: $e (Slovenian)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Slovenian)",
+  "inviteContact": "[SL] Invite Contact (Slovenian)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Slovenian)",
+  "surveyEditor": "[SL] Survey Editor (Slovenian)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Slovenian)",
+  "failedToStartBasicSubscriptionE": "[SL] Failed to start Basic subscription: $e (Slovenian)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Slovenian)",
+  "mySchedule": "[SL] My Schedule (Slovenian)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Slovenian)",
+  "studioDashboard": "[SL] Studio Dashboard (Slovenian)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Slovenian)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[SL] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[SL] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Slovenian)",
+  "settingsSavedSuccessfully": "[SL] Settings saved successfully! (Slovenian)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Slovenian)",
+  "linkCopiedToClipboard": "[SL] Link copied to clipboard! (Slovenian)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Slovenian)",
+  "accept1": "[SL] Accept (Slovenian)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Slovenian)",
+  "noAvailableSlots": "[SL] No available slots (Slovenian)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Slovenian)",
+  "makeGamePublic": "[SL] Make Game Public (Slovenian)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "permissionPermissioncategoryUpdatedToNewvalue": "Permission {category} updated to $newValue (Slovenian)",
+  "permissionPermissioncategoryUpdatedToNewvalue": "[SL] Permission {category} updated to $newValue (Slovenian)",
   "@permissionPermissioncategoryUpdatedToNewvalue": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Slovenian)",
+  "roomDeletedSuccessfully": "[SL] Room deleted successfully! (Slovenian)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Slovenian)",
+  "businessCalendar": "[SL] Business Calendar (Slovenian)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Slovenian)",
+  "addAvailability": "[SL] Add Availability (Slovenian)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Slovenian)",
+  "ambassadorOnboarding": "[SL] Ambassador Onboarding (Slovenian)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Slovenian)",
+  "phoneProfileasyncphone": "[SL] Phone: {phone} (Slovenian)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Slovenian)",
+  "addNewRoom": "[SL] Add New Room (Slovenian)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Slovenian)",
+  "requireParentApproval": "[SL] Require Parent Approval (Slovenian)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Slovenian)",
+  "closed": "[SL] Closed (Slovenian)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Slovenian)",
+  "exportAsPdf": "[SL] Export as PDF (Slovenian)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Slovenian)",
+  "enableVibration": "[SL] Enable Vibration (Slovenian)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Slovenian)",
+  "toAvailendformatcontext": "[SL] To: {endTime} (Slovenian)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Slovenian)",
+  "yourUpgradeCodeUpgradecode": "[SL] Your upgrade code: $upgradeCode (Slovenian)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[SL] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Slovenian)",
+  "country": "[SL] Country (Slovenian)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[SL] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Slovenian)",
+  "staffArgsstaffdisplayname": "[SL] Staff: {staffName} (Slovenian)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Slovenian)",
+  "revokeConsent": "[SL] Revoke Consent (Slovenian)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Slovenian)",
+  "settings1": "[SL] Settings (Slovenian)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Slovenian)",
+  "cancel1": "[SL] Cancel (Slovenian)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "subscriptionActivatedSuccessfully": "Subscription activated successfully! (Slovenian)",
+  "subscriptionActivatedSuccessfully": "[SL] Subscription activated successfully! (Slovenian)",
   "@subscriptionActivatedSuccessfully": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[SL] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Slovenian)",
+  "broadcast": "[SL] Broadcast (Slovenian)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Slovenian)",
+  "noEventsScheduledThisWeek": "[SL] No events scheduled this week (Slovenian)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Slovenian)",
+  "googleCalendar": "[SL] Google Calendar (Slovenian)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Slovenian)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Slovenian)",
+  "childDashboard": "[SL] Child Dashboard (Slovenian)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Slovenian)",
+  "failedToUploadBackgroundE": "[SL] Failed to upload background: $e (Slovenian)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[SL] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[SL] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[SL] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Slovenian)",
+  "noAppointments": "[SL] No appointments (Slovenian)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Slovenian)",
+  "unlimitedBookingsPerWeek": "[SL] • Unlimited bookings per week (Slovenian)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Slovenian)",
+  "scheduledAtScheduledat": "[SL] Scheduled at: $scheduledAt (Slovenian)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Slovenian)",
+  "selectStaff": "[SL] Select Staff (Slovenian)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "subscriptionCancelledSuccessfully": "Subscription cancelled successfully (Slovenian)",
+  "subscriptionCancelledSuccessfully": "[SL] Subscription cancelled successfully (Slovenian)",
   "@subscriptionCancelledSuccessfully": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Slovenian)",
+  "cancelAppointment": "[SL] Cancel Appointment (Slovenian)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[SL] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Slovenian)",
+  "businessSignup": "[SL] Business Signup (Slovenian)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "businessCompletionScreenComingSoon": "Business Completion Screen - Coming Soon (Slovenian)",
+  "businessCompletionScreenComingSoon": "[SL] Business Completion Screen - Coming Soon (Slovenian)",
   "@businessCompletionScreenComingSoon": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Slovenian)",
+  "createGame1": "[SL] Create Game (Slovenian)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Slovenian)",
+  "valuetoint": "[SL] {value} (Slovenian)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Slovenian)",
+  "pleaseEnterAPromoCode": "[SL] Please enter a promo code (Slovenian)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Slovenian)",
+  "errorLoadingAvailabilityE": "[SL] Error loading availability: $e (Slovenian)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Slovenian)",
+  "parentalControls": "[SL] Parental Controls (Slovenian)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Slovenian)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Slovenian)",
+  "childLinkedSuccessfully": "[SL] Child linked successfully! (Slovenian)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Slovenian)",
+  "create": "[SL] Create (Slovenian)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Slovenian)",
+  "noExternalMeetingsFound": "[SL] No external meetings found. (Slovenian)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Slovenian)",
+  "staffSelectionstaffdisplayname": "[SL] Staff: {staffName} (Slovenian)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[SL] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Slovenian)",
+  "schedulerScreen": "[SL] Scheduler Screen (Slovenian)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Slovenian)",
+  "clientUpdatedSuccessfully": "[SL] Client updated successfully! (Slovenian)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Slovenian)",
+  "surveyResponses": "[SL] Survey Responses (Slovenian)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Slovenian)",
+  "syncToOutlook": "[SL] Sync to Outlook (Slovenian)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Slovenian)",
+  "saveChanges": "[SL] Save Changes (Slovenian)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Slovenian)",
+  "pickTime": "[SL] Pick Time (Slovenian)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Slovenian)",
+  "registrationFailedEtostring": "[SL] Registration failed: {error} (Slovenian)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Slovenian)",
+  "analytics": "[SL] Analytics (Slovenian)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Slovenian)",
+  "errorLoadingEvents": "[SL] Error loading events (Slovenian)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[SL] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[SL] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Slovenian)",
+  "success1": "[SL] Success (Slovenian)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[SL] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Slovenian)",
+  "fromAvailstartformatcontext": "[SL] From: {startTime} (Slovenian)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Slovenian)",
+  "readWrite": "[SL] Read & Write (Slovenian)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "redirectingToStripeCheckoutForBasicPlan": "Redirecting to Stripe checkout for Basic plan... (Slovenian)",
+  "redirectingToStripeCheckoutForBasicPlan": "[SL] Redirecting to Stripe checkout for Basic plan... (Slovenian)",
   "@redirectingToStripeCheckoutForBasicPlan": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[SL] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Slovenian)",
+  "pickDate": "[SL] Pick Date (Slovenian)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Slovenian)",
+  "chatBooking": "[SL] Chat Booking (Slovenian)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Slovenian)",
+  "noQuestionsAdded": "[SL] No questions added (Slovenian)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[SL] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[SL] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Slovenian)",
+  "typeOpenCall": "[SL] Type: Open Call (Slovenian)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[SL] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[SL] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Slovenian)",
+  "invoiceCreatedSuccessfully": "[SL] Invoice created successfully! (Slovenian)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Slovenian)",
+  "noTimeSeriesDataAvailable": "[SL] No time series data available (Slovenian)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[SL] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "timestamp_formatdatelogtimestamp": "Timestamp: {timestamp}",
+  "timestamp_formatdatelogtimestamp": "[SL] Timestamp: {timestamp}",
   "@timestamp_formatdatelogtimestamp": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Slovenian)",
+  "failedToSendPrivacyRequestE": "[SL] Failed to send privacy request: $e (Slovenian)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Slovenian)",
+  "chooseYourPlan": "[SL] Choose Your Plan (Slovenian)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Slovenian)",
+  "playtimeManagement": "[SL] Playtime Management (Slovenian)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Slovenian)",
+  "availability": "[SL] Availability (Slovenian)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Slovenian)",
+  "eventCreated": "[SL] Event created (Slovenian)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Slovenian)",
+  "subscribeToBasic499mo": "[SL] Subscribe to Basic (€4.99/mo) (Slovenian)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Slovenian)",
+  "completion": "[SL] Completion (Slovenian)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Slovenian)",
+  "supportTicketSubmitted": "[SL] Support ticket submitted (Slovenian)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Slovenian)",
+  "monetizationSettings": "[SL] Monetization Settings (Slovenian)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Slovenian)",
+  "noBookingsFound": "[SL] No bookings found (Slovenian)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[SL] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Slovenian)",
+  "deleteSurvey": "[SL] Delete Survey (Slovenian)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Slovenian)",
+  "gameApprovedSuccessfully": "[SL] Game approved successfully! (Slovenian)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Slovenian)",
+  "errorLoadingPermissionsError": "[SL] Error loading permissions: $error (Slovenian)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Slovenian)",
+  "referrals": "[SL] Referrals (Slovenian)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Slovenian)",
+  "crm": "[SL] CRM (Slovenian)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Slovenian)",
+  "gameRejected": "[SL] Game rejected (Slovenian)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Slovenian)",
+  "appointments": "[SL] Appointments (Slovenian)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Slovenian)",
+  "onboardingScreen": "[SL] Onboarding Screen (Slovenian)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Slovenian)",
+  "welcomeToYourStudio": "[SL] Welcome to your studio (Slovenian)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Slovenian)",
+  "update": "[SL] Update (Slovenian)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Slovenian)",
+  "retry1": "[SL] Retry (Slovenian)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Slovenian)",
+  "booking": "[SL] Booking (Slovenian)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Slovenian)",
+  "parentalSettings": "[SL] Parental Settings (Slovenian)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Slovenian)",
+  "language": "[SL] Language (Slovenian)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Slovenian)",
+  "deleteSlot": "[SL] Delete Slot (Slovenian)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[SL] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[SL] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Slovenian)",
+  "createNewGame": "[SL] Create New Game (Slovenian)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Slovenian)",
+  "next1": "[SL] Next (Slovenian)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Slovenian)",
+  "backgroundUploadedSuccessfully": "[SL] Background uploaded successfully! (Slovenian)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Slovenian)",
+  "noAppointmentRequestsFound": "[SL] No appointment requests found. (Slovenian)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Slovenian)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Slovenian)",
+  "restrictMatureContent": "[SL] Restrict mature content (Slovenian)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Slovenian)",
+  "ambassadors": "[SL] Ambassadors (Slovenian)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Slovenian)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Slovenian)",
+  "paymentWasCancelled": "[SL] Payment was cancelled (Slovenian)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Slovenian)",
+  "clearAll": "[SL] Clear All (Slovenian)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Slovenian)",
+  "viewDetails": "[SL] View Details (Slovenian)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Slovenian)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "liveSessionScheduledWaitingForParentApproval": "Live session scheduled! Waiting for parent approval... (Slovenian)",
+  "liveSessionScheduledWaitingForParentApproval": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@liveSessionScheduledWaitingForParentApproval": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Slovenian)",
+  "failedToCreateGameE": "[SL] Failed to create game: $e (Slovenian)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Slovenian)",
+  "noChartDataAvailable": "[SL] No chart data available (Slovenian)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Slovenian)",
+  "phonebasedBookingSystem": "[SL] • Phone-based booking system (Slovenian)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Slovenian)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Slovenian)",
+  "invoices": "[SL] Invoices (Slovenian)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "pleaseActivateYourBusinessProfileToContinue": "Please activate your business profile to continue. (Slovenian)",
+  "pleaseActivateYourBusinessProfileToContinue": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@pleaseActivateYourBusinessProfileToContinue": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Slovenian)",
+  "scheduledAtArgsscheduledat": "[SL] Scheduled at: {scheduledAt} (Slovenian)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "durationDurationinminutes0Minutes": "Duration: {duration} minutes (Slovenian)",
+  "durationDurationinminutes0Minutes": "[SL] Duration: {duration} minutes (Slovenian)",
   "@durationDurationinminutes0Minutes": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Slovenian)",
+  "tryAgain": "[SL] Try Again (Slovenian)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Slovenian)",
+  "deleteBackground": "[SL] Delete Background (Slovenian)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Slovenian)",
+  "currentTierTiertouppercase": "[SL] Current Tier: {tier} (Slovenian)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[SL] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "noClientsFoundAddYourFirstClient": "No clients found. Add your first client! (Slovenian)",
+  "noClientsFoundAddYourFirstClient": "[SL] No clients found. Add your first client! (Slovenian)",
   "@noClientsFoundAddYourFirstClient": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "settingsDialogWillBeImplementedHere": "Settings dialog will be implemented here.",
+  "settingsDialogWillBeImplementedHere": "[SL] Settings dialog will be implemented here.",
   "@settingsDialogWillBeImplementedHere": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[SL] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Slovenian)",
+  "appointmentRequests": "[SL] Appointment Requests (Slovenian)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Slovenian)",
+  "forward": "[SL] Forward (Slovenian)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Slovenian)",
+  "roomAddedSuccessfully": "[SL] Room added successfully! (Slovenian)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Slovenian)",
+  "option": "[SL] • $option (Slovenian)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Slovenian)",
+  "responseIndex1": "[SL] Response #{number} (Slovenian)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Slovenian)",
+  "crmDashboardWithAnalytics": "[SL] • CRM dashboard with analytics (Slovenian)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Slovenian)",
+  "contentLibrary1": "[SL] Content Library (Slovenian)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Slovenian)",
+  "reply": "[SL] Reply (Slovenian)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Slovenian)",
+  "subscriptionManagement": "[SL] Subscription Management (Slovenian)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "monetizationSettingsWillBeImplementedHere": "Monetization settings will be implemented here (Slovenian)",
+  "monetizationSettingsWillBeImplementedHere": "[SL] Monetization settings will be implemented here (Slovenian)",
   "@monetizationSettingsWillBeImplementedHere": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Slovenian)",
+  "failedToApplyPromoCodeE": "[SL] Failed to apply promo code: $e (Slovenian)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[SL] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Slovenian)",
+  "localizationContribution": "[SL] Localization Contribution (Slovenian)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Slovenian)",
+  "parentalConsent": "[SL] Parental Consent (Slovenian)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Slovenian)",
+  "businessSignupScreenComingSoon": "[SL] Business Signup Screen - Coming Soon (Slovenian)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "areYouSureYouWantToDeleteThisAppointment": "Are you sure you want to delete this appointment? (Slovenian)",
+  "areYouSureYouWantToDeleteThisAppointment": "[SL] Are you sure you want to delete this appointment? (Slovenian)",
   "@areYouSureYouWantToDeleteThisAppointment": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Slovenian)",
+  "syncAppointment": "[SL] Sync Appointment (Slovenian)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Slovenian)",
+  "iConsent": "[SL] I Consent (Slovenian)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Slovenian)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Slovenian)",
+  "businessSetupScreenComingSoon": "[SL] Business Setup Screen - Coming Soon (Slovenian)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Slovenian)",
+  "edit1": "[SL] Edit (Slovenian)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Slovenian)",
+  "noEventsScheduledThisMonth": "[SL] No events scheduled this month (Slovenian)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Slovenian)",
+  "businessDashboard": "[SL] Business Dashboard (Slovenian)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Slovenian)",
+  "noMessagesFound": "[SL] No messages found. (Slovenian)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[SL] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Slovenian)",
+  "manageStaffAvailability": "[SL] Manage Staff Availability (Slovenian)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Slovenian)",
+  "noMissingTranslations": "[SL] No missing translations (Slovenian)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Slovenian)",
+  "skip": "[SL] Skip (Slovenian)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[SL] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Slovenian)",
+  "errorLoadingReferralCode": "[SL] Error loading referral code (Slovenian)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Slovenian)",
+  "allCountries": "[SL] All Countries (Slovenian)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Slovenian)",
+  "deleteGame": "[SL] Delete Game (Slovenian)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Slovenian)",
+  "staffManagementTools": "[SL] • Staff management tools (Slovenian)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Slovenian)",
+  "deleteMessage": "[SL] Delete Message (Slovenian)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "receiveBookingNotificationsViaSms": "Receive booking notifications via SMS (Slovenian)",
+  "receiveBookingNotificationsViaSms": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@receiveBookingNotificationsViaSms": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[SL] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "errorLoadingBookingsSnapshoterror": "Error loading bookings: {error} (Slovenian)",
+  "errorLoadingBookingsSnapshoterror": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@errorLoadingBookingsSnapshoterror": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Slovenian)",
+  "openingCustomerPortal": "[SL] Opening customer portal... (Slovenian)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Slovenian)",
+  "signOut": "[SL] Sign Out (Slovenian)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Slovenian)",
+  "nameProfilename": "[SL] Name: {name} (Slovenian)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "businessProfileEntryScreenComingSoon": "Business Profile Entry Screen - Coming Soon (Slovenian)",
+  "businessProfileEntryScreenComingSoon": "شاشة إدخال الملف التجاري - قريباً",
   "@businessProfileEntryScreenComingSoon": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Slovenian)",
+  "upgradeToBusiness": "[SL] Upgrade to Business (Slovenian)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Slovenian)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Slovenian)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Slovenian)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Slovenian)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Slovenian)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "businessAppointmentsEntryScreenComingSoon": "Business Appointments Entry Screen - Coming Soon (Slovenian)",
+  "businessAppointmentsEntryScreenComingSoon": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@businessAppointmentsEntryScreenComingSoon": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Slovenian)",
+  "viewResponses": "[SL] View Responses (Slovenian)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Slovenian)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Slovenian)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Slovenian)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Slovenian)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Slovenian)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Slovenian)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Slovenian)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "noInvoicesFoundCreateYourFirstInvoice": "No invoices found. Create your first invoice! (Slovenian)",
+  "noInvoicesFoundCreateYourFirstInvoice": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@noInvoicesFoundCreateYourFirstInvoice": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Slovenian)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Slovenian)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }
