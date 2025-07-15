@@ -20,7 +20,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     UINotificationService? notificationService,
   })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance,
-        final _connectivity = connectivity ?? Connectivity(),
+        _connectivity = connectivity ?? Connectivity(),
         _notificationService = notificationService;
   static const String _bookingsBoxName = 'offline_bookings';
   static const String _servicesBoxName = 'offline_services';
@@ -52,8 +52,8 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   /// Initialize Hive boxes and connectivity monitoring
   Future<void> initialize() async {
     // Initialize Hive boxes
-    final _bookingsBox = await Hive.openBox<OfflineBooking>(_bookingsBoxName);
-    final _servicesBox = await Hive.openBox<OfflineServiceOffering>(_servicesBoxName);
+    _bookingsBox = await Hive.openBox<OfflineBooking>(_bookingsBoxName);
+    _servicesBox = await Hive.openBox<OfflineServiceOffering>(_servicesBoxName);
     _pendingOperationsBox =
         await Hive.openBox<String>(_pendingOperationsBoxName);
 
@@ -111,9 +111,9 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
     // Count recent failures
     var recentFailures = 0;
-    cutoffTime = DateTime.now().subtract(const Duration(minutes: 5));
+    final cutoffTime = DateTime.now().subtract(const Duration(minutes: 5));
 
-    for (booking in _bookingsBox.values) {
+    for (final booking in _bookingsBox.values) {
       if (booking.syncStatus == 'failed' &&
           booking.lastSyncAttempt.isAfter(cutoffTime)) {
         recentFailures++;
@@ -161,7 +161,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     _notificationService?.showInfo(
         'Retrying ${failedBookings.length} failed booking${failedBookings.length == 1 ? '' : 's'}...');
 
-    for (booking in failedBookings) {
+    for (final booking in failedBookings) {
       final retryCount = _getRetryCount(booking.id);
       if (retryCount >= _maxRetryAttempts) {
         // Mark as permanently failed
@@ -192,8 +192,8 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
         );
 
         // Schedule retry with exponential backoff
-        delay = _calculateRetryDelay(retryCount);
-        final _exponentialBackoffTimer = Timer(delay, _retryFailedOperations);
+        final delay = _calculateRetryDelay(retryCount);
+        _exponentialBackoffTimer = Timer(delay, _retryFailedOperations);
       }
     }
   }
@@ -204,7 +204,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     if (booking == null) return 0;
 
     // Count failed attempts in the last hour
-    cutoffTime = DateTime.now().subtract(const Duration(hours: 1));
+    final cutoffTime = DateTime.now().subtract(const Duration(hours: 1));
     var count = 0;
 
     // This is a simplified approach - in a real implementation,

@@ -98,9 +98,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         )
         ..loadRequest(Uri.parse(checkoutUrl));
     } catch (e) {
+      setState(() {
         _hasError = true;
-        final _errorMessage = 'Failed to initialize checkout: $e';
-        var _isLoading = false;
+        _errorMessage = 'Failed to initialize checkout: $e';
+        _isLoading = false;
       });
     }
   }
@@ -125,8 +126,8 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
       // Handle error
       setState(() {
         _hasError = true;
-        final _errorMessage = 'Invalid checkout session';
-        var _isLoading = false;
+        _errorMessage = 'Invalid checkout session';
+        _isLoading = false;
       });
     }
   }
@@ -176,8 +177,8 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
               onPressed: () {
                 setState(() {
                   _hasError = false;
-                  final _errorMessage = '';
-                  var _isLoading = true;
+                  _errorMessage = '';
+                  _isLoading = true;
                 });
                 _initializeCheckout();
               },
