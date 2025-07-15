@@ -157,6 +157,12 @@ class FCMTokenState {
   factory FCMTokenState.success(String token) => FCMTokenState._(token: token);
 
   factory FCMTokenState.error(String error) => FCMTokenState._(error: error);
+
+  /// Check if token is available
+  bool get hasToken => token != null;
+
+  /// Check if there's an error
+  bool get hasError => error != null;
 }
 
 /// Provider for FCM Token

@@ -17,27 +17,27 @@ class SocialAccountConflictDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
     final conflictingEmail = error.email ?? 'this email';
 
     return AlertDialog(
-      title: Text(l10n.socialAccountConflictTitle),
+      title: Text(l10n?.socialAccountConflictTitle ?? 'Account Conflict'),
       content: Text(
-        l10n.socialAccountConflictMessage(conflictingEmail),
+        l10n?.socialAccountConflictMessage(conflictingEmail) ?? 'An account with this email already exists.',
       ),
       actions: [
         TextButton(
           onPressed: onCancel ?? () => Navigator.of(context).pop(),
-          child: Text(l10n.cancel),
+          child: Text(l10n?.cancel ?? 'Cancel'),
         ),
         TextButton(
           onPressed: onSignInWithExistingMethod ??
               () => Navigator.of(context).pop('existing'),
-          child: Text(l10n.signInWithExistingMethod),
+          child: Text(l10n?.signInWithExistingMethod ?? 'Sign in with existing method'),
         ),
         ElevatedButton(
           onPressed: onLinkAccounts ?? () => Navigator.of(context).pop('link'),
-          child: Text(l10n.linkAccounts),
+          child: Text(l10n?.linkAccounts ?? 'Link Accounts'),
         ),
       ],
     );
