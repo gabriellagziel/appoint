@@ -59,7 +59,7 @@ class CustomDeepLinkService {
           // Removed debug print: debugPrint('App link error: $error');
         },
       );
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error initializing deep links: $e');
     }
   }
@@ -111,7 +111,7 @@ class CustomDeepLinkService {
             // Removed debug print: debugPrint('Unknown deep link path: ${pathSegments[0]}');
         }
       }
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error handling deep link: $e');
     }
     */
@@ -203,7 +203,7 @@ class CustomDeepLinkService {
       );
 
       return link;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error creating meeting link: $e');
       // Fallback to simple URL
       const baseUrl = EnvironmentConfig.deepLinkBaseUrl;
@@ -222,7 +222,7 @@ class CustomDeepLinkService {
       // For now, return the long URL
       // In production, you would call a URL shortener API
       return longUrl;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error creating short link: $e');
       return longUrl;
     }
