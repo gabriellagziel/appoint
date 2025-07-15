@@ -1,47 +1,58 @@
 # CI/CD Pipeline Documentation
 
-This directory contains the complete CI/CD pipeline for the Appoint project. The pipeline is designed to be production-grade, secure, and maintainable.
+This directory contains the unified CI/CD pipeline for the Appoint project. The pipeline is designed to be production-grade, secure, and maintainable.
 
 ## Overview
 
-The CI/CD pipeline consists of several specialized workflows that work together to ensure code quality, security, and reliable deployments across all platforms.
+The CI/CD pipeline consists of five specialized workflows that work together to ensure code quality, security, and reliable deployments across all platforms.
 
 ## Workflow Files
 
-### 1. `ci-cd-pipeline.yml` - Main CI/CD Pipeline
-**Purpose**: Comprehensive pipeline that handles all aspects of the development lifecycle.
+### 1. `test.yml` - Test & Analyze
+**Purpose**: Handles all testing, analysis, and code quality checks.
 
 **Features**:
-- ✅ Code analysis and linting
-- ✅ Unit, widget, and integration tests
-- ✅ Security scanning
-- ✅ Web, Android, and iOS builds
-- ✅ Firebase and DigitalOcean deployments
-- ✅ Release creation
-- ✅ Notifications and rollback mechanisms
+- ✅ Code analysis and linting (`flutter analyze`)
+- ✅ Unit, widget, and integration tests (`flutter test --coverage`)
+- ✅ Security scanning and dependency analysis
+- ✅ Localization checks (`flutter gen-l10n`)
+- ✅ Code formatting verification
+- ✅ Spell checking
 
 **Triggers**:
 - Push to `main` or `develop` branches
 - Pull requests to `main` or `develop`
-- Manual trigger with customizable options
+- Manual trigger
 
-### 2. `ios-build.yml` - iOS Build and Deploy
-**Purpose**: Specialized workflow for iOS builds with proper code signing.
+### 2. `build.yml` - Build
+**Purpose**: Handles web, Android, and iOS builds with proper artifact management.
 
 **Features**:
-- ✅ iOS app building
-- ✅ Code signing with Apple certificates
-- ✅ TestFlight deployment
-- ✅ App Store submission
-- ✅ Manual trigger options
+- ✅ Web app building (`flutter build web`)
+- ✅ Android APK and App Bundle builds (`flutter build appbundle`)
+- ✅ iOS app building (`flutter build ios`)
+- ✅ Artifact upload and retention
+- ✅ Build verification
+
+**Triggers**:
+- Push to `main` or `develop` branches
+- Pull requests to `main` or `develop`
+- Manual trigger
+
+### 3. `deploy.yml` - Deploy
+**Purpose**: Handles Firebase hosting deployment and release creation.
+
+**Features**:
+- ✅ Firebase Hosting deployment
+- ✅ Release creation on tags
+- ✅ Slack notifications
+- ✅ Deployment verification
 
 **Triggers**:
 - Push to `main` branch
-- Tags starting with `v*`
-- Pull requests to `main`
-- Manual trigger
+- Manual trigger with environment selection
 
-### 3. `android-build.yml` - Android Build and Deploy
+### 4. `android_release.yml` - Android Release
 **Purpose**: Specialized workflow for Android builds with Play Store deployment.
 
 **Features**:
@@ -54,76 +65,65 @@ The CI/CD pipeline consists of several specialized workflows that work together 
 **Triggers**:
 - Push to `main` branch
 - Tags starting with `v*`
-- Pull requests to `main`
 - Manual trigger
 
-### 4. `web-deploy.yml` - Web Deploy
-**Purpose**: Specialized workflow for web deployments.
+### 5. `ios_build.yml` - iOS Build
+**Purpose**: Specialized workflow for iOS builds with App Store deployment.
 
 **Features**:
-- ✅ Web app building
-- ✅ Firebase Hosting deployment
-- ✅ DigitalOcean App Platform deployment
-- ✅ Staging environment support
+- ✅ iOS app building
+- ✅ Code signing with Apple certificates
+- ✅ TestFlight deployment
+- ✅ App Store submission
 - ✅ Manual trigger options
 
 **Triggers**:
 - Push to `main` branch
-- Pull requests to `main`
-- Manual trigger
-
-### 5. `security-qa.yml` - Security and Quality Assurance
-**Purpose**: Comprehensive security and quality checks.
-
-**Features**:
-- ✅ Dependency vulnerability scanning
-- ✅ Code security analysis
-- ✅ Secrets scanning
-- ✅ Performance analysis
-- ✅ Accessibility testing
-- ✅ Code coverage analysis
-- ✅ Weekly scheduled scans
-
-**Triggers**:
-- Push to `main` or `develop`
-- Pull requests to `main` or `develop`
-- Weekly schedule (Mondays at 2 AM)
+- Tags starting with `v*`
 - Manual trigger
 
 ## Pipeline Architecture
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Code Push     │───▶│   Analysis      │───▶│   Security      │
+│   Code Push     │───▶│   Test & Analyze│───▶│   Build         │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
                                 │                       │
                                 ▼                       ▼
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Tests         │◀───│   Cache Setup   │    │   Build Jobs    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                │                       │
-                                ▼                       ▼
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Deployments   │◀───│   Artifacts     │◀───│   Notifications │
+│   Deploy        │◀───│   Android/iOS   │◀───│   Artifacts     │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
 ## Job Dependencies
 
-### Main Pipeline
-1. **setup-cache** → **analyze, test, security-scan**
-2. **analyze, test, security-scan** → **build-web, build-android, build-ios**
-3. **build-web** → **deploy-firebase, deploy-digitalocean**
-4. **build-android, build-ios, build-web** → **create-release**
-5. **deploy-firebase, deploy-digitalocean, create-release** → **notify**
+### Test & Analyze Pipeline
+- **analyze**: Code analysis, linting, formatting
+- **test**: Unit, widget, and integration tests (parallel)
+- **security-scan**: Security audit and dependency analysis
+- **l10n-check**: Localization verification
 
-### iOS Pipeline
-1. **build-ios** → **code-sign-and-archive**
-2. **code-sign-and-archive** → **deploy-testflight, deploy-app-store**
+### Build Pipeline
+- **build-web**: Web app building and verification
+- **build-android**: Android APK and App Bundle builds
+- **build-ios**: iOS app building
 
-### Android Pipeline
-1. **build-android** → **sign-and-release**
-2. **sign-and-release** → **deploy-play-store, deploy-play-store-production**
+### Deploy Pipeline
+- **deploy-firebase**: Firebase Hosting deployment
+- **create-release**: GitHub release creation (on tags)
+- **notify**: Slack notifications
+
+### Android Release Pipeline
+- **build-android**: Android builds
+- **sign-and-release**: Code signing and artifact preparation
+- **deploy-play-store**: Play Store internal testing
+- **deploy-play-store-production**: Play Store production
+
+### iOS Build Pipeline
+- **build-ios**: iOS builds
+- **code-sign-and-archive**: Code signing and IPA creation
+- **deploy-testflight**: TestFlight deployment
+- **deploy-app-store**: App Store submission
 
 ## Environment Variables
 
@@ -135,7 +135,30 @@ env:
   DART_VERSION: '3.5.4'
   NODE_VERSION: '18'
   JAVA_VERSION: '17'
+  XCODE_VERSION: '15.0'
 ```
+
+## Required Secrets
+
+### Firebase
+- `FIREBASE_TOKEN`: Firebase CLI token for deployments
+
+### Android
+- `ANDROID_KEYSTORE_BASE64`: Base64 encoded keystore file
+- `ANDROID_KEYSTORE_PASSWORD`: Keystore password
+- `ANDROID_KEY_ALIAS`: Key alias
+- `ANDROID_KEY_PASSWORD`: Key password
+- `PLAY_STORE_JSON_KEY`: Google Play Store service account JSON
+
+### iOS
+- `IOS_P12_CERTIFICATE`: Base64 encoded P12 certificate
+- `IOS_P12_PASSWORD`: P12 certificate password
+- `APPLE_ISSUER_ID`: Apple Developer Team ID
+- `APPLE_API_KEY_ID`: Apple API key ID
+- `APPLE_API_PRIVATE_KEY`: Apple API private key
+
+### Notifications
+- `SLACK_WEBHOOK_URL`: Slack webhook for notifications
 
 ## Caching Strategy
 
@@ -151,7 +174,7 @@ The pipeline implements comprehensive caching:
 ### Vulnerability Scanning
 - Dependency vulnerability checks
 - Code security analysis
-- Secrets scanning with TruffleHog and Gitleaks
+- Secrets scanning
 - Hardcoded secrets detection
 
 ### Code Quality
@@ -170,7 +193,6 @@ The pipeline implements comprehensive caching:
 
 ### Web
 - **Firebase Hosting**: Primary web deployment
-- **DigitalOcean App Platform**: Secondary deployment
 - **Staging Environment**: Automatic deployment from `develop` branch
 
 ### Mobile
@@ -181,21 +203,28 @@ The pipeline implements comprehensive caching:
 
 All workflows support manual triggers with customizable options:
 
-### Main Pipeline
-- Environment selection (staging/production)
-- Platform selection (all/web/android/ios)
-- Skip tests option
+### Test & Analyze
+- No additional inputs required
 
-### Platform-Specific
+### Build
+- No additional inputs required
+
+### Deploy
+- Environment selection (staging/production)
+
+### Android Release
 - Build type selection (debug/release/profile)
-- Deployment options (TestFlight, Play Store, etc.)
+- Deploy to Play Store option
+
+### iOS Build
+- Build type selection (debug/release/profile)
+- Deploy to TestFlight option
 
 ## Monitoring and Notifications
 
 ### Success Notifications
 - Slack channel: `#deployments`
-- Discord webhook
-- Email notifications (if configured)
+- Detailed status reporting
 
 ### Failure Notifications
 - Immediate failure alerts
@@ -208,34 +237,17 @@ All workflows support manual triggers with customizable options:
 - Test coverage
 - Security scan results
 
-## Rollback Procedures
+## Artifact Management
 
-### Automatic Rollback
-- Failed deployments trigger automatic rollback
-- Previous version restoration
-- Health checks before rollback
+### Test Artifacts
+- Coverage reports for each test type
+- Retention: 30 days
 
-### Manual Rollback
-- Manual trigger for rollback
-- Version selection
-- Confirmation steps
-
-## Performance Optimizations
-
-### Parallel Execution
-- Independent jobs run in parallel
-- Optimized job dependencies
-- Reduced total pipeline time
-
-### Caching
-- Comprehensive caching strategy
-- Reduced build times
-- Cost optimization
-
-### Resource Management
-- Appropriate timeout values
-- Resource limits
-- Cleanup procedures
+### Build Artifacts
+- Web build: `build/web/`
+- Android builds: APKs and App Bundle
+- iOS builds: App bundle and IPA
+- Retention: 30 days
 
 ## Troubleshooting
 
@@ -308,9 +320,8 @@ When modifying the pipeline:
 
 ## Version History
 
-- **v1.0.0**: Initial pipeline setup
-- **v1.1.0**: Added security scanning
-- **v1.2.0**: Added mobile deployments
-- **v1.3.0**: Added DigitalOcean support
-- **v1.4.0**: Enhanced caching and performance
-- **v1.5.0**: Added comprehensive monitoring 
+- **v2.0.0**: Unified workflow structure
+- **v2.1.0**: Enhanced security scanning
+- **v2.2.0**: Improved artifact management
+- **v2.3.0**: Added comprehensive monitoring
+- **v2.4.0**: Enhanced error handling and notifications 
