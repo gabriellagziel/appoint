@@ -28,14 +28,14 @@ class BusinessAvailabilityScreen extends ConsumerWidget {
 
   Future<void> _pickTime(final BuildContext context, final TimeOfDay initial,
       void Function(TimeOfDay) onPicked,) async {
-    picked = await showTimePicker(context: context, initialTime: initial);
+    final picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) onPicked(picked);
   }
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    availability = ref.watch(businessAvailabilityProvider);
-    notifier = ref.read(businessAvailabilityProvider.notifier);
+    final availability = ref.watch(businessAvailabilityProvider);
+    final notifier = ref.read(businessAvailabilityProvider.notifier);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Business Availability'),

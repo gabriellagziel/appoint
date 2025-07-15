@@ -27,8 +27,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    palette = ref.watch(themeNotifierProvider).palette;
-    darkMode = ref.watch(themeModeProvider) == ThemeMode.dark;
+    final palette = ref.watch(themeNotifierProvider).palette;
+    final darkMode = ref.watch(themeModeProvider) == ThemeMode.dark;
 
     return AppScaffold(
       title: 'Settings',

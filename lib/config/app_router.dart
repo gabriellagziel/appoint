@@ -66,7 +66,7 @@ import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
 
-final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
+final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
     routes: [
       GoRoute(

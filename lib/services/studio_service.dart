@@ -6,7 +6,7 @@ class StudioService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<List<StaffMember>> fetchStaff(String studioId) async {
-    snap = await _firestore.collection('studios/$studioId/staff').get();
+    final snap = await _firestore.collection('studios/$studioId/staff').get();
     return snap.docs.map((d) => StaffMember.fromJson(d.data())).toList();
   }
 

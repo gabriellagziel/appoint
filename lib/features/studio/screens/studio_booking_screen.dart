@@ -9,7 +9,7 @@ class StudioBookingScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    asyncSlots = ref.watch(staffAvailabilityProvider);
+    final asyncSlots = ref.watch(staffAvailabilityProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Studio Booking')),
@@ -24,7 +24,7 @@ class StudioBookingScreen extends ConsumerWidget {
             itemCount: slots.length,
             itemBuilder: (ctx, final i) {
               final slot = slots[i];
-              formatted = DateFormat.Hm().format;
+              final formatted = DateFormat.Hm().format;
               return Card(
                 margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
                 child: ListTile(

@@ -8,7 +8,7 @@ final staffAvailabilityServiceProvider =
 final FutureProviderFamily<List<StaffAvailability>, String> staffAvailabilityProvider =
     FutureProvider.family<List<StaffAvailability>, String>(
   (ref, final businessProfileId) async {
-    service = ref.read(staffAvailabilityServiceProvider);
+    final service = ref.read(staffAvailabilityServiceProvider);
     return service.getStaffAvailability(businessProfileId);
   },
 );
@@ -16,7 +16,7 @@ final FutureProviderFamily<List<StaffAvailability>, String> staffAvailabilityPro
 final FutureProviderFamily<StaffAvailability?, String> staffAvailabilityByIdProvider =
     FutureProvider.family<StaffAvailability?, String>(
   (ref, final staffProfileId) async {
-    service = ref.read(staffAvailabilityServiceProvider);
+    final service = ref.read(staffAvailabilityServiceProvider);
     return service.getStaffAvailabilityById(staffProfileId);
   },
 );

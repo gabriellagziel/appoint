@@ -9,7 +9,7 @@ final whatsappShareServiceProvider =
 // Provider for share statistics
 final FutureProviderFamily<Map<String, dynamic>, String> shareStatsProvider = FutureProvider.family<Map<String, dynamic>, String>(
   (ref, final meetingId) async {
-    service = ref.read(whatsappShareServiceProvider);
+    final service = ref.read(whatsappShareServiceProvider);
     return service.getShareStats(meetingId);
   },
 );
@@ -18,7 +18,7 @@ final FutureProviderFamily<Map<String, dynamic>, String> shareStatsProvider = Fu
 final FutureProviderFamily<GroupRecognition?, String> groupRecognitionProvider =
     FutureProvider.family<GroupRecognition?, String>(
   (ref, final phoneNumber) async {
-    service = ref.read(whatsappShareServiceProvider);
+    final service = ref.read(whatsappShareServiceProvider);
     return service.recognizeGroup(phoneNumber);
   },
 );
@@ -63,7 +63,7 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
     final String? groupId,
     final String? recipientPhone,
   }) async {
-    state = state.copyWith(isLoading: true);
+    final state = state.copyWith(isLoading: true);
 
     try {
       final success = await _service.shareToWhatsApp(
@@ -81,7 +81,7 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
           error: 'Failed to share to WhatsApp',
         );
       } else {
-        state = state.copyWith(isLoading: false);
+        final state = state.copyWith(isLoading: false);
       }
     } catch (e) {
       state = state.copyWith(
@@ -105,16 +105,16 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
         meetingId: meetingId,
       );
     } catch (e) {
-      state = state.copyWith(error: e.toString());
+      final state = state.copyWith(error: e.toString());
     }
   }
 
   void clearError() {
-    state = state.copyWith();
+    final state = state.copyWith();
   }
 
   void toggleGroupOptions() {
-    state = state.copyWith(showGroupOptions: !state.showGroupOptions);
+    final state = state.copyWith(showGroupOptions: !state.showGroupOptions);
   }
 }
 

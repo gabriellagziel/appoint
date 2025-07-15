@@ -40,9 +40,9 @@ final isBusinessProvider = Provider<bool>((ref) {
 });
 
 // Provider that combines user profile and business mode
-userProvider = Provider<User?>((final ref) {
-  profileAsync = ref.watch(currentUserProfileProvider);
-  userType = ref.watch(businessModeProvider);
+final userProvider = Provider<User?>((ref) {
+  final profileAsync = ref.watch(currentUserProfileProvider);
+  final userType = ref.watch(businessModeProvider);
 
   return profileAsync.when(
     data: (profile) {

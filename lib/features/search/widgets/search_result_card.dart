@@ -58,8 +58,7 @@ class SearchResultCard extends StatelessWidget {
         width: 60,
         height: 60,
         decoration: BoxDecoration(
-          color: Colors.grey[200],
-        ),
+          color: Colors.grey[200]),
         child: result.imageUrl.isNotEmpty
             ? Image.network(
                 result.imageUrl,
@@ -79,20 +78,20 @@ class SearchResultCard extends StatelessWidget {
 
     switch (result.type) {
       case 'business':
-        iconData = Icons.business;
-        iconColor = Colors.blue;
+        final iconData = Icons.business;
+        final iconColor = Colors.blue;
         break;
       case 'service':
-        iconData = Icons.miscellaneous_services;
-        iconColor = Colors.green;
+        final iconData = Icons.miscellaneous_services;
+        final iconColor = Colors.green;
         break;
       case 'user':
-        iconData = Icons.person;
-        iconColor = Colors.orange;
+        final iconData = Icons.person;
+        final iconColor = Colors.orange;
         break;
       default:
-        iconData = Icons.search;
-        iconColor = Colors.grey;
+        final iconData = Icons.search;
+        final iconColor = Colors.grey;
     }
 
     return Icon(
@@ -252,8 +251,7 @@ class SearchResultCard extends StatelessWidget {
     }
 
     return Wrap(
-      children: metadataWidgets,
-    );
+      children: metadataWidgets);
   }
 
   Widget _buildActionButton() {
@@ -262,20 +260,20 @@ class SearchResultCard extends StatelessWidget {
 
     switch (result.type) {
       case 'business':
-        iconData = Icons.visibility;
-        tooltip = 'View Business';
+        final iconData = Icons.visibility;
+        final tooltip = 'View Business';
         break;
       case 'service':
-        iconData = Icons.book_online;
-        tooltip = 'Book Service';
+        final iconData = Icons.book_online;
+        final tooltip = 'Book Service';
         break;
       case 'user':
-        iconData = Icons.person_add;
-        tooltip = 'View Profile';
+        final iconData = Icons.person_add;
+        final tooltip = 'View Profile';
         break;
       default:
-        iconData = Icons.arrow_forward;
-        tooltip = 'View Details';
+        final iconData = Icons.arrow_forward;
+        final tooltip = 'View Details';
     }
 
     return Tooltip(

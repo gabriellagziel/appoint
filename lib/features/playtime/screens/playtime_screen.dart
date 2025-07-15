@@ -358,7 +358,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
 
     setState(() {
       _isLoading = true;
-      _errorMessage = null;
+      final _errorMessage = null;
     });
 
     try {
@@ -384,8 +384,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
         );
       }
     } catch (e) {
-      setState(() {
-        _errorMessage = e.toString();
+        final _errorMessage = e.toString();
       });
       
       if (mounted) {

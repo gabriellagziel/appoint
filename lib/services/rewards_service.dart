@@ -22,7 +22,7 @@ class RewardsService {
 
   /// Get the current point balance for a user.
   Future<int> getPoints(String userId) async {
-    doc = await _firestore.collection('user_rewards').doc(userId).get();
+    final doc = await _firestore.collection('user_rewards').doc(userId).get();
     return (doc.data()?['points'] as int?) ?? 0;
   }
 
@@ -42,10 +42,10 @@ class RewardsService {
   }
 
   Future<int> _incrementPoints(String userId, final int points) async {
-    doc = _firestore.collection('user_rewards').doc(userId);
+    final doc = _firestore.collection('user_rewards').doc(userId);
     return _firestore.runTransaction((tx) async {
-      snapshot = await tx.get(doc);
-      current = (snapshot.data()?['points'] as int?) ?? 0;
+      final snapshot = await tx.get(doc);
+      final current = (snapshot.data()?['points'] as int?) ?? 0;
       final updated = current + points;
       tx.set(doc, {'points': updated}, SetOptions(merge: true));
       return updated;

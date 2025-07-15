@@ -11,9 +11,9 @@ class NotificationSettingsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
-    tokenAsync = ref.watch(fcmTokenProvider);
-    settingsAsync = ref.watch(notificationSettingsProvider);
+    final l10n = AppLocalizations.of(context)!;
+    final tokenAsync = ref.watch(fcmTokenProvider);
+    final settingsAsync = ref.watch(notificationSettingsProvider);
     return Scaffold(
       appBar: AppBar(title: Text(l10n.notificationSettings)),
       body: settingsAsync.when(
@@ -27,9 +27,9 @@ class NotificationSettingsScreen extends ConsumerWidget {
                       title: Text(l10n.enableNotifications),
                       value: settings.push,
                       onChanged: (v) async {
-                        uid = ref.read(authProvider).currentUser?.uid;
+                        final uid = ref.read(authProvider).currentUser?.uid;
                         if (uid == null) return;
-                        newSettings = NotificationSettings(push: v);
+                        final newSettings = NotificationSettings(push: v);
                         await ref
                             .read(userSettingsServiceProvider)
                             .updateSettings(uid, newSettings);

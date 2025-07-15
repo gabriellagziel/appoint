@@ -12,7 +12,7 @@ class AppointmentService {
     required final String inviteeId,
     required final DateTime scheduledAt,
   }) async {
-    doc = _firestore.collection('appointments').doc();
+    final doc = _firestore.collection('appointments').doc();
     final appointment = Appointment(
       id: doc.id,
       creatorId: creatorId,
@@ -30,8 +30,8 @@ class AppointmentService {
     required final String creatorId,
     required final String inviteeId,
   }) async {
-    doc = _firestore.collection('appointments').doc();
-    callRequestId = _firestore.collection('callRequests').doc().id;
+    final doc = _firestore.collection('appointments').doc();
+    final callRequestId = _firestore.collection('callRequests').doc().id;
     final appointment = Appointment(
       id: doc.id,
       creatorId: creatorId,
