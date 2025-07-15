@@ -33,7 +33,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get decline => '拒绝';
 
   @override
-  String get adminBroadcast => '管理员广播';
+  String get adminBroadcast => '[ZH] Admin Broadcast';
 
   @override
   String get login => '登录';
@@ -108,7 +108,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get cancel => '取消';
 
   @override
-  String get playtimeCreate => '创建 Playtime';
+  String get playtimeCreate => '[ZH] 创建 Playtime';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
@@ -125,7 +125,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get playtimeModeVirtual => '虚拟模式';
 
   @override
-  String get playtimeDescription => 'Playtime 描述';
+  String get playtimeDescription => '[ZH] Playtime 描述';
 
   @override
   String get delete => '删除';
@@ -166,7 +166,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get no => '否';
 
   @override
-  String get playtimeHub => 'Playtime 中心';
+  String get playtimeHub => '[ZH] Playtime 中心';
 
   @override
   String get createLiveSession => '创建直播会话';
@@ -188,13 +188,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get meetingSharedSuccessfully => '会议分享成功';
 
   @override
-  String get welcomeToPlaytime => '欢迎来到 Playtime';
+  String get welcomeToPlaytime => '[ZH] 欢迎来到 Playtime';
 
   @override
   String get viewAll => '查看全部';
 
   @override
-  String get playtimeVirtual => '虚拟 Playtime';
+  String get playtimeVirtual => '[ZH] 虚拟 Playtime';
 
   @override
   String get staffScreenTBD => '工作人员界面待定';
@@ -265,7 +265,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get confirm => '确认';
 
   @override
-  String get playtimeLive => '直播 Playtime';
+  String get playtimeLive => '[ZH] 直播 Playtime';
 
   @override
   String get errorLoadingInvites => '加载邀请出错';
@@ -303,7 +303,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get email => '邮箱';
 
   @override
-  String get shareOnWhatsApp => '[ZH] Share on WhatsApp';
+  String get shareOnWhatsApp => '[ZH] [ZH] Share on WhatsApp';
 
   @override
   String get notificationSettings => '通知设置';
@@ -338,7 +338,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get settings => '设置';
 
   @override
-  String get playtimeReject => '拒绝 Playtime';
+  String get playtimeReject => '[ZH] 拒绝 Playtime';
 
   @override
   String get errorLoadingProfile => '加载资料出错';
@@ -365,10 +365,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get quickActions => '快速操作';
 
   @override
-  String get playtimeTitle => 'Playtime 标题';
+  String get playtimeTitle => '[ZH] Playtime 标题';
 
   @override
-  String get otpResentSuccessfully => 'OTP 重发成功';
+  String get otpResentSuccessfully => '[ZH] OTP 重发成功';
 
   @override
   String errorCheckingPermissions(Object error) {
@@ -380,7 +380,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String fcmToken(Object token) {
-    return 'FCM 令牌';
+    return '[ZH] FCM 令牌';
   }
 
   @override
@@ -411,7 +411,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get noPermissionForBroadcast => '无广播权限';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime 管理面板标题';
+  String get playtimeAdminPanelTitle => '[ZH] Playtime Games – Admin';
 
   @override
   String get inviteDetail => '邀请详情';
@@ -423,7 +423,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String failedToResendOtp(Object error) {
-    return 'OTP 重发失败';
+    return '[ZH] OTP 重发失败';
   }
 
   @override
@@ -438,7 +438,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get save => '保存';
 
   @override
-  String get playtimeApprove => '批准 Playtime';
+  String get playtimeApprove => '[ZH] 批准 Playtime';
 
   @override
   String get createYourFirstSession => '创建你的第一个会话';
@@ -486,7 +486,7 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      '[ZH] Please login to access family features';
+      '[ZH] [ZH] Please login to access family features';
 
   @override
   String get myInvites => '我的邀请';
@@ -498,13 +498,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get groupNameOptional => '组名（可选）';
 
   @override
-  String get playtimeNoSessions => '暂无 Playtime 会话';
+  String get playtimeNoSessions => '[ZH] 暂无 Playtime 会话';
 
   @override
-  String get adminScreenTBD => '管理员界面待定';
+  String get adminScreenTBD => '[ZH] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime 仪表板';
+  String get playtimeParentDashboardTitle => '[ZH] Playtime 仪表板';
 
   @override
   String get close => '关闭';
@@ -549,1868 +549,2013 @@ class AppLocalizationsZh extends AppLocalizations {
   String get pleaseLoginToViewProfile => '请登录以查看资料';
 
   @override
-  String get adminMetrics => 'Admin Metrics';
+  String get adminMetrics => '[ZH] Admin Metrics';
 
   @override
-  String get overview => 'Overview';
+  String get overview => '[ZH] Overview';
 
   @override
-  String get bookings => 'Bookings';
+  String get bookings => '[ZH] Bookings';
 
   @override
-  String get users => 'users (TRANSLATE)';
+  String get users => '[ZH] users (TRANSLATE)';
 
   @override
-  String get revenue => 'revenue (TRANSLATE)';
+  String get revenue => '[ZH] revenue (TRANSLATE)';
 
   @override
-  String get contentLibrary => 'Content Library';
+  String get contentLibrary => '[ZH] Content Library';
 
   @override
   String get authErrorUserNotFound =>
-      'No account found with this email address.';
+      '[ZH] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => 'Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[ZH] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => 'Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[ZH] Please enter a valid email address.';
 
   @override
   String get authErrorUserDisabled =>
-      'This account has been disabled. Please contact support.';
+      '[ZH] This account has been disabled. Please contact support.';
 
   @override
   String get authErrorWeakPassword =>
-      'Password is too weak. Please choose a stronger password.';
+      '[ZH] Password is too weak. Please choose a stronger password.';
 
   @override
   String get authErrorEmailAlreadyInUse =>
-      'An account with this email already exists.';
+      '[ZH] An account with this email already exists.';
 
   @override
   String get authErrorTooManyRequests =>
-      'Too many failed attempts. Please try again later.';
+      '[ZH] Too many failed attempts. Please try again later.';
 
   @override
   String get authErrorOperationNotAllowed =>
-      'This sign-in method is not enabled. Please contact support.';
+      '[ZH] This sign-in method is not enabled. Please contact support.';
 
   @override
   String get authErrorInvalidCredential =>
-      'Invalid credentials. Please try again.';
+      '[ZH] Invalid credentials. Please try again.';
 
   @override
   String get authErrorAccountExistsWithDifferentCredential =>
-      'An account already exists with this email using a different sign-in method.';
+      '[ZH] An account already exists with this email using a different sign-in method.';
 
   @override
   String get authErrorCredentialAlreadyInUse =>
-      'These credentials are already associated with another account.';
+      '[ZH] These credentials are already associated with another account.';
 
   @override
   String get authErrorNetworkRequestFailed =>
-      'Network error. Please check your connection and try again.';
+      '[ZH] Network error. Please check your connection and try again.';
 
   @override
-  String get socialAccountConflictTitle => 'Account Already Exists';
+  String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
 
   @override
   String socialAccountConflictMessage(Object email) {
-    return 'An account with email $email already exists using a different sign-in method. Would you like to link your accounts?';
+    return 'يبدو أن هناك حساب موجود بالفعل';
   }
 
   @override
-  String get linkAccounts => 'Link Accounts';
+  String get linkAccounts => 'ربط الحسابات';
 
   @override
-  String get signInWithExistingMethod => 'Sign in with existing method';
+  String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
   String get authErrorRequiresRecentLogin =>
-      'Please log in again to perform this operation.';
+      '[ZH] Please log in again to perform this operation.';
 
   @override
   String get authErrorAppNotAuthorized =>
-      'This app is not authorized to use Firebase Authentication.';
+      '[ZH] This app is not authorized to use Firebase Authentication.';
 
   @override
   String get authErrorInvalidVerificationCode =>
-      'The verification code is invalid.';
+      '[ZH] The verification code is invalid.';
 
   @override
   String get authErrorInvalidVerificationId =>
-      'The verification ID is invalid.';
+      '[ZH] The verification ID is invalid.';
 
   @override
   String get authErrorMissingVerificationCode =>
-      'Please enter the verification code.';
+      '[ZH] Please enter the verification code.';
 
   @override
-  String get authErrorMissingVerificationId => 'Missing verification ID.';
+  String get authErrorMissingVerificationId => '[ZH] Missing verification ID.';
 
   @override
-  String get authErrorInvalidPhoneNumber => 'The phone number is invalid.';
+  String get authErrorInvalidPhoneNumber => '[ZH] The phone number is invalid.';
 
   @override
-  String get authErrorMissingPhoneNumber => 'Please enter a phone number.';
+  String get authErrorMissingPhoneNumber => '[ZH] Please enter a phone number.';
 
   @override
   String get authErrorQuotaExceeded =>
-      'The SMS quota for this project has been exceeded. Please try again later.';
+      '[ZH] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
   String get authErrorCodeExpired =>
-      'The verification code has expired. Please request a new one.';
+      '[ZH] The verification code has expired. Please request a new one.';
 
   @override
   String get authErrorSessionExpired =>
-      'Your session has expired. Please log in again.';
+      '[ZH] Your session has expired. Please log in again.';
 
   @override
   String get authErrorMultiFactorAuthRequired =>
-      'Multi-factor authentication is required.';
+      '[ZH] Multi-factor authentication is required.';
 
   @override
   String get authErrorMultiFactorInfoNotFound =>
-      'Multi-factor information not found.';
+      '[ZH] Multi-factor information not found.';
 
   @override
   String get authErrorMissingMultiFactorSession =>
-      'Missing multi-factor session.';
+      '[ZH] Missing multi-factor session.';
 
   @override
   String get authErrorInvalidMultiFactorSession =>
-      'Invalid multi-factor session.';
+      '[ZH] Invalid multi-factor session.';
 
   @override
   String get authErrorSecondFactorAlreadyInUse =>
-      'This second factor is already in use.';
+      '[ZH] This second factor is already in use.';
 
   @override
   String get authErrorMaximumSecondFactorCountExceeded =>
-      'Maximum number of second factors exceeded.';
+      '[ZH] Maximum number of second factors exceeded.';
 
   @override
   String get authErrorUnsupportedFirstFactor =>
-      'Unsupported first factor for multi-factor authentication.';
+      '[ZH] Unsupported first factor for multi-factor authentication.';
 
   @override
   String get authErrorEmailChangeNeedsVerification =>
-      'Email change requires verification.';
+      '[ZH] Email change requires verification.';
 
   @override
   String get authErrorPhoneNumberAlreadyExists =>
-      'This phone number is already in use.';
+      '[ZH] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => 'The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[ZH] The password is invalid or too weak.';
 
   @override
-  String get authErrorInvalidIdToken => 'The ID token is invalid.';
+  String get authErrorInvalidIdToken => '[ZH] The ID token is invalid.';
 
   @override
-  String get authErrorIdTokenExpired => 'The ID token has expired.';
+  String get authErrorIdTokenExpired => '[ZH] The ID token has expired.';
 
   @override
-  String get authErrorIdTokenRevoked => 'The ID token has been revoked.';
+  String get authErrorIdTokenRevoked => '[ZH] The ID token has been revoked.';
 
   @override
   String get authErrorInternalError =>
-      'An internal error occurred. Please try again.';
+      '[ZH] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => 'An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[ZH] An invalid argument was provided.';
 
   @override
-  String get authErrorInvalidClaims => 'Invalid custom claims provided.';
+  String get authErrorInvalidClaims => '[ZH] Invalid custom claims provided.';
 
   @override
-  String get authErrorInvalidContinueUri => 'The continue URL is invalid.';
+  String get authErrorInvalidContinueUri => '[ZH] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => 'The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[ZH] The creation time is invalid.';
 
   @override
   String get authErrorInvalidDisabledField =>
-      'The disabled field value is invalid.';
+      '[ZH] The disabled field value is invalid.';
 
   @override
-  String get authErrorInvalidDisplayName => 'The display name is invalid.';
+  String get authErrorInvalidDisplayName => '[ZH] The display name is invalid.';
 
   @override
   String get authErrorInvalidDynamicLinkDomain =>
-      'The dynamic link domain is invalid.';
+      '[ZH] The dynamic link domain is invalid.';
 
   @override
   String get authErrorInvalidEmailVerified =>
-      'The email verified value is invalid.';
+      '[ZH] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => 'The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[ZH] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => 'The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[ZH] The hash block size is invalid.';
 
   @override
   String get authErrorInvalidHashDerivedKeyLength =>
-      'The hash derived key length is invalid.';
+      '[ZH] The hash derived key length is invalid.';
 
   @override
-  String get authErrorInvalidHashKey => 'The hash key is invalid.';
+  String get authErrorInvalidHashKey => '[ZH] The hash key is invalid.';
 
   @override
   String get authErrorInvalidHashMemoryCost =>
-      'The hash memory cost is invalid.';
+      '[ZH] The hash memory cost is invalid.';
 
   @override
   String get authErrorInvalidHashParallelization =>
-      'The hash parallelization is invalid.';
+      '[ZH] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => 'The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[ZH] The hash rounds value is invalid.';
 
   @override
   String get authErrorInvalidHashSaltSeparator =>
-      'The hash salt separator is invalid.';
+      '[ZH] The hash salt separator is invalid.';
 
   @override
   String get authErrorInvalidLastSignInTime =>
-      'The last sign-in time is invalid.';
+      '[ZH] The last sign-in time is invalid.';
 
   @override
-  String get authErrorInvalidPageToken => 'The page token is invalid.';
+  String get authErrorInvalidPageToken => '[ZH] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => 'The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[ZH] The provider data is invalid.';
 
   @override
-  String get authErrorInvalidProviderId => 'The provider ID is invalid.';
+  String get authErrorInvalidProviderId => '[ZH] The provider ID is invalid.';
 
   @override
   String get authErrorInvalidSessionCookieDuration =>
-      'The session cookie duration is invalid.';
+      '[ZH] The session cookie duration is invalid.';
 
   @override
-  String get authErrorInvalidUid => 'The UID is invalid.';
+  String get authErrorInvalidUid => '[ZH] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => 'The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[ZH] The user import record is invalid.';
 
   @override
   String get authErrorMaximumUserCountExceeded =>
-      'Maximum user import count exceeded.';
+      '[ZH] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => 'Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[ZH] Missing Android package name.';
 
   @override
-  String get authErrorMissingContinueUri => 'Missing continue URL.';
+  String get authErrorMissingContinueUri => '[ZH] Missing continue URL.';
 
   @override
-  String get authErrorMissingHashAlgorithm => 'Missing hash algorithm.';
+  String get authErrorMissingHashAlgorithm => '[ZH] Missing hash algorithm.';
 
   @override
-  String get authErrorMissingIosBundleId => 'Missing iOS bundle ID.';
+  String get authErrorMissingIosBundleId => '[ZH] Missing iOS bundle ID.';
 
   @override
-  String get authErrorMissingUid => 'Missing UID.';
+  String get authErrorMissingUid => '[ZH] Missing UID.';
 
   @override
   String get authErrorMissingOauthClientSecret =>
-      'Missing OAuth client secret.';
+      '[ZH] Missing OAuth client secret.';
 
   @override
-  String get authErrorProjectNotFound => 'Firebase project not found.';
+  String get authErrorProjectNotFound => '[ZH] Firebase project not found.';
 
   @override
-  String get authErrorReservedClaims => 'Reserved claims provided.';
+  String get authErrorReservedClaims => '[ZH] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => 'Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[ZH] Session cookie has expired.';
 
   @override
   String get authErrorSessionCookieRevoked =>
-      'Session cookie has been revoked.';
+      '[ZH] Session cookie has been revoked.';
 
   @override
-  String get authErrorUidAlreadyExists => 'The UID is already in use.';
+  String get authErrorUidAlreadyExists => '[ZH] The UID is already in use.';
 
   @override
   String get authErrorUnauthorizedContinueUri =>
-      'The continue URL domain is not whitelisted.';
+      '[ZH] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => 'An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[ZH] An unknown authentication error occurred.';
 
   @override
-  String get checkingPermissions1 => 'Checking permissions...';
+  String get checkingPermissions1 => 'فحص الأذونات...';
 
   @override
-  String get paymentSuccessful => 'Payment Successful!';
+  String get paymentSuccessful => 'تم الدفع بنجاح';
 
   @override
-  String get businessAvailability => 'Business Availability';
+  String get businessAvailability => 'توفر الأعمال';
 
   @override
-  String get send => 'Send';
+  String get send => 'إرسال';
 
   @override
-  String newNotificationPayloadtitle(Object payloadTitle) {
-    return 'New notification: $payloadTitle';
+  String newNotificationPayloadtitle(Object payloadTitle, Object title) {
+    return 'عنوان الإشعار الجديد: $title';
   }
 
   @override
-  String get gameList => 'Game List';
+  String get gameList => 'قائمة الألعاب';
 
   @override
-  String get deleteAvailability => 'Delete Availability';
+  String get deleteAvailability => 'حذف التوفر';
 
   @override
-  String get connectToGoogleCalendar => 'Connect to Google Calendar';
+  String get connectToGoogleCalendar => 'الاتصال بتقويم Google';
 
   @override
-  String get adminFreeAccess => 'Admin Free Access';
+  String get adminFreeAccess => '[ZH] Admin Free Access';
 
   @override
-  String emailProfileemail(Object profileEmail) {
-    return 'Email: $profileEmail';
+  String emailProfileemail(Object email, Object profileEmail) {
+    return 'البريد الإلكتروني للملف الشخصي: $email';
   }
 
   @override
-  String get calendar => 'Calendar';
+  String get calendar => 'التقويم';
 
   @override
-  String get upload1 => 'Upload';
+  String get upload1 => '[ZH] Upload (Chinese (Simplified))';
 
   @override
-  String get resolved => 'Resolved';
+  String get resolved => 'تم الحل';
 
   @override
-  String get keepSubscription => 'Keep Subscription';
+  String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
   String get virtualSessionCreatedInvitingFriends =>
-      'Virtual session created! Inviting friends...';
+      '[ZH] Virtual session created! Inviting friends... (Chinese (Simplified))';
 
   @override
-  String get noEventsScheduledForToday => 'No events scheduled for today';
+  String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
 
   @override
-  String get exportData => 'Export Data';
+  String get exportData => 'تصدير البيانات';
 
   @override
-  String get rewards => 'Rewards';
+  String get rewards => '[ZH] Rewards (Chinese (Simplified))';
 
   @override
-  String get time => 'Time';
+  String get time => '[ZH] Time (Chinese (Simplified))';
 
   @override
-  String userCid(Object id) {
-    return 'User $id';
+  String userCid(Object cid, Object id) {
+    return '[ZH] User $id';
   }
 
   @override
-  String get noSlots => 'No slots';
+  String get noSlots => '[ZH] No slots (Chinese (Simplified))';
 
   @override
-  String get signIn => 'Sign In';
+  String get signIn => '[ZH] Sign In (Chinese (Simplified))';
 
   @override
-  String get homeFeedScreen => 'Home Feed Screen';
+  String get homeFeedScreen => '[ZH] Home Feed Screen (Chinese (Simplified))';
 
   @override
-  String get selectLocation => 'Select Location';
+  String get selectLocation => '[ZH] Select Location (Chinese (Simplified))';
 
   @override
-  String get noTicketsYet => 'No tickets yet';
+  String get noTicketsYet => '[ZH] No tickets yet (Chinese (Simplified))';
 
   @override
-  String get meetingSharedSuccessfully1 => 'Meeting shared successfully!';
+  String get meetingSharedSuccessfully1 => 'تم مشاركة الاجتماع بنجاح';
 
   @override
-  String get studioProfile => 'Studio Profile';
+  String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => 'Subscription unavailable';
+  String get subscriptionUnavailable =>
+      '[ZH] Subscription unavailable (Chinese (Simplified))';
 
   @override
-  String get confirmBooking => 'Confirm Booking';
+  String get confirmBooking => '[ZH] Confirm Booking (Chinese (Simplified))';
 
   @override
-  String get failedToUpdatePermissionE => 'Failed to update permission: \$e';
+  String get failedToUpdatePermissionE =>
+      '[ZH] Failed to update permission: \$e (Chinese (Simplified))';
 
   @override
-  String get reject => 'Reject';
+  String get reject => '[ZH] Reject (Chinese (Simplified))';
 
   @override
   String ambassadorStatusAmbassadorstatus(Object ambassadorStatus) {
-    return 'Ambassador Status: $ambassadorStatus';
+    return '[ZH] Ambassador Status: $ambassadorStatus (Chinese (Simplified))';
   }
 
   @override
-  String get noProviders => 'No providers';
+  String get noProviders => '[ZH] No providers';
 
   @override
-  String get checkingSubscription => 'Checking subscription...';
+  String get checkingSubscription =>
+      '[ZH] Checking subscription... (Chinese (Simplified))';
 
   @override
-  String get errorPickingImageE => 'Error picking image: \$e';
+  String errorPickingImageE(Object e) {
+    return 'خطأ في اختيار الصورة: $e';
+  }
 
   @override
-  String get noContentAvailableYet => 'No content available yet';
+  String get noContentAvailableYet =>
+      '[ZH] No content available yet (Chinese (Simplified))';
 
   @override
-  String get resolve => 'Resolve';
+  String get resolve => '[ZH] Resolve (Chinese (Simplified))';
 
   @override
-  String get errorLoadingSurveysError => 'Error loading surveys: \$error';
+  String get errorLoadingSurveysError =>
+      '[ZH] Error loading surveys: \$error (Chinese (Simplified))';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
-    return 'Error: $errorMessage';
+    return '[ZH] Error: $errorMessage';
   }
 
   @override
-  String get getHelpWithYourAccount => 'Get help with your account';
+  String get getHelpWithYourAccount =>
+      '[ZH] Get help with your account (Chinese (Simplified))';
 
   @override
-  String get pay => 'Pay';
+  String get pay => '[ZH] Pay (Chinese (Simplified))';
 
   @override
-  String get noOrganizations => 'noOrganizations (TRANSLATE)';
+  String get noOrganizations => '[ZH] noOrganizations (TRANSLATE)';
 
   @override
-  String get meetingDetails => 'meetingDetails (TRANSLATE)';
+  String get meetingDetails => 'تفاصيل الاجتماع';
 
   @override
-  String get errorLoadingAppointments => 'Error loading appointments';
+  String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => 'Changes saved successfully!';
+  String get changesSavedSuccessfully =>
+      '[ZH] Changes saved successfully! (Chinese (Simplified))';
 
   @override
-  String get createNewInvoice => 'Create New Invoice';
+  String get createNewInvoice =>
+      '[ZH] Create New Invoice (Chinese (Simplified))';
 
   @override
-  String get profileNotFound => 'Profile not found.';
+  String get profileNotFound => 'الملف الشخصي غير موجود';
 
   @override
-  String get errorConfirmingPaymentE => 'Error confirming payment: \$e';
+  String errorConfirmingPaymentE(Object e) {
+    return 'خطأ في تأكيد الدفع: $e';
+  }
 
   @override
-  String get inviteFriends => 'Invite Friends';
+  String get inviteFriends => 'دعوة الأصدقاء';
 
   @override
-  String get profileSaved => 'Profile saved!';
+  String get profileSaved => '[ZH] Profile saved! (Chinese (Simplified))';
 
   @override
   String get receiveBookingNotificationsViaEmail =>
-      'Receive booking notifications via email';
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
-  String valuetointk(Object value) {
-    return '\\\$${value}K';
+  String valuetointk(Object k, Object value) {
+    return '[ZH] \\\$${value}K (Chinese (Simplified))';
   }
 
   @override
-  String get deleteAccount => 'Delete Account';
+  String get deleteAccount => '[ZH] Delete Account (Chinese (Simplified))';
 
   @override
-  String get profile1 => 'Profile';
+  String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding => 'Business Onboarding';
+  String get businessOnboarding =>
+      '[ZH] Business Onboarding (Chinese (Simplified))';
 
   @override
-  String get addNewClient => 'Add New Client';
+  String get addNewClient => '[ZH] Add New Client (Chinese (Simplified))';
 
   @override
-  String get darkMode => 'Dark Mode';
+  String get darkMode => '[ZH] Dark Mode (Chinese (Simplified))';
 
   @override
-  String get addProvider => 'Add Provider';
+  String get addProvider => '[ZH] Add Provider';
 
   @override
   String noRouteDefinedForStateuripath(Object path) {
-    return 'No route defined for $path';
+    return '[ZH] No route defined for $path';
   }
 
   @override
   String get youWillReceiveAConfirmationEmailShortly =>
-      'You will receive a confirmation email shortly.';
+      '[ZH] You will receive a confirmation email shortly. (Chinese (Simplified))';
 
   @override
-  String get addQuestion => 'Add Question';
+  String get addQuestion => '[ZH] Add Question (Chinese (Simplified))';
 
   @override
-  String get privacyPolicy => 'Privacy Policy';
+  String get privacyPolicy => '[ZH] Privacy Policy (Chinese (Simplified))';
 
   @override
   String branchesLengthBranches(Object branchCount) {
-    return '$branchCount branches';
+    return '[ZH] $branchCount branches (Chinese (Simplified))';
   }
 
   @override
-  String get join => 'Join';
+  String get join => '[ZH] Join (Chinese (Simplified))';
 
   @override
-  String get businessSubscription => 'Business Subscription';
+  String get businessSubscription =>
+      '[ZH] Business Subscription (Chinese (Simplified))';
 
   @override
-  String get myInvites1 => 'My Invites';
+  String get myInvites1 => 'دعواتي';
 
   @override
-  String get providers => 'Providers';
+  String get providers => '[ZH] Providers';
 
   @override
-  String get surveyManagement => 'Survey Management';
+  String get surveyManagement =>
+      '[ZH] Survey Management (Chinese (Simplified))';
 
   @override
   String get pleaseEnterAValidEmailOrPhone =>
-      'Please enter a valid email or phone';
+      '[ZH] Please enter a valid email or phone';
 
   @override
   String get noRoomsFoundAddYourFirstRoom =>
-      'No rooms found. Add your first room!';
+      '[ZH] No rooms found. Add your first room! (Chinese (Simplified))';
 
   @override
-  String get readOurPrivacyPolicy => 'Read our privacy policy';
+  String get readOurPrivacyPolicy =>
+      '[ZH] Read our privacy policy (Chinese (Simplified))';
 
   @override
-  String get couldNotOpenPrivacyPolicy => 'Could not open privacy policy';
+  String get couldNotOpenPrivacyPolicy =>
+      '[ZH] Could not open privacy policy (Chinese (Simplified))';
 
   @override
-  String get refresh1 => 'Refresh';
+  String get refresh1 => '[ZH] Refresh (Chinese (Simplified))';
 
   @override
-  String get roomUpdatedSuccessfully => 'Room updated successfully!';
+  String get roomUpdatedSuccessfully =>
+      '[ZH] Room updated successfully! (Chinese (Simplified))';
 
   @override
-  String get contentDetail => 'Content Detail';
+  String get contentDetail => '[ZH] Content Detail (Chinese (Simplified))';
 
   @override
-  String get cancelSubscription => 'Cancel Subscription';
+  String get cancelSubscription =>
+      '[ZH] Cancel Subscription (Chinese (Simplified))';
 
   @override
   String get successfullyRegisteredAsAmbassador =>
-      'Successfully registered as Ambassador!';
+      '[ZH] Successfully registered as Ambassador! (Chinese (Simplified))';
 
   @override
-  String get save1 => 'Save';
+  String get save1 => '[ZH] Save (Chinese (Simplified))';
 
   @override
-  String get copy1 => 'Copy';
+  String get copy1 => '[ZH] Copy (Chinese (Simplified))';
 
   @override
-  String get failedToSendInvitationE => 'Failed to send invitation: \$e';
+  String get failedToSendInvitationE =>
+      '[ZH] Failed to send invitation: \$e (Chinese (Simplified))';
 
   @override
-  String get surveyScore => 'Survey Score';
+  String get surveyScore => '[ZH] Survey Score (Chinese (Simplified))';
 
   @override
-  String get userUserid => 'User \$userId';
+  String userUserid(Object userId) {
+    return '[ZH] User \$userId';
+  }
 
   @override
-  String get noAppointmentsFound => 'No appointments found.';
+  String get noAppointmentsFound =>
+      '[ZH] No appointments found. (Chinese (Simplified))';
 
   @override
-  String get responseDetail => 'Response Detail';
+  String get responseDetail => '[ZH] Response Detail (Chinese (Simplified))';
 
   @override
   String get businessVerificationScreenComingSoon =>
-      'Business Verification Screen - Coming Soon';
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
   String get businessProfileActivatedSuccessfully =>
-      'Business profile activated successfully!';
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
   String get failedToStartProSubscriptionE =>
-      'Failed to start Pro subscription: \$e';
+      '[ZH] Failed to start Pro subscription: \$e (Chinese (Simplified))';
 
   @override
   String get businessDashboardEntryScreenComingSoon =>
-      'Business Dashboard Entry Screen - Coming Soon';
+      '[ZH] Business Dashboard Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
-  String get contentFilter => 'Content Filter';
+  String get contentFilter => '[ZH] Content Filter (Chinese (Simplified))';
 
   @override
-  String get helpSupport => 'Help & Support';
+  String get helpSupport => '[ZH] Help & Support (Chinese (Simplified))';
 
   @override
-  String get editRoom => 'Edit Room';
+  String get editRoom => '[ZH] Edit Room (Chinese (Simplified))';
 
   @override
   String appointmentApptid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return '[ZH] Appointment: $appointmentId';
   }
 
   @override
   String deviceLogdeviceinfo(Object deviceInfo) {
-    return 'Device: $deviceInfo';
+    return '[ZH] Device: $deviceInfo';
   }
 
   @override
   String get businessCrmEntryScreenComingSoon =>
-      'Business CRM Entry Screen - Coming Soon';
+      '[ZH] Business CRM Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
-  String get adminDashboard => 'Admin Dashboard';
+  String get adminDashboard => '[ZH] Admin Dashboard';
 
   @override
   String orgmemberidslengthMembers(Object memberCount) {
-    return '$memberCount members';
+    return '[ZH] $memberCount members';
   }
 
   @override
-  String get errorLoadingDashboardError => 'Error loading dashboard: \$error';
+  String get errorLoadingDashboardError =>
+      '[ZH] Error loading dashboard: \$error (Chinese (Simplified))';
 
   @override
-  String get gameDeletedSuccessfully => 'Game deleted successfully!';
+  String get gameDeletedSuccessfully =>
+      '[ZH] Game deleted successfully! (Chinese (Simplified))';
 
   @override
-  String get viewResponsesComingSoon => 'View responses - Coming soon!';
+  String get viewResponsesComingSoon =>
+      '[ZH] View responses - Coming soon! (Chinese (Simplified))';
 
   @override
-  String get deleteProvider => 'Delete Provider';
+  String get deleteProvider => '[ZH] Delete Provider';
 
   @override
-  String get errorLoadingRewards => 'Error loading rewards';
+  String get errorLoadingRewards =>
+      '[ZH] Error loading rewards (Chinese (Simplified))';
 
   @override
-  String get failedToDeleteAccountE => 'Failed to delete account: \$e';
+  String get failedToDeleteAccountE =>
+      '[ZH] Failed to delete account: \$e (Chinese (Simplified))';
 
   @override
-  String get invited1 => 'Invited';
+  String get invited1 => '[ZH] Invited (Chinese (Simplified))';
 
   @override
-  String get noBranchesAvailable => 'No branches available';
+  String get noBranchesAvailable =>
+      '[ZH] No branches available (Chinese (Simplified))';
 
   @override
-  String get errorError => 'Error: \$error';
+  String get errorError => '[ZH] Error: \$error (Chinese (Simplified))';
 
   @override
-  String get noEvents => 'No events';
+  String get noEvents => '[ZH] No events (Chinese (Simplified))';
 
   @override
-  String get gameCreatedSuccessfully => 'Game created successfully!';
+  String get gameCreatedSuccessfully =>
+      '[ZH] Game created successfully! (Chinese (Simplified))';
 
   @override
-  String get add1 => 'Add';
+  String get add1 => '[ZH] Add (Chinese (Simplified))';
 
   @override
-  String get creatorCreatorid => 'Creator: \$creatorId';
+  String get creatorCreatorid => '[ZH] Creator: \$creatorId';
 
   @override
   String eventstarttimeEventendtime(Object endTime, Object startTime) {
-    return '$startTime - $endTime';
+    return '[ZH] $startTime - $endTime (Chinese (Simplified))';
   }
 
   @override
-  String get allowPlaytime => 'Allow Playtime';
+  String get allowPlaytime => '[ZH] Allow Playtime (Chinese (Simplified))';
 
   @override
-  String get clients => 'Clients';
+  String get clients => '[ZH] Clients (Chinese (Simplified))';
 
   @override
-  String get noAmbassadorDataAvailable => 'No ambassador data available';
+  String get noAmbassadorDataAvailable =>
+      '[ZH] No ambassador data available (Chinese (Simplified))';
 
   @override
   String get backgroundDeletedSuccessfully =>
-      'Background deleted successfully!';
+      '[ZH] Background deleted successfully! (Chinese (Simplified))';
 
   @override
   String errorSnapshoterror(Object error) {
-    return 'Error: $error';
+    return '[ZH] Error: $error (Chinese (Simplified))';
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => 'No analytics data available yet.';
+  String get noAnalyticsDataAvailableYet =>
+      '[ZH] No analytics data available yet. (Chinese (Simplified))';
 
   @override
-  String get errorDeletingSlotE => 'Error deleting slot: \$e';
+  String errorDeletingSlotE(Object e) {
+    return 'خطأ في حذف الفترة: $e';
+  }
 
   @override
   String get businessPhoneBookingEntryScreenComingSoon =>
-      'Business Phone Booking Entry Screen - Coming Soon';
+      '[ZH] Business Phone Booking Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
-  String get verification => 'Verification';
+  String get verification => '[ZH] Verification (Chinese (Simplified))';
 
   @override
-  String get copyLink => 'Copy Link';
+  String get copyLink => '[ZH] Copy Link (Chinese (Simplified))';
 
   @override
-  String get dashboard1 => 'Dashboard';
+  String get dashboard1 => '[ZH] Dashboard (Chinese (Simplified))';
 
   @override
-  String get manageChildAccounts => 'Manage Child Accounts';
+  String get manageChildAccounts =>
+      '[ZH] Manage Child Accounts (Chinese (Simplified))';
 
   @override
-  String get grantConsent => 'Grant Consent';
+  String get grantConsent => '[ZH] Grant Consent (Chinese (Simplified))';
 
   @override
-  String get myProfile1 => 'My Profile';
+  String get myProfile1 => '[ZH] My Profile (Chinese (Simplified))';
 
   @override
-  String get submit => 'Submit';
+  String get submit => '[ZH] Submit (Chinese (Simplified))';
 
   @override
   String userLoguseremail(Object userEmail) {
-    return 'User: $userEmail';
+    return '[ZH] User: $userEmail';
   }
 
   @override
-  String get emailNotifications => 'Email Notifications';
+  String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard => 'Ambassador Dashboard';
+  String get ambassadorDashboard =>
+      '[ZH] Ambassador Dashboard (Chinese (Simplified))';
 
   @override
-  String get phoneBooking => 'Phone Booking';
+  String get phoneBooking => '[ZH] Phone Booking (Chinese (Simplified))';
 
   @override
-  String get bookViaChat => 'Book via Chat';
+  String get bookViaChat => '[ZH] Book via Chat (Chinese (Simplified))';
 
   @override
   String get error => '错误';
 
   @override
-  String get businessProfile => 'Business Profile';
+  String get businessProfile => '[ZH] Business Profile (Chinese (Simplified))';
 
   @override
   String get businessBookingEntryScreenComingSoon =>
-      'Business Booking Entry Screen - Coming Soon';
+      '[ZH] Business Booking Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
-  String get createNewSurvey => 'Create New Survey';
+  String get createNewSurvey => '[ZH] Create New Survey (Chinese (Simplified))';
 
   @override
-  String get backgroundRejected => 'Background rejected';
+  String get backgroundRejected =>
+      '[ZH] Background rejected (Chinese (Simplified))';
 
   @override
-  String get noMediaSelected => 'No media selected';
+  String get noMediaSelected => '[ZH] No media selected (Chinese (Simplified))';
 
   @override
-  String get syncToGoogle => 'Sync to Google';
+  String get syncToGoogle => '[ZH] Sync to Google (Chinese (Simplified))';
 
   @override
-  String get virtualPlaytime => 'Virtual Playtime';
+  String get virtualPlaytime => '[ZH] Virtual Playtime (Chinese (Simplified))';
 
   @override
-  String get colorContrastTesting => 'Color Contrast Testing';
+  String get colorContrastTesting => '[ZH] Color Contrast Testing';
 
   @override
-  String get loginFailedE => 'Login failed: \$e';
+  String get loginFailedE => '[ZH] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => 'Invitation sent successfully!';
+  String get invitationSentSuccessfully =>
+      '[ZH] Invitation sent successfully! (Chinese (Simplified))';
 
   @override
-  String get registering => 'Registering...';
+  String get registering => '[ZH] Registering... (Chinese (Simplified))';
 
   @override
   String statusAppointmentstatusname(Object status) {
-    return 'Status: $status';
+    return '[ZH] Status: $status (Chinese (Simplified))';
   }
 
   @override
-  String get home1 => 'Home';
+  String get home1 => '[ZH] Home (Chinese (Simplified))';
 
   @override
-  String get errorSavingSettingsE => 'Error saving settings: \$e';
+  String get errorSavingSettingsE =>
+      '[ZH] Error saving settings: \$e (Chinese (Simplified))';
 
   @override
-  String get appVersionAndInformation => 'App version and information';
+  String get appVersionAndInformation =>
+      '[ZH] App version and information (Chinese (Simplified))';
 
   @override
   String get businessSubscriptionEntryScreenComingSoon =>
-      'Business Subscription Entry Screen - Coming Soon';
+      '[ZH] Business Subscription Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String ekeyEvalue(Object key, Object value) {
-    return '$key: $value';
+    return '[ZH] $key: $value (Chinese (Simplified))';
   }
 
   @override
   String get yourPaymentHasBeenProcessedSuccessfully =>
-      'Your payment has been processed successfully.';
+      '[ZH] Your payment has been processed successfully. (Chinese (Simplified))';
 
   @override
-  String get errorE => 'Error: \$e';
+  String get errorE => '[ZH] Error: \$e (Chinese (Simplified))';
 
   @override
-  String get viewAll1 => 'View All';
+  String get viewAll1 => '[ZH] View All (Chinese (Simplified))';
 
   @override
-  String get editSurveyComingSoon => 'Edit survey - Coming soon!';
+  String get editSurveyComingSoon =>
+      '[ZH] Edit survey - Coming soon! (Chinese (Simplified))';
 
   @override
-  String get enterOtp => 'Enter OTP';
+  String get enterOtp => '[ZH] Enter OTP (Chinese (Simplified))';
 
   @override
-  String get payment => 'Payment';
+  String get payment => '[ZH] Payment (Chinese (Simplified))';
 
   @override
   String get automaticallyConfirmNewBookingRequests =>
-      'Automatically confirm new booking requests';
+      '[ZH] Automatically confirm new booking requests (Chinese (Simplified))';
 
   @override
-  String get errorPickingVideoE => 'Error picking video: \$e';
+  String errorPickingVideoE(Object e) {
+    return 'خطأ في اختيار الفيديو: $e';
+  }
 
   @override
   String noRouteDefinedForSettingsname(Object settingsName) {
-    return 'No route defined for $settingsName';
+    return '[ZH] No route defined for $settingsName (Chinese (Simplified))';
   }
 
   @override
   String get pleaseSignInToUploadABackground =>
-      'Please sign in to upload a background';
+      '[ZH] Please sign in to upload a background (Chinese (Simplified))';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
-    return '$targetType: $targetId';
+    return '[ZH] $targetType: $targetId';
   }
 
   @override
-  String get staffAvailability => 'Staff Availability';
+  String get staffAvailability =>
+      '[ZH] Staff Availability (Chinese (Simplified))';
 
   @override
-  String get livePlaytime => 'Live Playtime';
+  String get livePlaytime => '[ZH] Live Playtime (Chinese (Simplified))';
 
   @override
-  String get autoconfirmBookings => 'Auto-Confirm Bookings';
+  String get autoconfirmBookings =>
+      '[ZH] Auto-Confirm Bookings (Chinese (Simplified))';
 
   @override
   String get redirectingToStripeCheckoutForProPlan =>
-      'Redirecting to Stripe checkout for Pro plan...';
+      '[ZH] Redirecting to Stripe checkout for Pro plan... (Chinese (Simplified))';
 
   @override
-  String get exportAsCsv => 'Export as CSV';
+  String get exportAsCsv => '[ZH] Export as CSV (Chinese (Simplified))';
 
   @override
   String get deleteFunctionalityComingSoon =>
-      'Delete functionality coming soon!';
+      '[ZH] Delete functionality coming soon! (Chinese (Simplified))';
 
   @override
-  String get editClient => 'Edit Client';
+  String get editClient => '[ZH] Edit Client (Chinese (Simplified))';
 
   @override
   String get areYouSureYouWantToDeleteThisMessage =>
-      'Are you sure you want to delete this message?';
+      '[ZH] Are you sure you want to delete this message? (Chinese (Simplified))';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
-    return 'Referrals: $referrals';
+    return '[ZH] Referrals: $referrals (Chinese (Simplified))';
   }
 
   @override
-  String get notAuthenticated => 'Not authenticated';
+  String get notAuthenticated => '[ZH] Not authenticated';
 
   @override
   String get privacyRequestSentToYourParents =>
-      'Privacy request sent to your parents!';
+      '[ZH] Privacy request sent to your parents! (Chinese (Simplified))';
 
   @override
-  String get clientDeletedSuccessfully => 'Client deleted successfully!';
+  String get clientDeletedSuccessfully =>
+      '[ZH] Client deleted successfully! (Chinese (Simplified))';
 
   @override
-  String get failedToCancelSubscription => 'Failed to cancel subscription';
+  String get failedToCancelSubscription =>
+      '[ZH] Failed to cancel subscription (Chinese (Simplified))';
 
   @override
-  String get allLanguages => 'All Languages';
+  String get allLanguages => '[ZH] All Languages (Chinese (Simplified))';
 
   @override
-  String get slotDeletedSuccessfully => 'Slot deleted successfully';
+  String get slotDeletedSuccessfully =>
+      '[ZH] Slot deleted successfully (Chinese (Simplified))';
 
   @override
   String get businessProvidersEntryScreenComingSoon =>
-      'Business Providers Entry Screen - Coming Soon';
+      '[ZH] Business Providers Entry Screen - Coming Soon';
 
   @override
   String get parentsMustApproveBeforeChildrenCanJoin =>
-      'Parents must approve before children can join';
+      '[ZH] Parents must approve before children can join (Chinese (Simplified))';
 
   @override
-  String get subscribeToPro1499mo => 'Subscribe to Pro (€14.99/mo)';
+  String get subscribeToPro1499mo =>
+      '[ZH] Subscribe to Pro (€14.99/mo) (Chinese (Simplified))';
 
   @override
   String get businessAvailabilityEntryScreenComingSoon =>
-      'Business Availability Entry Screen - Coming Soon';
+      '[ZH] Business Availability Entry Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String appointmentsListlength(Object count) {
-    return 'Appointments: $count';
+    return '[ZH] Appointments: $count (Chinese (Simplified))';
   }
 
   @override
-  String get clearFilters => 'Clear Filters';
+  String get clearFilters => '[ZH] Clear Filters (Chinese (Simplified))';
 
   @override
-  String get submitBooking => 'Submit Booking';
+  String get submitBooking => '[ZH] Submit Booking (Chinese (Simplified))';
 
   @override
   String get areYouSureYouWantToCancelThisAppointment =>
-      'Are you sure you want to cancel this appointment?';
+      '[ZH] Are you sure you want to cancel this appointment? (Chinese (Simplified))';
 
   @override
-  String get noUpcomingBookings => 'No upcoming bookings';
+  String get noUpcomingBookings =>
+      '[ZH] No upcoming bookings (Chinese (Simplified))';
 
   @override
-  String get goBack => 'Go Back';
+  String get goBack => '[ZH] Go Back (Chinese (Simplified))';
 
   @override
-  String get setup => 'Setup';
+  String get setup => '[ZH] Setup (Chinese (Simplified))';
 
   @override
-  String get inviteChild => 'Invite Child';
+  String get inviteChild => '[ZH] Invite Child (Chinese (Simplified))';
 
   @override
-  String get goToDashboard => 'Go to Dashboard';
+  String get goToDashboard => '[ZH] Go to Dashboard (Chinese (Simplified))';
 
   @override
-  String get ambassadorQuotaDashboard => 'Ambassador Quota Dashboard';
+  String get ambassadorQuotaDashboard =>
+      '[ZH] Ambassador Quota Dashboard (Chinese (Simplified))';
 
   @override
-  String get adminSettings => 'Admin Settings';
+  String get adminSettings => '[ZH] Admin Settings';
 
   @override
-  String get referralCode => 'Referral Code';
+  String get referralCode => '[ZH] Referral Code (Chinese (Simplified))';
 
   @override
   String adminLogadminemail(Object adminEmail) {
-    return 'Admin: $adminEmail';
+    return '[ZH] Admin: $adminEmail';
   }
 
   @override
-  String get date => 'Date';
+  String get date => '[ZH] Date (Chinese (Simplified))';
 
   @override
-  String get readOnly => 'Read Only';
+  String get readOnly => '[ZH] Read Only (Chinese (Simplified))';
 
   @override
-  String get bookingRequest => 'Booking Request';
+  String get bookingRequest => '[ZH] Booking Request (Chinese (Simplified))';
 
   @override
-  String get advancedReporting => '• Advanced reporting';
+  String get advancedReporting =>
+      '[ZH] • Advanced reporting (Chinese (Simplified))';
 
   @override
-  String get rooms => 'Rooms';
+  String get rooms => '[ZH] Rooms (Chinese (Simplified))';
 
   @override
-  String get copiedToClipboard => 'Copied to clipboard';
+  String get copiedToClipboard =>
+      '[ZH] Copied to clipboard (Chinese (Simplified))';
 
   @override
-  String get bookingConfirmed => 'Booking Confirmed';
+  String get bookingConfirmed =>
+      '[ZH] Booking Confirmed (Chinese (Simplified))';
 
   @override
-  String get sessionApproved => 'Session approved!';
+  String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => 'Client added successfully!';
+  String get clientAddedSuccessfully =>
+      '[ZH] Client added successfully! (Chinese (Simplified))';
 
   @override
-  String get noNotifications => 'No notifications';
+  String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved => 'Background approved!';
+  String get backgroundApproved =>
+      '[ZH] Background approved! (Chinese (Simplified))';
 
   @override
-  String get familySupport => 'Family Support';
+  String get familySupport => '[ZH] Family Support (Chinese (Simplified))';
 
   @override
-  String get deletingAccount => 'Deleting account...';
+  String get deletingAccount =>
+      '[ZH] Deleting account... (Chinese (Simplified))';
 
   @override
-  String get bookAppointment => 'Book Appointment';
+  String get bookAppointment => '[ZH] Book Appointment (Chinese (Simplified))';
 
   @override
   String get receivePushNotificationsForNewBookings =>
-      'Receive push notifications for new bookings';
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
-  String get delete1 => 'Delete';
+  String get delete1 => '[ZH] Delete (Chinese (Simplified))';
 
   @override
-  String get sendBookingInvite => 'Send Booking Invite';
+  String get sendBookingInvite =>
+      '[ZH] Send Booking Invite (Chinese (Simplified))';
 
   @override
-  String get text => 'Text';
+  String get text => '[ZH] Text (Chinese (Simplified))';
 
   @override
-  String get manageSubscription => 'Manage Subscription';
+  String get manageSubscription =>
+      '[ZH] Manage Subscription (Chinese (Simplified))';
 
   @override
-  String get requiresInstallFallback => 'Requires Install Fallback';
+  String get requiresInstallFallback =>
+      '[ZH] Requires Install Fallback (Chinese (Simplified))';
 
   @override
-  String get paymentConfirmation => 'Payment Confirmation';
+  String get paymentConfirmation =>
+      '[ZH] Payment Confirmation (Chinese (Simplified))';
 
   @override
   String get promoAppliedYourNextBillIsFree =>
-      'Promo applied! Your next bill is free.';
+      '[ZH] Promo applied! Your next bill is free. (Chinese (Simplified))';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
-    return 'Invitee: $inviteeId';
+    return 'المدعو: $inviteeId';
   }
 
   @override
-  String get errorLoadingSlots => 'Error loading slots';
+  String get errorLoadingSlots =>
+      '[ZH] Error loading slots (Chinese (Simplified))';
 
   @override
   String get allowOtherUsersToFindAndJoinThisGame =>
-      'Allow other users to find and join this game';
+      '[ZH] Allow other users to find and join this game (Chinese (Simplified))';
 
   @override
   String get businessOnboardingScreenComingSoon =>
-      'Business Onboarding Screen - Coming Soon';
+      '[ZH] Business Onboarding Screen - Coming Soon (Chinese (Simplified))';
 
   @override
-  String get activateBusinessProfile => 'Activate Business Profile';
+  String get activateBusinessProfile =>
+      '[ZH] Activate Business Profile (Chinese (Simplified))';
 
   @override
-  String get contentNotFound => 'Content not found';
+  String get contentNotFound => '[ZH] Content not found (Chinese (Simplified))';
 
   @override
   String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
-    return '$specialty\\n$contactInfo';
+    return '[ZH] $specialty\\n$contactInfo (Chinese (Simplified))';
   }
 
   @override
-  String get rating => 'Rating';
+  String get rating => '[ZH] Rating (Chinese (Simplified))';
 
   @override
-  String get messages => 'Messages';
+  String get messages => '[ZH] Messages (Chinese (Simplified))';
 
   @override
-  String get errorEstimatingRecipientsE => 'Error estimating recipients: \$e';
+  String errorEstimatingRecipientsE(Object e) {
+    return 'خطأ في تقدير المستلمين: $e';
+  }
 
   @override
-  String get becomeAnAmbassador => 'Become an Ambassador';
+  String get becomeAnAmbassador =>
+      '[ZH] Become an Ambassador (Chinese (Simplified))';
 
   @override
-  String get subscribeNow => 'Subscribe Now';
+  String get subscribeNow => '[ZH] Subscribe Now (Chinese (Simplified))';
 
   @override
   String timeArgsslotformatcontext(Object time) {
-    return 'Time: $time';
+    return '[ZH] Time: $time (Chinese (Simplified))';
   }
 
   @override
-  String get shareViaWhatsapp => 'Share via WhatsApp';
+  String get shareViaWhatsapp =>
+      '[ZH] Share via WhatsApp (Chinese (Simplified))';
 
   @override
-  String get users1 => 'Users';
+  String get users1 => '[ZH] Users (Chinese (Simplified))';
 
   @override
-  String get shareLink => 'Share Link';
+  String get shareLink => '[ZH] Share Link (Chinese (Simplified))';
 
   @override
   String get areYouSureYouWantToDeleteThisProvider =>
-      'Are you sure you want to delete this provider?';
+      '[ZH] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment => 'Delete Appointment';
+  String get deleteAppointment =>
+      '[ZH] Delete Appointment (Chinese (Simplified))';
 
   @override
-  String get toggleAvailability => 'Toggle Availability';
+  String get toggleAvailability =>
+      '[ZH] Toggle Availability (Chinese (Simplified))';
 
   @override
-  String get changePlan => 'Change Plan';
+  String get changePlan => '[ZH] Change Plan (Chinese (Simplified))';
 
   @override
-  String get errorLoadingStaff => 'Error loading staff';
+  String get errorLoadingStaff =>
+      '[ZH] Error loading staff (Chinese (Simplified))';
 
   @override
-  String get errorLoadingConfigurationE => 'Error loading configuration: \$e';
+  String errorLoadingConfigurationE(Object e) {
+    return 'خطأ في تحميل التكوين: $e';
+  }
 
   @override
   String get updateYourBusinessInformation =>
-      'Update your business information';
+      '[ZH] Update your business information (Chinese (Simplified))';
 
   @override
   String get noProvidersFoundAddYourFirstProvider =>
-      'No providers found. Add your first provider!';
+      '[ZH] No providers found. Add your first provider!';
 
   @override
-  String get parentDashboard => 'Parent Dashboard';
+  String get parentDashboard => '[ZH] Parent Dashboard (Chinese (Simplified))';
 
   @override
-  String get menu => 'Menu';
+  String get menu => '[ZH] Menu (Chinese (Simplified))';
 
   @override
-  String get studioBooking => 'Studio Booking';
+  String get studioBooking => '[ZH] Studio Booking (Chinese (Simplified))';
 
   @override
-  String get about1 => 'About';
+  String get about1 => '[ZH] About (Chinese (Simplified))';
 
   @override
-  String get multipleChoice => 'Multiple Choice';
+  String get multipleChoice => '[ZH] Multiple Choice (Chinese (Simplified))';
 
   @override
   String dateAppointmentscheduledattostring(Object date) {
-    return 'Date: $date';
+    return '[ZH] Date: $date (Chinese (Simplified))';
   }
 
   @override
   String get studioBookingIsOnlyAvailableOnWeb =>
-      'Studio booking is only available on web';
+      '[ZH] Studio booking is only available on web (Chinese (Simplified))';
 
   @override
-  String get errorLoadingBranchesE => 'Error loading branches: \$e';
+  String get errorLoadingBranchesE =>
+      '[ZH] Error loading branches: \$e (Chinese (Simplified))';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
-    return '\\uD83D\\uDCC5 $dateTime';
+    return '[ZH] \\uD83D\\uDCC5 $dateTime (Chinese (Simplified))';
   }
 
   @override
   String appointmentInviteappointmentid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return 'دعوة الموعد: $appointmentId';
   }
 
   @override
-  String get none => 'None';
+  String get none => '[ZH] None (Chinese (Simplified))';
 
   @override
-  String get failedToUpdateConsentE => 'Failed to update consent: \$e';
+  String get failedToUpdateConsentE =>
+      '[ZH] Failed to update consent: \$e (Chinese (Simplified))';
 
   @override
-  String get welcome1 => 'Welcome';
+  String get welcome1 => '[ZH] Welcome (Chinese (Simplified))';
 
   @override
-  String get failedToCreateSessionE => 'Failed to create session: \$e';
+  String get failedToCreateSessionE =>
+      '[ZH] Failed to create session: \$e (Chinese (Simplified))';
 
   @override
-  String get inviteContact => 'Invite Contact';
+  String get inviteContact => '[ZH] Invite Contact (Chinese (Simplified))';
 
   @override
-  String get surveyEditor => 'Survey Editor';
+  String get surveyEditor => '[ZH] Survey Editor (Chinese (Simplified))';
 
   @override
   String get failedToStartBasicSubscriptionE =>
-      'Failed to start Basic subscription: \$e';
+      '[ZH] Failed to start Basic subscription: \$e (Chinese (Simplified))';
 
   @override
-  String get mySchedule => 'My Schedule';
+  String get mySchedule => '[ZH] My Schedule (Chinese (Simplified))';
 
   @override
-  String get studioDashboard => 'Studio Dashboard';
+  String get studioDashboard => '[ZH] Studio Dashboard (Chinese (Simplified))';
 
   @override
-  String get editProfile => 'Edit Profile';
+  String get editProfile => 'تحرير الملف الشخصي';
 
   @override
-  String get logout1 => 'Logout';
+  String get logout1 => '[ZH] Logout';
 
   @override
   String serviceServiceidNotSelected(Object service) {
-    return 'Service: $service';
+    return '[ZH] Service: $service';
   }
 
   @override
-  String get settingsSavedSuccessfully => 'Settings saved successfully!';
+  String get settingsSavedSuccessfully =>
+      '[ZH] Settings saved successfully! (Chinese (Simplified))';
 
   @override
-  String get linkCopiedToClipboard => 'Link copied to clipboard!';
+  String get linkCopiedToClipboard =>
+      '[ZH] Link copied to clipboard! (Chinese (Simplified))';
 
   @override
-  String get accept1 => 'Accept';
+  String get accept1 => '[ZH] Accept (Chinese (Simplified))';
 
   @override
-  String get noAvailableSlots => 'No available slots';
+  String get noAvailableSlots =>
+      '[ZH] No available slots (Chinese (Simplified))';
 
   @override
-  String get makeGamePublic => 'Make Game Public';
+  String get makeGamePublic => '[ZH] Make Game Public (Chinese (Simplified))';
 
   @override
   String permissionPermissioncategoryUpdatedToNewvalue(Object category) {
-    return 'Permission $category updated to \$newValue';
+    return '[ZH] Permission $category updated to \$newValue (Chinese (Simplified))';
   }
 
   @override
-  String get roomDeletedSuccessfully => 'Room deleted successfully!';
+  String get roomDeletedSuccessfully =>
+      '[ZH] Room deleted successfully! (Chinese (Simplified))';
 
   @override
-  String get businessCalendar => 'Business Calendar';
+  String get businessCalendar =>
+      '[ZH] Business Calendar (Chinese (Simplified))';
 
   @override
-  String get addAvailability => 'Add Availability';
+  String get addAvailability => '[ZH] Add Availability (Chinese (Simplified))';
 
   @override
-  String get ambassadorOnboarding => 'Ambassador Onboarding';
+  String get ambassadorOnboarding =>
+      '[ZH] Ambassador Onboarding (Chinese (Simplified))';
 
   @override
   String phoneProfileasyncphone(Object phone) {
-    return 'Phone: $phone';
+    return '[ZH] Phone: $phone (Chinese (Simplified))';
   }
 
   @override
-  String get addNewRoom => 'Add New Room';
+  String get addNewRoom => '[ZH] Add New Room (Chinese (Simplified))';
 
   @override
-  String get requireParentApproval => 'Require Parent Approval';
+  String get requireParentApproval =>
+      '[ZH] Require Parent Approval (Chinese (Simplified))';
 
   @override
-  String get closed => 'Closed';
+  String get closed => '[ZH] Closed (Chinese (Simplified))';
 
   @override
-  String get exportAsPdf => 'Export as PDF';
+  String get exportAsPdf => '[ZH] Export as PDF (Chinese (Simplified))';
 
   @override
-  String get enableVibration => 'Enable Vibration';
+  String get enableVibration => '[ZH] Enable Vibration (Chinese (Simplified))';
 
   @override
   String toAvailendformatcontext(Object endTime) {
-    return 'To: $endTime';
+    return '[ZH] To: $endTime (Chinese (Simplified))';
   }
 
   @override
-  String get yourUpgradeCodeUpgradecode => 'Your upgrade code: \$upgradeCode';
+  String yourUpgradeCodeUpgradecode(Object upgradeCode) {
+    return '[ZH] Your upgrade code: \$upgradeCode (Chinese (Simplified))';
+  }
 
   @override
-  String get requestPrivateSession => 'requestPrivateSession (TRANSLATE)';
+  String get requestPrivateSession => '[ZH] requestPrivateSession (TRANSLATE)';
 
   @override
-  String get country => 'Country';
+  String get country => '[ZH] Country (Chinese (Simplified))';
 
   @override
-  String get loginScreen => 'Login Screen';
+  String get loginScreen => '[ZH] Login Screen';
 
   @override
   String staffArgsstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[ZH] Staff: $staffName (Chinese (Simplified))';
   }
 
   @override
-  String get revokeConsent => 'Revoke Consent';
+  String get revokeConsent => '[ZH] Revoke Consent (Chinese (Simplified))';
 
   @override
-  String get settings1 => 'Settings';
+  String get settings1 => '[ZH] Settings (Chinese (Simplified))';
 
   @override
-  String get cancel1 => 'Cancel';
+  String get cancel1 => '[ZH] Cancel (Chinese (Simplified))';
 
   @override
   String get subscriptionActivatedSuccessfully =>
-      'Subscription activated successfully!';
+      '[ZH] Subscription activated successfully! (Chinese (Simplified))';
 
   @override
   String activityLogaction(Object action) {
-    return 'Activity: $action';
+    return '[ZH] Activity: $action';
   }
 
   @override
-  String get broadcast => 'Broadcast';
+  String get broadcast => '[ZH] Broadcast (Chinese (Simplified))';
 
   @override
-  String get noEventsScheduledThisWeek => 'No events scheduled this week';
+  String get noEventsScheduledThisWeek =>
+      '[ZH] No events scheduled this week (Chinese (Simplified))';
 
   @override
-  String get googleCalendar => 'Google Calendar';
+  String get googleCalendar => '[ZH] Google Calendar (Chinese (Simplified))';
 
   @override
-  String get sendInvite => 'Send Invite';
+  String get sendInvite => 'إرسال دعوة';
 
   @override
-  String get childDashboard => 'Child Dashboard';
+  String get childDashboard => '[ZH] Child Dashboard (Chinese (Simplified))';
 
   @override
-  String get failedToUploadBackgroundE => 'Failed to upload background: \$e';
+  String get failedToUploadBackgroundE =>
+      '[ZH] Failed to upload background: \$e (Chinese (Simplified))';
 
   @override
   String linkchildidsubstring08(Object linkId) {
-    return '$linkId...';
+    return '[ZH] $linkId...';
   }
 
   @override
   String targetLogtargettypeLogtargetid(Object targetId, Object targetType) {
-    return 'Target: $targetType - $targetId';
+    return '[ZH] Target: $targetType - $targetId';
   }
 
   @override
-  String get contextContextid => 'Context: \$contextId';
+  String get contextContextid => '[ZH] Context: \$contextId';
 
   @override
-  String get noAppointments => 'No appointments';
+  String get noAppointments => '[ZH] No appointments (Chinese (Simplified))';
 
   @override
-  String get unlimitedBookingsPerWeek => '• Unlimited bookings per week';
+  String get unlimitedBookingsPerWeek =>
+      '[ZH] • Unlimited bookings per week (Chinese (Simplified))';
 
   @override
-  String errorDetailsLogerrortype(Object errorType) {
-    return 'Error Details: $errorType';
+  String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
+    return 'تفاصيل الخطأ: $logErrorType';
   }
 
   @override
-  String get scheduledAtScheduledat => 'Scheduled at: \$scheduledAt';
+  String get scheduledAtScheduledat =>
+      '[ZH] Scheduled at: \$scheduledAt (Chinese (Simplified))';
 
   @override
-  String get selectStaff => 'Select Staff';
+  String get selectStaff => '[ZH] Select Staff (Chinese (Simplified))';
 
   @override
   String get subscriptionCancelledSuccessfully =>
-      'Subscription cancelled successfully';
+      '[ZH] Subscription cancelled successfully (Chinese (Simplified))';
 
   @override
   String get pleaseLogInToViewYourProfile =>
-      'Please log in to view your profile.';
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment => 'Cancel Appointment';
+  String get cancelAppointment =>
+      '[ZH] Cancel Appointment (Chinese (Simplified))';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
-    return 'Permissions - $childId';
+    return '[ZH] Permissions - $childId';
   }
 
   @override
-  String get businessSignup => 'Business Signup';
+  String get businessSignup => '[ZH] Business Signup (Chinese (Simplified))';
 
   @override
   String get businessCompletionScreenComingSoon =>
-      'Business Completion Screen - Coming Soon';
+      '[ZH] Business Completion Screen - Coming Soon (Chinese (Simplified))';
 
   @override
-  String get createGame1 => 'Create Game';
+  String get createGame1 => '[ZH] Create Game (Chinese (Simplified))';
 
   @override
   String valuetoint(Object value) {
-    return '$value';
+    return '[ZH] $value (Chinese (Simplified))';
   }
 
   @override
-  String get pleaseEnterAPromoCode => 'Please enter a promo code';
+  String get pleaseEnterAPromoCode =>
+      '[ZH] Please enter a promo code (Chinese (Simplified))';
 
   @override
-  String get errorLoadingAvailabilityE => 'Error loading availability: \$e';
+  String get errorLoadingAvailabilityE =>
+      '[ZH] Error loading availability: \$e (Chinese (Simplified))';
 
   @override
-  String get parentalControls => 'Parental Controls';
+  String get parentalControls =>
+      '[ZH] Parental Controls (Chinese (Simplified))';
 
   @override
-  String get editBusinessProfile => 'Edit Business Profile';
+  String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => 'Child linked successfully!';
+  String get childLinkedSuccessfully =>
+      '[ZH] Child linked successfully! (Chinese (Simplified))';
 
   @override
-  String get create => 'Create';
+  String get create => '[ZH] Create (Chinese (Simplified))';
 
   @override
-  String get noExternalMeetingsFound => 'No external meetings found.';
+  String get noExternalMeetingsFound =>
+      '[ZH] No external meetings found. (Chinese (Simplified))';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[ZH] Staff: $staffName (Chinese (Simplified))';
   }
 
   @override
   String get pleaseEnterAValidEmailAddress =>
-      'Please enter a valid email address';
+      '[ZH] Please enter a valid email address';
 
   @override
-  String get schedulerScreen => 'Scheduler Screen';
+  String get schedulerScreen => '[ZH] Scheduler Screen (Chinese (Simplified))';
 
   @override
-  String get clientUpdatedSuccessfully => 'Client updated successfully!';
+  String get clientUpdatedSuccessfully =>
+      '[ZH] Client updated successfully! (Chinese (Simplified))';
 
   @override
-  String get surveyResponses => 'Survey Responses';
+  String get surveyResponses => '[ZH] Survey Responses (Chinese (Simplified))';
 
   @override
-  String get syncToOutlook => 'Sync to Outlook';
+  String get syncToOutlook => '[ZH] Sync to Outlook (Chinese (Simplified))';
 
   @override
-  String get saveChanges => 'Save Changes';
+  String get saveChanges => '[ZH] Save Changes (Chinese (Simplified))';
 
   @override
-  String get pickTime => 'Pick Time';
+  String get pickTime => '[ZH] Pick Time (Chinese (Simplified))';
 
   @override
   String registrationFailedEtostring(Object error) {
-    return 'Registration failed: $error';
+    return '[ZH] Registration failed: $error (Chinese (Simplified))';
   }
 
   @override
-  String get analytics => 'Analytics';
+  String get analytics => '[ZH] Analytics (Chinese (Simplified))';
 
   @override
-  String get errorLoadingEvents => 'Error loading events';
+  String get errorLoadingEvents =>
+      '[ZH] Error loading events (Chinese (Simplified))';
 
   @override
   String get errorLoadingOrganizations =>
-      'errorLoadingOrganizations (TRANSLATE)';
+      '[ZH] errorLoadingOrganizations (TRANSLATE)';
 
   @override
   String get businessLoginScreenComingSoon =>
-      'Business Login Screen - Coming Soon';
+      '[ZH] Business Login Screen - Coming Soon';
 
   @override
-  String get success1 => 'Success';
+  String get success1 => '[ZH] Success (Chinese (Simplified))';
 
   @override
   String appVersionLogappversion(Object appVersion) {
-    return 'App Version: $appVersion';
+    return '[ZH] App Version: $appVersion';
   }
 
   @override
   String fromAvailstartformatcontext(Object startTime) {
-    return 'From: $startTime';
+    return '[ZH] From: $startTime (Chinese (Simplified))';
   }
 
   @override
-  String get readWrite => 'Read & Write';
+  String get readWrite => '[ZH] Read & Write (Chinese (Simplified))';
 
   @override
   String get redirectingToStripeCheckoutForBasicPlan =>
-      'Redirecting to Stripe checkout for Basic plan...';
+      '[ZH] Redirecting to Stripe checkout for Basic plan... (Chinese (Simplified))';
 
   @override
-  String get errorSavingConfigurationE => 'Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[ZH] Error saving configuration: \$e';
 
   @override
-  String get pickDate => 'Pick Date';
+  String get pickDate => '[ZH] Pick Date (Chinese (Simplified))';
 
   @override
-  String get chatBooking => 'Chat Booking';
+  String get chatBooking => '[ZH] Chat Booking (Chinese (Simplified))';
 
   @override
-  String get noQuestionsAdded => 'No questions added';
+  String get noQuestionsAdded =>
+      '[ZH] No questions added (Chinese (Simplified))';
 
   @override
   String severityLogseverityname(Object severity) {
-    return 'Severity: $severity';
+    return '[ZH] Severity: $severity';
   }
 
   @override
-  String get markAsPaid => 'Mark as Paid';
+  String get markAsPaid => '[ZH] Mark as Paid';
 
   @override
-  String get typeOpenCall => 'Type: Open Call';
+  String get typeOpenCall => '[ZH] Type: Open Call (Chinese (Simplified))';
 
   @override
   String appointmentAppointmentid(Object appointmentId) {
-    return 'Appointment $appointmentId';
+    return '[ZH] Appointment $appointmentId';
   }
 
   @override
-  String statusInvitestatusname(Object status) {
-    return 'Status: $status';
+  String statusInvitestatusname(Object inviteStatusName, Object status) {
+    return 'الحالة: $inviteStatusName';
   }
 
   @override
-  String get businessLogin => 'Business Login';
+  String get businessLogin => '[ZH] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => 'Invoice created successfully!';
+  String get invoiceCreatedSuccessfully =>
+      '[ZH] Invoice created successfully! (Chinese (Simplified))';
 
   @override
-  String get noTimeSeriesDataAvailable => 'No time series data available';
+  String get noTimeSeriesDataAvailable =>
+      '[ZH] No time series data available (Chinese (Simplified))';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
-    return 'Subscribe to $planName';
+    return '[ZH] Subscribe to $planName';
   }
 
   @override
   String timestamp_formatdatelogtimestamp(Object timestamp) {
-    return 'Timestamp: $timestamp';
+    return '[ZH] Timestamp: $timestamp';
   }
 
   @override
   String get failedToSendPrivacyRequestE =>
-      'Failed to send privacy request: \$e';
+      '[ZH] Failed to send privacy request: \$e (Chinese (Simplified))';
 
   @override
-  String get chooseYourPlan => 'Choose Your Plan';
+  String get chooseYourPlan => '[ZH] Choose Your Plan (Chinese (Simplified))';
 
   @override
-  String get playtimeManagement => 'Playtime Management';
+  String get playtimeManagement =>
+      '[ZH] Playtime Management (Chinese (Simplified))';
 
   @override
-  String get availability => 'Availability';
+  String get availability => '[ZH] Availability (Chinese (Simplified))';
 
   @override
-  String get eventCreated => 'Event created';
+  String get eventCreated => '[ZH] Event created (Chinese (Simplified))';
 
   @override
-  String get subscribeToBasic499mo => 'Subscribe to Basic (€4.99/mo)';
+  String get subscribeToBasic499mo =>
+      '[ZH] Subscribe to Basic (€4.99/mo) (Chinese (Simplified))';
 
   @override
-  String get completion => 'Completion';
+  String get completion => '[ZH] Completion (Chinese (Simplified))';
 
   @override
-  String get supportTicketSubmitted => 'Support ticket submitted';
+  String get supportTicketSubmitted =>
+      '[ZH] Support ticket submitted (Chinese (Simplified))';
 
   @override
-  String get monetizationSettings => 'Monetization Settings';
+  String get monetizationSettings =>
+      '[ZH] Monetization Settings (Chinese (Simplified))';
 
   @override
-  String get noBookingsFound => 'No bookings found';
+  String get noBookingsFound => '[ZH] No bookings found (Chinese (Simplified))';
 
   @override
-  String get admin => 'Admin';
+  String get admin => '[ZH] Admin';
 
   @override
-  String get deleteSurvey => 'Delete Survey';
+  String get deleteSurvey => '[ZH] Delete Survey (Chinese (Simplified))';
 
   @override
-  String get gameApprovedSuccessfully => 'Game approved successfully!';
+  String get gameApprovedSuccessfully =>
+      '[ZH] Game approved successfully! (Chinese (Simplified))';
 
   @override
   String get errorLoadingPermissionsError =>
-      'Error loading permissions: \$error';
+      '[ZH] Error loading permissions: \$error (Chinese (Simplified))';
 
   @override
-  String get referrals => 'Referrals';
+  String get referrals => '[ZH] Referrals (Chinese (Simplified))';
 
   @override
-  String get crm => 'CRM';
+  String get crm => '[ZH] CRM (Chinese (Simplified))';
 
   @override
-  String get gameRejected => 'Game rejected';
+  String get gameRejected => '[ZH] Game rejected (Chinese (Simplified))';
 
   @override
-  String get appointments => 'Appointments';
+  String get appointments => '[ZH] Appointments (Chinese (Simplified))';
 
   @override
-  String get onboardingScreen => 'Onboarding Screen';
+  String get onboardingScreen =>
+      '[ZH] Onboarding Screen (Chinese (Simplified))';
 
   @override
-  String get welcomeToYourStudio => 'Welcome to your studio';
+  String get welcomeToYourStudio =>
+      '[ZH] Welcome to your studio (Chinese (Simplified))';
 
   @override
-  String get update => 'Update';
+  String get update => '[ZH] Update (Chinese (Simplified))';
 
   @override
-  String get retry1 => 'Retry';
+  String get retry1 => '[ZH] Retry (Chinese (Simplified))';
 
   @override
-  String get booking => 'Booking';
+  String get booking => '[ZH] Booking (Chinese (Simplified))';
 
   @override
-  String get parentalSettings => 'Parental Settings';
+  String get parentalSettings =>
+      '[ZH] Parental Settings (Chinese (Simplified))';
 
   @override
-  String get language => 'Language';
+  String get language => '[ZH] Language (Chinese (Simplified))';
 
   @override
-  String get deleteSlot => 'Delete Slot';
+  String get deleteSlot => '[ZH] Delete Slot (Chinese (Simplified))';
 
   @override
-  String get organizations => 'organizations (TRANSLATE)';
+  String get organizations => '[ZH] organizations (TRANSLATE)';
 
   @override
   String get configurationSavedSuccessfully =>
-      'Configuration saved successfully!';
+      '[ZH] Configuration saved successfully!';
 
   @override
-  String get createNewGame => 'Create New Game';
+  String get createNewGame => '[ZH] Create New Game (Chinese (Simplified))';
 
   @override
-  String get next1 => 'Next';
+  String get next1 => '[ZH] Next (Chinese (Simplified))';
 
   @override
   String get backgroundUploadedSuccessfully =>
-      'Background uploaded successfully!';
+      '[ZH] Background uploaded successfully! (Chinese (Simplified))';
 
   @override
-  String get noAppointmentRequestsFound => 'No appointment requests found.';
+  String get noAppointmentRequestsFound =>
+      '[ZH] No appointment requests found. (Chinese (Simplified))';
 
   @override
-  String get pleaseSignInToCreateASession =>
-      'Please sign in to create a session';
+  String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => 'Restrict mature content';
+  String get restrictMatureContent =>
+      '[ZH] Restrict mature content (Chinese (Simplified))';
 
   @override
-  String get ambassadors => 'Ambassadors';
+  String get ambassadors => '[ZH] Ambassadors (Chinese (Simplified))';
 
   @override
-  String get smsNotifications => 'SMS Notifications';
+  String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled => 'Payment was cancelled';
+  String get paymentWasCancelled =>
+      '[ZH] Payment was cancelled (Chinese (Simplified))';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => '[ZH] Clear All (Chinese (Simplified))';
 
   @override
-  String get viewDetails => 'View Details';
+  String get viewDetails => '[ZH] View Details (Chinese (Simplified))';
 
   @override
-  String get notifications1 => 'Notifications';
+  String get notifications1 => 'الإشعارات';
 
   @override
   String get liveSessionScheduledWaitingForParentApproval =>
-      'Live session scheduled! Waiting for parent approval...';
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => 'Failed to create game: \$e';
+  String get failedToCreateGameE =>
+      '[ZH] Failed to create game: \$e (Chinese (Simplified))';
 
   @override
-  String get noChartDataAvailable => 'No chart data available';
+  String get noChartDataAvailable =>
+      '[ZH] No chart data available (Chinese (Simplified))';
 
   @override
-  String get phonebasedBookingSystem => '• Phone-based booking system';
+  String get phonebasedBookingSystem =>
+      '[ZH] • Phone-based booking system (Chinese (Simplified))';
 
   @override
-  String get enableNotifications1 => 'Enable Notifications';
+  String get enableNotifications1 => 'تفعيل الإشعارات';
 
   @override
-  String get invoices => 'Invoices';
+  String get invoices => '[ZH] Invoices (Chinese (Simplified))';
 
   @override
   String get pleaseActivateYourBusinessProfileToContinue =>
-      'Please activate your business profile to continue.';
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
-    return 'Scheduled at: $scheduledAt';
+    return '[ZH] Scheduled at: $scheduledAt (Chinese (Simplified))';
   }
 
   @override
   String durationDurationinminutes0Minutes(Object duration) {
-    return 'Duration: $duration minutes';
+    return '[ZH] Duration: $duration minutes (Chinese (Simplified))';
   }
 
   @override
-  String get tryAgain => 'Try Again';
+  String get tryAgain => '[ZH] Try Again (Chinese (Simplified))';
 
   @override
-  String get deleteBackground => 'Delete Background';
+  String get deleteBackground =>
+      '[ZH] Delete Background (Chinese (Simplified))';
 
   @override
   String currentTierTiertouppercase(Object tier) {
-    return 'Current Tier: $tier';
+    return '[ZH] Current Tier: $tier (Chinese (Simplified))';
   }
 
   @override
-  String get iDoNotConsent => 'I Do Not Consent';
+  String get iDoNotConsent => '[ZH] I Do Not Consent';
 
   @override
   String get noClientsFoundAddYourFirstClient =>
-      'No clients found. Add your first client!';
+      '[ZH] No clients found. Add your first client! (Chinese (Simplified))';
 
   @override
   String get settingsDialogWillBeImplementedHere =>
-      'Settings dialog will be implemented here.';
+      '[ZH] Settings dialog will be implemented here.';
 
   @override
-  String get groupGroupid => 'Group: \$groupId';
+  String get groupGroupid => '[ZH] Group: \$groupId';
 
   @override
-  String get appointmentRequests => 'Appointment Requests';
+  String get appointmentRequests =>
+      '[ZH] Appointment Requests (Chinese (Simplified))';
 
   @override
-  String get forward => 'Forward';
+  String get forward => '[ZH] Forward (Chinese (Simplified))';
 
   @override
-  String get roomAddedSuccessfully => 'Room added successfully!';
+  String get roomAddedSuccessfully =>
+      '[ZH] Room added successfully! (Chinese (Simplified))';
 
   @override
-  String get option => '• \$option';
+  String get option => '[ZH] • \$option (Chinese (Simplified))';
 
   @override
   String responseIndex1(Object number) {
-    return 'Response #$number';
+    return '[ZH] Response #$number (Chinese (Simplified))';
   }
 
   @override
-  String get crmDashboardWithAnalytics => '• CRM dashboard with analytics';
+  String get crmDashboardWithAnalytics =>
+      '[ZH] • CRM dashboard with analytics (Chinese (Simplified))';
 
   @override
-  String get contentLibrary1 => 'Content Library';
+  String get contentLibrary1 => '[ZH] Content Library (Chinese (Simplified))';
 
   @override
-  String get reply => 'Reply';
+  String get reply => '[ZH] Reply (Chinese (Simplified))';
 
   @override
-  String get subscriptionManagement => 'Subscription Management';
+  String get subscriptionManagement =>
+      '[ZH] Subscription Management (Chinese (Simplified))';
 
   @override
   String get monetizationSettingsWillBeImplementedHere =>
-      'Monetization settings will be implemented here';
+      '[ZH] Monetization settings will be implemented here (Chinese (Simplified))';
 
   @override
-  String get failedToApplyPromoCodeE => 'Failed to apply promo code: \$e';
+  String get failedToApplyPromoCodeE =>
+      '[ZH] Failed to apply promo code: \$e (Chinese (Simplified))';
 
   @override
-  String get editProvider => 'Edit Provider';
+  String get editProvider => '[ZH] Edit Provider';
 
   @override
-  String get localizationContribution => 'Localization Contribution';
+  String get localizationContribution =>
+      '[ZH] Localization Contribution (Chinese (Simplified))';
 
   @override
-  String get parentalConsent => 'Parental Consent';
+  String get parentalConsent => '[ZH] Parental Consent (Chinese (Simplified))';
 
   @override
   String get businessSignupScreenComingSoon =>
-      'Business Signup Screen - Coming Soon';
+      '[ZH] Business Signup Screen - Coming Soon (Chinese (Simplified))';
 
   @override
   String get areYouSureYouWantToDeleteThisAppointment =>
-      'Are you sure you want to delete this appointment?';
+      '[ZH] Are you sure you want to delete this appointment? (Chinese (Simplified))';
 
   @override
-  String get syncAppointment => 'Sync Appointment';
+  String get syncAppointment => '[ZH] Sync Appointment (Chinese (Simplified))';
 
   @override
-  String get iConsent => 'I Consent';
+  String get iConsent => '[ZH] I Consent (Chinese (Simplified))';
 
   @override
-  String get sessionRejected => 'Session rejected';
+  String get sessionRejected => 'تم رفض الجلسة';
 
   @override
   String get businessSetupScreenComingSoon =>
-      'Business Setup Screen - Coming Soon';
+      '[ZH] Business Setup Screen - Coming Soon (Chinese (Simplified))';
 
   @override
-  String get edit1 => 'Edit';
+  String get edit1 => '[ZH] Edit (Chinese (Simplified))';
 
   @override
-  String get noEventsScheduledThisMonth => 'No events scheduled this month';
+  String get noEventsScheduledThisMonth =>
+      '[ZH] No events scheduled this month (Chinese (Simplified))';
 
   @override
-  String get businessDashboard => 'Business Dashboard';
+  String get businessDashboard =>
+      '[ZH] Business Dashboard (Chinese (Simplified))';
 
   @override
-  String get noMessagesFound => 'No messages found.';
+  String get noMessagesFound =>
+      '[ZH] No messages found. (Chinese (Simplified))';
 
   @override
   String staffStaffidNotSelected(Object staff) {
-    return 'Staff: $staff';
+    return '[ZH] Staff: $staff';
   }
 
   @override
-  String get manageStaffAvailability => 'Manage Staff Availability';
+  String get manageStaffAvailability =>
+      '[ZH] Manage Staff Availability (Chinese (Simplified))';
 
   @override
-  String get noMissingTranslations => 'No missing translations';
+  String get noMissingTranslations =>
+      '[ZH] No missing translations (Chinese (Simplified))';
 
   @override
-  String get skip => 'Skip';
+  String get skip => '[ZH] Skip (Chinese (Simplified))';
 
   @override
-  String get meetingIdMeetingid => 'Meeting ID: \$meetingId';
+  String meetingIdMeetingid(Object meetingId) {
+    return 'معرف الاجتماع: $meetingId';
+  }
 
   @override
-  String get noUsers => 'noUsers (TRANSLATE)';
+  String get noUsers => '[ZH] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => 'Error loading referral code';
+  String get errorLoadingReferralCode =>
+      '[ZH] Error loading referral code (Chinese (Simplified))';
 
   @override
-  String get allCountries => 'All Countries';
+  String get allCountries => '[ZH] All Countries (Chinese (Simplified))';
 
   @override
-  String get deleteGame => 'Delete Game';
+  String get deleteGame => '[ZH] Delete Game (Chinese (Simplified))';
 
   @override
-  String get staffManagementTools => '• Staff management tools';
+  String get staffManagementTools =>
+      '[ZH] • Staff management tools (Chinese (Simplified))';
 
   @override
-  String get deleteMessage => 'Delete Message';
+  String get deleteMessage => '[ZH] Delete Message (Chinese (Simplified))';
 
   @override
   String get receiveBookingNotificationsViaSms =>
-      'Receive booking notifications via SMS';
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
-  String get changeRole => 'changeRole (TRANSLATE)';
+  String get changeRole => '[ZH] changeRole (TRANSLATE)';
 
   @override
   String errorLoadingBookingsSnapshoterror(Object error) {
-    return 'Error loading bookings: $error';
+    return 'خطأ في تحميل لقطة الحجوزات: $error';
   }
 
   @override
-  String get openingCustomerPortal => 'Opening customer portal...';
+  String get openingCustomerPortal =>
+      '[ZH] Opening customer portal... (Chinese (Simplified))';
 
   @override
-  String get signOut => 'Sign Out';
+  String get signOut => '[ZH] Sign Out (Chinese (Simplified))';
 
   @override
   String nameProfilename(Object name) {
-    return 'Name: $name';
+    return '[ZH] Name: $name (Chinese (Simplified))';
   }
 
   @override
   String get businessProfileEntryScreenComingSoon =>
-      'Business Profile Entry Screen - Coming Soon';
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness => 'Upgrade to Business';
+  String get upgradeToBusiness =>
+      '[ZH] Upgrade to Business (Chinese (Simplified))';
 
   @override
-  String get apply => 'Apply';
+  String get apply => 'تطبيق';
 
   @override
-  String get errorLoadingSubscriptionError =>
-      'Error loading subscription: \$error';
+  String errorLoadingSubscriptionError(Object error) {
+    return 'خطأ في تحميل الاشتراك: $error';
+  }
 
   @override
-  String get errorLoadingUsers => 'errorLoadingUsers (TRANSLATE)';
+  String get errorLoadingUsers => 'خطأ في تحميل المستخدمين';
 
   @override
-  String get verify => 'Verify';
+  String get verify => 'التحقق';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'الاشتراك';
 
   @override
-  String get deleteMyAccount => 'Delete My Account';
+  String get deleteMyAccount => 'حذف حسابي';
 
   @override
   String get businessAppointmentsEntryScreenComingSoon =>
-      'Business Appointments Entry Screen - Coming Soon';
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
-  String get viewResponses => 'View Responses';
+  String get viewResponses => '[ZH] View Responses (Chinese (Simplified))';
 
   @override
-  String get businessWelcomeScreenComingSoon =>
-      'Business Welcome Screen - Coming Soon';
+  String get businessWelcomeScreenComingSoon => 'شاشة ترحيب الأعمال - قريباً';
 
   @override
-  String get failedToOpenCustomerPortalE =>
-      'Failed to open customer portal: \$e';
+  String failedToOpenCustomerPortalE(Object e) {
+    return 'فشل في فتح بوابة العميل: $e';
+  }
 
   @override
-  String get continueText => 'Continue';
+  String get continueText => 'متابعة';
 
   @override
-  String get close1 => 'Close';
+  String get close1 => 'إغلاق';
 
   @override
-  String get confirm1 => 'Confirm';
+  String get confirm1 => 'تأكيد';
 
   @override
-  String get externalMeetings => 'External Meetings';
+  String get externalMeetings => 'الاجتماعات الخارجية';
 
   @override
-  String get approve => 'Approve';
+  String get approve => 'موافقة';
 
   @override
   String get noInvoicesFoundCreateYourFirstInvoice =>
-      'No invoices found. Create your first invoice!';
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'اشتراك';
 
   @override
-  String get login1 => 'Login';
+  String get login1 => 'تسجيل الدخول';
 
   @override
-  String get adminOverviewGoesHere => 'Admin overview goes here';
+  String get adminOverviewGoesHere => 'نظرة عامة على المسؤول هنا';
 
   @override
-  String get loadingCheckout => 'Loading checkout...';
+  String get loadingCheckout => 'جار تحميل الدفع...';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -2418,25 +2563,25 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   AppLocalizationsZhHant() : super('zh_Hant');
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => '[ZH_HANT] Refresh';
 
   @override
   String get home => '主頁';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => '[ZH_HANT] No sessions yet';
 
   @override
-  String get ok => 'OK';
+  String get ok => '[ZH_HANT] OK';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => '[ZH_HANT] Choose your play mode:';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => '[ZH_HANT] Sign Up';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => '[ZH_HANT] Schedule Message';
 
   @override
   String get decline => '拒絕';
@@ -2448,46 +2593,46 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get login => '登入';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => '[ZH_HANT] Choose friends to invite';
 
   @override
   String get noInvites => '無邀請';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => '[ZH_HANT] Choose a time';
 
   @override
-  String get success => 'Success';
+  String get success => '[ZH_HANT] Success';
 
   @override
-  String get undo => 'Undo';
+  String get undo => '[ZH_HANT] Undo';
 
   @override
   String opened(Object count) {
-    return '已開啟：$count';
+    return '[ZH_HANT] 已開啟：$count';
   }
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => '[ZH_HANT] Create Virtual Session';
 
   @override
   String get messageSentSuccessfully => '訊息已成功發送';
 
   @override
-  String get redo => 'Redo';
+  String get redo => '[ZH_HANT] Redo';
 
   @override
   String get next => '下一步';
 
   @override
-  String get search => 'Search';
+  String get search => '[ZH_HANT] Search';
 
   @override
   String get cancelInviteConfirmation => '您確定要取消此邀請嗎？';
 
   @override
   String created(Object date) {
-    return '建立於：$date';
+    return '[ZH_HANT] 建立於：$date';
   }
 
   @override
@@ -2497,65 +2642,65 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get saveGroupForRecognition => '儲存群組以供未來辨識';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => '[ZH_HANT] Live playtime scheduled!';
 
   @override
   String get revokeAccessConfirmation => '您確定要撤銷此孩童的存取權嗎？此操作無法還原。';
 
   @override
-  String get download => 'Download';
+  String get download => '[ZH_HANT] Download';
 
   @override
   String get password => '密碼';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return '讀取家庭連結錯誤：$error';
+    return '[ZH_HANT] 讀取家庭連結錯誤：$error';
   }
 
   @override
   String get cancel => '取消';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => '[ZH_HANT] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return '$action 隱私請求失敗：$error';
+    return '[ZH_HANT] $action 隱私請求失敗：$error';
   }
 
   @override
-  String get appTitle => 'Appoint';
+  String get appTitle => '[ZH_HANT] Appoint';
 
   @override
   String get accept => '接受';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => '[ZH_HANT] Virtual Play';
 
   @override
   String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+      '[ZH_HANT] Enjoy live or virtual games with your friends!';
 
   @override
-  String get delete => 'Delete';
+  String get delete => '[ZH_HANT] Delete';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => '[ZH_HANT] Virtual playtime started!';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => '[ZH_HANT] Create your first game';
 
   @override
-  String get participants => 'Participants';
+  String get participants => '[ZH_HANT] Participants';
 
   @override
   String recipients(Object count) {
-    return '收件人：$count';
+    return '[ZH_HANT] 收件人：$count';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => '[ZH_HANT] No results found';
 
   @override
   String get yes => '是';
@@ -2564,59 +2709,60 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get invite => '邀請';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => '[ZH_HANT] Live Play';
 
   @override
-  String get done => 'Done';
+  String get done => '[ZH_HANT] Done';
 
   @override
-  String get defaultShareMessage => '嗨！我透過 APP‑OINT 安排了一次會議。點此確認或提出其他時間：';
+  String get defaultShareMessage =>
+      '[ZH_HANT] 嗨！我透過 APP‑OINT 安排了一次會議。點此確認或提出其他時間：';
 
   @override
   String get no => '否';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => '[ZH_HANT] Playtime Hub';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => '[ZH_HANT] Create Live Session';
 
   @override
   String get enableNotifications => '啟用通知';
 
   @override
   String invited(Object date) {
-    return '已邀請：$date';
+    return '[ZH_HANT] 已邀請：$date';
   }
 
   @override
   String content(Object content) {
-    return '內容：$content';
+    return '[ZH_HANT] 內容：$content';
   }
 
   @override
   String get meetingSharedSuccessfully => '會議已成功分享！';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => '[ZH_HANT] Welcome to Playtime';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => '[ZH_HANT] View All';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => '[ZH_HANT] Virtual Play';
 
   @override
-  String get staffScreenTBD => '員工畫面 – 開發中';
+  String get staffScreenTBD => '[ZH_HANT] 員工畫面 – 開發中';
 
   @override
-  String get cut => 'Cut';
+  String get cut => '[ZH_HANT] Cut';
 
   @override
   String get inviteCancelledSuccessfully => '邀請已成功取消！';
 
   @override
-  String get retry => 'Retry';
+  String get retry => '[ZH_HANT] Retry';
 
   @override
   String get composeBroadcastMessage => '撰寫廣播訊息';
@@ -2625,16 +2771,16 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get sendNow => '立即發送';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => '[ZH_HANT] No games yet';
 
   @override
-  String get select => 'Select';
+  String get select => '[ZH_HANT] Select';
 
   @override
-  String get about => 'About';
+  String get about => '[ZH_HANT] About';
 
   @override
-  String get choose => 'Choose';
+  String get choose => '[ZH_HANT] Choose';
 
   @override
   String get profile => '個人資料';
@@ -2644,38 +2790,38 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String status(Object status) {
-    return '狀態：$status';
+    return '[ZH_HANT] 狀態：$status';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => '[ZH_HANT] Logout';
 
   @override
-  String get paste => 'Paste';
+  String get paste => '[ZH_HANT] Paste';
 
   @override
   String get welcome => '歡迎';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => '[ZH_HANT] Create a Playtime Session';
 
   @override
   String get familyMembers => '家庭成員';
 
   @override
-  String get upload => 'Upload';
+  String get upload => '[ZH_HANT] Upload';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => '[ZH_HANT] Upcoming Sessions';
 
   @override
   String get enterGroupName => '輸入群組名稱以便辨識';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => '[ZH_HANT] Confirm';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => '[ZH_HANT] Live Play';
 
   @override
   String get errorLoadingInvites => '讀取邀請錯誤';
@@ -2687,7 +2833,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get pickVideo => '選擇影片';
 
   @override
-  String get playtimeGameDeleted => 'Game deleted';
+  String get playtimeGameDeleted => '[ZH_HANT] Game deleted';
 
   @override
   String get scheduleForLater => '稍後安排';
@@ -2697,14 +2843,14 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String type(Object type) {
-    return '類型：$type';
+    return '[ZH_HANT] 類型：$type';
   }
 
   @override
-  String get checkingPermissions => '正在檢查權限...';
+  String get checkingPermissions => '[ZH_HANT] 正在檢查權限...';
 
   @override
-  String get copy => 'Copy';
+  String get copy => '[ZH_HANT] Copy';
 
   @override
   String get yesCancel => '是，取消';
@@ -2713,7 +2859,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get email => '電子郵件';
 
   @override
-  String get shareOnWhatsApp => '分享到 WhatsApp';
+  String get shareOnWhatsApp => '[ZH_HANT] 分享到 WhatsApp';
 
   @override
   String get notificationSettings => '通知設定';
@@ -2729,7 +2875,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String requestType(Object type) {
-    return '$type 請求';
+    return '[ZH_HANT] $type 請求';
   }
 
   @override
@@ -2742,62 +2888,62 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get cancelInvite => '取消邀請';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => '[ZH_HANT] Create New';
 
   @override
-  String get settings => 'Settings';
+  String get settings => '[ZH_HANT] Settings';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => '[ZH_HANT] Reject';
 
   @override
   String get errorLoadingProfile => '讀取個人資料錯誤';
 
   @override
-  String get edit => 'Edit';
+  String get edit => '[ZH_HANT] Edit';
 
   @override
-  String get add => 'Add';
+  String get add => '[ZH_HANT] Add';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => '[ZH_HANT] Game approved';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => '[ZH_HANT] Forgot Password?';
 
   @override
   String get familyDashboard => '家庭儀表板';
 
   @override
-  String get loading => '載入中...';
+  String get loading => '[ZH_HANT] 載入中...';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => '[ZH_HANT] Quick Actions';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => '[ZH_HANT] Playtime';
 
   @override
-  String get otpResentSuccessfully => 'OTP 已重新發送成功！';
+  String get otpResentSuccessfully => '[ZH_HANT] OTP 已重新發送成功！';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return '檢查權限錯誤：$error';
+    return '[ZH_HANT] 檢查權限錯誤：$error';
   }
 
   @override
-  String get clientScreenTBD => '客戶畫面 – 開發中';
+  String get clientScreenTBD => '[ZH_HANT] 客戶畫面 – 開發中';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM 令牌：$token';
+    return '[ZH_HANT] FCM 令牌：$token';
   }
 
   @override
   String get pickImage => '選擇圖片';
 
   @override
-  String get previous => 'Previous';
+  String get previous => '[ZH_HANT] Previous';
 
   @override
   String get noProfileFound => '找不到個人資料';
@@ -2812,7 +2958,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get messageSavedSuccessfully => '訊息已成功儲存';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => '[ZH_HANT] Scheduled for';
 
   @override
   String get dashboard => '儀表板';
@@ -2821,19 +2967,19 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get noPermissionForBroadcast => '您無權建立廣播訊息。';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => '[ZH_HANT] Playtime Games – Admin';
 
   @override
   String get inviteDetail => '邀請詳情';
 
   @override
   String scheduled(Object date) {
-    return '已排程：$date';
+    return '[ZH_HANT] 已排程：$date';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return '重新發送 OTP 失敗：$error';
+    return '[ZH_HANT] 重新發送 OTP 失敗：$error';
   }
 
   @override
@@ -2841,58 +2987,58 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String errorSavingMessage(Object error) {
-    return '儲存訊息失敗：$error';
+    return '[ZH_HANT] 儲存訊息失敗：$error';
   }
 
   @override
   String get save => '儲存';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => '[ZH_HANT] Approve';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => '[ZH_HANT] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => '[ZH_HANT] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return '撤銷存取權失敗：$error';
+    return '[ZH_HANT] 撤銷存取權失敗：$error';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => '[ZH_HANT] Recent Games';
 
   @override
-  String get customizeMessage => '自訂您的訊息...';
+  String get customizeMessage => '[ZH_HANT] 自訂您的訊息...';
 
   @override
   String failedToCancelInvite(Object error) {
-    return '取消邀請失敗：$error';
+    return '[ZH_HANT] 取消邀請失敗：$error';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return '發送訊息失敗：$error';
+    return '[ZH_HANT] 發送訊息失敗：$error';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => '[ZH_HANT] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return '讀取隱私請求錯誤：$error';
+    return '[ZH_HANT] 讀取隱私請求錯誤：$error';
   }
 
   @override
   String get connectedChildren => '已連結子女';
 
   @override
-  String get share => 'Share';
+  String get share => '[ZH_HANT] Share';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => '[ZH_HANT] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures => '請登入以存取家庭功能';
@@ -2901,19 +3047,19 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get myInvites => '我的邀請';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => '[ZH_HANT] Create Game';
 
   @override
   String get groupNameOptional => '群組名稱（選填）';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => '[ZH_HANT] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => '管理員畫面 – 開發中';
+  String get adminScreenTBD => '[ZH_HANT] 管理員畫面 – 開發中';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => '[ZH_HANT] Playtime Dashboard';
 
   @override
   String get close => '關閉';
@@ -2922,10 +3068,10 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get knownGroupDetected => '偵測到已知群組';
 
   @override
-  String get back => 'Back';
+  String get back => '[ZH_HANT] Back';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => '[ZH_HANT] Choose a game';
 
   @override
   String get managePermissions => '管理權限';
@@ -2935,12 +3081,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String clicked(Object count) {
-    return '已點擊：$count';
+    return '[ZH_HANT] 已點擊：$count';
   }
 
   @override
   String link(Object link) {
-    return '連結：$link';
+    return '[ZH_HANT] 連結：$link';
   }
 
   @override
@@ -2951,55 +3097,2062 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String statusColon(Object status) {
-    return '狀態：$status';
+    return '[ZH_HANT] 狀態：$status';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[ZH_HANT] Please log in to view your profile.';
 
   @override
-  String get adminMetrics => 'Admin Metrics';
+  String get adminMetrics => '[ZH_HANT] Admin Metrics';
 
   @override
-  String get overview => 'Overview';
+  String get overview => '[ZH_HANT] Overview';
 
   @override
-  String get bookings => 'Bookings';
+  String get bookings => '[ZH_HANT] Bookings';
 
   @override
-  String get users => 'users (TRANSLATE)';
+  String get users => '使用者';
 
   @override
-  String get revenue => 'revenue (TRANSLATE)';
+  String get revenue => '收入';
 
   @override
-  String get contentLibrary => 'Content Library';
+  String get contentLibrary => '[ZH_HANT] Content Library';
 
   @override
-  String get noOrganizations => 'noOrganizations (TRANSLATE)';
+  String get authErrorUserNotFound =>
+      '[ZH_HANT] No account found with this email address.';
 
   @override
-  String get meetingDetails => 'meetingDetails (TRANSLATE)';
+  String get authErrorWrongPassword =>
+      '[ZH_HANT] Incorrect password. Please try again.';
 
   @override
-  String get error => 'Error';
+  String get authErrorInvalidEmail =>
+      '[ZH_HANT] Please enter a valid email address.';
 
   @override
-  String get requestPrivateSession => 'requestPrivateSession (TRANSLATE)';
+  String get authErrorUserDisabled =>
+      '[ZH_HANT] This account has been disabled. Please contact support.';
 
   @override
-  String get errorLoadingOrganizations =>
-      'errorLoadingOrganizations (TRANSLATE)';
+  String get authErrorWeakPassword =>
+      '[ZH_HANT] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get organizations => 'organizations (TRANSLATE)';
+  String get authErrorEmailAlreadyInUse =>
+      '[ZH_HANT] An account with this email already exists.';
 
   @override
-  String get noUsers => 'noUsers (TRANSLATE)';
+  String get authErrorTooManyRequests =>
+      '[ZH_HANT] Too many failed attempts. Please try again later.';
 
   @override
-  String get changeRole => 'changeRole (TRANSLATE)';
+  String get authErrorOperationNotAllowed =>
+      '[ZH_HANT] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get errorLoadingUsers => 'errorLoadingUsers (TRANSLATE)';
+  String get authErrorInvalidCredential =>
+      '[ZH_HANT] Invalid credentials. Please try again.';
+
+  @override
+  String get authErrorAccountExistsWithDifferentCredential =>
+      '[ZH_HANT] An account already exists with this email using a different sign-in method.';
+
+  @override
+  String get authErrorCredentialAlreadyInUse =>
+      '[ZH_HANT] These credentials are already associated with another account.';
+
+  @override
+  String get authErrorNetworkRequestFailed =>
+      '[ZH_HANT] Network error. Please check your connection and try again.';
+
+  @override
+  String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
+
+  @override
+  String socialAccountConflictMessage(Object email) {
+    return 'يبدو أن هناك حساب موجود بالفعل';
+  }
+
+  @override
+  String get linkAccounts => 'ربط الحسابات';
+
+  @override
+  String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
+
+  @override
+  String get authErrorRequiresRecentLogin =>
+      '[ZH_HANT] Please log in again to perform this operation.';
+
+  @override
+  String get authErrorAppNotAuthorized =>
+      '[ZH_HANT] This app is not authorized to use Firebase Authentication.';
+
+  @override
+  String get authErrorInvalidVerificationCode =>
+      '[ZH_HANT] The verification code is invalid.';
+
+  @override
+  String get authErrorInvalidVerificationId =>
+      '[ZH_HANT] The verification ID is invalid.';
+
+  @override
+  String get authErrorMissingVerificationCode =>
+      '[ZH_HANT] Please enter the verification code.';
+
+  @override
+  String get authErrorMissingVerificationId =>
+      '[ZH_HANT] Missing verification ID.';
+
+  @override
+  String get authErrorInvalidPhoneNumber =>
+      '[ZH_HANT] The phone number is invalid.';
+
+  @override
+  String get authErrorMissingPhoneNumber =>
+      '[ZH_HANT] Please enter a phone number.';
+
+  @override
+  String get authErrorQuotaExceeded =>
+      '[ZH_HANT] The SMS quota for this project has been exceeded. Please try again later.';
+
+  @override
+  String get authErrorCodeExpired =>
+      '[ZH_HANT] The verification code has expired. Please request a new one.';
+
+  @override
+  String get authErrorSessionExpired =>
+      '[ZH_HANT] Your session has expired. Please log in again.';
+
+  @override
+  String get authErrorMultiFactorAuthRequired =>
+      '[ZH_HANT] Multi-factor authentication is required.';
+
+  @override
+  String get authErrorMultiFactorInfoNotFound =>
+      '[ZH_HANT] Multi-factor information not found.';
+
+  @override
+  String get authErrorMissingMultiFactorSession =>
+      '[ZH_HANT] Missing multi-factor session.';
+
+  @override
+  String get authErrorInvalidMultiFactorSession =>
+      '[ZH_HANT] Invalid multi-factor session.';
+
+  @override
+  String get authErrorSecondFactorAlreadyInUse =>
+      '[ZH_HANT] This second factor is already in use.';
+
+  @override
+  String get authErrorMaximumSecondFactorCountExceeded =>
+      '[ZH_HANT] Maximum number of second factors exceeded.';
+
+  @override
+  String get authErrorUnsupportedFirstFactor =>
+      '[ZH_HANT] Unsupported first factor for multi-factor authentication.';
+
+  @override
+  String get authErrorEmailChangeNeedsVerification =>
+      '[ZH_HANT] Email change requires verification.';
+
+  @override
+  String get authErrorPhoneNumberAlreadyExists =>
+      '[ZH_HANT] This phone number is already in use.';
+
+  @override
+  String get authErrorInvalidPassword =>
+      '[ZH_HANT] The password is invalid or too weak.';
+
+  @override
+  String get authErrorInvalidIdToken => '[ZH_HANT] The ID token is invalid.';
+
+  @override
+  String get authErrorIdTokenExpired => '[ZH_HANT] The ID token has expired.';
+
+  @override
+  String get authErrorIdTokenRevoked =>
+      '[ZH_HANT] The ID token has been revoked.';
+
+  @override
+  String get authErrorInternalError =>
+      '[ZH_HANT] An internal error occurred. Please try again.';
+
+  @override
+  String get authErrorInvalidArgument =>
+      '[ZH_HANT] An invalid argument was provided.';
+
+  @override
+  String get authErrorInvalidClaims =>
+      '[ZH_HANT] Invalid custom claims provided.';
+
+  @override
+  String get authErrorInvalidContinueUri =>
+      '[ZH_HANT] The continue URL is invalid.';
+
+  @override
+  String get authErrorInvalidCreationTime =>
+      '[ZH_HANT] The creation time is invalid.';
+
+  @override
+  String get authErrorInvalidDisabledField =>
+      '[ZH_HANT] The disabled field value is invalid.';
+
+  @override
+  String get authErrorInvalidDisplayName =>
+      '[ZH_HANT] The display name is invalid.';
+
+  @override
+  String get authErrorInvalidDynamicLinkDomain =>
+      '[ZH_HANT] The dynamic link domain is invalid.';
+
+  @override
+  String get authErrorInvalidEmailVerified =>
+      '[ZH_HANT] The email verified value is invalid.';
+
+  @override
+  String get authErrorInvalidHashAlgorithm =>
+      '[ZH_HANT] The hash algorithm is invalid.';
+
+  @override
+  String get authErrorInvalidHashBlockSize =>
+      '[ZH_HANT] The hash block size is invalid.';
+
+  @override
+  String get authErrorInvalidHashDerivedKeyLength =>
+      '[ZH_HANT] The hash derived key length is invalid.';
+
+  @override
+  String get authErrorInvalidHashKey => '[ZH_HANT] The hash key is invalid.';
+
+  @override
+  String get authErrorInvalidHashMemoryCost =>
+      '[ZH_HANT] The hash memory cost is invalid.';
+
+  @override
+  String get authErrorInvalidHashParallelization =>
+      '[ZH_HANT] The hash parallelization is invalid.';
+
+  @override
+  String get authErrorInvalidHashRounds =>
+      '[ZH_HANT] The hash rounds value is invalid.';
+
+  @override
+  String get authErrorInvalidHashSaltSeparator =>
+      '[ZH_HANT] The hash salt separator is invalid.';
+
+  @override
+  String get authErrorInvalidLastSignInTime =>
+      '[ZH_HANT] The last sign-in time is invalid.';
+
+  @override
+  String get authErrorInvalidPageToken =>
+      '[ZH_HANT] The page token is invalid.';
+
+  @override
+  String get authErrorInvalidProviderData =>
+      '[ZH_HANT] The provider data is invalid.';
+
+  @override
+  String get authErrorInvalidProviderId =>
+      '[ZH_HANT] The provider ID is invalid.';
+
+  @override
+  String get authErrorInvalidSessionCookieDuration =>
+      '[ZH_HANT] The session cookie duration is invalid.';
+
+  @override
+  String get authErrorInvalidUid => '[ZH_HANT] The UID is invalid.';
+
+  @override
+  String get authErrorInvalidUserImport =>
+      '[ZH_HANT] The user import record is invalid.';
+
+  @override
+  String get authErrorMaximumUserCountExceeded =>
+      '[ZH_HANT] Maximum user import count exceeded.';
+
+  @override
+  String get authErrorMissingAndroidPkgName =>
+      '[ZH_HANT] Missing Android package name.';
+
+  @override
+  String get authErrorMissingContinueUri => '[ZH_HANT] Missing continue URL.';
+
+  @override
+  String get authErrorMissingHashAlgorithm =>
+      '[ZH_HANT] Missing hash algorithm.';
+
+  @override
+  String get authErrorMissingIosBundleId => '[ZH_HANT] Missing iOS bundle ID.';
+
+  @override
+  String get authErrorMissingUid => '[ZH_HANT] Missing UID.';
+
+  @override
+  String get authErrorMissingOauthClientSecret =>
+      '[ZH_HANT] Missing OAuth client secret.';
+
+  @override
+  String get authErrorProjectNotFound =>
+      '[ZH_HANT] Firebase project not found.';
+
+  @override
+  String get authErrorReservedClaims => '[ZH_HANT] Reserved claims provided.';
+
+  @override
+  String get authErrorSessionCookieExpired =>
+      '[ZH_HANT] Session cookie has expired.';
+
+  @override
+  String get authErrorSessionCookieRevoked =>
+      '[ZH_HANT] Session cookie has been revoked.';
+
+  @override
+  String get authErrorUidAlreadyExists =>
+      '[ZH_HANT] The UID is already in use.';
+
+  @override
+  String get authErrorUnauthorizedContinueUri =>
+      '[ZH_HANT] The continue URL domain is not whitelisted.';
+
+  @override
+  String get authErrorUnknown =>
+      '[ZH_HANT] An unknown authentication error occurred.';
+
+  @override
+  String get checkingPermissions1 => 'فحص الأذونات...';
+
+  @override
+  String get paymentSuccessful => 'تم الدفع بنجاح';
+
+  @override
+  String get businessAvailability => 'توفر الأعمال';
+
+  @override
+  String get send => 'إرسال';
+
+  @override
+  String newNotificationPayloadtitle(Object payloadTitle, Object title) {
+    return 'عنوان الإشعار الجديد: $title';
+  }
+
+  @override
+  String get gameList => 'قائمة الألعاب';
+
+  @override
+  String get deleteAvailability => 'حذف التوفر';
+
+  @override
+  String get connectToGoogleCalendar => 'الاتصال بتقويم Google';
+
+  @override
+  String get adminFreeAccess => '[ZH_HANT] Admin Free Access';
+
+  @override
+  String emailProfileemail(Object email, Object profileEmail) {
+    return 'البريد الإلكتروني للملف الشخصي: $email';
+  }
+
+  @override
+  String get calendar => 'التقويم';
+
+  @override
+  String get upload1 => '[ZH_HANT] Upload (Chinese (Traditional))';
+
+  @override
+  String get resolved => 'تم الحل';
+
+  @override
+  String get keepSubscription => 'الاحتفاظ بالاشتراك';
+
+  @override
+  String get virtualSessionCreatedInvitingFriends =>
+      '[ZH_HANT] Virtual session created! Inviting friends... (Chinese (Traditional))';
+
+  @override
+  String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
+
+  @override
+  String get exportData => 'تصدير البيانات';
+
+  @override
+  String get rewards => '[ZH_HANT] Rewards (Chinese (Traditional))';
+
+  @override
+  String get time => '[ZH_HANT] Time (Chinese (Traditional))';
+
+  @override
+  String userCid(Object cid, Object id) {
+    return '[ZH_HANT] User $id';
+  }
+
+  @override
+  String get noSlots => '無可預約時段';
+
+  @override
+  String get signIn => '登入';
+
+  @override
+  String get homeFeedScreen =>
+      '[ZH_HANT] Home Feed Screen (Chinese (Traditional))';
+
+  @override
+  String get selectLocation =>
+      '[ZH_HANT] Select Location (Chinese (Traditional))';
+
+  @override
+  String get noTicketsYet => '[ZH_HANT] No tickets yet (Chinese (Traditional))';
+
+  @override
+  String get meetingSharedSuccessfully1 => 'تم مشاركة الاجتماع بنجاح';
+
+  @override
+  String get studioProfile => 'ملف الاستوديو';
+
+  @override
+  String get subscriptionUnavailable =>
+      '[ZH_HANT] Subscription unavailable (Chinese (Traditional))';
+
+  @override
+  String get confirmBooking => '確認預約';
+
+  @override
+  String get failedToUpdatePermissionE =>
+      '[ZH_HANT] Failed to update permission: \$e (Chinese (Traditional))';
+
+  @override
+  String get reject => '[ZH_HANT] Reject (Chinese (Traditional))';
+
+  @override
+  String ambassadorStatusAmbassadorstatus(Object ambassadorStatus) {
+    return '[ZH_HANT] Ambassador Status: $ambassadorStatus (Chinese (Traditional))';
+  }
+
+  @override
+  String get noProviders => '[ZH_HANT] No providers';
+
+  @override
+  String get checkingSubscription =>
+      '[ZH_HANT] Checking subscription... (Chinese (Traditional))';
+
+  @override
+  String errorPickingImageE(Object e) {
+    return 'خطأ في اختيار الصورة: $e';
+  }
+
+  @override
+  String get noContentAvailableYet =>
+      '[ZH_HANT] No content available yet (Chinese (Traditional))';
+
+  @override
+  String get resolve => '[ZH_HANT] Resolve (Chinese (Traditional))';
+
+  @override
+  String get errorLoadingSurveysError =>
+      '[ZH_HANT] Error loading surveys: \$error (Chinese (Traditional))';
+
+  @override
+  String errorLogerrormessage(Object errorMessage) {
+    return '[ZH_HANT] Error: $errorMessage';
+  }
+
+  @override
+  String get getHelpWithYourAccount =>
+      '[ZH_HANT] Get help with your account (Chinese (Traditional))';
+
+  @override
+  String get pay => '[ZH_HANT] Pay (Chinese (Traditional))';
+
+  @override
+  String get noOrganizations => '無組織';
+
+  @override
+  String get meetingDetails => 'تفاصيل الاجتماع';
+
+  @override
+  String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
+
+  @override
+  String get changesSavedSuccessfully =>
+      '[ZH_HANT] Changes saved successfully! (Chinese (Traditional))';
+
+  @override
+  String get createNewInvoice =>
+      '[ZH_HANT] Create New Invoice (Chinese (Traditional))';
+
+  @override
+  String get profileNotFound => 'الملف الشخصي غير موجود';
+
+  @override
+  String errorConfirmingPaymentE(Object e) {
+    return 'خطأ في تأكيد الدفع: $e';
+  }
+
+  @override
+  String get inviteFriends => 'دعوة الأصدقاء';
+
+  @override
+  String get profileSaved => '[ZH_HANT] Profile saved! (Chinese (Traditional))';
+
+  @override
+  String get receiveBookingNotificationsViaEmail =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+
+  @override
+  String valuetointk(Object k, Object value) {
+    return '[ZH_HANT] \\\$${value}K (Chinese (Traditional))';
+  }
+
+  @override
+  String get deleteAccount =>
+      '[ZH_HANT] Delete Account (Chinese (Traditional))';
+
+  @override
+  String get profile1 => 'الملف الشخصي';
+
+  @override
+  String get businessOnboarding =>
+      '[ZH_HANT] Business Onboarding (Chinese (Traditional))';
+
+  @override
+  String get addNewClient => '[ZH_HANT] Add New Client (Chinese (Traditional))';
+
+  @override
+  String get darkMode => '[ZH_HANT] Dark Mode (Chinese (Traditional))';
+
+  @override
+  String get addProvider => '[ZH_HANT] Add Provider';
+
+  @override
+  String noRouteDefinedForStateuripath(Object path) {
+    return '[ZH_HANT] No route defined for $path';
+  }
+
+  @override
+  String get youWillReceiveAConfirmationEmailShortly =>
+      '[ZH_HANT] You will receive a confirmation email shortly. (Chinese (Traditional))';
+
+  @override
+  String get addQuestion => '[ZH_HANT] Add Question (Chinese (Traditional))';
+
+  @override
+  String get privacyPolicy =>
+      '[ZH_HANT] Privacy Policy (Chinese (Traditional))';
+
+  @override
+  String branchesLengthBranches(Object branchCount) {
+    return '[ZH_HANT] $branchCount branches (Chinese (Traditional))';
+  }
+
+  @override
+  String get join => '[ZH_HANT] Join (Chinese (Traditional))';
+
+  @override
+  String get businessSubscription =>
+      '[ZH_HANT] Business Subscription (Chinese (Traditional))';
+
+  @override
+  String get myInvites1 => 'دعواتي';
+
+  @override
+  String get providers => '[ZH_HANT] Providers';
+
+  @override
+  String get surveyManagement =>
+      '[ZH_HANT] Survey Management (Chinese (Traditional))';
+
+  @override
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[ZH_HANT] Please enter a valid email or phone';
+
+  @override
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[ZH_HANT] No rooms found. Add your first room! (Chinese (Traditional))';
+
+  @override
+  String get readOurPrivacyPolicy =>
+      '[ZH_HANT] Read our privacy policy (Chinese (Traditional))';
+
+  @override
+  String get couldNotOpenPrivacyPolicy =>
+      '[ZH_HANT] Could not open privacy policy (Chinese (Traditional))';
+
+  @override
+  String get refresh1 => '[ZH_HANT] Refresh (Chinese (Traditional))';
+
+  @override
+  String get roomUpdatedSuccessfully =>
+      '[ZH_HANT] Room updated successfully! (Chinese (Traditional))';
+
+  @override
+  String get contentDetail =>
+      '[ZH_HANT] Content Detail (Chinese (Traditional))';
+
+  @override
+  String get cancelSubscription =>
+      '[ZH_HANT] Cancel Subscription (Chinese (Traditional))';
+
+  @override
+  String get successfullyRegisteredAsAmbassador =>
+      '[ZH_HANT] Successfully registered as Ambassador! (Chinese (Traditional))';
+
+  @override
+  String get save1 => '[ZH_HANT] Save (Chinese (Traditional))';
+
+  @override
+  String get copy1 => '[ZH_HANT] Copy (Chinese (Traditional))';
+
+  @override
+  String get failedToSendInvitationE =>
+      '[ZH_HANT] Failed to send invitation: \$e (Chinese (Traditional))';
+
+  @override
+  String get surveyScore => '[ZH_HANT] Survey Score (Chinese (Traditional))';
+
+  @override
+  String userUserid(Object userId) {
+    return '[ZH_HANT] User \$userId';
+  }
+
+  @override
+  String get noAppointmentsFound =>
+      '[ZH_HANT] No appointments found. (Chinese (Traditional))';
+
+  @override
+  String get responseDetail =>
+      '[ZH_HANT] Response Detail (Chinese (Traditional))';
+
+  @override
+  String get businessVerificationScreenComingSoon =>
+      'شاشة التحقق من الأعمال - قريباً';
+
+  @override
+  String get businessProfileActivatedSuccessfully =>
+      'تم تفعيل الملف التجاري بنجاح';
+
+  @override
+  String get failedToStartProSubscriptionE =>
+      '[ZH_HANT] Failed to start Pro subscription: \$e (Chinese (Traditional))';
+
+  @override
+  String get businessDashboardEntryScreenComingSoon =>
+      '[ZH_HANT] Business Dashboard Entry Screen - Coming Soon (Chinese (Traditional))';
+
+  @override
+  String get contentFilter =>
+      '[ZH_HANT] Content Filter (Chinese (Traditional))';
+
+  @override
+  String get helpSupport => '[ZH_HANT] Help & Support (Chinese (Traditional))';
+
+  @override
+  String get editRoom => '[ZH_HANT] Edit Room (Chinese (Traditional))';
+
+  @override
+  String appointmentApptid(Object appointmentId) {
+    return '[ZH_HANT] Appointment: $appointmentId';
+  }
+
+  @override
+  String deviceLogdeviceinfo(Object deviceInfo) {
+    return '[ZH_HANT] Device: $deviceInfo';
+  }
+
+  @override
+  String get businessCrmEntryScreenComingSoon =>
+      '[ZH_HANT] Business CRM Entry Screen - Coming Soon (Chinese (Traditional))';
+
+  @override
+  String get adminDashboard => '[ZH_HANT] Admin Dashboard';
+
+  @override
+  String orgmemberidslengthMembers(Object memberCount) {
+    return '[ZH_HANT] $memberCount members';
+  }
+
+  @override
+  String get errorLoadingDashboardError =>
+      '[ZH_HANT] Error loading dashboard: \$error (Chinese (Traditional))';
+
+  @override
+  String get gameDeletedSuccessfully =>
+      '[ZH_HANT] Game deleted successfully! (Chinese (Traditional))';
+
+  @override
+  String get viewResponsesComingSoon =>
+      '[ZH_HANT] View responses - Coming soon! (Chinese (Traditional))';
+
+  @override
+  String get deleteProvider => '[ZH_HANT] Delete Provider';
+
+  @override
+  String get errorLoadingRewards =>
+      '[ZH_HANT] Error loading rewards (Chinese (Traditional))';
+
+  @override
+  String get failedToDeleteAccountE =>
+      '[ZH_HANT] Failed to delete account: \$e (Chinese (Traditional))';
+
+  @override
+  String get invited1 => '[ZH_HANT] Invited (Chinese (Traditional))';
+
+  @override
+  String get noBranchesAvailable =>
+      '[ZH_HANT] No branches available (Chinese (Traditional))';
+
+  @override
+  String get errorError => '[ZH_HANT] Error: \$error (Chinese (Traditional))';
+
+  @override
+  String get noEvents => '[ZH_HANT] No events (Chinese (Traditional))';
+
+  @override
+  String get gameCreatedSuccessfully =>
+      '[ZH_HANT] Game created successfully! (Chinese (Traditional))';
+
+  @override
+  String get add1 => '[ZH_HANT] Add (Chinese (Traditional))';
+
+  @override
+  String get creatorCreatorid => '[ZH_HANT] Creator: \$creatorId';
+
+  @override
+  String eventstarttimeEventendtime(Object endTime, Object startTime) {
+    return '[ZH_HANT] $startTime - $endTime (Chinese (Traditional))';
+  }
+
+  @override
+  String get allowPlaytime =>
+      '[ZH_HANT] Allow Playtime (Chinese (Traditional))';
+
+  @override
+  String get clients => '[ZH_HANT] Clients (Chinese (Traditional))';
+
+  @override
+  String get noAmbassadorDataAvailable =>
+      '[ZH_HANT] No ambassador data available (Chinese (Traditional))';
+
+  @override
+  String get backgroundDeletedSuccessfully =>
+      '[ZH_HANT] Background deleted successfully! (Chinese (Traditional))';
+
+  @override
+  String errorSnapshoterror(Object error) {
+    return '[ZH_HANT] Error: $error (Chinese (Traditional))';
+  }
+
+  @override
+  String get noAnalyticsDataAvailableYet =>
+      '[ZH_HANT] No analytics data available yet. (Chinese (Traditional))';
+
+  @override
+  String errorDeletingSlotE(Object e) {
+    return 'خطأ في حذف الفترة: $e';
+  }
+
+  @override
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      '[ZH_HANT] Business Phone Booking Entry Screen - Coming Soon (Chinese (Traditional))';
+
+  @override
+  String get verification => '[ZH_HANT] Verification (Chinese (Traditional))';
+
+  @override
+  String get copyLink => '[ZH_HANT] Copy Link (Chinese (Traditional))';
+
+  @override
+  String get dashboard1 => '[ZH_HANT] Dashboard (Chinese (Traditional))';
+
+  @override
+  String get manageChildAccounts =>
+      '[ZH_HANT] Manage Child Accounts (Chinese (Traditional))';
+
+  @override
+  String get grantConsent => '授予同意';
+
+  @override
+  String get myProfile1 => '[ZH_HANT] My Profile (Chinese (Traditional))';
+
+  @override
+  String get submit => '[ZH_HANT] Submit (Chinese (Traditional))';
+
+  @override
+  String userLoguseremail(Object userEmail) {
+    return '[ZH_HANT] User: $userEmail';
+  }
+
+  @override
+  String get emailNotifications => 'إشعارات البريد الإلكتروني';
+
+  @override
+  String get ambassadorDashboard =>
+      '[ZH_HANT] Ambassador Dashboard (Chinese (Traditional))';
+
+  @override
+  String get phoneBooking => '[ZH_HANT] Phone Booking (Chinese (Traditional))';
+
+  @override
+  String get bookViaChat => '透過聊天預約';
+
+  @override
+  String get error => '[ZH_HANT] Error';
+
+  @override
+  String get businessProfile =>
+      '[ZH_HANT] Business Profile (Chinese (Traditional))';
+
+  @override
+  String get businessBookingEntryScreenComingSoon =>
+      '[ZH_HANT] Business Booking Entry Screen - Coming Soon (Chinese (Traditional))';
+
+  @override
+  String get createNewSurvey =>
+      '[ZH_HANT] Create New Survey (Chinese (Traditional))';
+
+  @override
+  String get backgroundRejected =>
+      '[ZH_HANT] Background rejected (Chinese (Traditional))';
+
+  @override
+  String get noMediaSelected =>
+      '[ZH_HANT] No media selected (Chinese (Traditional))';
+
+  @override
+  String get syncToGoogle => '[ZH_HANT] Sync to Google (Chinese (Traditional))';
+
+  @override
+  String get virtualPlaytime =>
+      '[ZH_HANT] Virtual Playtime (Chinese (Traditional))';
+
+  @override
+  String get colorContrastTesting => '[ZH_HANT] Color Contrast Testing';
+
+  @override
+  String get loginFailedE => '[ZH_HANT] Login failed: \$e';
+
+  @override
+  String get invitationSentSuccessfully => '邀請已發送成功！';
+
+  @override
+  String get registering => '[ZH_HANT] Registering... (Chinese (Traditional))';
+
+  @override
+  String statusAppointmentstatusname(Object status) {
+    return '[ZH_HANT] Status: $status (Chinese (Traditional))';
+  }
+
+  @override
+  String get home1 => '[ZH_HANT] Home (Chinese (Traditional))';
+
+  @override
+  String get errorSavingSettingsE =>
+      '[ZH_HANT] Error saving settings: \$e (Chinese (Traditional))';
+
+  @override
+  String get appVersionAndInformation =>
+      '[ZH_HANT] App version and information (Chinese (Traditional))';
+
+  @override
+  String get businessSubscriptionEntryScreenComingSoon =>
+      '[ZH_HANT] Business Subscription Entry Screen - Coming Soon (Chinese (Traditional))';
+
+  @override
+  String ekeyEvalue(Object key, Object value) {
+    return '[ZH_HANT] $key: $value (Chinese (Traditional))';
+  }
+
+  @override
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      '[ZH_HANT] Your payment has been processed successfully. (Chinese (Traditional))';
+
+  @override
+  String get errorE => '[ZH_HANT] Error: \$e (Chinese (Traditional))';
+
+  @override
+  String get viewAll1 => '[ZH_HANT] View All (Chinese (Traditional))';
+
+  @override
+  String get editSurveyComingSoon =>
+      '[ZH_HANT] Edit survey - Coming soon! (Chinese (Traditional))';
+
+  @override
+  String get enterOtp => '[ZH_HANT] 輸入 OTP';
+
+  @override
+  String get payment => '[ZH_HANT] Payment (Chinese (Traditional))';
+
+  @override
+  String get automaticallyConfirmNewBookingRequests =>
+      '[ZH_HANT] Automatically confirm new booking requests (Chinese (Traditional))';
+
+  @override
+  String errorPickingVideoE(Object e) {
+    return 'خطأ في اختيار الفيديو: $e';
+  }
+
+  @override
+  String noRouteDefinedForSettingsname(Object settingsName) {
+    return '[ZH_HANT] No route defined for $settingsName (Chinese (Traditional))';
+  }
+
+  @override
+  String get pleaseSignInToUploadABackground =>
+      '[ZH_HANT] Please sign in to upload a background (Chinese (Traditional))';
+
+  @override
+  String logtargettypeLogtargetid(Object targetId, Object targetType) {
+    return '[ZH_HANT] $targetType: $targetId';
+  }
+
+  @override
+  String get staffAvailability =>
+      '[ZH_HANT] Staff Availability (Chinese (Traditional))';
+
+  @override
+  String get livePlaytime => '[ZH_HANT] Live Playtime (Chinese (Traditional))';
+
+  @override
+  String get autoconfirmBookings =>
+      '[ZH_HANT] Auto-Confirm Bookings (Chinese (Traditional))';
+
+  @override
+  String get redirectingToStripeCheckoutForProPlan =>
+      '[ZH_HANT] Redirecting to Stripe checkout for Pro plan... (Chinese (Traditional))';
+
+  @override
+  String get exportAsCsv => '[ZH_HANT] Export as CSV (Chinese (Traditional))';
+
+  @override
+  String get deleteFunctionalityComingSoon =>
+      '[ZH_HANT] Delete functionality coming soon! (Chinese (Traditional))';
+
+  @override
+  String get editClient => '[ZH_HANT] Edit Client (Chinese (Traditional))';
+
+  @override
+  String get areYouSureYouWantToDeleteThisMessage =>
+      '[ZH_HANT] Are you sure you want to delete this message? (Chinese (Traditional))';
+
+  @override
+  String referralsAmbassadorreferrals(Object referrals) {
+    return '[ZH_HANT] Referrals: $referrals (Chinese (Traditional))';
+  }
+
+  @override
+  String get notAuthenticated => '[ZH_HANT] Not authenticated';
+
+  @override
+  String get privacyRequestSentToYourParents =>
+      '[ZH_HANT] Privacy request sent to your parents! (Chinese (Traditional))';
+
+  @override
+  String get clientDeletedSuccessfully =>
+      '[ZH_HANT] Client deleted successfully! (Chinese (Traditional))';
+
+  @override
+  String get failedToCancelSubscription =>
+      '[ZH_HANT] Failed to cancel subscription (Chinese (Traditional))';
+
+  @override
+  String get allLanguages => '[ZH_HANT] All Languages (Chinese (Traditional))';
+
+  @override
+  String get slotDeletedSuccessfully =>
+      '[ZH_HANT] Slot deleted successfully (Chinese (Traditional))';
+
+  @override
+  String get businessProvidersEntryScreenComingSoon =>
+      '[ZH_HANT] Business Providers Entry Screen - Coming Soon';
+
+  @override
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      '[ZH_HANT] Parents must approve before children can join (Chinese (Traditional))';
+
+  @override
+  String get subscribeToPro1499mo =>
+      '[ZH_HANT] Subscribe to Pro (€14.99/mo) (Chinese (Traditional))';
+
+  @override
+  String get businessAvailabilityEntryScreenComingSoon =>
+      '[ZH_HANT] Business Availability Entry Screen - Coming Soon (Chinese (Traditional))';
+
+  @override
+  String appointmentsListlength(Object count) {
+    return '[ZH_HANT] Appointments: $count (Chinese (Traditional))';
+  }
+
+  @override
+  String get clearFilters => '[ZH_HANT] Clear Filters (Chinese (Traditional))';
+
+  @override
+  String get submitBooking => '提交預約';
+
+  @override
+  String get areYouSureYouWantToCancelThisAppointment =>
+      '[ZH_HANT] Are you sure you want to cancel this appointment? (Chinese (Traditional))';
+
+  @override
+  String get noUpcomingBookings =>
+      '[ZH_HANT] No upcoming bookings (Chinese (Traditional))';
+
+  @override
+  String get goBack => '[ZH_HANT] Go Back (Chinese (Traditional))';
+
+  @override
+  String get setup => '[ZH_HANT] Setup (Chinese (Traditional))';
+
+  @override
+  String get inviteChild => '邀請孩童';
+
+  @override
+  String get goToDashboard =>
+      '[ZH_HANT] Go to Dashboard (Chinese (Traditional))';
+
+  @override
+  String get ambassadorQuotaDashboard =>
+      '[ZH_HANT] Ambassador Quota Dashboard (Chinese (Traditional))';
+
+  @override
+  String get adminSettings => '[ZH_HANT] Admin Settings';
+
+  @override
+  String get referralCode => '[ZH_HANT] Referral Code (Chinese (Traditional))';
+
+  @override
+  String adminLogadminemail(Object adminEmail) {
+    return '[ZH_HANT] Admin: $adminEmail';
+  }
+
+  @override
+  String get date => '[ZH_HANT] Date (Chinese (Traditional))';
+
+  @override
+  String get readOnly => '僅讀';
+
+  @override
+  String get bookingRequest => '預約請求';
+
+  @override
+  String get advancedReporting =>
+      '[ZH_HANT] • Advanced reporting (Chinese (Traditional))';
+
+  @override
+  String get rooms => '[ZH_HANT] Rooms (Chinese (Traditional))';
+
+  @override
+  String get copiedToClipboard =>
+      '[ZH_HANT] Copied to clipboard (Chinese (Traditional))';
+
+  @override
+  String get bookingConfirmed => '預約已確認';
+
+  @override
+  String get sessionApproved => 'تمت الموافقة على الجلسة';
+
+  @override
+  String get clientAddedSuccessfully =>
+      '[ZH_HANT] Client added successfully! (Chinese (Traditional))';
+
+  @override
+  String get noNotifications => 'لا توجد إشعارات';
+
+  @override
+  String get backgroundApproved =>
+      '[ZH_HANT] Background approved! (Chinese (Traditional))';
+
+  @override
+  String get familySupport =>
+      '[ZH_HANT] Family Support (Chinese (Traditional))';
+
+  @override
+  String get deletingAccount =>
+      '[ZH_HANT] Deleting account... (Chinese (Traditional))';
+
+  @override
+  String get bookAppointment => '預約服務';
+
+  @override
+  String get receivePushNotificationsForNewBookings =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
+
+  @override
+  String get delete1 => '[ZH_HANT] Delete (Chinese (Traditional))';
+
+  @override
+  String get sendBookingInvite =>
+      '[ZH_HANT] Send Booking Invite (Chinese (Traditional))';
+
+  @override
+  String get text => '[ZH_HANT] Text (Chinese (Traditional))';
+
+  @override
+  String get manageSubscription =>
+      '[ZH_HANT] Manage Subscription (Chinese (Traditional))';
+
+  @override
+  String get requiresInstallFallback => '需要安裝';
+
+  @override
+  String get paymentConfirmation =>
+      '[ZH_HANT] Payment Confirmation (Chinese (Traditional))';
+
+  @override
+  String get promoAppliedYourNextBillIsFree =>
+      '[ZH_HANT] Promo applied! Your next bill is free. (Chinese (Traditional))';
+
+  @override
+  String inviteeArgsinviteeid(Object inviteeId) {
+    return 'المدعو: $inviteeId';
+  }
+
+  @override
+  String get errorLoadingSlots =>
+      '[ZH_HANT] Error loading slots (Chinese (Traditional))';
+
+  @override
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      '[ZH_HANT] Allow other users to find and join this game (Chinese (Traditional))';
+
+  @override
+  String get businessOnboardingScreenComingSoon =>
+      '[ZH_HANT] Business Onboarding Screen - Coming Soon (Chinese (Traditional))';
+
+  @override
+  String get activateBusinessProfile =>
+      '[ZH_HANT] Activate Business Profile (Chinese (Traditional))';
+
+  @override
+  String get contentNotFound =>
+      '[ZH_HANT] Content not found (Chinese (Traditional))';
+
+  @override
+  String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
+    return '[ZH_HANT] $specialty\\n$contactInfo (Chinese (Traditional))';
+  }
+
+  @override
+  String get rating => '[ZH_HANT] Rating (Chinese (Traditional))';
+
+  @override
+  String get messages => '[ZH_HANT] Messages (Chinese (Traditional))';
+
+  @override
+  String errorEstimatingRecipientsE(Object e) {
+    return 'خطأ في تقدير المستلمين: $e';
+  }
+
+  @override
+  String get becomeAnAmbassador =>
+      '[ZH_HANT] Become an Ambassador (Chinese (Traditional))';
+
+  @override
+  String get subscribeNow => '[ZH_HANT] Subscribe Now (Chinese (Traditional))';
+
+  @override
+  String timeArgsslotformatcontext(Object time) {
+    return '[ZH_HANT] Time: $time (Chinese (Traditional))';
+  }
+
+  @override
+  String get shareViaWhatsapp =>
+      '[ZH_HANT] Share via WhatsApp (Chinese (Traditional))';
+
+  @override
+  String get users1 => '[ZH_HANT] Users (Chinese (Traditional))';
+
+  @override
+  String get shareLink => '[ZH_HANT] Share Link (Chinese (Traditional))';
+
+  @override
+  String get areYouSureYouWantToDeleteThisProvider =>
+      '[ZH_HANT] Are you sure you want to delete this provider?';
+
+  @override
+  String get deleteAppointment =>
+      '[ZH_HANT] Delete Appointment (Chinese (Traditional))';
+
+  @override
+  String get toggleAvailability =>
+      '[ZH_HANT] Toggle Availability (Chinese (Traditional))';
+
+  @override
+  String get changePlan => '[ZH_HANT] Change Plan (Chinese (Traditional))';
+
+  @override
+  String get errorLoadingStaff =>
+      '[ZH_HANT] Error loading staff (Chinese (Traditional))';
+
+  @override
+  String errorLoadingConfigurationE(Object e) {
+    return 'خطأ في تحميل التكوين: $e';
+  }
+
+  @override
+  String get updateYourBusinessInformation =>
+      '[ZH_HANT] Update your business information (Chinese (Traditional))';
+
+  @override
+  String get noProvidersFoundAddYourFirstProvider =>
+      '[ZH_HANT] No providers found. Add your first provider!';
+
+  @override
+  String get parentDashboard =>
+      '[ZH_HANT] Parent Dashboard (Chinese (Traditional))';
+
+  @override
+  String get menu => '選單';
+
+  @override
+  String get studioBooking =>
+      '[ZH_HANT] Studio Booking (Chinese (Traditional))';
+
+  @override
+  String get about1 => '[ZH_HANT] About (Chinese (Traditional))';
+
+  @override
+  String get multipleChoice =>
+      '[ZH_HANT] Multiple Choice (Chinese (Traditional))';
+
+  @override
+  String dateAppointmentscheduledattostring(Object date) {
+    return '[ZH_HANT] Date: $date (Chinese (Traditional))';
+  }
+
+  @override
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      '[ZH_HANT] Studio booking is only available on web (Chinese (Traditional))';
+
+  @override
+  String get errorLoadingBranchesE =>
+      '[ZH_HANT] Error loading branches: \$e (Chinese (Traditional))';
+
+  @override
+  String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
+    return '[ZH_HANT] \\uD83D\\uDCC5 $dateTime (Chinese (Traditional))';
+  }
+
+  @override
+  String appointmentInviteappointmentid(Object appointmentId) {
+    return 'دعوة الموعد: $appointmentId';
+  }
+
+  @override
+  String get none => '無';
+
+  @override
+  String get failedToUpdateConsentE =>
+      '[ZH_HANT] Failed to update consent: \$e (Chinese (Traditional))';
+
+  @override
+  String get welcome1 => '[ZH_HANT] Welcome (Chinese (Traditional))';
+
+  @override
+  String get failedToCreateSessionE =>
+      '[ZH_HANT] Failed to create session: \$e (Chinese (Traditional))';
+
+  @override
+  String get inviteContact => '邀請聯絡人';
+
+  @override
+  String get surveyEditor => '[ZH_HANT] Survey Editor (Chinese (Traditional))';
+
+  @override
+  String get failedToStartBasicSubscriptionE =>
+      '[ZH_HANT] Failed to start Basic subscription: \$e (Chinese (Traditional))';
+
+  @override
+  String get mySchedule => '[ZH_HANT] My Schedule (Chinese (Traditional))';
+
+  @override
+  String get studioDashboard =>
+      '[ZH_HANT] Studio Dashboard (Chinese (Traditional))';
+
+  @override
+  String get editProfile => 'تحرير الملف الشخصي';
+
+  @override
+  String get logout1 => '[ZH_HANT] Logout';
+
+  @override
+  String serviceServiceidNotSelected(Object service) {
+    return '[ZH_HANT] Service: $service';
+  }
+
+  @override
+  String get settingsSavedSuccessfully =>
+      '[ZH_HANT] Settings saved successfully! (Chinese (Traditional))';
+
+  @override
+  String get linkCopiedToClipboard =>
+      '[ZH_HANT] Link copied to clipboard! (Chinese (Traditional))';
+
+  @override
+  String get accept1 => '[ZH_HANT] Accept (Chinese (Traditional))';
+
+  @override
+  String get noAvailableSlots =>
+      '[ZH_HANT] No available slots (Chinese (Traditional))';
+
+  @override
+  String get makeGamePublic =>
+      '[ZH_HANT] Make Game Public (Chinese (Traditional))';
+
+  @override
+  String permissionPermissioncategoryUpdatedToNewvalue(Object category) {
+    return '[ZH_HANT] Permission $category updated to \$newValue (Chinese (Traditional))';
+  }
+
+  @override
+  String get roomDeletedSuccessfully =>
+      '[ZH_HANT] Room deleted successfully! (Chinese (Traditional))';
+
+  @override
+  String get businessCalendar =>
+      '[ZH_HANT] Business Calendar (Chinese (Traditional))';
+
+  @override
+  String get addAvailability =>
+      '[ZH_HANT] Add Availability (Chinese (Traditional))';
+
+  @override
+  String get ambassadorOnboarding =>
+      '[ZH_HANT] Ambassador Onboarding (Chinese (Traditional))';
+
+  @override
+  String phoneProfileasyncphone(Object phone) {
+    return '[ZH_HANT] Phone: $phone (Chinese (Traditional))';
+  }
+
+  @override
+  String get addNewRoom => '[ZH_HANT] Add New Room (Chinese (Traditional))';
+
+  @override
+  String get requireParentApproval =>
+      '[ZH_HANT] Require Parent Approval (Chinese (Traditional))';
+
+  @override
+  String get closed => '[ZH_HANT] Closed (Chinese (Traditional))';
+
+  @override
+  String get exportAsPdf => '[ZH_HANT] Export as PDF (Chinese (Traditional))';
+
+  @override
+  String get enableVibration =>
+      '[ZH_HANT] Enable Vibration (Chinese (Traditional))';
+
+  @override
+  String toAvailendformatcontext(Object endTime) {
+    return '[ZH_HANT] To: $endTime (Chinese (Traditional))';
+  }
+
+  @override
+  String yourUpgradeCodeUpgradecode(Object upgradeCode) {
+    return '[ZH_HANT] Your upgrade code: \$upgradeCode (Chinese (Traditional))';
+  }
+
+  @override
+  String get requestPrivateSession => '請求私人會議';
+
+  @override
+  String get country => '[ZH_HANT] Country (Chinese (Traditional))';
+
+  @override
+  String get loginScreen => '[ZH_HANT] Login Screen';
+
+  @override
+  String staffArgsstaffdisplayname(Object staffName) {
+    return '[ZH_HANT] Staff: $staffName (Chinese (Traditional))';
+  }
+
+  @override
+  String get revokeConsent => '撤銷同意';
+
+  @override
+  String get settings1 => '[ZH_HANT] Settings (Chinese (Traditional))';
+
+  @override
+  String get cancel1 => '[ZH_HANT] Cancel (Chinese (Traditional))';
+
+  @override
+  String get subscriptionActivatedSuccessfully =>
+      '[ZH_HANT] Subscription activated successfully! (Chinese (Traditional))';
+
+  @override
+  String activityLogaction(Object action) {
+    return '[ZH_HANT] Activity: $action';
+  }
+
+  @override
+  String get broadcast => '[ZH_HANT] Broadcast (Chinese (Traditional))';
+
+  @override
+  String get noEventsScheduledThisWeek =>
+      '[ZH_HANT] No events scheduled this week (Chinese (Traditional))';
+
+  @override
+  String get googleCalendar =>
+      '[ZH_HANT] Google Calendar (Chinese (Traditional))';
+
+  @override
+  String get sendInvite => 'إرسال دعوة';
+
+  @override
+  String get childDashboard =>
+      '[ZH_HANT] Child Dashboard (Chinese (Traditional))';
+
+  @override
+  String get failedToUploadBackgroundE =>
+      '[ZH_HANT] Failed to upload background: \$e (Chinese (Traditional))';
+
+  @override
+  String linkchildidsubstring08(Object linkId) {
+    return '[ZH_HANT] $linkId...';
+  }
+
+  @override
+  String targetLogtargettypeLogtargetid(Object targetId, Object targetType) {
+    return '[ZH_HANT] Target: $targetType - $targetId';
+  }
+
+  @override
+  String get contextContextid => '[ZH_HANT] Context: \$contextId';
+
+  @override
+  String get noAppointments =>
+      '[ZH_HANT] No appointments (Chinese (Traditional))';
+
+  @override
+  String get unlimitedBookingsPerWeek =>
+      '[ZH_HANT] • Unlimited bookings per week (Chinese (Traditional))';
+
+  @override
+  String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
+    return 'تفاصيل الخطأ: $logErrorType';
+  }
+
+  @override
+  String get scheduledAtScheduledat =>
+      '[ZH_HANT] Scheduled at: \$scheduledAt (Chinese (Traditional))';
+
+  @override
+  String get selectStaff => '選擇工作人員';
+
+  @override
+  String get subscriptionCancelledSuccessfully =>
+      '[ZH_HANT] Subscription cancelled successfully (Chinese (Traditional))';
+
+  @override
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+
+  @override
+  String get cancelAppointment =>
+      '[ZH_HANT] Cancel Appointment (Chinese (Traditional))';
+
+  @override
+  String permissionsFamilylinkchildid(Object childId) {
+    return '[ZH_HANT] Permissions - $childId';
+  }
+
+  @override
+  String get businessSignup =>
+      '[ZH_HANT] Business Signup (Chinese (Traditional))';
+
+  @override
+  String get businessCompletionScreenComingSoon =>
+      '[ZH_HANT] Business Completion Screen - Coming Soon (Chinese (Traditional))';
+
+  @override
+  String get createGame1 => '[ZH_HANT] Create Game (Chinese (Traditional))';
+
+  @override
+  String valuetoint(Object value) {
+    return '[ZH_HANT] $value (Chinese (Traditional))';
+  }
+
+  @override
+  String get pleaseEnterAPromoCode =>
+      '[ZH_HANT] Please enter a promo code (Chinese (Traditional))';
+
+  @override
+  String get errorLoadingAvailabilityE =>
+      '[ZH_HANT] Error loading availability: \$e (Chinese (Traditional))';
+
+  @override
+  String get parentalControls =>
+      '[ZH_HANT] Parental Controls (Chinese (Traditional))';
+
+  @override
+  String get editBusinessProfile => 'تحرير الملف التجاري';
+
+  @override
+  String get childLinkedSuccessfully => '孩童已成功連結！';
+
+  @override
+  String get create => '[ZH_HANT] Create (Chinese (Traditional))';
+
+  @override
+  String get noExternalMeetingsFound =>
+      '[ZH_HANT] No external meetings found. (Chinese (Traditional))';
+
+  @override
+  String staffSelectionstaffdisplayname(Object staffName) {
+    return '[ZH_HANT] Staff: $staffName (Chinese (Traditional))';
+  }
+
+  @override
+  String get pleaseEnterAValidEmailAddress =>
+      '[ZH_HANT] Please enter a valid email address';
+
+  @override
+  String get schedulerScreen =>
+      '[ZH_HANT] Scheduler Screen (Chinese (Traditional))';
+
+  @override
+  String get clientUpdatedSuccessfully =>
+      '[ZH_HANT] Client updated successfully! (Chinese (Traditional))';
+
+  @override
+  String get surveyResponses =>
+      '[ZH_HANT] Survey Responses (Chinese (Traditional))';
+
+  @override
+  String get syncToOutlook =>
+      '[ZH_HANT] Sync to Outlook (Chinese (Traditional))';
+
+  @override
+  String get saveChanges => '[ZH_HANT] Save Changes (Chinese (Traditional))';
+
+  @override
+  String get pickTime => '[ZH_HANT] Pick Time (Chinese (Traditional))';
+
+  @override
+  String registrationFailedEtostring(Object error) {
+    return '[ZH_HANT] Registration failed: $error (Chinese (Traditional))';
+  }
+
+  @override
+  String get analytics => '[ZH_HANT] Analytics (Chinese (Traditional))';
+
+  @override
+  String get errorLoadingEvents =>
+      '[ZH_HANT] Error loading events (Chinese (Traditional))';
+
+  @override
+  String get errorLoadingOrganizations => '讀取組織錯誤';
+
+  @override
+  String get businessLoginScreenComingSoon =>
+      '[ZH_HANT] Business Login Screen - Coming Soon';
+
+  @override
+  String get success1 => '[ZH_HANT] Success (Chinese (Traditional))';
+
+  @override
+  String appVersionLogappversion(Object appVersion) {
+    return '[ZH_HANT] App Version: $appVersion';
+  }
+
+  @override
+  String fromAvailstartformatcontext(Object startTime) {
+    return '[ZH_HANT] From: $startTime (Chinese (Traditional))';
+  }
+
+  @override
+  String get readWrite => '可讀寫';
+
+  @override
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      '[ZH_HANT] Redirecting to Stripe checkout for Basic plan... (Chinese (Traditional))';
+
+  @override
+  String get errorSavingConfigurationE =>
+      '[ZH_HANT] Error saving configuration: \$e';
+
+  @override
+  String get pickDate => '選擇日期';
+
+  @override
+  String get chatBooking => '聊天預約';
+
+  @override
+  String get noQuestionsAdded =>
+      '[ZH_HANT] No questions added (Chinese (Traditional))';
+
+  @override
+  String severityLogseverityname(Object severity) {
+    return '[ZH_HANT] Severity: $severity';
+  }
+
+  @override
+  String get markAsPaid => '[ZH_HANT] Mark as Paid';
+
+  @override
+  String get typeOpenCall =>
+      '[ZH_HANT] Type: Open Call (Chinese (Traditional))';
+
+  @override
+  String appointmentAppointmentid(Object appointmentId) {
+    return '[ZH_HANT] Appointment $appointmentId';
+  }
+
+  @override
+  String statusInvitestatusname(Object inviteStatusName, Object status) {
+    return 'الحالة: $inviteStatusName';
+  }
+
+  @override
+  String get businessLogin => '[ZH_HANT] Business Login';
+
+  @override
+  String get invoiceCreatedSuccessfully =>
+      '[ZH_HANT] Invoice created successfully! (Chinese (Traditional))';
+
+  @override
+  String get noTimeSeriesDataAvailable =>
+      '[ZH_HANT] No time series data available (Chinese (Traditional))';
+
+  @override
+  String subscribeToWidgetplanname(Object planName) {
+    return '[ZH_HANT] Subscribe to $planName';
+  }
+
+  @override
+  String timestamp_formatdatelogtimestamp(Object timestamp) {
+    return '[ZH_HANT] Timestamp: $timestamp';
+  }
+
+  @override
+  String get failedToSendPrivacyRequestE =>
+      '[ZH_HANT] Failed to send privacy request: \$e (Chinese (Traditional))';
+
+  @override
+  String get chooseYourPlan =>
+      '[ZH_HANT] Choose Your Plan (Chinese (Traditional))';
+
+  @override
+  String get playtimeManagement =>
+      '[ZH_HANT] Playtime Management (Chinese (Traditional))';
+
+  @override
+  String get availability => '[ZH_HANT] Availability (Chinese (Traditional))';
+
+  @override
+  String get eventCreated => '[ZH_HANT] Event created (Chinese (Traditional))';
+
+  @override
+  String get subscribeToBasic499mo =>
+      '[ZH_HANT] Subscribe to Basic (€4.99/mo) (Chinese (Traditional))';
+
+  @override
+  String get completion => '[ZH_HANT] Completion (Chinese (Traditional))';
+
+  @override
+  String get supportTicketSubmitted =>
+      '[ZH_HANT] Support ticket submitted (Chinese (Traditional))';
+
+  @override
+  String get monetizationSettings =>
+      '[ZH_HANT] Monetization Settings (Chinese (Traditional))';
+
+  @override
+  String get noBookingsFound => '找不到預約';
+
+  @override
+  String get admin => '[ZH_HANT] Admin';
+
+  @override
+  String get deleteSurvey => '[ZH_HANT] Delete Survey (Chinese (Traditional))';
+
+  @override
+  String get gameApprovedSuccessfully =>
+      '[ZH_HANT] Game approved successfully! (Chinese (Traditional))';
+
+  @override
+  String get errorLoadingPermissionsError =>
+      '[ZH_HANT] Error loading permissions: \$error (Chinese (Traditional))';
+
+  @override
+  String get referrals => '[ZH_HANT] Referrals (Chinese (Traditional))';
+
+  @override
+  String get crm => '[ZH_HANT] CRM (Chinese (Traditional))';
+
+  @override
+  String get gameRejected => '[ZH_HANT] Game rejected (Chinese (Traditional))';
+
+  @override
+  String get appointments => '[ZH_HANT] Appointments (Chinese (Traditional))';
+
+  @override
+  String get onboardingScreen =>
+      '[ZH_HANT] Onboarding Screen (Chinese (Traditional))';
+
+  @override
+  String get welcomeToYourStudio =>
+      '[ZH_HANT] Welcome to your studio (Chinese (Traditional))';
+
+  @override
+  String get update => '[ZH_HANT] Update (Chinese (Traditional))';
+
+  @override
+  String get retry1 => '[ZH_HANT] Retry (Chinese (Traditional))';
+
+  @override
+  String get booking => '[ZH_HANT] Booking (Chinese (Traditional))';
+
+  @override
+  String get parentalSettings =>
+      '[ZH_HANT] Parental Settings (Chinese (Traditional))';
+
+  @override
+  String get language => '[ZH_HANT] Language (Chinese (Traditional))';
+
+  @override
+  String get deleteSlot => '[ZH_HANT] Delete Slot (Chinese (Traditional))';
+
+  @override
+  String get organizations => '組織';
+
+  @override
+  String get configurationSavedSuccessfully =>
+      '[ZH_HANT] Configuration saved successfully!';
+
+  @override
+  String get createNewGame =>
+      '[ZH_HANT] Create New Game (Chinese (Traditional))';
+
+  @override
+  String get next1 => '[ZH_HANT] Next (Chinese (Traditional))';
+
+  @override
+  String get backgroundUploadedSuccessfully =>
+      '[ZH_HANT] Background uploaded successfully! (Chinese (Traditional))';
+
+  @override
+  String get noAppointmentRequestsFound =>
+      '[ZH_HANT] No appointment requests found. (Chinese (Traditional))';
+
+  @override
+  String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
+
+  @override
+  String get restrictMatureContent =>
+      '[ZH_HANT] Restrict mature content (Chinese (Traditional))';
+
+  @override
+  String get ambassadors => '[ZH_HANT] Ambassadors (Chinese (Traditional))';
+
+  @override
+  String get smsNotifications => 'إشعارات الرسائل النصية';
+
+  @override
+  String get paymentWasCancelled =>
+      '[ZH_HANT] Payment was cancelled (Chinese (Traditional))';
+
+  @override
+  String get clearAll => '[ZH_HANT] Clear All (Chinese (Traditional))';
+
+  @override
+  String get viewDetails => '[ZH_HANT] View Details (Chinese (Traditional))';
+
+  @override
+  String get notifications1 => 'الإشعارات';
+
+  @override
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+
+  @override
+  String get failedToCreateGameE =>
+      '[ZH_HANT] Failed to create game: \$e (Chinese (Traditional))';
+
+  @override
+  String get noChartDataAvailable =>
+      '[ZH_HANT] No chart data available (Chinese (Traditional))';
+
+  @override
+  String get phonebasedBookingSystem =>
+      '[ZH_HANT] • Phone-based booking system (Chinese (Traditional))';
+
+  @override
+  String get enableNotifications1 => 'تفعيل الإشعارات';
+
+  @override
+  String get invoices => '[ZH_HANT] Invoices (Chinese (Traditional))';
+
+  @override
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
+
+  @override
+  String scheduledAtArgsscheduledat(Object scheduledAt) {
+    return '[ZH_HANT] Scheduled at: $scheduledAt (Chinese (Traditional))';
+  }
+
+  @override
+  String durationDurationinminutes0Minutes(Object duration) {
+    return '[ZH_HANT] Duration: $duration minutes (Chinese (Traditional))';
+  }
+
+  @override
+  String get tryAgain => '[ZH_HANT] Try Again (Chinese (Traditional))';
+
+  @override
+  String get deleteBackground =>
+      '[ZH_HANT] Delete Background (Chinese (Traditional))';
+
+  @override
+  String currentTierTiertouppercase(Object tier) {
+    return '[ZH_HANT] Current Tier: $tier (Chinese (Traditional))';
+  }
+
+  @override
+  String get iDoNotConsent => '[ZH_HANT] I Do Not Consent';
+
+  @override
+  String get noClientsFoundAddYourFirstClient =>
+      '[ZH_HANT] No clients found. Add your first client! (Chinese (Traditional))';
+
+  @override
+  String get settingsDialogWillBeImplementedHere =>
+      '[ZH_HANT] Settings dialog will be implemented here.';
+
+  @override
+  String get groupGroupid => '[ZH_HANT] Group: \$groupId';
+
+  @override
+  String get appointmentRequests =>
+      '[ZH_HANT] Appointment Requests (Chinese (Traditional))';
+
+  @override
+  String get forward => '[ZH_HANT] Forward (Chinese (Traditional))';
+
+  @override
+  String get roomAddedSuccessfully =>
+      '[ZH_HANT] Room added successfully! (Chinese (Traditional))';
+
+  @override
+  String get option => '[ZH_HANT] • \$option (Chinese (Traditional))';
+
+  @override
+  String responseIndex1(Object number) {
+    return '[ZH_HANT] Response #$number (Chinese (Traditional))';
+  }
+
+  @override
+  String get crmDashboardWithAnalytics =>
+      '[ZH_HANT] • CRM dashboard with analytics (Chinese (Traditional))';
+
+  @override
+  String get contentLibrary1 =>
+      '[ZH_HANT] Content Library (Chinese (Traditional))';
+
+  @override
+  String get reply => '[ZH_HANT] Reply (Chinese (Traditional))';
+
+  @override
+  String get subscriptionManagement =>
+      '[ZH_HANT] Subscription Management (Chinese (Traditional))';
+
+  @override
+  String get monetizationSettingsWillBeImplementedHere =>
+      '[ZH_HANT] Monetization settings will be implemented here (Chinese (Traditional))';
+
+  @override
+  String get failedToApplyPromoCodeE =>
+      '[ZH_HANT] Failed to apply promo code: \$e (Chinese (Traditional))';
+
+  @override
+  String get editProvider => '[ZH_HANT] Edit Provider';
+
+  @override
+  String get localizationContribution =>
+      '[ZH_HANT] Localization Contribution (Chinese (Traditional))';
+
+  @override
+  String get parentalConsent =>
+      '[ZH_HANT] Parental Consent (Chinese (Traditional))';
+
+  @override
+  String get businessSignupScreenComingSoon =>
+      '[ZH_HANT] Business Signup Screen - Coming Soon (Chinese (Traditional))';
+
+  @override
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      '[ZH_HANT] Are you sure you want to delete this appointment? (Chinese (Traditional))';
+
+  @override
+  String get syncAppointment =>
+      '[ZH_HANT] Sync Appointment (Chinese (Traditional))';
+
+  @override
+  String get iConsent => '[ZH_HANT] I Consent (Chinese (Traditional))';
+
+  @override
+  String get sessionRejected => 'تم رفض الجلسة';
+
+  @override
+  String get businessSetupScreenComingSoon =>
+      '[ZH_HANT] Business Setup Screen - Coming Soon (Chinese (Traditional))';
+
+  @override
+  String get edit1 => '[ZH_HANT] Edit (Chinese (Traditional))';
+
+  @override
+  String get noEventsScheduledThisMonth =>
+      '[ZH_HANT] No events scheduled this month (Chinese (Traditional))';
+
+  @override
+  String get businessDashboard => '商業儀表板';
+
+  @override
+  String get noMessagesFound =>
+      '[ZH_HANT] No messages found. (Chinese (Traditional))';
+
+  @override
+  String staffStaffidNotSelected(Object staff) {
+    return '[ZH_HANT] Staff: $staff';
+  }
+
+  @override
+  String get manageStaffAvailability =>
+      '[ZH_HANT] Manage Staff Availability (Chinese (Traditional))';
+
+  @override
+  String get noMissingTranslations =>
+      '[ZH_HANT] No missing translations (Chinese (Traditional))';
+
+  @override
+  String get skip => '[ZH_HANT] Skip (Chinese (Traditional))';
+
+  @override
+  String meetingIdMeetingid(Object meetingId) {
+    return 'معرف الاجتماع: $meetingId';
+  }
+
+  @override
+  String get noUsers => '無使用者';
+
+  @override
+  String get errorLoadingReferralCode =>
+      '[ZH_HANT] Error loading referral code (Chinese (Traditional))';
+
+  @override
+  String get allCountries => '[ZH_HANT] All Countries (Chinese (Traditional))';
+
+  @override
+  String get deleteGame => '[ZH_HANT] Delete Game (Chinese (Traditional))';
+
+  @override
+  String get staffManagementTools =>
+      '[ZH_HANT] • Staff management tools (Chinese (Traditional))';
+
+  @override
+  String get deleteMessage =>
+      '[ZH_HANT] Delete Message (Chinese (Traditional))';
+
+  @override
+  String get receiveBookingNotificationsViaSms =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
+
+  @override
+  String get changeRole => '更改角色';
+
+  @override
+  String errorLoadingBookingsSnapshoterror(Object error) {
+    return 'خطأ في تحميل لقطة الحجوزات: $error';
+  }
+
+  @override
+  String get openingCustomerPortal =>
+      '[ZH_HANT] Opening customer portal... (Chinese (Traditional))';
+
+  @override
+  String get signOut => '登出';
+
+  @override
+  String nameProfilename(Object name) {
+    return '[ZH_HANT] Name: $name (Chinese (Traditional))';
+  }
+
+  @override
+  String get businessProfileEntryScreenComingSoon =>
+      'شاشة إدخال الملف التجاري - قريباً';
+
+  @override
+  String get upgradeToBusiness =>
+      '[ZH_HANT] Upgrade to Business (Chinese (Traditional))';
+
+  @override
+  String get apply => 'تطبيق';
+
+  @override
+  String errorLoadingSubscriptionError(Object error) {
+    return 'خطأ في تحميل الاشتراك: $error';
+  }
+
+  @override
+  String get errorLoadingUsers => 'خطأ في تحميل المستخدمين';
+
+  @override
+  String get verify => 'التحقق';
+
+  @override
+  String get subscription => 'الاشتراك';
+
+  @override
+  String get deleteMyAccount => 'حذف حسابي';
+
+  @override
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
+
+  @override
+  String get viewResponses =>
+      '[ZH_HANT] View Responses (Chinese (Traditional))';
+
+  @override
+  String get businessWelcomeScreenComingSoon => 'شاشة ترحيب الأعمال - قريباً';
+
+  @override
+  String failedToOpenCustomerPortalE(Object e) {
+    return 'فشل في فتح بوابة العميل: $e';
+  }
+
+  @override
+  String get continueText => 'متابعة';
+
+  @override
+  String get close1 => 'إغلاق';
+
+  @override
+  String get confirm1 => 'تأكيد';
+
+  @override
+  String get externalMeetings => 'الاجتماعات الخارجية';
+
+  @override
+  String get approve => 'موافقة';
+
+  @override
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+
+  @override
+  String get subscribe => 'اشتراك';
+
+  @override
+  String get login1 => 'تسجيل الدخول';
+
+  @override
+  String get adminOverviewGoesHere => 'نظرة عامة على المسؤول هنا';
+
+  @override
+  String get loadingCheckout => 'جار تحميل الدفع...';
 }

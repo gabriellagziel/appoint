@@ -9,2413 +9,2492 @@ class AppLocalizationsHa extends AppLocalizations {
   AppLocalizationsHa([String locale = 'ha']) : super(locale);
 
   @override
-  String get refresh => 'Refresh';
+  String get refresh => '[HA] Refresh';
 
   @override
-  String get home => 'Farko';
+  String get home => '[HA] Farko';
 
   @override
-  String get noSessionsYet => 'No sessions yet';
+  String get noSessionsYet => '[HA] No sessions yet';
 
   @override
-  String get ok => 'OK';
+  String get ok => '[HA] OK';
 
   @override
-  String get playtimeLandingChooseMode => 'Choose your play mode:';
+  String get playtimeLandingChooseMode => '[HA] Choose your play mode:';
 
   @override
-  String get signUp => 'Sign Up';
+  String get signUp => '[HA] Sign Up';
 
   @override
-  String get scheduleMessage => 'Schedule Message';
+  String get scheduleMessage => '[HA] Schedule Message';
 
   @override
-  String get decline => 'Kiɗe';
+  String get decline => '[HA] Kiɗe';
 
   @override
-  String get adminBroadcast => 'Faɗaɗa mai kulawa';
+  String get adminBroadcast => '[HA] Faɗaɗa mai kulawa';
 
   @override
-  String get login => 'Shiga';
+  String get login => '[HA] Shiga';
 
   @override
-  String get playtimeChooseFriends => 'Choose friends to invite';
+  String get playtimeChooseFriends => '[HA] Choose friends to invite';
 
   @override
-  String get noInvites => 'Babu gayyata';
+  String get noInvites => '[HA] Babu gayyata';
 
   @override
-  String get playtimeChooseTime => 'Choose a time';
+  String get playtimeChooseTime => '[HA] Choose a time';
 
   @override
-  String get success => 'Success';
+  String get success => '[HA] Success';
 
   @override
-  String get undo => 'Undo';
+  String get undo => '[HA] Undo';
 
   @override
   String opened(Object count) {
-    return 'An buɗe: $count';
+    return '[HA] An buɗe: $count';
   }
 
   @override
-  String get createVirtualSession => 'Create Virtual Session';
+  String get createVirtualSession => '[HA] Create Virtual Session';
 
   @override
-  String get messageSentSuccessfully => 'Saƙon an aika cikin nasara';
+  String get messageSentSuccessfully => '[HA] Saƙon an aika cikin nasara';
 
   @override
-  String get redo => 'Redo';
+  String get redo => '[HA] Redo';
 
   @override
-  String get next => 'Gaba';
+  String get next => '[HA] Gaba';
 
   @override
-  String get search => 'Search';
+  String get search => '[HA] Search';
 
   @override
   String get cancelInviteConfirmation =>
-      'Kuna da tabbacin kuna son soke wannan gayyata?';
+      '[HA] Kuna da tabbacin kuna son soke wannan gayyata?';
 
   @override
   String created(Object date) {
-    return 'An ƙirƙira: $date';
+    return '[HA] An ƙirƙira: $date';
   }
 
   @override
-  String get revokeAccess => 'Cire izini';
+  String get revokeAccess => '[HA] Cire izini';
 
   @override
-  String get saveGroupForRecognition => 'Ajiye rukuni don gane shi gaba';
+  String get saveGroupForRecognition => '[HA] Ajiye rukuni don gane shi gaba';
 
   @override
-  String get playtimeLiveScheduled => 'Live playtime scheduled!';
+  String get playtimeLiveScheduled => '[HA] Live playtime scheduled!';
 
   @override
   String get revokeAccessConfirmation =>
-      'Kuna da tabbacin cire izinin wannan yaron? Wannan aikin ba za a iya maida shi ba.';
+      '[HA] Kuna da tabbacin cire izinin wannan yaron? Wannan aikin ba za a iya maida shi ba.';
 
   @override
-  String get download => 'Download';
+  String get download => '[HA] Download';
 
   @override
-  String get password => 'Kalmar wucewa';
+  String get password => '[HA] Kalmar wucewa';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'Kuskure wajen ɗora alaƙar iyali: $error';
+    return '[HA] Kuskure wajen ɗora alaƙar iyali: $error';
   }
 
   @override
-  String get cancel => 'Sokewa';
+  String get cancel => '[HA] Sokewa';
 
   @override
-  String get playtimeCreate => 'Create';
+  String get playtimeCreate => '[HA] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'An kasa $action buƙatar sirri: $error';
+    return '[HA] An kasa $action buƙatar sirri: $error';
   }
 
   @override
-  String get appTitle => 'Appoint';
+  String get appTitle => '[HA] Appoint';
 
   @override
-  String get accept => 'Amince';
+  String get accept => '[HA] Amince';
 
   @override
-  String get playtimeModeVirtual => 'Virtual Play';
+  String get playtimeModeVirtual => '[HA] Virtual Play';
 
   @override
   String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+      '[HA] Enjoy live or virtual games with your friends!';
 
   @override
-  String get delete => 'Delete';
+  String get delete => '[HA] Delete';
 
   @override
-  String get playtimeVirtualStarted => 'Virtual playtime started!';
+  String get playtimeVirtualStarted => '[HA] Virtual playtime started!';
 
   @override
-  String get createYourFirstGame => 'Create your first game';
+  String get createYourFirstGame => '[HA] Create your first game';
 
   @override
-  String get participants => 'Participants';
+  String get participants => '[HA] Participants';
 
   @override
   String recipients(Object count) {
-    return 'Masu karɓa: $count';
+    return '[HA] Masu karɓa: $count';
   }
 
   @override
-  String get noResults => 'No results found';
+  String get noResults => '[HA] No results found';
 
   @override
-  String get yes => 'I';
+  String get yes => '[HA] I';
 
   @override
-  String get invite => 'Gayyata';
+  String get invite => '[HA] Gayyata';
 
   @override
-  String get playtimeModeLive => 'Live Play';
+  String get playtimeModeLive => '[HA] Live Play';
 
   @override
-  String get done => 'Done';
+  String get done => '[HA] Done';
 
   @override
   String get defaultShareMessage =>
-      'Sannu! Mun shirya taro tare da kai ta APP‑OINT. Danna nan don tabbatarwa ko ba da shawarar wata lokaci:';
+      '[HA] Sannu! Mun shirya taro tare da kai ta APP‑OINT. Danna nan don tabbatarwa ko ba da shawarar wata lokaci:';
 
   @override
-  String get no => 'A\'a';
+  String get no => '[HA] A\'a';
 
   @override
-  String get playtimeHub => 'Playtime Hub';
+  String get playtimeHub => '[HA] Playtime Hub';
 
   @override
-  String get createLiveSession => 'Create Live Session';
+  String get createLiveSession => '[HA] Create Live Session';
 
   @override
-  String get enableNotifications => 'Kunna sanarwa';
+  String get enableNotifications => '[HA] Kunna sanarwa';
 
   @override
   String invited(Object date) {
-    return 'An gayyace: $date';
+    return '[HA] An gayyace: $date';
   }
 
   @override
   String content(Object content) {
-    return 'Abun ciki: $content';
+    return '[HA] Abun ciki: $content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'An raba taron cikin nasara!';
+  String get meetingSharedSuccessfully => '[HA] An raba taron cikin nasara!';
 
   @override
-  String get welcomeToPlaytime => 'Welcome to Playtime';
+  String get welcomeToPlaytime => '[HA] Welcome to Playtime';
 
   @override
-  String get viewAll => 'View All';
+  String get viewAll => '[HA] View All';
 
   @override
-  String get playtimeVirtual => 'Virtual Play';
+  String get playtimeVirtual => '[HA] Virtual Play';
 
   @override
-  String get staffScreenTBD => 'Fuskar ma\'aikata – A ci gaba';
+  String get staffScreenTBD => '[HA] Fuskar ma\'aikata – A ci gaba';
 
   @override
-  String get cut => 'Cut';
+  String get cut => '[HA] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => 'An soke gayyata cikin nasara!';
+  String get inviteCancelledSuccessfully =>
+      '[HA] An soke gayyata cikin nasara!';
 
   @override
-  String get retry => 'Retry';
+  String get retry => '[HA] Retry';
 
   @override
-  String get composeBroadcastMessage => 'Rubuta saƙon faɗaɗa';
+  String get composeBroadcastMessage => '[HA] Rubuta saƙon faɗaɗa';
 
   @override
-  String get sendNow => 'Aika yanzu';
+  String get sendNow => '[HA] Aika yanzu';
 
   @override
-  String get noGamesYet => 'No games yet';
+  String get noGamesYet => '[HA] No games yet';
 
   @override
-  String get select => 'Select';
+  String get select => '[HA] Select';
 
   @override
-  String get about => 'About';
+  String get about => '[HA] About';
 
   @override
-  String get choose => 'Choose';
+  String get choose => '[HA] Choose';
 
   @override
-  String get profile => 'Bayani';
+  String get profile => '[HA] Bayani';
 
   @override
-  String get removeChild => 'Cire yaro';
+  String get removeChild => '[HA] Cire yaro';
 
   @override
   String status(Object status) {
-    return 'Matsayi: $status';
+    return '[HA] Matsayi: $status';
   }
 
   @override
-  String get logout => 'Logout';
+  String get logout => '[HA] Logout';
 
   @override
-  String get paste => 'Paste';
+  String get paste => '[HA] Paste';
 
   @override
-  String get welcome => 'Barka da zuwa';
+  String get welcome => '[HA] Barka da zuwa';
 
   @override
-  String get playtimeCreateSession => 'Create a Playtime Session';
+  String get playtimeCreateSession => '[HA] Create a Playtime Session';
 
   @override
-  String get familyMembers => '\'Yan uwa';
+  String get familyMembers => '[HA] \'Yan uwa';
 
   @override
-  String get upload => 'Upload';
+  String get upload => '[HA] Upload';
 
   @override
-  String get upcomingSessions => 'Upcoming Sessions';
+  String get upcomingSessions => '[HA] Upcoming Sessions';
 
   @override
-  String get enterGroupName => 'Shigar da sunan rukuni don gane shi';
+  String get enterGroupName => '[HA] Shigar da sunan rukuni don gane shi';
 
   @override
-  String get confirm => 'Confirm';
+  String get confirm => '[HA] Confirm';
 
   @override
-  String get playtimeLive => 'Live Play';
+  String get playtimeLive => '[HA] Live Play';
 
   @override
-  String get errorLoadingInvites => 'Kuskure wajen ɗora gayyata';
+  String get errorLoadingInvites => '[HA] Kuskure wajen ɗora gayyata';
 
   @override
-  String get targetingFilters => 'Matattarar manufa';
+  String get targetingFilters => '[HA] Matattarar manufa';
 
   @override
-  String get pickVideo => 'Zaɓi bidiyo';
+  String get pickVideo => '[HA] Zaɓi bidiyo';
 
   @override
-  String get playtimeGameDeleted => 'Game deleted';
+  String get playtimeGameDeleted => '[HA] Game deleted';
 
   @override
-  String get scheduleForLater => 'Saita zuwa gaba';
+  String get scheduleForLater => '[HA] Saita zuwa gaba';
 
   @override
-  String get accessRevokedSuccessfully => 'An cire izini cikin nasara!';
+  String get accessRevokedSuccessfully => '[HA] An cire izini cikin nasara!';
 
   @override
   String type(Object type) {
-    return 'Nau\'i: $type';
+    return '[HA] Nau\'i: $type';
   }
 
   @override
-  String get checkingPermissions => 'Ana duba izini...';
+  String get checkingPermissions => '[HA] Ana duba izini...';
 
   @override
-  String get copy => 'Copy';
+  String get copy => '[HA] Copy';
 
   @override
-  String get yesCancel => 'Ee, a\'aika';
+  String get yesCancel => '[HA] Ee, a\'aika';
 
   @override
-  String get email => 'Imel';
+  String get email => '[HA] Imel';
 
   @override
-  String get shareOnWhatsApp => 'Raba a WhatsApp';
+  String get shareOnWhatsApp => '[HA] Raba a WhatsApp';
 
   @override
-  String get notificationSettings => 'Saitunan sanarwa';
+  String get notificationSettings => '[HA] Saitunan sanarwa';
 
   @override
-  String get myProfile => 'Bayana';
+  String get myProfile => '[HA] Bayana';
 
   @override
-  String get revoke => 'Cire';
+  String get revoke => '[HA] Cire';
 
   @override
-  String get noBroadcastMessages => 'Babu saƙonnin faɗaɗa tukuna';
+  String get noBroadcastMessages => '[HA] Babu saƙonnin faɗaɗa tukuna';
 
   @override
   String requestType(Object type) {
-    return 'Buƙatar $type';
+    return '[HA] Buƙatar $type';
   }
 
   @override
-  String get notifications => 'Sanarwa';
+  String get notifications => '[HA] Sanarwa';
 
   @override
-  String get details => 'Cikakkun bayanai';
+  String get details => '[HA] Cikakkun bayanai';
 
   @override
-  String get cancelInvite => 'Soke gayyata';
+  String get cancelInvite => '[HA] Soke gayyata';
 
   @override
-  String get createNew => 'Create New';
+  String get createNew => '[HA] Create New';
 
   @override
-  String get settings => 'Settings';
+  String get settings => '[HA] Settings';
 
   @override
-  String get playtimeReject => 'Reject';
+  String get playtimeReject => '[HA] Reject';
 
   @override
-  String get errorLoadingProfile => 'Kuskure wajen ɗora bayani';
+  String get errorLoadingProfile => '[HA] Kuskure wajen ɗora bayani';
 
   @override
-  String get edit => 'Edit';
+  String get edit => '[HA] Edit';
 
   @override
-  String get add => 'Add';
+  String get add => '[HA] Add';
 
   @override
-  String get playtimeGameApproved => 'Game approved';
+  String get playtimeGameApproved => '[HA] Game approved';
 
   @override
-  String get forgotPassword => 'Forgot Password?';
+  String get forgotPassword => '[HA] Forgot Password?';
 
   @override
-  String get familyDashboard => 'Dashboard na iyali';
+  String get familyDashboard => '[HA] Dashboard na iyali';
 
   @override
-  String get loading => 'Ana ɗora...';
+  String get loading => '[HA] Ana ɗora...';
 
   @override
-  String get quickActions => 'Quick Actions';
+  String get quickActions => '[HA] Quick Actions';
 
   @override
-  String get playtimeTitle => 'Playtime';
+  String get playtimeTitle => '[HA] Playtime';
 
   @override
-  String get otpResentSuccessfully => 'An sake aika OTP cikin nasara!';
+  String get otpResentSuccessfully => '[HA] An sake aika OTP cikin nasara!';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'Kuskure wajen duba izini: $error';
+    return '[HA] Kuskure wajen duba izini: $error';
   }
 
   @override
-  String get clientScreenTBD => 'Fuskar abokin ciniki – A ci gaba';
+  String get clientScreenTBD => '[HA] Fuskar abokin ciniki – A ci gaba';
 
   @override
   String fcmToken(Object token) {
-    return 'FCM Token: $token';
+    return '[HA] FCM Token: $token';
   }
 
   @override
-  String get pickImage => 'Zaɓi hoto';
+  String get pickImage => '[HA] Zaɓi hoto';
 
   @override
-  String get previous => 'Previous';
+  String get previous => '[HA] Previous';
 
   @override
-  String get noProfileFound => 'Ba a sami bayani ba';
+  String get noProfileFound => '[HA] Ba a sami bayani ba';
 
   @override
   String get noFamilyMembersYet =>
-      'Babu membobin iyali tukuna. Aika gayyata don farawa!';
+      '[HA] Babu membobin iyali tukuna. Aika gayyata don farawa!';
 
   @override
-  String get mediaOptional => 'Kafofi (zaɓi)';
+  String get mediaOptional => '[HA] Kafofi (zaɓi)';
 
   @override
-  String get messageSavedSuccessfully => 'Saƙon an ajiye cikin nasara';
+  String get messageSavedSuccessfully => '[HA] Saƙon an ajiye cikin nasara';
 
   @override
-  String get scheduledFor => 'Scheduled for';
+  String get scheduledFor => '[HA] Scheduled for';
 
   @override
-  String get dashboard => 'Dashboard';
+  String get dashboard => '[HA] Dashboard';
 
   @override
   String get noPermissionForBroadcast =>
-      'Ba ku da izini don ƙirƙirar saƙonnin faɗaɗa.';
+      '[HA] Ba ku da izini don ƙirƙirar saƙonnin faɗaɗa.';
 
   @override
-  String get playtimeAdminPanelTitle => 'Playtime Games – Admin';
+  String get playtimeAdminPanelTitle => '[HA] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'Cikakken gayyata';
+  String get inviteDetail => '[HA] Cikakken gayyata';
 
   @override
   String scheduled(Object date) {
-    return 'An tsara: $date';
+    return '[HA] An tsara: $date';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'An kasa sake aika OTP: $error';
+    return '[HA] An kasa sake aika OTP: $error';
   }
 
   @override
-  String get scheduling => 'Jadawalin lokaci';
+  String get scheduling => '[HA] Jadawalin lokaci';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'Kuskure wajen ajiye saƙo: $error';
+    return '[HA] Kuskure wajen ajiye saƙo: $error';
   }
 
   @override
-  String get save => 'Ajiye';
+  String get save => '[HA] Ajiye';
 
   @override
-  String get playtimeApprove => 'Approve';
+  String get playtimeApprove => '[HA] Approve';
 
   @override
-  String get createYourFirstSession => 'Create your first session';
+  String get createYourFirstSession => '[HA] Create your first session';
 
   @override
-  String get playtimeGameRejected => 'Game rejected';
+  String get playtimeGameRejected => '[HA] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'An kasa cire izini: $error';
+    return '[HA] An kasa cire izini: $error';
   }
 
   @override
-  String get recentGames => 'Recent Games';
+  String get recentGames => '[HA] Recent Games';
 
   @override
-  String get customizeMessage => 'Keɓance saƙonka...';
+  String get customizeMessage => '[HA] Keɓance saƙonka...';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'An kasa soke gayyata: $error';
+    return '[HA] An kasa soke gayyata: $error';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'Kuskure wajen aika saƙo: $error';
+    return '[HA] Kuskure wajen aika saƙo: $error';
   }
 
   @override
-  String get confirmPassword => 'Confirm Password';
+  String get confirmPassword => '[HA] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'Kuskure wajen ɗora buƙatun sirri: $error';
+    return '[HA] Kuskure wajen ɗora buƙatun sirri: $error';
   }
 
   @override
-  String get connectedChildren => 'Ɗalibai haɗe';
+  String get connectedChildren => '[HA] Ɗalibai haɗe';
 
   @override
-  String get share => 'Share';
+  String get share => '[HA] Share';
 
   @override
-  String get playtimeEnterGameName => 'Enter game name';
+  String get playtimeEnterGameName => '[HA] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'Don Allah shiga don amfani da fasalolin iyali';
+      '[HA] Don Allah shiga don amfani da fasalolin iyali';
 
   @override
-  String get myInvites => 'Gayyatar da na samu';
+  String get myInvites => '[HA] Gayyatar da na samu';
 
   @override
-  String get createGame => 'Create Game';
+  String get createGame => '[HA] Create Game';
 
   @override
-  String get groupNameOptional => 'Sunan rukuni (zaɓi)';
+  String get groupNameOptional => '[HA] Sunan rukuni (zaɓi)';
 
   @override
-  String get playtimeNoSessions => 'No playtime sessions found.';
+  String get playtimeNoSessions => '[HA] No playtime sessions found.';
 
   @override
-  String get adminScreenTBD => 'Fuskar mai kulawa – A ci gaba';
+  String get adminScreenTBD => '[HA] Fuskar mai kulawa – A ci gaba';
 
   @override
-  String get playtimeParentDashboardTitle => 'Playtime Dashboard';
+  String get playtimeParentDashboardTitle => '[HA] Playtime Dashboard';
 
   @override
-  String get close => 'Rufe';
+  String get close => '[HA] Rufe';
 
   @override
-  String get knownGroupDetected => 'An sami sanannen rukuni';
+  String get knownGroupDetected => '[HA] An sami sanannen rukuni';
 
   @override
-  String get back => 'Back';
+  String get back => '[HA] Back';
 
   @override
-  String get playtimeChooseGame => 'Choose a game';
+  String get playtimeChooseGame => '[HA] Choose a game';
 
   @override
-  String get managePermissions => 'Sarrafa izini';
+  String get managePermissions => '[HA] Sarrafa izini';
 
   @override
-  String get pollOptions => 'Zaɓuɓɓuka:';
+  String get pollOptions => '[HA] Zaɓuɓɓuka:';
 
   @override
   String clicked(Object count) {
-    return 'An danna: $count';
+    return '[HA] An danna: $count';
   }
 
   @override
   String link(Object link) {
-    return 'Haɗi: $link';
+    return '[HA] Haɗi: $link';
   }
 
   @override
   String get meetingReadyMessage =>
-      'An shirya taro! Kuna son a tura shi zuwa rukunin ku?';
+      '[HA] An shirya taro! Kuna son a tura shi zuwa rukunin ku?';
 
   @override
-  String get pendingInvites => 'Gayyata a tsaye';
+  String get pendingInvites => '[HA] Gayyata a tsaye';
 
   @override
   String statusColon(Object status) {
-    return 'Matsayi: $status';
+    return '[HA] Matsayi: $status';
   }
 
   @override
-  String get pleaseLoginToViewProfile => 'Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[HA] Please log in to view your profile.';
 
   @override
-  String get adminMetrics => 'Admin Metrics';
+  String get adminMetrics => '[HA] Admin Metrics';
 
   @override
-  String get overview => 'Overview';
+  String get overview => '[HA] Overview';
 
   @override
-  String get bookings => 'Bookings';
+  String get bookings => '[HA] Bookings';
 
   @override
-  String get users => 'users (TRANSLATE)';
+  String get users => '[HA] Masu amfani';
 
   @override
-  String get revenue => 'revenue (TRANSLATE)';
+  String get revenue => '[HA] Kudaden shiga';
 
   @override
-  String get contentLibrary => 'Content Library';
+  String get contentLibrary => '[HA] Content Library';
 
   @override
   String get authErrorUserNotFound =>
-      'No account found with this email address.';
+      '[HA] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => 'Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[HA] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => 'Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[HA] Please enter a valid email address.';
 
   @override
   String get authErrorUserDisabled =>
-      'This account has been disabled. Please contact support.';
+      '[HA] This account has been disabled. Please contact support.';
 
   @override
   String get authErrorWeakPassword =>
-      'Password is too weak. Please choose a stronger password.';
+      '[HA] Password is too weak. Please choose a stronger password.';
 
   @override
   String get authErrorEmailAlreadyInUse =>
-      'An account with this email already exists.';
+      '[HA] An account with this email already exists.';
 
   @override
   String get authErrorTooManyRequests =>
-      'Too many failed attempts. Please try again later.';
+      '[HA] Too many failed attempts. Please try again later.';
 
   @override
   String get authErrorOperationNotAllowed =>
-      'This sign-in method is not enabled. Please contact support.';
+      '[HA] This sign-in method is not enabled. Please contact support.';
 
   @override
   String get authErrorInvalidCredential =>
-      'Invalid credentials. Please try again.';
+      '[HA] Invalid credentials. Please try again.';
 
   @override
   String get authErrorAccountExistsWithDifferentCredential =>
-      'An account already exists with this email using a different sign-in method.';
+      '[HA] An account already exists with this email using a different sign-in method.';
 
   @override
   String get authErrorCredentialAlreadyInUse =>
-      'These credentials are already associated with another account.';
+      '[HA] These credentials are already associated with another account.';
 
   @override
   String get authErrorNetworkRequestFailed =>
-      'Network error. Please check your connection and try again.';
+      '[HA] Network error. Please check your connection and try again.';
 
   @override
-  String get socialAccountConflictTitle => 'Account Already Exists';
+  String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
 
   @override
   String socialAccountConflictMessage(Object email) {
-    return 'An account with email $email already exists using a different sign-in method. Would you like to link your accounts?';
+    return 'يبدو أن هناك حساب موجود بالفعل';
   }
 
   @override
-  String get linkAccounts => 'Link Accounts';
+  String get linkAccounts => 'ربط الحسابات';
 
   @override
-  String get signInWithExistingMethod => 'Sign in with existing method';
+  String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
   String get authErrorRequiresRecentLogin =>
-      'Please log in again to perform this operation.';
+      '[HA] Please log in again to perform this operation.';
 
   @override
   String get authErrorAppNotAuthorized =>
-      'This app is not authorized to use Firebase Authentication.';
+      '[HA] This app is not authorized to use Firebase Authentication.';
 
   @override
   String get authErrorInvalidVerificationCode =>
-      'The verification code is invalid.';
+      '[HA] The verification code is invalid.';
 
   @override
   String get authErrorInvalidVerificationId =>
-      'The verification ID is invalid.';
+      '[HA] The verification ID is invalid.';
 
   @override
   String get authErrorMissingVerificationCode =>
-      'Please enter the verification code.';
+      '[HA] Please enter the verification code.';
 
   @override
-  String get authErrorMissingVerificationId => 'Missing verification ID.';
+  String get authErrorMissingVerificationId => '[HA] Missing verification ID.';
 
   @override
-  String get authErrorInvalidPhoneNumber => 'The phone number is invalid.';
+  String get authErrorInvalidPhoneNumber => '[HA] The phone number is invalid.';
 
   @override
-  String get authErrorMissingPhoneNumber => 'Please enter a phone number.';
+  String get authErrorMissingPhoneNumber => '[HA] Please enter a phone number.';
 
   @override
   String get authErrorQuotaExceeded =>
-      'The SMS quota for this project has been exceeded. Please try again later.';
+      '[HA] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
   String get authErrorCodeExpired =>
-      'The verification code has expired. Please request a new one.';
+      '[HA] The verification code has expired. Please request a new one.';
 
   @override
   String get authErrorSessionExpired =>
-      'Your session has expired. Please log in again.';
+      '[HA] Your session has expired. Please log in again.';
 
   @override
   String get authErrorMultiFactorAuthRequired =>
-      'Multi-factor authentication is required.';
+      '[HA] Multi-factor authentication is required.';
 
   @override
   String get authErrorMultiFactorInfoNotFound =>
-      'Multi-factor information not found.';
+      '[HA] Multi-factor information not found.';
 
   @override
   String get authErrorMissingMultiFactorSession =>
-      'Missing multi-factor session.';
+      '[HA] Missing multi-factor session.';
 
   @override
   String get authErrorInvalidMultiFactorSession =>
-      'Invalid multi-factor session.';
+      '[HA] Invalid multi-factor session.';
 
   @override
   String get authErrorSecondFactorAlreadyInUse =>
-      'This second factor is already in use.';
+      '[HA] This second factor is already in use.';
 
   @override
   String get authErrorMaximumSecondFactorCountExceeded =>
-      'Maximum number of second factors exceeded.';
+      '[HA] Maximum number of second factors exceeded.';
 
   @override
   String get authErrorUnsupportedFirstFactor =>
-      'Unsupported first factor for multi-factor authentication.';
+      '[HA] Unsupported first factor for multi-factor authentication.';
 
   @override
   String get authErrorEmailChangeNeedsVerification =>
-      'Email change requires verification.';
+      '[HA] Email change requires verification.';
 
   @override
   String get authErrorPhoneNumberAlreadyExists =>
-      'This phone number is already in use.';
+      '[HA] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => 'The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[HA] The password is invalid or too weak.';
 
   @override
-  String get authErrorInvalidIdToken => 'The ID token is invalid.';
+  String get authErrorInvalidIdToken => '[HA] The ID token is invalid.';
 
   @override
-  String get authErrorIdTokenExpired => 'The ID token has expired.';
+  String get authErrorIdTokenExpired => '[HA] The ID token has expired.';
 
   @override
-  String get authErrorIdTokenRevoked => 'The ID token has been revoked.';
+  String get authErrorIdTokenRevoked => '[HA] The ID token has been revoked.';
 
   @override
   String get authErrorInternalError =>
-      'An internal error occurred. Please try again.';
+      '[HA] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => 'An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[HA] An invalid argument was provided.';
 
   @override
-  String get authErrorInvalidClaims => 'Invalid custom claims provided.';
+  String get authErrorInvalidClaims => '[HA] Invalid custom claims provided.';
 
   @override
-  String get authErrorInvalidContinueUri => 'The continue URL is invalid.';
+  String get authErrorInvalidContinueUri => '[HA] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => 'The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[HA] The creation time is invalid.';
 
   @override
   String get authErrorInvalidDisabledField =>
-      'The disabled field value is invalid.';
+      '[HA] The disabled field value is invalid.';
 
   @override
-  String get authErrorInvalidDisplayName => 'The display name is invalid.';
+  String get authErrorInvalidDisplayName => '[HA] The display name is invalid.';
 
   @override
   String get authErrorInvalidDynamicLinkDomain =>
-      'The dynamic link domain is invalid.';
+      '[HA] The dynamic link domain is invalid.';
 
   @override
   String get authErrorInvalidEmailVerified =>
-      'The email verified value is invalid.';
+      '[HA] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => 'The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[HA] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => 'The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[HA] The hash block size is invalid.';
 
   @override
   String get authErrorInvalidHashDerivedKeyLength =>
-      'The hash derived key length is invalid.';
+      '[HA] The hash derived key length is invalid.';
 
   @override
-  String get authErrorInvalidHashKey => 'The hash key is invalid.';
+  String get authErrorInvalidHashKey => '[HA] The hash key is invalid.';
 
   @override
   String get authErrorInvalidHashMemoryCost =>
-      'The hash memory cost is invalid.';
+      '[HA] The hash memory cost is invalid.';
 
   @override
   String get authErrorInvalidHashParallelization =>
-      'The hash parallelization is invalid.';
+      '[HA] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => 'The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[HA] The hash rounds value is invalid.';
 
   @override
   String get authErrorInvalidHashSaltSeparator =>
-      'The hash salt separator is invalid.';
+      '[HA] The hash salt separator is invalid.';
 
   @override
   String get authErrorInvalidLastSignInTime =>
-      'The last sign-in time is invalid.';
+      '[HA] The last sign-in time is invalid.';
 
   @override
-  String get authErrorInvalidPageToken => 'The page token is invalid.';
+  String get authErrorInvalidPageToken => '[HA] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => 'The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[HA] The provider data is invalid.';
 
   @override
-  String get authErrorInvalidProviderId => 'The provider ID is invalid.';
+  String get authErrorInvalidProviderId => '[HA] The provider ID is invalid.';
 
   @override
   String get authErrorInvalidSessionCookieDuration =>
-      'The session cookie duration is invalid.';
+      '[HA] The session cookie duration is invalid.';
 
   @override
-  String get authErrorInvalidUid => 'The UID is invalid.';
+  String get authErrorInvalidUid => '[HA] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => 'The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[HA] The user import record is invalid.';
 
   @override
   String get authErrorMaximumUserCountExceeded =>
-      'Maximum user import count exceeded.';
+      '[HA] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => 'Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[HA] Missing Android package name.';
 
   @override
-  String get authErrorMissingContinueUri => 'Missing continue URL.';
+  String get authErrorMissingContinueUri => '[HA] Missing continue URL.';
 
   @override
-  String get authErrorMissingHashAlgorithm => 'Missing hash algorithm.';
+  String get authErrorMissingHashAlgorithm => '[HA] Missing hash algorithm.';
 
   @override
-  String get authErrorMissingIosBundleId => 'Missing iOS bundle ID.';
+  String get authErrorMissingIosBundleId => '[HA] Missing iOS bundle ID.';
 
   @override
-  String get authErrorMissingUid => 'Missing UID.';
+  String get authErrorMissingUid => '[HA] Missing UID.';
 
   @override
   String get authErrorMissingOauthClientSecret =>
-      'Missing OAuth client secret.';
+      '[HA] Missing OAuth client secret.';
 
   @override
-  String get authErrorProjectNotFound => 'Firebase project not found.';
+  String get authErrorProjectNotFound => '[HA] Firebase project not found.';
 
   @override
-  String get authErrorReservedClaims => 'Reserved claims provided.';
+  String get authErrorReservedClaims => '[HA] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => 'Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[HA] Session cookie has expired.';
 
   @override
   String get authErrorSessionCookieRevoked =>
-      'Session cookie has been revoked.';
+      '[HA] Session cookie has been revoked.';
 
   @override
-  String get authErrorUidAlreadyExists => 'The UID is already in use.';
+  String get authErrorUidAlreadyExists => '[HA] The UID is already in use.';
 
   @override
   String get authErrorUnauthorizedContinueUri =>
-      'The continue URL domain is not whitelisted.';
+      '[HA] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => 'An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[HA] An unknown authentication error occurred.';
 
   @override
-  String get checkingPermissions1 => 'Checking permissions...';
+  String get checkingPermissions1 => 'فحص الأذونات...';
 
   @override
-  String get paymentSuccessful => 'Payment Successful!';
+  String get paymentSuccessful => 'تم الدفع بنجاح';
 
   @override
-  String get businessAvailability => 'Business Availability';
+  String get businessAvailability => 'توفر الأعمال';
 
   @override
-  String get send => 'Send';
+  String get send => 'إرسال';
 
   @override
-  String newNotificationPayloadtitle(Object payloadTitle) {
-    return 'New notification: $payloadTitle';
+  String newNotificationPayloadtitle(Object payloadTitle, Object title) {
+    return 'عنوان الإشعار الجديد: $title';
   }
 
   @override
-  String get gameList => 'Game List';
+  String get gameList => 'قائمة الألعاب';
 
   @override
-  String get deleteAvailability => 'Delete Availability';
+  String get deleteAvailability => 'حذف التوفر';
 
   @override
-  String get connectToGoogleCalendar => 'Connect to Google Calendar';
+  String get connectToGoogleCalendar => 'الاتصال بتقويم Google';
 
   @override
-  String get adminFreeAccess => 'Admin Free Access';
+  String get adminFreeAccess => '[HA] Admin Free Access';
 
   @override
-  String emailProfileemail(Object profileEmail) {
-    return 'Email: $profileEmail';
+  String emailProfileemail(Object email, Object profileEmail) {
+    return 'البريد الإلكتروني للملف الشخصي: $email';
   }
 
   @override
-  String get calendar => 'Calendar';
+  String get calendar => 'التقويم';
 
   @override
-  String get upload1 => 'Upload';
+  String get upload1 => '[HA] Upload (Hausa)';
 
   @override
-  String get resolved => 'Resolved';
+  String get resolved => 'تم الحل';
 
   @override
-  String get keepSubscription => 'Keep Subscription';
+  String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
   String get virtualSessionCreatedInvitingFriends =>
-      'Virtual session created! Inviting friends...';
+      '[HA] Virtual session created! Inviting friends... (Hausa)';
 
   @override
-  String get noEventsScheduledForToday => 'No events scheduled for today';
+  String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
 
   @override
-  String get exportData => 'Export Data';
+  String get exportData => 'تصدير البيانات';
 
   @override
-  String get rewards => 'Rewards';
+  String get rewards => '[HA] Rewards (Hausa)';
 
   @override
-  String get time => 'Time';
+  String get time => '[HA] Time (Hausa)';
 
   @override
-  String userCid(Object id) {
-    return 'User $id';
+  String userCid(Object cid, Object id) {
+    return '[HA] User $id';
   }
 
   @override
-  String get noSlots => 'No slots';
+  String get noSlots => '[HA] Babu wurare';
 
   @override
-  String get signIn => 'Sign In';
+  String get signIn => '[HA] Shiga ciki';
 
   @override
-  String get homeFeedScreen => 'Home Feed Screen';
+  String get homeFeedScreen => '[HA] Home Feed Screen (Hausa)';
 
   @override
-  String get selectLocation => 'Select Location';
+  String get selectLocation => '[HA] Select Location (Hausa)';
 
   @override
-  String get noTicketsYet => 'No tickets yet';
+  String get noTicketsYet => '[HA] No tickets yet (Hausa)';
 
   @override
-  String get meetingSharedSuccessfully1 => 'Meeting shared successfully!';
+  String get meetingSharedSuccessfully1 => 'تم مشاركة الاجتماع بنجاح';
 
   @override
-  String get studioProfile => 'Studio Profile';
+  String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => 'Subscription unavailable';
+  String get subscriptionUnavailable => '[HA] Subscription unavailable (Hausa)';
 
   @override
-  String get confirmBooking => 'Confirm Booking';
+  String get confirmBooking => '[HA] Tabbatar da tanadi';
 
   @override
-  String get failedToUpdatePermissionE => 'Failed to update permission: \$e';
+  String get failedToUpdatePermissionE =>
+      '[HA] Failed to update permission: \$e (Hausa)';
 
   @override
-  String get reject => 'Reject';
+  String get reject => '[HA] Reject (Hausa)';
 
   @override
   String ambassadorStatusAmbassadorstatus(Object ambassadorStatus) {
-    return 'Ambassador Status: $ambassadorStatus';
+    return '[HA] Ambassador Status: $ambassadorStatus (Hausa)';
   }
 
   @override
-  String get noProviders => 'No providers';
+  String get noProviders => '[HA] No providers';
 
   @override
-  String get checkingSubscription => 'Checking subscription...';
+  String get checkingSubscription => '[HA] Checking subscription... (Hausa)';
 
   @override
-  String get errorPickingImageE => 'Error picking image: \$e';
+  String errorPickingImageE(Object e) {
+    return 'خطأ في اختيار الصورة: $e';
+  }
 
   @override
-  String get noContentAvailableYet => 'No content available yet';
+  String get noContentAvailableYet => '[HA] No content available yet (Hausa)';
 
   @override
-  String get resolve => 'Resolve';
+  String get resolve => '[HA] Resolve (Hausa)';
 
   @override
-  String get errorLoadingSurveysError => 'Error loading surveys: \$error';
+  String get errorLoadingSurveysError =>
+      '[HA] Error loading surveys: \$error (Hausa)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
-    return 'Error: $errorMessage';
+    return '[HA] Error: $errorMessage';
   }
 
   @override
-  String get getHelpWithYourAccount => 'Get help with your account';
+  String get getHelpWithYourAccount =>
+      '[HA] Get help with your account (Hausa)';
 
   @override
-  String get pay => 'Pay';
+  String get pay => '[HA] Pay (Hausa)';
 
   @override
-  String get noOrganizations => 'noOrganizations (TRANSLATE)';
+  String get noOrganizations => '[HA] Babu ƙungiyoyi';
 
   @override
-  String get meetingDetails => 'meetingDetails (TRANSLATE)';
+  String get meetingDetails => 'تفاصيل الاجتماع';
 
   @override
-  String get errorLoadingAppointments => 'Error loading appointments';
+  String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => 'Changes saved successfully!';
+  String get changesSavedSuccessfully =>
+      '[HA] Changes saved successfully! (Hausa)';
 
   @override
-  String get createNewInvoice => 'Create New Invoice';
+  String get createNewInvoice => '[HA] Create New Invoice (Hausa)';
 
   @override
-  String get profileNotFound => 'Profile not found.';
+  String get profileNotFound => 'الملف الشخصي غير موجود';
 
   @override
-  String get errorConfirmingPaymentE => 'Error confirming payment: \$e';
+  String errorConfirmingPaymentE(Object e) {
+    return 'خطأ في تأكيد الدفع: $e';
+  }
 
   @override
-  String get inviteFriends => 'Invite Friends';
+  String get inviteFriends => 'دعوة الأصدقاء';
 
   @override
-  String get profileSaved => 'Profile saved!';
+  String get profileSaved => '[HA] Profile saved! (Hausa)';
 
   @override
   String get receiveBookingNotificationsViaEmail =>
-      'Receive booking notifications via email';
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
-  String valuetointk(Object value) {
-    return '\\\$${value}K';
+  String valuetointk(Object k, Object value) {
+    return '[HA] \\\$${value}K (Hausa)';
   }
 
   @override
-  String get deleteAccount => 'Delete Account';
+  String get deleteAccount => '[HA] Delete Account (Hausa)';
 
   @override
-  String get profile1 => 'Profile';
+  String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding => 'Business Onboarding';
+  String get businessOnboarding => '[HA] Business Onboarding (Hausa)';
 
   @override
-  String get addNewClient => 'Add New Client';
+  String get addNewClient => '[HA] Add New Client (Hausa)';
 
   @override
-  String get darkMode => 'Dark Mode';
+  String get darkMode => '[HA] Dark Mode (Hausa)';
 
   @override
-  String get addProvider => 'Add Provider';
+  String get addProvider => '[HA] Add Provider';
 
   @override
   String noRouteDefinedForStateuripath(Object path) {
-    return 'No route defined for $path';
+    return '[HA] No route defined for $path';
   }
 
   @override
   String get youWillReceiveAConfirmationEmailShortly =>
-      'You will receive a confirmation email shortly.';
+      '[HA] You will receive a confirmation email shortly. (Hausa)';
 
   @override
-  String get addQuestion => 'Add Question';
+  String get addQuestion => '[HA] Add Question (Hausa)';
 
   @override
-  String get privacyPolicy => 'Privacy Policy';
+  String get privacyPolicy => '[HA] Privacy Policy (Hausa)';
 
   @override
   String branchesLengthBranches(Object branchCount) {
-    return '$branchCount branches';
+    return '[HA] $branchCount branches (Hausa)';
   }
 
   @override
-  String get join => 'Join';
+  String get join => '[HA] Join (Hausa)';
 
   @override
-  String get businessSubscription => 'Business Subscription';
+  String get businessSubscription => '[HA] Business Subscription (Hausa)';
 
   @override
-  String get myInvites1 => 'My Invites';
+  String get myInvites1 => 'دعواتي';
 
   @override
-  String get providers => 'Providers';
+  String get providers => '[HA] Providers';
 
   @override
-  String get surveyManagement => 'Survey Management';
+  String get surveyManagement => '[HA] Survey Management (Hausa)';
 
   @override
   String get pleaseEnterAValidEmailOrPhone =>
-      'Please enter a valid email or phone';
+      '[HA] Please enter a valid email or phone';
 
   @override
   String get noRoomsFoundAddYourFirstRoom =>
-      'No rooms found. Add your first room!';
+      '[HA] No rooms found. Add your first room! (Hausa)';
 
   @override
-  String get readOurPrivacyPolicy => 'Read our privacy policy';
+  String get readOurPrivacyPolicy => '[HA] Read our privacy policy (Hausa)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => 'Could not open privacy policy';
+  String get couldNotOpenPrivacyPolicy =>
+      '[HA] Could not open privacy policy (Hausa)';
 
   @override
-  String get refresh1 => 'Refresh';
+  String get refresh1 => '[HA] Refresh (Hausa)';
 
   @override
-  String get roomUpdatedSuccessfully => 'Room updated successfully!';
+  String get roomUpdatedSuccessfully =>
+      '[HA] Room updated successfully! (Hausa)';
 
   @override
-  String get contentDetail => 'Content Detail';
+  String get contentDetail => '[HA] Content Detail (Hausa)';
 
   @override
-  String get cancelSubscription => 'Cancel Subscription';
+  String get cancelSubscription => '[HA] Cancel Subscription (Hausa)';
 
   @override
   String get successfullyRegisteredAsAmbassador =>
-      'Successfully registered as Ambassador!';
+      '[HA] Successfully registered as Ambassador! (Hausa)';
 
   @override
-  String get save1 => 'Save';
+  String get save1 => '[HA] Save (Hausa)';
 
   @override
-  String get copy1 => 'Copy';
+  String get copy1 => '[HA] Copy (Hausa)';
 
   @override
-  String get failedToSendInvitationE => 'Failed to send invitation: \$e';
+  String get failedToSendInvitationE =>
+      '[HA] Failed to send invitation: \$e (Hausa)';
 
   @override
-  String get surveyScore => 'Survey Score';
+  String get surveyScore => '[HA] Survey Score (Hausa)';
 
   @override
-  String get userUserid => 'User \$userId';
+  String userUserid(Object userId) {
+    return '[HA] User \$userId';
+  }
 
   @override
-  String get noAppointmentsFound => 'No appointments found.';
+  String get noAppointmentsFound => '[HA] No appointments found. (Hausa)';
 
   @override
-  String get responseDetail => 'Response Detail';
+  String get responseDetail => '[HA] Response Detail (Hausa)';
 
   @override
   String get businessVerificationScreenComingSoon =>
-      'Business Verification Screen - Coming Soon';
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
   String get businessProfileActivatedSuccessfully =>
-      'Business profile activated successfully!';
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
   String get failedToStartProSubscriptionE =>
-      'Failed to start Pro subscription: \$e';
+      '[HA] Failed to start Pro subscription: \$e (Hausa)';
 
   @override
   String get businessDashboardEntryScreenComingSoon =>
-      'Business Dashboard Entry Screen - Coming Soon';
+      '[HA] Business Dashboard Entry Screen - Coming Soon (Hausa)';
 
   @override
-  String get contentFilter => 'Content Filter';
+  String get contentFilter => '[HA] Content Filter (Hausa)';
 
   @override
-  String get helpSupport => 'Help & Support';
+  String get helpSupport => '[HA] Help & Support (Hausa)';
 
   @override
-  String get editRoom => 'Edit Room';
+  String get editRoom => '[HA] Edit Room (Hausa)';
 
   @override
   String appointmentApptid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return '[HA] Appointment: $appointmentId';
   }
 
   @override
   String deviceLogdeviceinfo(Object deviceInfo) {
-    return 'Device: $deviceInfo';
+    return '[HA] Device: $deviceInfo';
   }
 
   @override
   String get businessCrmEntryScreenComingSoon =>
-      'Business CRM Entry Screen - Coming Soon';
+      '[HA] Business CRM Entry Screen - Coming Soon (Hausa)';
 
   @override
-  String get adminDashboard => 'Admin Dashboard';
+  String get adminDashboard => '[HA] Admin Dashboard';
 
   @override
   String orgmemberidslengthMembers(Object memberCount) {
-    return '$memberCount members';
+    return '[HA] $memberCount members';
   }
 
   @override
-  String get errorLoadingDashboardError => 'Error loading dashboard: \$error';
+  String get errorLoadingDashboardError =>
+      '[HA] Error loading dashboard: \$error (Hausa)';
 
   @override
-  String get gameDeletedSuccessfully => 'Game deleted successfully!';
+  String get gameDeletedSuccessfully =>
+      '[HA] Game deleted successfully! (Hausa)';
 
   @override
-  String get viewResponsesComingSoon => 'View responses - Coming soon!';
+  String get viewResponsesComingSoon =>
+      '[HA] View responses - Coming soon! (Hausa)';
 
   @override
-  String get deleteProvider => 'Delete Provider';
+  String get deleteProvider => '[HA] Delete Provider';
 
   @override
-  String get errorLoadingRewards => 'Error loading rewards';
+  String get errorLoadingRewards => '[HA] Error loading rewards (Hausa)';
 
   @override
-  String get failedToDeleteAccountE => 'Failed to delete account: \$e';
+  String get failedToDeleteAccountE =>
+      '[HA] Failed to delete account: \$e (Hausa)';
 
   @override
-  String get invited1 => 'Invited';
+  String get invited1 => '[HA] Invited (Hausa)';
 
   @override
-  String get noBranchesAvailable => 'No branches available';
+  String get noBranchesAvailable => '[HA] No branches available (Hausa)';
 
   @override
-  String get errorError => 'Error: \$error';
+  String get errorError => '[HA] Error: \$error (Hausa)';
 
   @override
-  String get noEvents => 'No events';
+  String get noEvents => '[HA] No events (Hausa)';
 
   @override
-  String get gameCreatedSuccessfully => 'Game created successfully!';
+  String get gameCreatedSuccessfully =>
+      '[HA] Game created successfully! (Hausa)';
 
   @override
-  String get add1 => 'Add';
+  String get add1 => '[HA] Add (Hausa)';
 
   @override
-  String get creatorCreatorid => 'Creator: \$creatorId';
+  String get creatorCreatorid => '[HA] Creator: \$creatorId';
 
   @override
   String eventstarttimeEventendtime(Object endTime, Object startTime) {
-    return '$startTime - $endTime';
+    return '[HA] $startTime - $endTime (Hausa)';
   }
 
   @override
-  String get allowPlaytime => 'Allow Playtime';
+  String get allowPlaytime => '[HA] Allow Playtime (Hausa)';
 
   @override
-  String get clients => 'Clients';
+  String get clients => '[HA] Clients (Hausa)';
 
   @override
-  String get noAmbassadorDataAvailable => 'No ambassador data available';
+  String get noAmbassadorDataAvailable =>
+      '[HA] No ambassador data available (Hausa)';
 
   @override
   String get backgroundDeletedSuccessfully =>
-      'Background deleted successfully!';
+      '[HA] Background deleted successfully! (Hausa)';
 
   @override
   String errorSnapshoterror(Object error) {
-    return 'Error: $error';
+    return '[HA] Error: $error (Hausa)';
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => 'No analytics data available yet.';
+  String get noAnalyticsDataAvailableYet =>
+      '[HA] No analytics data available yet. (Hausa)';
 
   @override
-  String get errorDeletingSlotE => 'Error deleting slot: \$e';
+  String errorDeletingSlotE(Object e) {
+    return 'خطأ في حذف الفترة: $e';
+  }
 
   @override
   String get businessPhoneBookingEntryScreenComingSoon =>
-      'Business Phone Booking Entry Screen - Coming Soon';
+      '[HA] Business Phone Booking Entry Screen - Coming Soon (Hausa)';
 
   @override
-  String get verification => 'Verification';
+  String get verification => '[HA] Verification (Hausa)';
 
   @override
-  String get copyLink => 'Copy Link';
+  String get copyLink => '[HA] Copy Link (Hausa)';
 
   @override
-  String get dashboard1 => 'Dashboard';
+  String get dashboard1 => '[HA] Dashboard (Hausa)';
 
   @override
-  String get manageChildAccounts => 'Manage Child Accounts';
+  String get manageChildAccounts => '[HA] Manage Child Accounts (Hausa)';
 
   @override
-  String get grantConsent => 'Grant Consent';
+  String get grantConsent => '[HA] Ba da yarda';
 
   @override
-  String get myProfile1 => 'My Profile';
+  String get myProfile1 => '[HA] My Profile (Hausa)';
 
   @override
-  String get submit => 'Submit';
+  String get submit => '[HA] Submit (Hausa)';
 
   @override
   String userLoguseremail(Object userEmail) {
-    return 'User: $userEmail';
+    return '[HA] User: $userEmail';
   }
 
   @override
-  String get emailNotifications => 'Email Notifications';
+  String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard => 'Ambassador Dashboard';
+  String get ambassadorDashboard => '[HA] Ambassador Dashboard (Hausa)';
 
   @override
-  String get phoneBooking => 'Phone Booking';
+  String get phoneBooking => '[HA] Phone Booking (Hausa)';
 
   @override
-  String get bookViaChat => 'Book via Chat';
+  String get bookViaChat => '[HA] Tanadi ta hira';
 
   @override
-  String get error => 'Error';
+  String get error => '[HA] Error';
 
   @override
-  String get businessProfile => 'Business Profile';
+  String get businessProfile => '[HA] Business Profile (Hausa)';
 
   @override
   String get businessBookingEntryScreenComingSoon =>
-      'Business Booking Entry Screen - Coming Soon';
+      '[HA] Business Booking Entry Screen - Coming Soon (Hausa)';
 
   @override
-  String get createNewSurvey => 'Create New Survey';
+  String get createNewSurvey => '[HA] Create New Survey (Hausa)';
 
   @override
-  String get backgroundRejected => 'Background rejected';
+  String get backgroundRejected => '[HA] Background rejected (Hausa)';
 
   @override
-  String get noMediaSelected => 'No media selected';
+  String get noMediaSelected => '[HA] No media selected (Hausa)';
 
   @override
-  String get syncToGoogle => 'Sync to Google';
+  String get syncToGoogle => '[HA] Sync to Google (Hausa)';
 
   @override
-  String get virtualPlaytime => 'Virtual Playtime';
+  String get virtualPlaytime => '[HA] Virtual Playtime (Hausa)';
 
   @override
-  String get colorContrastTesting => 'Color Contrast Testing';
+  String get colorContrastTesting => '[HA] Color Contrast Testing';
 
   @override
-  String get loginFailedE => 'Login failed: \$e';
+  String get loginFailedE => '[HA] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => 'Invitation sent successfully!';
+  String get invitationSentSuccessfully => '[HA] An aika gayyata cikin nasara!';
 
   @override
-  String get registering => 'Registering...';
+  String get registering => '[HA] Registering... (Hausa)';
 
   @override
   String statusAppointmentstatusname(Object status) {
-    return 'Status: $status';
+    return '[HA] Status: $status (Hausa)';
   }
 
   @override
-  String get home1 => 'Home';
+  String get home1 => '[HA] Home (Hausa)';
 
   @override
-  String get errorSavingSettingsE => 'Error saving settings: \$e';
+  String get errorSavingSettingsE => '[HA] Error saving settings: \$e (Hausa)';
 
   @override
-  String get appVersionAndInformation => 'App version and information';
+  String get appVersionAndInformation =>
+      '[HA] App version and information (Hausa)';
 
   @override
   String get businessSubscriptionEntryScreenComingSoon =>
-      'Business Subscription Entry Screen - Coming Soon';
+      '[HA] Business Subscription Entry Screen - Coming Soon (Hausa)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
-    return '$key: $value';
+    return '[HA] $key: $value (Hausa)';
   }
 
   @override
   String get yourPaymentHasBeenProcessedSuccessfully =>
-      'Your payment has been processed successfully.';
+      '[HA] Your payment has been processed successfully. (Hausa)';
 
   @override
-  String get errorE => 'Error: \$e';
+  String get errorE => '[HA] Error: \$e (Hausa)';
 
   @override
-  String get viewAll1 => 'View All';
+  String get viewAll1 => '[HA] View All (Hausa)';
 
   @override
-  String get editSurveyComingSoon => 'Edit survey - Coming soon!';
+  String get editSurveyComingSoon => '[HA] Edit survey - Coming soon! (Hausa)';
 
   @override
-  String get enterOtp => 'Enter OTP';
+  String get enterOtp => '[HA] Shigar da OTP';
 
   @override
-  String get payment => 'Payment';
+  String get payment => '[HA] Payment (Hausa)';
 
   @override
   String get automaticallyConfirmNewBookingRequests =>
-      'Automatically confirm new booking requests';
+      '[HA] Automatically confirm new booking requests (Hausa)';
 
   @override
-  String get errorPickingVideoE => 'Error picking video: \$e';
+  String errorPickingVideoE(Object e) {
+    return 'خطأ في اختيار الفيديو: $e';
+  }
 
   @override
   String noRouteDefinedForSettingsname(Object settingsName) {
-    return 'No route defined for $settingsName';
+    return '[HA] No route defined for $settingsName (Hausa)';
   }
 
   @override
   String get pleaseSignInToUploadABackground =>
-      'Please sign in to upload a background';
+      '[HA] Please sign in to upload a background (Hausa)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
-    return '$targetType: $targetId';
+    return '[HA] $targetType: $targetId';
   }
 
   @override
-  String get staffAvailability => 'Staff Availability';
+  String get staffAvailability => '[HA] Staff Availability (Hausa)';
 
   @override
-  String get livePlaytime => 'Live Playtime';
+  String get livePlaytime => '[HA] Live Playtime (Hausa)';
 
   @override
-  String get autoconfirmBookings => 'Auto-Confirm Bookings';
+  String get autoconfirmBookings => '[HA] Auto-Confirm Bookings (Hausa)';
 
   @override
   String get redirectingToStripeCheckoutForProPlan =>
-      'Redirecting to Stripe checkout for Pro plan...';
+      '[HA] Redirecting to Stripe checkout for Pro plan... (Hausa)';
 
   @override
-  String get exportAsCsv => 'Export as CSV';
+  String get exportAsCsv => '[HA] Export as CSV (Hausa)';
 
   @override
   String get deleteFunctionalityComingSoon =>
-      'Delete functionality coming soon!';
+      '[HA] Delete functionality coming soon! (Hausa)';
 
   @override
-  String get editClient => 'Edit Client';
+  String get editClient => '[HA] Edit Client (Hausa)';
 
   @override
   String get areYouSureYouWantToDeleteThisMessage =>
-      'Are you sure you want to delete this message?';
+      '[HA] Are you sure you want to delete this message? (Hausa)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
-    return 'Referrals: $referrals';
+    return '[HA] Referrals: $referrals (Hausa)';
   }
 
   @override
-  String get notAuthenticated => 'Not authenticated';
+  String get notAuthenticated => '[HA] Not authenticated';
 
   @override
   String get privacyRequestSentToYourParents =>
-      'Privacy request sent to your parents!';
+      '[HA] Privacy request sent to your parents! (Hausa)';
 
   @override
-  String get clientDeletedSuccessfully => 'Client deleted successfully!';
+  String get clientDeletedSuccessfully =>
+      '[HA] Client deleted successfully! (Hausa)';
 
   @override
-  String get failedToCancelSubscription => 'Failed to cancel subscription';
+  String get failedToCancelSubscription =>
+      '[HA] Failed to cancel subscription (Hausa)';
 
   @override
-  String get allLanguages => 'All Languages';
+  String get allLanguages => '[HA] All Languages (Hausa)';
 
   @override
-  String get slotDeletedSuccessfully => 'Slot deleted successfully';
+  String get slotDeletedSuccessfully =>
+      '[HA] Slot deleted successfully (Hausa)';
 
   @override
   String get businessProvidersEntryScreenComingSoon =>
-      'Business Providers Entry Screen - Coming Soon';
+      '[HA] Business Providers Entry Screen - Coming Soon';
 
   @override
   String get parentsMustApproveBeforeChildrenCanJoin =>
-      'Parents must approve before children can join';
+      '[HA] Parents must approve before children can join (Hausa)';
 
   @override
-  String get subscribeToPro1499mo => 'Subscribe to Pro (€14.99/mo)';
+  String get subscribeToPro1499mo =>
+      '[HA] Subscribe to Pro (€14.99/mo) (Hausa)';
 
   @override
   String get businessAvailabilityEntryScreenComingSoon =>
-      'Business Availability Entry Screen - Coming Soon';
+      '[HA] Business Availability Entry Screen - Coming Soon (Hausa)';
 
   @override
   String appointmentsListlength(Object count) {
-    return 'Appointments: $count';
+    return '[HA] Appointments: $count (Hausa)';
   }
 
   @override
-  String get clearFilters => 'Clear Filters';
+  String get clearFilters => '[HA] Clear Filters (Hausa)';
 
   @override
-  String get submitBooking => 'Submit Booking';
+  String get submitBooking => '[HA] Miƙa tanadi';
 
   @override
   String get areYouSureYouWantToCancelThisAppointment =>
-      'Are you sure you want to cancel this appointment?';
+      '[HA] Are you sure you want to cancel this appointment? (Hausa)';
 
   @override
-  String get noUpcomingBookings => 'No upcoming bookings';
+  String get noUpcomingBookings => '[HA] No upcoming bookings (Hausa)';
 
   @override
-  String get goBack => 'Go Back';
+  String get goBack => '[HA] Go Back (Hausa)';
 
   @override
-  String get setup => 'Setup';
+  String get setup => '[HA] Setup (Hausa)';
 
   @override
-  String get inviteChild => 'Invite Child';
+  String get inviteChild => '[HA] Gayyaci yaro';
 
   @override
-  String get goToDashboard => 'Go to Dashboard';
+  String get goToDashboard => '[HA] Go to Dashboard (Hausa)';
 
   @override
-  String get ambassadorQuotaDashboard => 'Ambassador Quota Dashboard';
+  String get ambassadorQuotaDashboard =>
+      '[HA] Ambassador Quota Dashboard (Hausa)';
 
   @override
-  String get adminSettings => 'Admin Settings';
+  String get adminSettings => '[HA] Admin Settings';
 
   @override
-  String get referralCode => 'Referral Code';
+  String get referralCode => '[HA] Referral Code (Hausa)';
 
   @override
   String adminLogadminemail(Object adminEmail) {
-    return 'Admin: $adminEmail';
+    return '[HA] Admin: $adminEmail';
   }
 
   @override
-  String get date => 'Date';
+  String get date => '[HA] Date (Hausa)';
 
   @override
-  String get readOnly => 'Read Only';
+  String get readOnly => '[HA] Karatu kawai';
 
   @override
-  String get bookingRequest => 'Booking Request';
+  String get bookingRequest => '[HA] Buƙatar tanadi';
 
   @override
-  String get advancedReporting => '• Advanced reporting';
+  String get advancedReporting => '[HA] • Advanced reporting (Hausa)';
 
   @override
-  String get rooms => 'Rooms';
+  String get rooms => '[HA] Rooms (Hausa)';
 
   @override
-  String get copiedToClipboard => 'Copied to clipboard';
+  String get copiedToClipboard => '[HA] Copied to clipboard (Hausa)';
 
   @override
-  String get bookingConfirmed => 'Booking Confirmed';
+  String get bookingConfirmed => '[HA] An tabbatar da tanadi';
 
   @override
-  String get sessionApproved => 'Session approved!';
+  String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => 'Client added successfully!';
+  String get clientAddedSuccessfully =>
+      '[HA] Client added successfully! (Hausa)';
 
   @override
-  String get noNotifications => 'No notifications';
+  String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved => 'Background approved!';
+  String get backgroundApproved => '[HA] Background approved! (Hausa)';
 
   @override
-  String get familySupport => 'Family Support';
+  String get familySupport => '[HA] Family Support (Hausa)';
 
   @override
-  String get deletingAccount => 'Deleting account...';
+  String get deletingAccount => '[HA] Deleting account... (Hausa)';
 
   @override
-  String get bookAppointment => 'Book Appointment';
+  String get bookAppointment => '[HA] Tanadi Haduwa';
 
   @override
   String get receivePushNotificationsForNewBookings =>
-      'Receive push notifications for new bookings';
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
-  String get delete1 => 'Delete';
+  String get delete1 => '[HA] Delete (Hausa)';
 
   @override
-  String get sendBookingInvite => 'Send Booking Invite';
+  String get sendBookingInvite => '[HA] Send Booking Invite (Hausa)';
 
   @override
-  String get text => 'Text';
+  String get text => '[HA] Text (Hausa)';
 
   @override
-  String get manageSubscription => 'Manage Subscription';
+  String get manageSubscription => '[HA] Manage Subscription (Hausa)';
 
   @override
-  String get requiresInstallFallback => 'Requires Install Fallback';
+  String get requiresInstallFallback => '[HA] Yana buƙatar shigarwa';
 
   @override
-  String get paymentConfirmation => 'Payment Confirmation';
+  String get paymentConfirmation => '[HA] Payment Confirmation (Hausa)';
 
   @override
   String get promoAppliedYourNextBillIsFree =>
-      'Promo applied! Your next bill is free.';
+      '[HA] Promo applied! Your next bill is free. (Hausa)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
-    return 'Invitee: $inviteeId';
+    return 'المدعو: $inviteeId';
   }
 
   @override
-  String get errorLoadingSlots => 'Error loading slots';
+  String get errorLoadingSlots => '[HA] Error loading slots (Hausa)';
 
   @override
   String get allowOtherUsersToFindAndJoinThisGame =>
-      'Allow other users to find and join this game';
+      '[HA] Allow other users to find and join this game (Hausa)';
 
   @override
   String get businessOnboardingScreenComingSoon =>
-      'Business Onboarding Screen - Coming Soon';
+      '[HA] Business Onboarding Screen - Coming Soon (Hausa)';
 
   @override
-  String get activateBusinessProfile => 'Activate Business Profile';
+  String get activateBusinessProfile =>
+      '[HA] Activate Business Profile (Hausa)';
 
   @override
-  String get contentNotFound => 'Content not found';
+  String get contentNotFound => '[HA] Content not found (Hausa)';
 
   @override
   String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
-    return '$specialty\\n$contactInfo';
+    return '[HA] $specialty\\n$contactInfo (Hausa)';
   }
 
   @override
-  String get rating => 'Rating';
+  String get rating => '[HA] Rating (Hausa)';
 
   @override
-  String get messages => 'Messages';
+  String get messages => '[HA] Messages (Hausa)';
 
   @override
-  String get errorEstimatingRecipientsE => 'Error estimating recipients: \$e';
+  String errorEstimatingRecipientsE(Object e) {
+    return 'خطأ في تقدير المستلمين: $e';
+  }
 
   @override
-  String get becomeAnAmbassador => 'Become an Ambassador';
+  String get becomeAnAmbassador => '[HA] Become an Ambassador (Hausa)';
 
   @override
-  String get subscribeNow => 'Subscribe Now';
+  String get subscribeNow => '[HA] Subscribe Now (Hausa)';
 
   @override
   String timeArgsslotformatcontext(Object time) {
-    return 'Time: $time';
+    return '[HA] Time: $time (Hausa)';
   }
 
   @override
-  String get shareViaWhatsapp => 'Share via WhatsApp';
+  String get shareViaWhatsapp => '[HA] Share via WhatsApp (Hausa)';
 
   @override
-  String get users1 => 'Users';
+  String get users1 => '[HA] Users (Hausa)';
 
   @override
-  String get shareLink => 'Share Link';
+  String get shareLink => '[HA] Share Link (Hausa)';
 
   @override
   String get areYouSureYouWantToDeleteThisProvider =>
-      'Are you sure you want to delete this provider?';
+      '[HA] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment => 'Delete Appointment';
+  String get deleteAppointment => '[HA] Delete Appointment (Hausa)';
 
   @override
-  String get toggleAvailability => 'Toggle Availability';
+  String get toggleAvailability => '[HA] Toggle Availability (Hausa)';
 
   @override
-  String get changePlan => 'Change Plan';
+  String get changePlan => '[HA] Change Plan (Hausa)';
 
   @override
-  String get errorLoadingStaff => 'Error loading staff';
+  String get errorLoadingStaff => '[HA] Error loading staff (Hausa)';
 
   @override
-  String get errorLoadingConfigurationE => 'Error loading configuration: \$e';
+  String errorLoadingConfigurationE(Object e) {
+    return 'خطأ في تحميل التكوين: $e';
+  }
 
   @override
   String get updateYourBusinessInformation =>
-      'Update your business information';
+      '[HA] Update your business information (Hausa)';
 
   @override
   String get noProvidersFoundAddYourFirstProvider =>
-      'No providers found. Add your first provider!';
+      '[HA] No providers found. Add your first provider!';
 
   @override
-  String get parentDashboard => 'Parent Dashboard';
+  String get parentDashboard => '[HA] Parent Dashboard (Hausa)';
 
   @override
-  String get menu => 'Menu';
+  String get menu => '[HA] Menu';
 
   @override
-  String get studioBooking => 'Studio Booking';
+  String get studioBooking => '[HA] Studio Booking (Hausa)';
 
   @override
-  String get about1 => 'About';
+  String get about1 => '[HA] About (Hausa)';
 
   @override
-  String get multipleChoice => 'Multiple Choice';
+  String get multipleChoice => '[HA] Multiple Choice (Hausa)';
 
   @override
   String dateAppointmentscheduledattostring(Object date) {
-    return 'Date: $date';
+    return '[HA] Date: $date (Hausa)';
   }
 
   @override
   String get studioBookingIsOnlyAvailableOnWeb =>
-      'Studio booking is only available on web';
+      '[HA] Studio booking is only available on web (Hausa)';
 
   @override
-  String get errorLoadingBranchesE => 'Error loading branches: \$e';
+  String get errorLoadingBranchesE =>
+      '[HA] Error loading branches: \$e (Hausa)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
-    return '\\uD83D\\uDCC5 $dateTime';
+    return '[HA] \\uD83D\\uDCC5 $dateTime (Hausa)';
   }
 
   @override
   String appointmentInviteappointmentid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return 'دعوة الموعد: $appointmentId';
   }
 
   @override
-  String get none => 'None';
+  String get none => '[HA] Babu';
 
   @override
-  String get failedToUpdateConsentE => 'Failed to update consent: \$e';
+  String get failedToUpdateConsentE =>
+      '[HA] Failed to update consent: \$e (Hausa)';
 
   @override
-  String get welcome1 => 'Welcome';
+  String get welcome1 => '[HA] Welcome (Hausa)';
 
   @override
-  String get failedToCreateSessionE => 'Failed to create session: \$e';
+  String get failedToCreateSessionE =>
+      '[HA] Failed to create session: \$e (Hausa)';
 
   @override
-  String get inviteContact => 'Invite Contact';
+  String get inviteContact => '[HA] Tuntuɓi gayyata';
 
   @override
-  String get surveyEditor => 'Survey Editor';
+  String get surveyEditor => '[HA] Survey Editor (Hausa)';
 
   @override
   String get failedToStartBasicSubscriptionE =>
-      'Failed to start Basic subscription: \$e';
+      '[HA] Failed to start Basic subscription: \$e (Hausa)';
 
   @override
-  String get mySchedule => 'My Schedule';
+  String get mySchedule => '[HA] My Schedule (Hausa)';
 
   @override
-  String get studioDashboard => 'Studio Dashboard';
+  String get studioDashboard => '[HA] Studio Dashboard (Hausa)';
 
   @override
-  String get editProfile => 'Edit Profile';
+  String get editProfile => 'تحرير الملف الشخصي';
 
   @override
-  String get logout1 => 'Logout';
+  String get logout1 => '[HA] Logout';
 
   @override
   String serviceServiceidNotSelected(Object service) {
-    return 'Service: $service';
+    return '[HA] Service: $service';
   }
 
   @override
-  String get settingsSavedSuccessfully => 'Settings saved successfully!';
+  String get settingsSavedSuccessfully =>
+      '[HA] Settings saved successfully! (Hausa)';
 
   @override
-  String get linkCopiedToClipboard => 'Link copied to clipboard!';
+  String get linkCopiedToClipboard => '[HA] Link copied to clipboard! (Hausa)';
 
   @override
-  String get accept1 => 'Accept';
+  String get accept1 => '[HA] Accept (Hausa)';
 
   @override
-  String get noAvailableSlots => 'No available slots';
+  String get noAvailableSlots => '[HA] No available slots (Hausa)';
 
   @override
-  String get makeGamePublic => 'Make Game Public';
+  String get makeGamePublic => '[HA] Make Game Public (Hausa)';
 
   @override
   String permissionPermissioncategoryUpdatedToNewvalue(Object category) {
-    return 'Permission $category updated to \$newValue';
+    return '[HA] Permission $category updated to \$newValue (Hausa)';
   }
 
   @override
-  String get roomDeletedSuccessfully => 'Room deleted successfully!';
+  String get roomDeletedSuccessfully =>
+      '[HA] Room deleted successfully! (Hausa)';
 
   @override
-  String get businessCalendar => 'Business Calendar';
+  String get businessCalendar => '[HA] Business Calendar (Hausa)';
 
   @override
-  String get addAvailability => 'Add Availability';
+  String get addAvailability => '[HA] Add Availability (Hausa)';
 
   @override
-  String get ambassadorOnboarding => 'Ambassador Onboarding';
+  String get ambassadorOnboarding => '[HA] Ambassador Onboarding (Hausa)';
 
   @override
   String phoneProfileasyncphone(Object phone) {
-    return 'Phone: $phone';
+    return '[HA] Phone: $phone (Hausa)';
   }
 
   @override
-  String get addNewRoom => 'Add New Room';
+  String get addNewRoom => '[HA] Add New Room (Hausa)';
 
   @override
-  String get requireParentApproval => 'Require Parent Approval';
+  String get requireParentApproval => '[HA] Require Parent Approval (Hausa)';
 
   @override
-  String get closed => 'Closed';
+  String get closed => '[HA] Closed (Hausa)';
 
   @override
-  String get exportAsPdf => 'Export as PDF';
+  String get exportAsPdf => '[HA] Export as PDF (Hausa)';
 
   @override
-  String get enableVibration => 'Enable Vibration';
+  String get enableVibration => '[HA] Enable Vibration (Hausa)';
 
   @override
   String toAvailendformatcontext(Object endTime) {
-    return 'To: $endTime';
+    return '[HA] To: $endTime (Hausa)';
   }
 
   @override
-  String get yourUpgradeCodeUpgradecode => 'Your upgrade code: \$upgradeCode';
+  String yourUpgradeCodeUpgradecode(Object upgradeCode) {
+    return '[HA] Your upgrade code: \$upgradeCode (Hausa)';
+  }
 
   @override
-  String get requestPrivateSession => 'requestPrivateSession (TRANSLATE)';
+  String get requestPrivateSession => '[HA] Buƙaci zaman sirri';
 
   @override
-  String get country => 'Country';
+  String get country => '[HA] Country (Hausa)';
 
   @override
-  String get loginScreen => 'Login Screen';
+  String get loginScreen => '[HA] Login Screen';
 
   @override
   String staffArgsstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[HA] Staff: $staffName (Hausa)';
   }
 
   @override
-  String get revokeConsent => 'Revoke Consent';
+  String get revokeConsent => '[HA] Cire yarda';
 
   @override
-  String get settings1 => 'Settings';
+  String get settings1 => '[HA] Settings (Hausa)';
 
   @override
-  String get cancel1 => 'Cancel';
+  String get cancel1 => '[HA] Cancel (Hausa)';
 
   @override
   String get subscriptionActivatedSuccessfully =>
-      'Subscription activated successfully!';
+      '[HA] Subscription activated successfully! (Hausa)';
 
   @override
   String activityLogaction(Object action) {
-    return 'Activity: $action';
+    return '[HA] Activity: $action';
   }
 
   @override
-  String get broadcast => 'Broadcast';
+  String get broadcast => '[HA] Broadcast (Hausa)';
 
   @override
-  String get noEventsScheduledThisWeek => 'No events scheduled this week';
+  String get noEventsScheduledThisWeek =>
+      '[HA] No events scheduled this week (Hausa)';
 
   @override
-  String get googleCalendar => 'Google Calendar';
+  String get googleCalendar => '[HA] Google Calendar (Hausa)';
 
   @override
-  String get sendInvite => 'Send Invite';
+  String get sendInvite => 'إرسال دعوة';
 
   @override
-  String get childDashboard => 'Child Dashboard';
+  String get childDashboard => '[HA] Child Dashboard (Hausa)';
 
   @override
-  String get failedToUploadBackgroundE => 'Failed to upload background: \$e';
+  String get failedToUploadBackgroundE =>
+      '[HA] Failed to upload background: \$e (Hausa)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
-    return '$linkId...';
+    return '[HA] $linkId...';
   }
 
   @override
   String targetLogtargettypeLogtargetid(Object targetId, Object targetType) {
-    return 'Target: $targetType - $targetId';
+    return '[HA] Target: $targetType - $targetId';
   }
 
   @override
-  String get contextContextid => 'Context: \$contextId';
+  String get contextContextid => '[HA] Context: \$contextId';
 
   @override
-  String get noAppointments => 'No appointments';
+  String get noAppointments => '[HA] No appointments (Hausa)';
 
   @override
-  String get unlimitedBookingsPerWeek => '• Unlimited bookings per week';
+  String get unlimitedBookingsPerWeek =>
+      '[HA] • Unlimited bookings per week (Hausa)';
 
   @override
-  String errorDetailsLogerrortype(Object errorType) {
-    return 'Error Details: $errorType';
+  String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
+    return 'تفاصيل الخطأ: $logErrorType';
   }
 
   @override
-  String get scheduledAtScheduledat => 'Scheduled at: \$scheduledAt';
+  String get scheduledAtScheduledat =>
+      '[HA] Scheduled at: \$scheduledAt (Hausa)';
 
   @override
-  String get selectStaff => 'Select Staff';
+  String get selectStaff => '[HA] Zaɓi ma\'aikata';
 
   @override
   String get subscriptionCancelledSuccessfully =>
-      'Subscription cancelled successfully';
+      '[HA] Subscription cancelled successfully (Hausa)';
 
   @override
   String get pleaseLogInToViewYourProfile =>
-      'Please log in to view your profile.';
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment => 'Cancel Appointment';
+  String get cancelAppointment => '[HA] Cancel Appointment (Hausa)';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
-    return 'Permissions - $childId';
+    return '[HA] Permissions - $childId';
   }
 
   @override
-  String get businessSignup => 'Business Signup';
+  String get businessSignup => '[HA] Business Signup (Hausa)';
 
   @override
   String get businessCompletionScreenComingSoon =>
-      'Business Completion Screen - Coming Soon';
+      '[HA] Business Completion Screen - Coming Soon (Hausa)';
 
   @override
-  String get createGame1 => 'Create Game';
+  String get createGame1 => '[HA] Create Game (Hausa)';
 
   @override
   String valuetoint(Object value) {
-    return '$value';
+    return '[HA] $value (Hausa)';
   }
 
   @override
-  String get pleaseEnterAPromoCode => 'Please enter a promo code';
+  String get pleaseEnterAPromoCode => '[HA] Please enter a promo code (Hausa)';
 
   @override
-  String get errorLoadingAvailabilityE => 'Error loading availability: \$e';
+  String get errorLoadingAvailabilityE =>
+      '[HA] Error loading availability: \$e (Hausa)';
 
   @override
-  String get parentalControls => 'Parental Controls';
+  String get parentalControls => '[HA] Parental Controls (Hausa)';
 
   @override
-  String get editBusinessProfile => 'Edit Business Profile';
+  String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => 'Child linked successfully!';
+  String get childLinkedSuccessfully => '[HA] An haɗa yaro cikin nasara!';
 
   @override
-  String get create => 'Create';
+  String get create => '[HA] Create (Hausa)';
 
   @override
-  String get noExternalMeetingsFound => 'No external meetings found.';
+  String get noExternalMeetingsFound =>
+      '[HA] No external meetings found. (Hausa)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[HA] Staff: $staffName (Hausa)';
   }
 
   @override
   String get pleaseEnterAValidEmailAddress =>
-      'Please enter a valid email address';
+      '[HA] Please enter a valid email address';
 
   @override
-  String get schedulerScreen => 'Scheduler Screen';
+  String get schedulerScreen => '[HA] Scheduler Screen (Hausa)';
 
   @override
-  String get clientUpdatedSuccessfully => 'Client updated successfully!';
+  String get clientUpdatedSuccessfully =>
+      '[HA] Client updated successfully! (Hausa)';
 
   @override
-  String get surveyResponses => 'Survey Responses';
+  String get surveyResponses => '[HA] Survey Responses (Hausa)';
 
   @override
-  String get syncToOutlook => 'Sync to Outlook';
+  String get syncToOutlook => '[HA] Sync to Outlook (Hausa)';
 
   @override
-  String get saveChanges => 'Save Changes';
+  String get saveChanges => '[HA] Save Changes (Hausa)';
 
   @override
-  String get pickTime => 'Pick Time';
+  String get pickTime => '[HA] Pick Time (Hausa)';
 
   @override
   String registrationFailedEtostring(Object error) {
-    return 'Registration failed: $error';
+    return '[HA] Registration failed: $error (Hausa)';
   }
 
   @override
-  String get analytics => 'Analytics';
+  String get analytics => '[HA] Analytics (Hausa)';
 
   @override
-  String get errorLoadingEvents => 'Error loading events';
+  String get errorLoadingEvents => '[HA] Error loading events (Hausa)';
 
   @override
-  String get errorLoadingOrganizations =>
-      'errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[HA] Kuskure wajen ɗora ƙungiyoyi';
 
   @override
   String get businessLoginScreenComingSoon =>
-      'Business Login Screen - Coming Soon';
+      '[HA] Business Login Screen - Coming Soon';
 
   @override
-  String get success1 => 'Success';
+  String get success1 => '[HA] Success (Hausa)';
 
   @override
   String appVersionLogappversion(Object appVersion) {
-    return 'App Version: $appVersion';
+    return '[HA] App Version: $appVersion';
   }
 
   @override
   String fromAvailstartformatcontext(Object startTime) {
-    return 'From: $startTime';
+    return '[HA] From: $startTime (Hausa)';
   }
 
   @override
-  String get readWrite => 'Read & Write';
+  String get readWrite => '[HA] Karatu & rubutu';
 
   @override
   String get redirectingToStripeCheckoutForBasicPlan =>
-      'Redirecting to Stripe checkout for Basic plan...';
+      '[HA] Redirecting to Stripe checkout for Basic plan... (Hausa)';
 
   @override
-  String get errorSavingConfigurationE => 'Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[HA] Error saving configuration: \$e';
 
   @override
-  String get pickDate => 'Pick Date';
+  String get pickDate => '[HA] Zaɓi Kwanan wata';
 
   @override
-  String get chatBooking => 'Chat Booking';
+  String get chatBooking => '[HA] Tanadi ta hira';
 
   @override
-  String get noQuestionsAdded => 'No questions added';
+  String get noQuestionsAdded => '[HA] No questions added (Hausa)';
 
   @override
   String severityLogseverityname(Object severity) {
-    return 'Severity: $severity';
+    return '[HA] Severity: $severity';
   }
 
   @override
-  String get markAsPaid => 'Mark as Paid';
+  String get markAsPaid => '[HA] Mark as Paid';
 
   @override
-  String get typeOpenCall => 'Type: Open Call';
+  String get typeOpenCall => '[HA] Type: Open Call (Hausa)';
 
   @override
   String appointmentAppointmentid(Object appointmentId) {
-    return 'Appointment $appointmentId';
+    return '[HA] Appointment $appointmentId';
   }
 
   @override
-  String statusInvitestatusname(Object status) {
-    return 'Status: $status';
+  String statusInvitestatusname(Object inviteStatusName, Object status) {
+    return 'الحالة: $inviteStatusName';
   }
 
   @override
-  String get businessLogin => 'Business Login';
+  String get businessLogin => '[HA] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => 'Invoice created successfully!';
+  String get invoiceCreatedSuccessfully =>
+      '[HA] Invoice created successfully! (Hausa)';
 
   @override
-  String get noTimeSeriesDataAvailable => 'No time series data available';
+  String get noTimeSeriesDataAvailable =>
+      '[HA] No time series data available (Hausa)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
-    return 'Subscribe to $planName';
+    return '[HA] Subscribe to $planName';
   }
 
   @override
   String timestamp_formatdatelogtimestamp(Object timestamp) {
-    return 'Timestamp: $timestamp';
+    return '[HA] Timestamp: $timestamp';
   }
 
   @override
   String get failedToSendPrivacyRequestE =>
-      'Failed to send privacy request: \$e';
+      '[HA] Failed to send privacy request: \$e (Hausa)';
 
   @override
-  String get chooseYourPlan => 'Choose Your Plan';
+  String get chooseYourPlan => '[HA] Choose Your Plan (Hausa)';
 
   @override
-  String get playtimeManagement => 'Playtime Management';
+  String get playtimeManagement => '[HA] Playtime Management (Hausa)';
 
   @override
-  String get availability => 'Availability';
+  String get availability => '[HA] Availability (Hausa)';
 
   @override
-  String get eventCreated => 'Event created';
+  String get eventCreated => '[HA] Event created (Hausa)';
 
   @override
-  String get subscribeToBasic499mo => 'Subscribe to Basic (€4.99/mo)';
+  String get subscribeToBasic499mo =>
+      '[HA] Subscribe to Basic (€4.99/mo) (Hausa)';
 
   @override
-  String get completion => 'Completion';
+  String get completion => '[HA] Completion (Hausa)';
 
   @override
-  String get supportTicketSubmitted => 'Support ticket submitted';
+  String get supportTicketSubmitted => '[HA] Support ticket submitted (Hausa)';
 
   @override
-  String get monetizationSettings => 'Monetization Settings';
+  String get monetizationSettings => '[HA] Monetization Settings (Hausa)';
 
   @override
-  String get noBookingsFound => 'No bookings found';
+  String get noBookingsFound => '[HA] Ba a sami tanadi ba';
 
   @override
-  String get admin => 'Admin';
+  String get admin => '[HA] Admin';
 
   @override
-  String get deleteSurvey => 'Delete Survey';
+  String get deleteSurvey => '[HA] Delete Survey (Hausa)';
 
   @override
-  String get gameApprovedSuccessfully => 'Game approved successfully!';
+  String get gameApprovedSuccessfully =>
+      '[HA] Game approved successfully! (Hausa)';
 
   @override
   String get errorLoadingPermissionsError =>
-      'Error loading permissions: \$error';
+      '[HA] Error loading permissions: \$error (Hausa)';
 
   @override
-  String get referrals => 'Referrals';
+  String get referrals => '[HA] Referrals (Hausa)';
 
   @override
-  String get crm => 'CRM';
+  String get crm => '[HA] CRM (Hausa)';
 
   @override
-  String get gameRejected => 'Game rejected';
+  String get gameRejected => '[HA] Game rejected (Hausa)';
 
   @override
-  String get appointments => 'Appointments';
+  String get appointments => '[HA] Appointments (Hausa)';
 
   @override
-  String get onboardingScreen => 'Onboarding Screen';
+  String get onboardingScreen => '[HA] Onboarding Screen (Hausa)';
 
   @override
-  String get welcomeToYourStudio => 'Welcome to your studio';
+  String get welcomeToYourStudio => '[HA] Welcome to your studio (Hausa)';
 
   @override
-  String get update => 'Update';
+  String get update => '[HA] Update (Hausa)';
 
   @override
-  String get retry1 => 'Retry';
+  String get retry1 => '[HA] Retry (Hausa)';
 
   @override
-  String get booking => 'Booking';
+  String get booking => '[HA] Booking (Hausa)';
 
   @override
-  String get parentalSettings => 'Parental Settings';
+  String get parentalSettings => '[HA] Parental Settings (Hausa)';
 
   @override
-  String get language => 'Language';
+  String get language => '[HA] Language (Hausa)';
 
   @override
-  String get deleteSlot => 'Delete Slot';
+  String get deleteSlot => '[HA] Delete Slot (Hausa)';
 
   @override
-  String get organizations => 'organizations (TRANSLATE)';
+  String get organizations => '[HA] Ƙungiyoyi';
 
   @override
   String get configurationSavedSuccessfully =>
-      'Configuration saved successfully!';
+      '[HA] Configuration saved successfully!';
 
   @override
-  String get createNewGame => 'Create New Game';
+  String get createNewGame => '[HA] Create New Game (Hausa)';
 
   @override
-  String get next1 => 'Next';
+  String get next1 => '[HA] Next (Hausa)';
 
   @override
   String get backgroundUploadedSuccessfully =>
-      'Background uploaded successfully!';
+      '[HA] Background uploaded successfully! (Hausa)';
 
   @override
-  String get noAppointmentRequestsFound => 'No appointment requests found.';
+  String get noAppointmentRequestsFound =>
+      '[HA] No appointment requests found. (Hausa)';
 
   @override
-  String get pleaseSignInToCreateASession =>
-      'Please sign in to create a session';
+  String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => 'Restrict mature content';
+  String get restrictMatureContent => '[HA] Restrict mature content (Hausa)';
 
   @override
-  String get ambassadors => 'Ambassadors';
+  String get ambassadors => '[HA] Ambassadors (Hausa)';
 
   @override
-  String get smsNotifications => 'SMS Notifications';
+  String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled => 'Payment was cancelled';
+  String get paymentWasCancelled => '[HA] Payment was cancelled (Hausa)';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => '[HA] Clear All (Hausa)';
 
   @override
-  String get viewDetails => 'View Details';
+  String get viewDetails => '[HA] View Details (Hausa)';
 
   @override
-  String get notifications1 => 'Notifications';
+  String get notifications1 => 'الإشعارات';
 
   @override
   String get liveSessionScheduledWaitingForParentApproval =>
-      'Live session scheduled! Waiting for parent approval...';
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => 'Failed to create game: \$e';
+  String get failedToCreateGameE => '[HA] Failed to create game: \$e (Hausa)';
 
   @override
-  String get noChartDataAvailable => 'No chart data available';
+  String get noChartDataAvailable => '[HA] No chart data available (Hausa)';
 
   @override
-  String get phonebasedBookingSystem => '• Phone-based booking system';
+  String get phonebasedBookingSystem =>
+      '[HA] • Phone-based booking system (Hausa)';
 
   @override
-  String get enableNotifications1 => 'Enable Notifications';
+  String get enableNotifications1 => 'تفعيل الإشعارات';
 
   @override
-  String get invoices => 'Invoices';
+  String get invoices => '[HA] Invoices (Hausa)';
 
   @override
   String get pleaseActivateYourBusinessProfileToContinue =>
-      'Please activate your business profile to continue.';
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
-    return 'Scheduled at: $scheduledAt';
+    return '[HA] Scheduled at: $scheduledAt (Hausa)';
   }
 
   @override
   String durationDurationinminutes0Minutes(Object duration) {
-    return 'Duration: $duration minutes';
+    return '[HA] Duration: $duration minutes (Hausa)';
   }
 
   @override
-  String get tryAgain => 'Try Again';
+  String get tryAgain => '[HA] Try Again (Hausa)';
 
   @override
-  String get deleteBackground => 'Delete Background';
+  String get deleteBackground => '[HA] Delete Background (Hausa)';
 
   @override
   String currentTierTiertouppercase(Object tier) {
-    return 'Current Tier: $tier';
+    return '[HA] Current Tier: $tier (Hausa)';
   }
 
   @override
-  String get iDoNotConsent => 'I Do Not Consent';
+  String get iDoNotConsent => '[HA] I Do Not Consent';
 
   @override
   String get noClientsFoundAddYourFirstClient =>
-      'No clients found. Add your first client!';
+      '[HA] No clients found. Add your first client! (Hausa)';
 
   @override
   String get settingsDialogWillBeImplementedHere =>
-      'Settings dialog will be implemented here.';
+      '[HA] Settings dialog will be implemented here.';
 
   @override
-  String get groupGroupid => 'Group: \$groupId';
+  String get groupGroupid => '[HA] Group: \$groupId';
 
   @override
-  String get appointmentRequests => 'Appointment Requests';
+  String get appointmentRequests => '[HA] Appointment Requests (Hausa)';
 
   @override
-  String get forward => 'Forward';
+  String get forward => '[HA] Forward (Hausa)';
 
   @override
-  String get roomAddedSuccessfully => 'Room added successfully!';
+  String get roomAddedSuccessfully => '[HA] Room added successfully! (Hausa)';
 
   @override
-  String get option => '• \$option';
+  String get option => '[HA] • \$option (Hausa)';
 
   @override
   String responseIndex1(Object number) {
-    return 'Response #$number';
+    return '[HA] Response #$number (Hausa)';
   }
 
   @override
-  String get crmDashboardWithAnalytics => '• CRM dashboard with analytics';
+  String get crmDashboardWithAnalytics =>
+      '[HA] • CRM dashboard with analytics (Hausa)';
 
   @override
-  String get contentLibrary1 => 'Content Library';
+  String get contentLibrary1 => '[HA] Content Library (Hausa)';
 
   @override
-  String get reply => 'Reply';
+  String get reply => '[HA] Reply (Hausa)';
 
   @override
-  String get subscriptionManagement => 'Subscription Management';
+  String get subscriptionManagement => '[HA] Subscription Management (Hausa)';
 
   @override
   String get monetizationSettingsWillBeImplementedHere =>
-      'Monetization settings will be implemented here';
+      '[HA] Monetization settings will be implemented here (Hausa)';
 
   @override
-  String get failedToApplyPromoCodeE => 'Failed to apply promo code: \$e';
+  String get failedToApplyPromoCodeE =>
+      '[HA] Failed to apply promo code: \$e (Hausa)';
 
   @override
-  String get editProvider => 'Edit Provider';
+  String get editProvider => '[HA] Edit Provider';
 
   @override
-  String get localizationContribution => 'Localization Contribution';
+  String get localizationContribution =>
+      '[HA] Localization Contribution (Hausa)';
 
   @override
-  String get parentalConsent => 'Parental Consent';
+  String get parentalConsent => '[HA] Parental Consent (Hausa)';
 
   @override
   String get businessSignupScreenComingSoon =>
-      'Business Signup Screen - Coming Soon';
+      '[HA] Business Signup Screen - Coming Soon (Hausa)';
 
   @override
   String get areYouSureYouWantToDeleteThisAppointment =>
-      'Are you sure you want to delete this appointment?';
+      '[HA] Are you sure you want to delete this appointment? (Hausa)';
 
   @override
-  String get syncAppointment => 'Sync Appointment';
+  String get syncAppointment => '[HA] Sync Appointment (Hausa)';
 
   @override
-  String get iConsent => 'I Consent';
+  String get iConsent => '[HA] I Consent (Hausa)';
 
   @override
-  String get sessionRejected => 'Session rejected';
+  String get sessionRejected => 'تم رفض الجلسة';
 
   @override
   String get businessSetupScreenComingSoon =>
-      'Business Setup Screen - Coming Soon';
+      '[HA] Business Setup Screen - Coming Soon (Hausa)';
 
   @override
-  String get edit1 => 'Edit';
+  String get edit1 => '[HA] Edit (Hausa)';
 
   @override
-  String get noEventsScheduledThisMonth => 'No events scheduled this month';
+  String get noEventsScheduledThisMonth =>
+      '[HA] No events scheduled this month (Hausa)';
 
   @override
-  String get businessDashboard => 'Business Dashboard';
+  String get businessDashboard => '[HA] Dashboard na kasuwanci';
 
   @override
-  String get noMessagesFound => 'No messages found.';
+  String get noMessagesFound => '[HA] No messages found. (Hausa)';
 
   @override
   String staffStaffidNotSelected(Object staff) {
-    return 'Staff: $staff';
+    return '[HA] Staff: $staff';
   }
 
   @override
-  String get manageStaffAvailability => 'Manage Staff Availability';
+  String get manageStaffAvailability =>
+      '[HA] Manage Staff Availability (Hausa)';
 
   @override
-  String get noMissingTranslations => 'No missing translations';
+  String get noMissingTranslations => '[HA] No missing translations (Hausa)';
 
   @override
-  String get skip => 'Skip';
+  String get skip => '[HA] Skip (Hausa)';
 
   @override
-  String get meetingIdMeetingid => 'Meeting ID: \$meetingId';
+  String meetingIdMeetingid(Object meetingId) {
+    return 'معرف الاجتماع: $meetingId';
+  }
 
   @override
-  String get noUsers => 'noUsers (TRANSLATE)';
+  String get noUsers => '[HA] Babu masu amfani';
 
   @override
-  String get errorLoadingReferralCode => 'Error loading referral code';
+  String get errorLoadingReferralCode =>
+      '[HA] Error loading referral code (Hausa)';
 
   @override
-  String get allCountries => 'All Countries';
+  String get allCountries => '[HA] All Countries (Hausa)';
 
   @override
-  String get deleteGame => 'Delete Game';
+  String get deleteGame => '[HA] Delete Game (Hausa)';
 
   @override
-  String get staffManagementTools => '• Staff management tools';
+  String get staffManagementTools => '[HA] • Staff management tools (Hausa)';
 
   @override
-  String get deleteMessage => 'Delete Message';
+  String get deleteMessage => '[HA] Delete Message (Hausa)';
 
   @override
   String get receiveBookingNotificationsViaSms =>
-      'Receive booking notifications via SMS';
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
-  String get changeRole => 'changeRole (TRANSLATE)';
+  String get changeRole => '[HA] Canza matsayi';
 
   @override
   String errorLoadingBookingsSnapshoterror(Object error) {
-    return 'Error loading bookings: $error';
+    return 'خطأ في تحميل لقطة الحجوزات: $error';
   }
 
   @override
-  String get openingCustomerPortal => 'Opening customer portal...';
+  String get openingCustomerPortal => '[HA] Opening customer portal... (Hausa)';
 
   @override
-  String get signOut => 'Sign Out';
+  String get signOut => '[HA] Fice';
 
   @override
   String nameProfilename(Object name) {
-    return 'Name: $name';
+    return '[HA] Name: $name (Hausa)';
   }
 
   @override
   String get businessProfileEntryScreenComingSoon =>
-      'Business Profile Entry Screen - Coming Soon';
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness => 'Upgrade to Business';
+  String get upgradeToBusiness => '[HA] Upgrade to Business (Hausa)';
 
   @override
-  String get apply => 'Apply';
+  String get apply => 'تطبيق';
 
   @override
-  String get errorLoadingSubscriptionError =>
-      'Error loading subscription: \$error';
+  String errorLoadingSubscriptionError(Object error) {
+    return 'خطأ في تحميل الاشتراك: $error';
+  }
 
   @override
-  String get errorLoadingUsers => 'errorLoadingUsers (TRANSLATE)';
+  String get errorLoadingUsers => 'خطأ في تحميل المستخدمين';
 
   @override
-  String get verify => 'Verify';
+  String get verify => 'التحقق';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'الاشتراك';
 
   @override
-  String get deleteMyAccount => 'Delete My Account';
+  String get deleteMyAccount => 'حذف حسابي';
 
   @override
   String get businessAppointmentsEntryScreenComingSoon =>
-      'Business Appointments Entry Screen - Coming Soon';
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
-  String get viewResponses => 'View Responses';
+  String get viewResponses => '[HA] View Responses (Hausa)';
 
   @override
-  String get businessWelcomeScreenComingSoon =>
-      'Business Welcome Screen - Coming Soon';
+  String get businessWelcomeScreenComingSoon => 'شاشة ترحيب الأعمال - قريباً';
 
   @override
-  String get failedToOpenCustomerPortalE =>
-      'Failed to open customer portal: \$e';
+  String failedToOpenCustomerPortalE(Object e) {
+    return 'فشل في فتح بوابة العميل: $e';
+  }
 
   @override
-  String get continueText => 'Continue';
+  String get continueText => 'متابعة';
 
   @override
-  String get close1 => 'Close';
+  String get close1 => 'إغلاق';
 
   @override
-  String get confirm1 => 'Confirm';
+  String get confirm1 => 'تأكيد';
 
   @override
-  String get externalMeetings => 'External Meetings';
+  String get externalMeetings => 'الاجتماعات الخارجية';
 
   @override
-  String get approve => 'Approve';
+  String get approve => 'موافقة';
 
   @override
   String get noInvoicesFoundCreateYourFirstInvoice =>
-      'No invoices found. Create your first invoice!';
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'اشتراك';
 
   @override
-  String get login1 => 'Login';
+  String get login1 => 'تسجيل الدخول';
 
   @override
-  String get adminOverviewGoesHere => 'Admin overview goes here';
+  String get adminOverviewGoesHere => 'نظرة عامة على المسؤول هنا';
 
   @override
-  String get loadingCheckout => 'Loading checkout...';
+  String get loadingCheckout => 'جار تحميل الدفع...';
 }

@@ -859,7 +859,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get send => 'Send';
 
   @override
-  String newNotificationPayloadtitle(Object payloadTitle) {
+  String newNotificationPayloadtitle(Object payloadTitle, Object title) {
     return 'New notification: $payloadTitle';
   }
 
@@ -876,7 +876,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get adminFreeAccess => 'Admin Free Access';
 
   @override
-  String emailProfileemail(Object profileEmail) {
+  String emailProfileemail(Object email, Object profileEmail) {
     return 'Email: $profileEmail';
   }
 
@@ -909,7 +909,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get time => 'Time';
 
   @override
-  String userCid(Object id) {
+  String userCid(Object cid, Object id) {
     return 'User $id';
   }
 
@@ -958,7 +958,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get checkingSubscription => 'Checking subscription...';
 
   @override
-  String get errorPickingImageE => 'Error picking image: \$e';
+  String errorPickingImageE(Object e) {
+    return 'Error picking image: \$e';
+  }
 
   @override
   String get noContentAvailableYet => 'No content available yet';
@@ -999,7 +1001,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileNotFound => 'Profile not found.';
 
   @override
-  String get errorConfirmingPaymentE => 'Error confirming payment: \$e';
+  String errorConfirmingPaymentE(Object e) {
+    return 'Error confirming payment: \$e';
+  }
 
   @override
   String get inviteFriends => 'Invite Friends';
@@ -1012,7 +1016,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Receive booking notifications via email';
 
   @override
-  String valuetointk(Object value) {
+  String valuetointk(Object k, Object value) {
     return '\\\$${value}K';
   }
 
@@ -1112,7 +1116,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get surveyScore => 'Survey Score';
 
   @override
-  String get userUserid => 'User \$userId';
+  String userUserid(Object userId) {
+    return 'User \$userId';
+  }
 
   @override
   String get noAppointmentsFound => 'No appointments found.';
@@ -1233,7 +1239,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noAnalyticsDataAvailableYet => 'No analytics data available yet.';
 
   @override
-  String get errorDeletingSlotE => 'Error deleting slot: \$e';
+  String errorDeletingSlotE(Object e) {
+    return 'Error deleting slot: \$e';
+  }
 
   @override
   String get businessPhoneBookingEntryScreenComingSoon =>
@@ -1361,7 +1369,9 @@ class AppLocalizationsEn extends AppLocalizations {
       'Automatically confirm new booking requests';
 
   @override
-  String get errorPickingVideoE => 'Error picking video: \$e';
+  String errorPickingVideoE(Object e) {
+    return 'Error picking video: \$e';
+  }
 
   @override
   String noRouteDefinedForSettingsname(Object settingsName) {
@@ -1589,7 +1599,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get messages => 'Messages';
 
   @override
-  String get errorEstimatingRecipientsE => 'Error estimating recipients: \$e';
+  String errorEstimatingRecipientsE(Object e) {
+    return 'Error estimating recipients: \$e';
+  }
 
   @override
   String get becomeAnAmbassador => 'Become an Ambassador';
@@ -1628,7 +1640,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get errorLoadingStaff => 'Error loading staff';
 
   @override
-  String get errorLoadingConfigurationE => 'Error loading configuration: \$e';
+  String errorLoadingConfigurationE(Object e) {
+    return 'Error loading configuration: \$e';
+  }
 
   @override
   String get updateYourBusinessInformation =>
@@ -1772,7 +1786,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get yourUpgradeCodeUpgradecode => 'Your upgrade code: \$upgradeCode';
+  String yourUpgradeCodeUpgradecode(Object upgradeCode) {
+    return 'Your upgrade code: \$upgradeCode';
+  }
 
   @override
   String get requestPrivateSession => 'Request Private Session';
@@ -1844,7 +1860,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get unlimitedBookingsPerWeek => '• Unlimited bookings per week';
 
   @override
-  String errorDetailsLogerrortype(Object errorType) {
+  String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
     return 'Error Details: $errorType';
   }
 
@@ -2000,7 +2016,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String statusInvitestatusname(Object status) {
+  String statusInvitestatusname(Object inviteStatusName, Object status) {
     return 'Status: $status';
   }
 
@@ -2299,7 +2315,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get skip => 'Skip';
 
   @override
-  String get meetingIdMeetingid => 'Meeting ID: \$meetingId';
+  String meetingIdMeetingid(Object meetingId) {
+    return 'Meeting ID: \$meetingId';
+  }
 
   @override
   String get noUsers => 'No users';
@@ -2353,8 +2371,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get apply => 'Apply';
 
   @override
-  String get errorLoadingSubscriptionError =>
-      'Error loading subscription: \$error';
+  String errorLoadingSubscriptionError(Object error) {
+    return 'Error loading subscription: \$error';
+  }
 
   @override
   String get errorLoadingUsers => 'Error loading users';
@@ -2380,8 +2399,9 @@ class AppLocalizationsEn extends AppLocalizations {
       'Business Welcome Screen - Coming Soon';
 
   @override
-  String get failedToOpenCustomerPortalE =>
-      'Failed to open customer portal: \$e';
+  String failedToOpenCustomerPortalE(Object e) {
+    return 'Failed to open customer portal: \$e';
+  }
 
   @override
   String get continueText => 'Continue';
