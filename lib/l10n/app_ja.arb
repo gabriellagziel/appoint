@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "承認",
   "accessRevokedSuccessfully": "アクセスが正常に取り消されました",
   "add": "追加",
-  "adminBroadcast": "管理者ブロードキャスト",
-  "adminScreenTBD": "[JA] Admin screen coming soon",
   "appTitle": "アプリのタイトル",
   "back": "[JA] Back",
   "cancel": "キャンセル",
@@ -593,7 +582,6 @@
   "pendingInvites": "[JA] Pending Invites",
   "pickImage": "画像を選択",
   "pickVideo": "ビデオを選択",
-  "playtimeAdminPanelTitle": "Playtime管理パネルタイトル",
   "playtimeApprove": "Playtimeを承認",
   "playtimeChooseFriends": "友達を選択",
   "playtimeChooseGame": "[JA] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

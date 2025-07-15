@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "[EU] Accept",
   "accessRevokedSuccessfully": "[EU] Access revoked successfully",
   "add": "Gehitu",
-  "adminBroadcast": "[EU] Admin Broadcast",
-  "adminScreenTBD": "[EU] Admin screen coming soon",
   "appTitle": "Aplikazioaren izenburua",
   "back": "[EU] Back",
   "cancel": "[EU] Cancel",
@@ -593,7 +582,6 @@
   "pendingInvites": "[EU] Pending Invites",
   "pickImage": "[EU] Pick Image",
   "pickVideo": "[EU] Pick Video",
-  "playtimeAdminPanelTitle": "[EU] Playtime Games – Admin",
   "playtimeApprove": "[EU] Approve",
   "playtimeChooseFriends": "[EU] Choose friends to invite",
   "playtimeChooseGame": "[EU] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

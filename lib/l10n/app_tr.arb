@@ -11,12 +11,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -293,9 +287,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -498,8 +489,6 @@
   "accept": "Kabul Et",
   "accessRevokedSuccessfully": "Erişim başarıyla iptal edildi",
   "add": "Ekle",
-  "adminBroadcast": "Yönetici yayın",
-  "adminScreenTBD": "[TR] Admin screen coming soon",
   "appTitle": "Uygulama Başlığı",
   "back": "[TR] Back",
   "cancel": "İptal",
@@ -592,7 +581,6 @@
   "pendingInvites": "[TR] Pending Invites",
   "pickImage": "Resim seç",
   "pickVideo": "Video seç",
-  "playtimeAdminPanelTitle": "Playtime yönetici paneli başlığı",
   "playtimeApprove": "[TR] Approve",
   "playtimeChooseFriends": "[TR] Choose friends to invite",
   "playtimeChooseGame": "[TR] Choose a game",
@@ -767,10 +755,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {
