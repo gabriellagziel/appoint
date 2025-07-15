@@ -181,7 +181,7 @@ class AdminService {
 
     final snap = await query.get();
     return snap.docs.map((doc) {
-      final data = doc.data()! as Map<String, dynamic>;
+      final data = doc.data()!;
       return AdminErrorLog.fromJson(data);
     }).toList();
   }
@@ -225,7 +225,7 @@ class AdminService {
 
     final snap = await query.get();
     return snap.docs.map((doc) {
-      final data = doc.data()! as Map<String, dynamic>;
+      final data = doc.data()!;
       return AdminActivityLog.fromJson(data);
     }).toList();
   }
