@@ -1,761 +1,668 @@
 {
   "@@locale": "cy",
-  "@about": {
-    "description": "About navigation label"
-  },
-  "@accept": {
-    "description": "Description"
-  },
-  "@accessRevokedSuccessfully": {
-    "description": "Description"
-  },
-  "@add": {
-    "description": "Description"
-  },
-  "@appTitle": {
-    "description": "Description"
-  },
-  "@back": {
-    "description": "Description"
-  },
-  "@cancel": {
-    "description": "cancel description"
-  },
-  "@cancelInvite": {
-    "description": "Description"
-  },
-  "@cancelInviteConfirmation": {
-    "description": "Description"
-  },
-  "@checkingPermissions": {
-    "description": "checkingPermissions description"
-  },
-  "@choose": {
-    "description": "Description"
-  },
-  "@clicked": {
-    "description": "clicked description"
-  },
-  "@clientScreenTBD": {
-    "description": "Description"
-  },
-  "@close": {
-    "description": "close description"
-  },
-  "@composeBroadcastMessage": {
-    "description": "composeBroadcastMessage description"
-  },
-  "@confirm": {
-    "description": "Description"
-  },
-  "@confirmPassword": {
-    "description": "Description"
-  },
-  "@connectedChildren": {
-    "description": "Description"
-  },
-  "@content": {
-    "description": "content description"
-  },
-  "@copy": {
-    "description": "Description"
-  },
-  "@createGame": {
-    "description": "Description"
-  },
-  "@createLiveSession": {
-    "description": "Description"
-  },
-  "@createNew": {
-    "description": "Description"
-  },
-  "@createVirtualSession": {
-    "description": "Description"
-  },
-  "@createYourFirstGame": {
-    "description": "Description"
-  },
-  "@createYourFirstSession": {
-    "description": "Description"
-  },
-  "@created": {
-    "description": "created description"
-  },
-  "@customizeMessage": {
-    "description": "Description"
-  },
-  "@cut": {
-    "description": "Description"
-  },
-  "@dashboard": {
-    "description": "Description"
-  },
-  "@decline": {
-    "description": "Description"
-  },
-  "@defaultShareMessage": {
-    "description": "Description"
-  },
-  "@delete": {
-    "description": "Description"
-  },
-  "@details": {
-    "description": "details description"
-  },
-  "@done": {
-    "description": "Description"
-  },
-  "@download": {
-    "description": "Description"
-  },
-  "@edit": {
-    "description": "Description"
-  },
-  "@email": {
-    "description": "Description"
-  },
-  "@enableNotifications": {
-    "description": "Description"
-  },
-  "@enterGroupName": {
-    "description": "Description"
-  },
-  "@error": {
-    "description": "Description"
-  },
-  "@errorCheckingPermissions": {
-    "description": "errorCheckingPermissions description"
-  },
-  "@errorLoadingFamilyLinks": {
-    "description": "Description"
-  },
-  "@errorLoadingInvites": {
-    "description": "Description"
-  },
-  "@errorLoadingPrivacyRequests": {
-    "description": "errorLoadingPrivacyRequests description"
-  },
-  "@errorLoadingProfile": {
-    "description": "Description"
-  },
-  "@errorSavingMessage": {
-    "description": "errorSavingMessage description"
-  },
-  "@errorSendingMessage": {
-    "description": "errorSendingMessage description"
-  },
-  "@failedToActionPrivacyRequest": {
-    "description": "failedToActionPrivacyRequest description"
-  },
-  "@failedToCancelInvite": {
-    "description": "Description"
-  },
-  "@failedToResendOtp": {
-    "description": "Description"
-  },
-  "@failedToRevokeAccess": {
-    "description": "Description"
-  },
-  "@familyDashboard": {
-    "description": "Description"
-  },
-  "@familyMembers": {
-    "description": "Description"
-  },
-  "@fcmToken": {
-    "description": "Description"
-  },
-  "@forgotPassword": {
-    "description": "Description"
-  },
-  "@groupNameOptional": {
-    "description": "Description"
-  },
-  "@home": {
-    "description": "Description"
-  },
-  "@invite": {
-    "description": "Description"
-  },
-  "@inviteCancelledSuccessfully": {
-    "description": "Description"
-  },
-  "@inviteDetail": {
-    "description": "Description"
-  },
-  "@invited": {
-    "description": "Description"
-  },
-  "@knownGroupDetected": {
-    "description": "Description"
-  },
-  "@link": {
-    "description": "link description"
-  },
-  "@loading": {
-    "description": "Description"
-  },
-  "@login": {
-    "description": "Description"
-  },
-  "@logout": {
-    "description": "Description"
-  },
-  "@managePermissions": {
-    "description": "Description"
-  },
-  "@mediaOptional": {
-    "description": "mediaOptional description"
-  },
-  "@meetingReadyMessage": {
-    "description": "Description"
-  },
-  "@meetingSharedSuccessfully": {
-    "description": "Description"
-  },
-  "@messageSavedSuccessfully": {
-    "description": "messageSavedSuccessfully description"
-  },
-  "@messageSentSuccessfully": {
-    "description": "messageSentSuccessfully description"
-  },
-  "@myInvites": {
-    "description": "Description"
-  },
-  "@myProfile": {
-    "description": "Description"
-  },
-  "@next": {
-    "description": "Description"
-  },
-  "@no": {
-    "description": "Description"
-  },
-  "@noBroadcastMessages": {
-    "description": "noBroadcastMessages description"
-  },
-  "@noFamilyMembersYet": {
-    "description": "Description"
-  },
-  "@noGamesYet": {
-    "description": "Description"
-  },
-  "@noInvites": {
-    "description": "Description"
-  },
-  "@noPermissionForBroadcast": {
-    "description": "noPermissionForBroadcast description"
-  },
-  "@noProfileFound": {
-    "description": "Description"
-  },
-  "@noResults": {
-    "description": "Description"
-  },
-  "@noSessionsYet": {
-    "description": "Description"
-  },
-  "@notificationSettings": {
-    "description": "Description"
-  },
-  "@notifications": {
-    "description": "Description"
-  },
-  "@ok": {
-    "description": "Description"
-  },
-  "@opened": {
-    "description": "opened description"
-  },
-  "@otpResentSuccessfully": {
-    "description": "Description"
-  },
-  "@participants": {
-    "description": "Description"
-  },
-  "@password": {
-    "description": "Description"
-  },
-  "@paste": {
-    "description": "Description"
-  },
-  "@pendingInvites": {
-    "description": "Description"
-  },
-  "@pickImage": {
-    "description": "pickImage description"
-  },
-  "@pickVideo": {
-    "description": "pickVideo description"
-  },
-  "@playtimeApprove": {
-    "description": "Description"
-  },
-  "@playtimeChooseFriends": {
-    "description": "Description"
-  },
-  "@playtimeChooseGame": {
-    "description": "Description"
-  },
-  "@playtimeChooseTime": {
-    "description": "Description"
-  },
-  "@playtimeCreate": {
-    "description": "Description"
-  },
-  "@playtimeCreateSession": {
-    "description": "Description"
-  },
-  "@playtimeDescription": {
-    "description": "Description"
-  },
-  "@playtimeEnterGameName": {
-    "description": "Description"
-  },
-  "@playtimeGameApproved": {
-    "description": "Description"
-  },
-  "@playtimeGameDeleted": {
-    "description": "Description"
-  },
-  "@playtimeGameRejected": {
-    "description": "Description"
-  },
-  "@playtimeHub": {
-    "description": "Description"
-  },
-  "@playtimeLandingChooseMode": {
-    "description": "Description"
-  },
-  "@playtimeLive": {
-    "description": "Description"
-  },
-  "@playtimeLiveScheduled": {
-    "description": "Description"
-  },
-  "@playtimeModeLive": {
-    "description": "Description"
-  },
-  "@playtimeModeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeNoSessions": {
-    "description": "Description"
-  },
-  "@playtimeParentDashboardTitle": {
-    "description": "Description"
-  },
-  "@playtimeReject": {
-    "description": "Description"
-  },
-  "@playtimeTitle": {
-    "description": "Description"
-  },
-  "@playtimeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeVirtualStarted": {
-    "description": "Description"
-  },
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Description"
-  },
-  "@pollOptions": {
-    "description": "pollOptions description"
-  },
-  "@previous": {
-    "description": "Description"
-  },
-  "@profile": {
-    "description": "Description"
-  },
-  "@quickActions": {
-    "description": "Description"
-  },
-  "@recentGames": {
-    "description": "Description"
-  },
-  "@recipients": {
-    "description": "recipients description"
-  },
-  "@redo": {
-    "description": "Description"
-  },
+  "refresh": "Adnewyddu",
   "@refresh": {
     "description": "Description"
   },
-  "@removeChild": {
+  "home": "Hafan",
+  "@home": {
     "description": "Description"
   },
-  "@requestType": {
-    "description": "requestType description"
-  },
-  "@retry": {
+  "noSessionsYet": "[CY] No sessions yet",
+  "@noSessionsYet": {
     "description": "Description"
   },
-  "@revoke": {
+  "ok": "Iawn",
+  "@ok": {
     "description": "Description"
   },
-  "@revokeAccess": {
+  "playtimeLandingChooseMode": "Dewiswch fodd",
+  "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "@revokeAccessConfirmation": {
-    "description": "Description"
-  },
-  "@save": {
-    "description": "save description"
-  },
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
-  "@scheduleForLater": {
-    "description": "scheduleForLater description"
-  },
-  "@scheduleMessage": {
-    "description": "Description"
-  },
-  "@scheduled": {
-    "description": "scheduled description"
-  },
-  "@scheduledFor": {
-    "description": "Description"
-  },
-  "@scheduling": {
-    "description": "scheduling description"
-  },
-  "@search": {
-    "description": "Description"
-  },
-  "@select": {
-    "description": "Description"
-  },
-  "@sendNow": {
-    "description": "sendNow description"
-  },
-  "@settings": {
-    "description": "Description"
-  },
-  "@share": {
-    "description": "Description"
-  },
-  "@shareOnWhatsApp": {
-    "description": "Description"
-  },
+  "signUp": "[CY] Sign Up",
   "@signUp": {
     "description": "Description"
   },
-  "@staffScreenTBD": {
+  "scheduleMessage": "[CY] Schedule Message",
+  "@scheduleMessage": {
     "description": "Description"
   },
-  "@status": {
-    "description": "status description"
+  "decline": "Gwrthod",
+  "@decline": {
+    "description": "Description"
   },
-  "@statusColon": {
-    "description": "statusColon description"
+  "adminBroadcast": "Admin Broadcast",
+  "@adminBroadcast": {
+    "description": "Localization key for: Admin Broadcast"
   },
+  "login": "[CY] Login",
+  "@login": {
+    "description": "Description"
+  },
+  "playtimeChooseFriends": "[CY] Choose friends to invite",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "noInvites": "Dim gwahoddiadau",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "playtimeChooseTime": "Dewiswch amser",
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "success": "Llwyddiant",
   "@success": {
     "description": "Description"
   },
-  "@targetingFilters": {
-    "description": "targetingFilters description"
-  },
-  "@type": {
-    "description": "type description"
-  },
+  "undo": "Dadhadlu",
   "@undo": {
     "description": "Description"
   },
-  "@upcomingSessions": {
+  "opened": "[CY] Opened",
+  "@opened": {
+    "description": "opened description"
+  },
+  "createVirtualSession": "Creu sesiwn rhithwir",
+  "@createVirtualSession": {
     "description": "Description"
   },
-  "@upload": {
+  "messageSentSuccessfully": "[CY] Message sent successfully",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "redo": "Ailadrodd",
+  "@redo": {
     "description": "Description"
   },
-  "@viewAll": {
+  "next": "Nesaf",
+  "@next": {
     "description": "Description"
   },
-  "@welcome": {
+  "search": "Chwilio",
+  "@search": {
     "description": "Description"
   },
-  "@welcomeToPlaytime": {
+  "cancelInviteConfirmation": "Diddymu cadarnhad gwahoddiad",
+  "@cancelInviteConfirmation": {
     "description": "Description"
   },
+  "created": "Wedi creu",
+  "@created": {
+    "description": "created description"
+  },
+  "revokeAccess": "Canslo mynediad",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "saveGroupForRecognition": "Cadw grŵp ar gyfer adnabod",
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
+  "playtimeLiveScheduled": "[CY] Live playtime scheduled!",
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "revokeAccessConfirmation": "Cadarnhad canslo mynediad",
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "download": "Lawrlwytho",
+  "@download": {
+    "description": "Description"
+  },
+  "password": "[CY] Password",
+  "@password": {
+    "description": "Description"
+  },
+  "errorLoadingFamilyLinks": "Gwall wrth lwytho dolenni teuluol",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "cancel": "Canslo",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "playtimeCreate": "Creu Playtime",
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "failedToActionPrivacyRequest": "[CY] Failed to action privacy request",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "appTitle": "Teitl y cais",
+  "@appTitle": {
+    "description": "Description"
+  },
+  "accept": "[CY] Accept",
+  "@accept": {
+    "description": "Description"
+  },
+  "playtimeModeVirtual": "Modd rhithwir",
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "playtimeDescription": "Disgrifiad Playtime",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "delete": "Dileu",
+  "@delete": {
+    "description": "Description"
+  },
+  "playtimeVirtualStarted": "Sesiwn rhithwir wedi cychwyn",
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createYourFirstGame": "Creu eich gêm gyntaf",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "participants": "Cyfranogwyr",
+  "@participants": {
+    "description": "Description"
+  },
+  "recipients": "[CY] Recipients",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "noResults": "Dim canlyniadau",
+  "@noResults": {
+    "description": "Description"
+  },
+  "yes": "Ie",
   "@yes": {
     "description": "yes description"
   },
-  "@yesCancel": {
+  "invite": "Gwahodd",
+  "@invite": {
+    "description": "Description"
+  },
+  "playtimeModeLive": "[CY] Live Play",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "done": "[CY] Done",
+  "@done": {
+    "description": "Description"
+  },
+  "defaultShareMessage": "[CY] Let's meet via Appoint!",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "no": "Na",
+  "@no": {
+    "description": "Description"
+  },
+  "playtimeHub": "Canolfan Playtime",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "createLiveSession": "[CY] Create Live Session",
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "enableNotifications": "[CY] Enable Notifications",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "invited": "Wedi gwahodd",
+  "@invited": {
+    "description": "Description"
+  },
+  "content": "Cynnwys",
+  "@content": {
+    "description": "content description"
+  },
+  "meetingSharedSuccessfully": "Cyfarfod wedi ei rannu yn llwyddiannus",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "welcomeToPlaytime": "Croeso i Playtime",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "viewAll": "Gweld popeth",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "playtimeVirtual": "Playtime rhithwir",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "staffScreenTBD": "[CY] Staff screen coming soon",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "cut": "[CY] Cut",
+  "@cut": {
+    "description": "Description"
+  },
+  "inviteCancelledSuccessfully": "Gwahoddiad wedi ei ganslo'n llwyddiannus",
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "retry": "[CY] Retry",
+  "@retry": {
+    "description": "Description"
+  },
+  "composeBroadcastMessage": "Cyfansoddi neges darlledu",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "sendNow": "[CY] Send Now",
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "noGamesYet": "[CY] No games yet",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "select": "Dewis",
+  "@select": {
     "description": "Description"
   },
   "about": "Am",
-  "accept": "[CY] Accept",
-  "accessRevokedSuccessfully": "Mynediad wedi ei ganslo'n llwyddiannus",
-  "add": "Ychwanegu",
-  "appTitle": "Teitl y cais",
-  "back": "Yn ôl",
-  "cancel": "Canslo",
-  "cancelInvite": "Canslo gwahoddiad",
-  "cancelInviteConfirmation": "Diddymu cadarnhad gwahoddiad",
-  "checkingPermissions": "[CY] Checking permissions...",
+  "@about": {
+    "description": "About navigation label"
+  },
   "choose": "Dewiswch",
-  "clicked": "Wedi clicio",
-  "clientScreenTBD": "[CY] Client screen coming soon",
-  "close": "Cau",
-  "composeBroadcastMessage": "Cyfansoddi neges darlledu",
-  "confirm": "Cadarnhau",
-  "confirmPassword": "[CY] Confirm Password",
-  "connectedChildren": "Plant cysylltiedig",
-  "content": "Cynnwys",
-  "copy": "Copïo",
-  "createGame": "Creu gêm",
-  "createLiveSession": "[CY] Create Live Session",
-  "createNew": "Creu newydd",
-  "createVirtualSession": "Creu sesiwn rhithwir",
-  "createYourFirstGame": "Creu eich gêm gyntaf",
-  "createYourFirstSession": "Creu eich sesiwn gyntaf",
-  "created": "Wedi creu",
-  "customizeMessage": "[CY] Customize Message",
-  "cut": "[CY] Cut",
-  "dashboard": "Dangosfwrdd",
-  "decline": "Gwrthod",
-  "defaultShareMessage": "[CY] Let's meet via Appoint!",
-  "delete": "Dileu",
-  "details": "[CY] Details",
-  "done": "[CY] Done",
-  "download": "Lawrlwytho",
-  "edit": "Golygwch",
-  "email": "E-bost",
-  "enableNotifications": "[CY] Enable Notifications",
-  "enterGroupName": "Nodwch enw'r grŵp",
-  "error": "Gwall",
-  "errorCheckingPermissions": "[CY] Error checking permissions",
-  "errorLoadingFamilyLinks": "Gwall wrth lwytho dolenni teuluol",
-  "errorLoadingInvites": "Gwall wrth lwytho gwahoddiadau",
-  "errorLoadingPrivacyRequests": "[CY] Error loading privacy requests",
-  "errorLoadingProfile": "[CY] Error loading profile",
-  "errorSavingMessage": "Gwall wrth arbed neges",
-  "errorSendingMessage": "[CY] Error sending message",
-  "failedToActionPrivacyRequest": "[CY] Failed to action privacy request",
-  "failedToCancelInvite": "Methu canslo gwahoddiad",
-  "failedToResendOtp": "[CY] Failed to resend OTP",
-  "failedToRevokeAccess": "Methu canslo mynediad",
-  "familyDashboard": "Dangosfwrdd teulu",
-  "familyMembers": "Aelodau teulu",
-  "fcmToken": "[CY] FCM Token",
-  "forgotPassword": "[CY] Forgot Password?",
-  "groupNameOptional": "Enw'r grŵp (dewisol)",
-  "home": "Hafan",
-  "invite": "Gwahodd",
-  "inviteCancelledSuccessfully": "Gwahoddiad wedi ei ganslo'n llwyddiannus",
-  "inviteDetail": "[CY] Invite Details",
-  "invited": "Wedi gwahodd",
-  "knownGroupDetected": "Grŵp cyfarwydd wedi'i ganfod",
-  "link": "Cysylltiad",
-  "loading": "Wrthi'n llwytho",
-  "login": "[CY] Login",
-  "logout": "[CY] Logout",
-  "managePermissions": "[CY] Manage Permissions",
-  "mediaOptional": "Cyfryngau (dewisol)",
-  "meetingReadyMessage": "Cyfarfod yn barod",
-  "meetingSharedSuccessfully": "Cyfarfod wedi ei rannu yn llwyddiannus",
-  "messageSavedSuccessfully": "Neges wedi ei gadw'n llwyddiannus",
-  "messageSentSuccessfully": "[CY] Message sent successfully",
-  "myInvites": "Fy nghwahoddiadau",
-  "myProfile": "[CY] My Profile",
-  "next": "Nesaf",
-  "no": "Na",
-  "noBroadcastMessages": "[CY] No messages yet",
-  "noFamilyMembersYet": "[CY] No family members yet",
-  "noGamesYet": "[CY] No games yet",
-  "noInvites": "Dim gwahoddiadau",
-  "noPermissionForBroadcast": "[CY] No permission for broadcast",
-  "noProfileFound": "[CY] No profile found",
-  "noResults": "Dim canlyniadau",
-  "noSessionsYet": "[CY] No sessions yet",
-  "notificationSettings": "[CY] Notification Settings",
-  "notifications": "[CY] Notifications",
-  "ok": "Iawn",
-  "opened": "[CY] Opened",
-  "otpResentSuccessfully": "[CY] OTP resent successfully",
-  "participants": "Cyfranogwyr",
-  "password": "[CY] Password",
-  "paste": "Gludo",
-  "pendingInvites": "Gwahoddiadau sy'n aros",
-  "pickImage": "Dewiswch ddelwedd",
-  "pickVideo": "Dewiswch fideo",
-  "playtimeApprove": "Cymeradwywch Playtime",
-  "playtimeChooseFriends": "[CY] Choose friends to invite",
-  "playtimeChooseGame": "Dewiswch gêm",
-  "playtimeChooseTime": "Dewiswch amser",
-  "playtimeCreate": "Creu Playtime",
-  "playtimeCreateSession": "Creu sesiwn",
-  "playtimeDescription": "Disgrifiad Playtime",
-  "playtimeEnterGameName": "Nodwch enw'r gêm",
-  "playtimeGameApproved": "Gêm wedi ei gymeradwyo",
-  "playtimeGameDeleted": "Gêm wedi ei ddileu",
-  "playtimeGameRejected": "Gêm wedi ei wrthod",
-  "playtimeHub": "Canolfan Playtime",
-  "playtimeLandingChooseMode": "Dewiswch fodd",
-  "playtimeLive": "[CY] Live Play",
-  "playtimeLiveScheduled": "[CY] Live playtime scheduled!",
-  "playtimeModeLive": "[CY] Live Play",
-  "playtimeModeVirtual": "Modd rhithwir",
-  "playtimeNoSessions": "Dim sesiynau Playtime",
-  "playtimeParentDashboardTitle": "Teitl dangosfwrdd rhiant Playtime",
-  "playtimeReject": "Gwrthod Playtime",
-  "playtimeTitle": "Teitl Playtime",
-  "playtimeVirtual": "Playtime rhithwir",
-  "playtimeVirtualStarted": "Sesiwn rhithwir wedi cychwyn",
-  "pleaseLoginForFamilyFeatures": "[CY] Please login to access family features",
-  "pleaseLoginToViewProfile": "[CY] Please log in to view your profile.",
-  "pollOptions": "Opsiynau arolwg",
-  "previous": "[CY] Previous",
+  "@choose": {
+    "description": "Description"
+  },
   "profile": "[CY] Profile",
-  "quickActions": "Gweithredoedd cyflym",
-  "recentGames": "Gemau diweddar",
-  "recipients": "[CY] Recipients",
-  "redo": "Ailadrodd",
-  "refresh": "Adnewyddu",
+  "@profile": {
+    "description": "Description"
+  },
   "removeChild": "Tynnu plentyn",
-  "requestType": "[CY] Request Type",
-  "retry": "[CY] Retry",
-  "revoke": "Canslo",
-  "revokeAccess": "Canslo mynediad",
-  "revokeAccessConfirmation": "Cadarnhad canslo mynediad",
-  "save": "Cadw",
-  "saveGroupForRecognition": "Cadw grŵp ar gyfer adnabod",
-  "scheduleForLater": "Trefnu ar gyfer yn nes ymlaen",
-  "scheduleMessage": "[CY] Schedule Message",
-  "scheduled": "Wedi'i drefnu",
-  "scheduledFor": "Wedi'i drefnu ar gyfer",
-  "scheduling": "Wrthi'n trefnu",
-  "search": "Chwilio",
-  "select": "Dewis",
-  "sendNow": "[CY] Send Now",
-  "settings": "Gosodiadau",
-  "share": "Rhannu",
-  "shareOnWhatsApp": "[CY] Share on WhatsApp",
-  "signUp": "[CY] Sign Up",
-  "staffScreenTBD": "[CY] Staff screen coming soon",
+  "@removeChild": {
+    "description": "Description"
+  },
   "status": "[CY] Status",
-  "statusColon": "[CY] Status:",
-  "success": "Llwyddiant",
-  "targetingFilters": "[CY] Targeting Filters",
-  "type": "[CY] Type",
-  "undo": "Dadhadlu",
-  "upcomingSessions": "Sesiynau sydd i ddod",
-  "upload": "Llwytho i fyny",
-  "viewAll": "Gweld popeth",
+  "@status": {
+    "description": "status description"
+  },
+  "logout": "[CY] Logout",
+  "@logout": {
+    "description": "Description"
+  },
+  "paste": "Gludo",
+  "@paste": {
+    "description": "Description"
+  },
   "welcome": "Croeso",
-  "welcomeToPlaytime": "Croeso i Playtime",
-  "yes": "Ie",
+  "@welcome": {
+    "description": "Description"
+  },
+  "playtimeCreateSession": "Creu sesiwn",
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "familyMembers": "Aelodau teulu",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "upload": "Llwytho i fyny",
+  "@upload": {
+    "description": "Description"
+  },
+  "upcomingSessions": "Sesiynau sydd i ddod",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "enterGroupName": "Nodwch enw'r grŵp",
+  "@enterGroupName": {
+    "description": "Description"
+  },
+  "confirm": "Cadarnhau",
+  "@confirm": {
+    "description": "Description"
+  },
+  "playtimeLive": "[CY] Live Play",
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "errorLoadingInvites": "Gwall wrth lwytho gwahoddiadau",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "targetingFilters": "[CY] Targeting Filters",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "pickVideo": "Dewiswch fideo",
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "playtimeGameDeleted": "Gêm wedi ei ddileu",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "scheduleForLater": "Trefnu ar gyfer yn nes ymlaen",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "accessRevokedSuccessfully": "Mynediad wedi ei ganslo'n llwyddiannus",
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "type": "[CY] Type",
+  "@type": {
+    "description": "type description"
+  },
+  "checkingPermissions": "[CY] Checking permissions...",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "copy": "Copïo",
+  "@copy": {
+    "description": "Description"
+  },
   "yesCancel": "Ie, canslo",
-  "errorEstimatingRecipients": "errorEstimatingRecipients (TRANSLATE)",
-  "@errorEstimatingRecipients": {
-    "description": "errorEstimatingRecipients description"
+  "@yesCancel": {
+    "description": "Description"
   },
-  "errorPickingImage": "errorPickingImage (TRANSLATE)",
-  "@errorPickingImage": {
-    "description": "errorPickingImage description"
+  "email": "E-bost",
+  "@email": {
+    "description": "Description"
   },
-  "errorPickingVideo": "errorPickingVideo (TRANSLATE)",
-  "@errorPickingVideo": {
-    "description": "errorPickingVideo description"
+  "shareOnWhatsApp": "[CY] Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Description"
   },
-  "organizations": "organizations (TRANSLATE)",
-  "@organizations": {
-    "description": "organizations description"
+  "notificationSettings": "[CY] Notification Settings",
+  "@notificationSettings": {
+    "description": "Description"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
-  "@noOrganizations": {
-    "description": "noOrganizations description"
+  "myProfile": "[CY] My Profile",
+  "@myProfile": {
+    "description": "Description"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
-  "@errorLoadingOrganizations": {
-    "description": "errorLoadingOrganizations description"
+  "revoke": "Canslo",
+  "@revoke": {
+    "description": "Description"
   },
-  "members": "members (TRANSLATE)",
-  "@members": {
-    "description": "members description"
+  "noBroadcastMessages": "[CY] No messages yet",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
   },
-  "users": "users (TRANSLATE)",
-  "@users": {
-    "description": "users description"
+  "requestType": "[CY] Request Type",
+  "@requestType": {
+    "description": "requestType description"
   },
-  "noUsers": "noUsers (TRANSLATE)",
-  "@noUsers": {
-    "description": "noUsers description"
+  "notifications": "[CY] Notifications",
+  "@notifications": {
+    "description": "Description"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
-  "@errorLoadingUsers": {
-    "description": "errorLoadingUsers description"
+  "details": "[CY] Details",
+  "@details": {
+    "description": "details description"
   },
-  "changeRole": "changeRole (TRANSLATE)",
-  "@changeRole": {
-    "description": "changeRole description"
+  "cancelInvite": "Canslo gwahoddiad",
+  "@cancelInvite": {
+    "description": "Description"
   },
-  "totalAppointments": "totalAppointments (TRANSLATE)",
-  "@totalAppointments": {
-    "description": "totalAppointments description"
+  "createNew": "Creu newydd",
+  "@createNew": {
+    "description": "Description"
   },
-  "completedAppointments": "completedAppointments (TRANSLATE)",
-  "@completedAppointments": {
-    "description": "completedAppointments description"
+  "settings": "Gosodiadau",
+  "@settings": {
+    "description": "Description"
   },
-  "revenue": "revenue (TRANSLATE)",
-  "@revenue": {
-    "description": "revenue description"
+  "playtimeReject": "Gwrthod Playtime",
+  "@playtimeReject": {
+    "description": "Description"
   },
-  "errorLoadingStats": "errorLoadingStats (TRANSLATE)",
-  "@errorLoadingStats": {
-    "description": "errorLoadingStats description"
+  "errorLoadingProfile": "[CY] Error loading profile",
+  "@errorLoadingProfile": {
+    "description": "Description"
   },
-  "appointment": "appointment (TRANSLATE)",
-  "@appointment": {
-    "description": "appointment description"
+  "edit": "Golygwch",
+  "@edit": {
+    "description": "Description"
   },
-  "from": "from (TRANSLATE)",
-  "@from": {
-    "description": "from description"
+  "add": "Ychwanegu",
+  "@add": {
+    "description": "Description"
   },
-  "phone": "phone (TRANSLATE)",
-  "@phone": {
-    "description": "phone description"
+  "playtimeGameApproved": "Gêm wedi ei gymeradwyo",
+  "@playtimeGameApproved": {
+    "description": "Description"
   },
-  "noRouteDefined": "noRouteDefined (TRANSLATE)",
-  "@noRouteDefined": {
-    "description": "noRouteDefined description"
+  "forgotPassword": "[CY] Forgot Password?",
+  "@forgotPassword": {
+    "description": "Description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
-  "@meetingDetails": {
-    "description": "meetingDetails description"
+  "familyDashboard": "Dangosfwrdd teulu",
+  "@familyDashboard": {
+    "description": "Description"
   },
-  "meetingId": "meetingId (TRANSLATE)",
-  "@meetingId": {
-    "description": "meetingId description"
+  "loading": "Wrthi'n llwytho",
+  "@loading": {
+    "description": "Description"
   },
-  "creator": "creator (TRANSLATE)",
-  "@creator": {
-    "description": "creator description"
+  "quickActions": "Gweithredoedd cyflym",
+  "@quickActions": {
+    "description": "Description"
   },
-  "context": "context (TRANSLATE)",
-  "@context": {
-    "description": "context description"
+  "playtimeTitle": "Teitl Playtime",
+  "@playtimeTitle": {
+    "description": "Description"
   },
-  "group": "group (TRANSLATE)",
-  "@group": {
-    "description": "group description"
+  "otpResentSuccessfully": "[CY] OTP resent successfully",
+  "@otpResentSuccessfully": {
+    "description": "Description"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
-  "@requestPrivateSession": {
-    "description": "requestPrivateSession description"
+  "errorCheckingPermissions": "[CY] Error checking permissions",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
   },
-  "privacyRequestSent": "privacyRequestSent (TRANSLATE)",
-  "@privacyRequestSent": {
-    "description": "privacyRequestSent description"
+  "clientScreenTBD": "[CY] Client screen coming soon",
+  "@clientScreenTBD": {
+    "description": "Description"
   },
-  "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
-  "@failedToSendPrivacyRequest": {
-    "description": "failedToSendPrivacyRequest description"
+  "fcmToken": "[CY] FCM Token",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "pickImage": "Dewiswch ddelwedd",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "previous": "[CY] Previous",
+  "@previous": {
+    "description": "Description"
+  },
+  "noProfileFound": "[CY] No profile found",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "noFamilyMembersYet": "[CY] No family members yet",
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "mediaOptional": "Cyfryngau (dewisol)",
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "messageSavedSuccessfully": "Neges wedi ei gadw'n llwyddiannus",
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "scheduledFor": "Wedi'i drefnu ar gyfer",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "dashboard": "Dangosfwrdd",
+  "@dashboard": {
+    "description": "Description"
+  },
+  "noPermissionForBroadcast": "[CY] No permission for broadcast",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "@playtimeAdminPanelTitle": {
+    "description": "Localization key for: Playtime Games – Admin"
+  },
+  "inviteDetail": "[CY] Invite Details",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "scheduled": "Wedi'i drefnu",
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "failedToResendOtp": "[CY] Failed to resend OTP",
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "scheduling": "Wrthi'n trefnu",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "errorSavingMessage": "Gwall wrth arbed neges",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "save": "Cadw",
+  "@save": {
+    "description": "save description"
+  },
+  "playtimeApprove": "Cymeradwywch Playtime",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "createYourFirstSession": "Creu eich sesiwn gyntaf",
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "playtimeGameRejected": "Gêm wedi ei wrthod",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "failedToRevokeAccess": "Methu canslo mynediad",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "recentGames": "Gemau diweddar",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "customizeMessage": "[CY] Customize Message",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "failedToCancelInvite": "Methu canslo gwahoddiad",
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "errorSendingMessage": "[CY] Error sending message",
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "confirmPassword": "[CY] Confirm Password",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "errorLoadingPrivacyRequests": "[CY] Error loading privacy requests",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "connectedChildren": "Plant cysylltiedig",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "share": "Rhannu",
+  "@share": {
+    "description": "Description"
+  },
+  "playtimeEnterGameName": "Nodwch enw'r gêm",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "pleaseLoginForFamilyFeatures": "[CY] Please login to access family features",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "myInvites": "Fy nghwahoddiadau",
+  "@myInvites": {
+    "description": "Description"
+  },
+  "createGame": "Creu gêm",
+  "@createGame": {
+    "description": "Description"
+  },
+  "groupNameOptional": "Enw'r grŵp (dewisol)",
+  "@groupNameOptional": {
+    "description": "Description"
+  },
+  "playtimeNoSessions": "Dim sesiynau Playtime",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "adminScreenTBD": "Admin screen coming soon",
+  "@adminScreenTBD": {
+    "description": "Localization key for: Admin screen coming soon"
+  },
+  "playtimeParentDashboardTitle": "Teitl dangosfwrdd rhiant Playtime",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "close": "Cau",
+  "@close": {
+    "description": "close description"
+  },
+  "knownGroupDetected": "Grŵp cyfarwydd wedi'i ganfod",
+  "@knownGroupDetected": {
+    "description": "Description"
+  },
+  "back": "Yn ôl",
+  "@back": {
+    "description": "Description"
+  },
+  "playtimeChooseGame": "Dewiswch gêm",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "managePermissions": "[CY] Manage Permissions",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "pollOptions": "Opsiynau arolwg",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "clicked": "Wedi clicio",
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "link": "Cysylltiad",
+  "@link": {
+    "description": "link description"
+  },
+  "meetingReadyMessage": "Cyfarfod yn barod",
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "pendingInvites": "Gwahoddiadau sy'n aros",
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "statusColon": "[CY] Status:",
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "pleaseLoginToViewProfile": "[CY] Please log in to view your profile.",
+  "@pleaseLoginToViewProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "adminMetrics": "Admin Metrics",
+  "@adminMetrics": {
+    "description": "Localization key for: Admin Metrics"
   },
   "overview": "Overview",
   "@overview": {
@@ -765,5 +672,2192 @@
   "@bookings": {
     "description": "Description"
   },
-  "contentLibrary": "Content Library"
+  "users": "users (TRANSLATE)",
+  "@users": {
+    "description": "users description"
+  },
+  "revenue": "revenue (TRANSLATE)",
+  "@revenue": {
+    "description": "revenue description"
+  },
+  "contentLibrary": "Content Library",
+  "@contentLibrary": {
+    "description": "Localization key for: Content Library"
+  },
+  "authErrorUserNotFound": "No account found with this email address.",
+  "@authErrorUserNotFound": {
+    "description": "Localization key for: No account found with this email address."
+  },
+  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "@authErrorWrongPassword": {
+    "description": "Localization key for: Incorrect password. Please try again."
+  },
+  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Localization key for: Please enter a valid email address."
+  },
+  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "@authErrorUserDisabled": {
+    "description": "Localization key for: This account has been disabled. Please contact support."
+  },
+  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "@authErrorWeakPassword": {
+    "description": "Localization key for: Password is too weak. Please choose a stronger password."
+  },
+  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Localization key for: An account with this email already exists."
+  },
+  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "@authErrorTooManyRequests": {
+    "description": "Localization key for: Too many failed attempts. Please try again later."
+  },
+  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
+  },
+  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "@authErrorInvalidCredential": {
+    "description": "Localization key for: Invalid credentials. Please try again."
+  },
+  "authErrorAccountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method.",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Localization key for: An account already exists with this email using a different sign-in method."
+  },
+  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Localization key for: These credentials are already associated with another account."
+  },
+  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Localization key for: Network error. Please check your connection and try again."
+  },
+  "socialAccountConflictTitle": "Account Already Exists (Welsh)",
+  "@socialAccountConflictTitle": {
+    "description": "Localization key for: Account Already Exists"
+  },
+  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Welsh)",
+  "@socialAccountConflictMessage": {
+    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
+  },
+  "linkAccounts": "Link Accounts (Welsh)",
+  "@linkAccounts": {
+    "description": "Localization key for: Link Accounts"
+  },
+  "signInWithExistingMethod": "Sign in with existing method (Welsh)",
+  "@signInWithExistingMethod": {
+    "description": "Localization key for: Sign in with existing method"
+  },
+  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Please log in again to perform this operation."
+  },
+  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
+  },
+  "authErrorInvalidVerificationCode": "The verification code is invalid.",
+  "@authErrorInvalidVerificationCode": {
+    "description": "Localization key for: The verification code is invalid."
+  },
+  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: The verification ID is invalid."
+  },
+  "authErrorMissingVerificationCode": "Please enter the verification code.",
+  "@authErrorMissingVerificationCode": {
+    "description": "Localization key for: Please enter the verification code."
+  },
+  "authErrorMissingVerificationId": "Missing verification ID.",
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Missing verification ID."
+  },
+  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: The phone number is invalid."
+  },
+  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Please enter a phone number."
+  },
+  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
+  },
+  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: The verification code has expired. Please request a new one."
+  },
+  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Your session has expired. Please log in again."
+  },
+  "authErrorMultiFactorAuthRequired": "Multi-factor authentication is required.",
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Localization key for: Multi-factor authentication is required."
+  },
+  "authErrorMultiFactorInfoNotFound": "Multi-factor information not found.",
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Localization key for: Multi-factor information not found."
+  },
+  "authErrorMissingMultiFactorSession": "Missing multi-factor session.",
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Localization key for: Missing multi-factor session."
+  },
+  "authErrorInvalidMultiFactorSession": "Invalid multi-factor session.",
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Localization key for: Invalid multi-factor session."
+  },
+  "authErrorSecondFactorAlreadyInUse": "This second factor is already in use.",
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Localization key for: This second factor is already in use."
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "Maximum number of second factors exceeded.",
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Localization key for: Maximum number of second factors exceeded."
+  },
+  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
+  },
+  "authErrorEmailChangeNeedsVerification": "Email change requires verification.",
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Localization key for: Email change requires verification."
+  },
+  "authErrorPhoneNumberAlreadyExists": "This phone number is already in use.",
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Localization key for: This phone number is already in use."
+  },
+  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: The password is invalid or too weak."
+  },
+  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: The ID token is invalid."
+  },
+  "authErrorIdTokenExpired": "The ID token has expired.",
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: The ID token has expired."
+  },
+  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: The ID token has been revoked."
+  },
+  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "@authErrorInternalError": {
+    "description": "Localization key for: An internal error occurred. Please try again."
+  },
+  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: An invalid argument was provided."
+  },
+  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Invalid custom claims provided."
+  },
+  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: The continue URL is invalid."
+  },
+  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: The creation time is invalid."
+  },
+  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: The disabled field value is invalid."
+  },
+  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: The display name is invalid."
+  },
+  "authErrorInvalidDynamicLinkDomain": "The dynamic link domain is invalid.",
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Localization key for: The dynamic link domain is invalid."
+  },
+  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: The email verified value is invalid."
+  },
+  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: The hash algorithm is invalid."
+  },
+  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: The hash block size is invalid."
+  },
+  "authErrorInvalidHashDerivedKeyLength": "The hash derived key length is invalid.",
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Localization key for: The hash derived key length is invalid."
+  },
+  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: The hash key is invalid."
+  },
+  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: The hash memory cost is invalid."
+  },
+  "authErrorInvalidHashParallelization": "The hash parallelization is invalid.",
+  "@authErrorInvalidHashParallelization": {
+    "description": "Localization key for: The hash parallelization is invalid."
+  },
+  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: The hash rounds value is invalid."
+  },
+  "authErrorInvalidHashSaltSeparator": "The hash salt separator is invalid.",
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Localization key for: The hash salt separator is invalid."
+  },
+  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: The last sign-in time is invalid."
+  },
+  "authErrorInvalidPageToken": "The page token is invalid.",
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: The page token is invalid."
+  },
+  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: The provider data is invalid."
+  },
+  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: The provider ID is invalid."
+  },
+  "authErrorInvalidSessionCookieDuration": "The session cookie duration is invalid.",
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Localization key for: The session cookie duration is invalid."
+  },
+  "authErrorInvalidUid": "The UID is invalid.",
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: The UID is invalid."
+  },
+  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: The user import record is invalid."
+  },
+  "authErrorMaximumUserCountExceeded": "Maximum user import count exceeded.",
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Localization key for: Maximum user import count exceeded."
+  },
+  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Missing Android package name."
+  },
+  "authErrorMissingContinueUri": "Missing continue URL.",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Missing continue URL."
+  },
+  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Missing hash algorithm."
+  },
+  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Missing iOS bundle ID."
+  },
+  "authErrorMissingUid": "Missing UID.",
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Missing UID."
+  },
+  "authErrorMissingOauthClientSecret": "Missing OAuth client secret.",
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Localization key for: Missing OAuth client secret."
+  },
+  "authErrorProjectNotFound": "Firebase project not found.",
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Firebase project not found."
+  },
+  "authErrorReservedClaims": "Reserved claims provided.",
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Reserved claims provided."
+  },
+  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Session cookie has expired."
+  },
+  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Session cookie has been revoked."
+  },
+  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: The UID is already in use."
+  },
+  "authErrorUnauthorizedContinueUri": "The continue URL domain is not whitelisted.",
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Localization key for: The continue URL domain is not whitelisted."
+  },
+  "authErrorUnknown": "An unknown authentication error occurred.",
+  "@authErrorUnknown": {
+    "description": "Localization key for: An unknown authentication error occurred."
+  },
+  "checkingPermissions1": "Checking permissions... (Welsh)",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "paymentSuccessful": "Payment Successful! (Welsh)",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "businessAvailability": "Business Availability (Welsh)",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "send": "Send (Welsh)",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Welsh)",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: {payloadTitle}"
+  },
+  "gameList": "Game List (Welsh)",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "deleteAvailability": "Delete Availability (Welsh)",
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "connectToGoogleCalendar": "Connect to Google Calendar (Welsh)",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "adminFreeAccess": "Admin Free Access",
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "emailProfileemail": "Email: {profileEmail} (Welsh)",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: {profileEmail}"
+  },
+  "calendar": "Calendar (Welsh)",
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "upload1": "Upload (Welsh)",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "resolved": "Resolved (Welsh)",
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "keepSubscription": "Keep Subscription (Welsh)",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "virtualSessionCreatedInvitingFriends": "Virtual session created! Inviting friends... (Welsh)",
+  "@virtualSessionCreatedInvitingFriends": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "noEventsScheduledForToday": "No events scheduled for today (Welsh)",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "exportData": "Export Data (Welsh)",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "rewards": "Rewards (Welsh)",
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "time": "Time (Welsh)",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "userCid": "User {id}",
+  "@userCid": {
+    "description": "Localization key for: User {id}"
+  },
+  "noSlots": "No slots (Welsh)",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
+  },
+  "signIn": "Sign In (Welsh)",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "homeFeedScreen": "Home Feed Screen (Welsh)",
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "selectLocation": "Select Location (Welsh)",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "noTicketsYet": "No tickets yet (Welsh)",
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "meetingSharedSuccessfully1": "Meeting shared successfully! (Welsh)",
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "studioProfile": "Studio Profile (Welsh)",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "subscriptionUnavailable": "Subscription unavailable (Welsh)",
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
+  },
+  "confirmBooking": "Confirm Booking (Welsh)",
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "failedToUpdatePermissionE": "Failed to update permission: $e (Welsh)",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "reject": "Reject (Welsh)",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "ambassadorStatusAmbassadorstatus": "Ambassador Status: {ambassadorStatus} (Welsh)",
+  "@ambassadorStatusAmbassadorstatus": {
+    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
+  },
+  "noProviders": "No providers",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "checkingSubscription": "Checking subscription... (Welsh)",
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "errorPickingImageE": "Error picking image: $e (Welsh)",
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "noContentAvailableYet": "No content available yet (Welsh)",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "resolve": "Resolve (Welsh)",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorLoadingSurveysError": "Error loading surveys: $error (Welsh)",
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "errorLogerrormessage": "Error: {errorMessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: {errorMessage}"
+  },
+  "getHelpWithYourAccount": "Get help with your account (Welsh)",
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "pay": "Pay (Welsh)",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "@meetingDetails": {
+    "description": "meetingDetails description"
+  },
+  "errorLoadingAppointments": "Error loading appointments (Welsh)",
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "changesSavedSuccessfully": "Changes saved successfully! (Welsh)",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "createNewInvoice": "Create New Invoice (Welsh)",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "profileNotFound": "Profile not found. (Welsh)",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "errorConfirmingPaymentE": "Error confirming payment: $e (Welsh)",
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "inviteFriends": "Invite Friends (Welsh)",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "profileSaved": "Profile saved! (Welsh)",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "receiveBookingNotificationsViaEmail": "Receive booking notifications via email (Welsh)",
+  "@receiveBookingNotificationsViaEmail": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "valuetointk": "\\${value}K (Welsh)",
+  "@valuetointk": {
+    "description": "Localization key for: \\${value}K"
+  },
+  "deleteAccount": "Delete Account (Welsh)",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "profile1": "Profile (Welsh)",
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "businessOnboarding": "Business Onboarding (Welsh)",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "addNewClient": "Add New Client (Welsh)",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "darkMode": "Dark Mode (Welsh)",
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "addProvider": "Add Provider",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for {path}"
+  },
+  "youWillReceiveAConfirmationEmailShortly": "You will receive a confirmation email shortly. (Welsh)",
+  "@youWillReceiveAConfirmationEmailShortly": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "addQuestion": "Add Question (Welsh)",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "privacyPolicy": "Privacy Policy (Welsh)",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "branchesLengthBranches": "{branchCount} branches (Welsh)",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: {branchCount} branches"
+  },
+  "join": "Join (Welsh)",
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "businessSubscription": "Business Subscription (Welsh)",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "myInvites1": "My Invites (Welsh)",
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "providers": "Providers",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "surveyManagement": "Survey Management (Welsh)",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
+  },
+  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Welsh)",
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "readOurPrivacyPolicy": "Read our privacy policy (Welsh)",
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
+  },
+  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Welsh)",
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "refresh1": "Refresh (Welsh)",
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "roomUpdatedSuccessfully": "Room updated successfully! (Welsh)",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "contentDetail": "Content Detail (Welsh)",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
+  },
+  "cancelSubscription": "Cancel Subscription (Welsh)",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "successfullyRegisteredAsAmbassador": "Successfully registered as Ambassador! (Welsh)",
+  "@successfullyRegisteredAsAmbassador": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "save1": "Save (Welsh)",
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "copy1": "Copy (Welsh)",
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "failedToSendInvitationE": "Failed to send invitation: $e (Welsh)",
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "surveyScore": "Survey Score (Welsh)",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
+  },
+  "userUserid": "User $userId",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "noAppointmentsFound": "No appointments found. (Welsh)",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "responseDetail": "Response Detail (Welsh)",
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "businessVerificationScreenComingSoon": "Business Verification Screen - Coming Soon (Welsh)",
+  "@businessVerificationScreenComingSoon": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "businessProfileActivatedSuccessfully": "Business profile activated successfully! (Welsh)",
+  "@businessProfileActivatedSuccessfully": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Welsh)",
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "businessDashboardEntryScreenComingSoon": "Business Dashboard Entry Screen - Coming Soon (Welsh)",
+  "@businessDashboardEntryScreenComingSoon": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "contentFilter": "Content Filter (Welsh)",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "helpSupport": "Help & Support (Welsh)",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "editRoom": "Edit Room (Welsh)",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "appointmentApptid": "Appointment: {appointmentId}",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: {deviceInfo}"
+  },
+  "businessCrmEntryScreenComingSoon": "Business CRM Entry Screen - Coming Soon (Welsh)",
+  "@businessCrmEntryScreenComingSoon": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "adminDashboard": "Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "orgmemberidslengthMembers": "{memberCount} members",
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: {memberCount} members"
+  },
+  "errorLoadingDashboardError": "Error loading dashboard: $error (Welsh)",
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "gameDeletedSuccessfully": "Game deleted successfully! (Welsh)",
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "viewResponsesComingSoon": "View responses - Coming soon! (Welsh)",
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "deleteProvider": "Delete Provider",
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "errorLoadingRewards": "Error loading rewards (Welsh)",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "failedToDeleteAccountE": "Failed to delete account: $e (Welsh)",
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "invited1": "Invited (Welsh)",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "noBranchesAvailable": "No branches available (Welsh)",
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "errorError": "Error: $error (Welsh)",
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "noEvents": "No events (Welsh)",
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "gameCreatedSuccessfully": "Game created successfully! (Welsh)",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "add1": "Add (Welsh)",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "creatorCreatorid": "Creator: $creatorId",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "eventstarttimeEventendtime": "{startTime} - {endTime} (Welsh)",
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: {startTime} - {endTime}"
+  },
+  "allowPlaytime": "Allow Playtime (Welsh)",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "clients": "Clients (Welsh)",
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "noAmbassadorDataAvailable": "No ambassador data available (Welsh)",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "backgroundDeletedSuccessfully": "Background deleted successfully! (Welsh)",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "errorSnapshoterror": "Error: {error} (Welsh)",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: {error}"
+  },
+  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Welsh)",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "errorDeletingSlotE": "Error deleting slot: $e (Welsh)",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "businessPhoneBookingEntryScreenComingSoon": "Business Phone Booking Entry Screen - Coming Soon (Welsh)",
+  "@businessPhoneBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "verification": "Verification (Welsh)",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "copyLink": "Copy Link (Welsh)",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "dashboard1": "Dashboard (Welsh)",
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "manageChildAccounts": "Manage Child Accounts (Welsh)",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "grantConsent": "Grant Consent (Welsh)",
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "myProfile1": "My Profile (Welsh)",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "submit": "Submit (Welsh)",
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "userLoguseremail": "User: {userEmail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: {userEmail}"
+  },
+  "emailNotifications": "Email Notifications (Welsh)",
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "ambassadorDashboard": "Ambassador Dashboard (Welsh)",
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "phoneBooking": "Phone Booking (Welsh)",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "bookViaChat": "Book via Chat (Welsh)",
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "error": "Gwall",
+  "@error": {
+    "description": "Description"
+  },
+  "businessProfile": "Business Profile (Welsh)",
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "businessBookingEntryScreenComingSoon": "Business Booking Entry Screen - Coming Soon (Welsh)",
+  "@businessBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "createNewSurvey": "Create New Survey (Welsh)",
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "backgroundRejected": "Background rejected (Welsh)",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "noMediaSelected": "No media selected (Welsh)",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "syncToGoogle": "Sync to Google (Welsh)",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "virtualPlaytime": "Virtual Playtime (Welsh)",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "colorContrastTesting": "Color Contrast Testing",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "loginFailedE": "Login failed: $e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "invitationSentSuccessfully": "Invitation sent successfully! (Welsh)",
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "registering": "Registering... (Welsh)",
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "statusAppointmentstatusname": "Status: {status} (Welsh)",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "home1": "Home (Welsh)",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "errorSavingSettingsE": "Error saving settings: $e (Welsh)",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "appVersionAndInformation": "App version and information (Welsh)",
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "businessSubscriptionEntryScreenComingSoon": "Business Subscription Entry Screen - Coming Soon (Welsh)",
+  "@businessSubscriptionEntryScreenComingSoon": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "ekeyEvalue": "{key}: {value} (Welsh)",
+  "@ekeyEvalue": {
+    "description": "Localization key for: {key}: {value}"
+  },
+  "yourPaymentHasBeenProcessedSuccessfully": "Your payment has been processed successfully. (Welsh)",
+  "@yourPaymentHasBeenProcessedSuccessfully": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "errorE": "Error: $e (Welsh)",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "viewAll1": "View All (Welsh)",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "editSurveyComingSoon": "Edit survey - Coming soon! (Welsh)",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "enterOtp": "Enter OTP (Welsh)",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "payment": "Payment (Welsh)",
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "automaticallyConfirmNewBookingRequests": "Automatically confirm new booking requests (Welsh)",
+  "@automaticallyConfirmNewBookingRequests": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "errorPickingVideoE": "Error picking video: $e",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Welsh)",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for {settingsName}"
+  },
+  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Welsh)",
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: {targetType}: {targetId}"
+  },
+  "staffAvailability": "Staff Availability (Welsh)",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "livePlaytime": "Live Playtime (Welsh)",
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "autoconfirmBookings": "Auto-Confirm Bookings (Welsh)",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "redirectingToStripeCheckoutForProPlan": "Redirecting to Stripe checkout for Pro plan... (Welsh)",
+  "@redirectingToStripeCheckoutForProPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "exportAsCsv": "Export as CSV (Welsh)",
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
+  },
+  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Welsh)",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "editClient": "Edit Client (Welsh)",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "areYouSureYouWantToDeleteThisMessage": "Are you sure you want to delete this message? (Welsh)",
+  "@areYouSureYouWantToDeleteThisMessage": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "referralsAmbassadorreferrals": "Referrals: {referrals} (Welsh)",
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: {referrals}"
+  },
+  "notAuthenticated": "Not authenticated",
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Welsh)",
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "clientDeletedSuccessfully": "Client deleted successfully! (Welsh)",
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
+  },
+  "failedToCancelSubscription": "Failed to cancel subscription (Welsh)",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "allLanguages": "All Languages (Welsh)",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "slotDeletedSuccessfully": "Slot deleted successfully (Welsh)",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "businessProvidersEntryScreenComingSoon": "Business Providers Entry Screen - Coming Soon",
+  "@businessProvidersEntryScreenComingSoon": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "parentsMustApproveBeforeChildrenCanJoin": "Parents must approve before children can join (Welsh)",
+  "@parentsMustApproveBeforeChildrenCanJoin": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Welsh)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "businessAvailabilityEntryScreenComingSoon": "Business Availability Entry Screen - Coming Soon (Welsh)",
+  "@businessAvailabilityEntryScreenComingSoon": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "appointmentsListlength": "Appointments: {count} (Welsh)",
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: {count}"
+  },
+  "clearFilters": "Clear Filters (Welsh)",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "submitBooking": "Submit Booking (Welsh)",
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "areYouSureYouWantToCancelThisAppointment": "Are you sure you want to cancel this appointment? (Welsh)",
+  "@areYouSureYouWantToCancelThisAppointment": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "noUpcomingBookings": "No upcoming bookings (Welsh)",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "goBack": "Go Back (Welsh)",
+  "@goBack": {
+    "description": "Localization key for: Go Back"
+  },
+  "setup": "Setup (Welsh)",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "inviteChild": "Invite Child (Welsh)",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "goToDashboard": "Go to Dashboard (Welsh)",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Welsh)",
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "adminSettings": "Admin Settings",
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "referralCode": "Referral Code (Welsh)",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "adminLogadminemail": "Admin: {adminEmail}",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: {adminEmail}"
+  },
+  "date": "Date (Welsh)",
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "readOnly": "Read Only (Welsh)",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "bookingRequest": "Booking Request (Welsh)",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "advancedReporting": "• Advanced reporting (Welsh)",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "rooms": "Rooms (Welsh)",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "copiedToClipboard": "Copied to clipboard (Welsh)",
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "bookingConfirmed": "Booking Confirmed (Welsh)",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "sessionApproved": "Session approved! (Welsh)",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "clientAddedSuccessfully": "Client added successfully! (Welsh)",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noNotifications": "No notifications (Welsh)",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "backgroundApproved": "Background approved! (Welsh)",
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "familySupport": "Family Support (Welsh)",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "deletingAccount": "Deleting account... (Welsh)",
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "bookAppointment": "Book Appointment (Welsh)",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "receivePushNotificationsForNewBookings": "Receive push notifications for new bookings (Welsh)",
+  "@receivePushNotificationsForNewBookings": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "delete1": "Delete (Welsh)",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "sendBookingInvite": "Send Booking Invite (Welsh)",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "text": "Text (Welsh)",
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "manageSubscription": "Manage Subscription (Welsh)",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "requiresInstallFallback": "Requires Install Fallback (Welsh)",
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "paymentConfirmation": "Payment Confirmation (Welsh)",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Welsh)",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: {inviteeId}"
+  },
+  "errorLoadingSlots": "Error loading slots (Welsh)",
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "allowOtherUsersToFindAndJoinThisGame": "Allow other users to find and join this game (Welsh)",
+  "@allowOtherUsersToFindAndJoinThisGame": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "businessOnboardingScreenComingSoon": "Business Onboarding Screen - Coming Soon (Welsh)",
+  "@businessOnboardingScreenComingSoon": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "activateBusinessProfile": "Activate Business Profile (Welsh)",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
+  "contentNotFound": "Content not found (Welsh)",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Welsh)",
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: {specialty}\\n{contactInfo}"
+  },
+  "rating": "Rating (Welsh)",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "messages": "Messages (Welsh)",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Welsh)",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "becomeAnAmbassador": "Become an Ambassador (Welsh)",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "subscribeNow": "Subscribe Now (Welsh)",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "timeArgsslotformatcontext": "Time: {time} (Welsh)",
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: {time}"
+  },
+  "shareViaWhatsapp": "Share via WhatsApp (Welsh)",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "users1": "Users (Welsh)",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "shareLink": "Share Link (Welsh)",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
+  "@areYouSureYouWantToDeleteThisProvider": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "deleteAppointment": "Delete Appointment (Welsh)",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toggleAvailability": "Toggle Availability (Welsh)",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "changePlan": "Change Plan (Welsh)",
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "errorLoadingStaff": "Error loading staff (Welsh)",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "updateYourBusinessInformation": "Update your business information (Welsh)",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "noProvidersFoundAddYourFirstProvider": "No providers found. Add your first provider!",
+  "@noProvidersFoundAddYourFirstProvider": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "parentDashboard": "Parent Dashboard (Welsh)",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "menu": "Menu (Welsh)",
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "studioBooking": "Studio Booking (Welsh)",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "about1": "About (Welsh)",
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "multipleChoice": "Multiple Choice (Welsh)",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "dateAppointmentscheduledattostring": "Date: {date} (Welsh)",
+  "@dateAppointmentscheduledattostring": {
+    "description": "Localization key for: Date: {date}"
+  },
+  "studioBookingIsOnlyAvailableOnWeb": "Studio booking is only available on web (Welsh)",
+  "@studioBookingIsOnlyAvailableOnWeb": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "errorLoadingBranchesE": "Error loading branches: $e (Welsh)",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "ud83dudcc5Bookingdatetimetolocal": "\\uD83D\\uDCC5 {dateTime} (Welsh)",
+  "@ud83dudcc5Bookingdatetimetolocal": {
+    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
+  },
+  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "none": "None (Welsh)",
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "failedToUpdateConsentE": "Failed to update consent: $e (Welsh)",
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "welcome1": "Welcome (Welsh)",
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "failedToCreateSessionE": "Failed to create session: $e (Welsh)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "inviteContact": "Invite Contact (Welsh)",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "surveyEditor": "Survey Editor (Welsh)",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Welsh)",
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "mySchedule": "My Schedule (Welsh)",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "studioDashboard": "Studio Dashboard (Welsh)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
+  "editProfile": "Edit Profile (Welsh)",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "logout1": "Logout",
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "serviceServiceidNotSelected": "Service: {service}",
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: {service}"
+  },
+  "settingsSavedSuccessfully": "Settings saved successfully! (Welsh)",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "linkCopiedToClipboard": "Link copied to clipboard! (Welsh)",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "accept1": "Accept (Welsh)",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "noAvailableSlots": "No available slots (Welsh)",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "makeGamePublic": "Make Game Public (Welsh)",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "permissionPermissioncategoryUpdatedToNewvalue": "Permission {category} updated to $newValue (Welsh)",
+  "@permissionPermissioncategoryUpdatedToNewvalue": {
+    "description": "Localization key for: Permission {category} updated to $newValue"
+  },
+  "roomDeletedSuccessfully": "Room deleted successfully! (Welsh)",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "businessCalendar": "Business Calendar (Welsh)",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "addAvailability": "Add Availability (Welsh)",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "ambassadorOnboarding": "Ambassador Onboarding (Welsh)",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "phoneProfileasyncphone": "Phone: {phone} (Welsh)",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: {phone}"
+  },
+  "addNewRoom": "Add New Room (Welsh)",
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "requireParentApproval": "Require Parent Approval (Welsh)",
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "closed": "Closed (Welsh)",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "exportAsPdf": "Export as PDF (Welsh)",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "enableVibration": "Enable Vibration (Welsh)",
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "toAvailendformatcontext": "To: {endTime} (Welsh)",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: {endTime}"
+  },
+  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Welsh)",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "@requestPrivateSession": {
+    "description": "requestPrivateSession description"
+  },
+  "country": "Country (Welsh)",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "loginScreen": "Login Screen",
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "staffArgsstaffdisplayname": "Staff: {staffName} (Welsh)",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "revokeConsent": "Revoke Consent (Welsh)",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "settings1": "Settings (Welsh)",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "cancel1": "Cancel (Welsh)",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "subscriptionActivatedSuccessfully": "Subscription activated successfully! (Welsh)",
+  "@subscriptionActivatedSuccessfully": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "activityLogaction": "Activity: {action}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: {action}"
+  },
+  "broadcast": "Broadcast (Welsh)",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "noEventsScheduledThisWeek": "No events scheduled this week (Welsh)",
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "googleCalendar": "Google Calendar (Welsh)",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "sendInvite": "Send Invite (Welsh)",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "childDashboard": "Child Dashboard (Welsh)",
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "failedToUploadBackgroundE": "Failed to upload background: $e (Welsh)",
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "linkchildidsubstring08": "{linkId}...",
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: {linkId}..."
+  },
+  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: {targetType} - {targetId}"
+  },
+  "contextContextid": "Context: $contextId",
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
+  },
+  "noAppointments": "No appointments (Welsh)",
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Welsh)",
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: {errorType}"
+  },
+  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Welsh)",
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "selectStaff": "Select Staff (Welsh)",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "subscriptionCancelledSuccessfully": "Subscription cancelled successfully (Welsh)",
+  "@subscriptionCancelledSuccessfully": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "cancelAppointment": "Cancel Appointment (Welsh)",
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - {childId}"
+  },
+  "businessSignup": "Business Signup (Welsh)",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "businessCompletionScreenComingSoon": "Business Completion Screen - Coming Soon (Welsh)",
+  "@businessCompletionScreenComingSoon": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "createGame1": "Create Game (Welsh)",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "valuetoint": "{value} (Welsh)",
+  "@valuetoint": {
+    "description": "Localization key for: {value}"
+  },
+  "pleaseEnterAPromoCode": "Please enter a promo code (Welsh)",
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "errorLoadingAvailabilityE": "Error loading availability: $e (Welsh)",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "parentalControls": "Parental Controls (Welsh)",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
+  },
+  "editBusinessProfile": "Edit Business Profile (Welsh)",
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "childLinkedSuccessfully": "Child linked successfully! (Welsh)",
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "create": "Create (Welsh)",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "noExternalMeetingsFound": "No external meetings found. (Welsh)",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "staffSelectionstaffdisplayname": "Staff: {staffName} (Welsh)",
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "schedulerScreen": "Scheduler Screen (Welsh)",
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "clientUpdatedSuccessfully": "Client updated successfully! (Welsh)",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "surveyResponses": "Survey Responses (Welsh)",
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "syncToOutlook": "Sync to Outlook (Welsh)",
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "saveChanges": "Save Changes (Welsh)",
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "pickTime": "Pick Time (Welsh)",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "registrationFailedEtostring": "Registration failed: {error} (Welsh)",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: {error}"
+  },
+  "analytics": "Analytics (Welsh)",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "errorLoadingEvents": "Error loading events (Welsh)",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "success1": "Success (Welsh)",
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "appVersionLogappversion": "App Version: {appVersion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: {appVersion}"
+  },
+  "fromAvailstartformatcontext": "From: {startTime} (Welsh)",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: {startTime}"
+  },
+  "readWrite": "Read & Write (Welsh)",
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "redirectingToStripeCheckoutForBasicPlan": "Redirecting to Stripe checkout for Basic plan... (Welsh)",
+  "@redirectingToStripeCheckoutForBasicPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "pickDate": "Pick Date (Welsh)",
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "chatBooking": "Chat Booking (Welsh)",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "noQuestionsAdded": "No questions added (Welsh)",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "severityLogseverityname": "Severity: {severity}",
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: {severity}"
+  },
+  "markAsPaid": "Mark as Paid",
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "typeOpenCall": "Type: Open Call (Welsh)",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment {appointmentId}"
+  },
+  "statusInvitestatusname": "Status: {status}",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "businessLogin": "Business Login",
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "invoiceCreatedSuccessfully": "Invoice created successfully! (Welsh)",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "noTimeSeriesDataAvailable": "No time series data available (Welsh)",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
+  },
+  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to {planName}"
+  },
+  "timestamp_formatdatelogtimestamp": "Timestamp: {timestamp}",
+  "@timestamp_formatdatelogtimestamp": {
+    "description": "Localization key for: Timestamp: {timestamp}"
+  },
+  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Welsh)",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "chooseYourPlan": "Choose Your Plan (Welsh)",
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "playtimeManagement": "Playtime Management (Welsh)",
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "availability": "Availability (Welsh)",
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "eventCreated": "Event created (Welsh)",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Welsh)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "completion": "Completion (Welsh)",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "supportTicketSubmitted": "Support ticket submitted (Welsh)",
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "monetizationSettings": "Monetization Settings (Welsh)",
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "noBookingsFound": "No bookings found (Welsh)",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "admin": "Admin",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "deleteSurvey": "Delete Survey (Welsh)",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "gameApprovedSuccessfully": "Game approved successfully! (Welsh)",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "errorLoadingPermissionsError": "Error loading permissions: $error (Welsh)",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "referrals": "Referrals (Welsh)",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "crm": "CRM (Welsh)",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameRejected": "Game rejected (Welsh)",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "appointments": "Appointments (Welsh)",
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "onboardingScreen": "Onboarding Screen (Welsh)",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "welcomeToYourStudio": "Welcome to your studio (Welsh)",
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "update": "Update (Welsh)",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "retry1": "Retry (Welsh)",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "booking": "Booking (Welsh)",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "parentalSettings": "Parental Settings (Welsh)",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "language": "Language (Welsh)",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "deleteSlot": "Delete Slot (Welsh)",
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "organizations": "organizations (TRANSLATE)",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "createNewGame": "Create New Game (Welsh)",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "next1": "Next (Welsh)",
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Welsh)",
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "noAppointmentRequestsFound": "No appointment requests found. (Welsh)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "pleaseSignInToCreateASession": "Please sign in to create a session (Welsh)",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "restrictMatureContent": "Restrict mature content (Welsh)",
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "ambassadors": "Ambassadors (Welsh)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "smsNotifications": "SMS Notifications (Welsh)",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "paymentWasCancelled": "Payment was cancelled (Welsh)",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "clearAll": "Clear All (Welsh)",
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
+  },
+  "viewDetails": "View Details (Welsh)",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "notifications1": "Notifications (Welsh)",
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "liveSessionScheduledWaitingForParentApproval": "Live session scheduled! Waiting for parent approval... (Welsh)",
+  "@liveSessionScheduledWaitingForParentApproval": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "failedToCreateGameE": "Failed to create game: $e (Welsh)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "noChartDataAvailable": "No chart data available (Welsh)",
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
+  },
+  "phonebasedBookingSystem": "• Phone-based booking system (Welsh)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "enableNotifications1": "Enable Notifications (Welsh)",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "invoices": "Invoices (Welsh)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "pleaseActivateYourBusinessProfileToContinue": "Please activate your business profile to continue. (Welsh)",
+  "@pleaseActivateYourBusinessProfileToContinue": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Welsh)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: {scheduledAt}"
+  },
+  "durationDurationinminutes0Minutes": "Duration: {duration} minutes (Welsh)",
+  "@durationDurationinminutes0Minutes": {
+    "description": "Localization key for: Duration: {duration} minutes"
+  },
+  "tryAgain": "Try Again (Welsh)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "deleteBackground": "Delete Background (Welsh)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "currentTierTiertouppercase": "Current Tier: {tier} (Welsh)",
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: {tier}"
+  },
+  "iDoNotConsent": "I Do Not Consent",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "noClientsFoundAddYourFirstClient": "No clients found. Add your first client! (Welsh)",
+  "@noClientsFoundAddYourFirstClient": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "settingsDialogWillBeImplementedHere": "Settings dialog will be implemented here.",
+  "@settingsDialogWillBeImplementedHere": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "groupGroupid": "Group: $groupId",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentRequests": "Appointment Requests (Welsh)",
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "forward": "Forward (Welsh)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "roomAddedSuccessfully": "Room added successfully! (Welsh)",
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "option": "• $option (Welsh)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "responseIndex1": "Response #{number} (Welsh)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #{number}"
+  },
+  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Welsh)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "contentLibrary1": "Content Library (Welsh)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "reply": "Reply (Welsh)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "subscriptionManagement": "Subscription Management (Welsh)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "monetizationSettingsWillBeImplementedHere": "Monetization settings will be implemented here (Welsh)",
+  "@monetizationSettingsWillBeImplementedHere": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Welsh)",
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "editProvider": "Edit Provider",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "localizationContribution": "Localization Contribution (Welsh)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "parentalConsent": "Parental Consent (Welsh)",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Welsh)",
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "areYouSureYouWantToDeleteThisAppointment": "Are you sure you want to delete this appointment? (Welsh)",
+  "@areYouSureYouWantToDeleteThisAppointment": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "syncAppointment": "Sync Appointment (Welsh)",
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "iConsent": "I Consent (Welsh)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "sessionRejected": "Session rejected (Welsh)",
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Welsh)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "edit1": "Edit (Welsh)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "noEventsScheduledThisMonth": "No events scheduled this month (Welsh)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "businessDashboard": "Business Dashboard (Welsh)",
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "noMessagesFound": "No messages found. (Welsh)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "staffStaffidNotSelected": "Staff: {staff}",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: {staff}"
+  },
+  "manageStaffAvailability": "Manage Staff Availability (Welsh)",
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "noMissingTranslations": "No missing translations (Welsh)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "skip": "Skip (Welsh)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "noUsers": "noUsers (TRANSLATE)",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingReferralCode": "Error loading referral code (Welsh)",
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "allCountries": "All Countries (Welsh)",
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "deleteGame": "Delete Game (Welsh)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "staffManagementTools": "• Staff management tools (Welsh)",
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "deleteMessage": "Delete Message (Welsh)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "receiveBookingNotificationsViaSms": "Receive booking notifications via SMS (Welsh)",
+  "@receiveBookingNotificationsViaSms": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "changeRole": "changeRole (TRANSLATE)",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "errorLoadingBookingsSnapshoterror": "Error loading bookings: {error} (Welsh)",
+  "@errorLoadingBookingsSnapshoterror": {
+    "description": "Localization key for: Error loading bookings: {error}"
+  },
+  "openingCustomerPortal": "Opening customer portal... (Welsh)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "signOut": "Sign Out (Welsh)",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "nameProfilename": "Name: {name} (Welsh)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: {name}"
+  },
+  "businessProfileEntryScreenComingSoon": "Business Profile Entry Screen - Coming Soon (Welsh)",
+  "@businessProfileEntryScreenComingSoon": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "upgradeToBusiness": "Upgrade to Business (Welsh)",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "apply": "Apply (Welsh)",
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "errorLoadingSubscriptionError": "Error loading subscription: $error (Welsh)",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "verify": "Verify (Welsh)",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "subscription": "Subscription (Welsh)",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "deleteMyAccount": "Delete My Account (Welsh)",
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "businessAppointmentsEntryScreenComingSoon": "Business Appointments Entry Screen - Coming Soon (Welsh)",
+  "@businessAppointmentsEntryScreenComingSoon": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "viewResponses": "View Responses (Welsh)",
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Welsh)",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Welsh)",
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "continueText": "Continue (Welsh)",
+  "@continueText": {
+    "description": "Localization key for: Continue"
+  },
+  "close1": "Close (Welsh)",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "confirm1": "Confirm (Welsh)",
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "externalMeetings": "External Meetings (Welsh)",
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "approve": "Approve (Welsh)",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "noInvoicesFoundCreateYourFirstInvoice": "No invoices found. Create your first invoice! (Welsh)",
+  "@noInvoicesFoundCreateYourFirstInvoice": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "subscribe": "Subscribe (Welsh)",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "login1": "Login",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "adminOverviewGoesHere": "Admin overview goes here",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "loadingCheckout": "Loading checkout... (Welsh)",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  }
 }

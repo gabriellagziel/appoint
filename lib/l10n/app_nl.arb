@@ -1,761 +1,668 @@
 {
   "@@locale": "nl",
-  "@about": {
-    "description": "About navigation label"
-  },
-  "@accept": {
-    "description": "Description"
-  },
-  "@accessRevokedSuccessfully": {
-    "description": "Description"
-  },
-  "@add": {
-    "description": "Description"
-  },
-  "@appTitle": {
-    "description": "Description"
-  },
-  "@back": {
-    "description": "Description"
-  },
-  "@cancel": {
-    "description": "cancel description"
-  },
-  "@cancelInvite": {
-    "description": "Description"
-  },
-  "@cancelInviteConfirmation": {
-    "description": "Description"
-  },
-  "@checkingPermissions": {
-    "description": "checkingPermissions description"
-  },
-  "@choose": {
-    "description": "Description"
-  },
-  "@clicked": {
-    "description": "clicked description"
-  },
-  "@clientScreenTBD": {
-    "description": "Description"
-  },
-  "@close": {
-    "description": "close description"
-  },
-  "@composeBroadcastMessage": {
-    "description": "composeBroadcastMessage description"
-  },
-  "@confirm": {
-    "description": "Description"
-  },
-  "@confirmPassword": {
-    "description": "Description"
-  },
-  "@connectedChildren": {
-    "description": "Description"
-  },
-  "@content": {
-    "description": "content description"
-  },
-  "@copy": {
-    "description": "Description"
-  },
-  "@createGame": {
-    "description": "Description"
-  },
-  "@createLiveSession": {
-    "description": "Description"
-  },
-  "@createNew": {
-    "description": "Description"
-  },
-  "@createVirtualSession": {
-    "description": "Description"
-  },
-  "@createYourFirstGame": {
-    "description": "Description"
-  },
-  "@createYourFirstSession": {
-    "description": "Description"
-  },
-  "@created": {
-    "description": "created description"
-  },
-  "@customizeMessage": {
-    "description": "Description"
-  },
-  "@cut": {
-    "description": "Description"
-  },
-  "@dashboard": {
-    "description": "Description"
-  },
-  "@decline": {
-    "description": "Description"
-  },
-  "@defaultShareMessage": {
-    "description": "Description"
-  },
-  "@delete": {
-    "description": "Description"
-  },
-  "@details": {
-    "description": "details description"
-  },
-  "@done": {
-    "description": "Description"
-  },
-  "@download": {
-    "description": "Description"
-  },
-  "@edit": {
-    "description": "Description"
-  },
-  "@email": {
-    "description": "Description"
-  },
-  "@enableNotifications": {
-    "description": "Description"
-  },
-  "@enterGroupName": {
-    "description": "Description"
-  },
-  "@error": {
-    "description": "Description"
-  },
-  "@errorCheckingPermissions": {
-    "description": "errorCheckingPermissions description"
-  },
-  "@errorLoadingFamilyLinks": {
-    "description": "Description"
-  },
-  "@errorLoadingInvites": {
-    "description": "Description"
-  },
-  "@errorLoadingPrivacyRequests": {
-    "description": "errorLoadingPrivacyRequests description"
-  },
-  "@errorLoadingProfile": {
-    "description": "Description"
-  },
-  "@errorSavingMessage": {
-    "description": "errorSavingMessage description"
-  },
-  "@errorSendingMessage": {
-    "description": "errorSendingMessage description"
-  },
-  "@failedToActionPrivacyRequest": {
-    "description": "failedToActionPrivacyRequest description"
-  },
-  "@failedToCancelInvite": {
-    "description": "Description"
-  },
-  "@failedToResendOtp": {
-    "description": "Description"
-  },
-  "@failedToRevokeAccess": {
-    "description": "Description"
-  },
-  "@familyDashboard": {
-    "description": "Description"
-  },
-  "@familyMembers": {
-    "description": "Description"
-  },
-  "@fcmToken": {
-    "description": "Description"
-  },
-  "@forgotPassword": {
-    "description": "Description"
-  },
-  "@groupNameOptional": {
-    "description": "Description"
-  },
-  "@home": {
-    "description": "Description"
-  },
-  "@invite": {
-    "description": "Description"
-  },
-  "@inviteCancelledSuccessfully": {
-    "description": "Description"
-  },
-  "@inviteDetail": {
-    "description": "Description"
-  },
-  "@invited": {
-    "description": "Description"
-  },
-  "@knownGroupDetected": {
-    "description": "Description"
-  },
-  "@link": {
-    "description": "link description"
-  },
-  "@loading": {
-    "description": "Description"
-  },
-  "@login": {
-    "description": "Description"
-  },
-  "@logout": {
-    "description": "Description"
-  },
-  "@managePermissions": {
-    "description": "Description"
-  },
-  "@mediaOptional": {
-    "description": "mediaOptional description"
-  },
-  "@meetingReadyMessage": {
-    "description": "Description"
-  },
-  "@meetingSharedSuccessfully": {
-    "description": "Description"
-  },
-  "@messageSavedSuccessfully": {
-    "description": "messageSavedSuccessfully description"
-  },
-  "@messageSentSuccessfully": {
-    "description": "messageSentSuccessfully description"
-  },
-  "@myInvites": {
-    "description": "Description"
-  },
-  "@myProfile": {
-    "description": "Description"
-  },
-  "@next": {
-    "description": "Description"
-  },
-  "@no": {
-    "description": "Description"
-  },
-  "@noBroadcastMessages": {
-    "description": "noBroadcastMessages description"
-  },
-  "@noFamilyMembersYet": {
-    "description": "Description"
-  },
-  "@noGamesYet": {
-    "description": "Description"
-  },
-  "@noInvites": {
-    "description": "Description"
-  },
-  "@noPermissionForBroadcast": {
-    "description": "noPermissionForBroadcast description"
-  },
-  "@noProfileFound": {
-    "description": "Description"
-  },
-  "@noResults": {
-    "description": "Description"
-  },
-  "@noSessionsYet": {
-    "description": "Description"
-  },
-  "@notificationSettings": {
-    "description": "Description"
-  },
-  "@notifications": {
-    "description": "Description"
-  },
-  "@ok": {
-    "description": "Description"
-  },
-  "@opened": {
-    "description": "opened description"
-  },
-  "@otpResentSuccessfully": {
-    "description": "Description"
-  },
-  "@participants": {
-    "description": "Description"
-  },
-  "@password": {
-    "description": "Description"
-  },
-  "@paste": {
-    "description": "Description"
-  },
-  "@pendingInvites": {
-    "description": "Description"
-  },
-  "@pickImage": {
-    "description": "pickImage description"
-  },
-  "@pickVideo": {
-    "description": "pickVideo description"
-  },
-  "@playtimeApprove": {
-    "description": "Description"
-  },
-  "@playtimeChooseFriends": {
-    "description": "Description"
-  },
-  "@playtimeChooseGame": {
-    "description": "Description"
-  },
-  "@playtimeChooseTime": {
-    "description": "Description"
-  },
-  "@playtimeCreate": {
-    "description": "Description"
-  },
-  "@playtimeCreateSession": {
-    "description": "Description"
-  },
-  "@playtimeDescription": {
-    "description": "Description"
-  },
-  "@playtimeEnterGameName": {
-    "description": "Description"
-  },
-  "@playtimeGameApproved": {
-    "description": "Description"
-  },
-  "@playtimeGameDeleted": {
-    "description": "Description"
-  },
-  "@playtimeGameRejected": {
-    "description": "Description"
-  },
-  "@playtimeHub": {
-    "description": "Description"
-  },
-  "@playtimeLandingChooseMode": {
-    "description": "Description"
-  },
-  "@playtimeLive": {
-    "description": "Description"
-  },
-  "@playtimeLiveScheduled": {
-    "description": "Description"
-  },
-  "@playtimeModeLive": {
-    "description": "Description"
-  },
-  "@playtimeModeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeNoSessions": {
-    "description": "Description"
-  },
-  "@playtimeParentDashboardTitle": {
-    "description": "Description"
-  },
-  "@playtimeReject": {
-    "description": "Description"
-  },
-  "@playtimeTitle": {
-    "description": "Description"
-  },
-  "@playtimeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeVirtualStarted": {
-    "description": "Description"
-  },
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Description"
-  },
-  "@pollOptions": {
-    "description": "pollOptions description"
-  },
-  "@previous": {
-    "description": "Description"
-  },
-  "@profile": {
-    "description": "Description"
-  },
-  "@quickActions": {
-    "description": "Description"
-  },
-  "@recentGames": {
-    "description": "Description"
-  },
-  "@recipients": {
-    "description": "recipients description"
-  },
-  "@redo": {
-    "description": "Description"
-  },
+  "refresh": "Vernieuwen",
   "@refresh": {
     "description": "Description"
   },
-  "@removeChild": {
+  "home": "Home",
+  "@home": {
     "description": "Description"
   },
-  "@requestType": {
-    "description": "requestType description"
-  },
-  "@retry": {
+  "noSessionsYet": "Nog geen sessies",
+  "@noSessionsYet": {
     "description": "Description"
   },
-  "@revoke": {
+  "ok": "Oké",
+  "@ok": {
     "description": "Description"
   },
-  "@revokeAccess": {
+  "playtimeLandingChooseMode": "Kies modus",
+  "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "@revokeAccessConfirmation": {
-    "description": "Description"
-  },
-  "@save": {
-    "description": "save description"
-  },
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
-  "@scheduleForLater": {
-    "description": "scheduleForLater description"
-  },
-  "@scheduleMessage": {
-    "description": "Description"
-  },
-  "@scheduled": {
-    "description": "scheduled description"
-  },
-  "@scheduledFor": {
-    "description": "Description"
-  },
-  "@scheduling": {
-    "description": "scheduling description"
-  },
-  "@search": {
-    "description": "Description"
-  },
-  "@select": {
-    "description": "Description"
-  },
-  "@sendNow": {
-    "description": "sendNow description"
-  },
-  "@settings": {
-    "description": "Description"
-  },
-  "@share": {
-    "description": "Description"
-  },
-  "@shareOnWhatsApp": {
-    "description": "Description"
-  },
+  "signUp": "Aanmelden",
   "@signUp": {
     "description": "Description"
   },
-  "@staffScreenTBD": {
+  "scheduleMessage": "Bericht plannen",
+  "@scheduleMessage": {
     "description": "Description"
   },
-  "@status": {
-    "description": "status description"
+  "decline": "Weigeren",
+  "@decline": {
+    "description": "Description"
   },
-  "@statusColon": {
-    "description": "statusColon description"
+  "adminBroadcast": "Admin Broadcast",
+  "@adminBroadcast": {
+    "description": "Localization key for: Admin Broadcast"
   },
+  "login": "[NL] Login",
+  "@login": {
+    "description": "Description"
+  },
+  "playtimeChooseFriends": "Kies vrienden",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "noInvites": "[NL] No invites",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "playtimeChooseTime": "Kies tijd",
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "success": "Succes",
   "@success": {
     "description": "Description"
   },
-  "@targetingFilters": {
-    "description": "targetingFilters description"
-  },
-  "@type": {
-    "description": "type description"
-  },
+  "undo": "[NL] Undo",
   "@undo": {
     "description": "Description"
   },
-  "@upcomingSessions": {
+  "opened": "Geopend",
+  "@opened": {
+    "description": "opened description"
+  },
+  "createVirtualSession": "Virtuele sessie maken",
+  "@createVirtualSession": {
     "description": "Description"
   },
-  "@upload": {
+  "messageSentSuccessfully": "[NL] Message sent successfully",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "redo": "Opnieuw doen",
+  "@redo": {
     "description": "Description"
   },
-  "@viewAll": {
+  "next": "Volgende",
+  "@next": {
     "description": "Description"
   },
-  "@welcome": {
+  "search": "Zoeken",
+  "@search": {
     "description": "Description"
   },
-  "@welcomeToPlaytime": {
+  "cancelInviteConfirmation": "[NL] Are you sure you want to cancel this invite?",
+  "@cancelInviteConfirmation": {
     "description": "Description"
   },
+  "created": "Aangemaakt",
+  "@created": {
+    "description": "created description"
+  },
+  "revokeAccess": "[NL] Revoke Access",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "saveGroupForRecognition": "[NL] Save Group for Recognition",
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
+  "playtimeLiveScheduled": "[NL] Live playtime scheduled!",
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "revokeAccessConfirmation": "[NL] Are you sure you want to revoke access?",
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "download": "Downloaden",
+  "@download": {
+    "description": "Description"
+  },
+  "password": "[NL] Password",
+  "@password": {
+    "description": "Description"
+  },
+  "errorLoadingFamilyLinks": "[NL] Error loading family links",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "cancel": "Annuleren",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "playtimeCreate": "Playtime maken",
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "failedToActionPrivacyRequest": "Privacyverzoek mislukt",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "appTitle": "[NL] APP-OINT",
+  "@appTitle": {
+    "description": "Description"
+  },
+  "accept": "Accepteren",
+  "@accept": {
+    "description": "Description"
+  },
+  "playtimeModeVirtual": "Virtuele modus",
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "playtimeDescription": "[NL] Enjoy live or virtual games with your friends!",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "delete": "Verwijderen",
+  "@delete": {
+    "description": "Description"
+  },
+  "playtimeVirtualStarted": "Virtuele sessie gestart",
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createYourFirstGame": "Maak je eerste spel",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "participants": "Deelnemers",
+  "@participants": {
+    "description": "Description"
+  },
+  "recipients": "[NL] Recipients",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "noResults": "[NL] No results found",
+  "@noResults": {
+    "description": "Description"
+  },
+  "yes": "Ja",
   "@yes": {
     "description": "yes description"
   },
-  "@yesCancel": {
+  "invite": "Uitnodigen",
+  "@invite": {
+    "description": "Description"
+  },
+  "playtimeModeLive": "Live modus",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "done": "Klaar",
+  "@done": {
+    "description": "Description"
+  },
+  "defaultShareMessage": "[NL] Let's meet via Appoint!",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "no": "Nee",
+  "@no": {
+    "description": "Description"
+  },
+  "playtimeHub": "Playtime hub",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "createLiveSession": "Live sessie maken",
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "enableNotifications": "[NL] Enable Notifications",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "invited": "Uitgenodigd",
+  "@invited": {
+    "description": "Description"
+  },
+  "content": "[NL] Content",
+  "@content": {
+    "description": "content description"
+  },
+  "meetingSharedSuccessfully": "[NL] Meeting shared successfully",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "welcomeToPlaytime": "Welkom bij Playtime",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "viewAll": "Alles bekijken",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "playtimeVirtual": "Virtuele Playtime",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "staffScreenTBD": "[NL] Staff screen coming soon",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "cut": "Knippen",
+  "@cut": {
+    "description": "Description"
+  },
+  "inviteCancelledSuccessfully": "[NL] Invite cancelled successfully",
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "retry": "Opnieuw proberen",
+  "@retry": {
+    "description": "Description"
+  },
+  "composeBroadcastMessage": "Uitzendbericht opstellen",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "sendNow": "Nu verzenden",
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "noGamesYet": "Nog geen spellen",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "select": "Selecteren",
+  "@select": {
     "description": "Description"
   },
   "about": "Over",
-  "accept": "Accepteren",
-  "accessRevokedSuccessfully": "[NL] Access revoked successfully",
-  "add": "[NL] Add",
-  "appTitle": "[NL] APP-OINT",
-  "back": "[NL] Back",
-  "cancel": "Annuleren",
-  "cancelInvite": "[NL] Cancel Invite",
-  "cancelInviteConfirmation": "[NL] Are you sure you want to cancel this invite?",
-  "checkingPermissions": "[NL] Checking permissions...",
+  "@about": {
+    "description": "About navigation label"
+  },
   "choose": "Kies",
-  "clicked": "[NL] Clicked",
-  "clientScreenTBD": "[NL] Client screen coming soon",
-  "close": "[NL] Close",
-  "composeBroadcastMessage": "Uitzendbericht opstellen",
-  "confirm": "Bevestigen",
-  "confirmPassword": "[NL] Confirm Password",
-  "connectedChildren": "[NL] Connected Children",
-  "content": "[NL] Content",
-  "copy": "Kopiëren",
-  "createGame": "[NL] Create Game",
-  "createLiveSession": "Live sessie maken",
-  "createNew": "Nieuw maken",
-  "createVirtualSession": "Virtuele sessie maken",
-  "createYourFirstGame": "Maak je eerste spel",
-  "createYourFirstSession": "Maak je eerste sessie",
-  "created": "Aangemaakt",
-  "customizeMessage": "Bericht aanpassen",
-  "cut": "Knippen",
-  "dashboard": "Dashboard",
-  "decline": "Weigeren",
-  "defaultShareMessage": "[NL] Let's meet via Appoint!",
-  "delete": "Verwijderen",
-  "details": "Details",
-  "done": "Klaar",
-  "download": "Downloaden",
-  "edit": "Bewerken",
-  "email": "E-mail",
-  "enableNotifications": "[NL] Enable Notifications",
-  "enterGroupName": "[NL] Enter group name",
-  "error": "Fout",
-  "errorCheckingPermissions": "[NL] Error checking permissions",
-  "errorLoadingFamilyLinks": "[NL] Error loading family links",
-  "errorLoadingInvites": "[NL] Error loading invites",
-  "errorLoadingPrivacyRequests": "Fout bij laden privacyverzoeken",
-  "errorLoadingProfile": "[NL] Error loading profile",
-  "errorSavingMessage": "Fout bij opslaan bericht",
-  "errorSendingMessage": "Fout bij verzenden bericht",
-  "failedToActionPrivacyRequest": "Privacyverzoek mislukt",
-  "failedToCancelInvite": "[NL] Failed to cancel invite",
-  "failedToResendOtp": "OTP opnieuw verzenden mislukt",
-  "failedToRevokeAccess": "[NL] Failed to revoke access",
-  "familyDashboard": "[NL] Family Dashboard",
-  "familyMembers": "[NL] Family Members",
-  "fcmToken": "[NL] FCM Token",
-  "forgotPassword": "[NL] Forgot Password?",
-  "groupNameOptional": "[NL] Group Name (Optional)",
-  "home": "Home",
-  "invite": "Uitnodigen",
-  "inviteCancelledSuccessfully": "[NL] Invite cancelled successfully",
-  "inviteDetail": "[NL] Invite Details",
-  "invited": "Uitgenodigd",
-  "knownGroupDetected": "[NL] Known group detected",
-  "link": "[NL] Link",
-  "loading": "Laden",
-  "login": "[NL] Login",
-  "logout": "Uitloggen",
-  "managePermissions": "[NL] Manage Permissions",
-  "mediaOptional": "[NL] Media (Optional)",
-  "meetingReadyMessage": "[NL] Your meeting is ready! Join now",
-  "meetingSharedSuccessfully": "[NL] Meeting shared successfully",
-  "messageSavedSuccessfully": "Bericht succesvol opgeslagen",
-  "messageSentSuccessfully": "[NL] Message sent successfully",
-  "myInvites": "[NL] My Invites",
-  "myProfile": "[NL] My Profile",
-  "next": "Volgende",
-  "no": "Nee",
-  "noBroadcastMessages": "Geen uitzendberichten",
-  "noFamilyMembersYet": "[NL] No family members yet",
-  "noGamesYet": "Nog geen spellen",
-  "noInvites": "[NL] No invites",
-  "noPermissionForBroadcast": "[NL] No permission for broadcast",
-  "noProfileFound": "[NL] No profile found",
-  "noResults": "[NL] No results found",
-  "noSessionsYet": "Nog geen sessies",
-  "notificationSettings": "[NL] Notification Settings",
-  "notifications": "[NL] Notifications",
-  "ok": "Oké",
-  "opened": "Geopend",
-  "otpResentSuccessfully": "[NL] OTP resent successfully",
-  "participants": "Deelnemers",
-  "password": "[NL] Password",
-  "paste": "Plakken",
-  "pendingInvites": "[NL] Pending Invites",
-  "pickImage": "[NL] Pick Image",
-  "pickVideo": "Video kiezen",
-  "playtimeApprove": "Playtime goedkeuren",
-  "playtimeChooseFriends": "Kies vrienden",
-  "playtimeChooseGame": "[NL] Choose a game",
-  "playtimeChooseTime": "Kies tijd",
-  "playtimeCreate": "Playtime maken",
-  "playtimeCreateSession": "Sessie maken",
-  "playtimeDescription": "[NL] Enjoy live or virtual games with your friends!",
-  "playtimeEnterGameName": "[NL] Enter game name",
-  "playtimeGameApproved": "Spel goedgekeurd",
-  "playtimeGameDeleted": "Spel verwijderd",
-  "playtimeGameRejected": "Spel afgewezen",
-  "playtimeHub": "Playtime hub",
-  "playtimeLandingChooseMode": "Kies modus",
-  "playtimeLive": "Live Playtime",
-  "playtimeLiveScheduled": "[NL] Live playtime scheduled!",
-  "playtimeModeLive": "Live modus",
-  "playtimeModeVirtual": "Virtuele modus",
-  "playtimeNoSessions": "[NL] No playtime sessions found.",
-  "playtimeParentDashboardTitle": "[NL] Playtime Dashboard",
-  "playtimeReject": "Playtime weigeren",
-  "playtimeTitle": "Playtime titel",
-  "playtimeVirtual": "Virtuele Playtime",
-  "playtimeVirtualStarted": "Virtuele sessie gestart",
-  "pleaseLoginForFamilyFeatures": "[NL] Please login to access family features",
-  "pleaseLoginToViewProfile": "[NL] Please log in to view your profile.",
-  "pollOptions": "[NL] Poll Options",
-  "previous": "[NL] Previous",
+  "@choose": {
+    "description": "Description"
+  },
   "profile": "[NL] Profile",
-  "quickActions": "Snelle acties",
-  "recentGames": "Recente spellen",
-  "recipients": "[NL] Recipients",
-  "redo": "Opnieuw doen",
-  "refresh": "Vernieuwen",
+  "@profile": {
+    "description": "Description"
+  },
   "removeChild": "[NL] Remove Child",
-  "requestType": "Verzoektype",
-  "retry": "Opnieuw proberen",
-  "revoke": "[NL] Revoke",
-  "revokeAccess": "[NL] Revoke Access",
-  "revokeAccessConfirmation": "[NL] Are you sure you want to revoke access?",
-  "save": "Opslaan",
-  "saveGroupForRecognition": "[NL] Save Group for Recognition",
-  "scheduleForLater": "[NL] Schedule for Later",
-  "scheduleMessage": "Bericht plannen",
-  "scheduled": "[NL] Scheduled",
-  "scheduledFor": "[NL] Scheduled for",
-  "scheduling": "Plannen",
-  "search": "Zoeken",
-  "select": "Selecteren",
-  "sendNow": "Nu verzenden",
-  "settings": "[NL] Settings",
-  "share": "Delen",
-  "shareOnWhatsApp": "[NL] Share on WhatsApp",
-  "signUp": "Aanmelden",
-  "staffScreenTBD": "[NL] Staff screen coming soon",
+  "@removeChild": {
+    "description": "Description"
+  },
   "status": "[NL] Status",
-  "statusColon": "[NL] Status:",
-  "success": "Succes",
-  "targetingFilters": "[NL] Targeting Filters",
-  "type": "Type",
-  "undo": "[NL] Undo",
-  "upcomingSessions": "Aankomende sessies",
-  "upload": "Uploaden",
-  "viewAll": "Alles bekijken",
+  "@status": {
+    "description": "status description"
+  },
+  "logout": "Uitloggen",
+  "@logout": {
+    "description": "Description"
+  },
+  "paste": "Plakken",
+  "@paste": {
+    "description": "Description"
+  },
   "welcome": "Welkom",
-  "welcomeToPlaytime": "Welkom bij Playtime",
-  "yes": "Ja",
+  "@welcome": {
+    "description": "Description"
+  },
+  "playtimeCreateSession": "Sessie maken",
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "familyMembers": "[NL] Family Members",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "upload": "Uploaden",
+  "@upload": {
+    "description": "Description"
+  },
+  "upcomingSessions": "Aankomende sessies",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "enterGroupName": "[NL] Enter group name",
+  "@enterGroupName": {
+    "description": "Description"
+  },
+  "confirm": "Bevestigen",
+  "@confirm": {
+    "description": "Description"
+  },
+  "playtimeLive": "Live Playtime",
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "errorLoadingInvites": "[NL] Error loading invites",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "targetingFilters": "[NL] Targeting Filters",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "pickVideo": "Video kiezen",
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "playtimeGameDeleted": "Spel verwijderd",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "scheduleForLater": "[NL] Schedule for Later",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "accessRevokedSuccessfully": "[NL] Access revoked successfully",
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "type": "Type",
+  "@type": {
+    "description": "type description"
+  },
+  "checkingPermissions": "[NL] Checking permissions...",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "copy": "Kopiëren",
+  "@copy": {
+    "description": "Description"
+  },
   "yesCancel": "Ja, annuleren",
-  "errorEstimatingRecipients": "errorEstimatingRecipients (TRANSLATE)",
-  "@errorEstimatingRecipients": {
-    "description": "errorEstimatingRecipients description"
+  "@yesCancel": {
+    "description": "Description"
   },
-  "errorPickingImage": "errorPickingImage (TRANSLATE)",
-  "@errorPickingImage": {
-    "description": "errorPickingImage description"
+  "email": "E-mail",
+  "@email": {
+    "description": "Description"
   },
-  "errorPickingVideo": "errorPickingVideo (TRANSLATE)",
-  "@errorPickingVideo": {
-    "description": "errorPickingVideo description"
+  "shareOnWhatsApp": "[NL] Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Description"
   },
-  "organizations": "organizations (TRANSLATE)",
-  "@organizations": {
-    "description": "organizations description"
+  "notificationSettings": "[NL] Notification Settings",
+  "@notificationSettings": {
+    "description": "Description"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
-  "@noOrganizations": {
-    "description": "noOrganizations description"
+  "myProfile": "[NL] My Profile",
+  "@myProfile": {
+    "description": "Description"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
-  "@errorLoadingOrganizations": {
-    "description": "errorLoadingOrganizations description"
+  "revoke": "[NL] Revoke",
+  "@revoke": {
+    "description": "Description"
   },
-  "members": "members (TRANSLATE)",
-  "@members": {
-    "description": "members description"
+  "noBroadcastMessages": "Geen uitzendberichten",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
   },
-  "users": "users (TRANSLATE)",
-  "@users": {
-    "description": "users description"
+  "requestType": "Verzoektype",
+  "@requestType": {
+    "description": "requestType description"
   },
-  "noUsers": "noUsers (TRANSLATE)",
-  "@noUsers": {
-    "description": "noUsers description"
+  "notifications": "[NL] Notifications",
+  "@notifications": {
+    "description": "Description"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
-  "@errorLoadingUsers": {
-    "description": "errorLoadingUsers description"
+  "details": "Details",
+  "@details": {
+    "description": "details description"
   },
-  "changeRole": "changeRole (TRANSLATE)",
-  "@changeRole": {
-    "description": "changeRole description"
+  "cancelInvite": "[NL] Cancel Invite",
+  "@cancelInvite": {
+    "description": "Description"
   },
-  "totalAppointments": "totalAppointments (TRANSLATE)",
-  "@totalAppointments": {
-    "description": "totalAppointments description"
+  "createNew": "Nieuw maken",
+  "@createNew": {
+    "description": "Description"
   },
-  "completedAppointments": "completedAppointments (TRANSLATE)",
-  "@completedAppointments": {
-    "description": "completedAppointments description"
+  "settings": "[NL] Settings",
+  "@settings": {
+    "description": "Description"
   },
-  "revenue": "revenue (TRANSLATE)",
-  "@revenue": {
-    "description": "revenue description"
+  "playtimeReject": "Playtime weigeren",
+  "@playtimeReject": {
+    "description": "Description"
   },
-  "errorLoadingStats": "errorLoadingStats (TRANSLATE)",
-  "@errorLoadingStats": {
-    "description": "errorLoadingStats description"
+  "errorLoadingProfile": "[NL] Error loading profile",
+  "@errorLoadingProfile": {
+    "description": "Description"
   },
-  "appointment": "appointment (TRANSLATE)",
-  "@appointment": {
-    "description": "appointment description"
+  "edit": "Bewerken",
+  "@edit": {
+    "description": "Description"
   },
-  "from": "from (TRANSLATE)",
-  "@from": {
-    "description": "from description"
+  "add": "[NL] Add",
+  "@add": {
+    "description": "Description"
   },
-  "phone": "phone (TRANSLATE)",
-  "@phone": {
-    "description": "phone description"
+  "playtimeGameApproved": "Spel goedgekeurd",
+  "@playtimeGameApproved": {
+    "description": "Description"
   },
-  "noRouteDefined": "noRouteDefined (TRANSLATE)",
-  "@noRouteDefined": {
-    "description": "noRouteDefined description"
+  "forgotPassword": "[NL] Forgot Password?",
+  "@forgotPassword": {
+    "description": "Description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
-  "@meetingDetails": {
-    "description": "meetingDetails description"
+  "familyDashboard": "[NL] Family Dashboard",
+  "@familyDashboard": {
+    "description": "Description"
   },
-  "meetingId": "meetingId (TRANSLATE)",
-  "@meetingId": {
-    "description": "meetingId description"
+  "loading": "Laden",
+  "@loading": {
+    "description": "Description"
   },
-  "creator": "creator (TRANSLATE)",
-  "@creator": {
-    "description": "creator description"
+  "quickActions": "Snelle acties",
+  "@quickActions": {
+    "description": "Description"
   },
-  "context": "context (TRANSLATE)",
-  "@context": {
-    "description": "context description"
+  "playtimeTitle": "Playtime titel",
+  "@playtimeTitle": {
+    "description": "Description"
   },
-  "group": "group (TRANSLATE)",
-  "@group": {
-    "description": "group description"
+  "otpResentSuccessfully": "[NL] OTP resent successfully",
+  "@otpResentSuccessfully": {
+    "description": "Description"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
-  "@requestPrivateSession": {
-    "description": "requestPrivateSession description"
+  "errorCheckingPermissions": "[NL] Error checking permissions",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
   },
-  "privacyRequestSent": "privacyRequestSent (TRANSLATE)",
-  "@privacyRequestSent": {
-    "description": "privacyRequestSent description"
+  "clientScreenTBD": "[NL] Client screen coming soon",
+  "@clientScreenTBD": {
+    "description": "Description"
   },
-  "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
-  "@failedToSendPrivacyRequest": {
-    "description": "failedToSendPrivacyRequest description"
+  "fcmToken": "[NL] FCM Token",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "pickImage": "[NL] Pick Image",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "previous": "[NL] Previous",
+  "@previous": {
+    "description": "Description"
+  },
+  "noProfileFound": "[NL] No profile found",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "noFamilyMembersYet": "[NL] No family members yet",
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "mediaOptional": "[NL] Media (Optional)",
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "messageSavedSuccessfully": "Bericht succesvol opgeslagen",
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "scheduledFor": "[NL] Scheduled for",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "description": "Description"
+  },
+  "noPermissionForBroadcast": "[NL] No permission for broadcast",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "@playtimeAdminPanelTitle": {
+    "description": "Localization key for: Playtime Games – Admin"
+  },
+  "inviteDetail": "[NL] Invite Details",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "scheduled": "[NL] Scheduled",
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "failedToResendOtp": "OTP opnieuw verzenden mislukt",
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "scheduling": "Plannen",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "errorSavingMessage": "Fout bij opslaan bericht",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "save": "Opslaan",
+  "@save": {
+    "description": "save description"
+  },
+  "playtimeApprove": "Playtime goedkeuren",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "createYourFirstSession": "Maak je eerste sessie",
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "playtimeGameRejected": "Spel afgewezen",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "failedToRevokeAccess": "[NL] Failed to revoke access",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "recentGames": "Recente spellen",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "customizeMessage": "Bericht aanpassen",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "failedToCancelInvite": "[NL] Failed to cancel invite",
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "errorSendingMessage": "Fout bij verzenden bericht",
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "confirmPassword": "[NL] Confirm Password",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "errorLoadingPrivacyRequests": "Fout bij laden privacyverzoeken",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "connectedChildren": "[NL] Connected Children",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "share": "Delen",
+  "@share": {
+    "description": "Description"
+  },
+  "playtimeEnterGameName": "[NL] Enter game name",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "pleaseLoginForFamilyFeatures": "[NL] Please login to access family features",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "myInvites": "[NL] My Invites",
+  "@myInvites": {
+    "description": "Description"
+  },
+  "createGame": "[NL] Create Game",
+  "@createGame": {
+    "description": "Description"
+  },
+  "groupNameOptional": "[NL] Group Name (Optional)",
+  "@groupNameOptional": {
+    "description": "Description"
+  },
+  "playtimeNoSessions": "[NL] No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "adminScreenTBD": "Admin screen coming soon",
+  "@adminScreenTBD": {
+    "description": "Localization key for: Admin screen coming soon"
+  },
+  "playtimeParentDashboardTitle": "[NL] Playtime Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "close": "[NL] Close",
+  "@close": {
+    "description": "close description"
+  },
+  "knownGroupDetected": "[NL] Known group detected",
+  "@knownGroupDetected": {
+    "description": "Description"
+  },
+  "back": "[NL] Back",
+  "@back": {
+    "description": "Description"
+  },
+  "playtimeChooseGame": "[NL] Choose a game",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "managePermissions": "[NL] Manage Permissions",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "pollOptions": "[NL] Poll Options",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "clicked": "[NL] Clicked",
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "link": "[NL] Link",
+  "@link": {
+    "description": "link description"
+  },
+  "meetingReadyMessage": "[NL] Your meeting is ready! Join now",
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "pendingInvites": "[NL] Pending Invites",
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "statusColon": "[NL] Status:",
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "pleaseLoginToViewProfile": "[NL] Please log in to view your profile.",
+  "@pleaseLoginToViewProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "adminMetrics": "Admin Metrics",
+  "@adminMetrics": {
+    "description": "Localization key for: Admin Metrics"
   },
   "overview": "Overview",
   "@overview": {
@@ -765,5 +672,2192 @@
   "@bookings": {
     "description": "Description"
   },
-  "contentLibrary": "Content Library"
+  "users": "users (TRANSLATE)",
+  "@users": {
+    "description": "users description"
+  },
+  "revenue": "revenue (TRANSLATE)",
+  "@revenue": {
+    "description": "revenue description"
+  },
+  "contentLibrary": "Content Library",
+  "@contentLibrary": {
+    "description": "Localization key for: Content Library"
+  },
+  "authErrorUserNotFound": "No account found with this email address.",
+  "@authErrorUserNotFound": {
+    "description": "Localization key for: No account found with this email address."
+  },
+  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "@authErrorWrongPassword": {
+    "description": "Localization key for: Incorrect password. Please try again."
+  },
+  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Localization key for: Please enter a valid email address."
+  },
+  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "@authErrorUserDisabled": {
+    "description": "Localization key for: This account has been disabled. Please contact support."
+  },
+  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "@authErrorWeakPassword": {
+    "description": "Localization key for: Password is too weak. Please choose a stronger password."
+  },
+  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Localization key for: An account with this email already exists."
+  },
+  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "@authErrorTooManyRequests": {
+    "description": "Localization key for: Too many failed attempts. Please try again later."
+  },
+  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
+  },
+  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "@authErrorInvalidCredential": {
+    "description": "Localization key for: Invalid credentials. Please try again."
+  },
+  "authErrorAccountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method.",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Localization key for: An account already exists with this email using a different sign-in method."
+  },
+  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Localization key for: These credentials are already associated with another account."
+  },
+  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Localization key for: Network error. Please check your connection and try again."
+  },
+  "socialAccountConflictTitle": "Account Already Exists (Dutch)",
+  "@socialAccountConflictTitle": {
+    "description": "Localization key for: Account Already Exists"
+  },
+  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Dutch)",
+  "@socialAccountConflictMessage": {
+    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
+  },
+  "linkAccounts": "Link Accounts (Dutch)",
+  "@linkAccounts": {
+    "description": "Localization key for: Link Accounts"
+  },
+  "signInWithExistingMethod": "Sign in with existing method (Dutch)",
+  "@signInWithExistingMethod": {
+    "description": "Localization key for: Sign in with existing method"
+  },
+  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Please log in again to perform this operation."
+  },
+  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
+  },
+  "authErrorInvalidVerificationCode": "The verification code is invalid.",
+  "@authErrorInvalidVerificationCode": {
+    "description": "Localization key for: The verification code is invalid."
+  },
+  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: The verification ID is invalid."
+  },
+  "authErrorMissingVerificationCode": "Please enter the verification code.",
+  "@authErrorMissingVerificationCode": {
+    "description": "Localization key for: Please enter the verification code."
+  },
+  "authErrorMissingVerificationId": "Missing verification ID.",
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Missing verification ID."
+  },
+  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: The phone number is invalid."
+  },
+  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Please enter a phone number."
+  },
+  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
+  },
+  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: The verification code has expired. Please request a new one."
+  },
+  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Your session has expired. Please log in again."
+  },
+  "authErrorMultiFactorAuthRequired": "Multi-factor authentication is required.",
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Localization key for: Multi-factor authentication is required."
+  },
+  "authErrorMultiFactorInfoNotFound": "Multi-factor information not found.",
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Localization key for: Multi-factor information not found."
+  },
+  "authErrorMissingMultiFactorSession": "Missing multi-factor session.",
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Localization key for: Missing multi-factor session."
+  },
+  "authErrorInvalidMultiFactorSession": "Invalid multi-factor session.",
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Localization key for: Invalid multi-factor session."
+  },
+  "authErrorSecondFactorAlreadyInUse": "This second factor is already in use.",
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Localization key for: This second factor is already in use."
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "Maximum number of second factors exceeded.",
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Localization key for: Maximum number of second factors exceeded."
+  },
+  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
+  },
+  "authErrorEmailChangeNeedsVerification": "Email change requires verification.",
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Localization key for: Email change requires verification."
+  },
+  "authErrorPhoneNumberAlreadyExists": "This phone number is already in use.",
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Localization key for: This phone number is already in use."
+  },
+  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: The password is invalid or too weak."
+  },
+  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: The ID token is invalid."
+  },
+  "authErrorIdTokenExpired": "The ID token has expired.",
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: The ID token has expired."
+  },
+  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: The ID token has been revoked."
+  },
+  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "@authErrorInternalError": {
+    "description": "Localization key for: An internal error occurred. Please try again."
+  },
+  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: An invalid argument was provided."
+  },
+  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Invalid custom claims provided."
+  },
+  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: The continue URL is invalid."
+  },
+  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: The creation time is invalid."
+  },
+  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: The disabled field value is invalid."
+  },
+  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: The display name is invalid."
+  },
+  "authErrorInvalidDynamicLinkDomain": "The dynamic link domain is invalid.",
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Localization key for: The dynamic link domain is invalid."
+  },
+  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: The email verified value is invalid."
+  },
+  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: The hash algorithm is invalid."
+  },
+  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: The hash block size is invalid."
+  },
+  "authErrorInvalidHashDerivedKeyLength": "The hash derived key length is invalid.",
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Localization key for: The hash derived key length is invalid."
+  },
+  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: The hash key is invalid."
+  },
+  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: The hash memory cost is invalid."
+  },
+  "authErrorInvalidHashParallelization": "The hash parallelization is invalid.",
+  "@authErrorInvalidHashParallelization": {
+    "description": "Localization key for: The hash parallelization is invalid."
+  },
+  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: The hash rounds value is invalid."
+  },
+  "authErrorInvalidHashSaltSeparator": "The hash salt separator is invalid.",
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Localization key for: The hash salt separator is invalid."
+  },
+  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: The last sign-in time is invalid."
+  },
+  "authErrorInvalidPageToken": "The page token is invalid.",
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: The page token is invalid."
+  },
+  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: The provider data is invalid."
+  },
+  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: The provider ID is invalid."
+  },
+  "authErrorInvalidSessionCookieDuration": "The session cookie duration is invalid.",
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Localization key for: The session cookie duration is invalid."
+  },
+  "authErrorInvalidUid": "The UID is invalid.",
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: The UID is invalid."
+  },
+  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: The user import record is invalid."
+  },
+  "authErrorMaximumUserCountExceeded": "Maximum user import count exceeded.",
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Localization key for: Maximum user import count exceeded."
+  },
+  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Missing Android package name."
+  },
+  "authErrorMissingContinueUri": "Missing continue URL.",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Missing continue URL."
+  },
+  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Missing hash algorithm."
+  },
+  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Missing iOS bundle ID."
+  },
+  "authErrorMissingUid": "Missing UID.",
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Missing UID."
+  },
+  "authErrorMissingOauthClientSecret": "Missing OAuth client secret.",
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Localization key for: Missing OAuth client secret."
+  },
+  "authErrorProjectNotFound": "Firebase project not found.",
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Firebase project not found."
+  },
+  "authErrorReservedClaims": "Reserved claims provided.",
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Reserved claims provided."
+  },
+  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Session cookie has expired."
+  },
+  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Session cookie has been revoked."
+  },
+  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: The UID is already in use."
+  },
+  "authErrorUnauthorizedContinueUri": "The continue URL domain is not whitelisted.",
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Localization key for: The continue URL domain is not whitelisted."
+  },
+  "authErrorUnknown": "An unknown authentication error occurred.",
+  "@authErrorUnknown": {
+    "description": "Localization key for: An unknown authentication error occurred."
+  },
+  "checkingPermissions1": "Checking permissions... (Dutch)",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "paymentSuccessful": "Payment Successful! (Dutch)",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "businessAvailability": "Business Availability (Dutch)",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "send": "Send (Dutch)",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Dutch)",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: {payloadTitle}"
+  },
+  "gameList": "Game List (Dutch)",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "deleteAvailability": "Delete Availability (Dutch)",
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "connectToGoogleCalendar": "Connect to Google Calendar (Dutch)",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "adminFreeAccess": "Admin Free Access",
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "emailProfileemail": "Email: {profileEmail} (Dutch)",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: {profileEmail}"
+  },
+  "calendar": "Calendar (Dutch)",
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "upload1": "Upload (Dutch)",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "resolved": "Resolved (Dutch)",
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "keepSubscription": "Keep Subscription (Dutch)",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "virtualSessionCreatedInvitingFriends": "Virtual session created! Inviting friends... (Dutch)",
+  "@virtualSessionCreatedInvitingFriends": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "noEventsScheduledForToday": "No events scheduled for today (Dutch)",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "exportData": "Export Data (Dutch)",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "rewards": "Rewards (Dutch)",
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "time": "Time (Dutch)",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "userCid": "User {id}",
+  "@userCid": {
+    "description": "Localization key for: User {id}"
+  },
+  "noSlots": "No slots (Dutch)",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
+  },
+  "signIn": "Sign In (Dutch)",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "homeFeedScreen": "Home Feed Screen (Dutch)",
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "selectLocation": "Select Location (Dutch)",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "noTicketsYet": "No tickets yet (Dutch)",
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "meetingSharedSuccessfully1": "Meeting shared successfully! (Dutch)",
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "studioProfile": "Studio Profile (Dutch)",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "subscriptionUnavailable": "Subscription unavailable (Dutch)",
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
+  },
+  "confirmBooking": "Confirm Booking (Dutch)",
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "failedToUpdatePermissionE": "Failed to update permission: $e (Dutch)",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "reject": "Reject (Dutch)",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "ambassadorStatusAmbassadorstatus": "Ambassador Status: {ambassadorStatus} (Dutch)",
+  "@ambassadorStatusAmbassadorstatus": {
+    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
+  },
+  "noProviders": "No providers",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "checkingSubscription": "Checking subscription... (Dutch)",
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "errorPickingImageE": "Error picking image: $e (Dutch)",
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "noContentAvailableYet": "No content available yet (Dutch)",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "resolve": "Resolve (Dutch)",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorLoadingSurveysError": "Error loading surveys: $error (Dutch)",
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "errorLogerrormessage": "Error: {errorMessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: {errorMessage}"
+  },
+  "getHelpWithYourAccount": "Get help with your account (Dutch)",
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "pay": "Pay (Dutch)",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "@meetingDetails": {
+    "description": "meetingDetails description"
+  },
+  "errorLoadingAppointments": "Error loading appointments (Dutch)",
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "changesSavedSuccessfully": "Changes saved successfully! (Dutch)",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "createNewInvoice": "Create New Invoice (Dutch)",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "profileNotFound": "Profile not found. (Dutch)",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "errorConfirmingPaymentE": "Error confirming payment: $e (Dutch)",
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "inviteFriends": "Invite Friends (Dutch)",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "profileSaved": "Profile saved! (Dutch)",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "receiveBookingNotificationsViaEmail": "Receive booking notifications via email (Dutch)",
+  "@receiveBookingNotificationsViaEmail": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "valuetointk": "\\${value}K (Dutch)",
+  "@valuetointk": {
+    "description": "Localization key for: \\${value}K"
+  },
+  "deleteAccount": "Delete Account (Dutch)",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "profile1": "Profile (Dutch)",
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "businessOnboarding": "Business Onboarding (Dutch)",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "addNewClient": "Add New Client (Dutch)",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "darkMode": "Dark Mode (Dutch)",
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "addProvider": "Add Provider",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for {path}"
+  },
+  "youWillReceiveAConfirmationEmailShortly": "You will receive a confirmation email shortly. (Dutch)",
+  "@youWillReceiveAConfirmationEmailShortly": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "addQuestion": "Add Question (Dutch)",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "privacyPolicy": "Privacy Policy (Dutch)",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "branchesLengthBranches": "{branchCount} branches (Dutch)",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: {branchCount} branches"
+  },
+  "join": "Join (Dutch)",
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "businessSubscription": "Business Subscription (Dutch)",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "myInvites1": "My Invites (Dutch)",
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "providers": "Providers",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "surveyManagement": "Survey Management (Dutch)",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
+  },
+  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Dutch)",
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "readOurPrivacyPolicy": "Read our privacy policy (Dutch)",
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
+  },
+  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Dutch)",
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "refresh1": "Refresh (Dutch)",
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "roomUpdatedSuccessfully": "Room updated successfully! (Dutch)",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "contentDetail": "Content Detail (Dutch)",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
+  },
+  "cancelSubscription": "Cancel Subscription (Dutch)",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "successfullyRegisteredAsAmbassador": "Successfully registered as Ambassador! (Dutch)",
+  "@successfullyRegisteredAsAmbassador": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "save1": "Save (Dutch)",
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "copy1": "Copy (Dutch)",
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "failedToSendInvitationE": "Failed to send invitation: $e (Dutch)",
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "surveyScore": "Survey Score (Dutch)",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
+  },
+  "userUserid": "User $userId",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "noAppointmentsFound": "No appointments found. (Dutch)",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "responseDetail": "Response Detail (Dutch)",
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "businessVerificationScreenComingSoon": "Business Verification Screen - Coming Soon (Dutch)",
+  "@businessVerificationScreenComingSoon": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "businessProfileActivatedSuccessfully": "Business profile activated successfully! (Dutch)",
+  "@businessProfileActivatedSuccessfully": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Dutch)",
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "businessDashboardEntryScreenComingSoon": "Business Dashboard Entry Screen - Coming Soon (Dutch)",
+  "@businessDashboardEntryScreenComingSoon": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "contentFilter": "Content Filter (Dutch)",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "helpSupport": "Help & Support (Dutch)",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "editRoom": "Edit Room (Dutch)",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "appointmentApptid": "Appointment: {appointmentId}",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: {deviceInfo}"
+  },
+  "businessCrmEntryScreenComingSoon": "Business CRM Entry Screen - Coming Soon (Dutch)",
+  "@businessCrmEntryScreenComingSoon": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "adminDashboard": "Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "orgmemberidslengthMembers": "{memberCount} members",
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: {memberCount} members"
+  },
+  "errorLoadingDashboardError": "Error loading dashboard: $error (Dutch)",
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "gameDeletedSuccessfully": "Game deleted successfully! (Dutch)",
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "viewResponsesComingSoon": "View responses - Coming soon! (Dutch)",
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "deleteProvider": "Delete Provider",
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "errorLoadingRewards": "Error loading rewards (Dutch)",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "failedToDeleteAccountE": "Failed to delete account: $e (Dutch)",
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "invited1": "Invited (Dutch)",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "noBranchesAvailable": "No branches available (Dutch)",
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "errorError": "Error: $error (Dutch)",
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "noEvents": "No events (Dutch)",
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "gameCreatedSuccessfully": "Game created successfully! (Dutch)",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "add1": "Add (Dutch)",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "creatorCreatorid": "Creator: $creatorId",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "eventstarttimeEventendtime": "{startTime} - {endTime} (Dutch)",
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: {startTime} - {endTime}"
+  },
+  "allowPlaytime": "Allow Playtime (Dutch)",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "clients": "Clients (Dutch)",
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "noAmbassadorDataAvailable": "No ambassador data available (Dutch)",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "backgroundDeletedSuccessfully": "Background deleted successfully! (Dutch)",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "errorSnapshoterror": "Error: {error} (Dutch)",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: {error}"
+  },
+  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Dutch)",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "errorDeletingSlotE": "Error deleting slot: $e (Dutch)",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "businessPhoneBookingEntryScreenComingSoon": "Business Phone Booking Entry Screen - Coming Soon (Dutch)",
+  "@businessPhoneBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "verification": "Verification (Dutch)",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "copyLink": "Copy Link (Dutch)",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "dashboard1": "Dashboard (Dutch)",
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "manageChildAccounts": "Manage Child Accounts (Dutch)",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "grantConsent": "Grant Consent (Dutch)",
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "myProfile1": "My Profile (Dutch)",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "submit": "Submit (Dutch)",
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "userLoguseremail": "User: {userEmail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: {userEmail}"
+  },
+  "emailNotifications": "Email Notifications (Dutch)",
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "ambassadorDashboard": "Ambassador Dashboard (Dutch)",
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "phoneBooking": "Phone Booking (Dutch)",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "bookViaChat": "Book via Chat (Dutch)",
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "error": "Fout",
+  "@error": {
+    "description": "Description"
+  },
+  "businessProfile": "Business Profile (Dutch)",
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "businessBookingEntryScreenComingSoon": "Business Booking Entry Screen - Coming Soon (Dutch)",
+  "@businessBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "createNewSurvey": "Create New Survey (Dutch)",
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "backgroundRejected": "Background rejected (Dutch)",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "noMediaSelected": "No media selected (Dutch)",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "syncToGoogle": "Sync to Google (Dutch)",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "virtualPlaytime": "Virtual Playtime (Dutch)",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "colorContrastTesting": "Color Contrast Testing",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "loginFailedE": "Login failed: $e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "invitationSentSuccessfully": "Invitation sent successfully! (Dutch)",
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "registering": "Registering... (Dutch)",
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "statusAppointmentstatusname": "Status: {status} (Dutch)",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "home1": "Home (Dutch)",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "errorSavingSettingsE": "Error saving settings: $e (Dutch)",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "appVersionAndInformation": "App version and information (Dutch)",
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "businessSubscriptionEntryScreenComingSoon": "Business Subscription Entry Screen - Coming Soon (Dutch)",
+  "@businessSubscriptionEntryScreenComingSoon": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "ekeyEvalue": "{key}: {value} (Dutch)",
+  "@ekeyEvalue": {
+    "description": "Localization key for: {key}: {value}"
+  },
+  "yourPaymentHasBeenProcessedSuccessfully": "Your payment has been processed successfully. (Dutch)",
+  "@yourPaymentHasBeenProcessedSuccessfully": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "errorE": "Error: $e (Dutch)",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "viewAll1": "View All (Dutch)",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "editSurveyComingSoon": "Edit survey - Coming soon! (Dutch)",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "enterOtp": "Enter OTP (Dutch)",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "payment": "Payment (Dutch)",
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "automaticallyConfirmNewBookingRequests": "Automatically confirm new booking requests (Dutch)",
+  "@automaticallyConfirmNewBookingRequests": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "errorPickingVideoE": "Error picking video: $e",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Dutch)",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for {settingsName}"
+  },
+  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Dutch)",
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: {targetType}: {targetId}"
+  },
+  "staffAvailability": "Staff Availability (Dutch)",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "livePlaytime": "Live Playtime (Dutch)",
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "autoconfirmBookings": "Auto-Confirm Bookings (Dutch)",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "redirectingToStripeCheckoutForProPlan": "Redirecting to Stripe checkout for Pro plan... (Dutch)",
+  "@redirectingToStripeCheckoutForProPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "exportAsCsv": "Export as CSV (Dutch)",
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
+  },
+  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Dutch)",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "editClient": "Edit Client (Dutch)",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "areYouSureYouWantToDeleteThisMessage": "Are you sure you want to delete this message? (Dutch)",
+  "@areYouSureYouWantToDeleteThisMessage": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "referralsAmbassadorreferrals": "Referrals: {referrals} (Dutch)",
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: {referrals}"
+  },
+  "notAuthenticated": "Not authenticated",
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Dutch)",
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "clientDeletedSuccessfully": "Client deleted successfully! (Dutch)",
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
+  },
+  "failedToCancelSubscription": "Failed to cancel subscription (Dutch)",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "allLanguages": "All Languages (Dutch)",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "slotDeletedSuccessfully": "Slot deleted successfully (Dutch)",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "businessProvidersEntryScreenComingSoon": "Business Providers Entry Screen - Coming Soon",
+  "@businessProvidersEntryScreenComingSoon": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "parentsMustApproveBeforeChildrenCanJoin": "Parents must approve before children can join (Dutch)",
+  "@parentsMustApproveBeforeChildrenCanJoin": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Dutch)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "businessAvailabilityEntryScreenComingSoon": "Business Availability Entry Screen - Coming Soon (Dutch)",
+  "@businessAvailabilityEntryScreenComingSoon": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "appointmentsListlength": "Appointments: {count} (Dutch)",
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: {count}"
+  },
+  "clearFilters": "Clear Filters (Dutch)",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "submitBooking": "Submit Booking (Dutch)",
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "areYouSureYouWantToCancelThisAppointment": "Are you sure you want to cancel this appointment? (Dutch)",
+  "@areYouSureYouWantToCancelThisAppointment": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "noUpcomingBookings": "No upcoming bookings (Dutch)",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "goBack": "Go Back (Dutch)",
+  "@goBack": {
+    "description": "Localization key for: Go Back"
+  },
+  "setup": "Setup (Dutch)",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "inviteChild": "Invite Child (Dutch)",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "goToDashboard": "Go to Dashboard (Dutch)",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Dutch)",
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "adminSettings": "Admin Settings",
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "referralCode": "Referral Code (Dutch)",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "adminLogadminemail": "Admin: {adminEmail}",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: {adminEmail}"
+  },
+  "date": "Date (Dutch)",
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "readOnly": "Read Only (Dutch)",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "bookingRequest": "Booking Request (Dutch)",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "advancedReporting": "• Advanced reporting (Dutch)",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "rooms": "Rooms (Dutch)",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "copiedToClipboard": "Copied to clipboard (Dutch)",
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "bookingConfirmed": "Booking Confirmed (Dutch)",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "sessionApproved": "Session approved! (Dutch)",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "clientAddedSuccessfully": "Client added successfully! (Dutch)",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noNotifications": "No notifications (Dutch)",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "backgroundApproved": "Background approved! (Dutch)",
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "familySupport": "Family Support (Dutch)",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "deletingAccount": "Deleting account... (Dutch)",
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "bookAppointment": "Book Appointment (Dutch)",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "receivePushNotificationsForNewBookings": "Receive push notifications for new bookings (Dutch)",
+  "@receivePushNotificationsForNewBookings": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "delete1": "Delete (Dutch)",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "sendBookingInvite": "Send Booking Invite (Dutch)",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "text": "Text (Dutch)",
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "manageSubscription": "Manage Subscription (Dutch)",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "requiresInstallFallback": "Requires Install Fallback (Dutch)",
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "paymentConfirmation": "Payment Confirmation (Dutch)",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Dutch)",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: {inviteeId}"
+  },
+  "errorLoadingSlots": "Error loading slots (Dutch)",
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "allowOtherUsersToFindAndJoinThisGame": "Allow other users to find and join this game (Dutch)",
+  "@allowOtherUsersToFindAndJoinThisGame": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "businessOnboardingScreenComingSoon": "Business Onboarding Screen - Coming Soon (Dutch)",
+  "@businessOnboardingScreenComingSoon": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "activateBusinessProfile": "Activate Business Profile (Dutch)",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
+  "contentNotFound": "Content not found (Dutch)",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Dutch)",
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: {specialty}\\n{contactInfo}"
+  },
+  "rating": "Rating (Dutch)",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "messages": "Messages (Dutch)",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Dutch)",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "becomeAnAmbassador": "Become an Ambassador (Dutch)",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "subscribeNow": "Subscribe Now (Dutch)",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "timeArgsslotformatcontext": "Time: {time} (Dutch)",
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: {time}"
+  },
+  "shareViaWhatsapp": "Share via WhatsApp (Dutch)",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "users1": "Users (Dutch)",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "shareLink": "Share Link (Dutch)",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
+  "@areYouSureYouWantToDeleteThisProvider": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "deleteAppointment": "Delete Appointment (Dutch)",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toggleAvailability": "Toggle Availability (Dutch)",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "changePlan": "Change Plan (Dutch)",
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "errorLoadingStaff": "Error loading staff (Dutch)",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "updateYourBusinessInformation": "Update your business information (Dutch)",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "noProvidersFoundAddYourFirstProvider": "No providers found. Add your first provider!",
+  "@noProvidersFoundAddYourFirstProvider": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "parentDashboard": "Parent Dashboard (Dutch)",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "menu": "Menu (Dutch)",
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "studioBooking": "Studio Booking (Dutch)",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "about1": "About (Dutch)",
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "multipleChoice": "Multiple Choice (Dutch)",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "dateAppointmentscheduledattostring": "Date: {date} (Dutch)",
+  "@dateAppointmentscheduledattostring": {
+    "description": "Localization key for: Date: {date}"
+  },
+  "studioBookingIsOnlyAvailableOnWeb": "Studio booking is only available on web (Dutch)",
+  "@studioBookingIsOnlyAvailableOnWeb": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "errorLoadingBranchesE": "Error loading branches: $e (Dutch)",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "ud83dudcc5Bookingdatetimetolocal": "\\uD83D\\uDCC5 {dateTime} (Dutch)",
+  "@ud83dudcc5Bookingdatetimetolocal": {
+    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
+  },
+  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "none": "None (Dutch)",
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "failedToUpdateConsentE": "Failed to update consent: $e (Dutch)",
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "welcome1": "Welcome (Dutch)",
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "failedToCreateSessionE": "Failed to create session: $e (Dutch)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "inviteContact": "Invite Contact (Dutch)",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "surveyEditor": "Survey Editor (Dutch)",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Dutch)",
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "mySchedule": "My Schedule (Dutch)",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "studioDashboard": "Studio Dashboard (Dutch)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
+  "editProfile": "Edit Profile (Dutch)",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "logout1": "Logout",
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "serviceServiceidNotSelected": "Service: {service}",
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: {service}"
+  },
+  "settingsSavedSuccessfully": "Settings saved successfully! (Dutch)",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "linkCopiedToClipboard": "Link copied to clipboard! (Dutch)",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "accept1": "Accept (Dutch)",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "noAvailableSlots": "No available slots (Dutch)",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "makeGamePublic": "Make Game Public (Dutch)",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "permissionPermissioncategoryUpdatedToNewvalue": "Permission {category} updated to $newValue (Dutch)",
+  "@permissionPermissioncategoryUpdatedToNewvalue": {
+    "description": "Localization key for: Permission {category} updated to $newValue"
+  },
+  "roomDeletedSuccessfully": "Room deleted successfully! (Dutch)",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "businessCalendar": "Business Calendar (Dutch)",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "addAvailability": "Add Availability (Dutch)",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "ambassadorOnboarding": "Ambassador Onboarding (Dutch)",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "phoneProfileasyncphone": "Phone: {phone} (Dutch)",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: {phone}"
+  },
+  "addNewRoom": "Add New Room (Dutch)",
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "requireParentApproval": "Require Parent Approval (Dutch)",
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "closed": "Closed (Dutch)",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "exportAsPdf": "Export as PDF (Dutch)",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "enableVibration": "Enable Vibration (Dutch)",
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "toAvailendformatcontext": "To: {endTime} (Dutch)",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: {endTime}"
+  },
+  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Dutch)",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "@requestPrivateSession": {
+    "description": "requestPrivateSession description"
+  },
+  "country": "Country (Dutch)",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "loginScreen": "Login Screen",
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "staffArgsstaffdisplayname": "Staff: {staffName} (Dutch)",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "revokeConsent": "Revoke Consent (Dutch)",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "settings1": "Settings (Dutch)",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "cancel1": "Cancel (Dutch)",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "subscriptionActivatedSuccessfully": "Subscription activated successfully! (Dutch)",
+  "@subscriptionActivatedSuccessfully": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "activityLogaction": "Activity: {action}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: {action}"
+  },
+  "broadcast": "Broadcast (Dutch)",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "noEventsScheduledThisWeek": "No events scheduled this week (Dutch)",
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "googleCalendar": "Google Calendar (Dutch)",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "sendInvite": "Send Invite (Dutch)",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "childDashboard": "Child Dashboard (Dutch)",
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "failedToUploadBackgroundE": "Failed to upload background: $e (Dutch)",
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "linkchildidsubstring08": "{linkId}...",
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: {linkId}..."
+  },
+  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: {targetType} - {targetId}"
+  },
+  "contextContextid": "Context: $contextId",
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
+  },
+  "noAppointments": "No appointments (Dutch)",
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Dutch)",
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: {errorType}"
+  },
+  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Dutch)",
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "selectStaff": "Select Staff (Dutch)",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "subscriptionCancelledSuccessfully": "Subscription cancelled successfully (Dutch)",
+  "@subscriptionCancelledSuccessfully": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "cancelAppointment": "Cancel Appointment (Dutch)",
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - {childId}"
+  },
+  "businessSignup": "Business Signup (Dutch)",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "businessCompletionScreenComingSoon": "Business Completion Screen - Coming Soon (Dutch)",
+  "@businessCompletionScreenComingSoon": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "createGame1": "Create Game (Dutch)",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "valuetoint": "{value} (Dutch)",
+  "@valuetoint": {
+    "description": "Localization key for: {value}"
+  },
+  "pleaseEnterAPromoCode": "Please enter a promo code (Dutch)",
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "errorLoadingAvailabilityE": "Error loading availability: $e (Dutch)",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "parentalControls": "Parental Controls (Dutch)",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
+  },
+  "editBusinessProfile": "Edit Business Profile (Dutch)",
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "childLinkedSuccessfully": "Child linked successfully! (Dutch)",
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "create": "Create (Dutch)",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "noExternalMeetingsFound": "No external meetings found. (Dutch)",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "staffSelectionstaffdisplayname": "Staff: {staffName} (Dutch)",
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "schedulerScreen": "Scheduler Screen (Dutch)",
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "clientUpdatedSuccessfully": "Client updated successfully! (Dutch)",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "surveyResponses": "Survey Responses (Dutch)",
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "syncToOutlook": "Sync to Outlook (Dutch)",
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "saveChanges": "Save Changes (Dutch)",
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "pickTime": "Pick Time (Dutch)",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "registrationFailedEtostring": "Registration failed: {error} (Dutch)",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: {error}"
+  },
+  "analytics": "Analytics (Dutch)",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "errorLoadingEvents": "Error loading events (Dutch)",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "success1": "Success (Dutch)",
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "appVersionLogappversion": "App Version: {appVersion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: {appVersion}"
+  },
+  "fromAvailstartformatcontext": "From: {startTime} (Dutch)",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: {startTime}"
+  },
+  "readWrite": "Read & Write (Dutch)",
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "redirectingToStripeCheckoutForBasicPlan": "Redirecting to Stripe checkout for Basic plan... (Dutch)",
+  "@redirectingToStripeCheckoutForBasicPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "pickDate": "Pick Date (Dutch)",
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "chatBooking": "Chat Booking (Dutch)",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "noQuestionsAdded": "No questions added (Dutch)",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "severityLogseverityname": "Severity: {severity}",
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: {severity}"
+  },
+  "markAsPaid": "Mark as Paid",
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "typeOpenCall": "Type: Open Call (Dutch)",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment {appointmentId}"
+  },
+  "statusInvitestatusname": "Status: {status}",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "businessLogin": "Business Login",
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "invoiceCreatedSuccessfully": "Invoice created successfully! (Dutch)",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "noTimeSeriesDataAvailable": "No time series data available (Dutch)",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
+  },
+  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to {planName}"
+  },
+  "timestamp_formatdatelogtimestamp": "Timestamp: {timestamp}",
+  "@timestamp_formatdatelogtimestamp": {
+    "description": "Localization key for: Timestamp: {timestamp}"
+  },
+  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Dutch)",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "chooseYourPlan": "Choose Your Plan (Dutch)",
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "playtimeManagement": "Playtime Management (Dutch)",
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "availability": "Availability (Dutch)",
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "eventCreated": "Event created (Dutch)",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Dutch)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "completion": "Completion (Dutch)",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "supportTicketSubmitted": "Support ticket submitted (Dutch)",
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "monetizationSettings": "Monetization Settings (Dutch)",
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "noBookingsFound": "No bookings found (Dutch)",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "admin": "Admin",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "deleteSurvey": "Delete Survey (Dutch)",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "gameApprovedSuccessfully": "Game approved successfully! (Dutch)",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "errorLoadingPermissionsError": "Error loading permissions: $error (Dutch)",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "referrals": "Referrals (Dutch)",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "crm": "CRM (Dutch)",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameRejected": "Game rejected (Dutch)",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "appointments": "Appointments (Dutch)",
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "onboardingScreen": "Onboarding Screen (Dutch)",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "welcomeToYourStudio": "Welcome to your studio (Dutch)",
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "update": "Update (Dutch)",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "retry1": "Retry (Dutch)",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "booking": "Booking (Dutch)",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "parentalSettings": "Parental Settings (Dutch)",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "language": "Language (Dutch)",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "deleteSlot": "Delete Slot (Dutch)",
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "organizations": "organizations (TRANSLATE)",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "createNewGame": "Create New Game (Dutch)",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "next1": "Next (Dutch)",
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Dutch)",
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "noAppointmentRequestsFound": "No appointment requests found. (Dutch)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "pleaseSignInToCreateASession": "Please sign in to create a session (Dutch)",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "restrictMatureContent": "Restrict mature content (Dutch)",
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "ambassadors": "Ambassadors (Dutch)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "smsNotifications": "SMS Notifications (Dutch)",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "paymentWasCancelled": "Payment was cancelled (Dutch)",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "clearAll": "Clear All (Dutch)",
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
+  },
+  "viewDetails": "View Details (Dutch)",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "notifications1": "Notifications (Dutch)",
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "liveSessionScheduledWaitingForParentApproval": "Live session scheduled! Waiting for parent approval... (Dutch)",
+  "@liveSessionScheduledWaitingForParentApproval": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "failedToCreateGameE": "Failed to create game: $e (Dutch)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "noChartDataAvailable": "No chart data available (Dutch)",
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
+  },
+  "phonebasedBookingSystem": "• Phone-based booking system (Dutch)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "enableNotifications1": "Enable Notifications (Dutch)",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "invoices": "Invoices (Dutch)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "pleaseActivateYourBusinessProfileToContinue": "Please activate your business profile to continue. (Dutch)",
+  "@pleaseActivateYourBusinessProfileToContinue": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Dutch)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: {scheduledAt}"
+  },
+  "durationDurationinminutes0Minutes": "Duration: {duration} minutes (Dutch)",
+  "@durationDurationinminutes0Minutes": {
+    "description": "Localization key for: Duration: {duration} minutes"
+  },
+  "tryAgain": "Try Again (Dutch)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "deleteBackground": "Delete Background (Dutch)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "currentTierTiertouppercase": "Current Tier: {tier} (Dutch)",
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: {tier}"
+  },
+  "iDoNotConsent": "I Do Not Consent",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "noClientsFoundAddYourFirstClient": "No clients found. Add your first client! (Dutch)",
+  "@noClientsFoundAddYourFirstClient": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "settingsDialogWillBeImplementedHere": "Settings dialog will be implemented here.",
+  "@settingsDialogWillBeImplementedHere": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "groupGroupid": "Group: $groupId",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentRequests": "Appointment Requests (Dutch)",
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "forward": "Forward (Dutch)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "roomAddedSuccessfully": "Room added successfully! (Dutch)",
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "option": "• $option (Dutch)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "responseIndex1": "Response #{number} (Dutch)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #{number}"
+  },
+  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Dutch)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "contentLibrary1": "Content Library (Dutch)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "reply": "Reply (Dutch)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "subscriptionManagement": "Subscription Management (Dutch)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "monetizationSettingsWillBeImplementedHere": "Monetization settings will be implemented here (Dutch)",
+  "@monetizationSettingsWillBeImplementedHere": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Dutch)",
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "editProvider": "Edit Provider",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "localizationContribution": "Localization Contribution (Dutch)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "parentalConsent": "Parental Consent (Dutch)",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Dutch)",
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "areYouSureYouWantToDeleteThisAppointment": "Are you sure you want to delete this appointment? (Dutch)",
+  "@areYouSureYouWantToDeleteThisAppointment": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "syncAppointment": "Sync Appointment (Dutch)",
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "iConsent": "I Consent (Dutch)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "sessionRejected": "Session rejected (Dutch)",
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Dutch)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "edit1": "Edit (Dutch)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "noEventsScheduledThisMonth": "No events scheduled this month (Dutch)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "businessDashboard": "Business Dashboard (Dutch)",
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "noMessagesFound": "No messages found. (Dutch)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "staffStaffidNotSelected": "Staff: {staff}",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: {staff}"
+  },
+  "manageStaffAvailability": "Manage Staff Availability (Dutch)",
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "noMissingTranslations": "No missing translations (Dutch)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "skip": "Skip (Dutch)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "noUsers": "noUsers (TRANSLATE)",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingReferralCode": "Error loading referral code (Dutch)",
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "allCountries": "All Countries (Dutch)",
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "deleteGame": "Delete Game (Dutch)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "staffManagementTools": "• Staff management tools (Dutch)",
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "deleteMessage": "Delete Message (Dutch)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "receiveBookingNotificationsViaSms": "Receive booking notifications via SMS (Dutch)",
+  "@receiveBookingNotificationsViaSms": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "changeRole": "changeRole (TRANSLATE)",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "errorLoadingBookingsSnapshoterror": "Error loading bookings: {error} (Dutch)",
+  "@errorLoadingBookingsSnapshoterror": {
+    "description": "Localization key for: Error loading bookings: {error}"
+  },
+  "openingCustomerPortal": "Opening customer portal... (Dutch)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "signOut": "Sign Out (Dutch)",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "nameProfilename": "Name: {name} (Dutch)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: {name}"
+  },
+  "businessProfileEntryScreenComingSoon": "Business Profile Entry Screen - Coming Soon (Dutch)",
+  "@businessProfileEntryScreenComingSoon": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "upgradeToBusiness": "Upgrade to Business (Dutch)",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "apply": "Apply (Dutch)",
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "errorLoadingSubscriptionError": "Error loading subscription: $error (Dutch)",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "verify": "Verify (Dutch)",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "subscription": "Subscription (Dutch)",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "deleteMyAccount": "Delete My Account (Dutch)",
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "businessAppointmentsEntryScreenComingSoon": "Business Appointments Entry Screen - Coming Soon (Dutch)",
+  "@businessAppointmentsEntryScreenComingSoon": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "viewResponses": "View Responses (Dutch)",
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Dutch)",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Dutch)",
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "continueText": "Continue (Dutch)",
+  "@continueText": {
+    "description": "Localization key for: Continue"
+  },
+  "close1": "Close (Dutch)",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "confirm1": "Confirm (Dutch)",
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "externalMeetings": "External Meetings (Dutch)",
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "approve": "Approve (Dutch)",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "noInvoicesFoundCreateYourFirstInvoice": "No invoices found. Create your first invoice! (Dutch)",
+  "@noInvoicesFoundCreateYourFirstInvoice": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "subscribe": "Subscribe (Dutch)",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "login1": "Login",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "adminOverviewGoesHere": "Admin overview goes here",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "loadingCheckout": "Loading checkout... (Dutch)",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  }
 }

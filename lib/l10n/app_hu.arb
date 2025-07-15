@@ -1,761 +1,668 @@
 {
   "@@locale": "hu",
-  "@about": {
-    "description": "About navigation label"
-  },
-  "@accept": {
-    "description": "Description"
-  },
-  "@accessRevokedSuccessfully": {
-    "description": "Description"
-  },
-  "@add": {
-    "description": "Description"
-  },
-  "@appTitle": {
-    "description": "Description"
-  },
-  "@back": {
-    "description": "Description"
-  },
-  "@cancel": {
-    "description": "cancel description"
-  },
-  "@cancelInvite": {
-    "description": "Description"
-  },
-  "@cancelInviteConfirmation": {
-    "description": "Description"
-  },
-  "@checkingPermissions": {
-    "description": "checkingPermissions description"
-  },
-  "@choose": {
-    "description": "Description"
-  },
-  "@clicked": {
-    "description": "clicked description"
-  },
-  "@clientScreenTBD": {
-    "description": "Description"
-  },
-  "@close": {
-    "description": "close description"
-  },
-  "@composeBroadcastMessage": {
-    "description": "composeBroadcastMessage description"
-  },
-  "@confirm": {
-    "description": "Description"
-  },
-  "@confirmPassword": {
-    "description": "Description"
-  },
-  "@connectedChildren": {
-    "description": "Description"
-  },
-  "@content": {
-    "description": "content description"
-  },
-  "@copy": {
-    "description": "Description"
-  },
-  "@createGame": {
-    "description": "Description"
-  },
-  "@createLiveSession": {
-    "description": "Description"
-  },
-  "@createNew": {
-    "description": "Description"
-  },
-  "@createVirtualSession": {
-    "description": "Description"
-  },
-  "@createYourFirstGame": {
-    "description": "Description"
-  },
-  "@createYourFirstSession": {
-    "description": "Description"
-  },
-  "@created": {
-    "description": "created description"
-  },
-  "@customizeMessage": {
-    "description": "Description"
-  },
-  "@cut": {
-    "description": "Description"
-  },
-  "@dashboard": {
-    "description": "Description"
-  },
-  "@decline": {
-    "description": "Description"
-  },
-  "@defaultShareMessage": {
-    "description": "Description"
-  },
-  "@delete": {
-    "description": "Description"
-  },
-  "@details": {
-    "description": "details description"
-  },
-  "@done": {
-    "description": "Description"
-  },
-  "@download": {
-    "description": "Description"
-  },
-  "@edit": {
-    "description": "Description"
-  },
-  "@email": {
-    "description": "Description"
-  },
-  "@enableNotifications": {
-    "description": "Description"
-  },
-  "@enterGroupName": {
-    "description": "Description"
-  },
-  "@error": {
-    "description": "Description"
-  },
-  "@errorCheckingPermissions": {
-    "description": "errorCheckingPermissions description"
-  },
-  "@errorLoadingFamilyLinks": {
-    "description": "Description"
-  },
-  "@errorLoadingInvites": {
-    "description": "Description"
-  },
-  "@errorLoadingPrivacyRequests": {
-    "description": "errorLoadingPrivacyRequests description"
-  },
-  "@errorLoadingProfile": {
-    "description": "Description"
-  },
-  "@errorSavingMessage": {
-    "description": "errorSavingMessage description"
-  },
-  "@errorSendingMessage": {
-    "description": "errorSendingMessage description"
-  },
-  "@failedToActionPrivacyRequest": {
-    "description": "failedToActionPrivacyRequest description"
-  },
-  "@failedToCancelInvite": {
-    "description": "Description"
-  },
-  "@failedToResendOtp": {
-    "description": "Description"
-  },
-  "@failedToRevokeAccess": {
-    "description": "Description"
-  },
-  "@familyDashboard": {
-    "description": "Description"
-  },
-  "@familyMembers": {
-    "description": "Description"
-  },
-  "@fcmToken": {
-    "description": "Description"
-  },
-  "@forgotPassword": {
-    "description": "Description"
-  },
-  "@groupNameOptional": {
-    "description": "Description"
-  },
-  "@home": {
-    "description": "Description"
-  },
-  "@invite": {
-    "description": "Description"
-  },
-  "@inviteCancelledSuccessfully": {
-    "description": "Description"
-  },
-  "@inviteDetail": {
-    "description": "Description"
-  },
-  "@invited": {
-    "description": "Description"
-  },
-  "@knownGroupDetected": {
-    "description": "Description"
-  },
-  "@link": {
-    "description": "link description"
-  },
-  "@loading": {
-    "description": "Description"
-  },
-  "@login": {
-    "description": "Description"
-  },
-  "@logout": {
-    "description": "Description"
-  },
-  "@managePermissions": {
-    "description": "Description"
-  },
-  "@mediaOptional": {
-    "description": "mediaOptional description"
-  },
-  "@meetingReadyMessage": {
-    "description": "Description"
-  },
-  "@meetingSharedSuccessfully": {
-    "description": "Description"
-  },
-  "@messageSavedSuccessfully": {
-    "description": "messageSavedSuccessfully description"
-  },
-  "@messageSentSuccessfully": {
-    "description": "messageSentSuccessfully description"
-  },
-  "@myInvites": {
-    "description": "Description"
-  },
-  "@myProfile": {
-    "description": "Description"
-  },
-  "@next": {
-    "description": "Description"
-  },
-  "@no": {
-    "description": "Description"
-  },
-  "@noBroadcastMessages": {
-    "description": "noBroadcastMessages description"
-  },
-  "@noFamilyMembersYet": {
-    "description": "Description"
-  },
-  "@noGamesYet": {
-    "description": "Description"
-  },
-  "@noInvites": {
-    "description": "Description"
-  },
-  "@noPermissionForBroadcast": {
-    "description": "noPermissionForBroadcast description"
-  },
-  "@noProfileFound": {
-    "description": "Description"
-  },
-  "@noResults": {
-    "description": "Description"
-  },
-  "@noSessionsYet": {
-    "description": "Description"
-  },
-  "@notificationSettings": {
-    "description": "Description"
-  },
-  "@notifications": {
-    "description": "Description"
-  },
-  "@ok": {
-    "description": "Description"
-  },
-  "@opened": {
-    "description": "opened description"
-  },
-  "@otpResentSuccessfully": {
-    "description": "Description"
-  },
-  "@participants": {
-    "description": "Description"
-  },
-  "@password": {
-    "description": "Description"
-  },
-  "@paste": {
-    "description": "Description"
-  },
-  "@pendingInvites": {
-    "description": "Description"
-  },
-  "@pickImage": {
-    "description": "pickImage description"
-  },
-  "@pickVideo": {
-    "description": "pickVideo description"
-  },
-  "@playtimeApprove": {
-    "description": "Description"
-  },
-  "@playtimeChooseFriends": {
-    "description": "Description"
-  },
-  "@playtimeChooseGame": {
-    "description": "Description"
-  },
-  "@playtimeChooseTime": {
-    "description": "Description"
-  },
-  "@playtimeCreate": {
-    "description": "Description"
-  },
-  "@playtimeCreateSession": {
-    "description": "Description"
-  },
-  "@playtimeDescription": {
-    "description": "Description"
-  },
-  "@playtimeEnterGameName": {
-    "description": "Description"
-  },
-  "@playtimeGameApproved": {
-    "description": "Description"
-  },
-  "@playtimeGameDeleted": {
-    "description": "Description"
-  },
-  "@playtimeGameRejected": {
-    "description": "Description"
-  },
-  "@playtimeHub": {
-    "description": "Description"
-  },
-  "@playtimeLandingChooseMode": {
-    "description": "Description"
-  },
-  "@playtimeLive": {
-    "description": "Description"
-  },
-  "@playtimeLiveScheduled": {
-    "description": "Description"
-  },
-  "@playtimeModeLive": {
-    "description": "Description"
-  },
-  "@playtimeModeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeNoSessions": {
-    "description": "Description"
-  },
-  "@playtimeParentDashboardTitle": {
-    "description": "Description"
-  },
-  "@playtimeReject": {
-    "description": "Description"
-  },
-  "@playtimeTitle": {
-    "description": "Description"
-  },
-  "@playtimeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeVirtualStarted": {
-    "description": "Description"
-  },
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Description"
-  },
-  "@pollOptions": {
-    "description": "pollOptions description"
-  },
-  "@previous": {
-    "description": "Description"
-  },
-  "@profile": {
-    "description": "Description"
-  },
-  "@quickActions": {
-    "description": "Description"
-  },
-  "@recentGames": {
-    "description": "Description"
-  },
-  "@recipients": {
-    "description": "recipients description"
-  },
-  "@redo": {
-    "description": "Description"
-  },
+  "refresh": "Frissítés",
   "@refresh": {
     "description": "Description"
   },
-  "@removeChild": {
+  "home": "Kezdőlap",
+  "@home": {
     "description": "Description"
   },
-  "@requestType": {
-    "description": "requestType description"
-  },
-  "@retry": {
+  "noSessionsYet": "[HU] No sessions yet",
+  "@noSessionsYet": {
     "description": "Description"
   },
-  "@revoke": {
+  "ok": "Rendben",
+  "@ok": {
     "description": "Description"
   },
-  "@revokeAccess": {
+  "playtimeLandingChooseMode": "Válassz módot",
+  "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "@revokeAccessConfirmation": {
-    "description": "Description"
-  },
-  "@save": {
-    "description": "save description"
-  },
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
-  "@scheduleForLater": {
-    "description": "scheduleForLater description"
-  },
-  "@scheduleMessage": {
-    "description": "Description"
-  },
-  "@scheduled": {
-    "description": "scheduled description"
-  },
-  "@scheduledFor": {
-    "description": "Description"
-  },
-  "@scheduling": {
-    "description": "scheduling description"
-  },
-  "@search": {
-    "description": "Description"
-  },
-  "@select": {
-    "description": "Description"
-  },
-  "@sendNow": {
-    "description": "sendNow description"
-  },
-  "@settings": {
-    "description": "Description"
-  },
-  "@share": {
-    "description": "Description"
-  },
-  "@shareOnWhatsApp": {
-    "description": "Description"
-  },
+  "signUp": "Regisztráció",
   "@signUp": {
     "description": "Description"
   },
-  "@staffScreenTBD": {
+  "scheduleMessage": "Üzenet ütemezése",
+  "@scheduleMessage": {
     "description": "Description"
   },
-  "@status": {
-    "description": "status description"
+  "decline": "Elutasítás",
+  "@decline": {
+    "description": "Description"
   },
-  "@statusColon": {
-    "description": "statusColon description"
+  "adminBroadcast": "Admin Broadcast",
+  "@adminBroadcast": {
+    "description": "Localization key for: Admin Broadcast"
   },
+  "login": "Bejelentkezés",
+  "@login": {
+    "description": "Description"
+  },
+  "playtimeChooseFriends": "[HU] Choose friends to invite",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "noInvites": "[HU] No invites",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "playtimeChooseTime": "Idő kiválasztása",
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "success": "Siker",
   "@success": {
     "description": "Description"
   },
-  "@targetingFilters": {
-    "description": "targetingFilters description"
-  },
-  "@type": {
-    "description": "type description"
-  },
+  "undo": "[HU] Undo",
   "@undo": {
     "description": "Description"
   },
-  "@upcomingSessions": {
+  "opened": "Megnyitva",
+  "@opened": {
+    "description": "opened description"
+  },
+  "createVirtualSession": "Virtuális munkamenet létrehozása",
+  "@createVirtualSession": {
     "description": "Description"
   },
-  "@upload": {
+  "messageSentSuccessfully": "Üzenet sikeresen elküldve",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "redo": "Újra",
+  "@redo": {
     "description": "Description"
   },
-  "@viewAll": {
+  "next": "Következő",
+  "@next": {
     "description": "Description"
   },
-  "@welcome": {
+  "search": "Keresés",
+  "@search": {
     "description": "Description"
   },
-  "@welcomeToPlaytime": {
+  "cancelInviteConfirmation": "[HU] Are you sure you want to cancel this invite?",
+  "@cancelInviteConfirmation": {
     "description": "Description"
   },
+  "created": "Létrehozva",
+  "@created": {
+    "description": "created description"
+  },
+  "revokeAccess": "[HU] Revoke Access",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "saveGroupForRecognition": "[HU] Save Group for Recognition",
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
+  "playtimeLiveScheduled": "Élő munkamenet ütemezve",
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "revokeAccessConfirmation": "[HU] Are you sure you want to revoke access?",
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "download": "Letöltés",
+  "@download": {
+    "description": "Description"
+  },
+  "password": "Jelszó",
+  "@password": {
+    "description": "Description"
+  },
+  "errorLoadingFamilyLinks": "[HU] Error loading family links",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "cancel": "Mégse",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "playtimeCreate": "Playtime létrehozása",
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "failedToActionPrivacyRequest": "[HU] Failed to action privacy request",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "appTitle": "Alkalmazás címe",
+  "@appTitle": {
+    "description": "Description"
+  },
+  "accept": "Elfogadás",
+  "@accept": {
+    "description": "Description"
+  },
+  "playtimeModeVirtual": "Virtuális mód",
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "playtimeDescription": "Playtime leírás",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "delete": "Törlés",
+  "@delete": {
+    "description": "Description"
+  },
+  "playtimeVirtualStarted": "[HU] Virtual playtime started!",
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createYourFirstGame": "[HU] Create your first game",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "participants": "Résztvevők",
+  "@participants": {
+    "description": "Description"
+  },
+  "recipients": "Címzettek",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "noResults": "[HU] No results found",
+  "@noResults": {
+    "description": "Description"
+  },
+  "yes": "Igen",
   "@yes": {
     "description": "yes description"
   },
-  "@yesCancel": {
+  "invite": "Meghívás",
+  "@invite": {
+    "description": "Description"
+  },
+  "playtimeModeLive": "Élő mód",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "done": "Kész",
+  "@done": {
+    "description": "Description"
+  },
+  "defaultShareMessage": "Alapértelmezett megosztási üzenet",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "no": "Nem",
+  "@no": {
+    "description": "Description"
+  },
+  "playtimeHub": "[HU] Playtime Hub",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "createLiveSession": "Élő munkamenet létrehozása",
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "enableNotifications": "Értesítések engedélyezése",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "invited": "Meghívva",
+  "@invited": {
+    "description": "Description"
+  },
+  "content": "Tartalom",
+  "@content": {
+    "description": "content description"
+  },
+  "meetingSharedSuccessfully": "Találkozó sikeresen megosztva",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "welcomeToPlaytime": "[HU] Welcome to Playtime",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "viewAll": "[HU] View All",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "playtimeVirtual": "Virtuális Playtime",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "staffScreenTBD": "[HU] Staff screen coming soon",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "cut": "Kivágás",
+  "@cut": {
+    "description": "Description"
+  },
+  "inviteCancelledSuccessfully": "[HU] Invite cancelled successfully",
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "retry": "Újrapróbálkozás",
+  "@retry": {
+    "description": "Description"
+  },
+  "composeBroadcastMessage": "Sugárzott üzenet szerkesztése",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "sendNow": "Küldés most",
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "noGamesYet": "[HU] No games yet",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "select": "Kiválasztás",
+  "@select": {
     "description": "Description"
   },
   "about": "Névjegy",
-  "accept": "Elfogadás",
-  "accessRevokedSuccessfully": "[HU] Access revoked successfully",
-  "add": "Hozzáadás",
-  "appTitle": "Alkalmazás címe",
-  "back": "Vissza",
-  "cancel": "Mégse",
-  "cancelInvite": "[HU] Cancel Invite",
-  "cancelInviteConfirmation": "[HU] Are you sure you want to cancel this invite?",
-  "checkingPermissions": "Engedélyek ellenőrzése",
+  "@about": {
+    "description": "About navigation label"
+  },
   "choose": "Válassz",
-  "clicked": "[HU] Clicked",
-  "clientScreenTBD": "Ügyfélképernyő később",
-  "close": "Bezárás",
-  "composeBroadcastMessage": "Sugárzott üzenet szerkesztése",
-  "confirm": "Megerősítés",
-  "confirmPassword": "Jelszó megerősítése",
-  "connectedChildren": "Kapcsolódó gyerekek",
-  "content": "Tartalom",
-  "copy": "Másolás",
-  "createGame": "Játék létrehozása",
-  "createLiveSession": "Élő munkamenet létrehozása",
-  "createNew": "Új létrehozása",
-  "createVirtualSession": "Virtuális munkamenet létrehozása",
-  "createYourFirstGame": "[HU] Create your first game",
-  "createYourFirstSession": "Hozd létre az első munkameneted",
-  "created": "Létrehozva",
-  "customizeMessage": "Üzenet testreszabása",
-  "cut": "Kivágás",
-  "dashboard": "Irányítópult",
-  "decline": "Elutasítás",
-  "defaultShareMessage": "Alapértelmezett megosztási üzenet",
-  "delete": "Törlés",
-  "details": "Részletek",
-  "done": "Kész",
-  "download": "Letöltés",
-  "edit": "Szerkesztés",
-  "email": "Email",
-  "enableNotifications": "Értesítések engedélyezése",
-  "enterGroupName": "[HU] Enter group name",
-  "error": "Hiba",
-  "errorCheckingPermissions": "[HU] Error checking permissions",
-  "errorLoadingFamilyLinks": "[HU] Error loading family links",
-  "errorLoadingInvites": "[HU] Error loading invites",
-  "errorLoadingPrivacyRequests": "[HU] Error loading privacy requests",
-  "errorLoadingProfile": "[HU] Error loading profile",
-  "errorSavingMessage": "[HU] Error saving message",
-  "errorSendingMessage": "[HU] Error sending message",
-  "failedToActionPrivacyRequest": "[HU] Failed to action privacy request",
-  "failedToCancelInvite": "[HU] Failed to cancel invite",
-  "failedToResendOtp": "OTP újraküldése sikertelen",
-  "failedToRevokeAccess": "[HU] Failed to revoke access",
-  "familyDashboard": "Családi irányítópult",
-  "familyMembers": "Családtagok",
-  "fcmToken": "[HU] FCM Token",
-  "forgotPassword": "Elfelejtetted a jelszót?",
-  "groupNameOptional": "[HU] Group Name (Optional)",
-  "home": "Kezdőlap",
-  "invite": "Meghívás",
-  "inviteCancelledSuccessfully": "[HU] Invite cancelled successfully",
-  "inviteDetail": "Meghívás részletei",
-  "invited": "Meghívva",
-  "knownGroupDetected": "[HU] Known group detected",
-  "link": "[HU] Link",
-  "loading": "Betöltés",
-  "login": "Bejelentkezés",
-  "logout": "Kijelentkezés",
-  "managePermissions": "Engedélyek kezelése",
-  "mediaOptional": "[HU] Media (Optional)",
-  "meetingReadyMessage": "Találkozó készen áll",
-  "meetingSharedSuccessfully": "Találkozó sikeresen megosztva",
-  "messageSavedSuccessfully": "Üzenet sikeresen mentve",
-  "messageSentSuccessfully": "Üzenet sikeresen elküldve",
-  "myInvites": "Meghívásaim",
-  "myProfile": "[HU] My Profile",
-  "next": "Következő",
-  "no": "Nem",
-  "noBroadcastMessages": "[HU] No messages yet",
-  "noFamilyMembersYet": "[HU] No family members yet",
-  "noGamesYet": "[HU] No games yet",
-  "noInvites": "[HU] No invites",
-  "noPermissionForBroadcast": "[HU] No permission for broadcast",
-  "noProfileFound": "[HU] No profile found",
-  "noResults": "[HU] No results found",
-  "noSessionsYet": "[HU] No sessions yet",
-  "notificationSettings": "Értesítési beállítások",
-  "notifications": "Értesítések",
-  "ok": "Rendben",
-  "opened": "Megnyitva",
-  "otpResentSuccessfully": "OTP sikeresen újraküldve",
-  "participants": "Résztvevők",
-  "password": "Jelszó",
-  "paste": "Beillesztés",
-  "pendingInvites": "Függőben lévő meghívók",
-  "pickImage": "Kép kiválasztása",
-  "pickVideo": "Videó kiválasztása",
-  "playtimeApprove": "Playtime jóváhagyása",
-  "playtimeChooseFriends": "[HU] Choose friends to invite",
-  "playtimeChooseGame": "Válassz játékot",
-  "playtimeChooseTime": "Idő kiválasztása",
-  "playtimeCreate": "Playtime létrehozása",
-  "playtimeCreateSession": "Munkamenet létrehozása",
-  "playtimeDescription": "Playtime leírás",
-  "playtimeEnterGameName": "Add meg a játék nevét",
-  "playtimeGameApproved": "Játék jóváhagyva",
-  "playtimeGameDeleted": "Játék törölve",
-  "playtimeGameRejected": "Játék elutasítva",
-  "playtimeHub": "[HU] Playtime Hub",
-  "playtimeLandingChooseMode": "Válassz módot",
-  "playtimeLive": "Élő Playtime",
-  "playtimeLiveScheduled": "Élő munkamenet ütemezve",
-  "playtimeModeLive": "Élő mód",
-  "playtimeModeVirtual": "Virtuális mód",
-  "playtimeNoSessions": "[HU] No playtime sessions found.",
-  "playtimeParentDashboardTitle": "Playtime szülői irányítópult címe",
-  "playtimeReject": "Playtime elutasítása",
-  "playtimeTitle": "Playtime címe",
-  "playtimeVirtual": "Virtuális Playtime",
-  "playtimeVirtualStarted": "[HU] Virtual playtime started!",
-  "pleaseLoginForFamilyFeatures": "Kérjük jelentkezz be családi funkciókhoz",
-  "pleaseLoginToViewProfile": "[HU] Please log in to view your profile.",
-  "pollOptions": "Szavazási lehetőségek",
-  "previous": "Előző",
+  "@choose": {
+    "description": "Description"
+  },
   "profile": "[HU] Profile",
-  "quickActions": "[HU] Quick Actions",
-  "recentGames": "Friss játékok",
-  "recipients": "Címzettek",
-  "redo": "Újra",
-  "refresh": "Frissítés",
+  "@profile": {
+    "description": "Description"
+  },
   "removeChild": "Gyermek eltávolítása",
-  "requestType": "Kérés típusa",
-  "retry": "Újrapróbálkozás",
-  "revoke": "[HU] Revoke",
-  "revokeAccess": "[HU] Revoke Access",
-  "revokeAccessConfirmation": "[HU] Are you sure you want to revoke access?",
-  "save": "Mentés",
-  "saveGroupForRecognition": "[HU] Save Group for Recognition",
-  "scheduleForLater": "Ütemezés későbbre",
-  "scheduleMessage": "Üzenet ütemezése",
-  "scheduled": "Ütemezve",
-  "scheduledFor": "Ütemezve erre",
-  "scheduling": "Ütemezés",
-  "search": "Keresés",
-  "select": "Kiválasztás",
-  "sendNow": "Küldés most",
-  "settings": "Beállítások",
-  "share": "Megosztás",
-  "shareOnWhatsApp": "[HU] Share on WhatsApp",
-  "signUp": "Regisztráció",
-  "staffScreenTBD": "[HU] Staff screen coming soon",
+  "@removeChild": {
+    "description": "Description"
+  },
   "status": "Állapot",
-  "statusColon": "Állapot:",
-  "success": "Siker",
-  "targetingFilters": "Célzási szűrők",
-  "type": "Típus",
-  "undo": "[HU] Undo",
-  "upcomingSessions": "Közelgő munkamenetek",
-  "upload": "Feltöltés",
-  "viewAll": "[HU] View All",
+  "@status": {
+    "description": "status description"
+  },
+  "logout": "Kijelentkezés",
+  "@logout": {
+    "description": "Description"
+  },
+  "paste": "Beillesztés",
+  "@paste": {
+    "description": "Description"
+  },
   "welcome": "Üdvözlünk",
-  "welcomeToPlaytime": "[HU] Welcome to Playtime",
-  "yes": "Igen",
+  "@welcome": {
+    "description": "Description"
+  },
+  "playtimeCreateSession": "Munkamenet létrehozása",
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "familyMembers": "Családtagok",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "upload": "Feltöltés",
+  "@upload": {
+    "description": "Description"
+  },
+  "upcomingSessions": "Közelgő munkamenetek",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "enterGroupName": "[HU] Enter group name",
+  "@enterGroupName": {
+    "description": "Description"
+  },
+  "confirm": "Megerősítés",
+  "@confirm": {
+    "description": "Description"
+  },
+  "playtimeLive": "Élő Playtime",
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "errorLoadingInvites": "[HU] Error loading invites",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "targetingFilters": "Célzási szűrők",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "pickVideo": "Videó kiválasztása",
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "playtimeGameDeleted": "Játék törölve",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "scheduleForLater": "Ütemezés későbbre",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "accessRevokedSuccessfully": "[HU] Access revoked successfully",
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "type": "Típus",
+  "@type": {
+    "description": "type description"
+  },
+  "checkingPermissions": "Engedélyek ellenőrzése",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "copy": "Másolás",
+  "@copy": {
+    "description": "Description"
+  },
   "yesCancel": "Igen, mégse",
-  "errorEstimatingRecipients": "errorEstimatingRecipients (TRANSLATE)",
-  "@errorEstimatingRecipients": {
-    "description": "errorEstimatingRecipients description"
+  "@yesCancel": {
+    "description": "Description"
   },
-  "errorPickingImage": "errorPickingImage (TRANSLATE)",
-  "@errorPickingImage": {
-    "description": "errorPickingImage description"
+  "email": "Email",
+  "@email": {
+    "description": "Description"
   },
-  "errorPickingVideo": "errorPickingVideo (TRANSLATE)",
-  "@errorPickingVideo": {
-    "description": "errorPickingVideo description"
+  "shareOnWhatsApp": "[HU] Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Description"
   },
-  "organizations": "organizations (TRANSLATE)",
-  "@organizations": {
-    "description": "organizations description"
+  "notificationSettings": "Értesítési beállítások",
+  "@notificationSettings": {
+    "description": "Description"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
-  "@noOrganizations": {
-    "description": "noOrganizations description"
+  "myProfile": "[HU] My Profile",
+  "@myProfile": {
+    "description": "Description"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
-  "@errorLoadingOrganizations": {
-    "description": "errorLoadingOrganizations description"
+  "revoke": "[HU] Revoke",
+  "@revoke": {
+    "description": "Description"
   },
-  "members": "members (TRANSLATE)",
-  "@members": {
-    "description": "members description"
+  "noBroadcastMessages": "[HU] No messages yet",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
   },
-  "users": "users (TRANSLATE)",
-  "@users": {
-    "description": "users description"
+  "requestType": "Kérés típusa",
+  "@requestType": {
+    "description": "requestType description"
   },
-  "noUsers": "noUsers (TRANSLATE)",
-  "@noUsers": {
-    "description": "noUsers description"
+  "notifications": "Értesítések",
+  "@notifications": {
+    "description": "Description"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
-  "@errorLoadingUsers": {
-    "description": "errorLoadingUsers description"
+  "details": "Részletek",
+  "@details": {
+    "description": "details description"
   },
-  "changeRole": "changeRole (TRANSLATE)",
-  "@changeRole": {
-    "description": "changeRole description"
+  "cancelInvite": "[HU] Cancel Invite",
+  "@cancelInvite": {
+    "description": "Description"
   },
-  "totalAppointments": "totalAppointments (TRANSLATE)",
-  "@totalAppointments": {
-    "description": "totalAppointments description"
+  "createNew": "Új létrehozása",
+  "@createNew": {
+    "description": "Description"
   },
-  "completedAppointments": "completedAppointments (TRANSLATE)",
-  "@completedAppointments": {
-    "description": "completedAppointments description"
+  "settings": "Beállítások",
+  "@settings": {
+    "description": "Description"
   },
-  "revenue": "revenue (TRANSLATE)",
-  "@revenue": {
-    "description": "revenue description"
+  "playtimeReject": "Playtime elutasítása",
+  "@playtimeReject": {
+    "description": "Description"
   },
-  "errorLoadingStats": "errorLoadingStats (TRANSLATE)",
-  "@errorLoadingStats": {
-    "description": "errorLoadingStats description"
+  "errorLoadingProfile": "[HU] Error loading profile",
+  "@errorLoadingProfile": {
+    "description": "Description"
   },
-  "appointment": "appointment (TRANSLATE)",
-  "@appointment": {
-    "description": "appointment description"
+  "edit": "Szerkesztés",
+  "@edit": {
+    "description": "Description"
   },
-  "from": "from (TRANSLATE)",
-  "@from": {
-    "description": "from description"
+  "add": "Hozzáadás",
+  "@add": {
+    "description": "Description"
   },
-  "phone": "phone (TRANSLATE)",
-  "@phone": {
-    "description": "phone description"
+  "playtimeGameApproved": "Játék jóváhagyva",
+  "@playtimeGameApproved": {
+    "description": "Description"
   },
-  "noRouteDefined": "noRouteDefined (TRANSLATE)",
-  "@noRouteDefined": {
-    "description": "noRouteDefined description"
+  "forgotPassword": "Elfelejtetted a jelszót?",
+  "@forgotPassword": {
+    "description": "Description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
-  "@meetingDetails": {
-    "description": "meetingDetails description"
+  "familyDashboard": "Családi irányítópult",
+  "@familyDashboard": {
+    "description": "Description"
   },
-  "meetingId": "meetingId (TRANSLATE)",
-  "@meetingId": {
-    "description": "meetingId description"
+  "loading": "Betöltés",
+  "@loading": {
+    "description": "Description"
   },
-  "creator": "creator (TRANSLATE)",
-  "@creator": {
-    "description": "creator description"
+  "quickActions": "[HU] Quick Actions",
+  "@quickActions": {
+    "description": "Description"
   },
-  "context": "context (TRANSLATE)",
-  "@context": {
-    "description": "context description"
+  "playtimeTitle": "Playtime címe",
+  "@playtimeTitle": {
+    "description": "Description"
   },
-  "group": "group (TRANSLATE)",
-  "@group": {
-    "description": "group description"
+  "otpResentSuccessfully": "OTP sikeresen újraküldve",
+  "@otpResentSuccessfully": {
+    "description": "Description"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
-  "@requestPrivateSession": {
-    "description": "requestPrivateSession description"
+  "errorCheckingPermissions": "[HU] Error checking permissions",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
   },
-  "privacyRequestSent": "privacyRequestSent (TRANSLATE)",
-  "@privacyRequestSent": {
-    "description": "privacyRequestSent description"
+  "clientScreenTBD": "Ügyfélképernyő később",
+  "@clientScreenTBD": {
+    "description": "Description"
   },
-  "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
-  "@failedToSendPrivacyRequest": {
-    "description": "failedToSendPrivacyRequest description"
+  "fcmToken": "[HU] FCM Token",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "pickImage": "Kép kiválasztása",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "previous": "Előző",
+  "@previous": {
+    "description": "Description"
+  },
+  "noProfileFound": "[HU] No profile found",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "noFamilyMembersYet": "[HU] No family members yet",
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "mediaOptional": "[HU] Media (Optional)",
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "messageSavedSuccessfully": "Üzenet sikeresen mentve",
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "scheduledFor": "Ütemezve erre",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "dashboard": "Irányítópult",
+  "@dashboard": {
+    "description": "Description"
+  },
+  "noPermissionForBroadcast": "[HU] No permission for broadcast",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "@playtimeAdminPanelTitle": {
+    "description": "Localization key for: Playtime Games – Admin"
+  },
+  "inviteDetail": "Meghívás részletei",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "scheduled": "Ütemezve",
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "failedToResendOtp": "OTP újraküldése sikertelen",
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "scheduling": "Ütemezés",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "errorSavingMessage": "[HU] Error saving message",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "save": "Mentés",
+  "@save": {
+    "description": "save description"
+  },
+  "playtimeApprove": "Playtime jóváhagyása",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "createYourFirstSession": "Hozd létre az első munkameneted",
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "playtimeGameRejected": "Játék elutasítva",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "failedToRevokeAccess": "[HU] Failed to revoke access",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "recentGames": "Friss játékok",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "customizeMessage": "Üzenet testreszabása",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "failedToCancelInvite": "[HU] Failed to cancel invite",
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "errorSendingMessage": "[HU] Error sending message",
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "confirmPassword": "Jelszó megerősítése",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "errorLoadingPrivacyRequests": "[HU] Error loading privacy requests",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "connectedChildren": "Kapcsolódó gyerekek",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "share": "Megosztás",
+  "@share": {
+    "description": "Description"
+  },
+  "playtimeEnterGameName": "Add meg a játék nevét",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "pleaseLoginForFamilyFeatures": "Kérjük jelentkezz be családi funkciókhoz",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "myInvites": "Meghívásaim",
+  "@myInvites": {
+    "description": "Description"
+  },
+  "createGame": "Játék létrehozása",
+  "@createGame": {
+    "description": "Description"
+  },
+  "groupNameOptional": "[HU] Group Name (Optional)",
+  "@groupNameOptional": {
+    "description": "Description"
+  },
+  "playtimeNoSessions": "[HU] No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "adminScreenTBD": "Admin screen coming soon",
+  "@adminScreenTBD": {
+    "description": "Localization key for: Admin screen coming soon"
+  },
+  "playtimeParentDashboardTitle": "Playtime szülői irányítópult címe",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "close": "Bezárás",
+  "@close": {
+    "description": "close description"
+  },
+  "knownGroupDetected": "[HU] Known group detected",
+  "@knownGroupDetected": {
+    "description": "Description"
+  },
+  "back": "Vissza",
+  "@back": {
+    "description": "Description"
+  },
+  "playtimeChooseGame": "Válassz játékot",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "managePermissions": "Engedélyek kezelése",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "pollOptions": "Szavazási lehetőségek",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "clicked": "[HU] Clicked",
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "link": "[HU] Link",
+  "@link": {
+    "description": "link description"
+  },
+  "meetingReadyMessage": "Találkozó készen áll",
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "pendingInvites": "Függőben lévő meghívók",
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "statusColon": "Állapot:",
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "pleaseLoginToViewProfile": "[HU] Please log in to view your profile.",
+  "@pleaseLoginToViewProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "adminMetrics": "Admin Metrics",
+  "@adminMetrics": {
+    "description": "Localization key for: Admin Metrics"
   },
   "overview": "Overview",
   "@overview": {
@@ -765,5 +672,2192 @@
   "@bookings": {
     "description": "Description"
   },
-  "contentLibrary": "Content Library"
+  "users": "users (TRANSLATE)",
+  "@users": {
+    "description": "users description"
+  },
+  "revenue": "revenue (TRANSLATE)",
+  "@revenue": {
+    "description": "revenue description"
+  },
+  "contentLibrary": "Content Library",
+  "@contentLibrary": {
+    "description": "Localization key for: Content Library"
+  },
+  "authErrorUserNotFound": "No account found with this email address.",
+  "@authErrorUserNotFound": {
+    "description": "Localization key for: No account found with this email address."
+  },
+  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "@authErrorWrongPassword": {
+    "description": "Localization key for: Incorrect password. Please try again."
+  },
+  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Localization key for: Please enter a valid email address."
+  },
+  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "@authErrorUserDisabled": {
+    "description": "Localization key for: This account has been disabled. Please contact support."
+  },
+  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "@authErrorWeakPassword": {
+    "description": "Localization key for: Password is too weak. Please choose a stronger password."
+  },
+  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Localization key for: An account with this email already exists."
+  },
+  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "@authErrorTooManyRequests": {
+    "description": "Localization key for: Too many failed attempts. Please try again later."
+  },
+  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
+  },
+  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "@authErrorInvalidCredential": {
+    "description": "Localization key for: Invalid credentials. Please try again."
+  },
+  "authErrorAccountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method.",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Localization key for: An account already exists with this email using a different sign-in method."
+  },
+  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Localization key for: These credentials are already associated with another account."
+  },
+  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Localization key for: Network error. Please check your connection and try again."
+  },
+  "socialAccountConflictTitle": "Account Already Exists (Hungarian)",
+  "@socialAccountConflictTitle": {
+    "description": "Localization key for: Account Already Exists"
+  },
+  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Hungarian)",
+  "@socialAccountConflictMessage": {
+    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
+  },
+  "linkAccounts": "Link Accounts (Hungarian)",
+  "@linkAccounts": {
+    "description": "Localization key for: Link Accounts"
+  },
+  "signInWithExistingMethod": "Sign in with existing method (Hungarian)",
+  "@signInWithExistingMethod": {
+    "description": "Localization key for: Sign in with existing method"
+  },
+  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Please log in again to perform this operation."
+  },
+  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
+  },
+  "authErrorInvalidVerificationCode": "The verification code is invalid.",
+  "@authErrorInvalidVerificationCode": {
+    "description": "Localization key for: The verification code is invalid."
+  },
+  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: The verification ID is invalid."
+  },
+  "authErrorMissingVerificationCode": "Please enter the verification code.",
+  "@authErrorMissingVerificationCode": {
+    "description": "Localization key for: Please enter the verification code."
+  },
+  "authErrorMissingVerificationId": "Missing verification ID.",
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Missing verification ID."
+  },
+  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: The phone number is invalid."
+  },
+  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Please enter a phone number."
+  },
+  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
+  },
+  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: The verification code has expired. Please request a new one."
+  },
+  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Your session has expired. Please log in again."
+  },
+  "authErrorMultiFactorAuthRequired": "Multi-factor authentication is required.",
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Localization key for: Multi-factor authentication is required."
+  },
+  "authErrorMultiFactorInfoNotFound": "Multi-factor information not found.",
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Localization key for: Multi-factor information not found."
+  },
+  "authErrorMissingMultiFactorSession": "Missing multi-factor session.",
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Localization key for: Missing multi-factor session."
+  },
+  "authErrorInvalidMultiFactorSession": "Invalid multi-factor session.",
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Localization key for: Invalid multi-factor session."
+  },
+  "authErrorSecondFactorAlreadyInUse": "This second factor is already in use.",
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Localization key for: This second factor is already in use."
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "Maximum number of second factors exceeded.",
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Localization key for: Maximum number of second factors exceeded."
+  },
+  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
+  },
+  "authErrorEmailChangeNeedsVerification": "Email change requires verification.",
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Localization key for: Email change requires verification."
+  },
+  "authErrorPhoneNumberAlreadyExists": "This phone number is already in use.",
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Localization key for: This phone number is already in use."
+  },
+  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: The password is invalid or too weak."
+  },
+  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: The ID token is invalid."
+  },
+  "authErrorIdTokenExpired": "The ID token has expired.",
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: The ID token has expired."
+  },
+  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: The ID token has been revoked."
+  },
+  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "@authErrorInternalError": {
+    "description": "Localization key for: An internal error occurred. Please try again."
+  },
+  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: An invalid argument was provided."
+  },
+  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Invalid custom claims provided."
+  },
+  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: The continue URL is invalid."
+  },
+  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: The creation time is invalid."
+  },
+  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: The disabled field value is invalid."
+  },
+  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: The display name is invalid."
+  },
+  "authErrorInvalidDynamicLinkDomain": "The dynamic link domain is invalid.",
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Localization key for: The dynamic link domain is invalid."
+  },
+  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: The email verified value is invalid."
+  },
+  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: The hash algorithm is invalid."
+  },
+  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: The hash block size is invalid."
+  },
+  "authErrorInvalidHashDerivedKeyLength": "The hash derived key length is invalid.",
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Localization key for: The hash derived key length is invalid."
+  },
+  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: The hash key is invalid."
+  },
+  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: The hash memory cost is invalid."
+  },
+  "authErrorInvalidHashParallelization": "The hash parallelization is invalid.",
+  "@authErrorInvalidHashParallelization": {
+    "description": "Localization key for: The hash parallelization is invalid."
+  },
+  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: The hash rounds value is invalid."
+  },
+  "authErrorInvalidHashSaltSeparator": "The hash salt separator is invalid.",
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Localization key for: The hash salt separator is invalid."
+  },
+  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: The last sign-in time is invalid."
+  },
+  "authErrorInvalidPageToken": "The page token is invalid.",
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: The page token is invalid."
+  },
+  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: The provider data is invalid."
+  },
+  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: The provider ID is invalid."
+  },
+  "authErrorInvalidSessionCookieDuration": "The session cookie duration is invalid.",
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Localization key for: The session cookie duration is invalid."
+  },
+  "authErrorInvalidUid": "The UID is invalid.",
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: The UID is invalid."
+  },
+  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: The user import record is invalid."
+  },
+  "authErrorMaximumUserCountExceeded": "Maximum user import count exceeded.",
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Localization key for: Maximum user import count exceeded."
+  },
+  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Missing Android package name."
+  },
+  "authErrorMissingContinueUri": "Missing continue URL.",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Missing continue URL."
+  },
+  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Missing hash algorithm."
+  },
+  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Missing iOS bundle ID."
+  },
+  "authErrorMissingUid": "Missing UID.",
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Missing UID."
+  },
+  "authErrorMissingOauthClientSecret": "Missing OAuth client secret.",
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Localization key for: Missing OAuth client secret."
+  },
+  "authErrorProjectNotFound": "Firebase project not found.",
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Firebase project not found."
+  },
+  "authErrorReservedClaims": "Reserved claims provided.",
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Reserved claims provided."
+  },
+  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Session cookie has expired."
+  },
+  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Session cookie has been revoked."
+  },
+  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: The UID is already in use."
+  },
+  "authErrorUnauthorizedContinueUri": "The continue URL domain is not whitelisted.",
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Localization key for: The continue URL domain is not whitelisted."
+  },
+  "authErrorUnknown": "An unknown authentication error occurred.",
+  "@authErrorUnknown": {
+    "description": "Localization key for: An unknown authentication error occurred."
+  },
+  "checkingPermissions1": "Checking permissions... (Hungarian)",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "paymentSuccessful": "Payment Successful! (Hungarian)",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "businessAvailability": "Business Availability (Hungarian)",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "send": "Send (Hungarian)",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Hungarian)",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: {payloadTitle}"
+  },
+  "gameList": "Game List (Hungarian)",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "deleteAvailability": "Delete Availability (Hungarian)",
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "connectToGoogleCalendar": "Connect to Google Calendar (Hungarian)",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "adminFreeAccess": "Admin Free Access",
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "emailProfileemail": "Email: {profileEmail} (Hungarian)",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: {profileEmail}"
+  },
+  "calendar": "Calendar (Hungarian)",
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "upload1": "Upload (Hungarian)",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "resolved": "Resolved (Hungarian)",
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "keepSubscription": "Keep Subscription (Hungarian)",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "virtualSessionCreatedInvitingFriends": "Virtual session created! Inviting friends... (Hungarian)",
+  "@virtualSessionCreatedInvitingFriends": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "noEventsScheduledForToday": "No events scheduled for today (Hungarian)",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "exportData": "Export Data (Hungarian)",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "rewards": "Rewards (Hungarian)",
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "time": "Time (Hungarian)",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "userCid": "User {id}",
+  "@userCid": {
+    "description": "Localization key for: User {id}"
+  },
+  "noSlots": "No slots (Hungarian)",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
+  },
+  "signIn": "Sign In (Hungarian)",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "homeFeedScreen": "Home Feed Screen (Hungarian)",
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "selectLocation": "Select Location (Hungarian)",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "noTicketsYet": "No tickets yet (Hungarian)",
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "meetingSharedSuccessfully1": "Meeting shared successfully! (Hungarian)",
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "studioProfile": "Studio Profile (Hungarian)",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "subscriptionUnavailable": "Subscription unavailable (Hungarian)",
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
+  },
+  "confirmBooking": "Confirm Booking (Hungarian)",
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "failedToUpdatePermissionE": "Failed to update permission: $e (Hungarian)",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "reject": "Reject (Hungarian)",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "ambassadorStatusAmbassadorstatus": "Ambassador Status: {ambassadorStatus} (Hungarian)",
+  "@ambassadorStatusAmbassadorstatus": {
+    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
+  },
+  "noProviders": "No providers",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "checkingSubscription": "Checking subscription... (Hungarian)",
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "errorPickingImageE": "Error picking image: $e (Hungarian)",
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "noContentAvailableYet": "No content available yet (Hungarian)",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "resolve": "Resolve (Hungarian)",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorLoadingSurveysError": "Error loading surveys: $error (Hungarian)",
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "errorLogerrormessage": "Error: {errorMessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: {errorMessage}"
+  },
+  "getHelpWithYourAccount": "Get help with your account (Hungarian)",
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "pay": "Pay (Hungarian)",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "@meetingDetails": {
+    "description": "meetingDetails description"
+  },
+  "errorLoadingAppointments": "Error loading appointments (Hungarian)",
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "changesSavedSuccessfully": "Changes saved successfully! (Hungarian)",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "createNewInvoice": "Create New Invoice (Hungarian)",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "profileNotFound": "Profile not found. (Hungarian)",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "errorConfirmingPaymentE": "Error confirming payment: $e (Hungarian)",
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "inviteFriends": "Invite Friends (Hungarian)",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "profileSaved": "Profile saved! (Hungarian)",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "receiveBookingNotificationsViaEmail": "Receive booking notifications via email (Hungarian)",
+  "@receiveBookingNotificationsViaEmail": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "valuetointk": "\\${value}K (Hungarian)",
+  "@valuetointk": {
+    "description": "Localization key for: \\${value}K"
+  },
+  "deleteAccount": "Delete Account (Hungarian)",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "profile1": "Profile (Hungarian)",
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "businessOnboarding": "Business Onboarding (Hungarian)",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "addNewClient": "Add New Client (Hungarian)",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "darkMode": "Dark Mode (Hungarian)",
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "addProvider": "Add Provider",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for {path}"
+  },
+  "youWillReceiveAConfirmationEmailShortly": "You will receive a confirmation email shortly. (Hungarian)",
+  "@youWillReceiveAConfirmationEmailShortly": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "addQuestion": "Add Question (Hungarian)",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "privacyPolicy": "Privacy Policy (Hungarian)",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "branchesLengthBranches": "{branchCount} branches (Hungarian)",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: {branchCount} branches"
+  },
+  "join": "Join (Hungarian)",
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "businessSubscription": "Business Subscription (Hungarian)",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "myInvites1": "My Invites (Hungarian)",
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "providers": "Providers",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "surveyManagement": "Survey Management (Hungarian)",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
+  },
+  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Hungarian)",
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "readOurPrivacyPolicy": "Read our privacy policy (Hungarian)",
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
+  },
+  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Hungarian)",
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "refresh1": "Refresh (Hungarian)",
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "roomUpdatedSuccessfully": "Room updated successfully! (Hungarian)",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "contentDetail": "Content Detail (Hungarian)",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
+  },
+  "cancelSubscription": "Cancel Subscription (Hungarian)",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "successfullyRegisteredAsAmbassador": "Successfully registered as Ambassador! (Hungarian)",
+  "@successfullyRegisteredAsAmbassador": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "save1": "Save (Hungarian)",
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "copy1": "Copy (Hungarian)",
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "failedToSendInvitationE": "Failed to send invitation: $e (Hungarian)",
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "surveyScore": "Survey Score (Hungarian)",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
+  },
+  "userUserid": "User $userId",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "noAppointmentsFound": "No appointments found. (Hungarian)",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "responseDetail": "Response Detail (Hungarian)",
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "businessVerificationScreenComingSoon": "Business Verification Screen - Coming Soon (Hungarian)",
+  "@businessVerificationScreenComingSoon": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "businessProfileActivatedSuccessfully": "Business profile activated successfully! (Hungarian)",
+  "@businessProfileActivatedSuccessfully": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Hungarian)",
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "businessDashboardEntryScreenComingSoon": "Business Dashboard Entry Screen - Coming Soon (Hungarian)",
+  "@businessDashboardEntryScreenComingSoon": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "contentFilter": "Content Filter (Hungarian)",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "helpSupport": "Help & Support (Hungarian)",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "editRoom": "Edit Room (Hungarian)",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "appointmentApptid": "Appointment: {appointmentId}",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: {deviceInfo}"
+  },
+  "businessCrmEntryScreenComingSoon": "Business CRM Entry Screen - Coming Soon (Hungarian)",
+  "@businessCrmEntryScreenComingSoon": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "adminDashboard": "Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "orgmemberidslengthMembers": "{memberCount} members",
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: {memberCount} members"
+  },
+  "errorLoadingDashboardError": "Error loading dashboard: $error (Hungarian)",
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "gameDeletedSuccessfully": "Game deleted successfully! (Hungarian)",
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "viewResponsesComingSoon": "View responses - Coming soon! (Hungarian)",
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "deleteProvider": "Delete Provider",
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "errorLoadingRewards": "Error loading rewards (Hungarian)",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "failedToDeleteAccountE": "Failed to delete account: $e (Hungarian)",
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "invited1": "Invited (Hungarian)",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "noBranchesAvailable": "No branches available (Hungarian)",
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "errorError": "Error: $error (Hungarian)",
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "noEvents": "No events (Hungarian)",
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "gameCreatedSuccessfully": "Game created successfully! (Hungarian)",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "add1": "Add (Hungarian)",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "creatorCreatorid": "Creator: $creatorId",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "eventstarttimeEventendtime": "{startTime} - {endTime} (Hungarian)",
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: {startTime} - {endTime}"
+  },
+  "allowPlaytime": "Allow Playtime (Hungarian)",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "clients": "Clients (Hungarian)",
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "noAmbassadorDataAvailable": "No ambassador data available (Hungarian)",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "backgroundDeletedSuccessfully": "Background deleted successfully! (Hungarian)",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "errorSnapshoterror": "Error: {error} (Hungarian)",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: {error}"
+  },
+  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Hungarian)",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "errorDeletingSlotE": "Error deleting slot: $e (Hungarian)",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "businessPhoneBookingEntryScreenComingSoon": "Business Phone Booking Entry Screen - Coming Soon (Hungarian)",
+  "@businessPhoneBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "verification": "Verification (Hungarian)",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "copyLink": "Copy Link (Hungarian)",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "dashboard1": "Dashboard (Hungarian)",
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "manageChildAccounts": "Manage Child Accounts (Hungarian)",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "grantConsent": "Grant Consent (Hungarian)",
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "myProfile1": "My Profile (Hungarian)",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "submit": "Submit (Hungarian)",
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "userLoguseremail": "User: {userEmail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: {userEmail}"
+  },
+  "emailNotifications": "Email Notifications (Hungarian)",
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "ambassadorDashboard": "Ambassador Dashboard (Hungarian)",
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "phoneBooking": "Phone Booking (Hungarian)",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "bookViaChat": "Book via Chat (Hungarian)",
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "error": "Hiba",
+  "@error": {
+    "description": "Description"
+  },
+  "businessProfile": "Business Profile (Hungarian)",
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "businessBookingEntryScreenComingSoon": "Business Booking Entry Screen - Coming Soon (Hungarian)",
+  "@businessBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "createNewSurvey": "Create New Survey (Hungarian)",
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "backgroundRejected": "Background rejected (Hungarian)",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "noMediaSelected": "No media selected (Hungarian)",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "syncToGoogle": "Sync to Google (Hungarian)",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "virtualPlaytime": "Virtual Playtime (Hungarian)",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "colorContrastTesting": "Color Contrast Testing",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "loginFailedE": "Login failed: $e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "invitationSentSuccessfully": "Invitation sent successfully! (Hungarian)",
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "registering": "Registering... (Hungarian)",
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "statusAppointmentstatusname": "Status: {status} (Hungarian)",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "home1": "Home (Hungarian)",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "errorSavingSettingsE": "Error saving settings: $e (Hungarian)",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "appVersionAndInformation": "App version and information (Hungarian)",
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "businessSubscriptionEntryScreenComingSoon": "Business Subscription Entry Screen - Coming Soon (Hungarian)",
+  "@businessSubscriptionEntryScreenComingSoon": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "ekeyEvalue": "{key}: {value} (Hungarian)",
+  "@ekeyEvalue": {
+    "description": "Localization key for: {key}: {value}"
+  },
+  "yourPaymentHasBeenProcessedSuccessfully": "Your payment has been processed successfully. (Hungarian)",
+  "@yourPaymentHasBeenProcessedSuccessfully": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "errorE": "Error: $e (Hungarian)",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "viewAll1": "View All (Hungarian)",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "editSurveyComingSoon": "Edit survey - Coming soon! (Hungarian)",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "enterOtp": "Enter OTP (Hungarian)",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "payment": "Payment (Hungarian)",
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "automaticallyConfirmNewBookingRequests": "Automatically confirm new booking requests (Hungarian)",
+  "@automaticallyConfirmNewBookingRequests": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "errorPickingVideoE": "Error picking video: $e",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Hungarian)",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for {settingsName}"
+  },
+  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Hungarian)",
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: {targetType}: {targetId}"
+  },
+  "staffAvailability": "Staff Availability (Hungarian)",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "livePlaytime": "Live Playtime (Hungarian)",
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "autoconfirmBookings": "Auto-Confirm Bookings (Hungarian)",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "redirectingToStripeCheckoutForProPlan": "Redirecting to Stripe checkout for Pro plan... (Hungarian)",
+  "@redirectingToStripeCheckoutForProPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "exportAsCsv": "Export as CSV (Hungarian)",
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
+  },
+  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Hungarian)",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "editClient": "Edit Client (Hungarian)",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "areYouSureYouWantToDeleteThisMessage": "Are you sure you want to delete this message? (Hungarian)",
+  "@areYouSureYouWantToDeleteThisMessage": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "referralsAmbassadorreferrals": "Referrals: {referrals} (Hungarian)",
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: {referrals}"
+  },
+  "notAuthenticated": "Not authenticated",
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Hungarian)",
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "clientDeletedSuccessfully": "Client deleted successfully! (Hungarian)",
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
+  },
+  "failedToCancelSubscription": "Failed to cancel subscription (Hungarian)",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "allLanguages": "All Languages (Hungarian)",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "slotDeletedSuccessfully": "Slot deleted successfully (Hungarian)",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "businessProvidersEntryScreenComingSoon": "Business Providers Entry Screen - Coming Soon",
+  "@businessProvidersEntryScreenComingSoon": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "parentsMustApproveBeforeChildrenCanJoin": "Parents must approve before children can join (Hungarian)",
+  "@parentsMustApproveBeforeChildrenCanJoin": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Hungarian)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "businessAvailabilityEntryScreenComingSoon": "Business Availability Entry Screen - Coming Soon (Hungarian)",
+  "@businessAvailabilityEntryScreenComingSoon": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "appointmentsListlength": "Appointments: {count} (Hungarian)",
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: {count}"
+  },
+  "clearFilters": "Clear Filters (Hungarian)",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "submitBooking": "Submit Booking (Hungarian)",
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "areYouSureYouWantToCancelThisAppointment": "Are you sure you want to cancel this appointment? (Hungarian)",
+  "@areYouSureYouWantToCancelThisAppointment": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "noUpcomingBookings": "No upcoming bookings (Hungarian)",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "goBack": "Go Back (Hungarian)",
+  "@goBack": {
+    "description": "Localization key for: Go Back"
+  },
+  "setup": "Setup (Hungarian)",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "inviteChild": "Invite Child (Hungarian)",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "goToDashboard": "Go to Dashboard (Hungarian)",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Hungarian)",
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "adminSettings": "Admin Settings",
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "referralCode": "Referral Code (Hungarian)",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "adminLogadminemail": "Admin: {adminEmail}",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: {adminEmail}"
+  },
+  "date": "Date (Hungarian)",
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "readOnly": "Read Only (Hungarian)",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "bookingRequest": "Booking Request (Hungarian)",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "advancedReporting": "• Advanced reporting (Hungarian)",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "rooms": "Rooms (Hungarian)",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "copiedToClipboard": "Copied to clipboard (Hungarian)",
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "bookingConfirmed": "Booking Confirmed (Hungarian)",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "sessionApproved": "Session approved! (Hungarian)",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "clientAddedSuccessfully": "Client added successfully! (Hungarian)",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noNotifications": "No notifications (Hungarian)",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "backgroundApproved": "Background approved! (Hungarian)",
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "familySupport": "Family Support (Hungarian)",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "deletingAccount": "Deleting account... (Hungarian)",
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "bookAppointment": "Book Appointment (Hungarian)",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "receivePushNotificationsForNewBookings": "Receive push notifications for new bookings (Hungarian)",
+  "@receivePushNotificationsForNewBookings": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "delete1": "Delete (Hungarian)",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "sendBookingInvite": "Send Booking Invite (Hungarian)",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "text": "Text (Hungarian)",
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "manageSubscription": "Manage Subscription (Hungarian)",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "requiresInstallFallback": "Requires Install Fallback (Hungarian)",
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "paymentConfirmation": "Payment Confirmation (Hungarian)",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Hungarian)",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: {inviteeId}"
+  },
+  "errorLoadingSlots": "Error loading slots (Hungarian)",
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "allowOtherUsersToFindAndJoinThisGame": "Allow other users to find and join this game (Hungarian)",
+  "@allowOtherUsersToFindAndJoinThisGame": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "businessOnboardingScreenComingSoon": "Business Onboarding Screen - Coming Soon (Hungarian)",
+  "@businessOnboardingScreenComingSoon": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "activateBusinessProfile": "Activate Business Profile (Hungarian)",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
+  "contentNotFound": "Content not found (Hungarian)",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Hungarian)",
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: {specialty}\\n{contactInfo}"
+  },
+  "rating": "Rating (Hungarian)",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "messages": "Messages (Hungarian)",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Hungarian)",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "becomeAnAmbassador": "Become an Ambassador (Hungarian)",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "subscribeNow": "Subscribe Now (Hungarian)",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "timeArgsslotformatcontext": "Time: {time} (Hungarian)",
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: {time}"
+  },
+  "shareViaWhatsapp": "Share via WhatsApp (Hungarian)",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "users1": "Users (Hungarian)",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "shareLink": "Share Link (Hungarian)",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
+  "@areYouSureYouWantToDeleteThisProvider": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "deleteAppointment": "Delete Appointment (Hungarian)",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toggleAvailability": "Toggle Availability (Hungarian)",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "changePlan": "Change Plan (Hungarian)",
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "errorLoadingStaff": "Error loading staff (Hungarian)",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "updateYourBusinessInformation": "Update your business information (Hungarian)",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "noProvidersFoundAddYourFirstProvider": "No providers found. Add your first provider!",
+  "@noProvidersFoundAddYourFirstProvider": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "parentDashboard": "Parent Dashboard (Hungarian)",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "menu": "Menu (Hungarian)",
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "studioBooking": "Studio Booking (Hungarian)",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "about1": "About (Hungarian)",
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "multipleChoice": "Multiple Choice (Hungarian)",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "dateAppointmentscheduledattostring": "Date: {date} (Hungarian)",
+  "@dateAppointmentscheduledattostring": {
+    "description": "Localization key for: Date: {date}"
+  },
+  "studioBookingIsOnlyAvailableOnWeb": "Studio booking is only available on web (Hungarian)",
+  "@studioBookingIsOnlyAvailableOnWeb": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "errorLoadingBranchesE": "Error loading branches: $e (Hungarian)",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "ud83dudcc5Bookingdatetimetolocal": "\\uD83D\\uDCC5 {dateTime} (Hungarian)",
+  "@ud83dudcc5Bookingdatetimetolocal": {
+    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
+  },
+  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "none": "None (Hungarian)",
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "failedToUpdateConsentE": "Failed to update consent: $e (Hungarian)",
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "welcome1": "Welcome (Hungarian)",
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "failedToCreateSessionE": "Failed to create session: $e (Hungarian)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "inviteContact": "Invite Contact (Hungarian)",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "surveyEditor": "Survey Editor (Hungarian)",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Hungarian)",
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "mySchedule": "My Schedule (Hungarian)",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "studioDashboard": "Studio Dashboard (Hungarian)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
+  "editProfile": "Edit Profile (Hungarian)",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "logout1": "Logout",
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "serviceServiceidNotSelected": "Service: {service}",
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: {service}"
+  },
+  "settingsSavedSuccessfully": "Settings saved successfully! (Hungarian)",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "linkCopiedToClipboard": "Link copied to clipboard! (Hungarian)",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "accept1": "Accept (Hungarian)",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "noAvailableSlots": "No available slots (Hungarian)",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "makeGamePublic": "Make Game Public (Hungarian)",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "permissionPermissioncategoryUpdatedToNewvalue": "Permission {category} updated to $newValue (Hungarian)",
+  "@permissionPermissioncategoryUpdatedToNewvalue": {
+    "description": "Localization key for: Permission {category} updated to $newValue"
+  },
+  "roomDeletedSuccessfully": "Room deleted successfully! (Hungarian)",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "businessCalendar": "Business Calendar (Hungarian)",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "addAvailability": "Add Availability (Hungarian)",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "ambassadorOnboarding": "Ambassador Onboarding (Hungarian)",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "phoneProfileasyncphone": "Phone: {phone} (Hungarian)",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: {phone}"
+  },
+  "addNewRoom": "Add New Room (Hungarian)",
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "requireParentApproval": "Require Parent Approval (Hungarian)",
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "closed": "Closed (Hungarian)",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "exportAsPdf": "Export as PDF (Hungarian)",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "enableVibration": "Enable Vibration (Hungarian)",
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "toAvailendformatcontext": "To: {endTime} (Hungarian)",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: {endTime}"
+  },
+  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Hungarian)",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "@requestPrivateSession": {
+    "description": "requestPrivateSession description"
+  },
+  "country": "Country (Hungarian)",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "loginScreen": "Login Screen",
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "staffArgsstaffdisplayname": "Staff: {staffName} (Hungarian)",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "revokeConsent": "Revoke Consent (Hungarian)",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "settings1": "Settings (Hungarian)",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "cancel1": "Cancel (Hungarian)",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "subscriptionActivatedSuccessfully": "Subscription activated successfully! (Hungarian)",
+  "@subscriptionActivatedSuccessfully": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "activityLogaction": "Activity: {action}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: {action}"
+  },
+  "broadcast": "Broadcast (Hungarian)",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "noEventsScheduledThisWeek": "No events scheduled this week (Hungarian)",
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "googleCalendar": "Google Calendar (Hungarian)",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "sendInvite": "Send Invite (Hungarian)",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "childDashboard": "Child Dashboard (Hungarian)",
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "failedToUploadBackgroundE": "Failed to upload background: $e (Hungarian)",
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "linkchildidsubstring08": "{linkId}...",
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: {linkId}..."
+  },
+  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: {targetType} - {targetId}"
+  },
+  "contextContextid": "Context: $contextId",
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
+  },
+  "noAppointments": "No appointments (Hungarian)",
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Hungarian)",
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: {errorType}"
+  },
+  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Hungarian)",
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "selectStaff": "Select Staff (Hungarian)",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "subscriptionCancelledSuccessfully": "Subscription cancelled successfully (Hungarian)",
+  "@subscriptionCancelledSuccessfully": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "cancelAppointment": "Cancel Appointment (Hungarian)",
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - {childId}"
+  },
+  "businessSignup": "Business Signup (Hungarian)",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "businessCompletionScreenComingSoon": "Business Completion Screen - Coming Soon (Hungarian)",
+  "@businessCompletionScreenComingSoon": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "createGame1": "Create Game (Hungarian)",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "valuetoint": "{value} (Hungarian)",
+  "@valuetoint": {
+    "description": "Localization key for: {value}"
+  },
+  "pleaseEnterAPromoCode": "Please enter a promo code (Hungarian)",
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "errorLoadingAvailabilityE": "Error loading availability: $e (Hungarian)",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "parentalControls": "Parental Controls (Hungarian)",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
+  },
+  "editBusinessProfile": "Edit Business Profile (Hungarian)",
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "childLinkedSuccessfully": "Child linked successfully! (Hungarian)",
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "create": "Create (Hungarian)",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "noExternalMeetingsFound": "No external meetings found. (Hungarian)",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "staffSelectionstaffdisplayname": "Staff: {staffName} (Hungarian)",
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "schedulerScreen": "Scheduler Screen (Hungarian)",
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "clientUpdatedSuccessfully": "Client updated successfully! (Hungarian)",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "surveyResponses": "Survey Responses (Hungarian)",
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "syncToOutlook": "Sync to Outlook (Hungarian)",
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "saveChanges": "Save Changes (Hungarian)",
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "pickTime": "Pick Time (Hungarian)",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "registrationFailedEtostring": "Registration failed: {error} (Hungarian)",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: {error}"
+  },
+  "analytics": "Analytics (Hungarian)",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "errorLoadingEvents": "Error loading events (Hungarian)",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "success1": "Success (Hungarian)",
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "appVersionLogappversion": "App Version: {appVersion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: {appVersion}"
+  },
+  "fromAvailstartformatcontext": "From: {startTime} (Hungarian)",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: {startTime}"
+  },
+  "readWrite": "Read & Write (Hungarian)",
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "redirectingToStripeCheckoutForBasicPlan": "Redirecting to Stripe checkout for Basic plan... (Hungarian)",
+  "@redirectingToStripeCheckoutForBasicPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "pickDate": "Pick Date (Hungarian)",
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "chatBooking": "Chat Booking (Hungarian)",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "noQuestionsAdded": "No questions added (Hungarian)",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "severityLogseverityname": "Severity: {severity}",
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: {severity}"
+  },
+  "markAsPaid": "Mark as Paid",
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "typeOpenCall": "Type: Open Call (Hungarian)",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment {appointmentId}"
+  },
+  "statusInvitestatusname": "Status: {status}",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "businessLogin": "Business Login",
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "invoiceCreatedSuccessfully": "Invoice created successfully! (Hungarian)",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "noTimeSeriesDataAvailable": "No time series data available (Hungarian)",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
+  },
+  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to {planName}"
+  },
+  "timestamp_formatdatelogtimestamp": "Timestamp: {timestamp}",
+  "@timestamp_formatdatelogtimestamp": {
+    "description": "Localization key for: Timestamp: {timestamp}"
+  },
+  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Hungarian)",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "chooseYourPlan": "Choose Your Plan (Hungarian)",
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "playtimeManagement": "Playtime Management (Hungarian)",
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "availability": "Availability (Hungarian)",
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "eventCreated": "Event created (Hungarian)",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Hungarian)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "completion": "Completion (Hungarian)",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "supportTicketSubmitted": "Support ticket submitted (Hungarian)",
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "monetizationSettings": "Monetization Settings (Hungarian)",
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "noBookingsFound": "No bookings found (Hungarian)",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "admin": "Admin",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "deleteSurvey": "Delete Survey (Hungarian)",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "gameApprovedSuccessfully": "Game approved successfully! (Hungarian)",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "errorLoadingPermissionsError": "Error loading permissions: $error (Hungarian)",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "referrals": "Referrals (Hungarian)",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "crm": "CRM (Hungarian)",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameRejected": "Game rejected (Hungarian)",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "appointments": "Appointments (Hungarian)",
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "onboardingScreen": "Onboarding Screen (Hungarian)",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "welcomeToYourStudio": "Welcome to your studio (Hungarian)",
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "update": "Update (Hungarian)",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "retry1": "Retry (Hungarian)",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "booking": "Booking (Hungarian)",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "parentalSettings": "Parental Settings (Hungarian)",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "language": "Language (Hungarian)",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "deleteSlot": "Delete Slot (Hungarian)",
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "organizations": "organizations (TRANSLATE)",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "createNewGame": "Create New Game (Hungarian)",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "next1": "Next (Hungarian)",
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Hungarian)",
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "noAppointmentRequestsFound": "No appointment requests found. (Hungarian)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "pleaseSignInToCreateASession": "Please sign in to create a session (Hungarian)",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "restrictMatureContent": "Restrict mature content (Hungarian)",
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "ambassadors": "Ambassadors (Hungarian)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "smsNotifications": "SMS Notifications (Hungarian)",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "paymentWasCancelled": "Payment was cancelled (Hungarian)",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "clearAll": "Clear All (Hungarian)",
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
+  },
+  "viewDetails": "View Details (Hungarian)",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "notifications1": "Notifications (Hungarian)",
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "liveSessionScheduledWaitingForParentApproval": "Live session scheduled! Waiting for parent approval... (Hungarian)",
+  "@liveSessionScheduledWaitingForParentApproval": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "failedToCreateGameE": "Failed to create game: $e (Hungarian)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "noChartDataAvailable": "No chart data available (Hungarian)",
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
+  },
+  "phonebasedBookingSystem": "• Phone-based booking system (Hungarian)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "enableNotifications1": "Enable Notifications (Hungarian)",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "invoices": "Invoices (Hungarian)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "pleaseActivateYourBusinessProfileToContinue": "Please activate your business profile to continue. (Hungarian)",
+  "@pleaseActivateYourBusinessProfileToContinue": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Hungarian)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: {scheduledAt}"
+  },
+  "durationDurationinminutes0Minutes": "Duration: {duration} minutes (Hungarian)",
+  "@durationDurationinminutes0Minutes": {
+    "description": "Localization key for: Duration: {duration} minutes"
+  },
+  "tryAgain": "Try Again (Hungarian)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "deleteBackground": "Delete Background (Hungarian)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "currentTierTiertouppercase": "Current Tier: {tier} (Hungarian)",
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: {tier}"
+  },
+  "iDoNotConsent": "I Do Not Consent",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "noClientsFoundAddYourFirstClient": "No clients found. Add your first client! (Hungarian)",
+  "@noClientsFoundAddYourFirstClient": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "settingsDialogWillBeImplementedHere": "Settings dialog will be implemented here.",
+  "@settingsDialogWillBeImplementedHere": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "groupGroupid": "Group: $groupId",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentRequests": "Appointment Requests (Hungarian)",
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "forward": "Forward (Hungarian)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "roomAddedSuccessfully": "Room added successfully! (Hungarian)",
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "option": "• $option (Hungarian)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "responseIndex1": "Response #{number} (Hungarian)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #{number}"
+  },
+  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Hungarian)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "contentLibrary1": "Content Library (Hungarian)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "reply": "Reply (Hungarian)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "subscriptionManagement": "Subscription Management (Hungarian)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "monetizationSettingsWillBeImplementedHere": "Monetization settings will be implemented here (Hungarian)",
+  "@monetizationSettingsWillBeImplementedHere": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Hungarian)",
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "editProvider": "Edit Provider",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "localizationContribution": "Localization Contribution (Hungarian)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "parentalConsent": "Parental Consent (Hungarian)",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Hungarian)",
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "areYouSureYouWantToDeleteThisAppointment": "Are you sure you want to delete this appointment? (Hungarian)",
+  "@areYouSureYouWantToDeleteThisAppointment": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "syncAppointment": "Sync Appointment (Hungarian)",
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "iConsent": "I Consent (Hungarian)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "sessionRejected": "Session rejected (Hungarian)",
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Hungarian)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "edit1": "Edit (Hungarian)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "noEventsScheduledThisMonth": "No events scheduled this month (Hungarian)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "businessDashboard": "Business Dashboard (Hungarian)",
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "noMessagesFound": "No messages found. (Hungarian)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "staffStaffidNotSelected": "Staff: {staff}",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: {staff}"
+  },
+  "manageStaffAvailability": "Manage Staff Availability (Hungarian)",
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "noMissingTranslations": "No missing translations (Hungarian)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "skip": "Skip (Hungarian)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "noUsers": "noUsers (TRANSLATE)",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingReferralCode": "Error loading referral code (Hungarian)",
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "allCountries": "All Countries (Hungarian)",
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "deleteGame": "Delete Game (Hungarian)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "staffManagementTools": "• Staff management tools (Hungarian)",
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "deleteMessage": "Delete Message (Hungarian)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "receiveBookingNotificationsViaSms": "Receive booking notifications via SMS (Hungarian)",
+  "@receiveBookingNotificationsViaSms": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "changeRole": "changeRole (TRANSLATE)",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "errorLoadingBookingsSnapshoterror": "Error loading bookings: {error} (Hungarian)",
+  "@errorLoadingBookingsSnapshoterror": {
+    "description": "Localization key for: Error loading bookings: {error}"
+  },
+  "openingCustomerPortal": "Opening customer portal... (Hungarian)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "signOut": "Sign Out (Hungarian)",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "nameProfilename": "Name: {name} (Hungarian)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: {name}"
+  },
+  "businessProfileEntryScreenComingSoon": "Business Profile Entry Screen - Coming Soon (Hungarian)",
+  "@businessProfileEntryScreenComingSoon": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "upgradeToBusiness": "Upgrade to Business (Hungarian)",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "apply": "Apply (Hungarian)",
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "errorLoadingSubscriptionError": "Error loading subscription: $error (Hungarian)",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "verify": "Verify (Hungarian)",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "subscription": "Subscription (Hungarian)",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "deleteMyAccount": "Delete My Account (Hungarian)",
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "businessAppointmentsEntryScreenComingSoon": "Business Appointments Entry Screen - Coming Soon (Hungarian)",
+  "@businessAppointmentsEntryScreenComingSoon": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "viewResponses": "View Responses (Hungarian)",
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Hungarian)",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Hungarian)",
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "continueText": "Continue (Hungarian)",
+  "@continueText": {
+    "description": "Localization key for: Continue"
+  },
+  "close1": "Close (Hungarian)",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "confirm1": "Confirm (Hungarian)",
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "externalMeetings": "External Meetings (Hungarian)",
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "approve": "Approve (Hungarian)",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "noInvoicesFoundCreateYourFirstInvoice": "No invoices found. Create your first invoice! (Hungarian)",
+  "@noInvoicesFoundCreateYourFirstInvoice": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "subscribe": "Subscribe (Hungarian)",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "login1": "Login",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "adminOverviewGoesHere": "Admin overview goes here",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "loadingCheckout": "Loading checkout... (Hungarian)",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  }
 }
