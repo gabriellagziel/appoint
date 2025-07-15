@@ -13,4 +13,4 @@ Future<void> setupFirebaseMocks() async {
   }
 }
 
-mockAuth = MockFirebaseAuth();
+final mockAuth = MockFirebaseAuth();
