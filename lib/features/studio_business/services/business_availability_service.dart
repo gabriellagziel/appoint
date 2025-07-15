@@ -61,7 +61,7 @@ class BusinessAvailabilityService {
   Future<void> updateDay(
       int weekday, final BusinessAvailability availability,) async {
     final currentConfig = await loadConfiguration();
-    updatedConfig = currentConfig.map((final day) {
+    final updatedConfig = currentConfig.map((final day) {
       if (day.weekday == weekday) {
         return availability;
       }

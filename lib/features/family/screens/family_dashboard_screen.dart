@@ -447,13 +447,12 @@ class FamilyDashboardScreen extends ConsumerWidget {
       // Refresh the privacy requests list
       ref.invalidate(privacyRequestsProvider);
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(l10n.failedToActionPrivacyRequest(action, e)),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.failedToActionPrivacyRequest(action, e)),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
 

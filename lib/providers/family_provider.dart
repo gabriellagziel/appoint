@@ -46,7 +46,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
 
   /// Load pending invites and connected children
   Future<void> loadLinks() async {
-    final state = state.copyWith(isLoading: true);
+    state = state.copyWith(isLoading: true);
     try {
       final links = await _familyService.fetchFamilyLinks(parentId);
       state = state.copyWith(
@@ -70,7 +70,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
       await _familyService.cancelInvite(parentId, link.childId);
       await loadLinks();
     } catch (e) {
-      final state = state.copyWith(error: e.toString());
+      state = state.copyWith(error: e.toString());
     }
   }
 
@@ -80,7 +80,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
       await _familyService.resendOtp(parentId, link.childId);
       // Optionally notify user via analytics or toast
     } catch (e) {
-      final state = state.copyWith(error: e.toString());
+      state = state.copyWith(error: e.toString());
     }
   }
 }

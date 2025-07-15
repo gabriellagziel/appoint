@@ -73,16 +73,16 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
                 initialValue: _profile!.name,
                 decoration: const InputDecoration(labelText: 'Studio Name'),
                 onSaved: (v) =>
-                    final _profile = _profile!.copyWith(name: v ?? ''),
+                    _profile = _profile!.copyWith(name: v ?? ''),
                 validator: (v) =>
-                    final v = = null || v.isEmpty ? 'Required' : null,
+                    v == null || v.isEmpty ? 'Required' : null,
               ),
               const SizedBox(height: 16),
               TextFormField(
                 initialValue: _profile!.description,
                 decoration: const InputDecoration(labelText: 'Description'),
                 onSaved: (v) =>
-                    final _profile = _profile!.copyWith(description: v),
+                    _profile = _profile!.copyWith(description: v),
               ),
               const SizedBox(height: 16),
               TextFormField(
