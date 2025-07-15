@@ -44,8 +44,6 @@ class AdminPlaytimeGamesScreen extends ConsumerWidget {
 class _GamesTab extends ConsumerWidget {
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    final l10n = AdminLocalizations.of(context);
-
     return Consumer(
       builder: (context, final ref, final child) {
         final gamesAsync = ref.watch(allGamesProvider);
@@ -96,7 +94,7 @@ class _GamesTab extends ConsumerWidget {
 
                   // Empty State
                   if (games.isEmpty) ...[
-                    _buildEmptyState(l10n, 'No games found'),
+                    _buildEmptyState('No games found'),
                   ],
                 ],
               ),
@@ -381,7 +379,7 @@ class _GamesTab extends ConsumerWidget {
     context.push('/admin/playtime/game/${game.id}');
   }
 
-  Widget _buildEmptyState(AppLocalizations l10n, final String message) => Center(
+  Widget _buildEmptyState(final String message) => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
