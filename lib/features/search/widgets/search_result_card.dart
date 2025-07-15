@@ -78,20 +78,20 @@ class SearchResultCard extends StatelessWidget {
 
     switch (result.type) {
       case 'business':
-        final iconData = Icons.business;
-        final iconColor = Colors.blue;
+        iconData = Icons.business;
+        iconColor = Colors.blue;
         break;
       case 'service':
-        final iconData = Icons.miscellaneous_services;
-        final iconColor = Colors.green;
+        iconData = Icons.miscellaneous_services;
+        iconColor = Colors.green;
         break;
       case 'user':
-        final iconData = Icons.person;
-        final iconColor = Colors.orange;
+        iconData = Icons.person;
+        iconColor = Colors.orange;
         break;
       default:
-        final iconData = Icons.search;
-        final iconColor = Colors.grey;
+        iconData = Icons.search;
+        iconColor = Colors.grey;
     }
 
     return Icon(

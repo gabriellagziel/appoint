@@ -66,7 +66,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
     if (currentUser != null) {
       final sessionId =
           'booking_${currentUser.uid}_${DateTime.now().millisecondsSinceEpoch}';
-      final state = state.copyWith(chatSessionId: sessionId);
+      state = state.copyWith(chatSessionId: sessionId);
       _setupChatListeners(sessionId, currentUser.uid);
       // Initialize conversation
       addBotMessage('Welcome! What type of appointment would you like?');
