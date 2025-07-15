@@ -214,7 +214,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
       // Save booking request to Firestore
       await _saveBookingRequest(
           customerName, phoneNumber, date, time, bookingCode,);
-    } catch (e) {e) {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -236,7 +236,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
           .get();
 
       return snapshot.docs.isNotEmpty;
-    } catch (e) {e) {
+    } catch (e) {
       // If error, assume user doesn't exist and proceed with WhatsApp
       return false;
     }

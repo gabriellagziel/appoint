@@ -15,7 +15,7 @@ class BookingService {
   Future<void> createBooking(Booking booking) async {
     try {
       await _firestore.collection('appointments').add(booking.toJson());
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('❌ Error creating booking: $e');
       // Removed debug print: debugPrint(st);
       rethrow;
@@ -34,7 +34,7 @@ class BookingService {
       docRef = _firestore.collection(_bookingsCollection).doc();
       bookingWithId = booking.copyWith(id: docRef.id);
       await docRef.set(bookingWithId.toJson());
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error submitting booking: $e\n$st');
       rethrow;
     }
@@ -53,7 +53,7 @@ class BookingService {
       return snapshot.docs
           .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
           .toList();
-    } catch (e) {e) {
+    } catch (e) {
       return [];
     }
   }
@@ -87,7 +87,7 @@ class BookingService {
       }
 
       return allBookings;
-    } catch (e) {e) {
+    } catch (e) {
       return [];
     }
   }
@@ -96,7 +96,7 @@ class BookingService {
   Future<void> cancelBooking(String bookingId) async {
     try {
       await _firestore.collection(_bookingsCollection).doc(bookingId).delete();
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error canceling booking: $e\n$st');
       rethrow;
     }
@@ -129,7 +129,7 @@ class BookingService {
           await _firestore.collection(_bookingsCollection).doc(bookingId).get();
       if (!doc.exists) return null;
       return Booking.fromJson({...doc.data()!, 'id': doc.id});
-    } catch (e) {e) {
+    } catch (e) {
       return null;
     }
   }
@@ -141,7 +141,7 @@ class BookingService {
           .collection(_bookingsCollection)
           .doc(booking.id)
           .update(booking.toJson());
-    } catch (e) {e) {
+    } catch (e) {
       rethrow;
     }
   }

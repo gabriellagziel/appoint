@@ -200,7 +200,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
             ),
           );
         }
-      } catch (e) {e) {
+      } catch (e) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Error: $e')),

@@ -181,7 +181,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
       try {
         await _retryBookingOperation(booking);
-      } catch (e) {e) {
+      } catch (e) {
         // Update retry count and schedule next retry
         await _bookingsBox.put(
           booking.id,
@@ -273,7 +273,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
             } // else: local version exists, ignore remote
           }
         }
-      } catch (e) {e) {
+      } catch (e) {
         // If remote fetch fails, continue with local data
         debugPrint('Failed to fetch remote bookings: $e');
       }
@@ -302,7 +302,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
             .set(booking.toJson());
         await _bookingsBox.put(
             booking.id, offlineBooking.copyWith(syncStatus: 'synced'),);
-      } catch (e) {e) {
+      } catch (e) {
         await _bookingsBox.put(
             booking.id,
             offlineBooking.copyWith(
@@ -335,7 +335,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
       try {
         await _firestore.collection('bookings').doc(bookingId).delete();
         await _bookingsBox.delete(bookingId);
-      } catch (e) {e) {
+      } catch (e) {
         await _bookingsBox.put(
             bookingId,
             updatedOfflineBooking.copyWith(
@@ -371,7 +371,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
             .update(booking.toJson());
         await _bookingsBox.put(
             booking.id, updatedOfflineBooking.copyWith(syncStatus: 'synced'),);
-      } catch (e) {e) {
+      } catch (e) {
         await _bookingsBox.put(
             booking.id,
             updatedOfflineBooking.copyWith(
@@ -439,7 +439,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
         // Update sync status for successful operations
         await _updateSyncStatusBatch(syncedIds, 'synced');
         totalSynced += syncedIds.length;
-      } catch (e) {e) {
+      } catch (e) {
         // Mark failed operations
         await _updateSyncStatusBatch(syncedIds, 'failed', error: e.toString());
 
@@ -744,7 +744,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
       }
 
       return false;
-    } catch (e) {e) {
+    } catch (e) {
       // If we can't check, assume no conflict
       return false;
     }

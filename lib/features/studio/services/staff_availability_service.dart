@@ -16,7 +16,7 @@ class StaffAvailabilityService {
         'endTime': Timestamp.fromDate(endTime),
         'isBooked': false,
       });
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('❌ Error adding slot: $e');
       rethrow;
     }
@@ -29,7 +29,7 @@ class StaffAvailabilityService {
         'startTime': Timestamp.fromDate(startTime),
         'endTime': Timestamp.fromDate(endTime),
       });
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('❌ Error updating slot: $e');
       rethrow;
     }
@@ -38,7 +38,7 @@ class StaffAvailabilityService {
   Future<void> deleteSlot(String id) async {
     try {
       await _collection.doc(id).delete();
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('❌ Error deleting slot: $e');
       rethrow;
     }

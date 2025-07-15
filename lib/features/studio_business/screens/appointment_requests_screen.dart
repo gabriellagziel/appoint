@@ -134,7 +134,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
         'status': status,
         'updatedAt': DateTime.now().toIso8601String(),
       });
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error updating request: $e');
     }
   }
@@ -145,7 +145,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
           .collection('appointmentRequests')
           .doc(requestId)
           .delete();
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error deleting request: $e');
     }
   }
