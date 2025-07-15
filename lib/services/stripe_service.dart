@@ -111,7 +111,7 @@ class StripeService {
 
   /// Get subscription details
   Future<Map<String, dynamic>?> getSubscriptionDetails(
-      String studioId,) async {
+      String studioId) async {
     try {
       final doc = await _firestore.collection('studio').doc(studioId).get();
       final data = doc.data();

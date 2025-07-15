@@ -59,7 +59,7 @@ class StudioBookingService {
   }
 
   Future<List<StudioBooking>> getBusinessBookings(
-      String businessProfileId,) async {
+      String businessProfileId) async {
     final snapshot = await _firestore
         .collection('studio_bookings')
         .where('businessProfileId', isEqualTo: businessProfileId)

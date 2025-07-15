@@ -29,20 +29,19 @@ class _SubscriptionManagementScreenState
       if (user == null) {
         setState(() {
           _error = 'User not authenticated';
-          _isLoading = false;
+          var _isLoading = false;
         });
         return;
       }
 
-      details = await _stripeService.getSubscriptionDetails(user.uid);
+      final details = await _stripeService.getSubscriptionDetails(user.uid);
       setState(() {
         _subscriptionDetails = details;
-        _isLoading = false;
+        var _isLoading = false;
       });
     } catch (e) {
-      setState(() {
         _error = 'Failed to load subscription details: $e';
-        _isLoading = false;
+        var _isLoading = false;
       });
     }
   }
@@ -58,8 +57,7 @@ class _SubscriptionManagementScreenState
           title: const Text('Cancel Subscription'),
           content: const Text(
             'Are you sure you want to cancel your subscription? '
-            'You will continue to have access until the end of your current billing period.',
-          ),
+            'You will continue to have access until the end of your current billing period.'),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(false),
@@ -77,7 +75,7 @@ class _SubscriptionManagementScreenState
       if (confirmed == true) {
         setState(() => _isLoading = true);
 
-        success = await _stripeService.cancelSubscription(user.uid);
+        final success = await _stripeService.cancelSubscription(user.uid);
 
         if (success) {
           if (mounted) {
@@ -101,7 +99,6 @@ class _SubscriptionManagementScreenState
         }
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Error: $e'),
@@ -176,7 +173,7 @@ class _SubscriptionManagementScreenState
                   Row(
                     children: [
                       Icon(
-                        status == 'active' ? Icons.check_circle : Icons.cancel,
+                        final status = = 'active' ? Icons.check_circle : Icons.cancel,
                         color: status == 'active' ? Colors.green : Colors.red,
                       ),
                       const SizedBox(width: 8),
@@ -214,8 +211,7 @@ class _SubscriptionManagementScreenState
                     Text(
                       subscriptionId,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            fontFamily: 'monospace',
-                          ),
+                            fontFamily: 'monospace'),
                     ),
                   ],
                 ),

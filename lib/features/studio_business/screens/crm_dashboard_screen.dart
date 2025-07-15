@@ -9,7 +9,7 @@ class CRMDashboardScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    profileAsync = ref.watch(businessProfileProvider);
+    final profileAsync = ref.watch(businessProfileProvider);
 
     return Scaffold(
       body: profileAsync.when(
@@ -116,8 +116,8 @@ class DashboardHome extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    profileAsync = ref.watch(businessProfileProvider);
-    statsAsync = ref.watch(dashboardStatsProvider);
+    final profileAsync = ref.watch(businessProfileProvider);
+    final statsAsync = ref.watch(dashboardStatsProvider);
 
     return profileAsync.when(
       loading: () => const Center(child: CircularProgressIndicator()),
@@ -281,7 +281,7 @@ class ClientsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    clientsAsync = ref.watch(clientsProvider);
+    final clientsAsync = ref.watch(clientsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Clients')),
@@ -312,7 +312,7 @@ class AppointmentsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    appointmentsAsync = ref.watch(appointmentsProvider);
+    final appointmentsAsync = ref.watch(appointmentsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Appointments')),

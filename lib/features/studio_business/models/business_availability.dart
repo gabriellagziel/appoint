@@ -8,7 +8,7 @@ class TimeOfDayConverter implements JsonConverter<TimeOfDay, String> {
   const TimeOfDayConverter();
   @override
   TimeOfDay fromJson(String json) {
-    parts = json.split(':');
+    final parts = json.split(':');
     return TimeOfDay(hour: int.parse(parts[0]), minute: int.parse(parts[1]));
   }
 

@@ -13,7 +13,7 @@ class InviteChildScreen extends ConsumerStatefulWidget {
 }
 
 class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
-  _contactController = TextEditingController();
+  final _contactController = TextEditingController();
 
   @override
   void dispose() {
@@ -22,13 +22,13 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
   }
 
   Future<void> _onSendInvite() async {
-    authState = ref.read(authStateProvider);
+    final authState = ref.read(authStateProvider);
     final user = authState.maybeWhen(
       data: (user) => user,
       orElse: () => null,
     );
     final parentId = user?.uid;
-    contact = _contactController.text.trim();
+    final contact = _contactController.text.trim();
     if (contact.isEmpty || parentId == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Please enter a valid email or phone')),

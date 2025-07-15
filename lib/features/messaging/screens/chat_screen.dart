@@ -98,7 +98,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
       _messageController.clear();
       _scrollToBottom();
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to send message: $e')),
         );
@@ -124,7 +123,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
         await _uploadAndSendAttachment(file);
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to pick file: $e')),
         );
@@ -159,7 +157,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
       await service.sendMessage(message);
       _scrollToBottom();
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to send attachment: $e')),
         );
@@ -306,15 +303,13 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
             Text(
               'No messages yet',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                color: Colors.grey[600],
-              ),
+                color: Colors.grey[600]),
             ),
             const SizedBox(height: 8),
             Text(
               'Start the conversation!',
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.grey[500],
-              ),
+                color: Colors.grey[500]),
             ),
           ],
         ),
@@ -478,7 +473,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
                 final service = ref.read(messagingServiceProvider);
                 await service.deleteMessage(message.id, widget.chatId);
               } catch (e) {
-                if (mounted) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text('Failed to delete message: $e')),
                   );

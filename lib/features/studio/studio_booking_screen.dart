@@ -30,7 +30,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   TimeOfDay? _selectedSlot;
 
   TimeOfDay _parseTimeSlot(String slot) {
-    parts = slot.split(':');
+    final parts = slot.split(':');
     return TimeOfDay(
       hour: int.parse(parts[0]),
       minute: int.parse(parts[1]),
@@ -47,15 +47,15 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
     if (date != null) {
       setState(() {
         _selectedDate = date;
-        _selectedSlot = null;
+        final _selectedSlot = null;
       });
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    studioId = ModalRoute.of(context)!.settings.arguments! as String;
-    staffListAsync = ref.watch(staffListProvider(studioId));
+    final studioId = ModalRoute.of(context)!.settings.arguments! as String;
+    final staffListAsync = ref.watch(staffListProvider(studioId));
     AsyncValue<StaffAvailability>? availability;
     if (_selectedStaff != null && _selectedDate != null) {
       availability = ref.watch(staffAvailabilityProvider({
@@ -78,7 +78,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                 onChanged: (value) {
                   setState(() {
                     _selectedStaff = value;
-                    _selectedSlot = null;
+                    final _selectedSlot = null;
                   });
                 },
                 items: staff
@@ -110,7 +110,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                   return Wrap(
                     spacing: 8,
                     children: slots.map((slot) {
-                      timeSlot = _parseTimeSlot(slot);
+                      final timeSlot = _parseTimeSlot(slot);
                       final selected = _selectedSlot == timeSlot;
                       return ChoiceChip(
                         label: Text(slot),

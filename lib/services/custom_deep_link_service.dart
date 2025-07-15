@@ -34,7 +34,7 @@ class CustomDeepLinkService {
     }
     try {
       // Handle initial link if app was opened from a link
-      initialUri = await getInitialUri();
+      final initialUri = await getInitialUri();
       if (initialUri != null) {
         await _handleDeepLink(initialUri);
       }

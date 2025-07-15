@@ -17,14 +17,14 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
   XFile? _webFile;
 
   Future<void> _selectFile() async {
-    picker = ImagePicker();
-    picked = await picker.pickImage(source: ImageSource.gallery);
+    final picker = ImagePicker();
+    final picked = await picker.pickImage(source: ImageSource.gallery);
     if (picked != null) {
       setState(() {
         if (kIsWeb) {
           _webFile = picked;
         } else {
-          _file = File(picked.path);
+          final _file = File(picked.path);
         }
       });
     }
@@ -33,7 +33,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
   void _removeFile() {
     setState(() {
       _file = null;
-      _webFile = null;
+      final _webFile = null;
     });
   }
 
@@ -44,7 +44,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
       final provider = kIsWeb
           ? Image.network(_webFile!.path).image
           : Image.file(_file!).image;
-      preview = Stack(
+      final preview = Stack(
         children: [
           Container(
             width: double.infinity,
@@ -86,7 +86,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
           icon: const Icon(Icons.upload_file),
           label: Text(_file == null && _webFile == null
               ? 'Select File'
-              : 'Change File',),
+              : 'Change File'),
         ),
       ],
     );

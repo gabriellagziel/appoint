@@ -19,11 +19,11 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   String? selectedTimeSlot;
   StaffProfile? selectedStaff;
   bool isConfirming = false;
-  _formKey = GlobalKey<FormState>();
-  _nameController = TextEditingController();
-  _phoneController = TextEditingController();
-  _dateController = TextEditingController();
-  _timeController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _nameController = TextEditingController();
+  final _phoneController = TextEditingController();
+  final _dateController = TextEditingController();
+  final _timeController = TextEditingController();
   bool _isProcessing = false;
 
   @override
@@ -37,7 +37,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
       );
     }
 
-    profileAsync = ref.watch(businessProfileProvider);
+    final profileAsync = ref.watch(businessProfileProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Studio Booking')),
@@ -172,14 +172,14 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
 
       try {
         // Check weekly usage for upgrade modal
-        weeklyUsage = ref.read(weeklyUsageProvider.notifier);
+        final weeklyUsage = ref.read(weeklyUsageProvider.notifier);
         if (weeklyUsage.shouldShowUpgradeModal) {
           _showUpgradeModal(weeklyUsage.upgradeCode);
           return;
         }
 
         // Create booking
-        bookingNotifier = ref.read(bookingProvider.notifier);
+        final bookingNotifier = ref.read(bookingProvider.notifier);
         await bookingNotifier.createBooking(
           staffProfileId: selectedStaff!.id,
           businessProfileId: 'business1', // This should come from the profile
@@ -201,7 +201,6 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           );
         }
       } catch (e) {
-        if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Error: $e')),
           );
@@ -215,12 +214,12 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   }
 
   String _getEndTime(String startTime) {
-    parts = startTime.split(':');
-    hour = int.parse(parts[0]);
-    minute = int.parse(parts[1]);
+    final parts = startTime.split(':');
+    final hour = int.parse(parts[0]);
+    final minute = int.parse(parts[1]);
 
     final endMinute = minute + 30;
-    endHour = hour + (endMinute >= 60 ? 1 : 0);
+    final endHour = hour + (endMinute >= 60 ? 1 : 0);
     final finalMinute = endMinute >= 60 ? endMinute - 60 : endMinute;
 
     return '${endHour.toString().padLeft(2, '0')}:${finalMinute.toString().padLeft(2, '0')}';

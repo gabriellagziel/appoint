@@ -126,8 +126,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
         Text(
           'Overview',
           style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+            fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         Row(
@@ -260,8 +259,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
             Text(
               'Revenue Trend',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             SizedBox(
@@ -326,8 +324,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
             Text(
               'Service Breakdown',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             SizedBox(
@@ -396,8 +393,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
             Text(
               'Top Performing Services',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             ListView.builder(
@@ -447,8 +443,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
             Text(
               'Recent Activity',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             ListView.builder(

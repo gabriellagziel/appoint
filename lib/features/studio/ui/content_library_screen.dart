@@ -30,7 +30,7 @@ class _ContentLibraryScreenState extends ConsumerState<ContentLibraryScreen> {
 
   @override
   Widget build(BuildContext context) {
-    contentAsync = ref.watch(contentPagingProvider);
+    final contentAsync = ref.watch(contentPagingProvider);
 
     return Scaffold(
       appBar: AppBar(

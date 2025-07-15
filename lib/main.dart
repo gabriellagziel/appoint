@@ -1,115 +1,205 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:go_router/go_router.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'auth_wrapper.dart';
+import 'config/app_router.dart';
+import 'firebase_options.dart';
+import 'l10n/app_localizations.dart';
+import 'providers/auth_provider.dart';
+import 'providers/theme_provider.dart';
+import 'services/notification_service.dart';
+import 'theme/app_theme.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+/// Main entry point for the AppOint application
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  try {
+    // Initialize Firebase
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'AppOint - Appointment Booking',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+    // Initialize Firebase Crashlytics
+    if (!kDebugMode) {
+      FlutterError.onError = (errorDetails) {
+        FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
+      };
+      
+      PlatformDispatcher.instance.onError = (error, stack) {
+        FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+        return true;
+      };
+    }
+
+    // Initialize notification service
+    await NotificationService.initialize();
+
+    // Set system UI overlay style
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.dark,
+        systemNavigationBarColor: Colors.white,
+        systemNavigationBarIconBrightness: Brightness.dark,
       ),
-      home: const MyHomePage(title: 'AppOint - Appointment Booking Platform'),
+    );
+
+    runApp(
+      ProviderScope(
+        child: const AppOintApp(),
+      ),
+    );
+  } catch (error, stackTrace) {
+    // Handle initialization errors gracefully
+    debugPrint('App initialization error: $error');
+    debugPrint('Stack trace: $stackTrace');
+    
+    runApp(
+      ProviderScope(
+        child: MaterialApp(
+          home: ErrorApp(error: error.toString()),
+        ),
+      ),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
+/// Root application widget for AppOint
+class AppOintApp extends ConsumerWidget {
+  const AppOintApp({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  Widget build(BuildContext context, WidgetRef ref) {
+    final router = ref.watch(appRouterProvider);
+    final themeMode = ref.watch(themeModeProvider);
+    
+    return MaterialApp.router(
+      title: 'AppOint',
+      debugShowCheckedModeBanner: false,
+      
+      // Theme configuration
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: themeMode,
+      
+      // Localization configuration
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: AppLocalizations.supportedLocales,
+      
+      // Router configuration
+      routerConfig: router,
+      
+      // Builder for additional app-wide functionality
+      builder: (context, child) {
+        return MediaQuery(
+          data: MediaQuery.of(context).copyWith(
+            textScaler: MediaQuery.of(context).textScaler.clamp(
+              minScaleFactor: 0.8,
+              maxScaleFactor: 1.2,
+            ),
+          ),
+          child: child ?? const SizedBox.shrink(),
+        );
+      },
+    );
+  }
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+/// Error app shown when initialization fails
+class ErrorApp extends StatelessWidget {
+  final String error;
+  
+  const ErrorApp({
+    super.key,
+    required this.error,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Icon(
-              Icons.calendar_today,
-              size: 100,
-              color: Colors.deepPurple,
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'Welcome to AppOint',
-              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 10),
-            const Text(
-              'Your Appointment Booking Platform',
-              style: TextStyle(fontSize: 18, color: Colors.grey),
-            ),
-            const SizedBox(height: 40),
-            ElevatedButton(
-              onPressed: _incrementCounter,
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.deepPurple,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-              ),
-              child: const Text('Book Appointment'),
-            ),
-            const SizedBox(height: 20),
-            Text(
-              'Appointments Booked: $_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-            const SizedBox(height: 40),
-            const Card(
-              margin: EdgeInsets.all(20),
-              child: Padding(
-                padding: EdgeInsets.all(20),
-                child: Column(
-                  children: [
-                    Text(
-                      'Coming Soon!',
-                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(height: 10),
-                    Text(
-                      '• Multi-language support\n'
-                      '• Ambassador program\n'
-                      '• Studio business features\n'
-                      '• Family account management\n'
-                      '• Advanced booking system',
-                      style: TextStyle(fontSize: 16),
-                    ),
-                  ],
+    return MaterialApp(
+      title: 'AppOint - Error',
+      home: Scaffold(
+        backgroundColor: Colors.red.shade50,
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.error_outline,
+                  size: 64,
+                  color: Colors.red.shade600,
                 ),
-              ),
+                const SizedBox(height: 24),
+                Text(
+                  'Initialization Error',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.red.shade800,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 16),
+                Text(
+                  'AppOint failed to initialize properly. Please restart the app.',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.red.shade700,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 32),
+                ElevatedButton(
+                  onPressed: () {
+                    SystemNavigator.pop();
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.red.shade600,
+                    foregroundColor: Colors.white,
+                  ),
+                  child: const Text('Close App'),
+                ),
+                if (kDebugMode) ...[
+                  const SizedBox(height: 24),
+                  ExpansionTile(
+                    title: const Text('Error Details'),
+                    children: [
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(16),
+                        decoration: BoxDecoration(
+                          color: Colors.grey.shade100,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Text(
+                          error,
+                          style: const TextStyle(
+                            fontFamily: 'monospace',
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ],
             ),
-          ],
+          ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Book',
-        child: const Icon(Icons.add),
       ),
     );
   }

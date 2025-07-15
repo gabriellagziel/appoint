@@ -6,8 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final inviteServiceProvider =
     Provider<InviteService>((ref) => InviteService());
 
-myInvitesStreamProvider = StreamProvider<List<Invite>>((final ref) {
-  authState = ref.watch(authStateProvider);
+final myInvitesStreamProvider = StreamProvider<List<Invite>>((ref) {
+  final authState = ref.watch(authStateProvider);
   return authState.when(
     data: (user) {
       if (user == null) {

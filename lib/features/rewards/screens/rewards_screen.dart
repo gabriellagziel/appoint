@@ -381,8 +381,7 @@ class RewardsScreen extends ConsumerWidget {
                             : Colors.grey[600],
                       ),
                       child: Text(
-                        reward.canRedeem && canAfford ? 'Redeem' : 'Unavailable',
-                      ),
+                        reward.canRedeem && canAfford ? 'Redeem' : 'Unavailable'),
                     ),
                   ],
                 ),
@@ -612,7 +611,6 @@ class RewardsScreen extends ConsumerWidget {
         ref.invalidate(userRedeemedRewardsProvider);
       }
     } catch (e) {
-      if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to redeem reward: $e')),
         );

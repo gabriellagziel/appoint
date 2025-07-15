@@ -20,7 +20,7 @@ final offlineBookingRepoProvider =
   }
 
   // Create and initialize the repository
-  repo = OfflineBookingRepository();
+  final repo = OfflineBookingRepository();
   await repo.initialize();
 
   // Dispose when no longer needed
@@ -35,18 +35,18 @@ final offlineBookingRepositoryProvider =
 /// A provider that provides the repository instance directly (for convenience)
 final offlineBookingRepoInstanceProvider =
     Provider<OfflineBookingRepository?>((ref) {
-  asyncRepo = ref.watch(offlineBookingRepoProvider);
+  final asyncRepo = ref.watch(offlineBookingRepoProvider);
   return asyncRepo.value;
 });
 
 /// A provider that provides the online status
-isOnlineProvider = Provider<bool>((ref) {
-  repo = ref.watch(offlineBookingRepoInstanceProvider);
+final isOnlineProvider = Provider<bool>((ref) {
+  final repo = ref.watch(offlineBookingRepoInstanceProvider);
   return repo?.isOnline ?? false;
 });
 
 /// A provider that provides the pending operations count
-pendingOperationsCountProvider = Provider<int>((ref) {
-  repo = ref.watch(offlineBookingRepoInstanceProvider);
+final pendingOperationsCountProvider = Provider<int>((ref) {
+  final repo = ref.watch(offlineBookingRepoInstanceProvider);
   return repo?.getPendingOperationsCount() ?? 0;
 });

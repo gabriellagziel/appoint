@@ -11,10 +11,10 @@ class ClientsScreen extends ConsumerStatefulWidget {
 }
 
 class _ClientsScreenState extends ConsumerState<ClientsScreen> {
-  _formKey = GlobalKey<FormState>();
-  _nameController = TextEditingController();
-  _emailController = TextEditingController();
-  _phoneController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _nameController = TextEditingController();
+  final _emailController = TextEditingController();
+  final _phoneController = TextEditingController();
   bool _isAdding = false;
 
   @override
@@ -70,7 +70,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
             padding: const EdgeInsets.all(16),
             itemCount: clients.length,
             itemBuilder: (context, final index) {
-              client = clients[index].data()! as Map<String, dynamic>;
+              final client = clients[index].data()! as Map<String, dynamic>;
               final clientId = clients[index].id;
 
               return Card(
@@ -259,7 +259,6 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
@@ -300,7 +299,6 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
@@ -325,7 +323,6 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
