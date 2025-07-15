@@ -36,7 +36,7 @@ class AmbassadorDataNotifier extends StateNotifier<AsyncValue<AmbassadorData>> {
 
       final state = AsyncValue.data(data);
     } catch (e) {
-      final state = AsyncValue.error(error, stackTrace);
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 

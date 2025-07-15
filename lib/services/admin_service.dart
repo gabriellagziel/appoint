@@ -53,7 +53,7 @@ class AdminService {
     // Fetch users stats
     final usersSnap = await _firestore.collection('users').get();
     final totalUsers = usersSnap.size;
-    activeUsers = usersSnap.docs.where((final doc) {
+    final activeUsers = usersSnap.docs.where((final doc) {
       final lastActive = doc.data()['lastActive'] as Timestamp?;
       if (lastActive == null) return false;
       final daysSinceActive =
@@ -64,11 +64,11 @@ class AdminService {
     // Fetch bookings stats
     final bookingsSnap = await _firestore.collection('appointments').get();
     final totalBookings = bookingsSnap.size;
-    completedBookings = bookingsSnap.docs.where((final doc) {
+    final completedBookings = bookingsSnap.docs.where((final doc) {
       final status = doc.data()['status'] as String?;
       return status == 'completed';
     }).length;
-    pendingBookings = bookingsSnap.docs.where((final doc) {
+    final pendingBookings = bookingsSnap.docs.where((final doc) {
       final status = doc.data()['status'] as String?;
       return status == 'pending';
     }).length;
@@ -86,7 +86,7 @@ class AdminService {
     // Fetch organizations stats
     final orgsSnap = await _firestore.collection('organizations').get();
     final totalOrganizations = orgsSnap.size;
-    activeOrganizations = orgsSnap.docs.where((final doc) {
+    final activeOrganizations = orgsSnap.docs.where((final doc) {
       final lastActive = doc.data()['lastActive'] as Timestamp?;
       if (lastActive == null) return false;
       final daysSinceActive =
@@ -100,7 +100,7 @@ class AdminService {
         .where('role', isEqualTo: 'ambassador')
         .get();
     final totalAmbassadors = ambassadorsSnap.size;
-    activeAmbassadors = ambassadorsSnap.docs.where((final doc) {
+    final activeAmbassadors = ambassadorsSnap.docs.where((final doc) {
       final lastActive = doc.data()['lastActive'] as Timestamp?;
       if (lastActive == null) return false;
       final daysSinceActive =
@@ -116,7 +116,7 @@ class AdminService {
                 DateTime.now().subtract(const Duration(days: 30)),),)
         .get();
     final totalErrors = errorsSnap.size;
-    criticalErrors = errorsSnap.docs.where((final doc) {
+    final criticalErrors = errorsSnap.docs.where((final doc) {
       final severity = doc.data()['severity'] as String?;
       return severity == 'critical';
     }).length;
@@ -172,11 +172,11 @@ class AdminService {
         .limit(limit);
 
     if (severity != null) {
-      final query = query.where('severity', isEqualTo: severity.name);
+      query = query.where('severity', isEqualTo: severity.name);
     }
 
     if (isResolved != null) {
-      final query = query.where('isResolved', isEqualTo: isResolved);
+      query = query.where('isResolved', isEqualTo: isResolved);
     }
 
     final snap = await query.get();
@@ -216,11 +216,11 @@ class AdminService {
         .limit(limit);
 
     if (adminId != null) {
-      final query = query.where('adminId', isEqualTo: adminId);
+      query = query.where('adminId', isEqualTo: adminId);
     }
 
     if (action != null) {
-      final query = query.where('action', isEqualTo: action);
+      query = query.where('action', isEqualTo: action);
     }
 
     final snap = await query.get();

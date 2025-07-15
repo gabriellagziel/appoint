@@ -9,7 +9,7 @@ class DashboardService {
   Future<DashboardStats> fetchDashboardStats() async {
     final appointmentsSnap = await _firestore.collection('appointments').get();
     final totalAppointments = appointmentsSnap.size;
-    completedAppointments = appointmentsSnap.docs.where((final doc) {
+    final completedAppointments = appointmentsSnap.docs.where((final doc) {
       final status = doc.data()['status'] as String?;
       return status == 'accepted' || status == 'completed';
     }).length;
@@ -59,7 +59,7 @@ class DashboardService {
         return status == 'accepted' || status == 'completed';
       }).length;
 
-      pendingInvites = invitesSnapshot.docs.where((final doc) {
+      final pendingInvites = invitesSnapshot.docs.where((final doc) {
         final status = doc.data()['status'] as String?;
         return status == InviteStatus.pending.name;
       }).length;
