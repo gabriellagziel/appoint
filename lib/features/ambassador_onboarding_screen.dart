@@ -490,6 +490,7 @@ Ready to lead the revolution?""",
         );
       }
     } catch (e) {
+      setState(() {
         _isLoading = false;
       });
 
