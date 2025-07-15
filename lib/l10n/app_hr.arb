@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "[HR] Accept",
   "accessRevokedSuccessfully": "[HR] Access revoked successfully",
   "add": "Dodaj",
-  "adminBroadcast": "[HR] Admin Broadcast",
-  "adminScreenTBD": "[HR] Admin screen coming soon",
   "appTitle": "Naslov aplikacije",
   "back": "[HR] Back",
   "cancel": "Otkaži",
@@ -593,7 +582,6 @@
   "pendingInvites": "Nadolazeće pozivnice",
   "pickImage": "Odaberi sliku",
   "pickVideo": "Odaberi video",
-  "playtimeAdminPanelTitle": "[HR] Playtime Games – Admin",
   "playtimeApprove": "Odobri Playtime",
   "playtimeChooseFriends": "[HR] Choose friends to invite",
   "playtimeChooseGame": "Odaberi igru",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

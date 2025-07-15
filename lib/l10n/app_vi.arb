@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Chấp nhận",
   "accessRevokedSuccessfully": "Thu hồi quyền truy cập thành công",
   "add": "Thêm",
-  "adminBroadcast": "Phát sóng quản trị",
-  "adminScreenTBD": "[VI] Admin screen coming soon",
   "appTitle": "Tiêu đề ứng dụng",
   "back": "[VI] Back",
   "cancel": "Hủy",
@@ -593,7 +582,6 @@
   "pendingInvites": "[VI] Pending Invites",
   "pickImage": "Chọn hình ảnh",
   "pickVideo": "Chọn video",
-  "playtimeAdminPanelTitle": "Tiêu đề bảng quản trị Playtime",
   "playtimeApprove": "Phê duyệt Playtime",
   "playtimeChooseFriends": "Chọn bạn bè",
   "playtimeChooseGame": "[VI] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

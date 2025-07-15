@@ -1,249 +1,232 @@
 #!/usr/bin/env python3
 """
-Translate missing keys using Google Translate
+Translation Script for APP-OINT
+Identifies missing translations and starts translating needed text for user and business interfaces.
 """
 
 import json
+import glob
 import os
-import time
-import requests
-from typing import Dict, List, Optional
+from typing import Dict, List, Set
 
-def translate_with_google(text: str, target_lang: str, source_lang: str = 'en') -> Optional[str]:
-    """
-    Translate text using Google Translate (free API)
-    """
-    try:
-        # Using Google Translate's free API endpoint
-        url = "https://translate.googleapis.com/translate_a/single"
-        params = {
-            'client': 'gtx',
-            'sl': source_lang,
-            'tl': target_lang,
-            'dt': 't',
-            'q': text
+class TranslationManager:
+    def __init__(self):
+        # Admin keys that should NOT be translated
+        self.admin_keys = {
+            'adminBroadcast', 'playtimeAdminPanelTitle', 'adminScreenTBD', 'adminMetrics',
+            'adminFreeAccess', 'adminDashboard', 'adminSettings', 'adminLogadminemail',
+            'admin', 'adminOverviewGoesHere'
         }
         
-        response = requests.get(url, params=params, timeout=10)
-        response.raise_for_status()
+        # Technical keys that should generally stay in English
+        self.technical_keys = {
+            'fcmToken', 'authErrorAppNotAuthorized', 'authErrorInvalidIdToken',
+            'authErrorIdTokenExpired', 'authErrorIdTokenRevoked', 'authErrorInvalidContinueUri',
+            'REDACTED_TOKEN', 'authErrorInvalidHashKey',
+            'authErrorInvalidPageToken', 'authErrorMissingContinueUri',
+            'REDACTED_TOKEN', 'authErrorProjectNotFound',
+            'REDACTED_TOKEN'
+        }
         
-        # Parse the response
-        data = response.json()
-        if data and len(data) > 0 and len(data[0]) > 0:
-            translated_text = data[0][0][0]
-            return translated_text
+        # Languages that need translation
+        self.target_languages = [
+            'ar', 'es', 'fr', 'de', 'zh', 'zh_Hant', 'ja', 'ko', 'pt', 'pt_BR',
+            'ru', 'it', 'nl', 'sv', 'no', 'da', 'fi', 'pl', 'cs', 'hu', 'ro',
+            'bg', 'hr', 'sr', 'sk', 'sl', 'et', 'lv', 'lt', 'el', 'tr', 'he',
+            'fa', 'ur', 'hi', 'bn', 'ta', 'gu', 'mr', 'kn', 'th', 'vi', 'id',
+            'ms', 'tl', 'sw', 'ha', 'am', 'si', 'ne', 'uk', 'cy', 'mk', 'mt', 'zu'
+        ]
         
-    except Exception as e:
-        print(f"Translation error for '{text}': {e}")
+    def load_arb_file(self, file_path: str) -> Dict:
+        """Load an ARB file"""
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error loading {file_path}: {e}")
+            return {}
     
-    return None
-
-def get_language_code_mapping() -> Dict[str, str]:
-    """Get mapping from our language codes to Google Translate codes."""
-    return {
-        'it': 'it',      # Italian
-        'fr': 'fr',      # French
-        'de': 'de',      # German
-        'es': 'es',      # Spanish
-        'he': 'iw',      # Hebrew (Google uses 'iw')
-        'ar': 'ar',      # Arabic
-        'ru': 'ru',      # Russian
-        'zh': 'zh',      # Chinese Simplified
-        'zh_Hant': 'zh-TW', # Chinese Traditional
-        'ja': 'ja',      # Japanese
-        'ko': 'ko',      # Korean
-        'hi': 'hi',      # Hindi
-        'ur': 'ur',      # Urdu
-        'fa': 'fa',      # Persian
-        'ha': 'ha',      # Hausa
-        'pt': 'pt',      # Portuguese
-        'nl': 'nl',      # Dutch
-        'pl': 'pl',      # Polish
-        'tr': 'tr',      # Turkish
-        'el': 'el',      # Greek
-        'cs': 'cs',      # Czech
-        'sv': 'sv',      # Swedish
-        'fi': 'fi',      # Finnish
-        'ro': 'ro',      # Romanian
-        'hu': 'hu',      # Hungarian
-        'da': 'da',      # Danish
-        'no': 'no',      # Norwegian
-        'bg': 'bg',      # Bulgarian
-        'th': 'th',      # Thai
-        'uk': 'uk',      # Ukrainian
-        'sr': 'sr',      # Serbian
-        'ms': 'ms',      # Malay
-        'vi': 'vi',      # Vietnamese
-        'sk': 'sk',      # Slovak
-        'id': 'id',      # Indonesian
-        'lt': 'lt',      # Lithuanian
-        'lv': 'lv',      # Latvian
-        'et': 'et',      # Estonian
-        'sl': 'sl',      # Slovenian
-        'hr': 'hr',      # Croatian
-        'ca': 'ca',      # Catalan
-        'eu': 'eu',      # Basque
-        'gl': 'gl',      # Galician
-        'is': 'is',      # Icelandic
-        'mt': 'mt',      # Maltese
-        'sq': 'sq',      # Albanian
-        'mk': 'mk',      # Macedonian
-        'bs': 'bs',      # Bosnian
-        'cy': 'cy',      # Welsh
-        'ga': 'ga',      # Irish
-        'fo': 'fo',      # Faroese
-        'am': 'am',      # Amharic
-        'bn': 'bn',      # Bengali
-        'bn_BD': 'bn',   # Bengali (Bangladesh)
-        'es_419': 'es',  # Spanish (Latin America)
-        'pt_BR': 'pt',   # Portuguese (Brazil)
-        'ur': 'ur',      # Urdu
-    }
-
-def get_missing_keys_for_language(arb_file_path: str, english_arb_path: str) -> Dict[str, str]:
-    """Get missing translation keys for a specific language."""
-    try:
-        with open(english_arb_path, 'r', encoding='utf-8') as f:
-            english_data = json.load(f)
+    def save_arb_file(self, file_path: str, content: Dict):
+        """Save ARB file with proper formatting"""
+        try:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(content, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            print(f"Error saving {file_path}: {e}")
+    
+    def get_translatable_keys(self) -> Dict[str, str]:
+        """Get all keys that should be translated (exclude admin and technical)"""
+        en_content = self.load_arb_file('lib/l10n/app_en.arb')
+        translatable_keys = {}
         
-        with open(arb_file_path, 'r', encoding='utf-8') as f:
-            target_data = json.load(f)
-    except FileNotFoundError:
-        return {}
+        for key, value in en_content.items():
+            if (not key.startswith('@') and 
+                key not in self.admin_keys and 
+                key not in self.technical_keys and
+                isinstance(value, str)):
+                translatable_keys[key] = value
+        
+        return translatable_keys
     
-    missing_keys = {}
+    def analyze_missing_translations(self) -> Dict[str, List[str]]:
+        """Analyze what translations are missing for each language"""
+        translatable_keys = self.get_translatable_keys()
+        missing_by_language = {}
+        
+        for lang_code in self.target_languages:
+            lang_file = f'lib/l10n/app_{lang_code}.arb'
+            if os.path.exists(lang_file):
+                lang_content = self.load_arb_file(lang_file)
+                missing_keys = []
+                
+                for key in translatable_keys:
+                    if key not in lang_content:
+                        missing_keys.append(key)
+                
+                missing_by_language[lang_code] = missing_keys
+            else:
+                # Language file doesn't exist, all keys are missing
+                missing_by_language[lang_code] = list(translatable_keys.keys())
+        
+        return missing_by_language
     
-    for key, english_value in english_data.items():
-        # Skip metadata keys and system admin keys
-        if key.startswith('@') or key in ['adminMetrics', 'adminDashboard', 'adminUsers', 'adminSettings', 'adminLogs', 'adminReports']:
-            continue
+    def categorize_missing_keys(self, missing_keys: List[str]) -> Dict[str, List[str]]:
+        """Categorize missing keys by type"""
+        categories = {
+            'user_facing': [],
+            'business_facing': [],
+            'common_ui': [],
+            'other': []
+        }
+        
+        business_terms = ['studio', 'business', 'provider', 'billing', 'subscription', 'client', 'service']
+        user_terms = ['profile', 'family', 'child', 'reward', 'referral', 'booking', 'appointment', 'calendar']
+        ui_terms = ['button', 'screen', 'title', 'label', 'message', 'welcome', 'home', 'settings']
+        
+        for key in missing_keys:
+            key_lower = key.lower()
             
-        # Check if key is missing or has placeholder value
-        if key not in target_data or target_data[key] in [
-            f"{key} (TRANSLATE)",
-            f"TODO: Translate '{english_value}'",
-            english_value  # Same as English
-        ]:
-            missing_keys[key] = english_value
-    
-    return missing_keys
-
-def translate_language_keys(language_code: str, missing_keys: Dict[str, str]) -> Dict[str, str]:
-    """Translate missing keys for a language."""
-    translations = {}
-    language_mapping = get_language_code_mapping()
-    
-    if language_code not in language_mapping:
-        print(f"  ⚠️  No translation mapping for {language_code}")
-        return {}
-    
-    google_lang_code = language_mapping[language_code]
-    print(f"  🔄 Translating {len(missing_keys)} keys to {language_code} ({google_lang_code})...")
-    
-    for i, (key, english_text) in enumerate(missing_keys.items(), 1):
-        # Skip keys with placeholders or variables
-        if '{' in english_text or '}' in english_text:
-            translations[key] = english_text  # Keep as-is
-            continue
-            
-        # Skip very short texts that might be technical terms
-        if len(english_text.strip()) < 3:
-            translations[key] = english_text
-            continue
-            
-        translated = translate_with_google(english_text, google_lang_code)
-        if translated:
-            translations[key] = translated
-            print(f"    ✅ {i}/{len(missing_keys)}: '{english_text}' -> '{translated}'")
-        else:
-            translations[key] = english_text  # Keep original if translation fails
-            print(f"    ❌ {i}/{len(missing_keys)}: Failed to translate '{english_text}'")
+            if any(term in key_lower for term in business_terms):
+                categories['business_facing'].append(key)
+            elif any(term in key_lower for term in user_terms):
+                categories['user_facing'].append(key)
+            elif any(term in key_lower for term in ui_terms):
+                categories['common_ui'].append(key)
+            else:
+                categories['other'].append(key)
         
-        # Rate limiting to avoid being blocked
-        time.sleep(0.5)
+        return categories
     
-    return translations
-
-def update_arb_file(arb_file_path: str, new_translations: Dict[str, str]):
-    """Update ARB file with new translations."""
-    try:
-        with open(arb_file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-    except FileNotFoundError:
-        data = {}
+    def generate_translation_report(self):
+        """Generate a comprehensive translation status report"""
+        translatable_keys = self.get_translatable_keys()
+        missing_by_language = self.analyze_missing_translations()
+        
+        print("🔍 Translation Status Report")
+        print("=" * 60)
+        print(f"Total translatable keys: {len(translatable_keys)}")
+        print(f"Languages to translate: {len(self.target_languages)}")
+        print()
+        
+        # Overall statistics
+        total_missing = sum(len(missing) for missing in missing_by_language.values())
+        total_possible = len(translatable_keys) * len(self.target_languages)
+        completion_rate = ((total_possible - total_missing) / total_possible) * 100
+        
+        print(f"Overall completion: {completion_rate:.1f}%")
+        print(f"Total missing translations: {total_missing}")
+        print()
+        
+        # Language-specific status
+        print("📊 Translation Status by Language:")
+        for lang_code in sorted(self.target_languages):
+            missing_count = len(missing_by_language.get(lang_code, []))
+            completed = len(translatable_keys) - missing_count
+            completion = (completed / len(translatable_keys)) * 100
+            status = "✅" if completion > 90 else "⚠️" if completion > 50 else "❌"
+            
+            print(f"{status} {lang_code}: {completed}/{len(translatable_keys)} ({completion:.1f}%)")
+        
+        print()
+        
+        # Sample missing keys analysis
+        if missing_by_language:
+            sample_lang = list(missing_by_language.keys())[0]
+            sample_missing = missing_by_language[sample_lang]
+            categories = self.categorize_missing_keys(sample_missing)
+            
+            print(f"📋 Missing Key Categories (sample from {sample_lang}):")
+            for category, keys in categories.items():
+                if keys:
+                    print(f"  {category}: {len(keys)} keys")
+                    for key in keys[:3]:  # Show first 3 examples
+                        print(f"    - {key}")
+                    if len(keys) > 3:
+                        print(f"    ... and {len(keys) - 3} more")
+            print()
+        
+        return missing_by_language
     
-    # Update with new translations
-    for key, translation in new_translations.items():
-        data[key] = translation
-    
-    # Write back to file
-    with open(arb_file_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    def start_translation_process(self):
+        """Start the translation process for missing keys"""
+        print("🚀 Starting Translation Process")
+        print("=" * 40)
+        
+        # Get missing translations
+        missing_by_language = self.analyze_missing_translations()
+        
+        # Priority languages (most commonly used)
+        priority_languages = ['es', 'fr', 'de', 'zh', 'ja', 'ko', 'pt', 'ru', 'it', 'ar']
+        
+        print("🎯 Translation Priority:")
+        print("1. Priority languages (most common): es, fr, de, zh, ja, ko, pt, ru, it, ar")
+        print("2. All other languages")
+        print()
+        
+        # Start with priority languages
+        for lang_code in priority_languages:
+            if lang_code in missing_by_language:
+                missing_keys = missing_by_language[lang_code]
+                if missing_keys:
+                    print(f"📝 {lang_code}: {len(missing_keys)} keys need translation")
+                    
+                    # Categorize missing keys
+                    categories = self.categorize_missing_keys(missing_keys)
+                    
+                    # Show what needs to be translated
+                    for category, keys in categories.items():
+                        if keys:
+                            print(f"  {category}: {len(keys)} keys")
+        
+        print()
+        print("💡 Next Steps:")
+        print("1. Use professional translation services for priority languages")
+        print("2. Focus on user_facing and business_facing categories first")
+        print("3. Validate translations with native speakers")
+        print("4. Test UI layout with longer translated text")
+        print("5. Use automation tools for remaining languages")
+        
+        return missing_by_language
 
 def main():
-    """Main function to translate missing keys."""
-    l10n_dir = "lib/l10n"
-    english_arb = os.path.join(l10n_dir, "app_en.arb")
+    manager = TranslationManager()
     
-    if not os.path.exists(english_arb):
-        print(f"English ARB file not found: {english_arb}")
-        return
+    print("🌐 APP-OINT Translation Manager")
+    print("=" * 50)
     
-    # Get all ARB files
-    arb_files = [f for f in os.listdir(l10n_dir) if f.startswith("app_") and f.endswith(".arb")]
+    # Generate status report
+    missing_translations = manager.generate_translation_report()
     
-    print(f"Found {len(arb_files)} ARB files")
+    # Start translation process
+    manager.start_translation_process()
     
-    # Ask user which language to translate
-    print("\nAvailable languages:")
-    language_mapping = get_language_code_mapping()
-    for i, (code, google_code) in enumerate(language_mapping.items(), 1):
-        print(f"  {i:2d}. {code} ({google_code})")
+    print("\n📋 Summary:")
+    print("- Translation gaps identified")
+    print("- Priority languages highlighted")
+    print("- Ready to start professional translation")
+    print("- User and business text prioritized")
     
-    try:
-        choice = input("\nEnter language code to translate (or 'all' for all languages): ").strip()
-    except KeyboardInterrupt:
-        print("\nCancelled.")
-        return
-    
-    if choice.lower() == 'all':
-        target_languages = list(language_mapping.keys())
-    else:
-        if choice not in language_mapping:
-            print(f"Invalid language code: {choice}")
-            return
-        target_languages = [choice]
-    
-    for language_code in target_languages:
-        arb_file = f"app_{language_code}.arb"
-        if arb_file not in arb_files:
-            print(f"  ⚠️  {language_code}: ARB file not found")
-            continue
-            
-        arb_path = os.path.join(l10n_dir, arb_file)
-        
-        print(f"\n{'='*50}")
-        print(f"Processing {language_code}...")
-        print(f"{'='*50}")
-        
-        # Get missing keys
-        missing_keys = get_missing_keys_for_language(arb_path, english_arb)
-        
-        if not missing_keys:
-            print(f"  ✅ {language_code}: No missing keys")
-            continue
-        
-        print(f"  ⚠️  {language_code}: {len(missing_keys)} missing keys")
-        
-        # Translate
-        translations = translate_language_keys(language_code, missing_keys)
-        
-        if translations:
-            # Update ARB file
-            update_arb_file(arb_path, translations)
-            print(f"  ✅ {language_code}: Updated with {len(translations)} translations")
-        else:
-            print(f"  ❌ {language_code}: No translations generated")
+    return missing_translations
 
 if __name__ == "__main__":
     main() 

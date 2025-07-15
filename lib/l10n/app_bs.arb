@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "[BS] Accept",
   "accessRevokedSuccessfully": "[BS] Access revoked successfully",
   "add": "[BS] Add",
-  "adminBroadcast": "[BS] Admin Broadcast",
-  "adminScreenTBD": "[BS] Admin screen coming soon",
   "appTitle": "[BS] APP-OINT",
   "back": "[BS] Back",
   "cancel": "[BS] Cancel",
@@ -593,7 +582,6 @@
   "pendingInvites": "[BS] Pending Invites",
   "pickImage": "[BS] Pick Image",
   "pickVideo": "[BS] Pick Video",
-  "playtimeAdminPanelTitle": "[BS] Playtime Games – Admin",
   "playtimeApprove": "[BS] Approve",
   "playtimeChooseFriends": "[BS] Choose friends to invite",
   "playtimeChooseGame": "[BS] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

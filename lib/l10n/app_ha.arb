@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Amince",
   "accessRevokedSuccessfully": "An cire izini cikin nasara!",
   "add": "Add",
-  "adminBroadcast": "Faɗaɗa mai kulawa",
-  "adminScreenTBD": "Fuskar mai kulawa – A ci gaba",
   "appTitle": "Appoint",
   "back": "Back",
   "cancel": "Sokewa",
@@ -593,7 +582,6 @@
   "pendingInvites": "Gayyata a tsaye",
   "pickImage": "Zaɓi hoto",
   "pickVideo": "Zaɓi bidiyo",
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
   "playtimeApprove": "Approve",
   "playtimeChooseFriends": "Choose friends to invite",
   "playtimeChooseGame": "Choose a game",
@@ -661,117 +649,113 @@
   "welcomeToPlaytime": "Welcome to Playtime",
   "yes": "I",
   "yesCancel": "Ee, a'aika",
-  "errorEstimatingRecipients": "errorEstimatingRecipients (TRANSLATE)",
+  "errorEstimatingRecipients": "Kuskure wajen hasashen masu karɓa: {error}",
   "@errorEstimatingRecipients": {
     "description": "errorEstimatingRecipients description"
   },
-  "errorPickingImage": "errorPickingImage (TRANSLATE)",
+  "errorPickingImage": "Kuskure wajen zaɓar hoto: {error}",
   "@errorPickingImage": {
     "description": "errorPickingImage description"
   },
-  "errorPickingVideo": "errorPickingVideo (TRANSLATE)",
+  "errorPickingVideo": "Kuskure wajen zaɓar bidiyo: {error}",
   "@errorPickingVideo": {
     "description": "errorPickingVideo description"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "Ƙungiyoyi",
   "@organizations": {
     "description": "organizations description"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "Babu ƙungiyoyi",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "Kuskure wajen ɗora ƙungiyoyi",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "members": "members (TRANSLATE)",
+  "members": "mambobi: {count}",
   "@members": {
     "description": "members description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "Masu amfani",
   "@users": {
     "description": "users description"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "Babu masu amfani",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "Kuskure wajen ɗora masu amfani",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "Canza matsayi",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "totalAppointments": "totalAppointments (TRANSLATE)",
+  "totalAppointments": "Jimlar haduwa",
   "@totalAppointments": {
     "description": "totalAppointments description"
   },
-  "completedAppointments": "completedAppointments (TRANSLATE)",
+  "completedAppointments": "An kammala haduwa",
   "@completedAppointments": {
     "description": "completedAppointments description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "Kudaden shiga",
   "@revenue": {
     "description": "revenue description"
   },
-  "errorLoadingStats": "errorLoadingStats (TRANSLATE)",
+  "errorLoadingStats": "Kuskure wajen ɗora ƙididdiga",
   "@errorLoadingStats": {
     "description": "errorLoadingStats description"
   },
-  "appointment": "appointment (TRANSLATE)",
+  "appointment": "Haduwa: {id}",
   "@appointment": {
     "description": "appointment description"
   },
-  "from": "from (TRANSLATE)",
+  "from": "Daga: {name}",
   "@from": {
     "description": "from description"
   },
-  "phone": "phone (TRANSLATE)",
+  "phone": "Waya: {number}",
   "@phone": {
     "description": "phone description"
   },
-  "noRouteDefined": "noRouteDefined (TRANSLATE)",
+  "noRouteDefined": "Ba a ƙayyade hanya ba don {route}",
   "@noRouteDefined": {
     "description": "noRouteDefined description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "Cikakken bayani game da taro",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "meetingId": "meetingId (TRANSLATE)",
+  "meetingId": "ID na taro: {id}",
   "@meetingId": {
     "description": "meetingId description"
   },
-  "creator": "creator (TRANSLATE)",
+  "creator": "Mai ƙirƙira: {id}",
   "@creator": {
     "description": "creator description"
   },
-  "context": "context (TRANSLATE)",
+  "context": "Mahallin: {id}",
   "@context": {
     "description": "context description"
   },
-  "group": "group (TRANSLATE)",
+  "group": "Rukuni: {id}",
   "@group": {
     "description": "group description"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "Buƙaci zaman sirri",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "privacyRequestSent": "privacyRequestSent (TRANSLATE)",
+  "privacyRequestSent": "An aika buƙatar sirri zuwa iyaye!",
   "@privacyRequestSent": {
     "description": "privacyRequestSent description"
   },
-  "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
+  "failedToSendPrivacyRequest": "An kasa aika buƙatar sirri: {error}",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {
@@ -781,5 +765,66 @@
   "@bookings": {
     "description": "Description"
   },
-  "contentLibrary": "Content Library"
+  "contentLibrary": "Content Library",
+  "menu": "Menu",
+  "signOut": "Fice",
+  "signIn": "Shiga ciki",
+  "bookMeeting": "Tanadi Taro",
+  "bookAppointment": "Tanadi Haduwa",
+  "bookingRequest": "Buƙatar tanadi",
+  "confirmBooking": "Tabbatar da tanadi",
+  "chatBooking": "Tanadi ta hira",
+  "bookViaChat": "Tanadi ta hira",
+  "submitBooking": "Miƙa tanadi",
+  "selectStaff": "Zaɓi ma'aikata",
+  "pickDate": "Zaɓi Kwanan wata",
+  "staff": "Ma'aikata",
+  "service": "Sabis",
+  "dateTime": "Kwanan wata & Lokaci",
+  "duration": "Tsawon lokaci: {duration} minti",
+  "notSelected": "Ba a zaɓi ba",
+  "noSlots": "Babu wurare",
+  "bookingConfirmed": "An tabbatar da tanadi",
+  "failedToConfirmBooking": "An kasa tabbatar da tanadi",
+  "noBookingsFound": "Ba a sami tanadi ba",
+  "errorLoadingBookings": "Kuskure wajen ɗora tanadi: {error}",
+  "shareMeetingInvitation": "Raba gayyatar taro:",
+  "bookingConfirmedShare": "An tabbatar da tanadi! Yanzu za ka iya raba gayyata.",
+  "businessDashboard": "Dashboard na kasuwanci",
+  "inviteContact": "Tuntuɓi gayyata",
+  "sendInvite": "Aika gayyata",
+  "name": "Suna",
+  "phoneNumber": "Lambar waya",
+  "emailOptional": "Imel (zaɓi)",
+  "requiresInstallFallback": "Yana buƙatar shigarwa",
+  "errorFetchingToken": "Kuskure wajen samin token",
+  "inviteChild": "Gayyaci yaro",
+  "childEmail": "Imel ɗan yaro",
+  "childEmailOrPhone": "Imel ko waya ɗan yaro",
+  "enterChildEmail": "Shigar da imel ɗan yaro",
+  "otpCode": "Lambar OTP",
+  "enterOtp": "Shigar da OTP",
+  "verify": "Tabbatar",
+  "childLinkedSuccessfully": "An haɗa yaro cikin nasara!",
+  "invitationSentSuccessfully": "An aika gayyata cikin nasara!",
+  "failedToSendInvitation": "An kasa aikawa gayyata: {error}",
+  "pleaseEnterValidEmail": "Da fatan a shigar da ingantaccen imel",
+  "pleaseEnterValidEmailOrPhone": "Da fatan a shigar da ingantaccen imel ko waya",
+  "invalidCode": "Lambar ba ta da inganci, sake gwadawa",
+  "grantConsent": "Ba da yarda",
+  "revokeConsent": "Cire yarda",
+  "consentGrantedSuccessfully": "An ba da yarda cikin nasara!",
+  "consentRevokedSuccessfully": "An cire yarda cikin nasara!",
+  "failedToUpdateConsent": "An kasa sabunta yarda: {error}",
+  "send": "Aika",
+  "permissions": "Izini",
+  "permissionsFor": "Izini – {childId}",
+  "errorLoadingPermissions": "Kuskure wajen ɗora izini: {error}",
+  "none": "Babu",
+  "readOnly": "Karatu kawai",
+  "readWrite": "Karatu & rubutu",
+  "permissionUpdated": "An sabunta izini {category} zuwa {newValue}",
+  "failedToUpdatePermission": "An kasa sabunta izini: {error}",
+  "adminBroadcast": "Faɗaɗa mai kulawa",
+  "adminScreenTBD": "Fuskar mai kulawa – A ci gaba"
 }

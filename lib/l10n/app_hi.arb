@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -496,26 +487,24 @@
     "description": "Description"
   },
   "about": "के बारे में",
-  "accept": "स्वीकृत करें",
-  "accessRevokedSuccessfully": "पहुँच सफलतापूर्वक रद्द की गई",
+  "accept": "स्वीकार करें",
+  "accessRevokedSuccessfully": "पहुंच सफलतापूर्वक रद्द की गई!",
   "add": "जोड़ें",
-  "adminBroadcast": "व्यवस्थापक प्रसारण",
-  "adminScreenTBD": "व्यवस्थापक स्क्रीन - विकासाधीन",
-  "appTitle": "एप्लिकेशन शीर्षक",
+  "appTitle": "Appoint",
   "back": "पिछला",
   "cancel": "रद्द करें",
   "cancelInvite": "निमंत्रण रद्द करें",
-  "cancelInviteConfirmation": "निमंत्रण रद्द की पुष्टि करें",
-  "checkingPermissions": "अनुमतियाँ जांच रहा है",
+  "cancelInviteConfirmation": "क्या आप वाकई इस निमंत्रण को रद्द करना चाहते हैं?",
+  "checkingPermissions": "अनुमतियाँ जांची जा रही हैं...",
   "choose": "चुनें",
   "clicked": "क्लिक किया गया: {count}",
   "clientScreenTBD": "क्लाइंट स्क्रीन - विकासाधीन",
   "close": "बंद करें",
-  "composeBroadcastMessage": "ब्रॉडकास्ट संदेश बनाएं",
+  "composeBroadcastMessage": "प्रसारण संदेश लिखें",
   "confirm": "पुष्टि करें",
   "confirmPassword": "पासवर्ड सुष्ट करें",
   "connectedChildren": "जुड़े हुए बच्चे",
-  "content": "सामग्री",
+  "content": "सामग्री: {content}",
   "copy": "प्रतिलिपि बनाएँ",
   "createGame": "गेम बनाएं",
   "createLiveSession": "लाइव सत्र बनाएं",
@@ -523,12 +512,12 @@
   "createVirtualSession": "वर्चुअल सत्र बनाएं",
   "createYourFirstGame": "अपना पहला गेम बनाएं",
   "createYourFirstSession": "अपना पहला सत्र बनाएं",
-  "created": "बनाया गया",
+  "created": "बनाया गया: {date}",
   "customizeMessage": "अपना संदेश अनुकूलित करें...",
   "cut": "कट",
   "dashboard": "डैशबोर्ड",
   "decline": "अस्वीकार करें",
-  "defaultShareMessage": "डिफ़ॉल्ट शेयर संदेश",
+  "defaultShareMessage": "हाय! मैंने APP-OINT के माध्यम से आपके साथ एक मीटिंग शेड्यूल की है। पुष्टि करने या अन्य समय सुझाने के लिए यहां क्लिक करें:",
   "delete": "हटाएं",
   "details": "विवरण",
   "done": "पूर्ण",
@@ -536,45 +525,45 @@
   "edit": "संपादित करें",
   "email": "ईमेल",
   "enableNotifications": "सूचनाएं सक्षम करें",
-  "enterGroupName": "समूह नाम दर्ज करें",
+  "enterGroupName": "पहचान के लिए समूह का नाम दर्ज करें",
   "error": "त्रुटि",
-  "errorCheckingPermissions": "[HI] Error checking permissions",
-  "errorLoadingFamilyLinks": "पारिवारिक लिंक लोड करने में त्रुटि",
+  "errorCheckingPermissions": "अनुमतियाँ जांचने में त्रुटि: {error}",
+  "errorLoadingFamilyLinks": "पारिवारिक लिंक लोड करने में त्रुटि: {error}",
   "errorLoadingInvites": "निमंत्रण लोड करने में त्रुटि",
-  "errorLoadingPrivacyRequests": "[HI] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "गोपनीयता अनुरोध लोड करने में त्रुटि: {error}",
   "errorLoadingProfile": "प्रोफ़ाइल लोड करने में त्रुटि",
-  "errorSavingMessage": "[HI] Error saving message",
-  "errorSendingMessage": "[HI] Error sending message",
-  "failedToActionPrivacyRequest": "गोपनीयता अनुरोध निष्पादित करने में विफल",
-  "failedToCancelInvite": "[HI] Failed to cancel invite",
-  "failedToResendOtp": "[HI] Failed to resend OTP",
-  "failedToRevokeAccess": "[HI] Failed to revoke access",
+  "errorSavingMessage": "संदेश सहेजने में त्रुटि: {error}",
+  "errorSendingMessage": "संदेश भेजने में त्रुटि: {error}",
+  "failedToActionPrivacyRequest": "गोपनीयता अनुरोध {action} करने में विफल: {error}",
+  "failedToCancelInvite": "निमंत्रण रद्द करने में विफल: {error}",
+  "failedToResendOtp": "ओटीपी पुनः भेजने में विफल: {error}",
+  "failedToRevokeAccess": "पहुंच रद्द करने में विफल: {error}",
   "familyDashboard": "पारिवारिक डैशबोर्ड",
   "familyMembers": "परिवार के सदस्य",
-  "fcmToken": "[HI] FCM Token",
+  "fcmToken": "FCM टोकन: {token}",
   "forgotPassword": "पासवर्ड भूल गया?",
   "groupNameOptional": "समूह का नाम (वैकल्पिक)",
   "home": "होम",
-  "invite": "निमंत्रण",
-  "inviteCancelledSuccessfully": "निमंत्रण सफलतापूर्वक रद्द किया गया",
+  "invite": "आमंत्रित करें",
+  "inviteCancelledSuccessfully": "निमंत्रण सफलतापूर्वक रद्द किया गया!",
   "inviteDetail": "निमंत्रण विवरण",
-  "invited": "निमंत्रित",
+  "invited": "आमंत्रित किया गया: {date}",
   "knownGroupDetected": "ज्ञात समूह पाया गया",
-  "link": "[HI] Link",
+  "link": "लिंक: {link}",
   "loading": "लोड हो रहा है...",
-  "login": "लॉग इन करें",
+  "login": "लॉगिन",
   "logout": "लॉग आउट",
   "managePermissions": "अनुमतियाँ प्रबंधित करें",
   "mediaOptional": "मीडिया (वैकल्पिक)",
   "meetingReadyMessage": "मीटिंग तैयार है! क्या आप इसे अपने समूह को भेजना चाहते हैं?",
-  "meetingSharedSuccessfully": "मीटिंग सफलतापूर्वक साझा की गई",
+  "meetingSharedSuccessfully": "मीटिंग सफलतापूर्वक साझा की गई!",
   "messageSavedSuccessfully": "संदेश सफलतापूर्वक सहेजा गया",
   "messageSentSuccessfully": "संदेश सफलतापूर्वक भेजा गया",
   "myInvites": "मेरे निमंत्रण",
   "myProfile": "मेरी प्रोफ़ाइल",
   "next": "अगला",
   "no": "नहीं",
-  "noBroadcastMessages": "कोई ब्रॉडकास्ट संदेश नहीं",
+  "noBroadcastMessages": "अभी तक कोई प्रसारण संदेश नहीं हैं",
   "noFamilyMembersYet": "अभी तक कोई परिवार सदस्य नहीं है। शुरू करने के लिए किसी को आमंत्रित करें!",
   "noGamesYet": "अभी तक कोई गेम नहीं",
   "noInvites": "कोई निमंत्रण नहीं",
@@ -582,10 +571,10 @@
   "noProfileFound": "कोई प्रोफ़ाइल नहीं मिली",
   "noResults": "कोई परिणाम नहीं",
   "noSessionsYet": "अभी तक कोई सत्र नहीं",
-  "notificationSettings": "सूचना सेटिंग्स",
+  "notificationSettings": "अधिसूचना सेटिंग्स",
   "notifications": "सूचनाएं",
   "ok": "ठीक है",
-  "opened": "खुला",
+  "opened": "खोला गया: {count}",
   "otpResentSuccessfully": "ओटीपी सफलतापूर्वक पुनः भेजा गया!",
   "participants": "प्रतिभागी",
   "password": "पासवर्ड",
@@ -593,7 +582,6 @@
   "pendingInvites": "लंबित निमंत्रण",
   "pickImage": "छवि चुनें",
   "pickVideo": "वीडियो चुनें",
-  "playtimeAdminPanelTitle": "[HI] Playtime Games – Admin",
   "playtimeApprove": "स्वीकृत करें",
   "playtimeChooseFriends": "मित्र चुनें",
   "playtimeChooseGame": "एक गेम चुनें",
@@ -624,35 +612,35 @@
   "profile": "प्रोफ़ाइल",
   "quickActions": "त्वरित क्रियाएं",
   "recentGames": "हाल के गेम",
-  "recipients": "प्राप्तकर्ता",
+  "recipients": "प्राप्तकर्ता: {count}",
   "redo": "दोहराएं",
   "refresh": "रिफ्रेश करें",
   "removeChild": "बच्चे को हटाएं",
-  "requestType": "अनुरोध प्रकार",
+  "requestType": "{type} अनुरोध",
   "retry": "पुनः प्रयास करें",
   "revoke": "रद्द करें",
-  "revokeAccess": "पहुँच रद्द करें",
-  "revokeAccessConfirmation": "पहुँच रद्द करने की पुष्टि",
+  "revokeAccess": "पहुंच रद्द करें",
+  "revokeAccessConfirmation": "क्या आप वाकई इस बच्चे की पहुंच रद्द करना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।",
   "save": "सहेजें",
-  "saveGroupForRecognition": "पहचान के लिए समूह सहेजें",
-  "scheduleForLater": "बाद में निर्धारित करें",
+  "saveGroupForRecognition": "भविष्य की पहचान के लिए समूह सहेजें",
+  "scheduleForLater": "बाद के लिए शेड्यूल करें",
   "scheduleMessage": "संदेश निर्धारित करें",
-  "scheduled": "[HI] Scheduled",
+  "scheduled": "अनुसूचित: {date}",
   "scheduledFor": "संयोजित किया गया",
   "scheduling": "अनुसूची",
   "search": "खोजें",
   "select": "चुनें",
-  "sendNow": "अब भेजें",
+  "sendNow": "अभी भेजें",
   "settings": "सेटिंग्स",
   "share": "साझा करें",
-  "shareOnWhatsApp": "[HI] Share on WhatsApp",
+  "shareOnWhatsApp": "व्हाट्सएप पर साझा करें",
   "signUp": "साइन अप",
-  "staffScreenTBD": "स्टाफ स्क्रीन बाद में निर्धारित की जाएगी",
-  "status": "स्थिति",
-  "statusColon": "[HI] Status:",
+  "staffScreenTBD": "स्टाफ स्क्रीन - विकासाधीन",
+  "status": "स्थिति: {status}",
+  "statusColon": "स्थिति: {status}",
   "success": "सफलता",
   "targetingFilters": "लक्षित फ़िल्टर",
-  "type": "प्रकार",
+  "type": "प्रकार: {type}",
   "undo": "पूर्ववत करें",
   "upcomingSessions": "आगामी सत्र",
   "upload": "अपलोड करें",
@@ -661,117 +649,113 @@
   "welcomeToPlaytime": "Playtime में आपका स्वागत है",
   "yes": "हाँ",
   "yesCancel": "हाँ, रद्द करें",
-  "errorEstimatingRecipients": "errorEstimatingRecipients (TRANSLATE)",
+  "errorEstimatingRecipients": "प्राप्तकर्ताओं का अनुमान लगाने में त्रुटि: {error}",
   "@errorEstimatingRecipients": {
     "description": "errorEstimatingRecipients description"
   },
-  "errorPickingImage": "errorPickingImage (TRANSLATE)",
+  "errorPickingImage": "छवि चुनने में त्रुटि: {error}",
   "@errorPickingImage": {
     "description": "errorPickingImage description"
   },
-  "errorPickingVideo": "errorPickingVideo (TRANSLATE)",
+  "errorPickingVideo": "वीडियो चुनने में त्रुटि: {error}",
   "@errorPickingVideo": {
     "description": "errorPickingVideo description"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "संगठन",
   "@organizations": {
     "description": "organizations description"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "कोई संगठन नहीं",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "संगठन लोड करने में त्रुटि",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "members": "members (TRANSLATE)",
+  "members": "{count} सदस्य",
   "@members": {
     "description": "members description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "उपयोगकर्ता",
   "@users": {
     "description": "users description"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "कोई उपयोगकर्ता नहीं",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "उपयोगकर्ता लोड करने में त्रुटि",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "भूमिका बदलें",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "totalAppointments": "totalAppointments (TRANSLATE)",
+  "totalAppointments": "कुल अपॉइंटमेंट",
   "@totalAppointments": {
     "description": "totalAppointments description"
   },
-  "completedAppointments": "completedAppointments (TRANSLATE)",
+  "completedAppointments": "पूर्ण अपॉइंटमेंट",
   "@completedAppointments": {
     "description": "completedAppointments description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "राजस्व",
   "@revenue": {
     "description": "revenue description"
   },
-  "errorLoadingStats": "errorLoadingStats (TRANSLATE)",
+  "errorLoadingStats": "आंकड़े लोड करने में त्रुटि",
   "@errorLoadingStats": {
     "description": "errorLoadingStats description"
   },
-  "appointment": "appointment (TRANSLATE)",
+  "appointment": "अपॉइंटमेंट: {id}",
   "@appointment": {
     "description": "appointment description"
   },
-  "from": "from (TRANSLATE)",
+  "from": "से: {name}",
   "@from": {
     "description": "from description"
   },
-  "phone": "phone (TRANSLATE)",
+  "phone": "फोन: {number}",
   "@phone": {
     "description": "phone description"
   },
-  "noRouteDefined": "noRouteDefined (TRANSLATE)",
+  "noRouteDefined": "{route} के लिए कोई रूट परिभाषित नहीं है",
   "@noRouteDefined": {
     "description": "noRouteDefined description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "मीटिंग विवरण",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "meetingId": "meetingId (TRANSLATE)",
+  "meetingId": "मीटिंग आईडी: {id}",
   "@meetingId": {
     "description": "meetingId description"
   },
-  "creator": "creator (TRANSLATE)",
+  "creator": "निर्माता: {id}",
   "@creator": {
     "description": "creator description"
   },
-  "context": "context (TRANSLATE)",
+  "context": "संदर्भ: {id}",
   "@context": {
     "description": "context description"
   },
-  "group": "group (TRANSLATE)",
+  "group": "समूह: {id}",
   "@group": {
     "description": "group description"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "निजी सत्र का अनुरोध करें",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "privacyRequestSent": "privacyRequestSent (TRANSLATE)",
+  "privacyRequestSent": "आपकी गोपनीयता का अनुरोध आपके माता-पिता को भेजा गया है!",
   "@privacyRequestSent": {
     "description": "privacyRequestSent description"
   },
-  "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
+  "failedToSendPrivacyRequest": "गोपनीयता अनुरोध भेजने में विफल: {error}",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {
@@ -781,5 +765,66 @@
   "@bookings": {
     "description": "Description"
   },
-  "contentLibrary": "Content Library"
+  "contentLibrary": "Content Library",
+  "menu": "मेनू",
+  "signOut": "साइन आउट",
+  "signIn": "साइन इन",
+  "bookMeeting": "मीटिंग बुक करें",
+  "bookAppointment": "अपॉइंटमेंट बुक करें",
+  "bookingRequest": "बुकिंग अनुरोध",
+  "confirmBooking": "बुकिंग की पुष्टि करें",
+  "chatBooking": "चैट बुकिंग",
+  "bookViaChat": "चैट के माध्यम से बुक करें",
+  "submitBooking": "बुकिंग सबमिट करें",
+  "selectStaff": "स्टाफ चुनें",
+  "pickDate": "तारीख चुनें",
+  "staff": "स्टाफ",
+  "service": "सेवा",
+  "dateTime": "दिनांक और समय",
+  "duration": "अवधि: {duration} मिनट",
+  "notSelected": "चयन नहीं किया गया",
+  "noSlots": "कोई स्लॉट उपलब्ध नहीं",
+  "bookingConfirmed": "बुकिंग की पुष्टि हो गई",
+  "failedToConfirmBooking": "बुकिंग की पुष्टि विफल रही",
+  "noBookingsFound": "कोई बुकिंग नहीं मिली",
+  "errorLoadingBookings": "बुकिंग लोड करने में त्रुटि: {error}",
+  "shareMeetingInvitation": "अपनी मीटिंग निमंत्रण साझा करें:",
+  "bookingConfirmedShare": "बुकिंग की पुष्टि हो गई! अब आप निमंत्रण साझा कर सकते हैं।",
+  "businessDashboard": "व्यापार डैशबोर्ड",
+  "inviteContact": "संपर्क को आमंत्रित करें",
+  "sendInvite": "निमंत्रण भेजें",
+  "name": "नाम",
+  "phoneNumber": "फ़ोन नंबर",
+  "emailOptional": "ईमेल (वैकल्पिक)",
+  "requiresInstallFallback": "स्थापना की आवश्यकता है",
+  "errorFetchingToken": "टोकन प्राप्त करने में त्रुटि",
+  "inviteChild": "बच्चे को आमंत्रित करें",
+  "childEmail": "बच्चे का ईमेल",
+  "childEmailOrPhone": "बच्चे का ईमेल या फ़ोन",
+  "enterChildEmail": "बच्चे का ईमेल दर्ज करें",
+  "otpCode": "ओटीपी कोड",
+  "enterOtp": "ओटीपी दर्ज करें",
+  "verify": "सत्यापित करें",
+  "childLinkedSuccessfully": "बच्चा सफलतापूर्वक लिंक हो गया!",
+  "invitationSentSuccessfully": "निमंत्रण सफलतापूर्वक भेजा गया!",
+  "failedToSendInvitation": "निमंत्रण भेजने में विफल: {error}",
+  "pleaseEnterValidEmail": "कृपया मान्य ईमेल दर्ज करें",
+  "pleaseEnterValidEmailOrPhone": "कृपया मान्य ईमेल या फ़ोन दर्ज करें",
+  "invalidCode": "अमान्य कोड, कृपया पुनः प्रयास करें",
+  "grantConsent": "सहमति दें",
+  "revokeConsent": "सहमति रद्द करें",
+  "consentGrantedSuccessfully": "सहमति सफलतापूर्वक दी गई!",
+  "consentRevokedSuccessfully": "सहमति सफलतापूर्वक रद्द की गई!",
+  "failedToUpdateConsent": "सहमति अपडेट करने में विफल: {error}",
+  "send": "भेजें",
+  "permissions": "अनुमतियाँ",
+  "permissionsFor": "अनुमतियाँ - {childId}",
+  "errorLoadingPermissions": "अनुमतियाँ लोड करने में त्रुटि: {error}",
+  "none": "कोई नहीं",
+  "readOnly": "केवल पढ़ने के लिए",
+  "readWrite": "पढ़ें और लिखें",
+  "permissionUpdated": "अनुमति {category} को {newValue} में अपडेट किया गया",
+  "failedToUpdatePermission": "अनुमति अपडेट करने में विफल: {error}",
+  "adminBroadcast": "व्यवस्थापक प्रसारण",
+  "adminScreenTBD": "व्यवस्थापक स्क्रीन - विकासाधीन"
 }
