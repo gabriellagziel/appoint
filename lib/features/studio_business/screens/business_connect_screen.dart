@@ -91,6 +91,7 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
         ),
       ),
     );
+  }
 
   Future<void> _connectBusiness() async {
     if (!_formKey.currentState!.validate()) {
