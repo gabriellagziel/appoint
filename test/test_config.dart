@@ -13,7 +13,7 @@ void setupTestConfig() {
 Future<void> setupFirebaseForTesting() async {
   try {
     await Firebase.initializeApp();
-  } catch (e) { {
+  } catch (e) {
     // Firebase might already be initialized, which is fine
   }
 }
