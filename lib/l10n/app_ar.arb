@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "قبول",
   "accessRevokedSuccessfully": "تم سحب الوصول بنجاح",
   "add": "إضافة",
-  "adminBroadcast": "بث الإدارة",
-  "adminScreenTBD": "شاشة الإدارة قيد التحديد",
   "appTitle": "عنوان التطبيق",
   "back": "عودة",
   "cancel": "إلغاء",
@@ -593,7 +582,6 @@
   "pendingInvites": "الدعوات المعلقة",
   "pickImage": "اختر صورة",
   "pickVideo": "اختر فيديو",
-  "playtimeAdminPanelTitle": "عنوان لوحة إدارة Playtime",
   "playtimeApprove": "قبول Playtime",
   "playtimeChooseFriends": "اختر الأصدقاء",
   "playtimeChooseGame": "اختر لعبة",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

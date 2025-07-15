@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "接受",
   "accessRevokedSuccessfully": "存取權已撤銷成功！",
   "add": "Add",
-  "adminBroadcast": "管理員廣播",
-  "adminScreenTBD": "管理員畫面 – 開發中",
   "appTitle": "Appoint",
   "back": "Back",
   "cancel": "取消",
@@ -593,7 +582,6 @@
   "pendingInvites": "待處理邀請",
   "pickImage": "選擇圖片",
   "pickVideo": "選擇影片",
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
   "playtimeApprove": "Approve",
   "playtimeChooseFriends": "Choose friends to invite",
   "playtimeChooseGame": "Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

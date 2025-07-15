@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "ยอมรับ",
   "accessRevokedSuccessfully": "เพิกถอนสิทธิ์สำเร็จ",
   "add": "เพิ่ม",
-  "adminBroadcast": "ออกอากาศผู้ดูแลระบบ",
-  "adminScreenTBD": "[TH] Admin screen coming soon",
   "appTitle": "ชื่อแอป",
   "back": "[TH] Back",
   "cancel": "ยกเลิก",
@@ -593,7 +582,6 @@
   "pendingInvites": "[TH] Pending Invites",
   "pickImage": "เลือกรูปภาพ",
   "pickVideo": "เลือกวิดีโอ",
-  "playtimeAdminPanelTitle": "ชื่อแผงผู้ดูแล Playtime",
   "playtimeApprove": "อนุมัติ Playtime",
   "playtimeChooseFriends": "เลือกเพื่อน",
   "playtimeChooseGame": "[TH] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

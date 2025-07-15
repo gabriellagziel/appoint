@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Acceptera",
   "accessRevokedSuccessfully": "Åtkomst återkallad framgångsrikt",
   "add": "Lägg till",
-  "adminBroadcast": "[SV] Admin Broadcast",
-  "adminScreenTBD": "[SV] Admin screen coming soon",
   "appTitle": "App-titel",
   "back": "[SV] Back",
   "cancel": "Avbryt",
@@ -593,7 +582,6 @@
   "pendingInvites": "[SV] Pending Invites",
   "pickImage": "Välj bild",
   "pickVideo": "Välj video",
-  "playtimeAdminPanelTitle": "[SV] Playtime Games – Admin",
   "playtimeApprove": "Godkänn",
   "playtimeChooseFriends": "[SV] Choose friends to invite",
   "playtimeChooseGame": "[SV] Choose a game",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

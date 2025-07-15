@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "adminBroadcast description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Accepter",
   "accessRevokedSuccessfully": "Adgang tilbagekaldt med succes",
   "add": "Tilføj",
-  "adminBroadcast": "[DA] Admin Broadcast",
-  "adminScreenTBD": "[DA] Admin screen coming soon",
   "appTitle": "App-titel",
   "back": "Tilbage",
   "cancel": "Annuller",
@@ -593,7 +582,6 @@
   "pendingInvites": "[DA] Pending Invites",
   "pickImage": "Vælg billede",
   "pickVideo": "Vælg video",
-  "playtimeAdminPanelTitle": "[DA] Playtime Games – Admin",
   "playtimeApprove": "Godkend Playtime",
   "playtimeChooseFriends": "Vælg venner",
   "playtimeChooseGame": "Vælg spil",
@@ -768,10 +756,6 @@
   "failedToSendPrivacyRequest": "failedToSendPrivacyRequest (TRANSLATE)",
   "@failedToSendPrivacyRequest": {
     "description": "failedToSendPrivacyRequest description"
-  },
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
   },
   "overview": "Overview",
   "@overview": {

@@ -12,12 +12,6 @@
   "@add": {
     "description": "Description"
   },
-  "@adminBroadcast": {
-    "description": "Description"
-  },
-  "@adminScreenTBD": {
-    "description": "Description"
-  },
   "@appTitle": {
     "description": "Description"
   },
@@ -294,9 +288,6 @@
   "@pickVideo": {
     "description": "Description"
   },
-  "@playtimeAdminPanelTitle": {
-    "description": "Description"
-  },
   "@playtimeApprove": {
     "description": "Description"
   },
@@ -499,8 +490,6 @@
   "accept": "Akzeptieren",
   "accessRevokedSuccessfully": "[DE] Access revoked successfully",
   "add": "[DE] Add",
-  "adminBroadcast": "[DE] Admin Broadcast",
-  "adminScreenTBD": "[DE] Admin screen coming soon",
   "appTitle": "App-Titel",
   "back": "[DE] Back",
   "cancel": "Abbrechen",
@@ -593,7 +582,6 @@
   "pendingInvites": "[DE] Pending Invites",
   "pickImage": "[DE] Pick Image",
   "pickVideo": "[DE] Pick Video",
-  "playtimeAdminPanelTitle": "[DE] Playtime Games – Admin",
   "playtimeApprove": "[DE] Approve",
   "playtimeChooseFriends": "Freunde auswählen",
   "playtimeChooseGame": "[DE] Choose a game",
@@ -661,10 +649,6 @@
   "welcomeToPlaytime": "Willkommen bei Playtime",
   "yes": "Ja",
   "yesCancel": "[DE] Yes, Cancel",
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
-  },
   "overview": "Overview",
   "@overview": {
     "description": "Description"
