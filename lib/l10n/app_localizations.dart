@@ -113,7 +113,7 @@ import 'app_localizations_zh.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -136,11 +136,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -199,7 +199,7 @@ abstract class AppLocalizations {
     Locale('ur'),
     Locale('vi'),
     Locale('zh'),
-    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'),
+    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant')
   ];
 
   /// Refresh button text
@@ -1724,7 +1724,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'New notification: {payloadTitle}'**
-  String newNotificationPayloadtitle(Object payloadTitle);
+  String newNotificationPayloadtitle(Object payloadTitle, Object title);
 
   /// Localization key for: Game List
   ///
@@ -1754,7 +1754,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Email: {profileEmail}'**
-  String emailProfileemail(Object profileEmail);
+  String emailProfileemail(Object email, Object profileEmail);
 
   /// Localization key for: Calendar
   ///
@@ -1814,7 +1814,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'User {id}'**
-  String userCid(Object id);
+  String userCid(Object cid, Object id);
 
   /// Localization key for: No slots
   ///
@@ -1904,7 +1904,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error picking image: \$e'**
-  String get errorPickingImageE;
+  String errorPickingImageE(Object e);
 
   /// Localization key for: No content available yet
   ///
@@ -1982,7 +1982,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error confirming payment: \$e'**
-  String get errorConfirmingPaymentE;
+  String errorConfirmingPaymentE(Object e);
 
   /// Localization key for: Invite Friends
   ///
@@ -2006,7 +2006,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'\\\${value}K'**
-  String valuetointk(Object value);
+  String valuetointk(Object k, Object value);
 
   /// Localization key for: Delete Account
   ///
@@ -2186,7 +2186,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'User \$userId'**
-  String get userUserid;
+  String userUserid(Object userId);
 
   /// Localization key for: No appointments found.
   ///
@@ -2396,7 +2396,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error deleting slot: \$e'**
-  String get errorDeletingSlotE;
+  String errorDeletingSlotE(Object e);
 
   /// Localization key for: Business Phone Booking Entry Screen - Coming Soon
   ///
@@ -2630,7 +2630,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error picking video: \$e'**
-  String get errorPickingVideoE;
+  String errorPickingVideoE(Object e);
 
   /// Localization key for: No route defined for ${settings.name}
   ///
@@ -3032,7 +3032,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error estimating recipients: \$e'**
-  String get errorEstimatingRecipientsE;
+  String errorEstimatingRecipientsE(Object e);
 
   /// Localization key for: Become an Ambassador
   ///
@@ -3104,7 +3104,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error loading configuration: \$e'**
-  String get errorLoadingConfigurationE;
+  String errorLoadingConfigurationE(Object e);
 
   /// Localization key for: Update your business information
   ///
@@ -3356,7 +3356,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Your upgrade code: \$upgradeCode'**
-  String get yourUpgradeCodeUpgradecode;
+  String yourUpgradeCodeUpgradecode(Object upgradeCode);
 
   /// Localization key for: Request Private Session
   ///
@@ -3482,7 +3482,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error Details: {errorType}'**
-  String errorDetailsLogerrortype(Object errorType);
+  String errorDetailsLogerrortype(Object errorType, Object logErrorType);
 
   /// Localization key for: Scheduled at: $scheduledAt
   ///
@@ -3746,7 +3746,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Status: {status}'**
-  String statusInvitestatusname(Object status);
+  String statusInvitestatusname(Object inviteStatusName, Object status);
 
   /// Localization key for: Business Login
   ///
@@ -4286,7 +4286,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Meeting ID: \$meetingId'**
-  String get meetingIdMeetingid;
+  String meetingIdMeetingid(Object meetingId);
 
   /// Localization key for: No users
   ///
@@ -4382,7 +4382,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Error loading subscription: \$error'**
-  String get errorLoadingSubscriptionError;
+  String errorLoadingSubscriptionError(Object error);
 
   /// Localization key for: Error loading users
   ///
@@ -4430,7 +4430,7 @@ abstract class AppLocalizations {
   ///
   /// In en, this message translates to:
   /// **'Failed to open customer portal: \$e'**
-  String get failedToOpenCustomerPortalE;
+  String failedToOpenCustomerPortalE(Object e);
 
   /// Localization key for: Continue
   ///
@@ -4504,59 +4504,59 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-    'am',
-    'ar',
-    'bg',
-    'bn',
-    'bs',
-    'ca',
-    'cs',
-    'cy',
-    'da',
-    'de',
-    'en',
-    'es',
-    'et',
-    'eu',
-    'fa',
-    'fi',
-    'fo',
-    'fr',
-    'ga',
-    'gl',
-    'ha',
-    'he',
-    'hi',
-    'hr',
-    'hu',
-    'id',
-    'is',
-    'it',
-    'ja',
-    'ko',
-    'lt',
-    'lv',
-    'mk',
-    'ms',
-    'mt',
-    'nl',
-    'no',
-    'pl',
-    'pt',
-    'ro',
-    'ru',
-    'sk',
-    'sl',
-    'sq',
-    'sr',
-    'sv',
-    'th',
-    'tr',
-    'uk',
-    'ur',
-    'vi',
-    'zh',
-  ].contains(locale.languageCode);
+        'am',
+        'ar',
+        'bg',
+        'bn',
+        'bs',
+        'ca',
+        'cs',
+        'cy',
+        'da',
+        'de',
+        'en',
+        'es',
+        'et',
+        'eu',
+        'fa',
+        'fi',
+        'fo',
+        'fr',
+        'ga',
+        'gl',
+        'ha',
+        'he',
+        'hi',
+        'hr',
+        'hu',
+        'id',
+        'is',
+        'it',
+        'ja',
+        'ko',
+        'lt',
+        'lv',
+        'mk',
+        'ms',
+        'mt',
+        'nl',
+        'no',
+        'pl',
+        'pt',
+        'ro',
+        'ru',
+        'sk',
+        'sl',
+        'sq',
+        'sr',
+        'sv',
+        'th',
+        'tr',
+        'uk',
+        'ur',
+        'vi',
+        'zh'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -4712,9 +4712,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

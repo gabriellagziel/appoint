@@ -15,37 +15,37 @@ class AppLocalizationsFa extends AppLocalizations {
   String get home => 'خانه';
 
   @override
-  String get noSessionsYet => 'هنوز جلسه‌ای برگزار نشده';
+  String get noSessionsYet => '[FA] هنوز جلسه‌ای برگزار نشده';
 
   @override
   String get ok => 'باشه';
 
   @override
-  String get playtimeLandingChooseMode => 'یک حالت را انتخاب کنید';
+  String get playtimeLandingChooseMode => '[FA] یک حالت را انتخاب کنید';
 
   @override
   String get signUp => 'ثبت‌نام';
 
   @override
-  String get scheduleMessage => 'برنامه‌ریزی پیام';
+  String get scheduleMessage => '[FA] برنامه‌ریزی پیام';
 
   @override
-  String get decline => 'رد کردن';
+  String get decline => '[FA] رد کردن';
 
   @override
-  String get adminBroadcast => 'پخش ادمین';
+  String get adminBroadcast => '[FA] پخش ادمین';
 
   @override
   String get login => 'ورود';
 
   @override
-  String get playtimeChooseFriends => 'انتخاب دوستان';
+  String get playtimeChooseFriends => '[FA] انتخاب دوستان';
 
   @override
-  String get noInvites => 'هیچ دعوتی نیست';
+  String get noInvites => '[FA] دعوتی موجود نیست';
 
   @override
-  String get playtimeChooseTime => 'انتخاب زمان';
+  String get playtimeChooseTime => '[FA] انتخاب زمان';
 
   @override
   String get success => 'موفقیت';
@@ -55,14 +55,14 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String opened(Object count) {
-    return 'باز شد';
+    return '[FA] باز شده: $count';
   }
 
   @override
-  String get createVirtualSession => 'ایجاد جلسه مجازی';
+  String get createVirtualSession => '[FA] ایجاد جلسه مجازی';
 
   @override
-  String get messageSentSuccessfully => 'پیام با موفقیت ارسال شد';
+  String get messageSentSuccessfully => '[FA] پیام با موفقیت ارسال شد';
 
   @override
   String get redo => 'تکرار';
@@ -74,78 +74,80 @@ class AppLocalizationsFa extends AppLocalizations {
   String get search => 'جستجو';
 
   @override
-  String get cancelInviteConfirmation => 'لغو تأیید دعوت';
+  String get cancelInviteConfirmation =>
+      '[FA] آیا مطمئن هستید که می‌خواهید این دعوت را لغو کنید؟';
 
   @override
   String created(Object date) {
-    return 'ایجاد شد';
+    return '[FA] ایجاد شده: $date';
   }
 
   @override
-  String get revokeAccess => 'ابطال دسترسی';
+  String get revokeAccess => '[FA] لغو دسترسی';
 
   @override
-  String get saveGroupForRecognition => 'ذخیره گروه برای شناسایی';
+  String get saveGroupForRecognition => '[FA] ذخیره گروه برای شناسایی در آینده';
 
   @override
-  String get playtimeLiveScheduled => 'جلسه زنده برنامه‌ریزی شد';
+  String get playtimeLiveScheduled => '[FA] جلسه زنده برنامه‌ریزی شد';
 
   @override
-  String get revokeAccessConfirmation => 'تأیید ابطال دسترسی';
+  String get revokeAccessConfirmation =>
+      '[FA] آیا مطمئن هستید که می‌خواهید دسترسی این کودک را لغو کنید؟ این عمل قابل بازگشت نیست.';
 
   @override
   String get download => 'دانلود';
 
   @override
-  String get password => 'رمز عبور';
+  String get password => '[FA] رمز عبور';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return 'خطا در بارگذاری پیوندهای خانوادگی';
+    return '[FA] خطا در بارگذاری ارتباطات خانوادگی: $error';
   }
 
   @override
   String get cancel => 'لغو';
 
   @override
-  String get playtimeCreate => 'ایجاد Playtime';
+  String get playtimeCreate => '[FA] ایجاد Playtime';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return 'درخواست حریم خصوصی ناموفق بود';
+    return '[FA] انجام $action درخواست حریم خصوصی با شکست مواجه شد: $error';
   }
 
   @override
-  String get appTitle => 'عنوان برنامه';
+  String get appTitle => '[FA] Appoint';
 
   @override
-  String get accept => 'تأیید';
+  String get accept => 'پذیرش';
 
   @override
-  String get playtimeModeVirtual => 'حالت مجازی';
+  String get playtimeModeVirtual => '[FA] حالت مجازی';
 
   @override
-  String get playtimeDescription => 'توضیحات Playtime';
+  String get playtimeDescription => '[FA] توضیحات Playtime';
 
   @override
   String get delete => 'حذف';
 
   @override
-  String get playtimeVirtualStarted => 'جلسه مجازی آغاز شد';
+  String get playtimeVirtualStarted => '[FA] جلسه مجازی آغاز شد';
 
   @override
-  String get createYourFirstGame => 'اولین بازی خود را بسازید';
+  String get createYourFirstGame => '[FA] اولین بازی خود را بسازید';
 
   @override
   String get participants => 'شرکت‌کنندگان';
 
   @override
   String recipients(Object count) {
-    return 'گیرندگان';
+    return '[FA] گیرندگان: $count';
   }
 
   @override
-  String get noResults => 'بدون نتیجه';
+  String get noResults => '[FA] بدون نتیجه';
 
   @override
   String get yes => 'بله';
@@ -154,71 +156,73 @@ class AppLocalizationsFa extends AppLocalizations {
   String get invite => 'دعوت';
 
   @override
-  String get playtimeModeLive => 'حالت زنده';
+  String get playtimeModeLive => '[FA] حالت زنده';
 
   @override
-  String get done => 'انجام شد';
+  String get done => '[FA] انجام شد';
 
   @override
-  String get defaultShareMessage => 'پیام پیش‌فرض برای اشتراک‌گذاری';
+  String get defaultShareMessage =>
+      '[FA] سلام! من یک جلسه با شما از طریق APP-OINT برنامه‌ریزی کرده‌ام. برای تأیید یا پیشنهاد زمان دیگر کلیک کنید:';
 
   @override
   String get no => 'خیر';
 
   @override
-  String get playtimeHub => 'مرکز Playtime';
+  String get playtimeHub => '[FA] مرکز Playtime';
 
   @override
-  String get createLiveSession => 'ایجاد جلسه زنده';
+  String get createLiveSession => '[FA] ایجاد جلسه زنده';
 
   @override
-  String get enableNotifications => 'فعال کردن اعلان‌ها';
+  String get enableNotifications => '[FA] فعال‌سازی اعلان‌ها';
 
   @override
   String invited(Object date) {
-    return 'دعوت شد';
+    return '[FA] دعوت‌شده: $date';
   }
 
   @override
   String content(Object content) {
-    return 'محتوا';
+    return '[FA] محتوا: $content';
   }
 
   @override
-  String get meetingSharedSuccessfully => 'جلسه با موفقیت به اشتراک گذاشته شد';
+  String get meetingSharedSuccessfully =>
+      '[FA] جلسه با موفقیت به اشتراک گذاشته شد!';
 
   @override
-  String get welcomeToPlaytime => 'به Playtime خوش آمدید';
+  String get welcomeToPlaytime => '[FA] به Playtime خوش آمدید';
 
   @override
-  String get viewAll => 'نمایش همه';
+  String get viewAll => '[FA] نمایش همه';
 
   @override
-  String get playtimeVirtual => 'Playtime مجازی';
+  String get playtimeVirtual => '[FA] Playtime مجازی';
 
   @override
-  String get staffScreenTBD => 'صفحه کارکنان تعریف نشده';
+  String get staffScreenTBD => '[FA] صفحه کارکنان - در حال توسعه';
 
   @override
   String get cut => 'برش';
 
   @override
-  String get inviteCancelledSuccessfully => 'دعوت با موفقیت لغو شد';
+  String get inviteCancelledSuccessfully => '[FA] دعوت با موفقیت لغو شد!';
 
   @override
-  String get retry => 'تلاش مجدد';
+  String get retry => '[FA] تلاش مجدد';
 
   @override
-  String get composeBroadcastMessage => 'نوشتن پیام پخش';
+  String get composeBroadcastMessage => '[FA] نگارش پیام پخش';
 
   @override
-  String get sendNow => 'ارسال اکنون';
+  String get sendNow => '[FA] ارسال اکنون';
 
   @override
-  String get noGamesYet => 'هنوز هیچ بازی نیست';
+  String get noGamesYet => '[FA] هنوز هیچ بازی نیست';
 
   @override
-  String get select => 'انتخاب کنید';
+  String get select => '[FA] انتخاب کنید';
 
   @override
   String get about => 'درباره';
@@ -230,11 +234,11 @@ class AppLocalizationsFa extends AppLocalizations {
   String get profile => 'پروفایل';
 
   @override
-  String get removeChild => 'حذف کودک';
+  String get removeChild => '[FA] حذف کودک';
 
   @override
   String status(Object status) {
-    return 'وضعیت';
+    return '[FA] وضعیت: $status';
   }
 
   @override
@@ -244,82 +248,82 @@ class AppLocalizationsFa extends AppLocalizations {
   String get paste => 'چسباندن';
 
   @override
-  String get welcome => 'خوش آمدید';
+  String get welcome => '[FA] خوش آمدید';
 
   @override
-  String get playtimeCreateSession => 'ایجاد جلسه';
+  String get playtimeCreateSession => '[FA] ایجاد جلسه';
 
   @override
-  String get familyMembers => 'اعضای خانواده';
+  String get familyMembers => '[FA] اعضای خانواده';
 
   @override
   String get upload => 'بارگذاری';
 
   @override
-  String get upcomingSessions => 'جلسات آینده';
+  String get upcomingSessions => '[FA] جلسات آینده';
 
   @override
-  String get enterGroupName => 'نام گروه را وارد کنید';
+  String get enterGroupName => '[FA] نام گروه را وارد کنید برای شناسایی';
 
   @override
   String get confirm => 'تأیید';
 
   @override
-  String get playtimeLive => 'Playtime زنده';
+  String get playtimeLive => '[FA] Playtime زنده';
 
   @override
-  String get errorLoadingInvites => 'خطا در بارگذاری دعوت‌ها';
+  String get errorLoadingInvites => '[FA] خطا در بارگذاری دعوت‌ها';
 
   @override
-  String get targetingFilters => 'فیلترهای هدف';
+  String get targetingFilters => '[FA] فیلترهای هدف‌گذاری';
 
   @override
-  String get pickVideo => 'انتخاب ویدیو';
+  String get pickVideo => '[FA] انتخاب ویدئو';
 
   @override
-  String get playtimeGameDeleted => 'بازی حذف شد';
+  String get playtimeGameDeleted => '[FA] بازی حذف شد';
 
   @override
-  String get scheduleForLater => 'برنامه‌ریزی برای بعد';
+  String get scheduleForLater => '[FA] برنامه‌ریزی برای بعد';
 
   @override
-  String get accessRevokedSuccessfully => 'دسترسی با موفقیت باطل شد';
+  String get accessRevokedSuccessfully => '[FA] دسترسی با موفقیت لغو شد!';
 
   @override
   String type(Object type) {
-    return 'نوع';
+    return '[FA] نوع: $type';
   }
 
   @override
-  String get checkingPermissions => 'در حال بررسی دسترسی‌ها';
+  String get checkingPermissions => '[FA] در حال بررسی مجوزها...';
 
   @override
   String get copy => 'کپی';
 
   @override
-  String get yesCancel => 'بله، لغو شود';
+  String get yesCancel => '[FA] بله، لغو';
 
   @override
   String get email => 'ایمیل';
 
   @override
-  String get shareOnWhatsApp => 'اشتراک‌گذاری در واتساپ';
+  String get shareOnWhatsApp => '[FA] اشتراک‌گذاری در واتساپ';
 
   @override
-  String get notificationSettings => 'تنظیمات اعلان';
+  String get notificationSettings => '[FA] تنظیمات اعلان';
 
   @override
-  String get myProfile => 'پروفایل من';
+  String get myProfile => '[FA] پروفایل من';
 
   @override
-  String get revoke => 'ابطال';
+  String get revoke => 'لغو';
 
   @override
-  String get noBroadcastMessages => 'هیچ پیغام پخشی نیست';
+  String get noBroadcastMessages => '[FA] هنوز پیامی برای پخش وجود ندارد';
 
   @override
   String requestType(Object type) {
-    return 'نوع درخواست';
+    return '[FA] درخواست $type';
   }
 
   @override
@@ -329,19 +333,19 @@ class AppLocalizationsFa extends AppLocalizations {
   String get details => 'جزئیات';
 
   @override
-  String get cancelInvite => 'لغو دعوت';
+  String get cancelInvite => '[FA] لغو دعوت';
 
   @override
-  String get createNew => 'ایجاد جدید';
+  String get createNew => '[FA] ایجاد جدید';
 
   @override
   String get settings => 'تنظیمات';
 
   @override
-  String get playtimeReject => 'رد Playtime';
+  String get playtimeReject => '[FA] رد Playtime';
 
   @override
-  String get errorLoadingProfile => 'خطا در بارگذاری پروفایل';
+  String get errorLoadingProfile => '[FA] خطا در بارگذاری پروفایل';
 
   @override
   String get edit => 'ویرایش';
@@ -350,2066 +354,2153 @@ class AppLocalizationsFa extends AppLocalizations {
   String get add => 'افزودن';
 
   @override
-  String get playtimeGameApproved => 'بازی تأیید شد';
+  String get playtimeGameApproved => '[FA] بازی تأیید شد';
 
   @override
-  String get forgotPassword => 'رمز عبور را فراموش کرده‌اید؟';
+  String get forgotPassword => '[FA] رمز عبور را فراموش کرده‌اید؟';
 
   @override
-  String get familyDashboard => 'داشبورد خانواده';
+  String get familyDashboard => '[FA] داشبورد خانواده';
 
   @override
-  String get loading => 'در حال بارگذاری';
+  String get loading => '[FA] در حال بارگذاری...';
 
   @override
-  String get quickActions => 'اقدامات سریع';
+  String get quickActions => '[FA] اقدامات سریع';
 
   @override
-  String get playtimeTitle => 'عنوان Playtime';
+  String get playtimeTitle => '[FA] عنوان Playtime';
 
   @override
-  String get otpResentSuccessfully => 'کد مجدداً ارسال شد';
+  String get otpResentSuccessfully => '[FA] کد OTP با موفقیت دوباره ارسال شد!';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return 'خطا در بررسی دسترسی‌ها';
+    return '[FA] خطا در بررسی دسترسی‌ها: $error';
   }
 
   @override
-  String get clientScreenTBD => 'صفحه مشتری تعریف نشده';
+  String get clientScreenTBD => '[FA] صفحه مشتری - در حال توسعه';
 
   @override
   String fcmToken(Object token) {
-    return 'توکن FCM';
+    return '[FA] توکن FCM: $token';
   }
 
   @override
-  String get pickImage => 'انتخاب تصویر';
+  String get pickImage => '[FA] انتخاب تصویر';
 
   @override
   String get previous => 'قبلی';
 
   @override
-  String get noProfileFound => 'پروفایلی یافت نشد';
+  String get noProfileFound => '[FA] پروفایلی یافت نشد';
 
   @override
-  String get noFamilyMembersYet => 'هنوز عضو خانواده‌ای نیست';
+  String get noFamilyMembersYet =>
+      '[FA] هنوز هیچ عضو خانواده‌ای اضافه نشده است. برای شروع کسی را دعوت کنید!';
 
   @override
-  String get mediaOptional => 'رسانه (اختیاری)';
+  String get mediaOptional => '[FA] رسانه (اختیاری)';
 
   @override
-  String get messageSavedSuccessfully => 'پیام با موفقیت ذخیره شد';
+  String get messageSavedSuccessfully => '[FA] پیام با موفقیت ذخیره شد';
 
   @override
-  String get scheduledFor => 'زمان‌بندی شده برای';
+  String get scheduledFor => '[FA] زمان‌بندی شده برای';
 
   @override
   String get dashboard => 'داشبورد';
 
   @override
-  String get noPermissionForBroadcast => 'مجوز انتشار وجود ندارد';
+  String get noPermissionForBroadcast =>
+      '[FA] شما مجاز به ایجاد پیام‌های پخش نیستید.';
 
   @override
-  String get playtimeAdminPanelTitle => 'عنوان پنل مدیریت Playtime';
+  String get playtimeAdminPanelTitle => '[FA] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => 'جزئیات دعوت';
+  String get inviteDetail => '[FA] جزئیات دعوت';
 
   @override
   String scheduled(Object date) {
-    return 'زمان‌بندی شده';
+    return '[FA] زمان‌بندی شده: $date';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return 'ارسال مجدد کد ناموفق بود';
+    return '[FA] ارسال مجدد OTP با شکست مواجه شد: $error';
   }
 
   @override
-  String get scheduling => 'در حال زمان‌بندی';
+  String get scheduling => 'زمان‌بندی';
 
   @override
   String errorSavingMessage(Object error) {
-    return 'خطا در ذخیره پیام';
+    return '[FA] خطا در ذخیره پیام: $error';
   }
 
   @override
   String get save => 'ذخیره';
 
   @override
-  String get playtimeApprove => 'تأیید Playtime';
+  String get playtimeApprove => '[FA] تأیید Playtime';
 
   @override
-  String get createYourFirstSession => 'اولین جلسه خود را بسازید';
+  String get createYourFirstSession => '[FA] اولین جلسه خود را بسازید';
 
   @override
-  String get playtimeGameRejected => 'بازی رد شد';
+  String get playtimeGameRejected => '[FA] بازی رد شد';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return 'خطا در لغو دسترسی';
+    return '[FA] لغو دسترسی با شکست مواجه شد: $error';
   }
 
   @override
-  String get recentGames => 'بازی‌های اخیر';
+  String get recentGames => '[FA] بازی‌های اخیر';
 
   @override
-  String get customizeMessage => 'شخصی‌سازی پیام';
+  String get customizeMessage => '[FA] پیام خود را سفارشی کنید...';
 
   @override
   String failedToCancelInvite(Object error) {
-    return 'لغو دعوت ناموفق بود';
+    return '[FA] لغو دعوت با شکست مواجه شد: $error';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return 'خطا در ارسال پیام';
+    return '[FA] خطا در ارسال پیام: $error';
   }
 
   @override
-  String get confirmPassword => 'تأیید رمز عبور';
+  String get confirmPassword => '[FA] تأیید رمز عبور';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return 'خطا در بارگذاری درخواست‌های حریم خصوصی';
+    return '[FA] خطا در بارگذاری درخواست‌های حریم خصوصی: $error';
   }
 
   @override
-  String get connectedChildren => 'کودکان متصل';
+  String get connectedChildren => '[FA] کودکان متصل شده';
 
   @override
   String get share => 'اشتراک‌گذاری';
 
   @override
-  String get playtimeEnterGameName => 'نام بازی را وارد کنید';
+  String get playtimeEnterGameName => '[FA] نام بازی را وارد کنید';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      'لطفاً برای ویژگی‌های خانوادگی وارد شوید';
+      '[FA] برای استفاده از قابلیت‌های خانوادگی وارد شوید';
 
   @override
-  String get myInvites => 'دعوت‌های من';
+  String get myInvites => '[FA] دعوت‌نامه‌های من';
 
   @override
-  String get createGame => 'ایجاد بازی';
+  String get createGame => '[FA] ایجاد بازی';
 
   @override
-  String get groupNameOptional => 'نام گروه (اختیاری)';
+  String get groupNameOptional => '[FA] نام گروه (اختیاری)';
 
   @override
-  String get playtimeNoSessions => 'هیچ جلسه Playtime نیست';
+  String get playtimeNoSessions => '[FA] هیچ جلسه Playtime نیست';
 
   @override
-  String get adminScreenTBD => 'صفحه ادمین تعریف نشده';
+  String get adminScreenTBD => '[FA] صفحه مدیر - در حال توسعه';
 
   @override
-  String get playtimeParentDashboardTitle => 'داشبورد والدین Playtime';
+  String get playtimeParentDashboardTitle => '[FA] داشبورد والدین Playtime';
 
   @override
   String get close => 'بستن';
 
   @override
-  String get knownGroupDetected => 'گروه شناخته شده شناسایی شد';
+  String get knownGroupDetected => '[FA] گروه شناخته‌شده شناسایی شد';
 
   @override
   String get back => 'بازگشت';
 
   @override
-  String get playtimeChooseGame => 'بازی را انتخاب کنید';
+  String get playtimeChooseGame => '[FA] بازی را انتخاب کنید';
 
   @override
-  String get managePermissions => 'مدیریت مجوزها';
+  String get managePermissions => '[FA] مدیریت دسترسی‌ها';
 
   @override
-  String get pollOptions => 'گزینه‌های نظرسنجی';
+  String get pollOptions => '[FA] گزینه‌های نظرسنجی:';
 
   @override
   String clicked(Object count) {
-    return 'کلیک شده';
+    return '[FA] کلیک شده: $count';
   }
 
   @override
   String link(Object link) {
-    return 'لینک';
+    return '[FA] لینک: $link';
   }
 
   @override
-  String get meetingReadyMessage => 'جلسه شما آماده است! اکنون بپیوندید';
+  String get meetingReadyMessage =>
+      '[FA] جلسه آماده است! می‌خواهید آن را برای گروه ارسال کنید؟';
 
   @override
-  String get pendingInvites => 'دعوت‌نامه‌های در انتظار';
+  String get pendingInvites => '[FA] دعوت‌های در انتظار';
 
   @override
   String statusColon(Object status) {
-    return 'وضعیت:';
+    return '[FA] وضعیت: $status';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      'لطفاً برای مشاهده پروفایل خود وارد شوید.';
+      '[FA] لطفاً برای مشاهده پروفایل خود وارد شوید.';
 
   @override
-  String get adminMetrics => 'Admin Metrics';
+  String get adminMetrics => '[FA] Admin Metrics';
 
   @override
-  String get overview => 'Overview';
+  String get overview => '[FA] Overview';
 
   @override
-  String get bookings => 'Bookings';
+  String get bookings => '[FA] Bookings';
 
   @override
-  String get users => 'users (TRANSLATE)';
+  String get users => 'کاربران';
 
   @override
-  String get revenue => 'revenue (TRANSLATE)';
+  String get revenue => 'درآمد';
 
   @override
-  String get contentLibrary => 'Content Library';
+  String get contentLibrary => '[FA] Content Library';
 
   @override
   String get authErrorUserNotFound =>
-      'No account found with this email address.';
+      '[FA] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => 'Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[FA] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => 'Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[FA] Please enter a valid email address.';
 
   @override
   String get authErrorUserDisabled =>
-      'This account has been disabled. Please contact support.';
+      '[FA] This account has been disabled. Please contact support.';
 
   @override
   String get authErrorWeakPassword =>
-      'Password is too weak. Please choose a stronger password.';
+      '[FA] Password is too weak. Please choose a stronger password.';
 
   @override
   String get authErrorEmailAlreadyInUse =>
-      'An account with this email already exists.';
+      '[FA] An account with this email already exists.';
 
   @override
   String get authErrorTooManyRequests =>
-      'Too many failed attempts. Please try again later.';
+      '[FA] Too many failed attempts. Please try again later.';
 
   @override
   String get authErrorOperationNotAllowed =>
-      'This sign-in method is not enabled. Please contact support.';
+      '[FA] This sign-in method is not enabled. Please contact support.';
 
   @override
   String get authErrorInvalidCredential =>
-      'Invalid credentials. Please try again.';
+      '[FA] Invalid credentials. Please try again.';
 
   @override
   String get REDACTED_TOKEN =>
-      'An account already exists with this email using a different sign-in method.';
+      '[FA] An account already exists with this email using a different sign-in method.';
 
   @override
   String get authErrorCredentialAlreadyInUse =>
-      'These credentials are already associated with another account.';
+      '[FA] These credentials are already associated with another account.';
 
   @override
   String get authErrorNetworkRequestFailed =>
-      'Network error. Please check your connection and try again.';
+      '[FA] Network error. Please check your connection and try again.';
 
   @override
-  String get socialAccountConflictTitle => 'Account Already Exists';
+  String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
 
   @override
   String socialAccountConflictMessage(Object email) {
-    return 'An account with email $email already exists using a different sign-in method. Would you like to link your accounts?';
+    return 'يبدو أن هناك حساب موجود بالفعل';
   }
 
   @override
-  String get linkAccounts => 'Link Accounts';
+  String get linkAccounts => 'ربط الحسابات';
 
   @override
-  String get signInWithExistingMethod => 'Sign in with existing method';
+  String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
   String get authErrorRequiresRecentLogin =>
-      'Please log in again to perform this operation.';
+      '[FA] Please log in again to perform this operation.';
 
   @override
   String get authErrorAppNotAuthorized =>
-      'This app is not authorized to use Firebase Authentication.';
+      '[FA] This app is not authorized to use Firebase Authentication.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The verification code is invalid.';
+      '[FA] The verification code is invalid.';
 
   @override
   String get authErrorInvalidVerificationId =>
-      'The verification ID is invalid.';
+      '[FA] The verification ID is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Please enter the verification code.';
+      '[FA] Please enter the verification code.';
 
   @override
-  String get authErrorMissingVerificationId => 'Missing verification ID.';
+  String get authErrorMissingVerificationId => '[FA] Missing verification ID.';
 
   @override
-  String get authErrorInvalidPhoneNumber => 'The phone number is invalid.';
+  String get authErrorInvalidPhoneNumber => '[FA] The phone number is invalid.';
 
   @override
-  String get authErrorMissingPhoneNumber => 'Please enter a phone number.';
+  String get authErrorMissingPhoneNumber => '[FA] Please enter a phone number.';
 
   @override
   String get authErrorQuotaExceeded =>
-      'The SMS quota for this project has been exceeded. Please try again later.';
+      '[FA] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
   String get authErrorCodeExpired =>
-      'The verification code has expired. Please request a new one.';
+      '[FA] The verification code has expired. Please request a new one.';
 
   @override
   String get authErrorSessionExpired =>
-      'Your session has expired. Please log in again.';
+      '[FA] Your session has expired. Please log in again.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Multi-factor authentication is required.';
+      '[FA] Multi-factor authentication is required.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Multi-factor information not found.';
+      '[FA] Multi-factor information not found.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Missing multi-factor session.';
+      '[FA] Missing multi-factor session.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Invalid multi-factor session.';
+      '[FA] Invalid multi-factor session.';
 
   @override
   String get REDACTED_TOKEN =>
-      'This second factor is already in use.';
+      '[FA] This second factor is already in use.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Maximum number of second factors exceeded.';
+      '[FA] Maximum number of second factors exceeded.';
 
   @override
   String get authErrorUnsupportedFirstFactor =>
-      'Unsupported first factor for multi-factor authentication.';
+      '[FA] Unsupported first factor for multi-factor authentication.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Email change requires verification.';
+      '[FA] Email change requires verification.';
 
   @override
   String get REDACTED_TOKEN =>
-      'This phone number is already in use.';
+      '[FA] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => 'The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[FA] The password is invalid or too weak.';
 
   @override
-  String get authErrorInvalidIdToken => 'The ID token is invalid.';
+  String get authErrorInvalidIdToken => '[FA] The ID token is invalid.';
 
   @override
-  String get authErrorIdTokenExpired => 'The ID token has expired.';
+  String get authErrorIdTokenExpired => '[FA] The ID token has expired.';
 
   @override
-  String get authErrorIdTokenRevoked => 'The ID token has been revoked.';
+  String get authErrorIdTokenRevoked => '[FA] The ID token has been revoked.';
 
   @override
   String get authErrorInternalError =>
-      'An internal error occurred. Please try again.';
+      '[FA] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => 'An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[FA] An invalid argument was provided.';
 
   @override
-  String get authErrorInvalidClaims => 'Invalid custom claims provided.';
+  String get authErrorInvalidClaims => '[FA] Invalid custom claims provided.';
 
   @override
-  String get authErrorInvalidContinueUri => 'The continue URL is invalid.';
+  String get authErrorInvalidContinueUri => '[FA] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => 'The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[FA] The creation time is invalid.';
 
   @override
   String get authErrorInvalidDisabledField =>
-      'The disabled field value is invalid.';
+      '[FA] The disabled field value is invalid.';
 
   @override
-  String get authErrorInvalidDisplayName => 'The display name is invalid.';
+  String get authErrorInvalidDisplayName => '[FA] The display name is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The dynamic link domain is invalid.';
+      '[FA] The dynamic link domain is invalid.';
 
   @override
   String get authErrorInvalidEmailVerified =>
-      'The email verified value is invalid.';
+      '[FA] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => 'The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[FA] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => 'The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[FA] The hash block size is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The hash derived key length is invalid.';
+      '[FA] The hash derived key length is invalid.';
 
   @override
-  String get authErrorInvalidHashKey => 'The hash key is invalid.';
+  String get authErrorInvalidHashKey => '[FA] The hash key is invalid.';
 
   @override
   String get authErrorInvalidHashMemoryCost =>
-      'The hash memory cost is invalid.';
+      '[FA] The hash memory cost is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The hash parallelization is invalid.';
+      '[FA] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => 'The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[FA] The hash rounds value is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'The hash salt separator is invalid.';
+      '[FA] The hash salt separator is invalid.';
 
   @override
   String get authErrorInvalidLastSignInTime =>
-      'The last sign-in time is invalid.';
+      '[FA] The last sign-in time is invalid.';
 
   @override
-  String get authErrorInvalidPageToken => 'The page token is invalid.';
+  String get authErrorInvalidPageToken => '[FA] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => 'The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[FA] The provider data is invalid.';
 
   @override
-  String get authErrorInvalidProviderId => 'The provider ID is invalid.';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'The session cookie duration is invalid.';
-
-  @override
-  String get authErrorInvalidUid => 'The UID is invalid.';
-
-  @override
-  String get authErrorInvalidUserImport => 'The user import record is invalid.';
+  String get authErrorInvalidProviderId => '[FA] The provider ID is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Maximum user import count exceeded.';
+      '[FA] The session cookie duration is invalid.';
 
   @override
-  String get authErrorMissingAndroidPkgName => 'Missing Android package name.';
+  String get authErrorInvalidUid => '[FA] The UID is invalid.';
 
   @override
-  String get authErrorMissingContinueUri => 'Missing continue URL.';
-
-  @override
-  String get authErrorMissingHashAlgorithm => 'Missing hash algorithm.';
-
-  @override
-  String get authErrorMissingIosBundleId => 'Missing iOS bundle ID.';
-
-  @override
-  String get authErrorMissingUid => 'Missing UID.';
+  String get authErrorInvalidUserImport =>
+      '[FA] The user import record is invalid.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Missing OAuth client secret.';
+      '[FA] Maximum user import count exceeded.';
 
   @override
-  String get authErrorProjectNotFound => 'Firebase project not found.';
+  String get authErrorMissingAndroidPkgName =>
+      '[FA] Missing Android package name.';
 
   @override
-  String get authErrorReservedClaims => 'Reserved claims provided.';
+  String get authErrorMissingContinueUri => '[FA] Missing continue URL.';
 
   @override
-  String get authErrorSessionCookieExpired => 'Session cookie has expired.';
+  String get authErrorMissingHashAlgorithm => '[FA] Missing hash algorithm.';
+
+  @override
+  String get authErrorMissingIosBundleId => '[FA] Missing iOS bundle ID.';
+
+  @override
+  String get authErrorMissingUid => '[FA] Missing UID.';
+
+  @override
+  String get REDACTED_TOKEN =>
+      '[FA] Missing OAuth client secret.';
+
+  @override
+  String get authErrorProjectNotFound => '[FA] Firebase project not found.';
+
+  @override
+  String get authErrorReservedClaims => '[FA] Reserved claims provided.';
+
+  @override
+  String get authErrorSessionCookieExpired =>
+      '[FA] Session cookie has expired.';
 
   @override
   String get authErrorSessionCookieRevoked =>
-      'Session cookie has been revoked.';
+      '[FA] Session cookie has been revoked.';
 
   @override
-  String get authErrorUidAlreadyExists => 'The UID is already in use.';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'The continue URL domain is not whitelisted.';
-
-  @override
-  String get authErrorUnknown => 'An unknown authentication error occurred.';
-
-  @override
-  String get checkingPermissions1 => 'Checking permissions...';
-
-  @override
-  String get paymentSuccessful => 'Payment Successful!';
-
-  @override
-  String get businessAvailability => 'Business Availability';
-
-  @override
-  String get send => 'Send';
-
-  @override
-  String newNotificationPayloadtitle(Object payloadTitle) {
-    return 'New notification: $payloadTitle';
-  }
-
-  @override
-  String get gameList => 'Game List';
-
-  @override
-  String get deleteAvailability => 'Delete Availability';
-
-  @override
-  String get connectToGoogleCalendar => 'Connect to Google Calendar';
-
-  @override
-  String get adminFreeAccess => 'Admin Free Access';
-
-  @override
-  String emailProfileemail(Object profileEmail) {
-    return 'Email: $profileEmail';
-  }
-
-  @override
-  String get calendar => 'Calendar';
-
-  @override
-  String get upload1 => 'Upload';
-
-  @override
-  String get resolved => 'Resolved';
-
-  @override
-  String get keepSubscription => 'Keep Subscription';
+  String get authErrorUidAlreadyExists => '[FA] The UID is already in use.';
 
   @override
   String get REDACTED_TOKEN =>
-      'Virtual session created! Inviting friends...';
+      '[FA] The continue URL domain is not whitelisted.';
 
   @override
-  String get noEventsScheduledForToday => 'No events scheduled for today';
+  String get authErrorUnknown =>
+      '[FA] An unknown authentication error occurred.';
 
   @override
-  String get exportData => 'Export Data';
+  String get checkingPermissions1 => 'فحص الأذونات...';
 
   @override
-  String get rewards => 'Rewards';
+  String get paymentSuccessful => 'تم الدفع بنجاح';
 
   @override
-  String get time => 'Time';
+  String get businessAvailability => 'توفر الأعمال';
 
   @override
-  String userCid(Object id) {
-    return 'User $id';
+  String get send => 'إرسال';
+
+  @override
+  String newNotificationPayloadtitle(Object payloadTitle, Object title) {
+    return 'عنوان الإشعار الجديد: $title';
   }
 
   @override
-  String get noSlots => 'No slots';
+  String get gameList => 'قائمة الألعاب';
 
   @override
-  String get signIn => 'Sign In';
+  String get deleteAvailability => 'حذف التوفر';
 
   @override
-  String get homeFeedScreen => 'Home Feed Screen';
+  String get connectToGoogleCalendar => 'الاتصال بتقويم Google';
 
   @override
-  String get selectLocation => 'Select Location';
+  String get adminFreeAccess => '[FA] Admin Free Access';
 
   @override
-  String get noTicketsYet => 'No tickets yet';
+  String emailProfileemail(Object email, Object profileEmail) {
+    return 'البريد الإلكتروني للملف الشخصي: $email';
+  }
 
   @override
-  String get meetingSharedSuccessfully1 => 'Meeting shared successfully!';
+  String get calendar => 'التقويم';
 
   @override
-  String get studioProfile => 'Studio Profile';
+  String get upload1 => '[FA] Upload (Persian)';
 
   @override
-  String get subscriptionUnavailable => 'Subscription unavailable';
+  String get resolved => 'تم الحل';
 
   @override
-  String get confirmBooking => 'Confirm Booking';
+  String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get failedToUpdatePermissionE => 'Failed to update permission: \$e';
+  String get REDACTED_TOKEN =>
+      '[FA] Virtual session created! Inviting friends... (Persian)';
 
   @override
-  String get reject => 'Reject';
+  String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
+
+  @override
+  String get exportData => 'تصدير البيانات';
+
+  @override
+  String get rewards => '[FA] Rewards (Persian)';
+
+  @override
+  String get time => '[FA] Time (Persian)';
+
+  @override
+  String userCid(Object cid, Object id) {
+    return '[FA] User $id';
+  }
+
+  @override
+  String get noSlots => '[FA] وقت خالی موجود نیست';
+
+  @override
+  String get signIn => '[FA] ورود به سیستم';
+
+  @override
+  String get homeFeedScreen => '[FA] Home Feed Screen (Persian)';
+
+  @override
+  String get selectLocation => '[FA] Select Location (Persian)';
+
+  @override
+  String get noTicketsYet => '[FA] No tickets yet (Persian)';
+
+  @override
+  String get meetingSharedSuccessfully1 => 'تم مشاركة الاجتماع بنجاح';
+
+  @override
+  String get studioProfile => 'ملف الاستوديو';
+
+  @override
+  String get subscriptionUnavailable =>
+      '[FA] Subscription unavailable (Persian)';
+
+  @override
+  String get confirmBooking => '[FA] تأیید رزرو';
+
+  @override
+  String get failedToUpdatePermissionE =>
+      '[FA] Failed to update permission: \$e (Persian)';
+
+  @override
+  String get reject => '[FA] Reject (Persian)';
 
   @override
   String REDACTED_TOKEN(Object ambassadorStatus) {
-    return 'Ambassador Status: $ambassadorStatus';
+    return '[FA] Ambassador Status: $ambassadorStatus (Persian)';
   }
 
   @override
-  String get noProviders => 'No providers';
+  String get noProviders => '[FA] No providers';
 
   @override
-  String get checkingSubscription => 'Checking subscription...';
+  String get checkingSubscription => '[FA] Checking subscription... (Persian)';
 
   @override
-  String get errorPickingImageE => 'Error picking image: \$e';
+  String errorPickingImageE(Object e) {
+    return 'خطأ في اختيار الصورة: $e';
+  }
 
   @override
-  String get noContentAvailableYet => 'No content available yet';
+  String get noContentAvailableYet => '[FA] No content available yet (Persian)';
 
   @override
-  String get resolve => 'Resolve';
+  String get resolve => '[FA] Resolve (Persian)';
 
   @override
-  String get errorLoadingSurveysError => 'Error loading surveys: \$error';
+  String get errorLoadingSurveysError =>
+      '[FA] Error loading surveys: \$error (Persian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
-    return 'Error: $errorMessage';
+    return '[FA] Error: $errorMessage';
   }
 
   @override
-  String get getHelpWithYourAccount => 'Get help with your account';
+  String get getHelpWithYourAccount =>
+      '[FA] Get help with your account (Persian)';
 
   @override
-  String get pay => 'Pay';
+  String get pay => '[FA] Pay (Persian)';
 
   @override
-  String get noOrganizations => 'noOrganizations (TRANSLATE)';
+  String get noOrganizations => '[FA] هیچ سازمانی وجود ندارد';
 
   @override
-  String get meetingDetails => 'meetingDetails (TRANSLATE)';
+  String get meetingDetails => 'تفاصيل الاجتماع';
 
   @override
-  String get errorLoadingAppointments => 'Error loading appointments';
+  String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => 'Changes saved successfully!';
+  String get changesSavedSuccessfully =>
+      '[FA] Changes saved successfully! (Persian)';
 
   @override
-  String get createNewInvoice => 'Create New Invoice';
+  String get createNewInvoice => '[FA] Create New Invoice (Persian)';
 
   @override
-  String get profileNotFound => 'Profile not found.';
+  String get profileNotFound => 'الملف الشخصي غير موجود';
 
   @override
-  String get errorConfirmingPaymentE => 'Error confirming payment: \$e';
+  String errorConfirmingPaymentE(Object e) {
+    return 'خطأ في تأكيد الدفع: $e';
+  }
 
   @override
-  String get inviteFriends => 'Invite Friends';
+  String get inviteFriends => 'دعوة الأصدقاء';
 
   @override
-  String get profileSaved => 'Profile saved!';
+  String get profileSaved => '[FA] Profile saved! (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Receive booking notifications via email';
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
-  String valuetointk(Object value) {
-    return '\\\$${value}K';
+  String valuetointk(Object k, Object value) {
+    return '[FA] \\\$${value}K (Persian)';
   }
 
   @override
-  String get deleteAccount => 'Delete Account';
+  String get deleteAccount => '[FA] Delete Account (Persian)';
 
   @override
-  String get profile1 => 'Profile';
+  String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding => 'Business Onboarding';
+  String get businessOnboarding => '[FA] Business Onboarding (Persian)';
 
   @override
-  String get addNewClient => 'Add New Client';
+  String get addNewClient => '[FA] Add New Client (Persian)';
 
   @override
-  String get darkMode => 'Dark Mode';
+  String get darkMode => '[FA] Dark Mode (Persian)';
 
   @override
-  String get addProvider => 'Add Provider';
+  String get addProvider => '[FA] Add Provider';
 
   @override
   String noRouteDefinedForStateuripath(Object path) {
-    return 'No route defined for $path';
+    return '[FA] No route defined for $path';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'You will receive a confirmation email shortly.';
+      '[FA] You will receive a confirmation email shortly. (Persian)';
 
   @override
-  String get addQuestion => 'Add Question';
+  String get addQuestion => '[FA] Add Question (Persian)';
 
   @override
-  String get privacyPolicy => 'Privacy Policy';
+  String get privacyPolicy => '[FA] Privacy Policy (Persian)';
 
   @override
   String branchesLengthBranches(Object branchCount) {
-    return '$branchCount branches';
+    return '[FA] $branchCount branches (Persian)';
   }
 
   @override
-  String get join => 'Join';
+  String get join => '[FA] Join (Persian)';
 
   @override
-  String get businessSubscription => 'Business Subscription';
+  String get businessSubscription => '[FA] Business Subscription (Persian)';
 
   @override
-  String get myInvites1 => 'My Invites';
+  String get myInvites1 => 'دعواتي';
 
   @override
-  String get providers => 'Providers';
+  String get providers => '[FA] Providers';
 
   @override
-  String get surveyManagement => 'Survey Management';
+  String get surveyManagement => '[FA] Survey Management (Persian)';
 
   @override
   String get pleaseEnterAValidEmailOrPhone =>
-      'Please enter a valid email or phone';
+      '[FA] Please enter a valid email or phone';
 
   @override
   String get noRoomsFoundAddYourFirstRoom =>
-      'No rooms found. Add your first room!';
+      '[FA] No rooms found. Add your first room! (Persian)';
 
   @override
-  String get readOurPrivacyPolicy => 'Read our privacy policy';
+  String get readOurPrivacyPolicy => '[FA] Read our privacy policy (Persian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => 'Could not open privacy policy';
+  String get couldNotOpenPrivacyPolicy =>
+      '[FA] Could not open privacy policy (Persian)';
 
   @override
-  String get refresh1 => 'Refresh';
+  String get refresh1 => '[FA] Refresh (Persian)';
 
   @override
-  String get roomUpdatedSuccessfully => 'Room updated successfully!';
+  String get roomUpdatedSuccessfully =>
+      '[FA] Room updated successfully! (Persian)';
 
   @override
-  String get contentDetail => 'Content Detail';
+  String get contentDetail => '[FA] Content Detail (Persian)';
 
   @override
-  String get cancelSubscription => 'Cancel Subscription';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Successfully registered as Ambassador!';
-
-  @override
-  String get save1 => 'Save';
-
-  @override
-  String get copy1 => 'Copy';
-
-  @override
-  String get failedToSendInvitationE => 'Failed to send invitation: \$e';
-
-  @override
-  String get surveyScore => 'Survey Score';
-
-  @override
-  String get userUserid => 'User \$userId';
-
-  @override
-  String get noAppointmentsFound => 'No appointments found.';
-
-  @override
-  String get responseDetail => 'Response Detail';
+  String get cancelSubscription => '[FA] Cancel Subscription (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Verification Screen - Coming Soon';
+      '[FA] Successfully registered as Ambassador! (Persian)';
+
+  @override
+  String get save1 => '[FA] Save (Persian)';
+
+  @override
+  String get copy1 => '[FA] Copy (Persian)';
+
+  @override
+  String get failedToSendInvitationE =>
+      '[FA] Failed to send invitation: \$e (Persian)';
+
+  @override
+  String get surveyScore => '[FA] Survey Score (Persian)';
+
+  @override
+  String userUserid(Object userId) {
+    return '[FA] User \$userId';
+  }
+
+  @override
+  String get noAppointmentsFound => '[FA] No appointments found. (Persian)';
+
+  @override
+  String get responseDetail => '[FA] Response Detail (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business profile activated successfully!';
+      'شاشة التحقق من الأعمال - قريباً';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
   String get failedToStartProSubscriptionE =>
-      'Failed to start Pro subscription: \$e';
+      '[FA] Failed to start Pro subscription: \$e (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Dashboard Entry Screen - Coming Soon';
+      '[FA] Business Dashboard Entry Screen - Coming Soon (Persian)';
 
   @override
-  String get contentFilter => 'Content Filter';
+  String get contentFilter => '[FA] Content Filter (Persian)';
 
   @override
-  String get helpSupport => 'Help & Support';
+  String get helpSupport => '[FA] Help & Support (Persian)';
 
   @override
-  String get editRoom => 'Edit Room';
+  String get editRoom => '[FA] Edit Room (Persian)';
 
   @override
   String appointmentApptid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return '[FA] Appointment: $appointmentId';
   }
 
   @override
   String deviceLogdeviceinfo(Object deviceInfo) {
-    return 'Device: $deviceInfo';
+    return '[FA] Device: $deviceInfo';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Business CRM Entry Screen - Coming Soon';
+      '[FA] Business CRM Entry Screen - Coming Soon (Persian)';
 
   @override
-  String get adminDashboard => 'Admin Dashboard';
+  String get adminDashboard => '[FA] Admin Dashboard';
 
   @override
   String orgmemberidslengthMembers(Object memberCount) {
-    return '$memberCount members';
+    return '[FA] $memberCount members';
   }
 
   @override
-  String get errorLoadingDashboardError => 'Error loading dashboard: \$error';
+  String get errorLoadingDashboardError =>
+      '[FA] Error loading dashboard: \$error (Persian)';
 
   @override
-  String get gameDeletedSuccessfully => 'Game deleted successfully!';
+  String get gameDeletedSuccessfully =>
+      '[FA] Game deleted successfully! (Persian)';
 
   @override
-  String get viewResponsesComingSoon => 'View responses - Coming soon!';
+  String get viewResponsesComingSoon =>
+      '[FA] View responses - Coming soon! (Persian)';
 
   @override
-  String get deleteProvider => 'Delete Provider';
+  String get deleteProvider => '[FA] Delete Provider';
 
   @override
-  String get errorLoadingRewards => 'Error loading rewards';
+  String get errorLoadingRewards => '[FA] Error loading rewards (Persian)';
 
   @override
-  String get failedToDeleteAccountE => 'Failed to delete account: \$e';
+  String get failedToDeleteAccountE =>
+      '[FA] Failed to delete account: \$e (Persian)';
 
   @override
-  String get invited1 => 'Invited';
+  String get invited1 => '[FA] Invited (Persian)';
 
   @override
-  String get noBranchesAvailable => 'No branches available';
+  String get noBranchesAvailable => '[FA] No branches available (Persian)';
 
   @override
-  String get errorError => 'Error: \$error';
+  String get errorError => '[FA] Error: \$error (Persian)';
 
   @override
-  String get noEvents => 'No events';
+  String get noEvents => '[FA] No events (Persian)';
 
   @override
-  String get gameCreatedSuccessfully => 'Game created successfully!';
+  String get gameCreatedSuccessfully =>
+      '[FA] Game created successfully! (Persian)';
 
   @override
-  String get add1 => 'Add';
+  String get add1 => '[FA] Add (Persian)';
 
   @override
-  String get creatorCreatorid => 'Creator: \$creatorId';
+  String get creatorCreatorid => '[FA] Creator: \$creatorId';
 
   @override
   String eventstarttimeEventendtime(Object endTime, Object startTime) {
-    return '$startTime - $endTime';
+    return '[FA] $startTime - $endTime (Persian)';
   }
 
   @override
-  String get allowPlaytime => 'Allow Playtime';
+  String get allowPlaytime => '[FA] Allow Playtime (Persian)';
 
   @override
-  String get clients => 'Clients';
+  String get clients => '[FA] Clients (Persian)';
 
   @override
-  String get noAmbassadorDataAvailable => 'No ambassador data available';
+  String get noAmbassadorDataAvailable =>
+      '[FA] No ambassador data available (Persian)';
 
   @override
   String get backgroundDeletedSuccessfully =>
-      'Background deleted successfully!';
+      '[FA] Background deleted successfully! (Persian)';
 
   @override
   String errorSnapshoterror(Object error) {
-    return 'Error: $error';
+    return '[FA] Error: $error (Persian)';
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => 'No analytics data available yet.';
+  String get noAnalyticsDataAvailableYet =>
+      '[FA] No analytics data available yet. (Persian)';
 
   @override
-  String get errorDeletingSlotE => 'Error deleting slot: \$e';
+  String errorDeletingSlotE(Object e) {
+    return 'خطأ في حذف الفترة: $e';
+  }
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Phone Booking Entry Screen - Coming Soon';
+      '[FA] Business Phone Booking Entry Screen - Coming Soon (Persian)';
 
   @override
-  String get verification => 'Verification';
+  String get verification => '[FA] Verification (Persian)';
 
   @override
-  String get copyLink => 'Copy Link';
+  String get copyLink => '[FA] Copy Link (Persian)';
 
   @override
-  String get dashboard1 => 'Dashboard';
+  String get dashboard1 => '[FA] Dashboard (Persian)';
 
   @override
-  String get manageChildAccounts => 'Manage Child Accounts';
+  String get manageChildAccounts => '[FA] Manage Child Accounts (Persian)';
 
   @override
-  String get grantConsent => 'Grant Consent';
+  String get grantConsent => '[FA] اعطای رضایت';
 
   @override
-  String get myProfile1 => 'My Profile';
+  String get myProfile1 => '[FA] My Profile (Persian)';
 
   @override
-  String get submit => 'Submit';
+  String get submit => '[FA] Submit (Persian)';
 
   @override
   String userLoguseremail(Object userEmail) {
-    return 'User: $userEmail';
+    return '[FA] User: $userEmail';
   }
 
   @override
-  String get emailNotifications => 'Email Notifications';
+  String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard => 'Ambassador Dashboard';
+  String get ambassadorDashboard => '[FA] Ambassador Dashboard (Persian)';
 
   @override
-  String get phoneBooking => 'Phone Booking';
+  String get phoneBooking => '[FA] Phone Booking (Persian)';
 
   @override
-  String get bookViaChat => 'Book via Chat';
+  String get bookViaChat => '[FA] رزرو با چت';
 
   @override
   String get error => 'خطا';
 
   @override
-  String get businessProfile => 'Business Profile';
+  String get businessProfile => '[FA] Business Profile (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Booking Entry Screen - Coming Soon';
+      '[FA] Business Booking Entry Screen - Coming Soon (Persian)';
 
   @override
-  String get createNewSurvey => 'Create New Survey';
+  String get createNewSurvey => '[FA] Create New Survey (Persian)';
 
   @override
-  String get backgroundRejected => 'Background rejected';
+  String get backgroundRejected => '[FA] Background rejected (Persian)';
 
   @override
-  String get noMediaSelected => 'No media selected';
+  String get noMediaSelected => '[FA] No media selected (Persian)';
 
   @override
-  String get syncToGoogle => 'Sync to Google';
+  String get syncToGoogle => '[FA] Sync to Google (Persian)';
 
   @override
-  String get virtualPlaytime => 'Virtual Playtime';
+  String get virtualPlaytime => '[FA] Virtual Playtime (Persian)';
 
   @override
-  String get colorContrastTesting => 'Color Contrast Testing';
+  String get colorContrastTesting => '[FA] Color Contrast Testing';
 
   @override
-  String get loginFailedE => 'Login failed: \$e';
+  String get loginFailedE => '[FA] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => 'Invitation sent successfully!';
+  String get invitationSentSuccessfully => '[FA] دعوت‌نامه با موفقیت ارسال شد!';
 
   @override
-  String get registering => 'Registering...';
+  String get registering => '[FA] Registering... (Persian)';
 
   @override
   String statusAppointmentstatusname(Object status) {
-    return 'Status: $status';
+    return '[FA] Status: $status (Persian)';
   }
 
   @override
-  String get home1 => 'Home';
+  String get home1 => '[FA] Home (Persian)';
 
   @override
-  String get errorSavingSettingsE => 'Error saving settings: \$e';
+  String get errorSavingSettingsE =>
+      '[FA] Error saving settings: \$e (Persian)';
 
   @override
-  String get appVersionAndInformation => 'App version and information';
+  String get appVersionAndInformation =>
+      '[FA] App version and information (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Subscription Entry Screen - Coming Soon';
+      '[FA] Business Subscription Entry Screen - Coming Soon (Persian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
-    return '$key: $value';
+    return '[FA] $key: $value (Persian)';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Your payment has been processed successfully.';
+      '[FA] Your payment has been processed successfully. (Persian)';
 
   @override
-  String get errorE => 'Error: \$e';
+  String get errorE => '[FA] Error: \$e (Persian)';
 
   @override
-  String get viewAll1 => 'View All';
+  String get viewAll1 => '[FA] View All (Persian)';
 
   @override
-  String get editSurveyComingSoon => 'Edit survey - Coming soon!';
+  String get editSurveyComingSoon =>
+      '[FA] Edit survey - Coming soon! (Persian)';
 
   @override
-  String get enterOtp => 'Enter OTP';
+  String get enterOtp => '[FA] کد OTP را وارد کنید';
 
   @override
-  String get payment => 'Payment';
+  String get payment => '[FA] Payment (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Automatically confirm new booking requests';
+      '[FA] Automatically confirm new booking requests (Persian)';
 
   @override
-  String get errorPickingVideoE => 'Error picking video: \$e';
+  String errorPickingVideoE(Object e) {
+    return 'خطأ في اختيار الفيديو: $e';
+  }
 
   @override
   String noRouteDefinedForSettingsname(Object settingsName) {
-    return 'No route defined for $settingsName';
+    return '[FA] No route defined for $settingsName (Persian)';
   }
 
   @override
   String get pleaseSignInToUploadABackground =>
-      'Please sign in to upload a background';
+      '[FA] Please sign in to upload a background (Persian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
-    return '$targetType: $targetId';
+    return '[FA] $targetType: $targetId';
   }
 
   @override
-  String get staffAvailability => 'Staff Availability';
+  String get staffAvailability => '[FA] Staff Availability (Persian)';
 
   @override
-  String get livePlaytime => 'Live Playtime';
+  String get livePlaytime => '[FA] Live Playtime (Persian)';
 
   @override
-  String get autoconfirmBookings => 'Auto-Confirm Bookings';
+  String get autoconfirmBookings => '[FA] Auto-Confirm Bookings (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Redirecting to Stripe checkout for Pro plan...';
+      '[FA] Redirecting to Stripe checkout for Pro plan... (Persian)';
 
   @override
-  String get exportAsCsv => 'Export as CSV';
+  String get exportAsCsv => '[FA] Export as CSV (Persian)';
 
   @override
   String get deleteFunctionalityComingSoon =>
-      'Delete functionality coming soon!';
+      '[FA] Delete functionality coming soon! (Persian)';
 
   @override
-  String get editClient => 'Edit Client';
+  String get editClient => '[FA] Edit Client (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to delete this message?';
+      '[FA] Are you sure you want to delete this message? (Persian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
-    return 'Referrals: $referrals';
+    return '[FA] Referrals: $referrals (Persian)';
   }
 
   @override
-  String get notAuthenticated => 'Not authenticated';
+  String get notAuthenticated => '[FA] Not authenticated';
 
   @override
   String get privacyRequestSentToYourParents =>
-      'Privacy request sent to your parents!';
+      '[FA] Privacy request sent to your parents! (Persian)';
 
   @override
-  String get clientDeletedSuccessfully => 'Client deleted successfully!';
+  String get clientDeletedSuccessfully =>
+      '[FA] Client deleted successfully! (Persian)';
 
   @override
-  String get failedToCancelSubscription => 'Failed to cancel subscription';
+  String get failedToCancelSubscription =>
+      '[FA] Failed to cancel subscription (Persian)';
 
   @override
-  String get allLanguages => 'All Languages';
+  String get allLanguages => '[FA] All Languages (Persian)';
 
   @override
-  String get slotDeletedSuccessfully => 'Slot deleted successfully';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Business Providers Entry Screen - Coming Soon';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Parents must approve before children can join';
-
-  @override
-  String get subscribeToPro1499mo => 'Subscribe to Pro (€14.99/mo)';
+  String get slotDeletedSuccessfully =>
+      '[FA] Slot deleted successfully (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Availability Entry Screen - Coming Soon';
+      '[FA] Business Providers Entry Screen - Coming Soon';
+
+  @override
+  String get REDACTED_TOKEN =>
+      '[FA] Parents must approve before children can join (Persian)';
+
+  @override
+  String get subscribeToPro1499mo =>
+      '[FA] Subscribe to Pro (€14.99/mo) (Persian)';
+
+  @override
+  String get REDACTED_TOKEN =>
+      '[FA] Business Availability Entry Screen - Coming Soon (Persian)';
 
   @override
   String appointmentsListlength(Object count) {
-    return 'Appointments: $count';
+    return '[FA] Appointments: $count (Persian)';
   }
 
   @override
-  String get clearFilters => 'Clear Filters';
+  String get clearFilters => '[FA] Clear Filters (Persian)';
 
   @override
-  String get submitBooking => 'Submit Booking';
+  String get submitBooking => '[FA] ارسال رزرو';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to cancel this appointment?';
+      '[FA] Are you sure you want to cancel this appointment? (Persian)';
 
   @override
-  String get noUpcomingBookings => 'No upcoming bookings';
+  String get noUpcomingBookings => '[FA] No upcoming bookings (Persian)';
 
   @override
-  String get goBack => 'Go Back';
+  String get goBack => '[FA] Go Back (Persian)';
 
   @override
-  String get setup => 'Setup';
+  String get setup => '[FA] Setup (Persian)';
 
   @override
-  String get inviteChild => 'Invite Child';
+  String get inviteChild => '[FA] دعوت کودک';
 
   @override
-  String get goToDashboard => 'Go to Dashboard';
+  String get goToDashboard => '[FA] Go to Dashboard (Persian)';
 
   @override
-  String get ambassadorQuotaDashboard => 'Ambassador Quota Dashboard';
+  String get ambassadorQuotaDashboard =>
+      '[FA] Ambassador Quota Dashboard (Persian)';
 
   @override
-  String get adminSettings => 'Admin Settings';
+  String get adminSettings => '[FA] Admin Settings';
 
   @override
-  String get referralCode => 'Referral Code';
+  String get referralCode => '[FA] Referral Code (Persian)';
 
   @override
   String adminLogadminemail(Object adminEmail) {
-    return 'Admin: $adminEmail';
+    return '[FA] Admin: $adminEmail';
   }
 
   @override
-  String get date => 'Date';
+  String get date => '[FA] Date (Persian)';
 
   @override
-  String get readOnly => 'Read Only';
+  String get readOnly => '[FA] فقط خواندنی';
 
   @override
-  String get bookingRequest => 'Booking Request';
+  String get bookingRequest => '[FA] درخواست رزرو';
 
   @override
-  String get advancedReporting => '• Advanced reporting';
+  String get advancedReporting => '[FA] • Advanced reporting (Persian)';
 
   @override
-  String get rooms => 'Rooms';
+  String get rooms => '[FA] Rooms (Persian)';
 
   @override
-  String get copiedToClipboard => 'Copied to clipboard';
+  String get copiedToClipboard => '[FA] Copied to clipboard (Persian)';
 
   @override
-  String get bookingConfirmed => 'Booking Confirmed';
+  String get bookingConfirmed => '[FA] رزرو تأیید شد';
 
   @override
-  String get sessionApproved => 'Session approved!';
+  String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => 'Client added successfully!';
+  String get clientAddedSuccessfully =>
+      '[FA] Client added successfully! (Persian)';
 
   @override
-  String get noNotifications => 'No notifications';
+  String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved => 'Background approved!';
+  String get backgroundApproved => '[FA] Background approved! (Persian)';
 
   @override
-  String get familySupport => 'Family Support';
+  String get familySupport => '[FA] Family Support (Persian)';
 
   @override
-  String get deletingAccount => 'Deleting account...';
+  String get deletingAccount => '[FA] Deleting account... (Persian)';
 
   @override
-  String get bookAppointment => 'Book Appointment';
+  String get bookAppointment => '[FA] رزرو نوبت';
 
   @override
   String get REDACTED_TOKEN =>
-      'Receive push notifications for new bookings';
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
-  String get delete1 => 'Delete';
+  String get delete1 => '[FA] Delete (Persian)';
 
   @override
-  String get sendBookingInvite => 'Send Booking Invite';
+  String get sendBookingInvite => '[FA] Send Booking Invite (Persian)';
 
   @override
-  String get text => 'Text';
+  String get text => '[FA] Text (Persian)';
 
   @override
-  String get manageSubscription => 'Manage Subscription';
+  String get manageSubscription => '[FA] Manage Subscription (Persian)';
 
   @override
-  String get requiresInstallFallback => 'Requires Install Fallback';
+  String get requiresInstallFallback => '[FA] نیاز به نصب دارد';
 
   @override
-  String get paymentConfirmation => 'Payment Confirmation';
+  String get paymentConfirmation => '[FA] Payment Confirmation (Persian)';
 
   @override
   String get promoAppliedYourNextBillIsFree =>
-      'Promo applied! Your next bill is free.';
+      '[FA] Promo applied! Your next bill is free. (Persian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
-    return 'Invitee: $inviteeId';
+    return 'المدعو: $inviteeId';
   }
 
   @override
-  String get errorLoadingSlots => 'Error loading slots';
+  String get errorLoadingSlots => '[FA] Error loading slots (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Allow other users to find and join this game';
+      '[FA] Allow other users to find and join this game (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Onboarding Screen - Coming Soon';
+      '[FA] Business Onboarding Screen - Coming Soon (Persian)';
 
   @override
-  String get activateBusinessProfile => 'Activate Business Profile';
+  String get activateBusinessProfile =>
+      '[FA] Activate Business Profile (Persian)';
 
   @override
-  String get contentNotFound => 'Content not found';
+  String get contentNotFound => '[FA] Content not found (Persian)';
 
   @override
   String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
-    return '$specialty\\n$contactInfo';
+    return '[FA] $specialty\\n$contactInfo (Persian)';
   }
 
   @override
-  String get rating => 'Rating';
+  String get rating => '[FA] Rating (Persian)';
 
   @override
-  String get messages => 'Messages';
+  String get messages => '[FA] Messages (Persian)';
 
   @override
-  String get errorEstimatingRecipientsE => 'Error estimating recipients: \$e';
+  String errorEstimatingRecipientsE(Object e) {
+    return 'خطأ في تقدير المستلمين: $e';
+  }
 
   @override
-  String get becomeAnAmbassador => 'Become an Ambassador';
+  String get becomeAnAmbassador => '[FA] Become an Ambassador (Persian)';
 
   @override
-  String get subscribeNow => 'Subscribe Now';
+  String get subscribeNow => '[FA] Subscribe Now (Persian)';
 
   @override
   String timeArgsslotformatcontext(Object time) {
-    return 'Time: $time';
+    return '[FA] Time: $time (Persian)';
   }
 
   @override
-  String get shareViaWhatsapp => 'Share via WhatsApp';
+  String get shareViaWhatsapp => '[FA] Share via WhatsApp (Persian)';
 
   @override
-  String get users1 => 'Users';
+  String get users1 => '[FA] Users (Persian)';
 
   @override
-  String get shareLink => 'Share Link';
+  String get shareLink => '[FA] Share Link (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to delete this provider?';
+      '[FA] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment => 'Delete Appointment';
+  String get deleteAppointment => '[FA] Delete Appointment (Persian)';
 
   @override
-  String get toggleAvailability => 'Toggle Availability';
+  String get toggleAvailability => '[FA] Toggle Availability (Persian)';
 
   @override
-  String get changePlan => 'Change Plan';
+  String get changePlan => '[FA] Change Plan (Persian)';
 
   @override
-  String get errorLoadingStaff => 'Error loading staff';
+  String get errorLoadingStaff => '[FA] Error loading staff (Persian)';
 
   @override
-  String get errorLoadingConfigurationE => 'Error loading configuration: \$e';
+  String errorLoadingConfigurationE(Object e) {
+    return 'خطأ في تحميل التكوين: $e';
+  }
 
   @override
   String get updateYourBusinessInformation =>
-      'Update your business information';
+      '[FA] Update your business information (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'No providers found. Add your first provider!';
+      '[FA] No providers found. Add your first provider!';
 
   @override
-  String get parentDashboard => 'Parent Dashboard';
+  String get parentDashboard => '[FA] Parent Dashboard (Persian)';
 
   @override
-  String get menu => 'Menu';
+  String get menu => 'منو';
 
   @override
-  String get studioBooking => 'Studio Booking';
+  String get studioBooking => '[FA] Studio Booking (Persian)';
 
   @override
-  String get about1 => 'About';
+  String get about1 => '[FA] About (Persian)';
 
   @override
-  String get multipleChoice => 'Multiple Choice';
+  String get multipleChoice => '[FA] Multiple Choice (Persian)';
 
   @override
   String REDACTED_TOKEN(Object date) {
-    return 'Date: $date';
+    return '[FA] Date: $date (Persian)';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Studio booking is only available on web';
+      '[FA] Studio booking is only available on web (Persian)';
 
   @override
-  String get errorLoadingBranchesE => 'Error loading branches: \$e';
+  String get errorLoadingBranchesE =>
+      '[FA] Error loading branches: \$e (Persian)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
-    return '\\uD83D\\uDCC5 $dateTime';
+    return '[FA] \\uD83D\\uDCC5 $dateTime (Persian)';
   }
 
   @override
   String appointmentInviteappointmentid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return 'دعوة الموعد: $appointmentId';
   }
 
   @override
-  String get none => 'None';
+  String get none => 'هیچ‌کدام';
 
   @override
-  String get failedToUpdateConsentE => 'Failed to update consent: \$e';
+  String get failedToUpdateConsentE =>
+      '[FA] Failed to update consent: \$e (Persian)';
 
   @override
-  String get welcome1 => 'Welcome';
+  String get welcome1 => '[FA] Welcome (Persian)';
 
   @override
-  String get failedToCreateSessionE => 'Failed to create session: \$e';
+  String get failedToCreateSessionE =>
+      '[FA] Failed to create session: \$e (Persian)';
 
   @override
-  String get inviteContact => 'Invite Contact';
+  String get inviteContact => '[FA] تماس دعوت';
 
   @override
-  String get surveyEditor => 'Survey Editor';
+  String get surveyEditor => '[FA] Survey Editor (Persian)';
 
   @override
   String get failedToStartBasicSubscriptionE =>
-      'Failed to start Basic subscription: \$e';
+      '[FA] Failed to start Basic subscription: \$e (Persian)';
 
   @override
-  String get mySchedule => 'My Schedule';
+  String get mySchedule => '[FA] My Schedule (Persian)';
 
   @override
-  String get studioDashboard => 'Studio Dashboard';
+  String get studioDashboard => '[FA] Studio Dashboard (Persian)';
 
   @override
-  String get editProfile => 'Edit Profile';
+  String get editProfile => 'تحرير الملف الشخصي';
 
   @override
-  String get logout1 => 'Logout';
+  String get logout1 => '[FA] Logout';
 
   @override
   String serviceServiceidNotSelected(Object service) {
-    return 'Service: $service';
+    return '[FA] Service: $service';
   }
 
   @override
-  String get settingsSavedSuccessfully => 'Settings saved successfully!';
+  String get settingsSavedSuccessfully =>
+      '[FA] Settings saved successfully! (Persian)';
 
   @override
-  String get linkCopiedToClipboard => 'Link copied to clipboard!';
+  String get linkCopiedToClipboard =>
+      '[FA] Link copied to clipboard! (Persian)';
 
   @override
-  String get accept1 => 'Accept';
+  String get accept1 => '[FA] Accept (Persian)';
 
   @override
-  String get noAvailableSlots => 'No available slots';
+  String get noAvailableSlots => '[FA] No available slots (Persian)';
 
   @override
-  String get makeGamePublic => 'Make Game Public';
+  String get makeGamePublic => '[FA] Make Game Public (Persian)';
 
   @override
   String REDACTED_TOKEN(Object category) {
-    return 'Permission $category updated to \$newValue';
+    return '[FA] Permission $category updated to \$newValue (Persian)';
   }
 
   @override
-  String get roomDeletedSuccessfully => 'Room deleted successfully!';
+  String get roomDeletedSuccessfully =>
+      '[FA] Room deleted successfully! (Persian)';
 
   @override
-  String get businessCalendar => 'Business Calendar';
+  String get businessCalendar => '[FA] Business Calendar (Persian)';
 
   @override
-  String get addAvailability => 'Add Availability';
+  String get addAvailability => '[FA] Add Availability (Persian)';
 
   @override
-  String get ambassadorOnboarding => 'Ambassador Onboarding';
+  String get ambassadorOnboarding => '[FA] Ambassador Onboarding (Persian)';
 
   @override
   String phoneProfileasyncphone(Object phone) {
-    return 'Phone: $phone';
+    return '[FA] Phone: $phone (Persian)';
   }
 
   @override
-  String get addNewRoom => 'Add New Room';
+  String get addNewRoom => '[FA] Add New Room (Persian)';
 
   @override
-  String get requireParentApproval => 'Require Parent Approval';
+  String get requireParentApproval => '[FA] Require Parent Approval (Persian)';
 
   @override
-  String get closed => 'Closed';
+  String get closed => '[FA] Closed (Persian)';
 
   @override
-  String get exportAsPdf => 'Export as PDF';
+  String get exportAsPdf => '[FA] Export as PDF (Persian)';
 
   @override
-  String get enableVibration => 'Enable Vibration';
+  String get enableVibration => '[FA] Enable Vibration (Persian)';
 
   @override
   String toAvailendformatcontext(Object endTime) {
-    return 'To: $endTime';
+    return '[FA] To: $endTime (Persian)';
   }
 
   @override
-  String get yourUpgradeCodeUpgradecode => 'Your upgrade code: \$upgradeCode';
+  String yourUpgradeCodeUpgradecode(Object upgradeCode) {
+    return '[FA] Your upgrade code: \$upgradeCode (Persian)';
+  }
 
   @override
-  String get requestPrivateSession => 'requestPrivateSession (TRANSLATE)';
+  String get requestPrivateSession => '[FA] درخواست جلسه خصوصی';
 
   @override
-  String get country => 'Country';
+  String get country => '[FA] Country (Persian)';
 
   @override
-  String get loginScreen => 'Login Screen';
+  String get loginScreen => '[FA] Login Screen';
 
   @override
   String staffArgsstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[FA] Staff: $staffName (Persian)';
   }
 
   @override
-  String get revokeConsent => 'Revoke Consent';
+  String get revokeConsent => '[FA] لغو رضایت';
 
   @override
-  String get settings1 => 'Settings';
+  String get settings1 => '[FA] Settings (Persian)';
 
   @override
-  String get cancel1 => 'Cancel';
+  String get cancel1 => '[FA] Cancel (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Subscription activated successfully!';
+      '[FA] Subscription activated successfully! (Persian)';
 
   @override
   String activityLogaction(Object action) {
-    return 'Activity: $action';
+    return '[FA] Activity: $action';
   }
 
   @override
-  String get broadcast => 'Broadcast';
+  String get broadcast => '[FA] Broadcast (Persian)';
 
   @override
-  String get noEventsScheduledThisWeek => 'No events scheduled this week';
+  String get noEventsScheduledThisWeek =>
+      '[FA] No events scheduled this week (Persian)';
 
   @override
-  String get googleCalendar => 'Google Calendar';
+  String get googleCalendar => '[FA] Google Calendar (Persian)';
 
   @override
-  String get sendInvite => 'Send Invite';
+  String get sendInvite => 'إرسال دعوة';
 
   @override
-  String get childDashboard => 'Child Dashboard';
+  String get childDashboard => '[FA] Child Dashboard (Persian)';
 
   @override
-  String get failedToUploadBackgroundE => 'Failed to upload background: \$e';
+  String get failedToUploadBackgroundE =>
+      '[FA] Failed to upload background: \$e (Persian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
-    return '$linkId...';
+    return '[FA] $linkId...';
   }
 
   @override
   String targetLogtargettypeLogtargetid(Object targetId, Object targetType) {
-    return 'Target: $targetType - $targetId';
+    return '[FA] Target: $targetType - $targetId';
   }
 
   @override
-  String get contextContextid => 'Context: \$contextId';
+  String get contextContextid => '[FA] Context: \$contextId';
 
   @override
-  String get noAppointments => 'No appointments';
+  String get noAppointments => '[FA] No appointments (Persian)';
 
   @override
-  String get unlimitedBookingsPerWeek => '• Unlimited bookings per week';
+  String get unlimitedBookingsPerWeek =>
+      '[FA] • Unlimited bookings per week (Persian)';
 
   @override
-  String errorDetailsLogerrortype(Object errorType) {
-    return 'Error Details: $errorType';
+  String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
+    return 'تفاصيل الخطأ: $logErrorType';
   }
 
   @override
-  String get scheduledAtScheduledat => 'Scheduled at: \$scheduledAt';
+  String get scheduledAtScheduledat =>
+      '[FA] Scheduled at: \$scheduledAt (Persian)';
 
   @override
-  String get selectStaff => 'Select Staff';
+  String get selectStaff => '[FA] انتخاب کارمند';
 
   @override
   String get REDACTED_TOKEN =>
-      'Subscription cancelled successfully';
+      '[FA] Subscription cancelled successfully (Persian)';
 
   @override
   String get pleaseLogInToViewYourProfile =>
-      'Please log in to view your profile.';
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment => 'Cancel Appointment';
+  String get cancelAppointment => '[FA] Cancel Appointment (Persian)';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
-    return 'Permissions - $childId';
+    return '[FA] Permissions - $childId';
   }
 
   @override
-  String get businessSignup => 'Business Signup';
+  String get businessSignup => '[FA] Business Signup (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Completion Screen - Coming Soon';
+      '[FA] Business Completion Screen - Coming Soon (Persian)';
 
   @override
-  String get createGame1 => 'Create Game';
+  String get createGame1 => '[FA] Create Game (Persian)';
 
   @override
   String valuetoint(Object value) {
-    return '$value';
+    return '[FA] $value (Persian)';
   }
 
   @override
-  String get pleaseEnterAPromoCode => 'Please enter a promo code';
+  String get pleaseEnterAPromoCode =>
+      '[FA] Please enter a promo code (Persian)';
 
   @override
-  String get errorLoadingAvailabilityE => 'Error loading availability: \$e';
+  String get errorLoadingAvailabilityE =>
+      '[FA] Error loading availability: \$e (Persian)';
 
   @override
-  String get parentalControls => 'Parental Controls';
+  String get parentalControls => '[FA] Parental Controls (Persian)';
 
   @override
-  String get editBusinessProfile => 'Edit Business Profile';
+  String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => 'Child linked successfully!';
+  String get childLinkedSuccessfully => '[FA] کودک با موفقیت متصل شد!';
 
   @override
-  String get create => 'Create';
+  String get create => '[FA] Create (Persian)';
 
   @override
-  String get noExternalMeetingsFound => 'No external meetings found.';
+  String get noExternalMeetingsFound =>
+      '[FA] No external meetings found. (Persian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[FA] Staff: $staffName (Persian)';
   }
 
   @override
   String get pleaseEnterAValidEmailAddress =>
-      'Please enter a valid email address';
+      '[FA] Please enter a valid email address';
 
   @override
-  String get schedulerScreen => 'Scheduler Screen';
+  String get schedulerScreen => '[FA] Scheduler Screen (Persian)';
 
   @override
-  String get clientUpdatedSuccessfully => 'Client updated successfully!';
+  String get clientUpdatedSuccessfully =>
+      '[FA] Client updated successfully! (Persian)';
 
   @override
-  String get surveyResponses => 'Survey Responses';
+  String get surveyResponses => '[FA] Survey Responses (Persian)';
 
   @override
-  String get syncToOutlook => 'Sync to Outlook';
+  String get syncToOutlook => '[FA] Sync to Outlook (Persian)';
 
   @override
-  String get saveChanges => 'Save Changes';
+  String get saveChanges => '[FA] Save Changes (Persian)';
 
   @override
-  String get pickTime => 'Pick Time';
+  String get pickTime => '[FA] Pick Time (Persian)';
 
   @override
   String registrationFailedEtostring(Object error) {
-    return 'Registration failed: $error';
+    return '[FA] Registration failed: $error (Persian)';
   }
 
   @override
-  String get analytics => 'Analytics';
+  String get analytics => '[FA] Analytics (Persian)';
 
   @override
-  String get errorLoadingEvents => 'Error loading events';
+  String get errorLoadingEvents => '[FA] Error loading events (Persian)';
 
   @override
-  String get errorLoadingOrganizations =>
-      'errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[FA] خطا در بارگذاری سازمان‌ها';
 
   @override
   String get businessLoginScreenComingSoon =>
-      'Business Login Screen - Coming Soon';
+      '[FA] Business Login Screen - Coming Soon';
 
   @override
-  String get success1 => 'Success';
+  String get success1 => '[FA] Success (Persian)';
 
   @override
   String appVersionLogappversion(Object appVersion) {
-    return 'App Version: $appVersion';
+    return '[FA] App Version: $appVersion';
   }
 
   @override
   String fromAvailstartformatcontext(Object startTime) {
-    return 'From: $startTime';
+    return '[FA] From: $startTime (Persian)';
   }
 
   @override
-  String get readWrite => 'Read & Write';
+  String get readWrite => '[FA] خواندن و نوشتن';
 
   @override
   String get REDACTED_TOKEN =>
-      'Redirecting to Stripe checkout for Basic plan...';
+      '[FA] Redirecting to Stripe checkout for Basic plan... (Persian)';
 
   @override
-  String get errorSavingConfigurationE => 'Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[FA] Error saving configuration: \$e';
 
   @override
-  String get pickDate => 'Pick Date';
+  String get pickDate => '[FA] انتخاب تاریخ';
 
   @override
-  String get chatBooking => 'Chat Booking';
+  String get chatBooking => '[FA] رزرو از طریق چت';
 
   @override
-  String get noQuestionsAdded => 'No questions added';
+  String get noQuestionsAdded => '[FA] No questions added (Persian)';
 
   @override
   String severityLogseverityname(Object severity) {
-    return 'Severity: $severity';
+    return '[FA] Severity: $severity';
   }
 
   @override
-  String get markAsPaid => 'Mark as Paid';
+  String get markAsPaid => '[FA] Mark as Paid';
 
   @override
-  String get typeOpenCall => 'Type: Open Call';
+  String get typeOpenCall => '[FA] Type: Open Call (Persian)';
 
   @override
   String appointmentAppointmentid(Object appointmentId) {
-    return 'Appointment $appointmentId';
+    return '[FA] Appointment $appointmentId';
   }
 
   @override
-  String statusInvitestatusname(Object status) {
-    return 'Status: $status';
+  String statusInvitestatusname(Object inviteStatusName, Object status) {
+    return 'الحالة: $inviteStatusName';
   }
 
   @override
-  String get businessLogin => 'Business Login';
+  String get businessLogin => '[FA] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => 'Invoice created successfully!';
+  String get invoiceCreatedSuccessfully =>
+      '[FA] Invoice created successfully! (Persian)';
 
   @override
-  String get noTimeSeriesDataAvailable => 'No time series data available';
+  String get noTimeSeriesDataAvailable =>
+      '[FA] No time series data available (Persian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
-    return 'Subscribe to $planName';
+    return '[FA] Subscribe to $planName';
   }
 
   @override
   String REDACTED_TOKEN(Object timestamp) {
-    return 'Timestamp: $timestamp';
+    return '[FA] Timestamp: $timestamp';
   }
 
   @override
   String get failedToSendPrivacyRequestE =>
-      'Failed to send privacy request: \$e';
+      '[FA] Failed to send privacy request: \$e (Persian)';
 
   @override
-  String get chooseYourPlan => 'Choose Your Plan';
+  String get chooseYourPlan => '[FA] Choose Your Plan (Persian)';
 
   @override
-  String get playtimeManagement => 'Playtime Management';
+  String get playtimeManagement => '[FA] Playtime Management (Persian)';
 
   @override
-  String get availability => 'Availability';
+  String get availability => '[FA] Availability (Persian)';
 
   @override
-  String get eventCreated => 'Event created';
+  String get eventCreated => '[FA] Event created (Persian)';
 
   @override
-  String get subscribeToBasic499mo => 'Subscribe to Basic (€4.99/mo)';
+  String get subscribeToBasic499mo =>
+      '[FA] Subscribe to Basic (€4.99/mo) (Persian)';
 
   @override
-  String get completion => 'Completion';
+  String get completion => '[FA] Completion (Persian)';
 
   @override
-  String get supportTicketSubmitted => 'Support ticket submitted';
+  String get supportTicketSubmitted =>
+      '[FA] Support ticket submitted (Persian)';
 
   @override
-  String get monetizationSettings => 'Monetization Settings';
+  String get monetizationSettings => '[FA] Monetization Settings (Persian)';
 
   @override
-  String get noBookingsFound => 'No bookings found';
+  String get noBookingsFound => '[FA] هیچ رزروی یافت نشد';
 
   @override
-  String get admin => 'Admin';
+  String get admin => '[FA] Admin';
 
   @override
-  String get deleteSurvey => 'Delete Survey';
+  String get deleteSurvey => '[FA] Delete Survey (Persian)';
 
   @override
-  String get gameApprovedSuccessfully => 'Game approved successfully!';
+  String get gameApprovedSuccessfully =>
+      '[FA] Game approved successfully! (Persian)';
 
   @override
   String get errorLoadingPermissionsError =>
-      'Error loading permissions: \$error';
+      '[FA] Error loading permissions: \$error (Persian)';
 
   @override
-  String get referrals => 'Referrals';
+  String get referrals => '[FA] Referrals (Persian)';
 
   @override
-  String get crm => 'CRM';
+  String get crm => '[FA] CRM (Persian)';
 
   @override
-  String get gameRejected => 'Game rejected';
+  String get gameRejected => '[FA] Game rejected (Persian)';
 
   @override
-  String get appointments => 'Appointments';
+  String get appointments => '[FA] Appointments (Persian)';
 
   @override
-  String get onboardingScreen => 'Onboarding Screen';
+  String get onboardingScreen => '[FA] Onboarding Screen (Persian)';
 
   @override
-  String get welcomeToYourStudio => 'Welcome to your studio';
+  String get welcomeToYourStudio => '[FA] Welcome to your studio (Persian)';
 
   @override
-  String get update => 'Update';
+  String get update => '[FA] Update (Persian)';
 
   @override
-  String get retry1 => 'Retry';
+  String get retry1 => '[FA] Retry (Persian)';
 
   @override
-  String get booking => 'Booking';
+  String get booking => '[FA] Booking (Persian)';
 
   @override
-  String get parentalSettings => 'Parental Settings';
+  String get parentalSettings => '[FA] Parental Settings (Persian)';
 
   @override
-  String get language => 'Language';
+  String get language => '[FA] Language (Persian)';
 
   @override
-  String get deleteSlot => 'Delete Slot';
+  String get deleteSlot => '[FA] Delete Slot (Persian)';
 
   @override
-  String get organizations => 'organizations (TRANSLATE)';
+  String get organizations => 'سازمان‌ها';
 
   @override
   String get configurationSavedSuccessfully =>
-      'Configuration saved successfully!';
+      '[FA] Configuration saved successfully!';
 
   @override
-  String get createNewGame => 'Create New Game';
+  String get createNewGame => '[FA] Create New Game (Persian)';
 
   @override
-  String get next1 => 'Next';
+  String get next1 => '[FA] Next (Persian)';
 
   @override
   String get backgroundUploadedSuccessfully =>
-      'Background uploaded successfully!';
+      '[FA] Background uploaded successfully! (Persian)';
 
   @override
-  String get noAppointmentRequestsFound => 'No appointment requests found.';
+  String get noAppointmentRequestsFound =>
+      '[FA] No appointment requests found. (Persian)';
 
   @override
-  String get pleaseSignInToCreateASession =>
-      'Please sign in to create a session';
+  String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => 'Restrict mature content';
+  String get restrictMatureContent => '[FA] Restrict mature content (Persian)';
 
   @override
-  String get ambassadors => 'Ambassadors';
+  String get ambassadors => '[FA] Ambassadors (Persian)';
 
   @override
-  String get smsNotifications => 'SMS Notifications';
+  String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled => 'Payment was cancelled';
+  String get paymentWasCancelled => '[FA] Payment was cancelled (Persian)';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => '[FA] Clear All (Persian)';
 
   @override
-  String get viewDetails => 'View Details';
+  String get viewDetails => '[FA] View Details (Persian)';
 
   @override
-  String get notifications1 => 'Notifications';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Live session scheduled! Waiting for parent approval...';
-
-  @override
-  String get failedToCreateGameE => 'Failed to create game: \$e';
-
-  @override
-  String get noChartDataAvailable => 'No chart data available';
-
-  @override
-  String get phonebasedBookingSystem => '• Phone-based booking system';
-
-  @override
-  String get enableNotifications1 => 'Enable Notifications';
-
-  @override
-  String get invoices => 'Invoices';
+  String get notifications1 => 'الإشعارات';
 
   @override
   String get REDACTED_TOKEN =>
-      'Please activate your business profile to continue.';
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+
+  @override
+  String get failedToCreateGameE => '[FA] Failed to create game: \$e (Persian)';
+
+  @override
+  String get noChartDataAvailable => '[FA] No chart data available (Persian)';
+
+  @override
+  String get phonebasedBookingSystem =>
+      '[FA] • Phone-based booking system (Persian)';
+
+  @override
+  String get enableNotifications1 => 'تفعيل الإشعارات';
+
+  @override
+  String get invoices => '[FA] Invoices (Persian)';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
-    return 'Scheduled at: $scheduledAt';
+    return '[FA] Scheduled at: $scheduledAt (Persian)';
   }
 
   @override
   String REDACTED_TOKEN(Object duration) {
-    return 'Duration: $duration minutes';
+    return '[FA] Duration: $duration minutes (Persian)';
   }
 
   @override
-  String get tryAgain => 'Try Again';
+  String get tryAgain => '[FA] Try Again (Persian)';
 
   @override
-  String get deleteBackground => 'Delete Background';
+  String get deleteBackground => '[FA] Delete Background (Persian)';
 
   @override
   String currentTierTiertouppercase(Object tier) {
-    return 'Current Tier: $tier';
+    return '[FA] Current Tier: $tier (Persian)';
   }
 
   @override
-  String get iDoNotConsent => 'I Do Not Consent';
+  String get iDoNotConsent => '[FA] I Do Not Consent';
 
   @override
   String get REDACTED_TOKEN =>
-      'No clients found. Add your first client!';
+      '[FA] No clients found. Add your first client! (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Settings dialog will be implemented here.';
+      '[FA] Settings dialog will be implemented here.';
 
   @override
-  String get groupGroupid => 'Group: \$groupId';
+  String get groupGroupid => '[FA] Group: \$groupId';
 
   @override
-  String get appointmentRequests => 'Appointment Requests';
+  String get appointmentRequests => '[FA] Appointment Requests (Persian)';
 
   @override
-  String get forward => 'Forward';
+  String get forward => '[FA] Forward (Persian)';
 
   @override
-  String get roomAddedSuccessfully => 'Room added successfully!';
+  String get roomAddedSuccessfully => '[FA] Room added successfully! (Persian)';
 
   @override
-  String get option => '• \$option';
+  String get option => '[FA] • \$option (Persian)';
 
   @override
   String responseIndex1(Object number) {
-    return 'Response #$number';
+    return '[FA] Response #$number (Persian)';
   }
 
   @override
-  String get crmDashboardWithAnalytics => '• CRM dashboard with analytics';
+  String get crmDashboardWithAnalytics =>
+      '[FA] • CRM dashboard with analytics (Persian)';
 
   @override
-  String get contentLibrary1 => 'Content Library';
+  String get contentLibrary1 => '[FA] Content Library (Persian)';
 
   @override
-  String get reply => 'Reply';
+  String get reply => '[FA] Reply (Persian)';
 
   @override
-  String get subscriptionManagement => 'Subscription Management';
+  String get subscriptionManagement => '[FA] Subscription Management (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Monetization settings will be implemented here';
+      '[FA] Monetization settings will be implemented here (Persian)';
 
   @override
-  String get failedToApplyPromoCodeE => 'Failed to apply promo code: \$e';
+  String get failedToApplyPromoCodeE =>
+      '[FA] Failed to apply promo code: \$e (Persian)';
 
   @override
-  String get editProvider => 'Edit Provider';
+  String get editProvider => '[FA] Edit Provider';
 
   @override
-  String get localizationContribution => 'Localization Contribution';
+  String get localizationContribution =>
+      '[FA] Localization Contribution (Persian)';
 
   @override
-  String get parentalConsent => 'Parental Consent';
+  String get parentalConsent => '[FA] Parental Consent (Persian)';
 
   @override
   String get businessSignupScreenComingSoon =>
-      'Business Signup Screen - Coming Soon';
+      '[FA] Business Signup Screen - Coming Soon (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Are you sure you want to delete this appointment?';
+      '[FA] Are you sure you want to delete this appointment? (Persian)';
 
   @override
-  String get syncAppointment => 'Sync Appointment';
+  String get syncAppointment => '[FA] Sync Appointment (Persian)';
 
   @override
-  String get iConsent => 'I Consent';
+  String get iConsent => '[FA] I Consent (Persian)';
 
   @override
-  String get sessionRejected => 'Session rejected';
+  String get sessionRejected => 'تم رفض الجلسة';
 
   @override
   String get businessSetupScreenComingSoon =>
-      'Business Setup Screen - Coming Soon';
+      '[FA] Business Setup Screen - Coming Soon (Persian)';
 
   @override
-  String get edit1 => 'Edit';
+  String get edit1 => '[FA] Edit (Persian)';
 
   @override
-  String get noEventsScheduledThisMonth => 'No events scheduled this month';
+  String get noEventsScheduledThisMonth =>
+      '[FA] No events scheduled this month (Persian)';
 
   @override
-  String get businessDashboard => 'Business Dashboard';
+  String get businessDashboard => '[FA] داشبورد کسب‌وکار';
 
   @override
-  String get noMessagesFound => 'No messages found.';
+  String get noMessagesFound => '[FA] No messages found. (Persian)';
 
   @override
   String staffStaffidNotSelected(Object staff) {
-    return 'Staff: $staff';
+    return '[FA] Staff: $staff';
   }
 
   @override
-  String get manageStaffAvailability => 'Manage Staff Availability';
+  String get manageStaffAvailability =>
+      '[FA] Manage Staff Availability (Persian)';
 
   @override
-  String get noMissingTranslations => 'No missing translations';
+  String get noMissingTranslations => '[FA] No missing translations (Persian)';
 
   @override
-  String get skip => 'Skip';
+  String get skip => '[FA] Skip (Persian)';
 
   @override
-  String get meetingIdMeetingid => 'Meeting ID: \$meetingId';
+  String meetingIdMeetingid(Object meetingId) {
+    return 'معرف الاجتماع: $meetingId';
+  }
 
   @override
-  String get noUsers => 'noUsers (TRANSLATE)';
+  String get noUsers => '[FA] کاربری وجود ندارد';
 
   @override
-  String get errorLoadingReferralCode => 'Error loading referral code';
+  String get errorLoadingReferralCode =>
+      '[FA] Error loading referral code (Persian)';
 
   @override
-  String get allCountries => 'All Countries';
+  String get allCountries => '[FA] All Countries (Persian)';
 
   @override
-  String get deleteGame => 'Delete Game';
+  String get deleteGame => '[FA] Delete Game (Persian)';
 
   @override
-  String get staffManagementTools => '• Staff management tools';
+  String get staffManagementTools => '[FA] • Staff management tools (Persian)';
 
   @override
-  String get deleteMessage => 'Delete Message';
+  String get deleteMessage => '[FA] Delete Message (Persian)';
 
   @override
   String get REDACTED_TOKEN =>
-      'Receive booking notifications via SMS';
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
-  String get changeRole => 'changeRole (TRANSLATE)';
+  String get changeRole => '[FA] تغییر نقش';
 
   @override
   String REDACTED_TOKEN(Object error) {
-    return 'Error loading bookings: $error';
+    return 'خطأ في تحميل لقطة الحجوزات: $error';
   }
 
   @override
-  String get openingCustomerPortal => 'Opening customer portal...';
+  String get openingCustomerPortal =>
+      '[FA] Opening customer portal... (Persian)';
 
   @override
-  String get signOut => 'Sign Out';
+  String get signOut => 'خروج';
 
   @override
   String nameProfilename(Object name) {
-    return 'Name: $name';
+    return '[FA] Name: $name (Persian)';
   }
 
   @override
   String get REDACTED_TOKEN =>
-      'Business Profile Entry Screen - Coming Soon';
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness => 'Upgrade to Business';
+  String get upgradeToBusiness => '[FA] Upgrade to Business (Persian)';
 
   @override
-  String get apply => 'Apply';
+  String get apply => 'تطبيق';
 
   @override
-  String get errorLoadingSubscriptionError =>
-      'Error loading subscription: \$error';
+  String errorLoadingSubscriptionError(Object error) {
+    return 'خطأ في تحميل الاشتراك: $error';
+  }
 
   @override
-  String get errorLoadingUsers => 'errorLoadingUsers (TRANSLATE)';
+  String get errorLoadingUsers => 'خطأ في تحميل المستخدمين';
 
   @override
-  String get verify => 'Verify';
+  String get verify => 'التحقق';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'الاشتراك';
 
   @override
-  String get deleteMyAccount => 'Delete My Account';
-
-  @override
-  String get REDACTED_TOKEN =>
-      'Business Appointments Entry Screen - Coming Soon';
-
-  @override
-  String get viewResponses => 'View Responses';
-
-  @override
-  String get businessWelcomeScreenComingSoon =>
-      'Business Welcome Screen - Coming Soon';
-
-  @override
-  String get failedToOpenCustomerPortalE =>
-      'Failed to open customer portal: \$e';
-
-  @override
-  String get continueText => 'Continue';
-
-  @override
-  String get close1 => 'Close';
-
-  @override
-  String get confirm1 => 'Confirm';
-
-  @override
-  String get externalMeetings => 'External Meetings';
-
-  @override
-  String get approve => 'Approve';
+  String get deleteMyAccount => 'حذف حسابي';
 
   @override
   String get REDACTED_TOKEN =>
-      'No invoices found. Create your first invoice!';
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get viewResponses => '[FA] View Responses (Persian)';
 
   @override
-  String get login1 => 'Login';
+  String get businessWelcomeScreenComingSoon => 'شاشة ترحيب الأعمال - قريباً';
 
   @override
-  String get adminOverviewGoesHere => 'Admin overview goes here';
+  String failedToOpenCustomerPortalE(Object e) {
+    return 'فشل في فتح بوابة العميل: $e';
+  }
 
   @override
-  String get loadingCheckout => 'Loading checkout...';
+  String get continueText => 'متابعة';
+
+  @override
+  String get close1 => 'إغلاق';
+
+  @override
+  String get confirm1 => 'تأكيد';
+
+  @override
+  String get externalMeetings => 'الاجتماعات الخارجية';
+
+  @override
+  String get approve => 'موافقة';
+
+  @override
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+
+  @override
+  String get subscribe => 'اشتراك';
+
+  @override
+  String get login1 => 'تسجيل الدخول';
+
+  @override
+  String get adminOverviewGoesHere => 'نظرة عامة على المسؤول هنا';
+
+  @override
+  String get loadingCheckout => 'جار تحميل الدفع...';
 }
