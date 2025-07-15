@@ -50,7 +50,7 @@ class BusinessSubscriptionService {
       } else {
         throw Exception('Could not launch checkout URL');
       }
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to start subscription: $e');
     }
   }
@@ -65,7 +65,7 @@ class BusinessSubscriptionService {
       } else {
         throw Exception('Could not launch customer portal URL');
       }
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to open customer portal: $e');
     }
   }
@@ -114,7 +114,7 @@ class BusinessSubscriptionService {
         'currentUses': FieldValue.increment(1),
         'updatedAt': DateTime.now().toIso8601String(),
       });
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to apply promo code: $e');
     }
   }
@@ -133,7 +133,7 @@ class BusinessSubscriptionService {
       });
 
       return result.data['sessionId'] as String;
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to create checkout session: $e');
     }
   }
@@ -145,7 +145,7 @@ class BusinessSubscriptionService {
       result = await callable.call({});
 
       return result.data['url'] as String;
-    } catch (e) {e) {
+    } catch (e) { {
       throw Exception('Failed to create customer portal session: $e');
     }
   }
@@ -177,7 +177,7 @@ class BusinessSubscriptionService {
       }
 
       return promoCode;
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error validating promo code: $e');
       return null;
     }
@@ -201,7 +201,7 @@ class BusinessSubscriptionService {
       data = doc.docs.first.data();
       data['id'] = doc.docs.first.id; // Add the document ID to the data
       return BusinessSubscription.fromJson(data);
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error fetching subscription: $e');
       return null;
     }
@@ -226,7 +226,7 @@ class BusinessSubscriptionService {
       return snap.docs
           .map((doc) => Invoice.fromJson(doc.data()))
           .toList();
-    } catch (e) {e) {
+    } catch (e) { {
       // Removed debug print: debugPrint('Error fetching invoices: $e');
       return [];
     }

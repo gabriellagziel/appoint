@@ -29,7 +29,7 @@ class BusinessAnalyticsService {
           .map((e) => TimeSeriesPoint(date: e.key, count: e.value))
           .toList()
         ..sort((a, final b) => a.date.compareTo(b.date));
-    } catch (e) {e) {
+    } catch (e) { {
       // Return sample data when offline or on error
       now = DateTime.now();
       return List.generate(7, (i) => TimeSeriesPoint(
@@ -49,7 +49,7 @@ class BusinessAnalyticsService {
           .map((e) =>
               ServiceDistribution(service: e.key, bookings: e.value),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) { {
       return [
         ServiceDistribution(service: 'Hair Cut', bookings: 20),
         ServiceDistribution(service: 'Color', bookings: 15),
@@ -71,7 +71,7 @@ class BusinessAnalyticsService {
       return totals.entries
           .map((e) => RevenueByStaff(staff: e.key, revenue: e.value))
           .toList();
-    } catch (e) {e) {
+    } catch (e) { {
       return [
         RevenueByStaff(staff: 'Alice', revenue: 1200),
         RevenueByStaff(staff: 'Bob', revenue: 950),

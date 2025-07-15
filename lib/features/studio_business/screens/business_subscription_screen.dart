@@ -43,7 +43,7 @@ class _BusinessSubscriptionScreenState
           ),
         );
       }
-    } catch (e) {e) {
+    } catch (e) { {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -73,7 +73,7 @@ class _BusinessSubscriptionScreenState
           ),
         );
       }
-    } catch (e) {e) {
+    } catch (e) { {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -115,7 +115,7 @@ class _BusinessSubscriptionScreenState
           ),
         );
       }
-    } catch (e) {e) {
+    } catch (e) { {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -143,7 +143,7 @@ class _BusinessSubscriptionScreenState
           ),
         );
       }
-    } catch (e) {e) {
+    } catch (e) { {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
