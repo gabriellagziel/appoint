@@ -13,7 +13,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final adminServiceProvider = Provider<AdminService>((ref) => AdminService());
 
 /// Provider for the broadcast service
-final broadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());
+final adminBroadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());
 
 /// Provider to check if current user has admin privileges
 final isAdminProvider = FutureProvider<bool>((ref) async {

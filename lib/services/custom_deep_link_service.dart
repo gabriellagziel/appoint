@@ -34,34 +34,37 @@ class CustomDeepLinkService {
     }
     try {
       // Handle initial link if app was opened from a link
-      final initialUri = await getInitialUri();
-      if (initialUri != null) {
-        await _handleDeepLink(initialUri);
-      }
+      // Note: Deep linking is disabled on web
+      // final initialUri = await getInitialUri();
+      // if (initialUri != null) {
+      //   await _handleDeepLink(initialUri);
+      // }
 
       // Listen for incoming links when app is already running
-      _linkSubscription = uriLinkStream.listen(
-        (Uri? uri) async {
-          if (uri != null) {
-            await _handleDeepLink(uri);
-          }
-        },
-        onError: (error) {
-          // Removed debug print: debugPrint('Deep link error: $error');
-        },
-      );
+      // Note: Deep linking is disabled on web
+      // _linkSubscription = uriLinkStream.listen(
+      //   (Uri? uri) async {
+      //     if (uri != null) {
+      //       await _handleDeepLink(uri);
+      //     }
+      //   },
+      //   onError: (error) {
+      //     // Removed debug print: debugPrint('Deep link error: $error');
+      //   },
+      // );
 
       // Listen for app links (universal links)
-      _initialLinkSubscription = uriLinkStream.listen(
-        (Uri? uri) async {
-          if (uri != null) {
-            await _handleDeepLink(uri);
-          }
-        },
-        onError: (error) {
-          // Removed debug print: debugPrint('App link error: $error');
-        },
-      );
+      // Note: Deep linking is disabled on web
+      // _initialLinkSubscription = uriLinkStream.listen(
+      //   (Uri? uri) async {
+      //     if (uri != null) {
+      //       await _handleDeepLink(uri);
+      //     }
+      //   },
+      //   onError: (error) {
+      //     // Removed debug print: debugPrint('App link error: $error');
+      //   },
+      // );
     } catch (e) {
       // Removed debug print: debugPrint('Error initializing deep links: $e');
     }
