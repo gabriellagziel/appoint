@@ -21,21 +21,10 @@ android {
 
     signingConfigs {
         create("release") {
-            val keystorePropertiesFile = rootProject.file("key.properties")
-            if (keystorePropertiesFile.exists()) {
-                val keystoreProperties = java.util.Properties()
-                keystoreProperties.load(java.io.FileInputStream(keystorePropertiesFile))
-                keyAlias = keystoreProperties["keyAlias"] as String?
-                keyPassword = keystoreProperties["keyPassword"] as String?
-                storeFile = keystoreProperties["storeFile"]?.let { file(it) }
-                storePassword = keystoreProperties["storePassword"] as String?
-            } else {
-                // Fallback for CI/CD
-                keyAlias = System.getenv("KEY_ALIAS") ?: "release"
-                keyPassword = System.getenv("KEY_PASSWORD") ?: ""
-                storeFile = System.getenv("STORE_FILE")?.let { file(it) } ?: file("upload-keystore.jks")
-                storePassword = System.getenv("STORE_PASSWORD") ?: ""
-            }
+            keyAlias = System.getenv("KEY_ALIAS") ?: "release"
+            keyPassword = System.getenv("KEY_PASSWORD") ?: ""
+            storeFile = System.getenv("STORE_FILE")?.let { file(it) } ?: file("debug.keystore")
+            storePassword = System.getenv("STORE_PASSWORD") ?: ""
         }
     }
 
@@ -45,7 +34,6 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
-        multiDexEnabled = true
     }
 
     buildTypes {
@@ -56,18 +44,6 @@ android {
         }
         debug {
             signingConfig = signingConfigs.getByName("debug")
-        }
-    }
-
-    bundle {
-        language {
-            enableSplit = false
-        }
-        density {
-            enableSplit = true
-        }
-        abi {
-            enableSplit = true
         }
     }
 }
