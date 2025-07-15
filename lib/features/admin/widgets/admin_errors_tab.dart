@@ -91,7 +91,7 @@ class AdminErrorsTab extends ConsumerWidget {
       context: context,
       builder: (context) => AlertDialog(
         title: Text(
-            final log = = null ? 'Resolve Error' : 'Resolve Error: ${log.errorType}'),
+            log == null ? 'Resolve Error' : 'Resolve Error: ${log.errorType}'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [

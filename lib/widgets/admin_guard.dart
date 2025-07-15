@@ -17,7 +17,7 @@ class AdminGuard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    isAdmin = ref.watch(isAdminProvider);
+    final isAdmin = ref.watch(isAdminProvider);
 
     return isAdmin.when(
       data: (hasAdminAccess) {
