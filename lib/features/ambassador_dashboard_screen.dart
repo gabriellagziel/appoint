@@ -51,7 +51,7 @@ class _AmbassadorDashboardScreenState
         _branches = branches;
         _isLoadingBranches = false;
       });
-    } catch (e) { {
+    } catch (e) {
       setState(() {
         _isLoadingBranches = false;
       });

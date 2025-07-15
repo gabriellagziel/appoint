@@ -48,7 +48,7 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
               LatLng(position.latitude, position.longitude),),);
         }
       }
-    } catch (e) { {
+    } catch (e) {
       // Removed debug print: debugPrint('Error loading initial data: $e');
     }
   }

@@ -258,7 +258,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
           const SnackBar(content: Text('Client added successfully!')),
         );
       }
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -299,7 +299,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
           const SnackBar(content: Text('Client updated successfully!')),
         );
       }
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
@@ -324,7 +324,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
           const SnackBar(content: Text('Client deleted successfully!')),
         );
       }
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
