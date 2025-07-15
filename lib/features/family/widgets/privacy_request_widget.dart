@@ -59,14 +59,14 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to send privacy request: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
-    } finally {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to send privacy request: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
+    finally {
       if (mounted) {
         setState(() {
           _isLoading = false;
