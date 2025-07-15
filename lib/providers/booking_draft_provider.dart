@@ -86,7 +86,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
                 .toList() ??
             [];
 
-        final state = state.copyWith(chatMessages: messages);
+        state = state.copyWith(chatMessages: messages);
       }
     });
 
@@ -98,7 +98,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
         final isOtherUserTyping =
             typingUsers.isNotEmpty && !typingUsers.contains(currentUserId);
 
-        final state = state.copyWith(isOtherUserTyping: isOtherUserTyping);
+        state = state.copyWith(isOtherUserTyping: isOtherUserTyping);
       }
     });
   }
@@ -197,7 +197,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
       return message;
     }).toList();
 
-    final state = state.copyWith(chatMessages: updatedMessages);
+    state = state.copyWith(chatMessages: updatedMessages);
 
     // Update Firestore
     final chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
@@ -210,7 +210,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
 
   Future<void> _advanceFlow(String userInput) async {
     if (state.type == null) {
-      final state = state.copyWith(type: userInput);
+      state = state.copyWith(type: userInput);
       addBotMessage('Great. Which date works for you? (YYYY-MM-DD)');
     } else if (state.date == null) {
       // parse date from user input
@@ -221,7 +221,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
         parsedDate = null;
       }
       if (parsedDate != null) {
-        final state = state.copyWith(date: parsedDate);
+        state = state.copyWith(date: parsedDate);
         addBotMessage('At what time? (e.g. 14:00)');
       } else {
         addBotMessage(
@@ -229,10 +229,10 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
       }
     } else if (state.time == null) {
       // assume valid time format
-      final state = state.copyWith(time: userInput);
+      state = state.copyWith(time: userInput);
       addBotMessage('Any notes to add?');
     } else if (state.notes == null) {
-      final state = state.copyWith(notes: userInput);
+              state = state.copyWith(notes: userInput);
       final summary = 'Here is your summary:\n'
           'Type: ${state.type}\n'
           'Date: ${state.date}\n'
