@@ -824,7 +824,5 @@
   "readOnly": "صرف پڑھنے کے لیے",
   "readWrite": "پڑھنے اور لکھنے کی اجازت",
   "permissionUpdated": "اجازت {category} کو {newValue} پر اپ ڈیٹ کیا گیا",
-  "failedToUpdatePermission": "اجازت کو اپ ڈیٹ کرنے میں ناکامی: {error}",
-  "adminBroadcast": "ایڈمن نشریات",
-  "adminScreenTBD": "ایڈمن اسکرین - تیار ہونا باقی ہے"
+  "failedToUpdatePermission": "اجازت کو اپ ڈیٹ کرنے میں ناکامی: {error}"
 }

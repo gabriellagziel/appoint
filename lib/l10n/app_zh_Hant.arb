@@ -824,7 +824,5 @@
   "readOnly": "僅讀",
   "readWrite": "可讀寫",
   "permissionUpdated": "權限 {category} 已更新為 {newValue}",
-  "failedToUpdatePermission": "更新權限失敗：{error}",
-  "adminBroadcast": "管理員廣播",
-  "adminScreenTBD": "管理員畫面 – 開發中"
+  "failedToUpdatePermission": "更新權限失敗：{error}"
 }
