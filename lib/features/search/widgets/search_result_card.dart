@@ -260,20 +260,20 @@ class SearchResultCard extends StatelessWidget {
 
     switch (result.type) {
       case 'business':
-        final iconData = Icons.visibility;
-        final tooltip = 'View Business';
+        iconData = Icons.visibility;
+        tooltip = 'View Business';
         break;
       case 'service':
-        final iconData = Icons.book_online;
-        final tooltip = 'Book Service';
+        iconData = Icons.book_online;
+        tooltip = 'Book Service';
         break;
       case 'user':
-        final iconData = Icons.person_add;
-        final tooltip = 'View Profile';
+        iconData = Icons.person_add;
+        tooltip = 'View Profile';
         break;
       default:
-        final iconData = Icons.arrow_forward;
-        final tooltip = 'View Details';
+        iconData = Icons.arrow_forward;
+        tooltip = 'View Details';
     }
 
     return Tooltip(

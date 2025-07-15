@@ -1,7 +1,7 @@
 import 'package:appoint/features/subscriptions/models/subscription.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:stripe_platform_interface/stripe_platform_interface.dart';
+import 'package:stripe_platform_interface/stripe_platform_interface.dart' as stripe;
 
 class SubscriptionService {
   SubscriptionService({

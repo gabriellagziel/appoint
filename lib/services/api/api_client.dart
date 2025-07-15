@@ -5,12 +5,14 @@ import 'package:flutter/foundation.dart';
 import 'package:appoint/services/auth_service.dart';
 
 class ApiClient {
-  ApiClient._();
+  ApiClient._({AuthService? authService})
+      : _authService = authService ?? AuthService();
   
   static final ApiClient _instance = ApiClient._();
   static ApiClient get instance => _instance;
 
   late final Dio _dio;
+  final AuthService _authService;
   final String _baseUrl = 'https://api.appoint.com/v1'; // TODO: Replace with real API URL
 
   void initialize() {
@@ -26,7 +28,7 @@ class ApiClient {
 
     // Add interceptors
     _dio.interceptors.addAll([
-      _AuthInterceptor(),
+      _AuthInterceptor(_authService),
       _LoggingInterceptor(),
       _ErrorInterceptor(),
       _RetryInterceptor(),
@@ -255,10 +257,15 @@ enum ApiExceptionType {
 
 // Auth interceptor to add authentication headers
 class _AuthInterceptor extends Interceptor {
+  final AuthService _authService;
+
+  _AuthInterceptor(this._authService);
+
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) async {
-    final token = await AuthService.instance.getToken();
-    if (token != null) {
+    final user = await _authService.currentUser();
+    if (user != null) {
+      final token = await user.getIdToken();
       options.headers['Authorization'] = 'Bearer $token';
     }
     handler.next(options);
@@ -268,10 +275,9 @@ class _AuthInterceptor extends Interceptor {
   void onError(DioException err, ErrorInterceptorHandler handler) async {
     if (err.response?.statusCode == 401) {
       // Token expired, try to refresh
-      final refreshed = await AuthService.instance.refreshToken();
-      if (refreshed) {
-        // Retry the original request
-        final token = await AuthService.instance.getToken();
+      final user = await _authService.currentUser();
+      if (user != null) {
+        final token = await user.getIdToken(true); // Force refresh
         err.requestOptions.headers['Authorization'] = 'Bearer $token';
         
         final response = await ApiClient.instance.dio.fetch(err.requestOptions);
