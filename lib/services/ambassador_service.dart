@@ -31,7 +31,7 @@ class AmbassadorService {
       final snapshot = await query.get();
       return snapshot.docs
           .map((doc) =>
-              AmbassadorStats.fromJson(doc.data()! as Map<String, dynamic>),)
+              AmbassadorStats.fromJson(doc.data()!),)
           .toList();
     } catch (e) {
       // TODO(username): Implement proper error handling and fallback data
