@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/services/analytics_service.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -42,7 +43,7 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
 
   @override
   Widget build(BuildContext context) {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);
 
     return Scaffold(
       appBar: AppBar(

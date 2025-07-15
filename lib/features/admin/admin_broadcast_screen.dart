@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/providers/admin_provider.dart';
 import 'package:appoint/services/broadcast_service.dart';
@@ -48,7 +49,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   Widget build(BuildContext context) {
     isAdmin = ref.watch(isAdminProvider);
     broadcastMessages = ref.watch(broadcastMessagesProvider);
-    l10n = AppLocalizations.of(context);
+    l10n = AdminLocalizations.of(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -145,7 +146,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Widget _buildMessagesList(List<AdminBroadcastMessage> messages) {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);
 
     if (messages.isEmpty) {
       return Center(
@@ -254,7 +255,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   void _showComposeDialog() {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);
 
     // Check admin privileges before showing the dialog
     isAdmin = ref.read(isAdminProvider);
@@ -311,7 +312,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Widget _buildComposeForm() {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);;
 
     return Form(
       key: _formKey,
@@ -504,7 +505,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Widget _buildTargetingFilters() {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);;
 
     return ExpansionTile(
       title: Text(l10n.targetingFilters),
@@ -585,7 +586,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Widget _buildSchedulingOptions() {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);;
 
     return ExpansionTile(
       title: Text(l10n.scheduling),
@@ -727,7 +728,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Future<void> _saveMessage() async {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);;
 
     if (!_formKey.currentState!.validate()) return;
 
@@ -825,7 +826,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Future<void> _sendMessage(String messageId) async {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);;
 
     try {
       service = ref.read(broadcastServiceProvider);
@@ -843,7 +844,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   void _showMessageDetails(AdminBroadcastMessage message) {
-    l10n = AppLocalizations.of(context)!;
+    l10n = AdminLocalizations.of(context);;
 
     showDialog(
       context: context,
