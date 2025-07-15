@@ -9,2411 +9,2502 @@ class AppLocalizationsSr extends AppLocalizations {
   AppLocalizationsSr([String locale = 'sr']) : super(locale);
 
   @override
-  String get refresh => '[SR] Refresh';
+  String get refresh => '[SR] [SR] Refresh';
 
   @override
-  String get home => '[SR] Home';
+  String get home => '[SR] [SR] Home';
 
   @override
-  String get noSessionsYet => '[SR] No sessions yet';
+  String get noSessionsYet => '[SR] [SR] No sessions yet';
 
   @override
-  String get ok => '[SR] OK';
+  String get ok => '[SR] [SR] OK';
 
   @override
-  String get playtimeLandingChooseMode => '[SR] Choose your play mode:';
+  String get playtimeLandingChooseMode => '[SR] [SR] Choose your play mode:';
 
   @override
-  String get signUp => '[SR] Sign Up';
+  String get signUp => '[SR] [SR] Sign Up';
 
   @override
-  String get scheduleMessage => '[SR] Schedule Message';
+  String get scheduleMessage => '[SR] [SR] Schedule Message';
 
   @override
-  String get decline => '[SR] Decline';
+  String get decline => '[SR] [SR] Decline';
 
   @override
   String get adminBroadcast => '[SR] Admin Broadcast';
 
   @override
-  String get login => '[SR] Login';
+  String get login => '[SR] [SR] Login';
 
   @override
-  String get playtimeChooseFriends => '[SR] Choose friends to invite';
+  String get playtimeChooseFriends => '[SR] [SR] Choose friends to invite';
 
   @override
-  String get noInvites => '[SR] No invites';
+  String get noInvites => '[SR] [SR] No invites';
 
   @override
-  String get playtimeChooseTime => '[SR] Choose a time';
+  String get playtimeChooseTime => '[SR] [SR] Choose a time';
 
   @override
-  String get success => '[SR] Success';
+  String get success => '[SR] [SR] Success';
 
   @override
-  String get undo => '[SR] Undo';
+  String get undo => '[SR] [SR] Undo';
 
   @override
   String opened(Object count) {
-    return '[SR] Opened';
+    return '[SR] [SR] Opened';
   }
 
   @override
-  String get createVirtualSession => '[SR] Create Virtual Session';
+  String get createVirtualSession => '[SR] [SR] Create Virtual Session';
 
   @override
-  String get messageSentSuccessfully => '[SR] Message sent successfully';
+  String get messageSentSuccessfully => '[SR] [SR] Message sent successfully';
 
   @override
-  String get redo => '[SR] Redo';
+  String get redo => '[SR] [SR] Redo';
 
   @override
-  String get next => '[SR] Next';
+  String get next => '[SR] [SR] Next';
 
   @override
-  String get search => '[SR] Search';
+  String get search => '[SR] [SR] Search';
 
   @override
   String get cancelInviteConfirmation =>
-      '[SR] Are you sure you want to cancel this invite?';
+      '[SR] [SR] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
-    return '[SR] Created';
+    return '[SR] [SR] Created';
   }
 
   @override
-  String get revokeAccess => '[SR] Revoke Access';
+  String get revokeAccess => '[SR] [SR] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => '[SR] Save Group for Recognition';
+  String get saveGroupForRecognition => '[SR] [SR] Save Group for Recognition';
 
   @override
-  String get playtimeLiveScheduled => '[SR] Live playtime scheduled!';
+  String get playtimeLiveScheduled => '[SR] [SR] Live playtime scheduled!';
 
   @override
   String get revokeAccessConfirmation =>
-      '[SR] Are you sure you want to revoke access?';
+      '[SR] [SR] Are you sure you want to revoke access?';
 
   @override
-  String get download => '[SR] Download';
+  String get download => '[SR] [SR] Download';
 
   @override
-  String get password => '[SR] Password';
+  String get password => '[SR] [SR] Password';
 
   @override
   String errorLoadingFamilyLinks(Object error) {
-    return '[SR] Error loading family links';
+    return '[SR] [SR] Error loading family links';
   }
 
   @override
-  String get cancel => '[SR] Cancel';
+  String get cancel => '[SR] [SR] Cancel';
 
   @override
-  String get playtimeCreate => '[SR] Create';
+  String get playtimeCreate => '[SR] [SR] Create';
 
   @override
   String failedToActionPrivacyRequest(Object action, Object error) {
-    return '[SR] Failed to action privacy request';
+    return '[SR] [SR] Failed to action privacy request';
   }
 
   @override
-  String get appTitle => '[SR] APP-OINT';
+  String get appTitle => '[SR] [SR] APP-OINT';
 
   @override
-  String get accept => '[SR] Accept';
+  String get accept => '[SR] [SR] Accept';
 
   @override
-  String get playtimeModeVirtual => '[SR] Virtual Play';
+  String get playtimeModeVirtual => '[SR] [SR] Virtual Play';
 
   @override
   String get playtimeDescription =>
-      '[SR] Enjoy live or virtual games with your friends!';
+      '[SR] [SR] Enjoy live or virtual games with your friends!';
 
   @override
-  String get delete => '[SR] Delete';
+  String get delete => '[SR] [SR] Delete';
 
   @override
-  String get playtimeVirtualStarted => '[SR] Virtual playtime started!';
+  String get playtimeVirtualStarted => '[SR] [SR] Virtual playtime started!';
 
   @override
-  String get createYourFirstGame => '[SR] Create your first game';
+  String get createYourFirstGame => '[SR] [SR] Create your first game';
 
   @override
-  String get participants => '[SR] Participants';
+  String get participants => '[SR] [SR] Participants';
 
   @override
   String recipients(Object count) {
-    return '[SR] Recipients';
+    return '[SR] [SR] Recipients';
   }
 
   @override
-  String get noResults => '[SR] No results found';
+  String get noResults => '[SR] [SR] No results found';
 
   @override
-  String get yes => '[SR] Yes';
+  String get yes => '[SR] [SR] Yes';
 
   @override
-  String get invite => '[SR] Invite';
+  String get invite => '[SR] [SR] Invite';
 
   @override
-  String get playtimeModeLive => '[SR] Live Play';
+  String get playtimeModeLive => '[SR] [SR] Live Play';
 
   @override
-  String get done => '[SR] Done';
+  String get done => '[SR] [SR] Done';
 
   @override
-  String get defaultShareMessage => '[SR] Let\'s meet via Appoint!';
+  String get defaultShareMessage => '[SR] [SR] Let\'s meet via Appoint!';
 
   @override
-  String get no => '[SR] No';
+  String get no => '[SR] [SR] No';
 
   @override
-  String get playtimeHub => '[SR] Playtime Hub';
+  String get playtimeHub => '[SR] [SR] Playtime Hub';
 
   @override
-  String get createLiveSession => '[SR] Create Live Session';
+  String get createLiveSession => '[SR] [SR] Create Live Session';
 
   @override
-  String get enableNotifications => '[SR] Enable Notifications';
+  String get enableNotifications => '[SR] [SR] Enable Notifications';
 
   @override
   String invited(Object date) {
-    return '[SR] Invited';
+    return '[SR] [SR] Invited';
   }
 
   @override
   String content(Object content) {
-    return '[SR] Content';
+    return '[SR] [SR] Content';
   }
 
   @override
-  String get meetingSharedSuccessfully => '[SR] Meeting shared successfully';
+  String get meetingSharedSuccessfully =>
+      '[SR] [SR] Meeting shared successfully';
 
   @override
-  String get welcomeToPlaytime => '[SR] Welcome to Playtime';
+  String get welcomeToPlaytime => '[SR] [SR] Welcome to Playtime';
 
   @override
-  String get viewAll => '[SR] View All';
+  String get viewAll => '[SR] [SR] View All';
 
   @override
-  String get playtimeVirtual => '[SR] Virtual Play';
+  String get playtimeVirtual => '[SR] [SR] Virtual Play';
 
   @override
-  String get staffScreenTBD => '[SR] Staff screen coming soon';
+  String get staffScreenTBD => '[SR] [SR] Staff screen coming soon';
 
   @override
-  String get cut => '[SR] Cut';
+  String get cut => '[SR] [SR] Cut';
 
   @override
   String get inviteCancelledSuccessfully =>
-      '[SR] Invite cancelled successfully';
+      '[SR] [SR] Invite cancelled successfully';
 
   @override
-  String get retry => '[SR] Retry';
+  String get retry => '[SR] [SR] Retry';
 
   @override
-  String get composeBroadcastMessage => '[SR] Compose Broadcast Message';
+  String get composeBroadcastMessage => '[SR] [SR] Compose Broadcast Message';
 
   @override
-  String get sendNow => '[SR] Send Now';
+  String get sendNow => '[SR] [SR] Send Now';
 
   @override
-  String get noGamesYet => '[SR] No games yet';
+  String get noGamesYet => '[SR] [SR] No games yet';
 
   @override
-  String get select => '[SR] Select';
+  String get select => '[SR] [SR] Select';
 
   @override
-  String get about => '[SR] About';
+  String get about => '[SR] [SR] About';
 
   @override
-  String get choose => '[SR] Choose';
+  String get choose => '[SR] [SR] Choose';
 
   @override
-  String get profile => '[SR] Profile';
+  String get profile => '[SR] [SR] Profile';
 
   @override
-  String get removeChild => '[SR] Remove Child';
+  String get removeChild => '[SR] [SR] Remove Child';
 
   @override
   String status(Object status) {
-    return '[SR] Status';
+    return '[SR] [SR] Status';
   }
 
   @override
-  String get logout => '[SR] Logout';
+  String get logout => '[SR] [SR] Logout';
 
   @override
-  String get paste => '[SR] Paste';
+  String get paste => '[SR] [SR] Paste';
 
   @override
-  String get welcome => '[SR] Welcome';
+  String get welcome => '[SR] [SR] Welcome';
 
   @override
-  String get playtimeCreateSession => '[SR] Create a Playtime Session';
+  String get playtimeCreateSession => '[SR] [SR] Create a Playtime Session';
 
   @override
-  String get familyMembers => '[SR] Family Members';
+  String get familyMembers => '[SR] [SR] Family Members';
 
   @override
-  String get upload => '[SR] Upload';
+  String get upload => '[SR] [SR] Upload';
 
   @override
-  String get upcomingSessions => '[SR] Upcoming Sessions';
+  String get upcomingSessions => '[SR] [SR] Upcoming Sessions';
 
   @override
-  String get enterGroupName => '[SR] Enter group name';
+  String get enterGroupName => '[SR] [SR] Enter group name';
 
   @override
-  String get confirm => '[SR] Confirm';
+  String get confirm => '[SR] [SR] Confirm';
 
   @override
-  String get playtimeLive => '[SR] Live Play';
+  String get playtimeLive => '[SR] [SR] Live Play';
 
   @override
-  String get errorLoadingInvites => '[SR] Error loading invites';
+  String get errorLoadingInvites => '[SR] [SR] Error loading invites';
 
   @override
-  String get targetingFilters => '[SR] Targeting Filters';
+  String get targetingFilters => '[SR] [SR] Targeting Filters';
 
   @override
-  String get pickVideo => '[SR] Pick Video';
+  String get pickVideo => '[SR] [SR] Pick Video';
 
   @override
-  String get playtimeGameDeleted => '[SR] Game deleted';
+  String get playtimeGameDeleted => '[SR] [SR] Game deleted';
 
   @override
-  String get scheduleForLater => '[SR] Schedule for Later';
+  String get scheduleForLater => '[SR] [SR] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully => '[SR] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[SR] [SR] Access revoked successfully';
 
   @override
   String type(Object type) {
-    return '[SR] Type';
+    return '[SR] [SR] Type';
   }
 
   @override
-  String get checkingPermissions => '[SR] Checking permissions...';
+  String get checkingPermissions => '[SR] [SR] Checking permissions...';
 
   @override
-  String get copy => '[SR] Copy';
+  String get copy => '[SR] [SR] Copy';
 
   @override
-  String get yesCancel => '[SR] Yes, Cancel';
+  String get yesCancel => '[SR] [SR] Yes, Cancel';
 
   @override
-  String get email => '[SR] Email';
+  String get email => '[SR] [SR] Email';
 
   @override
-  String get shareOnWhatsApp => '[SR] Share on WhatsApp';
+  String get shareOnWhatsApp => '[SR] [SR] Share on WhatsApp';
 
   @override
-  String get notificationSettings => '[SR] Notification Settings';
+  String get notificationSettings => '[SR] [SR] Notification Settings';
 
   @override
-  String get myProfile => '[SR] My Profile';
+  String get myProfile => '[SR] [SR] My Profile';
 
   @override
-  String get revoke => '[SR] Revoke';
+  String get revoke => '[SR] [SR] Revoke';
 
   @override
-  String get noBroadcastMessages => '[SR] No messages yet';
+  String get noBroadcastMessages => '[SR] [SR] No messages yet';
 
   @override
   String requestType(Object type) {
-    return '[SR] Request Type';
+    return '[SR] [SR] Request Type';
   }
 
   @override
-  String get notifications => '[SR] Notifications';
+  String get notifications => '[SR] [SR] Notifications';
 
   @override
-  String get details => '[SR] Details';
+  String get details => '[SR] [SR] Details';
 
   @override
-  String get cancelInvite => '[SR] Cancel Invite';
+  String get cancelInvite => '[SR] [SR] Cancel Invite';
 
   @override
-  String get createNew => '[SR] Create New';
+  String get createNew => '[SR] [SR] Create New';
 
   @override
-  String get settings => '[SR] Settings';
+  String get settings => '[SR] [SR] Settings';
 
   @override
-  String get playtimeReject => '[SR] Reject';
+  String get playtimeReject => '[SR] [SR] Reject';
 
   @override
-  String get errorLoadingProfile => '[SR] Error loading profile';
+  String get errorLoadingProfile => '[SR] [SR] Error loading profile';
 
   @override
-  String get edit => '[SR] Edit';
+  String get edit => '[SR] [SR] Edit';
 
   @override
-  String get add => '[SR] Add';
+  String get add => '[SR] [SR] Add';
 
   @override
-  String get playtimeGameApproved => '[SR] Game approved';
+  String get playtimeGameApproved => '[SR] [SR] Game approved';
 
   @override
-  String get forgotPassword => '[SR] Forgot Password?';
+  String get forgotPassword => '[SR] [SR] Forgot Password?';
 
   @override
-  String get familyDashboard => '[SR] Family Dashboard';
+  String get familyDashboard => '[SR] [SR] Family Dashboard';
 
   @override
-  String get loading => '[SR] Loading...';
+  String get loading => '[SR] [SR] Loading...';
 
   @override
-  String get quickActions => '[SR] Quick Actions';
+  String get quickActions => '[SR] [SR] Quick Actions';
 
   @override
-  String get playtimeTitle => '[SR] Playtime';
+  String get playtimeTitle => '[SR] [SR] Playtime';
 
   @override
-  String get otpResentSuccessfully => '[SR] OTP resent successfully';
+  String get otpResentSuccessfully => '[SR] [SR] OTP resent successfully';
 
   @override
   String errorCheckingPermissions(Object error) {
-    return '[SR] Error checking permissions';
+    return '[SR] [SR] Error checking permissions';
   }
 
   @override
-  String get clientScreenTBD => '[SR] Client screen coming soon';
+  String get clientScreenTBD => '[SR] [SR] Client screen coming soon';
 
   @override
   String fcmToken(Object token) {
-    return '[SR] FCM Token';
+    return '[SR] [SR] FCM Token';
   }
 
   @override
-  String get pickImage => '[SR] Pick Image';
+  String get pickImage => '[SR] [SR] Pick Image';
 
   @override
-  String get previous => '[SR] Previous';
+  String get previous => '[SR] [SR] Previous';
 
   @override
-  String get noProfileFound => '[SR] No profile found';
+  String get noProfileFound => '[SR] [SR] No profile found';
 
   @override
-  String get noFamilyMembersYet => '[SR] No family members yet';
+  String get noFamilyMembersYet => '[SR] [SR] No family members yet';
 
   @override
-  String get mediaOptional => '[SR] Media (Optional)';
+  String get mediaOptional => '[SR] [SR] Media (Optional)';
 
   @override
-  String get messageSavedSuccessfully => '[SR] Message saved successfully';
+  String get messageSavedSuccessfully => '[SR] [SR] Message saved successfully';
 
   @override
-  String get scheduledFor => '[SR] Scheduled for';
+  String get scheduledFor => '[SR] [SR] Scheduled for';
 
   @override
-  String get dashboard => '[SR] Dashboard';
+  String get dashboard => '[SR] [SR] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => '[SR] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[SR] [SR] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[SR] Playtime Games – Admin';
 
   @override
-  String get inviteDetail => '[SR] Invite Details';
+  String get inviteDetail => '[SR] [SR] Invite Details';
 
   @override
   String scheduled(Object date) {
-    return '[SR] Scheduled';
+    return '[SR] [SR] Scheduled';
   }
 
   @override
   String failedToResendOtp(Object error) {
-    return '[SR] Failed to resend OTP';
+    return '[SR] [SR] Failed to resend OTP';
   }
 
   @override
-  String get scheduling => '[SR] Scheduling';
+  String get scheduling => '[SR] [SR] Scheduling';
 
   @override
   String errorSavingMessage(Object error) {
-    return '[SR] Error saving message';
+    return '[SR] [SR] Error saving message';
   }
 
   @override
-  String get save => '[SR] Save';
+  String get save => '[SR] [SR] Save';
 
   @override
-  String get playtimeApprove => '[SR] Approve';
+  String get playtimeApprove => '[SR] [SR] Approve';
 
   @override
-  String get createYourFirstSession => '[SR] Create your first session';
+  String get createYourFirstSession => '[SR] [SR] Create your first session';
 
   @override
-  String get playtimeGameRejected => '[SR] Game rejected';
+  String get playtimeGameRejected => '[SR] [SR] Game rejected';
 
   @override
   String failedToRevokeAccess(Object error) {
-    return '[SR] Failed to revoke access';
+    return '[SR] [SR] Failed to revoke access';
   }
 
   @override
-  String get recentGames => '[SR] Recent Games';
+  String get recentGames => '[SR] [SR] Recent Games';
 
   @override
-  String get customizeMessage => '[SR] Customize Message';
+  String get customizeMessage => '[SR] [SR] Customize Message';
 
   @override
   String failedToCancelInvite(Object error) {
-    return '[SR] Failed to cancel invite';
+    return '[SR] [SR] Failed to cancel invite';
   }
 
   @override
   String errorSendingMessage(Object error) {
-    return '[SR] Error sending message';
+    return '[SR] [SR] Error sending message';
   }
 
   @override
-  String get confirmPassword => '[SR] Confirm Password';
+  String get confirmPassword => '[SR] [SR] Confirm Password';
 
   @override
   String errorLoadingPrivacyRequests(Object error) {
-    return '[SR] Error loading privacy requests';
+    return '[SR] [SR] Error loading privacy requests';
   }
 
   @override
-  String get connectedChildren => '[SR] Connected Children';
+  String get connectedChildren => '[SR] [SR] Connected Children';
 
   @override
-  String get share => '[SR] Share';
+  String get share => '[SR] [SR] Share';
 
   @override
-  String get playtimeEnterGameName => '[SR] Enter game name';
+  String get playtimeEnterGameName => '[SR] [SR] Enter game name';
 
   @override
   String get pleaseLoginForFamilyFeatures =>
-      '[SR] Please login to access family features';
+      '[SR] [SR] Please login to access family features';
 
   @override
-  String get myInvites => '[SR] My Invites';
+  String get myInvites => '[SR] [SR] My Invites';
 
   @override
-  String get createGame => '[SR] Create Game';
+  String get createGame => '[SR] [SR] Create Game';
 
   @override
-  String get groupNameOptional => '[SR] Group Name (Optional)';
+  String get groupNameOptional => '[SR] [SR] Group Name (Optional)';
 
   @override
-  String get playtimeNoSessions => '[SR] No playtime sessions found.';
+  String get playtimeNoSessions => '[SR] [SR] No playtime sessions found.';
 
   @override
   String get adminScreenTBD => '[SR] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => '[SR] Playtime Dashboard';
+  String get playtimeParentDashboardTitle => '[SR] [SR] Playtime Dashboard';
 
   @override
-  String get close => '[SR] Close';
+  String get close => '[SR] [SR] Close';
 
   @override
-  String get knownGroupDetected => '[SR] Known group detected';
+  String get knownGroupDetected => '[SR] [SR] Known group detected';
 
   @override
-  String get back => '[SR] Back';
+  String get back => '[SR] [SR] Back';
 
   @override
-  String get playtimeChooseGame => '[SR] Choose a game';
+  String get playtimeChooseGame => '[SR] [SR] Choose a game';
 
   @override
-  String get managePermissions => '[SR] Manage Permissions';
+  String get managePermissions => '[SR] [SR] Manage Permissions';
 
   @override
-  String get pollOptions => '[SR] Poll Options';
+  String get pollOptions => '[SR] [SR] Poll Options';
 
   @override
   String clicked(Object count) {
-    return '[SR] Clicked';
+    return '[SR] [SR] Clicked';
   }
 
   @override
   String link(Object link) {
-    return '[SR] Link';
+    return '[SR] [SR] Link';
   }
 
   @override
-  String get meetingReadyMessage => '[SR] Your meeting is ready! Join now';
+  String get meetingReadyMessage => '[SR] [SR] Your meeting is ready! Join now';
 
   @override
-  String get pendingInvites => '[SR] Pending Invites';
+  String get pendingInvites => '[SR] [SR] Pending Invites';
 
   @override
   String statusColon(Object status) {
-    return '[SR] Status:';
+    return '[SR] [SR] Status:';
   }
 
   @override
   String get pleaseLoginToViewProfile =>
-      '[SR] Please log in to view your profile.';
+      '[SR] [SR] Please log in to view your profile.';
 
   @override
-  String get adminMetrics => 'Admin Metrics';
+  String get adminMetrics => '[SR] Admin Metrics';
 
   @override
-  String get overview => 'Overview';
+  String get overview => '[SR] Overview';
 
   @override
-  String get bookings => 'Bookings';
+  String get bookings => '[SR] Bookings';
 
   @override
-  String get users => 'users (TRANSLATE)';
+  String get users => '[SR] users (TRANSLATE)';
 
   @override
-  String get revenue => 'revenue (TRANSLATE)';
+  String get revenue => '[SR] revenue (TRANSLATE)';
 
   @override
-  String get contentLibrary => 'Content Library';
+  String get contentLibrary => '[SR] Content Library';
 
   @override
   String get authErrorUserNotFound =>
-      'No account found with this email address.';
+      '[SR] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => 'Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[SR] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => 'Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[SR] Please enter a valid email address.';
 
   @override
   String get authErrorUserDisabled =>
-      'This account has been disabled. Please contact support.';
+      '[SR] This account has been disabled. Please contact support.';
 
   @override
   String get authErrorWeakPassword =>
-      'Password is too weak. Please choose a stronger password.';
+      '[SR] Password is too weak. Please choose a stronger password.';
 
   @override
   String get authErrorEmailAlreadyInUse =>
-      'An account with this email already exists.';
+      '[SR] An account with this email already exists.';
 
   @override
   String get authErrorTooManyRequests =>
-      'Too many failed attempts. Please try again later.';
+      '[SR] Too many failed attempts. Please try again later.';
 
   @override
   String get authErrorOperationNotAllowed =>
-      'This sign-in method is not enabled. Please contact support.';
+      '[SR] This sign-in method is not enabled. Please contact support.';
 
   @override
   String get authErrorInvalidCredential =>
-      'Invalid credentials. Please try again.';
+      '[SR] Invalid credentials. Please try again.';
 
   @override
   String get authErrorAccountExistsWithDifferentCredential =>
-      'An account already exists with this email using a different sign-in method.';
+      '[SR] An account already exists with this email using a different sign-in method.';
 
   @override
   String get authErrorCredentialAlreadyInUse =>
-      'These credentials are already associated with another account.';
+      '[SR] These credentials are already associated with another account.';
 
   @override
   String get authErrorNetworkRequestFailed =>
-      'Network error. Please check your connection and try again.';
+      '[SR] Network error. Please check your connection and try again.';
 
   @override
-  String get socialAccountConflictTitle => 'Account Already Exists';
+  String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
 
   @override
   String socialAccountConflictMessage(Object email) {
-    return 'An account with email $email already exists using a different sign-in method. Would you like to link your accounts?';
+    return 'يبدو أن هناك حساب موجود بالفعل';
   }
 
   @override
-  String get linkAccounts => 'Link Accounts';
+  String get linkAccounts => 'ربط الحسابات';
 
   @override
-  String get signInWithExistingMethod => 'Sign in with existing method';
+  String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
   String get authErrorRequiresRecentLogin =>
-      'Please log in again to perform this operation.';
+      '[SR] Please log in again to perform this operation.';
 
   @override
   String get authErrorAppNotAuthorized =>
-      'This app is not authorized to use Firebase Authentication.';
+      '[SR] This app is not authorized to use Firebase Authentication.';
 
   @override
   String get authErrorInvalidVerificationCode =>
-      'The verification code is invalid.';
+      '[SR] The verification code is invalid.';
 
   @override
   String get authErrorInvalidVerificationId =>
-      'The verification ID is invalid.';
+      '[SR] The verification ID is invalid.';
 
   @override
   String get authErrorMissingVerificationCode =>
-      'Please enter the verification code.';
+      '[SR] Please enter the verification code.';
 
   @override
-  String get authErrorMissingVerificationId => 'Missing verification ID.';
+  String get authErrorMissingVerificationId => '[SR] Missing verification ID.';
 
   @override
-  String get authErrorInvalidPhoneNumber => 'The phone number is invalid.';
+  String get authErrorInvalidPhoneNumber => '[SR] The phone number is invalid.';
 
   @override
-  String get authErrorMissingPhoneNumber => 'Please enter a phone number.';
+  String get authErrorMissingPhoneNumber => '[SR] Please enter a phone number.';
 
   @override
   String get authErrorQuotaExceeded =>
-      'The SMS quota for this project has been exceeded. Please try again later.';
+      '[SR] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
   String get authErrorCodeExpired =>
-      'The verification code has expired. Please request a new one.';
+      '[SR] The verification code has expired. Please request a new one.';
 
   @override
   String get authErrorSessionExpired =>
-      'Your session has expired. Please log in again.';
+      '[SR] Your session has expired. Please log in again.';
 
   @override
   String get authErrorMultiFactorAuthRequired =>
-      'Multi-factor authentication is required.';
+      '[SR] Multi-factor authentication is required.';
 
   @override
   String get authErrorMultiFactorInfoNotFound =>
-      'Multi-factor information not found.';
+      '[SR] Multi-factor information not found.';
 
   @override
   String get authErrorMissingMultiFactorSession =>
-      'Missing multi-factor session.';
+      '[SR] Missing multi-factor session.';
 
   @override
   String get authErrorInvalidMultiFactorSession =>
-      'Invalid multi-factor session.';
+      '[SR] Invalid multi-factor session.';
 
   @override
   String get authErrorSecondFactorAlreadyInUse =>
-      'This second factor is already in use.';
+      '[SR] This second factor is already in use.';
 
   @override
   String get authErrorMaximumSecondFactorCountExceeded =>
-      'Maximum number of second factors exceeded.';
+      '[SR] Maximum number of second factors exceeded.';
 
   @override
   String get authErrorUnsupportedFirstFactor =>
-      'Unsupported first factor for multi-factor authentication.';
+      '[SR] Unsupported first factor for multi-factor authentication.';
 
   @override
   String get authErrorEmailChangeNeedsVerification =>
-      'Email change requires verification.';
+      '[SR] Email change requires verification.';
 
   @override
   String get authErrorPhoneNumberAlreadyExists =>
-      'This phone number is already in use.';
+      '[SR] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => 'The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[SR] The password is invalid or too weak.';
 
   @override
-  String get authErrorInvalidIdToken => 'The ID token is invalid.';
+  String get authErrorInvalidIdToken => '[SR] The ID token is invalid.';
 
   @override
-  String get authErrorIdTokenExpired => 'The ID token has expired.';
+  String get authErrorIdTokenExpired => '[SR] The ID token has expired.';
 
   @override
-  String get authErrorIdTokenRevoked => 'The ID token has been revoked.';
+  String get authErrorIdTokenRevoked => '[SR] The ID token has been revoked.';
 
   @override
   String get authErrorInternalError =>
-      'An internal error occurred. Please try again.';
+      '[SR] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => 'An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[SR] An invalid argument was provided.';
 
   @override
-  String get authErrorInvalidClaims => 'Invalid custom claims provided.';
+  String get authErrorInvalidClaims => '[SR] Invalid custom claims provided.';
 
   @override
-  String get authErrorInvalidContinueUri => 'The continue URL is invalid.';
+  String get authErrorInvalidContinueUri => '[SR] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => 'The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[SR] The creation time is invalid.';
 
   @override
   String get authErrorInvalidDisabledField =>
-      'The disabled field value is invalid.';
+      '[SR] The disabled field value is invalid.';
 
   @override
-  String get authErrorInvalidDisplayName => 'The display name is invalid.';
+  String get authErrorInvalidDisplayName => '[SR] The display name is invalid.';
 
   @override
   String get authErrorInvalidDynamicLinkDomain =>
-      'The dynamic link domain is invalid.';
+      '[SR] The dynamic link domain is invalid.';
 
   @override
   String get authErrorInvalidEmailVerified =>
-      'The email verified value is invalid.';
+      '[SR] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => 'The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[SR] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => 'The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[SR] The hash block size is invalid.';
 
   @override
   String get authErrorInvalidHashDerivedKeyLength =>
-      'The hash derived key length is invalid.';
+      '[SR] The hash derived key length is invalid.';
 
   @override
-  String get authErrorInvalidHashKey => 'The hash key is invalid.';
+  String get authErrorInvalidHashKey => '[SR] The hash key is invalid.';
 
   @override
   String get authErrorInvalidHashMemoryCost =>
-      'The hash memory cost is invalid.';
+      '[SR] The hash memory cost is invalid.';
 
   @override
   String get authErrorInvalidHashParallelization =>
-      'The hash parallelization is invalid.';
+      '[SR] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => 'The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[SR] The hash rounds value is invalid.';
 
   @override
   String get authErrorInvalidHashSaltSeparator =>
-      'The hash salt separator is invalid.';
+      '[SR] The hash salt separator is invalid.';
 
   @override
   String get authErrorInvalidLastSignInTime =>
-      'The last sign-in time is invalid.';
+      '[SR] The last sign-in time is invalid.';
 
   @override
-  String get authErrorInvalidPageToken => 'The page token is invalid.';
+  String get authErrorInvalidPageToken => '[SR] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => 'The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[SR] The provider data is invalid.';
 
   @override
-  String get authErrorInvalidProviderId => 'The provider ID is invalid.';
+  String get authErrorInvalidProviderId => '[SR] The provider ID is invalid.';
 
   @override
   String get authErrorInvalidSessionCookieDuration =>
-      'The session cookie duration is invalid.';
+      '[SR] The session cookie duration is invalid.';
 
   @override
-  String get authErrorInvalidUid => 'The UID is invalid.';
+  String get authErrorInvalidUid => '[SR] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => 'The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[SR] The user import record is invalid.';
 
   @override
   String get authErrorMaximumUserCountExceeded =>
-      'Maximum user import count exceeded.';
+      '[SR] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => 'Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[SR] Missing Android package name.';
 
   @override
-  String get authErrorMissingContinueUri => 'Missing continue URL.';
+  String get authErrorMissingContinueUri => '[SR] Missing continue URL.';
 
   @override
-  String get authErrorMissingHashAlgorithm => 'Missing hash algorithm.';
+  String get authErrorMissingHashAlgorithm => '[SR] Missing hash algorithm.';
 
   @override
-  String get authErrorMissingIosBundleId => 'Missing iOS bundle ID.';
+  String get authErrorMissingIosBundleId => '[SR] Missing iOS bundle ID.';
 
   @override
-  String get authErrorMissingUid => 'Missing UID.';
+  String get authErrorMissingUid => '[SR] Missing UID.';
 
   @override
   String get authErrorMissingOauthClientSecret =>
-      'Missing OAuth client secret.';
+      '[SR] Missing OAuth client secret.';
 
   @override
-  String get authErrorProjectNotFound => 'Firebase project not found.';
+  String get authErrorProjectNotFound => '[SR] Firebase project not found.';
 
   @override
-  String get authErrorReservedClaims => 'Reserved claims provided.';
+  String get authErrorReservedClaims => '[SR] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => 'Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[SR] Session cookie has expired.';
 
   @override
   String get authErrorSessionCookieRevoked =>
-      'Session cookie has been revoked.';
+      '[SR] Session cookie has been revoked.';
 
   @override
-  String get authErrorUidAlreadyExists => 'The UID is already in use.';
+  String get authErrorUidAlreadyExists => '[SR] The UID is already in use.';
 
   @override
   String get authErrorUnauthorizedContinueUri =>
-      'The continue URL domain is not whitelisted.';
+      '[SR] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => 'An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[SR] An unknown authentication error occurred.';
 
   @override
-  String get checkingPermissions1 => 'Checking permissions...';
+  String get checkingPermissions1 => 'فحص الأذونات...';
 
   @override
-  String get paymentSuccessful => 'Payment Successful!';
+  String get paymentSuccessful => 'تم الدفع بنجاح';
 
   @override
-  String get businessAvailability => 'Business Availability';
+  String get businessAvailability => 'توفر الأعمال';
 
   @override
-  String get send => 'Send';
+  String get send => 'إرسال';
 
   @override
-  String newNotificationPayloadtitle(Object payloadTitle) {
-    return 'New notification: $payloadTitle';
+  String newNotificationPayloadtitle(Object payloadTitle, Object title) {
+    return 'عنوان الإشعار الجديد: $title';
   }
 
   @override
-  String get gameList => 'Game List';
+  String get gameList => 'قائمة الألعاب';
 
   @override
-  String get deleteAvailability => 'Delete Availability';
+  String get deleteAvailability => 'حذف التوفر';
 
   @override
-  String get connectToGoogleCalendar => 'Connect to Google Calendar';
+  String get connectToGoogleCalendar => 'الاتصال بتقويم Google';
 
   @override
-  String get adminFreeAccess => 'Admin Free Access';
+  String get adminFreeAccess => '[SR] Admin Free Access';
 
   @override
-  String emailProfileemail(Object profileEmail) {
-    return 'Email: $profileEmail';
+  String emailProfileemail(Object email, Object profileEmail) {
+    return 'البريد الإلكتروني للملف الشخصي: $email';
   }
 
   @override
-  String get calendar => 'Calendar';
+  String get calendar => 'التقويم';
 
   @override
-  String get upload1 => 'Upload';
+  String get upload1 => '[SR] Upload (Serbian)';
 
   @override
-  String get resolved => 'Resolved';
+  String get resolved => 'تم الحل';
 
   @override
-  String get keepSubscription => 'Keep Subscription';
+  String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
   String get virtualSessionCreatedInvitingFriends =>
-      'Virtual session created! Inviting friends...';
+      '[SR] Virtual session created! Inviting friends... (Serbian)';
 
   @override
-  String get noEventsScheduledForToday => 'No events scheduled for today';
+  String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
 
   @override
-  String get exportData => 'Export Data';
+  String get exportData => 'تصدير البيانات';
 
   @override
-  String get rewards => 'Rewards';
+  String get rewards => '[SR] Rewards (Serbian)';
 
   @override
-  String get time => 'Time';
+  String get time => '[SR] Time (Serbian)';
 
   @override
-  String userCid(Object id) {
-    return 'User $id';
+  String userCid(Object cid, Object id) {
+    return '[SR] User $id';
   }
 
   @override
-  String get noSlots => 'No slots';
+  String get noSlots => '[SR] No slots (Serbian)';
 
   @override
-  String get signIn => 'Sign In';
+  String get signIn => '[SR] Sign In (Serbian)';
 
   @override
-  String get homeFeedScreen => 'Home Feed Screen';
+  String get homeFeedScreen => '[SR] Home Feed Screen (Serbian)';
 
   @override
-  String get selectLocation => 'Select Location';
+  String get selectLocation => '[SR] Select Location (Serbian)';
 
   @override
-  String get noTicketsYet => 'No tickets yet';
+  String get noTicketsYet => '[SR] No tickets yet (Serbian)';
 
   @override
-  String get meetingSharedSuccessfully1 => 'Meeting shared successfully!';
+  String get meetingSharedSuccessfully1 => 'تم مشاركة الاجتماع بنجاح';
 
   @override
-  String get studioProfile => 'Studio Profile';
+  String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => 'Subscription unavailable';
+  String get subscriptionUnavailable =>
+      '[SR] Subscription unavailable (Serbian)';
 
   @override
-  String get confirmBooking => 'Confirm Booking';
+  String get confirmBooking => '[SR] Confirm Booking (Serbian)';
 
   @override
-  String get failedToUpdatePermissionE => 'Failed to update permission: \$e';
+  String get failedToUpdatePermissionE =>
+      '[SR] Failed to update permission: \$e (Serbian)';
 
   @override
-  String get reject => 'Reject';
+  String get reject => '[SR] Reject (Serbian)';
 
   @override
   String ambassadorStatusAmbassadorstatus(Object ambassadorStatus) {
-    return 'Ambassador Status: $ambassadorStatus';
+    return '[SR] Ambassador Status: $ambassadorStatus (Serbian)';
   }
 
   @override
-  String get noProviders => 'No providers';
+  String get noProviders => '[SR] No providers';
 
   @override
-  String get checkingSubscription => 'Checking subscription...';
+  String get checkingSubscription => '[SR] Checking subscription... (Serbian)';
 
   @override
-  String get errorPickingImageE => 'Error picking image: \$e';
+  String errorPickingImageE(Object e) {
+    return 'خطأ في اختيار الصورة: $e';
+  }
 
   @override
-  String get noContentAvailableYet => 'No content available yet';
+  String get noContentAvailableYet => '[SR] No content available yet (Serbian)';
 
   @override
-  String get resolve => 'Resolve';
+  String get resolve => '[SR] Resolve (Serbian)';
 
   @override
-  String get errorLoadingSurveysError => 'Error loading surveys: \$error';
+  String get errorLoadingSurveysError =>
+      '[SR] Error loading surveys: \$error (Serbian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
-    return 'Error: $errorMessage';
+    return '[SR] Error: $errorMessage';
   }
 
   @override
-  String get getHelpWithYourAccount => 'Get help with your account';
+  String get getHelpWithYourAccount =>
+      '[SR] Get help with your account (Serbian)';
 
   @override
-  String get pay => 'Pay';
+  String get pay => '[SR] Pay (Serbian)';
 
   @override
-  String get noOrganizations => 'noOrganizations (TRANSLATE)';
+  String get noOrganizations => '[SR] noOrganizations (TRANSLATE)';
 
   @override
-  String get meetingDetails => 'meetingDetails (TRANSLATE)';
+  String get meetingDetails => 'تفاصيل الاجتماع';
 
   @override
-  String get errorLoadingAppointments => 'Error loading appointments';
+  String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => 'Changes saved successfully!';
+  String get changesSavedSuccessfully =>
+      '[SR] Changes saved successfully! (Serbian)';
 
   @override
-  String get createNewInvoice => 'Create New Invoice';
+  String get createNewInvoice => '[SR] Create New Invoice (Serbian)';
 
   @override
-  String get profileNotFound => 'Profile not found.';
+  String get profileNotFound => 'الملف الشخصي غير موجود';
 
   @override
-  String get errorConfirmingPaymentE => 'Error confirming payment: \$e';
+  String errorConfirmingPaymentE(Object e) {
+    return 'خطأ في تأكيد الدفع: $e';
+  }
 
   @override
-  String get inviteFriends => 'Invite Friends';
+  String get inviteFriends => 'دعوة الأصدقاء';
 
   @override
-  String get profileSaved => 'Profile saved!';
+  String get profileSaved => '[SR] Profile saved! (Serbian)';
 
   @override
   String get receiveBookingNotificationsViaEmail =>
-      'Receive booking notifications via email';
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
-  String valuetointk(Object value) {
-    return '\\\$${value}K';
+  String valuetointk(Object k, Object value) {
+    return '[SR] \\\$${value}K (Serbian)';
   }
 
   @override
-  String get deleteAccount => 'Delete Account';
+  String get deleteAccount => '[SR] Delete Account (Serbian)';
 
   @override
-  String get profile1 => 'Profile';
+  String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding => 'Business Onboarding';
+  String get businessOnboarding => '[SR] Business Onboarding (Serbian)';
 
   @override
-  String get addNewClient => 'Add New Client';
+  String get addNewClient => '[SR] Add New Client (Serbian)';
 
   @override
-  String get darkMode => 'Dark Mode';
+  String get darkMode => '[SR] Dark Mode (Serbian)';
 
   @override
-  String get addProvider => 'Add Provider';
+  String get addProvider => '[SR] Add Provider';
 
   @override
   String noRouteDefinedForStateuripath(Object path) {
-    return 'No route defined for $path';
+    return '[SR] No route defined for $path';
   }
 
   @override
   String get youWillReceiveAConfirmationEmailShortly =>
-      'You will receive a confirmation email shortly.';
+      '[SR] You will receive a confirmation email shortly. (Serbian)';
 
   @override
-  String get addQuestion => 'Add Question';
+  String get addQuestion => '[SR] Add Question (Serbian)';
 
   @override
-  String get privacyPolicy => 'Privacy Policy';
+  String get privacyPolicy => '[SR] Privacy Policy (Serbian)';
 
   @override
   String branchesLengthBranches(Object branchCount) {
-    return '$branchCount branches';
+    return '[SR] $branchCount branches (Serbian)';
   }
 
   @override
-  String get join => 'Join';
+  String get join => '[SR] Join (Serbian)';
 
   @override
-  String get businessSubscription => 'Business Subscription';
+  String get businessSubscription => '[SR] Business Subscription (Serbian)';
 
   @override
-  String get myInvites1 => 'My Invites';
+  String get myInvites1 => 'دعواتي';
 
   @override
-  String get providers => 'Providers';
+  String get providers => '[SR] Providers';
 
   @override
-  String get surveyManagement => 'Survey Management';
+  String get surveyManagement => '[SR] Survey Management (Serbian)';
 
   @override
   String get pleaseEnterAValidEmailOrPhone =>
-      'Please enter a valid email or phone';
+      '[SR] Please enter a valid email or phone';
 
   @override
   String get noRoomsFoundAddYourFirstRoom =>
-      'No rooms found. Add your first room!';
+      '[SR] No rooms found. Add your first room! (Serbian)';
 
   @override
-  String get readOurPrivacyPolicy => 'Read our privacy policy';
+  String get readOurPrivacyPolicy => '[SR] Read our privacy policy (Serbian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => 'Could not open privacy policy';
+  String get couldNotOpenPrivacyPolicy =>
+      '[SR] Could not open privacy policy (Serbian)';
 
   @override
-  String get refresh1 => 'Refresh';
+  String get refresh1 => '[SR] Refresh (Serbian)';
 
   @override
-  String get roomUpdatedSuccessfully => 'Room updated successfully!';
+  String get roomUpdatedSuccessfully =>
+      '[SR] Room updated successfully! (Serbian)';
 
   @override
-  String get contentDetail => 'Content Detail';
+  String get contentDetail => '[SR] Content Detail (Serbian)';
 
   @override
-  String get cancelSubscription => 'Cancel Subscription';
+  String get cancelSubscription => '[SR] Cancel Subscription (Serbian)';
 
   @override
   String get successfullyRegisteredAsAmbassador =>
-      'Successfully registered as Ambassador!';
+      '[SR] Successfully registered as Ambassador! (Serbian)';
 
   @override
-  String get save1 => 'Save';
+  String get save1 => '[SR] Save (Serbian)';
 
   @override
-  String get copy1 => 'Copy';
+  String get copy1 => '[SR] Copy (Serbian)';
 
   @override
-  String get failedToSendInvitationE => 'Failed to send invitation: \$e';
+  String get failedToSendInvitationE =>
+      '[SR] Failed to send invitation: \$e (Serbian)';
 
   @override
-  String get surveyScore => 'Survey Score';
+  String get surveyScore => '[SR] Survey Score (Serbian)';
 
   @override
-  String get userUserid => 'User \$userId';
+  String userUserid(Object userId) {
+    return '[SR] User \$userId';
+  }
 
   @override
-  String get noAppointmentsFound => 'No appointments found.';
+  String get noAppointmentsFound => '[SR] No appointments found. (Serbian)';
 
   @override
-  String get responseDetail => 'Response Detail';
+  String get responseDetail => '[SR] Response Detail (Serbian)';
 
   @override
   String get businessVerificationScreenComingSoon =>
-      'Business Verification Screen - Coming Soon';
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
   String get businessProfileActivatedSuccessfully =>
-      'Business profile activated successfully!';
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
   String get failedToStartProSubscriptionE =>
-      'Failed to start Pro subscription: \$e';
+      '[SR] Failed to start Pro subscription: \$e (Serbian)';
 
   @override
   String get businessDashboardEntryScreenComingSoon =>
-      'Business Dashboard Entry Screen - Coming Soon';
+      '[SR] Business Dashboard Entry Screen - Coming Soon (Serbian)';
 
   @override
-  String get contentFilter => 'Content Filter';
+  String get contentFilter => '[SR] Content Filter (Serbian)';
 
   @override
-  String get helpSupport => 'Help & Support';
+  String get helpSupport => '[SR] Help & Support (Serbian)';
 
   @override
-  String get editRoom => 'Edit Room';
+  String get editRoom => '[SR] Edit Room (Serbian)';
 
   @override
   String appointmentApptid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return '[SR] Appointment: $appointmentId';
   }
 
   @override
   String deviceLogdeviceinfo(Object deviceInfo) {
-    return 'Device: $deviceInfo';
+    return '[SR] Device: $deviceInfo';
   }
 
   @override
   String get businessCrmEntryScreenComingSoon =>
-      'Business CRM Entry Screen - Coming Soon';
+      '[SR] Business CRM Entry Screen - Coming Soon (Serbian)';
 
   @override
-  String get adminDashboard => 'Admin Dashboard';
+  String get adminDashboard => '[SR] Admin Dashboard';
 
   @override
   String orgmemberidslengthMembers(Object memberCount) {
-    return '$memberCount members';
+    return '[SR] $memberCount members';
   }
 
   @override
-  String get errorLoadingDashboardError => 'Error loading dashboard: \$error';
+  String get errorLoadingDashboardError =>
+      '[SR] Error loading dashboard: \$error (Serbian)';
 
   @override
-  String get gameDeletedSuccessfully => 'Game deleted successfully!';
+  String get gameDeletedSuccessfully =>
+      '[SR] Game deleted successfully! (Serbian)';
 
   @override
-  String get viewResponsesComingSoon => 'View responses - Coming soon!';
+  String get viewResponsesComingSoon =>
+      '[SR] View responses - Coming soon! (Serbian)';
 
   @override
-  String get deleteProvider => 'Delete Provider';
+  String get deleteProvider => '[SR] Delete Provider';
 
   @override
-  String get errorLoadingRewards => 'Error loading rewards';
+  String get errorLoadingRewards => '[SR] Error loading rewards (Serbian)';
 
   @override
-  String get failedToDeleteAccountE => 'Failed to delete account: \$e';
+  String get failedToDeleteAccountE =>
+      '[SR] Failed to delete account: \$e (Serbian)';
 
   @override
-  String get invited1 => 'Invited';
+  String get invited1 => '[SR] Invited (Serbian)';
 
   @override
-  String get noBranchesAvailable => 'No branches available';
+  String get noBranchesAvailable => '[SR] No branches available (Serbian)';
 
   @override
-  String get errorError => 'Error: \$error';
+  String get errorError => '[SR] Error: \$error (Serbian)';
 
   @override
-  String get noEvents => 'No events';
+  String get noEvents => '[SR] No events (Serbian)';
 
   @override
-  String get gameCreatedSuccessfully => 'Game created successfully!';
+  String get gameCreatedSuccessfully =>
+      '[SR] Game created successfully! (Serbian)';
 
   @override
-  String get add1 => 'Add';
+  String get add1 => '[SR] Add (Serbian)';
 
   @override
-  String get creatorCreatorid => 'Creator: \$creatorId';
+  String get creatorCreatorid => '[SR] Creator: \$creatorId';
 
   @override
   String eventstarttimeEventendtime(Object endTime, Object startTime) {
-    return '$startTime - $endTime';
+    return '[SR] $startTime - $endTime (Serbian)';
   }
 
   @override
-  String get allowPlaytime => 'Allow Playtime';
+  String get allowPlaytime => '[SR] Allow Playtime (Serbian)';
 
   @override
-  String get clients => 'Clients';
+  String get clients => '[SR] Clients (Serbian)';
 
   @override
-  String get noAmbassadorDataAvailable => 'No ambassador data available';
+  String get noAmbassadorDataAvailable =>
+      '[SR] No ambassador data available (Serbian)';
 
   @override
   String get backgroundDeletedSuccessfully =>
-      'Background deleted successfully!';
+      '[SR] Background deleted successfully! (Serbian)';
 
   @override
   String errorSnapshoterror(Object error) {
-    return 'Error: $error';
+    return '[SR] Error: $error (Serbian)';
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => 'No analytics data available yet.';
+  String get noAnalyticsDataAvailableYet =>
+      '[SR] No analytics data available yet. (Serbian)';
 
   @override
-  String get errorDeletingSlotE => 'Error deleting slot: \$e';
+  String errorDeletingSlotE(Object e) {
+    return 'خطأ في حذف الفترة: $e';
+  }
 
   @override
   String get businessPhoneBookingEntryScreenComingSoon =>
-      'Business Phone Booking Entry Screen - Coming Soon';
+      '[SR] Business Phone Booking Entry Screen - Coming Soon (Serbian)';
 
   @override
-  String get verification => 'Verification';
+  String get verification => '[SR] Verification (Serbian)';
 
   @override
-  String get copyLink => 'Copy Link';
+  String get copyLink => '[SR] Copy Link (Serbian)';
 
   @override
-  String get dashboard1 => 'Dashboard';
+  String get dashboard1 => '[SR] Dashboard (Serbian)';
 
   @override
-  String get manageChildAccounts => 'Manage Child Accounts';
+  String get manageChildAccounts => '[SR] Manage Child Accounts (Serbian)';
 
   @override
-  String get grantConsent => 'Grant Consent';
+  String get grantConsent => '[SR] Grant Consent (Serbian)';
 
   @override
-  String get myProfile1 => 'My Profile';
+  String get myProfile1 => '[SR] My Profile (Serbian)';
 
   @override
-  String get submit => 'Submit';
+  String get submit => '[SR] Submit (Serbian)';
 
   @override
   String userLoguseremail(Object userEmail) {
-    return 'User: $userEmail';
+    return '[SR] User: $userEmail';
   }
 
   @override
-  String get emailNotifications => 'Email Notifications';
+  String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard => 'Ambassador Dashboard';
+  String get ambassadorDashboard => '[SR] Ambassador Dashboard (Serbian)';
 
   @override
-  String get phoneBooking => 'Phone Booking';
+  String get phoneBooking => '[SR] Phone Booking (Serbian)';
 
   @override
-  String get bookViaChat => 'Book via Chat';
+  String get bookViaChat => '[SR] Book via Chat (Serbian)';
 
   @override
-  String get error => '[SR] Error';
+  String get error => '[SR] [SR] Error';
 
   @override
-  String get businessProfile => 'Business Profile';
+  String get businessProfile => '[SR] Business Profile (Serbian)';
 
   @override
   String get businessBookingEntryScreenComingSoon =>
-      'Business Booking Entry Screen - Coming Soon';
+      '[SR] Business Booking Entry Screen - Coming Soon (Serbian)';
 
   @override
-  String get createNewSurvey => 'Create New Survey';
+  String get createNewSurvey => '[SR] Create New Survey (Serbian)';
 
   @override
-  String get backgroundRejected => 'Background rejected';
+  String get backgroundRejected => '[SR] Background rejected (Serbian)';
 
   @override
-  String get noMediaSelected => 'No media selected';
+  String get noMediaSelected => '[SR] No media selected (Serbian)';
 
   @override
-  String get syncToGoogle => 'Sync to Google';
+  String get syncToGoogle => '[SR] Sync to Google (Serbian)';
 
   @override
-  String get virtualPlaytime => 'Virtual Playtime';
+  String get virtualPlaytime => '[SR] Virtual Playtime (Serbian)';
 
   @override
-  String get colorContrastTesting => 'Color Contrast Testing';
+  String get colorContrastTesting => '[SR] Color Contrast Testing';
 
   @override
-  String get loginFailedE => 'Login failed: \$e';
+  String get loginFailedE => '[SR] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => 'Invitation sent successfully!';
+  String get invitationSentSuccessfully =>
+      '[SR] Invitation sent successfully! (Serbian)';
 
   @override
-  String get registering => 'Registering...';
+  String get registering => '[SR] Registering... (Serbian)';
 
   @override
   String statusAppointmentstatusname(Object status) {
-    return 'Status: $status';
+    return '[SR] Status: $status (Serbian)';
   }
 
   @override
-  String get home1 => 'Home';
+  String get home1 => '[SR] Home (Serbian)';
 
   @override
-  String get errorSavingSettingsE => 'Error saving settings: \$e';
+  String get errorSavingSettingsE =>
+      '[SR] Error saving settings: \$e (Serbian)';
 
   @override
-  String get appVersionAndInformation => 'App version and information';
+  String get appVersionAndInformation =>
+      '[SR] App version and information (Serbian)';
 
   @override
   String get businessSubscriptionEntryScreenComingSoon =>
-      'Business Subscription Entry Screen - Coming Soon';
+      '[SR] Business Subscription Entry Screen - Coming Soon (Serbian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
-    return '$key: $value';
+    return '[SR] $key: $value (Serbian)';
   }
 
   @override
   String get yourPaymentHasBeenProcessedSuccessfully =>
-      'Your payment has been processed successfully.';
+      '[SR] Your payment has been processed successfully. (Serbian)';
 
   @override
-  String get errorE => 'Error: \$e';
+  String get errorE => '[SR] Error: \$e (Serbian)';
 
   @override
-  String get viewAll1 => 'View All';
+  String get viewAll1 => '[SR] View All (Serbian)';
 
   @override
-  String get editSurveyComingSoon => 'Edit survey - Coming soon!';
+  String get editSurveyComingSoon =>
+      '[SR] Edit survey - Coming soon! (Serbian)';
 
   @override
-  String get enterOtp => 'Enter OTP';
+  String get enterOtp => '[SR] Enter OTP (Serbian)';
 
   @override
-  String get payment => 'Payment';
+  String get payment => '[SR] Payment (Serbian)';
 
   @override
   String get automaticallyConfirmNewBookingRequests =>
-      'Automatically confirm new booking requests';
+      '[SR] Automatically confirm new booking requests (Serbian)';
 
   @override
-  String get errorPickingVideoE => 'Error picking video: \$e';
+  String errorPickingVideoE(Object e) {
+    return 'خطأ في اختيار الفيديو: $e';
+  }
 
   @override
   String noRouteDefinedForSettingsname(Object settingsName) {
-    return 'No route defined for $settingsName';
+    return '[SR] No route defined for $settingsName (Serbian)';
   }
 
   @override
   String get pleaseSignInToUploadABackground =>
-      'Please sign in to upload a background';
+      '[SR] Please sign in to upload a background (Serbian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
-    return '$targetType: $targetId';
+    return '[SR] $targetType: $targetId';
   }
 
   @override
-  String get staffAvailability => 'Staff Availability';
+  String get staffAvailability => '[SR] Staff Availability (Serbian)';
 
   @override
-  String get livePlaytime => 'Live Playtime';
+  String get livePlaytime => '[SR] Live Playtime (Serbian)';
 
   @override
-  String get autoconfirmBookings => 'Auto-Confirm Bookings';
+  String get autoconfirmBookings => '[SR] Auto-Confirm Bookings (Serbian)';
 
   @override
   String get redirectingToStripeCheckoutForProPlan =>
-      'Redirecting to Stripe checkout for Pro plan...';
+      '[SR] Redirecting to Stripe checkout for Pro plan... (Serbian)';
 
   @override
-  String get exportAsCsv => 'Export as CSV';
+  String get exportAsCsv => '[SR] Export as CSV (Serbian)';
 
   @override
   String get deleteFunctionalityComingSoon =>
-      'Delete functionality coming soon!';
+      '[SR] Delete functionality coming soon! (Serbian)';
 
   @override
-  String get editClient => 'Edit Client';
+  String get editClient => '[SR] Edit Client (Serbian)';
 
   @override
   String get areYouSureYouWantToDeleteThisMessage =>
-      'Are you sure you want to delete this message?';
+      '[SR] Are you sure you want to delete this message? (Serbian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
-    return 'Referrals: $referrals';
+    return '[SR] Referrals: $referrals (Serbian)';
   }
 
   @override
-  String get notAuthenticated => 'Not authenticated';
+  String get notAuthenticated => '[SR] Not authenticated';
 
   @override
   String get privacyRequestSentToYourParents =>
-      'Privacy request sent to your parents!';
+      '[SR] Privacy request sent to your parents! (Serbian)';
 
   @override
-  String get clientDeletedSuccessfully => 'Client deleted successfully!';
+  String get clientDeletedSuccessfully =>
+      '[SR] Client deleted successfully! (Serbian)';
 
   @override
-  String get failedToCancelSubscription => 'Failed to cancel subscription';
+  String get failedToCancelSubscription =>
+      '[SR] Failed to cancel subscription (Serbian)';
 
   @override
-  String get allLanguages => 'All Languages';
+  String get allLanguages => '[SR] All Languages (Serbian)';
 
   @override
-  String get slotDeletedSuccessfully => 'Slot deleted successfully';
+  String get slotDeletedSuccessfully =>
+      '[SR] Slot deleted successfully (Serbian)';
 
   @override
   String get businessProvidersEntryScreenComingSoon =>
-      'Business Providers Entry Screen - Coming Soon';
+      '[SR] Business Providers Entry Screen - Coming Soon';
 
   @override
   String get parentsMustApproveBeforeChildrenCanJoin =>
-      'Parents must approve before children can join';
+      '[SR] Parents must approve before children can join (Serbian)';
 
   @override
-  String get subscribeToPro1499mo => 'Subscribe to Pro (€14.99/mo)';
+  String get subscribeToPro1499mo =>
+      '[SR] Subscribe to Pro (€14.99/mo) (Serbian)';
 
   @override
   String get businessAvailabilityEntryScreenComingSoon =>
-      'Business Availability Entry Screen - Coming Soon';
+      '[SR] Business Availability Entry Screen - Coming Soon (Serbian)';
 
   @override
   String appointmentsListlength(Object count) {
-    return 'Appointments: $count';
+    return '[SR] Appointments: $count (Serbian)';
   }
 
   @override
-  String get clearFilters => 'Clear Filters';
+  String get clearFilters => '[SR] Clear Filters (Serbian)';
 
   @override
-  String get submitBooking => 'Submit Booking';
+  String get submitBooking => '[SR] Submit Booking (Serbian)';
 
   @override
   String get areYouSureYouWantToCancelThisAppointment =>
-      'Are you sure you want to cancel this appointment?';
+      '[SR] Are you sure you want to cancel this appointment? (Serbian)';
 
   @override
-  String get noUpcomingBookings => 'No upcoming bookings';
+  String get noUpcomingBookings => '[SR] No upcoming bookings (Serbian)';
 
   @override
-  String get goBack => 'Go Back';
+  String get goBack => '[SR] Go Back (Serbian)';
 
   @override
-  String get setup => 'Setup';
+  String get setup => '[SR] Setup (Serbian)';
 
   @override
-  String get inviteChild => 'Invite Child';
+  String get inviteChild => '[SR] Invite Child (Serbian)';
 
   @override
-  String get goToDashboard => 'Go to Dashboard';
+  String get goToDashboard => '[SR] Go to Dashboard (Serbian)';
 
   @override
-  String get ambassadorQuotaDashboard => 'Ambassador Quota Dashboard';
+  String get ambassadorQuotaDashboard =>
+      '[SR] Ambassador Quota Dashboard (Serbian)';
 
   @override
-  String get adminSettings => 'Admin Settings';
+  String get adminSettings => '[SR] Admin Settings';
 
   @override
-  String get referralCode => 'Referral Code';
+  String get referralCode => '[SR] Referral Code (Serbian)';
 
   @override
   String adminLogadminemail(Object adminEmail) {
-    return 'Admin: $adminEmail';
+    return '[SR] Admin: $adminEmail';
   }
 
   @override
-  String get date => 'Date';
+  String get date => '[SR] Date (Serbian)';
 
   @override
-  String get readOnly => 'Read Only';
+  String get readOnly => '[SR] Read Only (Serbian)';
 
   @override
-  String get bookingRequest => 'Booking Request';
+  String get bookingRequest => '[SR] Booking Request (Serbian)';
 
   @override
-  String get advancedReporting => '• Advanced reporting';
+  String get advancedReporting => '[SR] • Advanced reporting (Serbian)';
 
   @override
-  String get rooms => 'Rooms';
+  String get rooms => '[SR] Rooms (Serbian)';
 
   @override
-  String get copiedToClipboard => 'Copied to clipboard';
+  String get copiedToClipboard => '[SR] Copied to clipboard (Serbian)';
 
   @override
-  String get bookingConfirmed => 'Booking Confirmed';
+  String get bookingConfirmed => '[SR] Booking Confirmed (Serbian)';
 
   @override
-  String get sessionApproved => 'Session approved!';
+  String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => 'Client added successfully!';
+  String get clientAddedSuccessfully =>
+      '[SR] Client added successfully! (Serbian)';
 
   @override
-  String get noNotifications => 'No notifications';
+  String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved => 'Background approved!';
+  String get backgroundApproved => '[SR] Background approved! (Serbian)';
 
   @override
-  String get familySupport => 'Family Support';
+  String get familySupport => '[SR] Family Support (Serbian)';
 
   @override
-  String get deletingAccount => 'Deleting account...';
+  String get deletingAccount => '[SR] Deleting account... (Serbian)';
 
   @override
-  String get bookAppointment => 'Book Appointment';
+  String get bookAppointment => '[SR] Book Appointment (Serbian)';
 
   @override
   String get receivePushNotificationsForNewBookings =>
-      'Receive push notifications for new bookings';
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
-  String get delete1 => 'Delete';
+  String get delete1 => '[SR] Delete (Serbian)';
 
   @override
-  String get sendBookingInvite => 'Send Booking Invite';
+  String get sendBookingInvite => '[SR] Send Booking Invite (Serbian)';
 
   @override
-  String get text => 'Text';
+  String get text => '[SR] Text (Serbian)';
 
   @override
-  String get manageSubscription => 'Manage Subscription';
+  String get manageSubscription => '[SR] Manage Subscription (Serbian)';
 
   @override
-  String get requiresInstallFallback => 'Requires Install Fallback';
+  String get requiresInstallFallback =>
+      '[SR] Requires Install Fallback (Serbian)';
 
   @override
-  String get paymentConfirmation => 'Payment Confirmation';
+  String get paymentConfirmation => '[SR] Payment Confirmation (Serbian)';
 
   @override
   String get promoAppliedYourNextBillIsFree =>
-      'Promo applied! Your next bill is free.';
+      '[SR] Promo applied! Your next bill is free. (Serbian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
-    return 'Invitee: $inviteeId';
+    return 'المدعو: $inviteeId';
   }
 
   @override
-  String get errorLoadingSlots => 'Error loading slots';
+  String get errorLoadingSlots => '[SR] Error loading slots (Serbian)';
 
   @override
   String get allowOtherUsersToFindAndJoinThisGame =>
-      'Allow other users to find and join this game';
+      '[SR] Allow other users to find and join this game (Serbian)';
 
   @override
   String get businessOnboardingScreenComingSoon =>
-      'Business Onboarding Screen - Coming Soon';
+      '[SR] Business Onboarding Screen - Coming Soon (Serbian)';
 
   @override
-  String get activateBusinessProfile => 'Activate Business Profile';
+  String get activateBusinessProfile =>
+      '[SR] Activate Business Profile (Serbian)';
 
   @override
-  String get contentNotFound => 'Content not found';
+  String get contentNotFound => '[SR] Content not found (Serbian)';
 
   @override
   String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
-    return '$specialty\\n$contactInfo';
+    return '[SR] $specialty\\n$contactInfo (Serbian)';
   }
 
   @override
-  String get rating => 'Rating';
+  String get rating => '[SR] Rating (Serbian)';
 
   @override
-  String get messages => 'Messages';
+  String get messages => '[SR] Messages (Serbian)';
 
   @override
-  String get errorEstimatingRecipientsE => 'Error estimating recipients: \$e';
+  String errorEstimatingRecipientsE(Object e) {
+    return 'خطأ في تقدير المستلمين: $e';
+  }
 
   @override
-  String get becomeAnAmbassador => 'Become an Ambassador';
+  String get becomeAnAmbassador => '[SR] Become an Ambassador (Serbian)';
 
   @override
-  String get subscribeNow => 'Subscribe Now';
+  String get subscribeNow => '[SR] Subscribe Now (Serbian)';
 
   @override
   String timeArgsslotformatcontext(Object time) {
-    return 'Time: $time';
+    return '[SR] Time: $time (Serbian)';
   }
 
   @override
-  String get shareViaWhatsapp => 'Share via WhatsApp';
+  String get shareViaWhatsapp => '[SR] Share via WhatsApp (Serbian)';
 
   @override
-  String get users1 => 'Users';
+  String get users1 => '[SR] Users (Serbian)';
 
   @override
-  String get shareLink => 'Share Link';
+  String get shareLink => '[SR] Share Link (Serbian)';
 
   @override
   String get areYouSureYouWantToDeleteThisProvider =>
-      'Are you sure you want to delete this provider?';
+      '[SR] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment => 'Delete Appointment';
+  String get deleteAppointment => '[SR] Delete Appointment (Serbian)';
 
   @override
-  String get toggleAvailability => 'Toggle Availability';
+  String get toggleAvailability => '[SR] Toggle Availability (Serbian)';
 
   @override
-  String get changePlan => 'Change Plan';
+  String get changePlan => '[SR] Change Plan (Serbian)';
 
   @override
-  String get errorLoadingStaff => 'Error loading staff';
+  String get errorLoadingStaff => '[SR] Error loading staff (Serbian)';
 
   @override
-  String get errorLoadingConfigurationE => 'Error loading configuration: \$e';
+  String errorLoadingConfigurationE(Object e) {
+    return 'خطأ في تحميل التكوين: $e';
+  }
 
   @override
   String get updateYourBusinessInformation =>
-      'Update your business information';
+      '[SR] Update your business information (Serbian)';
 
   @override
   String get noProvidersFoundAddYourFirstProvider =>
-      'No providers found. Add your first provider!';
+      '[SR] No providers found. Add your first provider!';
 
   @override
-  String get parentDashboard => 'Parent Dashboard';
+  String get parentDashboard => '[SR] Parent Dashboard (Serbian)';
 
   @override
-  String get menu => 'Menu';
+  String get menu => '[SR] Menu (Serbian)';
 
   @override
-  String get studioBooking => 'Studio Booking';
+  String get studioBooking => '[SR] Studio Booking (Serbian)';
 
   @override
-  String get about1 => 'About';
+  String get about1 => '[SR] About (Serbian)';
 
   @override
-  String get multipleChoice => 'Multiple Choice';
+  String get multipleChoice => '[SR] Multiple Choice (Serbian)';
 
   @override
   String dateAppointmentscheduledattostring(Object date) {
-    return 'Date: $date';
+    return '[SR] Date: $date (Serbian)';
   }
 
   @override
   String get studioBookingIsOnlyAvailableOnWeb =>
-      'Studio booking is only available on web';
+      '[SR] Studio booking is only available on web (Serbian)';
 
   @override
-  String get errorLoadingBranchesE => 'Error loading branches: \$e';
+  String get errorLoadingBranchesE =>
+      '[SR] Error loading branches: \$e (Serbian)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
-    return '\\uD83D\\uDCC5 $dateTime';
+    return '[SR] \\uD83D\\uDCC5 $dateTime (Serbian)';
   }
 
   @override
   String appointmentInviteappointmentid(Object appointmentId) {
-    return 'Appointment: $appointmentId';
+    return 'دعوة الموعد: $appointmentId';
   }
 
   @override
-  String get none => 'None';
+  String get none => '[SR] None (Serbian)';
 
   @override
-  String get failedToUpdateConsentE => 'Failed to update consent: \$e';
+  String get failedToUpdateConsentE =>
+      '[SR] Failed to update consent: \$e (Serbian)';
 
   @override
-  String get welcome1 => 'Welcome';
+  String get welcome1 => '[SR] Welcome (Serbian)';
 
   @override
-  String get failedToCreateSessionE => 'Failed to create session: \$e';
+  String get failedToCreateSessionE =>
+      '[SR] Failed to create session: \$e (Serbian)';
 
   @override
-  String get inviteContact => 'Invite Contact';
+  String get inviteContact => '[SR] Invite Contact (Serbian)';
 
   @override
-  String get surveyEditor => 'Survey Editor';
+  String get surveyEditor => '[SR] Survey Editor (Serbian)';
 
   @override
   String get failedToStartBasicSubscriptionE =>
-      'Failed to start Basic subscription: \$e';
+      '[SR] Failed to start Basic subscription: \$e (Serbian)';
 
   @override
-  String get mySchedule => 'My Schedule';
+  String get mySchedule => '[SR] My Schedule (Serbian)';
 
   @override
-  String get studioDashboard => 'Studio Dashboard';
+  String get studioDashboard => '[SR] Studio Dashboard (Serbian)';
 
   @override
-  String get editProfile => 'Edit Profile';
+  String get editProfile => 'تحرير الملف الشخصي';
 
   @override
-  String get logout1 => 'Logout';
+  String get logout1 => '[SR] Logout';
 
   @override
   String serviceServiceidNotSelected(Object service) {
-    return 'Service: $service';
+    return '[SR] Service: $service';
   }
 
   @override
-  String get settingsSavedSuccessfully => 'Settings saved successfully!';
+  String get settingsSavedSuccessfully =>
+      '[SR] Settings saved successfully! (Serbian)';
 
   @override
-  String get linkCopiedToClipboard => 'Link copied to clipboard!';
+  String get linkCopiedToClipboard =>
+      '[SR] Link copied to clipboard! (Serbian)';
 
   @override
-  String get accept1 => 'Accept';
+  String get accept1 => '[SR] Accept (Serbian)';
 
   @override
-  String get noAvailableSlots => 'No available slots';
+  String get noAvailableSlots => '[SR] No available slots (Serbian)';
 
   @override
-  String get makeGamePublic => 'Make Game Public';
+  String get makeGamePublic => '[SR] Make Game Public (Serbian)';
 
   @override
   String permissionPermissioncategoryUpdatedToNewvalue(Object category) {
-    return 'Permission $category updated to \$newValue';
+    return '[SR] Permission $category updated to \$newValue (Serbian)';
   }
 
   @override
-  String get roomDeletedSuccessfully => 'Room deleted successfully!';
+  String get roomDeletedSuccessfully =>
+      '[SR] Room deleted successfully! (Serbian)';
 
   @override
-  String get businessCalendar => 'Business Calendar';
+  String get businessCalendar => '[SR] Business Calendar (Serbian)';
 
   @override
-  String get addAvailability => 'Add Availability';
+  String get addAvailability => '[SR] Add Availability (Serbian)';
 
   @override
-  String get ambassadorOnboarding => 'Ambassador Onboarding';
+  String get ambassadorOnboarding => '[SR] Ambassador Onboarding (Serbian)';
 
   @override
   String phoneProfileasyncphone(Object phone) {
-    return 'Phone: $phone';
+    return '[SR] Phone: $phone (Serbian)';
   }
 
   @override
-  String get addNewRoom => 'Add New Room';
+  String get addNewRoom => '[SR] Add New Room (Serbian)';
 
   @override
-  String get requireParentApproval => 'Require Parent Approval';
+  String get requireParentApproval => '[SR] Require Parent Approval (Serbian)';
 
   @override
-  String get closed => 'Closed';
+  String get closed => '[SR] Closed (Serbian)';
 
   @override
-  String get exportAsPdf => 'Export as PDF';
+  String get exportAsPdf => '[SR] Export as PDF (Serbian)';
 
   @override
-  String get enableVibration => 'Enable Vibration';
+  String get enableVibration => '[SR] Enable Vibration (Serbian)';
 
   @override
   String toAvailendformatcontext(Object endTime) {
-    return 'To: $endTime';
+    return '[SR] To: $endTime (Serbian)';
   }
 
   @override
-  String get yourUpgradeCodeUpgradecode => 'Your upgrade code: \$upgradeCode';
+  String yourUpgradeCodeUpgradecode(Object upgradeCode) {
+    return '[SR] Your upgrade code: \$upgradeCode (Serbian)';
+  }
 
   @override
-  String get requestPrivateSession => 'requestPrivateSession (TRANSLATE)';
+  String get requestPrivateSession => '[SR] requestPrivateSession (TRANSLATE)';
 
   @override
-  String get country => 'Country';
+  String get country => '[SR] Country (Serbian)';
 
   @override
-  String get loginScreen => 'Login Screen';
+  String get loginScreen => '[SR] Login Screen';
 
   @override
   String staffArgsstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[SR] Staff: $staffName (Serbian)';
   }
 
   @override
-  String get revokeConsent => 'Revoke Consent';
+  String get revokeConsent => '[SR] Revoke Consent (Serbian)';
 
   @override
-  String get settings1 => 'Settings';
+  String get settings1 => '[SR] Settings (Serbian)';
 
   @override
-  String get cancel1 => 'Cancel';
+  String get cancel1 => '[SR] Cancel (Serbian)';
 
   @override
   String get subscriptionActivatedSuccessfully =>
-      'Subscription activated successfully!';
+      '[SR] Subscription activated successfully! (Serbian)';
 
   @override
   String activityLogaction(Object action) {
-    return 'Activity: $action';
+    return '[SR] Activity: $action';
   }
 
   @override
-  String get broadcast => 'Broadcast';
+  String get broadcast => '[SR] Broadcast (Serbian)';
 
   @override
-  String get noEventsScheduledThisWeek => 'No events scheduled this week';
+  String get noEventsScheduledThisWeek =>
+      '[SR] No events scheduled this week (Serbian)';
 
   @override
-  String get googleCalendar => 'Google Calendar';
+  String get googleCalendar => '[SR] Google Calendar (Serbian)';
 
   @override
-  String get sendInvite => 'Send Invite';
+  String get sendInvite => 'إرسال دعوة';
 
   @override
-  String get childDashboard => 'Child Dashboard';
+  String get childDashboard => '[SR] Child Dashboard (Serbian)';
 
   @override
-  String get failedToUploadBackgroundE => 'Failed to upload background: \$e';
+  String get failedToUploadBackgroundE =>
+      '[SR] Failed to upload background: \$e (Serbian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
-    return '$linkId...';
+    return '[SR] $linkId...';
   }
 
   @override
   String targetLogtargettypeLogtargetid(Object targetId, Object targetType) {
-    return 'Target: $targetType - $targetId';
+    return '[SR] Target: $targetType - $targetId';
   }
 
   @override
-  String get contextContextid => 'Context: \$contextId';
+  String get contextContextid => '[SR] Context: \$contextId';
 
   @override
-  String get noAppointments => 'No appointments';
+  String get noAppointments => '[SR] No appointments (Serbian)';
 
   @override
-  String get unlimitedBookingsPerWeek => '• Unlimited bookings per week';
+  String get unlimitedBookingsPerWeek =>
+      '[SR] • Unlimited bookings per week (Serbian)';
 
   @override
-  String errorDetailsLogerrortype(Object errorType) {
-    return 'Error Details: $errorType';
+  String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
+    return 'تفاصيل الخطأ: $logErrorType';
   }
 
   @override
-  String get scheduledAtScheduledat => 'Scheduled at: \$scheduledAt';
+  String get scheduledAtScheduledat =>
+      '[SR] Scheduled at: \$scheduledAt (Serbian)';
 
   @override
-  String get selectStaff => 'Select Staff';
+  String get selectStaff => '[SR] Select Staff (Serbian)';
 
   @override
   String get subscriptionCancelledSuccessfully =>
-      'Subscription cancelled successfully';
+      '[SR] Subscription cancelled successfully (Serbian)';
 
   @override
   String get pleaseLogInToViewYourProfile =>
-      'Please log in to view your profile.';
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment => 'Cancel Appointment';
+  String get cancelAppointment => '[SR] Cancel Appointment (Serbian)';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
-    return 'Permissions - $childId';
+    return '[SR] Permissions - $childId';
   }
 
   @override
-  String get businessSignup => 'Business Signup';
+  String get businessSignup => '[SR] Business Signup (Serbian)';
 
   @override
   String get businessCompletionScreenComingSoon =>
-      'Business Completion Screen - Coming Soon';
+      '[SR] Business Completion Screen - Coming Soon (Serbian)';
 
   @override
-  String get createGame1 => 'Create Game';
+  String get createGame1 => '[SR] Create Game (Serbian)';
 
   @override
   String valuetoint(Object value) {
-    return '$value';
+    return '[SR] $value (Serbian)';
   }
 
   @override
-  String get pleaseEnterAPromoCode => 'Please enter a promo code';
+  String get pleaseEnterAPromoCode =>
+      '[SR] Please enter a promo code (Serbian)';
 
   @override
-  String get errorLoadingAvailabilityE => 'Error loading availability: \$e';
+  String get errorLoadingAvailabilityE =>
+      '[SR] Error loading availability: \$e (Serbian)';
 
   @override
-  String get parentalControls => 'Parental Controls';
+  String get parentalControls => '[SR] Parental Controls (Serbian)';
 
   @override
-  String get editBusinessProfile => 'Edit Business Profile';
+  String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => 'Child linked successfully!';
+  String get childLinkedSuccessfully =>
+      '[SR] Child linked successfully! (Serbian)';
 
   @override
-  String get create => 'Create';
+  String get create => '[SR] Create (Serbian)';
 
   @override
-  String get noExternalMeetingsFound => 'No external meetings found.';
+  String get noExternalMeetingsFound =>
+      '[SR] No external meetings found. (Serbian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
-    return 'Staff: $staffName';
+    return '[SR] Staff: $staffName (Serbian)';
   }
 
   @override
   String get pleaseEnterAValidEmailAddress =>
-      'Please enter a valid email address';
+      '[SR] Please enter a valid email address';
 
   @override
-  String get schedulerScreen => 'Scheduler Screen';
+  String get schedulerScreen => '[SR] Scheduler Screen (Serbian)';
 
   @override
-  String get clientUpdatedSuccessfully => 'Client updated successfully!';
+  String get clientUpdatedSuccessfully =>
+      '[SR] Client updated successfully! (Serbian)';
 
   @override
-  String get surveyResponses => 'Survey Responses';
+  String get surveyResponses => '[SR] Survey Responses (Serbian)';
 
   @override
-  String get syncToOutlook => 'Sync to Outlook';
+  String get syncToOutlook => '[SR] Sync to Outlook (Serbian)';
 
   @override
-  String get saveChanges => 'Save Changes';
+  String get saveChanges => '[SR] Save Changes (Serbian)';
 
   @override
-  String get pickTime => 'Pick Time';
+  String get pickTime => '[SR] Pick Time (Serbian)';
 
   @override
   String registrationFailedEtostring(Object error) {
-    return 'Registration failed: $error';
+    return '[SR] Registration failed: $error (Serbian)';
   }
 
   @override
-  String get analytics => 'Analytics';
+  String get analytics => '[SR] Analytics (Serbian)';
 
   @override
-  String get errorLoadingEvents => 'Error loading events';
+  String get errorLoadingEvents => '[SR] Error loading events (Serbian)';
 
   @override
   String get errorLoadingOrganizations =>
-      'errorLoadingOrganizations (TRANSLATE)';
+      '[SR] errorLoadingOrganizations (TRANSLATE)';
 
   @override
   String get businessLoginScreenComingSoon =>
-      'Business Login Screen - Coming Soon';
+      '[SR] Business Login Screen - Coming Soon';
 
   @override
-  String get success1 => 'Success';
+  String get success1 => '[SR] Success (Serbian)';
 
   @override
   String appVersionLogappversion(Object appVersion) {
-    return 'App Version: $appVersion';
+    return '[SR] App Version: $appVersion';
   }
 
   @override
   String fromAvailstartformatcontext(Object startTime) {
-    return 'From: $startTime';
+    return '[SR] From: $startTime (Serbian)';
   }
 
   @override
-  String get readWrite => 'Read & Write';
+  String get readWrite => '[SR] Read & Write (Serbian)';
 
   @override
   String get redirectingToStripeCheckoutForBasicPlan =>
-      'Redirecting to Stripe checkout for Basic plan...';
+      '[SR] Redirecting to Stripe checkout for Basic plan... (Serbian)';
 
   @override
-  String get errorSavingConfigurationE => 'Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[SR] Error saving configuration: \$e';
 
   @override
-  String get pickDate => 'Pick Date';
+  String get pickDate => '[SR] Pick Date (Serbian)';
 
   @override
-  String get chatBooking => 'Chat Booking';
+  String get chatBooking => '[SR] Chat Booking (Serbian)';
 
   @override
-  String get noQuestionsAdded => 'No questions added';
+  String get noQuestionsAdded => '[SR] No questions added (Serbian)';
 
   @override
   String severityLogseverityname(Object severity) {
-    return 'Severity: $severity';
+    return '[SR] Severity: $severity';
   }
 
   @override
-  String get markAsPaid => 'Mark as Paid';
+  String get markAsPaid => '[SR] Mark as Paid';
 
   @override
-  String get typeOpenCall => 'Type: Open Call';
+  String get typeOpenCall => '[SR] Type: Open Call (Serbian)';
 
   @override
   String appointmentAppointmentid(Object appointmentId) {
-    return 'Appointment $appointmentId';
+    return '[SR] Appointment $appointmentId';
   }
 
   @override
-  String statusInvitestatusname(Object status) {
-    return 'Status: $status';
+  String statusInvitestatusname(Object inviteStatusName, Object status) {
+    return 'الحالة: $inviteStatusName';
   }
 
   @override
-  String get businessLogin => 'Business Login';
+  String get businessLogin => '[SR] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => 'Invoice created successfully!';
+  String get invoiceCreatedSuccessfully =>
+      '[SR] Invoice created successfully! (Serbian)';
 
   @override
-  String get noTimeSeriesDataAvailable => 'No time series data available';
+  String get noTimeSeriesDataAvailable =>
+      '[SR] No time series data available (Serbian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
-    return 'Subscribe to $planName';
+    return '[SR] Subscribe to $planName';
   }
 
   @override
   String timestamp_formatdatelogtimestamp(Object timestamp) {
-    return 'Timestamp: $timestamp';
+    return '[SR] Timestamp: $timestamp';
   }
 
   @override
   String get failedToSendPrivacyRequestE =>
-      'Failed to send privacy request: \$e';
+      '[SR] Failed to send privacy request: \$e (Serbian)';
 
   @override
-  String get chooseYourPlan => 'Choose Your Plan';
+  String get chooseYourPlan => '[SR] Choose Your Plan (Serbian)';
 
   @override
-  String get playtimeManagement => 'Playtime Management';
+  String get playtimeManagement => '[SR] Playtime Management (Serbian)';
 
   @override
-  String get availability => 'Availability';
+  String get availability => '[SR] Availability (Serbian)';
 
   @override
-  String get eventCreated => 'Event created';
+  String get eventCreated => '[SR] Event created (Serbian)';
 
   @override
-  String get subscribeToBasic499mo => 'Subscribe to Basic (€4.99/mo)';
+  String get subscribeToBasic499mo =>
+      '[SR] Subscribe to Basic (€4.99/mo) (Serbian)';
 
   @override
-  String get completion => 'Completion';
+  String get completion => '[SR] Completion (Serbian)';
 
   @override
-  String get supportTicketSubmitted => 'Support ticket submitted';
+  String get supportTicketSubmitted =>
+      '[SR] Support ticket submitted (Serbian)';
 
   @override
-  String get monetizationSettings => 'Monetization Settings';
+  String get monetizationSettings => '[SR] Monetization Settings (Serbian)';
 
   @override
-  String get noBookingsFound => 'No bookings found';
+  String get noBookingsFound => '[SR] No bookings found (Serbian)';
 
   @override
-  String get admin => 'Admin';
+  String get admin => '[SR] Admin';
 
   @override
-  String get deleteSurvey => 'Delete Survey';
+  String get deleteSurvey => '[SR] Delete Survey (Serbian)';
 
   @override
-  String get gameApprovedSuccessfully => 'Game approved successfully!';
+  String get gameApprovedSuccessfully =>
+      '[SR] Game approved successfully! (Serbian)';
 
   @override
   String get errorLoadingPermissionsError =>
-      'Error loading permissions: \$error';
+      '[SR] Error loading permissions: \$error (Serbian)';
 
   @override
-  String get referrals => 'Referrals';
+  String get referrals => '[SR] Referrals (Serbian)';
 
   @override
-  String get crm => 'CRM';
+  String get crm => '[SR] CRM (Serbian)';
 
   @override
-  String get gameRejected => 'Game rejected';
+  String get gameRejected => '[SR] Game rejected (Serbian)';
 
   @override
-  String get appointments => 'Appointments';
+  String get appointments => '[SR] Appointments (Serbian)';
 
   @override
-  String get onboardingScreen => 'Onboarding Screen';
+  String get onboardingScreen => '[SR] Onboarding Screen (Serbian)';
 
   @override
-  String get welcomeToYourStudio => 'Welcome to your studio';
+  String get welcomeToYourStudio => '[SR] Welcome to your studio (Serbian)';
 
   @override
-  String get update => 'Update';
+  String get update => '[SR] Update (Serbian)';
 
   @override
-  String get retry1 => 'Retry';
+  String get retry1 => '[SR] Retry (Serbian)';
 
   @override
-  String get booking => 'Booking';
+  String get booking => '[SR] Booking (Serbian)';
 
   @override
-  String get parentalSettings => 'Parental Settings';
+  String get parentalSettings => '[SR] Parental Settings (Serbian)';
 
   @override
-  String get language => 'Language';
+  String get language => '[SR] Language (Serbian)';
 
   @override
-  String get deleteSlot => 'Delete Slot';
+  String get deleteSlot => '[SR] Delete Slot (Serbian)';
 
   @override
-  String get organizations => 'organizations (TRANSLATE)';
+  String get organizations => '[SR] organizations (TRANSLATE)';
 
   @override
   String get configurationSavedSuccessfully =>
-      'Configuration saved successfully!';
+      '[SR] Configuration saved successfully!';
 
   @override
-  String get createNewGame => 'Create New Game';
+  String get createNewGame => '[SR] Create New Game (Serbian)';
 
   @override
-  String get next1 => 'Next';
+  String get next1 => '[SR] Next (Serbian)';
 
   @override
   String get backgroundUploadedSuccessfully =>
-      'Background uploaded successfully!';
+      '[SR] Background uploaded successfully! (Serbian)';
 
   @override
-  String get noAppointmentRequestsFound => 'No appointment requests found.';
+  String get noAppointmentRequestsFound =>
+      '[SR] No appointment requests found. (Serbian)';
 
   @override
-  String get pleaseSignInToCreateASession =>
-      'Please sign in to create a session';
+  String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => 'Restrict mature content';
+  String get restrictMatureContent => '[SR] Restrict mature content (Serbian)';
 
   @override
-  String get ambassadors => 'Ambassadors';
+  String get ambassadors => '[SR] Ambassadors (Serbian)';
 
   @override
-  String get smsNotifications => 'SMS Notifications';
+  String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled => 'Payment was cancelled';
+  String get paymentWasCancelled => '[SR] Payment was cancelled (Serbian)';
 
   @override
-  String get clearAll => 'Clear All';
+  String get clearAll => '[SR] Clear All (Serbian)';
 
   @override
-  String get viewDetails => 'View Details';
+  String get viewDetails => '[SR] View Details (Serbian)';
 
   @override
-  String get notifications1 => 'Notifications';
+  String get notifications1 => 'الإشعارات';
 
   @override
   String get liveSessionScheduledWaitingForParentApproval =>
-      'Live session scheduled! Waiting for parent approval...';
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => 'Failed to create game: \$e';
+  String get failedToCreateGameE => '[SR] Failed to create game: \$e (Serbian)';
 
   @override
-  String get noChartDataAvailable => 'No chart data available';
+  String get noChartDataAvailable => '[SR] No chart data available (Serbian)';
 
   @override
-  String get phonebasedBookingSystem => '• Phone-based booking system';
+  String get phonebasedBookingSystem =>
+      '[SR] • Phone-based booking system (Serbian)';
 
   @override
-  String get enableNotifications1 => 'Enable Notifications';
+  String get enableNotifications1 => 'تفعيل الإشعارات';
 
   @override
-  String get invoices => 'Invoices';
+  String get invoices => '[SR] Invoices (Serbian)';
 
   @override
   String get pleaseActivateYourBusinessProfileToContinue =>
-      'Please activate your business profile to continue.';
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
-    return 'Scheduled at: $scheduledAt';
+    return '[SR] Scheduled at: $scheduledAt (Serbian)';
   }
 
   @override
   String durationDurationinminutes0Minutes(Object duration) {
-    return 'Duration: $duration minutes';
+    return '[SR] Duration: $duration minutes (Serbian)';
   }
 
   @override
-  String get tryAgain => 'Try Again';
+  String get tryAgain => '[SR] Try Again (Serbian)';
 
   @override
-  String get deleteBackground => 'Delete Background';
+  String get deleteBackground => '[SR] Delete Background (Serbian)';
 
   @override
   String currentTierTiertouppercase(Object tier) {
-    return 'Current Tier: $tier';
+    return '[SR] Current Tier: $tier (Serbian)';
   }
 
   @override
-  String get iDoNotConsent => 'I Do Not Consent';
+  String get iDoNotConsent => '[SR] I Do Not Consent';
 
   @override
   String get noClientsFoundAddYourFirstClient =>
-      'No clients found. Add your first client!';
+      '[SR] No clients found. Add your first client! (Serbian)';
 
   @override
   String get settingsDialogWillBeImplementedHere =>
-      'Settings dialog will be implemented here.';
+      '[SR] Settings dialog will be implemented here.';
 
   @override
-  String get groupGroupid => 'Group: \$groupId';
+  String get groupGroupid => '[SR] Group: \$groupId';
 
   @override
-  String get appointmentRequests => 'Appointment Requests';
+  String get appointmentRequests => '[SR] Appointment Requests (Serbian)';
 
   @override
-  String get forward => 'Forward';
+  String get forward => '[SR] Forward (Serbian)';
 
   @override
-  String get roomAddedSuccessfully => 'Room added successfully!';
+  String get roomAddedSuccessfully => '[SR] Room added successfully! (Serbian)';
 
   @override
-  String get option => '• \$option';
+  String get option => '[SR] • \$option (Serbian)';
 
   @override
   String responseIndex1(Object number) {
-    return 'Response #$number';
+    return '[SR] Response #$number (Serbian)';
   }
 
   @override
-  String get crmDashboardWithAnalytics => '• CRM dashboard with analytics';
+  String get crmDashboardWithAnalytics =>
+      '[SR] • CRM dashboard with analytics (Serbian)';
 
   @override
-  String get contentLibrary1 => 'Content Library';
+  String get contentLibrary1 => '[SR] Content Library (Serbian)';
 
   @override
-  String get reply => 'Reply';
+  String get reply => '[SR] Reply (Serbian)';
 
   @override
-  String get subscriptionManagement => 'Subscription Management';
+  String get subscriptionManagement => '[SR] Subscription Management (Serbian)';
 
   @override
   String get monetizationSettingsWillBeImplementedHere =>
-      'Monetization settings will be implemented here';
+      '[SR] Monetization settings will be implemented here (Serbian)';
 
   @override
-  String get failedToApplyPromoCodeE => 'Failed to apply promo code: \$e';
+  String get failedToApplyPromoCodeE =>
+      '[SR] Failed to apply promo code: \$e (Serbian)';
 
   @override
-  String get editProvider => 'Edit Provider';
+  String get editProvider => '[SR] Edit Provider';
 
   @override
-  String get localizationContribution => 'Localization Contribution';
+  String get localizationContribution =>
+      '[SR] Localization Contribution (Serbian)';
 
   @override
-  String get parentalConsent => 'Parental Consent';
+  String get parentalConsent => '[SR] Parental Consent (Serbian)';
 
   @override
   String get businessSignupScreenComingSoon =>
-      'Business Signup Screen - Coming Soon';
+      '[SR] Business Signup Screen - Coming Soon (Serbian)';
 
   @override
   String get areYouSureYouWantToDeleteThisAppointment =>
-      'Are you sure you want to delete this appointment?';
+      '[SR] Are you sure you want to delete this appointment? (Serbian)';
 
   @override
-  String get syncAppointment => 'Sync Appointment';
+  String get syncAppointment => '[SR] Sync Appointment (Serbian)';
 
   @override
-  String get iConsent => 'I Consent';
+  String get iConsent => '[SR] I Consent (Serbian)';
 
   @override
-  String get sessionRejected => 'Session rejected';
+  String get sessionRejected => 'تم رفض الجلسة';
 
   @override
   String get businessSetupScreenComingSoon =>
-      'Business Setup Screen - Coming Soon';
+      '[SR] Business Setup Screen - Coming Soon (Serbian)';
 
   @override
-  String get edit1 => 'Edit';
+  String get edit1 => '[SR] Edit (Serbian)';
 
   @override
-  String get noEventsScheduledThisMonth => 'No events scheduled this month';
+  String get noEventsScheduledThisMonth =>
+      '[SR] No events scheduled this month (Serbian)';
 
   @override
-  String get businessDashboard => 'Business Dashboard';
+  String get businessDashboard => '[SR] Business Dashboard (Serbian)';
 
   @override
-  String get noMessagesFound => 'No messages found.';
+  String get noMessagesFound => '[SR] No messages found. (Serbian)';
 
   @override
   String staffStaffidNotSelected(Object staff) {
-    return 'Staff: $staff';
+    return '[SR] Staff: $staff';
   }
 
   @override
-  String get manageStaffAvailability => 'Manage Staff Availability';
+  String get manageStaffAvailability =>
+      '[SR] Manage Staff Availability (Serbian)';
 
   @override
-  String get noMissingTranslations => 'No missing translations';
+  String get noMissingTranslations => '[SR] No missing translations (Serbian)';
 
   @override
-  String get skip => 'Skip';
+  String get skip => '[SR] Skip (Serbian)';
 
   @override
-  String get meetingIdMeetingid => 'Meeting ID: \$meetingId';
+  String meetingIdMeetingid(Object meetingId) {
+    return 'معرف الاجتماع: $meetingId';
+  }
 
   @override
-  String get noUsers => 'noUsers (TRANSLATE)';
+  String get noUsers => '[SR] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => 'Error loading referral code';
+  String get errorLoadingReferralCode =>
+      '[SR] Error loading referral code (Serbian)';
 
   @override
-  String get allCountries => 'All Countries';
+  String get allCountries => '[SR] All Countries (Serbian)';
 
   @override
-  String get deleteGame => 'Delete Game';
+  String get deleteGame => '[SR] Delete Game (Serbian)';
 
   @override
-  String get staffManagementTools => '• Staff management tools';
+  String get staffManagementTools => '[SR] • Staff management tools (Serbian)';
 
   @override
-  String get deleteMessage => 'Delete Message';
+  String get deleteMessage => '[SR] Delete Message (Serbian)';
 
   @override
   String get receiveBookingNotificationsViaSms =>
-      'Receive booking notifications via SMS';
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
-  String get changeRole => 'changeRole (TRANSLATE)';
+  String get changeRole => '[SR] changeRole (TRANSLATE)';
 
   @override
   String errorLoadingBookingsSnapshoterror(Object error) {
-    return 'Error loading bookings: $error';
+    return 'خطأ في تحميل لقطة الحجوزات: $error';
   }
 
   @override
-  String get openingCustomerPortal => 'Opening customer portal...';
+  String get openingCustomerPortal =>
+      '[SR] Opening customer portal... (Serbian)';
 
   @override
-  String get signOut => 'Sign Out';
+  String get signOut => '[SR] Sign Out (Serbian)';
 
   @override
   String nameProfilename(Object name) {
-    return 'Name: $name';
+    return '[SR] Name: $name (Serbian)';
   }
 
   @override
   String get businessProfileEntryScreenComingSoon =>
-      'Business Profile Entry Screen - Coming Soon';
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness => 'Upgrade to Business';
+  String get upgradeToBusiness => '[SR] Upgrade to Business (Serbian)';
 
   @override
-  String get apply => 'Apply';
+  String get apply => 'تطبيق';
 
   @override
-  String get errorLoadingSubscriptionError =>
-      'Error loading subscription: \$error';
+  String errorLoadingSubscriptionError(Object error) {
+    return 'خطأ في تحميل الاشتراك: $error';
+  }
 
   @override
-  String get errorLoadingUsers => 'errorLoadingUsers (TRANSLATE)';
+  String get errorLoadingUsers => 'خطأ في تحميل المستخدمين';
 
   @override
-  String get verify => 'Verify';
+  String get verify => 'التحقق';
 
   @override
-  String get subscription => 'Subscription';
+  String get subscription => 'الاشتراك';
 
   @override
-  String get deleteMyAccount => 'Delete My Account';
+  String get deleteMyAccount => 'حذف حسابي';
 
   @override
   String get businessAppointmentsEntryScreenComingSoon =>
-      'Business Appointments Entry Screen - Coming Soon';
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
-  String get viewResponses => 'View Responses';
+  String get viewResponses => '[SR] View Responses (Serbian)';
 
   @override
-  String get businessWelcomeScreenComingSoon =>
-      'Business Welcome Screen - Coming Soon';
+  String get businessWelcomeScreenComingSoon => 'شاشة ترحيب الأعمال - قريباً';
 
   @override
-  String get failedToOpenCustomerPortalE =>
-      'Failed to open customer portal: \$e';
+  String failedToOpenCustomerPortalE(Object e) {
+    return 'فشل في فتح بوابة العميل: $e';
+  }
 
   @override
-  String get continueText => 'Continue';
+  String get continueText => 'متابعة';
 
   @override
-  String get close1 => 'Close';
+  String get close1 => 'إغلاق';
 
   @override
-  String get confirm1 => 'Confirm';
+  String get confirm1 => 'تأكيد';
 
   @override
-  String get externalMeetings => 'External Meetings';
+  String get externalMeetings => 'الاجتماعات الخارجية';
 
   @override
-  String get approve => 'Approve';
+  String get approve => 'موافقة';
 
   @override
   String get noInvoicesFoundCreateYourFirstInvoice =>
-      'No invoices found. Create your first invoice!';
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
-  String get subscribe => 'Subscribe';
+  String get subscribe => 'اشتراك';
 
   @override
-  String get login1 => 'Login';
+  String get login1 => 'تسجيل الدخول';
 
   @override
-  String get adminOverviewGoesHere => 'Admin overview goes here';
+  String get adminOverviewGoesHere => 'نظرة عامة على المسؤول هنا';
 
   @override
-  String get loadingCheckout => 'Loading checkout...';
+  String get loadingCheckout => 'جار تحميل الدفع...';
 }
