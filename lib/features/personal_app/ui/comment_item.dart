@@ -13,7 +13,7 @@ class CommentItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final formatter =
         LocalizedDateFormatter.fromL10n(AppLocalizations.of(context)!);
-    timestamp = formatter.formatRelative(comment.createdAt);
+    final timestamp = formatter.formatRelative(comment.createdAt);
 
     return Card(
       child: ListTile(

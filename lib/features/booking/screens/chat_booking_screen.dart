@@ -8,7 +8,7 @@ class ChatBookingScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    auth = ref.read(authServiceProvider);
+    final auth = ref.read(authServiceProvider);
     return ChatFlowWidget(auth: auth);
   }
 }

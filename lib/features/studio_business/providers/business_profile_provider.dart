@@ -12,10 +12,10 @@ class BusinessProfileNotifier extends StateNotifier<BusinessProfile?> {
     loadProfile();
   }
 
-  _service = BusinessProfileService();
+  final _service = BusinessProfileService();
 
   Future<void> loadProfile() async {
-    state = await _service.fetchProfile();
+    final state = await _service.fetchProfile();
   }
 
   void updateField(

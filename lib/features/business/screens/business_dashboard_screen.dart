@@ -38,15 +38,13 @@ class BusinessDashboardScreen extends ConsumerWidget {
             Text(
               'Welcome to Your Business Dashboard',
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                    fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
             Text(
               'Manage your appointments, clients, and business analytics all in one place.',
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: Colors.grey[600],
-                  ),
+                    color: Colors.grey[600]),
             ),
           ],
         ),
@@ -117,8 +115,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
             Text(
               title,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Colors.grey[600],
-                  ),
+                    color: Colors.grey[600]),
               textAlign: TextAlign.center,
             ),
           ],
@@ -136,8 +133,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
             Text(
               'Quick Actions',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                    fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             Row(
@@ -216,8 +212,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
             Text(
               'Recent Activity',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                    fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             _buildActivityItem(
@@ -283,14 +278,12 @@ class BusinessDashboardScreen extends ConsumerWidget {
                 Text(
                   title,
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        fontWeight: FontWeight.w500,
-                      ),
+                        fontWeight: FontWeight.w500),
                 ),
                 Text(
                   subtitle,
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        color: Colors.grey[600],
-                      ),
+                        color: Colors.grey[600]),
                 ),
               ],
             ),
@@ -298,8 +291,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
           Text(
             time,
             style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                  color: Colors.grey[500],
-                ),
+                  color: Colors.grey[500]),
           ),
         ],
       ),

@@ -239,7 +239,7 @@ class RewardsService {
 
     while (points >= requiredPoints) {
       level++;
-      requiredPoints = 100 * (1 << (level - 1));
+      final requiredPoints = 100 * (1 << (level - 1));
     }
 
     return level;

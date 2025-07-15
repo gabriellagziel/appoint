@@ -8,7 +8,7 @@ final appointmentServiceProvider =
 
 final appointmentsStreamProvider =
     StreamProvider<List<Appointment>>((ref) {
-  authState = ref.watch(authStateProvider);
+  final authState = ref.watch(authStateProvider);
   return authState.when(
     data: (user) {
       if (user == null) {

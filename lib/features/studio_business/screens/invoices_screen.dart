@@ -11,10 +11,10 @@ class InvoicesScreen extends ConsumerStatefulWidget {
 }
 
 class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
-  _formKey = GlobalKey<FormState>();
-  _clientNameController = TextEditingController();
-  _amountController = TextEditingController();
-  _descriptionController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _clientNameController = TextEditingController();
+  final _amountController = TextEditingController();
+  final _descriptionController = TextEditingController();
   bool _isAdding = false;
 
   @override
@@ -71,7 +71,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
             padding: const EdgeInsets.all(16),
             itemCount: invoices.length,
             itemBuilder: (context, final index) {
-              invoice = invoices[index].data()! as Map<String, dynamic>;
+              final invoice = invoices[index].data()! as Map<String, dynamic>;
               final invoiceId = invoices[index].id;
 
               return Card(
@@ -197,7 +197,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
       if (user == null) throw Exception('Not authenticated');
 
       // Generate invoice number
-      invoiceNumber = _generateInvoiceNumber();
+      final invoiceNumber = _generateInvoiceNumber();
 
       await FirebaseFirestore.instance.collection('invoices').add({
         'invoiceNumber': invoiceNumber,
@@ -219,7 +219,6 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
@@ -232,7 +231,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
   }
 
   String _generateInvoiceNumber() {
-    timestamp = DateTime.now().millisecondsSinceEpoch;
+    final timestamp = DateTime.now().millisecondsSinceEpoch;
     return 'INV-${timestamp.toString().substring(timestamp.toString().length - 6)}';
   }
 

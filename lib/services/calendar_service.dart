@@ -90,8 +90,8 @@ class CalendarService {
       DateTime from, final DateTime to,) async {
     final uid = _auth.currentUser?.uid;
     if (uid == null) return [];
-    key = 'google-$uid-${from.toIso8601String()}-${to.toIso8601String()}';
-    cached = _getCached(key);
+    final key = 'google-$uid-${from.toIso8601String()}-${to.toIso8601String()}';
+    final cached = _getCached(key);
     if (cached != null) return cached;
 
     final query = await _firestore
@@ -114,7 +114,7 @@ class CalendarService {
     if (uid == null) return [];
     final key =
         'outlook-$uid-${from.toIso8601String()}-${to.toIso8601String()}';
-    cached = _getCached(key);
+    final cached = _getCached(key);
     if (cached != null) return cached;
 
     final query = await _firestore
@@ -164,8 +164,8 @@ class CalendarService {
 
   Future<List<CalendarEvent>> getEventsByDateRange(
       DateTime start, final DateTime end,) async {
-    key = 'range-${start.toIso8601String()}-${end.toIso8601String()}';
-    cached = _getCached(key);
+    final key = 'range-${start.toIso8601String()}-${end.toIso8601String()}';
+    final cached = _getCached(key);
     if (cached != null) return cached;
 
     final snapshot = await _firestore

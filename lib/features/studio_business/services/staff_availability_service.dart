@@ -8,7 +8,7 @@ class StaffAvailabilityService {
   final FirebaseFirestore _firestore;
 
   Future<List<StaffAvailability>> getStaffAvailability(
-      String businessProfileId,) async {
+      String businessProfileId) async {
     final snapshot = await _firestore
         .collection('staff_availability')
         .where('businessProfileId', isEqualTo: businessProfileId)
@@ -21,7 +21,7 @@ class StaffAvailabilityService {
   }
 
   Future<StaffAvailability?> getStaffAvailabilityById(
-      String staffProfileId,) async {
+      String staffProfileId) async {
     final doc = await _firestore
         .collection('staff_availability')
         .where('profileId', isEqualTo: staffProfileId)
@@ -35,7 +35,7 @@ class StaffAvailabilityService {
   }
 
   Future<void> updateStaffAvailability(
-      StaffAvailability availability,) async {
+      StaffAvailability availability) async {
     await _firestore
         .collection('staff_availability')
         .doc(availability.id)
@@ -43,7 +43,7 @@ class StaffAvailabilityService {
   }
 
   Future<void> createStaffAvailability(
-      StaffAvailability availability,) async {
+      StaffAvailability availability) async {
     await _firestore
         .collection('staff_availability')
         .add(availability.toJson());

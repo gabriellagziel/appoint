@@ -10,7 +10,7 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    appointments = ref.watch(appointmentsStreamProvider);
+    final appointments = ref.watch(appointmentsStreamProvider);
     return Scaffold(
       backgroundColor: AppColors.primary,
       appBar: AppBar(title: const Text('Home')),

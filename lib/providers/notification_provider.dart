@@ -17,8 +17,7 @@ final notificationsProvider =
 final uiNotificationServiceProvider = Provider<UINotificationService>((ref) {
   throw UnimplementedError(
     'UINotificationService not provided. '
-    'Please override this provider in your main function.',
-  );
+    'Please override this provider in your main function.');
 });
 
 /// Provider for showing sync-related notifications
@@ -43,7 +42,7 @@ class SyncNotificationHelper {
       _notificationService.showInfo('No changes to sync');
     } else {
       _notificationService.showSuccess(
-          'Successfully synced $syncedCount booking${syncedCount == 1 ? '' : 's'}',);
+          'Successfully synced $syncedCount booking${syncedCount == 1 ? '' : 's'}');
     }
   }
 

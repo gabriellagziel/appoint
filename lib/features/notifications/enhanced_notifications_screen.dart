@@ -130,15 +130,13 @@ class EnhancedNotificationsScreen extends ConsumerWidget {
             Text(
               'No notifications',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                color: Colors.grey[600],
-              ),
+                color: Colors.grey[600]),
             ),
             const SizedBox(height: 8),
             Text(
               'You\'re all caught up!',
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.grey[500],
-              ),
+                color: Colors.grey[500]),
             ),
           ],
         ),
@@ -176,8 +174,7 @@ class EnhancedNotificationsScreen extends ConsumerWidget {
         title: Text(
           notification.title,
           style: TextStyle(
-            fontWeight: notification.isRead ? FontWeight.normal : FontWeight.bold,
-          ),
+            fontWeight: notification.isRead ? FontWeight.normal : FontWeight.bold),
         ),
         subtitle: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -330,8 +327,7 @@ class EnhancedNotificationsScreen extends ConsumerWidget {
           children: [
             ListTile(
               leading: Icon(
-                notification.isRead ? Icons.mark_email_unread : Icons.mark_email_read,
-              ),
+                notification.isRead ? Icons.mark_email_unread : Icons.mark_email_read),
               title: Text(notification.isRead ? 'Mark as unread' : 'Mark as read'),
               onTap: () {
                 Navigator.pop(context);

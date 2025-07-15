@@ -11,23 +11,23 @@ class BookingHelper {
   final WidgetRef ref;
 
   String get _userId {
-    user = ref.read(authProvider).currentUser;
+    final user = ref.read(authProvider).currentUser;
     final userId = user?.uid ?? '';
     if (userId.isEmpty) throw Exception('User not logged in');
     return userId;
   }
 
   Booking _buildBooking() {
-    staffId = ref.read(staffSelectionProvider);
-    serviceId = ref.read(serviceSelectionProvider);
-    serviceName = ref.read(serviceNameProvider);
-    dateTime = ref.read(selectedSlotProvider);
-    duration = ref.read(serviceDurationProvider);
+    final staffId = ref.read(staffSelectionProvider);
+    final serviceId = ref.read(serviceSelectionProvider);
+    final serviceName = ref.read(serviceNameProvider);
+    final dateTime = ref.read(selectedSlotProvider);
+    final duration = ref.read(serviceDurationProvider);
 
     if (staffId == null ||
         serviceId == null ||
-        dateTime == null ||
-        duration == null) {
+        final dateTime = = null ||
+        final duration = = null) {
       throw Exception('Missing required booking information');
     }
 
@@ -44,7 +44,7 @@ class BookingHelper {
   }
 
   Future<void> submitBooking() async {
-    booking = _buildBooking();
+    final booking = _buildBooking();
     await ref.read(bookingServiceProvider).submitBooking(booking);
     
     // Increment usage counter after successful booking

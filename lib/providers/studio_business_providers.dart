@@ -55,14 +55,14 @@ final AutoDisposeStreamProvider<QuerySnapshot<Map<String, dynamic>>> staffAvaila
 // User-specific bookings
 final StreamProviderFamily<List<Booking>, String> userBookingsProvider =
     StreamProvider.family<List<Booking>, String>((ref, final userId) {
-  service = BookingService();
+  final service = BookingService();
   return service.getUserBookings(userId);
 });
 
 // Business-specific bookings
 final StreamProviderFamily<List<Booking>, String> businessBookingsProvider =
     StreamProvider.family<List<Booking>, String>((ref, final businessId) {
-  service = BookingService();
+  final service = BookingService();
   return service.getBusinessBookings(businessId);
 });
 
@@ -80,7 +80,7 @@ final AutoDisposeStreamProvider<List<Map<String, dynamic>>> clientsProvider = St
 );
 
 // Appointments Provider
-appointmentsProvider = StreamProvider<List<Appointment>>((final ref) {
+final appointmentsProvider = StreamProvider<List<Appointment>>((ref) {
   final user = FirebaseAuth.instance.currentUser;
   if (user == null) return Stream.value([]);
 
@@ -97,7 +97,7 @@ appointmentsProvider = StreamProvider<List<Appointment>>((final ref) {
 });
 
 // Staff Provider
-staffProvider = StreamProvider<List<Map<String, dynamic>>>((final ref) {
+final staffProvider = StreamProvider<List<Map<String, dynamic>>>((ref) {
   final user = FirebaseAuth.instance.currentUser;
   if (user == null) return Stream.value([]);
 
@@ -132,7 +132,7 @@ final servicesProvider =
 });
 
 // Rooms Provider
-roomsProvider = StreamProvider<List<Map<String, dynamic>>>((final ref) {
+final roomsProvider = StreamProvider<List<Map<String, dynamic>>>((ref) {
   final user = FirebaseAuth.instance.currentUser;
   if (user == null) return Stream.value([]);
 
@@ -167,7 +167,7 @@ final businessProvidersProvider =
 });
 
 // Analytics Provider
-analyticsProvider = StreamProvider<Analytics>((final ref) {
+final analyticsProvider = StreamProvider<Analytics>((ref) {
   final user = FirebaseAuth.instance.currentUser;
   if (user == null) {
     return Stream.value(Analytics(
@@ -191,10 +191,10 @@ analyticsProvider = StreamProvider<Analytics>((final ref) {
 });
 
 // Dashboard Stats Provider
-dashboardStatsProvider = Provider<Map<String, dynamic>>((final ref) {
-  bookingsAsync = ref.watch(bookingsProvider);
-  clientsAsync = ref.watch(clientsProvider);
-  appointmentsAsync = ref.watch(appointmentsProvider);
+final dashboardStatsProvider = Provider<Map<String, dynamic>>((ref) {
+  final bookingsAsync = ref.watch(bookingsProvider);
+  final clientsAsync = ref.watch(clientsProvider);
+  final appointmentsAsync = ref.watch(appointmentsProvider);
 
   return {
     'totalBookings': bookingsAsync.when(

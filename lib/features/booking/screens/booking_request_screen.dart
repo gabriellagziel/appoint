@@ -34,10 +34,10 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
 
   @override
   Widget build(BuildContext context) {
-    staffId = ref.watch(staffSelectionProvider);
-    serviceId = ref.watch(serviceSelectionProvider);
-    dateTime = ref.watch(selectedSlotProvider);
-    duration = ref.watch(serviceDurationProvider);
+    final staffId = ref.watch(staffSelectionProvider);
+    final serviceId = ref.watch(serviceSelectionProvider);
+    final dateTime = ref.watch(selectedSlotProvider);
+    final duration = ref.watch(serviceDurationProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Booking Request')),

@@ -111,7 +111,7 @@ class AmbassadorQuotaService {
   /// Check if there are available slots for a country-language combination
   Future<bool> hasAvailableSlots(
       String countryCode, final String languageCode,) async {
-    quota = getQuota(countryCode, languageCode);
+    final quota = getQuota(countryCode, languageCode);
     if (quota == 0) return false;
 
     final currentCount =
@@ -122,7 +122,7 @@ class AmbassadorQuotaService {
   /// Get available slots count for a country-language combination
   Future<int> getAvailableSlots(
       String countryCode, final String languageCode,) async {
-    quota = getQuota(countryCode, languageCode);
+    final quota = getQuota(countryCode, languageCode);
     if (quota == 0) return 0;
 
     final currentCount =
@@ -133,10 +133,10 @@ class AmbassadorQuotaService {
   /// Check if a user is eligible to become an ambassador
   Future<bool> isUserEligible(String userId) async {
     try {
-      userDoc = await _firestore.collection('users').doc(userId).get();
+      final userDoc = await _firestore.collection('users').doc(userId).get();
       if (!userDoc.exists) return false;
 
-      userData = userDoc.data();
+      final userData = userDoc.data();
       if (userData == null) return false;
 
       // Check if user is an adult
@@ -163,14 +163,14 @@ class AmbassadorQuotaService {
   }) async {
     try {
       // Check if user is eligible
-      isEligible = await isUserEligible(userId);
+      final isEligible = await isUserEligible(userId);
       if (!isEligible) {
         // Removed debug print: debugPrint('User $userId is not eligible for ambassadorship');
         return false;
       }
 
       // Check if there are available slots
-      hasSlots = await hasAvailableSlots(countryCode, languageCode);
+      final hasSlots = await hasAvailableSlots(countryCode, languageCode);
       if (!hasSlots) {
         // Removed debug print: debugPrint('No available ambassador slots for ${countryCode}_$languageCode');
         return false;
@@ -181,14 +181,14 @@ class AmbassadorQuotaService {
         // Double-check availability within transaction
         final currentCount =
             await getCurrentAmbassadorCount(countryCode, languageCode);
-        quota = getQuota(countryCode, languageCode);
+        final quota = getQuota(countryCode, languageCode);
 
         if (currentCount >= quota) {
           throw Exception('Quota exceeded during transaction');
         }
 
         // Update user role
-        userRef = _firestore.collection('users').doc(userId);
+        final userRef = _firestore.collection('users').doc(userId);
         transaction.update(userRef, {
           'role': 'ambassador',
           'ambassadorSince': FieldValue.serverTimestamp(),
@@ -196,7 +196,7 @@ class AmbassadorQuotaService {
         });
 
         // Create ambassador record
-        ambassadorRef = _firestore.collection('ambassadors').doc(userId);
+        final ambassadorRef = _firestore.collection('ambassadors').doc(userId);
         transaction.set(ambassadorRef, {
           'userId': userId,
           'countryCode': countryCode,
@@ -209,7 +209,7 @@ class AmbassadorQuotaService {
         });
 
         // Log the assignment
-        logRef = _firestore.collection('ambassador_assignments').doc();
+        final logRef = _firestore.collection('ambassador_assignments').doc();
         transaction.set(logRef, {
           'userId': userId,
           'countryCode': countryCode,
@@ -239,7 +239,7 @@ class AmbassadorQuotaService {
           await _firestore.collection('ambassadors').doc(userId).get();
       if (!ambassadorDoc.exists) return false;
 
-      ambassadorData = ambassadorDoc.data();
+      final ambassadorData = ambassadorDoc.data();
       if (ambassadorData == null) return false;
 
       final countryCode = ambassadorData['countryCode'] as String?;
@@ -249,7 +249,7 @@ class AmbassadorQuotaService {
 
       await _firestore.runTransaction((transaction) async {
         // Update user role
-        userRef = _firestore.collection('users').doc(userId);
+        final userRef = _firestore.collection('users').doc(userId);
         transaction.update(userRef, {
           'role': 'client',
           'ambassadorRemovedAt': FieldValue.serverTimestamp(),
@@ -257,7 +257,7 @@ class AmbassadorQuotaService {
         });
 
         // Update ambassador status
-        ambassadorRef = _firestore.collection('ambassadors').doc(userId);
+        final ambassadorRef = _firestore.collection('ambassadors').doc(userId);
         transaction.update(ambassadorRef, {
           'status': 'inactive',
           'removedAt': FieldValue.serverTimestamp(),
@@ -265,7 +265,7 @@ class AmbassadorQuotaService {
         });
 
         // Log the removal
-        logRef = _firestore.collection('ambassador_removals').doc();
+        final logRef = _firestore.collection('ambassador_removals').doc();
         transaction.set(logRef, {
           'userId': userId,
           'countryCode': countryCode,
@@ -290,7 +290,7 @@ class AmbassadorQuotaService {
     for (entry in ambassadorQuotas.entries) {
       final key = entry.key;
       final quota = entry.value;
-      parts = key.split('_');
+      final parts = key.split('_');
       final countryCode = parts[0];
       final languageCode = parts[1];
 
@@ -318,8 +318,8 @@ class AmbassadorQuotaService {
     var totalCurrent = 0;
 
     for (entry in ambassadorQuotas.entries) {
-      parts = entry.key.split('_');
-      currentCount = await getCurrentAmbassadorCount(parts[0], parts[1]);
+      final parts = entry.key.split('_');
+      final currentCount = await getCurrentAmbassadorCount(parts[0], parts[1]);
       totalCurrent += currentCount;
     }
 
@@ -363,12 +363,12 @@ class AmbassadorQuotaService {
 
     for (entry in ambassadorQuotas.entries) {
       final key = entry.key;
-      parts = key.split('_');
+      final parts = key.split('_');
       final countryCode = parts[0];
       final languageCode = parts[1];
 
       // Check if there are available slots
-      hasSlots = await hasAvailableSlots(countryCode, languageCode);
+      final hasSlots = await hasAvailableSlots(countryCode, languageCode);
       if (!hasSlots) continue;
 
       // Find eligible user

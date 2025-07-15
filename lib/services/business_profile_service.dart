@@ -9,7 +9,7 @@ class BusinessProfileService {
   Future<BusinessProfile?> fetchProfile() async {
     final uid = _auth.currentUser?.uid;
     if (uid == null) return null;
-    doc = await _firestore.collection('business_profiles').doc(uid).get();
+    final doc = await _firestore.collection('business_profiles').doc(uid).get();
     if (!doc.exists) return null;
     return BusinessProfile.fromJson(doc.data()!);
   }
