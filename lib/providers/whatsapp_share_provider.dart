@@ -83,7 +83,7 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
       } else {
         state = state.copyWith(isLoading: false);
       }
-    } catch (e) { {
+    } catch (e) {
       state = state.copyWith(
         isLoading: false,
         error: e.toString(),
@@ -104,7 +104,7 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
         phoneNumber: phoneNumber,
         meetingId: meetingId,
       );
-    } catch (e) { {
+    } catch (e) {
       state = state.copyWith(error: e.toString());
     }
   }

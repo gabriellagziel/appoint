@@ -4,6 +4,20 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 /// Supports 50 countries and languages with hard-capped quotas
 class AmbassadorQuotaService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  
+  // Variable declarations for the service
+  late int quota;
+  late bool isEligible;
+  late bool hasSlots;
+  late DocumentSnapshot<Map<String, dynamic>> userDoc;
+  late Map<String, dynamic>? userData;
+  late DocumentReference<Map<String, dynamic>> userRef;
+  late DocumentReference<Map<String, dynamic>> ambassadorRef;
+  late DocumentReference<Map<String, dynamic>> logRef;
+  late Map<String, dynamic>? ambassadorData;
+  late MapEntry<String, int> entry;
+  late List<String> parts;
+  late int currentCount;
 
   /// Complete ambassador quotas for all 50 countries and languages
   /// Total global slots: 6,675 ambassadors
@@ -88,7 +102,7 @@ class AmbassadorQuotaService {
           .get();
 
       return snapshot.count ?? 0;
-    } catch (e) { {
+    } catch (e) {
       // Removed debug print: debugPrint('Error getting ambassador count: $e');
       return 0;
     }
@@ -134,7 +148,7 @@ class AmbassadorQuotaService {
       if (currentRole == 'ambassador') return false;
 
       return true;
-    } catch (e) { {
+    } catch (e) {
       // Removed debug print: debugPrint('Error checking user eligibility: $e');
       return false;
     }
@@ -211,7 +225,7 @@ class AmbassadorQuotaService {
       //   'Successfully assigned ambassador role to user $userId for ${countryCode}_$languageCode'
       // );
       return true;
-    } catch (e) { {
+    } catch (e) {
       // Removed debug print: debugPrint('Error assigning ambassador: $e');
       return false;
     }
@@ -263,7 +277,7 @@ class AmbassadorQuotaService {
 
       // Removed debug print: debugPrint('Successfully removed ambassador role from user $userId');
       return true;
-    } catch (e) { {
+    } catch (e) {
       // Removed debug print: debugPrint('Error removing ambassador: $e');
       return false;
     }
@@ -336,7 +350,7 @@ class AmbassadorQuotaService {
       if (usersSnapshot.docs.isEmpty) return null;
 
       return usersSnapshot.docs.first.id;
-    } catch (e) { {
+    } catch (e) {
       // Removed debug print: debugPrint('Error finding eligible user: $e');
       return null;
     }

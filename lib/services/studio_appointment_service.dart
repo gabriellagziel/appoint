@@ -5,6 +5,9 @@ class StudioAppointmentService {
   StudioAppointmentService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
   final FirebaseFirestore _firestore;
+  
+  late QuerySnapshot<Map<String, dynamic>> snap;
+  late DocumentReference<Map<String, dynamic>> doc;
 
   CollectionReference<Map<String, dynamic>> get _col =>
       _firestore.collection('studio_appointments');

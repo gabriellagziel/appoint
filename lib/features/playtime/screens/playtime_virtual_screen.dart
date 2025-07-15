@@ -553,7 +553,7 @@ class _PlaytimeVirtualScreenState extends ConsumerState<PlaytimeVirtualScreen> {
         // Navigate to the session
         context.push('/playtime/session/${session.id}');
       }
-    } catch (e) { {
+    } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
