@@ -5,7 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 Future<void> initializeTestFirebase() async {
   try {
     await Firebase.initializeApp();
-  } catch (e) {e) {
+  } catch (e) {
     // If already initialized, continue
   }
 }
